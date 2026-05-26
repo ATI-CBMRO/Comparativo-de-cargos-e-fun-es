@@ -4,7 +4,9 @@ import DetailLevelBadge from "@/components/DetailLevelBadge";
 import { Button } from "@/components/ui/button";
 import {
   BookOpen,
+  ChevronDown,
   ChevronRight,
+  ChevronUp,
   FileText,
   GitCompare,
   Layers,
@@ -12,11 +14,22 @@ import {
   Shield,
   Target,
   Trash2,
+  User,
+  Users,
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type DetailLevel = "detalhado" | "moderado" | "basico";
+type Position = {
+  id: number;
+  title: string;
+  acronym: string | null;
+  rank: string | null;
+  subordinateTo: string | null;
+  subordinates: string | null;
+  attributions: string | null;
+  sortOrder: number | null;
+};
 
 function SubdivisionList({ content }: { content: string | null | undefined }) {
   if (!content) return <p className="text-xs text-muted-foreground italic">Não especificado</p>;
@@ -48,13 +61,98 @@ function AttributionList({ content }: { content: string | null | undefined }) {
   );
 }
 
+function PositionCard({ position, accentColor }: { position: Position; accentColor: string }) {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    <div
+      className="border border-border rounded-lg overflow-hidden"
+      style={{ borderLeftColor: accentColor, borderLeftWidth: 3 }}
+    >
+      <button
+        className="w-full flex items-center justify-between px-3 py-2 bg-muted/40 hover:bg-muted/70 transition-colors text-left"
+        onClick={() => setExpanded((v) => !v)}
+      >
+        <div className="flex items-center gap-2 min-w-0">
+          <User className="w-3.5 h-3.5 flex-shrink-0" style={{ color: accentColor }} />
+          <div className="min-w-0">
+            <p className="text-xs font-semibold text-foreground truncate">
+              {position.title}
+              {position.acronym && (
+                <span className="ml-1 text-muted-foreground font-normal">({position.acronym})</span>
+              )}
+            </p>
+            {position.rank && (
+              <p className="text-[10px] text-muted-foreground">{position.rank}</p>
+            )}
+          </div>
+        </div>
+        {expanded ? (
+          <ChevronUp className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
+        ) : (
+          <ChevronDown className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
+        )}
+      </button>
+
+      {expanded && (
+        <div className="px-3 py-2 space-y-2 bg-white">
+          {position.subordinateTo && (
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-wide text-muted-foreground mb-0.5">
+                Subordinado a
+              </p>
+              <p className="text-xs text-foreground">{position.subordinateTo}</p>
+            </div>
+          )}
+          {position.subordinates && (
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-wide text-muted-foreground mb-0.5">
+                Subordinados / Desdobramentos
+              </p>
+              <SubdivisionList content={position.subordinates} />
+            </div>
+          )}
+          {position.attributions && (
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-wide text-muted-foreground mb-0.5">
+                Atribuições
+              </p>
+              <AttributionList content={position.attributions} />
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function PositionsList({
+  positions,
+  accentColor,
+  emptyLabel,
+}: {
+  positions: Position[];
+  accentColor: string;
+  emptyLabel: string;
+}) {
+  if (positions.length === 0) {
+    return <p className="text-xs text-muted-foreground italic">{emptyLabel}</p>;
+  }
+  return (
+    <div className="space-y-1.5">
+      {positions.map((pos) => (
+        <PositionCard key={pos.id} position={pos} accentColor={accentColor} />
+      ))}
+    </div>
+  );
+}
+
 export default function Comparativo() {
   const [selectedSiglas, setSelectedSiglas] = useState<string[]>([]);
   const [showStateSelector, setShowStateSelector] = useState(false);
 
   const { data: states } = trpc.states.list.useQuery();
-  const { data: results, isLoading } = trpc.data.filtered.useQuery(
-    { siglas: selectedSiglas, orgType: "all" },
+  const { data: results, isLoading } = trpc.data.comparative.useQuery(
+    { siglas: selectedSiglas },
     { enabled: selectedSiglas.length > 0 }
   );
 
@@ -74,7 +172,9 @@ export default function Comparativo() {
     [states, selectedSiglas]
   );
 
-  const colWidth = selectedSiglas.length <= 2 ? "min-w-[320px]" : "min-w-[280px]";
+  const colWidth = selectedSiglas.length <= 2 ? "min-w-[340px]" : "min-w-[300px]";
+  const OC_COLOR = "oklch(0.48 0.22 25)";
+  const TD_COLOR = "oklch(0.28 0.12 255)";
 
   return (
     <div className="p-6 max-w-full mx-auto space-y-6">
@@ -82,7 +182,7 @@ export default function Comparativo() {
       <div>
         <h1 className="font-display text-2xl font-bold text-foreground">Comparativo entre Estados</h1>
         <p className="text-muted-foreground text-sm mt-1">
-          Selecione até 5 estados para comparar lado a lado suas estruturas organizacionais.
+          Selecione até 5 estados para comparar lado a lado suas estruturas organizacionais, incluindo cargos, funções, subordinações e atribuições.
         </p>
       </div>
 
@@ -160,7 +260,7 @@ export default function Comparativo() {
           <GitCompare className="w-16 h-16 text-muted-foreground mx-auto mb-4 opacity-30" />
           <p className="font-display font-semibold text-foreground mb-2">Nenhum estado selecionado</p>
           <p className="text-sm text-muted-foreground max-w-sm mx-auto">
-            Adicione dois ou mais estados para visualizar a comparação lado a lado das estruturas organizacionais.
+            Adicione dois ou mais estados para visualizar a comparação lado a lado das estruturas organizacionais, incluindo cargos, funções e atribuições.
           </p>
         </div>
       )}
@@ -175,23 +275,21 @@ export default function Comparativo() {
               ))}
             </div>
           ) : (
-            <div className="space-y-6">
+            <div className="space-y-8">
+
               {/* ── Comando Operacional ── */}
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <Shield className="w-5 h-5 text-[oklch(0.48_0.22_25)]" />
+                  <Shield className="w-5 h-5" style={{ color: OC_COLOR }} />
                   <h2 className="font-display font-bold text-foreground">Comando Operacional</h2>
                   <div className="flex-1 h-px bg-border" />
                 </div>
                 <div className="flex gap-4 overflow-x-auto pb-2">
-                  {(results ?? []).map(({ state, operationalCommand }) => (
+                  {(results ?? []).map(({ state, operationalCommand, ocPositions }) => (
                     <div
                       key={state.sigla}
-                      className={cn(
-                        "flex-shrink-0 bg-white rounded-xl shadow-sm overflow-hidden",
-                        colWidth
-                      )}
-                      style={{ borderTop: "4px solid oklch(0.48 0.22 25)" }}
+                      className={cn("flex-shrink-0 bg-white rounded-xl shadow-sm overflow-hidden", colWidth)}
+                      style={{ borderTop: `4px solid ${OC_COLOR}` }}
                     >
                       {/* Column header */}
                       <div className="p-4 bg-[oklch(0.97_0.02_25)] border-b border-border">
@@ -210,7 +308,7 @@ export default function Comparativo() {
                         <div className="p-4 space-y-4">
                           {/* Nomenclature */}
                           <div>
-                            <p className="text-xs font-bold text-[oklch(0.48_0.22_25)] uppercase tracking-wide mb-1">
+                            <p className="text-xs font-bold uppercase tracking-wide mb-1" style={{ color: OC_COLOR }}>
                               Nomenclatura
                             </p>
                             <p className="text-sm font-semibold text-foreground leading-snug">
@@ -224,8 +322,8 @@ export default function Comparativo() {
                           {/* Subdivisions */}
                           <div>
                             <div className="flex items-center gap-1.5 mb-1.5">
-                              <Layers className="w-3.5 h-3.5 text-[oklch(0.48_0.22_25)]" />
-                              <p className="text-xs font-bold text-[oklch(0.48_0.22_25)] uppercase tracking-wide">
+                              <Layers className="w-3.5 h-3.5" style={{ color: OC_COLOR }} />
+                              <p className="text-xs font-bold uppercase tracking-wide" style={{ color: OC_COLOR }}>
                                 Desdobramentos
                               </p>
                             </div>
@@ -235,12 +333,27 @@ export default function Comparativo() {
                           {/* Attributions */}
                           <div>
                             <div className="flex items-center gap-1.5 mb-1.5">
-                              <Target className="w-3.5 h-3.5 text-[oklch(0.48_0.22_25)]" />
-                              <p className="text-xs font-bold text-[oklch(0.48_0.22_25)] uppercase tracking-wide">
-                                Atribuições
+                              <Target className="w-3.5 h-3.5" style={{ color: OC_COLOR }} />
+                              <p className="text-xs font-bold uppercase tracking-wide" style={{ color: OC_COLOR }}>
+                                Atribuições do Órgão
                               </p>
                             </div>
                             <AttributionList content={operationalCommand.attributions} />
+                          </div>
+
+                          {/* Positions */}
+                          <div>
+                            <div className="flex items-center gap-1.5 mb-2">
+                              <Users className="w-3.5 h-3.5" style={{ color: OC_COLOR }} />
+                              <p className="text-xs font-bold uppercase tracking-wide" style={{ color: OC_COLOR }}>
+                                Cargos e Funções ({ocPositions?.length ?? 0})
+                              </p>
+                            </div>
+                            <PositionsList
+                              positions={ocPositions ?? []}
+                              accentColor={OC_COLOR}
+                              emptyLabel="Nenhum cargo/função detalhado na legislação"
+                            />
                           </div>
 
                           {/* Legal basis */}
@@ -270,19 +383,16 @@ export default function Comparativo() {
               {/* ── Diretoria de Atividades Técnicas ── */}
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <BookOpen className="w-5 h-5 text-[oklch(0.28_0.12_255)]" />
+                  <BookOpen className="w-5 h-5" style={{ color: TD_COLOR }} />
                   <h2 className="font-display font-bold text-foreground">Diretoria de Atividades Técnicas</h2>
                   <div className="flex-1 h-px bg-border" />
                 </div>
                 <div className="flex gap-4 overflow-x-auto pb-2">
-                  {(results ?? []).map(({ state, technicalDirectorate }) => (
+                  {(results ?? []).map(({ state, technicalDirectorate, tdPositions }) => (
                     <div
                       key={state.sigla}
-                      className={cn(
-                        "flex-shrink-0 bg-white rounded-xl shadow-sm overflow-hidden",
-                        colWidth
-                      )}
-                      style={{ borderTop: "4px solid oklch(0.28 0.12 255)" }}
+                      className={cn("flex-shrink-0 bg-white rounded-xl shadow-sm overflow-hidden", colWidth)}
+                      style={{ borderTop: `4px solid ${TD_COLOR}` }}
                     >
                       {/* Column header */}
                       <div className="p-4 bg-[oklch(0.97_0.02_255)] border-b border-border">
@@ -301,7 +411,7 @@ export default function Comparativo() {
                         <div className="p-4 space-y-4">
                           {/* Nomenclature */}
                           <div>
-                            <p className="text-xs font-bold text-[oklch(0.28_0.12_255)] uppercase tracking-wide mb-1">
+                            <p className="text-xs font-bold uppercase tracking-wide mb-1" style={{ color: TD_COLOR }}>
                               Nomenclatura
                             </p>
                             <p className="text-sm font-semibold text-foreground leading-snug">
@@ -315,8 +425,8 @@ export default function Comparativo() {
                           {/* Subdivisions */}
                           <div>
                             <div className="flex items-center gap-1.5 mb-1.5">
-                              <Layers className="w-3.5 h-3.5 text-[oklch(0.28_0.12_255)]" />
-                              <p className="text-xs font-bold text-[oklch(0.28_0.12_255)] uppercase tracking-wide">
+                              <Layers className="w-3.5 h-3.5" style={{ color: TD_COLOR }} />
+                              <p className="text-xs font-bold uppercase tracking-wide" style={{ color: TD_COLOR }}>
                                 Desdobramentos
                               </p>
                             </div>
@@ -326,12 +436,27 @@ export default function Comparativo() {
                           {/* Attributions */}
                           <div>
                             <div className="flex items-center gap-1.5 mb-1.5">
-                              <Target className="w-3.5 h-3.5 text-[oklch(0.28_0.12_255)]" />
-                              <p className="text-xs font-bold text-[oklch(0.28_0.12_255)] uppercase tracking-wide">
-                                Atribuições
+                              <Target className="w-3.5 h-3.5" style={{ color: TD_COLOR }} />
+                              <p className="text-xs font-bold uppercase tracking-wide" style={{ color: TD_COLOR }}>
+                                Atribuições do Órgão
                               </p>
                             </div>
                             <AttributionList content={technicalDirectorate.attributions} />
+                          </div>
+
+                          {/* Positions */}
+                          <div>
+                            <div className="flex items-center gap-1.5 mb-2">
+                              <Users className="w-3.5 h-3.5" style={{ color: TD_COLOR }} />
+                              <p className="text-xs font-bold uppercase tracking-wide" style={{ color: TD_COLOR }}>
+                                Cargos e Funções ({tdPositions?.length ?? 0})
+                              </p>
+                            </div>
+                            <PositionsList
+                              positions={tdPositions ?? []}
+                              accentColor={TD_COLOR}
+                              emptyLabel="Nenhum cargo/função detalhado na legislação"
+                            />
                           </div>
 
                           {/* Legal basis */}
@@ -357,6 +482,7 @@ export default function Comparativo() {
                   ))}
                 </div>
               </div>
+
             </div>
           )}
         </div>

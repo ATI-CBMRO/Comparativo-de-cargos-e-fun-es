@@ -72,3 +72,27 @@ export const technicalDirectorates = mysqlTable("technical_directorates", {
 
 export type TechnicalDirectorate = typeof technicalDirectorates.$inferSelect;
 export type InsertTechnicalDirectorate = typeof technicalDirectorates.$inferInsert;
+
+// Tabela de Cargos e Funções
+export const positions = mysqlTable("positions", {
+  id: int("id").autoincrement().primaryKey(),
+  // Vinculado a um dos dois órgãos (um deles será null)
+  operationalCommandId: int("operationalCommandId"),
+  technicalDirectorateId: int("technicalDirectorateId"),
+  // Identificação
+  title: varchar("title", { length: 200 }).notNull(),          // ex: "Chefe do Estado-Maior"
+  acronym: varchar("acronym", { length: 50 }),                  // ex: "CEM"
+  rank: varchar("rank", { length: 100 }),                       // ex: "Coronel BM"
+  // Estrutura
+  subordinateTo: varchar("subordinateTo", { length: 200 }),     // ex: "Comandante-Geral"
+  subordinates: text("subordinates"),                           // ex: "Seção A; Seção B"
+  // Atribuições
+  attributions: text("attributions"),                           // separadas por ";"
+  // Metadados
+  sortOrder: int("sortOrder").default(0),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Position = typeof positions.$inferSelect;
+export type InsertPosition = typeof positions.$inferInsert;

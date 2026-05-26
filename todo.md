@@ -34,3 +34,13 @@
 ## Testes e Qualidade
 - [x] Vitest: testes dos routers principais (11 testes passando)
 - [x] Checkpoint final
+
+## Expansão: Cargos e Funções
+- [x] Schema: tabela `positions` com cargos/funções vinculados a operational_commands e technical_directorates
+- [x] Migration SQL aplicada via webdev_execute_sql
+- [x] Seed: popular banco com cargos e funções de todos os estados levantados (112 cargos/funções inseridos)
+- [x] Backend: incluir cargos/funções nas queries de detalhes e comparativo
+- [x] Frontend: exibir cargos/funções na página de detalhes por estado
+- [x] Frontend: exibir cargos/funções na página de comparativo
+- [x] Testes atualizados para cargos/funções (17 testes passando)
+- [x] Checkpoint final com cargos/funções

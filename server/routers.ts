@@ -7,6 +7,8 @@ import {
   getAllStates,
   getDashboardStats,
   getFilteredData,
+  getPositionsByOperationalCommandIds,
+  getPositionsByTechnicalDirectorateIds,
   getStateDetails,
 } from "./db";
 
@@ -69,6 +71,42 @@ export const appRouter = router({
           return results.map((r) => ({ ...r, operationalCommand: null }));
         }
         return results;
+      }),
+
+    // Comparativo com cargos e funções completos
+    comparative: publicProcedure
+      .input(
+        z.object({
+          siglas: z.array(z.string().length(2)).min(1).max(5),
+        })
+      )
+      .query(async ({ input }) => {
+        const results = await getFilteredData({ siglas: input.siglas });
+
+        // Collect IDs
+        const ocIds = results
+          .map((r) => r.operationalCommand?.id)
+          .filter((id): id is number => id !== undefined && id !== null);
+        const tdIds = results
+          .map((r) => r.technicalDirectorate?.id)
+          .filter((id): id is number => id !== undefined && id !== null);
+
+        // Fetch all positions in two queries
+        const [ocPositions, tdPositions] = await Promise.all([
+          getPositionsByOperationalCommandIds(ocIds),
+          getPositionsByTechnicalDirectorateIds(tdIds),
+        ]);
+
+        // Attach positions to each state result
+        return results.map((r) => ({
+          ...r,
+          ocPositions: r.operationalCommand
+            ? ocPositions.filter((p) => p.operationalCommandId === r.operationalCommand!.id)
+            : [],
+          tdPositions: r.technicalDirectorate
+            ? tdPositions.filter((p) => p.technicalDirectorateId === r.technicalDirectorate!.id)
+            : [],
+        }));
       }),
   }),
 });

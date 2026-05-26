@@ -1,27 +1,43 @@
-import { useParams, Link } from "wouter";
+import { useState } from "react";
+import { Link, useParams } from "wouter";
 import { trpc } from "@/lib/trpc";
 import DetailLevelBadge from "@/components/DetailLevelBadge";
 import {
   ArrowLeft,
   BookOpen,
   Building2,
+  ChevronDown,
   ChevronRight,
+  ChevronUp,
   FileText,
   Layers,
   Shield,
   Target,
+  User,
+  Users,
 } from "lucide-react";
+
+type Position = {
+  id: number;
+  title: string;
+  acronym: string | null;
+  rank: string | null;
+  subordinateTo: string | null;
+  subordinates: string | null;
+  attributions: string | null;
+  sortOrder: number | null;
+};
 
 function InfoSection({
   icon: Icon,
   title,
   content,
-  color,
+  accentColor,
 }: {
   icon: React.ElementType;
   title: string;
   content: string | null | undefined;
-  color: string;
+  accentColor: string;
 }) {
   if (!content) return null;
   const items = content.split(";").map((s) => s.trim()).filter(Boolean);
@@ -29,8 +45,8 @@ function InfoSection({
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <Icon className={`w-4 h-4 ${color}`} />
-        <h4 className={`text-sm font-semibold ${color}`}>{title}</h4>
+        <Icon className="w-4 h-4" style={{ color: accentColor }} />
+        <h4 className="text-sm font-semibold" style={{ color: accentColor }}>{title}</h4>
       </div>
       <ul className="space-y-1.5 pl-6">
         {items.map((item, i) => (
@@ -44,6 +60,89 @@ function InfoSection({
   );
 }
 
+function PositionCard({ position, accentColor }: { position: Position; accentColor: string }) {
+  const [expanded, setExpanded] = useState(false);
+  const hasDetails = position.subordinateTo || position.subordinates || position.attributions;
+
+  return (
+    <div
+      className="border border-border rounded-lg overflow-hidden"
+      style={{ borderLeftColor: accentColor, borderLeftWidth: 3 }}
+    >
+      <button
+        className="w-full flex items-center justify-between px-4 py-3 bg-muted/30 hover:bg-muted/60 transition-colors text-left"
+        onClick={() => hasDetails && setExpanded((v) => !v)}
+        disabled={!hasDetails}
+      >
+        <div className="flex items-center gap-3 min-w-0">
+          <User className="w-4 h-4 flex-shrink-0" style={{ color: accentColor }} />
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-foreground">
+              {position.title}
+              {position.acronym && (
+                <span className="ml-1.5 text-xs text-muted-foreground font-normal">({position.acronym})</span>
+              )}
+            </p>
+            {position.rank && (
+              <p className="text-xs text-muted-foreground mt-0.5">{position.rank}</p>
+            )}
+          </div>
+        </div>
+        {hasDetails && (
+          expanded ? (
+            <ChevronUp className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+          ) : (
+            <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+          )
+        )}
+      </button>
+
+      {expanded && (
+        <div className="px-4 py-3 space-y-3 bg-white border-t border-border">
+          {position.subordinateTo && (
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground mb-1">
+                Subordinado a
+              </p>
+              <p className="text-sm text-foreground">{position.subordinateTo}</p>
+            </div>
+          )}
+          {position.subordinates && (
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground mb-1">
+                Subordinados / Desdobramentos
+              </p>
+              <ul className="space-y-1 pl-2">
+                {position.subordinates.split(";").map((s, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-foreground">
+                    <ChevronRight className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                    {s.trim()}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {position.attributions && (
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground mb-1">
+                Atribuições
+              </p>
+              <ul className="space-y-1 pl-2">
+                {position.attributions.split(";").map((s, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground flex-shrink-0 mt-2" />
+                    {s.trim()}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function OrgCard({
   type,
   nomenclature,
@@ -53,6 +152,7 @@ function OrgCard({
   detailLevel,
   legalBasis,
   notes,
+  positions,
 }: {
   type: "operational" | "technical";
   nomenclature: string;
@@ -62,11 +162,11 @@ function OrgCard({
   detailLevel: "detalhado" | "moderado" | "basico";
   legalBasis?: string | null;
   notes?: string | null;
+  positions: Position[];
 }) {
   const isOperational = type === "operational";
   const accentColor = isOperational ? "oklch(0.48 0.22 25)" : "oklch(0.28 0.12 255)";
   const bgColor = isOperational ? "oklch(0.97 0.02 25)" : "oklch(0.97 0.02 255)";
-  const textColor = isOperational ? "text-[oklch(0.48_0.22_25)]" : "text-[oklch(0.28_0.12_255)]";
   const Icon = isOperational ? Shield : BookOpen;
   const typeLabel = isOperational ? "Comando Operacional" : "Diretoria de Atividades Técnicas";
 
@@ -78,8 +178,8 @@ function OrgCard({
       <div className="p-5 border-b border-border" style={{ background: bgColor }}>
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-2">
-            <Icon className={`w-5 h-5 ${textColor}`} />
-            <span className={`text-xs font-bold uppercase tracking-wider ${textColor}`}>
+            <Icon className="w-5 h-5" style={{ color: accentColor }} />
+            <span className="text-xs font-bold uppercase tracking-wider" style={{ color: accentColor }}>
               {typeLabel}
             </span>
           </div>
@@ -89,7 +189,7 @@ function OrgCard({
           {nomenclature}
         </h3>
         {acronym && (
-          <p className={`text-sm font-medium ${textColor} mt-1`}>Sigla: {acronym}</p>
+          <p className="text-sm font-medium mt-1" style={{ color: accentColor }}>Sigla: {acronym}</p>
         )}
       </div>
 
@@ -98,19 +198,41 @@ function OrgCard({
           icon={Layers}
           title="Desdobramentos (Seções / Divisões)"
           content={subdivisions}
-          color={textColor}
+          accentColor={accentColor}
         />
         <InfoSection
           icon={Target}
-          title="Atribuições"
+          title="Atribuições do Órgão"
           content={attributions}
-          color={textColor}
+          accentColor={accentColor}
         />
+
+        {/* Cargos e Funções */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <Users className="w-4 h-4" style={{ color: accentColor }} />
+            <h4 className="text-sm font-semibold" style={{ color: accentColor }}>
+              Cargos e Funções ({positions.length})
+            </h4>
+          </div>
+          {positions.length === 0 ? (
+            <p className="text-sm text-muted-foreground pl-6 italic">
+              Nenhum cargo/função detalhado na legislação analisada.
+            </p>
+          ) : (
+            <div className="space-y-2 pl-2">
+              {positions.map((pos) => (
+                <PositionCard key={pos.id} position={pos} accentColor={accentColor} />
+              ))}
+            </div>
+          )}
+        </div>
+
         {legalBasis && (
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <FileText className={`w-4 h-4 ${textColor}`} />
-              <h4 className={`text-sm font-semibold ${textColor}`}>Base Legal</h4>
+              <FileText className="w-4 h-4 text-muted-foreground" />
+              <h4 className="text-sm font-semibold text-muted-foreground">Base Legal</h4>
             </div>
             <p className="text-sm text-muted-foreground pl-6">{legalBasis}</p>
           </div>
@@ -158,7 +280,7 @@ export default function EstadoDetalhe() {
     );
   }
 
-  const { state, operationalCommand, technicalDirectorate } = data;
+  const { state, operationalCommand, technicalDirectorate, ocPositions, tdPositions } = data;
 
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-6">
@@ -211,6 +333,7 @@ export default function EstadoDetalhe() {
             detailLevel={operationalCommand.detailLevel}
             legalBasis={operationalCommand.legalBasis}
             notes={operationalCommand.notes}
+            positions={ocPositions ?? []}
           />
         ) : (
           <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-dashed border-border text-center">
@@ -231,6 +354,7 @@ export default function EstadoDetalhe() {
             detailLevel={technicalDirectorate.detailLevel}
             legalBasis={technicalDirectorate.legalBasis}
             notes={technicalDirectorate.notes}
+            positions={tdPositions ?? []}
           />
         ) : (
           <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-dashed border-border text-center">

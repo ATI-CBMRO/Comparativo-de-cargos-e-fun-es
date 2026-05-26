@@ -1,6 +1,6 @@
-import { and, eq, inArray, like, or } from "drizzle-orm";
+import { and, asc, eq, inArray, like, or } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, operationalCommands, states, technicalDirectorates, users } from "../drizzle/schema";
+import { InsertUser, operationalCommands, positions, states, technicalDirectorates, users } from "../drizzle/schema";
 import { ENV } from "./_core/env";
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -192,6 +192,50 @@ export async function getFilteredData(params: FilterParams) {
   }));
 }
 
+// ─── Positions ────────────────────────────────────────────────────────────
+
+export async function getPositionsByOperationalCommand(operationalCommandId: number) {
+  const db = await getDb();
+  if (!db) return [];
+  return db
+    .select()
+    .from(positions)
+    .where(eq(positions.operationalCommandId, operationalCommandId))
+    .orderBy(asc(positions.sortOrder));
+}
+
+export async function getPositionsByTechnicalDirectorate(technicalDirectorateId: number) {
+  const db = await getDb();
+  if (!db) return [];
+  return db
+    .select()
+    .from(positions)
+    .where(eq(positions.technicalDirectorateId, technicalDirectorateId))
+    .orderBy(asc(positions.sortOrder));
+}
+
+export async function getPositionsByOperationalCommandIds(ids: number[]) {
+  const db = await getDb();
+  if (!db || ids.length === 0) return [];
+  return db
+    .select()
+    .from(positions)
+    .where(inArray(positions.operationalCommandId, ids))
+    .orderBy(asc(positions.sortOrder));
+}
+
+export async function getPositionsByTechnicalDirectorateIds(ids: number[]) {
+  const db = await getDb();
+  if (!db || ids.length === 0) return [];
+  return db
+    .select()
+    .from(positions)
+    .where(inArray(positions.technicalDirectorateId, ids))
+    .orderBy(asc(positions.sortOrder));
+}
+
+// ─── State Details (with positions) ───────────────────────────────────────
+
 export async function getStateDetails(sigla: string) {
   const db = await getDb();
   if (!db) return null;
@@ -211,7 +255,16 @@ export async function getStateDetails(sigla: string) {
     .where(eq(technicalDirectorates.stateId, state.id))
     .limit(1);
 
-  return { state, operationalCommand: oc ?? null, technicalDirectorate: td ?? null };
+  const ocPositions = oc ? await getPositionsByOperationalCommand(oc.id) : [];
+  const tdPositions = td ? await getPositionsByTechnicalDirectorate(td.id) : [];
+
+  return {
+    state,
+    operationalCommand: oc ?? null,
+    technicalDirectorate: td ?? null,
+    ocPositions,
+    tdPositions,
+  };
 }
 
 export async function getDashboardStats() {
