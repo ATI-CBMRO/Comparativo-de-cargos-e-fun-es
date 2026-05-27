@@ -88,6 +88,8 @@ export const positions = mysqlTable("positions", {
   subordinates: text("subordinates"),                           // ex: "Seção A; Seção B"
   // Atribuições
   attributions: text("attributions"),                           // separadas por ";"
+  // Categoria para comparativo por cargo
+  positionCategory: varchar("positionCategory", { length: 100 }),  // ex: "chefe-co", "chefe-dat", "adjunto-co"
   // Metadados
   sortOrder: int("sortOrder").default(0),
   createdAt: timestamp("createdAt").defaultNow().notNull(),

@@ -44,3 +44,12 @@
 - [x] Frontend: exibir cargos/funções na página de comparativo
 - [x] Testes atualizados para cargos/funções (17 testes passando)
 - [x] Checkpoint final com cargos/funções
+
+## Filtro Comparativo por Cargo
+
+- [x] Backend: endpoint `data.positionTypes` para listar tipos de cargos disponíveis
+- [x] Backend: endpoint `data.comparePositions` para comparar um tipo de cargo entre todos os estados
+- [x] Frontend: nova página `ComparativoCargos` com filtro por tipo de cargo e visualização comparativa
+- [x] Frontend: integrar link na sidebar e em `App.tsx`
+- [x] Testes para os novos endpoints (23 testes passando)
+- [x] Checkpoint final

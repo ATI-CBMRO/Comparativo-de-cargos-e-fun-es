@@ -10,6 +10,7 @@ import {
   Home,
   List,
   Menu,
+  Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -17,6 +18,7 @@ const navItems = [
   { href: "/", icon: Home, label: "Início" },
   { href: "/estados", icon: List, label: "Estados" },
   { href: "/comparativo", icon: GitCompare, label: "Comparativo" },
+  { href: "/comparativo-cargos", icon: Users, label: "Cargos e Funções" },
   { href: "/sobre", icon: BookOpen, label: "Sobre o Portal" },
 ];
 

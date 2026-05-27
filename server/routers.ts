@@ -9,6 +9,8 @@ import {
   getFilteredData,
   getPositionsByOperationalCommandIds,
   getPositionsByTechnicalDirectorateIds,
+  getPositionCategories,
+  getPositionsByCategory,
   getStateDetails,
 } from "./db";
 
@@ -45,6 +47,10 @@ export const appRouter = router({
 
   // ─── Filtered Data ────────────────────────────────────────────────────────
   data: router({
+    allStates: publicProcedure.query(async () => {
+      return getAllStates();
+    }),
+
     filtered: publicProcedure
       .input(
         z.object({
@@ -69,6 +75,30 @@ export const appRouter = router({
         }
         if (input.orgType === "technical") {
           return results.map((r) => ({ ...r, operationalCommand: null }));
+        }
+        return results;
+      }),
+
+    // Tipos de categorias de cargos disponíveis
+    positionTypes: publicProcedure.query(async () => {
+      return getPositionCategories();
+    }),
+
+    // Comparativo por categoria de cargo
+    comparePositions: publicProcedure
+      .input(
+        z.object({
+          category: z.string().min(1),
+          siglas: z.array(z.string().length(2)).optional(),
+        })
+      )
+      .query(async ({ input }) => {
+        const results = await getPositionsByCategory(input.category);
+        // Filter by states if provided
+        if (input.siglas && input.siglas.length > 0) {
+          return results.filter(
+            (r) => r.state && input.siglas!.includes(r.state.sigla)
+          );
         }
         return results;
       }),

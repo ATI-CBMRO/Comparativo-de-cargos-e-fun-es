@@ -1,4 +1,4 @@
-import { and, asc, eq, inArray, like, or } from "drizzle-orm";
+import { and, asc, eq, inArray, isNotNull, like, or, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { InsertUser, operationalCommands, positions, states, technicalDirectorates, users } from "../drizzle/schema";
 import { ENV } from "./_core/env";
@@ -232,6 +232,80 @@ export async function getPositionsByTechnicalDirectorateIds(ids: number[]) {
     .from(positions)
     .where(inArray(positions.technicalDirectorateId, ids))
     .orderBy(asc(positions.sortOrder));
+}
+
+// ─── Position Categories ──────────────────────────────────────────────────
+
+export async function getPositionCategories() {
+  const db = await getDb();
+  if (!db) return [];
+  const rows = await db
+    .selectDistinct({ positionCategory: positions.positionCategory })
+    .from(positions)
+    .where(isNotNull(positions.positionCategory))
+    .orderBy(positions.positionCategory);
+  return rows.map((r) => r.positionCategory).filter(Boolean) as string[];
+}
+
+export async function getPositionsByCategory(category: string) {
+  const db = await getDb();
+  if (!db) return [];
+
+  // Get all positions of this category with their parent org info
+  const posRows = await db
+    .select()
+    .from(positions)
+    .where(eq(positions.positionCategory, category))
+    .orderBy(asc(positions.sortOrder));
+
+  if (posRows.length === 0) return [];
+
+  // Collect OC and TD ids
+  const ocIds = posRows
+    .map((p) => p.operationalCommandId)
+    .filter((id): id is number => id !== null && id !== undefined);
+  const tdIds = posRows
+    .map((p) => p.technicalDirectorateId)
+    .filter((id): id is number => id !== null && id !== undefined);
+
+  // Fetch parent orgs
+  const [ocs, tds] = await Promise.all([
+    ocIds.length > 0
+      ? db.select().from(operationalCommands).where(inArray(operationalCommands.id, ocIds))
+      : Promise.resolve([]),
+    tdIds.length > 0
+      ? db.select().from(technicalDirectorates).where(inArray(technicalDirectorates.id, tdIds))
+      : Promise.resolve([]),
+  ]);
+
+  // Fetch states
+  const stateIds = [
+    ...ocs.map((o) => o.stateId),
+    ...tds.map((t) => t.stateId),
+  ].filter((v, i, a) => a.indexOf(v) === i);
+
+  const stateRows =
+    stateIds.length > 0
+      ? await db.select().from(states).where(inArray(states.id, stateIds))
+      : [];
+
+  // Build result: one entry per position
+  return posRows.map((pos) => {
+    const oc = pos.operationalCommandId
+      ? ocs.find((o) => o.id === pos.operationalCommandId) ?? null
+      : null;
+    const td = pos.technicalDirectorateId
+      ? tds.find((t) => t.id === pos.technicalDirectorateId) ?? null
+      : null;
+    const stateId = oc?.stateId ?? td?.stateId;
+    const state = stateRows.find((s) => s.id === stateId) ?? null;
+    return {
+      position: pos,
+      operationalCommand: oc,
+      technicalDirectorate: td,
+      state,
+    };
+  });
 }
 
 // ─── State Details (with positions) ───────────────────────────────────────

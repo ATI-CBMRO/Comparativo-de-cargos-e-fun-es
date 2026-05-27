@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Estados from "./pages/Estados";
 import EstadoDetalhe from "./pages/EstadoDetalhe";
 import Comparativo from "./pages/Comparativo";
+import ComparativoCargos from "./pages/ComparativoCargos";
 import Sobre from "./pages/Sobre";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
         <Route path="/estados" component={Estados} />
         <Route path="/estado/:sigla" component={EstadoDetalhe} />
         <Route path="/comparativo" component={Comparativo} />
+        <Route path="/comparativo-cargos" component={ComparativoCargos} />
         <Route path="/sobre" component={Sobre} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />

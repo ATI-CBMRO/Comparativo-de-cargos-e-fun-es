@@ -108,6 +108,25 @@ vi.mock("./db", () => {
     }),
     getPositionsByOperationalCommandIds: vi.fn().mockResolvedValue(ocPositions),
     getPositionsByTechnicalDirectorateIds: vi.fn().mockResolvedValue(tdPositions),
+    getPositionCategories: vi.fn().mockResolvedValue([
+      "chefe-co",
+      "adjunto-co",
+      "chefe-dat",
+      "adjunto-dat",
+      "chefe-depto-dat",
+      "chefe-secao-dat",
+    ]),
+    getPositionsByCategory: vi.fn().mockResolvedValue([
+      {
+        position: {
+          ...ocPositions[0],
+          positionCategory: "chefe-co",
+        },
+        operationalCommand: ocRO,
+        technicalDirectorate: null,
+        state: stateRO,
+      },
+    ]),
     upsertUser: vi.fn(),
     getUserByOpenId: vi.fn(),
   };
@@ -253,5 +272,58 @@ describe("data.comparative", () => {
   it("rejects empty siglas array", async () => {
     const caller = appRouter.createCaller(createPublicContext());
     await expect(caller.data.comparative({ siglas: [] })).rejects.toThrow();
+  });
+});
+
+describe("data.allStates", () => {
+  it("returns all states list", async () => {
+    const caller = appRouter.createCaller(createPublicContext());
+    const result = await caller.data.allStates();
+    expect(result).toHaveLength(2);
+    expect(result[0].sigla).toBe("RO");
+  });
+});
+
+describe("data.positionTypes", () => {
+  it("returns list of distinct position categories", async () => {
+    const caller = appRouter.createCaller(createPublicContext());
+    const result = await caller.data.positionTypes();
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
+    expect(result).toContain("chefe-co");
+    expect(result).toContain("chefe-dat");
+  });
+});
+
+describe("data.comparePositions", () => {
+  it("returns positions for a given category", async () => {
+    const caller = appRouter.createCaller(createPublicContext());
+    const result = await caller.data.comparePositions({ category: "chefe-co" });
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
+    expect(result[0].position.positionCategory).toBe("chefe-co");
+  });
+
+  it("returns position with state, operationalCommand and attributions", async () => {
+    const caller = appRouter.createCaller(createPublicContext());
+    const result = await caller.data.comparePositions({ category: "chefe-co" });
+    const entry = result[0];
+    expect(entry).toHaveProperty("position");
+    expect(entry).toHaveProperty("state");
+    expect(entry).toHaveProperty("operationalCommand");
+    expect(entry.position).toHaveProperty("title");
+    expect(entry.position).toHaveProperty("attributions");
+    expect(entry.state?.sigla).toBe("RO");
+  });
+
+  it("accepts optional siglas filter", async () => {
+    const caller = appRouter.createCaller(createPublicContext());
+    const result = await caller.data.comparePositions({ category: "chefe-co", siglas: ["RO"] });
+    expect(Array.isArray(result)).toBe(true);
+  });
+
+  it("rejects empty category string", async () => {
+    const caller = appRouter.createCaller(createPublicContext());
+    await expect(caller.data.comparePositions({ category: "" })).rejects.toThrow();
   });
 });
