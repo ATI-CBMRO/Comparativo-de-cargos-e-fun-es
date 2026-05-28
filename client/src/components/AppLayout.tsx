@@ -132,7 +132,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
         {/* Sidebar */}
         <aside
           className={cn(
-            "fixed inset-y-0 left-0 z-50 flex flex-col transition-all duration-300 lg:relative lg:z-auto lg:inset-y-auto",
+            "fixed top-0 bottom-0 left-0 z-50 flex flex-col transition-all duration-300 lg:relative lg:z-auto lg:top-auto lg:bottom-auto",
             collapsed ? "w-16" : "w-64",
             mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
           )}
@@ -224,23 +224,23 @@ export default function AppLayout({ children }: AppLayoutProps) {
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
           {/* Sub-header com título da seção */}
           <div
-            className="flex-shrink-0 h-11 bg-white border-b flex items-center gap-4 px-4 lg:px-6"
+            className="flex-shrink-0 min-h-11 bg-white border-b flex items-center gap-4 px-4 lg:px-6 py-2"
             style={{ borderColor: "oklch(0.88 0.006 264)" }}
           >
             <button
-              className="lg:hidden p-1.5 rounded-md text-muted-foreground hover:bg-muted"
+              className="lg:hidden p-1.5 rounded-md text-muted-foreground hover:bg-muted flex-shrink-0"
               onClick={() => setMobileOpen(true)}
             >
               <Menu className="w-5 h-5" />
             </button>
 
-            <div className="flex items-center gap-2 flex-1">
+            <div className="flex items-center gap-2 flex-1 min-w-0">
               <div
-                className="w-1 h-5 rounded-full"
-                style={{ background: "linear-gradient(180deg, oklch(0.44 0.22 22), oklch(0.28 0.14 264))" }}
+                className="w-1 flex-shrink-0 self-stretch rounded-full"
+                style={{ background: "linear-gradient(180deg, oklch(0.44 0.22 22), oklch(0.28 0.14 264))", minHeight: "1.25rem" }}
               />
               <h2
-                className="font-semibold text-foreground text-sm"
+                className="font-semibold text-foreground text-sm leading-snug break-words"
                 style={{ fontFamily: "'Josefin Sans', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase" }}
               >
                 Corpos de Bombeiros Militares — Estrutura Organizacional
