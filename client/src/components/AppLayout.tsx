@@ -42,52 +42,79 @@ export default function AppLayout({ children }: AppLayoutProps) {
           boxShadow: "0 3px 10px rgba(0,0,0,0.3)",
         }}
       >
-        <div className="flex flex-col items-center justify-center py-3 px-5">
-          {/* Título principal */}
-          <span
-            style={{
-              color: "#fff",
-              fontFamily: "'Josefin Sans', 'Segoe UI', sans-serif",
-              fontSize: "clamp(0.75rem, 2vw, 1.1rem)",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "2px",
-              lineHeight: 1.1,
-              textShadow: "1px 1px 4px rgba(0,0,0,0.4)",
-              textAlign: "center",
-              paddingBottom: "4px",
-            }}
-          >
-            Assessoria Institucional do Corpo de Bombeiros Militar de Rondônia
-          </span>
+        <div className="flex items-center justify-between px-4 py-2 gap-4">
 
-          {/* Divisor azul */}
-          <div
+          {/* Brasão esquerdo */}
+          <img
+            src="/manus-storage/brasao-cbmro-oficial_c63237f8.webp"
+            alt="Brasão CBMRO"
             style={{
-              width: "60%",
-              height: "4px",
-              background: "linear-gradient(to right, #1a3a8f, #3a6abf, #1a3a8f)",
-              margin: "3px 0",
-              borderRadius: "2px",
+              height: "clamp(56px, 7.5vw, 88px)",
+              width: "auto",
+              filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.5))",
+              flexShrink: 0,
             }}
           />
 
-          {/* Subtítulo */}
-          <span
+          {/* Bloco central de texto */}
+          <div className="flex flex-col items-center justify-center flex-1">
+            <span
+              style={{
+                color: "#fff",
+                fontFamily: "'Josefin Sans', 'Segoe UI', sans-serif",
+                fontSize: "clamp(0.72rem, 2vw, 1.1rem)",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "2px",
+                lineHeight: 1.2,
+                textShadow: "1px 1px 4px rgba(0,0,0,0.4)",
+                textAlign: "center",
+                paddingBottom: "4px",
+              }}
+            >
+              Assessoria Institucional do Corpo de Bombeiros Militar de Rondônia
+            </span>
+
+            {/* Divisor azul */}
+            <div
+              style={{
+                width: "80%",
+                height: "3px",
+                background: "linear-gradient(to right, transparent, #1a3a8f, #3a6abf, #1a3a8f, transparent)",
+                margin: "4px 0",
+                borderRadius: "2px",
+              }}
+            />
+
+            {/* Subtítulo */}
+            <span
+              style={{
+                color: "#fff",
+                fontFamily: "'Josefin Sans', 'Segoe UI', sans-serif",
+                fontSize: "clamp(0.60rem, 1.3vw, 0.82rem)",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "2px",
+                textShadow: "1px 1px 3px rgba(0,0,0,0.3)",
+                textAlign: "center",
+                paddingTop: "2px",
+              }}
+            >
+              Corpo de Bombeiros Militar de Rondônia &nbsp;·&nbsp; CBMRO
+            </span>
+          </div>
+
+          {/* Brasão direito (espelho) */}
+          <img
+            src="/manus-storage/brasao-cbmro-oficial_c63237f8.webp"
+            alt="Brasão CBMRO"
             style={{
-              color: "#fff",
-              fontFamily: "'Josefin Sans', 'Segoe UI', sans-serif",
-              fontSize: "clamp(0.65rem, 1.4vw, 0.85rem)",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "2px",
-              textShadow: "1px 1px 3px rgba(0,0,0,0.3)",
-              textAlign: "center",
-              paddingTop: "2px",
+              height: "clamp(56px, 7.5vw, 88px)",
+              width: "auto",
+              filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.5))",
+              flexShrink: 0,
             }}
-          >
-            Corpo de Bombeiros Militar de Rondônia &nbsp;·&nbsp; CBMRO
-          </span>
+          />
         </div>
       </header>
 
