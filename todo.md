@@ -96,4 +96,4 @@
 - [x] Criar cabeçalho institucional da Assessoria Institucional do CBMRO (gradiente vermelho, divisor azul)
 - [x] Atualizar sidebar/navegação com as novas cores (azul escuro CBMRO + fonte Josefin Sans)
 - [x] Atualizar sub-header com gradiente vermelho→azul e fonte Josefin Sans
-- [ ] Atualizar componentes (cards, botões, badges) com a nova identidade visual — revisão opcional
+- [x] Atualizar componentes (cards, botões, badges) com a nova identidade visual — aplicado via tokens CSS globais (primary, secondary, sidebar)

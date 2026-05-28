@@ -27,20 +27,20 @@ export default function Home() {
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8">
       {/* Hero */}
-      <div className="relative overflow-hidden rounded-2xl bg-[oklch(0.22_0.10_255)] text-white p-8">
+      <div className="relative overflow-hidden rounded-2xl text-white p-8" style={{background: "oklch(0.20 0.12 264)"}}>
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[oklch(0.48_0.22_25)] rounded-full -translate-y-1/2 translate-x-1/3" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[oklch(0.48_0.22_25)] rounded-full translate-y-1/2 -translate-x-1/4" />
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full -translate-y-1/2 translate-x-1/3" style={{background: "oklch(0.44 0.22 22)"}} />
+          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full translate-y-1/2 -translate-x-1/4" style={{background: "oklch(0.44 0.22 22)"}} />
         </div>
         <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
-          <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[oklch(0.48_0.22_25)] flex items-center justify-center shadow-lg">
+          <div className="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg" style={{background: "oklch(0.44 0.22 22)"}}>
             <Flame className="w-9 h-9 text-white" />
           </div>
           <div className="flex-1">
             <h1 className="font-display text-2xl md:text-3xl font-bold mb-2">
               Portal de Legislação dos Corpos de Bombeiros Militares
             </h1>
-            <p className="text-[oklch(0.75_0.05_255)] text-sm md:text-base max-w-2xl">
+            <p className="text-sm md:text-base max-w-2xl" style={{color: "oklch(0.80 0.04 264)"}}>
               Levantamento comparativo das estruturas organizacionais de Comandos Operacionais
               e Diretorias de Atividades Técnicas de 19 estados brasileiros, com base em
               Leis de Organização Básica, Regimentos Internos e Normas Gerais de Ação.
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="flex gap-3">
             <Link
               href="/estados"
-              className="flex items-center gap-2 bg-[oklch(0.48_0.22_25)] hover:bg-[oklch(0.40_0.22_25)] text-white px-4 py-2.5 rounded-lg text-sm font-medium transition-colors"
+              className="flex items-center gap-2 text-white px-4 py-2.5 rounded-lg text-sm font-medium transition-colors" style={{background: "oklch(0.44 0.22 22)"}} onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.background='oklch(0.36 0.22 22)'} onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.background='oklch(0.44 0.22 22)'}
             >
               <List className="w-4 h-4" />
               Ver Estados
@@ -69,10 +69,10 @@ export default function Home() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-white rounded-xl p-5 shadow-sm stat-card-blue">
           <div className="flex items-center justify-between mb-3">
-            <MapPin className="w-5 h-5 text-[oklch(0.28_0.12_255)]" />
+            <MapPin className="w-5 h-5" style={{color: "oklch(0.28 0.14 264)"}} />
             <span className="text-xs text-muted-foreground">Total</span>
           </div>
-          <p className="text-3xl font-display font-bold text-[oklch(0.28_0.12_255)]">
+          <p className="text-3xl font-display font-bold" style={{color: "oklch(0.28 0.14 264)"}}>
             {isLoading ? "—" : stats?.totalStates}
           </p>
           <p className="text-sm text-muted-foreground mt-1">Estados analisados</p>
@@ -80,10 +80,10 @@ export default function Home() {
 
         <div className="bg-white rounded-xl p-5 shadow-sm stat-card-red">
           <div className="flex items-center justify-between mb-3">
-            <Shield className="w-5 h-5 text-[oklch(0.48_0.22_25)]" />
+            <Shield className="w-5 h-5" style={{color: "oklch(0.44 0.22 22)"}} />
             <span className="text-xs text-muted-foreground">Cmd. Operacional</span>
           </div>
-          <p className="text-3xl font-display font-bold text-[oklch(0.48_0.22_25)]">
+          <p className="text-3xl font-display font-bold" style={{color: "oklch(0.44 0.22 22)"}}>
             {isLoading ? "—" : (stats?.operationalCommands?.detalhado ?? 0)}
           </p>
           <p className="text-sm text-muted-foreground mt-1">Com detalhamento completo</p>
@@ -117,7 +117,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white rounded-xl p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-1 h-5 rounded bg-[oklch(0.48_0.22_25)]" />
+              <div className="w-1 h-5 rounded" style={{background: "oklch(0.44 0.22 22)"}} />
               <h2 className="font-display font-semibold text-foreground">Comando Operacional</h2>
             </div>
             <div className="space-y-3">
@@ -150,7 +150,7 @@ export default function Home() {
 
           <div className="bg-white rounded-xl p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-1 h-5 rounded bg-[oklch(0.28_0.12_255)]" />
+              <div className="w-1 h-5 rounded" style={{background: "oklch(0.28 0.14 264)"}} />
               <h2 className="font-display font-semibold text-foreground">Diretoria de Atividades Técnicas</h2>
             </div>
             <div className="space-y-3">
@@ -188,12 +188,12 @@ export default function Home() {
         <div className="bg-white rounded-xl p-6 shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
-              <div className="w-1 h-5 rounded bg-[oklch(0.48_0.22_25)]" />
+              <div className="w-1 h-5 rounded" style={{background: "oklch(0.44 0.22 22)"}} />
               <h2 className="font-display font-semibold text-foreground">Estados Analisados</h2>
             </div>
             <Link
               href="/estados"
-              className="flex items-center gap-1 text-sm text-[oklch(0.48_0.22_25)] hover:underline font-medium"
+              className="flex items-center gap-1 text-sm font-medium hover:underline" style={{color: "oklch(0.44 0.22 22)"}} 
             >
               Ver todos <ChevronRight className="w-4 h-4" />
             </Link>
@@ -203,7 +203,7 @@ export default function Home() {
               <Link
                 key={state.sigla}
                 href={`/estado/${state.sigla}`}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-muted hover:bg-[oklch(0.92_0.08_255)] hover:text-[oklch(0.28_0.12_255)] transition-colors text-sm font-medium text-foreground"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-muted hover:bg-accent hover:text-accent-foreground transition-colors text-sm font-medium text-foreground"
               >
                 <span
                   className={`text-xs px-1.5 py-0.5 rounded font-bold ${
@@ -223,30 +223,30 @@ export default function Home() {
       <div className="grid sm:grid-cols-2 gap-4">
         <Link
           href="/estados"
-          className="group flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all border border-transparent hover:border-[oklch(0.48_0.22_25)]/20"
+          className="group flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all border border-transparent" style={{borderColor: 'transparent'}} onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.borderColor='oklch(0.44 0.22 22 / 0.2)'} onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.borderColor='transparent'}
         >
-          <div className="w-12 h-12 rounded-xl bg-[oklch(0.95_0.06_25)] flex items-center justify-center group-hover:bg-[oklch(0.48_0.22_25)] transition-colors">
-            <List className="w-6 h-6 text-[oklch(0.48_0.22_25)] group-hover:text-white transition-colors" />
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center transition-colors" style={{background: "oklch(0.94 0.04 22)"}}>
+            <List className="w-6 h-6 transition-colors" style={{color: "oklch(0.44 0.22 22)"}} />
           </div>
           <div>
             <p className="font-display font-semibold text-foreground">Consultar Estados</p>
             <p className="text-sm text-muted-foreground">Filtre e pesquise por estado, órgão ou nível</p>
           </div>
-          <ChevronRight className="w-5 h-5 text-muted-foreground ml-auto group-hover:text-[oklch(0.48_0.22_25)] transition-colors" />
+          <ChevronRight className="w-5 h-5 text-muted-foreground ml-auto transition-colors" />
         </Link>
 
         <Link
           href="/comparativo"
-          className="group flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all border border-transparent hover:border-[oklch(0.28_0.12_255)]/20"
+          className="group flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all border border-transparent" style={{borderColor: 'transparent'}} onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.borderColor='oklch(0.28 0.14 264 / 0.2)'} onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.borderColor='transparent'}
         >
-          <div className="w-12 h-12 rounded-xl bg-[oklch(0.92_0.08_255)] flex items-center justify-center group-hover:bg-[oklch(0.28_0.12_255)] transition-colors">
-            <GitCompare className="w-6 h-6 text-[oklch(0.28_0.12_255)] group-hover:text-white transition-colors" />
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center transition-colors" style={{background: "oklch(0.92 0.06 264)"}}>
+            <GitCompare className="w-6 h-6 transition-colors" style={{color: "oklch(0.28 0.14 264)"}} />
           </div>
           <div>
             <p className="font-display font-semibold text-foreground">Comparar Estados</p>
             <p className="text-sm text-muted-foreground">Visualize lado a lado as estruturas de diferentes estados</p>
           </div>
-          <ChevronRight className="w-5 h-5 text-muted-foreground ml-auto group-hover:text-[oklch(0.28_0.12_255)] transition-colors" />
+          <ChevronRight className="w-5 h-5 text-muted-foreground ml-auto transition-colors" />
         </Link>
       </div>
     </div>
