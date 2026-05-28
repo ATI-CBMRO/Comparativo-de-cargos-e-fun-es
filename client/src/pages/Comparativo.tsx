@@ -175,18 +175,25 @@ export default function Comparativo() {
     [states, selectedSiglas]
   );
 
-  const colWidth = selectedSiglas.length <= 2 ? "min-w-[340px]" : "min-w-[300px]";
+  // Escala dinâmica: grid com número de colunas fixo baseado na quantidade de estados
+  const colCount = selectedSiglas.length || 1;
+  // Mapeamento de quantidade de estados para colunas do grid
+  const gridCols: Record<number, string> = {
+    1: "grid-cols-1",
+    2: "grid-cols-2",
+    3: "grid-cols-3",
+    4: "grid-cols-4",
+    5: "grid-cols-5",
+  };
+  const gridClass = gridCols[colCount] ?? "grid-cols-5";
   const OC_COLOR = "oklch(0.48 0.22 25)";
   const TD_COLOR = "oklch(0.28 0.12 255)";
 
-  const { exportToPDF, isExporting } = usePDFExport();
+  const { exportComparativePDF, isExporting } = usePDFExport();
 
   const handleExportPDF = () => {
-    const stateLabel = selectedSiglas.join(", ");
-    exportToPDF("comparativo-content", {
+    exportComparativePDF(selectedSiglas, {
       filename: `comparativo-estados-${selectedSiglas.join("-")}-${Date.now()}.pdf`,
-      title: "Portal de Legislação dos Corpos de Bombeiros Militares",
-      subtitle: `Comparativo entre estados: ${stateLabel}`,
     });
   };
 
@@ -296,11 +303,11 @@ export default function Comparativo() {
 
       {/* Comparison table */}
       {selectedSiglas.length > 0 && (
-        <div className="overflow-x-auto">
+        <div>
           {isLoading ? (
-            <div className="flex gap-4">
+            <div className={`grid ${gridClass} gap-4`}>
               {selectedSiglas.map((s) => (
-                <div key={s} className="min-w-[300px] h-96 bg-muted rounded-xl animate-pulse" />
+                <div key={s} className="h-96 bg-muted rounded-xl animate-pulse" />
               ))}
             </div>
           ) : (
@@ -313,11 +320,11 @@ export default function Comparativo() {
                   <h2 className="font-display font-bold text-foreground">Comando Operacional</h2>
                   <div className="flex-1 h-px bg-border" />
                 </div>
-                <div className="flex gap-4 overflow-x-auto pb-2">
+                <div className={`grid ${gridClass} gap-4`}>
                   {(results ?? []).map(({ state, operationalCommand, ocPositions }) => (
                     <div
                       key={state.sigla}
-                      className={cn("flex-shrink-0 bg-white rounded-xl shadow-sm overflow-hidden", colWidth)}
+                      className="bg-white rounded-xl shadow-sm overflow-hidden"
                       style={{ borderTop: `4px solid ${OC_COLOR}` }}
                     >
                       {/* Column header */}
@@ -416,11 +423,11 @@ export default function Comparativo() {
                   <h2 className="font-display font-bold text-foreground">Diretoria de Atividades Técnicas</h2>
                   <div className="flex-1 h-px bg-border" />
                 </div>
-                <div className="flex gap-4 overflow-x-auto pb-2">
+                <div className={`grid ${gridClass} gap-4`}>
                   {(results ?? []).map(({ state, technicalDirectorate, tdPositions }) => (
                     <div
                       key={state.sigla}
-                      className={cn("flex-shrink-0 bg-white rounded-xl shadow-sm overflow-hidden", colWidth)}
+                      className="bg-white rounded-xl shadow-sm overflow-hidden"
                       style={{ borderTop: `4px solid ${TD_COLOR}` }}
                     >
                       {/* Column header */}

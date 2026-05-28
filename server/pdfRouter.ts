@@ -1,6 +1,6 @@
 import type { Express, Request, Response } from "express";
 import PDFDocument from "pdfkit";
-import { getPositionsByCategory } from "./db";
+import { getPositionsByCategory, getFilteredData, getPositionsByOperationalCommand, getPositionsByTechnicalDirectorate } from "./db";
 
 // ─── Cores institucionais ─────────────────────────────────────────────────────
 const NAVY = "#0f172a";
@@ -348,6 +348,370 @@ async function generatePositionsPDF(
   doc.end();
 }
 
+// ─── Geração do PDF Comparativo ─────────────────────────────────────────────
+// Estima a altura necessária para renderizar um org no PDF
+function estimateOrgHeight(
+  org: { nomenclature: string; acronym: string | null; subdivisions: string | null; attributions: string | null; legalBasis: string | null } | null,
+  positionsList: { title: string; rank: string | null }[],
+  colW: number
+): number {
+  if (!org) return 44;
+  let h = 36; // card header
+  if (org.subdivisions) {
+    const subs = org.subdivisions.split(";").filter(Boolean);
+    if (subs.length > 0) {
+      h += 14;
+      for (const sub of subs.slice(0, 4)) {
+        h += Math.ceil(sub.length / (colW / 4.5)) * 9 + 1;
+      }
+      if (subs.length > 4) h += 9;
+      h += 4;
+    }
+  }
+  if (org.attributions) {
+    const attrs = org.attributions.split(";").filter(Boolean);
+    if (attrs.length > 0) {
+      h += 14;
+      for (const attr of attrs.slice(0, 3)) {
+        h += Math.ceil(attr.length / (colW / 4.5)) * 9 + 1;
+      }
+      if (attrs.length > 3) h += 9;
+      h += 4;
+    }
+  }
+  if (positionsList.length > 0) {
+    h += 14;
+    for (const pos of positionsList.slice(0, 5)) {
+      h += 9;
+      if (pos.rank) h += 8;
+    }
+    if (positionsList.length > 5) h += 9;
+  }
+  if (org.legalBasis) h += 13;
+  return h + 10;
+}
+
+async function generateComparativePDF(
+  siglas: string[],
+  res: Response
+) {
+  const entries = await getFilteredData({ siglas });
+
+  if (entries.length === 0) {
+    res.status(404).json({ error: "Nenhum estado encontrado para os filtros informados." });
+    return;
+  }
+
+  // Buscar posições de cada estado
+  const enriched = await Promise.all(
+    entries.map(async (entry) => {
+      const ocPositions = entry.operationalCommand
+        ? await getPositionsByOperationalCommand(entry.operationalCommand.id)
+        : [];
+      const tdPositions = entry.technicalDirectorate
+        ? await getPositionsByTechnicalDirectorate(entry.technicalDirectorate.id)
+        : [];
+      return { ...entry, ocPositions, tdPositions };
+    })
+  );
+
+  const dateStr = new Date().toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  const stateLabel = siglas.length > 0 ? siglas.join(", ") : "Todos os estados";
+
+  const doc = new PDFDocument({
+    size: "A4",
+    layout: "landscape",
+    margin: 0,
+    autoFirstPage: false,
+    info: {
+      Title: `Comparativo entre Estados — ${stateLabel}`,
+      Author: "Portal de Legislação dos CBM",
+      Subject: "Corpos de Bombeiros Militares — Estrutura Organizacional",
+    },
+  });
+
+  res.setHeader("Content-Type", "application/pdf");
+  res.setHeader(
+    "Content-Disposition",
+    `attachment; filename="comparativo-estados-${siglas.join("-")}.pdf"`
+  );
+  doc.pipe(res);
+
+  // A4 landscape: 841.89 x 595.28 pts
+  const PAGE_W = 841.89;
+  const PAGE_H = 595.28;
+  const MARGIN = 24;
+  const CONTENT_W = PAGE_W - MARGIN * 2;
+  const numCols = enriched.length;
+  const COL_W = (CONTENT_W - (numCols - 1) * 8) / numCols;
+  const BOTTOM_LIMIT = PAGE_H - 28;
+
+  let pageNum = 0;
+
+  function drawRect(x: number, y: number, w: number, h: number, color: string, radius = 0) {
+    doc.save().roundedRect(x, y, w, h, radius).fill(color).restore();
+  }
+
+  function drawHeader() {
+    pageNum++;
+    doc.addPage({ size: "A4", layout: "landscape", margin: 0 });
+    drawRect(0, 0, PAGE_W, 56, NAVY);
+    doc
+      .font("Helvetica-Bold")
+      .fontSize(10)
+      .fillColor(WHITE)
+      .text("Portal de Legislação dos Corpos de Bombeiros Militares", MARGIN, 10, {
+        width: CONTENT_W - 120,
+      });
+    doc
+      .font("Helvetica")
+      .fontSize(8)
+      .fillColor("#94a3b8")
+      .text(`Comparativo entre estados: ${stateLabel}`, MARGIN, 24, { width: CONTENT_W - 120 });
+    doc
+      .font("Helvetica")
+      .fontSize(7.5)
+      .fillColor("#94a3b8")
+      .text(`Gerado em: ${dateStr}`, PAGE_W - MARGIN - 120, 10, { width: 120, align: "right" })
+      .text(`Página ${pageNum}`, PAGE_W - MARGIN - 120, 22, { width: 120, align: "right" });
+    drawRect(0, 56, PAGE_W, 3, RED);
+  }
+
+  function drawFooter() {
+    drawRect(0, PAGE_H - 20, PAGE_W, 20, LIGHT_GRAY);
+    doc
+      .font("Helvetica")
+      .fontSize(7)
+      .fillColor(MID_GRAY)
+      .text(
+        "Portal de Legislação dos Corpos de Bombeiros Militares — Uso Institucional",
+        MARGIN,
+        PAGE_H - 13,
+        { width: CONTENT_W, align: "center" }
+      );
+  }
+
+  function getColX(i: number) {
+    return MARGIN + i * (COL_W + 8);
+  }
+
+  // ─── Seção helper ────────────────────────────────────────────────────────
+  // Helper para escrever texto apenas se Y estiver dentro do limite da página
+  function safeText(
+    text: string,
+    x: number,
+    y: number,
+    options: { width?: number; align?: string; lineBreak?: boolean } = {}
+  ): void {
+    if (y < BOTTOM_LIMIT) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      doc.text(text, x, y, options as any);
+    }
+  }
+
+  function drawSection(
+    label: string,
+    color: string,
+    startY: number,
+    stateEntries: typeof enriched
+  ): number {
+    let maxBottom = startY;
+
+    for (let i = 0; i < stateEntries.length; i++) {
+      const entry = stateEntries[i];
+      const cx = getColX(i);
+      let y = startY;
+
+      const isOC = label === "Comando Operacional";
+      const org = isOC ? entry.operationalCommand : entry.technicalDirectorate;
+      const positionsList = isOC ? entry.ocPositions : entry.tdPositions;
+
+      if (!org) {
+        // Sem dados
+        if (y + 40 < BOTTOM_LIMIT) {
+          drawRect(cx, y, COL_W, 40, LIGHT_GRAY, 4);
+          doc
+            .font("Helvetica")
+            .fontSize(7.5)
+            .fillColor(MID_GRAY)
+            .text("Sem dados disponíveis", cx + 8, y + 14, { width: COL_W - 16 });
+        }
+        maxBottom = Math.max(maxBottom, y + 40);
+        continue;
+      }
+
+      // Card header
+      if (y + 28 < BOTTOM_LIMIT) {
+        drawRect(cx, y, COL_W, 28, LIGHT_GRAY, 4);
+        doc
+          .font("Helvetica-Bold")
+          .fontSize(9)
+          .fillColor(NAVY)
+          .text(org.nomenclature, cx + 8, y + 5, { width: COL_W - 16 });
+        if (org.acronym) {
+          doc
+            .font("Helvetica")
+            .fontSize(7)
+            .fillColor(MID_GRAY)
+            .text(`(${org.acronym})`, cx + 8, y + 17, { width: COL_W - 16 });
+        }
+      }
+      y += 32;
+
+      // Subdivisões
+      if (org.subdivisions) {
+        const subs = org.subdivisions.split(";").map((s: string) => s.trim()).filter(Boolean);
+        if (subs.length > 0 && y < BOTTOM_LIMIT) {
+          doc.font("Helvetica-Bold").fontSize(6.5).fillColor(RED);
+          safeText("DESDOBRAMENTOS", cx + 8, y, { width: COL_W - 16 });
+          y += 10;
+          for (const sub of subs.slice(0, 4)) {
+            if (y >= BOTTOM_LIMIT) break;
+            doc.font("Helvetica").fontSize(6.5).fillColor(DARK);
+            safeText(`• ${sub}`, cx + 10, y, { width: COL_W - 18 });
+            y += doc.heightOfString(`• ${sub}`, { width: COL_W - 18 }) + 1;
+          }
+          if (subs.length > 4 && y < BOTTOM_LIMIT) {
+            doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
+            safeText(`+${subs.length - 4} mais...`, cx + 10, y, { width: COL_W - 18 });
+            y += 9;
+          }
+          y += 4;
+        }
+      }
+
+      // Atribuições
+      if (org.attributions) {
+        const attrs = org.attributions.split(";").map((s: string) => s.trim()).filter(Boolean);
+        if (attrs.length > 0 && y < BOTTOM_LIMIT) {
+          doc.font("Helvetica-Bold").fontSize(6.5).fillColor(RED);
+          safeText("ATRIBUIÇÕES", cx + 8, y, { width: COL_W - 16 });
+          y += 10;
+          for (const attr of attrs.slice(0, 3)) {
+            if (y >= BOTTOM_LIMIT) break;
+            doc.font("Helvetica").fontSize(6.5).fillColor(DARK);
+            safeText(`• ${attr}`, cx + 10, y, { width: COL_W - 18 });
+            y += doc.heightOfString(`• ${attr}`, { width: COL_W - 18 }) + 1;
+          }
+          if (attrs.length > 3 && y < BOTTOM_LIMIT) {
+            doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
+            safeText(`+${attrs.length - 3} mais...`, cx + 10, y, { width: COL_W - 18 });
+            y += 9;
+          }
+          y += 4;
+        }
+      }
+
+      // Cargos
+      if (positionsList.length > 0 && y < BOTTOM_LIMIT) {
+        doc.font("Helvetica-Bold").fontSize(6.5).fillColor(RED);
+        safeText(`CARGOS (${positionsList.length})`, cx + 8, y, { width: COL_W - 16 });
+        y += 10;
+        for (const pos of positionsList.slice(0, 5)) {
+          if (y >= BOTTOM_LIMIT) break;
+          doc.font("Helvetica-Bold").fontSize(6.5).fillColor(DARK);
+          safeText(pos.title, cx + 8, y, { width: COL_W - 16 });
+          y += 9;
+          if (pos.rank && y < BOTTOM_LIMIT) {
+            doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
+            safeText(pos.rank, cx + 10, y, { width: COL_W - 18 });
+            y += 8;
+          }
+        }
+        if (positionsList.length > 5 && y < BOTTOM_LIMIT) {
+          doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
+          safeText(`+${positionsList.length - 5} cargos...`, cx + 10, y, { width: COL_W - 18 });
+          y += 9;
+        }
+      }
+
+      // Base legal
+      if (org.legalBasis && y + 13 < BOTTOM_LIMIT) {
+        y += 4;
+        doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
+        safeText(`Base legal: ${org.legalBasis}`, cx + 8, y, { width: COL_W - 16 });
+        y += 9;
+      }
+
+      maxBottom = Math.max(maxBottom, y + 6);
+    }
+
+    return maxBottom;
+  }
+
+  // ─── Página 1: Cabeçalho de estados + CO ────────────────────────────────
+  drawHeader();
+  drawFooter();
+
+  let curY = 68;
+
+  // Cabeçalhos dos estados
+  for (let i = 0; i < enriched.length; i++) {
+    const entry = enriched[i];
+    const cx = getColX(i);
+    drawRect(cx, curY, COL_W, 36, NAVY, 6);
+    doc
+      .font("Helvetica-Bold")
+      .fontSize(14)
+      .fillColor(WHITE)
+      .text(entry.state.sigla, cx + 8, curY + 6, { width: 30 });
+    doc
+      .font("Helvetica")
+      .fontSize(8)
+      .fillColor("#94a3b8")
+      .text(entry.state.name, cx + 42, curY + 6, { width: COL_W - 50 });
+    if (entry.state.region) {
+      doc
+        .font("Helvetica")
+        .fontSize(7)
+        .fillColor("#64748b")
+        .text(entry.state.region, cx + 42, curY + 18, { width: COL_W - 50 });
+    }
+  }
+  curY += 44;
+
+  // Título da seção CO
+  drawRect(MARGIN, curY, CONTENT_W, 18, RED, 3);
+  doc
+    .font("Helvetica-Bold")
+    .fontSize(8)
+    .fillColor(WHITE)
+    .text("COMANDO OPERACIONAL", MARGIN + 8, curY + 5, { width: CONTENT_W - 16 });
+  curY += 22;
+
+  const afterCO = drawSection("Comando Operacional", RED, curY, enriched);
+  curY = afterCO + 10;
+
+  // Verificar se DAT cabe na mesma página
+  if (curY + 60 > BOTTOM_LIMIT) {
+    doc.addPage({ size: "A4", layout: "landscape", margin: 0 });
+    drawHeader();
+    drawFooter();
+    curY = 68;
+  }
+
+  // Título da seção DAT
+  drawRect(MARGIN, curY, CONTENT_W, 18, "#1e3a5f", 3);
+  doc
+    .font("Helvetica-Bold")
+    .fontSize(8)
+    .fillColor(WHITE)
+    .text("DIRETORIA DE ATIVIDADES TÉCNICAS", MARGIN + 8, curY + 5, { width: CONTENT_W - 16 });
+  curY += 22;
+
+  drawSection("Diretoria de Atividades Técnicas", "#1e3a5f", curY, enriched);
+
+  doc.flushPages();
+  doc.end();
+}
+
 // ─── Rota Express ─────────────────────────────────────────────────────────────
 export function registerPDFRoutes(app: Express) {
   app.get("/api/pdf/positions", async (req: Request, res: Response) => {
@@ -366,6 +730,24 @@ export function registerPDFRoutes(app: Express) {
       console.error("[PDF] Error generating PDF:", err);
       if (!res.headersSent) {
         res.status(500).json({ error: "Erro ao gerar PDF." });
+      }
+    }
+  });
+
+  app.get("/api/pdf/comparative", async (req: Request, res: Response) => {
+    try {
+      const siglasParam = (req.query.siglas as string) || "";
+      const siglas = siglasParam
+        ? siglasParam
+            .split(",")
+            .map((s) => s.trim())
+            .filter(Boolean)
+        : [];
+      await generateComparativePDF(siglas, res);
+    } catch (err) {
+      console.error("[PDF] Error generating comparative PDF:", err);
+      if (!res.headersSent) {
+        res.status(500).json({ error: "Erro ao gerar PDF comparativo." });
       }
     }
   });

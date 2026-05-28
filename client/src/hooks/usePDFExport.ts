@@ -99,5 +99,53 @@ export function usePDFExport() {
     }, 300);
   };
 
-  return { exportToPDF, exportPositionsPDF, isExporting };
+  /**
+   * Exporta o comparativo de estados via rota do servidor.
+   * @param siglas - lista de siglas dos estados selecionados
+   * @param options - opções de exportação
+   */
+  const exportComparativePDF = async (
+    siglas: string[],
+    options: PDFExportOptions = {}
+  ) => {
+    setIsExporting(true);
+    toast.loading("Gerando PDF...", { id: "pdf-export" });
+
+    try {
+      const params = new URLSearchParams();
+      if (siglas.length > 0) {
+        params.set("siglas", siglas.join(","));
+      }
+
+      const response = await fetch(`/api/pdf/comparative?${params.toString()}`);
+
+      if (!response.ok) {
+        const err = await response.json().catch(() => ({ error: "Erro desconhecido" }));
+        throw new Error(err.error || `HTTP ${response.status}`);
+      }
+
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = options.filename || `comparativo-estados-${siglas.join("-")}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      toast.success("PDF gerado com sucesso!", { id: "pdf-export", duration: 4000 });
+    } catch (err) {
+      console.error("[PDF] Erro ao gerar PDF comparativo:", err);
+      toast.error(
+        err instanceof Error ? err.message : "Erro ao gerar PDF. Tente novamente.",
+        { id: "pdf-export" }
+      );
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
+  return { exportToPDF, exportPositionsPDF, exportComparativePDF, isExporting };
 }

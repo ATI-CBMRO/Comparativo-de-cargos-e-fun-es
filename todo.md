@@ -81,3 +81,10 @@
 ## Documentação do Projeto
 
 - [x] Documentação técnica e funcional completa em PROJETO.md (v1.3.0)
+
+## Layout Dinâmico e PDF Comparativo
+
+- [x] Rota GET /api/pdf/comparative?siglas= implementada com layout em N colunas (1-5 estados)
+- [x] Corrigir overflow de páginas no PDF comparativo (pdfkit auto-paginava ao ultrapassar PAGE_H) — resolvido com safeText() que limita Y ao BOTTOM_LIMIT
+- [x] Layout dinâmico da página Comparativo — substituir flex-wrap por CSS Grid com número de colunas dinâmico baseado nos estados selecionados
+- [x] PDF comparativo com 5 estados gera 1 página A4 landscape com todas as informações
