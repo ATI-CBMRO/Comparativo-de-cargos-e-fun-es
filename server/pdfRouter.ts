@@ -461,7 +461,6 @@ async function generateComparativePDF(
 
   function drawHeader() {
     pageNum++;
-    doc.addPage({ size: "A4", layout: "landscape", margin: 0 });
     drawRect(0, 0, PAGE_W, 56, NAVY);
     doc
       .font("Helvetica-Bold")
@@ -647,37 +646,41 @@ async function generateComparativePDF(
   }
 
   // ─── Página 1: Cabeçalho de estados + CO ────────────────────────────────
-  drawHeader();
-  drawFooter();
-
-  let curY = 68;
-
-  // Cabeçalhos dos estados
-  for (let i = 0; i < enriched.length; i++) {
-    const entry = enriched[i];
-    const cx = getColX(i);
-    drawRect(cx, curY, COL_W, 36, NAVY, 6);
-    doc
-      .font("Helvetica-Bold")
-      .fontSize(14)
-      .fillColor(WHITE)
-      .text(entry.state.sigla, cx + 8, curY + 6, { width: 30 });
-    doc
-      .font("Helvetica")
-      .fontSize(8)
-      .fillColor("#94a3b8")
-      .text(entry.state.name, cx + 42, curY + 6, { width: COL_W - 50 });
-    if (entry.state.region) {
+  // Helper: desenha cabeçalhos dos estados na parte superior da página
+  function drawStateHeaders(startY: number) {
+    for (let i = 0; i < enriched.length; i++) {
+      const entry = enriched[i];
+      const cx = getColX(i);
+      drawRect(cx, startY, COL_W, 36, NAVY, 6);
+      doc
+        .font("Helvetica-Bold")
+        .fontSize(14)
+        .fillColor(WHITE)
+        .text(entry.state.sigla, cx + 8, startY + 6, { width: 30 });
       doc
         .font("Helvetica")
-        .fontSize(7)
-        .fillColor("#64748b")
-        .text(entry.state.region, cx + 42, curY + 18, { width: COL_W - 50 });
+        .fontSize(8)
+        .fillColor("#94a3b8")
+        .text(entry.state.name, cx + 42, startY + 6, { width: COL_W - 50 });
+      if (entry.state.region) {
+        doc
+          .font("Helvetica")
+          .fontSize(7)
+          .fillColor("#64748b")
+          .text(entry.state.region, cx + 42, startY + 18, { width: COL_W - 50 });
+      }
     }
   }
+
+  // ─── Página 1: Comando Operacional ────────────────────────────────────
+  doc.addPage({ size: "A4", layout: "landscape", margin: 0 });
+  drawHeader();
+  drawFooter();
+  let curY = 68;
+
+  drawStateHeaders(curY);
   curY += 44;
 
-  // Título da seção CO
   drawRect(MARGIN, curY, CONTENT_W, 18, RED, 3);
   doc
     .font("Helvetica-Bold")
@@ -686,18 +689,17 @@ async function generateComparativePDF(
     .text("COMANDO OPERACIONAL", MARGIN + 8, curY + 5, { width: CONTENT_W - 16 });
   curY += 22;
 
-  const afterCO = drawSection("Comando Operacional", RED, curY, enriched);
-  curY = afterCO + 10;
+  drawSection("Comando Operacional", RED, curY, enriched);
 
-  // Verificar se DAT cabe na mesma página
-  if (curY + 60 > BOTTOM_LIMIT) {
-    doc.addPage({ size: "A4", layout: "landscape", margin: 0 });
-    drawHeader();
-    drawFooter();
-    curY = 68;
-  }
+  // ─── Página 2: Diretoria de Atividades Técnicas ───────────────────────
+  doc.addPage({ size: "A4", layout: "landscape", margin: 0 });
+  drawHeader(); // drawHeader não cria página, apenas desenha o cabeçalho
+  drawFooter();
+  curY = 68;
 
-  // Título da seção DAT
+  drawStateHeaders(curY);
+  curY += 44;
+
   drawRect(MARGIN, curY, CONTENT_W, 18, "#1e3a5f", 3);
   doc
     .font("Helvetica-Bold")
