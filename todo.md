@@ -97,3 +97,12 @@
 - [x] Atualizar sidebar/navegação com as novas cores (azul escuro CBMRO + fonte Josefin Sans)
 - [x] Atualizar sub-header com gradiente vermelho→azul e fonte Josefin Sans
 - [x] Atualizar componentes (cards, botões, badges) com a nova identidade visual — aplicado via tokens CSS globais (primary, secondary, sidebar)
+
+## Revisão de Desdobramentos e Melhorias de UX
+
+- [x] Revisar e corrigir desdobramentos de RO conforme legislação (minuta de lei – DPO/COT)
+- [x] Revisar e corrigir desdobramentos de PE conforme legislação (DIM/DIEsp)
+- [x] Revisar e corrigir desdobramentos de MT conforme legislação (DOP/DSCIP)
+- [x] Adicionar agrupamento por região (Norte, Nordeste, Centro-Oeste, Sudeste, Sul) na tela de Comparativo
+- [x] Adicionar campo `legalArticle` (artigo de origem) nos registros de desdobramentos no banco
+- [x] Exibir tooltip/modal com artigo legal de origem em cada item de desdobramento

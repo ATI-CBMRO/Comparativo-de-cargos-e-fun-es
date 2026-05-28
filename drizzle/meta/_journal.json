@@ -29,6 +29,13 @@
       "when": 1779924006157,
       "tag": "0003_demonic_magik",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1779964657892,
+      "tag": "0004_stiff_zodiak",
+      "breakpoints": true
     }
   ]
 }

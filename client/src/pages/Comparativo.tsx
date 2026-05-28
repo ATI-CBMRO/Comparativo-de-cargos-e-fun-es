@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { trpc } from "@/lib/trpc";
 import { usePDFExport } from "@/hooks/usePDFExport";
 import DetailLevelBadge from "@/components/DetailLevelBadge";
@@ -165,15 +165,35 @@ function PositionsList({
   );
 }
 
+const REGION_STATES: Record<string, string[]> = {
+  Norte: ["AC", "AM", "AP", "PA", "RO", "RR", "TO"],
+  Nordeste: ["AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE"],
+  "Centro-Oeste": ["DF", "GO", "MT", "MS"],
+  Sudeste: ["ES", "MG", "RJ", "SP"],
+  Sul: ["PR", "RS", "SC"],
+};
+
 export default function Comparativo() {
   const [selectedSiglas, setSelectedSiglas] = useState<string[]>([]);
   const [showStateSelector, setShowStateSelector] = useState(false);
+  const selectorRef = useRef<HTMLDivElement>(null);
 
   const { data: states } = trpc.states.list.useQuery();
   const { data: results, isLoading } = trpc.data.comparative.useQuery(
     { siglas: selectedSiglas },
     { enabled: selectedSiglas.length > 0 }
   );
+
+  // Fechar dropdown ao clicar fora
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (selectorRef.current && !selectorRef.current.contains(e.target as Node)) {
+        setShowStateSelector(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   const addState = (sigla: string) => {
     if (!selectedSiglas.includes(sigla) && selectedSiglas.length < 5) {
@@ -185,6 +205,12 @@ export default function Comparativo() {
   const removeState = (sigla: string) => {
     setSelectedSiglas((prev) => prev.filter((s) => s !== sigla));
   };
+
+  // Siglas disponíveis no banco (apenas os 19 estados com dados)
+  const availableSiglas = useMemo(
+    () => (states ?? []).map((s) => s.sigla),
+    [states]
+  );
 
   const availableStates = useMemo(
     () => (states ?? []).filter((s) => !selectedSiglas.includes(s.sigla)),
@@ -246,7 +272,7 @@ export default function Comparativo() {
           })}
 
           {selectedSiglas.length < 5 && (
-            <div className="relative">
+            <div className="relative" ref={selectorRef}>
               <Button
                 variant="outline"
                 size="sm"
@@ -255,22 +281,41 @@ export default function Comparativo() {
               >
                 <Plus className="w-4 h-4" />
                 Adicionar estado
+                <ChevronDown className="w-3 h-3" />
               </Button>
               {showStateSelector && (
-                <div className="absolute top-full left-0 mt-1 z-50 bg-white border border-border rounded-xl shadow-lg p-2 w-64 max-h-72 overflow-y-auto">
+                <div className="absolute top-full left-0 mt-1 z-50 bg-white border border-border rounded-xl shadow-lg p-3 w-72 max-h-80 overflow-y-auto">
                   {availableStates.length === 0 ? (
                     <p className="text-xs text-muted-foreground p-2">Todos os estados já selecionados.</p>
                   ) : (
-                    availableStates.map((state) => (
-                      <button
-                        key={state.sigla}
-                        onClick={() => addState(state.sigla)}
-                        className="w-full flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-muted text-sm text-left transition-colors"
-                      >
-                        <span className="font-bold text-[oklch(0.28_0.12_255)] w-8">{state.sigla}</span>
-                        <span className="text-foreground">{state.name}</span>
-                      </button>
-                    ))
+                    <div className="space-y-3">
+                      {Object.entries(REGION_STATES).map(([region, siglas]) => {
+                        const regionAvailable = siglas.filter(
+                          (s) => availableSiglas.includes(s) && !selectedSiglas.includes(s)
+                        );
+                        if (regionAvailable.length === 0) return null;
+                        return (
+                          <div key={region}>
+                            <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1.5 px-1">{region}</p>
+                            <div className="space-y-0.5">
+                              {regionAvailable.map((sigla) => {
+                                const state = states?.find((s) => s.sigla === sigla);
+                                return (
+                                  <button
+                                    key={sigla}
+                                    onClick={() => addState(sigla)}
+                                    className="w-full flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-muted text-sm text-left transition-colors"
+                                  >
+                                    <span className="font-bold text-[oklch(0.28_0.12_255)] w-8 font-mono text-xs">{sigla}</span>
+                                    <span className="text-foreground text-xs">{state?.name ?? sigla}</span>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
                   )}
                 </div>
               )}
@@ -420,6 +465,21 @@ export default function Comparativo() {
                               <p className="text-xs text-muted-foreground">{operationalCommand.legalBasis}</p>
                             </div>
                           )}
+
+                          {/* Artigo Legal de Origem */}
+                          {(operationalCommand as any).legalArticle && (
+                            <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                              <div className="flex items-center gap-1.5 mb-1">
+                                <BookOpen className="w-3.5 h-3.5 text-amber-600" />
+                                <p className="text-xs font-bold text-amber-700 uppercase tracking-wide">
+                                  Artigo Legal de Origem
+                                </p>
+                              </div>
+                              <p className="text-xs text-amber-800 leading-relaxed">
+                                {(operationalCommand as any).legalArticle}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       ) : (
                         <div className="p-6 text-center">
@@ -521,6 +581,21 @@ export default function Comparativo() {
                                 </p>
                               </div>
                               <p className="text-xs text-muted-foreground">{technicalDirectorate.legalBasis}</p>
+                            </div>
+                          )}
+
+                          {/* Artigo Legal de Origem */}
+                          {(technicalDirectorate as any).legalArticle && (
+                            <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                              <div className="flex items-center gap-1.5 mb-1">
+                                <BookOpen className="w-3.5 h-3.5 text-amber-600" />
+                                <p className="text-xs font-bold text-amber-700 uppercase tracking-wide">
+                                  Artigo Legal de Origem
+                                </p>
+                              </div>
+                              <p className="text-xs text-amber-800 leading-relaxed">
+                                {(technicalDirectorate as any).legalArticle}
+                              </p>
                             </div>
                           )}
                         </div>

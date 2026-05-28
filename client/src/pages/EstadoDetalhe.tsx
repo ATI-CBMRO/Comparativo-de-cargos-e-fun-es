@@ -160,6 +160,7 @@ function OrgCard({
   attributions,
   detailLevel,
   legalBasis,
+  legalArticle,
   notes,
   positions,
 }: {
@@ -170,6 +171,7 @@ function OrgCard({
   attributions?: string | null;
   detailLevel: "detalhado" | "moderado" | "basico";
   legalBasis?: string | null;
+  legalArticle?: string | null;
   notes?: string | null;
   positions: Position[];
 }) {
@@ -244,6 +246,15 @@ function OrgCard({
               <h4 className="text-sm font-semibold text-muted-foreground">Base Legal</h4>
             </div>
             <p className="text-sm text-muted-foreground pl-6">{legalBasis}</p>
+          </div>
+        )}
+        {legalArticle && (
+          <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 space-y-1">
+            <div className="flex items-center gap-2">
+              <BookOpen className="w-4 h-4 text-amber-600" />
+              <h4 className="text-sm font-semibold text-amber-700">Artigo Legal de Origem</h4>
+            </div>
+            <p className="text-sm text-amber-800 leading-relaxed pl-6">{legalArticle}</p>
           </div>
         )}
         {notes && (
@@ -341,6 +352,7 @@ export default function EstadoDetalhe() {
             attributions={operationalCommand.attributions}
             detailLevel={operationalCommand.detailLevel}
             legalBasis={operationalCommand.legalBasis}
+            legalArticle={(operationalCommand as any).legalArticle}
             notes={operationalCommand.notes}
             positions={ocPositions ?? []}
           />
@@ -362,6 +374,7 @@ export default function EstadoDetalhe() {
             attributions={technicalDirectorate.attributions}
             detailLevel={technicalDirectorate.detailLevel}
             legalBasis={technicalDirectorate.legalBasis}
+            legalArticle={(technicalDirectorate as any).legalArticle}
             notes={technicalDirectorate.notes}
             positions={tdPositions ?? []}
           />
