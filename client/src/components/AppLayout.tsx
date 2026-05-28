@@ -104,17 +104,6 @@ export default function AppLayout({ children }: AppLayoutProps) {
             </span>
           </div>
 
-          {/* Brasão direito (espelho) */}
-          <img
-            src="/manus-storage/brasao-cbmro-oficial_c63237f8.webp"
-            alt="Brasão CBMRO"
-            style={{
-              height: "clamp(56px, 7.5vw, 88px)",
-              width: "auto",
-              filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.5))",
-              flexShrink: 0,
-            }}
-          />
         </div>
       </header>
 
