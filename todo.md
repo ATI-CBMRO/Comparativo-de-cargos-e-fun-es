@@ -77,3 +77,7 @@
 - [x] Rota GET /api/pdf/positions?category=&siglas= implementada com layout em 2 colunas e cabeçalho institucional
 - [x] Hook usePDFExport atualizado para usar fetch + download via Blob URL
 - [x] Testado com sucesso no browser — toast "PDF gerado com sucesso!" exibido corretamente
+
+## Documentação do Projeto
+
+- [x] Documentação técnica e funcional completa em PROJETO.md (v1.3.0)
