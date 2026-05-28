@@ -53,3 +53,20 @@
 - [x] Frontend: integrar link na sidebar e em `App.tsx`
 - [x] Testes para os novos endpoints (23 testes passando)
 - [x] Checkpoint final
+
+## Revisão de Dados - Estados com Detalhamento Básico
+
+- [x] Reler documentos de AL (Regimento Interno) — dados já corretos no banco (detalhado)
+- [x] Reler documentos de CE (Organização Básica) — dados já corretos no banco (moderado)
+- [x] Reler documentos de MA (Organização Básica + Quadro de Organização) — dados já corretos no banco (detalhado)
+- [x] Reler documentos de SE (Organização Básica + Regimento Interno) — dados já corretos no banco (moderado)
+- [x] Verificar nível de detalhamento dos estados revisados no banco — nenhum estado com nível "básico" incorreto
+
+## Exportação PDF
+
+- [x] Instalar biblioteca de geração PDF (jsPDF + html2canvas)
+- [x] Implementar hook usePDFExport reutilizável
+- [x] Botão "Exportar PDF" na página ComparativoCargos (exporta os cards visíveis)
+- [x] Botão "Exportar PDF" na página Comparativo (exporta a comparação lado a lado)
+- [x] PDF formatado com cabeçalho institucional (título, subtítulo, data)
+- [ ] Testes para verificar que os botões existem e são clicáveis

@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { trpc } from "@/lib/trpc";
+import { usePDFExport } from "@/hooks/usePDFExport";
 import DetailLevelBadge from "@/components/DetailLevelBadge";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,9 +8,11 @@ import {
   ChevronDown,
   ChevronRight,
   ChevronUp,
+  FileDown,
   FileText,
   GitCompare,
   Layers,
+  Loader2,
   Plus,
   Shield,
   Target,
@@ -176,6 +179,17 @@ export default function Comparativo() {
   const OC_COLOR = "oklch(0.48 0.22 25)";
   const TD_COLOR = "oklch(0.28 0.12 255)";
 
+  const { exportToPDF, isExporting } = usePDFExport();
+
+  const handleExportPDF = () => {
+    const stateLabel = selectedSiglas.join(", ");
+    exportToPDF("comparativo-content", {
+      filename: `comparativo-estados-${selectedSiglas.join("-")}-${Date.now()}.pdf`,
+      title: "Portal de Legislação dos Corpos de Bombeiros Militares",
+      subtitle: `Comparativo entre estados: ${stateLabel}`,
+    });
+  };
+
   return (
     <div className="p-6 max-w-full mx-auto space-y-6">
       {/* Header */}
@@ -241,15 +255,30 @@ export default function Comparativo() {
           )}
 
           {selectedSiglas.length > 0 && (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setSelectedSiglas([])}
-              className="gap-2 text-muted-foreground ml-auto"
-            >
-              <Trash2 className="w-4 h-4" />
-              Limpar seleção
-            </Button>
+            <div className="flex items-center gap-2 ml-auto">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleExportPDF}
+                disabled={isExporting || isLoading || !results}
+                className="gap-2"
+              >
+                {isExporting ? (
+                  <><Loader2 className="w-4 h-4 animate-spin" /> Gerando PDF...</>
+                ) : (
+                  <><FileDown className="w-4 h-4" /> Exportar PDF</>
+                )}
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setSelectedSiglas([])}
+                className="gap-2 text-muted-foreground"
+              >
+                <Trash2 className="w-4 h-4" />
+                Limpar seleção
+              </Button>
+            </div>
           )}
         </div>
       </div>
@@ -275,7 +304,7 @@ export default function Comparativo() {
               ))}
             </div>
           ) : (
-            <div className="space-y-8">
+            <div id="comparativo-content" className="space-y-8">
 
               {/* ── Comando Operacional ── */}
               <div>

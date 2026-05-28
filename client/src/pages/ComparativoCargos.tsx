@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { trpc } from "@/lib/trpc";
+import { usePDFExport } from "@/hooks/usePDFExport";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -15,6 +16,8 @@ import {
   X,
   Shield,
   FlameKindling,
+  FileDown,
+  Loader2,
 } from "lucide-react";
 
 // ─── Tipos ────────────────────────────────────────────────────────────────────
@@ -245,6 +248,20 @@ export default function ComparativoCargos() {
     [allStates]
   );
 
+  const { exportToPDF, isExporting } = usePDFExport();
+
+  const handleExportPDF = () => {
+    const filterLabel =
+      activeFilter === "chefe-co" ? "Chefe do Órgão Operacional" : "Chefe do Órgão Técnico";
+    const stateLabel =
+      selectedSiglas.length > 0 ? `(${selectedSiglas.join(", ")})` : "(Todos os estados)";
+    exportToPDF("comparativo-cargos-content", {
+      filename: `comparativo-cargos-${activeFilter}-${Date.now()}.pdf`,
+      title: "Portal de Legislação dos Corpos de Bombeiros Militares",
+      subtitle: `Comparativo de Cargos — ${filterLabel} ${stateLabel}`,
+    });
+  };
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -387,7 +404,7 @@ export default function ComparativoCargos() {
       {activeFilter && !isLoading && results && (
         <div className="space-y-4">
           {/* Barra de ações */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-2 flex-wrap">
             <p className="text-sm text-muted-foreground">
               <span className="font-semibold text-foreground">{results.length}</span>{" "}
               {results.length === 1 ? "estado encontrado" : "estados encontrados"}
@@ -395,15 +412,32 @@ export default function ComparativoCargos() {
                 <span className="ml-1 text-xs">(filtrado: {selectedSiglas.join(", ")})</span>
               )}
             </p>
-            {results.length > 0 && (
-              <Button variant="outline" size="sm" onClick={handleExpandAll} className="text-xs h-8">
-                {expandAll ? (
-                  <><ChevronUp className="h-3 w-3 mr-1" /> Recolher atribuições</>
-                ) : (
-                  <><ChevronDown className="h-3 w-3 mr-1" /> Expandir atribuições</>
-                )}
-              </Button>
-            )}
+            <div className="flex items-center gap-2">
+              {results.length > 0 && (
+                <Button variant="outline" size="sm" onClick={handleExpandAll} className="text-xs h-8">
+                  {expandAll ? (
+                    <><ChevronUp className="h-3 w-3 mr-1" /> Recolher atribuições</>
+                  ) : (
+                    <><ChevronDown className="h-3 w-3 mr-1" /> Expandir atribuições</>
+                  )}
+                </Button>
+              )}
+              {results.length > 0 && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleExportPDF}
+                  disabled={isExporting}
+                  className="text-xs h-8 gap-1.5"
+                >
+                  {isExporting ? (
+                    <><Loader2 className="h-3 w-3 animate-spin" /> Gerando PDF...</>
+                  ) : (
+                    <><FileDown className="h-3 w-3" /> Exportar PDF</>
+                  )}
+                </Button>
+              )}
+            </div>
           </div>
 
           {results.length === 0 ? (
@@ -413,7 +447,7 @@ export default function ComparativoCargos() {
               <p className="text-sm text-muted-foreground/60 mt-1">Tente ajustar os filtros de estado</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div id="comparativo-cargos-content" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
               {results.map((entry) => (
                 <PositionCard
                   key={entry.position.id}
