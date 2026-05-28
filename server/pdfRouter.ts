@@ -501,13 +501,21 @@ async function generateComparativePDF(
     return MARGIN + i * (COL_W + 8);
   }
 
+  // Trunca texto para caber na largura da coluna (estimativa: ~6.5px por char em 8pt)
+  function truncate(text: string, maxWidth: number, fontSize = 8): string {
+    const charsPerPt = 0.55; // fator de proporcionalidade
+    const maxChars = Math.floor(maxWidth / (fontSize * charsPerPt));
+    if (text.length <= maxChars) return text;
+    return text.slice(0, maxChars - 3) + "...";
+  }
+
   // ─── Seção helper ────────────────────────────────────────────────────────
   // Helper para escrever texto apenas se Y estiver dentro do limite da página
   function safeText(
     text: string,
     x: number,
     y: number,
-    options: { width?: number; align?: string; lineBreak?: boolean } = {}
+    options: { width?: number; align?: string; lineBreak?: boolean; height?: number; ellipsis?: boolean } = {}
   ): void {
     if (y < BOTTOM_LIMIT) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -534,55 +542,59 @@ async function generateComparativePDF(
 
       if (!org) {
         // Sem dados
-        if (y + 40 < BOTTOM_LIMIT) {
-          drawRect(cx, y, COL_W, 40, LIGHT_GRAY, 4);
+        if (y + 48 < BOTTOM_LIMIT) {
+          drawRect(cx, y, COL_W, 48, LIGHT_GRAY, 6);
           doc
             .font("Helvetica")
-            .fontSize(7.5)
+            .fontSize(9)
             .fillColor(MID_GRAY)
-            .text("Sem dados disponíveis", cx + 8, y + 14, { width: COL_W - 16 });
+            .text("Sem dados disponíveis", cx + 8, y + 18, { width: COL_W - 16 });
         }
-        maxBottom = Math.max(maxBottom, y + 40);
+        maxBottom = Math.max(maxBottom, y + 48);
         continue;
       }
 
-      // Card header
-      if (y + 28 < BOTTOM_LIMIT) {
-        drawRect(cx, y, COL_W, 28, LIGHT_GRAY, 4);
+      // Card header — nomenclatura + sigla
+      // Para 5 colunas, usar fonte menor no título para evitar overflow
+      const titleFontSize = numCols >= 5 ? 9 : 11;
+      const headerH = org.acronym ? (numCols >= 5 ? 38 : 44) : (numCols >= 5 ? 30 : 34);
+      if (y + headerH < BOTTOM_LIMIT) {
+        drawRect(cx, y, COL_W, headerH, LIGHT_GRAY, 6);
         doc
           .font("Helvetica-Bold")
-          .fontSize(9)
+          .fontSize(titleFontSize)
           .fillColor(NAVY)
-          .text(org.nomenclature, cx + 8, y + 5, { width: COL_W - 16 });
+          .text(truncate(org.nomenclature, COL_W - 20, titleFontSize), cx + 10, y + 6, { width: COL_W - 20, lineBreak: false });
         if (org.acronym) {
           doc
             .font("Helvetica")
-            .fontSize(7)
+            .fontSize(numCols >= 5 ? 7 : 8)
             .fillColor(MID_GRAY)
-            .text(`(${org.acronym})`, cx + 8, y + 17, { width: COL_W - 16 });
+            .text(truncate(`(${org.acronym})`, COL_W - 20, 7), cx + 10, y + (numCols >= 5 ? 22 : 26), { width: COL_W - 20, lineBreak: false });
         }
       }
-      y += 32;
+      y += headerH + 6;
 
       // Subdivisões
       if (org.subdivisions) {
         const subs = org.subdivisions.split(";").map((s: string) => s.trim()).filter(Boolean);
         if (subs.length > 0 && y < BOTTOM_LIMIT) {
-          doc.font("Helvetica-Bold").fontSize(6.5).fillColor(RED);
-          safeText("DESDOBRAMENTOS", cx + 8, y, { width: COL_W - 16 });
-          y += 10;
-          for (const sub of subs.slice(0, 4)) {
+          doc.font("Helvetica-Bold").fontSize(7.5).fillColor(RED);
+          safeText("DESDOBRAMENTOS", cx + 10, y, { width: COL_W - 20 });
+          y += 13;
+          const maxSubs = numCols >= 5 ? 3 : 4;
+          for (const sub of subs.slice(0, maxSubs)) {
             if (y >= BOTTOM_LIMIT) break;
-            doc.font("Helvetica").fontSize(6.5).fillColor(DARK);
-            safeText(`• ${sub}`, cx + 10, y, { width: COL_W - 18 });
-            y += doc.heightOfString(`• ${sub}`, { width: COL_W - 18 }) + 1;
+            doc.font("Helvetica").fontSize(numCols >= 5 ? 7.5 : 8).fillColor(DARK);
+            safeText(truncate(`• ${sub}`, COL_W - 22, numCols >= 5 ? 7.5 : 8), cx + 12, y, { width: COL_W - 22, lineBreak: false });
+            y += 11;
           }
-          if (subs.length > 4 && y < BOTTOM_LIMIT) {
-            doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
-            safeText(`+${subs.length - 4} mais...`, cx + 10, y, { width: COL_W - 18 });
-            y += 9;
+          if (subs.length > maxSubs && y < BOTTOM_LIMIT) {
+            doc.font("Helvetica").fontSize(7).fillColor(MID_GRAY);
+            safeText(`+${subs.length - maxSubs} mais...`, cx + 12, y, { width: COL_W - 22 });
+            y += 11;
           }
-          y += 4;
+          y += 6;
         }
       }
 
@@ -590,56 +602,58 @@ async function generateComparativePDF(
       if (org.attributions) {
         const attrs = org.attributions.split(";").map((s: string) => s.trim()).filter(Boolean);
         if (attrs.length > 0 && y < BOTTOM_LIMIT) {
-          doc.font("Helvetica-Bold").fontSize(6.5).fillColor(RED);
-          safeText("ATRIBUIÇÕES", cx + 8, y, { width: COL_W - 16 });
-          y += 10;
-          for (const attr of attrs.slice(0, 3)) {
+          doc.font("Helvetica-Bold").fontSize(7.5).fillColor(RED);
+          safeText("ATRIBUIÇÕES", cx + 10, y, { width: COL_W - 20 });
+          y += 13;
+          const maxAttrs = numCols >= 5 ? 2 : 3;
+          for (const attr of attrs.slice(0, maxAttrs)) {
             if (y >= BOTTOM_LIMIT) break;
-            doc.font("Helvetica").fontSize(6.5).fillColor(DARK);
-            safeText(`• ${attr}`, cx + 10, y, { width: COL_W - 18 });
-            y += doc.heightOfString(`• ${attr}`, { width: COL_W - 18 }) + 1;
+            doc.font("Helvetica").fontSize(numCols >= 5 ? 7.5 : 8).fillColor(DARK);
+            safeText(truncate(`• ${attr}`, COL_W - 22, numCols >= 5 ? 7.5 : 8), cx + 12, y, { width: COL_W - 22, lineBreak: false });
+            y += 11;
           }
-          if (attrs.length > 3 && y < BOTTOM_LIMIT) {
-            doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
-            safeText(`+${attrs.length - 3} mais...`, cx + 10, y, { width: COL_W - 18 });
-            y += 9;
+          if (attrs.length > maxAttrs && y < BOTTOM_LIMIT) {
+            doc.font("Helvetica").fontSize(7).fillColor(MID_GRAY);
+            safeText(`+${attrs.length - maxAttrs} mais...`, cx + 12, y, { width: COL_W - 22 });
+            y += 11;
           }
-          y += 4;
+          y += 6;
         }
       }
 
       // Cargos
       if (positionsList.length > 0 && y < BOTTOM_LIMIT) {
-        doc.font("Helvetica-Bold").fontSize(6.5).fillColor(RED);
-        safeText(`CARGOS (${positionsList.length})`, cx + 8, y, { width: COL_W - 16 });
-        y += 10;
-        for (const pos of positionsList.slice(0, 5)) {
+        doc.font("Helvetica-Bold").fontSize(7.5).fillColor(RED);
+        safeText(`CARGOS (${positionsList.length})`, cx + 10, y, { width: COL_W - 20 });
+        y += 13;
+        const maxPos = numCols >= 5 ? 3 : 4;
+        for (const pos of positionsList.slice(0, maxPos)) {
           if (y >= BOTTOM_LIMIT) break;
-          doc.font("Helvetica-Bold").fontSize(6.5).fillColor(DARK);
-          safeText(pos.title, cx + 8, y, { width: COL_W - 16 });
-          y += 9;
+          doc.font("Helvetica-Bold").fontSize(numCols >= 5 ? 7.5 : 8).fillColor(DARK);
+          safeText(truncate(pos.title, COL_W - 20, numCols >= 5 ? 7.5 : 8), cx + 10, y, { width: COL_W - 20, lineBreak: false });
+          y += 11;
           if (pos.rank && y < BOTTOM_LIMIT) {
-            doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
-            safeText(pos.rank, cx + 10, y, { width: COL_W - 18 });
-            y += 8;
+            doc.font("Helvetica").fontSize(7).fillColor(MID_GRAY);
+            safeText(truncate(pos.rank, COL_W - 22, 7), cx + 12, y, { width: COL_W - 22, lineBreak: false });
+            y += 10;
           }
         }
-        if (positionsList.length > 5 && y < BOTTOM_LIMIT) {
-          doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
-          safeText(`+${positionsList.length - 5} cargos...`, cx + 10, y, { width: COL_W - 18 });
-          y += 9;
+        if (positionsList.length > maxPos && y < BOTTOM_LIMIT) {
+          doc.font("Helvetica").fontSize(7).fillColor(MID_GRAY);
+          safeText(`+${positionsList.length - maxPos} cargos...`, cx + 12, y, { width: COL_W - 22 });
+          y += 11;
         }
       }
 
       // Base legal
-      if (org.legalBasis && y + 13 < BOTTOM_LIMIT) {
-        y += 4;
-        doc.font("Helvetica").fontSize(6).fillColor(MID_GRAY);
-        safeText(`Base legal: ${org.legalBasis}`, cx + 8, y, { width: COL_W - 16 });
-        y += 9;
+      if (org.legalBasis && y + 16 < BOTTOM_LIMIT) {
+        y += 6;
+        doc.font("Helvetica").fontSize(7).fillColor(MID_GRAY);
+        safeText(`Base legal: ${org.legalBasis}`, cx + 10, y, { width: COL_W - 20 });
+        y += 11;
       }
 
-      maxBottom = Math.max(maxBottom, y + 6);
+      maxBottom = Math.max(maxBottom, y + 8);
     }
 
     return maxBottom;
