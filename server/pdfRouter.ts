@@ -96,34 +96,47 @@ async function generatePositionsPDF(
     doc.save().roundedRect(x, y, w, h, radius).fill(color).restore();
   }
 
+  const BRASAO_PATH = "/home/ubuntu/webdev-static-assets/brasao-cbmro-oficial.png";
+  const BRASAO_SIZE = 54;
+
   function drawHeader() {
     pageNum++;
-    drawRect(0, 0, PAGE_W, 64, NAVY);
+    drawRect(0, 0, PAGE_W, 68, NAVY);
+    // Brasão esquerdo
+    try {
+      doc.image(BRASAO_PATH, MARGIN, 7, { width: BRASAO_SIZE, height: BRASAO_SIZE });
+    } catch (_) { /* ignora se não encontrar */ }
+    // Brasão direito
+    try {
+      doc.image(BRASAO_PATH, PAGE_W - MARGIN - BRASAO_SIZE, 7, { width: BRASAO_SIZE, height: BRASAO_SIZE });
+    } catch (_) { /* ignora se não encontrar */ }
+    const textX = MARGIN + BRASAO_SIZE + 10;
+    const textW = PAGE_W - textX - BRASAO_SIZE - MARGIN - 10;
     doc
       .font("Helvetica-Bold")
-      .fontSize(11)
-      .fillColor(WHITE)
-      .text("Portal de Legislação dos Corpos de Bombeiros Militares", MARGIN, 14, {
-        width: CONTENT_W - 120,
+      .fontSize(9)
+      .fillColor("#cbd5e1")
+      .text("ASSESSORIA INSTITUCIONAL DO CORPO DE BOMBEIROS MILITAR DE RONDÔNIA", textX, 10, {
+        width: textW,
+        align: "center",
       });
     doc
-      .font("Helvetica")
-      .fontSize(8.5)
-      .fillColor("#94a3b8")
-      .text(`Comparativo: ${categoryLabel}`, MARGIN, 30, { width: CONTENT_W - 120 });
+      .font("Helvetica-Bold")
+      .fontSize(10.5)
+      .fillColor(WHITE)
+      .text("Portal de Legislação dos Corpos de Bombeiros Militares", textX, 24, {
+        width: textW,
+        align: "center",
+      });
     doc
       .font("Helvetica")
       .fontSize(8)
       .fillColor("#94a3b8")
-      .text(`Gerado em: ${dateStr}`, PAGE_W - MARGIN - 120, 14, {
-        width: 120,
-        align: "right",
-      })
-      .text(`Página ${pageNum}`, PAGE_W - MARGIN - 120, 26, {
-        width: 120,
-        align: "right",
+      .text(`Comparativo: ${categoryLabel}  |  Gerado em: ${dateStr}  |  Página ${pageNum}`, textX, 42, {
+        width: textW,
+        align: "center",
       });
-    drawRect(0, 64, PAGE_W, 3, RED);
+    drawRect(0, 68, PAGE_W, 3, RED);
   }
 
   function drawFooter() {
@@ -459,28 +472,47 @@ async function generateComparativePDF(
     doc.save().roundedRect(x, y, w, h, radius).fill(color).restore();
   }
 
+  const BRASAO_PATH_COMP = "/home/ubuntu/webdev-static-assets/brasao-cbmro-oficial.png";
+  const BRASAO_SIZE_COMP = 48;
+
   function drawHeader() {
     pageNum++;
-    drawRect(0, 0, PAGE_W, 56, NAVY);
+    drawRect(0, 0, PAGE_W, 62, NAVY);
+    // Brasão esquerdo
+    try {
+      doc.image(BRASAO_PATH_COMP, MARGIN, 7, { width: BRASAO_SIZE_COMP, height: BRASAO_SIZE_COMP });
+    } catch (_) { /* ignora se não encontrar */ }
+    // Brasão direito
+    try {
+      doc.image(BRASAO_PATH_COMP, PAGE_W - MARGIN - BRASAO_SIZE_COMP, 7, { width: BRASAO_SIZE_COMP, height: BRASAO_SIZE_COMP });
+    } catch (_) { /* ignora se não encontrar */ }
+    const textX = MARGIN + BRASAO_SIZE_COMP + 8;
+    const textW = PAGE_W - textX - BRASAO_SIZE_COMP - MARGIN - 8;
+    doc
+      .font("Helvetica-Bold")
+      .fontSize(8)
+      .fillColor("#cbd5e1")
+      .text("ASSESSORIA INSTITUCIONAL DO CORPO DE BOMBEIROS MILITAR DE RONDÔNIA", textX, 8, {
+        width: textW,
+        align: "center",
+      });
     doc
       .font("Helvetica-Bold")
       .fontSize(10)
       .fillColor(WHITE)
-      .text("Portal de Legislação dos Corpos de Bombeiros Militares", MARGIN, 10, {
-        width: CONTENT_W - 120,
+      .text("Portal de Legislação dos Corpos de Bombeiros Militares", textX, 20, {
+        width: textW,
+        align: "center",
       });
-    doc
-      .font("Helvetica")
-      .fontSize(8)
-      .fillColor("#94a3b8")
-      .text(`Comparativo entre estados: ${stateLabel}`, MARGIN, 24, { width: CONTENT_W - 120 });
     doc
       .font("Helvetica")
       .fontSize(7.5)
       .fillColor("#94a3b8")
-      .text(`Gerado em: ${dateStr}`, PAGE_W - MARGIN - 120, 10, { width: 120, align: "right" })
-      .text(`Página ${pageNum}`, PAGE_W - MARGIN - 120, 22, { width: 120, align: "right" });
-    drawRect(0, 56, PAGE_W, 3, RED);
+      .text(`Comparativo entre estados: ${stateLabel}  |  Gerado em: ${dateStr}  |  Página ${pageNum}`, textX, 36, {
+        width: textW,
+        align: "center",
+      });
+    drawRect(0, 62, PAGE_W, 3, RED);
   }
 
   function drawFooter() {
