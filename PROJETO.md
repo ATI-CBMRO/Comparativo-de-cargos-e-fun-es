@@ -1,6 +1,6 @@
 # Portal de Legislação dos Corpos de Bombeiros Militares
 
-**Documentação Técnica e Funcional — versão 1.3.0**
+**Documentação Técnica e Funcional — versão 1.4.0**
 
 Desenvolvido por: Assessoria Técnica Institucional — CBMRO
 Última atualização: maio de 2026
@@ -19,6 +19,7 @@ Desenvolvido por: Assessoria Técnica Institucional — CBMRO
 8. [Estrutura de Arquivos](#8-estrutura-de-arquivos)
 9. [Testes Automatizados](#9-testes-automatizados)
 10. [Guia de Expansão](#10-guia-de-expansão)
+11. [Histórico de Versões](#11-histórico-de-versões)
 
 ---
 
@@ -52,13 +53,41 @@ O nível de detalhamento de cada registro segue a seguinte classificação:
 | **Moderado** | Nomenclatura, sigla, posto/graduação e subordinação, com desdobramentos parciais |
 | **Básico** | Apenas nomenclatura e competências gerais, sem cargos subordinados detalhados |
 
+### 2.1 Instrumentos Normativos por Estado
+
+Cada estado possui o campo **Base Legal** preenchido com o número completo, data e ementa do instrumento normativo de referência, extraído diretamente dos arquivos de legislação.
+
+| Estado | Instrumento Normativo | Tipo |
+|---|---|---|
+| AL | Lei n.º 6.212, de 26/12/2000 (reg. pelo Decreto n.º 408/2001) | Lei Ordinária |
+| CE | Lei n.º 13.438, de 07/01/2004 | Lei Ordinária |
+| DF | Portaria n.º 24, de 25/11/2020 | Portaria (Regimento Interno) |
+| ES | Lei Estadual n.º 9.220, de 17/06/2009 | Lei Ordinária |
+| MA | Lei n.º 8.508, de 27/11/2006 | Lei Ordinária |
+| MG | Lei Complementar n.º 54, de 13/12/1999 | Lei Complementar |
+| MS | Lei Complementar n.º 188, de 03/04/2014 | Lei Complementar |
+| MT | Lei Complementar n.º 775, de 27/09/2023 | Lei Complementar |
+| PA | Lei n.º 11.060, de 01/07/2025 | Lei Ordinária |
+| PB | Lei Complementar n.º 191, de 26/04/2024 | Lei Complementar |
+| PE | Lei n.º 15.187, de 12/12/2013 | Lei Ordinária |
+| PI | Lei n.º 7.772, de 04/04/2022 | Lei Ordinária |
+| PR | Lei n.º 22.206, de 29/11/2024 | Lei Ordinária |
+| RJ | Lei n.º 250, de 02/07/1979 | Lei Ordinária |
+| RO | Minuta de Projeto de Lei n.º 0059262482 (abril/2025) — *em tramitação* | Minuta |
+| RS | Decreto n.º 53.897, de 25/01/2018 (reg. LC n.º 14.920/2016) | Decreto |
+| SC | Lei Complementar n.º 724, de 18/07/2018 | Lei Complementar |
+| SE | Lei n.º 8.979, de 03/02/2022 | Lei Ordinária |
+| TO | Lei Complementar n.º 131, de 30/09/2021 | Lei Complementar |
+
+> **Atenção:** O estado de Rondônia (RO) está baseado em minuta de projeto de lei ainda não promulgada (abril/2025). Os dados devem ser atualizados quando a lei for sancionada.
+
 ---
 
 ## 3. Arquitetura do Sistema
 
 O sistema opera como uma **aplicação monolítica Node.js** com dois servidores integrados: um servidor **Express** que serve a API REST e as rotas tRPC, e um servidor **Vite** que serve o frontend React em desenvolvimento. Em produção, o Vite compila o frontend e o Express serve os arquivos estáticos.
 
-A comunicação entre frontend e backend ocorre exclusivamente via **tRPC**, garantindo tipagem de ponta a ponta sem necessidade de contratos manuais. A única exceção é a rota de exportação PDF (`GET /api/pdf/positions`), implementada como rota Express convencional por exigir streaming de resposta binária.
+A comunicação entre frontend e backend ocorre exclusivamente via **tRPC**, garantindo tipagem de ponta a ponta sem necessidade de contratos manuais. As exceções são as rotas de exportação PDF (`GET /api/pdf/positions` e `GET /api/pdf/comparative`), implementadas como rotas Express convencionais por exigirem streaming de resposta binária.
 
 ```
 Cliente (React 19 + Tailwind 4)
@@ -67,7 +96,7 @@ Cliente (React 19 + Tailwind 4)
         ▼
 Servidor Express 4
         ├── /api/trpc/*     → Procedimentos tRPC (dados)
-        ├── /api/pdf/*      → Rota Express (exportação PDF)
+        ├── /api/pdf/*      → Rotas Express (exportação PDF)
         ├── /api/oauth/*    → Autenticação Manus OAuth
         └── /manus-storage/ → Proxy de arquivos S3
         │
@@ -105,11 +134,12 @@ Armazena os dados do Comando Operacional (ou equivalente) de cada estado.
 | `id` | INT PK | Identificador único |
 | `stateId` | INT FK | Referência ao estado |
 | `nomenclature` | VARCHAR(300) | Nome do órgão (ex: Comando Operacional) |
-| `acronym` | VARCHAR(50) | Sigla do órgão (ex: COMOP) |
-| `subdivisions` | TEXT | Subdivisões/desdobramentos (JSON array ou separado por `;`) |
-| `attributions` | TEXT | Atribuições do órgão (JSON array ou separado por `;`) |
+| `acronym` | VARCHAR(50) | Sigla do órgão (ex: CO) |
+| `subdivisions` | TEXT | Subdivisões/desdobramentos (JSON array) |
+| `attributions` | TEXT | Atribuições do órgão (JSON array) |
 | `detailLevel` | ENUM | Nível de detalhamento: `detalhado`, `moderado`, `basico` |
-| `legalBasis` | VARCHAR(300) | Base legal (lei, decreto, portaria) |
+| `legalBasis` | VARCHAR(500) | Base legal completa (número, data e ementa) |
+| `legalArticle` | VARCHAR(200) | Artigo(s) de referência na legislação |
 | `notes` | TEXT | Observações adicionais |
 
 ### 4.3 Tabela `technical_directorates`
@@ -126,7 +156,7 @@ Armazena os cargos e funções vinculados a cada Comando Operacional ou Diretori
 | `operationalCommandId` | INT FK (nullable) | Vínculo com o CO |
 | `technicalDirectorateId` | INT FK (nullable) | Vínculo com a DAT |
 | `title` | VARCHAR(200) | Denominação do cargo (ex: Comandante Operacional) |
-| `acronym` | VARCHAR(50) | Sigla do cargo (ex: Cmt COMOP) |
+| `acronym` | VARCHAR(50) | Sigla do cargo |
 | `rank` | VARCHAR(100) | Posto ou graduação exigido |
 | `subordinateTo` | VARCHAR(200) | A quem o cargo é subordinado |
 | `subordinates` | TEXT | Cargos/órgãos subordinados (JSON array ou `;`) |
@@ -159,20 +189,20 @@ Todos os procedimentos são públicos (`publicProcedure`) e acessíveis sem aute
 | `auth.me` | — | Retorna o usuário autenticado ou `null` |
 | `auth.logout` | — | Encerra a sessão (limpa o cookie JWT) |
 
-### 5.2 Rota REST de Exportação PDF
+### 5.2 Rotas REST de Exportação PDF
 
 | Método | Rota | Parâmetros | Descrição |
 |---|---|---|---|
 | `GET` | `/api/pdf/positions` | `category` (obrigatório), `siglas` (opcional, separado por vírgula) | Gera e baixa o PDF do comparativo de cargos |
+| `GET` | `/api/pdf/comparative` | `siglas` (obrigatório, separado por vírgula, máx. 5) | Gera e baixa o PDF do comparativo de CO e DAT |
 
 **Exemplos de uso:**
 
 ```
 GET /api/pdf/positions?category=chefe-co
 GET /api/pdf/positions?category=chefe-dat&siglas=RO,MT,MS,DF,MG
+GET /api/pdf/comparative?siglas=RO,MT,MS
 ```
-
-Os valores aceitos para `category` são: `chefe-co` (Chefe do Órgão Operacional) e `chefe-dat` (Chefe do Órgão Técnico).
 
 ---
 
@@ -193,11 +223,11 @@ Listagem completa dos 19 estados com filtros combinados:
 
 ### 6.3 Detalhes do Estado (`/estado/:sigla`)
 
-Página dedicada a cada estado com todas as informações disponíveis: dados do CO (nomenclatura, sigla, base legal, desdobramentos, atribuições, cargos vinculados) e da DAT (mesma estrutura). Exibe os cargos e funções em cards expansíveis com posto/graduação, subordinação e atribuições.
+Página dedicada a cada estado com todas as informações disponíveis: dados do CO (nomenclatura, sigla, base legal completa, artigo de referência, desdobramentos, atribuições, cargos vinculados) e da DAT (mesma estrutura). Exibe os cargos e funções em cards expansíveis com posto/graduação, subordinação e atribuições.
 
 ### 6.4 Comparativo (`/comparativo`)
 
-Permite selecionar de 1 a 5 estados e exibir uma tabela comparativa lado a lado com os dados do CO e da DAT de cada estado selecionado. Inclui botão **"Exportar PDF"** que baixa o comparativo em formato PDF.
+Permite selecionar de 1 a 5 estados e exibir uma tabela comparativa lado a lado com os dados do CO e da DAT de cada estado selecionado. O seletor de estados é organizado por região geográfica (Norte, Nordeste, Centro-Oeste, Sudeste, Sul). Inclui botão **"Exportar PDF"** que baixa o comparativo em formato PDF. Cada card exibe a seção **"Artigo Legal de Origem"** com o artigo de referência na legislação.
 
 ### 6.5 Cargos e Funções (`/comparativo-cargos`)
 
@@ -242,15 +272,15 @@ bombeiros-legislacao-portal/
 │       ├── App.tsx                   ← Roteamento e layout global
 │       ├── index.css                 ← Tema institucional (azul/vermelho, dark/light)
 │       ├── components/
-│       │   ├── AppLayout.tsx         ← Layout com sidebar de navegação
+│       │   ├── AppLayout.tsx         ← Layout com cabeçalho institucional e sidebar
 │       │   └── ui/                   ← Componentes shadcn/ui
 │       ├── hooks/
 │       │   └── usePDFExport.ts       ← Hook de exportação PDF (fetch + Blob download)
 │       └── pages/
 │           ├── Home.tsx              ← Dashboard com indicadores
 │           ├── Estados.tsx           ← Listagem com filtros
-│           ├── EstadoDetalhe.tsx     ← Detalhes por estado
-│           ├── Comparativo.tsx       ← Comparativo lado a lado (até 5 estados)
+│           ├── EstadoDetalhe.tsx     ← Detalhes por estado (com artigo legal)
+│           ├── Comparativo.tsx       ← Comparativo lado a lado (seletor por região)
 │           ├── ComparativoCargos.tsx ← Comparativo por cargo (chefe-co / chefe-dat)
 │           └── Sobre.tsx             ← Sobre o portal
 ├── drizzle/
@@ -259,7 +289,7 @@ bombeiros-legislacao-portal/
 ├── server/
 │   ├── db.ts                         ← Helpers de consulta ao banco
 │   ├── routers.ts                    ← Procedimentos tRPC
-│   ├── pdfRouter.ts                  ← Rota Express de exportação PDF (pdfkit)
+│   ├── pdfRouter.ts                  ← Rotas Express de exportação PDF (pdfkit)
 │   ├── storage.ts                    ← Helpers de armazenamento S3
 │   └── portal.test.ts                ← Testes automatizados (Vitest)
 ├── shared/
@@ -298,7 +328,7 @@ Os testes cobrem os seguintes cenários:
 ### Adicionar um novo estado
 
 1. Inserir o estado na tabela `states` via SQL ou pela interface do banco de dados do portal.
-2. Inserir o Comando Operacional na tabela `operational_commands` com `stateId` correspondente.
+2. Inserir o Comando Operacional na tabela `operational_commands` com `stateId` correspondente, preenchendo `legalBasis` com o número e data completos da lei/decreto.
 3. Inserir a Diretoria de Atividades Técnicas na tabela `technical_directorates` com `stateId` correspondente.
 4. Inserir os cargos na tabela `positions` vinculados ao `operationalCommandId` ou `technicalDirectorateId`, definindo `positionCategory` como `chefe-co` ou `chefe-dat` para o titular.
 
@@ -306,13 +336,30 @@ Os testes cobrem os seguintes cenários:
 
 A coluna `positionCategory` em `positions` aceita qualquer string. Para criar uma nova categoria comparável (ex: `adj-co` para adjuntos do CO), basta inserir os registros com o valor desejado. A página **Cargos e Funções** precisará ser atualizada para incluir o novo filtro na interface.
 
-### Adicionar exportação PDF para o Comparativo
+### Atualizar a base legal de um estado
 
-A rota `/api/pdf/positions` cobre apenas o comparativo por cargo. Para exportar a comparação lado a lado da página `/comparativo`, é necessário implementar uma nova rota `GET /api/pdf/comparative?siglas=RO,MT,...` em `server/pdfRouter.ts`, seguindo o mesmo padrão da rota existente.
+Quando uma lei for revogada ou substituída, atualizar o campo `legalBasis` nas tabelas `operational_commands` e `technical_directorates` do estado correspondente via SQL:
+
+```sql
+UPDATE operational_commands SET legalBasis = 'Lei n.º XXXXX, de DD/MM/AAAA — ...' WHERE stateId = (SELECT id FROM states WHERE sigla = 'XX');
+UPDATE technical_directorates SET legalBasis = 'Lei n.º XXXXX, de DD/MM/AAAA — ...' WHERE stateId = (SELECT id FROM states WHERE sigla = 'XX');
+```
 
 ### Proteger funcionalidades com autenticação
 
 A infraestrutura de autenticação já está disponível. Para proteger um procedimento tRPC, substituir `publicProcedure` por `protectedProcedure` em `server/routers.ts`. Para criar funcionalidades exclusivas de administrador, usar o padrão `adminProcedure` com verificação de `ctx.user.role`.
+
+---
+
+## 11. Histórico de Versões
+
+| Versão | Data | Principais Mudanças |
+|---|---|---|
+| 1.0.0 | maio/2026 | Versão inicial: 19 estados, CO e DAT, filtros, comparativo, detalhes por estado |
+| 1.1.0 | maio/2026 | Expansão: tabela `positions` com cargos e funções; página Cargos e Funções |
+| 1.2.0 | maio/2026 | Exportação PDF (pdfkit); comparativo PDF; layout dinâmico de colunas |
+| 1.3.0 | maio/2026 | Redesign identidade visual CBMRO; cabeçalho institucional; fonte Josefin Sans |
+| 1.4.0 | maio/2026 | Desdobramentos reais dos 19 estados; base legal completa (número e data); artigo de origem; seletor por região; correções de layout mobile; remoção do brasão duplicado |
 
 ---
 

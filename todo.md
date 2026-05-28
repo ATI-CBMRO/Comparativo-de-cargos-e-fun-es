@@ -106,3 +106,13 @@
 - [x] Adicionar agrupamento por região (Norte, Nordeste, Centro-Oeste, Sudeste, Sul) na tela de Comparativo
 - [x] Adicionar campo `legalArticle` (artigo de origem) nos registros de desdobramentos no banco
 - [x] Exibir tooltip/modal com artigo legal de origem em cada item de desdobramento
+
+## Base Legal Completa e Ajustes de Layout
+
+- [x] Extrair número e data completos das leis/decretos dos 19 estados nos arquivos de legislação
+- [x] Atualizar campo `legalBasis` (CO e DAT) com número, data e ementa de cada instrumento normativo
+- [x] Remover brasão duplicado do lado direito do cabeçalho institucional
+- [x] Corrigir renderização dos desdobramentos — parse de JSON array em todos os componentes de lista
+- [x] Corrigir layout mobile: sub-header com texto completo visível e sidebar não sobrepõe conteúdo
+- [x] Seletor de estados no Comparativo agrupado por região geográfica (Norte/Nordeste/Centro-Oeste/Sudeste/Sul)
+- [x] Seção "Artigo Legal de Origem" exibida nos cards de CO e DAT nas telas de Comparativo e EstadoDetalhe
