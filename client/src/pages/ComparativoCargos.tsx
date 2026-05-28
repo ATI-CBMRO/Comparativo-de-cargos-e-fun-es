@@ -50,9 +50,17 @@ const REGION_STATES: Record<string, string[]> = {
   Sul: ["PR", "RS", "SC"],
 };
 
+function parseListContent(text: string): string[] {
+  try {
+    const parsed = JSON.parse(text);
+    if (Array.isArray(parsed)) return parsed.map((s: unknown) => String(s).trim()).filter(Boolean);
+  } catch { /* not JSON */ }
+  return text.split(";").map((s) => s.trim()).filter(Boolean);
+}
+
 function AttributionList({ text }: { text: string | null | undefined }) {
   if (!text) return <p className="text-muted-foreground text-sm italic">Não especificado na legislação</p>;
-  const items = text.split(";").map((s) => s.trim()).filter(Boolean);
+  const items = parseListContent(text);
   if (items.length === 0) return <p className="text-muted-foreground text-sm italic">Não especificado na legislação</p>;
   return (
     <ul className="space-y-1.5">
@@ -68,7 +76,7 @@ function AttributionList({ text }: { text: string | null | undefined }) {
 
 function SubdivisionsList({ text }: { text: string | null | undefined }) {
   if (!text) return <span className="text-muted-foreground text-sm italic">—</span>;
-  const items = text.split(";").map((s) => s.trim()).filter(Boolean);
+  const items = parseListContent(text);
   if (items.length === 0) return <span className="text-muted-foreground text-sm italic">—</span>;
   return (
     <div className="flex flex-wrap gap-1.5">

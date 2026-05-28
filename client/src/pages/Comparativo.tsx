@@ -36,7 +36,15 @@ type Position = {
 
 function SubdivisionList({ content }: { content: string | null | undefined }) {
   if (!content) return <p className="text-xs text-muted-foreground italic">Não especificado</p>;
-  const items = content.split(";").map((s) => s.trim()).filter(Boolean);
+  let items: string[];
+  try {
+    const parsed = JSON.parse(content);
+    items = Array.isArray(parsed)
+      ? parsed.map((s: unknown) => String(s).trim()).filter(Boolean)
+      : content.split(";").map((s) => s.trim()).filter(Boolean);
+  } catch {
+    items = content.split(";").map((s) => s.trim()).filter(Boolean);
+  }
   return (
     <ul className="space-y-1">
       {items.map((item, i) => (
@@ -51,7 +59,15 @@ function SubdivisionList({ content }: { content: string | null | undefined }) {
 
 function AttributionList({ content }: { content: string | null | undefined }) {
   if (!content) return <p className="text-xs text-muted-foreground italic">Não especificado</p>;
-  const items = content.split(";").map((s) => s.trim()).filter(Boolean);
+  let items: string[];
+  try {
+    const parsed = JSON.parse(content);
+    items = Array.isArray(parsed)
+      ? parsed.map((s: unknown) => String(s).trim()).filter(Boolean)
+      : content.split(";").map((s) => s.trim()).filter(Boolean);
+  } catch {
+    items = content.split(";").map((s) => s.trim()).filter(Boolean);
+  }
   return (
     <ul className="space-y-1">
       {items.map((item, i) => (

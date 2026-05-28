@@ -40,7 +40,16 @@ function InfoSection({
   accentColor: string;
 }) {
   if (!content) return null;
-  const items = content.split(";").map((s) => s.trim()).filter(Boolean);
+  // Suporta JSON array (["item1","item2"]) e string separada por ";"
+  let items: string[];
+  try {
+    const parsed = JSON.parse(content);
+    items = Array.isArray(parsed)
+      ? parsed.map((s: unknown) => String(s).trim()).filter(Boolean)
+      : content.split(";").map((s) => s.trim()).filter(Boolean);
+  } catch {
+    items = content.split(";").map((s) => s.trim()).filter(Boolean);
+  }
 
   return (
     <div className="space-y-2">
