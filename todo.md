@@ -88,3 +88,12 @@
 - [x] Corrigir overflow de páginas no PDF comparativo (pdfkit auto-paginava ao ultrapassar PAGE_H) — resolvido com safeText() que limita Y ao BOTTOM_LIMIT
 - [x] Layout dinâmico da página Comparativo — substituir flex-wrap por CSS Grid com número de colunas dinâmico baseado nos estados selecionados
 - [x] PDF comparativo com 5 estados gera 1 página A4 landscape com todas as informações
+
+## Redesign - Identidade Visual CBMRO
+
+- [x] Atualizar paleta de cores no index.css (vermelho #E4001A, azul #1a3a8f, fundo #f2f2f7)
+- [x] Adicionar fonte Josefin Sans ao index.html
+- [x] Criar cabeçalho institucional da Assessoria Institucional do CBMRO (gradiente vermelho, divisor azul)
+- [x] Atualizar sidebar/navegação com as novas cores (azul escuro CBMRO + fonte Josefin Sans)
+- [x] Atualizar sub-header com gradiente vermelho→azul e fonte Josefin Sans
+- [ ] Atualizar componentes (cards, botões, badges) com a nova identidade visual — revisão opcional

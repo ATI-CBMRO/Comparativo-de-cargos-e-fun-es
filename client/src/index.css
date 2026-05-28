@@ -4,55 +4,55 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Bombeiros Institutional Colors */
-  --color-fire-red: oklch(0.48 0.22 25);
-  --color-fire-red-light: oklch(0.62 0.20 25);
-  --color-fire-red-dark: oklch(0.35 0.20 25);
-  --color-navy-blue: oklch(0.28 0.12 255);
-  --color-navy-blue-light: oklch(0.40 0.12 255);
-  --color-navy-blue-dark: oklch(0.18 0.10 255);
+  /* CBMRO Institutional Colors — #E4001A vermelho, #1a3a8f azul */
+  --color-fire-red: oklch(0.44 0.22 22);        /* #E4001A */
+  --color-fire-red-light: oklch(0.55 0.20 22);  /* #e8301a */
+  --color-fire-red-dark: oklch(0.34 0.20 22);   /* #c8001a */
+  --color-navy-blue: oklch(0.28 0.14 264);      /* #1a3a8f */
+  --color-navy-blue-light: oklch(0.42 0.14 264);/* #3a6abf */
+  --color-navy-blue-dark: oklch(0.20 0.12 264); /* #0f2060 */
   --color-gold: oklch(0.75 0.15 75);
   --color-gold-light: oklch(0.88 0.12 75);
 
   /* Semantic tokens */
-  --color-background: oklch(0.97 0.005 255);
-  --color-foreground: oklch(0.15 0.02 255);
+  --color-background: oklch(0.955 0.004 264);   /* #f2f2f7 */
+  --color-foreground: oklch(0.25 0.02 264);     /* #3e3e3e */
   --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.15 0.02 255);
+  --color-card-foreground: oklch(0.25 0.02 264);
   --color-popover: oklch(1 0 0);
-  --color-popover-foreground: oklch(0.15 0.02 255);
-  --color-primary: oklch(0.48 0.22 25);
+  --color-popover-foreground: oklch(0.25 0.02 264);
+  --color-primary: oklch(0.44 0.22 22);         /* #E4001A */
   --color-primary-foreground: oklch(1 0 0);
-  --color-secondary: oklch(0.28 0.12 255);
+  --color-secondary: oklch(0.28 0.14 264);      /* #1a3a8f */
   --color-secondary-foreground: oklch(1 0 0);
-  --color-muted: oklch(0.94 0.005 255);
-  --color-muted-foreground: oklch(0.50 0.02 255);
-  --color-accent: oklch(0.94 0.01 255);
-  --color-accent-foreground: oklch(0.28 0.12 255);
-  --color-destructive: oklch(0.55 0.22 25);
+  --color-muted: oklch(0.94 0.004 264);
+  --color-muted-foreground: oklch(0.52 0.02 264);
+  --color-accent: oklch(0.94 0.006 264);
+  --color-accent-foreground: oklch(0.28 0.14 264);
+  --color-destructive: oklch(0.44 0.22 22);
   --color-destructive-foreground: oklch(1 0 0);
-  --color-border: oklch(0.88 0.01 255);
-  --color-input: oklch(0.88 0.01 255);
-  --color-ring: oklch(0.48 0.22 25);
+  --color-border: oklch(0.88 0.006 264);
+  --color-input: oklch(0.88 0.006 264);
+  --color-ring: oklch(0.44 0.22 22);
 
   /* Detail Level Colors */
   --color-level-detalhado: oklch(0.45 0.18 145);
   --color-level-moderado: oklch(0.60 0.18 75);
-  --color-level-basico: oklch(0.55 0.15 25);
+  --color-level-basico: oklch(0.55 0.15 22);
 
-  /* Sidebar */
-  --color-sidebar: oklch(0.22 0.10 255);
-  --color-sidebar-foreground: oklch(0.92 0.01 255);
-  --color-sidebar-primary: oklch(0.48 0.22 25);
+  /* Sidebar — azul escuro CBMRO */
+  --color-sidebar: oklch(0.20 0.12 264);        /* ~#0f1e4a */
+  --color-sidebar-foreground: oklch(0.92 0.01 264);
+  --color-sidebar-primary: oklch(0.44 0.22 22); /* #E4001A */
   --color-sidebar-primary-foreground: oklch(1 0 0);
-  --color-sidebar-accent: oklch(0.30 0.10 255);
-  --color-sidebar-accent-foreground: oklch(0.92 0.01 255);
-  --color-sidebar-border: oklch(0.32 0.10 255);
-  --color-sidebar-ring: oklch(0.48 0.22 25);
+  --color-sidebar-accent: oklch(0.28 0.12 264);
+  --color-sidebar-accent-foreground: oklch(0.92 0.01 264);
+  --color-sidebar-border: oklch(0.30 0.12 264);
+  --color-sidebar-ring: oklch(0.44 0.22 22);
 
-  /* Typography */
+  /* Typography — Josefin Sans como display, Inter como body */
   --font-sans: "Inter", system-ui, sans-serif;
-  --font-display: "Oswald", "Inter", system-ui, sans-serif;
+  --font-display: "Josefin Sans", "Oswald", "Inter", system-ui, sans-serif;
 
   /* Radius */
   --radius-sm: 0.25rem;
@@ -94,16 +94,18 @@
   /* Sidebar styles */
   .sidebar-nav-item {
     @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150;
-    color: oklch(0.75 0.03 255);
+    color: oklch(0.78 0.03 264);
+    font-family: var(--font-display);
+    letter-spacing: 0.03em;
   }
 
   .sidebar-nav-item:hover {
-    background-color: oklch(0.30 0.10 255);
-    color: oklch(0.95 0.01 255);
+    background-color: oklch(0.28 0.12 264);
+    color: oklch(0.96 0.01 264);
   }
 
   .sidebar-nav-item.active {
-    background-color: oklch(0.48 0.22 25);
+    background-color: oklch(0.44 0.22 22); /* #E4001A */
     color: oklch(1 0 0);
   }
 
