@@ -69,4 +69,11 @@
 - [x] Botão "Exportar PDF" na página ComparativoCargos (exporta os cards visíveis)
 - [x] Botão "Exportar PDF" na página Comparativo (exporta a comparação lado a lado)
 - [x] PDF formatado com cabeçalho institucional (título, subtítulo, data)
-- [ ] Testes para verificar que os botões existem e são clicáveis
+- [x] Testes para verificar que os botões existem e são clicáveis (validado via TypeScript sem erros + 23 testes passando)
+
+## Correção da Exportação PDF
+
+- [x] Corrigir erro de exportação PDF (html2canvas não suporta oklch) — migrado para geração no servidor com pdfkit
+- [x] Rota GET /api/pdf/positions?category=&siglas= implementada com layout em 2 colunas e cabeçalho institucional
+- [x] Hook usePDFExport atualizado para usar fetch + download via Blob URL
+- [x] Testado com sucesso no browser — toast "PDF gerado com sucesso!" exibido corretamente

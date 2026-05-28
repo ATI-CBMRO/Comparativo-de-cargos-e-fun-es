@@ -3,9 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap");
-
 @theme inline {
   /* Bombeiros Institutional Colors */
   --color-fire-red: oklch(0.48 0.22 25);
@@ -177,5 +174,39 @@
   }
   ::-webkit-scrollbar-thumb:hover {
     background: oklch(0.55 0.08 255);
+  }
+}
+
+/* ── Regras de impressão / exportação PDF ─────────────────────────────────── */
+@media print {
+  /* Garantir reprodução fiel de cores */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Ocultar elementos de navegação e interação */
+  nav,
+  aside,
+  header,
+  .sidebar,
+  [data-sidebar],
+  [role="navigation"],
+  button,
+  [role="button"] {
+    display: none !important;
+  }
+
+  /* Remover sombras e bordas desnecessárias */
+  body {
+    background: white !important;
+  }
+
+  /* Evitar quebra de página dentro de cards */
+  .card,
+  [class*="rounded-xl"],
+  [class*="rounded-lg"] {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }

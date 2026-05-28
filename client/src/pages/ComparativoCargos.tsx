@@ -248,18 +248,17 @@ export default function ComparativoCargos() {
     [allStates]
   );
 
-  const { exportToPDF, isExporting } = usePDFExport();
+  const { exportPositionsPDF, isExporting } = usePDFExport();
 
   const handleExportPDF = () => {
-    const filterLabel =
-      activeFilter === "chefe-co" ? "Chefe do Órgão Operacional" : "Chefe do Órgão Técnico";
-    const stateLabel =
-      selectedSiglas.length > 0 ? `(${selectedSiglas.join(", ")})` : "(Todos os estados)";
-    exportToPDF("comparativo-cargos-content", {
-      filename: `comparativo-cargos-${activeFilter}-${Date.now()}.pdf`,
-      title: "Portal de Legislação dos Corpos de Bombeiros Militares",
-      subtitle: `Comparativo de Cargos — ${filterLabel} ${stateLabel}`,
-    });
+    if (!activeFilter) return;
+    exportPositionsPDF(
+      activeFilter,
+      selectedSiglas,
+      {
+        filename: `comparativo-cargos-${activeFilter}.pdf`,
+      }
+    );
   };
 
   return (

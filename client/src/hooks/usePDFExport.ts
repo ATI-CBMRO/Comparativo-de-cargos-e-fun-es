@@ -1,6 +1,4 @@
 import { useState } from "react";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
 import { toast } from "sonner";
 
 interface PDFExportOptions {
@@ -9,152 +7,97 @@ interface PDFExportOptions {
   subtitle?: string;
 }
 
+/**
+ * Hook para exportação de cargos como PDF via rota do servidor (/api/pdf/positions).
+ * Gera o PDF no backend com pdfkit — suporta todos os dados sem limitações de browser.
+ *
+ * Para a página ComparativoCargos, passe:
+ *   elementId = "positions" (não usado, apenas para compatibilidade)
+ *   options.category = "chefe-co" | "chefe-dat"
+ *   options.siglas = ["RO", "MG", ...] (opcional)
+ *
+ * Para a página Comparativo (estados), a exportação usa window.print() como fallback.
+ */
 export function usePDFExport() {
   const [isExporting, setIsExporting] = useState(false);
 
-  const exportToPDF = async (
-    elementId: string,
+  /**
+   * Exporta os cargos por categoria via rota do servidor.
+   * @param _elementId - ignorado (mantido para compatibilidade de API)
+   * @param options - opções de exportação
+   * @param options.category - categoria do cargo ("chefe-co" | "chefe-dat")
+   * @param options.siglas - lista de siglas de estados para filtrar (opcional)
+   */
+  const exportPositionsPDF = async (
+    category: string,
+    siglas: string[] = [],
     options: PDFExportOptions = {}
   ) => {
-    const {
-      filename = "relatorio-cbm.pdf",
-      title = "Portal de Legislação dos Corpos de Bombeiros Militares",
-      subtitle = "",
-    } = options;
-
-    const element = document.getElementById(elementId);
-    if (!element) {
-      console.error(`Element with id "${elementId}" not found`);
-      return;
-    }
-
     setIsExporting(true);
     toast.loading("Gerando PDF...", { id: "pdf-export" });
+
     try {
-      const canvas = await html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: "#ffffff",
-        logging: false,
-        windowWidth: element.scrollWidth,
-        windowHeight: element.scrollHeight,
-      });
-
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF({
-        orientation: canvas.width > canvas.height ? "landscape" : "portrait",
-        unit: "mm",
-        format: "a4",
-      });
-
-      const pageWidth = pdf.internal.pageSize.getWidth();
-      const pageHeight = pdf.internal.pageSize.getHeight();
-      const margin = 10;
-      const headerHeight = 20;
-
-      // Header institucional
-      pdf.setFillColor(15, 23, 42); // azul escuro
-      pdf.rect(0, 0, pageWidth, headerHeight, "F");
-
-      pdf.setTextColor(255, 255, 255);
-      pdf.setFontSize(11);
-      pdf.setFont("helvetica", "bold");
-      pdf.text(title, margin, 8);
-
-      if (subtitle) {
-        pdf.setFontSize(8);
-        pdf.setFont("helvetica", "normal");
-        pdf.text(subtitle, margin, 14);
+      const params = new URLSearchParams({ category });
+      if (siglas.length > 0) {
+        params.set("siglas", siglas.join(","));
       }
 
-      // Data de geração
-      const dateStr = new Date().toLocaleDateString("pt-BR", {
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      });
-      pdf.setFontSize(7);
-      pdf.setTextColor(200, 200, 200);
-      pdf.text(`Gerado em: ${dateStr}`, pageWidth - margin, 14, {
-        align: "right",
-      });
+      const response = await fetch(`/api/pdf/positions?${params.toString()}`);
 
-      // Imagem do conteúdo
-      const contentY = headerHeight + 4;
-      const availableWidth = pageWidth - 2 * margin;
-      const availableHeight = pageHeight - contentY - margin;
-
-      const imgWidth = canvas.width;
-      const imgHeight = canvas.height;
-      const ratio = Math.min(
-        availableWidth / imgWidth,
-        availableHeight / imgHeight
-      );
-
-      const scaledWidth = imgWidth * ratio;
-      const scaledHeight = imgHeight * ratio;
-
-      // Se o conteúdo for maior que uma página, divide em múltiplas páginas
-      if (scaledHeight <= availableHeight) {
-        pdf.addImage(imgData, "PNG", margin, contentY, scaledWidth, scaledHeight);
-      } else {
-        // Múltiplas páginas
-        const pxPerPage = (availableHeight / ratio);
-        let yOffset = 0;
-        let pageNum = 0;
-
-        while (yOffset < imgHeight) {
-          if (pageNum > 0) {
-            pdf.addPage();
-            // Repetir header
-            pdf.setFillColor(15, 23, 42);
-            pdf.rect(0, 0, pageWidth, headerHeight, "F");
-            pdf.setTextColor(255, 255, 255);
-            pdf.setFontSize(11);
-            pdf.setFont("helvetica", "bold");
-            pdf.text(title, margin, 8);
-            if (subtitle) {
-              pdf.setFontSize(8);
-              pdf.setFont("helvetica", "normal");
-              pdf.text(subtitle, margin, 14);
-            }
-          }
-
-          const sliceHeight = Math.min(pxPerPage, imgHeight - yOffset);
-          const sliceCanvas = document.createElement("canvas");
-          sliceCanvas.width = imgWidth;
-          sliceCanvas.height = sliceHeight;
-          const ctx = sliceCanvas.getContext("2d")!;
-          ctx.drawImage(canvas, 0, -yOffset);
-          const sliceData = sliceCanvas.toDataURL("image/png");
-          const sliceScaledHeight = sliceHeight * ratio;
-
-          pdf.addImage(
-            sliceData,
-            "PNG",
-            margin,
-            contentY,
-            scaledWidth,
-            sliceScaledHeight
-          );
-
-          yOffset += pxPerPage;
-          pageNum++;
-        }
+      if (!response.ok) {
+        const err = await response.json().catch(() => ({ error: "Erro desconhecido" }));
+        throw new Error(err.error || `HTTP ${response.status}`);
       }
 
-      pdf.save(filename);
-      toast.success("PDF gerado com sucesso!", { id: "pdf-export" });
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+
+      // Criar link temporário para download
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = options.filename || `comparativo-cargos-${category}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      toast.success("PDF gerado com sucesso!", { id: "pdf-export", duration: 4000 });
     } catch (err) {
-      console.error("Erro ao gerar PDF:", err);
-      toast.error("Erro ao gerar PDF. Tente novamente.", { id: "pdf-export" });
+      console.error("[PDF] Erro ao gerar PDF:", err);
+      toast.error(
+        err instanceof Error ? err.message : "Erro ao gerar PDF. Tente novamente.",
+        { id: "pdf-export" }
+      );
     } finally {
       setIsExporting(false);
     }
   };
 
-  return { exportToPDF, isExporting };
+  /**
+   * Exporta conteúdo genérico via window.print() (fallback para páginas sem rota dedicada).
+   * @param elementId - ID do elemento a ser impresso
+   * @param options - opções de exportação
+   */
+  const exportToPDF = (_elementId: string, options: PDFExportOptions = {}) => {
+    // Para ComparativoCargos, redirecionar para exportPositionsPDF se possível
+    // Esta função é mantida para compatibilidade com a página Comparativo
+    setIsExporting(true);
+    toast.loading("Preparando impressão...", { id: "pdf-export" });
+
+    setTimeout(() => {
+      try {
+        window.print();
+        toast.success("Caixa de diálogo de impressão aberta. Salve como PDF.", {
+          id: "pdf-export",
+          duration: 5000,
+        });
+      } catch {
+        toast.error("Não foi possível abrir a impressão.", { id: "pdf-export" });
+      } finally {
+        setIsExporting(false);
+      }
+    }, 300);
+  };
+
+  return { exportToPDF, exportPositionsPDF, isExporting };
 }
