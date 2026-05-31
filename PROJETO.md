@@ -1,6 +1,6 @@
 # Portal de Legislação dos Corpos de Bombeiros Militares
 
-**Documentação Técnica e Funcional — versão 1.4.0**
+**Documentação Técnica e Funcional — versão 1.5.0**
 
 Desenvolvido por: Assessoria Técnica Institucional — CBMRO
 Última atualização: maio de 2026
@@ -54,6 +54,8 @@ O nível de detalhamento de cada registro segue a seguinte classificação:
 | **Básico** | Apenas nomenclatura e competências gerais, sem cargos subordinados detalhados |
 
 ### 2.1 Instrumentos Normativos por Estado
+
+> **Nota sobre os arquivos PDF:** Todos os 31 arquivos de legislação fornecidos como base de dados são **PDFs com texto digital extraível** (não são imagens escaneadas), com exceção do `Amazonas-OrganizaçãoBásica.pdf` (14 páginas de imagem escaneada, sem texto extraível — estado não incluído nos 19 do portal). Os demais arquivos foram gerados por Microsoft Word, Ghostscript, PDF24 ou impressão direta do navegador, e possuem de 3 a 854 páginas em formato A4.
 
 Cada estado possui o campo **Base Legal** preenchido com o número completo, data e ementa do instrumento normativo de referência, extraído diretamente dos arquivos de legislação.
 
@@ -360,6 +362,7 @@ A infraestrutura de autenticação já está disponível. Para proteger um proce
 | 1.2.0 | maio/2026 | Exportação PDF (pdfkit); comparativo PDF; layout dinâmico de colunas |
 | 1.3.0 | maio/2026 | Redesign identidade visual CBMRO; cabeçalho institucional; fonte Josefin Sans |
 | 1.4.0 | maio/2026 | Desdobramentos reais dos 19 estados; base legal completa (número e data); artigo de origem; seletor por região; correções de layout mobile; remoção do brasão duplicado |
+| 1.5.0 | maio/2026 | Correção dos desdobramentos de AL (DST: seções conforme Art. 60–64 do Regimento Interno); varredura e validação dos PDFs de legislação (31 arquivos, todos com texto digital extraível, exceto Amazonas que é imagem escaneada); publicação no GitHub |
 
 ---
 

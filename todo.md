@@ -116,3 +116,10 @@
 - [x] Corrigir layout mobile: sub-header com texto completo visível e sidebar não sobrepõe conteúdo
 - [x] Seletor de estados no Comparativo agrupado por região geográfica (Norte/Nordeste/Centro-Oeste/Sudeste/Sul)
 - [x] Seção "Artigo Legal de Origem" exibida nos cards de CO e DAT nas telas de Comparativo e EstadoDetalhe
+
+## Correção de Dados - Alagoas e Varredura de PDFs
+
+- [x] Corrigir desdobramentos da DST de AL conforme Art. 60–64 do Regimento Interno (5 seções: Estudos e Projetos, Testes/Vistorias/Pareceres, Perícias e Pesquisas, Hidrantes, Expediente e Arquivo)
+- [x] Varredura dos 31 arquivos PDF de legislação: todos com texto digital extraível, exceto Amazonas (imagem escaneada)
+- [x] Documentação atualizada para v1.5.0 com nota sobre formato dos PDFs
+- [x] Publicação no GitHub
