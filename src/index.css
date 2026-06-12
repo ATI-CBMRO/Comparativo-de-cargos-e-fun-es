@@ -1487,25 +1487,6 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   /* mostra o relatório e esconde a UI de tela desta aba */
   .oc-print { display: block !important; }
 
-  .oc-print-header {
-    display: flex !important; align-items: center; gap: 14px;
-    border-bottom: 3px solid #c8102e !important;
-    padding-bottom: 10px; margin-bottom: 12px;
-  }
-  .oc-print-emblem { width: 54px !important; height: 54px !important; object-fit: contain; flex-shrink: 0; }
-  .oc-print-title {
-    font-family: 'Outfit', sans-serif; font-size: 14.5px; font-weight: 800; color: #111;
-    line-height: 1.2;
-  }
-  .oc-print-sub { font-size: 9px; color: #555; margin-top: 3px; line-height: 1.35; }
-  .oc-print-meta { margin-left: auto; text-align: right; font-size: 9px; color: #555; flex-shrink: 0; }
-  .oc-print-meta strong { display: block; font-size: 11px; color: #111; }
-
-  .oc-print-intro {
-    font-size: 9px; color: #444; line-height: 1.45; margin-bottom: 12px;
-    background: #f5f7fa; border: 1px solid #e3e8ef; border-radius: 5px; padding: 7px 9px;
-  }
-
   .oc-print-cargo { margin-bottom: 14px; break-inside: auto; }
   .oc-print-cargo-title {
     font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 800;
@@ -1522,7 +1503,83 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .oc-print-ref li { margin-bottom: 2px; }
 
   /* ── capa ── */
-  .oc-print-cover { page-break-after: always; margin-bottom: 0; }
+  .oc-print-cover {
+    page-break-after: always !important;
+    display: flex !important; flex-direction: column;
+    min-height: 100vh; margin: 0; padding: 0;
+  }
+
+  /* Barra de cabeçalho — réplica do portal */
+  .oc-cover-header-bar {
+    background: linear-gradient(90deg, #b00718 0%, #d40f1f 35%, #e2231a 60%, #ef3b2d 100%) !important;
+    padding: 18px 28px !important;
+    display: flex !important; align-items: center; gap: 20px;
+  }
+  .oc-cover-emblem {
+    width: 72px !important; height: 72px !important;
+    object-fit: contain; flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+  }
+  .oc-cover-header-text { flex: 1; text-align: center; }
+  .oc-cover-header-title {
+    font-family: 'Outfit', sans-serif; font-size: 17px !important; font-weight: 800;
+    letter-spacing: 2px; color: #fff !important; text-transform: uppercase; line-height: 1.2;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+  }
+  .oc-cover-header-rule {
+    height: 1.5px; margin: 6px auto !important; max-width: 380px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.75) 20%, #fff 50%, rgba(255,255,255,0.75) 80%, transparent 100%) !important;
+    border-radius: 2px;
+  }
+  .oc-cover-header-sub {
+    font-size: 10px !important; letter-spacing: 2.5px;
+    color: rgba(255,255,255,0.90) !important; text-transform: uppercase;
+  }
+
+  /* Área central */
+  .oc-cover-body {
+    flex: 1; display: flex !important; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 48px 72px;
+  }
+  .oc-cover-label {
+    font-size: 10px !important; letter-spacing: 3.5px; text-transform: uppercase;
+    color: #999 !important; margin-bottom: 16px;
+  }
+  .oc-cover-main-title {
+    font-family: 'Outfit', sans-serif; font-size: 72px !important; font-weight: 900;
+    color: #c8102e !important; line-height: 1; margin: 0 0 10px;
+    letter-spacing: -1px;
+  }
+  .oc-cover-subtitle {
+    font-family: 'Outfit', sans-serif; font-size: 20px !important; font-weight: 700;
+    color: #16234a !important; line-height: 1.3; margin-bottom: 28px;
+  }
+  .oc-cover-rule {
+    width: 72px; height: 4px;
+    background: #c8102e !important; border-radius: 2px;
+    margin: 0 auto 24px !important;
+  }
+  .oc-cover-desc {
+    font-size: 11px !important; color: #555 !important; line-height: 1.6;
+    max-width: 460px; margin-bottom: 36px !important;
+  }
+  .oc-cover-desc strong { color: #c8102e !important; }
+  .oc-cover-stats {
+    display: flex !important; align-items: center; gap: 14px;
+    font-size: 9.5px !important; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: #16234a !important;
+  }
+  .oc-cover-stats-sep { color: #c8102e !important; font-size: 14px !important; font-weight: 400; }
+
+  /* Rodapé da capa */
+  .oc-cover-footer {
+    border-top: 2px solid #c8102e !important;
+    padding: 12px 28px !important;
+    display: flex !important; justify-content: space-between; align-items: center;
+    font-size: 9px !important; color: #777 !important;
+  }
+  .oc-cover-footer strong { color: #111 !important; }
 
   /* ── folha por estado ── */
   .oc-print-page { margin-top: 0; }

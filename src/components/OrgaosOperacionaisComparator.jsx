@@ -264,11 +264,12 @@ function PrintReport({ referenceState, otherStates, group, groupMeta }) {
 
   return (
     <div className="oc-print">
-      {/* Capa com cabeçalho institucional (folha própria) */}
+      {/* ── Capa (folha própria) ── */}
       <div className="oc-print-cover">
-        <div className="oc-print-header">
+        {/* Barra de cabeçalho — réplica do portal */}
+        <div className="oc-cover-header-bar">
           <img
-            className="oc-print-emblem"
+            className="oc-cover-emblem"
             src="/BrasaoCBMRO2D-COMPLETO.png"
             onError={e => {
               if (!e.currentTarget.dataset.fb) {
@@ -278,26 +279,37 @@ function PrintReport({ referenceState, otherStates, group, groupMeta }) {
             }}
             alt="Brasão CBMRO"
           />
-          <div>
-            <div className="oc-print-title">
-              Relatório Comparativo — {groupMeta?.ref_abbr} ({groupMeta?.ref_name})
-            </div>
-            <div className="oc-print-sub">
-              Corpos de Bombeiros Militares · Referência: minuta de LOB do CBMRO · Portal de Legislação
-            </div>
-          </div>
-          <div className="oc-print-meta">
-            <span>Emitido em</span>
-            <strong>{printDate}</strong>
+          <div className="oc-cover-header-text">
+            <div className="oc-cover-header-title">Portal CBM — Legislação Nacional</div>
+            <div className="oc-cover-header-rule" />
+            <div className="oc-cover-header-sub">Corpos de Bombeiros Militares</div>
           </div>
         </div>
-        <p className="oc-print-intro">
-          Comparativo do órgão equivalente à <strong>{groupMeta?.ref_abbr}</strong>{' '}
-          ({groupMeta?.ref_name}) nos 27 Corpos de Bombeiros Militares. Cada folha apresenta
-          a comparação direta CBMRO × estado, com os campos dispostos em linhas e as duas
-          legislações em colunas. "Órgão não discriminado" indica ausência de mapeamento
-          na legislação do estado.
-        </p>
+
+        {/* Área central com o título */}
+        <div className="oc-cover-body">
+          <div className="oc-cover-label">Relatório Comparativo</div>
+          <div className="oc-cover-main-title">{groupMeta?.ref_abbr}</div>
+          <div className="oc-cover-subtitle">{groupMeta?.ref_name}</div>
+          <div className="oc-cover-rule" />
+          <p className="oc-cover-desc">
+            Comparativo do órgão equivalente à <strong>{groupMeta?.ref_abbr}</strong> nos
+            27 Corpos de Bombeiros Militares. Cada folha apresenta a comparação direta
+            CBMRO × estado, com os campos dispostos em linhas e as duas legislações em
+            colunas paralelas.
+          </p>
+          <div className="oc-cover-stats">
+            <span>27 Corpos de Bombeiros Militares</span>
+            <span className="oc-cover-stats-sep">·</span>
+            <span>Referência: Minuta de LOB do CBMRO</span>
+          </div>
+        </div>
+
+        {/* Rodapé com data */}
+        <div className="oc-cover-footer">
+          <span>Portal de Legislação CBM</span>
+          <span>Emitido em <strong>{printDate}</strong></span>
+        </div>
       </div>
 
       {/* Uma folha por estado */}
