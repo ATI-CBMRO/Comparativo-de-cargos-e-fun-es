@@ -852,10 +852,10 @@ img { display: block; max-width: 100%; }
   width: 100%; border-collapse: collapse; table-layout: fixed;
   font-size: 13px; background: #fff;
 }
-/* Widths: label fixa, as duas colunas de conteúdo dividem o restante */
-.oc-pair-col-label { width: 130px; }
-.oc-pair-col-ro    { width: calc(50% - 65px); }
-.oc-pair-col-st    { width: calc(50% - 65px); }
+/* Widths: label fixa (comporta "DESDOBRAMENTOS" sem quebra), conteúdo divide o restante */
+.oc-pair-col-label { width: 170px; }
+.oc-pair-col-ro    { width: calc((100% - 170px) / 2); }
+.oc-pair-col-st    { width: calc((100% - 170px) / 2); }
 
 /* Cabeçalho sticky */
 .oc-pair-table thead th {
@@ -887,7 +887,10 @@ img { display: block; max-width: 100%; }
   color: var(--text-secondary);
   font-size: 11px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.3px;
-  word-break: break-word;
+  hyphens: none; word-break: keep-all; overflow-wrap: normal;
+}
+.oc-pair-th-label {
+  hyphens: none; word-break: keep-all;
 }
 .oc-pair-td-ro {
   background: #f0f5ff !important;
