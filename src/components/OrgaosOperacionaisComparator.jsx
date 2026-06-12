@@ -285,18 +285,35 @@ function MatrixTable({ referenceState, otherStates, group, wrapperRef }) {
 /* ── Modal fullscreen do comparativo ── */
 function OcModal({ isOpen, onClose, group, groupMeta, referenceState, otherStates }) {
   const scrollerRef = useRef(null)
+  const [activeIdx, setActiveIdx] = useState(0)
   const GroupIcon = group === 'cot' ? ShieldAlert : Building2
 
-  function scrollToState(stateId) {
+  // Reseta posicao ao abrir ou trocar grupo
+  useEffect(() => {
+    if (isOpen) {
+      setActiveIdx(0)
+      if (scrollerRef.current) scrollerRef.current.scrollLeft = 0
+    }
+  }, [isOpen, group])
+
+  function goTo(idx) {
+    const clamped = Math.max(0, Math.min(idx, otherStates.length - 1))
+    setActiveIdx(clamped)
     const wrapper = scrollerRef.current
-    const th = document.getElementById(`oc-th-${stateId}`)
+    const th = document.getElementById(`oc-th-${otherStates[clamped].id}`)
     if (!wrapper || !th) return
     const wrapperRect = wrapper.getBoundingClientRect()
     const thRect = th.getBoundingClientRect()
-    wrapper.scrollLeft += thRect.left - wrapperRect.left - 148 - 240
+    const stickyW = 148 + 240
+    wrapper.scrollTo({
+      left: wrapper.scrollLeft + thRect.left - wrapperRect.left - stickyW,
+      behavior: 'smooth',
+    })
   }
 
   if (!isOpen) return null
+
+  const st = otherStates[activeIdx]
 
   return (
     <div className="oc-modal-overlay">
@@ -308,24 +325,48 @@ function OcModal({ isOpen, onClose, group, groupMeta, referenceState, otherState
             <span className="oc-modal-group-tag">{groupMeta?.ref_abbr}</span>
             {groupMeta?.ref_name}
           </span>
-          <button className="oc-modal-close" onClick={onClose}>
-            <X size={16} /> Fechar
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+            {st && (
+              <span className="oc-modal-state-info">
+                {st.abbreviation} &middot; {st.cbm}
+                <span className="oc-modal-counter">{activeIdx + 1}/{otherStates.length}</span>
+              </span>
+            )}
+            <button className="oc-modal-close" onClick={onClose}>
+              <X size={16} /> Fechar
+            </button>
+          </div>
         </div>
 
-        {/* Chips de navegacao por estado */}
+        {/* Barra de navegacao: setas + chips */}
         <div className="oc-modal-chips">
-          <span className="oc-modal-chips-label">Ir para:</span>
-          {otherStates.map(st => (
+          <button
+            className="oc-nav-btn"
+            onClick={() => goTo(activeIdx - 1)}
+            disabled={activeIdx === 0}
+            title="Estado anterior"
+          >
+            &#8592;
+          </button>
+          <span className="oc-modal-chips-label">Estado:</span>
+          {otherStates.map((s, idx) => (
             <button
-              key={st.id}
-              className="oc-modal-chip"
-              onClick={() => scrollToState(st.id)}
-              title={`${st.name} - ${st.cbm}`}
+              key={s.id}
+              className={`oc-modal-chip${idx === activeIdx ? ' active' : ''}`}
+              onClick={() => goTo(idx)}
+              title={`${s.name} - ${s.cbm}`}
             >
-              {st.abbreviation}
+              {s.abbreviation}
             </button>
           ))}
+          <button
+            className="oc-nav-btn"
+            onClick={() => goTo(activeIdx + 1)}
+            disabled={activeIdx === otherStates.length - 1}
+            title="Proximo estado"
+          >
+            &#8594;
+          </button>
         </div>
 
         {/* Tabela */}
