@@ -1506,7 +1506,8 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .oc-print-cover {
     page-break-after: always !important;
     display: flex !important; flex-direction: column;
-    min-height: 100vh; margin: 0; padding: 0;
+    height: 100vh; overflow: hidden; margin: 0; padding: 0;
+    box-sizing: border-box;
   }
 
   /* Barra de cabeçalho — réplica do portal */
