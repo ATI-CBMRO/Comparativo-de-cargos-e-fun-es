@@ -467,7 +467,7 @@ export default function OrgaosOperacionaisComparator() {
             Operacional) e ao <strong>COT</strong> (Comando de Operações Técnicas) da minuta de LOB
             do CBMRO, nos 27 CBMs. Casamento <strong>por função</strong> — a nomenclatura varia
             (COB, CAT etc.) — texto transcrito <strong>verbatim</strong>. Use{' '}
-            <strong>”Exportar PDF”</strong> para o relatório completo.
+            <strong>&ldquo;Exportar PDF&rdquo;</strong> para o relatório completo.
           </p>
         </div>
 
