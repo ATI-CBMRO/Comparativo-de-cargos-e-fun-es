@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
   Building2, ShieldAlert, Info, Award, AlertCircle,
-  ArrowLeftRight, X, Pin, FileDown, FileText
+  FileDown, FileText
 } from 'lucide-react'
 
 /* ────────────────────────────────────────────────────────────
@@ -72,85 +72,7 @@ function CargosCell({ cargos }) {
   )
 }
 
-function CbmCell({ st, note, onCompare }) {
-  return (
-    <div className="oc-cbm-cell">
-      <div className="cc-corp-head">
-        <span className={`cc-corp-abbr ${st.is_reference ? 'ref' : ''}`}>{st.abbreviation}</span>
-        <div>
-          <div className="cc-corp-name">{st.name}</div>
-          <div className="cc-corp-cbm">{st.cbm}{st.is_reference ? ' · Referência' : ''}</div>
-        </div>
-      </div>
-      {onCompare && (
-        <button className="oc-compare-btn" onClick={() => onCompare(st)}>
-          <ArrowLeftRight size={12} /> Comparar com RO
-        </button>
-      )}
-      {note && (
-        <div className="oc-note">
-          <Info size={11} style={{ flexShrink: 0, marginTop: 1 }} />
-          <span>{note}</span>
-        </div>
-      )}
-    </div>
-  )
-}
-
-/* ── Card de referência (CBMRO) — bloco normal no fluxo ── */
-function ReferenceCard({ state, group, groupMeta }) {
-  const organs = (state && state[group]) || []
-  const GroupIcon = group === 'cot' ? ShieldAlert : Building2
-  return (
-    <div className="oc-ref-card">
-      <div className="oc-ref-card-head">
-        <span className="oc-ref-badge">{state.abbreviation}</span>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div className="oc-ref-card-title">
-            <Pin size={13} /> Referência — {state.cbm} · {groupMeta?.ref_abbr}
-          </div>
-          <div className="oc-ref-card-sub">
-            {state.name} · Minuta de LOB do CBMRO — estrutura completa do {groupMeta?.ref_abbr}
-          </div>
-        </div>
-        <GroupIcon size={26} className="oc-ref-card-glyph" />
-      </div>
-
-      {organs.length === 0 ? (
-        <div className="oc-ref-empty">Órgão de referência não localizado para este grupo.</div>
-      ) : (
-        <div className="oc-ref-body">
-          {organs.map((organ, i) => (
-            <div key={i} className="oc-ref-organ">
-              <div className="oc-ref-organ-head">
-                <OrganNameCell organ={organ} />
-                {organ.subordinadoA && (
-                  <span className="oc-ref-sub">
-                    Subordinação: {renderFriendlyText(organ.subordinadoA)}
-                  </span>
-                )}
-              </div>
-              <div className="oc-ref-grid">
-                <div className="oc-ref-col">
-                  <div className="oc-ref-col-label">Cargos / Funções</div>
-                  <CargosCell cargos={organ.cargos} />
-                </div>
-                <div className="oc-ref-col">
-                  <div className="oc-ref-col-label">Atribuições (verbatim)</div>
-                  <List items={organAtribuicoes(organ)} />
-                  <div className="oc-ref-col-label" style={{ marginTop: 16 }}>Desdobramentos</div>
-                  <List items={organ.desdobramentos} />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
-/* ── Lado a lado: RO × estado, campo a campo ── */
+/* ── helpers mantidos para o PrintReport ── */
 function perOrgan(organs, fn) {
   if (!organs || organs.length === 0) return <span className="cc-empty">—</span>
   if (organs.length === 1) return fn(organs[0])
@@ -174,82 +96,187 @@ const SBS_FIELDS = [
   { label: 'Desdobramentos', render: orgs => perOrgan(orgs, o => <List items={o.desdobramentos} />) },
 ]
 
-function SideBySide({ referenceState, target, group, groupMeta, note, onClose }) {
-  const refOrgans = referenceState[group] || []
-  const tgtOrgans = target[group] || []
+/* ── Linhas da tabela matricial (campos como linhas, estados como colunas) ── */
+const MATRIX_ROWS = [
+  {
+    key: 'organ',
+    label: 'Órgão / Sigla',
+    render: o => <OrganNameCell organ={o} />,
+  },
+  {
+    key: 'subord',
+    label: 'Subordinação',
+    render: o => o.subordinadoA
+      ? <span className="oc-sub">{renderFriendlyText(o.subordinadoA)}</span>
+      : <span className="cc-empty">—</span>,
+  },
+  {
+    key: 'cargos',
+    label: 'Cargo / Função',
+    render: o => {
+      const names = (o.cargos || []).map(c => c.cargo).filter(Boolean)
+      return names.length
+        ? <ul className="cc-list">{names.map((n, i) => <li key={i}>{renderFriendlyText(n)}</li>)}</ul>
+        : <span className="cc-empty">—</span>
+    },
+  },
+  {
+    key: 'req',
+    label: 'Requisito / Posto',
+    render: o => {
+      const reqs = [...new Set((o.cargos || []).map(c => c.requisito).filter(Boolean))]
+      return reqs.length
+        ? <ul className="cc-list">{reqs.map((r, i) => <li key={i}>{renderFriendlyText(r)}</li>)}</ul>
+        : <span className="cc-empty">—</span>
+    },
+  },
+  {
+    key: 'atrib',
+    label: 'Atribuições',
+    render: o => <List items={organAtribuicoes(o)} />,
+  },
+  {
+    key: 'desd',
+    label: 'Desdobramentos',
+    render: o => {
+      const items = o.desdobramentos || []
+      return items.length ? <List items={items} /> : <span className="cc-empty">—</span>
+    },
+  },
+]
+
+/* ── Tabela matricial: campos em linhas, estados em colunas ── */
+function MatrixTable({ referenceState, otherStates, group }) {
+  const refOrgans = (referenceState?.[group]) || []
+  const isCot = group === 'cot'
+
+  const cols = otherStates.map(st => ({
+    state: st,
+    organs: st[group] || [],
+    note: st.notes?.[group],
+    span: Math.max((st[group] || []).length, 1),
+  }))
+
+  const hasSubCols = cols.some(c => c.organs.length > 1) || refOrgans.length > 1
+
   return (
-    <div>
-      <div className="oc-sbs-toolbar">
-        <button className="btn btn-ghost btn-sm" onClick={onClose}>
-          <X size={14} /> Voltar à tabela
-        </button>
-        <span className="oc-sbs-title">
-          <ArrowLeftRight size={15} color="var(--cbm-red-700)" />
-          {groupMeta?.ref_abbr} — CBMRO <span className="oc-sbs-vs">×</span> {target.cbm || target.abbreviation}
-        </span>
-      </div>
+    <div className="cargo-compare-wrapper oc-scroll">
+      <table className="cargo-compare-table oc-matrix-table">
+        <colgroup>
+          <col style={{ width: 148 }} />
+          {refOrgans.length === 0
+            ? <col style={{ minWidth: 240 }} />
+            : refOrgans.map((_, i) => <col key={i} style={{ minWidth: 240 }} />)
+          }
+          {cols.flatMap(c =>
+            Array.from({ length: c.span }, (_, i) => (
+              <col key={`${c.state.id}-${i}`} style={{ minWidth: 196 }} />
+            ))
+          )}
+        </colgroup>
 
-      {note && (
-        <div className="oc-note" style={{ margin: '0 0 12px' }}>
-          <Info size={12} style={{ flexShrink: 0, marginTop: 1 }} />
-          <span>{note}</span>
-        </div>
-      )}
+        <thead>
+          {/* Linha 1: Campo | CBMRO | estados */}
+          <tr>
+            <th className="cc-col-label cc-corner" rowSpan={hasSubCols ? 2 : 1}>
+              Campo
+            </th>
+            <th
+              className="cc-col-ro cc-corner"
+              colSpan={Math.max(refOrgans.length, 1)}
+              rowSpan={refOrgans.length <= 1 && hasSubCols ? 2 : 1}
+            >
+              <div className="cc-corp-head">
+                <span className="cc-corp-abbr ref">{referenceState?.abbreviation}</span>
+                <div>
+                  <div className="cc-corp-name">{referenceState?.name}</div>
+                  <div className="cc-corp-cbm">
+                    {referenceState?.cbm} · Referência
+                    {isCot && (
+                      <span className="oc-cot-note" title="No CBMRO, o COT é subordinado à DPO — estrutura única entre os 27 CBMs.">
+                        <Info size={10} />
+                        COT ⊂ DPO
+                        <span className="oc-cot-tooltip">
+                          No CBMRO, o COT é subordinado à DPO — estrutura única entre os 27 CBMs.
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </th>
+            {cols.map(c => (
+              <th
+                key={c.state.id}
+                colSpan={c.span}
+                rowSpan={c.organs.length <= 1 && hasSubCols ? 2 : 1}
+              >
+                <div className="cc-corp-head">
+                  <span className="cc-corp-abbr">{c.state.abbreviation}</span>
+                  <div>
+                    <div className="cc-corp-name">{c.state.name}</div>
+                    <div className="cc-corp-cbm">{c.state.cbm}</div>
+                  </div>
+                </div>
+              </th>
+            ))}
+          </tr>
 
-      <div className="cargo-compare-wrapper oc-scroll">
-        <table className="cargo-compare-table cc-table oc-sbs-table">
-          <colgroup>
-            <col style={{ width: 170 }} />
-            <col style={{ width: '50%' }} />
-            <col style={{ width: '50%' }} />
-          </colgroup>
-          <thead>
+          {/* Linha 2: sub-cabeçalhos de órgão (só quando algum estado tem 2+ órgãos) */}
+          {hasSubCols && (
             <tr>
-              <th className="cc-col-label cc-corner">Campo</th>
-              <th className="cc-col-ro cc-corner">
-                <div className="cc-corp-head">
-                  <span className="cc-corp-abbr ref">{referenceState.abbreviation}</span>
-                  <div>
-                    <div className="cc-corp-name">{referenceState.name}</div>
-                    <div className="cc-corp-cbm">{referenceState.cbm} · Referência</div>
-                  </div>
-                </div>
-              </th>
-              <th>
-                <div className="cc-corp-head">
-                  <span className="cc-corp-abbr">{target.abbreviation}</span>
-                  <div>
-                    <div className="cc-corp-name">{target.name}</div>
-                    <div className="cc-corp-cbm">{target.cbm}</div>
-                  </div>
-                </div>
-              </th>
+              {refOrgans.length > 1 && refOrgans.map((o, i) => (
+                <th key={i} className="cc-col-ro oc-sub-header">
+                  {o.abbreviation || o.name}
+                </th>
+              ))}
+              {cols.map(c =>
+                c.organs.length > 1
+                  ? c.organs.map((o, i) => (
+                      <th key={i} className="oc-sub-header">
+                        {o.abbreviation || o.name}
+                      </th>
+                    ))
+                  : null
+              )}
             </tr>
-          </thead>
-          <tbody>
-            {tgtOrgans.length === 0 ? (
-              <tr>
-                <td className="cc-col-label">Situação</td>
-                <td className="cc-col-ro cc-ref-cell">{SBS_FIELDS[0].render(refOrgans)}</td>
-                <td className="cc-notfound">
-                  <span style={{ display: 'flex', gap: 6, alignItems: 'flex-start' }}>
-                    <AlertCircle size={13} style={{ flexShrink: 0, marginTop: 2 }} />
-                    {note || 'Órgão equivalente não discriminado na legislação deste estado.'}
-                  </span>
-                </td>
-              </tr>
-            ) : (
-              SBS_FIELDS.map(f => (
-                <tr key={f.label}>
-                  <td className="cc-col-label">{f.label}</td>
-                  <td className="cc-col-ro cc-ref-cell">{f.render(refOrgans)}</td>
-                  <td>{f.render(tgtOrgans)}</td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
+          )}
+        </thead>
+
+        <tbody>
+          {MATRIX_ROWS.map((row, rowIdx) => (
+            <tr key={row.key}>
+              <td className="cc-col-label">{row.label}</td>
+              {/* Células CBMRO (sticky) */}
+              {refOrgans.length === 0
+                ? <td className="cc-col-ro cc-ref-cell"><span className="cc-empty">—</span></td>
+                : refOrgans.map((o, i) => (
+                    <td key={i} className="cc-col-ro cc-ref-cell">{row.render(o)}</td>
+                  ))
+              }
+              {/* Células dos estados */}
+              {cols.map(c => {
+                if (c.organs.length === 0) {
+                  if (rowIdx === 0) {
+                    return (
+                      <td key={c.state.id} className="cc-notfound" rowSpan={MATRIX_ROWS.length}>
+                        <span style={{ display: 'flex', gap: 5, alignItems: 'flex-start', fontSize: 11.5 }}>
+                          <AlertCircle size={13} style={{ flexShrink: 0, marginTop: 2 }} />
+                          {c.note || 'Órgão equivalente não discriminado na legislação deste estado.'}
+                        </span>
+                      </td>
+                    )
+                  }
+                  return null
+                }
+                return c.organs.map((o, i) => (
+                  <td key={i}>{row.render(o)}</td>
+                ))
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
@@ -390,7 +417,6 @@ export default function OrgaosOperacionaisComparator() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
   const [group, setGroup] = useState('dpo')
-  const [compareId, setCompareId] = useState(null)
 
   useEffect(() => {
     fetch('/database/comparativo_dpo_cot.json')
@@ -411,55 +437,48 @@ export default function OrgaosOperacionaisComparator() {
     () => (data ? data.states.filter(s => !s.is_reference) : []),
     [data]
   )
-  const compareTarget = useMemo(
-    () => (data && compareId ? data.states.find(s => s.id === compareId) : null),
-    [data, compareId]
-  )
 
   if (error) {
     return (
-      <div className="empty-state" style={{ marginTop: 24 }}>
-        <Building2 size={40} className="empty-state-icon" />
+      <div className=”empty-state” style={{ marginTop: 24 }}>
+        <Building2 size={40} className=”empty-state-icon” />
         <h3>Comparativo não encontrado</h3>
         <p>Execute <code>python scripts/build_dpo_cot_comparison.py</code> para gerar os dados.</p>
       </div>
     )
   }
-  if (!data) return <div className="empty-state"><div className="spinner" /></div>
+  if (!data) return <div className=”empty-state”><div className=”spinner” /></div>
 
   const GROUP_ICON = { dpo: Building2, cot: ShieldAlert }
 
   return (
     <div>
       {/* ===== UI de tela (oculta na impressão) ===== */}
-      <div className="no-print">
-        {/* Intro / contexto da referência */}
-        <div className="card" style={{ marginBottom: 18 }}>
-          <div className="card-header">
-            <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Award size={18} color="var(--cbm-red-700)" />
+      <div className=”no-print”>
+        <div className=”card” style={{ marginBottom: 18 }}>
+          <div className=”card-header”>
+            <span className=”card-title” style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Award size={18} color=”var(--cbm-red-700)” />
               Órgãos Operacionais — Referência CBMRO (Minuta de LOB)
             </span>
           </div>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
             Comparação dos órgãos equivalentes à <strong>DPO</strong> (Diretoria de Planejamento
-            Operacional) e ao <strong>COT</strong> (Comando de Operações Técnicas) da minuta de Lei
-            de Organização Básica do CBMRO, nos 27 CBMs. O casamento é <strong>por função</strong> —
-            a nomenclatura varia (COB, CAT etc.) — e o texto é transcrito <strong>verbatim</strong>.
-            Use <strong>“Comparar com RO”</strong> para o detalhe lado a lado de um estado, ou
-            <strong> “Exportar PDF”</strong> para o relatório por cargo/função com todos os estados.
+            Operacional) e ao <strong>COT</strong> (Comando de Operações Técnicas) da minuta de LOB
+            do CBMRO, nos 27 CBMs. Casamento <strong>por função</strong> — a nomenclatura varia
+            (COB, CAT etc.) — texto transcrito <strong>verbatim</strong>. Use{' '}
+            <strong>”Exportar PDF”</strong> para o relatório completo.
           </p>
         </div>
 
-        {/* Alternância DPO / COT */}
-        <div className="tabs" style={{ marginBottom: 16 }}>
+        <div className=”tabs” style={{ marginBottom: 16 }}>
           {data.groups.map(g => {
             const Icon = GROUP_ICON[g.key] || Building2
             return (
               <button
                 key={g.key}
                 className={`tab ${group === g.key ? 'active' : ''}`}
-                onClick={() => { setGroup(g.key); setCompareId(null) }}
+                onClick={() => setGroup(g.key)}
               >
                 <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                   <Icon size={14} /> {g.ref_abbr} — {g.title}
@@ -469,117 +488,37 @@ export default function OrgaosOperacionaisComparator() {
           })}
         </div>
 
-        {/* Descrição do grupo ativo */}
         {groupMeta && (
-          <div className="oc-group-desc" style={{ marginBottom: 16 }}>
-            <Info size={14} style={{ flexShrink: 0, marginTop: 2 }} color="var(--accent-blue)" />
+          <div className=”oc-group-desc” style={{ marginBottom: 16 }}>
+            <Info size={14} style={{ flexShrink: 0, marginTop: 2 }} color=”var(--accent-blue)” />
             <span>
               <strong>{groupMeta.ref_abbr} — {groupMeta.ref_name}:</strong> {groupMeta.description}
             </span>
           </div>
         )}
 
-        {/* Card de referência (oculto no modo lado a lado) */}
-        {referenceState && !compareTarget && (
-          <ReferenceCard state={referenceState} group={group} groupMeta={groupMeta} />
-        )}
+        <div className=”oc-toolbar”>
+          <span className=”oc-toolbar-info”>
+            <FileText size={15} color=”var(--text-muted)” />
+            {otherStates.length} estados comparados · referência CBMRO
+          </span>
+          <button className=”btn btn-primary” onClick={() => window.print()}>
+            <FileDown size={16} />
+            Exportar PDF — {groupMeta?.ref_abbr}
+          </button>
+        </div>
 
-        {compareTarget ? (
-          <SideBySide
-            referenceState={referenceState}
-            target={compareTarget}
-            group={group}
-            groupMeta={groupMeta}
-            note={compareTarget.notes?.[group]}
-            onClose={() => setCompareId(null)}
-          />
-        ) : (
-          <>
-            {/* Barra de ações: exportar PDF de todos os estados */}
-            <div className="oc-toolbar">
-              <span className="oc-toolbar-info">
-                <FileText size={15} color="var(--text-muted)" />
-                {otherStates.length} estados comparados · referência CBMRO
-              </span>
-              <button className="btn btn-primary" onClick={() => window.print()}>
-                <FileDown size={16} />
-                Exportar PDF — relatório por cargo ({groupMeta?.ref_abbr})
-              </button>
-            </div>
+        <MatrixTable
+          referenceState={referenceState}
+          otherStates={otherStates}
+          group={group}
+        />
 
-            {/* Tabela dos 26 estados (5 colunas, cabe na tela) */}
-            <div className="cargo-compare-wrapper oc-scroll">
-              <table className="cargo-compare-table oc-table">
-                <colgroup>
-                  <col style={{ width: '15%' }} />
-                  <col style={{ width: '21%' }} />
-                  <col style={{ width: '20%' }} />
-                  <col style={{ width: '26%' }} />
-                  <col style={{ width: '18%' }} />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th className="oc-col-cbm cc-corner">CBM</th>
-                    <th>Órgão equivalente</th>
-                    <th>Cargo / Função</th>
-                    <th>Atribuições (verbatim)</th>
-                    <th>Desdobramentos</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {otherStates.map(st => {
-                    const organs = st[group] || []
-                    const note = st.notes?.[group]
-
-                    if (organs.length === 0) {
-                      return (
-                        <tr key={st.id}>
-                          <td className="oc-col-cbm">
-                            <CbmCell st={st} onCompare={s => setCompareId(s.id)} />
-                          </td>
-                          <td colSpan={4} className="cc-notfound">
-                            <span style={{ display: 'flex', gap: 6, alignItems: 'flex-start' }}>
-                              <AlertCircle size={13} style={{ flexShrink: 0, marginTop: 2 }} />
-                              {note || 'Órgão equivalente não discriminado na legislação deste estado.'}
-                            </span>
-                          </td>
-                        </tr>
-                      )
-                    }
-
-                    return organs.map((organ, j) => (
-                      <tr key={`${st.id}-${j}`}>
-                        {j === 0 && (
-                          <td className="oc-col-cbm" rowSpan={organs.length}>
-                            <CbmCell st={st} note={note} onCompare={s => setCompareId(s.id)} />
-                          </td>
-                        )}
-                        <td>
-                          <OrganNameCell organ={organ} />
-                          {organ.subordinadoA && (
-                            <div className="oc-organ-subord">
-                              <span className="oc-organ-subord-label">Subordinação:</span>{' '}
-                              {renderFriendlyText(organ.subordinadoA)}
-                            </div>
-                          )}
-                        </td>
-                        <td><CargosCell cargos={organ.cargos} /></td>
-                        <td><List items={organAtribuicoes(organ)} /></td>
-                        <td><List items={organ.desdobramentos} /></td>
-                      </tr>
-                    ))
-                  })}
-                </tbody>
-              </table>
-            </div>
-
-            <p style={{ fontSize: 11.5, color: 'var(--text-muted)', marginTop: 12, lineHeight: 1.5 }}>
-              Fonte: legislação de organização básica / regimento de cada CBM. Linhas com várias
-              organizações indicam que a função se distribui por mais de um órgão (ex.: capital e
-              interior). Gerado por <code>scripts/build_dpo_cot_comparison.py</code>.
-            </p>
-          </>
-        )}
+        <p style={{ fontSize: 11.5, color: 'var(--text-muted)', marginTop: 12, lineHeight: 1.5 }}>
+          Fonte: legislação de organização básica / regimento de cada CBM. Estados com mais de uma
+          coluna têm a função distribuída em múltiplos órgãos (ex.: capital e interior). Gerado por{' '}
+          <code>scripts/build_dpo_cot_comparison.py</code>.
+        </p>
       </div>
 
       {/* ===== Relatório PDF (visível apenas na impressão) ===== */}
