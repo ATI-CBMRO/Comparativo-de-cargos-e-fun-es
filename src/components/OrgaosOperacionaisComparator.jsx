@@ -282,33 +282,113 @@ function MatrixTable({ referenceState, otherStates, group, wrapperRef }) {
   )
 }
 
+/* ── Tabela pareada: CBMRO × um estado (usada no modal) ── */
+function PairTable({ referenceState, targetState, group }) {
+  const isCot = group === 'cot'
+  const refOrgans = referenceState?.[group] || []
+  const stOrgans = targetState?.[group] || []
+  const note = targetState?.notes?.[group]
+
+  return (
+    <div className="oc-pair-wrapper">
+      <table className="oc-pair-table">
+        <colgroup>
+          <col className="oc-pair-col-label" />
+          <col className="oc-pair-col-ro" />
+          <col className="oc-pair-col-st" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th className="oc-pair-th-label">Campo</th>
+            <th className="oc-pair-th-ro">
+              <div className="cc-corp-head">
+                <span className="cc-corp-abbr ref">{referenceState?.abbreviation}</span>
+                <div>
+                  <div className="cc-corp-name">{referenceState?.name}</div>
+                  <div className="cc-corp-cbm">
+                    {referenceState?.cbm} · Referência
+                    {isCot && (
+                      <span className="oc-cot-note" title="No CBMRO, o COT é subordinado à DPO — estrutura única entre os 27 CBMs.">
+                        <Info size={10} /> COT ⊂ DPO
+                        <span className="oc-cot-tooltip">No CBMRO, o COT é subordinado à DPO — estrutura única entre os 27 CBMs.</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </th>
+            <th className="oc-pair-th-st">
+              <div className="cc-corp-head">
+                <span className="cc-corp-abbr">{targetState?.abbreviation}</span>
+                <div>
+                  <div className="cc-corp-name">{targetState?.name}</div>
+                  <div className="cc-corp-cbm">{targetState?.cbm}</div>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {stOrgans.length === 0 ? (
+            <tr>
+              <td className="oc-pair-td-label">Situação</td>
+              {refOrgans.length === 0
+                ? <td><span className="cc-empty">—</span></td>
+                : refOrgans.map((o, i) => <td key={i}>{MATRIX_ROWS[0].render(o)}</td>)
+              }
+              <td className="cc-notfound" style={{ verticalAlign: 'middle' }}>
+                <span style={{ display: 'flex', gap: 5, alignItems: 'flex-start', fontSize: 12 }}>
+                  <AlertCircle size={13} style={{ flexShrink: 0, marginTop: 2 }} />
+                  {note || 'Órgão equivalente não discriminado na legislação deste estado.'}
+                </span>
+              </td>
+            </tr>
+          ) : (
+            MATRIX_ROWS.map(row => (
+              <tr key={row.key}>
+                <td className="oc-pair-td-label">{row.label}</td>
+                {refOrgans.length === 0
+                  ? <td className="oc-pair-td-ro"><span className="cc-empty">—</span></td>
+                  : refOrgans.map((o, i) => (
+                      <td key={i} className="oc-pair-td-ro">{row.render(o)}</td>
+                    ))
+                }
+                {stOrgans.map((o, i) => (
+                  <td key={i} className="oc-pair-td-st">{row.render(o)}</td>
+                ))}
+              </tr>
+            ))
+          )}
+          {note && stOrgans.length > 0 && (
+            <tr>
+              <td className="oc-pair-td-label">Nota</td>
+              <td>—</td>
+              <td className="oc-psbs-note">{note}</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
 /* ── Modal fullscreen do comparativo ── */
 function OcModal({ isOpen, onClose, group, groupMeta, referenceState, otherStates }) {
-  const scrollerRef = useRef(null)
   const [activeIdx, setActiveIdx] = useState(0)
+  const bodyRef = useRef(null)
   const GroupIcon = group === 'cot' ? ShieldAlert : Building2
 
-  // Reseta posicao ao abrir ou trocar grupo
   useEffect(() => {
     if (isOpen) {
       setActiveIdx(0)
-      if (scrollerRef.current) scrollerRef.current.scrollLeft = 0
+      if (bodyRef.current) bodyRef.current.scrollTop = 0
     }
   }, [isOpen, group])
 
   function goTo(idx) {
     const clamped = Math.max(0, Math.min(idx, otherStates.length - 1))
     setActiveIdx(clamped)
-    const wrapper = scrollerRef.current
-    const th = document.getElementById(`oc-th-${otherStates[clamped].id}`)
-    if (!wrapper || !th) return
-    const wrapperRect = wrapper.getBoundingClientRect()
-    const thRect = th.getBoundingClientRect()
-    const stickyW = 148 + 240
-    wrapper.scrollTo({
-      left: wrapper.scrollLeft + thRect.left - wrapperRect.left - stickyW,
-      behavior: 'smooth',
-    })
+    if (bodyRef.current) bodyRef.current.scrollTop = 0
   }
 
   if (!isOpen) return null
@@ -354,7 +434,7 @@ function OcModal({ isOpen, onClose, group, groupMeta, referenceState, otherState
               key={s.id}
               className={`oc-modal-chip${idx === activeIdx ? ' active' : ''}`}
               onClick={() => goTo(idx)}
-              title={`${s.name} - ${s.cbm}`}
+              title={`${s.name} — ${s.cbm}`}
             >
               {s.abbreviation}
             </button>
@@ -369,13 +449,12 @@ function OcModal({ isOpen, onClose, group, groupMeta, referenceState, otherState
           </button>
         </div>
 
-        {/* Tabela */}
-        <div className="oc-modal-body">
-          <MatrixTable
+        {/* Tabela pareada CBMRO × estado ativo */}
+        <div className="oc-modal-body" ref={bodyRef}>
+          <PairTable
             referenceState={referenceState}
-            otherStates={otherStates}
+            targetState={st}
             group={group}
-            wrapperRef={scrollerRef}
           />
         </div>
       </div>
