@@ -1505,9 +1505,7 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   /* ── capa ── */
   .oc-print-cover {
     page-break-after: always !important;
-    display: flex !important; flex-direction: column;
-    height: 100vh; overflow: hidden; margin: 0; padding: 0;
-    box-sizing: border-box;
+    margin: 0; padding: 0;
   }
 
   /* Barra de cabeçalho — réplica do portal */
@@ -1539,9 +1537,9 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
 
   /* Área central */
   .oc-cover-body {
-    flex: 1; display: flex !important; flex-direction: column;
+    display: flex !important; flex-direction: column;
     align-items: center; justify-content: center;
-    text-align: center; padding: 48px 72px;
+    text-align: center; padding: 56px 72px 40px;
   }
   .oc-cover-label {
     font-size: 10px !important; letter-spacing: 3.5px; text-transform: uppercase;
@@ -1579,6 +1577,7 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
     padding: 12px 28px !important;
     display: flex !important; justify-content: space-between; align-items: center;
     font-size: 9px !important; color: #777 !important;
+    margin-top: 32px;
   }
   .oc-cover-footer strong { color: #111 !important; }
 
