@@ -276,9 +276,12 @@ function PrintCargosTable({ cargos }) {
             <td>{c.requisito || '—'}</td>
             <td>{c.subordinadoA || '—'}</td>
             <td>
-              {c.atribuicoes && c.atribuicoes.length > 0
-                ? c.atribuicoes.join(' ')
-                : '—'}
+              {!c.atribuicoes || c.atribuicoes.length === 0
+                ? '—'
+                : <ul style={{ margin: 0, paddingLeft: 14, fontSize: 9 }}>
+                    {c.atribuicoes.map((a, k) => <li key={k}>{a}</li>)}
+                  </ul>
+              }
             </td>
           </tr>
         ))}
