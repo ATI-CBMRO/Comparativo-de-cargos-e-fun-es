@@ -15,52 +15,6 @@ import {
      de LOB do CBMRO, com o comparativo nas demais legislações.
    ──────────────────────────────────────────────────────────── */
 
-function norm(s) {
-  return (s || '')
-    .normalize('NFKD').replace(/[̀-ͯ]/g, '')
-    .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
-}
-
-/* Casamento tolerante de cargos (mesma lógica do Comparativo de Cargos) */
-const STOP = new Set(['de', 'do', 'da', 'dos', 'das', 'e', 'o', 'a', 'ao', 'geral'])
-function canon(s) {
-  let x = norm(s)
-  x = x.replace(/^chefe (d[aeo] )?/, '')
-       .replace(/\bsubcomandante\b/g, 'subcomando')
-       .replace(/\bcomandante\b/g, 'comando')
-       .replace(/\bdiretor(a)?\b/g, 'diretoria')
-       .replace(/\bcoordenador(a)?\b/g, 'coordenadoria')
-  return x.replace(/\s+/g, ' ').trim()
-}
-function tokenSet(s) {
-  return new Set(norm(s).split(' ').filter(t => t && !STOP.has(t)))
-}
-function bestCargoMatch(refName, cargos) {
-  const rN = norm(refName), rC = canon(refName), rT = tokenSet(refName)
-  let canonM = null, best = null, bestScore = 0
-  for (const c of cargos) {
-    const n = norm(c.cargo)
-    if (n === rN) return c
-    if (!canonM && canon(c.cargo) === rC) canonM = c
-    const cT = tokenSet(c.cargo)
-    let shared = 0
-    for (const t of rT) if (cT.has(t)) shared++
-    if (shared >= 2) {
-      const cover = shared / Math.min(rT.size || 1, cT.size || 1)
-      const score = shared + cover
-      if (cover >= 0.6 && score > bestScore) { best = c; bestScore = score }
-    }
-  }
-  return canonM || best || null
-}
-function flattenStateCargos(state, group) {
-  const out = []
-  for (const o of (state[group] || [])) {
-    for (const c of (o.cargos || [])) out.push({ ...c, _organ: o.name, _abbr: o.abbreviation })
-  }
-  return out
-}
-
 /** Formata texto verbatim aplicando negrito a postos e termos de subordinação. */
 function renderFriendlyText(text) {
   if (!text) return <span className="cc-empty">—</span>
@@ -300,91 +254,158 @@ function SideBySide({ referenceState, target, group, groupMeta, note, onClose })
   )
 }
 
-/* ── Relatório PDF estruturado por cargo/função (RO × demais) ── */
+/* ── Subcomponentes exclusivos do relatório impresso ── */
+function PrintCargosTable({ cargos }) {
+  if (!cargos || cargos.length === 0) {
+    return <p style={{ fontSize: 10, color: '#888', fontStyle: 'italic' }}>Cargos não discriminados.</p>
+  }
+  return (
+    <table className="oc-print-table" style={{ marginTop: 6 }}>
+      <thead>
+        <tr>
+          <th style={{ width: '30%' }}>Cargo / Função</th>
+          <th style={{ width: '25%' }}>Requisito / Posto</th>
+          <th style={{ width: '25%' }}>Subordinação</th>
+          <th style={{ width: '20%' }}>Atribuições (resumo)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {cargos.map((c, i) => (
+          <tr key={i}>
+            <td>{c.cargo || '—'}</td>
+            <td>{c.requisito || '—'}</td>
+            <td>{c.subordinadoA || '—'}</td>
+            <td>
+              {c.atribuicoes && c.atribuicoes.length > 0
+                ? c.atribuicoes.join(' ')
+                : '—'}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+
+function PrintDesdobramentos({ items }) {
+  if (!items || items.length === 0) return null
+  return (
+    <div style={{ marginTop: 4, fontSize: 10 }}>
+      <strong>Desdobramentos:</strong>{' '}
+      <span style={{ color: '#444' }}>{items.join(' · ')}</span>
+    </div>
+  )
+}
+
+/* ── Relatório PDF — centrado no estado, dados curados diretos ── */
 function PrintReport({ referenceState, otherStates, group, groupMeta }) {
   if (!referenceState) return null
-  const refCargos = []
-  for (const o of (referenceState[group] || [])) {
-    for (const c of (o.cargos || [])) refCargos.push({ ...c, _organ: o.name })
-  }
-  const printDate = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+  const refOrgans = referenceState[group] || []
+  const printDate = new Date().toLocaleDateString('pt-BR', {
+    day: '2-digit', month: 'long', year: 'numeric',
+  })
 
   return (
     <div className="oc-print">
+      {/* Cabeçalho institucional */}
       <div className="oc-print-header">
         <img
           className="oc-print-emblem"
           src="/BrasaoCBMRO2D-COMPLETO.png"
-          onError={e => { if (!e.currentTarget.dataset.fb) { e.currentTarget.dataset.fb = '1'; e.currentTarget.src = '/brasao-cbmro.svg' } }}
+          onError={e => {
+            if (!e.currentTarget.dataset.fb) {
+              e.currentTarget.dataset.fb = '1'
+              e.currentTarget.src = '/brasao-cbmro.svg'
+            }
+          }}
           alt="Brasão CBMRO"
         />
         <div>
           <div className="oc-print-title">
-            Relatório Comparativo por Cargo/Função — {groupMeta?.ref_abbr} ({groupMeta?.ref_name})
+            Relatório Comparativo — {groupMeta?.ref_abbr} ({groupMeta?.ref_name})
           </div>
           <div className="oc-print-sub">
-            Corpos de Bombeiros Militares · Referência: minuta de Lei de Organização Básica do CBMRO ·
+            Corpos de Bombeiros Militares · Referência: minuta de LOB do CBMRO ·
             Portal de Legislação
           </div>
         </div>
-        <div className="oc-print-meta"><span>Emitido em</span><strong>{printDate}</strong></div>
+        <div className="oc-print-meta">
+          <span>Emitido em</span>
+          <strong>{printDate}</strong>
+        </div>
       </div>
 
       <p className="oc-print-intro">
-        Para cada cargo/função previsto na minuta de LOB do CBMRO (referência), apresenta-se o
-        cargo correspondente nas legislações dos demais 26 Corpos de Bombeiros Militares — casamento
-        por similaridade de nomenclatura/função. "Não localizado" indica ausência de cargo equivalente
-        discriminado na legislação curada do estado.
+        Comparativo do órgão equivalente à <strong>{groupMeta?.ref_abbr}</strong>{' '}
+        ({groupMeta?.ref_name}) nos 27 Corpos de Bombeiros Militares. Para cada estado,
+        são exibidos os cargos/funções, requisitos de posto e subordinação conforme a
+        legislação curada. "Órgão não discriminado" indica ausência de mapeamento na
+        legislação do estado.
       </p>
 
-      {refCargos.length === 0 ? (
-        <p>Nenhum cargo de referência discriminado para este grupo.</p>
-      ) : (
-        refCargos.map((rc, i) => (
-          <section className="oc-print-cargo" key={i}>
-            <h3 className="oc-print-cargo-title">{i + 1}. {rc.cargo}</h3>
-
-            <div className="oc-print-ref">
-              <div><strong>CBMRO (referência)</strong> — {rc._organ}</div>
-              {rc.requisito && <div><b>Requisito / posto:</b> {rc.requisito}</div>}
-              {rc.subordinadoA && <div><b>Subordinação:</b> {rc.subordinadoA}</div>}
-              {rc.atribuicoes?.length > 0 && (
-                <div>
-                  <b>Atribuições:</b>
-                  <ul>{rc.atribuicoes.map((a, k) => <li key={k}>{a}</li>)}</ul>
-                </div>
+      {/* ── Referência CBMRO ── */}
+      <section className="oc-print-cargo">
+        <h3 className="oc-print-cargo-title">
+          Referência — CBMRO · {groupMeta?.ref_abbr}
+        </h3>
+        {refOrgans.length === 0 ? (
+          <p>Órgão de referência não discriminado.</p>
+        ) : (
+          refOrgans.map((organ, i) => (
+            <div key={i} style={{ marginBottom: 12 }}>
+              <div>
+                <strong>Órgão:</strong> {organ.name}
+                {organ.abbreviation ? ` (${organ.abbreviation})` : ''}
+                {organ.legalRef ? ` · ${organ.legalRef}` : ''}
+              </div>
+              {organ.subordinadoA && (
+                <div><strong>Subordinação:</strong> {organ.subordinadoA}</div>
               )}
+              <PrintCargosTable cargos={organ.cargos} />
+              <PrintDesdobramentos items={organ.desdobramentos} />
             </div>
+          ))
+        )}
+      </section>
 
-            <table className="oc-print-table">
-              <thead>
-                <tr>
-                  <th style={{ width: '16%' }}>CBM</th>
-                  <th style={{ width: '24%' }}>Órgão</th>
-                  <th style={{ width: '24%' }}>Cargo / função correspondente</th>
-                  <th style={{ width: '20%' }}>Requisito / posto</th>
-                  <th style={{ width: '16%' }}>Subordinação</th>
-                </tr>
-              </thead>
-              <tbody>
-                {otherStates.map(st => {
-                  const m = bestCargoMatch(rc.cargo, flattenStateCargos(st, group))
-                  const firstOrgan = (st[group] && st[group][0]) || null
-                  return (
-                    <tr key={st.id}>
-                      <td><b>{st.abbreviation}</b> · {st.cbm}</td>
-                      <td>{m ? m._organ : (firstOrgan ? firstOrgan.name : '—')}</td>
-                      <td>{m ? m.cargo : <i className="oc-print-na">Não localizado</i>}</td>
-                      <td>{(m && m.requisito) || '—'}</td>
-                      <td>{(m && m.subordinadoA) || '—'}</td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table>
+      {/* ── Um estado por seção ── */}
+      {otherStates.map(st => {
+        const organs = st[group] || []
+        const note = st.notes?.[group]
+        return (
+          <section className="oc-print-cargo" key={st.id}>
+            <h3 className="oc-print-cargo-title">
+              {st.abbreviation} · {st.cbm} — {st.name}
+            </h3>
+
+            {organs.length === 0 ? (
+              <p style={{ fontStyle: 'italic', color: '#666' }}>
+                {note || 'Órgão equivalente não discriminado na legislação deste estado.'}
+              </p>
+            ) : (
+              organs.map((organ, j) => (
+                <div key={j} style={{ marginBottom: 12 }}>
+                  <div>
+                    <strong>Órgão:</strong> {organ.name}
+                    {organ.abbreviation ? ` (${organ.abbreviation})` : ''}
+                    {organ.legalRef ? ` · ${organ.legalRef}` : ''}
+                  </div>
+                  {organ.subordinadoA && (
+                    <div><strong>Subordinação:</strong> {organ.subordinadoA}</div>
+                  )}
+                  <PrintCargosTable cargos={organ.cargos} />
+                  <PrintDesdobramentos items={organ.desdobramentos} />
+                  {note && (
+                    <p style={{ fontSize: 10, color: '#555', marginTop: 4 }}>
+                      Nota: {note}
+                    </p>
+                  )}
+                </div>
+              ))
+            )}
           </section>
-        ))
-      )}
+        )
+      })}
     </div>
   )
 }
