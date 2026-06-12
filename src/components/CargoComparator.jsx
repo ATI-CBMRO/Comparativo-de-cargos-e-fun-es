@@ -7,7 +7,20 @@ import {
 /* ────────────────────────────────────────────────────────────
    Normalização e casamento de cargos (tolerante a variações)
    ──────────────────────────────────────────────────────────── */
-const STOP = new Set(['de', 'do', 'da', 'dos', 'das', 'e', 'o', 'a', 'ao', 'geral'])
+const STOP = new Set([
+  // artigos, preposições e partículas
+  'de', 'do', 'da', 'dos', 'das', 'e', 'o', 'a', 'ao', 'geral',
+  // títulos estruturais de cargo — presentes em quase todo nome, não distinguem função
+  'diretor', 'diretoria', 'diretora',
+  'comando', 'comandante', 'subcomandante',
+  'coordenador', 'coordenadoria', 'coordenadora',
+  'chefe', 'adjunto', 'adjunta',
+  'secao',       // seção → norm → secao
+  'nucleo',      // núcleo → norm → nucleo
+  'assessor', 'assessoria',
+  'gerente', 'gerencia',
+  'supervisor', 'supervisao',
+])
 
 function norm(s) {
   return (s || '')
