@@ -1,0 +1,625 @@
+{
+  "state_id": "ce",
+  "state_name": "Ceará",
+  "cbm_name": "Corpo de Bombeiros Militar do Ceará",
+  "cbm_abbreviation": "CBMCE",
+  "legal_source": "Lei nº 13.438, de 07 de janeiro de 2004",
+  "organs": {
+    "conselho-consultivo": {
+      "name": "Conselho Consultivo",
+      "abbreviation": "CC",
+      "category": "Órgão Colegiado",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 6–7",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 6 (Conselho Consultivo)",
+        "Art. 7 (Composição)"
+      ],
+      "atribuicoes": [
+        "O Conselho Consultivo é órgão colegiado de natureza consultiva que assessora o Comandante Geral em assuntos de alta relevância (Art. 6)"
+      ],
+      "desdobramentos": [
+        "Comandante Geral (Presidente)",
+        "Comandante Adjunto (Vice-presidente)",
+        "Coordenador Geral",
+        "Orientador da Célula de Logística",
+        "Coordenador da CAT",
+        "Coordenador Operacional",
+        "Orientador da Célula de Gestão e Formação",
+        "Secretário Executivo (1º Secretário)",
+        "Oficial Intermediário (2º Secretário)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Presidente do Conselho Consultivo",
+          "subordinadoA": "(órgão colegiado)",
+          "requisito": "Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessorar o Comandante Geral em assuntos de alta relevância",
+            "Decidir, em colegiado, sobre pessoal e legislação, inteligência, instrução e operações e disciplina"
+          ]
+        }
+      ],
+      "id": "conselho-consultivo"
+    },
+    "comando-geral-ce": {
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Superior",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 8",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 8 (Comandante Geral)"
+      ],
+      "atribuicoes": [
+        "O Comandante Geral é o responsável pelo comando e pela administração da Corporação (Art. 8)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel do Quadro de Oficiais Combatentes (CFO, CAO e CSBM ou equivalente)",
+          "desdobramentos": [
+            "Conselho Consultivo",
+            "Comandante Adjunto",
+            "Secretaria Executiva",
+            "Coordenadorias"
+          ],
+          "atribuicoes": [
+            "Responsável pelo comando e administração da Corporação",
+            "Estabelecer Normas Técnicas de Segurança Contra Incêndio, Pânico e Produtos Perigosos",
+            "Determinar afastamento de bombeiro militar incompatível com o cargo"
+          ]
+        }
+      ],
+      "id": "comando-geral-ce"
+    },
+    "comandante-adjunto-ce": {
+      "name": "Comandante Adjunto",
+      "abbreviation": "CA",
+      "category": "Gerência Superior",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 9",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 9 (Comandante Adjunto)"
+      ],
+      "atribuicoes": [
+        "O Comandante Adjunto substitui o Comandante Geral nos seus impedimentos (Art. 9 parágrafo único)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante Adjunto",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Coronel do Quadro de Oficiais Combatentes (CFO, CAO e CSBM ou equivalente)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituir o Comandante Geral em seus impedimentos"
+          ]
+        }
+      ],
+      "id": "comandante-adjunto-ce"
+    },
+    "secretaria-executiva-ce": {
+      "name": "Secretaria Executiva",
+      "abbreviation": "SE",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 11–12",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 11 (Secretaria Executiva)",
+        "Art. 12 (Competências)"
+      ],
+      "atribuicoes": [
+        "I - assessorar o Comandante Geral nos assuntos de controle interno, identificação e avaliação dos pontos críticos que possam ameaçar a comunidade cearense;",
+        "II - produzir informações estratégicas com vistas ao preparo e emprego do Corpo de Bombeiros Militar;",
+        "III - dar suporte ao Comando Geral nos assuntos de relações públicas envolvendo o público interno e externo;",
+        "IV - coordenar e supervisionar assuntos relacionados com a imprensa em geral;",
+        "V - assessorar o Comando Geral na doutrina e legislação da Corporação;",
+        "VI - coordenar as atividades relacionadas com a elaboração de leis, regulamentos e instruções normativas da Corporação;",
+        "VII - desempenhar as funções de apoio administrativo, comando de serviços, expediente e trabalho de secretaria do Comando Geral, incluindo correspondência, protocolo geral e boletim diário. (Art. 12 I–VII)"
+      ],
+      "desdobramentos": [
+        "Ouvidoria do CBMCE (exercida pela Secretaria Executiva, Art. 12 §1º)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Secretário Executivo",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessorar o Comandante Geral nas áreas operacionais e administrativas",
+            "Coordenar e supervisionar as atividades do Gabinete",
+            "Produzir informações estratégicas; coordenar a imprensa",
+            "Exercer as atribuições de ouvidoria"
+          ]
+        }
+      ],
+      "id": "secretaria-executiva-ce"
+    },
+    "assessoria-juridica-ce": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJur",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 13–14",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 13 (Assessoria Jurídica)",
+        "Art. 14 (Chefia e Competências)"
+      ],
+      "atribuicoes": [
+        "I - diligenciar sobre outros assuntos de juridicidade diversa dos que lhes forem incumbidos pelo Comandante Geral;",
+        "II - manter atualizada a legislação de interesse do CBMCE, acompanhando publicações no Diário Oficial do Estado, da União e da Justiça;",
+        "III - pronunciar-se em pareceres e informações, objetivando posicionamentos legais;",
+        "IV - coordenar e elaborar contratos, convênios e acordos. (Art. 14 I–IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria Jurídica",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Advogado civil de provimento em comissão",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenar os aspectos jurídicos da Corporação",
+            "Manter atualizada a legislação de interesse do CBMCE",
+            "Coordenar e elaborar contratos, convênios e acordos"
+          ]
+        }
+      ],
+      "id": "assessoria-juridica-ce"
+    },
+    "coordenadoria-atividades-tecnicas-ce": {
+      "name": "Coordenadoria de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Execução Programática",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 17 (Coordenadoria de Atividades Técnicas)"
+      ],
+      "atribuicoes": [
+        "I - gerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados;",
+        "II - desenvolver pesquisa científica e avaliar o desempenho operacional da Corporação;",
+        "III - analisar projetos de edificações, vistorias e pareceres técnicos;",
+        "IV - controlar, manter e manobrar hidrantes. (Art. 17 I–IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Atividades Técnicas",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Controle dos requisitos técnicos contra incêndios e projetos de edificações",
+            "Pesquisa científica e avaliação do desempenho operacional",
+            "Analisar projetos, vistorias e pareceres técnicos; controlar hidrantes"
+          ]
+        }
+      ],
+      "id": "coordenadoria-atividades-tecnicas-ce"
+    },
+    "coordenadoria-operacional-ce": {
+      "name": "Coordenadoria Operacional",
+      "abbreviation": "CO",
+      "category": "Execução Programática",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 18 (Coordenadoria Operacional)"
+      ],
+      "atribuicoes": [
+        "A Coordenadoria Operacional é responsável pela execução das operações bombeirísticas (Art. 18)"
+      ],
+      "desdobramentos": [
+        "Núcleo de Bombeiro Metropolitano",
+        "Núcleo de Bombeiro do Interior",
+        "Núcleo de Defesa Civil",
+        "Núcleo de Busca e Salvamento",
+        "Núcleo de Resgate e Emergência Pré-hospitalar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador Operacional",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [
+            "Núcleo de Bombeiro Metropolitano",
+            "Núcleo de Bombeiro do Interior",
+            "Núcleo de Defesa Civil",
+            "Núcleo de Busca e Salvamento",
+            "Núcleo de Resgate e Emergência Pré-hospitalar"
+          ],
+          "atribuicoes": [
+            "Responsável pela execução das operações bombeirísticas"
+          ]
+        }
+      ],
+      "id": "coordenadoria-operacional-ce"
+    },
+    "nucleo-bombeiro-metropolitano-ce": {
+      "name": "Núcleo de Bombeiro Metropolitano",
+      "abbreviation": "NBM",
+      "category": "Execução Programática",
+      "subordinadoA": "Coordenadoria Operacional",
+      "legalRef": "Art. 19",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 19 (Núcleo de Bombeiro Metropolitano)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Bombeiro Metropolitano é responsável pela execução das operações de bombeiro militar na região metropolitana, competindo-lhe o comando, controle e fiscalização das missões que lhe são atribuídas pelo Comandante Geral da Corporação (Art. 19)"
+      ],
+      "desdobramentos": [
+        "1º Grupamento de Incêndio (1º GB) — operações na região metropolitana",
+        "2º Grupamento de Incêndio (2º GB) — operações dentro de sua área jurisdicional",
+        "3º Grupamento de Incêndio (3º GB) — operações na região metropolitana"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Bombeiro Metropolitano",
+          "subordinadoA": "Coordenadoria Operacional",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes (Art. 19 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando, controle e fiscalização das missões operacionais na região metropolitana (Art. 19)"
+          ]
+        }
+      ],
+      "id": "nucleo-bombeiro-metropolitano-ce"
+    },
+    "nucleo-bombeiro-interior-ce": {
+      "name": "Núcleo de Bombeiro do Interior",
+      "abbreviation": "NBI",
+      "category": "Execução Programática",
+      "subordinadoA": "Coordenadoria Operacional",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 20 (Núcleo de Bombeiro do Interior)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Bombeiro do Interior é responsável pela execução das operações de Bombeiro Militar no Interior do Estado do Ceará, competindo-lhe o comando, controle e fiscalização das missões que lhe são atribuídas pelo Comandante Geral da Corporação (Art. 20)"
+      ],
+      "desdobramentos": [
+        "4º Grupamento de Incêndio (4º GB)",
+        "5º Grupamento de Incêndio (5º GB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Bombeiro do Interior",
+          "subordinadoA": "Coordenadoria Operacional",
+          "requisito": "Oficial Superior do Quadro de Combatentes (Art. 20 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando, controle e fiscalização das missões operacionais no interior do Estado (Art. 20)"
+          ]
+        }
+      ],
+      "id": "nucleo-bombeiro-interior-ce"
+    },
+    "nucleo-defesa-civil-ce": {
+      "name": "Núcleo de Defesa Civil",
+      "abbreviation": "NDC",
+      "category": "Execução Programática",
+      "subordinadoA": "Coordenadoria Operacional",
+      "legalRef": "Art. 21",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 21 (Núcleo de Defesa Civil)"
+      ],
+      "atribuicoes": [
+        "I - realizar a integração com a Secretaria da Ação Social e a Comunidade a fim de avaliar as situações de risco e aspectos preventivos;",
+        "II - planejar as atividades operacionais de Defesa Civil em parceria com a Secretaria da Ação Social. (Art. 21 I–II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Defesa Civil",
+          "subordinadoA": "Coordenadoria Operacional",
+          "requisito": "Oficial Superior do Quadro de Combatentes (Art. 21 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, fiscalização, controle e execução de atividades de Defesa Civil na fase de socorro (Art. 21)"
+          ]
+        }
+      ],
+      "id": "nucleo-defesa-civil-ce"
+    },
+    "nucleo-busca-salvamento-ce": {
+      "name": "Núcleo de Busca e Salvamento",
+      "abbreviation": "NBS",
+      "category": "Execução Programática",
+      "subordinadoA": "Coordenadoria Operacional",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 22 (Núcleo de Busca e Salvamento)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Busca e Salvamento é a unidade operacional responsável pelo serviço de busca, salvamento e proteção (Art. 22)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Busca e Salvamento",
+          "subordinadoA": "Coordenadoria Operacional",
+          "requisito": "Oficial do QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Serviço de busca, salvamento e proteção (Art. 22)"
+          ]
+        }
+      ],
+      "id": "nucleo-busca-salvamento-ce"
+    },
+    "nucleo-resgate-ce": {
+      "name": "Núcleo de Resgate e Emergência Pré-hospitalar",
+      "abbreviation": "NREPH",
+      "category": "Execução Programática",
+      "subordinadoA": "Coordenadoria Operacional",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 23 (Núcleo de Resgate e Emergência Pré-hospitalar)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Resgate e Emergência Pré-hospitalar é a unidade responsável pelo serviço de emergência médica pré-hospitalar (Art. 23)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Resgate",
+          "subordinadoA": "Coordenadoria Operacional",
+          "requisito": "Oficial do QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Serviço de emergência médica pré-hospitalar (Art. 23)"
+          ]
+        }
+      ],
+      "id": "nucleo-resgate-ce"
+    },
+    "coordenadoria-geral-ce": {
+      "name": "Coordenadoria Geral",
+      "abbreviation": "CGer",
+      "category": "Execução Instrumental",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 25 (Coordenadoria Geral)"
+      ],
+      "atribuicoes": [
+        "A Coordenadoria Geral é responsável pela fiscalização administrativa, financeira e controle interno da Corporação (Art. 25)"
+      ],
+      "desdobramentos": [
+        "Célula de Logística",
+        "Núcleo Financeiro",
+        "Célula de Gestão e Formação de Pessoas",
+        "Academia de Bombeiro Militar",
+        "Colégio Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Coronel do Quadro de Oficiais Combatentes",
+          "desdobramentos": [
+            "Célula de Logística",
+            "Núcleo Financeiro",
+            "Célula de Gestão e Formação de Pessoas"
+          ],
+          "atribuicoes": [
+            "Fiscalização administrativa, financeira e controle interno da Corporação",
+            "Substituto eventual do Comandante Adjunto"
+          ]
+        },
+        {
+          "cargo": "Chefe da Célula de Logística",
+          "subordinadoA": "Coordenador Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gerir conservação, reforma, ampliação e construção do patrimônio",
+            "Distribuir material às unidades; supervisionar a manutenção da frota"
+          ]
+        },
+        {
+          "cargo": "Chefe do Núcleo Financeiro",
+          "subordinadoA": "Coordenador Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gerenciar as contas e o acompanhamento orçamentário",
+            "Controlar a captação de recursos da Corporação"
+          ]
+        },
+        {
+          "cargo": "Chefe da Célula de Gestão e Formação de Pessoas",
+          "subordinadoA": "Coordenador Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [
+            "Academia de Bombeiro Militar",
+            "Colégio Militar"
+          ],
+          "atribuicoes": [
+            "Coordenar recrutamento, seleção, acompanhamento e controle de pessoal",
+            "Acompanhar promoções, classificação e movimentação"
+          ]
+        }
+      ],
+      "id": "coordenadoria-geral-ce"
+    },
+    "celula-logistica-ce": {
+      "name": "Célula de Logística",
+      "abbreviation": "CLog",
+      "category": "Execução Instrumental",
+      "subordinadoA": "Coordenadoria Geral",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 26 (Célula de Logística)"
+      ],
+      "atribuicoes": [
+        "I - gerir a conservação, reforma, ampliação e construção do patrimônio móvel e imóvel da Corporação;",
+        "II - fiscalizar, acompanhar, solicitar e distribuir o material necessário a todas as unidades da Corporação;",
+        "III - supervisionar a manutenção de toda a frota operacional e administrativa da Corporação;",
+        "IV - gerenciar as atividades de arquivo, protocolo e controle de pessoal. (Art. 26 I–IV)"
+      ],
+      "desdobramentos": [
+        "Núcleo Financeiro"
+      ],
+      "cargos": [
+        {
+          "cargo": "Orientador da Célula de Logística",
+          "subordinadoA": "Coordenadoria Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes (Art. 26 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Administração e suprimento de material de todas as classes; manutenção do patrimônio móvel e imóvel (Art. 26)"
+          ]
+        }
+      ],
+      "id": "celula-logistica-ce"
+    },
+    "nucleo-financeiro-ce": {
+      "name": "Núcleo Financeiro",
+      "abbreviation": "NF",
+      "category": "Execução Instrumental",
+      "subordinadoA": "Célula de Logística",
+      "legalRef": "Art. 27",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 27 (Núcleo Financeiro)"
+      ],
+      "atribuicoes": [
+        "I - gerenciar as contas da Corporação, utilizando instrumentos adequados de acompanhamento e execução orçamentária, objetivando controle financeiro;",
+        "II - assegurar o cumprimento dos compromissos decorrentes da execução orçamentária financeira;",
+        "III - intermediar contatos para liberação de recursos e para implantação das alterações orçamentárias, bem como pelos pagamentos de contas e do pessoal do Corpo de Bombeiros;",
+        "IV - controlar toda captação de recursos da Corporação, e atribuições de planejar, lançar, acompanhar, fiscalizar, coordenar e controlar as receitas das taxas de serviços;",
+        "V - gerenciar o acompanhamento e planejamento orçamentário e financeiro. (Art. 27 I–V)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo Financeiro",
+          "subordinadoA": "Célula de Logística",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes (Art. 27 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Atividades financeiras e de contabilidade da Corporação (Art. 27)"
+          ]
+        }
+      ],
+      "id": "nucleo-financeiro-ce"
+    },
+    "celula-gestao-pessoas-ce": {
+      "name": "Célula de Gestão e Formação de Pessoas",
+      "abbreviation": "CGFP",
+      "category": "Execução Instrumental",
+      "subordinadoA": "Coordenadoria Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 28 (Célula de Gestão e Formação de Pessoas)"
+      ],
+      "atribuicoes": [
+        "I - coordenar as atividades de recrutamento, seleção, acompanhamento, controle do pessoal ativo, inativo e servidores civis, bem como acompanhar as promoções, classificação e movimentação do pessoal;",
+        "II - acompanhar o trabalho do pessoal nos serviços de assistência religiosa e psicosocial;",
+        "III - planejar assuntos pertinentes à instrução e às operações do Corpo de Bombeiros;",
+        "IV - consolidar projetos, através da coleta de informações, pesquisas e experiências operacionais, marketing de serviços e recursos humanos;",
+        "V - propor as implantações e modificações administrativas, para todos os níveis da Corporação, de acordo com os preceitos de qualidade total, reengenharia, racionalização de meios e espaço, no sentido de modernizar, aumentar a produtividade e a qualidade administrativa operacional. (Art. 28 I–V)"
+      ],
+      "desdobramentos": [
+        "Academia de Bombeiro Militar",
+        "Colégio Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Orientador da Célula de Gestão e Formação de Pessoas",
+          "subordinadoA": "Coordenadoria Geral",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes (Art. 28 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, controle, ensino, execução, capacitação e fiscalização das atividades relacionadas ao pessoal (Art. 28)"
+          ]
+        }
+      ],
+      "id": "celula-gestao-pessoas-ce"
+    },
+    "academia-bombeiro-militar-ce": {
+      "name": "Academia de Bombeiro Militar",
+      "abbreviation": "ABM",
+      "category": "Execução Instrumental",
+      "subordinadoA": "Célula de Gestão e Formação de Pessoas",
+      "legalRef": "Art. 29",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 29 (Academia de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "I - gerir a formação da disciplina e hierarquia, orientação, supervisão e coordenação do Corpo Discente;",
+        "II - fiscalizar, avaliar e acompanhar os programas de ensino. (Art. 29 I–II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor da Academia de Bombeiro Militar",
+          "subordinadoA": "Célula de Gestão e Formação de Pessoas",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gerir a formação, disciplina e hierarquia; orientação e supervisão do Corpo Discente",
+            "Fiscalizar, avaliar e acompanhar os programas de ensino"
+          ]
+        }
+      ],
+      "id": "academia-bombeiro-militar-ce"
+    },
+    "colegio-militar-ce": {
+      "name": "Colégio Militar do Corpo de Bombeiros",
+      "abbreviation": "CMCB",
+      "category": "Execução Instrumental",
+      "subordinadoA": "Célula de Gestão e Formação de Pessoas",
+      "legalRef": "Art. 30",
+      "baseLegal": "Lei nº 13.438, de 07 de janeiro de 2004",
+      "artigosDeOrigem": [
+        "Art. 30 (Colégio Militar)"
+      ],
+      "atribuicoes": [
+        "I - orientar a formação integral dos alunos;",
+        "II - realizar o enquadramento militar compatível com a idade e a condição de aluno, em consonância com a Orientação Educacional do Colégio;",
+        "III - supervisionar, coordenar e controlar as atividades do Corpo Discente;",
+        "IV - planejar, programar, executar, controlar, supervisionar e orientar os serviços administrativos do Colégio;",
+        "V - direcionar os objetivos para os métodos e aprendizagem aplicada pelo corpo docente e acompanhamento do processo ensino-aprendizagem;",
+        "VI - planejar os assuntos relativos à comunicação social;",
+        "VII - acompanhar os trabalhos educativos desenvolvidos e os projetos técnicos para o aprimoramento educacional. (Art. 30 I–VII)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor do Colégio Militar",
+          "subordinadoA": "Célula de Gestão e Formação de Pessoas",
+          "requisito": "Oficial Superior do Quadro de Oficiais Combatentes (Art. 30 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Sistema de ensino da Corporação no Colégio Militar (Art. 30)"
+          ]
+        }
+      ],
+      "id": "colegio-militar-ce"
+    }
+  }
+}

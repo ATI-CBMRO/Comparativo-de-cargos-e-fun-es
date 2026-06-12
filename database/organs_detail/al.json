@@ -1,0 +1,900 @@
+{
+  "state_id": "al",
+  "state_name": "Alagoas",
+  "cbm_name": "Corpo de Bombeiros Militar de Alagoas",
+  "cbm_abbreviation": "CBMAL",
+  "legal_source": "Lei nº 6.212, de 26 de dezembro de 2000, regulamentada pelo Decreto nº 408, de 08 de novembro de 2001 (Regimento Interno)",
+  "organs": {
+    "cg-al": {
+      "name": "Comandante Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado / Secretário de Defesa Social",
+      "legalRef": "Art. 8º",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)",
+        "Art. 8º (Atribuições)"
+      ],
+      "atribuicoes": [
+        "Assessorar o Governador do Estado nos assuntos relacionados com as atividades bombeiro militar",
+        "Assessorar o Secretário de Defesa Social nos assuntos de Segurança Pública",
+        "Dirigir as atividades técnicas, operacionais e administrativas da Corporação",
+        "Fazer cumprir as leis, normas e regulamentos da Corporação",
+        "Baixar portarias e ordens de serviços",
+        "Aplicar penas disciplinares de sua alçada",
+        "Autorizar despesas, nos limites de sua competência",
+        "Submeter ao Governador do Estado e ao Secretário de Defesa Social os planos, estudos, programas",
+        "Exercer a supervisão superior dos órgãos de direção, de apoio e de execução",
+        "Desempenhar as funções de Coordenador Estadual de Defesa Civil"
+      ],
+      "desdobramentos": [
+        "Subcomandante Geral",
+        "Conselho de Políticas Estratégicas",
+        "Gabinete do Comandante Geral",
+        "Corregedoria Geral",
+        "Diretorias",
+        "Comando Operacional de Bombeiros"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Geral",
+          "subordinadoA": "Governador do Estado / Secretário de Defesa Social",
+          "requisito": "Oficial Superior do último posto (Coronel QOBM/COMB)",
+          "desdobramentos": [
+            "Subcomandante Geral",
+            "Conselho de Políticas Estratégicas",
+            "Gabinete do Comandante Geral",
+            "Corregedoria Geral",
+            "Diretorias",
+            "Comando Operacional de Bombeiros"
+          ],
+          "atribuicoes": [
+            "Assessorar o Governador do Estado nos assuntos relacionados com as atividades bombeiro militar e ações de defesa civil (Art. 8º, I)",
+            "Assessorar o Secretário de Defesa Social nos assuntos de Segurança Pública relacionados com a competência da Corporação (II)",
+            "Dirigir as atividades técnicas, operacionais e administrativas da Corporação (III)",
+            "Fazer cumprir as leis, normas e regulamentos da Corporação (IV)",
+            "Baixar portarias e ordens de serviços (V)",
+            "Aplicar penas disciplinares de sua alçada (VI)",
+            "Autorizar despesas, nos limites de sua competência (VII)",
+            "Submeter ao Governador e ao Secretário de Defesa Social os planos, estudos, programas, projetos e propostas para organização, funcionamento e atuação do CBM (VIII)",
+            "Exercer a supervisão superior dos órgãos de direção, de apoio e de execução, orientando e controlando seu funcionamento (IX)",
+            "Desempenhar as funções de Coordenador Estadual de Defesa Civil (X)",
+            "Desempenhar outras atribuições correlatas (XI)"
+          ]
+        }
+      ],
+      "id": "cg-al"
+    },
+    "scg-al": {
+      "name": "Subcomandante Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 9º",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)",
+        "Art. 9º (Atribuições)"
+      ],
+      "atribuicoes": [
+        "Responder pelo Comandante Geral em seus impedimentos eventuais",
+        "Exercer o controle disciplinar dos integrantes da Corporação",
+        "Apresentar propostas ou emitir pareceres sobre assuntos administrativos e operacionais",
+        "Coordenar e elaborar o relatório anual de atividades",
+        "Secundar o Comandante Geral na fiscalização das atividades",
+        "Coordenar as atividades, tarefas e trabalhos do Conselho de Políticas Estratégicas"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial Superior (Coronel/Tenente-Coronel QOBM/COMB)",
+          "desdobramentos": [
+            "Órgãos de direção, de apoio e de execução"
+          ],
+          "atribuicoes": [
+            "Responder pelo Comandante Geral em seus impedimentos eventuais (Art. 9º, I)",
+            "Assegurar-se que as ordens específicas estão sendo cumpridas, de acordo com os objetivos da Corporação (II)",
+            "Exercer o controle disciplinar dos integrantes da Corporação (III)",
+            "Apresentar propostas ou emitir pareceres sobre os assuntos administrativos e operacionais que devam ser apreciados pelo Comandante Geral (IV)",
+            "Determinar os implementos ao cumprimento das decisões do Conselho de Políticas Estratégicas (V)",
+            "Coordenar e elaborar o relatório anual de atividades do CBM/AL (VI)",
+            "Secundar o Comandante Geral na fiscalização das atividades da Corporação (VII)",
+            "Dar conhecimento aos órgãos de direção, de apoio e de execução das decisões tomadas pelo Comandante Geral (VIII)",
+            "Exercer outros encargos previstos em leis e regulamentos ou atribuídos pelo Comandante Geral (IX)",
+            "Dar conhecimento ao Comandante Geral dos fatos e atos a respeito dos quais tenha providenciado por iniciativa própria (X)",
+            "Coordenar as atividades, tarefas e trabalhos dos órgãos que integram o Conselho de Políticas Estratégicas (XI)"
+          ]
+        }
+      ],
+      "id": "scg-al"
+    },
+    "cpet-al": {
+      "name": "Conselho de Políticas Estratégicas",
+      "abbreviation": "CPE",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 10 e 11",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)",
+        "Art. 10 e 11 (Atribuições)"
+      ],
+      "atribuicoes": [
+        "Assessorar nos assuntos referentes ao planejamento, coordenação e fiscalização",
+        "Propor medidas necessárias ao aperfeiçoamento das atividades técnicas especializadas",
+        "Supervisionar, dirigir e coordenar os trabalhos da Corporação"
+      ],
+      "desdobramentos": [
+        "Comandante Geral",
+        "Subcomandante Geral",
+        "Chefe de Gabinete do Comandante Geral",
+        "Diretor de Recursos Humanos",
+        "Diretor de Material e Patrimônio",
+        "Diretor de Finanças",
+        "Diretor de Serviços Técnicos",
+        "Diretor da Policlínica",
+        "Corregedor Geral",
+        "Ajudante Geral",
+        "Comandante Operacional de Bombeiros"
+      ],
+      "cargos": [
+        {
+          "cargo": "Conselho de Políticas Estratégicas",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Colegiado (CG, SCG, Chefe de Gabinete, Diretores, Corregedor, Ajudante Geral e Cmt. Operacional)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento no planejamento, coordenação e fiscalização",
+            "Propor medidas de aperfeiçoamento das atividades técnicas especializadas"
+          ]
+        }
+      ],
+      "id": "cpet-al"
+    },
+    "cedec-al": {
+      "name": "Coordenadoria Estadual de Defesa Civil",
+      "abbreviation": "CEDEC",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 12 a 19",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)",
+        "Art. 12-19 (Atribuições)"
+      ],
+      "atribuicoes": [
+        "Promover, coordenar e supervisionar, no âmbito estadual, as ações de defesa civil",
+        "Mobilizar recursos humanos e materiais necessários às ações de defesa civil",
+        "Incentivar a criação e a implementação de Coordenadorias Municipais de Defesa Civil",
+        "Propor ao Governador a homologação de situação de emergência ou estado de calamidade pública",
+        "Coordenar e controlar a distribuição de suprimentos às populações atingidas"
+      ],
+      "desdobramentos": [
+        "Coordenador Estadual de Defesa Civil",
+        "Assessoria Técnica",
+        "Secretaria Executiva",
+        "Seção de Planejamento, Avaliação e Controle",
+        "Seção de Coordenação e Controle Operacional",
+        "Seção de Cadastro e Controle de Recursos",
+        "Seção Administrativa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador Estadual de Defesa Civil",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Exercer a coordenação geral das ações de defesa civil",
+            "Dirigir as atividades técnicas, administrativas e operacionais da CEDEC",
+            "Propor homologação de situação de emergência ou estado de calamidade pública"
+          ]
+        },
+        {
+          "cargo": "Secretário Executivo",
+          "subordinadoA": "Coordenador Estadual de Defesa Civil",
+          "requisito": "Tenente Coronel QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, coordenação, controle e execução das atribuições da CEDEC"
+          ]
+        }
+      ],
+      "id": "cedec-al"
+    },
+    "gabinete-al": {
+      "name": "Gabinete do Comandante Geral",
+      "abbreviation": "GAB",
+      "category": "Apoio ao Comando-Geral",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 7º, I, e",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Assistência ao Comandante Geral",
+        "Assessoramento ao Comandante Geral"
+      ],
+      "desdobramentos": [
+        "Chefia do Gabinete",
+        "Ajudância de Ordem do Comandante Geral",
+        "Assessoria de Inteligência e Contra-Inteligência",
+        "Assessoria de Relações Públicas e Comunicação Social",
+        "Secretaria Administrativa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete do Comando Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Ajudância de Ordens",
+            "Assessoria de Inteligência e Contra-Inteligência",
+            "Assessoria de Relações Públicas e Comunicação Social",
+            "Secretaria Administrativa"
+          ],
+          "atribuicoes": [
+            "Assistência e assessoramento direto ao Comandante Geral"
+          ]
+        },
+        {
+          "cargo": "Ajudante de Ordens do Comandante Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Capitão QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Assessoria de Inteligência e Contra-Inteligência",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Assessoria de Relações Públicas e Comunicação Social",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Subseção de Imprensa e Marketing",
+            "Subseção de Relações Públicas, Publicidade e Propaganda"
+          ],
+          "atribuicoes": [
+            "Direção das atividades de comunicação social"
+          ]
+        }
+      ],
+      "id": "gabinete-al"
+    },
+    "corregedoria-al": {
+      "name": "Corregedoria Geral",
+      "abbreviation": "COR",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, f",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Fiscalização disciplinar",
+        "Apuração de desvios de conduta"
+      ],
+      "desdobramentos": [
+        "Corregedor Geral",
+        "Subcorregedor Geral",
+        "Ouvidoria",
+        "Seção de Polícia Disciplinar",
+        "Seção de Polícia Judiciária Militar",
+        "Seção de Apoio Administrativo",
+        "Seção de Inteligência"
+      ],
+      "cargos": [
+        {
+          "cargo": "Corregedor Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Subcorregedoria",
+            "Ouvidoria",
+            "Seção de Polícia Disciplinar",
+            "Seção de Polícia Judiciária Militar",
+            "Seção de Apoio Administrativo",
+            "Seção de Inteligência"
+          ],
+          "atribuicoes": [
+            "Fiscalização disciplinar e apuração de desvios de conduta"
+          ]
+        },
+        {
+          "cargo": "Subcorregedor Geral",
+          "subordinadoA": "Corregedor Geral",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Ouvidor Geral",
+          "subordinadoA": "Corregedor Geral",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Sub-Ouvidor Geral",
+            "Assistente da Ouvidoria"
+          ],
+          "atribuicoes": [
+            "Ouvidoria da Corporação"
+          ]
+        },
+        {
+          "cargo": "Chefe da Seção de Polícia Disciplinar",
+          "subordinadoA": "Corregedor Geral",
+          "requisito": "1º Tenente QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Polícia Judiciária Militar",
+          "subordinadoA": "Corregedor Geral",
+          "requisito": "1º Tenente QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Inteligência",
+          "subordinadoA": "Corregedor Geral",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "corregedoria-al"
+    },
+    "drh-al": {
+      "name": "Diretoria de Recursos Humanos",
+      "abbreviation": "DRH",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, g",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Planejamento de recursos humanos",
+        "Controle de pessoal",
+        "Fiscalização de atividades de pessoal"
+      ],
+      "desdobramentos": [
+        "Seção de Seleção e Ingresso de RH",
+        "Seção de Cadastro, Avaliação, Controle e Movimentação",
+        "Seção de Desenvolvimento de RH",
+        "Seção de Promoções",
+        "Seção de Pagamento de Pessoal",
+        "Seção de Inativos e Pensionistas",
+        "Seção de Identificação",
+        "Seção de Expediente e Arquivo",
+        "Seção de Legislação"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Recursos Humanos",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Seção de Seleção e Ingresso",
+            "Seção de Cadastro, Avaliação, Controle e Movimentação",
+            "Seção de Desenvolvimento de RH",
+            "Seção de Promoções",
+            "Seção de Pagamento de Pessoal",
+            "Seção de Inativos e Pensionistas",
+            "Seção de Identificação",
+            "Seção de Expediente e Arquivo",
+            "Seção de Legislação"
+          ],
+          "atribuicoes": [
+            "Planejamento, controle e fiscalização das atividades de pessoal"
+          ]
+        },
+        {
+          "cargo": "Chefe da Seção de Seleção e Ingresso de RH",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Cadastro, Avaliação, Controle e Movimentação",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Desenvolvimento de RH",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Promoções",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Capitão QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Pagamento de Pessoal",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Major QOBM/ADM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Inativos e Pensionistas",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Major QOBM/ADM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Identificação",
+          "subordinadoA": "Diretor de Recursos Humanos",
+          "requisito": "Capitão QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "drh-al"
+    },
+    "dmp-al": {
+      "name": "Diretoria de Material e Patrimônio",
+      "abbreviation": "DMP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, h",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Controle de material",
+        "Controle de patrimônio",
+        "Planejamento logístico"
+      ],
+      "desdobramentos": [
+        "Seção de Aquisições e Gestão de Contratos e Convênios",
+        "Seção de Apoio a CPL",
+        "Seção de Administração da Frota",
+        "Seção de Cadastro, Controle e Alienação",
+        "Seção de Administração, Expediente e Arquivo",
+        "Seção de Estatística da DMP"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Material e Patrimônio",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Seção de Aquisições e Gestão de Contratos e Convênios",
+            "Seção de Apoio a CPL",
+            "Seção de Administração da Frota",
+            "Seção de Cadastro, Controle e Alienação",
+            "Seção de Administração, Expediente e Arquivo",
+            "Seção de Estatística"
+          ],
+          "atribuicoes": [
+            "Controle de material e patrimônio; planejamento logístico"
+          ]
+        },
+        {
+          "cargo": "Chefe da Seção de Aquisições e Gestão de Contratos e Convênios",
+          "subordinadoA": "Diretor de Material e Patrimônio",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Subseção de Gestão de Contratos e Convênios",
+            "Subseção de Aquisições"
+          ],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Cadastro, Controle e Alienação",
+          "subordinadoA": "Diretor de Material e Patrimônio",
+          "requisito": "Major QOBM/ADM",
+          "desdobramentos": [
+            "Subseção de Cadastro de Patrimônio",
+            "Subseção de Cadastro e Controle de Material Bélico"
+          ],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dmp-al"
+    },
+    "df-al": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, i",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Planejamento financeiro",
+        "Controle de finanças",
+        "Fiscalização de recursos orçamentários"
+      ],
+      "desdobramentos": [
+        "Seção de Administração Financeira",
+        "Seção de Contabilidade e Auditoria",
+        "Seção de Expediente e Arquivo",
+        "Tesouraria Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Seção de Administração Financeira",
+            "Seção de Contabilidade e Auditoria",
+            "Seção de Expediente e Arquivo",
+            "Tesouraria Geral"
+          ],
+          "atribuicoes": [
+            "Gestão orçamentária e financeira"
+          ]
+        },
+        {
+          "cargo": "Chefe da Seção de Administração Financeira",
+          "subordinadoA": "Diretor de Finanças",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [
+            "Subseção de Controle e Execução Orçamentária"
+          ],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Contabilidade e Auditoria",
+          "subordinadoA": "Diretor de Finanças",
+          "requisito": "Major QOBM/ADM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Tesoureiro Geral",
+          "subordinadoA": "Diretor de Finanças",
+          "requisito": "1º Tenente QOBM/ADM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "df-al"
+    },
+    "dst-al": {
+      "name": "Diretoria de Serviços Técnicos",
+      "abbreviation": "DST",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, j",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Planejamento de serviços técnicos",
+        "Controle técnico",
+        "Supervisão de atividades técnicas"
+      ],
+      "desdobramentos": [
+        "Seção de Estudos e Análises de Projetos",
+        "Seção de Testes, Vistorias e Pareceres",
+        "Seção de Perícias e Pesquisas",
+        "Seção de Hidrantes"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Seção de Estudos e Análises de Projetos",
+            "Seção de Testes, Vistorias e Pareceres",
+            "Seção de Perícias e Pesquisas",
+            "Seção de Hidrantes",
+            "Seção de Expediente e Arquivo"
+          ],
+          "atribuicoes": [
+            "Prevenção e segurança contra incêndio"
+          ]
+        },
+        {
+          "cargo": "Chefe da Seção de Estudos e Análises de Projetos",
+          "subordinadoA": "Diretor de Atividades Técnicas",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Testes, Vistorias e Pareceres",
+          "subordinadoA": "Diretor de Atividades Técnicas",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Perícias e Pesquisas",
+          "subordinadoA": "Diretor de Atividades Técnicas",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Hidrantes",
+          "subordinadoA": "Diretor de Atividades Técnicas",
+          "requisito": "1º Tenente QOBM/ADM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dst-al"
+    },
+    "policlinica-al": {
+      "name": "Diretoria da Policlínica",
+      "abbreviation": "POL",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, l",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Planejamento de saúde",
+        "Controle de atividades de saúde",
+        "Fiscalização de serviços médicos"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor (Centro de Assistência)",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Coronel QOBM/S",
+          "desdobramentos": [
+            "Subdiretor",
+            "Junta de Inspeção de Saúde",
+            "Serviço de Clínica Médica",
+            "Serviço Odontológico",
+            "Serviço de Enfermaria",
+            "Serviço de Farmácia",
+            "Serviço de Capelania",
+            "Serviço de Assistência Psicossocial"
+          ],
+          "atribuicoes": [
+            "Assistência e saúde do pessoal"
+          ]
+        },
+        {
+          "cargo": "Subdiretor",
+          "subordinadoA": "Diretor (Centro de Assistência)",
+          "requisito": "Tenente-Coronel QOBM/S",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Presidente da Junta de Inspeção de Saúde",
+          "subordinadoA": "Diretor (Centro de Assistência)",
+          "requisito": "Tenente-Coronel QOBM/S",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe do Serviço de Clínica Médica e Atendimento Ambulatorial",
+          "subordinadoA": "Diretor (Centro de Assistência)",
+          "requisito": "Major QOBM/S",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe do Serviço Odontológico",
+          "subordinadoA": "Diretor (Centro de Assistência)",
+          "requisito": "Major QOBM/S",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe do Serviço de Enfermaria",
+          "subordinadoA": "Diretor (Centro de Assistência)",
+          "requisito": "Tenente-Coronel QOBM/S",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe do Serviço de Capelania",
+          "subordinadoA": "Diretor (Centro de Assistência)",
+          "requisito": "Capitão QOBM/CAP",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "policlinica-al"
+    },
+    "ag-al": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AG",
+      "category": "Apoio",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º, I, m",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Funções administrativas do Comando Geral",
+        "Secretaria",
+        "Protocolo",
+        "Arquivo",
+        "Serviços gerais"
+      ],
+      "desdobramentos": [
+        "Secretaria Geral",
+        "Seção Administrativa",
+        "Seção de Comando e Serviço",
+        "Protocolo Geral",
+        "Arquivo Geral",
+        "Biblioteca Geral",
+        "Banda de Música"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante Geral",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Tenente-Coronel ou Capitão QOBM/COMB",
+          "desdobramentos": [
+            "Secretaria Geral",
+            "Seção Administrativa",
+            "Seção de Comando e Serviço",
+            "Protocolo Geral",
+            "Arquivo Geral",
+            "Biblioteca Geral",
+            "Banda de Música"
+          ],
+          "atribuicoes": [
+            "Funções administrativas do Comando Geral"
+          ]
+        },
+        {
+          "cargo": "Secretário Geral",
+          "subordinadoA": "Ajudante Geral",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Chefe da Seção de Comando e Serviço",
+          "subordinadoA": "Ajudante Geral",
+          "requisito": "Capitão QOBM/COMB",
+          "desdobramentos": [
+            "Sargenteação",
+            "Subseção de Segurança do QCG"
+          ],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Regente da Banda de Música",
+          "subordinadoA": "Ajudante Geral",
+          "requisito": "Major QOBM/MUS",
+          "desdobramentos": [
+            "Seção de Administração",
+            "Seção de Editoração e Arranjo",
+            "Seção de Bens e Patrimônio"
+          ],
+          "atribuicoes": []
+        }
+      ],
+      "id": "ag-al"
+    },
+    "cob-al": {
+      "name": "Comando Operacional de Bombeiros",
+      "abbreviation": "COB",
+      "category": "Execução",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 7º, III, a",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 7º (Estrutura Básica)"
+      ],
+      "atribuicoes": [
+        "Coordenação operacional",
+        "Execução das atividades-fins da Corporação"
+      ],
+      "desdobramentos": [
+        "Comando Operacional de Bombeiros da Região Metropolitana de Maceió",
+        "Comando Operacional de Bombeiros do Interior"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional de Bombeiros",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Tenente-Coronel QOBM/COMB",
+          "desdobramentos": [
+            "Seção de Planejamento e Avaliação Operacional",
+            "Seção de Administração",
+            "Centro de Operações e Comunicações"
+          ],
+          "atribuicoes": [
+            "Coordenação operacional e execução das atividades-fins"
+          ]
+        },
+        {
+          "cargo": "Chefe do Centro de Operações e Comunicações",
+          "subordinadoA": "Comandante Operacional de Bombeiros",
+          "requisito": "Major QOBM/COMB",
+          "desdobramentos": [
+            "Subseção de Rádio Operador e Despacho",
+            "Subseção de Operadores de Tele Atendimento"
+          ],
+          "atribuicoes": []
+        }
+      ],
+      "id": "cob-al"
+    },
+    "ubm-al": {
+      "name": "Unidades de Bombeiros Militar",
+      "abbreviation": "UBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 113; Art. 114 RI/CBMAL",
+      "baseLegal": "Decreto nº 408, de 08 de novembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 113 (Unidades Operacionais de Bombeiros)",
+        "Art. 114 (Comandante de Grupamento de Bombeiros Militar)"
+      ],
+      "atribuicoes": [
+        "I - planejar, coordenar, fiscalizar, controlar e executar as ações operacionais em suas áreas de atuação;",
+        "II - levantar e manter registros atualizados dos principais riscos existentes em sua área, desenvolvendo planos setoriais para prevenção e proteção;",
+        "III - coordenar, controlar, fiscalizar e executar a instrução de manutenção e adestramento da tropa;",
+        "IV - manter registro estatístico das ocorrências verificadas em sua área de atuação operacional;",
+        "V - efetuar a manutenção e manter registro dos bens móveis e imóveis que estiverem sob sua guarda;",
+        "VI - elaborar as Normas Gerais de Ação da UOp e remetê-las à aprovação do Comandante do COB;",
+        "VII - fiscalizar o cumprimento da legislação pertinente às suas atividades operacionais."
+      ],
+      "desdobramentos": [
+        "Grupamento de Bombeiros Militar (GBM)",
+        "Grupamento de Salvamento Aquático (GSA)",
+        "Grupamento de Socorro de Emergência (GSE)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Grupamento de Bombeiros Militar",
+          "subordinadoA": "Comando Operacional de Bombeiros",
+          "requisito": "Oficial QOBM/COMB",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - dirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação;",
+            "II - praticar os atos administrativos necessários ao perfeito funcionamento da UOp e de suas subunidades;",
+            "III - manter a tropa permanentemente adestrada e pronta para o emprego;",
+            "IV - comandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação dos Subgrupamentos;",
+            "V - desenvolver o espírito de iniciativa e camaradagem de seus subordinados;",
+            "VI - comunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos;",
+            "VII - controlar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade;",
+            "VIII - providenciar a manutenção dos bens patrimoniais sob sua guarda;",
+            "IX - elaborar e submeter à aprovação do Comandante do COB das Normas Gerais de Ação dos órgãos do Grupamento;",
+            "X - movimentar os oficiais e praças no âmbito dos respectivos Subgrupamentos;",
+            "XI - controlar e fiscalizar a execução, no âmbito das respectivas Subunidades Operacionais, dos planos e ordens superiores;",
+            "XII - elaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas Subunidades;",
+            "XIII - executar atos administrativos que lhes competirem, como integrante do sistema de administração de pessoal e material;",
+            "XIV - instaurar sindicância;",
+            "XV - exercer outros encargos que lhes forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes."
+          ]
+        }
+      ],
+      "id": "ubm-al"
+    }
+  }
+}

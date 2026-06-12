@@ -1,0 +1,756 @@
+{
+  "state_id": "rj",
+  "state_name": "Rio de Janeiro",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado do Rio de Janeiro",
+  "cbm_abbreviation": "CBMERJ",
+  "legal_source": "Lei nº 250, de 02 de julho de 1979",
+  "organs": {
+    "cg-rj": {
+      "name": "Comando-Geral",
+      "abbreviation": "CmtG",
+      "category": "Direção Geral",
+      "subordinadoA": "Secretaria de Estado de Segurança Pública",
+      "legalRef": "Arts. 2, 4, 10",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 2 (competências institucionais)",
+        "Art. 4 (Comandante-Geral)",
+        "Art. 10 (responsabilidade)"
+      ],
+      "atribuicoes": [
+        "Art. 2, I — realizar serviços de prevenção e extinção de incêndios;",
+        "Art. 2, II — realizar serviços de busca e salvamento;",
+        "Art. 2, III — realizar perícias de incêndio;",
+        "Art. 2, IV — prestar socorros nos casos de inundações, desabamentos ou catástrofes, sempre que haja ameaça de destruição de haveres, vítima ou pessoa em iminente perigo de vida;",
+        "Art. 2, V — estudar, analisar, planejar, exigir e fiscalizar todo o serviço de segurança contra incêndio do Estado;",
+        "Art. 2, VI — em caso de mobilização do Exército, com ele cooperar no serviço de Defesa Civil.",
+        "Art. 4 — A administração, o comando e o emprego da Corporação são da competência e responsabilidade do Comandante-Geral, assessorado e auxiliado pelos órgãos de direção.",
+        "Art. 10 — O Comandante-Geral é responsável pelo Comando e pela Administração da Corporação."
+      ],
+      "desdobramentos": [
+        "Estado-Maior-Geral (EMG)",
+        "Diretorias",
+        "Ajudância-Geral (AjG)",
+        "Comissões e Secretarias",
+        "Assessorias"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Secretário de Estado de Segurança Pública",
+          "requisito": "Coronel ou Tenente-Coronel do serviço ativo do Exército",
+          "desdobramentos": [
+            "Estado-Maior-Geral",
+            "Diretorias",
+            "Ajudância-Geral",
+            "Assessorias"
+          ],
+          "atribuicoes": [
+            "Responsabilidade pelo comando e administração da Corporação"
+          ]
+        }
+      ],
+      "id": "cg-rj"
+    },
+    "emg-rj": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Arts. 14-18",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 14 (EMG)",
+        "Art. 16 (Chefe do EMG)"
+      ],
+      "atribuicoes": [
+        "Art. 14 — O Estado-Maior-Geral é o órgão de direção geral, responsável, perante o Comandante-Geral, pelo estudo, planejamento, coordenação, fiscalização e controle de todas as atividades da Corporação, inclusive dos órgãos de direção setorial. É, ainda, o órgão central do sistema de planejamento administrativo, programação e orçamento. Elabora as diretrizes e ordens do comando que acionam os órgãos de direção setorial e os de execução no cumprimento de suas missões.",
+        "Art. 16, caput — O Chefe do Estado-Maior-Geral acumula as funções de Subcomandante da Corporação, sendo, pois, substituto eventual do Comandante-Geral nos impedimentos deste."
+      ],
+      "desdobramentos": [
+        "Chefe do EMG (acumula função de Subcomandante)",
+        "Subchefe do EMG",
+        "1ª Seção (BM/1) — pessoal e legislação",
+        "2ª Seção (BM/2) — assuntos civis",
+        "3ª Seção (BM/3) — instrução, operações e ensino",
+        "4ª Seção (BM/4) — logística",
+        "5ª Seção (BM/5) — assuntos civis",
+        "6ª Seção (BM/6) — planejamento administrativo e orçamentação",
+        "7ª Seção (BM/7) — serviço técnico"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior-Geral (Subcomandante da Corporação)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel BM, da escolha do Comandante-Geral e nomeado pelo Governador do Estado (Art. 17)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        },
+        {
+          "cargo": "Subchefe do Estado-Maior-Geral",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Oficial Superior BM do mesmo posto ou imediatamente abaixo ao do Chefe do EMG, nomeado pelo Comandante-Geral (Art. 18)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "emg-rj"
+    },
+    "ag-rj": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AjG",
+      "category": "Apoio",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Arts. 30-31",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 30 (Ajudância-Geral)",
+        "Art. 30 parágrafo único (atribuições)"
+      ],
+      "atribuicoes": [
+        "Art. 30, caput — A Ajudância-Geral tem a seu cargo as funções administrativas do Comando-Geral, considerada como uma Organização de Bombeiros-Militares (OBM), bem como algumas atividades de pessoal para a Corporação como um todo.",
+        "Art. 30, pú — trabalhos de secretaria incluindo correspondência, correio, protocolo-geral, arquivo-geral, boletim diário e outros;",
+        "Art. 30, pú — apoio de pessoal auxiliar (praças) a todos os órgãos do Comando-Geral;",
+        "Art. 30, pú — segurança do Quartel do Comando-Geral;",
+        "Art. 30, pú — supervisão e emprego da Banda de Música e Banda Marcial;",
+        "Art. 30, pú — serviços gerais do Quartel do Comando-Geral;",
+        "Art. 30, pú — serviço de embarque da Corporação."
+      ],
+      "desdobramentos": [
+        "Secretaria (AG/1)",
+        "Seção Administrativa (AG/2)",
+        "Seção de Embarque (AG/3)",
+        "Grupamento de Comando (GC)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Secretaria (AG/1)",
+            "Seção Administrativa (AG/2)",
+            "Seção de Embarque (AG/3)",
+            "Grupamento de Comando"
+          ],
+          "atribuicoes": [
+            "Funções administrativas do Comando-Geral; secretaria, protocolo e arquivo",
+            "Segurança do quartel, banda de música e embarque"
+          ]
+        }
+      ],
+      "id": "ag-rj"
+    },
+    "dp-rj": {
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 20 (Diretoria de Pessoal)"
+      ],
+      "atribuicoes": [
+        "Art. 20 — A Diretoria de Pessoal é o órgão de Direção Setorial do Sistema de Pessoal, incumbido do planejamento, execução, controle e fiscalização das atividades relacionadas com a classificação e movimentação de pessoal da ativa, cadastro e avaliação, direitos, deveres e incentivos, pessoal inativo e pensionistas, pessoal civil, seleção e ingresso e assistência social e religiosa."
+      ],
+      "desdobramentos": [
+        "Seção de Cadastro, Avaliação e Movimentação (DP/1)",
+        "Seção de Recrutamento (DP/2)",
+        "Seção de Identificação (DP/3)",
+        "Seção de Justiça e Disciplina (DP/4)",
+        "Seção de Inativos e Pensionistas (DP/5)",
+        "Seção de Expediente (DP/6)",
+        "Capelania (Cpl)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dp-rj"
+    },
+    "de-rj": {
+      "name": "Diretoria de Ensino",
+      "abbreviation": "DE",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 22 (Diretoria de Ensino)"
+      ],
+      "atribuicoes": [
+        "Art. 22 — A Diretoria de Ensino é o órgão de Direção Setorial do sistema de Ensino, incumbido de planejamento, coordenação, fiscalização e controle das atividades de formação, aperfeiçoamento e especialização de oficiais e praças BM do Corpo e, eventualmente, de civis ou oficiais e praças de outras Corporações."
+      ],
+      "desdobramentos": [
+        "Seção Técnica de Ensino (DE/1)",
+        "Seção de Formação (DE/2)",
+        "Seção de Especialização e Aperfeiçoamento (DE/3)",
+        "Seção de Administração (DE/4)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "de-rj"
+    },
+    "df-rj": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 24 (Diretoria de Finanças)"
+      ],
+      "atribuicoes": [
+        "Art. 24 — A Diretoria de Finanças é o órgão de Direção Setorial do sistema Financeiro, incumbido de realizar as atividades específicas e assessorar o Comandante-Geral na supervisão das atividades financeiras dos órgãos da Corporação e na distribuição de recursos orçamentários, de acordo com o planejamento estabelecido."
+      ],
+      "desdobramentos": [
+        "Seção de Administração Financeira (DF/1)",
+        "Seção de Contabilidade (DF/2)",
+        "Seção de Auditoria (DF/3)",
+        "Seção de Expediente (DF/4)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "df-rj"
+    },
+    "dal-rj": {
+      "name": "Diretoria de Apoio Logístico",
+      "abbreviation": "DAL",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 26 (Diretoria de Apoio Logístico)"
+      ],
+      "atribuicoes": [
+        "Art. 26 — A Diretoria de Apoio Logístico é o órgão de Direção Setorial do Sistema Logístico, incumbido do planejamento, coordenação, fiscalização e controle das necessidades de apoio de saúde, de suprimento e de manutenção; realizará essas mesmas atividades no que se refere a obras."
+      ],
+      "desdobramentos": [
+        "Seção de Suprimento (DAL/1)",
+        "Seção de Manutenção (DAL/2)",
+        "Seção de Saúde (DAL/3)",
+        "Seção de Patrimônio (DAL/4)",
+        "Seção de Expediente (DAL/5)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Apoio Logístico",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dal-rj"
+    },
+    "dst-rj": {
+      "name": "Diretoria de Serviços Técnicos",
+      "abbreviation": "DST",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 28 (Diretoria de Serviços Técnicos)"
+      ],
+      "atribuicoes": [
+        "Art. 28 — A Diretoria de Serviços Técnicos é o órgão de Direção Setorial do Sistema de Engenharia de Segurança, incumbido de estudar, analisar, planejar, exigir e fiscalizar as atividades atinentes à segurança contra incêndio e pânico, proceder a exame de plantas e a perícias; realizar testes de incombustibilidade; realizar vistorias e emitir pareceres, com autoridade para notificar, multar e interditar, na forma da legislação específica."
+      ],
+      "desdobramentos": [
+        "Seção de Estudos e Projetos (DST/1)",
+        "Seção de Perícias e Testes (DST/2)",
+        "Seção de Vistorias e Pareceres (DST/3)",
+        "Seção de Hidrantes (DST/4)",
+        "Seção de Expediente (DST/5)",
+        "Laboratório Químico (LQ)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Serviços Técnicos",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dst-rj"
+    },
+    "css-rj": {
+      "name": "Centro de Serviço Social",
+      "abbreviation": "CSS",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Pessoal",
+      "legalRef": "Art. 37",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 37 (Centro de Serviço Social)"
+      ],
+      "atribuicoes": [
+        "Art. 37, pú — O Centro de Serviço Social destina-se a prestar assistência social aos integrantes da Corporação, especialmente no que diz respeito a moradia, educação, empréstimos, transportes, recreações, justiça, pensões e seguros."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Serviço Social",
+          "subordinadoA": "Diretor de Pessoal",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "css-rj"
+    },
+    "csbm": {
+      "name": "Curso Superior de Bombeiro-Militar",
+      "abbreviation": "CSBM",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino",
+      "legalRef": "Art. 39 § 1º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 39 § 1º (CSBM)"
+      ],
+      "atribuicoes": [
+        "Art. 39, § 1º — O Curso Superior de Bombeiro-Militar destina-se a aprimorar os conhecimentos técnico-profissionais e culturais dos oficiais superiores da Corporação, desenvolvendo a aptidão em trabalhos de Estado-Maior, acrescer conhecimentos relativos ao exercício de chefia, de forma a habilitá-los ao desempenho das funções mais elevadas do Corpo."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor do CSBM",
+          "subordinadoA": "Diretor de Ensino",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csbm"
+    },
+    "esfao": {
+      "name": "Escola de Formação e Aperfeiçoamento de Oficiais",
+      "abbreviation": "EsFAO",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino",
+      "legalRef": "Art. 39 § 2º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 39 § 2º (EsFAO)"
+      ],
+      "atribuicoes": [
+        "Art. 39, § 2º — A Escola de Formação e Aperfeiçoamento de Oficiais destina-se à formação, ao aperfeiçoamento e à especialização dos oficiais do Corpo e, eventualmente, de oficiais de outras Corporações.",
+        "Art. 39, § 2º, a — Curso de Aperfeiçoamento de Oficiais (CAO);",
+        "Art. 39, § 2º, b — Curso de Especialização em Prevenção de Incêndio (CEPrevI);",
+        "Art. 39, § 2º, c — Curso de Formação de Oficiais (CFO)."
+      ],
+      "desdobramentos": [
+        "Curso de Aperfeiçoamento de Oficiais (CAO)",
+        "Curso de Especialização em Prevenção de Incêndio (CEPrevI)",
+        "Curso de Formação de Oficiais (CFO)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor da EsFAO",
+          "subordinadoA": "Diretor de Ensino",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "esfao"
+    },
+    "cfap-rj": {
+      "name": "Centro de Formação e Aperfeiçoamento de Praças",
+      "abbreviation": "CFAP",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino",
+      "legalRef": "Art. 39 § 3º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 39 § 3º (CFAP)"
+      ],
+      "atribuicoes": [
+        "Art. 39, § 3º — O Centro de Formação e Aperfeiçoamento de Praças destina-se à formação, ao adestramento, ao aperfeiçoamento e à especialização das praças do Corpo e, eventualmente, de praças de outras Corporações.",
+        "Art. 39, § 3º, a — Curso de Habilitação do Oficialato Administrativo e Especialista (CHOAE);",
+        "Art. 39, § 3º, b — Curso de Aperfeiçoamento de Sargentos (CAS);",
+        "Art. 39, § 3º, c — Curso de Formação de Sargentos (CFS);",
+        "Art. 39, § 3º, d — Curso de Formação de Cabos (CFC);",
+        "Art. 39, § 3º, e — Curso de Formação de Soldados (CFSd)."
+      ],
+      "desdobramentos": [
+        "Curso de Habilitação do Oficialato Administrativo e Especialista (CHOAE)",
+        "Curso de Aperfeiçoamento de Sargentos (CAS)",
+        "Curso de Formação de Sargentos (CFS)",
+        "Curso de Formação de Cabos (CFC)",
+        "Curso de Formação de Soldados (CFSd)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor do CFAP",
+          "subordinadoA": "Diretor de Ensino",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "cfap-rj"
+    },
+    "pagc": {
+      "name": "Pagadoria Central",
+      "abbreviation": "PagC",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Finanças",
+      "legalRef": "Art. 41",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 41 (Pagadoria Central)"
+      ],
+      "atribuicoes": [
+        "Art. 41, pú — A Pagadoria Central é o órgão de Apoio incumbido de proceder aos recebimentos e pagamentos relativos ao movimento financeiro da Corporação, efetuando, ainda, o controle de suas contas bancárias."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Pagadoria Central",
+          "subordinadoA": "Diretor de Finanças",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "pagc"
+    },
+    "csm-mop": {
+      "name": "Centro de Suprimento e Manutenção — Material Operacional",
+      "abbreviation": "CSM/MOp",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 1º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 1º (CSM/MOp)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 1º — O Centro de Suprimento e Manutenção de Material Operacional é o órgão de Apoio incumbido da obtenção, da estocagem e da distribuição dos suprimentos específicos e da execução da manutenção do armamento e do material especializado de bombeiro."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do CSM/MOp",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csm-mop"
+    },
+    "csm-mmoto": {
+      "name": "Centro de Suprimento e Manutenção — Material Motorizado",
+      "abbreviation": "CSM/MMoto",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 2º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 2º (CSM/MMoto)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 2º — O Centro de Suprimento e Manutenção de Material Motorizado é o órgão de Apoio incumbido do suprimento e da manutenção das viaturas e de todo o equipamento motorizado da Corporação, bem como da obtenção e da estocagem de todo material necessário a esse fim."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do CSM/MMoto",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csm-mmoto"
+    },
+    "csm-int": {
+      "name": "Centro de Suprimento e Manutenção — Intendência",
+      "abbreviation": "CSM/Int",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 3º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 3º (CSM/Int)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 3º — O Centro de Suprimento e Manutenção de Intendência é o órgão de Apoio incumbido da obtenção, do armazenamento e da distribuição dos suprimentos específicos e da execução da manutenção do material de intendência; tem, igualmente, a seu cargo o apoio de subsistência à Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do CSM/Int",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csm-int"
+    },
+    "csm-o": {
+      "name": "Centro de Suprimento e Manutenção — Obras",
+      "abbreviation": "CSM/O",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 4º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 4º (CSM/O)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 4º — O Centro de Suprimento e Manutenção de Obras é o órgão de Apoio incumbido de atender às necessidades de obras e reparos nos aquartelamentos e edifícios da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do CSM/O",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csm-o"
+    },
+    "csm-mtel": {
+      "name": "Centro de Suprimento e Manutenção — Telecomunicações",
+      "abbreviation": "CSM/MTel",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 5º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 5º (CSM/MTel)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 5º — O Centro de Suprimento e Manutenção de Material de Telecomunicações é o órgão de Apoio incumbido da obtenção, da estocagem, da distribuição e da execução da manutenção do material de comunicações."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do CSM/MTel",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csm-mtel"
+    },
+    "hcb": {
+      "name": "Hospitais do Corpo de Bombeiros",
+      "abbreviation": "HCB",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 6º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 6º (Hospitais e Policlínicas)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 6º — Os Hospitais e as Policlínicas são os órgãos de Apoio incumbidos de prestar assistência médica, odontológica, farmacêutica e laboratorial ao pessoal da Corporação, da ativa e inativas, seus dependentes e pensionistas, assim como efetuar as inspeções de saúde e demais procedimentos de perícia médica que se tornem necessários."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor do Hospital do CB",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM de Saúde (QOS)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "hcb"
+    },
+    "polcb": {
+      "name": "Policlínicas do Corpo de Bombeiros",
+      "abbreviation": "PolCB",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 43 § 6º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 43 § 6º (Hospitais e Policlínicas)"
+      ],
+      "atribuicoes": [
+        "Art. 43, § 6º — Os Hospitais e as Policlínicas são os órgãos de Apoio incumbidos de prestar assistência médica, odontológica, farmacêutica e laboratorial ao pessoal da Corporação, da ativa e inativas, seus dependentes e pensionistas, assim como efetuar as inspeções de saúde e demais procedimentos de perícia médica que se tornem necessários."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Policlínica do CB",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Oficial BM de Saúde (QOS)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "polcb"
+    },
+    "cba": {
+      "name": "Comando de Bombeiros de Área",
+      "abbreviation": "CBA",
+      "category": "Execução",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 44 § 1º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 44 § 1º (Comando de Bombeiros de Área)"
+      ],
+      "atribuicoes": [
+        "Art. 44, § 1º — Os Comandos de Bombeiros da Área, diretamente subordinados ao Comando-Geral, são responsáveis pelo planejamento, supervisão e execução das missões específicas de bombeiro-militar, na respectiva área, de acordo com as diretrizes e ordens do Comando-Geral."
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Estado-Maior (B/1 a B/5)",
+        "Centro de Operações"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Bombeiros de Área",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "cba"
+    },
+    "cocb-rj": {
+      "name": "Centro de Operações do Corpo de Bombeiros",
+      "abbreviation": "COCB",
+      "category": "Execução",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 44 § 3º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 44 § 3º (COCB)"
+      ],
+      "atribuicoes": [
+        "Art. 44, § 3º — O Centro de Operações do Corpo de Bombeiros é um órgão de Execução, subordinado ao Comandante-Geral, equipado com meios variados de comunicações, destinado a controlar e coordenar a atuação das Unidades Operacionais da Corporação e será organizado de forma a possibilitar ligações eficientes com todas as Unidades Operacionais da Corporação, e com os órgãos responsáveis pela segurança do Estado do Rio de Janeiro."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do COCB",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "cocb-rj"
+    },
+    "gi": {
+      "name": "Grupamento de Incêndio",
+      "abbreviation": "GI",
+      "category": "Execução",
+      "subordinadoA": "Comando de Bombeiros de Área",
+      "legalRef": "Art. 45 § 1º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 45 § 1º (Grupamento de Incêndio)"
+      ],
+      "atribuicoes": [
+        "Art. 45, § 1º — Unidade de Extinção de Incêndio Terrestre é a que tem a seu cargo, dentro do território de sua responsabilidade, as missões de extinção de incêndios e suas decorrências."
+      ],
+      "desdobramentos": [
+        "Subgrupamentos de Incêndio (S/GI)",
+        "Subgrupamentos de Incêndio Independentes (S/GI-Ind)",
+        "Destacamentos de Bombeiros"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Grupamento de Incêndio",
+          "subordinadoA": "Comando de Bombeiros de Área",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "gi"
+    },
+    "gbs-rj": {
+      "name": "Grupamento de Busca e Salvamento",
+      "abbreviation": "GBS",
+      "category": "Execução",
+      "subordinadoA": "Comando de Bombeiros de Área",
+      "legalRef": "Art. 45 § 2º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 45 § 2º (Grupamento de Busca e Salvamento)"
+      ],
+      "atribuicoes": [
+        "Art. 45, § 2º — Unidades de Busca e Salvamento é a que tem a seu cargo, dentro da área do Estado do Rio de Janeiro, as missões de busca e salvamento, tanto terrestre, como aquática."
+      ],
+      "desdobramentos": [
+        "Subgrupamentos de Busca e Salvamento (S/GBS)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Grupamento de Busca e Salvamento",
+          "subordinadoA": "Comando de Bombeiros de Área",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "gbs-rj"
+    },
+    "gmar": {
+      "name": "Grupamento Marítimo",
+      "abbreviation": "Gmar",
+      "category": "Execução",
+      "subordinadoA": "Comando de Bombeiros de Área",
+      "legalRef": "Art. 45 § 3º",
+      "baseLegal": "Lei nº 250, de 02 de julho de 1979",
+      "artigosDeOrigem": [
+        "Art. 45 § 3º (Grupamento Marítimo)"
+      ],
+      "atribuicoes": [
+        "Art. 45, § 3º — Unidade de Extinção de Incêndio e Salvamento Marítimo é a que tem a seu cargo as missões de extinção de incêndios, buscas e salvamento em embarcações, ilhas e orla marítima do Estado do Rio de Janeiro."
+      ],
+      "desdobramentos": [
+        "Subgrupamentos Marítimos (S/Gmar)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Grupamento Marítimo",
+          "subordinadoA": "Comando de Bombeiros de Área",
+          "requisito": "Oficial BM",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "gmar"
+    }
+  }
+}

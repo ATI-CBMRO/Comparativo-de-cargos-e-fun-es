@@ -1,0 +1,991 @@
+{
+  "state_id": "pe",
+  "state_name": "Pernambuco",
+  "cbm_name": "Corpo de Bombeiros Militar de Pernambuco",
+  "cbm_abbreviation": "CBMPE",
+  "legal_source": "Lei nº 15.187, de 12 de dezembro de 2013",
+  "organs": {
+    "cg-pe": {
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Secretário de Defesa Social",
+      "legalRef": "Art. 10",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 10 (Comandante Geral)"
+      ],
+      "atribuicoes": [
+        "O Comandante Geral do CBMPE é o responsável pelo comando, administração e emprego da Corporação (Art. 10)"
+      ],
+      "desdobramentos": [
+        "Comandante Geral (CG)",
+        "Subcomandante Geral (SCG)",
+        "Conselho de Políticas e Estratégias (CPE)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Geral",
+          "subordinadoA": "Secretário de Defesa Social",
+          "requisito": "Oficial do Quadro de Combatentes (QOC) da ativa e do último posto, nomeado pelo Governador do Estado (Art. 10 §1º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pelo comando, administração e emprego da Corporação (Art. 10)"
+          ]
+        }
+      ],
+      "id": "cg-pe"
+    },
+    "scg-pe": {
+      "name": "Subcomandante Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 11, 93",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 11 (Subcomandante Geral)",
+        "Art. 93 (Atribuições)"
+      ],
+      "atribuicoes": [
+        "I - responder pelo expediente do Comando Geral, em impedimentos eventuais do Comandante Geral;",
+        "II - exercer interinamente o cargo de Comandante Geral da Corporação em: a) impedimento temporário por mais de 30 dias; b) afastamento do território nacional; e c) impedimento definitivo até nomeação do novo Comandante Geral;",
+        "III - zelar pela conduta civil e profissional do pessoal do CBMPE;",
+        "IV - apresentar propostas e emitir pareceres sobre os assuntos administrativos e operacionais que devem ser apreciados pelo Comandante Geral;",
+        "V - secundar o Comandante Geral na fiscalização das atividades do CBMPE;",
+        "VI - propor ao Comandante Geral as alterações necessárias à melhoria da eficiência dos serviços prestados pela Corporação;",
+        "VII - supervisionar, dirigir e coordenar os trabalhos do Comando Geral da Corporação, harmonizando e fiscalizando as atividades de todos os órgãos de direção, órgãos de apoio e órgãos de execução;",
+        "VIII - zelar pelo fiel cumprimento das decisões do Comandante Geral, dando pleno conhecimento aos órgãos da Corporação e verificando seu fiel cumprimento; e",
+        "IX - exercer outros encargos que lhe sejam atribuídos pela legislação vigente. (Art. 93 I–IX)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial combatente da ativa do último posto",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituto imediato do Comandante Geral",
+            "Precedência funcional e hierárquica sobre demais oficiais"
+          ]
+        }
+      ],
+      "id": "scg-pe"
+    },
+    "cpe-pe": {
+      "name": "Conselho de Políticas e Estratégias",
+      "abbreviation": "CPE",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 12–13",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 12 (CPE)",
+        "Art. 13 (Composição)"
+      ],
+      "atribuicoes": [
+        "O CPE é o órgão responsável pela formulação da doutrina geral de emprego da Corporação, de forma a viabilizar as políticas, estratégias, diretrizes e ordens estabelecidas pelo Comandante Geral e que acionam todos os demais órgãos no cumprimento de suas missões (Art. 12)"
+      ],
+      "desdobramentos": [
+        "Presidente: Comandante Geral",
+        "Subcomandante Geral",
+        "Membros: Diretores setoriais e diretores executivos",
+        "Secretaria: Gabinete do Comandante Geral (Art. 13 §1º)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Presidente do CPE",
+          "subordinadoA": "—",
+          "requisito": "Comandante Geral (Art. 13 I)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Presidir o Conselho de Políticas e Estratégias (Art. 13)"
+          ]
+        }
+      ],
+      "id": "cpe-pe"
+    },
+    "dgp-pe": {
+      "name": "Diretoria de Gestão de Pessoal",
+      "abbreviation": "DGP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 15, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 15 (DGP)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DGP incumbe-se: I - do planejamento, da normatização, do controle e da fiscalização das atividades relacionadas com a gestão de pessoal; II - das atividades de formação, especialização e aperfeiçoamento; e III - da prestação de assistência social aos integrantes do CBMPE e seus dependentes. (Art. 15 I–III)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Divisão de Controle de Pessoal (DCP)",
+        "Divisão de Formação, Especialização e Aperfeiçoamento (DFEA)",
+        "Divisão de Inativos e Pensionistas (DIP)",
+        "Divisão de Planejamento e Desenvolvimento (DPD)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão de Pessoal",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável direto perante o Comandante Geral pelo funcionamento do sistema de gestão de pessoal (Art. 94)"
+          ]
+        }
+      ],
+      "id": "dgp-pe"
+    },
+    "dlog-pe": {
+      "name": "Diretoria de Logística",
+      "abbreviation": "DLog",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 17, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 17 (DLog)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DLog incumbe-se: I - do planejamento, da normatização, da fiscalização e do controle das atividades relativas à gestão da aquisição e da contratação para fornecimento de bens e prestação de serviços; II - da gestão da frota de viaturas e embarcações; III - da gestão do patrimônio e do material bélico da Corporação; IV - das atividades de manutenção de materiais e equipamentos; V - das atividades específicas de planejamento e gestão na área de serviços de engenharia, arquitetura e obras. (Art. 17 I–V)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Divisão de Planejamento Logístico (DPL)",
+        "Divisão de Controle de Contratos (DCC)",
+        "Divisão de Controle de Patrimônio (DCP)",
+        "Divisão de Controle de Transporte (DCT)",
+        "Divisão de Compras e Serviços (DCS)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável direto perante o Comandante Geral pelo funcionamento do sistema de logística (Art. 94)"
+          ]
+        }
+      ],
+      "id": "dlog-pe"
+    },
+    "df-pe": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 19, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 19 (DF)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DF incumbe-se do planejamento, da normatização, da execução e do controle financeiro do CBMPE (Art. 19)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Divisão de Controle Orçamentário e Financeiro (DCOF)",
+        "Divisão Administrativa e Financeira (DAF)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável direto perante o Comandante Geral pelo funcionamento do sistema financeiro (Art. 94)"
+          ]
+        }
+      ],
+      "id": "df-pe"
+    },
+    "dplag-pe": {
+      "name": "Diretoria de Planejamento e Gestão",
+      "abbreviation": "DPlaG",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 21, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 21 (DPlaG)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DPlaG incumbe-se: I - da elaboração e gestão do planejamento institucional; II - da proposição de normas, medidas e procedimentos que visem o aperfeiçoamento da gestão interna do CBMPE; III - do planejamento e monitoramento da execução do orçamento anual e do plano estratégico da Corporação; IV - da propositura e gestão de projetos e convênios com outros órgãos; e V - da gestão das atividades que envolvem o sistema de arrecadação dos tributos específicos destinados ao CBMPE. (Art. 21 I–V)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Divisão de Planejamento e Gestão (DPG)",
+        "Divisão de Projetos (DProj)",
+        "Divisão de Convênios (DConv)",
+        "Divisão de Arrecadação Tributária (DTA)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Planejamento e Gestão",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável direto perante o Comandante Geral pelo funcionamento do sistema de planejamento (Art. 94)"
+          ]
+        }
+      ],
+      "id": "dplag-pe"
+    },
+    "dim-pe": {
+      "name": "Diretoria Integrada Metropolitana",
+      "abbreviation": "DIM",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 23, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 23 (DIM)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DIM incumbe-se, na área territorial de Recife e sua Região Metropolitana, do planejamento e supervisão das ordens, doutrina e emprego das atividades operacionais de prevenção e combate a incêndio, atendimento pré-hospitalar e salvamento, além do controle operacional dos atendimentos emergenciais e do gerenciamento das ações de respostas aos desastres (Art. 23)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Comando Operacional Metropolitano (COM)",
+        "Centro de Controle Operacional (CCO)",
+        "Centro de Resposta a Desastres (CRD)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Integrado Metropolitano",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Comando Operacional Metropolitano",
+            "Centro de Controle Operacional",
+            "Centro de Resposta a Desastres"
+          ],
+          "atribuicoes": [
+            "Planejamento e supervisão das operações em Recife e Região Metropolitana",
+            "Controle operacional dos atendimentos emergenciais e resposta a desastres"
+          ]
+        }
+      ],
+      "id": "dim-pe"
+    },
+    "diesp-pe": {
+      "name": "Diretoria Integrada Especializada",
+      "abbreviation": "DIEsp",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 25, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 25 (DIEsp)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DIEsp incumbe-se na área territorial do Estado de Pernambuco, do planejamento e supervisão das ordens, doutrina e emprego das atividades técnicas, notadamente as vistorias, análises de projetos, cadastramento e credenciamento de empresas, e a execução das normas que disciplinam a segurança das pessoas e de seus bens contra incêndio e pânico, na forma prevista na legislação específica (Art. 25)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Comando Operacional Especializado (COEsp)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Integrado Especializado",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pelo planejamento e supervisão das atividades técnicas no Estado (Art. 25)"
+          ]
+        }
+      ],
+      "id": "diesp-pe"
+    },
+    "dinter1-pe": {
+      "name": "Diretoria Integrada do Interior/1",
+      "abbreviation": "DInter/1",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 27, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 27 (DInter/1)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DInter/1 incumbe-se, na área territorial da Zona da Mata e Agreste do Estado, do planejamento e supervisão das ordens, doutrina e emprego das atividades operacionais de prevenção e combate a incêndio, atendimento pré-hospitalar e salvamento (Art. 27)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Comando Operacional do Interior/1 (COInter/1)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Integrado do Interior/1",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pelo planejamento e supervisão das atividades operacionais na Zona da Mata e Agreste (Art. 27)"
+          ]
+        }
+      ],
+      "id": "dinter1-pe"
+    },
+    "dinter2-pe": {
+      "name": "Diretoria Integrada do Interior/2",
+      "abbreviation": "DInter/2",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 29, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 29 (DInter/2)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "A DInter/2 incumbe-se, na área territorial do Sertão do Estado, do planejamento e supervisão das ordens, doutrina e emprego das atividades operacionais de prevenção e combate a incêndio, atendimento pré-hospitalar e salvamento (Art. 29)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Comando Operacional do Interior/2 (COInter/2)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Integrado do Interior/2",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pelo planejamento e supervisão das atividades operacionais no Sertão (Art. 29)"
+          ]
+        }
+      ],
+      "id": "dinter2-pe"
+    },
+    "gcg-pe": {
+      "name": "Gabinete do Comandante Geral",
+      "abbreviation": "GCG",
+      "category": "Apoio",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 43, 96",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 43 (GCG)",
+        "Art. 96 (Atribuições comuns dos Chefes de Apoio)"
+      ],
+      "atribuicoes": [
+        "O GCG tem a seu cargo as funções de assistência e assessoramento direto ao Comandante Geral, bem como a articulação junto aos órgãos legislativos, na esfera federal, estadual e municipal, em assuntos de interesse do CBMPE; desempenha ainda a secretaria do CPE (Arts. 43, 13 §1º)",
+        "I - exercer com dedicação e zelo a administração do respectivo órgão, buscando sempre alcançar uma melhoria do nível de prestação de serviços;",
+        "II - exercer as atribuições que lhes forem cometidas por lei, regulamento ou qualquer outro documento normativo vigente na Corporação;",
+        "III - baixar determinações, ordens ou diretrizes, no âmbito do respectivo órgão, visando à execução dos serviços que lhes são afetos;",
+        "IV - propor soluções, ao titular do escalão imediatamente superior para quaisquer dificuldades surgidas no desempenho das atividades de seu órgão;",
+        "V - apresentar relatórios ao escalão superior, na periodicidade que for estabelecida em regulamentos, regimentos, diretrizes, normas ou instrução;",
+        "VI - aprovar pareceres, estudos e laudos elaborados no âmbito do referido órgão, relacionados com assuntos de interesse da Corporação;",
+        "VII - supervisionar a administração dos recursos postos à disposição do órgão, estabelecendo prioridades e fiscalizando a plena obediência às disposições legais e regulamentares vigentes referentes à administração financeira e orçamentária;",
+        "VIII - exercer outras atividades, encargos ou missões que lhe sejam atribuídos por disposições normativas vigentes ou pelo escalão superior;",
+        "IX - dirigir, controlar, supervisionar e avaliar a atuação dos órgãos subordinados, centralizando a demanda de serviços a eles destinados, buscando facilitar o cumprimento dos objetivos setoriais; e",
+        "X - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 96 I–X)"
+      ],
+      "desdobramentos": [
+        "Divisão de Apoio (DAp)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete do Comandante Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 44)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assistência e assessoramento direto ao Comandante Geral (Art. 43)"
+          ]
+        }
+      ],
+      "id": "gcg-pe"
+    },
+    "aj-pe": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Apoio",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Arts. 45, 96",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 45 (AJ)",
+        "Art. 96 (Atribuições comuns dos Chefes de Apoio)"
+      ],
+      "atribuicoes": [
+        "A AJ é o órgão que presta assessoramento jurídico ao Comando Geral e desempenho das atividades jurídicas previstas em legislação vigente (Art. 45)",
+        "I - exercer com dedicação e zelo a administração do respectivo órgão, buscando sempre alcançar uma melhoria do nível de prestação de serviços;",
+        "II - exercer as atribuições que lhes forem cometidas por lei, regulamento ou qualquer outro documento normativo vigente na Corporação;",
+        "III - baixar determinações, ordens ou diretrizes, no âmbito do respectivo órgão, visando à execução dos serviços que lhes são afetos;",
+        "IV - propor soluções, ao titular do escalão imediatamente superior para quaisquer dificuldades surgidas no desempenho das atividades de seu órgão;",
+        "V - apresentar relatórios ao escalão superior, na periodicidade que for estabelecida em regulamentos, regimentos, diretrizes, normas ou instrução;",
+        "VI - aprovar pareceres, estudos e laudos elaborados no âmbito do referido órgão, relacionados com assuntos de interesse da Corporação;",
+        "VII - supervisionar a administração dos recursos postos à disposição do órgão, estabelecendo prioridades e fiscalizando a plena obediência às disposições legais e regulamentares vigentes referentes à administração financeira e orçamentária;",
+        "VIII - exercer outras atividades, encargos ou missões que lhe sejam atribuídos por disposições normativas vigentes ou pelo escalão superior;",
+        "IX - dirigir, controlar, supervisionar e avaliar a atuação dos órgãos subordinados, centralizando a demanda de serviços a eles destinados, buscando facilitar o cumprimento dos objetivos setoriais; e",
+        "X - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 96 I–X)"
+      ],
+      "desdobramentos": [
+        "Seção de Legislação e Pareceres (SLP)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Assessor Jurídico",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 46)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento jurídico ao Comando Geral (Art. 45)"
+          ]
+        }
+      ],
+      "id": "aj-pe"
+    },
+    "ajg-pe": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AJG",
+      "category": "Apoio",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Arts. 58, 96",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 58 (AJG)",
+        "Art. 96 (Atribuições comuns dos Chefes de Apoio)"
+      ],
+      "atribuicoes": [
+        "A AJG incumbe-se da administração, manutenção, segurança das instalações do quartel do Comando Geral, bem como a gestão das publicações e arquivo geral da Corporação (Art. 58)",
+        "I - exercer com dedicação e zelo a administração do respectivo órgão, buscando sempre alcançar uma melhoria do nível de prestação de serviços;",
+        "II - exercer as atribuições que lhes forem cometidas por lei, regulamento ou qualquer outro documento normativo vigente na Corporação;",
+        "III - baixar determinações, ordens ou diretrizes, no âmbito do respectivo órgão, visando à execução dos serviços que lhes são afetos;",
+        "IV - propor soluções, ao titular do escalão imediatamente superior para quaisquer dificuldades surgidas no desempenho das atividades de seu órgão;",
+        "V - apresentar relatórios ao escalão superior, na periodicidade que for estabelecida em regulamentos, regimentos, diretrizes, normas ou instrução;",
+        "VI - aprovar pareceres, estudos e laudos elaborados no âmbito do referido órgão, relacionados com assuntos de interesse da Corporação;",
+        "VII - supervisionar a administração dos recursos postos à disposição do órgão, estabelecendo prioridades e fiscalizando a plena obediência às disposições legais e regulamentares vigentes referentes à administração financeira e orçamentária;",
+        "VIII - exercer outras atividades, encargos ou missões que lhe sejam atribuídos por disposições normativas vigentes ou pelo escalão superior;",
+        "IX - dirigir, controlar, supervisionar e avaliar a atuação dos órgãos subordinados, centralizando a demanda de serviços a eles destinados, buscando facilitar o cumprimento dos objetivos setoriais; e",
+        "X - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 96 I–X)"
+      ],
+      "desdobramentos": [
+        "Divisão de Publicação e Apoio (DPA)",
+        "Divisão Administrativa (DA)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe da Ajudância Geral",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 59)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Administração, manutenção e segurança do quartel do CG; gestão das publicações e arquivo geral (Art. 58)"
+          ]
+        }
+      ],
+      "id": "ajg-pe"
+    },
+    "cjd-pe": {
+      "name": "Centro de Justiça e Disciplina",
+      "abbreviation": "CJD",
+      "category": "Apoio",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Arts. 60, 96",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 60 (CJD)",
+        "Art. 96 (Atribuições comuns dos Chefes de Apoio)"
+      ],
+      "atribuicoes": [
+        "O CJD incumbe-se do assessoramento ao Subcomandante Geral nos assuntos pertinentes à execução e acompanhamento de processos administrativos disciplinares, sindicâncias e Inquéritos Policiais Militares (Art. 60)",
+        "I - exercer com dedicação e zelo a administração do respectivo órgão, buscando sempre alcançar uma melhoria do nível de prestação de serviços;",
+        "II - exercer as atribuições que lhes forem cometidas por lei, regulamento ou qualquer outro documento normativo vigente na Corporação;",
+        "III - baixar determinações, ordens ou diretrizes, no âmbito do respectivo órgão, visando à execução dos serviços que lhes são afetos;",
+        "IV - propor soluções, ao titular do escalão imediatamente superior para quaisquer dificuldades surgidas no desempenho das atividades de seu órgão;",
+        "V - apresentar relatórios ao escalão superior, na periodicidade que for estabelecida em regulamentos, regimentos, diretrizes, normas ou instrução;",
+        "VI - aprovar pareceres, estudos e laudos elaborados no âmbito do referido órgão, relacionados com assuntos de interesse da Corporação;",
+        "VII - supervisionar a administração dos recursos postos à disposição do órgão, estabelecendo prioridades e fiscalizando a plena obediência às disposições legais e regulamentares vigentes referentes à administração financeira e orçamentária;",
+        "VIII - exercer outras atividades, encargos ou missões que lhe sejam atribuídos por disposições normativas vigentes ou pelo escalão superior;",
+        "IX - dirigir, controlar, supervisionar e avaliar a atuação dos órgãos subordinados, centralizando a demanda de serviços a eles destinados, buscando facilitar o cumprimento dos objetivos setoriais; e",
+        "X - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 96 I–X)"
+      ],
+      "desdobramentos": [
+        "Seções de Polícia Judiciária (SPJ)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CJD",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 61)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento ao Subcomandante Geral em processos administrativos disciplinares, sindicâncias e IPM (Art. 60)"
+          ]
+        }
+      ],
+      "id": "cjd-pe"
+    },
+    "cci-pe": {
+      "name": "Centro de Controladoria Institucional",
+      "abbreviation": "CCI",
+      "category": "Apoio",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Arts. 64, 96",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 64 (CCI)",
+        "Art. 96 (Atribuições comuns dos Chefes de Apoio)"
+      ],
+      "atribuicoes": [
+        "O CCI incumbe-se do assessoramento ao Subcomandante Geral nos assuntos pertinentes aos atos de gestão do CBMPE, efetuando a orientação, acompanhamento e avaliação dos processos administrativos específicos desempenhados pelas OME, assegurando a regularidade e o fiel cumprimento dos princípios e normas estabelecidos pela Administração Pública (Art. 64)",
+        "I - exercer com dedicação e zelo a administração do respectivo órgão, buscando sempre alcançar uma melhoria do nível de prestação de serviços;",
+        "II - exercer as atribuições que lhes forem cometidas por lei, regulamento ou qualquer outro documento normativo vigente na Corporação;",
+        "III - baixar determinações, ordens ou diretrizes, no âmbito do respectivo órgão, visando à execução dos serviços que lhes são afetos;",
+        "IV - propor soluções, ao titular do escalão imediatamente superior para quaisquer dificuldades surgidas no desempenho das atividades de seu órgão;",
+        "V - apresentar relatórios ao escalão superior, na periodicidade que for estabelecida em regulamentos, regimentos, diretrizes, normas ou instrução;",
+        "VI - aprovar pareceres, estudos e laudos elaborados no âmbito do referido órgão, relacionados com assuntos de interesse da Corporação;",
+        "VII - supervisionar a administração dos recursos postos à disposição do órgão, estabelecendo prioridades e fiscalizando a plena obediência às disposições legais e regulamentares vigentes referentes à administração financeira e orçamentária;",
+        "VIII - exercer outras atividades, encargos ou missões que lhe sejam atribuídos por disposições normativas vigentes ou pelo escalão superior;",
+        "IX - dirigir, controlar, supervisionar e avaliar a atuação dos órgãos subordinados, centralizando a demanda de serviços a eles destinados, buscando facilitar o cumprimento dos objetivos setoriais; e",
+        "X - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 96 I–X)"
+      ],
+      "desdobramentos": [
+        "1ª e 2ª Seções de Auditoria (SA)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CCI",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Oficial do CBMPE (Art. 65)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento ao Subcomandante Geral nos atos de gestão; orientação e avaliação dos processos das OME (Art. 64)"
+          ]
+        }
+      ],
+      "id": "cci-pe"
+    },
+    "com-pe": {
+      "name": "Comando Operacional Metropolitano",
+      "abbreviation": "COM",
+      "category": "Direção Executiva",
+      "subordinadoA": "Diretoria Integrada Metropolitana",
+      "legalRef": "Arts. 33, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 33 (COM)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "O COM incumbe-se da direção executiva na área territorial de Recife e sua Região Metropolitana, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 33)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "Grupamento de Bombeiros de Incêndio (GBI)",
+        "Grupamento de Atendimento Pré-Hospitalar (GBAPH)",
+        "Grupamento de Bombeiros Marítimo (GBMar)",
+        "Grupamento de Bombeiros de Salvamento (GBS)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional Metropolitano (COM)",
+          "subordinadoA": "Diretoria Integrada Metropolitana",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Divisão de Articulação Operacional",
+            "Divisão de Monitoramento e Controle",
+            "Divisão de Coordenação Tática e Operacional"
+          ],
+          "atribuicoes": [
+            "Direção executiva na área de Recife e Região Metropolitana",
+            "Combate a incêndio, salvamento e atendimento pré-hospitalar"
+          ]
+        }
+      ],
+      "id": "com-pe"
+    },
+    "coesp-pe": {
+      "name": "Comando Operacional Especializado",
+      "abbreviation": "COEsp",
+      "category": "Direção Executiva",
+      "subordinadoA": "Diretoria Integrada Especializada",
+      "legalRef": "Arts. 35, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 35 (COEsp)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "O COEsp incumbe-se da direção executiva das atividades técnicas na área territorial do Estado (Art. 35)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "CAT/RMR",
+        "CAT/Zona da Mata (CAT/ZM)",
+        "CAT/Agreste",
+        "CAT/Sertão I",
+        "CAT/Sertão II"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional Especializado",
+          "subordinadoA": "DIEsp",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção executiva das atividades técnicas no Estado (Art. 35)"
+          ]
+        }
+      ],
+      "id": "coesp-pe"
+    },
+    "cointer1-pe": {
+      "name": "Comando Operacional do Interior/1",
+      "abbreviation": "COInter/1",
+      "category": "Direção Executiva",
+      "subordinadoA": "Diretoria Integrada do Interior/1",
+      "legalRef": "Arts. 37, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 37 (COInter/1)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "O COInter/1 incumbe-se, na área territorial da Zona da Mata e Agreste, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 37)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "1º Grupamento de Bombeiros (1ºGB)",
+        "2º Grupamento de Bombeiros (2ºGB)",
+        "6º Grupamento de Bombeiros (6ºGB)",
+        "7º Grupamento de Bombeiros (7ºGB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional do Interior/1",
+          "subordinadoA": "DInter/1",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção executiva das atividades operacionais na Zona da Mata e Agreste (Art. 37)"
+          ]
+        }
+      ],
+      "id": "cointer1-pe"
+    },
+    "cointer2-pe": {
+      "name": "Comando Operacional do Interior/2",
+      "abbreviation": "COInter/2",
+      "category": "Direção Executiva",
+      "subordinadoA": "Diretoria Integrada do Interior/2",
+      "legalRef": "Arts. 39, 95",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 39 (COInter/2)",
+        "Art. 95 (Atribuições comuns dos Diretores)"
+      ],
+      "atribuicoes": [
+        "O COInter/2 incumbe-se, na área territorial do sertão, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 39)",
+        "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+        "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+        "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+        "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+        "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+        "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+        "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+        "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+        "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+        "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+        "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+        "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+      ],
+      "desdobramentos": [
+        "3º Grupamento de Bombeiros (3ºGB)",
+        "4º Grupamento de Bombeiros (4ºGB)",
+        "5º Grupamento de Bombeiros (5ºGB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional do Interior/2",
+          "subordinadoA": "DInter/2",
+          "requisito": "Oficial do CBMPE (Art. 94)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção executiva das atividades operacionais no Sertão (Art. 39)"
+          ]
+        }
+      ],
+      "id": "cointer2-pe"
+    },
+    "cco-pe": {
+      "name": "Centro de Controle Operacional",
+      "abbreviation": "CCO",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Integrada Metropolitana",
+      "legalRef": "Arts. 85, 97",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 85 (CCO)",
+        "Art. 97 (Atribuições comuns dos Comandantes de Execução)"
+      ],
+      "atribuicoes": [
+        "O CCO incumbe-se do recebimento e encaminhamento das solicitações de socorro e controle do atendimento emergencial realizado (Art. 85)",
+        "I - administrar as atividades relativas à Unidade;",
+        "II - cumprir e fazer cumprir, em sua área de ação, as diretrizes, planos, normas e ordens emanadas do escalão superior;",
+        "III - planejar, comandar e fiscalizar as ações operacionais da unidade;",
+        "IV - solicitar apoio ou reforço ao comando superior, quando necessário;",
+        "V - comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito;",
+        "VI - informar ao comando a que estiver subordinado as principais ocorrências operacionais atendidas pela unidade;",
+        "VII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente;",
+        "VIII - zelar pela unidade e uniformidade da instrução e administração entre os órgãos subordinados;",
+        "IX - planejar e operar as suas comunicações, de acordo com as normas vigentes;",
+        "X - elaborar os documentos necessários à avaliação das atividades operacionais da Unidade, conforme normas estabelecidas pelo escalão superior;",
+        "XI - comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem;",
+        "XII - preparar e discutir a proposta orçamentária da unidade;",
+        "XIII - encaminhar, mensalmente, ao comando do escalão superior, relatório das atividades técnicas, administrativas e operacionais executadas pela unidade;",
+        "XIV - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob seu comando, adotando e sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal; e",
+        "XV - exercer outros encargos que lhe forem atribuídos pelos escalões superiores. (Art. 97 I–XV)"
+      ],
+      "desdobramentos": [
+        "Divisão de Operações (DOp)",
+        "Seção de Radiocomunicação (SR)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CCO",
+          "subordinadoA": "DIM",
+          "requisito": "Oficial do CBMPE (Art. 86)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Recebimento e encaminhamento das solicitações de socorro; controle do atendimento emergencial (Art. 85)"
+          ]
+        }
+      ],
+      "id": "cco-pe"
+    },
+    "crd-pe": {
+      "name": "Centro de Resposta a Desastres",
+      "abbreviation": "CRD",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Integrada Metropolitana",
+      "legalRef": "Arts. 87, 97",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 87 (CRD)",
+        "Art. 97 (Atribuições comuns dos Comandantes de Execução)"
+      ],
+      "atribuicoes": [
+        "O CRD incumbe-se da articulação com o sistema de defesa civil, bem como pela coleta, processamento e atualização das informações estratégicas necessárias ao gerenciamento adequado das emergências, além dos estudos e monitoramento de ameaças de desastres (Art. 87)",
+        "I - administrar as atividades relativas à Unidade;",
+        "II - cumprir e fazer cumprir, em sua área de ação, as diretrizes, planos, normas e ordens emanadas do escalão superior;",
+        "III - planejar, comandar e fiscalizar as ações operacionais da unidade;",
+        "IV - solicitar apoio ou reforço ao comando superior, quando necessário;",
+        "V - comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito;",
+        "VI - informar ao comando a que estiver subordinado as principais ocorrências operacionais atendidas pela unidade;",
+        "VII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente;",
+        "VIII - zelar pela unidade e uniformidade da instrução e administração entre os órgãos subordinados;",
+        "IX - planejar e operar as suas comunicações, de acordo com as normas vigentes;",
+        "X - elaborar os documentos necessários à avaliação das atividades operacionais da Unidade, conforme normas estabelecidas pelo escalão superior;",
+        "XI - comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem;",
+        "XII - preparar e discutir a proposta orçamentária da unidade;",
+        "XIII - encaminhar, mensalmente, ao comando do escalão superior, relatório das atividades técnicas, administrativas e operacionais executadas pela unidade;",
+        "XIV - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob seu comando, adotando e sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal; e",
+        "XV - exercer outros encargos que lhe forem atribuídos pelos escalões superiores. (Art. 97 I–XV)"
+      ],
+      "desdobramentos": [
+        "Divisão de Articulação e Planificação (DAP)",
+        "Divisão de Monitoramento e Resposta (DMR)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CRD",
+          "subordinadoA": "DIM",
+          "requisito": "Oficial do CBMPE (Art. 88)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Articulação com defesa civil; coleta e processamento de informações estratégicas; monitoramento de ameaças (Art. 87)"
+          ]
+        }
+      ],
+      "id": "crd-pe"
+    },
+    "cat-pe": {
+      "name": "Centros de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Especializado",
+      "legalRef": "Arts. 89, 97",
+      "baseLegal": "Lei nº 15.187, de 12 de dezembro de 2013",
+      "artigosDeOrigem": [
+        "Art. 89 (CATs)",
+        "Art. 97 (Atribuições comuns dos Comandantes de Execução)"
+      ],
+      "atribuicoes": [
+        "Os CATs incumbem-se da execução das normas que disciplinam a segurança das pessoas e de seus bens contra incêndio e pânico, notadamente as vistorias, análises de projetos, cadastramento e credenciamento de empresas, nas áreas territoriais sob sua responsabilidade (Art. 89)",
+        "I - administrar as atividades relativas à Unidade;",
+        "II - cumprir e fazer cumprir, em sua área de ação, as diretrizes, planos, normas e ordens emanadas do escalão superior;",
+        "III - planejar, comandar e fiscalizar as ações operacionais da unidade;",
+        "IV - solicitar apoio ou reforço ao comando superior, quando necessário;",
+        "V - comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito;",
+        "VI - informar ao comando a que estiver subordinado as principais ocorrências operacionais atendidas pela unidade;",
+        "VII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente;",
+        "VIII - zelar pela unidade e uniformidade da instrução e administração entre os órgãos subordinados;",
+        "IX - planejar e operar as suas comunicações, de acordo com as normas vigentes;",
+        "X - elaborar os documentos necessários à avaliação das atividades operacionais da Unidade, conforme normas estabelecidas pelo escalão superior;",
+        "XI - comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem;",
+        "XII - preparar e discutir a proposta orçamentária da unidade;",
+        "XIII - encaminhar, mensalmente, ao comando do escalão superior, relatório das atividades técnicas, administrativas e operacionais executadas pela unidade;",
+        "XIV - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob seu comando, adotando e sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal; e",
+        "XV - exercer outros encargos que lhe forem atribuídos pelos escalões superiores. (Art. 97 I–XV)"
+      ],
+      "desdobramentos": [
+        "CAT/RMR (Recife e RMR)",
+        "CAT/ZM (Zona da Mata Norte e Sul)",
+        "CAT/Agreste (Agreste Setentrional, Central e Meridional)",
+        "CAT/Sertão I (Pajeú, Moxotó, Itaparica)",
+        "CAT/Sertão II (Sertão Central, Araripe, São Francisco)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CAT",
+          "subordinadoA": "COEsp",
+          "requisito": "Oficial do CBMPE (Art. 90)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Execução das normas de segurança contra incêndio e pânico; vistorias, análises de projetos, cadastramento e credenciamento (Art. 89)"
+          ]
+        }
+      ],
+      "id": "cat-pe"
+    }
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "state_id": "ap",
+  "state_name": "Amapá",
+  "cbm_name": "Corpo de Bombeiros Militar do Amapá",
+  "cbm_abbreviation": "CBMAP",
+  "legal_source": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+  "organs": {
+    "cg-ap": {
+      "name": "Comandante-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 3º e 4º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 3º (Subordinação)",
+        "Art. 4º (Estrutura Organizacional)"
+      ],
+      "atribuicoes": [
+        "Direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)",
+        "Cargo considerado de nível equivalente ao de Secretário de Estado (Art. 3º)"
+      ],
+      "desdobramentos": [
+        "Subcomandante-Geral",
+        "Órgãos de Direção-Geral",
+        "Órgãos de Direção Setorial"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel do Quadro de Oficiais de Estado-Maior; honras de Secretário de Estado",
+          "desdobramentos": [
+            "Subcomandante-Geral",
+            "Órgãos de Direção, Assessoramento, Apoio, Execução e Correição"
+          ],
+          "atribuicoes": [
+            "Comando e administração geral da Corporação"
+          ]
+        }
+      ],
+      "id": "cg-ap"
+    },
+    "scg-ap": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 4º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 4º (Estrutura Organizacional)"
+      ],
+      "atribuicoes": [
+        "O Subcomandante-Geral substituirá o Comandante-Geral em seus impedimentos, ausências ou afastamentos, ocasião em que será formalmente nomeado pelo Governador do Estado como Comandante-Geral em substituição (Art. 3º, §1º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel do Quadro de Oficiais de Estado-Maior; honras de Secretário de Estado Adjunto",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituição do Comandante-Geral em impedimentos",
+            "Assessoramento ao Comandante-Geral"
+          ]
+        }
+      ],
+      "id": "scg-ap"
+    },
+    "gabinete-ap": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GAB",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 1º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º (Organização e Estrutura)"
+      ],
+      "atribuicoes": [
+        "Órgão de direção-geral, responsável pela direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)"
+      ],
+      "desdobramentos": [
+        "Gabinete do Comandante-Geral",
+        "Gabinete do Subcomandante-Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete do Comandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior do CBMAP",
+          "desdobramentos": [
+            "Gabinete do Subcomandante-Geral"
+          ],
+          "atribuicoes": [
+            "Órgão de direção-geral, responsável pelo assessoramento direto ao Comandante-Geral e pelo apoio à direção superior, planejamento estratégico e administração geral da Instituição (LC nº 180/2026, Art. 6º, §1º, I)"
+          ]
+        }
+      ],
+      "id": "gabinete-ap"
+    },
+    "cdoem-ap": {
+      "name": "Comitê de Desenvolvimento Organizacional",
+      "abbreviation": "CDO",
+      "category": "Direção-Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 1º, I",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §1º, I (órgãos de direção-geral)"
+      ],
+      "atribuicoes": [
+        "Órgão de direção-geral, responsável pela direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Presidente do Comitê de Desenvolvimento Organizacional",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior do CBMAP",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de direção-geral, responsável pelo planejamento e gestão do desenvolvimento organizacional da Corporação, integrando os órgãos incumbidos da direção superior, planejamento estratégico e administração geral da Instituição (LC nº 180/2026, Art. 6º, §1º, I)"
+          ]
+        }
+      ],
+      "id": "cdoem-ap"
+    },
+    "comando-operacional-ap": {
+      "name": "Comando Operacional",
+      "abbreviation": "CmtOp",
+      "category": "Direção-Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 1º, I",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §1º, I (órgãos de direção-geral)"
+      ],
+      "atribuicoes": [
+        "Órgão de direção-geral, responsável pela direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior do CBMAP",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de direção-geral, responsável pela coordenação das atividades operacionais de bombeiro militar do Estado do Amapá, integrando os órgãos incumbidos da direção superior, planejamento estratégico e administração geral da Instituição (LC nº 180/2026, Art. 6º, §1º, I)"
+          ]
+        }
+      ],
+      "id": "comando-operacional-ap"
+    },
+    "frcb-ap": {
+      "name": "Fundo de Reequipamento do Corpo de Bombeiros",
+      "abbreviation": "FRCB",
+      "category": "Direção-Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 1º, I",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §1º, I (órgãos de direção-geral)"
+      ],
+      "atribuicoes": [
+        "Integra os órgãos de direção-geral, responsáveis pela direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Gestor do Fundo de Reequipamento do Corpo de Bombeiros",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior do CBMAP",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de direção-geral, responsável pela gestão do Fundo de Reequipamento do Corpo de Bombeiros, integrando os órgãos incumbidos da direção superior, planejamento estratégico e administração geral da Instituição (LC nº 180/2026, Art. 6º, §1º, I)"
+          ]
+        }
+      ],
+      "id": "frcb-ap"
+    },
+    "diretorias-ap": {
+      "name": "Diretorias (Órgãos de Direção Setorial)",
+      "abbreviation": "DIR",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 6º, § 1º, II",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §1º, II (órgãos de direção setorial)"
+      ],
+      "atribuicoes": [
+        "Órgãos de direção setorial, responsáveis pela administração setorial das atividades de inteligência, recursos humanos, pesquisa e desenvolvimento, gestão orçamentária, financeira e ambiental, bem como pelo assessoramento técnico, planejamento, coordenação, execução, controle e fiscalização das atividades administrativas da Corporação e das políticas de desenvolvimento institucional (Art. 6º, §1º, II)"
+      ],
+      "desdobramentos": [
+        "Diretoria de Inteligência",
+        "Diretoria de Recursos Humanos",
+        "Diretoria de Pesquisa e Desenvolvimento",
+        "Diretoria de Gestão Orçamentária e Financeira",
+        "Diretoria Ambiental"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Inteligência",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de inteligência"
+          ]
+        },
+        {
+          "cargo": "Diretor de Recursos Humanos",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de recursos humanos"
+          ]
+        },
+        {
+          "cargo": "Diretor de Pesquisa e Desenvolvimento",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Pesquisa e desenvolvimento"
+          ]
+        },
+        {
+          "cargo": "Diretor de Gestão Orçamentária e Financeira",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão orçamentária e financeira"
+          ]
+        },
+        {
+          "cargo": "Diretor Ambiental",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão ambiental"
+          ]
+        }
+      ],
+      "id": "diretorias-ap"
+    },
+    "aci-ap": {
+      "name": "Assessoria de Controle Interno",
+      "abbreviation": "ACI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 2º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §2º (órgãos de assessoramento)"
+      ],
+      "atribuicoes": [
+        "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica, para auxiliar as decisões dos órgãos de direção em assuntos especializados (Art. 6º, §2º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor de Controle Interno",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do CBMAP",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica para auxiliar as decisões dos órgãos de direção em assuntos especializados de controle interno (LC nº 180/2026, Art. 6º, §2º)"
+          ]
+        }
+      ],
+      "id": "aci-ap"
+    },
+    "aj-ap": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 2º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §2º (órgãos de assessoramento)"
+      ],
+      "atribuicoes": [
+        "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica, para auxiliar as decisões dos órgãos de direção em assuntos especializados (Art. 6º, §2º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor Jurídico",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do CBMAP (preferencialmente bacharel em Direito)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica para auxiliar as decisões dos órgãos de direção em assuntos jurídicos especializados (LC nº 180/2026, Art. 6º, §2º)"
+          ]
+        }
+      ],
+      "id": "aj-ap"
+    },
+    "at-ap": {
+      "name": "Assessoria Técnica",
+      "abbreviation": "AT",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 2º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §2º (órgãos de assessoramento)"
+      ],
+      "atribuicoes": [
+        "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica, para auxiliar as decisões dos órgãos de direção em assuntos especializados (Art. 6º, §2º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor Técnico",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do CBMAP",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica para auxiliar as decisões dos órgãos de direção em assuntos técnicos especializados (LC nº 180/2026, Art. 6º, §2º)"
+          ]
+        }
+      ],
+      "id": "at-ap"
+    },
+    "centros-ap": {
+      "name": "Centros (Órgãos de Apoio)",
+      "abbreviation": "CEN",
+      "category": "Apoio",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 6º, § 3º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §3º (órgãos de apoio)"
+      ],
+      "atribuicoes": [
+        "Órgãos de apoio destinados, entre outras atribuições, ao atendimento das necessidades de recursos humanos, saúde, ensino, pesquisa e logística, responsáveis pela realização das atividades-meio da instituição (Art. 6º, §3º)"
+      ],
+      "desdobramentos": [
+        "Centros",
+        "Academia Bombeiro Militar",
+        "Coordenadorias"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretores/Comandantes dos Centros, Academia e Coordenadorias",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMAP",
+          "desdobramentos": [
+            "Centros",
+            "Academia Bombeiro Militar",
+            "Coordenadorias"
+          ],
+          "atribuicoes": [
+            "Órgãos de apoio destinados, entre outras atribuições, ao atendimento das necessidades de recursos humanos, saúde, ensino, pesquisa e logística, responsáveis pela realização das atividades-meio da instituição (LC nº 180/2026, Art. 6º, §3º)"
+          ]
+        }
+      ],
+      "id": "centros-ap"
+    },
+    "gbm-ap": {
+      "name": "Grupamentos de Bombeiro Militar",
+      "abbreviation": "GBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 6º, § 4º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §4º (órgãos de execução)"
+      ],
+      "atribuicoes": [
+        "Órgãos de execução destinados à realização das atividades-fim da instituição (Art. 6º, §4º)"
+      ],
+      "desdobramentos": [
+        "Grupamentos de Bombeiro Militar",
+        "Grupamentos Especializados"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Grupamento de Bombeiro Militar",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMAP",
+          "desdobramentos": [
+            "Grupamentos Especializados"
+          ],
+          "atribuicoes": [
+            "Órgãos de execução destinados à realização das atividades-fim da instituição, compreendendo os Grupamentos de Bombeiro Militar e os Grupamentos Especializados (LC nº 180/2026, Art. 6º, §4º)"
+          ]
+        }
+      ],
+      "id": "gbm-ap"
+    },
+    "corregedoria-ap": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "COR",
+      "category": "Correição",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 5º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §5º (órgãos de correição)"
+      ],
+      "atribuicoes": [
+        "Órgão de correição, com atuação desconcentrada, destinado a exercer as funções de Corregedoria-Geral, mediante regulamentação de procedimentos internos, para a prevenção, fiscalização e apuração dos desvios de conduta em atos disciplinares e penais militares, a promoção da qualidade e eficiência do serviço de segurança pública e a instrumentalização da Justiça Militar (Art. 6º, §5º)",
+        "Acompanhar o cumprimento de medidas cautelares restritivas de direitos e mandados de prisão judicialmente deferidos em desfavor de militares dentro da instituição (Art. 6º, §5º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Órgão de correição com atuação desconcentrada, destinado a exercer as funções de Corregedoria-Geral, mediante regulamentação de procedimentos internos, para a prevenção, fiscalização e apuração dos desvios de conduta em atos disciplinares e penais militares, a promoção da qualidade e eficiência do serviço de segurança pública e a instrumentalização da Justiça Militar (LC nº 180/2026, Art. 6º, §5º)"
+          ]
+        }
+      ],
+      "id": "corregedoria-ap"
+    },
+    "em-ap": {
+      "name": "Escola Militar",
+      "abbreviation": "EM",
+      "category": "Órgão Vinculado",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º, § 6º",
+      "baseLegal": "Lei Complementar nº 180, de 06 de janeiro de 2026",
+      "artigosDeOrigem": [
+        "Art. 6º, §6º (órgãos vinculados)"
+      ],
+      "atribuicoes": [
+        "Órgão vinculado, com regulamentação, organização e estruturação próprias, vinculado ao CBMAP, por meio do desenvolvimento de atividades inerentes à atividade militar e à Defesa Civil (Art. 6º, §6º)"
+      ],
+      "desdobramentos": [
+        "Projetos Sociais (entre outros previstos no decreto regulamentador)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor da Escola Militar",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do CBMAP",
+          "desdobramentos": [
+            "Projetos Sociais e demais atividades previstas no decreto regulamentador"
+          ],
+          "atribuicoes": [
+            "Órgão vinculado ao CBMAP com regulamentação, organização e estruturação próprias, por meio do desenvolvimento de atividades inerentes à atividade militar e à Defesa Civil (LC nº 180/2026, Art. 6º, §6º)"
+          ]
+        }
+      ],
+      "id": "em-ap"
+    }
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "state_id": "ac",
+  "state_name": "Acre",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado do Acre",
+  "cbm_abbreviation": "CBMAC",
+  "legal_source": "Lei nº 2.009, de 02 de julho de 2008 (red. até Lei nº 4.428, de 29/10/2024)",
+  "organs": {
+    "cg-ac": {
+      "id": "cg-ac",
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 4º I, 5º, 6º",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º I (Direção Geral)", "Art. 5º (Comandante-Geral)", "Art. 6º (atribuições)", "Art. 24 I (postos)"],
+      "atribuicoes": [
+        "Os Órgãos de direção geral compõem o comando do Corpo de Bombeiros Militar compreendendo: direção geral, identificada como comando geral (Art. 4º, red. Lei nº 3.105/2015)",
+        "O comandante-geral do CBMAC é o responsável pelo comando, emprego e administração do CBMAC, auxiliado pelos órgãos de direção (Art. 5º)",
+        "Compete ao comandante-geral da corporação, dentre outras atribuições, planejar, coordenar, fiscalizar, controlar e orientar todas as atividades do CBMAC e centralizar o planejamento administrativo e a programação orçamentária, podendo delegar estas últimas (Art. 6º)",
+        "O comandante-geral e o subcomandante-geral contarão com estrutura de gabinete para dar suporte às suas atividades (Art. 6º §3º)"
+      ],
+      "desdobramentos": [
+        "Comandante-Geral",
+        "Subcomandante-Geral",
+        "Estado-Maior Geral",
+        "Corregedoria do CBMAC",
+        "Gabinete do Comandante-Geral",
+        "Gabinete do Subcomandante-Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel BM, escolhido nos termos do §1º do art. 2º da LC nº 164/2006 (Art. 5º e Art. 24 I)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pelo comando, emprego e administração do CBMAC, auxiliado pelos órgãos de direção (Art. 5º)",
+            "Planejar, coordenar, fiscalizar, controlar e orientar todas as atividades do CBMAC e centralizar o planejamento administrativo e a programação orçamentária, podendo delegar estas últimas (Art. 6º)",
+            "Compete ao Comandante-Geral do CBMAC propor ao chefe do Poder Executivo a realização de concurso público para ingresso na corporação (Art. 21)",
+            "Distribuir o efetivo do Corpo de Bombeiros, bem como realizar o detalhamento das áreas de atuação das organizações Bombeiros Militares, mediante portaria, observados os critérios técnicos de emprego do efetivo (Art. 20 parágrafo único)"
+          ]
+        },
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel BM, escolhido pelo governador do Estado dentre os oficiais superiores bombeiros militares combatentes da ativa, do mais alto posto, que estejam exercendo funções exclusivas do Quadro de Organização Básica da Corporação (Art. 6º §1º, red. Lei 2.178/2009); função de Coronel BM (Art. 24 I)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituto eventual do comandante-geral nos impedimentos deste, e terá precedência funcional e hierárquica sobre os demais (Art. 6º §1º, red. Lei 2.178/2009)",
+            "Coordenar a disciplina da corporação (Art. 6º §2º)",
+            "Ocupa a função de chefe do estado-maior geral (Art. 7º I, red. Lei 3.105/2015)"
+          ]
+        }
+      ]
+    },
+    "emg-ac": {
+      "id": "emg-ac",
+      "name": "Estado-Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 7º",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º I c (composição do CG)", "Art. 7º (composição do EMG e atribuições do chefe)", "Art. 7º §§1º–2º"],
+      "atribuicoes": [
+        "O Estado-maior geral da Corporação tem a seguinte composição: I – subcomando-geral – chefe do estado-maior geral; II – comando operacional (capital) – subchefe do EMG; III – comando operacional (interior); IV – diretoria recursos humanos; V - diretoria de atividades técnicas e operacionais; [VI] – diretoria de logística, patrimônio e finanças; VII – diretoria de ensino e instrução; VIII – diretoria de planejamento; IX – diretoria de saúde; e X – ajudância geral (Art. 7º, red. Lei 3.105/2015)"
+      ],
+      "desdobramentos": [
+        "Subcomando-Geral (chefe do EMG)",
+        "Comando Operacional da Capital (subchefe do EMG)",
+        "Comando Operacional do Interior",
+        "Diretoria de Recursos Humanos",
+        "Diretoria de Atividades Técnicas e Operacionais",
+        "Diretoria de Logística, Patrimônio e Finanças",
+        "Diretoria de Ensino e Instrução",
+        "Diretoria de Planejamento",
+        "Diretoria de Saúde",
+        "Ajudância Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Subcomandante-Geral, função de Coronel BM (Arts. 7º I e 24 I)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Ao chefe do estado-maior geral compete, dentre outras atribuições, a direção, orientação, coordenação e a fiscalização dos trabalhos do estado-maior geral (Art. 7º §1º)"
+          ]
+        },
+        {
+          "cargo": "Subchefe do Estado-Maior Geral",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Comandante Operacional da Capital, função de Tenente-Coronel BM (Arts. 7º II e 24 II)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "O subchefe do estado-maior geral é o substituto eventual do chefe do estado-maior geral, auxiliando-o em suas atribuições (Art. 7º §2º)"
+          ]
+        }
+      ]
+    },
+    "corregedoria-ac": {
+      "id": "corregedoria-ac",
+      "name": "Corregedoria do CBMAC",
+      "abbreviation": "COR",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º I d, 8º",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 2.706/2013)",
+      "artigosDeOrigem": ["Art. 4º I d (composição do CG)", "Art. 8º (Corregedoria)", "Art. 24 I e II (postos)"],
+      "atribuicoes": [
+        "A corregedoria do CBMAC é o órgão responsável pelo sistema administrativo disciplinar do CBMAC e dos procedimentos de polícia judiciária militar e todos os seus atos serão validados pelo subcomandante da corporação (Art. 8º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Corregedor",
+          "subordinadoA": "Subcomandante da Corporação",
+          "requisito": "Oficial do último posto do Quadro de Oficiais Combatentes, função de Coronel BM (Art. 8º parágrafo único, red. Lei 2.706/2013; Art. 24 I)",
+          "desdobramentos": ["Subcorregedor (Tenente-Coronel BM, Art. 24 II)"],
+          "atribuicoes": [
+            "Sistema administrativo disciplinar do CBMAC e procedimentos de polícia judiciária militar (Art. 8º)"
+          ]
+        }
+      ]
+    },
+    "ajg-ac": {
+      "id": "ajg-ac",
+      "name": "Ajudância Geral",
+      "abbreviation": "AjG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º I, 7º X, 11",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 7º X (membro do EMG)", "Art. 11 (atribuições)", "Art. 24 II (posto)"],
+      "atribuicoes": [
+        "À ajudância geral compete, dentre outras atribuições, a administração, a segurança e os serviços gerais, dando suporte e apoio em efetivo aos órgãos sediados no quartel do comando geral (Art. 11)"
+      ],
+      "desdobramentos": ["Ajudante Geral Adjunto (Art. 24 VII)"],
+      "cargos": [
+        {
+          "cargo": "Ajudante Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Tenente-Coronel BM (Art. 24 II)",
+          "desdobramentos": ["Ajudante Geral Adjunto (oficial intermediário ou subalterno, Art. 24 VII)"],
+          "atribuicoes": [
+            "Administração, segurança e serviços gerais, dando suporte e apoio em efetivo aos órgãos sediados no quartel do comando geral (Art. 11)"
+          ]
+        }
+      ]
+    },
+    "drh-ac": {
+      "id": "drh-ac",
+      "name": "Diretoria de Recursos Humanos",
+      "abbreviation": "DRH",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II a 1, 7º IV, 12",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II a 1 (Diretorias)", "Art. 7º IV (membro do EMG)", "Art. 12 (atribuições da direção setorial)", "Art. 24 III (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+        "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Recursos Humanos",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Funções gerenciais dos meios administrativo-operacionais e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+          ]
+        }
+      ]
+    },
+    "datop-ac": {
+      "id": "datop-ac",
+      "name": "Diretoria de Atividades Técnicas e Operacionais",
+      "abbreviation": "DATOP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II a 2, 7º V, 12",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II a 2 (Diretorias)", "Art. 7º V (membro do EMG)", "Art. 12 (atribuições da direção setorial)", "Art. 24 III (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+        "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas e Operacionais",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Funções gerenciais dos meios administrativo-operacionais e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+          ]
+        }
+      ]
+    },
+    "dlpf-ac": {
+      "id": "dlpf-ac",
+      "name": "Diretoria de Logística, Patrimônio e Finanças",
+      "abbreviation": "DLPF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II a 3, 7º [VI], 12",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II a 3 (Diretorias)", "Art. 12 (atribuições da direção setorial)", "Art. 24 III (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+        "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística, Patrimônio e Finanças",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Funções gerenciais dos meios administrativo-operacionais e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+          ]
+        }
+      ]
+    },
+    "dei-ac": {
+      "id": "dei-ac",
+      "name": "Diretoria de Ensino e Instrução",
+      "abbreviation": "DEI",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II a 4, 7º VII, 12",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II a 4 (Diretorias)", "Art. 7º VII (membro do EMG)", "Art. 12 (atribuições da direção setorial)", "Art. 24 III (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+        "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino e Instrução",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Funções gerenciais dos meios educacionais e de instrução da corporação (Art. 12)"
+          ]
+        }
+      ]
+    },
+    "dp-ac": {
+      "id": "dp-ac",
+      "name": "Diretoria de Planejamento",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II a 5, 7º VIII, 12",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II a 5 (Diretorias)", "Art. 7º VIII (membro do EMG)", "Art. 12 (atribuições da direção setorial)", "Art. 24 III (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+        "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Planejamento",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Funções gerenciais de planejamento estratégico e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+          ]
+        }
+      ]
+    },
+    "ds-ac": {
+      "id": "ds-ac",
+      "name": "Diretoria de Saúde",
+      "abbreviation": "DS",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II a 6, 7º IX, 12",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II a 6 (Diretorias)", "Art. 7º IX (membro do EMG)", "Art. 12 (atribuições da direção setorial)", "Art. 24 III (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+        "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Saúde",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Funções gerenciais de atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+          ]
+        }
+      ]
+    },
+    "aj-ac": {
+      "id": "aj-ac",
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II c 1, 10",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II c 1 (Assessorias)", "Art. 10 (atribuições das assessorias)", "Art. 24 V (posto)"],
+      "atribuicoes": [
+        "As assessorias do comando geral destinam-se a apoiar o comandante-geral da corporação em assuntos especializados, podendo ser preenchidas por pessoal civil (Art. 10)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria Jurídica",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior, excepcionalmente oficial intermediário (Art. 24 V)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento ao comandante-geral em assuntos jurídicos especializados (Arts. 10 e 4º II c 1)"
+          ]
+        }
+      ]
+    },
+    "ai-ac": {
+      "id": "ai-ac",
+      "name": "Assessoria de Inteligência",
+      "abbreviation": "AI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II c 2, 9º §2º, 10",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II c 2 (Assessorias)", "Art. 9º §2º (apoio técnico ao EMG)", "Art. 10 (atribuições das assessorias)", "Art. 24 V (posto)"],
+      "atribuicoes": [
+        "As assessorias do comando geral destinam-se a apoiar o comandante-geral da corporação em assuntos especializados, podendo ser preenchidas por pessoal civil (Art. 10)",
+        "Os assuntos de interesse operacional serão tratados pelos órgãos de direção executiva, com apoio técnico do serviço de inteligência (Art. 9º §2º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Serviço de Inteligência",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior, excepcionalmente oficial intermediário (Art. 24 V)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento ao comandante-geral em assuntos de inteligência; apoio técnico aos assuntos de interesse operacional (Arts. 10 e 9º §2º)"
+          ]
+        }
+      ]
+    },
+    "acsi-ac": {
+      "id": "acsi-ac",
+      "name": "Assessoria de Comunicação Social e Imprensa",
+      "abbreviation": "ACSI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II c 3, 10",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II c 3 (Assessorias)", "Art. 10 (atribuições das assessorias)", "Art. 24 V (posto)"],
+      "atribuicoes": [
+        "As assessorias do comando geral destinam-se a apoiar o comandante-geral da corporação em assuntos especializados, podendo ser preenchidas por pessoal civil (Art. 10)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria de Comunicação Social e Imprensa",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior, excepcionalmente oficial intermediário (Art. 24 V)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento ao comandante-geral em assuntos de comunicação social e relações com a imprensa (Arts. 10 e 4º II c 3)"
+          ]
+        }
+      ]
+    },
+    "ci-ac": {
+      "id": "ci-ac",
+      "name": "Controle Interno",
+      "abbreviation": "CI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 4º II d, 24 I–II",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º II d (Controle Interno)", "Art. 24 II (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral, compreendendo o controle interno (Art. 4º II d, red. Lei 3.105/2015)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Controlador Interno",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Tenente-Coronel BM (Art. 24 II)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Exercício do controle interno da Corporação (Art. 4º II d)"
+          ]
+        }
+      ]
+    },
+    "cob-ac": {
+      "id": "cob-ac",
+      "name": "Comando Operacional de Bombeiros da Capital e Entorno",
+      "abbreviation": "COB-Capital",
+      "category": "Direção Executiva",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Arts. 4º III a, 9º, 13",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º III a (Direção Executiva)", "Art. 4º §§1º–2º (unidades subordinadas)", "Art. 9º (assessoramento ao SCG)", "Art. 13 (atribuições)", "Art. 24 II (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção executiva destinam-se a gerenciar todo o serviço operacional da Corporação (Art. 4º III, red. Lei 3.105/2015)",
+        "Compete aos órgãos de direção executiva a operacionalização das atividades-fins da corporação e o cumprimento de suas missões, consoantes diretrizes e ordens emanadas da direção geral, apoiados em suas necessidades pelos órgãos de execução (Art. 13, red. Lei 3.105/2015)",
+        "Os órgãos de direção executiva prestam assessoramento ao subcomandante-geral do CBMAC, sendo responsável pelo processamento dos assuntos de interesse operacional (Art. 9º, red. Lei 3.105/2015)",
+        "Os comandos operacionais de bombeiros da capital e interior poderão convocar, sempre que for necessário ou conforme planejamento, os comandantes dos batalhões regionais e especializados, coordenadoria de programas educacionais e de prevenção e o serviço inteligência operacional para reuniões de trabalho, elaboração de planos e de avaliação de resultados (Art. 9º §3º)"
+      ],
+      "desdobramentos": [
+        "1º BEPCIF — 1º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º I)",
+        "2º BEPCIF — 2º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º II)",
+        "3º BEPCIF — 3º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º III)",
+        "1º BBS — 1º Batalhão de Busca e Salvamento (Art. 4º §2º I)",
+        "1ª CIACIAER — 1ª Companhia de Combate a Incêndio em Aeródromos (Art. 4º §2º II)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do COB da Capital e Entorno",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Tenente-Coronel BM (Art. 24 II); ocupa função de subchefe do EMG (Art. 7º II)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gerenciar todo o serviço operacional da Corporação na capital e entorno; operacionalização das atividades-fins e cumprimento de missões consoante diretrizes da direção geral (Arts. 4º III e 13)"
+          ]
+        }
+      ]
+    },
+    "cob-interior-ac": {
+      "id": "cob-interior-ac",
+      "name": "Comando Operacional de Bombeiros do Interior",
+      "abbreviation": "COB-Interior",
+      "category": "Direção Executiva",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Arts. 4º III b, 9º, 13",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º III b (Direção Executiva)", "Art. 4º §§3º–4º (unidades subordinadas)", "Art. 9º (assessoramento ao SCG)", "Art. 13 (atribuições)", "Art. 24 II (posto)"],
+      "atribuicoes": [
+        "Os órgãos de direção executiva destinam-se a gerenciar todo o serviço operacional da Corporação (Art. 4º III, red. Lei 3.105/2015)",
+        "Compete aos órgãos de direção executiva a operacionalização das atividades-fins da corporação e o cumprimento de suas missões, consoantes diretrizes e ordens emanadas da direção geral, apoiados em suas necessidades pelos órgãos de execução (Art. 13, red. Lei 3.105/2015)",
+        "Os órgãos de direção executiva prestam assessoramento ao subcomandante-geral do CBMAC, sendo responsável pelo processamento dos assuntos de interesse operacional (Art. 9º, red. Lei 3.105/2015)",
+        "Os comandos operacionais de bombeiros da capital e interior poderão convocar, sempre que for necessário ou conforme planejamento, os comandantes dos batalhões regionais e especializados, coordenadoria de programas educacionais e de prevenção e o serviço inteligência operacional para reuniões de trabalho, elaboração de planos e de avaliação de resultados (Art. 9º §3º)"
+      ],
+      "desdobramentos": [
+        "4º BEPCIF/CZS — 4º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Cruzeiro do Sul) (Art. 4º §3º I)",
+        "5º BEPCIF/EPT — 5º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Epitaciolândia) (Art. 4º §3º II)",
+        "6º BEPCIF/SM — 6º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Sena Madureira) (Art. 4º §3º III)",
+        "7º BEPCIF/TK — 7º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Tarauacá) (Art. 4º §3º IV)",
+        "1ª CIACIAER/4º BEPCIF/CZS — 1ª Companhia de Combate a Incêndio em Aeródromo (Art. 4º §4º I)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do COB do Interior",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Tenente-Coronel BM (Art. 24 II); membro do EMG (Art. 7º III)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gerenciar todo o serviço operacional da Corporação no interior do estado; operacionalização das atividades-fins e cumprimento de missões consoante diretrizes da direção geral (Arts. 4º III e 13)"
+          ]
+        }
+      ]
+    },
+    "cpc-ac": {
+      "id": "cpc-ac",
+      "name": "Coordenadoria de Projetos Comunitários",
+      "abbreviation": "CPC",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 4º IV c",
+      "baseLegal": "Lei nº 2.009/2008 (red. Lei 3.105/2015)",
+      "artigosDeOrigem": ["Art. 4º IV c (Órgãos de Execução)"],
+      "atribuicoes": [
+        "Os órgãos de execução, subordinados aos órgãos de direção executiva compreendem: [...] coordenadoria de projetos comunitários (Art. 4º IV c, red. Lei 3.105/2015)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Projetos Comunitários",
+          "subordinadoA": "Comando Operacional de Bombeiros",
+          "requisito": "Oficial BM (Art. 4º IV c)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação de projetos comunitários e programas educacionais e de prevenção no âmbito do CBMAC (Art. 4º IV c)"
+          ]
+        }
+      ]
+    }
+  }
+}

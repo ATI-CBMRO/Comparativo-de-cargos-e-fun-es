@@ -1,0 +1,834 @@
+{
+  "state_id": "ma",
+  "state_name": "Maranhão",
+  "cbm_name": "Corpo de Bombeiros Militar do Maranhão",
+  "cbm_abbreviation": "CBMMA",
+  "legal_source": "Lei nº 10.230, de 23 de abril de 2015 | Quadro de Organização e Distribuição",
+  "organs": {
+    "cg-ma": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 2, 5-8",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 2 (competências institucionais)",
+        "Art. 6 (comando)",
+        "Art. 8 (Comandante-Geral e Adjunto)"
+      ],
+      "atribuicoes": [
+        "Art. 2, I — desenvolver a política Estadual de Proteção de Defesa Civil, nas ações de proteção da incolumidade e do socorro das pessoas em caso de infortúnio ou de calamidade;",
+        "Art. 2, II — prestar socorro nos casos de inundações, alagamentos, deslizamentos, desabamentos e/ou catástrofes, sempre que houver ameaça de destruição de haveres, vítimas ou pessoas em iminente perigo de vida;",
+        "Art. 2, III — exercer atividades de polícia administrativa para os serviços de Segurança Contra Incêndio e Pânico e de Salvamento, podendo, por meio de estudos, vistorias, análises, planejamento, fiscalização e controle de edificações, embargar, interditar obras, serviços, habitações e locais de diversões públicas que não oferecerem condições de segurança e de funcionamento;",
+        "Art. 2, IV — controlar e fiscalizar a formação de guarda-vidas em meio aquático;",
+        "Art. 2, V — realizar serviços de busca e salvamento de pessoas, animais, bens e haveres;",
+        "Art. 2, VI — realizar prevenção no meio aquático e serviço de guarda-vidas;",
+        "Art. 2, VII — realizar serviços de atendimento e transporte pré-hospitalar em vias e logradouros públicos;",
+        "Art. 2, VIII — proceder à perícia de incêndios, bem como o controle de edificações e seus projetos, visando à observância de requisitos técnicos contra incêndio e outros riscos, prevenindo e extinguindo incêndios urbanos e florestais;",
+        "Art. 2, IX — desenvolver pesquisas científicas em seu campo de atuação funcional e ações educativas de prevenção de incêndios, socorros de urgência, pânico coletivo e proteção ao meio ambiente, bem como ações de proteção e promoção do bem-estar da coletividade e dos direitos, garantias e liberdades do cidadão, estimulando o respeito à cidadania, por meio de ações de natureza preventiva e educacional ou por meio de convênios;",
+        "Art. 2, X — celebrar e manter intercâmbio sobre os assuntos de interesse de suas atribuições com órgãos congêneres de outras unidades da Federação ou Países, além de exercer outras atividades necessárias ao cumprimento de sua competência por meio de convênios.",
+        "Art. 6 — A administração e o comando da Corporação são de competência do Comandante-Geral.",
+        "Art. 8, § 3º — Ao Comandante Adjunto, substituto do Comandante-Geral nos seus afastamentos, ausências e impedimentos legais, cabe-lhe a orientação, a coordenação e a fiscalização dos órgãos da Corporação e da implementação das políticas definidas pelo Comando Geral da Corporação.",
+        "Art. 8, § 4º — O Comandante Adjunto é o responsável pela aplicação da disciplina, dentro de sua esfera de competência, pela fiscalização do funcionamento dos órgãos internos, desde sua administração ao seu emprego operacional."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "Gabinete",
+            "Comissões",
+            "Assessorias",
+            "Alto-Comando"
+          ],
+          "atribuicoes": [
+            "Comando, administração e emprego da Corporação",
+            "Assessorar o Governador em assuntos bombeiro-militar",
+            "Nomeação e exoneração de oficiais em funções de comando",
+            "Aprovação de regulamentos e planos de emprego"
+          ]
+        },
+        {
+          "cargo": "Comandante Adjunto / Chefe do EMG",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "Estado-Maior Geral"
+          ],
+          "atribuicoes": [
+            "Orientação, coordenação e fiscalização dos órgãos",
+            "Responsável superior pela elaboração de diretrizes do Comando"
+          ]
+        }
+      ],
+      "id": "cg-ma"
+    },
+    "alto-cmd-ma": {
+      "name": "Alto-Comando",
+      "abbreviation": "Alto-Cmd",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 9",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 9 (Alto-Comando)"
+      ],
+      "atribuicoes": [
+        "Art. 9, I — opinar, propor e estudar sobre políticas de gestão e estratégia da Corporação;",
+        "Art. 9, II — gestão de planos e programas oriundos do plano diretor da Corporação;",
+        "Art. 9, III — outras matérias que sejam propostas pelo Comandante-Geral."
+      ],
+      "desdobramentos": [
+        "Presidente: Comandante-Geral",
+        "Membros natos: Comandante Adjunto/Chefe do EMG; Subchefe do EMG; Coordenador Estadual de Proteção e Defesa Civil",
+        "Membros efetivos: Diretores de Pessoal, Finanças, Ensino e Pesquisa, Apoio Logístico, Atividades Técnicas, Inteligência e Planejamento e Modernização"
+      ],
+      "cargos": [],
+      "id": "alto-cmd-ma"
+    },
+    "emg-ma": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral (exercido pelo Comandante Adjunto)",
+      "legalRef": "Arts. 10-12",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Arts. 10-12 (Estado-Maior-Geral)"
+      ],
+      "atribuicoes": [
+        "Art. 10 — O Estado-Maior-Geral é o órgão de direção geral, responsável pelo estudo, planejamento, coordenação, fiscalização e controle de todas as atividades da Corporação, constituindo o órgão central do sistema de planejamento administrativo, operacional e orçamentário, encarregado da elaboração de diretrizes e ordens do Comando, que acionam os órgãos de direção, de apoio e de execução, no cumprimento de suas atividades, e será exercido, cumulativamente, pelo Comandante Adjunto do CBMMA."
+      ],
+      "desdobramentos": [
+        "1ª Seção (BM/1) — Pessoal e Legislação",
+        "2ª Seção (BM/2) — Legislação Técnica, Pesquisa Técnica, Perícias e Prevenção",
+        "3ª Seção (BM/3) — Ensino, Instrução, Operações, Comunicações e Doutrina",
+        "4ª Seção (BM/4) — Modernização, Material Operacional, Armamento, Estatística, Suprimento e Orçamento",
+        "5ª Seção (BM/5) — Relações Públicas, Ação Comunitária e Comunicação Social"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior-Geral",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "Subchefe",
+            "Seções BM/1 a BM/5"
+          ],
+          "atribuicoes": [
+            "Responsável pela elaboração de diretrizes e ordens do Comando",
+            "Planejamento até aplicação dos trabalhos do EMG"
+          ]
+        },
+        {
+          "cargo": "Subchefe do Estado-Maior-Geral",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituto do Chefe do EMG; precedência funcional (exceto CG e Cmt. Adjunto)"
+          ]
+        },
+        {
+          "cargo": "Chefe da 1ª Seção (BM/1)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Pessoal e legislação"
+          ]
+        },
+        {
+          "cargo": "Chefe da 2ª Seção (BM/2)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Legislação técnica, pesquisa, perícias e prevenção"
+          ]
+        },
+        {
+          "cargo": "Chefe da 3ª Seção (BM/3)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Ensino, instrução, operações, comunicações e doutrina"
+          ]
+        },
+        {
+          "cargo": "Chefe da 4ª Seção (BM/4)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Modernização, material, armamento, estatística, suprimento e orçamento"
+          ]
+        },
+        {
+          "cargo": "Chefe da 5ª Seção (BM/5)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Relações públicas, ação comunitária e comunicação social"
+          ]
+        }
+      ],
+      "id": "emg-ma"
+    },
+    "gab-ma": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "Gab. CG",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 17 (Gabinete do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "Art. 17 — O Gabinete do Comandante-Geral, subordinado diretamente ao Comandante-Geral, em nível de Centro, tem a seu cargo as funções de assistência geral e assessoramento nos assuntos que não sejam às atribuições normais e específicas dos demais órgãos de direção e destina-se a dar flexibilidade à estrutura do Comando Geral da Corporação."
+      ],
+      "desdobramentos": [
+        "Ajudantes-de-Ordens"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "gab-ma"
+    },
+    "ag-ma": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AG",
+      "category": "Apoio",
+      "subordinadoA": "Comandante Adjunto",
+      "legalRef": "Art. 14",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 14 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "Art. 14 — A Ajudância-Geral, subordinada ao Comandante Adjunto, em nível de Centro, compete a publicação dos atos administrativos e auxiliar nas funções de administração e conservação das instalações físicas do Quartel do Comando Geral."
+      ],
+      "desdobramentos": [
+        "Seção de Administração e Expediente",
+        "Companhia de Guarda, Comando e Serviços",
+        "Banda de Música"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [
+            "Seção de Administração e Expediente",
+            "Companhia de Guarda, Comando e Serviços",
+            "Banda de Música"
+          ],
+          "atribuicoes": [
+            "Publicação de atos administrativos",
+            "Administração e conservação de instalações físicas"
+          ]
+        }
+      ],
+      "id": "ag-ma"
+    },
+    "ctrl-ma": {
+      "name": "Controladoria",
+      "abbreviation": "Ctrl",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 15",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 15 (Controladoria)"
+      ],
+      "atribuicoes": [
+        "Art. 15 — À Controladoria, como órgão de assessoramento e consultoria do Comando Geral em nível de Centro, compete a efetivação do controle financeiro, contábil, orçamentário, patrimonial e operacional, com foco na gestão das políticas públicas."
+      ],
+      "desdobramentos": [
+        "Seção de Planejamento e Controle",
+        "Subseção de Escrituração Fiscal e Contábil",
+        "Subseção de Avaliação e Controle"
+      ],
+      "cargos": [
+        {
+          "cargo": "Controlador",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [
+            "Seção de Planejamento e Controle"
+          ],
+          "atribuicoes": [
+            "Controle financeiro, contábil, orçamentário, patrimonial e operacional"
+          ]
+        }
+      ],
+      "id": "ctrl-ma"
+    },
+    "ouv-ma": {
+      "name": "Ouvidoria",
+      "abbreviation": "Ouv",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 16 (Ouvidoria)"
+      ],
+      "atribuicoes": [
+        "Art. 16 — À Ouvidoria, como órgão de assessoramento do Comando Geral, em nível de Centro, compete atender aos cidadãos em última instância, recebendo reclamações e denúncias, manifestações recorrentes ligadas a serviços e demandas não solucionadas de forma satisfatória nos canais habituais de atendimento, usando de imparcialidade e objetivando a melhoria de processos, práticas e procedimentos."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ouvidor",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "ouv-ma"
+    },
+    "dp-ma": {
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 1º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 1º (Diretoria de Pessoal)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 1º — À Diretoria de Pessoal compete o planejamento, coordenação, execução, controle e fiscalização relacionados a pessoal, além da assistência social e religiosa ao bombeiro militar."
+      ],
+      "desdobramentos": [
+        "Departamento de Recursos Humanos (Seção de Seleção e Recrutamento; Seção de Justiça e Disciplina)",
+        "Departamento de Assistência Psicossocial e Religiosa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dp-ma"
+    },
+    "df-ma": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 2º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 2º (Diretoria de Finanças)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 2º — À Diretoria de Finanças compete o funcionamento do sistema de administração financeira, programação, orçamento e contabilidade."
+      ],
+      "desdobramentos": [
+        "Departamento de Recursos Financeiros e Contábeis (Seção de Pagamento de Pessoal; Seção de Empenho)",
+        "Departamento de Contratos e Convênios"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "df-ma"
+    },
+    "dep-ma": {
+      "name": "Diretoria de Ensino e Pesquisa",
+      "abbreviation": "DEP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 3º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 3º (Diretoria de Ensino e Pesquisa)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 3º — À Diretoria de Ensino e Pesquisa compete o planejamento, coordenação, controle e fiscalização das atividades de formação, aperfeiçoamento e especialização nos diferentes níveis de ensino, do adestramento e da instrução."
+      ],
+      "desdobramentos": [
+        "Seção Técnica de Ensino",
+        "Seção de Cursos e Estágios",
+        "Academia de Bombeiro Militar",
+        "Colégios Militares"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino e Pesquisa",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dep-ma"
+    },
+    "dal-ma": {
+      "name": "Diretoria de Apoio Logístico",
+      "abbreviation": "DAL",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 4º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 4º (Diretoria de Apoio Logístico)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 4º — À Diretoria de Apoio Logístico compete o planejamento, aquisição, coordenação, fiscalização e controle de suprimento, material, equipamentos e viaturas, bem como, das atividades de manutenção de material e das instalações físicas."
+      ],
+      "desdobramentos": [
+        "Seção de Compras",
+        "Centro de Suprimento e Manutenção (Seção de Manutenção de Motomecanização; Seção de Manutenção de Comunicações)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Apoio Logístico",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dal-ma"
+    },
+    "dat-ma": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 5º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 5º (Diretoria de Atividades Técnicas)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 5º — À Diretoria de Atividades Técnicas compete o planejamento, fiscalização e controle das atividades de prevenção em locais de grande concentração humana, vistorias e pareceres técnicos, apoio operacional e auxílio dos serviços e missões específicas no âmbito estadual."
+      ],
+      "desdobramentos": [
+        "Departamento de Investigação e Prevenção de Incêndio (Seção de Prevenção e Perícia)",
+        "Departamento de Vistorias e Pareceres (Seção de Análise de Projetos; Seção de Operações)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dat-ma"
+    },
+    "di-ma": {
+      "name": "Diretoria de Inteligência",
+      "abbreviation": "DInt",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 6º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 6º (Diretoria de Inteligência)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 6º — À Diretoria de Inteligência compete o assessoramento direto ao Comandante-Geral nos assuntos pertinentes à informação, à inteligência e à contra-inteligência."
+      ],
+      "desdobramentos": [
+        "Departamento de Inteligência e Contra-Inteligência"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Inteligência",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "di-ma"
+    },
+    "dpm-ma": {
+      "name": "Diretoria de Planejamento e Modernização",
+      "abbreviation": "DPM",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13 e § 7º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 13 (Diretorias)",
+        "Art. 13 § 7º (Diretoria de Planejamento e Modernização)"
+      ],
+      "atribuicoes": [
+        "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+        "Art. 13, § 7º — À Diretoria de Planejamento e Modernização compete o planejamento orçamentário, a gestão de projetos, elaboração de planos de modernização da Institucional e a implementação de sistemas de tecnologia da informação."
+      ],
+      "desdobramentos": [
+        "Departamento de Planejamento Orçamentário (Seção de Avaliação e Controle de Metas; Seção de Gestão de Projetos)",
+        "Departamento de Tecnologia da Informação (Subseção de Suporte Técnico; Subseção de Sistemas)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Planejamento e Modernização",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "dpm-ma"
+    },
+    "abm-ma": {
+      "name": "Academia de Bombeiro Militar",
+      "abbreviation": "ABM",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino e Pesquisa",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 25 (Academia de Bombeiros Militar)"
+      ],
+      "atribuicoes": [
+        "Art. 25 — A Academia de Bombeiros Militar, órgão do sistema de ensino do Corpo de Bombeiros Militar do Maranhão, em nível de Centro, compete a organização dos cursos e estágios no âmbito da Corporação e controlar todas as atividades de ensino sob competência da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor da Academia de Bombeiro Militar",
+          "subordinadoA": "Diretor de Ensino e Pesquisa",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "abm-ma"
+    },
+    "col-ma": {
+      "name": "Colégio Militar",
+      "abbreviation": "Col. Mil.",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino e Pesquisa",
+      "legalRef": "Art. 27",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 27 (Colégio Militar)"
+      ],
+      "atribuicoes": [
+        "Art. 27 — Ao Colégio Militar, órgão em nível de Centro e subordinado à Diretoria de Ensino, compete, além das atribuições previstas em lei específica, o desenvolvimento educacional dos dependentes de bombeiros militares e da sociedade civil."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor do Colégio Militar",
+          "subordinadoA": "Diretor de Ensino e Pesquisa",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "col-ma"
+    },
+    "csm-ma": {
+      "name": "Centro de Suprimento e Manutenção",
+      "abbreviation": "CSM",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 26 (Centro de Suprimento e Manutenção)"
+      ],
+      "atribuicoes": [
+        "Art. 26 — Ao Centro de Suprimento e Manutenção, órgão subordinado à Diretoria de Apoio Logístico, compete as atividades de suprimento e da manutenção de viaturas, materiais e equipamentos da Corporação."
+      ],
+      "desdobramentos": [
+        "Seção de Manutenção de Motomecanização",
+        "Seção de Manutenção de Comunicações"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Suprimento e Manutenção",
+          "subordinadoA": "Diretor de Apoio Logístico",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "csm-ma"
+    },
+    "coord-medica-ma": {
+      "name": "Coordenadoria Médica de Saúde",
+      "abbreviation": "CMS",
+      "category": "Apoio",
+      "subordinadoA": "Comandante Adjunto",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 22 (Coordenadoria Médica de Saúde)"
+      ],
+      "atribuicoes": [
+        "Art. 22 — A Coordenadoria Médica de Saúde, órgão subordinado ao Comandante Adjunto, compete a assistência médica, farmacêutica e sanitária da família bombeiro militar."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Coordenador Médico de Saúde",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "coord-medica-ma"
+    },
+    "coord-odonto-ma": {
+      "name": "Coordenadoria de Serviços Odontológicos",
+      "abbreviation": "CSO",
+      "category": "Apoio",
+      "subordinadoA": "Comandante Adjunto",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 23 (Coordenadoria de Serviços Odontológicos)"
+      ],
+      "atribuicoes": [
+        "Art. 23 — A Coordenadoria de Serviços Odontológicos, órgão subordinado ao Comandante Adjunto, compete a assistência odontológica curativa e preventiva ao bombeiro militar e seus dependentes, observando às exigências sanitárias para este fim."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Serviços Odontológicos",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "coord-odonto-ma"
+    },
+    "coc-ma": {
+      "name": "Centro de Operações e Comunicações",
+      "abbreviation": "COC",
+      "category": "Apoio",
+      "subordinadoA": "Comando Operacional do CBM",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 24 (Centro de Operações e Comunicações)"
+      ],
+      "atribuicoes": [
+        "Art. 24 — O Centro de Operações e Comunicações, órgão subordinado ao Comando Operacional, compete o planejamento, coordenação, controle, fiscalização e execução das atividades operacionais e de comunicações, de pesquisas tecnológicas, de perícias e de prevenção de incêndios, além das atribuições específicas de planejamento em Proteção e Defesa Civil em sua área de circunscrição ao comando que estiver subordinado."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do COC",
+          "subordinadoA": "Comando Operacional do CBM",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "coc-ma"
+    },
+    "cmd-op-ma": {
+      "name": "Comandos Operacionais do Corpo de Bombeiros",
+      "abbreviation": "COCB",
+      "category": "Execução",
+      "subordinadoA": "Comandante Adjunto",
+      "legalRef": "Art. 29",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 29 (Comandos Operacionais)"
+      ],
+      "atribuicoes": [
+        "Art. 29 — Aos Comandos Operacionais, denominação genérica dada às organizações bombeiros militar operacionais de mais alto escalão, subordinados ao Comandante Adjunto, compete a aplicação da disciplina, o planejamento estratégico, a coordenação e o emprego de unidade e subunidade operacionais, com a finalidade de executar as atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e proteção e defesa civil, engenharia de segurança contra incêndio e pânico, além de outras conexas."
+      ],
+      "desdobramentos": [
+        "COCB-1 — São Luís (Microrregião Aglomeração Urbana de São Luís)",
+        "COECB — Comando Operacional Especializado (São Luís; atuação em todo o Estado)",
+        "COCB-2 — Itapecuru-Mirim (Microrregião de Itapecuru-Mirim)",
+        "COCB-3 — Imperatriz (Microrregião de Imperatriz)",
+        "COCB-4 — Balsas (Microrregião de Gerais de Balsas)",
+        "COCB-5 — Caxias",
+        "COCB-6 — Bacabal",
+        "COCB-7 — Pinheiro"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional do CBM",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "cmd-op-ma"
+    },
+    "bbm-ma": {
+      "name": "Batalhão de Bombeiros Militar",
+      "abbreviation": "BBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional do CBM",
+      "legalRef": "Art. 28 § 4º",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 28 § 4º (Batalhão de Bombeiros Militar)"
+      ],
+      "atribuicoes": [
+        "Art. 28, § 4º — Ao Batalhão de Bombeiros Militar e ao Batalhão de Bombeiros Militar Especializado compete o planejamento estratégico, coordenação e o emprego de unidade e subunidade operacionais, com a finalidade de executar as atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e proteção e defesa civil, engenharia de segurança contra incêndio e pânico, além de outras conexas."
+      ],
+      "desdobramentos": [
+        "1º BBM (São Luís — região Centro)",
+        "2º BBM (São Luís — CSU/COHAB)",
+        "3º BBM (Imperatriz)",
+        "4º BBM (Balsas)",
+        "9º BBM (Estreito)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Batalhão",
+          "subordinadoA": "Comando Operacional do CBM",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "bbm-ma"
+    },
+    "bbmar-ma": {
+      "name": "Batalhão de Bombeiros Marítimo",
+      "abbreviation": "BBMar",
+      "category": "Execução",
+      "subordinadoA": "COECB — Comando Operacional Especializado",
+      "legalRef": "Art. 28 § 5º e Art. 29 II",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 28 § 5º (Batalhão de Bombeiros Marítimo)"
+      ],
+      "atribuicoes": [
+        "Art. 28, § 5º — Ao Batalhão de Bombeiros Marítimo compete as missões de prevenção, busca, mergulho de resgate, guarda-vidas e salvamento aquático e as demais que lhes sejam conexas."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do BBMar",
+          "subordinadoA": "COECB",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "bbmar-ma"
+    },
+    "bbem-ma": {
+      "name": "Batalhão de Bombeiros de Emergências Médicas",
+      "abbreviation": "BBEM",
+      "category": "Execução",
+      "subordinadoA": "COECB — Comando Operacional Especializado",
+      "legalRef": "Art. 28 § 6º e Art. 29 II",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 28 § 6º (BBEM)"
+      ],
+      "atribuicoes": [
+        "Art. 28, § 6º — Ao Batalhão de Bombeiros de Emergências Médicas compete as missões de socorros de urgências e emergências, voltadas para o atendimento pré-hospitalar e as demais que lhes sejam conexas."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do BBEM",
+          "subordinadoA": "COECB",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "bbem-ma"
+    },
+    "bbs-ma": {
+      "name": "Batalhão de Busca e Salvamento",
+      "abbreviation": "BBS",
+      "category": "Execução",
+      "subordinadoA": "COECB — Comando Operacional Especializado",
+      "legalRef": "Art. 28 § 7º e Art. 29 II",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 28 § 7º (BBS)"
+      ],
+      "atribuicoes": [
+        "Art. 28, § 7º — Ao Batalhão de Bombeiros de Busca e Salvamento compete as missões de resgate, busca, salvamento terrestre e em altura e as demais que lhes sejam conexas."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do BBS",
+          "subordinadoA": "COECB",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "bbs-ma"
+    },
+    "bba-ma": {
+      "name": "Batalhão de Bombeiros Ambiental",
+      "abbreviation": "BBA",
+      "category": "Execução",
+      "subordinadoA": "COECB — Comando Operacional Especializado",
+      "legalRef": "Art. 28 § 8º e Art. 29 II",
+      "baseLegal": "Lei nº 10.230, de 23 de abril de 2015",
+      "artigosDeOrigem": [
+        "Art. 28 § 8º (BBA)"
+      ],
+      "atribuicoes": [
+        "Art. 28, § 8º — Ao Batalhão de Bombeiros Ambiental compete as missões de prevenção e combate a incêndios florestais, as relacionadas ao meio-ambiente e as demais que lhes sejam conexas."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do BBA",
+          "subordinadoA": "COECB",
+          "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+          "desdobramentos": [],
+          "atribuicoes": []
+        }
+      ],
+      "id": "bba-ma"
+    }
+  }
+}

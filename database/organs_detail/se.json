@@ -1,0 +1,847 @@
+{
+  "state_id": "se",
+  "state_name": "Sergipe",
+  "cbm_name": "Corpo de Bombeiros Militar de Sergipe",
+  "cbm_abbreviation": "CBMSE",
+  "legal_source": "Lei nº 8.979, de 03 de fevereiro de 2022",
+  "organs": {
+    "comando-geral": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 5º",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 5º (Comando-Geral)",
+        "Art. 7º (Atribuições do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "I - exercer a representação política e institucional do CBMSE, promovendo contatos e relações com autoridades e organizações de diferentes níveis governamentais;",
+        "II - promover a administração geral do CBMSE, em estrita observância às disposições normativas da Administração Pública Estadual;",
+        "III - aprovar o Regimento Interno do CBMSE, submetendo-o à homologação por decreto do Governador do Estado;",
+        "IV - assessorar o Governador do Estado e o Secretário de Estado da Segurança Pública nos assuntos de competência do CBMSE;",
+        "V - fazer cumprir as leis, normas e regulamentos da Corporação;",
+        "VI - proferir despachos finais em processos administrativos e operacionais que envolvam o efetivo sob seu comando;",
+        "VII - autorizar a abertura de processos licitatórios, homologando-os dentro dos limites de sua competência, e ratificar as dispensas ou declarações de inexigibilidade referentes às contratações diretas, nos termos da legislação específica;",
+        "VIII - aprovar a programação orçamentário-financeira a ser executada pelo CBMSE e pelos órgãos a ele subordinados, a proposta orçamentária anual e as alterações e ajustes que se fizerem necessários;",
+        "IX - expedir portarias, instruções normativas, ordens de serviço, diretrizes e planos que promovam a eficácia da gestão administrativa e operacional da instituição, em consonância com a legislação em vigor;",
+        "X - instaurar procedimentos de polícia judiciária militar e de polícia administrativa, bem como aplicar as sanções previstas na legislação em vigor;",
+        "XI - autorizar despesas nos limites de sua competência;",
+        "XII - delegar atribuições de sua competência que não sejam vedadas por lei;",
+        "XIII - aprovar os planos, estudos, programas, projetos e propostas para organização funcional e de atuação do CBMSE;",
+        "XIV - exercer a função de presidente do Alto-Comando do CBMSE;",
+        "XV - promover o controle e a supervisão dos órgãos subordinados;",
+        "XVI - presidir a Comissão de Promoção de Oficiais (CPO) e os respectivos processos e encaminhá-los para o Governador do Estado, a quem compete o ato da promoção;",
+        "XVII - atribuir outras atividades aos integrantes da corporação, além daquelas estabelecidas em leis ou regulamentos;",
+        "XVIII - coordenar e executar ações de defesa civil no âmbito de suas competências;",
+        "XIX - designar ocupantes dos órgãos integrantes da estrutura organizacional, ressalvada a competência do Governador do Estado;",
+        "XX - desempenhar outras atribuições que lhe forem delegadas pelo Governador do Estado ou pelo Secretário de Estado da Segurança Pública ou ainda por aquelas previstas em lei."
+      ],
+      "desdobramentos": [
+        "Comandante-Geral",
+        "Subcomandante-Geral (acumula Chefe do EMG)",
+        "Estado-Maior-Geral",
+        "Gabinete",
+        "Corregedoria-Geral",
+        "Controladoria Interna",
+        "Ouvidoria-Geral",
+        "Assessorias",
+        "Comissões Técnicas"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel do Quadro de Oficiais Combatentes (CFO, CAO e CSBM)",
+          "desdobramentos": [
+            "Subcomandante-Geral",
+            "Estado-Maior-Geral",
+            "Gabinete",
+            "Corregedoria-Geral",
+            "Controladoria Interna",
+            "Ouvidoria-Geral"
+          ],
+          "atribuicoes": [
+            "Comando, administração e emprego da Corporação",
+            "Aprovação do Regimento Interno e de planos e estudos",
+            "Autorização de processos licitatórios; expedição de portarias",
+            "Presidência do Alto-Comando e da Comissão de Promoção de Oficiais"
+          ]
+        }
+      ],
+      "id": "comando-geral"
+    },
+    "subcomandante-geral": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, 9º",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 8º (Subcomandante-Geral)",
+        "Art. 9º (Atribuições)"
+      ],
+      "atribuicoes": [
+        "I - exercer a função de Presidente da Comissão de Promoção de Praças (CPP);",
+        "II - substituir o Comandante-Geral em seus impedimentos;",
+        "III - fiscalizar a conduta civil e militar dos oficiais e praças do Corpo de Bombeiros Militar, respeitados os princípios da disciplina, hierarquia e ética do bombeiro militar;",
+        "IV - instaurar procedimentos investigatórios e processos administrativos disciplinares, bem como aplicar sanções disciplinares previstas na legislação em vigor a todos os que lhe estiverem subordinados;",
+        "V - promover e coordenar estudos estratégicos e sistêmicos sobre assuntos de ordem técnica, pertinentes à instituição;",
+        "VI - exercer outras atribuições que lhe forem delegadas pelo Comandante-Geral."
+      ],
+      "desdobramentos": [
+        "Acumula função de Chefe do Estado-Maior-Geral (Art. 8º §3º)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Combatentes (CFO, CAO e CSBM)",
+          "desdobramentos": [
+            "Chefe do Estado-Maior-Geral (função cumulativa)"
+          ],
+          "atribuicoes": [
+            "Substituto do Comandante-Geral em impedimentos",
+            "Presidência da Comissão de Promoção de Praças",
+            "Fiscalização da conduta civil e militar; instauração de procedimentos disciplinares"
+          ]
+        }
+      ],
+      "id": "subcomandante-geral"
+    },
+    "emg-se": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 10",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 10 (Estado-Maior-Geral)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior-Geral é o órgão de direção estratégica, responsável perante o Comandante-Geral, pelo planejamento, orientação, coordenação, fiscalização e execução das atividades relacionadas à gestão administrativa, visando à eficácia da instituição no cumprimento de suas atribuições (Art. 10)"
+      ],
+      "desdobramentos": [
+        "Chefe do Estado-Maior-Geral (acumulado pelo Subcomandante-Geral)",
+        "Corregedor-Geral",
+        "Titulares de Diretorias"
+      ],
+      "cargos": [
+        {
+          "cargo": "Estado-Maior-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Órgão de direção estratégica",
+          "desdobramentos": [
+            "Chefe do EMG",
+            "Corregedor-Geral",
+            "Titulares de diretorias de nível de direção-geral"
+          ],
+          "atribuicoes": [
+            "Planejamento, orientação, coordenação, fiscalização e execução de atividades administrativas"
+          ]
+        }
+      ],
+      "id": "emg-se"
+    },
+    "gabinete-se": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "Gab",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 11, 12",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 11 (Gabinete)",
+        "Art. 12 (Chefia de Gabinete)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comandante-Geral compete o assessoramento direto ao Comandante-Geral (Art. 11)"
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Ajudância de Ordens",
+        "Ajudância-Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior QOBM",
+          "desdobramentos": [
+            "Ajudância de Ordens",
+            "Ajudância-Geral"
+          ],
+          "atribuicoes": [
+            "Assessoramento direto ao Comandante-Geral e Subcomandante-Geral",
+            "Administração do Quartel do Comando-Geral; expediente, secretaria, protocolo e arquivo"
+          ]
+        }
+      ],
+      "id": "gabinete-se"
+    },
+    "ajudancia-geral-se": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AjG",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 14",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 14 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "À Ajudância-Geral compete a administração do Quartel do Comando-Geral, considerado como Organização Bombeiro Militar, bem como do expediente, da execução dos trabalhos de secretaria, incluindo a correspondência, correio, redação do boletim diário, do protocolo e arquivo geral e biblioteca, do apoio em pessoal aos órgãos que compõem o Comando-Geral, dos serviços gerais, do Centro de Memória e da segurança do Quartel do Comando-Geral (Art. 14)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Ajudância-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior QOBM (Art. 14 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefia da Ajudância-Geral (Art. 14)"
+          ]
+        }
+      ],
+      "id": "ajudancia-geral-se"
+    },
+    "corregedoria-geral-se": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "Corr-G",
+      "category": "Disciplina",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 15",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 15 (Corregedoria-Geral)"
+      ],
+      "atribuicoes": [
+        "A Corregedoria-Geral do Corpo de Bombeiros Militar é o órgão responsável pela sistematização e controle das atividades de correição funcional, de caráter disciplinar, administrativo ou de polícia judiciária militar (Art. 15)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Sistematização e controle de correição funcional",
+            "Atividades de caráter disciplinar e polícia judiciária militar"
+          ]
+        }
+      ],
+      "id": "corregedoria-geral-se"
+    },
+    "controladoria-interna-se": {
+      "name": "Controladoria Interna",
+      "abbreviation": "CI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 16 (Controladoria Interna)"
+      ],
+      "atribuicoes": [
+        "A Controladoria Interna é o órgão de assessoramento e consultoria que tem como finalidade a efetivação do controle financeiro, contábil, orçamentário, patrimonial e operacional da instituição, com foco na gestão das políticas públicas (Art. 16)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Controladoria Interna",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Controle financeiro, contábil, orçamentário, patrimonial e operacional"
+          ]
+        }
+      ],
+      "id": "controladoria-interna-se"
+    },
+    "ouvidoria-geral-se": {
+      "name": "Ouvidoria-Geral",
+      "abbreviation": "Ouv-G",
+      "category": "Transparência",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 17 (Ouvidoria-Geral)"
+      ],
+      "atribuicoes": [
+        "A Ouvidoria-Geral é o órgão que tem como finalidade prestar informações e dar transparência às ações e atividades executadas pela instituição, competindo-lhe planejar, controlar e executar as atividades relacionadas ao Sistema Administrativo de Ouvidoria do Estado, sem prejuízo de outras atribuições previstas em lei (Art. 17)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ouvidor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Prestação de informações e transparência das ações executadas"
+          ]
+        }
+      ],
+      "id": "ouvidoria-geral-se"
+    },
+    "dlog-se": {
+      "name": "Diretoria de Logística",
+      "abbreviation": "DLOG",
+      "category": "Direção Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 22, 23",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 22 (Órgãos de Direção-Geral)",
+        "Art. 23 (DLOG)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Logística — DLOG é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle das atividades relacionadas à logística e patrimônio do CBMSE (Art. 23)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão, planejamento, coordenação, execução, fiscalização e controle de logística e patrimônio"
+          ]
+        }
+      ],
+      "id": "dlog-se"
+    },
+    "dfin-se": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DFIN",
+      "category": "Direção Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 24 (DFIN)"
+      ],
+      "atribuicoes": [
+        "A Diretoria Financeira — DFIN é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle das atividades do sistema de administração financeira e contábil do CBMSE (Art. 24)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão e controle de administração financeira e contábil"
+          ]
+        }
+      ],
+      "id": "dfin-se"
+    },
+    "dgp-se": {
+      "name": "Diretoria de Gestão de Pessoal",
+      "abbreviation": "DGP",
+      "category": "Direção Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 25 (DGP)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Gestão de Pessoal — DGP é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle das atividades relativas à gestão de pessoal e desenvolvimento de recursos humanos do CBMSE (Art. 25)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão de Pessoal",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de pessoal e desenvolvimento de recursos humanos"
+          ]
+        }
+      ],
+      "id": "dgp-se"
+    },
+    "dep-se": {
+      "name": "Diretoria de Ensino e Pesquisa",
+      "abbreviation": "DEP",
+      "category": "Direção Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 26 (DEP)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Ensino e Pesquisa — DEP é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle das atividades referentes ao ensino, fomentando a pesquisa e viabilizando a instrução continuada dos quadros no âmbito do CBMSE (Art. 26)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino e Pesquisa",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de ensino e pesquisa; instrução continuada dos quadros"
+          ]
+        }
+      ],
+      "id": "dep-se"
+    },
+    "dplan-se": {
+      "name": "Diretoria de Planejamento",
+      "abbreviation": "DPLAN",
+      "category": "Direção Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 27",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 27 (DPLAN)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Planejamento — DPLAN é responsável pela gestão, planejamento das políticas públicas e estratégias institucionais, orientação e execução da programação orçamentária, consolidação dos planos, programas e projetos e acompanhamento e avaliação das ações governamentais, no âmbito do CBMSE (Art. 27)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Planejamento",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de políticas públicas e estratégias institucionais",
+            "Orientação e execução da programação orçamentária"
+          ]
+        }
+      ],
+      "id": "dplan-se"
+    },
+    "dat-se": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Direção Operacional",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 28, 29",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 28 (Órgãos de Direção Operacional)",
+        "Art. 29 (DAT)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Atividades Técnicas — DAT é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle de todas as atividades concernentes à segurança contra incêndio e pânico das instalações, edificações e locais de risco, no âmbito do Estado de Sergipe (Art. 29)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Diretor e Diretor-Adjunto (Tenente-Coronel)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão e controle de segurança contra incêndio e pânico"
+          ]
+        }
+      ],
+      "id": "dat-se"
+    },
+    "dop-se": {
+      "name": "Diretoria Operacional",
+      "abbreviation": "DOP",
+      "category": "Direção Operacional",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 30 (DOP)"
+      ],
+      "atribuicoes": [
+        "A Diretoria Operacional — DOP é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle das atividades operacionais e na execução das atividades de proteção e defesa civil, sendo responsável pela coordenação e emprego dos Comandos Regionais e Unidades Operacionais, que lhes são subordinadas (Art. 30)"
+      ],
+      "desdobramentos": [
+        "Comandos Regionais Bombeiro Militar (CRBM)",
+        "Grupamentos Bombeiro Militar (GBM)",
+        "Grupamentos Especializados (GBS, GOA)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Operacional",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Diretor e Diretor-Adjunto (Tenente-Coronel)",
+          "desdobramentos": [
+            "Comandos Regionais (CRM, CRAS, CRMS, CRCS, CRS, CRL, CRA, CRBSF)",
+            "Grupamentos"
+          ],
+          "atribuicoes": [
+            "Gestão e controle de atividades operacionais e de proteção e defesa civil",
+            "Coordenação e emprego dos Comandos Regionais e Unidades"
+          ]
+        },
+        {
+          "cargo": "Superior de Dia ao CBMSE",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficiais Superiores (escala)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Fiscalização e decisões operacionais; comparecimento a sinistros de médio/grande porte",
+            "Acionamento do Plano de Chamada em grandes sinistros"
+          ]
+        },
+        {
+          "cargo": "Supervisor de Dia ao CBMSE",
+          "subordinadoA": "Diretoria Operacional / Superior de Dia",
+          "requisito": "Oficiais Intermediários (excepcionalmente Subalternos)",
+          "desdobramentos": [
+            "Centro de Operações"
+          ],
+          "atribuicoes": [
+            "Serviço de nível tático; triagem de solicitações e despacho de guarnições",
+            "Supervisão e distribuição de ocorrências; remanejamento de recursos"
+          ]
+        }
+      ],
+      "id": "dop-se"
+    },
+    "crm-se": {
+      "name": "Comando Regional Metropolitano",
+      "abbreviation": "CRM",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, I",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 (Comandos Regionais)",
+        "Art. 35 §2º I"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "1º GBM — Aracaju",
+        "4º GBM — Nossa Senhora do Socorro (CRM/CRL)",
+        "8º GBM — Barra dos Coqueiros"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Comando Regional Bombeiro Militar (CRBM)",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM",
+          "desdobramentos": [
+            "Grupamentos Bombeiro Militar (1º ao 8º GBM)"
+          ],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas (por AISP)"
+          ]
+        }
+      ],
+      "id": "crm-se"
+    },
+    "cras-se": {
+      "name": "Comando Regional do Alto Sertão",
+      "abbreviation": "CRAS",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, II",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º II"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Alto Sertão",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "cras-se"
+    },
+    "crms-se": {
+      "name": "Comando Regional do Médio Sertão",
+      "abbreviation": "CRMS",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, III",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º III"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Médio Sertão",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "crms-se"
+    },
+    "crcs-se": {
+      "name": "Comando Regional do Centro Sul",
+      "abbreviation": "CRCS",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, IV",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º IV"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "5º GBM — Lagarto"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Centro Sul",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "crcs-se"
+    },
+    "crs-se": {
+      "name": "Comando Regional do Sul",
+      "abbreviation": "CRS",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, V",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º V"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "2º GBM — Estância"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Sul",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "crs-se"
+    },
+    "crl-se": {
+      "name": "Comando Regional do Leste",
+      "abbreviation": "CRL",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, VI",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º VI"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "4º GBM — Nossa Senhora do Socorro (CRM/CRL)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Leste",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "crl-se"
+    },
+    "cra-se": {
+      "name": "Comando Regional do Agreste",
+      "abbreviation": "CRA",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, VII",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º VII"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "3º GBM — Itabaiana"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Agreste",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "cra-se"
+    },
+    "crbsf-se": {
+      "name": "Comando Regional do Baixo São Francisco",
+      "abbreviation": "CRBSF",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35, VIII",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 §2º VIII"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar — CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35)"
+      ],
+      "desdobramentos": [
+        "6º GBM — Propriá"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Comando Regional do Baixo São Francisco",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 35 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas na AISP correspondente (Art. 35)"
+          ]
+        }
+      ],
+      "id": "crbsf-se"
+    },
+    "gbm-se": {
+      "name": "Grupamentos Bombeiro Militar",
+      "abbreviation": "GBM",
+      "category": "Execução",
+      "subordinadoA": "Comandos Regionais Bombeiro Militar",
+      "legalRef": "Art. 36, 37",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 36 (Unidades)",
+        "Art. 37 (GBMs)"
+      ],
+      "atribuicoes": [
+        "As Unidades, também denominadas de Grupamentos, realizam a execução das atividades operacionais e de apoio da Corporação (Art. 36)"
+      ],
+      "desdobramentos": [
+        "1º GBM — Aracaju (CRM)",
+        "2º GBM — Estância (CRS)",
+        "3º GBM — Itabaiana (CRA)",
+        "4º GBM — Nossa Senhora do Socorro (CRM/CRL)",
+        "5º GBM — Lagarto (CRCS)",
+        "6º GBM — Propriá (CRBSF)",
+        "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)",
+        "8º GBM — Barra dos Coqueiros (CRM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de GBM",
+          "subordinadoA": "Comando Regional Bombeiro Militar",
+          "requisito": "Oficial Superior QOBM (Art. 37 parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Execução das atividades operacionais e de apoio da Corporação na área do Grupamento (Art. 36, 37)"
+          ]
+        }
+      ],
+      "id": "gbm-se"
+    },
+    "gbs-se": {
+      "name": "Grupamento de Busca e Salvamento",
+      "abbreviation": "GBS",
+      "category": "Execução Especializada",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 39, I",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 38 (Grupamentos Especializados)",
+        "Art. 39 I (GBS)"
+      ],
+      "atribuicoes": [
+        "Os Grupamentos Especializados têm a seu encargo o planejamento e controle das atividades a eles correlatas e realizam missões específicas de cada área (Art. 38)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do GBS",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 38)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Grupamento de Busca e Salvamento (Art. 38, 39 I)"
+          ]
+        }
+      ],
+      "id": "gbs-se"
+    },
+    "goa-se": {
+      "name": "Grupamento de Operações Aéreas",
+      "abbreviation": "GOA",
+      "category": "Execução Especializada",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 39, II",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022",
+      "artigosDeOrigem": [
+        "Art. 38 (Grupamentos Especializados)",
+        "Art. 39 II (GOA)"
+      ],
+      "atribuicoes": [
+        "Os Grupamentos Especializados têm a seu encargo o planejamento e controle das atividades a eles correlatas e realizam missões específicas de cada área (Art. 38)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do GOA",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "Oficial Superior QOBM (Art. 38)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Grupamento de Operações Aéreas (Art. 38, 39 II)"
+          ]
+        }
+      ],
+      "id": "goa-se"
+    }
+  }
+}

@@ -1,0 +1,1121 @@
+{
+  "state_id": "rr",
+  "state_name": "Roraima",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado de Roraima",
+  "cbm_abbreviation": "CBMRR",
+  "legal_source": "Lei Complementar nº 52, de 28 de dezembro de 2001 (alt. até LC nº 275/2018)",
+  "organs": {
+    "cg-rr": {
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Administração Superior",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 11",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 11 (Comando Geral)",
+        "Art. 12 (Comandante Geral)",
+        "Art. 13 (Subcomandante Geral)"
+      ],
+      "atribuicoes": [
+        "Órgão máximo executivo do Corpo de Bombeiros Militar de Roraima, incumbido da administração da instituição"
+      ],
+      "desdobramentos": [
+        "Comandante Geral",
+        "Subcomandante Geral",
+        "Gabinete",
+        "Corregedoria Geral",
+        "Estado Maior Geral",
+        "Comissão de Avaliação e Mérito",
+        "Ajudância Geral",
+        "Centro Cultural",
+        "Coordenadoria Estadual de Proteção e Defesa Civil",
+        "Comissões",
+        "Diretoria de Inteligência"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial da ativa do último posto do quadro de combatentes (QOCBM); honras e prerrogativas de Secretário de Estado",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pela administração geral da instituição",
+            "Acumula o cargo de Coordenador Estadual de Proteção e Defesa Civil"
+          ]
+        },
+        {
+          "cargo": "Subcomandante Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial da ativa do quadro de combatentes; honras de Secretário de Estado Adjunto",
+          "desdobramentos": [
+            "Chefe do Estado Maior Geral Bombeiro Militar"
+          ],
+          "atribuicoes": [
+            "Substituto eventual do Comandante Geral",
+            "Chefe do Estado Maior Geral Bombeiro Militar"
+          ]
+        }
+      ],
+      "id": "cg-rr"
+    },
+    "gab-rr": {
+      "name": "Gabinete do Comandante Geral",
+      "abbreviation": "GAB",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 14-19",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 14 (Gabinete)",
+        "Art. 15-19 (Estrutura)"
+      ],
+      "atribuicoes": [
+        "Supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante Geral"
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Secretaria",
+        "Assessoria de Comunicação e Imprensa (ACI)",
+        "Comissão de Justiça (CJ)",
+        "Ajudância de Ordens"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Secretaria",
+            "ACI",
+            "Comissão de Justiça",
+            "Ajudância de Ordens"
+          ],
+          "atribuicoes": [
+            "Funções de assistência e assessoramento direto ao Comandante Geral nos assuntos que fogem às atribuições normais dos demais órgãos de direção"
+          ]
+        },
+        {
+          "cargo": "Presidente da Comissão de Justiça",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial; obrigatório um advogado civil; pode ser dirigida por um procurador",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Execução das atividades de assessoria jurídica à instituição"
+          ]
+        }
+      ],
+      "id": "gab-rr"
+    },
+    "correg-rr": {
+      "name": "Corregedoria Geral",
+      "abbreviation": "Correg",
+      "category": "Administração Superior",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 20 (Corregedoria Geral)"
+      ],
+      "atribuicoes": [
+        "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos servidores da instituição",
+        "Apuração de responsabilidade criminal, administrativa e disciplinar"
+      ],
+      "desdobramentos": [
+        "Chefia da Corregedoria",
+        "Seção Administrativa",
+        "Cartório",
+        "Seção de Investigação",
+        "Ouvidoria"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe da Corregedoria",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Seção Administrativa",
+            "Cartório",
+            "Seção de Investigação",
+            "Ouvidoria"
+          ],
+          "atribuicoes": [
+            "Disciplina, orientação e fiscalização das atividades funcionais"
+          ]
+        }
+      ],
+      "id": "correg-rr"
+    },
+    "cam-rr": {
+      "name": "Comissão de Avaliação e Mérito",
+      "abbreviation": "CAM",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 22 (Comissão de Avaliação e Mérito)"
+      ],
+      "atribuicoes": [
+        "Órgão de assessoramento permanente do Comandante Geral",
+        "Controle, avaliação e processamento das promoções de oficiais e de praças"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Presidente da Comissão de Avaliação e Mérito",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "À Comissão de Avaliação e Mérito, órgão de assessoramento permanente do Comandante Geral, compete o controle, avaliação e processamento das promoções de oficiais e de praças (LC nº 52/2001, Art. 22)"
+          ]
+        }
+      ],
+      "id": "cam-rr"
+    },
+    "ag-rr": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AG",
+      "category": "Suporte",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 21",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 21 (Ajudância Geral)"
+      ],
+      "atribuicoes": [
+        "OBM de suporte com as funções administrativas do Quartel do Comando Geral, inclusive o controle de todo o seu pessoal"
+      ],
+      "desdobramentos": [
+        "Secretaria Geral",
+        "Seção Administrativa",
+        "Seção de Protocolo e Distribuição",
+        "Seção de Transporte e Embarque",
+        "Companhia de Comando e Serviços",
+        "Centro de Saúde"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante Geral",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Companhia de Comando e Serviços",
+            "Centro de Saúde"
+          ],
+          "atribuicoes": [
+            "Funções administrativas do Quartel do Comando Geral"
+          ]
+        }
+      ],
+      "id": "ag-rr"
+    },
+    "ccult-rr": {
+      "name": "Centro Cultural",
+      "abbreviation": "CCult",
+      "category": "Administração Superior",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 23 (Centro Cultural)"
+      ],
+      "atribuicoes": [
+        "Administração das atividades socioculturais, particularmente as relacionadas à banda de música e à preservação da memória institucional"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa",
+        "Museu do Corpo de Bombeiro Militar",
+        "Banda de Música"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Centro Cultural",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial do QOCBM",
+          "desdobramentos": [
+            "Seção Administrativa",
+            "Museu do Corpo de Bombeiro Militar",
+            "Banda de Música"
+          ],
+          "atribuicoes": [
+            "O Centro Cultural, subordinado diretamente ao Comandante Geral, é o órgão encarregado da administração das atividades socioculturais, particularmente as relacionadas à banda de música e à preservação da memória institucional (LC nº 52/2001, Art. 23)"
+          ]
+        }
+      ],
+      "id": "ccult-rr"
+    },
+    "cepdec-rr": {
+      "name": "Coordenadoria Estadual de Proteção e Defesa Civil",
+      "abbreviation": "CEPDEC",
+      "category": "Administração Superior",
+      "subordinadoA": "Comandante Geral (Coordenador Estadual)",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001 (alt. LC nº 257/2017 e LC nº 265/2018)",
+      "artigosDeOrigem": [
+        "Art. 24 (CEPDEC)"
+      ],
+      "atribuicoes": [
+        "Órgão de direção geral que centraliza o sistema Estadual de Proteção e Defesa Civil de Roraima",
+        "Estabelecer normas e exercer atividades de integrar, planejar, organizar, coordenar e supervisionar as medidas preventivas, de socorro, assistência e recuperação nas situações de emergência ou calamidade pública"
+      ],
+      "desdobramentos": [
+        "Coordenador Estadual de Proteção e Defesa Civil",
+        "Diretor Executivo de Proteção e Defesa Civil",
+        "Coordenadores Regionais (Capital, Centro Sul, Sul, Norte e Leste)",
+        "Divisão de Prevenção, Mitigação e Preparação",
+        "Divisão de Resposta ao Desastre",
+        "Divisão de Recuperação de Cenário de Desastre",
+        "Divisão Administrativa",
+        "Gerências (Ação Comunitária, Minimização de Desastre, Monitoramento, Logística, Engenharia, Hidrologia, Meteorologia, entre outras)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador Estadual de Proteção e Defesa Civil",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Comandante Geral do CBMRR (acumulação ex officio)",
+          "desdobramentos": [
+            "Diretor Executivo de Proteção e Defesa Civil"
+          ],
+          "atribuicoes": [
+            "A Coordenadoria Estadual de Defesa Civil — CEDEC, é o órgão de direção geral, que centraliza o sistema estadual de defesa civil de Roraima e tem por finalidade estabelecer normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de socorro, de assistência e de recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens nas situações de emergência ou estado de calamidade pública (LC nº 52/2001, Art. 24)"
+          ]
+        },
+        {
+          "cargo": "Diretor Executivo de Proteção e Defesa Civil",
+          "subordinadoA": "Coordenador Estadual de Proteção e Defesa Civil",
+          "requisito": "Oficial do CBMRR",
+          "desdobramentos": [
+            "Coordenadores Regionais",
+            "Divisões de Prevenção, Resposta e Recuperação",
+            "Divisão Administrativa"
+          ],
+          "atribuicoes": [
+            "Direção executiva da Coordenadoria Estadual de Proteção e Defesa Civil (CEPDEC), coordenando as atividades de prevenção, mitigação, preparação, resposta e recuperação em situações de emergência ou calamidade pública (LC nº 52/2001, Art. 24 §1°)"
+          ]
+        }
+      ],
+      "id": "cepdec-rr"
+    },
+    "dint-rr": {
+      "name": "Diretoria de Inteligência",
+      "abbreviation": "DINT",
+      "category": "Administração Superior",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 25-A",
+      "baseLegal": "Lei Complementar nº 52/2001 (incl. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 25-A (Diretoria de Inteligência)"
+      ],
+      "atribuicoes": [
+        "Exercício sistemático de ações especializadas voltadas para a obtenção, produção de dados e conhecimentos e salvaguarda destes",
+        "Assessorar o Comandante Geral no planejamento, acompanhamento e execução de políticas e atos decisórios",
+        "Identificação, avaliação e neutralização de atividades de inteligência adversas"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Inteligência",
+        "Subdiretoria de Contra Inteligência e Segurança Institucional",
+        "Subdiretoria de Operações de Inteligência",
+        "Subdiretoria de Registro e Porte de Arma de Fogo",
+        "Subdiretoria de Expediente"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Inteligência",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Inteligência",
+            "Subdiretoria de Contra Inteligência e Segurança Institucional",
+            "Subdiretoria de Operações de Inteligência",
+            "Subdiretoria de Registro e Porte de Arma de Fogo",
+            "Subdiretoria de Expediente"
+          ],
+          "atribuicoes": [
+            "Exercício sistemático de ações especializadas voltadas para a obtenção, produção de dados e conhecimentos e salvaguarda destes, assessorando o Comandante Geral no planejamento, acompanhamento e execução de políticas e atos decisórios, bem como na identificação, avaliação e neutralização de atividades de inteligência adversas (LC nº 52/2001, Art. 25-A, incl. LC nº 257/2017)"
+          ]
+        }
+      ],
+      "id": "dint-rr"
+    },
+    "emg-rr": {
+      "name": "Estado Maior Geral Bombeiro Militar",
+      "abbreviation": "EMG",
+      "category": "Administração Superior",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 26-27",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 26 (EMG)",
+        "Art. 27 (Estrutura)",
+        "Arts. 29-35 (Diretorias)"
+      ],
+      "atribuicoes": [
+        "OBM de Atuação Colegiada, de caráter permanente",
+        "Definição das políticas, estabelecimento das diretrizes e ordens do Comando Geral em nível estratégico",
+        "Elaboração dos planos gerais da corporação"
+      ],
+      "desdobramentos": [
+        "Chefe (Subcomandante Geral)",
+        "Diretoria de Pessoal e Legislação (DPL)",
+        "Diretoria de Informática e Estatísticas (DIE)",
+        "Diretoria de Ensino, Instrução e Pesquisa (DEIP)",
+        "Diretoria de Logística (DLOG)",
+        "Diretoria de Prevenção e Serviços Técnicos (DPST)",
+        "Diretoria de Assuntos Civis e Relações Públicas (DACRP)",
+        "Diretoria de Gestão Orçamentária e Financeira (DGOF)",
+        "Diretoria de Controle Interno (DCI)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado Maior Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Subcomandante Geral (Coronel QOCBM)",
+          "desdobramentos": [
+            "Diretorias do EMG (DPL, DIE, DEIP, DLOG, DPST, DACRP, DGOF, DCI)"
+          ],
+          "atribuicoes": [
+            "Direção do Estado Maior Geral"
+          ]
+        }
+      ],
+      "id": "emg-rr"
+    },
+    "dpl-rr": {
+      "name": "Diretoria de Pessoal e Legislação",
+      "abbreviation": "DPL",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 29",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 29 (DPL)"
+      ],
+      "atribuicoes": [
+        "Gestão de pessoal ativo, inativo e pensionista, identificação, folha de pagamento e legislação"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Pessoal Ativo",
+        "Subdiretoria de Pessoal Inativo e Pensionista",
+        "Subdiretoria de Identificação",
+        "Subdiretoria de Expediente",
+        "Subdiretoria de Folha de Pagamento",
+        "Subdiretoria de Legislação"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal e Legislação",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Pessoal Ativo",
+            "Subdiretoria de Pessoal Inativo e Pensionista",
+            "Subdiretoria de Identificação",
+            "Subdiretoria de Expediente",
+            "Subdiretoria de Folha de Pagamento",
+            "Subdiretoria de Legislação"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Pessoal e Legislação tem por competência a gestão de pessoal ativo, inativo e pensionista, identificação, folha de pagamento e legislação da corporação (LC nº 52/2001, Art. 29)"
+          ]
+        }
+      ],
+      "id": "dpl-rr"
+    },
+    "die-rr": {
+      "name": "Diretoria de Informática e Estatísticas",
+      "abbreviation": "DIE",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 30",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 30 (DIE)"
+      ],
+      "atribuicoes": [
+        "Gestão das atividades de informática e estatística da corporação"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Expediente",
+        "Centro de Estatística (CEST)",
+        "Centro de Informática (CINFOR)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Informática e Estatísticas",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Expediente",
+            "Centro de Estatística (CEST)",
+            "Centro de Informática (CINFOR)"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Informática e Estatísticas tem por competência a gestão das atividades de informática e estatística da corporação (LC nº 52/2001, Art. 30, alt. LC nº 257/2017)"
+          ]
+        }
+      ],
+      "id": "die-rr"
+    },
+    "deip-rr": {
+      "name": "Diretoria de Ensino, Instrução e Pesquisa",
+      "abbreviation": "DEIP",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 31",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 31 (DEIP)"
+      ],
+      "atribuicoes": [
+        "Planejamento e organização do ensino, instrução, operação e pesquisa"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Expediente",
+        "Subdiretoria de Planejamento e Organização Operacional",
+        "Centro de Operações e Comunicações de Bombeiros (COCB)",
+        "Centro de Ensino e Instrução de Bombeiros (CEIB)",
+        "Centro de Educação Física e Desportos (CEFID)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino, Instrução e Pesquisa",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Expediente",
+            "Subdiretoria de Planejamento e Organização Operacional",
+            "Centro de Operações e Comunicações de Bombeiros (COCB)",
+            "Centro de Ensino e Instrução de Bombeiros (CEIB)",
+            "Centro de Educação Física e Desportos (CEFID)"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Ensino, Instrução e Pesquisa tem por competência o planejamento e organização do ensino, instrução, operação e pesquisa da corporação (LC nº 52/2001, Art. 31, alt. LC nº 257/2017)"
+          ]
+        }
+      ],
+      "id": "deip-rr"
+    },
+    "dlog-rr": {
+      "name": "Diretoria de Logística",
+      "abbreviation": "DLOG",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 32",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 265/2018)",
+      "artigosDeOrigem": [
+        "Art. 32 (DLOG)"
+      ],
+      "atribuicoes": [
+        "Gestão das atividades de suprimento, material e manutenção da corporação"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Expediente",
+        "Centro de Suprimento e Material (CSM)",
+        "Centro de Manutenção (CEMAN)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Expediente",
+            "Centro de Suprimento e Material (CSM)",
+            "Centro de Manutenção (CEMAN)"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Logística tem por competência a gestão das atividades de suprimento, material e manutenção da corporação (LC nº 52/2001, Art. 32, alt. LC nº 265/2018)"
+          ]
+        }
+      ],
+      "id": "dlog-rr"
+    },
+    "dpst-rr": {
+      "name": "Diretoria de Prevenção e Serviços Técnicos",
+      "abbreviation": "DPST",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 33",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 33 (DPST)"
+      ],
+      "atribuicoes": [
+        "Gestão das atividades de prevenção, vistoria, análise de projetos e investigação de incêndio"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Hidrantes",
+        "Centro de Vistoria e Análise de Projeto (CVAP)",
+        "Centro de Investigação e Prevenção de Incêndio (CIPI)",
+        "Subdiretoria de Expediente"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Prevenção e Serviços Técnicos",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Hidrantes",
+            "Centro de Vistoria e Análise de Projeto (CVAP)",
+            "Centro de Investigação e Prevenção de Incêndio (CIPI)",
+            "Subdiretoria de Expediente"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Prevenção e Serviços Técnicos tem por competência a gestão das atividades de prevenção, vistoria, análise de projetos e investigação de incêndio da corporação (LC nº 52/2001, Art. 33)"
+          ]
+        }
+      ],
+      "id": "dpst-rr"
+    },
+    "dacrp-rr": {
+      "name": "Diretoria de Assuntos Civis e Relações Públicas",
+      "abbreviation": "DACRP",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 34",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 34 (DACRP)"
+      ],
+      "atribuicoes": [
+        "Gestão dos assuntos civis, relações públicas e cerimonial da corporação"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Expediente",
+        "Subdiretoria de Assuntos Civis",
+        "Subdiretoria de Relações Públicas",
+        "Centro de Cerimonial"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Assuntos Civis e Relações Públicas",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Expediente",
+            "Subdiretoria de Assuntos Civis",
+            "Subdiretoria de Relações Públicas",
+            "Centro de Cerimonial"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Assuntos Civis e Relações Públicas tem por competência a gestão dos assuntos civis, relações públicas e cerimonial da corporação (LC nº 52/2001, Art. 34, alt. LC nº 257/2017)"
+          ]
+        }
+      ],
+      "id": "dacrp-rr"
+    },
+    "dgof-rr": {
+      "name": "Diretoria de Gestão Orçamentária e Financeira",
+      "abbreviation": "DGOF",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 35",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 35 (DGOF)"
+      ],
+      "atribuicoes": [
+        "Planejamento administrativo, orçamentário, execução financeira, gestão de projetos estratégicos, licitação, contratos e convênios",
+        "Gestão do Fundo de Reequipamento e de Saúde do CBM"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Expediente",
+        "Subdiretoria de Planejamento Administrativo",
+        "Subdiretoria de Planejamento Orçamentário",
+        "Subdiretoria de Execução Financeira",
+        "Subdiretoria de Gestão de Projetos Estratégicos",
+        "Subdiretoria de Licitação, Contratos e Convênios",
+        "Subdiretoria de Gestão do Fundo de Reequipamento e de Saúde do CBM"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão Orçamentária e Financeira",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Subdiretoria de Expediente",
+            "Subdiretoria de Planejamento Administrativo",
+            "Subdiretoria de Planejamento Orçamentário",
+            "Subdiretoria de Execução Financeira",
+            "Subdiretoria de Gestão de Projetos Estratégicos",
+            "Subdiretoria de Licitação, Contratos e Convênios",
+            "Subdiretoria de Gestão do Fundo de Reequipamento e de Saúde do CBM"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Gestão Orçamentária e Financeira tem por competência o planejamento administrativo, orçamentário, execução financeira, gestão de projetos estratégicos, licitação, contratos e convênios, e gestão do Fundo de Reequipamento e de Saúde do CBM (LC nº 52/2001, Art. 35, alt. LC nº 257/2017)"
+          ]
+        }
+      ],
+      "id": "dgof-rr"
+    },
+    "dci-rr": {
+      "name": "Diretoria de Controle Interno",
+      "abbreviation": "DCI",
+      "category": "Administração Superior (EMG)",
+      "subordinadoA": "Estado Maior Geral Bombeiro Militar",
+      "legalRef": "Art. 35-A",
+      "baseLegal": "Lei Complementar nº 52/2001 (incl. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 35-A (DCI)"
+      ],
+      "atribuicoes": [
+        "Controle interno da corporação"
+      ],
+      "desdobramentos": [
+        "Comissão de Controle Interno",
+        "Subdiretoria Administrativa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Controle Interno",
+          "subordinadoA": "Chefe do Estado Maior Geral",
+          "requisito": "Oficial Superior do QOCBM",
+          "desdobramentos": [
+            "Comissão de Controle Interno",
+            "Subdiretoria Administrativa"
+          ],
+          "atribuicoes": [
+            "A Diretoria de Controle Interno tem por competência o exercício do controle interno da corporação (LC nº 52/2001, Art. 35-A, incl. LC nº 257/2017)"
+          ]
+        }
+      ],
+      "id": "dci-rr"
+    },
+    "cmd-op-rr": {
+      "name": "Comando Operacional (Capital e Interior)",
+      "abbreviation": "CmdOp",
+      "category": "Administração Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 37-40",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 37 (Comando Operacional)",
+        "Art. 40 (Estado Maior Operacional)"
+      ],
+      "atribuicoes": [
+        "Coordenação, controle e fiscalização das atividades operacionais (área setorial)"
+      ],
+      "desdobramentos": [
+        "Comandante Operacional da Capital",
+        "Comandante Operacional do Interior",
+        "Subcomandantes Operacionais (substitutos e Chefes do Estado Maior Operacional)",
+        "Estado Maior Operacional da Capital",
+        "Estado Maior Operacional do Interior"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional da Capital",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [
+            "Subcomandante Operacional da Capital",
+            "Estado Maior Operacional da Capital"
+          ],
+          "atribuicoes": [
+            "Coordenação, controle e fiscalização das atividades operacionais da Capital"
+          ]
+        },
+        {
+          "cargo": "Comandante Operacional do Interior",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [
+            "Subcomandante Operacional do Interior",
+            "Estado Maior Operacional do Interior"
+          ],
+          "atribuicoes": [
+            "Coordenação, controle e fiscalização das atividades operacionais do Interior"
+          ]
+        }
+      ],
+      "id": "cmd-op-rr"
+    },
+    "ceib-rr": {
+      "name": "Centro de Ensino e Instrução de Bombeiros",
+      "abbreviation": "CEIB",
+      "category": "Administração Setorial",
+      "subordinadoA": "Comando Geral / DEIP",
+      "legalRef": "Art. 36, III; Art. 42",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 42 (CEIB)"
+      ],
+      "atribuicoes": [
+        "Administração das atividades de formação, especialização, aperfeiçoamento e educação continuada dos recursos humanos, bem como a pesquisa e a doutrina da instituição"
+      ],
+      "desdobramentos": [
+        "Comando",
+        "Subcomando",
+        "Secretaria",
+        "Seção Administrativa",
+        "Seção de Ensino",
+        "Seção de Pesquisa e Doutrina",
+        "Corpo de Alunos"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CEIB",
+          "subordinadoA": "Comando Geral / DEIP",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Ensino e Instrução de Bombeiros (CEIB); dirigido por um Comandante (LC nº 52/2001, Art. 42)"
+          ]
+        }
+      ],
+      "id": "ceib-rr"
+    },
+    "csm-rr": {
+      "name": "Centro de Suprimento e Material",
+      "abbreviation": "CSM",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Logística (DLOG)",
+      "legalRef": "Art. 36, IV; Art. 43",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 43 (CSM)"
+      ],
+      "atribuicoes": [
+        "Planejamento, execução, coordenação, fiscalização e controle das atividades de suprimento e material da corporação"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa",
+        "Seção de Contabilidade e Auditoria",
+        "Seção de Licitação Permanente",
+        "Almoxarifado Geral",
+        "Aprovisionamento"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CSM",
+          "subordinadoA": "Diretoria de Logística (DLOG)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Suprimento e Material (CSM); dirigido por um Comandante (LC nº 52/2001, Art. 43)"
+          ]
+        }
+      ],
+      "id": "csm-rr"
+    },
+    "ceman-rr": {
+      "name": "Centro de Manutenção",
+      "abbreviation": "CEMAN",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Logística (DLOG)",
+      "legalRef": "Art. 36, V; Art. 44",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 44 (CEMAN)"
+      ],
+      "atribuicoes": [
+        "Manutenção de viaturas, equipamento motorizado, materiais em geral e instalações"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa",
+        "Seção de Manutenção de Viaturas e Equipamentos Motorizados",
+        "Seção de Obras, Serviços Gerais e Manutenção de Instalações Prediais"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CEMAN",
+          "subordinadoA": "Diretoria de Logística (DLOG)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Manutenção (CEMAN); dirigido por um Comandante (LC nº 52/2001, Art. 44)"
+          ]
+        }
+      ],
+      "id": "ceman-rr"
+    },
+    "cinfor-rr": {
+      "name": "Centro de Informática",
+      "abbreviation": "CINFOR",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Informática e Estatística (DIE)",
+      "legalRef": "Art. 36, VI; Art. 45",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 45 (CINFOR)"
+      ],
+      "atribuicoes": [
+        "Realizar programas e sistemas para otimização das áreas administrativas e operacionais da corporação"
+      ],
+      "desdobramentos": [
+        "Seção de Suporte Técnico e Manutenção (Cinf-I)",
+        "Seção de Desenvolvimento e Manutenção de Sistemas (Cinf-II)",
+        "Seção de Suporte de Rede/Intranet (Cinf-III)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CINFOR",
+          "subordinadoA": "Diretoria de Informática e Estatística (DIE)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Informática (CINFOR); dirigido por um Comandante (LC nº 52/2001, Art. 45)"
+          ]
+        }
+      ],
+      "id": "cinfor-rr"
+    },
+    "cipi-rr": {
+      "name": "Centro de Investigação e Prevenção de Incêndios",
+      "abbreviation": "CIPI",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Prevenção e Serviços Técnicos (DPST)",
+      "legalRef": "Art. 36, VII; Art. 46",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 46 (CIPI)"
+      ],
+      "atribuicoes": [
+        "Serviços de prevenção, investigação, perícias de incêndios e explosões",
+        "Emitir conclusões e laudos técnicos periciais"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa (CIPI-I)",
+        "Seção de Perícias (CIPI-II)",
+        "Seção de Análises Laboratoriais (CIPI-III)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CIPI",
+          "subordinadoA": "Diretoria de Prevenção e Serviços Técnicos (DPST)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Investigação e Prevenção de Incêndios (CIPI); dirigido por um Comandante (LC nº 52/2001, Art. 46)"
+          ]
+        }
+      ],
+      "id": "cipi-rr"
+    },
+    "cesau-rr": {
+      "name": "Centro de Saúde",
+      "abbreviation": "CESAU",
+      "category": "Administração Setorial",
+      "subordinadoA": "Ajudância Geral",
+      "legalRef": "Art. 36, VIII; Art. 47",
+      "baseLegal": "Lei Complementar nº 52/2001 (alt. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 47 (CESAU)"
+      ],
+      "atribuicoes": [
+        "Órgão de apoio de saúde e assistência social",
+        "Prestação de serviços de saúde e assistência social aos bombeiros militares e dependentes"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa",
+        "Seção Médica",
+        "Seção Odontológica",
+        "Seção de Laboratório",
+        "Seção de Ortopedia e Fisioterapia",
+        "Enfermarias",
+        "Seção de Assistência Social",
+        "Seção de Psicologia",
+        "Seção de Farmácia",
+        "Seção de Veterinária"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CESAU",
+          "subordinadoA": "Ajudância Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Saúde (CESAU); dirigido por um Comandante (LC nº 52/2001, Art. 47)"
+          ]
+        }
+      ],
+      "id": "cesau-rr"
+    },
+    "cest-rr": {
+      "name": "Centro de Estatística",
+      "abbreviation": "CEST",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Informática e Estatística (DIE)",
+      "legalRef": "Art. 47-A",
+      "baseLegal": "Lei Complementar nº 52/2001 (incl. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 47-A (CEST)"
+      ],
+      "atribuicoes": [
+        "Coleta de dados e fornecimento de dados estatísticos"
+      ],
+      "desdobramentos": [
+        "Seção de Coleta de Dados (CEST-I)",
+        "Seção de Análise e Produção de Estatística (CEST-II)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CEST",
+          "subordinadoA": "Diretoria de Informática e Estatística (DIE)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Estatística (CEST); dirigido por um Comandante (LC nº 52/2001, Art. 47-A)"
+          ]
+        }
+      ],
+      "id": "cest-rr"
+    },
+    "cecer-rr": {
+      "name": "Centro de Cerimonial",
+      "abbreviation": "CECER",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Assuntos Civis e Relações Públicas (DACRP)",
+      "legalRef": "Art. 47-B",
+      "baseLegal": "Lei Complementar nº 52/2001 (incl. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 47-B (CECER)"
+      ],
+      "atribuicoes": [
+        "Organizar todas as atividades cerimoniais desenvolvidas pela Instituição"
+      ],
+      "desdobramentos": [
+        "Seção de Cerimonial"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CECER",
+          "subordinadoA": "Diretoria de Assuntos Civis e Relações Públicas (DACRP)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Cerimonial (CECER); dirigido por um Comandante (LC nº 52/2001, Art. 47-B)"
+          ]
+        }
+      ],
+      "id": "cecer-rr"
+    },
+    "cvap-rr": {
+      "name": "Centro de Vistoria e Análise de Projeto",
+      "abbreviation": "CVAP",
+      "category": "Administração Setorial",
+      "subordinadoA": "Diretoria de Prevenção e Serviços Técnicos (DPST)",
+      "legalRef": "Art. 47-C",
+      "baseLegal": "Lei Complementar nº 52/2001 (incl. LC nº 257/2017)",
+      "artigosDeOrigem": [
+        "Art. 47-C (CVAP)"
+      ],
+      "atribuicoes": [
+        "Prestação de serviços de vistoria e análise de projetos técnicos"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa (CVAP-I)",
+        "Seção de Análise de Projetos (CVAP-II)",
+        "Seção de Vistorias e Pareceres (CVAP-III)",
+        "Seção de Estudos e Pesquisas de Normas Técnicas (CVAP-IV)",
+        "Seção de Fiscalização (CVAP-V)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CVAP",
+          "subordinadoA": "Diretoria de Prevenção e Serviços Técnicos (DPST)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Vistoria e Análise de Projeto (CVAP); dirigido por um Comandante (LC nº 52/2001, Art. 47-C)"
+          ]
+        }
+      ],
+      "id": "cvap-rr"
+    },
+    "exec-op-rr": {
+      "name": "Órgãos de Execução Operacional",
+      "abbreviation": "OEO",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional",
+      "legalRef": "Art. 49-52",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 49 (OBMs de Atuação Direta Operacionais)",
+        "Art. 50 (Tipos)"
+      ],
+      "atribuicoes": [
+        "OBMs de Atuação Direta Operacionais",
+        "Classificam-se em Ordinárias, Especializadas, Particulares e Voluntárias"
+      ],
+      "desdobramentos": [
+        "Batalhão de Bombeiros",
+        "Companhia Independente de Bombeiros",
+        "Companhia de Bombeiros",
+        "Companhia de Comando e Serviço",
+        "Pelotão de Bombeiros",
+        "Pelotão de Comando e Serviço",
+        "Destacamento de Bombeiros"
+      ],
+      "cargos": [],
+      "id": "exec-op-rr"
+    },
+    "exec-prev-rr": {
+      "name": "Órgãos de Execução Prevencional",
+      "abbreviation": "OEP",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Prevenção e Serviços Técnicos (DPST)",
+      "legalRef": "Art. 53",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 53 (Órgãos de Execução Prevencional)"
+      ],
+      "atribuicoes": [
+        "OBMs de Atuação Direta Prevencionais",
+        "Perícia técnica, prevenção, vistoria e análise de projetos"
+      ],
+      "desdobramentos": [
+        "Subdiretoria de Hidrantes",
+        "Centro de Investigação e Prevenção de Incêndios (CIPI)",
+        "Centro de Vistoria e Análise de Projetos (CVAP)"
+      ],
+      "cargos": [],
+      "id": "exec-prev-rr"
+    },
+    "exec-estr-rr": {
+      "name": "Órgãos de Execução Estratégica",
+      "abbreviation": "OEE",
+      "category": "Execução",
+      "subordinadoA": "Comando Geral / EMG",
+      "legalRef": "Art. 54",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 54 (Órgãos de Execução Estratégica)"
+      ],
+      "atribuicoes": [
+        "OBMs de Atuação Direta Estratégicas (ensino, saúde, informática, cerimonial e estatística)"
+      ],
+      "desdobramentos": [
+        "Centro de Ensino e Instrução de Bombeiros (CEIB)",
+        "Centro de Saúde (CESAU)",
+        "Centro de Informática (CINFOR)",
+        "Centro de Cerimonial (CECER)",
+        "Centro de Estatísticas (CEST)"
+      ],
+      "cargos": [],
+      "id": "exec-estr-rr"
+    },
+    "exec-log-rr": {
+      "name": "Órgãos de Execução Logística",
+      "abbreviation": "OEL",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Logística (DLOG)",
+      "legalRef": "Art. 55",
+      "baseLegal": "Lei Complementar nº 52, de 28 de dezembro de 2001",
+      "artigosDeOrigem": [
+        "Art. 55 (Órgãos de Execução Logística)"
+      ],
+      "atribuicoes": [
+        "OBMs de Suporte: suprimento, material e manutenção"
+      ],
+      "desdobramentos": [
+        "Centro de Suprimento e Material (CSM)",
+        "Centro de Manutenção (CEMAN)"
+      ],
+      "cargos": [],
+      "id": "exec-log-rr"
+    }
+  }
+}

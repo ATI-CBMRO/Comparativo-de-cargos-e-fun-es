@@ -1,0 +1,282 @@
+{
+  "total_states": 27,
+  "total_documents": 37,
+  "states": {
+    "Acre": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Acre - Organização Básica.md",
+        "char_count": 9942,
+        "pdf_source": "Acre - Organização Básica.pdf"
+      }
+    ],
+    "Alagoas": [
+      {
+        "doc_type": "Quadro Demonstrativo de Cargos",
+        "md_file": "Alagoas - Quadro Demonstrativo de Cargos e Funções.md",
+        "char_count": 62713,
+        "pdf_source": "Alagoas - Quadro Demonstrativo de Cargos e Funções.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Alagoas - Regimento Interno.md",
+        "char_count": 136850,
+        "pdf_source": "Alagoas - Regimento Interno.pdf"
+      }
+    ],
+    "Amapá": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Amapá - Organização Básica.md",
+        "char_count": 21692,
+        "pdf_source": "Amapá - Organização Básica.pdf"
+      }
+    ],
+    "Amazonas": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Amazonas - Organização Básica.md",
+        "char_count": 52700,
+        "pdf_source": "Amazonas - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Quadro Demonstrativo de Cargos",
+        "md_file": "Amazonas - Quadro Demonstrativo de Cargos e Funções.md",
+        "char_count": 41552,
+        "pdf_source": "Amazonas - Quadro Demonstrativo de Cargos e Funções.pdf"
+      }
+    ],
+    "Bahia": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Bahia - Organização Básica.md",
+        "char_count": 55360,
+        "pdf_source": "Bahia - Organização Básica.pdf"
+      }
+    ],
+    "Ceará": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Ceará - Organização Básica.md",
+        "char_count": 32425,
+        "pdf_source": "Ceará - Organização Básica.pdf"
+      }
+    ],
+    "Distrito Federal": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Distrito Federal - Organização Básica.md",
+        "char_count": 31224,
+        "pdf_source": "Distrito Federal - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Distrito Federal - Regimento Interno.md",
+        "char_count": 645581,
+        "pdf_source": "Distrito Federal - Regimento Interno.pdf"
+      }
+    ],
+    "Espírito Santo": [
+      {
+        "doc_type": "Normas Gerais de Ação",
+        "md_file": "Espírito Santo - Normas Gerais de Ação.md",
+        "char_count": 1381571,
+        "pdf_source": "Espírito Santo - Normas Gerais de Ação.pdf"
+      }
+    ],
+    "Goiás": [
+      {
+        "doc_type": "Quadro de Organização e Distribuição",
+        "md_file": "Goiás - Quadro de Organização e Distribuição de Efetivo.md",
+        "char_count": 41799,
+        "pdf_source": "Goiás - Quadro de Organização e Distribuição de Efetivo.pdf"
+      },
+      {
+        "doc_type": "Legislação",
+        "md_file": "Goiás - Regimento dos Serviços Interno e Operacional.md",
+        "char_count": 48558,
+        "pdf_source": "Goiás - Regimento dos Serviços Interno e Operacional.pdf"
+      }
+    ],
+    "Maranhão": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Maranhão - Organização Básica.md",
+        "char_count": 57126,
+        "pdf_source": "Maranhão - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Quadro de Organização e Distribuição",
+        "md_file": "Maranhão - Quadro de Organização e Distribuição.md",
+        "char_count": 48958,
+        "pdf_source": "Maranhão - Quadro de Organização e Distribuição.pdf"
+      }
+    ],
+    "Mato Grosso": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Mato Grosso - Organização Básica.md",
+        "char_count": 83542,
+        "pdf_source": "Mato Grosso - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Mato Grosso - Regimento Interno.md",
+        "char_count": 271125,
+        "pdf_source": "Mato Grosso - Regimento Interno.pdf"
+      }
+    ],
+    "Mato Grosso do Sul": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Mato Grosso do Sul - Organização Básica.md",
+        "char_count": 80273,
+        "pdf_source": "Mato Grosso do Sul - Organização Básica.pdf"
+      }
+    ],
+    "Minas Gerais": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Minas Gerais - Organização Básica.md",
+        "char_count": 17785,
+        "pdf_source": "Minas Gerais - Organização Básica.pdf"
+      }
+    ],
+    "Paraná": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Paraná - Organização Básica.md",
+        "char_count": 44885,
+        "pdf_source": "Paraná - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Paraná - Regimento Interno.md",
+        "char_count": 43522,
+        "pdf_source": "Paraná - Regimento Interno.pdf"
+      }
+    ],
+    "Paraíba": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Paraíba - Organização Básica.md",
+        "char_count": 596149,
+        "pdf_source": "Paraíba - Organização Básica.pdf"
+      }
+    ],
+    "Pará": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Pará - Organização Básica.md",
+        "char_count": 135635,
+        "pdf_source": "Pará - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Pará - Regimento Interno.md",
+        "char_count": 336302,
+        "pdf_source": "Pará - Regimento Interno.pdf"
+      }
+    ],
+    "Pernambuco": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Pernambuco - Organização Básica.md",
+        "char_count": 47676,
+        "pdf_source": "Pernambuco - Organização Básica.pdf"
+      }
+    ],
+    "Piauí": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Piauí - Organização Básica.md",
+        "char_count": 40798,
+        "pdf_source": "Piauí - Organização Básica.pdf"
+      }
+    ],
+    "Rio de Janeiro": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Rio de Janeiro - Organização Básica.md",
+        "char_count": 31855,
+        "pdf_source": "Rio de Janeiro - Organização Básica.pdf"
+      }
+    ],
+    "Rio Grande do Norte": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Rio Grande do Norte - Organização Básica.md",
+        "char_count": 22150,
+        "pdf_source": "Rio Grande do Norte - Organização Básica.pdf"
+      }
+    ],
+    "Rio Grande do Sul": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Rio Grande do Sul - Organização Básica.md",
+        "char_count": 14493,
+        "pdf_source": "Rio Grande do Sul - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Rio Grande do Sul - Regimento Interno.md",
+        "char_count": 191985,
+        "pdf_source": "Rio Grande do Sul - Regimento Interno.pdf"
+      }
+    ],
+    "Rondônia": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Rondônia - Minuta de Lei de Organização Básica.md",
+        "char_count": 74720,
+        "pdf_source": "Rondônia - Minuta de Lei de Organização Básica.pdf"
+      }
+    ],
+    "Roraíma": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Roraíma - Organização Básica.md",
+        "char_count": 73056,
+        "pdf_source": "Roraíma - Organização Básica.pdf"
+      }
+    ],
+    "Santa Catarina": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Santa Catarina - Organização Básica.md",
+        "char_count": 82120,
+        "pdf_source": "Santa Catarina - Organização Básica.pdf"
+      }
+    ],
+    "Sergipe": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Sergipe - Organização Básica.md",
+        "char_count": 32654,
+        "pdf_source": "Sergipe - Organização Básica.pdf"
+      },
+      {
+        "doc_type": "Regimento Interno",
+        "md_file": "Sergipe - Regimento Interno.md",
+        "char_count": 97134,
+        "pdf_source": "Sergipe - Regimento Interno.pdf"
+      }
+    ],
+    "São Paulo": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "São Paulo - Organização Básica.md",
+        "char_count": 102792,
+        "pdf_source": "São Paulo - Organização Básica.pdf"
+      }
+    ],
+    "Tocantins": [
+      {
+        "doc_type": "Lei de Organização Básica",
+        "md_file": "Tocantins - Organização Básica.md",
+        "char_count": 23158,
+        "pdf_source": "Tocantins - Organização Básica.pdf"
+      }
+    ]
+  }
+}

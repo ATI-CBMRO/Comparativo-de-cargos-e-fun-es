@@ -1,0 +1,442 @@
+{
+  "state_id": "sp",
+  "state_name": "São Paulo",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado de São Paulo",
+  "cbm_abbreviation": "CBPMESP",
+  "legal_source": "Lei nº 616, de 17/12/1974 (organização básica da PMESP, atualizada até a Lei nº 735/1975) — Seção II, Corpo de Bombeiros (Arts. 38 a 43); complementada pelo Decreto nº 65.096, de 28/07/2020 (estrutura operacional vigente)",
+  "organs": {
+    "comando-corpo-bombeiros": {
+      "name": "Comando do Corpo de Bombeiros",
+      "abbreviation": "CCB",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral da Polícia Militar",
+      "legalRef": "Lei 616/1974, Arts. 38 a 40",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 38 (organização do Corpo de Bombeiros)",
+        "Art. 39 (Comando do Corpo de Bombeiros)",
+        "Art. 40 (estrutura do Comando)"
+      ],
+      "atribuicoes": [
+        "Órgão responsável perante o Comando Geral pelo planejamento, comando, execução, coordenação, fiscalização e controle de todas as atividades de prevenção, extinção de incêndios e de buscas e salvamentos, bem como das atividades técnicas a elas relacionadas no território estadual (Art. 39)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Estado Maior",
+        "Secretaria",
+        "Seção de Comando",
+        "Centro de Comunicações do Corpo de Bombeiros (CC/CB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Corpo de Bombeiros",
+          "subordinadoA": "Comando-Geral da Polícia Militar",
+          "requisito": "Coronel PM, designado pelo Governador do Estado mediante indicação do Comandante-Geral da PM (Art. 40, §1º, red. Lei nº 663/1975)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Corpo de Bombeiros (Art. 39)",
+            "Responsável, perante o Comando Geral, pelo planejamento, coordenação, fiscalização e controle dos suprimentos e manutenção dos materiais tipicamente operacionais das unidades subordinadas (Art. 39, parágrafo único)"
+          ]
+        }
+      ],
+      "id": "comando-corpo-bombeiros"
+    },
+    "estado-maior-cb": {
+      "name": "Estado Maior do Corpo de Bombeiros",
+      "abbreviation": "EM/CB",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 40, II e §2º",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 40, II (Estado Maior)",
+        "Art. 40, §2º (organização do Estado Maior)"
+      ],
+      "atribuicoes": [
+        "Assessoria e planejamento ao Comandante do Corpo de Bombeiros nas áreas de pessoal (B/1), informações (B/2), organização, instrução e operações (B/3), fiscalização administrativa e logística (B/4), assuntos civis (B/5) e serviço técnico (B/6) (Lei nº 616/1974, Art. 40, II e §2º)"
+      ],
+      "desdobramentos": [
+        "Chefe do Estado Maior",
+        "1ª Seção (B/1): pessoal",
+        "2ª Seção (B/2): informações",
+        "3ª Seção (B/3): organização, instrução e operações",
+        "4ª Seção (B/4): fiscalização administrativa e logística",
+        "5ª Seção (B/5): assuntos civis",
+        "6ª Seção (B/6): Seção de Serviço Técnico"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado Maior",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefia do Estado Maior do Corpo de Bombeiros (Art. 40, §2º, 1)"
+          ]
+        }
+      ],
+      "id": "estado-maior-cb"
+    },
+    "secao-servico-tecnico": {
+      "name": "Seção de Serviço Técnico (B/6)",
+      "abbreviation": "B/6",
+      "category": "Seção do Estado Maior",
+      "subordinadoA": "Estado Maior do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 40, §2º, 7",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 40, §2º, item 7 (Seção de Serviço Técnico, B/6)"
+      ],
+      "atribuicoes": [
+        "Executar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos e às medidas preventivas contra incêndios (alínea a)",
+        "Proceder a exames de plantas e a perícias (alínea b)",
+        "Realizar testes de incombustibilidade (alínea c)",
+        "Realizar vistorias e emitir pareceres (alínea d)",
+        "Supervisionar a instalação da rede de hidrantes públicos (alínea e)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da 6ª Seção — Serviço Técnico (B/6)",
+          "subordinadoA": "Chefe do Estado Maior do Corpo de Bombeiros",
+          "requisito": "Oficial PM (Lei nº 616/1974, Art. 40)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Executar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos e às medidas preventivas contra incêndios (Lei nº 616/1974, Art. 40, §2º, 7, a)",
+            "Proceder a exames de plantas e a perícias (Lei nº 616/1974, Art. 40, §2º, 7, b)",
+            "Realizar testes de incombustibilidade (Lei nº 616/1974, Art. 40, §2º, 7, c)",
+            "Realizar vistorias e emitir pareceres (Lei nº 616/1974, Art. 40, §2º, 7, d)",
+            "Supervisionar a instalação da rede de hidrantes públicos (Lei nº 616/1974, Art. 40, §2º, 7, e)"
+          ]
+        }
+      ],
+      "id": "secao-servico-tecnico"
+    },
+    "secretaria-cb": {
+      "name": "Secretaria do Corpo de Bombeiros",
+      "abbreviation": "Sec",
+      "category": "Apoio",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 40, III e §3º",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 40, III (Secretaria)",
+        "Art. 40, §3º"
+      ],
+      "atribuicoes": [
+        "Trabalhos relativos a correspondência, protocolo, arquivo, boletim diário e outros (Art. 40, §3º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Secretário do Corpo de Bombeiros",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Oficial PM (Lei nº 616/1974, Art. 40)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável pelos trabalhos relativos a correspondência, protocolo, arquivo, boletim diário e outros (Lei nº 616/1974, Art. 40, §3º)"
+          ]
+        }
+      ],
+      "id": "secretaria-cb"
+    },
+    "secao-comando-cb": {
+      "name": "Seção de Comando",
+      "abbreviation": "SC",
+      "category": "Apoio",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 40, IV e §4º",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 40, IV (Seção de Comando)",
+        "Art. 40, §4º"
+      ],
+      "atribuicoes": [
+        "Apoio de pessoal auxiliar (praças) necessário aos trabalhos burocráticos do Comando (Art. 40, §4º, 1)",
+        "Serviços gerais e segurança do aquartelamento (Art. 40, §4º, 2)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Seção de Comando",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Oficial PM (Lei nº 616/1974, Art. 40)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Providenciar o apoio de pessoal auxiliar (praças) necessário aos trabalhos burocráticos do Comando (Lei nº 616/1974, Art. 40, §4º, 1)",
+            "Supervisionar os serviços gerais e segurança do aquartelamento (Lei nº 616/1974, Art. 40, §4º, 2)"
+          ]
+        }
+      ],
+      "id": "secao-comando-cb"
+    },
+    "cc-cb": {
+      "name": "Centro de Comunicações do Corpo de Bombeiros",
+      "abbreviation": "CC/CB",
+      "category": "Apoio",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 40, V",
+      "baseLegal": "Lei nº 616/1974 (inciso V acrescentado pela Lei nº 663/1975)",
+      "artigosDeOrigem": [
+        "Art. 40, V (Centro de Comunicações, acrescido pela Lei nº 663/1975)"
+      ],
+      "atribuicoes": [
+        "Órgão de comunicações do Corpo de Bombeiros (Art. 40, V, acrescido pela Lei nº 663/1975)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do Centro de Comunicações do Corpo de Bombeiros",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Oficial PM (Lei nº 616/1974, Art. 40, V)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Comunicações do Corpo de Bombeiros, órgão responsável pelas atividades de comunicações da tropa (Lei nº 616/1974, Art. 40, V, red. Lei nº 663/1975)"
+          ]
+        }
+      ],
+      "id": "cc-cb"
+    },
+    "grupamento-incendio": {
+      "name": "Grupamentos de Incêndio",
+      "abbreviation": "GI",
+      "category": "Execução",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 41, I; Art. 42",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 41, I (Grupamentos de Incêndio)",
+        "Art. 42 (organização interna)"
+      ],
+      "atribuicoes": [
+        "Unidades diretamente subordinadas ao Comando do Corpo de Bombeiros, incumbidas da missão de extinção de incêndios, podendo integrar missões de busca e salvamento (Art. 41, I)"
+      ],
+      "desdobramentos": [
+        "Comando",
+        "Estado Maior (Art. 42, §4º, acrescido pela Lei nº 663/1975)",
+        "Seção de Comando e Serviços",
+        "Seção de Incêndio ou de Busca e Salvamento",
+        "Sub-Grupamentos de Incêndio (S/GI)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Grupamento de Incêndio",
+          "subordinadoA": "Comando do Corpo de Bombeiros",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Grupamento de Incêndio (Art. 42, I)"
+          ]
+        }
+      ],
+      "id": "grupamento-incendio"
+    },
+    "subgrupamento-incendio": {
+      "name": "Sub-Grupamentos de Incêndio",
+      "abbreviation": "S/GI",
+      "category": "Execução",
+      "subordinadoA": "Grupamento de Incêndio (GI)",
+      "legalRef": "Lei 616/1974, Art. 41, II; Art. 42",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 41, II (Sub-Grupamentos de Incêndio)",
+        "Art. 42 (organização interna)"
+      ],
+      "atribuicoes": [
+        "Unidades incumbidas da missão de extinção de incêndios, subordinadas a um Grupamento de Incêndio, podendo integrar eventualmente missões de busca e salvamento (Art. 41, II)"
+      ],
+      "desdobramentos": [
+        "Comando",
+        "Seção de Comando e Serviços",
+        "Seção de Incêndio ou de Busca e Salvamento"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Sub-Grupamento de Incêndio",
+          "subordinadoA": "Grupamento de Incêndio (GI)",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Sub-Grupamento de Incêndio (Art. 42)"
+          ]
+        }
+      ],
+      "id": "subgrupamento-incendio"
+    },
+    "grupamento-busca-salvamento": {
+      "name": "Grupamentos de Busca e Salvamento",
+      "abbreviation": "GBS",
+      "category": "Execução",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 41, III; Art. 42",
+      "baseLegal": "Lei nº 616, de 17/12/1974 (atualizada até a Lei nº 735/1975)",
+      "artigosDeOrigem": [
+        "Art. 41, III (Grupamentos de Busca e Salvamento)",
+        "Art. 42 (organização interna)"
+      ],
+      "atribuicoes": [
+        "Unidades diretamente subordinadas ao Comando do Corpo de Bombeiros, incumbidas da missão de busca e salvamento, de modo especial em razão da extensão da missão (Art. 41, III)"
+      ],
+      "desdobramentos": [
+        "Comando",
+        "Seção de Comando e Serviços",
+        "Seção de Busca e Salvamento",
+        "Sub-Seções de Busca e Salvamento (Art. 42, §3º)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Grupamento de Busca e Salvamento",
+          "subordinadoA": "Comando do Corpo de Bombeiros",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Grupamento de Busca e Salvamento (Art. 42)"
+          ]
+        }
+      ],
+      "id": "grupamento-busca-salvamento"
+    },
+    "ciad": {
+      "name": "Centro de Instruções e Adestramento",
+      "abbreviation": "CIAd",
+      "category": "Apoio",
+      "subordinadoA": "Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 43, I",
+      "baseLegal": "Lei nº 616/1974 (Art. 43 com redação da Lei nº 663/1975)",
+      "artigosDeOrigem": [
+        "Art. 43, I (Centro de Instruções e Adestramento, red. Lei nº 663/1975)"
+      ],
+      "atribuicoes": [
+        "Destinado a possibilitar o adestramento e a instrução da tropa do Corpo, bem como a preparação de bombeiros civis de entidades privadas (Art. 43, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do Centro de Instruções e Adestramento",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Oficial PM (Lei nº 616/1974, Art. 43)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Instruções e Adestramento, destinado a possibilitar o adestramento e a instrução da tropa do Corpo, bem como a preparação de bombeiros civis de entidades privadas (Lei nº 616/1974, Art. 43, I, red. Lei nº 663/1975)"
+          ]
+        }
+      ],
+      "id": "ciad"
+    },
+    "csm-mop": {
+      "name": "Centro de Suprimento e Manutenção do Material Operacional",
+      "abbreviation": "CSM/MOp",
+      "category": "Apoio",
+      "subordinadoA": "Corpo de Bombeiros",
+      "legalRef": "Lei 616/1974, Art. 43, II e parágrafo único",
+      "baseLegal": "Lei nº 616/1974 (Art. 43 com redação da Lei nº 663/1975)",
+      "artigosDeOrigem": [
+        "Art. 43, II (CSM/MOp)",
+        "Art. 43, parágrafo único"
+      ],
+      "atribuicoes": [
+        "Incumbido do recebimento, da estocagem e da distribuição dos suprimentos e da execução da manutenção no que concerne ao material especializado (Art. 43, II)",
+        "As demais necessidades de suprimentos e manutenção são asseguradas pela Diretoria de Apoio Logístico da Corporação (Art. 43, parágrafo único)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do Centro de Suprimento e Manutenção do Material Operacional",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Oficial PM (Lei nº 616/1974, Art. 43)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do Centro de Suprimento e Manutenção do Material Operacional, incumbido do recebimento, da estocagem e da distribuição dos suprimentos e da execução da manutenção no que concerne ao material especializado do Corpo de Bombeiros (Lei nº 616/1974, Art. 43, II, red. Lei nº 663/1975)",
+            "As demais necessidades de suprimentos e manutenção são asseguradas pela Diretoria de Apoio Logístico da Corporação (Lei nº 616/1974, Art. 43, parágrafo único)"
+          ]
+        }
+      ],
+      "id": "csm-mop"
+    },
+    "cbm-metropolitano": {
+      "name": "Comando de Bombeiros Metropolitano",
+      "abbreviation": "CBM",
+      "category": "Execução",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Decreto 65.096/2020, Art. 25, I",
+      "baseLegal": "Decreto nº 65.096, de 28 de julho de 2020 (estrutura operacional vigente)",
+      "artigosDeOrigem": [
+        "Art. 25, I (Comando de Bombeiros Metropolitano)"
+      ],
+      "atribuicoes": [
+        "Planejamento, coordenação, controle e apoio de atividades técnicas, logísticas, operacionais e administrativas",
+        "Responsabilidade pelos Grupamentos subordinados em sua área (Região Metropolitana)"
+      ],
+      "desdobramentos": [
+        "1º a 4º Grupamento de Bombeiros (Capital)",
+        "5º GB (Guarulhos)",
+        "8º GB (Santo André)",
+        "17º GB (Mogi das Cruzes)",
+        "18º GB (Barueri)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Bombeiros Metropolitano",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Coronel PM (Decreto nº 65.096/2020, Art. 25)",
+          "desdobramentos": [
+            "1º ao 4º Grupamento de Bombeiros (Capital)",
+            "5º GB (Guarulhos)",
+            "8º GB (Santo André)",
+            "17º GB (Mogi das Cruzes)",
+            "18º GB (Barueri)"
+          ],
+          "atribuicoes": [
+            "Responsável pelo planejamento, coordenação, controle e apoio de atividades técnicas, logísticas, operacionais e administrativas dos Grupamentos subordinados na Região Metropolitana de São Paulo (Decreto nº 65.096/2020, Art. 25, I)"
+          ]
+        }
+      ],
+      "id": "cbm-metropolitano"
+    },
+    "cbi-interior": {
+      "name": "Comando de Bombeiros do Interior",
+      "abbreviation": "CBI",
+      "category": "Execução",
+      "subordinadoA": "Comando do Corpo de Bombeiros",
+      "legalRef": "Decreto 65.096/2020, Art. 25, II",
+      "baseLegal": "Decreto nº 65.096, de 28 de julho de 2020 (estrutura operacional vigente)",
+      "artigosDeOrigem": [
+        "Art. 25, II (Comando de Bombeiros do Interior)"
+      ],
+      "atribuicoes": [
+        "Planejamento, coordenação, controle e apoio de atividades técnicas, logísticas, operacionais e administrativas",
+        "Responsabilidade pelos Grupamentos subordinados em sua área (Interior)"
+      ],
+      "desdobramentos": [
+        "6º GB (Santos)",
+        "7º GB (Campinas)",
+        "9º GB (Ribeirão Preto)",
+        "10º GB (Marília)",
+        "11º GB (São José dos Campos)",
+        "12º GB (Bauru)",
+        "13º GB (São José do Rio Preto)",
+        "14º GB (Presidente Prudente)",
+        "15º GB (Sorocaba)",
+        "16º GB (Piracicaba)",
+        "19º GB (Jundiaí)",
+        "20º GB (Araçatuba)",
+        "Grupamento de Bombeiros Marítimo (GBMar) - Guarujá"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Bombeiros do Interior",
+          "subordinadoA": "Comandante do Corpo de Bombeiros",
+          "requisito": "Coronel PM (Decreto nº 65.096/2020, Art. 25)",
+          "desdobramentos": [
+            "6º ao 20º Grupamentos de Bombeiros do Interior",
+            "Grupamento de Bombeiros Marítimo (GBMar)"
+          ],
+          "atribuicoes": [
+            "Responsável pelo planejamento, coordenação, controle e apoio de atividades técnicas, logísticas, operacionais e administrativas dos Grupamentos subordinados no Interior do Estado de São Paulo (Decreto nº 65.096/2020, Art. 25, II)"
+          ]
+        }
+      ],
+      "id": "cbi-interior"
+    }
+  }
+}

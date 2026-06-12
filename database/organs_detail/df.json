@@ -1,0 +1,511 @@
+{
+  "state_id": "df",
+  "state_name": "Distrito Federal",
+  "cbm_name": "Corpo de Bombeiros Militar do Distrito Federal",
+  "cbm_abbreviation": "CBMDF",
+  "legal_source": "Lei nº 8.255, de 20 de novembro de 1991; Lei nº 12.086, de 6/11/2009; Lei nº 15.395, de 27/4/2026; Regimento Interno — Portaria nº 24, de 25/11/2020",
+  "organs": {
+    "comando-geral-df": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Distrito Federal",
+      "legalRef": "Art. 8, 9, 10, 10-A",
+      "baseLegal": "Lei nº 8.255/1991; Lei nº 12.086/2009",
+      "artigosDeOrigem": [
+        "Art. 8 (Constituição do Comando-Geral)",
+        "Art. 9 (Atribuições do Comandante-Geral)",
+        "Art. 10-A (Subcomando-Geral)"
+      ],
+      "atribuicoes": [
+        "Responsável pela administração, comando e emprego da corporação",
+        "Representar a Corporação perante órgãos e entidades públicas e privadas",
+        "Planejar, organizar, dirigir, coordenar, controlar e fiscalizar as atividades da Corporação",
+        "Estabelecer as políticas e diretrizes estratégicas da Corporação",
+        "Declarar aspirantes-a-oficial, demitir oficiais e promover ou excluir praças",
+        "Presidir o Alto Comando da Corporação",
+        "Presidir a Comissão de Promoção de Oficiais"
+      ],
+      "desdobramentos": [
+        "Subcomando-Geral",
+        "Chefe do Estado-Maior-Geral",
+        "Chefes de Departamentos",
+        "Controlador",
+        "Chefe de Gabinete do Comandante-Geral",
+        "Diretores",
+        "Comandante Operacional",
+        "Ajudância-Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Distrito Federal",
+          "requisito": "Coronel da ativa do Quadro de Oficiais BM Combatentes",
+          "desdobramentos": [
+            "Subcomando-Geral",
+            "Chefe do Estado-Maior-Geral",
+            "Departamentos",
+            "Controlador",
+            "Chefe de Gabinete",
+            "Comandante Operacional",
+            "Ajudância-Geral"
+          ],
+          "atribuicoes": [
+            "Representar a Corporação perante órgãos e entidades públicas e privadas e a sociedade (Art. 3º, I)",
+            "Planejar, organizar, dirigir, coordenar, controlar e fiscalizar as atividades da Corporação (II)",
+            "Praticar atos administrativos necessários ao funcionamento da Corporação (III)",
+            "Nomear membros de conselhos previstos em lei (IV)",
+            "Estabelecer as políticas e diretrizes estratégicas da Corporação (V)",
+            "Decidir sobre questões administrativas (VI)",
+            "Aprovar os planos estratégicos da Corporação, inclusive o de aplicação de recursos financeiros e o de emprego (VII)",
+            "Movimentar os Oficiais do Alto Comando (VIII)",
+            "Determinar a instauração de inquérito técnico (IX)",
+            "Declarar aspirantes-a-oficial, demitir oficiais e promover ou excluir praças, observado o que consta do Estatuto dos Bombeiros Militares do CBMDF (X)",
+            "Assessorar o Secretário de Segurança Pública do Distrito Federal e, quando solicitado, os órgãos nacionais de segurança pública, defesa civil e meio ambiente, nos assuntos de competência da Corporação (Art. 3º)",
+            "Delegar competências, observados os limites estabelecidos em lei ou regulamento (XI)",
+            "Supervisionar a administração orçamentária, financeira, contábil e patrimonial (XII)",
+            "Nomear militares da reserva remunerada, na forma prevista em legislação específica (XIII)",
+            "Promover a incorporação dos candidatos aprovados nos concursos públicos para os diversos Quadros ou Qualificações existentes na Corporação (XIV)",
+            "Celebrar contratos, convênios, termos de cooperação, parcerias e similares (XV)",
+            "Propor ao Governador do DF a criação de grupamentos e subgrupamentos, considerados os aspectos demográficos, os riscos específicos e o fator tempo-resposta (XVI)",
+            "Instalar o Gabinete de Gerência de Incidentes, órgão de caráter eventual presidido pelo Comandante Operacional e baseado no Sistema de Comando de Incidentes (XVII)",
+            "Avocar, em caráter excepcional e por motivos relevantes devidamente justificados, competência atribuída a órgão subordinado (XVIII)",
+            "Conceder férias regulamentares aos oficiais do último posto (XIX)",
+            "Presidir o Alto Comando da Corporação (XX)",
+            "Presidir a Comissão de Promoção de Oficiais – CPO (XXI)"
+          ]
+        }
+      ],
+      "id": "comando-geral-df"
+    },
+    "gabinete-comandante-geral-df": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GABCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 23; Reg. Int. Art. 4, 5, 6",
+      "baseLegal": "Lei nº 8.255/1991; Portaria nº 24, de 25/11/2020",
+      "artigosDeOrigem": [
+        "Art. 23 (LOB)",
+        "Reg. Int. Art. 4 (Estrutura)",
+        "Reg. Int. Art. 6 (Competências)"
+      ],
+      "atribuicoes": [
+        "Funções de assistência e assessoramento direto ao Comandante-Geral",
+        "Assessorar o Comandante-Geral nas áreas técnica, jurídica, administrativa e parlamentar",
+        "Elaborar, controlar e distribuir a documentação de competência do Comandante-Geral",
+        "Organizar e controlar a pauta de audiências, visitas e demais compromissos"
+      ],
+      "desdobramentos": [
+        "Seção de Gestão de Processos (SEGEP)",
+        "Ajudância de Ordens (AJORD)",
+        "Seção de Apoio Administrativo (SEAAD)",
+        "Assessoria Técnico-Administrativa (ASTAD)",
+        "Assessoria Parlamentar e Relações Institucionais (ASPAR)",
+        "Assessoria Jurídico-Legislativa (ASJUR)",
+        "Assessoria para Acordos de Cooperação (ASCOP)",
+        "Instituto"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete do Comandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial superior",
+          "desdobramentos": [
+            "Seção de Gestão de Processos (SEGEP)",
+            "Ajudância de Ordens (AJORD)",
+            "Assessoria Técnico-Administrativa (ASTAD)",
+            "Assessoria Parlamentar (ASPAR)",
+            "Assessoria Jurídico-Legislativa (ASJUR)"
+          ],
+          "atribuicoes": [
+            "Assistir o Comandante-Geral na tomada de decisões técnicas e administrativas",
+            "Analisar atos, solicitações e processos administrativos",
+            "Expedir Instrução Normativa; garantir execução do Plano Estratégico"
+          ]
+        }
+      ],
+      "id": "gabinete-comandante-geral-df"
+    },
+    "subcomando-geral-df": {
+      "name": "Subcomando-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 10-A; Reg. Int. Art. 31 a 33",
+      "baseLegal": "Lei nº 8.255/1991; Lei nº 12.086/2009",
+      "artigosDeOrigem": [
+        "Art. 10-A (LOB)",
+        "Reg. Int. Art. 31 (Atribuições do Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "Órgão de direção-geral responsável pela coordenação, fiscalização e controle das rotinas administrativas",
+        "Substituir o Comandante-Geral em seus impedimentos",
+        "Supervisionar e coordenar as atividades dos departamentos",
+        "Presidir a Comissão de Promoção de Praças"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel do Quadro de Oficiais BM Combatentes da ativa",
+          "desdobramentos": [
+            "Departamento de Recursos Humanos",
+            "Departamento de Administração Logística e Financeira",
+            "Departamento de Ensino, Pesquisa, Ciência e Tecnologia",
+            "Departamento de Segurança contra Incêndio"
+          ],
+          "atribuicoes": [
+            "Coordenar, fiscalizar e controlar as rotinas administrativas",
+            "Substituir o Comandante-Geral em seus impedimentos",
+            "Supervisionar e coordenar as atividades dos departamentos",
+            "Presidir a Comissão de Promoção de Praças"
+          ]
+        }
+      ],
+      "id": "subcomando-geral-df"
+    },
+    "estado-maior-geral-df": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 11, 12; Reg. Int. Art. 57, 58",
+      "baseLegal": "Lei nº 8.255/1991; Lei nº 12.086/2009",
+      "artigosDeOrigem": [
+        "Art. 11 (LOB)",
+        "Reg. Int. Art. 57 (Estrutura do EMG)"
+      ],
+      "atribuicoes": [
+        "Órgão de orientação e planejamento",
+        "Elaboração da política militar",
+        "Planejamento estratégico",
+        "Orientação do preparo e do emprego da Corporação",
+        "Elaboração das diretrizes e ordens do comando",
+        "Desenvolver, coordenar, controlar e revisar a gestão estratégica do CBMDF"
+      ],
+      "desdobramentos": [
+        "Seção de Recursos Humanos (SERHU)",
+        "Seção de Logística, Orçamento e Finanças (SELOF)",
+        "Seção de Ensino, Pesquisa, Ciência e Tecnologia (SEPCT)",
+        "Seção de Segurança Contra Incêndio e Emprego Operacional (SESCI)",
+        "Seção de Estatística e Geoprocessamento (SEGEO)",
+        "Seção de Legislação (SELEG)",
+        "Seção de Gestão Estratégica e Projetos (SEGEP)",
+        "Secretaria (SEAAD)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel da ativa do Quadro de Oficiais BM Combatentes",
+          "desdobramentos": [
+            "Secretaria",
+            "Seções (máximo 10)"
+          ],
+          "atribuicoes": [
+            "Orientação, coordenação e fiscalização dos trabalhos do EMG",
+            "Estudo, planejamento, programação orçamentária e financeira",
+            "Controle de todas as atividades da Corporação via órgãos subordinados"
+          ]
+        }
+      ],
+      "id": "estado-maior-geral-df"
+    },
+    "controladoria-df": {
+      "name": "Controladoria",
+      "abbreviation": "Controladoria",
+      "category": "Direção",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 22; Reg. Int. Art. 22",
+      "baseLegal": "Lei nº 8.255/1991; Lei nº 12.086/2009",
+      "artigosDeOrigem": [
+        "Art. 22 (LOB - Controladoria)",
+        "Reg. Int. Art. 22"
+      ],
+      "atribuicoes": [
+        "Assessoramento direto e imediato ao Comandante-Geral",
+        "Defesa do patrimônio público, auditoria, correição e ouvidoria",
+        "Averiguação e análise das atividades de administração orçamentária, financeira, patrimonial e de gestão de pessoas"
+      ],
+      "desdobramentos": [
+        "Auditoria",
+        "Ouvidoria",
+        "Corregedoria",
+        "Núcleo de Custódia"
+      ],
+      "cargos": [
+        {
+          "cargo": "Controlador",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial superior",
+          "desdobramentos": [
+            "Auditoria",
+            "Ouvidoria",
+            "Corregedoria",
+            "Núcleo de Custódia"
+          ],
+          "atribuicoes": [
+            "Defesa do patrimônio público; auditoria, correição e ouvidoria",
+            "Averiguação das atividades de administração orçamentária, financeira, patrimonial e de pessoas"
+          ]
+        }
+      ],
+      "id": "controladoria-df"
+    },
+    "ajudancia-geral-df": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AJ",
+      "category": "Direção",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 21; Reg. Int. Art. 21",
+      "baseLegal": "Lei nº 8.255/1991",
+      "artigosDeOrigem": [
+        "Art. 21 (LOB - Ajudância Geral)"
+      ],
+      "atribuicoes": [
+        "Auxiliar nas funções de administração do Quartel do Comando Geral, considerado como Organização de Bombeiro Militar"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Seção de Serviços Internos",
+            "Seção de Protocolo-Geral",
+            "Secretaria do Comando-Geral"
+          ],
+          "atribuicoes": [
+            "Auxiliar nas funções de administração do Quartel do Comando Geral"
+          ]
+        }
+      ],
+      "id": "ajudancia-geral-df"
+    },
+    "departamentos-df": {
+      "name": "Departamentos e Diretorias",
+      "abbreviation": "Dep",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando-Geral",
+      "legalRef": "Art. 13; Reg. Int. Art. 34, 35, 36",
+      "baseLegal": "Lei nº 8.255/1991; Lei nº 12.086/2009; Portaria nº 24/2020",
+      "artigosDeOrigem": [
+        "Art. 13 (LOB - Departamentos)",
+        "Reg. Int. Art. 34 (Competências Comuns)"
+      ],
+      "atribuicoes": [
+        "Executar a política e as diretrizes estratégicas relacionadas às suas atividades específicas",
+        "Elaborar e expedir instruções, normas, planos e programas",
+        "Promover estudos, análises e pesquisas"
+      ],
+      "desdobramentos": [
+        "Diretoria de Gestão de Pessoal (DGP)",
+        "Diretoria de Inativos e Pensionistas (DIP)",
+        "Diretoria de Saúde (DSaú)",
+        "Diretoria de Orçamento e Finanças (DOF)",
+        "Diretoria de Contratações e Aquisições (DCA)",
+        "Diretoria de Materiais e Serviços (DMS)",
+        "Diretoria de Ensino (DEns)",
+        "Diretoria de Pesquisa, Ciência e Tecnologia (DPCT)",
+        "Diretoria de Tecnologia da Informação e Comunicação (DTIC)",
+        "Diretoria de Vistorias (DVis)",
+        "Diretoria de Estudos e Análise de Projetos (DEAP)",
+        "Diretoria de Investigação de Incêndio (DII)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Departamento de Recursos Humanos",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial superior",
+          "desdobramentos": [
+            "Diretoria de Gestão de Pessoal",
+            "Diretoria de Inativos e Pensionistas",
+            "Diretoria de Saúde"
+          ],
+          "atribuicoes": [
+            "Planejar, orientar, coordenar e controlar assistência à saúde, social e religiosa, cadastro, efetivos, avaliação, promoções, seleção e ingresso",
+            "Movimentar oficiais (exceto Alto Comando) e praças",
+            "Homologar o Plano de Férias Anual"
+          ]
+        },
+        {
+          "cargo": "Chefe do Departamento de Administração Logística e Financeira",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial superior",
+          "desdobramentos": [
+            "Diretoria de Orçamento e Finanças",
+            "Diretoria de Contratações e Aquisições",
+            "Diretoria de Materiais e Serviços"
+          ],
+          "atribuicoes": [
+            "Planejar, orientar, coordenar e controlar orçamento e finanças, aquisições e contratações, materiais, obras e serviços, manutenção e patrimônio",
+            "Elaborar o Plano de Contratações Anual; exercer função de Gestor do PCA"
+          ]
+        },
+        {
+          "cargo": "Chefe do Departamento de Ensino, Pesquisa, Ciência e Tecnologia",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial superior",
+          "desdobramentos": [
+            "Diretoria de Ensino",
+            "Diretoria de Pesquisa, Ciência e Tecnologia",
+            "Diretoria de Tecnologia da Informação e Comunicação"
+          ],
+          "atribuicoes": [
+            "Planejar, orientar, coordenar e controlar formação, aperfeiçoamento, especialização e altos estudos",
+            "Aprovar Plano de Ensino e Plano Diretor de TI",
+            "Modernização administrativa e operacional"
+          ]
+        },
+        {
+          "cargo": "Chefe do Departamento de Segurança contra Incêndio",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial superior",
+          "desdobramentos": [
+            "Diretoria de Vistorias",
+            "Diretoria de Estudos e Análise de Projetos",
+            "Diretoria de Investigação de Incêndio"
+          ],
+          "atribuicoes": [
+            "Planejar, orientar e controlar as atividades de segurança contra incêndio e pânico"
+          ]
+        }
+      ],
+      "id": "departamentos-df"
+    },
+    "diretoria-gestao-pessoal-df": {
+      "name": "Diretoria de Gestão de Pessoal",
+      "abbreviation": "DGP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Departamento de Recursos Humanos",
+      "legalRef": "Reg. Int. Art. 61 e seg.",
+      "baseLegal": "Lei nº 8.255/1991; Portaria nº 24/2020",
+      "artigosDeOrigem": [
+        "Reg. Int. Art. 61 (DGP)"
+      ],
+      "atribuicoes": [
+        "Formular, propor e manter atualizadas a política e as diretrizes estratégicas concernentes a recursos humanos",
+        "Propor a fixação dos efetivos do CBMDF",
+        "Elaborar estudos e normas relativas à inclusão, seleção, classificação e movimentação"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão de Pessoal",
+          "subordinadoA": "Chefe do Departamento de Recursos Humanos",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Executar políticas de cadastro do pessoal ativo, inativo e pensionistas, controle de efetivos, avaliação, promoções, direitos e deveres, seleção e ingresso"
+          ]
+        }
+      ],
+      "id": "diretoria-gestao-pessoal-df"
+    },
+    "diretoria-saude-df": {
+      "name": "Diretoria de Saúde",
+      "abbreviation": "DSaú",
+      "category": "Direção Setorial",
+      "subordinadoA": "Departamento de Administração Logística e Financeira",
+      "legalRef": "Reg. Int. Art. 68",
+      "baseLegal": "Lei nº 8.255/1991; Portaria nº 24/2020",
+      "artigosDeOrigem": [
+        "Reg. Int. Art. 68 (Dir. Saúde)"
+      ],
+      "atribuicoes": [
+        "Formular, propor e manter atualizadas a política e as diretrizes estratégicas concernentes à saúde da corporação",
+        "Coordenar as atividades relacionadas com a promoção, prevenção e tratamento da saúde"
+      ],
+      "desdobramentos": [
+        "Policlínica Médica",
+        "Policlínica Odontológica",
+        "Centro de Perícias Médicas"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Saúde",
+          "subordinadoA": "Chefe do Departamento de Recursos Humanos",
+          "requisito": "",
+          "desdobramentos": [
+            "Policlínica Médica",
+            "Policlínica Odontológica",
+            "Centro de Perícias Médicas"
+          ],
+          "atribuicoes": [
+            "Executar políticas de assistência à saúde, social e religiosa; saúde preventiva e curativa"
+          ]
+        }
+      ],
+      "id": "diretoria-saude-df"
+    },
+    "comando-operacional-df": {
+      "name": "Comando Operacional",
+      "abbreviation": "CmdOp",
+      "category": "Execução",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 28; Reg. Int. Art. 109, 110",
+      "baseLegal": "Lei nº 8.255/1991; Lei nº 12.086/2009",
+      "artigosDeOrigem": [
+        "Art. 28 (LOB - Unidades de Execução)",
+        "Reg. Int. Art. 109 (Comando Operacional)"
+      ],
+      "atribuicoes": [
+        "Planejamento estratégico, coordenação e emprego das unidades e subunidades subordinadas",
+        "Executar atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil"
+      ],
+      "desdobramentos": [
+        "Subcomando Operacional",
+        "Comandos de Área",
+        "Grupamentos de Bombeiro Militar",
+        "Comando Especializado"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Subcomando Operacional",
+            "Comandos de Área",
+            "Grupamentos de Bombeiro Militar",
+            "Comando Especializado",
+            "Estado-Maior Operacional"
+          ],
+          "atribuicoes": [
+            "Planejamento estratégico e coordenação do emprego das unidades",
+            "Execução de prevenção, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil"
+          ]
+        }
+      ],
+      "id": "comando-operacional-df"
+    },
+    "grupamentos-especializados-df": {
+      "name": "Grupamentos Especializados (Comando Especializado)",
+      "abbreviation": "GE",
+      "category": "Execução",
+      "subordinadoA": "Comando Especializado",
+      "legalRef": "Reg. Int. Art. 121 a 155",
+      "baseLegal": "Lei nº 8.255/1991; Portaria nº 24/2020",
+      "artigosDeOrigem": [
+        "Reg. Int. Art. 121 (Comando Especializado)"
+      ],
+      "atribuicoes": [
+        "Execução de missões especializadas de bombeiros militares"
+      ],
+      "desdobramentos": [
+        "GPCIU - Grupamento de Prevenção e Combate a Incêndio Urbano",
+        "GBS - Grupamento de Busca e Salvamento",
+        "GAEPH - Grupamento de Atendimento de Emergência Pré-Hospitalar",
+        "GPA - Grupamento de Proteção Ambiental",
+        "GPC - Grupamento de Proteção Civil",
+        "GAO - Grupamento de Aviação Operacional",
+        "GBMM - Grupamento de Bombeiros Militar de Motomecanização"
+      ],
+      "cargos": [],
+      "id": "grupamentos-especializados-df"
+    }
+  }
+}

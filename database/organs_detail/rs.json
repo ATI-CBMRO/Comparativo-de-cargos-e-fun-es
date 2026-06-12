@@ -1,0 +1,430 @@
+{
+  "state_id": "rs",
+  "state_name": "Rio Grande do Sul",
+  "cbm_name": "Corpo de Bombeiros Militar do Rio Grande do Sul",
+  "cbm_abbreviation": "CBMRS",
+  "legal_source": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018; Regimento Interno (Portaria CBMRS nº 001/2025)",
+  "organs": {
+    "comando-geral": {
+      "name": "Comando-Geral",
+      "abbreviation": "Cmt-G",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Secretaria da Segurança Pública",
+      "legalRef": "Art. 4º Dec. 53.897/2018; Art. 3º do RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 4º (Comando-Geral)"
+      ],
+      "atribuicoes": [
+        "Coordenação geral das atividades da Instituição",
+        "Presidência da Comissão de Avaliação e Mérito",
+        "Direção do Conselho Superior",
+        "Competência institucional do Corpo de Bombeiros Militar (Regimento Interno, Art. 1º): I - exercer as atividades de polícia judiciária militar no âmbito de sua competência",
+        "II - realizar a segurança, a prevenção, a proteção e o combate a incêndios",
+        "III - realizar os serviços de busca, salvamento e resgates aéreo, aquático e terrestre no Estado",
+        "IV - planejar e implementar as ações de proteção e defesa civil no Estado",
+        "V - planejar, estudar, analisar, vistoriar, controlar, fiscalizar, aprovar, notificar e interditar atividades, equipamentos, projetos e planos de proteção e prevenção contra incêndios, pânicos, desastres e catástrofes em todas as edificações, instalações, veículos, embarcações e outras atividades que ponham em risco a vida, o meio ambiente e o patrimônio, aplicando a legislação específica, respeitada a competência de outros órgãos",
+        "VI - realizar a investigação de incêndios e de sinistros, respeitadas as competências de outros órgãos",
+        "VII - elaborar, emitir e homologar instruções, resoluções, relatórios, pareceres e normas técnicas para disciplinar a segurança, a proteção e a prevenção contra incêndios e sinistros e a proteção e defesa civil",
+        "VIII - realizar o suporte básico de vida, respeitadas as competências de outros órgãos",
+        "IX - credenciar e fiscalizar as escolas, as empresas e os cursos de formação de bombeiros civis e aplicar as penalidades previstas em lei",
+        "X - desempenhar outras atribuições previstas em lei e exercer o poder de polícia administrativa no âmbito de suas atribuições"
+      ],
+      "desdobramentos": [
+        "Subcomandante-Geral",
+        "Conselho Superior",
+        "Corregedoria-Geral",
+        "Gabinete do Comando-Geral",
+        "Comissão de Avaliação e Mérito",
+        "Departamento Administrativo",
+        "Departamento de Segurança, Prevenção e Proteção Contra Incêndios",
+        "Academia de Bombeiro Militar",
+        "Assessoria de Operações, Defesa Civil e Serviços Civis Auxiliares",
+        "Comandos Regionais (1º ao 4º CRBM)",
+        "Batalhão Especial de Segurança Contra Incêndio"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Secretaria da Segurança Pública",
+          "requisito": "Oficial da ativa do último posto do QOEM",
+          "desdobramentos": [
+            "Gabinete do Comando-Geral",
+            "Departamento Administrativo",
+            "DSPCI",
+            "Academia de Bombeiro Militar",
+            "Comandos Regionais"
+          ],
+          "atribuicoes": [
+            "Administração e coordenação geral da Instituição",
+            "Presidência da Comissão de Avaliação e Mérito",
+            "Direção do Conselho Superior"
+          ]
+        },
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial da ativa do último posto do QOEM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento ao Comandante-Geral e funções delegadas",
+            "Substituição em ausências e impedimentos",
+            "Coordenação e supervisão dos órgãos de direção operacional e execução"
+          ]
+        },
+        {
+          "cargo": "Chefe do Estado-Maior Geral (CHEM)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOEM",
+          "desdobramentos": [
+            "Estado-Maior Geral (7 Seções)"
+          ],
+          "atribuicoes": [
+            "Estudo, planejamento, coordenação, fiscalização e controle",
+            "Órgão central do sistema de planejamento administrativo e orçamento",
+            "Acúmulo das funções de Subcomandante (substituto eventual)"
+          ]
+        },
+        {
+          "cargo": "Conselho Superior (CSup)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronéis da ativa em exercício",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Acompanhamento e manifestação em assuntos relevantes; subsídios para decisão"
+          ]
+        }
+      ],
+      "id": "comando-geral"
+    },
+    "corregedoria-geral": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "Corr-G",
+      "category": "Disciplina e Fiscalização",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º Dec. 53.897/2018; Art. 7º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 9º (Corregedoria-Geral)"
+      ],
+      "atribuicoes": [
+        "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos Bombeiros Militares e dos Servidores Civis da Instituição, diretamente subordinada ao Comandante-Geral (Regimento Interno, Art. 30)"
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa (DAdm/Corr-G)",
+        "Divisão de Justiça e Disciplina (DJD/Corr-G)",
+        "Divisão de Controle Interno Correcional (DCIC/Corr-G)",
+        "Divisão de Feitos Especiais (DFE/Corr-G)",
+        "Ouvidoria (Ouv/Corr-G)",
+        "Cartório (Cart/Corr-G)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Divisão Administrativa",
+            "Divisão de Justiça e Disciplina",
+            "Divisão de Controle Interno Correcional",
+            "Divisão de Feitos Especiais",
+            "Ouvidoria",
+            "Cartório"
+          ],
+          "atribuicoes": [
+            "Órgão de disciplina, orientação e fiscalização das atividades funcionais",
+            "Fiscalização da conduta dos militares e servidores civis"
+          ]
+        }
+      ],
+      "id": "corregedoria-geral"
+    },
+    "gabinete-cmt-g": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GCG",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 6º Dec. 53.897/2018; Art. 8º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 6º (Gabinete)"
+      ],
+      "atribuicoes": [
+        "Órgão de assistência, de assessoramento, suporte administrativo, de transmissão e fiscalização das ordens do Comandante-Geral (Cmt-G) e do Subcomandante-Geral (SCmt-G) (Regimento Interno, Art. 31)"
+      ],
+      "desdobramentos": [
+        "Secretaria-Executiva do Comandante-Geral (SecExec/GCG)",
+        "Assessoria de Controle Interno (CI/GCG)",
+        "Assessoria Jurídica, Convênios e Contratos (AJCC/GCG)",
+        "Assessoria de Comunicação Social (ACS/GCG)",
+        "Agência Central de Inteligência (ACI/GCG)",
+        "Assessoria de Planejamento Estratégico e Relações Institucionais (APERI/GCG)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete do Comandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial, com assessoramento direto do Secretário-Executivo e das suas Seções",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefiar, orientar e supervisionar os trabalhos do Gabinete do Comandante-Geral; prestar assessoramento direto ao Comando-Geral; coordenar as atividades administrativas (Regimento Interno, Art. 47)"
+          ]
+        }
+      ],
+      "id": "gabinete-cmt-g"
+    },
+    "departamento-administrativo": {
+      "name": "Departamento Administrativo",
+      "abbreviation": "DA",
+      "category": "Apoio Tático",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 12º Dec. 53.897/2018; Art. 10º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 12º (Departamento Administrativo)"
+      ],
+      "atribuicoes": [
+        "Órgão de planejamento, controle, fiscalização, auditoria e execução das atividades relacionadas ao fluxo de registros, movimentações e processos de recursos humanos, orçamento e finanças, logística, patrimônio e tecnologia da informação e comunicações (Regimento Interno, Art. 34)"
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa (DAdm)",
+        "Divisão de Logística e Patrimônio (DLP)",
+        "Divisão de Orçamento e Finanças (DOF)",
+        "Divisão de Recursos Humanos (DRH)",
+        "Divisão de Tecnologia da Informação e Comunicações (DTIC)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor do Departamento Administrativo",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Divisão Administrativa",
+            "Divisão de Logística e Patrimônio",
+            "Divisão de Orçamento e Finanças",
+            "Divisão de Recursos Humanos",
+            "Divisão de Tecnologia da Informação e Comunicações"
+          ],
+          "atribuicoes": [
+            "Planejamento, direção, controle e execução de logística, patrimônio, finanças, pessoal e TIC"
+          ]
+        }
+      ],
+      "id": "departamento-administrativo"
+    },
+    "dspci": {
+      "name": "Departamento de Segurança, Prevenção e Proteção Contra Incêndios",
+      "abbreviation": "DSPCI",
+      "category": "Apoio Tático",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13º Dec. 53.897/2018; Art. 11º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 13º (DSPCI)"
+      ],
+      "atribuicoes": [
+        "Órgão de planejamento, controle e fiscalização das atividades relacionadas à segurança contra incêndio e à pesquisa e investigação de sinistros em âmbito estadual (Regimento Interno, Art. 35)"
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa (DAdm)",
+        "Divisão de Gestão e Normatização (DGN)",
+        "Divisão de Pesquisa e Investigação de Sinistros (DPIS)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor do Departamento de Segurança, Prevenção e Proteção Contra Incêndios",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Divisão Administrativa",
+            "Divisão de Gestão e Normatização",
+            "Divisão de Pesquisa e Investigação de Sinistros"
+          ],
+          "atribuicoes": [
+            "Planejamento, controle e fiscalização da segurança contra incêndios e investigação de sinistros"
+          ]
+        }
+      ],
+      "id": "dspci"
+    },
+    "abm": {
+      "name": "Academia de Bombeiro Militar",
+      "abbreviation": "ABM",
+      "category": "Apoio Tático",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 14º Dec. 53.897/2018; Art. 12º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 14º (Academia de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "Nível Departamental de Ensino do CBMRS, responsável pelo planejamento, controle e fiscalização das atividades relacionadas ao ensino, à saúde física do efetivo e à pesquisa científica da Instituição, bem como pela capacitação continuada dos servidores militares e dos profissionais civis que exerçam atividade auxiliar de bombeiro em âmbito estadual (Regimento Interno, Art. 36)"
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa (DAdm/ABM)",
+        "Divisão de Ensino (DEns/ABM)",
+        "Órgão de Pesquisa, Ensino, Treinamento e Avaliação (OPETA)",
+        "Escola de Educação Física (EsEF)",
+        "Escola Superior de Segurança Contra Incêndio e Desastres (ESSCID)",
+        "Escola de Bombeiro Militar (EsBo)",
+        "Escola de Serviços Civis Auxiliares de Bombeiro (ESCAB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor da Academia de Bombeiro Militar",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Divisão Administrativa",
+            "Divisão de Ensino",
+            "Órgão de Pesquisa, Ensino, Treinamento e Avaliação (OPETA)"
+          ],
+          "atribuicoes": [
+            "Planejamento, controle e fiscalização de ensino, saúde física e pesquisa científica",
+            "Capacitação continuada de servidores e profissionais civis auxiliares"
+          ]
+        }
+      ],
+      "id": "abm"
+    },
+    "aodc": {
+      "name": "Assessoria de Operações, Defesa Civil e Serviços Civis Auxiliares de Bombeiro",
+      "abbreviation": "AODC",
+      "category": "Apoio Tático",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Dec. 53.897/2018; Art. 13º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 3º, VII (AODC)"
+      ],
+      "atribuicoes": [
+        "Órgão de planejamento, direção, controle e execução das atividades relacionadas a operações, defesa civil e serviços civis e auxiliares de bombeiro (Regimento Interno, Art. 37)"
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa (DAdm/AODC)",
+        "Divisão de Operações e Defesa Civil (DODC/AODC)",
+        "Divisão de Serviços Civis Auxiliares (DSCAB/AODC)",
+        "Divisão de Monitoramento Operacional (DMO/AODC)",
+        "Divisão de Operações Aéreas (DOA/AODC)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Assessor de Operações, Defesa Civil e Serviços Civis Auxiliares (AODC)",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Divisão de Operações e Defesa Civil",
+            "Divisão de Serviços Civis e Auxiliares",
+            "Divisão de Monitoramento Operacional",
+            "Divisão de Operações Aéreas"
+          ],
+          "atribuicoes": [
+            "Gestão tática de planejamento, direção, organização e controle de operações"
+          ]
+        }
+      ],
+      "id": "aodc"
+    },
+    "1crbm": {
+      "name": "1º Comando Regional de Bombeiro Militar",
+      "abbreviation": "1ºCRBM",
+      "category": "Execução",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 15º Dec. 53.897/2018; Art. 14º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 3º, VIII (Comando Regional Metropolitano)"
+      ],
+      "atribuicoes": [
+        "Escalão intermediário de comando, responsável, em sua circunscrição territorial, pelas atividades administrativo-operacionais internas e dos Órgãos do CBM (OCBM) que lhe são subordinados (Regimento Interno, Art. 38)"
+      ],
+      "desdobramentos": [
+        "1º Batalhão BM (Porto Alegre)",
+        "8º Batalhão BM (Canoas)",
+        "9º Batalhão BM (Tramandaí)",
+        "Batalhão de Busca e Salvamento (BBS) — Porto Alegre"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Comando Regional de Bombeiro Militar (CRBM)",
+          "subordinadoA": "Subcomandante-Geral (mobilização)",
+          "requisito": "Oficial Superior QOEM",
+          "desdobramentos": [
+            "Batalhões de Bombeiro Militar",
+            "Batalhão de Busca e Salvamento"
+          ],
+          "atribuicoes": [
+            "Supervisão, coordenação e planejamento operacional das unidades subordinadas"
+          ]
+        }
+      ],
+      "id": "1crbm"
+    },
+    "crbm-rs": {
+      "name": "Comandos Regionais (2º, 3º e 4º CRBM)",
+      "abbreviation": "CRBM",
+      "category": "Execução",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Dec. 53.897/2018",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Dec. 53.897/2018"
+      ],
+      "atribuicoes": [
+        "Escalões intermediários de comando, responsáveis, em suas respectivas circunscrições territoriais, pelas atividades administrativo-operacionais internas e dos Órgãos do CBM (OCBM) que lhes são subordinados (Regimento Interno, Art. 38)"
+      ],
+      "desdobramentos": [
+        "2º CRBM (Caxias do Sul): 2º, 5º, 7º BBM",
+        "3º CRBM (Pelotas): 3º, 10º, 13º BBM",
+        "4º CRBM (Santa Maria): 4º, 6º, 11º, 12º BBM"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Regional",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Oficial da ativa do último ou penúltimo posto da carreira do Quadro de Oficiais de Estado-Maior (QOEM)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comandar, chefiar, supervisionar, planejar, dirigir, orientar, coordenar e acompanhar as atividades da respectiva unidade organizacional (Regimento Interno, Art. 54)"
+          ]
+        }
+      ],
+      "id": "crbm-rs"
+    },
+    "besci": {
+      "name": "Batalhão Especial de Segurança Contra Incêndio",
+      "abbreviation": "BESCI",
+      "category": "Execução Especial",
+      "subordinadoA": "DSPCI (operacionalmente) e Comandante-Geral (administrativamente)",
+      "legalRef": "Art. 16º RI",
+      "baseLegal": "Lei Complementar nº 14.920/2016; Decreto nº 53.897/2018",
+      "artigosDeOrigem": [
+        "Art. 3º, VIII e Art. 5º"
+      ],
+      "atribuicoes": [
+        "Órgão de Nível Departamental de Apoio e Execução, com abrangência estadual na sua área temática, subordinado operacionalmente ao Departamento de Segurança, Prevenção e Proteção Contra Incêndios (DSPCI) e, enquanto órgão de Apoio, subordinado ao Comandante-Geral, de autonomia administrativa (Regimento Interno, Art. 39)"
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa e Correição (DAdmC/BESCI)",
+        "Divisão de Análise de Planos (DAPPCI/BESCI)",
+        "Divisão de Vistoria e Fiscalização de Edificações (DVFE/BESCI)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Batalhão Especial de Segurança Contra Incêndio (BESCI)",
+          "subordinadoA": "DSPCI (operacional) / Comando-Geral (administrativo)",
+          "requisito": "Oficial Superior QOEM",
+          "desdobramentos": [
+            "Divisão de Análise de Planos",
+            "Divisão de Vistoria e Fiscalização de Edificações"
+          ],
+          "atribuicoes": [
+            "Análise de planos de prevenção contra incêndio",
+            "Vistoria e fiscalização de edificações (abrangência estadual)"
+          ]
+        }
+      ],
+      "id": "besci"
+    }
+  }
+}

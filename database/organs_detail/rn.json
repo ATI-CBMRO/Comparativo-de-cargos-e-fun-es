@@ -1,0 +1,966 @@
+{
+  "state_id": "rn",
+  "state_name": "Rio Grande do Norte",
+  "cbm_name": "Corpo de Bombeiros Militar do Rio Grande do Norte",
+  "cbm_abbreviation": "CBMRN",
+  "legal_source": "Decreto nº 31.139, de 1º de dezembro de 2021 (Regulamento Geral do CBMRN); LC nº 230/2002 (alt. até LC nº 791/2025)",
+  "organs": {
+    "cmt-rn": {
+      "name": "Comandante-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Superior",
+      "subordinadoA": "Governador do Estado (por intermédio da SESED)",
+      "legalRef": "Art. 12; Art. 13",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 12 (caput)",
+        "Art. 13 (competências, I-XIX)",
+        "Art. 14 (requisito do cargo)"
+      ],
+      "atribuicoes": [
+        "O Comandante Geral do Corpo de Bombeiros Militar do Estado do Rio Grande do Norte é o responsável pelo comando, coordenação, supervisão e orientação da execução das atividades da Corporação (Art. 12)",
+        "I - assessorar o Governador do Estado e o Secretário de Estado da Segurança Pública e da Defesa Social nos assuntos relacionados às atividades de bombeiro militar, defesa civil e guarda militar do meio ambiente;",
+        "II - dirigir, coordenar, supervisionar e orientar as atividades técnicas, operacionais e administrativas da Corporação;",
+        "III - fazer cumprir as leis, normas e regulamentos da Corporação;",
+        "IV - editar portarias e demais normas e diretrizes de serviço;",
+        "V - submeter ao Secretário de Estado da Segurança Pública e da Defesa Social, no início de cada exercício, o relatório das atividades desenvolvidas pelo Corpo de Bombeiros Militar durante o ano anterior, sugerindo a adoção de medidas legislativas e as providências adequadas ao seu aperfeiçoamento, como estudos, projetos, programas e propostas para a organização, o funcionamento e a atuação da Instituição, com vista ao desenvolvimento da segurança;",
+        "VI - determinar a instauração de sindicância e de processo administrativo disciplinar, bem como aplicar as penalidades de sua competência;",
+        "VII - convocar e presidir as reuniões do Conselho Superior do Corpo de Bombeiros Militar;",
+        "VIII - celebrar convênios e ajustes com entidades públicas e privadas visando formar parcerias com vistas à otimização das funções institucionais do Corpo de Bombeiros Militar;",
+        "IX - presidir a elaboração da proposta orçamentária do Corpo de Bombeiros Militar, bem como praticar os atos necessários de gestão orçamentária e financeira;",
+        "X - determinar a realização de licitações, inexigi-las, dispensá-las, aprová-las, anulá-las ou revogá-las;",
+        "XI - presidir e designar os demais membros da Comissão Organizadora e Examinadora dos concursos para ingresso na carreira de oficiais e praças, bem como as condições necessárias à inscrição de candidato, atendendo previamente às normas estabelecidas pelo Conselho Superior do Corpo de Bombeiros Militar;",
+        "XII - antecipar ou prorrogar a jornada normal de trabalho, bem como definir normas e critérios para o cumprimento do expediente regular do Corpo de Bombeiros Militar;",
+        "XIII - propor e conceder gratificações, na forma da legislação vigente;",
+        "XIV - designar ou dispensar os ocupantes de comando, diretorias, chefias, funções gratificadas ou de confiança, bem como os seus eventuais substitutos;",
+        "XV - disciplinar o uso dos uniformes militares, nos termos da legislação em vigor;",
+        "XVI - decidir nos processos relativos aos interesses do Corpo de Bombeiro Militar, inclusive os referentes a direitos e deveres dos oficiais e praças e dos servidores civis da Instituição;",
+        "XVII - determinar a publicação semestral da relação de antiguidade dos Oficiais e Praças da Corporação em Boletim Geral, até 31 de janeiro e 31 de julho;",
+        "XVIII - determinar a realização de exame de sanidade para a verificação da incapacidade física ou mental de Praças e Oficiais, temporária ou definitiva, por intermédio da Junta Médica da Instituição;",
+        "XIX - desempenhar outras atividades definidas em lei."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado (via SESED)",
+          "requisito": "Oficial superior da ativa, do último posto do QOCBM, com Curso Superior de Bombeiro Militar ou equivalente, nomeado e exonerado por ato do Governador (Art. 14)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - assessorar o Governador do Estado e o Secretário de Estado da Segurança Pública e da Defesa Social nos assuntos relacionados às atividades de bombeiro militar, defesa civil e guarda militar do meio ambiente;",
+            "II - dirigir, coordenar, supervisionar e orientar as atividades técnicas, operacionais e administrativas da Corporação;",
+            "III - fazer cumprir as leis, normas e regulamentos da Corporação;",
+            "IV - editar portarias e demais normas e diretrizes de serviço;",
+            "IX - presidir a elaboração da proposta orçamentária do Corpo de Bombeiros Militar, bem como praticar os atos necessários de gestão orçamentária e financeira;"
+          ]
+        }
+      ],
+      "id": "cmt-rn"
+    },
+    "scmt-rn": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Superior",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 15",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 15 (competências, I-XIII)",
+        "Art. 16 (requisito do cargo)"
+      ],
+      "atribuicoes": [
+        "O Subcomandante Geral é o auxiliar direto do Comandante Geral da Corporação, substituindo-o em seus eventuais impedimentos, desempenhando as atribuições previstas em Lei e regulamentos, competindo-lhe: (Art. 15, caput)",
+        "I - substituir o Comandante Geral nas suas ausências ou impedimentos legais;",
+        "II - assessorar o Comandante Geral na gestão administrativa, técnica e operacional da corporação, por meio do controle das atividades dos órgãos de direção geral e assessoramento;",
+        "III - coordenar a elaboração do planejamento estratégico da corporação, assim como aplicá-lo;",
+        "IV - assessorar o Comandante Geral na formulação da doutrina de preparo e emprego da tropa e na definição das políticas de comando;",
+        "V - assegurar a atuação convergente e dinâmica dos órgãos de direção geral, assessoramento e execução;",
+        "VI - elaborar e estabelecer ordens, instruções, diretrizes, planos e orientações pertinentes à implementação das políticas do Comandante Geral, visando à consecução dos objetivos e metas estabelecidas no planejamento estratégico ou planos de ação;",
+        "VII - supervisionar a execução das diretrizes, planos e ordens;",
+        "VIII - realizar inspeção periódica nas Organizações Bombeiro Militar (OBM);",
+        "IX - desempenhar outras atribuições delegadas pelo Comandante Geral;",
+        "X - presidir a Comissão de Promoção de Praças (CPP);",
+        "XI - encarregar-se pelo nível de disciplina dos militares da Corporação;",
+        "XII - presidir, como membro nato, as atividades desenvolvidas na Comissão Permanente de Ética e Disciplina (CPED);",
+        "XIII - exercer demais atribuições definidas na legislação em vigor."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial superior da ativa, do último posto do QOCBM, com Curso Superior de Bombeiro Militar ou equivalente, nomeado e exonerado por ato do Governador (Art. 16)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - substituir o Comandante Geral nas suas ausências ou impedimentos legais;",
+            "II - assessorar o Comandante Geral na gestão administrativa, técnica e operacional da corporação;",
+            "X - presidir a Comissão de Promoção de Praças (CPP);",
+            "XII - presidir, como membro nato, as atividades desenvolvidas na Comissão Permanente de Ética e Disciplina (CPED);"
+          ]
+        }
+      ],
+      "id": "scmt-rn"
+    },
+    "csup-rn": {
+      "name": "Conselho Superior",
+      "abbreviation": "CS",
+      "category": "Deliberação Coletiva",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 17 (atribuições, I-IX)",
+        "Art. 18 (composição)"
+      ],
+      "atribuicoes": [
+        "Órgão de deliberação coletiva que assessora o Comandante Geral na formulação e avaliação de políticas estratégicas e na fixação de diretrizes de gerenciamento administrativo e operacional do Corpo de Bombeiros Militar (Art. 17, caput)",
+        "I - aprovar a proposta orçamentária do Corpo de Bombeiros Militar;",
+        "II - aprovar o relatório geral e anual do Corpo de Bombeiros Militar;",
+        "III - deliberar sobre qualquer matéria de interesse do Corpo de Bombeiros Militar, que lhe seja submetida por quaisquer de seus membros, com anuência do Comandante Geral;",
+        "IV - dirimir quaisquer dúvidas ou omissões atinentes à competência dos órgãos que integram o Corpo de Bombeiros Militar;",
+        "V - analisar regras, critérios e princípios para a realização de concurso público para ingresso nas carreiras de Oficiais e Praças da Instituição, propostas pelo Comandante Geral, observado o disposto em lei;",
+        "VI - estabelecer o padrão dos símbolos do Corpo de Bombeiros Militar;",
+        "VII - deliberar sobre os processos de promoção de Oficiais e Praças da Corporação;",
+        "VIII - estabelecer as diretrizes do Fundo de Reaparelhamento do Corpo de Bombeiros Militar (FUNREBOM);",
+        "IX - elaborar o seu regimento interno."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Conselho Superior (CSup)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronéis BM da ativa do último posto",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Acompanhamento de assuntos relevantes da Instituição",
+            "Fornecimento de subsídios para a tomada de decisão; assessoramento direto"
+          ]
+        }
+      ],
+      "id": "csup-rn"
+    },
+    "gab-rn": {
+      "name": "Gabinete do Comando Geral",
+      "abbreviation": "Gab.CG",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 19 (competências, I-V)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comando Geral é o seu órgão de apoio administrativo e de representação social, competindo-lhe: (Art. 19, caput)",
+        "I - redigir e preparar o expediente pessoal do Comandante Geral e do Subcomandante Geral e organizar suas agendas de despachos e de compromissos, assim como fornecer informações administrativas aos demais órgãos do Corpo de Bombeiros Militar;",
+        "II - coordenar a recepção e o atendimento ao público;",
+        "III - assistir ao Comandante Geral e ao Subcomandante Geral nas suas atividades de relações internas e externas;",
+        "IV - promover, junto aos órgãos de imprensa, a divulgação de informações sobre a atuação e as atividades do Corpo de Bombeiros Militar;",
+        "V - exercer outras atividades que lhe forem cometidas pelo Comandante Geral e Subcomandante Geral."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete do Comando Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial BM de livre escolha do Comandante Geral; acumula com a função de Ajudante Geral (Art. 22, parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Apoio administrativo e representação social do Comando Geral; redação do expediente pessoal do CG e SCG; coordenação do atendimento ao público (Art. 19)"
+          ]
+        }
+      ],
+      "id": "gab-rn"
+    },
+    "aj-rn": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 20 (caput)"
+      ],
+      "atribuicoes": [
+        "A Assessoria Jurídica é o órgão que presta assessoramento direto ao Comandante Geral do Corpo de Bombeiros Militar, competindo-lhe o estudo de questões de direito compreendidas na política de administração geral da corporação, o exame dos aspectos de legalidade dos atos e normas que lhe forem submetidas à apreciação e demais atribuições que venham a ser previstas em regulamento (Art. 20)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor Jurídico",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial BM com formação jurídica, designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento jurídico direto ao Comandante Geral; estudo de questões de direito e exame da legalidade dos atos e normas (Art. 20)"
+          ]
+        }
+      ],
+      "id": "aj-rn"
+    },
+    "ajg-rn": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AjG",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 22 (caput e parágrafo único)"
+      ],
+      "atribuicoes": [
+        "A Ajudância Geral é o órgão encarregado do expediente, da execução dos trabalhos de secretaria geral, incluindo a expedição e recebimento de correspondência, correios, redação e impressão do boletim diário do Comando Geral, do protocolo, do apoio em pessoal aos órgãos que compõem o Comando Geral, dos serviços gerais e da segurança do Quartel do Comando do Corpo de Bombeiros Militar do Rio Grande do Norte, competindo-lhe ainda, elaborar e redigir as 'Ordens do Dia' e discursos do Comandante Geral e preparar os processos de seleção e agraciamento das diversas comendas institucionais (Art. 22)."
+      ],
+      "desdobramentos": [
+        "Secretaria Geral",
+        "Seção de Administração",
+        "Seção de Comando e Serviço",
+        "Protocolo Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior Bombeiro Militar, de livre escolha do Comandante Geral; acumula com a função de Chefe de Gabinete do Comando Geral (Art. 22, parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Expediente geral, secretaria, protocolo e segurança do Quartel-General do CBMRN; redação das 'Ordens do Dia' e discursos do CG; processos de agraciamento (Art. 22)"
+          ]
+        }
+      ],
+      "id": "ajg-rn"
+    },
+    "uci-rn": {
+      "name": "Unidade de Controle Interno",
+      "abbreviation": "UCI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 24 (competências, I-IX)"
+      ],
+      "atribuicoes": [
+        "A Unidade de Controle Interno (UCI) é o órgão responsável pela análise dos processos de aquisição de materiais e equipamentos de qualquer natureza, contratação de serviços e despesas com pessoal no âmbito do CBMRN, competindo-lhe: (Art. 24, caput)",
+        "I - controlar e fiscalizar todas as atividades relativas à compra e pagamento do CBMRN;",
+        "II - conferir cálculos e planilhas de toda compra do CBMRN;",
+        "III - conferir índices de reajustes ou de atualização aplicados nos contratos do CBMRN;",
+        "IV - exercer o controle contábil, financeiro, orçamentário, operacional e patrimonial, quanto à legalidade, legitimidade, economicidade e razoabilidade;",
+        "V - exercer o Controle Interno das operações de créditos, bem como da execução de convênios, contratos e licitações, relativos aos direitos e haveres do CBMRN;",
+        "VI - avaliar a correta aplicação das disposições contidas na legislação em vigor quanto aos limites de gastos e outras decorrentes, apresentando informações que auxiliem neste processo;",
+        "VII - monitorar e colaborar na implementação e no cumprimento de todas as disposições contidas nas deliberações expedidas pelos Órgãos de Controle Externos;",
+        "VIII - supervisionar os processos de controles internos;",
+        "IX - outras atribuições definidas em lei."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Unidade de Controle Interno",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial BM designado por ato do Comandante Geral; pode acumular com outra função (Art. 46)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - controlar e fiscalizar todas as atividades relativas à compra e pagamento do CBMRN;",
+            "IV - exercer o controle contábil, financeiro, orçamentário, operacional e patrimonial, quanto à legalidade, legitimidade, economicidade e razoabilidade;",
+            "V - exercer o Controle Interno das operações de créditos, bem como da execução de convênios, contratos e licitações;"
+          ]
+        }
+      ],
+      "id": "uci-rn"
+    },
+    "cpp-rn": {
+      "name": "Comissão de Promoção de Praças",
+      "abbreviation": "CPP",
+      "category": "Assessoramento",
+      "subordinadoA": "Subcomandante-Geral (presidente)",
+      "legalRef": "Art. 26",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 26 (competências, I-III)"
+      ],
+      "atribuicoes": [
+        "A Comissão de Promoção de Praças do Corpo de Bombeiros Militar do Rio Grande do Norte (CPP/CBMRN) é um órgão consultivo e deliberativo integrante da estrutura administrativa do CBMRN, competindo-lhe: (Art. 26, caput)",
+        "I - assessorar, estudar e propor ao Comandante Geral as diretrizes que visem a garantir às Praças do CBMRN o direito à promoção de forma seletiva, gradual e sucessiva;",
+        "II - deliberar, no âmbito da sua competência, acerca da existência ou não do preenchimento dos requisitos objetivos ou subjetivos ensejadores da promoção das Praças do CBMRN;",
+        "III - desempenhar atividades correlatas determinadas pelo Comandante Geral, bem como outras funções definidas na legislação em vigor."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Presidente da CPP (Subcomandante-Geral)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Presidida pelo Subcomandante-Geral (Art. 15, X); membros designados por ato do CG",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - assessorar, estudar e propor ao Comandante Geral as diretrizes que visem a garantir às Praças do CBMRN o direito à promoção de forma seletiva, gradual e sucessiva;",
+            "II - deliberar acerca da existência ou não do preenchimento dos requisitos ensejadores da promoção das Praças do CBMRN;"
+          ]
+        }
+      ],
+      "id": "cpp-rn"
+    },
+    "cped-rn": {
+      "name": "Comissão Permanente de Ética e Disciplina",
+      "abbreviation": "CPED",
+      "category": "Assessoramento",
+      "subordinadoA": "Subcomandante-Geral (presidente)",
+      "legalRef": "Art. 23",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 23 (caput)"
+      ],
+      "atribuicoes": [
+        "A Comissão Permanente de Ética e Disciplina será nomeada anualmente por ato do Comandante Geral do CBMRN, podendo ser reconduzida por iguais e sucessivos períodos, limitado até 60 (sessenta) meses, e será presidida pelo Subcomandante Geral, competindo-lhe analisar o nível disciplinar da tropa, propor medidas de correção, acompanhamento e fiscalização dos processos e procedimentos administrativos disciplinares, examinar fatos, circunstâncias e consequências de atos que afetem o bom desempenho da atividade Bombeiro Militar ou decoro da Corporação (Art. 23)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Presidente da CPED (Subcomandante-Geral)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Presidida pelo Subcomandante-Geral como membro nato (Art. 15, XII)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Presidência da comissão responsável por analisar o nível disciplinar da tropa e propor medidas de correção (Art. 23)"
+          ]
+        }
+      ],
+      "id": "cped-rn"
+    },
+    "assint-rn": {
+      "name": "Assessoria de Inteligência",
+      "abbreviation": "ASSINT",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 30 (caput e parágrafo único)"
+      ],
+      "atribuicoes": [
+        "A Assessoria de Inteligência é o Órgão de Assessoramento Superior incumbido de assessorar o Comandante Geral nos assuntos de controle interno, identificação e avaliação dos pontos críticos que possam ameaçar a comunidade potiguar. O Assessor de Inteligência tem a competência de produzir informações estratégicas com vistas ao preparo e emprego do Corpo de Bombeiros Militar (Art. 30)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor de Inteligência",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior do QOCBM (Art. 30, parágrafo único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessorar o Comandante Geral nos assuntos de controle interno e identificação de pontos críticos; produzir informações estratégicas com vistas ao preparo e emprego do CBMRN (Art. 30)"
+          ]
+        }
+      ],
+      "id": "assint-rn"
+    },
+    "cmdoop-rn": {
+      "name": "Comando Operacional Bombeiro Militar",
+      "abbreviation": "CmdoOpBM",
+      "category": "Execução",
+      "subordinadoA": "Conselho Superior (membro)",
+      "legalRef": "Art. 32",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 32 (caput e parágrafo único)"
+      ],
+      "atribuicoes": [
+        "O Comando Operacional Bombeiro Militar (Cmdo Op BM) é o órgão responsável pelo planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação (Art. 32)."
+      ],
+      "desdobramentos": [
+        "Estado-Maior Operacional (EM Op)",
+        "Centro de Operações do CBMRN (COCBM)",
+        "Comissão de Defesa Civil (CODEC)",
+        "1º Grupamento de Bombeiros Militar",
+        "2º Grupamento de Bombeiros Militar",
+        "Grupamento de Bombeiros Marítimo (GBMAR)",
+        "Subgrupamento Independente de APH (SIBM-APH)",
+        "1º Subgrupamento Independente de Bombeiros Militar",
+        "2º Subgrupamento Independente de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional Bombeiro Militar",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel ou Tenente-Coronel do QOCBM (Art. 45)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação (Art. 32)"
+          ]
+        }
+      ],
+      "id": "cmdoop-rn"
+    },
+    "emop-rn": {
+      "name": "Estado-Maior Operacional",
+      "abbreviation": "EM Op",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 33",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 33 (caput; §1º I-VI; §§2º-5º)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior Operacional (EM Op), subordinado ao Comandante Operacional, é a estrutura de assessoramento responsável pela coordenação setorial do Comando Operacional, atuando na supervisão das atividades de proteção e defesa civil, proteção do meio ambiente, combate a incêndio, resgate, busca e salvamento de vidas e bens em todo o Estado (Art. 33, caput)",
+        "Composição: 1ª Seção (B/1) — supervisão de organização e emprego de pessoal e controle de efetivo (Art. 33 §2º)",
+        "2ª Seção (B/2) — responsável pela coleta de dados, produção de informes e estudos de inteligência e contrainteligência (Art. 33 §3º)",
+        "3ª Seção (B/3) — planejamento de operações, organização, instrução, mobilização e desmobilização e planos de operações futuras (Art. 33 §4º)",
+        "4ª Seção (B/4) — orientação das prioridades de apoio logístico operacional e distribuição de equipamentos e suprimentos (Art. 33 §5º)"
+      ],
+      "desdobramentos": [
+        "1ª Seção (B/1)",
+        "2ª Seção (B/2)",
+        "3ª Seção (B/3)",
+        "4ª Seção (B/4)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Subcomandante Operacional / Chefe do EM Op",
+          "subordinadoA": "Comandante Operacional Bombeiro Militar",
+          "requisito": "Oficial do QOCBM; substituto do Comandante Operacional",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - realizar estudos de situação;",
+            "II - apresentar propostas;",
+            "III - elaborar planos e ordens;",
+            "IV - supervisionar a execução dos planos e ordens previstos no inciso anterior;",
+            "V - substituir o Comandante Operacional;",
+            "VI - desempenhar as atribuições previstas em lei e regulamentos."
+          ]
+        }
+      ],
+      "id": "emop-rn"
+    },
+    "cocbm-rn": {
+      "name": "Centro de Operações do CBMRN",
+      "abbreviation": "COCBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 33 §7º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 33 §7º (competências)"
+      ],
+      "atribuicoes": [
+        "O Centro de Operações do Corpo de Bombeiros (COCBM) tem por competência coordenar o atendimento e despachos de ocorrências bombeiro-militar e de proteção e defesa civil, bem como coordenar, orientar e disciplinar as telecomunicações operacionais no âmbito do CBMRN (Art. 33 §7º)."
+      ],
+      "desdobramentos": [
+        "Seção de Operações",
+        "Seção de Comunicações",
+        "Seção de Apoio"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Operações",
+          "subordinadoA": "Comando Operacional BM",
+          "requisito": "Oficial BM designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação do atendimento e despachos de ocorrências BM e de proteção e defesa civil; coordenação e disciplina das telecomunicações operacionais do CBMRN (Art. 33 §7º)"
+          ]
+        }
+      ],
+      "id": "cocbm-rn"
+    },
+    "codec-rn": {
+      "name": "Comissão de Defesa Civil",
+      "abbreviation": "CODEC",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 33 §8º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 33 §8º (competências)"
+      ],
+      "atribuicoes": [
+        "A Comissão de Defesa Civil (CODEC) tem por competência a coordenação de ações preventivas e de socorro emergencial, com vistas a evitar ou minimizar os efeitos desastrosos de situações adversas que possam causar danos à sociedade, promovendo estudo em áreas de risco, organizando banco de dados em mapeamento de áreas críticas relacionadas com as ameaças e vulnerabilidade aos riscos naturais de maior prevalência no Estado (Art. 33 §8º)."
+      ],
+      "desdobramentos": [
+        "Subcomissão de ações preventivas",
+        "Subcomissão de ações de emergência",
+        "Subcomissão de ações de apoio"
+      ],
+      "cargos": [
+        {
+          "cargo": "Presidente da CODEC",
+          "subordinadoA": "Comando Operacional BM",
+          "requisito": "Oficial BM designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação de ações preventivas e de socorro emergencial de defesa civil; mapeamento de áreas críticas e vulnerabilidade aos riscos naturais (Art. 33 §8º)"
+          ]
+        }
+      ],
+      "id": "codec-rn"
+    },
+    "gbm1-rn": {
+      "name": "1º Grupamento de Bombeiros Militar",
+      "abbreviation": "1º GBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 32 §9º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 32 §9º (missão e composição)"
+      ],
+      "atribuicoes": [
+        "O Primeiro Grupamento de Bombeiros Militar (1º GBM) é a unidade operacional do Corpo de Bombeiros Militar, responsável pela operacionalização das atividades de prevenção e combate a incêndio, busca e resgate de pessoas e bens, compreendendo as atividades de salvamento terrestre e em altura, bem como a defesa do meio ambiente, atuando como órgão estadual encarregado da guarda militar do patrimônio ambiental do Estado, na capital e região metropolitana do Estado (Art. 32 §9º)."
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa",
+        "Divisão de Operações",
+        "1º Subgrupamento de Bombeiros",
+        "2º Subgrupamento de Bombeiros",
+        "3º Subgrupamento de Bombeiros"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do 1º GBM",
+          "subordinadoA": "Comandante Operacional BM",
+          "requisito": "Major ou Tenente-Coronel do QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comandar a unidade operacional responsável pelas atividades de prevenção, combate a incêndio, busca e resgate na capital e região metropolitana do Estado (Art. 32 §9º)"
+          ]
+        }
+      ],
+      "id": "gbm1-rn"
+    },
+    "gbm2-rn": {
+      "name": "2º Grupamento de Bombeiros Militar",
+      "abbreviation": "2º GBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 32 §10º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 32 §10º (missão e composição)"
+      ],
+      "atribuicoes": [
+        "O Segundo Grupamento de Bombeiros Militar (2º GBM) é a unidade operacional do Corpo de Bombeiros Militar, responsável pela operacionalização das atividades de prevenção e combate a incêndio, de busca e resgate de pessoas e bens, compreendendo as atividades de salvamento terrestre, em altura e aquático, e atendimento pré-hospitalar de urgência, nos municípios localizados no interior do Estado do Rio Grande do Norte (Art. 32 §10º)."
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa",
+        "Divisão de Operações",
+        "1º Subgrupamento de Bombeiros (Mossoró/RN)",
+        "2º Subgrupamento de Bombeiros (Caicó/RN)",
+        "3º Subgrupamento de Bombeiros (Pau dos Ferros/RN)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do 2º GBM",
+          "subordinadoA": "Comandante Operacional BM",
+          "requisito": "Major ou Tenente-Coronel do QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comandar a unidade operacional responsável por incêndio, busca, resgate e APH nos municípios do interior do Estado do RN (Art. 32 §10º)"
+          ]
+        }
+      ],
+      "id": "gbm2-rn"
+    },
+    "gbmar-rn": {
+      "name": "Grupamento de Bombeiros Marítimo",
+      "abbreviation": "GBMAR",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 32 §11º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 32 §11º (missão e composição)"
+      ],
+      "atribuicoes": [
+        "O Grupamento de Bombeiros Marítimo (GBMAR) é a unidade operacional do Corpo de Bombeiros Militar, responsável pela operacionalização das diretrizes e procedimentos referentes aos serviços e técnicas de salvamento aquático, procedimentos de primeiros socorros e noções básicas de marinharia, visando a busca e resgate de pessoas e bens, compreendendo as atividades de salvamento aquático, a prevenção contra afogamentos e a normalização e fiscalização de atividades esportivas e recreativas em áreas de risco em seu campo de atuação (Art. 32 §11º)."
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa",
+        "Divisão de Operações",
+        "1º SBMSA",
+        "2º SBMSA",
+        "3º SBMSA"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do GBMAR",
+          "subordinadoA": "Comandante Operacional BM",
+          "requisito": "Oficial do QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comandar a unidade responsável pelo salvamento aquático, prevenção contra afogamentos e fiscalização de atividades esportivas e recreativas em áreas de risco (Art. 32 §11º)"
+          ]
+        }
+      ],
+      "id": "gbmar-rn"
+    },
+    "sibm-aph-rn": {
+      "name": "Subgrupamento Independente de Bombeiros Militar de APH",
+      "abbreviation": "SIBM-APH",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 32 §12º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 32 §12º (missão e composição)"
+      ],
+      "atribuicoes": [
+        "O Subgrupamento Independente de Bombeiros Militar de Atendimento Pré-hospitalar (S.I.B.M-APH) é a unidade operacional do Corpo de Bombeiros Militar do Estado responsável pelo serviço de atendimento pré-hospitalar de urgência, compreendendo as ações de manutenção do suporte básico e avançado de vida, prestadas nos acidentes em via pública e rodovias, capaz de reduzir os casos de mortalidade por afecções causadas pelo trauma, na capital e região metropolitana do Estado (Art. 32 §12º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante do SIBM-APH",
+          "subordinadoA": "Comandante Operacional BM",
+          "requisito": "Oficial do QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comandar o subgrupamento responsável pelo APH de urgência na capital e região metropolitana (Art. 32 §12º)"
+          ]
+        }
+      ],
+      "id": "sibm-aph-rn"
+    },
+    "dlof-rn": {
+      "name": "Diretoria de Logística, Orçamento e Finanças",
+      "abbreviation": "DLOF",
+      "category": "Execução",
+      "subordinadoA": "Conselho Superior (membro)",
+      "legalRef": "Art. 34",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 34 (caput e §§1º-2º)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Logística, Orçamento e Finanças é responsável pela gestão das finanças da corporação, bem como pela gestão de logística da corporação, de modo a supervisionar, coordenar, controlar, fiscalizar e executar as atividades financeiras, contábeis e orçamentárias e a aquisição, o suprimento, o armazenamento e a manutenção dos equipamentos, viaturas, bens móveis e imóveis, obras, instalações, transportes de materiais e pessoas, sendo ainda responsável por planejar, coordenar, executar e avaliar projetos e atividades relacionadas a investimentos, desenvolvimento, manutenção, inovação e segurança em tecnologia da informação, além de outras atividades correlatas (Art. 34)."
+      ],
+      "desdobramentos": [
+        "Secretaria Executiva",
+        "Comissão Permanente de Licitação (CPL)",
+        "Centro de Logística (CLOG)",
+        "Centro de Tecnologia da Informação e Comunicações (CTIC)",
+        "Centro de Administração Financeira e Orçamentária (CAFO)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística, Orçamento e Finanças",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel ou Tenente-Coronel do QOCBM (Art. 45)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão das finanças e logística da Corporação; supervisão, coordenação, controle e fiscalização das atividades financeiras, contábeis, orçamentárias, aquisição, suprimento e tecnologia da informação (Art. 34)"
+          ]
+        }
+      ],
+      "id": "dlof-rn"
+    },
+    "cafo-rn": {
+      "name": "Centro de Administração Financeira e Orçamentária",
+      "abbreviation": "CAFO",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Logística, Orçamento e Finanças",
+      "legalRef": "Art. 39",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 39 (competências, I-XVI)"
+      ],
+      "atribuicoes": [
+        "O Centro de Administração Financeira e Orçamentária é o órgão responsável pelas atividades específicas da gestão orçamentário-financeira, pela supervisão destas atividades junto aos demais órgãos da Corporação e pelo repasse de recursos orçamentários, de acordo com o planejamento estabelecido, competindo-lhe: (Art. 39, caput)",
+        "I - elaborar programa de planejamento, controle e fiscalização das atividades relacionadas com a política de pessoal, de admissão, de capacitação técnica, de remuneração do pessoal e de prevenção de acidentes do trabalho;",
+        "II - alocar recursos orçamentários e financeiros para os diferentes setores de atividade do CBMRN;",
+        "III - controlar os custos com pessoal e manter atualizado o cadastro central de recursos humanos;",
+        "IV - realizar atividades específicas da gestão financeira, supervisão destas junto aos demais órgãos da corporação e o repasse de recursos orçamentários, de acordo com o planejamento estabelecido;",
+        "VI - elaborar o planejamento orçamentário do CBMRN, da programação financeira, da captação de recursos financeiros e a confecção de convênios com órgãos e entidades públicas e privadas;",
+        "VII - acompanhar, controlar e fiscalizar a execução orçamentária-financeira do CBMRN;",
+        "VIII - apropriar, analisar e controlar custos;",
+        "IX - empenhar, liquidar e pagar as despesas da respectiva unidade orçamentária;",
+        "X - promover o registro de atos orçamentários e financeiros, consignações e depósitos;",
+        "XI - manter atualizadas as informações sobre a posição dos saldos orçamentários e financeiros;",
+        "XII - elaborar balancetes e prestações de contas a serem encaminhados aos órgãos internos e externos;",
+        "XIII - manter registrados e arquivados contratos e obrigações de responsabilidade do CBMRN;",
+        "XIV - assessorar na elaboração da proposta de Lei Orçamentária Anual (LOA), na Lei de Diretrizes Orçamentárias (LDO) e acompanhar a execução do Plano Plurianual (PPA);",
+        "XV - realizar auditorias em todas as repartições do CBMRN nas passagens de comando ou por solicitação do Comandante Geral da Corporação;",
+        "XVI - desempenhar outras atividades correlatas."
+      ],
+      "desdobramentos": [
+        "Tesouraria Geral",
+        "Seção de Processos, Contabilidade e Auditoria"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CAFO",
+          "subordinadoA": "Diretor da DLOF",
+          "requisito": "Oficial BM designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "II - alocar recursos orçamentários e financeiros para os diferentes setores de atividade do CBMRN;",
+            "VII - acompanhar, controlar e fiscalizar a execução orçamentária-financeira do CBMRN;",
+            "IX - empenhar, liquidar e pagar as despesas da respectiva unidade orçamentária;"
+          ]
+        }
+      ],
+      "id": "cafo-rn"
+    },
+    "dgpei-rn": {
+      "name": "Diretoria de Gestão de Pessoas, Ensino e Instrução",
+      "abbreviation": "DGPEI",
+      "category": "Execução",
+      "subordinadoA": "Conselho Superior (membro)",
+      "legalRef": "Art. 40",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 40 (competências, I-VI)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Gestão de Pessoas, Ensino e Instrução é responsável pelo gerenciamento de pessoas da Corporação, incumbindo-se: (Art. 40, caput)",
+        "I - da supervisão, coordenação, controle, fiscalização e execução das atividades relacionadas com o ingresso, identificação, classificação, movimentação, cadastros, avaliações, promoções, direitos e deveres;",
+        "II - do acompanhamento e controle de inativos e pensionistas;",
+        "III - das orientações e acompanhamento quanto à saúde do efetivo;",
+        "IV - pela gestão do ensino e instrução da corporação;",
+        "V - pela política de ensino, atuando na supervisão, na coordenação, na fiscalização, no controle e na execução das atividades de ensino, instrução e pesquisa relacionadas com a formação, o aperfeiçoamento e a especialização de oficiais e praças;",
+        "VI - desempenhar outras atividades correlatas."
+      ],
+      "desdobramentos": [
+        "Centro de Recursos Humanos (CRH)",
+        "Centro Superior de Formação e Aperfeiçoamento (CSFA)",
+        "Serviço de Saúde"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão de Pessoas, Ensino e Instrução",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel ou Tenente-Coronel do QOCBM (Art. 45)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - supervisão, coordenação, controle, fiscalização e execução das atividades relacionadas com o ingresso, identificação, classificação, movimentação, cadastros, avaliações, promoções, direitos e deveres;",
+            "IV - gestão do ensino e instrução da corporação;",
+            "V - política de ensino, atuando na supervisão, coordenação, fiscalização, controle e execução das atividades de ensino, instrução e pesquisa de formação, aperfeiçoamento e especialização de oficiais e praças;"
+          ]
+        }
+      ],
+      "id": "dgpei-rn"
+    },
+    "crh-rn": {
+      "name": "Centro de Recursos Humanos",
+      "abbreviation": "CRH",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Gestão de Pessoas, Ensino e Instrução",
+      "legalRef": "Art. 41",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 41 (competências, I-VIII)"
+      ],
+      "atribuicoes": [
+        "O Centro de Recursos Humanos é o órgão responsável pelo planejamento, controle e fiscalização das atividades relacionadas com a política de pessoal, competindo-lhe: (Art. 41, caput)",
+        "I - manter atualizados os registros relativos aos direitos e deveres dos militares do CBMRN;",
+        "II - manter atualizadas as anotações devidas na ficha funcional dos militares do CBMRN;",
+        "III - planejar, coordenar e controlar todos os assuntos relacionados com o pessoal pensionistas e inativos;",
+        "IV - assessorar às Comissões de Promoção;",
+        "V - assessorar todo o recrutamento e seleção para ingresso ao CBMRN;",
+        "VI - coordenar e controlar todos os assuntos relacionados com a identificação do pessoal da corporação;",
+        "VII - coordenar e controlar o arquivo de toda documentação inerente ao efetivo ativo, inativo e de pensionistas do CBMRN;",
+        "VIII - desempenhar outras atividades correlatas."
+      ],
+      "desdobramentos": [
+        "Seção de Identificação e Processo de Pessoal",
+        "Seção de Pensionistas e Inativos",
+        "Seção de Arquivo Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CRH",
+          "subordinadoA": "Diretor da DGPEI",
+          "requisito": "Oficial BM designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - manter atualizados os registros relativos aos direitos e deveres dos militares do CBMRN;",
+            "III - planejar, coordenar e controlar todos os assuntos relacionados com o pessoal pensionistas e inativos;",
+            "V - assessorar todo o recrutamento e seleção para ingresso ao CBMRN;"
+          ]
+        }
+      ],
+      "id": "crh-rn"
+    },
+    "csfa-rn": {
+      "name": "Centro Superior de Formação e Aperfeiçoamento",
+      "abbreviation": "CSFA",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Gestão de Pessoas, Ensino e Instrução",
+      "legalRef": "Art. 42",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 42 (competências, I-V)"
+      ],
+      "atribuicoes": [
+        "O Centro Superior de Formação e Aperfeiçoamento é o órgão responsável pelas atividades de formação, especialização e aperfeiçoamento de Oficiais e Praças da Corporação, competindo-lhe: (Art. 42, caput)",
+        "I - realizar estudos para o planejamento do ensino do CBMRN;",
+        "II - realizar ações de planejamento no desenvolvimento das atividades físicas e de desportos no âmbito da corporação;",
+        "III - realizar ações inerentes à formação, especialização e aperfeiçoamento do pessoal do CBMRN;",
+        "IV - planejar e promover eventos de artes e culturas do CBMRN;",
+        "V - desempenhar outras atividades correlatas."
+      ],
+      "desdobramentos": [
+        "Comissão de Estudos Superiores",
+        "Corpo de Alunos",
+        "Divisão de Ensino",
+        "Divisão Administrativa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CSFA",
+          "subordinadoA": "Diretor da DGPEI",
+          "requisito": "Oficial BM designado pelo Comandante Geral; pode ser o próprio Subdiretor da DGPEI (Art. 40 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - realizar estudos para o planejamento do ensino do CBMRN;",
+            "III - realizar ações inerentes à formação, especialização e aperfeiçoamento do pessoal do CBMRN;"
+          ]
+        }
+      ],
+      "id": "csfa-rn"
+    },
+    "dat-rn": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Execução",
+      "subordinadoA": "Conselho Superior (membro)",
+      "legalRef": "Art. 44",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN); LC nº 601/2017",
+      "artigosDeOrigem": [
+        "Art. 44 (caput e §§3º-9º)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Atividades Técnicas (DAT) é o órgão da Corporação que tem por finalidade desenvolver as atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco em todo Estado, conforme previsto na Lei Complementar Estadual nº 601, de 07 de agosto de 2017, e demais normas e instruções técnicas (Art. 44)."
+      ],
+      "desdobramentos": [
+        "Centro de Análise de Risco de Incêndio e Pânico (CARIP)",
+        "Centro de Apoio Técnico Administrativo (CATA)",
+        "Seção de Tecnologia da Informação",
+        "Centro de Vistorias",
+        "Centro de Fiscalização",
+        "1º Centro de Atividades Técnicas — Mossoró",
+        "2º Centro de Atividades Técnicas — Caicó"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel ou Tenente-Coronel do QOCBM (Art. 45)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Desenvolvimento das atividades de prevenção contra incêndio e controle de pânico nas edificações e áreas de risco em todo o Estado, conforme LC 601/2017 e normas técnicas (Art. 44)"
+          ]
+        }
+      ],
+      "id": "dat-rn"
+    },
+    "carip-rn": {
+      "name": "Centro de Análise de Risco de Incêndio e Pânico",
+      "abbreviation": "CARIP",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Atividades Técnicas",
+      "legalRef": "Art. 44 §3º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 44 §3º (competência)"
+      ],
+      "atribuicoes": [
+        "O Centro de Análise de Risco de Incêndio e Pânico tem por competência a análise técnica dos projetos de prevenção contra incêndio e pânico das edificações e áreas de risco, verificando o cumprimento das normas de segurança previstas no Código Estadual de Segurança Contra Incêndio e Pânico do Rio Grande do Norte (CESIP), bem como a realização de pesquisas sobre a atualização tecnológica dos materiais, dos equipamentos e das normas nacionais e estrangeiras relacionadas à proteção contra incêndio (Art. 44 §3º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do CARIP",
+          "subordinadoA": "Diretor da DAT",
+          "requisito": "Oficial BM com conhecimento técnico em prevenção de incêndios",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Análise técnica dos projetos de prevenção contra incêndio e pânico; verificação do cumprimento das normas do CESIP; pesquisas sobre atualização tecnológica de materiais e normas (Art. 44 §3º)"
+          ]
+        }
+      ],
+      "id": "carip-rn"
+    },
+    "cf-rn": {
+      "name": "Centro de Fiscalização",
+      "abbreviation": "CF",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Atividades Técnicas",
+      "legalRef": "Art. 44 §7º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 44 §7º (competência)"
+      ],
+      "atribuicoes": [
+        "O Centro de Fiscalização tem por competência fiscalizar toda e qualquer edificação e área de risco existente no Estado e, quando necessário, expedir notificações e auto de infração, aplicar multas, proceder embargos e interdições e apreensão de bens e produtos, com o intuito de sanar as irregularidades verificadas (Art. 44 §7º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Fiscalização",
+          "subordinadoA": "Diretor da DAT",
+          "requisito": "Oficial BM com competência de fiscalização e poder de polícia administrativa",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Fiscalização de edificações e áreas de risco; expedição de notificações, autos de infração, multas, embargos e interdições (Art. 44 §7º)"
+          ]
+        }
+      ],
+      "id": "cf-rn"
+    },
+    "cat1-rn": {
+      "name": "1º Centro de Atividades Técnicas — Mossoró",
+      "abbreviation": "1º CAT",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Atividades Técnicas",
+      "legalRef": "Art. 44 §8º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 44 §8º (competência)"
+      ],
+      "atribuicoes": [
+        "O Primeiro Centro de Atividades Técnicas (1º CAT) é a unidade da Diretoria de Atividades Técnicas, sediada em Mossoró/RN, responsável pelas atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios localizados no interior do Estado do Rio Grande do Norte (Art. 44 §8º)."
+      ],
+      "desdobramentos": [
+        "Seção de Atividades Técnicas — Pau dos Ferros/RN (Art. 44 §10)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do 1º CAT",
+          "subordinadoA": "Diretor da DAT",
+          "requisito": "Oficial BM designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios do interior do Estado do RN (sede em Mossoró) (Art. 44 §8º)"
+          ]
+        }
+      ],
+      "id": "cat1-rn"
+    },
+    "cat2-rn": {
+      "name": "2º Centro de Atividades Técnicas — Caicó",
+      "abbreviation": "2º CAT",
+      "category": "Execução",
+      "subordinadoA": "Diretoria de Atividades Técnicas",
+      "legalRef": "Art. 44 §9º",
+      "baseLegal": "Decreto nº 31.139/2021 (Regulamento Geral do CBMRN)",
+      "artigosDeOrigem": [
+        "Art. 44 §9º (competência)"
+      ],
+      "atribuicoes": [
+        "O Segundo Centro de Atividades Técnicas (2º CAT) é a unidade da Diretoria de Atividades Técnicas, sediada em Caicó/RN, responsável pelas atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios localizados no interior do Estado do Rio Grande do Norte (Art. 44 §9º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do 2º CAT",
+          "subordinadoA": "Diretor da DAT",
+          "requisito": "Oficial BM designado pelo Comandante Geral",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios do interior do Estado do RN (sede em Caicó) (Art. 44 §9º)"
+          ]
+        }
+      ],
+      "id": "cat2-rn"
+    }
+  }
+}

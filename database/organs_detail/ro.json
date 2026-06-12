@@ -1,0 +1,988 @@
+{
+  "state_id": "ro",
+  "state_name": "Rondônia",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado de Rondônia",
+  "cbm_abbreviation": "CBMRO",
+  "legal_source": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+  "organs": {
+    "cg": {
+      "id": "cg",
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado de Rondônia",
+      "legalRef": "Arts. 11-12",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 11 (Comando Geral)", "Art. 12 (Comandante-Geral)", "Art. 13 (Subcomandante-Geral)", "Art. 14 (Chefe do EMG)"],
+      "atribuicoes": [
+        "Órgão máximo executivo do CBMRO, incumbido da administração superior da Corporação."
+      ],
+      "desdobramentos": [
+        "Comandante-Geral",
+        "Subcomandante-Geral",
+        "Chefe do Estado-Maior Geral",
+        "Diretor Estadual de Proteção e Defesa Civil (DEPDEC)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado de Rondônia",
+          "requisito": "Oficial da ativa do último posto — QOEMBM; possuidor do CCEMBM. Prerrogativas de Secretário de Estado. (Art. 12)",
+          "desdobramentos": ["Subcomandante-Geral", "Chefe do Estado-Maior Geral", "DEPDEC", "CONDEG", "Órgãos de Direção", "Órgãos de Assessoramento", "Órgãos de Apoio", "Órgãos de Execução", "Órgãos de Correição"],
+          "atribuicoes": [
+            "Responsável, no âmbito da administração direta, perante o Governador do Estado, pela administração e emprego da Corporação.",
+            "Acumula o cargo de Diretor-Geral da Diretoria Estadual de Proteção e Defesa Civil (DEPDEC).",
+            "Indicar os nomes para nomeação aos cargos que lhe são privativos.",
+            "Realizar a promoção das Praças e apresentar ao Governador a relação dos Oficiais do Quadro de Acesso.",
+            "Certificar o atendimento do direito ao porte de arma de seus militares.",
+            "Apresentar, em até 60 dias da posse, Plano de Comando com metas, indicadores, prestação de contas e participação da sociedade.",
+            "Assegurar a divulgação pública de relatório anual sobre representações, ocorrências, vitimização e orçamento."
+          ]
+        },
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial da ativa do último posto — QOEMBM; indicado pelo CG e nomeado pelo Governador. Substituto imediato do CG. (Art. 13)",
+          "desdobramentos": ["Gabinete do Subcomando-Geral", "Ajudância-Geral", "DPO", "DOE", "Corregedoria-Geral"],
+          "atribuicoes": [
+            "Supervisão, direção, coordenação e controle das atividades dos Órgãos de Direção, de Apoio e de Correição sob sua subordinação.",
+            "Substituto imediato do Comandante-Geral em seus afastamentos e impedimentos."
+          ]
+        },
+        {
+          "cargo": "Chefe do Estado-Maior Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial da ativa do último posto — QOEMBM; indicado pelo CG e nomeado pelo Governador. Substituto imediato do SCG. (Art. 14)",
+          "desdobramentos": ["Gabinete do Estado-Maior Geral", "Seção Administrativa", "DP", "DEEI", "DPOF", "DSAP", "DLOG", "Coordenadoria de Comunicação Social", "Coordenadoria de Informática"],
+          "atribuicoes": [
+            "Planejamento, direção, coordenação, controle e avaliação das ações administrativas a cargo dos órgãos de atividade-meio e das diretrizes e ordens do Comando.",
+            "Substituto imediato do Subcomandante-Geral em seus afastamentos e impedimentos."
+          ]
+        }
+      ]
+    },
+    "condeg": {
+      "id": "condeg",
+      "name": "Conselho Deliberativo de Estratégia e Gestão",
+      "abbreviation": "CONDEG",
+      "category": "Direção Colegiada",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 16 (CONDEG)"],
+      "atribuicoes": [
+        "Órgão responsável pelo estudo, planejamento e assessoria consultiva do Comandante-Geral, pertinente ao processo decisório compartilhado sobre assuntos relevantes que envolvam questões institucionais e de segurança pública da Corporação."
+      ],
+      "desdobramentos": [
+        "Presidido pelo Comandante-Geral",
+        "Composto pelos Coronéis BM da ativa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Presidente do CONDEG",
+          "subordinadoA": "N/A (Preside o órgão)",
+          "requisito": "Comandante-Geral (nato)",
+          "desdobramentos": ["Todos os Coronéis BM da ativa"],
+          "atribuicoes": [
+            "Convocar e presidir reuniões ordinárias (trimestrais) e extraordinárias.",
+            "Homologar, total ou parcialmente, as deliberações do CONDEG, ou avocar para si a decisão final.",
+            "Convocar membros não pertencentes ao Conselho para participar de reuniões com pauta de natureza técnica.",
+            "Regular as atribuições e o funcionamento do CONDEG por ato próprio."
+          ]
+        }
+      ]
+    },
+    "depdec": {
+      "id": "depdec",
+      "name": "Diretoria Estadual de Proteção e Defesa Civil",
+      "abbreviation": "DEPDEC",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral (Diretor-Geral nato)",
+      "legalRef": "Art. 15",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 15 (DEPDEC)"],
+      "atribuicoes": [
+        "Centralizar o Sistema Estadual de Proteção e Defesa Civil de Rondônia (SIEPDEC).",
+        "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas Situações de Emergência ou Estado de Calamidade Pública."
+      ],
+      "desdobramentos": [
+        "Diretor-Geral (Comandante-Geral do CBMRO — nato)",
+        "Diretor Estratégico-Operacional (Oficial do último posto — QOEMBM)",
+        "Adjunto",
+        "Seção Administrativa",
+        "Secretaria Executiva",
+        "Divisão de Apoio Administrativo e Financeiro",
+        "Divisão de Operações Emergenciais",
+        "Divisão de Minimização de Desastres"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor-Geral da DEPDEC",
+          "subordinadoA": "Governador do Estado de Rondônia",
+          "requisito": "Cargo acumulado pelo Comandante-Geral do CBMRO (nato). (Art. 12 §3º e Art. 15)",
+          "desdobramentos": ["Diretor Estratégico-Operacional", "Adjunto", "Seção Administrativa", "Secretaria Executiva", "Divisão de Apoio Administrativo e Financeiro", "Divisão de Operações Emergenciais", "Divisão de Minimização de Desastres"],
+          "atribuicoes": [
+            "Centralizar o Sistema Estadual de Proteção e Defesa Civil de Rondônia (SIEPDEC).",
+            "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação."
+          ]
+        }
+      ]
+    },
+    "dp": {
+      "id": "dp",
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 17 (DP)", "Art. 25 (cargos)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, direção, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, administração e gestão de pessoal."
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Coordenadoria de Gestão de Pessoal Ativo — Coordenador, Adjunto, Seção Administrativa, Seção de Pessoal Ativo, Seção de Pessoal Ativo Temporário, Seção de Cadastro, Seção de Promoção e Condecoração, Seção de Movimentação e Pagamento, Seção de Recrutamento, Seção de Pessoal Civil",
+        "Coordenadoria de Gestão de Pessoal Inativo e Pensionistas — Coordenador, Adjunto, Seção Administrativa, Seção de Pessoal Inativo, Seção de Pensionistas",
+        "Coordenadoria de Legislação, Controle e Análise de Processos — Coordenador, Adjunto, Seção Administrativa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Coord. de Gestão de Pessoal Ativo", "Coord. de Gestão de Pessoal Inativo e Pensionistas", "Coord. de Legislação, Controle e Análise de Processos"],
+          "atribuicoes": ["Planejar, dirigir, coordenar, fiscalizar e controlar as atividades relacionadas ao recrutamento, administração e gestão de pessoal."]
+        },
+        {
+          "cargo": "Coordenador de Gestão de Pessoal Ativo",
+          "subordinadoA": "Diretor de Pessoal",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Pessoal Ativo", "Seção de Pessoal Ativo Temporário", "Seção de Cadastro", "Seção de Promoção e Condecoração", "Seção de Movimentação e Pagamento", "Seção de Recrutamento", "Seção de Pessoal Civil"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de gestão de pessoal ativo da Corporação, incluindo cadastro, movimentação, promoção, pagamento e recrutamento."]
+        },
+        {
+          "cargo": "Coordenador de Gestão de Pessoal Inativo e Pensionistas",
+          "subordinadoA": "Diretor de Pessoal",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Pessoal Inativo", "Seção de Pensionistas"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de gestão de pessoal inativo e pensionistas da Corporação."]
+        },
+        {
+          "cargo": "Coordenador de Legislação, Controle e Análise de Processos",
+          "subordinadoA": "Diretor de Pessoal",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de legislação, controle e análise de processos relativos ao pessoal da Corporação."]
+        }
+      ]
+    },
+    "deei": {
+      "id": "deei",
+      "name": "Diretoria de Educação, Ensino e Instrução",
+      "abbreviation": "DEEI",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 18 (DEEI)", "Art. 25 (cargos)"],
+      "atribuicoes": [
+        "Órgão responsável por todas as atividades de educação, ensino e instrução, com competência para planejar, coordenar e fiscalizar o ensino em todas suas modalidades, objetivando a formação profissional, a graduação, a pós-graduação, o aperfeiçoamento, a habilitação, a especialização, a capacitação e o treinamento operacional do CBMRO.",
+        "Promover a educação preventiva direcionada à população em geral, visando a segurança, a prevenção de incêndio e a prevenção de acidentes."
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Coordenadoria de Educação — Coordenador, Adjunto, Seção Administrativa, Seção de Educação, Seção de Atividades Sociais, Unidades de Colégio Militar Dom Pedro II",
+        "Coordenadoria de Ensino, Instrução e Pesquisa — Coordenador, Adjunto, Seção Administrativa, Seção de Pesquisa, Centro de Treinamento, Ensino e Instrução, Academia de Formação de Oficiais, Escola de Formação de Praças, Centro de Aperfeiçoamento e Especialização"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Educação, Ensino e Instrução",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Coord. de Educação", "Coord. de Ensino, Instrução e Pesquisa"],
+          "atribuicoes": ["Planejar, coordenar e fiscalizar o ensino em todas suas modalidades, objetivando a formação profissional, a graduação, a pós-graduação, o aperfeiçoamento, a habilitação, a especialização, a capacitação e o treinamento operacional do CBMRO."]
+        },
+        {
+          "cargo": "Coordenador de Educação",
+          "subordinadoA": "Diretor de Educação, Ensino e Instrução",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Educação", "Seção de Atividades Sociais", "Unidades de Colégio Militar Dom Pedro II"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de educação e atividades sociais da Corporação."]
+        },
+        {
+          "cargo": "Coordenador de Ensino, Instrução e Pesquisa",
+          "subordinadoA": "Diretor de Educação, Ensino e Instrução",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Pesquisa", "Centro de Treinamento, Ensino e Instrução", "Academia de Formação de Oficiais", "Escola de Formação de Praças", "Centro de Aperfeiçoamento e Especialização"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de ensino, instrução e pesquisa, responsável pela formação de oficiais e praças da Corporação."]
+        }
+      ]
+    },
+    "dpof": {
+      "id": "dpof",
+      "name": "Diretoria de Planejamento, Orçamento e Finanças",
+      "abbreviation": "DPOF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 19",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 19 (DPOF)", "Art. 25 (cargos)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, apoio administrativo, orçamentário e técnico-financeiro, bem como a execução, acompanhamento e controle das atividades inerentes à sua responsabilidade."
+      ],
+      "desdobramentos": [
+        "Diretor (Oficial da ativa do último Posto — QOEMBM)",
+        "Adjunto",
+        "Seção Administrativa",
+        "Assessoria Técnica",
+        "Coordenadoria de Planejamento e Orçamento — Coordenador, Adjunto, Seção Administrativa, Seção de Planejamento, Seção de Orçamento",
+        "Coordenadoria de Administração e Finanças — Coordenador, Adjunto, Seção Administrativa, Seção de Finanças, Seção de Contabilidade, Seção de Gestão de Contratos e Convênios",
+        "Coordenadoria de Compras — Coordenador, Adjunto, Seção Administrativa, Seção de Pesquisa de Preços, Seção de Especificação Técnica, Seção de Compras, Comissões Técnicas",
+        "Comissão Permanente de Licitações — Seção de Licitações"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Planejamento, Orçamento e Finanças",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 19 e Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Assessoria Técnica", "Coord. de Planejamento e Orçamento", "Coord. de Administração e Finanças", "Coord. de Compras", "Comissão Permanente de Licitações"],
+          "atribuicoes": ["Planejar, apoiar administrativamente, orçamentariamente e técnico-financeiramente, bem como executar, acompanhar e controlar as atividades da DPOF."]
+        },
+        {
+          "cargo": "Coordenador de Planejamento e Orçamento",
+          "subordinadoA": "Diretor de Planejamento, Orçamento e Finanças",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Planejamento", "Seção de Orçamento"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de planejamento e orçamento da Corporação."]
+        },
+        {
+          "cargo": "Coordenador de Administração e Finanças",
+          "subordinadoA": "Diretor de Planejamento, Orçamento e Finanças",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Finanças", "Seção de Contabilidade", "Seção de Gestão de Contratos e Convênios"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de administração financeira, contabilidade e gestão de contratos e convênios da Corporação."]
+        },
+        {
+          "cargo": "Coordenador de Compras",
+          "subordinadoA": "Diretor de Planejamento, Orçamento e Finanças",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Pesquisa de Preços", "Seção de Especificação Técnica", "Seção de Compras", "Comissões Técnicas"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de compras e aquisições da Corporação."]
+        }
+      ]
+    },
+    "dsap": {
+      "id": "dsap",
+      "name": "Diretoria de Saúde e Assistência ao Pessoal",
+      "abbreviation": "DSAP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 20 (DSAP)", "Art. 25 (cargos)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, direção, coordenação, fiscalização e controle das atividades relacionadas à saúde e assistência ao pessoal do CBMRO."
+      ],
+      "desdobramentos": [
+        "Diretor (QCOBM — formação em Medicina, Enfermagem, Fisioterapia, Psicologia ou Serviço Social; na ausência, QOEMBM)",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Pessoal",
+        "Coordenadoria de Saúde — Coordenador, Adjunto, Seção Administrativa, Divisão de Perícias Médicas (Seção de Juntas Militares de Saúde, Seção de Formação Sanitária)",
+        "Coordenadoria de Assistência ao Pessoal — Coordenador, Adjunto, Seção Administrativa, Divisão de Assistência Social (Seção de Serviço Social, Seção de Psicologia, Seção de Capelania)",
+        "Coordenadoria de Saúde Ocupacional e Medicina do Trabalho — Coordenador, Adjunto, Seção Administrativa, Seção de Saúde Ocupacional, Seção de Medicina do Trabalho",
+        "Centro Médico-Hospitalar — Chefe, Adjunto, Seção Administrativa, Hospital Militar Dom Pedro II, Policlínica Militar Dom Pedro II"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Saúde e Assistência ao Pessoal",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Preferencialmente Oficial da ativa do último Posto — QCOBM, com formação em Medicina, Enfermagem, Fisioterapia, Psicologia ou Serviço Social. Na ausência, Oficial da ativa do último Posto — QOEMBM. (Art. 20 §1º e Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Pessoal", "Coord. de Saúde", "Coord. de Assistência ao Pessoal", "Coord. de Saúde Ocupacional e Medicina do Trabalho", "Centro Médico-Hospitalar"],
+          "atribuicoes": ["Planejar, dirigir, coordenar, fiscalizar e controlar as atividades relacionadas à saúde e assistência ao pessoal do CBMRO."]
+        },
+        {
+          "cargo": "Coordenador de Saúde",
+          "subordinadoA": "Diretor de Saúde e Assistência ao Pessoal",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Divisão de Perícias Médicas (Seção de Juntas Militares de Saúde, Seção de Formação Sanitária)"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de saúde, incluindo perícias médicas e formação sanitária."]
+        },
+        {
+          "cargo": "Coordenador de Assistência ao Pessoal",
+          "subordinadoA": "Diretor de Saúde e Assistência ao Pessoal",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Divisão de Assistência Social (Seção de Serviço Social, Seção de Psicologia, Seção de Capelania)"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de assistência social, psicológica e de capelania ao pessoal da Corporação."]
+        },
+        {
+          "cargo": "Coordenador de Saúde Ocupacional e Medicina do Trabalho",
+          "subordinadoA": "Diretor de Saúde e Assistência ao Pessoal",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Saúde Ocupacional", "Seção de Medicina do Trabalho"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de saúde ocupacional e medicina do trabalho na Corporação."]
+        },
+        {
+          "cargo": "Chefe do Centro Médico-Hospitalar",
+          "subordinadoA": "Diretor de Saúde e Assistência ao Pessoal",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Hospital Militar Dom Pedro II", "Policlínica Militar Dom Pedro II"],
+          "atribuicoes": ["Gerir e supervisionar as atividades de saúde hospitalar e policlínica da Corporação."]
+        }
+      ]
+    },
+    "dlog": {
+      "id": "dlog",
+      "name": "Diretoria de Logística",
+      "abbreviation": "DLOG",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 21",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 21 (DLOG)", "Art. 25 (cargos)"],
+      "atribuicoes": [
+        "Órgão responsável pela gestão logística da Corporação, competindo-lhe o estudo, fiscalização, inspeção, planejamento, orientação normativa, direção, coordenação, controle e execução das atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação."
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Centro de Controle de Material e Patrimônio — Seção de Controle de Material, Seção de Controle de Patrimônio",
+        "Centro de Suprimento e Material — Seção de Almoxarifado Geral, Seção de Aprovisionamento",
+        "Centro de Manutenção — Seção de Manutenção de Viaturas e Equipamentos Motorizados"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Centro de Controle de Material e Patrimônio", "Centro de Suprimento e Material", "Centro de Manutenção"],
+          "atribuicoes": ["Estudar, fiscalizar, inspecionar, planejar, orientar normativamente, dirigir, coordenar, controlar e executar as atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação."]
+        },
+        {
+          "cargo": "Chefe do Centro de Controle de Material e Patrimônio",
+          "subordinadoA": "Diretor de Logística",
+          "desdobramentos": ["Seção de Controle de Material", "Seção de Controle de Patrimônio"],
+          "atribuicoes": ["Controlar o material e o patrimônio da Corporação."]
+        },
+        {
+          "cargo": "Chefe do Centro de Suprimento e Material",
+          "subordinadoA": "Diretor de Logística",
+          "desdobramentos": ["Seção de Almoxarifado Geral", "Seção de Aprovisionamento"],
+          "atribuicoes": ["Gerir o suprimento e o material da Corporação, incluindo almoxarifado e aprovisionamento."]
+        },
+        {
+          "cargo": "Chefe do Centro de Manutenção",
+          "subordinadoA": "Diretor de Logística",
+          "desdobramentos": ["Seção de Manutenção de Viaturas e Equipamentos Motorizados"],
+          "atribuicoes": ["Gerenciar e executar a manutenção de viaturas e equipamentos motorizados da Corporação."]
+        }
+      ]
+    },
+    "dpo": {
+      "id": "dpo",
+      "name": "Diretoria de Planejamento Operacional",
+      "abbreviation": "DPO",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 22 (DPO)", "Art. 29 (CRBMs)", "Art. 40 (BBM/CIBM)", "Art. 41 (CIBM)", "Art. 23 (DOE)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados."
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Coordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa",
+        "Coordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa",
+        "Coordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa",
+        "Comandos Regionais de Bombeiro Militar (CRBMs) — Art. 29",
+        "Batalhões de Bombeiros Militar (BBM) — Art. 40",
+        "Companhias Independentes de Bombeiros Militar (CIBM) — Art. 41",
+        "Diretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Planejamento Operacional",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Coordenadoria de Operações", "Coordenadoria de Doutrina e Pesquisa", "Coordenadoria de Estudos Estratégicos"],
+          "atribuicoes": ["Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados. Subordinado ao Subcomandante-Geral."]
+        },
+        {
+          "cargo": "Adjunto da DPO",
+          "subordinadoA": "Diretor de Planejamento Operacional",
+          "desdobramentos": ["Seção Administrativa", "Coordenadorias"],
+          "atribuicoes": ["Substituir o Diretor de Planejamento Operacional em seus impedimentos.", "Auxiliar no planejamento e controle das atividades operacionais."]
+        },
+        {
+          "cargo": "Coordenador de Operações",
+          "subordinadoA": "Diretor de Planejamento Operacional",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades operacionais no âmbito da Coordenadoria de Operações."]
+        },
+        {
+          "cargo": "Coordenador de Doutrina e Pesquisa",
+          "subordinadoA": "Diretor de Planejamento Operacional",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de doutrina e pesquisa operacional."]
+        },
+        {
+          "cargo": "Coordenador de Estudos Estratégicos",
+          "subordinadoA": "Diretor de Planejamento Operacional",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais."]
+        }
+      ]
+    },
+    "doe": {
+      "id": "doe",
+      "name": "Diretoria Operacional Especializada",
+      "abbreviation": "DOE",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 23",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 23 (DOE)", "Art. 44 (BBS)", "Art. 45 (BIFEA)", "Art. 47 (BOA)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Gerência de Segurança Operacional",
+        "Seção de Pessoal",
+        "Seção Administrativa",
+        "Seção de Manutenção",
+        "Seção de Correição",
+        "Seção de Operações Aéreas",
+        "Seção de Operações Terrestres",
+        "Batalhão de Busca e Salvamento (BBS) — Art. 44",
+        "Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45",
+        "Batalhão de Operações Aéreas (BOA) — Art. 47"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor da DOE",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 25)",
+          "desdobramentos": ["Adjunto", "Gerência de Segurança Operacional", "Seção de Pessoal", "Seção Administrativa", "Seção de Manutenção", "Seção de Correição", "Seção de Operações Aéreas", "Seção de Operações Terrestres", "BBS", "BIFEA", "BOA"],
+          "atribuicoes": ["Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação."]
+        },
+        {
+          "cargo": "Adjunto da DOE",
+          "subordinadoA": "Diretor da DOE",
+          "desdobramentos": ["Gerência de Segurança Operacional", "Seções da DOE"],
+          "atribuicoes": ["Substituir o Diretor da DOE em seus impedimentos.", "Auxiliar no planejamento e controle das atividades operacionais especializadas."]
+        }
+      ]
+    },
+    "cot": {
+      "id": "cot",
+      "name": "Comando de Operações Técnicas",
+      "abbreviation": "COT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Diretoria de Planejamento Operacional (DPO)",
+      "legalRef": "Art. 24",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 24 (COT)", "Art. 42 (CATs)"],
+      "atribuicoes": [
+        "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.",
+        "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO."
+      ],
+      "desdobramentos": [
+        "Comandante (QOEMBM ou QCOBM — formação em Engenharia ou Arquitetura quando QCOBM)",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Estudos Técnicos",
+        "Seção de Planejamento, Fiscalização e Suporte Técnico",
+        "Coordenadorias de Atividades Técnicas (CATs) — Art. 42: Coordenador, Adjunto, Seção Administrativa, Seção de Análise de Projetos, Seção de Investigação e Prevenção de Incêndio, Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)",
+        "Coordenadoria de Projetos de Arquitetura e Engenharia — Coordenador, Adjunto, Seção Administrativa, Seção de Fiscalização e Vistorias de Obras, Seção de Projetos, Planejamento e Estudos Técnicos, Seção de Manutenção Predial"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do COT",
+          "subordinadoA": "Diretoria de Planejamento Operacional",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM ou QCOBM. Quando QCOBM, deverá ser possuidor de formação nas áreas de Engenharia ou Arquitetura. (Art. 24 §1º e Art. 25)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Estudos Técnicos", "Seção de Planejamento, Fiscalização e Suporte Técnico", "Coordenadorias de Atividades Técnicas (CATs)", "Coordenadoria de Projetos de Arquitetura e Engenharia"],
+          "atribuicoes": ["Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico, bem como a elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO. Subordinado à Diretoria de Planejamento Operacional."]
+        },
+        {
+          "cargo": "Adjunto do COT",
+          "subordinadoA": "Comandante do COT",
+          "desdobramentos": ["Seção Administrativa", "Seção de Estudos Técnicos", "Seção de Planejamento, Fiscalização e Suporte Técnico"],
+          "atribuicoes": ["Substituir o Comandante do COT em seus impedimentos.", "Auxiliar no planejamento e controle das atividades técnicas."]
+        },
+        {
+          "cargo": "Coordenador de Atividades Técnicas (CAT)",
+          "subordinadoA": "Comandante do COT",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Análise de Projetos", "Seção de Investigação e Prevenção de Incêndio", "Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)"],
+          "atribuicoes": ["Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.", "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.", "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."]
+        },
+        {
+          "cargo": "Coordenador de Projetos de Arquitetura e Engenharia",
+          "subordinadoA": "Comandante do COT",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. Quando QCOBM, formação em Engenharia ou Arquitetura. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Fiscalização e Vistorias de Obras", "Seção de Projetos, Planejamento e Estudos Técnicos", "Seção de Manutenção Predial"],
+          "atribuicoes": ["Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial."]
+        }
+      ]
+    },
+    "cint": {
+      "id": "cint",
+      "name": "Coordenadoria de Inteligência",
+      "abbreviation": "CINT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 26",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 26 (CINT)"],
+      "atribuicoes": [
+        "Responsável por desenvolver, planejar, executar, coordenar, supervisionar e controlar as atividades de inteligência.",
+        "Assessorar o Comandante-Geral na tomada de decisão como competência primordial."
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Inteligência",
+        "Seção de Contra-Inteligência",
+        "Seção de Operações de Inteligência",
+        "Seção de Controle de Armamento"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Inteligência",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Inteligência", "Seção de Contra-Inteligência", "Seção de Operações de Inteligência", "Seção de Controle de Armamento"],
+          "atribuicoes": ["Desenvolver, planejar, executar, coordenar, supervisionar e controlar as atividades de inteligência, assessorando o Comandante-Geral na tomada de decisão."]
+        }
+      ]
+    },
+    "ccs": {
+      "id": "ccs",
+      "name": "Coordenadoria de Comunicação Social",
+      "abbreviation": "CCS",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 27",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 27 (CCS)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de comunicação social da Corporação."
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Imprensa",
+        "Seção de Relações Públicas",
+        "Seção de Comunicação Institucional"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Comunicação Social",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Imprensa", "Seção de Relações Públicas", "Seção de Comunicação Institucional"],
+          "atribuicoes": ["Planejar, orientar, coordenar e supervisionar as atividades de comunicação social da Corporação."]
+        }
+      ]
+    },
+    "cinf": {
+      "id": "cinf",
+      "name": "Coordenadoria de Informática",
+      "abbreviation": "CINF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 28 (CINF)"],
+      "atribuicoes": [
+        "Órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de tecnologia da informação da Corporação."
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Projetos e Desenvolvimento",
+        "Seção de Suporte",
+        "Seção de Redes"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Informática",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Projetos e Desenvolvimento", "Seção de Suporte", "Seção de Redes"],
+          "atribuicoes": ["Planejar, orientar, coordenar e supervisionar as atividades de tecnologia da informação da Corporação."]
+        }
+      ]
+    },
+    "crbm": {
+      "id": "crbm",
+      "name": "Comandos Regionais de Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Direção Regional",
+      "subordinadoA": "Diretoria de Planejamento Operacional (DPO)",
+      "legalRef": "Art. 29",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 29 (CRBM)", "Art. 40 (BBM)", "Art. 41 (CIBM)"],
+      "atribuicoes": [
+        "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO."
+      ],
+      "desdobramentos": [
+        "Comandante (Oficial da ativa do último Posto — QOEMBM)",
+        "Adjunto",
+        "Seção de Pessoal",
+        "Seção Administrativa",
+        "Seção de Informática",
+        "Seção de Correição",
+        "Seção de Planejamento Operacional e Controle de Resultados",
+        "Órgãos de Execução Operacional (BBMs e CIBMs subordinados)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Regional de Bombeiro Militar",
+          "subordinadoA": "Diretoria de Planejamento Operacional",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM. (Art. 25 e Art. 29)",
+          "desdobramentos": ["Adjunto", "Seção de Pessoal", "Seção Administrativa", "Seção de Informática", "Seção de Correição", "Seção de Planejamento Operacional e Controle de Resultados", "Órgãos de Execução Operacional"],
+          "atribuicoes": ["Responsável pelo planejamento estratégico, pela direção e pelo emprego das OBMs subordinadas, visando o cumprimento da missão institucional do CBMRO."]
+        },
+        {
+          "cargo": "Adjunto do CRBM",
+          "subordinadoA": "Comandante Regional de Bombeiro Militar",
+          "desdobramentos": ["Seções do CRBM", "Órgãos de Execução"],
+          "atribuicoes": ["Substituir o Comandante Regional em seus impedimentos.", "Auxiliar na direção e controle das atividades regionais."]
+        }
+      ]
+    },
+    "bbm": {
+      "id": "bbm",
+      "name": "Batalhão de Bombeiros Militar",
+      "abbreviation": "BBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Regional de Bombeiro Militar (CRBM)",
+      "legalRef": "Art. 40",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 40 (BBM)"],
+      "atribuicoes": [
+        "Órgão de execução de atuação operacional ordinária. Atende à demanda de serviços de socorro e de serviços técnicos do CBMRO em sua circunscrição territorial.",
+        "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar."
+      ],
+      "desdobramentos": [
+        "Comando — Comandante, Subcomandante, Seção Administrativa",
+        "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+        "Seção de Comando e Serviço",
+        "Companhias de Bombeiros Militar — Comandante, Subcomandante, Seção Administrativa, Pelotões de BM (Comandante, Seção Administrativa, Grupos de BM: Comandante, Auxiliares, Destacamentos de BM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do BBM",
+          "subordinadoA": "Comandante Regional de Bombeiro Militar",
+          "desdobramentos": ["Subcomandante", "Estado-Maior (B1 a B6)", "Seção Administrativa", "Seção de Comando e Serviço", "Companhias de BM"],
+          "atribuicoes": ["Responsável pelo planejamento, direção e emprego do Batalhão em sua circunscrição territorial, cumprindo as missões de socorro e serviços técnicos do CBMRO."]
+        },
+        {
+          "cargo": "Comandante de Companhia de Bombeiros Militar",
+          "subordinadoA": "Comandante do BBM",
+          "desdobramentos": ["Subcomandante", "Seção Administrativa", "Pelotões de Bombeiros Militar"],
+          "atribuicoes": ["Responsável pelo planejamento, direção e emprego da Companhia em sua área de atuação."]
+        }
+      ]
+    },
+    "cibm": {
+      "id": "cibm",
+      "name": "Companhia Independente de Bombeiros Militar",
+      "abbreviation": "CIBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Regional de Bombeiro Militar (CRBM)",
+      "legalRef": "Art. 41",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 41 (CIBM)"],
+      "atribuicoes": [
+        "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar."
+      ],
+      "desdobramentos": [
+        "Comando — Comandante, Subcomandante, Seção Administrativa, Seção de Inteligência, Seção de Operações",
+        "Seção de Comando e Serviço",
+        "Pelotões de Bombeiros Militar — Comandante, Seção Administrativa, Grupos de BM (Comandante, Auxiliares, Destacamentos de BM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante da CIBM",
+          "subordinadoA": "Comandante Regional de Bombeiro Militar",
+          "desdobramentos": ["Subcomandante", "Seção Administrativa", "Seção de Inteligência", "Seção de Operações", "Seção de Comando e Serviço", "Pelotões de BM"],
+          "atribuicoes": ["Responsável pelo planejamento, direção e emprego da Companhia em sua circunscrição territorial."]
+        }
+      ]
+    },
+    "bbs": {
+      "id": "bbs",
+      "name": "Batalhão de Busca e Salvamento",
+      "abbreviation": "BBS",
+      "category": "Execução Especializada",
+      "subordinadoA": "Diretoria Operacional Especializada (DOE)",
+      "legalRef": "Art. 44",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 44 (BBS)"],
+      "atribuicoes": [
+        "Órgão de execução de atuação operacional especializada terrestre. Atende à demanda de socorro especializado do CBMRO em sua circunscrição territorial.",
+        "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento."
+      ],
+      "desdobramentos": [
+        "Comando — Comandante, Subcomandante, Seção Administrativa",
+        "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+        "Seção de Comando e Serviço",
+        "Companhia de Busca e Salvamento — Comandante, Subcomandante, Seção Administrativa, Pelotão de Busca e Salvamento, Pelotão de Busca, Resgate e Salvamento com Cães"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do BBS",
+          "subordinadoA": "Diretor da DOE",
+          "desdobramentos": ["Subcomandante", "Estado-Maior (B1 a B6)", "Seção Administrativa", "Seção de Comando e Serviço", "Companhias de Busca e Salvamento"],
+          "atribuicoes": ["Responsável pelo planejamento, direção e emprego do Batalhão nas missões de busca, resgate e salvamento."]
+        }
+      ]
+    },
+    "bifea": {
+      "id": "bifea",
+      "name": "Batalhão de Incêndio Florestal e Emergências Ambientais",
+      "abbreviation": "BIFEA",
+      "category": "Execução Especializada",
+      "subordinadoA": "Diretoria Operacional Especializada (DOE)",
+      "legalRef": "Art. 45",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 45 (BIFEA)"],
+      "atribuicoes": [
+        "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais."
+      ],
+      "desdobramentos": [
+        "Comando — Comandante, Subcomandante, Seção Administrativa",
+        "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+        "Seção de Comando e Serviço",
+        "Companhia de Incêndio Florestal — Comandante, Subcomandante, Seção Administrativa, Pelotão de Incêndio Florestal (Grupos de Incêndio Florestal, Destacamentos)",
+        "Companhia de Emergências Ambientais — Comandante, Subcomandante, Seção Administrativa, Pelotão de Emergências Ambientais (Grupos de Emergências Ambientais, Destacamentos)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do BIFEA",
+          "subordinadoA": "Diretor da DOE",
+          "desdobramentos": ["Subcomandante", "Estado-Maior (B1 a B6)", "Seção Administrativa", "Seção de Comando e Serviço", "Companhias de Incêndio Florestal", "Companhias de Emergências Ambientais"],
+          "atribuicoes": ["Responsável pelo planejamento, direção e emprego do Batalhão nas missões de incêndio florestal e emergências ambientais."]
+        }
+      ]
+    },
+    "boa": {
+      "id": "boa",
+      "name": "Batalhão de Operações Aéreas",
+      "abbreviation": "BOA",
+      "category": "Execução Especializada Aérea",
+      "subordinadoA": "Diretoria Operacional Especializada (DOE)",
+      "legalRef": "Art. 47",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 47 (BOA)"],
+      "atribuicoes": [
+        "Órgão de execução de atuação operacional especializada aérea. Estruturado em Companhia de Operações Aéreas.",
+        "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP."
+      ],
+      "desdobramentos": [
+        "Comando — Comandante, Subcomandante, Seção Administrativa",
+        "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+        "Seção de Comando e Serviço",
+        "Companhia de Operações Aéreas — Comandante, Subcomandante, Seção Administrativa, Pelotão de Operações Aéreas (Grupos de Operações Aéreas, Destacamentos)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do BOA",
+          "subordinadoA": "Diretor da DOE",
+          "requisito": "Gestor da Unidade Aérea Pública (UAP) nos termos do RBAC. (Art. 47 §2º)",
+          "desdobramentos": ["Subcomandante", "Estado-Maior (B1 a B6)", "Seção Administrativa", "Seção de Comando e Serviço", "Companhia de Operações Aéreas"],
+          "atribuicoes": ["Responsável pelo planejamento, direção e emprego do Batalhão nas missões aéreas.", "Gestor da Unidade Aérea Pública (UAP) nos termos do Regulamento Brasileiro de Aviação Civil (RBAC)."]
+        }
+      ]
+    },
+    "gbm": {
+      "id": "gbm",
+      "name": "Grupo de Bombeiros Militar",
+      "abbreviation": "GBM",
+      "category": "Execução Conveniada Municipal",
+      "subordinadoA": "Pelotão de Bombeiros Militar de sua respectiva área de circunscrição",
+      "legalRef": "Arts. 48-49",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 48 (definição)", "Art. 49 (GBM)"],
+      "atribuicoes": [
+        "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais.",
+        "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar."
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Auxiliares",
+        "Destacamentos de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do GBM",
+          "subordinadoA": "Pelotão de Bombeiros Militar de sua circunscrição",
+          "desdobramentos": ["Auxiliares", "Destacamentos de BM"],
+          "atribuicoes": ["Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais."]
+        }
+      ]
+    },
+    "corregedoria": {
+      "id": "corregedoria",
+      "name": "Corregedoria-Geral",
+      "abbreviation": "CORREG",
+      "category": "Correição",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 50",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 50 (Corregedoria-Geral)"],
+      "atribuicoes": [
+        "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Corporação.",
+        "Apuração de responsabilidade criminal, administrativa e disciplinar."
+      ],
+      "desdobramentos": [
+        "Corregedor-Geral (Oficial da ativa do último Posto — QOEMBM; indicado pelo CG e nomeado pelo Governador; substituto imediato do Chefe do EMG)",
+        "Adjunto",
+        "Seção Administrativa",
+        "Cartório",
+        "Núcleo de Inteligência",
+        "Seção de Processo Administrativo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial da ativa do último Posto — QOEMBM; indicado pelo Comandante-Geral e nomeado pelo Governador do Estado. Substituto imediato do Chefe do Estado-Maior Geral em seus afastamentos e impedimentos. (Art. 50)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Cartório", "Núcleo de Inteligência", "Seção de Processo Administrativo"],
+          "atribuicoes": ["Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Corporação, competindo-lhe, dentre outras atribuições, a apuração de responsabilidade criminal, administrativa e disciplinar."]
+        },
+        {
+          "cargo": "Adjunto da Corregedoria-Geral",
+          "subordinadoA": "Corregedor-Geral",
+          "desdobramentos": ["Seção Administrativa", "Cartório", "Núcleo de Inteligência", "Seção de Processo Administrativo"],
+          "atribuicoes": ["Substituir o Corregedor-Geral em seus impedimentos.", "Auxiliar nas atividades correcional e disciplinar."]
+        }
+      ]
+    },
+    "assessorias": {
+      "id": "assessorias",
+      "name": "Assessorias",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Órgãos que prestam assessoramento administrativo e técnico, responsáveis pela realização de estudos, pesquisas, elaboração e controle de pareceres.",
+        "Mantêm relacionamento entre o CBMRO e outros Poderes e Órgãos."
+      ],
+      "desdobramentos": [
+        "Assessoria Institucional — responsável pela ligação do CG junto aos Poderes, Entes e Instituições Permanentes",
+        "Assessoria Especial — assessoramento técnico, estudos e pareceres de questões de direito e política administrativa geral",
+        "Assessoria Legislativa — análise de normas, elaboração de projetos de leis e orientação quanto ao cumprimento de decisões judiciais",
+        "Assessoria Parlamentar — assessoramento na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades",
+        "Assessoria de Projetos e Gestão Estratégica — assessoramento técnico em Gestão Estratégica, Plano Estratégico, projetos e convênios",
+        "Assessoria Fundacional",
+        "Assessoria de Controle Interno — assegurar o alcance de objetivos, otimizar resultados, atividades de ouvidoria do CBMRO, subordinada tecnicamente à CGE"
+      ],
+      "cargos": [
+        {
+          "cargo": "Assessor Institucional",
+          "subordinadoA": "Comandante-Geral",
+          "atribuicoes": ["Responsável pela ligação do Comandante-Geral junto aos Poderes, Entes e Instituições Permanentes, prestando assessoramento nas questões voltadas à Corporação."]
+        },
+        {
+          "cargo": "Assessor Especial",
+          "subordinadoA": "Comandante-Geral",
+          "atribuicoes": ["Responsável por prestar assessoramento técnico, elaborar estudos e pareceres de questões de direito, de questões relacionadas à política de administração geral da Corporação, de exames de aspectos de legalidade dos atos que lhe forem submetidos, além de auxiliar a tomada de decisão de outros órgãos da Corporação, quando previamente autorizado pelo Comandante-Geral."]
+        },
+        {
+          "cargo": "Assessor Legislativo",
+          "subordinadoA": "Comandante-Geral",
+          "atribuicoes": ["Responsável por assessorar o Comandante-Geral quanto à análise de normas, diretrizes, portarias, determinações e demais documentos emanados pelo Comando-Geral, além de realizar os estudos e elaborar projetos de leis de interesse da Corporação e orientar ao Comandante-Geral quanto ao exato cumprimento de decisões judiciais."]
+        },
+        {
+          "cargo": "Assessor Parlamentar",
+          "subordinadoA": "Comandante-Geral",
+          "atribuicoes": ["Responsável por assessorar o Comandante-Geral na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades, no acompanhamento de matérias legislativas de interesse da Corporação."]
+        },
+        {
+          "cargo": "Assessor de Projetos e Gestão Estratégica",
+          "subordinadoA": "Comandante-Geral",
+          "atribuicoes": ["Responsável por prestar assessoramento técnico nos assuntos relacionados à Gestão Estratégica da Corporação, bem como elaborar, gerir, acompanhar e fiscalizar a execução do Plano Estratégico, dos Projetos e Convênios firmados entre o CBMRO e outros órgãos e Poderes."]
+        },
+        {
+          "cargo": "Assessor de Controle Interno",
+          "subordinadoA": "Comandante-Geral (subordinado tecnicamente à Controladoria Geral do Estado)",
+          "requisito": "Oficial Superior da ativa do último posto — QOEMBM. (Art. 30 §1º, VII)",
+          "atribuicoes": ["Assegurar o alcance dos objetivos e metas estabelecidas pela instituição, otimizando os resultados de aplicação dos recursos públicos e dos serviços prestados à sociedade.", "Atenuar os índices de intervenção dos sistemas de controles externos existentes.", "Buscar a adequação legislativa e melhoria contínua dos processos administrativos.", "Assegurar a conformidade dos atos de gestão através do gerenciamento de riscos, promoção da integridade, da governança pública, da transparência ativa e passiva.", "Realizar atividades de ouvidoria do CBMRO."]
+        }
+      ]
+    },
+    "gab-cg": {
+      "id": "gab-cg",
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GAB/CG",
+      "category": "Apoio ao Comando-Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 31",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 31 (Gabinete do CG)"],
+      "atribuicoes": [
+        "Supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral."
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Secretaria",
+        "Assessorias",
+        "Ajudância de Ordens"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete do CG",
+          "subordinadoA": "Comandante-Geral",
+          "desdobramentos": ["Secretaria", "Assessorias", "Ajudância de Ordens"],
+          "atribuicoes": ["Supervisionar e executar as atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral."]
+        }
+      ]
+    },
+    "ag": {
+      "id": "ag",
+      "name": "Ajudância-Geral",
+      "abbreviation": "AG",
+      "category": "Apoio ao Subcomando-Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 37",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 37 (Ajudância-Geral)"],
+      "atribuicoes": [
+        "Órgão responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral.",
+        "Responsável pela manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, o controle de pessoal do Comando-Geral, bem como das praças cedidas a outros órgãos."
+      ],
+      "desdobramentos": [
+        "Ajudante-Geral",
+        "Adjunto",
+        "Secretaria-Geral",
+        "Companhia de Comando e Serviços"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "desdobramentos": ["Adjunto", "Secretaria-Geral", "Companhia de Comando e Serviços"],
+          "atribuicoes": ["Responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, manutenção e segurança das instalações, controle de pessoal do Comando-Geral e das praças cedidas a outros órgãos."]
+        }
+      ]
+    }
+  }
+}

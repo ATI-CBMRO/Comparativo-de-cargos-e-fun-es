@@ -1,0 +1,948 @@
+{
+  "state_id": "sc",
+  "state_name": "Santa Catarina",
+  "cbm_name": "Corpo de Bombeiros Militar de Santa Catarina",
+  "cbm_abbreviation": "CBMSC",
+  "legal_source": "Lei Complementar nº 724, de 18 de julho de 2018; Decreto nº 1.328, de 14 de junho de 2021",
+  "organs": {
+    "cg-sc": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 8º, I; Art. 14 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 14 (Atribuições exclusivas do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "I - concessão de medalha, condecoração e comenda;",
+        "II - movimentação de Oficial;",
+        "III - desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento;",
+        "IV - assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro militar e outras atividades consideradas por LEI de competência do CBMSC;",
+        "V - agregação e reversão de Praças e Oficiais do CBMSC;",
+        "VI - exclusão do serviço ativo das Praças;",
+        "VII - convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em situação hierárquica compatível com a do oficial envolvido;",
+        "VIII - assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de interesse da Corporação; e",
+        "IX - designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Nível estratégico de direção geral",
+          "desdobramentos": [
+            "Subcomando-Geral",
+            "Estado-Maior Geral",
+            "Gabinete do Comando-Geral",
+            "Corregedoria-Geral"
+          ],
+          "atribuicoes": [
+            "Concessão de medalha, condecoração e comenda; movimentação de Oficial",
+            "Desenvolvimento funcional das Praças; assinatura de convênios com municípios",
+            "Agregação, reversão e exclusão do serviço ativo"
+          ]
+        },
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [
+            "Centro de Monitoramento Operacional e Gestão de Crises"
+          ],
+          "atribuicoes": [
+            "Assessoramento ao Comandante-Geral; planejamento de operações estaduais e multi-RBM",
+            "Coordenação e supervisão dos órgãos de direção operacional e execução",
+            "Definição de emprego de Força-Tarefa"
+          ]
+        }
+      ],
+      "id": "cg-sc"
+    },
+    "scmt-sc": {
+      "name": "Subcomando-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, I, b; Art. 16 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 16 (Atribuições do Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "I - assessorar o Comandante-Geral no desempenho de suas atribuições;",
+        "II - planejar as operações que importem em uma coordenação ao nível estadual ou que envolvam mais de uma RBM, bem como as relativas à participação do CBMSC em solenidades, paradas e desfiles militares;",
+        "III - coordenar, controlar e supervisionar as atividades desenvolvidas pelos órgãos de direção operacional e pelos órgãos de execução da Corporação;",
+        "IV - coordenar toda a execução do atendimento a eventos críticos; e",
+        "V - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, que extrapole os limites da circunscrição de uma RBM."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a V – atribuições do Art. 16 Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "scmt-sc"
+    },
+    "emg-sc": {
+      "name": "Estado-Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, I, c; Art. 17 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 17 (Atribuições do Chefe do Estado-Maior Geral)"
+      ],
+      "atribuicoes": [
+        "I - assessorar o Comandante-Geral no nível estratégico do CBMSC;",
+        "II - prestar assistência ao Comandante-Geral no desempenho de suas atividades, elaborando estudos e projetos e planejando, controlando e gerindo planos institucionais;",
+        "III - supervisionar a elaboração e execução de normas, instruções, diretrizes, planos e ordens do CBMSC;",
+        "IV - orientar, controlar e supervisionar os órgãos de direção, apoio e execução no cumprimento de suas atribuições; e",
+        "V - desenvolver outras atividades relacionadas à direção geral do CBMSC."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Subchefia",
+            "8 Seções de planejamento",
+            "Secretaria"
+          ],
+          "atribuicoes": [
+            "Assessoramento ao Comandante-Geral no nível estratégico",
+            "Supervisão da elaboração e execução de normas, instruções e planos"
+          ]
+        },
+        {
+          "cargo": "Subchefe do Estado-Maior Geral",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Oficial designado (QOBM)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Recepção, elaboração, controle e arquivo de documentação",
+            "Desenvolvimento e acompanhamento de projetos"
+          ]
+        }
+      ],
+      "id": "emg-sc"
+    },
+    "gab-sc": {
+      "name": "Gabinete do Comando-Geral",
+      "abbreviation": "Gab",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, I, d; Art. 26 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 26 (Atribuições do Gabinete do Comando-Geral)"
+      ],
+      "atribuicoes": [
+        "I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e",
+        "II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das atividades administrativas do Gabinete do Comando-Geral."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefia do Gabinete do Comando-Geral, exercida pelo Ajudante-Geral (Art. 26 §único)."
+          ]
+        }
+      ],
+      "id": "gab-sc"
+    },
+    "ag-sc": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AG",
+      "category": "Assessoramento",
+      "subordinadoA": "Gabinete do Comando-Geral",
+      "legalRef": "Art. 27 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 27 §1º (Atribuições da Ajudância-Geral)",
+        "Art. 27 §2º (Atribuições do Ajudante-Geral)"
+      ],
+      "atribuicoes": [
+        "I - desenvolver os trabalhos de secretaria e de documentações inerentes ao Comandante-Geral;",
+        "II - administrar e executar a atividade de protocolo geral da Corporação e propor a normatização do serviço para os demais órgãos;",
+        "III - receber e registrar a correspondência oficial, petições, processos, documentos e quaisquer expedientes endereçados ao Comando-Geral;",
+        "IV - promover o controle dos atos administrativos assinados pelo Comandante-Geral;",
+        "V - administrar o arquivo geral da Corporação e propor a normatização do serviço para os demais órgãos;",
+        "VI - planejar, organizar e dirigir os serviços de segurança interna e externa do Quartel do Comando-Geral;",
+        "VII - administrar o serviço geral do Quartel do Comando-Geral; e",
+        "VIII - publicar e distribuir o Boletim do CBMSC."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I - dirigir, supervisionar e coordenar os trabalhos da Ajudância-Geral;",
+            "II - elaborar e expedir as normas de funcionamento da Ajudância-Geral;",
+            "III - redigir toda a correspondência, cuja natureza assim o exigir;",
+            "IV - subscrever certidões e papéis análogos;",
+            "V - conferir e autenticar as cópias de documentos existentes no arquivo, mandadas extrair por autoridade competente, bem como conferir e assinar as cópias autênticas de documentos da Corporação;",
+            "VI - manter em dia e em ordem, o arquivo da documentação da Ajudância-Geral, de acordo com as normas em vigor;",
+            "VII - despachar e distribuir correspondência oficial, petições, processos, documentos ou quaisquer expedientes endereçados ao Comandante-Geral e que não necessitem intervenção direta deste, bem como aqueles que para serem decididos necessitem de parecer ou manifestação prévia do correspondente órgão de direção, apoio ou execução;",
+            "VIII - fiscalizar pessoalmente a expedição da correspondência, fazendo registrá-la no protocolo em que será passado o competente recibo;",
+            "IX - estabelecer a ligação com os comandos dos elementos subordinados da Corporação e demais órgãos públicos, no trato das atividades relacionadas com a sua área de competência;",
+            "X - emitir conceitos e elogios, conceder recompensas, férias, licenças e dispensas do serviço, bem como aplicar punições ao pessoal que servir sob as suas ordens, na forma da legislação em vigor;",
+            "XI - organizar e manter em dia o livro ou fichário de apresentação de oficiais no Quartel do Comando-Geral, providenciando a devida publicação em Boletim do CBMSC;",
+            "XII - providenciar a publicação dos atos, ordens e despachos do Comandante-Geral, bem como dos demais atos de interesse da Corporação;",
+            "XIII - colaborar na organização da pauta de audiência do Comandante-Geral, em articulação com o Ajudante de Ordens;",
+            "XIV - dirigir a escrituração referente à correspondência, ao arquivo e ao registro das alterações dos Oficiais lotados no Comando-Geral, Subcomando-Geral, Estado-Maior Geral, Comunicação Social e Assessoria Jurídica;",
+            "XV - publicar e distribuir o Boletim do CBMSC; e",
+            "XVI - exercer outras atividades correlatas ou desempenhar missões especiais temporárias, de caráter relevante, conforme for definido por ATO do Comandante-Geral."
+          ]
+        }
+      ],
+      "id": "ag-sc"
+    },
+    "ccs-sc": {
+      "name": "Centro de Comunicação Social",
+      "abbreviation": "CCS",
+      "category": "Assessoramento",
+      "subordinadoA": "Gabinete do Comando-Geral",
+      "legalRef": "Art. 8º §4º; Art. 28 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 28 (Atribuições do Centro de Comunicação Social)"
+      ],
+      "atribuicoes": [
+        "I - planejar, desenvolver, coordenar e executar as atividades de comunicação social do CBMSC;",
+        "II - assessorar o Comandante-Geral nos aspectos relacionados à imprensa, divulgação institucional e conscientização social;",
+        "III - elaborar, de acordo com a orientação do Comando-Geral: a) as diretrizes referentes à comunicação social, com base nas instruções do Comando-Geral e Governo do Estado; e b) o Plano Institucional de Comunicação Social.",
+        "IV - desenvolver e propor políticas de relacionamento da Corporação com órgãos e entidades públicas e privadas, com profissionais da Corporação e com a população;",
+        "V - divulgar as atividades desenvolvidas pelo CBMSC por meio dos diversos veículos de comunicação social;",
+        "VI - manter o Comandante-Geral informado sobre fatos de interesse do CBMSC, quando veiculados pela imprensa;",
+        "VII - regular, planejar, coordenar e executar o cerimonial militar e o cerimonial das atividades sociais de interesse do Comando-Geral frequentes e aqueles extraordinários determinados pelo Comandante-Geral;",
+        "VIII - promover a imagem institucional e mercadológica do CBMSC nos ambientes sociais e de segurança pública;",
+        "IX - possibilitar a elaboração de respostas coordenadas, articuladas, adequadas e oportunas, aos questionamentos da sociedade e do cidadão, sobre assuntos de interesse da Instituição;",
+        "X - coordenar as ações dos elementos subordinados em seus relacionamentos com outros órgãos de comunicação, que exijam, pela natureza da pauta, articulação interna e participação coordenada;",
+        "XI - assessorar e supervisionar o conteúdo de comunicação social no âmbito da Corporação;",
+        "XII - administrar os canais de comunicação oficiais da Corporação e monitorar os canais de comunicação em nível dos elementos subordinados; e",
+        "XIII - acompanhar, analisar e informar o Comando-Geral a repercussão na sociedade das mídias utilizadas pela Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Comunicação Social",
+          "subordinadoA": "Gabinete do Comando-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefia do Centro de Comunicação Social (Art. 8º, I, d, 3 e §4º Dec. nº 1.328/2021)."
+          ]
+        }
+      ],
+      "id": "ccs-sc"
+    },
+    "ce-sc": {
+      "name": "Conselho Estratégico",
+      "abbreviation": "CE",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, I, e; Art. 30 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 30 (Atribuições do Conselho Estratégico)"
+      ],
+      "atribuicoes": [
+        "I - prestar assistência ao Comando-Geral no desempenho das atividades relacionadas com a execução do planejamento estratégico da Corporação, auxiliando no processo de tomada de decisão;",
+        "II - colaborar na elaboração de planos e ordens do Comando-Geral relacionados com pessoal, informações, instrução, operações, ensino, assuntos administrativos, assuntos civis, planejamento administrativo, programação e orçamento; e",
+        "III - desenvolver outras atividades de interesse ou determinadas pelo Comando-Geral da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ce-sc"
+    },
+    "ass-jur-sc": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, I, f; Art. 32 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 32 (Atribuições da Assessoria Jurídica)"
+      ],
+      "atribuicoes": [
+        "I - programar, organizar, orientar, coordenar, executar e controlar as atividades relacionadas com os serviços jurídicos, no âmbito do CBMSC, vinculando-se tecnicamente à Consultoria Jurídica da SSP e à Procuradoria-Geral do Estado (PGE);",
+        "II - examinar a legalidade dos atos administrativos que lhe forem submetidos à apreciação pelo Comandante-Geral, Subcomandante-Geral e Chefe do Estado-Maior Geral;",
+        "III - participar do processo legislativo de elaboração de anteprojetos de LEI e DECRETO relacionados às atividades do CBMSC;",
+        "IV - coordenar a elaboração de informações em mandados de segurança e habeas corpus do Comandante-Geral, do Subcomandante-Geral e do Chefe do Estado-Maior Geral, sendo as informações inerentes às demais autoridades coatoras a cargo de suas assessorias ou corregedorias setoriais;",
+        "V - requisitar de quaisquer órgãos ou entidades da Corporação, documentos ou informações necessários ao exame de matéria jurídica a ele submetida, devendo os consultados atender no prazo estipulado pela Assessoria Jurídica; e",
+        "VI - apreciar editais de concurso e processos seletivos de pessoal."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria Jurídica",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial superior da ativa com formação em Direito (Art. 32)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a VI – atribuições previstas no Art. 32 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "ass-jur-sc"
+    },
+    "correg-sc": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "Corr-G",
+      "category": "Correição",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º, II; Art. 33 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 33 (Atribuições da Corregedoria-Geral)"
+      ],
+      "atribuicoes": [
+        "I - promover o acompanhamento das apurações de transgressões disciplinares e ilícitos penais atribuídos a bombeiros militares, realizadas pelos órgãos de direção, de apoio, e de execução do CBMSC, avocando-as quando necessário;",
+        "II - promover integração com os órgãos do Poder Judiciário, Ministério Público, Defensoria Pública e corregedorias de outros órgãos, nos temas relacionados a suas atribuições;",
+        "III - baixar normas técnicas em conjunto com Estado-Maior Geral, relativas às atividades de sua competência e controlar a sua aplicação;",
+        "IV - gerenciar o sistema de corregedoria do CBMSC;",
+        "V - manter cópia digitalizada dos procedimentos disciplinares e penais que forem instaurados no CBMSC;",
+        "VI - efetuar investigações, levantamentos externos ou diligências em conjunto com a Agência Central de Inteligência, para proveito das apurações das infrações penais militares e transgressões disciplinares e sua autoria, imputada a bombeiros militares;",
+        "VII - elaborar estatísticas relativas às suas atividades; e",
+        "VIII - remeter, com exclusividade, à Justiça Militar, os Inquéritos Policiais Militares, Sindicâncias e outros processos que tenham relação com a apuração no âmbito criminal, concernentes a atos praticados por integrantes do CBMSC."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Corregedor-Adjunto",
+            "Divisão de Eficiência Processual",
+            "Divisão de Supervisão Disciplinar"
+          ],
+          "atribuicoes": [
+            "Sistematização e controle de correição funcional, disciplinar e de polícia judiciária militar"
+          ]
+        }
+      ],
+      "id": "correg-sc"
+    },
+    "dp-sc": {
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 9º, I; Art. 34 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 34 (Atribuições da Diretoria de Pessoal)"
+      ],
+      "atribuicoes": [
+        "I - controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da Corporação, mantendo registros individuais;",
+        "II - promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como o serviço de identificação;",
+        "III - executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao pessoal ativo, inativo, pensionista e civil;",
+        "IV - executar as atividades pertinentes à documentação do pessoal do CBMSC;",
+        "V - desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal da Corporação;",
+        "VI - propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao Subcomandante-Geral;",
+        "VII - preparar os atos de movimentação, classificação e nomeação de Oficiais;",
+        "VIII - preparar os atos de movimentação, classificação e designação de Praças e Civis;",
+        "IX - manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro, relacionados com o controle do pessoal bombeiro militar;",
+        "X - estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do Estado-Maior Geral em que lhe extrapolarem à competência;",
+        "XI - manter o controle do pessoal agregado, excluído e licenciado;",
+        "XII - atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e Soldados;",
+        "XIII - elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção de Praças;",
+        "XIV - elaborar os processos de concessão de medalhas;",
+        "XV - coordenar e controlar a execução do plano de férias da Corporação;",
+        "XVI - coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e aperfeiçoamento do sistema de administração de pessoal;",
+        "XVII - elaborar estatísticas e relatórios das atividades da Diretoria;",
+        "XVIII - manter e operacionalizar o funcionamento das comissões permanentes e de mérito;",
+        "XIX - planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional, segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de seus dependentes;",
+        "XX - proceder o controle médico-sanitário do pessoal;",
+        "XXI - atender, no que lhe couber, a seleção do pessoal do CBMSC;",
+        "XXII - elaborar e executar programas de medicina preventiva e saúde comunitária;",
+        "XXIII - promover a realização de estudos, análises, e pesquisas, visando ao aperfeiçoamento do Sistema de Saúde e Assistência Social;",
+        "XXIV - baixar normas técnicas relativas às atividades de sua competência e controlar a sua aplicação;",
+        "XXV - tratar dos assuntos de estatística e modernização administrativa, na esfera de suas atribuições;",
+        "XXVI - tratar da coordenação, controle, e fiscalização, por meio de inspeções técnico-administrativas dos órgãos do Sistema de Saúde e Assistência Social;",
+        "XXVII - propor ao Estado-Maior Geral medidas que visem aprimorar as diretrizes gerais e aperfeiçoar a legislação e a Política de Saúde Ocupacional e Segurança do Trabalho e Assistência Social;",
+        "XXVIII - estabelecer e manter intercâmbio técnico-científico com entidades afins;",
+        "XXIX - propor a realização de convênios e contratos com entidades médicas ou técnico-profissionais, do direito público ou privado, visando à complementação e à racionalização dos serviços que lhe são afetos;",
+        "XXX - colaborar na especificação, padronização, catalogação e distribuição do material necessário às suas atividades e instruir a sua utilização e manutenção;",
+        "XXXI - elaborar normas, planos, programas, ordens e instruções relacionadas com o Sistema de Saúde e Assistência Social;",
+        "XXXII - elaborar e propor ao Estado-Maior Geral os manuais e instruções técnicas;",
+        "XXXIII - realizar as perícias médicas ou médico-legais, psicológicas e físicas, através do corpo técnico disponível;",
+        "XXXIV - prover, controlar e fiscalizar as atividades relacionadas à promoção da saúde e qualidade de vida, assistência social e religiosa do CBMSC;",
+        "XXXV - acompanhar a vida laboral do BM, avaliando-os sob os parâmetros de saúde, condicionamento físico e mental, anualmente;",
+        "XXXVI - avaliar os riscos ocupacionais das atividades laborais do bombeiro militar (administrativas e operacionais) definindo ações para mitigá-los;",
+        "XXXVII - realizar as investigações dos acidentes no trabalho definindo as ações necessárias à sua prevenção;",
+        "XXXVIII - promover estudos voltados ao desempenho humano, gerando estatísticas;",
+        "XXXIX - planejar, coordenar e supervisionar a educação física no CBMSC, com foco na atividade operacional e desempenho humano;",
+        "XL - elaborar normas relativas à educação física corporativa;",
+        "XLI - coordenar eventos de natureza desportiva de interesse institucional;",
+        "XLII - encaminhar os inaptos no TAF anual para a atividade-fim, ao devido tratamento e acompanhamento de saúde; e",
+        "XLIII - planejar e operacionalizar os testes de aptidão física para inclusões, promoções, seleções de cursos internos e externos, e anuais para acompanhamento da saúde dos militares."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Coronel QOBM (Art. 9º §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a XLIII – atribuições previstas no Art. 34 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "dp-sc"
+    },
+    "die-sc": {
+      "name": "Diretoria de Instrução e Ensino",
+      "abbreviation": "DIE",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 9º, II; Art. 35 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 35 (Atribuições da Diretoria de Instrução e Ensino)"
+      ],
+      "atribuicoes": [
+        "I - planejar, elaborar, desenvolver, supervisionar, avaliar e revisar as normas das atividades de ensino na Corporação;",
+        "II - elaborar, aprovar, regularizar e revisar os cursos e currículos da educação básica e complementar no CBMSC;",
+        "III - fomentar o desenvolvimento de novas metodologias e processos de ensino e aprendizagem adequados a cada atividade de ensino;",
+        "IV - elaborar, revisar e registrar os materiais didáticos utilizados no CBMSC;",
+        "V - desenvolver projetos de ensino, bem como promover o fomento de convênios entre sistemas de ensino congêneres;",
+        "VI - criar e executar processos de aprovação, acompanhamento, controle, encerramento, avaliação, auditoria, registro e emissão de certificados das atividades de ensino;",
+        "VII - manter o controle, análise, homologação, inserção e arquivo da formação acadêmica, da educação básica e da educação complementar do efetivo da Corporação, desde a inclusão até a passagem para a inatividade;",
+        "VIII - organizar os objetivos, metodologias, estratégias, atividades e avaliação da aprendizagem da atividade de ensino realizada por meio do ambiente virtual de aprendizagem;",
+        "IX - executar, planejar e gerir os cursos ofertados pelo Centro de Educação e Formação de Condutores, bem como outros assuntos ligados à legislação de trânsito;",
+        "X - manter o controle, análise, homologação e inserção das pontuações dos cursos civis e militares, bem como de estágios, treinamentos e ciclos de instrução de manutenção, para registro nos assentamentos dos militares, desde a inclusão até a passagem para inatividade; e",
+        "XI - o Plano Geral de Ensino."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Instrução e Ensino",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Diretor e Subdiretor (direção setorial)",
+          "desdobramentos": [
+            "Divisão de Ensino Básico e Complementar",
+            "Divisão de Controle e Avaliação de Ensino",
+            "Divisão de Educação a Distância",
+            "Centro de Educação e Formação de Condutores"
+          ],
+          "atribuicoes": [
+            "Planejamento, coordenação, fiscalização e controle de formação, aperfeiçoamento, especialização, pesquisa e extensão"
+          ]
+        }
+      ],
+      "id": "die-sc"
+    },
+    "due-sc": {
+      "name": "Diretoria de Urgência e Emergência",
+      "abbreviation": "DUE",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 9º, III; Art. 36 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 36 (Atribuições da Diretoria de Urgência e Emergência)"
+      ],
+      "atribuicoes": [
+        "I - planejar, orientar, coordenar, controlar e supervisionar as atividades de atendimento pré-hospitalar executadas pelo CBMSC em todo território catarinense;",
+        "II - promover a integração com os demais órgãos de Estados que possuem atividades relacionadas e interligadas ao serviço de atendimento pré-hospitalar do CBMSC;",
+        "III - promover o intercâmbio com demais estados da Federação e outros países, referentes a assuntos correlacionados com as atividades de atendimento pré-hospitalar;",
+        "IV - elaborar e executar programas de controle de qualidade para as atividades de atendimento pré-hospitalar do CBMSC;",
+        "V - promover a realização de estudos, análises e pesquisas, visando ao aperfeiçoamento do serviço de atendimento pré-hospitalar do CBMSC;",
+        "VI - propor normas técnicas relativas às atividades de sua competência e controlar a sua aplicação;",
+        "VII - elaborar estatística com foco na governança e modernização administrativa, na esfera de suas atribuições;",
+        "VIII - coordenar, controlar e fiscalizar a execução de contratos ligados a sua esfera de atuação;",
+        "IX - propor ao Estado-Maior Geral medidas que visem o aprimoramento das diretrizes gerais, manuais e instruções técnicas de atendimento pré-hospitalar;",
+        "X - estabelecer e manter intercâmbio técnico-científico com entidades afins;",
+        "XI - propor a realização de convênios e contratos com entidades afins às atividades da Diretoria;",
+        "XII - colaborar na especificação, padronização, catalogação e elaboração de normas, planos, programas, ordens e instruções relacionadas com o serviço de atendimento pré-hospitalar e demais integrações em curso;",
+        "XIII - coordenar a integração do atendimento pré-hospitalar do CBMSC com o SAMU catarinense, estadual e municipais."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Urgência e Emergência",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Diretor e Subdiretor (direção setorial)",
+          "desdobramentos": [
+            "Divisão de Normatização e Protocolos",
+            "Divisão de Educação Permanente",
+            "Divisão de Apoio Operacional"
+          ],
+          "atribuicoes": [
+            "Estudo, planejamento e execução de atendimento pré-hospitalar; integração com o sistema de saúde"
+          ]
+        }
+      ],
+      "id": "due-sc"
+    },
+    "dlf-sc": {
+      "name": "Diretoria de Logística e Finanças",
+      "abbreviation": "DLF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 9º, IV; Art. 37 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 37 (Atribuições da Diretoria de Logística e Finanças)"
+      ],
+      "atribuicoes": [
+        "I - adquirir, transportar, armazenar e distribuir os diversos materiais e suprimentos, bem como contratar serviços essenciais;",
+        "II - executar os processos licitatórios da Corporação para a aquisição de produtos e contratação de obras e serviços;",
+        "III - nomear as comissões de licitação, pregoeiros e equipes de apoio para atuarem nos processos licitatórios;",
+        "IV - elaborar, analisar, acompanhar e arquivar os processos relativos à celebração de convênios;",
+        "V - propor, acompanhar e gerir os contratos administrativos, termos aditivos e apostilamentos;",
+        "VI - assinar, rescindir e aplicar as penalidades administrativas relacionados aos contratos administrativos;",
+        "VII - instaurar processos ostensivos a fim de apurar irregularidades verificadas em processos licitatórios e contratos administrativos;",
+        "VIII - aplicar sanções administrativas a licitantes e fornecedores inadimplentes;",
+        "IX - contatar os órgãos centrais da administração financeira do Estado, visando a liberação de recursos para a execução do programa de trabalho e/ou plano de aplicação;",
+        "X - executar a contabilidade da Corporação;",
+        "XI - confeccionar a prestação de contas concernentes aos processos licitatórios, contratos administrativos e convênios executados pela Diretoria;",
+        "XII - cumprir o cronograma de desembolso de recursos financeiros;",
+        "XIII - realizar levantamentos estatísticos das atividades financeiras;",
+        "XIV - representar a Corporação perante as instituições financeiras e congêneres, bem como perante os órgãos centrais do governo no que tange à execução orçamentária e gestão financeira dos referidos órgãos;",
+        "XV - aplicar e executar os recursos orçamentários e extraorçamentários;",
+        "XVI - auditar os documentos comprobatórios de despesas da Corporação, liquidar e pagar fornecedores e prestadores de serviços contratados;",
+        "XVII - realizar inspeções de caráter setorial na área financeira, logística e patrimonial;",
+        "XVIII - emitir normativas internas que visem a padronização de procedimentos administrativos para a gestão logística e financeira da Corporação;",
+        "XIX - identificar e manter o controle patrimonial da Corporação;",
+        "XX - regularizar perante os órgãos constituídos os bens imóveis da Corporação;",
+        "XXI - fazer a gestão do material bélico da Corporação, bem como realizar os processos de autorização para a aquisição, transferência, porte e demais providências afetas ao armamento particular dos militares integrantes da Instituição;",
+        "XXII - realizar a gestão e identificação da frota, marítima, aérea e rodoviária;",
+        "XXIII - executar o Plano Diretor de Tecnologia da Informação e Comunicação da Corporação, bem como propor atualizações quando necessário;",
+        "XXIV - propor e fiscalizar a política de segurança da informação da Corporação;",
+        "XXV - homologar as soluções de tecnologia da informação e comunicação a serem utilizadas pela Corporação;",
+        "XXVI - coordenar atividades relacionadas com análise, programação e administração da base de dados da Corporação;",
+        "XXVII - planejar, padronizar e controlar a instalação e manutenção preventiva, corretiva e evolutiva de soluções de tecnologia da informação e comunicação;",
+        "XXVIII - efetuar, extraordinariamente, em caso de emergência, a manutenção das soluções de tecnologia da informação e comunicação; e",
+        "XXIX - executar atividades relacionadas à pesquisa e desenvolvimento de novas tecnologias voltadas às atividades institucionais."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística e Finanças",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Diretor e Subdiretor (direção setorial)",
+          "desdobramentos": [
+            "Divisão de Finanças",
+            "Divisão de Logística",
+            "Divisão de Tecnologia da Informação e Comunicação"
+          ],
+          "atribuicoes": [
+            "Planejamento, coordenação, fiscalização e controle de logística, patrimônio e TIC"
+          ]
+        }
+      ],
+      "id": "dlf-sc"
+    },
+    "dsci-sc": {
+      "name": "Diretoria de Segurança Contra Incêndio",
+      "abbreviation": "DSCI",
+      "category": "Direção Setorial",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 9º, V; Art. 38 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 38 (Atribuições da Diretoria de Segurança Contra Incêndio)"
+      ],
+      "atribuicoes": [
+        "I - a normatização em segurança contra incêndio, pânico e desastre;",
+        "II - a análise de projetos e vistorias;",
+        "III - o exercício do Poder de Polícia Administrativa;",
+        "IV - a investigação de incêndio e explosão; e",
+        "V - a pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Segurança Contra Incêndio",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "requisito": "Diretor e Subdiretor (direção setorial)",
+          "desdobramentos": [
+            "Divisão de Normatização",
+            "Divisão de Investigação de Incêndio e Explosão",
+            "Divisão de Pesquisa e Inovação",
+            "Divisão de Engenharia Contra Incêndio",
+            "Divisão de Fiscalização, Auditoria e Coordenação"
+          ],
+          "atribuicoes": [
+            "Planejamento, coordenação, fiscalização e controle da segurança contra incêndio"
+          ]
+        }
+      ],
+      "id": "dsci-sc"
+    },
+    "1rbm": {
+      "name": "1ª Região Bombeiro Militar",
+      "abbreviation": "1ª RBM",
+      "category": "Direção Operacional",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 10, I; Art. 39 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 10, I (composição)",
+        "Art. 39 (Atribuições dos Comandos Regionais)"
+      ],
+      "atribuicoes": [
+        "I - inspecionar periodicamente as Organizações Bombeiro Militar subordinadas;",
+        "II - coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a circunscrição ou a esfera de competência do comando da unidade operacional subordinada;",
+        "III - supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no âmbito da circunscrição;",
+        "IV - orientar e acompanhar o desempenho administrativo e operacional dos elementos subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o aprimoramento de resultados, em consonância com o Plano Estratégico do CBMSC;",
+        "V - fiscalizar, na circunscrição da RBM, a gestão das Centrais de Emergências e congêneres;",
+        "VI - emitir ordens administrativas e operacionais visando regular as ações de coordenação, controle e fiscalização sobre os órgãos de execução de sua circunscrição;",
+        "VII - instaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à manutenção da disciplina no âmbito dos Comandos Regionais;",
+        "VIII - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, no âmbito de sua respectiva circunscrição; e",
+        "IX - autorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual."
+      ],
+      "desdobramentos": [
+        "1º BBM - Florianópolis",
+        "3º BBM - Blumenau",
+        "4º BBM - Criciúma",
+        "7º BBM - Itajaí",
+        "8º BBM - Tubarão",
+        "10º BBM - São José",
+        "13º BBM - Balneário Camboriú"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante da Região Bombeiro Militar (RBM)",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto QOBM",
+          "desdobramentos": [
+            "Batalhões Bombeiro Militar",
+            "Companhias",
+            "Pelotões",
+            "Grupos"
+          ],
+          "atribuicoes": [
+            "Gestão, planejamento, supervisão, coordenação, controle e fiscalização de missões finalísticas"
+          ]
+        }
+      ],
+      "id": "1rbm"
+    },
+    "2rbm": {
+      "name": "2ª Região Bombeiro Militar",
+      "abbreviation": "2ª RBM",
+      "category": "Direção Operacional",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 10, II; Art. 39 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 10, II (composição)",
+        "Art. 39 (Atribuições dos Comandos Regionais)"
+      ],
+      "atribuicoes": [
+        "I - inspecionar periodicamente as Organizações Bombeiro Militar subordinadas;",
+        "II - coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a circunscrição ou a esfera de competência do comando da unidade operacional subordinada;",
+        "III - supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no âmbito da circunscrição;",
+        "IV - orientar e acompanhar o desempenho administrativo e operacional dos elementos subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o aprimoramento de resultados, em consonância com o Plano Estratégico do CBMSC;",
+        "V - fiscalizar, na circunscrição da RBM, a gestão das Centrais de Emergências e congêneres;",
+        "VI - emitir ordens administrativas e operacionais visando regular as ações de coordenação, controle e fiscalização sobre os órgãos de execução de sua circunscrição;",
+        "VII - instaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à manutenção da disciplina no âmbito dos Comandos Regionais;",
+        "VIII - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, no âmbito de sua respectiva circunscrição; e",
+        "IX - autorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual."
+      ],
+      "desdobramentos": [
+        "2º BBM - Curitibanos",
+        "5º BBM - Lages",
+        "9º BBM - Canoinhas",
+        "15º BBM - Rio do Sul"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante da 2ª RBM",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto do QOBM (Coronel), nos termos do Art. 11 Dec. nº 1.328/2021",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a IX – atribuições previstas no Art. 39 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "2rbm"
+    },
+    "3rbm": {
+      "name": "3ª Região Bombeiro Militar",
+      "abbreviation": "3ª RBM",
+      "category": "Direção Operacional",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 10, III; Art. 39 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 10, III (composição)",
+        "Art. 39 (Atribuições dos Comandos Regionais)"
+      ],
+      "atribuicoes": [
+        "I - inspecionar periodicamente as Organizações Bombeiro Militar subordinadas;",
+        "II - coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a circunscrição ou a esfera de competência do comando da unidade operacional subordinada;",
+        "III - supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no âmbito da circunscrição;",
+        "IV - orientar e acompanhar o desempenho administrativo e operacional dos elementos subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o aprimoramento de resultados, em consonância com o Plano Estratégico do CBMSC;",
+        "V - fiscalizar, na circunscrição da RBM, a gestão das Centrais de Emergências e congêneres;",
+        "VI - emitir ordens administrativas e operacionais visando regular as ações de coordenação, controle e fiscalização sobre os órgãos de execução de sua circunscrição;",
+        "VII - instaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à manutenção da disciplina no âmbito dos Comandos Regionais;",
+        "VIII - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, no âmbito de sua respectiva circunscrição; e",
+        "IX - autorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual."
+      ],
+      "desdobramentos": [
+        "6º BBM - Chapecó",
+        "11º BBM - Joaçaba",
+        "12º BBM - São Miguel do Oeste",
+        "14º BBM - Xanxerê"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante da 3ª RBM",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do último posto do QOBM (Coronel), nos termos do Art. 11 Dec. nº 1.328/2021",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a IX – atribuições previstas no Art. 39 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "3rbm"
+    },
+    "cebm": {
+      "name": "Centro de Ensino Bombeiro Militar",
+      "abbreviation": "CEBM",
+      "category": "Apoio",
+      "subordinadoA": "Subcomandante-Geral (mobilização); DIE (técnico-administrativamente)",
+      "legalRef": "Art. 12, I; Art. 40 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 40 (Atribuições do CEBM)"
+      ],
+      "atribuicoes": [
+        "I - orientar, coordenar e executar as atividades de Ensino Básico do CBMSC;",
+        "II - atender, no que lhe couber, a formação de Ensino Complementar do CBMSC, incluindo a capacitação do corpo docente;",
+        "III - baixar normas técnicas relativas às atividades de sua competência e controlar sua aplicação;",
+        "IV - estabelecer e manter, por intermédio da Diretoria de Ensino e Instrução, o intercâmbio técnico-científico com as Academias Militares, Universidades e Escolas de Governo;",
+        "V - propor ao Estado-Maior Geral, através da Diretoria de Instrução e Ensino, medidas que visem aprimorar as diretrizes gerais e aperfeiçoar a legislação e a política de instrução e ensino;",
+        "VI - ofertar, no âmbito da Escola de Governo, cursos com currículos aprovados pela Diretoria de Ensino e Instrução que visem o aprimoramento profissional dos militares estaduais, bem como para servidores públicos e profissionais que se relacionam com as atividades de bombeiro;",
+        "VII - promover as atividades de ensino, pesquisa e extensão no âmbito da Corporação e em parceria com outras instituições em conformidade com a legislação em vigor;",
+        "VIII - atender às exigências emanadas pelo Conselho Estadual de Educação no que tange à Escola de Governo;",
+        "IX - promover e incentivar as pesquisas técnico-científicas nas áreas de conhecimento presentes no Plano de Desenvolvimento Institucional da Escola de Governo; e",
+        "X - apoiar o Comando-Geral da Corporação na condição de reserva tática de pronto emprego operacional."
+      ],
+      "desdobramentos": [
+        "Academia de Bombeiro Militar (1ª Companhia)",
+        "Centro de Formação e Aperfeiçoamento de Praças (2ª Companhia)",
+        "Centro de Estudos Superiores (3ª Companhia)",
+        "Centro de Formação de Corpo Temporário (4ª Companhia)",
+        "Centros Descentralizados de Formação Especializada"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Centro de Ensino Bombeiro Militar (CEBM)",
+          "subordinadoA": "Subcomandante-Geral / DIE",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Academia de Bombeiro Militar",
+            "Centro de Formação e Aperfeiçoamento de Praças",
+            "Centro de Estudos Superiores"
+          ],
+          "atribuicoes": [
+            "Formação e aperfeiçoamento de praças; estudos superiores e formação especializada"
+          ]
+        }
+      ],
+      "id": "cebm"
+    },
+    "aci-sc": {
+      "name": "Agência Central de Inteligência",
+      "abbreviation": "ACI",
+      "category": "Apoio",
+      "subordinadoA": "Gabinete do Comando-Geral",
+      "legalRef": "Art. 12, III; Art. 42 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 42 (Atribuições da Agência Central de Inteligência)"
+      ],
+      "atribuicoes": [
+        "I - supervisionar e coordenar, em todo o território do Estado, a atividade de inteligência;",
+        "II - definir bases para o estabelecimento da doutrina da atividade de inteligência;",
+        "III - elaborar os planos de inteligência e de busca;",
+        "IV - produzir conhecimentos necessários às decisões do Comandante-Geral, bem como aos estudos e planejamentos em nível de Estado-Maior Geral;",
+        "V - promover e coordenar o intercâmbio de informações entre as Agências Setoriais de Inteligência do CBMSC;",
+        "VI - estabelecer o relacionamento e ligações com os órgãos federais e estaduais de inteligência, assegurando o intercâmbio de conhecimentos;",
+        "VII - coordenar operações de inteligência em todo território do Estado;",
+        "VIII - promover a formação de uma correta mentalidade de inteligência;",
+        "IX - organizar e manter em dia os arquivos sigilosos, bem como controlar o fluxo de documentos sigilosos do CBMSC;",
+        "X - elaborar e controlar a expedição dos boletins reservados do Comando-Geral; e",
+        "XI - outras atribuições correlatas ou que vierem a ser cometidas à Agência Central de Inteligência."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Agência Central de Inteligência",
+          "subordinadoA": "Gabinete do Comando-Geral",
+          "requisito": "Oficial intermediário ou superior do QOBM (Art. 12 §7º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a XI – atribuições previstas no Art. 42 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "aci-sc"
+    },
+    "aeis": {
+      "name": "Assessoria Especial de Integração de Serviços Auxiliares",
+      "abbreviation": "AEISA",
+      "category": "Apoio",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 12, IV, a; Art. 44 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 44 (Atribuições da Assessoria Especial de Integração de Serviços Auxiliares)"
+      ],
+      "atribuicoes": [
+        "I - articular a integração dos órgãos de direção setorial, apoio e execução, necessária para a formação, aperfeiçoamento e atuação dos integrantes dos serviços auxiliares do CBMSC;",
+        "II - planejar, monitorar, controlar e avaliar todos os processos de formação e treinamento dos integrantes dos serviços auxiliares do CBMSC;",
+        "III - monitorar o controle realizado pelos órgãos de execução, de todas as atividades relacionadas com o exercício do serviço voluntário na Corporação;",
+        "IV - planejar e controlar, de forma integrada com demais órgãos, o emprego operacional e concessão de benefícios aos integrantes dos serviços auxiliares do CBMSC;",
+        "V - planejar, monitorar, controlar e avaliar todos os processos desenvolvidos pelos demais órgãos relacionados com os programas comunitários;",
+        "VI - auxiliar os órgãos de execução na implementação dos programas, projetos e ações comunitárias;",
+        "VII - manter biblioteca atualizada com normas e regulamentos referentes aos programas comunitários;",
+        "VIII - manter acessível toda documentação padronizada referente à implementação dos programas comunitários;",
+        "IX - controlar a aplicação das normas e regulamentos afetos aos serviços auxiliares e programas comunitários;",
+        "X - gerenciar processos para aprovação de editais e planos de ensino dos programas de sua responsabilidade, bem como os processos de registro e emissão de certificados das atividades de capacitação;",
+        "XI - fazer levantamentos de necessidade de formação do efetivo para gestão e execução das atividades relacionadas aos programas comunitários, mantendo atualizada a relação dos gestores dos programas comunitários;",
+        "XII - analisar as propostas de projetos institucionais, emitindo parecer para Coordenadoria de Programas Comunitários para análise final;",
+        "XIII - coletar e consolidar dados para fins estatísticos;",
+        "XIV - fiscalizar as atividades desenvolvidas pelas OBM na execução dos programas comunitários, por meio de inspeções técnico-administrativas;",
+        "XV - identificar necessidade de alteração e/ou ajuste de programas, projetos e ações, de modo a promover o alinhamento com os objetivos estratégicos da Corporação;",
+        "XVI - acompanhar os indicadores de desempenho das atividades relacionadas aos programas comunitários;",
+        "XVII - divulgar os resultados operacionais e impactos sociais das atividades relacionadas aos programas comunitários;",
+        "XVIII - estabelecer a integração com os demais órgãos públicos, no trato das atividades relacionadas com a área de competência;",
+        "XIX - manter atualizado e divulgado o portfólio de programas comunitários da Corporação; e",
+        "XX - outras definidas por ATO do Comandante-Geral."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da AEISA",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial QOBM (Art. 12 §4º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a XX – atribuições previstas no Art. 44 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "aeis"
+    },
+    "aeai": {
+      "name": "Assessoria Especial de Assuntos Institucionais",
+      "abbreviation": "AEAI",
+      "category": "Apoio",
+      "subordinadoA": "Gabinete do Comandante-Geral",
+      "legalRef": "Art. 12, IV, b; Art. 45 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 45 (Assessoria Especial de Assuntos Institucionais)"
+      ],
+      "atribuicoes": [
+        "A Assessoria Especial de Assuntos Institucionais é órgão de apoio, prestando assessoria técnica, coordenação, controle e acompanhamento dos assuntos institucionais em nível federal, estadual e municipal que sejam de interesse do Comando-Geral do CBMSC, cabendo a este editar ATO que discipline as atividades, as atribuições e a organização (Art. 45).",
+        "Parágrafo único. A Assessoria Especial de Assuntos Institucionais poderá exercer atividades na capital federal atuando na articulação junto aos ministérios para captação de recursos e acompanhamento de matérias que sejam de interesse da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da AEAI",
+          "subordinadoA": "Gabinete do Comandante-Geral",
+          "requisito": "Oficial QOBM (Art. 12 §5º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Atribuições disciplinadas por ATO do Comandante-Geral (Art. 45)."
+          ]
+        }
+      ],
+      "id": "aeai"
+    },
+    "aei-sc": {
+      "name": "Assessoria Especial de Inovação",
+      "abbreviation": "AEI",
+      "category": "Apoio",
+      "subordinadoA": "Gabinete do Comandante-Geral",
+      "legalRef": "Art. 12, IV, c; Art. 46 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 46 (Assessoria Especial de Inovação)"
+      ],
+      "atribuicoes": [
+        "A Assessoria Especial de Inovação do CBMSC tem como finalidade a pesquisa de novas tecnologias, novos procedimentos e equipamentos que possam trazer melhorias nas atividades da Corporação no Estado (Art. 46)."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da AEI",
+          "subordinadoA": "Gabinete do Comandante-Geral",
+          "requisito": "Oficial QOBM (Art. 12 §6º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Pesquisa de novas tecnologias, procedimentos e equipamentos para as atividades da Corporação (Art. 46)."
+          ]
+        }
+      ],
+      "id": "aei-sc"
+    },
+    "bbm-sc": {
+      "name": "Batalhões Bombeiro Militar",
+      "abbreviation": "BBM",
+      "category": "Execução",
+      "subordinadoA": "Regiões Bombeiro Militar (RBMs)",
+      "legalRef": "Art. 13; Art. 51 Dec. 1.328/2021",
+      "baseLegal": "Lei Complementar nº 724, de 18 de julho de 2018",
+      "artigosDeOrigem": [
+        "Art. 51 (Atribuições dos BBMs)"
+      ],
+      "atribuicoes": [
+        "I - realizar os serviços de segurança, prevenção, proteção e combate a incêndios;",
+        "II - realizar os serviços de busca e salvamento de pessoas e bens, por meio de resgates aéreo, aquático e terrestre;",
+        "III - realizar o atendimento pré-hospitalar, respeitadas as competências de outros órgãos;",
+        "IV - executar a prevenção balneária por guarda-vidas e a prevenção de acidentes e incêndios na orla marítima e fluvial;",
+        "V - analisar previamente os projetos preventivos, acompanhar e fiscalizar sua execução e impor sanções administrativas estabelecidas em LEI em: a) segurança contra incêndio e pânico em imóveis; e b) áreas de risco e de armazenagem, manipulação e transporte de produtos perigosos;",
+        "VI - credenciar e fiscalizar o funcionamento dos serviços civis auxiliares de bombeiros;",
+        "VII - desenvolver atividades relacionadas à educação pública, com foco na criação de uma cultura preventiva e reativa na comunidade, abrangendo o rol de atendimentos prestados pela Corporação e em conformidade com a política de capacitação do público externo;",
+        "VIII - realizar investigação de incêndio e explosão de áreas sinistradas no limite de sua competência;",
+        "IX - atuar de forma integrada com os órgãos de defesa civil; e",
+        "X - outras atividades regularmente previstas, bem como outras necessárias para a consecução das atividades da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante de BBM",
+          "subordinadoA": "Comandante da RBM",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a X – atribuições previstas no Art. 51 do Dec. nº 1.328/2021."
+          ]
+        }
+      ],
+      "id": "bbm-sc"
+    }
+  }
+}

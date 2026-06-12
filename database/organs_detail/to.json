@@ -1,0 +1,766 @@
+{
+  "state_id": "to",
+  "state_name": "Tocantins",
+  "cbm_name": "Corpo de Bombeiros Militar do Tocantins",
+  "cbm_abbreviation": "CBMTO",
+  "legal_source": "Lei Complementar nº 131, de 30 de setembro de 2021",
+  "organs": {
+    "cg-to": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Superior",
+      "subordinadoA": "Chefe do Poder Executivo",
+      "legalRef": "Art. 2º; Art. 5º; Art. 7º LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 2º (Competências do CBMTO)",
+        "Art. 5º (Direção Superior)",
+        "Art. 7º (Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Comandante-Geral, Secretário de Estado, nomeado por ato do Chefe do Poder Executivo, é responsável pelo comando, administração e emprego da Corporação e do Comando de Ações de Defesa Civil, assessorado pelas demais unidades administrativas, que lhe são subordinadas. (Art. 7º)",
+        "I - o planejamento estratégico; (Art. 5º, I)",
+        "II - o estabelecimento das diretrizes, ordens e normas técnicas ou gerais. (Art. 5º, II)",
+        "I - planejar, coordenar e executar ações preventivas, emergenciais, de socorro, assistenciais e recuperativas no âmbito da defesa civil; (Art. 2º, I)",
+        "II - planejar, editar atos normativos, coordenar, dirigir e executar as ações de prevenção e extinção de incêndios, emergência, busca e salvamento, resgate e atendimento pré-hospitalar; (Art. 2º, II)",
+        "III - exercer, privativamente, a prevenção contra incêndio e emergência no Estado do Tocantins, mediante: a) o planejamento de ações; b) o estabelecimento de normas; c) a análise de projetos de sistemas de prevenção contra incêndio e emergência; d) a vistoria, certificação e fiscalização de edificações e áreas de riscos. (Art. 2º, III)",
+        "IV - fiscalizar e fazer cumprir a legislação de prevenção contra incêndio e emergência, podendo, interditar, embargar e aplicar outras sanções previstas na legislação específica, quanto às edificações, obras, serviços, atividades e locais de concentração de público que não ofereçam condições de segurança e de funcionamento; (Art. 2º, IV)",
+        "V - realizar a perícia de incêndios e de locais de sinistros ou com risco de colapso; (Art. 2º, V)",
+        "VI - exercer a polícia judiciária militar e a apuração das infrações penais militares praticadas pelos seus membros, nos termos da legislação federal; (Art. 2º, VI)",
+        "VII - proteger o meio ambiente mediante a realização de atividades de prevenção, fiscalização e extinção de incêndio florestal; (Art. 2º, VII)",
+        "VIII - regular, credenciar e fiscalizar empresas de fabricação e comercialização de produtos, bem como as escolas formadoras, na prestação de serviços relativos à segurança contra incêndio, emergência e os demais serviços civis públicos e privados auxiliares de bombeiros e congêneres; (Art. 2º, VIII)",
+        "IX - fiscalizar, no âmbito de sua competência, os serviços de armazenamento e transporte de produtos especiais e perigosos, visando à proteção das pessoas, do patrimônio público e privado, e do meio ambiente; (Art. 2º, IX)",
+        "X - exercer o poder de polícia no âmbito de sua competência; (Art. 2º, X)",
+        "XI - realizar pesquisas técnico-científicas, testes e exames técnicos relacionados com as suas atividades. (Art. 2º, XI)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Chefe do Poder Executivo",
+          "requisito": "Secretário de Estado; Coronel da ativa do QOBM, diplomado em CSBM",
+          "desdobramentos": [
+            "Chefe do Estado-Maior",
+            "Estado-Maior (6 Comandos de Seção)",
+            "Unidades de Direção Setorial, Assessoramento, Apoio e Execução"
+          ],
+          "atribuicoes": [
+            "Comando, administração e emprego da Corporação",
+            "Responsabilidade pelo Comando de Ações de Defesa Civil"
+          ]
+        }
+      ],
+      "id": "cg-to"
+    },
+    "chem": {
+      "name": "Chefe do Estado-Maior / Subcomandante-Geral",
+      "abbreviation": "CHEM",
+      "category": "Direção Superior",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 8º LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 8º (Chefe do Estado-Maior)"
+      ],
+      "atribuicoes": [
+        "O Chefe do Estado-Maior, designado por ato do Chefe do Poder Executivo, é o principal assessor do Comandante-Geral, competindo-lhe a direção, orientação e fiscalização dos trabalhos do Estado-Maior. (Art. 8º caput)",
+        "§1º O Chefe do Estado-Maior acumula a função de Subcomandante-Geral e substitui o Comandante-Geral em seus eventuais afastamentos e impedimentos."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel da ativa do QOBM, diplomado no Curso Superior de Bombeiro Militar ou equivalente (Art. 8º §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção, orientação e fiscalização dos trabalhos do Estado-Maior; acumula função de Subcomandante-Geral (Art. 8º)."
+          ]
+        }
+      ],
+      "id": "chem"
+    },
+    "subchem": {
+      "name": "Subchefe do Estado-Maior",
+      "abbreviation": "SUBCHEM",
+      "category": "Direção Superior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 9º LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 9º (Subchefe do Estado-Maior)"
+      ],
+      "atribuicoes": [
+        "§3º Compete ao Subchefe do Estado-Maior coordenar as Seções do Estado-Maior, bem como substituir o Chefe do Estado-Maior em seus eventuais afastamentos e impedimentos legais. (Art. 9º §3º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subchefe do Estado-Maior",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM, diplomado no Curso Superior de Bombeiro Militar ou equivalente (Art. 9º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação das Seções do Estado-Maior e substituição do Chefe do Estado-Maior (Art. 9º §3º)."
+          ]
+        }
+      ],
+      "id": "subchem"
+    },
+    "em-to": {
+      "name": "Estado-Maior",
+      "abbreviation": "EM",
+      "category": "Direção Superior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 10; Art. 11 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 10 (Estado-Maior)",
+        "Art. 11 (Estrutura e seções)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior é responsável pelas ações de planejamento, estudo, orientação, coordenação, fiscalização e controle das atividades do CBMTO, cabendo-lhe a formulação de diretrizes, ordens e normas gerais de ação do Comandante-Geral no acionamento das unidades da Corporação. (Art. 10)",
+        "O Estado-Maior é comandado pelo Chefe do Estado-Maior, coordenado pelo Subchefe do Estado-Maior e estruturado em: Comando de Correição e Disciplina; Comando de Ações de Defesa Civil; Comando de Gestão de Pessoas; Comando de Gestão de Recursos Financeiros e Patrimoniais; Comando de Atividades Técnicas; Comando Operacional Bombeiro Militar. (Art. 11)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subchefe do Estado-Maior (SUBCHEM)",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel QOBM, diplomado em Curso Superior",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação das Seções do Estado-Maior",
+            "Substituto do CHEM em afastamentos e impedimentos"
+          ]
+        }
+      ],
+      "id": "em-to"
+    },
+    "ccd-to": {
+      "name": "Comando de Correição e Disciplina",
+      "abbreviation": "CCorD",
+      "category": "Seção do Estado-Maior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 12 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 12 (Comando de Correição e Disciplina)"
+      ],
+      "atribuicoes": [
+        "I - garantir a preservação dos princípios da hierarquia e disciplina da Corporação;",
+        "II - controlar, orientar e padronizar processos administrativos disciplinares e Inquéritos Policiais Militares;",
+        "III - apurar transgressões disciplinares e infrações penais de natureza militar envolvendo seus membros;",
+        "IV - acompanhar pessoal submetido a processo penal e processo penal militar."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante de Correição e Disciplina",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM, diplomado no Curso Superior de Bombeiro Militar ou equivalente (Art. 11 §único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a IV – atribuições previstas no Art. 12 da LC nº 131/2021."
+          ]
+        }
+      ],
+      "id": "ccd-to"
+    },
+    "cadc-to": {
+      "name": "Comando de Ações de Defesa Civil",
+      "abbreviation": "CADC",
+      "category": "Seção do Estado-Maior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 13 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 13 (Comando de Ações de Defesa Civil)"
+      ],
+      "atribuicoes": [
+        "O Comando de Ações de Defesa Civil é responsável pelo planejamento e coordenação das ações de prevenção, preparação e resposta no âmbito da defesa civil. (Art. 13)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante de Ações de Defesa Civil",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento e coordenação das ações de defesa civil (Art. 13)."
+          ]
+        }
+      ],
+      "id": "cadc-to"
+    },
+    "cgp-to": {
+      "name": "Comando de Gestão de Pessoas",
+      "abbreviation": "CGP",
+      "category": "Seção do Estado-Maior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 14 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 14 (Comando de Gestão de Pessoas)"
+      ],
+      "atribuicoes": [
+        "O Comando de Gestão de Pessoas é encarregado do planejamento e dos assuntos estratégicos referentes à gestão profissional, à legislação, ao pessoal, à saúde e ao ensino na Corporação. (Art. 14)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante de Gestão de Pessoas",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento dos assuntos de gestão profissional, legislação, pessoal, saúde e ensino (Art. 14)."
+          ]
+        }
+      ],
+      "id": "cgp-to"
+    },
+    "cgrf-to": {
+      "name": "Comando de Gestão de Recursos Financeiros e Patrimoniais",
+      "abbreviation": "CGRF",
+      "category": "Seção do Estado-Maior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 15 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 15 (Comando de Gestão de Recursos Financeiros e Patrimoniais)"
+      ],
+      "atribuicoes": [
+        "O Comando de Gestão de Recursos Financeiros e Patrimoniais é responsável pelo planejamento dos assuntos referentes ao orçamento, finanças, logística e infraestrutura da Corporação. (Art. 15)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante de Gestão de Recursos",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento dos assuntos de orçamento, finanças, logística e infraestrutura (Art. 15)."
+          ]
+        }
+      ],
+      "id": "cgrf-to"
+    },
+    "cat-to": {
+      "name": "Comando de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Seção do Estado-Maior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 16 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 16 (Comando de Atividades Técnicas)"
+      ],
+      "atribuicoes": [
+        "O Comando de Atividades Técnicas é encarregado de planejar, controlar e fiscalizar as atividades atinentes à segurança contra incêndio e emergência no Estado. (Art. 16)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante de Atividades Técnicas",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, controle e fiscalização das atividades de SCI e emergência (Art. 16)."
+          ]
+        }
+      ],
+      "id": "cat-to"
+    },
+    "cobm-to": {
+      "name": "Comando Operacional Bombeiro Militar",
+      "abbreviation": "COBM",
+      "category": "Seção do Estado-Maior",
+      "subordinadoA": "Chefe do Estado-Maior",
+      "legalRef": "Art. 17 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 17 (Comando Operacional Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "O Comando Operacional Bombeiro Militar é responsável pelo planejamento dos assuntos relativos à articulação operacional, à administração e ao controle das operações bombeiro militares e pelos estudos, estatísticas, doutrinas, pesquisas e padronização de procedimentos relacionados às atividades operacionais da Corporação. (Art. 17)",
+        "§único. De acordo com a necessidade, poderá o Comando Operacional Bombeiro Militar ser dividido em regionais, conforme plano de articulação do CBMTO."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional Bombeiro Militar",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento da articulação operacional e padronização de procedimentos operacionais (Art. 17)."
+          ]
+        }
+      ],
+      "id": "cobm-to"
+    },
+    "gab-to": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "Gab",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19, VI LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 19, VI (Gabinete do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "a) transmissão e controle da execução das ordens emanadas do Comandante-Geral;",
+        "b) organização da correspondência e despacho da documentação do Gabinete;",
+        "c) ajudância de ordens;",
+        "d) secretariado geral do Comandante-Geral e do Chefe do Estado-Maior;",
+        "e) publicação do Boletim Geral."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "a a e – atribuições previstas no Art. 19, VI da LC nº 131/2021."
+          ]
+        }
+      ],
+      "id": "gab-to"
+    },
+    "ai-to": {
+      "name": "Assessoria de Inteligência",
+      "abbreviation": "AI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19, I LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 19, I (Assessoria de Inteligência)"
+      ],
+      "atribuicoes": [
+        "a) a inteligência e contrainteligência;",
+        "b) a guarda e manutenção de documentos e arquivos sigilosos;",
+        "c) ao controle de armamento dos integrantes da Corporação;",
+        "d) a confecção do boletim reservado da Corporação;",
+        "e) ao secretariado da Comissão de Promoções de Oficiais - CPO e Comissão de Promoção de Praças – CPP."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria de Inteligência",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "a a e – atribuições previstas no Art. 19, I da LC nº 131/2021."
+          ]
+        }
+      ],
+      "id": "ai-to"
+    },
+    "aj-to": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19, II LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 19, II (Assessoria Jurídica)"
+      ],
+      "atribuicoes": [
+        "Assessoria Jurídica, com atribuições de consultoria, análise e emissão de pareceres jurídicos nos processos e assuntos de interesse da Corporação. (Art. 19, II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria Jurídica",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM com formação em Direito",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Consultoria, análise e emissão de pareceres jurídicos (Art. 19, II)."
+          ]
+        }
+      ],
+      "id": "aj-to"
+    },
+    "acs-to": {
+      "name": "Assessoria de Comunicação Social",
+      "abbreviation": "ACS",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19, III LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 19, III (Assessoria de Comunicação Social)"
+      ],
+      "atribuicoes": [
+        "encarregada das atividades de comunicação social, publicidade, relacionamento com a mídia, cerimonial, eventos e marketing institucional. (Art. 19, III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria de Comunicação Social",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comunicação social, publicidade, cerimonial e marketing institucional (Art. 19, III)."
+          ]
+        }
+      ],
+      "id": "acs-to"
+    },
+    "age-to": {
+      "name": "Assessoria de Gestão Estratégica",
+      "abbreviation": "AGE",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19, IV LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 19, IV (Assessoria de Gestão Estratégica)"
+      ],
+      "atribuicoes": [
+        "responsável por acompanhar a gestão estratégica e desenvolver os projetos da Corporação, em conjunto com as outras seções pertinentes. (Art. 19, IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria de Gestão Estratégica",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Acompanhamento da gestão estratégica e projetos da Corporação (Art. 19, IV)."
+          ]
+        }
+      ],
+      "id": "age-to"
+    },
+    "ati-to": {
+      "name": "Assessoria de Telecomunicações e Informática",
+      "abbreviation": "ATI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19, V LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 19, V (Assessoria de Telecomunicações e Informática)"
+      ],
+      "atribuicoes": [
+        "responsável pela coordenação e execução das matérias relativas à informática, telecomunicações e tecnologia da informação. (Art. 19, V)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria de Telecomunicações e Informática",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação e execução de informática, telecomunicações e TI (Art. 19, V)."
+          ]
+        }
+      ],
+      "id": "ati-to"
+    },
+    "dagp-to": {
+      "name": "Diretoria de Administração e Gestão de Pessoas",
+      "abbreviation": "DAGP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando de Gestão de Pessoas",
+      "legalRef": "Art. 18, I LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 18, I (Diretoria de Administração e Gestão de Pessoas)"
+      ],
+      "atribuicoes": [
+        "encarregada da coordenação e execução dos assuntos inerentes à gestão de pessoal, pelos civis e militares ativos, inativos e pensionistas, pelo recrutamento e seleção e pela folha de pagamento. (Art. 18, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Administração e Gestão de Pessoas",
+          "subordinadoA": "Comando de Gestão de Pessoas",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de pessoal, recrutamento e seleção e folha de pagamento (Art. 18, I)."
+          ]
+        }
+      ],
+      "id": "dagp-to"
+    },
+    "dep-to": {
+      "name": "Diretoria de Ensino e Pesquisa",
+      "abbreviation": "DEP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando de Gestão de Pessoas",
+      "legalRef": "Art. 18, II LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 18, II (Diretoria de Ensino e Pesquisa)"
+      ],
+      "atribuicoes": [
+        "encarregada de assuntos relativos à coordenação e execução do ensino, instrução e pesquisa, inerentes às atividades de bombeiro militar. (Art. 18, II)"
+      ],
+      "desdobramentos": [
+        "Academia de Formação de Bombeiros",
+        "Colégios Militares do CBM-TO"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino e Pesquisa",
+          "subordinadoA": "Comando de Gestão de Pessoas",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação e execução do ensino, instrução e pesquisa de bombeiro militar (Art. 18, II)."
+          ]
+        }
+      ],
+      "id": "dep-to"
+    },
+    "dlp-to": {
+      "name": "Diretoria de Logística e Patrimônio",
+      "abbreviation": "DLP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando de Gestão de Recursos Financeiros e Patrimoniais",
+      "legalRef": "Art. 18, III LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 18, III (Diretoria de Logística e Patrimônio)"
+      ],
+      "atribuicoes": [
+        "responsável pelos assuntos relativos à aquisição de material e serviços, logística geral, e ao controle e fiscalização do patrimônio e estoque. (Art. 18, III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Logística e Patrimônio",
+          "subordinadoA": "Comando de Gestão de Recursos",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Aquisição de material e serviços, logística geral e controle de patrimônio (Art. 18, III)."
+          ]
+        }
+      ],
+      "id": "dlp-to"
+    },
+    "dof-to": {
+      "name": "Diretoria de Orçamento e Finanças",
+      "abbreviation": "DOF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando de Gestão de Recursos Financeiros e Patrimoniais",
+      "legalRef": "Art. 18, IV LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 18, IV (Diretoria de Orçamento e Finanças)"
+      ],
+      "atribuicoes": [
+        "encarregada dos assuntos relativos à coordenação, acompanhamento e avaliação, e à execução orçamentária e financeira da corporação. (Art. 18, IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Orçamento e Finanças",
+          "subordinadoA": "Comando de Gestão de Recursos",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação e execução orçamentária e financeira (Art. 18, IV)."
+          ]
+        }
+      ],
+      "id": "dof-to"
+    },
+    "dsas-to": {
+      "name": "Diretoria de Saúde e Assistência Social",
+      "abbreviation": "DSAS",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando de Gestão de Pessoas",
+      "legalRef": "Art. 18, V LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 18, V (Diretoria de Saúde e Assistência Social)"
+      ],
+      "atribuicoes": [
+        "responsável pela coordenação, execução e acompanhamento dos assuntos relativos aos serviços de saúde e à promoção social dos bombeiros militares, seus dependentes e pensionistas, compreendendo: policlínica; consultórios médicos, odontológicos, psicológicos e de assistência social das unidades; fisioterapia; junta médica; educação física; Capelania Militar. (Art. 18, V)"
+      ],
+      "desdobramentos": [
+        "Policlínica",
+        "Consultórios médicos, odontológicos, psicológicos e de assistência social",
+        "Fisioterapia",
+        "Junta médica",
+        "Educação física",
+        "Capelania Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Saúde e Assistência Social",
+          "subordinadoA": "Comando de Gestão de Pessoas",
+          "requisito": "Oficial QOBM/S",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação dos serviços de saúde e promoção social dos BMs e dependentes (Art. 18, V)."
+          ]
+        }
+      ],
+      "id": "dsas-to"
+    },
+    "dst-to": {
+      "name": "Diretoria de Serviços Técnicos",
+      "abbreviation": "DST",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando de Atividades Técnicas",
+      "legalRef": "Art. 18, VI LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 18, VI (Diretoria de Serviços Técnicos)"
+      ],
+      "atribuicoes": [
+        "responsável pela coordenação da área de prevenção contra incêndio e emergência. (Art. 18, VI)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Serviços Técnicos",
+          "subordinadoA": "Comando de Atividades Técnicas",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação da área de prevenção contra incêndio e emergência (Art. 18, VI)."
+          ]
+        }
+      ],
+      "id": "dst-to"
+    },
+    "ag-to": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AjG",
+      "category": "Apoio",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 21, I LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 21, I (Ajudância Geral)"
+      ],
+      "atribuicoes": [
+        "subordinada ao Comandante-Geral, encarregada dos assuntos administrativos de segurança e manutenção das instalações físicas do Quartel do Comando Geral, considerado como Organização Bombeiro Militar - OBM e de apoio às unidades do Comando-Geral com pessoal auxiliar. (Art. 21, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assuntos administrativos de segurança e manutenção das instalações do Quartel do CG (Art. 21, I)."
+          ]
+        }
+      ],
+      "id": "ag-to"
+    },
+    "acad-to": {
+      "name": "Academia de Formação de Bombeiros",
+      "abbreviation": "AFBM",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino e Pesquisa",
+      "legalRef": "Art. 21, II LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 21, II (Academia de Formação de Bombeiros)"
+      ],
+      "atribuicoes": [
+        "subordinada à Diretoria de Ensino e Pesquisa, responsável pela formação, aperfeiçoamento, habilitação e especialização dos militares da Corporação e de coirmãs. (Art. 21, II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante da Academia",
+          "subordinadoA": "Diretoria de Ensino e Pesquisa",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Formação, aperfeiçoamento, habilitação e especialização dos militares do CBMTO (Art. 21, II)."
+          ]
+        }
+      ],
+      "id": "acad-to"
+    },
+    "ap-to": {
+      "name": "Assessoria Parlamentar",
+      "abbreviation": "AP",
+      "category": "Apoio",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 21, IV LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 21, IV (Assessoria Parlamentar)"
+      ],
+      "atribuicoes": [
+        "Assessoria Parlamentar, subordinada ao Comandante-Geral. (Art. 21, IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe da Assessoria Parlamentar",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento parlamentar ao Comandante-Geral (Art. 21, IV)."
+          ]
+        }
+      ],
+      "id": "ap-to"
+    },
+    "ubm-to": {
+      "name": "Unidades Bombeiro Militares",
+      "abbreviation": "UBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional Bombeiro Militar",
+      "legalRef": "Art. 23; Art. 24 LC 131/2021",
+      "baseLegal": "Lei Complementar nº 131, de 30 de setembro de 2021",
+      "artigosDeOrigem": [
+        "Art. 23 (Órgãos de Execução)",
+        "Art. 24 (UBMs)"
+      ],
+      "atribuicoes": [
+        "As Unidades Administrativas de Execução são constituídas pelas unidades operacionais e realizam as atividades-fim do CBMTO, executando as diretrizes e ordens emanadas das unidades de Direção, amparadas pelas Unidades de Apoio. (Art. 23)",
+        "As Unidades Administrativas de Execução, subordinadas ao Comando Operacional, são constituídas por Unidades Bombeiro Militares - UBM, encarregadas de executar as atividades-fim da Corporação em determinada área, conforme Plano de Articulação do CBMTO, podendo ser divididas em subunidades. (Art. 24)"
+      ],
+      "desdobramentos": [
+        "Batalhões",
+        "Companhias Independentes",
+        "Companhias Destacadas",
+        "Companhias Incorporadas",
+        "Pelotões",
+        "Grupos"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de UBM",
+          "subordinadoA": "Comando Operacional Bombeiro Militar",
+          "requisito": "Oficial QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Execução das atividades-fim da Corporação em determinada área (Art. 24)."
+          ]
+        }
+      ],
+      "id": "ubm-to"
+    }
+  }
+}

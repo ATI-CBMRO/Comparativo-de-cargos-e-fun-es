@@ -1,0 +1,720 @@
+{
+  "state_id": "pr",
+  "state_name": "Paraná",
+  "cbm_name": "Corpo de Bombeiros Militar do Paraná",
+  "cbm_abbreviation": "CBMPR",
+  "legal_source": "Lei nº 22.206, de 29 de novembro de 2024",
+  "organs": {
+    "comandante_geral": {
+      "name": "Comandante-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 10",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 10 (Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "Responsável superior pelo comando e pela administração geral do CBMPR",
+        "Precedência hierárquica e funcional sobre todos os Oficiais e Praças, exceto a precedência funcional em relação ao Coordenador Estadual da Defesa Civil"
+      ],
+      "desdobramentos": [
+        "Subcomandante-Geral",
+        "Estado-Maior",
+        "Gabinete do Comando-Geral",
+        "Consultoria Institucional",
+        "Corregedoria-Geral",
+        "Comissões"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [
+            "Subcomandante-Geral",
+            "Estado-Maior",
+            "Gabinete do Comando-Geral",
+            "Consultoria Institucional",
+            "Corregedoria-Geral"
+          ],
+          "atribuicoes": [
+            "Comando, administração e emprego geral da Corporação",
+            "Planejamento visando à organização da Corporação",
+            "Nomeação de bombeiros militares em funções de direção, comando e assessoramento",
+            "Precedência hierárquica e funcional sobre todos os Oficiais e Praças"
+          ]
+        }
+      ],
+      "id": "comandante_geral"
+    },
+    "subcomandante_geral": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 13",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 13 (Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "Substituto imediato do Comandante-Geral nos seus impedimentos, afastamentos temporários e/ou vacância",
+        "Exerce a função de coordenador operacional da Corporação"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituto imediato do Comandante-Geral",
+            "Coordenador operacional da Corporação"
+          ]
+        }
+      ],
+      "id": "subcomandante_geral"
+    },
+    "estado_maior": {
+      "name": "Estado-Maior",
+      "abbreviation": "EM",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 14",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 14 (Estado-Maior)"
+      ],
+      "atribuicoes": [
+        "Órgão de direção geral responsável pelo planejamento estratégico da Corporação",
+        "Elaboração de diretrizes e ordens do Comando-Geral no acionamento dos órgãos de direção setorial e de execução"
+      ],
+      "desdobramentos": [
+        "1ª Seção (BM/1): Pessoal e legislação",
+        "2ª Seção (BM/2): Inteligência",
+        "3ª Seção (BM/3): Planejamento, operações e estatística",
+        "4ª Seção (BM/4): Logística"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [
+            "1ª a 4ª Seção (BM/1 a BM/4)"
+          ],
+          "atribuicoes": [
+            "Planejamento estratégico da Corporação",
+            "Elaboração de diretrizes e ordens do Comando-Geral",
+            "Precedência sobre demais, exceto CG e SCG"
+          ]
+        },
+        {
+          "cargo": "1ª Seção (BM/1)",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Pessoal e legislação"
+          ]
+        },
+        {
+          "cargo": "2ª Seção (BM/2)",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessorar e manter o Comandante-Geral, o Subcomandante-Geral e o Chefe do Estado-Maior constantemente informados dos fatos, informes e informações que digam respeito ao Corpo de Bombeiros Militar do Paraná e às responsabilidades de inteligência e contrainteligência atribuídas à Corporação pelo Sistema Estadual de Inteligência de Segurança Pública, Sistema de Inteligência de Segurança Pública e pelo Sistema Brasileiro de Inteligência (Art. 3º, I)",
+            "Produzir conhecimento útil e oportuno necessários às decisões do Comandante-Geral, do Subcomandante-Geral e o Chefe do Estado-Maior, bem como aos estudos e planejamentos do Estado-Maior (II)"
+          ]
+        },
+        {
+          "cargo": "3ª Seção (BM/3)",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, operações e estatística"
+          ]
+        },
+        {
+          "cargo": "4ª Seção (BM/4)",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Logística da Corporação"
+          ]
+        }
+      ],
+      "id": "estado_maior"
+    },
+    "gabinete_cg": {
+      "name": "Gabinete do Comando-Geral",
+      "abbreviation": "Gab.CmtG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9, § 1º, I, d",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 9 (Estrutura)"
+      ],
+      "atribuicoes": [
+        "Apoio e assessoramento ao Comando-Geral"
+      ],
+      "desdobramentos": [
+        "Ajudância-Geral (AG)",
+        "Assessoria Estratégica (Assest)",
+        "Assessoria de Comunicação Organizacional (Assecom)",
+        "Secretaria do Comando-Geral (Sec.CmdoG)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior Combatente da ativa",
+          "desdobramentos": [
+            "Ajudância-Geral",
+            "Assessoria Estratégica",
+            "Assessoria de Comunicação Organizacional",
+            "Secretaria do Comando-Geral"
+          ],
+          "atribuicoes": [
+            "Assistência direta ao Comandante-Geral",
+            "Recepção, estudo e triagem de expedientes",
+            "Transmissão e controle da execução de ordens"
+          ]
+        }
+      ],
+      "id": "gabinete_cg"
+    },
+    "ajudancia_geral": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AG",
+      "category": "Apoio",
+      "subordinadoA": "Chefe de Gabinete",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 16 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "Organização, direção e supervisão do pessoal auxiliar de todos os órgãos do Comando-Geral",
+        "Direção e supervisão do efetivo da Banda de Música do CBMPR",
+        "Coordenação dos trabalhos de protocolo geral",
+        "Elaboração dos boletins-gerais",
+        "Manutenção e desenvolvimento do centro histórico"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Chefe de Gabinete",
+          "requisito": "Oficial",
+          "desdobramentos": [
+            "Banda de Música",
+            "Protocolo Geral",
+            "Arquivo Geral",
+            "Centro Histórico"
+          ],
+          "atribuicoes": [
+            "A Ajudância-Geral, subordinada ao Chefe de Gabinete, exercerá o apoio administrativo ao Comando-Geral (Art. 16)",
+            "A organização, a direção e a supervisão do pessoal auxiliar de todos os órgãos do Comando-Geral e do efetivo da Banda de Música do CBMPR (Art. 16, I, a e b)",
+            "A coordenação dos trabalhos de protocolo geral da Corporação (II)",
+            "O controle da entrada e retirada de processos e documentos do arquivo geral (III)",
+            "A elaboração dos boletins-gerais (IV)",
+            "O desenvolvimento das demais tarefas relacionadas com a segurança do aquartelamento e dos serviços gerais do Comando-Geral (V)",
+            "A promoção das atividades necessárias para a manutenção e desenvolvimento do centro histórico (VI)",
+            "Executar os trabalhos de protocolo, boletim geral, registro geral e outros (Portaria CG nº 022/2024, Art. 4º, I)",
+            "Manter atualizada a situação do efetivo do CCB, com base no QO em vigor, coordenando a coleta dos dados necessários (II)",
+            "Executar a administração financeira e o aprovisionamento do Quartel do Comando-Geral (QCG) (III)",
+            "Executar o apoio de pessoal aos órgãos do Comando-Geral (IV)",
+            "Preparar e distribuir o Boletim-Geral, providenciando para que um exemplar permaneça em arquivo (V)",
+            "Organizar e administrar o Arquivo Geral (VI)",
+            "Organizar e administrar o Centro Histórico (VII)",
+            "Organizar e manter atualizado nos sistemas os dados dos militares estaduais integrantes da Ajudância-Geral e daqueles que servem no QCG, para fins de acionamento e outros (VIII)",
+            "Executar a segurança e serviços gerais do QCG/CBMPR, bem como elaborar escalas de serviço para tal finalidade (IX)"
+          ]
+        }
+      ],
+      "id": "ajudancia_geral"
+    },
+    "assessoria_estrategica": {
+      "name": "Assessoria Estratégica",
+      "abbreviation": "Assest",
+      "category": "Apoio",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 17 (Assessoria Estratégica)"
+      ],
+      "atribuicoes": [
+        "Planejamento, implementação e monitoramento de projetos e ações institucionais",
+        "Gestão, monitoramento e controle da captação de recursos",
+        "Assessoramento nos assuntos de defesa civil",
+        "Coordenação do Serviço Integrado de Atendimento ao Trauma em Emergência (SIATE)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor Estratégico",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, implementação e monitoramento de projetos institucionais",
+            "Gestão e controle da captação de recursos",
+            "Assessoramento em defesa civil; coordenação do SIATE"
+          ]
+        }
+      ],
+      "id": "assessoria_estrategica"
+    },
+    "assessoria_comunicacao": {
+      "name": "Assessoria de Comunicação Organizacional",
+      "abbreviation": "Assecom",
+      "category": "Apoio",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 18 (Assecom)"
+      ],
+      "atribuicoes": [
+        "Comunicação social, campanhas de educação preventiva e assessoria de imprensa",
+        "Organização de solenidades na sede do CBMPR"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor de Comunicação Organizacional",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comunicação social, campanhas de educação preventiva e assessoria de imprensa",
+            "Organização de solenidades e eventos"
+          ]
+        }
+      ],
+      "id": "assessoria_comunicacao"
+    },
+    "consultoria_institucional": {
+      "name": "Consultoria Institucional",
+      "abbreviation": "CI",
+      "category": "Apoio",
+      "subordinadoA": "Comandante-Geral e Subcomandante-Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 20 (Consultoria Institucional)"
+      ],
+      "atribuicoes": [
+        "Estudo de questões de direito da política de administração geral da Corporação",
+        "Exames de aspectos de legalidade dos atos e normas",
+        "Orientação quanto ao cumprimento de decisões e sentenças judiciais",
+        "Análise de minutas de convênios"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Consultor Institucional",
+          "subordinadoA": "Comandante-Geral e Subcomandante-Geral",
+          "requisito": "Oficial com formação jurídica",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Estudo de questões de direito da administração geral",
+            "Exame de legalidade dos atos e normas",
+            "Orientação quanto ao cumprimento de decisões judiciais",
+            "Análise de minutas e convênios"
+          ]
+        }
+      ],
+      "id": "consultoria_institucional"
+    },
+    "comissoes": {
+      "name": "Comissões",
+      "abbreviation": "CPO/CPP/CM",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 21",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 21 (Comissões)"
+      ],
+      "atribuicoes": [
+        "Caráter permanente ou temporário conforme necessidade"
+      ],
+      "desdobramentos": [
+        "Comissão de Promoções de Oficiais (CPO)",
+        "Comissão de Promoções de Praças (CPP)",
+        "Comissão de Mérito (CM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comissão de Promoções de Oficiais (CPO)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronéis e Oficiais",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Controle, avaliação e processamento das promoções de oficiais"
+          ]
+        },
+        {
+          "cargo": "Comissão de Promoções de Praças (CPP)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficiais e Praças",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Controle, avaliação e processamento das promoções de praças"
+          ]
+        },
+        {
+          "cargo": "Comissão de Mérito (CM)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficiais",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Apreciação do mérito; proposta de outorga de medalhas e condecorações"
+          ]
+        }
+      ],
+      "id": "comissoes"
+    },
+    "corregedoria_geral": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "Coger",
+      "category": "Direção Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Arts. 23-26 (Corregedoria-Geral)"
+      ],
+      "atribuicoes": [
+        "Assegurar a correta aplicação da lei",
+        "Padronizar os procedimentos de Polícia Judiciária Militar e processos administrativos",
+        "Realizar correições, fiscalizações e preservar hierarquia e disciplina",
+        "Apuração de crimes militares, fatos administrativos e faltas disciplinares",
+        "Cumprir mandados de prisão e alvarás de soltura de integrantes da Corporação"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [
+            "Comissão Disciplinar Geral",
+            "Comissão de Recurso"
+          ],
+          "atribuicoes": [
+            "Assegurar a correta aplicação da lei; padronizar a Polícia Judiciária Militar",
+            "Realizar correições, inspeções e fiscalizações",
+            "Apuração de crimes militares, fatos administrativos e faltas disciplinares"
+          ]
+        }
+      ],
+      "id": "corregedoria_geral"
+    },
+    "diretoria_pessoal": {
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 28 (Diretoria de Pessoal)"
+      ],
+      "atribuicoes": [
+        "Desenvolvimento, coordenação, fiscalização e controle das atividades de classificação e movimentação de pessoal",
+        "Inativos, cadastro, avaliação, folha de pagamento, identificação e recrutamento",
+        "Serviços de saúde física e mental, assistência social e psicológica"
+      ],
+      "desdobramentos": [
+        "Centro de Recrutamento e Seleção (CRS)",
+        "Centro de Saúde (CS)",
+        "Centro de Educação Física e Desporto (CEFID)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [
+            "Centro de Recrutamento e Seleção",
+            "Centro de Saúde",
+            "Centro de Educação Física e Desporto"
+          ],
+          "atribuicoes": [
+            "Desenvolvimento, coordenação, fiscalização e controle das atividades de pessoal",
+            "Acompanhamento de saúde física e mental"
+          ]
+        }
+      ],
+      "id": "diretoria_pessoal"
+    },
+    "diretoria_apoio_logistico": {
+      "name": "Diretoria de Apoio Logístico e Finanças",
+      "abbreviation": "DALF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 29",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 29 (DALF)"
+      ],
+      "atribuicoes": [
+        "Coordenação, controle e execução das atividades de logística, suprimento, manutenção e controle patrimonial",
+        "Planejamento, acompanhamento e execução orçamentária e financeira",
+        "Controladoria e auditoria de recursos descentralizados"
+      ],
+      "desdobramentos": [
+        "Centro de Planejamento e Compras (CPC)",
+        "Centro de Administração Logística (CAL)",
+        "Centro de Orçamento e Finanças (COF)",
+        "Centro de Suprimento e Manutenção (CSM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Apoio Logístico e Finanças",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [
+            "Centro de Planejamento e Compras",
+            "Centro de Administração Logística",
+            "Centro de Orçamento e Finanças",
+            "Centro de Suprimento e Manutenção"
+          ],
+          "atribuicoes": [
+            "Coordenação, controle e execução de logística, suprimento e patrimônio",
+            "Execução orçamentária e financeira; controladoria e auditoria"
+          ]
+        }
+      ],
+      "id": "diretoria_apoio_logistico"
+    },
+    "diretoria_atividades_tecnicas": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 30 (DAT)"
+      ],
+      "atribuicoes": [
+        "Coordenação, controle e assessoramento sobre prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos",
+        "Gerenciamento normativo, estudos e pesquisa de incêndios",
+        "Tecnologia da informação e comunicação"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenação e assessoramento em prevenção e combate a incêndios e desastres",
+            "Gerenciamento normativo e estudos de incêndios",
+            "Tecnologia da informação e comunicação"
+          ]
+        }
+      ],
+      "id": "diretoria_atividades_tecnicas"
+    },
+    "escola_superior": {
+      "name": "Escola Superior de Bombeiro Militar",
+      "abbreviation": "ESBM",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 31",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 31 (ESBM)"
+      ],
+      "atribuicoes": [
+        "Planejamento, coordenação, fiscalização, execução e controle das atividades de ensino",
+        "Atuação em parceria com outras instituições"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor da Escola Superior de Bombeiro Militar",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, coordenação, fiscalização e execução das atividades de ensino"
+          ]
+        }
+      ],
+      "id": "escola_superior"
+    },
+    "comando_regional": {
+      "name": "Comando Regional de Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Execução",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 35",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 35 (CRBM)"
+      ],
+      "atribuicoes": [
+        "Escalões intermediários de comando",
+        "Desenvolver ações operacionais estratégicas",
+        "Propor a distribuição do efetivo",
+        "Auxílio, fiscalização e gestão logística das unidades subordinadas"
+      ],
+      "desdobramentos": [
+        "Batalhões de Bombeiro Militar (BBM)",
+        "Companhias Independentes de Bombeiro Militar (Cia. Ind. BM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Regional de Bombeiro Militar (CRBM)",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel Combatente da ativa",
+          "desdobramentos": [
+            "Batalhões",
+            "Companhias Independentes"
+          ],
+          "atribuicoes": [
+            "Escalão intermediário de comando",
+            "Ações operacionais estratégicas; distribuição de efetivo",
+            "Auxílio, fiscalização e gestão logística das unidades subordinadas"
+          ]
+        }
+      ],
+      "id": "comando_regional"
+    },
+    "batalhao": {
+      "name": "Batalhão de Bombeiro Militar",
+      "abbreviation": "BBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Regional",
+      "legalRef": "Art. 38, I",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 38, I (BBM)"
+      ],
+      "atribuicoes": [
+        "Coordenar e executar as atividades de defesa civil",
+        "Exercer o poder de polícia administrativa de prevenção a incêndios e desastres",
+        "Combater incêndios e desastres",
+        "Realizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar"
+      ],
+      "desdobramentos": [
+        "Companhias de Bombeiro Militar (Cia. BM)",
+        "Pelotões de Bombeiro Militar (Pel. BM)",
+        "Grupos de Bombeiro Militar (Gp. BM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Batalhão de Bombeiro Militar (BBM)",
+          "subordinadoA": "Comando Regional",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [
+            "Companhias",
+            "Pelotões",
+            "Grupos"
+          ],
+          "atribuicoes": [
+            "Coordenação e execução de defesa civil",
+            "Combate a incêndios e desastres; buscas, salvamentos, socorros e atendimento pré-hospitalar"
+          ]
+        }
+      ],
+      "id": "batalhao"
+    },
+    "companhia_independente": {
+      "name": "Companhia Independente de Bombeiro Militar",
+      "abbreviation": "Cia. Ind. BM",
+      "category": "Execução",
+      "subordinadoA": "Comando Regional",
+      "legalRef": "Art. 38, II",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 38, II (Cia. Ind. BM)"
+      ],
+      "atribuicoes": [
+        "Mesmas atribuições do Batalhão de Bombeiro Militar em áreas de menores dimensões não incluídas na circunscrição daquele"
+      ],
+      "desdobramentos": [
+        "Pelotões de Bombeiro Militar (Pel. BM)",
+        "Grupos de Bombeiro Militar (Gp. BM)"
+      ],
+      "cargos": [],
+      "id": "companhia_independente"
+    },
+    "gost": {
+      "name": "Grupo de Operações de Socorro Tático",
+      "abbreviation": "GOST",
+      "category": "Execução",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 38, III",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 38, III (GOST)"
+      ],
+      "atribuicoes": [
+        "Executar a missão especializada de socorro tático",
+        "Ações de atendimento às emergências ambientais e a sinistros decorrentes de desastres",
+        "Atividades de busca e salvamento, inclusive com cães",
+        "Organizar e manter o canil central"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Grupo de Operações de Socorro Tático (GOST)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Equivalente a Companhia Independente",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Missão especializada de socorro tático",
+            "Emergências ambientais e defesa civil; busca e salvamento com cães"
+          ]
+        }
+      ],
+      "id": "gost"
+    },
+    "uoa": {
+      "name": "Unidade de Operações Aéreas",
+      "abbreviation": "UOA",
+      "category": "Execução",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 38, IV",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024",
+      "artigosDeOrigem": [
+        "Art. 38, IV (UOA)"
+      ],
+      "atribuicoes": [
+        "Atender e apoiar ações de busca, resgate e salvamento em áreas urbanas, rurais, rodovias, matas, florestas, montanhas, rios, lagos e mar",
+        "Atuar em missões de apoio à defesa civil",
+        "Apoiar órgãos que necessitem do emprego de aeronaves"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Unidade de Operações Aéreas (UOA)",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial Superior",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Busca, resgate e salvamento aéreo",
+            "Missões de apoio à defesa civil e a órgãos públicos"
+          ]
+        }
+      ],
+      "id": "uoa"
+    }
+  }
+}

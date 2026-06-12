@@ -1,0 +1,544 @@
+{
+  "state_id": "ms",
+  "state_name": "Mato Grosso do Sul",
+  "cbm_name": "Corpo de Bombeiros Militar do Mato Grosso do Sul",
+  "cbm_abbreviation": "CBMMS",
+  "legal_source": "Lei Complementar nº 188/2014 (alt. LC 205/2015 e LC 323/2023)",
+  "organs": {
+    "comando-geral-ms": {
+      "name": "Comando Geral do CBMMS",
+      "abbreviation": "CG",
+      "category": "Direção Superior",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 7-8",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Arts. 7-8 (Comando Geral)"
+      ],
+      "atribuicoes": [
+        "Responsável superior pelo comando, administração e emprego da Corporação",
+        "Assessoria ao Governador e Secretário de Segurança Pública",
+        "Presidência da Comissão de Promoção de Oficiais (CPO)"
+      ],
+      "desdobramentos": [
+        "Subcomando Geral",
+        "Estado-Maior-Geral",
+        "Corregedoria",
+        "Diretorias",
+        "Grandes Comandos"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel QOBM (último posto)",
+          "desdobramentos": [
+            "Gabinete",
+            "Comissões",
+            "Assessorias"
+          ],
+          "atribuicoes": [
+            "Responsável superior pelo comando, administração e emprego",
+            "Dirigir atividades técnicas, operacionais e administrativas",
+            "Baixar portarias, diretrizes, planos e ordens",
+            "Presidir a Comissão de Promoção de Oficiais",
+            "Nomear e exonerar oficiais em funções de comando"
+          ]
+        }
+      ],
+      "id": "comando-geral-ms"
+    },
+    "subcomando-geral-ms": {
+      "name": "Subcomando Geral do CBMMS",
+      "abbreviation": "SCG",
+      "category": "Direção Superior",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Arts. 7-8",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Arts. 7-8 (Subcomando Geral)"
+      ],
+      "atribuicoes": [
+        "Auxiliar direto do Comandante-Geral",
+        "Estudo, planejamento, coordenação, fiscalização e controle de atividades",
+        "Presidência da Comissão de Promoção de Praças (CPP)",
+        "Coordenador operacional da Corporação"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM (penúltimo posto)",
+          "desdobramentos": [
+            "Gabinete do Subcomandante",
+            "Diretorias"
+          ],
+          "atribuicoes": [
+            "Auxiliar diretamente o Comandante-Geral",
+            "Zelar pela disciplina, hierarquia e ética",
+            "Presidir a Comissão de Promoção de Praças",
+            "Exercer função de coordenador operacional"
+          ]
+        }
+      ],
+      "id": "subcomando-geral-ms"
+    },
+    "emg-ms": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Arts. 11-14",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Arts. 11-14 (EMG)"
+      ],
+      "atribuicoes": [
+        "Planejamento, orientação, coordenação e fiscalização da gestão administrativa",
+        "Elaboração de diretrizes e ordens do Comando"
+      ],
+      "desdobramentos": [
+        "1ª Seção (BM-1): Pessoal e Legislação",
+        "2ª Seção (BM-2): Inteligência",
+        "3ª Seção (BM-3): Instrução, Operação, Ensino, Estatística e Meio Ambiente",
+        "4ª Seção (BM-4): Logística, Patrimônio e Informática",
+        "5ª Seção (BM-5): Comunicação Social",
+        "6ª Seção (BM-6): Planejamento Administrativo, Orçamentário e Financeiro",
+        "7ª Seção (BM-7): Proteção contra Incêndio, Pânico e Outros Riscos"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Seções BM-1 a BM-7"
+          ],
+          "atribuicoes": [
+            "Assessor direto do Comandante-Geral",
+            "Dirigir, orientar, coordenar e fiscalizar o trabalho do EMG"
+          ]
+        },
+        {
+          "cargo": "Chefe da 1ª Seção (BM-1)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Pessoal e legislação"
+          ]
+        },
+        {
+          "cargo": "Chefe da 2ª Seção (BM-2)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Inteligência"
+          ]
+        },
+        {
+          "cargo": "Chefe da 3ª Seção (BM-3)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Instrução, operação, ensino, estatística e meio ambiente"
+          ]
+        },
+        {
+          "cargo": "Chefe da 4ª Seção (BM-4)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Logística, patrimônio e informática"
+          ]
+        },
+        {
+          "cargo": "Chefe da 5ª Seção (BM-5)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comunicação social"
+          ]
+        },
+        {
+          "cargo": "Chefe da 6ª Seção (BM-6)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento administrativo, orçamentário e financeiro"
+          ]
+        },
+        {
+          "cargo": "Chefe da 7ª Seção (BM-7)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Proteção contra incêndio, pânico e outros riscos"
+          ]
+        }
+      ],
+      "id": "emg-ms"
+    },
+    "corregedoria-ms": {
+      "name": "Corregedoria",
+      "abbreviation": "Correg",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "LC nº 188/2014",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "LC nº 188/2014"
+      ],
+      "atribuicoes": [
+        "Preservação da disciplina, hierarquia e ética",
+        "Apuração de fatos envolvendo responsabilidade penal, administrativa e disciplinar",
+        "Exercício do poder disciplinar e de polícia judiciária militar"
+      ],
+      "desdobramentos": [
+        "Gabinete do Corregedor",
+        "Gabinete do Corregedor-Adjunto",
+        "Cartório",
+        "Seção Administrativa",
+        "Seção de Justiça e Disciplina",
+        "Conselho Permanente de Disciplina",
+        "Ouvidoria",
+        "Seção de Inteligência",
+        "Patrulha Disciplinar Ostensiva"
+      ],
+      "cargos": [
+        {
+          "cargo": "Corregedor",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Gabinete do Corregedor",
+            "Cartório",
+            "Seção de Justiça e Disciplina",
+            "Conselho Permanente de Disciplina",
+            "Ouvidoria",
+            "Seção de Inteligência",
+            "Patrulha Disciplinar Ostensiva"
+          ],
+          "atribuicoes": [
+            "Preservação da disciplina, hierarquia e ética",
+            "Apuração de fatos envolvendo responsabilidade penal, administrativa e disciplinar",
+            "Poder disciplinar e polícia judiciária militar"
+          ]
+        }
+      ],
+      "id": "corregedoria-ms"
+    },
+    "diretoria-pessoal-ms": {
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 17 (DP)"
+      ],
+      "atribuicoes": [
+        "Estudo, planejamento, orientação normativa e coordenação de gestão de pessoal",
+        "Supervisão, controle e execução de atividades de desenvolvimento de RH"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Pessoal",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Subdiretor",
+            "Chefes de Seção"
+          ],
+          "atribuicoes": [
+            "Planejamento, orientação normativa e coordenação de gestão de pessoal"
+          ]
+        }
+      ],
+      "id": "diretoria-pessoal-ms"
+    },
+    "diretoria-apoio-ms": {
+      "name": "Diretoria de Apoio Logístico",
+      "abbreviation": "DAL",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 18 (DAL)"
+      ],
+      "atribuicoes": [
+        "Estudo, planejamento e orientação de gestão de material, patrimônio e informática"
+      ],
+      "desdobramentos": [
+        "Centro de Suprimento e Manutenção (CSM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Apoio Logístico",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Centro de Suprimento e Manutenção"
+          ],
+          "atribuicoes": [
+            "Gestão de material, patrimônio e informática"
+          ]
+        }
+      ],
+      "id": "diretoria-apoio-ms"
+    },
+    "diretoria-financas-ms": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 19",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 19 (DF)"
+      ],
+      "atribuicoes": [
+        "Estudo, planejamento e orientação de gestão financeira",
+        "Planejamento e execução orçamentária, contabilidade e auditoria"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão financeira, orçamentária, contabilidade e auditoria"
+          ]
+        }
+      ],
+      "id": "diretoria-financas-ms"
+    },
+    "diretoria-atividades-tecnicas-ms": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 20 (DAT)"
+      ],
+      "atribuicoes": [
+        "Normatização, estudo, análise e planejamento das atividades preventivas",
+        "Orientação técnica, controle e fiscalização",
+        "Aplicação de normas de segurança contra incêndio"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Normatização, estudo, análise e planejamento de atividades preventivas e de segurança contra incêndio"
+          ]
+        }
+      ],
+      "id": "diretoria-atividades-tecnicas-ms"
+    },
+    "deipe-ms": {
+      "name": "Diretoria de Ensino, Instrução, Pesquisa e Educação",
+      "abbreviation": "DEIPE",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 21",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 21 (DEIPE)",
+        "Art. 39 (ABM)"
+      ],
+      "atribuicoes": [
+        "Administração do Ensino, Instrução, Pesquisa e Educação Bombeiro-Militar",
+        "Formação superior, profissional, pós-graduação e aperfeiçoamento"
+      ],
+      "desdobramentos": [
+        "Academia de Bombeiros Militar (ABM)",
+        "Escola Superior de Bombeiros (EsBom)",
+        "Centro de Formação, Aperfeiçoamento e Especialização (CFAE)",
+        "Centro de Instrução Especializada (CIEB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino, Instrução, Pesquisa e Educação",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Academia de Bombeiros Militar",
+            "Escolas Militares"
+          ],
+          "atribuicoes": [
+            "Administração do ensino, instrução, pesquisa e educação bombeiro-militar"
+          ]
+        }
+      ],
+      "id": "deipe-ms"
+    },
+    "diretoria-saude-ms": {
+      "name": "Diretoria de Saúde",
+      "abbreviation": "DS",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 22 (DS)"
+      ],
+      "atribuicoes": [
+        "Gestão, planejamento, coordenação, fiscalização de atividades de emergência",
+        "Assistência social, religiosa, psicológica e saúde geral"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Saúde",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Atividades de saúde e atendimento pré-hospitalar"
+          ]
+        }
+      ],
+      "id": "diretoria-saude-ms"
+    },
+    "diretoria-telematica-ms": {
+      "name": "Diretoria de Telemática e Estatística",
+      "abbreviation": "DTel",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 23 (DTel)"
+      ],
+      "atribuicoes": [
+        "Implementação, coordenação e controle de sistemas de tecnologia da informação",
+        "Estudos estatísticos"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Telemática e Estatística",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Sistemas de tecnologia da informação e estatística"
+          ]
+        }
+      ],
+      "id": "diretoria-telematica-ms"
+    },
+    "diretoria-ambiental-ms": {
+      "name": "Diretoria de Proteção Ambiental",
+      "abbreviation": "DPA",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 23-A (LC 323/2023)",
+      "baseLegal": "Lei Complementar nº 188/2014; LC 323/2023",
+      "artigosDeOrigem": [
+        "Art. 23-A (DPA)"
+      ],
+      "atribuicoes": [
+        "Planejamento, execução, orientação normativa, supervisão e controle das atividades de proteção ambiental"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Proteção Ambiental",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento e execução de atividades de proteção ambiental"
+          ]
+        }
+      ],
+      "id": "diretoria-ambiental-ms"
+    },
+    "diretoria-inteligencia-ms": {
+      "name": "Diretoria de Inteligência",
+      "abbreviation": "DIntel",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 23-B (LC 323/2023)",
+      "baseLegal": "Lei Complementar nº 188/2014; LC 323/2023",
+      "artigosDeOrigem": [
+        "Art. 23-B (DIntel)"
+      ],
+      "atribuicoes": [
+        "Políticas referentes ao sistema de gestão de Inteligência",
+        "Gerenciamento, fiscalização e controle de material bélico"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor de Inteligência",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Sistema de gestão de inteligência; controle de material bélico"
+          ]
+        }
+      ],
+      "id": "diretoria-inteligencia-ms"
+    },
+    "cmb-ms": {
+      "name": "Comando Metropolitano de Bombeiros",
+      "abbreviation": "CMB",
+      "category": "Execução",
+      "subordinadoA": "Subcomando Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei Complementar nº 188/2014",
+      "artigosDeOrigem": [
+        "Art. 24 (CMB)"
+      ],
+      "atribuicoes": [
+        "Planejamento, coordenação, fiscalização e controle de atividades operacionais",
+        "Acompanhamento direto de atividades de prevenção na capital"
+      ],
+      "desdobramentos": [
+        "Comando de Bombeiros de Divisas (CBDiv)",
+        "Comando de Bombeiros de Fronteiras (CBFron)",
+        "Comando de Bombeiros de Atividades Especializadas (CBEsp)",
+        "Comando de Operações do CBM (COCB)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Metropolitano de Bombeiros (CMB)",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "CBDiv",
+            "CBFron",
+            "CBEsp",
+            "COCB"
+          ],
+          "atribuicoes": [
+            "Planejamento, coordenação e fiscalização de atividades operacionais e prevenção na capital"
+          ]
+        }
+      ],
+      "id": "cmb-ms"
+    }
+  }
+}

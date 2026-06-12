@@ -1,0 +1,1021 @@
+{
+  "state_id": "pi",
+  "state_name": "Piauí",
+  "cbm_name": "Corpo de Bombeiros Militar do Piauí",
+  "cbm_abbreviation": "CBMPI",
+  "legal_source": "Lei nº 5.949, de 17 de dezembro de 2009 (alterada pela Lei nº 7.772, de 04 de abril de 2022)",
+  "organs": {
+    "cg-pi": {
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 7, 13",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 7 (Órgãos de Direção Geral)",
+        "Art. 13 (cargo de Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O cargo de Comandante-Geral do Corpo de Bombeiros Militar do Estado do Piauí é privativo de oficial do último posto da Corporação, integrante do Quadro de Oficiais Bombeiros Militar Combatentes a ser nomeado pelo Governador do Estado. (Art. 13, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante-Geral",
+        "Subcomandante-Geral",
+        "Alto Comando"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial do último posto da Corporação (QOBMC)",
+          "desdobramentos": [
+            "Subcomandante-Geral",
+            "Alto Comando",
+            "Gabinete",
+            "Assessorias"
+          ],
+          "atribuicoes": [
+            "Comando, gestão, emprego, supervisão e coordenação das atividades",
+            "Presidência do Alto Comando e da Comissão de Promoção de Oficiais"
+          ]
+        },
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do último posto (QOBMC)",
+          "desdobramentos": [
+            "Chefe do Estado-Maior-Geral"
+          ],
+          "atribuicoes": [
+            "Substituto imediato do Comandante-Geral",
+            "Acúmulo da função de Chefe do Estado-Maior-Geral"
+          ]
+        }
+      ],
+      "id": "cg-pi"
+    },
+    "scg-pi": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 14, 15",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 14 (atribuições do SCG)",
+        "Art. 15 (cargo de SCG)"
+      ],
+      "atribuicoes": [
+        "O Subcomandante-Geral do Corpo de Bombeiro Militar do Estado do Piauí, acumula a função de Chefe do Estado-Maior-Geral, sendo o substituto imediato do Comandante-Geral, cumprindo-lhe substituí-lo em suas faltas ou impedimentos e desempenhar outras atribuições previstas em leis ou regulamentos, ou mediante expressa delegação do Comandante-Geral. (Art. 14, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel do Quadro de Oficiais Bombeiros Militar Combatentes — seu substituto em faltas ou impedimentos é o coronel mais antigo do mesmo quadro (Art. 15, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Acumula a função de Chefe do Estado-Maior-Geral; substituto imediato do CG (Art. 14, 7.772)"
+          ]
+        }
+      ],
+      "id": "scg-pi"
+    },
+    "alto-comando-pi": {
+      "name": "Alto Comando",
+      "abbreviation": "AC",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 16 (Alto Comando)",
+        "Art. 16 §2° I–VIII (pautas deliberativas)"
+      ],
+      "atribuicoes": [
+        "I - emprego de pessoal;",
+        "II - ensino e instrução;",
+        "III - controle interno;",
+        "IV - disciplina;",
+        "V - legislação;",
+        "VI - projetos e convênios;",
+        "VII - processos de promoções em grau de recurso;",
+        "VIII - outros assuntos de interesse da Corporação. (Art. 16 §2° I–VIII, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Presidente: Comandante-Geral",
+        "Vice-presidente: Subcomandante-Geral",
+        "Diretor de Gestão de Pessoas",
+        "Diretor de Ensino, Instrução e Pesquisa",
+        "Diretor Administrativo e Financeiro",
+        "Comandante Operacional de Bombeiros",
+        "Secretaria"
+      ],
+      "cargos": [
+        {
+          "cargo": "Alto Comando (Órgão Colegiado Deliberativo)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronéis da ativa",
+          "desdobramentos": [
+            "Membros natos (SCG, Diretores, Cmt. Operacional)",
+            "Secretaria"
+          ],
+          "atribuicoes": [
+            "Colaboração no processo decisório em assuntos de relevância",
+            "Decisões sobre pessoal, ensino, disciplina, legislação, projetos e promoções em grau de recurso"
+          ]
+        }
+      ],
+      "id": "alto-comando-pi"
+    },
+    "emg-pi": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Assessoramento",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 28-A",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 28-A (EMG — acrescido pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior-Geral, encarregado da elaboração das diretrizes e ordens do comando, tem por missão o estudo, o planejamento, a coordenação, a programação orçamentária e financeira e o controle de todas as atividades da Corporação, por intermédio dos órgãos de direção setorial, de apoio e de execução, no exercício de suas competências, em conformidade com as decisões e diretrizes do Comandante-Geral do Corpo de Bombeiros Militar do Estado do Piaui. (Art. 28-A, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Chefe do Estado-Maior-Geral (Ch EMG)",
+        "Subchefe do Estado-Maior-Geral (Sub Ch EMG)",
+        "Secretaria",
+        "1ª Seção — SEPLO",
+        "2ª Seção — SEICI",
+        "3ª Seção — SECPT",
+        "4ª Seção — SEGEL",
+        "5ª Seção — SERPACS"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Acumulado pelo Subcomandante-Geral (Art. 14, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefia do EMG acumulada pelo SCG (Art. 14, 7.772)"
+          ]
+        }
+      ],
+      "id": "emg-pi"
+    },
+    "gcg-pi": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GAB.CBMT",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 23 (Gabinete do Comando Geral)"
+      ],
+      "atribuicoes": [
+        "Ao Gabinete do Comando Geral compete acompanhar os trabalhos das assessorias e comissões de caráter temporário, assessorar o Comandante Geral nos assuntos de controle interno, produzir informações estratégicas com vistas ao preparo e emprego do Corpo de Bombeiros Militar e desempenhar as funções de apoio administrativo, serviços gerais e os trabalhos de secretaria do comando geral. (Art. 23, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Comissão de Promoções de Oficiais",
+        "Ajudante de Ordens",
+        "Ouvidoria",
+        "Assessoria Técnica III",
+        "Assessoria Técnica II",
+        "Assistência de Serviços II",
+        "Seção de Arquivo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete do Comandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do CBMEPI — o Chefe de Gabinete do CG é o Secretário do Alto Comando (Art. 16 §1°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessora o CG nos assuntos de controle interno e produz informações estratégicas (Art. 23, 5.949)"
+          ]
+        }
+      ],
+      "id": "gcg-pi"
+    },
+    "gab-scg-pi": {
+      "name": "Gabinete do Subcomandante-Geral",
+      "abbreviation": "GAB.SUBCMT",
+      "category": "Assessoramento",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 24 (Gabinete do Subcomando-Geral)"
+      ],
+      "atribuicoes": [
+        "Ao Gabinete do Subcomando-Geral compete assessorar o Subcomandante Geral nos assuntos relativos à justiça e disciplina bem como supervisionar os serviços diários desenvolvidos pela Corporação. (Art. 24, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Comissão de Promoções de Praças",
+        "Ajudante de Ordens",
+        "Assessor Técnico II",
+        "Assessor Técnico I",
+        "Assistência de Serviços I"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete do Subcomandante-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessora o SCG nos assuntos de justiça e disciplina e supervisiona os serviços diários da Corporação (Art. 24, 5.949)"
+          ]
+        }
+      ],
+      "id": "gab-scg-pi"
+    },
+    "nee-pi": {
+      "name": "Núcleo de Estudos Estratégicos",
+      "abbreviation": "NEE",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 25 (NEE)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Estudos Estratégicos é o órgão encarregado da realização de estudos em todas as áreas de atuação da Corporação, com vistas à permanente construção de um sistema de segurança pública na área de bombeiros e de defesa civil capaz de responder às demandas da sociedade. (Art. 25, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Adjunto",
+        "Coordenação de Projetos",
+        "Seção de Estatística",
+        "Seção de Estudos Prospectivos"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Estudos Estratégicos",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Realização de estudos estratégicos em todas as áreas de atuação da Corporação (Art. 25, 5.949)"
+          ]
+        }
+      ],
+      "id": "nee-pi"
+    },
+    "ndc-pi": {
+      "name": "Núcleo de Defesa Civil",
+      "abbreviation": "NDC",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 26 (NDC — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Defesa Civil é órgão de assessoramento do Comando Operacional de Bombeiros responsável pelo planejamento e execução de atividades de defesa civil na área de competência do Corpo de Bombeiros. (Art. 26, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Seção de Defesa Civil da Capital",
+        "Seção de Defesa Civil do Interior"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Defesa Civil",
+          "subordinadoA": "Comandante Operacional de Bombeiros",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento e execução de atividades de defesa civil na área de competência do CBM (Art. 26, 7.772)"
+          ]
+        }
+      ],
+      "id": "ndc-pi"
+    },
+    "ajg-pi": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AJG",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 27",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 27 (AJG — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "A Ajudância Geral, subordinada diretamente ao Comandante Geral, compete a publicação dos atos administrativos, recepção de correspondências, assim como auxiliar nas funções de administração, conservação e segurança das instalações do Quartel do Comando Geral (QCG), considerado como Organização de Bombeiros Militar. (Art. 27, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Ajudante-Geral",
+        "Secretaria Administrativa",
+        "Seção de Comando, Serviços e Segurança (SCS)",
+        "Seção de Arquivo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Publicação dos atos administrativos, recepção de correspondências e funções de administração, conservação e segurança do QCG (Art. 27, 7.772)"
+          ]
+        }
+      ],
+      "id": "ajg-pi"
+    },
+    "nci-pi": {
+      "name": "Núcleo de Controle Interno",
+      "abbreviation": "NCI",
+      "category": "Assessoramento",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 28 (NCI)"
+      ],
+      "atribuicoes": [
+        "Ao Núcleo de Controle Interno compete acompanhar a implementação, pelos órgãos e suas unidades administrativas, das recomendações da Procuradoria Geral do Estado, da Controladoria-Geral do Estado e do Tribunal de Contas do Estado. (Art. 28, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Coordenador",
+        "Auxiliares"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Controle Interno",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Acompanha implementação das recomendações da PGE, CGE e TCE (Art. 28, 5.949)"
+          ]
+        }
+      ],
+      "id": "nci-pi"
+    },
+    "dgp-pi": {
+      "name": "Diretoria de Gestão de Pessoas",
+      "abbreviation": "DGP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 17, 18",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 17 (competência geral das Diretorias)",
+        "Art. 18 (DGP)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Gestão de Pessoas, órgão de direção setorial do sistema de pessoal, incumbe-se do planejamento, da coordenação, da execução, do controle, e da fiscalização das atividades relacionadas à pessoal. (Art. 18, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Seção de Folha e Cadastro (DGP-1)",
+        "Seção de Promoções e Movimentações (DGP-2)",
+        "Seção de Identificação e Ingresso (DGP-3)",
+        "Seção de Inativos e Pensionistas (DGP-4)",
+        "Seção de Atos (DGP-5)",
+        "Seção de Justiça e Disciplina (DGP-6)",
+        "Núcleo de Voluntários da Reserva Remunerada"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão de Pessoas",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do sistema de pessoal (Art. 18, 7.772)"
+          ]
+        }
+      ],
+      "id": "dgp-pi"
+    },
+    "daf-pi": {
+      "name": "Diretoria Administrativa e Financeira",
+      "abbreviation": "DAF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 17, 19",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 17 (competência geral das Diretorias)",
+        "Art. 19 (DAF)"
+      ],
+      "atribuicoes": [
+        "A Diretoria Administrativa e Financeira, o órgão de direção setorial responsável pelo funcionamento do sistema de administração financeira, programação, orçamento, contabilidade, incumbindo ainda o estudo, o planejamento, a orientação normativa, a coordenação, supervisão, o controle e a execução das atividades relativas à gestão do material e patrimônio da corporação. (Art. 19, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa Financeira (DAF-1)",
+        "Seção de Orçamento, Compras e Contabilidade (DAF-2)",
+        "Seção de Cadastro, Controle e Alienação do Patrimônio (DAF-3)",
+        "Seção de Administração de Frota (DAF-4)",
+        "Seção de Controle de Armas e Munições (DAF-5)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Administrativo e Financeiro",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do sistema de administração financeira e gestão do material e patrimônio (Art. 19, 7.772)"
+          ]
+        }
+      ],
+      "id": "daf-pi"
+    },
+    "deip-pi": {
+      "name": "Diretoria de Ensino, Instrução e Pesquisa",
+      "abbreviation": "DEIP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 17, 20",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 17 (competência geral das Diretorias)",
+        "Art. 20 (DEIP)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Ensino, Instrução e Pesquisa, o órgão de direção setorial do sistema de ensino e instrução, incumbe-se do planejamento, da coordenação, do controle e da fiscalização de todas as atividades de formação, aperfeiçoamento e especialização, nos diferentes níveis do ensino, do adestramento e da instrução. (Art. 20, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Seção Técnica de Ensino (DEIP-1)",
+        "Seção de Curso e Estágios (DEIP-2)",
+        "Seção de Pesquisa e Doutrina (DEIP-3)",
+        "Banda de Música"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino, Instrução e Pesquisa",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Direção do sistema de ensino e instrução (Art. 20, 7.772)"
+          ]
+        }
+      ],
+      "id": "deip-pi"
+    },
+    "dsci-pi": {
+      "name": "Diretoria de Segurança Contra Incêndio",
+      "abbreviation": "DSCI",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Arts. 17, 21",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 17 (competência geral das Diretorias)",
+        "Art. 21 (DSCI)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Segurança Contra Incêndio, unidade administrativa responsável pelo planejamento, análise, controle e fiscalização das atividades atinentes à segurança contra incêndio e pânico no âmbito do Estado do Piauí. (Art. 21, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Seção de Análise de Projetos (DSCI-1)",
+        "Seção de Vistorias e Pareceres (DSCI-2)",
+        "Seção de Fiscalização (DSCI-3)",
+        "Seção de Apoio Técnico (DSCI-4)",
+        "Seção de Estatística e Arquivo (DSCI-5)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Segurança Contra Incêndio",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, análise, controle e fiscalização das atividades de segurança contra incêndio e pânico (Art. 21, 7.772)"
+          ]
+        }
+      ],
+      "id": "dsci-pi"
+    },
+    "ceman-pi": {
+      "name": "Centro de Manutenção",
+      "abbreviation": "CEMAN",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria Administrativa e Financeira",
+      "legalRef": "Art. 29",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 29 (CEMAN)"
+      ],
+      "atribuicoes": [
+        "O Centro de Manutenção é órgão encarregado da manutenção das instalações dos quartéis, viaturas e manutenção de equipamentos de telecomunicações e operacionais da Corporação. (Art. 29, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Seção de Manutenção",
+        "Seção de Equipamentos Operacionais",
+        "Seção de Equipamentos de Telecomunicações"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Manutenção",
+          "subordinadoA": "Diretoria Administrativa e Financeira",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Manutenção das instalações dos quartéis, viaturas e equipamentos (Art. 29, 5.949)"
+          ]
+        }
+      ],
+      "id": "ceman-pi"
+    },
+    "csm-pi": {
+      "name": "Centro de Suprimento de Material",
+      "abbreviation": "CSM",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria Administrativa e Financeira",
+      "legalRef": "Art. 30",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 30 (CSM)"
+      ],
+      "atribuicoes": [
+        "O Centro de Suprimento de Material é órgão encarregado de atender as necessidades básicas de subsistência da Corporação. (Art. 30, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Seção de Controle e Distribuição",
+        "Almoxarifado"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Suprimento de Material",
+          "subordinadoA": "Diretoria Administrativa e Financeira",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Atende as necessidades básicas de subsistência da Corporação (Art. 30, 5.949)"
+          ]
+        }
+      ],
+      "id": "csm-pi"
+    },
+    "cto-pi": {
+      "name": "Centro de Treinamento Operacional",
+      "abbreviation": "CTO",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+      "legalRef": "Art. 31",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 31 (CTO)"
+      ],
+      "atribuicoes": [
+        "O Centro de Treinamento Operacional é órgão encarregado da realização de treinamentos técnicos operacionais de combate a incêndio, salvamento aquático e salvamento em altura da Corporação. (Art. 31, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Adjunto",
+        "Seção de Incêndio",
+        "Seção de Salvamento Aquático e Mergulho",
+        "Seção de Salvamento em Altura",
+        "Seção de Salvamento Terrestre",
+        "Pelotões Operacionais",
+        "Pelotão Administrativo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Treinamento Operacional",
+          "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Treinamentos técnicos operacionais de combate a incêndio, salvamento aquático e em altura (Art. 31, 5.949)"
+          ]
+        }
+      ],
+      "id": "cto-pi"
+    },
+    "cafd-pi": {
+      "name": "Centro de Atividades Físicas e Desportos",
+      "abbreviation": "CAFD",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+      "legalRef": "Art. 32-A",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 32-A (CAFD — acrescido pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Centro de Atividades Físicas e Desportos é um órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, competindo-lhe desenvolver programas específicos de condicionamento físico e desportos da corporação. (Art. 32-A, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Subchefe",
+        "Seção de Avaliação e Reabilitação Física",
+        "Seção de Condicionamento Físico",
+        "Academia"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CAFD",
+          "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Desenvolver programas de condicionamento físico e desportos da corporação (Art. 32-A, 7.772)"
+          ]
+        }
+      ],
+      "id": "cafd-pi"
+    },
+    "ceib-pi": {
+      "name": "Centro de Ensino e Instrução de Bombeiros",
+      "abbreviation": "CEIB",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+      "legalRef": "Art. 32-B",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 32-B (CEIB — acrescido pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Centro de Ensino e Instrução de Bombeiros é o órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, incumbido da formação, habilitação, aperfeiçoamento, especialização, treinamento e da instrução especializada dos bombeiros militar do Corpo de Bombeiros Militar do Estado do Piauí e, eventualmente, de bombeiros de outras corporações. (Art. 32-B, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção de Administração",
+        "Seção Pedagógica",
+        "Comando do Corpo de Alunos"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CEIB",
+          "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Formação, habilitação, aperfeiçoamento e instrução especializada dos BM (Art. 32-B, 7.772)"
+          ]
+        }
+      ],
+      "id": "ceib-pi"
+    },
+    "coc-pi": {
+      "name": "Centro de Operações e Comunicações",
+      "abbreviation": "COC",
+      "category": "Apoio",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 32",
+      "baseLegal": "Lei nº 5.949, de 17 de dezembro de 2009",
+      "artigosDeOrigem": [
+        "Art. 32 (COC)"
+      ],
+      "atribuicoes": [
+        "O Centro de Operações e Comunicações é o órgão responsável pela execução dos serviços de comunicação das ações operacionais. (Art. 32, Lei nº 5.949/2009)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Seção de Operações",
+        "Seção de Comunicações",
+        "Seção de Apoio"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Operações e Comunicações",
+          "subordinadoA": "Comando Operacional de Bombeiros",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Execução dos serviços de comunicação das ações operacionais (Art. 32, 5.949)"
+          ]
+        }
+      ],
+      "id": "coc-pi"
+    },
+    "ns-pi": {
+      "name": "Núcleo de Saúde",
+      "abbreviation": "NS",
+      "category": "Apoio",
+      "subordinadoA": "Diretoria de Gestão de Pessoas",
+      "legalRef": "Art. 32-C",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 32-C (Núcleo de Saúde — acrescido pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Saúde é responsável pelo planejamento, orientação, coordenação, controle e execução de programas de medicina preventiva, saúde comunitária e controle médico-sanitário de pessoal, execução das atividades de assistência médica, odontológica, bem como pelas perícias médicas e homologar os pareceres da junta Médica de Saúde (JMS) no âmbito da corporação. (Art. 32-C, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Perícias Médicas (PM)",
+        "Junta Médica de Saúde (JMS)",
+        "Seção Médica e Odontológica",
+        "Seção de Psicologia",
+        "Seção de Enfermagem",
+        "Seção de Apoio Administrativo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Núcleo de Saúde",
+          "subordinadoA": "Diretoria de Gestão de Pessoas",
+          "requisito": "Oficial Superior do Quadro de Oficiais Bombeiros Militar de Saúde da Corporação (Art. 32-C §2°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento e execução de programas de medicina preventiva, saúde comunitária, assistência médica e perícias (Art. 32-C, 7.772)"
+          ]
+        }
+      ],
+      "id": "ns-pi"
+    },
+    "cob-pi": {
+      "name": "Comando Operacional de Bombeiros",
+      "abbreviation": "COB",
+      "category": "Execução",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 34",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 34 (COB — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Comando Operacional de Bombeiros é órgão de execução do mais alto escalão do sistema operacional subordinado ao órgão de direção geral, tendo a seu cargo o planejamento estratégico e a fiscalização do emprego dos Comandos Regionais de Bombeiros. (Art. 34, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante Operacional de Bombeiros",
+        "Subcomandante Operacional de Bombeiros",
+        "Seção Administrativa",
+        "Seção de Operações e Comunicações",
+        "Seção de Controle e Fiscalização de Hidrantes",
+        "Seção de Planejamento, Estatística e Avaliação Operacional",
+        "Núcleo de Investigação e Prevenção de Incêndios",
+        "Comandos Regionais de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional de Bombeiros (COB)",
+          "subordinadoA": "Direção Geral",
+          "requisito": "Coronel ou Tenente-Coronel",
+          "desdobramentos": [
+            "Subcomandante Operacional",
+            "Seções de Operações, Hidrantes e Planejamento",
+            "Comandos Regionais"
+          ],
+          "atribuicoes": [
+            "Planejamento estratégico e fiscalização do emprego dos Comandos Regionais"
+          ]
+        }
+      ],
+      "id": "cob-pi"
+    },
+    "nipi-pi": {
+      "name": "Núcleo de Investigação e Prevenção de Incêndios",
+      "abbreviation": "NIPI",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 35",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 35 (NIPI — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Núcleo de Investigação e Prevenção de Incêndios destina-se a realizar as análises laboratoriais relacionadas a investigação de incêndios e de explosões, emitir conclusões técnicas sobre atividades preventivas. (Art. 35, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Subchefe",
+        "Seção de Perícias",
+        "Seção de Pesquisas",
+        "Laboratório"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do NIPI",
+          "subordinadoA": "Comando Operacional de Bombeiros",
+          "requisito": "Oficial do CBMEPI",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Análises laboratoriais de investigação de incêndios/explosões e conclusões técnicas preventivas (Art. 35, 7.772)"
+          ]
+        }
+      ],
+      "id": "nipi-pi"
+    },
+    "crbm-i-pi": {
+      "name": "Comando Regional de Bombeiros Militar do Meio-Norte",
+      "abbreviation": "CRBM-I",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 36",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 36 (CRBMs — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção Administrativa",
+        "Seção de Planejamento e Avaliação Operacional",
+        "Seção de Comunicações e Logística",
+        "Seção de Estatística",
+        "Grupamentos de Bombeiros Militar",
+        "Grupamento de Bombeiros Militar Marítimo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CRBM-I",
+          "subordinadoA": "Comandante Operacional de Bombeiros",
+          "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião do Meio-Norte (Art. 36, 7.772)"
+          ]
+        }
+      ],
+      "id": "crbm-i-pi"
+    },
+    "crbm-ii-pi": {
+      "name": "Comando Regional de Bombeiros Militar do Litoral",
+      "abbreviation": "CRBM-II",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 36",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 36 (CRBMs — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção Administrativa",
+        "Seção de Planejamento e Avaliação Operacional",
+        "Seção de Comunicações e Logística",
+        "Seção de Estatística",
+        "Grupamentos de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CRBM-II",
+          "subordinadoA": "Comandante Operacional de Bombeiros",
+          "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião do Litoral (Art. 36, 7.772)"
+          ]
+        }
+      ],
+      "id": "crbm-ii-pi"
+    },
+    "crbm-iii-pi": {
+      "name": "Comando Regional de Bombeiros Militar do Semiárido",
+      "abbreviation": "CRBM-III",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 36",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 36 (CRBMs — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção Administrativa",
+        "Seção de Planejamento e Avaliação Operacional",
+        "Seção de Comunicações e Logística",
+        "Seção de Estatística",
+        "Grupamentos de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CRBM-III",
+          "subordinadoA": "Comandante Operacional de Bombeiros",
+          "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião do Semiárido (Art. 36, 7.772)"
+          ]
+        }
+      ],
+      "id": "crbm-iii-pi"
+    },
+    "crbm-iv-pi": {
+      "name": "Comando Regional de Bombeiros Militar do Cerrados",
+      "abbreviation": "CRBM-IV",
+      "category": "Execução",
+      "subordinadoA": "Comando Operacional de Bombeiros",
+      "legalRef": "Art. 36",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 36 (CRBMs — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção Administrativa",
+        "Seção de Planejamento e Avaliação Operacional",
+        "Seção de Comunicações e Logística",
+        "Seção de Estatística",
+        "Grupamentos de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CRBM-IV",
+          "subordinadoA": "Comandante Operacional de Bombeiros",
+          "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião dos Cerrados (Art. 36, 7.772)"
+          ]
+        }
+      ],
+      "id": "crbm-iv-pi"
+    },
+    "gbm-pi": {
+      "name": "Grupamento de Bombeiros Militar",
+      "abbreviation": "GBM",
+      "category": "Execução",
+      "subordinadoA": "Comando Regional de Bombeiros Militar",
+      "legalRef": "Art. 37",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 37 (GBM — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "Os Grupamentos de Bombeiros Militar têm a seu cargo, dentro de uma determinada área operacional, as missões de prevenção e extinção de incêndios, busca, salvamento, atendimento pré-hospitalar e auxílio nas atividades de defesa civil. (Art. 37, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Administrativa",
+        "Seção de Planejamento Operacional",
+        "Seção de Logística",
+        "Seção de Estatística",
+        "Seção de Serviços Técnicos",
+        "Subgrupamentos de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do GBM",
+          "subordinadoA": "Comando Regional de Bombeiros Militar",
+          "requisito": "Oficial Superior do Quadro de Oficiais Bombeiros Militar Combatentes — excepcionalmente por Oficiais Superiores de outros quadros (Art. 37 §2°, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Prevenção e extinção de incêndios, busca, salvamento, APH e defesa civil na área operacional (Art. 37, 7.772)"
+          ]
+        }
+      ],
+      "id": "gbm-pi"
+    },
+    "gbmar-pi": {
+      "name": "Grupamento de Bombeiros Militar Marítimo",
+      "abbreviation": "GBMar",
+      "category": "Execução",
+      "subordinadoA": "Comando Regional de Bombeiros Militar do Litoral",
+      "legalRef": "Art. 38",
+      "baseLegal": "Lei nº 7.772, de 04 de abril de 2022",
+      "artigosDeOrigem": [
+        "Art. 38 (GBMar — nova redação pela Lei nº 7.772/2022)"
+      ],
+      "atribuicoes": [
+        "O Grupamento de Bombeiros Militar Marítimo tem a seu cargo a realização de operações aquáticas com a finalidade de executar serviços de prevenção em eventos náuticos, a busca, salvamentos de pessoas e bens, combate a incêndio em embarcações e instalações portuárias, bem como a preservação ambiental limitada às orlas fluviais e lacustre inscritas nos limites geográficos dos municípios de Ilha Grande de Santa Isabel, Parnaíba, Luís Correia e Cajueiro da Praia, assim como de toda a costa marítima piauiense. (Art. 38, Lei nº 7.772/2022)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção Administrativa",
+        "Seção de Planejamento Operacional e Estatística",
+        "Seção de Logística e Comunicações",
+        "Seção de Capacitação Técnico-Profissional",
+        "Subgrupamentos de Bombeiros Militar Marítimo (SGBMar)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do GBMar",
+          "subordinadoA": "Comando Regional de Bombeiros Militar do Litoral",
+          "requisito": "Major do Quadro de Oficiais Bombeiros Militar Combatentes (Art. 38 §único, 7.772)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Operações aquáticas, prevenção em eventos náuticos, busca/salvamento, combate a incêndio em embarcações e preservação ambiental na costa piauiense (Art. 38, 7.772)"
+          ]
+        }
+      ],
+      "id": "gbmar-pi"
+    }
+  }
+}

@@ -1,0 +1,4046 @@
+# Alagoas - Regimento Interno
+
+*Documento extraído de: `Alagoas - Regimento Interno.pdf`*
+*Total de páginas: 74*
+
+---
+
+## Página 1
+
+ 
+ESTADO DE ALAGOAS 
+GABINETE DO GOVERNADOR 
+ 
+ 
+DECRETO N.º 408, DE 08 DE NOVEMBRO DE 2001 
+ 
+ 
+REGULAMENTA A LEI N.º 6.212, DE 26 
+DE DEZEMBRO DE 2000, E DÁ OUTRAS 
+PROVIDÊNCIAS. 
+ 
+ 
+O GOVERNADOR DO ESTADO DE ALAGAOS, no uso da atribuição que lhe 
+confere o art. 107, incisos IV, da Constituição Estadual, 
+ 
+DECRETA: 
+ 
+TÍTULO I 
+DA FINALIDADE, OBJETIVOS E COMPETÊNCIAS 
+ 
+Art. 1º  Este Regimento Interno regulamenta o funcionamento , a organização, a 
+estrutura e as competências dos órgão do Corpo de B ombeiros Militar do Estado de Alagoas 
+(CBM/AL), instituição permanente e força auxiliar e  reserva do Exército, organizada com 
+base na hierarquia e na disciplina, tendo por final idade a realização de serviços específicos de 
+bombeiros no território do Estado de Alagoas. 
+ 
+Art. 2º  Compete ao Corpo de Bombeiros Militar do Estado de Alagoas: 
+ 
+I - realizar serviços de prevenção e extinção de incêndios; 
+ 
+II - realizar serviços de resgate, busca e salvamento; 
+ 
+III - realizar perícias de incêndio e explosão relacionadas com sua competência; 
+ 
+IV -  prestar socorro nos casos de sinistros, sempre que  houver ameaça de 
+destruição de haveres, vítimas ou pessoas em iminente perigo de vida; 
+ 
+V -  realizar atividades de segurança contra incêndio e  pânico, com vistas ä 
+proteção das pessoas e dos bens públicos e privados; 
+ 
+VI - exigir e fiscalizar o cumprimento das disposições legais relativas às medidas 
+de prevenção e proteção contra incêndio e pânico; 
+ 
+VII -  realizar atividades de prevenção e extinção de inc êndios florestais, com 
+vistas ä proteção ambiental; 
+ 
+
+---
+
+## Página 2
+
+VIII - realizar serviços de proteção e prevenção de acide ntes aquáticos em praias, 
+rios, lagos e balneários, por meio de guarda vidas e postos de observação; 
+ 
+IX - realizar serviços de socorro e apoio às embarcações; 
+ 
+X -  realizar atividades de atendimento aos traumas e e mergências pré-
+hospitalares; 
+ 
+XI -  realizar pesquisas técnico científicas, com vistas  à obtenção de produtos e 
+processos que permitam o desenvolvimento de sistema s de segurança contra incêndio e 
+pânico; 
+ 
+XII - coordenar e executar as atividades de defesa civil; 
+ 
+XIII - realizar atividades educativas sobre prevenção de sinistros; 
+ 
+XIV - credenciar empresas de fabricação e comercialização de produtos e serviços 
+relativos à proteção e segurança contra incêndio e pânico; e 
+ 
+XV - analisar e aprovar projetos e sistemas de segurança contra incêndio e pânico. 
+ 
+ 
+TÍTULO II 
+DA ORGANIZAÇÃO GERAL E ESTRUTURAÇÃO 
+ 
+CAPÍTULO I 
+DA ORGANIZAÇÃO GERAL 
+ 
+Art. 3º  O Corpo de Bombeiros Militar do Estado de Alagoas é composto por 
+órgãos de Direção, órgãos de Apoio e órgãos de Execução. 
+ 
+Art. 4º  Os órgãos de Direção Geral têm como objetivo o pla nejamento, o 
+assessoramento e a elaboração de normas e diretrize s gerais para o cumprimento de suas 
+missões. 
+ 
+Art. 5º  Os órgãos de Apoio têm como objetivo atender às ne cessidades de 
+pessoal, material e serviços gerais da Corporação em sua atividade meio. 
+ 
+Art. 6º  Os órgãos de Execução têm como objetivo realizar a s atividades fins da 
+Corporação, levando a efeito as missões operacionai s do CBM/AL de prevenção e combate a 
+incêndio, busca, resgate, salvamento e socorro de emergência. 
+ 
+ 
+CAPÍTULO II 
+DA ESTRUTURAÇÃO 
+ 
+Art. 7º  A estrutura básica do Corpo de Bombeiros Militar d o Estado de Alagoas 
+compreende: 
+ 
+I - Órgãos de Direção, compostos por: 
+
+---
+
+## Página 3
+
+ 
+a)  Comandante Geral; 
+ 
+b) Subcomandante Geral; 
+ 
+c)  Conselho de Políticas Estratégicas; 
+ 
+d)  Coordenaria Estadual de Defesa Civil, composta por: 
+ 
+1.  Coordenador Estadual de Defesa Civil; 
+ 
+2.  Assessoria Técnica, e 
+ 
+3.  Secretaria Executiva. 
+ 
+e)  Gabinete do Comandante Geral, composto por: 
+ 
+1.  Chefia do Gabinete; 
+ 
+2.  Ajudância de Ordem do Comandante Geral; 
+ 
+3.  Assessoria de Inteligência e Contra-Inteligência; 
+ 
+4.  Assessoria de Relações Públicas e Comunicação Social; e 
+ 
+5.  Secretaria Administrativa. 
+ 
+f)  Corregedoria Geral, composta por: 
+ 
+1.  Corregedor Geral; e 
+ 
+2.  Secretaria Administrativa. 
+ 
+g)  Diretoria de Recursos Humanos; 
+ 
+h)  Diretoria de Material e Patrimônio; 
+ 
+i)   Diretoria de Finanças; 
+ 
+j)   Diretoria de Serviços Técnicos; 
+ 
+l)   Diretoria da Policlínica; 
+ 
+m)  Ajudância Geral, composta por: 
+ 
+1.  Ajudante Geral; 
+ 
+2.  Secretaria Geral; 
+ 
+3.  Seção Administrativa; 
+
+---
+
+## Página 4
+
+ 
+4.  Seção de Comando e Serviço; 
+ 
+5.  Protocolo Geral; 
+ 
+6.  Arquivo Geral; 
+ 
+7.  Biblioteca Geral; e 
+ 
+8.  Banda de Música. 
+ 
+n)  Comissões. 
+ 
+II - Órgãos de Apoio, compostos por: 
+ 
+a)  Policlínica;  
+ 
+b)  Centros, compreendendo: 
+ 
+1.  Centro de Formação, Aperfeiçoamento e Especialização; 
+ 
+2.  Centro de Manutenção; 
+ 
+3.  Centro de Assistência; e 
+ 
+4.  Centro de Tecnologia, Informática e Informação. 
+ 
+c)    Almoxarifado Central; e 
+ 
+d)    Aprovisionamento Central. 
+ 
+III - Órgãos de Execução, compostos por: 
+ 
+a)  Comando Operacional de Bombeiros, composto por: 
+ 
+1.  Comando Operacional de Bombeiros da Região Metropolitana de Maceió; e 
+ 
+2.  Comando Operacional de Bombeiros do Interior. 
+ 
+b)   Unidades de Bombeiros Militar, compostas por: 
+ 
+1.  Grupamento de Bombeiros Militar - GBM; 
+ 
+2.  Grupamento de Salvamento Aquático - GSA; e 
+ 
+3.  Grupamento de Socorro de Emergência - GSE. 
+ 
+IV - Órgãos Especiais de Bombeiros Militares, compostos por: 
+ 
+a)  Assessorias Especiais de Bombeiros Militares; e 
+
+---
+
+## Página 5
+
+ 
+b)  Seções Bombeiros Militares. 
+ 
+ 
+TÍTULO III 
+DAS ATRIBUIÇÕES ORGÂNICA E FUNCIONAIS 
+ 
+CAPÍTULO I 
+DOS ÓRGÃOS DE DIREÇÃO GERAL 
+ 
+Seção I 
+Do Comandante Geral 
+ 
+Art. 8º  Compete ao Comandante Geral do Corpo de Bombeiros Militar: 
+ 
+I -  assessorar o Governador do Estado nos assuntos rel acionados com as 
+atividades bombeiro militar e ações de defesa civil; 
+ 
+II - assessorar o Secretário de Defesa Social nos assun tos de Segurança Pública, 
+relacionados com a competência da Corporação; 
+ 
+III - dirigir as atividades técnicas, operacionais e administrativas da Corporação; 
+ 
+IV - fazer cumprir as leis, normas e regulamentos da Corporação; 
+ 
+V - baixar portarias e ordens de serviços; 
+ 
+VI - aplicar penas disciplinares de sua alçada; 
+ 
+VII - autorizar despesas, nos limites de sua competência; 
+ 
+VIII -  submeter ao Governador do Estado e ao Secretário d e Defesa Social os 
+planos, estudos, programas, projetos e propostas pa ra organização, funcionamento e atuação 
+do Corpo de Bombeiros Militar; 
+ 
+IX - exercer a supervisão superior dos órgãos de direçã o, de apoio e de execução, 
+orientando e controlando seu funcionamento; 
+ 
+X - desempenhar as funções de Coordenador Estadual de Defesa Civil; e 
+ 
+XI - desempenhar outras atribuições correlatas. 
+ 
+Seção II 
+Do Subcomandante Geral 
+ 
+Art. 9º  Compete ao Subcomandante Geral do Corpo de Bombeiros Militar: 
+ 
+I - responder pelo Comandante Geral em seus impedimentos eventuais; 
+ 
+
+---
+
+## Página 6
+
+II - assegurar-se que as ordens específicas estão sendo  cumpridas, de acordo com 
+os objetivos da Corporação; 
+ 
+III - exercer o controle disciplinar dos integrantes da Corporação; 
+ 
+IV - apresentar propostas ou emitir pareceres sobre os assuntos administrativos e 
+operacionais que devam ser apreciados pelo Comandante Geral; 
+ 
+V -  determinar os implementos ao cumprimento das decis ões do Conselho de 
+Políticas Estratégicas; 
+ 
+VI - coordenar e elaborar o relatório anual de atividad es do Corpo de Bombeiros 
+Militar do Estado de Alagoas; 
+ 
+VII - secundar o Comandante Geral na fiscalização das atividades da Corporação; 
+ 
+VIII -  dar conhecimento aos órgãos de direção, de apoio e  de execução das 
+decisões tomadas pelo Comandante Geral; 
+ 
+IX - exercer outros encargos previstos em leis e regula mentos ou que lhe forem 
+atribuídos pelo Comandante Geral; 
+ 
+X - dar conhecimento ao Comandante Geral dos fatos e a tos a respeito dos quais 
+tenha providenciado por iniciativa própria; e 
+ 
+XI - Coordenar as atividades, tarefas e trabalhos a car go dos órgãos que integram 
+o Conselho de Políticas Estratégicas, propondo adoç ão de medidas adequadas que atinjam 
+maior eficiência e racionalidade. 
+ 
+Seção III 
+Do Conselho de Políticas Estratégicas 
+ 
+Art. 10.  O Conselho de Políticas Estratégicas é o órgão col egiado encarregado de 
+assessorar o Comandante Geral na formulação e avali ação de políticas estratégicas e na 
+fixação de diretrizes de gerenciamento administrati vo e de emprego do Corpo de Bombeiros 
+Militar para o cumprimento de suas missões. 
+ 
+Parágrafo único.  O Conselho de Políticas Estratégicas compreende: 
+ 
+I - o Comandante Geral; 
+ 
+II   - o Subcomandante Geral; 
+ 
+III  - o Chefe de Gabinete do Comandante Geral; 
+ 
+IV  - o Diretor de Recursos Humanos; 
+V   -  o Direção de Material e Patrimônio; 
+ 
+VI  -  o Diretor de Finanças; 
+ 
+
+---
+
+## Página 7
+
+VII -  o Diretor de Serviços Técnicos; 
+ 
+VIII - o Diretor da Policlínica; 
+ 
+IX   -  o Corregedor Geral; 
+ 
+X    -  o Ajudante Geral; e 
+ 
+XI   -  o Comandante Operacional de Bombeiros. 
+ 
+Art. 11.  Compete ao Conselho de Políticas Estratégicas: 
+ 
+I - planejar e executar as atividades de administração do pessoal Bombeiro Militar 
+e Civil da Corporação; 
+ 
+II -  estudar, emitir parecer e elaborar expediente rela tivo aos assuntos que lhe 
+foram atribuídos; 
+ 
+III -  assessorar nos assuntos referentes ao planejamento , coordenação e 
+fiscalização das atividades operacionais e de administração da corporação; 
+ 
+IV -  propor, com base nos estudos realizados, as medida s necessárias ao 
+aperfeiçoamento das atividades técnicas especializadas de bombeiros; 
+ 
+V -  obter informações e fazer levantamento das rotinas  e procedimentos 
+operacionais, objetivando a melhor eficácia na exec ução do serviço e tarefas especializadas a 
+cargo da Corporação; 
+ 
+VI -  acompanhar a evolução doutrinária dos assuntos de sua competência, bem 
+como realizar estudos para definir, consolidar e ap rimorar a doutrina de informações de 
+interesse da instituição; 
+ 
+VII -  solucionar processos administrativos e submetê-los  à decisão do 
+Comandante Geral, devidamente instruídos, os que lhe escapem à competência; 
+ 
+VIII - regular as rotinas e procedimentos relacionados co m direitos e deveres e 
+incentivos de pessoal; 
+ 
+IX - supervisionar, dirigir e coordenar os trabalhos da  Corporação, tendo em vista 
+a unidade de ação no cumprimento de diretrizes; e 
+ 
+X - cuidar do emprego de pessoal de acordo com as normas existentes. 
+ 
+Seção IV 
+Da Coordenadoria Estadual de Defesa Civil 
+ 
+Art. 12.  A Coordenadoria Estadual de Defesa Civil é o órgão  de coordenação 
+central do Sistema Estadual de Defesa Civil, compet indo-lhe o estudo, o planejamento, a 
+orientação técnica, a coordenação, a supervisão, a execução, o controle e a avaliação das 
+
+---
+
+## Página 8
+
+ações de Defesa Civil no Estado de Alagoas, observa ndo o disposto na Lei nº 6171, de 31 de 
+julho de 2000. 
+ 
+Art. 13.  Compete à Coordenadoria Estadual de Defesa Civil: 
+ 
+I - promover, coordenar e supervisionar, no âmbito est adual, as ações de defesa 
+civil; 
+ 
+II - elaborar e encaminhar à deliberação do Conselho Es tadual de Defesa Civil os 
+planos, programas e projetos com vistas à defesa pe rmanente contra os desastres naturais ou 
+provocados pelo homem, especialmente contra as secas e inundações; 
+  
+III - mobilizar recursos humanos e materiais necessários às ações de defesa civil; 
+ 
+IV - elaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil as 
+políticas e diretrizes da ação governamental de defesa civil e promover a sua implementação; 
+ 
+V -  promover estudos referentes às causas e possibilid ades de ocorrência de 
+desastres de qualquer origem, sua incidência, extensão e conseqüências; 
+ 
+VI - consolidar e compatibilizar planos e programas glo bais, regionais e setoriais, 
+observadas as políticas e as diretrizes da ação governamental de defesa civil; 
+ 
+VII -  incentivar a criação e a implementação de Coordena dorias Municipais de 
+Defesa Civil - COMDEC; 
+ 
+VIII -  sistematizar e integrar informações no âmbito do S istema Estadual de 
+Defesa Civil; 
+ 
+IX - definir e encaminhar à deliberação do Conselho Est adual de Defesa Civil as 
+áreas e as ações prioritárias para investimentos qu e contribuam para minimizar a 
+vulnerabilidade das cidades ou regiões do Estado; 
+ 
+X - propor ao Governador do Estado a homologação de situação de emergência ou 
+de estado de calamidade pública, obedecidos os crit érios estabelecidos pelos Conselhos 
+Nacional e Estadual de Defesa Civil; 
+ 
+XI - promover a capacitação de recursos humanos para as  ações de defesa civil, 
+em articulação com os órgãos estaduais e municipais especializados; 
+ 
+XII -  propor ao Conselho Estadual de Defesa Civil a cria ção de comissões 
+técnicas interinstitucionais para a realização de e studos, pesquisas e trabalhos especializados 
+de interesse da defesa civil; 
+ 
+XIII - coordenar e controlar a distribuição de suprimentos às populações atingidas 
+por desastres, em articulação com as Coordenadorias  Regionais e Municipais de Defesa Civil 
+e órgãos assistenciais integrantes do Sistema Estadual de Defesa Civil; 
+ 
+XIV -  criar grupos de trabalho com o objetivo de prestar  o apoio técnico 
+necessário à atuação dos órgãos e entidades na área de defesa civil; 
+
+---
+
+## Página 9
+
+ 
+XV - receber, analisar e opinar sobre relatórios e plei tos relativos à declaração de 
+situação de emergência e estado de calamidade pública; 
+ 
+XVI -  manter o órgão central do Sistema Nacional de Defe sa Civil - SINDEC 
+informado sobre a ocorrência de desastre e atividades de defesa civil; 
+ 
+XVII -  prestar apoio técnico e administrativo ao Conselho  Estadual de Defesa 
+Civil e à Junta Administrativa do Fundo Estadual de  Defesa Civil - FUNDEC, criado na 
+forma da lei; 
+ 
+XVIII - coordenar e promover, em articulação com os municípios, a execução das 
+ações conjuntas dos órgãos integrantes do Sistema Estadual de Defesa Civil; 
+ 
+XIX -  elaborar e apresentar ao órgão competente a propos ta orçamentária 
+destinada às atividades de defesa civil, na forma de legislação vigente; 
+ 
+XX - manter intercâmbio com os órgãos federais, estaduais e municipais de defesa 
+civil; 
+ 
+XXI - acompanhar e avaliar o desempenho do Sistema Estadual de Defesa Civil; 
+ 
+XXII - apresentar o relatório anual de suas atividades; e 
+ 
+XXIII -  exercer outras ações, atividades e funções estabel ecidas em lei, 
+regulamento ou decisão do Conselho Estadual de Defesa Civil. 
+ 
+§ 1º  A Coordenadoria Estadual de Defesa Civil, com sua estrutura organizacional, 
+terá caráter permanente e será subordinada diretamente ao Governador do Estado. 
+ 
+§ 2º  A Coordenadoria de Defesa Civil é composta por: 
+ 
+I - Coordenador Estadual de Defesa Civil; 
+ 
+II - Assessoria Técnica; e 
+ 
+III - Secretaria Executiva, composta por: 
+ 
+a)  Seção de Planejamento, Avaliação e Controle; 
+ 
+b)  Seção de Coordenação e Controle Operacional; 
+ 
+c)  Seção de Cadastro e Controle de Recursos; e 
+ 
+d)  Seção Administrativa 
+ 
+ 
+Subseção I 
+Do Coordenador Estadual de Defesa Civil  
+ 
+
+---
+
+## Página 10
+
+Art. 14.  São atribuições do Coordenador Estadual de Defesa Civil: 
+ 
+I - exercer a coordenação geral das ações de defesa civil no Estado de Alagoas; 
+ 
+II - assessorar o Governador do Estado em assuntos rela cionados com a área de 
+atuação da Coordenadoria Estadual de Defesa Civil; 
+ 
+III -  dirigir as atividades técnicas, administrativas e operacionais da 
+Coordenadoria Estadual de Defesa Civil, praticando todos os atos inerentes à sua gestão; 
+ 
+IV -  receber e dar andamento a todos os documentos rela tivos à declaração de 
+situação de emergência e estado de calamidade pública; 
+ 
+V -  manter o Governador do Estado permanentemente info rmado acerca dos 
+assuntos e atividades de defesa civil em desenvolvi mento, especialmente em situações de 
+desastres; 
+ 
+VI - autorizar despesas no limite de sua competência; 
+ 
+VII - propor, com fundamentação legal, ao Governador do Estado a homologação 
+de situação de emergência ou estado de calamidade pública; 
+ 
+VIII - encaminhar ao órgão competente a programação e pro posta de orçamento 
+anual da Coordenadoria Estadual de Defesa Civil; 
+ 
+IX -  encaminhar ao Governador do Estado o relatório anu al de atividades da 
+Coordenadoria Estadual de Defesa Civil; 
+ 
+X - acionar, quando necessário, os órgãos setoriais e de apoio do Sistema Estadual 
+de Defesa Civil para o desempenho de tarefas especí ficas, consentâneas com suas atribuições 
+normais; e 
+ 
+XI -  desempenhar outras atividades pertinentes aos obje tivos e atribuições da 
+Coordenadoria Estadual de Defesa Civil. 
+ 
+Subseção II 
+Da Assessoria Técnica 
+ 
+Art. 15.  À Assessoria Técnica compete prover aconselhamento  especializado à 
+Coordenadoria  Estadual de Defesa Civil, desenvolve r estudos, análises e pesquisas ligadas às 
+atividades de Defesa Civil, além de desempenhar out ras atribuições que lhe forem 
+determinadas pelo Coordenador Estadual de Defesa Civil. 
+ 
+Subseção III 
+Da Secretaria Executiva 
+ 
+Art. 16.  A Secretaria Executiva é o órgão responsável, pera nte o Coordenador 
+Estadual de Defesa Civil, pelo planejamento, coorde nação, controle e execução das 
+atribuições a cargo da Coordenadoria Estadual de Defesa Civil, competindo-lhe ainda: 
+ 
+
+---
+
+## Página 11
+
+I - promover, em articulação com as Coordenadorias Reg ionais e Municipais de 
+Defesa Civil, estudos de riscos de desastres nas ár eas dos Municípios e das microrregiões, 
+com o objetivo de avaliar e hierarquizar os riscos de desastres de maior prevalência, mapear 
+áreas de riscos intensificadas de desastres, cadastrar as populações mais vulneráveis aos riscos 
+avaliados e estabelecer hipóteses de planejamento operacional e de contingência; 
+ 
+II -  desenvolver, em articulação com os órgãos de coord enação do Sistema 
+Estadual de Defesa Civil, planos operacionais e de contingência, com base nas hipóteses 
+estabelecidas; 
+ 
+III -  desenvolver planos de mobilização de recursos inst itucionais, materiais, 
+humanos, financeiros e de instalações, em circunstâncias de desastres; 
+ 
+IV - apoiar os municípios na implantação de planos operativos de defesa civil; 
+ 
+V -  incentivar e apoiar a criação, organização e funci onamento das 
+Coordenadorias Municipais de Defesa Civil em todos os municípios do Estado de Alagoas, 
+especialmente naqueles de maior risco; 
+ 
+VI - formular e propor a política estadual de defesa civil; 
+ 
+VII - organizar e implementar o sistema de informação sobre desastres; 
+ 
+VIII - desenvolver e implementar planos, programas e proj etos de prevenção de 
+desastres, de preparação para emergências e desastr es, de respostas aos desastres e de 
+reconstrução de cenários de desastres; 
+ 
+IX -  organizar e manter atualizado permanentemente o ca dastro dos recursos 
+disponíveis e mobilizáveis no âmbito do Estado de Alagoas; 
+ 
+X - receber, analisar e opinar sobre relatórios e plei tos relativos a declaração de 
+situação de emergência e de estado de calamidade pública; 
+ 
+XI - apresentar recomendações ou sugestões específicas ou prioritárias aos órgãos 
+integrantes do sistema Estadual de Defesa Civil; 
+ 
+XII - promover a articulação da Coordenadoria Estadual d e Defesa Civil com os 
+demais órgãos integrantes do Sistema Estadual de De fesa Civil, com vistas à conjugação de 
+esforços que assegurem a implementação das ações de defesa civil no Estado de Alagoas; 
+ 
+XIII - formular e implementar a política de capacitação d e recursos humanos para 
+a área de defesa civil; e 
+ 
+XIV -  exercer outras atribuições estabelecidas na legisl ação em vigor ou 
+determinadas pelo Coordenador Estadual de Defesa Civil.  
+ 
+Subseção IV 
+Da Seção de Planejamento, Avaliação e Controle 
+ 
+
+---
+
+## Página 12
+
+Art. 17.  À Seção de Planejamento, Avaliação e Controle compete as atividades de 
+planejamento e avaliação,  articulando e acompanhan do a implementação dos planos, 
+programas e projetos referentes às ações de defesa civil que se desenvolvam no âmbito da 
+Secretaria Executiva.  
+ 
+Subseção V 
+Da Seção de Coordenação e Controle Operacional 
+                                 
+Art. 18.  À Seção de Coordenação e Controle Operacional comp ete as atividades 
+de coordenação e  controle  das  ações de resposta aos desastres. 
+ 
+Subseção VI 
+Da Seção de Cadastro e Controle de Recursos 
+ 
+Art. 19.  À Seção de Cadastro e Controle de Recursos compete  as atividades de 
+cadastramento e controle de recursos institucionais , humanos, materiais e de instalações para 
+fins de utilização em ações de defesa civil no âmbito do Estado de Alagoas. 
+ 
+Subseção VII 
+Da Seção Administrativa 
+                           
+Art. 20.  À Seção de Administração compete planejar, orienta r, coordenar, 
+controlar e executar as atividades administrativas,  financeiras e contábeis da Coordenadoria, 
+observando a política de gestão administrativa, as normas e as diretrizes estabelecidas, bem 
+como prestar apoio administrativo à Junta Administrativa do Fundo Estadual de Defesa Civil. 
+ 
+Seção V 
+Do Gabinete do Comandante Geral 
+ 
+Art. 21.  Ao Gabinete do Comandante Geral compete as funções  de assistência e 
+assessoramento direto ao Comandante Geral na prátic a de atos de gestão e nos assuntos que 
+escapem às atribuições normais e específicas dos demais órgãos de direção. 
+ 
+Art. 22.  Compete ao Gabinete do Comandante Geral: 
+ 
+I - submeter à aprovação do Comandante Geral os planos  e as ordens que devem 
+ser executados pela Corporação; 
+ 
+II -  dar conhecimento das ordens do comandante ao Conse lho de Políticas 
+Estratégicas; 
+ 
+III - assegurar-se de que as instruções expedidas estão de acordo com os objetivos 
+da Corporação; 
+ 
+IV - receber ordens do Comandante Geral e implementar o s atos que se fizerem 
+necessários para as suas decisões complementares; 
+ 
+V - praticar atos administrativos de sua competência, bem como os que lhe forem 
+delegados pelo Comandante Geral; 
+ 
+
+---
+
+## Página 13
+
+VI - delegar atos administrativos de sua competência, nos termos da legislação em 
+vigor; e 
+ 
+VII -  supervisionar, dirigir e coordenar os trabalhos do  Comandante Geral do 
+Corpo de Bombeiros, verificando as atividades dos s eus órgãos, as relações dos órgãos entre 
+si, e entre os órgãos de direção, apoio e execução. 
+ 
+Parágrafo único.  O Gabinete do Comandante Geral compreende: 
+ 
+I - a Chefia de Gabinete; 
+ 
+II - a Ajudância de Ordens do Comandante Geral; 
+ 
+III - a Assessoria de Inteligência e Contra Inteligência; 
+ 
+IV - a Assessoria de Relações Públicas e Comunicação Social; e 
+ 
+V - a Secretaria Administrativa. 
+ 
+Subseção I 
+Da Chefia de Gabinete 
+ 
+Art. 23.  À Chefia de Gabinete compete: 
+ 
+I - assistir ao Comandante Geral em seus compromissos sociais, quer de natureza 
+militar ou civil; 
+ 
+II -  responsabilizar-se pela confecção e distribuição d e toda documentação do 
+Comando Geral; 
+ 
+III - coordenar as atividades administrativas do Gabinete do Comandante Geral; 
+ 
+IV -  estar ciente das ordens e determinações do Comanda nte Geral, 
+providenciando o seu cumprimento; 
+ 
+V - analisar, responder e encaminhar toda correspondên cia do Comandante Geral 
+exceto as de caráter confidencial; 
+ 
+VI -  organizar e controlar, juntamente com o Ajudante d e Ordens, a pauta de 
+audiências, visitas e demais compromissos do Comandante Geral; 
+ 
+VII - coordenar, controlar e orientar as atividades da A judância de Ordens, das 
+Assessorias, das comissões, dos conselhos e dos demais grupos de atividades; 
+ 
+VIII - controlar as atividades do Gabinete, mantendo o Co mandante Geral a par 
+do desenrolar do serviço; 
+ 
+IX - planejar, controlar e orientar os órgãos internos e externos sobre as normas e 
+condutas de trabalho do Gabinete e do Comandante Geral; 
+ 
+
+---
+
+## Página 14
+
+X -  submeter ao Comandante Geral o Regimento Interno d o Gabinete para 
+aprovação; 
+ 
+XI - elaborar as normas gerais de ação do Gabinete; 
+ 
+XII - exercer outras atribuições que lhe forem conferida s pelo Comandante Geral; 
+e 
+ 
+XIII -  propor ao Comandante Geral a expedição de atos adm inistrativos de 
+interesse do Conselho de Políticas Estratégicas. 
+ 
+Subseção II 
+Da Ajudância de Ordens 
+ 
+Art. 24.  À Ajudância de Ordens do Comandante Geral compete: 
+ 
+I - assistir ao Comandante Geral nos seus encargos funcionais; 
+ 
+II - ter conhecimento da Agenda do Comandante; 
+ 
+III -  estudar e propor medidas necessárias ao melhor des empenho de suas 
+atividades; 
+ 
+IV - propor normas de segurança que assegurem a boa execução do serviço; 
+ 
+V - redigir as informações, agendando as mesmas; e 
+ 
+VI - acompanhar o Comandante Geral em os todos eventos,  auxiliando-o quando 
+necessário. 
+ 
+Subseção III 
+Da Assessoria de Inteligência e Contra-Inteligência 
+ 
+Art. 25.  À Assessoria de Inteligência e Contra-Inteligência compete: 
+ 
+I - estudar, planejar, coordenar, controlar e supervis ionar todas as atividades de 
+informações e contra-informações no âmbito do Corpo de Bombeiros; 
+ 
+II -  promover reuniões visando estabelecer uma unidade de doutrina e de 
+comportamento administrativo e operacional; 
+ 
+III -  manter o Comandante Geral informado de todos os fa tos, informes e 
+informações que digam respeito ao emprego local do Corpo de Bombeiros e as possibilidades 
+de informações e solicitações da comunidade sobre informações da sua área; 
+ 
+IV - acionar os demais órgãos do sistema de informações  do Corpo de Bombeiros 
+visando a produção de informações específicas, quando necessárias; 
+ 
+V -  orientar, controlar e coordenar as medidas de cont ra-informações na 
+Corporação; 
+
+---
+
+## Página 15
+
+ 
+VI -  realizar reuniões periódicas com o pessoal da asse ssoria, para uma análise 
+clara e objetiva das atividades desenvolvidas; visa ndo, com isso, aperfeiçoar os métodos e 
+procedimentos de atuação; 
+ 
+VII -  manter atualizadas as cartas de situação operacion al, no tocante a 
+informações sobre os locais de risco, estatística o peracional e recursos comunitários de apoio 
+às operações bombeiros militares, tanto na área da Capital como no interior do Estado; 
+ 
+VIII -  fiscalizar o cumprimento da doutrina de informaçõe s no âmbito da 
+Corporação; 
+ 
+IX -  receber, protocolar, dar ciência, encaminhar e arq uivar os documentos 
+sigilosos endereçados ao Corpo de Bombeiros; 
+ 
+X - elaborar o plano de informações da Corporação; 
+ 
+XI -  organizar e manter atualizados fichários e arquivo s contendo informações 
+específicas de prevenção de incêndios, tais como po ntos sensíveis ou prováveis focos de 
+incêndios, além de outras relacionadas com salvamento e as  
+ 
+XII - organizar e manter atualizados fichários e arquivos contendo informações de 
+interesses da Defesa Civil, bem como os recursos de apoio comunitário às operações BM; e 
+ 
+XIII - exercer outros encargos que lhe forem atribuídos pelo Comandante Geral. 
+ 
+Subseção IV 
+Da Assessoria de Relações Públicas e Comunicação Social 
+ 
+Art. 26.  À Assessoria de Relações Públicas e Comunicação Social compete: 
+ 
+I - responsabilizar-se pelos contatos entre Corpo de Bombeiros e Impressa; 
+ 
+II - assessorar o Comandante Geral em assuntos de suas atribuições; 
+ 
+III - estudar, propor e expor ao Comandante Geral as ati vidades que lhe escapem 
+à competência; 
+ 
+IV -  praticar todos os atos e medidas necessárias ao bo m funcionamento da 
+Assessoria; 
+ 
+V - encarregar-se do cerimonial civil e atividades sociais; 
+ 
+VI - manter estreita ligação com os órgãos de impressa e divulgação, bem como 
+com órgãos e outras entidades públicas, visando sempre conquistar a compreensão e o apoio à 
+missão bombeiro militar; e, 
+ 
+VII -  elaborar as normas de cerimonial civil para visita s, recepções, palestras e 
+conferências. 
+ 
+
+---
+
+## Página 16
+
+Subseção V 
+Da Secretaria Administrativa 
+ 
+Art. 27.  À Secretaria Administrativa compete: 
+ 
+I - tratar dos assuntos referentes a pessoal, instrução, relações públicas e logísticas 
+no âmbito do Gabinete do Comando; 
+ 
+II - executar os serviços de expediente, protocolo e arquivo; 
+ 
+III - tratar dos assuntos de estatística e modernização administrativa referente às 
+atividades da secretaria; 
+ 
+IV - assistir ao Chefe de Gabinete do Comando no desempenho de suas atividades 
+globais; 
+ 
+V - prestar toda e qualquer atividade de informação, o rientando o público interno 
+e externo quanto ao Gabinete do Comando e as soluçõ es apresentadas no intuito de resolver 
+os problemas apresentados; e, 
+ 
+VI - assegurar o apoio de serviços gerais ao Gabinete do Comando. 
+ 
+Seção VI 
+Da Corregedoria Geral 
+ 
+Art. 28.  A Corregedoria Geral do Corpo de Bombeiros Militar  é o órgão de 
+direção encarregado da orientação, fiscalização e c orreção de procedimentos relativos à 
+apuração das transgressões disciplinares e das infr ações penais militares praticadas por 
+Bombeiros Militares; promovendo-lhes, ainda, a responsabilidade funcional e disciplinar. 
+ 
+Art. 29.  Compete, ainda, à Corregedoria Geral do Corpo de Bombeiros Militar: 
+ 
+I - assessorar o Comando Geral nos assuntos de sua com petência e na formação 
+dos programas de assistência judiciária; 
+ 
+II -  identificar meios e procedimentos para facilitar a  coleta de provas 
+indispensáveis à aplicação da justiça; 
+ 
+III -  orientar os bombeiros militares que estejam sendo processados judicial ou 
+administrativamente, em razão de ato de serviço, se m interferir na ação dos advogados de 
+defesa; 
+ 
+IV - organizar e manter atualizado o fichário dos bombe iros militares processados 
+por fatos relacionados com o serviço; 
+ 
+IV -  orientar e assistir a família do bombeiro militar falecido à habilitação da 
+pensão requerida e outros direitos, conforme estabelecer a legislação específica; e, 
+ 
+V - manter contato com outros órgãos públicos e privad os, informando-se acerca 
+da situação de assistência jurídica ao bombeiro militar. 
+
+---
+
+## Página 17
+
+ 
+Parágrafo Único.  A Corregedoria Geral compreende: 
+ 
+I - o Corregedor Geral; e 
+ 
+II - a Secretaria Administrativa. 
+ 
+Subseção I 
+Do Corregedor Geral 
+ 
+Art. 30.  Ao Corregedor Geral compete: 
+ 
+I - manter arquivados os ofícios originários da Justiç a, do Ministério Público e da 
+polícia judiciária, pelos prazos estipulados em lei; 
+ 
+II - enviar para a Ajudância Geral as cópias de sentenç as judiciais a fim de serem 
+publicadas em Boletim Geral Ostensivo; 
+ 
+III - emitir informações, bem como relatar documentação processual relativa aos 
+assuntos de sua competência; 
+ 
+IV - dar curso, no âmbito de sua competência, a outras atividades que lhe forem 
+cominadas; 
+ 
+V - promover estudos, análises e pesquisas objetivando  a racionalização de suas 
+atividades; 
+ 
+VI - tratar de assuntos de estatísticas referentes às suas atividades; 
+ 
+VII -  dar cumprimento aos despachos exarados nos process os dos bombeiros 
+militares da ativa, quando envolva atos de disciplina ou de justiça; 
+ 
+VIII -  prestar orientação ao Comandante Geral sobre o trâ mite de documentos 
+jurídicos; 
+ 
+IX - informar acerca de legalidade ou não de ato administrativo; e, 
+ 
+X -  expor ao Conselho de Políticas Estratégicas, quand o solicitado, sobre a 
+situação de bombeiro militar nos processos em andamento na Corregedoria Geral.  
+ 
+Subseção II 
+Da Secretaria Administrativa 
+ 
+Art. 31.  À Secretaria Administrativa compete: 
+ 
+I - tratar dos assuntos referentes a pessoal, instruçã o, relações públicas e logística 
+no âmbito das atribuições da Corregedoria Geral; 
+ 
+II - executar os serviços de expediente, protocolo e arquivo da Corregedoria; 
+ 
+
+---
+
+## Página 18
+
+III - tratar dos assuntos de estatística e modernização administrativa referentes às 
+suas atividades; 
+ 
+IV - assistir ao Corregedor Geral no desempenho de suas atividades globais; 
+ 
+V - prestar toda e qualquer atividade de informação, o rientando o público interno 
+e externo nos assuntos que envolvam a Corregedoria Geral; e 
+ 
+VI - assegurar, apoiar e prestar os serviços gerais da Corregedoria Geral. 
+ 
+ 
+CAPÍTULO II 
+DAS DIRETORIAS 
+ 
+Art. 32.  As Diretorias são órgãos de direção setorial, orga nizadas para atuarem de 
+forma sistêmica, competindo-lhes o planejamento, a orientação normativa, a coordenação, a 
+fiscalização, o controle e a execução das atividade s, dos programas e dos planos relativos às 
+políticas e estratégias de recursos humanos, de logística, de finanças e de serviços técnicos. 
+ 
+Seção I 
+Da Diretoria de Recursos Humanos 
+ 
+Art. 33.  A Diretoria de Recursos Humanos é o órgão central do  sistema de 
+recursos humanos do Corpo de Bombeiros Militar do E stado de Alagoas, competindo-lhe o 
+estudo, o planejamento, a orientação normativa, a c oordenação, a supervisão, o controle e a 
+execução das atividades relativas à gestão de pesso al e desenvolvimento de recursos humanos 
+da Corporação, de acordo com as diretrizes da Secre taria de Estado de Administração, 
+Recursos Humanos e Patrimônio.  
+ 
+Art. 34.  Compete à Diretoria de Recursos Humanos: 
+ 
+I -  estudar e propor as diretrizes para a política de administração dos recursos 
+humanos da Corporação; 
+ 
+II - expedir instruções sobre a execução de atividade d e administração de pessoal 
+para os órgãos setoriais; 
+ 
+III - examinar os pressupostos legais dos atos sobre a a dministração de pessoal 
+lavrados nos órgãos setoriais; 
+ 
+IV -  executar as atividades centrais de cadastro do pes soal do Corpo de 
+Bombeiros; 
+ 
+V - coordenar e controlar as atividades de cadastros dos órgãos setoriais; 
+ 
+VI - expedir, supletivamente, certidões de contagem de tempo de serviço; 
+ 
+VII -  controlar o provimento e vacância dos cargos previ stos nos quadros de 
+organização; 
+ 
+
+---
+
+## Página 19
+
+VIII -  examinar os pedidos, devidamente instruídos, e pre parar expediente de 
+concessão de gratificações, ajuda de custo, indeniz ações e outros direitos pessoais previstos 
+em lei e cujo ato concessivo seja privativo do Comando Geral; 
+ 
+IX -  instruir e complementar os processos de pensões mi litares para fins de 
+remessa aos órgãos competentes; 
+ 
+X -  preparar atos de revisão de reforma e outros prove ntos, submetendo-lhes à 
+apreciação dos órgãos competentes; 
+ 
+XI - proceder às lavraturas, apostilamento, registro e demais alterações de carta-
+patente dos oficiais; 
+ 
+XII - preparar atos de reforma do pessoal da reserva rem unerada, nas situações 
+previstas no Estatuto dos servidores militares do Estado de Alagoas; 
+ 
+XIII - planejar e coordenar a política de assistência da Corporação; 
+ 
+XIV - preparar a solução de processos administrativos, disciplinares e criminais; 
+ 
+XV - executar atos de movimentação de Oficiais e Praças; 
+ 
+XVI - preparar levantamento de pessoal a ser submetido à  seleção para cursos de 
+formação, especialização, adaptação, habilitação, a perfeiçoamento e outros, propondo as 
+medidas complementares; 
+ 
+XVII -  elaborar e manter rigorosamente atualizados o cada stro e o registro das 
+alterações de todo o pessoal da Corporação; 
+ 
+XVIII -  manter ligação com órgãos das Forças Armadas e out ras instituições 
+relacionadas com o controle de pessoal do Corpo de Bombeiros; 
+ 
+XIX -  manter a guarda e controle da documentação do pess oal ativo, inativo e 
+pensionistas da  Corporação; 
+ 
+XX - orientar e fiscalizar o cumprimento de sentenças, punições, enquadramentos 
+e classificação do comportamento bombeiro militar; 
+ 
+XXI -  manter controle do pessoal agregado, demitido, lic enciado, de férias e à 
+disposição de órgãos da administração estadual; 
+ 
+XXII - preparar atos de averbação de tempo de serviço, de  conformidade com a 
+legislação em vigor; 
+ 
+XXIII -  preparar a documentação referente aos oficiais e p raças destinada às 
+Comissões de Promoção de Oficiais e de Praças, e de concessão de medalhas; 
+ 
+XXIV -  expedir declarações e certidões relativas ao pesso al militar e civil que 
+prestam serviço na Corporação; 
+ 
+
+---
+
+## Página 20
+
+XXV -  preparar atos de concessão de pensão militar aos b eneficiários de ex-
+bombeiros militares; 
+ 
+XXVI -  manter o controle, através de mapas, do pessoal at ivo, previsto e 
+existente; 
+ 
+XXVII -  manter controle do andamento dos processos relativ os a área de sua 
+competência e fiscalizar o cumprimento dos prazos; 
+ 
+XXVIII - publicar, bienalmente, o almanaque dos oficiais e o dos subtenentes e 
+sargentos; 
+ 
+XXIX - tratar dos assuntos de estatística e modernização administrativa relativos a 
+pessoal; 
+ 
+XXX - elaborar, propor ao Comandante Geral e controlar a  execução do plano de 
+férias dos oficiais, e controlar a execução do plano de férias das praças; 
+ 
+XXXI -  elaborar editais de concurso público para ingresso  de voluntários na 
+Corporação; 
+ 
+XXXII -  regular as rotinas e procedimentos referentes a di reitos, deveres e 
+incentivos de pessoal; 
+ 
+XXXIII - realizar inspeções de caráter setorial, propondo ao Comandante Geral as 
+medidas para reajustamento do subsistema; 
+ 
+XXXIV -  preparar atos de licenciamento, demissão, inclusão , reintegração e 
+reinclusão de pessoal; 
+ 
+XXXV - preparar processos de transferência para a reserva  remunerada , reforma, 
+agregação e reversão de oficiais e praças; 
+ 
+XXXVI - propor medidas de prioridades para a distribuição de efetivos; 
+ 
+XXXVII - manter controle do pessoal subjúdice; 
+ 
+XXXVIII - exercer outras atribuições que lhe forem conferidas pelo Comando 
+Geral; e 
+ 
+XXXIX - propor atos de enquadramento de punições de oficiais e conferir as 
+notas para publicação de punições de praças encaminhadas pelos órgãos da Corporação. 
+ 
+Parágrafo único.  A Diretoria de Recursos Humanos compreende: 
+ 
+I - o Diretor de Recursos Humanos; 
+ 
+II - a Seção de Seleção e Ingresso de Recursos Humanos; 
+ 
+III - a Seção de Cadastro, Avaliação, controle e movimentação; 
+
+---
+
+## Página 21
+
+ 
+IV - a Seção de Desenvolvimento de Recursos; 
+ 
+V - a Seção de Promoções; 
+ 
+VI - a Seção de Pagamento Pessoal; 
+ 
+VII - a Seção de Inativo e Pensionista; 
+ 
+VIII - a Seção de Identificação; e 
+ 
+IX - a Seção de Expediente e Arquivo. 
+ 
+Subseção I 
+Do Diretor de Recursos Humanos 
+ 
+Art. 35.  Compete ao Diretor de Recursos Humanos: 
+ 
+I - dirigir as atividades da Diretoria; 
+ 
+II - decidir sobre questões relativas ao sistema de pes soal e submeter aos órgãos 
+responsáveis os fatos que lhe escapem a competência; 
+ 
+III - promover estudos com a finalidade de aprimorar o sistema de pessoal;  
+ 
+IV - elaborar e submeter à apreciação superior o Regimento Interno da Diretoria; 
+ 
+V - aprovar as normas gerais de ação dos órgãos da Diretoria; 
+ 
+VI - emitir parecer em processos e documentos na área de sua atuação; 
+ 
+VII -  movimentar oficiais e praças de acordo com os inte resses maiores da 
+Corporação, e dentro de sua competência; 
+ 
+VIII - propor a expedição de atos administrativos na área de sua competência; 
+ 
+IX - delegar competências de suas atribuições; 
+ 
+X -  providenciar, bienalmente, o almanaque dos oficiai s e o dos subtenentes e 
+sargentos do CBMAL; 
+ 
+XI - elaborar e manter atualizado o Plano de Chamada da Corporação; 
+ 
+XII - manter contato com os órgãos de pessoal da Adminis tração Estadual a fim 
+de buscar auxílio na instrução de processos e procedimentos; 
+ 
+XIII - elaborar, assistido pelos diversos órgãos do CBM/A L, editais de concurso 
+público para ingresso de voluntários e exames seletivos  para o público interno; 
+ 
+XIV - expedir declarações e certidões relativas a pessoal; 
+
+---
+
+## Página 22
+
+ 
+XV - exercer outras atribuições que lhe forem conferidas; e 
+ 
+XVI - responder, perante o Conselho de Políticas Estraté gicas, pela execução dos 
+encargos atribuídos à sua Diretoria. 
+ 
+Subseção II 
+Da Seção de Seleção e Ingresso de Recursos Humanos 
+ 
+Art. 36.  Compete à Seção de Seleção e Ingresso de Recursos Humanos: 
+ 
+I - orientar, coordenar, controlar e fiscalizar as atividades relacionadas com: 
+ 
+a)  recrutamento, inclusão, reintegração, reinclusão, demissão, licenciamento e 
+exclusão de bombeiro militar, e a contratação e dispensa de pessoal civil; e 
+ 
+b)  seleção de pessoal inclusão e mobilização do bombeiro militar; 
+ 
+II - elaborar e propor a adoção de normas técnicas pertinentes às atividades de sua 
+competência; 
+ 
+III - estudar e elaborar propostas de: 
+ 
+a)  aperfeiçoamento da legislação e das normas em vigo r no campo de suas 
+atividades; e 
+ 
+b)  promoção de estudos, análises e pesquisas, tendo e m vista a racionalização de 
+suas atividades; 
+ 
+IV - tratar de assuntos de estatística referentes às suas atividades. 
+ 
+Subseção III 
+Da Seção de Cadastro, Avaliação, Controle e Movimentação 
+ 
+Art. 37.  Compete à Seção de Cadastro, Avaliação, Controle e Movimentação: 
+ 
+I - orientar, coordenar, controlar e fiscalizar as atividades relacionadas com: 
+ 
+a)  cadastramento dos bombeiros militares da ativa e civis; 
+ 
+b) avaliação do desempenho e mérito dos bombeiros militares da ativa e civis; e 
+ 
+c)  organização e arquivo do histórico individual do pessoal; 
+ 
+II -  cooperar nas atividades de seleção, fornecendo dados sobre pessoal; 
+ 
+III - elaborar, atualizar e distribuir almanaques do pessoal bombeiro militar; 
+ 
+IV - estudar e elaborar propostas de: 
+ 
+
+---
+
+## Página 23
+
+a)  necessidade de recursos para execução de suas atividades; 
+ 
+b)  aperfeiçoamento da política, legislação, administr ação e das normas em vigor 
+no campo de suas atividades; e 
+ 
+c)  planos, programas, instruções e normas para execuç ão das atividades de 
+cadastramento, avaliação do desempenho e mérito, bem como o histórico individual; 
+ 
+V - promover: 
+ 
+a)  estudos, análises e pesquisas, tendo em vista a modernização administrativa;e 
+ 
+b)  intercâmbio com instituições públicas e privadas p ara o aprimoramento de suas 
+atividades; 
+ 
+VI -  propor normas técnicas pertinentes às atividades d e sua competência, 
+fiscalizando e controlando a sua aplicação; 
+ 
+VII -  participar de estudos doutrinários, normativos e d e política administrativa 
+determinados pelo Diretor de Recursos Humanos; 
+ 
+VIII - fornecer dados informativos sobre o pessoal cadastrado; 
+ 
+IX - fornecer certidões sobre dados individuais; e 
+ 
+X - tratar de assunto de estatísticas referentes às suas atividades. 
+ 
+Subseção IV 
+Da Seção de Desenvolvimento de Recursos Humanos 
+ 
+Art. 38.  Compete à Seção de Desenvolvimento de Recursos Humanos: 
+ 
+I - assessorar o Diretor no estudo, planejamento, orga nização e controle geral das 
+atividades de assistência social; 
+ 
+II -  realizar estudos e pesquisas visando a melhoria do s padrões de assistência 
+social; 
+ 
+III - proceder estudos relativos a convênios e intercâmb io com entidades públicas 
+e privadas congêneres; 
+ 
+IV -  acompanhar e fiscalizar as atividades do Centro de  Assistência Social, 
+sugerindo ao Diretor de Recursos Humanos as medidas  que objetivam a uma melhor 
+eficiência; 
+ 
+V -  propor os programas gerais de assistência social, em íntima relação com o 
+Centro de Assistência Social, com base em reais instrumentos de apoio social; 
+ 
+VI - realizar o controle e a fiscalização, direta e ind ireta, de programas e visitas 
+técnico administrativas e elaborar os relatórios decorrentes; 
+
+---
+
+## Página 24
+
+ 
+VII - elaborar normas, instruções e outros documentos do utrinários no campo da 
+assistência social; 
+ 
+VIII -  propor ao Diretor de Recursos Humanos, mediante cu idadoso estudo, a 
+contratação de profissionais na área de assistência social; 
+ 
+IX -  proceder estudos visando a realização de estágios para universitários e 
+profissionais da área de assistência social; 
+ 
+X - assegurar a execução e continuidade dos programas de assistência social; e 
+ 
+XI - executar outras atividades pertinentes ao campo da  assistência social que lhe 
+forem determinadas. 
+ 
+Subseção V 
+Da Seção de Promoções 
+ 
+Art. 39.  Compete à Seção de Promoções: 
+ 
+I - estudar e efetivar a movimentação do pessoal bombe iro militar e lotação do 
+pessoal civil nos limites da sua competência, controlando a situação dos efetivos; 
+ 
+II - efetivar medidas pertinentes a promoções do pessoa l da ativa, de acordo com 
+a legislação pertinente; 
+ 
+III -  propor normas técnicas pertinentes às atividades d e sua competência e 
+controlar a sua aplicação; 
+ 
+IV - estudar e elaborar propostas de: 
+ 
+a)  necessidades de recursos para a execução de suas atividades; 
+ 
+b)  aperfeiçoamento da legislação e das normas em vigo r no campo de suas 
+atividades; 
+ 
+c)  efetivação de atos de agregação, passagem à dispos ição, reversão, adição e 
+promoção dos bombeiros militares e suas decorrências; e 
+ 
+d)  planos programas e instruções para a execução das atividades de movimentação 
+e promoção do pessoal bombeiro militar; 
+ 
+V - promover estudos, análises e pesquisas, tendo em v ista o aprimoramento e a 
+racionalização de suas atividades; 
+ 
+VI - participar dos estudos normativos que lhe forem determinados; 
+ 
+VII - elaborar e expedir cartas patentes, procedendo as respectivas apostilas, seu 
+controle e registro; 
+ 
+
+---
+
+## Página 25
+
+VIII - realizar levantamentos para indicação de oficiais e praças que devam ser 
+transferidos de ofício para reserva remunerada, bem  como dos a serem agregados como 
+conseqüência imediata da aplicação da lei; 
+ 
+IX - cooperar na elaboração dos almanaque do pessoal do  Corpo de Bombeiros 
+Militar; 
+ 
+X - assessorar as Comissões de Promoções; e 
+ 
+XI - tratar de assuntos de estatísticas referentes às suas atividades. 
+ 
+Subseção VI 
+Da Seção de Pagamento e Pessoal 
+ 
+Art. 40.  Compete à Seção de Pagamento e Pessoal: 
+ 
+I - providenciar o lançamento, na folha de pagamento d e pessoal do CBMAL, os 
+valores relativos à concessão de gratificações e in denizações previstas em lei após a devida 
+autorização e publicação legal;  
+ 
+II - providenciar o lançamento, na folha de pagamento d e pessoal do CBMAL, de 
+descontos previstos em lei após a devida autorização e publicação legal;   
+ 
+III - expedir informações e certidões sobre os venciment os do bombeiro militar 
+aos órgãos internos e a autoridades públicas, bem c omo ao próprio interessado, quando 
+solicitado;  
+ 
+IV - providenciar, de ofício ou a pedido do interessado , após o devido processo 
+administrativo, qualquer retificação de erro detect ada nos vencimentos dos bombeiros 
+militares; e 
+ 
+V - cumprir, imediatamente, as decisões judiciais no âmbito de sua competência. 
+ 
+Subseção VII 
+Da Seção de Inativos e Pensionistas 
+ 
+Art. 41.  Compete à Seção de Inativos e Pensionistas: 
+ 
+I - efetivar medidas pertinentes a reservas, reformas,  retornos ao serviço ativo e 
+outros assuntos concernentes ao pessoal do quadro d e inativos da Corporação, de acordo com 
+a legislação em vigor, respeitados os direitos e garantias constitucionais; 
+ 
+II - emitir informações e pareceres, bem como relatar d ocumentação processual 
+relativa aos assuntos de sua competência; 
+ 
+III -  incumbir-se dos assuntos referentes aos inativos d a reserva, reformados e 
+pensionistas que tratarem de reversão, transferênci a de direitos, habilitação e pensão, sua 
+melhoria e atualização e declaração de beneficiários; 
+ 
+
+---
+
+## Página 26
+
+IV -  organizar e manter atualizados os fichários e arqu ivos dos inativos, 
+pensionistas e beneficiários declarados; 
+ 
+V -  expedir certidões, atestados e declarações com fun damento nos dados que 
+constarem nos registros dos inativos e pensionistas; 
+ 
+VI - preparar a documentação necessária à instrução dos  processos de habilitação 
+de pensão aos dependentes do bombeiro militar falecido no cumprimento do dever, bem como 
+de outros direitos consoante a legislação em vigor; 
+ 
+VII - preparar e instruir os processos de transferência para a reserva remunerada, 
+na forma da legislação em vigor; 
+ 
+VIII - dar curso no âmbito de sua competência a outras at ividades que lhe forem 
+cominadas; e 
+ 
+IX - promover estudos, análise e pesquisas objetivando a racionalização de suas 
+atividades. 
+ 
+Subseção VIII 
+Da Seção de Identificação 
+ 
+Art. 42.  Compete à Seção de Identificação: 
+ 
+I - tratar das atividades técnico normativas de identi ficação do pessoal do Corpo 
+de Bombeiros Militar; 
+ 
+II -  realizar a identificação datiloscópica de todo o p essoal do Corpo de 
+Bombeiros Militar;  
+ 
+III -  proceder os trabalhos e registros de identificação  criminal no auxílio a 
+atividades de polícia judiciária militar pertinentes à Corporação; e 
+ 
+IV - confeccionar, expedir e controlar as cédulas de id entificação do pessoal ativo 
+e inativo da Corporação, observadas as normas legais específicas. 
+ 
+Subseção IX 
+Da Seção de Expediente e Arquivo 
+ 
+Art. 43.  Compete à Seção de Expediente e Arquivo: 
+ 
+I -  tratar dos assuntos referentes a pessoal, informaç ões, instrução, relações 
+públicas e logística, no âmbito da Diretoria; 
+ 
+II - executar os serviços de expediente, correspondência, protocolo e arquivo; 
+ 
+III - tratar dos assuntos de estatística e modernização administrativa no âmbito da 
+Diretoria de Recursos Humanos; 
+ 
+
+---
+
+## Página 27
+
+IV - assessorar no apoio e execução dos serviços gerais  da Diretoria de Recursos 
+Humanos; e 
+ 
+V - assistir ao Diretor de Recursos Humanos no desempe nho de suas atividades 
+globais. 
+ 
+Seção II 
+Da Diretoria de Material e Patrimônio 
+ 
+Art. 44.  A Diretoria de Material e Patrimônio é o órgão cen tral do sistema 
+logístico do Corpo de Bombeiros Militar, competindo -lhe o estudo, o planejamento, a 
+orientação normativa, a coordenação, a supervisão, o controle e a execução das atividades 
+relativas a gestão do material e patrimônio da Corporação, além das seguintes atribuições: 
+ 
+I - estudar e propor diretrizes para a formulação da p olítica de administração de 
+material permanente e de consumo da Corporação; 
+ 
+II - providenciar o cumprimento de diretrizes e dos planos e ordens decorrentes da 
+política setorial de logística estabelecida pelo Comandante Geral; 
+ 
+III -  propor normas sobre padronização, critérios, prior idades, aquisição e 
+distribuição para os diversos materiais, obras e equipamentos; 
+ 
+IV -  supervisionar e controlar os bens patrimoniais e o  uso do material 
+permanente, de consumo e das instalações da Corporação; 
+ 
+V - dar início ao processo de licitação para compras d e materiais, equipamentos e 
+viaturas, obras, serviços, gêneros alimentícios e q uaisquer outras que se fizerem necessárias, 
+respeitadas as disposições legais; 
+ 
+VI - propor a instauração de Inquéritos Técnicos; 
+ 
+VII - supervisionar as atividades do Centro de Manutenção, do Aprovisionamento 
+Central e do Almoxarifado Central; 
+ 
+VIII - estudar e propor contratos e convênios com outras organizações; 
+ 
+IX -  elaborar programas anuais de trabalho e propor, qu ando necessário, 
+alterações nas cotas trimestrais; 
+ 
+X -  estabelecer o plano de consumo de combustíveis, ma terial de expediente e 
+outros, e controlar a sua execução; 
+ 
+XI -  supervisionar a manutenção do material operacional , de intendência, de 
+obras, de comunicação, do armamento, das viaturas, de saúde e de instalações; 
+ 
+XII - controlar as quotas de consumo de combustíveis, água, luz, telefone e outras 
+atividades administrativas que impliquem despesas custeio de material; 
+ 
+XIII - supervisionar e controlar a aplicação do material de consumo; 
+
+---
+
+## Página 28
+
+ 
+XIV - manter contatos com órgãos da administração de mat erial, serviços e obras 
+do Estado, nos casos necessários; 
+ 
+XV - elaborar os itens inerentes às suas atribuições qu e requeiram publicação em 
+Boletim Reservado da Corporação; 
+ 
+XVI - programar a obtenção de material e exercer o contr ole de armazenamento, 
+transporte, manutenção, carga e descarga; 
+ 
+XVII - expedir instruções sobre administração de material para os órgãos setoriais 
+do subsistema logístico da Corporação; 
+ 
+XVIII -  providenciar a legalização, medição, demarcação e avaliação dos bens 
+imóveis da Corporação e daqueles que estejam à sua disposição por força de contratos; 
+ 
+XIX - fiscalizar a conservação e a guarda dos bens patri moniais da Corporação e 
+daqueles que estejam à sua disposição por força de contratos; 
+ 
+XX -  manter o registro dos titulares responsáveis pela carga de material e 
+atividades de aprovisionamento; 
+ 
+XXI -  pesquisar e estabelecer a nomenclatura, classifica ção e codificação do 
+material em uso na Corporação; 
+ 
+XXII -  realizar o balanço patrimonial e a tomada de conta s anual dos bens 
+adquiridos pela Corporação; 
+ 
+XXIII - manter atualizado o arquivo de catálogo de material operacional; 
+ 
+XXIV - coletar dados estatísticos para alimentar o subsistema logístico; 
+ 
+XXV - expedir normas de rotina e procedimentos em seu campo de atuação; 
+ 
+XXVI - elaborar sumário e relatório sobre o estado de con versação e utilização 
+dos bens sob seu domínio e responsabilidade; 
+ 
+XXVII - manter controle sobre convênios, contratos, acordo s e ajustes firmados 
+pela Corporação com outros órgãos públicos ou privados; 
+ 
+XXVIII - efetuar o cadastramento de fornecedores da Corpora ção nos termos da 
+legislação em vigor; e 
+ 
+XXIX - promover, quando conveniente sua centralização, a compra de material de 
+consumo. 
+ 
+Parágrafo único.  A Diretoria de Material e Patrimônio compreende: 
+ 
+I - o Diretor; 
+ 
+
+---
+
+## Página 29
+
+II - a Seção de Cadastro, Controle e Alienação; 
+ 
+III - a Seção de Aquisição, contratos e convênios; 
+ 
+IV - a Seção de Administração da Frota; 
+ 
+V - a Seção de Estatística; 
+ 
+VI - a Seção de Apoio a Comissão de Licitação; e 
+ 
+VII - a Seção de Expediente e Arquivo. 
+ 
+Subseção I 
+Do Diretor de Material e Patrimônio 
+ 
+Art. 45.   Ao Diretor de Material e Patrimônio compete: 
+ 
+I -  coordenar as atividades administrativas da diretor ia e de seus de órgãos de 
+apoio e subordinados, assegurando o cumprimento de seus objetivos;  
+ 
+II -  dar iniciativa, encaminhamento e pronunciamento no s processos 
+administrativos no âmbito de suas competências;  
+ 
+III -  estudar e propor ao Conselho de Políticas Estratég icas medidas que lhe 
+escapem a competência; 
+ 
+IV -  submeter à aprovação do Comandante Geral o Regimen to Interno da 
+Diretoria de Apoio Logístico e dos seus Órgãos subordinados; e 
+ 
+V -  delegar atribuições de sua competência, e ligar-se  diretamente com o 
+Comandante Geral, assessorando-o em questões da logística.  
+ 
+Subseção II 
+Da Seção de Cadastro, Controle e Alienação 
+ 
+Art. 46.  Compete à Seção de Cadastro, Controle e Alienação: 
+ 
+I - assessorar o Diretor de Material e Patrimônio nos estudos e pareceres técnicos 
+concernentes às atividades de engenharia de constru ções, controle do material permanente e 
+dos imóveis da Corporação; 
+ 
+II - panejar, orientar e coordenar as atividades relati vas à edificação de obras e ao 
+patrimônio da Corporação; 
+ 
+III -  efetuar, controlar e fiscalizar os projetos de obr as afetos à Diretoria de 
+Material e Patrimônio; e 
+ 
+IV - controlar e fiscalizar o emprego de todo o materia l permanente do Corpo de 
+Bombeiros Militar e o uso das instalações dos bens imóveis, executando periódicas visitas 
+
+---
+
+## Página 30
+
+técnico administrativas em cumprimento aos programa s aprovados pela Diretoria de Material 
+e Patrimônio. 
+ 
+Subseção III 
+Da Seção de Aquisição, Contratos e Convênios 
+ 
+Art. 47.  Compete à Seção de Aquisição, Contratos e Convênios: 
+ 
+I -  decidir sobre questões do sistema logístico da Cor poração e submeter ao 
+Diretor de Material e Patrimônio as que lhes escapem à competência; 
+ 
+II - emitir parecer em questões técnicas de apoio logístico; 
+ 
+III - apresentar sumários e relatórios e propor medidas de ajustamento do sistema 
+logístico; 
+ 
+IV - propor ao Comandante Geral, através do Diretor de Material e Patrimônio, a 
+elaboração de normas reguladoras e promover estudos  para o aprimoramento do sistema 
+logístico do Corpo de Bombeiros Militar; e 
+ 
+V - dar solução a inquéritos técnicos de acidentes com  armamento e veículos do 
+Corpo de Bombeiros Militar, encaminhando a mesma pa ra conhecimento e homologação 
+prévia do Diretor de Material e Patrimônio; 
+ 
+Subseção IV 
+Da Seção de Administração de Frota 
+ 
+Art. 48.  Compete à Seção de Administração de Frota: 
+ 
+I - assessorar o Diretor de Material e Patrimônio nas atividades relacionadas com 
+a manutenção de material; 
+ 
+II - efetuar o controle físico, financeiro, patrimonial  e de custo, relacionados com 
+o emprego de recursos à execução das atividades de manutenção de material; 
+ 
+III -  organizar o plano de manutenção de material relati vo às atividades da 
+Diretoria de Material e Patrimônio; e 
+ 
+IV - propor a contração de pessoal especializado. 
+ 
+Subseção V 
+Da Seção de Estatística 
+ 
+Art. 49.  Compete à Seção de Estatística: 
+ 
+I -  estudar, emitir parecer e elaborar expediente rela tivo aos assuntos que lhe 
+forem atribuídos; 
+ 
+II - elaborar e propor instruções, relatórios, normas e  publicações relativas às suas 
+atividades; 
+
+---
+
+## Página 31
+
+ 
+III - manter controle sistemático sobre o cumprimento da  legislação pertinente às 
+suas atividades; 
+ 
+IV - coletar, estudar e interpretar os dados estatístic os relativos às suas atividades; 
+e 
+ 
+V - acompanhar a evolução doutrinária dos assuntos de sua competência. 
+ 
+Subseção VI 
+Da Seção de Apoio à Comissão de Licitação 
+ 
+Art. 50.  Compete à Seção de Apoio à Comissão de Licitação: 
+ 
+I -  assessorar o Diretor de Material e Patrimônio no e studo para aquisição, 
+controle e fiscalização de material, bem como nos a ssuntos de orçamentação, licitação e 
+contratos; 
+ 
+II - planejar, organizar, orientar, coordenar e control ar as atividades de licitações 
+ligadas a obras, serviços, compras e alienações, e os contratos no rol de sua competência; 
+ 
+III -  organizar o plano de suprimento e compras relativo s às atividades da 
+Diretoria de Material e Patrimônio; 
+ 
+IV - efetuar os controles físicos, financeiros, patrimo niais e de custo relacionados 
+com o emprego de recursos destinados à execução das atividades de suprimento de material; 
+ 
+V -  organizar e manter atualizado o cadastro dos forne cedores, bem como os 
+mostruários dos artigos e materiais padronizados a fim de preservar a uniformidade e 
+padronização dos materiais que forem adquiridos; e 
+ 
+VI - elaborar o planejamento administrativo, a programa ção e a orçamentação no 
+âmbito da Diretoria de Material e Patrimônio, de ac ordo com as diretrizes do Conselho de 
+Políticas Estratégicas. 
+ 
+Subseção VII 
+Da Seção de Expediente e Arquivo 
+ 
+Art. 51.  Compete à Seção de Expediente e Arquivo: 
+ 
+I -  tratar de assuntos referentes a pessoal, informaçõ es, instrução, relações 
+públicas e logísticas; 
+ 
+II - executar os serviços de expediente, correspondência, protocolo e arquivo; 
+ 
+III - tratar dos assuntos de modernização administrativa  referente às atividades da 
+Diretoria de Material e Patrimônio; 
+ 
+IV - assegurar o apoio de serviços gerais à Diretoria de Material e Patrimônio; e 
+ 
+
+---
+
+## Página 32
+
+V - assessorar o Diretor de Material e Patrimônio. 
+ 
+Seção III 
+Da Diretoria de Finanças 
+ 
+Art. 52.  A Diretoria de Finanças é o órgão central do siste ma de administração 
+financeira do Corpo de Bombeiros Militar, competind o-lhe o estudo, o planejamento, a 
+orientação normativa, a coordenação, a supervisão, o controle e execução das atividades 
+relativas à gestão financeira, ao planejamento e ex ecução orçamentária, a contabilidade e 
+auditoria, além das seguintes atribuições. 
+ 
+I - supervisionar e fiscalizar, no âmbito da Corporaçã o, as atividades de finanças, 
+contabilidade, auditoria nos processos de licitação  e pagamento e o acompanhamento 
+orçamentário; 
+ 
+II - apoiar na elaboração do orçamento-programa; 
+ 
+III - providenciar a solicitação de crédito suplementar para a Corporação; 
+ 
+IV - executar as atribuições que lhe competirem como in tegrante do sistema de 
+administração financeira, orçamentária e contábil do governo do Estado de Alagoas; 
+ 
+V -  manter contatos, através do Comandante Geral, com a Procuradoria e com 
+Tribunal de Contas do Estado sobre assuntos pertinentes à sua área de atuação; 
+ 
+VI - realizar pagamento com custeio de pessoal e de tod as as despesas efetuadas 
+pela Corporação; 
+ 
+VII - emitir Nota de Empenho e toda documentação pertine nte, relacionada com 
+os pagamentos diversos; 
+ 
+VIII - realizar o controle financeiro e contábil dos fund os pertencentes ao Corpo 
+de Bombeiros; 
+ 
+IX - distribuir os recursos orçamentários e extraordinários, de acordo com o Plano 
+de Aplicação de Recursos do Comando Geral; 
+ 
+X - receber, consolidar e verificar as prestações de contas; 
+ 
+XI -  acompanhar a programação financeira de reembolso e  a fixação de cotas 
+orçamentárias e extraordinárias; 
+ 
+XII - exercer as atividades de tesouraria, tais como: 
+ 
+a)  registros de movimento bancário referente às contas correntes a cargo do Corpo 
+de Bombeiros Militar; 
+ 
+b)  recebimento do numerário e execução de sua movimentação; 
+ 
+
+---
+
+## Página 33
+
+c)  pagamentos e recolhimentos obrigatórios, na forma da legislação vigente, 
+depois de processados pela contabilidade; 
+ 
+d)  conferência de documentos que importem em alteraçã o da situação financeira, 
+antes de submetidos ao Comandante Geral; 
+ 
+e)  guarda de valores consoante instrução específica c omo cauções ou outras 
+garantias; 
+ 
+f)  quitação de importâncias e valores que forem entre gues ao setor financeiro para 
+quaisquer fins; e 
+ 
+g) execução da fase de pagamento da despesa por ordem  do Ordenador de 
+Despesa, com base na nota de empenho, comprovantes de entrega ou de prestação de serviços 
+e demais documentos pertinentes, depois de processados pela contabilidade; 
+ 
+XIII - organizar balanços das atividades financeiras do C orpo de Bombeiros, de 
+acordo com a legislação vigente; 
+ 
+XIV - realizar análise dos balanços, balancetes e demons trações das OBM, bem 
+como levantar e analisar os custeios globais e parciais; 
+ 
+XV -  coordenar e realizar auditoria técnico contábil, f inanceira e patrimonial, 
+visando a salvaguarda dos bens, a verificação da ex atidão e regularidade das contas, e a 
+eficiência operacional e de controle dos sistemas; 
+ 
+XVI - certificar a regularidade das contas de ordenadore s de despesa, em função 
+das auditorias realizadas; e 
+ 
+XVII - verificar o cumprimento de contratos, convênios, a justes e atos que gerem 
+e extingam direitos e obrigações quanto à observância de disposições legais. 
+ 
+Parágrafo único.  A Diretoria de Finanças compreende: 
+ 
+I - o Diretor; 
+ 
+II - a Seção de Administração Financeira; 
+ 
+III - a Seção de Contabilidade e Auditoria; 
+ 
+IV - a Seção de Expediente e Arquivo; e 
+ 
+V - a Tesouraria Geral. 
+ 
+Subseção I 
+Do Diretor de Finanças 
+ 
+Art. 53.  Compete ao Diretor de Finanças: 
+ 
+I - administrar as atividades da Diretoria e suas Seções; 
+
+---
+
+## Página 34
+
+ 
+II - decidir sobre questões do sistema de administração  financeira e submeter ao 
+Comandante Geral as que lhe escapem a competência; 
+ 
+III - emitir parecer em questões técnicas de finanças, contabilidade e auditoria; 
+ 
+IV -  propor ao Comandante Geral medidas de ajustamento da estrutura de 
+administração financeira e orçamentária; 
+ 
+V - manter contato, em nome do Comandante Geral, com o s órgãos centrais de 
+administração financeira, orçamentária e contabilidade estadual, bem como com o Tribunal de 
+Contas do Estado; 
+ 
+VI - elaborar e submeter à aprovação do Comandante Gera l as Normas Gerais de 
+Ação da Diretoria; 
+ 
+VII - elaborar normas regulamentares que visem o aprimor amento do sistema de 
+administração financeira e contábil, submetendo-as à aprovação do Comandante Geral; 
+ 
+VIII -  assessorar diretamente o Comandante Geral nos assu ntos de sua 
+competência; 
+ 
+IX - manter controle sistemático sobre o cumprimento da  legislação pertinente às 
+suas atividades; 
+ 
+X - cumprir outros encargos previstos em leis e regula mentos ou que lhe sejam 
+atribuídos pelo Comandante Geral; e 
+ 
+XI -  assessorar o Conselho de Políticas Estratégicas no s assuntos de sua 
+competência. 
+ 
+Subseção II 
+Da Seção de Administração Financeira 
+ 
+Art. 54.  Compete à Seção de Administração Financeira: 
+ 
+I - assessorar o Diretor de Finanças nos assuntos de administração financeira; 
+ 
+II - realizar o acompanhamento da execução financeira d o orçamento, bem como 
+dos projetos e atividades à conta de recursos extra  orçamentários, no âmbito do Corpo de 
+Bombeiros Militar; 
+ 
+III - executar os trabalhos de orçamentação atribuídos à Diretoria de Finanças; 
+ 
+IV -  emitir pareceres sobre assuntos que exijam interpr etação de atos 
+administrativos e de direito público administrativo financeiros; 
+ 
+V -  encarregar-se do processamento das dívidas de exer cícios anteriores, dando 
+parecer para a decisão final de seus reconhecimentos; 
+ 
+
+---
+
+## Página 35
+
+VI -  acompanhar a programação financeira de reembolso e  a fixação de cotas 
+orçamentárias e extraordinárias; 
+ 
+VII -  cooperar na elaboração do Quadro de Detalhamento d as Despesas e do 
+Cronograma de Desembolso, orçamentário e extra orçamentário; 
+ 
+VIII -  elaborar a documentação relativa aos créditos e nu merários 
+correspondentes às atividades e projetos cuja admin istração tenha sido atribuída ao Corpo de 
+Bombeiros Militar, especificamente sobre: 
+ 
+a)  registros do movimento bancário referente às contas correntes a cargo do Corpo 
+de Bombeiros Militar; 
+ 
+b)  recebimento de numerário e execução de sua movimentação; 
+ 
+c)  pagamento, recolhimentos obrigatórios, na forma da  legislação vigente, depois 
+de processados pela Seção de Contabilidade; 
+ 
+d)  conferência de documentos que importem em alteraçã o da situação financeira, 
+antes de submetidos ao Diretor de Finanças; 
+ 
+e)  guarda de valores consoante instruções específicas , como cauções ou outras 
+garantias; 
+ 
+f)  quitação de importância e valores que forem entreg ues ao setor financeiro para 
+quaisquer fins; e, 
+ 
+g)  execução da fase de pagamento da despesa, após det erminação do Ordenador 
+da Despesa, com base na nota de empenho, comprovant es de entrega ou de prestação de 
+serviços e demais documentos pertinentes, depois de  processados pela Seção de 
+Contabilidade; e 
+ 
+X - elaborar relatórios globais sobre a execução financeira, bem como informar ao 
+Diretor de Finanças sobre as irregularidades ou alt erações no setor financeiro do CBMAL, 
+tomando ou solicitando as providências cabíveis conforme o caso. 
+ 
+Subseção III 
+Da Seção de Contabilidade e Auditoria 
+ 
+Art. 55.  Compete à Seção de Contabilidade e Auditoria: 
+ 
+I -  coordenar e executar as atividades referentes ao p agamento de pessoal do 
+Corpo de Bombeiros Militar; 
+ 
+II -  registrar em documentos os atos e fatos da gestão orçamentária e extra 
+orçamentária do Corpo de Bombeiros Militar; 
+ 
+III - organizar os balanços das atividades financeiras d o CBMAL, de acordo com 
+a legislação vigente; 
+ 
+
+---
+
+## Página 36
+
+IV - propor novos recursos financeiros ou suplementação de dotação; 
+ 
+V -  elaborar e efetuar o processamento da documentação  correspondente às 
+despesas orçamentárias e as de pagamento por disponibilidade de recursos internos; 
+ 
+VI -  dar ciência ao Diretor das irregularidades ou alte rações havidas no setor 
+financeiro do CBMAL, tomando ou solicitando as providências, conforme o caso; 
+ 
+VII - assessorar o Diretor de Finanças nos assuntos de auditoria; 
+ 
+VIII - elaborar o plano geral de auditoria a ser submetid o à aprovação do Diretor 
+de Finanças; 
+ 
+IX -  coordenar e realizar auditoria técnico contábil, f inanceira e patrimonial, 
+visando a salvaguarda dos bens, a verificação da ex atidão e regularidade das contas e a 
+eficiência operacional e de controle dos sistemas; 
+ 
+X - certificar a regularidade das contas de ordenadore s de despesas em função das 
+auditagens realizadas; 
+ 
+XI - orientar os órgãos sujeitos à sua supervisão; 
+ 
+XII -  apurar ou presumir a existência de atos e fatos qu e necessitem uma 
+investigação mais acurada; 
+ 
+XIII - examinar os relatórios anuais das atividades dos órgãos de contabilidade; 
+ 
+XIV - verificar o cumprimento de contratos, convênios, ajustes e atos que gerem e 
+extingam direitos e obrigações quanto à observância de disposições legais; e 
+ 
+XV -  verificar a eficiência e o grau de qualidade dos c ontroles contábeis, 
+financeiros e orçamentários. 
+ 
+Subseção IV 
+Da Seção de Expediente e Arquivo 
+ 
+Art. 56.  Compete à Seção de Expediente e Arquivo: 
+ 
+I -  tratar dos assuntos referentes a finanças, informa ções, instrução, relações 
+públicas e logística, no âmbito da Diretoria; 
+ 
+II - executar serviços de expediente, correspondência, protocolo e arquivo; 
+ 
+III - tratar dos assuntos de estatística e modernização administrativa referente às 
+atividades da Diretoria de Finanças; 
+ 
+IV - assegurar o apoio de serviços gerais à Diretoria de Finanças; e 
+ 
+V - assistir ao Diretor no desempenho de suas atividades globais. 
+ 
+
+---
+
+## Página 37
+
+Subseção V 
+Da Tesouraria Geral 
+ 
+Art. 57.  Compete à Tesouraria Geral: 
+ 
+I - registrar o movimento bancário referente às contas  correstes a cargo do Corpo 
+de Bombeiros Militar; 
+ 
+II - receber o numerário e a execução de sua movimentação; 
+ 
+III -  pagar e recolher obrigatório, na forma da legislaç ão vigente, depois de 
+processados pela Seção de Contabilidade; 
+ 
+IV - conferir os documentos que importem em alteração d a situação financeira, 
+antes de submetidos ao Diretor de Finanças; 
+ 
+V -  guardar os valores consoante instrução específica,  como cauções ou outras 
+garantias; 
+ 
+VI - quitar a importância e valores que forem entregues  ao setor financeiro para 
+quaisquer fins; e 
+ 
+VII - executar a fase de pagamento da despesa após deter minação do Ordenador 
+da Despesa, com base na nota de empenho, comprovant es de entrega ou de prestação de 
+serviços e demais documentos pertinentes, depois de  processados pela Seção de 
+Contabilidade. 
+ 
+Seção IV 
+Da Diretoria de Serviços Técnicos 
+ 
+Art. 58.  A Diretoria de Serviços Técnicos é o órgão central  do sistema de 
+engenharia e segurança do Corpo de Bombeiros Milita r, competindo-lhe o estudo, a análise, o 
+planejamento, a orientação técnica, a execução, o c ontrole e a fiscalização das atividades 
+relativas a segurança contra incêndio e pânico e ao  cumprimento das disposições legais sobre 
+o assunto, no âmbito do Estado de Alagoas, além de: 
+ 
+I -  realizar contatos com órgãos externos nos assuntos  relativos à sua esfera de 
+atribuição; 
+ 
+II - elaborar normas, critérios, princípios e programas  pertinentes à sua esfera de 
+atribuições; 
+ 
+III - promover estudos, análises e pesquisas, tendo em v ista o aprimoramento e a 
+racionalização das atividades relacionadas com a en genharia de segurança e perícia de 
+incêndio; 
+ 
+IV - realizar perícia de incêndio ou explosão; 
+ 
+V - planejar, orientar, coordenar, controlar e fiscali zar as atividades do serviço de 
+hidrantes da Corporação; 
+
+---
+
+## Página 38
+
+ 
+VI -  executar e supervisionar o disposto na legislação do Estado no que diz 
+respeito às instalações de equipamentos e as medidas preventivas contra incêndio e pânico; 
+ 
+VII -  proceder a exames de plantas e projetos de seguran ça contra incêndio e 
+pânico; 
+ 
+VIII - realizar testes de incombustibilidade; 
+ 
+IX - realizar vistorias e emitir pareceres técnicos das  atividades relacionadas com 
+a engenharia de segurança contra incêndio; 
+ 
+X -  proceder o levantamento e manter atualizado o cada stro dos imóveis dos 
+contribuintes do Fundo de Prevenção e Combate a Inc êndio, de firmas que comercializam 
+equipamentos de segurança contra incêndio e pânico,  bem como de seguranças e projetistas 
+autônomos; 
+ 
+XI - elaborar normas para a realização de perícias; e 
+ 
+XII - organizar e manter atualizado o arquivo do DST. 
+ 
+Parágrafo único.  A Diretoria de Serviços Técnicos compreende: 
+ 
+I - o Diretor; 
+ 
+II - a Seção de Estudos e Projetos; 
+ 
+III - a Seção de Testes, Vistorias e Pareceres; 
+ 
+IV - a Seção de Perícia e Pesquisas; 
+ 
+V - a Seção de Hidrantes; e 
+ 
+VI - a Seção de Expediente e Arquivo 
+ 
+Subseção I 
+Do Diretor de Serviços Técnicos 
+ 
+Art. 59.  Compete ao Diretor de Serviços Técnicos: 
+ 
+I - administrar as atividades do órgão; 
+ 
+II -  decidir e emitindo parecer sobre questões do siste ma de engenharia de 
+segurança e perícia de incêndio, e submeter ao Coma ndante Geral as que lhe escapem à 
+competência; 
+ 
+III -  propor ao Comandante Geral medidas de aprimorament o do sistema de 
+engenharia de segurança e perícia de incêndio; 
+ 
+IV - apresentar relatórios mensais sobre as atividades do DST; 
+
+---
+
+## Página 39
+
+ 
+V -  elaborar as Normas Gerais de Ação do DST e submetê -las à aprovação do 
+Comandante Geral; 
+ 
+VI - coordenar e supervisionar as ações pertinentes à i nstalação de equipamentos 
+de prevenção e extinção de incêndios; 
+ 
+VII - proceder exames de plantas de edificações, objetiv ando o estabelecimento 
+de condições que assegurem meios eficazes à prevenção e à extinção de incêndios; 
+ 
+VIII - promover vistorias, emitindo os conseqüentes laudos; 
+ 
+IX -  supervisionar as instalações de redes de hidrantes  públicos e outras de 
+implantação obrigatória, de acordo com a legislação pertinente; 
+ 
+X - padronizar os impressos referentes às atividades d e segurança contra incêndio 
+e pânico; 
+ 
+XI - elaborar o calendário de vistorias dos sistemas de segurança contra incêndio e 
+pânico das edificações; 
+ 
+XII -  manter em arquivo os projetos aprovados de seguran ça contra incêndio e 
+pânico, bem como as cópias de laudos periciais; 
+ 
+XIII - remeter à autoridade competente, através do Comand ante Geral, os laudos 
+periciais, quando solicitados; e 
+ 
+XIV - executar atos que lhe competirem como integrante d o sistema  preventivo 
+da Corporação e como integrante do Conselho de Política Estratégica. 
+ 
+Subseção II 
+Da Seção de Estudos e Projetos 
+ 
+Art. 60.  Compete à Seção de Estudos e Projetos: 
+ 
+I - promover estudo e análise de projetos de segurança  contra incêndio e pânico e 
+gás canalizado; 
+ 
+II - elaborar normas, portarias, critérios e programas pertinentes à sua esfera de 
+atribuição; 
+ 
+III -  exigir e fiscalizar todo e qualquer serviço ou err o de segurança contra 
+incêndio e pânico; 
+ 
+IV - elaborar documentos, formulários, exigências, planilhas, certidões, pareceres, 
+laudos de exigência e certidão de aprovação de segurança contra incêndio e pânico; e 
+ 
+V -  realizar contatos com órgãos externo nos assuntos relativos à sua esfera de 
+atribuição. 
+ 
+
+---
+
+## Página 40
+
+Subseção III 
+Da Seção de Testes, Vistorias e Pareceres 
+ 
+Art. 61.  Compete à Seção de Testes, Vistorias e Pareceres: 
+ 
+I - realizar testes e vistorias nas áreas de segurança contra incêndio e pânico; 
+ 
+II - realizar pareceres técnicos; 
+ 
+III - fiscalizar as condições de segurança em estabeleci mentos que comercializem 
+e armazenem recipientes de GLP; e 
+ 
+IV - fiscalizar fábricas, depósitos e barracas de fogos de artifício. 
+ 
+Subseção IV 
+Da Seção de Perícias e Pesquisas 
+ 
+Art. 62.  Compete à Seção de Perícias e Pesquisas: 
+ 
+I - realizar perícias de incêndio e explosões relacion adas com sua competência, 
+conforme legislação em vigor; 
+ 
+II -  realizar investigação e análises das causas, do de senvolvimento, das 
+conseqüências, dos danos, dos prejuízos e de outras  circunstâncias que interessarem à 
+elucidação do sinistro; 
+ 
+III -  oferecer apoio técnico científico, de acordo com s uas possibilidades, às 
+atividades de serviços técnicos, através de pesquisas; 
+ 
+IV -  elucidar os casos de incêndio e fornecer subsídios  para companhias 
+seguradoras, Justiça e outros órgãos e pessoas interessadas; e 
+ 
+V - fornecer subsídios e dados para as fases do ciclo operacional de Bombeiros a 
+fim de, entre outras possibilidades, evitar sinistr os, colaborar na elaboração de normas, 
+apontar falhas de projetos e não cumprimentos de no rmas, propor o redimensionamento 
+operacional da Corporação, apontar falhas nas táticas e técnicas bombeiros militar. 
+  
+Subseção V 
+Da Seção de Hidrantes 
+ 
+Art. 63.  Compete à Seção de Hidrantes: 
+ 
+I - planejar, orientar, coordenar, controlar e fiscali zar as atividades de serviços de 
+hidrantes; 
+ 
+II - estudar a previsão de hidrantes a serem instalados anualmente; e 
+ 
+III - manter contato com órgãos que operam e mantêm abas tecimento d'água na 
+comunidade. 
+ 
+
+---
+
+## Página 41
+
+Subseção VI 
+Da Seção de Expediente e Arquivo 
+ 
+Art. 64.  Compete à Seção de Expediente e Arquivo:  
+ 
+I - proceder o levantamento e manter atualizado o cada stro de empresas, firmas e 
+profissionais do sistema de segurança contra incêndio e pânico; 
+ 
+II - organizar e manter atualizado o arquivo da Diretoria; e 
+ 
+III -  manter atualizadas as atividades de arrecadação e protocolo do sistema de 
+segurança contra incêndio e pânico. 
+ 
+Seção V 
+Da Ajudância Geral 
+ 
+Art. 65.  A Ajudância Geral é o órgão de direção encarregado  da administração do 
+Quartel do Comando Geral, considerado como organiza ção bombeiro militar, bem assim do 
+expediente, da execução dos trabalhos de secretaria , incluindo a correspondência, correio, 
+redação e impressão do boletim diário, do protocolo  e arquivo gerais, do apoio de pessoal aos 
+órgãos que compõem o Comando Geral, dos serviços ge rais e da segurança do Quartel do 
+Comando  Geral, além de: 
+ 
+I -  executar os trabalhos de secretaria, incluindo cor respondência, correio, 
+protocolo geral, arquivo geral, boletim geral e outros; 
+ 
+II - executar o apoio de praças a todos os órgãos do Comando Geral; 
+ 
+III - executar a administração financeira, contabilidade  e tesouraria, almoxarife e 
+aprovisionamento do Quartel do Comando Geral (QCG),  bem como as instruções das praças 
+nele lotadas; 
+ 
+IV - elaborar os itens para publicação no boletim reser vado do Comando Geral 
+dos assuntos de competência do Ajudante Geral; 
+ 
+V - executar a segurança no serviço geral do QGC; 
+ 
+VI - executar o serviço de embarque; 
+ 
+VII - prover a alimentação do pessoal no QCG; e 
+ 
+VIII - elaborar seu regimento interno, submetendo-o à apr ovação do Comandante 
+Geral. 
+ 
+Parágrafo único.  A Ajudância Geral compreende: 
+ 
+I - o Ajudante Geral; 
+ 
+II - a Secretaria Geral; 
+ 
+
+---
+
+## Página 42
+
+III - a Seção Administrativa; 
+ 
+IV - a Seção de Comando e Serviço; 
+ 
+V - o Protocolo Geral; 
+ 
+VI - o Arquivo Geral; 
+ 
+VII - a Biblioteca Geral; e 
+ 
+VIII - a Banda de Música. 
+ 
+Subseção I 
+Do Ajudante Geral 
+ 
+Art. 66.  Compete ao Ajudante Geral: 
+ 
+I - ordenar as despesas do Comando Geral; 
+ 
+II – supervisionar os trabalhos de secretaria, incluindo: 
+ 
+a) receber, preparar e expedir a correspondência do Comando Geral; 
+ 
+b) encaminhar aos órgãos do Comando Geral documentos que exijam pareceres e 
+informações, ou dos quais se lhes deva dar conhecimento; e 
+ 
+c) receber e expedir a correspondência do Comandante Geral. 
+ 
+III - supervisionar as atividades do Arquivo Geral da Corporação, do arquivo do 
+QCG e de microfilmagem de documentos; 
+ 
+IV - prever e prover os órgãos do QCG dos materiais necessários ao seu 
+funcionamento; 
+ 
+V - exercer toda a administração interna do QCG; 
+ 
+VI - assegurar a instrução e a disciplina do QCG e a regularidade dos serviços 
+internos e gerais; 
+ 
+VII - organizar a segurança do QCG; 
+ 
+VIII - autorizar o fornecimento de certidões expedidas pelo Arquivo Geral; 
+ 
+IX - autorizar o atendimento a requisições de embarques; 
+ 
+X - coordenar as providências administrativas relativas a atos solenes realizados 
+no QCG; 
+ 
+
+---
+
+## Página 43
+
+XI - providenciar a publicação dos despachos e ordens emanadas do Comando 
+Geral e dos órgãos que estão lotados no QCG, bem como dos assuntos de interesse geral da 
+Corporação no Boletim Geral do CBMAL; 
+ 
+XII - submeter à aprovação do Comandante Geral o Regimento Interno da 
+Ajudância Geral;  
+ 
+XIII - delegar atribuições de sua competência; e 
+ 
+XIV - apoiar administrativamente o Conselho de Políticas Estratégicas. 
+ 
+Subseção II 
+Da Secretaria Geral 
+ 
+Art. 67.  Compete à Secretaria Geral: 
+ 
+I - planejar, orientar, coordenar, executar, fiscaliza r e controlar, sob a supervisão 
+do Ajudante Geral, as atividades que se inserem no rol de sua competência; 
+ 
+II - promover estudos, análises e pesquisas tendo em vi sta o aprimoramento e a 
+racionalização de suas atividades; 
+ 
+III - tratar de: 
+ 
+a)  assuntos referentes à legislação em geral; 
+ 
+b)  assuntos de estatística referentes às suas atividades; e, 
+ 
+c)  do contencioso administrativo do Corpo de Bombeiros Militar. 
+ 
+IV - ter sob a sua responsabilidade o expediente, o Pro tocolo Geral, o Arquivo e o 
+Boletim Geral do Corpo de Bombeiros Militar; 
+ 
+V - propor ao Ajudante Geral a expedição de atos admin istrativos de interesse da 
+Secretaria Geral; 
+ 
+VI -  receber, classificar, fichar, revisar, autuar, con trolar e distribuir todo o 
+expediente do Corpo de Bombeiros Militar; 
+ 
+VII - expedir a documentação externa do Comando Geral do Corpo de Bombeiros 
+Militar; 
+ 
+VIII - promover a busca de processos e, quando cabível, a exação destes; 
+ 
+IX - encaminhar para o Arquivo Geral os processos para esse fim; 
+ 
+X -  informar, com presteza, sobre o andamento dos proc essos às partes 
+interessadas; 
+ 
+
+---
+
+## Página 44
+
+XI - organizar, conservar e manter em ordem toda a docu mentação do Arquivo 
+Geral; 
+ 
+XII -  organizar, fazer publicar e distribuir o Boletim G eral do Corpo de 
+Bombeiros Militar; 
+ 
+XIII -  providenciar a impressão de toda a documentação gr áfica do Corpo de 
+Bombeiros e outras publicações, quando for determinado; 
+ 
+XIV - executar as atividade de biblioteca do Corpo de Bombeiros Militar; 
+ 
+XV - organizar e manter atualizada e catalogada toda a documentação e legislação 
+referentes ao Corpo de Bombeiros Militar; 
+ 
+XVI - assessorar o Ajudante Geral nas informações dos do cumentos e processos 
+litigiosos; e 
+ 
+XVII - estudar e elaborar propostas de programação das ne cessidades e recursos 
+financeiros para a execução de suas atividades. 
+ 
+Subseção III 
+Da Seção Administrativa da Ajudância de Ordem 
+ 
+Art. 68.  À Seção Administrativa compete tratar de assuntos atinentes a 
+almoxarifado, aprovisionamento, finanças e manutenção dos bens móveis e imóveis do QCG. 
+ 
+Subseção IV 
+Da Seção de Comando e Serviço 
+ 
+Art. 69.  À Seção de Comando e Serviço, órgão diretamente su bordinado ao 
+Ajudante Geral, destina-se à segurança e defesa das instalações do quartel do comando geral e 
+ao apoio das necessidades de pessoal dos órgãos do comando geral, além das competências e 
+atribuições orgânicas e funcionais inerentes às sub unidades incorporadas, no que for 
+aplicável. 
+ 
+Subseção V 
+Do Protocolo Geral 
+ 
+Art. 70.  Compete ao Protocolo Geral: 
+ 
+I - receber, protocolar e distribuir toda a documentação que der entrada no Quartel 
+do Comando Geral e na Ajudância Geral; e 
+ 
+II -  protocolar a saída de documentos da Ajudância Gera l, controlando e 
+arquivando a segunda via. 
+ 
+ 
+Subseção VI 
+Do Arquivo Geral 
+ 
+
+---
+
+## Página 45
+
+Art. 71.  Compete ao Arquivo Geral: 
+ 
+I - providenciar a encadernação dos documentos elabora dos pela Ajudância Geral 
+e mantê-los arquivados e devidamente organizados, para fins de consultas e orientações; 
+ 
+II - dar cumprimento aos despachos exarados pela Ajudância Geral; e 
+ 
+III - manter organizado e atualizado todo o arquivo da Ajudância Geral. 
+ 
+Subseção VII 
+Da Biblioteca Geral 
+ 
+Art. 72.  A Biblioteca Geral é o órgão da Ajudância Geral in cumbida da coleção 
+de livros, leis e regulamentos, dispostos ordenadam ente para o estudo e consulta, para uso 
+exclusivo do público interno ou para realização de pesquisa por particular, devidamente 
+autorizado. 
+ 
+Subseção VIII 
+Da Banda de Música 
+ 
+Art. 73.  Compete à Banda de Música: 
+ 
+I - participar de honras militares; 
+ 
+II - manter o registro e controle das partituras musicais; 
+ 
+III - participar de solenidades cívicas e desportivas; 
+ 
+IV - elaborar o plano de instrução musical a ser aprovado pelo Comandante Geral; 
+ 
+V -  apoiar as demais organizações bombeiros militares nas solenidades 
+programadas; 
+ 
+VI -  participar de eventos civis, quando devidamente au torizada pelo Comando 
+Geral;  
+ 
+VII - zelar e manter em bom estado de uso os instrumentos musicais; e 
+ 
+VIII - executar consertos sinfônicos, se for o caso. 
+ 
+Seção VI 
+Das Comissões 
+ 
+Art. 74.  As Comissões são órgãos de assessoramento do Coman dante Geral 
+constituídas para tratar de assuntos específicos de interesse da Corporação e se destinam a dar 
+flexibilidade às metas e políticas administrativas do Comando Geral. 
+ 
+§ 1º  As Comissões compreendem: 
+ 
+I - a Comissão de Promoção de Oficiais, presidida pelo Comandante Geral; 
+
+---
+
+## Página 46
+
+ 
+II - a Comissão de Promoção de Praças, presidida pelo Subcomandante Geral; e 
+ 
+III - a Comissão Permanente de Licitação, presidida por um Oficial Superior da 
+Corporação. 
+ 
+§ 2º  As Comissões têm caráter permanente e são regidas por legislação específica. 
+ 
+§ 3º  O Comandante Geral constituirá, quando necessário,  comissões temporárias 
+para tratar de assuntos específicos de interesse da Corporação. 
+ 
+CAPÍTULO III 
+DOS ÓRGÃOS DE APOIO 
+ 
+Art. 75.  Os órgãos de apoio compreendem: 
+ 
+I - a Policlínica; 
+ 
+II - os Centros: 
+ 
+a)  de Formação, Aperfeiçoamento e Especialização; 
+ 
+b)  de Manutenção; 
+ 
+c)  de Assistência; e 
+ 
+d)  de Tecnologia de Informática e informação; 
+ 
+III - o Almoxarifado Central; e 
+ 
+IV - o Aprovisionamento Central. 
+ 
+Seção I 
+Da Policlínica 
+ 
+Art. 76.  A Policlínica é o órgão de apoio do sistema de saú de da Corporação, 
+subordinado ao Comandante Geral, incumbido do estud o, do planejamento, da supervisão, da 
+execução e do controle das atividades de assistênci a médica, odontológica, farmacêutica e 
+sanitária prestadas aos Bombeiros Militares e seus dependentes, na forma da legislação em 
+vigor, cabendo-lhe ainda: 
+ 
+I -  executar as atividade médico ambulatoriais, odonto lógicas, farmacêuticas, 
+sanitárias e psicológicas; 
+ 
+II -  executar inspeção de saúde dos bombeiros militares  e de seus dependentes 
+legais, emitindo os respectivos laudos; 
+ 
+III -  assessorar a Diretoria de Material e Patrimônio qu ando da elaboração do 
+pedido para aquisição de material; 
+ 
+
+---
+
+## Página 47
+
+IV - emitir laudo e parecer técnico em questão de saúde; 
+ 
+V -  executar os serviços de junta de inspeção de saúde  necessários ao 
+cumprimento da legislação; 
+ 
+VI -  constituir e manter registro médico sanitário dos bombeiros militares e de 
+seus dependentes; 
+ 
+VII - executar a instauração de Inquérito Sanitário de Origem; 
+ 
+VIII - compor a Junta Superior de Saúde, em nível de recu rsos, atendendo ordem 
+legal; 
+ 
+IX - exercer outras competências que lhes forem determinadas; e 
+ 
+X - coordenar o serviço de ambulância do CBM/AL. 
+ 
+Parágrafo único.    A Policlínica compreende: 
+ 
+I  - o Diretor; 
+ 
+II   -  a Junta de Inspeção de Saúde; 
+ 
+III  -  o Serviço de Clínica Médica; 
+ 
+IV  -  o Serviço Odontológico; 
+ 
+V   -  o Serviço de Atendimento Ambulatorial; 
+ 
+VI  -  o Serviço de Enfermaria; 
+ 
+VII  - o Serviço de Farmácia; e 
+ 
+VIII - a Seção de Administração. 
+ 
+Subseção I 
+Do Diretor da Policlínica 
+ 
+Art. 77.  Compete ao Diretor da Policlínica: 
+ 
+I - dirigir as atividades da Policlínica; 
+ 
+II -  assessorar o Comando Geral nos assuntos relacionad os com a saúde dos 
+Bombeiros Militares e seus dependentes; 
+ 
+III -  propor, na forma dos dispositivos legais, a contra tação e dispensa de 
+especialistas para a área de saúde; 
+ 
+IV - responsabilizar-se pelo controle do pessoal e pela administração do material e 
+equipamento da Policlínica; 
+
+---
+
+## Página 48
+
+ 
+V - controlar os serviços de atendimento aos bombeiros  militares e dependentes, 
+zelando pelo padrão de qualidade; 
+ 
+VI - cumprir e fazer cumprir as determinações da políti ca de saúde emanadas pelo 
+Comando Geral da Corporação e por órgãos superiores da área; 
+ 
+VII - elaborar o regimento interno da Policlínica, remet endo-o ao  Comandante 
+Geral para aprovação; 
+ 
+VIII - elaborar as Normas Gerais de Ação dos órgãos da Po liclínica e submetê-las 
+à aprovação do Comandante Geral; 
+ 
+IX -  coordenar a aplicação das medidas de higiene e pro filaxia necessárias à 
+preservação da saúde dos integrantes da Corporação e de seus dependentes; 
+ 
+X - exercer outras atribuições conferidas pelo Comandante Geral; e 
+ 
+XI -  assessorar o Conselho de Políticas Estratégicas no s assuntos relacionados 
+com a área de saúde dos bombeiros militares e seus dependentes, apresentado e expondo 
+informações solicitadas. 
+ 
+Subseção II 
+Da Junta de Inspeção de Saúde 
+ 
+Art. 78.  As Juntas de Inspeção de Saúde são constituídas po r bombeiros militares 
+do Quadro de Saúde do CBMAL, ou elementos de saúde técnico especializados, e destinam-
+se ao trato das questões especificas ou genéricas q ue lhes forem atribuídas, tendo suas 
+constituições, atribuições e procedimentos regidos por legislação própria. 
+ 
+Subseção III 
+Dos Serviços de Clínica Médica, Odontologia, 
+Atendimento Ambulatorial, Enfermaria e Farmácia 
+ 
+Art. 79.  As atribuições genéricas dos Serviços de Clínica M édica, Odontologia, 
+Atendimento Ambulatorial, Enfermaria e Farmácia são as seguintes: 
+ 
+I - manter o Diretor da Policlínica informado sobre as  atividades dos respectivos 
+órgãos; 
+ 
+II - estudar, emitir parecer e elaborar expediente rela tivos aos assuntos que lhes 
+forem atribuídos; 
+ 
+III -  elaborar e propor instruções, relatórios, normas e  publicações relativos às 
+suas atividades; 
+ 
+IV - executar, controlar e coordenar as atividades técn ico especializadas que lhes 
+forem pertinentes; 
+ 
+
+---
+
+## Página 49
+
+V - manter o controle sistemático sobre o cumprimento da legislação pertinente às 
+suas atividades; 
+ 
+VI -  criar e manter condições indispensáveis para asseg urar eficiência aos 
+controles internos e externos; e 
+ 
+VII -  coletar, estudar e interpretar os dados estatístic os relativos às suas 
+atividades. 
+ 
+Subseção IV 
+Da Seção de Administração 
+ 
+Art. 80.  Compete à Seção de Administração da Policlínica: 
+ 
+I -  assessorar o Diretor da Policlínica nos assuntos r eferentes à administração 
+financeira, de material, de patrimônio, de contabil idade, de transportes, e às atividades gerais 
+da Policlínica; 
+ 
+II -  coadjuvar o Diretor no planejamento, na coordenaçã o e no controle 
+administrativo; 
+ 
+III - exercer, secundando o Diretor, constante fiscalização sobre os pormenores da 
+administração e do uso dos transportes da Policlínica; e 
+ 
+IV - elaborar o planejamento administrativo, a programa ção e a orçamentação no 
+âmbito da Policlínica.   
+ 
+Seção II 
+Do Centro de Formação, Aperfeiçoamento e Especialização 
+ 
+Art. 81.  O Centro de Formação, Aperfeiçoamento e Especializ ação - CFAE é o 
+órgão de apoio do sistema de recursos humanos, subo rdinado à Diretoria de Recursos 
+Humanos, incumbindo da formação, da capacitação, do  aperfeiçoamento, do treinamento e da 
+instrução especializada dos oficiais e praças da Co rporação e, eventualmente, de bombeiros 
+militares de outras corporações, cabendo-lhe ainda: 
+ 
+I - planejar, coordenar, fiscalizar, controlar e execu tar as atividades de formação, 
+aperfeiçoamento e especialização das praças Bombeiros Militar; 
+ 
+II -  propor mudanças e cumprir o Plano Geral de Ensino (PGE), elaborado em 
+conjunto com a Diretoria de Recursos Humanos; 
+ 
+III - acompanhar a aplicação do ensino, aferindo periodicamente o rendimento; 
+ 
+IV - propor ao Comando Geral a nomeação, designação e dispensa de professores, 
+instrutores, monitores e auxiliares de ensino; 
+ 
+V -  propor ao Diretor de Recursos Humanos, através do intercâmbio com 
+Corporações có-irmãs ou outros órgãos de ensino, a realização de cursos de formação, 
+
+---
+
+## Página 50
+
+aperfeiçoamento, especialização e reciclagem de ins trutores e monitores para servirem no 
+Centro; 
+ 
+VI -  manter registro das atividades escolares desenvolv idas durante os cursos, 
+convênios e estágios; 
+ 
+VII - propor ao Comandante Geral, através do Diretor de Recursos Humanos, a 
+aprovação e expedição de Certificados e Diplomas; 
+ 
+VIII - propor ao DRH normas que disciplinem as atividades  de orientação psico 
+educacional e orientação profissional desenvolvidas no CFAE; 
+ 
+IX - solicitar e encaminhar ao DRH documentação para a elaboração do processo 
+inicial para a contratação de professores não perte ncentes aos quadros da Corporação ou de 
+bombeiros militares da reserva; 
+ 
+X - encaminhar, mensalmente, à Diretoria de Recursos H umanos a documentação 
+para a elaboração do processo de pagamento dos professores do CFAE; 
+ 
+XI - elaborar o calendário letivo de ensino para o ano civil seguinte; 
+ 
+XII -  elaborar estatísticas relativas às atividades de e nsino e instrução, de 
+adestramento e manutenção da tropa; 
+ 
+XIII -  promover atividades de intercâmbio técnico cultura is, a nível estadual, 
+nacional e internacional; 
+ 
+XIV - relacionar os candidatos aos cursos e estágios em andamento; 
+ 
+XV - submeter ao Comandante Geral, através do DRH, as v agas oferecidas para 
+cursos e estágios em outras Corporações; 
+ 
+XVI - divulgar vagas, preparar e submeter ao processo de  seleção os candidatos 
+aos referidos cursos e estágios; 
+ 
+XVII - solicitar assessoramento nas áreas pedagógicas e d e intercâmbio técnico 
+profissional; e 
+ 
+XVIII - exercer outras atividades que lhe forem determinadas. 
+ 
+Parágrafo único.  O Centro de Formação, Aperfeiçoamento e Especializ ação tem 
+a seguinte estrutura: 
+ 
+I - o Comandante; 
+ 
+II - a Seção Técnica; 
+ 
+III - a Seção de Meios; 
+ 
+IV - a Seção de Educação Física e Desportos; 
+
+---
+
+## Página 51
+
+ 
+V - a Seção de Administração; e 
+ 
+VI - o Corpo de Alunos. 
+ 
+Subseção I 
+Do Comandante do CFAE 
+ 
+Art. 82.  Compete ao Comandante do Centro de Formação, Aperf eiçoamento e 
+Especialização: 
+ 
+I - dirigir, orientar, coordenar e fiscalizar as atividades do CFAE; 
+ 
+II - propor a efetivação de matrículas, aprovação, reprovação, desligamento e 
+outros atos à aprovação do diretor da DRH; 
+ 
+III - apresentar relatórios, ao final de cada período letivo, ao diretor da DRH; 
+ 
+IV - submeter à aprovação da DRH os planos de cada Unidade Didática; 
+ 
+V - elaborar e propor mudanças ao diretor da DRH no Regimento Interno do 
+CFAE; 
+ 
+VI - elaborar as NGA do Centro, submetendo-
+se à aprovação do DRH                                                                 
+VII -  apresentar trabalhos propondo programas, metodolog ias e sistemáticas de 
+ensino, aprendizagem e estudos que estimulem um mel hor desempenho da profissão 
+Bombeiro Militar; e 
+ 
+VIII - exercer outras atribuições que lhe forem determinadas. 
+ 
+Subseção II 
+Da Seção Técnica 
+ 
+Art. 83.  Compete à Seção Técnica: 
+ 
+I - estabelecer o planejamento, o controle, o ensino e  o aprendizado no Centro de 
+Formação  Aperfeiçoamento e Especialização; 
+ 
+II - consolidar, rever e submeter à apreciação os plano s e programas de matéria, 
+bem como elaborar o Plano Geral de Ensino, de acord o com as diretrizes baixadas pelo 
+Comando Geral; e 
+ 
+III - assegurar a continuidade aos currículos do ensino ministrado no CFAE. 
+ 
+Subseção III 
+Da Seção de Meios 
+ 
+Art. 84.  Compete à Seção de Meios: 
+ 
+
+---
+
+## Página 52
+
+I - apoiar o Centro de Formação, Aperfeiçoamento e Especialização com os meios 
+auxiliares de ensino e instrução, de acordo com a evolução didática; 
+ 
+II -  participar do planejamento para prever e provar os  meios materiais 
+necessários à melhor fiscalização das atividades de ensino; 
+ 
+III -  orientar e controlar e fiscalizar os trabalhos de impressão das publicações 
+escolares; 
+ 
+IV - assistir ao Corpo Docente na programação de meios auxiliares; 
+ 
+V - planejar, executar e coordenar a manutenção da apa relhagem e equipamentos 
+do acervo do CFAE, bem como zelar pela boa disposiç ão de suas instalações, inclusive salas 
+de aulas; e 
+ 
+VI -  ter a seu cargo o arquivo e a biblioteca do Centro , bem como do museu 
+didático. 
+ 
+Subseção IV 
+Da Seção de Educação Física e Desportos 
+ 
+Art. 85.  Compete à Seção de Educação Física e Desportos: 
+ 
+I - orientar e participar da organização e do planejamento das atividades de prática 
+de educação física e desportos na Corporação; 
+ 
+II - organizar, orientar, coordenar e controlar as atividades de: 
+ 
+a)  preparo de equipes do CFAE destinadas à participaç ão em competições 
+externas; e 
+ 
+b)  olimpíadas e outras competições de caráter interno  no Corpo de Bombeiros 
+Militar. 
+ 
+III - propor normas técnicas pertinentes às atividades de sua competência; 
+ 
+IV - propor o planejamento global e o desdobramento das  atividades de educação 
+física e desportos no âmbito interno e externo, bem  como a previsão do apoio às suas 
+necessidades; 
+ 
+V - manter contatos com órgãos similares de outras org anizações mediante ordem 
+ou autorização do Comandante do CFAE; e 
+ 
+VI - estudar e elaborar propostas de cursos e estágios para seu corpo discente. 
+ 
+Subseção V 
+Seção de Administração 
+ 
+Art. 86.  Compete à Seção de Administração do CFAE: 
+ 
+
+---
+
+## Página 53
+
+I - assessorar o Comandante nos assuntos referentes à administração financeira, de 
+material, de patrimônio, de contabilidade, de trans portes e às atividades de serviços gerais do 
+Centro de Formação, Aperfeiçoamento e Especialização; 
+ 
+II -  coadjuvar o Comandante no planejamento, na coorden ação, e no controle 
+administrativo e serviços do CFAE; 
+ 
+III - exercer, secundando o Comandante do CFAE, constante fiscalização sobre os 
+pormenores da administração; e 
+ 
+IV - elaborar o planejamento administrativo, a programa ção e a orçamentação no 
+âmbito do CFAE. 
+ 
+Subseção VI 
+Do Corpo de Alunos 
+ 
+Art. 87.  Ao Comandante do Corpo de Alunos compete: 
+ 
+I - zelar e manter pela conduta e disciplina dos alunos do CFAE; 
+ 
+II - assistir, orientar e realizar o enquadramento bomb eiro militar dos instruendos 
+em compatibilidade com a natureza específica dos cursos, idade e condições do aluno; 
+ 
+III -  registrar as observações e apreciações relativas a os alunos, no tocante à 
+incidência de seu comportamento, atitudes e ações; 
+ 
+IV -  sistematizar a conceituação dos instruendos, de ac ordo com as normas 
+previstas para a sua enunciação; e 
+ 
+V - exercer atribuições previstas para o comando de su bunidade incorporada, no 
+que for aplicável ao Centro de Formação, Aperfeiçoamento e Especialização. 
+ 
+Seção III 
+Do Centro de Manutenção 
+ 
+Art. 88.  O Centro de Manutenção - CEMAN é o órgão de apoio do Sistema 
+Logístico, subordinado à Diretoria de Material e Pa trimônio, incumbido das atividades de 
+manutenção do material e do patrimônio da Corporaçã o, inclusive das instalações, bem como 
+do recebimento e da estocagem de todo material necessário a esse fim, cabendo-lhe ainda: 
+ 
+I - atender as necessidades básicas de reparação e con fecção de material em uso 
+na Corporação; 
+ 
+II - executar a manutenção preventiva e a recuperação d e viaturas e equipamentos 
+em uso na Corporação; 
+ 
+III - organizar e manter o fichário das viaturas do CBM/AL; 
+ 
+IV - controlar e fiscalizar a execução, manutenção e substituição de peças; 
+ 
+
+---
+
+## Página 54
+
+V - elaborar o cronograma físico e acompanhar a execução de obras; 
+ 
+VI - manter programa de reciclagem e aperfeiçoamento de  mão-de-obra em todos 
+os setores de atividades do Centro; 
+ 
+VII -  criar meios que permitam realizar controle de qual idade das viaturas, dos 
+equipamentos e dos serviços executados; 
+ 
+VIII - fiscalizar e controlar a execução da manutenção das viaturas e outros meios 
+de locomoção sob responsabilidade da Corporação; 
+ 
+IX - manter atualizados os dados estatísticos dos serviços executados; e 
+ 
+X - executar outras atividades que lhe forem determinadas. 
+ 
+Parágrafo único.   O Centro de Manutenção compreende: 
+ 
+I - o Comandante; 
+ 
+II - o Serviço de Manutenção de Material Motomecanizado; 
+ 
+III - o Serviço de Manutenção de Material Operacional; 
+ 
+IV - o Serviço de Manutenção de Obra; e 
+ 
+V - a  Seção de Administração. 
+ 
+Subseção I 
+Do Comandante do CEMAN 
+ 
+Art. 89.  Compete ao Comandante do Centro de Manutenção: 
+ 
+I - dirigir as atividades do Centro; 
+ 
+II - decidir sobre as questões relativas à manutenção o u submetê-las ao Diretor de 
+Material e Patrimônio; 
+ 
+III - propor normas de instruções técnicas para o aprimo ramento do sistema de 
+manutenção na Corporação; 
+ 
+IV - emitir parecer técnico em questões de manutenção, apoio e recuperação; 
+ 
+V - propor a aplicação de recursos financeiros relativ os à manutenção, de acordo 
+com as prioridades estabelecidas; 
+ 
+VI -  elaborar o Regimento Interno do Centro de Manutenç ão, remetendo-o ao 
+Diretor de Material e Patrimônio para aprovação; 
+ 
+VII - elaborar relatório estatístico das atividades do Centro; 
+ 
+
+---
+
+## Página 55
+
+VIII -  elaborar as NGA do Centro para aprovação do Direto r de Material e 
+Patrimônio; 
+ 
+IX - elaborar e propor os níveis mínimos de suprimento de material para o serviço 
+de manutenção; 
+ 
+X - expedir normas de rotina e procedimentos em seu campo de atuação; 
+ 
+XI -  elaborar instruções sobre utilização e manutenção dos equipamentos e 
+viaturas; e 
+ 
+XII -  exercer outras atribuições que lhe forem determina das pelo Diretor de 
+Material e Patrimônio. 
+ 
+Subseção II 
+Do Serviço de Manutenção de Material Motomecanizado 
+ 
+Art. 90.  Compete ao Serviço de Manutenção de Material Motomecanizado: 
+ 
+I - assessorar o Comandante do CEMAN nos assuntos refe rentes a suprimentos e 
+manutenção de material bélico, de comunicações, de motomecanização, de saúde e outros de 
+sua competência; 
+ 
+II -  coadjuvar o Comandante do Centro no planejamento, na coordenação e no 
+controle de suprimento de manutenção de material bélico; e 
+ 
+III - exercer, secundando o Comandante do Centro, consta nte fiscalização sobre 
+os pormenores de recebimento, estocagem e distribui ção e manutenção de todo e qualquer 
+material adquirido pela Diretoria de Apoio Logístic o ou que forem mandados armazenar ou 
+estocar no CEMAN. 
+ 
+Subseção III 
+Do Serviço de Manutenção de Material Operacional 
+ 
+Art. 91.  Compete ao Serviço de Manutenção de Material Operacional: 
+ 
+I - assessorar o Comandante do CEMAN nos assuntos refe rentes a suprimento de 
+material de intendência; 
+ 
+II -  coadjuvar o Comandante do Centro no planejamento, na coordenação e no 
+controle de suprimento e fiscalização de material de intendência; e 
+ 
+III -  executar as atividades pormenorizadas de recebimen to, estocagem e 
+distribuição de todo e qualquer material de intendê ncia, adquiridos pela Diretoria de Material 
+e Patrimônio ou que for mandado armazenar ou estocar no Centro, inclusive víveres. 
+ 
+ 
+ 
+Subseção IV 
+
+---
+
+## Página 56
+
+Do Serviço de Manutenção de Obra 
+ 
+Art. 92.  Compete ao Serviço de Manutenção de Obra: 
+ 
+I - assessorar o Comandante do CEMAN nos assuntos refe rentes a suprimento e 
+manutenção de obras; 
+ 
+II -  coadjuvar o Comandante do Centro no planejamento, na coordenação e no 
+controle de suprimento e manutenção de obras; e 
+ 
+III -  executar as atividades pormenorizadas de recebimen to, estocagem, 
+distribuição e manutenção de todo e qualquer materi al de obras e similares adquiridos pela 
+DMP, relativos a obras de construção. 
+ 
+Subseção V 
+Da Seção de Administração 
+ 
+Art. 93.  Compete à Seção de Administração: 
+ 
+I - assistir ao Comandante do Centro em seus encargos funcionais; 
+ 
+II - executar os serviços de expediente, correspondência e protocolo do CEMAN; 
+ 
+III -  tratar dos assuntos referentes ao pessoal, informa ções, instrução, relações 
+públicas e logística do Centro, bem como de sua administração financeira e contábil; 
+ 
+IV - assegurar o apoio de serviços gerais ao Centro; 
+ 
+V -  elaborar relatórios e planos de coleta de dados es tatísticos relativos aos 
+encargos do Centro;  
+ 
+VI - organizar, publicar e distribuir o boletim do Cent ro, bem como organizar e 
+manter atualizado o seu histórico; e 
+ 
+VII -  tratar de assuntos relativos à modernização admini strativa no âmbito do 
+CEMAN. 
+ 
+Seção IV 
+Do Centro de Tecnologia, Informática e Informação 
+ 
+Art. 94.  O Centro de Tecnologia, Informática e Informação é  o órgão de apoio do 
+sistema de banco de dados do Corpo de Bombeiros Mil itar, subordinado ao Comandante 
+Geral, encarregado de gerenciar os “softwares” de c omputadores utilizados nas áreas 
+administrativa e operacional da Corporação, do supo rte tecnológico e do apoio ao usuário, 
+provendo informações para a rede de planejamento e avaliação da gestão pública. 
+ 
+Parágrafo único.  O Centro de Tecnologia, Informática e Informação 
+compreende: 
+ 
+I - o Comandante; 
+
+---
+
+## Página 57
+
+ 
+II - a Seção de Gerenciamento de Redes e Banco de Dados; 
+ 
+III - a Seção de Desenvolvimento de Sistemas; e 
+ 
+IV - a Seção de Suporte e Apoio ao Usuário. 
+ 
+Subseção I 
+Do Comandante do Centro de Tecnologia, Informática e Informática 
+ 
+Art. 95.  Compete ao Comandante do Centro de Tecnologia, Inf ormática e 
+Informática: 
+ 
+I - praticar atos administrativos necessários ao funcionamento do Centro; 
+ 
+II - planejar, coordenar e controlar as atividades desenvolvidas pelo Centro; 
+ 
+III -  cumprir e fazer cumprir os projetos, programas e d iretrizes do Diretor de 
+Recursos Humanos, após prévia autorização do Comando Geral da Corporação; 
+ 
+IV -  efetivar o apoio operacional no uso de equipamento s e sistemas de 
+processamento eletrônico de dados de uso comum, a partir de Centro ou não; 
+ 
+V - realizar o desenvolvimento de análise e programaçã o de “softwares” a serem 
+instalados nos diversos equipamentos da Corporação; 
+ 
+VI -  realizar o desenvolvimento de análise e programaçã o de sistemas 
+operacionais e administrativos necessários à estruturação da Corporação; 
+ 
+VII -  elaborar o Regimento Interno e as Normas Gerais de  Ação do Centro, 
+remetendo-os à aprovação do Comandante Geral; e 
+ 
+VIII - desempenhar as atividades que lhe forem determinadas. 
+ 
+Subseção II 
+Da Seção de Gerenciamento de Redes e Banco de Dados 
+ 
+Art. 96.  A Seção de Gerenciamento de Redes e Banco de Dados  é responsável 
+pela estrutura e segurança física e lógica, operaci onalidade e gerenciamento da rede de 
+computadores e do banco de dados da Corporação no i ntuito de prover o suporte necessário 
+para a integração dos diversos órgãos da Instituiçã o e desta com os órgãos externos 
+pertinentes às atividades fins da Corporação, visan do a integridade e confiabilidade da 
+informação. 
+ 
+Subseção III 
+Seção de Desenvolvimento de Sistemas 
+ 
+Art. 97.  A Seção de Desenvolvimento de Sistemas é responsáv el pela análise, 
+projeto, implementação, implantação e acompanhament o dos sistemas de computador de 
+interesse da Corporação. 
+
+---
+
+## Página 58
+
+ 
+Subseção IV 
+Da Seção de Suporte e Apoio ao Usuário. 
+ 
+Art. 98.  A Seção de Suporte e Apoio ao Usuário é responsáve l pelo fornecimento 
+de assistência ao usuário no tocante a instalação d e “softwares”, periféricos, treinamentos 
+básicos de utilização de “software” e “hardware”, b em como pela manutenção dos 
+equipamentos de informática da Corporação.    
+ 
+Seção V 
+Do Centro de Assistência 
+ 
+Art. 99.   O Centro de Assistência é o órgão de apoio do sis tema de recursos 
+humanos, subordinado à Diretoria de Recursos Humano s, incumbido de atender as 
+necessidades assistenciais ao bombeiro militar a à sua família, cabendo-lhe ainda: 
+ 
+I - planejar, coordenar, controlar, fiscalizar  e executar as atividades de assistência 
+social, psicológica, jurídica e religiosa; 
+ 
+II - promover medidas que visem a sociabilização e bem- estar do público interno, 
+bem como acompanhar o nível de rigidez e segurança nos locais de trabalho; 
+ 
+III - promover, em conjunto com o Diretoria de recursos Humanos, pesquisas e 
+estudos das causas dos desajustamentos no trabalho,  aplicando as correspondentes medidas 
+preventivas; 
+ 
+IV - diagnosticar, eliminar e ou minimizar as causas e os focos de desajustamento 
+psicológicos e sociais no âmbito interno e familiar; 
+ 
+V - promover estudos das causas das ausências ao servi ço e do baixo rendimento 
+no trabalho, sugerindo as medidas gerais e ou individuais para minorá-las; 
+ 
+VI - identificar as causas de acidentes profissionais de cunho psicológico e indicar 
+medidas corretivas e preventivas; 
+ 
+VII -  proporcionar assistência jurídica gratuita aos bom beiros militares, aos 
+servidores civis que prestam serviços na Corporação  e respectivas famílias nas situações 
+conseqüentes de atos de serviço através de órgãos p úblicos especializados, bem como 
+complementar a educação moral e cívica da tropa; 
+ 
+VIII -  elevar o moral individual do Bombeiro Militar e po ssibilitar-lhe 
+harmonioso e fraternal convívio em sua comunidade, proporcionando-lhe, ainda, 
+oportunidade de praticar a sua religião e satisfaze r o imperativo de sua fé, realçando-lhe o 
+caráter de profissional e cidadão;  
+ 
+IX - identificar e propor medidas para eliminar as causas dos desajustes conjugais, 
+do alcoolismo e das drogas nocivas observados em integrantes do CBMAL; e 
+ 
+X -  executar outras atividades que lhe forem determina das pelo Diretor de 
+Recursos Humanos. 
+
+---
+
+## Página 59
+
+ 
+Subseção Única 
+Do Comandante do Centro de Assistência 
+ 
+Art. 100.  Compete ao Comandante do Centro de Assistência: 
+ 
+I - acompanhar e avaliar com freqüência o nível de bem-estar individual e coletivo 
+da tropa; 
+ 
+II - incentivar a prática religiosa na Corporação; 
+ 
+III - propor atividade de lazer; 
+ 
+IV - levantar as principais causas de transgressão disciplinar; 
+ 
+V - orientar os BM em suas demandas disciplinares ou judiciais; 
+ 
+VI - manter quadro estatístico e fazer relatórios e faz er relatórios quadrimestrais e 
+anual de suas atividades; 
+ 
+VII - planejar suas ações com base nas ciências sociais; e 
+ 
+VIII - evitar despesas desnecessárias para a Corporação. 
+ 
+Seção VI 
+Do Almoxarifado Central 
+ 
+Art. 101.  O Almoxarifado Central é o órgão de apoio do siste ma logístico, 
+subordinado à Diretoria de Material e Patrimônio, i ncumbido do recebimento, da estocagem, 
+da distribuição de suprimentos específicos e da man utenção do material de intendência, além 
+de: 
+ 
+I - executar a conservação e guarda dos bens existentes no Almoxarifado; 
+ 
+II - regular e fiscalizar os procedimentos para recebim entos de bens patrimoniais, 
+através de doações, contratos ou transferências; 
+ 
+III -  executar as atividades pormenorizadas de recebimen to, estocagem, 
+armazenamento e distribuição de todo e qualquer mat erial de intendência ou equipamento 
+operacional adquirido pelo Corpo de Bombeiros, ou que for mandado armazenar ou estocar; 
+ 
+IV -  manter em depósito, com níveis de suprimento fixad o pelo DMP, todo o 
+material de distribuição automática com base em tabela; 
+ 
+V - manter em estoque, com prévia autorização do DMP, artigos e peças de maior 
+utilização no Corpo de Bombeiros; 
+ 
+VI -  manter em ordem fichários do material em estoque, segundo as 
+especificações técnicas, nomenclatura, padronização  e classificação estabelecidas pelo DMP; 
+e 
+
+---
+
+## Página 60
+
+ 
+VII - executar outras atividades que lhe forem determinadas pelo Comando Geral. 
+ 
+Seção VII 
+Do Aprovisionamento Central 
+ 
+Art. 102.  Do Aprovisionamento Central é o órgão de apoio do sistema logístico, 
+subordinado à Diretoria de Material e Patrimônio, i ncumbido do recebimento, da estocagem e 
+da distribuição de suprimentos e material de subsistência incumbe-lhe: 
+ 
+I - receber, estocar, armazenar e distribuir os vívere s destinados à alimentação do 
+pessoal, bem como os utensílios de copa e cozinha e ncaminhados ao serviço de 
+aprovisionamento; 
+ 
+II - dirigir os trabalhos de rancho, de acordo com as normas regulamentares; 
+ 
+III - confeccionar o cardápio mensal; 
+ 
+IV - conferir a qualidade dos víveres entregues no serv iço de aprovisionamento 
+para a alimentação da tropa; e 
+ 
+V - exercer outras atribuições que lhe forem dadas. 
+ 
+Subseção Única 
+Do Chefe do Aprovisionamento Central 
+ 
+Art. 103.  Compete ao chefe do Aprovisionamento Central: 
+ 
+I -  executar a gestão e a contabilidade dos gêneros al imentícios destinados ao 
+funcionamento do rancho; 
+ 
+II -  receber todos os artigos adquiridos pela Corporaçã o, conferindo-os com os 
+documentos respectivos; 
+ 
+III -  controlar a distribuição de gêneros alimentícios e  manter atualizado o 
+fichário dos titulares responsáveis por atividades de aprovisionamento; e 
+ 
+IV - exercer outras atribuições que lhe forem conferidas. 
+ 
+ 
+CAPÍTULO IV 
+DOS ÓRGÃOS DE EXECUÇÃO 
+ 
+Art. 104.  Os órgãos de execução do Corpo de Bombeiros Milita r do Estado de 
+Alagoas, constituídos pelas Unidades Operacionais, têm a seu cargo as missões de prevenção 
+e combate a incêndio, resgate, busca e salvamento e  socorros de urgência em atendimentos 
+pré-hospitalar. 
+ 
+Parágrafo único.  Os órgãos de execução do Corpo de Bombeiros Milita r do 
+Estado Alagoas compreendem: 
+
+---
+
+## Página 61
+
+ 
+I -  o Comando Operacional de Bombeiros; e 
+ 
+II - as Unidades Bombeiros Militar 
+ 
+Seção I 
+Do Comando Operacional de Bombeiros (COB) 
+ 
+Art. 105.  Comando Operacional de Bombeiros é a denominação g enérica dada à 
+Organização Bombeiro Militar do mais alto escalão d o Sistema Operacional, dotada de 
+estrutura administrativa e operacional própria e su bordinada ao Comando Geral; tem a seu 
+cargo o planejamento estratégico, a coordenação, a fiscalização e o controle do emprego das 
+Unidades e Subunidades Operacionais da Corporação, que lhe são subordinadas. 
+ 
+Parágrafo único.  Os Comandos Operacionais de Bombeiros compreendem: 
+ 
+I - Comando Operacional de Bombeiros da Região Metropolitana de Maceió; e 
+ 
+II - Comando Operacional de Bombeiros do Interior. 
+ 
+Art. 106.  Os Comandos Operacionais de Bombeiros têm as segui ntes estruturas 
+orgânicas comuns: 
+ 
+I - o Comandante Operacional de Bombeiros; 
+ 
+II -  o Conselho de Comandantes, constituído pelos Coman dantes das Unidades 
+Operacionais de Bombeiros Militar, subordinado e pr esidido pelo respectivo Comandante 
+Operacional de Bombeiros; 
+ 
+III - a Seção de Planejamento e Avaliação Operacional; 
+ 
+IV - a Seção Administrativa; e 
+ 
+V - o Centro de Operações e Comunicações. 
+ 
+Subseção I 
+Do Comandante Operacional de Bombeiro 
+ 
+Art. 107.  Compete ao Comandante Operacional de Bombeiro: 
+ 
+I -  planejar, coordenar e fiscalizar as ações operacio nais e administrativas no 
+âmbito de sua competência; 
+ 
+II -  manter o registro dos principais pontos de riscos existentes nas áreas de 
+atuação, desenvolvendo planos setoriais para protegê-las; 
+ 
+III - controlar e fiscalizar as condições e nível de ade stramento da tropa sob sua 
+responsabilidade, elaborando e fiscalizando o fiel cumprimento das notas de serviço, notas de 
+instrução e planos operacionais; 
+ 
+
+---
+
+## Página 62
+
+IV - planejar, coordenar e fiscalizar a manutenção do m aterial e equipamento, e 
+manter registros dos bens móveis que estiverem sob sua responsabilidade; 
+ 
+V - manter o registro estatístico das ocorrências veri ficadas nas áreas de atuação 
+das Unidades Operacionais (Uop) e Subunidades subor dinadas, e realizar estudos para o 
+aperfeiçoamento da prevenção e eficácia do atendimento nas ocorrências; 
+ 
+VI -  planejar, coordenar e fiscalizar o cumprimento da legislação referente à 
+prevenção de incêndio; 
+ 
+VII -  manter, em perfeito funcionamento, o serviço de co municações das 
+respectivas Unidades e Subunidades, através do Cent ro de Operações e Comunicações 
+(COC); 
+ 
+VIII - planejar, coordenar, fiscalizar e executar a movimentação do pessoal lotado 
+no Comando Operacional de Bombeiros; 
+ 
+IX -  adotar medidas que visem a informatização e a agil ização das ações 
+administrativas e operacionais das diversas UOp e Subunidades sob seu comando; 
+ 
+X -  controlar e fiscalizar a carga de bens patrimoniai s que estiverem sob sua 
+responsabilidade; 
+ 
+XI - apoiar o DST em suas competências, com pessoal treinado e habilitado para a 
+realização de serviços pertinentes; 
+ 
+XII -  elaborar o Regimento Interno do Comando Operaciona l de Bombeiros, 
+remetendo-o ao Comandante Geral para aprovação; 
+ 
+XIII - analisar, aprovar e ou modificar, em comum acordo com os Comandantes 
+das Unidades Oparacionais e o Subcomandante Geral, as Normas Gerais de Ações das 
+diversas UOp e Subunidades, remetendo as propostas ao Comandante Geral para aprovação; 
+ 
+XIV -  encaminhar ao Comandante Geral os Regimentos Inter nos das UOp e 
+Subunidades subordinadas ao COB; 
+ 
+XV - cumprir e fazer cumprir as normas regulamentares d e prevenção e proteção 
+contra incêndio,  pânico, salvamento e resgate; 
+ 
+XVI - controlar, fiscalizar e exigir o cumprimento das a tividades de instrução das 
+UOp e Subunidades subordinadas; 
+ 
+XVII -  praticar atos administrativos necessários ao perfe ito funcionamento das 
+atividades operacionais; 
+ 
+XVIII - comunicar, de imediato, ao Comandante Geral fatos graves que ocorram 
+nas áreas de suas UOp e Subunidades subordinadas; 
+ 
+XIX - presidir solenidades de passagem de comando de sua s UOp e Subunidades, 
+quando não presentes o Comandante ou o Subcomandante Gerais; 
+
+---
+
+## Página 63
+
+ 
+XX -  controlar e zelar pela conservação dos bens móveis  e imóveis sob sua 
+responsabilidade; 
+ 
+XXI - delegar competência aos comandante de UOp e Subunidades; 
+ 
+XXII -  manter contato com as demais organizações da Corpo ração ou com 
+autoridades e ou órgãos externos, visando um melhor desempenho de suas atividades; 
+ 
+XXIII -  movimentar oficiais e praças entre as UOp e Subuni dades, com prévio 
+conhecimento do Comandante Geral, enviando nota de publicação ao Diretor de Recursos 
+Humanos; 
+ 
+XXIV -  designar comissões para inventariar bens de bombei ros militares 
+desertores, falecidos ou desaparecidos nas áreas de  competência das respectivas UOp e 
+Subunidades;  
+ 
+XXV - exercer outras atribuições que lhe forem determina das pelo Comandante 
+Geral; e 
+ 
+XXVI - propor ao Conselho de Políticas Estratégicas norma s, instruções técnicas 
+e procedimentos operacionais para o aprimoramento das atividades da Corporação. 
+ 
+Subseção II 
+Do Conselho de Comandantes 
+ 
+Art. 108.  Compete ao Conselho de Comandantes: 
+ 
+I - estabelecer e difundir as normas para funcionamento geral do COB; 
+ 
+II - supervisionar, dirigir e coordenar as atividades das Seções do COB; 
+ 
+III -  assegurar que as instruções expedidas sejam sempre  cumpridas de acordo 
+com os objetivos da Corporação; 
+ 
+IV - coordenar a elaboração de planos e ordens; 
+ 
+V - coordenar a elaboração de planos de estudos, a fim  de acompanhar a evolução 
+técnica do serviço bombeiro militar nas unidades e subunidades operacionais subordinadas; 
+ 
+VI - difundir as diretrizes, planos e ordens emanadas do Comando Geral; 
+ 
+VII -  elaborar estudos e apresentar sugestões relativos às necessidades da 
+Corporação, dentro das linhas preconizadas pelo Comandante do COB; 
+ 
+VIII -  submeter à consideração do Comandante do COB os as suntos que 
+dependam de sua decisão ou sobre os quais deva ser informado; 
+ 
+IX - examinar todos os relatórios encaminhados ao COB antes de apresentá-los ao 
+Comandante do COB; e 
+
+---
+
+## Página 64
+
+ 
+X - exercer outros encargos previstos em leis e regulamentos. 
+ 
+Subseção III 
+Da Seção de Planejamento e Avaliação Operacional 
+ 
+Art. 109.  Compete à Seção de Planejamento e Avaliação Operacional: 
+ 
+I - dirigir, orientar e coordenar os assuntos relativos ao pessoal e material; 
+ 
+II - propor a previsão de viaturas orgânicas e operacio nais no âmbito do COB, em 
+ligação com a Seção de Operações; 
+ 
+III -  propor a suplementação do material e equipamentos às unidades e 
+subunidades operacionais, para o bom desempenho de suas atribuições bombeiros militares; 
+ 
+IV - manter sob controle o efetivo de todos os órgãos subordinados ao COB; 
+ 
+V -  preparar expediente relativo a material e pessoal do COB que deva ser 
+assinado pelo Comandante Geral; 
+ 
+VI - manter um quadro de distribuição das missões e atr ibuições de cada um de 
+seus auxiliares; 
+ 
+VII - manter sob controle as viaturas orgânicas e operacionais do COB; 
+ 
+VIII -  elaborar, mediante ordem, os roteiros de inspeções  administrativas do 
+Comandante do COB às unidades e subunidades operacionais subordinadas; 
+ 
+IX -  analisar e controlar os sumários de inspeção remet idos pelas unidades e 
+subunidades operacionais subordinadas, relativos à parte administrativa; 
+ 
+X - controlar e fiscalizar a situação de material e vi aturas distribuídos às unidades 
+e subunidades operacionais subordinadas, através de mapas e relações; 
+ 
+XI -  providenciar a remessa dos documentos que implique m em despesa aos 
+órgãos competentes, opinando a respeito; 
+ 
+XII - compilar dados para a elaboração do histórico do COB; e 
+ 
+XIII - encaminhar notícias importantes relativas ao Corpo  de Bombeiros Militar 
+ou do interesse dos órgãos subordinados ao COB à Seção de Operações. 
+ 
+Subseção IV 
+Do Chefe da Seção Administrativa 
+ 
+Art. 110.  Compete ao chefe da Seção Administrativa do COB: 
+ 
+I - assessorar o Comandante do COB nos assuntos relativos a material e pessoal; 
+ 
+
+---
+
+## Página 65
+
+II -  submeter à apreciação do Comandante do COB, para d ecisão, os estudos 
+relativos a pessoal e material elaborados pela Seção; 
+ 
+III - preparar planos de férias do pessoal integrante do COB; 
+ 
+IV -  coordenar e elaborar estudos relacionados com rema nejamento e 
+modificações nos quadros de distribuição de pessoal  e material do COB e órgãos 
+subordinados; 
+ 
+V - despachar diariamente com o Comandante do COB os documentos pertinentes 
+à sua Seção; 
+ 
+VI -  responder perante o Comandante do COB pela execuçã o dos encargos 
+atribuídos à sua Seção; 
+ 
+VII -  administrar as atividades da Seção no que tange à concessão de férias, 
+licenças e outros afastamentos; 
+ 
+VIII - encaminhar os enquadramentos disciplinares do pess oal lotado no COB ao 
+Comandante do COB para aprovação e publicação em boletim; 
+ 
+IX - entender-se diretamente com a Seção de Operações para estudo e solução das 
+questões que se apresentarem; 
+ 
+X -  cumprir e fazer cumprir o disposto neste Regimento  Interno, no tocante às 
+atividades de sua Seção; 
+ 
+XI - participar das reuniões convocadas pelo Comandante do COB; e 
+ 
+XII - exercer outros encargos que lhe forem atribuídos. 
+ 
+Subseção V 
+Do Centro de Operações e Comunicações 
+ 
+Art. 111.  Compete ao Centro de Operações e Comunicações: 
+  
+I -  elaborar planos e ordens do Comando de Operações d e Bombeiros no que 
+concerne às suas competências; 
+ 
+II - manter registro de todas as correspondências; 
+ 
+III - coordenar o emprego dos diversos socorros das UOp; 
+ 
+IV -  obter informes sumários sobre assuntos operacionai s para a preparação de 
+planos; 
+ 
+V -  prestar informações de todas as ocorrências, diari amente, ao Comando 
+Operacional de Bombeiros e ao Comando Geral; 
+ 
+
+---
+
+## Página 66
+
+VI -  manter o arquivo atualizado, contendo cópias de to das mensagens 
+transmitidas e recolhido; 
+ 
+VII - elaborar a Carta de Situação referente ao Estado d e Alagoas, principalmente 
+Maceió, contendo os elementos indicativos à visuali zação imediata de dados necessários às 
+diversas operações da Corporação; 
+ 
+VIII -  cooperar com os demais órgãos do sistema de segura nça em assuntos 
+operacionais da Corporação; 
+ 
+IX - suprir o Centro de Informática de dados necessário s à elaboração de Quadros 
+Estatísticos dos serviços prestados pela Corporação; 
+ 
+X - manter um arquivo de todos os planos e ordens operacionais; e 
+ 
+XI -  executar outras ações que lhe forem determinadas p elo Comando 
+Operacional. de Bombeiros ou pelo Comando Geral. 
+ 
+Seção II 
+Das Unidades Bombeiros Militar 
+ 
+Art. 112.  As Unidades de Bombeiros Militares constituem as U nidades 
+Operacionais da Corporação e são dos seguintes tipos: 
+ 
+I - Grupamento de Bombeiros Militar - GBM; 
+ 
+II - Grupamento de Salvamento Aquático - GSA; e 
+ 
+III - Grupamento de Socorro de emergência - GSE. 
+ 
+Parágrafo único.  As Unidades Bombeiros Militares têm a seguinte est rutura 
+orgânica comum: 
+ 
+I - Comandante;  
+ 
+II - Subcomandante; 
+ 
+III - Ajudante-Secretário; 
+ 
+IV - Seção de Administração; 
+ 
+V - Seção de Operações; e 
+ 
+VI - Subunidades. 
+ 
+Subseção I 
+Do Grupamento de Bombeiros Militar 
+ 
+Art. 113.  O  Grupamento de Bombeiros Militar tem a seu cargo , dentro de uma 
+determinada área de atuação operacional, as missões  de prevenção e extinção de incêndios, as 
+
+---
+
+## Página 67
+
+de resgate, busca e salvamento terrestres e em altu ras, e as demais que lhes sejam conexas, 
+além de: 
+ 
+I - planejar, coordenar, fiscalizar, controlar e execu tar as ações operacionais em 
+suas áreas de atuação; 
+ 
+II - levantar e manter registros atualizados dos princi pais riscos existentes em sua 
+área, desenvolvendo planos setoriais para prevenção e proteção; 
+ 
+III -  coordenar, controlar, fiscalizar e executar a inst rução de manutenção e 
+adestramento da tropa; 
+ 
+IV - manter registro estatístico das ocorrências verifi cadas em sua área de atuação 
+operacional; 
+ 
+V -  efetuar a manutenção e manter registro dos bens mó veis e imóveis que 
+estiverem sob sua guarda;   
+ 
+VI -  elaborar as Normas Gerais de Ação da UOp e remetê- las à aprovação do 
+Comandante do COB; e 
+ 
+VII -  fiscalizar o cumprimento da legislação pertinente às suas atividades 
+operacionais. 
+ 
+Subseção II 
+Dos Comandantes de Grupamento de Bombeiros Militar 
+ 
+Art. 114.  Compete aos Comandantes de Grupamento de Bombeiros Militar: 
+ 
+I -  dirigir, cumprir e fazer cumprir as atividades rel acionadas à prevenção, 
+combate a incêndios e salvamento em altura e terrestre na sua área de atuação; 
+ 
+II - praticar os atos administrativos necessários ao perfeito funcionamento da UOp 
+e de suas subunidades; 
+ 
+III - manter a tropa permanentemente adestrada e pronta para o emprego; 
+ 
+IV - comandar diretamente as atividades operacionais qu e envolvam mais de uma 
+operação de socorro bombeiro militar na área de atuação dos Subgrupamentos; 
+ 
+V - desenvolver o espírito de iniciativa e camaradagem de seus subordinados;  
+ 
+VI - comunicar imediatamente à autoridade superior qual quer fato grave ocorrido 
+em sua área de atuação, solicitando intervenção nos  casos que exijam a participação de outros 
+órgãos; 
+ 
+VII - controlar e zelar pela conservação e manutenção do s bens móveis e imóveis 
+sob sua responsabilidade; 
+ 
+VIII - providenciar a manutenção dos bens patrimoniais sob sua guarda; 
+
+---
+
+## Página 68
+
+ 
+IX - elaborar e submeter à aprovação do Comandante do C OB das Normas Gerais 
+de Ação dos órgãos do Grupamento; 
+ 
+X - movimentar os oficiais e praças no âmbito dos respectivos Subgrupamentos; 
+ 
+XI -  controlar e fiscalizar a execução, no âmbito das r espectivas Subunidades 
+Operacionais, dos planos e ordens superiores; 
+ 
+XII - elaborar e manter atualizado o quadro estatístico de ocorrências operacionais 
+de suas Subunidades; 
+ 
+XIII -  executar atos administrativos que lhes competirem,  como integrante do 
+sistema de administração de pessoal e material; 
+ 
+XIV - instaurar sindicância; e 
+ 
+XV - exercer outros encargos que lhes forem atribuídos pelo Comandante Geral 
+ou previstos em leis e regulamentos vigentes. 
+ 
+Subseção III 
+Dos Subcomandantes de Unidades Operacionais 
+ 
+Art. 115.  Compete aos Subcomandantes de UOp: 
+ 
+I - assessorar o seu Comandante de Grupamento em todas as suas atribuições; 
+ 
+II -  tomar as providências necessárias ao fiel cumprime nto das ordens do seu 
+Comandante de Grupamento; 
+ 
+III - fiscalizar e orientar os trabalhos dos órgãos do Grupamento; 
+ 
+IV - fiscalizar os serviços de escala da Unidade; 
+ 
+V - responder pelo Comandante do Grupamento nos seus impedimentos; 
+ 
+VI - assinar, por delegação dos respectivos comandantes , os atos administrativos 
+que não forem de exclusividade daquelas autoridades  e sejam compatíveis com as normas 
+vigentes; 
+ 
+VII - fiscalizar e controlar a instrução da Unidade; 
+ 
+VIII - responsabilizar-se pela carga do Grupamento; e 
+ 
+IX - exercer o controle disciplinar dos integrantes do Grupamento. 
+ 
+Subseção IV 
+Dos Ajudantes-Secretários de Unidades Operacionais 
+ 
+Art. 116.  Compete aos Ajudantes-Secretários de UOp: 
+
+---
+
+## Página 69
+
+ 
+I - dirigir a escrituração referente à correspondência , ao arquivo e ao registro das 
+alterações dos oficiais; 
+ 
+II - redigir toda a correspondência, cuja natureza assim o exigir; 
+ 
+III - manter atualizado o histórico da Unidade; 
+ 
+IV - elaborar o boletim interno, conforme instruções específicas; 
+ 
+V - manter atualizado e organizado o arquivo do Comando da Unidade; 
+ 
+VI - manter em dia e em ordem o arquivo da documentação da Unidade; 
+ 
+VII -  responder pela carga do material distribuído ao ga binete do Comandante, 
+Subcomandante, e Secretaria; 
+ 
+VIII -  receber toda a correspondência externa destinada à  Unidade; mandar 
+protocolar e mandar entregar ao Comandante, ao Subc omandante ou aos Comandantes de 
+Subunidades, conforme for o caso; 
+ 
+IX - fiscalizar, pessoalmente, a expedição da correspon dência, fazendo registrá-la 
+no protocolo em que será passado o competente recebido; 
+ 
+X - organizar e manter em dia o fichário de apresentaç ão de oficiais da Unidade, 
+providenciando a devida publicação em boletim interno; 
+ 
+XI - auscultar a opinião dos públicos externo e interno; 
+ 
+XII - manter contato com os órgãos de relações públicas dos demais escalões; 
+ 
+XIII - cooperar no preparo de solenidades civis e militar es e na sua divulgação, 
+quando for o caso; 
+ 
+XIV - elaborar o programa de lazer dentro da Unidade; e 
+ 
+XV - exercer outros encargos que lhe forem determinados pelo Comando da UOp. 
+ 
+Subseção V 
+Dos Chefes de Seção Administrativa das UOp 
+ 
+Art. 117.  Compete aos chefes de Seção Administrativa das UOp: 
+ 
+I -  assessorar o Comandante da Unidade nos assuntos de  política de pessoal, 
+estudo e planejamento de efetivos da UOp; 
+ 
+II -  elaborar e controlar o plano de férias, bem como o s de licença especial e 
+dispensas; 
+ 
+III - cuidar dos assuntos relativos à moral e assistência social da Unidade; 
+
+---
+
+## Página 70
+
+ 
+IV - cuidar do emprego do pessoal de acordo com as normas existentes; 
+ 
+V - elaborar e fazer publicar as escalas de serviço; 
+ 
+VI - fiscalizar e orientar a execução dos planos e ordens relativos a pessoal; 
+ 
+VII -  apresentar sugestões para a elaboração do Quadro d e Organização da 
+Unidade; 
+ 
+VIII -  manter atualizada a situação dos efetivos previsto s e existentes do 
+Grupamento, considerando o Quadro de Organização em vigor; 
+ 
+IX - executar as demais atividades ligadas à doutrina de política de pessoal; 
+ 
+X - executar atos de movimentação e distribuição de of iciais e praças no âmbito 
+do Grupamento; 
+ 
+XI - manter controle do pessoal sub-júdice; 
+ 
+XII - apresentar ao Comandante da Unidade as praças que devem ser agregadas 
+de acordo com a lei;  
+ 
+XIII - manter contato com os órgãos responsáveis pela adm inistração de pessoal 
+do Corpo de Bombeiros Militar. 
+ 
+Subseção VI 
+Dos Chefes de Seção de Operações de UOp 
+ 
+Art. 118.  Compete aos chefes de Seção de Operações de UOp:  
+ 
+I - assessorar o Comandante da Unidade em assuntos per tinentes à organização, 
+instrução, ensino e operações da UOp; 
+ 
+II - elaborar os itens dos planos e das ordens do Coman dante da Uop, no que se 
+refere às suas atribuições; 
+ 
+III - proceder a estudos sobre as suas áreas de atuação operacional; 
+ 
+IV - elaborar o programa anual de instrução de manutenç ão da tropa, observadas 
+as diretrizes do Comandante  do COB e do Comando Geral; 
+ 
+V - analisar a estatística operacional da Unidade; 
+ 
+VI - elaborar planos de distribuição de material operacional da Unidade; 
+ 
+VII - coordenar, controlar e fiscalizar a instrução de m anutenção e adestramento 
+da tropa; 
+ 
+
+---
+
+## Página 71
+
+VIII - elaborar sugestões para a formulação de normas téc nicas para emprego de 
+materiais; 
+ 
+IX - elaborar relatórios de instrução e ensino da UOp; 
+ 
+X -  supervisionar e coordenar as operações executas pe los Subgrupamentos e 
+Seções; 
+ 
+XI - controlar os relatórios dos serviços operacionais desenvolvidos na UOp; 
+ 
+XII -  verificar a eficiência dos equipamentos empregados  nas atividades 
+operacionais e solicitar a substituição dos mesmos, quando for o caso; 
+ 
+XIII - elaborar planos, ordens e notas de serviço ou inst rução, quando necessário, 
+para dar cumprimento às recebidas dos órgãos superiores ou do Comandante da Unidade; 
+ 
+XIV - organizar as formaturas e paradas em coordenação c om as outras Unidades 
+Operacionais; 
+ 
+XV - coletar dados que auxiliem ao Comandante da Unidad e avaliar as condições 
+operacionais, de ensino e de instrução da tropa; 
+ 
+XVI -  elaborar estudos para colocação de novos hidrantes  nos locais de maior 
+incidência de incêndio, pontos sensíveis e locais q ue julgar necessários, considerando a 
+prioridade de cada caso, em coordenação com o DST; e 
+ 
+XVII - exercer outros encargos que lhe forem atribuídos pelo Comando da UOp. 
+ 
+Subseção VII 
+Das Subunidades Operacionais de Bombeiros 
+ 
+Art. 119.  As Subunidades Operacionais de Bombeiros são Subgr upamentos  que 
+podem estar incorporados ou não a um GBM, competindo-lhes: 
+ 
+I -  controlar e zelar pela conservação e manutenção do  material sob sua 
+responsabilidade; 
+ 
+II - fiscalizar o cumprimento da legislação pertinente às suas atribuições na área 
+de sua atuação; 
+ 
+III -  executar e controlar a instrução de manutenção do pessoal pertencente à 
+Subunidade; 
+ 
+IV - executar a administração e controle do pessoal do Subgrupamento; 
+ 
+V - executar os serviços específicos de seu Grupamento; 
+ 
+VI - elaborar a contabilização dos vencimentos das praças lotadas na Subunidade; 
+ 
+VII - cumprir todas as ordens e normas emanadas do Comando do Grupamento; 
+
+---
+
+## Página 72
+
+ 
+VIII - providenciar a escrituração relativa ao pessoal da  Subunidade, mantendo-a 
+em dia,  em ordem e em condição de ser examinada por autoridades superiores competentes; 
+ 
+IX - participar das atividades internas e externas do Grupamento; e 
+ 
+X - observar as disposições regulamentares, especialmente o Regulamento Interno 
+e dos Serviços Gerais (RISG) no que diz respeito às Subunidades. 
+ 
+Subseção VIII 
+Do Grupamento de Salvamento Aquático 
+ 
+Art. 120.  O Grupamento de Salvamento Aquático (GSA) tem a se u cargo, dentro 
+de uma determinada área de atuação operacional, as missões de resgate, busca e salvamento 
+de pessoas e bens, no mar e nos demais ambientes aq uáticos, bem como as de proteção em 
+praias e balneários e de apoio às embarcações, além  daquelas previstas nos itens I a VII do 
+artigo 113 deste Regimento. 
+ 
+Subseção IX 
+Do Comandante do Grupamento de Salvamento Aquático 
+ 
+Art. 121.  Compete ao Comandante do GSA:  
+ 
+I -  dirigir todas as atividades relacionadas à prevenç ão, busca e salvamento 
+aquático na área de sua atuação; 
+ 
+II -  cumprir e fazer cumprir as normas regulamentares, diretrizes e planos 
+emanados do Comando do COB e do Comando Geral; e 
+ 
+III -  observar as atribuições previstas nos itens II a X V do artigo 114 deste 
+Regimento.  
+ 
+Subseção X 
+Do Grupamento de Socorros de Emergência 
+ 
+Art. 122.  O Grupamento de Socorros de Emergência é o órgão d e execução 
+responsável pelo planejamento, coordenação, control e, fiscalização e execução de todas as 
+atividades de atendimento pré-hospitalar, aos poli-traumatizados no trânsito, a vítimas de mal-
+súbito, além de: 
+ 
+I -  planejar, coordenar e fiscalizar as ações operacio nais no atendimento pré-
+hospitalar das vítimas de acidentes diversos; 
+ 
+II - manter registro atualizado de todos os hospitais e  centros de saúde existentes 
+nas cidades; 
+ 
+III - manter sob controle os protocolos de atendimento pré-hospitalar;  
+ 
+IV - fazer cumprir o preenchimento da ficha de atendimento pré-hospitalar. 
+ 
+
+---
+
+## Página 73
+
+V -  efetuar o controle, manutenção e reposição de mate rial, equipamentos e 
+medicamentos sob sua responsabilidade; 
+ 
+VI -  manter registro necessário para pesquisa e estatís tica de pontos de maior 
+incidência de acidentes de trânsito; 
+ 
+VI - controlar, coordenar e fiscalizar o serviço de com unicação entre o COC e a 
+rede hospitalar; e 
+ 
+VII -  observar as atribuições previstas nos itens I a VI I do artigo 113 deste 
+Regimento. 
+  
+Subseção XI 
+Do Comandante do Grupamento de Socorros de Emergência 
+ 
+Art. 123.  Compete ao Comandante do GSE: 
+ 
+I - planejar, coordenar, fiscalizar e controlar todas as atividades da UOp; 
+ 
+II - praticar atos administrativos necessários ao bom funcionamento do GSE; 
+ 
+III -  controlar e fiscalizar as atividades de instrução,  treinamento, cursos e 
+estágios do seu pessoal; 
+ 
+IV - empregar, mediante planejamento, quando necessário  for, pessoal, material e 
+equipamentos em ações conjuntas com outras UOp; 
+ 
+V - cumprir e fazer cumprir em sua área de ação, as di retrizes, planos normas e 
+ordens emanadas do COB; 
+ 
+VI -  comandar diretamente as atividades operacionais de  vulto e que envolvam 
+mais de um socorro de emergência no mesmo evento; 
+ 
+VII - montar posto de Comando Avançado em grandes aciden tes, catástrofes e/ou 
+eventos de grande público; 
+ 
+VIII - cumprir e fazer cumprir os protocolos de atendimento pré-hospitalar; 
+ 
+IX - planejar anualmente treinamento e reciclagem do pessoal sob seu comando; 
+ 
+X - promover, sempre que for necessário, a realização de cursos de estágios; 
+ 
+XI - manter o bom relacionamento com a direção da Secre taria de Saúde e demais 
+instituições de saúde; e 
+ 
+XII - realizar campanhas educativas e preventivas junto à comunidade, solicitando 
+cobertura de imprensa. 
+ 
+Art. 124.  Compete ao Subcomandante do GSE, além daquelas pre vistas no artigo 
+115 deste Regimento, fiscalizar e orientar os trabalhos das Unidades de Resgate. 
+
+---
+
+## Página 74
+
+CAPÍTULO V 
+DOS ÓRGÃOS ESPECIAIS DE BOMBEIROS MILITAR 
+ 
+Art. 125.  Órgãos Especiais são Organizações de Bombeiros Mil itares destinados 
+ao assessoramento dos órgãos e entidades públicas d o Estado de Alagoas, competindo-lhes o 
+estudo, o planejamento, a orientação, a supervisão,  o controle e a execução das atividades 
+bombeiros militares. 
+ 
+§ 1º  São Órgãos Especiais do Corpo de Bombeiros Militar do Estado de Alagoas: 
+ 
+I - as Assessorias Especiais de Bombeiros Militares; e 
+ 
+II - as Seções de Bombeiros Militares. 
+ 
+§ 2º  A implantação dos órgãos a que se refere o parágra fo anterior será efetivada 
+mediante legislação específica, no âmbito de cada Poder. 
+ 
+Art. 126.  Este Decreto entra em vigor na data de sua publicação. 
+ 
+Art. 127.  Revogam-se as disposições em contrário. 
+ 
+PALÁCIO MARECHAL FLORIANO PEIXOTO , em Maceió, 
+08 de novembro de 2001, 113º da República. 
+ 
+ 
+RONALDO  LESSA 
+Governador 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Publicado no DOE de 09/11/2001. 
+
+---
+

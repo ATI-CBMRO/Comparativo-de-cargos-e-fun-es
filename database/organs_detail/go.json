@@ -1,0 +1,673 @@
+{
+  "state_id": "go",
+  "state_name": "Goiás",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado de Goiás",
+  "cbm_abbreviation": "CBMGO",
+  "legal_source": "Lei nº 18.305, de 30/12/2013 (organização básica do CBMGO); Lei nº 16.899/2010 (efetivo); Regimento dos Serviços Interno e Operacional",
+  "organs": {
+    "emg": {
+      "name": "Estado-Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Lei nº 18.305/2013, Art. 2º",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (organização básica do CBMGO)",
+      "artigosDeOrigem": [
+        "Art. 2º (competência do CBMGO)",
+        "Arts. 4º a 8º (estrutura organizacional)"
+      ],
+      "atribuicoes": [
+        "Planejamento, coordenação, fiscalização e controle de todas as atividades da Corporação; elaboração de diretrizes e ordens do Comando",
+        "Competência institucional do Corpo de Bombeiros Militar (Lei nº 18.305/2013, Art. 2º): I - planejar e executar atividades de prevenção e combate a incêndios, busca, resgate e salvamento de pessoas e bens, bem como controlar situações de pânico",
+        "II - aplicar e fiscalizar o cumprimento da legislação e de normas específicas que tratam da proteção contra incêndio, explosão, pânico e desastres",
+        "III - realizar perícias de incêndio voltadas exclusivamente à prevenção de sinistros e relacionadas com sua competência",
+        "IV - coordenar os atendimentos a desastres, situações de emergência ou estados de calamidade pública",
+        "V - planejar e executar atividades de proteção ao meio ambiente, relacionadas com sua competência",
+        "VI - desenvolver atividades educativas relacionadas com sua competência",
+        "VII - realizar outras atividades, visando ao cumprimento de suas atribuições constitucionais e legais"
+      ],
+      "desdobramentos": [
+        "1ª Seção (BM/1): Assessoria às Comissões de Promoções e de Medalhas",
+        "2ª Seção (BM/2): Inteligência",
+        "3ª Seção (BM/3): Planejamento de Operações e Eventos",
+        "4ª Seção (BM/4): Planejamento, Orçamento e Convênios",
+        "5ª Seção (BM/5): Comunicação Social",
+        "6ª Seção (BM/6): Tecnologia da Informação e Comunicações",
+        "7ª Seção (BM/7): Gestão e Fiscalização de Recursos",
+        "8ª Seção (BM/8): Ações Sociais, Corpo Musical e Guarda de Honra Especial",
+        "9ª Seção (BM/9): Estatística e Análise da Informação"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel ou Tenente-Coronel QOCBM",
+          "desdobramentos": [
+            "Seções BM/1 a BM/9",
+            "Secretaria do EMG"
+          ],
+          "atribuicoes": [
+            "Assessorar o Comandante-Geral nos níveis mais elevados",
+            "Realizar estudos e planejamentos coordenando atividades",
+            "Elaborar diretrizes, legislações internas, planos e ordens"
+          ]
+        },
+        {
+          "cargo": "Chefe da 1ª Seção (BM/1)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoria às Comissões de Promoções e de Medalhas"
+          ]
+        },
+        {
+          "cargo": "Chefe da 2ª Seção (BM/2)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Inteligência"
+          ]
+        },
+        {
+          "cargo": "Chefe da 3ª Seção (BM/3)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento de operações e eventos"
+          ]
+        },
+        {
+          "cargo": "Chefe da 4ª Seção (BM/4)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, orçamento e convênios"
+          ]
+        },
+        {
+          "cargo": "Chefe da 5ª Seção (BM/5)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comunicação social"
+          ]
+        },
+        {
+          "cargo": "Chefe da 6ª Seção (BM/6)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Tecnologia da informação e comunicações"
+          ]
+        },
+        {
+          "cargo": "Chefe da 7ª Seção (BM/7)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão e fiscalização de recursos"
+          ]
+        },
+        {
+          "cargo": "Chefe da 8ª Seção (BM/8)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [
+            "Corpo Musical",
+            "Guarda de Honra Especial"
+          ],
+          "atribuicoes": [
+            "Ações sociais, corpo musical e guarda de honra especial"
+          ]
+        },
+        {
+          "cargo": "Chefe da 9ª Seção (BM/9)",
+          "subordinadoA": "Chefe do EMG",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Estatística e análise da informação"
+          ]
+        }
+      ],
+      "id": "emg"
+    },
+    "ccd": {
+      "name": "Comando de Correições e Disciplina",
+      "abbreviation": "CCD",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Lei nº 18.305/2013, Art. 24",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (organização básica do CBMGO)",
+      "artigosDeOrigem": [
+        "Art. 24 (competências do Comando de Correições e Disciplina, incisos I a XVII)"
+      ],
+      "atribuicoes": [
+        "I - assegurar a disciplina funcional, os princípios hierárquicos estruturais fundamentais e a apuração das infrações penais militares e transgressões disciplinares",
+        "II - exercer diretamente ou por meio das Organizações Bombeiro Militares as funções de Polícia Judiciária Militar e de Polícia Administrativa, observada a legislação vigente",
+        "III - acompanhar a apuração de ilícitos penais e transgressões disciplinares",
+        "IV - acompanhar procedimentos policiais em repartições policiais civis e federais e organizações militares federais ou estaduais que envolvam integrantes da Corporação",
+        "V - promover execução, controle, coordenação, orientação e fiscalização de atividade pertinente à disciplina e execução judiciária",
+        "VI - apurar faltas disciplinares praticadas por componentes da Corporação que, por sua repercussão e consequência, atentem contra os interesses da Instituição",
+        "VII - elaborar portarias, substituições, soluções, avocações, insubsistências, diligências, encaminhamentos e arquivos feitos",
+        "VIII - arquivar e registrar pareceres, termos de homologação, soluções e outros documentos de interesse",
+        "IX - colaborar nas investigações sociais relativas à seleção de candidatos ao ingresso nas fileiras da Corporação",
+        "X - controlar a instauração de inquéritos policiais, sindicâncias, conselhos de justificação, conselhos de disciplina, autos de prisão em flagrante, inquéritos técnicos e outros procedimentos administrativos",
+        "XI - exercer assessoramento em auditorias relacionadas a procedimentos disciplinares",
+        "XII - realizar o controle e atualização de registros de antecedentes criminais, policiais e disciplinares de integrantes da Corporação",
+        "XIII - exercer fiscalização ostensiva quanto ao desempenho funcional, operacional e administrativo dos integrantes da Corporação",
+        "XIV - promover a execução de diligências judiciárias ou avocá-las mediante designação ou nomeação",
+        "XV - realizar procedimentos inerentes ao registro e porte de arma de bombeiros militares e de controle de armamento",
+        "XVI - exercer diretamente a aplicação de medidas disciplinares sobre todos os bombeiros militares, excetuando-se os oficiais do posto de Coronel",
+        "XVII - exercer as atividades de ouvidoria no âmbito da Corporação"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa (SAD)",
+        "Seção de Direitos e Prerrogativas Militares (SDP)",
+        "Seção de Ouvidoria (SO)",
+        "Seção de Armamento (SAR)",
+        "Seção de Análise e Controle Processual (SCO)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Correições e Disciplina",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Preservação da disciplina e hierarquia",
+            "Apuração de infrações administrativas e penais militares"
+          ]
+        }
+      ],
+      "id": "ccd"
+    },
+    "codec": {
+      "name": "Comando de Operações de Defesa Civil",
+      "abbreviation": "CODEC",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Lei nº 18.305/2013, Art. 27",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (organização básica do CBMGO)",
+      "artigosDeOrigem": [
+        "Art. 27 (competências do Comando de Operações de Defesa Civil, incisos I a V)"
+      ],
+      "atribuicoes": [
+        "I - elaborar planos de gestão operacional nos assuntos relacionados a defesa civil",
+        "II - coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil",
+        "III - realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução",
+        "IV - planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco",
+        "V - elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras definidas em regulamento"
+      ],
+      "desdobramentos": [
+        "Departamento de Gestão de Desastres (DGD)",
+        "Departamento de Gestão de Riscos (DGR)",
+        "Seção de Monitoramento e Alertas (SMA)",
+        "Seção de Análise de Informações (SEA)",
+        "Seção de Ações Preventivas (PREV)",
+        "Seção de Assessoria ao Reestabelecimento da Normalidade (SRN)",
+        "Seção de Assessoria às Operações de Resposta (SOR)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Operações de Defesa Civil",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Coordenar atividades de defesa civil"
+          ]
+        }
+      ],
+      "id": "codec"
+    },
+    "caebm": {
+      "name": "Comando da Academia e Ensino Bombeiro Militar",
+      "abbreviation": "CAEBM",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Lei nº 18.305/2013, Art. 28 (Comando de Ensino Bombeiro Militar)",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (organização básica do CBMGO)",
+      "artigosDeOrigem": [
+        "Art. 28 (competências do Comando de Ensino Bombeiro Militar, incisos I a II)"
+      ],
+      "atribuicoes": [
+        "I - elaborar o planejamento institucional inerente à formação, especialização, aperfeiçoamento, habilitação e aprimoramento técnico-profissional dos bombeiros militares, bem como o controle e fiscalização das atividades correlatas",
+        "II - elaborar normas e manuais operacionais relacionados à doutrina institucional de ensino"
+      ],
+      "desdobramentos": [
+        "Subcomando da Academia",
+        "Subcomando de Ensino",
+        "Departamento da Academia Bombeiro Militar (DAC)",
+        "Departamento de Gestão e Planejamento de Ensino (DPE)",
+        "Escola de Formação de Oficiais (ESFAO)",
+        "Escola de Formação de Praças (ESFAP)",
+        "Centro de Operações e Tecnologia de Incêndio (COTI)",
+        "Centro de Altos Estudos de Segurança Pública (CAESP)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante da Academia e Ensino Bombeiro Militar",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "Academia de Bombeiro Militar"
+          ],
+          "atribuicoes": [
+            "Formação, aperfeiçoamento e especialização"
+          ]
+        }
+      ],
+      "id": "caebm"
+    },
+    "cal": {
+      "name": "Comando de Apoio Logístico",
+      "abbreviation": "CAL",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Lei nº 18.305/2013, Art. 25",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (organização básica do CBMGO)",
+      "artigosDeOrigem": [
+        "Art. 25 (competências do Comando de Apoio Logístico, incisos I a IV)"
+      ],
+      "atribuicoes": [
+        "I - planejar e controlar as atividades relacionadas às necessidades de suprimento e manutenção da Corporação, bem como o controle patrimonial, de acordo com premissas definidas pelo Comando Geral",
+        "II - elaborar normas internas sobre especificações e solicitações de materiais e serviços, bem como aquisição, recebimento, armazenamento, distribuição, manutenção, fiscalização e controle dos materiais, equipamentos, viaturas e instalações no âmbito da Corporação e submeter à apreciação do Comando Geral para aprovação",
+        "III - executar atos pertinentes a licitações e contratos, excetuando-se aqueles de competência exclusiva do ordenador de despesas, quando tratar-se de recursos do Fundo Especial de Reaparelhamento e Modernização do Corpo de Bombeiros Militar do Estado de Goiás (FUNEBOM), bem como acompanhar processos até o cumprimento integral das obrigações contratuais",
+        "IV - realizar gestão junto aos órgãos competentes visando celeridade no andamento processual de licitações e contratos"
+      ],
+      "desdobramentos": [
+        "Departamento de Almoxarifado Geral (DALMOX)",
+        "Departamento de Compras e Licitações (DECOL)",
+        "Departamento de Construção e Engenharia (DECON)",
+        "Departamento de Controle Patrimonial (DECOP)",
+        "Departamento de Especificações e Orçamentos (DECOR)",
+        "Departamento de Recebimento de Materiais e Gestão de Contratos (DERC)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Apoio Logístico",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "Centro de Suprimento",
+            "Centro de Manutenção"
+          ],
+          "atribuicoes": [
+            "Suprimento, material, equipamentos e viaturas"
+          ]
+        }
+      ],
+      "id": "cal"
+    },
+    "cgf": {
+      "name": "Comando de Gestão e Finanças",
+      "abbreviation": "CGF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Lei nº 18.305/2013, Art. 26",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (organização básica do CBMGO)",
+      "artigosDeOrigem": [
+        "Art. 26 (competências do Comando de Gestão e Finanças, incisos I a VI)"
+      ],
+      "atribuicoes": [
+        "I - planejar, controlar e executar as atividades relacionadas com pessoal",
+        "II - promover as atividades inerentes ao pagamento de militares, civis e fornecedores",
+        "III - praticar atos inerentes à execução financeira e contábil",
+        "IV - elaborar normas internas sobre gestão de pessoal e financeira",
+        "V - planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho",
+        "VI - elaborar boletins gerais"
+      ],
+      "desdobramentos": [
+        "Departamento Financeiro (DFIN)",
+        "Departamento de Gestão de Pessoas (DEPES)",
+        "Seção de Contabilidade (SC)",
+        "Seção de Execução Orçamentária e Financeira (SEOF)",
+        "Seção de Pessoal (SEPES)",
+        "Serviço Especializado em Engenharia Segurança e Medicina do Trabalho (SESMT)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Gestão e Finanças",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão financeira e orçamentária"
+          ]
+        }
+      ],
+      "id": "cgf"
+    },
+    "cat": {
+      "name": "Comando de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Normatização, inspeção, fiscalização, autuação, análise de projetos e perícia de incêndio",
+        "Controle de hidrantes"
+      ],
+      "desdobramentos": [
+        "Seção de Normatização (SEN)",
+        "Departamento de Inspeções e Credenciamento (DIC)",
+        "Departamento de Fiscalização e Autuação (DEFAU)",
+        "Departamento de Normatização e Doutrina (DND)",
+        "Departamento de Investigação e Perícia Administrativa de Incêndio (DIPI)",
+        "Departamento de Análises de Projetos (DAP)",
+        "Departamento de Controle de Hidrantes (DECH)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Atividades Técnicas",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Atividades técnicas de prevenção e análise"
+          ]
+        }
+      ],
+      "id": "cat"
+    },
+    "cge": {
+      "name": "Comando de Gestão Estratégica",
+      "abbreviation": "CGE",
+      "category": "Direção Setorial",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Planejamento e execução estratégica",
+        "Monitoramento de projetos",
+        "Captação de recursos extraorçamentários"
+      ],
+      "desdobramentos": [
+        "Seção Administrativa (SAD)",
+        "Seção de Planejamento e Execução Estratégica (SPE)",
+        "Seção de Elaboração e Monitoramento de Projetos (SMP)",
+        "Seção de Captação de Recursos Extraorçamentários (SRE)",
+        "Seção de Aprimoramento e Controle de Processos (SAPR)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Gestão Estratégica",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento estratégico"
+          ]
+        }
+      ],
+      "id": "cge"
+    },
+    "cme": {
+      "name": "Comando de Missões Especiais",
+      "abbreviation": "CME",
+      "category": "Direção Setorial",
+      "subordinadoA": "Gabinete do Subcomandante-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Coordenação de missões especiais e batalhões especializados"
+      ],
+      "desdobramentos": [
+        "Batalhão de Salvamento em Emergência (BSE)",
+        "Batalhão de Operações, Proteção Ambiental e Resposta a Desastres (BOPAR)",
+        "Batalhão Especializado em Operações com Produtos Perigosos (BEOPP)",
+        "Companhia Ambiental Especializada em Prevenção e Combate a Incêndio Florestal (CIAF)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Missões Especiais",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "BSE",
+            "BOPAR",
+            "BEOPP",
+            "CIAF"
+          ],
+          "atribuicoes": [
+            "Operações especializadas"
+          ]
+        }
+      ],
+      "id": "cme"
+    },
+    "crbm": {
+      "name": "Comandos Regionais Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Direção Regional",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Planejamento, direção e emprego das unidades operacionais em sua região"
+      ],
+      "desdobramentos": [
+        "1º CRBM - Goiânia (CBC)",
+        "2º CRBM - Rio Verde",
+        "3º CRBM - Anápolis",
+        "4º CRBM - Luziânia",
+        "5º CRBM - Aparecida de Goiânia",
+        "6º CRBM - Goiás",
+        "7º CRBM - Caldas Novas",
+        "8º CRBM - Uruaçu",
+        "9º CRBM - Formosa"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Regional Bombeiro Militar (1º ao 9º CRBM)",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOCBM",
+          "desdobramentos": [
+            "Batalhões e Companhias"
+          ],
+          "atribuicoes": [
+            "Coordenação operacional regional"
+          ]
+        }
+      ],
+      "id": "crbm"
+    },
+    "coa": {
+      "name": "Centro de Operações Aéreas",
+      "abbreviation": "COA",
+      "category": "Execução",
+      "subordinadoA": "Gabinete do Subcomandante-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Operações aéreas, navegação, manutenção e emergências aeromédicas"
+      ],
+      "desdobramentos": [
+        "Seção de Operações (SEOP)",
+        "Seção de Navegação Aérea (SENA)",
+        "Seção Técnica de Manutenção (STM)",
+        "Seção de Apoio às Emergências Aeromédicas (SEMAR)",
+        "Seção de Segurança de Voo (SEV)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Operações Aéreas",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Operações aéreas"
+          ]
+        }
+      ],
+      "id": "coa"
+    },
+    "cob": {
+      "name": "Centro Operacional de Bombeiros",
+      "abbreviation": "COB",
+      "category": "Execução",
+      "subordinadoA": "Gabinete do Subcomandante-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Coordenação operacional, atendimento, instrução e gestão de patrimônio"
+      ],
+      "desdobramentos": [
+        "Seção de Operações (SEOP)",
+        "Seção de Atendimento Operacional (SAOP)",
+        "Seção de Instrução e Qualificação (SIQ)",
+        "Seção de Gestão de Patrimônio (SGP)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro Operacional de Bombeiros",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Tenente-Coronel QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Central de despacho operacional"
+          ]
+        }
+      ],
+      "id": "cob"
+    },
+    "csau": {
+      "name": "Comando de Saúde",
+      "abbreviation": "CSAU",
+      "category": "Apoio",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Gestão de saúde, juntas médicas, serviços médico e odontológico"
+      ],
+      "desdobramentos": [
+        "Junta Central de Saúde Bombeiro Militar (JCSBM)",
+        "Junta de Seleção Bombeiro Militar (JSBM)",
+        "Junta Superior de Saúde Bombeiro Militar (JSSBM)",
+        "Departamento Médico (MED)",
+        "Departamento Odontológico (DOD)",
+        "Almoxarifado (Farmácia)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Saúde",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Coronel QOSBM",
+          "desdobramentos": [
+            "Departamento de Saúde"
+          ],
+          "atribuicoes": [
+            "Assistência médica, farmacêutica e sanitária"
+          ]
+        }
+      ],
+      "id": "csau"
+    },
+    "ceman": {
+      "name": "Centro de Manutenção",
+      "abbreviation": "CEMAN",
+      "category": "Apoio",
+      "subordinadoA": "Comando de Apoio Logístico",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Radiocomunicação, gestão de frota, abastecimento e manutenção"
+      ],
+      "desdobramentos": [
+        "Seção de Radiocomunicação (SERAD)",
+        "Seção de Gestão de Frota (SGF)",
+        "Seção Administrativa (SAD)",
+        "Subseção de Abastecimento (SA)",
+        "Subseção de Manutenção (SM)",
+        "Subseção de Documentação (SD)"
+      ],
+      "cargos": [],
+      "id": "ceman"
+    },
+    "bbm-go": {
+      "name": "Batalhões Bombeiro Militar",
+      "abbreviation": "BBM",
+      "category": "Execução",
+      "subordinadoA": "Comandos Regionais / Comando de Missões Especiais",
+      "legalRef": "Regimento dos Serviços Interno e Operacional",
+      "baseLegal": "Lei nº 21.792/2023",
+      "artigosDeOrigem": [
+        "Regimento dos Serviços Interno e Operacional"
+      ],
+      "atribuicoes": [
+        "Execução das atividades operacionais nas circunscrições"
+      ],
+      "desdobramentos": [
+        "23 Batalhões Bombeiro Militar distribuídos pelo Estado",
+        "26 Companhias Independentes (CIBM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Batalhão de Salvamento em Emergência (BSE)",
+          "subordinadoA": "Comando de Missões Especiais / CRBM",
+          "requisito": "Tenente-Coronel/Major QOCBM",
+          "desdobramentos": [
+            "Companhias",
+            "Pelotões"
+          ],
+          "atribuicoes": [
+            "Operações de salvamento e emergência"
+          ]
+        },
+        {
+          "cargo": "Comandante do Batalhão de Operações, Proteção Ambiental e Resposta a Desastres (BOPAR)",
+          "subordinadoA": "Comando de Missões Especiais",
+          "requisito": "Tenente-Coronel/Major QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Proteção ambiental e resposta a desastres"
+          ]
+        },
+        {
+          "cargo": "Comandante do Batalhão Especializado em Operações com Produtos Perigosos (BEOPP)",
+          "subordinadoA": "Comando de Missões Especiais",
+          "requisito": "Tenente-Coronel/Major QOCBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Operações com produtos perigosos"
+          ]
+        }
+      ],
+      "id": "bbm-go"
+    }
+  }
+}

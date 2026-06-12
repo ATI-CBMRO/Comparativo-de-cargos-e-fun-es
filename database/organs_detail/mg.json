@@ -1,0 +1,498 @@
+{
+  "state_id": "mg",
+  "state_name": "Minas Gerais",
+  "cbm_name": "Corpo de Bombeiros Militar de Minas Gerais",
+  "cbm_abbreviation": "CBMMG",
+  "legal_source": "Lei Complementar nº 54/1999 (alt. LC 95/2007 e LC 130/2013); Resolução nº 898/2020 (CEB)",
+  "organs": {
+    "comando-geral-mg": {
+      "name": "Comando-Geral do CBMMG",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 5–6, 12–13",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 5º (subordinação)",
+        "Art. 6º (competência)",
+        "Arts. 12–13 (Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "A administração, o comando e o emprego da Corporação são de competência e responsabilidade do Comandante-Geral (Art. 6º)",
+        "O Corpo de Bombeiros Militar de Minas Gerais subordina-se diretamente ao Governador do Estado (Art. 5º)"
+      ],
+      "desdobramentos": [
+        "Gabinete do Comandante-Geral",
+        "Estado-Maior do CBMMG",
+        "Auditoria"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel QOBM (último posto)",
+          "desdobramentos": [
+            "Gabinete",
+            "Auditoria"
+          ],
+          "atribuicoes": [
+            "Responsável pelo comando e administração geral",
+            "Prerrogativas de Secretário de Estado",
+            "Precedência hierárquica e funcional sobre todos os Oficiais",
+            "Presidir a Comissão de Promoção de Oficiais"
+          ]
+        }
+      ],
+      "id": "comando-geral-mg"
+    },
+    "gabinete-mg": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "Gab",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 11, I",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 11 I (Unidades de Direção Geral)"
+      ],
+      "atribuicoes": [
+        "As Unidades de Direção Geral exercem o comando e a administração da Corporação, cabendo-lhes o planejamento geral e a organização da Corporação (Art. 8º); o Gabinete do Comandante-Geral é Unidade de Direção Geral (Art. 11 I)"
+      ],
+      "desdobramentos": [
+        "Assistentes e Ajudantes-de-Ordens (Art. 12 §4º)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Gabinete",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do QOBM (Art. 31 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Chefia do Gabinete do Comandante-Geral (Art. 11 I)"
+          ]
+        }
+      ],
+      "id": "gabinete-mg"
+    },
+    "estado-maior-mg": {
+      "name": "Estado-Maior do Corpo de Bombeiros Militar",
+      "abbreviation": "EM",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Arts. 14–15",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 14 (Estado-Maior)",
+        "Art. 15 (Chefe do Estado-Maior)"
+      ],
+      "atribuicoes": [
+        "I - o estudo, o planejamento, a coordenação, a fiscalização e o controle de todas as atividades da Corporação;",
+        "II - a elaboração das diretrizes e ordens do Comando às Unidades. (Art. 14)"
+      ],
+      "desdobramentos": [
+        "Chefia do Estado-Maior",
+        "Subchefia do Estado-Maior",
+        "Seções do Estado-Maior"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior (Subcomandante)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Subchefia",
+            "Seções do Estado-Maior"
+          ],
+          "atribuicoes": [
+            "Subcomandante da Corporação; substituto eventual do Comandante-Geral",
+            "Dirigir, orientar, coordenar e fiscalizar os trabalhos do Estado-Maior"
+          ]
+        },
+        {
+          "cargo": "Subchefe do Estado-Maior",
+          "subordinadoA": "Chefe do Estado-Maior",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituto eventual do Chefe do Estado-Maior; prerrogativas de Secretário Adjunto"
+          ]
+        }
+      ],
+      "id": "estado-maior-mg"
+    },
+    "auditoria-mg": {
+      "name": "Auditoria",
+      "abbreviation": "Audit",
+      "category": "Direção Geral",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 16 (Auditoria)"
+      ],
+      "atribuicoes": [
+        "A Auditoria, unidade subordinada diretamente ao Comandante-Geral, é responsável pelo exercício da auditoria de prevenção, de controle e de gestão em todas as áreas (Art. 16)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Auditor",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial do QOBM (Art. 16)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Auditoria de prevenção, controle e gestão em todas as áreas (Art. 16)"
+          ]
+        }
+      ],
+      "id": "auditoria-mg"
+    },
+    "diretorias-mg": {
+      "name": "Diretorias",
+      "abbreviation": "Dir",
+      "category": "Direção Intermediária",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Arts. 17–19",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 17 (Diretorias)",
+        "Art. 18 (Diretores)",
+        "Art. 19 (tipos)"
+      ],
+      "atribuicoes": [
+        "As Diretorias, Unidades de Direção Intermediária, são organizadas na forma de sistema para atividades de pessoal, programação orçamentária financeira, contabilidade, auditoria e apoio logístico (Art. 17)"
+      ],
+      "desdobramentos": [
+        "Diretoria de Recursos Humanos",
+        "Diretoria de Apoio Logístico",
+        "Diretoria de Contabilidade e Finanças"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Diretoria de Recursos Humanos",
+            "Diretoria de Apoio Logístico",
+            "Diretoria de Contabilidade e Finanças"
+          ],
+          "atribuicoes": [
+            "Gestão de pessoal, orçamentária, financeira, contabilidade, auditoria e apoio logístico"
+          ]
+        }
+      ],
+      "id": "diretorias-mg"
+    },
+    "comandos-operacionais-mg": {
+      "name": "Comandos Operacionais de Bombeiros",
+      "abbreviation": "COBom",
+      "category": "Direção Intermediária",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei Complementar nº 54/1999 (art. 20 com redação da LC 130/2013)",
+      "artigosDeOrigem": [
+        "Art. 20 (Comandos Operacionais, red. LC 130/2013)"
+      ],
+      "atribuicoes": [
+        "São seis os Comandos Operacionais de Bombeiros, responsáveis perante o Comando-Geral pela coordenação das atividades operacionais (Art. 20 §1º)",
+        "Os Comandos se localizarão em municípios que sejam sedes de região integrada de segurança pública (Art. 20 §3º, red. LC 130/2013)"
+      ],
+      "desdobramentos": [
+        "6 Comandos Operacionais de Bombeiros localizados em sedes de RISP"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Operacional de Bombeiros (COB)",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Batalhões",
+            "Companhias Independentes"
+          ],
+          "atribuicoes": [
+            "Coordenação de atividades operacionais em sua área (sedes de RISP)"
+          ]
+        }
+      ],
+      "id": "comandos-operacionais-mg"
+    },
+    "academia-mg": {
+      "name": "Academia de Bombeiros Militar",
+      "abbreviation": "ABM",
+      "category": "Apoio Operacional",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei Complementar nº 54/1999 (art. 22 com redação da LC 130/2013)",
+      "artigosDeOrigem": [
+        "Art. 22 (ABM, red. LC 130/2013)"
+      ],
+      "atribuicoes": [
+        "A Academia de Bombeiros Militar (ABM) é unidade responsável pela formação, pelo aperfeiçoamento e pela especialização de Bombeiros (Art. 22, red. LC 130/2013)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor da Academia de Bombeiros Militar",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Formação, aperfeiçoamento e especialização de Bombeiros"
+          ]
+        }
+      ],
+      "id": "academia-mg"
+    },
+    "csm-mg": {
+      "name": "Centro de Suprimento e Manutenção",
+      "abbreviation": "CSM",
+      "category": "Apoio Operacional",
+      "subordinadoA": "Diretoria de Apoio Logístico",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 23 (CSM)"
+      ],
+      "atribuicoes": [
+        "O Centro de Suprimento e Manutenção (CSM), unidade responsável pelo suprimento logístico, vincula-se à Diretoria de Apoio Logístico (Art. 23)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Chefe do Centro de Suprimento e Manutenção",
+          "subordinadoA": "Diretoria de Apoio Logístico",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Suprimento logístico e manutenção de viaturas e equipamentos"
+          ]
+        }
+      ],
+      "id": "csm-mg"
+    },
+    "cat-mg": {
+      "name": "Centro de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Apoio Operacional",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 24 (CAT)"
+      ],
+      "atribuicoes": [
+        "I - pesquisar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais e dos regulamentos de prevenção de incêndio e de pânico;",
+        "II - realizar perícias de incêndio e explosão em locais de sinistro;",
+        "III - atuar como segunda instância na análise de projetos de prevenção contra incêndio e pânico. (Art. 24)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Diretor do Centro de Atividades Técnicas",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Pesquisa, análise, normatização e fiscalização",
+            "Perícias de incêndio; 2ª instância em análise de projetos de prevenção"
+          ]
+        }
+      ],
+      "id": "cat-mg"
+    },
+    "ajudancia-mg": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AjG",
+      "category": "Apoio Operacional",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 25 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "I - o trabalho de secretaria, correspondência, correio, protocolo geral, arquivo geral e biblioteca;",
+        "II - o apoio ao quartel do Comando-Geral no que se refere a pessoal e material;",
+        "III - a segurança do quartel do Comando-Geral. (Art. 25)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Ajudante-Geral",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Secretaria",
+            "Protocolo",
+            "Segurança do Quartel"
+          ],
+          "atribuicoes": [
+            "Funções administrativas do Comando-Geral; secretaria, protocolo e arquivo",
+            "Apoio ao quartel em pessoal e material"
+          ]
+        }
+      ],
+      "id": "ajudancia-mg"
+    },
+    "execucao-mg": {
+      "name": "Unidades de Execução Operacional",
+      "abbreviation": "UEO",
+      "category": "Execução Operacional",
+      "subordinadoA": "Comandos Operacionais de Bombeiros",
+      "legalRef": "Arts. 26–28",
+      "baseLegal": "Lei Complementar nº 54/1999",
+      "artigosDeOrigem": [
+        "Art. 26 (tipos)",
+        "Art. 27 (subordinação)",
+        "Art. 33 (cargos)"
+      ],
+      "atribuicoes": [
+        "As Unidades de Execução realizam as atividades operacionais e de apoio (Art. 10); subordinadas diretamente ao Comando Operacional de Bombeiros (Art. 27)"
+      ],
+      "desdobramentos": [
+        "Batalhão de Bombeiros Militar (BBM)",
+        "Companhia Independente de Bombeiros Militar",
+        "Companhia de Bombeiros Militar",
+        "Pelotão de Bombeiros Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Batalhão (BBM)",
+          "subordinadoA": "Comando Operacional de Bombeiros",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [
+            "Companhias",
+            "Pelotões"
+          ],
+          "atribuicoes": [
+            "Ações de prevenção e combate a incêndio, busca e salvamento"
+          ]
+        },
+        {
+          "cargo": "Comandante de Companhia Independente (CIA IND BM)",
+          "subordinadoA": "Comando Operacional de Bombeiros",
+          "requisito": "Major ou Capitão QOBM",
+          "desdobramentos": [
+            "Pelotões"
+          ],
+          "atribuicoes": [
+            "Ações de prevenção e combate a incêndio"
+          ]
+        },
+        {
+          "cargo": "Comandante de Pelotão (PEL BM)",
+          "subordinadoA": "Companhia",
+          "requisito": "1º ou 2º Tenente QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando de pelotão operacional"
+          ]
+        }
+      ],
+      "id": "execucao-mg"
+    },
+    "ceb-mg": {
+      "name": "Comando Especializado de Bombeiros",
+      "abbreviation": "CEB",
+      "category": "Direção Intermediária",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Resolução nº 898/2020",
+      "baseLegal": "Resolução nº 898, de 2 de abril de 2020",
+      "artigosDeOrigem": [
+        "Resolução nº 898/2020 (criação e missão do CEB)"
+      ],
+      "atribuicoes": [
+        "Coordenar, em âmbito estadual, as atividades operacionais especializadas do CBMMG (Resolução nº 898/2020)",
+        "Unidade de direção intermediária com sede em Belo Horizonte (Resolução nº 898/2020)"
+      ],
+      "desdobramentos": [
+        "Batalhão de Operações Aéreas (BOA)",
+        "Batalhão de Emergências Ambientais e Resposta a Desastres (BEMAD)",
+        "Coordenadoria de Meio Ambiente",
+        "Coordenadoria de Operações Aéreas"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do CEB",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Tenente-Coronel ou Coronel QOBM",
+          "desdobramentos": [
+            "BOA",
+            "BEMAD"
+          ],
+          "atribuicoes": [
+            "Coordenação estadual das atividades operacionais especializadas do CBMMG (Resolução nº 898/2020)"
+          ]
+        }
+      ],
+      "id": "ceb-mg"
+    },
+    "boa-mg": {
+      "name": "Batalhão de Operações Aéreas",
+      "abbreviation": "BOA",
+      "category": "Execução Especializada",
+      "subordinadoA": "Comando Especializado de Bombeiros",
+      "legalRef": "Resolução nº 898/2020",
+      "baseLegal": "Resolução nº 898, de 2 de abril de 2020",
+      "artigosDeOrigem": [
+        "Resolução nº 898/2020 (BOA subordinado ao CEB)"
+      ],
+      "atribuicoes": [
+        "Atuação estratégica e complementar às atribuições legais e operacionais da Corporação em operações aéreas de bombeiros (Resolução nº 898/2020)",
+        "Possui quatro companhias especializadas em operações aéreas, sediadas em Belo Horizonte, Varginha, Montes Claros e Uberaba (bombeiros.mg.gov.br/boa)"
+      ],
+      "desdobramentos": [
+        "Cia Esp Op Aéreas — Belo Horizonte",
+        "Cia Esp Op Aéreas — Varginha",
+        "Cia Esp Op Aéreas — Montes Claros",
+        "Cia Esp Op Aéreas — Uberaba"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do BOA",
+          "subordinadoA": "Comando Especializado de Bombeiros",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Batalhão de Operações Aéreas (Resolução nº 898/2020)"
+          ]
+        }
+      ],
+      "id": "boa-mg"
+    },
+    "bemad-mg": {
+      "name": "Batalhão de Emergências Ambientais e Resposta a Desastres",
+      "abbreviation": "BEMAD",
+      "category": "Execução Especializada",
+      "subordinadoA": "Comando Especializado de Bombeiros",
+      "legalRef": "Resolução nº 898/2020",
+      "baseLegal": "Resolução nº 898, de 2 de abril de 2020",
+      "artigosDeOrigem": [
+        "Resolução nº 898/2020 (BEMAD subordinado ao CEB)"
+      ],
+      "atribuicoes": [
+        "Atuação estratégica e complementar às atribuições legais e operacionais da Corporação em emergências ambientais e resposta a desastres, em nível estadual (Resolução nº 898/2020)",
+        "Possui companhias especializadas: CQBRN (Defesa Química, Biológica, Radiológica e Nuclear), CBS (Busca e Salvamento), Cia BRESC (Busca, Resgate e Salvamento com Cães) e CPA (Proteção Ambiental) (bombeiros.mg.gov.br/bemad)"
+      ],
+      "desdobramentos": [
+        "Cia CQBRN — Defesa Química, Biológica, Radiológica e Nuclear",
+        "Cia CBS — Busca e Salvamento",
+        "Cia BRESC — Busca, Resgate e Salvamento com Cães",
+        "Cia CPA — Proteção Ambiental"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do BEMAD",
+          "subordinadoA": "Comando Especializado de Bombeiros",
+          "requisito": "Tenente-Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comando do Batalhão de Emergências Ambientais e Resposta a Desastres (Resolução nº 898/2020)"
+          ]
+        }
+      ],
+      "id": "bemad-mg"
+    }
+  }
+}

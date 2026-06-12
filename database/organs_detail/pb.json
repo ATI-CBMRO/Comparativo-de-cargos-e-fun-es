@@ -1,0 +1,734 @@
+{
+  "state_id": "pb",
+  "state_name": "Paraíba",
+  "cbm_name": "Corpo de Bombeiros Militar da Paraíba",
+  "cbm_abbreviation": "CBMPB",
+  "legal_source": "Lei Complementar nº 191, de 26 de abril de 2024",
+  "organs": {
+    "cg-pb": {
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 14; Art. 15 §3º LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 14 (Gabinete do Comando Geral)",
+        "Art. 15 §3º (Atribuições do CMTG)"
+      ],
+      "atribuicoes": [
+        "Ao Gabinete do Comandante Geral do Corpo de Bombeiros Militar compete a direção e administração geral do Corpo de Bombeiros Militar do Estado da Paraíba – CBMPB no cumprimento dos seus objetivos, sendo o Comandante Geral a autoridade máxima da Corporação. (Art. 14)",
+        "I – aprovar as diretrizes e planos gerais de emprego operacional no Estado;",
+        "II – aprovar as diretrizes gerais de ensino, instrução e pesquisa;",
+        "III – aprovar o orçamento anual da Corporação;",
+        "IV – aprovar o plano de aplicação dos recursos orçamentários;",
+        "V – aprovar os regimentos internos dos órgãos da Corporação;",
+        "VI – aprovar normas técnicas relativas à segurança contra incêndio e controle de pânico;",
+        "VII – aprovar normas técnicas com vistas à normatização e fiscalização operacional e de ensino das brigadas de incêndio, bombeiros civis e de bombeiros voluntários, além da padronização de seus vestuários, no Estado da Paraíba;",
+        "VIII – assessorar o Governador do Estado em assuntos inerentes à Corporação;",
+        "IX – assessorar o Secretário de Estado da Segurança e Defesa Social em assuntos que digam respeito às ações e operações bombeiro militares, de defesa civil e de mobilização previstas na Constituição Federal;",
+        "X – atender, dentro das possibilidades de seu efetivo, às requisições expedidas por autoridades civis e militares, consoante a legislação em vigor;",
+        "XI – autorizar o pessoal militar e civil da Corporação a se afastarem do Estado;",
+        "XII – celebrar convênios e contratos de interesse da Corporação com entidades de direito público ou privado, nos termos da lei;",
+        "XIII – conceder licenças ou afastamentos de qualquer natureza, bem como, aprovar o plano anual de férias da Corporação;",
+        "XIV – cumprir as obrigações previstas na legislação relativa à convocação e mobilização;",
+        "XV – decidir originariamente ou em grau de recurso, todos os assuntos pertinentes ao pessoal do Corpo de Bombeiros Militar, nos limites de sua competência;",
+        "XVI – declarar aspirantes-a-oficial e promover praças às graduações subsequentes;",
+        "XVII – delegar atribuições de sua competência, respeitados os limites legais;",
+        "XVIII – designar e dispensar bombeiros militares e funcionários civis da Corporação de funções administrativas ou operacionais previstas na estrutura organizacional, exceto os cargos de provimento em comissão;",
+        "XIX – elaborar o plano de comando, de acordo com as diretrizes e programas do Governo;",
+        "XX – encaminhar ao Governador do Estado, para aprovação e publicação em Diário Oficial do Estado – DOE, a minuta do Regulamento Geral Bombeiro Militar – RGBM, contendo as competências e estrutura pormenorizadas dos órgãos da Corporação;",
+        "XXI – encaminhar ao Governador do Estado, para aprovação e publicação em Diário Oficial do Estado - DOE, a minuta do Regulamento Interno dos Serviços Gerais e Operacionais – RISCO, regulando todos os serviços internos e operacionais da Corporação;",
+        "XXII – encaminhar ao Governador do Estado para aprovação e publicação em DOE, a minuta do Regulamento de Uniforme Bombeiro Militar – RUBM, regulando todos os uniformes e trajes da Corporação e a apresentação pessoal dos bombeiros militares;",
+        "XXIII – encaminhar ao Governador do Estado para aprovação e publicação em DOE, a minuta do Regulamento de Movimentação de Oficiais e Praças do Corpo de Bombeiro Militar – REMOP, regulando as movimentações de oficiais e praças no âmbito da Corporação;",
+        "XXIV – encaminhar, ao Governador do Estado, a solicitação de afastamento do País de bombeiros militares e servidores civis da Corporação, quando em serviço;",
+        "XXV – encaminhar ao órgão competente o projeto de orçamento anual da Corporação e participar, no que couber, do planejamento do plano plurianual do Estado;",
+        "XXVI – exercer a competência disciplinar e a polícia judiciária militar que lhe são afetas;",
+        "XXVII – expedir os atos administrativos necessários à gestão Institucional;",
+        "XXVIII – incluir, nomear, licenciar e excluir Praças e Praças Especiais, obedecidos os requisitos legais;",
+        "XXIX – manter intercâmbio com as demais Instituições Militares, de Segurança Pública e Defesa Civil;",
+        "XXX – movimentar oficiais e praças e afastá-los de suas funções, respeitadas disposições legais;",
+        "XXXI – nomear comissões e grupos de trabalhos, estabelecendo suas incumbências;",
+        "XXXII – ordenar o emprego de verbas orçamentárias, de crédito abertos ou de outros recursos em favor do Corpo de Bombeiros Militar da Paraíba;",
+        "XXXIII – pôr bombeiros militares à disposição de órgãos vinculados ou não, agregar e reverter praças da Corporação;",
+        "XXXIV – propor ao Governador do Estado a nomeação e exoneração dos cargos de provimento em comissão de oficiais bombeiros militares para o exercício das funções de comando, direção e assessoramento;",
+        "XXXV – representar a Corporação junto aos Órgãos e Poderes constituídos;",
+        "XXXVI – solucionar os casos omissos na legislação específica."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel da ativa do QOEM do CBMPB; honras, prerrogativas, direitos e obrigações de Secretário de Estado (Art. 15 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "O Comandante Geral – CMTG – é o responsável pelo comando, gestão, emprego, supervisão e coordenação geral das atividades da Corporação. (Art. 15)"
+          ]
+        }
+      ],
+      "id": "cg-pb"
+    },
+    "gcg-pb": {
+      "name": "Gabinete do Comando Geral",
+      "abbreviation": "GCG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 13; Art. 18 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 13 (Composição do CG)",
+        "Art. 18 (Chefia do GCG)"
+      ],
+      "atribuicoes": [
+        "A Chefia de Gabinete do Comando Geral – CGCG compete assistir diretamente o Gabinete do Comando Geral – GCG – e o Assistente do Comando Geral é o Chefe do GCG, realizando a assistência direta ao Comandante Geral e ao Subcomandante Geral. (Art. 18)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assistente do Comando Geral / Chefe do GCG",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Tenente-Coronel da ativa do CBMPB (Art. 18)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assistência direta ao Comandante Geral e ao Subcomandante Geral (Art. 18)."
+          ]
+        }
+      ],
+      "id": "gcg-pb"
+    },
+    "gscmdg": {
+      "name": "Gabinete do Subcomandante Geral",
+      "abbreviation": "GSCMDG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 16; Art. 17 §3º LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 16 (Gabinete do SCG)",
+        "Art. 17 §3º (Atribuições do SCMTG)"
+      ],
+      "atribuicoes": [
+        "Ao Gabinete do Subcomandante Geral do Corpo de Bombeiros Militar, compete assistir diretamente o Gabinete do Comandante Geral do Corpo de Bombeiros Militar no cumprimento dos seus objetivos, sendo o Subcomandante Geral do Corpo de Bombeiros Militar o substituto legal do Comandante Geral do Corpo de Bombeiros Militar. (Art. 16)",
+        "I – assessorar o CMTG na coordenação do funcionamento da Corporação;",
+        "II – estabelecer o expediente da Corporação;",
+        "III – exercer a competência disciplinar e a polícia judiciária militar que lhe são afetas;",
+        "IV – substituir o CMTG nos eventuais impedimentos;",
+        "V – supervisionar a garantia da hierarquia e disciplina da Corporação;",
+        "VI – supervisionar os trabalhos dos órgãos de direção setorial;",
+        "VII – supervisionar os trabalhos dos órgãos de execução, em nível estratégico."
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Subcomandante Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Coronel da ativa do QOEM; honras de Secretário Executivo de Estado",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Garantia da hierarquia e disciplina; principal assessor do CMTG",
+            "Substituto legal do Comandante Geral",
+            "Supervisionar os órgãos de direção setorial e de execução (nível estratégico)"
+          ]
+        }
+      ],
+      "id": "gscmdg"
+    },
+    "scg-pb": {
+      "name": "Secretaria do Comando Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Gabinete do Comando Geral",
+      "legalRef": "Art. 19 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 19 (Secretaria do Comando Geral)"
+      ],
+      "atribuicoes": [
+        "A Secretaria do Comando Geral – SCG – compete ao secretariado do GCG, bem como a edição, controle, publicação e arquivo do Boletim Geral do Corpo de Bombeiros Militar – Bol. BM – e dos Boletins Reservados – Bol. BM/R – da Corporação. (Art. 19)",
+        "§2º São atribuições do Secretário da SCG todos os trabalhos de secretariado, elaboração dos atos administrativos e da edição, controle, publicação e arquivo do Bol. BM e do Bol. BM/R."
+      ],
+      "desdobramentos": [
+        "Ajudância de Ordem (AjO)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Secretário da SCG",
+          "subordinadoA": "Gabinete do Comando Geral",
+          "requisito": "Major da ativa da Corporação (Art. 19 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Secretariado do GCG; edição, controle, publicação e arquivo do Bol. BM e Bol. BM/R (Art. 19 §2º)."
+          ]
+        }
+      ],
+      "id": "scg-pb"
+    },
+    "ouv-pb": {
+      "name": "Ouvidoria do Corpo de Bombeiros Militar",
+      "abbreviation": "OUV",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Gabinete do Comando Geral",
+      "legalRef": "Art. 20 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 20 (Ouvidoria)"
+      ],
+      "atribuicoes": [
+        "A Ouvidoria do Corpo de Bombeiros Militar – OUV – tem por finalidade receber e registrar denúncias, reclamações e representações de atos desabonadores praticados por integrantes da Corporação ou críticas à prestação de serviço institucional, bem como, de encaminhar e acompanhar a solução delas, funcionando em estreita articulação com a Ouvidoria Geral do Estado – OGE. (Art. 20)"
+      ],
+      "desdobramentos": [
+        "Ouvidoria Central",
+        "Ouvidorias Setoriais"
+      ],
+      "cargos": [
+        {
+          "cargo": "Ouvidor",
+          "subordinadoA": "Gabinete do Comando Geral",
+          "requisito": "Oficial QOEM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Receber e registrar denúncias, reclamações e representações; encaminhar e acompanhar sua solução (Art. 20)."
+          ]
+        }
+      ],
+      "id": "ouv-pb"
+    },
+    "ari-pb": {
+      "name": "Assessoria de Relações Institucionais",
+      "abbreviation": "ARI",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Gabinete do Comando Geral",
+      "legalRef": "Art. 21 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 21 (Assessoria de Relações Institucionais)"
+      ],
+      "atribuicoes": [
+        "A Assessoria de Relações Institucionais - ARI – tem a finalidade de assessorar o Comando Geral em assuntos legislativos relacionados com a atividade fim da Corporação e atividades de Defesa Social e Defesa Civil, além de, representar a Corporação junto aos Poderes Legislativos Federal, Estadual e Municipais. (Art. 21)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Assessor de Relações Institucionais",
+          "subordinadoA": "Gabinete do Comando Geral",
+          "requisito": "Bombeiro militar designado pelo Comandante Geral para cargo de Assessor Parlamentar (Art. 21 pú)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento em assuntos legislativos; representação junto aos Poderes Legislativos (Art. 21)."
+          ]
+        }
+      ],
+      "id": "ari-pb"
+    },
+    "ccg-pb": {
+      "name": "Centro de Contratações Gerais",
+      "abbreviation": "CCG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Gabinete do Comando Geral",
+      "legalRef": "Art. 22 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 22 (Centro de Contratações Gerais)"
+      ],
+      "atribuicoes": [
+        "O Centro de Contratações Gerais do Corpo de Bombeiros Militar – CCG tem a finalidade de assessorar o Comando Geral em assuntos relacionados com as Leis de Licitações e Contratos Administrativos, bem como tomar decisões, acompanhar o trâmite das licitações, dar impulso aos procedimentos licitatórios, auxiliar comissão temporária de contratação e executar quaisquer outras atividades necessárias ao bom andamento dos certames até a homologação. (Art. 22)"
+      ],
+      "desdobramentos": [
+        "Subcentro de Contratações Bens e Serviços (CCBS)",
+        "Subcentro de Contratações de Obras e Serviço de Engenharia (CCOSE)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do CCG",
+          "subordinadoA": "Gabinete do Comando Geral",
+          "requisito": "Oficial QOEM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assessoramento em licitações e contratos; acompanhamento dos certames (Art. 22)."
+          ]
+        }
+      ],
+      "id": "ccg-pb"
+    },
+    "qcg-pb": {
+      "name": "Quartel do Comando Geral",
+      "abbreviation": "QCG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Gabinete do Comando Geral",
+      "legalRef": "Art. 26 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 26 (Quartel do Comando Geral)"
+      ],
+      "atribuicoes": [
+        "O Quartel do Comando Geral 'Coronel Geraldo Cabral de Vasconcelos' – QCG – é o Centro Administrativo da Corporação, responsável pela manutenção do funcionamento dos órgãos de direção estratégica e setorial, além do reforço operacional aos órgãos de execução. (Art. 26)",
+        "§4º O QCG é o centro administrativo da Corporação responsável pelo suprimento das necessidades de finanças, logística e pessoal dos órgãos de direção estratégica e setorial."
+      ],
+      "desdobramentos": [
+        "Companhia de Comando e Serviço (CCSv/QCG)",
+        "Guarda Bombeiro Militar da Reserva (GBMR)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do QCG",
+          "subordinadoA": "Gabinete do Comando Geral",
+          "requisito": "Tenente-Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 26 §2º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Suprimento das necessidades de finanças, logística e pessoal dos órgãos de direção estratégica e setorial (Art. 26 §4º)."
+          ]
+        }
+      ],
+      "id": "qcg-pb"
+    },
+    "ac-pb": {
+      "name": "Alto Comando",
+      "abbreviation": "AC",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 27 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 27 (Alto Comando)"
+      ],
+      "atribuicoes": [
+        "O Alto Comando – AC – tem a função de exercer o aconselhamento estratégico do Comando Geral, sendo presidido pelo Comandante Geral e tendo como membros: o Subcomandante Geral, o Chefe do EMG, o Corregedor Geral, o Controlador Geral, os Diretores Setoriais, e os Comandantes Regionais da Corporação. (Art. 27)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Presidente do Alto Comando",
+          "subordinadoA": "—",
+          "requisito": "Comandante Geral (presidente nato)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Presidência do colegiado de aconselhamento estratégico (Art. 27)."
+          ]
+        }
+      ],
+      "id": "ac-pb"
+    },
+    "emg-pb": {
+      "name": "Estado Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comandante Geral",
+      "legalRef": "Art. 28; Art. 28 §4º LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 28 (Estado Maior Geral)",
+        "Art. 28 §4º (Atribuições do Chefe do EMG)"
+      ],
+      "atribuicoes": [
+        "O Estado Maior Geral – EMG – é o órgão de assessoramento estratégico do Gabinete do Comando Geral, responsável pela assessoria perante o Comando Geral no planejamento e na gestão estratégica para o desenvolvimento e cumprimento das missões institucionais. (Art. 28 caput)",
+        "I – acompanhar o desenvolvimento das políticas estabelecidas pelo Comandante Geral, a fim de mantê-lo informado dos objetivos alcançados e de sua evolução;",
+        "II – assessorar o Comandante Geral no planejamento da Gestão Institucional;",
+        "III – elaborar o Planejamento Estratégico da Corporação;",
+        "IV – elaborar o Plano de Contratações Anual da Corporação em alinhamento com o Planejamento Estratégico;",
+        "V – elaborar e aprovar as políticas setoriais da Corporação;",
+        "VI – elaborar diretrizes, planos e ordens a serem baixados pelo Comandante Geral;",
+        "VII – elaborar seu regimento interno e encaminhar para aprovação;",
+        "VIII – realizar estudos e planejamentos, coordenar e fiscalizar todas as atividades da Corporação para assegurar o mais eficiente emprego;",
+        "IX – supervisionar a execução dos planos e das ordens baixadas pelo Comandante-Geral e tomar as providências necessárias à consecução dos objetivos da Corporação."
+      ],
+      "desdobramentos": [
+        "1ª EMG: Assessoria de Estudos Legislativos",
+        "2ª EMG: Assessoria de Inteligência",
+        "3ª EMG: Operações, Doutrina e Estatística",
+        "4ª EMG: Mobilização, Avaliação de Riscos e Resposta a Desastres",
+        "5ª EMG: Comunicação Social e Marketing",
+        "6ª EMG: Planejamento Logístico, Elaboração e Gestão de Projetos",
+        "7ª EMG: Gestão Estratégica e Gestão da Qualidade",
+        "8ª EMG: Integração Comunitária, Programas e Projetos Sociais"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado Maior Geral",
+          "subordinadoA": "Comandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão)",
+          "desdobramentos": [
+            "1ª a 8ª Coordenadoria (EMG)"
+          ],
+          "atribuicoes": [
+            "Elaborar o Planejamento Estratégico da Corporação",
+            "Elaborar diretrizes, planos e ordens",
+            "Realizar estudos, planejamentos, coordenar e fiscalizar as atividades",
+            "Elaborar o Plano de Contratações Anual"
+          ]
+        }
+      ],
+      "id": "emg-pb"
+    },
+    "ci-pb": {
+      "name": "Controladoria Interna",
+      "abbreviation": "CI",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 29 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 29 (Controladoria Interna)"
+      ],
+      "atribuicoes": [
+        "A Controladoria Interna – CI – é responsável pelo controle, auditoria, fiscalização, monitoramento e orientação das atividades dos processos desenvolvidos e contratos firmados pela Corporação. (Art. 29 caput)",
+        "§2º Cabe a Controladoria Interna - CI a gestão, fiscalização e análise dos processos de prestações de contas, atos de inclusão de pessoal, processos de inatividade de militares, licitações, contratos e convênios, controle de gastos, gestão de riscos e de controle preventivo das contratações, agindo de ofício, tendo, no exercício de suas funções, acesso irrestrito aos órgãos da Corporação e aos atos administrativos de seus membros."
+      ],
+      "desdobramentos": [
+        "Seção de Auditoria e Fiscalização (CI/1)",
+        "Seção de Gestão de Contratos (CI/2)",
+        "Seção de Controle de Gastos (CI/3)",
+        "Seção de Controle Patrimonial (CI/4)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Controlador Interno",
+          "subordinadoA": "Comando Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Seção de Auditoria e Fiscalização",
+            "Seção de Gestão de Contratos",
+            "Seção de Controle de Gastos",
+            "Seção de Controle Patrimonial"
+          ],
+          "atribuicoes": [
+            "Auditoria, fiscalização, gestão de contratos e controle de gastos e patrimônio"
+          ]
+        }
+      ],
+      "id": "ci-pb"
+    },
+    "correg-pb": {
+      "name": "Corregedoria do Corpo de Bombeiros Militar",
+      "abbreviation": "CORREG",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 30 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 30 (Corregedoria)"
+      ],
+      "atribuicoes": [
+        "A Corregedoria do Corpo de Bombeiros Militar – CORREG – é o órgão de direção estratégica com a finalidade de apurar as infrações penais militares, apurando, acompanhando, fiscalizando e aplicando a correição no regime ético-disciplinar nos serviços da Corporação, e terá sua organização e competências disciplinadas em legislação específica. (Art. 30)"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Corregedor",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 30 §1º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Apuração de infrações penais militares; correição no regime ético-disciplinar (Art. 30)."
+          ]
+        }
+      ],
+      "id": "correg-pb"
+    },
+    "crbm-pb": {
+      "name": "Comandos Regionais de Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Direção Estratégica",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 32 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 32 (Comandos Regionais de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais de Bombeiro Militar – CRBM – são unidades gestoras, em nível estratégico, organizadas de forma sistêmica e responsáveis pela gestão estratégica regionalizada nas Regiões Integradas de Segurança Pública, através do controle, planejamento e supervisão das atividades operacionais realizadas pelas OBM subordinadas. (Art. 32)",
+        "§6º O CRBM tem jurisdição na REISP onde está instalado, podendo apoiar operacionalmente municípios de responsabilidade de outro CRBM, articulando-se com as unidades locais.",
+        "§7º Subordinam-se ao CRBM, administrativamente e operacionalmente, os Batalhões de Bombeiro Militar – BBM – e as Companhias Independentes de Bombeiro Militar – CIBM – instaladas na circunscrição da REISP que o respectivo comando é responsável.",
+        "§8º O Centro Regional de Intendência – CRI - tem a competência de controle do almoxarifado, e de realizar a descarga ou descarte de materiais, assim como o controle e manutenção de viaturas e equipamentos no âmbito da regional."
+      ],
+      "desdobramentos": [
+        "Estado Maior Regional (EM/R): B/1 a B/6",
+        "Centro Regional de Intendência (CRI)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante Regional de Bombeiro Militar",
+          "subordinadoA": "Comando Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 32 §4º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão estratégica regionalizada; controle, planejamento e supervisão das atividades operacionais das OBM subordinadas (Art. 32)."
+          ]
+        }
+      ],
+      "id": "crbm-pb"
+    },
+    "dal-pb": {
+      "name": "Diretoria de Apoio Logístico",
+      "abbreviation": "DAL",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 34 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 34 (Diretoria de Apoio Logístico)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Apoio Logístico – DAL – tem por finalidade a gestão do sistema logístico, responsável pelo planejamento, coordenação, fiscalização e controle das atividades de aquisição, suprimento e manutenção de materiais, viaturas e equipamentos. (Art. 34)",
+        "§2º O Centro de Suprimento Logístico – CSL é o órgão de apoio logístico responsável pelo recebimento, controle, armazenamento, distribuição e suprimento de material de intendência, materiais permanentes, materiais de consumo e material bélico.",
+        "§3º O Centro de Arquitetura, Engenharia e Obras – CAEO é o órgão de apoio logístico responsável pelos planos e projetos de arquitetura e engenharia dos prédios da Corporação, controle do patrimônio imóvel, fiscalização das obras de conservação predial e construção de novos aquartelamentos.",
+        "§4º O Centro de Controle e Manutenção de Viaturas – CMAV é o órgão de apoio logístico responsável pelo recebimento, controle e manutenção de viaturas da Corporação."
+      ],
+      "desdobramentos": [
+        "Centro de Suprimento Logístico (CSL)",
+        "Centro de Arquitetura, Engenharia e Obras (CAEO)",
+        "Centro de Controle e Manutenção de Viaturas (CMAV)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Apoio Logístico",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão do sistema logístico; planejamento, coordenação, fiscalização e controle das atividades de aquisição, suprimento e manutenção (Art. 34)."
+          ]
+        }
+      ],
+      "id": "dal-pb"
+    },
+    "dat-pb": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 35 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 35 (Diretoria de Atividades Técnicas)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Atividades Técnicas – DAT – é a unidade gestora, em nível setorial, organizado de forma sistêmica e responsável pelo estudo, análise, planejamento, orientação técnica, normatização, controle e fiscalização das atividades relativas à segurança contra incêndio e controle de pânico, ao cumprimento das disposições legais sobre o assunto e investigação de incêndios e explosões. (Art. 35)"
+      ],
+      "desdobramentos": [
+        "Conselho Técnico Normativo (CTN)",
+        "Conselho Técnico Deliberativo (CTD)",
+        "Comissão Interna de Análise Técnica (CIAT)",
+        "Seção de Legislação de Prevenção contra Incêndio (DAT/1)",
+        "Seção de Segurança contra Incêndio (DAT/2)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Atividades Técnicas",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Estudo, análise, planejamento, normatização, controle e fiscalização das atividades de SCI/CP e investigação de incêndios (Art. 35)."
+          ]
+        }
+      ],
+      "id": "dat-pb"
+    },
+    "dep-pb": {
+      "name": "Diretoria de Educação e Pesquisa",
+      "abbreviation": "DEP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 37 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 37 (Diretoria de Educação e Pesquisa)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Educação e Pesquisa – DEP – é responsável pela gestão do sistema de educação militar da Corporação, por meio do planejamento, supervisão, coordenação, fiscalização, controle e execução das atividades de ensino, treinamento e pesquisa científica, relacionadas à qualificação profissional de recursos humanos para o exercício das funções atribuídas aos integrantes do CBMPB, bem como de outras instituições civis ou militares, mediante convênio. (Art. 37)",
+        "§3º A ABMAP é a instituição de ensino superior – IES, pluricurricular, especializada na formação tecnológica e profissional de bombeiros militares, com base na conjugação de conhecimentos técnicos e tecnológicos com as suas práticas pedagógicas, nos termos do sistema de ensino militar e das diretrizes e bases da educação nacional.",
+        "§4º O CFAO é responsável pela pesquisa científica, execução e coordenação do planejamento pedagógico dos cursos de formação, habilitação e aperfeiçoamento de oficiais, através dos cursos de graduação e pós-graduação stricto-sensu ou lato-sensu.",
+        "§5º O CFAP é responsável pela formação, habilitação e aperfeiçoamento de praças, através dos cursos de educação tecnológica de graduação e pós-graduação, bem como, dos cursos de educação técnica de nível médio."
+      ],
+      "desdobramentos": [
+        "Academia de Bombeiro Militar 'Aristarcho Pessoa Cavalcanti de Albuquerque' (ABMAP)",
+        "Centro de Formação, Habilitação e Aperfeiçoamento de Oficiais (CFAO)",
+        "Centro de Formação, Habilitação e Aperfeiçoamento de Praças (CFAP)",
+        "Centro de Pesquisa e Extensão (CPEx)",
+        "Centro de Treinamento Operacional (CTOP)",
+        "Colégios Militares",
+        "Corpo Musical"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Educação e Pesquisa",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão do sistema de educação militar; planejamento, supervisão, coordenação e execução do ensino, treinamento e pesquisa científica (Art. 37)."
+          ]
+        }
+      ],
+      "id": "dep-pb"
+    },
+    "df-pb": {
+      "name": "Diretoria de Finanças",
+      "abbreviation": "DF",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 40 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 40 (Diretoria de Finanças)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Finanças – DF – tem como finalidade a gestão do sistema de planejamento e administração financeira, orçamentária, contábil, bem como a gestão de Fundos e Convênios. (Art. 40)"
+      ],
+      "desdobramentos": [
+        "Seção de Administração Financeira (DF/1)",
+        "Seção de Orçamento (DF/2)",
+        "Seção de Contabilidade (DF/3)",
+        "Seção de Auditoria e Controle (DF/4)",
+        "Seção de Captação de Recursos (DF/5)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Finanças",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão do sistema de planejamento e administração financeira, orçamentária, contábil e de Fundos e Convênios (Art. 40)."
+          ]
+        }
+      ],
+      "id": "df-pb"
+    },
+    "dgp-pb": {
+      "name": "Diretoria de Gestão de Pessoas",
+      "abbreviation": "DGP",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 41 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 41 (Diretoria de Gestão de Pessoas)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Gestão de Pessoas – DGP – tem como finalidade o planejamento, recrutamento, seleção, acompanhamento, execução, controle e fiscalização das atividades relacionadas com os recursos humanos da Corporação, sejam militares de carreira ou temporários, bem como os servidores civis. (Art. 41)"
+      ],
+      "desdobramentos": [
+        "Centro de Recrutamento e Seleção de Pessoal (CRESEP)",
+        "Seções DGP/1 a DGP/8"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Gestão de Pessoas",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, recrutamento, seleção, acompanhamento, execução, controle e fiscalização das atividades de recursos humanos (Art. 41)."
+          ]
+        }
+      ],
+      "id": "dgp-pb"
+    },
+    "ds-pb": {
+      "name": "Diretoria de Saúde",
+      "abbreviation": "DS",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 42 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 42 (Diretoria de Saúde)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Saúde – DS – é o órgão integrante do Sistema de Proteção Social dos Militares da Corporação, com competência para planejar, coordenar, fiscalizar, controlar e executar todas as atividades de saúde, assistência biopsicossocial e veterinária, além do trato das questões referentes ao estado sanitário do pessoal da Corporação e seus dependentes. (Art. 42)"
+      ],
+      "desdobramentos": [
+        "Centro de Perícia Médica de Saúde Militar (CPMSM)",
+        "Centro de Saúde Biopsicossocial (CSBIO)",
+        "Centro de Capacitação Física Militar (CCFM)",
+        "Policlínicas de Saúde Biopsicossociais (PSBIO)",
+        "Clínica Veterinária (CVET)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Saúde",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, coordenação, fiscalização, controle e execução das atividades de saúde, assistência biopsicossocial e veterinária (Art. 42)."
+          ]
+        }
+      ],
+      "id": "ds-pb"
+    },
+    "dti-pb": {
+      "name": "Diretoria de Tecnologia da Informação",
+      "abbreviation": "DTI",
+      "category": "Direção Setorial",
+      "subordinadoA": "Subcomandante Geral",
+      "legalRef": "Art. 43 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 43 (Diretoria de Tecnologia da Informação)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Tecnologia da Informação – DTI – tem por finalidade desenvolver sistemas e aplicativos computacionais, a prospecção e absorção de novas tecnologias, administração da rede de informática e dos bancos de dados, o suporte técnico de software e equipamentos, o atendimento especializado aos usuários e a governança de tecnologia da informação e inovação. (Art. 43)"
+      ],
+      "desdobramentos": [
+        "Seções DTI/1 a DTI/8"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Tecnologia da Informação",
+          "subordinadoA": "Subcomandante Geral",
+          "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Desenvolvimento de sistemas, TI, suporte técnico e governança de tecnologia da informação e inovação (Art. 43)."
+          ]
+        }
+      ],
+      "id": "dti-pb"
+    },
+    "exec-pb": {
+      "name": "Unidades Operacionais",
+      "abbreviation": "UOP",
+      "category": "Execução",
+      "subordinadoA": "Comandos Regionais de Bombeiro Militar",
+      "legalRef": "Art. 44 LC 191/2024",
+      "baseLegal": "Lei Complementar nº 191, de 26 de abril de 2024",
+      "artigosDeOrigem": [
+        "Art. 44 (Órgãos de Execução)"
+      ],
+      "atribuicoes": [
+        "I – análise de projetos arquitetônicos e de medidas de segurança contra incêndio e controle de pânico;",
+        "II – busca, resgate e salvamento;",
+        "III – execução e coordenação das atividades defesa civil;",
+        "IV – fiscalização das medidas de segurança contra incêndio e controle de pânico, através de vistorias técnicas solicitadas, inopinadas ou por denúncias;",
+        "V – investigação de incêndios e explosões;",
+        "VI – prevenção, combate e extinção de incêndios;",
+        "VII – prevenção balneária, salvamento aquático e mergulho autônomo de resgate;",
+        "VIII – operações aéreas e resgate aeromédico;",
+        "IX – socorro de urgência e atendimento pré-hospitalar."
+      ],
+      "desdobramentos": [
+        "Batalhões de Bombeiro Militar (BBM)",
+        "Companhias de Bombeiro Militar (CiaBM)",
+        "Companhias Independentes (CIBM)",
+        "Centros de Atividades Técnicas (CAT)",
+        "Grupamento Especializado em Operações de Risco (GEOR)",
+        "Grupamento de Operações Aéreas (GOA)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante de Unidade Operacional",
+          "subordinadoA": "Comandante Regional de Bombeiro Militar",
+          "requisito": "Tenente-Coronel da ativa da Corporação (Comandante de BBM — Art. 51 §6º)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "I a IX – missões previstas no Art. 44 da LC nº 191/2024."
+          ]
+        }
+      ],
+      "id": "exec-pb"
+    }
+  }
+}

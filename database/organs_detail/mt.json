@@ -1,0 +1,553 @@
+{
+  "state_id": "mt",
+  "state_name": "Mato Grosso",
+  "cbm_name": "Corpo de Bombeiros Militar do Mato Grosso",
+  "cbm_abbreviation": "CBMMT",
+  "legal_source": "Lei Complementar nº 775/2023 (alt. LC 806/2024) | Regimento Interno",
+  "organs": {
+    "comando-geral-mt": {
+      "name": "Comando-Geral do Corpo de Bombeiros Militar",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 1-8",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "Arts. 1-8 (Comando-Geral)"
+      ],
+      "atribuicoes": [
+        "Administração, comando e emprego da instituição",
+        "Assessoria ao Governador e Secretário de Segurança Pública",
+        "Planejamento e supervisão de atividades operacionais e administrativas",
+        "Aprovação do plano de emprego da instituição"
+      ],
+      "desdobramentos": [
+        "Conselhos Superiores",
+        "Comandante-Geral Adjunto / Chefe do EMG",
+        "Corregedoria Geral",
+        "Diretorias",
+        "Gabinete do Comandante-Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial superior da ativa, do último posto do Quadro de Oficiais Combatentes (QOBM), escolhido e nomeado pelo Governador do Estado (Art. 6º)",
+          "desdobramentos": [
+            "Gabinete do Comandante-Geral",
+            "Comandante-Geral Adjunto",
+            "Conselho Superior de Bombeiros",
+            "Órgãos de direção, apoio e execução"
+          ],
+          "atribuicoes": [
+            "A administração, o comando e o emprego da instituição são de sua competência e responsabilidade, através de diretrizes e ordens a todos os demais níveis (Art. 7º)",
+            "Assessorar o Governador do Estado e o Secretário Estadual de Segurança Pública nos assuntos relacionados com as atividades bombeiro-militar (Art. 8º, I)",
+            "Decidir, em grau de recurso, questões administrativas (II)",
+            "Planejar e supervisionar, assessorado pelo Comandante-Geral Adjunto e demais órgãos de direção, apoio e execução, todas as atividades operacionais e administrativas do Corpo de Bombeiros Militar (III)",
+            "Elaborar, aprovar e zelar pelo cumprimento dos planos de aplicação dos recursos orçamentários e financeiros da Instituição (IV)",
+            "Aprovar o Regulamento Geral da instituição, após apreciação do Conselho Superior de Bombeiros (V)",
+            "Aprovar o plano de emprego da instituição (VI)",
+            "Baixar portarias, resoluções, instruções normativas, ordens de serviço, diretrizes e planos que promovam a eficácia da gestão administrativa e operacional da instituição, em consonância com a legislação em vigor (VII)",
+            "Constituir comissões, conselhos e assessorias previstas em lei e outras necessárias ao bom desempenho da instituição (VIII)",
+            "Promover, agregar, reverter e excluir as Praças e declarar os aspirantes a oficial (IX)",
+            "Delegar atribuições de sua competência que não sejam vedadas por lei (X)",
+            "Exercer a função de Presidente da Comissão de Promoção de Oficiais da corporação (XI)",
+            "Movimentar oficiais e praças na conformidade do Regulamento de Movimentação de oficiais e praças (XII)",
+            "Propor ao Governador do Estado a indicação de oficiais Bombeiros Militares para nomeação em cargos de função de confiança em âmbito interinstitucional (XIII)",
+            "Desempenhar outras atribuições que lhe forem delegadas pelo Governador do Estado ou Secretário de Estado de Segurança Pública ou previstas em lei (XIV)",
+            "Mandar instaurar Inquéritos Policiais Militares, Inquéritos Sanitários de Origem e Inquéritos Técnicos (XV)",
+            "Determinar a abertura de Sindicância (XVI)",
+            "Readaptar oficiais e praças obedecendo à decisão da perícia médica da Secretaria de Estado de Administração (XVII)",
+            "Exigir de todos os integrantes do Corpo de Bombeiros Militar o estrito cumprimento do dever militar, da disciplina, da observância à hierarquia, da boa conduta social, das normas e da assistência à família (XVIII)",
+            "Providenciar para que o Corpo de Bombeiros Militar esteja sempre em condições de pronto emprego (XIX)",
+            "Fazer publicar ou transcrever em Boletim Geral Eletrônico (BGE) notas ou documentos referentes a atos e fatos administrativos de interesse da instituição, legitimando a publicidade e validade dos mesmos (XX)",
+            "Despachar ou informar, nos prazos regulamentares, os documentos que lhes forem encaminhados (XXI)",
+            "Corresponder diretamente com as autoridades civis ou militares, quando o assunto não exigir a intervenção da autoridade superior, ressalvadas as restrições regulamentares (XXII)",
+            "Cumprir e fazer cumprir por todos os integrantes do Corpo de Bombeiros Militar a legislação em vigor na corporação (XXIII)",
+            "Propor ao Governador do Estado criar, transformar, extinguir, denominar, localizar e estruturar os órgãos de direção superior, de apoio e de direção institucional do Corpo de Bombeiros Militar (XXIV)",
+            "Promover e manter intercâmbio com as demais Secretarias de Estado, instituições civis e militares e outras organizações do Brasil e do exterior, nas áreas de interesse institucional (XXV)",
+            "Traçar as diretrizes Gerais do Comando Geral e as Políticas Setoriais (XXVI)"
+          ]
+        }
+      ],
+      "id": "comando-geral-mt"
+    },
+    "conselho-superior-mt": {
+      "name": "Conselho Superior de Bombeiros Militar",
+      "abbreviation": "CSB",
+      "category": "Decisão Colegiada",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Apresentar propostas sobre matérias estratégicas",
+        "Avaliar emprego da instituição",
+        "Examinar política estadual de segurança pública",
+        "Aprovar o seu regimento interno"
+      ],
+      "desdobramentos": [
+        "Conselho Superior de Bombeiros Militar",
+        "Conselho Superior de Ensino, Pesquisa e Extensão"
+      ],
+      "cargos": [
+        {
+          "cargo": "Conselho Superior de Bombeiros (CSB)",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Órgão consultivo",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Apresentar propostas sobre matérias estratégicas",
+            "Avaliar o emprego da instituição",
+            "Examinar a política estadual de segurança pública",
+            "Apreciar processos de promoção por ato de bravura"
+          ]
+        }
+      ],
+      "id": "conselho-superior-mt"
+    },
+    "comando-adjunto-mt": {
+      "name": "Comandante-Geral Adjunto e Chefe do Estado-Maior-Geral",
+      "abbreviation": "CmtAdj/ChEMG",
+      "category": "Direção Superior",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Chefia do Estado-Maior Geral",
+        "Estudo, planejamento, direção, coordenação, fiscalização e controle de atividades",
+        "Substituição do Comandante-Geral em impedimentos",
+        "Presidência da Comissão de Promoção de Praças"
+      ],
+      "desdobramentos": [],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral Adjunto / Chefe do Estado-Maior-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Substituto eventual do Comandante-Geral (Art. 11)",
+          "desdobramentos": [
+            "Estado-Maior Geral",
+            "Gabinete do Adjunto"
+          ],
+          "atribuicoes": [
+            "Responsável pelo estudo, planejamento, direção, orientação, coordenação, fiscalização e controle de todas as atividades administrativas e operacionais da instituição, encarregado pela elaboração de diretrizes e ordens do Comando aos demais órgãos (Art. 11)",
+            "Chefiar o Estado-Maior Geral da Corporação (Art. 12, I)",
+            "Substituir o Comandante-Geral em seus impedimentos (II)",
+            "Exercer a função de Presidente da Comissão de Promoção de Praças (III)",
+            "Fiscalizar a conduta civil e militar dos oficiais e praças do Corpo de Bombeiros Militar, respeitados os princípios da disciplina, hierarquia e ética Bombeiro Militar (IV)",
+            "Assinar todos os documentos referentes à vida funcional do Comandante-Geral (V)",
+            "Promover e coordenar estudos estratégicos e sistêmicos sobre assuntos de ordem técnica pertinente à instituição (VI)",
+            "Exercer outras atribuições que lhe forem delegadas pelo Comandante-Geral (VII)",
+            "Encaminhar ao Comandante-Geral todos os documentos que dependam da decisão deste (VIII)",
+            "Levar ao conhecimento do Comandante-Geral todas as ocorrências e fatos que tenham sido providenciadas por iniciativa própria (IX)",
+            "Despachar ou informar, nos prazos regulamentares, os documentos que lhes forem encaminhados (X)",
+            "Assegurar-se de que as instruções expedidas pelo Comandante-Geral estejam sendo cumpridas de acordo com os objetivos da Corporação (XII)",
+            "Conferir com os originais e mandar publicar os documentos cabíveis no Boletim Geral Eletrônico (BGE) (XIII)",
+            "Apresentar ao Comandante-Geral o Relatório Anual das Atividades do CBMMT, bem como os periódicos necessários nas épocas previstas pelas diretrizes em vigor (XIV)"
+          ]
+        }
+      ],
+      "id": "comando-adjunto-mt"
+    },
+    "corregedoria-mt": {
+      "name": "Corregedoria Geral do Corpo de Bombeiros Militar",
+      "abbreviation": "CG-Correg",
+      "category": "Direção Superior",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Preservação da disciplina, hierarquia e ética",
+        "Sistematização de processos administrativos disciplinares",
+        "Apuração de infrações administrativas e penais militares",
+        "Execução de polícia judiciária militar"
+      ],
+      "desdobramentos": [
+        "Corregedoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Polícia Judiciária Militar",
+        "Seção de Procedimentos Administrativos Disciplinares Militares"
+      ],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Seção Administrativa",
+            "Seção de Polícia Judiciária Militar",
+            "Seção de Procedimentos Administrativos Disciplinares"
+          ],
+          "atribuicoes": [
+            "Preservação da disciplina, hierarquia e ética",
+            "Apuração de infrações administrativas e penais militares",
+            "Realizar visitas de inspeção; elaborar mapas disciplinares mensais"
+          ]
+        }
+      ],
+      "id": "corregedoria-mt"
+    },
+    "emg-mt": {
+      "name": "Estado-Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Superior",
+      "subordinadoA": "Comando-Geral Adjunto",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Planejamento, orientação, coordenação e fiscalização de todas as atividades",
+        "Elaboração de diretrizes e legislações internas",
+        "Supervisão da execução de planos e ordens"
+      ],
+      "desdobramentos": [
+        "Diretorias do nível de direção setorial"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Gestão de Pessoas (BM/1)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Gestão de pessoas e recursos humanos"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Assistência Social (BM/2)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Assistência social corporativa"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Articulação e Integração Comunitária (BM/3)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Articulação e integração comunitária"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Logística e Patrimônio (BM/4)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Logística e patrimônio"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Comunicação Social (BM/5)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Comunicação social"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Planejamento, Orçamento e Gestão de Projetos (BM/6)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Planejamento, orçamento e gestão de projetos"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Tecnologia da Informação (BM/7)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Tecnologia da informação"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Legislação e Doutrinas (BM/8)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Legislação e doutrinas"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Finanças (BM/9)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Administração financeira"
+          ]
+        },
+        {
+          "cargo": "Coordenador de Ajudância Geral (BM/10)",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Ajudância geral corporativa"
+          ]
+        }
+      ],
+      "id": "emg-mt"
+    },
+    "diretoria-administracao-mt": {
+      "name": "Diretoria de Administração Institucional",
+      "abbreviation": "DAI",
+      "category": "Administração Sistêmica",
+      "subordinadoA": "Comando-Geral Adjunto",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Administração institucional sistêmica: pessoas, logística, comunicação, finanças, TI"
+      ],
+      "desdobramentos": [
+        "Coordenadoria de Gestão de Pessoas (BM/1)",
+        "Coordenadoria de Assistência Social (BM/2)",
+        "Coordenadoria de Articulação e Integração Comunitária (BM/3)",
+        "Coordenadoria de Logística e Patrimônio (BM/4)",
+        "Coordenadoria de Comunicação Social (BM/5)",
+        "Coordenadoria de Planejamento, Orçamento e Gestão de Projetos (BM/6)",
+        "Coordenadoria de Tecnologia da Informação (BM/7)",
+        "Coordenadoria de Legislação e Doutrinas (BM/8)",
+        "Coordenadoria de Finanças (BM/9)",
+        "Coordenadoria de Ajudância Geral (BM/10)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Administração Institucional",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Seção Administrativa",
+            "Seção de Finanças",
+            "Seção Logística e Patrimônio",
+            "Seção de TI e Comunicação",
+            "Seção de Engenharia"
+          ],
+          "atribuicoes": [
+            "Administração institucional sistêmica"
+          ]
+        }
+      ],
+      "id": "diretoria-administracao-mt"
+    },
+    "diretoria-ensino-mt": {
+      "name": "Diretoria de Ensino, Instrução e Pesquisa",
+      "abbreviation": "DEIP",
+      "category": "Administração Sistêmica",
+      "subordinadoA": "Comando-Geral Adjunto",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Recrutamento, formação, ensino, aperfeiçoamento e instrução"
+      ],
+      "desdobramentos": [
+        "Coordenadoria de Recrutamento, Formação e Ensino (CEIP/1)",
+        "Coordenadoria de Aperfeiçoamento, Especialização e Instrução (CEIP/2)",
+        "Centro de Ensino e Instrução de Bombeiros (CEIB)",
+        "Centro de Capacitação Física (CCF)",
+        "Escola Superior Bombeiro Militar (Academia de Bombeiros e Escola de Praças)",
+        "Escolas Militares Dom Pedro II"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Ensino, Instrução e Pesquisa",
+          "subordinadoA": "Comandante Adjunto",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Escola Superior de Bombeiros",
+            "Academia de Bombeiros Militar",
+            "Escola de Formação de Praças"
+          ],
+          "atribuicoes": [
+            "Planejamento, coordenação e controle de formação e especialização"
+          ]
+        }
+      ],
+      "id": "diretoria-ensino-mt"
+    },
+    "diretoria-seguranca-mt": {
+      "name": "Diretoria de Segurança Contra Incêndio e Pânico",
+      "abbreviation": "DSCIP",
+      "category": "Execução",
+      "subordinadoA": "Comando-Geral Adjunto",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Estudos e análise de processos",
+        "Fiscalização",
+        "Legislação e pareceres",
+        "Perícia técnica",
+        "Hidrantes"
+      ],
+      "desdobramentos": [
+        "Coordenadoria de Estudos e Análise de Processos (CCIP/1)",
+        "Coordenadoria de Fiscalização (CCIP/2)",
+        "Coordenadoria de Legislação e Pareceres (CCIP/3)",
+        "Coordenadoria de Perícia Técnica (CCIP/4)",
+        "Coordenadoria de Hidrantes (CCIP/5)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor de Segurança Contra Incêndio e Pânico",
+          "subordinadoA": "Nível de Execução",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Coord. de Estudos e Análise de Processos",
+            "Coord. de Fiscalização",
+            "Coord. de Legislação e Pareceres",
+            "Coord. de Perícia Técnica",
+            "Coord. de Hidrantes"
+          ],
+          "atribuicoes": [
+            "Atividades de prevenção contra incêndio e pânico"
+          ]
+        }
+      ],
+      "id": "diretoria-seguranca-mt"
+    },
+    "diretoria-operacional-mt": {
+      "name": "Diretoria Operacional",
+      "abbreviation": "DOp",
+      "category": "Execução",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Planejamento operacional e estatística",
+        "Atendimento pré-hospitalar",
+        "Coordenação dos Comandos Regionais e unidades"
+      ],
+      "desdobramentos": [
+        "Coordenadoria de Planejamento Operacional e Estatística",
+        "Coordenadoria de Atendimento Pré-Hospitalar",
+        "Comandos Regionais Bombeiro Militar (CRBM)",
+        "Batalhão de Emergências Ambientais (BEA)",
+        "Companhias Independentes",
+        "Pelotões Independentes",
+        "Núcleos Bombeiro Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Diretor Operacional",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "Coronel QOBM",
+          "desdobramentos": [
+            "Coordenadoria de Planejamento Operacional e Estatística",
+            "Coordenadoria de Atendimento Pré-Hospitalar",
+            "Comandos Regionais BM",
+            "Batalhão de Emergências Ambientais"
+          ],
+          "atribuicoes": [
+            "Operações bombeiro-militar e coordenação de unidades operacionais"
+          ]
+        }
+      ],
+      "id": "diretoria-operacional-mt"
+    },
+    "bea-mt": {
+      "name": "Batalhão de Emergências Ambientais",
+      "abbreviation": "BEA",
+      "category": "Execução",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Emergências ambientais, produtos perigosos, busca e salvamento, incêndio florestal"
+      ],
+      "desdobramentos": [
+        "Companhia de Prevenção e Resposta a Produtos Perigosos (CPP)",
+        "Companhia de Busca e Salvamento (CBS)",
+        "Companhia de Prevenção e Combate a Incêndio Florestal (CPCIF)",
+        "Grupo de Aviação Bombeiro Militar (GAvBM)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante do Batalhão de Emergências Ambientais (BEA)",
+          "subordinadoA": "Diretoria Operacional",
+          "requisito": "",
+          "desdobramentos": [
+            "CPP",
+            "CBS",
+            "CPCIF",
+            "GAvBM"
+          ],
+          "atribuicoes": [
+            "Emergências ambientais, produtos perigosos, busca e salvamento e incêndio florestal"
+          ]
+        }
+      ],
+      "id": "bea-mt"
+    },
+    "gabinete-cg-mt": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GCG",
+      "category": "Apoio",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "LC nº 775/2023",
+      "baseLegal": "Lei Complementar nº 775/2023",
+      "artigosDeOrigem": [
+        "LC nº 775/2023"
+      ],
+      "atribuicoes": [
+        "Apoio e assessoramento direto ao Comandante-Geral"
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Secretaria do Gabinete",
+        "Ajudante-de-ordens",
+        "Agência Central de Inteligência (ACI)",
+        "Centro de Comunicação Social BM"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete do Comandante-Geral",
+          "subordinadoA": "Comando-Geral",
+          "requisito": "",
+          "desdobramentos": [
+            "Secretaria do Gabinete",
+            "Ajudante-de-ordens",
+            "Agência Central de Inteligência",
+            "Centro de Comunicação Social BM"
+          ],
+          "atribuicoes": [
+            "Apoio e assessoramento direto ao Comandante-Geral"
+          ]
+        }
+      ],
+      "id": "gabinete-cg-mt"
+    }
+  }
+}
