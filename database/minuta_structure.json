@@ -142,7 +142,31 @@
         "title": "Atribuições dos Cargos",
         "proposedText": "Diretor de Planejamento Operacional:\n  1. Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados. Subordinado ao Subcomandante-Geral.\n\nAdjunto da DPO:\n  1. Substituir o Diretor de Planejamento Operacional em seus impedimentos.\n  2. Auxiliar no planejamento e controle das atividades operacionais.\n\nCoordenador de Operações:\n  1. Planejar, coordenar e controlar as atividades operacionais no âmbito da Coordenadoria de Operações.\n\nCoordenador de Doutrina e Pesquisa:\n  1. Planejar, coordenar e controlar as atividades de doutrina e pesquisa operacional.\n\nCoordenador de Estudos Estratégicos:\n  1. Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais.",
         "sources": [
-          "ro"
+          "ro",
+          "ac",
+          "al",
+          "am",
+          "ap",
+          "ba",
+          "ce",
+          "df",
+          "es",
+          "go",
+          "mg",
+          "ms",
+          "mt",
+          "pa",
+          "pb",
+          "pe",
+          "pi",
+          "pr",
+          "rn",
+          "rr",
+          "rs",
+          "sc",
+          "se",
+          "sp",
+          "to"
         ]
       }
     ]
@@ -275,7 +299,30 @@
         "title": "Atribuições dos Cargos",
         "proposedText": "Comandante do COT:\n  1. Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico, bem como a elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO. Subordinado à Diretoria de Planejamento Operacional.\n\nAdjunto do COT:\n  1. Substituir o Comandante do COT em seus impedimentos.\n  2. Auxiliar no planejamento e controle das atividades técnicas.\n\nCoordenador de Atividades Técnicas (CAT):\n  1. Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.\n  2. Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.\n  3. Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT).\n\nCoordenador de Projetos de Arquitetura e Engenharia:\n  1. Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial.",
         "sources": [
-          "ro"
+          "ro",
+          "ac",
+          "al",
+          "am",
+          "ap",
+          "ba",
+          "ce",
+          "es",
+          "go",
+          "mg",
+          "ms",
+          "mt",
+          "pa",
+          "pb",
+          "pe",
+          "pi",
+          "pr",
+          "rn",
+          "rr",
+          "rs",
+          "sc",
+          "se",
+          "sp",
+          "to"
         ]
       }
     ]

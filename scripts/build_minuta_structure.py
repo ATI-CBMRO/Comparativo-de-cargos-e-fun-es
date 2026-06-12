@@ -72,6 +72,7 @@ def extract_subordinacao(organs: list, state: dict) -> str:
 
 
 def extract_finalidade(organs: list, _state: dict) -> str:
+    # In this dataset the first atribuição is always the organ's purpose statement
     for o in organs:
         for a in (o.get("atribuicoes") or []):
             if a.strip():
@@ -172,7 +173,7 @@ def build_section(section_id: str, all_states: list, group_key: str) -> dict:
             if state["id"] == "ro":
                 ro_organs.extend(organs_of(state, group_key))
         proposed = extract_cargos_atribuicoes(ro_organs, {})
-        sources  = ["ro"] if ref_text else []
+        sources  = list(state_texts.keys())
         if not proposed and others:
             # Fallback: primeiro estado com cargos
             for state in all_states:
