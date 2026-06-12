@@ -145,17 +145,20 @@ export default function MinutaWizard() {
                 font: 'Times New Roman', size: 28, bold: true,
               }),
             ],
-          }),
-          new Paragraph({
-            spacing: { line: 360, after: 120 },
-            children: [
-              new TextRun({
-                text: edits[section.id] || '',
-                font: 'Times New Roman', size: 24,
-              }),
-            ],
           })
         )
+        // One paragraph per line so \n is preserved in the .docx
+        const bodyLines = (edits[section.id] || '').split('\n')
+        bodyLines.forEach(line => {
+          children.push(
+            new Paragraph({
+              spacing: { line: 360, after: 60 },
+              children: [
+                new TextRun({ text: line, font: 'Times New Roman', size: 24 }),
+              ],
+            })
+          )
+        })
       })
 
       const doc = new Document({

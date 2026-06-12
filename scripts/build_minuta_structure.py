@@ -59,11 +59,11 @@ def extract_subordinacao(organs: list, state: dict) -> str:
     ref   = o.get("legalRef", "")
     parts = []
     if name and abbr:
-        parts.append(f"A {name} ({abbr})")
+        parts.append(f"{name} ({abbr})")
     elif name:
-        parts.append(f"A {name}")
+        parts.append(f"{name}")
     if sub:
-        parts.append(f"é subordinada a {sub}")
+        parts.append(f"é subordinado(a) a {sub}")
     if ref and base:
         parts.append(f"conforme {ref} de {base}")
     elif base:
