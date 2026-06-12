@@ -91,7 +91,19 @@
       "Bash(netstat -ano)",
       "Skill(update-config)",
       "Skill(update-config:*)",
-      "PowerShell(Get-NetTCPConnection -LocalPort 5173 -ErrorAction SilentlyContinue)"
+      "PowerShell(Get-NetTCPConnection -LocalPort 5173 -ErrorAction SilentlyContinue)",
+      "Bash(node -e \"const fs = require\\('fs'\\); const content = fs.readFileSync\\('src/components/OrgaosOperacionaisComparator.jsx', 'utf8'\\); const lines = content.split\\('\\\\n'\\); lines.forEach\\(\\(line, i\\) => { for \\(let j = 0; j < line.length; j++\\) { const code = line.charCodeAt\\(j\\); if \\(code > 127\\) { console.log\\('Line ' + \\(i+1\\) + ':' + \\(j+1\\) + ' char=' + JSON.stringify\\(line[j]\\) + ' code=' + code\\); } } }\\);\")",
+      "Bash(node -e ' *)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const { Document } = require\\('docx'\\); console.log\\('ok'\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python scripts/build_minuta_structure.py)",
+      "Bash(node -e \"const d = require\\('docx'\\); console.log\\(Object.keys\\(d\\).filter\\(k => /image|footer|heading|packer/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const { ImageRun } = require\\('docx'\\); console.log\\(ImageRun.toString\\(\\).substring\\(0, 500\\)\\)\")",
+      "Bash(node -e \"const { Document } = require\\('docx'\\); const d = new Document\\({ sections: [{ children: [] }] }\\); console.log\\('Document OK'\\)\")",
+      "Bash(python -c \"import json; d = json.load\\(open\\('database/minuta_structure.json', encoding='utf-8'\\)\\); print\\(list\\(d.keys\\(\\)\\)\\); print\\(list\\(d['dpo'].keys\\(\\)\\)\\); s = d['dpo']['sections'][0]; print\\(list\\(s.keys\\(\\)\\)\\)\")",
+      "Bash(grep -v \"=>\\\\s*{$\\\\|=> setStep\\\\|=> set\\\\|=> {$\\\\|=> {\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); dpo=d['dpo']['sections']; cot=d['cot']['sections']; [print\\(f'DPO/{s[\\\\\"id\\\\\"]}: {len\\(s[\\\\\"proposedText\\\\\"]\\)} chars, {len\\(s[\\\\\"sources\\\\\"]\\)} sources'\\) for s in dpo]; [print\\(f'COT/{s[\\\\\"id\\\\\"]}: {len\\(s[\\\\\"proposedText\\\\\"]\\)} chars, {len\\(s[\\\\\"sources\\\\\"]\\)} sources'\\) for s in cot]\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\tiago\\OneDrive\\Documentos\\Comparativo de legislações CBM"
