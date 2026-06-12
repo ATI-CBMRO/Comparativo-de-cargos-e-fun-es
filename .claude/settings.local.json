@@ -80,7 +80,18 @@
       "Bash(npm search *)",
       "Bash(rm -f 'C:\\\\Users\\\\tiago/.claude/gsd-install-state.json')",
       "Bash(node -e \"const f=require\\('os'\\).homedir\\(\\)+'/.claude.json';const fs=require\\('fs'\\);const j=JSON.parse\\(fs.readFileSync\\(f,'utf8'\\)\\);console.log\\('remoteControlAtStartup =', j.remoteControlAtStartup\\)\")",
-      "Bash(node -e \"const f=require\\('os'\\).homedir\\(\\)+'/.claude.json';const fs=require\\('fs'\\);const j=JSON.parse\\(fs.readFileSync\\(f,'utf8'\\)\\);j.remoteControlAtStartup=true;fs.writeFileSync\\(f,JSON.stringify\\(j,null,2\\)\\);console.log\\('set remoteControlAtStartup =', JSON.parse\\(fs.readFileSync\\(f,'utf8'\\)\\).remoteControlAtStartup\\)\")"
+      "Bash(node -e \"const f=require\\('os'\\).homedir\\(\\)+'/.claude.json';const fs=require\\('fs'\\);const j=JSON.parse\\(fs.readFileSync\\(f,'utf8'\\)\\);j.remoteControlAtStartup=true;fs.writeFileSync\\(f,JSON.stringify\\(j,null,2\\)\\);console.log\\('set remoteControlAtStartup =', JSON.parse\\(fs.readFileSync\\(f,'utf8'\\)\\).remoteControlAtStartup\\)\")",
+      "Bash(python3)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('database/comparativo_dpo_cot.json',encoding='utf-8'\\)\\); states=d.get\\('states',[]\\); s=states[0] if states else {}; print\\(list\\(s.keys\\(\\)\\)[:10]\\)\")",
+      "Bash([ -f \"$f\" ])",
+      "Bash(echo \"EXISTE:\")",
+      "Bash(echo \"---\")",
+      "Bash(cat 'C:\\\\Users\\\\tiago/.claude/CLAUDE.md')",
+      "Bash(echo \"NAO EXISTE\")",
+      "Bash(netstat -ano)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 5173 -ErrorAction SilentlyContinue)"
     ],
     "additionalDirectories": [
       "c:\\Users\\tiago\\OneDrive\\Documentos\\Comparativo de legislações CBM"
