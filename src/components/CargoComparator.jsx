@@ -15,8 +15,7 @@ const STOP = new Set([
   'comando', 'comandante', 'subcomandante',
   'coordenador', 'coordenadoria', 'coordenadora',
   'chefe', 'adjunto', 'adjunta',
-  'secao',       // seção → norm → secao
-  'nucleo',      // núcleo → norm → nucleo
+  'secao', 'nucleo',
   'assessor', 'assessoria',
   'gerente', 'gerencia',
   'supervisor', 'supervisao',
