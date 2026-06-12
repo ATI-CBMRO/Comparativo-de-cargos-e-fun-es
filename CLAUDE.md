@@ -22,6 +22,7 @@ python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> dat
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json (aba "DPO × COT")
+python scripts/build_minuta_structure.py   # comparativo_dpo_cot.json -> database/minuta_structure.json (wizard minuta RI)
 ```
 
 > ORDEM IMPORTA: `build_organs_detail.py` deve rodar ANTES de `build_states_data.py`, pois
