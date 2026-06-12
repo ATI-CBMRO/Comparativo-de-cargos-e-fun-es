@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   Building2, ShieldAlert, Info, Award, AlertCircle,
-  FileDown, FileText
+  FileDown, FileText, Maximize2, X
 } from 'lucide-react'
 
 /* ────────────────────────────────────────────────────────────
@@ -146,7 +146,7 @@ const MATRIX_ROWS = [
 ]
 
 /* ── Tabela matricial: campos em linhas, estados em colunas ── */
-function MatrixTable({ referenceState, otherStates, group }) {
+function MatrixTable({ referenceState, otherStates, group, wrapperRef }) {
   const refOrgans = (referenceState?.[group]) || []
   const isCot = group === 'cot'
 
@@ -160,7 +160,7 @@ function MatrixTable({ referenceState, otherStates, group }) {
   const hasSubCols = cols.some(c => c.organs.length > 1) || refOrgans.length > 1
 
   return (
-    <div className="cargo-compare-wrapper oc-scroll">
+    <div className="cargo-compare-wrapper oc-scroll" ref={wrapperRef}>
       <table className="cargo-compare-table oc-matrix-table">
         <colgroup>
           <col style={{ width: 148 }} />
@@ -208,6 +208,7 @@ function MatrixTable({ referenceState, otherStates, group }) {
             {cols.map(c => (
               <th
                 key={c.state.id}
+                id={`oc-th-${c.state.id}`}
                 colSpan={c.span}
                 rowSpan={c.organs.length <= 1 && hasSubCols ? 2 : 1}
               >
@@ -277,6 +278,66 @@ function MatrixTable({ referenceState, otherStates, group }) {
           ))}
         </tbody>
       </table>
+    </div>
+  )
+}
+
+/* ── Modal fullscreen do comparativo ── */
+function OcModal({ isOpen, onClose, group, groupMeta, referenceState, otherStates }) {
+  const scrollerRef = useRef(null)
+  const GroupIcon = group === 'cot' ? ShieldAlert : Building2
+
+  function scrollToState(stateId) {
+    const wrapper = scrollerRef.current
+    const th = document.getElementById(`oc-th-${stateId}`)
+    if (!wrapper || !th) return
+    const wrapperRect = wrapper.getBoundingClientRect()
+    const thRect = th.getBoundingClientRect()
+    wrapper.scrollLeft += thRect.left - wrapperRect.left - 148 - 240
+  }
+
+  if (!isOpen) return null
+
+  return (
+    <div className="oc-modal-overlay">
+      <div className="oc-modal">
+        {/* Topbar */}
+        <div className="oc-modal-topbar">
+          <span className="oc-modal-topbar-title">
+            <GroupIcon size={16} />
+            <span className="oc-modal-group-tag">{groupMeta?.ref_abbr}</span>
+            {groupMeta?.ref_name}
+          </span>
+          <button className="oc-modal-close" onClick={onClose}>
+            <X size={16} /> Fechar
+          </button>
+        </div>
+
+        {/* Chips de navegacao por estado */}
+        <div className="oc-modal-chips">
+          <span className="oc-modal-chips-label">Ir para:</span>
+          {otherStates.map(st => (
+            <button
+              key={st.id}
+              className="oc-modal-chip"
+              onClick={() => scrollToState(st.id)}
+              title={`${st.name} - ${st.cbm}`}
+            >
+              {st.abbreviation}
+            </button>
+          ))}
+        </div>
+
+        {/* Tabela */}
+        <div className="oc-modal-body">
+          <MatrixTable
+            referenceState={referenceState}
+            otherStates={otherStates}
+            group={group}
+            wrapperRef={scrollerRef}
+          />
+        </div>
+      </div>
     </div>
   )
 }
@@ -417,6 +478,7 @@ export default function OrgaosOperacionaisComparator() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
   const [group, setGroup] = useState('dpo')
+  const [modalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
     fetch('/database/comparativo_dpo_cot.json')
@@ -502,24 +564,34 @@ export default function OrgaosOperacionaisComparator() {
             <FileText size={15} color="var(--text-muted)" />
             {otherStates.length} estados comparados · referência CBMRO
           </span>
-          <button className="btn btn-primary" onClick={() => window.print()}>
-            <FileDown size={16} />
-            Exportar PDF — {groupMeta?.ref_abbr}
-          </button>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button className="btn btn-ghost" onClick={() => window.print()}>
+              <FileDown size={15} />
+              Exportar PDF
+            </button>
+            <button className="btn btn-primary" onClick={() => setModalOpen(true)}>
+              <Maximize2 size={15} />
+              Abrir comparativo
+            </button>
+          </div>
         </div>
 
-        <MatrixTable
-          referenceState={referenceState}
-          otherStates={otherStates}
-          group={group}
-        />
-
-        <p style={{ fontSize: 11.5, color: 'var(--text-muted)', marginTop: 12, lineHeight: 1.5 }}>
-          Fonte: legislação de organização básica / regimento de cada CBM. Estados com mais de uma
-          coluna têm a função distribuída em múltiplos órgãos (ex.: capital e interior). Gerado por{' '}
-          <code>scripts/build_dpo_cot_comparison.py</code>.
-        </p>
+        <div className="oc-launch-hint">
+          <Info size={13} color="var(--accent-blue)" style={{ flexShrink: 0 }} />
+          Clique em <strong>Abrir comparativo</strong> para visualizar a tabela em tela cheia com
+          navegacao rapida entre os {otherStates.length} estados.
+        </div>
       </div>
+
+      {/* ===== Modal fullscreen do comparativo ===== */}
+      <OcModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        group={group}
+        groupMeta={groupMeta}
+        referenceState={referenceState}
+        otherStates={otherStates}
+      />
 
       {/* ===== Relatório PDF (visível apenas na impressão) ===== */}
       <PrintReport
