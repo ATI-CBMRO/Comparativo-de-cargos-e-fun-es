@@ -24,9 +24,12 @@ const ORGAN_OPTIONS = [
   },
 ]
 
+const STEP_LABELS = ['Escolha do órgão', 'Revisão das seções', 'Download']
+
 export default function MinutaWizard() {
   const [step, setStep] = useState(0)            // 0 escolha | 1 revisão | 2 download
   const [selectedOrgan, setSelectedOrgan] = useState(null)
+  const [hoveredOrgan, setHoveredOrgan] = useState(null)
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -226,7 +229,9 @@ export default function MinutaWizard() {
     )
   }
 
-  const STEP_LABELS = ['Escolha do órgão', 'Revisão das seções', 'Download']
+  const sections  = selectedOrgan && data ? data[selectedOrgan].sections : []
+  const section   = sections[sectionIdx] ?? null
+  const organInfo = ORGAN_OPTIONS.find(o => o.key === selectedOrgan) ?? null
 
   return (
     <>
@@ -273,19 +278,15 @@ export default function MinutaWizard() {
               <button
                 key={organ.key}
                 onClick={() => handleSelectOrgan(organ.key)}
+                onMouseEnter={() => setHoveredOrgan(organ.key)}
+                onMouseLeave={() => setHoveredOrgan(null)}
                 style={{
                   flex: '1 1 280px', padding: 28,
-                  border: '2px solid var(--border-card)', borderRadius: 12,
+                  border: `2px solid ${hoveredOrgan === organ.key ? '#c8102e' : 'var(--border-card)'}`,
+                  borderRadius: 12,
                   background: '#fff', cursor: 'pointer', textAlign: 'left',
+                  boxShadow: hoveredOrgan === organ.key ? '0 4px 16px rgba(200,16,46,0.10)' : 'none',
                   transition: 'border-color 0.15s, box-shadow 0.15s',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = '#c8102e'
-                  e.currentTarget.style.boxShadow = '0 4px 16px rgba(200,16,46,0.10)'
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = 'var(--border-card)'
-                  e.currentTarget.style.boxShadow = 'none'
                 }}
               >
                 <div style={{ fontWeight: 800, fontSize: 24, color: '#c8102e', marginBottom: 4 }}>
@@ -303,152 +304,142 @@ export default function MinutaWizard() {
         )}
 
         {/* ── Etapa 1: revisão seção a seção ── */}
-        {step === 1 && selectedOrgan && (() => {
-          const sections = data[selectedOrgan].sections
-          const section  = sections[sectionIdx]
-          return (
-            <div style={{ maxWidth: 760 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 6 }}>
-                <span style={{ fontWeight: 700, color: '#121d3d', fontSize: 17 }}>
-                  {section.title}
-                </span>
-                <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>
-                  Seção {sectionIdx + 1} de {sections.length}
-                </span>
-              </div>
-
-              {section.sources.length > 0 && (
-                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center', marginBottom: 12 }}>
-                  <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Baseado em:</span>
-                  {section.sources.map(s => (
-                    <span key={s} style={{
-                      background: '#eef1f6', border: '1px solid var(--border-card)',
-                      borderRadius: 4, padding: '1px 7px',
-                      fontSize: 12, fontWeight: 700, color: '#121d3d', textTransform: 'uppercase',
-                    }}>
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              )}
-
-              <textarea
-                value={edits[section.id] ?? ''}
-                onChange={e => setEdits(prev => ({ ...prev, [section.id]: e.target.value }))}
-                style={{
-                  width: '100%', minHeight: 280, padding: 14,
-                  border: '1.5px solid var(--border-card)', borderRadius: 8,
-                  fontSize: 14, lineHeight: 1.7,
-                  fontFamily: 'Inter, sans-serif',
-                  resize: 'vertical', boxSizing: 'border-box',
-                  outline: 'none',
-                }}
-                onFocus={e => { e.target.style.borderColor = '#c8102e' }}
-                onBlur={e => { e.target.style.borderColor = 'var(--border-card)' }}
-              />
-
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 18 }}>
-                <button
-                  onClick={handlePrev}
-                  disabled={sectionIdx === 0}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '9px 20px',
-                    border: '1.5px solid var(--border-card)', borderRadius: 7,
-                    background: '#fff', cursor: sectionIdx === 0 ? 'not-allowed' : 'pointer',
-                    opacity: sectionIdx === 0 ? 0.4 : 1, fontSize: 14,
-                  }}
-                >
-                  <ChevronLeft size={16} /> Anterior
-                </button>
-                <button
-                  onClick={handleNext}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '9px 24px',
-                    border: 'none', borderRadius: 7,
-                    background: '#c8102e', color: '#fff',
-                    fontWeight: 600, cursor: 'pointer', fontSize: 14,
-                  }}
-                >
-                  {sectionIdx < sections.length - 1 ? 'Próxima' : 'Finalizar'}
-                  <ChevronRight size={16} />
-                </button>
-              </div>
+        {step === 1 && section && (
+          <div style={{ maxWidth: 760 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 6 }}>
+              <span style={{ fontWeight: 700, color: '#121d3d', fontSize: 17 }}>
+                {section.title}
+              </span>
+              <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>
+                Seção {sectionIdx + 1} de {sections.length}
+              </span>
             </div>
-          )
-        })()}
+
+            {section.sources.length > 0 && (
+              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center', marginBottom: 12 }}>
+                <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Baseado em:</span>
+                {section.sources.map(s => (
+                  <span key={s} style={{
+                    background: '#eef1f6', border: '1px solid var(--border-card)',
+                    borderRadius: 4, padding: '1px 7px',
+                    fontSize: 12, fontWeight: 700, color: '#121d3d', textTransform: 'uppercase',
+                  }}>
+                    {s}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            <textarea
+              value={edits[section.id] ?? ''}
+              onChange={e => setEdits(prev => ({ ...prev, [section.id]: e.target.value }))}
+              style={{
+                width: '100%', minHeight: 280, padding: 14,
+                border: '1.5px solid var(--border-card)', borderRadius: 8,
+                fontSize: 14, lineHeight: 1.7,
+                fontFamily: 'Inter, sans-serif',
+                resize: 'vertical', boxSizing: 'border-box',
+                outline: 'none',
+              }}
+            />
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 18 }}>
+              <button
+                onClick={handlePrev}
+                disabled={sectionIdx === 0}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 6,
+                  padding: '9px 20px',
+                  border: '1.5px solid var(--border-card)', borderRadius: 7,
+                  background: '#fff', cursor: sectionIdx === 0 ? 'not-allowed' : 'pointer',
+                  opacity: sectionIdx === 0 ? 0.4 : 1, fontSize: 14,
+                }}
+              >
+                <ChevronLeft size={16} /> Anterior
+              </button>
+              <button
+                onClick={handleNext}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 6,
+                  padding: '9px 24px',
+                  border: 'none', borderRadius: 7,
+                  background: '#c8102e', color: '#fff',
+                  fontWeight: 600, cursor: 'pointer', fontSize: 14,
+                }}
+              >
+                {sectionIdx < sections.length - 1 ? 'Próxima' : 'Finalizar'}
+                <ChevronRight size={16} />
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* ── Etapa 2: download ── */}
-        {step === 2 && selectedOrgan && (() => {
-          const organInfo = ORGAN_OPTIONS.find(o => o.key === selectedOrgan)
-          const sections  = data[selectedOrgan].sections
-          return (
-            <div style={{ maxWidth: 760 }}>
-              <h3 style={{ color: '#121d3d', marginBottom: 16, fontSize: 17 }}>
-                Resumo da minuta — {organInfo.fullName}
-              </h3>
+        {step === 2 && organInfo && (
+          <div style={{ maxWidth: 760 }}>
+            <h3 style={{ color: '#121d3d', marginBottom: 16, fontSize: 17 }}>
+              Resumo da minuta — {organInfo.fullName}
+            </h3>
 
-              {sections.map(section => (
-                <details
-                  key={section.id}
-                  style={{
-                    marginBottom: 10,
-                    border: '1px solid var(--border-card)',
-                    borderRadius: 8, overflow: 'hidden',
-                  }}
-                >
-                  <summary style={{
-                    padding: '10px 14px', fontWeight: 600, cursor: 'pointer',
-                    background: 'var(--gray-50)', color: '#121d3d', fontSize: 14,
-                    listStyle: 'none', display: 'flex', alignItems: 'center', gap: 8,
-                  }}>
-                    {section.title}
-                  </summary>
-                  <pre style={{
-                    padding: 14, margin: 0,
-                    fontSize: 13, whiteSpace: 'pre-wrap',
-                    lineHeight: 1.65, color: 'var(--text-secondary)',
-                    fontFamily: 'Inter, sans-serif',
-                  }}>
-                    {edits[section.id] || '(vazio)'}
-                  </pre>
-                </details>
-              ))}
+            {sections.map(sec => (
+              <details
+                key={sec.id}
+                style={{
+                  marginBottom: 10,
+                  border: '1px solid var(--border-card)',
+                  borderRadius: 8, overflow: 'hidden',
+                }}
+              >
+                <summary style={{
+                  padding: '10px 14px', fontWeight: 600, cursor: 'pointer',
+                  background: 'var(--gray-50)', color: '#121d3d', fontSize: 14,
+                  listStyle: 'none', display: 'flex', alignItems: 'center', gap: 8,
+                }}>
+                  {sec.title}
+                </summary>
+                <pre style={{
+                  padding: 14, margin: 0,
+                  fontSize: 13, whiteSpace: 'pre-wrap',
+                  lineHeight: 1.65, color: 'var(--text-secondary)',
+                  fontFamily: 'Inter, sans-serif',
+                }}>
+                  {edits[sec.id] || '(vazio)'}
+                </pre>
+              </details>
+            ))}
 
-              <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
-                <button
-                  onClick={() => { setSectionIdx(data[selectedOrgan].sections.length - 1); setStep(1) }}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    padding: '10px 20px',
-                    border: '1.5px solid var(--border-card)', borderRadius: 7,
-                    background: '#fff', cursor: 'pointer', fontSize: 14,
-                  }}
-                >
-                  <ArrowLeft size={16} /> Voltar e editar
-                </button>
-                <button
-                  onClick={handleDownload}
-                  disabled={generating}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: 8,
-                    padding: '10px 24px',
-                    border: 'none', borderRadius: 7,
-                    background: generating ? '#9ca3af' : '#c8102e',
-                    color: '#fff', fontWeight: 600,
-                    cursor: generating ? 'wait' : 'pointer', fontSize: 14,
-                  }}
-                >
-                  <Download size={16} />
-                  {generating
-                    ? 'Gerando…'
-                    : `Baixar Minuta_RI_${organInfo.label}_CBMRO.docx`}
-                </button>
-              </div>
+            <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
+              <button
+                onClick={() => { setSectionIdx(sections.length - 1); setStep(1) }}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 6,
+                  padding: '10px 20px',
+                  border: '1.5px solid var(--border-card)', borderRadius: 7,
+                  background: '#fff', cursor: 'pointer', fontSize: 14,
+                }}
+              >
+                <ArrowLeft size={16} /> Voltar e editar
+              </button>
+              <button
+                onClick={handleDownload}
+                disabled={generating}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 8,
+                  padding: '10px 24px',
+                  border: 'none', borderRadius: 7,
+                  background: generating ? '#9ca3af' : '#c8102e',
+                  color: '#fff', fontWeight: 600,
+                  cursor: generating ? 'wait' : 'pointer', fontSize: 14,
+                }}
+              >
+                <Download size={16} />
+                {generating
+                  ? 'Gerando…'
+                  : `Baixar Minuta_RI_${organInfo.label}_CBMRO.docx`}
+              </button>
             </div>
-          )
-        })()}
+          </div>
+        )}
       </div>
     </>
   )
