@@ -1521,17 +1521,97 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .oc-print-ref ul { margin: 3px 0 0 15px; list-style: disc !important; }
   .oc-print-ref li { margin-bottom: 2px; }
 
-  .oc-print-table { width: 100% !important; border-collapse: collapse !important; font-size: 8.5px !important; }
-  .oc-print-table th {
-    background: #16234a !important; color: #fff !important; text-align: left;
-    padding: 4px 6px !important; border: 1px solid #16234a !important;
-    font-size: 8px !important; text-transform: uppercase; letter-spacing: 0.3px;
+  /* ── capa ── */
+  .oc-print-cover { page-break-after: always; margin-bottom: 0; }
+
+  /* ── folha por estado ── */
+  .oc-print-page { margin-top: 0; }
+
+  .oc-print-page-head {
+    display: flex !important; align-items: center; gap: 10px;
+    border-bottom: 2px solid #c8102e !important;
+    padding-bottom: 6px; margin-bottom: 10px;
   }
-  .oc-print-table td {
-    border: 1px solid #d3dae5 !important; padding: 4px 6px !important;
-    vertical-align: top; color: #1a1a1a !important; background: #fff !important;
+  .oc-print-group-tag {
+    background: #c8102e !important; color: #fff !important;
+    font-size: 8px !important; font-weight: 800; letter-spacing: 0.4px;
+    padding: 2px 7px; border-radius: 3px; flex-shrink: 0;
   }
-  .oc-print-table tbody tr:nth-child(even) td { background: #f5f7fa !important; }
-  .oc-print-table tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+  .oc-print-page-title {
+    font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 800;
+    color: #111; flex: 1;
+  }
+  .oc-print-page-date { font-size: 8px; color: #777; flex-shrink: 0; }
+
+  /* ── tabela de comparação 3 colunas ── */
+  .oc-print-sbs {
+    width: 100% !important; border-collapse: collapse !important;
+    font-size: 8.5px !important; table-layout: fixed;
+  }
+  .oc-print-sbs th, .oc-print-sbs td {
+    border: 1px solid #c8d0dc !important;
+    padding: 5px 7px !important; vertical-align: top;
+  }
+  .oc-psbs-label-head {
+    background: #e8ecf2 !important; color: #444 !important;
+    font-size: 7.5px !important; text-transform: uppercase; letter-spacing: 0.3px;
+  }
+  .oc-psbs-ro-head {
+    background: #16234a !important; color: #fff !important;
+    font-size: 9px !important; font-weight: 800; line-height: 1.35;
+  }
+  .oc-psbs-ro-head small { font-size: 7.5px !important; font-weight: 400; opacity: 0.8; }
+  .oc-psbs-ref-tag {
+    display: inline-block; margin-left: 6px;
+    background: #c8102e !important; color: #fff !important;
+    font-size: 7px !important; font-weight: 700; padding: 1px 5px; border-radius: 3px;
+  }
+  .oc-psbs-state-head {
+    background: #1e3260 !important; color: #fff !important;
+    font-size: 9px !important; font-weight: 800; line-height: 1.35;
+  }
+  .oc-psbs-state-head small { font-size: 7.5px !important; font-weight: 400; opacity: 0.8; }
+  .oc-psbs-label {
+    background: #f2f4f8 !important; color: #444 !important;
+    font-size: 7.5px !important; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.2px; white-space: nowrap;
+  }
+  .oc-psbs-notfound {
+    font-style: italic; color: #888 !important; background: #fafafa !important;
+  }
+  .oc-psbs-note { font-style: italic; color: #555 !important; font-size: 8px !important; }
+  .oc-print-sbs tbody tr:nth-child(even) td:not(.oc-psbs-label) {
+    background: #f9fafb !important;
+  }
+  .oc-print-sbs tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+
+  /* ── elementos internos (organ, cargo, list) ── */
+  .oc-organ-name { font-size: 8.5px !important; font-weight: 700; color: #111 !important; }
+  .oc-organ-sub { display: flex; gap: 6px; margin-top: 2px; }
+  .oc-organ-abbr {
+    font-size: 7.5px !important; font-weight: 700; color: #fff !important;
+    background: #16234a !important; padding: 1px 5px; border-radius: 3px;
+  }
+  .oc-organ-ref { font-size: 7.5px !important; color: #555 !important; }
+  .oc-cargos { display: flex; flex-direction: column; gap: 5px; }
+  .oc-cargo { border-left: 2px solid #c8102e; padding-left: 5px; }
+  .oc-cargo-name { display: block; font-weight: 700; font-size: 8px !important; color: #111 !important; }
+  .oc-cargo-req {
+    display: block; font-size: 7.5px !important; color: #555 !important; margin-top: 1px;
+  }
+  .oc-cargo-sub {
+    display: block; font-size: 7.5px !important; color: #444 !important; margin-top: 1px;
+  }
+  .cc-list { margin: 0 0 0 12px !important; padding: 0 !important; list-style: disc !important; }
+  .cc-list li { font-size: 8px !important; color: #222 !important; margin-bottom: 2px; line-height: 1.35; }
+  .cc-empty { color: #9aa3b2; font-style: italic; font-size: 8px !important; }
+  .oc-multi { display: flex; flex-direction: column; gap: 6px; }
+  .oc-multi-tag {
+    font-size: 7px !important; font-weight: 700; color: #fff !important;
+    background: #16234a !important; padding: 1px 5px; border-radius: 3px; display: inline-block;
+    margin-bottom: 2px;
+  }
+  .oc-sub { font-size: 8px !important; color: #333 !important; }
+
   .oc-print-na { color: #9aa3b2; font-style: italic; }
 }

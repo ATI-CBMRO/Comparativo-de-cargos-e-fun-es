@@ -254,53 +254,7 @@ function SideBySide({ referenceState, target, group, groupMeta, note, onClose })
   )
 }
 
-/* ── Subcomponentes exclusivos do relatório impresso ── */
-function PrintCargosTable({ cargos }) {
-  if (!cargos || cargos.length === 0) {
-    return <p style={{ fontSize: 10, color: '#888', fontStyle: 'italic' }}>Cargos não discriminados.</p>
-  }
-  return (
-    <table className="oc-print-table" style={{ marginTop: 6 }}>
-      <thead>
-        <tr>
-          <th style={{ width: '30%' }}>Cargo / Função</th>
-          <th style={{ width: '25%' }}>Requisito / Posto</th>
-          <th style={{ width: '25%' }}>Subordinação</th>
-          <th style={{ width: '20%' }}>Atribuições (resumo)</th>
-        </tr>
-      </thead>
-      <tbody>
-        {cargos.map((c, i) => (
-          <tr key={i}>
-            <td>{c.cargo || '—'}</td>
-            <td>{c.requisito || '—'}</td>
-            <td>{c.subordinadoA || '—'}</td>
-            <td>
-              {!c.atribuicoes || c.atribuicoes.length === 0
-                ? '—'
-                : <ul style={{ margin: 0, paddingLeft: 14, fontSize: 9 }}>
-                    {c.atribuicoes.map((a, k) => <li key={k}>{a}</li>)}
-                  </ul>
-              }
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  )
-}
-
-function PrintDesdobramentos({ items }) {
-  if (!items || items.length === 0) return null
-  return (
-    <div style={{ marginTop: 4, fontSize: 10 }}>
-      <strong>Desdobramentos:</strong>{' '}
-      <span style={{ color: '#444' }}>{items.join(' · ')}</span>
-    </div>
-  )
-}
-
-/* ── Relatório PDF — centrado no estado, dados curados diretos ── */
+/* ── Relatório PDF — uma folha por estado (CBMRO × estado), 3 colunas ── */
 function PrintReport({ referenceState, otherStates, group, groupMeta }) {
   if (!referenceState) return null
   const refOrgans = referenceState[group] || []
@@ -310,102 +264,109 @@ function PrintReport({ referenceState, otherStates, group, groupMeta }) {
 
   return (
     <div className="oc-print">
-      {/* Cabeçalho institucional */}
-      <div className="oc-print-header">
-        <img
-          className="oc-print-emblem"
-          src="/BrasaoCBMRO2D-COMPLETO.png"
-          onError={e => {
-            if (!e.currentTarget.dataset.fb) {
-              e.currentTarget.dataset.fb = '1'
-              e.currentTarget.src = '/brasao-cbmro.svg'
-            }
-          }}
-          alt="Brasão CBMRO"
-        />
-        <div>
-          <div className="oc-print-title">
-            Relatório Comparativo — {groupMeta?.ref_abbr} ({groupMeta?.ref_name})
+      {/* Capa com cabeçalho institucional (folha própria) */}
+      <div className="oc-print-cover">
+        <div className="oc-print-header">
+          <img
+            className="oc-print-emblem"
+            src="/BrasaoCBMRO2D-COMPLETO.png"
+            onError={e => {
+              if (!e.currentTarget.dataset.fb) {
+                e.currentTarget.dataset.fb = '1'
+                e.currentTarget.src = '/brasao-cbmro.svg'
+              }
+            }}
+            alt="Brasão CBMRO"
+          />
+          <div>
+            <div className="oc-print-title">
+              Relatório Comparativo — {groupMeta?.ref_abbr} ({groupMeta?.ref_name})
+            </div>
+            <div className="oc-print-sub">
+              Corpos de Bombeiros Militares · Referência: minuta de LOB do CBMRO · Portal de Legislação
+            </div>
           </div>
-          <div className="oc-print-sub">
-            Corpos de Bombeiros Militares · Referência: minuta de LOB do CBMRO ·
-            Portal de Legislação
+          <div className="oc-print-meta">
+            <span>Emitido em</span>
+            <strong>{printDate}</strong>
           </div>
         </div>
-        <div className="oc-print-meta">
-          <span>Emitido em</span>
-          <strong>{printDate}</strong>
-        </div>
+        <p className="oc-print-intro">
+          Comparativo do órgão equivalente à <strong>{groupMeta?.ref_abbr}</strong>{' '}
+          ({groupMeta?.ref_name}) nos 27 Corpos de Bombeiros Militares. Cada folha apresenta
+          a comparação direta CBMRO × estado, com os campos dispostos em linhas e as duas
+          legislações em colunas. "Órgão não discriminado" indica ausência de mapeamento
+          na legislação do estado.
+        </p>
       </div>
 
-      <p className="oc-print-intro">
-        Comparativo do órgão equivalente à <strong>{groupMeta?.ref_abbr}</strong>{' '}
-        ({groupMeta?.ref_name}) nos 27 Corpos de Bombeiros Militares. Para cada estado,
-        são exibidos os cargos/funções, requisitos de posto e subordinação conforme a
-        legislação curada. "Órgão não discriminado" indica ausência de mapeamento na
-        legislação do estado.
-      </p>
-
-      {/* ── Referência CBMRO ── */}
-      <section className="oc-print-cargo">
-        <h3 className="oc-print-cargo-title">
-          Referência — CBMRO · {groupMeta?.ref_abbr}
-        </h3>
-        {refOrgans.length === 0 ? (
-          <p>Órgão de referência não discriminado.</p>
-        ) : (
-          refOrgans.map((organ, i) => (
-            <div key={i} style={{ marginBottom: 12 }}>
-              <div>
-                <strong>Órgão:</strong> {organ.name}
-                {organ.abbreviation ? ` (${organ.abbreviation})` : ''}
-                {organ.legalRef ? ` · ${organ.legalRef}` : ''}
-              </div>
-              {organ.subordinadoA && (
-                <div><strong>Subordinação:</strong> {organ.subordinadoA}</div>
-              )}
-              <PrintCargosTable cargos={organ.cargos} />
-              <PrintDesdobramentos items={organ.desdobramentos} />
-            </div>
-          ))
-        )}
-      </section>
-
-      {/* ── Um estado por seção ── */}
-      {otherStates.map(st => {
-        const organs = st[group] || []
+      {/* Uma folha por estado */}
+      {otherStates.map((st, idx) => {
+        const stOrgans = st[group] || []
         const note = st.notes?.[group]
+        const isLast = idx === otherStates.length - 1
         return (
-          <section className="oc-print-cargo" key={st.id}>
-            <h3 className="oc-print-cargo-title">
-              {st.abbreviation} · {st.cbm} — {st.name}
-            </h3>
+          <section
+            key={st.id}
+            className="oc-print-page"
+            style={!isLast ? { pageBreakAfter: 'always' } : undefined}
+          >
+            {/* Mini cabeçalho da folha */}
+            <div className="oc-print-page-head">
+              <span className="oc-print-group-tag">{groupMeta?.ref_abbr}</span>
+              <span className="oc-print-page-title">
+                CBMRO × {st.abbreviation} · {st.cbm}
+              </span>
+              <span className="oc-print-page-date">{printDate}</span>
+            </div>
 
-            {organs.length === 0 ? (
-              <p style={{ fontStyle: 'italic', color: '#666' }}>
-                {note || 'Órgão equivalente não discriminado na legislação deste estado.'}
-              </p>
-            ) : (
-              organs.map((organ, j) => (
-                <div key={j} style={{ marginBottom: 12 }}>
-                  <div>
-                    <strong>Órgão:</strong> {organ.name}
-                    {organ.abbreviation ? ` (${organ.abbreviation})` : ''}
-                    {organ.legalRef ? ` · ${organ.legalRef}` : ''}
-                  </div>
-                  {organ.subordinadoA && (
-                    <div><strong>Subordinação:</strong> {organ.subordinadoA}</div>
-                  )}
-                  <PrintCargosTable cargos={organ.cargos} />
-                  <PrintDesdobramentos items={organ.desdobramentos} />
-                  {note && (
-                    <p style={{ fontSize: 10, color: '#555', marginTop: 4 }}>
-                      Nota: {note}
-                    </p>
-                  )}
-                </div>
-              ))
-            )}
+            {/* Tabela de comparação 3 colunas */}
+            <table className="oc-print-sbs">
+              <colgroup>
+                <col style={{ width: '16%' }} />
+                <col style={{ width: '42%' }} />
+                <col style={{ width: '42%' }} />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th className="oc-psbs-label-head">Campo</th>
+                  <th className="oc-psbs-ro-head">
+                    {referenceState.abbreviation} · {referenceState.cbm}
+                    <span className="oc-psbs-ref-tag">Referência</span>
+                  </th>
+                  <th className="oc-psbs-state-head">
+                    {st.abbreviation} · {st.cbm}
+                    <br /><small>{st.name}</small>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {stOrgans.length === 0 ? (
+                  <tr>
+                    <td className="oc-psbs-label">Situação</td>
+                    <td>{SBS_FIELDS[0].render(refOrgans)}</td>
+                    <td className="oc-psbs-notfound">
+                      {note || 'Órgão equivalente não discriminado na legislação deste estado.'}
+                    </td>
+                  </tr>
+                ) : (
+                  SBS_FIELDS.map(f => (
+                    <tr key={f.label}>
+                      <td className="oc-psbs-label">{f.label}</td>
+                      <td>{f.render(refOrgans)}</td>
+                      <td>{f.render(stOrgans)}</td>
+                    </tr>
+                  ))
+                )}
+                {note && stOrgans.length > 0 && (
+                  <tr>
+                    <td className="oc-psbs-label">Nota</td>
+                    <td>—</td>
+                    <td className="oc-psbs-note">{note}</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
           </section>
         )
       })}
