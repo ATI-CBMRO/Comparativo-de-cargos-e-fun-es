@@ -1,7 +1,7 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Shield, FileText, Award, Library
+  Search, Shield, FileText, Award, Library, ScrollText
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -9,6 +9,7 @@ import StateDetail from './pages/StateDetail.jsx'
 import Compare from './pages/Compare.jsx'
 import SearchPage from './pages/Search.jsx'
 import Legislations from './pages/Legislations.jsx'
+import MinutaWizard from './pages/MinutaWizard.jsx'
 
 const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
@@ -16,6 +17,7 @@ const NAV = [
   { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
   { to: '/comparar', icon: GitCompare, label: 'Comparativo' },
   { to: '/busca', icon: Search, label: 'Busca Textual' },
+  { to: '/minuta', icon: ScrollText, label: 'Minuta RI' },
 ]
 
 function Header() {
@@ -105,6 +107,7 @@ export default function App() {
           <Route path="/legislacoes" element={<Legislations />} />
           <Route path="/comparar" element={<Compare />} />
           <Route path="/busca" element={<SearchPage />} />
+          <Route path="/minuta" element={<MinutaWizard />} />
         </Routes>
       </main>
     </div>
