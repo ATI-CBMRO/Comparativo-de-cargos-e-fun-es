@@ -440,25 +440,25 @@ export default function OrgaosOperacionaisComparator() {
 
   if (error) {
     return (
-      <div className=”empty-state” style={{ marginTop: 24 }}>
-        <Building2 size={40} className=”empty-state-icon” />
+      <div className="empty-state" style={{ marginTop: 24 }}>
+        <Building2 size={40} className="empty-state-icon" />
         <h3>Comparativo não encontrado</h3>
         <p>Execute <code>python scripts/build_dpo_cot_comparison.py</code> para gerar os dados.</p>
       </div>
     )
   }
-  if (!data) return <div className=”empty-state”><div className=”spinner” /></div>
+  if (!data) return <div className="empty-state"><div className="spinner" /></div>
 
   const GROUP_ICON = { dpo: Building2, cot: ShieldAlert }
 
   return (
     <div>
       {/* ===== UI de tela (oculta na impressão) ===== */}
-      <div className=”no-print”>
-        <div className=”card” style={{ marginBottom: 18 }}>
-          <div className=”card-header”>
-            <span className=”card-title” style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Award size={18} color=”var(--cbm-red-700)” />
+      <div className="no-print">
+        <div className="card" style={{ marginBottom: 18 }}>
+          <div className="card-header">
+            <span className="card-title" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Award size={18} color="var(--cbm-red-700)" />
               Órgãos Operacionais — Referência CBMRO (Minuta de LOB)
             </span>
           </div>
@@ -471,7 +471,7 @@ export default function OrgaosOperacionaisComparator() {
           </p>
         </div>
 
-        <div className=”tabs” style={{ marginBottom: 16 }}>
+        <div className="tabs" style={{ marginBottom: 16 }}>
           {data.groups.map(g => {
             const Icon = GROUP_ICON[g.key] || Building2
             return (
@@ -489,20 +489,20 @@ export default function OrgaosOperacionaisComparator() {
         </div>
 
         {groupMeta && (
-          <div className=”oc-group-desc” style={{ marginBottom: 16 }}>
-            <Info size={14} style={{ flexShrink: 0, marginTop: 2 }} color=”var(--accent-blue)” />
+          <div className="oc-group-desc" style={{ marginBottom: 16 }}>
+            <Info size={14} style={{ flexShrink: 0, marginTop: 2 }} color="var(--accent-blue)" />
             <span>
               <strong>{groupMeta.ref_abbr} — {groupMeta.ref_name}:</strong> {groupMeta.description}
             </span>
           </div>
         )}
 
-        <div className=”oc-toolbar”>
-          <span className=”oc-toolbar-info”>
-            <FileText size={15} color=”var(--text-muted)” />
+        <div className="oc-toolbar">
+          <span className="oc-toolbar-info">
+            <FileText size={15} color="var(--text-muted)" />
             {otherStates.length} estados comparados · referência CBMRO
           </span>
-          <button className=”btn btn-primary” onClick={() => window.print()}>
+          <button className="btn btn-primary" onClick={() => window.print()}>
             <FileDown size={16} />
             Exportar PDF — {groupMeta?.ref_abbr}
           </button>
