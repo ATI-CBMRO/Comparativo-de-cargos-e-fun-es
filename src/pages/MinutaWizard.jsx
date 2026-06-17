@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { ChevronRight, ChevronLeft, Download, ArrowLeft } from 'lucide-react'
 import {
-  Document, Packer, Paragraph, TextRun, HeadingLevel,
+  Document, Packer, Paragraph, TextRun,
   Footer, AlignmentType, ImageRun,
 } from 'docx'
+
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
 
 const ORGAN_OPTIONS = [
   {
@@ -135,26 +137,39 @@ export default function MinutaWizard() {
 
       // Capítulos
       sections.forEach((section, idx) => {
+        // Título do capítulo: centralizado, negrito, maiúsculas
         children.push(
           new Paragraph({
-            heading: HeadingLevel.HEADING_1,
+            alignment: AlignmentType.CENTER,
             pageBreakBefore: idx > 0,
+            spacing: { before: idx > 0 ? 0 : 120, after: 240 },
             children: [
               new TextRun({
-                text: section.title,
-                font: 'Times New Roman', size: 28, bold: true,
+                text: `CAPÍTULO ${ROMAN[idx] ?? idx + 1} — ${section.title.toUpperCase()}`,
+                font: 'Times New Roman', size: 26, bold: true,
               }),
             ],
           })
         )
-        // One paragraph per line so \n is preserved in the .docx
+        // Corpo: um parágrafo por linha (preserva quebras), texto justificado.
+        // Linhas terminadas em ":" viram subtítulos em negrito (nomes de cargo).
         const bodyLines = (edits[section.id] || '').split('\n')
         bodyLines.forEach(line => {
+          const trimmed = line.trim()
+          if (!trimmed) {
+            children.push(new Paragraph({ spacing: { after: 60 }, children: [] }))
+            return
+          }
+          const isCargoHeader = trimmed.endsWith(':')
           children.push(
             new Paragraph({
-              spacing: { line: 360, after: 60 },
+              alignment: isCargoHeader ? AlignmentType.LEFT : AlignmentType.JUSTIFIED,
+              spacing: { line: 360, after: 120, before: isCargoHeader ? 120 : 0 },
               children: [
-                new TextRun({ text: line, font: 'Times New Roman', size: 24 }),
+                new TextRun({
+                  text: line,
+                  font: 'Times New Roman', size: 24, bold: isCargoHeader,
+                }),
               ],
             })
           )
