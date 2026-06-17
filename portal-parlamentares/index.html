@@ -377,8 +377,25 @@
   var ADMIN_PASS_KEY = "lp_admin_pass_v1";
   var DEFAULT_ADMIN_PASS = "admin123";
 
+  function makeSafeStorage(getArea){
+    var mem = {};
+    return {
+      get: function(k){
+        try{ var v = getArea().getItem(k); return v; }catch(e){ return (k in mem) ? mem[k] : null; }
+      },
+      set: function(k,v){
+        try{ getArea().setItem(k, v); }catch(e){ mem[k] = v; }
+      },
+      remove: function(k){
+        try{ getArea().removeItem(k); }catch(e){ delete mem[k]; }
+      }
+    };
+  }
+  var LS = makeSafeStorage(function(){ return window.localStorage; });
+  var SS = makeSafeStorage(function(){ return window.sessionStorage; });
+
   var state = loadState();
-  var isAdmin = sessionStorage.getItem("lp_is_admin") === "1";
+  var isAdmin = SS.get("lp_is_admin") === "1";
   var currentLawmakerId = null;
   var currentStaffId = null;
   var pendingFiles = [];
@@ -387,14 +404,14 @@
 
   function loadState(){
     try{
-      var raw = localStorage.getItem(STORAGE_KEY);
+      var raw = LS.get(STORAGE_KEY);
       if(raw) return JSON.parse(raw);
     }catch(e){ console.error("Falha ao carregar dados salvos", e); }
     return { lawmakers: [], staff: [], meetings: [] };
   }
   function saveState(){
     try{
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      LS.set(STORAGE_KEY, JSON.stringify(state));
     }catch(e){
       toast("Erro ao salvar: armazenamento local cheio. Exporte um backup e remova anexos antigos.");
     }
@@ -451,12 +468,12 @@
   document.getElementById("btnAdminToggle").addEventListener("click", function(){
     if(isAdmin){
       isAdmin = false;
-      sessionStorage.removeItem("lp_is_admin");
+      SS.remove("lp_is_admin");
       refreshAdminUI();
       toast("Modo visualização ativado.");
       return;
     }
-    var hasPass = !!localStorage.getItem(ADMIN_PASS_KEY);
+    var hasPass = !!LS.get(ADMIN_PASS_KEY);
     document.getElementById("adminFirstUseHint").textContent = hasPass
       ? ""
       : "Primeiro acesso: defina a senha de administrador digitando-a agora.";
@@ -466,12 +483,12 @@
 
   document.getElementById("btnAdminConfirm").addEventListener("click", function(){
     var entered = document.getElementById("adminPasswordInput").value;
-    var stored = localStorage.getItem(ADMIN_PASS_KEY);
+    var stored = LS.get(ADMIN_PASS_KEY);
     if(!entered){ toast("Digite uma senha."); return; }
     if(!stored){
-      localStorage.setItem(ADMIN_PASS_KEY, entered);
+      LS.set(ADMIN_PASS_KEY, entered);
       isAdmin = true;
-      sessionStorage.setItem("lp_is_admin", "1");
+      SS.set("lp_is_admin", "1");
       closeOverlay("adminOverlay");
       refreshAdminUI();
       toast("Senha de administrador definida. Modo admin ativado.");
@@ -479,7 +496,7 @@
     }
     if(entered === stored){
       isAdmin = true;
-      sessionStorage.setItem("lp_is_admin", "1");
+      SS.set("lp_is_admin", "1");
       closeOverlay("adminOverlay");
       refreshAdminUI();
       toast("Modo administrador ativado.");
