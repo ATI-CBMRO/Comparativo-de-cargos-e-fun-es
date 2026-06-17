@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portal de Relacionamento Institucional - Parlamentares</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue-900:#0f2745;
+    --blue-700:#1a3a8f;
+    --blue-600:#2451b8;
+    --blue-100:#e8eefb;
+    --red-600:#e4001a;
+    --bg:#f2f3f7;
+    --card:#ffffff;
+    --text:#1c2533;
+    --muted:#6b7585;
+    --border:#e2e5ec;
+    --radius:14px;
+    --shadow:0 2px 10px rgba(15,39,69,.08);
+    --shadow-lg:0 12px 32px rgba(15,39,69,.18);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);}
+  header.topbar{
+    background:linear-gradient(120deg,var(--blue-900),var(--blue-700));
+    color:#fff;padding:18px 24px;display:flex;align-items:center;gap:16px;
+    flex-wrap:wrap;position:sticky;top:0;z-index:20;box-shadow:var(--shadow);
+  }
+  header.topbar h1{font-size:18px;font-weight:700;margin:0;flex:0 0 auto;}
+  header.topbar .sub{font-size:12px;color:#c9d6f5;margin-top:2px;}
+  .search-wrap{flex:1 1 260px;min-width:200px;}
+  .search-wrap input{
+    width:100%;padding:10px 14px;border-radius:10px;border:none;font-size:14px;
+    background:rgba(255,255,255,.12);color:#fff;outline:none;
+  }
+  .search-wrap input::placeholder{color:#cfd9f2;}
+  .topbar-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  button{font-family:inherit;cursor:pointer;}
+  .btn{
+    border:none;border-radius:10px;padding:9px 14px;font-size:13px;font-weight:600;
+    display:inline-flex;align-items:center;gap:6px;transition:.15s;
+  }
+  .btn-primary{background:var(--red-600);color:#fff;}
+  .btn-primary:hover{background:#c40016;}
+  .btn-ghost{background:rgba(255,255,255,.14);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.24);}
+  .btn-light{background:#fff;color:var(--blue-700);}
+  .btn-light:hover{background:#eef2fb;}
+  .btn-outline{background:transparent;border:1px solid var(--border);color:var(--text);}
+  .btn-outline:hover{background:#f5f6f9;}
+  .btn-danger{background:#fde8ea;color:#b3001f;}
+  .btn-danger:hover{background:#fad0d5;}
+  .btn-sm{padding:6px 10px;font-size:12px;border-radius:8px;}
+  .badge{
+    display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;
+    background:var(--blue-100);color:var(--blue-700);
+  }
+  .badge-admin{background:#fde8ea;color:#b3001f;}
+  .badge-view{background:#e7f4ec;color:#1c7a3c;}
+
+  main{padding:24px;max-width:1300px;margin:0 auto;}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:10px;}
+  .toolbar .count{color:var(--muted);font-size:13px;}
+
+  .grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;
+  }
+  .card{
+    background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:18px;cursor:pointer;border:1px solid transparent;transition:.15s;position:relative;
+  }
+  .card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);border-color:var(--blue-100);}
+  .card-top{display:flex;gap:12px;align-items:center;}
+  .card-photo{
+    width:64px;height:64px;border-radius:50%;object-fit:cover;background:var(--blue-100);
+    flex-shrink:0;border:2px solid var(--blue-100);
+  }
+  .card-photo.placeholder{display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--blue-700);font-size:20px;}
+  .card-name{font-weight:700;font-size:15px;line-height:1.25;}
+  .card-party{font-size:12px;color:var(--muted);margin-top:2px;}
+  .card-info{margin-top:14px;font-size:12.5px;color:var(--text);display:flex;flex-direction:column;gap:6px;}
+  .card-info .row{display:flex;gap:6px;align-items:flex-start;color:var(--muted);}
+  .card-info .row b{color:var(--text);font-weight:600;}
+  .card-footer{margin-top:14px;display:flex;justify-content:space-between;align-items:center;}
+  .card-actions{position:absolute;top:14px;right:14px;display:flex;gap:6px;}
+  .icon-btn{
+    width:28px;height:28px;border-radius:8px;border:1px solid var(--border);background:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--muted);
+  }
+  .icon-btn:hover{background:#f5f6f9;}
+
+  .empty{
+    text-align:center;padding:60px 20px;color:var(--muted);
+  }
+  .empty h3{color:var(--text);margin-bottom:6px;}
+
+  /* Modal */
+  .overlay{
+    position:fixed;inset:0;background:rgba(15,23,38,.5);display:flex;align-items:flex-start;
+    justify-content:center;padding:40px 16px;overflow-y:auto;z-index:100;
+  }
+  .overlay.hidden{display:none;}
+  .modal{
+    background:#fff;border-radius:16px;max-width:560px;width:100%;box-shadow:var(--shadow-lg);
+    animation:pop .15s ease-out;
+  }
+  .modal.wide{max-width:720px;}
+  @keyframes pop{from{transform:translateY(8px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+  .modal-header{
+    display:flex;justify-content:space-between;align-items:flex-start;padding:18px 22px;
+    border-bottom:1px solid var(--border);
+  }
+  .modal-header h2{font-size:16px;margin:0;}
+  .modal-header .sub{font-size:12px;color:var(--muted);margin-top:3px;}
+  .modal-close{background:none;border:none;font-size:20px;color:var(--muted);line-height:1;}
+  .modal-body{padding:20px 22px;max-height:70vh;overflow-y:auto;}
+  .modal-footer{padding:14px 22px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px;}
+
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-size:12.5px;font-weight:600;margin-bottom:5px;color:var(--text);}
+  .field input,.field select,.field textarea{
+    width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:9px;font-size:13.5px;
+    font-family:inherit;background:#fbfbfd;
+  }
+  .field textarea{resize:vertical;min-height:64px;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .photo-pick{display:flex;align-items:center;gap:12px;}
+  .photo-pick img{width:56px;height:56px;border-radius:50%;object-fit:cover;background:var(--blue-100);}
+
+  .staff-list{display:flex;flex-direction:column;gap:10px;}
+  .staff-item{
+    display:flex;justify-content:space-between;align-items:center;padding:12px 14px;
+    border:1px solid var(--border);border-radius:11px;cursor:pointer;background:#fbfbfd;
+  }
+  .staff-item:hover{border-color:var(--blue-600);background:var(--blue-100);}
+  .staff-item .name{font-weight:600;font-size:14px;}
+  .staff-item .role{font-size:12px;color:var(--muted);}
+  .staff-item .phone{font-size:12px;color:var(--muted);}
+  .staff-actions{display:flex;gap:6px;}
+
+  .meeting-form{border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:18px;background:#fbfbfd;}
+  .meeting-form h4{margin:0 0 10px;font-size:13px;}
+  .history-list{display:flex;flex-direction:column;gap:12px;}
+  .meeting-item{border:1px solid var(--border);border-radius:12px;padding:12px 14px;position:relative;}
+  .meeting-item .subject{font-weight:700;font-size:13.5px;}
+  .meeting-item .meta{font-size:12px;color:var(--muted);margin-top:2px;}
+  .meeting-item .participants{font-size:12.5px;margin-top:6px;}
+  .attachments{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+  .attachment-chip{
+    font-size:11.5px;background:var(--blue-100);color:var(--blue-700);padding:5px 9px;border-radius:8px;
+    display:flex;align-items:center;gap:6px;text-decoration:none;
+  }
+  .attachment-chip img{width:18px;height:18px;object-fit:cover;border-radius:4px;}
+  .meeting-del{position:absolute;top:10px;right:10px;}
+
+  .file-drop{
+    border:1.5px dashed var(--border);border-radius:10px;padding:14px;text-align:center;font-size:12.5px;
+    color:var(--muted);cursor:pointer;background:#fbfbfd;
+  }
+  .file-drop:hover{border-color:var(--blue-600);}
+  .file-preview-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+  .file-preview{
+    font-size:11.5px;background:#fff;border:1px solid var(--border);padding:5px 9px;border-radius:8px;
+    display:flex;align-items:center;gap:6px;
+  }
+  .file-preview button{background:none;border:none;color:#b3001f;font-size:13px;}
+
+  .breadcrumb{font-size:12px;color:var(--muted);margin-bottom:4px;}
+  .toast{
+    position:fixed;bottom:22px;right:22px;background:var(--blue-900);color:#fff;padding:11px 16px;
+    border-radius:10px;font-size:13px;box-shadow:var(--shadow-lg);z-index:300;opacity:0;
+    transform:translateY(10px);transition:.2s;
+  }
+  .toast.show{opacity:1;transform:translateY(0);}
+  .hint{font-size:11.5px;color:var(--muted);margin-top:4px;}
+  footer.appfooter{text-align:center;color:var(--muted);font-size:11.5px;padding:24px;}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <h1>Portal de Relacionamento Institucional</h1>
+    <div class="sub">Parlamentares &middot; Gabinetes &middot; Histórico de contatos</div>
+  </div>
+  <div class="search-wrap">
+    <input id="searchInput" type="text" placeholder="Buscar por nome, partido, UF ou cargo..." />
+  </div>
+  <div class="topbar-actions">
+    <span id="modeBadge" class="badge badge-view">Modo visualização</span>
+    <button class="btn btn-ghost btn-sm" id="btnExport">Exportar backup</button>
+    <button class="btn btn-ghost btn-sm" id="btnImport">Importar backup</button>
+    <input type="file" id="importFile" accept=".json" style="display:none" />
+    <button class="btn btn-light" id="btnAdminToggle">Entrar como admin</button>
+    <button class="btn btn-primary hidden" id="btnNewLawmaker">+ Novo parlamentar</button>
+  </div>
+</header>
+
+<main>
+  <div class="toolbar">
+    <div class="count" id="resultCount"></div>
+  </div>
+  <div class="grid" id="cardsGrid"></div>
+  <div class="empty hidden" id="emptyState">
+    <h3>Nenhum parlamentar cadastrado</h3>
+    <p>Entre como admin e clique em "Novo parlamentar" para começar.</p>
+  </div>
+</main>
+
+<footer class="appfooter">Dados armazenados localmente neste navegador (localStorage). Use "Exportar backup" regularmente para não perder informações.</footer>
+
+<!-- Admin login modal -->
+<div class="overlay hidden" id="adminOverlay">
+  <div class="modal" style="max-width:380px">
+    <div class="modal-header">
+      <div><h2>Acesso administrador</h2><div class="sub">Necessário para cadastrar/editar dados</div></div>
+      <button class="modal-close" data-close="adminOverlay">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="field">
+        <label>Senha de administrador</label>
+        <input type="password" id="adminPasswordInput" placeholder="Digite a senha" />
+        <div class="hint" id="adminFirstUseHint"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close="adminOverlay">Cancelar</button>
+      <button class="btn btn-primary" id="btnAdminConfirm">Entrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Lawmaker form modal -->
+<div class="overlay hidden" id="lawmakerFormOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div><h2 id="lawmakerFormTitle">Novo parlamentar</h2></div>
+      <button class="modal-close" data-close="lawmakerFormOverlay">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="field">
+        <label>Foto</label>
+        <div class="photo-pick">
+          <img id="lawmakerPhotoPreview" src="" alt="" />
+          <input type="file" id="lawmakerPhotoInput" accept="image/*" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Nome completo</label>
+        <input type="text" id="lawmakerName" placeholder="Ex: Maria da Silva" />
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Cargo</label>
+          <select id="lawmakerChamber">
+            <option value="Deputado Federal">Deputado Federal</option>
+            <option value="Senador">Senador</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>UF</label>
+          <input type="text" id="lawmakerUf" maxlength="2" placeholder="Ex: RO" style="text-transform:uppercase" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Partido</label>
+        <input type="text" id="lawmakerParty" placeholder="Ex: PSD" />
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Número do gabinete</label>
+          <input type="text" id="lawmakerOfficeNumber" placeholder="Ex: 412" />
+        </div>
+        <div class="field">
+          <label>Localização do gabinete</label>
+          <input type="text" id="lawmakerOfficeLocation" placeholder="Ex: Anexo IV, 4º andar" />
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>E-mail</label>
+          <input type="email" id="lawmakerEmail" placeholder="dep.exemplo@camara.leg.br" />
+        </div>
+        <div class="field">
+          <label>Telefone</label>
+          <input type="text" id="lawmakerPhone" placeholder="(61) 3216-0000" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close="lawmakerFormOverlay">Cancelar</button>
+      <button class="btn btn-primary" id="btnSaveLawmaker">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Staff (gabinete) modal -->
+<div class="overlay hidden" id="staffOverlay">
+  <div class="modal wide">
+    <div class="modal-header">
+      <div>
+        <h2 id="staffModalTitle">Pessoas do gabinete</h2>
+        <div class="sub" id="staffModalSub"></div>
+      </div>
+      <button class="modal-close" data-close="staffOverlay">&times;</button>
+    </div>
+    <div class="modal-body">
+      <button class="btn btn-primary btn-sm hidden" id="btnNewStaff" style="margin-bottom:14px">+ Adicionar pessoa</button>
+      <div class="staff-list" id="staffList"></div>
+      <div class="empty hidden" id="staffEmpty"><p>Nenhuma pessoa cadastrada para este gabinete ainda.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Staff form modal -->
+<div class="overlay hidden" id="staffFormOverlay">
+  <div class="modal" style="max-width:420px">
+    <div class="modal-header">
+      <h2 id="staffFormTitle">Nova pessoa</h2>
+      <button class="modal-close" data-close="staffFormOverlay">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="field"><label>Nome</label><input type="text" id="staffName" /></div>
+      <div class="field"><label>Função</label><input type="text" id="staffRole" placeholder="Ex: Chefe de gabinete" /></div>
+      <div class="field"><label>Telefone</label><input type="text" id="staffPhone" /></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" data-close="staffFormOverlay">Cancelar</button>
+      <button class="btn btn-primary" id="btnSaveStaff">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<!-- History modal -->
+<div class="overlay hidden" id="historyOverlay">
+  <div class="modal wide">
+    <div class="modal-header">
+      <div>
+        <div class="breadcrumb" id="historyBreadcrumb"></div>
+        <h2 id="historyTitle">Histórico de encontros</h2>
+      </div>
+      <button class="modal-close" data-close="historyOverlay">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="meeting-form hidden" id="meetingFormWrap">
+        <h4>Registrar novo encontro</h4>
+        <div class="field"><label>Assunto tratado</label><textarea id="meetingSubject" placeholder="Descreva o assunto da reunião/contato"></textarea></div>
+        <div class="field-row">
+          <div class="field"><label>Data</label><input type="date" id="meetingDate" /></div>
+          <div class="field"><label>Participantes</label><input type="text" id="meetingParticipants" placeholder="Nomes separados por vírgula" /></div>
+        </div>
+        <div class="field">
+          <label>Foto / arquivo (opcional)</label>
+          <div class="file-drop" id="fileDropArea">Clique para selecionar foto(s) ou arquivo(s)</div>
+          <input type="file" id="meetingFileInput" multiple style="display:none" />
+          <div class="file-preview-list" id="filePreviewList"></div>
+        </div>
+        <button class="btn btn-primary btn-sm" id="btnSaveMeeting">Adicionar ao histórico</button>
+      </div>
+      <h4 style="font-size:13px;margin:0 0 10px">Histórico</h4>
+      <div class="history-list" id="historyList"></div>
+      <div class="empty hidden" id="historyEmpty"><p>Nenhum encontro registrado ainda.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  var STORAGE_KEY = "lp_portal_data_v1";
+  var ADMIN_PASS_KEY = "lp_admin_pass_v1";
+  var DEFAULT_ADMIN_PASS = "admin123";
+
+  var state = loadState();
+  var isAdmin = sessionStorage.getItem("lp_is_admin") === "1";
+  var currentLawmakerId = null;
+  var currentStaffId = null;
+  var pendingFiles = [];
+  var editingLawmakerId = null;
+  var editingStaffId = null;
+
+  function loadState(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if(raw) return JSON.parse(raw);
+    }catch(e){ console.error("Falha ao carregar dados salvos", e); }
+    return { lawmakers: [], staff: [], meetings: [] };
+  }
+  function saveState(){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }catch(e){
+      toast("Erro ao salvar: armazenamento local cheio. Exporte um backup e remova anexos antigos.");
+    }
+  }
+  function uid(){
+    return (crypto && crypto.randomUUID) ? crypto.randomUUID() : "id-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+  }
+  function escapeHtml(str){
+    return String(str == null ? "" : str).replace(/[&<>"']/g, function(c){
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[c];
+    });
+  }
+  function toast(msg){
+    var t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    setTimeout(function(){ t.classList.remove("show"); }, 2600);
+  }
+  function fmtDate(iso){
+    if(!iso) return "";
+    var parts = iso.split("-");
+    if(parts.length !== 3) return iso;
+    return parts[2] + "/" + parts[1] + "/" + parts[0];
+  }
+  function openOverlay(id){ document.getElementById(id).classList.remove("hidden"); }
+  function closeOverlay(id){ document.getElementById(id).classList.add("hidden"); }
+
+  document.querySelectorAll("[data-close]").forEach(function(btn){
+    btn.addEventListener("click", function(){ closeOverlay(btn.getAttribute("data-close")); });
+  });
+  document.querySelectorAll(".overlay").forEach(function(ov){
+    ov.addEventListener("click", function(e){ if(e.target === ov) ov.classList.add("hidden"); });
+  });
+
+  // ---------- Admin mode ----------
+  function refreshAdminUI(){
+    var badge = document.getElementById("modeBadge");
+    var toggleBtn = document.getElementById("btnAdminToggle");
+    var newLawmakerBtn = document.getElementById("btnNewLawmaker");
+    if(isAdmin){
+      badge.textContent = "Modo administrador";
+      badge.className = "badge badge-admin";
+      toggleBtn.textContent = "Sair do modo admin";
+      newLawmakerBtn.classList.remove("hidden");
+    } else {
+      badge.textContent = "Modo visualização";
+      badge.className = "badge badge-view";
+      toggleBtn.textContent = "Entrar como admin";
+      newLawmakerBtn.classList.add("hidden");
+    }
+    render();
+  }
+
+  document.getElementById("btnAdminToggle").addEventListener("click", function(){
+    if(isAdmin){
+      isAdmin = false;
+      sessionStorage.removeItem("lp_is_admin");
+      refreshAdminUI();
+      toast("Modo visualização ativado.");
+      return;
+    }
+    var hasPass = !!localStorage.getItem(ADMIN_PASS_KEY);
+    document.getElementById("adminFirstUseHint").textContent = hasPass
+      ? ""
+      : "Primeiro acesso: defina a senha de administrador digitando-a agora.";
+    document.getElementById("adminPasswordInput").value = "";
+    openOverlay("adminOverlay");
+  });
+
+  document.getElementById("btnAdminConfirm").addEventListener("click", function(){
+    var entered = document.getElementById("adminPasswordInput").value;
+    var stored = localStorage.getItem(ADMIN_PASS_KEY);
+    if(!entered){ toast("Digite uma senha."); return; }
+    if(!stored){
+      localStorage.setItem(ADMIN_PASS_KEY, entered);
+      isAdmin = true;
+      sessionStorage.setItem("lp_is_admin", "1");
+      closeOverlay("adminOverlay");
+      refreshAdminUI();
+      toast("Senha de administrador definida. Modo admin ativado.");
+      return;
+    }
+    if(entered === stored){
+      isAdmin = true;
+      sessionStorage.setItem("lp_is_admin", "1");
+      closeOverlay("adminOverlay");
+      refreshAdminUI();
+      toast("Modo administrador ativado.");
+    } else {
+      toast("Senha incorreta.");
+    }
+  });
+
+  // ---------- Search / render lawmakers ----------
+  document.getElementById("searchInput").addEventListener("input", render);
+
+  function matchesSearch(lm, q){
+    if(!q) return true;
+    q = q.toLowerCase();
+    return [lm.name, lm.party, lm.uf, lm.chamber, lm.officeNumber, lm.officeLocation]
+      .filter(Boolean).some(function(v){ return String(v).toLowerCase().indexOf(q) !== -1; });
+  }
+
+  function render(){
+    var q = document.getElementById("searchInput").value.trim();
+    var list = state.lawmakers.filter(function(lm){ return matchesSearch(lm, q); });
+    var grid = document.getElementById("cardsGrid");
+    var empty = document.getElementById("emptyState");
+    document.getElementById("resultCount").textContent =
+      list.length + (list.length === 1 ? " parlamentar encontrado" : " parlamentares encontrados");
+
+    grid.innerHTML = "";
+    if(state.lawmakers.length === 0){
+      empty.classList.remove("hidden");
+      return;
+    }
+    empty.classList.add("hidden");
+
+    list.forEach(function(lm){
+      var card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML =
+        '<div class="card-actions">' +
+          (isAdmin ? '<button class="icon-btn" data-edit-lawmaker="'+lm.id+'" title="Editar">&#9998;</button>' +
+                     '<button class="icon-btn" data-del-lawmaker="'+lm.id+'" title="Excluir">&#128465;</button>' : '') +
+        '</div>' +
+        '<div class="card-top">' +
+          (lm.photo
+            ? '<img class="card-photo" src="'+lm.photo+'" alt="" />'
+            : '<div class="card-photo placeholder">'+escapeHtml((lm.name||"?").trim().charAt(0).toUpperCase())+'</div>') +
+          '<div>' +
+            '<div class="card-name">'+escapeHtml(lm.name||"(sem nome)")+'</div>' +
+            '<div class="card-party">'+escapeHtml(lm.chamber||"")+(lm.uf ? " &middot; "+escapeHtml(lm.uf) : "")+'</div>' +
+            (lm.party ? '<span class="badge">'+escapeHtml(lm.party)+'</span>' : '') +
+          '</div>' +
+        '</div>' +
+        '<div class="card-info">' +
+          '<div class="row">&#127970; <b>Gabinete:</b> '+escapeHtml(lm.officeNumber || "-")+(lm.officeLocation ? " &middot; "+escapeHtml(lm.officeLocation) : "")+'</div>' +
+          '<div class="row">&#9993; '+escapeHtml(lm.email || "-")+'</div>' +
+          '<div class="row">&#128222; '+escapeHtml(lm.phone || "-")+'</div>' +
+        '</div>' +
+        '<div class="card-footer">' +
+          '<span class="hint">'+countStaff(lm.id)+' pessoa(s) no gabinete</span>' +
+        '</div>';
+
+      card.addEventListener("click", function(e){
+        if(e.target.closest("[data-edit-lawmaker],[data-del-lawmaker]")) return;
+        openStaffModal(lm.id);
+      });
+      grid.appendChild(card);
+    });
+
+    grid.querySelectorAll("[data-edit-lawmaker]").forEach(function(btn){
+      btn.addEventListener("click", function(){ openLawmakerForm(btn.getAttribute("data-edit-lawmaker")); });
+    });
+    grid.querySelectorAll("[data-del-lawmaker]").forEach(function(btn){
+      btn.addEventListener("click", function(){ deleteLawmaker(btn.getAttribute("data-del-lawmaker")); });
+    });
+  }
+
+  function countStaff(lawmakerId){
+    return state.staff.filter(function(s){ return s.lawmakerId === lawmakerId; }).length;
+  }
+
+  // ---------- Lawmaker form ----------
+  document.getElementById("btnNewLawmaker").addEventListener("click", function(){ openLawmakerForm(null); });
+
+  function openLawmakerForm(id){
+    editingLawmakerId = id;
+    var lm = id ? state.lawmakers.find(function(l){ return l.id === id; }) : null;
+    document.getElementById("lawmakerFormTitle").textContent = lm ? "Editar parlamentar" : "Novo parlamentar";
+    document.getElementById("lawmakerName").value = lm ? lm.name || "" : "";
+    document.getElementById("lawmakerChamber").value = lm ? lm.chamber || "Deputado Federal" : "Deputado Federal";
+    document.getElementById("lawmakerUf").value = lm ? lm.uf || "" : "";
+    document.getElementById("lawmakerParty").value = lm ? lm.party || "" : "";
+    document.getElementById("lawmakerOfficeNumber").value = lm ? lm.officeNumber || "" : "";
+    document.getElementById("lawmakerOfficeLocation").value = lm ? lm.officeLocation || "" : "";
+    document.getElementById("lawmakerEmail").value = lm ? lm.email || "" : "";
+    document.getElementById("lawmakerPhone").value = lm ? lm.phone || "" : "";
+    document.getElementById("lawmakerPhotoPreview").src = lm && lm.photo ? lm.photo : "";
+    document.getElementById("lawmakerPhotoPreview").style.display = (lm && lm.photo) ? "block" : "none";
+    document.getElementById("lawmakerPhotoInput").value = "";
+    openOverlay("lawmakerFormOverlay");
+  }
+
+  document.getElementById("lawmakerPhotoInput").addEventListener("change", function(e){
+    var file = e.target.files[0];
+    if(!file) return;
+    resizeImageToDataUrl(file, 240, function(dataUrl){
+      document.getElementById("lawmakerPhotoPreview").src = dataUrl;
+      document.getElementById("lawmakerPhotoPreview").style.display = "block";
+      document.getElementById("lawmakerPhotoPreview").dataset.pending = dataUrl;
+    });
+  });
+
+  function resizeImageToDataUrl(file, maxSize, cb){
+    var reader = new FileReader();
+    reader.onload = function(ev){
+      var img = new Image();
+      img.onload = function(){
+        var scale = Math.min(1, maxSize / Math.max(img.width, img.height));
+        var w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+        var canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+        cb(canvas.toDataURL("image/jpeg", 0.85));
+      };
+      img.src = ev.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  document.getElementById("btnSaveLawmaker").addEventListener("click", function(){
+    var name = document.getElementById("lawmakerName").value.trim();
+    if(!name){ toast("Informe o nome do parlamentar."); return; }
+    var photoEl = document.getElementById("lawmakerPhotoPreview");
+    var photo = photoEl.dataset.pending || (photoEl.style.display !== "none" ? photoEl.src : "");
+    var data = {
+      name: name,
+      chamber: document.getElementById("lawmakerChamber").value,
+      uf: document.getElementById("lawmakerUf").value.trim().toUpperCase(),
+      party: document.getElementById("lawmakerParty").value.trim(),
+      officeNumber: document.getElementById("lawmakerOfficeNumber").value.trim(),
+      officeLocation: document.getElementById("lawmakerOfficeLocation").value.trim(),
+      email: document.getElementById("lawmakerEmail").value.trim(),
+      phone: document.getElementById("lawmakerPhone").value.trim(),
+      photo: photo || ""
+    };
+    if(editingLawmakerId){
+      var lm = state.lawmakers.find(function(l){ return l.id === editingLawmakerId; });
+      Object.assign(lm, data);
+    } else {
+      data.id = uid();
+      state.lawmakers.push(data);
+    }
+    saveState();
+    closeOverlay("lawmakerFormOverlay");
+    document.getElementById("lawmakerPhotoPreview").dataset.pending = "";
+    render();
+    toast("Parlamentar salvo com sucesso.");
+  });
+
+  function deleteLawmaker(id){
+    if(!confirm("Excluir este parlamentar e todos os dados de gabinete/histórico vinculados?")) return;
+    var staffIds = state.staff.filter(function(s){ return s.lawmakerId === id; }).map(function(s){ return s.id; });
+    state.meetings = state.meetings.filter(function(m){ return staffIds.indexOf(m.staffId) === -1; });
+    state.staff = state.staff.filter(function(s){ return s.lawmakerId !== id; });
+    state.lawmakers = state.lawmakers.filter(function(l){ return l.id !== id; });
+    saveState();
+    render();
+    toast("Parlamentar excluído.");
+  }
+
+  // ---------- Staff modal ----------
+  function openStaffModal(lawmakerId){
+    currentLawmakerId = lawmakerId;
+    var lm = state.lawmakers.find(function(l){ return l.id === lawmakerId; });
+    document.getElementById("staffModalTitle").textContent = "Pessoas do gabinete";
+    document.getElementById("staffModalSub").textContent = lm ? lm.name + " (" + (lm.chamber||"") + (lm.uf ? " - "+lm.uf : "") + ")" : "";
+    document.getElementById("btnNewStaff").classList.toggle("hidden", !isAdmin);
+    renderStaffList();
+    openOverlay("staffOverlay");
+  }
+
+  function renderStaffList(){
+    var list = state.staff.filter(function(s){ return s.lawmakerId === currentLawmakerId; });
+    var wrap = document.getElementById("staffList");
+    var empty = document.getElementById("staffEmpty");
+    wrap.innerHTML = "";
+    empty.classList.toggle("hidden", list.length > 0);
+    list.forEach(function(s){
+      var item = document.createElement("div");
+      item.className = "staff-item";
+      item.innerHTML =
+        '<div><div class="name">'+escapeHtml(s.name)+'</div>' +
+        '<div class="role">'+escapeHtml(s.role||"")+'</div>' +
+        '<div class="phone">'+escapeHtml(s.phone||"")+'</div></div>' +
+        '<div class="staff-actions">' +
+        (isAdmin ? '<button class="icon-btn" data-edit-staff="'+s.id+'" title="Editar">&#9998;</button>' +
+                   '<button class="icon-btn" data-del-staff="'+s.id+'" title="Excluir">&#128465;</button>' : '') +
+        '</div>';
+      item.addEventListener("click", function(e){
+        if(e.target.closest("[data-edit-staff],[data-del-staff]")) return;
+        openHistoryModal(s.id);
+      });
+      wrap.appendChild(item);
+    });
+    wrap.querySelectorAll("[data-edit-staff]").forEach(function(btn){
+      btn.addEventListener("click", function(){ openStaffForm(btn.getAttribute("data-edit-staff")); });
+    });
+    wrap.querySelectorAll("[data-del-staff]").forEach(function(btn){
+      btn.addEventListener("click", function(){ deleteStaff(btn.getAttribute("data-del-staff")); });
+    });
+  }
+
+  document.getElementById("btnNewStaff").addEventListener("click", function(){ openStaffForm(null); });
+
+  function openStaffForm(id){
+    editingStaffId = id;
+    var s = id ? state.staff.find(function(x){ return x.id === id; }) : null;
+    document.getElementById("staffFormTitle").textContent = s ? "Editar pessoa" : "Nova pessoa";
+    document.getElementById("staffName").value = s ? s.name || "" : "";
+    document.getElementById("staffRole").value = s ? s.role || "" : "";
+    document.getElementById("staffPhone").value = s ? s.phone || "" : "";
+    openOverlay("staffFormOverlay");
+  }
+
+  document.getElementById("btnSaveStaff").addEventListener("click", function(){
+    var name = document.getElementById("staffName").value.trim();
+    if(!name){ toast("Informe o nome."); return; }
+    var data = {
+      name: name,
+      role: document.getElementById("staffRole").value.trim(),
+      phone: document.getElementById("staffPhone").value.trim()
+    };
+    if(editingStaffId){
+      Object.assign(state.staff.find(function(s){ return s.id === editingStaffId; }), data);
+    } else {
+      data.id = uid();
+      data.lawmakerId = currentLawmakerId;
+      state.staff.push(data);
+    }
+    saveState();
+    closeOverlay("staffFormOverlay");
+    renderStaffList();
+    render();
+    toast("Pessoa salva com sucesso.");
+  });
+
+  function deleteStaff(id){
+    if(!confirm("Excluir esta pessoa e todo o histórico de encontros vinculado?")) return;
+    state.meetings = state.meetings.filter(function(m){ return m.staffId !== id; });
+    state.staff = state.staff.filter(function(s){ return s.id !== id; });
+    saveState();
+    renderStaffList();
+    render();
+    toast("Pessoa excluída.");
+  }
+
+  // ---------- History modal ----------
+  function openHistoryModal(staffId){
+    currentStaffId = staffId;
+    var s = state.staff.find(function(x){ return x.id === staffId; });
+    var lm = s ? state.lawmakers.find(function(l){ return l.id === s.lawmakerId; }) : null;
+    document.getElementById("historyBreadcrumb").textContent = lm ? lm.name + " / Pessoas do gabinete" : "";
+    document.getElementById("historyTitle").textContent = "Histórico - " + (s ? s.name : "");
+    document.getElementById("meetingFormWrap").classList.toggle("hidden", !isAdmin);
+    pendingFiles = [];
+    document.getElementById("filePreviewList").innerHTML = "";
+    document.getElementById("meetingSubject").value = "";
+    document.getElementById("meetingDate").value = "";
+    document.getElementById("meetingParticipants").value = "";
+    renderHistoryList();
+    openOverlay("historyOverlay");
+  }
+
+  function renderHistoryList(){
+    var list = state.meetings.filter(function(m){ return m.staffId === currentStaffId; })
+      .sort(function(a,b){ return (b.date||"").localeCompare(a.date||"") || (b.createdAt||0)-(a.createdAt||0); });
+    var wrap = document.getElementById("historyList");
+    var empty = document.getElementById("historyEmpty");
+    wrap.innerHTML = "";
+    empty.classList.toggle("hidden", list.length > 0);
+    list.forEach(function(m){
+      var item = document.createElement("div");
+      item.className = "meeting-item";
+      var attachmentsHtml = (m.attachments||[]).map(function(a){
+        if(a.type && a.type.indexOf("image") === 0){
+          return '<a class="attachment-chip" href="'+a.dataUrl+'" download="'+escapeHtml(a.name)+'"><img src="'+a.dataUrl+'" />'+escapeHtml(a.name)+'</a>';
+        }
+        return '<a class="attachment-chip" href="'+a.dataUrl+'" download="'+escapeHtml(a.name)+'">&#128206; '+escapeHtml(a.name)+'</a>';
+      }).join("");
+      item.innerHTML =
+        (isAdmin ? '<button class="icon-btn meeting-del" data-del-meeting="'+m.id+'" title="Excluir">&#128465;</button>' : '') +
+        '<div class="subject">'+escapeHtml(m.subject)+'</div>' +
+        '<div class="meta">'+fmtDate(m.date)+'</div>' +
+        (m.participants ? '<div class="participants"><b>Participantes:</b> '+escapeHtml(m.participants)+'</div>' : '') +
+        (attachmentsHtml ? '<div class="attachments">'+attachmentsHtml+'</div>' : '');
+      wrap.appendChild(item);
+    });
+    wrap.querySelectorAll("[data-del-meeting]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        if(!confirm("Excluir este registro do histórico?")) return;
+        state.meetings = state.meetings.filter(function(m){ return m.id !== btn.getAttribute("data-del-meeting"); });
+        saveState();
+        renderHistoryList();
+      });
+    });
+  }
+
+  document.getElementById("fileDropArea").addEventListener("click", function(){
+    document.getElementById("meetingFileInput").click();
+  });
+  document.getElementById("meetingFileInput").addEventListener("change", function(e){
+    var files = Array.from(e.target.files || []);
+    files.forEach(function(file){
+      if(file.size > 4 * 1024 * 1024){
+        toast("Arquivo '"+file.name+"' muito grande (máx. 4MB). Ignorado.");
+        return;
+      }
+      var reader = new FileReader();
+      reader.onload = function(ev){
+        var entry = { name: file.name, type: file.type, dataUrl: ev.target.result };
+        pendingFiles.push(entry);
+        renderFilePreview();
+      };
+      reader.readAsDataURL(file);
+    });
+    e.target.value = "";
+  });
+
+  function renderFilePreview(){
+    var wrap = document.getElementById("filePreviewList");
+    wrap.innerHTML = "";
+    pendingFiles.forEach(function(f, idx){
+      var chip = document.createElement("div");
+      chip.className = "file-preview";
+      chip.innerHTML = '<span>'+escapeHtml(f.name)+'</span><button data-idx="'+idx+'">&times;</button>';
+      chip.querySelector("button").addEventListener("click", function(){
+        pendingFiles.splice(idx, 1);
+        renderFilePreview();
+      });
+      wrap.appendChild(chip);
+    });
+  }
+
+  document.getElementById("btnSaveMeeting").addEventListener("click", function(){
+    var subject = document.getElementById("meetingSubject").value.trim();
+    var date = document.getElementById("meetingDate").value;
+    if(!subject){ toast("Descreva o assunto tratado."); return; }
+    if(!date){ toast("Informe a data."); return; }
+    state.meetings.push({
+      id: uid(),
+      staffId: currentStaffId,
+      subject: subject,
+      date: date,
+      participants: document.getElementById("meetingParticipants").value.trim(),
+      attachments: pendingFiles.slice(),
+      createdAt: Date.now()
+    });
+    saveState();
+    pendingFiles = [];
+    document.getElementById("filePreviewList").innerHTML = "";
+    document.getElementById("meetingSubject").value = "";
+    document.getElementById("meetingDate").value = "";
+    document.getElementById("meetingParticipants").value = "";
+    renderHistoryList();
+    toast("Encontro adicionado ao histórico.");
+  });
+
+  // ---------- Backup export/import ----------
+  document.getElementById("btnExport").addEventListener("click", function(){
+    var blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "backup-parlamentares-" + new Date().toISOString().slice(0,10) + ".json";
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById("btnImport").addEventListener("click", function(){
+    if(!isAdmin){ toast("Entre como administrador para importar dados."); return; }
+    document.getElementById("importFile").click();
+  });
+  document.getElementById("importFile").addEventListener("change", function(e){
+    var file = e.target.files[0];
+    if(!file) return;
+    var reader = new FileReader();
+    reader.onload = function(ev){
+      try{
+        var parsed = JSON.parse(ev.target.result);
+        if(!parsed.lawmakers || !parsed.staff || !parsed.meetings) throw new Error("formato inválido");
+        if(!confirm("Importar este backup substituirá todos os dados atuais. Continuar?")) return;
+        state = parsed;
+        saveState();
+        render();
+        toast("Backup importado com sucesso.");
+      }catch(err){
+        toast("Arquivo de backup inválido.");
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+  });
+
+  refreshAdminUI();
+})();
+</script>
+</body>
+</html>
