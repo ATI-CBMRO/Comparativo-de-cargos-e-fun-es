@@ -12,7 +12,7 @@ Dois níveis de enriquecimento:
      atribuições pessoais do comando, a partir do RI do CBMAL (Arts. 107/114/115).
      token_da_funcao normaliza o nome do cargo ('comandante', 'adjunto', etc.).
   2. ENRICHMENT_ORGAN — por ÓRGÃO, chave organ_key: competências/missões da
-     unidade, a partir das leis/RIs de PR, MT, ES e PA.
+     unidade, a partir das leis/RIs de PR, MT, ES, PA, SC, BA e PE.
 
 Cada item carrega a citação da fonte. Expansível adicionando novas entradas.
 """
@@ -205,13 +205,70 @@ _PA_COP = [
     "exercer a direção e o controle do apoio e da execução da atividade-fim",
 ]
 
+# ── CBMSC, Dec. nº 1.328/2021, Art. 39 — Região Bombeiro Militar (comando regional) ──
+_SC_RBM = [
+    "inspecionar periodicamente as Organizações Bombeiro Militar subordinadas",
+    "coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a "
+    "circunscrição ou a esfera de competência do comando da unidade operacional subordinada",
+    "supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no âmbito "
+    "da circunscrição",
+    "orientar e acompanhar o desempenho administrativo e operacional dos elementos subordinados "
+    "por meio de ações de comando e de ferramentas sistêmicas, visando o aprimoramento de resultados",
+    "fiscalizar, na circunscrição da Região, a gestão das Centrais de Emergências e congêneres",
+    "emitir ordens administrativas e operacionais visando regular as ações de coordenação, controle "
+    "e fiscalização sobre os órgãos de execução de sua circunscrição",
+    "instaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à "
+    "manutenção da disciplina no âmbito dos Comandos Regionais",
+    "definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral, no âmbito "
+    "de sua respectiva circunscrição",
+    "autorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual",
+]
+
+# ── CBMSC, Dec. nº 1.328/2021, Art. 38 — Diretoria de Segurança Contra Incêndio ──
+_SC_DSCI = [
+    "a normatização em segurança contra incêndio, pânico e desastre",
+    "a análise de projetos e vistorias",
+    "o exercício do Poder de Polícia Administrativa",
+    "a investigação de incêndio e explosão",
+    "a pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre",
+]
+
+# ── CBMBA, Lei nº 14.572/2023, Art. 49, III — Comando de Operações de Bombeiros (COBM) ──
+_BA_COBM = [
+    "planejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate "
+    "a incêndios, busca, salvamento e defesa civil, com atuação nas regiões do Estado",
+]
+
+# ── CBMBA, Lei nº 14.572/2023, Art. 49, IV — Comando de Segurança Contra Incêndio (CSCI) ──
+_BA_CSCI = [
+    "planejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio",
+    "planejar, executar e controlar as ações de perícia de incêndio",
+    "promover ações de prevenção contra incêndio",
+    "propor estudos e pesquisas que viabilizem a melhoria das atividades de segurança contra "
+    "incêndio, elaborando diretrizes da política institucional relativas à sua área de atuação",
+]
+
+# ── CBMPE, Lei nº 15.187/2013, Art. 97 — competências operacionais distintivas dos CATs ──
+_PE_CAT = [
+    "planejar, comandar e fiscalizar as ações operacionais da unidade",
+    "comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, "
+    "solicitando-lhe intervenção, se não for de sua competência providenciar a respeito",
+    "comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o "
+    "exigirem",
+]
+
 
 # Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
 ENRICHMENT_ORGAN = {
-    "dpo":  _tag(_MT_DOP, "cf. CBMMT, RI, Art. 236")
-          + _tag(_PA_COP, "cf. CBMPA, Lei nº 11.060/2025, Art. 16"),
+    "dpo":  _tag(_MT_DOP,  "cf. CBMMT, RI, Art. 236")
+          + _tag(_PA_COP,  "cf. CBMPA, Lei nº 11.060/2025, Art. 16")
+          + _tag(_BA_COBM, "cf. CBMBA, Lei nº 14.572/2023, Art. 49, III"),
     "cot":  _tag(_MT_DSCI, "cf. CBMMT, RI, Art. 198")
-          + _tag(_ES_CAT, "cf. CBMES, NGA — Centro de Atividades Técnicas"),
+          + _tag(_ES_CAT,  "cf. CBMES, NGA — Centro de Atividades Técnicas")
+          + _tag(_SC_DSCI, "cf. CBMSC, Dec. nº 1.328/2021, Art. 38")
+          + _tag(_BA_CSCI, "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV")
+          + _tag(_PE_CAT,  "cf. CBMPE, Lei nº 15.187/2013, Art. 97"),
+    "crbm": _tag(_SC_RBM,  "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"),
     "bbm":  _tag(_PR_BBM,  "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"),
     "cibm": _tag(_PR_CIBM, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, II"),
     "bbs":  _tag(_PR_GOST, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"),

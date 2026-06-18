@@ -120,9 +120,13 @@
             {
               "text": "exercer a direção e o controle do apoio e da execução da atividade-fim",
               "source": "cf. CBMPA, Lei nº 11.060/2025, Art. 16"
+            },
+            {
+              "text": "planejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, com atuação nas regiões do Estado",
+              "source": "cf. CBMBA, Lei nº 14.572/2023, Art. 49, III"
             }
           ],
-          "proposedText": "planejar e coordenar o emprego operacional da instituição\nmanter registro das atividades operacionais da instituição\nmanter estreito relacionamento com outros órgãos de segurança para a realização de operações conjuntas\ncoordenar e controlar todos os serviços de comunicações e ações operacionais\nelaborar o planejamento operacional da instituição em grandes eventos\ninteragir com demais órgãos administrativos e operacionais, visando obter subsídios para o planejamento operacional\nestabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais subordinadas\nplanejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado\nexercer a direção e o controle dos órgãos de direção intermediária e setorial\nexercer a direção e o controle do apoio e da execução da atividade-fim"
+          "proposedText": "planejar e coordenar o emprego operacional da instituição\nmanter registro das atividades operacionais da instituição\nmanter estreito relacionamento com outros órgãos de segurança para a realização de operações conjuntas\ncoordenar e controlar todos os serviços de comunicações e ações operacionais\nelaborar o planejamento operacional da instituição em grandes eventos\ninteragir com demais órgãos administrativos e operacionais, visando obter subsídios para o planejamento operacional\nestabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais subordinadas\nplanejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado\nexercer a direção e o controle dos órgãos de direção intermediária e setorial\nexercer a direção e o controle do apoio e da execução da atividade-fim\nplanejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, com atuação nas regiões do Estado"
         },
         {
           "id": "organizacao",
@@ -315,9 +319,53 @@
             {
               "text": "realizar perícias de incêndio e vistorias",
               "source": "cf. CBMES, NGA — Centro de Atividades Técnicas"
+            },
+            {
+              "text": "a normatização em segurança contra incêndio, pânico e desastre",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 38"
+            },
+            {
+              "text": "a análise de projetos e vistorias",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 38"
+            },
+            {
+              "text": "o exercício do Poder de Polícia Administrativa",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 38"
+            },
+            {
+              "text": "a investigação de incêndio e explosão",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 38"
+            },
+            {
+              "text": "a pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 38"
+            },
+            {
+              "text": "planejar, executar e controlar as ações de perícia de incêndio",
+              "source": "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV"
+            },
+            {
+              "text": "promover ações de prevenção contra incêndio",
+              "source": "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV"
+            },
+            {
+              "text": "propor estudos e pesquisas que viabilizem a melhoria das atividades de segurança contra incêndio, elaborando diretrizes da política institucional relativas à sua área de atuação",
+              "source": "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV"
+            },
+            {
+              "text": "planejar, comandar e fiscalizar as ações operacionais da unidade",
+              "source": "cf. CBMPE, Lei nº 15.187/2013, Art. 97"
+            },
+            {
+              "text": "comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito",
+              "source": "cf. CBMPE, Lei nº 15.187/2013, Art. 97"
+            },
+            {
+              "text": "comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem",
+              "source": "cf. CBMPE, Lei nº 15.187/2013, Art. 97"
             }
           ],
-          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.\nregulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado\nrealizar pesquisa e perícia de incêndio, relacionadas com sua competência\nanalisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com a legislação\nrealizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários\nexpedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de Segurança Contra Incêndio e Pânico\ncassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico\nnotificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências da legislação e normas técnicas\ncapacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência\nplanejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio\nrealizar perícias de incêndio e vistorias"
+          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.\nregulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado\nrealizar pesquisa e perícia de incêndio, relacionadas com sua competência\nanalisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com a legislação\nrealizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários\nexpedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de Segurança Contra Incêndio e Pânico\ncassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico\nnotificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências da legislação e normas técnicas\ncapacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência\nplanejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio\nrealizar perícias de incêndio e vistorias\na normatização em segurança contra incêndio, pânico e desastre\na análise de projetos e vistorias\no exercício do Poder de Polícia Administrativa\na investigação de incêndio e explosão\na pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre\nplanejar, executar e controlar as ações de perícia de incêndio\npromover ações de prevenção contra incêndio\npropor estudos e pesquisas que viabilizem a melhoria das atividades de segurança contra incêndio, elaborando diretrizes da política institucional relativas à sua área de atuação\nplanejar, comandar e fiscalizar as ações operacionais da unidade\ncomunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito\ncomandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem"
         },
         {
           "id": "organizacao",
@@ -548,6 +596,52 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:crbm/finalidade",
           "proposedText": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:crbm/competencia",
+          "caput": "Compete à CRBM:",
+          "items": [
+            {
+              "text": "inspecionar periodicamente as Organizações Bombeiro Militar subordinadas",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a circunscrição ou a esfera de competência do comando da unidade operacional subordinada",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no âmbito da circunscrição",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "orientar e acompanhar o desempenho administrativo e operacional dos elementos subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o aprimoramento de resultados",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "fiscalizar, na circunscrição da Região, a gestão das Centrais de Emergências e congêneres",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "emitir ordens administrativas e operacionais visando regular as ações de coordenação, controle e fiscalização sobre os órgãos de execução de sua circunscrição",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "instaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à manutenção da disciplina no âmbito dos Comandos Regionais",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral, no âmbito de sua respectiva circunscrição",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            },
+            {
+              "text": "autorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual",
+              "source": "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"
+            }
+          ],
+          "proposedText": "inspecionar periodicamente as Organizações Bombeiro Militar subordinadas\ncoordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a circunscrição ou a esfera de competência do comando da unidade operacional subordinada\nsupervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no âmbito da circunscrição\norientar e acompanhar o desempenho administrativo e operacional dos elementos subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o aprimoramento de resultados\nfiscalizar, na circunscrição da Região, a gestão das Centrais de Emergências e congêneres\nemitir ordens administrativas e operacionais visando regular as ações de coordenação, controle e fiscalização sobre os órgãos de execução de sua circunscrição\ninstaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à manutenção da disciplina no âmbito dos Comandos Regionais\ndefinir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral, no âmbito de sua respectiva circunscrição\nautorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual"
         },
         {
           "id": "organizacao",
