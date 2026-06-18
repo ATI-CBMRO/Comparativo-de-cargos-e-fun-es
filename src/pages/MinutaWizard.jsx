@@ -4,6 +4,7 @@ import {
   Document, Packer, Paragraph, TextRun,
   Footer, AlignmentType, ImageRun,
 } from 'docx'
+import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
 
@@ -28,6 +29,33 @@ const ORGAN_OPTIONS = [
 
 const STEP_LABELS = ['Escolha do órgão', 'Revisão das seções', 'Download']
 
+function ArticlePreview({ articles }) {
+  if (!articles.length) {
+    return <p style={{ color: 'var(--text-muted)', fontSize: 13 }}>(sem conteúdo nesta seção)</p>
+  }
+  return (
+    <div style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: '#1a1a1a' }}>
+      {articles.map(art => (
+        <div key={art.number} style={{ marginBottom: 10 }}>
+          {art.chapterTitle && (
+            <p style={{ textAlign: 'center', fontWeight: 700, margin: '18px 0 10px' }}>
+              CAPÍTULO {romanize(art.chapterNumber)}<br />{art.chapterTitle}
+            </p>
+          )}
+          <p style={{ textAlign: 'justify', margin: '0 0 6px', textIndent: art.incisos.length ? 0 : '1.25em' }}>
+            <strong>{articleLabel(art.number)}</strong> {art.caput}
+          </p>
+          {art.incisos.map((inc, i) => (
+            <p key={i} style={{ textAlign: 'justify', margin: '0 0 4px', paddingLeft: '2em', textIndent: '-1em' }}>
+              {romanize(i + 1)} - {inc}
+            </p>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export default function MinutaWizard() {
   const [step, setStep] = useState(0)            // 0 escolha | 1 revisão | 2 download
   const [selectedOrgan, setSelectedOrgan] = useState(null)
@@ -38,6 +66,7 @@ export default function MinutaWizard() {
   const [sectionIdx, setSectionIdx] = useState(0)
   const [edits, setEdits] = useState({})
   const [generating, setGenerating] = useState(false)
+  const [openSource, setOpenSource] = useState(null)
 
   useEffect(() => {
     fetch('/database/minuta_structure.json')
@@ -321,73 +350,100 @@ export default function MinutaWizard() {
           </div>
         )}
 
-        {/* ── Etapa 1: revisão seção a seção ── */}
+        {/* ── Etapa 1: revisão seção a seção (duas colunas) ── */}
         {step === 1 && section && (
-          <div style={{ maxWidth: 760 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 6 }}>
-              <span style={{ fontWeight: 700, color: '#121d3d', fontSize: 17 }}>
-                {section.title}
-              </span>
-              <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>
-                Seção {sectionIdx + 1} de {sections.length}
-              </span>
+          <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', alignItems: 'flex-start' }}>
+            {/* Coluna de edição */}
+            <div style={{ flex: '1 1 420px', minWidth: 0 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 6 }}>
+                <span style={{ fontWeight: 700, color: '#121d3d', fontSize: 17 }}>{section.title}</span>
+                <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>
+                  Seção {sectionIdx + 1} de {sections.length}
+                </span>
+              </div>
+
+              {section.sources.length > 0 && (
+                <div style={{ marginBottom: 12 }}>
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                    <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Baseado em:</span>
+                    {section.sources.map(s => (
+                      <button
+                        key={s}
+                        onClick={() => setOpenSource(openSource === s ? null : s)}
+                        style={{
+                          background: openSource === s ? '#c8102e' : '#eef1f6',
+                          color: openSource === s ? '#fff' : '#121d3d',
+                          border: '1px solid var(--border-card)', borderRadius: 4,
+                          padding: '1px 7px', fontSize: 12, fontWeight: 700,
+                          textTransform: 'uppercase', cursor: 'pointer',
+                        }}
+                      >
+                        {s}
+                      </button>
+                    ))}
+                  </div>
+                  {openSource && section.sourceExcerpts[openSource] && (
+                    <pre style={{
+                      marginTop: 8, padding: 12, background: 'var(--gray-50)',
+                      border: '1px solid var(--border-card)', borderRadius: 6,
+                      fontSize: 12.5, whiteSpace: 'pre-wrap', lineHeight: 1.6,
+                      color: 'var(--text-secondary)', fontFamily: 'Inter, sans-serif',
+                      maxHeight: 220, overflow: 'auto',
+                    }}>
+                      {section.sourceExcerpts[openSource]}
+                    </pre>
+                  )}
+                </div>
+              )}
+
+              <textarea
+                value={edits[section.id] ?? ''}
+                onChange={e => setEdits(prev => ({ ...prev, [section.id]: e.target.value }))}
+                style={{
+                  width: '100%', minHeight: 300, padding: 14,
+                  border: '1.5px solid var(--border-card)', borderRadius: 8,
+                  fontSize: 14, lineHeight: 1.7, fontFamily: 'Inter, sans-serif',
+                  resize: 'vertical', boxSizing: 'border-box', outline: 'none',
+                }}
+              />
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 18 }}>
+                <button
+                  onClick={handlePrev}
+                  disabled={sectionIdx === 0}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 6, padding: '9px 20px',
+                    border: '1.5px solid var(--border-card)', borderRadius: 7,
+                    background: '#fff', cursor: sectionIdx === 0 ? 'not-allowed' : 'pointer',
+                    opacity: sectionIdx === 0 ? 0.4 : 1, fontSize: 14,
+                  }}
+                >
+                  <ChevronLeft size={16} /> Anterior
+                </button>
+                <button
+                  onClick={handleNext}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 6, padding: '9px 24px',
+                    border: 'none', borderRadius: 7, background: '#c8102e', color: '#fff',
+                    fontWeight: 600, cursor: 'pointer', fontSize: 14,
+                  }}
+                >
+                  {sectionIdx < sections.length - 1 ? 'Próxima' : 'Finalizar'}
+                  <ChevronRight size={16} />
+                </button>
+              </div>
             </div>
 
-            {section.sources.length > 0 && (
-              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center', marginBottom: 12 }}>
-                <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Baseado em:</span>
-                {section.sources.map(s => (
-                  <span key={s} style={{
-                    background: '#eef1f6', border: '1px solid var(--border-card)',
-                    borderRadius: 4, padding: '1px 7px',
-                    fontSize: 12, fontWeight: 700, color: '#121d3d', textTransform: 'uppercase',
-                  }}>
-                    {s}
-                  </span>
-                ))}
+            {/* Coluna de prévia ao vivo (capítulo atual) */}
+            <div style={{
+              flex: '1 1 360px', minWidth: 0,
+              border: '1px solid var(--border-card)', borderRadius: 8,
+              background: '#fff', padding: 20, position: 'sticky', top: 16,
+            }}>
+              <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: 8 }}>
+                Prévia do capítulo
               </div>
-            )}
-
-            <textarea
-              value={edits[section.id] ?? ''}
-              onChange={e => setEdits(prev => ({ ...prev, [section.id]: e.target.value }))}
-              style={{
-                width: '100%', minHeight: 280, padding: 14,
-                border: '1.5px solid var(--border-card)', borderRadius: 8,
-                fontSize: 14, lineHeight: 1.7,
-                fontFamily: 'Inter, sans-serif',
-                resize: 'vertical', boxSizing: 'border-box',
-                outline: 'none',
-              }}
-            />
-
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 18 }}>
-              <button
-                onClick={handlePrev}
-                disabled={sectionIdx === 0}
-                style={{
-                  display: 'flex', alignItems: 'center', gap: 6,
-                  padding: '9px 20px',
-                  border: '1.5px solid var(--border-card)', borderRadius: 7,
-                  background: '#fff', cursor: sectionIdx === 0 ? 'not-allowed' : 'pointer',
-                  opacity: sectionIdx === 0 ? 0.4 : 1, fontSize: 14,
-                }}
-              >
-                <ChevronLeft size={16} /> Anterior
-              </button>
-              <button
-                onClick={handleNext}
-                style={{
-                  display: 'flex', alignItems: 'center', gap: 6,
-                  padding: '9px 24px',
-                  border: 'none', borderRadius: 7,
-                  background: '#c8102e', color: '#fff',
-                  fontWeight: 600, cursor: 'pointer', fontSize: 14,
-                }}
-              >
-                {sectionIdx < sections.length - 1 ? 'Próxima' : 'Finalizar'}
-                <ChevronRight size={16} />
-              </button>
+              <ArticlePreview articles={buildArticles({ sections: [section] }, edits)} />
             </div>
           </div>
         )}
