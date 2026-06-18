@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from minuta_enrichment import enrich_for  # noqa: E402
+from minuta_enrichment import enrich_for, enrich_organ_for  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -94,7 +94,8 @@ def build_competencia_section(organ_key, organ, abbr, skip_text=""):
     raw = ro_items(organ.get("atribuicoes") or [])
     if skip:
         raw = [it for it in raw if normalize(it["text"]) != skip]
-    items = _dedup_keep_order(raw)
+    # RO primeiro; depois competências/missões verbatim de outras legislações.
+    items = _dedup_keep_order(raw + enrich_organ_for(organ_key))
     return {
         "id": "competencia", "kind": "incisos", "sectionTitle": "Da Competência",
         "editId": None, "caput": f"Compete à {abbr}:" if abbr else "Compete:",

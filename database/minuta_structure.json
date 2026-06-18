@@ -75,6 +75,56 @@
           "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados."
         },
         {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:dpo/competencia",
+          "caput": "Compete à DPO:",
+          "items": [
+            {
+              "text": "planejar e coordenar o emprego operacional da instituição",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "manter registro das atividades operacionais da instituição",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "manter estreito relacionamento com outros órgãos de segurança para a realização de operações conjuntas",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "coordenar e controlar todos os serviços de comunicações e ações operacionais",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "elaborar o planejamento operacional da instituição em grandes eventos",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "interagir com demais órgãos administrativos e operacionais, visando obter subsídios para o planejamento operacional",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "estabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais subordinadas",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "planejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado",
+              "source": "cf. CBMMT, RI, Art. 236"
+            },
+            {
+              "text": "exercer a direção e o controle dos órgãos de direção intermediária e setorial",
+              "source": "cf. CBMPA, Lei nº 11.060/2025, Art. 16"
+            },
+            {
+              "text": "exercer a direção e o controle do apoio e da execução da atividade-fim",
+              "source": "cf. CBMPA, Lei nº 11.060/2025, Art. 16"
+            }
+          ],
+          "proposedText": "planejar e coordenar o emprego operacional da instituição\nmanter registro das atividades operacionais da instituição\nmanter estreito relacionamento com outros órgãos de segurança para a realização de operações conjuntas\ncoordenar e controlar todos os serviços de comunicações e ações operacionais\nelaborar o planejamento operacional da instituição em grandes eventos\ninteragir com demais órgãos administrativos e operacionais, visando obter subsídios para o planejamento operacional\nestabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais subordinadas\nplanejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado\nexercer a direção e o controle dos órgãos de direção intermediária e setorial\nexercer a direção e o controle do apoio e da execução da atividade-fim"
+        },
+        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -225,9 +275,49 @@
             {
               "text": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.",
               "source": "ro"
+            },
+            {
+              "text": "regulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "realizar pesquisa e perícia de incêndio, relacionadas com sua competência",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "analisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com a legislação",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "realizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "expedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de Segurança Contra Incêndio e Pânico",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "cassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "notificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências da legislação e normas técnicas",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "capacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência",
+              "source": "cf. CBMMT, RI, Art. 198"
+            },
+            {
+              "text": "planejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio",
+              "source": "cf. CBMES, NGA — Centro de Atividades Técnicas"
+            },
+            {
+              "text": "realizar perícias de incêndio e vistorias",
+              "source": "cf. CBMES, NGA — Centro de Atividades Técnicas"
             }
           ],
-          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO."
+          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.\nregulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado\nrealizar pesquisa e perícia de incêndio, relacionadas com sua competência\nanalisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com a legislação\nrealizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários\nexpedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de Segurança Contra Incêndio e Pânico\ncassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico\nnotificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências da legislação e normas técnicas\ncapacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência\nplanejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio\nrealizar perícias de incêndio e vistorias"
         },
         {
           "id": "organizacao",
@@ -696,9 +786,29 @@
             {
               "text": "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar.",
               "source": "ro"
+            },
+            {
+              "text": "coordenar e executar as atividades de defesa civil",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"
+            },
+            {
+              "text": "exercer o poder de polícia administrativa referente à prevenção a incêndios e desastres",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"
+            },
+            {
+              "text": "combater incêndios e desastres",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"
+            },
+            {
+              "text": "prevenir acidentes na orla marítima e fluvial",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"
+            },
+            {
+              "text": "realizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"
             }
           ],
-          "proposedText": "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar."
+          "proposedText": "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar.\ncoordenar e executar as atividades de defesa civil\nexercer o poder de polícia administrativa referente à prevenção a incêndios e desastres\ncombater incêndios e desastres\nprevenir acidentes na orla marítima e fluvial\nrealizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar"
         },
         {
           "id": "organizacao",
@@ -830,6 +940,20 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:cibm/finalidade",
           "proposedText": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cibm/competencia",
+          "caput": "Compete à CIBM:",
+          "items": [
+            {
+              "text": "exercer, em áreas de menores dimensões não incluídas na circunscrição de um Batalhão, as mesmas atribuições do Batalhão de Bombeiro Militar",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, II"
+            }
+          ],
+          "proposedText": "exercer, em áreas de menores dimensões não incluídas na circunscrição de um Batalhão, as mesmas atribuições do Batalhão de Bombeiro Militar"
         },
         {
           "id": "organizacao",
@@ -1021,9 +1145,25 @@
             {
               "text": "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento.",
               "source": "ro"
+            },
+            {
+              "text": "executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"
+            },
+            {
+              "text": "realizar ações de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"
+            },
+            {
+              "text": "organizar forças-tarefas",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"
+            },
+            {
+              "text": "desempenhar atividades de busca e salvamento, inclusive com a utilização de cães",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"
             }
           ],
-          "proposedText": "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento."
+          "proposedText": "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento.\nexecutar a missão especializada de socorro tático em todas as atividades de bombeiro-militar\nrealizar ações de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos\norganizar forças-tarefas\ndesempenhar atividades de busca e salvamento, inclusive com a utilização de cães"
         },
         {
           "id": "organizacao",
@@ -1273,9 +1413,25 @@
             {
               "text": "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP.",
               "source": "ro"
+            },
+            {
+              "text": "atender e apoiar ações de busca, resgate e salvamento a vítimas de acidentes e/ou traumas em áreas urbanas, rurais e rodovias",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, IV"
+            },
+            {
+              "text": "atender e apoiar ações de busca e resgate de vítimas em matas, florestas, montanhas, rios, lagos e mar",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, IV"
+            },
+            {
+              "text": "atuar em missões de apoio à defesa civil",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, IV"
+            },
+            {
+              "text": "apoiar órgãos federais, estaduais e municipais que necessitem do emprego de aeronaves",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, IV"
             }
           ],
-          "proposedText": "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP."
+          "proposedText": "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP.\natender e apoiar ações de busca, resgate e salvamento a vítimas de acidentes e/ou traumas em áreas urbanas, rurais e rodovias\natender e apoiar ações de busca e resgate de vítimas em matas, florestas, montanhas, rios, lagos e mar\natuar em missões de apoio à defesa civil\napoiar órgãos federais, estaduais e municipais que necessitem do emprego de aeronaves"
         },
         {
           "id": "organizacao",

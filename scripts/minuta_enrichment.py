@@ -7,12 +7,14 @@ de regimentos internos de outros CBMs, para níveis onde o detalhamento do CBMRO
 
 Consumido apenas por build_minuta_structure.py. NÃO altera ro.json.
 
-Chave: (organ_key, token_da_funcao) -> list[{"text", "source"}]
-  token_da_funcao normaliza o nome do cargo: 'comandante', 'adjunto',
-  'subcomandante', 'diretor', 'coordenador', 'comandante-de-companhia'.
+Dois níveis de enriquecimento:
+  1. ENRICHMENT — por CARGO/função, chave (organ_key, token_da_funcao):
+     atribuições pessoais do comando, a partir do RI do CBMAL (Arts. 107/114/115).
+     token_da_funcao normaliza o nome do cargo ('comandante', 'adjunto', etc.).
+  2. ENRICHMENT_ORGAN — por ÓRGÃO, chave organ_key: competências/missões da
+     unidade, a partir das leis/RIs de PR, MT, ES e PA.
 
-Seed atual: cadeia de comando operacional a partir do CBMAL. Expansível
-(PR/PA/MT/ES) adicionando novas entradas.
+Cada item carrega a citação da fonte. Expansível adicionando novas entradas.
 """
 
 # ── CBMAL, RI, Art. 107 — Comandante Operacional de Bombeiro (≈ Comandante Regional) ──
@@ -116,3 +118,107 @@ def function_token(cargo_name: str) -> str:
 def enrich_for(organ_key: str, cargo_name: str):
     """Itens de enriquecimento [{text, source}] para uma função; [] se não houver."""
     return list(ENRICHMENT.get((organ_key, function_token(cargo_name)), []))
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Enriquecimento em NÍVEL DE ÓRGÃO (competência do órgão), com missões/competências
+# verbatim das leis e regimentos de PR, MT, ES e PA. Diferente do enriquecimento
+# por cargo (CBMAL acima): aqui as leis descrevem a MISSÃO/competência da unidade
+# (não as atribuições pessoais do comandante), o que casa com a competência do órgão.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── CBMPR, Lei nº 22.206/2024, Art. 35, I — missões do Batalhão (BBM) ──
+_PR_BBM = [
+    "coordenar e executar as atividades de defesa civil",
+    "exercer o poder de polícia administrativa referente à prevenção a incêndios e desastres",
+    "combater incêndios e desastres",
+    "prevenir acidentes na orla marítima e fluvial",
+    "realizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar",
+]
+
+# ── CBMPR, Lei nº 22.206/2024, Art. 35, II — Companhia Independente (Cia. Ind. BM) ──
+_PR_CIBM = [
+    "exercer, em áreas de menores dimensões não incluídas na circunscrição de um Batalhão, "
+    "as mesmas atribuições do Batalhão de Bombeiro Militar",
+]
+
+# ── CBMPR, Lei nº 22.206/2024, Art. 35, III — Grupo de Operações de Socorro Tático (GOST) ──
+_PR_GOST = [
+    "executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar",
+    "realizar ações de atendimento às emergências ambientais e a sinistros decorrentes de "
+    "desastres naturais e antropogênicos",
+    "organizar forças-tarefas",
+    "desempenhar atividades de busca e salvamento, inclusive com a utilização de cães",
+]
+
+# ── CBMPR, Lei nº 22.206/2024, Art. 35, IV — Unidade de Operações Aéreas (UOA) ──
+_PR_UOA = [
+    "atender e apoiar ações de busca, resgate e salvamento a vítimas de acidentes e/ou traumas "
+    "em áreas urbanas, rurais e rodovias",
+    "atender e apoiar ações de busca e resgate de vítimas em matas, florestas, montanhas, rios, "
+    "lagos e mar",
+    "atuar em missões de apoio à defesa civil",
+    "apoiar órgãos federais, estaduais e municipais que necessitem do emprego de aeronaves",
+]
+
+# ── CBMMT, RI, Art. 236 — competências da Diretoria Operacional ──
+_MT_DOP = [
+    "planejar e coordenar o emprego operacional da instituição",
+    "manter registro das atividades operacionais da instituição",
+    "manter estreito relacionamento com outros órgãos de segurança para a realização de "
+    "operações conjuntas",
+    "coordenar e controlar todos os serviços de comunicações e ações operacionais",
+    "elaborar o planejamento operacional da instituição em grandes eventos",
+    "interagir com demais órgãos administrativos e operacionais, visando obter subsídios para o "
+    "planejamento operacional",
+    "estabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais "
+    "subordinadas",
+    "planejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado",
+]
+
+# ── CBMMT, RI, Art. 198 — competências da Diretoria de Segurança Contra Incêndio e Pânico ──
+_MT_DSCI = [
+    "regulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado",
+    "realizar pesquisa e perícia de incêndio, relacionadas com sua competência",
+    "analisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico "
+    "com o fim de verificar a conformidade destes com a legislação",
+    "realizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários",
+    "expedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de "
+    "Segurança Contra Incêndio e Pânico",
+    "cassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de "
+    "Segurança Contra Incêndio e Pânico",
+    "notificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não "
+    "estiverem em conformidade com as exigências da legislação e normas técnicas",
+    "capacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em "
+    "sua área de competência",
+]
+
+# ── CBMES, NGA — Centro de Atividades Técnicas ──
+_ES_CAT = [
+    "planejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio",
+    "realizar perícias de incêndio e vistorias",
+]
+
+# ── CBMPA, Lei nº 11.060/2025, Art. 16 — Comando de Operações ──
+_PA_COP = [
+    "exercer a direção e o controle dos órgãos de direção intermediária e setorial",
+    "exercer a direção e o controle do apoio e da execução da atividade-fim",
+]
+
+
+# Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
+ENRICHMENT_ORGAN = {
+    "dpo":  _tag(_MT_DOP, "cf. CBMMT, RI, Art. 236")
+          + _tag(_PA_COP, "cf. CBMPA, Lei nº 11.060/2025, Art. 16"),
+    "cot":  _tag(_MT_DSCI, "cf. CBMMT, RI, Art. 198")
+          + _tag(_ES_CAT, "cf. CBMES, NGA — Centro de Atividades Técnicas"),
+    "bbm":  _tag(_PR_BBM,  "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"),
+    "cibm": _tag(_PR_CIBM, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, II"),
+    "bbs":  _tag(_PR_GOST, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"),
+    "boa":  _tag(_PR_UOA,  "cf. CBMPR, Lei nº 22.206/2024, Art. 35, IV"),
+}
+
+
+def enrich_organ_for(organ_key: str):
+    """Itens de enriquecimento de competência do órgão [{text, source}]; [] se não houver."""
+    return list(ENRICHMENT_ORGAN.get(organ_key, []))
