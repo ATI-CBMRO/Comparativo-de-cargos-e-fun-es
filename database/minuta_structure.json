@@ -1,477 +1,1484 @@
 {
   "generated_by": "scripts/build_minuta_structure.py",
-  "dpo": {
-    "label": "Diretoria de Planejamento Operacional",
-    "abbr": "DPO",
-    "artigoCaput": "à DPO",
-    "sections": [
-      {
-        "id": "preliminares",
-        "title": "Disposições Preliminares",
-        "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
-        "kind": "prose",
-        "caput": null,
-        "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento da Diretoria de Planejamento Operacional (DPO), no âmbito do Corpo de Bombeiros Militar do Estado de Rondônia.\nA Diretoria de Planejamento Operacional (DPO) é subordinada a Subcomandante-Geral, nos termos da Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação).",
-        "sources": [],
-        "sourceExcerpts": {}
-      },
-      {
-        "id": "finalidade",
-        "title": "Finalidade",
-        "chapterTitle": "DA FINALIDADE",
-        "kind": "prose",
-        "caput": null,
-        "proposedText": "A Diretoria de Planejamento Operacional (DPO) é o órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados.",
-        "sources": [
-          "ro",
-          "ac",
-          "al",
-          "am",
-          "ap",
-          "ba",
-          "ce",
-          "df",
-          "es",
-          "go",
-          "ma",
-          "mg",
-          "ms",
-          "mt",
-          "pa",
-          "pb",
-          "pe",
-          "pi",
-          "pr",
-          "rj",
-          "rn",
-          "rr",
-          "rs",
-          "sc",
-          "se",
-          "sp",
-          "to"
-        ],
-        "sourceExcerpts": {
-          "ro": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados.",
-          "ac": "Os órgãos de direção executiva destinam-se a gerenciar todo o serviço operacional da Corporação (Art. 4º III, red. Lei 3.105/2015)",
-          "al": "Coordenação operacional",
-          "am": "Controle e coordenação de ações operacionais",
-          "ap": "Órgão de direção-geral, responsável pela direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)",
-          "ba": "O Comando de Operações de Bombeiros Militar tem por finalidade assessorar o Comandante-Geral e o Subcomandante-Geral, planejar, coordenar, executar, avaliar e controlar as atividades operacionais de bombeiros militares, de proteção e defesa civil, executadas pelos Comandos Regionais e pelas Unidades Operacionais, no que concerne à proteção das pessoas e dos bens públicos e privados (Art. 16)",
-          "ce": "A Coordenadoria Operacional é responsável pela execução das operações bombeirísticas (Art. 18)",
-          "df": "Planejamento estratégico, coordenação e emprego das unidades e subunidades subordinadas",
-          "es": "Execução das operações de bombeiros militares",
-          "go": "Coordenação operacional, atendimento, instrução e gestão de patrimônio",
-          "ma": "Art. 29 — Aos Comandos Operacionais, denominação genérica dada às organizações bombeiros militar operacionais de mais alto escalão, subordinados ao Comandante Adjunto, compete a aplicação da disciplina, o planejamento estratégico, a coordenação e o emprego de unidade e subunidade operacionais, com a finalidade de executar as atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e proteção e defesa civil, engenharia de segurança contra incêndio e pânico, além de outras conexas.",
-          "mg": "São seis os Comandos Operacionais de Bombeiros, responsáveis perante o Comando-Geral pela coordenação das atividades operacionais (Art. 20 §1º)",
-          "ms": "Planejamento, coordenação, fiscalização e controle de atividades operacionais",
-          "mt": "Planejamento operacional e estatística",
-          "pa": "Direção e controle dos órgãos de direção intermediária e setorial",
-          "pb": "Os Comandos Regionais de Bombeiro Militar – CRBM – são unidades gestoras, em nível estratégico, organizadas de forma sistêmica e responsáveis pela gestão estratégica regionalizada nas Regiões Integradas de Segurança Pública, através do controle, planejamento e supervisão das atividades operacionais realizadas pelas OBM subordinadas. (Art. 32)",
-          "pe": "O COM incumbe-se da direção executiva na área territorial de Recife e sua Região Metropolitana, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 33)",
-          "pi": "O Comando Operacional de Bombeiros é órgão de execução do mais alto escalão do sistema operacional subordinado ao órgão de direção geral, tendo a seu cargo o planejamento estratégico e a fiscalização do emprego dos Comandos Regionais de Bombeiros. (Art. 34, Lei nº 7.772/2022)",
-          "pr": "Órgão de direção geral responsável pelo planejamento estratégico da Corporação",
-          "rj": "Art. 44, § 1º — Os Comandos de Bombeiros da Área, diretamente subordinados ao Comando-Geral, são responsáveis pelo planejamento, supervisão e execução das missões específicas de bombeiro-militar, na respectiva área, de acordo com as diretrizes e ordens do Comando-Geral.",
-          "rn": "O Comando Operacional Bombeiro Militar (Cmdo Op BM) é o órgão responsável pelo planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação (Art. 32).",
-          "rr": "Coordenação, controle e fiscalização das atividades operacionais (área setorial)",
-          "rs": "Órgão de planejamento, direção, controle e execução das atividades relacionadas a operações, defesa civil e serviços civis e auxiliares de bombeiro (Regimento Interno, Art. 37)",
-          "sc": "I - inspecionar periodicamente as Organizações Bombeiro Militar subordinadas;",
-          "se": "A Diretoria Operacional — DOP é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle das atividades operacionais e na execução das atividades de proteção e defesa civil, sendo responsável pela coordenação e emprego dos Comandos Regionais e Unidades Operacionais, que lhes são subordinadas (Art. 30)",
-          "sp": "Assessoria e planejamento ao Comandante do Corpo de Bombeiros nas áreas de pessoal (B/1), informações (B/2), organização, instrução e operações (B/3), fiscalização administrativa e logística (B/4), assuntos civis (B/5) e serviço técnico (B/6) (Lei nº 616/1974, Art. 40, II e §2º)",
-          "to": "O Comando Operacional Bombeiro Militar é responsável pelo planejamento dos assuntos relativos à articulação operacional, à administração e ao controle das operações bombeiro militares e pelos estudos, estatísticas, doutrinas, pesquisas e padronização de procedimentos relacionados às atividades operacionais da Corporação. (Art. 17)"
+  "title": "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO",
+  "chapters": [
+    {
+      "id": "preliminares",
+      "kind": "prose",
+      "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
+      "editId": "preliminares",
+      "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento da estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do escalão de direção operacional às frações de execução.\nA estrutura operacional subordina-se ao Comandante-Geral por intermédio do Subcomandante-Geral, nos termos da Lei de Organização Básica do CBMRO."
+    },
+    {
+      "id": "estrutura",
+      "kind": "incisos",
+      "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
+      "editId": "estrutura",
+      "caput": "A estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia compõe-se dos seguintes órgãos:",
+      "items": [
+        {
+          "text": "a Diretoria de Planejamento Operacional (DPO)",
+          "source": "ro"
+        },
+        {
+          "text": "o Comando de Operações Técnicas (COT)",
+          "source": "ro"
+        },
+        {
+          "text": "a Diretoria Operacional Especializada (DOE)",
+          "source": "ro"
+        },
+        {
+          "text": "o Comandos Regionais de Bombeiro Militar (CRBM)",
+          "source": "ro"
+        },
+        {
+          "text": "o Batalhão de Bombeiros Militar (BBM)",
+          "source": "ro"
+        },
+        {
+          "text": "a Companhia Independente de Bombeiros Militar (CIBM)",
+          "source": "ro"
+        },
+        {
+          "text": "o Grupo de Bombeiros Militar (GBM)",
+          "source": "ro"
+        },
+        {
+          "text": "o Batalhão de Busca e Salvamento (BBS)",
+          "source": "ro"
+        },
+        {
+          "text": "o Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)",
+          "source": "ro"
+        },
+        {
+          "text": "o Batalhão de Operações Aéreas (BOA)",
+          "source": "ro"
         }
-      },
-      {
-        "id": "competencias",
-        "title": "Competências",
-        "chapterTitle": "DA COMPETÊNCIA",
-        "kind": "incisos",
-        "caput": "Compete à DPO:",
-        "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados.\nCoordenação operacional\nExecução das atividades-fins da Corporação\nControle e coordenação de ações operacionais\nServiços de comunicações\nPlanejamento estratégico, coordenação, fiscalização e emprego das Unidades\nExecução de atividades de prevenção, combate a incêndio, busca e salvamento, socorros de emergência e defesa civil\nPlanejamento estratégico, coordenação e emprego das unidades e subunidades subordinadas\nExecutar atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil\nExecução das operações de bombeiros militares\nProteção e defesa civil\nCoordenação operacional, atendimento, instrução e gestão de patrimônio\nPlanejamento, coordenação, fiscalização e controle de atividades operacionais\nAcompanhamento direto de atividades de prevenção na capital\nPlanejamento operacional e estatística\nAtendimento pré-hospitalar\nCoordenação dos Comandos Regionais e unidades\nDireção e controle dos órgãos de direção intermediária e setorial\nDireção e controle de apoio e de execução da atividade-fim da corporação\nÓrgão de direção geral responsável pelo planejamento estratégico da Corporação\nElaboração de diretrizes e ordens do Comando-Geral no acionamento dos órgãos de direção setorial e de execução\nCoordenação, controle e fiscalização das atividades operacionais (área setorial)",
-        "sources": [
-          "ro",
-          "al",
-          "am",
-          "df",
-          "es",
-          "go",
-          "ms",
-          "mt",
-          "pa",
-          "pr",
-          "rr"
-        ],
-        "sourceExcerpts": {
-          "ro": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados.",
-          "al": "Coordenação operacional\nExecução das atividades-fins da Corporação",
-          "am": "Controle e coordenação de ações operacionais\nServiços de comunicações\nPlanejamento estratégico, coordenação, fiscalização e emprego das Unidades\nExecução de atividades de prevenção, combate a incêndio, busca e salvamento, socorros de emergência e defesa civil",
-          "df": "Planejamento estratégico, coordenação e emprego das unidades e subunidades subordinadas\nExecutar atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil",
-          "es": "Execução das operações de bombeiros militares\nProteção e defesa civil",
-          "go": "Coordenação operacional, atendimento, instrução e gestão de patrimônio",
-          "ms": "Planejamento, coordenação, fiscalização e controle de atividades operacionais\nAcompanhamento direto de atividades de prevenção na capital",
-          "mt": "Planejamento operacional e estatística\nAtendimento pré-hospitalar\nCoordenação dos Comandos Regionais e unidades",
-          "pa": "Direção e controle dos órgãos de direção intermediária e setorial\nDireção e controle de apoio e de execução da atividade-fim da corporação",
-          "pr": "Órgão de direção geral responsável pelo planejamento estratégico da Corporação\nElaboração de diretrizes e ordens do Comando-Geral no acionamento dos órgãos de direção setorial e de execução",
-          "rr": "Coordenação, controle e fiscalização das atividades operacionais (área setorial)"
+      ],
+      "proposedText": "a Diretoria de Planejamento Operacional (DPO)\no Comando de Operações Técnicas (COT)\na Diretoria Operacional Especializada (DOE)\no Comandos Regionais de Bombeiro Militar (CRBM)\no Batalhão de Bombeiros Militar (BBM)\na Companhia Independente de Bombeiros Militar (CIBM)\no Grupo de Bombeiros Militar (GBM)\no Batalhão de Busca e Salvamento (BBS)\no Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)\no Batalhão de Operações Aéreas (BOA)"
+    },
+    {
+      "id": "organ:dpo",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",
+      "organKey": "dpo",
+      "label": "Diretoria de Planejamento Operacional",
+      "abbr": "DPO",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dpo/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:dpo/competencia",
+          "caput": "Compete à DPO:",
+          "items": [
+            {
+              "text": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dpo/organizacao",
+          "caput": "DPO tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Comandos Regionais de Bombeiro Militar (CRBMs) — Art. 29",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhões de Bombeiros Militar (BBM) — Art. 40",
+              "source": "ro"
+            },
+            {
+              "text": "Companhias Independentes de Bombeiros Militar (CIBM) — Art. 41",
+              "source": "ro"
+            },
+            {
+              "text": "Diretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa\nComandos Regionais de Bombeiro Militar (CRBMs) — Art. 29\nBatalhões de Bombeiros Militar (BBM) — Art. 40\nCompanhias Independentes de Bombeiros Militar (CIBM) — Art. 41\nDiretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)"
+        },
+        {
+          "id": "cargo:diretor-de-planejamento-operacional",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor de Planejamento Operacional",
+          "editId": "organ:dpo/cargo:diretor-de-planejamento-operacional",
+          "caput": "Ao Diretor de Planejamento Operacional compete:",
+          "items": [
+            {
+              "text": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados. Subordinado ao Subcomandante-Geral.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados. Subordinado ao Subcomandante-Geral."
+        },
+        {
+          "id": "cargo:adjunto-da-dpo",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Adjunto da DPO",
+          "editId": "organ:dpo/cargo:adjunto-da-dpo",
+          "caput": "Ao Adjunto da DPO compete:",
+          "items": [
+            {
+              "text": "Substituir o Diretor de Planejamento Operacional em seus impedimentos.",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliar no planejamento e controle das atividades operacionais.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Substituir o Diretor de Planejamento Operacional em seus impedimentos.\nAuxiliar no planejamento e controle das atividades operacionais."
+        },
+        {
+          "id": "cargo:coordenador-de-opera-es",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Operações",
+          "editId": "organ:dpo/cargo:coordenador-de-opera-es",
+          "caput": "Ao Coordenador de Operações compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades operacionais no âmbito da Coordenadoria de Operações.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades operacionais no âmbito da Coordenadoria de Operações."
+        },
+        {
+          "id": "cargo:coordenador-de-doutrina-e-pesquisa",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Doutrina e Pesquisa",
+          "editId": "organ:dpo/cargo:coordenador-de-doutrina-e-pesquisa",
+          "caput": "Ao Coordenador de Doutrina e Pesquisa compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de doutrina e pesquisa operacional.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de doutrina e pesquisa operacional."
+        },
+        {
+          "id": "cargo:coordenador-de-estudos-estrat-gicos",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Estudos Estratégicos",
+          "editId": "organ:dpo/cargo:coordenador-de-estudos-estrat-gicos",
+          "caput": "Ao Coordenador de Estudos Estratégicos compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais."
         }
-      },
-      {
-        "id": "organizacao",
-        "title": "Organização Interna",
-        "chapterTitle": "DA ORGANIZAÇÃO",
-        "kind": "incisos",
-        "caput": "A DPO tem a seguinte estrutura:",
-        "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa\nComandos Regionais de Bombeiro Militar (CRBMs) — Art. 29\nBatalhões de Bombeiros Militar (BBM) — Art. 40\nCompanhias Independentes de Bombeiros Militar (CIBM) — Art. 41\nDiretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)",
-        "sources": [
-          "ro",
-          "ac",
-          "al",
-          "am",
-          "ba",
-          "ce",
-          "df",
-          "es",
-          "go",
-          "ma",
-          "mg",
-          "ms",
-          "mt",
-          "pa",
-          "pb",
-          "pe",
-          "pi",
-          "pr",
-          "rj",
-          "rn",
-          "rr",
-          "rs",
-          "sc",
-          "se",
-          "sp"
-        ],
-        "sourceExcerpts": {
-          "ro": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa\nComandos Regionais de Bombeiro Militar (CRBMs) — Art. 29\nBatalhões de Bombeiros Militar (BBM) — Art. 40\nCompanhias Independentes de Bombeiros Militar (CIBM) — Art. 41\nDiretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)",
-          "ac": "1º BEPCIF — 1º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º I)\n2º BEPCIF — 2º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º II)\n3º BEPCIF — 3º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º III)\n1º BBS — 1º Batalhão de Busca e Salvamento (Art. 4º §2º I)\n1ª CIACIAER — 1ª Companhia de Combate a Incêndio em Aeródromos (Art. 4º §2º II)",
-          "al": "Comando Operacional de Bombeiros da Região Metropolitana de Maceió\nComando Operacional de Bombeiros do Interior",
-          "am": "Seção de Operações (COBOM-1)\nSeção de Comunicações (COBOM-2)\nSeção de Apoio (COBOM-3)",
-          "ba": "1º Comando Regional de Bombeiros Militar\n2º Comando Regional de Bombeiros Militar\n3º Comando Regional de Bombeiros Militar\n4º Comando Regional de Bombeiros Militar",
-          "ce": "Núcleo de Bombeiro Metropolitano\nNúcleo de Bombeiro do Interior\nNúcleo de Defesa Civil\nNúcleo de Busca e Salvamento\nNúcleo de Resgate e Emergência Pré-hospitalar",
-          "df": "Subcomando Operacional\nComandos de Área\nGrupamentos de Bombeiro Militar\nComando Especializado",
-          "es": "1º Batalhão de Bombeiros Militar (1º BBM)\n2º BBM\n3º BBM\n4º BBM\n5º BBM\n6º BBM\n1ª Companhia Independente (1ª CIA IND)\n2ª CIA IND\n3ª CIA IND\n4ª CIA IND\n5ª CIA IND",
-          "go": "Seção de Operações (SEOP)\nSeção de Atendimento Operacional (SAOP)\nSeção de Instrução e Qualificação (SIQ)\nSeção de Gestão de Patrimônio (SGP)",
-          "ma": "COCB-1 — São Luís (Microrregião Aglomeração Urbana de São Luís)\nCOECB — Comando Operacional Especializado (São Luís; atuação em todo o Estado)\nCOCB-2 — Itapecuru-Mirim (Microrregião de Itapecuru-Mirim)\nCOCB-3 — Imperatriz (Microrregião de Imperatriz)\nCOCB-4 — Balsas (Microrregião de Gerais de Balsas)\nCOCB-5 — Caxias\nCOCB-6 — Bacabal\nCOCB-7 — Pinheiro",
-          "mg": "6 Comandos Operacionais de Bombeiros localizados em sedes de RISP",
-          "ms": "Comando de Bombeiros de Divisas (CBDiv)\nComando de Bombeiros de Fronteiras (CBFron)\nComando de Bombeiros de Atividades Especializadas (CBEsp)\nComando de Operações do CBM (COCB)",
-          "mt": "Coordenadoria de Planejamento Operacional e Estatística\nCoordenadoria de Atendimento Pré-Hospitalar\nComandos Regionais Bombeiro Militar (CRBM)\nBatalhão de Emergências Ambientais (BEA)\nCompanhias Independentes\nPelotões Independentes\nNúcleos Bombeiro Militar",
-          "pa": "Comandante Operacional (último posto QOBM)\nAssistente (Tenente-Coronel)\nSeção de Planejamento de Pessoal\nSeção de Planejamento Logístico\nSeção de Planejamento de Operações e Estatística\nSeção de Planejamento de Eventos",
-          "pb": "Estado Maior Regional (EM/R): B/1 a B/6\nCentro Regional de Intendência (CRI)",
-          "pe": "Grupamento de Bombeiros de Incêndio (GBI)\nGrupamento de Atendimento Pré-Hospitalar (GBAPH)\nGrupamento de Bombeiros Marítimo (GBMar)\nGrupamento de Bombeiros de Salvamento (GBS)",
-          "pi": "Comandante Operacional de Bombeiros\nSubcomandante Operacional de Bombeiros\nSeção Administrativa\nSeção de Operações e Comunicações\nSeção de Controle e Fiscalização de Hidrantes\nSeção de Planejamento, Estatística e Avaliação Operacional\nNúcleo de Investigação e Prevenção de Incêndios\nComandos Regionais de Bombeiros Militar",
-          "pr": "1ª Seção (BM/1): Pessoal e legislação\n2ª Seção (BM/2): Inteligência\n3ª Seção (BM/3): Planejamento, operações e estatística\n4ª Seção (BM/4): Logística",
-          "rj": "Comandante\nEstado-Maior (B/1 a B/5)\nCentro de Operações",
-          "rn": "Estado-Maior Operacional (EM Op)\nCentro de Operações do CBMRN (COCBM)\nComissão de Defesa Civil (CODEC)\n1º Grupamento de Bombeiros Militar\n2º Grupamento de Bombeiros Militar\nGrupamento de Bombeiros Marítimo (GBMAR)\nSubgrupamento Independente de APH (SIBM-APH)\n1º Subgrupamento Independente de Bombeiros Militar\n2º Subgrupamento Independente de Bombeiros Militar",
-          "rr": "Comandante Operacional da Capital\nComandante Operacional do Interior\nSubcomandantes Operacionais (substitutos e Chefes do Estado Maior Operacional)\nEstado Maior Operacional da Capital\nEstado Maior Operacional do Interior",
-          "rs": "Divisão Administrativa (DAdm/AODC)\nDivisão de Operações e Defesa Civil (DODC/AODC)\nDivisão de Serviços Civis Auxiliares (DSCAB/AODC)\nDivisão de Monitoramento Operacional (DMO/AODC)\nDivisão de Operações Aéreas (DOA/AODC)",
-          "sc": "1º BBM - Florianópolis\n3º BBM - Blumenau\n4º BBM - Criciúma\n7º BBM - Itajaí\n8º BBM - Tubarão\n10º BBM - São José\n13º BBM - Balneário Camboriú",
-          "se": "Comandos Regionais Bombeiro Militar (CRBM)\nGrupamentos Bombeiro Militar (GBM)\nGrupamentos Especializados (GBS, GOA)",
-          "sp": "Chefe do Estado Maior\n1ª Seção (B/1): pessoal\n2ª Seção (B/2): informações\n3ª Seção (B/3): organização, instrução e operações\n4ª Seção (B/4): fiscalização administrativa e logística\n5ª Seção (B/5): assuntos civis\n6ª Seção (B/6): Seção de Serviço Técnico"
+      ]
+    },
+    {
+      "id": "organ:cot",
+      "kind": "organ",
+      "chapterTitle": "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",
+      "organKey": "cot",
+      "label": "Comando de Operações Técnicas",
+      "abbr": "COT",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cot/finalidade",
+          "proposedText": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cot/competencia",
+          "caput": "Compete à COT:",
+          "items": [
+            {
+              "text": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.",
+              "source": "ro"
+            },
+            {
+              "text": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.\nElaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cot/organizacao",
+          "caput": "COT tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante (QOEMBM ou QCOBM — formação em Engenharia ou Arquitetura quando QCOBM)",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Estudos Técnicos",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Planejamento, Fiscalização e Suporte Técnico",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadorias de Atividades Técnicas (CATs) — Art. 42: Coordenador, Adjunto, Seção Administrativa, Seção de Análise de Projetos, Seção de Investigação e Prevenção de Incêndio, Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Projetos de Arquitetura e Engenharia — Coordenador, Adjunto, Seção Administrativa, Seção de Fiscalização e Vistorias de Obras, Seção de Projetos, Planejamento e Estudos Técnicos, Seção de Manutenção Predial",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante (QOEMBM ou QCOBM — formação em Engenharia ou Arquitetura quando QCOBM)\nAdjunto\nSeção Administrativa\nSeção de Estudos Técnicos\nSeção de Planejamento, Fiscalização e Suporte Técnico\nCoordenadorias de Atividades Técnicas (CATs) — Art. 42: Coordenador, Adjunto, Seção Administrativa, Seção de Análise de Projetos, Seção de Investigação e Prevenção de Incêndio, Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)\nCoordenadoria de Projetos de Arquitetura e Engenharia — Coordenador, Adjunto, Seção Administrativa, Seção de Fiscalização e Vistorias de Obras, Seção de Projetos, Planejamento e Estudos Técnicos, Seção de Manutenção Predial"
+        },
+        {
+          "id": "cargo:comandante-do-cot",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do COT",
+          "editId": "organ:cot/cargo:comandante-do-cot",
+          "caput": "Ao Comandante do COT compete:",
+          "items": [
+            {
+              "text": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico, bem como a elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO. Subordinado à Diretoria de Planejamento Operacional.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico, bem como a elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO. Subordinado à Diretoria de Planejamento Operacional."
+        },
+        {
+          "id": "cargo:adjunto-do-cot",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Adjunto do COT",
+          "editId": "organ:cot/cargo:adjunto-do-cot",
+          "caput": "Ao Adjunto do COT compete:",
+          "items": [
+            {
+              "text": "Substituir o Comandante do COT em seus impedimentos.",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliar no planejamento e controle das atividades técnicas.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Substituir o Comandante do COT em seus impedimentos.\nAuxiliar no planejamento e controle das atividades técnicas."
+        },
+        {
+          "id": "cargo:coordenador-de-atividades-t-cnicas-cat",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Atividades Técnicas (CAT)",
+          "editId": "organ:cot/cargo:coordenador-de-atividades-t-cnicas-cat",
+          "caput": "Ao Coordenador de Atividades Técnicas (CAT) compete:",
+          "items": [
+            {
+              "text": "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.",
+              "source": "ro"
+            },
+            {
+              "text": "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.",
+              "source": "ro"
+            },
+            {
+              "text": "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT).",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.\nProceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.\nCom autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."
+        },
+        {
+          "id": "cargo:coordenador-de-projetos-de-arquitetura-e-engenharia",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Projetos de Arquitetura e Engenharia",
+          "editId": "organ:cot/cargo:coordenador-de-projetos-de-arquitetura-e-engenharia",
+          "caput": "Ao Coordenador de Projetos de Arquitetura e Engenharia compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial."
         }
-      },
-      {
-        "id": "cargos_atribuicoes",
-        "title": "Atribuições dos Cargos",
-        "chapterTitle": "DAS ATRIBUIÇÕES DOS CARGOS",
-        "kind": "cargos",
-        "caput": null,
-        "proposedText": "Diretor de Planejamento Operacional:\n  Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados. Subordinado ao Subcomandante-Geral.\n\nAdjunto da DPO:\n  Substituir o Diretor de Planejamento Operacional em seus impedimentos.\n  Auxiliar no planejamento e controle das atividades operacionais.\n\nCoordenador de Operações:\n  Planejar, coordenar e controlar as atividades operacionais no âmbito da Coordenadoria de Operações.\n\nCoordenador de Doutrina e Pesquisa:\n  Planejar, coordenar e controlar as atividades de doutrina e pesquisa operacional.\n\nCoordenador de Estudos Estratégicos:\n  Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais.",
-        "sources": [
-          "ro",
-          "ac",
-          "al",
-          "am",
-          "ap",
-          "ba",
-          "ce",
-          "df",
-          "es",
-          "go",
-          "mg",
-          "ms",
-          "mt",
-          "pa",
-          "pb",
-          "pe",
-          "pi",
-          "pr",
-          "rn",
-          "rr",
-          "rs",
-          "sc",
-          "se",
-          "sp",
-          "to"
-        ],
-        "sourceExcerpts": {
-          "ro": "Diretor de Planejamento Operacional:\n  Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados. Subordinado ao Subcomandante-Geral.\n\nAdjunto da DPO:\n  Substituir o Diretor de Planejamento Operacional em seus impedimentos.\n  Auxiliar no planejamento e controle das atividades operacionais.\n\nCoordenador de Operações:\n  Planejar, coordenar e controlar as atividades operacionais no âmbito da Coordenadoria de Operações.\n\nCoordenador de Doutrina e Pesquisa:\n  Planejar, coordenar e controlar as atividades de doutrina e pesquisa operacional.\n\nCoordenador de Estudos Estratégicos:\n  Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais.",
-          "ac": "Comandante do COB da Capital e Entorno:\n  Gerenciar todo o serviço operacional da Corporação na capital e entorno; operacionalização das atividades-fins e cumprimento de missões consoante diretrizes da direção geral (Arts. 4º III e 13)\n\nComandante do COB do Interior:\n  Gerenciar todo o serviço operacional da Corporação no interior do estado; operacionalização das atividades-fins e cumprimento de missões consoante diretrizes da direção geral (Arts. 4º III e 13)",
-          "al": "Comandante Operacional de Bombeiros:\n  Coordenação operacional e execução das atividades-fins",
-          "am": "Chefe do COBOM:\n  Direção do Centro de Operações\n\nComandante de Bombeiros da Capital:\n  Planejamento estratégico, coordenação, fiscalização e emprego das unidades operacionais da capital\n\nComandante de Bombeiros do Interior:\n  Planejamento estratégico, coordenação e fiscalização das unidades do interior",
-          "ap": "Comandante Operacional:\n  Órgão de direção-geral, responsável pela coordenação das atividades operacionais de bombeiro militar do Estado do Amapá, integrando os órgãos incumbidos da direção superior, planejamento estratégico e administração geral da Instituição (LC nº 180/2026, Art. 6º, §1º, I)",
-          "ba": "Comandante de Operações de Bombeiros Militar:\n  a) planejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, desenvolvidas pelo CBMBA, com atuação nas regiões do Estado (Art. 49 III a)\n  b) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 III b)",
-          "ce": "Coordenador Operacional:\n  Responsável pela execução das operações bombeirísticas",
-          "df": "Comandante Operacional:\n  Planejamento estratégico e coordenação do emprego das unidades\n  Execução de prevenção, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil",
-          "es": "Diretor de Operações:\n  Planejar, coordenar, controlar e executar as atividades operacionais\n\nComandante de Batalhão:\n  Comandar e executar as operações de bombeiros militares na sua área de responsabilidade",
-          "go": "Chefe do Centro Operacional de Bombeiros:\n  Central de despacho operacional",
-          "mg": "Comandante Operacional de Bombeiros (COB):\n  Coordenação de atividades operacionais em sua área (sedes de RISP)",
-          "ms": "Comandante Metropolitano de Bombeiros (CMB):\n  Planejamento, coordenação e fiscalização de atividades operacionais e prevenção na capital",
-          "mt": "Diretor Operacional:\n  Operações bombeiro-militar e coordenação de unidades operacionais",
-          "pa": "Comandante Operacional:\n  Direção e controle dos órgãos de direção intermediária e setorial\n  Direção e controle de apoio e execução da atividade-fim",
-          "pb": "Comandante Regional de Bombeiro Militar:\n  Gestão estratégica regionalizada; controle, planejamento e supervisão das atividades operacionais das OBM subordinadas (Art. 32).",
-          "pe": "Comandante Operacional Metropolitano (COM):\n  Direção executiva na área de Recife e Região Metropolitana\n  Combate a incêndio, salvamento e atendimento pré-hospitalar\n\nComandante Operacional Especializado:\n  Direção executiva das atividades técnicas no Estado (Art. 35)\n\nComandante Operacional do Interior/1:\n  Direção executiva das atividades operacionais na Zona da Mata e Agreste (Art. 37)\n\nComandante Operacional do Interior/2:\n  Direção executiva das atividades operacionais no Sertão (Art. 39)",
-          "pi": "Comandante Operacional de Bombeiros (COB):\n  Planejamento estratégico e fiscalização do emprego dos Comandos Regionais",
-          "pr": "Chefe do Estado-Maior:\n  Planejamento estratégico da Corporação\n  Elaboração de diretrizes e ordens do Comando-Geral\n  Precedência sobre demais, exceto CG e SCG\n\n1ª Seção (BM/1):\n  Pessoal e legislação\n\n2ª Seção (BM/2):\n  Assessorar e manter o Comandante-Geral, o Subcomandante-Geral e o Chefe do Estado-Maior constantemente informados dos fatos, informes e informações que digam respeito ao Corpo de Bombeiros Militar do Paraná e às responsabilidades de inteligência e contrainteligência atribuídas à Corporação pelo Sistema Estadual de Inteligência de Segurança Pública, Sistema de Inteligência de Segurança Pública e pelo Sistema Brasileiro de Inteligência (Art. 3º, I)\n  Produzir conhecimento útil e oportuno necessários às decisões do Comandante-Geral, do Subcomandante-Geral e o Chefe do Estado-Maior, bem como aos estudos e planejamentos do Estado-Maior (II)\n\n3ª Seção (BM/3):\n  Planejamento, operações e estatística\n\n4ª Seção (BM/4):\n  Logística da Corporação",
-          "rn": "Comandante Operacional Bombeiro Militar:\n  Planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação (Art. 32)",
-          "rr": "Comandante Operacional da Capital:\n  Coordenação, controle e fiscalização das atividades operacionais da Capital\n\nComandante Operacional do Interior:\n  Coordenação, controle e fiscalização das atividades operacionais do Interior",
-          "rs": "Assessor de Operações, Defesa Civil e Serviços Civis Auxiliares (AODC):\n  Gestão tática de planejamento, direção, organização e controle de operações",
-          "sc": "Comandante da Região Bombeiro Militar (RBM):\n  Gestão, planejamento, supervisão, coordenação, controle e fiscalização de missões finalísticas",
-          "se": "Diretor Operacional:\n  Gestão e controle de atividades operacionais e de proteção e defesa civil\n  Coordenação e emprego dos Comandos Regionais e Unidades\n\nSuperior de Dia ao CBMSE:\n  Fiscalização e decisões operacionais; comparecimento a sinistros de médio/grande porte\n  Acionamento do Plano de Chamada em grandes sinistros\n\nSupervisor de Dia ao CBMSE:\n  Serviço de nível tático; triagem de solicitações e despacho de guarnições\n  Supervisão e distribuição de ocorrências; remanejamento de recursos",
-          "sp": "Chefe do Estado Maior:\n  Chefia do Estado Maior do Corpo de Bombeiros (Art. 40, §2º, 1)",
-          "to": "Comandante Operacional Bombeiro Militar:\n  Planejamento da articulação operacional e padronização de procedimentos operacionais (Art. 17)."
+      ]
+    },
+    {
+      "id": "organ:doe",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",
+      "organKey": "doe",
+      "label": "Diretoria Operacional Especializada",
+      "abbr": "DOE",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:doe/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:doe/competencia",
+          "caput": "Compete à DOE:",
+          "items": [
+            {
+              "text": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:doe/organizacao",
+          "caput": "DOE tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Gerência de Segurança Operacional",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Manutenção",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Correição",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Operações Aéreas",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Operações Terrestres",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhão de Busca e Salvamento (BBS) — Art. 44",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhão de Operações Aéreas (BOA) — Art. 47",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nGerência de Segurança Operacional\nSeção de Pessoal\nSeção Administrativa\nSeção de Manutenção\nSeção de Correição\nSeção de Operações Aéreas\nSeção de Operações Terrestres\nBatalhão de Busca e Salvamento (BBS) — Art. 44\nBatalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45\nBatalhão de Operações Aéreas (BOA) — Art. 47"
+        },
+        {
+          "id": "cargo:diretor-da-doe",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor da DOE",
+          "editId": "organ:doe/cargo:diretor-da-doe",
+          "caput": "Ao Diretor da DOE compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação."
+        },
+        {
+          "id": "cargo:adjunto-da-doe",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Adjunto da DOE",
+          "editId": "organ:doe/cargo:adjunto-da-doe",
+          "caput": "Ao Adjunto da DOE compete:",
+          "items": [
+            {
+              "text": "Substituir o Diretor da DOE em seus impedimentos.",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliar no planejamento e controle das atividades operacionais especializadas.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Substituir o Diretor da DOE em seus impedimentos.\nAuxiliar no planejamento e controle das atividades operacionais especializadas."
         }
-      },
-      {
-        "id": "disposicoes_finais",
-        "title": "Disposições Finais",
-        "chapterTitle": "DAS DISPOSIÇÕES FINAIS",
-        "kind": "prose",
-        "caput": null,
-        "proposedText": "Os casos omissos neste Regimento Interno serão resolvidos pelo Comandante-Geral do CBMRO.\nEste Regimento Interno entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
-        "sources": [],
-        "sourceExcerpts": {}
-      }
-    ]
-  },
-  "cot": {
-    "label": "Comando de Operações Técnicas",
-    "abbr": "COT",
-    "artigoCaput": "ao COT",
-    "sections": [
-      {
-        "id": "preliminares",
-        "title": "Disposições Preliminares",
-        "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
-        "kind": "prose",
-        "caput": null,
-        "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento do Comando de Operações Técnicas (COT), no âmbito do Corpo de Bombeiros Militar do Estado de Rondônia.\nO Comando de Operações Técnicas (COT) é subordinado a Diretoria de Planejamento Operacional (DPO), nos termos da Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação).",
-        "sources": [],
-        "sourceExcerpts": {}
-      },
-      {
-        "id": "finalidade",
-        "title": "Finalidade",
-        "chapterTitle": "DA FINALIDADE",
-        "kind": "prose",
-        "caput": null,
-        "proposedText": "O Comando de Operações Técnicas (COT) é o órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.",
-        "sources": [
-          "ro",
-          "ac",
-          "al",
-          "am",
-          "ap",
-          "ba",
-          "ce",
-          "es",
-          "go",
-          "ma",
-          "mg",
-          "ms",
-          "mt",
-          "pa",
-          "pb",
-          "pe",
-          "pi",
-          "pr",
-          "rj",
-          "rn",
-          "rr",
-          "rs",
-          "sc",
-          "se",
-          "sp",
-          "to"
-        ],
-        "sourceExcerpts": {
-          "ro": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.",
-          "ac": "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
-          "al": "Planejamento de serviços técnicos",
-          "am": "Estudo, análise, planejamento de atividades de prevenção",
-          "ap": "Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica, para auxiliar as decisões dos órgãos de direção em assuntos especializados (Art. 6º, §2º)",
-          "ba": "O Comando de Segurança Contra Incêndio tem por finalidade planejar, avaliar e efetuar pesquisas, perícias de incêndios, vistorias, análises de projetos de proteção contra incêndios e pânico na sua área específica de atuação (Art. 18)",
-          "ce": "I - gerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados;",
-          "es": "Execução de atividades técnicas especializadas de bombeiros militares",
-          "go": "Normatização, inspeção, fiscalização, autuação, análise de projetos e perícia de incêndio",
-          "ma": "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
-          "mg": "I - pesquisar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais e dos regulamentos de prevenção de incêndio e de pânico;",
-          "ms": "Normatização, estudo, análise e planejamento das atividades preventivas",
-          "mt": "Estudos e análise de processos",
-          "pa": "Estabelecer diretrizes gerais de segurança contra incêndios e emergências",
-          "pb": "A Diretoria de Atividades Técnicas – DAT – é a unidade gestora, em nível setorial, organizado de forma sistêmica e responsável pelo estudo, análise, planejamento, orientação técnica, normatização, controle e fiscalização das atividades relativas à segurança contra incêndio e controle de pânico, ao cumprimento das disposições legais sobre o assunto e investigação de incêndios e explosões. (Art. 35)",
-          "pe": "Os CATs incumbem-se da execução das normas que disciplinam a segurança das pessoas e de seus bens contra incêndio e pânico, notadamente as vistorias, análises de projetos, cadastramento e credenciamento de empresas, nas áreas territoriais sob sua responsabilidade (Art. 89)",
-          "pi": "A Diretoria de Segurança Contra Incêndio, unidade administrativa responsável pelo planejamento, análise, controle e fiscalização das atividades atinentes à segurança contra incêndio e pânico no âmbito do Estado do Piauí. (Art. 21, Lei nº 7.772/2022)",
-          "pr": "Coordenação, controle e assessoramento sobre prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos",
-          "rj": "Art. 28 — A Diretoria de Serviços Técnicos é o órgão de Direção Setorial do Sistema de Engenharia de Segurança, incumbido de estudar, analisar, planejar, exigir e fiscalizar as atividades atinentes à segurança contra incêndio e pânico, proceder a exame de plantas e a perícias; realizar testes de incombustibilidade; realizar vistorias e emitir pareceres, com autoridade para notificar, multar e interditar, na forma da legislação específica.",
-          "rn": "A Diretoria de Atividades Técnicas (DAT) é o órgão da Corporação que tem por finalidade desenvolver as atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco em todo Estado, conforme previsto na Lei Complementar Estadual nº 601, de 07 de agosto de 2017, e demais normas e instruções técnicas (Art. 44).",
-          "rr": "Gestão das atividades de prevenção, vistoria, análise de projetos e investigação de incêndio",
-          "rs": "Órgão de planejamento, controle e fiscalização das atividades relacionadas à segurança contra incêndio e à pesquisa e investigação de sinistros em âmbito estadual (Regimento Interno, Art. 35)",
-          "sc": "I - a normatização em segurança contra incêndio, pânico e desastre;",
-          "se": "A Diretoria de Atividades Técnicas — DAT é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle de todas as atividades concernentes à segurança contra incêndio e pânico das instalações, edificações e locais de risco, no âmbito do Estado de Sergipe (Art. 29)",
-          "sp": "Executar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos e às medidas preventivas contra incêndios (alínea a)",
-          "to": "O Comando de Atividades Técnicas é encarregado de planejar, controlar e fiscalizar as atividades atinentes à segurança contra incêndio e emergência no Estado. (Art. 16)"
+      ]
+    },
+    {
+      "id": "organ:crbm",
+      "kind": "organ",
+      "chapterTitle": "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",
+      "organKey": "crbm",
+      "label": "Comandos Regionais de Bombeiro Militar",
+      "abbr": "CRBM",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:crbm/finalidade",
+          "proposedText": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:crbm/competencia",
+          "caput": "Compete à CRBM:",
+          "items": [
+            {
+              "text": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:crbm/organizacao",
+          "caput": "CRBM tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante (Oficial da ativa do último Posto — QOEMBM)",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Informática",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Correição",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Planejamento Operacional e Controle de Resultados",
+              "source": "ro"
+            },
+            {
+              "text": "Órgãos de Execução Operacional (BBMs e CIBMs subordinados)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante (Oficial da ativa do último Posto — QOEMBM)\nAdjunto\nSeção de Pessoal\nSeção Administrativa\nSeção de Informática\nSeção de Correição\nSeção de Planejamento Operacional e Controle de Resultados\nÓrgãos de Execução Operacional (BBMs e CIBMs subordinados)"
+        },
+        {
+          "id": "cargo:comandante-regional-de-bombeiro-militar",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante Regional de Bombeiro Militar",
+          "editId": "organ:crbm/cargo:comandante-regional-de-bombeiro-militar",
+          "caput": "Ao Comandante Regional de Bombeiro Militar compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento estratégico, pela direção e pelo emprego das OBMs subordinadas, visando o cumprimento da missão institucional do CBMRO.",
+              "source": "ro"
+            },
+            {
+              "text": "planejar, coordenar e fiscalizar as ações operacionais e administrativas no âmbito de sua competência",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "manter o registro dos principais pontos de riscos existentes nas áreas de atuação, desenvolvendo planos setoriais para protegê-las",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "controlar e fiscalizar as condições e nível de adestramento da tropa sob sua responsabilidade, elaborando e fiscalizando o fiel cumprimento das notas de serviço, notas de instrução e planos operacionais",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "planejar, coordenar e fiscalizar a manutenção do material e equipamento, e manter registros dos bens móveis que estiverem sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "manter o registro estatístico das ocorrências verificadas nas áreas de atuação das Unidades Operacionais (UOp) e Subunidades subordinadas, e realizar estudos para o aperfeiçoamento da prevenção e eficácia do atendimento nas ocorrências",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "planejar, coordenar e fiscalizar o cumprimento da legislação referente à prevenção de incêndio",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "manter, em perfeito funcionamento, o serviço de comunicações das respectivas Unidades e Subunidades, através do Centro de Operações e Comunicações (COC)",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "planejar, coordenar, fiscalizar e executar a movimentação do pessoal lotado no Comando Operacional de Bombeiros",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "adotar medidas que visem a informatização e a agilização das ações administrativas e operacionais das diversas UOp e Subunidades sob seu comando",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "controlar e fiscalizar a carga de bens patrimoniais que estiverem sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "elaborar o Regimento Interno do Comando Operacional de Bombeiros, remetendo-o ao Comandante Geral para aprovação",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "analisar, aprovar e ou modificar, em comum acordo com os Comandantes das Unidades Operacionais e o Subcomandante Geral, as Normas Gerais de Ações das diversas UOp e Subunidades, remetendo as propostas ao Comandante Geral para aprovação",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "encaminhar ao Comandante Geral os Regimentos Internos das UOp e Subunidades subordinadas",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "cumprir e fazer cumprir as normas regulamentares de prevenção e proteção contra incêndio, pânico, salvamento e resgate",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "controlar, fiscalizar e exigir o cumprimento das atividades de instrução das UOp e Subunidades subordinadas",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "praticar atos administrativos necessários ao perfeito funcionamento das atividades operacionais",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "comunicar, de imediato, ao Comandante Geral fatos graves que ocorram nas áreas de suas UOp e Subunidades subordinadas",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "presidir solenidades de passagem de comando de suas UOp e Subunidades, quando não presentes o Comandante ou o Subcomandante Gerais",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "controlar e zelar pela conservação dos bens móveis e imóveis sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "delegar competência aos comandantes de UOp e Subunidades",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "manter contato com as demais organizações da Corporação ou com autoridades e ou órgãos externos, visando um melhor desempenho de suas atividades",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "movimentar oficiais e praças entre as UOp e Subunidades, com prévio conhecimento do Comandante Geral",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "designar comissões para inventariar bens de bombeiros militares desertores, falecidos ou desaparecidos nas áreas de competência das respectivas UOp e Subunidades",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "exercer outras atribuições que lhe forem determinadas pelo Comandante Geral",
+              "source": "cf. CBMAL, RI, Art. 107"
+            },
+            {
+              "text": "propor ao Conselho de Políticas Estratégicas normas, instruções técnicas e procedimentos operacionais para o aprimoramento das atividades da Corporação",
+              "source": "cf. CBMAL, RI, Art. 107"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento estratégico, pela direção e pelo emprego das OBMs subordinadas, visando o cumprimento da missão institucional do CBMRO.\nplanejar, coordenar e fiscalizar as ações operacionais e administrativas no âmbito de sua competência\nmanter o registro dos principais pontos de riscos existentes nas áreas de atuação, desenvolvendo planos setoriais para protegê-las\ncontrolar e fiscalizar as condições e nível de adestramento da tropa sob sua responsabilidade, elaborando e fiscalizando o fiel cumprimento das notas de serviço, notas de instrução e planos operacionais\nplanejar, coordenar e fiscalizar a manutenção do material e equipamento, e manter registros dos bens móveis que estiverem sob sua responsabilidade\nmanter o registro estatístico das ocorrências verificadas nas áreas de atuação das Unidades Operacionais (UOp) e Subunidades subordinadas, e realizar estudos para o aperfeiçoamento da prevenção e eficácia do atendimento nas ocorrências\nplanejar, coordenar e fiscalizar o cumprimento da legislação referente à prevenção de incêndio\nmanter, em perfeito funcionamento, o serviço de comunicações das respectivas Unidades e Subunidades, através do Centro de Operações e Comunicações (COC)\nplanejar, coordenar, fiscalizar e executar a movimentação do pessoal lotado no Comando Operacional de Bombeiros\nadotar medidas que visem a informatização e a agilização das ações administrativas e operacionais das diversas UOp e Subunidades sob seu comando\ncontrolar e fiscalizar a carga de bens patrimoniais que estiverem sob sua responsabilidade\nelaborar o Regimento Interno do Comando Operacional de Bombeiros, remetendo-o ao Comandante Geral para aprovação\nanalisar, aprovar e ou modificar, em comum acordo com os Comandantes das Unidades Operacionais e o Subcomandante Geral, as Normas Gerais de Ações das diversas UOp e Subunidades, remetendo as propostas ao Comandante Geral para aprovação\nencaminhar ao Comandante Geral os Regimentos Internos das UOp e Subunidades subordinadas\ncumprir e fazer cumprir as normas regulamentares de prevenção e proteção contra incêndio, pânico, salvamento e resgate\ncontrolar, fiscalizar e exigir o cumprimento das atividades de instrução das UOp e Subunidades subordinadas\npraticar atos administrativos necessários ao perfeito funcionamento das atividades operacionais\ncomunicar, de imediato, ao Comandante Geral fatos graves que ocorram nas áreas de suas UOp e Subunidades subordinadas\npresidir solenidades de passagem de comando de suas UOp e Subunidades, quando não presentes o Comandante ou o Subcomandante Gerais\ncontrolar e zelar pela conservação dos bens móveis e imóveis sob sua responsabilidade\ndelegar competência aos comandantes de UOp e Subunidades\nmanter contato com as demais organizações da Corporação ou com autoridades e ou órgãos externos, visando um melhor desempenho de suas atividades\nmovimentar oficiais e praças entre as UOp e Subunidades, com prévio conhecimento do Comandante Geral\ndesignar comissões para inventariar bens de bombeiros militares desertores, falecidos ou desaparecidos nas áreas de competência das respectivas UOp e Subunidades\nexercer outras atribuições que lhe forem determinadas pelo Comandante Geral\npropor ao Conselho de Políticas Estratégicas normas, instruções técnicas e procedimentos operacionais para o aprimoramento das atividades da Corporação"
+        },
+        {
+          "id": "cargo:adjunto-do-crbm",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Adjunto do CRBM",
+          "editId": "organ:crbm/cargo:adjunto-do-crbm",
+          "caput": "Ao Adjunto do CRBM compete:",
+          "items": [
+            {
+              "text": "Substituir o Comandante Regional em seus impedimentos.",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliar na direção e controle das atividades regionais.",
+              "source": "ro"
+            },
+            {
+              "text": "assessorar o seu Comandante em todas as suas atribuições",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "tomar as providências necessárias ao fiel cumprimento das ordens do seu Comandante",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "fiscalizar e orientar os trabalhos dos órgãos da Unidade",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "fiscalizar os serviços de escala da Unidade",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "responder pelo Comandante nos seus impedimentos",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "assinar, por delegação do respectivo comandante, os atos administrativos que não forem de exclusividade daquela autoridade e sejam compatíveis com as normas vigentes",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "fiscalizar e controlar a instrução da Unidade",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "responsabilizar-se pela carga da Unidade",
+              "source": "cf. CBMAL, RI, Art. 115"
+            },
+            {
+              "text": "exercer o controle disciplinar dos integrantes da Unidade",
+              "source": "cf. CBMAL, RI, Art. 115"
+            }
+          ],
+          "proposedText": "Substituir o Comandante Regional em seus impedimentos.\nAuxiliar na direção e controle das atividades regionais.\nassessorar o seu Comandante em todas as suas atribuições\ntomar as providências necessárias ao fiel cumprimento das ordens do seu Comandante\nfiscalizar e orientar os trabalhos dos órgãos da Unidade\nfiscalizar os serviços de escala da Unidade\nresponder pelo Comandante nos seus impedimentos\nassinar, por delegação do respectivo comandante, os atos administrativos que não forem de exclusividade daquela autoridade e sejam compatíveis com as normas vigentes\nfiscalizar e controlar a instrução da Unidade\nresponsabilizar-se pela carga da Unidade\nexercer o controle disciplinar dos integrantes da Unidade"
         }
-      },
-      {
-        "id": "competencias",
-        "title": "Competências",
-        "chapterTitle": "DA COMPETÊNCIA",
-        "kind": "incisos",
-        "caput": "Compete ao COT:",
-        "proposedText": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.\nElaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.\nPlanejamento de serviços técnicos\nControle técnico\nSupervisão de atividades técnicas\nEstudo, análise, planejamento de atividades de prevenção\nSegurança contra incêndios e pânico\nPerícias de incêndio e explosão\nRealização de vistorias e emissão de pareceres\nExecução de atividades técnicas especializadas de bombeiros militares\nNormatização, inspeção, fiscalização, autuação, análise de projetos e perícia de incêndio\nControle de hidrantes\nNormatização, estudo, análise e planejamento das atividades preventivas\nOrientação técnica, controle e fiscalização\nAplicação de normas de segurança contra incêndio\nEstudos e análise de processos\nFiscalização\nLegislação e pareceres\nPerícia técnica\nHidrantes\nEstabelecer diretrizes gerais de segurança contra incêndios e emergências\nProteger a vida e reduzir danos ao meio ambiente e ao patrimônio\nCoordenação, controle e assessoramento sobre prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos\nGerenciamento normativo, estudos e pesquisa de incêndios\nTecnologia da informação e comunicação\nGestão das atividades de prevenção, vistoria, análise de projetos e investigação de incêndio",
-        "sources": [
-          "ro",
-          "al",
-          "am",
-          "es",
-          "go",
-          "ms",
-          "mt",
-          "pa",
-          "pr",
-          "rr"
-        ],
-        "sourceExcerpts": {
-          "ro": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.\nElaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.",
-          "al": "Planejamento de serviços técnicos\nControle técnico\nSupervisão de atividades técnicas",
-          "am": "Estudo, análise, planejamento de atividades de prevenção\nSegurança contra incêndios e pânico\nPerícias de incêndio e explosão\nRealização de vistorias e emissão de pareceres",
-          "es": "Execução de atividades técnicas especializadas de bombeiros militares",
-          "go": "Normatização, inspeção, fiscalização, autuação, análise de projetos e perícia de incêndio\nControle de hidrantes",
-          "ms": "Normatização, estudo, análise e planejamento das atividades preventivas\nOrientação técnica, controle e fiscalização\nAplicação de normas de segurança contra incêndio",
-          "mt": "Estudos e análise de processos\nFiscalização\nLegislação e pareceres\nPerícia técnica\nHidrantes",
-          "pa": "Estabelecer diretrizes gerais de segurança contra incêndios e emergências\nProteger a vida e reduzir danos ao meio ambiente e ao patrimônio",
-          "pr": "Coordenação, controle e assessoramento sobre prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos\nGerenciamento normativo, estudos e pesquisa de incêndios\nTecnologia da informação e comunicação",
-          "rr": "Gestão das atividades de prevenção, vistoria, análise de projetos e investigação de incêndio"
+      ]
+    },
+    {
+      "id": "organ:bbm",
+      "kind": "organ",
+      "chapterTitle": "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",
+      "organKey": "bbm",
+      "label": "Batalhão de Bombeiros Militar",
+      "abbr": "BBM",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:bbm/finalidade",
+          "proposedText": "Órgão de execução de atuação operacional ordinária. Atende à demanda de serviços de socorro e de serviços técnicos do CBMRO em sua circunscrição territorial."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:bbm/competencia",
+          "caput": "Compete à BBM:",
+          "items": [
+            {
+              "text": "Órgão de execução de atuação operacional ordinária. Atende à demanda de serviços de socorro e de serviços técnicos do CBMRO em sua circunscrição territorial.",
+              "source": "ro"
+            },
+            {
+              "text": "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão de execução de atuação operacional ordinária. Atende à demanda de serviços de socorro e de serviços técnicos do CBMRO em sua circunscrição territorial.\nEstruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:bbm/organizacao",
+          "caput": "BBM tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comando — Comandante, Subcomandante, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comando e Serviço",
+              "source": "ro"
+            },
+            {
+              "text": "Companhias de Bombeiros Militar — Comandante, Subcomandante, Seção Administrativa, Pelotões de BM (Comandante, Seção Administrativa, Grupos de BM: Comandante, Auxiliares, Destacamentos de BM)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comando — Comandante, Subcomandante, Seção Administrativa\nEstado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)\nSeção de Comando e Serviço\nCompanhias de Bombeiros Militar — Comandante, Subcomandante, Seção Administrativa, Pelotões de BM (Comandante, Seção Administrativa, Grupos de BM: Comandante, Auxiliares, Destacamentos de BM)"
+        },
+        {
+          "id": "cargo:comandante-do-bbm",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do BBM",
+          "editId": "organ:bbm/cargo:comandante-do-bbm",
+          "caput": "Ao Comandante do BBM compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento, direção e emprego do Batalhão em sua circunscrição territorial, cumprindo as missões de socorro e serviços técnicos do CBMRO.",
+              "source": "ro"
+            },
+            {
+              "text": "dirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "praticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "manter a tropa permanentemente adestrada e pronta para o emprego",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "desenvolver o espírito de iniciativa e camaradagem de seus subordinados",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "providenciar a manutenção dos bens patrimoniais sob sua guarda",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "movimentar os oficiais e praças no âmbito das respectivas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "executar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "instaurar sindicância",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "exercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes",
+              "source": "cf. CBMAL, RI, Art. 114"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento, direção e emprego do Batalhão em sua circunscrição territorial, cumprindo as missões de socorro e serviços técnicos do CBMRO.\ndirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação\npraticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades\nmanter a tropa permanentemente adestrada e pronta para o emprego\ncomandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades\ndesenvolver o espírito de iniciativa e camaradagem de seus subordinados\ncomunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos\ncontrolar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade\nprovidenciar a manutenção dos bens patrimoniais sob sua guarda\nelaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade\nmovimentar os oficiais e praças no âmbito das respectivas subunidades\ncontrolar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores\nelaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades\nexecutar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material\ninstaurar sindicância\nexercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes"
+        },
+        {
+          "id": "cargo:comandante-de-companhia-de-bombeiros-militar",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante de Companhia de Bombeiros Militar",
+          "editId": "organ:bbm/cargo:comandante-de-companhia-de-bombeiros-militar",
+          "caput": "Ao Comandante de Companhia de Bombeiros Militar compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento, direção e emprego da Companhia em sua área de atuação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento, direção e emprego da Companhia em sua área de atuação."
         }
-      },
-      {
-        "id": "organizacao",
-        "title": "Organização Interna",
-        "chapterTitle": "DA ORGANIZAÇÃO",
-        "kind": "incisos",
-        "caput": "O COT tem a seguinte estrutura:",
-        "proposedText": "Comandante (QOEMBM ou QCOBM — formação em Engenharia ou Arquitetura quando QCOBM)\nAdjunto\nSeção Administrativa\nSeção de Estudos Técnicos\nSeção de Planejamento, Fiscalização e Suporte Técnico\nCoordenadorias de Atividades Técnicas (CATs) — Art. 42: Coordenador, Adjunto, Seção Administrativa, Seção de Análise de Projetos, Seção de Investigação e Prevenção de Incêndio, Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)\nCoordenadoria de Projetos de Arquitetura e Engenharia — Coordenador, Adjunto, Seção Administrativa, Seção de Fiscalização e Vistorias de Obras, Seção de Projetos, Planejamento e Estudos Técnicos, Seção de Manutenção Predial",
-        "sources": [
-          "ro",
-          "al",
-          "am",
-          "go",
-          "ma",
-          "mt",
-          "pa",
-          "pb",
-          "pe",
-          "pi",
-          "rj",
-          "rn",
-          "rr",
-          "rs"
-        ],
-        "sourceExcerpts": {
-          "ro": "Comandante (QOEMBM ou QCOBM — formação em Engenharia ou Arquitetura quando QCOBM)\nAdjunto\nSeção Administrativa\nSeção de Estudos Técnicos\nSeção de Planejamento, Fiscalização e Suporte Técnico\nCoordenadorias de Atividades Técnicas (CATs) — Art. 42: Coordenador, Adjunto, Seção Administrativa, Seção de Análise de Projetos, Seção de Investigação e Prevenção de Incêndio, Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)\nCoordenadoria de Projetos de Arquitetura e Engenharia — Coordenador, Adjunto, Seção Administrativa, Seção de Fiscalização e Vistorias de Obras, Seção de Projetos, Planejamento e Estudos Técnicos, Seção de Manutenção Predial",
-          "al": "Seção de Estudos e Análises de Projetos\nSeção de Testes, Vistorias e Pareceres\nSeção de Perícias e Pesquisas\nSeção de Hidrantes",
-          "am": "Seção de Exames de Projetos (DST-1)\nSeção de Vistorias e Pareceres (DST-2)\nSeção de Hidrante, Expediente e Apoio (DST-3)\nCentro de Perícia de Incêndio (CPI)",
-          "go": "Seção de Normatização (SEN)\nDepartamento de Inspeções e Credenciamento (DIC)\nDepartamento de Fiscalização e Autuação (DEFAU)\nDepartamento de Normatização e Doutrina (DND)\nDepartamento de Investigação e Perícia Administrativa de Incêndio (DIPI)\nDepartamento de Análises de Projetos (DAP)\nDepartamento de Controle de Hidrantes (DECH)",
-          "ma": "Departamento de Investigação e Prevenção de Incêndio (Seção de Prevenção e Perícia)\nDepartamento de Vistorias e Pareceres (Seção de Análise de Projetos; Seção de Operações)",
-          "mt": "Coordenadoria de Estudos e Análise de Processos (CCIP/1)\nCoordenadoria de Fiscalização (CCIP/2)\nCoordenadoria de Legislação e Pareceres (CCIP/3)\nCoordenadoria de Perícia Técnica (CCIP/4)\nCoordenadoria de Hidrantes (CCIP/5)",
-          "pa": "Seção de Fiscalização e Vistoria Técnica\nSeção de Análise de Projetos\nSeção de Perícia de Incêndio\nSeção de Credenciamento de Empresas e Profissionais",
-          "pb": "Conselho Técnico Normativo (CTN)\nConselho Técnico Deliberativo (CTD)\nComissão Interna de Análise Técnica (CIAT)\nSeção de Legislação de Prevenção contra Incêndio (DAT/1)\nSeção de Segurança contra Incêndio (DAT/2)",
-          "pe": "CAT/RMR (Recife e RMR)\nCAT/ZM (Zona da Mata Norte e Sul)\nCAT/Agreste (Agreste Setentrional, Central e Meridional)\nCAT/Sertão I (Pajeú, Moxotó, Itaparica)\nCAT/Sertão II (Sertão Central, Araripe, São Francisco)",
-          "pi": "Seção de Análise de Projetos (DSCI-1)\nSeção de Vistorias e Pareceres (DSCI-2)\nSeção de Fiscalização (DSCI-3)\nSeção de Apoio Técnico (DSCI-4)\nSeção de Estatística e Arquivo (DSCI-5)",
-          "rj": "Seção de Estudos e Projetos (DST/1)\nSeção de Perícias e Testes (DST/2)\nSeção de Vistorias e Pareceres (DST/3)\nSeção de Hidrantes (DST/4)\nSeção de Expediente (DST/5)\nLaboratório Químico (LQ)",
-          "rn": "Centro de Análise de Risco de Incêndio e Pânico (CARIP)\nCentro de Apoio Técnico Administrativo (CATA)\nSeção de Tecnologia da Informação\nCentro de Vistorias\nCentro de Fiscalização\n1º Centro de Atividades Técnicas — Mossoró\n2º Centro de Atividades Técnicas — Caicó",
-          "rr": "Subdiretoria de Hidrantes\nCentro de Vistoria e Análise de Projeto (CVAP)\nCentro de Investigação e Prevenção de Incêndio (CIPI)\nSubdiretoria de Expediente",
-          "rs": "Divisão Administrativa (DAdm)\nDivisão de Gestão e Normatização (DGN)\nDivisão de Pesquisa e Investigação de Sinistros (DPIS)"
+      ]
+    },
+    {
+      "id": "organ:cibm",
+      "kind": "organ",
+      "chapterTitle": "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",
+      "organKey": "cibm",
+      "label": "Companhia Independente de Bombeiros Militar",
+      "abbr": "CIBM",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cibm/finalidade",
+          "proposedText": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cibm/competencia",
+          "caput": "Compete à CIBM:",
+          "items": [
+            {
+              "text": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cibm/organizacao",
+          "caput": "CIBM tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comando — Comandante, Subcomandante, Seção Administrativa, Seção de Inteligência, Seção de Operações",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comando e Serviço",
+              "source": "ro"
+            },
+            {
+              "text": "Pelotões de Bombeiros Militar — Comandante, Seção Administrativa, Grupos de BM (Comandante, Auxiliares, Destacamentos de BM)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comando — Comandante, Subcomandante, Seção Administrativa, Seção de Inteligência, Seção de Operações\nSeção de Comando e Serviço\nPelotões de Bombeiros Militar — Comandante, Seção Administrativa, Grupos de BM (Comandante, Auxiliares, Destacamentos de BM)"
+        },
+        {
+          "id": "cargo:comandante-da-cibm",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante da CIBM",
+          "editId": "organ:cibm/cargo:comandante-da-cibm",
+          "caput": "Ao Comandante da CIBM compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento, direção e emprego da Companhia em sua circunscrição territorial.",
+              "source": "ro"
+            },
+            {
+              "text": "dirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "praticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "manter a tropa permanentemente adestrada e pronta para o emprego",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "desenvolver o espírito de iniciativa e camaradagem de seus subordinados",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "providenciar a manutenção dos bens patrimoniais sob sua guarda",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "movimentar os oficiais e praças no âmbito das respectivas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "executar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "instaurar sindicância",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "exercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes",
+              "source": "cf. CBMAL, RI, Art. 114"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento, direção e emprego da Companhia em sua circunscrição territorial.\ndirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação\npraticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades\nmanter a tropa permanentemente adestrada e pronta para o emprego\ncomandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades\ndesenvolver o espírito de iniciativa e camaradagem de seus subordinados\ncomunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos\ncontrolar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade\nprovidenciar a manutenção dos bens patrimoniais sob sua guarda\nelaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade\nmovimentar os oficiais e praças no âmbito das respectivas subunidades\ncontrolar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores\nelaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades\nexecutar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material\ninstaurar sindicância\nexercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes"
         }
-      },
-      {
-        "id": "cargos_atribuicoes",
-        "title": "Atribuições dos Cargos",
-        "chapterTitle": "DAS ATRIBUIÇÕES DOS CARGOS",
-        "kind": "cargos",
-        "caput": null,
-        "proposedText": "Comandante do COT:\n  Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico, bem como a elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO. Subordinado à Diretoria de Planejamento Operacional.\n\nAdjunto do COT:\n  Substituir o Comandante do COT em seus impedimentos.\n  Auxiliar no planejamento e controle das atividades técnicas.\n\nCoordenador de Atividades Técnicas (CAT):\n  Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.\n  Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.\n  Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT).\n\nCoordenador de Projetos de Arquitetura e Engenharia:\n  Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial.",
-        "sources": [
-          "ro",
-          "ac",
-          "al",
-          "am",
-          "ap",
-          "ba",
-          "ce",
-          "es",
-          "go",
-          "mg",
-          "ms",
-          "mt",
-          "pa",
-          "pb",
-          "pe",
-          "pi",
-          "pr",
-          "rn",
-          "rr",
-          "rs",
-          "sc",
-          "se",
-          "sp",
-          "to"
-        ],
-        "sourceExcerpts": {
-          "ro": "Comandante do COT:\n  Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico, bem como a elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO. Subordinado à Diretoria de Planejamento Operacional.\n\nAdjunto do COT:\n  Substituir o Comandante do COT em seus impedimentos.\n  Auxiliar no planejamento e controle das atividades técnicas.\n\nCoordenador de Atividades Técnicas (CAT):\n  Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.\n  Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.\n  Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT).\n\nCoordenador de Projetos de Arquitetura e Engenharia:\n  Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial.",
-          "ac": "Diretor de Atividades Técnicas e Operacionais:\n  Funções gerenciais dos meios administrativo-operacionais e auxílio aos órgãos de direção geral e executiva (Art. 12)",
-          "al": "Diretor de Atividades Técnicas:\n  Prevenção e segurança contra incêndio",
-          "am": "Diretor de Serviços Técnicos:\n  Estudo, análise, planejamento, exigência e fiscalização da prevenção e segurança contra incêndios e pânico\n  Perícias de incêndio e explosão; vistorias e pareceres",
-          "ap": "Assessor Técnico:\n  Órgão de assessoramento destinado a prestar assessoria, consultoria, recomendação e orientação técnica e política e a expedir nota técnica para auxiliar as decisões dos órgãos de direção em assuntos técnicos especializados (LC nº 180/2026, Art. 6º, §2º)",
-          "ba": "Comandante de Segurança Contra Incêndio:\n  a) planejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio (Art. 49 IV a)\n  b) planejar, executar e controlar as ações de perícia de incêndio (Art. 49 IV b)\n  c) promover ações de prevenção contra incêndio (Art. 49 IV c)\n  d) propor estudos e pesquisas que viabilizem a melhoria das atividades de segurança contra incêndio, elaborando diretrizes da política institucional relativas à sua área de atuação (Art. 49 IV d)\n  e) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 IV e)",
-          "ce": "Coordenador de Atividades Técnicas:\n  Controle dos requisitos técnicos contra incêndios e projetos de edificações\n  Pesquisa científica e avaliação do desempenho operacional\n  Analisar projetos, vistorias e pareceres técnicos; controlar hidrantes",
-          "es": "Diretor do Centro de Atividades Técnicas:\n  Planejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio\n  Realizar perícias de incêndio e vistorias",
-          "go": "Comandante de Atividades Técnicas:\n  Atividades técnicas de prevenção e análise",
-          "mg": "Diretor do Centro de Atividades Técnicas:\n  Pesquisa, análise, normatização e fiscalização\n  Perícias de incêndio; 2ª instância em análise de projetos de prevenção",
-          "ms": "Diretor de Atividades Técnicas:\n  Normatização, estudo, análise e planejamento de atividades preventivas e de segurança contra incêndio",
-          "mt": "Diretor de Segurança Contra Incêndio e Pânico:\n  Atividades de prevenção contra incêndio e pânico",
-          "pa": "Chefe do Departamento-Geral de Segurança contra Incêndios e Emergências (DGSCI):\n  Diretrizes gerais de segurança contra incêndios e emergências\n  Proteção da vida e redução de danos ao meio ambiente e ao patrimônio",
-          "pb": "Diretor de Atividades Técnicas:\n  Estudo, análise, planejamento, normatização, controle e fiscalização das atividades de SCI/CP e investigação de incêndios (Art. 35).",
-          "pe": "Comandante do CAT:\n  Execução das normas de segurança contra incêndio e pânico; vistorias, análises de projetos, cadastramento e credenciamento (Art. 89)",
-          "pi": "Diretor de Segurança Contra Incêndio:\n  Planejamento, análise, controle e fiscalização das atividades de segurança contra incêndio e pânico (Art. 21, 7.772)",
-          "pr": "Diretor de Atividades Técnicas:\n  Coordenação e assessoramento em prevenção e combate a incêndios e desastres\n  Gerenciamento normativo e estudos de incêndios\n  Tecnologia da informação e comunicação",
-          "rn": "Diretor de Atividades Técnicas:\n  Desenvolvimento das atividades de prevenção contra incêndio e controle de pânico nas edificações e áreas de risco em todo o Estado, conforme LC 601/2017 e normas técnicas (Art. 44)",
-          "rr": "Diretor de Prevenção e Serviços Técnicos:\n  A Diretoria de Prevenção e Serviços Técnicos tem por competência a gestão das atividades de prevenção, vistoria, análise de projetos e investigação de incêndio da corporação (LC nº 52/2001, Art. 33)",
-          "rs": "Diretor do Departamento de Segurança, Prevenção e Proteção Contra Incêndios:\n  Planejamento, controle e fiscalização da segurança contra incêndios e investigação de sinistros",
-          "sc": "Diretor de Segurança Contra Incêndio:\n  Planejamento, coordenação, fiscalização e controle da segurança contra incêndio",
-          "se": "Diretor de Atividades Técnicas:\n  Gestão e controle de segurança contra incêndio e pânico",
-          "sp": "Chefe da 6ª Seção — Serviço Técnico (B/6):\n  Executar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos e às medidas preventivas contra incêndios (Lei nº 616/1974, Art. 40, §2º, 7, a)\n  Proceder a exames de plantas e a perícias (Lei nº 616/1974, Art. 40, §2º, 7, b)\n  Realizar testes de incombustibilidade (Lei nº 616/1974, Art. 40, §2º, 7, c)\n  Realizar vistorias e emitir pareceres (Lei nº 616/1974, Art. 40, §2º, 7, d)\n  Supervisionar a instalação da rede de hidrantes públicos (Lei nº 616/1974, Art. 40, §2º, 7, e)",
-          "to": "Comandante de Atividades Técnicas:\n  Planejamento, controle e fiscalização das atividades de SCI e emergência (Art. 16)."
+      ]
+    },
+    {
+      "id": "organ:gbm",
+      "kind": "organ",
+      "chapterTitle": "DO GRUPO DE BOMBEIROS MILITAR (GBM)",
+      "organKey": "gbm",
+      "label": "Grupo de Bombeiros Militar",
+      "abbr": "GBM",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:gbm/finalidade",
+          "proposedText": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:gbm/competencia",
+          "caput": "Compete à GBM:",
+          "items": [
+            {
+              "text": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais.",
+              "source": "ro"
+            },
+            {
+              "text": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais.\nPrevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:gbm/organizacao",
+          "caput": "GBM tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliares",
+              "source": "ro"
+            },
+            {
+              "text": "Destacamentos de Bombeiros Militar",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante\nAuxiliares\nDestacamentos de Bombeiros Militar"
+        },
+        {
+          "id": "cargo:comandante-do-gbm",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do GBM",
+          "editId": "organ:gbm/cargo:comandante-do-gbm",
+          "caput": "Ao Comandante do GBM compete:",
+          "items": [
+            {
+              "text": "Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais."
         }
-      },
-      {
-        "id": "disposicoes_finais",
-        "title": "Disposições Finais",
-        "chapterTitle": "DAS DISPOSIÇÕES FINAIS",
-        "kind": "prose",
-        "caput": null,
-        "proposedText": "Os casos omissos neste Regimento Interno serão resolvidos pelo Comandante-Geral do CBMRO.\nEste Regimento Interno entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
-        "sources": [],
-        "sourceExcerpts": {}
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "id": "organ:bbs",
+      "kind": "organ",
+      "chapterTitle": "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",
+      "organKey": "bbs",
+      "label": "Batalhão de Busca e Salvamento",
+      "abbr": "BBS",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:bbs/finalidade",
+          "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Atende à demanda de socorro especializado do CBMRO em sua circunscrição territorial."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:bbs/competencia",
+          "caput": "Compete à BBS:",
+          "items": [
+            {
+              "text": "Órgão de execução de atuação operacional especializada terrestre. Atende à demanda de socorro especializado do CBMRO em sua circunscrição territorial.",
+              "source": "ro"
+            },
+            {
+              "text": "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Atende à demanda de socorro especializado do CBMRO em sua circunscrição territorial.\nEstruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:bbs/organizacao",
+          "caput": "BBS tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comando — Comandante, Subcomandante, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comando e Serviço",
+              "source": "ro"
+            },
+            {
+              "text": "Companhia de Busca e Salvamento — Comandante, Subcomandante, Seção Administrativa, Pelotão de Busca e Salvamento, Pelotão de Busca, Resgate e Salvamento com Cães",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comando — Comandante, Subcomandante, Seção Administrativa\nEstado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)\nSeção de Comando e Serviço\nCompanhia de Busca e Salvamento — Comandante, Subcomandante, Seção Administrativa, Pelotão de Busca e Salvamento, Pelotão de Busca, Resgate e Salvamento com Cães"
+        },
+        {
+          "id": "cargo:comandante-do-bbs",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do BBS",
+          "editId": "organ:bbs/cargo:comandante-do-bbs",
+          "caput": "Ao Comandante do BBS compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões de busca, resgate e salvamento.",
+              "source": "ro"
+            },
+            {
+              "text": "dirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "praticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "manter a tropa permanentemente adestrada e pronta para o emprego",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "desenvolver o espírito de iniciativa e camaradagem de seus subordinados",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "providenciar a manutenção dos bens patrimoniais sob sua guarda",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "movimentar os oficiais e praças no âmbito das respectivas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "executar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "instaurar sindicância",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "exercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes",
+              "source": "cf. CBMAL, RI, Art. 114"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões de busca, resgate e salvamento.\ndirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação\npraticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades\nmanter a tropa permanentemente adestrada e pronta para o emprego\ncomandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades\ndesenvolver o espírito de iniciativa e camaradagem de seus subordinados\ncomunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos\ncontrolar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade\nprovidenciar a manutenção dos bens patrimoniais sob sua guarda\nelaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade\nmovimentar os oficiais e praças no âmbito das respectivas subunidades\ncontrolar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores\nelaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades\nexecutar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material\ninstaurar sindicância\nexercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes"
+        }
+      ]
+    },
+    {
+      "id": "organ:bifea",
+      "kind": "organ",
+      "chapterTitle": "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)",
+      "organKey": "bifea",
+      "label": "Batalhão de Incêndio Florestal e Emergências Ambientais",
+      "abbr": "BIFEA",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:bifea/finalidade",
+          "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:bifea/competencia",
+          "caput": "Compete à BIFEA:",
+          "items": [
+            {
+              "text": "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:bifea/organizacao",
+          "caput": "BIFEA tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comando — Comandante, Subcomandante, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comando e Serviço",
+              "source": "ro"
+            },
+            {
+              "text": "Companhia de Incêndio Florestal — Comandante, Subcomandante, Seção Administrativa, Pelotão de Incêndio Florestal (Grupos de Incêndio Florestal, Destacamentos)",
+              "source": "ro"
+            },
+            {
+              "text": "Companhia de Emergências Ambientais — Comandante, Subcomandante, Seção Administrativa, Pelotão de Emergências Ambientais (Grupos de Emergências Ambientais, Destacamentos)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comando — Comandante, Subcomandante, Seção Administrativa\nEstado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)\nSeção de Comando e Serviço\nCompanhia de Incêndio Florestal — Comandante, Subcomandante, Seção Administrativa, Pelotão de Incêndio Florestal (Grupos de Incêndio Florestal, Destacamentos)\nCompanhia de Emergências Ambientais — Comandante, Subcomandante, Seção Administrativa, Pelotão de Emergências Ambientais (Grupos de Emergências Ambientais, Destacamentos)"
+        },
+        {
+          "id": "cargo:comandante-do-bifea",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do BIFEA",
+          "editId": "organ:bifea/cargo:comandante-do-bifea",
+          "caput": "Ao Comandante do BIFEA compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões de incêndio florestal e emergências ambientais.",
+              "source": "ro"
+            },
+            {
+              "text": "dirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "praticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "manter a tropa permanentemente adestrada e pronta para o emprego",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "desenvolver o espírito de iniciativa e camaradagem de seus subordinados",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "providenciar a manutenção dos bens patrimoniais sob sua guarda",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "movimentar os oficiais e praças no âmbito das respectivas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "executar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "instaurar sindicância",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "exercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes",
+              "source": "cf. CBMAL, RI, Art. 114"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões de incêndio florestal e emergências ambientais.\ndirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação\npraticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades\nmanter a tropa permanentemente adestrada e pronta para o emprego\ncomandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades\ndesenvolver o espírito de iniciativa e camaradagem de seus subordinados\ncomunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos\ncontrolar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade\nprovidenciar a manutenção dos bens patrimoniais sob sua guarda\nelaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade\nmovimentar os oficiais e praças no âmbito das respectivas subunidades\ncontrolar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores\nelaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades\nexecutar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material\ninstaurar sindicância\nexercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes"
+        }
+      ]
+    },
+    {
+      "id": "organ:boa",
+      "kind": "organ",
+      "chapterTitle": "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",
+      "organKey": "boa",
+      "label": "Batalhão de Operações Aéreas",
+      "abbr": "BOA",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:boa/finalidade",
+          "proposedText": "Órgão de execução de atuação operacional especializada aérea. Estruturado em Companhia de Operações Aéreas."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:boa/competencia",
+          "caput": "Compete à BOA:",
+          "items": [
+            {
+              "text": "Órgão de execução de atuação operacional especializada aérea. Estruturado em Companhia de Operações Aéreas.",
+              "source": "ro"
+            },
+            {
+              "text": "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão de execução de atuação operacional especializada aérea. Estruturado em Companhia de Operações Aéreas.\nPara fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:boa/organizacao",
+          "caput": "BOA tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comando — Comandante, Subcomandante, Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Estado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comando e Serviço",
+              "source": "ro"
+            },
+            {
+              "text": "Companhia de Operações Aéreas — Comandante, Subcomandante, Seção Administrativa, Pelotão de Operações Aéreas (Grupos de Operações Aéreas, Destacamentos)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comando — Comandante, Subcomandante, Seção Administrativa\nEstado-Maior — B1 (Pessoal), B2 (Inteligência), B3 (Operações), B4 (Logística), B5 (Relações Externas), B6 (Justiça e Disciplina)\nSeção de Comando e Serviço\nCompanhia de Operações Aéreas — Comandante, Subcomandante, Seção Administrativa, Pelotão de Operações Aéreas (Grupos de Operações Aéreas, Destacamentos)"
+        },
+        {
+          "id": "cargo:comandante-do-boa",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do BOA",
+          "editId": "organ:boa/cargo:comandante-do-boa",
+          "caput": "Ao Comandante do BOA compete:",
+          "items": [
+            {
+              "text": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões aéreas.",
+              "source": "ro"
+            },
+            {
+              "text": "Gestor da Unidade Aérea Pública (UAP) nos termos do Regulamento Brasileiro de Aviação Civil (RBAC).",
+              "source": "ro"
+            },
+            {
+              "text": "dirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "praticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "manter a tropa permanentemente adestrada e pronta para o emprego",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "desenvolver o espírito de iniciativa e camaradagem de seus subordinados",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "comunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "providenciar a manutenção dos bens patrimoniais sob sua guarda",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "movimentar os oficiais e praças no âmbito das respectivas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "controlar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "elaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "executar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "instaurar sindicância",
+              "source": "cf. CBMAL, RI, Art. 114"
+            },
+            {
+              "text": "exercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes",
+              "source": "cf. CBMAL, RI, Art. 114"
+            }
+          ],
+          "proposedText": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões aéreas.\nGestor da Unidade Aérea Pública (UAP) nos termos do Regulamento Brasileiro de Aviação Civil (RBAC).\ndirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação\npraticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades\nmanter a tropa permanentemente adestrada e pronta para o emprego\ncomandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades\ndesenvolver o espírito de iniciativa e camaradagem de seus subordinados\ncomunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos\ncontrolar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade\nprovidenciar a manutenção dos bens patrimoniais sob sua guarda\nelaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade\nmovimentar os oficiais e praças no âmbito das respectivas subunidades\ncontrolar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores\nelaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades\nexecutar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material\ninstaurar sindicância\nexercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes"
+        }
+      ]
+    },
+    {
+      "id": "finais",
+      "kind": "prose",
+      "chapterTitle": "DAS DISPOSIÇÕES FINAIS",
+      "editId": "finais",
+      "proposedText": "Os casos omissos neste Regimento Interno serão resolvidos pelo Comandante-Geral do CBMRO.\nEste Regimento Interno entra em vigor na data de sua publicação, revogadas as disposições em contrário."
+    }
+  ]
 }
