@@ -32,58 +32,72 @@ export function normalizeInciso(text, index, total) {
   return t + suffix
 }
 
-export function buildArticles(organData, edits = {}) {
+// Articula a estrutura hierárquica: chapters[] (prose | incisos | organ).
+// Numeração de artigos contínua; capítulos e seções em romano (seção reseta por capítulo).
+// edits[editId] (string) sobrepõe o texto de um nó-folha; ao editar, a fonte vira null.
+export function buildArticles(structure, edits = {}) {
   const articles = []
   let articleCounter = 0
   let chapterCounter = 0
 
-  for (const section of organData.sections) {
-    const text = edits[section.id] ?? section.proposedText ?? ''
-    const lines = text.split('\n')
-    let firstOfSection = true
+  for (const chapter of structure.chapters) {
+    let firstOfChapter = true
+    let sectionCounter = 0
 
-    const push = (caput, incisos) => {
-      articleCounter += 1
-      let chapterTitle = null
-      let chapterNumber = null
-      if (firstOfSection && section.chapterTitle) {
-        chapterCounter += 1
-        chapterTitle = section.chapterTitle
-        chapterNumber = chapterCounter
+    const emitLeaf = (leaf, isSection) => {
+      let firstOfSection = true
+
+      const pushArticle = (caput, incisos) => {
+        articleCounter += 1
+        const art = {
+          number: articleCounter, caput, incisos,
+          chapterNumber: null, chapterTitle: null,
+          sectionNumber: null, sectionTitle: null,
+        }
+        if (firstOfChapter) {
+          chapterCounter += 1
+          art.chapterNumber = chapterCounter
+          art.chapterTitle = chapter.chapterTitle ?? null
+          firstOfChapter = false
+        }
+        if (isSection && firstOfSection) {
+          sectionCounter += 1
+          art.sectionNumber = sectionCounter
+          art.sectionTitle = leaf.sectionTitle ?? null
+          firstOfSection = false
+        }
+        articles.push(art)
       }
-      firstOfSection = false
-      articles.push({ number: articleCounter, chapterNumber, chapterTitle, caput, incisos })
+
+      if (leaf.kind === 'prose') {
+        const text = edits[leaf.editId] ?? leaf.proposedText ?? ''
+        for (const line of text.split('\n')) {
+          const c = line.trim()
+          if (c) pushArticle(c, [])
+        }
+      } else if (leaf.kind === 'incisos') {
+        const edited = edits[leaf.editId]
+        let items
+        if (edited != null) {
+          items = edited.split('\n').map(l => l.trim()).filter(Boolean)
+            .map(t => ({ text: t, source: null }))
+        } else {
+          items = (leaf.items ?? []).filter(it => (it.text ?? '').trim())
+        }
+        const incisos = items.map((it, i) => ({
+          text: normalizeInciso(it.text, i, items.length),
+          source: it.source ?? null,
+        }))
+        if (incisos.length || !isSection) {
+          pushArticle(leaf.caput ?? '', incisos)
+        }
+      }
     }
 
-    if (section.kind === 'prose') {
-      for (const line of lines) {
-        const c = line.trim()
-        if (c) push(c, [])
-      }
-    } else if (section.kind === 'incisos') {
-      const raw = lines.map(l => l.trim()).filter(Boolean)
-      const incisos = raw.map((t, i) => normalizeInciso(t, i, raw.length))
-      push(section.caput ?? '', incisos)
-    } else if (section.kind === 'cargos') {
-      let current = null
-      const flush = () => {
-        if (current) {
-          const incisos = current.raw.map((t, i) => normalizeInciso(t, i, current.raw.length))
-          push(current.caput, incisos)
-          current = null
-        }
-      }
-      for (const line of lines) {
-        const c = line.trim()
-        if (!c) continue
-        if (c.endsWith(':')) {
-          flush()
-          current = { caput: `Ao ${c.slice(0, -1).trim()} compete:`, raw: [] }
-        } else if (current) {
-          current.raw.push(c)
-        }
-      }
-      flush()
+    if (chapter.kind === 'organ') {
+      for (const section of chapter.sections) emitLeaf(section, true)
+    } else {
+      emitLeaf(chapter, false)
     }
   }
 
