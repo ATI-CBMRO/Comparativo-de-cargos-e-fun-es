@@ -1,275 +1,222 @@
 """
 build_minuta_structure.py — Portal CBM
 
-Gera database/minuta_structure.json: estrutura ARTICULADA do regimento interno
-(6 capítulos por órgão), texto proposto, fontes e trechos por estado.
+Gera database/minuta_structure.json: minuta ARTICULADA e HIERÁRQUICA do Regimento
+Interno da estrutura OPERACIONAL do CBMRO — do topo (DPO/COT/DOE) à menor fração
+(Companhia/GBM). Um capítulo por órgão; uma seção por função (cargo).
 
-Entrada: database/comparativo_dpo_cot.json
-Saída:   database/minuta_structure.json
+Fontes:
+  - database/organs_detail/ro.json        (estrutura + competências RO verbatim)
+  - scripts/minuta_enrichment.py          (competências curadas de outros CBMs, rotuladas)
 
+Saída: database/minuta_structure.json
 Rodar: python scripts/build_minuta_structure.py
 """
 
 import json
 import re
 import sys
-import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from minuta_enrichment import enrich_for  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE_DIR = Path(__file__).parent.parent
-IN_JSON  = BASE_DIR / "database" / "comparativo_dpo_cot.json"
+RO_JSON  = BASE_DIR / "database" / "organs_detail" / "ro.json"
 OUT_JSON = BASE_DIR / "database" / "minuta_structure.json"
 
-SECTIONS = [
-    {"id": "preliminares",       "title": "Disposições Preliminares", "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES", "kind": "prose"},
-    {"id": "finalidade",         "title": "Finalidade",               "chapterTitle": "DA FINALIDADE",                 "kind": "prose"},
-    {"id": "competencias",       "title": "Competências",             "chapterTitle": "DA COMPETÊNCIA",                "kind": "incisos"},
-    {"id": "organizacao",        "title": "Organização Interna",      "chapterTitle": "DA ORGANIZAÇÃO",                "kind": "incisos"},
-    {"id": "cargos_atribuicoes", "title": "Atribuições dos Cargos",   "chapterTitle": "DAS ATRIBUIÇÕES DOS CARGOS",    "kind": "cargos"},
-    {"id": "disposicoes_finais", "title": "Disposições Finais",       "chapterTitle": "DAS DISPOSIÇÕES FINAIS",        "kind": "prose"},
+TITLE = "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO"
+
+# Ordem dos capítulos = ordem de subordinação (topo → menor fração).
+# (organ_key, CHAPTER_TITLE, artigo_definido)
+ORGAN_ORDER = [
+    ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A"),
+    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
+    ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A"),
+    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "O"),
+    ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O"),
+    ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A"),
+    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O"),
+    ("bbs",   "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                 "O"),
+    ("bifea", "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
+    ("boa",   "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                   "O"),
 ]
 
-ORGAN_LABELS = {"dpo": "Diretoria de Planejamento Operacional", "cot": "Comando de Operações Técnicas"}
-ORGAN_ABBR   = {"dpo": "DPO", "cot": "COT"}
-ORGAN_ART    = {"dpo": "A",  "cot": "O"}           # artigo definido
-ORGAN_DE     = {"dpo": "da", "cot": "do"}          # contração de "de"
-ORGAN_GEN    = {"dpo": "a",  "cot": "o"}           # sufixo de gênero (subordinad-a/o)
-ORGAN_CAPUT  = {"dpo": "à DPO", "cot": "ao COT"}   # complemento do caput de competência
-
-DISP_FINAIS = "\n".join([
-    "Os casos omissos neste Regimento Interno serão resolvidos pelo Comandante-Geral do CBMRO.",
-    "Este Regimento Interno entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
-])
+DISP_FINAIS = (
+    "Os casos omissos neste Regimento Interno serão resolvidos pelo Comandante-Geral do CBMRO.\n"
+    "Este Regimento Interno entra em vigor na data de sua publicação, revogadas as disposições em contrário."
+)
 
 
 def normalize(text: str) -> str:
-    text = re.sub(r"^\s*[\dIVXivx]+[.)]\s*", "", text.strip())
-    return text.strip().lower()
+    t = re.sub(r"^\s*[\dIVXivx]+[.)]\s*", "", (text or "").strip())
+    return t.strip().lower()
 
 
-def _ascii_lower(s: str) -> str:
-    return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn").lower()
+def _dedup_keep_order(items):
+    """items: list[{text, source}] -> remove duplicatas por texto normalizado, RO primeiro."""
+    seen, out = set(), []
+    for it in items:
+        k = normalize(it["text"])
+        if k and k not in seen:
+            seen.add(k)
+            out.append(it)
+    return out
 
 
-def _first_lower(s: str) -> str:
-    return (s[:1].lower() + s[1:]) if s else s
+def ro_items(texts, source="ro"):
+    return [{"text": t.strip(), "source": source} for t in texts if (t or "").strip()]
 
 
-_LEGAL_MARKERS = re.compile(r"\d|§|\bart\b|\blei\b|\blc\b|\bdecreto\b|red\.")
+def proposed_text(items):
+    return "\n".join(it["text"] for it in items)
 
 
-def _other_state_tokens(all_states: list) -> set:
-    toks = set()
-    for s in all_states:
-        if s.get("id") == "ro":
-            continue
-        nm = _ascii_lower(s.get("name", "")).strip()
-        if nm and nm != "para":
-            toks.add(nm)
-    return toks
-
-
-def is_generic_competencia(text: str, other_state_names: set) -> bool:
-    low = _ascii_lower(text)
-    if _LEGAL_MARKERS.search(low):
-        return False
-    if re.match(r"^[ivxlcdm]+\s*[-–.)]", low):
-        return False
-    if re.search(r"\(\s*al[ií]nea|\(\s*art|\(\s*lei", low):
-        return False
-    for m in re.finditer(r"cbm([a-z]{2})", low):
-        if m.group(1) != "ro":
-            return False
-    for name in other_state_names:
-        if re.search(r"\b" + re.escape(name) + r"\b", low):
-            return False
-    return True
-
-
-def organs_of(state: dict, group_key: str) -> list:
-    v = state.get(group_key)
-    return v if isinstance(v, list) else []
-
-
-def _state_by_id(all_states: list, sid: str) -> dict:
-    for s in all_states:
-        if s.get("id") == sid:
-            return s
-    return {}
-
-
-def _ro_first_organ(all_states: list, key: str) -> dict:
-    orgs = organs_of(_state_by_id(all_states, "ro"), key)
-    return orgs[0] if orgs else {}
-
-
-# ── Extratores por estado (alimentam proposedText fallback e sourceExcerpts) ──
-
-def extract_finalidade(organs: list) -> str:
-    for o in organs:
-        for a in (o.get("atribuicoes") or []):
-            if a.strip():
-                return a.strip()
-    return ""
-
-
-def extract_competencias(organs: list) -> str:
-    seen, items = set(), []
-    for o in organs:
-        for a in (o.get("atribuicoes") or []):
-            key = normalize(a)
-            if key and key not in seen:
-                seen.add(key)
-                items.append(a.strip())
-    return "\n".join(items)
-
-
-def extract_organizacao(organs: list) -> str:
-    for o in organs:
-        desdb = o.get("desdobramentos") or []
-        if desdb:
-            return "\n".join(desdb)
-    return ""
-
-
-def extract_cargos(organs: list) -> str:
-    seen, blocks = set(), []
-    for o in organs:
-        for c in (o.get("cargos") or []):
-            name = (c.get("cargo") or "").strip()
-            if not name or name.lower() in seen:
-                continue
-            seen.add(name.lower())
-            atrib = c.get("atribuicoes") or []
-            if not atrib:
-                continue
-            lines = [f"{name}:"] + [f"  {a.strip()}" for a in atrib]
-            blocks.append("\n".join(lines))
-    return "\n\n".join(blocks)
-
-
-# ── Construtores de seção ──
-
-def build_preliminares(key: str, ro: dict) -> str:
-    label, abbr = ORGAN_LABELS[key], ORGAN_ABBR[key]
-    sub  = ro.get("subordinadoA", "")
-    base = ro.get("baseLegal", "")
-    objeto = (f"Este Regimento Interno disciplina a organização, as competências e o "
-              f"funcionamento {ORGAN_DE[key]} {label} ({abbr}), no âmbito do Corpo de "
-              f"Bombeiros Militar do Estado de Rondônia.")
-    legal = f"{ORGAN_ART[key]} {label} ({abbr}) é subordinad{ORGAN_GEN[key]} a {sub}" if sub \
-        else f"{ORGAN_ART[key]} {label} ({abbr}) integra a estrutura do CBMRO"
-    if base:
-        legal += f", nos termos da {base}"
-    legal += "."
-    return "\n".join([objeto, legal])
-
-
-def build_finalidade(key: str, ro: dict) -> str:
-    fin = extract_finalidade([ro]) if ro else ""
-    if not fin:
-        return ""
-    return f"{ORGAN_ART[key]} {ORGAN_LABELS[key]} ({ORGAN_ABBR[key]}) é o {_first_lower(fin)}"
-
-
-def build_competencias(key: str, all_states: list):
-    other = _other_state_tokens(all_states)
-    items, seen, sources, excerpts = [], set(), [], {}
-    ro_added = False
-    for o in organs_of(_state_by_id(all_states, "ro"), key):
-        for a in (o.get("atribuicoes") or []):
-            a, kk = a.strip(), normalize(a)
-            if a and kk not in seen:
-                seen.add(kk); items.append(a); ro_added = True
-    if ro_added:
-        sources.append("ro")
-        excerpts["ro"] = extract_competencias(organs_of(_state_by_id(all_states, "ro"), key))
-    for s in all_states:
-        if s["id"] == "ro":
-            continue
-        added = False
-        for o in organs_of(s, key):
-            for a in (o.get("atribuicoes") or []):
-                a, kk = a.strip(), normalize(a)
-                if not a or kk in seen:
-                    continue
-                if not is_generic_competencia(a, other):
-                    continue
-                seen.add(kk); items.append(a); added = True
-        if added:
-            sources.append(s["id"])
-            excerpts[s["id"]] = extract_competencias(organs_of(s, key))
-    return "\n".join(items), sources, excerpts
-
-
-def _sources_and_excerpts(all_states: list, key: str, extractor):
-    sources, excerpts = [], {}
-    for s in all_states:
-        txt = extractor(organs_of(s, key))
-        if txt.strip():
-            sources.append(s["id"])
-            excerpts[s["id"]] = txt
-    return sources, excerpts
-
-
-def build_organ(all_states: list, key: str) -> dict:
-    ro = _ro_first_organ(all_states, key)
-
-    comp_text, comp_src, comp_exc = build_competencias(key, all_states)
-    org_proposed = "\n".join(ro.get("desdobramentos") or [])
-    org_src, org_exc = _sources_and_excerpts(all_states, key, extract_organizacao)
-    car_proposed = extract_cargos(organs_of(_state_by_id(all_states, "ro"), key))
-    car_src, car_exc = _sources_and_excerpts(all_states, key, extract_cargos)
-    fin_src, fin_exc = _sources_and_excerpts(all_states, key, extract_finalidade)
-
-    by_id = {
-        "preliminares":       (build_preliminares(key, ro), [],       {},       None),
-        "finalidade":         (build_finalidade(key, ro),   fin_src,  fin_exc,  None),
-        "competencias":       (comp_text,                   comp_src, comp_exc, f"Compete {ORGAN_CAPUT[key]}:"),
-        "organizacao":        (org_proposed,                org_src,  org_exc,  f"{ORGAN_ART[key]} {ORGAN_ABBR[key]} tem a seguinte estrutura:"),
-        "cargos_atribuicoes": (car_proposed,                car_src,  car_exc,  None),
-        "disposicoes_finais": (DISP_FINAIS,                 [],       {},       None),
+def build_finalidade_section(organ):
+    """Seção 'Da Finalidade' (prose) — usa a 1ª atribuição/finalidade do órgão."""
+    fin = ""
+    for a in (organ.get("atribuicoes") or []):
+        if a.strip():
+            fin = a.strip()
+            break
+    return {
+        "id": "finalidade", "kind": "prose", "sectionTitle": "Da Finalidade",
+        "editId": None,  # preenchido pelo chamador
+        "proposedText": fin,
     }
 
+
+def build_competencia_section(organ_key, organ, abbr, skip_text=""):
+    skip = normalize(skip_text) if skip_text else None
+    raw = ro_items(organ.get("atribuicoes") or [])
+    if skip:
+        raw = [it for it in raw if normalize(it["text"]) != skip]
+    items = _dedup_keep_order(raw)
+    return {
+        "id": "competencia", "kind": "incisos", "sectionTitle": "Da Competência",
+        "editId": None, "caput": f"Compete à {abbr}:" if abbr else "Compete:",
+        "items": items, "proposedText": proposed_text(items),
+    }
+
+
+def build_organizacao_section(organ, abbr):
+    items = ro_items(organ.get("desdobramentos") or [])
+    return {
+        "id": "organizacao", "kind": "incisos", "sectionTitle": "Da Organização Interna",
+        "editId": None, "caput": f"{abbr} tem a seguinte estrutura interna:" if abbr else "Tem a seguinte estrutura interna:",
+        "items": items, "proposedText": proposed_text(items),
+    }
+
+
+def build_cargo_sections(organ_key, organ):
     sections = []
-    for meta in SECTIONS:
-        text, src, exc, caput = by_id[meta["id"]]
+    for c in (organ.get("cargos") or []):
+        name = (c.get("cargo") or "").strip()
+        if not name:
+            continue
+        ro = ro_items(c.get("atribuicoes") or [])
+        enr = enrich_for(organ_key, name)
+        items = _dedup_keep_order(ro + enr)
+        if not items:
+            continue
+        sid = "cargo:" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
         sections.append({
-            "id": meta["id"],
-            "title": meta["title"],
-            "chapterTitle": meta["chapterTitle"],
-            "kind": meta["kind"],
-            "caput": caput,
-            "proposedText": text,
-            "sources": src,
-            "sourceExcerpts": exc,
+            "id": sid, "kind": "incisos",
+            "sectionTitle": f"Das Atribuições do {name}",
+            "editId": None, "caput": f"Ao {name} compete:",
+            "items": items, "proposedText": proposed_text(items),
         })
+    return sections
+
+
+def build_organ_chapter(organ_key, chapter_title, organ):
+    abbr = organ.get("abbreviation") or organ_key.upper()
+    fin_section = build_finalidade_section(organ)
+    sections = [fin_section]
+    # Competência exclui a 1ª atribuição já usada como Finalidade (evita repetição).
+    comp = build_competencia_section(organ_key, organ, abbr, skip_text=fin_section["proposedText"])
+    if comp["items"]:
+        sections.append(comp)
+    org = build_organizacao_section(organ, abbr)
+    if org["items"]:
+        sections.append(org)
+    sections.extend(build_cargo_sections(organ_key, organ))
+
+    chapter_id = f"organ:{organ_key}"
+    for s in sections:
+        s["editId"] = f"{chapter_id}/{s['id']}"
 
     return {
-        "label": ORGAN_LABELS[key],
-        "abbr": ORGAN_ABBR[key],
-        "artigoCaput": ORGAN_CAPUT[key],
+        "id": chapter_id, "kind": "organ", "chapterTitle": chapter_title,
+        "organKey": organ_key, "label": organ.get("name", ""), "abbr": abbr,
         "sections": sections,
     }
 
 
+def build_estrutura_chapter(organs):
+    items = []
+    for (organ_key, _title, art) in ORGAN_ORDER:
+        o = organs.get(organ_key)
+        if not o:
+            continue
+        nome = o.get("name", organ_key.upper())
+        abbr = o.get("abbreviation") or organ_key.upper()
+        items.append({"text": f"{art.lower()} {nome} ({abbr})", "source": "ro"})
+    return {
+        "id": "estrutura", "kind": "incisos", "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
+        "editId": "estrutura",
+        "caput": "A estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia compõe-se dos seguintes órgãos:",
+        "items": items, "proposedText": proposed_text(items),
+    }
+
+
+def build_preliminares_chapter():
+    txt = (
+        "Este Regimento Interno disciplina a organização, as competências e o funcionamento "
+        "da estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), "
+        "do escalão de direção operacional às frações de execução.\n"
+        "A estrutura operacional subordina-se ao Comandante-Geral por intermédio do "
+        "Subcomandante-Geral, nos termos da Lei de Organização Básica do CBMRO."
+    )
+    return {
+        "id": "preliminares", "kind": "prose", "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
+        "editId": "preliminares", "proposedText": txt,
+    }
+
+
+def build_finais_chapter():
+    return {
+        "id": "finais", "kind": "prose", "chapterTitle": "DAS DISPOSIÇÕES FINAIS",
+        "editId": "finais", "proposedText": DISP_FINAIS,
+    }
+
+
 def main():
-    data = json.loads(IN_JSON.read_text(encoding="utf-8"))
-    all_states = data["states"]
+    organs = json.loads(RO_JSON.read_text(encoding="utf-8")).get("organs", {})
+
+    chapters = [build_preliminares_chapter(), build_estrutura_chapter(organs)]
+    for organ_key, chapter_title, _art in ORGAN_ORDER:
+        o = organs.get(organ_key)
+        if not o:
+            print(f"  ! órgão ausente no ro.json: {organ_key} — pulando")
+            continue
+        chapters.append(build_organ_chapter(organ_key, chapter_title, o))
+    chapters.append(build_finais_chapter())
+
     output = {
         "generated_by": "scripts/build_minuta_structure.py",
-        "dpo": build_organ(all_states, "dpo"),
-        "cot": build_organ(all_states, "cot"),
+        "title": TITLE,
+        "chapters": chapters,
     }
     OUT_JSON.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    n_org = sum(1 for c in chapters if c["kind"] == "organ")
+    n_sec = sum(len(c.get("sections", [])) for c in chapters if c["kind"] == "organ")
     print(f"Gerado: {OUT_JSON}")
-    for key in ("dpo", "cot"):
-        secs = output[key]["sections"]
-        filled = sum(1 for s in secs if s["proposedText"])
-        print(f"  {key.upper()}: {filled}/{len(secs)} seções com texto")
+    print(f"  {len(chapters)} capítulos · {n_org} órgãos · {n_sec} seções de função")
 
 
 if __name__ == "__main__":
