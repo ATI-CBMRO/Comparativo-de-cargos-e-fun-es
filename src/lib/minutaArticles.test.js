@@ -24,7 +24,7 @@ test('normalizeInciso minusculiza inicial e pontua por posição', () => {
 
 test('normalizeInciso remove marcador de lista e pontuação preexistente', () => {
   assert.equal(normalizeInciso('1. planejar as ações.', 0, 1), 'planejar as ações.')
-  assert.equal(normalizeInciso('I - fiscalizar;', 0, 2), 'fiscalizar;')
+  assert.equal(normalizeInciso('I - fiscalizar;', 0, 2), 'fiscalizar; e')
 })
 
 import { buildArticles } from './minutaArticles.js'
@@ -67,7 +67,7 @@ test('buildArticles articula incisos normalizados', () => {
 test('buildArticles monta artigo por cargo com caput "Ao ... compete:"', () => {
   const arts = buildArticles(ORGAN, {})
   assert.equal(arts[3].caput, 'Ao Diretor compete:')
-  assert.deepEqual(arts[3].incisos, ['planejar;', 'coordenar.'])
+  assert.deepEqual(arts[3].incisos, ['planejar; e', 'coordenar.'])
   assert.equal(arts[4].caput, 'Ao Adjunto compete:')
   assert.deepEqual(arts[4].incisos, ['substituir o Diretor.'])
 })

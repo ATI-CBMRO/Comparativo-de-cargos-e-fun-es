@@ -28,7 +28,7 @@ export function normalizeInciso(text, index, total) {
   if (t) t = t[0].toLowerCase() + t.slice(1)
   let suffix = ';'
   if (index === total - 1) suffix = '.'
-  else if (index === total - 2 && total > 2) suffix = '; e'
+  else if (index === total - 2) suffix = '; e'
   return t + suffix
 }
 
