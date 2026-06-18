@@ -88,6 +88,7 @@ export default function MinutaWizard() {
 
   function handleNext() {
     const sections = data[selectedOrgan].sections
+    setOpenSource(null)
     if (sectionIdx < sections.length - 1) {
       setSectionIdx(i => i + 1)
     } else {
@@ -96,6 +97,7 @@ export default function MinutaWizard() {
   }
 
   function handlePrev() {
+    setOpenSource(null)
     if (sectionIdx > 0) setSectionIdx(i => i - 1)
   }
 
@@ -164,42 +166,46 @@ export default function MinutaWizard() {
         })
       )
 
-      // Capítulos
-      sections.forEach((section, idx) => {
-        // Título do capítulo: centralizado, negrito, maiúsculas
+      // Documento articulado (mesma fonte da prévia)
+      const articles = buildArticles(data[selectedOrgan], edits)
+      let chapterSeen = false
+      articles.forEach(art => {
+        if (art.chapterTitle) {
+          children.push(
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              pageBreakBefore: chapterSeen,
+              spacing: { before: 240, after: 0 },
+              children: [new TextRun({ text: `CAPÍTULO ${romanize(art.chapterNumber)}`, bold: true, font: 'Times New Roman', size: 26 })],
+            }),
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              spacing: { after: 240 },
+              children: [new TextRun({ text: art.chapterTitle, bold: true, font: 'Times New Roman', size: 26 })],
+            })
+          )
+          chapterSeen = true
+        }
+        // Caput do artigo
         children.push(
           new Paragraph({
-            alignment: AlignmentType.CENTER,
-            pageBreakBefore: idx > 0,
-            spacing: { before: idx > 0 ? 0 : 120, after: 240 },
+            alignment: AlignmentType.JUSTIFIED,
+            spacing: { line: 360, after: art.incisos.length ? 60 : 120 },
+            indent: art.incisos.length ? undefined : { firstLine: 708 },
             children: [
-              new TextRun({
-                text: `CAPÍTULO ${ROMAN[idx] ?? idx + 1} — ${section.title.toUpperCase()}`,
-                font: 'Times New Roman', size: 26, bold: true,
-              }),
+              new TextRun({ text: `${articleLabel(art.number)} `, bold: true, font: 'Times New Roman', size: 24 }),
+              new TextRun({ text: art.caput, font: 'Times New Roman', size: 24 }),
             ],
           })
         )
-        // Corpo: um parágrafo por linha (preserva quebras), texto justificado.
-        // Linhas terminadas em ":" viram subtítulos em negrito (nomes de cargo).
-        const bodyLines = (edits[section.id] || '').split('\n')
-        bodyLines.forEach(line => {
-          const trimmed = line.trim()
-          if (!trimmed) {
-            children.push(new Paragraph({ spacing: { after: 60 }, children: [] }))
-            return
-          }
-          const isCargoHeader = trimmed.endsWith(':')
+        // Incisos
+        art.incisos.forEach((inc, i) => {
           children.push(
             new Paragraph({
-              alignment: isCargoHeader ? AlignmentType.LEFT : AlignmentType.JUSTIFIED,
-              spacing: { line: 360, after: 120, before: isCargoHeader ? 120 : 0 },
-              children: [
-                new TextRun({
-                  text: line,
-                  font: 'Times New Roman', size: 24, bold: isCargoHeader,
-                }),
-              ],
+              alignment: AlignmentType.JUSTIFIED,
+              spacing: { line: 360, after: 60 },
+              indent: { left: 708, hanging: 340 },
+              children: [new TextRun({ text: `${romanize(i + 1)} - ${inc}`, font: 'Times New Roman', size: 24 })],
             })
           )
         })
@@ -455,32 +461,12 @@ export default function MinutaWizard() {
               Resumo da minuta — {organInfo.fullName}
             </h3>
 
-            {sections.map(sec => (
-              <details
-                key={sec.id}
-                style={{
-                  marginBottom: 10,
-                  border: '1px solid var(--border-card)',
-                  borderRadius: 8, overflow: 'hidden',
-                }}
-              >
-                <summary style={{
-                  padding: '10px 14px', fontWeight: 600, cursor: 'pointer',
-                  background: 'var(--gray-50)', color: '#121d3d', fontSize: 14,
-                  listStyle: 'none', display: 'flex', alignItems: 'center', gap: 8,
-                }}>
-                  {sec.title}
-                </summary>
-                <pre style={{
-                  padding: 14, margin: 0,
-                  fontSize: 13, whiteSpace: 'pre-wrap',
-                  lineHeight: 1.65, color: 'var(--text-secondary)',
-                  fontFamily: 'Inter, sans-serif',
-                }}>
-                  {edits[sec.id] || '(vazio)'}
-                </pre>
-              </details>
-            ))}
+            <div style={{
+              border: '1px solid var(--border-card)', borderRadius: 8,
+              background: '#fff', padding: 24, marginBottom: 4, maxHeight: 460, overflow: 'auto',
+            }}>
+              <ArticlePreview articles={buildArticles(data[selectedOrgan], edits)} />
+            </div>
 
             <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
               <button
