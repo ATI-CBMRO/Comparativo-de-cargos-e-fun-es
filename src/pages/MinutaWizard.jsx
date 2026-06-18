@@ -6,8 +6,6 @@ import {
 } from 'docx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 
-const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
-
 const ORGAN_OPTIONS = [
   {
     key: 'dpo',
