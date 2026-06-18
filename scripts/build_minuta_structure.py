@@ -31,18 +31,18 @@ OUT_JSON = BASE_DIR / "database" / "minuta_structure.json"
 TITLE = "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO"
 
 # Ordem dos capítulos = ordem de subordinação (topo → menor fração).
-# (organ_key, CHAPTER_TITLE, artigo_definido, "de"-contração)
+# (organ_key, CHAPTER_TITLE, artigo_definido)
 ORGAN_ORDER = [
-    ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A",  "da"),
-    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O",  "do"),
-    ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A",  "da"),
-    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "O",  "do"),
-    ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O",  "do"),
-    ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A",  "da"),
-    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O",  "do"),
-    ("bbs",   "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                 "O",  "do"),
-    ("bifea", "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O", "do"),
-    ("boa",   "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                   "O",  "do"),
+    ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A"),
+    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
+    ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A"),
+    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "O"),
+    ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O"),
+    ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A"),
+    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O"),
+    ("bbs",   "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                 "O"),
+    ("bifea", "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
+    ("boa",   "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                   "O"),
 ]
 
 DISP_FINAIS = (
@@ -89,8 +89,12 @@ def build_finalidade_section(organ):
     }
 
 
-def build_competencia_section(organ_key, organ, abbr):
-    items = _dedup_keep_order(ro_items(organ.get("atribuicoes") or []))
+def build_competencia_section(organ_key, organ, abbr, skip_text=""):
+    skip = normalize(skip_text) if skip_text else None
+    raw = ro_items(organ.get("atribuicoes") or [])
+    if skip:
+        raw = [it for it in raw if normalize(it["text"]) != skip]
+    items = _dedup_keep_order(raw)
     return {
         "id": "competencia", "kind": "incisos", "sectionTitle": "Da Competência",
         "editId": None, "caput": f"Compete à {abbr}:" if abbr else "Compete:",
@@ -128,11 +132,12 @@ def build_cargo_sections(organ_key, organ):
     return sections
 
 
-def build_organ_chapter(organ_key, chapter_title, art, de, organ):
+def build_organ_chapter(organ_key, chapter_title, organ):
     abbr = organ.get("abbreviation") or organ_key.upper()
-    sections = []
-    sections.append(build_finalidade_section(organ))
-    comp = build_competencia_section(organ_key, organ, abbr)
+    fin_section = build_finalidade_section(organ)
+    sections = [fin_section]
+    # Competência exclui a 1ª atribuição já usada como Finalidade (evita repetição).
+    comp = build_competencia_section(organ_key, organ, abbr, skip_text=fin_section["proposedText"])
     if comp["items"]:
         sections.append(comp)
     org = build_organizacao_section(organ, abbr)
@@ -153,7 +158,7 @@ def build_organ_chapter(organ_key, chapter_title, art, de, organ):
 
 def build_estrutura_chapter(organs):
     items = []
-    for (organ_key, _title, art, de) in ORGAN_ORDER:
+    for (organ_key, _title, art) in ORGAN_ORDER:
         o = organs.get(organ_key)
         if not o:
             continue
@@ -193,12 +198,12 @@ def main():
     organs = json.loads(RO_JSON.read_text(encoding="utf-8")).get("organs", {})
 
     chapters = [build_preliminares_chapter(), build_estrutura_chapter(organs)]
-    for organ_key, chapter_title, art, de in ORGAN_ORDER:
+    for organ_key, chapter_title, _art in ORGAN_ORDER:
         o = organs.get(organ_key)
         if not o:
             print(f"  ! órgão ausente no ro.json: {organ_key} — pulando")
             continue
-        chapters.append(build_organ_chapter(organ_key, chapter_title, art, de, o))
+        chapters.append(build_organ_chapter(organ_key, chapter_title, o))
     chapters.append(build_finais_chapter())
 
     output = {

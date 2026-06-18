@@ -75,20 +75,6 @@
           "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados."
         },
         {
-          "id": "competencia",
-          "kind": "incisos",
-          "sectionTitle": "Da Competência",
-          "editId": "organ:dpo/competencia",
-          "caput": "Compete à DPO:",
-          "items": [
-            {
-              "text": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados.",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, supervisão, fiscalização e avaliação das atividades operacionais da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados."
-        },
-        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -237,15 +223,11 @@
           "caput": "Compete à COT:",
           "items": [
             {
-              "text": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.",
-              "source": "ro"
-            },
-            {
               "text": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.",
               "source": "ro"
             }
           ],
-          "proposedText": "Órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco, competindo-lhe o estudo, a análise, o planejamento, a normatização, a exigência, a fiscalização e a execução das normas que disciplinam a segurança contra incêndio e pânico.\nElaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO."
+          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO."
         },
         {
           "id": "organizacao",
@@ -371,20 +353,6 @@
           "proposedText": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
         },
         {
-          "id": "competencia",
-          "kind": "incisos",
-          "sectionTitle": "Da Competência",
-          "editId": "organ:doe/competencia",
-          "caput": "Compete à DOE:",
-          "items": [
-            {
-              "text": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas.",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
-        },
-        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -489,20 +457,6 @@
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
           "editId": "organ:crbm/finalidade",
-          "proposedText": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO."
-        },
-        {
-          "id": "competencia",
-          "kind": "incisos",
-          "sectionTitle": "Da Competência",
-          "editId": "organ:crbm/competencia",
-          "caput": "Compete à CRBM:",
-          "items": [
-            {
-              "text": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO.",
-              "source": "ro"
-            }
-          ],
           "proposedText": "Órgãos máximos responsáveis pelo planejamento estratégico, pela direção e pelo emprego das Organizações Bombeiro Militar (OBMs) que lhes forem subordinadas com a finalidade do cumprimento da missão institucional do CBMRO."
         },
         {
@@ -740,15 +694,11 @@
           "caput": "Compete à BBM:",
           "items": [
             {
-              "text": "Órgão de execução de atuação operacional ordinária. Atende à demanda de serviços de socorro e de serviços técnicos do CBMRO em sua circunscrição territorial.",
-              "source": "ro"
-            },
-            {
               "text": "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar.",
               "source": "ro"
             }
           ],
-          "proposedText": "Órgão de execução de atuação operacional ordinária. Atende à demanda de serviços de socorro e de serviços técnicos do CBMRO em sua circunscrição territorial.\nEstruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar."
+          "proposedText": "Estruturado em Companhias de Bombeiros Militar, que por sua vez estruturam-se em Pelotões de Bombeiros Militar."
         },
         {
           "id": "organizacao",
@@ -882,20 +832,6 @@
           "proposedText": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar."
         },
         {
-          "id": "competencia",
-          "kind": "incisos",
-          "sectionTitle": "Da Competência",
-          "editId": "organ:cibm/competencia",
-          "caput": "Compete à CIBM:",
-          "items": [
-            {
-              "text": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar.",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Órgão de execução de atuação operacional ordinária, estruturada em Pelotões de Bombeiros Militar, que por sua vez estruturam-se em Grupos de Bombeiros Militar."
-        },
-        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -1016,15 +952,11 @@
           "caput": "Compete à GBM:",
           "items": [
             {
-              "text": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais.",
-              "source": "ro"
-            },
-            {
               "text": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar.",
               "source": "ro"
             }
           ],
-          "proposedText": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais.\nPrevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar."
+          "proposedText": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar."
         },
         {
           "id": "organizacao",
@@ -1087,15 +1019,11 @@
           "caput": "Compete à BBS:",
           "items": [
             {
-              "text": "Órgão de execução de atuação operacional especializada terrestre. Atende à demanda de socorro especializado do CBMRO em sua circunscrição territorial.",
-              "source": "ro"
-            },
-            {
               "text": "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento.",
               "source": "ro"
             }
           ],
-          "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Atende à demanda de socorro especializado do CBMRO em sua circunscrição territorial.\nEstruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento."
+          "proposedText": "Estruturado em Companhias de Busca e Salvamento, que estruturam-se em Pelotões de Busca e Salvamento."
         },
         {
           "id": "organizacao",
@@ -1212,20 +1140,6 @@
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
           "editId": "organ:bifea/finalidade",
-          "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais."
-        },
-        {
-          "id": "competencia",
-          "kind": "incisos",
-          "sectionTitle": "Da Competência",
-          "editId": "organ:bifea/competencia",
-          "caput": "Compete à BIFEA:",
-          "items": [
-            {
-              "text": "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais.",
-              "source": "ro"
-            }
-          ],
           "proposedText": "Órgão de execução de atuação operacional especializada terrestre. Estruturado em Companhias de Incêndio Florestal e Companhias de Emergências Ambientais, que por sua vez estruturam-se em Pelotões de Incêndio Florestal e Pelotões de Emergências Ambientais."
         },
         {
@@ -1357,15 +1271,11 @@
           "caput": "Compete à BOA:",
           "items": [
             {
-              "text": "Órgão de execução de atuação operacional especializada aérea. Estruturado em Companhia de Operações Aéreas.",
-              "source": "ro"
-            },
-            {
               "text": "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP.",
               "source": "ro"
             }
           ],
-          "proposedText": "Órgão de execução de atuação operacional especializada aérea. Estruturado em Companhia de Operações Aéreas.\nPara fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP."
+          "proposedText": "Para fins do Regulamento Brasileiro de Aviação Civil (RBAC), considera-se o BOA como Unidade Aérea Pública (UAP), sendo seu Comandante o gestor desta UAP."
         },
         {
           "id": "organizacao",

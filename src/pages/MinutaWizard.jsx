@@ -93,9 +93,9 @@ export default function MinutaWizard() {
   const leaves = useMemo(() => (data ? flattenLeaves(data) : []), [data])
 
   function startReview() {
-    const initial = {}
-    leaves.forEach(l => { initial[l.editId] = l.proposedText })
-    setEdits(initial)
+    // Não pré-semear edits: seções intocadas mantêm seus itens estruturados
+    // (com a fonte). edits[editId] só passa a existir quando o usuário edita,
+    // e aí aquela seção articula com source: null.
     setLeafIdx(0)
     setStep(1)
   }
@@ -282,7 +282,7 @@ export default function MinutaWizard() {
                 <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>Seção {leafIdx + 1} de {leaves.length}</span>
               </div>
               <textarea
-                value={edits[leaf.editId] ?? ''}
+                value={edits[leaf.editId] ?? leaf.proposedText}
                 onChange={e => setEdits(prev => ({ ...prev, [leaf.editId]: e.target.value }))}
                 style={{
                   width: '100%', minHeight: 320, padding: 14, border: '1.5px solid var(--border-card)', borderRadius: 8,
