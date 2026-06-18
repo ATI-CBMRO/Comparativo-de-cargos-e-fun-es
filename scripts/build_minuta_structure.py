@@ -16,7 +16,6 @@ Rodar: python scripts/build_minuta_structure.py
 import json
 import re
 import sys
-import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
