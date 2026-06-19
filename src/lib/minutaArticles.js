@@ -35,7 +35,9 @@ export function normalizeInciso(text, index, total) {
 // Articula a estrutura hierárquica: chapters[] (prose | incisos | organ).
 // Numeração de artigos contínua; capítulos e seções em romano (seção reseta por capítulo).
 // edits[editId] (string) sobrepõe o texto de um nó-folha; ao editar, a fonte vira null.
-export function buildArticles(structure, edits = {}) {
+// isExcluded(editId, index) remove incisos específicos (curadoria); a numeração ignora os removidos.
+// Cada artigo carrega editId; cada inciso carrega { text, source, editId, index (original) }.
+export function buildArticles(structure, edits = {}, isExcluded = () => false) {
   const articles = []
   let articleCounter = 0
   let chapterCounter = 0
@@ -50,7 +52,7 @@ export function buildArticles(structure, edits = {}) {
       const pushArticle = (caput, incisos) => {
         articleCounter += 1
         const art = {
-          number: articleCounter, caput, incisos,
+          number: articleCounter, caput, incisos, editId: leaf.editId,
           chapterNumber: null, chapterTitle: null,
           sectionNumber: null, sectionTitle: null,
         }
@@ -77,17 +79,26 @@ export function buildArticles(structure, edits = {}) {
         }
       } else if (leaf.kind === 'incisos') {
         const edited = edits[leaf.editId]
-        let items
+        let incisos
         if (edited != null) {
-          items = edited.split('\n').map(l => l.trim()).filter(Boolean)
-            .map(t => ({ text: t, source: null }))
+          const raw = edited.split('\n').map(l => l.trim()).filter(Boolean)
+          incisos = raw.map((t, i) => ({
+            text: normalizeInciso(t, i, raw.length),
+            source: null, editId: leaf.editId, index: i,
+          }))
         } else {
-          items = (leaf.items ?? []).filter(it => (it.text ?? '').trim())
+          // preserva o índice ORIGINAL em leaf.items para a chave de exclusão
+          const kept = []
+          ;(leaf.items ?? []).forEach((it, i) => {
+            if (!(it.text ?? '').trim()) return
+            if (isExcluded(leaf.editId, i)) return
+            kept.push({ it, i })
+          })
+          incisos = kept.map((k, pos) => ({
+            text: normalizeInciso(k.it.text, pos, kept.length),
+            source: k.it.source ?? null, editId: leaf.editId, index: k.i,
+          }))
         }
-        const incisos = items.map((it, i) => ({
-          text: normalizeInciso(it.text, i, items.length),
-          source: it.source ?? null,
-        }))
         if (incisos.length || !isSection) {
           pushArticle(leaf.caput ?? '', incisos)
         }

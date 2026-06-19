@@ -65,7 +65,6 @@ const STRUCTURE = {
 
 test('buildArticles numera artigos continuamente atravessando capítulos', () => {
   const arts = buildArticles(STRUCTURE, {})
-  // 2 prose (preliminares) + 1 incisos (estrutura) + 2 seções do órgão DPO (competência, cargo:diretor)
   assert.deepEqual(arts.map(a => a.number), [1, 2, 3, 4, 5])
 })
 
@@ -73,24 +72,31 @@ test('buildArticles marca capítulo no 1º artigo e numera capítulos em sequên
   const arts = buildArticles(STRUCTURE, {})
   assert.equal(arts[0].chapterTitle, 'DAS DISPOSIÇÕES PRELIMINARES')
   assert.equal(arts[0].chapterNumber, 1)
-  assert.equal(arts[1].chapterTitle, null)            // mesmo capítulo
+  assert.equal(arts[1].chapterTitle, null)
   assert.equal(arts[2].chapterTitle, 'DA ESTRUTURA ORGANIZACIONAL')
   assert.equal(arts[2].chapterNumber, 2)
-  assert.equal(arts[3].chapterNumber, 3)              // capítulo do órgão DPO
+  assert.equal(arts[3].chapterNumber, 3)
 })
 
 test('buildArticles numera seções por capítulo e marca no 1º artigo da seção', () => {
   const arts = buildArticles(STRUCTURE, {})
-  // arts[3] = 1º artigo do capítulo do órgão = 1ª seção (Competência)
   assert.equal(arts[3].sectionNumber, 1)
   assert.equal(arts[3].sectionTitle, 'Da Competência')
 })
 
-test('buildArticles preserva a fonte de cada inciso e normaliza o texto', () => {
+test('cada artigo carrega o editId da sua folha de origem', () => {
+  const arts = buildArticles(STRUCTURE, {})
+  assert.equal(arts[0].editId, 'preliminares')
+  assert.equal(arts[2].editId, 'estrutura')
+  assert.equal(arts[3].editId, 'organ:dpo/competencia')
+  assert.equal(arts[4].editId, 'organ:dpo/cargo:diretor')
+})
+
+test('incisos carregam texto normalizado, fonte, editId e index original', () => {
   const arts = buildArticles(STRUCTURE, {})
   assert.deepEqual(arts[3].incisos, [
-    { text: 'planejar as operações; e', source: 'ro' },
-    { text: 'fiscalizar a instrução.', source: 'cf. CBMAL, RI, Art. 115, VII' },
+    { text: 'planejar as operações; e', source: 'ro', editId: 'organ:dpo/competencia', index: 0 },
+    { text: 'fiscalizar a instrução.', source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
   ])
 })
 
@@ -105,7 +111,23 @@ test('buildArticles usa edits (texto) no lugar dos itens, com source nulo', () =
   const arts = buildArticles(STRUCTURE, { 'organ:dpo/cargo:diretor': 'item editado\noutro item' })
   const diretor = arts.find(a => a.caput === 'Ao Diretor compete:')
   assert.deepEqual(diretor.incisos, [
-    { text: 'item editado; e', source: null },
-    { text: 'outro item.', source: null },
+    { text: 'item editado; e', source: null, editId: 'organ:dpo/cargo:diretor', index: 0 },
+    { text: 'outro item.', source: null, editId: 'organ:dpo/cargo:diretor', index: 1 },
   ])
+})
+
+test('isExcluded pula o inciso e renumera os restantes (sufixo recalculado)', () => {
+  const isExcluded = (editId, i) => editId === 'organ:dpo/competencia' && i === 0
+  const arts = buildArticles(STRUCTURE, {}, isExcluded)
+  const comp = arts.find(a => a.caput === 'Compete à DPO:')
+  assert.deepEqual(comp.incisos, [
+    { text: 'fiscalizar a instrução.', source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
+  ])
+})
+
+test('seção com todos os incisos excluídos é omitida e a numeração permanece contígua', () => {
+  const isExcluded = (editId) => editId === 'organ:dpo/cargo:diretor'
+  const arts = buildArticles(STRUCTURE, {}, isExcluded)
+  assert.equal(arts.find(a => a.caput === 'Ao Diretor compete:'), undefined)
+  assert.deepEqual(arts.map(a => a.number), [1, 2, 3, 4])
 })
