@@ -351,7 +351,7 @@ export default function MinutaWizard() {
           display: 'flex', gap: 8, alignItems: 'flex-start', padding: '2px 0 2px 24px',
           cursor: 'pointer', textAlign: 'justify',
         }}>
-          <input type="checkbox" checked readOnly={false}
+          <input type="checkbox" checked
             onChange={() => toggleItem(inc.editId, inc.index)}
             style={{ marginTop: 5, flexShrink: 0, cursor: 'pointer' }} />
           <span><strong>{romanize(i + 1)} -</strong> {inc.text}{srcBadge(inc.source)}</span>
