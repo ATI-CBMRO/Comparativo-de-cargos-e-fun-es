@@ -22,12 +22,14 @@ python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> dat
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json (aba "DPO × COT")
+python scripts/build_minuta_comparison.py    # organs_detail/*.json + comparativo_dpo_cot.json + minuta_enrichment.py -> database/comparativo_minuta.json (página /comparar "Subsídio à Minuta")
 python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json (wizard /minuta)
 ```
 
 > ORDEM IMPORTA: `build_organs_detail.py` deve rodar ANTES de `build_states_data.py`, pois
 > este último enriquece a árvore do organograma com as subdivisões (desdobramentos) gravadas
-> nos JSON de detalhamento.
+> nos JSON de detalhamento. `build_minuta_comparison.py` depende de `build_dpo_cot_comparison.py`
+> e de `build_organs_detail.py` (lê `comparativo_dpo_cot.json` e os `organs_detail/*.json`).
 
 Não há suíte de testes nem linter configurados.
 
@@ -79,34 +81,29 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Entrada: `src/main.jsx` (BrowserRouter) → `src/App.jsx` define o layout (Header + Sidebar
   + main) e as rotas. O array `NAV` em `App.jsx` controla a navegação.
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
-  `/legislacoes` (Legislations), `/comparar` (Compare), `/busca` (Search), `/minuta`
-  (MinutaWizard).
+  `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
+  `/busca` (Search), `/minuta` (MinutaWizard).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
-- O **Dashboard** tem abas: "Visão Geral" (estatísticas), "Comparativo de Cargos"
-  (`CargoComparator.jsx`) e "DPO × COT" (`OrgaosOperacionaisComparator.jsx`).
-  - "Comparativo de Cargos": confronta um cargo do CBMRO (`ro.json` é a referência canônica)
-    com vários estados ao mesmo tempo, em tabela de larga escala com coluna do RO e cabeçalho
-    fixos (sticky). O casamento de cargos usa normalização tolerante (mesma lógica de sinônimos
-    do `detailId`); sem correspondência, exibe "não localizado". Fetches em paralelo + cache.
-  - "DPO × COT": compara, nos 27 CBMs, os órgãos equivalentes à DPO (Diretoria de Planejamento
-    Operacional) e ao COT (Comando de Operações Técnicas) da minuta de LOB do CBMRO — casamento
-    por FUNÇÃO (a nomenclatura varia: COB/Comando Operacional/Diretoria Operacional ≈ DPO;
-    CAT/DAT/DST/DSCI/CSCI ≈ COT). Consome `database/comparativo_dpo_cot.json` (gerado por
-    `scripts/build_dpo_cot_comparison.py`, que encoda o MAPEAMENTO curado de ids de órgão por
-    estado e extrai os textos VERBATIM dos `organs_detail/*.json`). Tabela com estados nas linhas,
-    coluna do CBM e cabeçalho sticky; alterna DPO/COT; estados sem órgão discriminado (ex.: DF no
-    COT) exibem nota explicativa. Reexecutar o script se editar o mapeamento ou os detalhamentos.
-- Componentes-chave: `Organogram.jsx` (árvore expansível/colapsável), `OrgDetail.jsx`
-  (painel lateral de detalhamento) e `CargoComparator.jsx` (comparador de cargos no Dashboard).
+- O **Dashboard** mostra só a Visão Geral (estatísticas); as antigas abas "Comparativo de
+  Cargos" e "DPO × COT" foram removidas junto com seus componentes.
+- `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
+  `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
+  espelha os 11 órgãos da minuta (10 da LOB + Guarnição), comparando RO × estados em matriz
+  (campos nas linhas, estados nas colunas, RO sticky), com proveniência curado/automático por
+  estado (badge). Só entram estados com dado correspondente; busca filtra a matriz. Substitui
+  o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
+- Componentes-chave: `Organogram.jsx` (árvore expansível/colapsável) e `OrgDetail.jsx`
+  (painel lateral de detalhamento). `CargoComparator.jsx` e `OrgaosOperacionaisComparator.jsx`
+  foram removidos junto com as abas do Dashboard.
 - `StateDetail.handleSelectOrgan` resolve o detalhe pelo `detailId` carimbado no build
   (prioritário) e só então recorre a id/nome/sigla — por isso os painéis de cargos e
   atribuições aparecem mesmo quando o nome do nó da árvore difere do detalhamento.
-- Exportação PDF (`Compare.jsx` + `@media print` no `index.css`): `window.print()` com
-  cabeçalho institucional, moldura vermelha repetida por folha (`.print-frame` em `inset:0`,
-  com respiro interno para não cortar texto) e a tabela de estatísticas em página própria.
-  Imprimir em Paisagem, margens "Padrão".
+- Exportação PDF (`MinutaComparator.jsx` + `@media print` no `index.css`): `window.print()`
+  com título centralizado (`.print-only-title`), a barra de controles e o sumário ocultos na
+  impressão (`.page-body` em modo bloco) e a matriz (`.oc-matrix-table`) em fonte reduzida
+  para caber em Paisagem.
 - Estilo: CSS único em `src/index.css`. Identidade CBMRO (tema claro): cabeçalho vermelho
   `#c8102e`, sidebar navy `#121d3d`, conteúdo `#eef1f6`. Tipografia Outfit (títulos) + Inter.
 - Ícones: `lucide-react`.

@@ -1868,3 +1868,11 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
 
   .oc-print-na { color: #9aa3b2; font-style: italic; }
 }
+
+/* ── Impressão do comparador "Subsídio à Minuta" ── */
+@media print {
+  .print-only-title { display: block !important; font-family: 'Outfit', sans-serif;
+    font-size: 16pt; font-weight: 800; text-align: center; margin: 0 0 12px; color: #000; }
+  .oc-matrix-table { font-size: 8.5pt; }
+  .page-body { display: block !important; }
+}

@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Flame, BookOpen, FileText, Map, GitCompare, MapPin,
-  TrendingUp, Shield, ChevronRight, Award, ListTree, Users, LayoutDashboard, Building2
+  TrendingUp, Shield, ChevronRight, Award, ListTree
 } from 'lucide-react'
-import CargoComparator from '../components/CargoComparator.jsx'
-import OrgaosOperacionaisComparator from '../components/OrgaosOperacionaisComparator.jsx'
 
 const REGION_LABELS = {
   Norte: { css: 'norte', count: 0 },
@@ -33,7 +31,6 @@ function StatCard({ accent, icon: Icon, iconBg, iconColor, label, value, desc })
 export default function Dashboard() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
-  const [activeTab, setActiveTab] = useState('overview')
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -91,39 +88,6 @@ export default function Dashboard() {
       </div>
 
       <div className="page-body">
-        {/* Abas do Dashboard */}
-        <div className="tabs" style={{ marginBottom: 22 }}>
-          <button
-            className={`tab ${activeTab === 'overview' ? 'active' : ''}`}
-            onClick={() => setActiveTab('overview')}
-          >
-            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <LayoutDashboard size={14} /> Visão Geral
-            </span>
-          </button>
-          <button
-            className={`tab ${activeTab === 'cargos' ? 'active' : ''}`}
-            onClick={() => setActiveTab('cargos')}
-          >
-            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <Users size={14} /> Comparativo de Cargos
-            </span>
-          </button>
-          <button
-            className={`tab ${activeTab === 'orgaos' ? 'active' : ''}`}
-            onClick={() => setActiveTab('orgaos')}
-          >
-            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <Building2 size={14} /> DPO × COT
-            </span>
-          </button>
-        </div>
-
-        {activeTab === 'cargos' && <CargoComparator states={states} />}
-
-        {activeTab === 'orgaos' && <OrgaosOperacionaisComparator />}
-
-        {activeTab === 'overview' && (<>
         {/* Hero card navy */}
         <div className="hero-card" style={{ marginBottom: 24 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 22, position: 'relative', zIndex: 1, flexWrap: 'wrap' }}>
@@ -285,7 +249,6 @@ export default function Dashboard() {
             </div>
           ))}
         </div>
-        </>)}
       </div>
     </>
   )

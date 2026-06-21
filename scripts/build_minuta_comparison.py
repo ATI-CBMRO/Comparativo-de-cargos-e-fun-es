@@ -2,7 +2,7 @@
 build_minuta_comparison.py — Portal CBM
 
 Gera database/comparativo_minuta.json: comparativo RO × demais estados, órgão a
-órgão, na MESMA estrutura da minuta (12 órgãos, incl. a Guarnição de Serviço).
+órgão, na MESMA estrutura da minuta (11 órgãos (10 da LOB + guarnição), incl. a Guarnição de Serviço).
 Para cada órgão, a referência é o RO (de organs_detail/ro.json puro) e cada
 estado entra em uma de duas camadas:
 
@@ -34,7 +34,7 @@ OUT_JSON = BASE_DIR / "database" / "comparativo_minuta.json"
 
 REF_ID = "ro"
 
-# Ordem dos 12 órgãos: 10 da LOB (ORGAN_ORDER) + guarnição.
+# Ordem dos 11 órgãos (10 da LOB + guarnição): ORGAN_ORDER + guarnição.
 ORGAN_KEYS = [k for (k, _t, _a) in ORGAN_ORDER] + ["guarnicao"]
 ORGAN_TITLES = {k: t for (k, t, _a) in ORGAN_ORDER}
 ORGAN_TITLES["guarnicao"] = GUARNICAO_CHAPTER["chapterTitle"]
@@ -229,6 +229,6 @@ def build():
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Gerando comparativo da minuta (RO × estados, 12 órgãos)")
+    print("Gerando comparativo da minuta (RO × estados, 11 órgãos (10 da LOB + guarnição))")
     print("=" * 60)
     build()
