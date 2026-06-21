@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  Flame, BookOpen, FileText, GitCompare, MapPin, TrendingUp, ListTree
+  Flame, BookOpen, FileText, GitCompare, MapPin, ListTree
 } from 'lucide-react'
 
 function StatCard({ accent, icon: Icon, iconBg, iconColor, label, value, desc }) {
@@ -58,15 +58,11 @@ export default function Dashboard() {
 
   return (
     <>
-      {/* Barra de seção (breadcrumb + badge) */}
+      {/* Barra de seção */}
       <div className="section-bar">
         <div className="section-bar-label">
           Corpos de Bombeiros Militares — Estrutura Organizacional
         </div>
-        <span className="section-bar-badge">
-          <TrendingUp size={13} color="var(--cbm-red-700)" />
-          {metadata.total_states} estados analisados
-        </span>
       </div>
 
       <div className="page-body">

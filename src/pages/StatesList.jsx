@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Search, ChevronRight, BookOpen } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 
 export default function StatesList() {
   const [data, setData] = useState(null)
-  const [query, setQuery] = useState('')
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -19,12 +18,6 @@ export default function StatesList() {
     </div>
   )
 
-  const filtered = data.states.filter(s => (
-    !query || s.name.toLowerCase().includes(query.toLowerCase())
-    || s.cbm_abbreviation?.toLowerCase().includes(query.toLowerCase())
-    || s.cbm_name?.toLowerCase().includes(query.toLowerCase())
-  ))
-
   return (
     <>
       <div className="page-header">
@@ -35,24 +28,9 @@ export default function StatesList() {
       </div>
 
       <div className="page-body">
-        {/* Busca */}
-        <div className="search-input-wrap" style={{ marginBottom: 16 }}>
-          <Search size={16} className="search-input-icon" />
-          <input
-            className="search-input"
-            placeholder="Buscar estado ou sigla..."
-            value={query}
-            onChange={e => setQuery(e.target.value)}
-          />
-        </div>
-
-        <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>
-          Exibindo {filtered.length} de {data.states.length} corporações
-        </p>
-
         {/* Grid de estados */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 14 }}>
-          {filtered.map(s => (
+          {data.states.map(s => (
             <div
               key={s.id}
               className="state-card"
@@ -95,14 +73,6 @@ export default function StatesList() {
             </div>
           ))}
         </div>
-
-        {filtered.length === 0 && (
-          <div className="empty-state">
-            <BookOpen size={40} className="empty-state-icon" />
-            <h3>Nenhum resultado encontrado</h3>
-            <p>Tente ajustar os filtros de busca.</p>
-          </div>
-        )}
       </div>
     </>
   )

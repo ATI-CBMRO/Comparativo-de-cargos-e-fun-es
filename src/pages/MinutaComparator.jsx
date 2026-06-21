@@ -1,10 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
-import { GitCompare, Info, AlertCircle, Search, FileDown, ScrollText, PanelLeftClose, PanelLeftOpen } from 'lucide-react'
+import { GitCompare, Info, AlertCircle, FileDown, ScrollText, PanelLeftClose, PanelLeftOpen } from 'lucide-react'
 import { MATRIX_ROWS } from '../lib/comparatorRender.jsx'
-
-function norm(s) {
-  return (s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
-}
 
 function ProvBadge({ provenance }) {
   const curado = provenance === 'curado'
@@ -104,7 +100,6 @@ export default function MinutaComparator() {
   const [error, setError] = useState(false)
   const [organKey, setOrganKey] = useState(null)
   const [selectedStateId, setSelectedStateId] = useState(null)
-  const [search, setSearch] = useState('')
   const [navOpen, setNavOpen] = useState(true)
 
   useEffect(() => {
@@ -116,14 +111,11 @@ export default function MinutaComparator() {
 
   const organ = useMemo(() => data?.organs.find(o => o.key === organKey) || null, [data, organKey])
 
-  // Chips em ordem alfabética, filtrados pela busca
+  // Chips em ordem alfabética
   const chips = useMemo(() => {
     if (!organ) return []
-    const sorted = [...organ.states].sort((a, b) => a.abbr.localeCompare(b.abbr, 'pt'))
-    if (!search.trim()) return sorted
-    const q = norm(search)
-    return sorted.filter(s => norm(s.name).includes(q) || norm(s.abbr).includes(q) || norm(s.cbm).includes(q))
-  }, [organ, search])
+    return [...organ.states].sort((a, b) => a.abbr.localeCompare(b.abbr, 'pt'))
+  }, [organ])
 
   // Ao trocar de órgão, garante um estado válido selecionado (primeiro do órgão)
   useEffect(() => {
@@ -212,15 +204,7 @@ export default function MinutaComparator() {
                   <span><strong>{organ.title}</strong></span>
                 </div>
 
-                <div className="oc-toolbar no-print" style={{ marginBottom: 12 }}>
-                  <div className="search-input-wrap" style={{ maxWidth: 280 }}>
-                    <Search size={14} className="search-input-icon" />
-                    <input
-                      type="text" className="search-input" placeholder="Filtrar siglas de estado..."
-                      value={search} onChange={e => setSearch(e.target.value)}
-                      style={{ height: 36, paddingLeft: 34, fontSize: 13 }}
-                    />
-                  </div>
+                <div className="oc-toolbar no-print" style={{ marginBottom: 12, justifyContent: 'flex-end' }}>
                   <button className="btn btn-ghost" onClick={() => window.print()}>
                     <FileDown size={15} /> Exportar PDF
                   </button>
@@ -229,18 +213,16 @@ export default function MinutaComparator() {
                 {organ.states.length > 0 && (
                   <div className="oc-state-chips no-print">
                     <span className="oc-state-chips-label">Estado:</span>
-                    {chips.length === 0
-                      ? <span style={{ fontSize: 12, color: 'var(--text-muted)', fontStyle: 'italic' }}>nenhuma sigla corresponde à busca</span>
-                      : chips.map(s => (
-                          <button
-                            key={s.id}
-                            className={`oc-state-chip${s.id === selectedStateId ? ' active' : ''}`}
-                            onClick={() => setSelectedStateId(s.id)}
-                            title={`${s.name} · ${s.cbm}${s.provenance === 'curado' ? ' · curado' : ' · automático'}`}
-                          >
-                            {s.abbr}
-                          </button>
-                        ))}
+                    {chips.map(s => (
+                      <button
+                        key={s.id}
+                        className={`oc-state-chip${s.id === selectedStateId ? ' active' : ''}`}
+                        onClick={() => setSelectedStateId(s.id)}
+                        title={`${s.name} · ${s.cbm}${s.provenance === 'curado' ? ' · curado' : ' · automático'}`}
+                      >
+                        {s.abbr}
+                      </button>
+                    ))}
                   </div>
                 )}
 
