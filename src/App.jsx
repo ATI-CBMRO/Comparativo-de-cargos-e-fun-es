@@ -6,7 +6,7 @@ import {
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
 import StateDetail from './pages/StateDetail.jsx'
-import Compare from './pages/Compare.jsx'
+import MinutaComparator from './pages/MinutaComparator.jsx'
 import SearchPage from './pages/Search.jsx'
 import Legislations from './pages/Legislations.jsx'
 import MinutaWizard from './pages/MinutaWizard.jsx'
@@ -15,7 +15,7 @@ const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
   { to: '/estados', icon: BookOpen, label: 'Estados' },
   { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
-  { to: '/comparar', icon: GitCompare, label: 'Comparativo' },
+  { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
   { to: '/busca', icon: Search, label: 'Busca Textual' },
   { to: '/minuta', icon: ScrollText, label: 'Minuta RI' },
 ]
@@ -105,7 +105,7 @@ export default function App() {
           <Route path="/estados" element={<StatesList />} />
           <Route path="/estados/:stateId" element={<StateDetail />} />
           <Route path="/legislacoes" element={<Legislations />} />
-          <Route path="/comparar" element={<Compare />} />
+          <Route path="/comparar" element={<MinutaComparator />} />
           <Route path="/busca" element={<SearchPage />} />
           <Route path="/minuta" element={<MinutaWizard />} />
         </Routes>
