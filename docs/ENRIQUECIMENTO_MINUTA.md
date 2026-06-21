@@ -27,6 +27,16 @@ geraria incisos prolixos que degradam o documento. `ro.json` nunca é tocado.
 
 `ENRICHMENT` (por cargo) = CBMAL. `ENRICHMENT_ORGAN` (por órgão) = os demais.
 
+### Capítulo "Da Guarnição de Serviço Operacional" (menor fração)
+
+Adicionado em 2026-06-19 como **nó estrutural novo** (não vem do `ro.json`): o CBMRO
+não define a guarnição na LOB/minuta (é matéria de regulamento de serviço). Subsídio
+**integral do CBMSE — RISD** (Regulamento Interno dos Serviços Diários, BGO 060/2022),
+rotulado: Art. 14 (Comandante de Guarnição, 16 incisos) + Art. 15 (Condutor e Operador
+de Viatura, 15 incisos). É a menor fração ("equipe da viatura em serviço"), abaixo do
+GBM. Definido em `GUARNICAO_CHAPTER` (`minuta_enrichment.py`), montado por
+`build_guarnicao_chapter()` e inserido antes das Disposições Finais.
+
 > O **CBMDF** foi incorporado em 2026-06-19 a partir do seu **Regimento Interno**
 > (Portaria nº 24/2020), não da LOB: Art. 454 (Comando Operacional, I–VI) → DPO e
 > Art. 54 (DESEG, I–VIII) → COT. O `COT_MAP['df']` era vazio no comparativo
@@ -55,9 +65,10 @@ remetem o detalhe a Regimento/decreto (que não temos). Sem incisos enumeráveis
 **Regimentos Internos avaliados:** dos RIs disponíveis em `database/markdown/`
 (AL, DF, ES/NGA, GO, MT, PR, PA, RN, RS, SE), foram **aproveitados** AL, MT, ES e
 **DF** (este via RI, 2026-06-19); **PR e PA** já entram pela LOB (RI não tapado);
-**GO** (Regimento dos Serviços — condensado), **RS** (narrativo por subdivisão),
-**RN** (regulamento raso) e **SE** (RI é regimento de serviço diário — Superior de
-Dia etc., sem competências de órgão) ficaram de fora.
+**GO** (Regimento dos Serviços — condensado), **RS** (narrativo por subdivisão) e
+**RN** (regulamento raso) ficaram de fora. **SE** — a LOB e o RI orgânico não têm
+competências de órgão enumeráveis, mas o **RISD do SE** (serviços diários) forneceu o
+capítulo da **Guarnição** (Comandante de Guarnição e Condutor/Operador, ver acima).
 
 ## Como ampliar no futuro (se necessário)
 

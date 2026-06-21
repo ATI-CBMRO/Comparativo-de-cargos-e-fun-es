@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from minuta_enrichment import enrich_for, enrich_organ_for  # noqa: E402
+from minuta_enrichment import enrich_for, enrich_organ_for, GUARNICAO_CHAPTER  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -188,6 +188,31 @@ def build_preliminares_chapter():
     }
 
 
+def build_guarnicao_chapter():
+    """Capítulo da menor fração operacional — subsídio integral do CBMSE (RISD)."""
+    g = GUARNICAO_CHAPTER
+    chapter_id = "organ:guarnicao"
+    sections = [{
+        "id": "finalidade", "kind": "prose", "sectionTitle": "Da Finalidade",
+        "editId": None, "proposedText": g["finalidade"],
+    }]
+    for name, caput, items in g["cargos"]:
+        items = _dedup_keep_order(items)
+        sid = "cargo:" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+        sections.append({
+            "id": sid, "kind": "incisos", "sectionTitle": f"Das Atribuições do {name}",
+            "editId": None, "caput": caput,
+            "items": items, "proposedText": proposed_text(items),
+        })
+    for s in sections:
+        s["editId"] = f"{chapter_id}/{s['id']}"
+    return {
+        "id": chapter_id, "kind": "organ", "chapterTitle": g["chapterTitle"],
+        "organKey": "guarnicao", "label": g["label"], "abbr": "",
+        "sections": sections,
+    }
+
+
 def build_finais_chapter():
     return {
         "id": "finais", "kind": "prose", "chapterTitle": "DAS DISPOSIÇÕES FINAIS",
@@ -205,6 +230,7 @@ def main():
             print(f"  ! órgão ausente no ro.json: {organ_key} — pulando")
             continue
         chapters.append(build_organ_chapter(organ_key, chapter_title, o))
+    chapters.append(build_guarnicao_chapter())
     chapters.append(build_finais_chapter())
 
     output = {

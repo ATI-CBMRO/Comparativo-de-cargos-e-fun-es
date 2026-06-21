@@ -1726,6 +1726,167 @@
       ]
     },
     {
+      "id": "organ:guarnicao",
+      "kind": "organ",
+      "chapterTitle": "DA GUARNIÇÃO DE SERVIÇO OPERACIONAL",
+      "organKey": "guarnicao",
+      "label": "Guarnição de Serviço Operacional",
+      "abbr": "",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:guarnicao/finalidade",
+          "proposedText": "A guarnição de serviço operacional é a menor fração empregada nas atividades operacionais do Corpo de Bombeiros Militar do Estado de Rondônia, constituída pela equipe da viatura em serviço, chefiada pelo militar mais antigo ou designado."
+        },
+        {
+          "id": "cargo:comandante-de-guarni-o",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante de Guarnição",
+          "editId": "organ:guarnicao/cargo:comandante-de-guarni-o",
+          "caput": "Ao Comandante de Guarnição de serviço operacional compete:",
+          "items": [
+            {
+              "text": "cumprir e fazer cumprir todas as normas relativas ao serviço diário de sua competência",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "apresentar-se ao Comandante de Socorro no início do serviço, transmitindo-lhe as condições dos equipamentos na viatura, depois de minuciosa conferência do material",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "sair da base mediante exclusiva autorização dos superiores de serviço",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "exercer o comando dos integrantes da guarnição com vista ao emprego tático da equipe",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "controlar, no local da ocorrência, os materiais e equipamentos da viatura utilizados por sua guarnição",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "estar atento à segurança do seu pessoal, do patrimônio e do meio ambiente no setor de sua responsabilidade",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "responder pelo Comandante de Socorro por ocasião de atendimento a socorro isolado",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "auxiliar o Comandante de Socorro a manter o moral e a disciplina da guarnição sob sua chefia, tanto dentro quanto fora da OBM",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "providenciar a coleta de todos os dados da ocorrência exigidos pelo Centro de Operações para a execução dos procedimentos administrativos necessários",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "informar ao Centro de Operações o momento exato de sua saída do quartel, de sua chegada e saída do local da ocorrência e de sua chegada ao quartel",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "solicitar apoio ao Supervisor de Dia quando julgar necessário, se o Comandante de Socorro não estiver presente",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "ministrar instrução para sua guarnição mediante orientação do Comandante de Socorro",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "manter o Comandante de Socorro informado sobre o andamento da ocorrência, quando este não estiver presente no local",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "informar ao Centro de Operações o desfecho final da ocorrência",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "utilizar e exigir de todos da guarnição, obrigatoriamente, os Equipamentos de Proteção Individual (EPIs) disponíveis nas ocorrências em que for empregado",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            },
+            {
+              "text": "coordenar e participar da conferência de materiais operacionais ao assumir o serviço e ao término de ocorrência",
+              "source": "cf. CBMSE, RISD, Art. 14"
+            }
+          ],
+          "proposedText": "cumprir e fazer cumprir todas as normas relativas ao serviço diário de sua competência\napresentar-se ao Comandante de Socorro no início do serviço, transmitindo-lhe as condições dos equipamentos na viatura, depois de minuciosa conferência do material\nsair da base mediante exclusiva autorização dos superiores de serviço\nexercer o comando dos integrantes da guarnição com vista ao emprego tático da equipe\ncontrolar, no local da ocorrência, os materiais e equipamentos da viatura utilizados por sua guarnição\nestar atento à segurança do seu pessoal, do patrimônio e do meio ambiente no setor de sua responsabilidade\nresponder pelo Comandante de Socorro por ocasião de atendimento a socorro isolado\nauxiliar o Comandante de Socorro a manter o moral e a disciplina da guarnição sob sua chefia, tanto dentro quanto fora da OBM\nprovidenciar a coleta de todos os dados da ocorrência exigidos pelo Centro de Operações para a execução dos procedimentos administrativos necessários\ninformar ao Centro de Operações o momento exato de sua saída do quartel, de sua chegada e saída do local da ocorrência e de sua chegada ao quartel\nsolicitar apoio ao Supervisor de Dia quando julgar necessário, se o Comandante de Socorro não estiver presente\nministrar instrução para sua guarnição mediante orientação do Comandante de Socorro\nmanter o Comandante de Socorro informado sobre o andamento da ocorrência, quando este não estiver presente no local\ninformar ao Centro de Operações o desfecho final da ocorrência\nutilizar e exigir de todos da guarnição, obrigatoriamente, os Equipamentos de Proteção Individual (EPIs) disponíveis nas ocorrências em que for empregado\ncoordenar e participar da conferência de materiais operacionais ao assumir o serviço e ao término de ocorrência"
+        },
+        {
+          "id": "cargo:condutor-e-operador-de-viatura",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Condutor e Operador de Viatura",
+          "editId": "organ:guarnicao/cargo:condutor-e-operador-de-viatura",
+          "caput": "Ao Condutor e Operador de Viatura compete:",
+          "items": [
+            {
+              "text": "cumprir e fazer cumprir o disposto no Regimento",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "conduzir a viatura com segurança até o local das ocorrências",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "operar o corpo de bombas de modo a suprir de água, com vazão e pressão adequadas para as linhas de combate a incêndio armadas para tal finalidade",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "se condutor e operador de plataforma mecânica ou escada mecânica, calçar e operar os engenhos destas viaturas de forma que possam ser utilizadas convenientemente e com segurança, para o combate e extinção de incêndios, salvamentos ou outros serviços para que forem designados",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "se condutor e operador de viaturas de porte leve e/ou pesado sem corpo de bomba, conduzir a viatura de forma que possibilite condições favoráveis de segurança e trabalho para os militares de serviço, bem como a segurança e o bem-estar de pacientes transportados",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "conduzir a viatura com prudência de modo que a guarnição, materiais e equipamentos transportados cheguem ao local das ocorrências e retornem ao quartel com segurança",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "manter as viaturas em plenas condições de uso, executando os procedimentos de manutenção de 1º escalão",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "cumprir rigorosamente as ordens dadas pelo Comandante de Socorro durante todo o período em que estiver de prontidão",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "comunicar ao Auxiliar de Manutenção e Transporte e/ou ao Comandante de Socorro as alterações encontradas na viatura ao assumir o serviço ou ocorridas durante a execução de missões de socorro",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "passar a viatura ao seu sucessor, dando-lhe todas as informações necessárias sobre o estado geral da mesma, bem como das alterações existentes e ordens de serviço em vigor",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "abastecer a viatura de combustível sempre que houver necessidade",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "manter sempre abastecidos os tanques de água das viaturas de combate a incêndio",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "cumprir normas e determinações específicas colocadas em vigor pelo Comando, pela Diretoria Operacional, pelo Departamento de Manutenção e pelo Comando do Batalhão",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPIs) disponíveis e necessários nas ocorrências em que for empregado",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            },
+            {
+              "text": "manter sua habilitação em dia, conforme exigência para ingresso no quadro de condutor",
+              "source": "cf. CBMSE, RISD, Art. 15"
+            }
+          ],
+          "proposedText": "cumprir e fazer cumprir o disposto no Regimento\nconduzir a viatura com segurança até o local das ocorrências\noperar o corpo de bombas de modo a suprir de água, com vazão e pressão adequadas para as linhas de combate a incêndio armadas para tal finalidade\nse condutor e operador de plataforma mecânica ou escada mecânica, calçar e operar os engenhos destas viaturas de forma que possam ser utilizadas convenientemente e com segurança, para o combate e extinção de incêndios, salvamentos ou outros serviços para que forem designados\nse condutor e operador de viaturas de porte leve e/ou pesado sem corpo de bomba, conduzir a viatura de forma que possibilite condições favoráveis de segurança e trabalho para os militares de serviço, bem como a segurança e o bem-estar de pacientes transportados\nconduzir a viatura com prudência de modo que a guarnição, materiais e equipamentos transportados cheguem ao local das ocorrências e retornem ao quartel com segurança\nmanter as viaturas em plenas condições de uso, executando os procedimentos de manutenção de 1º escalão\ncumprir rigorosamente as ordens dadas pelo Comandante de Socorro durante todo o período em que estiver de prontidão\ncomunicar ao Auxiliar de Manutenção e Transporte e/ou ao Comandante de Socorro as alterações encontradas na viatura ao assumir o serviço ou ocorridas durante a execução de missões de socorro\npassar a viatura ao seu sucessor, dando-lhe todas as informações necessárias sobre o estado geral da mesma, bem como das alterações existentes e ordens de serviço em vigor\nabastecer a viatura de combustível sempre que houver necessidade\nmanter sempre abastecidos os tanques de água das viaturas de combate a incêndio\ncumprir normas e determinações específicas colocadas em vigor pelo Comando, pela Diretoria Operacional, pelo Departamento de Manutenção e pelo Comando do Batalhão\nutilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPIs) disponíveis e necessários nas ocorrências em que for empregado\nmanter sua habilitação em dia, conforme exigência para ingresso no quadro de condutor"
+        }
+      ]
+    },
+    {
       "id": "finais",
       "kind": "prose",
       "chapterTitle": "DAS DISPOSIÇÕES FINAIS",

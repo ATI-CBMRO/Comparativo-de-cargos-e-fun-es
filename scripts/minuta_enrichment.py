@@ -335,3 +335,86 @@ ENRICHMENT_ORGAN = {
 def enrich_organ_for(organ_key: str):
     """Itens de enriquecimento de competência do órgão [{text, source}]; [] se não houver."""
     return list(ENRICHMENT_ORGAN.get(organ_key, []))
+
+
+# ── CBMSE, RISD (Regulamento Interno dos Serviços Diários), Art. 14 — Comandante de Guarnição ──
+_SE_CMT_GUARNICAO = [
+    "cumprir e fazer cumprir todas as normas relativas ao serviço diário de sua competência",
+    "apresentar-se ao Comandante de Socorro no início do serviço, transmitindo-lhe as condições "
+    "dos equipamentos na viatura, depois de minuciosa conferência do material",
+    "sair da base mediante exclusiva autorização dos superiores de serviço",
+    "exercer o comando dos integrantes da guarnição com vista ao emprego tático da equipe",
+    "controlar, no local da ocorrência, os materiais e equipamentos da viatura utilizados por sua "
+    "guarnição",
+    "estar atento à segurança do seu pessoal, do patrimônio e do meio ambiente no setor de sua "
+    "responsabilidade",
+    "responder pelo Comandante de Socorro por ocasião de atendimento a socorro isolado",
+    "auxiliar o Comandante de Socorro a manter o moral e a disciplina da guarnição sob sua chefia, "
+    "tanto dentro quanto fora da OBM",
+    "providenciar a coleta de todos os dados da ocorrência exigidos pelo Centro de Operações para a "
+    "execução dos procedimentos administrativos necessários",
+    "informar ao Centro de Operações o momento exato de sua saída do quartel, de sua chegada e "
+    "saída do local da ocorrência e de sua chegada ao quartel",
+    "solicitar apoio ao Supervisor de Dia quando julgar necessário, se o Comandante de Socorro não "
+    "estiver presente",
+    "ministrar instrução para sua guarnição mediante orientação do Comandante de Socorro",
+    "manter o Comandante de Socorro informado sobre o andamento da ocorrência, quando este não "
+    "estiver presente no local",
+    "informar ao Centro de Operações o desfecho final da ocorrência",
+    "utilizar e exigir de todos da guarnição, obrigatoriamente, os Equipamentos de Proteção "
+    "Individual (EPIs) disponíveis nas ocorrências em que for empregado",
+    "coordenar e participar da conferência de materiais operacionais ao assumir o serviço e ao "
+    "término de ocorrência",
+]
+
+# ── CBMSE, RISD, Art. 15 — Condutor e Operador de Viaturas ──
+_SE_CONDUTOR = [
+    "cumprir e fazer cumprir o disposto no Regimento",
+    "conduzir a viatura com segurança até o local das ocorrências",
+    "operar o corpo de bombas de modo a suprir de água, com vazão e pressão adequadas para as "
+    "linhas de combate a incêndio armadas para tal finalidade",
+    "se condutor e operador de plataforma mecânica ou escada mecânica, calçar e operar os engenhos "
+    "destas viaturas de forma que possam ser utilizadas convenientemente e com segurança, para o "
+    "combate e extinção de incêndios, salvamentos ou outros serviços para que forem designados",
+    "se condutor e operador de viaturas de porte leve e/ou pesado sem corpo de bomba, conduzir a "
+    "viatura de forma que possibilite condições favoráveis de segurança e trabalho para os militares "
+    "de serviço, bem como a segurança e o bem-estar de pacientes transportados",
+    "conduzir a viatura com prudência de modo que a guarnição, materiais e equipamentos "
+    "transportados cheguem ao local das ocorrências e retornem ao quartel com segurança",
+    "manter as viaturas em plenas condições de uso, executando os procedimentos de manutenção de "
+    "1º escalão",
+    "cumprir rigorosamente as ordens dadas pelo Comandante de Socorro durante todo o período em "
+    "que estiver de prontidão",
+    "comunicar ao Auxiliar de Manutenção e Transporte e/ou ao Comandante de Socorro as alterações "
+    "encontradas na viatura ao assumir o serviço ou ocorridas durante a execução de missões de socorro",
+    "passar a viatura ao seu sucessor, dando-lhe todas as informações necessárias sobre o estado "
+    "geral da mesma, bem como das alterações existentes e ordens de serviço em vigor",
+    "abastecer a viatura de combustível sempre que houver necessidade",
+    "manter sempre abastecidos os tanques de água das viaturas de combate a incêndio",
+    "cumprir normas e determinações específicas colocadas em vigor pelo Comando, pela Diretoria "
+    "Operacional, pelo Departamento de Manutenção e pelo Comando do Batalhão",
+    "utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPIs) disponíveis e "
+    "necessários nas ocorrências em que for empregado",
+    "manter sua habilitação em dia, conforme exigência para ingresso no quadro de condutor",
+]
+
+# Capítulo da Guarnição de Serviço Operacional — a MENOR fração operacional.
+# O CBMRO não a define na LOB/minuta (é matéria de regulamento de serviço); subsídio
+# integral do CBMSE (RISD), rotulado. A finalidade é enquadramento institucional.
+GUARNICAO_CHAPTER = {
+    "chapterTitle": "DA GUARNIÇÃO DE SERVIÇO OPERACIONAL",
+    "label": "Guarnição de Serviço Operacional",
+    "finalidade": (
+        "A guarnição de serviço operacional é a menor fração empregada nas atividades operacionais "
+        "do Corpo de Bombeiros Militar do Estado de Rondônia, constituída pela equipe da viatura em "
+        "serviço, chefiada pelo militar mais antigo ou designado."
+    ),
+    "cargos": [
+        ("Comandante de Guarnição",
+         "Ao Comandante de Guarnição de serviço operacional compete:",
+         _tag(_SE_CMT_GUARNICAO, "cf. CBMSE, RISD, Art. 14")),
+        ("Condutor e Operador de Viatura",
+         "Ao Condutor e Operador de Viatura compete:",
+         _tag(_SE_CONDUTOR, "cf. CBMSE, RISD, Art. 15")),
+    ],
+}
