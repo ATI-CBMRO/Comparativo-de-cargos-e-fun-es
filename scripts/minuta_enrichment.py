@@ -12,7 +12,7 @@ Dois níveis de enriquecimento:
      atribuições pessoais do comando, a partir do RI do CBMAL (Arts. 107/114/115).
      token_da_funcao normaliza o nome do cargo ('comandante', 'adjunto', etc.).
   2. ENRICHMENT_ORGAN — por ÓRGÃO, chave organ_key: competências/missões da
-     unidade, a partir das leis/RIs de PR, MT, ES, PA, SC, BA e PE.
+     unidade, a partir das leis/RIs de PR, MT, ES, PA, SC, BA, PE, CE e SP.
 
 Cada item carrega a citação da fonte. Expansível adicionando novas entradas.
 """
@@ -257,6 +257,24 @@ _PE_CAT = [
     "exigirem",
 ]
 
+# ── CBMCE, Lei nº 13.438/2004, Art. 17 — Coordenadoria de Atividades Técnicas ──
+_CE_CAT = [
+    "gerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados",
+    "desenvolver pesquisa científica e avaliar o desempenho operacional da Corporação",
+    "analisar projetos de edificações, vistorias e pareceres técnicos",
+    "controlar, manter e manobrar hidrantes",
+]
+
+# ── CBMSP, Lei nº 616/1974, Art. 40, §2º, 7 — Seção de Serviço Técnico (B/6) ──
+_SP_TEC = [
+    "executar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos "
+    "e às medidas preventivas contra incêndios",
+    "proceder a exames de plantas e a perícias",
+    "realizar testes de incombustibilidade",
+    "realizar vistorias e emitir pareceres",
+    "supervisionar a instalação da rede de hidrantes públicos",
+]
+
 
 # Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
 ENRICHMENT_ORGAN = {
@@ -267,7 +285,9 @@ ENRICHMENT_ORGAN = {
           + _tag(_ES_CAT,  "cf. CBMES, NGA — Centro de Atividades Técnicas")
           + _tag(_SC_DSCI, "cf. CBMSC, Dec. nº 1.328/2021, Art. 38")
           + _tag(_BA_CSCI, "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV")
-          + _tag(_PE_CAT,  "cf. CBMPE, Lei nº 15.187/2013, Art. 97"),
+          + _tag(_PE_CAT,  "cf. CBMPE, Lei nº 15.187/2013, Art. 97")
+          + _tag(_CE_CAT,  "cf. CBMCE, Lei nº 13.438/2004, Art. 17")
+          + _tag(_SP_TEC,  "cf. CBMSP, Lei nº 616/1974, Art. 40, §2º, 7"),
     "crbm": _tag(_SC_RBM,  "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"),
     "bbm":  _tag(_PR_BBM,  "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"),
     "cibm": _tag(_PR_CIBM, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, II"),
