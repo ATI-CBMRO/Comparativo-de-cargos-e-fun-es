@@ -55,7 +55,7 @@ Interno** — navegar pela minuta e, em cada ponto, ver o que cada estado fez al
 
 ### Espinha = a minuta
 
-- Sidebar/sumário interno lista os **12 órgãos** na ordem de subordinação do RO:
+- Sidebar/sumário interno lista os **11 órgãos (10 da LOB + Guarnição)** na ordem de subordinação do RO:
   DPO, COT, DOE, CRBM, BBM, CIBM, GBM, BBS, BIFEA, BOA, **+ Guarnição de Serviço
   Operacional**.
 - Clicar num órgão carrega o comparativo daquele órgão.
@@ -162,7 +162,7 @@ CBMSE/RISD"*, e a coluna do CBMSE traz as atribuições do **Comandante de Guarn
 
 ## Critérios de sucesso
 
-1. A página `/comparar` mostra os 12 órgãos da minuta e, para cada um, RO × estados com dado.
+1. A página `/comparar` mostra os 11 órgãos (10 da LOB + Guarnição) da minuta e, para cada um, RO × estados com dado.
 2. Guarnição exibe o Comandante de Guarnição (CBMSE) verbatim — a profundidade que faltava.
 3. DPO/COT mantêm a qualidade curada atual; itens curados trazem a fonte; itens automáticos
    vêm marcados como tais.

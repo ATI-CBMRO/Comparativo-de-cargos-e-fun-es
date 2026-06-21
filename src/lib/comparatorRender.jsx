@@ -45,13 +45,6 @@ export const MATRIX_ROWS = [
         ? <ul className="cc-list">{reqs.map((r, i) => <li key={i}>{renderFriendlyText(r)}</li>)}</ul>
         : <span className="cc-empty">—</span>
     } },
-  { key: 'atrib', label: 'Atribuições / Competências', render: o => {
-      const items = organAtribuicoes(o)
-      // inclui atribuições por cargo quando o órgão tem cargos detalhados
-      const cargoAtribs = []
-      for (const c of o.cargos || []) for (const a of c.atribuicoes || []) cargoAtribs.push(a)
-      const all = items.length ? items : cargoAtribs
-      return <List items={all} />
-    } },
+  { key: 'atrib', label: 'Atribuições / Competências', render: o => <List items={organAtribuicoes(o)} /> },
   { key: 'desd', label: 'Desdobramentos', render: o => <List items={o.desdobramentos} /> },
 ]

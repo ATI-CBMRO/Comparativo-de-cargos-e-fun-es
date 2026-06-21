@@ -1291,53 +1291,9 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   }
   .page-body { padding: 0 !important; }
 
-  /* Grade de comparação: colunas iguais ocupando a largura total */
-  .compare-grid-scroll {
-    display: grid !important;
-    grid-template-columns: repeat(var(--print-cols, 2), 1fr) !important;
-    gap: 7px !important;
-    width: 100% !important;
-    overflow: visible !important;
-    padding: 0 !important;
-    align-items: start !important;
-  }
-  /* nº de colunas conforme quantidade de painéis */
-  .compare-grid-scroll:has(> .compare-panel:nth-child(3)) { --print-cols: 3; }
-  .compare-grid-scroll:has(> .compare-panel:nth-child(4)) { --print-cols: 4; }
-  .compare-grid-scroll:has(> .compare-panel:nth-child(5)) { --print-cols: 5; }
-
-  .compare-panel {
-    border: 1px solid #c8102e !important;
-    border-radius: 7px !important;
-    background: #fff !important;
-    height: auto !important;
-    overflow: visible !important;
-    /* painéis altos podem fluir entre páginas sem cortar itens */
-    break-inside: auto !important;
-    page-break-inside: auto !important;
-  }
-  .compare-panel > div:first-child {
-    background: #f5f7fa !important;
-    border-bottom: 2px solid #c8102e !important;
-    padding: 8px 10px !important;
-    break-inside: avoid !important;       /* cabeçalho do painel não parte */
-    break-after: avoid !important;
-  }
-
   /* Itens do organograma nunca partem no meio */
   .org-node-header { break-inside: avoid !important; page-break-inside: avoid !important; }
   .org-node { break-inside: auto !important; }
-  .compare-panel .state-initials,
-  .compare-panel > div:first-child > div:first-child {
-    background: #c8102e !important;
-    color: #fff !important;
-    font-size: 12px !important;
-    width: 30px !important; height: 30px !important;
-  }
-  .compare-panel h2, .compare-panel h3 { color: #111 !important; }
-
-  /* Conteúdo dos painéis: rolagem desligada para imprimir tudo */
-  .compare-panel > div:last-child { overflow: visible !important; padding: 10px !important; }
 
   /* Organograma */
   .organogram-container { background: #fff !important; border: none !important; padding: 2px 0 !important; overflow: visible !important; }

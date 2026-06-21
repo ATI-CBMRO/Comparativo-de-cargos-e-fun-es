@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { GitCompare, Info, AlertCircle, Search, FileDown, ScrollText } from 'lucide-react'
-import { renderFriendlyText, MATRIX_ROWS } from '../lib/comparatorRender.jsx'
+import { MATRIX_ROWS } from '../lib/comparatorRender.jsx'
 
 function norm(s) {
   return (s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
