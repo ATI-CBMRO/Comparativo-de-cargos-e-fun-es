@@ -22,7 +22,7 @@ python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> dat
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json (aba "DPO × COT")
-python scripts/build_minuta_structure.py   # comparativo_dpo_cot.json -> database/minuta_structure.json (wizard minuta RI)
+python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json (wizard /minuta)
 ```
 
 > ORDEM IMPORTA: `build_organs_detail.py` deve rodar ANTES de `build_states_data.py`, pois
@@ -79,7 +79,8 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Entrada: `src/main.jsx` (BrowserRouter) → `src/App.jsx` define o layout (Header + Sidebar
   + main) e as rotas. O array `NAV` em `App.jsx` controla a navegação.
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
-  `/legislacoes` (Legislations), `/comparar` (Compare), `/busca` (Search).
+  `/legislacoes` (Legislations), `/comparar` (Compare), `/busca` (Search), `/minuta`
+  (MinutaWizard).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
@@ -109,6 +110,31 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Estilo: CSS único em `src/index.css`. Identidade CBMRO (tema claro): cabeçalho vermelho
   `#c8102e`, sidebar navy `#121d3d`, conteúdo `#eef1f6`. Tipografia Outfit (títulos) + Inter.
 - Ícones: `lucide-react`.
+
+### Wizard de Minuta de Regimento Interno (`/minuta`)
+Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional do CBMRO
+(do Comando-Geral à menor fração), em vez de apenas comparar o que outros estados fizeram.
+
+- `scripts/build_minuta_structure.py` lê **diretamente** `database/organs_detail/ro.json`
+  (não mais o `comparativo_dpo_cot.json`) e percorre os órgãos na ordem de subordinação do
+  RO: Preliminares + Estrutura + 10 órgãos (dpo, cot, doe, crbm, bbm, cibm, gbm, bbs, bifea,
+  boa) + capítulo da **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
+  `database/minuta_structure.json` (`{title, chapters:[{kind: prose|incisos|organ, sections:[...]}]}`).
+- `scripts/minuta_enrichment.py` traz o enriquecimento curado VERBATIM de outros CBMs,
+  rotulado por fonte: `ENRICHMENT` (por cargo/função — hoje só CBMAL) e `ENRICHMENT_ORGAN`
+  (por órgão/competência — AL, MT, PR, SC, DF, SP, BA, CE, PE, ES, PA) mais
+  `GUARNICAO_CHAPTER` (nó estrutural novo, sem equivalente no `ro.json`, subsidiado
+  integralmente pelo RISD do CBMSE). Critério, fontes e descartes (com motivo) em
+  **`docs/ENRIQUECIMENTO_MINUTA.md`** — só entra competência **enumerada e verbatim**;
+  ao ampliar o enriquecimento, editar esse script e reexecutar `build_minuta_structure.py`.
+  `ro.json` nunca é tocado por esse enriquecimento (preserva o Comparador de Cargos).
+- `src/lib/minutaArticles.js` — `buildArticles(structure, edits, isExcluded)` faz a
+  numeração contínua de artigos e capítulos/seções em algarismos romanos a partir do JSON
+  gerado; testado em `minutaArticles.test.js` (`node --test`).
+- `src/pages/MinutaWizard.jsx` — documento único rolável com sidebar de sumário (scroll
+  para capítulo/seção), curadoria por inciso (`excluded: Set<"editId#index">`, com filtro em
+  lote por fonte) e edição de texto por seção em modo avançado; exporta o mesmo resultado
+  filtrado para `.docx` via `docx`.
 
 ### Servir dados: middleware (dev) + cópia no build (produção)
 `vite.config.js` registra DOIS plugins customizados:
