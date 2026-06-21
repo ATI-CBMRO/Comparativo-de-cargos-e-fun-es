@@ -43,7 +43,8 @@ Interno** — navegar pela minuta e, em cada ponto, ver o que cada estado fez al
 
 ### Navegação e IA
 
-- A nova página assume o slot existente **"Comparativo"** na sidebar → rota **`/comparar`**.
+- A nova página fica na sidebar como **"Subsídio à Minuta"** → rota **`/comparar`** (mesma
+  rota antes usada pelo `Compare.jsx`, agora reaproveitada).
 - `src/pages/Compare.jsx` é removido; a rota `/comparar` passa a renderizar a nova página.
 - As abas **"Comparativo de Cargos"** e **"DPO × COT"** saem do `Dashboard.jsx` — o
   Dashboard volta a ter só **"Visão Geral"** (remove o estado `activeTab` e os imports dos
@@ -148,7 +149,7 @@ CBMSE/RISD"*, e a coluna do CBMSE traz as atribuições do **Comandante de Guarn
 - Reaproveitar helpers de render verbatim (`renderFriendlyText`, `List`, células de
   cargos/atribuições) — extrair para um módulo compartilhado se reduzir duplicação.
 - `src/App.jsx`: rota `/comparar` aponta para a nova página; remove import/rota de
-  `Compare.jsx`; mantém o item de sidebar "Comparativo".
+  `Compare.jsx`; item de sidebar passa a se chamar **"Subsídio à Minuta"**.
 - `src/pages/Dashboard.jsx`: remove abas e imports dos comparadores.
 
 ## Fora de escopo (v1)
