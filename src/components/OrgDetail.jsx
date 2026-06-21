@@ -107,7 +107,7 @@ export default function OrgDetail({ organ, onClose }) {
   const hasDetail = organ.atribuicoes?.length || organ.desdobramentos?.length || organ.cargos?.length
 
   return (
-    <div style={{
+    <div className="org-detail-panel" style={{
       position: 'fixed',
       top: 0, right: 0,
       width: 520,

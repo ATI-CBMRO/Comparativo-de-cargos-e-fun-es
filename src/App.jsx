@@ -1,7 +1,8 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Library, ScrollText
+  Search, Library, ScrollText, Menu, X
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -20,9 +21,19 @@ const NAV = [
   { to: '/busca', icon: Search, label: 'Busca Textual' },
 ]
 
-function Header() {
+function Header({ navOpen, onToggleNav }) {
   return (
     <header className="app-header">
+      <button
+        type="button"
+        className="app-header-burger"
+        onClick={onToggleNav}
+        aria-label={navOpen ? 'Fechar navegação' : 'Abrir navegação'}
+        aria-expanded={navOpen}
+        aria-controls="sidebar-nav"
+      >
+        {navOpen ? <X size={22} /> : <Menu size={22} />}
+      </button>
       <img
         className="app-header-emblem"
         src="/BrasaoCBMRO2D-COMPLETO.png"
@@ -42,9 +53,9 @@ function Header() {
   )
 }
 
-function Sidebar() {
+function Sidebar({ open, onNavigate }) {
   return (
-    <aside className="sidebar">
+    <aside id="sidebar-nav" className={`sidebar${open ? ' open' : ''}`}>
       <div className="sidebar-logo">
         <div className="sidebar-logo-icon">
           <Flame size={20} color="#fff" strokeWidth={2.5} />
@@ -62,6 +73,7 @@ function Sidebar() {
             key={to}
             to={to}
             end={end}
+            onClick={onNavigate}
             className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
           >
             <Icon className="nav-icon" size={18} />
@@ -81,10 +93,21 @@ function Sidebar() {
 }
 
 export default function App() {
+  const [navOpen, setNavOpen] = useState(false)
+  const location = useLocation()
+
+  // Fecha a navegação ao mudar de rota (ex.: clique num item no mobile).
+  useEffect(() => { setNavOpen(false) }, [location.pathname])
+
   return (
     <div className="app-shell">
-      <Header />
-      <Sidebar />
+      <Header navOpen={navOpen} onToggleNav={() => setNavOpen(o => !o)} />
+      <Sidebar open={navOpen} onNavigate={() => setNavOpen(false)} />
+      <div
+        className={`sidebar-backdrop${navOpen ? ' show' : ''}`}
+        onClick={() => setNavOpen(false)}
+        aria-hidden="true"
+      />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Dashboard />} />
