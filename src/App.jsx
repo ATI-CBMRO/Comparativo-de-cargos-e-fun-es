@@ -14,10 +14,10 @@ import MinutaWizard from './pages/MinutaWizard.jsx'
 const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
   { to: '/estados', icon: BookOpen, label: 'Estados' },
-  { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
   { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
-  { to: '/busca', icon: Search, label: 'Busca Textual' },
   { to: '/minuta', icon: ScrollText, label: 'Minuta RI' },
+  { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
+  { to: '/busca', icon: Search, label: 'Busca Textual' },
 ]
 
 function Header() {
