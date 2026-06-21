@@ -28,7 +28,6 @@ export default function SearchPage() {
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [loading, setLoading] = useState(false)
-  const [regionFilter, setRegionFilter] = useState('Todos')
   const navigate = useNavigate()
 
   // Carrega dados dos estados
@@ -44,12 +43,6 @@ export default function SearchPage() {
     return () => clearTimeout(t)
   }, [query])
 
-  // Regiões disponíveis
-  const regions = useMemo(() => {
-    if (!data) return []
-    return ['Todos', ...new Set(data.states.map(s => s.region))]
-  }, [data])
-
   // Busca nos dados estruturados (organograma, documentos, base legal)
   const structuralResults = useMemo(() => {
     if (!data || !debouncedQuery || debouncedQuery.length < 2) return []
@@ -58,8 +51,6 @@ export default function SearchPage() {
     const results = []
 
     data.states.forEach(state => {
-      if (regionFilter !== 'Todos' && state.region !== regionFilter) return
-
       const matches = []
 
       // Busca no nome
@@ -117,7 +108,7 @@ export default function SearchPage() {
     })
 
     return results.slice(0, 30)
-  }, [data, debouncedQuery, regionFilter])
+  }, [data, debouncedQuery])
 
   const totalResults = structuralResults.reduce((acc, r) => acc + r.totalMatches, 0)
 
@@ -146,19 +137,6 @@ export default function SearchPage() {
           </div>
         </div>
 
-        {/* Filtro de região */}
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 20 }}>
-          {regions.map(r => (
-            <button
-              key={r}
-              className={`btn btn-sm ${regionFilter === r ? 'btn-primary' : 'btn-ghost'}`}
-              onClick={() => setRegionFilter(r)}
-            >
-              {r}
-            </button>
-          ))}
-        </div>
-
         {/* Resultados */}
         {debouncedQuery.length >= 2 && (
           <div style={{ marginBottom: 12, fontSize: 13, color: 'var(--text-muted)' }}>
@@ -184,13 +162,6 @@ export default function SearchPage() {
             <Search size={40} className="empty-state-icon" />
             <h3>Pronto para buscar</h3>
             <p>Digite pelo menos 2 caracteres para iniciar a pesquisa nos dados estruturados de todos os estados.</p>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center', marginTop: 12 }}>
-              {['Diretoria', 'Corregedoria', 'Estado-Maior', 'Batalhão', 'Regimento', 'Comando Geral'].map(term => (
-                <button key={term} className="btn btn-ghost btn-sm" onClick={() => setQuery(term)}>
-                  {term}
-                </button>
-              ))}
-            </div>
           </div>
         )}
 
@@ -223,7 +194,6 @@ export default function SearchPage() {
                       {totalMatches} ocorrência{totalMatches !== 1 ? 's' : ''}
                     </span>
                   </div>
-                  <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 2 }}>{state.region}</div>
                 </div>
                 <ChevronRight size={18} color="var(--cbm-gray-400)" />
               </div>

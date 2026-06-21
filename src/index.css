@@ -917,6 +917,26 @@ img { display: block; max-width: 100%; }
   z-index: 3 !important;
 }
 
+/* ── Subsídio à Minuta: chips de estado (trocam o estado comparado) ── */
+.oc-state-chips {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-bottom: 12px;
+}
+.oc-state-chips-label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
+  color: var(--text-muted); margin-right: 4px;
+}
+.oc-state-chip {
+  font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 99px;
+  background: var(--bg-surface); border: 1px solid var(--border-card);
+  color: var(--navy-900); cursor: pointer; font-family: 'Outfit', sans-serif;
+  transition: background .12s ease, color .12s ease, border-color .12s ease;
+}
+.oc-state-chip:hover { background: var(--navy-100, #e6e9f2); border-color: var(--navy-400, #99a3c2); }
+.oc-state-chip.active {
+  background: var(--cbm-red-700); color: #fff; border-color: var(--cbm-red-700);
+}
+.oc-pair-table .cc-corp-name { white-space: normal; line-height: 1.3; }
+
 /* ── Sub-cabeçalho de órgão (quando estado tem 2+ órgãos) ── */
 .oc-sub-header {
   font-size: 10.5px; font-weight: 600; color: var(--text-muted);
@@ -1170,6 +1190,23 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
 /* Linhas do acervo legal: feedback de hover (sem borda, via sombra+lift) */
 .leg-row { transition: box-shadow var(--transition), transform var(--transition); }
 .leg-row:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+
+/* Cabeçalho de grupo de estado no Acervo Legal */
+.leg-state-head {
+  display: flex; align-items: center; gap: 12px; width: 100%;
+  background: var(--navy-900, #121d3d); color: #fff;
+  border: none; border-radius: var(--radius-md); padding: 10px 16px;
+  cursor: pointer; text-align: left; transition: filter var(--transition);
+}
+.leg-state-head:hover { filter: brightness(1.12); }
+.leg-state-abbr {
+  width: 36px; height: 36px; flex-shrink: 0; border-radius: var(--radius-md);
+  background: var(--cbm-red-700); color: #fff; font-family: 'Outfit', sans-serif;
+  font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center;
+}
+.leg-state-meta { display: flex; flex-direction: column; line-height: 1.25; }
+.leg-state-name { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 14px; color: #fff; }
+.leg-state-cbm { font-size: 11px; color: #aeb9d6; font-weight: 600; }
 
 /* Tabs e chips: foco acessível + clique tátil */
 .tab:focus-visible,
@@ -1828,7 +1865,8 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
 /* ── Impressão do comparador "Subsídio à Minuta" ── */
 @media print {
   .print-only-title { display: block !important; font-family: 'Outfit', sans-serif;
-    font-size: 16pt; font-weight: 800; text-align: center; margin: 0 0 12px; color: #000; }
-  .oc-matrix-table { font-size: 8.5pt; }
+    font-size: 15pt; font-weight: 800; text-align: center; margin: 0 0 12px; color: #000; }
+  .oc-pair-table { font-size: 9pt; }
+  .oc-pair-table td, .oc-pair-table th { padding: 8px 10px; }
   .page-body { display: block !important; }
 }

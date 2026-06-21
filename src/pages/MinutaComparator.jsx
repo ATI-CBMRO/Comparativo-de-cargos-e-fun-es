@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { GitCompare, Info, AlertCircle, Search, FileDown, ScrollText } from 'lucide-react'
+import { GitCompare, Info, AlertCircle, Search, FileDown, ScrollText, PanelLeftClose, PanelLeftOpen } from 'lucide-react'
 import { MATRIX_ROWS } from '../lib/comparatorRender.jsx'
 
 function norm(s) {
@@ -18,20 +18,38 @@ function ProvBadge({ provenance }) {
   )
 }
 
-function Matrix({ organ, states }) {
+/* Pilha de órgãos de um estado dentro de uma célula (alguns estados têm 2+) */
+function StateCell({ state, row }) {
+  if (!state || (state.organs || []).length === 0) return <span className="cc-empty">—</span>
+  return (
+    <>
+      {state.organs.map((o, i) => (
+        <div key={i} style={i > 0 ? { marginTop: 8, paddingTop: 8, borderTop: '1px dashed var(--border-subtle)' } : undefined}>
+          {row.render(o)}
+        </div>
+      ))}
+      {row.key === 'organ' && state.note && (
+        <div style={{ marginTop: 6, fontSize: 10.5, color: 'var(--text-muted)', fontStyle: 'italic' }}>{state.note}</div>
+      )}
+    </>
+  )
+}
+
+/* Tabela pareada: Campo | CBMRO | estado selecionado */
+function PairTable({ organ, state }) {
   const refOrgans = organ.reference ? [organ.reference] : []
   return (
-    <div className="cargo-compare-wrapper oc-scroll">
-      <table className="cargo-compare-table oc-matrix-table">
+    <div className="oc-pair-wrapper" style={{ border: '1px solid var(--border-card)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
+      <table className="oc-pair-table">
         <colgroup>
-          <col style={{ width: 150 }} />
-          {refOrgans.length === 0 ? <col style={{ minWidth: 240 }} /> : refOrgans.map((_, i) => <col key={i} style={{ minWidth: 240 }} />)}
-          {states.map(s => <col key={s.id} style={{ minWidth: 210 }} />)}
+          <col className="oc-pair-col-label" />
+          <col className="oc-pair-col-ro" />
+          <col className="oc-pair-col-st" />
         </colgroup>
         <thead>
           <tr>
-            <th className="cc-col-label cc-corner">Campo</th>
-            <th className="cc-col-ro cc-corner" colSpan={Math.max(refOrgans.length, 1)}>
+            <th className="oc-pair-th-label">Campo</th>
+            <th className="oc-pair-th-ro">
               <div className="cc-corp-head">
                 <span className="cc-corp-abbr ref">RO</span>
                 <div>
@@ -40,50 +58,39 @@ function Matrix({ organ, states }) {
                 </div>
               </div>
             </th>
-            {states.map(s => (
-              <th key={s.id}>
-                <div className="cc-corp-head" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 4 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <span className="cc-corp-abbr">{s.abbr}</span>
-                    <div>
-                      <div className="cc-corp-name">{s.name}</div>
-                      <div className="cc-corp-cbm">{s.cbm}</div>
+            <th className="oc-pair-th-st">
+              {state ? (
+                <div className="cc-corp-head">
+                  <span className="cc-corp-abbr">{state.abbr}</span>
+                  <div>
+                    <div className="cc-corp-name">{state.name}</div>
+                    <div className="cc-corp-cbm" style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+                      {state.cbm}
+                      <ProvBadge provenance={state.provenance} />
+                      {state.sourceLabel && <span style={{ fontWeight: 600 }}>{state.sourceLabel}</span>}
                     </div>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                    <ProvBadge provenance={s.provenance} />
-                    {s.sourceLabel && <span style={{ fontSize: 9.5, color: 'var(--text-muted)' }}>{s.sourceLabel}</span>}
-                  </div>
                 </div>
-              </th>
-            ))}
+              ) : <span className="cc-empty">Selecione um estado</span>}
+            </th>
           </tr>
         </thead>
         <tbody>
           {MATRIX_ROWS.map((row, rowIdx) => (
             <tr key={row.key}>
-              <td className="cc-col-label">{row.label}</td>
+              <td className="oc-pair-td-label">{row.label}</td>
               {refOrgans.length === 0
                 ? (rowIdx === 0
-                    ? <td className="cc-col-ro cc-ref-cell" rowSpan={MATRIX_ROWS.length} style={{ verticalAlign: 'top' }}>
-                        <span style={{ display: 'flex', gap: 5, alignItems: 'flex-start', fontSize: 11.5, fontStyle: 'italic', color: 'var(--text-muted)' }}>
+                    ? <td className="oc-pair-td-ro" rowSpan={MATRIX_ROWS.length} style={{ verticalAlign: 'top' }}>
+                        <span style={{ display: 'flex', gap: 5, alignItems: 'flex-start', fontStyle: 'italic', color: 'var(--text-muted)' }}>
                           <AlertCircle size={13} style={{ flexShrink: 0, marginTop: 2 }} />
                           {organ.referenceNote || 'O CBMRO não discrimina este órgão.'}
                         </span>
                       </td>
                     : null)
-                : refOrgans.map((o, i) => <td key={i} className="cc-col-ro cc-ref-cell">{row.render(o)}</td>)
+                : <td className="oc-pair-td-ro">{row.render(refOrgans[0])}</td>
               }
-              {states.map(s => (
-                <td key={s.id}>
-                  {(s.organs || []).length === 0
-                    ? <span className="cc-empty">—</span>
-                    : s.organs.map((o, i) => <div key={i} style={i > 0 ? { marginTop: 8, paddingTop: 8, borderTop: '1px dashed var(--border-subtle)' } : undefined}>{row.render(o)}</div>)}
-                  {row.key === 'organ' && s.note && (
-                    <div style={{ marginTop: 6, fontSize: 10.5, color: 'var(--text-muted)', fontStyle: 'italic' }}>{s.note}</div>
-                  )}
-                </td>
-              ))}
+              <td className="oc-pair-td-st"><StateCell state={state} row={row} /></td>
             </tr>
           ))}
         </tbody>
@@ -96,7 +103,9 @@ export default function MinutaComparator() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
   const [organKey, setOrganKey] = useState(null)
+  const [selectedStateId, setSelectedStateId] = useState(null)
   const [search, setSearch] = useState('')
+  const [navOpen, setNavOpen] = useState(true)
 
   useEffect(() => {
     fetch('/database/comparativo_minuta.json')
@@ -107,12 +116,29 @@ export default function MinutaComparator() {
 
   const organ = useMemo(() => data?.organs.find(o => o.key === organKey) || null, [data, organKey])
 
-  const visibleStates = useMemo(() => {
+  // Chips em ordem alfabética, filtrados pela busca
+  const chips = useMemo(() => {
     if (!organ) return []
-    if (!search.trim()) return organ.states
+    const sorted = [...organ.states].sort((a, b) => a.abbr.localeCompare(b.abbr, 'pt'))
+    if (!search.trim()) return sorted
     const q = norm(search)
-    return organ.states.filter(s => norm(s.name).includes(q) || norm(s.abbr).includes(q) || norm(s.cbm).includes(q))
+    return sorted.filter(s => norm(s.name).includes(q) || norm(s.abbr).includes(q) || norm(s.cbm).includes(q))
   }, [organ, search])
+
+  // Ao trocar de órgão, garante um estado válido selecionado (primeiro do órgão)
+  useEffect(() => {
+    if (!organ) return
+    const ids = organ.states.map(s => s.id)
+    if (!selectedStateId || !ids.includes(selectedStateId)) {
+      const first = [...organ.states].sort((a, b) => a.abbr.localeCompare(b.abbr, 'pt'))[0]
+      setSelectedStateId(first ? first.id : null)
+    }
+  }, [organ]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const selectedState = useMemo(
+    () => organ?.states.find(s => s.id === selectedStateId) || null,
+    [organ, selectedStateId]
+  )
 
   if (error) {
     return (
@@ -135,27 +161,43 @@ export default function MinutaComparator() {
       <div className="page-body">
         <div className="card no-print" style={{ marginBottom: 16 }}>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
-            Compare a legislação do <strong>CBMRO</strong> com a dos demais estados, órgão a órgão, na mesma
-            ordem da minuta do Regimento Interno — do topo (DPO/COT) à menor fração (Guarnição de Serviço).
-            Colunas marcadas <strong>Curado</strong> trazem texto verbatim atribuído à fonte; <strong>Auto</strong>
-            vêm de extração automática e podem ser rasas. Só aparecem estados com dado para o órgão.
+            Compare a legislação do <strong>CBMRO</strong> com a de <strong>um estado por vez</strong>, órgão a
+            órgão, na mesma ordem da minuta do Regimento Interno — do topo (DPO/COT) à menor fração (Guarnição
+            de Serviço). Escolha o órgão à esquerda e clique na <strong>sigla de um estado</strong> para trocar a
+            legislação comparada. Colunas marcadas <strong>Curado</strong> trazem texto verbatim atribuído à
+            fonte; <strong>Auto</strong> vêm de extração automática e podem ser rasas.
           </p>
         </div>
 
         <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-          {/* Sumário de órgãos */}
-          <aside className="no-print" style={{ flex: '0 0 230px', position: 'sticky', top: 12 }}>
-            <div className="card" style={{ padding: 8 }}>
-              <div className="nav-section-label" style={{ padding: '6px 8px' }}>Órgãos da minuta</div>
+          {/* Sumário de órgãos (colapsável) */}
+          <aside className="no-print" style={{ flex: navOpen ? '0 0 220px' : '0 0 52px', position: 'sticky', top: 12, transition: 'flex-basis 0.15s ease' }}>
+            <div className="card" style={{ padding: navOpen ? 8 : 6 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: navOpen ? 'space-between' : 'center', gap: 6, padding: navOpen ? '2px 4px 6px' : '2px 0 6px' }}>
+                {navOpen && <span className="nav-section-label" style={{ padding: '4px 6px' }}>Órgãos da minuta</span>}
+                <button
+                  onClick={() => setNavOpen(v => !v)}
+                  className="btn btn-ghost"
+                  title={navOpen ? 'Recolher lista de órgãos' : 'Expandir lista de órgãos'}
+                  style={{ padding: 5, height: 28, minWidth: 28 }}
+                >
+                  {navOpen ? <PanelLeftClose size={15} /> : <PanelLeftOpen size={15} />}
+                </button>
+              </div>
               {data.organs.map(o => (
                 <button
                   key={o.key}
                   onClick={() => setOrganKey(o.key)}
                   className={`nav-item${o.key === organKey ? ' active' : ''}`}
-                  style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer', fontSize: 12.5 }}
-                  title={o.title}
+                  style={{
+                    width: '100%', border: 'none', cursor: 'pointer', fontSize: 12.5,
+                    textAlign: navOpen ? 'left' : 'center',
+                    justifyContent: navOpen ? 'flex-start' : 'center',
+                    padding: navOpen ? undefined : '8px 2px',
+                  }}
+                  title={navOpen ? o.title : `${o.title} — ${o.states.length} estado(s)`}
                 >
-                  {o.abbr} <span style={{ opacity: 0.6, fontSize: 10, marginLeft: 4 }}>{o.states.length}</span>
+                  {o.abbr}{navOpen && <span style={{ opacity: 0.6, fontSize: 10, marginLeft: 4 }}>{o.states.length}</span>}
                 </button>
               ))}
             </div>
@@ -174,7 +216,7 @@ export default function MinutaComparator() {
                   <div className="search-input-wrap" style={{ maxWidth: 280 }}>
                     <Search size={14} className="search-input-icon" />
                     <input
-                      type="text" className="search-input" placeholder="Buscar estado / CBM..."
+                      type="text" className="search-input" placeholder="Filtrar siglas de estado..."
                       value={search} onChange={e => setSearch(e.target.value)}
                       style={{ height: 36, paddingLeft: 34, fontSize: 13 }}
                     />
@@ -184,11 +226,31 @@ export default function MinutaComparator() {
                   </button>
                 </div>
 
-                <div className="print-only-title" style={{ display: 'none' }}>{organ.title}</div>
+                {organ.states.length > 0 && (
+                  <div className="oc-state-chips no-print">
+                    <span className="oc-state-chips-label">Estado:</span>
+                    {chips.length === 0
+                      ? <span style={{ fontSize: 12, color: 'var(--text-muted)', fontStyle: 'italic' }}>nenhuma sigla corresponde à busca</span>
+                      : chips.map(s => (
+                          <button
+                            key={s.id}
+                            className={`oc-state-chip${s.id === selectedStateId ? ' active' : ''}`}
+                            onClick={() => setSelectedStateId(s.id)}
+                            title={`${s.name} · ${s.cbm}${s.provenance === 'curado' ? ' · curado' : ' · automático'}`}
+                          >
+                            {s.abbr}
+                          </button>
+                        ))}
+                  </div>
+                )}
 
-                {visibleStates.length === 0 && organ.reference == null
+                <div className="print-only-title" style={{ display: 'none' }}>
+                  {organ.title}{selectedState ? ` — CBMRO × ${selectedState.abbr} (${selectedState.cbm})` : ''}
+                </div>
+
+                {organ.states.length === 0 && organ.reference == null
                   ? <div className="card" style={{ padding: 30, textAlign: 'center', color: 'var(--text-muted)' }}>Nenhum estado com dado para este órgão.</div>
-                  : <Matrix organ={organ} states={visibleStates} />}
+                  : <PairTable organ={organ} state={selectedState} />}
               </>
             )}
           </div>
