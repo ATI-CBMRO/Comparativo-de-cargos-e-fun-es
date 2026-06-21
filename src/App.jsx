@@ -1,7 +1,7 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Shield, FileText, Award, Library, ScrollText
+  Search, Library, ScrollText
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -68,20 +68,6 @@ function Sidebar() {
             {label}
           </NavLink>
         ))}
-
-        <div className="nav-section-label" style={{ marginTop: 8 }}>Referência</div>
-        <div className="nav-item" style={{ cursor: 'default', opacity: 0.7 }}>
-          <Shield className="nav-icon" size={18} />
-          27 CBMs mapeados
-        </div>
-        <div className="nav-item" style={{ cursor: 'default', opacity: 0.7 }}>
-          <FileText className="nav-icon" size={18} />
-          37 documentos legais
-        </div>
-        <div className="nav-item" style={{ cursor: 'default', opacity: 0.7 }}>
-          <Award className="nav-icon" size={18} />
-          Detalhamento por órgão
-        </div>
       </nav>
 
       <div className="sidebar-footer">
