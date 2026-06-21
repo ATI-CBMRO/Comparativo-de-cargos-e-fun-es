@@ -1314,6 +1314,39 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .oc-pair-col-st { width: calc((100% - 116px) / 2); }
   /* sem cabeçalho fixo no mobile (tabela curta; evita conflito com o scroll) */
   .oc-pair-table thead th { position: static; }
+  /* rótulos longos (SUBORDINAÇÃO, DESDOBRAMENTOS) quebram em vez de
+     transbordar para a coluna ao lado */
+  .oc-pair-td-label, .oc-pair-th-label {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    hyphens: none !important;
+    font-size: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* Lista de órgãos da minuta vira faixa compacta de chips (em vez de
+     11 botões verticais em tela cheia) */
+  .oc-compare-aside > .card {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding: 10px !important;
+  }
+  .oc-compare-aside > .card > div:first-child {
+    flex: 1 0 100%;
+    margin-bottom: 2px;
+  }
+  .oc-compare-aside .nav-item {
+    width: auto !important;
+    flex: 0 0 auto;
+    margin-bottom: 0 !important;
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
 
   /* Cabeçalho compacto: hambúrguer + brasão + título, alinhados à esquerda */
   .app-header { justify-content: flex-start; padding: 0 12px; gap: 10px; }
