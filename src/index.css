@@ -1302,6 +1302,19 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
     top: auto !important;
   }
 
+  /* Tabela pareada CBMRO × estado: rola na horizontal (swipe) em vez de
+     cortar as colunas; largura mínima mantém RO e estado legíveis. */
+  .oc-pair-wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .oc-pair-table { min-width: 520px; }
+  .oc-pair-col-label { width: 116px; }
+  .oc-pair-col-ro,
+  .oc-pair-col-st { width: calc((100% - 116px) / 2); }
+  /* sem cabeçalho fixo no mobile (tabela curta; evita conflito com o scroll) */
+  .oc-pair-table thead th { position: static; }
+
   /* Cabeçalho compacto: hambúrguer + brasão + título, alinhados à esquerda */
   .app-header { justify-content: flex-start; padding: 0 12px; gap: 10px; }
   .app-header-burger { display: flex; }
