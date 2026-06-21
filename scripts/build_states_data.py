@@ -15,6 +15,8 @@ if sys.platform == "win32":
 BASE_DIR = Path(__file__).parent.parent
 MD_DIR = BASE_DIR / "database" / "markdown"
 DATA_DIR = BASE_DIR / "database"
+PDF_DIR = BASE_DIR / "LEGISLAÇÃO CBMS"
+PDF_FILES = {p.name for p in PDF_DIR.glob("*.pdf")} if PDF_DIR.exists() else set()
 
 # ────────────────────────────────────────────
 # Mapeamento estático de metadados por estado
@@ -412,7 +414,8 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
             "md_file": md_file.name,
             "char_count": len(text),
             "year": year,
-            "laws": laws
+            "laws": laws,
+            "has_pdf": md_file.name.replace(".md", ".pdf") in PDF_FILES
         }
         documents.append(doc_entry)
 

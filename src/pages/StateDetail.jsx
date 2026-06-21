@@ -35,7 +35,7 @@ function DocCard({ doc }) {
   const short = DOC_TYPE_SHORT[doc.type] || doc.type
   const totalKb = doc.char_count ? Math.round(doc.char_count / 1000) : '?'
   
-  const pdfUrl = doc.md_file ? `/legislacao-pdf/${encodeURIComponent(doc.md_file.replace('.md', '.pdf'))}` : null
+  const pdfUrl = doc.md_file && doc.has_pdf ? `/legislacao-pdf/${encodeURIComponent(doc.md_file.replace('.md', '.pdf'))}` : null
 
   return (
     <div

@@ -33,7 +33,8 @@
               "numero": "2.009",
               "data": "02 DE JULHO DE"
             }
-          ]
+          ],
+          "has_pdf": false
         },
         {
           "type": "Lei de Organização Básica",
@@ -51,7 +52,8 @@
               "numero": "2.008",
               "data": "2 de julho de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 2.009 (02 DE JULHO DE); Lei nº 3.105 (29 DE DEZEMBRO DE); Lei nº 2.008 (2 de julho de)",
@@ -491,14 +493,16 @@
               "numero": "27.560",
               "data": "13  de \nAgosto de"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
           "md_file": "Alagoas - Regimento Interno.md",
           "char_count": 137848,
           "year": 2001,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Decreto nº 27.560 (13  de \nAgosto de)",
@@ -1227,7 +1231,8 @@
               "numero": "180",
               "data": "06 DE JANEIRO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 180 (06 DE JANEIRO DE)",
@@ -1493,14 +1498,16 @@
           "md_file": "Amazonas - Organização Básica.md",
           "char_count": 52836,
           "year": 1999,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         },
         {
           "type": "Quadro Demonstrativo de Cargos",
           "md_file": "Amazonas - Quadro Demonstrativo de Cargos e Funções.md",
           "char_count": 41724,
           "year": 2007,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Consultar documento fonte",
@@ -2283,7 +2290,8 @@
               "numero": "14.572",
               "data": "25 DE MAIO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 14.572 (25 DE MAIO DE)",
@@ -2718,14 +2726,16 @@
           "md_file": "Ceará - Organização Básica (Lei 13.438-2004).md",
           "char_count": 38764,
           "year": 2026,
-          "laws": []
+          "laws": [],
+          "has_pdf": false
         },
         {
           "type": "Lei de Organização Básica",
           "md_file": "Ceará - Organização Básica.md",
           "char_count": 32554,
           "year": 2017,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Consultar documento fonte",
@@ -3059,7 +3069,8 @@
               "numero": "8.255",
               "data": "20 DE NOVEMBRO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
@@ -3072,7 +3083,8 @@
               "numero": "24",
               "data": "25 de novembro de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 8.255 (20 DE NOVEMBRO DE); Portaria nº 24 (25 de novembro de)",
@@ -3996,7 +4008,8 @@
           "md_file": "Espírito Santo - Normas Gerais de Ação.md",
           "char_count": 1392715,
           "year": 2022,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Consultar documento fonte",
@@ -4488,7 +4501,8 @@
               "numero": "13.456",
               "data": "16 de abril de"
             }
-          ]
+          ],
+          "has_pdf": false
         },
         {
           "type": "Quadro de Organização e Distribuição",
@@ -4506,7 +4520,8 @@
               "numero": "21.792",
               "data": "16 de fevereiro de"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Lei de Organização Básica",
@@ -4519,7 +4534,8 @@
               "numero": "5609",
               "data": "13  de agosto  de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 18.305 (30 DE DEZEMBRO DE); Lei nº 18.305 (30 DE DEZEMBRO DE); Lei nº 13.456 (16 de abril de); Lei nº 16.899 (26 de maio de); Lei nº 21.792 (16 de fevereiro de); Portaria nº 5609 (13  de agosto  de)",
@@ -5463,7 +5479,8 @@
               "numero": "8.508",
               "data": "27 de novembro de"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Quadro de Organização e Distribuição",
@@ -5481,7 +5498,8 @@
               "numero": "114",
               "data": "05 DE FEVEREIRO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 8.508 (27 de novem); Lei nº 8.508 (27 de novembro de); Decreto nº 22.961 (28 de fe); Portaria nº 114 (05 DE FEVEREIRO DE)",
@@ -6142,7 +6160,8 @@
               "numero": "667",
               "data": "2 de julho de"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
@@ -6160,7 +6179,8 @@
               "numero": "667",
               "data": "02 de julho de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 775 (27 DE SETEMBRO DE); Lei nº 667 (2 de julho de); Lei nº 404 (30 de junho de); Lei nº 667 (02 de julho de)",
@@ -7169,7 +7189,8 @@
               "numero": "205",
               "data": "5 de outubro de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 188 (3 DE ABRIL DE); Lei nº 205 (5 de outubro de)",
@@ -7703,7 +7724,8 @@
           "md_file": "Minas Gerais - Organização Básica.md",
           "char_count": 17924,
           "year": 1999,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Consultar documento fonte",
@@ -8107,14 +8129,16 @@
           "md_file": "Paraná - Organização Básica.md",
           "char_count": 45010,
           "year": 2024,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
           "md_file": "Paraná - Regimento Interno.md",
           "char_count": 43750,
           "year": 2024,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Consultar documento fonte",
@@ -8543,7 +8567,8 @@
               "numero": "191",
               "data": "26 DE  ABRIL  DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 191 (26 DE  ABRIL  DE)",
@@ -9554,14 +9579,16 @@
           "md_file": "Pará - Organização Básica.md",
           "char_count": 136494,
           "year": 2025,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
           "md_file": "Pará - Regimento Interno.md",
           "char_count": 337431,
           "year": 2026,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Consultar documento fonte",
@@ -10221,7 +10248,8 @@
               "numero": "15.187",
               "data": "12 DE DEZEMBRO DE"
             }
-          ]
+          ],
+          "has_pdf": false
         },
         {
           "type": "Lei de Organização Básica",
@@ -10234,7 +10262,8 @@
               "numero": "15.187",
               "data": "12 DE DEZEMBRO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 15.187 (12 DE DEZEMBRO DE); Lei nº 15.187 (12 DE DEZEMBRO DE)",
@@ -10893,7 +10922,8 @@
               "numero": "5.458",
               "data": "30 de junho de"
             }
-          ]
+          ],
+          "has_pdf": false
         },
         {
           "type": "Lei de Organização Básica",
@@ -10916,7 +10946,8 @@
               "numero": "5.458",
               "data": "30 de junho de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 7.772 (04 DE ABRIL DE); Lei nº 5.949 (17 de \ndezembro de); Lei nº 5.458 (30 de junho de); Lei nº 7.772 (04 DE ABRIL DE); Lei nº 5.949 (17 de \ndezembro de); Lei nº 5.458 (30 de junho de)",
@@ -12251,7 +12282,8 @@
               "numero": "230",
               "data": "22 DE MARÇO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Lei de Organização Básica",
@@ -12264,7 +12296,8 @@
               "numero": "230",
               "data": "22 de março de"
             }
-          ]
+          ],
+          "has_pdf": false
         }
       ],
       "legal_basis": "Lei nº 230 (22 DE MARÇO DE); Lei nº 230 (22 DE MARÇO DE); Lei nº 230 (22 de março de)",
@@ -12955,7 +12988,8 @@
               "numero": "53.897",
               "data": "25 DE JANEIRO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
@@ -12968,7 +13002,8 @@
               "numero": "14.920",
               "data": "01 de agosto de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Decreto nº 53.897 (25 DE JANEIRO DE); Lei nº 14.920 (01 de agosto de)",
@@ -13707,7 +13742,8 @@
               "numero": "250",
               "data": "02 DE JULHO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 250 (02 DE JULHO DE)",
@@ -14388,7 +14424,8 @@
               "numero": "XX",
               "data": "ABRIL DE 2025"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Projeto de Lei nº XX (ABRIL DE 2025)",
@@ -15675,7 +15712,8 @@
               "numero": "59",
               "data": "09 de outubro de"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 52 (28 de dezembro de); Lei nº 265 (07 de fevereiro de); Lei nº 59 (09 de outubro de)",
@@ -17237,7 +17275,8 @@
               "numero": "1.328",
               "data": "14 DE JUNHO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 724 (18 de julho de); Lei nº 724 (18 de julho de); Decreto nº 1.328 (14 DE JUNHO DE)",
@@ -17854,21 +17893,24 @@
               "numero": "8.979",
               "data": "03\nDE FEVEREIRO DE"
             }
-          ]
+          ],
+          "has_pdf": false
         },
         {
           "type": "Lei de Organização Básica",
           "md_file": "Sergipe - Organização Básica.md",
           "char_count": 32836,
           "year": 2022,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         },
         {
           "type": "Regimento Interno",
           "md_file": "Sergipe - Regimento Interno.md",
           "char_count": 101237,
           "year": 2022,
-          "laws": []
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 8.979 (03 DE FEVEREIRO DE); Lei nº 8.979 (03\nDE FEVEREIRO DE)",
@@ -18926,7 +18968,8 @@
               "numero": "735",
               "data": "03 de novembro de"
             }
-          ]
+          ],
+          "has_pdf": false
         },
         {
           "type": "Lei de Organização Básica",
@@ -18939,7 +18982,8 @@
               "numero": "65.096",
               "data": "28 DE JULHO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 616 (17 DE DEZEMBRO DE); Lei nº 616 (17 DE DEZEMBRO DE); Lei nº 735 (03 de novembro de); Decreto nº 65.096 (28 DE JULHO DE)",
@@ -19400,7 +19444,8 @@
               "numero": "131",
               "data": "30 DE SETEMBRO DE"
             }
-          ]
+          ],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 131 (30 DE SETEMBRO DE)",

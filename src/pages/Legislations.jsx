@@ -135,7 +135,7 @@ export default function Legislations() {
           {filtered.map((d, idx) => {
             const short = DOC_TYPE_SHORT[d.type] || d.type
             const isLob = d.type === 'Lei de Organização Básica'
-            const pdfUrl = d.md_file
+            const pdfUrl = d.md_file && d.has_pdf
               ? `/legislacao-pdf/${encodeURIComponent(d.md_file.replace('.md', '.pdf'))}`
               : null
             return (

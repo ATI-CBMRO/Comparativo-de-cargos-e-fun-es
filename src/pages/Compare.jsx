@@ -39,7 +39,7 @@ function StateSelector({ states, selected, onChange, placeholder }) {
 
 function CompareDocCard({ doc, idxColor }) {
   const [hovered, setHovered] = useState(false)
-  const pdfUrl = doc.md_file ? `/legislacao-pdf/${encodeURIComponent(doc.md_file.replace('.md', '.pdf'))}` : null
+  const pdfUrl = doc.md_file && doc.has_pdf ? `/legislacao-pdf/${encodeURIComponent(doc.md_file.replace('.md', '.pdf'))}` : null
 
   return (
     <div
