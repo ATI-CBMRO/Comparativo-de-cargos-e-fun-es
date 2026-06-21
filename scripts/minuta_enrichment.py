@@ -12,7 +12,7 @@ Dois níveis de enriquecimento:
      atribuições pessoais do comando, a partir do RI do CBMAL (Arts. 107/114/115).
      token_da_funcao normaliza o nome do cargo ('comandante', 'adjunto', etc.).
   2. ENRICHMENT_ORGAN — por ÓRGÃO, chave organ_key: competências/missões da
-     unidade, a partir das leis/RIs de PR, MT, ES, PA, SC, BA, PE, CE e SP.
+     unidade, a partir das leis/RIs de PR, MT, ES, PA, SC, BA, PE, CE, SP e DF.
 
 Cada item carrega a citação da fonte. Expansível adicionando novas entradas.
 """
@@ -275,19 +275,55 @@ _SP_TEC = [
     "supervisionar a instalação da rede de hidrantes públicos",
 ]
 
+# ── CBMDF, RI (Portaria nº 24/2020), Art. 454 — Comando Operacional (COMOP) ──
+_DF_COMOP = [
+    "realizar o planejamento estratégico setorial, a coordenação e o emprego das unidades subordinadas",
+    "manter a tropa permanentemente treinada para pronto emprego",
+    "planejar, controlar e executar atividades de prevenção e combate a incêndio, busca, salvamento e "
+    "resgate, atendimento pré-hospitalar, proteção civil, proteção ambiental, operações aéreas e guarda "
+    "e segurança em suas unidades operacionais",
+    "expedir Instrução Normativa a fim de orientar o público interno quanto à padronização de "
+    "procedimentos operacionais e administrativos relacionados com a sua área de competência",
+    "planejar, coordenar e executar a movimentação dos bombeiros militares e dos recursos materiais "
+    "destinados ao Comando Operacional",
+    "elaborar os pedidos de aquisição de material e execução de serviços necessários à execução das "
+    "suas atividades",
+]
+
+# ── CBMDF, RI (Portaria nº 24/2020), Art. 54 — Departamento de Segurança Contra Incêndio (DESEG) ──
+_DF_DESEG = [
+    "realizar atividades de segurança contra incêndio e pânico, com vistas à proteção das pessoas e "
+    "dos bens públicos e privados",
+    "realizar perícias em incêndio e explosões",
+    "planejar, orientar, coordenar e controlar as atividades de segurança contra incêndio e pânico "
+    "relacionadas a credenciamento e fiscalização; serviço de hidrante urbano; proposição de normas, "
+    "programas e diretrizes; análise de projetos de instalações de proteção contra incêndio e pânico e "
+    "de arquitetura; prevenção e proteção contra incêndio e pânico; e investigação de incêndios",
+    "promover e participar de campanhas educativas direcionadas à comunidade em sua área de atuação",
+    "realizar pesquisas técnico-científicas, com vistas à obtenção de produtos e processos, que "
+    "permitam o desenvolvimento de sistemas de segurança contra incêndio e pânico",
+    "fiscalizar, na área de sua competência, o cumprimento da legislação referente à prevenção contra "
+    "incêndio e pânico",
+    "realizar vistorias e emitir pareceres técnicos com possíveis consequências de penalidades por "
+    "infração, na forma da legislação específica",
+    "credenciar os agentes fiscalizadores para realizar as vistorias técnicas",
+]
+
 
 # Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
 ENRICHMENT_ORGAN = {
-    "dpo":  _tag(_MT_DOP,  "cf. CBMMT, RI, Art. 236")
-          + _tag(_PA_COP,  "cf. CBMPA, Lei nº 11.060/2025, Art. 16")
-          + _tag(_BA_COBM, "cf. CBMBA, Lei nº 14.572/2023, Art. 49, III"),
-    "cot":  _tag(_MT_DSCI, "cf. CBMMT, RI, Art. 198")
-          + _tag(_ES_CAT,  "cf. CBMES, NGA — Centro de Atividades Técnicas")
-          + _tag(_SC_DSCI, "cf. CBMSC, Dec. nº 1.328/2021, Art. 38")
-          + _tag(_BA_CSCI, "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV")
-          + _tag(_PE_CAT,  "cf. CBMPE, Lei nº 15.187/2013, Art. 97")
-          + _tag(_CE_CAT,  "cf. CBMCE, Lei nº 13.438/2004, Art. 17")
-          + _tag(_SP_TEC,  "cf. CBMSP, Lei nº 616/1974, Art. 40, §2º, 7"),
+    "dpo":  _tag(_MT_DOP,   "cf. CBMMT, RI, Art. 236")
+          + _tag(_PA_COP,   "cf. CBMPA, Lei nº 11.060/2025, Art. 16")
+          + _tag(_BA_COBM,  "cf. CBMBA, Lei nº 14.572/2023, Art. 49, III")
+          + _tag(_DF_COMOP, "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"),
+    "cot":  _tag(_MT_DSCI,  "cf. CBMMT, RI, Art. 198")
+          + _tag(_ES_CAT,   "cf. CBMES, NGA — Centro de Atividades Técnicas")
+          + _tag(_SC_DSCI,  "cf. CBMSC, Dec. nº 1.328/2021, Art. 38")
+          + _tag(_BA_CSCI,  "cf. CBMBA, Lei nº 14.572/2023, Art. 49, IV")
+          + _tag(_PE_CAT,   "cf. CBMPE, Lei nº 15.187/2013, Art. 97")
+          + _tag(_CE_CAT,   "cf. CBMCE, Lei nº 13.438/2004, Art. 17")
+          + _tag(_SP_TEC,   "cf. CBMSP, Lei nº 616/1974, Art. 40, §2º, 7")
+          + _tag(_DF_DESEG, "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"),
     "crbm": _tag(_SC_RBM,  "cf. CBMSC, Dec. nº 1.328/2021, Art. 39"),
     "bbm":  _tag(_PR_BBM,  "cf. CBMPR, Lei nº 22.206/2024, Art. 35, I"),
     "cibm": _tag(_PR_CIBM, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, II"),

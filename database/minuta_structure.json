@@ -124,9 +124,33 @@
             {
               "text": "planejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, com atuação nas regiões do Estado",
               "source": "cf. CBMBA, Lei nº 14.572/2023, Art. 49, III"
+            },
+            {
+              "text": "realizar o planejamento estratégico setorial, a coordenação e o emprego das unidades subordinadas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"
+            },
+            {
+              "text": "manter a tropa permanentemente treinada para pronto emprego",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"
+            },
+            {
+              "text": "planejar, controlar e executar atividades de prevenção e combate a incêndio, busca, salvamento e resgate, atendimento pré-hospitalar, proteção civil, proteção ambiental, operações aéreas e guarda e segurança em suas unidades operacionais",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"
+            },
+            {
+              "text": "expedir Instrução Normativa a fim de orientar o público interno quanto à padronização de procedimentos operacionais e administrativos relacionados com a sua área de competência",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"
+            },
+            {
+              "text": "planejar, coordenar e executar a movimentação dos bombeiros militares e dos recursos materiais destinados ao Comando Operacional",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"
+            },
+            {
+              "text": "elaborar os pedidos de aquisição de material e execução de serviços necessários à execução das suas atividades",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 454"
             }
           ],
-          "proposedText": "planejar e coordenar o emprego operacional da instituição\nmanter registro das atividades operacionais da instituição\nmanter estreito relacionamento com outros órgãos de segurança para a realização de operações conjuntas\ncoordenar e controlar todos os serviços de comunicações e ações operacionais\nelaborar o planejamento operacional da instituição em grandes eventos\ninteragir com demais órgãos administrativos e operacionais, visando obter subsídios para o planejamento operacional\nestabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais subordinadas\nplanejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado\nexercer a direção e o controle dos órgãos de direção intermediária e setorial\nexercer a direção e o controle do apoio e da execução da atividade-fim\nplanejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, com atuação nas regiões do Estado"
+          "proposedText": "planejar e coordenar o emprego operacional da instituição\nmanter registro das atividades operacionais da instituição\nmanter estreito relacionamento com outros órgãos de segurança para a realização de operações conjuntas\ncoordenar e controlar todos os serviços de comunicações e ações operacionais\nelaborar o planejamento operacional da instituição em grandes eventos\ninteragir com demais órgãos administrativos e operacionais, visando obter subsídios para o planejamento operacional\nestabelecer unidade de doutrina entre os Comandos Regionais e Unidades Operacionais subordinadas\nplanejar a instalação e viabilizar a construção de novas Unidades Operacionais no Estado\nexercer a direção e o controle dos órgãos de direção intermediária e setorial\nexercer a direção e o controle do apoio e da execução da atividade-fim\nplanejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, com atuação nas regiões do Estado\nrealizar o planejamento estratégico setorial, a coordenação e o emprego das unidades subordinadas\nmanter a tropa permanentemente treinada para pronto emprego\nplanejar, controlar e executar atividades de prevenção e combate a incêndio, busca, salvamento e resgate, atendimento pré-hospitalar, proteção civil, proteção ambiental, operações aéreas e guarda e segurança em suas unidades operacionais\nexpedir Instrução Normativa a fim de orientar o público interno quanto à padronização de procedimentos operacionais e administrativos relacionados com a sua área de competência\nplanejar, coordenar e executar a movimentação dos bombeiros militares e dos recursos materiais destinados ao Comando Operacional\nelaborar os pedidos de aquisição de material e execução de serviços necessários à execução das suas atividades"
         },
         {
           "id": "organizacao",
@@ -399,9 +423,41 @@
             {
               "text": "supervisionar a instalação da rede de hidrantes públicos",
               "source": "cf. CBMSP, Lei nº 616/1974, Art. 40, §2º, 7"
+            },
+            {
+              "text": "realizar atividades de segurança contra incêndio e pânico, com vistas à proteção das pessoas e dos bens públicos e privados",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "realizar perícias em incêndio e explosões",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "planejar, orientar, coordenar e controlar as atividades de segurança contra incêndio e pânico relacionadas a credenciamento e fiscalização; serviço de hidrante urbano; proposição de normas, programas e diretrizes; análise de projetos de instalações de proteção contra incêndio e pânico e de arquitetura; prevenção e proteção contra incêndio e pânico; e investigação de incêndios",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "promover e participar de campanhas educativas direcionadas à comunidade em sua área de atuação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "realizar pesquisas técnico-científicas, com vistas à obtenção de produtos e processos, que permitam o desenvolvimento de sistemas de segurança contra incêndio e pânico",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "fiscalizar, na área de sua competência, o cumprimento da legislação referente à prevenção contra incêndio e pânico",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "realizar vistorias e emitir pareceres técnicos com possíveis consequências de penalidades por infração, na forma da legislação específica",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
+            },
+            {
+              "text": "credenciar os agentes fiscalizadores para realizar as vistorias técnicas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 54"
             }
           ],
-          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.\nregulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado\nrealizar pesquisa e perícia de incêndio, relacionadas com sua competência\nanalisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com a legislação\nrealizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários\nexpedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de Segurança Contra Incêndio e Pânico\ncassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico\nnotificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências da legislação e normas técnicas\ncapacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência\nplanejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio\nrealizar perícias de incêndio e vistorias\na normatização em segurança contra incêndio, pânico e desastre\na análise de projetos e vistorias\no exercício do Poder de Polícia Administrativa\na investigação de incêndio e explosão\na pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre\nplanejar, executar e controlar as ações de perícia de incêndio\npromover ações de prevenção contra incêndio\npropor estudos e pesquisas que viabilizem a melhoria das atividades de segurança contra incêndio, elaborando diretrizes da política institucional relativas à sua área de atuação\nplanejar, comandar e fiscalizar as ações operacionais da unidade\ncomunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito\ncomandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem\ngerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados\ndesenvolver pesquisa científica e avaliar o desempenho operacional da Corporação\nanalisar projetos de edificações, vistorias e pareceres técnicos\ncontrolar, manter e manobrar hidrantes\nexecutar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos e às medidas preventivas contra incêndios\nproceder a exames de plantas e a perícias\nrealizar testes de incombustibilidade\nrealizar vistorias e emitir pareceres\nsupervisionar a instalação da rede de hidrantes públicos"
+          "proposedText": "Elaboração de projetos de engenharia e arquitetura, acompanhamento e fiscalização de obras no âmbito do CBMRO.\nregulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado\nrealizar pesquisa e perícia de incêndio, relacionadas com sua competência\nanalisar os documentos que compõem os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com a legislação\nrealizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporários\nexpedir os Alvarás de Prevenção Contra Incêndio e Pânico e de Aprovação do Processo de Segurança Contra Incêndio e Pânico\ncassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico\nnotificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências da legislação e normas técnicas\ncapacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência\nplanejar, executar, controlar e fiscalizar as atividades de proteção contra incêndio\nrealizar perícias de incêndio e vistorias\na normatização em segurança contra incêndio, pânico e desastre\na análise de projetos e vistorias\no exercício do Poder de Polícia Administrativa\na investigação de incêndio e explosão\na pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre\nplanejar, executar e controlar as ações de perícia de incêndio\npromover ações de prevenção contra incêndio\npropor estudos e pesquisas que viabilizem a melhoria das atividades de segurança contra incêndio, elaborando diretrizes da política institucional relativas à sua área de atuação\nplanejar, comandar e fiscalizar as ações operacionais da unidade\ncomunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito\ncomandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem\ngerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados\ndesenvolver pesquisa científica e avaliar o desempenho operacional da Corporação\nanalisar projetos de edificações, vistorias e pareceres técnicos\ncontrolar, manter e manobrar hidrantes\nexecutar e supervisionar o disposto na legislação do Estado quanto à instalação de equipamentos e às medidas preventivas contra incêndios\nproceder a exames de plantas e a perícias\nrealizar testes de incombustibilidade\nrealizar vistorias e emitir pareceres\nsupervisionar a instalação da rede de hidrantes públicos\nrealizar atividades de segurança contra incêndio e pânico, com vistas à proteção das pessoas e dos bens públicos e privados\nrealizar perícias em incêndio e explosões\nplanejar, orientar, coordenar e controlar as atividades de segurança contra incêndio e pânico relacionadas a credenciamento e fiscalização; serviço de hidrante urbano; proposição de normas, programas e diretrizes; análise de projetos de instalações de proteção contra incêndio e pânico e de arquitetura; prevenção e proteção contra incêndio e pânico; e investigação de incêndios\npromover e participar de campanhas educativas direcionadas à comunidade em sua área de atuação\nrealizar pesquisas técnico-científicas, com vistas à obtenção de produtos e processos, que permitam o desenvolvimento de sistemas de segurança contra incêndio e pânico\nfiscalizar, na área de sua competência, o cumprimento da legislação referente à prevenção contra incêndio e pânico\nrealizar vistorias e emitir pareceres técnicos com possíveis consequências de penalidades por infração, na forma da legislação específica\ncredenciar os agentes fiscalizadores para realizar as vistorias técnicas"
         },
         {
           "id": "organizacao",
