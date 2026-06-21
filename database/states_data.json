@@ -34,7 +34,7 @@
               "data": "02 DE JULHO DE"
             }
           ],
-          "has_pdf": false
+          "has_pdf": true
         },
         {
           "type": "Lei de Organização Básica",
@@ -2727,7 +2727,7 @@
           "char_count": 38764,
           "year": 2026,
           "laws": [],
-          "has_pdf": false
+          "has_pdf": true
         },
         {
           "type": "Lei de Organização Básica",
@@ -4502,7 +4502,7 @@
               "data": "16 de abril de"
             }
           ],
-          "has_pdf": false
+          "has_pdf": true
         },
         {
           "type": "Quadro de Organização e Distribuição",
@@ -10923,7 +10923,7 @@
               "data": "30 de junho de"
             }
           ],
-          "has_pdf": false
+          "has_pdf": true
         },
         {
           "type": "Lei de Organização Básica",
@@ -12297,7 +12297,7 @@
               "data": "22 de março de"
             }
           ],
-          "has_pdf": false
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 230 (22 DE MARÇO DE); Lei nº 230 (22 DE MARÇO DE); Lei nº 230 (22 de março de)",
