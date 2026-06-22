@@ -520,18 +520,42 @@
           "atribuicoes": ["Substituir o Comandante do COT em seus impedimentos.", "Auxiliar no planejamento e controle das atividades técnicas."]
         },
         {
-          "cargo": "Coordenador de Atividades Técnicas (CAT)",
-          "subordinadoA": "Comandante do COT",
-          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
-          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Análise de Projetos", "Seção de Investigação e Prevenção de Incêndio", "Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)"],
-          "atribuicoes": ["Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.", "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.", "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."]
-        },
-        {
           "cargo": "Coordenador de Projetos de Arquitetura e Engenharia",
           "subordinadoA": "Comandante do COT",
           "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. Quando QCOBM, formação em Engenharia ou Arquitetura. (Art. 25 §2º)",
           "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Fiscalização e Vistorias de Obras", "Seção de Projetos, Planejamento e Estudos Técnicos", "Seção de Manutenção Predial"],
           "atribuicoes": ["Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial."]
+        }
+      ]
+    },
+    "cat": {
+      "id": "cat",
+      "name": "Coordenadoria de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Execução",
+      "subordinadoA": "Comando de Operações Técnicas (COT)",
+      "legalRef": "Art. 42",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 42 (CAT)"],
+      "atribuicoes": [
+        "Órgão de execução de atuação operacional ordinária, subordinado ao Comando de Operações Técnicas (COT), incumbido de estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.",
+        "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos, com autoridade para notificar, multar, embargar e interditar na forma da lei específica."
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Análise de Projetos",
+        "Seção de Investigação e Prevenção de Incêndio",
+        "Gerência de Atividades Técnicas — Seção Administrativa, Seção de Vistoria, Seção de Hidrantes"
+      ],
+      "cargos": [
+        {
+          "cargo": "Coordenador de Atividades Técnicas (CAT)",
+          "subordinadoA": "Comandante do COT",
+          "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
+          "desdobramentos": ["Adjunto", "Seção Administrativa", "Seção de Análise de Projetos", "Seção de Investigação e Prevenção de Incêndio", "Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)"],
+          "atribuicoes": ["Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.", "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.", "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."]
         }
       ]
     },

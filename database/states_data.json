@@ -15357,8 +15357,46 @@
                 {
                   "id": "cat",
                   "name": "Coordenadoria de Atividades Técnicas",
-                  "children": [],
-                  "abbreviation": "CAT"
+                  "children": [
+                    {
+                      "id": "coordenador",
+                      "name": "Coordenador",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "adjunto",
+                      "name": "Adjunto",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-administrativa",
+                      "name": "Seção Administrativa",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-de-analise-de-projetos",
+                      "name": "Seção de Análise de Projetos",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-de-investigacao-e-prevencao-de-incendio",
+                      "name": "Seção de Investigação e Prevenção de Incêndio",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "gerencia-de-atividades-tecnicas-secao-administra",
+                      "name": "Gerência de Atividades Técnicas — Seção Administrativa, Seção de Vistoria, Seção de Hidrantes",
+                      "children": [],
+                      "_reg": true
+                    }
+                  ],
+                  "abbreviation": "CAT",
+                  "detailId": "cat"
                 }
               ]
             },
@@ -15679,7 +15717,7 @@
         "has_regimento": false,
         "has_nga": false,
         "total_chars": 75273,
-        "organs_mapped": 194,
+        "organs_mapped": 200,
         "curated": true
       }
     },
