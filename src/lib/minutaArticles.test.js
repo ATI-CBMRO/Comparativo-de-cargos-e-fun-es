@@ -131,3 +131,35 @@ test('seção com todos os incisos excluídos é omitida e a numeração permane
   assert.equal(arts.find(a => a.caput === 'Ao Diretor compete:'), undefined)
   assert.deepEqual(arts.map(a => a.number), [1, 2, 3, 4])
 })
+
+test('buildArticles: capítulo kind "articles" gera um artigo por folha sob um único título de capítulo', () => {
+  const structure = {
+    chapters: [
+      {
+        id: 'estrutura', kind: 'articles', chapterTitle: 'DA ESTRUTURA ORGANIZACIONAL',
+        editId: 'estrutura',
+        articles: [
+          { id: 'direcao', kind: 'incisos', editId: 'estrutura/direcao',
+            caput: 'São Órgãos de Direção Operacional:',
+            items: [
+              { text: 'de Direção Setorial: a DPO, a DOE e o COT', source: 'ro' },
+              { text: 'de Direção Regional: o CRBM', source: 'ro' },
+            ] },
+          { id: 'execucao', kind: 'incisos', editId: 'estrutura/execucao',
+            caput: 'Os Órgãos de Execução classificam-se em:',
+            items: [{ text: 'Atuação Operacional Ordinária: o BBM', source: 'ro' }] },
+        ],
+      },
+    ],
+  }
+  const arts = buildArticles(structure, {})
+  assert.equal(arts.length, 2)
+  assert.equal(arts[0].number, 1)
+  assert.equal(arts[0].chapterNumber, 1)
+  assert.equal(arts[0].chapterTitle, 'DA ESTRUTURA ORGANIZACIONAL')
+  assert.equal(arts[0].editId, 'estrutura/direcao')
+  assert.equal(arts[0].sectionNumber, null)
+  assert.equal(arts[1].number, 2)
+  assert.equal(arts[1].chapterTitle, null)
+  assert.equal(arts[1].editId, 'estrutura/execucao')
+})

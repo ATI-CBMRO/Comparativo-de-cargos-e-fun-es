@@ -107,6 +107,8 @@ export function buildArticles(structure, edits = {}, isExcluded = () => false) {
 
     if (chapter.kind === 'organ') {
       for (const section of chapter.sections) emitLeaf(section, true)
+    } else if (chapter.kind === 'articles') {
+      for (const leaf of chapter.articles) emitLeaf(leaf, false)
     } else {
       emitLeaf(chapter, false)
     }
