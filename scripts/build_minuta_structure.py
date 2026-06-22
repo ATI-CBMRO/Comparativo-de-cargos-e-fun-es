@@ -36,7 +36,7 @@ ORGAN_ORDER = [
     ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A"),
     ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A"),
     ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
-    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "O"),
+    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "Os"),
     ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O"),
     ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A"),
     ("cat",   "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",           "A"),
