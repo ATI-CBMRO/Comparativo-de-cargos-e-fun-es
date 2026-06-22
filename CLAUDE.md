@@ -90,7 +90,7 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   Cargos" e "DPO × COT" foram removidas junto com seus componentes.
 - `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
   `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
-  espelha os 11 órgãos da minuta (10 da LOB + Guarnição), comparando RO × estados em matriz
+  espelha os 12 órgãos da minuta (11 da LOB + Guarnição), comparando RO × estados em matriz
   (campos nas linhas, estados nas colunas, RO sticky), com proveniência curado/automático por
   estado (badge). Só entram estados com dado correspondente; busca filtra a matriz. Substitui
   o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
@@ -114,8 +114,8 @@ Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional d
 
 - `scripts/build_minuta_structure.py` lê **diretamente** `database/organs_detail/ro.json`
   (não mais o `comparativo_dpo_cot.json`) e percorre os órgãos na ordem de subordinação do
-  RO: Preliminares + Estrutura + 10 órgãos (dpo, cot, doe, crbm, bbm, cibm, gbm, bbs, bifea,
-  boa) + capítulo da **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
+  RO: Preliminares + Estrutura + 11 órgãos (dpo, doe, cot, crbm, bbm, cibm, cat, bbs, bifea,
+  boa, gbm) + capítulo da **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
   `database/minuta_structure.json` (`{title, chapters:[{kind: prose|incisos|organ, sections:[...]}]}`).
 - `scripts/minuta_enrichment.py` traz o enriquecimento curado VERBATIM de outros CBMs,
   rotulado por fonte: `ENRICHMENT` (por cargo/função — hoje só CBMAL) e `ENRICHMENT_ORGAN`

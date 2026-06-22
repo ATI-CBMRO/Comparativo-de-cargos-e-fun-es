@@ -35,6 +35,8 @@ AUTO_MATCH_KEYWORDS = {
     "bbs":   {"include": ["busca", "salvamento"],              "exclude": []},
     "bifea": {"include": ["florestal", "ambiental"],           "exclude": []},
     "boa":   {"include": ["aerea", "aereo", "aviacao", "operacoes aereas"], "exclude": []},
+    "cat":   {"include": ["atividades tecnicas", "atividade tecnica"],
+              "exclude": ["operacoes tecnicas", "comando de operacoes"]},
 }
 
 

@@ -171,23 +171,6 @@
               ]
             },
             {
-              "cargo": "Coordenador de Atividades Técnicas (CAT)",
-              "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. (Art. 25 §2º)",
-              "subordinadoA": "Comandante do COT",
-              "atribuicoes": [
-                "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.",
-                "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.",
-                "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."
-              ],
-              "desdobramentos": [
-                "Adjunto",
-                "Seção Administrativa",
-                "Seção de Análise de Projetos",
-                "Seção de Investigação e Prevenção de Incêndio",
-                "Gerência de Atividades Técnicas (Seção de Vistoria, Seção de Hidrantes)"
-              ]
-            },
-            {
               "cargo": "Coordenador de Projetos de Arquitetura e Engenharia",
               "requisito": "Oficial Superior da ativa — QOEMBM ou QCOBM. Quando QCOBM, formação em Engenharia ou Arquitetura. (Art. 25 §2º)",
               "subordinadoA": "Comandante do COT",

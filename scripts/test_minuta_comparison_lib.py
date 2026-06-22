@@ -33,4 +33,18 @@ assert auto_match_organ_ids("gbm", organs) == ["grp-1"]
 # dpo não tem auto (curado-only)
 assert "dpo" not in AUTO_MATCH_KEYWORDS
 
+
+def test_auto_match_cat():
+    organs = {
+        "x1": {"name": "Coordenadoria de Atividades Técnicas"},
+        "x2": {"name": "Centro de Atividades Técnicas"},
+        "x3": {"name": "Comando de Operações Técnicas"},  # não deve casar
+        "x4": {"name": "Batalhão de Bombeiros"},          # não deve casar
+    }
+    ids = set(auto_match_organ_ids("cat", organs))
+    assert ids == {"x1", "x2"}, ids
+
+
+test_auto_match_cat()
+
 print("OK")
