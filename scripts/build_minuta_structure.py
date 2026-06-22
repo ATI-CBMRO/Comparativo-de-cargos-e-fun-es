@@ -34,15 +34,30 @@ TITLE = "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO"
 # (organ_key, CHAPTER_TITLE, artigo_definido)
 ORGAN_ORDER = [
     ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A"),
-    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
     ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A"),
+    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
     ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "O"),
     ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O"),
     ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A"),
-    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O"),
+    ("cat",   "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",           "A"),
     ("bbs",   "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                 "O"),
     ("bifea", "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
     ("boa",   "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                   "O"),
+    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O"),
+]
+
+# Área de atuação dos Órgãos de Execução (LOB Art. 9), para agrupar o Art. 3.
+AREA_BY_ORGAN = {
+    "bbm": "ordinaria", "cibm": "ordinaria", "cat": "ordinaria",
+    "bbs": "terrestre", "bifea": "terrestre",
+    "boa": "aerea",
+    "gbm": "conveniada",
+}
+AREA_LABELS = [
+    ("ordinaria",  "Atuação Operacional Ordinária"),
+    ("terrestre",  "Atuação Operacional Especializada Terrestre"),
+    ("aerea",      "Atuação Operacional Especializada Aérea"),
+    ("conveniada", "Atuação Operacional Conveniada Municipal"),
 ]
 
 DISP_FINAIS = (
@@ -157,20 +172,55 @@ def build_organ_chapter(organ_key, chapter_title, organ):
     }
 
 
-def build_estrutura_chapter(organs):
-    items = []
-    for (organ_key, _title, art) in ORGAN_ORDER:
-        o = organs.get(organ_key)
+def _join_orgaos(keys, organs, art_by_key):
+    """['dpo','doe','cot'] -> 'a Diretoria ... (DPO), a Diretoria ... (DOE) e o Comando ... (COT)'."""
+    parts = []
+    for k in keys:
+        o = organs.get(k)
         if not o:
             continue
-        nome = o.get("name", organ_key.upper())
-        abbr = o.get("abbreviation") or organ_key.upper()
-        items.append({"text": f"{art.lower()} {nome} ({abbr})", "source": "ro"})
+        nome = o.get("name", k.upper())
+        abbr = o.get("abbreviation") or k.upper()
+        parts.append(f"{art_by_key[k].lower()} {nome} ({abbr})")
+    if len(parts) <= 1:
+        return "".join(parts)
+    return ", ".join(parts[:-1]) + " e " + parts[-1]
+
+
+def build_estrutura_chapter(organs):
+    art_by_key = {k: art for (k, _t, art) in ORGAN_ORDER}
+    cat_of = {k: (organs.get(k) or {}).get("category", "") for (k, _t, _a) in ORGAN_ORDER}
+
+    setorial = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == "Direção Setorial"]
+    regional = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == "Direção Regional"]
+
+    direcao_items = []
+    if setorial:
+        direcao_items.append({"text": f"de Direção Setorial: {_join_orgaos(setorial, organs, art_by_key)}", "source": "ro"})
+    if regional:
+        direcao_items.append({"text": f"de Direção Regional: {_join_orgaos(regional, organs, art_by_key)}", "source": "ro"})
+
+    execucao_items = []
+    for area_key, area_label in AREA_LABELS:
+        keys = [k for (k, _t, _a) in ORGAN_ORDER if AREA_BY_ORGAN.get(k) == area_key]
+        if not keys:
+            continue
+        execucao_items.append({"text": f"{area_label}: {_join_orgaos(keys, organs, art_by_key)}", "source": "ro"})
+
+    direcao = {
+        "id": "direcao", "kind": "incisos", "editId": "estrutura/direcao",
+        "caput": "São Órgãos de Direção Operacional:",
+        "items": direcao_items, "proposedText": proposed_text(direcao_items),
+    }
+    execucao = {
+        "id": "execucao", "kind": "incisos", "editId": "estrutura/execucao",
+        "caput": "Os Órgãos de Execução classificam-se, quanto à área de atuação, em:",
+        "items": execucao_items, "proposedText": proposed_text(execucao_items),
+    }
     return {
-        "id": "estrutura", "kind": "incisos", "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
+        "id": "estrutura", "kind": "articles", "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
         "editId": "estrutura",
-        "caput": "A estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia compõe-se dos seguintes órgãos:",
-        "items": items, "proposedText": proposed_text(items),
+        "articles": [direcao, execucao],
     }
 
 

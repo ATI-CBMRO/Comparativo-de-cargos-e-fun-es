@@ -11,53 +11,53 @@
     },
     {
       "id": "estrutura",
-      "kind": "incisos",
+      "kind": "articles",
       "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
       "editId": "estrutura",
-      "caput": "A estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia compõe-se dos seguintes órgãos:",
-      "items": [
+      "articles": [
         {
-          "text": "a Diretoria de Planejamento Operacional (DPO)",
-          "source": "ro"
+          "id": "direcao",
+          "kind": "incisos",
+          "editId": "estrutura/direcao",
+          "caput": "São Órgãos de Direção Operacional:",
+          "items": [
+            {
+              "text": "de Direção Setorial: a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE) e o Comando de Operações Técnicas (COT)",
+              "source": "ro"
+            },
+            {
+              "text": "de Direção Regional: o Comandos Regionais de Bombeiro Militar (CRBM)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "de Direção Setorial: a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE) e o Comando de Operações Técnicas (COT)\nde Direção Regional: o Comandos Regionais de Bombeiro Militar (CRBM)"
         },
         {
-          "text": "o Comando de Operações Técnicas (COT)",
-          "source": "ro"
-        },
-        {
-          "text": "a Diretoria Operacional Especializada (DOE)",
-          "source": "ro"
-        },
-        {
-          "text": "o Comandos Regionais de Bombeiro Militar (CRBM)",
-          "source": "ro"
-        },
-        {
-          "text": "o Batalhão de Bombeiros Militar (BBM)",
-          "source": "ro"
-        },
-        {
-          "text": "a Companhia Independente de Bombeiros Militar (CIBM)",
-          "source": "ro"
-        },
-        {
-          "text": "o Grupo de Bombeiros Militar (GBM)",
-          "source": "ro"
-        },
-        {
-          "text": "o Batalhão de Busca e Salvamento (BBS)",
-          "source": "ro"
-        },
-        {
-          "text": "o Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)",
-          "source": "ro"
-        },
-        {
-          "text": "o Batalhão de Operações Aéreas (BOA)",
-          "source": "ro"
+          "id": "execucao",
+          "kind": "incisos",
+          "editId": "estrutura/execucao",
+          "caput": "Os Órgãos de Execução classificam-se, quanto à área de atuação, em:",
+          "items": [
+            {
+              "text": "Atuação Operacional Ordinária: o Batalhão de Bombeiros Militar (BBM), a Companhia Independente de Bombeiros Militar (CIBM) e a Coordenadoria de Atividades Técnicas (CAT)",
+              "source": "ro"
+            },
+            {
+              "text": "Atuação Operacional Especializada Terrestre: o Batalhão de Busca e Salvamento (BBS) e o Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)",
+              "source": "ro"
+            },
+            {
+              "text": "Atuação Operacional Especializada Aérea: o Batalhão de Operações Aéreas (BOA)",
+              "source": "ro"
+            },
+            {
+              "text": "Atuação Operacional Conveniada Municipal: o Grupo de Bombeiros Militar (GBM)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Atuação Operacional Ordinária: o Batalhão de Bombeiros Militar (BBM), a Companhia Independente de Bombeiros Militar (CIBM) e a Coordenadoria de Atividades Técnicas (CAT)\nAtuação Operacional Especializada Terrestre: o Batalhão de Busca e Salvamento (BBS) e o Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)\nAtuação Operacional Especializada Aérea: o Batalhão de Operações Aéreas (BOA)\nAtuação Operacional Conveniada Municipal: o Grupo de Bombeiros Militar (GBM)"
         }
-      ],
-      "proposedText": "a Diretoria de Planejamento Operacional (DPO)\no Comando de Operações Técnicas (COT)\na Diretoria Operacional Especializada (DOE)\no Comandos Regionais de Bombeiro Militar (CRBM)\no Batalhão de Bombeiros Militar (BBM)\na Companhia Independente de Bombeiros Militar (CIBM)\no Grupo de Bombeiros Militar (GBM)\no Batalhão de Busca e Salvamento (BBS)\no Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)\no Batalhão de Operações Aéreas (BOA)"
+      ]
     },
     {
       "id": "organ:dpo",
@@ -275,6 +275,113 @@
             }
           ],
           "proposedText": "Planejar, coordenar e controlar as atividades de estudos estratégicos operacionais."
+        }
+      ]
+    },
+    {
+      "id": "organ:doe",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",
+      "organKey": "doe",
+      "label": "Diretoria Operacional Especializada",
+      "abbr": "DOE",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:doe/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:doe/organizacao",
+          "caput": "DOE tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Gerência de Segurança Operacional",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Manutenção",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Correição",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Operações Aéreas",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Operações Terrestres",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhão de Busca e Salvamento (BBS) — Art. 44",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45",
+              "source": "ro"
+            },
+            {
+              "text": "Batalhão de Operações Aéreas (BOA) — Art. 47",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nGerência de Segurança Operacional\nSeção de Pessoal\nSeção Administrativa\nSeção de Manutenção\nSeção de Correição\nSeção de Operações Aéreas\nSeção de Operações Terrestres\nBatalhão de Busca e Salvamento (BBS) — Art. 44\nBatalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45\nBatalhão de Operações Aéreas (BOA) — Art. 47"
+        },
+        {
+          "id": "cargo:diretor-da-doe",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor da DOE",
+          "editId": "organ:doe/cargo:diretor-da-doe",
+          "caput": "Ao Diretor da DOE compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação."
+        },
+        {
+          "id": "cargo:adjunto-da-doe",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Adjunto da DOE",
+          "editId": "organ:doe/cargo:adjunto-da-doe",
+          "caput": "Ao Adjunto da DOE compete:",
+          "items": [
+            {
+              "text": "Substituir o Diretor da DOE em seus impedimentos.",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliar no planejamento e controle das atividades operacionais especializadas.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Substituir o Diretor da DOE em seus impedimentos.\nAuxiliar no planejamento e controle das atividades operacionais especializadas."
         }
       ]
     },
@@ -530,28 +637,6 @@
           "proposedText": "Substituir o Comandante do COT em seus impedimentos.\nAuxiliar no planejamento e controle das atividades técnicas."
         },
         {
-          "id": "cargo:coordenador-de-atividades-t-cnicas-cat",
-          "kind": "incisos",
-          "sectionTitle": "Das Atribuições do Coordenador de Atividades Técnicas (CAT)",
-          "editId": "organ:cot/cargo:coordenador-de-atividades-t-cnicas-cat",
-          "caput": "Ao Coordenador de Atividades Técnicas (CAT) compete:",
-          "items": [
-            {
-              "text": "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.",
-              "source": "ro"
-            },
-            {
-              "text": "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.",
-              "source": "ro"
-            },
-            {
-              "text": "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT).",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.\nProceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.\nCom autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."
-        },
-        {
           "id": "cargo:coordenador-de-projetos-de-arquitetura-e-engenharia",
           "kind": "incisos",
           "sectionTitle": "Das Atribuições do Coordenador de Projetos de Arquitetura e Engenharia",
@@ -564,113 +649,6 @@
             }
           ],
           "proposedText": "Planejar, coordenar e controlar as atividades de elaboração de projetos de arquitetura e engenharia, fiscalização e vistoria de obras no âmbito do CBMRO. Classificado como Órgão de Apoio Setorial."
-        }
-      ]
-    },
-    {
-      "id": "organ:doe",
-      "kind": "organ",
-      "chapterTitle": "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",
-      "organKey": "doe",
-      "label": "Diretoria Operacional Especializada",
-      "abbr": "DOE",
-      "sections": [
-        {
-          "id": "finalidade",
-          "kind": "prose",
-          "sectionTitle": "Da Finalidade",
-          "editId": "organ:doe/finalidade",
-          "proposedText": "Órgão responsável pelo planejamento, coordenação, supervisão, fiscalização e avaliação das atividades operacionais especializadas da Corporação, visando a eficiência e a eficácia das ações dos órgãos de execução subordinados no tocante às operações especializadas."
-        },
-        {
-          "id": "organizacao",
-          "kind": "incisos",
-          "sectionTitle": "Da Organização Interna",
-          "editId": "organ:doe/organizacao",
-          "caput": "DOE tem a seguinte estrutura interna:",
-          "items": [
-            {
-              "text": "Diretor",
-              "source": "ro"
-            },
-            {
-              "text": "Adjunto",
-              "source": "ro"
-            },
-            {
-              "text": "Gerência de Segurança Operacional",
-              "source": "ro"
-            },
-            {
-              "text": "Seção de Pessoal",
-              "source": "ro"
-            },
-            {
-              "text": "Seção Administrativa",
-              "source": "ro"
-            },
-            {
-              "text": "Seção de Manutenção",
-              "source": "ro"
-            },
-            {
-              "text": "Seção de Correição",
-              "source": "ro"
-            },
-            {
-              "text": "Seção de Operações Aéreas",
-              "source": "ro"
-            },
-            {
-              "text": "Seção de Operações Terrestres",
-              "source": "ro"
-            },
-            {
-              "text": "Batalhão de Busca e Salvamento (BBS) — Art. 44",
-              "source": "ro"
-            },
-            {
-              "text": "Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45",
-              "source": "ro"
-            },
-            {
-              "text": "Batalhão de Operações Aéreas (BOA) — Art. 47",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Diretor\nAdjunto\nGerência de Segurança Operacional\nSeção de Pessoal\nSeção Administrativa\nSeção de Manutenção\nSeção de Correição\nSeção de Operações Aéreas\nSeção de Operações Terrestres\nBatalhão de Busca e Salvamento (BBS) — Art. 44\nBatalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45\nBatalhão de Operações Aéreas (BOA) — Art. 47"
-        },
-        {
-          "id": "cargo:diretor-da-doe",
-          "kind": "incisos",
-          "sectionTitle": "Das Atribuições do Diretor da DOE",
-          "editId": "organ:doe/cargo:diretor-da-doe",
-          "caput": "Ao Diretor da DOE compete:",
-          "items": [
-            {
-              "text": "Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação.",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Planejar, coordenar, supervisionar, fiscalizar e avaliar as atividades operacionais especializadas da Corporação."
-        },
-        {
-          "id": "cargo:adjunto-da-doe",
-          "kind": "incisos",
-          "sectionTitle": "Das Atribuições do Adjunto da DOE",
-          "editId": "organ:doe/cargo:adjunto-da-doe",
-          "caput": "Ao Adjunto da DOE compete:",
-          "items": [
-            {
-              "text": "Substituir o Diretor da DOE em seus impedimentos.",
-              "source": "ro"
-            },
-            {
-              "text": "Auxiliar no planejamento e controle das atividades operacionais especializadas.",
-              "source": "ro"
-            }
-          ],
-          "proposedText": "Substituir o Diretor da DOE em seus impedimentos.\nAuxiliar no planejamento e controle das atividades operacionais especializadas."
         }
       ]
     },
@@ -1240,69 +1218,89 @@
       ]
     },
     {
-      "id": "organ:gbm",
+      "id": "organ:cat",
       "kind": "organ",
-      "chapterTitle": "DO GRUPO DE BOMBEIROS MILITAR (GBM)",
-      "organKey": "gbm",
-      "label": "Grupo de Bombeiros Militar",
-      "abbr": "GBM",
+      "chapterTitle": "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",
+      "organKey": "cat",
+      "label": "Coordenadoria de Atividades Técnicas",
+      "abbr": "CAT",
       "sections": [
         {
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:gbm/finalidade",
-          "proposedText": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais."
+          "editId": "organ:cat/finalidade",
+          "proposedText": "Órgão de execução de atuação operacional ordinária, subordinado ao Comando de Operações Técnicas (COT), incumbido de estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico."
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:gbm/competencia",
-          "caput": "Compete à GBM:",
+          "editId": "organ:cat/competencia",
+          "caput": "Compete à CAT:",
           "items": [
             {
-              "text": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar.",
+              "text": "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos, com autoridade para notificar, multar, embargar e interditar na forma da lei específica.",
               "source": "ro"
             }
           ],
-          "proposedText": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar."
+          "proposedText": "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos, com autoridade para notificar, multar, embargar e interditar na forma da lei específica."
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:gbm/organizacao",
-          "caput": "GBM tem a seguinte estrutura interna:",
+          "editId": "organ:cat/organizacao",
+          "caput": "CAT tem a seguinte estrutura interna:",
           "items": [
             {
-              "text": "Comandante",
+              "text": "Coordenador",
               "source": "ro"
             },
             {
-              "text": "Auxiliares",
+              "text": "Adjunto",
               "source": "ro"
             },
             {
-              "text": "Destacamentos de Bombeiros Militar",
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Análise de Projetos",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Investigação e Prevenção de Incêndio",
+              "source": "ro"
+            },
+            {
+              "text": "Gerência de Atividades Técnicas — Seção Administrativa, Seção de Vistoria, Seção de Hidrantes",
               "source": "ro"
             }
           ],
-          "proposedText": "Comandante\nAuxiliares\nDestacamentos de Bombeiros Militar"
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nSeção de Análise de Projetos\nSeção de Investigação e Prevenção de Incêndio\nGerência de Atividades Técnicas — Seção Administrativa, Seção de Vistoria, Seção de Hidrantes"
         },
         {
-          "id": "cargo:comandante-do-gbm",
+          "id": "cargo:coordenador-de-atividades-t-cnicas-cat",
           "kind": "incisos",
-          "sectionTitle": "Das Atribuições do Comandante do GBM",
-          "editId": "organ:gbm/cargo:comandante-do-gbm",
-          "caput": "Ao Comandante do GBM compete:",
+          "sectionTitle": "Das Atribuições do Coordenador de Atividades Técnicas (CAT)",
+          "editId": "organ:cat/cargo:coordenador-de-atividades-t-cnicas-cat",
+          "caput": "Ao Coordenador de Atividades Técnicas (CAT) compete:",
           "items": [
             {
-              "text": "Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais.",
+              "text": "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.",
+              "source": "ro"
+            },
+            {
+              "text": "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.",
+              "source": "ro"
+            },
+            {
+              "text": "Com autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT).",
               "source": "ro"
             }
           ],
-          "proposedText": "Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais."
+          "proposedText": "Estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico.\nProceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos.\nCom autoridade para notificar, multar, embargar e interditar na forma da lei específica. Subordinado ao Comando de Operações Técnicas (COT)."
         }
       ]
     },
@@ -1722,6 +1720,73 @@
             }
           ],
           "proposedText": "Responsável pelo planejamento, direção e emprego do Batalhão nas missões aéreas.\nGestor da Unidade Aérea Pública (UAP) nos termos do Regulamento Brasileiro de Aviação Civil (RBAC).\ndirigir, cumprir e fazer cumprir as atividades relacionadas à prevenção, combate a incêndios e salvamento em altura e terrestre na sua área de atuação\npraticar os atos administrativos necessários ao perfeito funcionamento da Unidade e de suas subunidades\nmanter a tropa permanentemente adestrada e pronta para o emprego\ncomandar diretamente as atividades operacionais que envolvam mais de uma operação de socorro bombeiro militar na área de atuação das subunidades\ndesenvolver o espírito de iniciativa e camaradagem de seus subordinados\ncomunicar imediatamente à autoridade superior qualquer fato grave ocorrido em sua área de atuação, solicitando intervenção nos casos que exijam a participação de outros órgãos\ncontrolar e zelar pela conservação e manutenção dos bens móveis e imóveis sob sua responsabilidade\nprovidenciar a manutenção dos bens patrimoniais sob sua guarda\nelaborar e submeter à aprovação do escalão superior as Normas Gerais de Ação dos órgãos da Unidade\nmovimentar os oficiais e praças no âmbito das respectivas subunidades\ncontrolar e fiscalizar a execução, no âmbito das respectivas subunidades operacionais, dos planos e ordens superiores\nelaborar e manter atualizado o quadro estatístico de ocorrências operacionais de suas subunidades\nexecutar atos administrativos que lhe competirem, como integrante do sistema de administração de pessoal e material\ninstaurar sindicância\nexercer outros encargos que lhe forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes"
+        }
+      ]
+    },
+    {
+      "id": "organ:gbm",
+      "kind": "organ",
+      "chapterTitle": "DO GRUPO DE BOMBEIROS MILITAR (GBM)",
+      "organKey": "gbm",
+      "label": "Grupo de Bombeiros Militar",
+      "abbr": "GBM",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:gbm/finalidade",
+          "proposedText": "Destinado a operar nos municípios não cobertos pelo serviço regular, criado mediante convênio entre o Governo do Estado e as Prefeituras Municipais."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:gbm/competencia",
+          "caput": "Compete à GBM:",
+          "items": [
+            {
+              "text": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Prevê a participação em conjunto entre Bombeiros Militares e agentes públicos municipais, no desempenho dos serviços operacionais, sob a coordenação da Corporação Militar."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:gbm/organizacao",
+          "caput": "GBM tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliares",
+              "source": "ro"
+            },
+            {
+              "text": "Destacamentos de Bombeiros Militar",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante\nAuxiliares\nDestacamentos de Bombeiros Militar"
+        },
+        {
+          "id": "cargo:comandante-do-gbm",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante do GBM",
+          "editId": "organ:gbm/cargo:comandante-do-gbm",
+          "caput": "Ao Comandante do GBM compete:",
+          "items": [
+            {
+              "text": "Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável pela operação do Grupo em município não coberto pelo serviço regular, em parceria com agentes públicos municipais."
         }
       ]
     },
