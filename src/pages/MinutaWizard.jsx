@@ -31,6 +31,13 @@ function indexLeaves(structure) {
           sectionTitle: s.sectionTitle, chapterTitle: ch.chapterTitle, kind: s.kind,
         }
       }
+    } else if (ch.kind === 'articles') {
+      for (const a of ch.articles) {
+        idx[a.editId] = {
+          items: a.items ?? [], proposedText: a.proposedText ?? '',
+          sectionTitle: null, chapterTitle: ch.chapterTitle, kind: a.kind,
+        }
+      }
     } else {
       idx[ch.editId] = {
         items: ch.items ?? [], proposedText: ch.proposedText ?? '',
@@ -53,6 +60,7 @@ function indexSources(structure) {
   }
   for (const ch of structure.chapters) {
     if (ch.kind === 'organ') ch.sections.forEach(s => add(s.editId, s.items))
+    else if (ch.kind === 'articles') ch.articles.forEach(a => add(a.editId, a.items))
     else add(ch.editId, ch.items)
   }
   return map
