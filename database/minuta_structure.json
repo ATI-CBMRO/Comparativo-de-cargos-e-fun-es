@@ -184,23 +184,15 @@
               "source": "ro"
             },
             {
-              "text": "Comandos Regionais de Bombeiro Militar (CRBMs) — Art. 29",
+              "text": "Comando de Operações Técnicas (COT) — Art. 24",
               "source": "ro"
             },
             {
-              "text": "Batalhões de Bombeiros Militar (BBM) — Art. 40",
-              "source": "ro"
-            },
-            {
-              "text": "Companhias Independentes de Bombeiros Militar (CIBM) — Art. 41",
-              "source": "ro"
-            },
-            {
-              "text": "Diretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)",
+              "text": "Comandos Regionais de Bombeiro Militar (CRBMs) — Art. 29: Batalhão de Bombeiros Militar (BBM) — Art. 40, Companhia Independente de Bombeiros Militar (CIBM) — Art. 41",
               "source": "ro"
             }
           ],
-          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa\nComandos Regionais de Bombeiro Militar (CRBMs) — Art. 29\nBatalhões de Bombeiros Militar (BBM) — Art. 40\nCompanhias Independentes de Bombeiros Militar (CIBM) — Art. 41\nDiretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas (BOA)"
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Operações — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Doutrina e Pesquisa — Coordenador, Adjunto, Seção Administrativa\nCoordenadoria de Estudos Estratégicos — Coordenador, Adjunto, Seção Administrativa\nComando de Operações Técnicas (COT) — Art. 24\nComandos Regionais de Bombeiro Militar (CRBMs) — Art. 29: Batalhão de Bombeiros Militar (BBM) — Art. 40, Companhia Independente de Bombeiros Militar (CIBM) — Art. 41"
         },
         {
           "id": "cargo:diretor-de-planejamento-operacional",

@@ -14755,29 +14755,16 @@
                       "_reg": true
                     },
                     {
+                      "id": "comando-de-operacoes-tecnicas-cot-art-24",
+                      "name": "Comando de Operações Técnicas (COT) — Art. 24",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
                       "id": "comandos-regionais-de-bombeiro-militar-crbms-art",
-                      "name": "Comandos Regionais de Bombeiro Militar (CRBMs) — Art. 29",
+                      "name": "Comandos Regionais de Bombeiro Militar (CRBMs) — Art. 29: Batalhão de Bombeiros Militar (BBM) — Art. 40, Companhia Independente de Bombeiros Militar (CIBM) — Art. 41",
                       "children": [],
                       "_reg": true
-                    },
-                    {
-                      "id": "batalhoes-de-bombeiros-militar-bbm-art-40",
-                      "name": "Batalhões de Bombeiros Militar (BBM) — Art. 40",
-                      "children": [],
-                      "_reg": true
-                    },
-                    {
-                      "id": "companhias-independentes-de-bombeiros-militar-ci",
-                      "name": "Companhias Independentes de Bombeiros Militar (CIBM) — Art. 41",
-                      "children": [],
-                      "_reg": true
-                    },
-                    {
-                      "id": "diretoria-operacional-especializada-doe-art-23-b",
-                      "name": "Diretoria Operacional Especializada (DOE) — Art. 23: Batalhão de Busca e Salvamento (BBS), Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA), Batalhão de Operações Aéreas",
-                      "children": [],
-                      "_reg": true,
-                      "abbreviation": "BOA"
                     }
                   ],
                   "abbreviation": "DPO",
@@ -15717,7 +15704,7 @@
         "has_regimento": false,
         "has_nga": false,
         "total_chars": 75273,
-        "organs_mapped": 200,
+        "organs_mapped": 198,
         "curated": true
       }
     },
