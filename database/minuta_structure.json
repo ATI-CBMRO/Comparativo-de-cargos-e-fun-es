@@ -1997,17 +1997,27 @@
                 "chapterId": "organ:bbm",
                 "children": [
                   {
-                    "organKey": "gbm",
-                    "sigla": "GBM",
-                    "label": "Grupo de Bombeiros Militar",
-                    "chapterId": "organ:gbm",
+                    "organKey": null,
+                    "sigla": "Cia BM",
+                    "label": "Companhia de Bombeiros Militar",
+                    "structural": true,
+                    "chapterId": null,
                     "children": [
                       {
-                        "organKey": "guarnicao",
-                        "sigla": "",
-                        "label": "Guarnição de Serviço Operacional",
-                        "chapterId": "organ:guarnicao",
-                        "children": []
+                        "organKey": null,
+                        "sigla": "Pel BM",
+                        "label": "Pelotão de Bombeiros Militar",
+                        "structural": true,
+                        "chapterId": null,
+                        "children": [
+                          {
+                            "organKey": "guarnicao",
+                            "sigla": "",
+                            "label": "Guarnição de Serviço Operacional",
+                            "chapterId": "organ:guarnicao",
+                            "children": []
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2018,6 +2028,13 @@
                 "sigla": "CIBM",
                 "label": "Companhia Independente de Bombeiros Militar",
                 "chapterId": "organ:cibm",
+                "children": []
+              },
+              {
+                "organKey": "gbm",
+                "sigla": "GBM",
+                "label": "Grupo de Bombeiros Militar",
+                "chapterId": "organ:gbm",
                 "children": []
               }
             ]

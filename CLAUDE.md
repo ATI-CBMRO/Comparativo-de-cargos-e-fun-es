@@ -137,8 +137,11 @@ Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional d
 Página que apresenta dois diagramas da minuta, lendo o mesmo `minuta_structure.json`:
 - **Organograma** (`src/components/MinutaOrgChart.jsx`) — cadeia de comando dos 12 órgãos,
   caixas-e-linhas em CSS puro (sem lib), a partir do campo `commandChart` gerado por
-  `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`; GBM sob BBM e
-  Guarnição sob GBM por colocação padrão em `COMMAND_PARENT_OVERRIDE`).
+  `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`; GBM como ramo
+  próprio sob o CRBM — Execução Conveniada Municipal — via `COMMAND_PARENT_OVERRIDE`, e a
+  Guarnição de Serviço Operacional como folha da cadeia de frações do BBM: BBM → Companhia
+  (Cia BM) → Pelotão (Pel BM) → Guarnição, via `BBM_FRACTION_CHAIN`, com Cia/Pel como nós
+  estruturais não-clicáveis).
 - **Mapa mental** (`src/components/MinutaMindMap.jsx`) — grade de cartões, um por capítulo.
 Ambos clicáveis: abrem um painel lateral com as seções/competências do capítulo. Exporta via
 `window.print()` (`@media print`, Paisagem), ocultando navegação/controles/painel.

@@ -271,15 +271,27 @@ def build_finais_chapter():
 
 
 # Colocações padrão para nós que não casam pela subordinação textual do ro.json:
-#   gbm        -> subordinadoA = "Pelotão…" (fora do conjunto) -> fração elementar sob BBM
-#   guarnicao  -> não existe no ro.json (nó novo do RISD-CBMSE) -> menor fração sob GBM
-COMMAND_PARENT_OVERRIDE = {"gbm": "bbm", "guarnicao": "gbm"}
+#   gbm  -> subordinadoA = "Pelotão…" (fora do conjunto). É unidade de Execução
+#           Conveniada Municipal, ramo próprio sob o CRBM (ao lado de BBM e CIBM).
+# A Guarnição é tratada à parte (não por override): é a folha da cadeia de frações
+# da execução ordinária do BBM — ver BBM_FRACTION_CHAIN.
+COMMAND_PARENT_OVERRIDE = {"gbm": "crbm"}
+
+# Cadeia de frações da execução ordinária, do maior ao menor, DENTRO do BBM.
+# Companhia e Pelotão não têm capítulo próprio na minuta: entram como nós
+# estruturais não-clicáveis (sem chapterId). A Guarnição de Serviço Operacional
+# (capítulo organ:guarnicao) compõe o Pelotão e fecha a cadeia como folha.
+BBM_FRACTION_CHAIN = [
+    {"sigla": "Cia BM",  "label": "Companhia de Bombeiros Militar"},
+    {"sigla": "Pel BM",  "label": "Pelotão de Bombeiros Militar"},
+]
 
 
 def build_command_chart(organs, chapters):
-    """Árvore dos 12 órgãos (capítulos kind='organ') pela subordinação do ro.json.
+    """Árvore dos órgãos (capítulos kind='organ') pela subordinação do ro.json.
 
     Pai = órgão do conjunto cuja SIGLA aparece em subordinadoA; senão, raiz.
+    A Guarnição (menor fração) pendura na cadeia Cia BM → Pel BM dentro do BBM.
     Retorna a raiz sintética 'Subcomandante-Geral'.
     """
     nodes = {}
@@ -313,6 +325,10 @@ def build_command_chart(organs, chapters):
             )
         return matches[0] if matches else None  # None = raiz
 
+    # A Guarnição não entra no roteamento por sigla: é a folha da cadeia de frações
+    # do BBM, montada à parte com nós estruturais intermediários (Cia BM, Pel BM).
+    guarnicao = nodes.pop("guarnicao", None)
+
     roots = []
     for k, n in nodes.items():
         p = find_parent(k)
@@ -320,6 +336,17 @@ def build_command_chart(organs, chapters):
             nodes[p]["children"].append(n)
         else:
             roots.append(n)
+
+    if guarnicao is not None and "bbm" in nodes:
+        leaf = nodes["bbm"]
+        for frac in BBM_FRACTION_CHAIN:
+            node = {
+                "organKey": None, "sigla": frac["sigla"], "label": frac["label"],
+                "structural": True, "chapterId": None, "children": [],
+            }
+            leaf["children"].append(node)
+            leaf = node
+        leaf["children"].append(guarnicao)
 
     return {"label": "Subcomandante-Geral", "synthetic": True, "children": roots}
 
