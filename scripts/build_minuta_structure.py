@@ -301,12 +301,17 @@ def build_command_chart(organs, chapters):
         if k in COMMAND_PARENT_OVERRIDE:
             return COMMAND_PARENT_OVERRIDE[k]
         sub = (organs.get(k) or {}).get("subordinadoA", "") or ""
-        for other_k, sig in siglas.items():
-            if other_k == k:
-                continue
-            if re.search(rf"\b{re.escape(sig)}\b", sub):
-                return other_k
-        return None  # raiz
+        matches = [
+            other_k for other_k, sig in siglas.items()
+            if other_k != k and re.search(rf"\b{re.escape(sig)}\b", sub)
+        ]
+        # subordinadoA deve referenciar no máximo uma sigla do conjunto; mais de uma
+        # significaria roteamento ambíguo (texto do ro.json mudou) — falha alto.
+        if len(matches) > 1:
+            raise ValueError(
+                f"subordinadoA de '{k}' casa múltiplas siglas {matches}: {sub!r}"
+            )
+        return matches[0] if matches else None  # None = raiz
 
     roots = []
     for k, n in nodes.items():
