@@ -2086,3 +2086,14 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   .md-layout { flex-direction: column; }
   .md-panel { flex: 1 1 auto; width: 100%; position: static; max-height: none; }
 }
+
+/* ── Impressão: Diagramas da Minuta ── */
+@media print {
+  .md-layout { display: block !important; }
+  .md-controls, .md-panel { display: none !important; }
+  .moc-tree { overflow: visible !important; }
+  .moc-box, .mmm-card { break-inside: avoid !important; page-break-inside: avoid !important; }
+  .mmm-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .mmm-card-head, .mmm-card-list { color: #1a1a1a !important; }
+  .mmm-card-head { background: #e7ebf3 !important; }
+}
