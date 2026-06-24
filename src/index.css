@@ -2004,3 +2004,37 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .oc-pair-table td, .oc-pair-table th { padding: 8px 10px; }
   .page-body { display: block !important; }
 }
+
+/* ── Organograma caixas-e-linhas (Diagramas da Minuta) ── */
+.moc-tree { overflow-x: auto; padding: 8px 0 16px; }
+.moc-tree > ul { display: flex; justify-content: center; min-width: max-content; }
+.moc-tree ul { display: flex; justify-content: center; padding-top: 22px; position: relative; }
+.moc-tree li { list-style: none; text-align: center; position: relative; padding: 22px 8px 0; }
+.moc-tree li::before, .moc-tree li::after {
+  content: ''; position: absolute; top: 0; right: 50%;
+  border-top: 1.5px solid var(--border-card); width: 50%; height: 22px;
+}
+.moc-tree li::after { right: auto; left: 50%; border-left: 1.5px solid var(--border-card); }
+.moc-tree li:only-child::before, .moc-tree li:only-child::after { display: none; }
+.moc-tree li:only-child { padding-top: 0; }
+.moc-tree li:first-child::before, .moc-tree li:last-child::after { border: 0 none; }
+.moc-tree li:last-child::before { border-right: 1.5px solid var(--border-card); border-radius: 0 6px 0 0; }
+.moc-tree li:first-child::after { border-radius: 6px 0 0 0; }
+.moc-tree ul ul::before {
+  content: ''; position: absolute; top: 0; left: 50%;
+  border-left: 1.5px solid var(--border-card); width: 0; height: 22px;
+}
+
+.moc-box {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 2px;
+  min-width: 96px; max-width: 158px; padding: 8px 12px;
+  border: 1.5px solid var(--border-card); border-radius: 8px; background: #fff;
+  font-family: inherit; cursor: pointer; color: #121d3d; line-height: 1.25;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+button.moc-box:hover { border-color: var(--cbm-red-400); }
+.moc-box-root { background: #c8102e; border-color: #c8102e; color: #fff; cursor: default; }
+.moc-box-root .moc-label { color: #fff; font-weight: 700; font-size: 12px; }
+.moc-box-sel { border-color: #c8102e; box-shadow: 0 0 0 2px rgba(200, 16, 46, 0.25); }
+.moc-sigla { font-weight: 800; font-size: 13px; }
+.moc-label { font-size: 10.5px; color: var(--text-muted); }
