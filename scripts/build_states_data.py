@@ -321,7 +321,8 @@ def enrich_tree_from_detail(state_id: str, organs: list) -> list:
         # outro não (ou difere), NÃO casar (ex.: Estado-Maior Operacional ≠ Geral)
         QUALIF = {"operacional", "setorial", "administrativo", "administrativa",
                   "regional", "metropolitano", "metropolitana", "especializado",
-                  "especializada", "interior", "capital", "adjunto", "operacoes"}
+                  "especializada", "interior", "capital", "adjunto", "operacoes",
+                  "atuacao", "terrestre", "aerea", "aereo"}
         ntok = {t for t in cn.split() if t not in STOP}
         if len(ntok) >= 2:
             best_oid, best_score = None, 0.0

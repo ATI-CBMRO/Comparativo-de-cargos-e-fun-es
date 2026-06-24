@@ -15464,81 +15464,8 @@
                   ],
                   "abbreviation": "BIFEA",
                   "detailId": "bifea"
-                },
-                {
-                  "id": "diretor",
-                  "name": "Diretor",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "adjunto",
-                  "name": "Adjunto",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "gerencia-de-seguranca-operacional",
-                  "name": "Gerência de Segurança Operacional",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-pessoal",
-                  "name": "Seção de Pessoal",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-administrativa",
-                  "name": "Seção Administrativa",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-manutencao",
-                  "name": "Seção de Manutenção",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-correicao",
-                  "name": "Seção de Correição",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-operacoes-aereas",
-                  "name": "Seção de Operações Aéreas",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-operacoes-terrestres",
-                  "name": "Seção de Operações Terrestres",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "batalhao-de-busca-e-salvamento-bbs-art-44",
-                  "name": "Batalhão de Busca e Salvamento (BBS) — Art. 44",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "batalhao-de-incendio-florestal-e-emergencias-amb",
-                  "name": "Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "batalhao-de-operacoes-aereas-boa-art-47",
-                  "name": "Batalhão de Operações Aéreas (BOA) — Art. 47",
-                  "children": [],
-                  "_reg": true
                 }
-              ],
-              "detailId": "doe"
+              ]
             },
             {
               "id": "exec-aer",
@@ -15577,81 +15504,8 @@
                   ],
                   "abbreviation": "BOA",
                   "detailId": "boa"
-                },
-                {
-                  "id": "diretor",
-                  "name": "Diretor",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "adjunto",
-                  "name": "Adjunto",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "gerencia-de-seguranca-operacional",
-                  "name": "Gerência de Segurança Operacional",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-pessoal",
-                  "name": "Seção de Pessoal",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-administrativa",
-                  "name": "Seção Administrativa",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-manutencao",
-                  "name": "Seção de Manutenção",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-correicao",
-                  "name": "Seção de Correição",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-operacoes-aereas",
-                  "name": "Seção de Operações Aéreas",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "secao-de-operacoes-terrestres",
-                  "name": "Seção de Operações Terrestres",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "batalhao-de-busca-e-salvamento-bbs-art-44",
-                  "name": "Batalhão de Busca e Salvamento (BBS) — Art. 44",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "batalhao-de-incendio-florestal-e-emergencias-amb",
-                  "name": "Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA) — Art. 45",
-                  "children": [],
-                  "_reg": true
-                },
-                {
-                  "id": "batalhao-de-operacoes-aereas-boa-art-47",
-                  "name": "Batalhão de Operações Aéreas (BOA) — Art. 47",
-                  "children": [],
-                  "_reg": true
                 }
-              ],
-              "detailId": "doe"
+              ]
             },
             {
               "id": "exec-mun",
@@ -15704,7 +15558,7 @@
         "has_regimento": false,
         "has_nga": false,
         "total_chars": 75273,
-        "organs_mapped": 198,
+        "organs_mapped": 174,
         "curated": true
       }
     },
