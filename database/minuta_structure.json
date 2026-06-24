@@ -1958,5 +1958,101 @@
       "editId": "finais",
       "proposedText": "Os casos omissos neste Regimento Interno serão resolvidos pelo Comandante-Geral do CBMRO.\nEste Regimento Interno entra em vigor na data de sua publicação, revogadas as disposições em contrário."
     }
-  ]
+  ],
+  "commandChart": {
+    "label": "Subcomandante-Geral",
+    "synthetic": true,
+    "children": [
+      {
+        "organKey": "dpo",
+        "sigla": "DPO",
+        "label": "Diretoria de Planejamento Operacional",
+        "chapterId": "organ:dpo",
+        "children": [
+          {
+            "organKey": "cot",
+            "sigla": "COT",
+            "label": "Comando de Operações Técnicas",
+            "chapterId": "organ:cot",
+            "children": [
+              {
+                "organKey": "cat",
+                "sigla": "CAT",
+                "label": "Coordenadoria de Atividades Técnicas",
+                "chapterId": "organ:cat",
+                "children": []
+              }
+            ]
+          },
+          {
+            "organKey": "crbm",
+            "sigla": "CRBM",
+            "label": "Comandos Regionais de Bombeiro Militar",
+            "chapterId": "organ:crbm",
+            "children": [
+              {
+                "organKey": "bbm",
+                "sigla": "BBM",
+                "label": "Batalhão de Bombeiros Militar",
+                "chapterId": "organ:bbm",
+                "children": [
+                  {
+                    "organKey": "gbm",
+                    "sigla": "GBM",
+                    "label": "Grupo de Bombeiros Militar",
+                    "chapterId": "organ:gbm",
+                    "children": [
+                      {
+                        "organKey": "guarnicao",
+                        "sigla": "",
+                        "label": "Guarnição de Serviço Operacional",
+                        "chapterId": "organ:guarnicao",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "organKey": "cibm",
+                "sigla": "CIBM",
+                "label": "Companhia Independente de Bombeiros Militar",
+                "chapterId": "organ:cibm",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organKey": "doe",
+        "sigla": "DOE",
+        "label": "Diretoria Operacional Especializada",
+        "chapterId": "organ:doe",
+        "children": [
+          {
+            "organKey": "bbs",
+            "sigla": "BBS",
+            "label": "Batalhão de Busca e Salvamento",
+            "chapterId": "organ:bbs",
+            "children": []
+          },
+          {
+            "organKey": "bifea",
+            "sigla": "BIFEA",
+            "label": "Batalhão de Incêndio Florestal e Emergências Ambientais",
+            "chapterId": "organ:bifea",
+            "children": []
+          },
+          {
+            "organKey": "boa",
+            "sigla": "BOA",
+            "label": "Batalhão de Operações Aéreas",
+            "chapterId": "organ:boa",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
 }
