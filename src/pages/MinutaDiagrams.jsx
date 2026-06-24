@@ -4,14 +4,23 @@ import MinutaOrgChart from '../components/MinutaOrgChart.jsx'
 import MinutaMindMap from '../components/MinutaMindMap.jsx'
 
 // Badge de fonte (RO não recebe badge); espelha o padrão do MinutaWizard.
+// whiteSpace:nowrap + inline-block mantêm a citação inteira numa linha só
+// (quebra como um bloco, em vez de partir "cf." do resto).
 function srcBadge(source) {
   if (!source || source === 'ro') return null
   return (
     <span style={{
-      marginLeft: 6, fontSize: 11, fontFamily: 'Inter, sans-serif',
+      marginLeft: 6, fontSize: 11, fontFamily: 'Inter, sans-serif', fontWeight: 600,
       color: '#fff', background: '#c8102e', borderRadius: 4, padding: '1px 6px',
+      whiteSpace: 'nowrap', display: 'inline-block', verticalAlign: 'baseline',
     }}>{source}</span>
   )
+}
+
+// Inicial maiúscula para exibição (itens verbatim começam em minúscula).
+function capitalizeFirst(text) {
+  const t = (text || '').trim()
+  return t ? t.charAt(0).toUpperCase() + t.slice(1) : t
 }
 
 function panelSections(ch) {
@@ -39,7 +48,7 @@ function MinutaDetailPanel({ chapter, onClose }) {
               {s.caput && <p className="md-caput">{s.caput}</p>}
               {items.length ? (
                 <ul>
-                  {items.map((it, j) => <li key={j}>{it.text}{srcBadge(it.source)}</li>)}
+                  {items.map((it, j) => <li key={j}>{capitalizeFirst(it.text)}{srcBadge(it.source)}</li>)}
                 </ul>
               ) : s.proposedText ? (
                 <p className="md-prose">{s.proposedText}</p>
