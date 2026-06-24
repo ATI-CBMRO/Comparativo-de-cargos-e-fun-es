@@ -2052,3 +2052,37 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .mmm-card-list { margin: 0; padding: 10px 12px 12px 26px; font-size: 12px; color: var(--text-secondary); }
 .mmm-card-list li { margin-bottom: 3px; }
 .mmm-empty { font-style: italic; color: var(--text-muted); padding: 10px 12px; font-size: 12px; }
+
+/* ── Página Diagramas da Minuta: controles, layout e painel ── */
+.md-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 16px; }
+.md-segmented { display: inline-flex; border: 1px solid var(--border-card); border-radius: 8px; overflow: hidden; background: #fff; }
+.md-seg {
+  display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border: none;
+  background: #fff; color: var(--text-secondary); cursor: pointer; font-size: 13px; font-family: inherit;
+}
+.md-seg + .md-seg { border-left: 1px solid var(--border-card); }
+.md-seg.active { background: #121d3d; color: #fff; }
+
+.md-layout { display: flex; gap: 18px; align-items: flex-start; }
+.md-diagram { flex: 1; min-width: 0; }
+.md-panel {
+  flex: 0 0 340px; position: sticky; top: 16px; max-height: 82vh; overflow: auto;
+  border: 1px solid var(--border-card); border-radius: 10px; background: #fff;
+}
+.md-panel-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
+  background: #121d3d; color: #fff; font-weight: 700; font-size: 13px; padding: 12px 14px; line-height: 1.3;
+}
+.md-panel-close { border: none; background: transparent; color: #fff; cursor: pointer; padding: 0; flex-shrink: 0; }
+.md-panel-body { padding: 12px 14px; font-size: 13px; color: var(--text-primary); }
+.md-panel-sec { margin-bottom: 14px; }
+.md-panel-sec h4 { margin: 0 0 4px; font-size: 12.5px; color: #c8102e; }
+.md-caput { margin: 0 0 4px; font-weight: 600; }
+.md-panel-sec ul { margin: 0; padding-left: 20px; }
+.md-panel-sec li { margin-bottom: 4px; line-height: 1.5; }
+.md-prose { margin: 0; line-height: 1.55; }
+
+@media (max-width: 900px) {
+  .md-layout { flex-direction: column; }
+  .md-panel { flex: 1 1 auto; width: 100%; position: static; max-height: none; }
+}
