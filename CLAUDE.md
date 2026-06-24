@@ -23,7 +23,7 @@ python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json (aba "DPO × COT")
 python scripts/build_minuta_comparison.py    # organs_detail/*.json + comparativo_dpo_cot.json + minuta_enrichment.py -> database/comparativo_minuta.json (página /comparar "Subsídio à Minuta")
-python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json (wizard /minuta)
+python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json (wizard /minuta + commandChart p/ /minuta-diagramas)
 ```
 
 > ORDEM IMPORTA: `build_organs_detail.py` deve rodar ANTES de `build_states_data.py`, pois
@@ -82,7 +82,7 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   + main) e as rotas. O array `NAV` em `App.jsx` controla a navegação.
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
   `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
-  `/busca` (Search), `/minuta` (MinutaWizard).
+  `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
@@ -132,6 +132,16 @@ Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional d
   para capítulo/seção), curadoria por inciso (`excluded: Set<"editId#index">`, com filtro em
   lote por fonte) e edição de texto por seção em modo avançado; exporta o mesmo resultado
   filtrado para `.docx` via `docx`.
+
+### Diagramas da Minuta (`/minuta-diagramas`)
+Página que apresenta dois diagramas da minuta, lendo o mesmo `minuta_structure.json`:
+- **Organograma** (`src/components/MinutaOrgChart.jsx`) — cadeia de comando dos 12 órgãos,
+  caixas-e-linhas em CSS puro (sem lib), a partir do campo `commandChart` gerado por
+  `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`; GBM sob BBM e
+  Guarnição sob GBM por colocação padrão em `COMMAND_PARENT_OVERRIDE`).
+- **Mapa mental** (`src/components/MinutaMindMap.jsx`) — grade de cartões, um por capítulo.
+Ambos clicáveis: abrem um painel lateral com as seções/competências do capítulo. Exporta via
+`window.print()` (`@media print`, Paisagem), ocultando navegação/controles/painel.
 
 ### Servir dados: middleware (dev) + cópia no build (produção)
 `vite.config.js` registra DOIS plugins customizados:
