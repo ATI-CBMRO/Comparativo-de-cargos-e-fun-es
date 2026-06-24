@@ -102,7 +102,7 @@ export default function MinutaDiagrams() {
     <>
       {header}
       <div className="page-body">
-        <div className="print-only-title">Diagramas da Minuta — {VIEW_LABEL[view]}</div>
+        <div className="print-only-title" style={{ display: 'none' }}>Diagramas da Minuta — {VIEW_LABEL[view]}</div>
 
         <div className="md-controls no-print">
           <div className="md-segmented">
