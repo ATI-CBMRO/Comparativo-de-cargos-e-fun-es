@@ -95,6 +95,58 @@ function PairTable({ organ, state }) {
   )
 }
 
+/* Reconstrói a árvore (DPO › COT › CAT …) a partir da lista plana de órgãos com `depth`. */
+function buildOrganTree(organs) {
+  const roots = []
+  const stack = [] // [{ node, depth }]
+  for (const o of organs) {
+    const node = { ...o, children: [] }
+    while (stack.length && stack[stack.length - 1].depth >= (o.depth || 0)) stack.pop()
+    if (stack.length) stack[stack.length - 1].node.children.push(node)
+    else roots.push(node)
+    stack.push({ node, depth: o.depth || 0 })
+  }
+  return roots
+}
+
+/* Nó da árvore de órgãos: botão −/+ recolhe a subárvore; clicar no item seleciona o órgão.
+   Inicia recolhido (só o 1º nível visível), espelhando o organograma da minuta. */
+function OrgTreeNode({ node, depth, organKey, setOrganKey }) {
+  const hasChildren = node.children.length > 0
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <div className="oc-org-row" style={{ paddingLeft: depth * 14 }}>
+        {hasChildren ? (
+          <button
+            type="button"
+            className="oc-org-toggle"
+            onClick={() => setOpen(v => !v)}
+            aria-expanded={open}
+            aria-label={`${open ? 'Recolher' : 'Expandir'} ${node.abbr}`}
+            title={open ? 'Recolher' : `Expandir (${node.children.length})`}
+          >
+            {open ? '−' : '+'}
+          </button>
+        ) : (
+          <span className="oc-org-leaf" aria-hidden="true">└</span>
+        )}
+        <button
+          type="button"
+          onClick={() => setOrganKey(node.key)}
+          className={`nav-item oc-org-select${node.key === organKey ? ' active' : ''}`}
+          title={node.title}
+        >
+          {node.abbr}<span className="oc-org-count">{node.states.length}</span>
+        </button>
+      </div>
+      {hasChildren && open && node.children.map(c => (
+        <OrgTreeNode key={c.key} node={c} depth={depth + 1} organKey={organKey} setOrganKey={setOrganKey} />
+      ))}
+    </>
+  )
+}
+
 export default function MinutaComparator() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
@@ -110,6 +162,7 @@ export default function MinutaComparator() {
   }, [])
 
   const organ = useMemo(() => data?.organs.find(o => o.key === organKey) || null, [data, organKey])
+  const organTree = useMemo(() => (data ? buildOrganTree(data.organs) : []), [data])
 
   // Chips em ordem alfabética
   const chips = useMemo(() => {
@@ -176,22 +229,24 @@ export default function MinutaComparator() {
                   {navOpen ? <PanelLeftClose size={15} /> : <PanelLeftOpen size={15} />}
                 </button>
               </div>
-              {data.organs.map(o => (
-                <button
-                  key={o.key}
-                  onClick={() => setOrganKey(o.key)}
-                  className={`nav-item${o.key === organKey ? ' active' : ''}`}
-                  style={{
-                    width: '100%', border: 'none', cursor: 'pointer', fontSize: 12.5,
-                    textAlign: navOpen ? 'left' : 'center',
-                    justifyContent: navOpen ? 'flex-start' : 'center',
-                    padding: navOpen ? undefined : '8px 2px',
-                  }}
-                  title={navOpen ? o.title : `${o.title} — ${o.states.length} estado(s)`}
-                >
-                  {o.abbr}{navOpen && <span style={{ opacity: 0.6, fontSize: 10, marginLeft: 4 }}>{o.states.length}</span>}
-                </button>
-              ))}
+              {navOpen
+                ? organTree.map(root => (
+                    <OrgTreeNode key={root.key} node={root} depth={0} organKey={organKey} setOrganKey={setOrganKey} />
+                  ))
+                : data.organs.map(o => (
+                    <button
+                      key={o.key}
+                      onClick={() => setOrganKey(o.key)}
+                      className={`nav-item${o.key === organKey ? ' active' : ''}`}
+                      style={{
+                        width: '100%', border: 'none', cursor: 'pointer', fontSize: 12.5,
+                        textAlign: 'center', justifyContent: 'center', padding: '8px 2px',
+                      }}
+                      title={`${o.title} — ${o.states.length} estado(s)`}
+                    >
+                      {o.abbr}
+                    </button>
+                  ))}
             </div>
           </aside>
 

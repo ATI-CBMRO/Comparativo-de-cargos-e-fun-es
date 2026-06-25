@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Printer, X, Network, LayoutGrid } from 'lucide-react'
+import { Printer, X, Network, LayoutGrid, ChevronsDownUp, ChevronsUpDown } from 'lucide-react'
 import MinutaOrgChart from '../components/MinutaOrgChart.jsx'
 import MinutaMindMap from '../components/MinutaMindMap.jsx'
 
@@ -69,6 +69,21 @@ export default function MinutaDiagrams() {
   const [error, setError] = useState(null)
   const [view, setView] = useState('org')
   const [selected, setSelected] = useState(null)
+  // Expansão da árvore: `expandAll` é o estado-base reaplicado ao remontar (treeKey++).
+  const [expandAll, setExpandAll] = useState(false)
+  const [treeKey, setTreeKey] = useState(0)
+
+  function setTree(expand) { setExpandAll(expand); setTreeKey(k => k + 1) }
+
+  // Imprime com a árvore inteira aberta (senão o PDF sairia recolhido).
+  function handlePrint() {
+    if (view === 'org' && !expandAll) {
+      setTree(true)
+      setTimeout(() => window.print(), 120)
+    } else {
+      window.print()
+    }
+  }
 
   useEffect(() => {
     fetch('/database/minuta_structure.json')
@@ -118,7 +133,7 @@ export default function MinutaDiagrams() {
             <button
               type="button"
               className={`md-seg${view === 'org' ? ' active' : ''}`}
-              onClick={() => { setView('org'); setSelected(null) }}
+              onClick={() => { setView('org'); setSelected(null); setTree(false) }}
             ><Network size={15} /> Organograma</button>
             <button
               type="button"
@@ -126,7 +141,17 @@ export default function MinutaDiagrams() {
               onClick={() => { setView('mind'); setSelected(null) }}
             ><LayoutGrid size={15} /> Mapa mental</button>
           </div>
-          <button type="button" className="btn btn-ghost btn-sm" onClick={() => window.print()}>
+          {view === 'org' && (
+            <div className="md-segmented">
+              <button type="button" className="md-seg" onClick={() => setTree(true)} title="Expandir toda a árvore">
+                <ChevronsUpDown size={15} /> Expandir tudo
+              </button>
+              <button type="button" className="md-seg" onClick={() => setTree(false)} title="Recolher até o 1º nível">
+                <ChevronsDownUp size={15} /> Recolher tudo
+              </button>
+            </div>
+          )}
+          <button type="button" className="btn btn-ghost btn-sm" onClick={handlePrint}>
             <Printer size={15} style={{ verticalAlign: -2, marginRight: 4 }} /> Imprimir / PDF
           </button>
         </div>
@@ -134,7 +159,7 @@ export default function MinutaDiagrams() {
         <div className="md-layout">
           <div className="md-diagram">
             {view === 'org' ? (
-              <MinutaOrgChart chart={data.commandChart} onSelect={setSelected} selectedId={selected} />
+              <MinutaOrgChart key={treeKey} chart={data.commandChart} onSelect={setSelected} selectedId={selected} defaultExpanded={expandAll} />
             ) : (
               <MinutaMindMap chapters={data.chapters} onSelect={setSelected} selectedId={selected} />
             )}

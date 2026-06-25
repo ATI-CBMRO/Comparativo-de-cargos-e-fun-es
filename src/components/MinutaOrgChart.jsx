@@ -1,12 +1,24 @@
 // Organograma caixas-e-linhas (CSS puro) da cadeia de comando da minuta.
 // `chart` é o nó raiz (commandChart); cada nó: { organKey, sigla, label, chapterId, children }.
 // A raiz é sintética (synthetic:true, sem chapterId) e não é clicável.
+//
+// Árvore dinâmica: nós com filhos têm um botão −/+ (moc-toggle) que expande/recolhe
+// a subárvore; o clique na CAIXA continua abrindo o painel de detalhe. A raiz fica
+// sempre expandida; os demais nós iniciam conforme `defaultExpanded` (recolhidos por
+// padrão → só DPO e DOE visíveis). Trocar `defaultExpanded` + remontar (via `key` na
+// árvore) reaplica "expandir/recolher tudo".
 
-function ChartNode({ node, onSelect, selectedId }) {
+import { useState } from 'react'
+
+function ChartNode({ node, onSelect, selectedId, defaultExpanded }) {
   const kids = node.children || []
+  const hasKids = kids.length > 0
   const clickable = !node.synthetic && node.chapterId
   const selected = clickable && node.chapterId === selectedId
+  const [open, setOpen] = useState(node.synthetic ? true : defaultExpanded)
   const cls = `moc-box${node.synthetic ? ' moc-box-root' : ''}${selected ? ' moc-box-sel' : ''}`
+  const showToggle = hasKids && !node.synthetic
+  const name = node.sigla || node.label || 'nó'
 
   const inner = (
     <>
@@ -17,17 +29,37 @@ function ChartNode({ node, onSelect, selectedId }) {
 
   return (
     <li>
-      {clickable ? (
-        <button type="button" className={cls} onClick={() => onSelect(node.chapterId)}>
-          {inner}
-        </button>
-      ) : (
-        <div className={cls}>{inner}</div>
-      )}
-      {kids.length > 0 && (
+      <div className="moc-node">
+        {clickable ? (
+          <button type="button" className={cls} onClick={() => onSelect(node.chapterId)}>
+            {inner}
+          </button>
+        ) : (
+          <div className={cls}>{inner}</div>
+        )}
+        {showToggle && (
+          <button
+            type="button"
+            className={`moc-toggle${open ? ' open' : ''}`}
+            onClick={() => setOpen(v => !v)}
+            aria-expanded={open}
+            aria-label={`${open ? 'Recolher' : 'Expandir'} ${name}`}
+            title={open ? 'Recolher' : `Expandir (${kids.length})`}
+          >
+            {open ? '−' : '+'}
+          </button>
+        )}
+      </div>
+      {hasKids && open && (
         <ul>
           {kids.map(c => (
-            <ChartNode key={c.organKey || c.label} node={c} onSelect={onSelect} selectedId={selectedId} />
+            <ChartNode
+              key={c.organKey || c.label}
+              node={c}
+              onSelect={onSelect}
+              selectedId={selectedId}
+              defaultExpanded={defaultExpanded}
+            />
           ))}
         </ul>
       )}
@@ -35,12 +67,17 @@ function ChartNode({ node, onSelect, selectedId }) {
   )
 }
 
-export default function MinutaOrgChart({ chart, onSelect, selectedId }) {
+export default function MinutaOrgChart({ chart, onSelect, selectedId, defaultExpanded = false }) {
   if (!chart) return null
   return (
     <div className="moc-tree">
       <ul>
-        <ChartNode node={chart} onSelect={onSelect} selectedId={selectedId} />
+        <ChartNode
+          node={chart}
+          onSelect={onSelect}
+          selectedId={selectedId}
+          defaultExpanded={defaultExpanded}
+        />
       </ul>
     </div>
   )
