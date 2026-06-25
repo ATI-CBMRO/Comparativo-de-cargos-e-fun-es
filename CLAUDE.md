@@ -79,7 +79,10 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 
 ### Frontend (React)
 - Entrada: `src/main.jsx` (BrowserRouter) → `src/App.jsx` define o layout (Header + Sidebar
-  + main) e as rotas. O array `NAV` em `App.jsx` controla a navegação.
+  + main) e as rotas. O array `NAV` em `App.jsx` controla a navegação. No desktop (≥901px)
+  a sidebar recolhe em trilha de ícones (264px→76px) ao clicar em qualquer aba (estado
+  `collapsed`, separado do `navOpen` da gaveta mobile); o logo "Portal CBM" alterna de volta.
+  Regras em `@media (min-width: 901px) .app-shell.nav-collapsed` no `index.css`.
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
   `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
   `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams).
@@ -145,10 +148,17 @@ Página que apresenta dois diagramas da minuta, lendo o mesmo `minuta_structure.
   próprio sob o CRBM — Execução Conveniada Municipal — via `COMMAND_PARENT_OVERRIDE`, e a
   Guarnição de Serviço Operacional como folha da cadeia de frações do BBM: BBM → Companhia
   (Cia BM) → Pelotão (Pel BM) → Guarnição, via `BBM_FRACTION_CHAIN`, com Cia/Pel como nós
-  estruturais não-clicáveis).
+  estruturais não-clicáveis). A árvore é **dinâmica**: cada nó com filhos tem botão −/+
+  (`.moc-toggle`) que expande/recolhe a subárvore (estado local por nó; raiz sempre aberta;
+  inicia recolhida no 1º nível). Controles "Expandir/Recolher tudo" remontam a árvore via
+  `key`+`defaultExpanded`; a impressão expande tudo antes do `window.print()`.
 - **Mapa mental** (`src/components/MinutaMindMap.jsx`) — grade de cartões, um por capítulo.
 Ambos clicáveis: abrem um painel lateral com as seções/competências do capítulo. Exporta via
 `window.print()` (`@media print`, Paisagem), ocultando navegação/controles/painel.
+
+A lista "Órgãos da minuta" do `/comparar` reusa o mesmo padrão: `MinutaComparator.jsx`
+reconstrói a árvore a partir do `depth` (`buildOrganTree`) e renderiza `OrgTreeNode` com
+botão −/+ (`.oc-org-toggle`), iniciando recolhida no 1º nível; clicar no item seleciona o órgão.
 
 ### Servir dados: middleware (dev) + cópia no build (produção)
 `vite.config.js` registra DOIS plugins customizados:
