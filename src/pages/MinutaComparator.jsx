@@ -216,7 +216,7 @@ export default function MinutaComparator() {
 
         <div className="oc-compare-layout" style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
           {/* Sumário de órgãos (colapsável) */}
-          <aside className="no-print oc-compare-aside" style={{ flex: navOpen ? '0 0 220px' : '0 0 52px', position: 'sticky', top: 12, transition: 'flex-basis 0.15s ease' }}>
+          <aside className="no-print oc-compare-aside" style={{ flex: navOpen ? '0 0 220px' : '0 0 52px', position: 'sticky', top: 'calc(var(--header-h) + 12px)', maxHeight: 'calc(100vh - var(--header-h) - 24px)', overflowY: 'auto', transition: 'flex-basis 0.15s ease' }}>
             <div className="card" style={{ padding: navOpen ? 8 : 6 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: navOpen ? 'space-between' : 'center', gap: 6, padding: navOpen ? '2px 4px 6px' : '2px 0 6px' }}>
                 {navOpen && <span className="nav-section-label" style={{ padding: '4px 6px' }}>Órgãos da minuta</span>}

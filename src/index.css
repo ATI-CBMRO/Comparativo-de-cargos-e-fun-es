@@ -969,9 +969,13 @@ img { display: block; max-width: 100%; }
   z-index: 3 !important;
 }
 
-/* ── Subsídio à Minuta: chips de estado (trocam o estado comparado) ── */
+/* ── Subsídio à Minuta: chips de estado (trocam o estado comparado) ──
+   Fixa junto ao topo ao rolar a página, abaixo do cabeçalho institucional,
+   para permitir trocar de estado sem perder a posição de leitura na tabela. */
 .oc-state-chips {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-bottom: 12px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 5px;
+  position: sticky; top: calc(var(--header-h) + 8px); z-index: 20;
+  background: var(--bg-app); padding: 8px 0 12px; margin-bottom: 4px;
 }
 .oc-state-chips-label {
   font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
@@ -1322,7 +1326,9 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
     width: 100% !important;
     position: static !important;
     top: auto !important;
+    max-height: none !important;
   }
+  .oc-state-chips { position: static !important; background: transparent !important; }
 
   /* Tabela pareada CBMRO × estado: rola na horizontal (swipe) em vez de
      cortar as colunas; largura mínima mantém RO e estado legíveis. */
