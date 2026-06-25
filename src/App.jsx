@@ -55,10 +55,16 @@ function Header({ navOpen, onToggleNav }) {
   )
 }
 
-function Sidebar({ open, onNavigate }) {
+function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
   return (
     <aside id="sidebar-nav" className={`sidebar${open ? ' open' : ''}`}>
-      <div className="sidebar-logo">
+      <button
+        type="button"
+        className="sidebar-logo"
+        onClick={onToggleCollapse}
+        aria-expanded={!collapsed}
+        title={collapsed ? 'Expandir navegação' : 'Recolher navegação'}
+      >
         <div className="sidebar-logo-icon">
           <Flame size={20} color="#fff" strokeWidth={2.5} />
         </div>
@@ -66,7 +72,7 @@ function Sidebar({ open, onNavigate }) {
           <strong>Portal CBM</strong>
           <span>Legislação Comparada</span>
         </div>
-      </div>
+      </button>
 
       <nav className="sidebar-nav">
         <div className="nav-section-label">Navegação</div>
@@ -76,10 +82,11 @@ function Sidebar({ open, onNavigate }) {
             to={to}
             end={end}
             onClick={onNavigate}
+            title={label}
             className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
           >
             <Icon className="nav-icon" size={18} />
-            {label}
+            <span className="nav-item-label">{label}</span>
           </NavLink>
         ))}
       </nav>
@@ -95,16 +102,25 @@ function Sidebar({ open, onNavigate }) {
 }
 
 export default function App() {
-  const [navOpen, setNavOpen] = useState(false)
+  const [navOpen, setNavOpen] = useState(false)      // gaveta mobile (≤900px)
+  const [collapsed, setCollapsed] = useState(false)  // trilha de ícones (desktop)
   const location = useLocation()
 
   // Fecha a navegação ao mudar de rota (ex.: clique num item no mobile).
   useEffect(() => { setNavOpen(false) }, [location.pathname])
 
+  // Clicar numa aba: navega, fecha a gaveta mobile e recolhe a barra no desktop.
+  const handleNavigate = () => { setNavOpen(false); setCollapsed(true) }
+
   return (
-    <div className="app-shell">
+    <div className={`app-shell${collapsed ? ' nav-collapsed' : ''}`}>
       <Header navOpen={navOpen} onToggleNav={() => setNavOpen(o => !o)} />
-      <Sidebar open={navOpen} onNavigate={() => setNavOpen(false)} />
+      <Sidebar
+        open={navOpen}
+        collapsed={collapsed}
+        onNavigate={handleNavigate}
+        onToggleCollapse={() => setCollapsed(c => !c)}
+      />
       <div
         className={`sidebar-backdrop${navOpen ? ' show' : ''}`}
         onClick={() => setNavOpen(false)}

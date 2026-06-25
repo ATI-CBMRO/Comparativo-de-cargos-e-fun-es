@@ -230,7 +230,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   z-index: 100;
-  transition: transform var(--transition);
+  transition: transform var(--transition), width var(--transition);
   overflow: hidden;
 }
 
@@ -239,9 +239,17 @@ img { display: block; max-width: 100%; }
   align-items: center;
   gap: 12px;
   padding: 20px 18px 16px;
+  border: 0;
   border-bottom: 1px solid var(--navy-700);
   flex-shrink: 0;
+  width: 100%;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition);
 }
+.sidebar-logo:hover { background: var(--navy-700); }
 
 .sidebar-logo-icon {
   width: 40px;
@@ -315,10 +323,24 @@ img { display: block; max-width: 100%; }
 }
 .sidebar-footer-text { font-size: 11px; color: #6b78a0; text-align: center; line-height: 1.5; }
 
+/* ── Trilha de ícones (desktop): barra recolhida ── */
+@media (min-width: 901px) {
+  .app-shell.nav-collapsed { --sidebar-w: 76px; }
+  .app-shell.nav-collapsed .sidebar-logo { padding: 20px 0 16px; justify-content: center; }
+  .app-shell.nav-collapsed .sidebar-logo-text,
+  .app-shell.nav-collapsed .nav-item-label,
+  .app-shell.nav-collapsed .nav-section-label,
+  .app-shell.nav-collapsed .sidebar-footer-text { display: none; }
+  .app-shell.nav-collapsed .sidebar-nav { padding: 14px 8px; }
+  .app-shell.nav-collapsed .nav-item { justify-content: center; gap: 0; padding: 11px 0; }
+  .app-shell.nav-collapsed .nav-item.active::before { display: none; }
+}
+
 /* ── Main Content ── */
 .main-content {
   margin-left: var(--sidebar-w);
   margin-top: var(--header-h);
+  transition: margin-left var(--transition);
   flex: 1;
   min-width: 0;   /* permite que filhos largos (tabelas) rolem internamente
                      em vez de esticar a página inteira (flexbox overflow fix) */
