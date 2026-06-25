@@ -22,7 +22,14 @@ def _chapters(organs):
 
 
 def kids(node):
-    return {c["organKey"]: c for c in node["children"]}
+    """Mapeia filhos por organKey — só serve para nós com capítulo próprio
+    (estruturais como Cia BM/Pel BM têm organKey None e não entram aqui)."""
+    return {c["organKey"]: c for c in node["children"] if c.get("organKey")}
+
+
+def only_child(node):
+    assert len(node["children"]) == 1, node["children"]
+    return node["children"][0]
 
 
 def main():
@@ -38,14 +45,21 @@ def main():
     assert set(dpo) == {"cot", "crbm"}, list(dpo)
     assert set(kids(dpo["cot"])) == {"cat"}
     crbm = kids(dpo["crbm"])
-    assert set(crbm) == {"bbm", "cibm"}, list(crbm)
-    bbm = kids(crbm["bbm"])
-    assert set(bbm) == {"gbm"}
-    assert set(kids(bbm["gbm"])) == {"guarnicao"}
+    assert set(crbm) == {"bbm", "cibm", "gbm"}, list(crbm)
     assert set(kids(top["doe"])) == {"bbs", "bifea", "boa"}, list(kids(top["doe"]))
 
+    # BBM -> Cia BM (estrutural) -> Pel BM (estrutural) -> Guarnição (capítulo).
+    cia = only_child(crbm["bbm"])
+    assert cia["structural"] is True and cia["sigla"] == "Cia BM", cia
+    pel = only_child(cia)
+    assert pel["structural"] is True and pel["sigla"] == "Pel BM", pel
+    guarnicao = only_child(pel)
+    assert guarnicao["organKey"] == "guarnicao" and guarnicao["chapterId"] == "organ:guarnicao", guarnicao
+
     def walk(n):
-        if not n.get("synthetic"):
+        if n.get("synthetic") or n.get("structural"):
+            pass  # raiz sintética e nós estruturais (Cia/Pel) não têm capítulo
+        else:
             assert n["chapterId"].startswith("organ:"), n
             assert "sigla" in n and "label" in n, n
         for c in n["children"]:
