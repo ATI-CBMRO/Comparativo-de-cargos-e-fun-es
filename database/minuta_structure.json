@@ -1788,7 +1788,7 @@
       "chapterTitle": "DA GUARNIÇÃO DE SERVIÇO OPERACIONAL",
       "organKey": "guarnicao",
       "label": "Guarnição de Serviço Operacional",
-      "abbr": "",
+      "abbr": "GuSv",
       "sections": [
         {
           "id": "finalidade",
@@ -2004,7 +2004,7 @@
                         "children": [
                           {
                             "organKey": "guarnicao",
-                            "sigla": "",
+                            "sigla": "GuSv",
                             "label": "Guarnição de Serviço Operacional",
                             "chapterId": "organ:guarnicao",
                             "children": []

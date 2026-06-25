@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from minuta_comparison_lib import norm, state_from_source_label, auto_match_organ_ids  # noqa: E402
-from build_minuta_structure import ORGAN_ORDER  # noqa: E402
+from build_minuta_structure import ORGAN_ORDER, command_order  # noqa: E402
 from minuta_enrichment import enrich_organ_for, GUARNICAO_CHAPTER  # noqa: E402
 
 if sys.platform == "win32":
@@ -34,8 +34,9 @@ OUT_JSON = BASE_DIR / "database" / "comparativo_minuta.json"
 
 REF_ID = "ro"
 
-# Ordem dos 12 órgãos (11 da LOB + guarnição): ORGAN_ORDER + guarnição.
-ORGAN_KEYS = [k for (k, _t, _a) in ORGAN_ORDER] + ["guarnicao"]
+# Títulos dos 12 órgãos (11 da LOB + guarnição). A ORDEM e a PROFUNDIDADE são
+# derivadas da cadeia de comando (command_order) em build(), para espelhar o
+# organograma da minuta — ver build_minuta_structure.command_order.
 ORGAN_TITLES = {k: t for (k, t, _a) in ORGAN_ORDER}
 ORGAN_TITLES["guarnicao"] = GUARNICAO_CHAPTER["chapterTitle"]
 
@@ -202,16 +203,21 @@ def build():
     ro_organs = load_organs(REF_ID)
     dpo_cot = json.loads(DPO_COT_JSON.read_text(encoding="utf-8"))
 
+    # Ordem + profundidade hierárquica (DFS da cadeia de comando do organograma).
+    order = command_order(ro_organs)
+
     organs_out = []
-    for organ_key in ORGAN_KEYS:
+    for organ_key, depth in order:
         reference, ref_note = build_reference(organ_key, ro_organs)
         curated = curated_states_for(organ_key, dpo_cot, meta)
         auto = auto_states_for(organ_key, set(curated.keys()), meta)
         states = sort_states(list(curated.values()) + list(auto.values()))
-        ref_abbr = (reference or {}).get("abbreviation") or organ_key.upper()
+        ref_abbr = ((reference or {}).get("abbreviation")
+                    or (GUARNICAO_CHAPTER.get("abbr") if organ_key == "guarnicao" else "")
+                    or organ_key.upper())
         organs_out.append({
             "key": organ_key, "title": ORGAN_TITLES.get(organ_key, organ_key.upper()),
-            "abbr": ref_abbr, "reference": reference, "referenceNote": ref_note,
+            "abbr": ref_abbr, "depth": depth, "reference": reference, "referenceNote": ref_note,
             "states": states,
         })
         n_cur = sum(1 for s in states if s["provenance"] == "curado")

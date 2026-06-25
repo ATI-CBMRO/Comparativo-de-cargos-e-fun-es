@@ -258,7 +258,7 @@ def build_guarnicao_chapter():
         s["editId"] = f"{chapter_id}/{s['id']}"
     return {
         "id": chapter_id, "kind": "organ", "chapterTitle": g["chapterTitle"],
-        "organKey": "guarnicao", "label": g["label"], "abbr": "",
+        "organKey": "guarnicao", "label": g["label"], "abbr": g.get("abbr", ""),
         "sections": sections,
     }
 
@@ -349,6 +349,47 @@ def build_command_chart(organs, chapters):
         leaf["children"].append(guarnicao)
 
     return {"label": "Subcomandante-Geral", "synthetic": True, "children": roots}
+
+
+def _min_organ_chapters(organs):
+    """Capítulos mínimos (só os campos que build_command_chart lê) p/ derivar a ordem."""
+    chapters = []
+    for k, _title, _a in ORGAN_ORDER:
+        o = organs.get(k, {})
+        chapters.append({
+            "kind": "organ", "organKey": k,
+            "abbr": o.get("abbreviation") or k.upper(),
+            "label": o.get("name", ""), "id": f"organ:{k}",
+        })
+    chapters.append({
+        "kind": "organ", "organKey": "guarnicao",
+        "abbr": GUARNICAO_CHAPTER.get("abbr", ""), "label": GUARNICAO_CHAPTER["label"],
+        "id": "organ:guarnicao",
+    })
+    return chapters
+
+
+def command_order(organs):
+    """Ordem hierárquica (DFS) e profundidade dos órgãos pela cadeia de comando.
+
+    Retorna list[(organKey, depth)] — depth conta só níveis de ÓRGÃO (nós
+    estruturais Cia/Pel não incrementam). É a mesma árvore do organograma,
+    então a lista de órgãos da minuta espelha o organograma montado.
+    """
+    chart = build_command_chart(organs, _min_organ_chapters(organs))
+    out = []
+
+    def walk(node, depth):
+        k = node.get("organKey")
+        if k:
+            out.append((k, depth))
+        nd = depth + 1 if k else depth
+        for c in node.get("children", []):
+            walk(c, nd)
+
+    for c in chart.get("children", []):
+        walk(c, 0)
+    return out
 
 
 def main():

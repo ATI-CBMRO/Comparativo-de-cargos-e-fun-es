@@ -404,6 +404,7 @@ _SE_CONDUTOR = [
 GUARNICAO_CHAPTER = {
     "chapterTitle": "DA GUARNIÇÃO DE SERVIÇO OPERACIONAL",
     "label": "Guarnição de Serviço Operacional",
+    "abbr": "GuSv",
     "finalidade": (
         "A guarnição de serviço operacional é a menor fração empregada nas atividades operacionais "
         "do Corpo de Bombeiros Militar do Estado de Rondônia, constituída pela equipe da viatura em "
