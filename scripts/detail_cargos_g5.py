@@ -29,6 +29,13 @@ CARGOS = {
   "aodc": [{"cargo": "Assessor de Operações, Defesa Civil e Serviços Civis Auxiliares (AODC)", "subordinadoA": "Comando-Geral", "requisito": "", "desdobramentos": ["Divisão de Operações e Defesa Civil", "Divisão de Serviços Civis e Auxiliares", "Divisão de Monitoramento Operacional", "Divisão de Operações Aéreas"], "atribuicoes": ["Gestão tática de planejamento, direção, organização e controle de operações"]}],
   "1crbm": [{"cargo": "Comandante de Comando Regional de Bombeiro Militar (CRBM)", "subordinadoA": "Subcomandante-Geral (mobilização)", "requisito": "Oficial Superior QOEM", "desdobramentos": ["Batalhões de Bombeiro Militar", "Batalhão de Busca e Salvamento"], "atribuicoes": ["Supervisão, coordenação e planejamento operacional das unidades subordinadas"]}],
   "besci": [{"cargo": "Comandante do Batalhão Especial de Segurança Contra Incêndio (BESCI)", "subordinadoA": "DSPCI (operacional) / Comando-Geral (administrativo)", "requisito": "Oficial Superior QOEM", "desdobramentos": ["Divisão de Análise de Planos", "Divisão de Vistoria e Fiscalização de Edificações"], "atribuicoes": ["Análise de planos de prevenção contra incêndio", "Vistoria e fiscalização de edificações (abrangência estadual)"]}],
+  "cg-rs-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Secretaria da Segurança Pública", "requisito": "", "desdobramentos": ["Gabinete do Comando-Geral", "Corregedoria-Geral", "Comissão de Avaliação e Mérito", "Conselho Superior", "Departamento Administrativo", "Departamento de Segurança, Prevenção e Proteção Contra Incêndios", "Academia de Bombeiro Militar", "Comandos Regionais"],
+     "atribuicoes": [
+       "Ao Comando-Geral, órgão de direção-geral do CBMRS, compete a administração da Instituição, que será exercida diretamente pelo Comandante-Geral (Art. 4º).",
+       "Compete ao Comandante-Geral: I - a coordenação geral das atividades da Instituição; II - a presidência da Comissão de Avaliação e Mérito; e III - a direção do Conselho Superior (Art. 5º)."
+     ]},
+  ],
 },
 
 # ── RIO DE JANEIRO (Lei nº 250/1979) ──
