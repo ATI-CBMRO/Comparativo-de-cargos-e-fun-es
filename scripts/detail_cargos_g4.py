@@ -120,6 +120,29 @@ CARGOS = {
   "departamento_seguranca_incendio": [{"cargo": "Chefe do Departamento-Geral de Segurança contra Incêndios e Emergências (DGSCI)", "subordinadoA": "Comandante-Geral", "requisito": "Oficial do último posto (QOBM)", "desdobramentos": ["Seção de Fiscalização e Vistoria Técnica", "Seção de Análise de Projetos", "Seção de Perícia de Incêndio", "Seção de Credenciamento"], "atribuicoes": ["Diretrizes gerais de segurança contra incêndios e emergências", "Proteção da vida e redução de danos ao meio ambiente e ao patrimônio"]}],
   "comando_regional_bombeiros": [{"cargo": "Comandante Regional de Bombeiros (CRB)", "subordinadoA": "Comando de Operações", "requisito": "Oficial do último posto (QOBM)", "desdobramentos": ["Subcomandante (Tenente-Coronel)", "Seção de Administração", "Seção de Planejamento, Instrução e Operações", "Núcleo de Corregedoria"], "atribuicoes": ["Direção, controle e planejamento das atividades operacionais das UBMs subordinadas"]}],
   "exec_pa": [{"cargo": "Comandantes das Unidades de Execução (GBM, GMAF, GBS, GSE, GOA)", "subordinadoA": "Comandos Regionais de Bombeiros", "requisito": "", "desdobramentos": ["Grupamento Marítimo e Fluvial", "Grupamento de Busca e Salvamento", "Grupamento de Operações Aéreas", "Núcleo de Ações com Cães"], "atribuicoes": ["Execução das atividades-fim de bombeiro militar"]}],
+  "cg-pa-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Governador do Estado", "requisito": "Oficial da ativa, último posto do Quadro de Oficiais Bombeiro Militar Combatente (QOBM), não convocado da reserva, possuidor do curso superior de bombeiros; equiparado a Secretário de Estado (Art. 7º)",
+     "desdobramentos": ["Alto Comando", "Estado-Maior Geral", "Coordenadoria Estadual de Proteção e Defesa Civil do Pará (CEDEC)", "Corregedoria-Geral", "Comando de Operações", "Departamentos-Gerais", "Comissões", "Gabinete do Comandante-Geral", "Ajudância-Geral", "Controladoria Interna", "Consultoria Jurídica (CONJUR)", "Centro de Inteligência (CEINT)"],
+     "atribuicoes": [
+       "O comando, a gestão, o emprego, a supervisão e a coordenação geral das atividades da corporação, assessorado pelos órgãos de direção, apoio e de execução (Art. 8º, I)",
+       "A presidência do Alto Comando do Corpo de Bombeiros Militar do Pará (CBMPA), da Comissão de Promoção de Oficiais e do Conselho do Mérito Bombeiro Militar (II)",
+       "Encaminhar ao órgão competente o projeto de orçamento anual referente ao Corpo de Bombeiros Militar do Pará (CBMPA) e participar, no que couber, da elaboração do Plano Plurianual (III)",
+       "Celebrar convênios e contratos de interesse do Corpo de Bombeiros Militar do Pará (CBMPA) com entidades de direito público ou privado, nos termos da lei (IV)",
+       "Nomear e exonerar bombeiros militares no exercício das funções de direção, comando e assessoramento, nos termos desta lei (V)",
+       "Autorizar bombeiros militares e servidores civis da corporação a se afastarem do estado (VI)",
+       "Ordenar o emprego de verbas orçamentárias ou de créditos abertos em favor do Corpo de Bombeiros Militar do Pará (CBMPA) e de outros recursos que este venha a receber, oriundos de quaisquer fontes de receitas (VII)",
+       "Expedir os atos necessários para a administração do Corpo de Bombeiros Militar do Pará (CBMPA) (VIII)",
+       "Incorporar praças e praças especiais (IX)",
+       "Promover praças e declarar aspirantes-a-oficial (X)",
+       "Conceder férias, licenças ou afastamentos de qualquer natureza (XI)",
+       "Instaurar e solucionar procedimentos e processos administrativos, disciplinares ou não, aplicando as penalidades previstas na legislação vigente (XII)",
+       "Criar, desenvolver e gerenciar programas de prevenção e proteção nas atividades bombeiro militar que visem à melhoria da qualidade de vida do cidadão (XIII)",
+       "Certificar o atendimento do direito ao porte de arma de seus militares, bem como as hipóteses excepcionais de suspensão e cassação de porte de arma (XIV)",
+       "Encaminhar ao Chefe do Poder Executivo a lista de promoção dos oficiais, nos termos da lei que estabelece as regras de promoção (XV) (Art. 8º, I a XV)",
+       "Poderá delegar competência para a expedição de atos administrativos, visando à agilização da gestão da corporação (Art. 8º, § 1º)",
+       "Nos impedimentos ou ausências do Comandante-Geral, responderá pelo comando-geral o chefe do Estado-Maior Geral e, no impedimento ou ausência deste, seguirá a seguinte ordem de prioridade: o Coordenador-Adjunto Estadual de Proteção e Defesa Civil, o Corregedor-Geral, o Comandante Operacional e o chefe do Departamento-Geral mais antigo (Art. 8º, § 2º)"
+     ]},
+  ],
 },
 
 # ── PERNAMBUCO (Lei nº 15.187/2013) ──
