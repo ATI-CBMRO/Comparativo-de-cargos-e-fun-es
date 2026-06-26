@@ -57,10 +57,12 @@ artigo_definido)`, na mesma forma das 11 atuais:
 | `gab-cg` | DO GABINETE DO COMANDANTE-GERAL | O |
 | `ag` | DA AJUDÂNCIA-GERAL (AG) | A |
 
-A ordem final na lista (e, por consequência, a ordem dos capítulos no documento) segue a
-ordem dos artigos da LOB (11→50): `cg, condeg, depdec, dp, deei, dpof, dsap, dlog, dpo, doe,
-cot, cat, cint, ccs, cinf, crbm, bbm, cibm, bbs, bifea, boa, gbm, corregedoria, assessorias,
-gab-cg, ag` — mantendo a ordem relativa das 11 já existentes intacta entre si.
+A ordem final na lista segue a **taxonomia do Art. 5º** (Direção → Assessoramento → Apoio →
+Execução → Correição), não a ordem bruta dos artigos (que intercala órgãos de apoio entre os
+de direção): `cg, depdec, condeg, dp, deei, dpof, dsap, dlog, dpo, doe, cot, cint, ccs, cinf,
+crbm, assessorias, gab-cg, ag, bbm, cibm, cat, bbs, bifea, boa, gbm, corregedoria` — mantendo a
+ordem relativa das 11 já existentes intacta entre si (`dpo, doe, cot, crbm, bbm, cibm, cat,
+bbs, bifea, boa, gbm`).
 
 ### Resolução de hierarquia (`build_command_chart` / `find_parent`)
 
@@ -93,6 +95,48 @@ sigla e os dois entram como filhos diretos da raiz sintética. Com o alias
 o estado atual, e é a mesma regra aplicada a `corregedoria`/`ag`, sem código especial extra.
 
 `COMMAND_PARENT_OVERRIDE = {"gbm": "crbm"}` continua valendo sem mudança.
+
+### Capítulo "Da Estrutura Organizacional" (`build_estrutura_chapter`)
+
+A LOB real (Art. 5º a 10º) classifica os 26 órgãos em **5 grupos**, não só os dois que o
+código hoje resume (Direção Setorial/Regional + 4 áreas de execução):
+
+- **Direção** — `Direção Geral` (`cg`, `depdec` — ambos têm essa `category` em `ro.json`;
+  listados juntos, sem caso especial), `Direção Colegiada` (`condeg`), `Direção Setorial`
+  (`dp`, `deei`, `dpof`, `dsap`, `dlog`, `dpo`, `doe`, `cot`, `cint`, `ccs`, `cinf`),
+  `Direção Regional` (`crbm`).
+- **Assessoramento** — `assessorias` (categoria `Assessoramento`).
+- **Apoio** — `Apoio ao Comando-Geral` (`gab-cg`), `Apoio ao Subcomando-Geral` (`ag`); não há
+  órgão próprio de "Apoio ao Estado-Maior Geral" em `ro.json` (Art. 8º §3º cita só o
+  Gabinete do EMG, que não tem entrada própria) — grupo omitido se vazio.
+- **Execução** — mantém a lógica atual de `AREA_BY_ORGAN`/`AREA_LABELS` (4 áreas), sem
+  alteração.
+- **Correição** — `corregedoria` (categoria `Correição`).
+
+`build_estrutura_chapter(organs)` é reescrita para montar os grupos genericamente a partir da
+`category` de cada órgão em `ORGAN_ORDER` (em vez do filtro fixo `"Direção Setorial"`/
+`"Direção Regional"`), usando um mapa `CATEGORY_LABELS` que junta `category` → rótulo:
+
+```python
+CATEGORY_LABELS = [
+    ("Direção Geral",     "de Direção Geral"),
+    ("Direção Colegiada", "de Direção Colegiada"),
+    ("Direção Setorial",  "de Direção Setorial"),
+    ("Direção Regional",  "de Direção Regional"),
+]
+APOIO_LABELS = [
+    ("Apoio ao Comando-Geral",    "ao Comando-Geral"),
+    ("Apoio ao Subcomando-Geral", "ao Subcomando-Geral"),
+]
+```
+
+`direcao_items` passa a iterar `CATEGORY_LABELS` na ordem da lista, montando uma linha por
+categoria presente (mesmo padrão de hoje, só com mais categorias, todas pelo mesmo mecanismo
+genérico de agrupar por `category` — nenhuma exceção hardcoded por órgão). Três novos blocos de
+incisos — `assessoramento` (categoria `Assessoramento`), `apoio` (itera `APOIO_LABELS`) e
+`correicao` (categoria `Correição`) — são adicionados como novos `articles` no capítulo,
+espelhando a forma de `direcao`/`execucao` já existentes (`kind:"incisos"`, mesmo helper
+`_join_orgaos`/`proposed_text`); cada bloco só entra se tiver pelo menos 1 item.
 
 ### Textos introdutórios
 
