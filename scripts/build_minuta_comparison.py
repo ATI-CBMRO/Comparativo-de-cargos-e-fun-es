@@ -181,8 +181,11 @@ def auto_states_for(organ_key, curated_ids, meta):
         if sid == REF_ID or sid in curated_ids:
             continue
         organs = load_organs(sid)
-        ids = auto_match_organ_ids(organ_key, organs)
-        matched = [extract_organ(organs, oid) for oid in ids]
+        # A coluna compilada exclui a camada LOB nova (source:lob), que vai só em lobOrgans;
+        # mantém a visão mesclada histórica (RI/NGA/etc.) intacta.
+        non_lob = {oid: o for oid, o in organs.items() if o.get("source") != "lob"}
+        ids = auto_match_organ_ids(organ_key, non_lob)
+        matched = [extract_organ(non_lob, oid) for oid in ids]
         matched = [m for m in matched if m]
         if not matched:
             continue

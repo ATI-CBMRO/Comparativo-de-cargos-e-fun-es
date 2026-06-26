@@ -3993,53 +3993,6 @@
           "lobProvenance": "automatico"
         },
         {
-          "id": "al",
-          "name": "Alagoas",
-          "abbr": "AL",
-          "cbm": "CBMAL",
-          "region": "Nordeste",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Diretoria de Atividades Técnicas",
-              "abbreviation": "DAT",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "A Diretoria de Atividades Técnicas é o órgão central do sistema de engenharia e segurança do Corpo de Bombeiros Militar, competindo-lhe o estudo, a análise, o planejamento, a orientação técnica, a execução, o controle e a fiscalização das atividades relativas à segurança contra incêndio e pânico e ao cumprimento das disposições legais sobre o assunto, no âmbito do Estado de Alagoas."
-              ],
-              "desdobramentos": [
-                "Seção de Estudos e Análise de Projetos",
-                "Seção de Testes, Vistorias e Pareceres",
-                "Seção de Perícias e Pesquisas",
-                "Seção de Hidrantes",
-                "Seção de Expediente e Arquivo"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Diretoria de Atividades Técnicas",
-              "abbreviation": "DAT",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "A Diretoria de Atividades Técnicas é o órgão central do sistema de engenharia e segurança do Corpo de Bombeiros Militar, competindo-lhe o estudo, a análise, o planejamento, a orientação técnica, a execução, o controle e a fiscalização das atividades relativas à segurança contra incêndio e pânico e ao cumprimento das disposições legais sobre o assunto, no âmbito do Estado de Alagoas."
-              ],
-              "desdobramentos": [
-                "Seção de Estudos e Análise de Projetos",
-                "Seção de Testes, Vistorias e Pareceres",
-                "Seção de Perícias e Pesquisas",
-                "Seção de Hidrantes",
-                "Seção de Expediente e Arquivo"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
-        },
-        {
           "id": "ce",
           "name": "Ceará",
           "abbr": "CE",
@@ -4134,16 +4087,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Diretoria de Atividades Técnicas",
-              "abbreviation": "DAT",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "A Diretoria de Atividades Técnicas (DAT), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: estudar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais, assim como todos os serviços de segurança contra incêndio e pânico, dirigindo também todas as atividades que envolvem as perícias de incêndio e explosão em locais de sinistro no Estado do Espírito Santo."
-              ],
-              "desdobramentos": [],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -4579,16 +4522,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Diretoria de Atividades Técnicas",
-              "abbreviation": "DAT",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "A Diretoria de Atividades Técnicas é o órgão de direção setorial responsável pela coordenação, controle e assessoramento em assuntos relacionados: I - à prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos temporários, atuando por meio do gerenciamento normativo, estudos e pesquisa de incêndios; II - à tecnologia da informação e comunicação, com ações de gestão e desenvolvimento de sistemas informatizados, infraestrutura, segurança, projetos, inovações e governança. (Art. 28)"
-              ],
-              "desdobramentos": [],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -5449,18 +5382,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "Comando Regional Bombeiro Militar",
-              "abbreviation": "CRBM",
-              "subordinadoA": "Subcomandante-Geral",
-              "atribuicoes": [
-                "Os órgãos de execução são operacional e administrativamente subordinados aos Comandos Regionais de Bombeiro Militar, que são responsáveis, perante o Subcomandante-Geral, pelo cumprimento das missões bombeiro-militar em suas respectivas circunscrições territoriais. (Art. 34)",
-                "§ 1º Os Comandos Regionais de Bombeiro Militar são escalões intermediários de comando, cuja organização pormenorizada constará nos quadros de organização do Corpo de Bombeiros Militar do Paraná - CBMPR. (Art. 34, § 1º)",
-                "§ 2º Aos Comandos Regionais de Bombeiros Militar incumbe desenvolver ações operacionais estratégicas, propor a distribuição do efetivo, auxílio e fiscalização das unidades subordinadas, gestão logística, além de outras atribuições definidas em lei, em determinada região. (Art. 34, § 2º)"
-              ],
-              "desdobramentos": [],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -5814,104 +5735,6 @@
           "lobProvenance": "curado"
         },
         {
-          "id": "am",
-          "name": "Amazonas",
-          "abbr": "AM",
-          "cbm": "CBMAM",
-          "region": "Norte",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Batalhão de Bombeiros Militar",
-              "abbreviation": "BBM",
-              "subordinadoA": "Comando de Bombeiros da Capital (CBC) / Comando de Bombeiros do Interior (CBI)",
-              "atribuicoes": [
-                "O Batalhão de Incêndio (BI), unidade operacional, órgão de execução, subordinado ao Comando de Bombeiros da Capital (CBC) ou Comando de Bombeiros do Interior (CBI), destina-se à coordenação, ao controle, à fiscalização e à execução de atividade operacional e administrativa em sua área de atuação (Art. 48).",
-                "O Batalhão de Bombeiro Especial (BBE), unidade operacional e órgão de execução, subordinado ao Comando de Bombeiros da Capital, destina-se à coordenação, ao controle, à fiscalização e à execução de atividades administrativas e operacionais de salvamento, busca, resgate e emergências médicas (Art. 50).",
-                "O Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA), unidade operacional, órgão de execução, subordinado ao Comando Operacional do Interior, destina-se à prevenção e combate a incêndio florestal e queimadas e socorro ao meio ambiente, em conformidade com a lei (Art. 52)."
-              ],
-              "desdobramentos": [
-                "Comando",
-                "Seção Administrativa (SA)",
-                "Seção Operacional (SO)",
-                "Companhias de Incêndios (CI)",
-                "Pelotões de Incêndios (PEL/INC)",
-                "Companhias de Bombeiro Especial (CBE)",
-                "Pelotões de Bombeiros Especiais (PEL/BE)",
-                "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)",
-                "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/IF/MA)"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Batalhão de Bombeiros Militar",
-              "abbreviation": "BBM",
-              "subordinadoA": "Comando de Bombeiros da Capital (CBC) / Comando de Bombeiros do Interior (CBI)",
-              "atribuicoes": [
-                "O Batalhão de Incêndio (BI), unidade operacional, órgão de execução, subordinado ao Comando de Bombeiros da Capital (CBC) ou Comando de Bombeiros do Interior (CBI), destina-se à coordenação, ao controle, à fiscalização e à execução de atividade operacional e administrativa em sua área de atuação (Art. 48).",
-                "O Batalhão de Bombeiro Especial (BBE), unidade operacional e órgão de execução, subordinado ao Comando de Bombeiros da Capital, destina-se à coordenação, ao controle, à fiscalização e à execução de atividades administrativas e operacionais de salvamento, busca, resgate e emergências médicas (Art. 50).",
-                "O Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA), unidade operacional, órgão de execução, subordinado ao Comando Operacional do Interior, destina-se à prevenção e combate a incêndio florestal e queimadas e socorro ao meio ambiente, em conformidade com a lei (Art. 52)."
-              ],
-              "desdobramentos": [
-                "Comando",
-                "Seção Administrativa (SA)",
-                "Seção Operacional (SO)",
-                "Companhias de Incêndios (CI)",
-                "Pelotões de Incêndios (PEL/INC)",
-                "Companhias de Bombeiro Especial (CBE)",
-                "Pelotões de Bombeiros Especiais (PEL/BE)",
-                "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)",
-                "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/IF/MA)"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
-        },
-        {
-          "id": "es",
-          "name": "Espírito Santo",
-          "abbr": "ES",
-          "cbm": "CBMES",
-          "region": "Sudeste",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Batalhão de Bombeiros Militares",
-              "abbreviation": "BBM",
-              "subordinadoA": "Comando do Corpo de Bombeiros",
-              "atribuicoes": [
-                "O Batalhão de Bombeiros Militares, órgão subordinado diretamente ao Comando do Corpo de Bombeiros, tem como competência: a prevenção e o combate a incêndios, busca e salvamento, realizar socorros de urgências, controlar o tráfego de embarcações próximo às praias, rios e lagos e ações de defesa civil. Sua organização pormenorizada constará dos quadros de organização (QO) da Corporação."
-              ],
-              "desdobramentos": [
-                "Subunidades"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Batalhão de Bombeiros Militares",
-              "abbreviation": "BBM",
-              "subordinadoA": "Comando do Corpo de Bombeiros",
-              "atribuicoes": [
-                "O Batalhão de Bombeiros Militares, órgão subordinado diretamente ao Comando do Corpo de Bombeiros, tem como competência: a prevenção e o combate a incêndios, busca e salvamento, realizar socorros de urgências, controlar o tráfego de embarcações próximo às praias, rios e lagos e ações de defesa civil. Sua organização pormenorizada constará dos quadros de organização (QO) da Corporação."
-              ],
-              "desdobramentos": [
-                "Subunidades"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
-        },
-        {
           "id": "ma",
           "name": "Maranhão",
           "abbr": "MA",
@@ -6116,24 +5939,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "Batalhão de Emergências Ambientais",
-              "abbreviation": "BEA",
-              "subordinadoA": "Diretoria Operacional",
-              "atribuicoes": [
-                "O Batalhão de Emergências Ambientais, unidade especializada, subordinada diretamente à Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividades de prevenção e combate a incêndios florestais e emergências com produtos perigosos, atuando em reforço ou apoio as demais UBM (Art. 61)"
-              ],
-              "desdobramentos": [
-                "Comando Adjunto",
-                "Seção Administrativa",
-                "Seção de Suprimento e Manutenção",
-                "Seção de Operações",
-                "Seção de Fiscalização e Perícia de Incêndio Florestal",
-                "Companhia de Atendimento a Emergência com Produtos Perigosos",
-                "Companhia de Prevenção e Combate a Incêndio Florestal"
-              ],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -6494,59 +6299,6 @@
           "lobProvenance": "automatico"
         },
         {
-          "id": "mt",
-          "name": "Mato Grosso",
-          "abbr": "MT",
-          "cbm": "CBMMT",
-          "region": "Centro-Oeste",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Grupo de Aviação de Bombeiros Militar",
-              "abbreviation": "GAvBM",
-              "subordinadoA": "Diretoria Operacional",
-              "atribuicoes": [
-                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
-              ],
-              "desdobramentos": [
-                "Comando Adjunto",
-                "Seção Administrativa",
-                "Seção de Operações",
-                "Seção de Segurança de Voo",
-                "Seção de Suprimento e Manutenção",
-                "Seção Aeromédica",
-                "Esquadrão de Combate a Incêndio Florestal",
-                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Grupo de Aviação de Bombeiros Militar",
-              "abbreviation": "GAvBM",
-              "subordinadoA": "Diretoria Operacional",
-              "atribuicoes": [
-                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
-              ],
-              "desdobramentos": [
-                "Comando Adjunto",
-                "Seção Administrativa",
-                "Seção de Operações",
-                "Seção de Segurança de Voo",
-                "Seção de Suprimento e Manutenção",
-                "Seção Aeromédica",
-                "Esquadrão de Combate a Incêndio Florestal",
-                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
-        },
-        {
           "id": "pi",
           "name": "Piauí",
           "abbr": "PI",
@@ -6708,16 +6460,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Grupo de Operações de Socorro Tático",
-              "abbreviation": "GOST",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao Comandante-Geral, em apoio especializado às Unidades Operacionais, que é incumbido de: a) executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar; b) realizar ações: 1. de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos; 2. de ações de defesa civil; c) organizar forças-tarefas; d) desempenhar atividades de busca e salvamento, inclusive com a utilização de cães; e) organizar e manter o canil central e coordenar os canis setoriais. (Art. 38, III)"
-              ],
-              "desdobramentos": [],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -7162,28 +6904,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Unidades (Grupamentos)",
-              "abbreviation": "UNID",
-              "subordinadoA": "Comandos Regionais Bombeiro Militar / Diretoria Operacional",
-              "atribuicoes": [
-                "As Unidades, também denominadas de Grupamentos, realizam a execução das atividades operacionais e de apoio da Corporação e compreendem: I - Unidades operacionais; II - Unidades especializadas (Art. 36). § 1º As Unidades ou Grupamentos Operacionais de uma mesma Área Integrada de Segurança Pública - AISP, subordinam-se aos respectivos Comandos Regionais e os Grupamentos Especializados à Diretoria Operacional.",
-                "São Grupamentos Especializados do CBMSE: I - Grupamento de Busca e Salvamento - GBS; II - Grupamento de Operações Aéreas - GOA (Art. 39)."
-              ],
-              "desdobramentos": [
-                "1º GBM — Aracaju (CRM)",
-                "2º GBM — Estância (CRS)",
-                "3º GBM — Itabaiana (CRA)",
-                "4º GBM — Nossa Senhora do Socorro (CRM/CRL)",
-                "5º GBM — Lagarto (CRCS)",
-                "6º GBM — Propriá (CRBSF)",
-                "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)",
-                "8º GBM — Barra dos Coqueiros (CRM)",
-                "Grupamento de Busca e Salvamento - GBS",
-                "Grupamento de Operações Aéreas - GOA"
-              ],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -8334,41 +8054,6 @@
           "lobProvenance": "curado"
         },
         {
-          "id": "al",
-          "name": "Alagoas",
-          "abbr": "AL",
-          "cbm": "CBMAL",
-          "region": "Nordeste",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Órgão Especial (Seção Aérea e Bombeiros do Gabinete Militar)",
-              "abbreviation": "OESP",
-              "subordinadoA": "Gabinete Militar do Governador",
-              "atribuicoes": [
-                "O Órgão Especial a que se refere este Capítulo compreende a Seção Aérea e Bombeiros do Gabinete Militar competindo-lhe o assessoramento, planejamento, coordenação, fiscalização, manutenção e controle das operações aéreas nas missões Bombeiro Militar, além do transporte aéreo do Governador e das autoridades por ele designadas."
-              ],
-              "desdobramentos": [],
-              "cargos": []
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Órgão Especial (Seção Aérea e Bombeiros do Gabinete Militar)",
-              "abbreviation": "OESP",
-              "subordinadoA": "Gabinete Militar do Governador",
-              "atribuicoes": [
-                "O Órgão Especial a que se refere este Capítulo compreende a Seção Aérea e Bombeiros do Gabinete Militar competindo-lhe o assessoramento, planejamento, coordenação, fiscalização, manutenção e controle das operações aéreas nas missões Bombeiro Militar, além do transporte aéreo do Governador e das autoridades por ele designadas."
-              ],
-              "desdobramentos": [],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
-        },
-        {
           "id": "ba",
           "name": "Bahia",
           "abbr": "BA",
@@ -8458,17 +8143,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Centro de Operações Aéreas",
-              "abbreviation": "COA",
-              "subordinadoA": "Subcomandante-Geral",
-              "atribuicoes": [
-                "O Centro de Operações Aéreas é responsável pela execução de operações aéreas relacionadas à missão constitucional da Corporação (Art. 34, § 2º).",
-                "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
-              ],
-              "desdobramentos": [],
-              "cargos": []
             }
           ],
           "lobOrgans": [
@@ -8552,59 +8226,6 @@
             }
           ],
           "lobProvenance": "automatico"
-        },
-        {
-          "id": "mt",
-          "name": "Mato Grosso",
-          "abbr": "MT",
-          "cbm": "CBMMT",
-          "region": "Centro-Oeste",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Grupo de Aviação de Bombeiros Militar",
-              "abbreviation": "GAvBM",
-              "subordinadoA": "Diretoria Operacional",
-              "atribuicoes": [
-                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
-              ],
-              "desdobramentos": [
-                "Comando Adjunto",
-                "Seção Administrativa",
-                "Seção de Operações",
-                "Seção de Segurança de Voo",
-                "Seção de Suprimento e Manutenção",
-                "Seção Aeromédica",
-                "Esquadrão de Combate a Incêndio Florestal",
-                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Grupo de Aviação de Bombeiros Militar",
-              "abbreviation": "GAvBM",
-              "subordinadoA": "Diretoria Operacional",
-              "atribuicoes": [
-                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
-              ],
-              "desdobramentos": [
-                "Comando Adjunto",
-                "Seção Administrativa",
-                "Seção de Operações",
-                "Seção de Segurança de Voo",
-                "Seção de Suprimento e Manutenção",
-                "Seção Aeromédica",
-                "Esquadrão de Combate a Incêndio Florestal",
-                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
         },
         {
           "id": "se",
