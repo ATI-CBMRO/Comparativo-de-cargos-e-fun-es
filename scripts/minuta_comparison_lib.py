@@ -25,6 +25,9 @@ def state_from_source_label(label: str) -> str | None:
 
 # Camada "automatico": por organ_key, palavras-chave de inclusão/exclusão (já normalizadas).
 AUTO_MATCH_KEYWORDS = {
+    "dpo":   {"include": ["planejamento"],                     "exclude": []},
+    "cot":   {"include": ["operacoes", "operacional"],
+              "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas"]},
     "doe":   {"include": ["especializ"],                       "exclude": []},
     "crbm":  {"include": ["regional", "regiao de bombeiro"],   "exclude": []},
     "bbm":   {"include": ["batalhao"],

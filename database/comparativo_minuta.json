@@ -166,7 +166,31 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Planejamento",
+              "abbreviation": "DP",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+                "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Planejamento",
+                  "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+                  "subordinadoA": "Subcomandante-Geral",
+                  "atribuicoes": [
+                    "Funções gerenciais de planejamento estratégico e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "al",
@@ -216,7 +240,25 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Planejamento e Orçamento",
+              "abbreviation": "DPO",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A Diretoria de Planejamento e Orçamento é o órgão central do sistema de Planejamento Estratégico e Orçamentário do Corpo de Bombeiros Militar, competindo-lhe a coordenação do planejamento, a orientação técnica, o monitoramento, o controle e a fiscalização das atividades relativas ao planejamento estratégico, bem como a elaboração e execução do orçamento da Corporação."
+              ],
+              "desdobramentos": [
+                "Seção de Administração",
+                "Seção de Informações",
+                "Seção de Monitoramento da Estrutura Organizacional",
+                "Seção de Planejamento, Execução, Controle e Fiscalização Orçamentária"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "am",
@@ -320,7 +362,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ap",
@@ -352,7 +396,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ba",
@@ -400,7 +446,32 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Departamento de Planejamento",
+              "abbreviation": "DPlan",
+              "subordinadoA": "Subcomando-Geral",
+              "atribuicoes": [
+                "O Departamento de Planejamento tem por finalidade elaborar o planejamento das políticas públicas e estratégias institucionais, orientar e executar a programação orçamentária, consolidar os planos, programas e projetos e realizar o acompanhamento e a avaliação das ações governamentais, no âmbito do CBMBA (Art. 21)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor do Departamento de Planejamento",
+                  "requisito": "Cargo em comissão (Anexo II)",
+                  "subordinadoA": "Subcomando-Geral",
+                  "atribuicoes": [
+                    "a) planejar, controlar e fiscalizar as atividades previstas para o seu Departamento (Art. 49 VI a)",
+                    "b) propor estudos e pesquisas que viabilizem a melhoria das competências do Departamento, elaborando diretrizes da política institucional relativas à sua área de atuação (Art. 49 VI b)",
+                    "c) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 VI c)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ce",
@@ -444,7 +515,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "df",
@@ -504,7 +577,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "es",
@@ -565,7 +640,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "go",
@@ -602,7 +679,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ma",
@@ -641,7 +720,32 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Planejamento e Modernização",
+              "abbreviation": "DPM",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+                "Art. 13, § 7º — À Diretoria de Planejamento e Modernização compete o planejamento orçamentário, a gestão de projetos, elaboração de planos de modernização da Institucional e a implementação de sistemas de tecnologia da informação."
+              ],
+              "desdobramentos": [
+                "Departamento de Planejamento Orçamentário (Seção de Avaliação e Controle de Metas; Seção de Gestão de Projetos)",
+                "Departamento de Tecnologia da Informação (Subseção de Suporte Técnico; Subseção de Sistemas)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Planejamento e Modernização",
+                  "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+                  "subordinadoA": "Comando-Geral",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mg",
@@ -679,7 +783,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ms",
@@ -722,7 +828,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mt",
@@ -786,7 +894,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pa",
@@ -842,7 +952,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pb",
@@ -880,7 +992,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pe",
@@ -1045,7 +1159,47 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Planejamento e Gestão",
+              "abbreviation": "DPlaG",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A DPlaG incumbe-se: I - da elaboração e gestão do planejamento institucional; II - da proposição de normas, medidas e procedimentos que visem o aperfeiçoamento da gestão interna do CBMPE; III - do planejamento e monitoramento da execução do orçamento anual e do plano estratégico da Corporação; IV - da propositura e gestão de projetos e convênios com outros órgãos; e V - da gestão das atividades que envolvem o sistema de arrecadação dos tributos específicos destinados ao CBMPE. (Art. 21 I–V)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "Divisão de Planejamento e Gestão (DPG)",
+                "Divisão de Projetos (DProj)",
+                "Divisão de Convênios (DConv)",
+                "Divisão de Arrecadação Tributária (DTA)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Planejamento e Gestão",
+                  "requisito": "Oficial do CBMPE (Art. 94)",
+                  "subordinadoA": "Comandante Geral",
+                  "atribuicoes": [
+                    "Responsável direto perante o Comandante Geral pelo funcionamento do sistema de planejamento (Art. 94)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pi",
@@ -1090,7 +1244,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pr",
@@ -1169,7 +1325,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Planejamento e Compras",
+              "abbreviation": "CPC",
+              "subordinadoA": "Diretoria de Apoio Logístico e Finanças",
+              "atribuicoes": [
+                "Centro de Planejamento e Compras - CPC, responsável por: a) projetos que visem novas aquisições; b) planejamento orçamentário; c) confecção e execução do Plano de Contratações Anual; d) planejamento e acompanhamento das obras e reformas das instalações; e) acompanhamento e supervisão da vigência e da execução de contratos e convênios. (Art. 31, I)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "rj",
@@ -1221,7 +1390,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rn",
@@ -1263,7 +1434,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rr",
@@ -1316,7 +1489,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rs",
@@ -1359,7 +1534,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "sc",
@@ -1412,7 +1589,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "se",
@@ -1474,7 +1653,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "sp",
@@ -1514,7 +1695,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "to",
@@ -1547,7 +1730,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -1654,7 +1839,68 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional de Bombeiros da Capital e Entorno",
+              "abbreviation": "COB-Capital",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "Os órgãos de direção executiva destinam-se a gerenciar todo o serviço operacional da Corporação (Art. 4º III, red. Lei 3.105/2015)",
+                "Compete aos órgãos de direção executiva a operacionalização das atividades-fins da corporação e o cumprimento de suas missões, consoantes diretrizes e ordens emanadas da direção geral, apoiados em suas necessidades pelos órgãos de execução (Art. 13, red. Lei 3.105/2015)",
+                "Os órgãos de direção executiva prestam assessoramento ao subcomandante-geral do CBMAC, sendo responsável pelo processamento dos assuntos de interesse operacional (Art. 9º, red. Lei 3.105/2015)",
+                "Os comandos operacionais de bombeiros da capital e interior poderão convocar, sempre que for necessário ou conforme planejamento, os comandantes dos batalhões regionais e especializados, coordenadoria de programas educacionais e de prevenção e o serviço inteligência operacional para reuniões de trabalho, elaboração de planos e de avaliação de resultados (Art. 9º §3º)"
+              ],
+              "desdobramentos": [
+                "1º BEPCIF — 1º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º I)",
+                "2º BEPCIF — 2º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º II)",
+                "3º BEPCIF — 3º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Art. 4º §1º III)",
+                "1º BBS — 1º Batalhão de Busca e Salvamento (Art. 4º §2º I)",
+                "1ª CIACIAER — 1ª Companhia de Combate a Incêndio em Aeródromos (Art. 4º §2º II)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do COB da Capital e Entorno",
+                  "requisito": "Tenente-Coronel BM (Art. 24 II); ocupa função de subchefe do EMG (Art. 7º II)",
+                  "subordinadoA": "Subcomandante-Geral",
+                  "atribuicoes": [
+                    "Gerenciar todo o serviço operacional da Corporação na capital e entorno; operacionalização das atividades-fins e cumprimento de missões consoante diretrizes da direção geral (Arts. 4º III e 13)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Operacional de Bombeiros do Interior",
+              "abbreviation": "COB-Interior",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "Os órgãos de direção executiva destinam-se a gerenciar todo o serviço operacional da Corporação (Art. 4º III, red. Lei 3.105/2015)",
+                "Compete aos órgãos de direção executiva a operacionalização das atividades-fins da corporação e o cumprimento de suas missões, consoantes diretrizes e ordens emanadas da direção geral, apoiados em suas necessidades pelos órgãos de execução (Art. 13, red. Lei 3.105/2015)",
+                "Os órgãos de direção executiva prestam assessoramento ao subcomandante-geral do CBMAC, sendo responsável pelo processamento dos assuntos de interesse operacional (Art. 9º, red. Lei 3.105/2015)",
+                "Os comandos operacionais de bombeiros da capital e interior poderão convocar, sempre que for necessário ou conforme planejamento, os comandantes dos batalhões regionais e especializados, coordenadoria de programas educacionais e de prevenção e o serviço inteligência operacional para reuniões de trabalho, elaboração de planos e de avaliação de resultados (Art. 9º §3º)"
+              ],
+              "desdobramentos": [
+                "4º BEPCIF/CZS — 4º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Cruzeiro do Sul) (Art. 4º §3º I)",
+                "5º BEPCIF/EPT — 5º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Epitaciolândia) (Art. 4º §3º II)",
+                "6º BEPCIF/SM — 6º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Sena Madureira) (Art. 4º §3º III)",
+                "7º BEPCIF/TK — 7º Batalhão de Educação, Proteção e Combate a Incêndio Florestal/Urbano (Tarauacá) (Art. 4º §3º IV)",
+                "1ª CIACIAER/4º BEPCIF/CZS — 1ª Companhia de Combate a Incêndio em Aeródromo (Art. 4º §4º I)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do COB do Interior",
+                  "requisito": "Tenente-Coronel BM (Art. 24 II); membro do EMG (Art. 7º III)",
+                  "subordinadoA": "Subcomandante-Geral",
+                  "atribuicoes": [
+                    "Gerenciar todo o serviço operacional da Corporação no interior do estado; operacionalização das atividades-fins e cumprimento de missões consoante diretrizes da direção geral (Arts. 4º III e 13)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "al",
@@ -1727,7 +1973,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "am",
@@ -1773,7 +2021,40 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Ensino, Instrução, Pesquisa e Operações",
+              "abbreviation": "DEIPO",
+              "subordinadoA": "Subcomandante Geral",
+              "atribuicoes": [
+                "A Diretoria de Ensino, Instrução, Pesquisa e Operações (DEIPO) é o órgão de direção setorial responsável pela coordenação, fiscalização, controle das atividades de ensino, instrução, pesquisa e pelo planejamento operacional da Corporação (Art. 27)."
+              ],
+              "desdobramentos": [
+                "Seção de Ensino, Instrução e Pesquisa (DEIPO-1)",
+                "Seção de Projetos e Programas Especiais (DEIPO-2)",
+                "Seção de Planejamento, Expediente e Meios Auxiliares (DEIPO-3)",
+                "Escola de Bombeiros Militar (ESBOM)",
+                "Centro de Informática (CInf)"
+              ],
+              "cargos": []
+            },
+            {
+              "name": "Centro de Operações Bombeiro Militar",
+              "abbreviation": "COBOM",
+              "subordinadoA": "Subcomandante Geral",
+              "atribuicoes": [
+                "O Centro de Operações Bombeiro Militar (COBOM), órgão de execução, subordinado ao Subcomandante Geral, destina-se ao controle, coordenação, serviços de comunicações e ações operacionais (Art. 43)."
+              ],
+              "desdobramentos": [
+                "Seção de Operações (COBOM-1)",
+                "Seção de Comunicações (COBOM-2)",
+                "Seção de Apoio (COBOM-3)"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "ap",
@@ -1805,7 +2086,30 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional",
+              "abbreviation": "CmtOp",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Órgão de direção-geral, responsável pela direção superior, planejamento estratégico e administração geral da Instituição (Art. 6º, §1º, I)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional",
+                  "requisito": "Oficial Superior do CBMAP",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Órgão de direção-geral, responsável pela coordenação das atividades operacionais de bombeiro militar do Estado do Amapá, integrando os órgãos incumbidos da direção superior, planejamento estratégico e administração geral da Instituição (LC nº 180/2026, Art. 6º, §1º, I)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ba",
@@ -1855,7 +2159,56 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando de Operações de Bombeiros Militar",
+              "abbreviation": "COBM",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "O Comando de Operações de Bombeiros Militar tem por finalidade assessorar o Comandante-Geral e o Subcomandante-Geral, planejar, coordenar, executar, avaliar e controlar as atividades operacionais de bombeiros militares, de proteção e defesa civil, executadas pelos Comandos Regionais e pelas Unidades Operacionais, no que concerne à proteção das pessoas e dos bens públicos e privados (Art. 16)"
+              ],
+              "desdobramentos": [
+                "1º Comando Regional de Bombeiros Militar",
+                "2º Comando Regional de Bombeiros Militar",
+                "3º Comando Regional de Bombeiros Militar",
+                "4º Comando Regional de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Operações de Bombeiros Militar",
+                  "requisito": "Cargo privativo do posto de Coronel (Anexo III, Art. 7)",
+                  "subordinadoA": "Comando-Geral",
+                  "atribuicoes": [
+                    "a) planejar, organizar, supervisionar, coordenar e controlar as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, desenvolvidas pelo CBMBA, com atuação nas regiões do Estado (Art. 49 III a)",
+                    "b) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 III b)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Coordenadoria de Treinamento Operacional",
+              "abbreviation": "CTO",
+              "subordinadoA": "Instituto Militar de Ensino Superior de Bombeiros",
+              "atribuicoes": [
+                "A Coordenadoria de Treinamento Operacional tem por finalidade promover a capacitação, a especialização e a educação continuada dos Bombeiros Militar e de outras instituições da área de defesa social e de segurança pública (Art. 31)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Coordenador de Treinamento Operacional",
+                  "requisito": "Cargo em comissão DAS-2C (Art. 55 VI)",
+                  "subordinadoA": "Diretor do IMESB",
+                  "atribuicoes": [
+                    "ao Coordenador de Treinamento Operacional cabe planejar, coordenar, controlar e fiscalizar as atividades de capacitação, especialização e educação continuada dos Bombeiros Militar e instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, conforme lei específica (Art. 49 XIII)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ce",
@@ -1905,7 +2258,42 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Coordenadoria Operacional",
+              "abbreviation": "CO",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A Coordenadoria Operacional é responsável pela execução das operações bombeirísticas (Art. 18)"
+              ],
+              "desdobramentos": [
+                "Núcleo de Bombeiro Metropolitano",
+                "Núcleo de Bombeiro do Interior",
+                "Núcleo de Defesa Civil",
+                "Núcleo de Busca e Salvamento",
+                "Núcleo de Resgate e Emergência Pré-hospitalar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Coordenador Operacional",
+                  "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+                  "subordinadoA": "Comandante Geral",
+                  "atribuicoes": [
+                    "Responsável pela execução das operações bombeirísticas"
+                  ],
+                  "desdobramentos": [
+                    "Núcleo de Bombeiro Metropolitano",
+                    "Núcleo de Bombeiro do Interior",
+                    "Núcleo de Defesa Civil",
+                    "Núcleo de Busca e Salvamento",
+                    "Núcleo de Resgate e Emergência Pré-hospitalar"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "df",
@@ -1934,7 +2322,28 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional",
+              "abbreviation": "CmdOp",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Comando Operacional é a denominação genérica dada a Organização Bombeiro-Militar de mais alto escalão, dotada de Estado-Maior próprio e subordinada ao Comandante-Geral, que tem a seu cargo o planejamento estratégico, a coordenação e o emprego das unidades e subunidades que lhes forem subordinadas, com a finalidade de executar atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil, além de outras, em uma determinada área operacional."
+              ],
+              "desdobramentos": [
+                "Unidade de Prevenção e Combate a Incêndio",
+                "Unidade de Busca e Salvamento",
+                "Unidade de Atendimento de Emergência Pré-Hospitalar",
+                "Unidade de Proteção Ambiental",
+                "Unidade de Proteção Civil",
+                "Unidade de Aviação Operacional",
+                "Unidade de Multiemprego"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "es",
@@ -1978,7 +2387,20 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Operações",
+              "abbreviation": "DOp",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "A Diretoria de Operações (DOp), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: disciplinar, coordenar e controlar todas as atividades envolvendo as missões constitucionais do CBMES especificamente no que se refere a combate a incêndios e busca e salvamento, bem como apurar dados a fim de fundamentar estatísticas para um melhor emprego e uso de técnicas e táticas adequadas nas ações referentes aos procedimentos operacionais."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "go",
@@ -2019,7 +2441,49 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando de Operações de Defesa Civil",
+              "abbreviation": "CODEC",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "Compete ao Comando de Operações de Defesa Civil: elaborar planos de gestão operacional nos assuntos relacionados a defesa civil (Art. 27, I)",
+                "coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil (II)",
+                "realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução (III)",
+                "planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco (IV)",
+                "elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras definidas em regulamento (V)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            },
+            {
+              "name": "Comando de Operações de Inteligência",
+              "abbreviation": "COI",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "Compete ao Comando de Operações de Inteligência: produzir conhecimentos e informações que subsidiem ações para prevenir, neutralizar, coibir e reprimir atos de qualquer natureza que venham prejudicar a Corporação no cumprimento de suas atribuições legais, tendo como fundamentos básicos a defesa do Estado Democrático de Direito e a dignidade da pessoa humana (Art. 29, I)",
+                "exercer atividades de inteligência de interesse institucional com o intuito de subsidiar tomadas de decisão do Comandante-Geral e do Subcomandante-Geral, com vistas ao aprimoramento dos serviços prestados pela Instituição (II)",
+                "identificar, monitorar e avaliar ameaças reais ou potenciais à segurança e manutenção das atividades do Corpo de Bombeiros Militar (III)",
+                "realizar investigações sociais relativas à seleção de candidatos ao ingresso nas fileiras da Corporação (IV)",
+                "produzir conhecimentos e informações que subsidiem tomadas de decisão e ações relacionadas ao exercício das atribuições previstas nesta Lei (V)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            },
+            {
+              "name": "Centro Operacional de Bombeiros",
+              "abbreviation": "COB",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "O Centro Operacional de Bombeiros é responsável pelo atendimento das solicitações de socorro, coordenação do acionamento e emprego do serviço operacional diário, bem como pelo registro, controle e emissão de extratos de ocorrência, de acordo com as premissas do Comando Geral (Art. 34, § 3º).",
+                "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "ma",
@@ -2053,7 +2517,28 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Operações e Comunicações",
+              "abbreviation": "COC",
+              "subordinadoA": "Comando Operacional do CBM",
+              "atribuicoes": [
+                "Art. 24 — O Centro de Operações e Comunicações, órgão subordinado ao Comando Operacional, compete o planejamento, coordenação, controle, fiscalização e execução das atividades operacionais e de comunicações, de pesquisas tecnológicas, de perícias e de prevenção de incêndios, além das atribuições específicas de planejamento em Proteção e Defesa Civil em sua área de circunscrição ao comando que estiver subordinado."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do COC",
+                  "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+                  "subordinadoA": "Comando Operacional do CBM",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mg",
@@ -2088,7 +2573,58 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Unidades de Execução Operacional",
+              "abbreviation": "UEO",
+              "subordinadoA": "Comandos Operacionais de Bombeiros",
+              "atribuicoes": [
+                "As Unidades de Execução realizam as atividades operacionais e de apoio (Art. 10); subordinadas diretamente ao Comando Operacional de Bombeiros (Art. 27)"
+              ],
+              "desdobramentos": [
+                "Batalhão de Bombeiros Militar (BBM)",
+                "Companhia Independente de Bombeiros Militar",
+                "Companhia de Bombeiros Militar",
+                "Pelotão de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Batalhão (BBM)",
+                  "requisito": "Tenente-Coronel QOBM",
+                  "subordinadoA": "Comando Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Ações de prevenção e combate a incêndio, busca e salvamento"
+                  ],
+                  "desdobramentos": [
+                    "Companhias",
+                    "Pelotões"
+                  ]
+                },
+                {
+                  "cargo": "Comandante de Companhia Independente (CIA IND BM)",
+                  "requisito": "Major ou Capitão QOBM",
+                  "subordinadoA": "Comando Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Ações de prevenção e combate a incêndio"
+                  ],
+                  "desdobramentos": [
+                    "Pelotões"
+                  ]
+                },
+                {
+                  "cargo": "Comandante de Pelotão (PEL BM)",
+                  "requisito": "1º ou 2º Tenente QOBM",
+                  "subordinadoA": "Companhia",
+                  "atribuicoes": [
+                    "Comando de pelotão operacional"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ms",
@@ -2122,7 +2658,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mt",
@@ -2187,7 +2725,34 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria Operacional",
+              "abbreviation": "DOp",
+              "subordinadoA": "Comandante-Geral Adjunto",
+              "atribuicoes": [
+                "A Diretoria Operacional, subordinada diretamente ao Comandante-Geral Adjunto, é responsável pela supervisão, coordenação e planejamento das políticas relacionadas com a atividade operacional da Corporação (Art. 58)",
+                "A Diretoria Operacional é integrada pelos Comandos Regionais de Bombeiros Militar (CRBMs) e pelas Unidades de Bombeiros Militar (UBMs) (§ 1º)",
+                "A função de Diretor Operacional é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (§ 2º)",
+                "As Unidades classificadas como Comandos Regionais de Bombeiros Militar - CRBM subordinam-se diretamente à Diretoria Operacional e são responsáveis pela supervisão, coordenação e planejamento do emprego operacional das UBM a eles subordinadas (Art. 59)"
+              ],
+              "desdobramentos": [
+                "Diretoria Adjunta",
+                "Seção Administrativa",
+                "Seção de Planejamento Tático e Operacional",
+                "Seção de Doutrina e Emprego Operacional",
+                "Seção de Hidrantes",
+                "Seção de Estatística e Georreferenciamento",
+                "Comandos Regionais de Bombeiro Militar (CRBM)",
+                "Batalhão de Emergências Ambientais",
+                "Grupo de Aviação de Bombeiros Militar",
+                "Centro de Comando e Controle Operacional de Bombeiros"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "pa",
@@ -2231,7 +2796,28 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando de Operações",
+              "abbreviation": "Comando Ops",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "O Comando de Operações é o órgão de direção-geral responsável pela direção e pelo controle dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-fim da corporação (Art. 16)."
+              ],
+              "desdobramentos": [
+                "Comandante Operacional",
+                "Assistente",
+                "Seção de Planejamento de Pessoal",
+                "Seção de Planejamento Logístico",
+                "Seção de Planejamento de Operações e Estatística",
+                "Seção de Planejamento de Eventos",
+                "Secretaria"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "pb",
@@ -2269,7 +2855,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pe",
@@ -2334,7 +2922,201 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional Metropolitano",
+              "abbreviation": "COM",
+              "subordinadoA": "Diretoria Integrada Metropolitana",
+              "atribuicoes": [
+                "O COM incumbe-se da direção executiva na área territorial de Recife e sua Região Metropolitana, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 33)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "Grupamento de Bombeiros de Incêndio (GBI)",
+                "Grupamento de Atendimento Pré-Hospitalar (GBAPH)",
+                "Grupamento de Bombeiros Marítimo (GBMar)",
+                "Grupamento de Bombeiros de Salvamento (GBS)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional Metropolitano (COM)",
+                  "requisito": "Oficial",
+                  "subordinadoA": "Diretoria Integrada Metropolitana",
+                  "atribuicoes": [
+                    "Direção executiva na área de Recife e Região Metropolitana",
+                    "Combate a incêndio, salvamento e atendimento pré-hospitalar"
+                  ],
+                  "desdobramentos": [
+                    "Divisão de Articulação Operacional",
+                    "Divisão de Monitoramento e Controle",
+                    "Divisão de Coordenação Tática e Operacional"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Comando Operacional Especializado",
+              "abbreviation": "COEsp",
+              "subordinadoA": "Diretoria Integrada Especializada",
+              "atribuicoes": [
+                "O COEsp incumbe-se da direção executiva das atividades técnicas na área territorial do Estado (Art. 35)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "CAT/RMR",
+                "CAT/Zona da Mata (CAT/ZM)",
+                "CAT/Agreste",
+                "CAT/Sertão I",
+                "CAT/Sertão II"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional Especializado",
+                  "requisito": "Oficial do CBMPE (Art. 94)",
+                  "subordinadoA": "DIEsp",
+                  "atribuicoes": [
+                    "Direção executiva das atividades técnicas no Estado (Art. 35)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Operacional do Interior/1",
+              "abbreviation": "COInter/1",
+              "subordinadoA": "Diretoria Integrada do Interior/1",
+              "atribuicoes": [
+                "O COInter/1 incumbe-se, na área territorial da Zona da Mata e Agreste, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 37)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "1º Grupamento de Bombeiros (1ºGB)",
+                "2º Grupamento de Bombeiros (2ºGB)",
+                "6º Grupamento de Bombeiros (6ºGB)",
+                "7º Grupamento de Bombeiros (7ºGB)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional do Interior/1",
+                  "requisito": "Oficial do CBMPE (Art. 94)",
+                  "subordinadoA": "DInter/1",
+                  "atribuicoes": [
+                    "Direção executiva das atividades operacionais na Zona da Mata e Agreste (Art. 37)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Operacional do Interior/2",
+              "abbreviation": "COInter/2",
+              "subordinadoA": "Diretoria Integrada do Interior/2",
+              "atribuicoes": [
+                "O COInter/2 incumbe-se, na área territorial do sertão, das atividades operacionais de combate a incêndio, salvamento e atendimento pré-hospitalar (Art. 39)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "3º Grupamento de Bombeiros (3ºGB)",
+                "4º Grupamento de Bombeiros (4ºGB)",
+                "5º Grupamento de Bombeiros (5ºGB)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional do Interior/2",
+                  "requisito": "Oficial do CBMPE (Art. 94)",
+                  "subordinadoA": "DInter/2",
+                  "atribuicoes": [
+                    "Direção executiva das atividades operacionais no Sertão (Art. 39)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Centro de Controle Operacional",
+              "abbreviation": "CCO",
+              "subordinadoA": "Diretoria Integrada Metropolitana",
+              "atribuicoes": [
+                "O CCO incumbe-se do recebimento e encaminhamento das solicitações de socorro e controle do atendimento emergencial realizado (Art. 85)",
+                "I - administrar as atividades relativas à Unidade;",
+                "II - cumprir e fazer cumprir, em sua área de ação, as diretrizes, planos, normas e ordens emanadas do escalão superior;",
+                "III - planejar, comandar e fiscalizar as ações operacionais da unidade;",
+                "IV - solicitar apoio ou reforço ao comando superior, quando necessário;",
+                "V - comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito;",
+                "VI - informar ao comando a que estiver subordinado as principais ocorrências operacionais atendidas pela unidade;",
+                "VII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente;",
+                "VIII - zelar pela unidade e uniformidade da instrução e administração entre os órgãos subordinados;",
+                "IX - planejar e operar as suas comunicações, de acordo com as normas vigentes;",
+                "X - elaborar os documentos necessários à avaliação das atividades operacionais da Unidade, conforme normas estabelecidas pelo escalão superior;",
+                "XI - comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem;",
+                "XII - preparar e discutir a proposta orçamentária da unidade;",
+                "XIII - encaminhar, mensalmente, ao comando do escalão superior, relatório das atividades técnicas, administrativas e operacionais executadas pela unidade;",
+                "XIV - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob seu comando, adotando e sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal; e",
+                "XV - exercer outros encargos que lhe forem atribuídos pelos escalões superiores. (Art. 97 I–XV)"
+              ],
+              "desdobramentos": [
+                "Divisão de Operações (DOp)",
+                "Seção de Radiocomunicação (SR)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CCO",
+                  "requisito": "Oficial do CBMPE (Art. 86)",
+                  "subordinadoA": "DIM",
+                  "atribuicoes": [
+                    "Recebimento e encaminhamento das solicitações de socorro; controle do atendimento emergencial (Art. 85)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pi",
@@ -2372,7 +3154,97 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Treinamento Operacional",
+              "abbreviation": "CTO",
+              "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+              "atribuicoes": [
+                "O Centro de Treinamento Operacional é órgão encarregado da realização de treinamentos técnicos operacionais de combate a incêndio, salvamento aquático e salvamento em altura da Corporação. (Art. 31, Lei nº 5.949/2009)"
+              ],
+              "desdobramentos": [
+                "Chefe",
+                "Adjunto",
+                "Seção de Incêndio",
+                "Seção de Salvamento Aquático e Mergulho",
+                "Seção de Salvamento em Altura",
+                "Seção de Salvamento Terrestre",
+                "Pelotões Operacionais",
+                "Pelotão Administrativo"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Centro de Treinamento Operacional",
+                  "requisito": "Oficial do CBMEPI",
+                  "subordinadoA": "Diretoria de Ensino, Instrução e Pesquisa",
+                  "atribuicoes": [
+                    "Treinamentos técnicos operacionais de combate a incêndio, salvamento aquático e em altura (Art. 31, 5.949)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Centro de Operações e Comunicações",
+              "abbreviation": "COC",
+              "subordinadoA": "Comando Operacional de Bombeiros",
+              "atribuicoes": [
+                "O Centro de Operações e Comunicações é o órgão responsável pela execução dos serviços de comunicação das ações operacionais. (Art. 32, Lei nº 5.949/2009)"
+              ],
+              "desdobramentos": [
+                "Chefe",
+                "Seção de Operações",
+                "Seção de Comunicações",
+                "Seção de Apoio"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Centro de Operações e Comunicações",
+                  "requisito": "Oficial do CBMEPI",
+                  "subordinadoA": "Comando Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Execução dos serviços de comunicação das ações operacionais (Art. 32, 5.949)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Operacional de Bombeiros",
+              "abbreviation": "COB",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "O Comando Operacional de Bombeiros é órgão de execução do mais alto escalão do sistema operacional subordinado ao órgão de direção geral, tendo a seu cargo o planejamento estratégico e a fiscalização do emprego dos Comandos Regionais de Bombeiros. (Art. 34, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante Operacional de Bombeiros",
+                "Subcomandante Operacional de Bombeiros",
+                "Seção Administrativa",
+                "Seção de Operações e Comunicações",
+                "Seção de Controle e Fiscalização de Hidrantes",
+                "Seção de Planejamento, Estatística e Avaliação Operacional",
+                "Núcleo de Investigação e Prevenção de Incêndios",
+                "Comandos Regionais de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional de Bombeiros (COB)",
+                  "requisito": "Coronel ou Tenente-Coronel",
+                  "subordinadoA": "Direção Geral",
+                  "atribuicoes": [
+                    "Planejamento estratégico e fiscalização do emprego dos Comandos Regionais"
+                  ],
+                  "desdobramentos": [
+                    "Subcomandante Operacional",
+                    "Seções de Operações, Hidrantes e Planejamento",
+                    "Comandos Regionais"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pr",
@@ -2408,7 +3280,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupo de Operações de Socorro Tático",
+              "abbreviation": "GOST",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao Comandante-Geral, em apoio especializado às Unidades Operacionais, que é incumbido de: a) executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar; b) realizar ações: 1. de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos; 2. de ações de defesa civil; c) organizar forças-tarefas; d) desempenhar atividades de busca e salvamento, inclusive com a utilização de cães; e) organizar e manter o canil central e coordenar os canis setoriais. (Art. 38, III)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "rj",
@@ -2445,7 +3330,46 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Suprimento e Manutenção — Material Operacional",
+              "abbreviation": "CSM/MOp",
+              "subordinadoA": "Diretoria de Apoio Logístico",
+              "atribuicoes": [
+                "Art. 43, § 1º — O Centro de Suprimento e Manutenção de Material Operacional é o órgão de Apoio incumbido da obtenção, da estocagem e da distribuição dos suprimentos específicos e da execução da manutenção do armamento e do material especializado de bombeiro."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do CSM/MOp",
+                  "requisito": "Oficial BM",
+                  "subordinadoA": "Diretor de Apoio Logístico",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Centro de Operações do Corpo de Bombeiros",
+              "abbreviation": "COCB",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Art. 44, § 3º — O Centro de Operações do Corpo de Bombeiros é um órgão de Execução, subordinado ao Comandante-Geral, equipado com meios variados de comunicações, destinado a controlar e coordenar a atuação das Unidades Operacionais da Corporação e será organizado de forma a possibilitar ligações eficientes com todas as Unidades Operacionais da Corporação, e com os órgãos responsáveis pela segurança do Estado do Rio de Janeiro."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do COCB",
+                  "requisito": "Oficial Superior BM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rn",
@@ -2485,7 +3409,98 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional Bombeiro Militar",
+              "abbreviation": "CmdoOpBM",
+              "subordinadoA": "Conselho Superior (membro)",
+              "atribuicoes": [
+                "O Comando Operacional Bombeiro Militar (Cmdo Op BM) é o órgão responsável pelo planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação (Art. 32)."
+              ],
+              "desdobramentos": [
+                "Estado-Maior Operacional (EM Op)",
+                "Centro de Operações do CBMRN (COCBM)",
+                "Comissão de Defesa Civil (CODEC)",
+                "1º Grupamento de Bombeiros Militar",
+                "2º Grupamento de Bombeiros Militar",
+                "Grupamento de Bombeiros Marítimo (GBMAR)",
+                "Subgrupamento Independente de APH (SIBM-APH)",
+                "1º Subgrupamento Independente de Bombeiros Militar",
+                "2º Subgrupamento Independente de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional Bombeiro Militar",
+                  "requisito": "Coronel ou Tenente-Coronel do QOCBM (Art. 45)",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação (Art. 32)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Estado-Maior Operacional",
+              "abbreviation": "EM Op",
+              "subordinadoA": "Comando Operacional Bombeiro Militar",
+              "atribuicoes": [
+                "O Estado-Maior Operacional (EM Op), subordinado ao Comandante Operacional, é a estrutura de assessoramento responsável pela coordenação setorial do Comando Operacional, atuando na supervisão das atividades de proteção e defesa civil, proteção do meio ambiente, combate a incêndio, resgate, busca e salvamento de vidas e bens em todo o Estado (Art. 33, caput)",
+                "Composição: 1ª Seção (B/1) — supervisão de organização e emprego de pessoal e controle de efetivo (Art. 33 §2º)",
+                "2ª Seção (B/2) — responsável pela coleta de dados, produção de informes e estudos de inteligência e contrainteligência (Art. 33 §3º)",
+                "3ª Seção (B/3) — planejamento de operações, organização, instrução, mobilização e desmobilização e planos de operações futuras (Art. 33 §4º)",
+                "4ª Seção (B/4) — orientação das prioridades de apoio logístico operacional e distribuição de equipamentos e suprimentos (Art. 33 §5º)"
+              ],
+              "desdobramentos": [
+                "1ª Seção (B/1)",
+                "2ª Seção (B/2)",
+                "3ª Seção (B/3)",
+                "4ª Seção (B/4)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Subcomandante Operacional / Chefe do EM Op",
+                  "requisito": "Oficial do QOCBM; substituto do Comandante Operacional",
+                  "subordinadoA": "Comandante Operacional Bombeiro Militar",
+                  "atribuicoes": [
+                    "I - realizar estudos de situação;",
+                    "II - apresentar propostas;",
+                    "III - elaborar planos e ordens;",
+                    "IV - supervisionar a execução dos planos e ordens previstos no inciso anterior;",
+                    "V - substituir o Comandante Operacional;",
+                    "VI - desempenhar as atribuições previstas em lei e regulamentos."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Centro de Operações do CBMRN",
+              "abbreviation": "COCBM",
+              "subordinadoA": "Comando Operacional Bombeiro Militar",
+              "atribuicoes": [
+                "O Centro de Operações do Corpo de Bombeiros (COCBM) tem por competência coordenar o atendimento e despachos de ocorrências bombeiro-militar e de proteção e defesa civil, bem como coordenar, orientar e disciplinar as telecomunicações operacionais no âmbito do CBMRN (Art. 33 §7º)."
+              ],
+              "desdobramentos": [
+                "Seção de Operações",
+                "Seção de Comunicações",
+                "Seção de Apoio"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Centro de Operações",
+                  "requisito": "Oficial BM designado pelo Comandante Geral",
+                  "subordinadoA": "Comando Operacional BM",
+                  "atribuicoes": [
+                    "Coordenação do atendimento e despachos de ocorrências BM e de proteção e defesa civil; coordenação e disciplina das telecomunicações operacionais do CBMRN (Art. 33 §7º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rr",
@@ -2527,7 +3542,70 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional (Capital e Interior)",
+              "abbreviation": "CmdOp",
+              "subordinadoA": "Subcomandante Geral",
+              "atribuicoes": [
+                "Coordenação, controle e fiscalização das atividades operacionais (área setorial)"
+              ],
+              "desdobramentos": [
+                "Comandante Operacional da Capital",
+                "Comandante Operacional do Interior",
+                "Subcomandantes Operacionais (substitutos e Chefes do Estado Maior Operacional)",
+                "Estado Maior Operacional da Capital",
+                "Estado Maior Operacional do Interior"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional da Capital",
+                  "requisito": "Oficial Superior",
+                  "subordinadoA": "Subcomandante Geral",
+                  "atribuicoes": [
+                    "Coordenação, controle e fiscalização das atividades operacionais da Capital"
+                  ],
+                  "desdobramentos": [
+                    "Subcomandante Operacional da Capital",
+                    "Estado Maior Operacional da Capital"
+                  ]
+                },
+                {
+                  "cargo": "Comandante Operacional do Interior",
+                  "requisito": "Oficial Superior",
+                  "subordinadoA": "Subcomandante Geral",
+                  "atribuicoes": [
+                    "Coordenação, controle e fiscalização das atividades operacionais do Interior"
+                  ],
+                  "desdobramentos": [
+                    "Subcomandante Operacional do Interior",
+                    "Estado Maior Operacional do Interior"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Órgãos de Execução Operacional",
+              "abbreviation": "OEO",
+              "subordinadoA": "Comando Operacional",
+              "atribuicoes": [
+                "OBMs de Atuação Direta Operacionais",
+                "Classificam-se em Ordinárias, Especializadas, Particulares e Voluntárias"
+              ],
+              "desdobramentos": [
+                "Batalhão de Bombeiros",
+                "Companhia Independente de Bombeiros",
+                "Companhia de Bombeiros",
+                "Companhia de Comando e Serviço",
+                "Pelotão de Bombeiros",
+                "Pelotão de Comando e Serviço",
+                "Destacamento de Bombeiros"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rs",
@@ -2567,7 +3645,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "sc",
@@ -2623,7 +3703,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "se",
@@ -2655,7 +3737,23 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Órgãos de Direção Operacional",
+              "abbreviation": "DO",
+              "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+              "atribuicoes": [
+                "Os Órgãos de Direção Operacional se destinam à gestão, planejamento, supervisão, coordenação, controle e fiscalização das missões finalísticas da Corporação, cuja chefia é privativa de oficiais da ativa do último posto do quadro QOBM e são assim constituídas: I - Diretoria de Atividades Técnicas - DAT; II - Diretoria Operacional - DOP (Art. 28). Cada Diretoria deve ter um Diretor-Adjunto, do Posto de Tenente-Coronel, para atuar como auxiliar direto do Diretor e substituí-lo em suas ausências (Art. 31)."
+              ],
+              "desdobramentos": [
+                "Diretoria de Atividades Técnicas - DAT",
+                "Diretoria Operacional - DOP"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "sp",
@@ -2709,7 +3807,32 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Suprimento e Manutenção do Material Operacional",
+              "abbreviation": "CSM/MOp",
+              "subordinadoA": "Corpo de Bombeiros",
+              "atribuicoes": [
+                "Incumbido do recebimento, da estocagem e da distribuição dos suprimentos e da execução da manutenção no que concerne ao material especializado (Art. 43, II)",
+                "As demais necessidades de suprimentos e manutenção são asseguradas pela Diretoria de Apoio Logístico da Corporação (Art. 43, parágrafo único)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante do Centro de Suprimento e Manutenção do Material Operacional",
+                  "requisito": "Oficial PM (Lei nº 616/1974, Art. 43)",
+                  "subordinadoA": "Comandante do Corpo de Bombeiros",
+                  "atribuicoes": [
+                    "Direção do Centro de Suprimento e Manutenção do Material Operacional, incumbido do recebimento, da estocagem e da distribuição dos suprimentos e da execução da manutenção no que concerne ao material especializado do Corpo de Bombeiros (Lei nº 616/1974, Art. 43, II, red. Lei nº 663/1975)",
+                    "As demais necessidades de suprimentos e manutenção são asseguradas pela Diretoria de Apoio Logístico da Corporação (Lei nº 616/1974, Art. 43, parágrafo único)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "to",
@@ -2741,7 +3864,31 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Operacional Bombeiro Militar",
+              "abbreviation": "COBM",
+              "subordinadoA": "Chefe do Estado-Maior",
+              "atribuicoes": [
+                "O Comando Operacional Bombeiro Militar é responsável pelo planejamento dos assuntos relativos à articulação operacional, à administração e ao controle das operações bombeiro militares e pelos estudos, estatísticas, doutrinas, pesquisas e padronização de procedimentos relacionados às atividades operacionais da Corporação. (Art. 17)",
+                "§único. De acordo com a necessidade, poderá o Comando Operacional Bombeiro Militar ser dividido em regionais, conforme plano de articulação do CBMTO."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional Bombeiro Militar",
+                  "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+                  "subordinadoA": "Chefe do Estado-Maior",
+                  "atribuicoes": [
+                    "Planejamento da articulação operacional e padronização de procedimentos operacionais (Art. 17)."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -2819,7 +3966,78 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas e Operacionais",
+              "abbreviation": "DATOP",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "Os órgãos de direção setorial compõem o assessoramento técnico do comandante-geral (Art. 4º II, red. Lei 3.105/2015)",
+                "Competem aos órgãos de direção setorial as funções gerenciais dos meios administrativo-operacionais, o atendimento de saúde dos membros da corporação e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Atividades Técnicas e Operacionais",
+                  "requisito": "Oficial Superior, função de oficial superior (Art. 24 III)",
+                  "subordinadoA": "Subcomandante-Geral",
+                  "atribuicoes": [
+                    "Funções gerenciais dos meios administrativo-operacionais e auxílio aos órgãos de direção geral e executiva (Art. 12)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "al",
+          "name": "Alagoas",
+          "abbr": "AL",
+          "cbm": "CBMAL",
+          "region": "Nordeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas é o órgão central do sistema de engenharia e segurança do Corpo de Bombeiros Militar, competindo-lhe o estudo, a análise, o planejamento, a orientação técnica, a execução, o controle e a fiscalização das atividades relativas à segurança contra incêndio e pânico e ao cumprimento das disposições legais sobre o assunto, no âmbito do Estado de Alagoas."
+              ],
+              "desdobramentos": [
+                "Seção de Estudos e Análise de Projetos",
+                "Seção de Testes, Vistorias e Pareceres",
+                "Seção de Perícias e Pesquisas",
+                "Seção de Hidrantes",
+                "Seção de Expediente e Arquivo"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas é o órgão central do sistema de engenharia e segurança do Corpo de Bombeiros Militar, competindo-lhe o estudo, a análise, o planejamento, a orientação técnica, a execução, o controle e a fiscalização das atividades relativas à segurança contra incêndio e pânico e ao cumprimento das disposições legais sobre o assunto, no âmbito do Estado de Alagoas."
+              ],
+              "desdobramentos": [
+                "Seção de Estudos e Análise de Projetos",
+                "Seção de Testes, Vistorias e Pareceres",
+                "Seção de Perícias e Pesquisas",
+                "Seção de Hidrantes",
+                "Seção de Expediente e Arquivo"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "ce",
@@ -2856,7 +4074,35 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Coordenadoria de Atividades Técnicas",
+              "abbreviation": "CAT",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "I - gerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados;",
+                "II - desenvolver pesquisa científica e avaliar o desempenho operacional da Corporação;",
+                "III - analisar projetos de edificações, vistorias e pareceres técnicos;",
+                "IV - controlar, manter e manobrar hidrantes. (Art. 17 I–IV)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Coordenador de Atividades Técnicas",
+                  "requisito": "Oficial Superior do Quadro de Oficiais Combatentes",
+                  "subordinadoA": "Comandante Geral",
+                  "atribuicoes": [
+                    "Controle dos requisitos técnicos contra incêndios e projetos de edificações",
+                    "Pesquisa científica e avaliação do desempenho operacional",
+                    "Analisar projetos, vistorias e pareceres técnicos; controlar hidrantes"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "es",
@@ -2888,8 +4134,31 @@
                   "desdobramentos": []
                 }
               ]
+            },
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas (DAT), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: estudar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais, assim como todos os serviços de segurança contra incêndio e pânico, dirigindo também todas as atividades que envolvem as perícias de incêndio e explosão em locais de sinistro no Estado do Espírito Santo."
+              ],
+              "desdobramentos": [],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas (DAT), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: estudar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais, assim como todos os serviços de segurança contra incêndio e pânico, dirigindo também todas as atividades que envolvem as perícias de incêndio e explosão em locais de sinistro no Estado do Espírito Santo."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "go",
@@ -2930,7 +4199,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ma",
@@ -2964,7 +4235,32 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Art. 13, caput — Às Diretorias, órgãos de direção, organizadas sob a forma de sistema, compete realizar o planejamento, a orientação, o controle, a coordenação, a fiscalização e a execução das atividades, dos programas e dos planos relativos às estratégias setoriais específicas.",
+                "Art. 13, § 5º — À Diretoria de Atividades Técnicas compete o planejamento, fiscalização e controle das atividades de prevenção em locais de grande concentração humana, vistorias e pareceres técnicos, apoio operacional e auxílio dos serviços e missões específicas no âmbito estadual."
+              ],
+              "desdobramentos": [
+                "Departamento de Investigação e Prevenção de Incêndio (Seção de Prevenção e Perícia)",
+                "Departamento de Vistorias e Pareceres (Seção de Análise de Projetos; Seção de Operações)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Atividades Técnicas",
+                  "requisito": "Coronel do Quadro de Oficiais Bombeiros Militares Combatentes (Art. 7 § 5º)",
+                  "subordinadoA": "Comando-Geral",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mg",
@@ -2999,7 +4295,33 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Atividades Técnicas",
+              "abbreviation": "CAT",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "I - pesquisar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais e dos regulamentos de prevenção de incêndio e de pânico;",
+                "II - realizar perícias de incêndio e explosão em locais de sinistro;",
+                "III - atuar como segunda instância na análise de projetos de prevenção contra incêndio e pânico. (Art. 24)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor do Centro de Atividades Técnicas",
+                  "requisito": "",
+                  "subordinadoA": "Comando-Geral",
+                  "atribuicoes": [
+                    "Pesquisa, análise, normatização e fiscalização",
+                    "Perícias de incêndio; 2ª instância em análise de projetos de prevenção"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ms",
@@ -3033,7 +4355,32 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Subcomando Geral",
+              "atribuicoes": [
+                "Normatização, estudo, análise e planejamento das atividades preventivas",
+                "Orientação técnica, controle e fiscalização",
+                "Aplicação de normas de segurança contra incêndio"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Atividades Técnicas",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Subcomandante-Geral",
+                  "atribuicoes": [
+                    "Normatização, estudo, análise e planejamento de atividades preventivas e de segurança contra incêndio"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pb",
@@ -3071,7 +4418,36 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Subcomandante Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas – DAT – é a unidade gestora, em nível setorial, organizado de forma sistêmica e responsável pelo estudo, análise, planejamento, orientação técnica, normatização, controle e fiscalização das atividades relativas à segurança contra incêndio e controle de pânico, ao cumprimento das disposições legais sobre o assunto e investigação de incêndios e explosões. (Art. 35)"
+              ],
+              "desdobramentos": [
+                "Conselho Técnico Normativo (CTN)",
+                "Conselho Técnico Deliberativo (CTD)",
+                "Comissão Interna de Análise Técnica (CIAT)",
+                "Seção de Legislação de Prevenção contra Incêndio (DAT/1)",
+                "Seção de Segurança contra Incêndio (DAT/2)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Atividades Técnicas",
+                  "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 33 §3º)",
+                  "subordinadoA": "Subcomandante Geral",
+                  "atribuicoes": [
+                    "Estudo, análise, planejamento, normatização, controle e fiscalização das atividades de SCI/CP e investigação de incêndios (Art. 35)."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pe",
@@ -3124,7 +4500,51 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centros de Atividades Técnicas",
+              "abbreviation": "CAT",
+              "subordinadoA": "Comando Operacional Especializado",
+              "atribuicoes": [
+                "Os CATs incumbem-se da execução das normas que disciplinam a segurança das pessoas e de seus bens contra incêndio e pânico, notadamente as vistorias, análises de projetos, cadastramento e credenciamento de empresas, nas áreas territoriais sob sua responsabilidade (Art. 89)",
+                "I - administrar as atividades relativas à Unidade;",
+                "II - cumprir e fazer cumprir, em sua área de ação, as diretrizes, planos, normas e ordens emanadas do escalão superior;",
+                "III - planejar, comandar e fiscalizar as ações operacionais da unidade;",
+                "IV - solicitar apoio ou reforço ao comando superior, quando necessário;",
+                "V - comunicar imediatamente ao escalão superior qualquer fato ou situação em sua área de atuação, solicitando-lhe intervenção, se não for de sua competência providenciar a respeito;",
+                "VI - informar ao comando a que estiver subordinado as principais ocorrências operacionais atendidas pela unidade;",
+                "VII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente;",
+                "VIII - zelar pela unidade e uniformidade da instrução e administração entre os órgãos subordinados;",
+                "IX - planejar e operar as suas comunicações, de acordo com as normas vigentes;",
+                "X - elaborar os documentos necessários à avaliação das atividades operacionais da Unidade, conforme normas estabelecidas pelo escalão superior;",
+                "XI - comandar diretamente as ações que, pela gravidade, vulto, importância e complexidade assim o exigirem;",
+                "XII - preparar e discutir a proposta orçamentária da unidade;",
+                "XIII - encaminhar, mensalmente, ao comando do escalão superior, relatório das atividades técnicas, administrativas e operacionais executadas pela unidade;",
+                "XIV - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob seu comando, adotando e sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal; e",
+                "XV - exercer outros encargos que lhe forem atribuídos pelos escalões superiores. (Art. 97 I–XV)"
+              ],
+              "desdobramentos": [
+                "CAT/RMR (Recife e RMR)",
+                "CAT/ZM (Zona da Mata Norte e Sul)",
+                "CAT/Agreste (Agreste Setentrional, Central e Meridional)",
+                "CAT/Sertão I (Pajeú, Moxotó, Itaparica)",
+                "CAT/Sertão II (Sertão Central, Araripe, São Francisco)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CAT",
+                  "requisito": "Oficial do CBMPE (Art. 90)",
+                  "subordinadoA": "COEsp",
+                  "atribuicoes": [
+                    "Execução das normas de segurança contra incêndio e pânico; vistorias, análises de projetos, cadastramento e credenciamento (Art. 89)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pr",
@@ -3159,8 +4579,31 @@
                   "desdobramentos": []
                 }
               ]
+            },
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas é o órgão de direção setorial responsável pela coordenação, controle e assessoramento em assuntos relacionados: I - à prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos temporários, atuando por meio do gerenciamento normativo, estudos e pesquisa de incêndios; II - à tecnologia da informação e comunicação, com ações de gestão e desenvolvimento de sistemas informatizados, infraestrutura, segurança, projetos, inovações e governança. (Art. 28)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas é o órgão de direção setorial responsável pela coordenação, controle e assessoramento em assuntos relacionados: I - à prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos temporários, atuando por meio do gerenciamento normativo, estudos e pesquisa de incêndios; II - à tecnologia da informação e comunicação, com ações de gestão e desenvolvimento de sistemas informatizados, infraestrutura, segurança, projetos, inovações e governança. (Art. 28)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "rn",
@@ -3242,7 +4685,80 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Atividades Técnicas",
+              "abbreviation": "DAT",
+              "subordinadoA": "Conselho Superior (membro)",
+              "atribuicoes": [
+                "A Diretoria de Atividades Técnicas (DAT) é o órgão da Corporação que tem por finalidade desenvolver as atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco em todo Estado, conforme previsto na Lei Complementar Estadual nº 601, de 07 de agosto de 2017, e demais normas e instruções técnicas (Art. 44)."
+              ],
+              "desdobramentos": [
+                "Centro de Análise de Risco de Incêndio e Pânico (CARIP)",
+                "Centro de Apoio Técnico Administrativo (CATA)",
+                "Seção de Tecnologia da Informação",
+                "Centro de Vistorias",
+                "Centro de Fiscalização",
+                "1º Centro de Atividades Técnicas — Mossoró",
+                "2º Centro de Atividades Técnicas — Caicó"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Atividades Técnicas",
+                  "requisito": "Coronel ou Tenente-Coronel do QOCBM (Art. 45)",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Desenvolvimento das atividades de prevenção contra incêndio e controle de pânico nas edificações e áreas de risco em todo o Estado, conforme LC 601/2017 e normas técnicas (Art. 44)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "1º Centro de Atividades Técnicas — Mossoró",
+              "abbreviation": "1º CAT",
+              "subordinadoA": "Diretoria de Atividades Técnicas",
+              "atribuicoes": [
+                "O Primeiro Centro de Atividades Técnicas (1º CAT) é a unidade da Diretoria de Atividades Técnicas, sediada em Mossoró/RN, responsável pelas atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios localizados no interior do Estado do Rio Grande do Norte (Art. 44 §8º)."
+              ],
+              "desdobramentos": [
+                "Seção de Atividades Técnicas — Pau dos Ferros/RN (Art. 44 §10)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe do 1º CAT",
+                  "requisito": "Oficial BM designado pelo Comandante Geral",
+                  "subordinadoA": "Diretor da DAT",
+                  "atribuicoes": [
+                    "Prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios do interior do Estado do RN (sede em Mossoró) (Art. 44 §8º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "2º Centro de Atividades Técnicas — Caicó",
+              "abbreviation": "2º CAT",
+              "subordinadoA": "Diretoria de Atividades Técnicas",
+              "atribuicoes": [
+                "O Segundo Centro de Atividades Técnicas (2º CAT) é a unidade da Diretoria de Atividades Técnicas, sediada em Caicó/RN, responsável pelas atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios localizados no interior do Estado do Rio Grande do Norte (Art. 44 §9º)."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do 2º CAT",
+                  "requisito": "Oficial BM designado pelo Comandante Geral",
+                  "subordinadoA": "Diretor da DAT",
+                  "atribuicoes": [
+                    "Prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios do interior do Estado do RN (sede em Caicó) (Art. 44 §9º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "se",
@@ -3274,7 +4790,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "to",
@@ -3306,7 +4824,30 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando de Atividades Técnicas",
+              "abbreviation": "CAT",
+              "subordinadoA": "Chefe do Estado-Maior",
+              "atribuicoes": [
+                "O Comando de Atividades Técnicas é encarregado de planejar, controlar e fiscalizar as atividades atinentes à segurança contra incêndio e emergência no Estado. (Art. 16)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Atividades Técnicas",
+                  "requisito": "Coronel da ativa do QOBM (Art. 11 §único)",
+                  "subordinadoA": "Chefe do Estado-Maior",
+                  "atribuicoes": [
+                    "Planejamento, controle e fiscalização das atividades de SCI e emergência (Art. 16)."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -3395,7 +4936,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ba",
@@ -3491,7 +5034,94 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "1º Comando Regional de Bombeiros Militar",
+              "abbreviation": "1º CRBM",
+              "subordinadoA": "Comando de Operações de Bombeiros Militar",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar, subordinados ao COBM, têm por finalidade planejar, coordenar, controlar, executar e avaliar as atividades operacionais de bombeiros militares de proteção e defesa civil nas regiões sob sua responsabilidade, bem como supervisionar as atividades realizadas pelas unidades operacionais respectivas, no que concerne à eficiência nas missões de bombeiro militar (Art. 33)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante Regional de Bombeiros Militar",
+                  "requisito": "Cargo privativo do posto de Coronel, símbolo DAS-2B (Art. 55 III; Anexo III)",
+                  "subordinadoA": "Comando de Operações de Bombeiros Militar",
+                  "atribuicoes": [
+                    "a) cumprir as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, determinadas pelo Comandante de Operações Bombeiros Militar no que concerne à coordenação, controle e supervisão das atividades desenvolvidas pelas Unidades Operacionais sob sua responsabilidade (Art. 49 VIII a)",
+                    "b) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 VIII b)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "2º Comando Regional de Bombeiros Militar",
+              "abbreviation": "2º CRBM",
+              "subordinadoA": "Comando de Operações de Bombeiros Militar",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar, subordinados ao COBM, têm por finalidade planejar, coordenar, controlar, executar e avaliar as atividades operacionais de bombeiros militares de proteção e defesa civil nas regiões sob sua responsabilidade, bem como supervisionar as atividades realizadas pelas unidades operacionais respectivas, no que concerne à eficiência nas missões de bombeiro militar (Art. 33)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante Regional de Bombeiros Militar",
+                  "requisito": "Cargo privativo do posto de Coronel, símbolo DAS-2B (Art. 55 III; Anexo III)",
+                  "subordinadoA": "Comando de Operações de Bombeiros Militar",
+                  "atribuicoes": [
+                    "a) cumprir as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, determinadas pelo Comandante de Operações Bombeiros Militar no que concerne à coordenação, controle e supervisão das atividades desenvolvidas pelas Unidades Operacionais sob sua responsabilidade (Art. 49 VIII a)",
+                    "b) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 VIII b)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "3º Comando Regional de Bombeiros Militar",
+              "abbreviation": "3º CRBM",
+              "subordinadoA": "Comando de Operações de Bombeiros Militar",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar, subordinados ao COBM, têm por finalidade planejar, coordenar, controlar, executar e avaliar as atividades operacionais de bombeiros militares de proteção e defesa civil nas regiões sob sua responsabilidade, bem como supervisionar as atividades realizadas pelas unidades operacionais respectivas, no que concerne à eficiência nas missões de bombeiro militar (Art. 33)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante Regional de Bombeiros Militar",
+                  "requisito": "Cargo privativo do posto de Coronel, símbolo DAS-2B (Art. 55 III; Anexo III)",
+                  "subordinadoA": "Comando de Operações de Bombeiros Militar",
+                  "atribuicoes": [
+                    "a) cumprir as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, determinadas pelo Comandante de Operações Bombeiros Militar no que concerne à coordenação, controle e supervisão das atividades desenvolvidas pelas Unidades Operacionais sob sua responsabilidade (Art. 49 VIII a)",
+                    "b) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 VIII b)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "4º Comando Regional de Bombeiros Militar",
+              "abbreviation": "4º CRBM",
+              "subordinadoA": "Comando de Operações de Bombeiros Militar",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar, subordinados ao COBM, têm por finalidade planejar, coordenar, controlar, executar e avaliar as atividades operacionais de bombeiros militares de proteção e defesa civil nas regiões sob sua responsabilidade, bem como supervisionar as atividades realizadas pelas unidades operacionais respectivas, no que concerne à eficiência nas missões de bombeiro militar (Art. 33)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante Regional de Bombeiros Militar",
+                  "requisito": "Cargo privativo do posto de Coronel, símbolo DAS-2B (Art. 55 III; Anexo III)",
+                  "subordinadoA": "Comando de Operações de Bombeiros Militar",
+                  "atribuicoes": [
+                    "a) cumprir as atividades de prevenção e combate a incêndios, busca, salvamento e defesa civil, determinadas pelo Comandante de Operações Bombeiros Militar no que concerne à coordenação, controle e supervisão das atividades desenvolvidas pelas Unidades Operacionais sob sua responsabilidade (Art. 49 VIII a)",
+                    "b) instaurar e decidir sindicâncias, processos disciplinares sumários e processos administrativos disciplinares, decidindo conforme lei específica (Art. 49 VIII b)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pa",
@@ -3534,7 +5164,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pi",
@@ -3659,7 +5291,123 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Regional de Bombeiros Militar do Meio-Norte",
+              "abbreviation": "CRBM-I",
+              "subordinadoA": "Comando Operacional de Bombeiros",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante",
+                "Subcomandante",
+                "Seção Administrativa",
+                "Seção de Planejamento e Avaliação Operacional",
+                "Seção de Comunicações e Logística",
+                "Seção de Estatística",
+                "Grupamentos de Bombeiros Militar",
+                "Grupamento de Bombeiros Militar Marítimo"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CRBM-I",
+                  "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+                  "subordinadoA": "Comandante Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião do Meio-Norte (Art. 36, 7.772)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Regional de Bombeiros Militar do Litoral",
+              "abbreviation": "CRBM-II",
+              "subordinadoA": "Comando Operacional de Bombeiros",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante",
+                "Subcomandante",
+                "Seção Administrativa",
+                "Seção de Planejamento e Avaliação Operacional",
+                "Seção de Comunicações e Logística",
+                "Seção de Estatística",
+                "Grupamentos de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CRBM-II",
+                  "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+                  "subordinadoA": "Comandante Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião do Litoral (Art. 36, 7.772)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Regional de Bombeiros Militar do Semiárido",
+              "abbreviation": "CRBM-III",
+              "subordinadoA": "Comando Operacional de Bombeiros",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante",
+                "Subcomandante",
+                "Seção Administrativa",
+                "Seção de Planejamento e Avaliação Operacional",
+                "Seção de Comunicações e Logística",
+                "Seção de Estatística",
+                "Grupamentos de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CRBM-III",
+                  "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+                  "subordinadoA": "Comandante Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião do Semiárido (Art. 36, 7.772)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Regional de Bombeiros Militar do Cerrados",
+              "abbreviation": "CRBM-IV",
+              "subordinadoA": "Comando Operacional de Bombeiros",
+              "atribuicoes": [
+                "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e a execução das atividades de bombeiro no âmbito de suas respectivas responsabilidades e circunscrições. (Art. 36, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante",
+                "Subcomandante",
+                "Seção Administrativa",
+                "Seção de Planejamento e Avaliação Operacional",
+                "Seção de Comunicações e Logística",
+                "Seção de Estatística",
+                "Grupamentos de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CRBM-IV",
+                  "requisito": "Oficial do penúltimo posto do Quadro de Oficiais Bombeiros Militar Combatentes — Tenente-Coronel (Art. 36 §2°, 7.772)",
+                  "subordinadoA": "Comandante Operacional de Bombeiros",
+                  "atribuicoes": [
+                    "Planejamento operacional, supervisão, coordenação e execução das atividades de bombeiro na macrorregião dos Cerrados (Art. 36, 7.772)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pr",
@@ -3701,8 +5449,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Comando Regional Bombeiro Militar",
+              "abbreviation": "CRBM",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "Os órgãos de execução são operacional e administrativamente subordinados aos Comandos Regionais de Bombeiro Militar, que são responsáveis, perante o Subcomandante-Geral, pelo cumprimento das missões bombeiro-militar em suas respectivas circunscrições territoriais. (Art. 34)",
+                "§ 1º Os Comandos Regionais de Bombeiro Militar são escalões intermediários de comando, cuja organização pormenorizada constará nos quadros de organização do Corpo de Bombeiros Militar do Paraná - CBMPR. (Art. 34, § 1º)",
+                "§ 2º Aos Comandos Regionais de Bombeiros Militar incumbe desenvolver ações operacionais estratégicas, propor a distribuição do efetivo, auxílio e fiscalização das unidades subordinadas, gestão logística, além de outras atribuições definidas em lei, em determinada região. (Art. 34, § 2º)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Regional Bombeiro Militar",
+              "abbreviation": "CRBM",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "Os órgãos de execução são operacional e administrativamente subordinados aos Comandos Regionais de Bombeiro Militar, que são responsáveis, perante o Subcomandante-Geral, pelo cumprimento das missões bombeiro-militar em suas respectivas circunscrições territoriais. (Art. 34)",
+                "§ 1º Os Comandos Regionais de Bombeiro Militar são escalões intermediários de comando, cuja organização pormenorizada constará nos quadros de organização do Corpo de Bombeiros Militar do Paraná - CBMPR. (Art. 34, § 1º)",
+                "§ 2º Aos Comandos Regionais de Bombeiros Militar incumbe desenvolver ações operacionais estratégicas, propor a distribuição do efetivo, auxílio e fiscalização das unidades subordinadas, gestão logística, além de outras atribuições definidas em lei, em determinada região. (Art. 34, § 2º)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "rs",
@@ -3742,7 +5517,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "se",
@@ -3934,7 +5711,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -4014,7 +5793,123 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Bombeiro Militar",
+              "abbreviation": "BBM",
+              "subordinadoA": "Comando Regional Bombeiro Militar",
+              "atribuicoes": [
+                "Batalhão de Bombeiro Militar - BBM: unidade operacional que, utilizando dos recursos humanos e materiais postos à sua disposição, será incumbida da missão de: a) coordenar e executar as atividades de defesa civil; b) exercer o poder de polícia administrativa referente à prevenção a incêndios e desastres; c) combater incêndios e desastres; d) prevenir acidentes na orla marítima e fluvial; e) realizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar; f) outras atribuições definidas em lei. (Art. 38, I)",
+                "Os Batalhões de Bombeiro Militar - BBM são constituídos de: I - um Comandante; II - um Subcomandante; III - um Estado-Maior; IV - elementos de Comando (Grupo de Comando e Serviços) e de frações subordinadas (Cia. BM, Pel. BM e Gp. BM) em número variável, de acordo com as necessidades indicadas pela missão. (Art. 39)"
+              ],
+              "desdobramentos": [
+                "Companhias de Bombeiro Militar - Cia. BM",
+                "Pelotões de Bombeiro Militar - Pel. BM",
+                "Grupos de Bombeiro Militar - Gp. BM"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "am",
+          "name": "Amazonas",
+          "abbr": "AM",
+          "cbm": "CBMAM",
+          "region": "Norte",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Batalhão de Bombeiros Militar",
+              "abbreviation": "BBM",
+              "subordinadoA": "Comando de Bombeiros da Capital (CBC) / Comando de Bombeiros do Interior (CBI)",
+              "atribuicoes": [
+                "O Batalhão de Incêndio (BI), unidade operacional, órgão de execução, subordinado ao Comando de Bombeiros da Capital (CBC) ou Comando de Bombeiros do Interior (CBI), destina-se à coordenação, ao controle, à fiscalização e à execução de atividade operacional e administrativa em sua área de atuação (Art. 48).",
+                "O Batalhão de Bombeiro Especial (BBE), unidade operacional e órgão de execução, subordinado ao Comando de Bombeiros da Capital, destina-se à coordenação, ao controle, à fiscalização e à execução de atividades administrativas e operacionais de salvamento, busca, resgate e emergências médicas (Art. 50).",
+                "O Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA), unidade operacional, órgão de execução, subordinado ao Comando Operacional do Interior, destina-se à prevenção e combate a incêndio florestal e queimadas e socorro ao meio ambiente, em conformidade com a lei (Art. 52)."
+              ],
+              "desdobramentos": [
+                "Comando",
+                "Seção Administrativa (SA)",
+                "Seção Operacional (SO)",
+                "Companhias de Incêndios (CI)",
+                "Pelotões de Incêndios (PEL/INC)",
+                "Companhias de Bombeiro Especial (CBE)",
+                "Pelotões de Bombeiros Especiais (PEL/BE)",
+                "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)",
+                "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/IF/MA)"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Bombeiros Militar",
+              "abbreviation": "BBM",
+              "subordinadoA": "Comando de Bombeiros da Capital (CBC) / Comando de Bombeiros do Interior (CBI)",
+              "atribuicoes": [
+                "O Batalhão de Incêndio (BI), unidade operacional, órgão de execução, subordinado ao Comando de Bombeiros da Capital (CBC) ou Comando de Bombeiros do Interior (CBI), destina-se à coordenação, ao controle, à fiscalização e à execução de atividade operacional e administrativa em sua área de atuação (Art. 48).",
+                "O Batalhão de Bombeiro Especial (BBE), unidade operacional e órgão de execução, subordinado ao Comando de Bombeiros da Capital, destina-se à coordenação, ao controle, à fiscalização e à execução de atividades administrativas e operacionais de salvamento, busca, resgate e emergências médicas (Art. 50).",
+                "O Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA), unidade operacional, órgão de execução, subordinado ao Comando Operacional do Interior, destina-se à prevenção e combate a incêndio florestal e queimadas e socorro ao meio ambiente, em conformidade com a lei (Art. 52)."
+              ],
+              "desdobramentos": [
+                "Comando",
+                "Seção Administrativa (SA)",
+                "Seção Operacional (SO)",
+                "Companhias de Incêndios (CI)",
+                "Pelotões de Incêndios (PEL/INC)",
+                "Companhias de Bombeiro Especial (CBE)",
+                "Pelotões de Bombeiros Especiais (PEL/BE)",
+                "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)",
+                "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/IF/MA)"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "es",
+          "name": "Espírito Santo",
+          "abbr": "ES",
+          "cbm": "CBMES",
+          "region": "Sudeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Batalhão de Bombeiros Militares",
+              "abbreviation": "BBM",
+              "subordinadoA": "Comando do Corpo de Bombeiros",
+              "atribuicoes": [
+                "O Batalhão de Bombeiros Militares, órgão subordinado diretamente ao Comando do Corpo de Bombeiros, tem como competência: a prevenção e o combate a incêndios, busca e salvamento, realizar socorros de urgências, controlar o tráfego de embarcações próximo às praias, rios e lagos e ações de defesa civil. Sua organização pormenorizada constará dos quadros de organização (QO) da Corporação."
+              ],
+              "desdobramentos": [
+                "Subunidades"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Bombeiros Militares",
+              "abbreviation": "BBM",
+              "subordinadoA": "Comando do Corpo de Bombeiros",
+              "atribuicoes": [
+                "O Batalhão de Bombeiros Militares, órgão subordinado diretamente ao Comando do Corpo de Bombeiros, tem como competência: a prevenção e o combate a incêndios, busca e salvamento, realizar socorros de urgências, controlar o tráfego de embarcações próximo às praias, rios e lagos e ações de defesa civil. Sua organização pormenorizada constará dos quadros de organização (QO) da Corporação."
+              ],
+              "desdobramentos": [
+                "Subunidades"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "ma",
@@ -4068,7 +5963,52 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Bombeiros Militar",
+              "abbreviation": "BBM",
+              "subordinadoA": "Comando Operacional do CBM",
+              "atribuicoes": [
+                "Art. 28, § 4º — Ao Batalhão de Bombeiros Militar e ao Batalhão de Bombeiros Militar Especializado compete o planejamento estratégico, coordenação e o emprego de unidade e subunidade operacionais, com a finalidade de executar as atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e proteção e defesa civil, engenharia de segurança contra incêndio e pânico, além de outras conexas."
+              ],
+              "desdobramentos": [
+                "1º BBM (São Luís — região Centro)",
+                "2º BBM (São Luís — CSU/COHAB)",
+                "3º BBM (Imperatriz)",
+                "4º BBM (Balsas)",
+                "9º BBM (Estreito)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do Batalhão",
+                  "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+                  "subordinadoA": "Comando Operacional do CBM",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Batalhão de Bombeiros de Emergências Médicas",
+              "abbreviation": "BBEM",
+              "subordinadoA": "COECB — Comando Operacional Especializado",
+              "atribuicoes": [
+                "Art. 28, § 6º — Ao Batalhão de Bombeiros de Emergências Médicas compete as missões de socorros de urgências e emergências, voltadas para o atendimento pré-hospitalar e as demais que lhes sejam conexas."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante do BBEM",
+                  "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+                  "subordinadoA": "COECB",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mg",
@@ -4106,7 +6046,36 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Emergências Ambientais e Resposta a Desastres",
+              "abbreviation": "BEMAD",
+              "subordinadoA": "Comando Especializado de Bombeiros",
+              "atribuicoes": [
+                "Atuação estratégica e complementar às atribuições legais e operacionais da Corporação em emergências ambientais e resposta a desastres, em nível estadual (Resolução nº 898/2020)",
+                "Possui companhias especializadas: CQBRN (Defesa Química, Biológica, Radiológica e Nuclear), CBS (Busca e Salvamento), Cia BRESC (Busca, Resgate e Salvamento com Cães) e CPA (Proteção Ambiental) (bombeiros.mg.gov.br/bemad)"
+              ],
+              "desdobramentos": [
+                "Cia CQBRN — Defesa Química, Biológica, Radiológica e Nuclear",
+                "Cia CBS — Busca e Salvamento",
+                "Cia BRESC — Busca, Resgate e Salvamento com Cães",
+                "Cia CPA — Proteção Ambiental"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do BEMAD",
+                  "requisito": "Tenente-Coronel QOBM",
+                  "subordinadoA": "Comando Especializado de Bombeiros",
+                  "atribuicoes": [
+                    "Comando do Batalhão de Emergências Ambientais e Resposta a Desastres (Resolução nº 898/2020)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mt",
@@ -4147,8 +6116,47 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Batalhão de Emergências Ambientais",
+              "abbreviation": "BEA",
+              "subordinadoA": "Diretoria Operacional",
+              "atribuicoes": [
+                "O Batalhão de Emergências Ambientais, unidade especializada, subordinada diretamente à Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividades de prevenção e combate a incêndios florestais e emergências com produtos perigosos, atuando em reforço ou apoio as demais UBM (Art. 61)"
+              ],
+              "desdobramentos": [
+                "Comando Adjunto",
+                "Seção Administrativa",
+                "Seção de Suprimento e Manutenção",
+                "Seção de Operações",
+                "Seção de Fiscalização e Perícia de Incêndio Florestal",
+                "Companhia de Atendimento a Emergência com Produtos Perigosos",
+                "Companhia de Prevenção e Combate a Incêndio Florestal"
+              ],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Emergências Ambientais",
+              "abbreviation": "BEA",
+              "subordinadoA": "Diretoria Operacional",
+              "atribuicoes": [
+                "O Batalhão de Emergências Ambientais, unidade especializada, subordinada diretamente à Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividades de prevenção e combate a incêndios florestais e emergências com produtos perigosos, atuando em reforço ou apoio as demais UBM (Art. 61)"
+              ],
+              "desdobramentos": [
+                "Comando Adjunto",
+                "Seção Administrativa",
+                "Seção de Suprimento e Manutenção",
+                "Seção de Operações",
+                "Seção de Fiscalização e Perícia de Incêndio Florestal",
+                "Companhia de Atendimento a Emergência com Produtos Perigosos",
+                "Companhia de Prevenção e Combate a Incêndio Florestal"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "rs",
@@ -4188,7 +6196,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -4266,7 +6276,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -4328,7 +6340,24 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Companhia Independente de Bombeiro Militar",
+              "abbreviation": "Cia. Ind. BM",
+              "subordinadoA": "Comando Regional Bombeiro Militar",
+              "atribuicoes": [
+                "Companhia Independente de Bombeiro Militar - Cia. Ind. BM: unidade operacional encarregada das mesmas atribuições do Batalhão de Bombeiro Militar - BBM em áreas de menores dimensões que, por suas condições peculiares, não estejam incluídas na circunscrição daquele. (Art. 38, II)",
+                "As Companhias Independentes de Bombeiro Militar - Cia. Ind. BM são constituídas de: I - um Comandante; II - um Subcomandante; III - um Estado-Maior; IV - elementos de Comando (Grupo de Comando e Serviços) e de frações subordinadas (Pel. BM e Gp. BM) em número variável. (Art. 39)"
+              ],
+              "desdobramentos": [
+                "Pelotões de Bombeiro Militar - Pel. BM",
+                "Grupos de Bombeiro Militar - Gp. BM"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         }
       ]
     },
@@ -4402,7 +6431,35 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupamentos de Bombeiro Militar",
+              "abbreviation": "GBM",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "Órgãos de execução destinados à realização das atividades-fim da instituição (Art. 6º, §4º)"
+              ],
+              "desdobramentos": [
+                "Grupamentos de Bombeiro Militar",
+                "Grupamentos Especializados"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Grupamento de Bombeiro Militar",
+                  "requisito": "Oficial do CBMAP",
+                  "subordinadoA": "Comando Geral",
+                  "atribuicoes": [
+                    "Órgãos de execução destinados à realização das atividades-fim da instituição, compreendendo os Grupamentos de Bombeiro Militar e os Grupamentos Especializados (LC nº 180/2026, Art. 6º, §4º)"
+                  ],
+                  "desdobramentos": [
+                    "Grupamentos Especializados"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "df",
@@ -4432,7 +6489,62 @@
               ],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "mt",
+          "name": "Mato Grosso",
+          "abbr": "MT",
+          "cbm": "CBMMT",
+          "region": "Centro-Oeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Grupo de Aviação de Bombeiros Militar",
+              "abbreviation": "GAvBM",
+              "subordinadoA": "Diretoria Operacional",
+              "atribuicoes": [
+                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
+              ],
+              "desdobramentos": [
+                "Comando Adjunto",
+                "Seção Administrativa",
+                "Seção de Operações",
+                "Seção de Segurança de Voo",
+                "Seção de Suprimento e Manutenção",
+                "Seção Aeromédica",
+                "Esquadrão de Combate a Incêndio Florestal",
+                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupo de Aviação de Bombeiros Militar",
+              "abbreviation": "GAvBM",
+              "subordinadoA": "Diretoria Operacional",
+              "atribuicoes": [
+                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
+              ],
+              "desdobramentos": [
+                "Comando Adjunto",
+                "Seção Administrativa",
+                "Seção de Operações",
+                "Seção de Segurança de Voo",
+                "Seção de Suprimento e Manutenção",
+                "Seção Aeromédica",
+                "Esquadrão de Combate a Incêndio Florestal",
+                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "pi",
@@ -4501,7 +6613,67 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupamento de Bombeiros Militar",
+              "abbreviation": "GBM",
+              "subordinadoA": "Comando Regional de Bombeiros Militar",
+              "atribuicoes": [
+                "Os Grupamentos de Bombeiros Militar têm a seu cargo, dentro de uma determinada área operacional, as missões de prevenção e extinção de incêndios, busca, salvamento, atendimento pré-hospitalar e auxílio nas atividades de defesa civil. (Art. 37, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante",
+                "Subcomandante",
+                "Administrativa",
+                "Seção de Planejamento Operacional",
+                "Seção de Logística",
+                "Seção de Estatística",
+                "Seção de Serviços Técnicos",
+                "Subgrupamentos de Bombeiros Militar"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do GBM",
+                  "requisito": "Oficial Superior do Quadro de Oficiais Bombeiros Militar Combatentes — excepcionalmente por Oficiais Superiores de outros quadros (Art. 37 §2°, 7.772)",
+                  "subordinadoA": "Comando Regional de Bombeiros Militar",
+                  "atribuicoes": [
+                    "Prevenção e extinção de incêndios, busca, salvamento, APH e defesa civil na área operacional (Art. 37, 7.772)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Grupamento de Bombeiros Militar Marítimo",
+              "abbreviation": "GBMar",
+              "subordinadoA": "Comando Regional de Bombeiros Militar do Litoral",
+              "atribuicoes": [
+                "O Grupamento de Bombeiros Militar Marítimo tem a seu cargo a realização de operações aquáticas com a finalidade de executar serviços de prevenção em eventos náuticos, a busca, salvamentos de pessoas e bens, combate a incêndio em embarcações e instalações portuárias, bem como a preservação ambiental limitada às orlas fluviais e lacustre inscritas nos limites geográficos dos municípios de Ilha Grande de Santa Isabel, Parnaíba, Luís Correia e Cajueiro da Praia, assim como de toda a costa marítima piauiense. (Art. 38, Lei nº 7.772/2022)"
+              ],
+              "desdobramentos": [
+                "Comandante",
+                "Subcomandante",
+                "Seção Administrativa",
+                "Seção de Planejamento Operacional e Estatística",
+                "Seção de Logística e Comunicações",
+                "Seção de Capacitação Técnico-Profissional",
+                "Subgrupamentos de Bombeiros Militar Marítimo (SGBMar)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do GBMar",
+                  "requisito": "Major do Quadro de Oficiais Bombeiros Militar Combatentes (Art. 38 §único, 7.772)",
+                  "subordinadoA": "Comando Regional de Bombeiros Militar do Litoral",
+                  "atribuicoes": [
+                    "Operações aquáticas, prevenção em eventos náuticos, busca/salvamento, combate a incêndio em embarcações e preservação ambiental na costa piauiense (Art. 38, 7.772)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pr",
@@ -4536,8 +6708,31 @@
                   "desdobramentos": []
                 }
               ]
+            },
+            {
+              "name": "Grupo de Operações de Socorro Tático",
+              "abbreviation": "GOST",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao Comandante-Geral, em apoio especializado às Unidades Operacionais, que é incumbido de: a) executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar; b) realizar ações: 1. de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos; 2. de ações de defesa civil; c) organizar forças-tarefas; d) desempenhar atividades de busca e salvamento, inclusive com a utilização de cães; e) organizar e manter o canil central e coordenar os canis setoriais. (Art. 38, III)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupo de Operações de Socorro Tático",
+              "abbreviation": "GOST",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao Comandante-Geral, em apoio especializado às Unidades Operacionais, que é incumbido de: a) executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar; b) realizar ações: 1. de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos; 2. de ações de defesa civil; c) organizar forças-tarefas; d) desempenhar atividades de busca e salvamento, inclusive com a utilização de cães; e) organizar e manter o canil central e coordenar os canis setoriais. (Art. 38, III)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "rj",
@@ -4611,7 +6806,72 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupamento de Incêndio",
+              "abbreviation": "GI",
+              "subordinadoA": "Comando de Bombeiros de Área",
+              "atribuicoes": [
+                "Art. 45, § 1º — Unidade de Extinção de Incêndio Terrestre é a que tem a seu cargo, dentro do território de sua responsabilidade, as missões de extinção de incêndios e suas decorrências."
+              ],
+              "desdobramentos": [
+                "Subgrupamentos de Incêndio (S/GI)",
+                "Subgrupamentos de Incêndio Independentes (S/GI-Ind)",
+                "Destacamentos de Bombeiros"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do Grupamento de Incêndio",
+                  "requisito": "Oficial BM",
+                  "subordinadoA": "Comando de Bombeiros de Área",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Grupamento de Busca e Salvamento",
+              "abbreviation": "GBS",
+              "subordinadoA": "Comando de Bombeiros de Área",
+              "atribuicoes": [
+                "Art. 45, § 2º — Unidades de Busca e Salvamento é a que tem a seu cargo, dentro da área do Estado do Rio de Janeiro, as missões de busca e salvamento, tanto terrestre, como aquática."
+              ],
+              "desdobramentos": [
+                "Subgrupamentos de Busca e Salvamento (S/GBS)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do Grupamento de Busca e Salvamento",
+                  "requisito": "Oficial BM",
+                  "subordinadoA": "Comando de Bombeiros de Área",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Grupamento Marítimo",
+              "abbreviation": "Gmar",
+              "subordinadoA": "Comando de Bombeiros de Área",
+              "atribuicoes": [
+                "Art. 45, § 3º — Unidade de Extinção de Incêndio e Salvamento Marítimo é a que tem a seu cargo as missões de extinção de incêndios, buscas e salvamento em embarcações, ilhas e orla marítima do Estado do Rio de Janeiro."
+              ],
+              "desdobramentos": [
+                "Subgrupamentos Marítimos (S/Gmar)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do Grupamento Marítimo",
+                  "requisito": "Oficial BM",
+                  "subordinadoA": "Comando de Bombeiros de Área",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rn",
@@ -4721,7 +6981,108 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "1º Grupamento de Bombeiros Militar",
+              "abbreviation": "1º GBM",
+              "subordinadoA": "Comando Operacional Bombeiro Militar",
+              "atribuicoes": [
+                "O Primeiro Grupamento de Bombeiros Militar (1º GBM) é a unidade operacional do Corpo de Bombeiros Militar, responsável pela operacionalização das atividades de prevenção e combate a incêndio, busca e resgate de pessoas e bens, compreendendo as atividades de salvamento terrestre e em altura, bem como a defesa do meio ambiente, atuando como órgão estadual encarregado da guarda militar do patrimônio ambiental do Estado, na capital e região metropolitana do Estado (Art. 32 §9º)."
+              ],
+              "desdobramentos": [
+                "Divisão Administrativa",
+                "Divisão de Operações",
+                "1º Subgrupamento de Bombeiros",
+                "2º Subgrupamento de Bombeiros",
+                "3º Subgrupamento de Bombeiros"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do 1º GBM",
+                  "requisito": "Major ou Tenente-Coronel do QOCBM",
+                  "subordinadoA": "Comandante Operacional BM",
+                  "atribuicoes": [
+                    "Comandar a unidade operacional responsável pelas atividades de prevenção, combate a incêndio, busca e resgate na capital e região metropolitana do Estado (Art. 32 §9º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "2º Grupamento de Bombeiros Militar",
+              "abbreviation": "2º GBM",
+              "subordinadoA": "Comando Operacional Bombeiro Militar",
+              "atribuicoes": [
+                "O Segundo Grupamento de Bombeiros Militar (2º GBM) é a unidade operacional do Corpo de Bombeiros Militar, responsável pela operacionalização das atividades de prevenção e combate a incêndio, de busca e resgate de pessoas e bens, compreendendo as atividades de salvamento terrestre, em altura e aquático, e atendimento pré-hospitalar de urgência, nos municípios localizados no interior do Estado do Rio Grande do Norte (Art. 32 §10º)."
+              ],
+              "desdobramentos": [
+                "Divisão Administrativa",
+                "Divisão de Operações",
+                "1º Subgrupamento de Bombeiros (Mossoró/RN)",
+                "2º Subgrupamento de Bombeiros (Caicó/RN)",
+                "3º Subgrupamento de Bombeiros (Pau dos Ferros/RN)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do 2º GBM",
+                  "requisito": "Major ou Tenente-Coronel do QOCBM",
+                  "subordinadoA": "Comandante Operacional BM",
+                  "atribuicoes": [
+                    "Comandar a unidade operacional responsável por incêndio, busca, resgate e APH nos municípios do interior do Estado do RN (Art. 32 §10º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Grupamento de Bombeiros Marítimo",
+              "abbreviation": "GBMAR",
+              "subordinadoA": "Comando Operacional Bombeiro Militar",
+              "atribuicoes": [
+                "O Grupamento de Bombeiros Marítimo (GBMAR) é a unidade operacional do Corpo de Bombeiros Militar, responsável pela operacionalização das diretrizes e procedimentos referentes aos serviços e técnicas de salvamento aquático, procedimentos de primeiros socorros e noções básicas de marinharia, visando a busca e resgate de pessoas e bens, compreendendo as atividades de salvamento aquático, a prevenção contra afogamentos e a normalização e fiscalização de atividades esportivas e recreativas em áreas de risco em seu campo de atuação (Art. 32 §11º)."
+              ],
+              "desdobramentos": [
+                "Divisão Administrativa",
+                "Divisão de Operações",
+                "1º SBMSA",
+                "2º SBMSA",
+                "3º SBMSA"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do GBMAR",
+                  "requisito": "Oficial do QOCBM",
+                  "subordinadoA": "Comandante Operacional BM",
+                  "atribuicoes": [
+                    "Comandar a unidade responsável pelo salvamento aquático, prevenção contra afogamentos e fiscalização de atividades esportivas e recreativas em áreas de risco (Art. 32 §11º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Subgrupamento Independente de Bombeiros Militar de APH",
+              "abbreviation": "SIBM-APH",
+              "subordinadoA": "Comando Operacional Bombeiro Militar",
+              "atribuicoes": [
+                "O Subgrupamento Independente de Bombeiros Militar de Atendimento Pré-hospitalar (S.I.B.M-APH) é a unidade operacional do Corpo de Bombeiros Militar do Estado responsável pelo serviço de atendimento pré-hospitalar de urgência, compreendendo as ações de manutenção do suporte básico e avançado de vida, prestadas nos acidentes em via pública e rodovias, capaz de reduzir os casos de mortalidade por afecções causadas pelo trauma, na capital e região metropolitana do Estado (Art. 32 §12º)."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante do SIBM-APH",
+                  "requisito": "Oficial do QOCBM",
+                  "subordinadoA": "Comandante Operacional BM",
+                  "atribuicoes": [
+                    "Comandar o subgrupamento responsável pelo APH de urgência na capital e região metropolitana (Art. 32 §12º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "se",
@@ -4801,8 +7162,55 @@
                   "desdobramentos": []
                 }
               ]
+            },
+            {
+              "name": "Unidades (Grupamentos)",
+              "abbreviation": "UNID",
+              "subordinadoA": "Comandos Regionais Bombeiro Militar / Diretoria Operacional",
+              "atribuicoes": [
+                "As Unidades, também denominadas de Grupamentos, realizam a execução das atividades operacionais e de apoio da Corporação e compreendem: I - Unidades operacionais; II - Unidades especializadas (Art. 36). § 1º As Unidades ou Grupamentos Operacionais de uma mesma Área Integrada de Segurança Pública - AISP, subordinam-se aos respectivos Comandos Regionais e os Grupamentos Especializados à Diretoria Operacional.",
+                "São Grupamentos Especializados do CBMSE: I - Grupamento de Busca e Salvamento - GBS; II - Grupamento de Operações Aéreas - GOA (Art. 39)."
+              ],
+              "desdobramentos": [
+                "1º GBM — Aracaju (CRM)",
+                "2º GBM — Estância (CRS)",
+                "3º GBM — Itabaiana (CRA)",
+                "4º GBM — Nossa Senhora do Socorro (CRM/CRL)",
+                "5º GBM — Lagarto (CRCS)",
+                "6º GBM — Propriá (CRBSF)",
+                "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)",
+                "8º GBM — Barra dos Coqueiros (CRM)",
+                "Grupamento de Busca e Salvamento - GBS",
+                "Grupamento de Operações Aéreas - GOA"
+              ],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Unidades (Grupamentos)",
+              "abbreviation": "UNID",
+              "subordinadoA": "Comandos Regionais Bombeiro Militar / Diretoria Operacional",
+              "atribuicoes": [
+                "As Unidades, também denominadas de Grupamentos, realizam a execução das atividades operacionais e de apoio da Corporação e compreendem: I - Unidades operacionais; II - Unidades especializadas (Art. 36). § 1º As Unidades ou Grupamentos Operacionais de uma mesma Área Integrada de Segurança Pública - AISP, subordinam-se aos respectivos Comandos Regionais e os Grupamentos Especializados à Diretoria Operacional.",
+                "São Grupamentos Especializados do CBMSE: I - Grupamento de Busca e Salvamento - GBS; II - Grupamento de Operações Aéreas - GOA (Art. 39)."
+              ],
+              "desdobramentos": [
+                "1º GBM — Aracaju (CRM)",
+                "2º GBM — Estância (CRS)",
+                "3º GBM — Itabaiana (CRA)",
+                "4º GBM — Nossa Senhora do Socorro (CRM/CRL)",
+                "5º GBM — Lagarto (CRCS)",
+                "6º GBM — Propriá (CRBSF)",
+                "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)",
+                "8º GBM — Barra dos Coqueiros (CRM)",
+                "Grupamento de Busca e Salvamento - GBS",
+                "Grupamento de Operações Aéreas - GOA"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "sp",
@@ -4889,7 +7297,85 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupamentos de Incêndio",
+              "abbreviation": "GI",
+              "subordinadoA": "Comando do Corpo de Bombeiros",
+              "atribuicoes": [
+                "Unidades diretamente subordinadas ao Comando do Corpo de Bombeiros, incumbidas da missão de extinção de incêndios, podendo integrar missões de busca e salvamento (Art. 41, I)"
+              ],
+              "desdobramentos": [
+                "Comando",
+                "Estado Maior (Art. 42, §4º, acrescido pela Lei nº 663/1975)",
+                "Seção de Comando e Serviços",
+                "Seção de Incêndio ou de Busca e Salvamento",
+                "Sub-Grupamentos de Incêndio (S/GI)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Grupamento de Incêndio",
+                  "requisito": "",
+                  "subordinadoA": "Comando do Corpo de Bombeiros",
+                  "atribuicoes": [
+                    "Comando do Grupamento de Incêndio (Art. 42, I)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Sub-Grupamentos de Incêndio",
+              "abbreviation": "S/GI",
+              "subordinadoA": "Grupamento de Incêndio (GI)",
+              "atribuicoes": [
+                "Unidades incumbidas da missão de extinção de incêndios, subordinadas a um Grupamento de Incêndio, podendo integrar eventualmente missões de busca e salvamento (Art. 41, II)"
+              ],
+              "desdobramentos": [
+                "Comando",
+                "Seção de Comando e Serviços",
+                "Seção de Incêndio ou de Busca e Salvamento"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Sub-Grupamento de Incêndio",
+                  "requisito": "",
+                  "subordinadoA": "Grupamento de Incêndio (GI)",
+                  "atribuicoes": [
+                    "Comando do Sub-Grupamento de Incêndio (Art. 42)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Grupamentos de Busca e Salvamento",
+              "abbreviation": "GBS",
+              "subordinadoA": "Comando do Corpo de Bombeiros",
+              "atribuicoes": [
+                "Unidades diretamente subordinadas ao Comando do Corpo de Bombeiros, incumbidas da missão de busca e salvamento, de modo especial em razão da extensão da missão (Art. 41, III)"
+              ],
+              "desdobramentos": [
+                "Comando",
+                "Seção de Comando e Serviços",
+                "Seção de Busca e Salvamento",
+                "Sub-Seções de Busca e Salvamento (Art. 42, §3º)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Grupamento de Busca e Salvamento",
+                  "requisito": "",
+                  "subordinadoA": "Comando do Corpo de Bombeiros",
+                  "atribuicoes": [
+                    "Comando do Grupamento de Busca e Salvamento (Art. 42)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -4986,7 +7472,9 @@
               ],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "es",
@@ -5008,7 +7496,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "mg",
@@ -5049,7 +7539,39 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Especializado de Bombeiros",
+              "abbreviation": "CEB",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Coordenar, em âmbito estadual, as atividades operacionais especializadas do CBMMG (Resolução nº 898/2020)",
+                "Unidade de direção intermediária com sede em Belo Horizonte (Resolução nº 898/2020)"
+              ],
+              "desdobramentos": [
+                "Batalhão de Operações Aéreas (BOA)",
+                "Batalhão de Emergências Ambientais e Resposta a Desastres (BEMAD)",
+                "Coordenadoria de Meio Ambiente",
+                "Coordenadoria de Operações Aéreas"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do CEB",
+                  "requisito": "Tenente-Coronel ou Coronel QOBM",
+                  "subordinadoA": "Comando-Geral",
+                  "atribuicoes": [
+                    "Coordenação estadual das atividades operacionais especializadas do CBMMG (Resolução nº 898/2020)"
+                  ],
+                  "desdobramentos": [
+                    "BOA",
+                    "BEMAD"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pe",
@@ -5133,7 +7655,82 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria Integrada Especializada",
+              "abbreviation": "DIEsp",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A DIEsp incumbe-se na área territorial do Estado de Pernambuco, do planejamento e supervisão das ordens, doutrina e emprego das atividades técnicas, notadamente as vistorias, análises de projetos, cadastramento e credenciamento de empresas, e a execução das normas que disciplinam a segurança das pessoas e de seus bens contra incêndio e pânico, na forma prevista na legislação específica (Art. 25)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "Comando Operacional Especializado (COEsp)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Diretor Integrado Especializado",
+                  "requisito": "Oficial do CBMPE (Art. 94)",
+                  "subordinadoA": "Comandante Geral",
+                  "atribuicoes": [
+                    "Responsável pelo planejamento e supervisão das atividades técnicas no Estado (Art. 25)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Operacional Especializado",
+              "abbreviation": "COEsp",
+              "subordinadoA": "Diretoria Integrada Especializada",
+              "atribuicoes": [
+                "O COEsp incumbe-se da direção executiva das atividades técnicas na área territorial do Estado (Art. 35)",
+                "I - prestar assessoramento ao Comandante Geral em assuntos de sua competência;",
+                "II - coordenar e gerenciar tecnicamente os programas e projetos executivos sob sua responsabilidade;",
+                "III - contribuir para a manutenção da unidade de ação da Corporação, em conjunto com os demais órgãos integrantes de sua estrutura;",
+                "IV - sugerir a adoção ou implantação de normas, medidas e procedimentos que visem o aperfeiçoamento da estrutura e do desempenho das atividades;",
+                "V - coordenar a atuação dos órgãos e unidades subordinados, centralizando a demanda de serviços a eles destinada;",
+                "VI - praticar os atos administrativos de rotina na sua órbita de competência;",
+                "VII - preparar e discutir a proposta orçamentária da Diretoria ou Comando;",
+                "VIII - controlar e avaliar o desempenho dos recursos humanos lotados nos órgãos sob sua supervisão, sugerindo medidas relacionadas à execução de programas de treinamento e desenvolvimento de pessoal;",
+                "IX - encaminhar, anualmente, ao Subcomandante Geral da Corporação, relatório das atividades técnicas, administrativas e operacionais, conforme o caso, ou quando da transmissão de função;",
+                "X - emitir pareceres em questões técnicas na sua esfera de atribuições;",
+                "XI - desempenhar outras atribuições e tarefas compatíveis com a função e as que forem determinadas pelo Comando Geral da Corporação; e",
+                "XII - fazer publicar no Boletim Interno (BI) da unidade todas as ordens, as ordens das autoridades superiores e fatos que sejam do interesse da unidade, em conformidade a legislação vigente. (Art. 95 I–XII)"
+              ],
+              "desdobramentos": [
+                "CAT/RMR",
+                "CAT/Zona da Mata (CAT/ZM)",
+                "CAT/Agreste",
+                "CAT/Sertão I",
+                "CAT/Sertão II"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante Operacional Especializado",
+                  "requisito": "Oficial do CBMPE (Art. 94)",
+                  "subordinadoA": "DIEsp",
+                  "atribuicoes": [
+                    "Direção executiva das atividades técnicas no Estado (Art. 35)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -5199,7 +7796,9 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ce",
@@ -5231,7 +7830,30 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Núcleo de Busca e Salvamento",
+              "abbreviation": "NBS",
+              "subordinadoA": "Coordenadoria Operacional",
+              "atribuicoes": [
+                "O Núcleo de Busca e Salvamento é a unidade operacional responsável pelo serviço de busca, salvamento e proteção (Art. 22)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Núcleo de Busca e Salvamento",
+                  "requisito": "Oficial do QOBM",
+                  "subordinadoA": "Coordenadoria Operacional",
+                  "atribuicoes": [
+                    "Serviço de busca, salvamento e proteção (Art. 22)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ma",
@@ -5261,7 +7883,28 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Busca e Salvamento",
+              "abbreviation": "BBS",
+              "subordinadoA": "COECB — Comando Operacional Especializado",
+              "atribuicoes": [
+                "Art. 28, § 7º — Ao Batalhão de Bombeiros de Busca e Salvamento compete as missões de resgate, busca, salvamento terrestre e em altura e as demais que lhes sejam conexas."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante do BBS",
+                  "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+                  "subordinadoA": "COECB",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "rj",
@@ -5293,7 +7936,30 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupamento de Busca e Salvamento",
+              "abbreviation": "GBS",
+              "subordinadoA": "Comando de Bombeiros de Área",
+              "atribuicoes": [
+                "Art. 45, § 2º — Unidades de Busca e Salvamento é a que tem a seu cargo, dentro da área do Estado do Rio de Janeiro, as missões de busca e salvamento, tanto terrestre, como aquática."
+              ],
+              "desdobramentos": [
+                "Subgrupamentos de Busca e Salvamento (S/GBS)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do Grupamento de Busca e Salvamento",
+                  "requisito": "Oficial BM",
+                  "subordinadoA": "Comando de Bombeiros de Área",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "se",
@@ -5325,7 +7991,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         },
         {
           "id": "sp",
@@ -5362,7 +8030,35 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupamentos de Busca e Salvamento",
+              "abbreviation": "GBS",
+              "subordinadoA": "Comando do Corpo de Bombeiros",
+              "atribuicoes": [
+                "Unidades diretamente subordinadas ao Comando do Corpo de Bombeiros, incumbidas da missão de busca e salvamento, de modo especial em razão da extensão da missão (Art. 41, III)"
+              ],
+              "desdobramentos": [
+                "Comando",
+                "Seção de Comando e Serviços",
+                "Seção de Busca e Salvamento",
+                "Sub-Seções de Busca e Salvamento (Art. 42, §3º)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Grupamento de Busca e Salvamento",
+                  "requisito": "",
+                  "subordinadoA": "Comando do Corpo de Bombeiros",
+                  "atribuicoes": [
+                    "Comando do Grupamento de Busca e Salvamento (Art. 42)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -5434,7 +8130,28 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Bombeiros Ambiental",
+              "abbreviation": "BBA",
+              "subordinadoA": "COECB — Comando Operacional Especializado",
+              "atribuicoes": [
+                "Art. 28, § 8º — Ao Batalhão de Bombeiros Ambiental compete as missões de prevenção e combate a incêndios florestais, as relacionadas ao meio-ambiente e as demais que lhes sejam conexas."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante do BBA",
+                  "requisito": "Tenente-Coronel do QOBMC (Art. 7 § 6º)",
+                  "subordinadoA": "COECB",
+                  "atribuicoes": [],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "ms",
@@ -5466,7 +8183,30 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Proteção Ambiental",
+              "abbreviation": "DPA",
+              "subordinadoA": "Subcomando Geral",
+              "atribuicoes": [
+                "Planejamento, execução, orientação normativa, supervisão e controle das atividades de proteção ambiental"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Proteção Ambiental",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Subcomandante-Geral",
+                  "atribuicoes": [
+                    "Planejamento e execução de atividades de proteção ambiental"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "pa",
@@ -5509,7 +8249,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         }
       ]
     },
@@ -5576,7 +8318,55 @@
               "desdobramentos": [],
               "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Unidade de Operações Aéreas",
+              "abbreviation": "UOA",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "Unidade de Operações Aéreas - UOA: subordinada diretamente ao Subcomandante-Geral, é encarregada de, com a utilização de aeronaves: a) atender e apoiar ações de busca, resgate e salvamento a vítimas de acidentes e/ou traumas em áreas urbanas, rurais e rodovias; b) atender e apoiar ações de busca e resgate de vítimas em matas, florestas, montanhas, rios, lagos e mar; c) atuar em missões de apoio à defesa civil; d) apoiar órgãos federais, estaduais e municipais que necessitem do emprego de aeronaves; e) desempenhar outras missões de preservação da ordem pública. (Art. 38, IV)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "al",
+          "name": "Alagoas",
+          "abbr": "AL",
+          "cbm": "CBMAL",
+          "region": "Nordeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Órgão Especial (Seção Aérea e Bombeiros do Gabinete Militar)",
+              "abbreviation": "OESP",
+              "subordinadoA": "Gabinete Militar do Governador",
+              "atribuicoes": [
+                "O Órgão Especial a que se refere este Capítulo compreende a Seção Aérea e Bombeiros do Gabinete Militar competindo-lhe o assessoramento, planejamento, coordenação, fiscalização, manutenção e controle das operações aéreas nas missões Bombeiro Militar, além do transporte aéreo do Governador e das autoridades por ele designadas."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Órgão Especial (Seção Aérea e Bombeiros do Gabinete Militar)",
+              "abbreviation": "OESP",
+              "subordinadoA": "Gabinete Militar do Governador",
+              "atribuicoes": [
+                "O Órgão Especial a que se refere este Capítulo compreende a Seção Aérea e Bombeiros do Gabinete Militar competindo-lhe o assessoramento, planejamento, coordenação, fiscalização, manutenção e controle das operações aéreas nas missões Bombeiro Militar, além do transporte aéreo do Governador e das autoridades por ele designadas."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "ba",
@@ -5608,7 +8398,30 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Gestão do Vetor Aéreo",
+              "abbreviation": "CGVA",
+              "subordinadoA": "Comando de Operações de Bombeiros Militar",
+              "atribuicoes": [
+                "O Centro de Gestão do Vetor Aéreo tem por finalidade a gestão e execução do apoio do vetor aéreo às atividades de bombeiros militares e defesa civil (Art. 17)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Centro de Gestão do Vetor Aéreo",
+                  "requisito": "Cargo em comissão DAS-2C (Art. 55 XII)",
+                  "subordinadoA": "Comandante de Operações de Bombeiros Militar",
+                  "atribuicoes": [
+                    "ao Chefe do Centro de Gestão do Vetor Aéreo cabe programar, orientar, supervisionar, controlar e avaliar os trabalhos a cargo do respectivo Centro (Art. 49 XXV)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
         },
         {
           "id": "go",
@@ -5645,8 +8458,33 @@
                   "desdobramentos": []
                 }
               ]
+            },
+            {
+              "name": "Centro de Operações Aéreas",
+              "abbreviation": "COA",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "O Centro de Operações Aéreas é responsável pela execução de operações aéreas relacionadas à missão constitucional da Corporação (Art. 34, § 2º).",
+                "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+              ],
+              "desdobramentos": [],
+              "cargos": []
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Centro de Operações Aéreas",
+              "abbreviation": "COA",
+              "subordinadoA": "Subcomandante-Geral",
+              "atribuicoes": [
+                "O Centro de Operações Aéreas é responsável pela execução de operações aéreas relacionadas à missão constitucional da Corporação (Art. 34, § 2º).",
+                "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "mg",
@@ -5684,7 +8522,89 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [
+            {
+              "name": "Batalhão de Operações Aéreas",
+              "abbreviation": "BOA",
+              "subordinadoA": "Comando Especializado de Bombeiros",
+              "atribuicoes": [
+                "Atuação estratégica e complementar às atribuições legais e operacionais da Corporação em operações aéreas de bombeiros (Resolução nº 898/2020)",
+                "Possui quatro companhias especializadas em operações aéreas, sediadas em Belo Horizonte, Varginha, Montes Claros e Uberaba (bombeiros.mg.gov.br/boa)"
+              ],
+              "desdobramentos": [
+                "Cia Esp Op Aéreas — Belo Horizonte",
+                "Cia Esp Op Aéreas — Varginha",
+                "Cia Esp Op Aéreas — Montes Claros",
+                "Cia Esp Op Aéreas — Uberaba"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Comandante do BOA",
+                  "requisito": "Tenente-Coronel QOBM",
+                  "subordinadoA": "Comando Especializado de Bombeiros",
+                  "atribuicoes": [
+                    "Comando do Batalhão de Operações Aéreas (Resolução nº 898/2020)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "mt",
+          "name": "Mato Grosso",
+          "abbr": "MT",
+          "cbm": "CBMMT",
+          "region": "Centro-Oeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Grupo de Aviação de Bombeiros Militar",
+              "abbreviation": "GAvBM",
+              "subordinadoA": "Diretoria Operacional",
+              "atribuicoes": [
+                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
+              ],
+              "desdobramentos": [
+                "Comando Adjunto",
+                "Seção Administrativa",
+                "Seção de Operações",
+                "Seção de Segurança de Voo",
+                "Seção de Suprimento e Manutenção",
+                "Seção Aeromédica",
+                "Esquadrão de Combate a Incêndio Florestal",
+                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Grupo de Aviação de Bombeiros Militar",
+              "abbreviation": "GAvBM",
+              "subordinadoA": "Diretoria Operacional",
+              "atribuicoes": [
+                "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
+              ],
+              "desdobramentos": [
+                "Comando Adjunto",
+                "Seção Administrativa",
+                "Seção de Operações",
+                "Seção de Segurança de Voo",
+                "Seção de Suprimento e Manutenção",
+                "Seção Aeromédica",
+                "Esquadrão de Combate a Incêndio Florestal",
+                "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
         },
         {
           "id": "se",
@@ -5716,7 +8636,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
         }
       ]
     }

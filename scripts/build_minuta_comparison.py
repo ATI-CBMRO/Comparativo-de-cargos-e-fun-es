@@ -193,6 +193,34 @@ def auto_states_for(organ_key, curated_ids, meta):
     return out
 
 
+def lob_organs(organs):
+    """Subconjunto LOB do organs_detail de um estado: se houver algum órgão com
+    source=='lob' (estados com legislação mista, já tagueados), retorna só esses;
+    senão retorna todos (estados de doc único de LOB, cuja curadoria já é LOB)."""
+    lobbed = {oid: o for oid, o in organs.items() if o.get("source") == "lob"}
+    return lobbed if lobbed else organs
+
+
+def attach_lob_organs(organ_key, state_records):
+    """Para cada estado já presente no comparativo, anexa:
+      - lobOrgans: órgãos da LOB casados (organs_detail filtrado a LOB + auto-match);
+      - lobProvenance: 'curado' se algum órgão casado tem source=='lob', senão 'automatico'.
+    Não altera a coluna compilada (rec['organs'])."""
+    for rec in state_records:
+        sid = rec["id"]
+        if sid == REF_ID:
+            continue
+        organs = load_organs(sid)
+        lobbed = lob_organs(organs)
+        ids = auto_match_organ_ids(organ_key, lobbed)
+        matched = [extract_organ(lobbed, oid) for oid in ids]
+        rec["lobOrgans"] = [m for m in matched if m]
+        rec["lobProvenance"] = (
+            "curado" if any(lobbed.get(oid, {}).get("source") == "lob" for oid in ids)
+            else "automatico"
+        )
+
+
 def sort_states(records):
     """Curado primeiro, depois automático; cada grupo alfabético por sigla."""
     return sorted(records, key=lambda r: (r["provenance"] != "curado", r["abbr"]))
@@ -212,6 +240,7 @@ def build():
         curated = curated_states_for(organ_key, dpo_cot, meta)
         auto = auto_states_for(organ_key, set(curated.keys()), meta)
         states = sort_states(list(curated.values()) + list(auto.values()))
+        attach_lob_organs(organ_key, states)
         ref_abbr = ((reference or {}).get("abbreviation")
                     or (GUARNICAO_CHAPTER.get("abbr") if organ_key == "guarnicao" else "")
                     or organ_key.upper())
