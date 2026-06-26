@@ -1003,6 +1003,150 @@ DATA = {
       "artigosDeOrigem": ["Seção Centro Especializado de Resposta a Desastres"],
       "atribuicoes": ["Resposta especializada a desastres e emergências"],
       "desdobramentos": [], "cargos": []
+    },
+
+    "cg-es-lob": {
+      "name": "Comandante-Geral", "abbreviation": "CG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Governador do Estado / Secretaria de Estado de Segurança Pública e Defesa Social", "legalRef": "Art. 3º, 4º, 10",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 3º (Subordinação)", "Art. 4º (Competência e responsabilidade)", "Art. 10 (Requisitos)"],
+      "atribuicoes": [
+        "A administração, o comando e o emprego da Corporação são de competência e responsabilidade do Comandante-Geral do Corpo de Bombeiros, assessorado pelos órgãos de direção. O Corpo de Bombeiros Militar subordina-se ao Governador do Estado e à Secretaria de Estado de Segurança Pública e Defesa Social."
+      ],
+      "desdobramentos": ["Estado-Maior", "Diretorias", "Ajudância-Geral", "Comissões", "Assessorias", "Coordenadoria Estadual de Proteção e Defesa Civil", "Corregedoria"],
+      "cargos": []
+    },
+    "em-es-lob": {
+      "name": "Estado-Maior", "abbreviation": "EM", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante-Geral", "legalRef": "Art. 11, 12",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 11 (Estado-Maior)", "Art. 12 (Chefe do Estado-Maior)"],
+      "atribuicoes": [
+        "O Estado-Maior é órgão de direção geral, responsável perante o Comandante-Geral pelo estudo, planejamento, coordenação, fiscalização e controle de todas as atividades da Corporação. É ainda o órgão central do sistema de planejamento administrativo, programação e orçamento. Elabora as diretrizes e ordens do Comando aos órgãos de direção setorial e de execução. O Chefe do Estado-Maior acumula as funções de Sub-Comandante da Corporação e é o substituto eventual do Comandante-Geral."
+      ],
+      "desdobramentos": ["1ª Seção (BM/1) — pessoal, legislação e assuntos jurídicos", "2ª Seção (BM/2) — informações e inteligência", "3ª Seção (BM/3) — ensino", "4ª Seção (BM/4) — finança e patrimônio", "5ª Seção (BM/5) — assessoria de imprensa e marketing", "6ª Seção (BM/6) — planejamento administrativo, orçamentário e de informática"],
+      "cargos": []
+    },
+    "dat-es-lob": {
+      "name": "Diretoria de Atividades Técnicas", "abbreviation": "DAT", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 13, §2º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 13, §2º (Diretoria de Atividades Técnicas)"],
+      "atribuicoes": [
+        "A Diretoria de Atividades Técnicas (DAT), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: estudar, analisar, planejar, normatizar, exigir e fiscalizar o cumprimento das disposições legais, assim como todos os serviços de segurança contra incêndio e pânico, dirigindo também todas as atividades que envolvem as perícias de incêndio e explosão em locais de sinistro no Estado do Espírito Santo."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "dop-es-lob": {
+      "name": "Diretoria de Operações", "abbreviation": "DOp", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 13, §3º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 13, §3º (Diretoria de Operações)"],
+      "atribuicoes": [
+        "A Diretoria de Operações (DOp), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: disciplinar, coordenar e controlar todas as atividades envolvendo as missões constitucionais do CBMES especificamente no que se refere a combate a incêndios e busca e salvamento, bem como apurar dados a fim de fundamentar estatísticas para um melhor emprego e uso de técnicas e táticas adequadas nas ações referentes aos procedimentos operacionais."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "dal-es-lob": {
+      "name": "Diretoria de Apoio Logístico", "abbreviation": "DAL", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 13, §4º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 13, §4º (Diretoria de Apoio Logístico)"],
+      "atribuicoes": [
+        "A Diretoria de Apoio Logístico (DAL), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: planejar, supervisionar, coordenar, controlar, fiscalizar e executar as ações da aquisição, do armazenamento e da manutenção dos materiais, dos equipamentos, dos armamentos, das munições, das viaturas, dos bens móveis e imóveis, obras e instalações patrimoniais, convênios e contratos administrativos e de telecomunicações."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "df-es-lob": {
+      "name": "Diretoria de Finanças", "abbreviation": "DF", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 13, §5º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 13, §5º (Diretoria de Finanças)"],
+      "atribuicoes": [
+        "A Diretoria de Finanças (DF), órgão subordinado diretamente ao Comando Geral do Corpo de Bombeiros, tem como competência: planejar, supervisionar, coordenar, controlar, fiscalizar e executar a administração financeira e patrimonial da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "ajg-es-lob": {
+      "name": "Ajudância-Geral", "abbreviation": "Aj-Geral", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 14",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 14 (Ajudância-Geral)"],
+      "atribuicoes": [
+        "A Ajudância-Geral tem como competência o desenvolvimento das atividades administrativas do Comando Geral e suas principais atribuições são: secretaria do Comando Geral, incluindo correspondência, protocolo geral, arquivo geral e serviço de embarque da corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "com-es-lob": {
+      "name": "Comissões", "abbreviation": "COM", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante-Geral", "legalRef": "Art. 15",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 15 (Comissões)"],
+      "atribuicoes": [
+        "As comissões são órgãos de assessoramento direto ao Comandante-Geral, constituídas para assuntos específicos, tendo caráter permanente ou temporário. A Comissão de Promoção de Oficiais é presidida pelo Comandante-Geral da Corporação, e a Comissão de Promoções de Praças é presidida pelo Chefe do Estado-Maior, ambas de caráter permanente."
+      ],
+      "desdobramentos": ["Comissão de Promoção de Oficiais", "Comissão de Promoção de Praças"],
+      "cargos": []
+    },
+    "ases-es-lob": {
+      "name": "Assessorias", "abbreviation": "ASES", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante-Geral", "legalRef": "Art. 16",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 16 (Assessorias)"],
+      "atribuicoes": [
+        "As assessorias, constituídas eventualmente para determinados estudos que escapem às atribuições normais e específicas dos órgãos de direção, destinam-se a dar flexibilidade à estrutura do Comando da Corporação, particularmente em assuntos especializados."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "ceib-es-lob": {
+      "name": "Centro de Ensino e Instrução de Bombeiros", "abbreviation": "CEIB", "category": "Apoio", "source": "lob",
+      "subordinadoA": "3ª Seção do Estado-Maior", "legalRef": "Art. 17, §1º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 17, §1º (Centro de Ensino e Instrução de Bombeiros)"],
+      "atribuicoes": [
+        "O Centro de Ensino e Instrução de Bombeiros (CEIB) é o órgão responsável pela formação, aperfeiçoamento e especialização de bombeiros, bem como ao desenvolvimento de estudos e pesquisas. Está vinculado à 3ª Seção do Estado-Maior."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "css-es-lob": {
+      "name": "Centro de Serviço Social", "abbreviation": "CSS", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 17, §2º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 17, §2º (Centro de Serviço Social)"],
+      "atribuicoes": [
+        "O Centro de Serviço Social (CSS) é o órgão de apoio de pessoal, destinando-se à prestação de serviços assistenciais."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "csm-es-lob": {
+      "name": "Centro de Suprimento e Manutenção", "abbreviation": "CSM", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Comando-Geral", "legalRef": "Art. 17, §3º",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 17, §3º (Centro de Suprimento e Manutenção)"],
+      "atribuicoes": [
+        "O Centro de Suprimento e Manutenção (CSM) é o órgão responsável pelo suprimento logístico da Corporação, a este incumbindo as atividades de recebimento, estocagem, distribuição de materiais e manutenção de viaturas e equipamentos especializados."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "bbm-es-lob": {
+      "name": "Batalhão de Bombeiros Militares", "abbreviation": "BBM", "category": "Execução", "source": "lob",
+      "subordinadoA": "Comando do Corpo de Bombeiros", "legalRef": "Art. 18, 20",
+      "baseLegal": "Lei Complementar nº 101, de 22 de setembro de 1997 (Lei de Organização Básica, texto consolidado)",
+      "artigosDeOrigem": ["Art. 18 (Órgãos de execução)", "Art. 20 (Batalhão de Bombeiros Militares)"],
+      "atribuicoes": [
+        "O Batalhão de Bombeiros Militares, órgão subordinado diretamente ao Comando do Corpo de Bombeiros, tem como competência: a prevenção e o combate a incêndios, busca e salvamento, realizar socorros de urgências, controlar o tráfego de embarcações próximo às praias, rios e lagos e ações de defesa civil. Sua organização pormenorizada constará dos quadros de organização (QO) da Corporação."
+      ],
+      "desdobramentos": ["Subunidades"],
+      "cargos": []
     }
   }
 },
