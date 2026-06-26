@@ -104,6 +104,23 @@ CARGOS = {
     {"cargo": "Comandante Operacional de Bombeiros", "subordinadoA": "Subcomandante Geral", "requisito": "Tenente-Coronel QOBM/COMB", "desdobramentos": ["Seção de Planejamento e Avaliação Operacional", "Seção de Administração", "Centro de Operações e Comunicações"], "atribuicoes": ["Coordenação operacional e execução das atividades-fins"]},
     {"cargo": "Chefe do Centro de Operações e Comunicações", "subordinadoA": "Comandante Operacional de Bombeiros", "requisito": "Major QOBM/COMB", "desdobramentos": ["Subseção de Rádio Operador e Despacho", "Subseção de Operadores de Tele Atendimento"], "atribuicoes": []},
   ],
+  "cg-al-lob": [
+    {"cargo": "Comandante Geral", "subordinadoA": "Governador do Estado", "requisito": "Oficial da ativa, do último posto do Quadro de Combatentes, com o Curso Superior de Bombeiro Militar ou equivalente (Art. 7º)",
+     "desdobramentos": ["Gabinete do Comandante Geral", "Subcomando Geral", "Conselho de Políticas Estratégicas", "Coordenadoria Estadual de Defesa Civil", "Corregedoria Geral", "Diretorias", "Secretaria Geral", "Comissões"],
+     "atribuicoes": [
+       "Assessorar ao Governador do Estado nos assuntos relacionados com as atividades bombeiro-militar e ações de defesa civil (Art. 8º, I)",
+       "Assessorar ao Secretário de Defesa Social nos assuntos de Segurança Pública, relacionados com a competência da Corporação (II)",
+       "Dirigir as atividades técnicas, operacionais e administrativas da corporação (III)",
+       "Fazer cumprir as leis, normas e regulamentos da Corporação (IV)",
+       "Baixar portarias e ordens de serviços (V)",
+       "Aplicar penas disciplinares de sua alçada (VI)",
+       "Autorizar despesas, nos limites de sua competência (VII)",
+       "Submeter ao Governador do Estado os planos, estudos, programas, projetos e propostas para a organização, funcionamento e atuação do Corpo de Bombeiros Militar (VIII)",
+       "Exercer a supervisão superior dos órgãos de direção, de apoio e de execução, orientando e controlando o respectivo funcionamento (IX)",
+       "Desempenhar as funções de Secretário Estadual de Defesa Civil (X)",
+       "Desempenhar outras atribuições correlatas (XI)"
+     ]},
+  ],
 },
 
 # ── AMAPÁ (LC nº 180/2026) — sem detalhamento de cargos individuais na lei;
