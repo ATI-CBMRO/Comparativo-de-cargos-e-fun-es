@@ -842,6 +842,362 @@
         }
       ],
       "id": "goa-se"
+    },
+    "cg-se-lob": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Estratégica",
+      "source": "lob",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 5º a 9º",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 5º (Comando-Geral)",
+        "Art. 6º (Comandante-Geral)",
+        "Art. 7º (Atribuições)",
+        "Art. 8º (Subcomandante-Geral)",
+        "Art. 9º (Atribuições do Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Comando-Geral é órgão de Direção Estratégica do CBMSE, sendo responsável pela administração superior (comando), gestão, planejamento e condução estratégica da Corporação, compreendendo: I - Comandante-Geral; II - Subcomandante-Geral; III - Estado-Maior-Geral; IV - Gabinete; V - Corregedoria-Geral; VI - Controladoria Interna; VII - Ouvidoria-Geral; VIII - Assessorias; IX - Comissões Técnicas (Art. 5º)."
+      ],
+      "desdobramentos": [
+        "Comandante-Geral",
+        "Subcomandante-Geral",
+        "Estado-Maior-Geral",
+        "Gabinete",
+        "Corregedoria-Geral",
+        "Controladoria Interna",
+        "Ouvidoria-Geral",
+        "Assessorias",
+        "Comissões Técnicas"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel do Quadro de Oficiais Combatentes da ativa, possuidor dos Cursos de Formação de Oficiais, Aperfeiçoamento de Oficiais e Superior de Bombeiro Militar - CSBM, concomitantemente, ou equivalentes reconhecidos legalmente, observado o disposto no §4º do art. 126 da Constituição Estadual (Art. 6º)",
+          "desdobramentos": [
+            "Subcomandante-Geral",
+            "Estado-Maior-Geral",
+            "Gabinete",
+            "Corregedoria-Geral",
+            "Controladoria Interna",
+            "Ouvidoria-Geral",
+            "Assessorias",
+            "Comissões Técnicas"
+          ],
+          "atribuicoes": [
+            "Exercer a representação política e institucional do CBMSE, promovendo contatos e relações com autoridades e organizações de diferentes níveis governamentais (Art. 7º, I)",
+            "Promover a administração geral do CBMSE, em estrita observância às disposições normativas da Administração Pública Estadual (II)",
+            "Aprovar o Regimento Interno do CBMSE, submetendo-o à homologação por decreto do Governador do Estado (III)",
+            "Assessorar o Governador do Estado e o Secretário de Estado da Segurança Pública nos assuntos de competência do CBMSE (IV)",
+            "Fazer cumprir as leis, normas e regulamentos da Corporação (V)",
+            "Proferir despachos finais em processos administrativos e operacionais que envolvam o efetivo sob seu comando (VI)",
+            "Autorizar a abertura de processos licitatórios, homologando-os dentro dos limites de sua competência, e ratificar as dispensas ou declarações de inexigibilidade referentes às contratações diretas, nos termos da legislação específica (VII)",
+            "Aprovar a programação orçamentário-financeira a ser executada pelo CBMSE e pelos órgãos a ele subordinados, a proposta orçamentária anual e as alterações e ajustes que se fizerem necessários (VIII)",
+            "Expedir portarias, instruções normativas, ordens de serviço, diretrizes e planos que promovam a eficácia da gestão administrativa e operacional da instituição, em consonância com a legislação em vigor (IX)",
+            "Instaurar procedimentos de polícia judiciária militar e de polícia administrativa, bem como aplicar as sanções previstas na legislação em vigor (X)",
+            "Autorizar despesas nos limites de sua competência (XI)",
+            "Delegar atribuições de sua competência que não sejam vedadas por lei (XII)",
+            "Aprovar os planos, estudos, programas, projetos e propostas para organização funcional e de atuação do CBMSE (XIII)",
+            "Exercer a função de presidente do Alto-Comando do CBMSE (XIV)",
+            "Promover o controle e a supervisão dos órgãos subordinados (XV)",
+            "Presidir a Comissão de Promoção de Oficiais - CPO e os respectivos processos e encaminhá-los para o Governador do Estado, a quem compete o ato da promoção (XVI)",
+            "Atribuir outras atividades aos integrantes da corporação, além daquelas estabelecidas em leis ou regulamentos (XVII)",
+            "Coordenar e executar ações de defesa civil no âmbito de suas competências (XVIII)",
+            "Designar ocupantes dos órgãos integrantes da estrutura organizacional, ressalvada a competência do Governador do Estado (XIX)",
+            "Desempenhar outras atribuições que lhe forem delegadas pelo Governador do Estado ou pelo Secretário de Estado da Segurança Pública ou ainda por aquelas previstas em lei (XX)"
+          ]
+        }
+      ],
+      "id": "cg-se-lob"
+    },
+    "emg-se-lob": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Estratégica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 10",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 10 (Estado-Maior-Geral)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior-Geral é o órgão de direção estratégica, responsável perante o Comandante-Geral, pelo planejamento, orientação, coordenação, fiscalização e execução das atividades relacionadas à gestão administrativa, visando à eficácia da instituição no cumprimento de suas atribuições (Art. 10). Parágrafo Único. O Estado-Maior-Geral é composto pelos Chefe do Estado-Maior-Geral, Corregedor-Geral e titulares de diretorias do nível de direção-geral da Instituição."
+      ],
+      "desdobramentos": [
+        "Chefe do Estado-Maior-Geral",
+        "Corregedor-Geral",
+        "Titulares de diretorias de nível de direção-geral"
+      ],
+      "cargos": [],
+      "id": "emg-se-lob"
+    },
+    "gab-se-lob": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GAB",
+      "category": "Direção Estratégica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 11 a 14",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 11 (Gabinete)",
+        "Art. 12 (Chefia de Gabinete)",
+        "Art. 13 (Ajudância de Ordens)",
+        "Art. 14 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comandante-Geral, ao qual compete o assessoramento direto ao Comandante-Geral, é composto por: I - Chefia de Gabinete; II - Ajudância de Ordens; III - Ajudância-Geral (Art. 11).",
+        "À Chefia de Gabinete compete o exercício das funções de assistência e assessoramento direto ao Comandante-Geral e ao Subcomandante-Geral, inerentes ao controle, coordenação e fiscalização das atividades administrativas desenvolvidas por militares e civis no âmbito dos Gabinetes do Comandante-Geral e do Subcomandante-Geral, da Ajudância de Ordens (Art. 12).",
+        "À Ajudância de Ordens compete o assessoramento diário ao Comandante-Geral e ao Subcomandante-Geral, relacionado ao controle de agendas, bem como à recepção de autoridades, os controles no cumprimento de compromissos oficiais e fiscalização patrimonial dos materiais pertencentes aos Gabinetes do Comandante-Geral e do Subcomandante-Geral (Art. 13).",
+        "À Ajudância-Geral compete a administração do Quartel do Comando-Geral, considerado como Organização Bombeiro Militar, bem como do expediente, da execução dos trabalhos de secretaria, incluindo a correspondência, correio, redação do boletim diário, do protocolo e arquivo geral e biblioteca, do apoio em pessoal aos órgãos que compõem o Comando-Geral, dos serviços gerais, do Centro de Memória e da segurança do Quartel do Comando-Geral (Art. 14)."
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Ajudância de Ordens",
+        "Ajudância-Geral"
+      ],
+      "cargos": [],
+      "id": "gab-se-lob"
+    },
+    "ass-se-lob": {
+      "name": "Assessorias",
+      "abbreviation": "ASS",
+      "category": "Direção Estratégica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 18 (Assessorias)"
+      ],
+      "atribuicoes": [
+        "As Assessorias são órgãos de assessoramento direto do Comando-Geral em assuntos específicos da Corporação (Art. 18, caput). § 1º As Assessorias de que trata o \"caput\" deste artigo compreendem: I - Assessoria Técnica de Engenharia e Arquitetura; II - Assessoria de Inteligência; III - Assessoria Técnica Institucional; IV - Assessoria de Comunicação; V - Assessoria de Tecnologia da Informação; VI - Assessoria Parlamentar."
+      ],
+      "desdobramentos": [
+        "Assessoria Técnica de Engenharia e Arquitetura",
+        "Assessoria de Inteligência",
+        "Assessoria Técnica Institucional",
+        "Assessoria de Comunicação",
+        "Assessoria de Tecnologia da Informação",
+        "Assessoria Parlamentar"
+      ],
+      "cargos": [],
+      "id": "ass-se-lob"
+    },
+    "ct-se-lob": {
+      "name": "Comissões Técnicas",
+      "abbreviation": "CT",
+      "category": "Direção Estratégica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 19 (Comissões Técnicas)"
+      ],
+      "atribuicoes": [
+        "As Comissões Técnicas são órgãos permanentes ou temporários, instituídos por ato do Comandante-Geral, competindo-lhes a realização de estudos de caso, emissão de pareceres e elaboração de trabalhos específicos relacionados às atividades administrativas e operacionais no âmbito da instituição, inclusive em relação a assuntos como a especificação de materiais, viaturas, embarcações, instrumentos e equipamentos, desenvolvimento de software, programas e projetos institucionais (Art. 19)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ct-se-lob"
+    },
+    "altocomando-se-lob": {
+      "name": "Alto-Comando",
+      "abbreviation": "AC",
+      "category": "Direção Colegiada",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 20 (Alto-Comando)"
+      ],
+      "atribuicoes": [
+        "O Alto-Comando do CBMSE é o Órgão Colegiado Superior da instituição, de caráter consultivo, necessário ao processo decisório compartilhado da gestão estratégica do Corpo de Bombeiros Militar, a partir da provocação do Comandante-Geral (Art. 20). § 3º Ao Alto-Comando compete: I - propor políticas de segurança pública, em particular na parcela constitucional que cabe ao Corpo de Bombeiros Militar, e apresentar soluções para o aperfeiçoamento do sistema; II - apresentar propostas e mudanças sobre matérias de cunho estratégico que promovam o aperfeiçoamento da instituição; III - submeter matérias de relevância, relativas à Corporação, à superior decisão governamental; IV - apresentar propostas que alterem a estrutura organizacional da instituição e outros assuntos do interesse da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "altocomando-se-lob"
+    },
+    "cpocpp-se-lob": {
+      "name": "Comissões de Promoção de Oficiais e Praças",
+      "abbreviation": "CPO/CPP",
+      "category": "Direção Colegiada",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+      "legalRef": "Art. 21",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 21 (Comissões de Promoção de Oficiais e Praças)"
+      ],
+      "atribuicoes": [
+        "As Comissões de Promoção de Oficiais - CPO e de Praças - CPP são órgãos colegiados de processamento das promoções do CBMSE (Art. 21). Parágrafo Único. O colegiado da CPO deve ser presidido pelo Comandante-Geral e o colegiado da CPP deve ser presidido pelo Subcomandante-Geral."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cpocpp-se-lob"
+    },
+    "dg-se-lob": {
+      "name": "Órgãos de Direção-Geral",
+      "abbreviation": "DG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+      "legalRef": "Art. 22 a 27",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 22 (Órgãos de Direção-Geral)",
+        "Art. 23 (DLOG)",
+        "Art. 24 (DFIN)",
+        "Art. 25 (DGP)",
+        "Art. 26 (DEP)",
+        "Art. 27 (DPLAN)"
+      ],
+      "atribuicoes": [
+        "Os Órgãos de Direção-Geral são encarregados pelo assessoramento técnico e pela administração geral do CBMSE, incumbindo-lhes o planejamento, a coordenação, a execução, o controle e a fiscalização da organização, do suprimento de pessoal, de material e do emprego de subordinados ao Comandante-Geral e coordenados pelo Subcomandante-Geral (Art. 22). § 1º Os Órgãos de Direção-Geral compreendem as seguintes Diretorias: I - Diretoria de Logística - DLOG; II - Diretoria de Finanças - DFIN; III - Diretoria de Gestão de Pessoal - DGP; IV - Diretoria de Ensino e Pesquisa - DEP; V - Diretoria de Planejamento - DPLAN. § 2º As chefias dos Órgãos de Direção-Geral são privativas de oficiais da ativa do último posto do Quadro de Oficiais Bombeiro Militar - QOBM."
+      ],
+      "desdobramentos": [
+        "Diretoria de Logística - DLOG",
+        "Diretoria de Finanças - DFIN",
+        "Diretoria de Gestão de Pessoal - DGP",
+        "Diretoria de Ensino e Pesquisa - DEP",
+        "Diretoria de Planejamento - DPLAN"
+      ],
+      "cargos": [],
+      "id": "dg-se-lob"
+    },
+    "do-se-lob": {
+      "name": "Órgãos de Direção Operacional",
+      "abbreviation": "DO",
+      "category": "Direção Operacional",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+      "legalRef": "Art. 28 a 31",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 28 (Órgãos de Direção Operacional)",
+        "Art. 29 (DAT)",
+        "Art. 30 (DOP)",
+        "Art. 31 (Diretor-Adjunto)"
+      ],
+      "atribuicoes": [
+        "Os Órgãos de Direção Operacional se destinam à gestão, planejamento, supervisão, coordenação, controle e fiscalização das missões finalísticas da Corporação, cuja chefia é privativa de oficiais da ativa do último posto do quadro QOBM e são assim constituídas: I - Diretoria de Atividades Técnicas - DAT; II - Diretoria Operacional - DOP (Art. 28). Cada Diretoria deve ter um Diretor-Adjunto, do Posto de Tenente-Coronel, para atuar como auxiliar direto do Diretor e substituí-lo em suas ausências (Art. 31)."
+      ],
+      "desdobramentos": [
+        "Diretoria de Atividades Técnicas - DAT",
+        "Diretoria Operacional - DOP"
+      ],
+      "cargos": [],
+      "id": "do-se-lob"
+    },
+    "apoio-se-lob": {
+      "name": "Órgãos de Apoio",
+      "abbreviation": "APOIO",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Órgãos de Direção",
+      "legalRef": "Art. 32 e 33",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 32 (Órgãos de Apoio)",
+        "Art. 33 (Departamentos)"
+      ],
+      "atribuicoes": [
+        "Os Órgãos de Apoio atendem às necessidades de pessoal, saúde, ensino, pesquisa, logística, gestão orçamentária e financeira, material e serviços de toda a Corporação, atuando em cumprimento das diretrizes e ordens dos Órgãos de Direção, e compreendem os departamentos, centros, seções e núcleos (Art. 32). Aos Departamentos compete a organização, sob a forma de sistemas, das atividades de logística, patrimônio, administração financeiro-contábil, pessoal e outras, de acordo com as necessidades da instituição (Art. 33). Parágrafo Único. A função de Chefe de Departamento é privativa de oficial superior dos Quadros de Oficiais do CBMSE."
+      ],
+      "desdobramentos": [
+        "Departamentos",
+        "Centros",
+        "Seções",
+        "Núcleos"
+      ],
+      "cargos": [],
+      "id": "apoio-se-lob"
+    },
+    "exec-se-lob": {
+      "name": "Órgãos de Execução",
+      "abbreviation": "EXEC",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Órgãos de Direção",
+      "legalRef": "Art. 34",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 34 (Órgãos de Execução)"
+      ],
+      "atribuicoes": [
+        "Os Órgãos de Execução realizam as atividades operacionais e de apoio, cumprindo as missões e as destinações do CBMSE, em conformidade com a legislação, diretrizes e ordens emanadas dos Órgãos de Direção, compreendem os Comandos Regionais e as Unidades/Grupamentos (Art. 34)."
+      ],
+      "desdobramentos": [
+        "Comandos Regionais Bombeiro Militar",
+        "Unidades/Grupamentos"
+      ],
+      "cargos": [],
+      "id": "exec-se-lob"
+    },
+    "crbm-se-lob": {
+      "name": "Comandos Regionais Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 35",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 35 (Comandos Regionais)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais Bombeiro Militar - CRBM subordinam-se à DOP e são órgãos de supervisão, coordenação e planejamento operacional das unidades subordinadas (Art. 35). § 2º Os Comandos Regionais são órgãos de direção estratégica, chefiados por oficiais superiores do Quadro de Oficiais Bombeiro Militar - QOBM e são assim constituídos: I - Comando Regional Metropolitano - CRM; II - Comando Regional do Alto Sertão - CRAS; III - Comando Regional do Médio Sertão - CRMS; IV - Comando Regional do Centro Sul - CRCS; V - Comando Regional do Sul - CRS; VI - Comando Regional do Leste - CRL; VII - Comando Regional do Agreste - CRA; VIII - Comando Regional do Baixo São Francisco - CRBSF."
+      ],
+      "desdobramentos": [
+        "Comando Regional Metropolitano - CRM",
+        "Comando Regional do Alto Sertão - CRAS",
+        "Comando Regional do Médio Sertão - CRMS",
+        "Comando Regional do Centro Sul - CRCS",
+        "Comando Regional do Sul - CRS",
+        "Comando Regional do Leste - CRL",
+        "Comando Regional do Agreste - CRA",
+        "Comando Regional do Baixo São Francisco - CRBSF"
+      ],
+      "cargos": [],
+      "id": "crbm-se-lob"
+    },
+    "unid-se-lob": {
+      "name": "Unidades (Grupamentos)",
+      "abbreviation": "UNID",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandos Regionais Bombeiro Militar / Diretoria Operacional",
+      "legalRef": "Art. 36 a 39",
+      "baseLegal": "Lei nº 8.979, de 03 de fevereiro de 2022 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 36 (Unidades)",
+        "Art. 37 (Grupamentos Bombeiro Militar)",
+        "Art. 38 e 39 (Grupamentos Especializados)"
+      ],
+      "atribuicoes": [
+        "As Unidades, também denominadas de Grupamentos, realizam a execução das atividades operacionais e de apoio da Corporação e compreendem: I - Unidades operacionais; II - Unidades especializadas (Art. 36). § 1º As Unidades ou Grupamentos Operacionais de uma mesma Área Integrada de Segurança Pública - AISP, subordinam-se aos respectivos Comandos Regionais e os Grupamentos Especializados à Diretoria Operacional.",
+        "São Grupamentos Especializados do CBMSE: I - Grupamento de Busca e Salvamento - GBS; II - Grupamento de Operações Aéreas - GOA (Art. 39)."
+      ],
+      "desdobramentos": [
+        "1º GBM — Aracaju (CRM)",
+        "2º GBM — Estância (CRS)",
+        "3º GBM — Itabaiana (CRA)",
+        "4º GBM — Nossa Senhora do Socorro (CRM/CRL)",
+        "5º GBM — Lagarto (CRCS)",
+        "6º GBM — Propriá (CRBSF)",
+        "7º GBM — Nossa Senhora da Glória (CRAS/CRMS)",
+        "8º GBM — Barra dos Coqueiros (CRM)",
+        "Grupamento de Busca e Salvamento - GBS",
+        "Grupamento de Operações Aéreas - GOA"
+      ],
+      "cargos": [],
+      "id": "unid-se-lob"
     }
   }
 }

@@ -548,6 +548,736 @@
         }
       ],
       "id": "gabinete-cg-mt"
+    },
+    "cg-mt-lob": {
+      "name": "Comandante-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Arts. 11 a 13",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 11 (investidura)",
+        "Art. 12 (administração, comando e emprego)",
+        "Art. 13 (atribuições)"
+      ],
+      "atribuicoes": [
+        "O nível de direção geral é representado pelo Comandante-Geral, destinado a efetuar as ações de comando e emprego do Corpo de Bombeiros Militar, observando os princípios institucionais na definição de políticas e diretrizes de atuação em todos os níveis da corporação, visando ao cumprimento de suas missões (Art. 7º, I)",
+        "A administração, o comando e o emprego da instituição são de competência e responsabilidade do Comandante-Geral, através de diretrizes e ordens a todos os níveis corporativos (Art. 12)"
+      ],
+      "desdobramentos": [
+        "Conselho Superior de Bombeiros Militar",
+        "Conselho Superior de Ensino, Pesquisa e Extensão",
+        "Comandante-Geral Adjunto e Chefe do Estado-Maior-Geral",
+        "Corregedoria Geral",
+        "Níveis de Assessoramento Superior",
+        "Diretorias",
+        "Gabinete do Comandante-Geral",
+        "Agência Central de Inteligência",
+        "Centro de Comunicação Social Bombeiro Militar"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial militar da ativa do último posto do Quadro de Oficial Bombeiro Militar (QOBM), de livre escolha, nomeação e exoneração pelo Governador do Estado (Art. 11); status, prerrogativas e representatividade de Secretário de Estado (Art. 11, § 4º)",
+          "desdobramentos": [
+            "Conselho Superior de Bombeiros Militar",
+            "Conselho Superior de Ensino, Pesquisa e Extensão",
+            "Comandante-Geral Adjunto e Chefe do Estado-Maior-Geral",
+            "Corregedoria Geral",
+            "Níveis de Assessoramento Superior",
+            "Diretorias",
+            "Gabinete do Comandante-Geral",
+            "Agência Central de Inteligência",
+            "Centro de Comunicação Social Bombeiro Militar"
+          ],
+          "atribuicoes": [
+            "Dirigir e representar o Corpo de Bombeiros Militar (Art. 13, I)",
+            "Dirigir e coordenar as ações de proteção e defesa civil no âmbito do Estado de Mato Grosso dentro de sua área de competência no Sistema Estadual de Defesa Civil (II)",
+            "Assessorar o Governador do Estado e o Secretário de Estado de Segurança Pública em assuntos relacionados ao Corpo de Bombeiros Militar (III)",
+            "Zelar pelo cumprimento do Estatuto dos Militares do Estado de Mato Grosso (IV)",
+            "Decidir, em grau de recurso, questões administrativas e disciplinares (V)",
+            "Determinar a instauração de inquérito policial militar e demais procedimentos de persecução criminal e administrativo disciplinar (VI)",
+            "Avocar, excepcional e fundamentadamente, inquérito policial militar e outros procedimentos administrativos, disciplinares ou não, para apuração, solução ou redistribuição (VII)",
+            "Determinar, cautelarmente, o afastamento de Bombeiros Militares de suas funções em situações de grave perturbação da disciplina (VIII)",
+            "Suspender a qualquer tempo, o direito de Bombeiro Militar ter o porte e/ou a posse de arma de fogo, por conveniência disciplinar, recomendação médica ou psicológica, inclusive por determinação judicial, sempre com decisão fundamentada e publicada em boletim reservado (IX)",
+            "Baixar portarias, resoluções, instruções normativas, ordens de serviço, diretrizes e planos que promovam com eficácia a gestão administrativa e operacional da instituição, em consonância com a legislação em vigor (X)",
+            "Autorizar o Bombeiro Militar a ausentar-se do Estado, a serviço ou para participar de cursos, estágios, capacitações, especializações, conferências, congressos, treinamentos e seminários relacionados à atividade Bombeiro Militar (XI)",
+            "Supervisionar, assessorado pelo Comandante-Geral Adjunto e demais níveis da Instituição, todas as atividades operacionais e administrativas do Corpo de Bombeiros Militar (XII)",
+            "Supervisionar, coordenar, controlar, fiscalizar, sistematizar e padronizar as funções e princípios institucionais do Corpo de Bombeiros Militar (XIII)",
+            "Gerir as atividades referentes à administração de pessoal, patrimônio, orçamento, finanças e serviços gerais (XIV)",
+            "Definir a política de aquisição, controle e prioridades dos gastos com investimento e custeio da Instituição (XV)",
+            "Aprovar e zelar pelo cumprimento dos planos de aplicação dos recursos orçamentários e financeiros da Instituição (XVI)",
+            "Aprovar o Regulamento Geral da instituição, após apreciação do Conselho Superior de Bombeiros Militares (XVII)",
+            "Aprovar o plano de emprego da instituição (XVIII)",
+            "Constituir comissões, conselhos e assessorias previstas em lei e outras necessárias ao bom desempenho da instituição (XIX)",
+            "Promover, declarar, agregar, reverter, exonerar ou demitir as praças, declarar os Aspirantes a oficial e os Oficiais e Praças Temporários (XX)",
+            "Delegar atribuições de sua competência que não sejam vedadas por lei (XXI)",
+            "Exercer a função de Presidente da Comissão de Promoção de Oficiais da Corporação (XXII)",
+            "Movimentar oficiais e praças na conformidade do Regulamento de Movimentação de oficiais e praças (XXIII)",
+            "Nomear militares para as funções de comando, chefia, direção e assessoramento da Corporação (XXIV, red. LC 806/2024)",
+            "Aprovar o Regulamento de Uniformes da Corporação, após apreciação do Conselho Superior de Bombeiros Militar (XXV)",
+            "Desempenhar outras atribuições previstas em lei ou que lhes forem delegadas pelo Governador do Estado ou Secretário de Estado de Segurança Publica (XXVI)"
+          ]
+        }
+      ],
+      "id": "cg-mt-lob"
+    },
+    "csbm-mt-lob": {
+      "name": "Conselho Superior de Bombeiros Militar",
+      "abbreviation": "CSBM",
+      "category": "Decisão Colegiada",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Arts. 14 e 15",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 14 (composição e funcionamento)",
+        "Art. 15 (competência)"
+      ],
+      "atribuicoes": [
+        "O Conselho Superior de Bombeiros Militar é o colegiado superior da instituição, de caráter consultivo, que no processo decisório compartilha da gestão estratégica do Corpo de Bombeiros Militar, subsidiando as decisões do Comandante-Geral sobre assuntos de extrema relevância (Art. 14)",
+        "Apresentar propostas sobre matérias de cunho estratégico que promovam o aperfeiçoamento da instituição (Art. 15, I)",
+        "Sugerir propostas que alterem a estrutura organizacional da instituição (II)",
+        "Avaliar o emprego da instituição orientando a racionalização na aplicação de recursos e a maximização dos resultados em benefício da sociedade (III)",
+        "Examinar a Política Estadual de Segurança Pública, em particular na parcela constitucional que compete ao Corpo de Bombeiros Militar e apresentar soluções para o aperfeiçoamento do sistema (IV)",
+        "Avaliar mudanças na política de emprego tático e técnico das diversas Unidades Bombeiro Militar que integram a Corporação, inclusive a articulação e desdobramento das mesmas, visando ao cumprimento das missões constitucionais (V)",
+        "Analisar matérias de relevância, relativas à Corporação, dependentes de decisão governamental (VI)",
+        "Propor a criação de comissões técnicas e grupos de trabalho para a realização de pesquisas e estudos estratégicos e sistêmicos sobre assuntos de ordem técnica de interesse do Corpo de Bombeiros Militar (VII)",
+        "Aprovar proposta de denominação histórica de Unidades Bombeiro Militar (VIII)",
+        "Apreciar outros assuntos do interesse da Corporação colocados em pauta pelo Comandante-Geral (IX)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "csbm-mt-lob"
+    },
+    "csep-mt-lob": {
+      "name": "Conselho Superior de Ensino, Pesquisa e Extensão",
+      "abbreviation": "CSEP",
+      "category": "Decisão Colegiada",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 16 (Conselho Superior de Ensino, Pesquisa e Extensão)"
+      ],
+      "atribuicoes": [
+        "O Conselho Superior de Ensino, Pesquisa e Extensão é um colegiado deliberativo e de assessoramento, presidido pelo Diretor de Ensino, Instrução e Pesquisa, do Corpo de Bombeiros Militar do Estado de Mato Grosso e terá seu funcionamento regulamentado em regimento próprio, aprovado por Portaria do Comandante-Geral da Instituição (Art. 16)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "csep-mt-lob"
+    },
+    "cga-mt-lob": {
+      "name": "Comandante-Geral Adjunto e Chefe do Estado-Maior Geral",
+      "abbreviation": "CGA/ChEMG",
+      "category": "Direção Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Arts. 17 a 19",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (atribuições gerais e investidura)",
+        "Art. 18 (atribuições específicas)",
+        "Art. 19 (Estado-Maior Geral)"
+      ],
+      "atribuicoes": [
+        "O Comandante-Geral Adjunto e Chefe do Estado-Maior Geral, substituto eventual do Comandante-Geral, é o responsável pelo estudo, planejamento, direção, orientação, coordenação, fiscalização e controle de todas as atividades administrativas e a fiscalização das atividades operacionais da instituição, sendo encarregado pela elaboração de diretrizes e ordens do Comando às demais unidades, para cumprimento de suas atividades (Art. 17)",
+        "Chefiar o Estado-Maior Geral da Corporação (Art. 18, I)",
+        "Substituir o Comandante-Geral em suas ausências e impedimentos (II)",
+        "Exercer a função de Presidente da Comissão de Promoção de Praças (III)",
+        "Desempenhar tarefas delegadas e determinadas pelo Comandante-Geral (IV)",
+        "Acompanhar e apoiar a Ouvidoria Setorial do Corpo de Bombeiros Militar (V)",
+        "Acompanhar e apoiar as atividades administrativas e operacionais das unidades, diligenciando junto às demais Diretorias, para a execução dos serviços de competência do Corpo de Bombeiros Militar (VI)",
+        "Auxiliar o Comandante-Geral na direção, organização, orientação, coordenação, controle e avaliação das atividades da Corporação (VII)",
+        "Fiscalizar a conduta civil e militar dos oficiais e praças do Corpo de Bombeiros Militar, respeitados os princípios da disciplina, hierarquia e da ética Bombeiro Militar (VIII)",
+        "Suspender, a qualquer tempo, o direito de Bombeiro Militar ter o porte e/ou a posse de arma de fogo, por conveniência disciplinar, recomendação médica ou psicológica, inclusive por determinação judicial, sempre com decisão fundamentada publicada em boletim reservado (IX)",
+        "Promover e coordenar estudos estratégicos e sistêmicos sobre assuntos de ordem técnica pertinentes à instituição (X)",
+        "Expedir diretrizes e ordens que promovam a eficácia da gestão das atividades estratégicas e sistêmicas da instituição (XI)",
+        "Exercer outras atribuições que lhe forem delegadas pelo Comandante-Geral (XII)"
+      ],
+      "desdobramentos": [
+        "Estado-Maior Geral",
+        "Gabinete do Comandante-Geral Adjunto",
+        "Ajudância Geral",
+        "Corpo Musical do Corpo de Bombeiros Militar"
+      ],
+      "cargos": [],
+      "id": "cga-mt-lob"
+    },
+    "emg-mt-lob": {
+      "name": "Estado-Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto e Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 19",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 19 (Estado-Maior Geral)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior Geral é o nível de assessoramento, responsável perante o Comandante-Geral pelo planejamento, orientação, coordenação, fiscalização e execução das atividades relacionadas à gestão administrativa, visando à eficácia da instituição no cumprimento de suas atribuições (Art. 19, caput)",
+        "O Estado-Maior Geral será composto pelos Diretores e assessores do nível de assessoramento superior (§ 1º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "emg-mt-lob"
+    },
+    "corregedoria-geral-mt-lob": {
+      "name": "Corregedoria Geral do Corpo de Bombeiros Militar",
+      "abbreviation": "CORREG",
+      "category": "Direção Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Arts. 20 e 21",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 20 (natureza e investidura)",
+        "Art. 21 (atribuições do Corregedor-Geral)"
+      ],
+      "atribuicoes": [
+        "A Corregedoria Geral do Corpo de Bombeiros Militar é responsável pela sistematização e controle das atividades de correição funcional e setorial, de caráter disciplinar, administrativo ou de polícia judiciária militar, vinculada diretamente ao Comandante-Geral da Instituição (Art. 20)",
+        "Instaurar ou determinar às autoridades bombeiros militares a instauração de inquéritos policiais militares e demais procedimentos de persecução criminal e administrativo disciplinar, para apurar ação, omissão ou fato ilícito relacionado à conduta dos bombeiros militares (Art. 21, I)",
+        "Coordenar, controlar e fiscalizar a apuração de responsabilidade criminal, administrativa ou disciplinar (II)",
+        "Elaborar e propor ao Comandante-Geral, a aplicação de instruções normativas e orientadoras das atividades de polícia judiciária militar e disciplinar (III)",
+        "Difundir as unidades administrativas da instituição as normas, instruções e procedimentos em vigor visando à padronização dos feitos de correição (IV)",
+        "Requisitar certidões, diligências, exames, pareceres técnicos e informações indispensáveis ao bom desempenho de suas atribuições (V)",
+        "Avocar, de forma excepcional e fundamentadamente, inquérito policial militar e outros procedimentos administrativos, disciplinares ou não, para apuração ou redistribuição (VI)",
+        "Manter arquivo de todos os feitos instaurados pela corregedoria (VII)",
+        "Manter registro e controle dos procedimentos administrativos instaurados no âmbito da corporação (VIII)",
+        "Suspender, a qualquer tempo, o direito de bombeiro militar ter o porte e/ou a posse de arma de fogo, por conveniência disciplinar, recomendação médica ou psicológica, inclusive por determinação judicial, sempre com decisão fundamentada e publicada em boletim reservado (IX)",
+        "Apurar as faltas disciplinares praticadas por componentes da instituição que, por sua repercussão e relevância, ultrapassem a autonomia das Unidades ou, ainda, seja determinado pelo Comandante-Geral (X)",
+        "Apurar responsabilidades relativas a danos, perda, extravio e desvio de valores e bens patrimoniais distribuídos à instituição (XI)",
+        "Fazer o acompanhamento de procedimentos policiais em repartição policial civil e organização militar federal ou estadual, envolvendo integrantes da instituição (XII)",
+        "Elaborar estudos e levantamentos estatísticos sobre a situação disciplinar e moral da tropa (XIII)",
+        "Coordenar as requisições de Bombeiros Militares por órgãos do Poder Judiciário (XIV)",
+        "Proceder a correições em caráter ordinário e extraordinário nos procedimentos penais e disciplinares de competência do Corpo de Bombeiros Militar (XV)",
+        "Propor ou aplicar penalidade, nos limites de sua competência, observado o devido procedimento legal (XVI)"
+      ],
+      "desdobramentos": [
+        "Corregedoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Polícia Judiciária Militar",
+        "Seção de Procedimentos Administrativos Disciplinares Militares"
+      ],
+      "cargos": [],
+      "id": "corregedoria-geral-mt-lob"
+    },
+    "ouvidoria-mt-lob": {
+      "name": "Ouvidoria Setorial",
+      "abbreviation": "OUV",
+      "category": "Direção Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 22 (Ouvidoria Setorial)"
+      ],
+      "atribuicoes": [
+        "A Ouvidoria Setorial do Corpo de Bombeiros Militar, vinculada diretamente ao Comandante-Geral Adjunto, constitui o canal de comunicação da sociedade com a instituição, competindo-lhe receber informações, encaminhá-las às unidades responsáveis e acompanhar as suas respectivas apurações (Art. 22)"
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção Administrativa"
+      ],
+      "cargos": [],
+      "id": "ouvidoria-mt-lob"
+    },
+    "controladoria-mt-lob": {
+      "name": "Controladoria Interna Setorial",
+      "abbreviation": "CI",
+      "category": "Direção Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 23",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 23 (Controladoria Interna)"
+      ],
+      "atribuicoes": [
+        "A Controladoria Interna é o setor de apoio estratégico e especializado de assessoramento direto e imediato ao Comandante-Geral Adjunto nos assuntos administrativo e operacional relacionados com a performance de todos os setores, com a defesa do patrimônio público, auditoria, orientação e fiscalização, averiguação e análise das atividades de administração contábil, orçamentária, financeira, operacional, patrimonial e de gestão de pessoas, atuando como controle setorial do Sistema Integrado de Controle Interno do Estado de Mato Grosso e apoio ao controle externo no exercício de sua missão institucional (Art. 23)"
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção Administrativa",
+        "Seção de Auditoria e Controle de Gestão",
+        "Seção de Controle Operacional"
+      ],
+      "cargos": [],
+      "id": "controladoria-mt-lob"
+    },
+    "aj-mt-lob": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJ",
+      "category": "Assessoramento Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 25 (Assessoria Jurídica)"
+      ],
+      "atribuicoes": [
+        "A Assessoria Jurídica presta assessoramento direto ao Comandante-Geral e Comandante-Geral Adjunto nas questões jurídicas e de legislação compreendidas na administração geral da instituição ou outras que lhe forem designadas (Art. 25)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "aj-mt-lob"
+    },
+    "aaic-mt-lob": {
+      "name": "Assessoria de Articulação e Integração Comunitária",
+      "abbreviation": "AAIC",
+      "category": "Assessoramento Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 26 (Assessoria de Articulação e Integração Comunitária)"
+      ],
+      "atribuicoes": [
+        "A Assessoria de Articulação e Integração Comunitária presta assessoramento direto ao Comandante-Geral e Comandante-Geral Adjunto e tem por competência promover a articulação e o planejamento de ações visando à atuação integrada com as demais instituições e a comunidade, bem como, planejar, fiscalizar, acompanhar e avaliar as ações relativas aos projetos sociais no âmbito do Corpo de Bombeiros Militar (Art. 26)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "aaic-mt-lob"
+    },
+    "aaph-mt-lob": {
+      "name": "Assessoria de Atendimento Pré-Hospitalar",
+      "abbreviation": "AAPH",
+      "category": "Assessoramento Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 27",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 27 (Assessoria de Atendimento Pré-Hospitalar)"
+      ],
+      "atribuicoes": [
+        "A Assessoria de Atendimento Pré-Hospitalar presta assessoramento diretamente ao Comandante-Geral e ao Comandante-Geral Adjunto e tem por competência o estudo de questões relacionadas à gestão, doutrina, política e estratégia das atividades de APH da corporação, inclusive a promoção da integração com órgãos do sistema de saúde municipal, estadual e federal e da iniciativa privada (Art. 27)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "aaph-mt-lob"
+    },
+    "apdc-mt-lob": {
+      "name": "Assessoria de Proteção e Defesa Civil",
+      "abbreviation": "APDC",
+      "category": "Assessoramento Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 28 (Assessoria de Proteção e Defesa Civil)"
+      ],
+      "atribuicoes": [
+        "A Assessoria Especial de Proteção e Defesa Civil presta assessoramento direto ao Comandante-Geral nas questões referentes à promoção e integração à Política Nacional de Proteção e Defesa Civil e do Sistema Estadual de Proteção e Defesa Civil (Art. 28)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "apdc-mt-lob"
+    },
+    "comissoes-mt-lob": {
+      "name": "Comissões",
+      "abbreviation": "COM",
+      "category": "Assessoramento Superior",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 32",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 32 (Comissões)"
+      ],
+      "atribuicoes": [
+        "As Comissões permanentes ou temporárias, nomeadas por ato do Comandante-Geral, tem como competência a realização de estudos de caso, emissão de pareceres e elaboração de trabalhos específicos relacionados às atividades administrativas e operacionais no âmbito da instituição (Art. 32)",
+        "As Comissões para Promoção de Oficiais (CPO) e para Promoção de Praças (CPP), são de caráter permanente, presididas pelo Comandante-Geral e pelo Comandante-Geral Adjunto, respectivamente (Parágrafo único)"
+      ],
+      "desdobramentos": [
+        "Comissão de Promoção de Oficiais (CPO)",
+        "Comissão de Promoção de Praças (CPP)"
+      ],
+      "cargos": [],
+      "id": "comissoes-mt-lob"
+    },
+    "dai-mt-lob": {
+      "name": "Diretoria de Administração Institucional",
+      "abbreviation": "DAI",
+      "category": "Administração Sistêmica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 33",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 33 (Diretoria de Administração Institucional)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Administração Institucional é responsável por realizar planejamento, orientação, controle, coordenação, fiscalização e a execução das atividades relacionadas com a gestão administrativa, logística, orçamentária e financeira no âmbito da Corporação (Art. 33)",
+        "A função de Diretor de Administração Institucional é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (Parágrafo único)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Finanças",
+        "Seção Logística e Patrimônio",
+        "Seção de Tecnologia da Informação e Comunicação",
+        "Seção de Engenharia",
+        "Centro de Suprimento e Manutenção"
+      ],
+      "cargos": [],
+      "id": "dai-mt-lob"
+    },
+    "dgp-mt-lob": {
+      "name": "Diretoria de Gestão de Pessoas",
+      "abbreviation": "DGP",
+      "category": "Administração Sistêmica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 34",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 34 (Diretoria de Gestão de Pessoas)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Gestão de Pessoas é responsável pelo planejamento, coordenação, supervisão, fiscalização e execução das atividades relacionadas com as políticas de controle de pessoal, folha de pagamento, avaliação e promoção de pessoal, cadastro de pessoal, recrutamento e seleção, assistência à saúde, assistência psicossocial, segurança no trabalho, execução, coordenação, controle e orientação de publicação de atos administrativos no Boletim Geral Eletrônico e Restrito, e outras ações correlatas de interesse da instituição (Art. 34)",
+        "À Secretaria das Comissões de Promoção, subordinada à Diretoria de Gestão de Pessoas, compete o assessoramento da Comissão de Promoção de Oficiais (CPO) e da Comissão de Promoção de Praças (CPP), em relação ao controle, a avaliação e o processamento das promoções dos Bombeiros Militares da ativa, integrantes dos Quadros de Oficiais e Praças da Instituição (§ 1º)",
+        "A função de Diretor de Gestão de Pessoas é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (§ 2º)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Recrutamento e Seleção",
+        "Seção de Folha de Pagamento",
+        "Seção de Desenvolvimento e Controle de Pessoal",
+        "Seção de Avaliação de Desempenho",
+        "Seção de Pessoal Temporário",
+        "Secretaria das Comissões de Promoções",
+        "Centro de Gestão do Sistema de Proteção Social dos Bombeiros Militares"
+      ],
+      "cargos": [],
+      "id": "dgp-mt-lob"
+    },
+    "deip-mt-lob": {
+      "name": "Diretoria de Ensino, Instrução e Pesquisa",
+      "abbreviation": "DEIP",
+      "category": "Administração Sistêmica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 35",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 35 (Diretoria de Ensino, Instrução e Pesquisa)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Ensino, Instrução e Pesquisa é responsável pela administração do Sistema de Educação Bombeiro Militar, incumbindo-lhe o planejamento, a organização, a coordenação, a fiscalização e o controle das atividades de formação, graduação, pós-graduação, aperfeiçoamento, habilitação e treinamento do Bombeiro Militar, além da preservação, fomento e difusão da cultura institucional, segundo a política de educação e cultura definida pelo Comandante-Geral (Art. 35)",
+        "A função de Diretor de Ensino, Instrução e Pesquisa é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (Parágrafo único)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Formação Inicial e Continuada",
+        "Seção de Gestão do Conhecimento",
+        "Escola Superior Bombeiro Militar",
+        "Escolas Militares Dom Pedro II",
+        "Centro de Desenvolvimento, Pesquisa e Inovação",
+        "Centro de Capacitação Física Militar",
+        "Centro de Gestão das Escolas Militares Dom Pedro II",
+        "Museu Histórico do Corpo de Bombeiros Militar",
+        "Centro de Formação de Condutores"
+      ],
+      "cargos": [],
+      "id": "deip-mt-lob"
+    },
+    "dge-mt-lob": {
+      "name": "Diretoria de Gestão Estratégica",
+      "abbreviation": "DGE",
+      "category": "Administração Sistêmica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 36",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 36 (Diretoria de Gestão Estratégica)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Gestão Estratégica é responsável pela formulação e acompanhamento das políticas de médio e longo prazo, do planejamento estratégico institucional e indicadores de desempenho, promovendo o empreendedorismo, a integração das áreas de planejamento, orçamento e gestão, a captação de recursos e desenvolvimento organizacional (Art. 36)",
+        "A função de Diretor de Gestão Estratégica é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (Parágrafo único)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Planejamento e Execução Orçamentária",
+        "Seção de Estatística e Arrecadação",
+        "Seção de Convênios",
+        "Seção de Desenvolvimento Organizacional",
+        "Escritório Diretivo de Projetos do Corpo de Bombeiros Militar"
+      ],
+      "cargos": [],
+      "id": "dge-mt-lob"
+    },
+    "ds-mt-lob": {
+      "name": "Diretoria de Saúde",
+      "abbreviation": "DS",
+      "category": "Administração Sistêmica",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 37",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 37 (Diretoria de Saúde)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Saúde é responsável pelo planejamento, execução, coordenação, supervisão, fiscalização e avaliação das atividades relacionadas com as políticas de saúde na corporação, socorros de urgências e emergências pré-hospitalares e resgate, inspeção de saúde, inquérito sanitário de origem, bem como fomentar e implementar políticas de melhoria da qualidade de vida e assistência psicossocial na Corporação, atuando de forma integrada ao Sistema Único de Saúde (Art. 37)",
+        "A função de Diretor de Saúde é de Coronel da ativa, escolhido e nomeado pelo Comandante-Geral (§ 2º)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Saúde do Pessoal Militar",
+        "Seção de Atendimento Pré-Hospitalar e Resgate",
+        "Ambulatório do Corpo de Bombeiros Militar",
+        "Centro de Inspeção de Saúde",
+        "Centro de Assistência Biopsicossocial"
+      ],
+      "cargos": [],
+      "id": "ds-mt-lob"
+    },
+    "dscip-mt-lob": {
+      "name": "Diretoria de Segurança Contra Incêndio e Pânico",
+      "abbreviation": "DSCIP",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 57",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 57 (Diretoria de Segurança Contra Incêndio e Pânico)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Segurança Contra Incêndio e Pânico, subordinada diretamente ao Comandante-Geral Adjunto, é responsável pelo planejamento, execução, coordenação e controle de todas as atividades concernentes à segurança contra incêndio e pânico das instalações, edificações e locais de risco, em conformidade com a legislação peculiar (Art. 57)",
+        "As Seções de Segurança Contra Incêndio e Pânico serão subordinadas administrativa e operacionalmente às respectivas UBM e terão vinculação técnica com a Diretoria de Segurança Contra Incêndio e Pânico (§ 1º)",
+        "A função de Diretor da Diretoria de Segurança Contra Incêndio e Pânico é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (§ 2º)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Análise de Processos",
+        "Seção de Fiscalização",
+        "Seção de Estudos, Normas e Pareceres",
+        "Seção de Perícia de Incêndio"
+      ],
+      "cargos": [],
+      "id": "dscip-mt-lob"
+    },
+    "dop-mt-lob": {
+      "name": "Diretoria Operacional",
+      "abbreviation": "DOp",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Arts. 58 a 60",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 58 (Diretoria Operacional)",
+        "Art. 59 (Comandos Regionais)",
+        "Art. 60 (UBM subordinadas)"
+      ],
+      "atribuicoes": [
+        "A Diretoria Operacional, subordinada diretamente ao Comandante-Geral Adjunto, é responsável pela supervisão, coordenação e planejamento das políticas relacionadas com a atividade operacional da Corporação (Art. 58)",
+        "A Diretoria Operacional é integrada pelos Comandos Regionais de Bombeiros Militar (CRBMs) e pelas Unidades de Bombeiros Militar (UBMs) (§ 1º)",
+        "A função de Diretor Operacional é de Coronel do QOBM da ativa, escolhido e nomeado pelo Comandante-Geral (§ 2º)",
+        "As Unidades classificadas como Comandos Regionais de Bombeiros Militar - CRBM subordinam-se diretamente à Diretoria Operacional e são responsáveis pela supervisão, coordenação e planejamento do emprego operacional das UBM a eles subordinadas (Art. 59)"
+      ],
+      "desdobramentos": [
+        "Diretoria Adjunta",
+        "Seção Administrativa",
+        "Seção de Planejamento Tático e Operacional",
+        "Seção de Doutrina e Emprego Operacional",
+        "Seção de Hidrantes",
+        "Seção de Estatística e Georreferenciamento",
+        "Comandos Regionais de Bombeiro Militar (CRBM)",
+        "Batalhão de Emergências Ambientais",
+        "Grupo de Aviação de Bombeiros Militar",
+        "Centro de Comando e Controle Operacional de Bombeiros"
+      ],
+      "cargos": [],
+      "id": "dop-mt-lob"
+    },
+    "bea-mt-lob": {
+      "name": "Batalhão de Emergências Ambientais",
+      "abbreviation": "BEA",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 61",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 61 (Batalhão de Emergências Ambientais)"
+      ],
+      "atribuicoes": [
+        "O Batalhão de Emergências Ambientais, unidade especializada, subordinada diretamente à Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividades de prevenção e combate a incêndios florestais e emergências com produtos perigosos, atuando em reforço ou apoio as demais UBM (Art. 61)"
+      ],
+      "desdobramentos": [
+        "Comando Adjunto",
+        "Seção Administrativa",
+        "Seção de Suprimento e Manutenção",
+        "Seção de Operações",
+        "Seção de Fiscalização e Perícia de Incêndio Florestal",
+        "Companhia de Atendimento a Emergência com Produtos Perigosos",
+        "Companhia de Prevenção e Combate a Incêndio Florestal"
+      ],
+      "cargos": [],
+      "id": "bea-mt-lob"
+    },
+    "gavbm-mt-lob": {
+      "name": "Grupo de Aviação de Bombeiros Militar",
+      "abbreviation": "GAvBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Diretoria Operacional",
+      "legalRef": "Art. 62",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 62 (Grupo de Aviação de Bombeiros Militar)"
+      ],
+      "atribuicoes": [
+        "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada diretamente a Diretoria Operacional, é responsável pelo planejamento, organização, direção, coordenação e execução de atividade que envolva o emprego da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM (Art. 62)"
+      ],
+      "desdobramentos": [
+        "Comando Adjunto",
+        "Seção Administrativa",
+        "Seção de Operações",
+        "Seção de Segurança de Voo",
+        "Seção de Suprimento e Manutenção",
+        "Seção Aeromédica",
+        "Esquadrão de Combate a Incêndio Florestal",
+        "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral"
+      ],
+      "cargos": [],
+      "id": "gavbm-mt-lob"
+    },
+    "gcg-mt-lob": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GCG",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 38",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 38 (Gabinete do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comandante-Geral presta assessoramento e assistência diretamente ao Comandante-Geral do Corpo de Bombeiros Militar (Art. 38)"
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Secretaria do Gabinete",
+        "Ajudante-de-ordens"
+      ],
+      "cargos": [],
+      "id": "gcg-mt-lob"
+    },
+    "aci-mt-lob": {
+      "name": "Agência Central de Inteligência",
+      "abbreviation": "ACI",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 39",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 39 (Agência Central de Inteligência)"
+      ],
+      "atribuicoes": [
+        "A Agência Central de Inteligência, vinculada diretamente ao Comandante-Geral da Instituição, integrante do sistema estadual de inteligência, é responsável pela sistematização, planejamento, coordenação, execução, controle e fiscalização das políticas de inteligência e informações no âmbito do Corpo de Bombeiros Militar, com a finalidade de proporcionar ao Comandante-Geral as informações setoriais e conjunturais necessárias ao processo de tomada de decisões em todos os níveis (Art. 39)",
+        "A atividade de inteligência será desenvolvida no âmbito setorial mediante designação do Comandante-Geral (Parágrafo único)"
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção de Inteligência",
+        "Seção de Contra Inteligência",
+        "Seção de Inteligência Operacional"
+      ],
+      "cargos": [],
+      "id": "aci-mt-lob"
+    },
+    "ccsbm-mt-lob": {
+      "name": "Centro de Comunicação Social Bombeiro Militar",
+      "abbreviation": "CCSBM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 40",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 40 (Centro de Comunicação Social Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "O Centro de Comunicação Social presta assessoramento direto ao Comandante-Geral e Comandante-Geral Adjunto, sendo responsável pela política de comunicação social, marketing e cerimonial da Instituição, visando preservar e fortalecer a imagem corporativa junto ao público interno e externo, além da coordenação das atividades do Corpo Musical e do Museu Histórico (Art. 40)"
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção Administrativa",
+        "Seção de Relações Públicas e Cerimonial",
+        "Seção de Assessoria de Imprensa",
+        "Seção de Produção e Divulgação"
+      ],
+      "cargos": [],
+      "id": "ccsbm-mt-lob"
+    },
+    "ag-mt-lob": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AG",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral Adjunto",
+      "legalRef": "Art. 42",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 42 (Ajudância Geral)"
+      ],
+      "atribuicoes": [
+        "A Ajudância Geral, vinculada diretamente ao Comandante-Geral Adjunto, constitui uma unidade administrativa, responsável pelo apoio administrativo e de serviços às atividades do Quartel do Comando Geral do Corpo de Bombeiros Militar e seus setores descentralizados (Art. 42)"
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção Administrativa",
+        "Tesouraria",
+        "Companhia de Comando e Serviços"
+      ],
+      "cargos": [],
+      "id": "ag-mt-lob"
+    },
+    "csmt-mt-lob": {
+      "name": "Centro de Suprimento e Manutenção",
+      "abbreviation": "CSM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Administração Institucional",
+      "legalRef": "Art. 44",
+      "baseLegal": "Lei Complementar nº 775, de 27 de setembro de 2023 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 44 (Centro de Suprimento e Manutenção)"
+      ],
+      "atribuicoes": [
+        "O Centro de Suprimento e Manutenção é a unidade de apoio responsável, pela execução das atividades de recebimento, depósito, distribuição e manutenção dos materiais que lhe forem atribuídos, de acordo com as Diretrizes e Política baixada pelo Comando Geral, e deverá manter controle imediato do emprego dos itens fornecidos e dos serviços executados (Art. 44)"
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção Administrativa",
+        "Seção de Recebimento, Estoque e Distribuição",
+        "Seção de Suprimento e Manutenção de Viatura",
+        "Seção de Suprimento e Manutenção de Material Motomecanizado",
+        "Seção de Suprimento e Manutenção de Material Operacional"
+      ],
+      "cargos": [],
+      "id": "csmt-mt-lob"
     }
   }
 }

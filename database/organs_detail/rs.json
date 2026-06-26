@@ -425,6 +425,279 @@
         }
       ],
       "id": "besci"
+    },
+    "cg-rs-lob": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Secretaria da Segurança Pública",
+      "legalRef": "Art. 3º, 4º e 5º",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 3º (Estrutura do CBMRS)",
+        "Art. 4º (Comando-Geral)",
+        "Art. 5º (Competência do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "Ao Comando-Geral, órgão de direção-geral do CBMRS, compete a administração da Instituição, que será exercida diretamente pelo Comandante-Geral (Art. 4º).",
+        "Compete ao Comandante-Geral: I - a coordenação geral das atividades da Instituição; II - a presidência da Comissão de Avaliação e Mérito; e III - a direção do Conselho Superior (Art. 5º)."
+      ],
+      "desdobramentos": [
+        "Gabinete do Comando-Geral",
+        "Corregedoria-Geral",
+        "Comissão de Avaliação e Mérito",
+        "Conselho Superior",
+        "Departamento Administrativo",
+        "Departamento de Segurança, Prevenção e Proteção Contra Incêndios",
+        "Academia de Bombeiro Militar",
+        "Comando Regional de Bombeiro Militar Metropolitano – Porto Alegre",
+        "Comando Regional de Bombeiro Militar do Interior – Santa Maria"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Secretaria da Segurança Pública",
+          "requisito": "",
+          "desdobramentos": [
+            "Gabinete do Comando-Geral",
+            "Corregedoria-Geral",
+            "Comissão de Avaliação e Mérito",
+            "Conselho Superior",
+            "Departamento Administrativo",
+            "Departamento de Segurança, Prevenção e Proteção Contra Incêndios",
+            "Academia de Bombeiro Militar",
+            "Comandos Regionais"
+          ],
+          "atribuicoes": [
+            "Ao Comando-Geral, órgão de direção-geral do CBMRS, compete a administração da Instituição, que será exercida diretamente pelo Comandante-Geral (Art. 4º).",
+            "Compete ao Comandante-Geral: I - a coordenação geral das atividades da Instituição; II - a presidência da Comissão de Avaliação e Mérito; e III - a direção do Conselho Superior (Art. 5º)."
+          ]
+        }
+      ],
+      "id": "cg-rs-lob"
+    },
+    "scg-rs-lob": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 7º",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 7º (Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Subcomandante-Geral é o substituto imediato do Comandante-Geral nos impedimentos eventuais deste, competindo-lhe, igualmente, as funções que lhe forem delegadas pelo Comandante-Geral (Art. 7º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "scg-rs-lob"
+    },
+    "gab-rs-lob": {
+      "name": "Gabinete do Comando-Geral",
+      "abbreviation": "GCG",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 3º, I e Art. 6º",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 3º, I (composição do Gabinete)",
+        "Art. 6º (competência)"
+      ],
+      "atribuicoes": [
+        "Ao Gabinete do Comando-Geral compete a assistência e o assessoramento direto ao Comandante-Geral e ao Subcomandante-Geral (Art. 6º)."
+      ],
+      "desdobramentos": [
+        "Secretaria Executiva do Comandante-Geral",
+        "Secretaria Executiva do Subcomandante-Geral",
+        "Assessoria Jurídica, Convênios e Contratos",
+        "Assessoria de Comunicação Social e Parlamentar",
+        "Assessoria de Operações e Defesa Civil"
+      ],
+      "cargos": [],
+      "id": "gab-rs-lob"
+    },
+    "cs-rs-lob": {
+      "name": "Conselho Superior",
+      "abbreviation": "CS",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 3º, IV e Art. 8º",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Conselho Superior)"
+      ],
+      "atribuicoes": [
+        "O Conselho Superior é constituído pelos Coronéis da ativa em exercício na Corporação, competindo-lhe, em assessoramento direto ao Comandante-Geral, o acompanhamento e a manifestação em assuntos relevantes da Instituição, com vista ao fornecimento de subsídios para a tomada de decisão (Art. 8º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cs-rs-lob"
+    },
+    "corg-rs-lob": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "Corr-G",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 3º, II e Art. 9º",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 9º (Corregedoria-Geral)"
+      ],
+      "atribuicoes": [
+        "A Corregedoria-Geral, órgão de disciplina, de orientação e de fiscalização das atividades funcionais e da conduta dos militares e dos servidores civis da Instituição, subordina-se diretamente ao Comandante-Geral (Art. 9º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "corg-rs-lob"
+    },
+    "cam-rs-lob": {
+      "name": "Comissão de Avaliação e Mérito",
+      "abbreviation": "CAM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 3º, III e Art. 10",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 10 (Comissão de Avaliação e de Mérito)"
+      ],
+      "atribuicoes": [
+        "À Comissão de Avaliação e de Mérito, órgão permanente de assessoramento do Comandante-Geral nos assuntos relativos às carreiras de Oficiais e de Praças da Instituição, compete o controle, a avaliação e o processamento das promoções (Art. 10)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cam-rs-lob"
+    },
+    "da-rs-lob": {
+      "name": "Departamento Administrativo",
+      "abbreviation": "DA",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 3º, V, Art. 11 e Art. 12",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 11 (Órgãos de apoio)",
+        "Art. 12 (Departamento Administrativo)"
+      ],
+      "atribuicoes": [
+        "Os Órgãos de apoio do CBMRS são constituídos pelos Departamentos e pela Academia de Bombeiro Militar, subordinados ao Comando-Geral, competindo-lhes o planejamento, a direção, o controle e a execução das diretrizes emanadas do comando da Instituição (Art. 11).",
+        "O Departamento Administrativo é o responsável pelo planejamento, controle, fiscalização, auditoria e execução das atividades relacionadas a recursos humanos, orçamento e finanças, logística e patrimônio e tecnologia da informação e comunicações (Art. 12)."
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa",
+        "Divisão de Logística e Patrimônio",
+        "Divisão de Orçamento e Finanças",
+        "Divisão de Recursos Humanos",
+        "Divisão de Tecnologia da Informação e Comunicações"
+      ],
+      "cargos": [],
+      "id": "da-rs-lob"
+    },
+    "dspci-rs-lob": {
+      "name": "Departamento de Segurança, Prevenção e Proteção Contra Incêndios",
+      "abbreviation": "DSPCI",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 3º, VI e Art. 13",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 13 (Departamento de Segurança, Prevenção e Proteção Contra Incêndios)"
+      ],
+      "atribuicoes": [
+        "O Departamento de Segurança, Prevenção e Proteção Contra Incêndios é o órgão de planejamento, controle e fiscalização das atividades relacionadas à segurança contra incêndios e à investigação de sinistros em âmbito estadual (Art. 13)."
+      ],
+      "desdobramentos": [
+        "Divisão Administrativa",
+        "Divisão de Gestão e Normatização",
+        "Divisão de Pesquisa e Investigação de Sinistros"
+      ],
+      "cargos": [],
+      "id": "dspci-rs-lob"
+    },
+    "abm-rs-lob": {
+      "name": "Academia de Bombeiro Militar",
+      "abbreviation": "ABM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 3º, VII e Art. 14",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 14 (Academia de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "A Academia de Bombeiro Militar é o órgão responsável pelo planejamento, controle e fiscalização das atividades relacionadas ao ensino, à saúde física do efetivo e à pesquisa científica da Instituição, bem como pela capacitação continuada dos servidores e dos profissionais civis que exerçam atividade auxiliar de bombeiro em âmbito estadual (Art. 14)."
+      ],
+      "desdobramentos": [
+        "Divisão de Ensino",
+        "Divisão Administrativa",
+        "Órgão de Pesquisa, Ensino, Treinamento e Avaliação"
+      ],
+      "cargos": [],
+      "id": "abm-rs-lob"
+    },
+    "crbm-rs-lob": {
+      "name": "Comandos Regionais de Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 3º, VIII e IX, Art. 15 e Art. 16",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 15 (Comandos Regionais de Bombeiro Militar)",
+        "Art. 16 (Circunscrições Territoriais)"
+      ],
+      "atribuicoes": [
+        "Os Comandos Regionais de Bombeiro Militar, escalões intermediários de comando, com nível de Órgãos de Apoio, são os responsáveis, em suas respectivas circunscrições territoriais, pelas atividades administrativo-operacionais dos Órgãos de Bombeiro Militar – OBM, que lhe são subordinados (Art. 15).",
+        "As Circunscrições Territoriais dos Comandos Regionais e as respectivas Áreas de Atuação Territoriais serão definidas por Portaria do Comandante-Geral do CBMRS (Art. 16)."
+      ],
+      "desdobramentos": [
+        "Comando Regional de Bombeiro Militar Metropolitano – Porto Alegre (1º, 2º, 8º e 9º BBM e Companhia Especial de Busca e Salvamento)",
+        "Comando Regional de Bombeiro Militar do Interior – Santa Maria (3º, 4º, 5º, 6º, 7º, 10º, 11º e 12º BBM)"
+      ],
+      "cargos": [],
+      "id": "crbm-rs-lob"
+    },
+    "obm-rs-lob": {
+      "name": "Órgãos de Bombeiro Militar (OBM)",
+      "abbreviation": "OBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandos Regionais de Bombeiro Militar / Academia de Bombeiro Militar",
+      "legalRef": "Art. 17 a 21",
+      "baseLegal": "Decreto nº 53.897, de 25 de janeiro de 2018, que regulamenta a Lei Complementar nº 14.920, de 1º de agosto de 2016 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Classificação dos OBM)",
+        "Art. 18 (Competência dos OBM de Segurança, Proteção, Prevenção e Combate a Incêndios)",
+        "Art. 20 (Níveis dos OBM)",
+        "Art. 21 (OBM de Ensino)"
+      ],
+      "atribuicoes": [
+        "Os OBM, responsáveis pela execução das atividades administrativo-operacionais indispensáveis ao cumprimento das finalidades da Instituição, são classificados em: de Segurança, de Proteção, de Prevenção e de Combate a Incêndios, de Ensino e Especiais (Art. 17).",
+        "Aos OBM de Segurança, de Proteção, de Prevenção e de Combate a Incêndios compete a execução das atividades de bombeiros e de defesa civil, no âmbito de seu espaço de responsabilidade territorial, respondendo perante o Comando Regional de Bombeiros pela realização de suas atividades na correspondente circunscrição (Art. 18).",
+        "Os OBM de Ensino, responsáveis pela execução das atividades de ensino, de instrução, de treinamento, de avaliação e de pesquisa serão comandados e dirigidos por Oficiais Superiores (Art. 21)."
+      ],
+      "desdobramentos": [
+        "Batalhão de Bombeiro Militar (BBM)",
+        "Companhia de Bombeiro Militar (CiaBM)",
+        "Companhia Especial de Bombeiro Militar (CEBM)",
+        "Companhia Especial de Busca e Salvamento (CEBS)",
+        "Pelotão de Bombeiro Militar (PelBM)",
+        "Pelotão de Busca e Salvamento (PelBS)",
+        "Pelotão Especial de Busca e Salvamento (PelEBS)",
+        "Grupo de Bombeiro Militar (GBM) / Grupo de Busca e Salvamento (GBS)"
+      ],
+      "cargos": [],
+      "id": "obm-rs-lob"
     }
   }
 }

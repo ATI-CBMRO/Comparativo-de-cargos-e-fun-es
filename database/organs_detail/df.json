@@ -506,6 +506,294 @@
       ],
       "cargos": [],
       "id": "grupamentos-especializados-df"
+    },
+    "cg-df-lob": {
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Governador do Distrito Federal",
+      "legalRef": "Art. 8, 8-A, 9, 10",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8 (Constituição do Comando-Geral)",
+        "Art. 8-A (Alto Comando)",
+        "Art. 9 (Comandante-Geral)",
+        "Art. 10 (Requisitos)"
+      ],
+      "atribuicoes": [
+        "O Comando-Geral é constituído do Comandante-Geral, além do Subcomandante-Geral, do Chefe do Estado-Maior-Geral, dos Chefes de Departamentos, do Controlador, do Chefe de Gabinete do Comandante-Geral, dos Diretores, do Comandante Operacional e da Ajudância-Geral.",
+        "O Comandante-Geral do Corpo de Bombeiros Militar do Distrito Federal é o responsável pela administração, comando e emprego da corporação.",
+        "O Alto Comando, órgão consultivo do Comandante-Geral, é constituído do Comandante-Geral (Presidente), do Subcomandante-Geral (Vice-Presidente), do Chefe do Estado-Maior-Geral, do Controlador, do Chefe de Gabinete do Comandante-Geral, dos Chefes de Departamento, dos Diretores, do Comandante-Operacional, do Ajudante-Geral e dos Ex-Comandantes-Gerais e Ex-Subcomandantes-Gerais da Corporação, enquanto não passarem para a inatividade."
+      ],
+      "desdobramentos": [
+        "Subcomando-Geral",
+        "Estado-Maior-Geral",
+        "Departamentos e Diretorias",
+        "Ajudância Geral",
+        "Controladoria",
+        "Gabinete do Comandante-Geral",
+        "Alto Comando"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Distrito Federal",
+          "requisito": "Coronel da ativa do Quadro de Oficiais BM Combatentes da própria Corporação (Art. 10)",
+          "desdobramentos": [
+            "Subcomando-Geral",
+            "Estado-Maior-Geral",
+            "Departamentos e Diretorias",
+            "Ajudância Geral",
+            "Controladoria",
+            "Gabinete do Comandante-Geral",
+            "Alto Comando"
+          ],
+          "atribuicoes": [
+            "O Comandante-Geral do Corpo de Bombeiros Militar do Distrito Federal é o responsável pela administração, comando e emprego da corporação (Art. 9º)."
+          ]
+        }
+      ],
+      "id": "cg-df-lob"
+    },
+    "emg-df-lob": {
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 11, 12",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 11 (Estado-Maior-Geral)",
+        "Art. 12 (Composição)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior-Geral é o órgão de orientação e planejamento responsável pela elaboração da política militar, pelo planejamento estratégico e pela orientação do preparo e do emprego da Corporação, visando ao cumprimento da destinação constitucional e legal.",
+        "O Estado-Maior-Geral, encarregado da elaboração das diretrizes e ordens do comando, tem por missão o estudo, o planejamento, a coordenação, a programação orçamentária e financeira e o controle de todas as atividades da Corporação, por intermédio dos órgãos de direção-geral e de direção setorial, de apoio e de execução, no exercício de suas competências, em conformidade com as decisões e diretrizes do Comandante-Geral.",
+        "O Estado-Maior-Geral compreende o Chefe do Estado-Maior-Geral, a Secretaria e Seções, que não poderão exceder o número de 10 (dez)."
+      ],
+      "desdobramentos": [
+        "Chefe do Estado-Maior-Geral",
+        "Secretaria",
+        "Seções (até 10)"
+      ],
+      "cargos": [],
+      "id": "emg-df-lob"
+    },
+    "dep-df-lob": {
+      "name": "Departamentos e Diretorias",
+      "abbreviation": "Dep",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 13",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 13 (Departamentos e Diretorias)"
+      ],
+      "atribuicoes": [
+        "Os Departamentos, em número máximo de 6 (seis) e organizados sob a forma de sistema, exercerão suas competências por meio de diretorias e órgãos de direção setorial que lhes sejam diretamente subordinados.",
+        "O número de Diretorias não poderá exceder ao limite de 5 (cinco) por Departamento."
+      ],
+      "desdobramentos": [
+        "Departamentos (até 6)",
+        "Diretorias (até 5 por Departamento)"
+      ],
+      "cargos": [],
+      "id": "dep-df-lob"
+    },
+    "aj-df-lob": {
+      "name": "Ajudância Geral",
+      "abbreviation": "AJ",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 21",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 21 (Ajudância Geral)"
+      ],
+      "atribuicoes": [
+        "A Ajudância Geral, subordinada diretamente ao Comandante-Geral, é o órgão de direção encarregado de auxiliar nas funções de administração do Quartel do Comando Geral, considerado como Organização de Bombeiro Militar."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "aj-df-lob"
+    },
+    "controladoria-df-lob": {
+      "name": "Controladoria",
+      "abbreviation": "Controladoria",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 22",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 22 (Controladoria)"
+      ],
+      "atribuicoes": [
+        "A Controladoria é o órgão de assessoramento direto e imediato ao Comandante-Geral quanto aos assuntos e providências relacionados com a defesa do patrimônio público, auditoria, correição, ouvidoria, orientação e fiscalização, e averiguação e análise das atividades de administração orçamentária, financeira, patrimonial e de gestão de pessoas."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "controladoria-df-lob"
+    },
+    "gab-df-lob": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GABCG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 23, 23-A",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 23 (Gabinete do Comandante-Geral)",
+        "Art. 23-A (Instituto)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comandante-Geral tem a seu cargo as funções de assistência e assessoramento direto ao Comandante-Geral, nos assuntos que escapem às atribuições normais e específicas dos demais órgãos de direção e destina-se a dar flexibilidade à estrutura do Comando Geral da Corporação, particularmente em assuntos técnicos especializados.",
+        "Fica criado instituto, no Gabinete do Comandante-Geral, diretamente a ele subordinado, que terá a seu cargo: a responsabilidade pelo planejamento e coordenação da realização periódica de concursos públicos de provas ou de provas e títulos, para seleção dos candidatos a matrícula nos cursos de formação requeridos para ingresso nas Carreiras do quadro de pessoal da Corporação (I); a organização e a administração de provas e testes necessários para comprovação da habilitação às profissões relacionadas à missão do Corpo de Bombeiros Militar do Distrito Federal (II); a promoção e a organização de simpósios, seminários, trabalhos e pesquisas sobre questões relacionadas às missões da Corporação (III); e a organização e administração de biblioteca, de museu e de centro de documentação, nacional e internacional, sobre doutrina, técnicas e legislação pertinentes à missão dos corpos de bombeiros e questões correlatas (IV)."
+      ],
+      "desdobramentos": [
+        "Instituto"
+      ],
+      "cargos": [],
+      "id": "gab-df-lob"
+    },
+    "abm-df-lob": {
+      "name": "Academia de Bombeiro Militar",
+      "abbreviation": "ABM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Ensino e Instrução",
+      "legalRef": "Art. 24, I; Art. 25",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 24 (Órgãos de Apoio)",
+        "Art. 25 (Academia de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "A Academia de Bombeiro Militar (ABM) é o órgão de apoio do sistema de ensino, subordinado à Diretoria de Ensino e Instrução, incumbida da formação, do aperfeiçoamento, do treinamento e da instrução especializada dos oficiais e dos cadetes do Corpo de Bombeiros Militar do Distrito Federal e, eventualmente, de oficiais e de alunos de outras corporações."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "abm-df-lob"
+    },
+    "policlinicas-df-lob": {
+      "name": "Policlínicas",
+      "abbreviation": "Policlínicas",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 24, II; Art. 26",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 24 (Órgãos de Apoio)",
+        "Art. 26 (Policlínicas)"
+      ],
+      "atribuicoes": [
+        "As Policlínicas são órgãos de apoio ao sistema de saúde, incumbidas da assistência médica, odontológica, farmacêutica e sanitária à família bombeiro-militar, conforme dispuser a lei."
+      ],
+      "desdobramentos": [
+        "Policlínica médica",
+        "Policlínica odontológica"
+      ],
+      "cargos": [],
+      "id": "policlinicas-df-lob"
+    },
+    "centros-df-lob": {
+      "name": "Centros",
+      "abbreviation": "Centros",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando-Geral",
+      "legalRef": "Art. 24, III; Art. 27",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 24 (Órgãos de Apoio)",
+        "Art. 27 (Centros)"
+      ],
+      "atribuicoes": [
+        "Os Centros constituem os órgãos de apoio, incumbidos de fornecer suporte ao Comando Geral, com vistas ao atingimento das políticas traçadas pelo Comandante-Geral e ao cumprimento das missões da corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "centros-df-lob"
+    },
+    "colegio-dompedroii-df-lob": {
+      "name": "Colégio Militar Dom Pedro II",
+      "abbreviation": "CMDPII",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Ensino",
+      "legalRef": "Art. 24, IV; Art. 27-A",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 24 (Órgãos de Apoio)",
+        "Art. 27-A (Colégio Militar Dom Pedro II)"
+      ],
+      "atribuicoes": [
+        "O Colégio Militar Dom Pedro II, composto por suas respectivas unidades, é o órgão de apoio do sistema de ensino, diretamente subordinado à Diretoria de Ensino, ao qual compete prestar serviços públicos de educação básica, compreendendo a educação infantil, o ensino fundamental e o ensino médio."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "colegio-dompedroii-df-lob"
+    },
+    "cmdop-df-lob": {
+      "name": "Comando Operacional",
+      "abbreviation": "CmdOp",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 28, I e § 1º",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 28 (Órgãos de Execução)",
+        "Art. 28, § 1º (Comando Operacional)"
+      ],
+      "atribuicoes": [
+        "Comando Operacional é a denominação genérica dada a Organização Bombeiro-Militar de mais alto escalão, dotada de Estado-Maior próprio e subordinada ao Comandante-Geral, que tem a seu cargo o planejamento estratégico, a coordenação e o emprego das unidades e subunidades que lhes forem subordinadas, com a finalidade de executar atividades de prevenção, guarda e segurança, combate a incêndio, busca e salvamento, atendimento pré-hospitalar e defesa civil, além de outras, em uma determinada área operacional."
+      ],
+      "desdobramentos": [
+        "Unidade de Prevenção e Combate a Incêndio",
+        "Unidade de Busca e Salvamento",
+        "Unidade de Atendimento de Emergência Pré-Hospitalar",
+        "Unidade de Proteção Ambiental",
+        "Unidade de Proteção Civil",
+        "Unidade de Aviação Operacional",
+        "Unidade de Multiemprego"
+      ],
+      "cargos": [],
+      "id": "cmdop-df-lob"
+    },
+    "unidades-execucao-df-lob": {
+      "name": "Unidades de Execução",
+      "abbreviation": "Unidades",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comando Operacional",
+      "legalRef": "Art. 28, II a VIII e §§ 2º a 9º",
+      "baseLegal": "Lei nº 8.255, de 20 de novembro de 1991 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 28 (Órgãos de Execução)",
+        "Art. 28, §§ 2º a 9º (Tipos de Unidades)"
+      ],
+      "atribuicoes": [
+        "Unidade de Prevenção e Combate a Incêndio é a que tem a seu cargo, dentro de uma determinada área de atuação operacional, as missões de prevenção e extinção de incêndio e as demais que lhes sejam conexas.",
+        "Unidade de Busca e Salvamento é a que tem a seu cargo, dentro de uma determinada área de atuação operacional, as missões de resgate, busca e salvamento.",
+        "Unidade de Atendimento de Emergência Pré-Hospitalar é a que tem a seu cargo, dentro de determinada área de atuação operacional, as missões de emergências médicas voltadas para o atendimento pré-hospitalar e socorros de urgência, nos casos de sinistro, inundações, desabamentos, catástrofes e calamidades públicas, bem como outras que se fizerem necessárias à preservação da incolumidade das pessoas e do patrimônio.",
+        "Unidade de Proteção Ambiental é a que tem a seu cargo, dentro de determinada área operacional, o cumprimento das atividades e missões de prevenção e combate a incêndios florestais, contenção de produtos perigosos e demais ações de proteção ao meio ambiente.",
+        "Unidade de Proteção Civil é a que tem a seu cargo, dentro de determinada área de responsabilidade, a execução de atividades de defesa civil.",
+        "Unidade de Aviação Operacional é a que tem a seu cargo, dentro de determinada área operacional, a execução de missões aéreas e apoio a ações conexas.",
+        "Unidade de Multiemprego é a que tem a seu cargo, dentro de determinada área operacional, a execução de 2 (duas) ou mais das missões previstas para as demais Unidades.",
+        "Cada Unidade Operacional terá, em sua jurisdição, tantas subunidades subordinadas quantas forem necessárias, para o atendimento das respectivas missões."
+      ],
+      "desdobramentos": [
+        "Subunidades operacionais"
+      ],
+      "cargos": [],
+      "id": "unidades-execucao-df-lob"
     }
   }
 }

@@ -1927,8 +1927,22 @@
                   "name": "Comissão de Promoção de Praças",
                   "children": [],
                   "abbreviation": "CPP"
+                },
+                {
+                  "id": "comissao-de-promocoes-de-pracas",
+                  "name": "Comissão de Promoções de Praças",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "CPP"
+                },
+                {
+                  "id": "comissoes-temporarias",
+                  "name": "Comissões temporárias",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "comissoes-am-lob"
             }
           ],
           "legalRef": "Lei nº 2.538/1999",
@@ -2460,7 +2474,7 @@
         "has_regimento": false,
         "has_nga": false,
         "total_chars": 94560,
-        "organs_mapped": 111,
+        "organs_mapped": 113,
         "curated": true
       }
     },
@@ -3961,7 +3975,8 @@
               "name": "Academia de Bombeiro Militar",
               "children": [],
               "abbreviation": "ABM",
-              "description": "Formação e aperfeiçoamento de oficiais e cadetes."
+              "description": "Formação e aperfeiçoamento de oficiais e cadetes.",
+              "detailId": "abm-df-lob"
             },
             {
               "id": "poli-med",
@@ -3991,7 +4006,8 @@
             {
               "id": "cabm",
               "name": "Centro de Assistência Bombeiro Militar",
-              "children": []
+              "children": [],
+              "detailId": "abm-df-lob"
             },
             {
               "id": "ccf",
@@ -4031,7 +4047,8 @@
             {
               "id": "cmd-pii",
               "name": "Colégio Militar Dom Pedro II",
-              "children": []
+              "children": [],
+              "detailId": "colegio-dompedroii-df-lob"
             }
           ],
           "legalRef": "Lei nº 8.255/1991 Art. 24; Portaria nº 24/2020",
@@ -4063,7 +4080,8 @@
                       "id": "gbm-area",
                       "name": "Grupamentos de Bombeiro Militar",
                       "children": [],
-                      "abbreviation": "GBM"
+                      "abbreviation": "GBM",
+                      "detailId": "abm-df-lob"
                     }
                   ]
                 },
@@ -4832,7 +4850,8 @@
             {
               "id": "scg-go",
               "name": "Subcomandante-Geral",
-              "children": []
+              "children": [],
+              "detailId": "scg-go-lob"
             },
             {
               "id": "emg-go",
@@ -4967,19 +4986,57 @@
               "id": "sg-go",
               "name": "Secretaria-Geral",
               "children": [],
-              "abbreviation": "SG"
+              "abbreviation": "SG",
+              "detailId": "sg-go-lob"
             },
             {
               "id": "ouv-go",
               "name": "Ouvidoria Adjunta",
               "children": [],
               "abbreviation": "OA/CBMGO"
+            },
+            {
+              "id": "gabinete-do-comandante-geral",
+              "name": "Gabinete do Comandante-Geral",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "gabinete-do-subcomandante-geral",
+              "name": "Gabinete do Subcomandante-Geral",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "chefia-de-gabinete",
+              "name": "Chefia de Gabinete",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "ajudancia-de-ordens",
+              "name": "Ajudância de Ordens",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "assessorias-e-assistencias",
+              "name": "Assessorias e Assistências",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "comissoes",
+              "name": "Comissões",
+              "children": [],
+              "_reg": true
             }
           ],
           "abbreviation": "CG",
           "rank": "Coronel",
           "legalRef": "Lei nº 16.899/2010",
-          "category": "Direção Geral"
+          "category": "Direção Geral",
+          "detailId": "cg-go-lob"
         },
         {
           "id": "dir-set-go",
@@ -5714,7 +5771,7 @@
         "has_regimento": false,
         "has_nga": false,
         "total_chars": 121201,
-        "organs_mapped": 129,
+        "organs_mapped": 135,
         "curated": true
       }
     },
@@ -6505,7 +6562,8 @@
                 {
                   "id": "csepe",
                   "name": "Conselho Superior de Ensino, Pesquisa e Extensão",
-                  "children": []
+                  "children": [],
+                  "detailId": "csep-mt-lob"
                 }
               ]
             },
@@ -6550,8 +6608,15 @@
                   "id": "ouv-sec-mt",
                   "name": "Seção Administrativa",
                   "children": []
+                },
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "ouvidoria-mt-lob"
             },
             {
               "id": "ctrl-mt",
@@ -6571,8 +6636,15 @@
                   "id": "ctrl-op",
                   "name": "Seção de Controle Operacional",
                   "children": []
+                },
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "controladoria-mt-lob"
             },
             {
               "id": "assess-mt",
@@ -6581,22 +6653,26 @@
                 {
                   "id": "ass-jur-mt",
                   "name": "Assessoria Jurídica",
-                  "children": []
+                  "children": [],
+                  "detailId": "aj-mt-lob"
                 },
                 {
                   "id": "ass-aic",
                   "name": "Assessoria de Articulação e Integração Comunitária",
-                  "children": []
+                  "children": [],
+                  "detailId": "aaic-mt-lob"
                 },
                 {
                   "id": "ass-aph",
                   "name": "Assessoria de Atendimento Pré-Hospitalar",
-                  "children": []
+                  "children": [],
+                  "detailId": "aaph-mt-lob"
                 },
                 {
                   "id": "ass-dc",
                   "name": "Assessoria de Proteção e Defesa Civil",
-                  "children": []
+                  "children": [],
+                  "detailId": "apdc-mt-lob"
                 },
                 {
                   "id": "ass-inter",
@@ -6668,8 +6744,15 @@
                   "id": "int-op",
                   "name": "Seção de Inteligência Operacional",
                   "children": []
+                },
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "aci-mt-lob"
             },
             {
               "id": "ccs-mt",
@@ -6689,8 +6772,21 @@
                   "id": "ccs-prod",
                   "name": "Seção de Produção e Divulgação",
                   "children": []
+                },
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-administrativa",
+                  "name": "Seção Administrativa",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "ccsbm-mt-lob"
             },
             {
               "id": "comandante-geral-adjunto-chefe-do-emg",
@@ -6746,19 +6842,114 @@
                     {
                       "id": "csm-vtr",
                       "name": "Seção de Suprimento e Manutenção de Viatura",
-                      "children": []
+                      "children": [
+                        {
+                          "id": "chefia",
+                          "name": "Chefia",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-administrativa",
+                          "name": "Seção Administrativa",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-recebimento-estoque-e-distribuicao",
+                          "name": "Seção de Recebimento, Estoque e Distribuição",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-suprimento-e-manutencao-de-viatura",
+                          "name": "Seção de Suprimento e Manutenção de Viatura",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-suprimento-e-manutencao-de-material-mot",
+                          "name": "Seção de Suprimento e Manutenção de Material Motomecanizado",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-suprimento-e-manutencao-de-material-ope",
+                          "name": "Seção de Suprimento e Manutenção de Material Operacional",
+                          "children": [],
+                          "_reg": true
+                        }
+                      ],
+                      "detailId": "csmt-mt-lob"
                     },
                     {
                       "id": "csm-mot",
                       "name": "Seção de Suprimento e Manutenção de Material Motomecanizado",
-                      "children": []
+                      "children": [
+                        {
+                          "id": "chefia",
+                          "name": "Chefia",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-administrativa",
+                          "name": "Seção Administrativa",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-recebimento-estoque-e-distribuicao",
+                          "name": "Seção de Recebimento, Estoque e Distribuição",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-suprimento-e-manutencao-de-viatura",
+                          "name": "Seção de Suprimento e Manutenção de Viatura",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-suprimento-e-manutencao-de-material-mot",
+                          "name": "Seção de Suprimento e Manutenção de Material Motomecanizado",
+                          "children": [],
+                          "_reg": true
+                        },
+                        {
+                          "id": "secao-de-suprimento-e-manutencao-de-material-ope",
+                          "name": "Seção de Suprimento e Manutenção de Material Operacional",
+                          "children": [],
+                          "_reg": true
+                        }
+                      ],
+                      "detailId": "csmt-mt-lob"
                     },
                     {
                       "id": "csm-op",
                       "name": "Seção de Suprimento e Manutenção de Material Operacional",
                       "children": []
+                    },
+                    {
+                      "id": "chefia",
+                      "name": "Chefia",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-administrativa",
+                      "name": "Seção Administrativa",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-de-recebimento-estoque-e-distribuicao",
+                      "name": "Seção de Recebimento, Estoque e Distribuição",
+                      "children": [],
+                      "_reg": true
                     }
-                  ]
+                  ],
+                  "detailId": "csmt-mt-lob"
                 },
                 {
                   "id": "coordenadoria-de-gestao-de-pessoas",
@@ -6888,9 +7079,34 @@
                       "children": []
                     }
                   ]
+                },
+                {
+                  "id": "diretoria-adjunta",
+                  "name": "Diretoria Adjunta",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-administrativa",
+                  "name": "Seção Administrativa",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secretaria-das-comissoes-de-promocoes",
+                  "name": "Secretaria das Comissões de Promoções",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "centro-de-gestao-do-sistema-de-protecao-social-d",
+                  "name": "Centro de Gestão do Sistema de Proteção Social dos Bombeiros Militares",
+                  "children": [],
+                  "_reg": true
                 }
               ],
-              "abbreviation": "DGP"
+              "abbreviation": "DGP",
+              "detailId": "dgp-mt-lob"
             },
             {
               "id": "deip-mt",
@@ -6917,7 +7133,8 @@
                         {
                           "id": "abm-ce",
                           "name": "Conselho de Ensino e Disciplina",
-                          "children": []
+                          "children": [],
+                          "detailId": "csep-mt-lob"
                         },
                         {
                           "id": "abm-de",
@@ -7109,9 +7326,34 @@
                   "id": "edp-mt",
                   "name": "Escritório Diretivo de Projetos do CBM",
                   "children": []
+                },
+                {
+                  "id": "diretoria-adjunta",
+                  "name": "Diretoria Adjunta",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-administrativa",
+                  "name": "Seção Administrativa",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-desenvolvimento-organizacional",
+                  "name": "Seção de Desenvolvimento Organizacional",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "escritorio-diretivo-de-projetos-do-corpo-de-bomb",
+                  "name": "Escritório Diretivo de Projetos do Corpo de Bombeiros Militar",
+                  "children": [],
+                  "_reg": true
                 }
               ],
-              "abbreviation": "DGE"
+              "abbreviation": "DGE",
+              "detailId": "dge-mt-lob"
             },
             {
               "id": "ds-mt",
@@ -7125,7 +7367,8 @@
                 {
                   "id": "ds-aph",
                   "name": "Seção de Atendimento Pré-Hospitalar e Resgate",
-                  "children": []
+                  "children": [],
+                  "detailId": "aaph-mt-lob"
                 },
                 {
                   "id": "amb-mt",
@@ -7141,9 +7384,28 @@
                   "id": "cab-mt",
                   "name": "Centro de Assistência Biopsicossocial",
                   "children": []
+                },
+                {
+                  "id": "diretoria-adjunta",
+                  "name": "Diretoria Adjunta",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-administrativa",
+                  "name": "Seção Administrativa",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "ambulatorio-do-corpo-de-bombeiros-militar",
+                  "name": "Ambulatório do Corpo de Bombeiros Militar",
+                  "children": [],
+                  "_reg": true
                 }
               ],
-              "abbreviation": "DS"
+              "abbreviation": "DS",
+              "detailId": "ds-mt-lob"
             }
           ],
           "legalRef": "LC nº 775/2023",
@@ -7166,8 +7428,27 @@
                   "id": "ag-cia",
                   "name": "Companhia de Comando e Serviços",
                   "children": []
+                },
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-administrativa",
+                  "name": "Seção Administrativa",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "tesouraria",
+                  "name": "Tesouraria",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "ag-mt-lob"
             },
             {
               "id": "corpo-mus-mt",
@@ -7340,8 +7621,58 @@
                 {
                   "id": "gavbm",
                   "name": "Grupo de Aviação de Bombeiros Militar",
-                  "children": [],
-                  "abbreviation": "GAvBM"
+                  "children": [
+                    {
+                      "id": "comando-adjunto",
+                      "name": "Comando Adjunto",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-administrativa",
+                      "name": "Seção Administrativa",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-de-operacoes",
+                      "name": "Seção de Operações",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-de-seguranca-de-voo",
+                      "name": "Seção de Segurança de Voo",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-de-suprimento-e-manutencao",
+                      "name": "Seção de Suprimento e Manutenção",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secao-aeromedica",
+                      "name": "Seção Aeromédica",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "esquadrao-de-combate-a-incendio-florestal",
+                      "name": "Esquadrão de Combate a Incêndio Florestal",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "esquadrao-de-busca-salvamento-resgate-e-emprego-",
+                      "name": "Esquadrão de Busca, Salvamento, Resgate e Emprego Geral",
+                      "children": [],
+                      "_reg": true
+                    }
+                  ],
+                  "abbreviation": "GAvBM",
+                  "detailId": "gavbm-mt-lob"
                 },
                 {
                   "id": "crbm-mt",
@@ -7424,7 +7755,7 @@
         "has_regimento": true,
         "has_nga": false,
         "total_chars": 356123,
-        "organs_mapped": 161,
+        "organs_mapped": 203,
         "curated": true
       }
     },
@@ -8575,7 +8906,8 @@
                   "id": "sec-cg-pr",
                   "name": "Secretaria do Comando-Geral",
                   "children": [],
-                  "abbreviation": "Sec.CmdoG"
+                  "abbreviation": "Sec.CmdoG",
+                  "detailId": "secg-pr-lob"
                 }
               ],
               "abbreviation": "Gab.CmtG",
@@ -8640,19 +8972,22 @@
                   "id": "crs-pr",
                   "name": "Centro de Recrutamento e Seleção",
                   "children": [],
-                  "abbreviation": "CRS"
+                  "abbreviation": "CRS",
+                  "detailId": "crs-pr-lob"
                 },
                 {
                   "id": "cs-pr",
                   "name": "Centro de Saúde",
                   "children": [],
-                  "abbreviation": "CS"
+                  "abbreviation": "CS",
+                  "detailId": "cs-pr-lob"
                 },
                 {
                   "id": "cefid-pr",
                   "name": "Centro de Educação Física e Desporto",
                   "children": [],
-                  "abbreviation": "CEFID"
+                  "abbreviation": "CEFID",
+                  "detailId": "cefid-pr-lob"
                 }
               ],
               "abbreviation": "DP",
@@ -8667,25 +9002,29 @@
                   "id": "cpc-pr",
                   "name": "Centro de Planejamento e Compras",
                   "children": [],
-                  "abbreviation": "CPC"
+                  "abbreviation": "CPC",
+                  "detailId": "cpc-pr-lob"
                 },
                 {
                   "id": "cal-pr",
                   "name": "Centro de Administração Logística",
                   "children": [],
-                  "abbreviation": "CAL"
+                  "abbreviation": "CAL",
+                  "detailId": "cal-pr-lob"
                 },
                 {
                   "id": "cof-pr",
                   "name": "Centro de Orçamento e Finanças",
                   "children": [],
-                  "abbreviation": "COF"
+                  "abbreviation": "COF",
+                  "detailId": "cof-pr-lob"
                 },
                 {
                   "id": "csm-pr",
                   "name": "Centro de Suprimento e Manutenção",
                   "children": [],
-                  "abbreviation": "CSM"
+                  "abbreviation": "CSM",
+                  "detailId": "csm-pr-lob"
                 }
               ],
               "abbreviation": "DALF",
@@ -9937,26 +10276,38 @@
                       "children": []
                     },
                     {
-                      "id": "1-secao-bm-1-pessoal-e-legislacao",
-                      "name": "1ª Seção (BM/1): Pessoal e Legislação",
+                      "id": "chefe-do-estado-maior-geral",
+                      "name": "Chefe do Estado-Maior Geral",
                       "children": [],
                       "_reg": true
                     },
                     {
-                      "id": "2-secao-bm-2-gestao-do-conhecimento-cultura-e-in",
-                      "name": "2ª Seção (BM/2): Gestão do Conhecimento, Cultura e Inovação",
+                      "id": "subchefe-do-estado-maior-geral",
+                      "name": "Subchefe do Estado-Maior Geral",
                       "children": [],
                       "_reg": true
                     },
                     {
-                      "id": "3-secao-bm-3-operacoes-doutrina-e-estatistica",
-                      "name": "3ª Seção (BM/3): Operações, Doutrina e Estatística",
+                      "id": "1-secao-bm-1-politica-e-planejamento-de-pessoal-",
+                      "name": "1ª Seção (BM/1): Política e Planejamento de Pessoal e Legislação",
                       "children": [],
                       "_reg": true
                     },
                     {
-                      "id": "4-secao-bm-4-logistica",
-                      "name": "4ª Seção (BM/4): Logística",
+                      "id": "2-secao-bm-2-politica-e-planejamento-de-gestao-d",
+                      "name": "2ª Seção (BM/2): Política e Planejamento de Gestão do Conhecimento, Cultura e Inovação",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "3-secao-bm-3-politica-e-planejamento-de-operacoe",
+                      "name": "3ª Seção (BM/3): Política e Planejamento de Operações, Doutrina e Estatística",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "4-secao-bm-4-politica-e-planejamento-de-logistic",
+                      "name": "4ª Seção (BM/4): Política e Planejamento de Logística",
                       "children": [],
                       "_reg": true
                     },
@@ -9971,10 +10322,22 @@
                       "name": "6ª Seção (BM/6): Planejamento e Orçamento Institucional",
                       "children": [],
                       "_reg": true
+                    },
+                    {
+                      "id": "ajudancia-de-ordens",
+                      "name": "Ajudância de Ordens",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secretaria",
+                      "name": "Secretaria",
+                      "children": [],
+                      "_reg": true
                     }
                   ],
                   "abbreviation": "EMG",
-                  "detailId": "chefe_estado_maior_geral"
+                  "detailId": "emg-pa-lob"
                 },
                 {
                   "id": "presidente-comandante-geral",
@@ -10132,27 +10495,177 @@
             {
               "id": "gab-pa",
               "name": "Gabinete do Comandante-Geral",
-              "children": []
+              "children": [
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assistencia",
+                  "name": "Assistência",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-de-comunicacao-social",
+                  "name": "Assessoria de Comunicação Social",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-de-assuntos-institucionais",
+                  "name": "Assessoria de Assuntos Institucionais",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secretaria",
+                  "name": "Secretaria",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "ajudancia-de-ordens",
+                  "name": "Ajudância de Ordens",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "gab-pa-lob"
             },
             {
               "id": "ag-pa",
               "name": "Ajudância-Geral",
-              "children": []
+              "children": [
+                {
+                  "id": "ajudante-geral",
+                  "name": "Ajudante-Geral",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "fiscal-administrativo-do-comando-geral",
+                  "name": "Fiscal Administrativo do Comando-Geral",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-administrativa",
+                  "name": "Seção Administrativa",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secretaria-e-protocolo-geral",
+                  "name": "Secretaria e Protocolo-Geral",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "banda-de-musica",
+                  "name": "Banda de Música",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "ag-pa-lob"
             },
             {
               "id": "ctrl-pa",
               "name": "Controladoria Interna",
-              "children": []
+              "children": [
+                {
+                  "id": "controlador",
+                  "name": "Controlador",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-auditorias",
+                  "name": "Seção de Auditorias",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-analise-de-conformidade-normativa",
+                  "name": "Seção de Análise de Conformidade Normativa",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-contabil-orcamentaria-e-financeira",
+                  "name": "Seção Contábil, Orçamentária e Financeira",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secretaria",
+                  "name": "Secretaria",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "ci-pa-lob"
             },
             {
               "id": "cj-pa",
               "name": "Consultoria Jurídica",
-              "children": []
+              "children": [
+                {
+                  "id": "chefe-da-consultoria-juridica",
+                  "name": "Chefe da Consultoria Jurídica",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "CONJUR"
+                },
+                {
+                  "id": "membros-da-consultoria-juridica",
+                  "name": "Membros da Consultoria Jurídica",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "CONJUR"
+                },
+                {
+                  "id": "secretaria",
+                  "name": "Secretaria",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "conjur-pa-lob"
             },
             {
               "id": "ci-pa",
               "name": "Centro de Inteligência",
-              "children": []
+              "children": [
+                {
+                  "id": "chefia",
+                  "name": "Chefia",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-inteligencia",
+                  "name": "Seção de Inteligência",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-seguranca-organica",
+                  "name": "Seção de Segurança Orgânica",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secretaria",
+                  "name": "Secretaria",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "ceint-pa-lob"
             },
             {
               "id": "estado-maior-geral",
@@ -10389,7 +10902,79 @@
             {
               "id": "abm-pa",
               "name": "Academia Bombeiro Militar",
-              "children": []
+              "children": [
+                {
+                  "id": "grupamento-bombeiro-militar",
+                  "name": "Grupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBM"
+                },
+                {
+                  "id": "subgrupamento-bombeiro-militar",
+                  "name": "Subgrupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SGBM"
+                },
+                {
+                  "id": "secao-bombeiro-militar",
+                  "name": "Seção Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SBM"
+                },
+                {
+                  "id": "posto-avancado-bombeiro-militar",
+                  "name": "Posto Avançado Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PABM"
+                },
+                {
+                  "id": "posto-de-bombeiro-militar",
+                  "name": "Posto de Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PBM"
+                },
+                {
+                  "id": "grupamento-maritimo-e-fluvial",
+                  "name": "Grupamento Marítimo e Fluvial",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GMAF"
+                },
+                {
+                  "id": "grupamento-de-busca-e-salvamento",
+                  "name": "Grupamento de Busca e Salvamento",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBS"
+                },
+                {
+                  "id": "grupamento-de-socorro-e-emergencia",
+                  "name": "Grupamento de Socorro e Emergência",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GSE"
+                },
+                {
+                  "id": "grupamento-de-operacoes-aereas",
+                  "name": "Grupamento de Operações Aéreas",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GOA"
+                },
+                {
+                  "id": "nucleo-de-acoes-com-caes",
+                  "name": "Núcleo de Ações com Cães",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "NAC"
+                }
+              ],
+              "detailId": "exec-pa-lob"
             },
             {
               "id": "cfae-pa",
@@ -10425,9 +11010,23 @@
               "id": "bm-pa",
               "name": "Banda de Música",
               "children": []
+            },
+            {
+              "id": "centro-de-suprimento-e-manutencao-de-viaturas-e-",
+              "name": "Centro de Suprimento e Manutenção de Viaturas e Material Operacional",
+              "children": [],
+              "_reg": true,
+              "abbreviation": "CSMV/MOP"
+            },
+            {
+              "id": "colegio-militar",
+              "name": "Colégio Militar",
+              "children": [],
+              "_reg": true
             }
           ],
-          "category": "Apoio"
+          "category": "Apoio",
+          "detailId": "apoio-pa-lob"
         },
         {
           "id": "exec-pa",
@@ -10436,18 +11035,234 @@
             {
               "id": "gbm-pa",
               "name": "Grupamento Bombeiro Militar",
-              "children": [],
-              "abbreviation": "GBM"
+              "children": [
+                {
+                  "id": "grupamento-bombeiro-militar",
+                  "name": "Grupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBM"
+                },
+                {
+                  "id": "subgrupamento-bombeiro-militar",
+                  "name": "Subgrupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SGBM"
+                },
+                {
+                  "id": "secao-bombeiro-militar",
+                  "name": "Seção Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SBM"
+                },
+                {
+                  "id": "posto-avancado-bombeiro-militar",
+                  "name": "Posto Avançado Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PABM"
+                },
+                {
+                  "id": "posto-de-bombeiro-militar",
+                  "name": "Posto de Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PBM"
+                },
+                {
+                  "id": "grupamento-maritimo-e-fluvial",
+                  "name": "Grupamento Marítimo e Fluvial",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GMAF"
+                },
+                {
+                  "id": "grupamento-de-busca-e-salvamento",
+                  "name": "Grupamento de Busca e Salvamento",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBS"
+                },
+                {
+                  "id": "grupamento-de-socorro-e-emergencia",
+                  "name": "Grupamento de Socorro e Emergência",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GSE"
+                },
+                {
+                  "id": "grupamento-de-operacoes-aereas",
+                  "name": "Grupamento de Operações Aéreas",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GOA"
+                },
+                {
+                  "id": "nucleo-de-acoes-com-caes",
+                  "name": "Núcleo de Ações com Cães",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "NAC"
+                }
+              ],
+              "abbreviation": "GBM",
+              "detailId": "exec-pa-lob"
             },
             {
               "id": "sgbm-pa",
               "name": "Subgrupamento Bombeiro Militar",
-              "children": []
+              "children": [
+                {
+                  "id": "grupamento-bombeiro-militar",
+                  "name": "Grupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBM"
+                },
+                {
+                  "id": "subgrupamento-bombeiro-militar",
+                  "name": "Subgrupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SGBM"
+                },
+                {
+                  "id": "secao-bombeiro-militar",
+                  "name": "Seção Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SBM"
+                },
+                {
+                  "id": "posto-avancado-bombeiro-militar",
+                  "name": "Posto Avançado Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PABM"
+                },
+                {
+                  "id": "posto-de-bombeiro-militar",
+                  "name": "Posto de Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PBM"
+                },
+                {
+                  "id": "grupamento-maritimo-e-fluvial",
+                  "name": "Grupamento Marítimo e Fluvial",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GMAF"
+                },
+                {
+                  "id": "grupamento-de-busca-e-salvamento",
+                  "name": "Grupamento de Busca e Salvamento",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBS"
+                },
+                {
+                  "id": "grupamento-de-socorro-e-emergencia",
+                  "name": "Grupamento de Socorro e Emergência",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GSE"
+                },
+                {
+                  "id": "grupamento-de-operacoes-aereas",
+                  "name": "Grupamento de Operações Aéreas",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GOA"
+                },
+                {
+                  "id": "nucleo-de-acoes-com-caes",
+                  "name": "Núcleo de Ações com Cães",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "NAC"
+                }
+              ],
+              "detailId": "exec-pa-lob"
             },
             {
               "id": "sbm-pa",
               "name": "Seção Bombeiro Militar",
-              "children": []
+              "children": [
+                {
+                  "id": "grupamento-bombeiro-militar",
+                  "name": "Grupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBM"
+                },
+                {
+                  "id": "subgrupamento-bombeiro-militar",
+                  "name": "Subgrupamento Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SGBM"
+                },
+                {
+                  "id": "secao-bombeiro-militar",
+                  "name": "Seção Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "SBM"
+                },
+                {
+                  "id": "posto-avancado-bombeiro-militar",
+                  "name": "Posto Avançado Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PABM"
+                },
+                {
+                  "id": "posto-de-bombeiro-militar",
+                  "name": "Posto de Bombeiro Militar",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "PBM"
+                },
+                {
+                  "id": "grupamento-maritimo-e-fluvial",
+                  "name": "Grupamento Marítimo e Fluvial",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GMAF"
+                },
+                {
+                  "id": "grupamento-de-busca-e-salvamento",
+                  "name": "Grupamento de Busca e Salvamento",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GBS"
+                },
+                {
+                  "id": "grupamento-de-socorro-e-emergencia",
+                  "name": "Grupamento de Socorro e Emergência",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GSE"
+                },
+                {
+                  "id": "grupamento-de-operacoes-aereas",
+                  "name": "Grupamento de Operações Aéreas",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "GOA"
+                },
+                {
+                  "id": "nucleo-de-acoes-com-caes",
+                  "name": "Núcleo de Ações com Cães",
+                  "children": [],
+                  "_reg": true,
+                  "abbreviation": "NAC"
+                }
+              ],
+              "detailId": "exec-pa-lob"
             },
             {
               "id": "gmaf",
@@ -10478,9 +11293,24 @@
               "name": "Núcleo de Ações com Cães",
               "children": [],
               "abbreviation": "NAC"
+            },
+            {
+              "id": "posto-avancado-bombeiro-militar",
+              "name": "Posto Avançado Bombeiro Militar",
+              "children": [],
+              "_reg": true,
+              "abbreviation": "PABM"
+            },
+            {
+              "id": "posto-de-bombeiro-militar",
+              "name": "Posto de Bombeiro Militar",
+              "children": [],
+              "_reg": true,
+              "abbreviation": "PBM"
             }
           ],
-          "category": "Execução"
+          "category": "Execução",
+          "detailId": "exec-pa-lob"
         }
       ],
       "stats": {
@@ -10488,7 +11318,7 @@
         "has_regimento": true,
         "has_nga": false,
         "total_chars": 473925,
-        "organs_mapped": 98,
+        "organs_mapped": 169,
         "curated": true
       }
     },
@@ -13302,14 +14132,16 @@
               "name": "Subcomandante-Geral",
               "children": [],
               "abbreviation": "SCmt-G",
-              "rank": "Coronel Combatente"
+              "rank": "Coronel Combatente",
+              "detailId": "scg-rs-lob"
             },
             {
               "id": "csup-rs",
               "name": "Conselho Superior",
               "children": [],
               "abbreviation": "CSup",
-              "description": "Órgão consultivo."
+              "description": "Órgão consultivo.",
+              "detailId": "cs-rs-lob"
             },
             {
               "id": "correg-rs",
@@ -13415,16 +14247,19 @@
                   "id": "samo",
                   "name": "Subcomissão de Avaliação e Mérito de Oficiais",
                   "children": [],
-                  "abbreviation": "SAMO/CAM"
+                  "abbreviation": "SAMO/CAM",
+                  "detailId": "cam-rs-lob"
                 },
                 {
                   "id": "samp",
                   "name": "Subcomissão de Avaliação e Mérito de Praças",
                   "children": [],
-                  "abbreviation": "SAMP/CAM"
+                  "abbreviation": "SAMP/CAM",
+                  "detailId": "cam-rs-lob"
                 }
               ],
-              "abbreviation": "CAM"
+              "abbreviation": "CAM",
+              "detailId": "cam-rs-lob"
             },
             {
               "id": "gabinete-do-comando-geral",
@@ -18240,9 +19075,47 @@
             {
               "id": "assessorias-se",
               "name": "Assessorias",
-              "children": [],
+              "children": [
+                {
+                  "id": "assessoria-tecnica-de-engenharia-e-arquitetura",
+                  "name": "Assessoria Técnica de Engenharia e Arquitetura",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-de-inteligencia",
+                  "name": "Assessoria de Inteligência",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-tecnica-institucional",
+                  "name": "Assessoria Técnica Institucional",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-de-comunicacao",
+                  "name": "Assessoria de Comunicação",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-de-tecnologia-da-informacao",
+                  "name": "Assessoria de Tecnologia da Informação",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "assessoria-parlamentar",
+                  "name": "Assessoria Parlamentar",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
               "description": "Assessoria Técnica de Engenharia e Arquitetura; de Inteligência; Técnica Institucional; de Comunicação; de TI; Parlamentar (Art. 18 §1º).",
-              "legalRef": "Art. 18"
+              "legalRef": "Art. 18",
+              "detailId": "ass-se-lob"
             },
             {
               "id": "ac-se",
@@ -18250,7 +19123,8 @@
               "children": [],
               "abbreviation": "AC",
               "description": "Órgão Colegiado Superior, presidido pelo Comandante-Geral (Art. 20).",
-              "legalRef": "Art. 20"
+              "legalRef": "Art. 20",
+              "detailId": "altocomando-se-lob"
             },
             {
               "id": "subcomandante-geral",
@@ -18323,7 +19197,8 @@
             }
           ],
           "legalRef": "Lei nº 8.979/2022, Art. 22–27",
-          "category": "Direção Geral"
+          "category": "Direção Geral",
+          "detailId": "dg-se-lob"
         },
         {
           "id": "dir-op-se",
@@ -19069,7 +19944,8 @@
             }
           ],
           "legalRef": "Lei nº 8.979/2022, Art. 28–31",
-          "category": "Direção Operacional"
+          "category": "Direção Operacional",
+          "detailId": "do-se-lob"
         }
       ],
       "stats": {
@@ -19077,7 +19953,7 @@
         "has_regimento": true,
         "has_nga": false,
         "total_chars": 165884,
-        "organs_mapped": 132,
+        "organs_mapped": 138,
         "curated": true
       }
     },

@@ -599,6 +599,607 @@
         }
       ],
       "id": "exec_pa"
+    },
+    "cg-pa-lob": {
+      "name": "Comandante-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 6º, 7º, 8º",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 6º (Órgãos de Direção-Geral)",
+        "Art. 7º (Comandante-Geral)",
+        "Art. 8º (Competência)"
+      ],
+      "atribuicoes": [
+        "O comandante-geral é equiparado aos secretários de estado, fazendo jus às prerrogativas e honras do cargo de secretário de estado, sendo nomeado pelo Chefe do Poder Executivo Estadual dentre os oficiais da ativa da corporação, do último posto do Quadro de Oficiais Bombeiro Militar combatente (QOBM), não convocado da reserva, possuidor do curso superior de bombeiros, nos termos da legislação vigente (Art. 7º).",
+        "Compete ao comandante-geral: o comando, a gestão, o emprego, a supervisão e a coordenação geral das atividades da corporação, assessorado pelos órgãos de direção, apoio e de execução (I); a presidência do Alto Comando do CBMPA, da Comissão de Promoção de Oficiais e do Conselho do Mérito Bombeiro Militar (II); encaminhar ao órgão competente o projeto de orçamento anual e participar, no que couber, da elaboração do Plano Plurianual (III); celebrar convênios e contratos de interesse do CBMPA com entidades de direito público ou privado (IV); nomear e exonerar bombeiros militares no exercício das funções de direção, comando e assessoramento (V); autorizar bombeiros militares e servidores civis a se afastarem do estado (VI); ordenar o emprego de verbas orçamentárias ou de créditos abertos em favor do CBMPA (VII); expedir os atos necessários para a administração do CBMPA (VIII); incorporar praças e praças especiais (IX); promover praças e declarar aspirantes-a-oficial (X); conceder férias, licenças ou afastamentos de qualquer natureza (XI); instaurar e solucionar procedimentos e processos administrativos, disciplinares ou não, aplicando as penalidades previstas na legislação vigente (XII); criar, desenvolver e gerenciar programas de prevenção e proteção nas atividades bombeiro militar (XIII); certificar o atendimento do direito ao porte de arma de seus militares (XIV); e encaminhar ao Chefe do Poder Executivo a lista de promoção dos oficiais (XV) (Art. 8º, I a XV)."
+      ],
+      "desdobramentos": [
+        "Alto Comando",
+        "Estado-Maior Geral",
+        "Coordenadoria Estadual de Proteção e Defesa Civil do Pará (CEDEC)",
+        "Corregedoria-Geral",
+        "Comando de Operações",
+        "Departamentos-Gerais",
+        "Comissões",
+        "Gabinete do Comandante-Geral",
+        "Ajudância-Geral",
+        "Controladoria Interna",
+        "Consultoria Jurídica (CONJUR)",
+        "Centro de Inteligência (CEINT)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial da ativa, último posto do Quadro de Oficiais Bombeiro Militar Combatente (QOBM), não convocado da reserva, possuidor do curso superior de bombeiros; equiparado a Secretário de Estado (Art. 7º)",
+          "desdobramentos": [
+            "Alto Comando",
+            "Estado-Maior Geral",
+            "Coordenadoria Estadual de Proteção e Defesa Civil do Pará (CEDEC)",
+            "Corregedoria-Geral",
+            "Comando de Operações",
+            "Departamentos-Gerais",
+            "Comissões",
+            "Gabinete do Comandante-Geral",
+            "Ajudância-Geral",
+            "Controladoria Interna",
+            "Consultoria Jurídica (CONJUR)",
+            "Centro de Inteligência (CEINT)"
+          ],
+          "atribuicoes": [
+            "O comando, a gestão, o emprego, a supervisão e a coordenação geral das atividades da corporação, assessorado pelos órgãos de direção, apoio e de execução (Art. 8º, I)",
+            "A presidência do Alto Comando do Corpo de Bombeiros Militar do Pará (CBMPA), da Comissão de Promoção de Oficiais e do Conselho do Mérito Bombeiro Militar (II)",
+            "Encaminhar ao órgão competente o projeto de orçamento anual referente ao Corpo de Bombeiros Militar do Pará (CBMPA) e participar, no que couber, da elaboração do Plano Plurianual (III)",
+            "Celebrar convênios e contratos de interesse do Corpo de Bombeiros Militar do Pará (CBMPA) com entidades de direito público ou privado, nos termos da lei (IV)",
+            "Nomear e exonerar bombeiros militares no exercício das funções de direção, comando e assessoramento, nos termos desta lei (V)",
+            "Autorizar bombeiros militares e servidores civis da corporação a se afastarem do estado (VI)",
+            "Ordenar o emprego de verbas orçamentárias ou de créditos abertos em favor do Corpo de Bombeiros Militar do Pará (CBMPA) e de outros recursos que este venha a receber, oriundos de quaisquer fontes de receitas (VII)",
+            "Expedir os atos necessários para a administração do Corpo de Bombeiros Militar do Pará (CBMPA) (VIII)",
+            "Incorporar praças e praças especiais (IX)",
+            "Promover praças e declarar aspirantes-a-oficial (X)",
+            "Conceder férias, licenças ou afastamentos de qualquer natureza (XI)",
+            "Instaurar e solucionar procedimentos e processos administrativos, disciplinares ou não, aplicando as penalidades previstas na legislação vigente (XII)",
+            "Criar, desenvolver e gerenciar programas de prevenção e proteção nas atividades bombeiro militar que visem à melhoria da qualidade de vida do cidadão (XIII)",
+            "Certificar o atendimento do direito ao porte de arma de seus militares, bem como as hipóteses excepcionais de suspensão e cassação de porte de arma (XIV)",
+            "Encaminhar ao Chefe do Poder Executivo a lista de promoção dos oficiais, nos termos da lei que estabelece as regras de promoção (XV) (Art. 8º, I a XV)",
+            "Poderá delegar competência para a expedição de atos administrativos, visando à agilização da gestão da corporação (Art. 8º, § 1º)",
+            "Nos impedimentos ou ausências do Comandante-Geral, responderá pelo comando-geral o chefe do Estado-Maior Geral e, no impedimento ou ausência deste, seguirá a seguinte ordem de prioridade: o Coordenador-Adjunto Estadual de Proteção e Defesa Civil, o Corregedor-Geral, o Comandante Operacional e o chefe do Departamento-Geral mais antigo (Art. 8º, § 2º)"
+          ]
+        }
+      ],
+      "id": "cg-pa-lob"
+    },
+    "ac-pa-lob": {
+      "name": "Alto Comando",
+      "abbreviation": "AC",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, 10",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 9º (Alto Comando)",
+        "Art. 10 (Atribuições)"
+      ],
+      "atribuicoes": [
+        "O Alto Comando do CBMPA é o órgão colegiado de direção-geral, com atribuições deliberativas e consultivas (Art. 9º).",
+        "São atribuições do Alto Comando, no âmbito da corporação: em caráter consultivo, manifestar-se sobre o orçamento anual do CBMPA e outros assuntos de interesse do CBMPA (I, a e b); em caráter deliberativo, manifestar-se sobre a elaboração de reforma ou projeto de lei que envolva o CBMPA, a expedição de atos normativos provenientes de suas deliberações, as propostas referentes ao aumento do efetivo e criação e extinção de cargos, os conflitos de atribuições entre os órgãos de direção, de apoio e de execução, e a proposta referente à remuneração (II, a a e) (Art. 10, I e II)."
+      ],
+      "desdobramentos": [
+        "Presidente: Comandante-Geral",
+        "Membros natos: Chefe do Estado-Maior Geral, Coordenador-Adjunto Estadual de Proteção e Defesa Civil, Corregedor-Geral, Comandante Operacional, Chefe do Departamento-Geral de Administração, Chefe do Departamento-Geral de Pessoal, Chefe do Departamento-Geral de Cultura, Educação e Pesquisa, Chefe do Departamento-Geral de Segurança contra Incêndios e Emergências",
+        "Membros efetivos: 3 oficiais do último posto designados pelo Comandante-Geral"
+      ],
+      "cargos": [],
+      "id": "ac-pa-lob"
+    },
+    "emg-pa-lob": {
+      "name": "Estado-Maior Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 11, 12",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 11 (Estado-Maior Geral)",
+        "Art. 12 (Chefe do EMG)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior Geral é o órgão de direção-geral responsável, perante o comandante-geral, pela elaboração da política bombeiro militar, pelo planejamento estratégico, pela orientação do preparo e do emprego da corporação, pela organização, pela direção e pelo controle das atividades da corporação, elaborando diretrizes e ordens de comando em consonância com a missão institucional e a política de segurança pública do estado (Art. 11).",
+        "Compete ao Chefe do Estado-Maior Geral: substituir o Comandante-Geral nos seus impedimentos ou ausências, respondendo pelo comando-geral da corporação (I); dirigir, coordenar e controlar as atividades da sua área de atuação e dos órgãos subordinados (II); executar o planejamento aprovado pelo comandante-geral no tocante à competência dos órgãos subordinados (III); assessorar o comandante-geral na coordenação e supervisão geral das atividades da corporação por meio do controle das atividades dos órgãos de direção setorial (IV); assegurar a atuação convergente e dinâmica dos órgãos de direção, apoio e execução (V); supervisionar a execução das diretrizes, planos e ordens (VI); realizar inspeções periódicas (VII); e desempenhar outras atribuições delegadas pelo comandante-geral (VIII) (Art. 12, I a VIII)."
+      ],
+      "desdobramentos": [
+        "Chefe do Estado-Maior Geral",
+        "Subchefe do Estado-Maior Geral",
+        "1ª Seção (BM/1): Política e Planejamento de Pessoal e Legislação",
+        "2ª Seção (BM/2): Política e Planejamento de Gestão do Conhecimento, Cultura e Inovação",
+        "3ª Seção (BM/3): Política e Planejamento de Operações, Doutrina e Estatística",
+        "4ª Seção (BM/4): Política e Planejamento de Logística",
+        "5ª Seção (BM/5): Gestão pela Qualidade",
+        "6ª Seção (BM/6): Planejamento e Orçamento Institucional",
+        "Escritório de Projetos e Convênios",
+        "Ajudância de Ordens",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "emg-pa-lob"
+    },
+    "cedec-pa-lob": {
+      "name": "Coordenadoria Estadual de Proteção e Defesa Civil do Pará",
+      "abbreviation": "CEDEC",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral (Coordenador Estadual)",
+      "legalRef": "Art. 13, 14",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 13 (CEDEC)",
+        "Art. 14 (Constituição)"
+      ],
+      "atribuicoes": [
+        "A Coordenadoria Estadual de Proteção e Defesa Civil do Pará (CEDEC), órgão de direção-geral, é o órgão central e coordenador do Sistema Estadual de Proteção e Defesa Civil (SEPDEC), tem a missão de contribuir para proteção da vida, patrimônio e meio ambiente, atendendo a população no território paraense, em situação de emergência ou calamidade pública, desencadeadas por fatores anormais e adversos, bem como limitar riscos e perdas para a comunidade, com a finalidade de preservar e restabelecer a normalidade da vida comunitária, competindo-lhe: integrar, planejar, organizar, coordenar e supervisionar a execução das medidas preventivas de socorro assistenciais e de recuperação (I); preservar a moral da população e o restabelecimento da normalidade da vida comunitária em todo o território do estado do Pará (II); elaborar o Plano Estadual de Proteção e Defesa Civil, e suas diretrizes (III); celebrar e executar convênios com a União e com os municípios do estado (IV); desenvolver programas, projetos e atividades de defesa civil nas fases de normalidade ou anormalidade, voltados para prevenção, preparação e resposta (V); fazer mobilização entre os órgãos governamentais e não governamentais (VI); e fomentar a proteção e defesa civil nos municípios do estado (VII) (Art. 13, I a VII)."
+      ],
+      "desdobramentos": [
+        "Coordenador Estadual de Proteção e Defesa Civil (Comandante-Geral)",
+        "Coordenador-Adjunto Estadual de Proteção e Defesa Civil",
+        "Divisão de Gestão de Risco",
+        "Divisão de Gerenciamento de Desastres",
+        "Divisão Administrativa",
+        "Divisão Orçamentária e Financeira",
+        "Assessoria de Articulação e Gestão",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "cedec-pa-lob"
+    },
+    "correg-pa-lob": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "CORREG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 15",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 15 (Corregedoria-Geral)"
+      ],
+      "atribuicoes": [
+        "A Corregedoria-Geral (CORREG), diretamente vinculada ao comandante-geral, é o órgão correcional do CBMPA responsável pelo assessoramento disciplinar, pela orientação, prevenção e fiscalização das atividades funcionais e da conduta profissional, visando o aprimoramento da ética, da disciplina e da hierarquia entre os integrantes da corporação (Art. 15)."
+      ],
+      "desdobramentos": [
+        "Corregedor-Geral",
+        "Subcorregedor-Geral",
+        "Comissão Disciplinar Geral",
+        "Comissão Disciplinar de Recurso",
+        "Seção de Inteligência Correcional e Operações",
+        "Seção de Gestão de Processos e Apoio Administrativo",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "correg-pa-lob"
+    },
+    "co-pa-lob": {
+      "name": "Comando de Operações",
+      "abbreviation": "Comando Ops",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 16 (Comando de Operações)"
+      ],
+      "atribuicoes": [
+        "O Comando de Operações é o órgão de direção-geral responsável pela direção e pelo controle dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-fim da corporação (Art. 16)."
+      ],
+      "desdobramentos": [
+        "Comandante Operacional",
+        "Assistente",
+        "Seção de Planejamento de Pessoal",
+        "Seção de Planejamento Logístico",
+        "Seção de Planejamento de Operações e Estatística",
+        "Seção de Planejamento de Eventos",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "co-pa-lob"
+    },
+    "dga-pa-lob": {
+      "name": "Departamento-Geral de Administração",
+      "abbreviation": "DGA",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17, 18",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Departamentos-Gerais)",
+        "Art. 18 (DGA)"
+      ],
+      "atribuicoes": [
+        "O Departamento-Geral de Administração (DGA) é responsável pela direção e pelo controle dos órgãos de direção setorial de apoio logístico, de contratações e aquisições, de finanças e de tecnologia da informação e comunicação, que realizam a atividade-meio da corporação (Art. 18)."
+      ],
+      "desdobramentos": [
+        "Chefe do DGA",
+        "Assistente",
+        "Secretaria",
+        "Assessorias Técnicas",
+        "Diretoria de Apoio Logístico (DAL)",
+        "Diretoria de Finanças (DF)",
+        "Diretoria de Contratações e Aquisições (DCA)",
+        "Diretoria de Tecnologia da Informação e Comunicação (DTIC)"
+      ],
+      "cargos": [],
+      "id": "dga-pa-lob"
+    },
+    "dgp-pa-lob": {
+      "name": "Departamento-Geral de Pessoal",
+      "abbreviation": "DGP",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17, 19",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Departamentos-Gerais)",
+        "Art. 19 (DGP)"
+      ],
+      "atribuicoes": [
+        "O Departamento-Geral de Pessoal (DGP) é responsável pela direção e pelo controle das atividades de pessoal da corporação relacionadas ao ingresso, à identificação, à classificação e à movimentação, aos cadastros e às avaliações, ao recadastramento, às promoções, aos direitos, aos deveres e aos incentivos, à assistência psicológica, social e religiosa, ao acompanhamento e ao controle de veteranos e pensionistas, bem como de saúde (Art. 19)."
+      ],
+      "desdobramentos": [
+        "Chefe do DGP",
+        "Subchefe do DGP",
+        "Seção de Controle de Pessoal",
+        "Seção de Pagamento de Pessoal",
+        "Seção de Recrutamento, Seleção e Inclusão",
+        "Seção de Identificação",
+        "Secretaria",
+        "Diretoria de Saúde (DS)",
+        "Capelania"
+      ],
+      "cargos": [],
+      "id": "dgp-pa-lob"
+    },
+    "dgcep-pa-lob": {
+      "name": "Departamento-Geral de Cultura, Educação e Pesquisa",
+      "abbreviation": "DGCEP",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17, 20",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Departamentos-Gerais)",
+        "Art. 20 (DGCEP)"
+      ],
+      "atribuicoes": [
+        "O Departamento-Geral de Cultura, Educação e Pesquisa (DGCEP) é responsável pela gestão do sistema de ensino bombeiro militar, das atividades de pesquisa, relacionados à formação, à capacitação, ao aperfeiçoamento, à especialização, à extensão e qualificação dos oficiais e praças, bem como pela promoção da cultura (Art. 20)."
+      ],
+      "desdobramentos": [
+        "Chefe do DGCEP",
+        "Assistente",
+        "Seção de Planejamento de Ensino e Pesquisa",
+        "Secretaria",
+        "Academia Bombeiro Militar (ABM)",
+        "Centro de Formação, Aperfeiçoamento e Especialização (CFAE)",
+        "Centro de Capacitação Física e Desporto (CCFD)",
+        "Centro de Memória",
+        "Colégios Militares"
+      ],
+      "cargos": [],
+      "id": "dgcep-pa-lob"
+    },
+    "dgsci-pa-lob": {
+      "name": "Departamento-Geral de Segurança contra Incêndios e Emergências",
+      "abbreviation": "DGSCI",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17, 21",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Departamentos-Gerais)",
+        "Art. 21 (DGSCI)"
+      ],
+      "atribuicoes": [
+        "O Departamento-Geral de Segurança contra Incêndios e Emergências (DGSCI) é responsável por estabelecer diretrizes gerais de segurança contra incêndios e emergências, de modo a proteger a vida e a reduzir danos ao meio ambiente e ao patrimônio (Art. 21)."
+      ],
+      "desdobramentos": [
+        "Chefe do DGSCI",
+        "Subchefe do DGSCI",
+        "Seção de Fiscalização e Vistoria Técnica",
+        "Seção de Análise de Projetos",
+        "Seção de Perícia de Incêndio",
+        "Seção de Credenciamento de Empresas e Profissionais",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "dgsci-pa-lob"
+    },
+    "com-pa-lob": {
+      "name": "Comissões (CPO e CPP)",
+      "abbreviation": "COM",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 22, 23",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 22 (Comissão de Promoção de Oficiais)",
+        "Art. 23 (Comissão de Promoção de Praças)"
+      ],
+      "atribuicoes": [
+        "A Comissão de Promoção de Oficiais (CPO) é o órgão de assessoramento permanente do comandante-geral nos assuntos relativos às carreiras dos oficiais da corporação, competindo-lhe o controle, a avaliação e o processamento das promoções (Art. 22).",
+        "A Comissão de Promoção de Praças (CPP) é o órgão de assessoramento permanente do chefe do Estado-Maior Geral nos assuntos referentes às carreiras de praças da corporação, competindo-lhe o controle, a avaliação e o processamento das promoções (Art. 23)."
+      ],
+      "desdobramentos": [
+        "Comissão de Promoção de Oficiais (CPO): Presidente Comandante-Geral, membros natos e efetivos",
+        "Comissão de Promoção de Praças (CPP): Presidente Chefe do EMG, membro nato e efetivos"
+      ],
+      "cargos": [],
+      "id": "com-pa-lob"
+    },
+    "gab-pa-lob": {
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "GAB",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 24",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 24 (Gabinete do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comandante-Geral é um órgão de direção-geral responsável por prestar assessoria direta, permanente e pessoal ao comandante-geral (Art. 24)."
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Assistência",
+        "Assessoria de Comunicação Social",
+        "Assessoria de Assuntos Institucionais",
+        "Secretaria",
+        "Ajudância de Ordens"
+      ],
+      "cargos": [],
+      "id": "gab-pa-lob"
+    },
+    "ag-pa-lob": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 25",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 25 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "A Ajudância-Geral é o órgão de direção-geral que tem a seu cargo as funções de secretaria e apoio administrativo ao comando-geral, coordenação dos serviços gerais, manutenção e segurança do quartel do comando-geral (Art. 25)."
+      ],
+      "desdobramentos": [
+        "Ajudante-Geral",
+        "Fiscal Administrativo do Comando-Geral",
+        "Seção Administrativa",
+        "Secretaria e Protocolo-Geral",
+        "Banda de Música"
+      ],
+      "cargos": [],
+      "id": "ag-pa-lob"
+    },
+    "ci-pa-lob": {
+      "name": "Controladoria Interna",
+      "abbreviation": "CI",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 26 (Controladoria Interna)"
+      ],
+      "atribuicoes": [
+        "A Controladoria Interna (CI), órgão de direção-geral, subordinada ao Comandante-Geral, é responsável por adotar as providências relacionadas com a defesa do patrimônio público, auditoria, orientação, fiscalização, averiguação e análise das atividades de administração orçamentária, financeira, patrimonial e de gestão de pessoas no âmbito da corporação, sem prejuízo das demais atribuições definidas em lei (Art. 26)."
+      ],
+      "desdobramentos": [
+        "Controlador",
+        "Seção de Auditorias",
+        "Seção de Análise de Conformidade Normativa",
+        "Seção Contábil, Orçamentária e Financeira",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "ci-pa-lob"
+    },
+    "conjur-pa-lob": {
+      "name": "Consultoria Jurídica",
+      "abbreviation": "CONJUR",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 27",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 27 (Consultoria Jurídica)"
+      ],
+      "atribuicoes": [
+        "A Consultoria Jurídica (CONJUR) é órgão de direção-geral, diretamente subordinada ao Comandante-Geral, tendo por finalidade a prestação de assessoramento jurídico, competindo-lhe o estudo de questões de direito compreendidas na política de administração geral da instituição, examinar aspectos de legalidade dos atos e normas que lhe forem submetidos à análise e demais atribuições que venham a ser previstas em regulamento (Art. 27)."
+      ],
+      "desdobramentos": [
+        "Chefe da Consultoria Jurídica (CONJUR)",
+        "Membros da Consultoria Jurídica (CONJUR)",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "conjur-pa-lob"
+    },
+    "ceint-pa-lob": {
+      "name": "Centro de Inteligência",
+      "abbreviation": "CEINT",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 28",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 28 (Centro de Inteligência)"
+      ],
+      "atribuicoes": [
+        "O Centro de Inteligência (CEINT) é órgão de direção-geral, subordinado ao comandante-geral, responsável por planejar, coordenar, executar, fiscalizar, controlar, articular, supervisionar e gerenciar as atividades de inteligência bombeiro militar, no âmbito do CBMPA, dentro do território paraense, e assessorar o comandante-geral da corporação nos assuntos de cunho estratégico, tático e operacional que lhe forem confiados, além de se interrelacionar com os demais órgãos estaduais de inteligência e do Sistema Brasileiro de Inteligência (SISBIN) (Art. 28)."
+      ],
+      "desdobramentos": [
+        "Chefia",
+        "Seção de Inteligência",
+        "Seção de Segurança Orgânica",
+        "Secretaria"
+      ],
+      "cargos": [],
+      "id": "ceint-pa-lob"
+    },
+    "crb-pa-lob": {
+      "name": "Comandos Operacionais Intermediários de Bombeiros (CRB e CME-BM)",
+      "abbreviation": "CRB/CME-BM",
+      "category": "Direção Intermediária",
+      "source": "lob",
+      "subordinadoA": "Comando de Operações",
+      "legalRef": "Art. 29, 30, 31",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 29 (Direção Intermediária e Setorial)",
+        "Art. 30 (Comandos Operacionais Intermediários)",
+        "Art. 31 (Estrutura)"
+      ],
+      "atribuicoes": [
+        "Aos Comandos Operacionais Intermediários de Bombeiros, subordinados ao Comando de Operações, cabe a direção, o controle e o planejamento das atividades operacionais das suas Unidades Bombeiro Militar (UBMs) subordinadas, no âmbito de suas respectivas responsabilidades e circunscrições, sendo assim definidos: Comando Regional de Bombeiros de Proteção e Emergência Ambiental (CRB) (I); e Comando de Missões Especiais Bombeiro Militar (CME-BM) (II) (Art. 30, I e II)."
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Subcomandante",
+        "Seção de Administração",
+        "Seção de Planejamento, Instrução e Operações",
+        "Núcleo de Corregedoria"
+      ],
+      "cargos": [],
+      "id": "crb-pa-lob"
+    },
+    "dir-pa-lob": {
+      "name": "Diretorias (DAL, DF, DCA, DTIC, DS)",
+      "abbreviation": "DIR",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Departamentos-Gerais",
+      "legalRef": "Art. 32 a 37",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 32 (Diretorias)",
+        "Art. 33 (DAL)",
+        "Art. 34 (DF)",
+        "Art. 35 (DCA)",
+        "Art. 36 (DTIC)",
+        "Art. 37 (DS)"
+      ],
+      "atribuicoes": [
+        "As diretorias constituem os órgãos de direção setorial, subordinadas aos departamentos-gerais, para as atividades administrativas de apoio logístico, finanças, contratações e aquisições, tecnologia da informação e comunicação, e saúde, compreendendo: Diretoria de Apoio Logístico (DAL) (I); Diretoria de Finanças (DF) (II); Diretoria de Contratações e Aquisições (DCA) (III); Diretoria de Tecnologia da Informação e Comunicação (DTIC) (IV); e Diretoria de Saúde (DS) (V) (Art. 32, I a V).",
+        "À Diretoria de Apoio Logístico (DAL), subordinada ao Departamento-Geral de Administração (DGA), compete planejar, coordenar, fiscalizar e controlar as necessidades de apoio, suprimento, manutenção, patrimônio e obras (Art. 33).",
+        "À Diretoria de Finanças (DF), subordinada ao Departamento-Geral de Administração (DGA), compete realizar as atividades financeiras dos órgãos da corporação e a distribuição de recursos orçamentários, de acordo com o planejamento estabelecido (Art. 34).",
+        "À Diretoria de Contratações e Aquisições (DCA), subordinada ao Departamento-Geral de Administração (DGA), compete realizar os procedimentos licitatórios da corporação, além da formalização e administração dos contratos e convênios da corporação (Art. 35).",
+        "À Diretoria de Tecnologia da Informação e Comunicação (DTIC), subordinada ao Departamento-Geral de Administração (DGA), compete realizar o planejamento, a gestão e a execução das ações referentes à tecnologia da informação e comunicação (Art. 36).",
+        "À Diretoria de Saúde (DS), subordinada ao Departamento-Geral de Pessoal (DGP), compete o planejamento, a gestão e a execução das ações de assistência relacionadas à saúde e atenção biopsicossocial do bombeiro militar, seus dependentes legais, bem como dos animais do CBMPA (Art. 37)."
+      ],
+      "desdobramentos": [
+        "Diretoria de Apoio Logístico (DAL)",
+        "Diretoria de Finanças (DF)",
+        "Diretoria de Contratações e Aquisições (DCA)",
+        "Diretoria de Tecnologia da Informação e Comunicação (DTIC)",
+        "Diretoria de Saúde (DS)"
+      ],
+      "cargos": [],
+      "id": "dir-pa-lob"
+    },
+    "apoio-pa-lob": {
+      "name": "Órgãos de Apoio",
+      "abbreviation": "APOIO",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Departamentos-Gerais / Diretoria de Apoio Logístico / Ajudância-Geral",
+      "legalRef": "Art. 38 a 46",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 38 (Órgãos de Apoio)",
+        "Art. 39 a 46 (Cada órgão)"
+      ],
+      "atribuicoes": [
+        "Os órgãos de apoio compreendem: Academia Bombeiro Militar (I); Centro de Formação, Aperfeiçoamento e Especialização (II); Centro de Capacitação Física e Desporto (III); Centro de Suprimento e Manutenção de Viaturas e Material Operacional (IV); Centro de Patrimônio (V); Centro de Memória (VI); Capelania (VII); Banda de Música (VIII); e Colégio Militar (IX) (Art. 38, I a IX).",
+        "A Academia Bombeiro Militar 'Cap BM Antônio Veríssimo Ivo de Abreu' (ABM) é órgão de apoio subordinado ao Departamento-Geral de Cultura, Educação e Pesquisa (DGCEP), responsável pela realização dos cursos de formação, adaptação e habilitação de Oficiais, bem como pelas pós-graduações dos Oficiais e pelo desenvolvimento de altos estudos e pesquisas científicas de segurança pública (Art. 39).",
+        "O Centro de Formação, Aperfeiçoamento e Especialização 'Maj BM Henrique Rubim' (CFAE) é órgão de apoio subordinado ao DGCEP, responsável pela realização dos cursos de formação, adaptação e aperfeiçoamento de Praças e especialização de bombeiros militares (Art. 40).",
+        "O Centro de Capacitação Física e Desporto (CCFD) é órgão de apoio subordinado ao DGCEP, responsável pelas ações relacionadas à qualidade de vida e desporto na corporação, ligadas ao treinamento físico militar, avaliação física, treinamento desportivo e áreas correlatas à capacitação ao exercício da profissão bombeiro militar (Art. 41).",
+        "O Centro de Suprimento, Manutenção de Viaturas e Material Operacional (CSMV/MOP) é órgão de apoio subordinado à Diretoria de Apoio Logístico (DAL), incumbido da obtenção, da estocagem e da distribuição dos suprimentos específicos e da execução, da manutenção do armamento e do material especializado, incumbindo-lhe ainda o suprimento e a manutenção das viaturas e de todo o equipamento da corporação (Art. 42).",
+        "O Centro de Patrimônio é unidade de apoio subordinada à DAL, responsável pelo patrimônio por meio do controle dos bens móveis, imóveis e semoventes, materiais e equipamentos operacionais pertencentes à corporação (Art. 43).",
+        "O Centro de Memória é órgão de apoio subordinado ao DGCEP, responsável por conservar, investigar, comunicar, interpretar, promover e expor conjuntos, concertos e coleções de valor histórico, artístico, científico, técnico ou de qualquer outra natureza cultural (Art. 44).",
+        "A Capelania, órgão de apoio subordinado ao Departamento-Geral de Pessoal (DGP), é responsável pela assistência ecumênica dos militares da corporação e seus dependentes (Art. 45).",
+        "A Banda de Música, órgão de apoio subordinado à Ajudância-Geral, destina-se a realizar concertos, formaturas, eventos e outras solenidades de interesse da corporação (Art. 46)."
+      ],
+      "desdobramentos": [
+        "Academia Bombeiro Militar (ABM)",
+        "Centro de Formação, Aperfeiçoamento e Especialização (CFAE)",
+        "Centro de Capacitação Física e Desporto (CCFD)",
+        "Centro de Suprimento e Manutenção de Viaturas e Material Operacional (CSMV/MOP)",
+        "Centro de Patrimônio",
+        "Centro de Memória",
+        "Capelania",
+        "Banda de Música",
+        "Colégio Militar"
+      ],
+      "cargos": [],
+      "id": "apoio-pa-lob"
+    },
+    "exec-pa-lob": {
+      "name": "Órgãos de Execução (Unidades Bombeiro Militar)",
+      "abbreviation": "UBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Órgãos de Direção Intermediária",
+      "legalRef": "Art. 47 a 56",
+      "baseLegal": "Lei nº 11.060, de 1º de julho de 2025 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 47 (UBMs)",
+        "Art. 48 (Multiemprego)",
+        "Art. 49 (Especializadas)",
+        "Art. 50 a 56 (Cada Unidade)"
+      ],
+      "atribuicoes": [
+        "As Unidades Bombeiro Militar (UBMs), subordinadas aos órgãos de direção intermediária, são órgãos de execução e constituem as unidades operacionais da corporação, classificadas em unidades de multiemprego e unidades especializadas (Art. 47).",
+        "As Unidades Bombeiro Militar de multiemprego são compostas por: Grupamento Bombeiro Militar (GBM) (I); Subgrupamento Bombeiro Militar (SGBM) (II); Seção Bombeiro Militar (SBM) (III); Posto Avançado Bombeiro Militar (PABM) (IV); e Posto de Bombeiro Militar (PBM) (V) (Art. 48, I a V).",
+        "As Unidades Bombeiro Militar especializadas são compostas por: Grupamento Marítimo e Fluvial (GMAF) (I); Grupamento de Busca e Salvamento (GBS) (II); Grupamento de Socorro e Emergência (GSE) (III); Grupamento de Operações Aéreas (GOA) (IV); e Núcleo de Ações com Cães (NAC) (V) (Art. 49, I a V).",
+        "Os Grupamentos e Subgrupamentos Bombeiro Militar são órgãos de execução do CBMPA, subordinados aos Comandos Regionais de Bombeiros de Proteção e Emergência Ambiental (CRB) correspondentes, de acordo com a sua circunscrição (Art. 50).",
+        "A Seção Bombeiro Militar (SBM) é a unidade destinada a atender serviços específicos objetos de convênio com empresas públicas ou privadas; não executa atividades referentes à segurança contra incêndios e emergências (Art. 51).",
+        "Os Postos Avançados Bombeiro Militar (PABMs) são as menores unidades independentes de execução operacional e estrutura física da corporação, subordinados aos comandos regionais correspondentes, de acordo com a sua circunscrição (Art. 52).",
+        "O Grupamento Marítimo e Fluvial (GMAF) é órgão de execução do CBMPA, subordinado ao Comando de Missões Especiais Bombeiro Militar (CME-BM), tendo como atribuições as ações de prevenção de acidentes e incêndios marítimos e fluviais em todo estado, além de busca, resgate e salvamento aquático (Art. 53).",
+        "O Grupamento de Busca e Salvamento (GBS) é órgão de execução do CBMPA, subordinado ao CME-BM, tendo como atribuições as ações de busca, salvamento e resgate, além de outras específicas de bombeiros militar, em todo o território do estado do Pará (Art. 54).",
+        "O Grupamento de Socorro e Emergência (GSE) é órgão de execução do CBMPA, subordinado ao CME-BM, tendo como atribuições as ações de emergências médicas voltadas ao atendimento pré-hospitalar e socorro de urgência, em todo o território do Estado (Art. 55).",
+        "O Núcleo de Ações com Cães (NAC) é órgão de execução do CBMPA, subordinado ao CME-BM, tendo como atribuições as ações relativas à busca, resgate e salvamento com cães (Art. 56)."
+      ],
+      "desdobramentos": [
+        "Grupamento Bombeiro Militar (GBM)",
+        "Subgrupamento Bombeiro Militar (SGBM)",
+        "Seção Bombeiro Militar (SBM)",
+        "Posto Avançado Bombeiro Militar (PABM)",
+        "Posto de Bombeiro Militar (PBM)",
+        "Grupamento Marítimo e Fluvial (GMAF)",
+        "Grupamento de Busca e Salvamento (GBS)",
+        "Grupamento de Socorro e Emergência (GSE)",
+        "Grupamento de Operações Aéreas (GOA)",
+        "Núcleo de Ações com Cães (NAC)"
+      ],
+      "cargos": [],
+      "id": "exec-pa-lob"
     }
   }
 }

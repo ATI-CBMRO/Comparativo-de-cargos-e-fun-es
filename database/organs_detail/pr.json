@@ -715,6 +715,564 @@
         }
       ],
       "id": "uoa"
+    },
+    "cg-pr-lob": {
+      "name": "Comandante-Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 9º, § 1º, I, a; Art. 10",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 9º (Estrutura organizacional básica)",
+        "Art. 10 (Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Comandante-Geral, responsável superior pelo comando e pela administração geral do Corpo de Bombeiros Militar do Paraná - CBMPR, será nomeado pelo Governador do Estado, dentre os Coronéis Combatentes da ativa da Corporação. (Art. 10)",
+        "Parágrafo único. O Comandante-Geral tem precedência hierárquica e funcional sobre todos os Oficiais e Praças do Corpo de Bombeiros Militar do Paraná - CBMPR que estejam no exercício de funções bombeiros-militares, de natureza ou interesse bombeiro-militar, dentro ou fora da Corporação, com exceção da precedência funcional em relação ao Coordenador Estadual da Defesa Civil. (Art. 10, parágrafo único)"
+      ],
+      "desdobramentos": [
+        "Subcomandante-Geral - SCG",
+        "Estado-Maior - EM",
+        "Gabinete do Comando-Geral - Gab.CmtG",
+        "Consultoria Institucional - CI",
+        "Comissão de Promoções de Oficiais - CPO",
+        "Comissão de Promoções de Praças - CPP",
+        "Comissão de Mérito - CM",
+        "Corregedoria-Geral - Coger"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel Combatente da ativa do Corpo de Bombeiros Militar do Paraná - CBMPR (Art. 10)",
+          "desdobramentos": [
+            "Subcomandante-Geral - SCG",
+            "Estado-Maior - EM",
+            "Gabinete do Comando-Geral - Gab.CmtG",
+            "Consultoria Institucional - CI",
+            "Comissão de Promoções de Oficiais - CPO",
+            "Comissão de Promoções de Praças - CPP",
+            "Comissão de Mérito - CM",
+            "Corregedoria-Geral - Coger"
+          ],
+          "atribuicoes": [
+            "O Comandante-Geral, responsável superior pelo comando e pela administração geral do Corpo de Bombeiros Militar do Paraná - CBMPR, será nomeado pelo Governador do Estado, dentre os Coronéis Combatentes da ativa da Corporação. (Art. 10)",
+            "Parágrafo único. O Comandante-Geral tem precedência hierárquica e funcional sobre todos os Oficiais e Praças do Corpo de Bombeiros Militar do Paraná - CBMPR que estejam no exercício de funções bombeiros-militares, de natureza ou interesse bombeiro-militar, dentro ou fora da Corporação, com exceção da precedência funcional em relação ao Coordenador Estadual da Defesa Civil. (Art. 10, parágrafo único)"
+          ]
+        }
+      ],
+      "id": "cg-pr-lob"
+    },
+    "scg-pr-lob": {
+      "name": "Subcomandante-Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 1º, I, b; Art. 11",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 11 (Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Subcomandante-Geral é o substituto imediato do Comandante-Geral nos seus impedimentos, afastamentos temporários e/ou vacância, e exerce a função de coordenador operacional da Corporação. (Art. 11)",
+        "§ 2º O Subcomandante-Geral terá precedência hierárquica e funcional sobre os demais Oficiais e Praças, exceto o Comandante-Geral. (Art. 11, § 2º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "scg-pr-lob"
+    },
+    "em-pr-lob": {
+      "name": "Estado-Maior",
+      "abbreviation": "EM",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 1º, I, c; Art. 12",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 12 (Estado-Maior)"
+      ],
+      "atribuicoes": [
+        "O Estado-Maior - EM é o órgão de direção geral responsável, perante o Comandante-Geral do Corpo de Bombeiros Militar do Paraná - CBMPR, pelo planejamento estratégico da Corporação, cabendo-lhe a elaboração de diretrizes e ordens do Comando-Geral no acionamento dos órgãos de direção setorial e de execução no cumprimento de suas missões. (Art. 12)",
+        "§ 3º O Estado-Maior, para realizar o planejamento estratégico, as proposições normativas da Corporação e demais atribuições, será composto pelas seguintes seções: I - 1ª Seção - BM/1: responsável pelos assuntos relativos a pessoal e legislação; II - 2ª Seção - BM/2: responsável pelas atividades de inteligência; III - 3ª Seção - BM/3: responsável pelos assuntos relativos a planejamento, operações e estatística; IV - 4ª Seção - BM/4: responsável pelos assuntos relativos à logística da Corporação. (Art. 12, § 3º)"
+      ],
+      "desdobramentos": [
+        "1ª Seção - BM/1",
+        "2ª Seção - BM/2",
+        "3ª Seção - BM/3",
+        "4ª Seção - BM/4"
+      ],
+      "cargos": [],
+      "id": "em-pr-lob"
+    },
+    "gabcmtg-pr-lob": {
+      "name": "Gabinete do Comando-Geral",
+      "abbreviation": "Gab.CmtG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 1º, I, d; Art. 14",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 14 (Gabinete do Comando-Geral)"
+      ],
+      "atribuicoes": [
+        "O Gabinete do Comando-Geral será chefiado por um Oficial Superior Combatente da ativa da Corporação, de livre escolha do Comandante-Geral, competindo-lhe: I - a assistência direta ao Comandante-Geral no trato e apreciação de assuntos institucionais; II - a recepção, o estudo e a triagem dos expedientes encaminhados ao Comandante-Geral; III - a transmissão e o controle da execução das ordens emanadas pelo Comandante-Geral; IV - a coordenação dos serviços de Ajudância de Ordens do Comandante-Geral; V - a execução e o controle das atividades relacionadas com a administração financeira, contabilidade, material e aprovisionamento do Comando-Geral. (Art. 14)"
+      ],
+      "desdobramentos": [
+        "Ajudância-Geral - AG",
+        "Assessoria Estratégica - Assest",
+        "Assessoria de Comunicação Organizacional - Assecom",
+        "Secretaria do Comando-Geral - Sec.CmdoG"
+      ],
+      "cargos": [],
+      "id": "gabcmtg-pr-lob"
+    },
+    "ag-pr-lob": {
+      "name": "Ajudância-Geral",
+      "abbreviation": "AG",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Chefe de Gabinete do Comando-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 16 (Ajudância-Geral)"
+      ],
+      "atribuicoes": [
+        "A Ajudância-Geral, subordinada ao Chefe de Gabinete, exercerá o apoio administrativo ao Comando-Geral, competindo-lhe: I - a organização, a direção e a supervisão: a) do pessoal auxiliar de todos os órgãos do Comando-Geral; b) do efetivo da Banda de Música do Corpo de Bombeiros Militar do Paraná - CBMPR; II - a coordenação dos trabalhos de protocolo geral da Corporação; III - o controle da entrada e retirada de processos e documentos do arquivo geral; IV - a elaboração dos boletins-gerais; V - o desenvolvimento das demais tarefas relacionadas com a segurança do aquartelamento e dos serviços gerais do Comando-Geral; VI - a promoção das atividades necessárias para a manutenção e desenvolvimento do centro histórico. (Art. 16)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ag-pr-lob"
+    },
+    "assest-pr-lob": {
+      "name": "Assessoria Estratégica",
+      "abbreviation": "Assest",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Assessoria Estratégica)"
+      ],
+      "atribuicoes": [
+        "A Assessoria Estratégica é órgão que presta suporte ao Comandante-Geral, competindo-lhe as atividades de: I - planejamento, implementação e monitoramento de projetos e ações institucionais; II - apoio metodológico e assessoramento no desenvolvimento de projetos; III - gestão, monitoramento e controle da captação de recursos; IV - promoção das relações entre as instituições afetas à segurança pública; V - assessoramento institucional relacionado aos Poderes Legislativo e Judiciário; VI - assessoramento nos assuntos de defesa civil; VII - promoção de políticas públicas, controle e coordenação do Serviço Integrado de Atendimento ao Trauma em Emergência - SIATE, no âmbito da Corporação. (Art. 17)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "assest-pr-lob"
+    },
+    "assecom-pr-lob": {
+      "name": "Assessoria de Comunicação Organizacional",
+      "abbreviation": "Assecom",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 18 (Assessoria de Comunicação Organizacional)"
+      ],
+      "atribuicoes": [
+        "A Assessoria de Comunicação Organizacional é órgão que presta assessoramento ao Comando-Geral, competindo-lhe as atividades de: I - comunicação social, campanhas de educação preventiva e assessoria de imprensa; II - organização de solenidades na sede do Corpo de Bombeiros Militar do Paraná - CBMPR, orientando e fiscalizando a execução de eventos nas demais unidades. (Art. 18)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "assecom-pr-lob"
+    },
+    "secg-pr-lob": {
+      "name": "Secretaria do Comando-Geral",
+      "abbreviation": "Sec.CmdoG",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Chefe de Gabinete do Comando-Geral",
+      "legalRef": "Art. 9º, § 1º, I, d, 4",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 9º, § 1º, I, d, 4 (Secretaria do Comando-Geral)"
+      ],
+      "atribuicoes": [
+        "À Secretaria do Comando-Geral compete: I - auxiliar o Chefe de Gabinete na elaboração dos documentos a serem assinados pelo Comandante-Geral e pelo Subcomandante-Geral; II - providenciar o encaminhamento dos expedientes do Comandante-Geral e do Subcomandante-Geral aos destinatários; III - manter arquivo físico e digitalizado dos documentos elaborados pela Secretaria."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "secg-pr-lob"
+    },
+    "ci-pr-lob": {
+      "name": "Consultoria Institucional",
+      "abbreviation": "CI",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral e Subcomandante-Geral",
+      "legalRef": "Art. 9º, § 1º, I, e; Art. 19",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 19 (Consultoria Institucional)"
+      ],
+      "atribuicoes": [
+        "A Consultoria Institucional é o órgão que presta assessoramento direto ao Comandante-Geral e ao Subcomandante-Geral, competindo-lhe: I - o estudo de questões de direito compreendidas na política de administração geral da Corporação, exames de aspectos de legalidade dos atos e normas que forem submetidos à sua apreciação e demais atribuições que venham a ser previstas em regulamentos; II - a orientação quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas pela Procuradoria-Geral do Estado - PGE; III - a compilação de elementos de fato e de direito para preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado - PGE para a defesa dos interesses do Estado em ações judiciais; IV - a análise das minutas e convênios que forem submetidos à sua apreciação, verificando se preenchem os requisitos legais necessários à sua celebração. (Art. 19)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ci-pr-lob"
+    },
+    "com-pr-lob": {
+      "name": "Comissões",
+      "abbreviation": "CPO/CPP/CM",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 1º, I, f, g, h; Art. 20",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 20 (Comissões)"
+      ],
+      "atribuicoes": [
+        "Existirão, no âmbito do Corpo de Bombeiros Militar do Paraná - CBMPR, em caráter permanente, as seguintes comissões, subordinadas diretamente ao Comandante-Geral: I - Comissão de Promoções de Oficiais - CPO; II - Comissão de Promoções de Praças - CPP; III - Comissão de Mérito - CM. Parágrafo único. As comissões serão regulamentadas por ato do Comandante-Geral, que poderá constituir outras comissões de caráter temporário. (Art. 20)"
+      ],
+      "desdobramentos": [
+        "Comissão de Promoções de Oficiais - CPO",
+        "Comissão de Promoções de Praças - CPP",
+        "Comissão de Mérito - CM"
+      ],
+      "cargos": [],
+      "id": "com-pr-lob"
+    },
+    "coger-pr-lob": {
+      "name": "Corregedoria-Geral",
+      "abbreviation": "Coger",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 1º, II; Art. 22",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 22 (Corregedoria-Geral)",
+        "Art. 23 (Competências)"
+      ],
+      "atribuicoes": [
+        "A Corregedoria-Geral do Corpo de Bombeiros Militar do Paraná - CBMPR é o órgão técnico, subordinado ao Comandante-Geral, com atuação em todo o Estado, com a finalidade de: I - assegurar a correta aplicação da lei; II - padronizar os procedimentos de Polícia Judiciária Militar e de processos e procedimentos administrativos; III - realizar correições, fiscalizações e garantir a preservação dos princípios da hierarquia e disciplina na Corporação. (Art. 22)",
+        "À Corregedoria-Geral compete, dentre outras atribuições: I - a realização de correições, inspeções e fiscalizações nas diversas unidades da Corporação; II - o permanente acompanhamento do público interno, visando prevenir e reprimir a prática de atos de improbidade administrativa, crimes em geral e violações da disciplina e hierarquia militares, bem como produzir suporte probatório necessário à instauração dos respectivos processos e procedimentos administrativos, quando de sua ocorrência; III - o acompanhamento, controle e fiscalização dos autos dos procedimentos de Polícia Judiciária Militar no âmbito da Corporação, saneamento e preparação dos atos de competência do Comandante-Geral e demais diligências de informação sobre outros documentos, quando solicitado; IV - a expedição de orientações sobre a aplicação da legislação relativa à apuração das infrações criminais e disciplinares, inclusive promover a interpretação de jurisprudências e outras matérias atinentes aos serviços da Corregedoria-Geral; V - a apuração de crimes militares, fatos de cunho administrativo e faltas disciplinares, realizando os procedimentos legais, quando forem avocados, instaurados ou determinados pelo Comandante-Geral; VI - a requisição do comparecimento de bombeiros militares e civis vinculados de qualquer forma à Corporação; VII - o recebimento de reclamações contra ações ou omissões perpetradas por bombeiros militares, tomando as medidas legais cabíveis ou encaminhando à autoridade competente; VIII - o apoio aos Comandantes de Unidades e a quaisquer órgãos, quando solicitado, prestando auxílio técnico especializado, procedendo a diligências e exarando informações e pareceres; IX - o acompanhamento de procedimentos investigatórios a que tenham sido submetidos bombeiros militares em repartições policiais, organizações militares e outras; X - a manutenção e atualização dos arquivos de identificação por todos os meios disponíveis e o registro dos antecedentes dos integrantes da Corporação; XI - o cumprimento, prioritariamente, dos mandados de prisão e alvarás de soltura que envolvam integrantes da Corporação; XII - a adoção, de ofício ou quando provocada, de qualquer outra providência necessária ao fiel desempenho das atribuições que lhe são conferidas nesta Lei; XIII - o desempenho de outras atividades por delegação de competência do Comandante-Geral. (Art. 23)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "coger-pr-lob"
+    },
+    "dp-pr-lob": {
+      "name": "Diretoria de Pessoal",
+      "abbreviation": "DP",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 2º, I; Art. 26",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 25 (Diretorias e ESBM)",
+        "Art. 26 (Diretoria de Pessoal)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Pessoal é o órgão de direção setorial do sistema de pessoal, responsável por: I - desenvolvimento, coordenação, fiscalização, orientação, acompanhamento e controle das atividades relacionadas com a classificação e movimentação de pessoal; II - mobilização, inativos, cadastro e avaliação, direitos, deveres, incentivos, gerenciamento e inspeção da folha de pagamento; III - identificação, pessoal civil, serviço auxiliar temporário e recrutamento; IV - acompanhamento e controle das atividades técnico-administrativas relativas aos serviços de saúde física e mental, assistência social e psicológica; V - assessoramento nos assuntos referentes a pessoal. (Art. 26)"
+      ],
+      "desdobramentos": [
+        "Centro de Recrutamento e Seleção - CRS",
+        "Centro de Saúde - CS",
+        "Centro de Educação Física e Desporto - CEFID"
+      ],
+      "cargos": [],
+      "id": "dp-pr-lob"
+    },
+    "dalf-pr-lob": {
+      "name": "Diretoria de Apoio Logístico e Finanças",
+      "abbreviation": "DALF",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 2º, II; Art. 27",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 27 (Diretoria de Apoio Logístico e Finanças)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Apoio Logístico e Finanças é o órgão de direção setorial responsável por: I - coordenação, controle e execução das atividades de logística; II - suprimento, manutenção e controle patrimonial da Corporação; III - planejamento, acompanhamento e execução orçamentária e financeira; IV - atividades de controladoria e auditoria de recursos descentralizados. (Art. 27)"
+      ],
+      "desdobramentos": [
+        "Centro de Planejamento e Compras - CPC",
+        "Centro de Administração Logística - CAL",
+        "Centro de Orçamento e Finanças - COF",
+        "Centro de Suprimento e Manutenção - CSM"
+      ],
+      "cargos": [],
+      "id": "dalf-pr-lob"
+    },
+    "dat-pr-lob": {
+      "name": "Diretoria de Atividades Técnicas",
+      "abbreviation": "DAT",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 2º, III; Art. 28",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 28 (Diretoria de Atividades Técnicas)"
+      ],
+      "atribuicoes": [
+        "A Diretoria de Atividades Técnicas é o órgão de direção setorial responsável pela coordenação, controle e assessoramento em assuntos relacionados: I - à prevenção e combate a incêndios e desastres em edificações, estabelecimentos, áreas de risco e eventos temporários, atuando por meio do gerenciamento normativo, estudos e pesquisa de incêndios; II - à tecnologia da informação e comunicação, com ações de gestão e desenvolvimento de sistemas informatizados, infraestrutura, segurança, projetos, inovações e governança. (Art. 28)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "dat-pr-lob"
+    },
+    "esbm-pr-lob": {
+      "name": "Escola Superior de Bombeiro Militar",
+      "abbreviation": "ESBM",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 9º, § 2º, IV; Art. 29",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 29 (Escola Superior de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "A Escola Superior de Bombeiro Militar é o órgão de direção setorial de ensino e instrução no âmbito do Corpo de Bombeiros Militar do Paraná - CBMPR, responsável pelo planejamento, coordenação, fiscalização, execução e controle das atividades de ensino desenvolvidas pela Corporação, podendo atuar em parceria com outras instituições. (Art. 29)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "esbm-pr-lob"
+    },
+    "crs-pr-lob": {
+      "name": "Centro de Recrutamento e Seleção",
+      "abbreviation": "CRS",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Pessoal",
+      "legalRef": "Art. 30, I",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 30, I (Centro de Recrutamento e Seleção)"
+      ],
+      "atribuicoes": [
+        "Centro de Recrutamento e Seleção - CRS: incumbido do desenvolvimento, acompanhamento e supervisão das atividades de seleção dos candidatos ao ingresso no Corpo de Bombeiros Militar do Paraná - CBMPR. (Art. 30, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "crs-pr-lob"
+    },
+    "cs-pr-lob": {
+      "name": "Centro de Saúde",
+      "abbreviation": "CS",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Pessoal",
+      "legalRef": "Art. 30, II",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 30, II (Centro de Saúde)"
+      ],
+      "atribuicoes": [
+        "Centro de Saúde - CS: incumbido de orientar as atividades afetas à saúde dos bombeiros militares ativos e inativos, seus dependentes e pensionistas. (Art. 30, II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cs-pr-lob"
+    },
+    "cefid-pr-lob": {
+      "name": "Centro de Educação Física e Desporto",
+      "abbreviation": "CEFID",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Pessoal",
+      "legalRef": "Art. 30, III",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 30, III (Centro de Educação Física e Desporto)"
+      ],
+      "atribuicoes": [
+        "Centro de Educação Física e Desporto - CEFID: incumbido de planejar, coordenar e operacionalizar as atividades voltadas à aptidão física do efetivo da Corporação, em especial os testes de aptidão física para inclusões, promoções e seleções de cursos internos e externos. (Art. 30, III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cefid-pr-lob"
+    },
+    "cpc-pr-lob": {
+      "name": "Centro de Planejamento e Compras",
+      "abbreviation": "CPC",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Apoio Logístico e Finanças",
+      "legalRef": "Art. 31, I",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 31, I (Centro de Planejamento e Compras)"
+      ],
+      "atribuicoes": [
+        "Centro de Planejamento e Compras - CPC, responsável por: a) projetos que visem novas aquisições; b) planejamento orçamentário; c) confecção e execução do Plano de Contratações Anual; d) planejamento e acompanhamento das obras e reformas das instalações; e) acompanhamento e supervisão da vigência e da execução de contratos e convênios. (Art. 31, I)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cpc-pr-lob"
+    },
+    "cal-pr-lob": {
+      "name": "Centro de Administração Logística",
+      "abbreviation": "CAL",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Apoio Logístico e Finanças",
+      "legalRef": "Art. 31, II",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 31, II (Centro de Administração Logística)"
+      ],
+      "atribuicoes": [
+        "Centro de Administração Logística - CAL, responsável por: a) processos de patrimônio dos bens móveis e imóveis; b) controle e distribuição de materiais e equipamentos; c) cadastro e controle de materiais bélicos; d) assessoramento nas emissões de registro de arma de fogo; e) trâmites junto aos órgãos de controle. (Art. 31, II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cal-pr-lob"
+    },
+    "cof-pr-lob": {
+      "name": "Centro de Orçamento e Finanças",
+      "abbreviation": "COF",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Apoio Logístico e Finanças",
+      "legalRef": "Art. 31, III",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 31, III (Centro de Orçamento e Finanças)"
+      ],
+      "atribuicoes": [
+        "Centro de Orçamento e Finanças - COF, responsável por: a) execução orçamentária e financeira; b) efetivação de processos licitatórios; c) distribuição e acompanhamento de recursos descentralizados; d) auditagem de processos de prestação de contas; e) assuntos referentes à Central de Viagens. (Art. 31, III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cof-pr-lob"
+    },
+    "csm-pr-lob": {
+      "name": "Centro de Suprimento e Manutenção",
+      "abbreviation": "CSM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Diretoria de Apoio Logístico e Finanças",
+      "legalRef": "Art. 31, IV",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 31, IV (Centro de Suprimento e Manutenção)"
+      ],
+      "atribuicoes": [
+        "Centro de Suprimento e Manutenção - CSM, responsável por: a) apoio logístico; b) padronização e suporte de todo o sistema de rádio comunicação; c) descarga das viaturas; d) processos de leilão; e) distribuição de recursos para manutenção e abastecimento da frota e flotilha, e a regularização dos seus documentos. (Art. 31, IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "csm-pr-lob"
+    },
+    "crbm-pr-lob": {
+      "name": "Comando Regional Bombeiro Militar",
+      "abbreviation": "CRBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 9º, § (Órgãos de execução); Art. 34, 35",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 34 (Subordinação dos órgãos de execução)",
+        "Art. 35 (Comandos Regionais de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "Os órgãos de execução são operacional e administrativamente subordinados aos Comandos Regionais de Bombeiro Militar, que são responsáveis, perante o Subcomandante-Geral, pelo cumprimento das missões bombeiro-militar em suas respectivas circunscrições territoriais. (Art. 34)",
+        "§ 1º Os Comandos Regionais de Bombeiro Militar são escalões intermediários de comando, cuja organização pormenorizada constará nos quadros de organização do Corpo de Bombeiros Militar do Paraná - CBMPR. (Art. 34, § 1º)",
+        "§ 2º Aos Comandos Regionais de Bombeiros Militar incumbe desenvolver ações operacionais estratégicas, propor a distribuição do efetivo, auxílio e fiscalização das unidades subordinadas, gestão logística, além de outras atribuições definidas em lei, em determinada região. (Art. 34, § 2º)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "crbm-pr-lob"
+    },
+    "bbm-pr-lob": {
+      "name": "Batalhão de Bombeiro Militar",
+      "abbreviation": "BBM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comando Regional Bombeiro Militar",
+      "legalRef": "Art. 38, I; Art. 39",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 38, I (Batalhão de Bombeiro Militar)",
+        "Art. 39 (Constituição do BBM)"
+      ],
+      "atribuicoes": [
+        "Batalhão de Bombeiro Militar - BBM: unidade operacional que, utilizando dos recursos humanos e materiais postos à sua disposição, será incumbida da missão de: a) coordenar e executar as atividades de defesa civil; b) exercer o poder de polícia administrativa referente à prevenção a incêndios e desastres; c) combater incêndios e desastres; d) prevenir acidentes na orla marítima e fluvial; e) realizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar; f) outras atribuições definidas em lei. (Art. 38, I)",
+        "Os Batalhões de Bombeiro Militar - BBM são constituídos de: I - um Comandante; II - um Subcomandante; III - um Estado-Maior; IV - elementos de Comando (Grupo de Comando e Serviços) e de frações subordinadas (Cia. BM, Pel. BM e Gp. BM) em número variável, de acordo com as necessidades indicadas pela missão. (Art. 39)"
+      ],
+      "desdobramentos": [
+        "Companhias de Bombeiro Militar - Cia. BM",
+        "Pelotões de Bombeiro Militar - Pel. BM",
+        "Grupos de Bombeiro Militar - Gp. BM"
+      ],
+      "cargos": [],
+      "id": "bbm-pr-lob"
+    },
+    "ciabm-pr-lob": {
+      "name": "Companhia Independente de Bombeiro Militar",
+      "abbreviation": "Cia. Ind. BM",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comando Regional Bombeiro Militar",
+      "legalRef": "Art. 38, II; Art. 39",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 38, II (Companhia Independente de Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "Companhia Independente de Bombeiro Militar - Cia. Ind. BM: unidade operacional encarregada das mesmas atribuições do Batalhão de Bombeiro Militar - BBM em áreas de menores dimensões que, por suas condições peculiares, não estejam incluídas na circunscrição daquele. (Art. 38, II)",
+        "As Companhias Independentes de Bombeiro Militar - Cia. Ind. BM são constituídas de: I - um Comandante; II - um Subcomandante; III - um Estado-Maior; IV - elementos de Comando (Grupo de Comando e Serviços) e de frações subordinadas (Pel. BM e Gp. BM) em número variável. (Art. 39)"
+      ],
+      "desdobramentos": [
+        "Pelotões de Bombeiro Militar - Pel. BM",
+        "Grupos de Bombeiro Militar - Gp. BM"
+      ],
+      "cargos": [],
+      "id": "ciabm-pr-lob"
+    },
+    "gost-pr-lob": {
+      "name": "Grupo de Operações de Socorro Tático",
+      "abbreviation": "GOST",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 38, III",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 38, III (Grupo de Operações de Socorro Tático)"
+      ],
+      "atribuicoes": [
+        "Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao Comandante-Geral, em apoio especializado às Unidades Operacionais, que é incumbido de: a) executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar; b) realizar ações: 1. de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos; 2. de ações de defesa civil; c) organizar forças-tarefas; d) desempenhar atividades de busca e salvamento, inclusive com a utilização de cães; e) organizar e manter o canil central e coordenar os canis setoriais. (Art. 38, III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "gost-pr-lob"
+    },
+    "uoa-pr-lob": {
+      "name": "Unidade de Operações Aéreas",
+      "abbreviation": "UOA",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 38, IV",
+      "baseLegal": "Lei nº 22.206, de 29 de novembro de 2024 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 38, IV (Unidade de Operações Aéreas)"
+      ],
+      "atribuicoes": [
+        "Unidade de Operações Aéreas - UOA: subordinada diretamente ao Subcomandante-Geral, é encarregada de, com a utilização de aeronaves: a) atender e apoiar ações de busca, resgate e salvamento a vítimas de acidentes e/ou traumas em áreas urbanas, rurais e rodovias; b) atender e apoiar ações de busca e resgate de vítimas em matas, florestas, montanhas, rios, lagos e mar; c) atuar em missões de apoio à defesa civil; d) apoiar órgãos federais, estaduais e municipais que necessitem do emprego de aeronaves; e) desempenhar outras missões de preservação da ordem pública. (Art. 38, IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "uoa-pr-lob"
     }
   }
 }

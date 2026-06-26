@@ -668,6 +668,561 @@
         }
       ],
       "id": "bbm-go"
+    },
+    "cg-go-lob": {
+      "name": "Comando Geral",
+      "abbreviation": "CG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Governador do Estado",
+      "legalRef": "Art. 8º, 9º, 10",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 9º (Órgão de direção-geral)",
+        "Art. 10 (Constituição do Comando Geral)",
+        "Art. 11 (Atribuições do Comandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O órgão de direção geral, representado pelo Comando Geral, é encarregado do planejamento e organização geral da Corporação, visando ao emprego estratégico de pessoal e material no âmbito da Instituição, cabendo-lhe ainda a fiscalização e o controle dos órgãos de direção setorial, de apoio e execução (Art. 9º).",
+        "São atribuições do Comandante-Geral, dentre outras previstas em lei e em regulamentos: elaborar a política de gestão administrativa, operacional e de pessoal (Art. 11, I)",
+        "baixar normas, diretrizes e ordens gerais e específicas aos diversos setores da Corporação (II)",
+        "baixar normas regulando o quantitativo de seções e as atribuições de cada seção do Estado Maior-Geral (III)",
+        "aprovar planos e programas relacionados a gestão de pessoal e recursos orçamentários, financeiros e materiais (IV)",
+        "aprovar projetos institucionais e planos de gestão (V)",
+        "movimentar oficiais e praças, no interesse do serviço, a pedido ou a bem da disciplina (VI)",
+        "autorizar o intercâmbio de bombeiros militares do Estado de Goiás com instituições de outros Estados da Federação, bem como de militares da União e de outras Unidades da Federação com o Corpo de Bombeiros Militar do Estado de Goiás, para fins de formação, especialização, aperfeiçoamento, habilitação e aprimoramento profissional e atuação em operações de bombeiros e humanitárias (VII)",
+        "editar normas relativas a identificação de pessoal e registro e porte de arma (VIII)"
+      ],
+      "desdobramentos": [
+        "Gabinete do Comandante-Geral",
+        "Gabinete do Subcomandante-Geral",
+        "Estado Maior-Geral",
+        "Chefia de Gabinete",
+        "Ajudância de Ordens",
+        "Assessorias e Assistências",
+        "Comissões",
+        "Secretaria-Geral"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Coronel do Quadro de Oficiais de Comando – QOC, possuidor do Curso Superior de Bombeiro Militar ou equivalente (Art. 12)",
+          "desdobramentos": [
+            "Gabinete do Comandante-Geral",
+            "Gabinete do Subcomandante-Geral",
+            "Estado Maior-Geral",
+            "Chefia de Gabinete",
+            "Ajudância de Ordens",
+            "Assessorias e Assistências",
+            "Comissões",
+            "Secretaria-Geral"
+          ],
+          "atribuicoes": [
+            "Elaborar a política de gestão administrativa, operacional e de pessoal (Art. 11, I)",
+            "Baixar normas, diretrizes e ordens gerais e específicas aos diversos setores da Corporação (II)",
+            "Baixar normas regulando o quantitativo de seções e as atribuições de cada seção do Estado Maior-Geral (III)",
+            "Aprovar planos e programas relacionados a gestão de pessoal e recursos orçamentários, financeiros e materiais (IV)",
+            "Aprovar projetos institucionais e planos de gestão (V)",
+            "Movimentar oficiais e praças, no interesse do serviço, a pedido ou a bem da disciplina (VI)",
+            "Autorizar o intercâmbio de bombeiros militares do Estado de Goiás com instituições de outros Estados da Federação, bem como de militares da União e de outras Unidades da Federação com o Corpo de Bombeiros Militar do Estado de Goiás, para fins de formação, especialização, aperfeiçoamento, habilitação e aprimoramento profissional e atuação em operações de bombeiros e humanitárias (VII)",
+            "Editar normas relativas a identificação de pessoal e registro e porte de arma (VIII)"
+          ]
+        }
+      ],
+      "id": "cg-go-lob"
+    },
+    "scg-go-lob": {
+      "name": "Subcomando Geral",
+      "abbreviation": "SCG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 12, 13",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 12 (Provimento dos cargos)",
+        "Art. 13 (Atribuições do Subcomandante-Geral)"
+      ],
+      "atribuicoes": [
+        "O Subcomandante-Geral, substituto do Comandante-Geral em suas faltas e impedimentos, é responsável pela otimização dos recursos operacionais, bem como pelo controle da disciplina dos integrantes da Corporação, por meio dos órgãos de direção setorial e regional, de apoio e de execução (Art. 13).",
+        "O Subcomandante-Geral poderá exercer, cumulativamente, a função de Chefe do Estado Maior-Geral (Art. 13, § 1º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "scg-go-lob"
+    },
+    "emg-go-lob": {
+      "name": "Estado Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+      "legalRef": "Art. 14",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 14 (Estado Maior-Geral)"
+      ],
+      "atribuicoes": [
+        "O Estado Maior-Geral, unidade de assessoramento do Comandante-Geral e do Subcomandante-Geral, é responsável pela análise e estudo de assuntos relacionados à administração geral e sua operacionalização no âmbito da Corporação, cabendo-lhe ainda o planejamento da programação orçamentária e financeira, bem como a elaboração de diretrizes e ordens de acordo com as premissas estabelecidas pelo Comando Geral (Art. 14).",
+        "Cabem à Chefia do Estado Maior-Geral a orientação, coordenação e fiscalização dos trabalhos do Estado Maior-Geral visando ao cumprimento das determinações e políticas estabelecidas pelo Comandante-Geral (Art. 14, § 2º)."
+      ],
+      "desdobramentos": [
+        "Chefia do Estado Maior-Geral",
+        "Seções do Estado Maior-Geral"
+      ],
+      "cargos": [],
+      "id": "emg-go-lob"
+    },
+    "chgab-go-lob": {
+      "name": "Chefia de Gabinete",
+      "abbreviation": "CHGAB",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+      "legalRef": "Art. 15",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 15 (Chefia de Gabinete)"
+      ],
+      "atribuicoes": [
+        "À Chefia de Gabinete compete o exercício das funções de assistência e assessoramento direto ao Comandante-Geral e ao Subcomandante-Geral, inerentes ao controle, coordenação e fiscalização das atividades administrativas desenvolvidas por militares e civis no âmbito dos Gabinetes do Comandante-Geral e do Subcomandante-Geral, da Ajudância de Ordens, da Assessoria Jurídica e da Secretaria-Geral (Art. 15)."
+      ],
+      "desdobramentos": [
+        "Gabinete do Comandante-Geral",
+        "Gabinete do Subcomandante-Geral",
+        "Ajudância de Ordens",
+        "Assessoria Jurídica",
+        "Secretaria-Geral"
+      ],
+      "cargos": [],
+      "id": "chgab-go-lob"
+    },
+    "ajo-go-lob": {
+      "name": "Ajudância de Ordens",
+      "abbreviation": "AJO",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
+      "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 16 (Ajudância de Ordens)"
+      ],
+      "atribuicoes": [
+        "À Ajudância de Ordens competem assessoramento diário ao Comandante-Geral e ao Subcomandante-Geral, relacionado ao controle de agendas, bem como à recepção de autoridades, os controles no cumprimento de compromissos oficiais e fiscalização patrimonial dos materiais pertencentes aos Gabinetes do Comandante-Geral e do Subcomandante-Geral (Art. 16)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ajo-go-lob"
+    },
+    "ajur-go-lob": {
+      "name": "Assessoria Jurídica",
+      "abbreviation": "AJUR",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 17 (Assessoria Jurídica)"
+      ],
+      "atribuicoes": [
+        "À Assessoria Jurídica compete assessorar o Comando Geral em matérias de natureza jurídica já pacificadas no âmbito da Procuradoria-Geral do Estado, além de: analisar normas, diretrizes, portarias, determinações, informações e demais documentos emanados do Comando Geral (Art. 17, I)",
+        "orientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas da Procuradoria-Geral do Estado (II)",
+        "coligir elementos de fato e de direito para preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado, para a defesa dos interesses do Estado de Goiás em ações judiciais (III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ajur-go-lob"
+    },
+    "apar-go-lob": {
+      "name": "Assessoria Parlamentar",
+      "abbreviation": "APAR",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 18",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 18 (Assessoria Parlamentar)"
+      ],
+      "atribuicoes": [
+        "À Assessoria Parlamentar compete o exercer de atividades de apoio e assessoramento ao Comando Geral em assuntos relacionados ao Poder Legislativo e que sejam de interesse da Corporação, além de: planejar, coordenar, acompanhar e executar ações de intercâmbio de informações do Corpo de Bombeiros Militar com o Poder Legislativo, em âmbito federal, estadual e municipal (Art. 18, I)",
+        "acompanhar os processos legislativos envolvendo assuntos de interesse da Corporação, bem como realizar gestão visando conferir celeridade aos processos (II)",
+        "manter o Comando Geral informado dos projetos de lei envolvendo assuntos de interesse da Corporação em tramitação em todas as esferas do Poder Legislativo (III)",
+        "assessorar no planejamento e na elaboração de projetos de lei de interesse da Corporação, conforme diretrizes e ordens emanadas do Comando Geral (IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "apar-go-lob"
+    },
+    "com-go-lob": {
+      "name": "Comissões",
+      "abbreviation": "COM",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 19",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 19 (Comissões)"
+      ],
+      "atribuicoes": [
+        "Às Comissões, permanentes ou temporárias, nomeadas por ato do Comandante-Geral competem a realização de estudos de caso, emissão de pareceres e elaboração de trabalhos específicos relacionados às atividades administrativas e operacionais no âmbito da Instituição, inclusive em relação a assuntos como a especificação de materiais, viaturas, embarcações, instrumentos e equipamentos, desenvolvimento de software, programas e projetos institucionais (Art. 19)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "com-go-lob"
+    },
+    "sg-go-lob": {
+      "name": "Secretaria-Geral",
+      "abbreviation": "SG",
+      "category": "Direção Geral",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 20",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 20 (Secretaria-Geral)"
+      ],
+      "atribuicoes": [
+        "À Secretaria-Geral competem a recepção, o protocolo, a elaboração e o controle de toda a documentação pertinente ao Comando Geral (Art. 20)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "sg-go-lob"
+    },
+    "cr-go-lob": {
+      "name": "Comandos Regionais",
+      "abbreviation": "CR",
+      "category": "Direção Regional",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 21, 22",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 21 (Órgãos de direção regional)",
+        "Art. 22 (Competência dos Comandos Regionais)"
+      ],
+      "atribuicoes": [
+        "Os órgãos de direção regional, representados pelos Comandos Regionais, são organizados para a consecução de atividades de gestão operacional, cabendo-lhes a otimização na aplicação dos recursos operacionais disponíveis nas respectivas atribuições, conforme diretrizes e ordens definidas pelo órgão de direção geral (Art. 21).",
+        "Compete aos Comandos Regionais: exercer a gestão operacional nas respectivas regiões (Art. 22, I)",
+        "planejar, controlar e fiscalizar as atividades operacionais desenvolvidas pelas respectivas unidades de execução, bem como exercer outras missões correlatas (II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cr-go-lob"
+    },
+    "ccd-go-lob": {
+      "name": "Comando de Correições e Disciplina",
+      "abbreviation": "CCD",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 23, 24",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 23 (Órgãos de direção setorial)",
+        "Art. 24 (Competência do Comando de Correições e Disciplina)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Correições e Disciplina: assegurar a disciplina funcional, os princípios hierárquicos estruturais fundamentais e a apuração das infrações penais militares e transgressões disciplinares (Art. 24, I)",
+        "exercer diretamente ou por meio das Organizações Bombeiro Militares as funções de Polícia Judiciária Militar e de Polícia Administrativa, observada a legislação vigente (II)",
+        "acompanhar a apuração de ilícitos penais e transgressões disciplinares (III)",
+        "acompanhar procedimentos policiais em repartições policiais civis e federais e organizações militares federais ou estaduais que envolvam integrantes da Corporação (IV)",
+        "promover execução, controle, coordenação, orientação e fiscalização de atividade pertinente à disciplina e execução judiciária (V)",
+        "apurar faltas disciplinares praticadas por componentes da Corporação que, por sua repercussão e consequência, atentem contra os interesses da Instituição (VI)",
+        "elaborar portarias, substituições, soluções, avocações, insubsistências, diligências, encaminhamentos e arquivos feitos (VII)",
+        "arquivar e registrar pareceres, termos de homologação, soluções e outros documentos de interesse (VIII)",
+        "colaborar nas investigações sociais relativas à seleção de candidatos ao ingresso nas fileiras da Corporação (IX)",
+        "controlar a instauração de inquéritos policiais, sindicâncias, conselhos de justificação, conselhos de disciplina, autos de prisão em flagrante, inquéritos técnicos e outros procedimentos administrativos (X)",
+        "exercer assessoramento em auditorias relacionadas a procedimentos disciplinares (XI)",
+        "realizar o controle e atualização de registros de antecedentes criminais, policiais e disciplinares de integrantes da Corporação (XII)",
+        "exercer fiscalização ostensiva quanto ao desempenho funcional, operacional e administrativo dos integrantes da Corporação (XIII)",
+        "promover a execução de diligências judiciárias ou avocá-las mediante designação ou nomeação (XIV)",
+        "realizar procedimentos inerentes ao registro e porte de arma de bombeiros militares e de controle de armamento (XV)",
+        "exercer diretamente a aplicação de medidas disciplinares sobre todos os bombeiros militares, excetuando-se os oficiais do posto de Coronel (XVI)",
+        "exercer as atividades de ouvidoria no âmbito da Corporação (XVII)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ccd-go-lob"
+    },
+    "cal-go-lob": {
+      "name": "Comando de Apoio Logístico",
+      "abbreviation": "CAL",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 23, 25",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 23 (Órgãos de direção setorial)",
+        "Art. 25 (Competência do Comando de Apoio Logístico)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Apoio Logístico: planejar e controlar as atividades relacionadas às necessidades de suprimento e manutenção da Corporação, bem como o controle patrimonial, de acordo com premissas definidas pelo Comando Geral (Art. 25, I)",
+        "elaborar normas internas sobre especificações e solicitações de materiais e serviços, bem como aquisição, recebimento, armazenamento, distribuição, manutenção, fiscalização e controle dos materiais, equipamentos, viaturas e instalações no âmbito da Corporação e submeter à apreciação do Comando Geral para aprovação (II)",
+        "executar atos pertinentes a licitações e contratos, excetuando-se aqueles de competência exclusiva do ordenador de despesas, quando tratar-se de recursos do Fundo Especial de Reaparelhamento e Modernização do Corpo de Bombeiros Militar do Estado de Goiás – FUNEBOM, bem como acompanhar processos até o cumprimento integral das obrigações contratuais (III)",
+        "realizar gestão junto aos órgãos competentes visando celeridade no andamento processual de licitações e contratos (IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cal-go-lob"
+    },
+    "cgf-go-lob": {
+      "name": "Comando de Gestão e Finanças",
+      "abbreviation": "CGF",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 23, 26",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 23 (Órgãos de direção setorial)",
+        "Art. 26 (Competência do Comando de Gestão e Finanças)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Gestão e Finanças: planejar, controlar e executar as atividades relacionadas com pessoal (Art. 26, I)",
+        "promover as atividades inerentes ao pagamento de militares, civis e fornecedores (II)",
+        "praticar atos inerentes à execução financeira e contábil (III)",
+        "elaborar normas internas sobre gestão de pessoal e financeira (IV)",
+        "planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho (V)",
+        "elaborar boletins gerais (VI)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cgf-go-lob"
+    },
+    "codec-go-lob": {
+      "name": "Comando de Operações de Defesa Civil",
+      "abbreviation": "CODEC",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 23, 27",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 23 (Órgãos de direção setorial)",
+        "Art. 27 (Competência do Comando de Operações de Defesa Civil)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Operações de Defesa Civil: elaborar planos de gestão operacional nos assuntos relacionados a defesa civil (Art. 27, I)",
+        "coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil (II)",
+        "realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução (III)",
+        "planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco (IV)",
+        "elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras definidas em regulamento (V)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "codec-go-lob"
+    },
+    "cebm-go-lob": {
+      "name": "Comando de Ensino Bombeiro Militar",
+      "abbreviation": "CEBM",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 23, 28",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 23 (Órgãos de direção setorial)",
+        "Art. 28 (Competência do Comando de Ensino Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Ensino Bombeiro Militar: elaborar o planejamento institucional inerente a formação, especialização, aperfeiçoamento, habilitação e aprimoramento técnico-profissional dos bombeiros militares, bem como o controle e fiscalização das atividades correlatas (Art. 28, I)",
+        "elaborar normas e manuais operacionais relacionados à doutrina institucional de ensino (II)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cebm-go-lob"
+    },
+    "coi-go-lob": {
+      "name": "Comando de Operações de Inteligência",
+      "abbreviation": "COI",
+      "category": "Direção Setorial",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 8º, 23, 29",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 8º (Órgãos de direção)",
+        "Art. 23 (Órgãos de direção setorial)",
+        "Art. 29 (Competência do Comando de Operações de Inteligência)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Operações de Inteligência: produzir conhecimentos e informações que subsidiem ações para prevenir, neutralizar, coibir e reprimir atos de qualquer natureza que venham prejudicar a Corporação no cumprimento de suas atribuições legais, tendo como fundamentos básicos a defesa do Estado Democrático de Direito e a dignidade da pessoa humana (Art. 29, I)",
+        "exercer atividades de inteligência de interesse institucional com o intuito de subsidiar tomadas de decisão do Comandante-Geral e do Subcomandante-Geral, com vistas ao aprimoramento dos serviços prestados pela Instituição (II)",
+        "identificar, monitorar e avaliar ameaças reais ou potenciais à segurança e manutenção das atividades do Corpo de Bombeiros Militar (III)",
+        "realizar investigações sociais relativas à seleção de candidatos ao ingresso nas fileiras da Corporação (IV)",
+        "produzir conhecimentos e informações que subsidiem tomadas de decisão e ações relacionadas ao exercício das atribuições previstas nesta Lei (V)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "coi-go-lob"
+    },
+    "abm-go-lob": {
+      "name": "Academia Bombeiro Militar",
+      "abbreviation": "ABM",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 6º, 30, 31",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 6º (Órgãos de apoio)",
+        "Art. 30 (Finalidade dos órgãos de apoio)",
+        "Art. 31 (Competência da Academia Bombeiro Militar)"
+      ],
+      "atribuicoes": [
+        "Compete à Academia Bombeiro Militar: executar as atividades de ensino na Corporação, envolvendo formação, aprimoramento técnico-profissional, aperfeiçoamento e especialização dos bombeiros militares (Art. 31, I)",
+        "implementar a doutrina institucional de ensino (II)",
+        "apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja envolvida (III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "abm-go-lob"
+    },
+    "csau-go-lob": {
+      "name": "Comando de Saúde",
+      "abbreviation": "CSAU",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 6º, 30, 32",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 6º (Órgãos de apoio)",
+        "Art. 30 (Finalidade dos órgãos de apoio)",
+        "Art. 32 (Competência do Comando de Saúde)"
+      ],
+      "atribuicoes": [
+        "Compete ao Comando de Saúde: planejar, coordenar, orientar, controlar e avaliar as atividades realizadas pelos serviços médico e odontológico (Art. 32, I)",
+        "executar as ações relacionadas à saúde física e mental dos militares da Corporação (II)",
+        "apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja envolvida (III)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "csau-go-lob"
+    },
+    "ceman-go-lob": {
+      "name": "Centro de Manutenção",
+      "abbreviation": "CEMAN",
+      "category": "Apoio",
+      "source": "lob",
+      "subordinadoA": "Comando Geral",
+      "legalRef": "Art. 6º, 30, 33",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 6º (Órgãos de apoio)",
+        "Art. 30 (Finalidade dos órgãos de apoio)",
+        "Art. 33 (Competência do Centro de Manutenção)"
+      ],
+      "atribuicoes": [
+        "Compete ao Centro de Manutenção: executar a manutenção de viaturas e equipamentos motomecanizados (Art. 33, I)",
+        "controlar e fiscalizar a manutenção e o reparo de viaturas e equipamentos quando realizados por terceiros mediante celebração de contratos (II)",
+        "gerir os sistemas de controle de viaturas e combustível e controlar a documentação da frota (III)",
+        "apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja envolvida (IV)"
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "ceman-go-lob"
+    },
+    "coa-go-lob": {
+      "name": "Centro de Operações Aéreas",
+      "abbreviation": "COA",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 7º, 34",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 7º (Órgãos de execução)",
+        "Art. 34, §2º e §6º (Centro de Operações Aéreas)"
+      ],
+      "atribuicoes": [
+        "O Centro de Operações Aéreas é responsável pela execução de operações aéreas relacionadas à missão constitucional da Corporação (Art. 34, § 2º).",
+        "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "coa-go-lob"
+    },
+    "cob-go-lob": {
+      "name": "Centro Operacional de Bombeiros",
+      "abbreviation": "COB",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 7º, 34",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 7º (Órgãos de execução)",
+        "Art. 34, §3º e §6º (Centro Operacional de Bombeiros)"
+      ],
+      "atribuicoes": [
+        "O Centro Operacional de Bombeiros é responsável pelo atendimento das solicitações de socorro, coordenação do acionamento e emprego do serviço operacional diário, bem como pelo registro, controle e emissão de extratos de ocorrência, de acordo com as premissas do Comando Geral (Art. 34, § 3º).",
+        "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "cob-go-lob"
+    },
+    "csa-go-lob": {
+      "name": "Companhia de Segurança Aeroportuária",
+      "abbreviation": "CSA",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Comandos Regionais",
+      "legalRef": "Art. 7º, 34",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 7º (Órgãos de execução)",
+        "Art. 34, §4º e §6º (Companhia de Segurança Aeroportuária)"
+      ],
+      "atribuicoes": [
+        "A Companhia de Segurança Aeroportuária é responsável pela execução das atividades inerentes ao serviço de segurança aeroportuária no âmbito de sua competência (Art. 34, § 4º).",
+        "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+      ],
+      "desdobramentos": [],
+      "cargos": [],
+      "id": "csa-go-lob"
+    },
+    "uop-go-lob": {
+      "name": "Unidades Operacionais",
+      "abbreviation": "UOP",
+      "category": "Execução",
+      "source": "lob",
+      "subordinadoA": "Órgãos de direção geral, regional e setorial / Comandos Regionais",
+      "legalRef": "Art. 7º, 34",
+      "baseLegal": "Lei nº 18.305, de 30 de dezembro de 2013 (Lei de Organização Básica)",
+      "artigosDeOrigem": [
+        "Art. 7º (Órgãos de execução)",
+        "Art. 34, §5º e §6º (Unidades Operacionais)"
+      ],
+      "atribuicoes": [
+        "As Unidades Operacionais são responsáveis pela execução de atividades-fim das respectivas áreas de atuação, conforme diretrizes e ordens emanadas dos órgãos de direção geral, regional e setorial, classificando-se em: Batalhão Bombeiro Militar, cujo comando é prerrogativa de Oficial Superior do Quadro de Oficiais de Comando - QOC (Art. 34, § 5º, I)",
+        "Companhia Independente Bombeiro Militar, cujo comando é prerrogativa de Oficial Superior do QOC (II)",
+        "Companhia Bombeiro Militar, cujo comando é prerrogativa de Oficial Intermediário do QOC (III)",
+        "Pelotão Bombeiro Militar, cujo comando é prerrogativa de Oficial Subalterno (IV)",
+        "Os órgãos de execução ficarão sob a coordenação, fiscalização e controle dos respectivos Comandos Regionais, exceto o Centro de Operações Aéreas e o Centro Operacional de Bombeiros, que ficarão subordinados diretamente ao Subcomandante-Geral (Art. 34, § 6º)."
+      ],
+      "desdobramentos": [
+        "Batalhão Bombeiro Militar (BBM)",
+        "Companhia Independente Bombeiro Militar (CIBM)",
+        "Companhia Bombeiro Militar",
+        "Pelotão Bombeiro Militar"
+      ],
+      "cargos": [],
+      "id": "uop-go-lob"
     }
   }
 }
