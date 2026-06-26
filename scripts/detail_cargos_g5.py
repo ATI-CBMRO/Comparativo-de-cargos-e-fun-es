@@ -99,6 +99,32 @@ CARGOS = {
     {"cargo": "Supervisor de Dia ao CBMSE", "subordinadoA": "Diretoria Operacional / Superior de Dia", "requisito": "Oficiais Intermediários (excepcionalmente Subalternos)", "desdobramentos": ["Centro de Operações"], "atribuicoes": ["Serviço de nível tático; triagem de solicitações e despacho de guarnições", "Supervisão e distribuição de ocorrências; remanejamento de recursos"]},
   ],
   "crm-se": [{"cargo": "Comandante de Comando Regional Bombeiro Militar (CRBM)", "subordinadoA": "Diretoria Operacional", "requisito": "Oficial Superior QOBM", "desdobramentos": ["Grupamentos Bombeiro Militar (1º ao 8º GBM)"], "atribuicoes": ["Supervisão, coordenação e planejamento operacional das unidades subordinadas (por AISP)"]}],
+  "cg-se-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Governador do Estado", "requisito": "Coronel do Quadro de Oficiais Combatentes da ativa, possuidor dos Cursos de Formação de Oficiais, Aperfeiçoamento de Oficiais e Superior de Bombeiro Militar - CSBM, concomitantemente, ou equivalentes reconhecidos legalmente, observado o disposto no §4º do art. 126 da Constituição Estadual (Art. 6º)",
+     "desdobramentos": ["Subcomandante-Geral", "Estado-Maior-Geral", "Gabinete", "Corregedoria-Geral", "Controladoria Interna", "Ouvidoria-Geral", "Assessorias", "Comissões Técnicas"],
+     "atribuicoes": [
+       "Exercer a representação política e institucional do CBMSE, promovendo contatos e relações com autoridades e organizações de diferentes níveis governamentais (Art. 7º, I)",
+       "Promover a administração geral do CBMSE, em estrita observância às disposições normativas da Administração Pública Estadual (II)",
+       "Aprovar o Regimento Interno do CBMSE, submetendo-o à homologação por decreto do Governador do Estado (III)",
+       "Assessorar o Governador do Estado e o Secretário de Estado da Segurança Pública nos assuntos de competência do CBMSE (IV)",
+       "Fazer cumprir as leis, normas e regulamentos da Corporação (V)",
+       "Proferir despachos finais em processos administrativos e operacionais que envolvam o efetivo sob seu comando (VI)",
+       "Autorizar a abertura de processos licitatórios, homologando-os dentro dos limites de sua competência, e ratificar as dispensas ou declarações de inexigibilidade referentes às contratações diretas, nos termos da legislação específica (VII)",
+       "Aprovar a programação orçamentário-financeira a ser executada pelo CBMSE e pelos órgãos a ele subordinados, a proposta orçamentária anual e as alterações e ajustes que se fizerem necessários (VIII)",
+       "Expedir portarias, instruções normativas, ordens de serviço, diretrizes e planos que promovam a eficácia da gestão administrativa e operacional da instituição, em consonância com a legislação em vigor (IX)",
+       "Instaurar procedimentos de polícia judiciária militar e de polícia administrativa, bem como aplicar as sanções previstas na legislação em vigor (X)",
+       "Autorizar despesas nos limites de sua competência (XI)",
+       "Delegar atribuições de sua competência que não sejam vedadas por lei (XII)",
+       "Aprovar os planos, estudos, programas, projetos e propostas para organização funcional e de atuação do CBMSE (XIII)",
+       "Exercer a função de presidente do Alto-Comando do CBMSE (XIV)",
+       "Promover o controle e a supervisão dos órgãos subordinados (XV)",
+       "Presidir a Comissão de Promoção de Oficiais - CPO e os respectivos processos e encaminhá-los para o Governador do Estado, a quem compete o ato da promoção (XVI)",
+       "Atribuir outras atividades aos integrantes da corporação, além daquelas estabelecidas em leis ou regulamentos (XVII)",
+       "Coordenar e executar ações de defesa civil no âmbito de suas competências (XVIII)",
+       "Designar ocupantes dos órgãos integrantes da estrutura organizacional, ressalvada a competência do Governador do Estado (XIX)",
+       "Desempenhar outras atribuições que lhe forem delegadas pelo Governador do Estado ou pelo Secretário de Estado da Segurança Pública ou ainda por aquelas previstas em lei (XX)"
+     ]},
+  ],
 },
 
 # ── TOCANTINS (LC nº 131/2021) ──
