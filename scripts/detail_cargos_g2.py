@@ -217,6 +217,14 @@ CARGOS = {
   "coordenadoria-protecao-defesa-civil-es": [
     {"cargo": "Diretor da Coordenadoria Estadual de Proteção e Defesa Civil", "subordinadoA": "Comandante-Geral", "requisito": "", "desdobramentos": [], "atribuicoes": ["Planejar, coordenar, dirigir e regular os serviços de proteção e defesa civil"]},
   ],
+  "cg-es-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Governador do Estado", "requisito": "Oficial da ativa do último posto do Quadro de Oficiais Combatentes BM (Art. 10)",
+     "desdobramentos": ["Estado-Maior", "Diretorias", "Ajudância-Geral", "Comissões", "Assessorias", "Coordenadoria Estadual de Proteção e Defesa Civil", "Corregedoria"],
+     "atribuicoes": [
+       "A administração, o comando e o emprego da Corporação são de competência e responsabilidade do Comandante-Geral do Corpo de Bombeiros, assessorado pelos órgãos de direção (Art. 4º).",
+       "O Comandante-Geral tem precedência hierárquica e funcional sobre todos os Oficiais da Corporação (Art. 10, §4º)."
+     ]},
+  ],
 },
 
 }
