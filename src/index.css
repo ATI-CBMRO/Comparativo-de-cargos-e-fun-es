@@ -908,6 +908,11 @@ img { display: block; max-width: 100%; }
 .oc-pair-col-label { width: 170px; }
 .oc-pair-col-ro    { width: calc((100% - 170px) / 2); }
 .oc-pair-col-st    { width: calc((100% - 170px) / 2); }
+/* Modo 3 colunas de conteúdo (RO · LOB · compilada): divide o restante em 3 */
+.oc-pair-table-3 { min-width: 880px; }
+.oc-pair-table-3 .oc-pair-col-ro,
+.oc-pair-table-3 .oc-pair-col-lob,
+.oc-pair-table-3 .oc-pair-col-st { width: calc((100% - 170px) / 3); }
 
 /* Cabeçalho sticky */
 .oc-pair-table thead th {
@@ -926,6 +931,9 @@ img { display: block; max-width: 100%; }
 }
 .oc-pair-th-st {
   background: #f7f8fa; border-left: 2px solid var(--border);
+}
+.oc-pair-th-lob {
+  background: #eef4ec; border-left: 2px solid var(--accent-green, #16a34a);
 }
 
 /* Células do corpo */
@@ -951,6 +959,15 @@ img { display: block; max-width: 100%; }
 .oc-pair-td-st {
   background: #fff !important;
   border-left: 2px solid #e4e7ef;
+}
+.oc-pair-td-lob {
+  background: #f7fbf6 !important;
+  border-left: 2px solid rgba(22,163,74,0.25);
+}
+.oc-col-kind {
+  font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--text-muted); border: 1px solid var(--border-card); border-radius: 4px;
+  padding: 0 5px;
 }
 
 /* ── Correção do sticky overlap: background nas celulas td ── */
@@ -1337,9 +1354,13 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
     -webkit-overflow-scrolling: touch;
   }
   .oc-pair-table { min-width: 520px; }
+  .oc-pair-table-3 { min-width: 760px; }
   .oc-pair-col-label { width: 116px; }
   .oc-pair-col-ro,
   .oc-pair-col-st { width: calc((100% - 116px) / 2); }
+  .oc-pair-table-3 .oc-pair-col-ro,
+  .oc-pair-table-3 .oc-pair-col-lob,
+  .oc-pair-table-3 .oc-pair-col-st { width: calc((100% - 116px) / 3); }
   /* sem cabeçalho fixo no mobile (tabela curta; evita conflito com o scroll) */
   .oc-pair-table thead th { position: static; }
   /* rótulos longos (SUBORDINAÇÃO, DESDOBRAMENTOS) quebram em vez de
@@ -2029,7 +2050,9 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .print-only-title { display: block !important; font-family: 'Outfit', sans-serif;
     font-size: 15pt; font-weight: 800; text-align: center; margin: 0 0 12px; color: #000; }
   .oc-pair-table { font-size: 9pt; }
+  .oc-pair-table-3 { font-size: 8pt; }
   .oc-pair-table td, .oc-pair-table th { padding: 8px 10px; }
+  .oc-pair-table-3 td, .oc-pair-table-3 th { padding: 6px 7px; }
   .page-body { display: block !important; }
 }
 
