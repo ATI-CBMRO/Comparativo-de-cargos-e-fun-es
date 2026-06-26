@@ -148,6 +148,13 @@ CARGOS = {
   "ajudancia-geral-df": [
     {"cargo": "Ajudante-Geral", "subordinadoA": "Comandante-Geral", "requisito": "", "desdobramentos": ["Seção de Serviços Internos", "Seção de Protocolo-Geral", "Secretaria do Comando-Geral"], "atribuicoes": ["Auxiliar nas funções de administração do Quartel do Comando Geral"]},
   ],
+  "cg-df-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Governador do Distrito Federal", "requisito": "Coronel da ativa do Quadro de Oficiais BM Combatentes da própria Corporação (Art. 10)",
+     "desdobramentos": ["Subcomando-Geral", "Estado-Maior-Geral", "Departamentos e Diretorias", "Ajudância Geral", "Controladoria", "Gabinete do Comandante-Geral", "Alto Comando"],
+     "atribuicoes": [
+       "O Comandante-Geral do Corpo de Bombeiros Militar do Distrito Federal é o responsável pela administração, comando e emprego da corporação (Art. 9º)."
+     ]},
+  ],
 },
 
 # ── ESPÍRITO SANTO (Normas Gerais de Ação) ──
