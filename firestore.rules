@@ -20,7 +20,12 @@ service cloud.firestore {
     match /suggestions/{id} {
       allow read: if isMember();
       allow create: if isMember() && request.resource.data.autorUid == request.auth.uid;
-      allow update, delete: if isMember() && resource.data.autorUid == request.auth.uid;
+      allow delete: if isMember()
+        && (resource.data.autorUid == request.auth.uid || isAdmin());
+      // Autor altera a própria sugestão; qualquer membro só pode togglar o 👍 (campo curtidoPor).
+      allow update: if isMember()
+        && (resource.data.autorUid == request.auth.uid
+            || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['curtidoPor']));
     }
 
     match /finalTexts/{id} {
