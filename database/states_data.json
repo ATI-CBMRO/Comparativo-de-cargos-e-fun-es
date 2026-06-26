@@ -3,7 +3,7 @@
     "version": "1.0",
     "generated_at": "2026-06-01",
     "total_states": 27,
-    "total_documents": 45,
+    "total_documents": 47,
     "curated_states": 27,
     "regions": {
       "Norte": 7,
@@ -483,6 +483,25 @@
       "cbm_abbreviation": "CBMAL",
       "documents": [
         {
+          "type": "Lei de Organização Básica",
+          "md_file": "Alagoas - Lei de Organização Básica.md",
+          "char_count": 35259,
+          "year": 2012,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "7.444",
+              "data": "28 DE DEZEMBRO DE"
+            },
+            {
+              "tipo": "Lei",
+              "numero": "6.171",
+              "data": "31 de julho de"
+            }
+          ],
+          "has_pdf": true
+        },
+        {
           "type": "Quadro Demonstrativo de Cargos",
           "md_file": "Alagoas - Quadro Demonstrativo de Cargos e Funções.md",
           "char_count": 64626,
@@ -505,8 +524,34 @@
           "has_pdf": true
         }
       ],
-      "legal_basis": "Decreto nº 27.560 (13  de \nAgosto de)",
-      "chapters_summary": [],
+      "legal_basis": "Lei nº 7.444 (28 DE DEZEMBRO DE); Lei nº 6.171 (31 de julho de); Decreto nº 27.560 (13  de \nAgosto de)",
+      "chapters_summary": [
+        {
+          "number": "I",
+          "title": "DA ESTRUTURA GERAL",
+          "text_preview": "CAPÍTULO I \nDA ESTRUTURA GERAL \n \n\n---\n\n## Página 2\n\nArt. 4º  O Corpo de Bombeiros Militar do Estado de Alagoas é constituído por órgãos \nde direção, órgãos de apoio e órgãos de execução. \n§ 1º Os órgãos de direção são responsáveis pelo com ando e administração geral, \nincumbindo se do planejamento, visando à organizaçã o da Corporação em todos os \nníveis, às suas necessidades em pessoal e materia"
+        },
+        {
+          "number": "II",
+          "title": "DOS ÓRGÃOS DE DIREÇÃO",
+          "text_preview": "CAPÍTULO II \nDOS ÓRGÃOS DE DIREÇÃO \n \nArt. 5º  Os órgãos de direção constituem o Comando-Geral da  Corporação, \ncompreendendo: \nI – o Comando Geral; \nII – o Subcomando Geral; \nIII – o Conselho de Políticas Estratégicas; \nIV – a Coordenadoria Estadual de Defesa Civil; \nV – a Corregedoria Geral; \nVI – as Diretorias; \nVII – a Secretaria Geral; e \nVIII – as Comissões. \n \nSeção I \nDo Comando Geral \n \nA"
+        },
+        {
+          "number": "III",
+          "title": "DOS ÓRGÃOS DE APOIO",
+          "text_preview": "CAPÍTULO III \nDOS ÓRGÃOS DE APOIO \n \nArt. 23 . Os órgãos de apoio do Corpo de Bombeiros Militar do Estado de Alagoas \ncompreendem: \nI – os Centros: \na) de Manutenção; \nb) de Tecnologia de Informática e informação; e \nc) de Assistência; \nII – o Almoxarifado Central; e \nIII – o Aprovisionamento Central \n \nArt. 24.  O Centro de Manutenção é o órgão de apoio do sistema logístico, subordinado \nà Direto"
+        },
+        {
+          "number": "IV",
+          "title": "DOS ÓRGÃOS DE EXECUÇÃO",
+          "text_preview": "CAPÍTULO IV \nDOS ÓRGÃOS DE EXECUÇÃO \n \nArt. 29.  Os órgãos de execução do Corpo de Bombeiros Milita r do Estado de Alagoas \nsão constituídos de: \nI – Comandos Operacionais de Bombeiros: \na) Comando Operacional de Bombeiros da Região Metropolitana; e \nb) Comando Operacional de Bombeiros do Interior. \nII – Comandos de Bombeiros de Áreas: \na) Comando de Área da Região 1 (Agreste); \nb) Comando de Área"
+        },
+        {
+          "number": "V",
+          "title": "DO ÓRGÃO ESPECIAL",
+          "text_preview": "CAPÍTULO V \nDO ÓRGÃO ESPECIAL \n\n---\n\n## Página 13\n\n \nArt. 42.  O Órgão Especial a que se refere este Capítulo com preende a Seção Aérea e \nBombeiros do Gabinete Militar competindo-lhe o asse ssoramento, planejamento, \ncoordenação, fiscalização, manutenção e controle da s operações aéreas nas missões \nBombeiro Militar, além do transporte aéreo do Gover nador e das autoridades por ele \ndesignadas. \n"
+        }
+      ],
       "organs": [
         {
           "id": "cg",
@@ -773,6 +818,12 @@
               "detailId": "gabinete-al"
             },
             {
+              "id": "subcomando-geral",
+              "name": "Subcomando Geral",
+              "children": [],
+              "_reg": true
+            },
+            {
               "id": "corregedoria-geral",
               "name": "Corregedoria Geral",
               "children": [],
@@ -785,15 +836,21 @@
               "_reg": true
             },
             {
-              "id": "comando-operacional-de-bombeiros",
-              "name": "Comando Operacional de Bombeiros",
+              "id": "secretaria-geral",
+              "name": "Secretaria Geral",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "comissoes",
+              "name": "Comissões",
               "children": [],
               "_reg": true
             }
           ],
           "legalRef": "Lei nº 6.212/2000",
           "category": "Direção Geral",
-          "detailId": "cg-al"
+          "detailId": "cg-al-lob"
         },
         {
           "id": "dir-set",
@@ -1042,10 +1099,23 @@
                   "name": "Seção de Planejamento e Execução Orçamentária",
                   "children": [],
                   "rank": "Major"
+                },
+                {
+                  "id": "secao-de-administracao",
+                  "name": "Seção de Administração",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-planejamento-execucao-controle-e-fiscal",
+                  "name": "Seção de Planejamento, Execução, Controle e Fiscalização Orçamentária",
+                  "children": [],
+                  "_reg": true
                 }
               ],
               "abbreviation": "DPLAN",
-              "rank": "Coronel"
+              "rank": "Coronel",
+              "detailId": "dpo-al-lob"
             },
             {
               "id": "dat-al",
@@ -1074,10 +1144,23 @@
                   "name": "Seção de Hidrantes",
                   "children": [],
                   "rank": "1º Tenente QOAdm"
+                },
+                {
+                  "id": "secao-de-estudos-e-analise-de-projetos",
+                  "name": "Seção de Estudos e Análise de Projetos",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-expediente-e-arquivo",
+                  "name": "Seção de Expediente e Arquivo",
+                  "children": [],
+                  "_reg": true
                 }
               ],
               "abbreviation": "DAT",
-              "rank": "Coronel"
+              "rank": "Coronel",
+              "detailId": "dat-al-lob"
             },
             {
               "id": "dpol-al",
@@ -1100,27 +1183,137 @@
             {
               "id": "cman-al",
               "name": "Centro de Manutenção",
-              "children": []
+              "children": [
+                {
+                  "id": "secao-de-manutencao-de-material-motomecanizado",
+                  "name": "Seção de Manutenção de Material Motomecanizado",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-manutencao-de-material-operacional",
+                  "name": "Seção de Manutenção de Material Operacional",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-manutencao-de-obras",
+                  "name": "Seção de Manutenção de Obras",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-administracao",
+                  "name": "Seção de Administração",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "cman-al-lob"
             },
             {
               "id": "cast-al",
               "name": "Centro de Assistência",
-              "children": []
+              "children": [
+                {
+                  "id": "subchefia",
+                  "name": "Subchefia",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "junta-de-inspecao-de-saude",
+                  "name": "Junta de Inspeção de Saúde",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-de-clinica-medica-e-atendimento-ambulato",
+                  "name": "Serviço de Clínica Médica e Atendimento Ambulatorial",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-odontologico",
+                  "name": "Serviço Odontológico",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-de-enfermaria",
+                  "name": "Serviço de Enfermaria",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-de-farmacia",
+                  "name": "Serviço de Farmácia",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-de-capelania",
+                  "name": "Serviço de Capelania",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-de-assistencia-psicossocial",
+                  "name": "Serviço de Assistência Psicossocial",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "servico-de-administracao",
+                  "name": "Serviço de Administração",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "cass-al-lob"
             },
             {
               "id": "cti-al",
               "name": "Centro de Tecnologia, Informática e Informação",
-              "children": []
+              "children": [
+                {
+                  "id": "secao-de-gerenciamento-de-redes-e-infraestrutura",
+                  "name": "Seção de Gerenciamento de Redes e Infraestrutura",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-banco-de-dados",
+                  "name": "Seção de Banco de Dados",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-desenvolvimento-de-sistemas-internet-e-",
+                  "name": "Seção de Desenvolvimento de Sistemas, Internet e Intranet",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secao-de-suporte-e-apoio-ao-usuario",
+                  "name": "Seção de Suporte e Apoio ao Usuário",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "detailId": "cti-al-lob"
             },
             {
               "id": "alm-al",
               "name": "Almoxarifado Central",
-              "children": []
+              "children": [],
+              "detailId": "almox-al-lob"
             },
             {
               "id": "apr-al",
               "name": "Aprovisionamento Central",
-              "children": []
+              "children": [],
+              "detailId": "aprov-al-lob"
             }
           ],
           "category": "Apoio"
@@ -1204,11 +1397,11 @@
         }
       ],
       "stats": {
-        "total_documents": 2,
+        "total_documents": 3,
         "has_regimento": true,
         "has_nga": false,
-        "total_chars": 202474,
-        "organs_mapped": 112,
+        "total_chars": 237733,
+        "organs_mapped": 135,
         "curated": true
       }
     },
@@ -4004,6 +4197,25 @@
       "cbm_abbreviation": "CBMES",
       "documents": [
         {
+          "type": "Lei de Organização Básica",
+          "md_file": "Espírito Santo - Lei de Organização Básica.md",
+          "char_count": 21583,
+          "year": 2024,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "101",
+              "data": "22 DE\nSETEMBRO 1997"
+            },
+            {
+              "tipo": "Lei",
+              "numero": "534",
+              "data": "28 de dezembro de"
+            }
+          ],
+          "has_pdf": false
+        },
+        {
           "type": "Normas Gerais de Ação",
           "md_file": "Espírito Santo - Normas Gerais de Ação.md",
           "char_count": 1392715,
@@ -4012,8 +4224,13 @@
           "has_pdf": true
         }
       ],
-      "legal_basis": "Consultar documento fonte",
+      "legal_basis": "Lei nº 101 (22 DE\nSETEMBRO 1997); Lei nº 534 (28 de dezembro de)",
       "chapters_summary": [
+        {
+          "number": "I",
+          "title": "ESTRUTURA GERAL",
+          "text_preview": "CAPÍTULO I  \n\n ESTRUTURA GERAL \n\n Art.\n5º O Corpo de Bombeiros Militar compreende: \n\n I - órgãos de direção; \n\n II - órgãos de apoio; \n\n III - órgãos de execução. \n\n Art. 6º \nOs órgãos de direção realizam o comando e a administração da Corporação.\nIncumbem-se do planejamento em geral, visando à organização da Corporação em\ntodos os pormenores, às necessidades em pessoal, em material e ao emprego d"
+        },
         {
           "number": "I",
           "title": "INTRODUÇÃO",
@@ -4033,11 +4250,6 @@
           "number": "II",
           "title": "DAS ATRIBUIÇÕES ORGÂNICAS",
           "text_preview": "CAPÍTULO II \nDAS ATRIBUIÇÕES ORGÂNICAS \n \nArt. 4º. Compete ao Comando-Geral o planejamento, a coordenação, a orientação \ne o controle da Corporação, assessorado e assistido pelos órgãos próprios, \nprevistos na Lei de Organização Básica do Corpo de Bombeiros Militar. \n "
-        },
-        {
-          "number": "III",
-          "title": "DAS ATRIBUIÇÕES FUNCIONAIS",
-          "text_preview": "CAPÍTULO III \nDAS ATRIBUIÇÕES FUNCIONAIS \n \nArt. 5º. São atribuições do Comandante-Geral: \n \nI- As previstas na legislação pertinente à Administração Pública e aos  \nmilitares estaduais; \nII- Praticar os atos necessários ao perfeito funcionamento do serviço do  \nCorpo de Bombeiros Militar do Espírito Santo, visando o exercício da sua \ncompetência constitucional; \nIII- Constituir comissões; \nIV- De"
         }
       ],
       "organs": [
@@ -4238,13 +4450,15 @@
                   "id": "css-es",
                   "name": "Centro de Serviço Social",
                   "children": [],
-                  "abbreviation": "CSS"
+                  "abbreviation": "CSS",
+                  "detailId": "css-es-lob"
                 },
                 {
                   "id": "ceib",
                   "name": "Centro de Ensino e Instrução de Bombeiros",
                   "children": [],
-                  "abbreviation": "CEIB"
+                  "abbreviation": "CEIB",
+                  "detailId": "ceib-es-lob"
                 },
                 {
                   "id": "gerencia-de-recursos-humanos",
@@ -4364,7 +4578,8 @@
                   "id": "csp-es",
                   "name": "Centro de Suprimento e Processamento",
                   "children": [],
-                  "abbreviation": "CSP"
+                  "abbreviation": "CSP",
+                  "detailId": "csm-es-lob"
                 },
                 {
                   "id": "depmtr",
@@ -4414,38 +4629,86 @@
             {
               "id": "1bbm-es",
               "name": "1º Batalhão de Bombeiros Militar",
-              "children": [],
-              "abbreviation": "1º BBM"
+              "children": [
+                {
+                  "id": "subunidades",
+                  "name": "Subunidades",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "abbreviation": "1º BBM",
+              "detailId": "bbm-es-lob"
             },
             {
               "id": "2bbm-es",
               "name": "2º Batalhão de Bombeiros Militar",
-              "children": [],
-              "abbreviation": "2º BBM"
+              "children": [
+                {
+                  "id": "subunidades",
+                  "name": "Subunidades",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "abbreviation": "2º BBM",
+              "detailId": "bbm-es-lob"
             },
             {
               "id": "3bbm-es",
               "name": "3º Batalhão de Bombeiros Militar",
-              "children": [],
-              "abbreviation": "3º BBM"
+              "children": [
+                {
+                  "id": "subunidades",
+                  "name": "Subunidades",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "abbreviation": "3º BBM",
+              "detailId": "bbm-es-lob"
             },
             {
               "id": "4bbm-es",
               "name": "4º Batalhão de Bombeiros Militar",
-              "children": [],
-              "abbreviation": "4º BBM"
+              "children": [
+                {
+                  "id": "subunidades",
+                  "name": "Subunidades",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "abbreviation": "4º BBM",
+              "detailId": "bbm-es-lob"
             },
             {
               "id": "5bbm-es",
               "name": "5º Batalhão de Bombeiros Militar",
-              "children": [],
-              "abbreviation": "5º BBM"
+              "children": [
+                {
+                  "id": "subunidades",
+                  "name": "Subunidades",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "abbreviation": "5º BBM",
+              "detailId": "bbm-es-lob"
             },
             {
               "id": "6bbm-es",
               "name": "6º Batalhão de Bombeiros Militar",
-              "children": [],
-              "abbreviation": "6º BBM"
+              "children": [
+                {
+                  "id": "subunidades",
+                  "name": "Subunidades",
+                  "children": [],
+                  "_reg": true
+                }
+              ],
+              "abbreviation": "6º BBM",
+              "detailId": "bbm-es-lob"
             },
             {
               "id": "cias-ind-es",
@@ -4464,11 +4727,11 @@
         }
       ],
       "stats": {
-        "total_documents": 1,
+        "total_documents": 2,
         "has_regimento": false,
         "has_nga": true,
-        "total_chars": 1392715,
-        "organs_mapped": 65,
+        "total_chars": 1414298,
+        "organs_mapped": 71,
         "curated": true
       }
     },
