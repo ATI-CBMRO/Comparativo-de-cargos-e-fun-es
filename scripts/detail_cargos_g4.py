@@ -55,6 +55,14 @@ CARGOS = {
   "batalhao": [{"cargo": "Comandante de Batalhão de Bombeiro Militar (BBM)", "subordinadoA": "Comando Regional", "requisito": "Oficial Superior", "desdobramentos": ["Companhias", "Pelotões", "Grupos"], "atribuicoes": ["Coordenação e execução de defesa civil", "Combate a incêndios e desastres; buscas, salvamentos, socorros e atendimento pré-hospitalar"]}],
   "gost": [{"cargo": "Grupo de Operações de Socorro Tático (GOST)", "subordinadoA": "Comandante-Geral", "requisito": "Equivalente a Companhia Independente", "desdobramentos": [], "atribuicoes": ["Missão especializada de socorro tático", "Emergências ambientais e defesa civil; busca e salvamento com cães"]}],
   "uoa": [{"cargo": "Unidade de Operações Aéreas (UOA)", "subordinadoA": "Subcomandante-Geral", "requisito": "Oficial Superior", "desdobramentos": [], "atribuicoes": ["Busca, resgate e salvamento aéreo", "Missões de apoio à defesa civil e a órgãos públicos"]}],
+  "cg-pr-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Governador do Estado", "requisito": "Coronel Combatente da ativa do Corpo de Bombeiros Militar do Paraná - CBMPR (Art. 10)",
+     "desdobramentos": ["Subcomandante-Geral - SCG", "Estado-Maior - EM", "Gabinete do Comando-Geral - Gab.CmtG", "Consultoria Institucional - CI", "Comissão de Promoções de Oficiais - CPO", "Comissão de Promoções de Praças - CPP", "Comissão de Mérito - CM", "Corregedoria-Geral - Coger"],
+     "atribuicoes": [
+       "O Comandante-Geral, responsável superior pelo comando e pela administração geral do Corpo de Bombeiros Militar do Paraná - CBMPR, será nomeado pelo Governador do Estado, dentre os Coronéis Combatentes da ativa da Corporação. (Art. 10)",
+       "Parágrafo único. O Comandante-Geral tem precedência hierárquica e funcional sobre todos os Oficiais e Praças do Corpo de Bombeiros Militar do Paraná - CBMPR que estejam no exercício de funções bombeiros-militares, de natureza ou interesse bombeiro-militar, dentro ou fora da Corporação, com exceção da precedência funcional em relação ao Coordenador Estadual da Defesa Civil. (Art. 10, parágrafo único)"
+     ]},
+  ],
 },
 
 # ── PARAÍBA (LC nº 191/2024) ──
