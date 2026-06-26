@@ -27,3 +27,11 @@ Desktop.ini
 # Python
 __pycache__/
 *.pyc
+
+# Rascunhos visuais do brainstorming (Superpowers)
+.superpowers/
+
+# Segredos do Firebase (NUNCA versionar chaves/credenciais)
+.env
+.env.local
+serviceAccountKey.json
