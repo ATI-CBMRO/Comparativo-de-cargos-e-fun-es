@@ -2,8 +2,8 @@
 build_minuta_structure.py — Portal CBM
 
 Gera database/minuta_structure.json: minuta ARTICULADA e HIERÁRQUICA do Regimento
-Interno da estrutura OPERACIONAL do CBMRO — do topo (DPO/COT/DOE) à menor fração
-(Companhia/GBM). Um capítulo por órgão; uma seção por função (cargo).
+Interno do CBMRO — do Comando Geral (CG) à menor fração (Companhia/GBM), cobrindo
+os 26 órgãos da LOB. Um capítulo por órgão; uma seção por função (cargo).
 
 Fontes:
   - database/organs_detail/ro.json        (estrutura + competências RO verbatim)
@@ -33,17 +33,32 @@ TITLE = "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO"
 # Ordem dos capítulos = ordem de subordinação (topo → menor fração).
 # (organ_key, CHAPTER_TITLE, artigo_definido)
 ORGAN_ORDER = [
-    ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A"),
-    ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A"),
-    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
-    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "Os"),
-    ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O"),
-    ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A"),
-    ("cat",   "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",           "A"),
-    ("bbs",   "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                 "O"),
-    ("bifea", "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
-    ("boa",   "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                   "O"),
-    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O"),
+    ("cg",           "DO COMANDO GERAL (CG)",                                          "O"),
+    ("depdec",       "DA DIRETORIA ESTADUAL DE PROTEÇÃO E DEFESA CIVIL (DEPDEC)",       "A"),
+    ("condeg",       "DO CONSELHO DELIBERATIVO DE ESTRATÉGIA E GESTÃO (CONDEG)",        "O"),
+    ("dp",           "DA DIRETORIA DE PESSOAL (DP)",                                    "A"),
+    ("deei",         "DA DIRETORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (DEEI)",             "A"),
+    ("dpof",         "DA DIRETORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS (DPOF)",        "A"),
+    ("dsap",         "DA DIRETORIA DE SAÚDE E ASSISTÊNCIA AO PESSOAL (DSAP)",            "A"),
+    ("dlog",         "DA DIRETORIA DE LOGÍSTICA (DLOG)",                                "A"),
+    ("dpo",          "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",                  "A"),
+    ("doe",          "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",                    "A"),
+    ("cot",          "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                          "O"),
+    ("cint",         "DA COORDENADORIA DE INTELIGÊNCIA (CINT)",                         "A"),
+    ("ccs",          "DA COORDENADORIA DE COMUNICAÇÃO SOCIAL (CCS)",                    "A"),
+    ("cinf",         "DA COORDENADORIA DE INFORMÁTICA (CINF)",                          "A"),
+    ("crbm",         "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",               "Os"),
+    ("assessorias",  "DAS ASSESSORIAS",                                                 "As"),
+    ("gab-cg",       "DO GABINETE DO COMANDANTE-GERAL",                                 "O"),
+    ("ag",           "DA AJUDÂNCIA-GERAL (AG)",                                         "A"),
+    ("bbm",          "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                          "O"),
+    ("cibm",         "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",           "A"),
+    ("cat",          "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",                   "A"),
+    ("bbs",          "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                         "O"),
+    ("bifea",        "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
+    ("boa",          "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                           "O"),
+    ("gbm",          "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                             "O"),
+    ("corregedoria", "DA CORREGEDORIA-GERAL",                                           "A"),
 ]
 
 # Área de atuação dos Órgãos de Execução (LOB Art. 9), para agrupar o Art. 3.
