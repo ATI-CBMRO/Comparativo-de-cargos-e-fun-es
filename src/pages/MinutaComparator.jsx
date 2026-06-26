@@ -14,32 +14,53 @@ function ProvBadge({ provenance }) {
   )
 }
 
-/* Pilha de órgãos de um estado dentro de uma célula (alguns estados têm 2+) */
-function StateCell({ state, row }) {
-  if (!state || (state.organs || []).length === 0) return <span className="cc-empty">—</span>
+/* Pilha de órgãos de um estado dentro de uma célula (alguns estados têm 2+).
+   Recebe a lista de órgãos diretamente (serve à coluna LOB e à coluna compilada). */
+function StateCell({ organs, note, row }) {
+  if (!organs || organs.length === 0) return <span className="cc-empty">—</span>
   return (
     <>
-      {state.organs.map((o, i) => (
+      {organs.map((o, i) => (
         <div key={i} style={i > 0 ? { marginTop: 8, paddingTop: 8, borderTop: '1px dashed var(--border-subtle)' } : undefined}>
           {row.render(o)}
         </div>
       ))}
-      {row.key === 'organ' && state.note && (
-        <div style={{ marginTop: 6, fontSize: 10.5, color: 'var(--text-muted)', fontStyle: 'italic' }}>{state.note}</div>
+      {row.key === 'organ' && note && (
+        <div style={{ marginTop: 6, fontSize: 10.5, color: 'var(--text-muted)', fontStyle: 'italic' }}>{note}</div>
       )}
     </>
   )
 }
 
-/* Tabela pareada: Campo | CBMRO | estado selecionado */
+/* Cabeçalho de uma das duas colunas do estado (LOB ou Compilada). */
+function StateColHead({ state, kind }) {
+  if (!state) return <span className="cc-empty">Selecione um estado</span>
+  const isLob = kind === 'lob'
+  const provenance = isLob ? state.lobProvenance : state.provenance
+  return (
+    <div className="cc-corp-head">
+      <span className="cc-corp-abbr">{state.abbr}</span>
+      <div>
+        <div className="cc-corp-name">{state.name}</div>
+        <div className="cc-corp-cbm" style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+          <span className="oc-col-kind">{isLob ? 'LOB' : 'Compilada'}</span>
+          {provenance && <ProvBadge provenance={provenance} />}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* Tabela: Campo | CBMRO | LOB do estado | Legislação compilada */
 function PairTable({ organ, state }) {
   const refOrgans = organ.reference ? [organ.reference] : []
   return (
     <div className="oc-pair-wrapper" style={{ border: '1px solid var(--border-card)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-      <table className="oc-pair-table">
+      <table className="oc-pair-table oc-pair-table-3">
         <colgroup>
           <col className="oc-pair-col-label" />
           <col className="oc-pair-col-ro" />
+          <col className="oc-pair-col-lob" />
           <col className="oc-pair-col-st" />
         </colgroup>
         <thead>
@@ -50,25 +71,12 @@ function PairTable({ organ, state }) {
                 <span className="cc-corp-abbr ref">RO</span>
                 <div>
                   <div className="cc-corp-name">Rondônia</div>
-                  <div className="cc-corp-cbm">CBMRO · Referência</div>
+                  <div className="cc-corp-cbm">CBMRO · Referência (LOB)</div>
                 </div>
               </div>
             </th>
-            <th className="oc-pair-th-st">
-              {state ? (
-                <div className="cc-corp-head">
-                  <span className="cc-corp-abbr">{state.abbr}</span>
-                  <div>
-                    <div className="cc-corp-name">{state.name}</div>
-                    <div className="cc-corp-cbm" style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
-                      {state.cbm}
-                      <ProvBadge provenance={state.provenance} />
-                      {state.sourceLabel && <span style={{ fontWeight: 600 }}>{state.sourceLabel}</span>}
-                    </div>
-                  </div>
-                </div>
-              ) : <span className="cc-empty">Selecione um estado</span>}
-            </th>
+            <th className="oc-pair-th-lob"><StateColHead state={state} kind="lob" /></th>
+            <th className="oc-pair-th-st"><StateColHead state={state} kind="comp" /></th>
           </tr>
         </thead>
         <tbody>
@@ -86,7 +94,8 @@ function PairTable({ organ, state }) {
                     : null)
                 : <td className="oc-pair-td-ro">{row.render(refOrgans[0])}</td>
               }
-              <td className="oc-pair-td-st"><StateCell state={state} row={row} /></td>
+              <td className="oc-pair-td-lob"><StateCell organs={state?.lobOrgans} row={row} /></td>
+              <td className="oc-pair-td-st"><StateCell organs={state?.organs} note={state?.note} row={row} /></td>
             </tr>
           ))}
         </tbody>
@@ -206,11 +215,13 @@ export default function MinutaComparator() {
       <div className="page-body">
         <div className="card no-print" style={{ marginBottom: 16 }}>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
-            Compare a legislação do <strong>CBMRO</strong> com a de <strong>um estado por vez</strong>, órgão a
-            órgão, na mesma ordem da minuta do Regimento Interno — do topo (DPO/COT) à menor fração (Guarnição
-            de Serviço). Escolha o órgão à esquerda e clique na <strong>sigla de um estado</strong> para trocar a
-            legislação comparada. Colunas marcadas <strong>Curado</strong> trazem texto verbatim atribuído à
-            fonte; <strong>Auto</strong> vêm de extração automática e podem ser rasas.
+            Compare, órgão a órgão, a minuta da <strong>LOB do CBMRO</strong> com o estado
+            selecionado em <strong>duas visões lado a lado</strong>: a <strong>LOB do estado</strong>
+            (só a Lei de Organização Básica) e a <strong>legislação compilada</strong> (todas as
+            fontes curadas — LOB, Regimento, NGA etc.). Escolha o órgão à esquerda e clique na
+            <strong> sigla de um estado</strong> para trocar a comparação. Colunas marcadas
+            <strong> Curado</strong> trazem texto verbatim atribuído à fonte; <strong>Auto</strong>
+            vêm de extração automática e podem ser rasas.
           </p>
         </div>
 
