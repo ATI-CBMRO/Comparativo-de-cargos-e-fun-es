@@ -34,6 +34,20 @@ CARGOS = {
     {"cargo": "Comandante do Batalhão de Operações, Proteção Ambiental e Resposta a Desastres (BOPAR)", "subordinadoA": "Comando de Missões Especiais", "requisito": "Tenente-Coronel/Major QOCBM", "desdobramentos": [], "atribuicoes": ["Proteção ambiental e resposta a desastres"]},
     {"cargo": "Comandante do Batalhão Especializado em Operações com Produtos Perigosos (BEOPP)", "subordinadoA": "Comando de Missões Especiais", "requisito": "Tenente-Coronel/Major QOCBM", "desdobramentos": [], "atribuicoes": ["Operações com produtos perigosos"]},
   ],
+  "cg-go-lob": [
+    {"cargo": "Comandante-Geral", "subordinadoA": "Governador do Estado", "requisito": "Coronel do Quadro de Oficiais de Comando – QOC, possuidor do Curso Superior de Bombeiro Militar ou equivalente (Art. 12)",
+     "desdobramentos": ["Gabinete do Comandante-Geral", "Gabinete do Subcomandante-Geral", "Estado Maior-Geral", "Chefia de Gabinete", "Ajudância de Ordens", "Assessorias e Assistências", "Comissões", "Secretaria-Geral"],
+     "atribuicoes": [
+       "Elaborar a política de gestão administrativa, operacional e de pessoal (Art. 11, I)",
+       "Baixar normas, diretrizes e ordens gerais e específicas aos diversos setores da Corporação (II)",
+       "Baixar normas regulando o quantitativo de seções e as atribuições de cada seção do Estado Maior-Geral (III)",
+       "Aprovar planos e programas relacionados a gestão de pessoal e recursos orçamentários, financeiros e materiais (IV)",
+       "Aprovar projetos institucionais e planos de gestão (V)",
+       "Movimentar oficiais e praças, no interesse do serviço, a pedido ou a bem da disciplina (VI)",
+       "Autorizar o intercâmbio de bombeiros militares do Estado de Goiás com instituições de outros Estados da Federação, bem como de militares da União e de outras Unidades da Federação com o Corpo de Bombeiros Militar do Estado de Goiás, para fins de formação, especialização, aperfeiçoamento, habilitação e aprimoramento profissional e atuação em operações de bombeiros e humanitárias (VII)",
+       "Editar normas relativas a identificação de pessoal e registro e porte de arma (VIII)"
+     ]},
+  ],
 },
 
 # ── MARANHÃO (Lei nº 10.230/2015) ──
