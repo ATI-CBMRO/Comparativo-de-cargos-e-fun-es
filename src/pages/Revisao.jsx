@@ -6,6 +6,7 @@ import { incisoDispositivoId, caputDispositivoId } from '../lib/dispositivoId.js
 import { groupByDispositivo, countByDispositivo } from '../lib/reviewGroup.js'
 import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
+  setAdminStatus, subscribeFinalTexts, saveFinalText,
 } from '../lib/reviewData.js'
 import RevisaoModal from '../components/RevisaoModal.jsx'
 
@@ -39,9 +40,17 @@ export default function Revisao() {
     (e) => console.error('Erro na assinatura de sugestões:', e),
   ), [])
 
+  const [finals, setFinals] = useState(new Map())
+  useEffect(() => subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e)), [])
+
   const counts = useMemo(() => countByDispositivo(suggestions), [suggestions])
   const grupos = useMemo(() => groupByDispositivo(suggestions), [suggestions])
   const articles = useMemo(() => (data ? buildArticles(data) : []), [data])
+  const fechados = useMemo(() => {
+    let n = 0
+    finals.forEach(f => { if (f.status === 'fechado') n += 1 })
+    return n
+  }, [finals])
 
   const abrir = (id, label, trecho) => setAberto({ id, label, trecho })
 
@@ -65,6 +74,7 @@ export default function Revisao() {
             Clique no balão à direita de cada dispositivo para ver e enviar sugestões.
             As sugestões de todos ficam visíveis.
           </p>
+          <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
         </div>
       </div>
 
@@ -82,7 +92,7 @@ export default function Revisao() {
                   <p className="rev-section">Seção {romanize(art.sectionNumber)} — {art.sectionTitle}</p>
                 )}
 
-                <div className="rev-line">
+                <div className={`rev-line${finals.get(caputId)?.status === 'fechado' ? ' fechado' : ''}`}>
                   <span className="rev-text" style={{ textIndent: art.incisos.length ? 0 : '1.25em' }}>
                     <strong>{articleLabel(art.number)}</strong> {art.caput}
                   </span>
@@ -93,7 +103,7 @@ export default function Revisao() {
                   const id = incisoDispositivoId(inc.editId, inc.index)
                   const label = `${articleLabel(art.number)}, inciso ${romanize(i + 1)}`
                   return (
-                    <div className="rev-line rev-inciso" key={`${id}`}>
+                    <div className={`rev-line rev-inciso${finals.get(id)?.status === 'fechado' ? ' fechado' : ''}`} key={`${id}`}>
                       <span className="rev-text"><strong>{romanize(i + 1)} -</strong> {inc.text}</span>
                       <Rail count={counts.get(id)} onClick={() => abrir(id, label, inc.text)} />
                     </div>
@@ -109,10 +119,13 @@ export default function Revisao() {
         <RevisaoModal
           dispositivo={aberto}
           suggestions={grupos.get(aberto.id) ?? []}
+          finalText={finals.get(aberto.id) ?? null}
           user={user}
           onAdd={handleAdd}
           onToggleLike={(s) => toggleLike(s, user.uid)}
           onDelete={(s) => deleteSuggestion(s.id)}
+          onSetStatus={(s, status) => setAdminStatus(s.id, status)}
+          onSaveFinal={(texto, status) => saveFinalText(aberto.id, { texto, status, autor: { uid: user.uid, nome: user.nome } })}
           onClose={() => setAberto(null)}
         />
       )}

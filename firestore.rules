@@ -25,7 +25,8 @@ service cloud.firestore {
       // Autor altera a própria sugestão; qualquer membro só pode togglar o 👍 (campo curtidoPor).
       allow update: if isMember()
         && (resource.data.autorUid == request.auth.uid
-            || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['curtidoPor']));
+            || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['curtidoPor'])
+            || (isAdmin() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['adminStatus'])));
     }
 
     match /finalTexts/{id} {
