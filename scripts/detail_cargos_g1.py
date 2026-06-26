@@ -233,6 +233,16 @@ CARGOS = {
   "cbi-am": [
     {"cargo": "Comandante de Bombeiros do Interior", "subordinadoA": "Subcomandante Geral", "requisito": "Tenente-Coronel QOBM", "desdobramentos": ["Companhias Independentes BM (Itacoatiara, Manacapuru, Parintins)", "Pelotões Independentes BM (Tefé, Tabatinga)"], "atribuicoes": ["Planejamento estratégico, coordenação e fiscalização das unidades do interior"]},
   ],
+  "cg-am-lob": [
+    {"cargo": "Comandante Geral", "subordinadoA": "Governador do Estado", "requisito": "Oficial superior combatente, da ativa, possuidor do Curso Superior de Bombeiro Militar (CSBM), do último posto da própria Corporação; de livre nomeação e exoneração do Governador do Estado (Art. 10)",
+     "desdobramentos": ["Subcomandante Geral", "Coordenadoria Estadual de Defesa Civil", "Conselho Superior de Políticas Estratégicas", "Gabinete", "Ajudância Geral (AG)", "Comissões"],
+     "atribuicoes": [
+       "O Comandante Geral do Corpo de Bombeiros Militar do Estado do Amazonas é responsável pelo comando, administração e emprego da Corporação (Art. 9º).",
+       "O Comandante Geral do CBMAM, no âmbito do Estado do Amazonas, tem honras e prerrogativas de Secretário de Estado (Art. 9º, parágrafo único).",
+       "Quando a nomeação não recair no oficial superior mais antigo da Corporação, o nomeado terá precedência funcional e hierárquica sobre os demais (Art. 10, § 1º).",
+       "Será assessorado por oficiais superiores na função de assistentes e por oficial intermediário ou subalterno combatente, na função de ajudante-de-ordens, todos da Corporação (Art. 10, § 3º)."
+     ]},
+  ],
 },
 
 }

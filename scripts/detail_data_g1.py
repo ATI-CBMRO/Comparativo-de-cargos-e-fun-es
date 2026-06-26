@@ -794,6 +794,251 @@ DATA = {
       "cargos": [
         {"cargo": "Comandante do CBI", "subordinadoA": "Subcomandante Geral", "requisito": "Tenente Coronel QOBM", "desdobramentos": [], "atribuicoes": ["Comando das operações no interior"]}
       ]
+    },
+
+    "cg-am-lob": {
+      "name": "Comando Geral", "abbreviation": "CG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Governador do Estado", "legalRef": "Art. 8º, I; Art. 9º e 10",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 8º (Órgãos de Direção Geral)", "Art. 9º (Comandante Geral)", "Art. 10 (Requisitos e nomeação)"],
+      "atribuicoes": [
+        "O Comandante Geral do Corpo de Bombeiros Militar do Estado do Amazonas é responsável pelo comando, administração e emprego da Corporação.",
+        "O Comandante Geral do CBMAM, no âmbito do Estado do Amazonas, tem honras e prerrogativas de Secretário de Estado (Art. 9º, parágrafo único)."
+      ],
+      "desdobramentos": ["Subcomandante Geral", "Coordenadoria Estadual de Defesa Civil", "Conselho Superior de Políticas Estratégicas", "Gabinete", "Ajudância Geral (AG)", "Comissões"],
+      "cargos": []
+    },
+    "scg-am-lob": {
+      "name": "Subcomandante Geral", "abbreviation": "SCG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral (indicação) / Governador do Estado (nomeação)", "legalRef": "Art. 11 a 13",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 11 (Substituto automático)", "Art. 12 (Requisitos e nomeação)", "Art. 13 (Competências)"],
+      "atribuicoes": [
+        "O Subcomandante Geral é o substituto automático do Comandante Geral nas suas faltas e impedimentos (Art. 11).",
+        "O Subcomandante Geral é o principal assessor do Comandante Geral, competindo-lhe dirigir, orientar, coordenar e fiscalizar todos os trabalhos internos da Corporação (Art. 13).",
+        "O Subcomandante Geral do CBMAM, no âmbito do Estado do Amazonas, tem honras e prerrogativas de Subsecretário de Estado (Art. 13, parágrafo único)."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "cedec-am-lob": {
+      "name": "Coordenadoria Estadual de Defesa Civil", "abbreviation": "CEDEC", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 8º, II; Art. 14",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 8º (Órgãos de Direção Geral)", "Art. 14 (CEDEC)"],
+      "atribuicoes": [
+        "A Coordenadoria Estadual de Defesa Civil (CEDEC), órgão de direção geral, centraliza o Sistema Estadual de Defesa Civil e tem por finalidade estabelecer normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar a execução das medidas preventivas de socorro, de assistência e de recuperação, considerando os efeitos produzidos por fatos adversos de qualquer natureza e nas situações de emergência ou estado de calamidade pública (Art. 14).",
+        "A Coordenadoria Estadual de Defesa Civil terá seu regimento, estrutura própria e dotação orçamentária específica para os fins a que se destina (Art. 14, § 2º)."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "cspe-am-lob": {
+      "name": "Conselho Superior de Políticas Estratégicas", "abbreviation": "CSPE", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 8º, III; Art. 15",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 8º (Órgãos de Direção Geral)", "Art. 15 (CSPE)"],
+      "atribuicoes": [
+        "O Conselho Superior de Políticas Estratégicas (CSPE), constituído pelo Comandante Geral, Subcomandante Geral, Comandantes de Bombeiros da Capital e do Interior e Diretores Setoriais, reunir-se-á, eventualmente, por convocação do Comandante Geral, ou em datas por ele prefixadas, e terá suas atribuições definidas no Regimento Interno da Corporação (Art. 15)."
+      ],
+      "desdobramentos": ["Comandante Geral", "Subcomandante Geral", "Comandantes de Bombeiros da Capital e do Interior", "Diretores Setoriais"],
+      "cargos": []
+    },
+    "gabinete-am-lob": {
+      "name": "Gabinete do Comando-Geral", "abbreviation": "GAB", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 8º, IV; Art. 16 e 17",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 8º (Órgãos de Direção Geral)", "Art. 16 (Gabinete)", "Art. 17 (Funções de confiança)"],
+      "atribuicoes": [
+        "O Gabinete do Comando-Geral tem a seu cargo as funções de assistência e assessoramento direto ao Comandante Geral nos assuntos que refogem às atribuições normais e específicas dos demais órgãos de direção (Art. 16).",
+        "Ao Gabinete do Comando-Geral cabe o controle e a supervisão do expediente pessoal do Comandante Geral (Art. 16, parágrafo único)."
+      ],
+      "desdobramentos": ["Chefe de Gabinete", "Secretário", "Assessor de Comunicações e Imprensa (ACI)", "Assessor Jurídico (AJ)", "Ajudante-de-Ordens"],
+      "cargos": []
+    },
+    "ag-am-lob": {
+      "name": "Ajudância Geral", "abbreviation": "AG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 8º, V; Art. 18",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 8º (Órgãos de Direção Geral)", "Art. 18 (Ajudância Geral)"],
+      "atribuicoes": [
+        "A Ajudância Geral (AG) é o órgão responsável pelas funções administrativas do Comando Geral (Art. 18).",
+        "São atribuições da Ajudância Geral: trabalhos de secretaria, inclusive correspondências, correios, protocolo geral, arquivo geral e boletim geral (a); serviço de embarque da Corporação (b); apoio de pessoal auxiliar (militar e civil) aos órgãos do Comando Geral (c); serviços gerais (d); e segurança do Quartel do Comando Geral (e) (Art. 18, § 1º)."
+      ],
+      "desdobramentos": ["Secretaria Geral", "Seção Administrativa (AG-1)", "Seção de Protocolo e Distribuição (AG-2)", "Seção de Transporte e Embarque (AG-3)", "Seção de Comando e Serviço (AG-4)", "Banda de Música"],
+      "cargos": []
+    },
+    "comissoes-am-lob": {
+      "name": "Comissões", "abbreviation": "COM", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comando Geral", "legalRef": "Art. 8º, VI; Art. 19",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 8º (Órgãos de Direção Geral)", "Art. 19 (Comissões)"],
+      "atribuicoes": [
+        "As Comissões, órgãos de assessoramento superior do Comando Geral, constituídas para dirimir assuntos específicos, serão de caráter permanente ou temporário (Art. 19).",
+        "A Comissão de Promoção de Oficiais (CPO), presidida pelo Comandante-Geral, e a Comissão de Promoções de Praças (CPP), pelo Subcomandante Geral, terão caráter permanente (Art. 19, § 1º).",
+        "Além das Comissões de que trata este artigo, poderão ser constituídas outras Comissões, de caráter temporário, destinadas a estudos específicos, a critério do Comandante-Geral (Art. 19, § 2º)."
+      ],
+      "desdobramentos": ["Comissão de Promoção de Oficiais (CPO)", "Comissão de Promoções de Praças (CPP)", "Comissões temporárias"],
+      "cargos": []
+    },
+    "drh-am-lob": {
+      "name": "Diretoria de Recursos Humanos", "abbreviation": "DRH", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 20, I; Art. 21 e 22",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 20 (Órgãos de Direção Setorial)", "Art. 21 (DRH)", "Art. 22 (Organização)"],
+      "atribuicoes": [
+        "A Diretoria de Recursos Humanos (DRH) é o órgão de direção setorial responsável pelo planejamento, controle e fiscalização das atividades relacionadas com políticas de pessoal, da admissão, da capacitação técnica, da assistência psicológica, social, jurídica e religiosa, pela remuneração do pessoal e pela prevenção de acidentes no trabalho (Art. 21).",
+        "Às Diretorias, sob a coordenação do Subcomandante Geral, competem, também, em suas áreas específicas: produzir informações (I); realizar estudos de situação (II); apresentar propostas e sugestões (III); elaborar planos e ordens para aprovação do Comandante-Geral (IV); e supervisionar, no âmbito de sua competência, a execução dos planos e ordens (V) (Art. 20, parágrafo único)."
+      ],
+      "desdobramentos": ["Seção de Controle de Pessoal Ativo, Inativo e Civil (DRH-1)", "Seção de Recrutamento, Seleção e Serviço Reservado (DRH-2)", "Seção de Cadastro, Identificação, Avaliação, Classificação, Movimentação e Promoções (DRH-3)", "Seção de Desenvolvimento Humano (DRH-4)", "Seção de Expediente e Mobilização (DRH-5)", "Seção de Pagadoria de Pessoal (DRH-6)", "Centro de Assistência Social e Religiosa (CASR)"],
+      "cargos": []
+    },
+    "df-am-lob": {
+      "name": "Diretoria de Finanças", "abbreviation": "DF", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 20, II; Art. 23 e 24",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 20 (Órgãos de Direção Setorial)", "Art. 23 (DF)", "Art. 24 (Organização)"],
+      "atribuicoes": [
+        "A Diretoria de Finanças (DF) é o órgão de direção setorial responsável pelas atividades específicas da gestão orçamentária e financeira, supervisão destas junto aos demais órgãos da Corporação, controle de repasse de recursos orçamentários e captação de recursos financeiros, de acordo com o planejamento estabelecido (Art. 23).",
+        "À Diretoria de Finanças (DF) compete o controle e a fiscalização da execução orçamentária e financeira da Corporação (Art. 23, parágrafo único)."
+      ],
+      "desdobramentos": ["Seção de Administração Financeira (DF-1)", "Seção de Contabilidade (DF-2)", "Seção de Auditoria (DF-3)", "Seção de Expediente (DF-4)"],
+      "cargos": []
+    },
+    "dl-am-lob": {
+      "name": "Diretoria de Logística", "abbreviation": "DL", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 20, III; Art. 25 e 26",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 20 (Órgãos de Direção Setorial)", "Art. 25 (DL)", "Art. 26 (Organização)"],
+      "atribuicoes": [
+        "A Diretoria de Logística (DL) é o órgão de direção setorial responsável pelo planejamento, coordenação, fiscalização e controle das atividades de suprimento e material da Corporação, além da elaboração de convênios e atividades de saúde (Art. 25)."
+      ],
+      "desdobramentos": ["Seção de Suprimento (DL-1)", "Seção de Manutenção (DL-2)", "Seção de Patrimônio e Expediente (DL-3)", "Centro de Suprimento e Manutenção de Materiais e Serviços (CSM/MS)"],
+      "cargos": []
+    },
+    "deipo-am-lob": {
+      "name": "Diretoria de Ensino, Instrução, Pesquisa e Operações", "abbreviation": "DEIPO", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 20, IV; Art. 27 e 28",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 20 (Órgãos de Direção Setorial)", "Art. 27 (DEIPO)", "Art. 28 (Organização)"],
+      "atribuicoes": [
+        "A Diretoria de Ensino, Instrução, Pesquisa e Operações (DEIPO) é o órgão de direção setorial responsável pela coordenação, fiscalização, controle das atividades de ensino, instrução, pesquisa e pelo planejamento operacional da Corporação (Art. 27)."
+      ],
+      "desdobramentos": ["Seção de Ensino, Instrução e Pesquisa (DEIPO-1)", "Seção de Projetos e Programas Especiais (DEIPO-2)", "Seção de Planejamento, Expediente e Meios Auxiliares (DEIPO-3)", "Escola de Bombeiros Militar (ESBOM)", "Centro de Informática (CInf)"],
+      "cargos": []
+    },
+    "dst-am-lob": {
+      "name": "Diretoria de Serviços Técnicos", "abbreviation": "DST", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 20, V; Art. 29 e 30",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 20 (Órgãos de Direção Setorial)", "Art. 29 (DST)", "Art. 30 (Organização)"],
+      "atribuicoes": [
+        "A Diretoria de Serviços Técnicos (DST) é o órgão de direção setorial incumbido de estudar, analisar, planejar, exigir, fiscalizar as atividades atinentes à prevenção e segurança contra incêndios e pânico, além de proceder testes, exames de plantas, perícias de incêndio e explosão, a realizar vistorias e emitir pareceres e supervisionar a instalação de hidrantes na rede pública (Art. 29)."
+      ],
+      "desdobramentos": ["Seção de Exames de Projetos (DST-1)", "Seção de Vistorias e Pareceres (DST-2)", "Seção de Hidrante, Expediente e Apoio (DST-3)", "Centro de Perícia de Incêndio (CPI)"],
+      "cargos": []
+    },
+    "casr-am-lob": {
+      "name": "Centro de Assistência Social e Religiosa", "abbreviation": "CASR", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Recursos Humanos", "legalRef": "Art. 31, I, a; Art. 32 e 33",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 31 (Órgãos de Apoio)", "Art. 32 (CASR)", "Art. 33 (Organização)"],
+      "atribuicoes": [
+        "O Centro de Assistência Social e Religiosa (CASR), órgão de apoio de pessoal, subordinado diretamente à Diretoria de Recursos Humanos, destina-se à prestação de serviços assistenciais e religiosos aos componentes do Corpo de Bombeiros e seus dependentes (Art. 32)."
+      ],
+      "desdobramentos": ["Seção de Assistência (CASR-1)", "Seção de Orientação e Encaminhamento (CASR-2)", "Seção de Assistência Religiosa (CASR-3)"],
+      "cargos": []
+    },
+    "csm-am-lob": {
+      "name": "Centro de Suprimento e Manutenção de Materiais e Serviços", "abbreviation": "CSM/MS", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Logística", "legalRef": "Art. 31, II, a; Art. 34",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 31 (Órgãos de Apoio)", "Art. 34 (CSM/MS)"],
+      "atribuicoes": [
+        "O Centro de Suprimento e Manutenção de Materiais e Serviços (CSM/MS), órgão de apoio logístico, subordinado à Diretoria de Logística, destina-se à aquisição de suprimentos, execução de obras, manutenção e transporte de pessoal e material, em proveito de toda a Corporação, inclusive armamentos e munições (Art. 34)."
+      ],
+      "desdobramentos": ["Seção de Recebimento e Distribuição (CSM/MS-1)", "Seção de Oficinas (CSM/MS-2)", "Seção de Expediente, Obras e Serviços Gerais (CSM/MS-3)"],
+      "cargos": []
+    },
+    "esbom-am-lob": {
+      "name": "Escola de Bombeiros Militar", "abbreviation": "ESBOM", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Ensino, Instrução, Pesquisa e Operações", "legalRef": "Art. 31, III, a; Art. 35 e 36",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 31 (Órgãos de Apoio)", "Art. 35 (ESBOM)", "Art. 36 (Estrutura)"],
+      "atribuicoes": [
+        "A Escola de Bombeiros Militar (ESBOM), órgão de apoio de ensino subordinado à Diretoria de Ensino, Instrução, Pesquisa e Operações (DEIPO), destina-se à formação, aperfeiçoamento e especialização de bombeiros, bem como ao desenvolvimento de estudos e pesquisas técnico-científicas (Art. 35).",
+        "Dependendo da disponibilidade de pessoal, material, instalações e recursos financeiros, estes serviços poderão, mediante convênio, ser estendidos a civis, oficiais e praças de outras corporações (Art. 35, parágrafo único)."
+      ],
+      "desdobramentos": ["Comando", "Secretaria", "Divisão de Ensino (DE)", "Divisão Administrativa (DA)", "Corpo de Alunos (CA)"],
+      "cargos": []
+    },
+    "cinf-am-lob": {
+      "name": "Centro de Informática", "abbreviation": "CInf", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Ensino, Instrução, Pesquisa e Operações", "legalRef": "Art. 31, III, b; Art. 37 e 38",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 31 (Órgãos de Apoio)", "Art. 37 (CInf)", "Art. 38 (Organização)"],
+      "atribuicoes": [
+        "O Centro de Informática (CInf), órgão de apoio, subordinado diretamente à Diretoria de Ensino, Instrução, Pesquisa e Operações (DEIPO), destina-se a realizar programas e sistemas para a otimização das áreas administrativas e operacionais da Corporação (Art. 37)."
+      ],
+      "desdobramentos": ["Seção de Suporte (CInf-1)", "Seção de Desenvolvimento e Manutenção de Sistemas (CInf-2)", "Seção de Treinamento (CInf-3)"],
+      "cargos": []
+    },
+    "cpi-am-lob": {
+      "name": "Centro de Perícia de Incêndio", "abbreviation": "CPI", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Serviços Técnicos", "legalRef": "Art. 31, IV, a; Art. 39 e 40",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 31 (Órgãos de Apoio)", "Art. 39 (CPI)", "Art. 40 (Organização)"],
+      "atribuicoes": [
+        "O Centro de Perícia de Incêndio (CPI), órgão de apoio, subordinado à Diretoria de Serviços Técnicos (DST), destina-se a realizar investigações, coletas e análises laboratoriais relacionadas com a perícia de incêndios e explosões e a emitir conclusões técnicas sobre suas atividades (Art. 39)."
+      ],
+      "desdobramentos": ["Seção de Investigação e Coleta (CPI-1)", "Seção de Análises Laboratoriais (CPI-2)", "Seção de Meios e Expedientes (CPI-3)"],
+      "cargos": []
+    },
+    "cobom-am-lob": {
+      "name": "Centro de Operações Bombeiro Militar", "abbreviation": "COBOM", "category": "Execução", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 42, I; Art. 43 e 44",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 41 (Finalidade)", "Art. 42 (Órgãos de Execução)", "Art. 43 (COBOM)", "Art. 44 (Organização)"],
+      "atribuicoes": [
+        "O Centro de Operações Bombeiro Militar (COBOM), órgão de execução, subordinado ao Subcomandante Geral, destina-se ao controle, coordenação, serviços de comunicações e ações operacionais (Art. 43)."
+      ],
+      "desdobramentos": ["Seção de Operações (COBOM-1)", "Seção de Comunicações (COBOM-2)", "Seção de Apoio (COBOM-3)"],
+      "cargos": []
+    },
+    "cbc-am-lob": {
+      "name": "Comando de Bombeiros da Capital", "abbreviation": "CBC", "category": "Execução", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 42, II; Art. 45 a 47",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 42 (Órgãos de Execução)", "Art. 45 (CBC e CBI)", "Art. 46 (Organização)", "Art. 47 (Unidades Operacionais)"],
+      "atribuicoes": [
+        "O Comando de Bombeiros da Capital (CBC) e o Comando de Bombeiros do Interior (CBI), órgãos de execução, subordinados ao Subcomandante Geral, destinam-se ao planejamento estratégico, à coordenação, à fiscalização e ao emprego das Unidades e Sub-unidades que lhe forem subordinadas, com a finalidade de executar atividades de prevenção, combate a incêndio, busca e salvamento, atendimento de socorros de emergência e defesa civil, além de outras atividades previstas em lei (Art. 45)."
+      ],
+      "desdobramentos": ["Comando", "Seção de Administração e Apoio (SAA)", "Seção de Planejamento Operacional (SPO)", "Batalhões de Incêndio (BI)", "Batalhão de Bombeiro Especial (BBE)", "Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA)", "Companhias de Incêndio (CI)", "Companhia de Bombeiro Especial (CBE)", "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)", "Pelotões de Incêndio (PEL/INC)", "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/MA)", "Pelotões de Bombeiros Especiais (PEL/BE)"],
+      "cargos": []
+    },
+    "cbi-am-lob": {
+      "name": "Comando de Bombeiros do Interior", "abbreviation": "CBI", "category": "Execução", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 42, III; Art. 45 a 47",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 42 (Órgãos de Execução)", "Art. 45 (CBC e CBI)", "Art. 46 (Organização)", "Art. 47 (Unidades Operacionais)"],
+      "atribuicoes": [
+        "O Comando de Bombeiros da Capital (CBC) e o Comando de Bombeiros do Interior (CBI), órgãos de execução, subordinados ao Subcomandante Geral, destinam-se ao planejamento estratégico, à coordenação, à fiscalização e ao emprego das Unidades e Sub-unidades que lhe forem subordinadas, com a finalidade de executar atividades de prevenção, combate a incêndio, busca e salvamento, atendimento de socorros de emergência e defesa civil, além de outras atividades previstas em lei (Art. 45)."
+      ],
+      "desdobramentos": ["Comando", "Seção de Administração e Apoio (SAA)", "Seção de Planejamento Operacional (SPO)", "Batalhões de Incêndio (BI)", "Batalhão de Bombeiro Especial (BBE)", "Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA)", "Companhias de Incêndio (CI)", "Companhia de Bombeiro Especial (CBE)", "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)", "Pelotões de Incêndio (PEL/INC)", "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/MA)", "Pelotões de Bombeiros Especiais (PEL/BE)"],
+      "cargos": []
+    },
+    "bbm-am-lob": {
+      "name": "Batalhão de Bombeiros Militar", "abbreviation": "BBM", "category": "Execução", "source": "lob",
+      "subordinadoA": "Comando de Bombeiros da Capital (CBC) / Comando de Bombeiros do Interior (CBI)", "legalRef": "Art. 42, IV; Art. 48 a 53",
+      "baseLegal": "Lei nº 2.538, de 08 de junho de 1999 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 42 (Órgãos de Execução)", "Art. 48 e 49 (Batalhão de Incêndio)", "Art. 50 e 51 (Batalhão de Bombeiro Especial)", "Art. 52 e 53 (Batalhão de Incêndio Florestal e Meio Ambiente)"],
+      "atribuicoes": [
+        "O Batalhão de Incêndio (BI), unidade operacional, órgão de execução, subordinado ao Comando de Bombeiros da Capital (CBC) ou Comando de Bombeiros do Interior (CBI), destina-se à coordenação, ao controle, à fiscalização e à execução de atividade operacional e administrativa em sua área de atuação (Art. 48).",
+        "O Batalhão de Bombeiro Especial (BBE), unidade operacional e órgão de execução, subordinado ao Comando de Bombeiros da Capital, destina-se à coordenação, ao controle, à fiscalização e à execução de atividades administrativas e operacionais de salvamento, busca, resgate e emergências médicas (Art. 50).",
+        "O Batalhão de Incêndio Florestal e Meio Ambiente (BIF/MA), unidade operacional, órgão de execução, subordinado ao Comando Operacional do Interior, destina-se à prevenção e combate a incêndio florestal e queimadas e socorro ao meio ambiente, em conformidade com a lei (Art. 52)."
+      ],
+      "desdobramentos": ["Comando", "Seção Administrativa (SA)", "Seção Operacional (SO)", "Companhias de Incêndios (CI)", "Pelotões de Incêndios (PEL/INC)", "Companhias de Bombeiro Especial (CBE)", "Pelotões de Bombeiros Especiais (PEL/BE)", "Companhias de Incêndio Florestal e Meio Ambiente (CIF/MA)", "Pelotões de Incêndio Florestal e Meio Ambiente (PEL/IF/MA)"],
+      "cargos": []
     }
   }
 },
