@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Library, ScrollText, Menu, X, Network
+  Search, Library, ScrollText, Menu, X, Network, LogOut
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -12,6 +12,10 @@ import SearchPage from './pages/Search.jsx'
 import Legislations from './pages/Legislations.jsx'
 import MinutaWizard from './pages/MinutaWizard.jsx'
 import MinutaDiagrams from './pages/MinutaDiagrams.jsx'
+import Login from './pages/Login.jsx'
+import Revisao from './pages/Revisao.jsx'
+import ProtectedRoute from './components/ProtectedRoute.jsx'
+import { useAuth } from './lib/auth.jsx'
 
 const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
@@ -51,7 +55,21 @@ function Header({ navOpen, onToggleNav }) {
           Corpo de Bombeiros Militar de Rondônia · CBMRO
         </div>
       </div>
+      <HeaderUserBox />
     </header>
+  )
+}
+
+function HeaderUserBox() {
+  const { user, sair } = useAuth()
+  if (!user) return null
+  return (
+    <div className="app-header-user">
+      <span className="app-header-user-name">{user.nome}</span>
+      <button type="button" className="app-header-user-exit" onClick={sair} title="Sair">
+        <LogOut size={16} /> Sair
+      </button>
+    </div>
   )
 }
 
@@ -136,6 +154,8 @@ export default function App() {
           <Route path="/busca" element={<SearchPage />} />
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
         </Routes>
       </main>
     </div>
