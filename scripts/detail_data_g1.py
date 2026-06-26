@@ -215,6 +215,238 @@ DATA = {
         "XIV - instaurar sindicância;",
         "XV - exercer outros encargos que lhes forem atribuídos pelo Comandante Geral ou previstos em leis e regulamentos vigentes."
       ]}]
+    },
+
+    "cg-al-lob": {
+      "name": "Comando Geral", "abbreviation": "CG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Governador do Estado", "legalRef": "Art. 6º a 9º",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 6º (Comando Geral)", "Art. 7º (Requisitos do Comandante)", "Art. 8º (Competências)", "Art. 9º (Gabinete)"],
+      "atribuicoes": [
+        "O Comando Geral da Corporação compete ao Comandante Geral do Corpo de Bombeiros Militar do Estado de Alagoas, responsável pelo comando e a administração da instituição, bem como a coordenação geral das ações de Defesa Civil no Estado de Alagoas."
+      ],
+      "desdobramentos": ["Gabinete do Comandante Geral", "Subcomando Geral", "Conselho de Políticas Estratégicas", "Coordenadoria Estadual de Defesa Civil", "Corregedoria Geral", "Diretorias", "Secretaria Geral", "Comissões"],
+      "cargos": []
+    },
+    "scg-al-lob": {
+      "name": "Subcomando Geral", "abbreviation": "SCG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 10",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 10 (Subcomando Geral)"],
+      "atribuicoes": [
+        "O Subcomando Geral do Corpo de Bombeiros Militar de Alagoas compete ao Oficial designado pelo Governador do Estado, sendo responsável por auxiliar direta e imediatamente o Comandante Geral, cumprindo-lhe substituí-lo em suas faltas ou impedimentos, dentre outras atribuições previstas em lei ou regulamento ou mediante expressa delegação do Comandante Geral da Corporação."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "cpe-al-lob": {
+      "name": "Conselho de Políticas Estratégicas", "abbreviation": "CPE", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 11",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 11 (Conselho de Políticas Estratégicas)"],
+      "atribuicoes": [
+        "O Conselho de Políticas Estratégicas é um colegiado encarregado de assessorar ao Comandante Geral na formulação e avaliação de políticas estratégicas e na fixação de diretrizes de gerenciamento administrativo e de emprego do Corpo de Bombeiros Militar para o cumprimento de suas missões."
+      ],
+      "desdobramentos": ["Comandante Geral (presidente)", "Subcomandante Geral", "Diretor de Recursos Humanos", "Comandantes Operacionais", "Diretor de Material e Patrimônio", "Diretor de Finanças", "Diretor de Planejamento e Orçamento", "Diretor de Ensino", "Diretor de Serviços Técnicos", "Secretário Executivo da Defesa Civil"],
+      "cargos": []
+    },
+    "cedc-al-lob": {
+      "name": "Coordenadoria Estadual de Defesa Civil", "abbreviation": "CEDEC", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 12",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 12 (Coordenadoria Estadual de Defesa Civil)"],
+      "atribuicoes": [
+        "A Coordenadoria Estadual de Defesa Civil é órgão de coordenação central do Sistema Estadual de Defesa Civil, competindo-lhe o estudo, o planejamento, a orientação técnica, a coordenação, a supervisão, a execução, o controle e a avaliação das ações de defesa civil no Estado de Alagoas, observando o disposto na Lei nº 6.171, de 31 de julho de 2000."
+      ],
+      "desdobramentos": ["Coordenador Estadual de Defesa Civil", "Secretaria Executiva de Defesa Civil", "Assessoria Técnica", "Seção de Administração", "Seção de Operações", "Seção de Vistorias e Análise", "Seção de Planejamento"],
+      "cargos": []
+    },
+    "corg-al-lob": {
+      "name": "Corregedoria Geral", "abbreviation": "CORREG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 13",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 13 (Corregedoria Geral)"],
+      "atribuicoes": [
+        "A Corregedoria Geral do Corpo de Bombeiros Militar é o órgão de direção encarregado da orientação, fiscalização e correção dos procedimentos relativos à apuração das transgressões disciplinares e das infrações penais militares dos Bombeiros Militares, promovendo-lhes, ainda, a responsabilidade funcional e disciplinar."
+      ],
+      "desdobramentos": ["Corregedor Geral", "Subcorregedor Geral", "Ouvidoria", "Seção de Polícia Disciplinar", "Seção de Polícia Judiciária Militar", "Seção de Apoio Administrativo", "Seção de Inteligência"],
+      "cargos": []
+    },
+    "drh-al-lob": {
+      "name": "Diretoria de Recursos Humanos", "abbreviation": "DRH", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 15",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 15 (Diretoria de Recursos Humanos)"],
+      "atribuicoes": [
+        "A Diretoria de Recursos Humanos é o órgão central do sistema de recursos humanos do Corpo de Bombeiros Militar, competindo-lhe o estudo, o planejamento, a orientação normativa, a coordenação, a supervisão, o controle e a execução das atividades relativas à gestão de pessoal e desenvolvimento de recursos humanos da Corporação, de acordo com as diretrizes da Secretaria de Estado da Gestão Pública - SEGESP."
+      ],
+      "desdobramentos": ["Seção de Seleção e Ingresso de Recursos Humanos", "Seção de Cadastro, Avaliação, Controle e Movimentação", "Seção de Desenvolvimento de Recursos Humanos", "Seção de Promoções", "Seção de Pagamento de Pessoal", "Seção de Inativos e Pensionistas", "Seção de Identificação", "Seção de Expediente e Arquivo", "Seção de Legislação"],
+      "cargos": []
+    },
+    "dmp-al-lob": {
+      "name": "Diretoria de Material e Patrimônio", "abbreviation": "DMP", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 16",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 16 (Diretoria de Material e Patrimônio)"],
+      "atribuicoes": [
+        "A Diretoria de Material e Patrimônio é o órgão central do sistema logístico do Corpo de Bombeiros Militar, competindo-lhe o estudo, o planejamento, a orientação normativa, a coordenação, a supervisão, o controle e a execução das atividades relativas à gestão do material e patrimônio da Corporação."
+      ],
+      "desdobramentos": ["Seção de Cadastro, Controle e Alienação", "Seção de Aquisição, Contratos e Convênios", "Seção de Administração da Frota", "Seção de Apoio a Comissão de Licitação", "Seção de Expediente e Arquivo"],
+      "cargos": []
+    },
+    "dfin-al-lob": {
+      "name": "Diretoria de Finanças", "abbreviation": "DFIN", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 17",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 17 (Diretoria de Finanças)"],
+      "atribuicoes": [
+        "A Diretoria de Finanças é o órgão central do sistema de administração financeira do Corpo de Bombeiros Militar, competindo-lhe o estudo, o planejamento, a orientação normativa, a coordenação, a supervisão, o controle e a execução das atividades relativas à gestão financeira, ao planejamento e execução orçamentária, à contabilidade e auditoria."
+      ],
+      "desdobramentos": ["Seção de Administração Financeira", "Seção de Contabilidade e Auditoria", "Seção de Expediente e Arquivo", "Tesouraria Geral"],
+      "cargos": []
+    },
+    "dat-al-lob": {
+      "name": "Diretoria de Atividades Técnicas", "abbreviation": "DAT", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 18",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 18 (Diretoria de Atividades Técnicas)"],
+      "atribuicoes": [
+        "A Diretoria de Atividades Técnicas é o órgão central do sistema de engenharia e segurança do Corpo de Bombeiros Militar, competindo-lhe o estudo, a análise, o planejamento, a orientação técnica, a execução, o controle e a fiscalização das atividades relativas à segurança contra incêndio e pânico e ao cumprimento das disposições legais sobre o assunto, no âmbito do Estado de Alagoas."
+      ],
+      "desdobramentos": ["Seção de Estudos e Análise de Projetos", "Seção de Testes, Vistorias e Pareceres", "Seção de Perícias e Pesquisas", "Seção de Hidrantes", "Seção de Expediente e Arquivo"],
+      "cargos": []
+    },
+    "dpo-al-lob": {
+      "name": "Diretoria de Planejamento e Orçamento", "abbreviation": "DPO", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 19",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 19 (Diretoria de Planejamento e Orçamento)"],
+      "atribuicoes": [
+        "A Diretoria de Planejamento e Orçamento é o órgão central do sistema de Planejamento Estratégico e Orçamentário do Corpo de Bombeiros Militar, competindo-lhe a coordenação do planejamento, a orientação técnica, o monitoramento, o controle e a fiscalização das atividades relativas ao planejamento estratégico, bem como a elaboração e execução do orçamento da Corporação."
+      ],
+      "desdobramentos": ["Seção de Administração", "Seção de Informações", "Seção de Monitoramento da Estrutura Organizacional", "Seção de Planejamento, Execução, Controle e Fiscalização Orçamentária"],
+      "cargos": []
+    },
+    "dens-al-lob": {
+      "name": "Diretoria de Ensino", "abbreviation": "DENS", "category": "Direção Setorial", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 20",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 20 (Diretoria de Ensino)"],
+      "atribuicoes": [
+        "A Diretoria de Ensino é o órgão de apoio do sistema de ensino da Corporação, incumbindo-lhe o estudo, o planejamento, a supervisão e o controle das atividades de ensino e capacitação profissional da Instituição."
+      ],
+      "desdobramentos": ["Seção Técnica de Ensino", "Seção de Legislação de Ensino", "Seção de Convênios de Ensino", "Seção de Avaliação e Controle do Ensino", "Academia de Formação de Bombeiros Militares"],
+      "cargos": []
+    },
+    "sg-al-lob": {
+      "name": "Secretaria Geral", "abbreviation": "SG", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 21",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 21 (Secretaria Geral)"],
+      "atribuicoes": [
+        "A Secretaria Geral é o órgão de direção encarregado da administração do Quartel do Comando Geral, considerado como Organização Bombeiro Militar, bem como do expediente, da execução dos trabalhos de secretaria, incluindo a correspondência, correio, redação e impressão do boletim diário, do protocolo e arquivo geral e biblioteca, do apoio em pessoal aos órgãos que compõem o Comando Geral, dos serviços gerais, da banda de música e da segurança do Quartel do Comando Geral."
+      ],
+      "desdobramentos": ["Seção Administrativa", "Seção de Comando e Serviço", "Protocolo Geral", "Arquivo Geral e Biblioteca", "Banda de Música"],
+      "cargos": []
+    },
+    "com-al-lob": {
+      "name": "Comissões", "abbreviation": "COM", "category": "Direção Geral", "source": "lob",
+      "subordinadoA": "Comandante Geral", "legalRef": "Art. 22",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 22 (Comissões)"],
+      "atribuicoes": [
+        "As Comissões são órgãos de assessoramento do Comandante Geral, constituídas para tratar de assuntos específicos de interesse da Corporação e se destinam a dar flexibilidade à estrutura do Comando Geral."
+      ],
+      "desdobramentos": ["Comissão de Promoção de Oficiais", "Comissão de Promoção de Praças", "Comissão Permanente de Licitação", "Comissões temporárias"],
+      "cargos": []
+    },
+    "cman-al-lob": {
+      "name": "Centro de Manutenção", "abbreviation": "CMAN", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Material e Patrimônio", "legalRef": "Art. 24",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 24 (Centro de Manutenção)"],
+      "atribuicoes": [
+        "O Centro de Manutenção é o órgão de apoio do sistema logístico, subordinado à Diretoria de Material e Patrimônio, incumbido das atividades de manutenção do material e do patrimônio da Corporação, inclusive das instalações, bem como do recebimento e da estocagem de todo material necessário a esse fim."
+      ],
+      "desdobramentos": ["Seção de Manutenção de Material Motomecanizado", "Seção de Manutenção de Material Operacional", "Seção de Manutenção de Obras", "Seção de Administração"],
+      "cargos": []
+    },
+    "cti-al-lob": {
+      "name": "Centro de Tecnologia em Informática e Informação", "abbreviation": "CTI", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 25",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 25 (Centro de Tecnologia em Informática e Informação)"],
+      "atribuicoes": [
+        "O Centro de Tecnologia em Informática e Informação é o órgão que gerencia e administra os recursos tecnológicos e computacionais de geração e uso da informação como também todo o parque de informática do Corpo de Bombeiros Militar, subordinado ao Subcomandante Geral, encarregado de desenvolver e manter sistemas informatizados, para as áreas administrativa, operacional, internet e intranet da Corporação, dar suporte tecnológico e apoio ao usuário, provendo informações de planejamento e avaliação da gestão pública."
+      ],
+      "desdobramentos": ["Seção de Gerenciamento de Redes e Infraestrutura", "Seção de Banco de Dados", "Seção de Desenvolvimento de Sistemas, Internet e Intranet", "Seção de Suporte e Apoio ao Usuário"],
+      "cargos": []
+    },
+    "cass-al-lob": {
+      "name": "Centro de Assistência", "abbreviation": "CASS", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 26",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 26 (Centro de Assistência)"],
+      "atribuicoes": [
+        "O Centro de Assistência é o órgão de apoio do sistema de recursos humanos, subordinado ao Subcomandante Geral, incumbido do suporte ao sistema de atendimento pré-hospitalar, do estudo, planejamento, a supervisão, a execução e o controle das atividades de assistência médica, odontológica, farmacêutica, sanitária, religiosa e de assistência social aos Bombeiros Militares e seus dependentes, na forma da legislação em vigor."
+      ],
+      "desdobramentos": ["Subchefia", "Junta de Inspeção de Saúde", "Serviço de Clínica Médica e Atendimento Ambulatorial", "Serviço Odontológico", "Serviço de Enfermaria", "Serviço de Farmácia", "Serviço de Capelania", "Serviço de Assistência Psicossocial", "Serviço de Administração"],
+      "cargos": []
+    },
+    "almox-al-lob": {
+      "name": "Almoxarifado Central", "abbreviation": "ALMOX", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Material e Patrimônio", "legalRef": "Art. 27",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 27 (Almoxarifado Central)"],
+      "atribuicoes": [
+        "O Almoxarifado Central é o órgão de apoio do sistema logístico, subordinado à Diretoria de Material e Patrimônio, incumbido do recebimento, da estocagem e da distribuição de suprimentos específicos e execução da manutenção do material de intendência."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "aprov-al-lob": {
+      "name": "Aprovisionamento Central", "abbreviation": "APROV", "category": "Apoio", "source": "lob",
+      "subordinadoA": "Diretoria de Material e Patrimônio", "legalRef": "Art. 28",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 28 (Aprovisionamento Central)"],
+      "atribuicoes": [
+        "O Aprovisionamento Central é o órgão de apoio do sistema logístico, subordinado à Diretoria de Material e Patrimônio, incumbido do recebimento, da estocagem e da distribuição de suprimentos e material de subsistência."
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "cob-al-lob": {
+      "name": "Comandos Operacionais de Bombeiros", "abbreviation": "COB", "category": "Execução", "source": "lob",
+      "subordinadoA": "Subcomandante Geral", "legalRef": "Art. 29, 30",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 29 (Órgãos de Execução)", "Art. 30 (Comando Operacional de Bombeiros)"],
+      "atribuicoes": [
+        "Comando Operacional de Bombeiros é a denominação genérica dada a Organização Bombeiro-Militar de mais alto escalão do sistema operacional, subordinado ao Subcomandante Geral, que tem a seu cargo o planejamento estratégico, a coordenação e o emprego das Unidades Operacionais da Corporação que lhe forem subordinadas, com a finalidade de executar as missões de prevenção e extinção de incêndios, de resgate, busca e salvamento, de atendimento aos traumas e emergências pré-hospitalares e de defesa civil, além de outras, em uma determinada área operacional."
+      ],
+      "desdobramentos": ["Comando Operacional de Bombeiros da Região Metropolitana", "Comando Operacional de Bombeiros do Interior", "Comandos de Bombeiros de Áreas (Agreste, Sertão, Litoral Norte, Litoral Sul)", "Conselho de Comandantes", "Centro de Operações e Comunicações"],
+      "cargos": []
+    },
+    "uop-al-lob": {
+      "name": "Unidades Operacionais", "abbreviation": "UOP", "category": "Execução", "source": "lob",
+      "subordinadoA": "Comando Operacional de Bombeiros / Comando de Bombeiros de Área", "legalRef": "Art. 31 a 41",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 31 (Unidades Operacionais)", "Art. 32 (Tipos)", "Art. 41 (Estrutura comum)"],
+      "atribuicoes": [
+        "Unidades Operacionais são as que têm a missão principal de emprego nas mais diversas operações Bombeiros Militares, dos tipos: Grupamento de Incêndio (GI), Grupamento de Bombeiros Militar (GBM), Grupamento de Salvamento Aquático (GSA), Grupamento de Socorro de Emergência (GSE), Grupamento de Busca e Salvamento (GBS), Grupamento de Proteção Ambiental (GPA) e Grupamento de Operações Aéreas (GOA)."
+      ],
+      "desdobramentos": ["Comando", "Subcomando", "Secretaria", "Seção de Administração", "Seção de Manutenção", "Almoxarifado", "Seção de Operações e Instrução", "Subunidades"],
+      "cargos": []
+    },
+    "oesp-al-lob": {
+      "name": "Órgão Especial (Seção Aérea e Bombeiros do Gabinete Militar)", "abbreviation": "OESP", "category": "Especial", "source": "lob",
+      "subordinadoA": "Gabinete Militar do Governador", "legalRef": "Art. 42",
+      "baseLegal": "Lei nº 7.444, de 28 de dezembro de 2012 (Lei de Organização Básica)",
+      "artigosDeOrigem": ["Art. 42 (Órgão Especial)"],
+      "atribuicoes": [
+        "O Órgão Especial a que se refere este Capítulo compreende a Seção Aérea e Bombeiros do Gabinete Militar competindo-lhe o assessoramento, planejamento, coordenação, fiscalização, manutenção e controle das operações aéreas nas missões Bombeiro Militar, além do transporte aéreo do Governador e das autoridades por ele designadas."
+      ],
+      "desdobramentos": [],
+      "cargos": []
     }
   }
 },
