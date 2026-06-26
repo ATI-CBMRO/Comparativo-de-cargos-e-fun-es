@@ -34,7 +34,10 @@ export default function Revisao() {
       .catch(() => setErro('Não foi possível carregar a minuta.'))
   }, [])
 
-  useEffect(() => subscribeSuggestions(setSuggestions), [])
+  useEffect(() => subscribeSuggestions(
+    setSuggestions,
+    (e) => console.error('Erro na assinatura de sugestões:', e),
+  ), [])
 
   const counts = useMemo(() => countByDispositivo(suggestions), [suggestions])
   const grupos = useMemo(() => groupByDispositivo(suggestions), [suggestions])

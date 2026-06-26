@@ -19,23 +19,29 @@ export function AuthProvider({ children }) {
         setUser(null); setNaoAutorizado(false); setLoading(false)
         return
       }
-      // Autorização = existir members/{uid} com ativo == true.
-      const snap = await getDoc(doc(db, 'members', fbUser.uid))
-      if (!snap.exists() || snap.data().ativo !== true) {
-        setUser(null); setNaoAutorizado(true)
-        await signOut(auth)
+      try {
+        // Autorização = existir members/{uid} com ativo == true.
+        const snap = await getDoc(doc(db, 'members', fbUser.uid))
+        if (!snap.exists() || snap.data().ativo !== true) {
+          setUser(null); setNaoAutorizado(true)
+          await signOut(auth)
+          return
+        }
+        const m = snap.data()
+        setUser({
+          uid: fbUser.uid,
+          email: fbUser.email,
+          nome: m.nome ?? fbUser.email,
+          role: m.role === 'admin' ? 'admin' : 'participante',
+        })
+        setNaoAutorizado(false)
+      } catch (e) {
+        // Falha ao verificar o cadastro (ex.: rede): não trava a tela.
+        console.error('Erro ao verificar acesso:', e)
+        setUser(null)
+      } finally {
         setLoading(false)
-        return
       }
-      const m = snap.data()
-      setUser({
-        uid: fbUser.uid,
-        email: fbUser.email,
-        nome: m.nome ?? fbUser.email,
-        role: m.role === 'admin' ? 'admin' : 'participante',
-      })
-      setNaoAutorizado(false)
-      setLoading(false)
     })
     return unsub
   }, [])
