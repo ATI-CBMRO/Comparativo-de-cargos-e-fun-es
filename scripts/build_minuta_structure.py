@@ -2,8 +2,8 @@
 build_minuta_structure.py — Portal CBM
 
 Gera database/minuta_structure.json: minuta ARTICULADA e HIERÁRQUICA do Regimento
-Interno da estrutura OPERACIONAL do CBMRO — do topo (DPO/COT/DOE) à menor fração
-(Companhia/GBM). Um capítulo por órgão; uma seção por função (cargo).
+Interno do CBMRO — do Comando Geral (CG) à menor fração (Companhia/GBM), cobrindo
+os 26 órgãos da LOB. Um capítulo por órgão; uma seção por função (cargo).
 
 Fontes:
   - database/organs_detail/ro.json        (estrutura + competências RO verbatim)
@@ -28,22 +28,37 @@ BASE_DIR = Path(__file__).parent.parent
 RO_JSON  = BASE_DIR / "database" / "organs_detail" / "ro.json"
 OUT_JSON = BASE_DIR / "database" / "minuta_structure.json"
 
-TITLE = "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO"
+TITLE = "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO)"
 
 # Ordem dos capítulos = ordem de subordinação (topo → menor fração).
 # (organ_key, CHAPTER_TITLE, artigo_definido)
 ORGAN_ORDER = [
-    ("dpo",   "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",          "A"),
-    ("doe",   "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",            "A"),
-    ("cot",   "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                  "O"),
-    ("crbm",  "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",       "Os"),
-    ("bbm",   "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                  "O"),
-    ("cibm",  "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",   "A"),
-    ("cat",   "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",           "A"),
-    ("bbs",   "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                 "O"),
-    ("bifea", "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
-    ("boa",   "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                   "O"),
-    ("gbm",   "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                     "O"),
+    ("cg",           "DO COMANDO GERAL (CG)",                                          "O"),
+    ("depdec",       "DA DIRETORIA ESTADUAL DE PROTEÇÃO E DEFESA CIVIL (DEPDEC)",       "A"),
+    ("condeg",       "DO CONSELHO DELIBERATIVO DE ESTRATÉGIA E GESTÃO (CONDEG)",        "O"),
+    ("dp",           "DA DIRETORIA DE PESSOAL (DP)",                                    "A"),
+    ("deei",         "DA DIRETORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (DEEI)",             "A"),
+    ("dpof",         "DA DIRETORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS (DPOF)",        "A"),
+    ("dsap",         "DA DIRETORIA DE SAÚDE E ASSISTÊNCIA AO PESSOAL (DSAP)",            "A"),
+    ("dlog",         "DA DIRETORIA DE LOGÍSTICA (DLOG)",                                "A"),
+    ("dpo",          "DA DIRETORIA DE PLANEJAMENTO OPERACIONAL (DPO)",                  "A"),
+    ("doe",          "DA DIRETORIA OPERACIONAL ESPECIALIZADA (DOE)",                    "A"),
+    ("cot",          "DO COMANDO DE OPERAÇÕES TÉCNICAS (COT)",                          "O"),
+    ("cint",         "DA COORDENADORIA DE INTELIGÊNCIA (CINT)",                         "A"),
+    ("ccs",          "DA COORDENADORIA DE COMUNICAÇÃO SOCIAL (CCS)",                    "A"),
+    ("cinf",         "DA COORDENADORIA DE INFORMÁTICA (CINF)",                          "A"),
+    ("crbm",         "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",               "Os"),
+    ("assessorias",  "DAS ASSESSORIAS",                                                 "As"),
+    ("gab-cg",       "DO GABINETE DO COMANDANTE-GERAL",                                 "O"),
+    ("ag",           "DA AJUDÂNCIA-GERAL (AG)",                                         "A"),
+    ("bbm",          "DO BATALHÃO DE BOMBEIROS MILITAR (BBM)",                          "O"),
+    ("cibm",         "DA COMPANHIA INDEPENDENTE DE BOMBEIROS MILITAR (CIBM)",           "A"),
+    ("cat",          "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",                   "A"),
+    ("bbs",          "DO BATALHÃO DE BUSCA E SALVAMENTO (BBS)",                         "O"),
+    ("bifea",        "DO BATALHÃO DE INCÊNDIO FLORESTAL E EMERGÊNCIAS AMBIENTAIS (BIFEA)", "O"),
+    ("boa",          "DO BATALHÃO DE OPERAÇÕES AÉREAS (BOA)",                           "O"),
+    ("gbm",          "DO GRUPO DE BOMBEIROS MILITAR (GBM)",                             "O"),
+    ("corregedoria", "DA CORREGEDORIA-GERAL",                                           "A"),
 ]
 
 # Área de atuação dos Órgãos de Execução (LOB Art. 9), para agrupar o Art. 3.
@@ -187,18 +202,34 @@ def _join_orgaos(keys, organs, art_by_key):
     return ", ".join(parts[:-1]) + " e " + parts[-1]
 
 
+CATEGORY_LABELS = [
+    ("Direção Geral",     "de Direção Geral"),
+    ("Direção Colegiada",  "de Direção Colegiada"),
+    ("Direção Setorial",   "de Direção Setorial"),
+    ("Direção Regional",   "de Direção Regional"),
+]
+APOIO_LABELS = [
+    ("Apoio ao Comando-Geral",    "ao Comando-Geral"),
+    ("Apoio ao Subcomando-Geral", "ao Subcomando-Geral"),
+]
+
+
 def build_estrutura_chapter(organs):
     art_by_key = {k: art for (k, _t, art) in ORGAN_ORDER}
     cat_of = {k: (organs.get(k) or {}).get("category", "") for (k, _t, _a) in ORGAN_ORDER}
 
-    setorial = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == "Direção Setorial"]
-    regional = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == "Direção Regional"]
+    def items_for(labels):
+        out = []
+        for cat, label in labels:
+            keys = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == cat]
+            if keys:
+                out.append({"text": f"{label}: {_join_orgaos(keys, organs, art_by_key)}", "source": "ro"})
+        return out
 
-    direcao_items = []
-    if setorial:
-        direcao_items.append({"text": f"de Direção Setorial: {_join_orgaos(setorial, organs, art_by_key)}", "source": "ro"})
-    if regional:
-        direcao_items.append({"text": f"de Direção Regional: {_join_orgaos(regional, organs, art_by_key)}", "source": "ro"})
+    direcao_items = items_for(CATEGORY_LABELS)
+    apoio_items = items_for(APOIO_LABELS)
+    assessoramento_items = items_for([("Assessoramento", "de Assessoramento")])
+    correicao_items = items_for([("Correição", "de Correição")])
 
     execucao_items = []
     for area_key, area_label in AREA_LABELS:
@@ -207,30 +238,37 @@ def build_estrutura_chapter(organs):
             continue
         execucao_items.append({"text": f"{area_label}: {_join_orgaos(keys, organs, art_by_key)}", "source": "ro"})
 
-    direcao = {
-        "id": "direcao", "kind": "incisos", "editId": "estrutura/direcao",
-        "caput": "São Órgãos de Direção Operacional:",
-        "items": direcao_items, "proposedText": proposed_text(direcao_items),
-    }
-    execucao = {
-        "id": "execucao", "kind": "incisos", "editId": "estrutura/execucao",
-        "caput": "Os Órgãos de Execução classificam-se, quanto à área de atuação, em:",
-        "items": execucao_items, "proposedText": proposed_text(execucao_items),
-    }
+    def make_article(article_id, caput, items):
+        return {
+            "id": article_id, "kind": "incisos", "editId": f"estrutura/{article_id}",
+            "caput": caput, "items": items, "proposedText": proposed_text(items),
+        }
+
+    articles = [make_article("direcao", "São Órgãos de Direção:", direcao_items)]
+    if assessoramento_items:
+        articles.append(make_article("assessoramento", "É Órgão de Assessoramento:", assessoramento_items))
+    if apoio_items:
+        articles.append(make_article("apoio", "São Órgãos de Apoio:", apoio_items))
+    articles.append(make_article(
+        "execucao", "Os Órgãos de Execução classificam-se, quanto à área de atuação, em:", execucao_items
+    ))
+    if correicao_items:
+        articles.append(make_article("correicao", "É Órgão de Correição:", correicao_items))
+
     return {
         "id": "estrutura", "kind": "articles", "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
         "editId": "estrutura",
-        "articles": [direcao, execucao],
+        "articles": articles,
     }
 
 
 def build_preliminares_chapter():
     txt = (
         "Este Regimento Interno disciplina a organização, as competências e o funcionamento "
-        "da estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), "
-        "do escalão de direção operacional às frações de execução.\n"
-        "A estrutura operacional subordina-se ao Comandante-Geral por intermédio do "
-        "Subcomandante-Geral, nos termos da Lei de Organização Básica do CBMRO."
+        "da estrutura do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do Comando "
+        "Geral às frações de execução.\n"
+        "A estrutura do CBMRO observa a Lei de Organização Básica do CBMRO, que define a "
+        "subordinação entre seus órgãos."
     )
     return {
         "id": "preliminares", "kind": "prose", "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
@@ -287,12 +325,26 @@ BBM_FRACTION_CHAIN = [
 ]
 
 
+# subordinadoA de alguns órgãos referencia um CARGO interno de `cg` (Comandante-Geral,
+# Subcomandante-Geral, Chefe do Estado-Maior Geral), não a sigla de um órgão do conjunto.
+# Mapa de fallback: texto normalizado do cargo -> organ_key real que o "contém".
+ROLE_TO_ORGAN = {
+    "comandante-geral": "cg",
+    "subcomandante-geral": "cg",
+    "chefe do estado-maior geral": "cg",
+}
+
+
 def build_command_chart(organs, chapters):
     """Árvore dos órgãos (capítulos kind='organ') pela subordinação do ro.json.
 
-    Pai = órgão do conjunto cuja SIGLA aparece em subordinadoA; senão, raiz.
-    A Guarnição (menor fração) pendura na cadeia Cia BM → Pel BM dentro do BBM.
-    Retorna a raiz sintética 'Subcomandante-Geral'.
+    Pai = órgão do conjunto cuja SIGLA aparece em subordinadoA; se nenhuma sigla
+    casar, tenta ROLE_TO_ORGAN (subordinadoA referencia um cargo interno de outro
+    órgão); senão, raiz. A Guarnição (menor fração) pendura na cadeia
+    Cia BM → Pel BM dentro do BBM.
+    Retorna `cg` como raiz real (tem chapterId, é clicável) quando há exatamente
+    uma raiz; cai para um wrapper sintético só se restarem múltiplas raízes
+    desconectadas (não esperado com os 26 órgãos atuais — sinal de dado inesperado).
     """
     nodes = {}
     for c in chapters:
@@ -323,7 +375,15 @@ def build_command_chart(organs, chapters):
             raise ValueError(
                 f"subordinadoA de '{k}' casa múltiplas siglas {matches}: {sub!r}"
             )
-        return matches[0] if matches else None  # None = raiz
+        if matches:
+            return matches[0]
+        # Sem sigla: subordinadoA pode referenciar um CARGO interno de outro órgão
+        # (ex.: "Chefe do Estado-Maior Geral", cargo de `cg`) em vez de um órgão próprio.
+        sub_norm = normalize(sub)
+        for role, target in ROLE_TO_ORGAN.items():
+            if sub_norm.startswith(role) and target in nodes and target != k:
+                return target
+        return None  # raiz
 
     # A Guarnição não entra no roteamento por sigla: é a folha da cadeia de frações
     # do BBM, montada à parte com nós estruturais intermediários (Cia BM, Pel BM).
@@ -348,6 +408,8 @@ def build_command_chart(organs, chapters):
             leaf = node
         leaf["children"].append(guarnicao)
 
+    if len(roots) == 1:
+        return roots[0]
     return {"label": "Subcomandante-Geral", "synthetic": True, "children": roots}
 
 
@@ -387,8 +449,7 @@ def command_order(organs):
         for c in node.get("children", []):
             walk(c, nd)
 
-    for c in chart.get("children", []):
-        walk(c, 0)
+    walk(chart, 0)
     return out
 
 

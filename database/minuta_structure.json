@@ -1,13 +1,13 @@
 {
   "generated_by": "scripts/build_minuta_structure.py",
-  "title": "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO",
+  "title": "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO)",
   "chapters": [
     {
       "id": "preliminares",
       "kind": "prose",
       "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
       "editId": "preliminares",
-      "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento da estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do escalão de direção operacional às frações de execução.\nA estrutura operacional subordina-se ao Comandante-Geral por intermédio do Subcomandante-Geral, nos termos da Lei de Organização Básica do CBMRO."
+      "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento da estrutura do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do Comando Geral às frações de execução.\nA estrutura do CBMRO observa a Lei de Organização Básica do CBMRO, que define a subordinação entre seus órgãos."
     },
     {
       "id": "estrutura",
@@ -19,10 +19,18 @@
           "id": "direcao",
           "kind": "incisos",
           "editId": "estrutura/direcao",
-          "caput": "São Órgãos de Direção Operacional:",
+          "caput": "São Órgãos de Direção:",
           "items": [
             {
-              "text": "de Direção Setorial: a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE) e o Comando de Operações Técnicas (COT)",
+              "text": "de Direção Geral: o Comando Geral (CG) e a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC)",
+              "source": "ro"
+            },
+            {
+              "text": "de Direção Colegiada: o Conselho Deliberativo de Estratégia e Gestão (CONDEG)",
+              "source": "ro"
+            },
+            {
+              "text": "de Direção Setorial: a Diretoria de Pessoal (DP), a Diretoria de Educação, Ensino e Instrução (DEEI), a Diretoria de Planejamento, Orçamento e Finanças (DPOF), a Diretoria de Saúde e Assistência ao Pessoal (DSAP), a Diretoria de Logística (DLOG), a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE), o Comando de Operações Técnicas (COT), a Coordenadoria de Inteligência (CINT), a Coordenadoria de Comunicação Social (CCS) e a Coordenadoria de Informática (CINF)",
               "source": "ro"
             },
             {
@@ -30,7 +38,37 @@
               "source": "ro"
             }
           ],
-          "proposedText": "de Direção Setorial: a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE) e o Comando de Operações Técnicas (COT)\nde Direção Regional: os Comandos Regionais de Bombeiro Militar (CRBM)"
+          "proposedText": "de Direção Geral: o Comando Geral (CG) e a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC)\nde Direção Colegiada: o Conselho Deliberativo de Estratégia e Gestão (CONDEG)\nde Direção Setorial: a Diretoria de Pessoal (DP), a Diretoria de Educação, Ensino e Instrução (DEEI), a Diretoria de Planejamento, Orçamento e Finanças (DPOF), a Diretoria de Saúde e Assistência ao Pessoal (DSAP), a Diretoria de Logística (DLOG), a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE), o Comando de Operações Técnicas (COT), a Coordenadoria de Inteligência (CINT), a Coordenadoria de Comunicação Social (CCS) e a Coordenadoria de Informática (CINF)\nde Direção Regional: os Comandos Regionais de Bombeiro Militar (CRBM)"
+        },
+        {
+          "id": "assessoramento",
+          "kind": "incisos",
+          "editId": "estrutura/assessoramento",
+          "caput": "É Órgão de Assessoramento:",
+          "items": [
+            {
+              "text": "de Assessoramento: as Assessorias (ASSESSORIAS)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "de Assessoramento: as Assessorias (ASSESSORIAS)"
+        },
+        {
+          "id": "apoio",
+          "kind": "incisos",
+          "editId": "estrutura/apoio",
+          "caput": "São Órgãos de Apoio:",
+          "items": [
+            {
+              "text": "ao Comando-Geral: o Gabinete do Comandante-Geral (GAB/CG)",
+              "source": "ro"
+            },
+            {
+              "text": "ao Subcomando-Geral: a Ajudância-Geral (AG)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "ao Comando-Geral: o Gabinete do Comandante-Geral (GAB/CG)\nao Subcomando-Geral: a Ajudância-Geral (AG)"
         },
         {
           "id": "execucao",
@@ -56,6 +94,849 @@
             }
           ],
           "proposedText": "Atuação Operacional Ordinária: o Batalhão de Bombeiros Militar (BBM), a Companhia Independente de Bombeiros Militar (CIBM) e a Coordenadoria de Atividades Técnicas (CAT)\nAtuação Operacional Especializada Terrestre: o Batalhão de Busca e Salvamento (BBS) e o Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)\nAtuação Operacional Especializada Aérea: o Batalhão de Operações Aéreas (BOA)\nAtuação Operacional Conveniada Municipal: o Grupo de Bombeiros Militar (GBM)"
+        },
+        {
+          "id": "correicao",
+          "kind": "incisos",
+          "editId": "estrutura/correicao",
+          "caput": "É Órgão de Correição:",
+          "items": [
+            {
+              "text": "de Correição: a Corregedoria-Geral (CORREG)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "de Correição: a Corregedoria-Geral (CORREG)"
+        }
+      ]
+    },
+    {
+      "id": "organ:cg",
+      "kind": "organ",
+      "chapterTitle": "DO COMANDO GERAL (CG)",
+      "organKey": "cg",
+      "label": "Comando Geral",
+      "abbr": "CG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cg/finalidade",
+          "proposedText": "Órgão máximo executivo do CBMRO, incumbido da administração superior da Corporação."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cg/organizacao",
+          "caput": "CG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Subcomandante-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Chefe do Estado-Maior Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Diretor Estadual de Proteção e Defesa Civil (DEPDEC)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante-Geral\nSubcomandante-Geral\nChefe do Estado-Maior Geral\nDiretor Estadual de Proteção e Defesa Civil (DEPDEC)"
+        },
+        {
+          "id": "cargo:comandante-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante-Geral",
+          "editId": "organ:cg/cargo:comandante-geral",
+          "caput": "Ao Comandante-Geral compete:",
+          "items": [
+            {
+              "text": "Responsável, no âmbito da administração direta, perante o Governador do Estado, pela administração e emprego da Corporação.",
+              "source": "ro"
+            },
+            {
+              "text": "Acumula o cargo de Diretor-Geral da Diretoria Estadual de Proteção e Defesa Civil (DEPDEC).",
+              "source": "ro"
+            },
+            {
+              "text": "Indicar os nomes para nomeação aos cargos que lhe são privativos.",
+              "source": "ro"
+            },
+            {
+              "text": "Realizar a promoção das Praças e apresentar ao Governador a relação dos Oficiais do Quadro de Acesso.",
+              "source": "ro"
+            },
+            {
+              "text": "Certificar o atendimento do direito ao porte de arma de seus militares.",
+              "source": "ro"
+            },
+            {
+              "text": "Apresentar, em até 60 dias da posse, Plano de Comando com metas, indicadores, prestação de contas e participação da sociedade.",
+              "source": "ro"
+            },
+            {
+              "text": "Assegurar a divulgação pública de relatório anual sobre representações, ocorrências, vitimização e orçamento.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável, no âmbito da administração direta, perante o Governador do Estado, pela administração e emprego da Corporação.\nAcumula o cargo de Diretor-Geral da Diretoria Estadual de Proteção e Defesa Civil (DEPDEC).\nIndicar os nomes para nomeação aos cargos que lhe são privativos.\nRealizar a promoção das Praças e apresentar ao Governador a relação dos Oficiais do Quadro de Acesso.\nCertificar o atendimento do direito ao porte de arma de seus militares.\nApresentar, em até 60 dias da posse, Plano de Comando com metas, indicadores, prestação de contas e participação da sociedade.\nAssegurar a divulgação pública de relatório anual sobre representações, ocorrências, vitimização e orçamento."
+        },
+        {
+          "id": "cargo:subcomandante-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Subcomandante-Geral",
+          "editId": "organ:cg/cargo:subcomandante-geral",
+          "caput": "Ao Subcomandante-Geral compete:",
+          "items": [
+            {
+              "text": "Supervisão, direção, coordenação e controle das atividades dos Órgãos de Direção, de Apoio e de Correição sob sua subordinação.",
+              "source": "ro"
+            },
+            {
+              "text": "Substituto imediato do Comandante-Geral em seus afastamentos e impedimentos.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Supervisão, direção, coordenação e controle das atividades dos Órgãos de Direção, de Apoio e de Correição sob sua subordinação.\nSubstituto imediato do Comandante-Geral em seus afastamentos e impedimentos."
+        },
+        {
+          "id": "cargo:chefe-do-estado-maior-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Chefe do Estado-Maior Geral",
+          "editId": "organ:cg/cargo:chefe-do-estado-maior-geral",
+          "caput": "Ao Chefe do Estado-Maior Geral compete:",
+          "items": [
+            {
+              "text": "Planejamento, direção, coordenação, controle e avaliação das ações administrativas a cargo dos órgãos de atividade-meio e das diretrizes e ordens do Comando.",
+              "source": "ro"
+            },
+            {
+              "text": "Substituto imediato do Subcomandante-Geral em seus afastamentos e impedimentos.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejamento, direção, coordenação, controle e avaliação das ações administrativas a cargo dos órgãos de atividade-meio e das diretrizes e ordens do Comando.\nSubstituto imediato do Subcomandante-Geral em seus afastamentos e impedimentos."
+        }
+      ]
+    },
+    {
+      "id": "organ:depdec",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA ESTADUAL DE PROTEÇÃO E DEFESA CIVIL (DEPDEC)",
+      "organKey": "depdec",
+      "label": "Diretoria Estadual de Proteção e Defesa Civil",
+      "abbr": "DEPDEC",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:depdec/finalidade",
+          "proposedText": "Centralizar o Sistema Estadual de Proteção e Defesa Civil de Rondônia (SIEPDEC)."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:depdec/competencia",
+          "caput": "Compete à DEPDEC:",
+          "items": [
+            {
+              "text": "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas Situações de Emergência ou Estado de Calamidade Pública.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas Situações de Emergência ou Estado de Calamidade Pública."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:depdec/organizacao",
+          "caput": "DEPDEC tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor-Geral (Comandante-Geral do CBMRO — nato)",
+              "source": "ro"
+            },
+            {
+              "text": "Diretor Estratégico-Operacional (Oficial do último posto — QOEMBM)",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Secretaria Executiva",
+              "source": "ro"
+            },
+            {
+              "text": "Divisão de Apoio Administrativo e Financeiro",
+              "source": "ro"
+            },
+            {
+              "text": "Divisão de Operações Emergenciais",
+              "source": "ro"
+            },
+            {
+              "text": "Divisão de Minimização de Desastres",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor-Geral (Comandante-Geral do CBMRO — nato)\nDiretor Estratégico-Operacional (Oficial do último posto — QOEMBM)\nAdjunto\nSeção Administrativa\nSecretaria Executiva\nDivisão de Apoio Administrativo e Financeiro\nDivisão de Operações Emergenciais\nDivisão de Minimização de Desastres"
+        },
+        {
+          "id": "cargo:diretor-geral-da-depdec",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor-Geral da DEPDEC",
+          "editId": "organ:depdec/cargo:diretor-geral-da-depdec",
+          "caput": "Ao Diretor-Geral da DEPDEC compete:",
+          "items": [
+            {
+              "text": "Centralizar o Sistema Estadual de Proteção e Defesa Civil de Rondônia (SIEPDEC).",
+              "source": "ro"
+            },
+            {
+              "text": "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Centralizar o Sistema Estadual de Proteção e Defesa Civil de Rondônia (SIEPDEC).\nEstabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação."
+        }
+      ]
+    },
+    {
+      "id": "organ:condeg",
+      "kind": "organ",
+      "chapterTitle": "DO CONSELHO DELIBERATIVO DE ESTRATÉGIA E GESTÃO (CONDEG)",
+      "organKey": "condeg",
+      "label": "Conselho Deliberativo de Estratégia e Gestão",
+      "abbr": "CONDEG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:condeg/finalidade",
+          "proposedText": "Órgão responsável pelo estudo, planejamento e assessoria consultiva do Comandante-Geral, pertinente ao processo decisório compartilhado sobre assuntos relevantes que envolvam questões institucionais e de segurança pública da Corporação."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:condeg/organizacao",
+          "caput": "CONDEG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Presidido pelo Comandante-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Composto pelos Coronéis BM da ativa",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Presidido pelo Comandante-Geral\nComposto pelos Coronéis BM da ativa"
+        },
+        {
+          "id": "cargo:presidente-do-condeg",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Presidente do CONDEG",
+          "editId": "organ:condeg/cargo:presidente-do-condeg",
+          "caput": "Ao Presidente do CONDEG compete:",
+          "items": [
+            {
+              "text": "Convocar e presidir reuniões ordinárias (trimestrais) e extraordinárias.",
+              "source": "ro"
+            },
+            {
+              "text": "Homologar, total ou parcialmente, as deliberações do CONDEG, ou avocar para si a decisão final.",
+              "source": "ro"
+            },
+            {
+              "text": "Convocar membros não pertencentes ao Conselho para participar de reuniões com pauta de natureza técnica.",
+              "source": "ro"
+            },
+            {
+              "text": "Regular as atribuições e o funcionamento do CONDEG por ato próprio.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Convocar e presidir reuniões ordinárias (trimestrais) e extraordinárias.\nHomologar, total ou parcialmente, as deliberações do CONDEG, ou avocar para si a decisão final.\nConvocar membros não pertencentes ao Conselho para participar de reuniões com pauta de natureza técnica.\nRegular as atribuições e o funcionamento do CONDEG por ato próprio."
+        }
+      ]
+    },
+    {
+      "id": "organ:dp",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE PESSOAL (DP)",
+      "organKey": "dp",
+      "label": "Diretoria de Pessoal",
+      "abbr": "DP",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dp/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, administração e gestão de pessoal."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dp/organizacao",
+          "caput": "DP tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Gestão de Pessoal Ativo — Coordenador, Adjunto, Seção Administrativa, Seção de Pessoal Ativo, Seção de Pessoal Ativo Temporário, Seção de Cadastro, Seção de Promoção e Condecoração, Seção de Movimentação e Pagamento, Seção de Recrutamento, Seção de Pessoal Civil",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Gestão de Pessoal Inativo e Pensionistas — Coordenador, Adjunto, Seção Administrativa, Seção de Pessoal Inativo, Seção de Pensionistas",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Legislação, Controle e Análise de Processos — Coordenador, Adjunto, Seção Administrativa",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Gestão de Pessoal Ativo — Coordenador, Adjunto, Seção Administrativa, Seção de Pessoal Ativo, Seção de Pessoal Ativo Temporário, Seção de Cadastro, Seção de Promoção e Condecoração, Seção de Movimentação e Pagamento, Seção de Recrutamento, Seção de Pessoal Civil\nCoordenadoria de Gestão de Pessoal Inativo e Pensionistas — Coordenador, Adjunto, Seção Administrativa, Seção de Pessoal Inativo, Seção de Pensionistas\nCoordenadoria de Legislação, Controle e Análise de Processos — Coordenador, Adjunto, Seção Administrativa"
+        },
+        {
+          "id": "cargo:diretor-de-pessoal",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor de Pessoal",
+          "editId": "organ:dp/cargo:diretor-de-pessoal",
+          "caput": "Ao Diretor de Pessoal compete:",
+          "items": [
+            {
+              "text": "Planejar, dirigir, coordenar, fiscalizar e controlar as atividades relacionadas ao recrutamento, administração e gestão de pessoal.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, dirigir, coordenar, fiscalizar e controlar as atividades relacionadas ao recrutamento, administração e gestão de pessoal."
+        },
+        {
+          "id": "cargo:coordenador-de-gest-o-de-pessoal-ativo",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Gestão de Pessoal Ativo",
+          "editId": "organ:dp/cargo:coordenador-de-gest-o-de-pessoal-ativo",
+          "caput": "Ao Coordenador de Gestão de Pessoal Ativo compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de gestão de pessoal ativo da Corporação, incluindo cadastro, movimentação, promoção, pagamento e recrutamento.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de gestão de pessoal ativo da Corporação, incluindo cadastro, movimentação, promoção, pagamento e recrutamento."
+        },
+        {
+          "id": "cargo:coordenador-de-gest-o-de-pessoal-inativo-e-pensionistas",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Gestão de Pessoal Inativo e Pensionistas",
+          "editId": "organ:dp/cargo:coordenador-de-gest-o-de-pessoal-inativo-e-pensionistas",
+          "caput": "Ao Coordenador de Gestão de Pessoal Inativo e Pensionistas compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de gestão de pessoal inativo e pensionistas da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de gestão de pessoal inativo e pensionistas da Corporação."
+        },
+        {
+          "id": "cargo:coordenador-de-legisla-o-controle-e-an-lise-de-processos",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Legislação, Controle e Análise de Processos",
+          "editId": "organ:dp/cargo:coordenador-de-legisla-o-controle-e-an-lise-de-processos",
+          "caput": "Ao Coordenador de Legislação, Controle e Análise de Processos compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de legislação, controle e análise de processos relativos ao pessoal da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de legislação, controle e análise de processos relativos ao pessoal da Corporação."
+        }
+      ]
+    },
+    {
+      "id": "organ:deei",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (DEEI)",
+      "organKey": "deei",
+      "label": "Diretoria de Educação, Ensino e Instrução",
+      "abbr": "DEEI",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:deei/finalidade",
+          "proposedText": "Órgão responsável por todas as atividades de educação, ensino e instrução, com competência para planejar, coordenar e fiscalizar o ensino em todas suas modalidades, objetivando a formação profissional, a graduação, a pós-graduação, o aperfeiçoamento, a habilitação, a especialização, a capacitação e o treinamento operacional do CBMRO."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:deei/competencia",
+          "caput": "Compete à DEEI:",
+          "items": [
+            {
+              "text": "Promover a educação preventiva direcionada à população em geral, visando a segurança, a prevenção de incêndio e a prevenção de acidentes.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Promover a educação preventiva direcionada à população em geral, visando a segurança, a prevenção de incêndio e a prevenção de acidentes."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:deei/organizacao",
+          "caput": "DEEI tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Educação — Coordenador, Adjunto, Seção Administrativa, Seção de Educação, Seção de Atividades Sociais, Unidades de Colégio Militar Dom Pedro II",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Ensino, Instrução e Pesquisa — Coordenador, Adjunto, Seção Administrativa, Seção de Pesquisa, Centro de Treinamento, Ensino e Instrução, Academia de Formação de Oficiais, Escola de Formação de Praças, Centro de Aperfeiçoamento e Especialização",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCoordenadoria de Educação — Coordenador, Adjunto, Seção Administrativa, Seção de Educação, Seção de Atividades Sociais, Unidades de Colégio Militar Dom Pedro II\nCoordenadoria de Ensino, Instrução e Pesquisa — Coordenador, Adjunto, Seção Administrativa, Seção de Pesquisa, Centro de Treinamento, Ensino e Instrução, Academia de Formação de Oficiais, Escola de Formação de Praças, Centro de Aperfeiçoamento e Especialização"
+        },
+        {
+          "id": "cargo:diretor-de-educa-o-ensino-e-instru-o",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor de Educação, Ensino e Instrução",
+          "editId": "organ:deei/cargo:diretor-de-educa-o-ensino-e-instru-o",
+          "caput": "Ao Diretor de Educação, Ensino e Instrução compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e fiscalizar o ensino em todas suas modalidades, objetivando a formação profissional, a graduação, a pós-graduação, o aperfeiçoamento, a habilitação, a especialização, a capacitação e o treinamento operacional do CBMRO.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e fiscalizar o ensino em todas suas modalidades, objetivando a formação profissional, a graduação, a pós-graduação, o aperfeiçoamento, a habilitação, a especialização, a capacitação e o treinamento operacional do CBMRO."
+        },
+        {
+          "id": "cargo:coordenador-de-educa-o",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Educação",
+          "editId": "organ:deei/cargo:coordenador-de-educa-o",
+          "caput": "Ao Coordenador de Educação compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de educação e atividades sociais da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de educação e atividades sociais da Corporação."
+        },
+        {
+          "id": "cargo:coordenador-de-ensino-instru-o-e-pesquisa",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Ensino, Instrução e Pesquisa",
+          "editId": "organ:deei/cargo:coordenador-de-ensino-instru-o-e-pesquisa",
+          "caput": "Ao Coordenador de Ensino, Instrução e Pesquisa compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de ensino, instrução e pesquisa, responsável pela formação de oficiais e praças da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de ensino, instrução e pesquisa, responsável pela formação de oficiais e praças da Corporação."
+        }
+      ]
+    },
+    {
+      "id": "organ:dpof",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS (DPOF)",
+      "organKey": "dpof",
+      "label": "Diretoria de Planejamento, Orçamento e Finanças",
+      "abbr": "DPOF",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dpof/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, apoio administrativo, orçamentário e técnico-financeiro, bem como a execução, acompanhamento e controle das atividades inerentes à sua responsabilidade."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dpof/organizacao",
+          "caput": "DPOF tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor (Oficial da ativa do último Posto — QOEMBM)",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria Técnica",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Planejamento e Orçamento — Coordenador, Adjunto, Seção Administrativa, Seção de Planejamento, Seção de Orçamento",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Administração e Finanças — Coordenador, Adjunto, Seção Administrativa, Seção de Finanças, Seção de Contabilidade, Seção de Gestão de Contratos e Convênios",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Compras — Coordenador, Adjunto, Seção Administrativa, Seção de Pesquisa de Preços, Seção de Especificação Técnica, Seção de Compras, Comissões Técnicas",
+              "source": "ro"
+            },
+            {
+              "text": "Comissão Permanente de Licitações — Seção de Licitações",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor (Oficial da ativa do último Posto — QOEMBM)\nAdjunto\nSeção Administrativa\nAssessoria Técnica\nCoordenadoria de Planejamento e Orçamento — Coordenador, Adjunto, Seção Administrativa, Seção de Planejamento, Seção de Orçamento\nCoordenadoria de Administração e Finanças — Coordenador, Adjunto, Seção Administrativa, Seção de Finanças, Seção de Contabilidade, Seção de Gestão de Contratos e Convênios\nCoordenadoria de Compras — Coordenador, Adjunto, Seção Administrativa, Seção de Pesquisa de Preços, Seção de Especificação Técnica, Seção de Compras, Comissões Técnicas\nComissão Permanente de Licitações — Seção de Licitações"
+        },
+        {
+          "id": "cargo:diretor-de-planejamento-or-amento-e-finan-as",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor de Planejamento, Orçamento e Finanças",
+          "editId": "organ:dpof/cargo:diretor-de-planejamento-or-amento-e-finan-as",
+          "caput": "Ao Diretor de Planejamento, Orçamento e Finanças compete:",
+          "items": [
+            {
+              "text": "Planejar, apoiar administrativamente, orçamentariamente e técnico-financeiramente, bem como executar, acompanhar e controlar as atividades da DPOF.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, apoiar administrativamente, orçamentariamente e técnico-financeiramente, bem como executar, acompanhar e controlar as atividades da DPOF."
+        },
+        {
+          "id": "cargo:coordenador-de-planejamento-e-or-amento",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Planejamento e Orçamento",
+          "editId": "organ:dpof/cargo:coordenador-de-planejamento-e-or-amento",
+          "caput": "Ao Coordenador de Planejamento e Orçamento compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de planejamento e orçamento da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de planejamento e orçamento da Corporação."
+        },
+        {
+          "id": "cargo:coordenador-de-administra-o-e-finan-as",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Administração e Finanças",
+          "editId": "organ:dpof/cargo:coordenador-de-administra-o-e-finan-as",
+          "caput": "Ao Coordenador de Administração e Finanças compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de administração financeira, contabilidade e gestão de contratos e convênios da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de administração financeira, contabilidade e gestão de contratos e convênios da Corporação."
+        },
+        {
+          "id": "cargo:coordenador-de-compras",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Compras",
+          "editId": "organ:dpof/cargo:coordenador-de-compras",
+          "caput": "Ao Coordenador de Compras compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de compras e aquisições da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de compras e aquisições da Corporação."
+        }
+      ]
+    },
+    {
+      "id": "organ:dsap",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE SAÚDE E ASSISTÊNCIA AO PESSOAL (DSAP)",
+      "organKey": "dsap",
+      "label": "Diretoria de Saúde e Assistência ao Pessoal",
+      "abbr": "DSAP",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dsap/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, fiscalização e controle das atividades relacionadas à saúde e assistência ao pessoal do CBMRO."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dsap/organizacao",
+          "caput": "DSAP tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor (QCOBM — formação em Medicina, Enfermagem, Fisioterapia, Psicologia ou Serviço Social; na ausência, QOEMBM)",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Saúde — Coordenador, Adjunto, Seção Administrativa, Divisão de Perícias Médicas (Seção de Juntas Militares de Saúde, Seção de Formação Sanitária)",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Assistência ao Pessoal — Coordenador, Adjunto, Seção Administrativa, Divisão de Assistência Social (Seção de Serviço Social, Seção de Psicologia, Seção de Capelania)",
+              "source": "ro"
+            },
+            {
+              "text": "Coordenadoria de Saúde Ocupacional e Medicina do Trabalho — Coordenador, Adjunto, Seção Administrativa, Seção de Saúde Ocupacional, Seção de Medicina do Trabalho",
+              "source": "ro"
+            },
+            {
+              "text": "Centro Médico-Hospitalar — Chefe, Adjunto, Seção Administrativa, Hospital Militar Dom Pedro II, Policlínica Militar Dom Pedro II",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor (QCOBM — formação em Medicina, Enfermagem, Fisioterapia, Psicologia ou Serviço Social; na ausência, QOEMBM)\nAdjunto\nSeção Administrativa\nSeção de Pessoal\nCoordenadoria de Saúde — Coordenador, Adjunto, Seção Administrativa, Divisão de Perícias Médicas (Seção de Juntas Militares de Saúde, Seção de Formação Sanitária)\nCoordenadoria de Assistência ao Pessoal — Coordenador, Adjunto, Seção Administrativa, Divisão de Assistência Social (Seção de Serviço Social, Seção de Psicologia, Seção de Capelania)\nCoordenadoria de Saúde Ocupacional e Medicina do Trabalho — Coordenador, Adjunto, Seção Administrativa, Seção de Saúde Ocupacional, Seção de Medicina do Trabalho\nCentro Médico-Hospitalar — Chefe, Adjunto, Seção Administrativa, Hospital Militar Dom Pedro II, Policlínica Militar Dom Pedro II"
+        },
+        {
+          "id": "cargo:diretor-de-sa-de-e-assist-ncia-ao-pessoal",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor de Saúde e Assistência ao Pessoal",
+          "editId": "organ:dsap/cargo:diretor-de-sa-de-e-assist-ncia-ao-pessoal",
+          "caput": "Ao Diretor de Saúde e Assistência ao Pessoal compete:",
+          "items": [
+            {
+              "text": "Planejar, dirigir, coordenar, fiscalizar e controlar as atividades relacionadas à saúde e assistência ao pessoal do CBMRO.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, dirigir, coordenar, fiscalizar e controlar as atividades relacionadas à saúde e assistência ao pessoal do CBMRO."
+        },
+        {
+          "id": "cargo:coordenador-de-sa-de",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Saúde",
+          "editId": "organ:dsap/cargo:coordenador-de-sa-de",
+          "caput": "Ao Coordenador de Saúde compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de saúde, incluindo perícias médicas e formação sanitária.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de saúde, incluindo perícias médicas e formação sanitária."
+        },
+        {
+          "id": "cargo:coordenador-de-assist-ncia-ao-pessoal",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Assistência ao Pessoal",
+          "editId": "organ:dsap/cargo:coordenador-de-assist-ncia-ao-pessoal",
+          "caput": "Ao Coordenador de Assistência ao Pessoal compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de assistência social, psicológica e de capelania ao pessoal da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de assistência social, psicológica e de capelania ao pessoal da Corporação."
+        },
+        {
+          "id": "cargo:coordenador-de-sa-de-ocupacional-e-medicina-do-trabalho",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Saúde Ocupacional e Medicina do Trabalho",
+          "editId": "organ:dsap/cargo:coordenador-de-sa-de-ocupacional-e-medicina-do-trabalho",
+          "caput": "Ao Coordenador de Saúde Ocupacional e Medicina do Trabalho compete:",
+          "items": [
+            {
+              "text": "Planejar, coordenar e controlar as atividades de saúde ocupacional e medicina do trabalho na Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, coordenar e controlar as atividades de saúde ocupacional e medicina do trabalho na Corporação."
+        },
+        {
+          "id": "cargo:chefe-do-centro-m-dico-hospitalar",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Chefe do Centro Médico-Hospitalar",
+          "editId": "organ:dsap/cargo:chefe-do-centro-m-dico-hospitalar",
+          "caput": "Ao Chefe do Centro Médico-Hospitalar compete:",
+          "items": [
+            {
+              "text": "Gerir e supervisionar as atividades de saúde hospitalar e policlínica da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Gerir e supervisionar as atividades de saúde hospitalar e policlínica da Corporação."
+        }
+      ]
+    },
+    {
+      "id": "organ:dlog",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE LOGÍSTICA (DLOG)",
+      "organKey": "dlog",
+      "label": "Diretoria de Logística",
+      "abbr": "DLOG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dlog/finalidade",
+          "proposedText": "Órgão responsável pela gestão logística da Corporação, competindo-lhe o estudo, fiscalização, inspeção, planejamento, orientação normativa, direção, coordenação, controle e execução das atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dlog/organizacao",
+          "caput": "DLOG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Controle de Material e Patrimônio — Seção de Controle de Material, Seção de Controle de Patrimônio",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Suprimento e Material — Seção de Almoxarifado Geral, Seção de Aprovisionamento",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Manutenção — Seção de Manutenção de Viaturas e Equipamentos Motorizados",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCentro de Controle de Material e Patrimônio — Seção de Controle de Material, Seção de Controle de Patrimônio\nCentro de Suprimento e Material — Seção de Almoxarifado Geral, Seção de Aprovisionamento\nCentro de Manutenção — Seção de Manutenção de Viaturas e Equipamentos Motorizados"
+        },
+        {
+          "id": "cargo:diretor-de-log-stica",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Diretor de Logística",
+          "editId": "organ:dlog/cargo:diretor-de-log-stica",
+          "caput": "Ao Diretor de Logística compete:",
+          "items": [
+            {
+              "text": "Estudar, fiscalizar, inspecionar, planejar, orientar normativamente, dirigir, coordenar, controlar e executar as atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Estudar, fiscalizar, inspecionar, planejar, orientar normativamente, dirigir, coordenar, controlar e executar as atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação."
+        },
+        {
+          "id": "cargo:chefe-do-centro-de-controle-de-material-e-patrim-nio",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Chefe do Centro de Controle de Material e Patrimônio",
+          "editId": "organ:dlog/cargo:chefe-do-centro-de-controle-de-material-e-patrim-nio",
+          "caput": "Ao Chefe do Centro de Controle de Material e Patrimônio compete:",
+          "items": [
+            {
+              "text": "Controlar o material e o patrimônio da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Controlar o material e o patrimônio da Corporação."
+        },
+        {
+          "id": "cargo:chefe-do-centro-de-suprimento-e-material",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Chefe do Centro de Suprimento e Material",
+          "editId": "organ:dlog/cargo:chefe-do-centro-de-suprimento-e-material",
+          "caput": "Ao Chefe do Centro de Suprimento e Material compete:",
+          "items": [
+            {
+              "text": "Gerir o suprimento e o material da Corporação, incluindo almoxarifado e aprovisionamento.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Gerir o suprimento e o material da Corporação, incluindo almoxarifado e aprovisionamento."
+        },
+        {
+          "id": "cargo:chefe-do-centro-de-manuten-o",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Chefe do Centro de Manutenção",
+          "editId": "organ:dlog/cargo:chefe-do-centro-de-manuten-o",
+          "caput": "Ao Chefe do Centro de Manutenção compete:",
+          "items": [
+            {
+              "text": "Gerenciar e executar a manutenção de viaturas e equipamentos motorizados da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Gerenciar e executar a manutenção de viaturas e equipamentos motorizados da Corporação."
         }
       ]
     },
@@ -645,6 +1526,219 @@
       ]
     },
     {
+      "id": "organ:cint",
+      "kind": "organ",
+      "chapterTitle": "DA COORDENADORIA DE INTELIGÊNCIA (CINT)",
+      "organKey": "cint",
+      "label": "Coordenadoria de Inteligência",
+      "abbr": "CINT",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cint/finalidade",
+          "proposedText": "Responsável por desenvolver, planejar, executar, coordenar, supervisionar e controlar as atividades de inteligência."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cint/competencia",
+          "caput": "Compete à CINT:",
+          "items": [
+            {
+              "text": "Assessorar o Comandante-Geral na tomada de decisão como competência primordial.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Assessorar o Comandante-Geral na tomada de decisão como competência primordial."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cint/organizacao",
+          "caput": "CINT tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Coordenador",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Contra-Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Operações de Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Controle de Armamento",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nSeção de Inteligência\nSeção de Contra-Inteligência\nSeção de Operações de Inteligência\nSeção de Controle de Armamento"
+        },
+        {
+          "id": "cargo:coordenador-de-intelig-ncia",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Inteligência",
+          "editId": "organ:cint/cargo:coordenador-de-intelig-ncia",
+          "caput": "Ao Coordenador de Inteligência compete:",
+          "items": [
+            {
+              "text": "Desenvolver, planejar, executar, coordenar, supervisionar e controlar as atividades de inteligência, assessorando o Comandante-Geral na tomada de decisão.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Desenvolver, planejar, executar, coordenar, supervisionar e controlar as atividades de inteligência, assessorando o Comandante-Geral na tomada de decisão."
+        }
+      ]
+    },
+    {
+      "id": "organ:ccs",
+      "kind": "organ",
+      "chapterTitle": "DA COORDENADORIA DE COMUNICAÇÃO SOCIAL (CCS)",
+      "organKey": "ccs",
+      "label": "Coordenadoria de Comunicação Social",
+      "abbr": "CCS",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:ccs/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de comunicação social da Corporação."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:ccs/organizacao",
+          "caput": "CCS tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Coordenador",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Imprensa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Relações Públicas",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comunicação Institucional",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nSeção de Imprensa\nSeção de Relações Públicas\nSeção de Comunicação Institucional"
+        },
+        {
+          "id": "cargo:coordenador-de-comunica-o-social",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Comunicação Social",
+          "editId": "organ:ccs/cargo:coordenador-de-comunica-o-social",
+          "caput": "Ao Coordenador de Comunicação Social compete:",
+          "items": [
+            {
+              "text": "Planejar, orientar, coordenar e supervisionar as atividades de comunicação social da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, orientar, coordenar e supervisionar as atividades de comunicação social da Corporação."
+        }
+      ]
+    },
+    {
+      "id": "organ:cinf",
+      "kind": "organ",
+      "chapterTitle": "DA COORDENADORIA DE INFORMÁTICA (CINF)",
+      "organKey": "cinf",
+      "label": "Coordenadoria de Informática",
+      "abbr": "CINF",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cinf/finalidade",
+          "proposedText": "Órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de tecnologia da informação da Corporação."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cinf/organizacao",
+          "caput": "CINF tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Coordenador",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Projetos e Desenvolvimento",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Suporte",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Redes",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nSeção de Projetos e Desenvolvimento\nSeção de Suporte\nSeção de Redes"
+        },
+        {
+          "id": "cargo:coordenador-de-inform-tica",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Coordenador de Informática",
+          "editId": "organ:cinf/cargo:coordenador-de-inform-tica",
+          "caput": "Ao Coordenador de Informática compete:",
+          "items": [
+            {
+              "text": "Planejar, orientar, coordenar e supervisionar as atividades de tecnologia da informação da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Planejar, orientar, coordenar e supervisionar as atividades de tecnologia da informação da Corporação."
+        }
+      ]
+    },
+    {
       "id": "organ:crbm",
       "kind": "organ",
       "chapterTitle": "DOS COMANDOS REGIONAIS DE BOMBEIRO MILITAR (CRBM)",
@@ -914,6 +2008,303 @@
             }
           ],
           "proposedText": "Substituir o Comandante Regional em seus impedimentos.\nAuxiliar na direção e controle das atividades regionais.\nassessorar o seu Comandante em todas as suas atribuições\ntomar as providências necessárias ao fiel cumprimento das ordens do seu Comandante\nfiscalizar e orientar os trabalhos dos órgãos da Unidade\nfiscalizar os serviços de escala da Unidade\nresponder pelo Comandante nos seus impedimentos\nassinar, por delegação do respectivo comandante, os atos administrativos que não forem de exclusividade daquela autoridade e sejam compatíveis com as normas vigentes\nfiscalizar e controlar a instrução da Unidade\nresponsabilizar-se pela carga da Unidade\nexercer o controle disciplinar dos integrantes da Unidade"
+        }
+      ]
+    },
+    {
+      "id": "organ:assessorias",
+      "kind": "organ",
+      "chapterTitle": "DAS ASSESSORIAS",
+      "organKey": "assessorias",
+      "label": "Assessorias",
+      "abbr": "ASSESSORIAS",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:assessorias/finalidade",
+          "proposedText": "Órgãos que prestam assessoramento administrativo e técnico, responsáveis pela realização de estudos, pesquisas, elaboração e controle de pareceres."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:assessorias/competencia",
+          "caput": "Compete à ASSESSORIAS:",
+          "items": [
+            {
+              "text": "Mantêm relacionamento entre o CBMRO e outros Poderes e Órgãos.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Mantêm relacionamento entre o CBMRO e outros Poderes e Órgãos."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:assessorias/organizacao",
+          "caput": "ASSESSORIAS tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Assessoria Institucional — responsável pela ligação do CG junto aos Poderes, Entes e Instituições Permanentes",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria Especial — assessoramento técnico, estudos e pareceres de questões de direito e política administrativa geral",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria Legislativa — análise de normas, elaboração de projetos de leis e orientação quanto ao cumprimento de decisões judiciais",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria Parlamentar — assessoramento na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria de Projetos e Gestão Estratégica — assessoramento técnico em Gestão Estratégica, Plano Estratégico, projetos e convênios",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria Fundacional",
+              "source": "ro"
+            },
+            {
+              "text": "Assessoria de Controle Interno — assegurar o alcance de objetivos, otimizar resultados, atividades de ouvidoria do CBMRO, subordinada tecnicamente à CGE",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Assessoria Institucional — responsável pela ligação do CG junto aos Poderes, Entes e Instituições Permanentes\nAssessoria Especial — assessoramento técnico, estudos e pareceres de questões de direito e política administrativa geral\nAssessoria Legislativa — análise de normas, elaboração de projetos de leis e orientação quanto ao cumprimento de decisões judiciais\nAssessoria Parlamentar — assessoramento na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades\nAssessoria de Projetos e Gestão Estratégica — assessoramento técnico em Gestão Estratégica, Plano Estratégico, projetos e convênios\nAssessoria Fundacional\nAssessoria de Controle Interno — assegurar o alcance de objetivos, otimizar resultados, atividades de ouvidoria do CBMRO, subordinada tecnicamente à CGE"
+        },
+        {
+          "id": "cargo:assessor-institucional",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Assessor Institucional",
+          "editId": "organ:assessorias/cargo:assessor-institucional",
+          "caput": "Ao Assessor Institucional compete:",
+          "items": [
+            {
+              "text": "Responsável pela ligação do Comandante-Geral junto aos Poderes, Entes e Instituições Permanentes, prestando assessoramento nas questões voltadas à Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável pela ligação do Comandante-Geral junto aos Poderes, Entes e Instituições Permanentes, prestando assessoramento nas questões voltadas à Corporação."
+        },
+        {
+          "id": "cargo:assessor-especial",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Assessor Especial",
+          "editId": "organ:assessorias/cargo:assessor-especial",
+          "caput": "Ao Assessor Especial compete:",
+          "items": [
+            {
+              "text": "Responsável por prestar assessoramento técnico, elaborar estudos e pareceres de questões de direito, de questões relacionadas à política de administração geral da Corporação, de exames de aspectos de legalidade dos atos que lhe forem submetidos, além de auxiliar a tomada de decisão de outros órgãos da Corporação, quando previamente autorizado pelo Comandante-Geral.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável por prestar assessoramento técnico, elaborar estudos e pareceres de questões de direito, de questões relacionadas à política de administração geral da Corporação, de exames de aspectos de legalidade dos atos que lhe forem submetidos, além de auxiliar a tomada de decisão de outros órgãos da Corporação, quando previamente autorizado pelo Comandante-Geral."
+        },
+        {
+          "id": "cargo:assessor-legislativo",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Assessor Legislativo",
+          "editId": "organ:assessorias/cargo:assessor-legislativo",
+          "caput": "Ao Assessor Legislativo compete:",
+          "items": [
+            {
+              "text": "Responsável por assessorar o Comandante-Geral quanto à análise de normas, diretrizes, portarias, determinações e demais documentos emanados pelo Comando-Geral, além de realizar os estudos e elaborar projetos de leis de interesse da Corporação e orientar ao Comandante-Geral quanto ao exato cumprimento de decisões judiciais.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável por assessorar o Comandante-Geral quanto à análise de normas, diretrizes, portarias, determinações e demais documentos emanados pelo Comando-Geral, além de realizar os estudos e elaborar projetos de leis de interesse da Corporação e orientar ao Comandante-Geral quanto ao exato cumprimento de decisões judiciais."
+        },
+        {
+          "id": "cargo:assessor-parlamentar",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Assessor Parlamentar",
+          "editId": "organ:assessorias/cargo:assessor-parlamentar",
+          "caput": "Ao Assessor Parlamentar compete:",
+          "items": [
+            {
+              "text": "Responsável por assessorar o Comandante-Geral na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades, no acompanhamento de matérias legislativas de interesse da Corporação.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável por assessorar o Comandante-Geral na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades, no acompanhamento de matérias legislativas de interesse da Corporação."
+        },
+        {
+          "id": "cargo:assessor-de-projetos-e-gest-o-estrat-gica",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Assessor de Projetos e Gestão Estratégica",
+          "editId": "organ:assessorias/cargo:assessor-de-projetos-e-gest-o-estrat-gica",
+          "caput": "Ao Assessor de Projetos e Gestão Estratégica compete:",
+          "items": [
+            {
+              "text": "Responsável por prestar assessoramento técnico nos assuntos relacionados à Gestão Estratégica da Corporação, bem como elaborar, gerir, acompanhar e fiscalizar a execução do Plano Estratégico, dos Projetos e Convênios firmados entre o CBMRO e outros órgãos e Poderes.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável por prestar assessoramento técnico nos assuntos relacionados à Gestão Estratégica da Corporação, bem como elaborar, gerir, acompanhar e fiscalizar a execução do Plano Estratégico, dos Projetos e Convênios firmados entre o CBMRO e outros órgãos e Poderes."
+        },
+        {
+          "id": "cargo:assessor-de-controle-interno",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Assessor de Controle Interno",
+          "editId": "organ:assessorias/cargo:assessor-de-controle-interno",
+          "caput": "Ao Assessor de Controle Interno compete:",
+          "items": [
+            {
+              "text": "Assegurar o alcance dos objetivos e metas estabelecidas pela instituição, otimizando os resultados de aplicação dos recursos públicos e dos serviços prestados à sociedade.",
+              "source": "ro"
+            },
+            {
+              "text": "Atenuar os índices de intervenção dos sistemas de controles externos existentes.",
+              "source": "ro"
+            },
+            {
+              "text": "Buscar a adequação legislativa e melhoria contínua dos processos administrativos.",
+              "source": "ro"
+            },
+            {
+              "text": "Assegurar a conformidade dos atos de gestão através do gerenciamento de riscos, promoção da integridade, da governança pública, da transparência ativa e passiva.",
+              "source": "ro"
+            },
+            {
+              "text": "Realizar atividades de ouvidoria do CBMRO.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Assegurar o alcance dos objetivos e metas estabelecidas pela instituição, otimizando os resultados de aplicação dos recursos públicos e dos serviços prestados à sociedade.\nAtenuar os índices de intervenção dos sistemas de controles externos existentes.\nBuscar a adequação legislativa e melhoria contínua dos processos administrativos.\nAssegurar a conformidade dos atos de gestão através do gerenciamento de riscos, promoção da integridade, da governança pública, da transparência ativa e passiva.\nRealizar atividades de ouvidoria do CBMRO."
+        }
+      ]
+    },
+    {
+      "id": "organ:gab-cg",
+      "kind": "organ",
+      "chapterTitle": "DO GABINETE DO COMANDANTE-GERAL",
+      "organKey": "gab-cg",
+      "label": "Gabinete do Comandante-Geral",
+      "abbr": "GAB/CG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:gab-cg/finalidade",
+          "proposedText": "Supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:gab-cg/organizacao",
+          "caput": "GAB/CG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Chefia de Gabinete",
+              "source": "ro"
+            },
+            {
+              "text": "Secretaria",
+              "source": "ro"
+            },
+            {
+              "text": "Assessorias",
+              "source": "ro"
+            },
+            {
+              "text": "Ajudância de Ordens",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Chefia de Gabinete\nSecretaria\nAssessorias\nAjudância de Ordens"
+        },
+        {
+          "id": "cargo:chefe-de-gabinete-do-cg",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Chefe de Gabinete do CG",
+          "editId": "organ:gab-cg/cargo:chefe-de-gabinete-do-cg",
+          "caput": "Ao Chefe de Gabinete do CG compete:",
+          "items": [
+            {
+              "text": "Supervisionar e executar as atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Supervisionar e executar as atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral."
+        }
+      ]
+    },
+    {
+      "id": "organ:ag",
+      "kind": "organ",
+      "chapterTitle": "DA AJUDÂNCIA-GERAL (AG)",
+      "organKey": "ag",
+      "label": "Ajudância-Geral",
+      "abbr": "AG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:ag/finalidade",
+          "proposedText": "Órgão responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:ag/competencia",
+          "caput": "Compete à AG:",
+          "items": [
+            {
+              "text": "Responsável pela manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, o controle de pessoal do Comando-Geral, bem como das praças cedidas a outros órgãos.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável pela manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, o controle de pessoal do Comando-Geral, bem como das praças cedidas a outros órgãos."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:ag/organizacao",
+          "caput": "AG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Ajudante-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Secretaria-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Companhia de Comando e Serviços",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Ajudante-Geral\nAdjunto\nSecretaria-Geral\nCompanhia de Comando e Serviços"
+        },
+        {
+          "id": "cargo:ajudante-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Ajudante-Geral",
+          "editId": "organ:ag/cargo:ajudante-geral",
+          "caput": "Ao Ajudante-Geral compete:",
+          "items": [
+            {
+              "text": "Responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, manutenção e segurança das instalações, controle de pessoal do Comando-Geral e das praças cedidas a outros órgãos.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, manutenção e segurança das instalações, controle de pessoal do Comando-Geral e das praças cedidas a outros órgãos."
         }
       ]
     },
@@ -1783,6 +3174,103 @@
       ]
     },
     {
+      "id": "organ:corregedoria",
+      "kind": "organ",
+      "chapterTitle": "DA CORREGEDORIA-GERAL",
+      "organKey": "corregedoria",
+      "label": "Corregedoria-Geral",
+      "abbr": "CORREG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:corregedoria/finalidade",
+          "proposedText": "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Corporação."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:corregedoria/competencia",
+          "caput": "Compete à CORREG:",
+          "items": [
+            {
+              "text": "Apuração de responsabilidade criminal, administrativa e disciplinar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Apuração de responsabilidade criminal, administrativa e disciplinar."
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:corregedoria/organizacao",
+          "caput": "CORREG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Corregedor-Geral (Oficial da ativa do último Posto — QOEMBM; indicado pelo CG e nomeado pelo Governador; substituto imediato do Chefe do EMG)",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Cartório",
+              "source": "ro"
+            },
+            {
+              "text": "Núcleo de Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Processo Administrativo",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Corregedor-Geral (Oficial da ativa do último Posto — QOEMBM; indicado pelo CG e nomeado pelo Governador; substituto imediato do Chefe do EMG)\nAdjunto\nSeção Administrativa\nCartório\nNúcleo de Inteligência\nSeção de Processo Administrativo"
+        },
+        {
+          "id": "cargo:corregedor-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Corregedor-Geral",
+          "editId": "organ:corregedoria/cargo:corregedor-geral",
+          "caput": "Ao Corregedor-Geral compete:",
+          "items": [
+            {
+              "text": "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Corporação, competindo-lhe, dentre outras atribuições, a apuração de responsabilidade criminal, administrativa e disciplinar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Corporação, competindo-lhe, dentre outras atribuições, a apuração de responsabilidade criminal, administrativa e disciplinar."
+        },
+        {
+          "id": "cargo:adjunto-da-corregedoria-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Adjunto da Corregedoria-Geral",
+          "editId": "organ:corregedoria/cargo:adjunto-da-corregedoria-geral",
+          "caput": "Ao Adjunto da Corregedoria-Geral compete:",
+          "items": [
+            {
+              "text": "Substituir o Corregedor-Geral em seus impedimentos.",
+              "source": "ro"
+            },
+            {
+              "text": "Auxiliar nas atividades correcional e disciplinar.",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Substituir o Corregedor-Geral em seus impedimentos.\nAuxiliar nas atividades correcional e disciplinar."
+        }
+      ]
+    },
+    {
       "id": "organ:guarnicao",
       "kind": "organ",
       "chapterTitle": "DA GUARNIÇÃO DE SERVIÇO OPERACIONAL",
@@ -1952,9 +3440,60 @@
     }
   ],
   "commandChart": {
-    "label": "Subcomandante-Geral",
-    "synthetic": true,
+    "organKey": "cg",
+    "sigla": "CG",
+    "label": "Comando Geral",
+    "chapterId": "organ:cg",
     "children": [
+      {
+        "organKey": "depdec",
+        "sigla": "DEPDEC",
+        "label": "Diretoria Estadual de Proteção e Defesa Civil",
+        "chapterId": "organ:depdec",
+        "children": []
+      },
+      {
+        "organKey": "condeg",
+        "sigla": "CONDEG",
+        "label": "Conselho Deliberativo de Estratégia e Gestão",
+        "chapterId": "organ:condeg",
+        "children": []
+      },
+      {
+        "organKey": "dp",
+        "sigla": "DP",
+        "label": "Diretoria de Pessoal",
+        "chapterId": "organ:dp",
+        "children": []
+      },
+      {
+        "organKey": "deei",
+        "sigla": "DEEI",
+        "label": "Diretoria de Educação, Ensino e Instrução",
+        "chapterId": "organ:deei",
+        "children": []
+      },
+      {
+        "organKey": "dpof",
+        "sigla": "DPOF",
+        "label": "Diretoria de Planejamento, Orçamento e Finanças",
+        "chapterId": "organ:dpof",
+        "children": []
+      },
+      {
+        "organKey": "dsap",
+        "sigla": "DSAP",
+        "label": "Diretoria de Saúde e Assistência ao Pessoal",
+        "chapterId": "organ:dsap",
+        "children": []
+      },
+      {
+        "organKey": "dlog",
+        "sigla": "DLOG",
+        "label": "Diretoria de Logística",
+        "chapterId": "organ:dlog",
+        "children": []
+      },
       {
         "organKey": "dpo",
         "sigla": "DPO",
@@ -2061,6 +3600,55 @@
             "children": []
           }
         ]
+      },
+      {
+        "organKey": "cint",
+        "sigla": "CINT",
+        "label": "Coordenadoria de Inteligência",
+        "chapterId": "organ:cint",
+        "children": []
+      },
+      {
+        "organKey": "ccs",
+        "sigla": "CCS",
+        "label": "Coordenadoria de Comunicação Social",
+        "chapterId": "organ:ccs",
+        "children": []
+      },
+      {
+        "organKey": "cinf",
+        "sigla": "CINF",
+        "label": "Coordenadoria de Informática",
+        "chapterId": "organ:cinf",
+        "children": []
+      },
+      {
+        "organKey": "assessorias",
+        "sigla": "ASSESSORIAS",
+        "label": "Assessorias",
+        "chapterId": "organ:assessorias",
+        "children": []
+      },
+      {
+        "organKey": "gab-cg",
+        "sigla": "GAB/CG",
+        "label": "Gabinete do Comandante-Geral",
+        "chapterId": "organ:gab-cg",
+        "children": []
+      },
+      {
+        "organKey": "ag",
+        "sigla": "AG",
+        "label": "Ajudância-Geral",
+        "chapterId": "organ:ag",
+        "children": []
+      },
+      {
+        "organKey": "corregedoria",
+        "sigla": "CORREG",
+        "label": "Corregedoria-Geral",
+        "chapterId": "organ:corregedoria",
+        "children": []
       }
     ]
   }
