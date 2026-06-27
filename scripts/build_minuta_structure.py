@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).parent.parent
 RO_JSON  = BASE_DIR / "database" / "organs_detail" / "ro.json"
 OUT_JSON = BASE_DIR / "database" / "minuta_structure.json"
 
-TITLE = "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO"
+TITLE = "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO)"
 
 # Ordem dos capítulos = ordem de subordinação (topo → menor fração).
 # (organ_key, CHAPTER_TITLE, artigo_definido)
@@ -265,10 +265,10 @@ def build_estrutura_chapter(organs):
 def build_preliminares_chapter():
     txt = (
         "Este Regimento Interno disciplina a organização, as competências e o funcionamento "
-        "da estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), "
-        "do escalão de direção operacional às frações de execução.\n"
-        "A estrutura operacional subordina-se ao Comandante-Geral por intermédio do "
-        "Subcomandante-Geral, nos termos da Lei de Organização Básica do CBMRO."
+        "da estrutura do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do Comando "
+        "Geral às frações de execução.\n"
+        "A estrutura do CBMRO observa a Lei de Organização Básica do CBMRO, que define a "
+        "subordinação entre seus órgãos."
     )
     return {
         "id": "preliminares", "kind": "prose", "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",

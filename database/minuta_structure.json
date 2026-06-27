@@ -1,13 +1,13 @@
 {
   "generated_by": "scripts/build_minuta_structure.py",
-  "title": "DO REGIMENTO INTERNO DA ESTRUTURA OPERACIONAL DO CBMRO",
+  "title": "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO)",
   "chapters": [
     {
       "id": "preliminares",
       "kind": "prose",
       "chapterTitle": "DAS DISPOSIÇÕES PRELIMINARES",
       "editId": "preliminares",
-      "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento da estrutura operacional do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do escalão de direção operacional às frações de execução.\nA estrutura operacional subordina-se ao Comandante-Geral por intermédio do Subcomandante-Geral, nos termos da Lei de Organização Básica do CBMRO."
+      "proposedText": "Este Regimento Interno disciplina a organização, as competências e o funcionamento da estrutura do Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), do Comando Geral às frações de execução.\nA estrutura do CBMRO observa a Lei de Organização Básica do CBMRO, que define a subordinação entre seus órgãos."
     },
     {
       "id": "estrutura",
