@@ -19,8 +19,16 @@
           "id": "direcao",
           "kind": "incisos",
           "editId": "estrutura/direcao",
-          "caput": "São Órgãos de Direção Operacional:",
+          "caput": "São Órgãos de Direção:",
           "items": [
+            {
+              "text": "de Direção Geral: o Comando Geral (CG) e a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC)",
+              "source": "ro"
+            },
+            {
+              "text": "de Direção Colegiada: o Conselho Deliberativo de Estratégia e Gestão (CONDEG)",
+              "source": "ro"
+            },
             {
               "text": "de Direção Setorial: a Diretoria de Pessoal (DP), a Diretoria de Educação, Ensino e Instrução (DEEI), a Diretoria de Planejamento, Orçamento e Finanças (DPOF), a Diretoria de Saúde e Assistência ao Pessoal (DSAP), a Diretoria de Logística (DLOG), a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE), o Comando de Operações Técnicas (COT), a Coordenadoria de Inteligência (CINT), a Coordenadoria de Comunicação Social (CCS) e a Coordenadoria de Informática (CINF)",
               "source": "ro"
@@ -30,7 +38,37 @@
               "source": "ro"
             }
           ],
-          "proposedText": "de Direção Setorial: a Diretoria de Pessoal (DP), a Diretoria de Educação, Ensino e Instrução (DEEI), a Diretoria de Planejamento, Orçamento e Finanças (DPOF), a Diretoria de Saúde e Assistência ao Pessoal (DSAP), a Diretoria de Logística (DLOG), a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE), o Comando de Operações Técnicas (COT), a Coordenadoria de Inteligência (CINT), a Coordenadoria de Comunicação Social (CCS) e a Coordenadoria de Informática (CINF)\nde Direção Regional: os Comandos Regionais de Bombeiro Militar (CRBM)"
+          "proposedText": "de Direção Geral: o Comando Geral (CG) e a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC)\nde Direção Colegiada: o Conselho Deliberativo de Estratégia e Gestão (CONDEG)\nde Direção Setorial: a Diretoria de Pessoal (DP), a Diretoria de Educação, Ensino e Instrução (DEEI), a Diretoria de Planejamento, Orçamento e Finanças (DPOF), a Diretoria de Saúde e Assistência ao Pessoal (DSAP), a Diretoria de Logística (DLOG), a Diretoria de Planejamento Operacional (DPO), a Diretoria Operacional Especializada (DOE), o Comando de Operações Técnicas (COT), a Coordenadoria de Inteligência (CINT), a Coordenadoria de Comunicação Social (CCS) e a Coordenadoria de Informática (CINF)\nde Direção Regional: os Comandos Regionais de Bombeiro Militar (CRBM)"
+        },
+        {
+          "id": "assessoramento",
+          "kind": "incisos",
+          "editId": "estrutura/assessoramento",
+          "caput": "É Órgão de Assessoramento:",
+          "items": [
+            {
+              "text": "de Assessoramento: as Assessorias (ASSESSORIAS)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "de Assessoramento: as Assessorias (ASSESSORIAS)"
+        },
+        {
+          "id": "apoio",
+          "kind": "incisos",
+          "editId": "estrutura/apoio",
+          "caput": "São Órgãos de Apoio:",
+          "items": [
+            {
+              "text": "ao Comando-Geral: o Gabinete do Comandante-Geral (GAB/CG)",
+              "source": "ro"
+            },
+            {
+              "text": "ao Subcomando-Geral: a Ajudância-Geral (AG)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "ao Comando-Geral: o Gabinete do Comandante-Geral (GAB/CG)\nao Subcomando-Geral: a Ajudância-Geral (AG)"
         },
         {
           "id": "execucao",
@@ -56,6 +94,19 @@
             }
           ],
           "proposedText": "Atuação Operacional Ordinária: o Batalhão de Bombeiros Militar (BBM), a Companhia Independente de Bombeiros Militar (CIBM) e a Coordenadoria de Atividades Técnicas (CAT)\nAtuação Operacional Especializada Terrestre: o Batalhão de Busca e Salvamento (BBS) e o Batalhão de Incêndio Florestal e Emergências Ambientais (BIFEA)\nAtuação Operacional Especializada Aérea: o Batalhão de Operações Aéreas (BOA)\nAtuação Operacional Conveniada Municipal: o Grupo de Bombeiros Militar (GBM)"
+        },
+        {
+          "id": "correicao",
+          "kind": "incisos",
+          "editId": "estrutura/correicao",
+          "caput": "É Órgão de Correição:",
+          "items": [
+            {
+              "text": "de Correição: a Corregedoria-Geral (CORREG)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "de Correição: a Corregedoria-Geral (CORREG)"
         }
       ]
     },

@@ -202,18 +202,34 @@ def _join_orgaos(keys, organs, art_by_key):
     return ", ".join(parts[:-1]) + " e " + parts[-1]
 
 
+CATEGORY_LABELS = [
+    ("Direção Geral",     "de Direção Geral"),
+    ("Direção Colegiada",  "de Direção Colegiada"),
+    ("Direção Setorial",   "de Direção Setorial"),
+    ("Direção Regional",   "de Direção Regional"),
+]
+APOIO_LABELS = [
+    ("Apoio ao Comando-Geral",    "ao Comando-Geral"),
+    ("Apoio ao Subcomando-Geral", "ao Subcomando-Geral"),
+]
+
+
 def build_estrutura_chapter(organs):
     art_by_key = {k: art for (k, _t, art) in ORGAN_ORDER}
     cat_of = {k: (organs.get(k) or {}).get("category", "") for (k, _t, _a) in ORGAN_ORDER}
 
-    setorial = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == "Direção Setorial"]
-    regional = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == "Direção Regional"]
+    def items_for(labels):
+        out = []
+        for cat, label in labels:
+            keys = [k for (k, _t, _a) in ORGAN_ORDER if cat_of[k] == cat]
+            if keys:
+                out.append({"text": f"{label}: {_join_orgaos(keys, organs, art_by_key)}", "source": "ro"})
+        return out
 
-    direcao_items = []
-    if setorial:
-        direcao_items.append({"text": f"de Direção Setorial: {_join_orgaos(setorial, organs, art_by_key)}", "source": "ro"})
-    if regional:
-        direcao_items.append({"text": f"de Direção Regional: {_join_orgaos(regional, organs, art_by_key)}", "source": "ro"})
+    direcao_items = items_for(CATEGORY_LABELS)
+    apoio_items = items_for(APOIO_LABELS)
+    assessoramento_items = items_for([("Assessoramento", "de Assessoramento")])
+    correicao_items = items_for([("Correição", "de Correição")])
 
     execucao_items = []
     for area_key, area_label in AREA_LABELS:
@@ -222,20 +238,27 @@ def build_estrutura_chapter(organs):
             continue
         execucao_items.append({"text": f"{area_label}: {_join_orgaos(keys, organs, art_by_key)}", "source": "ro"})
 
-    direcao = {
-        "id": "direcao", "kind": "incisos", "editId": "estrutura/direcao",
-        "caput": "São Órgãos de Direção Operacional:",
-        "items": direcao_items, "proposedText": proposed_text(direcao_items),
-    }
-    execucao = {
-        "id": "execucao", "kind": "incisos", "editId": "estrutura/execucao",
-        "caput": "Os Órgãos de Execução classificam-se, quanto à área de atuação, em:",
-        "items": execucao_items, "proposedText": proposed_text(execucao_items),
-    }
+    def make_article(article_id, caput, items):
+        return {
+            "id": article_id, "kind": "incisos", "editId": f"estrutura/{article_id}",
+            "caput": caput, "items": items, "proposedText": proposed_text(items),
+        }
+
+    articles = [make_article("direcao", "São Órgãos de Direção:", direcao_items)]
+    if assessoramento_items:
+        articles.append(make_article("assessoramento", "É Órgão de Assessoramento:", assessoramento_items))
+    if apoio_items:
+        articles.append(make_article("apoio", "São Órgãos de Apoio:", apoio_items))
+    articles.append(make_article(
+        "execucao", "Os Órgãos de Execução classificam-se, quanto à área de atuação, em:", execucao_items
+    ))
+    if correicao_items:
+        articles.append(make_article("correicao", "É Órgão de Correição:", correicao_items))
+
     return {
         "id": "estrutura", "kind": "articles", "chapterTitle": "DA ESTRUTURA ORGANIZACIONAL",
         "editId": "estrutura",
-        "articles": [direcao, execucao],
+        "articles": articles,
     }
 
 
