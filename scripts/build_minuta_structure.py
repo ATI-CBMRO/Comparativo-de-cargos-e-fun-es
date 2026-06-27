@@ -302,6 +302,16 @@ BBM_FRACTION_CHAIN = [
 ]
 
 
+# subordinadoA de alguns órgãos referencia um CARGO interno de `cg` (Comandante-Geral,
+# Subcomandante-Geral, Chefe do Estado-Maior Geral), não a sigla de um órgão do conjunto.
+# Mapa de fallback: texto normalizado do cargo -> organ_key real que o "contém".
+ROLE_TO_ORGAN = {
+    "comandante-geral": "cg",
+    "subcomandante-geral": "cg",
+    "chefe do estado-maior geral": "cg",
+}
+
+
 def build_command_chart(organs, chapters):
     """Árvore dos órgãos (capítulos kind='organ') pela subordinação do ro.json.
 
@@ -338,7 +348,15 @@ def build_command_chart(organs, chapters):
             raise ValueError(
                 f"subordinadoA de '{k}' casa múltiplas siglas {matches}: {sub!r}"
             )
-        return matches[0] if matches else None  # None = raiz
+        if matches:
+            return matches[0]
+        # Sem sigla: subordinadoA pode referenciar um CARGO interno de outro órgão
+        # (ex.: "Chefe do Estado-Maior Geral", cargo de `cg`) em vez de um órgão próprio.
+        sub_norm = normalize(sub)
+        for role, target in ROLE_TO_ORGAN.items():
+            if sub_norm.startswith(role) and target in nodes and target != k:
+                return target
+        return None  # raiz
 
     # A Guarnição não entra no roteamento por sigla: é a folha da cadeia de frações
     # do BBM, montada à parte com nós estruturais intermediários (Cia BM, Pel BM).
