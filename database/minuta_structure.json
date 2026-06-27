@@ -3389,221 +3389,215 @@
     }
   ],
   "commandChart": {
-    "label": "Subcomandante-Geral",
-    "synthetic": true,
+    "organKey": "cg",
+    "sigla": "CG",
+    "label": "Comando Geral",
+    "chapterId": "organ:cg",
     "children": [
       {
-        "organKey": "cg",
-        "sigla": "CG",
-        "label": "Comando Geral",
-        "chapterId": "organ:cg",
+        "organKey": "depdec",
+        "sigla": "DEPDEC",
+        "label": "Diretoria Estadual de Proteção e Defesa Civil",
+        "chapterId": "organ:depdec",
+        "children": []
+      },
+      {
+        "organKey": "condeg",
+        "sigla": "CONDEG",
+        "label": "Conselho Deliberativo de Estratégia e Gestão",
+        "chapterId": "organ:condeg",
+        "children": []
+      },
+      {
+        "organKey": "dp",
+        "sigla": "DP",
+        "label": "Diretoria de Pessoal",
+        "chapterId": "organ:dp",
+        "children": []
+      },
+      {
+        "organKey": "deei",
+        "sigla": "DEEI",
+        "label": "Diretoria de Educação, Ensino e Instrução",
+        "chapterId": "organ:deei",
+        "children": []
+      },
+      {
+        "organKey": "dpof",
+        "sigla": "DPOF",
+        "label": "Diretoria de Planejamento, Orçamento e Finanças",
+        "chapterId": "organ:dpof",
+        "children": []
+      },
+      {
+        "organKey": "dsap",
+        "sigla": "DSAP",
+        "label": "Diretoria de Saúde e Assistência ao Pessoal",
+        "chapterId": "organ:dsap",
+        "children": []
+      },
+      {
+        "organKey": "dlog",
+        "sigla": "DLOG",
+        "label": "Diretoria de Logística",
+        "chapterId": "organ:dlog",
+        "children": []
+      },
+      {
+        "organKey": "dpo",
+        "sigla": "DPO",
+        "label": "Diretoria de Planejamento Operacional",
+        "chapterId": "organ:dpo",
         "children": [
           {
-            "organKey": "depdec",
-            "sigla": "DEPDEC",
-            "label": "Diretoria Estadual de Proteção e Defesa Civil",
-            "chapterId": "organ:depdec",
-            "children": []
-          },
-          {
-            "organKey": "condeg",
-            "sigla": "CONDEG",
-            "label": "Conselho Deliberativo de Estratégia e Gestão",
-            "chapterId": "organ:condeg",
-            "children": []
-          },
-          {
-            "organKey": "dp",
-            "sigla": "DP",
-            "label": "Diretoria de Pessoal",
-            "chapterId": "organ:dp",
-            "children": []
-          },
-          {
-            "organKey": "deei",
-            "sigla": "DEEI",
-            "label": "Diretoria de Educação, Ensino e Instrução",
-            "chapterId": "organ:deei",
-            "children": []
-          },
-          {
-            "organKey": "dpof",
-            "sigla": "DPOF",
-            "label": "Diretoria de Planejamento, Orçamento e Finanças",
-            "chapterId": "organ:dpof",
-            "children": []
-          },
-          {
-            "organKey": "dsap",
-            "sigla": "DSAP",
-            "label": "Diretoria de Saúde e Assistência ao Pessoal",
-            "chapterId": "organ:dsap",
-            "children": []
-          },
-          {
-            "organKey": "dlog",
-            "sigla": "DLOG",
-            "label": "Diretoria de Logística",
-            "chapterId": "organ:dlog",
-            "children": []
-          },
-          {
-            "organKey": "dpo",
-            "sigla": "DPO",
-            "label": "Diretoria de Planejamento Operacional",
-            "chapterId": "organ:dpo",
+            "organKey": "cot",
+            "sigla": "COT",
+            "label": "Comando de Operações Técnicas",
+            "chapterId": "organ:cot",
             "children": [
               {
-                "organKey": "cot",
-                "sigla": "COT",
-                "label": "Comando de Operações Técnicas",
-                "chapterId": "organ:cot",
-                "children": [
-                  {
-                    "organKey": "cat",
-                    "sigla": "CAT",
-                    "label": "Coordenadoria de Atividades Técnicas",
-                    "chapterId": "organ:cat",
-                    "children": []
-                  }
-                ]
-              },
+                "organKey": "cat",
+                "sigla": "CAT",
+                "label": "Coordenadoria de Atividades Técnicas",
+                "chapterId": "organ:cat",
+                "children": []
+              }
+            ]
+          },
+          {
+            "organKey": "crbm",
+            "sigla": "CRBM",
+            "label": "Comandos Regionais de Bombeiro Militar",
+            "chapterId": "organ:crbm",
+            "children": [
               {
-                "organKey": "crbm",
-                "sigla": "CRBM",
-                "label": "Comandos Regionais de Bombeiro Militar",
-                "chapterId": "organ:crbm",
+                "organKey": "bbm",
+                "sigla": "BBM",
+                "label": "Batalhão de Bombeiros Militar",
+                "chapterId": "organ:bbm",
                 "children": [
                   {
-                    "organKey": "bbm",
-                    "sigla": "BBM",
-                    "label": "Batalhão de Bombeiros Militar",
-                    "chapterId": "organ:bbm",
+                    "organKey": null,
+                    "sigla": "Cia BM",
+                    "label": "Companhia de Bombeiros Militar",
+                    "structural": true,
+                    "chapterId": null,
                     "children": [
                       {
                         "organKey": null,
-                        "sigla": "Cia BM",
-                        "label": "Companhia de Bombeiros Militar",
+                        "sigla": "Pel BM",
+                        "label": "Pelotão de Bombeiros Militar",
                         "structural": true,
                         "chapterId": null,
                         "children": [
                           {
-                            "organKey": null,
-                            "sigla": "Pel BM",
-                            "label": "Pelotão de Bombeiros Militar",
-                            "structural": true,
-                            "chapterId": null,
-                            "children": [
-                              {
-                                "organKey": "guarnicao",
-                                "sigla": "GuSv",
-                                "label": "Guarnição de Serviço Operacional",
-                                "chapterId": "organ:guarnicao",
-                                "children": []
-                              }
-                            ]
+                            "organKey": "guarnicao",
+                            "sigla": "GuSv",
+                            "label": "Guarnição de Serviço Operacional",
+                            "chapterId": "organ:guarnicao",
+                            "children": []
                           }
                         ]
                       }
                     ]
-                  },
-                  {
-                    "organKey": "cibm",
-                    "sigla": "CIBM",
-                    "label": "Companhia Independente de Bombeiros Militar",
-                    "chapterId": "organ:cibm",
-                    "children": []
-                  },
-                  {
-                    "organKey": "gbm",
-                    "sigla": "GBM",
-                    "label": "Grupo de Bombeiros Militar",
-                    "chapterId": "organ:gbm",
-                    "children": []
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "organKey": "doe",
-            "sigla": "DOE",
-            "label": "Diretoria Operacional Especializada",
-            "chapterId": "organ:doe",
-            "children": [
+              },
               {
-                "organKey": "bbs",
-                "sigla": "BBS",
-                "label": "Batalhão de Busca e Salvamento",
-                "chapterId": "organ:bbs",
+                "organKey": "cibm",
+                "sigla": "CIBM",
+                "label": "Companhia Independente de Bombeiros Militar",
+                "chapterId": "organ:cibm",
                 "children": []
               },
               {
-                "organKey": "bifea",
-                "sigla": "BIFEA",
-                "label": "Batalhão de Incêndio Florestal e Emergências Ambientais",
-                "chapterId": "organ:bifea",
-                "children": []
-              },
-              {
-                "organKey": "boa",
-                "sigla": "BOA",
-                "label": "Batalhão de Operações Aéreas",
-                "chapterId": "organ:boa",
+                "organKey": "gbm",
+                "sigla": "GBM",
+                "label": "Grupo de Bombeiros Militar",
+                "chapterId": "organ:gbm",
                 "children": []
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "organKey": "doe",
+        "sigla": "DOE",
+        "label": "Diretoria Operacional Especializada",
+        "chapterId": "organ:doe",
+        "children": [
           {
-            "organKey": "cint",
-            "sigla": "CINT",
-            "label": "Coordenadoria de Inteligência",
-            "chapterId": "organ:cint",
+            "organKey": "bbs",
+            "sigla": "BBS",
+            "label": "Batalhão de Busca e Salvamento",
+            "chapterId": "organ:bbs",
             "children": []
           },
           {
-            "organKey": "ccs",
-            "sigla": "CCS",
-            "label": "Coordenadoria de Comunicação Social",
-            "chapterId": "organ:ccs",
+            "organKey": "bifea",
+            "sigla": "BIFEA",
+            "label": "Batalhão de Incêndio Florestal e Emergências Ambientais",
+            "chapterId": "organ:bifea",
             "children": []
           },
           {
-            "organKey": "cinf",
-            "sigla": "CINF",
-            "label": "Coordenadoria de Informática",
-            "chapterId": "organ:cinf",
-            "children": []
-          },
-          {
-            "organKey": "assessorias",
-            "sigla": "ASSESSORIAS",
-            "label": "Assessorias",
-            "chapterId": "organ:assessorias",
-            "children": []
-          },
-          {
-            "organKey": "gab-cg",
-            "sigla": "GAB/CG",
-            "label": "Gabinete do Comandante-Geral",
-            "chapterId": "organ:gab-cg",
-            "children": []
-          },
-          {
-            "organKey": "ag",
-            "sigla": "AG",
-            "label": "Ajudância-Geral",
-            "chapterId": "organ:ag",
-            "children": []
-          },
-          {
-            "organKey": "corregedoria",
-            "sigla": "CORREG",
-            "label": "Corregedoria-Geral",
-            "chapterId": "organ:corregedoria",
+            "organKey": "boa",
+            "sigla": "BOA",
+            "label": "Batalhão de Operações Aéreas",
+            "chapterId": "organ:boa",
             "children": []
           }
         ]
+      },
+      {
+        "organKey": "cint",
+        "sigla": "CINT",
+        "label": "Coordenadoria de Inteligência",
+        "chapterId": "organ:cint",
+        "children": []
+      },
+      {
+        "organKey": "ccs",
+        "sigla": "CCS",
+        "label": "Coordenadoria de Comunicação Social",
+        "chapterId": "organ:ccs",
+        "children": []
+      },
+      {
+        "organKey": "cinf",
+        "sigla": "CINF",
+        "label": "Coordenadoria de Informática",
+        "chapterId": "organ:cinf",
+        "children": []
+      },
+      {
+        "organKey": "assessorias",
+        "sigla": "ASSESSORIAS",
+        "label": "Assessorias",
+        "chapterId": "organ:assessorias",
+        "children": []
+      },
+      {
+        "organKey": "gab-cg",
+        "sigla": "GAB/CG",
+        "label": "Gabinete do Comandante-Geral",
+        "chapterId": "organ:gab-cg",
+        "children": []
+      },
+      {
+        "organKey": "ag",
+        "sigla": "AG",
+        "label": "Ajudância-Geral",
+        "chapterId": "organ:ag",
+        "children": []
+      },
+      {
+        "organKey": "corregedoria",
+        "sigla": "CORREG",
+        "label": "Corregedoria-Geral",
+        "chapterId": "organ:corregedoria",
+        "children": []
       }
     ]
   }

@@ -315,9 +315,13 @@ ROLE_TO_ORGAN = {
 def build_command_chart(organs, chapters):
     """Árvore dos órgãos (capítulos kind='organ') pela subordinação do ro.json.
 
-    Pai = órgão do conjunto cuja SIGLA aparece em subordinadoA; senão, raiz.
-    A Guarnição (menor fração) pendura na cadeia Cia BM → Pel BM dentro do BBM.
-    Retorna a raiz sintética 'Subcomandante-Geral'.
+    Pai = órgão do conjunto cuja SIGLA aparece em subordinadoA; se nenhuma sigla
+    casar, tenta ROLE_TO_ORGAN (subordinadoA referencia um cargo interno de outro
+    órgão); senão, raiz. A Guarnição (menor fração) pendura na cadeia
+    Cia BM → Pel BM dentro do BBM.
+    Retorna `cg` como raiz real (tem chapterId, é clicável) quando há exatamente
+    uma raiz; cai para um wrapper sintético só se restarem múltiplas raízes
+    desconectadas (não esperado com os 26 órgãos atuais — sinal de dado inesperado).
     """
     nodes = {}
     for c in chapters:
@@ -381,6 +385,8 @@ def build_command_chart(organs, chapters):
             leaf = node
         leaf["children"].append(guarnicao)
 
+    if len(roots) == 1:
+        return roots[0]
     return {"label": "Subcomandante-Geral", "synthetic": True, "children": roots}
 
 
@@ -420,8 +426,7 @@ def command_order(organs):
         for c in node.get("children", []):
             walk(c, nd)
 
-    for c in chart.get("children", []):
-        walk(c, 0)
+    walk(chart, 0)
     return out
 
 
