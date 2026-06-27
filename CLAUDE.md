@@ -116,14 +116,21 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Ícones: `lucide-react`.
 
 ### Wizard de Minuta de Regimento Interno (`/minuta`)
-Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional do CBMRO
-(do Comando-Geral à menor fração), em vez de apenas comparar o que outros estados fizeram.
+Gera, em `.docx` client-side, uma minuta hierárquica única de RI do CBMRO cobrindo toda a
+estrutura da LOB (do Comando-Geral à menor fração), em vez de apenas comparar o que outros
+estados fizeram.
 
 - `scripts/build_minuta_structure.py` lê **diretamente** `database/organs_detail/ro.json`
   (não mais o `comparativo_dpo_cot.json`) e percorre os órgãos na ordem de subordinação do
-  RO: Preliminares + Estrutura + 11 órgãos (dpo, doe, cot, crbm, bbm, cibm, cat, bbs, bifea,
-  boa, gbm) + capítulo da **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
+  RO: Preliminares + Estrutura + os **26 órgãos da LOB** (Direção Geral/Colegiada/Setorial/
+  Regional, Assessoramento, Apoio ao Comando-Geral/Subcomando-Geral, Execução Ordinária/
+  Especializada Terrestre/Aérea/Conveniada Municipal, Correição — agrupados em
+  `build_estrutura_chapter()` via `CATEGORY_LABELS`/`APOIO_LABELS`) + capítulo da
+  **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
   `database/minuta_structure.json` (`{title, chapters:[{kind: prose|incisos|organ, sections:[...]}]}`).
+  `cg` (Comando-Geral) é a raiz real da árvore de comando (`commandChart`); `find_parent`
+  resolve `subordinadoA` por sigla de órgão ou, via `ROLE_TO_ORGAN`, por nome de cargo
+  (ex.: "Subcomandante-Geral" → órgão `cg`).
 - `scripts/minuta_enrichment.py` traz o enriquecimento curado VERBATIM de outros CBMs,
   rotulado por fonte: `ENRICHMENT` (por cargo/função — hoje só CBMAL) e `ENRICHMENT_ORGAN`
   (por órgão/competência — AL, MT, PR, SC, DF, SP, BA, CE, PE, ES, PA) mais
@@ -142,16 +149,19 @@ Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional d
 
 ### Diagramas da Minuta (`/minuta-diagramas`)
 Página que apresenta dois diagramas da minuta, lendo o mesmo `minuta_structure.json`:
-- **Organograma** (`src/components/MinutaOrgChart.jsx`) — cadeia de comando dos 12 órgãos,
-  caixas-e-linhas em CSS puro (sem lib), a partir do campo `commandChart` gerado por
-  `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`; GBM como ramo
-  próprio sob o CRBM — Execução Conveniada Municipal — via `COMMAND_PARENT_OVERRIDE`, e a
+- **Organograma** (`src/components/MinutaOrgChart.jsx`) — cadeia de comando dos 26 órgãos da
+  LOB + Guarnição, caixas-e-linhas em CSS puro (sem lib), a partir do campo `commandChart`
+  gerado por `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`, com
+  `cg` — Comando-Geral — como raiz REAL, não mais sintética, quando há uma única raiz na
+  cadeia; só cai numa raiz sintética/placeholder para 0 ou 2+ raízes desconexas; GBM como
+  ramo próprio sob o CRBM — Execução Conveniada Municipal — via `COMMAND_PARENT_OVERRIDE`, e a
   Guarnição de Serviço Operacional como folha da cadeia de frações do BBM: BBM → Companhia
   (Cia BM) → Pelotão (Pel BM) → Guarnição, via `BBM_FRACTION_CHAIN`, com Cia/Pel como nós
   estruturais não-clicáveis). A árvore é **dinâmica**: cada nó com filhos tem botão −/+
-  (`.moc-toggle`) que expande/recolhe a subárvore (estado local por nó; raiz sempre aberta;
-  inicia recolhida no 1º nível). Controles "Expandir/Recolher tudo" remontam a árvore via
-  `key`+`defaultExpanded`; a impressão expande tudo antes do `window.print()`.
+  (`.moc-toggle`) que expande/recolhe a subárvore (estado local por nó; a raiz — real ou
+  sintética — sempre aberta via a prop `isRoot`; demais nós iniciam recolhidos no 1º nível).
+  Controles "Expandir/Recolher tudo" remontam a árvore via `key`+`defaultExpanded`; a
+  impressão expande tudo antes do `window.print()`.
 - **Mapa mental** (`src/components/MinutaMindMap.jsx`) — grade de cartões, um por capítulo.
 Ambos clicáveis: abrem um painel lateral com as seções/competências do capítulo. Exporta via
 `window.print()` (`@media print`, Paisagem), ocultando navegação/controles/painel.
