@@ -126,6 +126,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
     plugins: [react(), serveDatabase(), copyDatabaseOnBuild(), geminiDevApi(env.GEMINI_API_KEY)],
-    server: { port: 5173 },
+    // host: true + allowedHosts: true permitem acesso via túnel (cloudflared) para testar no celular.
+    server: { port: 5173, host: true, allowedHosts: true },
   }
 })
