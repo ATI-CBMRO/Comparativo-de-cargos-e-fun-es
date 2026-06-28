@@ -22053,7 +22053,7 @@
           "cbm": "CBMGO",
           "region": "Centro-Oeste",
           "provenance": "curado",
-          "sourceLabel": "cf. CBMGO, Lei nº 18.305/2013, Art. 17",
+          "sourceLabel": "cf. CBMGO, Lei nº 18.305/2013, Art. 17; cf. CBMGO, Lei nº 18.305/2013, Art. 18",
           "note": null,
           "organs": [
             {
@@ -22672,51 +22672,6 @@
               ]
             }
           ],
-          "lobProvenance": "automatico"
-        },
-        {
-          "id": "rs",
-          "name": "Rio Grande do Sul",
-          "abbr": "RS",
-          "cbm": "CBMRS",
-          "region": "Sul",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Assessoria de Operações, Defesa Civil e Serviços Civis Auxiliares de Bombeiro",
-              "abbreviation": "AODC",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "Órgão de planejamento, direção, controle e execução das atividades relacionadas a operações, defesa civil e serviços civis e auxiliares de bombeiro (Regimento Interno, Art. 37)"
-              ],
-              "desdobramentos": [
-                "Divisão Administrativa (DAdm/AODC)",
-                "Divisão de Operações e Defesa Civil (DODC/AODC)",
-                "Divisão de Serviços Civis Auxiliares (DSCAB/AODC)",
-                "Divisão de Monitoramento Operacional (DMO/AODC)",
-                "Divisão de Operações Aéreas (DOA/AODC)"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Assessor de Operações, Defesa Civil e Serviços Civis Auxiliares (AODC)",
-                  "requisito": "",
-                  "subordinadoA": "Comando-Geral",
-                  "atribuicoes": [
-                    "Gestão tática de planejamento, direção, organização e controle de operações"
-                  ],
-                  "desdobramentos": [
-                    "Divisão de Operações e Defesa Civil",
-                    "Divisão de Serviços Civis e Auxiliares",
-                    "Divisão de Monitoramento Operacional",
-                    "Divisão de Operações Aéreas"
-                  ]
-                }
-              ]
-            }
-          ],
-          "lobOrgans": [],
           "lobProvenance": "automatico"
         },
         {
@@ -23503,27 +23458,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Gabinete do Subcomando-Geral",
-              "abbreviation": "Gab/SCG",
-              "subordinadoA": "Subcomando-Geral",
-              "atribuicoes": [
-                "O Gabinete do Subcomando-Geral tem por finalidade prestar assistência ao Subcomandante-Geral do Corpo de Bombeiros Militar da Bahia em suas tarefas técnicas e administrativas (Art. 14)",
-                "As atividades do Gabinete do Subcomando-Geral serão exercidas por um oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Oficial do Gabinete do Subcomando-Geral",
-                  "requisito": "Oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)",
-                  "subordinadoA": "Subcomandante-Geral",
-                  "atribuicoes": [
-                    "Exercer as atividades do Gabinete do Subcomando-Geral (Art. 14 §único)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
             }
           ],
           "lobOrgans": [
@@ -23542,27 +23476,6 @@
                   "subordinadoA": "Comandante-Geral",
                   "atribuicoes": [
                     "Exercer as atividades do Gabinete do Comando-Geral (Art. 12 §único)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Subcomando-Geral",
-              "abbreviation": "Gab/SCG",
-              "subordinadoA": "Subcomando-Geral",
-              "atribuicoes": [
-                "O Gabinete do Subcomando-Geral tem por finalidade prestar assistência ao Subcomandante-Geral do Corpo de Bombeiros Militar da Bahia em suas tarefas técnicas e administrativas (Art. 14)",
-                "As atividades do Gabinete do Subcomando-Geral serão exercidas por um oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Oficial do Gabinete do Subcomando-Geral",
-                  "requisito": "Oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)",
-                  "subordinadoA": "Subcomandante-Geral",
-                  "atribuicoes": [
-                    "Exercer as atividades do Gabinete do Subcomando-Geral (Art. 14 §único)"
                   ],
                   "desdobramentos": []
                 }
@@ -23800,35 +23713,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Gabinete do Subcomandante Geral",
-              "abbreviation": "GSCMDG",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "Ao Gabinete do Subcomandante Geral do Corpo de Bombeiros Militar, compete assistir diretamente o Gabinete do Comandante Geral do Corpo de Bombeiros Militar no cumprimento dos seus objetivos, sendo o Subcomandante Geral do Corpo de Bombeiros Militar o substituto legal do Comandante Geral do Corpo de Bombeiros Militar. (Art. 16)",
-                "I – assessorar o CMTG na coordenação do funcionamento da Corporação;",
-                "II – estabelecer o expediente da Corporação;",
-                "III – exercer a competência disciplinar e a polícia judiciária militar que lhe são afetas;",
-                "IV – substituir o CMTG nos eventuais impedimentos;",
-                "V – supervisionar a garantia da hierarquia e disciplina da Corporação;",
-                "VI – supervisionar os trabalhos dos órgãos de direção setorial;",
-                "VII – supervisionar os trabalhos dos órgãos de execução, em nível estratégico."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Subcomandante Geral",
-                  "requisito": "Coronel da ativa do QOEM; honras de Secretário Executivo de Estado",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [
-                    "Garantia da hierarquia e disciplina; principal assessor do CMTG",
-                    "Substituto legal do Comandante Geral",
-                    "Supervisionar os órgãos de direção setorial e de execução (nível estratégico)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
             }
           ],
           "lobOrgans": [
@@ -23847,35 +23731,6 @@
                   "subordinadoA": "Comandante Geral",
                   "atribuicoes": [
                     "Assistência direta ao Comandante Geral e ao Subcomandante Geral (Art. 18)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Subcomandante Geral",
-              "abbreviation": "GSCMDG",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "Ao Gabinete do Subcomandante Geral do Corpo de Bombeiros Militar, compete assistir diretamente o Gabinete do Comandante Geral do Corpo de Bombeiros Militar no cumprimento dos seus objetivos, sendo o Subcomandante Geral do Corpo de Bombeiros Militar o substituto legal do Comandante Geral do Corpo de Bombeiros Militar. (Art. 16)",
-                "I – assessorar o CMTG na coordenação do funcionamento da Corporação;",
-                "II – estabelecer o expediente da Corporação;",
-                "III – exercer a competência disciplinar e a polícia judiciária militar que lhe são afetas;",
-                "IV – substituir o CMTG nos eventuais impedimentos;",
-                "V – supervisionar a garantia da hierarquia e disciplina da Corporação;",
-                "VI – supervisionar os trabalhos dos órgãos de direção setorial;",
-                "VII – supervisionar os trabalhos dos órgãos de execução, em nível estratégico."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Subcomandante Geral",
-                  "requisito": "Coronel da ativa do QOEM; honras de Secretário Executivo de Estado",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [
-                    "Garantia da hierarquia e disciplina; principal assessor do CMTG",
-                    "Substituto legal do Comandante Geral",
-                    "Supervisionar os órgãos de direção setorial e de execução (nível estratégico)"
                   ],
                   "desdobramentos": []
                 }
@@ -24001,33 +23856,6 @@
                   "desdobramentos": []
                 }
               ]
-            },
-            {
-              "name": "Gabinete do Subcomandante-Geral",
-              "abbreviation": "GAB.SUBCMT",
-              "subordinadoA": "Subcomandante-Geral",
-              "atribuicoes": [
-                "Ao Gabinete do Subcomando-Geral compete assessorar o Subcomandante Geral nos assuntos relativos à justiça e disciplina bem como supervisionar os serviços diários desenvolvidos pela Corporação. (Art. 24, Lei nº 5.949/2009)"
-              ],
-              "desdobramentos": [
-                "Chefe",
-                "Comissão de Promoções de Praças",
-                "Ajudante de Ordens",
-                "Assessor Técnico II",
-                "Assessor Técnico I",
-                "Assistência de Serviços I"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Gabinete do Subcomandante-Geral",
-                  "requisito": "Oficial do CBMEPI",
-                  "subordinadoA": "Subcomandante-Geral",
-                  "atribuicoes": [
-                    "Assessora o SCG nos assuntos de justiça e disciplina e supervisiona os serviços diários da Corporação (Art. 24, 5.949)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
             }
           ],
           "lobOrgans": [
@@ -24055,33 +23883,6 @@
                   "subordinadoA": "Comandante-Geral",
                   "atribuicoes": [
                     "Assessora o CG nos assuntos de controle interno e produz informações estratégicas (Art. 23, 5.949)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Subcomandante-Geral",
-              "abbreviation": "GAB.SUBCMT",
-              "subordinadoA": "Subcomandante-Geral",
-              "atribuicoes": [
-                "Ao Gabinete do Subcomando-Geral compete assessorar o Subcomandante Geral nos assuntos relativos à justiça e disciplina bem como supervisionar os serviços diários desenvolvidos pela Corporação. (Art. 24, Lei nº 5.949/2009)"
-              ],
-              "desdobramentos": [
-                "Chefe",
-                "Comissão de Promoções de Praças",
-                "Ajudante de Ordens",
-                "Assessor Técnico II",
-                "Assessor Técnico I",
-                "Assistência de Serviços I"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Gabinete do Subcomandante-Geral",
-                  "requisito": "Oficial do CBMEPI",
-                  "subordinadoA": "Subcomandante-Geral",
-                  "atribuicoes": [
-                    "Assessora o SCG nos assuntos de justiça e disciplina e supervisiona os serviços diários da Corporação (Art. 24, 5.949)"
                   ],
                   "desdobramentos": []
                 }

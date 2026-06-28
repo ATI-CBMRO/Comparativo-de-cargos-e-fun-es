@@ -116,23 +116,28 @@ def curated_states_for(organ_key, dpo_cot, meta):
                 "organs": [_strip_organ(o) for o in organs],
             }
 
-    # 2) Competências curadas (ENRICHMENT_ORGAN) pivotadas por fonte
+    # 2) Competências curadas (ENRICHMENT_ORGAN) pivotadas por fonte.
+    # Acumula os rótulos DISTINTOS por estado (preservando a ordem) para creditar
+    # todos os artigos quando um estado contribui com mais de uma fonte ao órgão.
     by_state = {}
     for it in enrich_organ_for(organ_key):
         sid = state_from_source_label(it["source"])
         if not sid or sid == REF_ID:
             continue
-        by_state.setdefault(sid, {"items": [], "source": it["source"]})
-        by_state[sid]["items"].append(it["text"])
+        bucket = by_state.setdefault(sid, {"items": [], "sources": []})
+        bucket["items"].append(it["text"])
+        if it["source"] not in bucket["sources"]:
+            bucket["sources"].append(it["source"])
     for sid, info in by_state.items():
+        label = "; ".join(info["sources"])
         if sid in out:  # já tem estrutura curada -> anexa competências como órgão extra
             out[sid]["organs"].append(competencia_organ(info["items"]))
             if not out[sid].get("sourceLabel"):
-                out[sid]["sourceLabel"] = info["source"]
+                out[sid]["sourceLabel"] = label
         else:
             out[sid] = {
                 **meta.get(sid, _fallback_meta(sid)),
-                "provenance": "curado", "sourceLabel": info["source"], "note": None,
+                "provenance": "curado", "sourceLabel": label, "note": None,
                 "organs": [competencia_organ(info["items"])],
             }
 
