@@ -126,6 +126,100 @@
           "proposedText": "Órgão máximo executivo do CBMRO, incumbido da administração superior da Corporação."
         },
         {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cg/competencia",
+          "caput": "Compete à CG:",
+          "items": [
+            {
+              "text": "assessorar o Comandante-Geral nos níveis mais elevados das atividades desenvolvidas pela Instituição",
+              "source": "cf. CBMMT, RI, Art. 14"
+            },
+            {
+              "text": "realizar estudos e planejamentos, coordenando, fiscalizando e controlando todas as atividades da Instituição, para assegurar o seu mais eficiente emprego como um todo",
+              "source": "cf. CBMMT, RI, Art. 14"
+            },
+            {
+              "text": "elaborar diretrizes e legislações internas, planos e ordens a serem baixadas pelo Comandante-Geral, que acionam os órgãos de direção setorial, de apoio e de execução, no cumprimento de suas missões",
+              "source": "cf. CBMMT, RI, Art. 14"
+            },
+            {
+              "text": "supervisionar a execução dos planos e das ordens baixadas pelo Comandante-Geral, e tomar as providências necessárias à consecução dos objetivos da Instituição",
+              "source": "cf. CBMMT, RI, Art. 14"
+            },
+            {
+              "text": "supervisionar a parte disciplinar dos Bombeiros Militares",
+              "source": "cf. CBMMT, RI, Art. 14"
+            },
+            {
+              "text": "acompanhar o desenvolvimento das políticas salariais estabelecidos pelo Comandante-Geral, a fim de mantê-lo informado dos objetivos alcançados e de sua evolução",
+              "source": "cf. CBMMT, RI, Art. 14"
+            },
+            {
+              "text": "assessorar o Comandante-Geral na adoção de decisões técnicas e administrativas",
+              "source": "cf. CBMPA, RI, Art. 6"
+            },
+            {
+              "text": "auxiliar o Comandante-Geral na elaboração e cumprimento do plano de comando",
+              "source": "cf. CBMPA, RI, Art. 6"
+            },
+            {
+              "text": "acompanhar os programas, projetos e atividades da Corporação, mantendo o Comandante-Geral informado sobre o andamento das ações",
+              "source": "cf. CBMPA, RI, Art. 6"
+            },
+            {
+              "text": "elaborar a política militar, o planejamento estratégico e a orientação do preparo e emprego da Corporação, em conformidade com as diretrizes do Comando-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "realizar estudos e elaborar o planejamento geral das atividades da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "elaborar diretrizes e ordens do comando",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "elaborar e controlar a programação orçamentária e financeira da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "formular diretrizes para as áreas de: recursos humanos; logística, orçamento e finanças; ensino, pesquisa, ciência e tecnologia; segurança contra incêndio e emprego operacional; estatística e geoprocessamento; governança, gestão estratégica, gestão de riscos, gerenciamento de projetos e de processos",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "analisar e encaminhar propostas de regulamentos, normas, planos, ordens, manuais e outras diretrizes para apreciação do Comandante-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "desenvolver, coordenar, controlar e revisar a gestão estratégica do CBMDF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "estabelecer indicadores de qualidade e produtividade",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "sugerir temas de pesquisa aos cursos de carreira da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "consolidar o processo de tomadas de contas anual dos ordenadores de despesas da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "indicar os projetos estratégicos e de captação de recursos não contemplados no PARF, que serão validados pelo Alto Comando e aprovados pelo Comandante-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            },
+            {
+              "text": "validar o Plano de Contratações Anual - PCA do CBMDF elaborado pelo DEALF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"
+            }
+          ],
+          "proposedText": "assessorar o Comandante-Geral nos níveis mais elevados das atividades desenvolvidas pela Instituição\nrealizar estudos e planejamentos, coordenando, fiscalizando e controlando todas as atividades da Instituição, para assegurar o seu mais eficiente emprego como um todo\nelaborar diretrizes e legislações internas, planos e ordens a serem baixadas pelo Comandante-Geral, que acionam os órgãos de direção setorial, de apoio e de execução, no cumprimento de suas missões\nsupervisionar a execução dos planos e das ordens baixadas pelo Comandante-Geral, e tomar as providências necessárias à consecução dos objetivos da Instituição\nsupervisionar a parte disciplinar dos Bombeiros Militares\nacompanhar o desenvolvimento das políticas salariais estabelecidos pelo Comandante-Geral, a fim de mantê-lo informado dos objetivos alcançados e de sua evolução\nassessorar o Comandante-Geral na adoção de decisões técnicas e administrativas\nauxiliar o Comandante-Geral na elaboração e cumprimento do plano de comando\nacompanhar os programas, projetos e atividades da Corporação, mantendo o Comandante-Geral informado sobre o andamento das ações\nelaborar a política militar, o planejamento estratégico e a orientação do preparo e emprego da Corporação, em conformidade com as diretrizes do Comando-Geral\nrealizar estudos e elaborar o planejamento geral das atividades da Corporação\nelaborar diretrizes e ordens do comando\nelaborar e controlar a programação orçamentária e financeira da Corporação\nformular diretrizes para as áreas de: recursos humanos; logística, orçamento e finanças; ensino, pesquisa, ciência e tecnologia; segurança contra incêndio e emprego operacional; estatística e geoprocessamento; governança, gestão estratégica, gestão de riscos, gerenciamento de projetos e de processos\nanalisar e encaminhar propostas de regulamentos, normas, planos, ordens, manuais e outras diretrizes para apreciação do Comandante-Geral\ndesenvolver, coordenar, controlar e revisar a gestão estratégica do CBMDF\nestabelecer indicadores de qualidade e produtividade\nsugerir temas de pesquisa aos cursos de carreira da Corporação\nconsolidar o processo de tomadas de contas anual dos ordenadores de despesas da Corporação\nindicar os projetos estratégicos e de captação de recursos não contemplados no PARF, que serão validados pelo Alto Comando e aprovados pelo Comandante-Geral\nvalidar o Plano de Contratações Anual - PCA do CBMDF elaborado pelo DEALF"
+        },
+        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -252,9 +346,197 @@
             {
               "text": "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas Situações de Emergência ou Estado de Calamidade Pública.",
               "source": "ro"
+            },
+            {
+              "text": "promover, coordenar e supervisionar, no âmbito estadual, as ações de defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "elaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil os planos, programas e projetos com vistas à defesa permanente contra os desastres naturais ou provocados pelo homem, especialmente contra as secas e inundações",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "mobilizar recursos humanos e materiais necessários às ações de defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "elaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil as políticas e diretrizes da ação governamental de defesa civil e promover a sua implementação",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "promover estudos referentes às causas e possibilidades de ocorrência de desastres de qualquer origem, sua incidência, extensão e conseqüências",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "consolidar e compatibilizar planos e programas globais, regionais e setoriais, observadas as políticas e as diretrizes da ação governamental de defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "incentivar a criação e a implementação de Coordenadorias Municipais de Defesa Civil - COMDEC",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "sistematizar e integrar informações no âmbito do Sistema Estadual de Defesa Civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "definir e encaminhar à deliberação do Conselho Estadual de Defesa Civil as áreas e as ações prioritárias para investimentos que contribuam para minimizar a vulnerabilidade das cidades ou regiões do Estado",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "propor ao Governador do Estado a homologação de situação de emergência ou de estado de calamidade pública, obedecidos os critérios estabelecidos pelos Conselhos Nacional e Estadual de Defesa Civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "promover a capacitação de recursos humanos para as ações de defesa civil, em articulação com os órgãos estaduais e municipais especializados",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "propor ao Conselho Estadual de Defesa Civil a criação de comissões técnicas interinstitucionais para a realização de estudos, pesquisas e trabalhos especializados de interesse da defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "coordenar e controlar a distribuição de suprimentos às populações atingidas por desastres, em articulação com as Coordenadorias Regionais e Municipais de Defesa Civil e órgãos assistenciais integrantes do Sistema Estadual de Defesa Civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "criar grupos de trabalho com o objetivo de prestar o apoio técnico necessário à atuação dos órgãos e entidades na área de defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "receber, analisar e opinar sobre relatórios e pleitos relativos à declaração de situação de emergência e estado de calamidade pública",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "manter o órgão central do Sistema Nacional de Defesa Civil - SINDEC informado sobre a ocorrência de desastre e atividades de defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "prestar apoio técnico e administrativo ao Conselho Estadual de Defesa Civil e à Junta Administrativa do Fundo Estadual de Defesa Civil - FUNDEC, criado na forma da lei",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "coordenar e promover, em articulação com os municípios, a execução das ações conjuntas dos órgãos integrantes do Sistema Estadual de Defesa Civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "elaborar e apresentar ao órgão competente a proposta orçamentária destinada às atividades de defesa civil, na forma de legislação vigente",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "manter intercâmbio com os órgãos federais, estaduais e municipais de defesa civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "acompanhar e avaliar o desempenho do Sistema Estadual de Defesa Civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "apresentar o relatório anual de suas atividades",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "exercer outras ações, atividades e funções estabelecidas em lei, regulamento ou decisão do Conselho Estadual de Defesa Civil",
+              "source": "cf. CBMAL, RI, Art. 13"
+            },
+            {
+              "text": "elaborar planos de gestão operacional nos assuntos relacionados a defesa civil",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 27"
+            },
+            {
+              "text": "coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 27"
+            },
+            {
+              "text": "realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 27"
+            },
+            {
+              "text": "planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 27"
+            },
+            {
+              "text": "elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras definidas em regulamento",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 27"
+            },
+            {
+              "text": "articular e coordenar as ações de proteção e defesa civil no Estado do Espírito Santo, compreendendo: prevenção e preparação para desastres; assistência e socorro às vítimas das calamidades; restabelecimento de serviços essenciais; reconstrução; e realizar estudos e pesquisas sobre riscos e desastres",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "elaborar e implementar diretrizes, planos, programas e projetos para prevenção, preparação, mitigação, recuperação e respostas a desastres causados por ação da natureza e/ou do homem no âmbito do Estado",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "coordenar a elaboração do plano de contingência estadual de Proteção e Defesa Civil e fomentar a elaboração dos planos de contingência municipais",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "mobilizar recursos para prevenção, preparação, mitigação, resposta e recuperação dos desastres",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "disseminar a cultura de prevenção por meio da inclusão dos princípios de proteção e defesa civil na sociedade e do fomento, nos municípios",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "prestar informações à Secretaria Nacional de Proteção e Defesa Civil - SEPDEC ou órgão correspondente sobre as ocorrências de desastres e atividades de proteção e defesa civil no Estado",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "propor à autoridade competente a decretação ou a homologação de situação de emergência e de estado de calamidade pública",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "apoiar a União quando solicitado, no reconhecimento de situação de emergência e estado de calamidade pública",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "providenciar e gerenciar a distribuição e o abastecimento de suprimentos necessários nas ações de proteção e defesa civil",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "articular-se com as demais Secretarias de Estado para promoção das ações de proteção e defesa civil na região atingida",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "coordenar as ações estaduais de ajuda humanitária nacional e internacional",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "coordenar e promover, em articulação com os municípios, a implementação de ações conjuntas dos órgãos integrantes do SIEPDEC-ES",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "promover o intercâmbio técnico entre instituições e organizações nacionais e internacionais de proteção e defesa civil",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "promover a capacitação de pessoas para as ações de proteção civil, em articulação com órgãos do SIEPDEC-ES",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "fomentar o fortalecimento da estrutura de proteção e defesa civil municipal e regional",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "determinar a interdição de edificações, construções e áreas em situação considerada por profissional competente como sendo de risco para a vida humana",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "identificar e mapear as áreas de risco e realizar estudos de identificação de ameaças, suscetibilidades e vulnerabilidades, em articulação com a União e os Municípios",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "realizar o monitoramento meteorológico, hidrológico e geológico das áreas de risco, em articulação com a União e os Municípios",
+              "source": "cf. CBMES, NGA, Art. 3"
+            },
+            {
+              "text": "apoiar, sempre que necessário, os municípios no levantamento das áreas de risco, na elaboração dos Planos de Contingência de Proteção e Defesa Civil e na divulgação de protocolos de prevenção e alerta e de ações emergenciais",
+              "source": "cf. CBMES, NGA, Art. 3"
             }
           ],
-          "proposedText": "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas Situações de Emergência ou Estado de Calamidade Pública."
+          "proposedText": "Estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas Situações de Emergência ou Estado de Calamidade Pública.\npromover, coordenar e supervisionar, no âmbito estadual, as ações de defesa civil\nelaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil os planos, programas e projetos com vistas à defesa permanente contra os desastres naturais ou provocados pelo homem, especialmente contra as secas e inundações\nmobilizar recursos humanos e materiais necessários às ações de defesa civil\nelaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil as políticas e diretrizes da ação governamental de defesa civil e promover a sua implementação\npromover estudos referentes às causas e possibilidades de ocorrência de desastres de qualquer origem, sua incidência, extensão e conseqüências\nconsolidar e compatibilizar planos e programas globais, regionais e setoriais, observadas as políticas e as diretrizes da ação governamental de defesa civil\nincentivar a criação e a implementação de Coordenadorias Municipais de Defesa Civil - COMDEC\nsistematizar e integrar informações no âmbito do Sistema Estadual de Defesa Civil\ndefinir e encaminhar à deliberação do Conselho Estadual de Defesa Civil as áreas e as ações prioritárias para investimentos que contribuam para minimizar a vulnerabilidade das cidades ou regiões do Estado\npropor ao Governador do Estado a homologação de situação de emergência ou de estado de calamidade pública, obedecidos os critérios estabelecidos pelos Conselhos Nacional e Estadual de Defesa Civil\npromover a capacitação de recursos humanos para as ações de defesa civil, em articulação com os órgãos estaduais e municipais especializados\npropor ao Conselho Estadual de Defesa Civil a criação de comissões técnicas interinstitucionais para a realização de estudos, pesquisas e trabalhos especializados de interesse da defesa civil\ncoordenar e controlar a distribuição de suprimentos às populações atingidas por desastres, em articulação com as Coordenadorias Regionais e Municipais de Defesa Civil e órgãos assistenciais integrantes do Sistema Estadual de Defesa Civil\ncriar grupos de trabalho com o objetivo de prestar o apoio técnico necessário à atuação dos órgãos e entidades na área de defesa civil\nreceber, analisar e opinar sobre relatórios e pleitos relativos à declaração de situação de emergência e estado de calamidade pública\nmanter o órgão central do Sistema Nacional de Defesa Civil - SINDEC informado sobre a ocorrência de desastre e atividades de defesa civil\nprestar apoio técnico e administrativo ao Conselho Estadual de Defesa Civil e à Junta Administrativa do Fundo Estadual de Defesa Civil - FUNDEC, criado na forma da lei\ncoordenar e promover, em articulação com os municípios, a execução das ações conjuntas dos órgãos integrantes do Sistema Estadual de Defesa Civil\nelaborar e apresentar ao órgão competente a proposta orçamentária destinada às atividades de defesa civil, na forma de legislação vigente\nmanter intercâmbio com os órgãos federais, estaduais e municipais de defesa civil\nacompanhar e avaliar o desempenho do Sistema Estadual de Defesa Civil\napresentar o relatório anual de suas atividades\nexercer outras ações, atividades e funções estabelecidas em lei, regulamento ou decisão do Conselho Estadual de Defesa Civil\nelaborar planos de gestão operacional nos assuntos relacionados a defesa civil\ncoordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil\nrealizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução\nplanejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco\nelaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras definidas em regulamento\narticular e coordenar as ações de proteção e defesa civil no Estado do Espírito Santo, compreendendo: prevenção e preparação para desastres; assistência e socorro às vítimas das calamidades; restabelecimento de serviços essenciais; reconstrução; e realizar estudos e pesquisas sobre riscos e desastres\nelaborar e implementar diretrizes, planos, programas e projetos para prevenção, preparação, mitigação, recuperação e respostas a desastres causados por ação da natureza e/ou do homem no âmbito do Estado\ncoordenar a elaboração do plano de contingência estadual de Proteção e Defesa Civil e fomentar a elaboração dos planos de contingência municipais\nmobilizar recursos para prevenção, preparação, mitigação, resposta e recuperação dos desastres\ndisseminar a cultura de prevenção por meio da inclusão dos princípios de proteção e defesa civil na sociedade e do fomento, nos municípios\nprestar informações à Secretaria Nacional de Proteção e Defesa Civil - SEPDEC ou órgão correspondente sobre as ocorrências de desastres e atividades de proteção e defesa civil no Estado\npropor à autoridade competente a decretação ou a homologação de situação de emergência e de estado de calamidade pública\napoiar a União quando solicitado, no reconhecimento de situação de emergência e estado de calamidade pública\nprovidenciar e gerenciar a distribuição e o abastecimento de suprimentos necessários nas ações de proteção e defesa civil\narticular-se com as demais Secretarias de Estado para promoção das ações de proteção e defesa civil na região atingida\ncoordenar as ações estaduais de ajuda humanitária nacional e internacional\ncoordenar e promover, em articulação com os municípios, a implementação de ações conjuntas dos órgãos integrantes do SIEPDEC-ES\npromover o intercâmbio técnico entre instituições e organizações nacionais e internacionais de proteção e defesa civil\npromover a capacitação de pessoas para as ações de proteção civil, em articulação com órgãos do SIEPDEC-ES\nfomentar o fortalecimento da estrutura de proteção e defesa civil municipal e regional\ndeterminar a interdição de edificações, construções e áreas em situação considerada por profissional competente como sendo de risco para a vida humana\nidentificar e mapear as áreas de risco e realizar estudos de identificação de ameaças, suscetibilidades e vulnerabilidades, em articulação com a União e os Municípios\nrealizar o monitoramento meteorológico, hidrológico e geológico das áreas de risco, em articulação com a União e os Municípios\napoiar, sempre que necessário, os municípios no levantamento das áreas de risco, na elaboração dos Planos de Contingência de Proteção e Defesa Civil e na divulgação de protocolos de prevenção e alerta e de ações emergenciais"
         },
         {
           "id": "organizacao",
@@ -332,6 +614,92 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:condeg/finalidade",
           "proposedText": "Órgão responsável pelo estudo, planejamento e assessoria consultiva do Comandante-Geral, pertinente ao processo decisório compartilhado sobre assuntos relevantes que envolvam questões institucionais e de segurança pública da Corporação."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:condeg/competencia",
+          "caput": "Compete à CONDEG:",
+          "items": [
+            {
+              "text": "planejar e executar as atividades de administração do pessoal Bombeiro Militar e Civil da Corporação",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "estudar, emitir parecer e elaborar expediente relativo aos assuntos que lhe foram atribuídos",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "assessorar nos assuntos referentes ao planejamento, coordenação e fiscalização das atividades operacionais e de administração da corporação",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "propor, com base nos estudos realizados, as medidas necessárias ao aperfeiçoamento das atividades técnicas especializadas de bombeiros",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "obter informações e fazer levantamento das rotinas e procedimentos operacionais, objetivando a melhor eficácia na execução do serviço e tarefas especializadas a cargo da Corporação",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "acompanhar a evolução doutrinária dos assuntos de sua competência, bem como realizar estudos para definir, consolidar e aprimorar a doutrina de informações de interesse da instituição",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "solucionar processos administrativos e submetê-los à decisão do Comandante Geral, devidamente instruídos, os que lhe escapem à competência",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "regular as rotinas e procedimentos relacionados com direitos e deveres e incentivos de pessoal",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "supervisionar, dirigir e coordenar os trabalhos da Corporação, tendo em vista a unidade de ação no cumprimento de diretrizes",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "cuidar do emprego de pessoal de acordo com as normas existentes",
+              "source": "cf. CBMAL, RI, Art. 11"
+            },
+            {
+              "text": "apresentar propostas sobre matérias de cunho estratégico que promovam o aperfeiçoamento da instituição",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "sugerir propostas que alterem a estrutura organizacional da instituição",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "avaliar o emprego da instituição orientando a racionalização na aplicação de recursos e a maximização dos resultados em benefício da sociedade",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "examinar a Política Estadual de Segurança Pública, em particular na parcela constitucional que compete ao Corpo de Bombeiros Militar e apresentar soluções para o aperfeiçoamento do sistema",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "avaliar mudanças na política de emprego tático e técnico das diversas Unidades Bombeiro Militar que integram a Corporação, inclusive a articulação e desdobramento das mesmas, visando ao cumprimento das missões constitucionais",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "analisar matérias de relevância, relativas à Corporação, dependentes de decisão governamental",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "propor a criação de comissões técnicas e grupos de trabalho para a realização de pesquisas e estudos estratégicos e sistêmicos sobre assuntos de ordem técnica de interesse do Corpo de Bombeiros Militar",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "aprovar proposta de denominação histórica de Unidades Bombeiro Militar",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            },
+            {
+              "text": "apreciar outros assuntos do interesse da Corporação colocados em pauta pelo Comandante-Geral",
+              "source": "cf. CBMMT, LC nº 775/2023, Art. 15"
+            }
+          ],
+          "proposedText": "planejar e executar as atividades de administração do pessoal Bombeiro Militar e Civil da Corporação\nestudar, emitir parecer e elaborar expediente relativo aos assuntos que lhe foram atribuídos\nassessorar nos assuntos referentes ao planejamento, coordenação e fiscalização das atividades operacionais e de administração da corporação\npropor, com base nos estudos realizados, as medidas necessárias ao aperfeiçoamento das atividades técnicas especializadas de bombeiros\nobter informações e fazer levantamento das rotinas e procedimentos operacionais, objetivando a melhor eficácia na execução do serviço e tarefas especializadas a cargo da Corporação\nacompanhar a evolução doutrinária dos assuntos de sua competência, bem como realizar estudos para definir, consolidar e aprimorar a doutrina de informações de interesse da instituição\nsolucionar processos administrativos e submetê-los à decisão do Comandante Geral, devidamente instruídos, os que lhe escapem à competência\nregular as rotinas e procedimentos relacionados com direitos e deveres e incentivos de pessoal\nsupervisionar, dirigir e coordenar os trabalhos da Corporação, tendo em vista a unidade de ação no cumprimento de diretrizes\ncuidar do emprego de pessoal de acordo com as normas existentes\napresentar propostas sobre matérias de cunho estratégico que promovam o aperfeiçoamento da instituição\nsugerir propostas que alterem a estrutura organizacional da instituição\navaliar o emprego da instituição orientando a racionalização na aplicação de recursos e a maximização dos resultados em benefício da sociedade\nexaminar a Política Estadual de Segurança Pública, em particular na parcela constitucional que compete ao Corpo de Bombeiros Militar e apresentar soluções para o aperfeiçoamento do sistema\navaliar mudanças na política de emprego tático e técnico das diversas Unidades Bombeiro Militar que integram a Corporação, inclusive a articulação e desdobramento das mesmas, visando ao cumprimento das missões constitucionais\nanalisar matérias de relevância, relativas à Corporação, dependentes de decisão governamental\npropor a criação de comissões técnicas e grupos de trabalho para a realização de pesquisas e estudos estratégicos e sistêmicos sobre assuntos de ordem técnica de interesse do Corpo de Bombeiros Militar\naprovar proposta de denominação histórica de Unidades Bombeiro Militar\napreciar outros assuntos do interesse da Corporação colocados em pauta pelo Comandante-Geral"
         },
         {
           "id": "organizacao",

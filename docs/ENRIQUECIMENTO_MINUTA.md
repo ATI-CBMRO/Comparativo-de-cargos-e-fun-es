@@ -42,6 +42,41 @@ GBM. Definido em `GUARNICAO_CHAPTER` (`minuta_enrichment.py`), montado por
 > Art. 54 (DESEG, I–VIII) → COT. O `COT_MAP['df']` era vazio no comparativo
 > DPO×COT (a LOB do DF não discrimina órgão técnico), mas o RI detalha o DESEG.
 
+## Frente 2 — Bloco 1: Direção Geral/Colegiada (2026-06-28)
+
+Curadoria dos 3 órgãos de direção geral/colegiada que apareciam com "0 estados" no
+`/comparar`: `cg` (Comando Geral), `depdec` (Diretoria Estadual de Proteção e Defesa
+Civil) e `condeg` (Conselho Deliberativo de Estratégia e Gestão). Só entrou competência
+**enumerada e verbatim** do **órgão/colegiado como unidade** — as atribuições pessoais do
+Comandante-Geral (cargo) ficaram de fora do comparativo de `cg`.
+
+| Estado | Base legal | Órgão (organ_key) | Itens |
+|---|---|---|---|
+| CBMMT | RI, Art. 14 | Estado Maior-Geral (cg) | 6 |
+| CBMPA | RI, Art. 6 | Comando-Geral / assessoramento (cg) | 3 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 58 | Estado-Maior-Geral (cg) | 12 |
+| CBMAL | RI, Art. 13 | Coordenadoria Estadual de Defesa Civil (depdec) | 23 |
+| CBMGO | Lei nº 18.305/2013, Art. 27 | Comando de Operações de Defesa Civil (depdec) | 5 |
+| CBMES | NGA, Art. 3 | Coordenadoria Estadual de Proteção e Defesa Civil (depdec) | 19 |
+| CBMAL | RI, Art. 11 | Conselho de Políticas Estratégicas (condeg) | 10 |
+| CBMMT | LC nº 775/2023, Art. 15 | Conselho Superior de Bombeiros Militar (condeg) | 9 |
+
+Avaliados e **descartados** neste bloco (motivo):
+
+- **cg — CBMES, NGA, Art. 4**: caput definicional ("Compete ao Comando-Geral o
+  planejamento, a coordenação, a orientação e o controle da Corporação…") sem rol de
+  incisos. Art. 5 enumera atribuições do **Comandante-Geral (cargo)**, não do órgão.
+- **depdec — CBMMA (Maranhão), LOB Art. 54**: meramente remissivo ("a Coordenadoria
+  Estadual de Proteção e Defesa Civil… serão estabelecidos em lei específica"); sem rol.
+- **depdec — CBMAM (Amazonas), LOB Art. 14**: caput de finalidade da CEDEC, sem incisos
+  de competência da unidade enumerados.
+- **condeg — CBMMT, RI, Art. 10**: duplica o conteúdo da LOB Art. 15 (mesmo Conselho
+  Superior); usada a fonte de hierarquia superior (LC) e descartada a redundância do RI.
+- **condeg — demais estados**: a maioria das LOBs/RIs só traz **composição** do conselho
+  (membros) e/ou as atribuições do **presidente**, sem enumerar competências do colegiado
+  como órgão. `condeg` (Conselho Deliberativo de Estratégia e Gestão) é raro fora do RO;
+  os dois achados (AL/MT) são os equivalentes mais próximos com rol verbatim.
+
 ## Avaliadas e descartadas (com motivo)
 
 **LOBs novas pós-2021 não curadas** — varredura em 2026-06-19. Todas seguem o padrão

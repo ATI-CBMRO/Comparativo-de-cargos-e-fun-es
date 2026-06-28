@@ -310,6 +310,199 @@ _DF_DESEG = [
 ]
 
 
+# ── CBMMT, RI, Art. 14 — Estado Maior-Geral (cg) ──
+_MT_EMG = [
+    "assessorar o Comandante-Geral nos níveis mais elevados das atividades desenvolvidas pela "
+    "Instituição",
+    "realizar estudos e planejamentos, coordenando, fiscalizando e controlando todas as atividades "
+    "da Instituição, para assegurar o seu mais eficiente emprego como um todo",
+    "elaborar diretrizes e legislações internas, planos e ordens a serem baixadas pelo "
+    "Comandante-Geral, que acionam os órgãos de direção setorial, de apoio e de execução, no "
+    "cumprimento de suas missões",
+    "supervisionar a execução dos planos e das ordens baixadas pelo Comandante-Geral, e tomar as "
+    "providências necessárias à consecução dos objetivos da Instituição",
+    "supervisionar a parte disciplinar dos Bombeiros Militares",
+    "acompanhar o desenvolvimento das políticas salariais estabelecidos pelo Comandante-Geral, a "
+    "fim de mantê-lo informado dos objetivos alcançados e de sua evolução",
+]
+
+# ── CBMPA, RI, Art. 6 — Comando-Geral (cg), órgão de assessoramento ao Comandante-Geral ──
+_PA_CG = [
+    "assessorar o Comandante-Geral na adoção de decisões técnicas e administrativas",
+    "auxiliar o Comandante-Geral na elaboração e cumprimento do plano de comando",
+    "acompanhar os programas, projetos e atividades da Corporação, mantendo o Comandante-Geral "
+    "informado sobre o andamento das ações",
+]
+
+# ── CBMDF, RI (Portaria nº 24/2020), Art. 58 — Estado-Maior-Geral (cg) ──
+_DF_EMG = [
+    "elaborar a política militar, o planejamento estratégico e a orientação do preparo e emprego "
+    "da Corporação, em conformidade com as diretrizes do Comando-Geral",
+    "realizar estudos e elaborar o planejamento geral das atividades da Corporação",
+    "elaborar diretrizes e ordens do comando",
+    "elaborar e controlar a programação orçamentária e financeira da Corporação",
+    "formular diretrizes para as áreas de: recursos humanos; logística, orçamento e finanças; "
+    "ensino, pesquisa, ciência e tecnologia; segurança contra incêndio e emprego operacional; "
+    "estatística e geoprocessamento; governança, gestão estratégica, gestão de riscos, "
+    "gerenciamento de projetos e de processos",
+    "analisar e encaminhar propostas de regulamentos, normas, planos, ordens, manuais e outras "
+    "diretrizes para apreciação do Comandante-Geral",
+    "desenvolver, coordenar, controlar e revisar a gestão estratégica do CBMDF",
+    "estabelecer indicadores de qualidade e produtividade",
+    "sugerir temas de pesquisa aos cursos de carreira da Corporação",
+    "consolidar o processo de tomadas de contas anual dos ordenadores de despesas da Corporação",
+    "indicar os projetos estratégicos e de captação de recursos não contemplados no PARF, que "
+    "serão validados pelo Alto Comando e aprovados pelo Comandante-Geral",
+    "validar o Plano de Contratações Anual - PCA do CBMDF elaborado pelo DEALF",
+]
+
+# ── CBMAL, RI, Art. 13 — Coordenadoria Estadual de Defesa Civil (depdec) ──
+_AL_CEDEC = [
+    "promover, coordenar e supervisionar, no âmbito estadual, as ações de defesa civil",
+    "elaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil os planos, programas "
+    "e projetos com vistas à defesa permanente contra os desastres naturais ou provocados pelo "
+    "homem, especialmente contra as secas e inundações",
+    "mobilizar recursos humanos e materiais necessários às ações de defesa civil",
+    "elaborar e encaminhar à deliberação do Conselho Estadual de Defesa Civil as políticas e "
+    "diretrizes da ação governamental de defesa civil e promover a sua implementação",
+    "promover estudos referentes às causas e possibilidades de ocorrência de desastres de qualquer "
+    "origem, sua incidência, extensão e conseqüências",
+    "consolidar e compatibilizar planos e programas globais, regionais e setoriais, observadas as "
+    "políticas e as diretrizes da ação governamental de defesa civil",
+    "incentivar a criação e a implementação de Coordenadorias Municipais de Defesa Civil - COMDEC",
+    "sistematizar e integrar informações no âmbito do Sistema Estadual de Defesa Civil",
+    "definir e encaminhar à deliberação do Conselho Estadual de Defesa Civil as áreas e as ações "
+    "prioritárias para investimentos que contribuam para minimizar a vulnerabilidade das cidades ou "
+    "regiões do Estado",
+    "propor ao Governador do Estado a homologação de situação de emergência ou de estado de "
+    "calamidade pública, obedecidos os critérios estabelecidos pelos Conselhos Nacional e Estadual "
+    "de Defesa Civil",
+    "promover a capacitação de recursos humanos para as ações de defesa civil, em articulação com "
+    "os órgãos estaduais e municipais especializados",
+    "propor ao Conselho Estadual de Defesa Civil a criação de comissões técnicas "
+    "interinstitucionais para a realização de estudos, pesquisas e trabalhos especializados de "
+    "interesse da defesa civil",
+    "coordenar e controlar a distribuição de suprimentos às populações atingidas por desastres, em "
+    "articulação com as Coordenadorias Regionais e Municipais de Defesa Civil e órgãos "
+    "assistenciais integrantes do Sistema Estadual de Defesa Civil",
+    "criar grupos de trabalho com o objetivo de prestar o apoio técnico necessário à atuação dos "
+    "órgãos e entidades na área de defesa civil",
+    "receber, analisar e opinar sobre relatórios e pleitos relativos à declaração de situação de "
+    "emergência e estado de calamidade pública",
+    "manter o órgão central do Sistema Nacional de Defesa Civil - SINDEC informado sobre a "
+    "ocorrência de desastre e atividades de defesa civil",
+    "prestar apoio técnico e administrativo ao Conselho Estadual de Defesa Civil e à Junta "
+    "Administrativa do Fundo Estadual de Defesa Civil - FUNDEC, criado na forma da lei",
+    "coordenar e promover, em articulação com os municípios, a execução das ações conjuntas dos "
+    "órgãos integrantes do Sistema Estadual de Defesa Civil",
+    "elaborar e apresentar ao órgão competente a proposta orçamentária destinada às atividades de "
+    "defesa civil, na forma de legislação vigente",
+    "manter intercâmbio com os órgãos federais, estaduais e municipais de defesa civil",
+    "acompanhar e avaliar o desempenho do Sistema Estadual de Defesa Civil",
+    "apresentar o relatório anual de suas atividades",
+    "exercer outras ações, atividades e funções estabelecidas em lei, regulamento ou decisão do "
+    "Conselho Estadual de Defesa Civil",
+]
+
+# ── CBMGO, Lei nº 18.305/2013, Art. 27 — Comando de Operações de Defesa Civil (depdec) ──
+_GO_CODEC = [
+    "elaborar planos de gestão operacional nos assuntos relacionados a defesa civil",
+    "coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a "
+    "defesa civil",
+    "realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de "
+    "execução",
+    "planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções "
+    "nas edificações e áreas de risco",
+    "elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, "
+    "além de outras definidas em regulamento",
+]
+
+# ── CBMES, NGA, Art. 3 — Coordenadoria Estadual de Proteção e Defesa Civil (depdec) ──
+_ES_CEPDEC = [
+    "articular e coordenar as ações de proteção e defesa civil no Estado do Espírito Santo, "
+    "compreendendo: prevenção e preparação para desastres; assistência e socorro às vítimas das "
+    "calamidades; restabelecimento de serviços essenciais; reconstrução; e realizar estudos e "
+    "pesquisas sobre riscos e desastres",
+    "elaborar e implementar diretrizes, planos, programas e projetos para prevenção, preparação, "
+    "mitigação, recuperação e respostas a desastres causados por ação da natureza e/ou do homem no "
+    "âmbito do Estado",
+    "coordenar a elaboração do plano de contingência estadual de Proteção e Defesa Civil e fomentar "
+    "a elaboração dos planos de contingência municipais",
+    "mobilizar recursos para prevenção, preparação, mitigação, resposta e recuperação dos desastres",
+    "disseminar a cultura de prevenção por meio da inclusão dos princípios de proteção e defesa "
+    "civil na sociedade e do fomento, nos municípios",
+    "prestar informações à Secretaria Nacional de Proteção e Defesa Civil - SEPDEC ou órgão "
+    "correspondente sobre as ocorrências de desastres e atividades de proteção e defesa civil no "
+    "Estado",
+    "propor à autoridade competente a decretação ou a homologação de situação de emergência e de "
+    "estado de calamidade pública",
+    "apoiar a União quando solicitado, no reconhecimento de situação de emergência e estado de "
+    "calamidade pública",
+    "providenciar e gerenciar a distribuição e o abastecimento de suprimentos necessários nas ações "
+    "de proteção e defesa civil",
+    "articular-se com as demais Secretarias de Estado para promoção das ações de proteção e defesa "
+    "civil na região atingida",
+    "coordenar as ações estaduais de ajuda humanitária nacional e internacional",
+    "coordenar e promover, em articulação com os municípios, a implementação de ações conjuntas dos "
+    "órgãos integrantes do SIEPDEC-ES",
+    "promover o intercâmbio técnico entre instituições e organizações nacionais e internacionais de "
+    "proteção e defesa civil",
+    "promover a capacitação de pessoas para as ações de proteção civil, em articulação com órgãos "
+    "do SIEPDEC-ES",
+    "fomentar o fortalecimento da estrutura de proteção e defesa civil municipal e regional",
+    "determinar a interdição de edificações, construções e áreas em situação considerada por "
+    "profissional competente como sendo de risco para a vida humana",
+    "identificar e mapear as áreas de risco e realizar estudos de identificação de ameaças, "
+    "suscetibilidades e vulnerabilidades, em articulação com a União e os Municípios",
+    "realizar o monitoramento meteorológico, hidrológico e geológico das áreas de risco, em "
+    "articulação com a União e os Municípios",
+    "apoiar, sempre que necessário, os municípios no levantamento das áreas de risco, na elaboração "
+    "dos Planos de Contingência de Proteção e Defesa Civil e na divulgação de protocolos de "
+    "prevenção e alerta e de ações emergenciais",
+]
+
+# ── CBMAL, RI, Art. 11 — Conselho de Políticas Estratégicas (condeg) ──
+_AL_CPE = [
+    "planejar e executar as atividades de administração do pessoal Bombeiro Militar e Civil da "
+    "Corporação",
+    "estudar, emitir parecer e elaborar expediente relativo aos assuntos que lhe foram atribuídos",
+    "assessorar nos assuntos referentes ao planejamento, coordenação e fiscalização das atividades "
+    "operacionais e de administração da corporação",
+    "propor, com base nos estudos realizados, as medidas necessárias ao aperfeiçoamento das "
+    "atividades técnicas especializadas de bombeiros",
+    "obter informações e fazer levantamento das rotinas e procedimentos operacionais, objetivando a "
+    "melhor eficácia na execução do serviço e tarefas especializadas a cargo da Corporação",
+    "acompanhar a evolução doutrinária dos assuntos de sua competência, bem como realizar estudos "
+    "para definir, consolidar e aprimorar a doutrina de informações de interesse da instituição",
+    "solucionar processos administrativos e submetê-los à decisão do Comandante Geral, devidamente "
+    "instruídos, os que lhe escapem à competência",
+    "regular as rotinas e procedimentos relacionados com direitos e deveres e incentivos de pessoal",
+    "supervisionar, dirigir e coordenar os trabalhos da Corporação, tendo em vista a unidade de "
+    "ação no cumprimento de diretrizes",
+    "cuidar do emprego de pessoal de acordo com as normas existentes",
+]
+
+# ── CBMMT, LC nº 775/2023, Art. 15 — Conselho Superior de Bombeiros Militar (condeg) ──
+_MT_CSBM = [
+    "apresentar propostas sobre matérias de cunho estratégico que promovam o aperfeiçoamento da "
+    "instituição",
+    "sugerir propostas que alterem a estrutura organizacional da instituição",
+    "avaliar o emprego da instituição orientando a racionalização na aplicação de recursos e a "
+    "maximização dos resultados em benefício da sociedade",
+    "examinar a Política Estadual de Segurança Pública, em particular na parcela constitucional que "
+    "compete ao Corpo de Bombeiros Militar e apresentar soluções para o aperfeiçoamento do sistema",
+    "avaliar mudanças na política de emprego tático e técnico das diversas Unidades Bombeiro "
+    "Militar que integram a Corporação, inclusive a articulação e desdobramento das mesmas, visando "
+    "ao cumprimento das missões constitucionais",
+    "analisar matérias de relevância, relativas à Corporação, dependentes de decisão governamental",
+    "propor a criação de comissões técnicas e grupos de trabalho para a realização de pesquisas e "
+    "estudos estratégicos e sistêmicos sobre assuntos de ordem técnica de interesse do Corpo de "
+    "Bombeiros Militar",
+    "aprovar proposta de denominação histórica de Unidades Bombeiro Militar",
+    "apreciar outros assuntos do interesse da Corporação colocados em pauta pelo Comandante-Geral",
+]
+
+
 # Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
 ENRICHMENT_ORGAN = {
     "dpo":  _tag(_MT_DOP,   "cf. CBMMT, RI, Art. 236")
@@ -329,6 +522,14 @@ ENRICHMENT_ORGAN = {
     "cibm": _tag(_PR_CIBM, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, II"),
     "bbs":  _tag(_PR_GOST, "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III"),
     "boa":  _tag(_PR_UOA,  "cf. CBMPR, Lei nº 22.206/2024, Art. 35, IV"),
+    "cg":   _tag(_MT_EMG,    "cf. CBMMT, RI, Art. 14")
+          + _tag(_PA_CG,     "cf. CBMPA, RI, Art. 6")
+          + _tag(_DF_EMG,    "cf. CBMDF, RI (Portaria nº 24/2020), Art. 58"),
+    "depdec": _tag(_AL_CEDEC, "cf. CBMAL, RI, Art. 13")
+          + _tag(_GO_CODEC,  "cf. CBMGO, Lei nº 18.305/2013, Art. 27")
+          + _tag(_ES_CEPDEC, "cf. CBMES, NGA, Art. 3"),
+    "condeg": _tag(_AL_CPE,  "cf. CBMAL, RI, Art. 11")
+          + _tag(_MT_CSBM,   "cf. CBMMT, LC nº 775/2023, Art. 15"),
 }
 
 

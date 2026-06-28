@@ -40,6 +40,11 @@ AUTO_MATCH_KEYWORDS = {
     "boa":   {"include": ["aerea", "aereo", "aviacao", "operacoes aereas"], "exclude": []},
     "cat":   {"include": ["atividades tecnicas", "atividade tecnica"],
               "exclude": ["operacoes tecnicas", "comando de operacoes"]},
+    "cg":     {"include": ["comando geral", "comando-geral", "estado maior", "estado-maior"],
+               "exclude": ["regional", "operacoes", "setorial", "secao"]},
+    "depdec": {"include": ["defesa civil", "protecao e defesa"], "exclude": []},
+    "condeg": {"include": ["conselho"],
+               "exclude": ["municipal", "regional"]},
 }
 
 
