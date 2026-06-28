@@ -3352,9 +3352,37 @@
             {
               "text": "Mantêm relacionamento entre o CBMRO e outros Poderes e Órgãos.",
               "source": "ro"
+            },
+            {
+              "text": "analisar normas, diretrizes, portarias, determinações, informações e demais documentos emanados do Comando Geral",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 17"
+            },
+            {
+              "text": "orientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas da Procuradoria-Geral do Estado",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 17"
+            },
+            {
+              "text": "coligir elementos de fato e de direito para preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado, para a defesa dos interesses do Estado de Goiás em ações judiciais",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 17"
+            },
+            {
+              "text": "planejar, coordenar, acompanhar e executar ações de intercâmbio de informações do Corpo de Bombeiros Militar com o Poder Legislativo, em âmbito federal, estadual e municipal",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 18"
+            },
+            {
+              "text": "acompanhar os processos legislativos envolvendo assuntos de interesse da Corporação, bem como realizar gestão visando conferir celeridade aos processos",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 18"
+            },
+            {
+              "text": "manter o Comando Geral informado dos projetos de lei envolvendo assuntos de interesse da Corporação em tramitação em todas as esferas do Poder Legislativo",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 18"
+            },
+            {
+              "text": "assessorar no planejamento e na elaboração de projetos de lei de interesse da Corporação, conforme diretrizes e ordens emanadas do Comando Geral",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 18"
             }
           ],
-          "proposedText": "Mantêm relacionamento entre o CBMRO e outros Poderes e Órgãos."
+          "proposedText": "Mantêm relacionamento entre o CBMRO e outros Poderes e Órgãos.\nanalisar normas, diretrizes, portarias, determinações, informações e demais documentos emanados do Comando Geral\norientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas da Procuradoria-Geral do Estado\ncoligir elementos de fato e de direito para preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado, para a defesa dos interesses do Estado de Goiás em ações judiciais\nplanejar, coordenar, acompanhar e executar ações de intercâmbio de informações do Corpo de Bombeiros Militar com o Poder Legislativo, em âmbito federal, estadual e municipal\nacompanhar os processos legislativos envolvendo assuntos de interesse da Corporação, bem como realizar gestão visando conferir celeridade aos processos\nmanter o Comando Geral informado dos projetos de lei envolvendo assuntos de interesse da Corporação em tramitação em todas as esferas do Poder Legislativo\nassessorar no planejamento e na elaboração de projetos de lei de interesse da Corporação, conforme diretrizes e ordens emanadas do Comando Geral"
         },
         {
           "id": "organizacao",
@@ -3512,6 +3540,40 @@
           "proposedText": "Supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral."
         },
         {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:gab-cg/competencia",
+          "caput": "Compete à GAB/CG:",
+          "items": [
+            {
+              "text": "prestar assistência ao Comandante-Geral, especialmente em seus compromissos sociais de natureza civil e militar",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6"
+            },
+            {
+              "text": "assessorar o Comandante-Geral nas áreas técnica, jurídica, administrativa e parlamentar",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6"
+            },
+            {
+              "text": "assessorar o Comandante-Geral nos assuntos não previstos nas competências normais e específicas dos órgãos de direção",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6"
+            },
+            {
+              "text": "elaborar, controlar e distribuir a documentação de competência do Comandante-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6"
+            },
+            {
+              "text": "orientar os órgãos internos e externos sobre as normas e condutas de trabalho do Gabinete do Comandante-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6"
+            },
+            {
+              "text": "organizar e controlar a pauta de audiências, visitas e demais compromissos do Comandante-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6"
+            }
+          ],
+          "proposedText": "prestar assistência ao Comandante-Geral, especialmente em seus compromissos sociais de natureza civil e militar\nassessorar o Comandante-Geral nas áreas técnica, jurídica, administrativa e parlamentar\nassessorar o Comandante-Geral nos assuntos não previstos nas competências normais e específicas dos órgãos de direção\nelaborar, controlar e distribuir a documentação de competência do Comandante-Geral\norientar os órgãos internos e externos sobre as normas e condutas de trabalho do Gabinete do Comandante-Geral\norganizar e controlar a pauta de audiências, visitas e demais compromissos do Comandante-Geral"
+        },
+        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -3578,9 +3640,105 @@
             {
               "text": "Responsável pela manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, o controle de pessoal do Comando-Geral, bem como das praças cedidas a outros órgãos.",
               "source": "ro"
+            },
+            {
+              "text": "desenvolver, em conjunto com o Gabinete do Comandante-Geral, trabalhos de secretaria e de documentação inerentes ao Comandante-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "administrar e executar a atividade de protocolo-geral da Corporação e propor a normatização do serviço para os demais órgãos",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "administrar as atividades de correio no âmbito da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "auxiliar na administração do Quartel do Comando-Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "administrar e propor a normatização do serviço de arquivo-geral da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "preparar o processo de seleção e agraciamento da Ordem do Mérito Bombeiro Militar do Distrito Federal “Imperador Dom Pedro II” e apoiar as formaturas de agraciamento das demais comendas institucionais",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "elaborar e dar publicidade ao Boletim Geral da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "prestar apoio logístico às solenidades, formaturas, reuniões comemorativas, reuniões administrativas e outros eventos do CBMDF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110"
+            },
+            {
+              "text": "realizar trabalhos de secretaria, inclusive o tratamento de correspondências, malotes, postagem e protocolo geral da instituição e outras atividades correlatas",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "realizar a publicação de atos administrativos e de pessoal relacionados às suas atribuições no boletim geral eletrônico da instituição",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "gerenciar a documentação ostensiva da instituição, buscando se adequar às disposições legais sobre arquivos públicos",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "orientar e coordenar o processo de arquivamento, análise, avaliação e seleção da documentação elaborada e acumulada no âmbito da instituição, com vistas à sua destinação final",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "realizar os assentamentos dos bombeiros militares dentro de sua área de competência",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "fornecer o suporte de pessoal a todos os órgãos componentes do Comando Geral",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "executar e coordenar as atividades de administração financeira, almoxarifado e aprovisionamento do Comando Geral",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "zelar pela manutenção do Quartel do Comando Geral",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "coordenar e fiscalizar a manutenção e a segurança do Quartel do Comando Geral",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "manter atualizado almanaque dos Oficiais e ST/SGT da Corporação",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "elaborar o Plano de Chamada e de Defesa do Q.C.G. bem como mantê-los atualizados",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "organizar o plano de férias do Q.C.G, seguindo-se a orientação do Comandante-Geral Adjunto",
+              "source": "cf. CBMMT, RI, Art. 152"
+            },
+            {
+              "text": "auxiliar na administração e manutenção física do Quartel do Comando-Geral",
+              "source": "cf. CBMPA, RI, Art. 119"
+            },
+            {
+              "text": "providenciar a publicação dos despachos e de ordens emanadas pelo Comandante Geral, Chefe do Estado Maior Geral, pelos Departamentos, Diretorias e da própria Ajudância Geral, bem como assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico",
+              "source": "cf. CBMPA, RI, Art. 119"
+            },
+            {
+              "text": "prestar apoio logístico às solenidades, formaturas, reuniões comemorativas, reuniões administrativas e outros eventos do CBMPA",
+              "source": "cf. CBMPA, RI, Art. 119"
+            },
+            {
+              "text": "organizar a segurança do QCG",
+              "source": "cf. CBMPA, RI, Art. 119"
             }
           ],
-          "proposedText": "Responsável pela manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, o controle de pessoal do Comando-Geral, bem como das praças cedidas a outros órgãos."
+          "proposedText": "Responsável pela manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, o controle de pessoal do Comando-Geral, bem como das praças cedidas a outros órgãos.\ndesenvolver, em conjunto com o Gabinete do Comandante-Geral, trabalhos de secretaria e de documentação inerentes ao Comandante-Geral\nadministrar e executar a atividade de protocolo-geral da Corporação e propor a normatização do serviço para os demais órgãos\nadministrar as atividades de correio no âmbito da Corporação\nauxiliar na administração do Quartel do Comando-Geral\nadministrar e propor a normatização do serviço de arquivo-geral da Corporação\npreparar o processo de seleção e agraciamento da Ordem do Mérito Bombeiro Militar do Distrito Federal “Imperador Dom Pedro II” e apoiar as formaturas de agraciamento das demais comendas institucionais\nelaborar e dar publicidade ao Boletim Geral da Corporação\nprestar apoio logístico às solenidades, formaturas, reuniões comemorativas, reuniões administrativas e outros eventos do CBMDF\nrealizar trabalhos de secretaria, inclusive o tratamento de correspondências, malotes, postagem e protocolo geral da instituição e outras atividades correlatas\nrealizar a publicação de atos administrativos e de pessoal relacionados às suas atribuições no boletim geral eletrônico da instituição\ngerenciar a documentação ostensiva da instituição, buscando se adequar às disposições legais sobre arquivos públicos\norientar e coordenar o processo de arquivamento, análise, avaliação e seleção da documentação elaborada e acumulada no âmbito da instituição, com vistas à sua destinação final\nrealizar os assentamentos dos bombeiros militares dentro de sua área de competência\nfornecer o suporte de pessoal a todos os órgãos componentes do Comando Geral\nexecutar e coordenar as atividades de administração financeira, almoxarifado e aprovisionamento do Comando Geral\nzelar pela manutenção do Quartel do Comando Geral\ncoordenar e fiscalizar a manutenção e a segurança do Quartel do Comando Geral\nmanter atualizado almanaque dos Oficiais e ST/SGT da Corporação\nelaborar o Plano de Chamada e de Defesa do Q.C.G. bem como mantê-los atualizados\norganizar o plano de férias do Q.C.G, seguindo-se a orientação do Comandante-Geral Adjunto\nauxiliar na administração e manutenção física do Quartel do Comando-Geral\nprovidenciar a publicação dos despachos e de ordens emanadas pelo Comandante Geral, Chefe do Estado Maior Geral, pelos Departamentos, Diretorias e da própria Ajudância Geral, bem como assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico\nprestar apoio logístico às solenidades, formaturas, reuniões comemorativas, reuniões administrativas e outros eventos do CBMPA\norganizar a segurança do QCG"
         },
         {
           "id": "organizacao",

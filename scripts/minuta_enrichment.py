@@ -975,6 +975,110 @@ _DF_DITIC = [
 ]
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Bloco 3 — Assessoramento/Apoio (assessorias, gab-cg, ag).
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── CBMGO, Lei nº 18.305/2013, Art. 17 — Assessoria Jurídica (assessorias) ──
+_GO_ASSJUR = [
+    "analisar normas, diretrizes, portarias, determinações, informações e demais documentos "
+    "emanados do Comando Geral",
+    "orientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de "
+    "acordo com as orientações emanadas da Procuradoria-Geral do Estado",
+    "coligir elementos de fato e de direito para preparar as informações que devem ser prestadas à "
+    "Procuradoria-Geral do Estado, para a defesa dos interesses do Estado de Goiás em ações judiciais",
+]
+
+# ── CBMGO, Lei nº 18.305/2013, Art. 18 — Assessoria Parlamentar (assessorias) ──
+_GO_ASSPARL = [
+    "planejar, coordenar, acompanhar e executar ações de intercâmbio de informações do Corpo de "
+    "Bombeiros Militar com o Poder Legislativo, em âmbito federal, estadual e municipal",
+    "acompanhar os processos legislativos envolvendo assuntos de interesse da Corporação, bem como "
+    "realizar gestão visando conferir celeridade aos processos",
+    "manter o Comando Geral informado dos projetos de lei envolvendo assuntos de interesse da "
+    "Corporação em tramitação em todas as esferas do Poder Legislativo",
+    "assessorar no planejamento e na elaboração de projetos de lei de interesse da Corporação, "
+    "conforme diretrizes e ordens emanadas do Comando Geral",
+]
+
+# ── CBMDF, RI (Portaria nº 24/2020), Art. 6 — Gabinete do Comandante-Geral (gab-cg) ──
+_DF_GABCG = [
+    "prestar assistência ao Comandante-Geral, especialmente em seus compromissos sociais de "
+    "natureza civil e militar",
+    "assessorar o Comandante-Geral nas áreas técnica, jurídica, administrativa e parlamentar",
+    "assessorar o Comandante-Geral nos assuntos não previstos nas competências normais e "
+    "específicas dos órgãos de direção",
+    "elaborar, controlar e distribuir a documentação de competência do Comandante-Geral",
+    "orientar os órgãos internos e externos sobre as normas e condutas de trabalho do Gabinete do "
+    "Comandante-Geral",
+    "organizar e controlar a pauta de audiências, visitas e demais compromissos do Comandante-Geral",
+]
+
+# ── CBMPA, RI, Art. 107 — Gabinete do Comandante-Geral (gab-cg) ──
+_PA_GABCG = [
+    "prestar assistência ao Comandante-Geral, especialmente em seus compromissos sociais de "
+    "natureza civil e militar",
+    "assessorar o Comandante-Geral nas áreas técnica, jurídica, administrativa e parlamentar",
+    "assessorar o Comandante-Geral nos assuntos não previstos nas competências normais e "
+    "específicas dos órgãos de direção",
+    "elaborar, controlar e distribuir a documentação de competência do Comandante-Geral",
+    "orientar os órgãos internos e externos sobre as normas e condutas de trabalho do Gabinete do "
+    "Comandante-Geral",
+    "organizar e controlar a pauta de audiências, visitas e demais compromissos do Comandante-Geral",
+]
+
+# ── CBMDF, RI (Portaria nº 24/2020), Art. 110 — Ajudância Geral (ag) ──
+_DF_AJGER = [
+    "desenvolver, em conjunto com o Gabinete do Comandante-Geral, trabalhos de secretaria e de "
+    "documentação inerentes ao Comandante-Geral",
+    "administrar e executar a atividade de protocolo-geral da Corporação e propor a normatização do "
+    "serviço para os demais órgãos",
+    "administrar as atividades de correio no âmbito da Corporação",
+    "auxiliar na administração do Quartel do Comando-Geral",
+    "administrar e propor a normatização do serviço de arquivo-geral da Corporação",
+    "preparar o processo de seleção e agraciamento da Ordem do Mérito Bombeiro Militar do Distrito "
+    "Federal “Imperador Dom Pedro II” e apoiar as formaturas de agraciamento das demais comendas "
+    "institucionais",
+    "elaborar e dar publicidade ao Boletim Geral da Corporação",
+    "prestar apoio logístico às solenidades, formaturas, reuniões comemorativas, reuniões "
+    "administrativas e outros eventos do CBMDF",
+]
+
+# ── CBMMT, RI, Art. 152 — Coordenadoria de Ajudância Geral (ag) ──
+_MT_AJGER = [
+    "realizar trabalhos de secretaria, inclusive o tratamento de correspondências, malotes, "
+    "postagem e protocolo geral da instituição e outras atividades correlatas",
+    "realizar a publicação de atos administrativos e de pessoal relacionados às suas atribuições no "
+    "boletim geral eletrônico da instituição",
+    "gerenciar a documentação ostensiva da instituição, buscando se adequar às disposições legais "
+    "sobre arquivos públicos",
+    "orientar e coordenar o processo de arquivamento, análise, avaliação e seleção da documentação "
+    "elaborada e acumulada no âmbito da instituição, com vistas à sua destinação final",
+    "realizar os assentamentos dos bombeiros militares dentro de sua área de competência",
+    "fornecer o suporte de pessoal a todos os órgãos componentes do Comando Geral",
+    "executar e coordenar as atividades de administração financeira, almoxarifado e aprovisionamento "
+    "do Comando Geral",
+    "zelar pela manutenção do Quartel do Comando Geral",
+    "coordenar e fiscalizar a manutenção e a segurança do Quartel do Comando Geral",
+    "manter atualizado almanaque dos Oficiais e ST/SGT da Corporação",
+    "elaborar o Plano de Chamada e de Defesa do Q.C.G. bem como mantê-los atualizados",
+    "organizar o plano de férias do Q.C.G, seguindo-se a orientação do Comandante-Geral Adjunto",
+]
+
+# ── CBMPA, RI, Art. 119 — Ajudância-Geral (ag) ──
+_PA_AJGER = [
+    "administrar e executar a atividade de protocolo-geral da Corporação e propor a normatização do "
+    "serviço para os demais órgãos",
+    "auxiliar na administração e manutenção física do Quartel do Comando-Geral",
+    "providenciar a publicação dos despachos e de ordens emanadas pelo Comandante Geral, Chefe do "
+    "Estado Maior Geral, pelos Departamentos, Diretorias e da própria Ajudância Geral, bem como "
+    "assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico",
+    "prestar apoio logístico às solenidades, formaturas, reuniões comemorativas, reuniões "
+    "administrativas e outros eventos do CBMPA",
+    "organizar a segurança do QCG",
+]
+
+
 # Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
 ENRICHMENT_ORGAN = {
     "dpo":  _tag(_MT_DOP,   "cf. CBMMT, RI, Art. 236")
@@ -1026,6 +1130,13 @@ ENRICHMENT_ORGAN = {
           + _tag(_AL_ARPCS,  "cf. CBMAL, RI, Art. 26"),
     "cinf": _tag(_MT_CTI,    "cf. CBMMT, RI, Art. 129")
           + _tag(_DF_DITIC,  "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"),
+    "assessorias": _tag(_GO_ASSJUR,  "cf. CBMGO, Lei nº 18.305/2013, Art. 17")
+          + _tag(_GO_ASSPARL, "cf. CBMGO, Lei nº 18.305/2013, Art. 18"),
+    "gab-cg": _tag(_DF_GABCG, "cf. CBMDF, RI (Portaria nº 24/2020), Art. 6")
+          + _tag(_PA_GABCG,  "cf. CBMPA, RI, Art. 107"),
+    "ag":   _tag(_DF_AJGER,  "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110")
+          + _tag(_MT_AJGER,  "cf. CBMMT, RI, Art. 152")
+          + _tag(_PA_AJGER,  "cf. CBMPA, RI, Art. 119"),
 }
 
 

@@ -61,6 +61,12 @@ AUTO_MATCH_KEYWORDS = {
     "cint": {"include": ["inteligencia"],                        "exclude": []},
     "ccs":  {"include": ["comunicacao social"],                  "exclude": []},
     "cinf": {"include": ["informatica", "tecnologia da informacao"], "exclude": []},
+    "assessorias": {"include": ["assessoria"],
+                    "exclude": ["assessoria de comunicacao", "comunicacao social",
+                                "inteligencia", "contra-inteligencia"]},
+    "gab-cg": {"include": ["gabinete"], "exclude": []},
+    "ag":     {"include": ["ajudancia", "ajudante-geral", "ajudante geral"],
+               "exclude": []},
 }
 
 

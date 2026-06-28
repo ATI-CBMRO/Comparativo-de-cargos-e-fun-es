@@ -128,6 +128,41 @@ Avaliados e **descartados** neste bloco (motivo):
 - **dp — CBMGO, Lei nº 18.305/2013, Art. 26**: o rol foi atribuído a `dpof` (órgão "Gestão e
   Finanças" combinado); não duplicado em `dp` para evitar ruído.
 
+## Frente 2 — Bloco 3: Assessoramento/Apoio (2026-06-28)
+
+Curadoria dos 3 órgãos de assessoramento/apoio ao Comando-Geral: `assessorias`
+(Assessorias), `gab-cg` (Gabinete do Comandante-Geral) e `ag` (Ajudância-Geral). Domínio
+de **match baixo** — estas unidades costumam ser descritas por finalidade, não enumeradas.
+Só entrou competência **enumerada e verbatim** do **órgão**.
+
+| Estado | Base legal | Órgão (organ_key) | Itens |
+|---|---|---|---|
+| CBMGO | Lei nº 18.305/2013, Art. 17 | Assessoria Jurídica (assessorias) | 3 |
+| CBMGO | Lei nº 18.305/2013, Art. 18 | Assessoria Parlamentar (assessorias) | 4 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 6 | Gabinete do Comandante-Geral (gab-cg) | 6 |
+| CBMPA | RI, Art. 107 | Gabinete do Comandante-Geral (gab-cg) | 6 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 110 | Ajudância Geral (ag) | 8 |
+| CBMMT | RI, Art. 152 | Coordenadoria de Ajudância Geral (ag) | 12 |
+| CBMPA | RI, Art. 119 | Ajudância-Geral (ag) | 5 |
+
+Avaliados e **descartados** neste bloco (motivo):
+
+- **gab-cg — CBMMT, RI, Art. 220/221**: Art. 220 é caput de finalidade (uma frase); Art. 221
+  enumera competências do **Chefe de Gabinete (cargo)**, não do órgão.
+- **gab-cg — CBMSP, Lei nº 616/1974, Art. 221 (CBMRS), CBMGO Art. 16**: gabinetes descritos
+  por finalidade/estrutura, sem rol de competências do órgão.
+- **assessorias — CBMCE, Lei nº 13.438/2004, Art. 13/14**: Art. 13 é caput definicional;
+  Art. 14 enumera competências da **Chefia (cargo)**, não da Assessoria como órgão.
+- **assessorias — CBMPE, Lei nº 15.187/2013, Art. 45/46**: Art. 45 é caput definicional;
+  Art. 46 é só a estrutura organizacional.
+- **assessorias — CBMAL, RI, Art. 15 (Assessoria Técnica)**: caput de finalidade em prosa;
+  sem rol de incisos.
+- **assessorias — CBMES, NGA, Art. 6/7 (Assessoria Técnica da CEPDEC)**: enumera, mas a
+  unidade é assessoria interna da Defesa Civil (escopo `depdec`), não assessoria do
+  Comando-Geral; descartada para evitar colisão conceitual.
+- **ag — CBMPA, RI, Art. 118 / CBMMT, RI, Art. 151**: capítulos definicionais (finalidade da
+  unidade em uma frase); os róis aproveitados são os Arts. 119 e 152, respectivamente.
+
 ## Avaliadas e descartadas (com motivo)
 
 **LOBs novas pós-2021 não curadas** — varredura em 2026-06-19. Todas seguem o padrão
