@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../lib/auth.jsx'
 
@@ -10,7 +10,7 @@ const MENSAGENS = {
 }
 
 export default function Login() {
-  const { entrar, recuperarSenha, naoAutorizado } = useAuth()
+  const { entrar, recuperarSenha, naoAutorizado, user } = useAuth()
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
@@ -18,15 +18,24 @@ export default function Login() {
   const [aviso, setAviso] = useState('')
   const [enviando, setEnviando] = useState(false)
 
+  // Só avança quando o usuário for de fato confirmado (evita a corrida do 1º login).
+  useEffect(() => {
+    if (user) navigate('/revisao', { replace: true })
+  }, [user, navigate])
+
+  // Logou no Firebase mas não é membro autorizado: para o "Entrando…".
+  useEffect(() => {
+    if (naoAutorizado) setEnviando(false)
+  }, [naoAutorizado])
+
   const submeter = async (e) => {
     e.preventDefault()
     setErro(''); setAviso(''); setEnviando(true)
     try {
       await entrar(email, senha)
-      navigate('/revisao')
+      // A navegação acontece no useEffect acima, quando `user` for confirmado.
     } catch (err) {
       setErro(MENSAGENS[err.code] ?? 'Não foi possível entrar. Tente novamente.')
-    } finally {
       setEnviando(false)
     }
   }
