@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { X, ThumbsUp, Trash2, Check, Ban } from 'lucide-react'
 
 function formataData(criadoEm) {
   if (!criadoEm?.toDate) return ''
@@ -48,113 +47,106 @@ export default function RevisaoModal({
     }
   }
 
-  const statusClasse = (s) => {
-    const st = s.adminStatus ?? 'pendente'
-    if (st === 'relevante') return ' rel'
-    if (st === 'descartada') return ' desc'
-    return ''
-  }
-
   return (
     <div className="rev-modal-backdrop" onClick={onClose}>
       <div className="rev-modal" onClick={e => e.stopPropagation()}>
-        <div className="rev-modal-head">
-          <div>
-            <div className="rev-modal-label">{dispositivo.label}</div>
-            <div className="rev-modal-trecho">{dispositivo.trecho}</div>
+        {/* Cabeçalho: texto em discussão em destaque */}
+        <div className="rev-mhead">
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div className="rev-mhead-lbl">● Em discussão</div>
+            <div className="rev-mhead-ref">{dispositivo.label}</div>
+            <div className="rev-discussao">{dispositivo.trecho}</div>
           </div>
-          <button className="rev-modal-x" onClick={onClose} aria-label="Fechar"><X size={18} /></button>
+          <button className="rev-modal-x" onClick={onClose} aria-label="Fechar">✕</button>
         </div>
 
-        <div className="rev-modal-list">
-          {suggestions.length === 0 && (
-            <p className="rev-modal-vazio">Ainda não há sugestões para este dispositivo.</p>
-          )}
-          {suggestions.map(s => {
-            const curtiu = (s.curtidoPor ?? []).includes(user.uid)
-            const podeExcluir = s.autorUid === user.uid || isAdmin
-            const st = s.adminStatus ?? 'pendente'
-            return (
-              <div key={s.id} className={`rev-sug${statusClasse(s)}`}>
-                <div className="rev-sug-meta">
-                  <span className="rev-sug-autor">{s.autorNome}</span>
-                  <span className="rev-sug-data">{formataData(s.criadoEm)}</span>
+        <div className="rev-cols">
+          {/* Coluna esquerda: sugestões */}
+          <div className="rev-col">
+            <div className="rev-col-title">Sugestões ({suggestions.length})</div>
+            {suggestions.length === 0 && (
+              <p className="rev-col-vazio">Ainda não há sugestões para este dispositivo.</p>
+            )}
+            {suggestions.map(s => {
+              const curtiu = (s.curtidoPor ?? []).includes(user.uid)
+              const podeExcluir = s.autorUid === user.uid || isAdmin
+              const st = s.adminStatus ?? 'pendente'
+              return (
+                <div key={s.id} className={`rev-sug${st === 'relevante' ? ' rel' : st === 'descartada' ? ' desc' : ''}`}>
+                  <div className="rev-whorow">
+                    <span className="rev-who">{s.autorNome}</span>
+                    <span className="rev-when">{formataData(s.criadoEm)}</span>
+                    <button className={`rev-ic count${curtiu ? ' on' : ''}`} onClick={() => onToggleLike(s)} title="Curtir">
+                      👍 {(s.curtidoPor ?? []).length || ''}
+                    </button>
+                    {isAdmin && (
+                      <>
+                        <span className="rev-sep" />
+                        <button className="rev-ic" onClick={() => onSetStatus(s, st === 'relevante' ? 'pendente' : 'relevante')} title="Marcar relevante">✅</button>
+                        <button className="rev-ic" onClick={() => onSetStatus(s, st === 'descartada' ? 'pendente' : 'descartada')} title="Descartar">⛔</button>
+                      </>
+                    )}
+                    {podeExcluir && (
+                      <button className="rev-ic" onClick={() => onDelete(s)} title="Excluir">🗑️</button>
+                    )}
+                    {st !== 'pendente' && (
+                      <span className={`rev-tag ${st === 'relevante' ? 'r' : 'd'}`}>{st === 'relevante' ? 'Relevante' : 'Descartada'}</span>
+                    )}
+                  </div>
+                  <div className="rev-sug-texto">{s.texto}</div>
                 </div>
-                <div className="rev-sug-texto">{s.texto}</div>
-                <div className="rev-sug-acoes">
-                  <button className={`rev-like${curtiu ? ' on' : ''}`} onClick={() => onToggleLike(s)}>
-                    <ThumbsUp size={14} /> {(s.curtidoPor ?? []).length || ''}
-                  </button>
-                  {st !== 'pendente' && (
-                    <span className={`rev-badge ${st}`}>{st === 'relevante' ? 'Relevante' : 'Descartada'}</span>
-                  )}
-                  {isAdmin && (
-                    <span className="rev-admin-acoes">
-                      <button className="rev-mini rel" title="Marcar relevante"
-                        onClick={() => onSetStatus(s, st === 'relevante' ? 'pendente' : 'relevante')}><Check size={14} /></button>
-                      <button className="rev-mini desc" title="Descartar"
-                        onClick={() => onSetStatus(s, st === 'descartada' ? 'pendente' : 'descartada')}><Ban size={14} /></button>
-                    </span>
-                  )}
-                  {podeExcluir && (
-                    <button className="rev-del" onClick={() => onDelete(s)} title="Excluir"><Trash2 size={14} /></button>
-                  )}
-                </div>
+              )
+            })}
+
+            <form className="rev-addbox" onSubmit={enviar}>
+              <div className="rev-col-title">Sua sugestão</div>
+              <textarea className="rev-editor" value={texto} onChange={e => setTexto(e.target.value)}
+                placeholder="Escreva sua sugestão para este dispositivo…" rows={2} />
+              <div className="rev-save">
+                <button className="rev-btn r" type="submit" disabled={enviando || !texto.trim()}>
+                  {enviando ? 'Enviando…' : 'Enviar sugestão'}
+                </button>
               </div>
-            )
-          })}
-        </div>
+            </form>
+          </div>
 
-        {/* Texto final */}
-        {(isAdmin || finalText) && (
-          <div className="rev-final">
-            <div className="rev-final-head">
-              ✍️ Texto final do dispositivo
-              {finalText?.status === 'fechado' && <span className="rev-badge fechado">✔ Fechado</span>}
+          {/* Coluna direita: redação final */}
+          <div className="rev-col red">
+            <div className="rev-col-title">
+              Redação final
+              {finalText?.status === 'fechado' && <span className="rev-fechado-selo">✔ Fechado</span>}
             </div>
             {isAdmin ? (
               <>
-                <div className="rev-ia">
-                  <div className="rev-ia-atual">
-                    <span className="label">Texto atual</span>
-                    {dispositivo.trecho}
+                <button className="rev-ia-btn" onClick={gerar} disabled={gerando || relevantes.length === 0}
+                  title={relevantes.length === 0 ? 'Marque ao menos uma sugestão como relevante' : ''}>
+                  {gerando ? 'Gerando…' : '✨ Gerar proposta com IA'}
+                </button>
+                {relevantes.length === 0 && (
+                  <span className="rev-ia-dica">Marque ao menos uma sugestão como relevante para gerar.</span>
+                )}
+                {erroIA && <div className="login-erro" style={{ marginTop: 8 }}>{erroIA}</div>}
+                {propostaIA && (
+                  <div className="rev-ia-proposta">
+                    <span className="label">✨ Proposta da IA (referência)</span>
+                    {propostaIA}
                   </div>
-                  <button className="rev-ia-btn" onClick={gerar} disabled={gerando || relevantes.length === 0}
-                    title={relevantes.length === 0 ? 'Marque ao menos uma sugestão como relevante' : ''}>
-                    {gerando ? 'Gerando…' : '✨ Gerar proposta com IA'}
-                  </button>
-                  {relevantes.length === 0 && (
-                    <span className="rev-ia-dica">Marque ao menos uma sugestão como relevante para gerar.</span>
-                  )}
-                  {erroIA && <div className="login-erro">{erroIA}</div>}
-                  {propostaIA && (
-                    <div className="rev-ia-proposta">
-                      <span className="label">✨ Proposta da IA (referência)</span>
-                      {propostaIA}
-                    </div>
-                  )}
-                </div>
-                <textarea className="rev-modal-input" value={final} onChange={e => setFinal(e.target.value)}
-                  placeholder="Escreva o texto final consolidado…" rows={3} />
-                <div className="rev-final-acoes">
-                  <button className="rev-final-btn" onClick={() => onSaveFinal(final, 'em_aberto')}>Salvar rascunho</button>
-                  <button className="rev-final-btn fechar"
-                    onClick={async () => { await onSaveFinal(final, 'fechado'); onClose() }}>Salvar e fechar</button>
+                )}
+                <div className="rev-col-title" style={{ marginTop: 14 }}>Texto final (editável)</div>
+                <textarea className="rev-editor" value={final} onChange={e => setFinal(e.target.value)}
+                  placeholder="Escreva o texto final consolidado…" rows={5} />
+                <div className="rev-save">
+                  <button className="rev-btn" onClick={() => onSaveFinal(final, 'em_aberto')}>Salvar rascunho</button>
+                  <button className="rev-btn r" onClick={async () => { await onSaveFinal(final, 'fechado'); onClose() }}>Salvar e fechar</button>
                 </div>
               </>
             ) : (
-              <p className="rev-final-ro">{finalText.texto}</p>
+              finalText
+                ? <p className="rev-final-ro">{finalText.texto}</p>
+                : <p className="rev-col-vazio">Ainda não há texto final definido para este dispositivo.</p>
             )}
           </div>
-        )}
-
-        <form className="rev-modal-form" onSubmit={enviar}>
-          <textarea className="rev-modal-input" value={texto} onChange={e => setTexto(e.target.value)}
-            placeholder="Escreva sua sugestão para este dispositivo…" rows={3} />
-          <button className="rev-modal-enviar" type="submit" disabled={enviando || !texto.trim()}>
-            {enviando ? 'Enviando…' : 'Enviar sugestão'}
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   )

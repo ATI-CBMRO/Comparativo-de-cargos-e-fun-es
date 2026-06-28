@@ -2195,62 +2195,68 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .rev-line:hover .rev-mark { color: #8a93a8; }
 .rev-mark.has { background: #c8102e; color: #fff; }
 
-/* ===== Revisão: janela do dispositivo (modal) ===== */
-.rev-modal-backdrop { position: fixed; inset: 0; background: rgba(18,29,61,.45); display: flex;
-  align-items: center; justify-content: center; padding: 20px; z-index: 50; }
-.rev-modal { width: 100%; max-width: 540px; max-height: 86vh; background: #fff; border-radius: 12px;
-  display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 18px 50px rgba(0,0,0,.3); }
-.rev-modal-head { display: flex; gap: 12px; padding: 16px 18px; border-bottom: 1px solid #e3e8f0; background: #f7f9fc; }
-.rev-modal-label { font-weight: 700; color: #121d3d; font-size: 14px; }
-.rev-modal-trecho { color: #5a667f; font-size: 13px; margin-top: 2px; }
-.rev-modal-x { margin-left: auto; background: none; border: none; cursor: pointer; color: #5a667f; align-self: flex-start; }
-.rev-modal-list { padding: 12px 18px; overflow: auto; flex: 1; display: flex; flex-direction: column; gap: 10px; }
-.rev-modal-vazio { color: #8a93a8; font-size: 13px; text-align: center; padding: 16px 0; }
-.rev-sug { border: 1px solid #e3e8f0; border-radius: 8px; padding: 10px 12px; }
-.rev-sug-meta { display: flex; justify-content: space-between; align-items: baseline; }
-.rev-sug-autor { font-weight: 600; color: #121d3d; font-size: 13px; }
-.rev-sug-data { color: #8a93a8; font-size: 12px; }
-.rev-sug-texto { margin: 4px 0 8px; font-size: 14px; color: #1a1a1a; }
-.rev-sug-acoes { display: flex; gap: 8px; align-items: center; }
-.rev-like { display: inline-flex; align-items: center; gap: 4px; border: 1px solid #c5cee0; background: #fff;
-  border-radius: 14px; padding: 3px 10px; font-size: 12.5px; cursor: pointer; color: #3a4866; }
-.rev-like.on { background: #fdecee; border-color: #f3b4bd; color: #c8102e; }
-.rev-del { border: none; background: none; cursor: pointer; color: #b0b8c8; }
-.rev-del:hover { color: #c8102e; }
-.rev-modal-form { border-top: 1px solid #e3e8f0; padding: 12px 18px; display: flex; flex-direction: column; gap: 8px; }
-.rev-modal-input { border: 1px solid #c5cee0; border-radius: 8px; padding: 10px; font-size: 14px; resize: vertical; font-family: inherit; }
-.rev-modal-enviar { align-self: flex-end; background: #c8102e; color: #fff; border: none; border-radius: 8px;
-  padding: 9px 18px; font-weight: 700; font-size: 14px; cursor: pointer; }
-.rev-modal-enviar:disabled { opacity: .5; cursor: default; }
-
-/* ===== Revisão: curadoria do admin ===== */
+/* ===== Revisão: progresso e linha fechada (página) ===== */
 .rev-progresso { font-size: 12.5px; color: #1d6b3a; font-weight: 600; margin-top: 4px; }
 .rev-line.fechado { box-shadow: inset 3px 0 0 #2aa05a; }
-.rev-sug.rel { border-color: #abdcbd; background: #f1faf4; }
-.rev-sug.desc { opacity: .6; }
-.rev-sug.desc .rev-sug-texto { text-decoration: line-through; }
-.rev-badge { font-size: 11px; border-radius: 10px; padding: 1px 8px; font-weight: 700; }
-.rev-badge.relevante { background: #e9f6ee; color: #1d6b3a; }
-.rev-badge.descartada { background: #f3f4f6; color: #6b7280; }
-.rev-badge.fechado { background: #e9f6ee; color: #1d6b3a; margin-left: 8px; }
-.rev-admin-acoes { display: inline-flex; gap: 4px; }
-.rev-mini { border: 1px solid #c5cee0; background: #fff; border-radius: 6px; padding: 2px 6px; cursor: pointer; display: inline-flex; color: #5a667f; }
-.rev-mini.rel:hover { border-color: #1d6b3a; color: #1d6b3a; }
-.rev-mini.desc:hover { border-color: #c8102e; color: #c8102e; }
-.rev-final { border-top: 1px solid #e3e8f0; padding: 12px 18px; background: #fbfcfe; }
-.rev-final-head { font-size: 13px; font-weight: 700; color: #121d3d; margin-bottom: 6px; display: flex; align-items: center; }
-.rev-final-acoes { display: flex; gap: 8px; justify-content: flex-end; margin-top: 8px; }
-.rev-final-btn { border: 1px solid #c5cee0; background: #fff; border-radius: 8px; padding: 7px 14px; font-size: 13px; cursor: pointer; }
-.rev-final-btn.fechar { background: #c8102e; color: #fff; border-color: #c8102e; font-weight: 700; }
-.rev-final-ro { font-size: 14px; color: #1a1a1a; background: #f1faf4; border: 1px solid #abdcbd; border-radius: 8px; padding: 8px 10px; margin: 0; }
 
-/* ===== Revisão: geração com IA ===== */
-.rev-ia { margin-bottom: 12px; }
-.rev-ia-atual { font-size: 13px; color: #3a4866; background: #f7f9fc; border: 1px solid #d7deea; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; }
-.rev-ia-atual .label, .rev-ia-proposta .label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
-.rev-ia-atual .label { color: #5a667f; }
-.rev-ia-btn { background: #6b3fc8; color: #fff; border: none; border-radius: 8px; padding: 8px 16px; font-weight: 700; font-size: 13px; cursor: pointer; }
+/* ===== Revisão: janela do dispositivo (modal, duas colunas) ===== */
+.rev-modal-backdrop { position: fixed; inset: 0; background: rgba(18,29,61,.45); display: flex;
+  align-items: center; justify-content: center; padding: 20px; z-index: 50; }
+.rev-modal { width: 100%; max-width: 920px; max-height: 88vh; background: #fff; border-radius: 12px;
+  display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 18px 50px rgba(0,0,0,.3); }
+
+/* Cabeçalho com destaque para o texto em discussão */
+.rev-mhead { display: flex; gap: 14px; padding: 16px 20px; border-bottom: 1px solid #e3e8f0; background: #f7f9fc; }
+.rev-mhead-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: #c8102e; font-weight: 800; margin-bottom: 6px; }
+.rev-mhead-ref { font-weight: 700; color: #121d3d; font-size: 14px; margin-bottom: 8px; }
+.rev-discussao { border-left: 4px solid #c8102e; background: #fff; border-radius: 0 8px 8px 0;
+  padding: 10px 14px; font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.6; color: #1a1a1a; }
+.rev-modal-x { margin-left: auto; background: none; border: none; cursor: pointer; color: #5a667f; align-self: flex-start; font-size: 18px; }
+
+/* Corpo em duas colunas */
+.rev-cols { display: flex; gap: 18px; padding: 16px 20px; overflow: auto; }
+.rev-col { flex: 1; min-width: 0; }
+.rev-col.red { flex: 1.1; border-left: 1px solid #e7ebf3; padding-left: 18px; }
+.rev-col-title { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #5a667f; font-weight: 700; margin: 0 0 8px; display: flex; align-items: center; }
+.rev-col-vazio { color: #8a93a8; font-size: 13px; }
+
+/* Cartão de sugestão (interações na linha do participante) */
+.rev-sug { border: 1px solid #e3e8f0; border-radius: 9px; padding: 11px 13px; margin-bottom: 10px; }
+.rev-sug.rel { border-color: #abdcbd; background: #f4fbf7; }
+.rev-sug.desc { opacity: .62; }
+.rev-sug.desc .rev-sug-texto { text-decoration: line-through; }
+.rev-whorow { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.rev-who { font-weight: 600; color: #121d3d; font-size: 13px; }
+.rev-when { color: #8a93a8; font-size: 11.5px; }
+.rev-ic { cursor: pointer; font-size: 14px; line-height: 1; background: none; border: none; padding: 2px 3px; border-radius: 6px; display: inline-flex; align-items: center; gap: 3px; }
+.rev-ic:hover { background: #eef1f6; }
+.rev-ic.count { font-size: 12px; color: #3a4866; }
+.rev-ic.on { background: #fdecee; }
+.rev-sep { width: 1px; height: 14px; background: #e3e8f0; }
+.rev-tag { font-size: 11px; border-radius: 10px; padding: 1px 9px; font-weight: 700; margin-left: auto; }
+.rev-tag.r { background: #e9f6ee; color: #1d6b3a; }
+.rev-tag.d { background: #f3f4f6; color: #6b7280; }
+.rev-sug-texto { font-size: 13.5px; line-height: 1.55; color: #1a1a1a; }
+
+/* Caixa "Sua sugestão" e botões */
+.rev-addbox { margin-top: 14px; border: 1px solid #e3e8f0; border-radius: 9px; padding: 12px; background: #fcfdff; }
+.rev-editor { width: 100%; border: 1px solid #c5cee0; border-radius: 9px; padding: 11px; font-size: 13.5px; line-height: 1.55; box-sizing: border-box; font-family: inherit; resize: vertical; }
+.rev-save { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
+.rev-btn { border: 1px solid #c5cee0; border-radius: 9px; padding: 9px 16px; background: #fff; font-size: 13.5px; cursor: pointer; }
+.rev-btn.r { background: #c8102e; color: #fff; border: none; font-weight: 700; }
+.rev-btn:disabled { opacity: .5; cursor: default; }
+
+/* Coluna de redação / IA */
+.rev-ia-btn { background: #6b3fc8; color: #fff; border: none; border-radius: 9px; padding: 11px 18px; font-weight: 700; font-size: 13.5px; cursor: pointer; }
 .rev-ia-btn:disabled { opacity: .5; cursor: default; }
-.rev-ia-dica { display: block; font-size: 12px; color: #8a93a8; margin-top: 4px; }
-.rev-ia-proposta { margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #1a1a1a; background: #f6f2fc; border: 1px solid #d6c8f0; border-radius: 8px; padding: 10px 12px; }
-.rev-ia-proposta .label { color: #6b3fc8; }
+.rev-ia-dica { display: block; font-size: 12.5px; color: #8a93a8; margin-top: 6px; }
+.rev-ia-proposta { margin-top: 12px; font-size: 13.5px; line-height: 1.6; color: #1a1a1a; background: #f6f2fc; border: 1px solid #d6c8f0; border-radius: 9px; padding: 11px 13px; }
+.rev-ia-proposta .label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #6b3fc8; font-weight: 700; margin-bottom: 4px; }
+.rev-final-ro { font-size: 14px; color: #1a1a1a; background: #f1faf4; border: 1px solid #abdcbd; border-radius: 8px; padding: 10px 12px; margin: 0; line-height: 1.55; }
+.rev-fechado-selo { font-size: 11px; border-radius: 10px; padding: 1px 9px; font-weight: 700; background: #e9f6ee; color: #1d6b3a; margin-left: 8px; }
+
+/* Empilhar em telas estreitas */
+@media (max-width: 720px) {
+  .rev-cols { flex-direction: column; }
+  .rev-col.red { border-left: none; padding-left: 0; border-top: 1px solid #e7ebf3; padding-top: 14px; }
+}
