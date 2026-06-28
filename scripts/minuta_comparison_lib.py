@@ -68,6 +68,7 @@ AUTO_MATCH_KEYWORDS = {
                "exclude": ["subcomando", "subcomandante", "chefia de gabinete"]},
     "ag":     {"include": ["ajudancia", "ajudante-geral", "ajudante geral"],
                "exclude": []},
+    "corregedoria": {"include": ["corregedoria", "correicao"], "exclude": []},
 }
 
 

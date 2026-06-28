@@ -163,6 +163,41 @@ Avaliados e **descartados** neste bloco (motivo):
 - **ag — CBMPA, RI, Art. 118 / CBMMT, RI, Art. 151**: capítulos definicionais (finalidade da
   unidade em uma frase); os róis aproveitados são os Arts. 119 e 152, respectivamente.
 
+## Frente 2 — Bloco 4: Correição (2026-06-28)
+
+Curadoria do órgão de correição: `corregedoria` (Corregedoria-Geral). Corregedorias
+costumam ter competências **enumeradas** em RI ou portaria própria — domínio de match
+plausível. Só entrou competência **enumerada e verbatim** do **órgão** (não do cargo
+Corregedor-Geral).
+
+| Estado | Base legal | Órgão (organ_key) | Itens |
+|---|---|---|---|
+| CBMMT | RI, Art. 16 | Corregedoria-Geral (corregedoria) | 20 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 96 | Corregedoria (corregedoria) | 12 |
+| CBMAL | RI, Art. 29 | Corregedoria Geral (corregedoria) | 6 |
+| CBMPR | Portaria nº 227/2023, Art. 3º | Corregedoria-Geral (corregedoria) | 12 |
+
+Avaliados e **descartados** neste bloco (motivo):
+
+- **CBMMT, RI, Art. 15/19**: Art. 15 é caput definicional (uma frase); Art. 19 enumera
+  competências do **Corregedor-Geral (cargo)**, não do órgão. Aproveitado o Art. 16
+  (competências da Corregedoria-Geral como órgão).
+- **CBMDF, RI, Art. 78**: competências **comuns** a Auditoria/Ouvidoria/Corregedoria/Núcleo de
+  Custódia (genéricas de qualquer órgão de controle), não distintivas da Corregedoria.
+  Aproveitado o Art. 96 (competências orgânicas próprias).
+- **CBMAL, RI, Art. 28/30**: Art. 28 é caput definicional; Art. 30 enumera competências do
+  **Corregedor Geral (cargo)**. Aproveitado o Art. 29 (competências do órgão).
+- **CBMPR, Lei nº 22.206/2024, Art. 23**: rol de **finalidade** em 3 incisos genéricos
+  (assegurar a lei, padronizar procedimentos, realizar correições); aproveitado o rol
+  enumerado e distintivo da Portaria nº 227/2023, Art. 3º.
+- **CBMPA, RI, Art. 34**: a Corregedoria-Geral como órgão traz apenas 2 incisos definicionais
+  (assessorar na disciplina; orientar/prevenir/fiscalizar) — finalidade, não competências
+  enumeradas distintivas. O detalhe paraense vive no cargo (Corregedor-Geral, Art. 47) e nas
+  seções/núcleos. Descartado.
+- **CBMRS, RI (Dec. 53.897/2018), Art. 30**: competências da Corregedoria-Geral descritas em
+  **prosa narrativa por subdivisão** (Por meio da DAdm/DJD/DFE… compreendendo: …), não
+  decomponíveis em incisos sem cortar/parafrasear. Descartado (mesmo motivo geral do RS).
+
 ## Avaliadas e descartadas (com motivo)
 
 **LOBs novas pós-2021 não curadas** — varredura em 2026-06-19. Todas seguem o padrão

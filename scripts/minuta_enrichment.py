@@ -1079,6 +1079,134 @@ _PA_AJGER = [
 ]
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Bloco 4 — Correição (corregedoria).
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── CBMMT, RI, Art. 16 — Corregedoria-Geral (corregedoria) ──
+_MT_CORREG = [
+    "proceder à sistematização de processos administrativos disciplinares, sindicâncias "
+    "disciplinares, inquéritos policiais militares, autos de prisão em flagrante delito, "
+    "inquéritos técnicos administrativos e de conselhos de justificação e disciplina",
+    "receber e formalizar denúncias e/ou notícias crimes encaminhadas por quem de direito ou "
+    "por via direta",
+    "elaborar e propor, ao Comandante-Geral, a aplicação de instruções normativas e orientadoras "
+    "das atividades de polícia judiciária militar e disciplinar",
+    "avocar a apuração de crimes militares, fatos de cunho administrativo e faltas disciplinares "
+    "de grande relevância ou complexidade, realizando os procedimentos legais, ou quando os "
+    "respectivos procedimentos forem determinados pelo Comandante-Geral",
+    "elaborar soluções, despachos, encaminhamentos, portarias de substituições, prorrogações e "
+    "suspensões de prazos",
+    "apurar as faltas disciplinares praticadas por componentes da instituição que, por sua "
+    "repercussão e relevância, ultrapassem a autonomia de outro órgão ou, ainda, seja determinado "
+    "pelo Comandante-Geral",
+    "realizar visitas de inspeções nos diversos órgãos da instituição, prestando aos seus "
+    "comandantes orientações técnicas e especializadas, informações e atendimento à precatória",
+    "elaborar mensalmente mapas disciplinares, contendo elogios e punições para fins de avaliação "
+    "do Comando-Geral",
+    "elaborar mensalmente mapas de pessoal que esteja respondendo a processos administrativos ou "
+    "judiciais",
+    "cumprir atividades que lhe sejam atribuídas pelo Comandante-Geral do CBMMT, na sua ausência, "
+    "do Comandante-Geral Adjunto",
+    "instaurar inquérito policial militar, para apurar fatos que constitua crime militar, "
+    "fornecendo as informações necessárias para propositura da ação penal",
+    "determinar abertura de sindicância, para apurar infrações administrativas no âmbito do Corpo "
+    "de Bombeiros Militar",
+    "proceder à correição nos processos administrativos e inquéritos policiais militares, a serem "
+    "remetidos à Justiça Militar ou Civil",
+    "cumprir cartas precatórias em atendimento a ordem judicial ou por solicitação de órgãos "
+    "policiais",
+    "atender solicitações relacionadas com diligências ou instruções em processos judiciais ou "
+    "administrativos, originários do Poder Judiciário, Procuradoria Geral do Estado e Procuradoria "
+    "Geral da Justiça",
+    "assessorar o Comandante-Geral do Corpo de Bombeiros Militar, na instrução dos processos de "
+    "Conselho de Justificação (CJ) e do Conselho de Disciplina (CD)",
+    "apreciar por ordem expressa do Comandante-Geral do CBMMT, os procedimentos relacionados com "
+    "irregularidades cometidas por servidores civis em atividades na Instituição",
+    "solicitar informações de órgãos públicos ou privados, necessárias à instrução de "
+    "procedimentos disciplinares e judiciais",
+    "manter atualizado o registro de antecedentes criminais e disciplinares, dos Militares "
+    "Estaduais e dos Servidores Civis em atividades no CBMMT",
+    "requisitar, de qualquer autoridade, certidões, diligências, exames, pareceres técnicos e "
+    "informações indispensáveis ao bom desempenho do serviço Bombeiro Militar",
+]
+
+# ── CBMDF, RI (Portaria nº 24/2020), Art. 96 — Corregedoria (corregedoria) ──
+_DF_CORREG = [
+    "planejar, organizar, dirigir e controlar as atividades de instauração, confecção, instrução, "
+    "homologação e solução dos processos administrativos e judiciais no âmbito do CBMDF, sob a "
+    "esfera de responsabilidade penal, cível e administrativa",
+    "instaurar e instruir sindicâncias e inquéritos policiais militares",
+    "promover investigações visando instruir procedimentos em curso no âmbito de sua competência",
+    "avocar atos, procedimentos e processos disciplinares instaurados no âmbito da Corporação ou "
+    "declarar a nulidade desses instrumentos, exceto os de competência do Comandante-Geral e do "
+    "Controlador",
+    "acompanhar demandas administrativas e judiciais envolvendo bombeiros militares",
+    "cumprir ou determinar o cumprimento de diligências requisitadas pelos órgãos dos Poderes "
+    "Executivo, Judiciário e Legislativo, bem como do Ministério Público, acompanhando e "
+    "controlando os atos administrativos praticados, com vistas à averiguação de suas soluções",
+    "verificar os requisitos legais e solucionar ou, conforme o caso, homologar os processos "
+    "administrativos disciplinares e de responsabilidade civil por dano ao erário no âmbito do "
+    "CBMDF, exceto os de competência do Comandante-Geral e do Controlador",
+    "supervisionar as atividades de escolta e custódia desenvolvidas pelo NCUST, bem como outras "
+    "relacionadas com as atribuições da Corregedoria",
+    "instruir processos de Conselho de Justificação e de Conselho de Disciplina, bem como "
+    "Processos Administrativos de Licenciamento",
+    "adotar os procedimentos legais cabíveis visando controlar a remissão, progressão de estágio, "
+    "indulto, comutação, redução ou agravamento de pena dos bombeiros sob custódia",
+    "controlar e acompanhar o andamento dos processos judiciais criminais que abarquem militares "
+    "do CBMDF",
+    "manter a DIGEP e a DINAP informadas acerca das alterações relativas ao inciso anterior",
+]
+
+# ── CBMAL, RI, Art. 29 — Corregedoria Geral (corregedoria) ──
+_AL_CORREG = [
+    "assessorar o Comando Geral nos assuntos de sua competência e na formação dos programas de "
+    "assistência judiciária",
+    "identificar meios e procedimentos para facilitar a coleta de provas indispensáveis à "
+    "aplicação da justiça",
+    "orientar os bombeiros militares que estejam sendo processados judicial ou administrativamente, "
+    "em razão de ato de serviço, sem interferir na ação dos advogados de defesa",
+    "organizar e manter atualizado o fichário dos bombeiros militares processados por fatos "
+    "relacionados com o serviço",
+    "orientar e assistir a família do bombeiro militar falecido à habilitação da pensão requerida "
+    "e outros direitos, conforme estabelecer a legislação específica",
+    "manter contato com outros órgãos públicos e privados, informando-se acerca da situação de "
+    "assistência jurídica ao bombeiro militar",
+]
+
+# ── CBMPR, Portaria do Comando-Geral nº 227/2023, Art. 3º — Corregedoria-Geral (corregedoria) ──
+_PR_CORREG = [
+    "realizar correições, inspeções e fiscalizações nas diversas Unidades da Corporação",
+    "manter permanente acompanhamento do público interno, visando prevenir e reprimir a prática de "
+    "atos de improbidade administrativa, crimes em geral e violações da disciplina e hierarquia "
+    "militares, bem como produzir o suporte probatório necessário à instauração dos respectivos "
+    "processos e procedimentos administrativos, quando de sua ocorrência",
+    "acompanhar, controlar e fiscalizar os autos dos procedimentos de Polícia Judiciária Militar "
+    "no âmbito da Corporação, sanear e preparar os atos de competência do Comandante-Geral e "
+    "informar outros documentos quando solicitado",
+    "expedir orientações sobre a aplicação da legislação relativa à apuração das infrações "
+    "criminais e disciplinares, inclusive promover a interpretação de jurisprudências e outras "
+    "matérias atinentes aos serviços da Corregedoria",
+    "apurar crimes militares, fatos de cunho administrativo e faltas disciplinares, realizando os "
+    "procedimentos legais, quando forem avocados, instaurados ou determinados pelo Comandante-Geral",
+    "requisitar o comparecimento de militares estaduais e civis vinculados de qualquer forma à "
+    "Corporação",
+    "receber reclamações contra ações ou omissões perpetradas por militares estaduais, tomando as "
+    "medidas legais cabíveis ou as encaminhando à autoridade competente",
+    "prover apoio aos Comandantes de Unidades e a quaisquer órgãos, quando solicitado, prestando "
+    "auxílio técnico especializado, procedendo a diligências e exarando informações e pareceres",
+    "acompanhar procedimentos investigatórios a que tenham sido submetidos militares estaduais em "
+    "repartições policiais, organizações militares e outras",
+    "manter atualizados os arquivos de identificação por todos os meios disponíveis e o registro "
+    "dos antecedentes dos integrantes da Corporação",
+    "cumprir, prioritariamente, os mandados de prisão e alvarás de soltura que envolvam integrantes "
+    "da Corporação",
+    "adotar, de ofício, ou, quando provocada, qualquer outra providência necessária ao fiel "
+    "desempenho das atribuições que lhe são conferidas na presente Lei",
+]
+
+
 # Mapeamento organ_key -> competências verbatim de outras legislações (rotuladas).
 ENRICHMENT_ORGAN = {
     "dpo":  _tag(_MT_DOP,   "cf. CBMMT, RI, Art. 236")
@@ -1137,6 +1265,10 @@ ENRICHMENT_ORGAN = {
     "ag":   _tag(_DF_AJGER,  "cf. CBMDF, RI (Portaria nº 24/2020), Art. 110")
           + _tag(_MT_AJGER,  "cf. CBMMT, RI, Art. 152")
           + _tag(_PA_AJGER,  "cf. CBMPA, RI, Art. 119"),
+    "corregedoria": _tag(_MT_CORREG, "cf. CBMMT, RI, Art. 16")
+          + _tag(_DF_CORREG, "cf. CBMDF, RI (Portaria nº 24/2020), Art. 96")
+          + _tag(_AL_CORREG, "cf. CBMAL, RI, Art. 29")
+          + _tag(_PR_CORREG, "cf. CBMPR, Portaria nº 227/2023, Art. 3º"),
 }
 
 

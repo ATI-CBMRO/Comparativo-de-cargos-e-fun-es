@@ -25643,7 +25643,975 @@
         ]
       },
       "referenceNote": null,
-      "states": []
+      "states": [
+        {
+          "id": "al",
+          "name": "Alagoas",
+          "abbr": "AL",
+          "cbm": "CBMAL",
+          "region": "Nordeste",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMAL, RI, Art. 29",
+          "note": null,
+          "organs": [
+            {
+              "name": "",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "assessorar o Comando Geral nos assuntos de sua competência e na formação dos programas de assistência judiciária",
+                "identificar meios e procedimentos para facilitar a coleta de provas indispensáveis à aplicação da justiça",
+                "orientar os bombeiros militares que estejam sendo processados judicial ou administrativamente, em razão de ato de serviço, sem interferir na ação dos advogados de defesa",
+                "organizar e manter atualizado o fichário dos bombeiros militares processados por fatos relacionados com o serviço",
+                "orientar e assistir a família do bombeiro militar falecido à habilitação da pensão requerida e outros direitos, conforme estabelecer a legislação específica",
+                "manter contato com outros órgãos públicos e privados, informando-se acerca da situação de assistência jurídica ao bombeiro militar"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria Geral",
+              "abbreviation": "CORREG",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "A Corregedoria Geral do Corpo de Bombeiros Militar é o órgão de direção encarregado da orientação, fiscalização e correção dos procedimentos relativos à apuração das transgressões disciplinares e das infrações penais militares dos Bombeiros Militares, promovendo-lhes, ainda, a responsabilidade funcional e disciplinar."
+              ],
+              "desdobramentos": [
+                "Corregedor Geral",
+                "Subcorregedor Geral",
+                "Ouvidoria",
+                "Seção de Polícia Disciplinar",
+                "Seção de Polícia Judiciária Militar",
+                "Seção de Apoio Administrativo",
+                "Seção de Inteligência"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "df",
+          "name": "Distrito Federal",
+          "abbr": "DF",
+          "cbm": "CBMDF",
+          "region": "Centro-Oeste",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 96",
+          "note": null,
+          "organs": [
+            {
+              "name": "",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "planejar, organizar, dirigir e controlar as atividades de instauração, confecção, instrução, homologação e solução dos processos administrativos e judiciais no âmbito do CBMDF, sob a esfera de responsabilidade penal, cível e administrativa",
+                "instaurar e instruir sindicâncias e inquéritos policiais militares",
+                "promover investigações visando instruir procedimentos em curso no âmbito de sua competência",
+                "avocar atos, procedimentos e processos disciplinares instaurados no âmbito da Corporação ou declarar a nulidade desses instrumentos, exceto os de competência do Comandante-Geral e do Controlador",
+                "acompanhar demandas administrativas e judiciais envolvendo bombeiros militares",
+                "cumprir ou determinar o cumprimento de diligências requisitadas pelos órgãos dos Poderes Executivo, Judiciário e Legislativo, bem como do Ministério Público, acompanhando e controlando os atos administrativos praticados, com vistas à averiguação de suas soluções",
+                "verificar os requisitos legais e solucionar ou, conforme o caso, homologar os processos administrativos disciplinares e de responsabilidade civil por dano ao erário no âmbito do CBMDF, exceto os de competência do Comandante-Geral e do Controlador",
+                "supervisionar as atividades de escolta e custódia desenvolvidas pelo NCUST, bem como outras relacionadas com as atribuições da Corregedoria",
+                "instruir processos de Conselho de Justificação e de Conselho de Disciplina, bem como Processos Administrativos de Licenciamento",
+                "adotar os procedimentos legais cabíveis visando controlar a remissão, progressão de estágio, indulto, comutação, redução ou agravamento de pena dos bombeiros sob custódia",
+                "controlar e acompanhar o andamento dos processos judiciais criminais que abarquem militares do CBMDF",
+                "manter a DIGEP e a DINAP informadas acerca das alterações relativas ao inciso anterior"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "mt",
+          "name": "Mato Grosso",
+          "abbr": "MT",
+          "cbm": "CBMMT",
+          "region": "Centro-Oeste",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMMT, RI, Art. 16",
+          "note": null,
+          "organs": [
+            {
+              "name": "",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "proceder à sistematização de processos administrativos disciplinares, sindicâncias disciplinares, inquéritos policiais militares, autos de prisão em flagrante delito, inquéritos técnicos administrativos e de conselhos de justificação e disciplina",
+                "receber e formalizar denúncias e/ou notícias crimes encaminhadas por quem de direito ou por via direta",
+                "elaborar e propor, ao Comandante-Geral, a aplicação de instruções normativas e orientadoras das atividades de polícia judiciária militar e disciplinar",
+                "avocar a apuração de crimes militares, fatos de cunho administrativo e faltas disciplinares de grande relevância ou complexidade, realizando os procedimentos legais, ou quando os respectivos procedimentos forem determinados pelo Comandante-Geral",
+                "elaborar soluções, despachos, encaminhamentos, portarias de substituições, prorrogações e suspensões de prazos",
+                "apurar as faltas disciplinares praticadas por componentes da instituição que, por sua repercussão e relevância, ultrapassem a autonomia de outro órgão ou, ainda, seja determinado pelo Comandante-Geral",
+                "realizar visitas de inspeções nos diversos órgãos da instituição, prestando aos seus comandantes orientações técnicas e especializadas, informações e atendimento à precatória",
+                "elaborar mensalmente mapas disciplinares, contendo elogios e punições para fins de avaliação do Comando-Geral",
+                "elaborar mensalmente mapas de pessoal que esteja respondendo a processos administrativos ou judiciais",
+                "cumprir atividades que lhe sejam atribuídas pelo Comandante-Geral do CBMMT, na sua ausência, do Comandante-Geral Adjunto",
+                "instaurar inquérito policial militar, para apurar fatos que constitua crime militar, fornecendo as informações necessárias para propositura da ação penal",
+                "determinar abertura de sindicância, para apurar infrações administrativas no âmbito do Corpo de Bombeiros Militar",
+                "proceder à correição nos processos administrativos e inquéritos policiais militares, a serem remetidos à Justiça Militar ou Civil",
+                "cumprir cartas precatórias em atendimento a ordem judicial ou por solicitação de órgãos policiais",
+                "atender solicitações relacionadas com diligências ou instruções em processos judiciais ou administrativos, originários do Poder Judiciário, Procuradoria Geral do Estado e Procuradoria Geral da Justiça",
+                "assessorar o Comandante-Geral do Corpo de Bombeiros Militar, na instrução dos processos de Conselho de Justificação (CJ) e do Conselho de Disciplina (CD)",
+                "apreciar por ordem expressa do Comandante-Geral do CBMMT, os procedimentos relacionados com irregularidades cometidas por servidores civis em atividades na Instituição",
+                "solicitar informações de órgãos públicos ou privados, necessárias à instrução de procedimentos disciplinares e judiciais",
+                "manter atualizado o registro de antecedentes criminais e disciplinares, dos Militares Estaduais e dos Servidores Civis em atividades no CBMMT",
+                "requisitar, de qualquer autoridade, certidões, diligências, exames, pareceres técnicos e informações indispensáveis ao bom desempenho do serviço Bombeiro Militar"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria Geral do Corpo de Bombeiros Militar",
+              "abbreviation": "CORREG",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Corregedoria Geral do Corpo de Bombeiros Militar é responsável pela sistematização e controle das atividades de correição funcional e setorial, de caráter disciplinar, administrativo ou de polícia judiciária militar, vinculada diretamente ao Comandante-Geral da Instituição (Art. 20)",
+                "Instaurar ou determinar às autoridades bombeiros militares a instauração de inquéritos policiais militares e demais procedimentos de persecução criminal e administrativo disciplinar, para apurar ação, omissão ou fato ilícito relacionado à conduta dos bombeiros militares (Art. 21, I)",
+                "Coordenar, controlar e fiscalizar a apuração de responsabilidade criminal, administrativa ou disciplinar (II)",
+                "Elaborar e propor ao Comandante-Geral, a aplicação de instruções normativas e orientadoras das atividades de polícia judiciária militar e disciplinar (III)",
+                "Difundir as unidades administrativas da instituição as normas, instruções e procedimentos em vigor visando à padronização dos feitos de correição (IV)",
+                "Requisitar certidões, diligências, exames, pareceres técnicos e informações indispensáveis ao bom desempenho de suas atribuições (V)",
+                "Avocar, de forma excepcional e fundamentadamente, inquérito policial militar e outros procedimentos administrativos, disciplinares ou não, para apuração ou redistribuição (VI)",
+                "Manter arquivo de todos os feitos instaurados pela corregedoria (VII)",
+                "Manter registro e controle dos procedimentos administrativos instaurados no âmbito da corporação (VIII)",
+                "Suspender, a qualquer tempo, o direito de bombeiro militar ter o porte e/ou a posse de arma de fogo, por conveniência disciplinar, recomendação médica ou psicológica, inclusive por determinação judicial, sempre com decisão fundamentada e publicada em boletim reservado (IX)",
+                "Apurar as faltas disciplinares praticadas por componentes da instituição que, por sua repercussão e relevância, ultrapassem a autonomia das Unidades ou, ainda, seja determinado pelo Comandante-Geral (X)",
+                "Apurar responsabilidades relativas a danos, perda, extravio e desvio de valores e bens patrimoniais distribuídos à instituição (XI)",
+                "Fazer o acompanhamento de procedimentos policiais em repartição policial civil e organização militar federal ou estadual, envolvendo integrantes da instituição (XII)",
+                "Elaborar estudos e levantamentos estatísticos sobre a situação disciplinar e moral da tropa (XIII)",
+                "Coordenar as requisições de Bombeiros Militares por órgãos do Poder Judiciário (XIV)",
+                "Proceder a correições em caráter ordinário e extraordinário nos procedimentos penais e disciplinares de competência do Corpo de Bombeiros Militar (XV)",
+                "Propor ou aplicar penalidade, nos limites de sua competência, observado o devido procedimento legal (XVI)"
+              ],
+              "desdobramentos": [
+                "Corregedoria Adjunta",
+                "Seção Administrativa",
+                "Seção de Polícia Judiciária Militar",
+                "Seção de Procedimentos Administrativos Disciplinares Militares"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "pr",
+          "name": "Paraná",
+          "abbr": "PR",
+          "cbm": "CBMPR",
+          "region": "Sul",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMPR, Portaria nº 227/2023, Art. 3º",
+          "note": null,
+          "organs": [
+            {
+              "name": "",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "realizar correições, inspeções e fiscalizações nas diversas Unidades da Corporação",
+                "manter permanente acompanhamento do público interno, visando prevenir e reprimir a prática de atos de improbidade administrativa, crimes em geral e violações da disciplina e hierarquia militares, bem como produzir o suporte probatório necessário à instauração dos respectivos processos e procedimentos administrativos, quando de sua ocorrência",
+                "acompanhar, controlar e fiscalizar os autos dos procedimentos de Polícia Judiciária Militar no âmbito da Corporação, sanear e preparar os atos de competência do Comandante-Geral e informar outros documentos quando solicitado",
+                "expedir orientações sobre a aplicação da legislação relativa à apuração das infrações criminais e disciplinares, inclusive promover a interpretação de jurisprudências e outras matérias atinentes aos serviços da Corregedoria",
+                "apurar crimes militares, fatos de cunho administrativo e faltas disciplinares, realizando os procedimentos legais, quando forem avocados, instaurados ou determinados pelo Comandante-Geral",
+                "requisitar o comparecimento de militares estaduais e civis vinculados de qualquer forma à Corporação",
+                "receber reclamações contra ações ou omissões perpetradas por militares estaduais, tomando as medidas legais cabíveis ou as encaminhando à autoridade competente",
+                "prover apoio aos Comandantes de Unidades e a quaisquer órgãos, quando solicitado, prestando auxílio técnico especializado, procedendo a diligências e exarando informações e pareceres",
+                "acompanhar procedimentos investigatórios a que tenham sido submetidos militares estaduais em repartições policiais, organizações militares e outras",
+                "manter atualizados os arquivos de identificação por todos os meios disponíveis e o registro dos antecedentes dos integrantes da Corporação",
+                "cumprir, prioritariamente, os mandados de prisão e alvarás de soltura que envolvam integrantes da Corporação",
+                "adotar, de ofício, ou, quando provocada, qualquer outra providência necessária ao fiel desempenho das atribuições que lhe são conferidas na presente Lei"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "Coger",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Corregedoria-Geral do Corpo de Bombeiros Militar do Paraná - CBMPR é o órgão técnico, subordinado ao Comandante-Geral, com atuação em todo o Estado, com a finalidade de: I - assegurar a correta aplicação da lei; II - padronizar os procedimentos de Polícia Judiciária Militar e de processos e procedimentos administrativos; III - realizar correições, fiscalizações e garantir a preservação dos princípios da hierarquia e disciplina na Corporação. (Art. 22)",
+                "À Corregedoria-Geral compete, dentre outras atribuições: I - a realização de correições, inspeções e fiscalizações nas diversas unidades da Corporação; II - o permanente acompanhamento do público interno, visando prevenir e reprimir a prática de atos de improbidade administrativa, crimes em geral e violações da disciplina e hierarquia militares, bem como produzir suporte probatório necessário à instauração dos respectivos processos e procedimentos administrativos, quando de sua ocorrência; III - o acompanhamento, controle e fiscalização dos autos dos procedimentos de Polícia Judiciária Militar no âmbito da Corporação, saneamento e preparação dos atos de competência do Comandante-Geral e demais diligências de informação sobre outros documentos, quando solicitado; IV - a expedição de orientações sobre a aplicação da legislação relativa à apuração das infrações criminais e disciplinares, inclusive promover a interpretação de jurisprudências e outras matérias atinentes aos serviços da Corregedoria-Geral; V - a apuração de crimes militares, fatos de cunho administrativo e faltas disciplinares, realizando os procedimentos legais, quando forem avocados, instaurados ou determinados pelo Comandante-Geral; VI - a requisição do comparecimento de bombeiros militares e civis vinculados de qualquer forma à Corporação; VII - o recebimento de reclamações contra ações ou omissões perpetradas por bombeiros militares, tomando as medidas legais cabíveis ou encaminhando à autoridade competente; VIII - o apoio aos Comandantes de Unidades e a quaisquer órgãos, quando solicitado, prestando auxílio técnico especializado, procedendo a diligências e exarando informações e pareceres; IX - o acompanhamento de procedimentos investigatórios a que tenham sido submetidos bombeiros militares em repartições policiais, organizações militares e outras; X - a manutenção e atualização dos arquivos de identificação por todos os meios disponíveis e o registro dos antecedentes dos integrantes da Corporação; XI - o cumprimento, prioritariamente, dos mandados de prisão e alvarás de soltura que envolvam integrantes da Corporação; XII - a adoção, de ofício ou quando provocada, de qualquer outra providência necessária ao fiel desempenho das atribuições que lhe são conferidas nesta Lei; XIII - o desempenho de outras atividades por delegação de competência do Comandante-Geral. (Art. 23)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "ac",
+          "name": "Acre",
+          "abbr": "AC",
+          "cbm": "CBMAC",
+          "region": "Norte",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria do CBMAC",
+              "abbreviation": "COR",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "A corregedoria do CBMAC é o órgão responsável pelo sistema administrativo disciplinar do CBMAC e dos procedimentos de polícia judiciária militar e todos os seus atos serão validados pelo subcomandante da corporação (Art. 8º)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor",
+                  "requisito": "Oficial do último posto do Quadro de Oficiais Combatentes, função de Coronel BM (Art. 8º parágrafo único, red. Lei 2.706/2013; Art. 24 I)",
+                  "subordinadoA": "Subcomandante da Corporação",
+                  "atribuicoes": [
+                    "Sistema administrativo disciplinar do CBMAC e procedimentos de polícia judiciária militar (Art. 8º)"
+                  ],
+                  "desdobramentos": [
+                    "Subcorregedor (Tenente-Coronel BM, Art. 24 II)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria do CBMAC",
+              "abbreviation": "COR",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "A corregedoria do CBMAC é o órgão responsável pelo sistema administrativo disciplinar do CBMAC e dos procedimentos de polícia judiciária militar e todos os seus atos serão validados pelo subcomandante da corporação (Art. 8º)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor",
+                  "requisito": "Oficial do último posto do Quadro de Oficiais Combatentes, função de Coronel BM (Art. 8º parágrafo único, red. Lei 2.706/2013; Art. 24 I)",
+                  "subordinadoA": "Subcomandante da Corporação",
+                  "atribuicoes": [
+                    "Sistema administrativo disciplinar do CBMAC e procedimentos de polícia judiciária militar (Art. 8º)"
+                  ],
+                  "desdobramentos": [
+                    "Subcorregedor (Tenente-Coronel BM, Art. 24 II)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "ap",
+          "name": "Amapá",
+          "abbr": "AP",
+          "cbm": "CBMAP",
+          "region": "Norte",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "COR",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Órgão de correição, com atuação desconcentrada, destinado a exercer as funções de Corregedoria-Geral, mediante regulamentação de procedimentos internos, para a prevenção, fiscalização e apuração dos desvios de conduta em atos disciplinares e penais militares, a promoção da qualidade e eficiência do serviço de segurança pública e a instrumentalização da Justiça Militar (Art. 6º, §5º)",
+                "Acompanhar o cumprimento de medidas cautelares restritivas de direitos e mandados de prisão judicialmente deferidos em desfavor de militares dentro da instituição (Art. 6º, §5º)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Órgão de correição com atuação desconcentrada, destinado a exercer as funções de Corregedoria-Geral, mediante regulamentação de procedimentos internos, para a prevenção, fiscalização e apuração dos desvios de conduta em atos disciplinares e penais militares, a promoção da qualidade e eficiência do serviço de segurança pública e a instrumentalização da Justiça Militar (LC nº 180/2026, Art. 6º, §5º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "COR",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Órgão de correição, com atuação desconcentrada, destinado a exercer as funções de Corregedoria-Geral, mediante regulamentação de procedimentos internos, para a prevenção, fiscalização e apuração dos desvios de conduta em atos disciplinares e penais militares, a promoção da qualidade e eficiência do serviço de segurança pública e a instrumentalização da Justiça Militar (Art. 6º, §5º)",
+                "Acompanhar o cumprimento de medidas cautelares restritivas de direitos e mandados de prisão judicialmente deferidos em desfavor de militares dentro da instituição (Art. 6º, §5º)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Órgão de correição com atuação desconcentrada, destinado a exercer as funções de Corregedoria-Geral, mediante regulamentação de procedimentos internos, para a prevenção, fiscalização e apuração dos desvios de conduta em atos disciplinares e penais militares, a promoção da qualidade e eficiência do serviço de segurança pública e a instrumentalização da Justiça Militar (LC nº 180/2026, Art. 6º, §5º)"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "ba",
+          "name": "Bahia",
+          "abbr": "BA",
+          "cbm": "CBMBA",
+          "region": "Nordeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria do Corpo de Bombeiros Militar",
+              "abbreviation": "Corregedoria",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "A Corregedoria do Corpo de Bombeiros Militar da Bahia tem por finalidade assistir o Comandante-Geral e o Subcomandante-Geral no desempenho de suas atribuições constitucionais, políticas e administrativas, realizar a atividade correcional, zelando pela justiça e disciplina dos integrantes da Corporação (Art. 20)",
+                "e gerenciar as atividades dos segmentos de correição descentralizados do CBMBA (Art. 20)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Chefe",
+                  "requisito": "Coronel QOBM (cargo privativo do posto)",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Propor ao Comandante-Geral medidas de apuração de denúncias",
+                    "Encaminhar relatórios mensais de dados estatísticos das apurações",
+                    "Elaborar normas de orientação e padronização dos feitos investigatórios",
+                    "Assessorar o Comandante-Geral quanto à justiça e disciplina",
+                    "Instaurar e decidir sindicâncias e processos administrativos disciplinares"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria do Corpo de Bombeiros Militar",
+              "abbreviation": "Corregedoria",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "A Corregedoria do Corpo de Bombeiros Militar da Bahia tem por finalidade assistir o Comandante-Geral e o Subcomandante-Geral no desempenho de suas atribuições constitucionais, políticas e administrativas, realizar a atividade correcional, zelando pela justiça e disciplina dos integrantes da Corporação (Art. 20)",
+                "e gerenciar as atividades dos segmentos de correição descentralizados do CBMBA (Art. 20)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Chefe",
+                  "requisito": "Coronel QOBM (cargo privativo do posto)",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Propor ao Comandante-Geral medidas de apuração de denúncias",
+                    "Encaminhar relatórios mensais de dados estatísticos das apurações",
+                    "Elaborar normas de orientação e padronização dos feitos investigatórios",
+                    "Assessorar o Comandante-Geral quanto à justiça e disciplina",
+                    "Instaurar e decidir sindicâncias e processos administrativos disciplinares"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "es",
+          "name": "Espírito Santo",
+          "abbr": "ES",
+          "cbm": "CBMES",
+          "region": "Sudeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria",
+              "abbreviation": "Corregedoria",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Controle disciplinar e correção administrativo-militar"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Correição",
+                  "requisito": "",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Realizar a atividade correcional",
+                    "Zelar pela justiça e disciplina dos integrantes da Corporação"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "ms",
+          "name": "Mato Grosso do Sul",
+          "abbr": "MS",
+          "cbm": "CBMMS",
+          "region": "Centro-Oeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria",
+              "abbreviation": "Correg",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Preservação da disciplina, hierarquia e ética",
+                "Apuração de fatos envolvendo responsabilidade penal, administrativa e disciplinar",
+                "Exercício do poder disciplinar e de polícia judiciária militar"
+              ],
+              "desdobramentos": [
+                "Gabinete do Corregedor",
+                "Gabinete do Corregedor-Adjunto",
+                "Cartório",
+                "Seção Administrativa",
+                "Seção de Justiça e Disciplina",
+                "Conselho Permanente de Disciplina",
+                "Ouvidoria",
+                "Seção de Inteligência",
+                "Patrulha Disciplinar Ostensiva"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Corregedor",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Preservação da disciplina, hierarquia e ética",
+                    "Apuração de fatos envolvendo responsabilidade penal, administrativa e disciplinar",
+                    "Poder disciplinar e polícia judiciária militar"
+                  ],
+                  "desdobramentos": [
+                    "Gabinete do Corregedor",
+                    "Cartório",
+                    "Seção de Justiça e Disciplina",
+                    "Conselho Permanente de Disciplina",
+                    "Ouvidoria",
+                    "Seção de Inteligência",
+                    "Patrulha Disciplinar Ostensiva"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria",
+              "abbreviation": "Correg",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Preservação da disciplina, hierarquia e ética",
+                "Apuração de fatos envolvendo responsabilidade penal, administrativa e disciplinar",
+                "Exercício do poder disciplinar e de polícia judiciária militar"
+              ],
+              "desdobramentos": [
+                "Gabinete do Corregedor",
+                "Gabinete do Corregedor-Adjunto",
+                "Cartório",
+                "Seção Administrativa",
+                "Seção de Justiça e Disciplina",
+                "Conselho Permanente de Disciplina",
+                "Ouvidoria",
+                "Seção de Inteligência",
+                "Patrulha Disciplinar Ostensiva"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Corregedor",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Preservação da disciplina, hierarquia e ética",
+                    "Apuração de fatos envolvendo responsabilidade penal, administrativa e disciplinar",
+                    "Poder disciplinar e polícia judiciária militar"
+                  ],
+                  "desdobramentos": [
+                    "Gabinete do Corregedor",
+                    "Cartório",
+                    "Seção de Justiça e Disciplina",
+                    "Conselho Permanente de Disciplina",
+                    "Ouvidoria",
+                    "Seção de Inteligência",
+                    "Patrulha Disciplinar Ostensiva"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "pa",
+          "name": "Pará",
+          "abbr": "PA",
+          "cbm": "CBMPA",
+          "region": "Norte",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "CORREG",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Assessoramento disciplinar",
+                "Orientação, prevenção e fiscalização das atividades funcionais e da conduta profissional",
+                "Aprimoramento da ética, da disciplina e da hierarquia"
+              ],
+              "desdobramentos": [
+                "Corregedor-Geral (último posto QOBM, preferencialmente bacharel em direito)",
+                "Subcorregedor-Geral (Tenente-Coronel)",
+                "Comissão Disciplinar Geral",
+                "Comissão Disciplinar de Recurso",
+                "Seção de Inteligência Correcional e Operações",
+                "Seção de Gestão de Processos e Apoio Administrativo"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "Oficial do último posto (QOBM), preferencialmente bacharel em Direito",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Direção superior da Corregedoria-Geral",
+                    "Determinar instauração de sindicâncias e processos administrativos",
+                    "Decisões disciplinares em 1ª instância e recursos hierárquicos"
+                  ],
+                  "desdobramentos": [
+                    "Subcorregedor-Geral",
+                    "Comissões Disciplinares",
+                    "Seção de Inteligência Correcional"
+                  ]
+                },
+                {
+                  "cargo": "Subcorregedor-Geral",
+                  "requisito": "Tenente-Coronel (QOBM)",
+                  "subordinadoA": "Corregedor-Geral",
+                  "atribuicoes": [
+                    "Auxílio ao Corregedor-Geral; presidência da Comissão Disciplinar Geral",
+                    "Coordenação das Comissões Disciplinares Regionais"
+                  ],
+                  "desdobramentos": [
+                    "Comissão Disciplinar Geral"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "CORREG",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Corregedoria-Geral (CORREG), diretamente vinculada ao comandante-geral, é o órgão correcional do CBMPA responsável pelo assessoramento disciplinar, pela orientação, prevenção e fiscalização das atividades funcionais e da conduta profissional, visando o aprimoramento da ética, da disciplina e da hierarquia entre os integrantes da corporação (Art. 15)."
+              ],
+              "desdobramentos": [
+                "Corregedor-Geral",
+                "Subcorregedor-Geral",
+                "Comissão Disciplinar Geral",
+                "Comissão Disciplinar de Recurso",
+                "Seção de Inteligência Correcional e Operações",
+                "Seção de Gestão de Processos e Apoio Administrativo",
+                "Secretaria"
+              ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "pb",
+          "name": "Paraíba",
+          "abbr": "PB",
+          "cbm": "CBMPB",
+          "region": "Nordeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria do Corpo de Bombeiros Militar",
+              "abbreviation": "CORREG",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "A Corregedoria do Corpo de Bombeiros Militar – CORREG – é o órgão de direção estratégica com a finalidade de apurar as infrações penais militares, apurando, acompanhando, fiscalizando e aplicando a correição no regime ético-disciplinar nos serviços da Corporação, e terá sua organização e competências disciplinadas em legislação específica. (Art. 30)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor",
+                  "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 30 §1º)",
+                  "subordinadoA": "Comando Geral",
+                  "atribuicoes": [
+                    "Apuração de infrações penais militares; correição no regime ético-disciplinar (Art. 30)."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria do Corpo de Bombeiros Militar",
+              "abbreviation": "CORREG",
+              "subordinadoA": "Comando Geral",
+              "atribuicoes": [
+                "A Corregedoria do Corpo de Bombeiros Militar – CORREG – é o órgão de direção estratégica com a finalidade de apurar as infrações penais militares, apurando, acompanhando, fiscalizando e aplicando a correição no regime ético-disciplinar nos serviços da Corporação, e terá sua organização e competências disciplinadas em legislação específica. (Art. 30)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor",
+                  "requisito": "Coronel da ativa da Corporação (cargo em comissão, nomeado pelo Governador do Estado — Art. 30 §1º)",
+                  "subordinadoA": "Comando Geral",
+                  "atribuicoes": [
+                    "Apuração de infrações penais militares; correição no regime ético-disciplinar (Art. 30)."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "rr",
+          "name": "Roraíma",
+          "abbr": "RR",
+          "cbm": "CBMRR",
+          "region": "Norte",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria Geral",
+              "abbreviation": "Correg",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos servidores da instituição",
+                "Apuração de responsabilidade criminal, administrativa e disciplinar"
+              ],
+              "desdobramentos": [
+                "Chefia da Corregedoria",
+                "Seção Administrativa",
+                "Cartório",
+                "Seção de Investigação",
+                "Ouvidoria"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe da Corregedoria",
+                  "requisito": "Oficial",
+                  "subordinadoA": "Comandante Geral",
+                  "atribuicoes": [
+                    "Disciplina, orientação e fiscalização das atividades funcionais"
+                  ],
+                  "desdobramentos": [
+                    "Seção Administrativa",
+                    "Cartório",
+                    "Seção de Investigação",
+                    "Ouvidoria"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria Geral",
+              "abbreviation": "Correg",
+              "subordinadoA": "Comandante Geral",
+              "atribuicoes": [
+                "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos servidores da instituição",
+                "Apuração de responsabilidade criminal, administrativa e disciplinar"
+              ],
+              "desdobramentos": [
+                "Chefia da Corregedoria",
+                "Seção Administrativa",
+                "Cartório",
+                "Seção de Investigação",
+                "Ouvidoria"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe da Corregedoria",
+                  "requisito": "Oficial",
+                  "subordinadoA": "Comandante Geral",
+                  "atribuicoes": [
+                    "Disciplina, orientação e fiscalização das atividades funcionais"
+                  ],
+                  "desdobramentos": [
+                    "Seção Administrativa",
+                    "Cartório",
+                    "Seção de Investigação",
+                    "Ouvidoria"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "rs",
+          "name": "Rio Grande do Sul",
+          "abbr": "RS",
+          "cbm": "CBMRS",
+          "region": "Sul",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "Corr-G",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "Órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos Bombeiros Militares e dos Servidores Civis da Instituição, diretamente subordinada ao Comandante-Geral (Regimento Interno, Art. 30)"
+              ],
+              "desdobramentos": [
+                "Divisão Administrativa (DAdm/Corr-G)",
+                "Divisão de Justiça e Disciplina (DJD/Corr-G)",
+                "Divisão de Controle Interno Correcional (DCIC/Corr-G)",
+                "Divisão de Feitos Especiais (DFE/Corr-G)",
+                "Ouvidoria (Ouv/Corr-G)",
+                "Cartório (Cart/Corr-G)"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Órgão de disciplina, orientação e fiscalização das atividades funcionais",
+                    "Fiscalização da conduta dos militares e servidores civis"
+                  ],
+                  "desdobramentos": [
+                    "Divisão Administrativa",
+                    "Divisão de Justiça e Disciplina",
+                    "Divisão de Controle Interno Correcional",
+                    "Divisão de Feitos Especiais",
+                    "Ouvidoria",
+                    "Cartório"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "Corr-G",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Corregedoria-Geral, órgão de disciplina, de orientação e de fiscalização das atividades funcionais e da conduta dos militares e dos servidores civis da Instituição, subordina-se diretamente ao Comandante-Geral (Art. 9º)."
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "sc",
+          "name": "Santa Catarina",
+          "abbr": "SC",
+          "cbm": "CBMSC",
+          "region": "Sul",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "Corr-G",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "I - promover o acompanhamento das apurações de transgressões disciplinares e ilícitos penais atribuídos a bombeiros militares, realizadas pelos órgãos de direção, de apoio, e de execução do CBMSC, avocando-as quando necessário;",
+                "II - promover integração com os órgãos do Poder Judiciário, Ministério Público, Defensoria Pública e corregedorias de outros órgãos, nos temas relacionados a suas atribuições;",
+                "III - baixar normas técnicas em conjunto com Estado-Maior Geral, relativas às atividades de sua competência e controlar a sua aplicação;",
+                "IV - gerenciar o sistema de corregedoria do CBMSC;",
+                "V - manter cópia digitalizada dos procedimentos disciplinares e penais que forem instaurados no CBMSC;",
+                "VI - efetuar investigações, levantamentos externos ou diligências em conjunto com a Agência Central de Inteligência, para proveito das apurações das infrações penais militares e transgressões disciplinares e sua autoria, imputada a bombeiros militares;",
+                "VII - elaborar estatísticas relativas às suas atividades; e",
+                "VIII - remeter, com exclusividade, à Justiça Militar, os Inquéritos Policiais Militares, Sindicâncias e outros processos que tenham relação com a apuração no âmbito criminal, concernentes a atos praticados por integrantes do CBMSC."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Sistematização e controle de correição funcional, disciplinar e de polícia judiciária militar"
+                  ],
+                  "desdobramentos": [
+                    "Corregedor-Adjunto",
+                    "Divisão de Eficiência Processual",
+                    "Divisão de Supervisão Disciplinar"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "Corr-G",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "I - promover o acompanhamento das apurações de transgressões disciplinares e ilícitos penais atribuídos a bombeiros militares, realizadas pelos órgãos de direção, de apoio, e de execução do CBMSC, avocando-as quando necessário;",
+                "II - promover integração com os órgãos do Poder Judiciário, Ministério Público, Defensoria Pública e corregedorias de outros órgãos, nos temas relacionados a suas atribuições;",
+                "III - baixar normas técnicas em conjunto com Estado-Maior Geral, relativas às atividades de sua competência e controlar a sua aplicação;",
+                "IV - gerenciar o sistema de corregedoria do CBMSC;",
+                "V - manter cópia digitalizada dos procedimentos disciplinares e penais que forem instaurados no CBMSC;",
+                "VI - efetuar investigações, levantamentos externos ou diligências em conjunto com a Agência Central de Inteligência, para proveito das apurações das infrações penais militares e transgressões disciplinares e sua autoria, imputada a bombeiros militares;",
+                "VII - elaborar estatísticas relativas às suas atividades; e",
+                "VIII - remeter, com exclusividade, à Justiça Militar, os Inquéritos Policiais Militares, Sindicâncias e outros processos que tenham relação com a apuração no âmbito criminal, concernentes a atos praticados por integrantes do CBMSC."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Sistematização e controle de correição funcional, disciplinar e de polícia judiciária militar"
+                  ],
+                  "desdobramentos": [
+                    "Corregedor-Adjunto",
+                    "Divisão de Eficiência Processual",
+                    "Divisão de Supervisão Disciplinar"
+                  ]
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "se",
+          "name": "Sergipe",
+          "abbr": "SE",
+          "cbm": "CBMSE",
+          "region": "Nordeste",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Corregedoria-Geral",
+              "abbreviation": "Corr-G",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "A Corregedoria-Geral do Corpo de Bombeiros Militar é o órgão responsável pela sistematização e controle das atividades de correição funcional, de caráter disciplinar, administrativo ou de polícia judiciária militar (Art. 15)"
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Corregedor-Geral",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Sistematização e controle de correição funcional",
+                    "Atividades de caráter disciplinar e polícia judiciária militar"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [],
+          "lobProvenance": "automatico"
+        },
+        {
+          "id": "to",
+          "name": "Tocantins",
+          "abbr": "TO",
+          "cbm": "CBMTO",
+          "region": "Norte",
+          "provenance": "automatico",
+          "sourceLabel": null,
+          "note": null,
+          "organs": [
+            {
+              "name": "Comando de Correição e Disciplina",
+              "abbreviation": "CCorD",
+              "subordinadoA": "Chefe do Estado-Maior",
+              "atribuicoes": [
+                "I - garantir a preservação dos princípios da hierarquia e disciplina da Corporação;",
+                "II - controlar, orientar e padronizar processos administrativos disciplinares e Inquéritos Policiais Militares;",
+                "III - apurar transgressões disciplinares e infrações penais de natureza militar envolvendo seus membros;",
+                "IV - acompanhar pessoal submetido a processo penal e processo penal militar."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Correição e Disciplina",
+                  "requisito": "Coronel da ativa do QOBM, diplomado no Curso Superior de Bombeiro Militar ou equivalente (Art. 11 §único)",
+                  "subordinadoA": "Chefe do Estado-Maior",
+                  "atribuicoes": [
+                    "I a IV – atribuições previstas no Art. 12 da LC nº 131/2021."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando de Correição e Disciplina",
+              "abbreviation": "CCorD",
+              "subordinadoA": "Chefe do Estado-Maior",
+              "atribuicoes": [
+                "I - garantir a preservação dos princípios da hierarquia e disciplina da Corporação;",
+                "II - controlar, orientar e padronizar processos administrativos disciplinares e Inquéritos Policiais Militares;",
+                "III - apurar transgressões disciplinares e infrações penais de natureza militar envolvendo seus membros;",
+                "IV - acompanhar pessoal submetido a processo penal e processo penal militar."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante de Correição e Disciplina",
+                  "requisito": "Coronel da ativa do QOBM, diplomado no Curso Superior de Bombeiro Militar ou equivalente (Art. 11 §único)",
+                  "subordinadoA": "Chefe do Estado-Maior",
+                  "atribuicoes": [
+                    "I a IV – atribuições previstas no Art. 12 da LC nº 131/2021."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            }
+          ],
+          "lobProvenance": "automatico"
+        }
+      ]
     }
   ]
 }
