@@ -1,6 +1,6 @@
 // Lógica compartilhada (sem framework) para gerar a proposta via Gemini.
 // Usada pela função serverless (Vercel) e pelo middleware de dev (Vite).
-const DEFAULT_MODEL = 'gemini-2.0-flash'
+const DEFAULT_MODEL = 'gemini-2.5-flash'
 
 export function buildPrompt(textoAtual, sugestoes) {
   const lista = (sugestoes ?? [])
