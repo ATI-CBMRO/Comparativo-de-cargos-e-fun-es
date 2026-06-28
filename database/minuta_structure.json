@@ -763,6 +763,84 @@
           "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, administração e gestão de pessoal."
         },
         {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:dp/competencia",
+          "caput": "Compete à DP:",
+          "items": [
+            {
+              "text": "gerenciar, organizar, coordenar e controlar o emprego dos bombeiros militares da ativa e de servidores civis",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "elaborar os atos de movimentação de oficiais e praças",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "preparar os atos necessários à transferência para a inatividade, agregação, reversão e exclusão do serviço ativo",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "gerir o processo de identificação do pessoal militar e seus dependentes, servidores civis e pensionistas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "confeccionar, controlar, atualizar e fiscalizar a folha de pagamento de pessoal ativo, militar e civil",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "subsidiar as Comissões de Promoção de Oficiais e Praças nos processos relacionados à promoção de militares, observada a legislação específica",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "manter o equilíbrio da força entre as OBMs, observando o Quadro de Organização e Distribuição – QOD do CBMDF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "promover a seleção e o ingresso de militares na Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "manter atualizados o cadastro e os registros funcionais do pessoal da ativa, militar e civil",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "planejar e organizar os afastamentos dos militares ativos, inclusive agregados, e dos servidores civis efetivos ou comissionados",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "prospectar e informar a demanda de formação, especialização e aperfeiçoamento de militares",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "organizar a relação dos oficiais e praças que preencham os requisitos necessários ao agraciamento com a Medalha de Mérito por Tempo de Serviço",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 127"
+            },
+            {
+              "text": "desenvolvimento, coordenação, fiscalização, orientação, acompanhamento e controle das atividades relacionadas com a classificação e movimentação de pessoal",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 28"
+            },
+            {
+              "text": "mobilização, inativos, cadastro e avaliação, direitos, deveres, incentivos, gerenciamento e inspeção da folha de pagamento",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 28"
+            },
+            {
+              "text": "identificação, pessoal civil, serviço auxiliar temporário e recrutamento",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 28"
+            },
+            {
+              "text": "acompanhamento e controle das atividades técnico-administrativas relativas aos serviços de saúde física e mental, assistência social e psicológica",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 28"
+            },
+            {
+              "text": "assessoramento nos assuntos referentes a pessoal",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 28"
+            }
+          ],
+          "proposedText": "gerenciar, organizar, coordenar e controlar o emprego dos bombeiros militares da ativa e de servidores civis\nelaborar os atos de movimentação de oficiais e praças\npreparar os atos necessários à transferência para a inatividade, agregação, reversão e exclusão do serviço ativo\ngerir o processo de identificação do pessoal militar e seus dependentes, servidores civis e pensionistas\nconfeccionar, controlar, atualizar e fiscalizar a folha de pagamento de pessoal ativo, militar e civil\nsubsidiar as Comissões de Promoção de Oficiais e Praças nos processos relacionados à promoção de militares, observada a legislação específica\nmanter o equilíbrio da força entre as OBMs, observando o Quadro de Organização e Distribuição – QOD do CBMDF\npromover a seleção e o ingresso de militares na Corporação\nmanter atualizados o cadastro e os registros funcionais do pessoal da ativa, militar e civil\nplanejar e organizar os afastamentos dos militares ativos, inclusive agregados, e dos servidores civis efetivos ou comissionados\nprospectar e informar a demanda de formação, especialização e aperfeiçoamento de militares\norganizar a relação dos oficiais e praças que preencham os requisitos necessários ao agraciamento com a Medalha de Mérito por Tempo de Serviço\ndesenvolvimento, coordenação, fiscalização, orientação, acompanhamento e controle das atividades relacionadas com a classificação e movimentação de pessoal\nmobilização, inativos, cadastro e avaliação, direitos, deveres, incentivos, gerenciamento e inspeção da folha de pagamento\nidentificação, pessoal civil, serviço auxiliar temporário e recrutamento\nacompanhamento e controle das atividades técnico-administrativas relativas aos serviços de saúde física e mental, assistência social e psicológica\nassessoramento nos assuntos referentes a pessoal"
+        },
+        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -879,9 +957,85 @@
             {
               "text": "Promover a educação preventiva direcionada à população em geral, visando a segurança, a prevenção de incêndio e a prevenção de acidentes.",
               "source": "ro"
+            },
+            {
+              "text": "supervisionar, orientar e controlar o Ensino, a Pesquisa e a Instrução no Corpo de Bombeiros Militar do Estado de Mato Grosso/CBM-MT em todas as suas modalidades",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "expedir normas, diretrizes e instruções para o cumprimento da legislação de Ensino vigente, de modo a assegurar aos estabelecimentos de ensino a realização dos seus objetivos",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "supervisionar, orientar e controlar o funcionamento das Unidades de Ensino ou Unidades designadas",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "promover intercâmbio com instituições de ensino civis ou militares",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "assessorar os órgãos de Direção Superior na elaboração do Planejamento Oficial, propondo os recursos orçamentários necessários ao Ensino no CBM-MT",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "administrar o Ensino e Instrução na instituição e executá-los por meio das Unidades de Ensino ou UBM designadas",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "desdobrar diretrizes, planos e ordens do Comando Geral relacionadas ao ensino, instrução e pesquisa na Instituição",
+              "source": "cf. CBMMT, RI, Art. 161"
+            },
+            {
+              "text": "promover formação, aperfeiçoamento, preparação, habilitação, altos estudos e especialização dos bombeiros militares",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "definir cursos e estágios de interesse da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "promover intercâmbio técnico-cultural, em nível nacional e internacional, objetivando capacitar o quadro de pessoal para desempenho de suas atribuições",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "promover a seleção interna de candidatos aos cursos e estágios",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "expedir ou homologar os certificados e diplomas dos cursos e estágios",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "supervisionar a educação básica, orientada pela disciplina militar, nos termos da legislação específica",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "contribuir para o desenvolvimento da doutrina bombeiro militar",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "zelar pelos princípios, valores e tradições corporativas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "promover, de forma continuada, a avaliação dos cursos e estágios da Corporação, bem como seus respectivos currículos e infraestrutura de ensino",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "promover a articulação entre a vida acadêmica e a prática profissional nos diversos níveis de ensino da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 227"
+            },
+            {
+              "text": "elaborar o planejamento institucional inerente a formação, especialização, aperfeiçoamento, habilitação e aprimoramento técnico-profissional dos bombeiros militares, bem como o controle e fiscalização das atividades correlatas",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 28"
+            },
+            {
+              "text": "elaborar normas e manuais operacionais relacionados à doutrina institucional de ensino",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 28"
             }
           ],
-          "proposedText": "Promover a educação preventiva direcionada à população em geral, visando a segurança, a prevenção de incêndio e a prevenção de acidentes."
+          "proposedText": "Promover a educação preventiva direcionada à população em geral, visando a segurança, a prevenção de incêndio e a prevenção de acidentes.\nsupervisionar, orientar e controlar o Ensino, a Pesquisa e a Instrução no Corpo de Bombeiros Militar do Estado de Mato Grosso/CBM-MT em todas as suas modalidades\nexpedir normas, diretrizes e instruções para o cumprimento da legislação de Ensino vigente, de modo a assegurar aos estabelecimentos de ensino a realização dos seus objetivos\nsupervisionar, orientar e controlar o funcionamento das Unidades de Ensino ou Unidades designadas\npromover intercâmbio com instituições de ensino civis ou militares\nassessorar os órgãos de Direção Superior na elaboração do Planejamento Oficial, propondo os recursos orçamentários necessários ao Ensino no CBM-MT\nadministrar o Ensino e Instrução na instituição e executá-los por meio das Unidades de Ensino ou UBM designadas\ndesdobrar diretrizes, planos e ordens do Comando Geral relacionadas ao ensino, instrução e pesquisa na Instituição\npromover formação, aperfeiçoamento, preparação, habilitação, altos estudos e especialização dos bombeiros militares\ndefinir cursos e estágios de interesse da Corporação\npromover intercâmbio técnico-cultural, em nível nacional e internacional, objetivando capacitar o quadro de pessoal para desempenho de suas atribuições\npromover a seleção interna de candidatos aos cursos e estágios\nexpedir ou homologar os certificados e diplomas dos cursos e estágios\nsupervisionar a educação básica, orientada pela disciplina militar, nos termos da legislação específica\ncontribuir para o desenvolvimento da doutrina bombeiro militar\nzelar pelos princípios, valores e tradições corporativas\npromover, de forma continuada, a avaliação dos cursos e estágios da Corporação, bem como seus respectivos currículos e infraestrutura de ensino\npromover a articulação entre a vida acadêmica e a prática profissional nos diversos níveis de ensino da Corporação\nelaborar o planejamento institucional inerente a formação, especialização, aperfeiçoamento, habilitação e aprimoramento técnico-profissional dos bombeiros militares, bem como o controle e fiscalização das atividades correlatas\nelaborar normas e manuais operacionais relacionados à doutrina institucional de ensino"
         },
         {
           "id": "organizacao",
@@ -971,6 +1125,172 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:dpof/finalidade",
           "proposedText": "Órgão responsável pelo planejamento, apoio administrativo, orçamentário e técnico-financeiro, bem como a execução, acompanhamento e controle das atividades inerentes à sua responsabilidade."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:dpof/competencia",
+          "caput": "Compete à DPOF:",
+          "items": [
+            {
+              "text": "executar as atribuições que lhe forem cometidas como integrante dos sistemas de administração financeira, orçamentária e contábil do Distrito Federal e da União",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187"
+            },
+            {
+              "text": "exercer a função de ordenação de despesas, observado o disposto na legislação específica, excetuando-se os créditos e recursos relacionados com a área da saúde",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187"
+            },
+            {
+              "text": "executar o Plano de Aplicação de Recursos Financeiros – PARF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187"
+            },
+            {
+              "text": "executar atividades relacionadas com a contabilidade pública",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187"
+            },
+            {
+              "text": "repassar ao EMG as informações de natureza orçamentária, financeira e contábil referentes à DIOFI, para a alimentação dos relatórios de prestações de contas do Distrito Federal e da União",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187"
+            },
+            {
+              "text": "auxiliar a elaboração dos Planejamentos Orçamentários e do PARF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187"
+            },
+            {
+              "text": "realizar a atividade orçamentária, financeira, contábil e fiscal da Corporação",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "assessorar no planejamento, organização e desenvolvimento das atividades meio da Corporação",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "subsidiar os setores estratégicos do Corpo de Bombeiros Militar do Pará com informações orçamentário-financeiras",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "realizar a gestão alocativa do orçamento da Corporação tendo como parâmetro o grupo, natureza e elemento de despesa, assim como a parametrização do plano interno em conformidade com o Quadro Detalhado de Despesa - QDD",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "realizar a gestão distributiva das finanças da Corporação observando as fontes de recurso e seus detalhamentos",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "programar a execução orçamentária e financeira da Corporação em observância ao cronograma de desembolso estabelecido Quadro de Quotas Quadrimestrais - QDQQ",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "controlar as despesas de regime de adiantamento como diárias e suprimento de fundos, assessorando o Departamento Geral de Administração e o ordenador de despesas, alertando da execução em seu limite prudencial",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "assessorar na elaboração do planejamento de Lei Orçamentária Anual referente aos créditos da Corporação",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "assessorar na elaboração do Plano Plurianual Anual referente aos tetos orçamentários da Corporação",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "gerenciar os recursos da Corporação em atendimento às disposições estabelecidas na Lei de Responsabilidade Fiscal - LRF",
+              "source": "cf. CBMPA, RI, Art. 170"
+            },
+            {
+              "text": "supervisionar e fiscalizar, no âmbito da Corporação, as atividades de finanças, contabilidade, auditoria nos processos de licitação e pagamento e o acompanhamento orçamentário",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "apoiar na elaboração do orçamento-programa",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "providenciar a solicitação de crédito suplementar para a Corporação",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "executar as atribuições que lhe competirem como integrante do sistema de administração financeira, orçamentária e contábil do governo do Estado de Alagoas",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "manter contatos, através do Comandante Geral, com a Procuradoria e com Tribunal de Contas do Estado sobre assuntos pertinentes à sua área de atuação",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "realizar pagamento com custeio de pessoal e de todas as despesas efetuadas pela Corporação",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "emitir Nota de Empenho e toda documentação pertinente, relacionada com os pagamentos diversos",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "realizar o controle financeiro e contábil dos fundos pertencentes ao Corpo de Bombeiros",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "distribuir os recursos orçamentários e extraordinários, de acordo com o Plano de Aplicação de Recursos do Comando Geral",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "receber, consolidar e verificar as prestações de contas",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "acompanhar a programação financeira de reembolso e a fixação de cotas orçamentárias e extraordinárias",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "exercer as atividades de tesouraria",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "organizar balanços das atividades financeiras do Corpo de Bombeiros, de acordo com a legislação vigente",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "realizar análise dos balanços, balancetes e demonstrações das OBM, bem como levantar e analisar os custeios globais e parciais",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "coordenar e realizar auditoria técnico contábil, financeira e patrimonial, visando a salvaguarda dos bens, a verificação da exatidão e regularidade das contas, e a eficiência operacional e de controle dos sistemas",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "certificar a regularidade das contas de ordenadores de despesa, em função das auditorias realizadas",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "verificar o cumprimento de contratos, convênios, ajustes e atos que gerem e extingam direitos e obrigações quanto à observância de disposições legais",
+              "source": "cf. CBMAL, RI, Art. 52"
+            },
+            {
+              "text": "planejar, controlar e executar as atividades relacionadas com pessoal",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26"
+            },
+            {
+              "text": "promover as atividades inerentes ao pagamento de militares, civis e fornecedores",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26"
+            },
+            {
+              "text": "praticar atos inerentes à execução financeira e contábil",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26"
+            },
+            {
+              "text": "elaborar normas internas sobre gestão de pessoal e financeira",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26"
+            },
+            {
+              "text": "planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26"
+            },
+            {
+              "text": "elaborar boletins gerais",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26"
+            }
+          ],
+          "proposedText": "executar as atribuições que lhe forem cometidas como integrante dos sistemas de administração financeira, orçamentária e contábil do Distrito Federal e da União\nexercer a função de ordenação de despesas, observado o disposto na legislação específica, excetuando-se os créditos e recursos relacionados com a área da saúde\nexecutar o Plano de Aplicação de Recursos Financeiros – PARF\nexecutar atividades relacionadas com a contabilidade pública\nrepassar ao EMG as informações de natureza orçamentária, financeira e contábil referentes à DIOFI, para a alimentação dos relatórios de prestações de contas do Distrito Federal e da União\nauxiliar a elaboração dos Planejamentos Orçamentários e do PARF\nrealizar a atividade orçamentária, financeira, contábil e fiscal da Corporação\nassessorar no planejamento, organização e desenvolvimento das atividades meio da Corporação\nsubsidiar os setores estratégicos do Corpo de Bombeiros Militar do Pará com informações orçamentário-financeiras\nrealizar a gestão alocativa do orçamento da Corporação tendo como parâmetro o grupo, natureza e elemento de despesa, assim como a parametrização do plano interno em conformidade com o Quadro Detalhado de Despesa - QDD\nrealizar a gestão distributiva das finanças da Corporação observando as fontes de recurso e seus detalhamentos\nprogramar a execução orçamentária e financeira da Corporação em observância ao cronograma de desembolso estabelecido Quadro de Quotas Quadrimestrais - QDQQ\ncontrolar as despesas de regime de adiantamento como diárias e suprimento de fundos, assessorando o Departamento Geral de Administração e o ordenador de despesas, alertando da execução em seu limite prudencial\nassessorar na elaboração do planejamento de Lei Orçamentária Anual referente aos créditos da Corporação\nassessorar na elaboração do Plano Plurianual Anual referente aos tetos orçamentários da Corporação\ngerenciar os recursos da Corporação em atendimento às disposições estabelecidas na Lei de Responsabilidade Fiscal - LRF\nsupervisionar e fiscalizar, no âmbito da Corporação, as atividades de finanças, contabilidade, auditoria nos processos de licitação e pagamento e o acompanhamento orçamentário\napoiar na elaboração do orçamento-programa\nprovidenciar a solicitação de crédito suplementar para a Corporação\nexecutar as atribuições que lhe competirem como integrante do sistema de administração financeira, orçamentária e contábil do governo do Estado de Alagoas\nmanter contatos, através do Comandante Geral, com a Procuradoria e com Tribunal de Contas do Estado sobre assuntos pertinentes à sua área de atuação\nrealizar pagamento com custeio de pessoal e de todas as despesas efetuadas pela Corporação\nemitir Nota de Empenho e toda documentação pertinente, relacionada com os pagamentos diversos\nrealizar o controle financeiro e contábil dos fundos pertencentes ao Corpo de Bombeiros\ndistribuir os recursos orçamentários e extraordinários, de acordo com o Plano de Aplicação de Recursos do Comando Geral\nreceber, consolidar e verificar as prestações de contas\nacompanhar a programação financeira de reembolso e a fixação de cotas orçamentárias e extraordinárias\nexercer as atividades de tesouraria\norganizar balanços das atividades financeiras do Corpo de Bombeiros, de acordo com a legislação vigente\nrealizar análise dos balanços, balancetes e demonstrações das OBM, bem como levantar e analisar os custeios globais e parciais\ncoordenar e realizar auditoria técnico contábil, financeira e patrimonial, visando a salvaguarda dos bens, a verificação da exatidão e regularidade das contas, e a eficiência operacional e de controle dos sistemas\ncertificar a regularidade das contas de ordenadores de despesa, em função das auditorias realizadas\nverificar o cumprimento de contratos, convênios, ajustes e atos que gerem e extingam direitos e obrigações quanto à observância de disposições legais\nplanejar, controlar e executar as atividades relacionadas com pessoal\npromover as atividades inerentes ao pagamento de militares, civis e fornecedores\npraticar atos inerentes à execução financeira e contábil\nelaborar normas internas sobre gestão de pessoal e financeira\nplanejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho\nelaborar boletins gerais"
         },
         {
           "id": "organizacao",
@@ -1086,6 +1406,68 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:dsap/finalidade",
           "proposedText": "Órgão responsável pelo planejamento, direção, coordenação, fiscalização e controle das atividades relacionadas à saúde e assistência ao pessoal do CBMRO."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:dsap/competencia",
+          "caput": "Compete à DSAP:",
+          "items": [
+            {
+              "text": "fomentar ações de promoção da saúde aos bombeiros militares da ativa buscando a manutenção da força de trabalho",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "praticar os atos necessários ao recolhimento das indenizações ao Fundo de Saúde, observada a legislação específica",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "zelar pelo cumprimento do Regulamento Geral da Assistência Médica e Odontológica da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "exercer a função de ordenação de despesas, especificamente quanto aos créditos e recursos relacionados com a sua área de competência",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "prover ao bombeiro militar, seus dependentes e pensionistas: assistência médico-hospitalar; assistência odontológica; assistência psicossocial; capacitação física",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "gerenciar e fiscalizar o sistema de saúde do CBMDF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "acompanhar os serviços prestados pelas empresas credenciadas na área de saúde",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "realizar perícias médicas, odontológicas e psicológicas no âmbito do sistema de saúde do CBMDF",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "coordenar e administrar o serviço de informações aos usuários do serviço",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "repassar anualmente ao EMG as informações de natureza orçamentária, financeira e contábil referentes à DISAU, para a alimentação dos relatórios de prestações de contas do Distrito Federal e da União",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 154"
+            },
+            {
+              "text": "planejar, coordenar, orientar, controlar e avaliar as atividades realizadas pelos serviços médico e odontológico",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 32"
+            },
+            {
+              "text": "executar as ações relacionadas à saúde física e mental dos militares da Corporação",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 32"
+            },
+            {
+              "text": "apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja envolvida",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 32"
+            }
+          ],
+          "proposedText": "fomentar ações de promoção da saúde aos bombeiros militares da ativa buscando a manutenção da força de trabalho\npraticar os atos necessários ao recolhimento das indenizações ao Fundo de Saúde, observada a legislação específica\nzelar pelo cumprimento do Regulamento Geral da Assistência Médica e Odontológica da Corporação\nexercer a função de ordenação de despesas, especificamente quanto aos créditos e recursos relacionados com a sua área de competência\nprover ao bombeiro militar, seus dependentes e pensionistas: assistência médico-hospitalar; assistência odontológica; assistência psicossocial; capacitação física\ngerenciar e fiscalizar o sistema de saúde do CBMDF\nacompanhar os serviços prestados pelas empresas credenciadas na área de saúde\nrealizar perícias médicas, odontológicas e psicológicas no âmbito do sistema de saúde do CBMDF\ncoordenar e administrar o serviço de informações aos usuários do serviço\nrepassar anualmente ao EMG as informações de natureza orçamentária, financeira e contábil referentes à DISAU, para a alimentação dos relatórios de prestações de contas do Distrito Federal e da União\nplanejar, coordenar, orientar, controlar e avaliar as atividades realizadas pelos serviços médico e odontológico\nexecutar as ações relacionadas à saúde física e mental dos militares da Corporação\napoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja envolvida"
         },
         {
           "id": "organizacao",
@@ -1215,6 +1597,148 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:dlog/finalidade",
           "proposedText": "Órgão responsável pela gestão logística da Corporação, competindo-lhe o estudo, fiscalização, inspeção, planejamento, orientação normativa, direção, coordenação, controle e execução das atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:dlog/competencia",
+          "caput": "Compete à DLOG:",
+          "items": [
+            {
+              "text": "coordenação, controle e execução das atividades de logística",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 29"
+            },
+            {
+              "text": "suprimento, manutenção e controle patrimonial da Corporação",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 29"
+            },
+            {
+              "text": "planejamento, acompanhamento e execução orçamentária e financeira",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 29"
+            },
+            {
+              "text": "atividades de controladoria e auditoria de recursos descentralizados",
+              "source": "cf. CBMPR, Lei nº 22.206/2024, Art. 29"
+            },
+            {
+              "text": "coordenar a gestão dos bens móveis, imóveis e semoventes",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "elaborar termo de referência ou projeto básico visando à contratação de serviços e aquisição de materiais relativos a obras, viaturas, embarcações, aeronaves, materiais, equipamentos, serviços e demais necessidades da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "coordenar a execução e a fiscalização da manutenção predial, de viaturas, de embarcações, de aeronaves e de materiais e equipamentos",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "coordenar a execução e a fiscalização das atividades próprias de intendência, subsistência e administração patrimonial",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "administrar contratos de prestação de serviços de natureza continuada",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "fomentar e orientar a realização de estudos técnicos preliminares e planos de negócios relativos ao planejamento de contratações públicas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "desenvolver ações com o objetivo de minimizar gastos de natureza continuada",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "realizar a gestão das viaturas administrativas do CBMDF, assegurando sua disponibilidade e adequada distribuição dos recursos",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218"
+            },
+            {
+              "text": "planejar, normatizar e coordenar o funcionamento do sistema logístico do CBMPA",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "elaborar e supervisionar os planos de apoio logístico, considerando o planejamento estratégico da Corporação",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "atuar de forma proativa em cenários de incerteza, promovendo a resiliência logística e a continuidade dos serviços essenciais",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "gerenciar o suprimento de materiais de consumo, permanentes e equipamentos diversos",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "coordenar o recebimento, controle de estoque, armazenamento e distribuição de materiais e bens",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "elaborar e revisar especificações técnicas de bens e serviços relacionados à área de logística",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "apoiar os setores da Corporação nas solicitações logísticas e de infraestrutura",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "supervisionar o controle da frota de veículos administrativos da Corporação, controlando sua utilização, abastecimento e manutenção",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "supervisionar a manutenção preventiva e corretiva de viaturas, equipamentos e demais bens móveis",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "planejar, acompanhar e fiscalizar obras e serviços de engenharia predial e de infraestrutura",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "propor reformas e adequações das instalações físicas da Corporação, em consonância com normas técnicas e orçamentárias",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "realizar vistorias técnicas para avaliação das condições das instalações e necessidades de intervenção",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "controlar o patrimônio mobiliário da Corporação, promovendo o tombamento, movimentação, baixa e inventário dos bens",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "acompanhar e executar ações de transferência patrimonial entre as unidades da Corporação",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "zelar pela integridade física dos bens sob sua responsabilidade",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "inovar os processos do sistema logístico da Corporação, promovendo eficiência, economicidade e modernização",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "aprimorar a comunicação entre os setores envolvidos na cadeia logística, garantindo maior integração e celeridade nos processos",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "promover práticas sustentáveis na gestão de resíduos, insumos e consumo de recursos materiais",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "integrar-se aos processos de planejamento e gestão do DGA, fornecendo subsídios técnicos e operacionais para tomada de decisão",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "atuar em conjunto com os demais órgãos de direção setorial no desenvolvimento de projetos estratégicos",
+              "source": "cf. CBMPA, RI, Art. 163"
+            },
+            {
+              "text": "propor normas internas, diretrizes e instruções técnicas relativas às suas competências",
+              "source": "cf. CBMPA, RI, Art. 163"
+            }
+          ],
+          "proposedText": "coordenação, controle e execução das atividades de logística\nsuprimento, manutenção e controle patrimonial da Corporação\nplanejamento, acompanhamento e execução orçamentária e financeira\natividades de controladoria e auditoria de recursos descentralizados\ncoordenar a gestão dos bens móveis, imóveis e semoventes\nelaborar termo de referência ou projeto básico visando à contratação de serviços e aquisição de materiais relativos a obras, viaturas, embarcações, aeronaves, materiais, equipamentos, serviços e demais necessidades da Corporação\ncoordenar a execução e a fiscalização da manutenção predial, de viaturas, de embarcações, de aeronaves e de materiais e equipamentos\ncoordenar a execução e a fiscalização das atividades próprias de intendência, subsistência e administração patrimonial\nadministrar contratos de prestação de serviços de natureza continuada\nfomentar e orientar a realização de estudos técnicos preliminares e planos de negócios relativos ao planejamento de contratações públicas\ndesenvolver ações com o objetivo de minimizar gastos de natureza continuada\nrealizar a gestão das viaturas administrativas do CBMDF, assegurando sua disponibilidade e adequada distribuição dos recursos\nplanejar, normatizar e coordenar o funcionamento do sistema logístico do CBMPA\nelaborar e supervisionar os planos de apoio logístico, considerando o planejamento estratégico da Corporação\natuar de forma proativa em cenários de incerteza, promovendo a resiliência logística e a continuidade dos serviços essenciais\ngerenciar o suprimento de materiais de consumo, permanentes e equipamentos diversos\ncoordenar o recebimento, controle de estoque, armazenamento e distribuição de materiais e bens\nelaborar e revisar especificações técnicas de bens e serviços relacionados à área de logística\napoiar os setores da Corporação nas solicitações logísticas e de infraestrutura\nsupervisionar o controle da frota de veículos administrativos da Corporação, controlando sua utilização, abastecimento e manutenção\nsupervisionar a manutenção preventiva e corretiva de viaturas, equipamentos e demais bens móveis\nplanejar, acompanhar e fiscalizar obras e serviços de engenharia predial e de infraestrutura\npropor reformas e adequações das instalações físicas da Corporação, em consonância com normas técnicas e orçamentárias\nrealizar vistorias técnicas para avaliação das condições das instalações e necessidades de intervenção\ncontrolar o patrimônio mobiliário da Corporação, promovendo o tombamento, movimentação, baixa e inventário dos bens\nacompanhar e executar ações de transferência patrimonial entre as unidades da Corporação\nzelar pela integridade física dos bens sob sua responsabilidade\ninovar os processos do sistema logístico da Corporação, promovendo eficiência, economicidade e modernização\naprimorar a comunicação entre os setores envolvidos na cadeia logística, garantindo maior integração e celeridade nos processos\npromover práticas sustentáveis na gestão de resíduos, insumos e consumo de recursos materiais\nintegrar-se aos processos de planejamento e gestão do DGA, fornecendo subsídios técnicos e operacionais para tomada de decisão\natuar em conjunto com os demais órgãos de direção setorial no desenvolvimento de projetos estratégicos\npropor normas internas, diretrizes e instruções técnicas relativas às suas competências"
         },
         {
           "id": "organizacao",
@@ -1918,9 +2442,221 @@
             {
               "text": "Assessorar o Comandante-Geral na tomada de decisão como competência primordial.",
               "source": "ro"
+            },
+            {
+              "text": "orientar, coordenar e controlar as atividades e o funcionamento do Sistema de Inteligência do Bombeiro Militar",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "produzir os conhecimentos necessários com o objetivo de auxiliar o Comandante-Geral, nas decisões, na elaboração de estudos e planejamento do Estado-Maior Geral, visando o emprego da Instituição na atividade Constitucional",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "produzir e difundir conhecimento de inteligência e contra-inteligência de vital importância para o uso das atividades administrativas e operacionais, às unidades e órgãos subordinados, e a comunidade de inteligência",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "estabelecer trocas de informações, com o órgão de inteligência da Secretária de Segurança Pública do Estado de Mato Grosso (SSP/MT) e a Polícia Judiciária Civil",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "integrar o sistema de inteligência do Exército, conforme dispuser no campo da defesa interna",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "conhecer, acompanhar e levantar informações sobre a conjuntura estadual, nos assuntos de interesse da segurança pública, defesa interna e defesa civil",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "orientar e realizar a busca de informes e difundir, com oportunidade, as informações produzidas aos órgãos interessados",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "orientar e conduzir as instituições, relacionadas com a atividade de inteligência na Instituição Bombeiro Militar",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "elaborar plano de informações e plano de busca, garantindo o detalhamento das informações da Segurança Pública para o funcionamento do sistema de inteligência dentro da Instituição",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "acompanhar a situação criminológica do bombeiro militar e a do Estado, mantendo banco de dados, identificando as áreas de incidências de crime e contravenção penal, e outros fatores psicossociais que contribuam para perturbação da Ordem Pública e/ou sua iminência",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "realizar a seleção e o credenciamento de pessoal, de inteligência da Instituição, submetendo todos os seus integrantes às análises periódicas",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "estabelecer e controlar as medidas de contra-inteligência e segurança",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "prestar apoio técnico, material as agências subordinadas do sistema de inteligência",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "organizar e manter o cadastramento de pessoal de inteligência da CACI e das UBMs subordinadas à Coordenadoria da Agencia Central de Inteligência",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "organizar e manter o arquivo sigiloso da seção",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "exercer constante ação doutrinária e normativa sobre a perfeita mentalidade, durante a execução das atividades de inteligência dentro da Instituição",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "organizar, preparar e distribuir Boletim Reservado do Comando Geral",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "organizar e manter a mapoteca necessária às atividades operacionais da Instituição",
+              "source": "cf. CBMMT, RI, Art. 54"
+            },
+            {
+              "text": "realizar a análise de situações de interesse institucional, proporcionando diagnósticos e prognósticos, visando subsidiar o Comando-Geral e, eventualmente, outros órgãos de Inteligência",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "subsidiar as atividades preventivas e operacionais por intermédio da produção de conhecimentos e de ações específicas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "administrar os bancos de dados de classificação sigilosa disponibilizados ao Centro de Inteligência",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "produzir e difundir conhecimentos aos órgãos de Inteligência sobre situações que possam desencadear crises, grave perturbação da ordem pública, calamidades e outras intercorrências que possam afetar a segurança pública",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "preservar o sigilo institucional e governamental sobre necessidades de informações, fontes, fluxos, métodos, técnicas e capacidades de Inteligência das agências encarregadas da gestão da segurança pública",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "monitorar as informações veiculadas nos diversos meios de comunicação visando à produção de conhecimentos de interesse da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "realizar investigação social de bombeiros militares e candidatos ao ingresso na Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "efetuar e controlar o registro, a emissão e suspensão de porte de arma de fogo, bem como emitir autorização para trânsito de arma de fogo dos militares da Corporação, conforme legislação específica",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "realizar levantamento de dados operacionais referentes a situações de risco à vida e ao patrimônio visando à adoção de medidas preventivas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "realizar atividade de segurança de autoridade, quando determinado pelo Comandante Geral",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "confeccionar, dar publicidade e arquivar o Boletim de Acesso Restrito da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "apoiar o planejamento da segurança orgânica dos diversos órgãos da Corporação, quando motivado",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "apoiar as atividades de ensino e instrução, atinentes à sua área de atuação, de acordo com as normas e diretrizes adotadas pelo Departamento de Ensino, Pesquisa, Ciência e Tecnologia",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "consolidar a doutrina de Inteligência no âmbito da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "agir proativamente adotando medidas voltadas à prevenção, obstrução, detecção e neutralização de vulnerabilidades e ameaças à Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 304"
+            },
+            {
+              "text": "planejar, coordenar, executar, fiscalizar, controlar, articular, supervisionar e gerenciar as atividades de inteligência bombeiro militar, no âmbito da Coorporação, dentro do território paraense",
+              "source": "cf. CBMPA, RI, Art. 140"
+            },
+            {
+              "text": "assessorar o Comandante-Geral da Corporação nos assuntos de cunho estratégico, tático e operacional que lhe forem confiados",
+              "source": "cf. CBMPA, RI, Art. 140"
+            },
+            {
+              "text": "interrelacionar com os demais órgãos estaduais de inteligência e do Sistema Brasileiro de Inteligência (SISBIN)",
+              "source": "cf. CBMPA, RI, Art. 140"
+            },
+            {
+              "text": "estudar, planejar, coordenar, controlar e supervisionar todas as atividades de informações e contra-informações no âmbito do Corpo de Bombeiros",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "promover reuniões visando estabelecer uma unidade de doutrina e de comportamento administrativo e operacional",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "manter o Comandante Geral informado de todos os fatos, informes e informações que digam respeito ao emprego local do Corpo de Bombeiros e as possibilidades de informações e solicitações da comunidade sobre informações da sua área",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "acionar os demais órgãos do sistema de informações do Corpo de Bombeiros visando a produção de informações específicas, quando necessárias",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "orientar, controlar e coordenar as medidas de contra-informações na Corporação",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "realizar reuniões periódicas com o pessoal da assessoria, para uma análise clara e objetiva das atividades desenvolvidas; visando, com isso, aperfeiçoar os métodos e procedimentos de atuação",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "manter atualizadas as cartas de situação operacional, no tocante a informações sobre os locais de risco, estatística operacional e recursos comunitários de apoio às operações bombeiros militares, tanto na área da Capital como no interior do Estado",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "fiscalizar o cumprimento da doutrina de informações no âmbito da Corporação",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "receber, protocolar, dar ciência, encaminhar e arquivar os documentos sigilosos endereçados ao Corpo de Bombeiros",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "elaborar o plano de informações da Corporação",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "organizar e manter atualizados fichários e arquivos contendo informações específicas de prevenção de incêndios, tais como pontos sensíveis ou prováveis focos de incêndios, além de outras relacionadas com salvamento",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "organizar e manter atualizados fichários e arquivos contendo informações de interesses da Defesa Civil, bem como os recursos de apoio comunitário às operações BM",
+              "source": "cf. CBMAL, RI, Art. 25"
+            },
+            {
+              "text": "produzir conhecimentos e informações que subsidiem ações para prevenir, neutralizar, coibir e reprimir atos de qualquer natureza que venham prejudicar a Corporação no cumprimento de suas atribuições legais, tendo como fundamentos básicos a defesa do Estado Democrático de Direito e a dignidade da pessoa humana",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 29"
+            },
+            {
+              "text": "exercer atividades de inteligência de interesse institucional com o intuito de subsidiar tomadas de decisão do Comandante-Geral e do Subcomandante-Geral, com vistas ao aprimoramento dos serviços prestados pela Instituição",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 29"
+            },
+            {
+              "text": "identificar, monitorar e avaliar ameaças reais ou potenciais à segurança e manutenção das atividades do Corpo de Bombeiros Militar",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 29"
+            },
+            {
+              "text": "realizar investigações sociais relativas à seleção de candidatos ao ingresso nas fileiras da Corporação",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 29"
+            },
+            {
+              "text": "produzir conhecimentos e informações que subsidiem tomadas de decisão e ações relacionadas ao exercício das atribuições previstas nesta Lei",
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 29"
             }
           ],
-          "proposedText": "Assessorar o Comandante-Geral na tomada de decisão como competência primordial."
+          "proposedText": "Assessorar o Comandante-Geral na tomada de decisão como competência primordial.\norientar, coordenar e controlar as atividades e o funcionamento do Sistema de Inteligência do Bombeiro Militar\nproduzir os conhecimentos necessários com o objetivo de auxiliar o Comandante-Geral, nas decisões, na elaboração de estudos e planejamento do Estado-Maior Geral, visando o emprego da Instituição na atividade Constitucional\nproduzir e difundir conhecimento de inteligência e contra-inteligência de vital importância para o uso das atividades administrativas e operacionais, às unidades e órgãos subordinados, e a comunidade de inteligência\nestabelecer trocas de informações, com o órgão de inteligência da Secretária de Segurança Pública do Estado de Mato Grosso (SSP/MT) e a Polícia Judiciária Civil\nintegrar o sistema de inteligência do Exército, conforme dispuser no campo da defesa interna\nconhecer, acompanhar e levantar informações sobre a conjuntura estadual, nos assuntos de interesse da segurança pública, defesa interna e defesa civil\norientar e realizar a busca de informes e difundir, com oportunidade, as informações produzidas aos órgãos interessados\norientar e conduzir as instituições, relacionadas com a atividade de inteligência na Instituição Bombeiro Militar\nelaborar plano de informações e plano de busca, garantindo o detalhamento das informações da Segurança Pública para o funcionamento do sistema de inteligência dentro da Instituição\nacompanhar a situação criminológica do bombeiro militar e a do Estado, mantendo banco de dados, identificando as áreas de incidências de crime e contravenção penal, e outros fatores psicossociais que contribuam para perturbação da Ordem Pública e/ou sua iminência\nrealizar a seleção e o credenciamento de pessoal, de inteligência da Instituição, submetendo todos os seus integrantes às análises periódicas\nestabelecer e controlar as medidas de contra-inteligência e segurança\nprestar apoio técnico, material as agências subordinadas do sistema de inteligência\norganizar e manter o cadastramento de pessoal de inteligência da CACI e das UBMs subordinadas à Coordenadoria da Agencia Central de Inteligência\norganizar e manter o arquivo sigiloso da seção\nexercer constante ação doutrinária e normativa sobre a perfeita mentalidade, durante a execução das atividades de inteligência dentro da Instituição\norganizar, preparar e distribuir Boletim Reservado do Comando Geral\norganizar e manter a mapoteca necessária às atividades operacionais da Instituição\nrealizar a análise de situações de interesse institucional, proporcionando diagnósticos e prognósticos, visando subsidiar o Comando-Geral e, eventualmente, outros órgãos de Inteligência\nsubsidiar as atividades preventivas e operacionais por intermédio da produção de conhecimentos e de ações específicas\nadministrar os bancos de dados de classificação sigilosa disponibilizados ao Centro de Inteligência\nproduzir e difundir conhecimentos aos órgãos de Inteligência sobre situações que possam desencadear crises, grave perturbação da ordem pública, calamidades e outras intercorrências que possam afetar a segurança pública\npreservar o sigilo institucional e governamental sobre necessidades de informações, fontes, fluxos, métodos, técnicas e capacidades de Inteligência das agências encarregadas da gestão da segurança pública\nmonitorar as informações veiculadas nos diversos meios de comunicação visando à produção de conhecimentos de interesse da Corporação\nrealizar investigação social de bombeiros militares e candidatos ao ingresso na Corporação\nefetuar e controlar o registro, a emissão e suspensão de porte de arma de fogo, bem como emitir autorização para trânsito de arma de fogo dos militares da Corporação, conforme legislação específica\nrealizar levantamento de dados operacionais referentes a situações de risco à vida e ao patrimônio visando à adoção de medidas preventivas\nrealizar atividade de segurança de autoridade, quando determinado pelo Comandante Geral\nconfeccionar, dar publicidade e arquivar o Boletim de Acesso Restrito da Corporação\napoiar o planejamento da segurança orgânica dos diversos órgãos da Corporação, quando motivado\napoiar as atividades de ensino e instrução, atinentes à sua área de atuação, de acordo com as normas e diretrizes adotadas pelo Departamento de Ensino, Pesquisa, Ciência e Tecnologia\nconsolidar a doutrina de Inteligência no âmbito da Corporação\nagir proativamente adotando medidas voltadas à prevenção, obstrução, detecção e neutralização de vulnerabilidades e ameaças à Corporação\nplanejar, coordenar, executar, fiscalizar, controlar, articular, supervisionar e gerenciar as atividades de inteligência bombeiro militar, no âmbito da Coorporação, dentro do território paraense\nassessorar o Comandante-Geral da Corporação nos assuntos de cunho estratégico, tático e operacional que lhe forem confiados\ninterrelacionar com os demais órgãos estaduais de inteligência e do Sistema Brasileiro de Inteligência (SISBIN)\nestudar, planejar, coordenar, controlar e supervisionar todas as atividades de informações e contra-informações no âmbito do Corpo de Bombeiros\npromover reuniões visando estabelecer uma unidade de doutrina e de comportamento administrativo e operacional\nmanter o Comandante Geral informado de todos os fatos, informes e informações que digam respeito ao emprego local do Corpo de Bombeiros e as possibilidades de informações e solicitações da comunidade sobre informações da sua área\nacionar os demais órgãos do sistema de informações do Corpo de Bombeiros visando a produção de informações específicas, quando necessárias\norientar, controlar e coordenar as medidas de contra-informações na Corporação\nrealizar reuniões periódicas com o pessoal da assessoria, para uma análise clara e objetiva das atividades desenvolvidas; visando, com isso, aperfeiçoar os métodos e procedimentos de atuação\nmanter atualizadas as cartas de situação operacional, no tocante a informações sobre os locais de risco, estatística operacional e recursos comunitários de apoio às operações bombeiros militares, tanto na área da Capital como no interior do Estado\nfiscalizar o cumprimento da doutrina de informações no âmbito da Corporação\nreceber, protocolar, dar ciência, encaminhar e arquivar os documentos sigilosos endereçados ao Corpo de Bombeiros\nelaborar o plano de informações da Corporação\norganizar e manter atualizados fichários e arquivos contendo informações específicas de prevenção de incêndios, tais como pontos sensíveis ou prováveis focos de incêndios, além de outras relacionadas com salvamento\norganizar e manter atualizados fichários e arquivos contendo informações de interesses da Defesa Civil, bem como os recursos de apoio comunitário às operações BM\nproduzir conhecimentos e informações que subsidiem ações para prevenir, neutralizar, coibir e reprimir atos de qualquer natureza que venham prejudicar a Corporação no cumprimento de suas atribuições legais, tendo como fundamentos básicos a defesa do Estado Democrático de Direito e a dignidade da pessoa humana\nexercer atividades de inteligência de interesse institucional com o intuito de subsidiar tomadas de decisão do Comandante-Geral e do Subcomandante-Geral, com vistas ao aprimoramento dos serviços prestados pela Instituição\nidentificar, monitorar e avaliar ameaças reais ou potenciais à segurança e manutenção das atividades do Corpo de Bombeiros Militar\nrealizar investigações sociais relativas à seleção de candidatos ao ingresso nas fileiras da Corporação\nproduzir conhecimentos e informações que subsidiem tomadas de decisão e ações relacionadas ao exercício das atribuições previstas nesta Lei"
         },
         {
           "id": "organizacao",
@@ -1992,6 +2728,136 @@
           "proposedText": "Órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de comunicação social da Corporação."
         },
         {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:ccs/competencia",
+          "caput": "Compete à CCS:",
+          "items": [
+            {
+              "text": "desenvolver a politica de Comunicação Social da Corporação",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "promover, coordenar e estabelecer diretrizes relativas a atividade fim",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "desenvolver registros de atividades da Corporação ou com a participação da mesma, visando manter atualizado o histórico do CBMMT",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "planejar e orientar as ações que estimulam o público interno a concretização dos objetivos da politica do Comando Geral",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "promover estudos visando ao aprimoramento de técnicas e dos meios de comunicação da Corporação",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "acompanhar e analisar as notícias vinculadas pelos órgãos de imprensa sobre a Corporação",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "promover campanhas com vistas e despertar nos Militares e Civis integrantes da Corporação uma mentalidade de civismo e cidadania útil na vida comunitária",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "desenvolver o entrelaçamento das entidades Civis e Militares do Estado",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "realizar e divulgar a cobertura de eventos nos quais esteja envolvido o CBMMT",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "realizar Cerimonial Civil e Militar das solenidades militares e atividades sociais do CBMMT",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "elaborar as normas de cerimonial civil para visitas, recepções, palestras e conferências",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "manter estreita ligação com os órgãos de Imprensa e divulgação",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "elaborar diretrizes gerais de levantamento estatístico, a serem baixadas pelo Comandante que lhe forem atribuídos pelo Comandante-Geral ou pelo Chefe do Estado-Maior",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "planejar, coordenar e fiscalizar as atividades relacionadas com o Museu do Corpo de Bombeiros Militar",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "apresentar relatório diário da mídia ao Comandante-Geral em assuntos relacionados ao CBMMT e a Segurança Pública do Estado",
+              "source": "cf. CBMMT, RI, Art. 110"
+            },
+            {
+              "text": "planejar, promover e coordenar as atividades de Comunicação Social",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "promover e participar de campanhas educativas com vistas a desenvolver na comunidade a consciência para os problemas relacionados com incêndios, acidentes em geral e pânico",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "planejar e coordenar a realização das solenidades de interesse institucional",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "implementar e fomentar ações que visem fortalecer a imagem da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "contribuir para a preservação das tradições, da memória e dos valores morais e culturais da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "fomentar ações que visem o fortalecimento do moral, da coesão e do espírito de corpo da tropa",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "interagir com os diversos órgãos da Corporação para a troca de informações necessárias ao desenvolvimento de estudos e projetos relativos à comunicação social",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "cooperar com os demais órgãos públicos de comunicação social",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "interagir com os veículos privados de imprensa",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 291"
+            },
+            {
+              "text": "responsabilizar-se pelos contatos entre Corpo de Bombeiros e Impressa",
+              "source": "cf. CBMAL, RI, Art. 26"
+            },
+            {
+              "text": "assessorar o Comandante Geral em assuntos de suas atribuições",
+              "source": "cf. CBMAL, RI, Art. 26"
+            },
+            {
+              "text": "estudar, propor e expor ao Comandante Geral as atividades que lhe escapem à competência",
+              "source": "cf. CBMAL, RI, Art. 26"
+            },
+            {
+              "text": "praticar todos os atos e medidas necessárias ao bom funcionamento da Assessoria",
+              "source": "cf. CBMAL, RI, Art. 26"
+            },
+            {
+              "text": "encarregar-se do cerimonial civil e atividades sociais",
+              "source": "cf. CBMAL, RI, Art. 26"
+            },
+            {
+              "text": "manter estreita ligação com os órgãos de impressa e divulgação, bem como com órgãos e outras entidades públicas, visando sempre conquistar a compreensão e o apoio à missão bombeiro militar",
+              "source": "cf. CBMAL, RI, Art. 26"
+            }
+          ],
+          "proposedText": "desenvolver a politica de Comunicação Social da Corporação\npromover, coordenar e estabelecer diretrizes relativas a atividade fim\ndesenvolver registros de atividades da Corporação ou com a participação da mesma, visando manter atualizado o histórico do CBMMT\nplanejar e orientar as ações que estimulam o público interno a concretização dos objetivos da politica do Comando Geral\npromover estudos visando ao aprimoramento de técnicas e dos meios de comunicação da Corporação\nacompanhar e analisar as notícias vinculadas pelos órgãos de imprensa sobre a Corporação\npromover campanhas com vistas e despertar nos Militares e Civis integrantes da Corporação uma mentalidade de civismo e cidadania útil na vida comunitária\ndesenvolver o entrelaçamento das entidades Civis e Militares do Estado\nrealizar e divulgar a cobertura de eventos nos quais esteja envolvido o CBMMT\nrealizar Cerimonial Civil e Militar das solenidades militares e atividades sociais do CBMMT\nelaborar as normas de cerimonial civil para visitas, recepções, palestras e conferências\nmanter estreita ligação com os órgãos de Imprensa e divulgação\nelaborar diretrizes gerais de levantamento estatístico, a serem baixadas pelo Comandante que lhe forem atribuídos pelo Comandante-Geral ou pelo Chefe do Estado-Maior\nplanejar, coordenar e fiscalizar as atividades relacionadas com o Museu do Corpo de Bombeiros Militar\napresentar relatório diário da mídia ao Comandante-Geral em assuntos relacionados ao CBMMT e a Segurança Pública do Estado\nplanejar, promover e coordenar as atividades de Comunicação Social\npromover e participar de campanhas educativas com vistas a desenvolver na comunidade a consciência para os problemas relacionados com incêndios, acidentes em geral e pânico\nplanejar e coordenar a realização das solenidades de interesse institucional\nimplementar e fomentar ações que visem fortalecer a imagem da Corporação\ncontribuir para a preservação das tradições, da memória e dos valores morais e culturais da Corporação\nfomentar ações que visem o fortalecimento do moral, da coesão e do espírito de corpo da tropa\ninteragir com os diversos órgãos da Corporação para a troca de informações necessárias ao desenvolvimento de estudos e projetos relativos à comunicação social\ncooperar com os demais órgãos públicos de comunicação social\ninteragir com os veículos privados de imprensa\nresponsabilizar-se pelos contatos entre Corpo de Bombeiros e Impressa\nassessorar o Comandante Geral em assuntos de suas atribuições\nestudar, propor e expor ao Comandante Geral as atividades que lhe escapem à competência\npraticar todos os atos e medidas necessárias ao bom funcionamento da Assessoria\nencarregar-se do cerimonial civil e atividades sociais\nmanter estreita ligação com os órgãos de impressa e divulgação, bem como com órgãos e outras entidades públicas, visando sempre conquistar a compreensão e o apoio à missão bombeiro militar"
+        },
+        {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
@@ -2055,6 +2921,88 @@
           "sectionTitle": "Da Finalidade",
           "editId": "organ:cinf/finalidade",
           "proposedText": "Órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de tecnologia da informação da Corporação."
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cinf/competencia",
+          "caput": "Compete à CINF:",
+          "items": [
+            {
+              "text": "planejar, controlar e dimensionar os serviços e equipamentos de informática do Corpo de Bombeiros Militar",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "elaborar as normas e diretrizes dos serviços de informática necessários ao suporte das atividades administrativas e operacionais",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "prover suporte técnico necessário à manutenção periódica nos equipamentos de informática da instituição, promovendo a prestação de serviços terceirizados, quando for o caso",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "elaborar as normas gerais de ação relativas aos serviços de Tecnologia da Informação",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "coordenar a implantação, acompanhar e manter o Sistema de Tecnologia da Informação, existente no âmbito da instituição",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "articular com órgãos da administração pública e privada, no sentido de assegurar o pleno cumprimento da Política Estadual de Tecnologia da Informação",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "estudar e planejar sistemas de automação, visando o aperfeiçoamento e a racionalização das atividades da instituição",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "zelar pela manutenção de normas de segurança física e de informação dos tecnológicos e sistemas de informação",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "prestar assessoramento na elaboração de normas de procedimentos para o sistema administrativo e de assuntos relativos ao sistema de Tecnologia da Informação do Corpo de Bombeiros Militar",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "elaborar em conjunto com os órgãos e setores competentes o Plano Diretor de Tecnologia da Informação da Corporação",
+              "source": "cf. CBMMT, RI, Art. 129"
+            },
+            {
+              "text": "planejar, organizar, dirigir e controlar as atividades de gestão de tecnologia da informação e de comunicação – TIC",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "desenvolver o Plano Diretor de Tecnologia da Informação e Comunicação da Corporação e mantê-lo atualizado",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "propor e fiscalizar a política de segurança da informação e comunicação da Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "homologar as soluções de TIC a serem utilizadas pela Corporação",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "realizar atividades relacionadas à análise e desenvolvimento de sistemas",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "administrar bases de dados e redes de computadores",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "planejar, controlar e efetuar a manutenção preventiva, corretiva e evolutiva de soluções de TIC",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            },
+            {
+              "text": "propor a fixação e destinação de recursos a serem incluídos em programas e projetos na área de TIC",
+              "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 241"
+            }
+          ],
+          "proposedText": "planejar, controlar e dimensionar os serviços e equipamentos de informática do Corpo de Bombeiros Militar\nelaborar as normas e diretrizes dos serviços de informática necessários ao suporte das atividades administrativas e operacionais\nprover suporte técnico necessário à manutenção periódica nos equipamentos de informática da instituição, promovendo a prestação de serviços terceirizados, quando for o caso\nelaborar as normas gerais de ação relativas aos serviços de Tecnologia da Informação\ncoordenar a implantação, acompanhar e manter o Sistema de Tecnologia da Informação, existente no âmbito da instituição\narticular com órgãos da administração pública e privada, no sentido de assegurar o pleno cumprimento da Política Estadual de Tecnologia da Informação\nestudar e planejar sistemas de automação, visando o aperfeiçoamento e a racionalização das atividades da instituição\nzelar pela manutenção de normas de segurança física e de informação dos tecnológicos e sistemas de informação\nprestar assessoramento na elaboração de normas de procedimentos para o sistema administrativo e de assuntos relativos ao sistema de Tecnologia da Informação do Corpo de Bombeiros Militar\nelaborar em conjunto com os órgãos e setores competentes o Plano Diretor de Tecnologia da Informação da Corporação\nplanejar, organizar, dirigir e controlar as atividades de gestão de tecnologia da informação e de comunicação – TIC\ndesenvolver o Plano Diretor de Tecnologia da Informação e Comunicação da Corporação e mantê-lo atualizado\npropor e fiscalizar a política de segurança da informação e comunicação da Corporação\nhomologar as soluções de TIC a serem utilizadas pela Corporação\nrealizar atividades relacionadas à análise e desenvolvimento de sistemas\nadministrar bases de dados e redes de computadores\nplanejar, controlar e efetuar a manutenção preventiva, corretiva e evolutiva de soluções de TIC\npropor a fixação e destinação de recursos a serem incluídos em programas e projetos na área de TIC"
         },
         {
           "id": "organizacao",

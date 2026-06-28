@@ -77,6 +77,57 @@ Avaliados e **descartados** neste bloco (motivo):
   como órgão. `condeg` (Conselho Deliberativo de Estratégia e Gestão) é raro fora do RO;
   os dois achados (AL/MT) são os equivalentes mais próximos com rol verbatim.
 
+## Frente 2 — Bloco 2: Direção Setorial (2026-06-28)
+
+Curadoria dos 8 órgãos de direção setorial que apareciam com "0 estados" no `/comparar`:
+`dp` (Diretoria de Pessoal), `deei` (Educação, Ensino e Instrução), `dpof` (Planejamento,
+Orçamento e Finanças), `dsap` (Saúde e Assistência ao Pessoal), `dlog` (Logística), `cint`
+(Inteligência), `ccs` (Comunicação Social) e `cinf` (Informática). Só entrou competência
+**enumerada e verbatim** da **unidade** — atribuições do cargo (Diretor/Comandante/Chefe)
+e capítulos meramente definicionais ficaram de fora.
+
+| Estado | Base legal | Órgão (organ_key) | Itens |
+|---|---|---|---|
+| CBMDF | RI (Portaria nº 24/2020), Art. 127 | Diretoria de Gestão de Pessoal (dp) | 12 |
+| CBMPR | Lei nº 22.206/2024, Art. 28 | Diretoria de Pessoal (dp) | 5 |
+| CBMMT | RI, Art. 161 | Diretoria de Ensino, Instrução e Pesquisa (deei) | 7 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 227 | Diretoria de Ensino (deei) | 10 |
+| CBMGO | Lei nº 18.305/2013, Art. 28 | Comando de Ensino Bombeiro Militar (deei) | 2 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 187 | Diretoria de Orçamento e Finanças (dpof) | 6 |
+| CBMPA | RI, Art. 170 | Diretoria de Finanças (dpof) | 10 |
+| CBMAL | RI, Art. 52 | Diretoria de Finanças (dpof) | 17 |
+| CBMGO | Lei nº 18.305/2013, Art. 26 | Comando de Gestão e Finanças (dpof) | 6 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 154 | Diretoria de Saúde (dsap) | 10 |
+| CBMGO | Lei nº 18.305/2013, Art. 32 | Comando de Saúde (dsap) | 3 |
+| CBMPR | Lei nº 22.206/2024, Art. 29 | Diretoria de Apoio Logístico e Finanças (dlog) | 4 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 218 | Diretoria de Materiais e Serviços (dlog) | 8 |
+| CBMPA | RI, Art. 163 | Diretoria de Apoio Logístico (dlog) | 21 |
+| CBMMT | RI, Art. 54 | Coordenadoria da Agência Central de Inteligência (cint) | 18 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 304 | Centro de Inteligência (cint) | 15 |
+| CBMPA | RI, Art. 140 | Centro de Inteligência (cint) | 3 |
+| CBMAL | RI, Art. 25 | Assessoria de Inteligência e Contra-Inteligência (cint) | 12 |
+| CBMGO | Lei nº 18.305/2013, Art. 29 | Comando de Operações de Inteligência (cint) | 5 |
+| CBMMT | RI, Art. 110 | Coordenadoria de Comunicação Social (ccs) | 15 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 291 | Centro de Comunicação Social (ccs) | 9 |
+| CBMAL | RI, Art. 26 | Assessoria de Relações Públicas e Comunicação Social (ccs) | 7 |
+| CBMMT | RI, Art. 129 | Coordenadoria de Tecnologia da Informação (cinf) | 10 |
+| CBMDF | RI (Portaria nº 24/2020), Art. 241 | Diretoria de Tecnologia da Informação e Comunicação (cinf) | 8 |
+
+Avaliados e **descartados** neste bloco (motivo):
+
+- **dsap — CBMPA, RI, Art. 194**: caput definicional ("compete realizar o planejamento, a
+  gestão e a execução das ações de assistência relacionadas à saúde…"); sem rol de incisos.
+- **cinf — CBMPA, RI, Art. 186 (DTIC)**: caput definicional ("planejar, coordenar, executar
+  e fiscalizar as atividades relacionadas à tecnologia da informação…"); sem rol.
+- **cint — CBMES, NGA, Art. 11 (Assessoria de Inteligência)**: caput de finalidade em uma
+  frase ("compete executar atividades relacionadas ao serviço de inteligência…"); sem rol.
+- **cinf — CBMAL, RI, Art. 94/95 (Centro de Tecnologia, Informática e Informação)**: Art. 94
+  é caput definicional; Art. 95 enumera atribuições do **Comandante (cargo)**, não do órgão.
+- **dlog — CBMGO, Lei nº 18.305/2013, Art. 33 (Centro de Manutenção)**: rol restrito à
+  manutenção de viaturas/frota, não à direção setorial de logística/suprimento como unidade.
+- **dp — CBMGO, Lei nº 18.305/2013, Art. 26**: o rol foi atribuído a `dpof` (órgão "Gestão e
+  Finanças" combinado); não duplicado em `dp` para evitar ruído.
+
 ## Avaliadas e descartadas (com motivo)
 
 **LOBs novas pós-2021 não curadas** — varredura em 2026-06-19. Todas seguem o padrão

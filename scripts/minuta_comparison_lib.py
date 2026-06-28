@@ -45,6 +45,22 @@ AUTO_MATCH_KEYWORDS = {
     "depdec": {"include": ["defesa civil", "protecao e defesa"], "exclude": []},
     "condeg": {"include": ["conselho"],
                "exclude": ["municipal", "regional"]},
+    "dp":   {"include": ["diretoria de pessoal", "departamento de pessoal",
+                         "gestao de pessoal", "gestao de pessoas", "recursos humanos"],
+             "exclude": ["assistencia ao pessoal", "saude"]},
+    "deei": {"include": ["ensino", "instrucao", "academia"],
+             "exclude": ["defesa civil"]},
+    "dpof": {"include": ["financas", "orcamento", "gestao e financas",
+                         "administracao financeira"],
+             "exclude": ["planejamento operacional"]},
+    "dsap": {"include": ["saude", "assistencia ao pessoal", "assistencia social"],
+             "exclude": []},
+    "dlog": {"include": ["logistica", "apoio logistico", "material e patrimonio",
+                         "materiais e servicos", "suprimento"],
+             "exclude": []},
+    "cint": {"include": ["inteligencia"],                        "exclude": []},
+    "ccs":  {"include": ["comunicacao social"],                  "exclude": []},
+    "cinf": {"include": ["informatica", "tecnologia da informacao"], "exclude": []},
 }
 
 
