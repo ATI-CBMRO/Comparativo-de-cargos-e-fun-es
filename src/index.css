@@ -2243,3 +2243,14 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .rev-final-btn { border: 1px solid #c5cee0; background: #fff; border-radius: 8px; padding: 7px 14px; font-size: 13px; cursor: pointer; }
 .rev-final-btn.fechar { background: #c8102e; color: #fff; border-color: #c8102e; font-weight: 700; }
 .rev-final-ro { font-size: 14px; color: #1a1a1a; background: #f1faf4; border: 1px solid #abdcbd; border-radius: 8px; padding: 8px 10px; margin: 0; }
+
+/* ===== Revisão: geração com IA ===== */
+.rev-ia { margin-bottom: 12px; }
+.rev-ia-atual { font-size: 13px; color: #3a4866; background: #f7f9fc; border: 1px solid #d7deea; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; }
+.rev-ia-atual .label, .rev-ia-proposta .label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+.rev-ia-atual .label { color: #5a667f; }
+.rev-ia-btn { background: #6b3fc8; color: #fff; border: none; border-radius: 8px; padding: 8px 16px; font-weight: 700; font-size: 13px; cursor: pointer; }
+.rev-ia-btn:disabled { opacity: .5; cursor: default; }
+.rev-ia-dica { display: block; font-size: 12px; color: #8a93a8; margin-top: 4px; }
+.rev-ia-proposta { margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #1a1a1a; background: #f6f2fc; border: 1px solid #d6c8f0; border-radius: 8px; padding: 10px 12px; }
+.rev-ia-proposta .label { color: #6b3fc8; }

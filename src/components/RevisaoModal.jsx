@@ -10,12 +10,15 @@ function formataData(criadoEm) {
 
 export default function RevisaoModal({
   dispositivo, suggestions, finalText, user,
-  onAdd, onToggleLike, onDelete, onSetStatus, onSaveFinal, onClose,
+  onAdd, onToggleLike, onDelete, onSetStatus, onSaveFinal, onGerarProposta, onClose,
 }) {
   const isAdmin = user.role === 'admin'
   const [texto, setTexto] = useState('')
   const [enviando, setEnviando] = useState(false)
   const [final, setFinal] = useState(finalText?.texto ?? '')
+  const [propostaIA, setPropostaIA] = useState(null)
+  const [gerando, setGerando] = useState(false)
+  const [erroIA, setErroIA] = useState('')
 
   useEffect(() => { setFinal(finalText?.texto ?? '') }, [finalText, dispositivo.id])
 
@@ -25,6 +28,24 @@ export default function RevisaoModal({
     setEnviando(true)
     try { await onAdd(texto); setTexto('') }
     finally { setEnviando(false) }
+  }
+
+  const relevantes = suggestions.filter(s => (s.adminStatus ?? 'pendente') === 'relevante')
+
+  const gerar = async () => {
+    setErroIA(''); setGerando(true)
+    try {
+      const proposta = await onGerarProposta({
+        textoAtual: dispositivo.trecho,
+        sugestoes: relevantes.map(s => s.texto),
+      })
+      setPropostaIA(proposta)
+      setFinal(proposta)
+    } catch (e) {
+      setErroIA(e.message || 'Não foi possível gerar agora. Tente de novo.')
+    } finally {
+      setGerando(false)
+    }
   }
 
   const statusClasse = (s) => {
@@ -93,11 +114,32 @@ export default function RevisaoModal({
             </div>
             {isAdmin ? (
               <>
+                <div className="rev-ia">
+                  <div className="rev-ia-atual">
+                    <span className="label">Texto atual</span>
+                    {dispositivo.trecho}
+                  </div>
+                  <button className="rev-ia-btn" onClick={gerar} disabled={gerando || relevantes.length === 0}
+                    title={relevantes.length === 0 ? 'Marque ao menos uma sugestão como relevante' : ''}>
+                    {gerando ? 'Gerando…' : '✨ Gerar proposta com IA'}
+                  </button>
+                  {relevantes.length === 0 && (
+                    <span className="rev-ia-dica">Marque ao menos uma sugestão como relevante para gerar.</span>
+                  )}
+                  {erroIA && <div className="login-erro">{erroIA}</div>}
+                  {propostaIA && (
+                    <div className="rev-ia-proposta">
+                      <span className="label">✨ Proposta da IA (referência)</span>
+                      {propostaIA}
+                    </div>
+                  )}
+                </div>
                 <textarea className="rev-modal-input" value={final} onChange={e => setFinal(e.target.value)}
                   placeholder="Escreva o texto final consolidado…" rows={3} />
                 <div className="rev-final-acoes">
                   <button className="rev-final-btn" onClick={() => onSaveFinal(final, 'em_aberto')}>Salvar rascunho</button>
-                  <button className="rev-final-btn fechar" onClick={() => onSaveFinal(final, 'fechado')}>Salvar e fechar</button>
+                  <button className="rev-final-btn fechar"
+                    onClick={async () => { await onSaveFinal(final, 'fechado'); onClose() }}>Salvar e fechar</button>
                 </div>
               </>
             ) : (

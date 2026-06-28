@@ -8,6 +8,7 @@ import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
   setAdminStatus, subscribeFinalTexts, saveFinalText,
 } from '../lib/reviewData.js'
+import { gerarProposta } from '../lib/gerarProposta.js'
 import RevisaoModal from '../components/RevisaoModal.jsx'
 
 function Rail({ count, onClick }) {
@@ -126,6 +127,7 @@ export default function Revisao() {
           onDelete={(s) => deleteSuggestion(s.id)}
           onSetStatus={(s, status) => setAdminStatus(s.id, status)}
           onSaveFinal={(texto, status) => saveFinalText(aberto.id, { texto, status, autor: { uid: user.uid, nome: user.nome } })}
+          onGerarProposta={({ textoAtual, sugestoes }) => gerarProposta({ textoAtual, sugestoesRelevantes: sugestoes })}
           onClose={() => setAberto(null)}
         />
       )}
