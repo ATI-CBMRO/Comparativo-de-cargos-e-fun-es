@@ -93,14 +93,18 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   Cargos" e "DPO × COT" foram removidas junto com seus componentes.
 - `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
   `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
-  espelha os 12 órgãos da minuta (11 da LOB + Guarnição), comparando RO × estados em matriz
+  espelha os 26 órgãos da LOB + Guarnição (27 no total), comparando RO × estados em matriz
   (campos nas linhas, estados nas colunas, RO sticky), com proveniência curado/automático por
-  estado (badge). A lista "Órgãos da minuta" na barra lateral segue a ORDEM e a PROFUNDIDADE
-  hierárquica do organograma (DFS da cadeia de comando), indentada por `depth` — esse campo é
-  gravado no JSON por `build_minuta_comparison.py` via `build_minuta_structure.command_order`,
-  mantendo a lista em sincronia com o `commandChart`. Só entram estados com dado correspondente;
-  busca filtra a matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por
-  região/similaridade.
+  estado (badge). A camada curada vem de `comparativo_dpo_cot.json` (DPO/COT) + as competências
+  verbatim de `minuta_enrichment.py` (`ENRICHMENT_ORGAN`, pivotadas por fonte; a curadoria dos
+  15 órgãos da Frente 2 — Direção Geral/Setorial/Colegiada, Assessoramento/Apoio e Correição —
+  segue documentada em `docs/ENRIQUECIMENTO_MINUTA.md`) + a Guarnição (CBMSE); a camada
+  automática casa por palavra-chave (`AUTO_MATCH_KEYWORDS` em `minuta_comparison_lib.py`). A
+  lista "Órgãos da minuta" na barra lateral segue a ORDEM e a PROFUNDIDADE hierárquica do
+  organograma (DFS da cadeia de comando), indentada por `depth` — esse campo é gravado no JSON
+  por `build_minuta_comparison.py` via `build_minuta_structure.command_order`, mantendo a lista
+  em sincronia com o `commandChart`. Só entram estados com dado correspondente; busca filtra a
+  matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
 - Componentes-chave: `Organogram.jsx` (árvore expansível/colapsável) e `OrgDetail.jsx`
   (painel lateral de detalhamento). `CargoComparator.jsx` e `OrgaosOperacionaisComparator.jsx`
   foram removidos junto com as abas do Dashboard.
