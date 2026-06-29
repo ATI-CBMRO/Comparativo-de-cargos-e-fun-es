@@ -293,5 +293,57 @@ paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não sã
   (Art. 15), Engenharia/Arquitetura (Art. 24) e Gestão de Frota (Art. 27) são subórgãos →
   não duplicados.
 
-Ao ampliar (Lotes 2–5), editar `scripts/lob_enrichment.py` e reexecutar
+### Lote 2 — CE, DF, ES, MA, MG + completa GO (75 entradas no lote; GO recebe +13)
+
+| Estado | Lei (LOB) | Órgãos com entrada | Observação |
+|---|---|---|---|
+| Ceará (CE) | Lei nº 13.438/2004 | 13 | LOB "por competência": finalidade-caput + incisos em vários órgãos (CAT, Defesa Civil, Logística, Financeiro, Pessoas, Colégio Militar). Nomenclatura própria (Coordenadorias/Células/Núcleos). |
+| Distrito Federal (DF) | Lei nº 8.255/1991 | 8 | LOB por finalidade; órgãos de apoio (Academia, Policlínicas) e execução (Comando Operacional) descritos na lei. |
+| Espírito Santo (ES) | LC nº 101/1997 (consolidada) | 13 | Finalidade-caput por órgão; os §§ do Art. 13 (DAT/DOp/DAL/DF) e Arts. 17/19/20 são **texto de Lei** (LC 705/2013), não NGA — aproveitados. |
+| Maranhão (MA) | Lei nº 10.230/2015 | 18 | LOB rica: competência por órgão (§§ do Art. 13 p/ as 7 Diretorias) + finalidade dos Comandos Operacionais e Batalhões especializados. |
+| Minas Gerais (MG) | LC nº 54/1999 | 8 | LOB enxuta: finalidade só de parte dos órgãos (CAT/CSM/ABM/AG c/ incisos; Comando Operacional; BBM/CIA). Diretorias (Art. 17-19) só mencionadas. |
+| Goiás (GO) | Lei nº 18.305/2013 | 15 (2 já existiam) | **Completado**: +13 órgãos (CRBM, Correições, Logística, Defesa Civil, Ensino, Inteligência, Saúde, COAér, Chefia de Gabinete, Assessoria Jurídica, Secretaria-Geral, BBM, CIBM). LOB por incisos; `cg`/`dp` da amostra original intocados. |
+
+**Casos cargo-vs-órgão (finalidade tirada da atribuição do dirigente, não de caput do órgão):**
+- `(cg, ce)` Art. 8º, `(cg, df)` Art. 9º, `(cg, es)` Art. 10, `(cg, ma)` Art. 6º, `(cg, mg)`
+  Art. 12 §1º — todas as LOBs descrevem o "Comando" pelo papel/atribuição do **Comandante-Geral**
+  (cargo), não há finalidade-caput para o Comando-Geral como unidade.
+
+**LOB remete a decreto/NGA (detalhe não disponível na lei):**
+- **ES** (LC 101/1997) — Arts. 13/24 remetem criação/estrutura das Diretorias e subunidades a
+  decreto do Governador; a **competência-caput** de cada Diretoria (DAT/DOp/DAL/DF), porém,
+  consta da própria LC (via LC 705/2013) e foi aproveitada. A NGA do CBMES (camada RI) **não**
+  foi usada, conforme orientado.
+- **DF** (Lei 8.255/1991) — Art. 10-B/34 remetem denominação/estrutura de órgãos a ato do Poder
+  Executivo; aproveitada a finalidade-caput que a lei traz para CG, Alto Comando, Controladoria,
+  Ajudância, Gabinete, Academia, Policlínicas e Comando Operacional.
+
+**Órgãos sem equivalente na LOB do estado (sem entrada), por estado:**
+- **CE**: a Academia de Bombeiro Militar (Art. 29) foi **revogada** (Lei 14.629/2010) → `deei`
+  usa o Colégio Militar (Art. 30, "responsável pelo sistema de ensino"). O Núcleo de Resgate e
+  Emergência Pré-hospitalar (Art. 23) é operacional, não Saúde/Assistência → sem `dsap`. Núcleo
+  do Interior (Art. 20) pareado ao Metropolitano em `crbm`. Sem `cint`/`ccs`/`cinf`/`dpo`-aéreo
+  /`gab-cg`/`doe`/`bifea`/`boa`/`cibm` próprios na LOB.
+- **DF**: Estado-Maior-Geral (Art. 11, planejamento estratégico) sem `organ_key` próprio (não é
+  `dpo` operacional) → sem entrada. Departamentos/Diretorias (Art. 13) genéricos, sem finalidade
+  individual → sem `dp`/`dpof`/`dlog`/`cot`/`cint`. Unidades de execução por tipo (§§2º-8º do
+  Art. 28) cobertas só por `dpo` (Comando Operacional, §1º) para não pulverizar chaves.
+- **ES**: Estado-Maior (Art. 11) é direção-geral de planejamento, sem chave própria → sem entrada
+  (CG já cobre o Comando). Sem `dp` autônomo (pessoal está na 1ª Seção do EM / Departamento de RH,
+  subórgão). Sem `cint`/`ccs`/`cinf`/`condeg`/`gab-cg`/`doe`/`bbs`/`bifea`/`boa`/`gbm`/`crbm`
+  próprios (CBMES não tem comandos regionais na LOB; BBM subordina-se direto ao Comando).
+- **MA**: Controladoria (Art. 15, controle financeiro) e Ouvidoria (Art. 16) ≠ Corregedoria
+  disciplinar → sem `corregedoria`. Estado-Maior-Geral (Art. 10) sem chave própria. `cot` e `cat`
+  ambos remetem à Diretoria de Atividades Técnicas (Art. 13 §5º) → registrada uma vez em `cat`.
+  Batalhão Marítimo (§5º) e de Emergências Médicas (§6º) são operacionais sem chave própria.
+- **MG**: Auditoria (Art. 16) ≠ Corregedoria → sem `corregedoria`. Estado-Maior (Art. 14) e
+  Diretorias de RH/Logística/Contabilidade (Art. 17-19) **só mencionadas, sem finalidade
+  individual** → sem `dp`/`dpof`. `cat`/`cot` registrados uma vez em `cat` (CAT, Art. 24). Sem
+  `depdec`/`cint`/`ccs`/`cinf`/`condeg`/`gab-cg`/`doe`/`bbs`/`bifea`/`boa`/`gbm` próprios.
+- **GO**: Estado Maior-Geral (Art. 14), Ajudância de Ordens (Art. 16) e Academia (Art. 31, apoio)
+  e Centro de Manutenção (Art. 33) não receberam chave (ensino já em `deei` via Art. 28; Academia
+  é apoio redundante). Comando Operacional de Bombeiros e Cia de Segurança Aeroportuária (Art. 34)
+  sem chave própria. Sem `ccs`/`cinf`/`condeg`/`doe`/`cot`/`bbs`/`bifea`/`gbm` na LOB de GO.
+
+Ao ampliar (Lotes 3–5), editar `scripts/lob_enrichment.py` e reexecutar
 `python scripts/build_minuta_comparison.py` (e `python scripts/_check_lob_merge.py`).
