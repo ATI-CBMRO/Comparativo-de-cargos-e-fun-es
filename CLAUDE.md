@@ -185,25 +185,32 @@ alterado. Specs e planos detalhados em `docs/superpowers/specs/` e `docs/superpo
 ### Rotas
 - `/login` (pública) — `src/pages/Login.jsx`. Após autenticar, aguarda o `user` ser confirmado via
   `useEffect` antes de navegar (evita corrida com `onAuthStateChanged`).
-- `/cadastro` (pública) — autocadastro do convidado *(em construção: feature "Acessos")*.
+- `/cadastro` (pública) — `src/pages/Cadastro.jsx`. Autocadastro do convidado: cria a própria senha
+  (`cadastrar`); o `AuthProvider` autoriza só se o e-mail estiver na lista de membros e `ativo:true`.
 - `/revisao` (protegida) — `src/pages/Revisao.jsx`. Documento da minuta com trilha de balões na margem
   e o popup do dispositivo (`src/components/RevisaoModal.jsx`, duas colunas: sugestões | redação final).
-- `/acessos` (protegida, só admin) — gestão de convidados/cadastros/logins *(em construção)*.
+- `/acessos` (protegida, só admin) — `src/pages/Acessos.jsx`. Gestão de convidados/cadastros: convidar
+  por e-mail, papel, bloquear/liberar/remover, e acompanhar o último login ("nunca entrou" inclusive).
 
 ### Autenticação e autorização
 - `src/lib/firebase.js` inicializa Auth + Firestore a partir de `import.meta.env.VITE_FIREBASE_*`.
-- `src/lib/auth.jsx` (`AuthProvider`/`useAuth`): autoriza quem tem doc em `members` com `ativo:true`;
-  expõe `entrar`, `sair`, `recuperarSenha` (+ `cadastrar` na feature Acessos). Papéis `participante`/`admin`.
+- `src/lib/auth.jsx` (`AuthProvider`/`useAuth`): autoriza por **e-mail** (`members/{email}` com `ativo:true`);
+  no login grava `uid`/`status:'cadastrado'`/`ultimoLogin`. Expõe `entrar`, `cadastrar`, `sair`,
+  `recuperarSenha`. E-mails sempre normalizados em minúsculas (`normalizeEmail` em `src/lib/membersStats.js`).
+  Papéis `participante`/`admin`.
+- `src/lib/membersData.js`: CRUD de membros (`subscribeMembers`/`addMember`/`setMemberRole`/`setMemberAtivo`/
+  `removeMember`); `src/lib/membersStats.js`: lógica pura (`contaStatus`/`situacaoMembro`/`normalizeEmail`, com testes).
 - `src/components/ProtectedRoute.jsx` bloqueia rotas (e `requireAdmin`).
-- O item de menu/área de admin só aparece para `role === 'admin'`.
+- Os itens de menu "Revisão" (logado) e "Acessos" (só `role === 'admin'`) aparecem condicionalmente.
 
 ### Dados (Firestore) e regras
 - Coleções: **`members`** (quem pode entrar; ver nota de indexação), **`suggestions`** (sugestões por
   dispositivo: `dispositivoId`, `autorUid`, `texto`, `curtidoPor[]`, `adminStatus`), **`finalTexts`**
   (`finalTexts/{dispositivoId}`: texto final + status em_aberto/fechado).
-- `firestore.rules` define `isMember()`/`isAdmin()` e as permissões; publicar pelo console (passo a passo
-  em `docs/FIREBASE_SETUP.md`). **`members` está migrando de indexado por UID para por E-MAIL** (`members/{email}`)
-  na feature "Acessos" — conferir a spec mais recente antes de mexer.
+- `firestore.rules` define `isMember()`/`isAdmin()` **baseados em `request.auth.token.email`** e as
+  permissões; publicar pelo console (passo a passo em `docs/FIREBASE_SETUP.md`). **`members` é indexado
+  por E-MAIL** (`members/{email}`, campos `email/nome/role/ativo/status/uid/criadoEm/criadoPor/ultimoLogin`).
+  O dono do doc só pode alterar `uid/status/ultimoLogin` (registro de login); o resto é só admin.
 - `dispositivoId` (`src/lib/dispositivoId.js`) é o endereço ESTÁVEL do dispositivo (`editId#index` ou
   `editId#caput`), pois o "Art. Nº" é recalculado por `buildArticles`. Premissa: congelar
   `minuta_structure.json` durante a rodada de revisão.
