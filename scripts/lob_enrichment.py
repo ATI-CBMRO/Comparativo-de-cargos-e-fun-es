@@ -3410,6 +3410,899 @@ LOB_ENRICHMENT = {
         "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 46",
         "organName": "Centro de Investigação e Prevenção de Incêndios", "abbr": "CIPI",
     },
+
+    # =====================================================================
+    # Lote 5 — RS, SE, SP, TO (+ SC completo) (camada LOB /comparar, 2026-06-28)
+    # =====================================================================
+
+    # --- Rio Grande do Sul (CBMRS) — Decreto nº 53.897/2018 (regulamenta a LC nº 14.920/2016) ---
+    # Decreto regulamentador enxuto (4 páginas): dá finalidade por artigo a cada órgão de
+    # direção/apoio, mas remete a estrutura interna e as competências de detalhe das Divisões e
+    # dos OBM ao Regimento Interno do CBMRS (não disponível no corpus). Sem incisos enumerados.
+    ("cg", "rs"): {
+        "finalidade": (
+            "Ao Comando-Geral, órgão de direção-geral do CBMRS, compete a administração da "
+            "Instituição, que será exercida diretamente pelo Comandante-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 4º",
+        "organName": "Comando-Geral", "abbr": "",
+    },
+    ("gab-cg", "rs"): {
+        "finalidade": (
+            "Ao Gabinete do Comando-Geral compete a assistência e o assessoramento direto ao "
+            "Comandante-Geral e ao Subcomandante-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 6º",
+        "organName": "Gabinete do Comando-Geral", "abbr": "",
+    },
+    ("condeg", "rs"): {
+        "finalidade": (
+            "O Conselho Superior é constituído pelos Coronéis da ativa em exercício na "
+            "Corporação, competindo-lhe, em assessoramento direto ao Comandante-Geral, o "
+            "acompanhamento e a manifestação em assuntos relevantes da Instituição, com vista "
+            "ao fornecimento de subsídios para a tomada de decisão"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 8º",
+        "organName": "Conselho Superior", "abbr": "",
+    },
+    ("corregedoria", "rs"): {
+        "finalidade": (
+            "A Corregedoria-Geral, órgão de disciplina, de orientação e de fiscalização das "
+            "atividades funcionais e da conduta dos militares e dos servidores civis da "
+            "Instituição, subordina-se diretamente ao Comandante-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 9º",
+        "organName": "Corregedoria-Geral", "abbr": "",
+    },
+    ("dlog", "rs"): {
+        "finalidade": (
+            "O Departamento Administrativo é o responsável pelo planejamento, controle, "
+            "fiscalização, auditoria e execução das atividades relacionadas a recursos "
+            "humanos, orçamento e finanças, logística e patrimônio e tecnologia da informação "
+            "e comunicações"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 12",
+        "organName": "Departamento Administrativo", "abbr": "",
+    },
+    ("cot", "rs"): {
+        "finalidade": (
+            "O Departamento de Segurança, Prevenção e Proteção Contra Incêndios é o órgão de "
+            "planejamento, controle e fiscalização das atividades relacionadas à segurança "
+            "contra incêndios e à investigação de sinistros em âmbito estadual"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 13",
+        "organName": "Departamento de Segurança, Prevenção e Proteção Contra Incêndios", "abbr": "",
+    },
+    ("deei", "rs"): {
+        "finalidade": (
+            "A Academia de Bombeiro Militar é o órgão responsável pelo planejamento, controle "
+            "e fiscalização das atividades relacionadas ao ensino, à saúde física do efetivo e "
+            "à pesquisa científica da Instituição, bem como pela capacitação continuada dos "
+            "servidores e dos profissionais civis que exerçam atividade auxiliar de bombeiro "
+            "em âmbito estadual"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 14",
+        "organName": "Academia de Bombeiro Militar", "abbr": "",
+    },
+    ("crbm", "rs"): {
+        "finalidade": (
+            "Os Comandos Regionais de Bombeiro Militar, escalões intermediários de comando, "
+            "com nível de Órgãos de Apoio, são os responsáveis, em suas respectivas "
+            "circunscrições territoriais, pelas atividades administrativo-operacionais dos "
+            "Órgãos de Bombeiro Militar – OBM, que lhe são subordinados"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 15",
+        "organName": "Comandos Regionais de Bombeiro Militar", "abbr": "",
+    },
+    ("bbm", "rs"): {
+        "finalidade": (
+            "Aos OBM de Segurança, de Proteção, de Prevenção e de Combate a Incêndios compete "
+            "a execução das atividades de bombeiros e de defesa civil, no âmbito de seu "
+            "espaço de responsabilidade territorial, respondendo perante o Comando Regional "
+            "de Bombeiros pela realização de suas atividades na correspondente circunscrição"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRS, LOB (Dec. nº 53.897/2018, regulamenta a LC nº 14.920/2016), Art. 18",
+        "organName": "Batalhão de Bombeiro Militar", "abbr": "BBM",
+    },
+
+    # --- Sergipe (CBMSE) — Lei nº 8.979/2022 ---
+    # LOB que dá finalidade aos órgãos de direção estratégica/colegiada/geral/operacional, sem
+    # incisos enumerados por órgão (incisos do Art. 2º são missões da Corporação, não de órgão
+    # específico). A estrutura interna e competências de detalhe são remetidas ao Regimento
+    # Interno do CBMSE (Art. 4º, parágrafo único).
+    ("cg", "se"): {
+        "finalidade": (
+            "O Comando-Geral é órgão de Direção Estratégica do CBMSE, sendo responsável pela "
+            "administração superior (comando), gestão, planejamento e condução estratégica da "
+            "Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 5º",
+        "organName": "Comando-Geral", "abbr": "",
+    },
+    ("condeg", "se"): {
+        "finalidade": (
+            "O Alto-Comando do CBMSE é o Órgão Colegiado Superior da instituição, de caráter "
+            "consultivo, necessário ao processo decisório compartilhado da gestão estratégica "
+            "do Corpo de Bombeiros Militar, a partir da provocação do Comandante-Geral"
+        ),
+        "competencias": [
+            "propor políticas de segurança pública, em particular na parcela constitucional "
+            "que cabe ao Corpo de Bombeiros Militar, e apresentar soluções para o "
+            "aperfeiçoamento do sistema",
+            "apresentar propostas e mudanças sobre matérias de cunho estratégico que promovam "
+            "o aperfeiçoamento da instituição",
+            "submeter matérias de relevância, relativas à Corporação, à superior decisão "
+            "governamental",
+            "apresentar propostas que alterem a estrutura organizacional da instituição e "
+            "outros assuntos do interesse da Corporação",
+        ],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 20",
+        "organName": "Alto-Comando", "abbr": "",
+    },
+    ("gab-cg", "se"): {
+        "finalidade": (
+            "À Chefia de Gabinete compete o exercício das funções de assistência e "
+            "assessoramento direto ao Comandante-Geral e ao Subcomandante-Geral, inerentes ao "
+            "controle, coordenação e fiscalização das atividades administrativas desenvolvidas "
+            "por militares e civis no âmbito dos Gabinetes do Comandante-Geral e do "
+            "Subcomandante-Geral, da Ajudância de Ordens"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 12",
+        "organName": "Gabinete (Chefia de Gabinete)", "abbr": "",
+    },
+    ("ag", "se"): {
+        "finalidade": (
+            "À Ajudância-Geral compete a administração do Quartel do Comando-Geral, "
+            "considerado como Organização Bombeiro Militar, bem como do expediente, da "
+            "execução dos trabalhos de secretaria, incluindo a correspondência, correio, "
+            "redação do boletim diário, do protocolo e arquivo geral e biblioteca, do apoio "
+            "em pessoal aos órgãos que compõem o Comando-Geral, dos serviços gerais, do "
+            "Centro de Memória e da segurança do Quartel do Comando-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 14",
+        "organName": "Ajudância-Geral", "abbr": "",
+    },
+    ("corregedoria", "se"): {
+        "finalidade": (
+            "A Corregedoria-Geral do Corpo de Bombeiros Militar é o órgão responsável pela "
+            "sistematização e controle das atividades de correição funcional, de caráter "
+            "disciplinar, administrativo ou de polícia judiciária militar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 15",
+        "organName": "Corregedoria-Geral", "abbr": "",
+    },
+    ("assessorias", "se"): {
+        "finalidade": "As Assessorias são órgãos de assessoramento direto do Comando-Geral em assuntos específicos da Corporação",
+        "competencias": [
+            "Assessoria Técnica de Engenharia e Arquitetura",
+            "Assessoria de Inteligência",
+            "Assessoria Técnica Institucional",
+            "Assessoria de Comunicação",
+            "Assessoria de Tecnologia da Informação",
+            "Assessoria Parlamentar",
+        ],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 18",
+        "organName": "Assessorias", "abbr": "",
+    },
+    ("dlog", "se"): {
+        "finalidade": (
+            "A Diretoria de Logística - DLOG é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle das atividades relacionadas à "
+            "logística e patrimônio do CBMSE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 23",
+        "organName": "Diretoria de Logística", "abbr": "DLOG",
+    },
+    ("dpof", "se"): {
+        "finalidade": (
+            "A Diretoria Financeira - DFIN é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle das atividades do sistema de "
+            "administração financeira e contábil do CBMSE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 24",
+        "organName": "Diretoria Financeira", "abbr": "DFIN",
+    },
+    ("dp", "se"): {
+        "finalidade": (
+            "A Diretoria de Gestão de Pessoal - DGP é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle das atividades relativas à gestão "
+            "de pessoal e desenvolvimento de recursos humanos do CBMSE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 25",
+        "organName": "Diretoria de Gestão de Pessoal", "abbr": "DGP",
+    },
+    ("deei", "se"): {
+        "finalidade": (
+            "A Diretoria de Ensino e Pesquisa - DEP é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle das atividades referentes ao "
+            "ensino, fomentando a pesquisa e viabilizando a instrução continuada dos quadros "
+            "no âmbito do CBMSE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 26",
+        "organName": "Diretoria de Ensino e Pesquisa", "abbr": "DEP",
+    },
+    ("dpo", "se"): {
+        "finalidade": (
+            "A Diretoria de Planejamento - DPLAN é responsável pela gestão, planejamento das "
+            "políticas públicas e estratégias institucionais, orientação e execução da "
+            "programação orçamentária, consolidação dos planos, programas e projetos e "
+            "acompanhamento e avaliação das ações governamentais, no âmbito do CBMSE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 27",
+        "organName": "Diretoria de Planejamento", "abbr": "DPLAN",
+    },
+    ("cot", "se"): {
+        "finalidade": (
+            "A Diretoria de Atividades Técnicas - DAT é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle de todas as atividades "
+            "concernentes à segurança contra incêndio e pânico das instalações, edificações e "
+            "locais de risco, no âmbito do Estado de Sergipe"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 29",
+        "organName": "Diretoria de Atividades Técnicas", "abbr": "DAT",
+    },
+    ("doe", "se"): {
+        "finalidade": (
+            "A Diretoria Operacional - DOP é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle das atividades operacionais e na "
+            "execução das atividades de proteção e defesa civil, sendo responsável pela "
+            "coordenação e emprego dos Comandos Regionais e Unidades Operacionais, que lhes "
+            "são subordinadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 30",
+        "organName": "Diretoria Operacional", "abbr": "DOP",
+    },
+    ("crbm", "se"): {
+        "finalidade": (
+            "Os Comandos Regionais Bombeiro Militar - CRBM subordinam-se à DOP e são órgãos de "
+            "supervisão, coordenação e planejamento operacional das unidades subordinadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 35",
+        "organName": "Comandos Regionais Bombeiro Militar", "abbr": "CRBM",
+    },
+    ("gbm", "se"): {
+        "finalidade": (
+            "As Unidades, também denominadas de Grupamentos, realizam a execução das "
+            "atividades operacionais e de apoio da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 36",
+        "organName": "Grupamento Bombeiro Militar", "abbr": "GBM",
+    },
+    ("bbs", "se"): {
+        "finalidade": "São Grupamentos Especializados do CBMSE o Grupamento de Busca e Salvamento - GBS e o Grupamento de Operações Aéreas - GOA",
+        "competencias": [],
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 39",
+        "organName": "Grupamento de Busca e Salvamento", "abbr": "GBS",
+    },
+
+    # --- São Paulo (CBPMESP) — Lei nº 616/1974 (LOB da Polícia Militar; Corpo de Bombeiros é a
+    # Seção II, Arts. 38 a 43, integrado à PM) ---
+    # LOB é da Polícia Militar do Estado de São Paulo como um todo; o Corpo de Bombeiros é
+    # subordinado ao Comando Geral da PM como órgão de execução (Art. 9º). (cg) usa o Comando do
+    # Corpo de Bombeiros (Art. 39), órgão equivalente ao Comando-Geral do CBMRO dentro da PM-SP.
+    # Os demais órgãos de direção/apoio (Estado Maior, Diretorias, Ajudância) são da PM como um
+    # todo, não exclusivos do Corpo de Bombeiros; mantidos como camada de referência por serem o
+    # nível hierárquico equivalente na estrutura da Corporação à qual o CB está integrado.
+    ("cg", "sp"): {
+        "finalidade": (
+            "O Comando do Corpo de Bombeiros da Polícia Militar é o órgão responsável perante "
+            "o Comando Geral, pelo planejamento, comando, execução, coordenação, fiscalização "
+            "e controle de todas as atividades de prevenção, extinção de incêndios e de buscas "
+            "e salvamentos, bem como das atividades técnicas a elas relacionadas no território "
+            "estadual"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 39",
+        "organName": "Comando do Corpo de Bombeiros", "abbr": "CB",
+    },
+    ("dp", "sp"): {
+        "finalidade": (
+            "A Diretoria de Pessoal (DP) é o órgão de direção setorial do sistema de "
+            "administração de pessoal, incumbindo-lhe o planejamento, execução, controle e "
+            "fiscalização das atividades relacionadas com alistamento, assistência social, "
+            "classificação e movimentação do pessoal, promoções, inativos e pensionistas "
+            "cadastro e avaliação, direitos, deveres e incentivos e pessoal civil"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 16",
+        "organName": "Diretoria de Pessoal", "abbr": "DP",
+    },
+    ("dpof", "sp"): {
+        "finalidade": (
+            "A Diretoria de Finanças (DF) é o órgão de direção setorial do sistema de "
+            "administração financeira atuando, também, como órgão de apoio na supervisão do "
+            "Comandante Geral sobre as atividades financeiras de todo e qualquer órgão da "
+            "Corporação e na distribuição de recursos orçamentários e extraordinários aos "
+            "responsáveis pelas despesas, de acordo com o planejamento estabelecido"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 14",
+        "organName": "Diretoria de Finanças", "abbr": "DF",
+    },
+    ("dlog", "sp"): {
+        "finalidade": (
+            "A Diretoria de Apoio Logístico (DAL) é o órgão de direção setorial do sistema de "
+            "administração de logística, incumbindo-lhe o planejamento, coordenação, "
+            "fiscalização e controle das atividades de suprimento e manutenção de material à "
+            "Corporação, inclusive a de saúde"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 15",
+        "organName": "Diretoria de Apoio Logístico", "abbr": "DAL",
+    },
+    ("deei", "sp"): {
+        "finalidade": (
+            "À Diretoria de Ensino (DE), órgão de direção setorial do sistema de administração "
+            "de ensino, incumbe o planejamento, coordenação, fiscalização e controle das "
+            "atividades de formação, aperfeiçoamento e especialização de oficiais e praças"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 17",
+        "organName": "Diretoria de Ensino", "abbr": "DE",
+    },
+    ("dsap", "sp"): {
+        "finalidade": (
+            "À Diretoria de Saúde (DS) órgão de direção setorial do sistema de administração "
+            "de saúde, incumbe o planejamento, execução, controle e fiscalização de todas as "
+            "atividades relacionadas à saúde do pessoal da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 18",
+        "organName": "Diretoria de Saúde", "abbr": "DS",
+    },
+    ("ag", "sp"): {
+        "finalidade": (
+            "A Ajudância Geral (AG) tem a seu cargo as funções de apoio administrativo de "
+            "atividades do Comando Geral, e de apoio em serviços e segurança do Quartel do "
+            "mesmo Comando"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 19",
+        "organName": "Ajudância Geral", "abbr": "AG",
+    },
+    ("bbm", "sp"): {
+        "finalidade": (
+            "Grupamentos de Incêndio (GI): unidades diretamente subordinadas ao Comando do "
+            "Corpo de Bombeiros, incumbidas de missão de extinção de incêndios, podendo "
+            "integrar missões de busca e salvamento"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 41, I",
+        "organName": "Grupamento de Incêndio", "abbr": "GI",
+    },
+    ("bbs", "sp"): {
+        "finalidade": (
+            "Grupamentos de Busca e Salvamento (GBS): unidades diretamente subordinadas ao "
+            "Comando de Corpo de Bombeiros, incumbidas da missão de busca e salvamento, de "
+            "modo especial, em razão da extensão da missão"
+        ),
+        "competencias": [],
+        "source": "cf. CBPMESP, LOB (Lei nº 616/1974), Art. 41, III",
+        "organName": "Grupamento de Busca e Salvamento", "abbr": "GBS",
+    },
+
+    # --- Tocantins (CBMTO) — Lei Complementar nº 131/2021 ---
+    # LOB moderna por "Unidades Administrativas" (Direção Superior/Setorial/Assessoramento
+    # Geral/Apoio/Execução); dá finalidade/competência por artigo, em sua maioria sem incisos
+    # (exceto Comando de Correição e Disciplina, Art. 12, e Assessoria de Inteligência, Art. 19).
+    ("cg", "to"): {
+        "finalidade": (
+            "O Comandante-Geral, Secretário de Estado, nomeado por ato do Chefe do Poder "
+            "Executivo, é responsável pelo comando, administração e emprego da Corporação e "
+            "do Comando de Ações de Defesa Civil, assessorado pelas demais unidades "
+            "administrativas, que lhe são subordinadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 7º",
+        "organName": "Comandante-Geral", "abbr": "CG",
+    },
+    ("gab-cg", "to"): {
+        "finalidade": "O Gabinete do Comandante-Geral tem atribuição de transmissão e controle da execução das ordens emanadas do Comandante-Geral",
+        "competencias": [
+            "organização da correspondência e despacho da documentação do Gabinete",
+            "ajudância de ordens",
+            "secretariado geral do Comandante-Geral e do Chefe do Estado-Maior",
+            "publicação do Boletim Geral",
+        ],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 19, VI",
+        "organName": "Gabinete do Comandante-Geral", "abbr": "",
+    },
+    ("corregedoria", "to"): {
+        "finalidade": "O Comando de Correição e Disciplina é encarregado de garantir a preservação dos princípios da hierarquia e disciplina da Corporação",
+        "competencias": [
+            "controlar, orientar e padronizar processos administrativos disciplinares e "
+            "Inquéritos Policiais Militares",
+            "apurar transgressões disciplinares e infrações penais de natureza militar "
+            "envolvendo seus membros",
+            "acompanhar pessoal submetido a processo penal e processo penal militar",
+        ],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 12",
+        "organName": "Comando de Correição e Disciplina", "abbr": "",
+    },
+    ("depdec", "to"): {
+        "finalidade": (
+            "O Comando de Ações de Defesa Civil é responsável pelo planejamento e coordenação "
+            "das ações de prevenção, preparação e resposta no âmbito da defesa civil"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 13",
+        "organName": "Comando de Ações de Defesa Civil", "abbr": "",
+    },
+    ("dp", "to"): {
+        "finalidade": (
+            "O Comando de Gestão de Pessoas é encarregado do planejamento e dos assuntos "
+            "estratégicos referentes à gestão profissional, à legislação, ao pessoal, à saúde "
+            "e ao ensino na Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 14",
+        "organName": "Comando de Gestão de Pessoas", "abbr": "",
+    },
+    ("dpof", "to"): {
+        "finalidade": (
+            "O Comando de Gestão de Recursos Financeiros e Patrimoniais é responsável pelo "
+            "planejamento dos assuntos referentes ao orçamento, finanças, logística e "
+            "infraestrutura da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 15",
+        "organName": "Comando de Gestão de Recursos Financeiros e Patrimoniais", "abbr": "",
+    },
+    ("cot", "to"): {
+        "finalidade": (
+            "O Comando de Atividades Técnicas é encarregado de planejar, controlar e "
+            "fiscalizar as atividades atinentes à segurança contra incêndio e emergência no "
+            "Estado"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 16",
+        "organName": "Comando de Atividades Técnicas", "abbr": "",
+    },
+    ("dpo", "to"): {
+        "finalidade": (
+            "O Comando Operacional Bombeiro Militar é responsável pelo planejamento dos "
+            "assuntos relativos à articulação operacional, à administração e ao controle das "
+            "operações bombeiro militares e pelos estudos, estatísticas, doutrinas, pesquisas "
+            "e padronização de procedimentos relacionados às atividades operacionais da "
+            "Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 17",
+        "organName": "Comando Operacional Bombeiro Militar", "abbr": "",
+    },
+    ("cint", "to"): {
+        "finalidade": "A Assessoria de Inteligência é encarregada dos assuntos relativos à inteligência e contrainteligência",
+        "competencias": [
+            "a guarda e manutenção de documentos e arquivos sigilosos",
+            "o controle de armamento dos integrantes da Corporação",
+            "a confecção do boletim reservado da Corporação",
+            "o secretariado da Comissão de Promoções de Oficiais - CPO e Comissão de Promoção "
+            "de Praças – CPP",
+        ],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 19, I",
+        "organName": "Assessoria de Inteligência", "abbr": "",
+    },
+    ("assessorias", "to"): {
+        "finalidade": "A Assessoria Jurídica tem atribuições de consultoria, análise e emissão de pareceres jurídicos nos processos e assuntos de interesse da Corporação",
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 19, II",
+        "organName": "Assessoria Jurídica", "abbr": "",
+    },
+    ("ccs", "to"): {
+        "finalidade": (
+            "A Assessoria de Comunicação Social é encarregada das atividades de comunicação "
+            "social, publicidade, relacionamento com a mídia, cerimonial, eventos e marketing "
+            "institucional"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 19, III",
+        "organName": "Assessoria de Comunicação Social", "abbr": "",
+    },
+    ("cinf", "to"): {
+        "finalidade": (
+            "A Assessoria de Telecomunicações e Informática é responsável pela coordenação e "
+            "execução das matérias relativas à informática, telecomunicações e tecnologia da "
+            "informação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 19, V",
+        "organName": "Assessoria de Telecomunicações e Informática", "abbr": "",
+    },
+    ("dsap", "to"): {
+        "finalidade": (
+            "A Diretoria de Saúde e Assistência Social, subordinada ao Comando de Gestão de "
+            "Pessoas, responsável pela coordenação, execução e acompanhamento dos assuntos "
+            "relativos aos serviços de saúde e à promoção social dos bombeiros militares, seus "
+            "dependentes e pensionistas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 18, V",
+        "organName": "Diretoria de Saúde e Assistência Social", "abbr": "",
+    },
+    ("deei", "to"): {
+        "finalidade": (
+            "Diretoria de Ensino e Pesquisa, subordinada ao Comando de Gestão de Pessoas, "
+            "encarregada de assuntos relativos à coordenação e execução do ensino, instrução e "
+            "pesquisa, inerentes às atividades de bombeiro militar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 18, II",
+        "organName": "Diretoria de Ensino e Pesquisa", "abbr": "DEP",
+    },
+    ("dlog", "to"): {
+        "finalidade": (
+            "Diretoria de Logística e Patrimônio, subordinada ao Comando de Gestão de "
+            "Recursos Financeiros e Patrimoniais, responsável pelos assuntos relativos à "
+            "aquisição de material e serviços, logística geral, e ao controle e fiscalização "
+            "do patrimônio e estoque"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 18, III",
+        "organName": "Diretoria de Logística e Patrimônio", "abbr": "",
+    },
+    ("ag", "to"): {
+        "finalidade": (
+            "Ajudância Geral, subordinada ao Comandante-Geral, encarregada dos assuntos "
+            "administrativos de segurança e manutenção das instalações físicas do Quartel do "
+            "Comando Geral, considerado como Organização Bombeiro Militar - OBM e de apoio às "
+            "unidades do Comando-Geral com pessoal auxiliar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 21, I",
+        "organName": "Ajudância Geral", "abbr": "",
+    },
+    ("bbm", "to"): {
+        "finalidade": (
+            "As Unidades Administrativas de Execução, subordinadas ao Comando Operacional, "
+            "são constituídas por Unidades Bombeiro Militares - UBM, encarregadas de executar "
+            "as atividades-fim da Corporação em determinada área, conforme Plano de "
+            "Articulação do CBMTO, podendo ser divididas em subunidades"
+        ),
+        "competencias": [],
+        "source": "cf. CBMTO, LOB (LC nº 131/2021), Art. 24",
+        "organName": "Unidade Bombeiro Militar", "abbr": "UBM",
+    },
+
+    # --- Santa Catarina (CBMSC) — Decreto nº 1.328/2021 (completa as entradas dp/sc e cg/sc já
+    # existentes na amostra inicial) ---
+    # Decreto regulamenta a LC nº 724/2018; dá finalidade e incisos detalhados (estrutura
+    # "DOS ÓRGÃOS DE DIREÇÃO/APOIO/EXECUÇÃO" no Título III). Sem equivalente RO para Conselho
+    # Estratégico (mapeado em condeg), Agência Central de Inteligência (cint) e Coordenadorias
+    # Operacionais (sem chave própria, descartada — grupo de trabalho consultivo genérico).
+    ("corregedoria", "sc"): {
+        "finalidade": "São atribuições da Corregedoria-Geral:",
+        "competencias": [
+            "promover o acompanhamento das apurações de transgressões disciplinares e ilícitos "
+            "penais atribuídos a bombeiros militares, realizadas pelos órgãos de direção, de "
+            "apoio, e de execução do CBMSC, avocando-as quando necessário",
+            "promover integração com os órgãos do Poder Judiciário, Ministério Público, "
+            "Defensoria Pública e corregedorias de outros órgãos, nos temas relacionados a "
+            "suas atribuições",
+            "baixar normas técnicas em conjunto com Estado-Maior Geral, relativas às "
+            "atividades de sua competência e controlar a sua aplicação",
+            "gerenciar o sistema de corregedoria do CBMSC",
+            "manter cópia digitalizada dos procedimentos disciplinares e penais que forem "
+            "instaurados no CBMSC",
+            "efetuar investigações, levantamentos externos ou diligências em conjunto com a "
+            "Agência Central de Inteligência, para proveito das apurações das infrações "
+            "penais militares e transgressões disciplinares e sua autoria, imputada a "
+            "bombeiros militares",
+            "elaborar estatísticas relativas às suas atividades",
+            "remeter, com exclusividade, à Justiça Militar, os Inquéritos Policiais Militares, "
+            "Sindicâncias e outros processos que tenham relação com a apuração no âmbito "
+            "criminal, concernentes a atos praticados por integrantes do CBMSC",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 33",
+        "organName": "Corregedoria-Geral", "abbr": "",
+    },
+    ("condeg", "sc"): {
+        "finalidade": (
+            "O Conselho Estratégico é um órgão de direção geral do Comando-Geral do CBMSC, "
+            "tendo as seguintes atribuições"
+        ),
+        "competencias": [
+            "prestar assistência ao Comando-Geral no desempenho das atividades relacionadas "
+            "com a execução do planejamento estratégico da Corporação, auxiliando no processo "
+            "de tomada de decisão",
+            "colaborar na elaboração de planos e ordens do Comando-Geral relacionados com "
+            "pessoal, informações, instrução, operações, ensino, assuntos administrativos, "
+            "assuntos civis, planejamento administrativo, programação e orçamento",
+            "desenvolver outras atividades de interesse ou determinadas pelo Comando-Geral da "
+            "Corporação",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 30",
+        "organName": "Conselho Estratégico", "abbr": "",
+    },
+    ("ag", "sc"): {
+        "finalidade": (
+            "A Ajudância-Geral é o órgão de direção que exerce as funções de assistência e "
+            "assessoramento direto ao Comandante-Geral na prática de atos de gestão e nos "
+            "assuntos que extrapolem às atribuições normais e específicas dos demais órgãos de "
+            "direção"
+        ),
+        "competencias": [
+            "desenvolver os trabalhos de secretaria e de documentações inerentes ao "
+            "Comandante-Geral",
+            "administrar e executar a atividade de protocolo geral da Corporação e propor a "
+            "normatização do serviço para os demais órgãos",
+            "receber e registrar a correspondência oficial, petições, processos, documentos e "
+            "quaisquer expedientes endereçados ao Comando-Geral",
+            "promover o controle dos atos administrativos assinados pelo Comandante-Geral",
+            "administrar o arquivo geral da Corporação e propor a normatização do serviço para "
+            "os demais órgãos",
+            "planejar, organizar e dirigir os serviços de segurança interna e externa do "
+            "Quartel do Comando-Geral",
+            "administrar o serviço geral do Quartel do Comando-Geral",
+            "publicar e distribuir o Boletim do CBMSC",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 27, § 1º",
+        "organName": "Ajudância-Geral", "abbr": "",
+    },
+    ("assessorias", "sc"): {
+        "finalidade": (
+            "A Assessoria Jurídica, chefiada por oficial superior da ativa com formação em "
+            "Direito, tem por finalidade prestar assistência jurídica ao Comandante-Geral, "
+            "cabendo-lhe"
+        ),
+        "competencias": [
+            "programar, organizar, orientar, coordenar, executar e controlar as atividades "
+            "relacionadas com os serviços jurídicos, no âmbito do CBMSC, vinculando-se "
+            "tecnicamente à Consultoria Jurídica da SSP e à Procuradoria-Geral do Estado (PGE)",
+            "examinar a legalidade dos atos administrativos que lhe forem submetidos à "
+            "apreciação pelo Comandante-Geral, Subcomandante-Geral e Chefe do Estado-Maior "
+            "Geral",
+            "participar do processo legislativo de elaboração de anteprojetos de LEI e "
+            "DECRETO relacionados às atividades do CBMSC",
+            "coordenar a elaboração de informações em mandados de segurança e habeas corpus "
+            "do Comandante-Geral, do Subcomandante-Geral e do Chefe do Estado-Maior Geral, "
+            "sendo as informações inerentes às demais autoridades coatoras a cargo de suas "
+            "assessorias ou corregedorias setoriais",
+            "requisitar de quaisquer órgãos ou entidades da Corporação, documentos ou "
+            "informações necessários ao exame de matéria jurídica a ele submetida, devendo os "
+            "consultados atender no prazo estipulado pela Assessoria Jurídica",
+            "apreciar editais de concurso e processos seletivos de pessoal",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 32",
+        "organName": "Assessoria Jurídica", "abbr": "",
+    },
+    ("ccs", "sc"): {
+        "finalidade": (
+            "O Centro de Comunicação Social do CBMSC é responsável por assessorar diretamente "
+            "o Comandante-Geral, promovendo a construção e manutenção da opinião pública "
+            "relacionada à Corporação, de modo a coordenar, controlar, e orientar em nível "
+            "estratégico, todas as ações de marketing institucional, a fim de preservar e "
+            "fortalecer a imagem do CBMSC, empregando todos os meios disponíveis em prol da "
+            "credibilidade, confiança e prestígio institucionais, tendo as seguintes "
+            "atribuições"
+        ),
+        "competencias": [
+            "planejar, desenvolver, coordenar e executar as atividades de comunicação social "
+            "do CBMSC",
+            "assessorar o Comandante-Geral nos aspectos relacionados à imprensa, divulgação "
+            "institucional e conscientização social",
+            "desenvolver e propor políticas de relacionamento da Corporação com órgãos e "
+            "entidades públicas e privadas, com profissionais da Corporação e com a população",
+            "divulgar as atividades desenvolvidas pelo CBMSC por meio dos diversos veículos de "
+            "comunicação social",
+            "manter o Comandante-Geral informado sobre fatos de interesse do CBMSC, quando "
+            "veiculados pela imprensa",
+            "regular, planejar, coordenar e executar o cerimonial militar e o cerimonial das "
+            "atividades sociais de interesse do Comando-Geral frequentes e aqueles "
+            "extraordinários determinados pelo Comandante-Geral",
+            "promover a imagem institucional e mercadológica do CBMSC nos ambientes sociais e "
+            "de segurança pública",
+            "possibilitar a elaboração de respostas coordenadas, articuladas, adequadas e "
+            "oportunas, aos questionamentos da sociedade e do cidadão, sobre assuntos de "
+            "interesse da Instituição",
+            "coordenar as ações dos elementos subordinados em seus relacionamentos com outros "
+            "órgãos de comunicação, que exijam, pela natureza da pauta, articulação interna e "
+            "participação coordenada",
+            "assessorar e supervisionar o conteúdo de comunicação social no âmbito da "
+            "Corporação",
+            "administrar os canais de comunicação oficiais da Corporação e monitorar os "
+            "canais de comunicação em nível dos elementos subordinados",
+            "acompanhar, analisar e informar o Comando-Geral a repercussão na sociedade das "
+            "mídias utilizadas pela Corporação",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 28",
+        "organName": "Centro de Comunicação Social", "abbr": "",
+    },
+    ("deei", "sc"): {
+        "finalidade": (
+            "A Diretoria de Instrução e Ensino, órgão de direção setorial do CBMSC, é "
+            "responsável pela inovação, planejamento, coordenação, acompanhamento, "
+            "fiscalização, controle e avaliação das seguintes atividades: formação, "
+            "aperfeiçoamento, especialização, capacitação, treinamento, instrução, pesquisa, "
+            "extensão e projetos de interesse institucional, com intuito de promover a "
+            "excelência e a evolução sustentada nos processos de ensino, de aprendizagem e de "
+            "gestão do conhecimento na educação corporativa do CBMSC"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 35",
+        "organName": "Diretoria de Instrução e Ensino", "abbr": "",
+    },
+    ("dsap", "sc"): {
+        "finalidade": (
+            "A Diretoria de Urgência e Emergência, órgão de direção setorial, incumbe-se de "
+            "fomentar, estudar, analisar, planejar, pesquisar, normatizar, controlar, prestar "
+            "assessoramento técnico e executar projetos estratégicos de atendimento "
+            "pré-hospitalar e integração com o sistema de saúde"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 36",
+        "organName": "Diretoria de Urgência e Emergência", "abbr": "",
+    },
+    ("dlog", "sc"): {
+        "finalidade": (
+            "A Diretoria de Logística e Finanças, órgão de direção setorial, responsável pelo "
+            "planejamento, coordenação, fiscalização, controle das atividades de logística, "
+            "de patrimônio, de tecnologia da informação e de serviços de comunicação da "
+            "Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 37",
+        "organName": "Diretoria de Logística e Finanças", "abbr": "",
+    },
+    ("cot", "sc"): {
+        "finalidade": (
+            "A Diretoria de Segurança Contra Incêndio, órgão de direção setorial, é "
+            "responsável por inovar, planejar, coordenar, fiscalizar, acompanhar e controlar "
+            "as atividades relacionadas com"
+        ),
+        "competencias": [
+            "a normatização em segurança contra incêndio, pânico e desastre",
+            "a análise de projetos e vistorias",
+            "o exercício do Poder de Polícia Administrativa",
+            "a investigação de incêndio e explosão",
+            "a pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 38",
+        "organName": "Diretoria de Segurança Contra Incêndio", "abbr": "",
+    },
+    ("crbm", "sc"): {
+        "finalidade": (
+            "Os Comandos Regionais, órgãos de direção operacional, responsáveis por "
+            "fiscalizar, planejar, controlar, supervisionar e coordenar as atividades das "
+            "unidades operacionais subordinadas, bem como pela gestão da própria sede, têm as "
+            "seguintes atribuições"
+        ),
+        "competencias": [
+            "inspecionar periodicamente as Organizações Bombeiro Militar subordinadas",
+            "coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a "
+            "circunscrição ou a esfera de competência do comando da unidade operacional "
+            "subordinada",
+            "supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres "
+            "no âmbito da circunscrição",
+            "orientar e acompanhar o desempenho administrativo e operacional dos elementos "
+            "subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o "
+            "aprimoramento de resultados, em consonância com o Plano Estratégico do CBMSC",
+            "fiscalizar, na circunscrição da RBM, a gestão das Centrais de Emergências e "
+            "congêneres",
+            "emitir ordens administrativas e operacionais visando regular as ações de "
+            "coordenação, controle e fiscalização sobre os órgãos de execução de sua "
+            "circunscrição",
+            "instaurar inquéritos, sindicâncias e outros procedimentos administrativos "
+            "pertinentes à manutenção da disciplina no âmbito dos Comandos Regionais",
+            "definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral "
+            "do CBMSC, no âmbito de sua respectiva circunscrição",
+            "autorizar deslocamentos dos seus subordinados a serviço e dentro do território "
+            "estadual",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 39",
+        "organName": "Comandos Regionais (RBM)", "abbr": "",
+    },
+    ("cint", "sc"): {
+        "finalidade": (
+            "A Agência Central de Inteligência, órgão de apoio do CBMSC, tem por "
+            "responsabilidade planejar, coordenar, executar, fiscalizar, controlar, articular, "
+            "supervisionar e gerenciar as atividades de inteligência e tem as seguintes "
+            "atribuições"
+        ),
+        "competencias": [
+            "supervisionar e coordenar, em todo o território do Estado, a atividade de "
+            "inteligência",
+            "definir bases para o estabelecimento da doutrina da atividade de inteligência",
+            "elaborar os planos de inteligência e de busca",
+            "produzir conhecimentos necessários às decisões do Comandante-Geral, bem como aos "
+            "estudos e planejamentos em nível de Estado-Maior Geral",
+            "promover e coordenar o intercâmbio de informações entre as Agências Setoriais de "
+            "Inteligência do CBMSC",
+            "estabelecer o relacionamento e ligações com os órgãos federais e estaduais de "
+            "inteligência, assegurando o intercâmbio de conhecimentos",
+            "coordenar operações de inteligência em todo território do Estado",
+            "promover a formação de uma correta mentalidade de inteligência",
+            "organizar e manter em dia os arquivos sigilosos, bem como controlar o fluxo de "
+            "documentos sigilosos do CBMSC",
+            "elaborar e controlar a expedição dos boletins reservados do Comando-Geral",
+            "outras atribuições correlatas ou que vierem a ser cometidas à Agência Central de "
+            "Inteligência",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 42",
+        "organName": "Agência Central de Inteligência", "abbr": "",
+    },
+    ("bbm", "sc"): {
+        "finalidade": (
+            "Os BBMs, órgãos de execução, subordinados às RBMs, são responsáveis por planejar, "
+            "orientar, coordenar, executar, acompanhar, controlar e supervisionar as "
+            "atividades inerentes às missões do CBMSC, em sua circunscrição, têm como "
+            "atribuições"
+        ),
+        "competencias": [
+            "realizar os serviços de segurança, prevenção, proteção e combate a incêndios",
+            "realizar os serviços de busca e salvamento de pessoas e bens, por meio de "
+            "resgates aéreo, aquático e terrestre",
+            "realizar o atendimento pré-hospitalar, respeitadas as competências de outros "
+            "órgãos",
+            "executar a prevenção balneária por guarda-vidas e a prevenção de acidentes e "
+            "incêndios na orla marítima e fluvial",
+            "analisar previamente os projetos preventivos, acompanhar e fiscalizar sua "
+            "execução e impor sanções administrativas estabelecidas em LEI em segurança "
+            "contra incêndio e pânico em imóveis e áreas de risco e de armazenagem, "
+            "manipulação e transporte de produtos perigosos",
+            "credenciar e fiscalizar o funcionamento dos serviços civis auxiliares de "
+            "bombeiros",
+            "desenvolver atividades relacionadas à educação pública, com foco na criação de "
+            "uma cultura preventiva e reativa na comunidade, abrangendo o rol de atendimentos "
+            "prestados pela Corporação e em conformidade com a política de capacitação do "
+            "público externo",
+            "realizar investigação de incêndio e explosão de áreas sinistradas no limite de "
+            "sua competência",
+            "atuar de forma integrada com os órgãos de defesa civil",
+            "outras atividades regularmente previstas, bem como outras necessárias para a "
+            "consecução das atividades da Corporação",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 51",
+        "organName": "Batalhão Bombeiro Militar", "abbr": "BBM",
+    },
+    ("boa", "sc"): {
+        "finalidade": (
+            "O Batalhão Bombeiro Militar de Operações Aéreas, órgão de execução do CBMSC, "
+            "responsável por planejar, orientar, coordenar, executar, acompanhar, controlar e "
+            "supervisionar as atividades aéreas, tem as seguintes atribuições"
+        ),
+        "competencias": [
+            "realizar atividades de resgate e transporte aeromédico especializado, combate a "
+            "incêndios, busca e salvamento, atendimento pré-hospitalar, prevenção, proteção ao "
+            "meio ambiente, defesa civil, e apoio aos demais Órgãos do Estado, Municípios e "
+            "União com a utilização de suas aeronaves",
+            "assessorar o Comando do CBMSC para os assuntos referentes à utilização, "
+            "aquisição, implementação e emprego de aeronaves em todo o território catarinense",
+            "atuar na capacitação e aperfeiçoamento técnico de sua tripulação",
+            "propor doutrinas e normatizações afetas à área de aviação e segurança "
+            "operacional no CBMSC",
+            "executar cooperação técnica, no âmbito da aviação de segurança pública, com "
+            "órgãos correlatos, firmada pelo Comando-Geral do CBMSC",
+            "atuar de forma integrada com a Coordenação Aeroespacial do Grupo de Resposta "
+            "Aérea de Urgência do GRAU/SAMU-Santa Catarina, na capacitação e aperfeiçoamento "
+            "técnico-científico dos enfermeiros e médicos de voo",
+            "desenvolver e promover o serviço de resgate e transporte aeromédico especializado "
+            "em todo território de Santa Catarina",
+        ],
+        "source": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 52",
+        "organName": "Batalhão Bombeiro Militar de Operações Aéreas", "abbr": "",
+    },
 }
 
 

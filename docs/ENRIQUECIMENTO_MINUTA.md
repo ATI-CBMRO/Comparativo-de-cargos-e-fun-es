@@ -454,5 +454,83 @@ paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não sã
   `gab-cg`/`assessorias` próprios — a lei não dá finalidade-caput a esses níveis (`doe` usa o
   Comando Operacional da Capital e do Interior, Art. 37).
 
-Ao ampliar (Lote 5), editar `scripts/lob_enrichment.py` e reexecutar
+### Lote 5 — RS, SE, SP, TO (+ SC completo) (62 entradas)
+
+| Estado | Lei (LOB) | Órgãos com entrada | Observação |
+|---|---|---|---|
+| Rio Grande do Sul (RS) | Dec. nº 53.897/2018 (regulamenta a LC nº 14.920/2016) | 9 | Decreto regulamentador enxuto: finalidade-caput por artigo, sem incisos enumerados; competências de detalhe das Divisões/OBM remetidas ao Regimento Interno do CBMRS (não disponível no corpus). |
+| Sergipe (SE) | Lei nº 8.979/2022 | 16 | LOB moderna por Diretorias ("é responsável pela gestão, planejamento, coordenação, execução, fiscalização e controle de..."); finalidade-caput por órgão, sem incisos por Diretoria (exceção: Alto-Comando, Art. 20, com incisos). |
+| São Paulo (SP) | Lei nº 616/1974 | 9 | LOB da Polícia Militar do Estado de São Paulo como um todo; o Corpo de Bombeiros é Seção II (Art. 38-43), subordinado ao Comando Geral da PM. `cg` usa o Comando do Corpo de Bombeiros (Art. 39, específico do CB); demais entradas (DP, DF, DAL, DE, DS, AG) são Diretorias/órgãos de toda a PM-SP, ao nível hierárquico equivalente ao do CBMRO, mantidas como camada de referência. |
+| Tocantins (TO) | LC nº 131/2021 | 17 | LOB moderna por "Unidades Administrativas" (Direção Superior/Setorial/Assessoramento Geral/Apoio/Execução); finalidade-caput por artigo, com incisos só no Comando de Correição e Disciplina (Art. 12) e na Assessoria de Inteligência (Art. 19, I). |
+| Santa Catarina (SC) — completa | Dec. nº 1.328/2021 (regulamenta a LC nº 724/2018) | +13 (total 15) | Completa as 2 entradas já existentes (`cg`, `dp`); demais órgãos têm finalidade-caput com incisos detalhados no Título III ("DOS ÓRGÃOS DE DIREÇÃO/APOIO/EXECUÇÃO"). |
+
+**Casos de tiering / órgão guarda-chuva (uma única chave para órgão que combina mais de uma competência):**
+- `(dlog, rs)` Art. 12 — o "Departamento Administrativo" do CBMRS combina recursos humanos,
+  orçamento/finanças, logística/patrimônio e TI num único órgão; mapeado em `dlog` por ser a
+  competência citada com maior peso estrutural na lei; RS não tem `dp`/`dpof`/`cinf` próprios
+  por essa razão (ficariam duplicados do mesmo caput).
+- `(dlog, to)` Art. 18, III e `(dpof, to)` Art. 15 — TO desdobra a competência financeiro-
+  patrimonial em dois níveis (Comando de Gestão de Recursos Financeiros e Patrimoniais, e sua
+  Diretoria de Logística e Patrimônio subordinada); usado o nível de Comando para `dpof`
+  (citação mais geral, com "orçamento, finanças, logística e infraestrutura") e o nível de
+  Diretoria para `dlog` (citação específica de "logística e patrimônio"), evitando duplicar o
+  mesmo caput nas duas chaves.
+- `(dp, to)` usa o Comando de Gestão de Pessoas (Art. 14, nível de Comando) em vez da Diretoria
+  de Administração e Gestão de Pessoas subordinada (Art. 18, I) — critério já usado no Lote 2
+  (GO): preferir o nível de Comando quando tem finalidade-caput própria.
+- `(dsap, sc)` Art. 36 — a "Diretoria de Urgência e Emergência" do CBMSC é o órgão mais próximo
+  de saúde/assistência (atendimento pré-hospitalar/integração com sistema de saúde) entre as
+  Diretorias setoriais; mapeada em `dsap` por analogia funcional, embora o nome não use
+  "Saúde".
+- `(dlog, sc)` Art. 37 — a "Diretoria de Logística e Finanças" do CBMSC combina logística,
+  patrimônio, TI e telecomunicações num único órgão; mapeada em `dlog` (mesmo critério do RS),
+  SC não recebe `dpof`/`cinf` próprios por essa razão.
+
+**Casos cargo-vs-órgão / colisão entre dois órgãos pela mesma chave (escolha do mais específico):**
+- `(deei, sc)` — colisão entre a Diretoria de Instrução e Ensino (Art. 35) e o CEBM (Centro de
+  Ensino Bombeiro Militar, Art. 40); usada a Diretoria (órgão de direção setorial com
+  finalidade-caput mais abrangente: formação, aperfeiçoamento, pesquisa, gestão do
+  conhecimento), CEBM deixado de fora para não duplicar a chave.
+- `(assessorias, sc)` — colisão entre a Assessoria Jurídica (Art. 32) e as 3 Assessorias
+  Especiais (Integração de Serviços Auxiliares, Assuntos Institucionais, Inovação — Art. 43-46);
+  usada a Assessoria Jurídica por ser a mais diretamente análoga ao padrão "Assessoria Jurídica"
+  já usado como `assessorias` em outros estados; as 3 Assessorias Especiais ficaram fora.
+- `(assessorias, to)` Art. 19, II — Assessoria Jurídica, sem colisão.
+
+**LOB remete a decreto/Regimento (detalhe não disponível na lei):**
+- **RS** (Dec. 53.897/2018) — após os Art. 12, 13, 14, 15, 19, 20 e 21, o texto remete
+  expressamente as competências de detalhe das Divisões e dos OBM ao Regimento Interno do
+  CBMRS (não disponível no corpus); por isso quase todas as entradas de RS têm
+  `competencias: []`, com `finalidade` extraída do caput do artigo regulamentador.
+- **SE** (Lei 8.979/2022) — Art. 4º, parágrafo único, remete a estrutura interna e as
+  competências de detalhe das Diretorias ao Regimento Interno do CBMSE; entradas de SE são, em
+  sua maioria, finalidade-caput sem incisos (exceções: Alto-Comando, Art. 20, com incisos
+  próprios na lei).
+
+**Órgãos sem equivalente na LOB do estado (sem entrada), por estado:**
+- **RS**: lei muito enxuta — sem `depdec`/`cint`/`ccs`/`cinf`/`cat`/`doe`/`cibm`/`bbs`/
+  `bifea`/`boa`/`gbm`/`assessorias` próprios; estrutura interna das Divisões remetida ao
+  Regimento Interno (não disponível).
+- **SE**: Controladoria Interna (Art. 16) e Ouvidoria-Geral (Art. 17) sem chave própria entre as
+  26 → sem entrada. Sem `depdec`/`cat`/`cint`/`cinf`/`doe`/`cibm`/`bifea`/`boa`/`dsap`
+  próprios na lei.
+- **SP**: a lei é da Polícia Militar como um todo; órgãos PM-wide sem equivalente CB-exclusivo
+  específico foram, ainda assim, mantidos (DP/DF/DAL/DE/DS/AG, Art. 14-19) por serem o nível
+  hierárquico de apoio ao qual o CB efetivamente se reporta (Art. 26 confirma que essas
+  Diretorias atendem a toda a PM, sem órgão equivalente próprio do CB). Sem `depdec`/`condeg`/
+  `corregedoria`/`cot`/`cat`/`cint`/`ccs`/`cinf`/`crbm`/`assessorias`/`gab-cg`/`dpo`/`doe`
+  próprios e exclusivos do CB na Lei 616/1974.
+- **TO**: Assessoria de Gestão Estratégica (Art. 19, IV) e Comissões (Art. 19, VII) sem chave
+  própria → sem entrada. Academia de Formação de Bombeiros (Art. 21, II) e Colégios Militares
+  (Art. 21, III) colidiriam com `deei` já preenchida pela Diretoria de Ensino e Pesquisa (Art.
+  18, II) → não duplicadas. Assessoria Parlamentar (Art. 21, IV) sem chave própria → sem
+  entrada. Sem `cat`/`doe`/`cibm`/`bbs`/`bifea`/`boa`/`gbm` próprios na lei.
+- **SC (completo)**: Controladoria Interna (Art. 29) sem chave própria → sem entrada.
+  Coordenadorias Operacionais (Art. 41) são grupos de trabalho consultivos sem finalidade-caput
+  própria de órgão → sem entrada. BBM Comando e Serviços e BBM Ajuda Humanitária (Art. 53-54)
+  sem chave própria entre as 26 → sem entrada. Sem `depdec`/`dpof`/`cinf`/`dpo`/`doe`/`cat`/
+  `cibm`/`bbs`/`bifea`/`gbm`/`gab-cg` próprios na completação deste lote (já cobertos ou sem
+  equivalente).
+
+Ao ampliar (Lote 6), editar `scripts/lob_enrichment.py` e reexecutar
 `python scripts/build_minuta_comparison.py` (e `python scripts/_check_lob_merge.py`).
