@@ -236,3 +236,62 @@ capítulo da **Guarnição** (Comandante de Guarnição e Condutor/Operador, ver
    Trabalho artesanal por UF.
 
 Após editar `minuta_enrichment.py`, reexecutar `python scripts/build_minuta_structure.py`.
+
+---
+
+## Camada LOB — /comparar (2026-06-28)
+
+Camada **distinta** do enriquecimento da minuta acima: vive em
+`scripts/lob_enrichment.py` (`LOB_ENRICHMENT[(organ_key, state_id)]`), é lida por
+`scripts/build_minuta_comparison.py` e preenche, no `/comparar`, a coluna 2 ("LOB do
+estado") e a parte LOB da coluna 3 ("LOB + RI"). **Critério mais permissivo** que o da
+minuta: além de incisos, admite a **finalidade/caput** (frase de finalidade do órgão)
+da Lei de Organização Básica — que é o ganho típico das LOBs modernas. Verbatim, sem
+paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não são tocados.
+
+### Lote 1 — AC, AL, AM, AP, BA (55 entradas)
+
+| Estado | Lei (LOB) | Órgãos com entrada | Observação |
+|---|---|---|---|
+| Acre (AC) | Lei nº 2.009/2008 (alt. Lei nº 4.428/2024) | 4 | LOB enxuta/estrutural; Art. 22 remete competências dos órgãos a instruções normativas do CG. |
+| Alagoas (AL) | Lei nº 7.444/2012 | 19 | LOB rica: finalidade por órgão (caput) para quase toda a estrutura. |
+| Amazonas (AM) | Lei nº 2.538/1999 | 14 | Finalidade por órgão; AG (Art. 18) tem incisos enumerados (5). |
+| Amapá (AP) | LC nº 180/2026 | 2 | LOB nova **remete estrutura/atribuições a decreto** (Art. 6º); só finalidade por categoria. |
+| Bahia (BA) | Lei nº 14.572/2023 | 16 | LOB moderna com "tem por finalidade" em quase todos os órgãos. |
+
+**Casos cargo-vs-órgão (finalidade tirada da atribuição do dirigente, não de caput do órgão):**
+- `(cg, ac)` — Art. 6º enuncia a competência do **comandante-geral** (a LOB do AC não dá
+  finalidade ao "Comando Geral" como unidade). Idem `(cg, am)` Art. 9º e `(cg, al)` Art. 6º
+  (descrevem o Comando pelo papel do Comandante Geral, mas em frase de finalidade do órgão).
+
+**LOB remete a decreto/Regimento (detalhe não disponível na lei):**
+- **AP** (LC 180/2026) — Art. 6º: estrutura interna e atribuições "definidas por ato do
+  Governador"; só há finalidade por **categoria** de órgão. Aproveitadas: direção-geral
+  (`cg`, §1º I) e correição/Corregedoria-Geral (`corregedoria`, §5º). Diretorias/Centros
+  individuais (RH, logística, finanças, TI, saúde) **sem finalidade própria** → sem entrada.
+- **BA** (Lei 14.572/2023) — Art. 7º §2º remete estrutura interna e competências de detalhe
+  ao Regimento (Decreto); a finalidade-caput de cada órgão, porém, está na própria LOB e foi
+  aproveitada.
+- **AC** (Lei 2.009/2008) — Art. 22 (red. Lei 3.105/2015) remete competências/atribuições
+  dos órgãos a instruções normativas do CG; só finalidades de `cg`, `assessorias`, `ag`,
+  `corregedoria` constam da lei.
+
+**Órgãos sem equivalente na LOB do estado (sem entrada), por estado:**
+- **AC**: as Diretorias (DRH, DATOP, DLPF, DEI, DP-planejamento, DS) só têm finalidade
+  **coletiva** (Art. 12, "órgãos de direção setorial"), sem caput individual → não mapeadas
+  a `dp`/`cot`/`dlog`/`deei`/`dpof`/`dsap`. Sem `condeg`, `cint`, `ccs`, `cinf` próprios.
+- **AL**: sem órgão LOB para `dpo`-aéreo à parte (coberto via grupamentos); GBM/GBS/GPA/GOA
+  mapeados a `gbm`/`bbs`/`bifea`/`boa`. Sem `cint`/`ccs`/`gab-cg`-distinto-de-CG já cobertos.
+  O Centro de Manutenção e Almoxarifado/Aprovisionamento (Arts. 24/27/28) são subórgãos de
+  logística → não duplicados em `dlog` (já coberto por Art. 16).
+- **AM**: sem `cint`/`ccs`/`condeg`-extra; Comissões (Art. 19) e COBOM (Art. 43) não têm
+  `organ_key` próprio. Saúde do AM está embutida na DRH/DL → não há `dsap` autônomo.
+- **AP**: ver acima (remete a decreto).
+- **BA**: Alto Comando (Art. 9) e Auditoria e Finanças (Art. 26) sem `organ_key` exclusivo —
+  `dpof` foi atribuído ao **Departamento de Planejamento** (planejamento+orçamento, Art. 21);
+  Auditoria e Finanças fica de fora para não colidir a chave. Centros de Gestão Estratégica
+  (Art. 15), Engenharia/Arquitetura (Art. 24) e Gestão de Frota (Art. 27) são subórgãos →
+  não duplicados.
+
+Ao ampliar (Lotes 2–5), editar `scripts/lob_enrichment.py` e reexecutar
+`python scripts/build_minuta_comparison.py` (e `python scripts/_check_lob_merge.py`).
