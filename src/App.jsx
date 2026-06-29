@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Library, ScrollText, Menu, X, Network
+  Search, Library, ScrollText, Menu, X, Network, MessagesSquare, Gavel
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -12,6 +12,8 @@ import SearchPage from './pages/Search.jsx'
 import Legislations from './pages/Legislations.jsx'
 import MinutaWizard from './pages/MinutaWizard.jsx'
 import MinutaDiagrams from './pages/MinutaDiagrams.jsx'
+import MinutaRevisao from './pages/MinutaRevisao.jsx'
+import MinutaDeliberacao from './pages/MinutaDeliberacao.jsx'
 
 const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
@@ -19,6 +21,8 @@ const NAV = [
   { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
   { to: '/minuta', icon: ScrollText, label: 'Minuta RI' },
   { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
+  { to: '/minuta/revisao', icon: MessagesSquare, label: 'Revisão CONDEG' },
+  { to: '/minuta/deliberacao', icon: Gavel, label: 'Deliberação CONDEG' },
   { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
   { to: '/busca', icon: Search, label: 'Busca Textual' },
 ]
@@ -136,6 +140,8 @@ export default function App() {
           <Route path="/busca" element={<SearchPage />} />
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
+          <Route path="/minuta/revisao" element={<MinutaRevisao />} />
+          <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
         </Routes>
       </main>
     </div>
