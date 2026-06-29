@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Library, ScrollText, Menu, X, Network, LogOut
+  Search, Library, ScrollText, Menu, X, Network, LogOut,
+  MessageSquare, ShieldCheck
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -14,6 +15,7 @@ import MinutaWizard from './pages/MinutaWizard.jsx'
 import MinutaDiagrams from './pages/MinutaDiagrams.jsx'
 import Login from './pages/Login.jsx'
 import Revisao from './pages/Revisao.jsx'
+import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import { useAuth } from './lib/auth.jsx'
 
@@ -74,6 +76,7 @@ function HeaderUserBox() {
 }
 
 function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
+  const { user } = useAuth()
   return (
     <aside id="sidebar-nav" className={`sidebar${open ? ' open' : ''}`}>
       <button
@@ -107,6 +110,21 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
             <span className="nav-item-label">{label}</span>
           </NavLink>
         ))}
+
+        {user && (
+          <NavLink to="/revisao" onClick={onNavigate} title="Revisão"
+            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}>
+            <MessageSquare className="nav-icon" size={18} />
+            <span className="nav-item-label">Revisão</span>
+          </NavLink>
+        )}
+        {user?.role === 'admin' && (
+          <NavLink to="/acessos" onClick={onNavigate} title="Acessos"
+            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}>
+            <ShieldCheck className="nav-icon" size={18} />
+            <span className="nav-item-label">Acessos</span>
+          </NavLink>
+        )}
       </nav>
 
       <div className="sidebar-footer">
@@ -156,6 +174,7 @@ export default function App() {
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
           <Route path="/login" element={<Login />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
+          <Route path="/acessos" element={<ProtectedRoute requireAdmin><Acessos /></ProtectedRoute>} />
         </Routes>
       </main>
     </div>
