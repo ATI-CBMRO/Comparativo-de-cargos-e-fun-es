@@ -399,5 +399,60 @@ paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não sã
   (assistência); CEFD/CPPA são subórgãos de pessoal. Execução por Grupamentos: `gbm`=GB (Art. 83 V),
   `bbs`=GBS (Art. 83 IV); GBI/GBAPH/GBMar sem chave própria.
 
-Ao ampliar (Lotes 4–5), editar `scripts/lob_enrichment.py` e reexecutar
+### Lote 4 — PI, PR, RJ, RN, RR (53 entradas)
+
+| Estado | Lei (LOB) | Órgãos com entrada | Observação |
+|---|---|---|---|
+| Piauí (PI) | Lei nº 5.949/2009 (alt. Lei nº 7.772/2022) | 12 | LOB com finalidade-caput por órgão ("é órgão de direção setorial...", "incumbe-se de..."); detalhe de atribuições remetido ao RACBMEPI (Art. 48). |
+| Paraná (PR) | Lei nº 22.206/2024 | 15 | LOB moderna e detalhada, com incisos enumerados na maioria dos órgãos; números de artigo confirmados contra o site oficial do CBMPR, pois a extração em markdown intercala blocos de "Art. N." soltos no rodapé de página, fora de ordem 1:1 com os parágrafos. |
+| Rio de Janeiro (RJ) | Lei nº 250/1979 | 11 | LOB antiga e fundacional (CBERJ); finalidade-caput por órgão ("é o Órgão de Direção Setorial do sistema..."), sem incisos enumerados na maior parte. |
+| Rio Grande do Norte (RN) | LC nº 230/2002 (alt. até LC 791/2025) | 1 | LOB extremamente sucinta — trata sobretudo de efetivo/quadros/transição da PM; estrutura dos órgãos é deixada a decreto do Poder Executivo (Art. 20). Único órgão com finalidade própria na lei é o Conselho Superior (Art. 9º). |
+| Roraíma (RR) | LC nº 52/2001 (consolidada até LC nº 265/2018) | 14 | LOB rica e detalhada, com estrutura em níveis (direção superior/setorial/execução); usado o texto CONSOLIDADO (redação mais recente de cada artigo alterado, não a redação original revogada). |
+
+**Casos cargo-vs-órgão (finalidade tirada da atribuição do dirigente, não de caput do órgão):**
+- `(cg, rj)` Art. 9º — a LOB do CBERJ descreve o "Comando" pela atribuição/responsabilidade do
+  **Comandante-Geral** (cargo); não há finalidade-caput do Comando-Geral como unidade.
+
+**LOB remete a decreto/Regimento (detalhe não disponível na lei):**
+- **PI** (Lei 5.949/2009 alt. 7.772/2022) — Art. 48 remete o detalhamento de atribuições dos
+  órgãos ao Regulamento da Administração do CBMEPI (RACBMEPI); a finalidade-caput de cada órgão
+  consta da própria lei e foi aproveitada.
+- **RN** (LC 230/2002) — Art. 20 remete a criação, transformação, extinção, denominação,
+  localização e estruturação de TODOS os órgãos de direção/assessoramento/execução a decreto do
+  Poder Executivo — o caso mais extremo de deferência a decreto observado nos quatro lotes; por
+  isso a LOB de RN só rendeu 1 entrada (Conselho Superior, Art. 9º).
+- **RR** (LC 52/2001) — várias Diretorias subordinadas ao Estado-Maior Geral Bombeiro-Militar
+  (Art. 27: DPL, DIE, DEIOp, DAL, DPST, DACRP, DGOF, DCI) têm, na lei, apenas a estrutura
+  (subórgãos) listada, sem caput de finalidade individual; usado o texto estrutural disponível
+  ("tem a seguinte estrutura") como `finalidade` mínima verbatim, sem invenção de competências.
+
+**Órgãos sem equivalente na LOB do estado (sem entrada), por estado:**
+- **PI**: Estado-Maior-Geral (Art. 28-A, direção de planejamento) sem chave própria → sem
+  entrada (CG/Diretorias já cobrem a estrutura). Núcleo de Investigação e Prevenção de Incêndios
+  (Art. 35) é subórgão técnico redundante de `cot` → não duplicado. Sem `cint`/`ccs`/`cinf`/
+  `gab-cg`/`doe`/`cibm`/`bifea`/`boa`/`corregedoria` próprios na LOB.
+- **PR**: Estado-Maior (Art. 14) é direção de planejamento sem chave própria → sem entrada.
+  Assessoria Estratégica (Art. 17) e Secretaria do Comando-Geral (Art. 19) colidiriam com
+  `assessorias`/`gab-cg` já preenchidas por órgãos mais específicos (Consultoria Institucional,
+  Art. 20; Gabinete, Art. 15) → não duplicadas. Comissões (Art. 21) e Assessorias Militares
+  (Art. 22) são órgãos colegiados/de ligação sem finalidade-caput própria → sem entrada. Sem
+  `depdec`/`cint`/`cinf`/`doe`/`gbm` próprios na LOB.
+- **RJ**: Estado-Maior-Geral (Art. 13) é órgão de planejamento sem chave própria → sem entrada.
+  Sem `depdec`/`condeg`/`cint`/`cinf`/`gab-cg`/`doe`/`cibm`/`gbm`/`bifea`/`boa`/`corregedoria`
+  próprios na LOB de 1979 (estrutura muito mais simples que as LOBs recentes).
+- **RN**: lei não nomeia individualmente nenhum outro órgão de direção/execução (Art. 20 remete
+  tudo a decreto) → sem `cg`/`dp`/`deei`/`dpof`/`dsap`/`dlog`/`dpo`/`doe`/`cot`/`cat`/`cint`/
+  `ccs`/`cinf`/`crbm`/`bbm`/`cibm`/`bbs`/`bifea`/`boa`/`gbm`/`corregedoria`/`assessorias`/
+  `gab-cg`/`ag`/`depdec`.
+- **RR**: Estado Maior Geral Bombeiro-Militar (Art. 26) é "OBM de Atuação Colegiada" com
+  Diretorias operacionais subordinadas e emite diretrizes — não se ajusta ao padrão de
+  `condeg` (conselho puramente consultivo/deliberativo) → sem entrada; documentado como
+  EXCLUÍDO, não como esquecimento. Colisão em `ccs`: Assessoria de Comunicação e Imprensa do
+  Gabinete (Art. 18) vs. Diretoria de Assuntos Civis e Relações Públicas - DACRP (Art. 34) →
+  usada a DACRP (órgão de Diretoria, mais robusto na estrutura) e a ACI do Gabinete deixada de
+  fora para não duplicar a chave. Sem `crbm`/`bbm`/`cibm`/`bbs`/`bifea`/`boa`/`gbm`/
+  `gab-cg`/`assessorias` próprios — a lei não dá finalidade-caput a esses níveis (`doe` usa o
+  Comando Operacional da Capital e do Interior, Art. 37).
+
+Ao ampliar (Lote 5), editar `scripts/lob_enrichment.py` e reexecutar
 `python scripts/build_minuta_comparison.py` (e `python scripts/_check_lob_merge.py`).

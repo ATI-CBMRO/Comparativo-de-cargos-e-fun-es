@@ -2740,6 +2740,676 @@ LOB_ENRICHMENT = {
         "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 83, IV",
         "organName": "Grupamento de Bombeiros de Salvamento", "abbr": "GBS",
     },
+
+    # ===================================================================
+    # Lote 4 — PI, PR, RJ, RN, RR
+    # ===================================================================
+
+    # --- Piauí (PI) — Lei nº 5.949/2009, alt. pela Lei nº 7.772/2022 (texto
+    # consolidado, com artigos "(NR)"). LOB com caput de finalidade por órgão
+    # ("é órgão de direção setorial...", "incumbe-se de..."); Art. 48 remete o
+    # detalhamento de atribuições ao RACBMEPI (Regulamento, via Decreto).
+    ("condeg", "pi"): {
+        "finalidade": (
+            "O Alto Comando da Corporação é o órgão colegiado e deliberativo composto pelos "
+            "Coronéis da ativa da corporação, a ser convocado pelo Comandante-Geral ou seu "
+            "substituto para colaborar com o processo decisório nos assuntos de relevância "
+            "para o desenvolvimento e cumprimento das atribuições da corporação e elaborar "
+            "políticas institucionais"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 16",
+        "organName": "Alto Comando da Corporação", "abbr": "",
+    },
+    ("dp", "pi"): {
+        "finalidade": (
+            "A Diretoria de Gestão de Pessoas, órgão de direção setorial do sistema de "
+            "pessoal, incumbe-se do planejamento, da coordenação, da execução, do controle, e "
+            "da fiscalização das atividades relacionadas à pessoal"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 18",
+        "organName": "Diretoria de Gestão de Pessoas", "abbr": "",
+    },
+    ("dpof", "pi"): {
+        "finalidade": (
+            "A Diretoria Administrativa e Financeira, o órgão de direção setorial responsável "
+            "pelo funcionamento do sistema de administração financeira, programação, "
+            "orçamento, contabilidade, incumbindo ainda o estudo, o planejamento, a "
+            "orientação normativa, a coordenação, supervisão, o controle e a execução das "
+            "atividades relativas à gestão do material e patrimônio da corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 19",
+        "organName": "Diretoria Administrativa e Financeira", "abbr": "",
+    },
+    ("deei", "pi"): {
+        "finalidade": (
+            "A Diretoria de Ensino, Instrução e Pesquisa, o órgão de direção setorial do "
+            "sistema de ensino e instrução, incumbe-se do planejamento, da coordenação, do "
+            "controle e da fiscalização de todas as atividades de formação, aperfeiçoamento e "
+            "especialização, nos diferentes níveis do ensino, do adestramento e da instrução"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 20",
+        "organName": "Diretoria de Ensino, Instrução e Pesquisa", "abbr": "",
+    },
+    ("cot", "pi"): {
+        "finalidade": (
+            "A Diretoria de Segurança Contra Incêndio, unidade administrativa responsável "
+            "pelo planejamento, análise, controle e fiscalização das atividades atinentes à "
+            "segurança contra incêndio e pânico no âmbito do Estado do Piauí"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 21",
+        "organName": "Diretoria de Segurança Contra Incêndio", "abbr": "",
+    },
+    ("depdec", "pi"): {
+        "finalidade": (
+            "O Núcleo de Defesa Civil é órgão de assessoramento do Comando Operacional de "
+            "Bombeiros responsável pelo planejamento e execução de atividades de defesa civil "
+            "na área de competência do Corpo de Bombeiros"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 26",
+        "organName": "Núcleo de Defesa Civil", "abbr": "",
+    },
+    ("ag", "pi"): {
+        "finalidade": (
+            "A Ajudância Geral, subordinada diretamente ao Comandante Geral, compete a "
+            "publicação dos atos administrativos, recepção de correspondências, assim como "
+            "auxiliar nas funções de administração, conservação e segurança das instalações "
+            "do Quartel do Comando Geral (QCG), considerado como Organização de Bombeiro "
+            "Militar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 27",
+        "organName": "Ajudância Geral", "abbr": "",
+    },
+    ("dsap", "pi"): {
+        "finalidade": (
+            "O Núcleo de Saúde é responsável pelo planejamento, orientação, coordenação, "
+            "controle e execução de programas de medicina preventiva, saúde comunitária e "
+            "controle médico-sanitário de pessoal, execução das atividades de assistência "
+            "médica, odontológica, bem como pelas perícias médicas e homologar os pareceres "
+            "da junta Médica de Saúde (JMS) no âmbito da corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 32-C",
+        "organName": "Núcleo de Saúde", "abbr": "",
+    },
+    ("dpo", "pi"): {
+        "finalidade": (
+            "O Comando Operacional de Bombeiros é órgão de execução do mais alto escalão do "
+            "sistema operacional subordinado ao órgão de direção geral, tendo a seu cargo o "
+            "planejamento estratégico e a fiscalização do emprego dos Comandos Regionais de "
+            "Bombeiros"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 34",
+        "organName": "Comando Operacional de Bombeiros", "abbr": "COB",
+    },
+    ("crbm", "pi"): {
+        "finalidade": (
+            "Os Comandos Regionais de Bombeiros Militar são órgãos de execução subordinados "
+            "diretamente ao Comandante Operacional de Bombeiros, devem efetuar o planejamento "
+            "operacional, a supervisão, a coordenação, prevenção, o controle, a fiscalização e "
+            "a execução das atividades de bombeiro no âmbito de suas respectivas "
+            "responsabilidades e circunscrições"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 36",
+        "organName": "Comandos Regionais de Bombeiros Militar", "abbr": "",
+    },
+    ("gbm", "pi"): {
+        "finalidade": (
+            "Os Grupamentos de Bombeiros Militar têm a seu cargo, dentro de uma determinada "
+            "área operacional, as missões de prevenção e extinção de incêndios, busca, "
+            "salvamento, atendimento pré-hospitalar e auxílio nas atividades de defesa civil"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 37",
+        "organName": "Grupamentos de Bombeiros Militar", "abbr": "",
+    },
+    ("bbs", "pi"): {
+        "finalidade": (
+            "O Grupamento de Bombeiro Militar Marítimo tem a seu cargo a realização de "
+            "operações aquáticas com a finalidade de executar serviços de prevenção em "
+            "eventos náuticos, a busca, salvamentos de pessoas e bens, combate a incêndio em "
+            "embarcações e instalações portuárias, bem como a preservação ambiental limitada "
+            "às orlas fluviais e lacustre inscritas nos limites geográficos dos municípios de "
+            "Ilha Grande de Santa Isabel, Parnaíba, Luís Correia e Cajueiro da Praia, assim "
+            "como de toda a costa marítima piauiense"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPI, LOB (Lei nº 5.949/2009 alt. Lei nº 7.772/2022), Art. 38",
+        "organName": "Grupamento de Bombeiro Militar Marítimo", "abbr": "",
+    },
+
+    # --- Paraná (PR) — Lei nº 22.206/2024, LOB moderna e detalhada (incisos
+    # enumerados em quase todos os órgãos de direção). Números de artigo
+    # confirmados contra o site oficial do CBMPR (bombeiros.pr.gov.br), dado
+    # que a extração em markdown intercala blocos de "Art. N." soltos ao fim
+    # de página (rodapé do PDF), não imediatamente antes de cada parágrafo.
+    ("cg", "pr"): {
+        "finalidade": (
+            "O Comandante-Geral, responsável superior pelo comando e pela administração "
+            "geral do Corpo de Bombeiros Militar do Paraná - CBMPR, será nomeado pelo "
+            "Governador do Estado, dentre os Coronéis Combatentes da ativa da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 12",
+        "organName": "Comandante-Geral", "abbr": "CG",
+    },
+    ("gab-cg", "pr"): {
+        "finalidade": (
+            "O Gabinete do Comando-Geral será chefiado por um Oficial Superior Combatente da "
+            "ativa da Corporação, de livre escolha do Comandante-Geral, competindo-lhe"
+        ),
+        "competencias": [
+            "a assistência direta ao Comandante-Geral no trato e apreciação de assuntos "
+            "institucionais",
+            "a recepção, o estudo e a triagem dos expedientes encaminhados ao Comandante-Geral",
+            "a transmissão e o controle da execução das ordens emanadas pelo Comandante-Geral",
+            "a coordenação dos serviços de Ajudância de Ordens do Comandante-Geral",
+            "a execução e o controle das atividades relacionadas com a administração "
+            "financeira, contabilidade, material e aprovisionamento do Comando-Geral",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 15",
+        "organName": "Gabinete do Comando-Geral", "abbr": "Gab.CmtG",
+    },
+    ("ag", "pr"): {
+        "finalidade": (
+            "a Ajudância-Geral, subordinada ao Chefe de Gabinete, exercerá o apoio "
+            "administrativo ao Comando-Geral, competindo-lhe"
+        ),
+        "competencias": [
+            "a organização, a direção e a supervisão do pessoal auxiliar de todos os órgãos "
+            "do Comando-Geral e do efetivo da Banda de Música do Corpo de Bombeiros Militar "
+            "do Paraná - CBMPR",
+            "a coordenação dos trabalhos de protocolo geral da Corporação",
+            "o controle da entrada e retirada de processos e documentos do arquivo geral",
+            "a elaboração dos boletins-gerais",
+            "o desenvolvimento das demais tarefas relacionadas com a segurança do "
+            "aquartelamento e dos serviços gerais do Comando-Geral",
+            "a promoção das atividades necessárias para a manutenção e desenvolvimento do "
+            "centro histórico",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 16",
+        "organName": "Ajudância-Geral", "abbr": "AG",
+    },
+    ("ccs", "pr"): {
+        "finalidade": (
+            "a Assessoria de Comunicação Organizacional é órgão que presta assessoramento ao "
+            "Comando-Geral, competindo-lhe as atividades de"
+        ),
+        "competencias": [
+            "comunicação social, campanhas de educação preventiva e assessoria de imprensa",
+            "organização de solenidades na sede do Corpo de Bombeiros Militar do Paraná - "
+            "CBMPR, orientando e fiscalizando a execução de eventos nas demais unidades",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 18",
+        "organName": "Assessoria de Comunicação Organizacional", "abbr": "Assecom",
+    },
+    ("assessorias", "pr"): {
+        "finalidade": (
+            "A Consultoria Institucional é o órgão que presta assessoramento direto ao "
+            "Comandante-Geral e ao Subcomandante-Geral, competindo-lhe"
+        ),
+        "competencias": [
+            "o estudo de questões de direito compreendidas na política de administração "
+            "geral da Corporação, exames de aspectos de legalidade dos atos e normas que "
+            "forem submetidos à sua apreciação e demais atribuições que venham a ser "
+            "previstas em regulamentos",
+            "a orientação quanto ao exato cumprimento de decisões e sentenças judiciais, de "
+            "acordo com as orientações emanadas pela Procuradoria-Geral do Estado - PGE",
+            "a compilação de elementos de fato e de direito para preparar as informações que "
+            "devem ser prestadas à Procuradoria-Geral do Estado - PGE para a defesa dos "
+            "interesses do Estado em ações judiciais",
+            "a análise das minutas e convênios que forem submetidos à sua apreciação, "
+            "verificando se preenchem os requisitos legais necessários à sua celebração",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 20",
+        "organName": "Consultoria Institucional", "abbr": "CI",
+    },
+    ("corregedoria", "pr"): {
+        "finalidade": (
+            "A Corregedoria-Geral do Corpo de Bombeiros Militar do Paraná - CBMPR é o órgão "
+            "técnico, subordinado ao Comandante-Geral, com atuação em todo o Estado, com a "
+            "finalidade de"
+        ),
+        "competencias": [
+            "assegurar a correta aplicação da lei",
+            "padronizar os procedimentos de Polícia Judiciária Militar e de processos e "
+            "procedimentos administrativos",
+            "realizar correições, fiscalizações e garantir a preservação dos princípios da "
+            "hierarquia e disciplina na Corporação",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 23",
+        "organName": "Corregedoria-Geral", "abbr": "Coger",
+    },
+    ("dp", "pr"): {
+        "finalidade": (
+            "A Diretoria de Pessoal é o órgão de direção setorial do sistema de pessoal, "
+            "responsável por"
+        ),
+        "competencias": [
+            "desenvolvimento, coordenação, fiscalização, orientação, acompanhamento e "
+            "controle das atividades relacionadas com a classificação e movimentação de "
+            "pessoal",
+            "mobilização, inativos, cadastro e avaliação, direitos, deveres, incentivos, "
+            "gerenciamento e inspeção da folha de pagamento",
+            "identificação, pessoal civil, serviço auxiliar temporário e recrutamento",
+            "acompanhamento e controle das atividades técnico-administrativas relativas aos "
+            "serviços de saúde física e mental, assistência social e psicológica",
+            "assessoramento nos assuntos referentes a pessoal",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 28",
+        "organName": "Diretoria de Pessoal", "abbr": "DP",
+    },
+    ("dlog", "pr"): {
+        "finalidade": (
+            "A Diretoria de Apoio Logístico e Finanças é o órgão de direção setorial "
+            "responsável por"
+        ),
+        "competencias": [
+            "coordenação, controle e execução das atividades de logística",
+            "suprimento, manutenção e controle patrimonial da Corporação",
+            "planejamento, acompanhamento e execução orçamentária e financeira",
+            "atividades de controladoria e auditoria de recursos descentralizados",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 29",
+        "organName": "Diretoria de Apoio Logístico e Finanças", "abbr": "DALF",
+    },
+    ("cot", "pr"): {
+        "finalidade": (
+            "A Diretoria de Atividades Técnicas é o órgão de direção setorial responsável "
+            "pela coordenação, controle e assessoramento em assuntos relacionados"
+        ),
+        "competencias": [
+            "à prevenção e combate a incêndios e desastres em edificações, estabelecimentos, "
+            "áreas de risco e eventos temporários, atuando por meio do gerenciamento "
+            "normativo, estudos e pesquisa de incêndios",
+            "à tecnologia da informação e comunicação, com ações de gestão e desenvolvimento "
+            "de sistemas informatizados, infraestrutura, segurança, projetos, inovações e "
+            "governança",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 30",
+        "organName": "Diretoria de Atividades Técnicas", "abbr": "DAT",
+    },
+    ("deei", "pr"): {
+        "finalidade": (
+            "A Escola Superior de Bombeiro Militar é o órgão de direção setorial de ensino e "
+            "instrução no âmbito do Corpo de Bombeiros Militar do Paraná - CBMPR, responsável "
+            "pelo planejamento, coordenação, fiscalização, execução e controle das atividades "
+            "de ensino desenvolvidas pela Corporação, podendo atuar em parceria com outras "
+            "instituições"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 31",
+        "organName": "Escola Superior de Bombeiro Militar", "abbr": "ESBM",
+    },
+    ("crbm", "pr"): {
+        "finalidade": (
+            "Os órgãos de execução são operacional e administrativamente subordinados aos "
+            "Comandos Regionais de Bombeiro Militar, que são responsáveis, perante o "
+            "Subcomandante-Geral, pelo cumprimento das missões bombeiro-militar em suas "
+            "respectivas circunscrições territoriais"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 35",
+        "organName": "Comando Regional de Bombeiro Militar", "abbr": "CRBM",
+    },
+    ("bbm", "pr"): {
+        "finalidade": (
+            "Batalhão de Bombeiro Militar - BBM: unidade operacional que, utilizando dos "
+            "recursos humanos e materiais postos à sua disposição, será incumbida da missão de"
+        ),
+        "competencias": [
+            "coordenar e executar as atividades de defesa civil",
+            "exercer o poder de polícia administrativa referente à prevenção a incêndios e "
+            "desastres",
+            "combater incêndios e desastres",
+            "prevenir acidentes na orla marítima e fluvial",
+            "realizar buscas, salvamentos, socorros públicos e atendimento pré-hospitalar",
+            "outras atribuições definidas em lei",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 38, I",
+        "organName": "Batalhão de Bombeiro Militar", "abbr": "BBM",
+    },
+    ("cibm", "pr"): {
+        "finalidade": (
+            "Companhia Independente de Bombeiro Militar - Cia. Ind. BM: unidade operacional "
+            "encarregada das mesmas atribuições do Batalhão de Bombeiro Militar - BBM em "
+            "áreas de menores dimensões que, por suas condições peculiares, não estejam "
+            "incluídas na circunscrição daquele"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 38, II",
+        "organName": "Companhia Independente de Bombeiro Militar", "abbr": "Cia. Ind. BM",
+    },
+    ("bifea", "pr"): {
+        "finalidade": (
+            "Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia "
+            "Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao "
+            "Comandante-Geral, em apoio especializado às Unidades Operacionais, que é "
+            "incumbido de"
+        ),
+        "competencias": [
+            "executar a missão especializada de socorro tático em todas as atividades de "
+            "bombeiro-militar",
+            "realizar ações de atendimento às emergências ambientais e a sinistros "
+            "decorrentes de desastres naturais e antropogênicos e ações de defesa civil",
+            "organizar forças-tarefas",
+            "desempenhar atividades de busca e salvamento, inclusive com a utilização de cães",
+            "organizar e manter o canil central e coordenar os canis setoriais",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 38, III",
+        "organName": "Grupo de Operações de Socorro Tático", "abbr": "GOST",
+    },
+    ("boa", "pr"): {
+        "finalidade": (
+            "Unidade de Operações Aéreas - UOA: subordinada diretamente ao "
+            "Subcomandante-Geral, é encarregada de, com a utilização de aeronaves"
+        ),
+        "competencias": [
+            "atender e apoiar ações de busca, resgate e salvamento a vítimas de acidentes "
+            "e/ou traumas em áreas urbanas, rurais e rodovias",
+            "atender e apoiar ações de busca e resgate de vítimas em matas, florestas, "
+            "montanhas, rios, lagos e mar",
+            "atuar em missões de apoio à defesa civil",
+            "apoiar órgãos federais, estaduais e municipais que necessitem do emprego de "
+            "aeronaves",
+            "desempenhar outras missões de preservação da ordem pública",
+        ],
+        "source": "cf. CBMPR, LOB (Lei nº 22.206/2024), Art. 38, IV",
+        "organName": "Unidade de Operações Aéreas", "abbr": "UOA",
+    },
+
+    # --- Rio de Janeiro (RJ) — Lei nº 250/1979, LOB antiga e fundacional do
+    # CBERJ; finalidade-caput por órgão ("é o Órgão de Direção Setorial do
+    # sistema..."), sem incisos enumerados na maior parte dos órgãos.
+    ("cg", "rj"): {
+        "finalidade": "O Comandante-Geral é responsável pelo Comando e pela Administração da Corporação",
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 9º",
+        "organName": "Comandante-Geral", "abbr": "",
+    },
+    ("dp", "rj"): {
+        "finalidade": (
+            "A Diretoria de Pessoal é o Órgão de Direção Setorial do Sistema de Pessoal, "
+            "incumbido do planejamento, execução, controle e fiscalização das atividades "
+            "relacionadas com a classificação e movimentação de pessoal da ativa, cadastro e "
+            "avaliação, direitos, deveres e incentivos, pessoal inativo e pensionistas, "
+            "pessoal civil, seleção e ingresso e assistência social e religiosa"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 19",
+        "organName": "Diretoria de Pessoal", "abbr": "",
+    },
+    ("deei", "rj"): {
+        "finalidade": (
+            "A Diretoria de Ensino é o Órgão de Direção Setorial do sistema de Ensino, "
+            "incumbido de planejamento, coordenação, fiscalização e controle das atividades "
+            "de formação, aperfeiçoamento e especialização de oficiais e praças BM do Corpo e, "
+            "eventualmente, de civis ou oficiais e praças de outras Corporações"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 22",
+        "organName": "Diretoria de Ensino", "abbr": "",
+    },
+    ("dpof", "rj"): {
+        "finalidade": (
+            "A Diretoria de Finanças é o Órgão de Direção Setorial do sistema Financeiro, "
+            "incumbido de realizar as atividades específicas e assessorar o Comandante-Geral "
+            "na supervisão das atividades financeiras dos Órgãos da Corporação e na "
+            "distribuição de recursos orçamentários, de acordo com o planejamento estabelecido"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 24",
+        "organName": "Diretoria de Finanças", "abbr": "",
+    },
+    ("dlog", "rj"): {
+        "finalidade": (
+            "A Diretoria de Apoio Logístico é o Órgão de Direção Setorial do Sistema "
+            "Logístico, incumbido do planejamento, coordenação, fiscalização e controle das "
+            "necessidades de apoio de saúde, de suprimento e de manutenção; realizará essas "
+            "mesmas atividades no que se refere a obras"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 26",
+        "organName": "Diretoria de Apoio Logístico", "abbr": "",
+    },
+    ("cot", "rj"): {
+        "finalidade": (
+            "A Diretoria de Serviços Técnicos é o Órgão de Direção Setorial do Sistema de "
+            "Engenharia de Segurança, incumbido de estudar, analisar, planejar, exigir e "
+            "fiscalizar as atividades atinentes à segurança contra incêndio e pânico, proceder "
+            "a exame de plantas e a perícias; realizar testes de incombustibilidade; realizar "
+            "vistorias e emitir pareceres com autoridade para notificar, multar e interditar, "
+            "na forma da legislação específica"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 28",
+        "organName": "Diretoria de Serviços Técnicos", "abbr": "",
+    },
+    ("ag", "rj"): {
+        "finalidade": (
+            "A Ajudância-Geral tem a seu cargo as funções administrativas do Comando-Geral, "
+            "considerada como uma Organização de Bombeiros-Militares (OBM), bem como algumas "
+            "atividades de pessoal para a Corporação como um todo"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 30",
+        "organName": "Ajudância-Geral", "abbr": "",
+    },
+    ("assessorias", "rj"): {
+        "finalidade": (
+            "As Assessorias destinam-se a dar flexibilidade à estrutura do Comando-Geral da "
+            "Corporação, particularmente em assuntos especializados que escapem às "
+            "atribuições normais e específicas dos órgãos de direção"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 33",
+        "organName": "Assessorias", "abbr": "",
+    },
+    ("crbm", "rj"): {
+        "finalidade": (
+            "Os Comandos de Bombeiros da Área, diretamente subordinados ao Comando-Geral, são "
+            "responsáveis pelo planejamento, supervisão e execução das missões específicas de "
+            "bombeiro-militar, na respectiva área, de acordo com as diretrizes e ordens do "
+            "Comando-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 44, §1º",
+        "organName": "Comando de Bombeiros de Área", "abbr": "CBA",
+    },
+    ("bbm", "rj"): {
+        "finalidade": (
+            "Unidade de Extinção de Incêndio Terrestre é a que tem a seu cargo, dentro da área "
+            "do Estado do Rio de Janeiro, as missões de prevenção e combate a incêndios"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 47, §1º",
+        "organName": "Unidade de Extinção de Incêndio Terrestre", "abbr": "",
+    },
+    ("bbs", "rj"): {
+        "finalidade": (
+            "Unidades de Busca e Salvamento é a que tem a seu cargo, dentro da área do Estado "
+            "do Rio de Janeiro, as missões de busca e salvamento, tanto terrestre, como "
+            "aquática"
+        ),
+        "competencias": [],
+        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 47, §2º",
+        "organName": "Unidade de Busca e Salvamento", "abbr": "",
+    },
+
+    # --- Rio Grande do Norte (RN) — LC nº 230/2002 (alt. até LC 791/2025).
+    # LOB sucinta: trata sobretudo de efetivo/quadros/transição da PM; só há
+    # um órgão colegiado de direção descrito por finalidade própria (o
+    # Conselho Superior, Art. 9º); não há Diretorias, EMG, nem demais órgãos
+    # de execução com finalidade-caput na lei (estrutura é deixada a decreto,
+    # Art. 20).
+    ("condeg", "rn"): {
+        "finalidade": (
+            "O Conselho Superior do Corpo de Bombeiros Militar, órgão de deliberação "
+            "coletiva, assessora o Comandante Geral na formulação e avaliação de políticas e "
+            "estratégias e na fixação de diretrizes de gerenciamento administrativo e "
+            "operacional do Corpo de Bombeiros Militar, além exercer a seguintes atribuições "
+            "institucionais"
+        ),
+        "competencias": [
+            "aprovar a proposta orçamentária do Corpo de Bombeiros Militar",
+            "aprovar o relatório geral e anual do Corpo de Bombeiros Militar",
+            "deliberar sobre qualquer matéria de interesse do Corpo de Bombeiros Militar, que "
+            "lhe seja submetida por quaisquer de seus membros",
+            "dirimir quaisquer dúvidas ou omissões atinentes à competência dos órgãos que "
+            "integram o Corpo de Bombeiros Militar",
+            "analisar regras, critérios e princípios para a realização de concurso público "
+            "para ingresso nas carreiras de Oficiais e Praças da Instituição, propostas pelo "
+            "Comandante Geral, observado o disposto em lei",
+            "estabelecer o padrão dos símbolos do Corpo de Bombeiros Militar",
+            "deliberar sobre os processos de promoção de Oficiais e Praças da Corporação",
+            "gerenciar e estabelecer as diretrizes do Fundo de Reaparelhamento do Corpo de "
+            "Bombeiros Militar (FUNREBOM)",
+            "elaborar o seu regimento interno",
+        ],
+        "source": "cf. CBMRN, LOB (LC nº 230/2002), Art. 9º",
+        "organName": "Conselho Superior do Corpo de Bombeiros Militar", "abbr": "",
+    },
+
+    # --- Roraíma (RR) — LC nº 52/2001 (consolidada até LC 791/2025... na
+    # verdade até a LC 275/2018, conforme alterações registradas no
+    # cabeçalho). LOB rica e detalhada, com estrutura em níveis (direção
+    # superior, setorial, execução); usado o texto CONSOLIDADO (versão mais
+    # recente de cada artigo alterado, não a redação original revogada).
+    ("ag", "rr"): {
+        "finalidade": (
+            "A Ajudância Geral, subordinada diretamente ao Subcomandante Geral, considerada "
+            "como OBM de suporte, tem a seu cargo as funções administrativas do Quartel do "
+            "Comando Geral, inclusive, as de controle de todo o seu pessoal"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 21",
+        "organName": "Ajudância Geral", "abbr": "",
+    },
+    ("corregedoria", "rr"): {
+        "finalidade": (
+            "A Corregedoria Geral, subordinada diretamente ao Comandante Geral, é o órgão de "
+            "disciplina, orientação e fiscalização das atividades funcionais e da conduta dos "
+            "servidores da instituição, competindo-lhe, dentre outras atribuições, a apuração "
+            "de responsabilidade criminal, administrativa e disciplinar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 20",
+        "organName": "Corregedoria Geral", "abbr": "",
+    },
+    ("depdec", "rr"): {
+        "finalidade": (
+            "A Coordenadoria Estadual de Proteção e Defesa Civil – CEPDEC, é o órgão de "
+            "direção geral, que centraliza o sistema Estadual de Proteção e Defesa Civil de "
+            "Roraima e tem por finalidade estabelecer normas e o exercício das atividades de "
+            "integrar, planejar, organizar, coordenar e supervisionar as execuções das "
+            "medidas preventivas, de socorro, de assistência e de recuperação, considerando "
+            "os efeitos produzidos por fatores adversos de qualquer natureza e origens nas "
+            "situações de emergência ou estado de calamidade pública"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001, red. LC nº 257/2017), Art. 24",
+        "organName": "Coordenadoria Estadual de Proteção e Defesa Civil", "abbr": "CEPDEC",
+    },
+    ("cint", "rr"): {
+        "finalidade": (
+            "A Diretoria de Inteligência - DINT, subordinada diretamente ao Comandante Geral, "
+            "é o órgão encarregado do exercício sistemático de ações especializadas voltadas "
+            "para a obtenção, produção de dados, conhecimentos e salvaguarda destes visando "
+            "assessorar o Comandante Geral no planejamento, acompanhamento e execução de "
+            "políticas e atos decisórios, bem como na identificação, avaliação e neutralização "
+            "de atividades de inteligência promovidas por serviços de inteligências de outros "
+            "Órgãos"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001, red. LC nº 257/2017), Art. 25-A",
+        "organName": "Diretoria de Inteligência", "abbr": "DINT",
+    },
+    ("dp", "rr"): {
+        "finalidade": "A Diretoria de Pessoal e Legislação tem a seguinte estrutura",
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 29",
+        "organName": "Diretoria de Pessoal e Legislação", "abbr": "DPL",
+    },
+    ("cinf", "rr"): {
+        "finalidade": (
+            "O Centro de Informática - CINFOR, órgão de apoio subordinado diretamente à "
+            "Diretoria de Informática e Estatística - DIE, é dirigido por um comandante e "
+            "destina-se a realizar programas e sistemas para otimização das áreas "
+            "administrativas e operacionais da corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001, red. LC nº 257/2017), Art. 45",
+        "organName": "Centro de Informática", "abbr": "CINFOR",
+    },
+    ("deei", "rr"): {
+        "finalidade": "A Diretoria de Ensino, Instrução e Pesquisa tem a seguinte estrutura",
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001, red. LC nº 257/2017), Art. 31",
+        "organName": "Diretoria de Ensino, Instrução e Pesquisa", "abbr": "DEIP",
+    },
+    ("dlog", "rr"): {
+        "finalidade": "A Diretoria de Logística tem a seguinte estrutura",
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001, red. LC nº 265/2018), Art. 32",
+        "organName": "Diretoria de Logística", "abbr": "DLOG",
+    },
+    ("cot", "rr"): {
+        "finalidade": "Diretoria de Prevenção e Serviços Técnicos – DPST – tem a seguinte estrutura",
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 33",
+        "organName": "Diretoria de Prevenção e Serviços Técnicos", "abbr": "DPST",
+    },
+    ("ccs", "rr"): {
+        "finalidade": "A Diretoria de Assuntos Civis e Relações Públicas tem a seguinte estrutura",
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 34",
+        "organName": "Diretoria de Assuntos Civis e Relações Públicas", "abbr": "DACRP",
+    },
+    ("dpof", "rr"): {
+        "finalidade": "A Diretoria de Gestão Orçamentária e Financeira tem a seguinte estrutura",
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 35",
+        "organName": "Diretoria de Gestão Orçamentária e Financeira", "abbr": "DGOF",
+    },
+    ("dsap", "rr"): {
+        "finalidade": (
+            "O Centro de Saúde – CESAU, é um órgão de apoio de saúde e de assistência social, "
+            "subordinado diretamente ao Ajudante Geral. É dirigido por um comandante e "
+            "destina-se à prestação de serviços de saúde e assistência social"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 47",
+        "organName": "Centro de Saúde", "abbr": "CESAU",
+    },
+    ("doe", "rr"): {
+        "finalidade": (
+            "O Comando Operacional da Capital e do Interior, subordinados diretamente ao "
+            "Subcomandante Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001, red. LC nº 257/2017), Art. 37",
+        "organName": "Comando Operacional", "abbr": "",
+    },
+    ("cat", "rr"): {
+        "finalidade": (
+            "O Centro de Investigação e Prevenção de Incêndios, órgão de apoio, subordinado "
+            "diretamente à Diretoria de Prevenção e Serviços Técnicos - DPST, é dirigido por "
+            "um comandante e destina-se a realizar serviços de prevenção, investigação, "
+            "perícias de incêndios e explosões e a emitir conclusões e laudos técnicos "
+            "periciais sobre suas atividades"
+        ),
+        "competencias": [],
+        "source": "cf. CBMRR, LOB (LC nº 52/2001), Art. 46",
+        "organName": "Centro de Investigação e Prevenção de Incêndios", "abbr": "CIPI",
+    },
 }
 
 
