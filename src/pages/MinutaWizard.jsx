@@ -1,10 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
 import { ChevronRight, Download, ArrowLeft, Pencil, Check, RotateCcw } from 'lucide-react'
-import {
-  Document, Packer, Paragraph, TextRun,
-  Footer, AlignmentType, ImageRun,
-} from 'docx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { buildMinutaBlob } from '../lib/minutaDocx.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -167,95 +164,12 @@ export default function MinutaWizard() {
   async function handleDownload() {
     setGenerating(true)
     try {
-      const dateStr = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
-      let imageData = null
-      try {
-        const resp = await fetch('/BrasaoCBMRO2D-COMPLETO.png')
-        if (resp.ok) imageData = await resp.arrayBuffer()
-      } catch (_) { /* segue sem imagem */ }
-
-      const children = []
-      if (imageData) {
-        children.push(new Paragraph({
-          alignment: AlignmentType.CENTER,
-          children: [new ImageRun({ data: imageData, transformation: { width: 65, height: 65 }, type: 'png' })],
-        }))
-      }
-      children.push(
-        new Paragraph({
-          alignment: AlignmentType.CENTER, spacing: { before: 120 },
-          children: [new TextRun({ text: 'CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA', bold: true, size: 28, font: 'Times New Roman' })],
-        }),
-        new Paragraph({
-          alignment: AlignmentType.CENTER,
-          children: [new TextRun({ text: `Minuta de Regimento Interno — ${data.title}`, size: 24, font: 'Times New Roman' })],
-        }),
-        new Paragraph({
-          alignment: AlignmentType.CENTER, spacing: { after: 480 },
-          children: [new TextRun({ text: dateStr, size: 22, font: 'Times New Roman', italics: true })],
-        }),
-      )
-
-      const articles = buildArticles(data, edits, isExcluded)
-      let chapterSeen = false
-      articles.forEach(art => {
-        if (art.chapterTitle) {
-          children.push(
-            new Paragraph({
-              alignment: AlignmentType.CENTER, pageBreakBefore: chapterSeen,
-              spacing: { before: 240, after: 0 },
-              children: [new TextRun({ text: `CAPÍTULO ${romanize(art.chapterNumber)}`, bold: true, font: 'Times New Roman', size: 26 })],
-            }),
-            new Paragraph({
-              alignment: AlignmentType.CENTER, spacing: { after: 120 },
-              children: [new TextRun({ text: art.chapterTitle, bold: true, font: 'Times New Roman', size: 26 })],
-            }),
-          )
-          chapterSeen = true
-        }
-        if (art.sectionTitle) {
-          children.push(new Paragraph({
-            alignment: AlignmentType.CENTER, spacing: { before: 120, after: 80 },
-            children: [new TextRun({ text: `Seção ${romanize(art.sectionNumber)} — ${art.sectionTitle}`, bold: true, italics: true, font: 'Times New Roman', size: 24 })],
-          }))
-        }
-        children.push(new Paragraph({
-          alignment: AlignmentType.JUSTIFIED,
-          spacing: { line: 360, after: art.incisos.length ? 60 : 120 },
-          indent: art.incisos.length ? undefined : { firstLine: 708 },
-          children: [
-            new TextRun({ text: `${articleLabel(art.number)} `, bold: true, font: 'Times New Roman', size: 24 }),
-            new TextRun({ text: art.caput, font: 'Times New Roman', size: 24 }),
-          ],
-        }))
-        art.incisos.forEach((inc, i) => {
-          const runs = [new TextRun({ text: `${romanize(i + 1)} - ${inc.text}`, font: 'Times New Roman', size: 24 })]
-          if (inc.source && inc.source !== 'ro') {
-            runs.push(new TextRun({ text: ` (${inc.source})`, font: 'Times New Roman', size: 20, italics: true, color: '888888' }))
-          }
-          children.push(new Paragraph({
-            alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: 60 },
-            indent: { left: 708, hanging: 340 }, children: runs,
-          }))
-        })
+      const blob = await buildMinutaBlob({
+        structure: data,
+        edits,
+        isExcluded,
+        subtitle: `Minuta de Regimento Interno — ${data.title}`,
       })
-
-      const doc = new Document({
-        sections: [{
-          properties: { page: { margin: { top: 1701, right: 1134, bottom: 1134, left: 1701 } } },
-          footers: {
-            default: new Footer({
-              children: [new Paragraph({
-                alignment: AlignmentType.CENTER,
-                children: [new TextRun({ text: `Documento gerado pelo Portal de Legislação CBM — CBMRO · ${dateStr}`, size: 18, font: 'Times New Roman', italics: true })],
-              })],
-            }),
-          },
-          children,
-        }],
-      })
-
-      const blob = await Packer.toBlob(doc)
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
