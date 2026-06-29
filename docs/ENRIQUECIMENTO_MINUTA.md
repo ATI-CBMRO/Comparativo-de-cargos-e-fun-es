@@ -345,5 +345,59 @@ paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não sã
   é apoio redundante). Comando Operacional de Bombeiros e Cia de Segurança Aeroportuária (Art. 34)
   sem chave própria. Sem `ccs`/`cinf`/`condeg`/`doe`/`cot`/`bbs`/`bifea`/`gbm` na LOB de GO.
 
-Ao ampliar (Lotes 3–5), editar `scripts/lob_enrichment.py` e reexecutar
+### Lote 3 — MS, MT, PA, PB, PE (89 entradas)
+
+| Estado | Lei (LOB) | Órgãos com entrada | Observação |
+|---|---|---|---|
+| Mato Grosso do Sul (MS) | LC nº 188/2014 (alt. até LC 333/2024) | 17 | LOB moderna: finalidade-caput por órgão ("é órgão de Direção Setorial do sistema...", "competindo-lhe") para toda a estrutura, incl. DPA/DIntel (acrescidas pela LC 323/2023). |
+| Mato Grosso (MT) | LC nº 775/2023 (consolidada até LC 806/2024) | 20 | LOB rica: caput de finalidade ("é responsável por...", "presta assessoramento...") em cada Diretoria/órgão; detalhe por cargo remetido a regulamento (Art. 74). |
+| Pará (PA) | Lei nº 11.060/2025 | 19 | LOB nova e detalhada: caput de finalidade em quase todos os órgãos; detalhe remetido a regulamento (Art. 67). Texto restaurado da extração OCR (rebaixava maiúsculas). |
+| Paraíba (PB) | LC nº 191/2024 | 15 | LOB com "tem por finalidade"/"é responsável por" nas 7 Diretorias + EMG/CRBM/Corregedoria; detalhe remetido ao RGBM (Art. 15, XX). |
+| Pernambuco (PE) | Lei nº 15.187/2013 | 18 | LOB por "incumbe-se de..."/"é responsável por..." em quase todos os órgãos; DGP/DLog (Art. 15/17) têm incisos enumerados (3 e 5). |
+
+**Casos cargo-vs-órgão (finalidade tirada da atribuição do dirigente, não de caput do órgão):**
+- `(cg, ms)` Art. 8º, `(cg, mt)` Art. 12, `(cg, pa)` Art. 8º, `(cg, pb)` Art. 15, `(cg, pe)`
+  Art. 10 — todas as LOBs descrevem o "Comando" pela atribuição/responsabilidade do
+  **Comandante-Geral** (cargo); não há finalidade-caput do Comando-Geral como unidade.
+
+**LOB remete a decreto/Regimento (detalhe não disponível na lei):**
+- **MT** (LC 775/2023) — Art. 74 remete finalidade/atribuições/competências de detalhe de
+  cada unidade a regulamento do Comandante-Geral; o **caput** de cada órgão, porém, consta da
+  própria LC e foi aproveitado. A camada RI de MT (`ENRICHMENT_ORGAN`, em `minuta_enrichment.py`)
+  é distinta e não foi tocada.
+- **PA** (Lei 11.060/2025) — Art. 67 remete atribuições/detalhamento/competências dos órgãos à
+  regulamentação; a finalidade-caput de cada órgão consta da Lei e foi aproveitada.
+- **PB** (LC 191/2024) — Art. 15, XX remete competências e estrutura pormenorizadas ao
+  Regulamento Geral (RGBM); a finalidade-caput de cada Diretoria/órgão consta da LC.
+
+**Órgãos sem equivalente na LOB do estado (sem entrada), por estado:**
+- **MS**: Estado-Maior-Geral (Art. 11, gestão administrativa/orçamentária) sem `organ_key`
+  próprio (não é `dpo` operacional) → sem entrada; CG já cobre a direção. Sem `dpo`/`doe`/`cat`
+  /`ccs`/`bbm`/`cibm`/`bbs` próprios (execução é GBM/SGBM, mapeada em `gbm`; `crbm` usa o CMB,
+  Grande Comando). Órgãos de apoio redundantes (CSM, Policlínica, CRAPH, CapMil) são subórgãos de
+  `dlog`/`dsap` → não duplicados.
+- **MT**: Comando-Geral Adjunto/Chefe do EMG (Art. 17) e EMG (Art. 19) são direção superior de
+  controle, sem chave própria → sem entrada. Controladoria/Ouvidoria (Arts. 22-23) ≠ Corregedoria
+  → cobertas só pela Corregedoria Geral (Art. 20). Sem `cinf` próprio (TI é seção da Diretoria de
+  Administração Institucional) → não duplicado; `dlog` usa essa Diretoria (administração+logística).
+  Sem `bbs`/`cibm`/`gbm`/`cat` próprios (BBM cobre a execução; `bifea` usa o BEA).
+- **PA**: Estado-Maior Geral (Art. 11) e Departamento-Geral de Administração (Art. 18, dirige as
+  Diretorias) sem chave própria → sem entrada (DAL/DF/DTIC/DS já mapeadas individualmente). Grupo
+  de Operações Aéreas (Art. 49) **remete atribuições/composição a regulamento** (§ único) → sem
+  finalidade-caput, sem `boa`. GMAF/GSE/NAC são especializadas sem chave própria (`bbs` usa o GBS).
+  Controladoria Interna (Art. 26) ≠ Corregedoria (usada a Corregedoria-Geral, Art. 15).
+- **PB**: **não tem CEDEC** (defesa civil é competência do CG, sem órgão central na LOB) → sem
+  `depdec`. Comunicação Social e Inteligência são **coordenadorias do EMG** (5ª e 2ª, subdivisões),
+  não órgãos com finalidade própria → sem `ccs`/`cint`. Controladoria Interna (Art. 29) ≠
+  Corregedoria → cobertas em separado (CORREG, Art. 30). Execução (BBM/CIBM) sem caput de finalidade
+  na LC → sem `bbm`/`gbm`. `dpo` usa o EMG (planejamento estratégico/operacional, 3ª EMG).
+- **PE**: **não tem órgão aéreo nem florestal/ambiental** próprio → sem `boa`/`bifea`. DPlaG
+  (Planejamento e Gestão, Art. 21) e DF (Finanças, Art. 19) mapeariam ambas a `dpof` → usada a DF;
+  DPlaG fica de fora para não colidir a chave. DInter/1 e DInter/2 (Arts. 27/29) são pares regionais
+  da DIM → `crbm` registrado uma vez (DIM). `corregedoria` usa o Centro de Justiça e Disciplina
+  (Art. 60, PAD/sindicância/IPM); CCI (Art. 64) é controladoria de gestão, fora. `dsap` usa o CAS
+  (assistência); CEFD/CPPA são subórgãos de pessoal. Execução por Grupamentos: `gbm`=GB (Art. 83 V),
+  `bbs`=GBS (Art. 83 IV); GBI/GBAPH/GBMar sem chave própria.
+
+Ao ampliar (Lotes 4–5), editar `scripts/lob_enrichment.py` e reexecutar
 `python scripts/build_minuta_comparison.py` (e `python scripts/_check_lob_merge.py`).

@@ -1695,6 +1695,1051 @@ LOB_ENRICHMENT = {
         "source": "cf. CBMMG, LOB (LC nº 54/1999), Art. 27",
         "organName": "Companhia Independente de Bombeiros Militar", "abbr": "CIA IND BM",
     },
+
+    # =====================================================================
+    # Lote 3 — MS, MT, PA, PB, PE (camada LOB /comparar, 2026-06-28)
+    # =====================================================================
+
+    # --- Mato Grosso do Sul (CBMMS) — Lei Complementar nº 188/2014 ---
+    # LOB moderna que dá finalidade ("é órgão de Direção Setorial do sistema...",
+    # "competindo-lhe", "é o órgão de Apoio...") a quase todos os órgãos. (cg) usa a
+    # atribuição do Comandante-Geral (a LOB não dá finalidade ao Comando como órgão).
+    ("cg", "ms"): {
+        "finalidade": (
+            "O Comandante-Geral do CBMMS é o responsável superior pelo comando, "
+            "administração e emprego da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 8º",
+        "organName": "Comando Geral", "abbr": "",
+    },
+    ("corregedoria", "ms"): {
+        "finalidade": (
+            "A Corregedoria é órgão de Direção Geral, subordinado ao Comandante-Geral, "
+            "responsável pela preservação da disciplina, hierarquia e da ética "
+            "Bombeiro-Militar, competindo-lhe, também, normatizar, coordenar, controlar, "
+            "fiscalizar e proceder a apuração de fatos que envolvam responsabilidade Penal "
+            "Militar, Administrativa e Disciplinar dos membros da Corporação, bem como o "
+            "exercer e supervisionar as atribuições relativas ao Poder Disciplinar e de "
+            "Polícia Judiciária Militar, podendo, ainda exercer atribuições de inteligência"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 15",
+        "organName": "Corregedoria", "abbr": "",
+    },
+    ("dp", "ms"): {
+        "finalidade": (
+            "A Diretoria de Pessoal é órgão de Direção Setorial do sistema de recursos "
+            "humanos do CBMMS, competindo-lhe o estudo, planejamento, orientação normativa, "
+            "coordenação, supervisão, controle e execução das atividades relativas à gestão "
+            "de pessoal e desenvolvimento de recursos humanos da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 17",
+        "organName": "Diretoria de Pessoal", "abbr": "DP",
+    },
+    ("dlog", "ms"): {
+        "finalidade": (
+            "A Diretoria de Apoio Logístico é órgão de Direção Setorial do sistema "
+            "logístico do CBMMS, competindo-lhe o estudo, planejamento, orientação "
+            "normativa, coordenação, supervisão, controle e execução das atividades "
+            "relativas à gestão do material, patrimônio e informática da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 18",
+        "organName": "Diretoria de Apoio Logístico", "abbr": "DAL",
+    },
+    ("dpof", "ms"): {
+        "finalidade": (
+            "A Diretoria de Finanças é órgão de Direção Setorial do sistema de administração "
+            "financeira do CBMMS, competindo-lhe o estudo, planejamento, orientação "
+            "normativa, coordenação, supervisão, controle e execução das atividades relativas "
+            "à gestão financeira, ao planejamento e execução orçamentária, à contabilidade e "
+            "auditoria"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 19",
+        "organName": "Diretoria de Finanças", "abbr": "DF",
+    },
+    ("cot", "ms"): {
+        "finalidade": (
+            "A Diretoria de Atividades Técnicas é órgão de Direção Setorial do sistema de "
+            "prevenção do CBMMS, competindo-lhe a normatização, o estudo, a análise, o "
+            "planejamento das atividades preventivas, a orientação técnica, o controle e a "
+            "fiscalização dos órgãos de execução da Corporação empenhados nas atividades "
+            "relativas à aplicação das normas de segurança contra incêndio, pânico e outros "
+            "riscos, e ao cumprimento das disposições legais sobre o assunto no âmbito do "
+            "Estado de Mato Grosso do Sul"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 20",
+        "organName": "Diretoria de Atividades Técnicas", "abbr": "DAT",
+    },
+    ("deei", "ms"): {
+        "finalidade": (
+            "A Diretoria de Ensino, Instrução, Pesquisa e Educação (DEIPE) é o órgão de "
+            "Direção Setorial do CBMMS, responsável pela administração do Ensino, Instrução, "
+            "Pesquisa e da Educação Bombeiro-Militar, com competência de planejar, coordenar, "
+            "fiscalizar, controlar e promover a pesquisa, o ensino em todas as suas "
+            "modalidades, a instrução e o treinamento operacional relativo às atividades do "
+            "Corpo de Bombeiros Militar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 21",
+        "organName": "Diretoria de Ensino, Instrução, Pesquisa e Educação", "abbr": "DEIPE",
+    },
+    ("dsap", "ms"): {
+        "finalidade": (
+            "A Diretoria de Saúde é órgão de Direção Setorial do Sistema de Saúde do CBMMS, "
+            "com competência para gerir, planejar, coordenar, fiscalizar, controlar e "
+            "manutenir as atividades de atendimento de emergência e urgência pré-hospitalar, "
+            "assistência social, religiosa, psicológica e de saúde em geral, destinados aos "
+            "bombeiros militares"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 22",
+        "organName": "Diretoria de Saúde", "abbr": "DS",
+    },
+    ("cinf", "ms"): {
+        "finalidade": (
+            "À Diretoria de Telemática e Estatística é o órgão de Direção Setorial do CBMMS "
+            "com competência para implementar, coordenar, controlar e fiscalizar os sistemas "
+            "de tecnologia da informação e de comunicações, assim como promover sua "
+            "manutenção e desenvolver estudos estatísticos do CBMMS"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 23",
+        "organName": "Diretoria de Telemática e Estatística", "abbr": "DTel",
+    },
+    ("bifea", "ms"): {
+        "finalidade": (
+            "A Diretoria de Proteção Ambiental (DPA) é o órgão de Direção Setorial do CBMMS, "
+            "responsável pelo planejamento, execução, orientação normativa, supervisão e pelo "
+            "controle das atividades inerentes ao serviço de proteção ambiental no âmbito do "
+            "CBMMS"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 23-A",
+        "organName": "Diretoria de Proteção Ambiental", "abbr": "DPA",
+    },
+    ("cint", "ms"): {
+        "finalidade": (
+            "A Diretoria de Inteligência (DIntel) é o órgão de Direção Setorial do CBMMS, "
+            "responsável pelas políticas referentes ao sistema de gestão de Inteligência, "
+            "voltado à atividade-fim da Instituição, com competência para planejar, coordenar, "
+            "controlar e fiscalizar as atividades de inteligência e o gerenciamento, "
+            "fiscalização e controle de material bélico"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 23-B",
+        "organName": "Diretoria de Inteligência", "abbr": "DIntel",
+    },
+    ("crbm", "ms"): {
+        "finalidade": (
+            "O Comando Metropolitano de Bombeiros (CMB) é o órgão de Direção Setorial "
+            "subordinado diretamente ao Subcomandante-Geral, responsável pelo planejamento, "
+            "coordenação, fiscalização, controle, assessoramento e acompanhamento direto de "
+            "todas as atividades operacionais e de prevenção desenvolvidas na capital e "
+            "regiões a ela subordinadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 24",
+        "organName": "Comando Metropolitano de Bombeiros", "abbr": "CMB",
+    },
+    ("ag", "ms"): {
+        "finalidade": (
+            "A Ajudância Geral é o órgão de Apoio ao Comando Geral, encarregado da "
+            "administração e do expediente do Quartel do Comando Geral, considerada como "
+            "Organização Bombeiro Militar (OBM), competindo-lhe ainda a execução dos trabalhos "
+            "de secretaria, incluindo a correspondência, correio, redação e impressão do "
+            "boletim diário, do protocolo e arquivo geral, do apoio em pessoal aos órgãos que "
+            "compõem o Comando Geral, dos serviços gerais e da segurança do Quartel do Comando "
+            "Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 27",
+        "organName": "Ajudância Geral", "abbr": "AG",
+    },
+    ("gab-cg", "ms"): {
+        "finalidade": (
+            "Ao Gabinete do Comandante-Geral competem as funções de receber organizar e "
+            "distribuir toda a agenda administrativa e política do Comandante-Geral nos "
+            "assuntos que extrapolem as atribuições normais e específicas dos demais órgãos da "
+            "corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 28",
+        "organName": "Gabinete do Comandante-Geral", "abbr": "GabCG",
+    },
+    ("assessorias", "ms"): {
+        "finalidade": (
+            "As Assessorias especiais (AssEsp) são órgãos de apoio ligados diretamente ao "
+            "Comandante-Geral do CBMMS e serão constituídas para determinados estudos que "
+            "extrapolem as atribuições normais, específicas e peculiares dos órgãos de Direção "
+            "e Estado-Maior, e se destinam a dar flexibilidade à estrutura do Comando da "
+            "Corporação, particularmente em assuntos especializados, na forma da legislação "
+            "pertinente"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 31",
+        "organName": "Assessorias Especiais", "abbr": "AssEsp",
+    },
+    ("boa", "ms"): {
+        "finalidade": (
+            "O Grupamento de Operações Aéreas (GOA) é o órgão de apoio do Subcomando Geral, "
+            "responsável pelo planejamento e execução das operações aéreas em apoio às "
+            "atividades meio e fim da Corporação, transporte de autoridades, apoio aéreo a "
+            "outros órgãos por meio de normas e procedimentos aplicáveis a tais operações, bem "
+            "como, a formação de tripulações e manutenção das aeronaves em todo o território do "
+            "Estado ou fora dele"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 36",
+        "organName": "Grupamento de Operações Aéreas", "abbr": "GOA",
+    },
+    ("gbm", "ms"): {
+        "finalidade": (
+            "O GBM é a maior Unidade Operacional (UOp) do CBMMS, com nível de Batalhão, "
+            "subordina-se ao CMB, ao CBDiv ou ao CBFron, conforme sua localização, "
+            "competindo-lhe executar a atividade fim da corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMS, LOB (LC nº 188/2014), Art. 46",
+        "organName": "Grupamento de Bombeiros Militar", "abbr": "GBM",
+    },
+
+    # --- Mato Grosso (CBMMT) — Lei Complementar nº 775/2023 (consolidada até LC 806/2024) ---
+    # LOB que dá finalidade/caput ("é responsável por...", "presta assessoramento...",
+    # "tem por competência...") a cada Diretoria/órgão. (cg) usa a competência do
+    # Comandante-Geral; o detalhamento de competências por cargo é remetido a regulamento
+    # (Art. 74), mas o caput de cada órgão é VERBATIM da LOB.
+    ("cg", "mt"): {
+        "finalidade": (
+            "A administração, o comando e o emprego da instituição são de competência e "
+            "responsabilidade do Comandante-Geral, através de diretrizes e ordens a todos os "
+            "níveis corporativos"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 12",
+        "organName": "Comandante-Geral", "abbr": "",
+    },
+    ("condeg", "mt"): {
+        "finalidade": (
+            "O Conselho Superior de Bombeiros Militar é o colegiado superior da instituição, "
+            "de caráter consultivo, que no processo decisório compartilha da gestão "
+            "estratégica do Corpo de Bombeiros Militar, subsidiando as decisões do "
+            "Comandante-Geral sobre assuntos de extrema relevância"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 14",
+        "organName": "Conselho Superior de Bombeiros Militar", "abbr": "",
+    },
+    ("corregedoria", "mt"): {
+        "finalidade": (
+            "A Corregedoria Geral do Corpo de Bombeiros Militar é responsável pela "
+            "sistematização e controle das atividades de correição funcional e setorial, de "
+            "caráter disciplinar, administrativo ou de polícia judiciária militar, vinculada "
+            "diretamente ao Comandante-Geral da Instituição"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 20",
+        "organName": "Corregedoria Geral", "abbr": "",
+    },
+    ("assessorias", "mt"): {
+        "finalidade": (
+            "A Assessoria Jurídica presta assessoramento direto ao Comandante-Geral e "
+            "Comandante-Geral Adjunto nas questões jurídicas e de legislação compreendidas na "
+            "administração geral da instituição ou outras que lhe forem designadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 25",
+        "organName": "Assessoria Jurídica", "abbr": "",
+    },
+    ("depdec", "mt"): {
+        "finalidade": (
+            "A Assessoria Especial de Proteção e Defesa Civil presta assessoramento direto ao "
+            "Comandante-Geral nas questões referentes à promoção e integração à Política "
+            "Nacional de Proteção e Defesa Civil e do Sistema Estadual de Proteção e Defesa "
+            "Civil"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 28",
+        "organName": "Assessoria de Proteção e Defesa Civil", "abbr": "",
+    },
+    ("dlog", "mt"): {
+        "finalidade": (
+            "A Diretoria de Administração Institucional é responsável por realizar "
+            "planejamento, orientação, controle, coordenação, fiscalização e a execução das "
+            "atividades relacionadas com a gestão administrativa, logística, orçamentária e "
+            "financeira no âmbito da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 33",
+        "organName": "Diretoria de Administração Institucional", "abbr": "",
+    },
+    ("dp", "mt"): {
+        "finalidade": (
+            "A Diretoria de Gestão de Pessoas é responsável pelo planejamento, coordenação, "
+            "supervisão, fiscalização e execução das atividades relacionadas com as políticas "
+            "de controle de pessoal, folha de pagamento, avaliação e promoção de pessoal, "
+            "cadastro de pessoal, recrutamento e seleção, assistência à saúde, assistência "
+            "psicossocial, segurança no trabalho, execução, coordenação, controle e orientação "
+            "de publicação de atos administrativos no Boletim Geral Eletrônico e Restrito, e "
+            "outras ações correlatas de interesse da instituição"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 34",
+        "organName": "Diretoria de Gestão de Pessoas", "abbr": "",
+    },
+    ("deei", "mt"): {
+        "finalidade": (
+            "A Diretoria de Ensino, Instrução e Pesquisa é responsável pela administração do "
+            "Sistema de Educação Bombeiro Militar, incumbindo-lhe o planejamento, a "
+            "organização, a coordenação, a fiscalização e o controle das atividades de "
+            "formação, graduação, pós-graduação, aperfeiçoamento, habilitação e treinamento do "
+            "Bombeiro Militar, além da preservação, fomento e difusão da cultura institucional"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 35",
+        "organName": "Diretoria de Ensino, Instrução e Pesquisa", "abbr": "",
+    },
+    ("dpof", "mt"): {
+        "finalidade": (
+            "A Diretoria de Gestão Estratégica é responsável pela formulação e acompanhamento "
+            "das políticas de médio e longo prazo, do planejamento estratégico institucional "
+            "e indicadores de desempenho, promovendo o empreendedorismo, a integração das "
+            "áreas de planejamento, orçamento e gestão, a captação de recursos e "
+            "desenvolvimento organizacional"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 36",
+        "organName": "Diretoria de Gestão Estratégica", "abbr": "",
+    },
+    ("dsap", "mt"): {
+        "finalidade": (
+            "A Diretoria de Saúde é responsável pelo planejamento, execução, coordenação, "
+            "supervisão, fiscalização e avaliação das atividades relacionadas com as políticas "
+            "de saúde na corporação, socorros de urgências e emergências pré-hospitalares e "
+            "resgate, inspeção de saúde, inquérito sanitário de origem, bem como fomentar e "
+            "implementar políticas de melhoria da qualidade de vida e assistência psicossocial "
+            "na Corporação, atuando de forma integrada ao Sistema Único de Saúde"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 37",
+        "organName": "Diretoria de Saúde", "abbr": "",
+    },
+    ("gab-cg", "mt"): {
+        "finalidade": (
+            "O Gabinete do Comandante-Geral presta assessoramento e assistência diretamente "
+            "ao Comandante-Geral do Corpo de Bombeiros Militar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 38",
+        "organName": "Gabinete do Comandante-Geral", "abbr": "",
+    },
+    ("cint", "mt"): {
+        "finalidade": (
+            "A Agência Central de Inteligência, vinculada diretamente ao Comandante-Geral da "
+            "Instituição, integrante do sistema estadual de inteligência, é responsável pela "
+            "sistematização, planejamento, coordenação, execução, controle e fiscalização das "
+            "políticas de inteligência e informações no âmbito do Corpo de Bombeiros Militar, "
+            "com a finalidade de proporcionar ao Comandante-Geral as informações setoriais e "
+            "conjunturais necessárias ao processo de tomada de decisões em todos os níveis"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 39",
+        "organName": "Agência Central de Inteligência", "abbr": "",
+    },
+    ("ccs", "mt"): {
+        "finalidade": (
+            "O Centro de Comunicação Social presta assessoramento direto ao Comandante-Geral "
+            "e Comandante-Geral Adjunto, sendo responsável pela política de comunicação "
+            "social, marketing e cerimonial da Instituição, visando preservar e fortalecer a "
+            "imagem corporativa junto ao público interno e externo, além da coordenação das "
+            "atividades do Corpo Musical e do Museu Histórico"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 40",
+        "organName": "Centro de Comunicação Social Bombeiro Militar", "abbr": "",
+    },
+    ("ag", "mt"): {
+        "finalidade": (
+            "A Ajudância Geral, vinculada diretamente ao Comandante-Geral Adjunto, constitui "
+            "uma unidade administrativa, responsável pelo apoio administrativo e de serviços "
+            "às atividades do Quartel do Comando Geral do Corpo de Bombeiros Militar e seus "
+            "setores descentralizados"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 42",
+        "organName": "Ajudância Geral", "abbr": "",
+    },
+    ("cot", "mt"): {
+        "finalidade": (
+            "A Diretoria de Segurança Contra Incêndio e Pânico, subordinada diretamente ao "
+            "Comandante-Geral Adjunto, é responsável pelo planejamento, execução, coordenação "
+            "e controle de todas as atividades concernentes à segurança contra incêndio e "
+            "pânico das instalações, edificações e locais de risco, em conformidade com a "
+            "legislação peculiar"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 57",
+        "organName": "Diretoria de Segurança Contra Incêndio e Pânico", "abbr": "",
+    },
+    ("dpo", "mt"): {
+        "finalidade": (
+            "A Diretoria Operacional, subordinada diretamente ao Comandante-Geral Adjunto, é "
+            "responsável pela supervisão, coordenação e planejamento das políticas relacionadas "
+            "com a atividade operacional da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 58",
+        "organName": "Diretoria Operacional", "abbr": "",
+    },
+    ("crbm", "mt"): {
+        "finalidade": (
+            "As Unidades classificadas como Comandos Regionais de Bombeiros Militar - CRBM "
+            "subordinam-se diretamente à Diretoria Operacional e são responsáveis pela "
+            "supervisão, coordenação e planejamento do emprego operacional das UBM a eles "
+            "subordinadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 59",
+        "organName": "Comando Regional de Bombeiros Militar", "abbr": "CRBM",
+    },
+    ("bbm", "mt"): {
+        "finalidade": (
+            "As UBM classificadas como Batalhão de Bombeiros Militar (BBM), Companhia "
+            "Independente de Bombeiros Militar (CIBM), Pelotão Independente de Bombeiros "
+            "Militar (PIBM) e Núcleo de Bombeiros Militar (NBM) são unidades de execução "
+            "subordinadas a um Comando Regional de Bombeiros Militar - CRBM"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 60",
+        "organName": "Batalhão de Bombeiros Militar", "abbr": "BBM",
+    },
+    ("bifea", "mt"): {
+        "finalidade": (
+            "O Batalhão de Emergências Ambientais, unidade especializada, subordinada "
+            "diretamente à Diretoria Operacional, é responsável pelo planejamento, "
+            "organização, direção, coordenação e execução de atividades de prevenção e combate "
+            "a incêndios florestais e emergências com produtos perigosos, atuando em reforço "
+            "ou apoio as demais UBM"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 61",
+        "organName": "Batalhão de Emergências Ambientais", "abbr": "BEA",
+    },
+    ("boa", "mt"): {
+        "finalidade": (
+            "O Grupo de Aviação de Bombeiros Militar, unidade especializada, subordinada "
+            "diretamente a Diretoria Operacional, é responsável pelo planejamento, "
+            "organização, direção, coordenação e execução de atividade que envolva o emprego "
+            "da aviação Bombeiro Militar, atuando em reforço ou apoio as demais UBM"
+        ),
+        "competencias": [],
+        "source": "cf. CBMMT, LOB (LC nº 775/2023), Art. 62",
+        "organName": "Grupo de Aviação de Bombeiros Militar", "abbr": "",
+    },
+
+    # --- Pará (CBMPA) — Lei nº 11.060/2025 ---
+    # LOB nova e detalhada, com caput definindo a finalidade de quase todos os órgãos
+    # ("é o órgão de direção-geral responsável por...", "compete...", "À Diretoria ...
+    # compete..."). O detalhamento de atribuições é remetido a regulamento (Art. 67), mas o
+    # caput de cada órgão é VERBATIM da Lei. (cg) usa a competência do Comandante-Geral.
+    # Texto restaurado da extração OCR (que rebaixou maiúsculas de nomes próprios).
+    ("cg", "pa"): {
+        "finalidade": (
+            "Compete ao Comandante-Geral o comando, a gestão, o emprego, a supervisão e a "
+            "coordenação geral das atividades da corporação, assessorado pelos órgãos de "
+            "direção, apoio e de execução"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 8º",
+        "organName": "Comandante-Geral", "abbr": "",
+    },
+    ("condeg", "pa"): {
+        "finalidade": (
+            "O Alto Comando do Corpo de Bombeiros Militar do Pará (CBMPA) é o órgão colegiado "
+            "de direção-geral, com atribuições deliberativas e consultivas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 9º",
+        "organName": "Alto Comando", "abbr": "",
+    },
+    ("depdec", "pa"): {
+        "finalidade": (
+            "A Coordenadoria Estadual de Proteção e Defesa Civil do Pará (CEDEC), órgão de "
+            "direção-geral, é o órgão central e coordenador do Sistema Estadual de Proteção e "
+            "Defesa Civil (SEPDEC) tem a missão de contribuir para proteção da vida, "
+            "patrimônio e meio ambiente, atendendo a população no território paraense, em "
+            "situação de emergência ou calamidade pública, desencadeadas por fatores anormais "
+            "e adversos, bem como limitar riscos e perdas para a comunidade, com a finalidade "
+            "de preservar e restabelecer a normalidade da vida comunitária"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 13",
+        "organName": "Coordenadoria Estadual de Proteção e Defesa Civil do Pará", "abbr": "CEDEC",
+    },
+    ("corregedoria", "pa"): {
+        "finalidade": (
+            "A Corregedoria-Geral (CORREG), diretamente vinculada ao Comandante-Geral, é o "
+            "órgão correcional do Corpo de Bombeiros Militar do Pará (CBMPA) responsável pelo "
+            "assessoramento disciplinar, pela orientação, prevenção e fiscalização das "
+            "atividades funcionais e da conduta profissional, visando o aprimoramento da "
+            "ética, da disciplina e da hierarquia entre os integrantes da corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 15",
+        "organName": "Corregedoria-Geral", "abbr": "CORREG",
+    },
+    ("dpo", "pa"): {
+        "finalidade": (
+            "O Comando de Operações é o órgão de direção-geral responsável pela direção e pelo "
+            "controle dos órgãos de direção intermediária e setorial, de apoio e de execução "
+            "da atividade-fim da corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 16",
+        "organName": "Comando de Operações", "abbr": "",
+    },
+    ("dp", "pa"): {
+        "finalidade": (
+            "O Departamento-Geral de Pessoal (DGP) é responsável pela direção e pelo controle "
+            "das atividades de pessoal da corporação relacionadas ao ingresso, à "
+            "identificação, à classificação e à movimentação, aos cadastros e às avaliações, "
+            "ao recadastramento, às promoções, aos direitos, aos deveres e aos incentivos, à "
+            "assistência psicológica, social e religiosa, ao acompanhamento e ao controle de "
+            "veteranos e pensionistas, bem como de saúde"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 19",
+        "organName": "Departamento-Geral de Pessoal", "abbr": "DGP",
+    },
+    ("deei", "pa"): {
+        "finalidade": (
+            "O Departamento-Geral de Cultura, Educação e Pesquisa (DGCEP) é responsável pela "
+            "gestão do sistema de ensino bombeiro militar, das atividades de pesquisa, "
+            "relacionados à formação, à capacitação, ao aperfeiçoamento, à especialização, à "
+            "extensão e qualificação dos oficiais e praças, bem como pela promoção da cultura"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 20",
+        "organName": "Departamento-Geral de Cultura, Educação e Pesquisa", "abbr": "DGCEP",
+    },
+    ("cot", "pa"): {
+        "finalidade": (
+            "O Departamento-Geral de Segurança contra Incêndios e Emergências (DGSCI) é "
+            "responsável por estabelecer diretrizes gerais de segurança contra incêndios e "
+            "emergências, de modo a proteger a vida e a reduzir danos ao meio ambiente e ao "
+            "patrimônio"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 21",
+        "organName": "Departamento-Geral de Segurança contra Incêndios e Emergências", "abbr": "DGSCI",
+    },
+    ("gab-cg", "pa"): {
+        "finalidade": (
+            "O Gabinete do Comandante-Geral é um órgão de direção-geral responsável por "
+            "prestar assessoria direta, permanente e pessoal ao Comandante-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 24",
+        "organName": "Gabinete do Comandante-Geral", "abbr": "",
+    },
+    ("ag", "pa"): {
+        "finalidade": (
+            "A Ajudância-Geral é o órgão de direção-geral que tem a seu cargo as funções de "
+            "secretaria e apoio administrativo ao Comando-Geral, coordenação dos serviços "
+            "gerais, manutenção e segurança do quartel do Comando-Geral"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 25",
+        "organName": "Ajudância-Geral", "abbr": "",
+    },
+    ("assessorias", "pa"): {
+        "finalidade": (
+            "A Consultoria Jurídica (CONJUR) é órgão de direção-geral, diretamente subordinada "
+            "ao Comandante-Geral, tendo por finalidade a prestação de assessoramento jurídico, "
+            "competindo-lhe o estudo de questões de direito compreendidas na política de "
+            "administração geral da instituição, examinar aspectos de legalidade dos atos e "
+            "normas que lhe forem submetidos à análise e demais atribuições que venham a ser "
+            "previstas em regulamento"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 27",
+        "organName": "Consultoria Jurídica", "abbr": "CONJUR",
+    },
+    ("cint", "pa"): {
+        "finalidade": (
+            "O Centro de Inteligência (CEINT) é órgão de direção-geral, subordinado ao "
+            "Comandante-Geral, responsável por planejar, coordenar, executar, fiscalizar, "
+            "controlar, articular, supervisionar e gerenciar as atividades de inteligência "
+            "bombeiro militar, no âmbito do Corpo de Bombeiros Militar do Pará (CBMPA), dentro "
+            "do território paraense, e assessorar o Comandante-Geral da corporação nos "
+            "assuntos de cunho estratégico, tático e operacional que lhe forem confiados"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 28",
+        "organName": "Centro de Inteligência", "abbr": "CEINT",
+    },
+    ("crbm", "pa"): {
+        "finalidade": (
+            "Aos comandos operacionais intermediários de bombeiros, subordinados ao Comando de "
+            "Operações, cabe a direção, o controle e o planejamento das atividades "
+            "operacionais das suas Unidades Bombeiro Militar (UBMs) subordinadas, no âmbito de "
+            "suas respectivas responsabilidades e circunscrições"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 30",
+        "organName": "Comandos Operacionais Intermediários de Bombeiros", "abbr": "",
+    },
+    ("dlog", "pa"): {
+        "finalidade": (
+            "À Diretoria de Apoio Logístico (DAL), subordinada ao Departamento-Geral de "
+            "Administração (DGA), compete planejar, coordenar, fiscalizar e controlar as "
+            "necessidades de apoio, suprimento, manutenção, patrimônio e obras"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 33",
+        "organName": "Diretoria de Apoio Logístico", "abbr": "DAL",
+    },
+    ("dpof", "pa"): {
+        "finalidade": (
+            "À Diretoria de Finanças (DF), subordinada ao Departamento-Geral de Administração "
+            "(DGA), compete realizar as atividades financeiras dos órgãos da corporação e a "
+            "distribuição de recursos orçamentários e, de acordo com o planejamento "
+            "estabelecido"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 34",
+        "organName": "Diretoria de Finanças", "abbr": "DF",
+    },
+    ("cinf", "pa"): {
+        "finalidade": (
+            "À Diretoria de Tecnologia da Informação e Comunicação (DTIC), subordinada ao "
+            "Departamento-Geral de Administração (DGA), compete realizar o planejamento, a "
+            "gestão e a execução das ações referentes à tecnologia da informação e "
+            "comunicação, nos termos da legislação vigente"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 36",
+        "organName": "Diretoria de Tecnologia da Informação e Comunicação", "abbr": "DTIC",
+    },
+    ("dsap", "pa"): {
+        "finalidade": (
+            "À Diretoria de Saúde (DS), subordinada ao Departamento-Geral de Pessoal (DGP), "
+            "compete o planejamento, a gestão e a execução das ações de assistência "
+            "relacionadas à saúde e atenção biopsicossocial do bombeiro militar, seus "
+            "dependentes legais, bem como dos animais do Corpo de Bombeiros Militar do Pará "
+            "(CBMPA)"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 37",
+        "organName": "Diretoria de Saúde", "abbr": "DS",
+    },
+    ("gbm", "pa"): {
+        "finalidade": (
+            "Os grupamentos e subgrupamentos bombeiro Militar são órgãos de execução do Corpo "
+            "de Bombeiros Militar do Pará (CBMPA), subordinados aos Comandos Regionais de "
+            "Bombeiros de Proteção e Emergência Ambiental (CRB) correspondentes, de acordo com "
+            "a sua circunscrição"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 50",
+        "organName": "Grupamentos e Subgrupamentos Bombeiro Militar", "abbr": "GBM",
+    },
+    ("bbs", "pa"): {
+        "finalidade": (
+            "O Grupamento de Busca e Salvamento (GBS) é órgão de execução do Corpo de "
+            "Bombeiros Militar do Pará (CBMPA), subordinado ao Comando de Missões Especiais "
+            "Bombeiro Militar (CME-BM), tendo como atribuições as ações de busca, salvamento e "
+            "resgate, além de outras específicas de Bombeiros Militar, em todo o território do "
+            "estado do Pará"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPA, LOB (Lei nº 11.060/2025), Art. 54",
+        "organName": "Grupamento de Busca e Salvamento", "abbr": "GBS",
+    },
+
+    # --- Paraíba (CBMPB) — Lei Complementar nº 191/2024 ---
+    # LOB que dá finalidade ("tem por finalidade", "é responsável por...", "é a unidade
+    # gestora...") a cada Diretoria/órgão. Detalhe (competências e estrutura) remetido ao
+    # Regulamento Geral - RGBM (Art. 15, XX). (cg) usa a atribuição do Comandante Geral; o
+    # planejamento estratégico/operacional cabe ao Estado Maior Geral (mapeado em dpo).
+    # PB não tem CEDEC nem Comunicação Social/Inteligência como órgãos próprios (são
+    # coordenadorias do EMG) — sem entrada (registrado no doc).
+    ("cg", "pb"): {
+        "finalidade": (
+            "O Comandante Geral – CMTG – é o responsável pelo comando, gestão, emprego, "
+            "supervisão e coordenação geral das atividades da Corporação, e seu cargo ocupado, "
+            "privativamente, por coronel da ativa do QOEM do CBMPB"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 15",
+        "organName": "Comando Geral", "abbr": "CG",
+    },
+    ("condeg", "pb"): {
+        "finalidade": (
+            "O Alto Comando – AC – tem a função de exercer o aconselhamento estratégico do "
+            "Comando Geral, sendo presidido pelo Comandante Geral e tendo como membros: o "
+            "Subcomandante Geral, o Chefe do EMG, o Corregedor Geral, o Controlador Geral, os "
+            "Diretores Setoriais, e os Comandantes Regionais da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 27",
+        "organName": "Alto Comando", "abbr": "AC",
+    },
+    ("dpo", "pb"): {
+        "finalidade": (
+            "O Estado Maior Geral – EMG – é o órgão de assessoramento estratégico do Gabinete "
+            "do Comando Geral, responsável pela assessoria perante o Comando Geral no "
+            "planejamento e na gestão estratégica para o desenvolvimento e cumprimento das "
+            "missões institucionais"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 28",
+        "organName": "Estado Maior Geral", "abbr": "EMG",
+    },
+    ("corregedoria", "pb"): {
+        "finalidade": (
+            "A Corregedoria do Corpo de Bombeiros Militar – CORREG – órgão auxiliar do Sistema "
+            "Geral de Disciplina da Secretaria de Estado da Segurança e Defesa Social "
+            "(SGC/SESDS), é o órgão de direção estratégica com a finalidade de apurar as "
+            "infrações penais militares, apurando, acompanhando, fiscalizando e aplicando a "
+            "correição no regime ético-disciplinar nos serviços da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 30",
+        "organName": "Corregedoria do Corpo de Bombeiros Militar", "abbr": "CORREG",
+    },
+    ("crbm", "pb"): {
+        "finalidade": (
+            "Os Comandos Regionais de Bombeiro Militar – CRBM – são unidades gestoras, em "
+            "nível estratégico, organizadas de forma sistêmica e responsáveis pela gestão "
+            "estratégica regionalizada nas Regiões Integradas de Segurança Pública, através do "
+            "controle, planejamento e supervisão das atividades operacionais realizadas pelas "
+            "OBM subordinadas"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 32",
+        "organName": "Comandos Regionais de Bombeiro Militar", "abbr": "CRBM",
+    },
+    ("dlog", "pb"): {
+        "finalidade": (
+            "A Diretoria de Apoio Logístico – DAL – tem por finalidade a gestão do sistema "
+            "logístico, responsável pelo planejamento, coordenação, fiscalização e controle "
+            "das atividades de aquisição, suprimento e manutenção de materiais, viaturas e "
+            "equipamentos"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 34",
+        "organName": "Diretoria de Apoio Logístico", "abbr": "DAL",
+    },
+    ("cot", "pb"): {
+        "finalidade": (
+            "A Diretoria de Atividades Técnicas – DAT – é a unidade gestora, em nível "
+            "setorial, organizado de forma sistêmica e responsável pelo estudo, análise, "
+            "planejamento, orientação técnica, normatização, controle e fiscalização das "
+            "atividades relativas à segurança contra incêndio e controle de pânico, ao "
+            "cumprimento das disposições legais sobre o assunto e investigação de incêndios e "
+            "explosões"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 35",
+        "organName": "Diretoria de Atividades Técnicas", "abbr": "DAT",
+    },
+    ("deei", "pb"): {
+        "finalidade": (
+            "A Diretoria de Educação e Pesquisa – DEP – é responsável pela gestão do sistema "
+            "de educação militar da Corporação, por meio do planejamento, supervisão, "
+            "coordenação, fiscalização, controle e execução das atividades de ensino, "
+            "treinamento e pesquisa científica, relacionadas à qualificação profissional de "
+            "recursos humanos para o exercício das funções atribuídas aos integrantes do CBMPB"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 37",
+        "organName": "Diretoria de Educação e Pesquisa", "abbr": "DEP",
+    },
+    ("dpof", "pb"): {
+        "finalidade": (
+            "A Diretoria de Finanças – DF – tem como finalidade a gestão do sistema de "
+            "planejamento e administração financeira, orçamentária, contábil, bem como a "
+            "gestão de Fundos e Convênios"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 40",
+        "organName": "Diretoria de Finanças", "abbr": "DF",
+    },
+    ("dp", "pb"): {
+        "finalidade": (
+            "A Diretoria de Gestão de Pessoas – DGP – tem como finalidade o planejamento, "
+            "recrutamento, seleção, acompanhamento, execução, controle e fiscalização das "
+            "atividades relacionadas com os recursos humanos da Corporação, sejam militares de "
+            "carreira ou temporários, bem como os servidores civis"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 41",
+        "organName": "Diretoria de Gestão de Pessoas", "abbr": "DGP",
+    },
+    ("dsap", "pb"): {
+        "finalidade": (
+            "A Diretoria de Saúde – DS – é o órgão integrante do Sistema de Proteção Social "
+            "dos Militares da Corporação, com competência para planejar, coordenar, fiscalizar, "
+            "controlar e executar todas as atividades de saúde, assistência biopsicossocial e "
+            "veterinária, além do trato das questões referentes ao estado sanitário do pessoal "
+            "da Corporação e seus dependentes"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 42",
+        "organName": "Diretoria de Saúde", "abbr": "DS",
+    },
+    ("cinf", "pb"): {
+        "finalidade": (
+            "A Diretoria de Tecnologia da Informação – DTI – tem por finalidade desenvolver "
+            "sistemas e aplicativos computacionais, a prospecção e absorção de novas "
+            "tecnologias, administração da rede de informática e dos bancos de dados, o "
+            "suporte técnico de software e equipamentos, o atendimento especializado aos "
+            "usuários e a governança de tecnologia da informação e inovação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 43",
+        "organName": "Diretoria de Tecnologia da Informação", "abbr": "DTI",
+    },
+    ("assessorias", "pb"): {
+        "finalidade": (
+            "A Assessoria de Relações Institucionais - ARI – tem a finalidade de assessorar o "
+            "Comando Geral em assuntos legislativos relacionados com a atividade fim da "
+            "Corporação e atividades de Defesa Social e Defesa Civil, além de, representar a "
+            "Corporação junto aos Poderes Legislativos Federal, Estadual e Municipais"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 21",
+        "organName": "Assessoria de Relações Institucionais", "abbr": "ARI",
+    },
+    ("gab-cg", "pb"): {
+        "finalidade": (
+            "Ao Gabinete do Comandante Geral do Corpo de Bombeiros Militar compete a direção e "
+            "administração geral do Corpo de Bombeiros Militar do Estado da Paraíba – CBMPB no "
+            "cumprimento dos seus objetivos, sendo o Comandante Geral a autoridade máxima da "
+            "Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 14",
+        "organName": "Gabinete do Comandante Geral", "abbr": "GCMTG",
+    },
+    ("ag", "pb"): {
+        "finalidade": (
+            "O Quartel do Comando Geral “Coronel Geraldo Cabral de Vasconcelos” – QCG – é o "
+            "Centro Administrativo da Corporação, responsável pela manutenção do funcionamento "
+            "dos órgãos de direção estratégica e setorial, além do reforço operacional aos "
+            "órgãos de execução"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 26",
+        "organName": "Quartel do Comando Geral", "abbr": "QCG",
+    },
+
+    # --- Pernambuco (CBMPE) — Lei nº 15.187/2013 ---
+    # LOB que dá finalidade ("incumbe-se de...", "é responsável por...", "tem a seu cargo...",
+    # "é o órgão que...") a quase todos os órgãos. (cg) usa a atribuição do Comandante Geral.
+    # As Diretorias Integradas (DIM/DIEsp/DInter) são os órgãos de direção operacional; usa-se
+    # a DIM (metropolitana) para crbm e a DIEsp para cot (atividades técnicas). DPlaG e DF
+    # mapeariam ambas a dpof: usada DF (Finanças). PE não tem órgão aéreo nem florestal/ambiental
+    # próprio — sem entrada (registrado no doc).
+    ("cg", "pe"): {
+        "finalidade": (
+            "O Comandante Geral do CBMPE, nomeado pelo Governador do Estado, é o responsável "
+            "pelo comando, administração e emprego da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 10",
+        "organName": "Comandante Geral", "abbr": "CG",
+    },
+    ("condeg", "pe"): {
+        "finalidade": (
+            "O Conselho de Políticas e Estratégias (CPE) é o órgão responsável pela formulação "
+            "da doutrina geral de emprego da Corporação, de forma a viabilizar as políticas, "
+            "estratégias, diretrizes e ordens estabelecidas pelo Comandante Geral e que "
+            "acionam todos os demais órgãos no cumprimento de suas missões"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 12",
+        "organName": "Conselho de Políticas e Estratégias", "abbr": "CPE",
+    },
+    ("dp", "pe"): {
+        "finalidade": "A Diretoria de Gestão de Pessoal (DGP) incumbe-se:",
+        "competencias": [
+            "do planejamento, da normatização, do controle e da fiscalização das atividades "
+            "relacionadas com a gestão de pessoal",
+            "das atividades de formação, especialização e aperfeiçoamento",
+            "da prestação de assistência social aos integrantes do CBMPE e seus dependentes",
+        ],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 15",
+        "organName": "Diretoria de Gestão de Pessoal", "abbr": "DGP",
+    },
+    ("dlog", "pe"): {
+        "finalidade": "A Diretoria de Logística (DLog) incumbe-se:",
+        "competencias": [
+            "do planejamento, da normatização, da fiscalização e do controle das atividades "
+            "relativas à gestão da aquisição e da contratação para fornecimento de bens e "
+            "prestação de serviços",
+            "da gestão da frota de viaturas e embarcações",
+            "da gestão do patrimônio e do material bélico da Corporação",
+            "das atividades de manutenção de materiais e equipamentos",
+            "das atividades específicas de planejamento e gestão na área de serviços de "
+            "engenharia, arquitetura e obras",
+        ],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 17",
+        "organName": "Diretoria de Logística", "abbr": "DLog",
+    },
+    ("dpof", "pe"): {
+        "finalidade": (
+            "A Diretoria de Finanças (DF) incumbe-se do planejamento, da normatização, da "
+            "execução e do controle financeiro do CBMPE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 19",
+        "organName": "Diretoria de Finanças", "abbr": "DF",
+    },
+    ("crbm", "pe"): {
+        "finalidade": (
+            "A Diretoria Integrada Metropolitana (DIM) incumbe-se, na área territorial de "
+            "Recife e sua Região Metropolitana, do planejamento e supervisão das ordens, "
+            "doutrina e emprego das atividades operacionais de prevenção e combate a incêndio, "
+            "atendimento pré-hospitalar e salvamento, além do controle operacional dos "
+            "atendimentos emergenciais e do gerenciamento das ações de respostas aos desastres"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 23",
+        "organName": "Diretoria Integrada Metropolitana", "abbr": "DIM",
+    },
+    ("cot", "pe"): {
+        "finalidade": (
+            "A Diretoria Integrada Especializada (DIEsp) incumbe-se na área territorial do "
+            "Estado de Pernambuco, do planejamento e supervisão das ordens, doutrina e emprego "
+            "das atividades técnicas, notadamente as vistorias, análises de projetos, "
+            "cadastramento e credenciamento de empresas, e a execução das normas que "
+            "disciplinam a segurança das pessoas e de seus bens contra incêndio e pânico"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 25",
+        "organName": "Diretoria Integrada Especializada", "abbr": "DIEsp",
+    },
+    ("gab-cg", "pe"): {
+        "finalidade": (
+            "O Gabinete do Comandante Geral (GCG) tem a seu cargo as funções de assistência e "
+            "assessoramento direto ao Comandante Geral, bem como a articulação junto aos órgãos "
+            "legislativos, na esfera federal, estadual e municipal, em assuntos de interesse do "
+            "CBMPE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 43",
+        "organName": "Gabinete do Comandante Geral", "abbr": "GCG",
+    },
+    ("assessorias", "pe"): {
+        "finalidade": (
+            "A Assessoria Jurídica (AJ) é o órgão que presta assessoramento jurídico ao "
+            "Comando Geral e desempenho das atividades jurídicas previstas em legislação "
+            "vigente"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 45",
+        "organName": "Assessoria Jurídica", "abbr": "AJ",
+    },
+    ("ccs", "pe"): {
+        "finalidade": (
+            "O Centro e Comunicação Social (CCS) incumbe-se da assessoria ao Comando Geral nos "
+            "assuntos civis, compreendendo relações públicas, relações com a imprensa, "
+            "marketing institucional e cerimonial interno da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 47",
+        "organName": "Centro de Comunicação Social", "abbr": "CCS",
+    },
+    ("cinf", "pe"): {
+        "finalidade": (
+            "O Centro de Tecnologia da Informação e Comunicações (CTIC) incumbe-se do "
+            "assessoramento ao Comando Geral e gestão na área de tecnologia da informação e "
+            "comunicações da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 49",
+        "organName": "Centro de Tecnologia da Informação e Comunicação", "abbr": "CTIC",
+    },
+    ("cint", "pe"): {
+        "finalidade": (
+            "O Centro de Inteligência, órgão integrante do Centro Integrado de Inteligência da "
+            "Secretaria de Defesa Social (CIIDS), é responsável pelo assessoramento ao Comando "
+            "Geral relativo às ações de inteligência nas áreas de atuação do CBMPE e da defesa "
+            "civil"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 53",
+        "organName": "Centro de Inteligência", "abbr": "CI",
+    },
+    ("ag", "pe"): {
+        "finalidade": (
+            "A Ajudância Geral (AJG) incumbe-se da administração, manutenção, segurança das "
+            "instalações do quartel do Comando Geral, bem como a gestão das publicações e "
+            "arquivo geral da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 58",
+        "organName": "Ajudância Geral", "abbr": "AjG",
+    },
+    ("corregedoria", "pe"): {
+        "finalidade": (
+            "O Centro de Justiça e Disciplina (CJD) incumbe-se do assessoramento ao "
+            "Subcomandante Geral nos assuntos pertinentes à execução e acompanhamento de "
+            "processos administrativos disciplinares, sindicâncias e Inquéritos Policiais "
+            "Militares"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 60",
+        "organName": "Centro de Justiça e Disciplina", "abbr": "CJD",
+    },
+    ("deei", "pe"): {
+        "finalidade": (
+            "O Campus de Ensino Metropolitano II (CEMet II), órgão integrante do Sistema de "
+            "Ensino de Defesa Social, compondo a Academia Integrada de Defesa Social (ACIDES), "
+            "é responsável pela formação e aperfeiçoamento de Praças e especialização de "
+            "Oficiais e Praças da Corporação"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 67",
+        "organName": "Campus de Ensino Metropolitano II", "abbr": "CEMet II",
+    },
+    ("dsap", "pe"): {
+        "finalidade": (
+            "O Centro de Assistência Social (CAS) incumbe-se das atividades de assistência e "
+            "promoção social, psicológica, jurídica e religiosa ao público interno do CBMPE"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 73",
+        "organName": "Centro de Assistência Social", "abbr": "CAS",
+    },
+    ("gbm", "pe"): {
+        "finalidade": (
+            "Grupamento de Bombeiros (GB) responsável pelas missões de prevenção e combate a "
+            "incêndios, busca e resgate de pessoas e bens, atendimento emergencial "
+            "pré-hospitalar, além das atividades de prevenção aquática, de proteção ambiental "
+            "na Zona da Mata, no Agreste e no Sertão do Estado"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 83, V",
+        "organName": "Grupamento de Bombeiros", "abbr": "GB",
+    },
+    ("bbs", "pe"): {
+        "finalidade": (
+            "Grupamento de Bombeiros de Salvamento (GBS) responsável pelas missões de busca e "
+            "resgate de pessoas e bens em ambiente fluvial, terrestre e aéreo e operações "
+            "insulares, além da proteção ambiental na área territorial de Recife e sua Região "
+            "Metropolitana"
+        ),
+        "competencias": [],
+        "source": "cf. CBMPE, LOB (Lei nº 15.187/2013), Art. 83, IV",
+        "organName": "Grupamento de Bombeiros de Salvamento", "abbr": "GBS",
+    },
 }
 
 
