@@ -14,6 +14,7 @@ import Legislations from './pages/Legislations.jsx'
 import MinutaWizard from './pages/MinutaWizard.jsx'
 import MinutaDiagrams from './pages/MinutaDiagrams.jsx'
 import Login from './pages/Login.jsx'
+import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
@@ -173,6 +174,7 @@ export default function App() {
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
           <Route path="/acessos" element={<ProtectedRoute requireAdmin><Acessos /></ProtectedRoute>} />
         </Routes>
