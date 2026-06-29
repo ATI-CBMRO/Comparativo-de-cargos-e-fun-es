@@ -405,12 +405,12 @@ paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não sã
 |---|---|---|---|
 | Piauí (PI) | Lei nº 5.949/2009 (alt. Lei nº 7.772/2022) | 12 | LOB com finalidade-caput por órgão ("é órgão de direção setorial...", "incumbe-se de..."); detalhe de atribuições remetido ao RACBMEPI (Art. 48). |
 | Paraná (PR) | Lei nº 22.206/2024 | 15 | LOB moderna e detalhada, com incisos enumerados na maioria dos órgãos; números de artigo confirmados contra o site oficial do CBMPR, pois a extração em markdown intercala blocos de "Art. N." soltos no rodapé de página, fora de ordem 1:1 com os parágrafos. |
-| Rio de Janeiro (RJ) | Lei nº 250/1979 | 11 | LOB antiga e fundacional (CBERJ); finalidade-caput por órgão ("é o Órgão de Direção Setorial do sistema..."), sem incisos enumerados na maior parte. |
+| Rio de Janeiro (RJ) | Lei nº 250/1979 | 11 | LOB antiga e fundacional (CBMERJ); finalidade-caput por órgão ("é o Órgão de Direção Setorial do sistema..."), sem incisos enumerados na maior parte. |
 | Rio Grande do Norte (RN) | LC nº 230/2002 (alt. até LC 791/2025) | 1 | LOB extremamente sucinta — trata sobretudo de efetivo/quadros/transição da PM; estrutura dos órgãos é deixada a decreto do Poder Executivo (Art. 20). Único órgão com finalidade própria na lei é o Conselho Superior (Art. 9º). |
 | Roraíma (RR) | LC nº 52/2001 (consolidada até LC nº 265/2018) | 14 | LOB rica e detalhada, com estrutura em níveis (direção superior/setorial/execução); usado o texto CONSOLIDADO (redação mais recente de cada artigo alterado, não a redação original revogada). |
 
 **Casos cargo-vs-órgão (finalidade tirada da atribuição do dirigente, não de caput do órgão):**
-- `(cg, rj)` Art. 9º — a LOB do CBERJ descreve o "Comando" pela atribuição/responsabilidade do
+- `(cg, rj)` Art. 9º — a LOB do CBMERJ descreve o "Comando" pela atribuição/responsabilidade do
   **Comandante-Geral** (cargo); não há finalidade-caput do Comando-Geral como unidade.
 
 **LOB remete a decreto/Regimento (detalhe não disponível na lei):**

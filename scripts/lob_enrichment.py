@@ -3127,12 +3127,12 @@ LOB_ENRICHMENT = {
     },
 
     # --- Rio de Janeiro (RJ) — Lei nº 250/1979, LOB antiga e fundacional do
-    # CBERJ; finalidade-caput por órgão ("é o Órgão de Direção Setorial do
+    # CBMERJ; finalidade-caput por órgão ("é o Órgão de Direção Setorial do
     # sistema..."), sem incisos enumerados na maior parte dos órgãos.
     ("cg", "rj"): {
         "finalidade": "O Comandante-Geral é responsável pelo Comando e pela Administração da Corporação",
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 9º",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 9º",
         "organName": "Comandante-Geral", "abbr": "",
     },
     ("dp", "rj"): {
@@ -3144,7 +3144,7 @@ LOB_ENRICHMENT = {
             "pessoal civil, seleção e ingresso e assistência social e religiosa"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 19",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 19",
         "organName": "Diretoria de Pessoal", "abbr": "",
     },
     ("deei", "rj"): {
@@ -3155,7 +3155,7 @@ LOB_ENRICHMENT = {
             "eventualmente, de civis ou oficiais e praças de outras Corporações"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 22",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 22",
         "organName": "Diretoria de Ensino", "abbr": "",
     },
     ("dpof", "rj"): {
@@ -3166,7 +3166,7 @@ LOB_ENRICHMENT = {
             "distribuição de recursos orçamentários, de acordo com o planejamento estabelecido"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 24",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 24",
         "organName": "Diretoria de Finanças", "abbr": "",
     },
     ("dlog", "rj"): {
@@ -3177,7 +3177,7 @@ LOB_ENRICHMENT = {
             "mesmas atividades no que se refere a obras"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 26",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 26",
         "organName": "Diretoria de Apoio Logístico", "abbr": "",
     },
     ("cot", "rj"): {
@@ -3190,7 +3190,7 @@ LOB_ENRICHMENT = {
             "na forma da legislação específica"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 28",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 28",
         "organName": "Diretoria de Serviços Técnicos", "abbr": "",
     },
     ("ag", "rj"): {
@@ -3200,7 +3200,7 @@ LOB_ENRICHMENT = {
             "atividades de pessoal para a Corporação como um todo"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 30",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 30",
         "organName": "Ajudância-Geral", "abbr": "",
     },
     ("assessorias", "rj"): {
@@ -3210,7 +3210,7 @@ LOB_ENRICHMENT = {
             "atribuições normais e específicas dos órgãos de direção"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 33",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 33",
         "organName": "Assessorias", "abbr": "",
     },
     ("crbm", "rj"): {
@@ -3221,7 +3221,7 @@ LOB_ENRICHMENT = {
             "Comando-Geral"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 44, §1º",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 44, §1º",
         "organName": "Comando de Bombeiros de Área", "abbr": "CBA",
     },
     ("bbm", "rj"): {
@@ -3230,7 +3230,7 @@ LOB_ENRICHMENT = {
             "do Estado do Rio de Janeiro, as missões de prevenção e combate a incêndios"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 47, §1º",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 47, §1º",
         "organName": "Unidade de Extinção de Incêndio Terrestre", "abbr": "",
     },
     ("bbs", "rj"): {
@@ -3240,7 +3240,7 @@ LOB_ENRICHMENT = {
             "aquática"
         ),
         "competencias": [],
-        "source": "cf. CBERJ, LOB (Lei nº 250/1979), Art. 47, §2º",
+        "source": "cf. CBMERJ, LOB (Lei nº 250/1979), Art. 47, §2º",
         "organName": "Unidade de Busca e Salvamento", "abbr": "",
     },
 
