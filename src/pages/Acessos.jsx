@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useAuth } from '../lib/auth.jsx'
-import { contaStatus, situacaoMembro } from '../lib/membersStats.js'
+import { contaStatus, situacaoMembro, normalizeEmail } from '../lib/membersStats.js'
 import {
   subscribeMembers, addMember, setMemberRole, setMemberAtivo, removeMember,
 } from '../lib/membersData.js'
@@ -45,10 +45,18 @@ export default function Acessos() {
     }
   }
 
-  const alternarPapel = (m) => setMemberRole(m.email, m.role === 'admin' ? 'participante' : 'admin')
-  const alternarAtivo = (m) => setMemberAtivo(m.email, !m.ativo)
-  const remover = (m) => {
-    if (window.confirm(`Remover ${m.email}? As sugestões já enviadas permanecem.`)) removeMember(m.email)
+  const alternarPapel = async (m) => {
+    try { await setMemberRole(m.email, m.role === 'admin' ? 'participante' : 'admin') }
+    catch (err) { console.error(err); setErro('Não foi possível alterar o papel da pessoa.') }
+  }
+  const alternarAtivo = async (m) => {
+    try { await setMemberAtivo(m.email, !m.ativo) }
+    catch (err) { console.error(err); setErro('Não foi possível alterar o acesso da pessoa.') }
+  }
+  const remover = async (m) => {
+    if (!window.confirm(`Remover ${m.email}? As sugestões já enviadas permanecem.`)) return
+    try { await removeMember(m.email) }
+    catch (err) { console.error(err); setErro('Não foi possível remover a pessoa.') }
   }
 
   return (
@@ -101,7 +109,7 @@ export default function Acessos() {
               const sit = situacaoMembro(m)
               const badge = BADGE[sit]
               const login = formatLogin(m.ultimoLogin)
-              const ehEu = m.email === user.email
+              const ehEu = normalizeEmail(m.email) === normalizeEmail(user.email)
               return (
                 <tr key={m.email} style={sit === 'bloqueado' ? { opacity: .65 } : undefined}>
                   <td>
