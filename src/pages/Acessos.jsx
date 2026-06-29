@@ -36,7 +36,13 @@ export default function Acessos() {
 
   const convidar = async (e) => {
     e.preventDefault()
-    if (!email.trim()) return
+    const alvo = normalizeEmail(email)
+    if (!alvo) return
+    if (members.some(m => normalizeEmail(m.email) === alvo)) {
+      setErro('Esse e-mail já está na lista.')
+      return
+    }
+    setErro(null)
     try {
       await addMember({ email, nome, role }, user.email)
       setEmail(''); setNome(''); setRole('participante'); setAbrindo(false)

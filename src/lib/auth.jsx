@@ -51,7 +51,7 @@ export function AuthProvider({ children }) {
       } catch (e) {
         // Falha ao verificar o cadastro (ex.: rede): não trava a tela.
         console.error('Erro ao verificar acesso:', e)
-        setUser(null)
+        setUser(null); setNaoAutorizado(false)
       } finally {
         setLoading(false)
       }
