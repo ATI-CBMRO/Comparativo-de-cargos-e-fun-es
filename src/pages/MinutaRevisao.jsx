@@ -134,10 +134,10 @@ export default function MinutaRevisao() {
       </div>
       <div className="page-body">
         <IdentityBar users={users} currentUser={currentUser} onChangeUser={handleChangeUser} phaseLabel="Fase: Sugestões abertas" />
-        <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+        <div className="rev-layout" style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
           <ChapterRail chapters={chapters} counts={counts} selectedId={selectedChapterId} onSelect={selectChapter} />
 
-          <div style={{ flex: 1.25, minWidth: 0, border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 20px', fontFamily: 'Georgia, "Times New Roman", serif', color: '#1a1a1a' }}>
+          <div className="rev-doc" style={{ flex: 1.25, minWidth: 0, border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 20px', fontFamily: 'Georgia, "Times New Roman", serif', color: '#1a1a1a' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 8 }}>
               <p style={{ textAlign: 'center', fontWeight: 700, color: '#121d3d', margin: 0, flex: 1 }}>
                 CAPÍTULO {romanize(chapter.chapterNumber)} — {chapter.chapterTitle}

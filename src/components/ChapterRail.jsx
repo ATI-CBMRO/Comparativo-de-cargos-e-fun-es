@@ -14,7 +14,7 @@ export default function ChapterRail({ chapters, counts, selectedId, onSelect }) 
   })
 
   return (
-    <nav style={{
+    <nav className="rev-rail" style={{
       flex: '0 0 210px', alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)',
       maxHeight: 'calc(100vh - var(--header-h) - 24px)', overflow: 'auto',
       border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 12,

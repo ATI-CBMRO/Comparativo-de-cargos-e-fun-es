@@ -26,7 +26,7 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
 
   if (!target) {
     return (
-      <div style={{ flex: 1, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 16, color: 'var(--text-muted)', fontSize: 13 }}>
+      <div className="rev-panel rev-panel-empty" style={{ flex: 1, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 16, color: 'var(--text-muted)', fontSize: 13 }}>
         Selecione um inciso (ou "+ nova seção") para ver e propor sugestões.
       </div>
     )
@@ -60,7 +60,7 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
   }
 
   return (
-    <div style={{ flex: 1, minWidth: 0, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 12, display: 'flex', flexDirection: 'column', maxHeight: 'calc(100vh - var(--header-h) - 24px)' }}>
+    <div className="rev-panel rev-panel-active" style={{ flex: 1, minWidth: 0, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 12, display: 'flex', flexDirection: 'column', maxHeight: 'calc(100vh - var(--header-h) - 24px)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', marginBottom: 8 }}>
         <div style={{ font: '700 11px Inter, sans-serif', color: '#121d3d', textTransform: 'uppercase', letterSpacing: .3 }}>
           {target.label}

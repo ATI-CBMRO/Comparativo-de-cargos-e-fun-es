@@ -134,8 +134,8 @@ export default function MinutaDeliberacao() {
 
         {items.length > 0 && (
           <>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
-              <div style={{ flex: 1, height: 8, background: '#dde3ec', borderRadius: 4, overflow: 'hidden' }}>
+            <div className="del-toolbar" style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+              <div className="del-progress" style={{ flex: 1, height: 8, background: '#dde3ec', borderRadius: 4, overflow: 'hidden' }}>
                 <div style={{ height: '100%', width: `${pct}%`, background: '#1a7f37' }} />
               </div>
               <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>{decidedCount}/{items.length} itens decididos</span>
@@ -144,9 +144,9 @@ export default function MinutaDeliberacao() {
               </button>
             </div>
 
-            <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+            <div className="del-layout" style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
               {/* Lista de pendências (entrada) */}
-              <div style={{ flex: '0 0 320px', border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', overflow: 'hidden' }}>
+              <div className="del-list" style={{ flex: '0 0 320px', border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', overflow: 'hidden' }}>
                 <div style={{ font: '700 11px Inter, sans-serif', color: '#121d3d', textTransform: 'uppercase', padding: '10px 12px', borderBottom: '1px solid var(--border-card)' }}>Itens com sugestões</div>
                 {items.map(it => {
                   const decided = resolutions[it.key]?.status === 'decidido'
@@ -162,10 +162,11 @@ export default function MinutaDeliberacao() {
               </div>
 
               {/* Fila de revisão (decidir) */}
-              <div style={{ flex: 1, minWidth: 0 }}>
-                {!active && <div style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 24, color: 'var(--text-muted)', fontSize: 13 }}>Selecione um item à esquerda para deliberar.</div>}
+              <div className="del-pane" style={{ flex: 1, minWidth: 0 }}>
+                {!active && <div className="del-placeholder" style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 24, color: 'var(--text-muted)', fontSize: 13 }}>Selecione um item à esquerda para deliberar.</div>}
                 {active && (
-                  <div style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 18px' }}>
+                  <div className="del-sheet" style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 18px' }}>
+                    <button className="del-sheet-back" onClick={() => { setActiveKey(null); setFinalDraft('') }} style={{ display: 'none', alignItems: 'center', gap: 6, border: '1px solid #d6deea', background: '#fff', color: '#5a6377', font: '700 11px Inter, sans-serif', padding: '6px 12px', borderRadius: 6, cursor: 'pointer', marginBottom: 10 }}>‹ Voltar à lista</button>
                     <div style={{ font: '700 11px Inter, sans-serif', color: '#8a93a6', textTransform: 'uppercase', marginBottom: 4 }}>{active.chapterTitle} · {active.location}</div>
                     <div style={{ fontFamily: 'Georgia, serif', fontSize: 13.5, color: '#1a1a1a', background: '#f7f9fc', borderRadius: 6, padding: '8px 10px', marginBottom: 12 }}>
                       <span style={{ font: '700 8px Inter, sans-serif', textTransform: 'uppercase', color: '#9aa3b5', display: 'block', marginBottom: 2 }}>Texto vigente</span>
