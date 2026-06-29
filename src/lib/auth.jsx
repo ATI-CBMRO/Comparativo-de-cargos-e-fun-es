@@ -1,10 +1,11 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import {
-  signInWithEmailAndPassword, signOut, onAuthStateChanged,
-  sendPasswordResetEmail,
+  signInWithEmailAndPassword, createUserWithEmailAndPassword,
+  signOut, onAuthStateChanged, sendPasswordResetEmail,
 } from 'firebase/auth'
-import { doc, getDoc } from 'firebase/firestore'
+import { doc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore'
 import { auth, db } from './firebase.js'
+import { normalizeEmail } from './membersStats.js'
 
 const AuthContext = createContext(null)
 
@@ -20,18 +21,30 @@ export function AuthProvider({ children }) {
         return
       }
       try {
-        // Autorização = existir members/{uid} com ativo == true.
-        const snap = await getDoc(doc(db, 'members', fbUser.uid))
+        // Autorização = existir members/{email} com ativo == true.
+        const email = normalizeEmail(fbUser.email)
+        const ref = doc(db, 'members', email)
+        const snap = await getDoc(ref)
         if (!snap.exists() || snap.data().ativo !== true) {
           setUser(null); setNaoAutorizado(true)
           await signOut(auth)
           return
         }
         const m = snap.data()
+        // Marca presença: vincula o uid, confirma o cadastro e registra o login.
+        try {
+          await updateDoc(ref, {
+            uid: fbUser.uid,
+            status: 'cadastrado',
+            ultimoLogin: serverTimestamp(),
+          })
+        } catch (e) {
+          console.error('Não foi possível registrar o último login:', e)
+        }
         setUser({
           uid: fbUser.uid,
-          email: fbUser.email,
-          nome: m.nome ?? fbUser.email,
+          email,
+          nome: m.nome ?? email,
           role: m.role === 'admin' ? 'admin' : 'participante',
         })
         setNaoAutorizado(false)
@@ -47,13 +60,16 @@ export function AuthProvider({ children }) {
   }, [])
 
   const entrar = async (email, senha) => {
-    await signInWithEmailAndPassword(auth, email.trim(), senha)
+    await signInWithEmailAndPassword(auth, normalizeEmail(email), senha)
+  }
+  const cadastrar = async (email, senha) => {
+    await createUserWithEmailAndPassword(auth, normalizeEmail(email), senha)
   }
   const sair = () => signOut(auth)
-  const recuperarSenha = (email) => sendPasswordResetEmail(auth, email.trim())
+  const recuperarSenha = (email) => sendPasswordResetEmail(auth, normalizeEmail(email))
 
   return (
-    <AuthContext.Provider value={{ user, loading, naoAutorizado, entrar, sair, recuperarSenha }}>
+    <AuthContext.Provider value={{ user, loading, naoAutorizado, entrar, cadastrar, sair, recuperarSenha }}>
       {children}
     </AuthContext.Provider>
   )
