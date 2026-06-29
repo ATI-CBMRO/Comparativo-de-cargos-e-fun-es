@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react'
 import { Download } from 'lucide-react'
 import { romanize } from '../lib/minutaArticles.js'
 import { buildTargets, itemKeyOf } from '../lib/minutaTargets.js'
-import { applyDecisionsToEdits } from '../lib/minutaConsolidation.js'
+import { applyResolutionsToEdits } from '../lib/minutaConsolidation.js'
 import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { suggestionsStore as store } from '../lib/suggestionsStore.js'
 import IdentityBar from '../components/IdentityBar.jsx'
@@ -98,8 +98,7 @@ export default function MinutaDeliberacao() {
   async function generateFinal() {
     setGenerating(true)
     try {
-      const all = await store.listSuggestions()
-      const edits = applyDecisionsToEdits(structure, all)
+      const edits = applyResolutionsToEdits(structure, resolutions)
       const blob = await buildMinutaBlob({ structure, edits, subtitle: 'Minuta de Regimento Interno — consolidada pela deliberação do CONDEG' })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')

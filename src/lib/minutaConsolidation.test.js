@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { applyDecisionsToEdits } from './minutaConsolidation.js'
+import { applyResolutionsToEdits } from './minutaConsolidation.js'
 
 const STRUCTURE = {
   chapters: [
@@ -14,6 +14,7 @@ const STRUCTURE = {
           items: [
             { text: 'planejar as ações', source: 'ro' },
             { text: 'dirigir a Corporação', source: 'ro' },
+            { text: 'representar o CBMRO', source: 'ro' },
           ],
         },
       ],
@@ -21,30 +22,26 @@ const STRUCTURE = {
   ],
 }
 
-const sug = (p) => ({
-  id: 'x', chapterId: 'organ:cg', targetId: 'organ:cg/competencia', targetKind: 'inciso',
-  status: 'aceita', proposedText: '', incisoIndex: null, type: 'editar', ...p,
+const res = (status, finalText) => ({ status, finalText })
+
+test('usa o texto final aprovado no lugar do inciso original', () => {
+  const edits = applyResolutionsToEdits(STRUCTURE, {
+    'organ:cg/competencia#0': res('decidido', 'comandar e dirigir a Corporação'),
+  })
+  assert.equal(edits['organ:cg/competencia'], 'comandar e dirigir a Corporação\ndirigir a Corporação\nrepresentar o CBMRO')
 })
 
-test('editar troca o texto do inciso pelo índice', () => {
-  const edits = applyDecisionsToEdits(STRUCTURE, [
-    sug({ type: 'editar', incisoIndex: 0, proposedText: 'comandar a Corporação' }),
-  ])
-  assert.equal(edits['organ:cg/competencia'], 'comandar a Corporação\ndirigir a Corporação')
+test('finalText vazio remove o inciso', () => {
+  const edits = applyResolutionsToEdits(STRUCTURE, {
+    'organ:cg/competencia#1': res('decidido', ''),
+  })
+  assert.equal(edits['organ:cg/competencia'], 'planejar as ações\nrepresentar o CBMRO')
 })
 
-test('remover descarta o inciso e incluir anexa ao fim', () => {
-  const edits = applyDecisionsToEdits(STRUCTURE, [
-    sug({ type: 'remover', incisoIndex: 1 }),
-    sug({ type: 'incluir', proposedText: 'fiscalizar o serviço' }),
-  ])
-  assert.equal(edits['organ:cg/competencia'], 'planejar as ações\nfiscalizar o serviço')
-})
-
-test('ignora sugestões não aceitas', () => {
-  const edits = applyDecisionsToEdits(STRUCTURE, [
-    sug({ type: 'editar', incisoIndex: 0, proposedText: 'X', status: 'pendente' }),
-    sug({ type: 'editar', incisoIndex: 0, proposedText: 'Y', status: 'rejeitada' }),
-  ])
+test('ignora resoluções pendentes e chaves sem item cru', () => {
+  const edits = applyResolutionsToEdits(STRUCTURE, {
+    'organ:cg/competencia#0': res('pendente', 'X'),
+    'preliminares': res('decidido', 'algo'),
+  })
   assert.deepEqual(edits, {})
 })

@@ -1,8 +1,7 @@
-// A partir das sugestões ACEITAS, produz `edits` (editId -> texto multilinha de
-// incisos crus) para alimentar buildArticles e gerar a minuta consolidada.
-// Aplica, por seção: remover (descarta o inciso), editar (troca o texto) e incluir
-// (anexa novo inciso ao fim). Seções totalmente novas (incluir-secao) ficam fora do
-// protótipo de geração (registradas como sugestão, não inseridas no .docx).
+// A partir das RESOLUÇÕES aprovadas na deliberação (texto final por item), produz
+// `edits` (editId -> incisos por linha) para gerar a minuta consolidada. Esta é a
+// fonte de verdade da Fase 2: o texto final é o que o relator aprovou (partindo da
+// sugestão aceita e possivelmente editado à mão). finalText vazio = inciso removido.
 
 // Indexa os textos CRUS (não normalizados) de cada folha "incisos" da estrutura.
 function indexRawItems(structure) {
@@ -17,33 +16,32 @@ function indexRawItems(structure) {
   return idx
 }
 
-export function applyDecisionsToEdits(structure, suggestions) {
+export function applyResolutionsToEdits(structure, resolutions) {
   const raw = indexRawItems(structure)
   const byEdit = {}
-  for (const s of suggestions) {
-    if (s.status !== 'aceita') continue
-    ;(byEdit[s.targetId] ||= []).push(s)
+  for (const [key, res] of Object.entries(resolutions || {})) {
+    if (!res || res.status !== 'decidido') continue
+    const hash = key.indexOf('#')
+    if (hash === -1) continue // resolução de seção/prose: fora do protótipo
+    const editId = key.slice(0, hash)
+    const idx = Number(key.slice(hash + 1))
+    if (!Number.isInteger(idx)) continue
+    ;(byEdit[editId] ||= {})[idx] = res.finalText ?? ''
   }
-
   const edits = {}
-  for (const [editId, list] of Object.entries(byEdit)) {
+  for (const [editId, finals] of Object.entries(byEdit)) {
     const base = raw[editId]
-    if (!base) continue // sem incisos crus (prose ou seção nova) — fora do protótipo
-    const items = base.map((text, index) => ({ text, index, removed: false }))
-    const appended = []
-    for (const s of list) {
-      if (s.type === 'remover' && s.incisoIndex != null) {
-        const t = items.find(i => i.index === s.incisoIndex)
-        if (t) t.removed = true
-      } else if (s.type === 'editar' && s.incisoIndex != null) {
-        const t = items.find(i => i.index === s.incisoIndex)
-        if (t && (s.proposedText ?? '').trim()) t.text = s.proposedText.trim()
-      } else if (s.type === 'incluir' && (s.proposedText ?? '').trim()) {
-        appended.push(s.proposedText.trim())
+    if (!base) continue
+    const out = []
+    base.forEach((text, index) => {
+      if (index in finals) {
+        const ft = (finals[index] ?? '').trim()
+        if (ft) out.push(ft) // finalText vazio => remove o inciso
+      } else {
+        out.push(text)
       }
-    }
-    const finalTexts = items.filter(i => !i.removed).map(i => i.text).concat(appended)
-    edits[editId] = finalTexts.join('\n')
+    })
+    edits[editId] = out.join('\n')
   }
   return edits
 }
