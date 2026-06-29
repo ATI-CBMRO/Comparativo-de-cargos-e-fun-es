@@ -85,7 +85,8 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   Regras em `@media (min-width: 901px) .app-shell.nav-collapsed` no `index.css`.
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
   `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
-  `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams).
+  `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams),
+  `/minuta/revisao` (MinutaRevisao) e `/minuta/deliberacao` (MinutaDeliberacao).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
@@ -178,6 +179,37 @@ Ambos clicáveis: abrem um painel lateral com as seções/competências do capí
 A lista "Órgãos da minuta" do `/comparar` reusa o mesmo padrão: `MinutaComparator.jsx`
 reconstrói a árvore a partir do `depth` (`buildOrganTree`) e renderiza `OrgTreeNode` com
 botão −/+ (`.oc-org-toggle`), iniciando recolhida no 1º nível; clicar no item seleciona o órgão.
+
+### Revisão e Deliberação colaborativa do CONDEG (`/minuta/revisao` e `/minuta/deliberacao`)
+Fluxo colaborativo do CONDEG sobre a minuta de RI, em duas fases, lendo o mesmo
+`minuta_structure.json`. **Protótipo de frontend**: login/senha e banco de dados estão sendo
+feitos em **projeto APARTADO** — aqui tudo roda sobre dados simulados, por uma camada de dados
+ISOLADA e trocável.
+
+- **Camada de dados** (`src/lib/suggestionsStore.js`): `createSuggestionsStore(storage)`, API
+  assíncrona (Promise) sobre `localStorage`, com `MOCK_USERS` (coronéis fictícios) e a "sessão"
+  simulada. Quando o backend real existir, criar um `apiBackend` com a MESMA assinatura (fetch +
+  sessão autenticada) e trocar a instância exportada — as telas não mudam.
+- **Fase 1 — `/minuta/revisao`** (`src/pages/MinutaRevisao.jsx`): 3 colunas — trilha de capítulos
+  (`ChapterRail.jsx`, filtro + contadores) · documento com marcadores · painel lateral
+  (`SuggestionPanel.jsx` + `SuggestionCard.jsx`, "Antes/Depois"). Coronéis propõem incluir/editar/
+  remover incisos e seções (o compositor pré-preenche o texto vigente ao editar); todos veem as
+  sugestões de todos, com autoria + Apoiar/Comentar. Trilha e painel ficam `sticky` (abaixo do
+  header fixo) enquanto só o documento central rola.
+- **Fase 2 — `/minuta/deliberacao`** (`src/pages/MinutaDeliberacao.jsx`): lista de pendências
+  (itens agrupados por `itemKeyOf` = `editId#incisoIndex`) → fila de revisão guiada (Aceitar/
+  Rejeitar, texto final por item, "Aprovar e avançar") → `.docx` consolidado.
+- **Alvos/consolidação/export**: `src/lib/minutaTargets.js` (`buildTargets`, deriva
+  capítulo→seção→inciso de `buildArticles`), `src/lib/minutaConsolidation.js`
+  (`applyResolutionsToEdits` — a minuta final usa o **texto final APROVADO** por item, não só as
+  sugestões aceitas) e `src/lib/minutaDocx.js` (`buildMinutaBlob`, extraído do `MinutaWizard` e
+  reusado pela Fase 2). Identidade simulada em `src/components/IdentityBar.jsx`.
+- **Lógica pura testada** com `node --test`: `suggestionsStore.test.js`, `minutaTargets.test.js`,
+  `minutaConsolidation.test.js`. Spec/plano em
+  `docs/superpowers/{specs,plans}/2026-06-29-minuta-revisao-colaborativa*`.
+- Limites intencionais do protótipo: nova-seção e resoluções de seção/prose não entram no `.docx`
+  gerado (embora contem no progresso); a colaboração "em tempo real" é simulada trocando de coronel
+  no mesmo navegador (sem sync entre máquinas).
 
 ### Servir dados: middleware (dev) + cópia no build (produção)
 `vite.config.js` registra DOIS plugins customizados:
