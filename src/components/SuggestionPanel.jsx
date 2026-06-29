@@ -19,18 +19,27 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
   // Reseta o compositor quando muda o alvo selecionado.
   useEffect(() => {
     setType(isNovaSecao ? 'incluir-secao' : 'editar')
-    setProposed(''); setSectionTitle(''); setJustification('')
+    // Pré-preenche o texto proposto com o inciso atual (a edição parte do texto vigente).
+    setProposed(isNovaSecao ? '' : (target?.originalText ?? ''))
+    setSectionTitle(''); setJustification('')
   }, [target?.editId, target?.incisoIndex, isNovaSecao])
 
   if (!target) {
     return (
-      <div style={{ flex: 1, background: '#f7f9fc', borderRadius: 8, padding: 16, color: 'var(--text-muted)', fontSize: 13 }}>
+      <div style={{ flex: 1, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 16, color: 'var(--text-muted)', fontSize: 13 }}>
         Selecione um inciso (ou "+ nova seção") para ver e propor sugestões.
       </div>
     )
   }
 
   const needsProposed = type !== 'remover'
+
+  // Trocar o tipo ajusta o texto proposto: Editar parte do texto vigente; Incluir começa vazio.
+  function chooseType(t) {
+    setType(t)
+    if (t === 'editar') setProposed(target?.originalText ?? '')
+    else if (t === 'incluir') setProposed('')
+  }
 
   function submit() {
     if (needsProposed && !proposed.trim()) return
@@ -51,7 +60,7 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
   }
 
   return (
-    <div style={{ flex: 1, minWidth: 0, background: '#f7f9fc', borderRadius: 8, padding: 12, display: 'flex', flexDirection: 'column', maxHeight: '82vh' }}>
+    <div style={{ flex: 1, minWidth: 0, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 12, display: 'flex', flexDirection: 'column', maxHeight: 'calc(100vh - var(--header-h) - 24px)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', marginBottom: 8 }}>
         <div style={{ font: '700 11px Inter, sans-serif', color: '#121d3d', textTransform: 'uppercase', letterSpacing: .3 }}>
           {target.label}
@@ -75,7 +84,7 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
         {!isNovaSecao && (
           <div style={{ display: 'flex', gap: 4, marginBottom: 6 }}>
             {incisoTypes.map(t => (
-              <button key={t.v} onClick={() => setType(t.v)} style={{
+              <button key={t.v} onClick={() => chooseType(t.v)} style={{
                 font: '700 9px Inter, sans-serif', padding: '4px 9px', borderRadius: 5, cursor: 'pointer',
                 border: '1px solid', borderColor: type === t.v ? '#c8102e' : '#d6deea',
                 background: type === t.v ? '#c8102e' : '#fff', color: type === t.v ? '#fff' : '#5a6377',
