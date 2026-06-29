@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from minuta_comparison_lib import norm, state_from_source_label, auto_match_organ_ids  # noqa: E402
 from build_minuta_structure import ORGAN_ORDER, command_order  # noqa: E402
 from minuta_enrichment import enrich_organ_for, GUARNICAO_CHAPTER  # noqa: E402
-from lob_enrichment import lob_enrich_for, LOB_ENRICHMENT  # noqa: E402
+from lob_enrichment import lob_enrich_for  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -101,11 +101,14 @@ def lob_organ_from_entry(entry):
 
 
 def _merge_lob_into_organs(organs, lob_org):
-    """Anexa o órgão da LOB à coluna 3 sem repetir atribuições idênticas (por texto)."""
+    """Anexa o órgão da LOB à coluna 3 sem repetir atribuições idênticas (por texto).
+    Retorna True se algo foi anexado (col3 passou a citar a LOB), False caso contrário."""
     seen = {a for o in organs for a in (o.get("atribuicoes") or [])}
     extra = [a for a in lob_org["atribuicoes"] if a not in seen]
     if extra or not organs:
         organs.append({**lob_org, "atribuicoes": extra or lob_org["atribuicoes"]})
+        return True
+    return False
 
 
 def build_reference(organ_key, ro_organs):
@@ -285,11 +288,13 @@ def build():
         # Mescla a camada LOB na coluna 3 e garante presença de estados só-LOB.
         for sid, info in lob_cur.items():
             if sid in records:
-                _merge_lob_into_organs(records[sid]["organs"], info["organ"])
-                # A presença de LOB curada eleva o registro a 'curado' (col3 agora cita fonte).
-                records[sid]["provenance"] = "curado"
-                if not records[sid].get("sourceLabel"):
-                    records[sid]["sourceLabel"] = info["source"]
+                appended = _merge_lob_into_organs(records[sid]["organs"], info["organ"])
+                # Só eleva a 'curado' se a LOB realmente entrou na col3 (evita creditar
+                # fonte quando todo o texto da LOB já existia via RI/automático).
+                if appended:
+                    records[sid]["provenance"] = "curado"
+                    if not records[sid].get("sourceLabel"):
+                        records[sid]["sourceLabel"] = info["source"]
             else:
                 records[sid] = {
                     **meta.get(sid, _fallback_meta(sid)),
