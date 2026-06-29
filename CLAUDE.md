@@ -22,7 +22,7 @@ python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> dat
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json (aba "DPO × COT")
-python scripts/build_minuta_comparison.py    # organs_detail/*.json + comparativo_dpo_cot.json + minuta_enrichment.py -> database/comparativo_minuta.json (página /comparar "Subsídio à Minuta")
+python scripts/build_minuta_comparison.py    # organs_detail/*.json + comparativo_dpo_cot.json + minuta_enrichment.py + lob_enrichment.py -> database/comparativo_minuta.json (página /comparar "Subsídio à Minuta")
 python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json (wizard /minuta + commandChart p/ /minuta-diagramas)
 ```
 
@@ -93,13 +93,18 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   Cargos" e "DPO × COT" foram removidas junto com seus componentes.
 - `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
   `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
-  espelha os 26 órgãos da LOB + Guarnição (27 no total), comparando RO × estados em matriz
-  (campos nas linhas, estados nas colunas, RO sticky), com proveniência curado/automático por
-  estado (badge). A camada curada vem de `comparativo_dpo_cot.json` (DPO/COT) + as competências
-  verbatim de `minuta_enrichment.py` (`ENRICHMENT_ORGAN`, pivotadas por fonte; a curadoria dos
-  15 órgãos da Frente 2 — Direção Geral/Setorial/Colegiada, Assessoramento/Apoio e Correição —
-  segue documentada em `docs/ENRIQUECIMENTO_MINUTA.md`) + a Guarnição (CBMSE); a camada
-  automática casa por palavra-chave (`AUTO_MATCH_KEYWORDS` em `minuta_comparison_lib.py`). A
+  espelha os 26 órgãos da LOB + Guarnição (27 no total), comparando RO × estados em **3 colunas**:
+  CBMRO (referência), **LOB do estado** (`state.lobOrgans`/`lobProvenance`) e **LOB + RI**
+  (`state.organs`/`provenance`, a estrutura enriquecida com as demais fontes), com proveniência
+  curado/automático por coluna (badge). A coluna LOB pura é alimentada por `scripts/lob_enrichment.py`
+  (`LOB_ENRICHMENT[(organ_key, state_id)]`, curadoria verbatim — finalidade/caput de 1 frase +
+  incisos — das 27 Leis de Organização Básica; cobre os 26 órgãos × 26 estados não-RO; documentada
+  em `docs/ENRIQUECIMENTO_MINUTA.md`, seção "Camada LOB"). A coluna LOB + RI é a UNIÃO dessa camada
+  LOB com a camada curada de `comparativo_dpo_cot.json` (DPO/COT) + as competências verbatim de
+  `minuta_enrichment.py` (`ENRICHMENT_ORGAN`, pivotadas por fonte; a curadoria dos 15 órgãos da
+  Frente 2 — Direção Geral/Setorial/Colegiada, Assessoramento/Apoio e Correição — segue documentada
+  em `docs/ENRIQUECIMENTO_MINUTA.md`) + a Guarnição (CBMSE); a camada automática casa por
+  palavra-chave (`AUTO_MATCH_KEYWORDS` em `minuta_comparison_lib.py`) quando não há curadoria. A
   lista "Órgãos da minuta" na barra lateral segue a ORDEM e a PROFUNDIDADE hierárquica do
   organograma (DFS da cadeia de comando), indentada por `depth` — esse campo é gravado no JSON
   por `build_minuta_comparison.py` via `build_minuta_structure.command_order`, mantendo a lista

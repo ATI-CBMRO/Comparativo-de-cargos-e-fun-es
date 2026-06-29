@@ -32,7 +32,7 @@ function StateCell({ organs, note, row }) {
   )
 }
 
-/* Cabeçalho de uma das duas colunas do estado (LOB ou Compilada). */
+/* Cabeçalho de uma das duas colunas do estado (LOB ou LOB + RI). */
 function StateColHead({ state, kind }) {
   if (!state) return <span className="cc-empty">Selecione um estado</span>
   const isLob = kind === 'lob'
@@ -43,7 +43,7 @@ function StateColHead({ state, kind }) {
       <div>
         <div className="cc-corp-name">{state.name}</div>
         <div className="cc-corp-cbm" style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
-          <span className="oc-col-kind">{isLob ? 'LOB' : 'Compilada'}</span>
+          <span className="oc-col-kind">{isLob ? 'LOB' : 'LOB + RI'}</span>
           {provenance && <ProvBadge provenance={provenance} />}
         </div>
       </div>
@@ -217,8 +217,8 @@ export default function MinutaComparator() {
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
             Compare, órgão a órgão, a minuta da <strong>LOB do CBMRO</strong> com o estado
             selecionado em <strong>duas visões lado a lado</strong>: a <strong>LOB do estado</strong>
-            (só a Lei de Organização Básica) e a <strong>legislação compilada</strong> (todas as
-            fontes curadas — LOB, Regimento, NGA etc.). Escolha o órgão à esquerda e clique na
+            (só a Lei de Organização Básica) e a <strong>LOB + RI</strong> (a LOB somada às demais
+            fontes curadas — Regimento, NGA etc.). Escolha o órgão à esquerda e clique na
             <strong> sigla de um estado</strong> para trocar a comparação. Colunas marcadas
             <strong> Curado</strong> trazem texto verbatim atribuído à fonte; <strong>Auto</strong>
             vêm de extração automática e podem ser rasas.

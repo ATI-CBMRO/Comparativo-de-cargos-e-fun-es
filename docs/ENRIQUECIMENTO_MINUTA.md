@@ -532,5 +532,15 @@ paráfrase; `ro.json`/`comparativo_dpo_cot.json`/`minuta_enrichment.py` não sã
   `cibm`/`bbs`/`bifea`/`gbm`/`gab-cg` próprios na completação deste lote (já cobertos ou sem
   equivalente).
 
-Ao ampliar (Lote 6), editar `scripts/lob_enrichment.py` e reexecutar
+### Cobertura final (encerramento da curadoria por estado)
+
+Com o Lote 5, a camada LOB cobre os **26 estados não-RO** (todos com pelo menos 1 entrada) e os
+**26 órgãos da LOB do CBMRO**, totalizando **338 entradas**. Cobertura por órgão (estados/26):
+`cg` 23, `deei` 23, `ag` 22, `dlog` 21, `dp` 19, `crbm` 18, `corregedoria` 18, `dpof` 17, `cot` 17,
+`dsap` 16, `condeg` 15, `assessorias` 15, `gab-cg` 15, `bbm` 13, `depdec` 10, `cint` 10, `cinf` 10,
+`dpo` 11, `bbs` 9, `boa` 7, `ccs` 6, `bifea` 6, `gbm` 6, `cat` 5, `cibm` 4, `doe` 2. Órgãos com baixa
+cobertura (`doe`, `cibm`, `cat`, `gbm`, `bifea`, `ccs`) refletem estrutura genuinamente ausente nas
+leis (muitas LOBs remetem subdivisões operacionais a decreto/RI), não lacuna de pesquisa.
+
+Para ampliar esta camada no futuro, editar `scripts/lob_enrichment.py` e reexecutar
 `python scripts/build_minuta_comparison.py` (e `python scripts/_check_lob_merge.py`).
