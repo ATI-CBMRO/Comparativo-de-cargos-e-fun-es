@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from minuta_comparison_lib import norm, state_from_source_label, auto_match_organ_ids  # noqa: E402
 from build_minuta_structure import ORGAN_ORDER, command_order  # noqa: E402
 from minuta_enrichment import enrich_organ_for, GUARNICAO_CHAPTER  # noqa: E402
+from lob_enrichment import lob_enrich_for, LOB_ENRICHMENT  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -87,6 +88,24 @@ def competencia_organ(items):
         "name": "", "abbreviation": "", "subordinadoA": "",
         "atribuicoes": list(items), "desdobramentos": [], "cargos": [],
     }
+
+
+def lob_organ_from_entry(entry):
+    """Objeto de órgão (formato da matriz) a partir de uma entrada de LOB_ENRICHMENT."""
+    items = ([entry["finalidade"]] if entry.get("finalidade") else []) \
+            + list(entry.get("competencias") or [])
+    return {
+        "name": entry.get("organName", ""), "abbreviation": entry.get("abbr", ""),
+        "subordinadoA": "", "atribuicoes": items, "desdobramentos": [], "cargos": [],
+    }
+
+
+def _merge_lob_into_organs(organs, lob_org):
+    """Anexa o órgão da LOB à coluna 3 sem repetir atribuições idênticas (por texto)."""
+    seen = {a for o in organs for a in (o.get("atribuicoes") or [])}
+    extra = [a for a in lob_org["atribuicoes"] if a not in seen]
+    if extra or not organs:
+        organs.append({**lob_org, "atribuicoes": extra or lob_org["atribuicoes"]})
 
 
 def build_reference(organ_key, ro_organs):
@@ -209,14 +228,28 @@ def lob_organs(organs):
     return lobbed if lobbed else organs
 
 
-def attach_lob_organs(organ_key, state_records):
-    """Para cada estado já presente no comparativo, anexa:
-      - lobOrgans: órgãos da LOB casados (organs_detail filtrado a LOB + auto-match);
-      - lobProvenance: 'curado' se algum órgão casado tem source=='lob', senão 'automatico'.
-    Não altera a coluna compilada (rec['organs'])."""
+def lob_curated_states_for(organ_key, meta):
+    """{state_id: {organ, source}} da camada LOB curada para um órgão."""
+    out = {}
+    for sid in meta:
+        if sid == REF_ID:
+            continue
+        entry = lob_enrich_for(organ_key, sid)
+        if entry:
+            out[sid] = {"organ": lob_organ_from_entry(entry), "source": entry["source"]}
+    return out
+
+
+def attach_lob_organs(organ_key, state_records, lob_cur):
+    """Coluna 2 (LOB) de cada estado: usa a camada curada lob_enrichment quando houver;
+    senão, mantém o auto-match histórico em organs_detail filtrado a LOB."""
     for rec in state_records:
         sid = rec["id"]
         if sid == REF_ID:
+            continue
+        if sid in lob_cur:
+            rec["lobOrgans"] = [lob_cur[sid]["organ"]]
+            rec["lobProvenance"] = "curado"
             continue
         organs = load_organs(sid)
         lobbed = lob_organs(organs)
@@ -247,8 +280,24 @@ def build():
         reference, ref_note = build_reference(organ_key, ro_organs)
         curated = curated_states_for(organ_key, dpo_cot, meta)
         auto = auto_states_for(organ_key, set(curated.keys()), meta)
-        states = sort_states(list(curated.values()) + list(auto.values()))
-        attach_lob_organs(organ_key, states)
+        lob_cur = lob_curated_states_for(organ_key, meta)
+        records = {r["id"]: r for r in (list(curated.values()) + list(auto.values()))}
+        # Mescla a camada LOB na coluna 3 e garante presença de estados só-LOB.
+        for sid, info in lob_cur.items():
+            if sid in records:
+                _merge_lob_into_organs(records[sid]["organs"], info["organ"])
+                # A presença de LOB curada eleva o registro a 'curado' (col3 agora cita fonte).
+                records[sid]["provenance"] = "curado"
+                if not records[sid].get("sourceLabel"):
+                    records[sid]["sourceLabel"] = info["source"]
+            else:
+                records[sid] = {
+                    **meta.get(sid, _fallback_meta(sid)),
+                    "provenance": "curado", "sourceLabel": info["source"], "note": None,
+                    "organs": [info["organ"]],
+                }
+        states = sort_states(list(records.values()))
+        attach_lob_organs(organ_key, states, lob_cur)
         ref_abbr = ((reference or {}).get("abbreviation")
                     or (GUARNICAO_CHAPTER.get("abbr") if organ_key == "guarnicao" else "")
                     or organ_key.upper())

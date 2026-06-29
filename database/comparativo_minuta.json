@@ -182,6 +182,167 @@
           "lobProvenance": "curado"
         },
         {
+          "id": "go",
+          "name": "Goiás",
+          "abbr": "GO",
+          "cbm": "CBMGO",
+          "region": "Centro-Oeste",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMGO, LOB (Lei nº 18.305/2013), Art. 9",
+          "note": null,
+          "organs": [
+            {
+              "name": "Estado-Maior Geral",
+              "abbreviation": "EMG",
+              "subordinadoA": "Comando-Geral",
+              "atribuicoes": [
+                "Planejamento, coordenação, fiscalização e controle de todas as atividades da Corporação; elaboração de diretrizes e ordens do Comando",
+                "Competência institucional do Corpo de Bombeiros Militar (Lei nº 18.305/2013, Art. 2º): I - planejar e executar atividades de prevenção e combate a incêndios, busca, resgate e salvamento de pessoas e bens, bem como controlar situações de pânico",
+                "II - aplicar e fiscalizar o cumprimento da legislação e de normas específicas que tratam da proteção contra incêndio, explosão, pânico e desastres",
+                "III - realizar perícias de incêndio voltadas exclusivamente à prevenção de sinistros e relacionadas com sua competência",
+                "IV - coordenar os atendimentos a desastres, situações de emergência ou estados de calamidade pública",
+                "V - planejar e executar atividades de proteção ao meio ambiente, relacionadas com sua competência",
+                "VI - desenvolver atividades educativas relacionadas com sua competência",
+                "VII - realizar outras atividades, visando ao cumprimento de suas atribuições constitucionais e legais"
+              ],
+              "desdobramentos": [
+                "1ª Seção (BM/1): Assessoria às Comissões de Promoções e de Medalhas",
+                "2ª Seção (BM/2): Inteligência",
+                "3ª Seção (BM/3): Planejamento de Operações e Eventos",
+                "4ª Seção (BM/4): Planejamento, Orçamento e Convênios",
+                "5ª Seção (BM/5): Comunicação Social",
+                "6ª Seção (BM/6): Tecnologia da Informação e Comunicações",
+                "7ª Seção (BM/7): Gestão e Fiscalização de Recursos",
+                "8ª Seção (BM/8): Ações Sociais, Corpo Musical e Guarda de Honra Especial",
+                "9ª Seção (BM/9): Estatística e Análise da Informação"
+              ],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Estado-Maior Geral",
+                  "requisito": "Coronel ou Tenente-Coronel QOCBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Assessorar o Comandante-Geral nos níveis mais elevados",
+                    "Realizar estudos e planejamentos coordenando atividades",
+                    "Elaborar diretrizes, legislações internas, planos e ordens"
+                  ],
+                  "desdobramentos": [
+                    "Seções BM/1 a BM/9",
+                    "Secretaria do EMG"
+                  ]
+                },
+                {
+                  "cargo": "Chefe da 1ª Seção (BM/1)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Assessoria às Comissões de Promoções e de Medalhas"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 2ª Seção (BM/2)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Inteligência"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 3ª Seção (BM/3)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Planejamento de operações e eventos"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 4ª Seção (BM/4)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Planejamento, orçamento e convênios"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 5ª Seção (BM/5)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Comunicação social"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 6ª Seção (BM/6)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Tecnologia da informação e comunicações"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 7ª Seção (BM/7)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Gestão e fiscalização de recursos"
+                  ],
+                  "desdobramentos": []
+                },
+                {
+                  "cargo": "Chefe da 8ª Seção (BM/8)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Ações sociais, corpo musical e guarda de honra especial"
+                  ],
+                  "desdobramentos": [
+                    "Corpo Musical",
+                    "Guarda de Honra Especial"
+                  ]
+                },
+                {
+                  "cargo": "Chefe da 9ª Seção (BM/9)",
+                  "requisito": "Tenente-Coronel QOCBM",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "Estatística e análise da informação"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando Geral",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "O órgão de direção geral, representado pelo Comando Geral, é encarregado do planejamento e organização geral da Corporação, visando ao emprego estratégico de pessoal e material no âmbito da Instituição, cabendo-lhe ainda a fiscalização e o controle dos órgãos de direção setorial, de apoio e execução"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando Geral",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "O órgão de direção geral, representado pelo Comando Geral, é encarregado do planejamento e organização geral da Corporação, visando ao emprego estratégico de pessoal e material no âmbito da Instituição, cabendo-lhe ainda a fiscalização e o controle dos órgãos de direção setorial, de apoio e execução"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
           "id": "mt",
           "name": "Mato Grosso",
           "abbr": "MT",
@@ -294,6 +455,189 @@
                 "Ajudância de Ordens",
                 "Secretaria"
               ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "sc",
+          "name": "Santa Catarina",
+          "abbr": "SC",
+          "cbm": "CBMSC",
+          "region": "Sul",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 14",
+          "note": null,
+          "organs": [
+            {
+              "name": "Comando-Geral",
+              "abbreviation": "CG",
+              "subordinadoA": "Governador do Estado",
+              "atribuicoes": [
+                "I - concessão de medalha, condecoração e comenda;",
+                "II - movimentação de Oficial;",
+                "III - desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento;",
+                "IV - assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro militar e outras atividades consideradas por LEI de competência do CBMSC;",
+                "V - agregação e reversão de Praças e Oficiais do CBMSC;",
+                "VI - exclusão do serviço ativo das Praças;",
+                "VII - convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em situação hierárquica compatível com a do oficial envolvido;",
+                "VIII - assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de interesse da Corporação; e",
+                "IX - designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG)."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Comandante-Geral",
+                  "requisito": "Nível estratégico de direção geral",
+                  "subordinadoA": "Governador do Estado",
+                  "atribuicoes": [
+                    "Concessão de medalha, condecoração e comenda; movimentação de Oficial",
+                    "Desenvolvimento funcional das Praças; assinatura de convênios com municípios",
+                    "Agregação, reversão e exclusão do serviço ativo"
+                  ],
+                  "desdobramentos": [
+                    "Subcomando-Geral",
+                    "Estado-Maior Geral",
+                    "Gabinete do Comando-Geral",
+                    "Corregedoria-Geral"
+                  ]
+                },
+                {
+                  "cargo": "Subcomandante-Geral",
+                  "requisito": "Oficial do último posto QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Assessoramento ao Comandante-Geral; planejamento de operações estaduais e multi-RBM",
+                    "Coordenação e supervisão dos órgãos de direção operacional e execução",
+                    "Definição de emprego de Força-Tarefa"
+                  ],
+                  "desdobramentos": [
+                    "Centro de Monitoramento Operacional e Gestão de Crises"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Subcomando-Geral",
+              "abbreviation": "SCG",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "I - assessorar o Comandante-Geral no desempenho de suas atribuições;",
+                "II - planejar as operações que importem em uma coordenação ao nível estadual ou que envolvam mais de uma RBM, bem como as relativas à participação do CBMSC em solenidades, paradas e desfiles militares;",
+                "III - coordenar, controlar e supervisionar as atividades desenvolvidas pelos órgãos de direção operacional e pelos órgãos de execução da Corporação;",
+                "IV - coordenar toda a execução do atendimento a eventos críticos; e",
+                "V - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, que extrapole os limites da circunscrição de uma RBM."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Subcomandante-Geral",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "I a V – atribuições do Art. 16 Dec. nº 1.328/2021."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Estado-Maior Geral",
+              "abbreviation": "EMG",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "I - assessorar o Comandante-Geral no nível estratégico do CBMSC;",
+                "II - prestar assistência ao Comandante-Geral no desempenho de suas atividades, elaborando estudos e projetos e planejando, controlando e gerindo planos institucionais;",
+                "III - supervisionar a elaboração e execução de normas, instruções, diretrizes, planos e ordens do CBMSC;",
+                "IV - orientar, controlar e supervisionar os órgãos de direção, apoio e execução no cumprimento de suas atribuições; e",
+                "V - desenvolver outras atividades relacionadas à direção geral do CBMSC."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Chefe do Estado-Maior Geral",
+                  "requisito": "Coronel QOBM",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Assessoramento ao Comandante-Geral no nível estratégico",
+                    "Supervisão da elaboração e execução de normas, instruções e planos"
+                  ],
+                  "desdobramentos": [
+                    "Subchefia",
+                    "8 Seções de planejamento",
+                    "Secretaria"
+                  ]
+                },
+                {
+                  "cargo": "Subchefe do Estado-Maior Geral",
+                  "requisito": "Oficial designado (QOBM)",
+                  "subordinadoA": "Chefe do Estado-Maior Geral",
+                  "atribuicoes": [
+                    "Recepção, elaboração, controle e arquivo de documentação",
+                    "Desenvolvimento e acompanhamento de projetos"
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Gabinete do Comando-Geral",
+              "abbreviation": "Gab",
+              "subordinadoA": "Comandante-Geral",
+              "atribuicoes": [
+                "I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e",
+                "II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das atividades administrativas do Gabinete do Comando-Geral."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Ajudante-Geral",
+                  "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
+                  "subordinadoA": "Comandante-Geral",
+                  "atribuicoes": [
+                    "Chefia do Gabinete do Comando-Geral, exercida pelo Ajudante-Geral (Art. 26 §único)."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Comando-Geral",
+              "abbreviation": "CmdoG",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "concessão de medalha, condecoração e comenda",
+                "movimentação de Oficial",
+                "desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento",
+                "assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro militar e outras atividades consideradas por LEI de competência do CBMSC",
+                "agregação e reversão de Praças e Oficiais do CBMSC",
+                "exclusão do serviço ativo das Praças",
+                "convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em situação hierárquica compatível com a do oficial envolvido",
+                "assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de interesse da Corporação",
+                "designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG)"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando-Geral",
+              "abbreviation": "CmdoG",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "concessão de medalha, condecoração e comenda",
+                "movimentação de Oficial",
+                "desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento",
+                "assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro militar e outras atividades consideradas por LEI de competência do CBMSC",
+                "agregação e reversão de Praças e Oficiais do CBMSC",
+                "exclusão do serviço ativo das Praças",
+                "convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em situação hierárquica compatível com a do oficial envolvido",
+                "assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de interesse da Corporação",
+                "designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG)"
+              ],
+              "desdobramentos": [],
               "cargos": []
             }
           ],
@@ -1093,225 +1437,6 @@
                 "4ª Seção (BM/4) — finança e patrimônio",
                 "5ª Seção (BM/5) — assessoria de imprensa e marketing",
                 "6ª Seção (BM/6) — planejamento administrativo, orçamentário e de informática"
-              ],
-              "cargos": []
-            }
-          ],
-          "lobProvenance": "curado"
-        },
-        {
-          "id": "go",
-          "name": "Goiás",
-          "abbr": "GO",
-          "cbm": "CBMGO",
-          "region": "Centro-Oeste",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Estado-Maior Geral",
-              "abbreviation": "EMG",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "Planejamento, coordenação, fiscalização e controle de todas as atividades da Corporação; elaboração de diretrizes e ordens do Comando",
-                "Competência institucional do Corpo de Bombeiros Militar (Lei nº 18.305/2013, Art. 2º): I - planejar e executar atividades de prevenção e combate a incêndios, busca, resgate e salvamento de pessoas e bens, bem como controlar situações de pânico",
-                "II - aplicar e fiscalizar o cumprimento da legislação e de normas específicas que tratam da proteção contra incêndio, explosão, pânico e desastres",
-                "III - realizar perícias de incêndio voltadas exclusivamente à prevenção de sinistros e relacionadas com sua competência",
-                "IV - coordenar os atendimentos a desastres, situações de emergência ou estados de calamidade pública",
-                "V - planejar e executar atividades de proteção ao meio ambiente, relacionadas com sua competência",
-                "VI - desenvolver atividades educativas relacionadas com sua competência",
-                "VII - realizar outras atividades, visando ao cumprimento de suas atribuições constitucionais e legais"
-              ],
-              "desdobramentos": [
-                "1ª Seção (BM/1): Assessoria às Comissões de Promoções e de Medalhas",
-                "2ª Seção (BM/2): Inteligência",
-                "3ª Seção (BM/3): Planejamento de Operações e Eventos",
-                "4ª Seção (BM/4): Planejamento, Orçamento e Convênios",
-                "5ª Seção (BM/5): Comunicação Social",
-                "6ª Seção (BM/6): Tecnologia da Informação e Comunicações",
-                "7ª Seção (BM/7): Gestão e Fiscalização de Recursos",
-                "8ª Seção (BM/8): Ações Sociais, Corpo Musical e Guarda de Honra Especial",
-                "9ª Seção (BM/9): Estatística e Análise da Informação"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Estado-Maior Geral",
-                  "requisito": "Coronel ou Tenente-Coronel QOCBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assessorar o Comandante-Geral nos níveis mais elevados",
-                    "Realizar estudos e planejamentos coordenando atividades",
-                    "Elaborar diretrizes, legislações internas, planos e ordens"
-                  ],
-                  "desdobramentos": [
-                    "Seções BM/1 a BM/9",
-                    "Secretaria do EMG"
-                  ]
-                },
-                {
-                  "cargo": "Chefe da 1ª Seção (BM/1)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Assessoria às Comissões de Promoções e de Medalhas"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 2ª Seção (BM/2)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Inteligência"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 3ª Seção (BM/3)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Planejamento de operações e eventos"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 4ª Seção (BM/4)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Planejamento, orçamento e convênios"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 5ª Seção (BM/5)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Comunicação social"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 6ª Seção (BM/6)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Tecnologia da informação e comunicações"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 7ª Seção (BM/7)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Gestão e fiscalização de recursos"
-                  ],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Chefe da 8ª Seção (BM/8)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Ações sociais, corpo musical e guarda de honra especial"
-                  ],
-                  "desdobramentos": [
-                    "Corpo Musical",
-                    "Guarda de Honra Especial"
-                  ]
-                },
-                {
-                  "cargo": "Chefe da 9ª Seção (BM/9)",
-                  "requisito": "Tenente-Coronel QOCBM",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "Estatística e análise da informação"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Comando Geral",
-              "abbreviation": "CG",
-              "subordinadoA": "Governador do Estado",
-              "atribuicoes": [
-                "O órgão de direção geral, representado pelo Comando Geral, é encarregado do planejamento e organização geral da Corporação, visando ao emprego estratégico de pessoal e material no âmbito da Instituição, cabendo-lhe ainda a fiscalização e o controle dos órgãos de direção setorial, de apoio e execução (Art. 9º).",
-                "São atribuições do Comandante-Geral, dentre outras previstas em lei e em regulamentos: elaborar a política de gestão administrativa, operacional e de pessoal (Art. 11, I)",
-                "baixar normas, diretrizes e ordens gerais e específicas aos diversos setores da Corporação (II)",
-                "baixar normas regulando o quantitativo de seções e as atribuições de cada seção do Estado Maior-Geral (III)",
-                "aprovar planos e programas relacionados a gestão de pessoal e recursos orçamentários, financeiros e materiais (IV)",
-                "aprovar projetos institucionais e planos de gestão (V)",
-                "movimentar oficiais e praças, no interesse do serviço, a pedido ou a bem da disciplina (VI)",
-                "autorizar o intercâmbio de bombeiros militares do Estado de Goiás com instituições de outros Estados da Federação, bem como de militares da União e de outras Unidades da Federação com o Corpo de Bombeiros Militar do Estado de Goiás, para fins de formação, especialização, aperfeiçoamento, habilitação e aprimoramento profissional e atuação em operações de bombeiros e humanitárias (VII)",
-                "editar normas relativas a identificação de pessoal e registro e porte de arma (VIII)"
-              ],
-              "desdobramentos": [
-                "Gabinete do Comandante-Geral",
-                "Gabinete do Subcomandante-Geral",
-                "Estado Maior-Geral",
-                "Chefia de Gabinete",
-                "Ajudância de Ordens",
-                "Assessorias e Assistências",
-                "Comissões",
-                "Secretaria-Geral"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Comandante-Geral",
-                  "requisito": "Coronel do Quadro de Oficiais de Comando – QOC, possuidor do Curso Superior de Bombeiro Militar ou equivalente (Art. 12)",
-                  "subordinadoA": "Governador do Estado",
-                  "atribuicoes": [
-                    "Elaborar a política de gestão administrativa, operacional e de pessoal (Art. 11, I)",
-                    "Baixar normas, diretrizes e ordens gerais e específicas aos diversos setores da Corporação (II)",
-                    "Baixar normas regulando o quantitativo de seções e as atribuições de cada seção do Estado Maior-Geral (III)",
-                    "Aprovar planos e programas relacionados a gestão de pessoal e recursos orçamentários, financeiros e materiais (IV)",
-                    "Aprovar projetos institucionais e planos de gestão (V)",
-                    "Movimentar oficiais e praças, no interesse do serviço, a pedido ou a bem da disciplina (VI)",
-                    "Autorizar o intercâmbio de bombeiros militares do Estado de Goiás com instituições de outros Estados da Federação, bem como de militares da União e de outras Unidades da Federação com o Corpo de Bombeiros Militar do Estado de Goiás, para fins de formação, especialização, aperfeiçoamento, habilitação e aprimoramento profissional e atuação em operações de bombeiros e humanitárias (VII)",
-                    "Editar normas relativas a identificação de pessoal e registro e porte de arma (VIII)"
-                  ],
-                  "desdobramentos": [
-                    "Gabinete do Comandante-Geral",
-                    "Gabinete do Subcomandante-Geral",
-                    "Estado Maior-Geral",
-                    "Chefia de Gabinete",
-                    "Ajudância de Ordens",
-                    "Assessorias e Assistências",
-                    "Comissões",
-                    "Secretaria-Geral"
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Subcomando Geral",
-              "abbreviation": "SCG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "O Subcomandante-Geral, substituto do Comandante-Geral em suas faltas e impedimentos, é responsável pela otimização dos recursos operacionais, bem como pelo controle da disciplina dos integrantes da Corporação, por meio dos órgãos de direção setorial e regional, de apoio e de execução (Art. 13).",
-                "O Subcomandante-Geral poderá exercer, cumulativamente, a função de Chefe do Estado Maior-Geral (Art. 13, § 1º)."
-              ],
-              "desdobramentos": [],
-              "cargos": []
-            },
-            {
-              "name": "Estado Maior-Geral",
-              "abbreviation": "EMG",
-              "subordinadoA": "Comandante-Geral / Subcomandante-Geral",
-              "atribuicoes": [
-                "O Estado Maior-Geral, unidade de assessoramento do Comandante-Geral e do Subcomandante-Geral, é responsável pela análise e estudo de assuntos relacionados à administração geral e sua operacionalização no âmbito da Corporação, cabendo-lhe ainda o planejamento da programação orçamentária e financeira, bem como a elaboração de diretrizes e ordens de acordo com as premissas estabelecidas pelo Comando Geral (Art. 14).",
-                "Cabem à Chefia do Estado Maior-Geral a orientação, coordenação e fiscalização dos trabalhos do Estado Maior-Geral visando ao cumprimento das determinações e políticas estabelecidas pelo Comandante-Geral (Art. 14, § 2º)."
-              ],
-              "desdobramentos": [
-                "Chefia do Estado Maior-Geral",
-                "Seções do Estado Maior-Geral"
               ],
               "cargos": []
             }
@@ -3442,285 +3567,6 @@
           "lobProvenance": "curado"
         },
         {
-          "id": "sc",
-          "name": "Santa Catarina",
-          "abbr": "SC",
-          "cbm": "CBMSC",
-          "region": "Sul",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Comando-Geral",
-              "abbreviation": "CG",
-              "subordinadoA": "Governador do Estado",
-              "atribuicoes": [
-                "I - concessão de medalha, condecoração e comenda;",
-                "II - movimentação de Oficial;",
-                "III - desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento;",
-                "IV - assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro militar e outras atividades consideradas por LEI de competência do CBMSC;",
-                "V - agregação e reversão de Praças e Oficiais do CBMSC;",
-                "VI - exclusão do serviço ativo das Praças;",
-                "VII - convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em situação hierárquica compatível com a do oficial envolvido;",
-                "VIII - assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de interesse da Corporação; e",
-                "IX - designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG)."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Comandante-Geral",
-                  "requisito": "Nível estratégico de direção geral",
-                  "subordinadoA": "Governador do Estado",
-                  "atribuicoes": [
-                    "Concessão de medalha, condecoração e comenda; movimentação de Oficial",
-                    "Desenvolvimento funcional das Praças; assinatura de convênios com municípios",
-                    "Agregação, reversão e exclusão do serviço ativo"
-                  ],
-                  "desdobramentos": [
-                    "Subcomando-Geral",
-                    "Estado-Maior Geral",
-                    "Gabinete do Comando-Geral",
-                    "Corregedoria-Geral"
-                  ]
-                },
-                {
-                  "cargo": "Subcomandante-Geral",
-                  "requisito": "Oficial do último posto QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assessoramento ao Comandante-Geral; planejamento de operações estaduais e multi-RBM",
-                    "Coordenação e supervisão dos órgãos de direção operacional e execução",
-                    "Definição de emprego de Força-Tarefa"
-                  ],
-                  "desdobramentos": [
-                    "Centro de Monitoramento Operacional e Gestão de Crises"
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Subcomando-Geral",
-              "abbreviation": "SCG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - assessorar o Comandante-Geral no desempenho de suas atribuições;",
-                "II - planejar as operações que importem em uma coordenação ao nível estadual ou que envolvam mais de uma RBM, bem como as relativas à participação do CBMSC em solenidades, paradas e desfiles militares;",
-                "III - coordenar, controlar e supervisionar as atividades desenvolvidas pelos órgãos de direção operacional e pelos órgãos de execução da Corporação;",
-                "IV - coordenar toda a execução do atendimento a eventos críticos; e",
-                "V - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, que extrapole os limites da circunscrição de uma RBM."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Subcomandante-Geral",
-                  "requisito": "Coronel QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "I a V – atribuições do Art. 16 Dec. nº 1.328/2021."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Estado-Maior Geral",
-              "abbreviation": "EMG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - assessorar o Comandante-Geral no nível estratégico do CBMSC;",
-                "II - prestar assistência ao Comandante-Geral no desempenho de suas atividades, elaborando estudos e projetos e planejando, controlando e gerindo planos institucionais;",
-                "III - supervisionar a elaboração e execução de normas, instruções, diretrizes, planos e ordens do CBMSC;",
-                "IV - orientar, controlar e supervisionar os órgãos de direção, apoio e execução no cumprimento de suas atribuições; e",
-                "V - desenvolver outras atividades relacionadas à direção geral do CBMSC."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Estado-Maior Geral",
-                  "requisito": "Coronel QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assessoramento ao Comandante-Geral no nível estratégico",
-                    "Supervisão da elaboração e execução de normas, instruções e planos"
-                  ],
-                  "desdobramentos": [
-                    "Subchefia",
-                    "8 Seções de planejamento",
-                    "Secretaria"
-                  ]
-                },
-                {
-                  "cargo": "Subchefe do Estado-Maior Geral",
-                  "requisito": "Oficial designado (QOBM)",
-                  "subordinadoA": "Chefe do Estado-Maior Geral",
-                  "atribuicoes": [
-                    "Recepção, elaboração, controle e arquivo de documentação",
-                    "Desenvolvimento e acompanhamento de projetos"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e",
-                "II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das atividades administrativas do Gabinete do Comando-Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Ajudante-Geral",
-                  "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Chefia do Gabinete do Comando-Geral, exercida pelo Ajudante-Geral (Art. 26 §único)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Comando-Geral",
-              "abbreviation": "CG",
-              "subordinadoA": "Governador do Estado",
-              "atribuicoes": [
-                "I - concessão de medalha, condecoração e comenda;",
-                "II - movimentação de Oficial;",
-                "III - desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento;",
-                "IV - assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro militar e outras atividades consideradas por LEI de competência do CBMSC;",
-                "V - agregação e reversão de Praças e Oficiais do CBMSC;",
-                "VI - exclusão do serviço ativo das Praças;",
-                "VII - convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em situação hierárquica compatível com a do oficial envolvido;",
-                "VIII - assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de interesse da Corporação; e",
-                "IX - designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG)."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Comandante-Geral",
-                  "requisito": "Nível estratégico de direção geral",
-                  "subordinadoA": "Governador do Estado",
-                  "atribuicoes": [
-                    "Concessão de medalha, condecoração e comenda; movimentação de Oficial",
-                    "Desenvolvimento funcional das Praças; assinatura de convênios com municípios",
-                    "Agregação, reversão e exclusão do serviço ativo"
-                  ],
-                  "desdobramentos": [
-                    "Subcomando-Geral",
-                    "Estado-Maior Geral",
-                    "Gabinete do Comando-Geral",
-                    "Corregedoria-Geral"
-                  ]
-                },
-                {
-                  "cargo": "Subcomandante-Geral",
-                  "requisito": "Oficial do último posto QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assessoramento ao Comandante-Geral; planejamento de operações estaduais e multi-RBM",
-                    "Coordenação e supervisão dos órgãos de direção operacional e execução",
-                    "Definição de emprego de Força-Tarefa"
-                  ],
-                  "desdobramentos": [
-                    "Centro de Monitoramento Operacional e Gestão de Crises"
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Subcomando-Geral",
-              "abbreviation": "SCG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - assessorar o Comandante-Geral no desempenho de suas atribuições;",
-                "II - planejar as operações que importem em uma coordenação ao nível estadual ou que envolvam mais de uma RBM, bem como as relativas à participação do CBMSC em solenidades, paradas e desfiles militares;",
-                "III - coordenar, controlar e supervisionar as atividades desenvolvidas pelos órgãos de direção operacional e pelos órgãos de execução da Corporação;",
-                "IV - coordenar toda a execução do atendimento a eventos críticos; e",
-                "V - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do CBMSC, que extrapole os limites da circunscrição de uma RBM."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Subcomandante-Geral",
-                  "requisito": "Coronel QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "I a V – atribuições do Art. 16 Dec. nº 1.328/2021."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Estado-Maior Geral",
-              "abbreviation": "EMG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - assessorar o Comandante-Geral no nível estratégico do CBMSC;",
-                "II - prestar assistência ao Comandante-Geral no desempenho de suas atividades, elaborando estudos e projetos e planejando, controlando e gerindo planos institucionais;",
-                "III - supervisionar a elaboração e execução de normas, instruções, diretrizes, planos e ordens do CBMSC;",
-                "IV - orientar, controlar e supervisionar os órgãos de direção, apoio e execução no cumprimento de suas atribuições; e",
-                "V - desenvolver outras atividades relacionadas à direção geral do CBMSC."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Estado-Maior Geral",
-                  "requisito": "Coronel QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assessoramento ao Comandante-Geral no nível estratégico",
-                    "Supervisão da elaboração e execução de normas, instruções e planos"
-                  ],
-                  "desdobramentos": [
-                    "Subchefia",
-                    "8 Seções de planejamento",
-                    "Secretaria"
-                  ]
-                },
-                {
-                  "cargo": "Subchefe do Estado-Maior Geral",
-                  "requisito": "Oficial designado (QOBM)",
-                  "subordinadoA": "Chefe do Estado-Maior Geral",
-                  "atribuicoes": [
-                    "Recepção, elaboração, controle e arquivo de documentação",
-                    "Desenvolvimento e acompanhamento de projetos"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e",
-                "II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das atividades administrativas do Gabinete do Comando-Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Ajudante-Geral",
-                  "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Chefia do Gabinete do Comando-Geral, exercida pelo Ajudante-Geral (Art. 26 §único)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            }
-          ],
-          "lobProvenance": "automatico"
-        },
-        {
           "id": "se",
           "name": "Sergipe",
           "abbr": "SE",
@@ -5543,6 +5389,51 @@
           "lobProvenance": "automatico"
         },
         {
+          "id": "go",
+          "name": "Goiás",
+          "abbr": "GO",
+          "cbm": "CBMGO",
+          "region": "Centro-Oeste",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMGO, LOB (Lei nº 18.305/2013), Art. 26",
+          "note": null,
+          "organs": [
+            {
+              "name": "Comando de Gestão e Finanças",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "planejar, controlar e executar as atividades relacionadas com pessoal",
+                "promover as atividades inerentes ao pagamento de militares, civis e fornecedores",
+                "praticar atos inerentes à execução financeira e contábil",
+                "elaborar normas internas sobre gestão de pessoal e financeira",
+                "planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho",
+                "elaborar boletins gerais"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Comando de Gestão e Finanças",
+              "abbreviation": "",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "planejar, controlar e executar as atividades relacionadas com pessoal",
+                "promover as atividades inerentes ao pagamento de militares, civis e fornecedores",
+                "praticar atos inerentes à execução financeira e contábil",
+                "elaborar normas internas sobre gestão de pessoal e financeira",
+                "planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho",
+                "elaborar boletins gerais"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
           "id": "pr",
           "name": "Paraná",
           "abbr": "PR",
@@ -5580,6 +5471,141 @@
                 "Centro de Saúde - CS",
                 "Centro de Educação Física e Desporto - CEFID"
               ],
+              "cargos": []
+            }
+          ],
+          "lobProvenance": "curado"
+        },
+        {
+          "id": "sc",
+          "name": "Santa Catarina",
+          "abbr": "SC",
+          "cbm": "CBMSC",
+          "region": "Sul",
+          "provenance": "curado",
+          "sourceLabel": "cf. CBMSC, LOB (Dec. nº 1.328/2021), Art. 34",
+          "note": null,
+          "organs": [
+            {
+              "name": "Diretoria de Pessoal",
+              "abbreviation": "DP",
+              "subordinadoA": "Chefe do Estado-Maior Geral",
+              "atribuicoes": [
+                "I - controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da Corporação, mantendo registros individuais;",
+                "II - promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como o serviço de identificação;",
+                "III - executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao pessoal ativo, inativo, pensionista e civil;",
+                "IV - executar as atividades pertinentes à documentação do pessoal do CBMSC;",
+                "V - desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal da Corporação;",
+                "VI - propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao Subcomandante-Geral;",
+                "VII - preparar os atos de movimentação, classificação e nomeação de Oficiais;",
+                "VIII - preparar os atos de movimentação, classificação e designação de Praças e Civis;",
+                "IX - manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro, relacionados com o controle do pessoal bombeiro militar;",
+                "X - estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do Estado-Maior Geral em que lhe extrapolarem à competência;",
+                "XI - manter o controle do pessoal agregado, excluído e licenciado;",
+                "XII - atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e Soldados;",
+                "XIII - elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção de Praças;",
+                "XIV - elaborar os processos de concessão de medalhas;",
+                "XV - coordenar e controlar a execução do plano de férias da Corporação;",
+                "XVI - coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e aperfeiçoamento do sistema de administração de pessoal;",
+                "XVII - elaborar estatísticas e relatórios das atividades da Diretoria;",
+                "XVIII - manter e operacionalizar o funcionamento das comissões permanentes e de mérito;",
+                "XIX - planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional, segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de seus dependentes;",
+                "XX - proceder o controle médico-sanitário do pessoal;",
+                "XXI - atender, no que lhe couber, a seleção do pessoal do CBMSC;",
+                "XXII - elaborar e executar programas de medicina preventiva e saúde comunitária;",
+                "XXIII - promover a realização de estudos, análises, e pesquisas, visando ao aperfeiçoamento do Sistema de Saúde e Assistência Social;",
+                "XXIV - baixar normas técnicas relativas às atividades de sua competência e controlar a sua aplicação;",
+                "XXV - tratar dos assuntos de estatística e modernização administrativa, na esfera de suas atribuições;",
+                "XXVI - tratar da coordenação, controle, e fiscalização, por meio de inspeções técnico-administrativas dos órgãos do Sistema de Saúde e Assistência Social;",
+                "XXVII - propor ao Estado-Maior Geral medidas que visem aprimorar as diretrizes gerais e aperfeiçoar a legislação e a Política de Saúde Ocupacional e Segurança do Trabalho e Assistência Social;",
+                "XXVIII - estabelecer e manter intercâmbio técnico-científico com entidades afins;",
+                "XXIX - propor a realização de convênios e contratos com entidades médicas ou técnico-profissionais, do direito público ou privado, visando à complementação e à racionalização dos serviços que lhe são afetos;",
+                "XXX - colaborar na especificação, padronização, catalogação e distribuição do material necessário às suas atividades e instruir a sua utilização e manutenção;",
+                "XXXI - elaborar normas, planos, programas, ordens e instruções relacionadas com o Sistema de Saúde e Assistência Social;",
+                "XXXII - elaborar e propor ao Estado-Maior Geral os manuais e instruções técnicas;",
+                "XXXIII - realizar as perícias médicas ou médico-legais, psicológicas e físicas, através do corpo técnico disponível;",
+                "XXXIV - prover, controlar e fiscalizar as atividades relacionadas à promoção da saúde e qualidade de vida, assistência social e religiosa do CBMSC;",
+                "XXXV - acompanhar a vida laboral do BM, avaliando-os sob os parâmetros de saúde, condicionamento físico e mental, anualmente;",
+                "XXXVI - avaliar os riscos ocupacionais das atividades laborais do bombeiro militar (administrativas e operacionais) definindo ações para mitigá-los;",
+                "XXXVII - realizar as investigações dos acidentes no trabalho definindo as ações necessárias à sua prevenção;",
+                "XXXVIII - promover estudos voltados ao desempenho humano, gerando estatísticas;",
+                "XXXIX - planejar, coordenar e supervisionar a educação física no CBMSC, com foco na atividade operacional e desempenho humano;",
+                "XL - elaborar normas relativas à educação física corporativa;",
+                "XLI - coordenar eventos de natureza desportiva de interesse institucional;",
+                "XLII - encaminhar os inaptos no TAF anual para a atividade-fim, ao devido tratamento e acompanhamento de saúde; e",
+                "XLIII - planejar e operacionalizar os testes de aptidão física para inclusões, promoções, seleções de cursos internos e externos, e anuais para acompanhamento da saúde dos militares."
+              ],
+              "desdobramentos": [],
+              "cargos": [
+                {
+                  "cargo": "Diretor de Pessoal",
+                  "requisito": "Coronel QOBM (Art. 9º §2º)",
+                  "subordinadoA": "Chefe do EMG",
+                  "atribuicoes": [
+                    "I a XLIII – atribuições previstas no Art. 34 do Dec. nº 1.328/2021."
+                  ],
+                  "desdobramentos": []
+                }
+              ]
+            },
+            {
+              "name": "Diretoria de Pessoal",
+              "abbreviation": "DP",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "A Diretoria de Pessoal, órgão de direção setorial, incumbe-se de planejar, coordenar, fiscalizar, controlar e executar a política de pessoal da Instituição",
+                "controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da Corporação, mantendo registros individuais",
+                "promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como o serviço de identificação",
+                "executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao pessoal ativo, inativo, pensionista e civil",
+                "executar as atividades pertinentes à documentação do pessoal do CBMSC",
+                "desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal da Corporação",
+                "propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao Subcomandante-Geral",
+                "preparar os atos de movimentação, classificação e nomeação de Oficiais",
+                "preparar os atos de movimentação, classificação e designação de Praças e Civis",
+                "manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro, relacionados com o controle do pessoal bombeiro militar",
+                "estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do Estado-Maior Geral em que lhe extrapolarem à competência",
+                "manter o controle do pessoal agregado, excluído e licenciado",
+                "atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e Soldados",
+                "elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção de Praças",
+                "elaborar os processos de concessão de medalhas",
+                "coordenar e controlar a execução do plano de férias da Corporação",
+                "coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e aperfeiçoamento do sistema de administração de pessoal",
+                "elaborar estatísticas e relatórios das atividades da Diretoria",
+                "manter e operacionalizar o funcionamento das comissões permanentes e de mérito",
+                "planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional, segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de seus dependentes"
+              ],
+              "desdobramentos": [],
+              "cargos": []
+            }
+          ],
+          "lobOrgans": [
+            {
+              "name": "Diretoria de Pessoal",
+              "abbreviation": "DP",
+              "subordinadoA": "",
+              "atribuicoes": [
+                "A Diretoria de Pessoal, órgão de direção setorial, incumbe-se de planejar, coordenar, fiscalizar, controlar e executar a política de pessoal da Instituição",
+                "controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da Corporação, mantendo registros individuais",
+                "promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como o serviço de identificação",
+                "executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao pessoal ativo, inativo, pensionista e civil",
+                "executar as atividades pertinentes à documentação do pessoal do CBMSC",
+                "desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal da Corporação",
+                "propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao Subcomandante-Geral",
+                "preparar os atos de movimentação, classificação e nomeação de Oficiais",
+                "preparar os atos de movimentação, classificação e designação de Praças e Civis",
+                "manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro, relacionados com o controle do pessoal bombeiro militar",
+                "estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do Estado-Maior Geral em que lhe extrapolarem à competência",
+                "manter o controle do pessoal agregado, excluído e licenciado",
+                "atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e Soldados",
+                "elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção de Praças",
+                "elaborar os processos de concessão de medalhas",
+                "coordenar e controlar a execução do plano de férias da Corporação",
+                "coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e aperfeiçoamento do sistema de administração de pessoal",
+                "elaborar estatísticas e relatórios das atividades da Diretoria",
+                "manter e operacionalizar o funcionamento das comissões permanentes e de mérito",
+                "planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional, segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de seus dependentes"
+              ],
+              "desdobramentos": [],
               "cargos": []
             }
           ],
@@ -6593,145 +6619,6 @@
                     "Subdiretoria de Folha de Pagamento",
                     "Subdiretoria de Legislação"
                   ]
-                }
-              ]
-            }
-          ],
-          "lobProvenance": "automatico"
-        },
-        {
-          "id": "sc",
-          "name": "Santa Catarina",
-          "abbr": "SC",
-          "cbm": "CBMSC",
-          "region": "Sul",
-          "provenance": "automatico",
-          "sourceLabel": null,
-          "note": null,
-          "organs": [
-            {
-              "name": "Diretoria de Pessoal",
-              "abbreviation": "DP",
-              "subordinadoA": "Chefe do Estado-Maior Geral",
-              "atribuicoes": [
-                "I - controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da Corporação, mantendo registros individuais;",
-                "II - promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como o serviço de identificação;",
-                "III - executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao pessoal ativo, inativo, pensionista e civil;",
-                "IV - executar as atividades pertinentes à documentação do pessoal do CBMSC;",
-                "V - desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal da Corporação;",
-                "VI - propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao Subcomandante-Geral;",
-                "VII - preparar os atos de movimentação, classificação e nomeação de Oficiais;",
-                "VIII - preparar os atos de movimentação, classificação e designação de Praças e Civis;",
-                "IX - manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro, relacionados com o controle do pessoal bombeiro militar;",
-                "X - estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do Estado-Maior Geral em que lhe extrapolarem à competência;",
-                "XI - manter o controle do pessoal agregado, excluído e licenciado;",
-                "XII - atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e Soldados;",
-                "XIII - elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção de Praças;",
-                "XIV - elaborar os processos de concessão de medalhas;",
-                "XV - coordenar e controlar a execução do plano de férias da Corporação;",
-                "XVI - coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e aperfeiçoamento do sistema de administração de pessoal;",
-                "XVII - elaborar estatísticas e relatórios das atividades da Diretoria;",
-                "XVIII - manter e operacionalizar o funcionamento das comissões permanentes e de mérito;",
-                "XIX - planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional, segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de seus dependentes;",
-                "XX - proceder o controle médico-sanitário do pessoal;",
-                "XXI - atender, no que lhe couber, a seleção do pessoal do CBMSC;",
-                "XXII - elaborar e executar programas de medicina preventiva e saúde comunitária;",
-                "XXIII - promover a realização de estudos, análises, e pesquisas, visando ao aperfeiçoamento do Sistema de Saúde e Assistência Social;",
-                "XXIV - baixar normas técnicas relativas às atividades de sua competência e controlar a sua aplicação;",
-                "XXV - tratar dos assuntos de estatística e modernização administrativa, na esfera de suas atribuições;",
-                "XXVI - tratar da coordenação, controle, e fiscalização, por meio de inspeções técnico-administrativas dos órgãos do Sistema de Saúde e Assistência Social;",
-                "XXVII - propor ao Estado-Maior Geral medidas que visem aprimorar as diretrizes gerais e aperfeiçoar a legislação e a Política de Saúde Ocupacional e Segurança do Trabalho e Assistência Social;",
-                "XXVIII - estabelecer e manter intercâmbio técnico-científico com entidades afins;",
-                "XXIX - propor a realização de convênios e contratos com entidades médicas ou técnico-profissionais, do direito público ou privado, visando à complementação e à racionalização dos serviços que lhe são afetos;",
-                "XXX - colaborar na especificação, padronização, catalogação e distribuição do material necessário às suas atividades e instruir a sua utilização e manutenção;",
-                "XXXI - elaborar normas, planos, programas, ordens e instruções relacionadas com o Sistema de Saúde e Assistência Social;",
-                "XXXII - elaborar e propor ao Estado-Maior Geral os manuais e instruções técnicas;",
-                "XXXIII - realizar as perícias médicas ou médico-legais, psicológicas e físicas, através do corpo técnico disponível;",
-                "XXXIV - prover, controlar e fiscalizar as atividades relacionadas à promoção da saúde e qualidade de vida, assistência social e religiosa do CBMSC;",
-                "XXXV - acompanhar a vida laboral do BM, avaliando-os sob os parâmetros de saúde, condicionamento físico e mental, anualmente;",
-                "XXXVI - avaliar os riscos ocupacionais das atividades laborais do bombeiro militar (administrativas e operacionais) definindo ações para mitigá-los;",
-                "XXXVII - realizar as investigações dos acidentes no trabalho definindo as ações necessárias à sua prevenção;",
-                "XXXVIII - promover estudos voltados ao desempenho humano, gerando estatísticas;",
-                "XXXIX - planejar, coordenar e supervisionar a educação física no CBMSC, com foco na atividade operacional e desempenho humano;",
-                "XL - elaborar normas relativas à educação física corporativa;",
-                "XLI - coordenar eventos de natureza desportiva de interesse institucional;",
-                "XLII - encaminhar os inaptos no TAF anual para a atividade-fim, ao devido tratamento e acompanhamento de saúde; e",
-                "XLIII - planejar e operacionalizar os testes de aptidão física para inclusões, promoções, seleções de cursos internos e externos, e anuais para acompanhamento da saúde dos militares."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Diretor de Pessoal",
-                  "requisito": "Coronel QOBM (Art. 9º §2º)",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "I a XLIII – atribuições previstas no Art. 34 do Dec. nº 1.328/2021."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            }
-          ],
-          "lobOrgans": [
-            {
-              "name": "Diretoria de Pessoal",
-              "abbreviation": "DP",
-              "subordinadoA": "Chefe do Estado-Maior Geral",
-              "atribuicoes": [
-                "I - controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da Corporação, mantendo registros individuais;",
-                "II - promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como o serviço de identificação;",
-                "III - executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao pessoal ativo, inativo, pensionista e civil;",
-                "IV - executar as atividades pertinentes à documentação do pessoal do CBMSC;",
-                "V - desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal da Corporação;",
-                "VI - propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao Subcomandante-Geral;",
-                "VII - preparar os atos de movimentação, classificação e nomeação de Oficiais;",
-                "VIII - preparar os atos de movimentação, classificação e designação de Praças e Civis;",
-                "IX - manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro, relacionados com o controle do pessoal bombeiro militar;",
-                "X - estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do Estado-Maior Geral em que lhe extrapolarem à competência;",
-                "XI - manter o controle do pessoal agregado, excluído e licenciado;",
-                "XII - atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e Soldados;",
-                "XIII - elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção de Praças;",
-                "XIV - elaborar os processos de concessão de medalhas;",
-                "XV - coordenar e controlar a execução do plano de férias da Corporação;",
-                "XVI - coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e aperfeiçoamento do sistema de administração de pessoal;",
-                "XVII - elaborar estatísticas e relatórios das atividades da Diretoria;",
-                "XVIII - manter e operacionalizar o funcionamento das comissões permanentes e de mérito;",
-                "XIX - planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional, segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de seus dependentes;",
-                "XX - proceder o controle médico-sanitário do pessoal;",
-                "XXI - atender, no que lhe couber, a seleção do pessoal do CBMSC;",
-                "XXII - elaborar e executar programas de medicina preventiva e saúde comunitária;",
-                "XXIII - promover a realização de estudos, análises, e pesquisas, visando ao aperfeiçoamento do Sistema de Saúde e Assistência Social;",
-                "XXIV - baixar normas técnicas relativas às atividades de sua competência e controlar a sua aplicação;",
-                "XXV - tratar dos assuntos de estatística e modernização administrativa, na esfera de suas atribuições;",
-                "XXVI - tratar da coordenação, controle, e fiscalização, por meio de inspeções técnico-administrativas dos órgãos do Sistema de Saúde e Assistência Social;",
-                "XXVII - propor ao Estado-Maior Geral medidas que visem aprimorar as diretrizes gerais e aperfeiçoar a legislação e a Política de Saúde Ocupacional e Segurança do Trabalho e Assistência Social;",
-                "XXVIII - estabelecer e manter intercâmbio técnico-científico com entidades afins;",
-                "XXIX - propor a realização de convênios e contratos com entidades médicas ou técnico-profissionais, do direito público ou privado, visando à complementação e à racionalização dos serviços que lhe são afetos;",
-                "XXX - colaborar na especificação, padronização, catalogação e distribuição do material necessário às suas atividades e instruir a sua utilização e manutenção;",
-                "XXXI - elaborar normas, planos, programas, ordens e instruções relacionadas com o Sistema de Saúde e Assistência Social;",
-                "XXXII - elaborar e propor ao Estado-Maior Geral os manuais e instruções técnicas;",
-                "XXXIII - realizar as perícias médicas ou médico-legais, psicológicas e físicas, através do corpo técnico disponível;",
-                "XXXIV - prover, controlar e fiscalizar as atividades relacionadas à promoção da saúde e qualidade de vida, assistência social e religiosa do CBMSC;",
-                "XXXV - acompanhar a vida laboral do BM, avaliando-os sob os parâmetros de saúde, condicionamento físico e mental, anualmente;",
-                "XXXVI - avaliar os riscos ocupacionais das atividades laborais do bombeiro militar (administrativas e operacionais) definindo ações para mitigá-los;",
-                "XXXVII - realizar as investigações dos acidentes no trabalho definindo as ações necessárias à sua prevenção;",
-                "XXXVIII - promover estudos voltados ao desempenho humano, gerando estatísticas;",
-                "XXXIX - planejar, coordenar e supervisionar a educação física no CBMSC, com foco na atividade operacional e desempenho humano;",
-                "XL - elaborar normas relativas à educação física corporativa;",
-                "XLI - coordenar eventos de natureza desportiva de interesse institucional;",
-                "XLII - encaminhar os inaptos no TAF anual para a atividade-fim, ao devido tratamento e acompanhamento de saúde; e",
-                "XLIII - planejar e operacionalizar os testes de aptidão física para inclusões, promoções, seleções de cursos internos e externos, e anuais para acompanhamento da saúde dos militares."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Diretor de Pessoal",
-                  "requisito": "Coronel QOBM (Art. 9º §2º)",
-                  "subordinadoA": "Chefe do EMG",
-                  "atribuicoes": [
-                    "I a XLIII – atribuições previstas no Art. 34 do Dec. nº 1.328/2021."
-                  ],
-                  "desdobramentos": []
                 }
               ]
             }
