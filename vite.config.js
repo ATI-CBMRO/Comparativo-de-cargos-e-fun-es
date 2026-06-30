@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import fs from 'fs'
+import { gerarPropostaCore } from './api/_gerarProposta.js'
 
 // Plugin que serve a pasta database/ como rota estática /database/ e LEGISLAÇÃO CBMS/ como /legislacao-pdf/
 function serveDatabase() {
@@ -97,7 +98,35 @@ function copyDatabaseOnBuild() {
   }
 }
 
-export default defineConfig({
-  plugins: [react(), serveDatabase(), copyDatabaseOnBuild()],
-  server: { port: 5173 },
+// Em desenvolvimento, atende /api/gerar-proposta com a MESMA lógica da função da Vercel.
+function geminiDevApi(apiKey) {
+  return {
+    name: 'gemini-dev-api',
+    configureServer(server) {
+      server.middlewares.use('/api/gerar-proposta', async (req, res, next) => {
+        if (req.method !== 'POST') return next()
+        try {
+          let body = ''
+          for await (const chunk of req) body += chunk
+          const { textoAtual, sugestoes } = JSON.parse(body || '{}')
+          const proposta = await gerarPropostaCore({ textoAtual, sugestoes, apiKey })
+          res.setHeader('Content-Type', 'application/json; charset=utf-8')
+          res.end(JSON.stringify({ proposta }))
+        } catch (e) {
+          res.statusCode = 500
+          res.setHeader('Content-Type', 'application/json; charset=utf-8')
+          res.end(JSON.stringify({ error: String(e?.message || e) }))
+        }
+      })
+    },
+  }
+}
+
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '')
+  return {
+    plugins: [react(), serveDatabase(), copyDatabaseOnBuild(), geminiDevApi(env.GEMINI_API_KEY)],
+    // host: true + allowedHosts: true permitem acesso via túnel (cloudflared) para testar no celular.
+    server: { port: 5173, host: true, allowedHosts: true },
+  }
 })

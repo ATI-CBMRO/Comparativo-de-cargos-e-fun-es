@@ -225,3 +225,60 @@ o tratamento é feito pelos plugins acima — não pelo mecanismo padrão de ass
 ### Assets estáticos
 `public/` é servida na raiz (ex.: brasão referenciado como `/BrasaoCBMRO2D-COMPLETO.png`
 em `App.jsx`, com fallback para `/brasao-cbmro.svg`).
+
+## Revisão Colaborativa da Minuta (login + comentários + IA)
+
+Módulo NOVO, **independente** do portal estático: permite que pessoas convidadas façam login e
+comentem/curem a minuta dispositivo por dispositivo. Backend é **Firebase** (Auth e-mail+senha +
+Firestore) consumido direto do frontend; a IA usa uma função serverless. O portal existente não foi
+alterado. Specs e planos detalhados em `docs/superpowers/specs/` e `docs/superpowers/plans/`.
+
+### Rotas
+- `/login` (pública) — `src/pages/Login.jsx`. Após autenticar, aguarda o `user` ser confirmado via
+  `useEffect` antes de navegar (evita corrida com `onAuthStateChanged`).
+- `/cadastro` (pública) — `src/pages/Cadastro.jsx`. Autocadastro do convidado: cria a própria senha
+  (`cadastrar`); o `AuthProvider` autoriza só se o e-mail estiver na lista de membros e `ativo:true`.
+- `/revisao` (protegida) — `src/pages/Revisao.jsx`. Documento da minuta com trilha de balões na margem
+  e o popup do dispositivo (`src/components/RevisaoModal.jsx`, duas colunas: sugestões | redação final).
+- `/acessos` (protegida, só admin) — `src/pages/Acessos.jsx`. Gestão de convidados/cadastros: convidar
+  por e-mail, papel, bloquear/liberar/remover, e acompanhar o último login ("nunca entrou" inclusive).
+
+### Autenticação e autorização
+- `src/lib/firebase.js` inicializa Auth + Firestore a partir de `import.meta.env.VITE_FIREBASE_*`.
+- `src/lib/auth.jsx` (`AuthProvider`/`useAuth`): autoriza por **e-mail** (`members/{email}` com `ativo:true`);
+  no login grava `uid`/`status:'cadastrado'`/`ultimoLogin`. Expõe `entrar`, `cadastrar`, `sair`,
+  `recuperarSenha`. E-mails sempre normalizados em minúsculas (`normalizeEmail` em `src/lib/membersStats.js`).
+  Papéis `participante`/`admin`.
+- `src/lib/membersData.js`: CRUD de membros (`subscribeMembers`/`addMember`/`setMemberRole`/`setMemberAtivo`/
+  `removeMember`); `src/lib/membersStats.js`: lógica pura (`contaStatus`/`situacaoMembro`/`normalizeEmail`, com testes).
+- `src/components/ProtectedRoute.jsx` bloqueia rotas (e `requireAdmin`).
+- Os itens de menu "Revisão" (logado) e "Acessos" (só `role === 'admin'`) aparecem condicionalmente.
+
+### Dados (Firestore) e regras
+- Coleções: **`members`** (quem pode entrar; ver nota de indexação), **`suggestions`** (sugestões por
+  dispositivo: `dispositivoId`, `autorUid`, `texto`, `curtidoPor[]`, `adminStatus`), **`finalTexts`**
+  (`finalTexts/{dispositivoId}`: texto final + status em_aberto/fechado).
+- `firestore.rules` define `isMember()`/`isAdmin()` **baseados em `request.auth.token.email`** e as
+  permissões; publicar pelo console (passo a passo em `docs/FIREBASE_SETUP.md`). **`members` é indexado
+  por E-MAIL** (`members/{email}`, campos `email/nome/role/ativo/status/uid/criadoEm/criadoPor/ultimoLogin`).
+  O dono do doc só pode alterar `uid/status/ultimoLogin` (registro de login); o resto é só admin.
+- `dispositivoId` (`src/lib/dispositivoId.js`) é o endereço ESTÁVEL do dispositivo (`editId#index` ou
+  `editId#caput`), pois o "Art. Nº" é recalculado por `buildArticles`. Premissa: congelar
+  `minuta_structure.json` durante a rodada de revisão.
+
+### IA — proposta a partir das sugestões relevantes
+- `api/_gerarProposta.js` (núcleo: `buildPrompt`/`parseGeminiResposta`/`gerarPropostaCore`, sem framework)
+  é reusado por `api/gerar-proposta.js` (função serverless da Vercel) e por um middleware do Vite em
+  `vite.config.js` (dev). Endpoint: `POST /api/gerar-proposta` `{textoAtual, sugestoes}` → `{proposta}`.
+- Modelo **`gemini-2.5-flash`** (o `gemini-2.0-flash` tinha cota grátis 0 na conta). Chave só no servidor.
+
+### Variáveis de ambiente (NUNCA versionar)
+`.env` (copiar de `.env.example`): `VITE_FIREBASE_API_KEY/AUTH_DOMAIN/PROJECT_ID/STORAGE_BUCKET/`
+`MESSAGING_SENDER_ID/APP_ID` e `GEMINI_API_KEY`. No deploy (Vercel), cadastrar as MESMAS variáveis em
+*Environment Variables*. Projeto Firebase institucional: `revisao-minuta-cbmro-6f248`.
+
+### Rodar e testar
+- `npm run dev` sobe o site + o endpoint da IA (middleware). Login exige usuário em `members`.
+- Testes de lógica pura: `node --test src/lib/dispositivoId.test.js src/lib/reviewGroup.test.js api/_gerarProposta.test.js`.
+- Testar no celular: `cloudflared tunnel --url http://localhost:5173 --protocol http2` (o `--protocol http2`
+  evita o flapping do QUIC). `vite.config.js` já tem `server.host:true, allowedHosts:true` para o túnel.
