@@ -16251,37 +16251,44 @@
             {
               "id": "ai",
               "name": "Assessoria Institucional",
-              "children": []
+              "children": [],
+              "detailId": "ai"
             },
             {
               "id": "ae",
               "name": "Assessoria Especial",
-              "children": []
+              "children": [],
+              "detailId": "ae"
             },
             {
               "id": "al",
               "name": "Assessoria Legislativa",
-              "children": []
+              "children": [],
+              "detailId": "al"
             },
             {
               "id": "ap",
               "name": "Assessoria Parlamentar",
-              "children": []
+              "children": [],
+              "detailId": "ap"
             },
             {
               "id": "apge",
               "name": "Assessoria de Projetos e Gestão Estratégica",
-              "children": []
+              "children": [],
+              "detailId": "apge"
             },
             {
               "id": "af",
               "name": "Assessoria Fundacional",
-              "children": []
+              "children": [],
+              "detailId": "af"
             },
             {
               "id": "aci",
               "name": "Assessoria de Controle Interno",
-              "children": []
+              "children": [],
+              "detailId": "aci"
             }
           ],
           "description": "Prestam assessoria, consultoria e orientação técnica.",
@@ -16330,12 +16337,52 @@
                 {
                   "id": "comissoes",
                   "name": "Comissões",
-                  "children": []
+                  "children": [
+                    {
+                      "id": "presidente",
+                      "name": "Presidente",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secretario",
+                      "name": "Secretário",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "membros",
+                      "name": "Membros",
+                      "children": [],
+                      "_reg": true
+                    }
+                  ],
+                  "detailId": "comissoes"
                 },
                 {
                   "id": "conselhos",
                   "name": "Conselhos",
-                  "children": []
+                  "children": [
+                    {
+                      "id": "conselhos-de-justificacao-e-disciplina",
+                      "name": "Conselhos de Justificação e Disciplina",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "conselhos-de-etica-e-disciplina-militares",
+                      "name": "Conselhos de Ética e Disciplina Militares",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "conselhos-de-condecoracoes",
+                      "name": "Conselhos de Condecorações",
+                      "children": [],
+                      "_reg": true
+                    }
+                  ],
+                  "detailId": "conselhos"
                 }
               ]
             },
@@ -16346,7 +16393,27 @@
                 {
                   "id": "gab-scg",
                   "name": "Gabinete do Subcomando-Geral",
-                  "children": []
+                  "children": [
+                    {
+                      "id": "chefia-de-gabinete",
+                      "name": "Chefia de Gabinete",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secretaria",
+                      "name": "Secretaria",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "ajudancia-de-ordens",
+                      "name": "Ajudância de Ordens",
+                      "children": [],
+                      "_reg": true
+                    }
+                  ],
+                  "detailId": "gab-scg"
                 },
                 {
                   "id": "ajudancia",
@@ -16388,14 +16455,53 @@
                 {
                   "id": "gab-emg",
                   "name": "Gabinete do Estado-Maior Geral",
-                  "children": []
+                  "children": [
+                    {
+                      "id": "chefia-de-gabinete",
+                      "name": "Chefia de Gabinete",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "secretaria",
+                      "name": "Secretaria",
+                      "children": [],
+                      "_reg": true
+                    },
+                    {
+                      "id": "ajudante-de-ordens",
+                      "name": "Ajudante de Ordens",
+                      "children": [],
+                      "_reg": true
+                    }
+                  ],
+                  "detailId": "gab-emg"
                 },
                 {
                   "id": "ap-set",
                   "name": "Órgãos de Apoio Setorial",
                   "children": []
+                },
+                {
+                  "id": "chefia-de-gabinete",
+                  "name": "Chefia de Gabinete",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "secretaria",
+                  "name": "Secretaria",
+                  "children": [],
+                  "_reg": true
+                },
+                {
+                  "id": "ajudante-de-ordens",
+                  "name": "Ajudante de Ordens",
+                  "children": [],
+                  "_reg": true
                 }
-              ]
+              ],
+              "detailId": "gab-emg"
             }
           ],
           "description": "Realizam as atividades-meio da Corporação.",
@@ -16648,12 +16754,51 @@
           "category": "Execução"
         },
         {
-          "id": "correg",
+          "id": "corregedoria",
           "name": "Órgãos de Correição",
-          "children": [],
+          "children": [
+            {
+              "id": "corregedor-geral",
+              "name": "Corregedor-Geral",
+              "children": [],
+              "_reg": true,
+              "abbreviation": "Oficial da ativa do último Posto — QOEMBM; indicado pelo CG e nomeado pelo Governador; substituto imediato do Chefe do EMG"
+            },
+            {
+              "id": "adjunto",
+              "name": "Adjunto",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "secao-administrativa",
+              "name": "Seção Administrativa",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "cartorio",
+              "name": "Cartório",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "nucleo-de-inteligencia",
+              "name": "Núcleo de Inteligência",
+              "children": [],
+              "_reg": true
+            },
+            {
+              "id": "secao-de-processo-administrativo",
+              "name": "Seção de Processo Administrativo",
+              "children": [],
+              "_reg": true
+            }
+          ],
           "description": "Exercem as funções de Corregedoria-Geral.",
           "legalRef": "Art. 10 — Minuta LOB 2025",
-          "category": "Correição"
+          "category": "Correição",
+          "detailId": "corregedoria"
         }
       ],
       "stats": {
@@ -16661,7 +16806,7 @@
         "has_regimento": false,
         "has_nga": false,
         "total_chars": 75273,
-        "organs_mapped": 174,
+        "organs_mapped": 195,
         "curated": true
       }
     },

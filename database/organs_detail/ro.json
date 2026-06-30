@@ -951,6 +951,119 @@
         }
       ]
     },
+    "ai": {
+      "id": "ai",
+      "name": "Assessoria Institucional",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30, §1º, I",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Responsável pela ligação do Comandante-Geral junto aos Poderes, Entes e Instituições Permanentes, prestando assessoramento nas questões voltadas à Corporação. (Art. 30, §1º, I)"
+      ],
+      "cargos": [
+        {"cargo": "Assessor Institucional", "subordinadoA": "Comandante-Geral"}
+      ]
+    },
+    "ae": {
+      "id": "ae",
+      "name": "Assessoria Especial",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30, §1º, II",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Responsável por prestar assessoramento técnico, elaborar estudos e pareceres de questões de direito, de questões relacionadas à política de administração geral da Corporação, de exames de aspectos de legalidade dos atos que lhe forem submetidos, além de auxiliar a tomada de decisão de outros órgãos da Corporação, quando previamente autorizado pelo Comandante-Geral. (Art. 30, §1º, II)"
+      ],
+      "cargos": [
+        {"cargo": "Assessor Especial", "subordinadoA": "Comandante-Geral"}
+      ]
+    },
+    "al": {
+      "id": "al",
+      "name": "Assessoria Legislativa",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30, §1º, III",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Responsável por assessorar o Comandante-Geral quanto à análise de normas, diretrizes, portarias, determinações e demais documentos emanados pelo Comando-Geral, além de realizar os estudos e elaborar projetos de leis de interesse da Corporação e orientar ao Comandante-Geral quanto ao exato cumprimento de decisões judiciais, bem como preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado, para a defesa dos interesses do Estado em ações judiciais demandadas ao CBMRO. (Art. 30, §1º, III)"
+      ],
+      "cargos": [
+        {"cargo": "Assessor Legislativo", "subordinadoA": "Comandante-Geral"}
+      ]
+    },
+    "ap": {
+      "id": "ap",
+      "name": "Assessoria Parlamentar",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30, §1º, IV",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Responsável por assessorar o Comandante-Geral na Assembleia Legislativa, Congresso Nacional e demais órgãos e autoridades, no acompanhamento de matérias legislativas de interesse da Corporação. (Art. 30, §1º, IV)"
+      ],
+      "cargos": [
+        {"cargo": "Assessor Parlamentar", "subordinadoA": "Comandante-Geral"}
+      ]
+    },
+    "apge": {
+      "id": "apge",
+      "name": "Assessoria de Projetos e Gestão Estratégica",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30, §1º, V",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Responsável por prestar assessoramento técnico nos assuntos relacionados à Gestão Estratégica da Corporação, bem como elaborar, gerir, acompanhar e fiscalizar a execução do Plano Estratégico, dos Projetos e Convênios firmados entre o CBMRO e outros órgãos e Poderes. (Art. 30, §1º, V)"
+      ],
+      "cargos": [
+        {"cargo": "Assessor de Projetos e Gestão Estratégica", "subordinadoA": "Comandante-Geral"}
+      ]
+    },
+    "af": {
+      "id": "af",
+      "name": "Assessoria Fundacional",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 30, §1º, VI",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "A LOB (Art. 30, §1º, VI) cita a Assessoria Fundacional sem enumerar competências específicas. Aplica-se o caput do Art. 30: órgão subordinado ao Comandante-Geral que presta assessoramento administrativo e técnico, responsável pela realização de estudos, pesquisas e elaboração e controle de pareceres, mantendo o relacionamento entre o CBMRO e outros Poderes e Órgãos."
+      ],
+      "cargos": [
+        {"cargo": "Assessor Fundacional", "subordinadoA": "Comandante-Geral"}
+      ]
+    },
+    "aci": {
+      "id": "aci",
+      "name": "Assessoria de Controle Interno",
+      "category": "Assessoramento",
+      "subordinadoA": "Comandante-Geral (sujeita-se tecnicamente à Controladoria Geral do Estado)",
+      "legalRef": "Art. 30, §1º, VII",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 7º (Assessoramento)", "Art. 30 (Assessorias)"],
+      "atribuicoes": [
+        "Assegurar o alcance dos objetivos e metas estabelecidas pela instituição, otimizando os resultados de aplicação dos recursos públicos e dos serviços prestados à sociedade.",
+        "Atenuar os índices de intervenção dos sistemas de controles externos existentes, buscando a adequação legislativa e a melhoria contínua dos processos administrativos.",
+        "Assegurar a conformidade dos atos de gestão através do gerenciamento de riscos, promoção da integridade, da governança pública e da transparência ativa e passiva, com foco na eficiência, eficácia e efetividade da administração dos recursos públicos e na proteção do erário.",
+        "Adotar as medidas necessárias para prevenir, corrigir e combater a corrupção e fomentar a transparência na gestão.",
+        "Realizar atividades de ouvidoria do CBMRO. (Art. 30, §1º, VII)"
+      ],
+      "cargos": [
+        {
+          "cargo": "Assessor de Controle Interno",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial Superior da ativa do último posto da Corporação (QOEMBM). (Art. 30, §1º, VII)"
+        }
+      ]
+    },
     "gab-cg": {
       "id": "gab-cg",
       "name": "Gabinete do Comandante-Geral",
@@ -1003,6 +1116,88 @@
           "subordinadoA": "Subcomandante-Geral",
           "desdobramentos": ["Adjunto", "Secretaria-Geral", "Companhia de Comando e Serviços"],
           "atribuicoes": ["Responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, manutenção e segurança das instalações, controle de pessoal do Comando-Geral e das praças cedidas a outros órgãos."]
+        }
+      ]
+    },
+    "comissoes": {
+      "id": "comissoes",
+      "name": "Comissões",
+      "category": "Apoio ao Comando-Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 32",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 8º, §1º, II (Apoio ao Comando-Geral)", "Art. 32 (Comissões)"],
+      "atribuicoes": [
+        "Órgãos constituídos para a realização de atividades periódicas e temporárias previstas em regulamento da Corporação ou determinadas pelo Comandante-Geral, subordinadas a ele, para deliberarem sobre os assuntos de interesse institucional.",
+        "São comissões permanentes a Comissão de Promoção de Oficiais e a Comissão de Promoção de Praças, cuja composição e atribuições serão fixadas em regulamento próprio.",
+        "Poderão ser constituídas outras comissões, de caráter temporário e destinadas a estudos específicos, a critério do Comandante-Geral."
+      ],
+      "desdobramentos": ["Presidente", "Secretário", "Membros"],
+      "cargos": []
+    },
+    "conselhos": {
+      "id": "conselhos",
+      "name": "Conselhos",
+      "category": "Apoio ao Comando-Geral",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Arts. 33 a 35",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 8º, §1º, III (Apoio ao Comando-Geral)", "Arts. 33 a 35 (Conselhos)"],
+      "atribuicoes": [
+        "Conselhos de Justificação e Disciplina — órgãos constituídos para processar e julgar, no âmbito administrativo, os assuntos de interesse institucional, com composição e atribuições fixadas em legislação específica, subordinados ao Comandante-Geral. (Art. 33)",
+        "Conselhos de Ética e Disciplina Militares — composição, atribuições e funcionamento fixados em legislação específica, subordinados ao Comandante-Geral. (Art. 34)",
+        "Conselhos de Condecorações — órgãos constituídos com a competência de analisar e processar as propostas de concessão e cassação das condecorações submetidas à sua apreciação, realizando a propositura da concessão ou cassação ao Comandante-Geral, de acordo com a legislação específica. (Art. 35)"
+      ],
+      "desdobramentos": [
+        "Conselhos de Justificação e Disciplina",
+        "Conselhos de Ética e Disciplina Militares",
+        "Conselhos de Condecorações"
+      ],
+      "cargos": []
+    },
+    "gab-scg": {
+      "id": "gab-scg",
+      "name": "Gabinete do Subcomando-Geral",
+      "abbreviation": "GAB/SCG",
+      "category": "Apoio ao Subcomando-Geral",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 36",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 8º, §2º, I (Apoio ao Subcomando-Geral)", "Art. 36 (Gabinete do Subcomando-Geral)"],
+      "atribuicoes": [
+        "Supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Subcomandante-Geral."
+      ],
+      "desdobramentos": ["Chefia de Gabinete", "Secretaria", "Ajudância de Ordens"],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete do Subcomando-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "atribuicoes": [
+            "Supervisionar e executar as atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Subcomandante-Geral."
+          ]
+        }
+      ]
+    },
+    "gab-emg": {
+      "id": "gab-emg",
+      "name": "Gabinete do Estado-Maior Geral",
+      "abbreviation": "GAB/EMG",
+      "category": "Apoio ao Estado-Maior Geral",
+      "subordinadoA": "Chefe do Estado-Maior Geral",
+      "legalRef": "Art. 38",
+      "baseLegal": "Minuta de Projeto de Lei n.º 0059262482 (abril de 2025) — Organização Básica do CBMRO (em tramitação)",
+      "artigosDeOrigem": ["Art. 8º, §3º, I (Apoio ao Estado-Maior Geral)", "Art. 38 (Gabinete do Estado-Maior Geral)"],
+      "atribuicoes": [
+        "Supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Chefe do Estado-Maior Geral."
+      ],
+      "desdobramentos": ["Chefia de Gabinete", "Secretaria", "Ajudante de Ordens"],
+      "cargos": [
+        {
+          "cargo": "Chefe de Gabinete do Estado-Maior Geral",
+          "subordinadoA": "Chefe do Estado-Maior Geral",
+          "atribuicoes": [
+            "Supervisionar e executar as atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Chefe do Estado-Maior Geral."
+          ]
         }
       ]
     }
