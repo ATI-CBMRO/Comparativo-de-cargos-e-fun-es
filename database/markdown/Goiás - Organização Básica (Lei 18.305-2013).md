@@ -1,9 +1,11 @@
-# Goiás - Organização Básica (Lei nº 18.305/2013)
+# Goiás - Organização Básica (Lei 18.305-2013)
 
-*Fonte: Casa Civil do Estado de Goiás (legisla.casacivil.go.gov.br)*
-*LEI Nº 18.305, DE 30 DE DEZEMBRO DE 2013 — Dispõe sobre a estrutura organizacional do Corpo de Bombeiros Militar do Estado de Goiás*
+*Documento extraído de: `Goiás - Organização Básica (Lei 18.305-2013).pdf`*
+*Total de páginas: 8*
 
 ---
+
+## Página 1
 
 GOVERNO DO ESTADO DE GOIÁS
  
@@ -13,7 +15,7 @@ Dispõe sobre a estrutura organizacional do Corpo de Bombeiros Militar do Estado
 e dá outras providências.
  
  
-A ASSEMBLEIA LEGISLATIVA DO ESTADO DE GOIÁS, nos termos dos arts. 10 da 
+A ASSEMBLEIA LEGISLATIVA DO ESTADO DE GOIÁS, nos termos dos   arts. 10 da 
 Constituição Estadual
 , 4º, § 2º, e 7º, § 3º,
 ambos da 
@@ -30,7 +32,7 @@ Disposições Preliminares
 Art
  
 . 1º O Corpo de Bombeiros Militar do Estado de Goiás, instituição permanente e organizada com base na hierarquia e disciplina,
-destina-se a realizar serviços especíﬁcos de proteção e segurança pública no território do Estado de Goiás, nos termos desta Lei e conforme
+destina-se a realizar serviços especíﬁcos de  proteção e segurança pública no território do Estado de Goiás, nos termos desta Lei e conforme
 preceituam os arts. 42 e 144 da Constituição Federal e o art. 125 da 
 Constituição do Estado de Goiás
 . 
@@ -64,6 +66,11 @@ Geral da Corporação.
 CAPÍTULO II
 Da Estrutura Organizacional 
 Art. 4º O Corpo de Bombeiros Militar é composto dos seguintes órgãos: 
+
+---
+
+## Página 2
+
 I – órgãos de direção; 
 II – órgãos de apoio; 
 III – órgãos de execução. 
@@ -77,7 +84,7 @@ de interesse do Comando Geral do Corpo de Bombeiros Militar.
 Art. 6º Os órgãos de apoio são responsáveis pela cooperação em atividades preventivas e operacionais realizadas diretamente pela
 Corporação ou em que ela esteja envolvida. 
 Art. 7º Os órgãos de execução são responsáveis pela realização das atividades-ﬁm inerentes à Corporação, segundo diretrizes,
-ordens e planos emanados dos órgãos de direção. 
+ordens e planos emanados dos órgãos de direção.  
 SEÇÃO I
 Dos Órgãos de Direção 
 Art. 8º Os órgãos de direção são os seguintes: 
@@ -113,6 +120,11 @@ VII – autorizar o intercâmbio de bombeiros militares do Estado de Goiás com 
 como de militares da União e de outras Unidades da Federação com o Corpo de Bombeiros Militar do Estado de Goiás, para ﬁns de formação,
 especialização, aperfeiçoamento, habilitação e aprimoramento profissional e atuação em operações de bombeiros e humanitárias; 
  2
+
+---
+
+## Página 3
+
 VIII – editar normas relativas a identificação de pessoal e registro e porte de arma. 
 § 1º O Comandante-Geral poderá delegar ao Subcomandante-Geral, desde que expressamente, atribuições inerentes à
 administração geral e operacional da Corporação. 
@@ -180,12 +192,17 @@ software
 , programas e projetos institucionais. 
 Art. 20. À Secretaria-Geral competem a recepção, o protocolo, a elaboração e o controle de toda a documentação pertinente ao
 Comando Geral. 3
+
+---
+
+## Página 4
+
  
 SUBSEÇÃO II
 Dos Órgãos de Direção Regional 
 Art. 21. Os órgãos de direção regional, representados pelos Comandos Regionais, são organizados para a consecução de
 atividades de gestão operacional, cabendo-lhes a otimização na aplicação dos recursos operacionais disponíveis nas respectivas atribuições,
-conforme diretrizes e ordens definidas pelo órgão de direção geral. 
+conforme diretrizes e ordens definidas pelo órgão de direção geral.  
 § 1º O comando de órgãos de direção regional será exercido por coronéis do Quadro de Oﬁciais de Comando, possuidores do Curso
 Superior de Bombeiro Militar ou equivalente. 
 § 2º Na hipótese de inexistência de oﬁciais na Corporação que preencham os requisitos do parágrafo anterior, o comando de órgãos
@@ -199,7 +216,7 @@ SUBSEÇÃO III
 Dos Órgãos de Direção Setorial 
 Art. 23. Os órgãos de direção setorial são organizados fundamentalmente para a consecução de atividades de gestão administrativa,
 cabendo-lhes a otimização na aplicação dos recursos disponíveis dentro das respectivas atribuições, conforme diretrizes e ordens deﬁnidas pelo
-órgão de direção geral. 
+órgão de direção geral.  
 § 1º O Comando de órgãos de direção setorial será exercido por coronéis do Quadro de Oﬁciais de Comando, possuidores do Curso
 Superior de Bombeiro Militar ou equivalente. 
 § 2º Na hipótese de inexistência de oﬁciais na Corporação que preencham os requisitos do parágrafo anterior, o comando de órgãos
@@ -231,6 +248,11 @@ posto de Coronel;
 XVII – exercer as atividades de ouvidoria no âmbito da Corporação. 
 Art. 25. Compete ao Comando de Apoio Logístico: 
  4
+
+---
+
+## Página 5
+
 I – planejar e controlar as atividades relacionadas às necessidades de suprimento e manutenção da Corporação, bem como o
 controle patrimonial, de acordo com premissas definidas pelo Comando Geral; 
 II – elaborar normas internas sobre especiﬁcações e solicitações de materiais e serviços, bem como aquisição, recebimento,
@@ -238,7 +260,7 @@ armazenamento, distribuição, manutenção, ﬁscalização e controle dos mate
 submeter à apreciação do Comando Geral para aprovação; 
 III – executar atos pertinentes a licitações e contratos, excetuando-se aqueles de competência exclusiva do ordenador de despesas,
 quando tratar-se de recursos do Fundo Especial de Reaparelhamento e Modernização do Corpo de Bombeiros Militar do Estado de Goiás –
-FUNEBOM–, bem como acompanhar processos até o cumprimento integral das obrigações contratuais; 
+FUNEBOM–, bem como acompanhar processos até o cumprimento integral das obrigações contratuais;  
 IV – realizar gestão junto aos órgãos competentes visando celeridade no andamento processual de licitações e contratos. 
 Art. 26. Compete ao Comando de Gestão e Finanças: 
 I – planejar, controlar e executar as atividades relacionadas com pessoal; 
@@ -249,7 +271,7 @@ V – planejar e fiscalizar as atividades relacionadas a segurança e medicina d
 VI – elaborar boletins gerais. 
 Art. 27. Compete ao Comando de Operações de Defesa Civil: 
 I – elaborar planos de gestão operacional nos assuntos relacionados a defesa civil; 
-II – coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil; 
+II – coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil;  
 III – realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução; 
 IV – planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco; 
 V – elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras deﬁnidas em
@@ -275,23 +297,28 @@ Art. 30. Os órgãos de apoio são destinados à execução de atividades-meio, 
 atingirem suas finalidades. 
 Art. 31. Compete à Academia Bombeiro Militar: 
 I – executar as atividades de ensino na Corporação, envolvendo formação, aprimoramento técnico-proﬁssional, aperfeiçoamento e
-especialização dos bombeiros militares; 
+especialização dos bombeiros militares;  
 II – implementar a doutrina institucional de ensino; 
 III – apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja
 envolvida. 
  5
+
+---
+
+## Página 6
+
 Art. 32. Compete ao Comando de Saúde: 
 I – planejar, coordenar, orientar, controlar e avaliar as atividades realizadas pelos serviços médico e odontológico; 
 II – executar as ações relacionadas à saúde física e mental dos militares da Corporação; 
 III – apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja
-envolvida. 
+envolvida.   
 Art. 33. Compete ao Centro de Manutenção: 
 I – executar a manutenção de viaturas e equipamentos motomecanizados; 
 II – controlar e ﬁscalizar a manutenção e o reparo de viaturas e equipamentos quando realizados por terceiros mediante celebração
 de contratos; 
 III – gerir os sistemas de controle de viaturas e combustível e controlar a documentação da frota; 
 IV – apoiar a execução de atividades preventivas e operacionais realizadas diretamente pela Corporação ou em que ela esteja
-envolvida. 
+envolvida.   
 SEÇÃO III
 Dos Órgãos de Execução 
 Art. 34. Os órgãos de execução, também denominados unidades operacionais, são responsáveis pela realização de atividades de
@@ -300,7 +327,7 @@ Geral.
 § 1º Os órgãos de execução compreendem: 
 I – Centro de Operações Aéreas; 
 II – Centro Operacional de Bombeiros; 
-III – Companhia de Segurança Aeroportuária; 
+III – Companhia de Segurança Aeroportuária;  
 IV – Unidades Operacionais. 
 § 2º O Centro de Operações Aéreas é responsável pela execução de operações aéreas relacionadas à missão constitucional da
 Corporação. 
@@ -329,8 +356,13 @@ Disposições Finais
 Art. 36. O Boletim Geral Eletrônico é o documento oﬁcial de publicação de atos administrativos praticados no âmbito da Instituição
 pelos titulares dos órgãos de direção, apoio e execução. 
  6
+
+---
+
+## Página 7
+
 Parágrafo único. Os atos de natureza sigilosa serão publicados em Boletim Geral Reservado, cujo acesso é restrito aos oﬁciais da
-Corporação. 
+Corporação.  
 Art. 37. Na hipótese de inexistência de lei especíﬁca referente ao Corpo de Bombeiros Militar do Estado de Goiás em determinada
 matéria, poderão ser aplicadas, no que couber, leis federais e estaduais pertinentes. 
 Art. 38. A Instituição das unidades integrantes dos incisos III a VIII do art. 10 desta Lei não implica a criação de cargos em comissão
@@ -338,16 +370,16 @@ ou de funções comissionadas.
 Art. 39. As missões operacionais e demais atos de serviço da Corporação serão executados por meio de prontidões operacionais
 ordinárias e extraordinárias. 
 § 1º Entende-se por prontidão operacional a capacidade de pronto emprego eﬁciente dos bombeiros militares para o exercício das
-missões constitucionais e legais da Corporação. 
+missões constitucionais e legais da Corporação.  
 § 2º A prontidão operacional ordinária refere-se às escalas de serviço de caráter ordinário, conforme normas a serem baixadas pelo
-Comandante-Geral. 
+Comandante-Geral.  
 § 3º A prontidão operacional extraordinária refere-se às necessidades de convocação de efetivo para a prestação de serviços
 operacionais extraordinários e de atendimento a missões de caráter excepcional, visando proporcionar o necessário suporte às demandas
 operacionais da Corporação. 
 § 4º A convocação da prontidão operacional extraordinária dar-se-á a qualquer momento por ato dos Comandantes dos órgãos de
 direção, apoio e execução. 
 Art. 40. As atividades relacionadas a gestão organizacional, manutenção de viaturas, embarcações, aeronaves e equipamentos,
-aquartelamento e atividades relacionadas ao cumprimento das atribuições previstas nesta Lei constituem funções de caráter bombeiro militar. 
+aquartelamento e atividades relacionadas ao cumprimento das atribuições previstas nesta Lei constituem funções de caráter bombeiro militar.  
 Art. 41. Esta Lei entra em vigor na data de sua publicação.
  
  
@@ -366,6 +398,11 @@ Este texto não substitui o publicado no Suplemento do D.O. de 31-12-2013
  
  
  7
+
+---
+
+## Página 8
+
 Órgãos
 Relacionados
 Assembleia Legislativa do Estado de Goiás - ALEGO
@@ -381,3 +418,6 @@ Categorias
 Corpo de Bombeiros Militar
 Segurança Pública
  8
+
+---
+

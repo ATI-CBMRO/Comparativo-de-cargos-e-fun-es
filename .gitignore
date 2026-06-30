@@ -31,7 +31,9 @@ __pycache__/
 # Rascunhos visuais do brainstorming (Superpowers)
 .superpowers/
 
-# Segredos do Firebase (NUNCA versionar chaves/credenciais)
-.env
-.env.local
+# Vínculo do projeto Vercel (CLI)
+.vercel
+
+# Segredos do Firebase / chaves (NUNCA versionar)
+.env*
 serviceAccountKey.json

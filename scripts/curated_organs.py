@@ -86,7 +86,7 @@ CURATED_ORGANS = {
             _n("gbm","Grupo de Bombeiros Militar","GBM"),
         ]),
     ]),
-    _n("correg","Órgãos de Correição", cat="Correição",
+    _n("corregedoria","Órgãos de Correição", cat="Correição",
        desc="Exercem as funções de Corregedoria-Geral.",
        ref="Art. 10 — Minuta LOB 2025"),
 ],

@@ -22,7 +22,7 @@ python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> dat
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json (aba "DPO × COT")
-python scripts/build_minuta_comparison.py    # organs_detail/*.json + comparativo_dpo_cot.json + minuta_enrichment.py -> database/comparativo_minuta.json (página /comparar "Subsídio à Minuta")
+python scripts/build_minuta_comparison.py    # organs_detail/*.json + comparativo_dpo_cot.json + minuta_enrichment.py + lob_enrichment.py -> database/comparativo_minuta.json (página /comparar "Subsídio à Minuta")
 python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json (wizard /minuta + commandChart p/ /minuta-diagramas)
 ```
 
@@ -85,7 +85,8 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   Regras em `@media (min-width: 901px) .app-shell.nav-collapsed` no `index.css`.
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
   `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
-  `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams).
+  `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams),
+  `/minuta/revisao` (MinutaRevisao) e `/minuta/deliberacao` (MinutaDeliberacao).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
@@ -93,14 +94,23 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   Cargos" e "DPO × COT" foram removidas junto com seus componentes.
 - `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
   `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
-  espelha os 12 órgãos da minuta (11 da LOB + Guarnição), comparando RO × estados em matriz
-  (campos nas linhas, estados nas colunas, RO sticky), com proveniência curado/automático por
-  estado (badge). A lista "Órgãos da minuta" na barra lateral segue a ORDEM e a PROFUNDIDADE
-  hierárquica do organograma (DFS da cadeia de comando), indentada por `depth` — esse campo é
-  gravado no JSON por `build_minuta_comparison.py` via `build_minuta_structure.command_order`,
-  mantendo a lista em sincronia com o `commandChart`. Só entram estados com dado correspondente;
-  busca filtra a matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por
-  região/similaridade.
+  espelha os 26 órgãos da LOB + Guarnição (27 no total), comparando RO × estados em **3 colunas**:
+  CBMRO (referência), **LOB do estado** (`state.lobOrgans`/`lobProvenance`) e **LOB + RI**
+  (`state.organs`/`provenance`, a estrutura enriquecida com as demais fontes), com proveniência
+  curado/automático por coluna (badge). A coluna LOB pura é alimentada por `scripts/lob_enrichment.py`
+  (`LOB_ENRICHMENT[(organ_key, state_id)]`, curadoria verbatim — finalidade/caput de 1 frase +
+  incisos — das 27 Leis de Organização Básica; cobre os 26 órgãos × 26 estados não-RO; documentada
+  em `docs/ENRIQUECIMENTO_MINUTA.md`, seção "Camada LOB"). A coluna LOB + RI é a UNIÃO dessa camada
+  LOB com a camada curada de `comparativo_dpo_cot.json` (DPO/COT) + as competências verbatim de
+  `minuta_enrichment.py` (`ENRICHMENT_ORGAN`, pivotadas por fonte; a curadoria dos 15 órgãos da
+  Frente 2 — Direção Geral/Setorial/Colegiada, Assessoramento/Apoio e Correição — segue documentada
+  em `docs/ENRIQUECIMENTO_MINUTA.md`) + a Guarnição (CBMSE); a camada automática casa por
+  palavra-chave (`AUTO_MATCH_KEYWORDS` em `minuta_comparison_lib.py`) quando não há curadoria. A
+  lista "Órgãos da minuta" na barra lateral segue a ORDEM e a PROFUNDIDADE hierárquica do
+  organograma (DFS da cadeia de comando), indentada por `depth` — esse campo é gravado no JSON
+  por `build_minuta_comparison.py` via `build_minuta_structure.command_order`, mantendo a lista
+  em sincronia com o `commandChart`. Só entram estados com dado correspondente; busca filtra a
+  matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
 - Componentes-chave: `Organogram.jsx` (árvore expansível/colapsável) e `OrgDetail.jsx`
   (painel lateral de detalhamento). `CargoComparator.jsx` e `OrgaosOperacionaisComparator.jsx`
   foram removidos junto com as abas do Dashboard.
@@ -116,14 +126,21 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Ícones: `lucide-react`.
 
 ### Wizard de Minuta de Regimento Interno (`/minuta`)
-Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional do CBMRO
-(do Comando-Geral à menor fração), em vez de apenas comparar o que outros estados fizeram.
+Gera, em `.docx` client-side, uma minuta hierárquica única de RI do CBMRO cobrindo toda a
+estrutura da LOB (do Comando-Geral à menor fração), em vez de apenas comparar o que outros
+estados fizeram.
 
 - `scripts/build_minuta_structure.py` lê **diretamente** `database/organs_detail/ro.json`
   (não mais o `comparativo_dpo_cot.json`) e percorre os órgãos na ordem de subordinação do
-  RO: Preliminares + Estrutura + 11 órgãos (dpo, doe, cot, crbm, bbm, cibm, cat, bbs, bifea,
-  boa, gbm) + capítulo da **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
+  RO: Preliminares + Estrutura + os **26 órgãos da LOB** (Direção Geral/Colegiada/Setorial/
+  Regional, Assessoramento, Apoio ao Comando-Geral/Subcomando-Geral, Execução Ordinária/
+  Especializada Terrestre/Aérea/Conveniada Municipal, Correição — agrupados em
+  `build_estrutura_chapter()` via `CATEGORY_LABELS`/`APOIO_LABELS`) + capítulo da
+  **Guarnição de Serviço Operacional** (menor fração) + Finais — gerando
   `database/minuta_structure.json` (`{title, chapters:[{kind: prose|incisos|organ, sections:[...]}]}`).
+  `cg` (Comando-Geral) é a raiz real da árvore de comando (`commandChart`); `find_parent`
+  resolve `subordinadoA` por sigla de órgão ou, via `ROLE_TO_ORGAN`, por nome de cargo
+  (ex.: "Subcomandante-Geral" → órgão `cg`).
 - `scripts/minuta_enrichment.py` traz o enriquecimento curado VERBATIM de outros CBMs,
   rotulado por fonte: `ENRICHMENT` (por cargo/função — hoje só CBMAL) e `ENRICHMENT_ORGAN`
   (por órgão/competência — AL, MT, PR, SC, DF, SP, BA, CE, PE, ES, PA) mais
@@ -142,16 +159,19 @@ Gera, em `.docx` client-side, uma minuta hierárquica única de RI operacional d
 
 ### Diagramas da Minuta (`/minuta-diagramas`)
 Página que apresenta dois diagramas da minuta, lendo o mesmo `minuta_structure.json`:
-- **Organograma** (`src/components/MinutaOrgChart.jsx`) — cadeia de comando dos 12 órgãos,
-  caixas-e-linhas em CSS puro (sem lib), a partir do campo `commandChart` gerado por
-  `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`; GBM como ramo
-  próprio sob o CRBM — Execução Conveniada Municipal — via `COMMAND_PARENT_OVERRIDE`, e a
+- **Organograma** (`src/components/MinutaOrgChart.jsx`) — cadeia de comando dos 26 órgãos da
+  LOB + Guarnição, caixas-e-linhas em CSS puro (sem lib), a partir do campo `commandChart`
+  gerado por `build_minuta_structure.py` (árvore derivada de `subordinadoA` no `ro.json`, com
+  `cg` — Comando-Geral — como raiz REAL, não mais sintética, quando há uma única raiz na
+  cadeia; só cai numa raiz sintética/placeholder para 0 ou 2+ raízes desconexas; GBM como
+  ramo próprio sob o CRBM — Execução Conveniada Municipal — via `COMMAND_PARENT_OVERRIDE`, e a
   Guarnição de Serviço Operacional como folha da cadeia de frações do BBM: BBM → Companhia
   (Cia BM) → Pelotão (Pel BM) → Guarnição, via `BBM_FRACTION_CHAIN`, com Cia/Pel como nós
   estruturais não-clicáveis). A árvore é **dinâmica**: cada nó com filhos tem botão −/+
-  (`.moc-toggle`) que expande/recolhe a subárvore (estado local por nó; raiz sempre aberta;
-  inicia recolhida no 1º nível). Controles "Expandir/Recolher tudo" remontam a árvore via
-  `key`+`defaultExpanded`; a impressão expande tudo antes do `window.print()`.
+  (`.moc-toggle`) que expande/recolhe a subárvore (estado local por nó; a raiz — real ou
+  sintética — sempre aberta via a prop `isRoot`; demais nós iniciam recolhidos no 1º nível).
+  Controles "Expandir/Recolher tudo" remontam a árvore via `key`+`defaultExpanded`; a
+  impressão expande tudo antes do `window.print()`.
 - **Mapa mental** (`src/components/MinutaMindMap.jsx`) — grade de cartões, um por capítulo.
 Ambos clicáveis: abrem um painel lateral com as seções/competências do capítulo. Exporta via
 `window.print()` (`@media print`, Paisagem), ocultando navegação/controles/painel.
@@ -159,6 +179,37 @@ Ambos clicáveis: abrem um painel lateral com as seções/competências do capí
 A lista "Órgãos da minuta" do `/comparar` reusa o mesmo padrão: `MinutaComparator.jsx`
 reconstrói a árvore a partir do `depth` (`buildOrganTree`) e renderiza `OrgTreeNode` com
 botão −/+ (`.oc-org-toggle`), iniciando recolhida no 1º nível; clicar no item seleciona o órgão.
+
+### Revisão e Deliberação colaborativa do CONDEG (`/minuta/revisao` e `/minuta/deliberacao`)
+Fluxo colaborativo do CONDEG sobre a minuta de RI, em duas fases, lendo o mesmo
+`minuta_structure.json`. **Protótipo de frontend**: login/senha e banco de dados estão sendo
+feitos em **projeto APARTADO** — aqui tudo roda sobre dados simulados, por uma camada de dados
+ISOLADA e trocável.
+
+- **Camada de dados** (`src/lib/suggestionsStore.js`): `createSuggestionsStore(storage)`, API
+  assíncrona (Promise) sobre `localStorage`, com `MOCK_USERS` (coronéis fictícios) e a "sessão"
+  simulada. Quando o backend real existir, criar um `apiBackend` com a MESMA assinatura (fetch +
+  sessão autenticada) e trocar a instância exportada — as telas não mudam.
+- **Fase 1 — `/minuta/revisao`** (`src/pages/MinutaRevisao.jsx`): 3 colunas — trilha de capítulos
+  (`ChapterRail.jsx`, filtro + contadores) · documento com marcadores · painel lateral
+  (`SuggestionPanel.jsx` + `SuggestionCard.jsx`, "Antes/Depois"). Coronéis propõem incluir/editar/
+  remover incisos e seções (o compositor pré-preenche o texto vigente ao editar); todos veem as
+  sugestões de todos, com autoria + Apoiar/Comentar. Trilha e painel ficam `sticky` (abaixo do
+  header fixo) enquanto só o documento central rola.
+- **Fase 2 — `/minuta/deliberacao`** (`src/pages/MinutaDeliberacao.jsx`): lista de pendências
+  (itens agrupados por `itemKeyOf` = `editId#incisoIndex`) → fila de revisão guiada (Aceitar/
+  Rejeitar, texto final por item, "Aprovar e avançar") → `.docx` consolidado.
+- **Alvos/consolidação/export**: `src/lib/minutaTargets.js` (`buildTargets`, deriva
+  capítulo→seção→inciso de `buildArticles`), `src/lib/minutaConsolidation.js`
+  (`applyResolutionsToEdits` — a minuta final usa o **texto final APROVADO** por item, não só as
+  sugestões aceitas) e `src/lib/minutaDocx.js` (`buildMinutaBlob`, extraído do `MinutaWizard` e
+  reusado pela Fase 2). Identidade simulada em `src/components/IdentityBar.jsx`.
+- **Lógica pura testada** com `node --test`: `suggestionsStore.test.js`, `minutaTargets.test.js`,
+  `minutaConsolidation.test.js`. Spec/plano em
+  `docs/superpowers/{specs,plans}/2026-06-29-minuta-revisao-colaborativa*`.
+- Limites intencionais do protótipo: nova-seção e resoluções de seção/prose não entram no `.docx`
+  gerado (embora contem no progresso); a colaboração "em tempo real" é simulada trocando de coronel
+  no mesmo navegador (sem sync entre máquinas).
 
 ### Servir dados: middleware (dev) + cópia no build (produção)
 `vite.config.js` registra DOIS plugins customizados:

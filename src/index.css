@@ -908,6 +908,11 @@ img { display: block; max-width: 100%; }
 .oc-pair-col-label { width: 170px; }
 .oc-pair-col-ro    { width: calc((100% - 170px) / 2); }
 .oc-pair-col-st    { width: calc((100% - 170px) / 2); }
+/* Modo 3 colunas de conteúdo (RO · LOB · compilada): divide o restante em 3 */
+.oc-pair-table-3 { min-width: 880px; }
+.oc-pair-table-3 .oc-pair-col-ro,
+.oc-pair-table-3 .oc-pair-col-lob,
+.oc-pair-table-3 .oc-pair-col-st { width: calc((100% - 170px) / 3); }
 
 /* Cabeçalho sticky */
 .oc-pair-table thead th {
@@ -926,6 +931,9 @@ img { display: block; max-width: 100%; }
 }
 .oc-pair-th-st {
   background: #f7f8fa; border-left: 2px solid var(--border);
+}
+.oc-pair-th-lob {
+  background: #eef4ec; border-left: 2px solid var(--accent-green, #16a34a);
 }
 
 /* Células do corpo */
@@ -951,6 +959,15 @@ img { display: block; max-width: 100%; }
 .oc-pair-td-st {
   background: #fff !important;
   border-left: 2px solid #e4e7ef;
+}
+.oc-pair-td-lob {
+  background: #f7fbf6 !important;
+  border-left: 2px solid rgba(22,163,74,0.25);
+}
+.oc-col-kind {
+  font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--text-muted); border: 1px solid var(--border-card); border-radius: 4px;
+  padding: 0 5px;
 }
 
 /* ── Correção do sticky overlap: background nas celulas td ── */
@@ -1337,9 +1354,13 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
     -webkit-overflow-scrolling: touch;
   }
   .oc-pair-table { min-width: 520px; }
+  .oc-pair-table-3 { min-width: 760px; }
   .oc-pair-col-label { width: 116px; }
   .oc-pair-col-ro,
   .oc-pair-col-st { width: calc((100% - 116px) / 2); }
+  .oc-pair-table-3 .oc-pair-col-ro,
+  .oc-pair-table-3 .oc-pair-col-lob,
+  .oc-pair-table-3 .oc-pair-col-st { width: calc((100% - 116px) / 3); }
   /* sem cabeçalho fixo no mobile (tabela curta; evita conflito com o scroll) */
   .oc-pair-table thead th { position: static; }
   /* rótulos longos (SUBORDINAÇÃO, DESDOBRAMENTOS) quebram em vez de
@@ -1397,6 +1418,98 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   }
   .app-header-rule { display: none; }
   .app-header-sub { display: none; }
+}
+
+/* =========================================================
+   Revisão da Minuta (/minuta/revisao) — layout mobile.
+   As 3 colunas (inline flex) viram uma pilha; a trilha de
+   capítulos rola dentro de uma altura limitada; e o painel
+   de sugestões vira FOLHA cobrindo a tela ao selecionar um
+   inciso (mesmo padrão do .org-detail-panel do StateDetail).
+   Regras com !important pois o layout usa estilos inline.
+   ========================================================= */
+@media (max-width: 900px) {
+  .rev-layout {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  /* Trilha de capítulos: largura total, estática, altura limitada com rolagem */
+  .rev-rail {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    position: static !important;
+    top: auto !important;
+    max-height: 42vh !important;
+  }
+
+  /* Documento ocupa a largura toda */
+  .rev-doc { flex: 1 1 auto !important; width: 100% !important; }
+
+  /* Sem inciso selecionado: o placeholder não ocupa espaço no mobile */
+  .rev-panel-empty { display: none !important; }
+
+  /* Inciso selecionado: o painel cobre a tela (folha) */
+  .rev-panel-active {
+    position: fixed !important;
+    inset: var(--header-h) 0 0 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: calc(100vh - var(--header-h)) !important;
+    max-height: none !important;
+    z-index: 90 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 -8px 24px rgba(10, 16, 40, 0.18) !important;
+  }
+}
+
+/* =========================================================
+   Deliberação do CONDEG (/minuta/deliberacao) — layout mobile.
+   Mesmo tratamento da Revisão: a lista de itens vai para o
+   topo (rolável) e o card de deliberação vira FOLHA cobrindo
+   a tela ao selecionar um item, com botão "‹ Voltar à lista"
+   (só no mobile) para reabrir a lista.
+   ========================================================= */
+@media (max-width: 900px) {
+  /* Barra de progresso + gerar: quebra para não espremer no celular */
+  .del-toolbar { flex-wrap: wrap !important; }
+  .del-progress { flex: 1 1 100% !important; }
+
+  .del-layout {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  /* Lista de itens: largura total, altura limitada com rolagem */
+  .del-list {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    max-height: 42vh !important;
+    overflow: auto !important;
+  }
+
+  .del-pane { flex: 1 1 auto !important; width: 100% !important; }
+
+  /* Sem item selecionado: placeholder não ocupa espaço no mobile */
+  .del-placeholder { display: none !important; }
+
+  /* Item selecionado: o card cobre a tela (folha) */
+  .del-sheet {
+    position: fixed !important;
+    inset: var(--header-h) 0 0 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: calc(100vh - var(--header-h)) !important;
+    overflow: auto !important;
+    z-index: 90 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 -8px 24px rgba(10, 16, 40, 0.18) !important;
+  }
+
+  /* Botão de voltar só aparece no modo folha (mobile) */
+  .del-sheet-back { display: inline-flex !important; }
 }
 
 /* Telas estreitas (celulares): empilha mais e reduz respiros */
@@ -2029,7 +2142,9 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   .print-only-title { display: block !important; font-family: 'Outfit', sans-serif;
     font-size: 15pt; font-weight: 800; text-align: center; margin: 0 0 12px; color: #000; }
   .oc-pair-table { font-size: 9pt; }
+  .oc-pair-table-3 { font-size: 8pt; }
   .oc-pair-table td, .oc-pair-table th { padding: 8px 10px; }
+  .oc-pair-table-3 td, .oc-pair-table-3 th { padding: 6px 7px; }
   .page-body { display: block !important; }
 }
 
