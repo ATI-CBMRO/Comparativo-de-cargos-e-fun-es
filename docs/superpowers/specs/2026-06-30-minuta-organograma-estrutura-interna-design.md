@@ -50,12 +50,28 @@ Depois de montar a árvore de órgãos pela subordinação (loop existente que p
 estrutural:
 
 ```python
+def truncate_desdobramento_label(desd: str) -> str:
+    """Corta no separador ' — '/' – ' de topo, ignorando dash DENTRO de parênteses
+    (ex.: 'Diretor (QCOBM — formação em Medicina...)' deve permanecer intacto —
+    o dash ali qualifica o requisito do cargo, não separa um nome de unidade de
+    sua composição interna)."""
+    depth = 0
+    for i, ch in enumerate(desd):
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        elif ch in "—–" and depth == 0:
+            return desd[:i].strip()
+    return desd.strip()
+
+
 for k, n in nodes.items():
     if n["children"]:
         continue  # já tem filhos de órgão (DPO, DOE, COT, CRBM, BBM, BBS, BIFEA, BOA)
     desdobramentos = (organs.get(k) or {}).get("desdobramentos") or []
     for desd in desdobramentos:
-        label = re.split(r"\s+[—–]\s+", desd, maxsplit=1)[0].strip()
+        label = truncate_desdobramento_label(desd)
         n["children"].append({
             "organKey": None, "sigla": "", "label": label,
             "structural": True, "isInternal": True,
@@ -65,9 +81,11 @@ for k, n in nodes.items():
 
 - `isInternal: True` distingue esses nós dos estruturais já existentes na cadeia de
   frações do BBM (Cia BM / Pel BM), que continuam sem essa flag.
-- O truncamento usa regex (`—` em dash ou `–` en dash, já usados no `ro.json`) para
-  extrair só o nome da unidade, descartando a enumeração de cargos/seções internas
-  que vem depois do separador.
+- O truncamento ignora profundidade de parênteses para não cortar requisitos como
+  "Diretor (QCOBM — formação em Medicina, Enfermagem...)" pela metade — só corta no
+  separador " — "/" – " quando ele está **fora** de parênteses. Validado contra os
+  107 `desdobramentos` dos 21 órgãos-folha candidatos do `ro.json` (nenhum corte
+  incorreto).
 - Roda **antes** do bloco que processa `guarnicao`/`bbm` (que já lida com `nodes["bbm"]`
   separadamente — `bbm` não fica "sem filhos" depois desse bloco rodar primeiro, então a
   ordem importa: o loop de `desdobramentos` deve rodar **antes** de popular a cadeia
