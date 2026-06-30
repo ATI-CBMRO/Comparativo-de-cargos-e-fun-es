@@ -258,16 +258,18 @@ LOB_ENRICHMENT = {
     },
     ("dpo", "al"): {
         "finalidade": (
-            "A Diretoria de Planejamento e Orçamento é o órgão central do sistema de "
-            "Planejamento Estratégico e Orçamentário do Corpo de Bombeiros Militar, "
-            "competindo-lhe a coordenação do planejamento, a orientação técnica, o "
-            "monitoramento, o controle e a fiscalização das atividades relativas ao "
-            "planejamento estratégico, bem como a elaboração e execução do orçamento da "
-            "Corporação"
+            "Comando Operacional de Bombeiros é a denominação genérica dada a Organização "
+            "Bombeiro-Militar de mais alto escalão do sistema operacional, subordinado ao "
+            "Subcomandante Geral, que tem a seu cargo o planejamento estratégico, a "
+            "coordenação e o emprego das Unidades Operacionais da Corporação que lhe forem "
+            "subordinadas, com a finalidade de executar as missões de prevenção e extinção "
+            "de incêndios, de resgate, busca e salvamento, de atendimento aos traumas e "
+            "emergências pré-hospitalares e de defesa civil, além de outras, em uma "
+            "determinada área operacional"
         ),
         "competencias": [],
-        "source": "cf. CBMAL, LOB (Lei nº 7.444/2012), Art. 19",
-        "organName": "Diretoria de Planejamento e Orçamento", "abbr": "",
+        "source": "cf. CBMAL, LOB (Lei nº 7.444/2012), Art. 30",
+        "organName": "Comando Operacional de Bombeiros", "abbr": "",
     },
     ("deei", "al"): {
         "finalidade": (
@@ -2389,17 +2391,10 @@ LOB_ENRICHMENT = {
         "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 27",
         "organName": "Alto Comando", "abbr": "AC",
     },
-    ("dpo", "pb"): {
-        "finalidade": (
-            "O Estado Maior Geral – EMG – é o órgão de assessoramento estratégico do Gabinete "
-            "do Comando Geral, responsável pela assessoria perante o Comando Geral no "
-            "planejamento e na gestão estratégica para o desenvolvimento e cumprimento das "
-            "missões institucionais"
-        ),
-        "competencias": [],
-        "source": "cf. CBMPB, LOB (LC nº 191/2024), Art. 28",
-        "organName": "Estado Maior Geral", "abbr": "EMG",
-    },
+    # PB não possui órgão de direção operacional equivalente ao DPO do CBMRO;
+    # o EMG é assessoramento estratégico (não comando operacional), e as OBMs são
+    # órgãos de execução sem nível de direção operacional intermediário na LOB.
+
     ("corregedoria", "pb"): {
         "finalidade": (
             "A Corregedoria do Corpo de Bombeiros Militar – CORREG – órgão auxiliar do Sistema "
@@ -3640,14 +3635,15 @@ LOB_ENRICHMENT = {
     },
     ("dpo", "se"): {
         "finalidade": (
-            "A Diretoria de Planejamento - DPLAN é responsável pela gestão, planejamento das "
-            "políticas públicas e estratégias institucionais, orientação e execução da "
-            "programação orçamentária, consolidação dos planos, programas e projetos e "
-            "acompanhamento e avaliação das ações governamentais, no âmbito do CBMSE"
+            "A Diretoria Operacional - DOP é responsável pela gestão, planejamento, "
+            "coordenação, execução, fiscalização e controle das atividades operacionais e "
+            "na execução das atividades de proteção e defesa civil, sendo responsável pela "
+            "coordenação e emprego dos Comandos Regionais e Unidades Operacionais, que lhes "
+            "são subordinadas"
         ),
         "competencias": [],
-        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 27",
-        "organName": "Diretoria de Planejamento", "abbr": "DPLAN",
+        "source": "cf. CBMSE, LOB (Lei nº 8.979/2022), Art. 30",
+        "organName": "Diretoria Operacional", "abbr": "DOP",
     },
     ("cot", "se"): {
         "finalidade": (
