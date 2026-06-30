@@ -60,11 +60,13 @@ proposta).
 Verificado: `build_organs_detail.py` e os `detail_data_g*.py`/`detail_cargos_g*.py`
 **não** têm entrada "ro" — editar o JSON diretamente é seguro.
 
-1. **Desmembrar** o órgão combinado `assessorias` em 7 órgãos individuais, com
-   ids casando os nós da árvore (`ai, ae, al, ap, apge, af, aci`),
-   `category: "Assessoramento"`, `subordinadoA: "Comandante-Geral"`,
-   `artigosDeOrigem: ["Art. 7º", "Art. 30"]`. Competência verbatim do **Art. 30
-   §1º**:
+1. **Adicionar** 7 órgãos de assessoria individuais, com ids casando os nós da
+   árvore (`ai, ae, al, ap, apge, af, aci`), `category: "Assessoramento"`,
+   `subordinadoA: "Comandante-Geral"`, `artigosDeOrigem: ["Art. 7º", "Art. 30"]`.
+   **Manter** o órgão combinado `assessorias` (hoje dormente no organograma, mas
+   consumido por id exato pela coluna RO do `/comparar` —
+   `build_reference("assessorias")` em `build_minuta_comparison.py:114-119`).
+   Competência verbatim do **Art. 30 §1º** para os 7 individuais:
    - `ai` Assessoria Institucional, `ae` Especial, `al` Legislativa,
      `ap` Parlamentar, `apge` de Projetos e Gestão Estratégica,
      `aci` de Controle Interno → texto integral do inciso correspondente.
@@ -110,18 +112,22 @@ Correição em `curated_organs.py` → `build_states_data.py`
 
 ## Riscos e verificação
 
-### Risco principal — não regredir o `/comparar`
-No `/comparar`, o organ_key `assessorias` casa **por palavra-chave** `"assessoria"`
-(`scripts/minuta_comparison_lib.py:64`), não pelo id do `ro.json`. Desmembrar
-pode mudar a coluna RO daquela linha.
+### Risco principal — não regredir o `/comparar` (mitigado por construção)
+A coluna RO do `/comparar` é montada por `build_reference(organ_key, ro_organs)`
+com **busca por id exato** (`ro_organs[organ_key]`,
+`build_minuta_comparison.py:114-119`); o `auto_match` por palavra-chave **não**
+roda para o RO (só estados não-curados, `build_minuta_comparison.py:205-214`). E
+`build_dpo_cot_comparison.py` usa mapas explícitos `DPO_MAP`/`COT_MAP`, que nem
+tocam `assessorias`.
 
-**Mitigação / critério de pronto:** regenerar
+Portanto, **mantendo** o órgão combinado `assessorias` (e apenas *adicionando* os
+7 individuais + 4 de apoio, cujos ids não são organ_keys do comparador), a saída
+do `/comparar` fica inalterada por construção.
+
+**Critério de pronto (guarda de regressão):** snapshot de `comparativo_minuta.json`
+e `comparativo_dpo_cot.json` antes; regenerar
 `python scripts/build_dpo_cot_comparison.py` e
-`python scripts/build_minuta_comparison.py` e **diffar** os JSON gerados
-(`comparativo_dpo_cot.json`, `comparativo_minuta.json`). A linha das assessorias
-do RO deve ficar **idêntica**. Se mudar, manter também um órgão agregado
-`assessorias` no `ro.json` (além dos 7) ou ajustar o matcher para preservar a
-saída.
+`python scripts/build_minuta_comparison.py` depois; **diff vazio** em ambos.
 
 ### Fidelidade ao texto
 Só texto verbatim da LOB. Onde a lei remete a "legislação específica" (Conselhos)
