@@ -1436,7 +1436,7 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
   }
 
   /* Trilha de capítulos: largura total, estática, altura limitada com rolagem */
-  .rev-rail {
+  .chapter-rail {
     flex: 1 1 auto !important;
     width: 100% !important;
     position: static !important;
