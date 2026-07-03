@@ -4,9 +4,10 @@
 
 **Goal:** Fazer os órgãos-folha do `commandChart` da minuta (DP, DEEI, DPOF, DSAP,
 DLOG, CINT, CCS, CINF, CONDEG, DEPDEC, CORREGEDORIA, CAT, CIBM, GBM, GAB-CG, AG,
-ASSESSORIAS) exibirem sua estrutura interna (`desdobramentos` do `ro.json`) como
-nós filhos expansíveis no organograma de `/minuta-diagramas`, sem alterar
-DPO/DOE/COT/CRBM/BBM/BBS/BIFEA/BOA.
+ASSESSORIAS, BBS, BIFEA, BOA) exibirem sua estrutura interna (`desdobramentos` do
+`ro.json`) como nós filhos expansíveis no organograma de `/minuta-diagramas`, sem
+alterar DPO/DOE/COT/CRBM (que já têm filhos de órgão reais) nem BBM (que recebe a
+cadeia real Cia BM/Pel BM/Guarnição).
 
 **Architecture:** `build_command_chart()` em `scripts/build_minuta_structure.py`
 injeta, após montar a árvore por subordinação e antes da cadeia Cia BM/Pel BM, os
@@ -21,9 +22,14 @@ nós; o toggle −/+ já existe e funciona automaticamente para qualquer nó com
 
 ## Global Constraints
 
-- Não alterar `DPO`, `DOE`, `COT`, `CRBM`, `BBM`, `BBS`, `BIFEA`, `BOA` — só recebem
-  nós internos os órgãos que ficaram **sem filhos de órgão** após o roteamento por
-  subordinação.
+- Não alterar `DPO`, `DOE`, `COT`, `CRBM` (já têm filhos de órgão reais) nem `BBM`
+  (recebe a cadeia real Cia BM/Pel BM/Guarnição) — só recebem nós internos os
+  órgãos que ficaram **sem filhos de órgão** após o roteamento por subordinação
+  E que não sejam `bbm`. No `commandChart` real, `BBS`/`BIFEA`/`BOA` **são**
+  órgãos-folha (sem filhos próprios) e por isso ganham nós internos como
+  qualquer outro órgão-folha — a versão original deste plano os listava
+  incorretamente junto de DPO/DOE/COT/CRBM/BBM; corrigido durante a execução
+  (ver nota inline na Task 1).
 - A injeção deve rodar **antes** do bloco que monta a cadeia Cia BM → Pel BM →
   Guarnição dentro de `bbm` (linha ~400 de `build_minuta_structure.py`), senão
   `bbm` seria marcado como "sem filhos" e ganharia nós internos espúrios antes de
@@ -131,10 +137,11 @@ por:
 
     # Órgãos sem filhos de órgão (folhas do commandChart) ganham sua estrutura
     # interna (desdobramentos do ro.json) como nós estruturais isInternal=True.
-    # Roda ANTES da cadeia Cia BM/Pel BM abaixo, para não marcar "bbm" como folha
-    # indevidamente (ele só fica "sem filhos" até a Guarnição ser anexada a seguir).
+    # "bbm" fica de fora mesmo estando sem filhos neste ponto: ele recebe a cadeia
+    # real Cia BM/Pel BM/Guarnição logo abaixo, e não deve ganhar nós internos que
+    # ficariam misturados a essa cadeia.
     for k, n in nodes.items():
-        if n["children"]:
+        if n["children"] or k == "bbm":
             continue
         for desd in (organs.get(k) or {}).get("desdobramentos") or []:
             label = truncate_desdobramento_label(desd)
@@ -146,6 +153,16 @@ por:
 
     if guarnicao is not None and "bbm" in nodes:
 ```
+
+> **Nota de correção (achada na execução):** o plano originalmente listava
+> `bbm, bbs, bifea, boa` como órgãos que "já têm filhos de órgão reais" — isso
+> está errado para 3 deles. No `commandChart` gerado, **só DPO, DOE, COT e CRBM**
+> têm filhos de órgão; `bbm`, `bbs`, `bifea`, `boa` são folhas como DP/DEEI/etc.
+> `bbm` precisa do `continue` explícito acima (ele ganha a cadeia real Cia
+> BM/Pel BM/Guarnição alguns passos abaixo e não pode misturar nós internos
+> nela); `bbs`, `bifea`, `boa` não têm essa ressalva e **devem** ganhar nós
+> `isInternal` como qualquer outro órgão-folha. O Step 3 abaixo já reflete essa
+> correção.
 
 - [ ] **Step 2: Regenerar `minuta_structure.json`**
 
@@ -163,8 +180,9 @@ cd "c:/Users/tiago/OneDrive/Documentos/Comparativo de legislações CBM" && pyth
 import json, sys
 
 LEAF_EXPECTED = {"dp","deei","dpof","dsap","dlog","cint","ccs","cinf","condeg",
-                 "depdec","corregedoria","cat","cibm","gbm","gab-cg","ag","assessorias"}
-NO_INTERNAL_EXPECTED = {"dpo","doe","cot","crbm","bbm","bbs","bifea","boa"}
+                 "depdec","corregedoria","cat","cibm","gbm","gab-cg","ag","assessorias",
+                 "bbs","bifea","boa"}
+NO_INTERNAL_EXPECTED = {"dpo","doe","cot","crbm","bbm"}
 
 d = json.load(open("database/minuta_structure.json", encoding="utf-8"))
 chart = d["commandChart"]
@@ -202,7 +220,7 @@ if fail:
     for f in fail:
         print(" -", f)
     sys.exit(1)
-print("OK: todos os órgãos-folha esperados têm nós internos; DPO/DOE/COT/CRBM/BBM/BBS/BIFEA/BOA não têm.")
+print("OK: todos os órgãos-folha esperados têm nós internos; DPO/DOE/COT/CRBM/BBM não têm.")
 PY
 echo "exit=$?"
 ```
@@ -242,10 +260,12 @@ feat(minuta-diagramas): injeta estrutura interna nos órgãos-folha do commandCh
 build_command_chart() agora anexa os desdobramentos do ro.json (Diretor,
 Adjunto, Coordenadorias, Seções...) como nós isInternal=true nos órgãos
 sem filhos de órgão (DP, DEEI, DPOF, DSAP, DLOG, CINT, CCS, CINF, CONDEG,
-DEPDEC, CORREGEDORIA, CAT, CIBM, GBM, GAB-CG, AG, ASSESSORIAS). DPO/DOE/
-COT/CRBM/BBM/BBS/BIFEA/BOA, que já têm filhos de órgão reais, ficam
-inalterados. Labels truncados no separador " — "/" – " de topo, ignorando
-dash dentro de parênteses (requisitos de cargo).
+DEPDEC, CORREGEDORIA, CAT, CIBM, GBM, GAB-CG, AG, ASSESSORIAS, BBS, BIFEA,
+BOA). DPO/DOE/COT/CRBM, que já têm filhos de órgão reais, ficam
+inalterados; BBM é excluído explicitamente (recebe a cadeia real Cia
+BM/Pel BM/Guarnição, que não deve se misturar a nós internos). Labels
+truncados no separador " — "/" – " de topo, ignorando dash dentro de
+parênteses (requisitos de cargo).
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 EOF
@@ -313,7 +333,10 @@ Expected: Vite sobe em http://localhost:5173
    `.moc-box-internal`), visualmente mais leves que os órgãos normais.
 3. Confirmar que **DPO** e **DOE** continuam mostrando só seus filhos de órgão
    (COT/CRBM para DPO; BBS/BIFEA/BOA para DOE) — sem nós internos adicionais
-   misturados.
+   misturados nesse nível. Expandir, por sua vez, **BOA** (ou BBS/BIFEA): por
+   serem órgãos-folha, devem agora mostrar seus próprios nós internos
+   (`isInternal`), igual a DP. Expandir **BBM**: deve mostrar só "Cia BM" (e,
+   dentro dela, "Pel BM" → Guarnição), sem nós internos misturados na cadeia.
 4. Clicar em "Expandir tudo" e depois usar a pré-visualização de impressão do
    navegador (ou `window.print()` via DevTools) — confirmar que os nós internos
    aparecem na visualização impressa sem quebrar o layout.
@@ -339,11 +362,13 @@ Expected: commit criado com os 2 arquivos.
 
 ## Self-Review (preenchido pelo autor do plano)
 
-- **Cobertura da spec:** injeção em órgãos-folha (Task 1, Step 1) ✓ · ordem
-  antes da cadeia BBM (Task 1, Step 1, comentário no código) ✓ · truncamento
-  ciente de parênteses, validado contra dados reais (Task 1, Step 4) ✓ · não
-  afeta DPO/DOE/COT/CRBM/BBM/BBS/BIFEA/BOA (Task 1, Step 3) ✓ · estilo visual
-  distinto (Task 2, Step 2) ✓ · toggle automático (nenhuma mudança extra
+- **Cobertura da spec:** injeção em órgãos-folha (Task 1, Step 1) ✓ · `bbm`
+  explicitamente excluído da injeção (Task 1, Step 1, comentário no código) ✓ ·
+  truncamento ciente de parênteses, validado contra dados reais (Task 1, Step
+  4) ✓ · não afeta DPO/DOE/COT/CRBM/BBM, enquanto BBS/BIFEA/BOA (órgãos-folha
+  reais) ganham nós internos como os demais (Task 1, Step 3 — corrigido na
+  execução, ver nota inline na Task 1) ✓ · estilo visual distinto (Task 2,
+  Step 2) ✓ · toggle automático (nenhuma mudança extra
   necessária — `MinutaOrgChart.jsx` já trata `hasKids` genericamente) ✓ ·
   impressão (Task 2, Step 4.4) ✓ · não tocar MindMap/`/comparar`/`ORGAN_ORDER`
   (nenhuma task toca esses arquivos) ✓.
