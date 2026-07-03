@@ -2292,6 +2292,10 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .app-header-user-name { font-size: 13px; opacity: .9; }
 .app-header-user-exit { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,.15);
   color: #fff; border: none; border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px; }
+.app-header-user-enter { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,.18);
+  color: #fff; border: 1px solid rgba(255,255,255,.35); border-radius: 6px; padding: 6px 12px; cursor: pointer;
+  font-size: 13px; font-weight: 600; text-decoration: none; }
+.app-header-user-enter:hover { background: rgba(255,255,255,.28); }
 
 /* ===== Revisão: documento + trilha de balões ===== */
 .rev-doc { border: 1px solid var(--border-card); border-radius: 8px; background: #fff; padding: 20px 8px 20px 24px;

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
+import { Routes, Route, NavLink, Link, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Library, ScrollText, Menu, X, Network, LogOut,
+  Search, Library, ScrollText, Menu, X, Network, LogOut, LogIn,
   MessageSquare, ShieldCheck, MessagesSquare, Gavel
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
@@ -69,7 +69,16 @@ function Header({ navOpen, onToggleNav }) {
 
 function HeaderUserBox() {
   const { user, sair } = useAuth()
-  if (!user) return null
+  if (!user) {
+    // Sem login: ponto de entrada visível para os convidados (Revisão da Minuta).
+    return (
+      <div className="app-header-user">
+        <Link to="/login" className="app-header-user-enter" title="Entrar na Revisão da Minuta">
+          <LogIn size={16} /> Entrar
+        </Link>
+      </div>
+    )
+  }
   return (
     <div className="app-header-user">
       <span className="app-header-user-name">{user.nome}</span>
