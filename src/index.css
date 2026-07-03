@@ -2181,6 +2181,11 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .moc-box-sel { border-color: #c8102e; box-shadow: 0 0 0 2px rgba(200, 16, 46, 0.25); }
 .moc-sigla { font-weight: 800; font-size: 13px; }
 .moc-label { font-size: 10.5px; color: var(--text-muted); }
+.moc-box-internal {
+  border-style: dashed; background: #f4f6fa; cursor: default; min-width: 84px;
+  padding: 6px 10px;
+}
+.moc-box-internal .moc-label { font-size: 9.5px; }
 
 /* Wrapper da caixa + botão de expandir/recolher (−/+) sobre a linha de conexão */
 .moc-node { position: relative; display: inline-block; }
