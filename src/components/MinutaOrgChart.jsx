@@ -54,9 +54,9 @@ function ChartNode({ node, onSelect, selectedId, defaultExpanded, isRoot = false
       </div>
       {hasKids && open && (
         <ul>
-          {kids.map(c => (
+          {kids.map((c, i) => (
             <ChartNode
-              key={c.organKey || c.label}
+              key={c.organKey || `${c.label}-${i}`}
               node={c}
               onSelect={onSelect}
               selectedId={selectedId}
