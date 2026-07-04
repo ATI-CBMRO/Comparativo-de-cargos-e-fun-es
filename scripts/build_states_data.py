@@ -393,6 +393,9 @@ def parse_doc_type(filename: str) -> str:
     # Operacional") — NÃO é um Regimento Interno organizacional; rótulo distinto
     # para não confundir no acervo nem virar has_regimento.
     if 'regimento' in name and 'serviç' in name: return 'Regimento de Serviços'
+    # Regulamento Geral por Decreto (ex.: RN Decreto 31.139/2021) — não é uma Lei
+    # de Organização Básica; rótulo próprio.
+    if 'regulamento' in name: return 'Regulamento Geral'
     if 'normas gerais de ação' in name or 'nga' in name: return 'Normas Gerais de Ação'
     if 'quadro demonstrativo' in name: return 'Quadro Demonstrativo de Cargos'
     if 'quadro de organização' in name: return 'Quadro de Organização e Distribuição'
