@@ -1444,6 +1444,11 @@ mark { background: rgba(245,166,35,0.30); color: #92590a; border-radius: 3px; pa
     max-height: 42vh !important;
   }
 
+  .ri-state-col {
+    flex: 1 1 auto !important; width: 100% !important; position: static !important;
+    top: auto !important; max-height: none !important;
+  }
+
   /* Documento ocupa a largura toda */
   .rev-doc { flex: 1 1 auto !important; width: 100% !important; }
 
@@ -2419,3 +2424,10 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .acc-eu { font-size: 12px; color: #9aa4ba; font-style: italic; }
 .acc-ic { border: 1px solid #d7deea; background: #fff; border-radius: 7px; padding: 5px 8px; font-size: 12.5px; cursor: pointer; color: #3a4866; }
 .acc-ic.danger:hover { border-color: #c8102e; color: #c8102e; }
+
+/* Coluna do estado no Comparativo de RI: fixa e rolável no desktop. */
+.ri-state-col {
+  flex: 0 0 320px; align-self: flex-start; position: sticky; top: calc(var(--header-h) + 8px);
+  max-height: calc(100vh - var(--header-h) - 24px); overflow: auto;
+  border: 1px solid var(--border-card); border-radius: 8px; background: #fff; padding: 14px 16px;
+}

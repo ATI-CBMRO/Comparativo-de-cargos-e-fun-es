@@ -3,7 +3,7 @@ import { Routes, Route, NavLink, Link, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
   Search, Library, ScrollText, Menu, X, Network, LogOut, LogIn,
-  MessageSquare, ShieldCheck, MessagesSquare, Gavel
+  MessageSquare, ShieldCheck, MessagesSquare, Gavel, GitCompareArrows
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -15,6 +15,7 @@ import MinutaWizard from './pages/MinutaWizard.jsx'
 import MinutaDiagrams from './pages/MinutaDiagrams.jsx'
 import MinutaRevisao from './pages/MinutaRevisao.jsx'
 import MinutaDeliberacao from './pages/MinutaDeliberacao.jsx'
+import RIComparator from './pages/RIComparator.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
@@ -30,6 +31,7 @@ const NAV = [
   { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
   { to: '/minuta/revisao', icon: MessagesSquare, label: 'Revisão CONDEG' },
   { to: '/minuta/deliberacao', icon: Gavel, label: 'Deliberação CONDEG' },
+  { to: '/minuta/comparativo-ri', icon: GitCompareArrows, label: 'Comparativo de RI' },
   { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
   { to: '/busca', icon: Search, label: 'Busca Textual' },
 ]
@@ -188,6 +190,7 @@ export default function App() {
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<MinutaRevisao />} />
           <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
+          <Route path="/minuta/comparativo-ri" element={<RIComparator />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
