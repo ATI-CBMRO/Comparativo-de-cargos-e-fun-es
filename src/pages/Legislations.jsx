@@ -5,6 +5,7 @@ import { Search, FileText, Library, ChevronRight, ExternalLink } from 'lucide-re
 const DOC_TYPE_SHORT = {
   'Lei de Organização Básica': 'LOB',
   'Regimento Interno': 'Regimento',
+  'Regimento de Serviços': 'Reg. Serviços',
   'Normas Gerais de Ação': 'NGA',
   'Quadro Demonstrativo de Cargos': 'QDC',
   'Quadro de Organização e Distribuição': 'QOD',

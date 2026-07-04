@@ -389,6 +389,10 @@ def detail_fail(organs):
 def parse_doc_type(filename: str) -> str:
     name = filename.lower()
     if 'regimento interno' in name: return 'Regimento Interno'
+    # Regimento de serviço/escala (ex.: GO "Regimento dos Serviços Interno e
+    # Operacional") — NÃO é um Regimento Interno organizacional; rótulo distinto
+    # para não confundir no acervo nem virar has_regimento.
+    if 'regimento' in name and 'serviç' in name: return 'Regimento de Serviços'
     if 'normas gerais de ação' in name or 'nga' in name: return 'Normas Gerais de Ação'
     if 'quadro demonstrativo' in name: return 'Quadro Demonstrativo de Cargos'
     if 'quadro de organização' in name: return 'Quadro de Organização e Distribuição'
