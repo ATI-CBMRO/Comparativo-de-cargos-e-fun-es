@@ -114,8 +114,10 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
 - `/minuta/comparativo-ri` (`src/pages/RIComparator.jsx`, "Comparativo de RI") compara, capítulo a
   capítulo, a minuta do CBMRO (coluna central, leitura, via `buildTargets` do `minuta_structure.json`)
-  com o órgão equivalente no **Regimento Interno** de 9 estados (al, am, df, go, mt, pr, pa, rs, se) —
-  UM estado por vez, por pills. Diferente do `/comparar`, esta página mostra **só a camada de RI, sem
+  com o órgão equivalente no **Regimento Interno** dos 7 estados que de fato possuem RI organizacional
+  no acervo (al, df, mt, pr, pa, rs, se; `RI_STATE_IDS`) — UM estado por vez, por pills. NÃO inclui
+  am (só LOB+Quadro) nem go (LOB+QOD+"Regimento dos Serviços Interno e Operacional", que é regimento
+  de serviço, não RI). Diferente do `/comparar`, esta página mostra **só a camada de RI, sem
   o enriquecimento da LOB**: lê o campo `riOrgans`/`riProvenance`/`riSourceLabel` do
   `comparativo_minuta.json` (snapshot da coluna 3 gravado por `build_minuta_comparison.py` ANTES do
   merge da LOB — camadas DPO/COT curado + `ENRICHMENT_ORGAN` + Guarnição + auto por palavra-chave em

@@ -1,8 +1,13 @@
 // Lógica pura do Comparativo de RI: indexa comparativo_minuta.json por órgão,
 // mapeia capítulo->órgão e seleciona os estados com RI que têm dado. Sem React.
 
-// Os 9 estados com LOB + Regimento Interno (ordem de exibição fixa).
-export const RI_STATE_IDS = ['al', 'am', 'df', 'go', 'mt', 'pr', 'pa', 'rs', 'se']
+// Os 7 estados que possuem um Regimento Interno organizacional no acervo
+// (arquivo "…- Regimento Interno.pdf"), ordem de exibição fixa. NÃO inclui:
+// - am (Amazonas): só LOB + Quadro, sem RI;
+// - go (Goiás): LOB + QOD + "Regimento dos Serviços Interno e Operacional"
+//   (regimento de serviço/escala, não um RI organizacional).
+// Seu conteúdo no comparativo vinha da LOB/serviço, não de um RI — por isso ficam de fora.
+export const RI_STATE_IDS = ['al', 'df', 'mt', 'pr', 'pa', 'rs', 'se']
 
 const ORGAN_PREFIX = 'organ:'
 

@@ -28,8 +28,8 @@ const COMPARATIVO = {
   ],
 }
 
-test('RI_STATE_IDS tem os 9 estados com RI na ordem fixa', () => {
-  assert.deepEqual(RI_STATE_IDS, ['al', 'am', 'df', 'go', 'mt', 'pr', 'pa', 'rs', 'se'])
+test('RI_STATE_IDS tem os 7 estados com Regimento Interno de fato (sem am/go)', () => {
+  assert.deepEqual(RI_STATE_IDS, ['al', 'df', 'mt', 'pr', 'pa', 'rs', 'se'])
 })
 
 test('indexComparativo indexa por key, ignorando entradas sem key', () => {
