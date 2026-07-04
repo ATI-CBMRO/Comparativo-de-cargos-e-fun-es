@@ -11,18 +11,18 @@ const COMPARATIVO = {
       key: 'cg', title: 'DO COMANDO GERAL (CG)', abbr: 'CG',
       states: [
         { id: 'al', abbr: 'AL', provenance: 'curado', sourceLabel: 'cf. CBMAL',
-          organs: [{ name: 'Comando Geral', abbreviation: 'CG', atribuicoes: ['comandar'] }] },
+          riOrgans: [{ name: 'Comando Geral', abbreviation: 'CG', atribuicoes: ['comandar'] }] },
         { id: 'ac', abbr: 'AC', provenance: 'curado', sourceLabel: 'cf. CBMAC',
-          organs: [{ name: 'Comando Geral', abbreviation: 'CG', atribuicoes: ['comandar'] }] },
+          riOrgans: [{ name: 'Comando Geral', abbreviation: 'CG', atribuicoes: ['comandar'] }] },
         { id: 'rs', abbr: 'RS', provenance: 'automatico', sourceLabel: 'cf. CBMRS',
-          organs: [{ name: 'CG', abbreviation: 'CG', atribuicoes: [] }] },
+          riOrgans: [{ name: 'CG', abbreviation: 'CG', atribuicoes: [] }] },
       ],
     },
     {
       key: 'dpo', title: 'DA DPO', abbr: 'DPO',
       states: [
         { id: 'mt', abbr: 'MT', provenance: 'curado', sourceLabel: 'cf. CBMMT',
-          organs: [{ name: 'Departamento', abbreviation: 'DPO', atribuicoes: ['planejar'] }] },
+          riOrgans: [{ name: 'Departamento', abbreviation: 'DPO', atribuicoes: ['planejar'] }] },
       ],
     },
   ],
@@ -53,9 +53,9 @@ test('organKeyOfChapter extrai a key só de capítulos de órgão', () => {
 })
 
 test('stateHasData exige ao menos uma atribuição não vazia', () => {
-  assert.equal(stateHasData({ organs: [{ atribuicoes: ['x'] }] }), true)
-  assert.equal(stateHasData({ organs: [{ atribuicoes: [] }] }), false)
-  assert.equal(stateHasData({ organs: [] }), false)
+  assert.equal(stateHasData({ riOrgans: [{ atribuicoes: ['x'] }] }), true)
+  assert.equal(stateHasData({ riOrgans: [{ atribuicoes: [] }] }), false)
+  assert.equal(stateHasData({ riOrgans: [] }), false)
   assert.equal(stateHasData(null), false)
 })
 

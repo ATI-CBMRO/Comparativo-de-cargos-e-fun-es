@@ -86,7 +86,8 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
   `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
   `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams),
-  `/minuta/revisao` (MinutaRevisao) e `/minuta/deliberacao` (MinutaDeliberacao).
+  `/minuta/comparativo-ri` (RIComparator), `/minuta/revisao` (MinutaRevisao) e
+  `/minuta/deliberacao` (MinutaDeliberacao).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
@@ -111,6 +112,17 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   por `build_minuta_comparison.py` via `build_minuta_structure.command_order`, mantendo a lista
   em sincronia com o `commandChart`. Só entram estados com dado correspondente; busca filtra a
   matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
+- `/minuta/comparativo-ri` (`src/pages/RIComparator.jsx`, "Comparativo de RI") compara, capítulo a
+  capítulo, a minuta do CBMRO (coluna central, leitura, via `buildTargets` do `minuta_structure.json`)
+  com o órgão equivalente no **Regimento Interno** de 9 estados (al, am, df, go, mt, pr, pa, rs, se) —
+  UM estado por vez, por pills. Diferente do `/comparar`, esta página mostra **só a camada de RI, sem
+  o enriquecimento da LOB**: lê o campo `riOrgans`/`riProvenance`/`riSourceLabel` do
+  `comparativo_minuta.json` (snapshot da coluna 3 gravado por `build_minuta_comparison.py` ANTES do
+  merge da LOB — camadas DPO/COT curado + `ENRICHMENT_ORGAN` + Guarnição + auto por palavra-chave em
+  organs_detail não-LOB). A coluna `organs` (LOB + RI) segue intacta para o `/comparar`. Lógica pura
+  em `src/lib/riComparison.js` (testada): `indexComparativo`, `organKeyOfChapter`, `statesWithData`
+  (filtra por `riOrgans` não vazio), `pickState`. Capítulos sem `organKey` (Preliminares/Estrutura/
+  Finais) e a Guarnição (sem RI mapeado) exibem avisos de "sem equivalente".
 - Componentes-chave: `Organogram.jsx` (árvore expansível/colapsável) e `OrgDetail.jsx`
   (painel lateral de detalhamento). `CargoComparator.jsx` e `OrgaosOperacionaisComparator.jsx`
   foram removidos junto com as abas do Dashboard.

@@ -126,7 +126,7 @@ export default function RIComparator() {
                 </div>
                 {stateEntry ? (
                   <div>
-                    {(stateEntry.organs ?? []).map((o, i) => (
+                    {(stateEntry.riOrgans ?? []).map((o, i) => (
                       <div key={i} style={{ marginBottom: 12 }}>
                         <p style={{ fontWeight: 700, fontSize: 13, color: '#121d3d', margin: '0 0 4px' }}>
                           {o.name}{o.abbreviation ? ` (${o.abbreviation})` : ''}
@@ -139,10 +139,10 @@ export default function RIComparator() {
                     <div style={{ marginTop: 10, paddingTop: 8, borderTop: '1px solid var(--border-card)', fontSize: 11, color: 'var(--text-muted)' }}>
                       <span style={{
                         display: 'inline-block', padding: '1px 7px', borderRadius: 10, fontWeight: 700, fontSize: 10, marginRight: 6,
-                        background: stateEntry.provenance === 'curado' ? '#e6f4ea' : '#fdeaea',
-                        color: stateEntry.provenance === 'curado' ? '#1e7d40' : '#c8102e',
-                      }}>{stateEntry.provenance === 'curado' ? 'curado (RI)' : 'automático (LOB)'}</span>
-                      {stateEntry.sourceLabel}
+                        background: stateEntry.riProvenance === 'curado' ? '#e6f4ea' : '#fdeaea',
+                        color: stateEntry.riProvenance === 'curado' ? '#1e7d40' : '#c8102e',
+                      }}>{stateEntry.riProvenance === 'curado' ? 'curado (RI)' : 'automático (RI)'}</span>
+                      {stateEntry.riSourceLabel}
                     </div>
                   </div>
                 ) : (

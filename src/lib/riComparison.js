@@ -21,9 +21,10 @@ export function organKeyOfChapter(chapterId) {
   return id.startsWith(ORGAN_PREFIX) ? id.slice(ORGAN_PREFIX.length) : null
 }
 
-// Verdadeiro se algum órgão do estado tem ao menos uma atribuição não vazia.
+// Verdadeiro se o estado tem ao menos uma atribuição não vazia na camada SÓ-RI
+// (riOrgans) — sem o enriquecimento da LOB, que fica na coluna `organs`.
 export function stateHasData(stateEntry) {
-  return (stateEntry?.organs ?? []).some(o => (o?.atribuicoes ?? []).length > 0)
+  return (stateEntry?.riOrgans ?? []).some(o => (o?.atribuicoes ?? []).length > 0)
 }
 
 // Estados de RI_STATE_IDS (nessa ordem) que existem no órgão e têm dado.

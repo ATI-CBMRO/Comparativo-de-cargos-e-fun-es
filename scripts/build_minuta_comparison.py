@@ -14,6 +14,7 @@ Depende de (rode antes): build_dpo_cot_comparison.py, build_organs_detail.py.
 Rodar: python scripts/build_minuta_comparison.py
 """
 
+import copy
 import json
 import sys
 from pathlib import Path
@@ -285,6 +286,13 @@ def build():
         auto = auto_states_for(organ_key, set(curated.keys()), meta)
         lob_cur = lob_curated_states_for(organ_key, meta)
         records = {r["id"]: r for r in (list(curated.values()) + list(auto.values()))}
+        # Snapshot da camada SÓ-RI (antes de mesclar a LOB na coluna 3), consumido
+        # pela página /minuta/comparativo-ri — que compara RI × RI, sem enriquecimento
+        # da LOB. A coluna 3 (organs) segue sendo a união LOB + RI usada no /comparar.
+        for r in records.values():
+            r["riOrgans"] = copy.deepcopy(r["organs"])
+            r["riProvenance"] = r["provenance"]
+            r["riSourceLabel"] = r.get("sourceLabel")
         # Mescla a camada LOB na coluna 3 e garante presença de estados só-LOB.
         for sid, info in lob_cur.items():
             if sid in records:
@@ -300,6 +308,8 @@ def build():
                     **meta.get(sid, _fallback_meta(sid)),
                     "provenance": "curado", "sourceLabel": info["source"], "note": None,
                     "organs": [info["organ"]],
+                    # Estado presente só pela LOB: nada de RI para comparar.
+                    "riOrgans": [], "riProvenance": None, "riSourceLabel": None,
                 }
         states = sort_states(list(records.values()))
         attach_lob_organs(organ_key, states, lob_cur)
