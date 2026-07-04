@@ -29,9 +29,9 @@ const NAV = [
   { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
   { to: '/minuta', icon: ScrollText, label: 'Minuta RI' },
   { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
+  { to: '/minuta/comparativo-ri', icon: GitCompareArrows, label: 'Comparativo de RI' },
   { to: '/minuta/revisao', icon: MessagesSquare, label: 'Revisão CONDEG' },
   { to: '/minuta/deliberacao', icon: Gavel, label: 'Deliberação CONDEG' },
-  { to: '/minuta/comparativo-ri', icon: GitCompareArrows, label: 'Comparativo de RI' },
   { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
   { to: '/busca', icon: Search, label: 'Busca Textual' },
 ]
