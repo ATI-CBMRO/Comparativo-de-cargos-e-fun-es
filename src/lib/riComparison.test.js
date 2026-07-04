@@ -14,7 +14,7 @@ const COMPARATIVO = {
           organs: [{ name: 'Comando Geral', abbreviation: 'CG', atribuicoes: ['comandar'] }] },
         { id: 'ac', abbr: 'AC', provenance: 'curado', sourceLabel: 'cf. CBMAC',
           organs: [{ name: 'Comando Geral', abbreviation: 'CG', atribuicoes: ['comandar'] }] },
-        { id: 'rs', abbr: 'RS', provenance: 'automático', sourceLabel: 'cf. CBMRS',
+        { id: 'rs', abbr: 'RS', provenance: 'automatico', sourceLabel: 'cf. CBMRS',
           organs: [{ name: 'CG', abbreviation: 'CG', atribuicoes: [] }] },
       ],
     },

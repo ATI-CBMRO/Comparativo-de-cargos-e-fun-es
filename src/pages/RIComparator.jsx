@@ -43,12 +43,10 @@ export default function RIComparator() {
   const organEntry = organKey ? compByKey[organKey] : null
   const available = useMemo(() => statesWithData(organEntry), [organEntry])
 
-  // Reconcilia o estado quando o capítulo (e portanto `available`) muda.
-  useEffect(() => {
-    setSelectedStateId(prev => pickState(prev, available))
-  }, [available])
-
-  const stateEntry = available.find(s => s.id === selectedStateId) ?? null
+  // Estado efetivo derivado no render (sem effect): mantém o escolhido se ainda
+  // tem dado no capítulo atual, senão cai no primeiro disponível.
+  const activeStateId = pickState(selectedStateId, available)
+  const stateEntry = available.find(s => s.id === activeStateId) ?? null
 
   if (error) {
     return (
@@ -116,7 +114,7 @@ export default function RIComparator() {
               <>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 12 }}>
                   {available.map(s => {
-                    const on = s.id === selectedStateId
+                    const on = s.id === activeStateId
                     return (
                       <button key={s.id} onClick={() => setSelectedStateId(s.id)} style={{
                         font: '700 11px Inter, sans-serif', padding: '4px 9px', borderRadius: 20, cursor: 'pointer',
