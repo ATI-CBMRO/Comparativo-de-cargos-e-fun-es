@@ -388,7 +388,9 @@ def detail_fail(organs):
 
 def parse_doc_type(filename: str) -> str:
     name = filename.lower()
+    if 'regimento dos serviços' in name: return 'Regimento de Serviços'
     if 'regimento interno' in name: return 'Regimento Interno'
+    if 'regulamento' in name: return 'Regulamento Geral'
     if 'normas gerais de ação' in name or 'nga' in name: return 'Normas Gerais de Ação'
     if 'quadro demonstrativo' in name: return 'Quadro Demonstrativo de Cargos'
     if 'quadro de organização' in name: return 'Quadro de Organização e Distribuição'
@@ -440,6 +442,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
 
     # Estatísticas de documentos
     has_regimento = any(d["type"] == "Regimento Interno" for d in documents)
+    has_regulamento = any(d["type"] in ("Regulamento Geral", "Regimento de Serviços") for d in documents)
     has_nga = any(d["type"] == "Normas Gerais de Ação" for d in documents)
     total_chars = sum(d["char_count"] for d in documents)
 
@@ -457,6 +460,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
         "stats": {
             "total_documents": len(documents),
             "has_regimento": has_regimento,
+            "has_regulamento": has_regulamento,
             "has_nga": has_nga,
             "total_chars": total_chars,
             "organs_mapped": count_nodes(organs),

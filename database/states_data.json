@@ -468,6 +468,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 34335,
         "organs_mapped": 57,
@@ -1399,6 +1400,7 @@
       "stats": {
         "total_documents": 3,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 237733,
         "organs_mapped": 135,
@@ -1672,6 +1674,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 21812,
         "organs_mapped": 37,
@@ -2472,6 +2475,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 94560,
         "organs_mapped": 113,
@@ -2914,6 +2918,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 55483,
         "organs_mapped": 60,
@@ -3261,6 +3266,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 63831,
         "organs_mapped": 44,
@@ -4210,6 +4216,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 679379,
         "organs_mapped": 136,
@@ -4757,6 +4764,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": true,
         "total_chars": 1414298,
         "organs_mapped": 71,
@@ -4810,7 +4818,7 @@
           "has_pdf": true
         },
         {
-          "type": "Lei de Organização Básica",
+          "type": "Regimento de Serviços",
           "md_file": "Goiás - Regimento dos Serviços Interno e Operacional.md",
           "char_count": 52393,
           "year": 2025,
@@ -5774,6 +5782,7 @@
       "stats": {
         "total_documents": 3,
         "has_regimento": false,
+        "has_regulamento": true,
         "has_nga": false,
         "total_chars": 121263,
         "organs_mapped": 135,
@@ -6455,6 +6464,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 108027,
         "organs_mapped": 93,
@@ -7758,6 +7768,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 356123,
         "organs_mapped": 203,
@@ -8304,6 +8315,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 80490,
         "organs_mapped": 74,
@@ -8709,6 +8721,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 17924,
         "organs_mapped": 54,
@@ -9149,6 +9162,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 88760,
         "organs_mapped": 54,
@@ -10167,6 +10181,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 602401,
         "organs_mapped": 149,
@@ -11321,6 +11336,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 473925,
         "organs_mapped": 169,
@@ -11970,6 +11986,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 91553,
         "organs_mapped": 85,
@@ -13319,6 +13336,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 41996,
         "organs_mapped": 200,
@@ -13353,7 +13371,7 @@
           "has_pdf": true
         },
         {
-          "type": "Lei de Organização Básica",
+          "type": "Regulamento Geral",
           "md_file": "Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md",
           "char_count": 65770,
           "year": 2021,
@@ -14061,6 +14079,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": true,
         "has_nga": false,
         "total_chars": 88067,
         "organs_mapped": 85,
@@ -14820,6 +14839,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 207361,
         "organs_mapped": 104,
@@ -15502,6 +15522,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 32000,
         "organs_mapped": 89,
@@ -16804,6 +16825,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 75273,
         "organs_mapped": 195,
@@ -18367,6 +18389,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 73202,
         "organs_mapped": 233,
@@ -18990,6 +19013,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 82273,
         "organs_mapped": 93,
@@ -20091,6 +20115,7 @@
       "stats": {
         "total_documents": 3,
         "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 163408,
         "organs_mapped": 138,
@@ -20546,6 +20571,7 @@
       "stats": {
         "total_documents": 2,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 132095,
         "organs_mapped": 54,
@@ -20941,6 +20967,7 @@
       "stats": {
         "total_documents": 1,
         "has_regimento": false,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 23364,
         "organs_mapped": 55,
