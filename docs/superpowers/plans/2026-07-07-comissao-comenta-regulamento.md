@@ -53,12 +53,25 @@ texto final do admin) é reusado sem alteração.
 
 - [ ] **Step 1: Escrever os testes que falham**
 
-Adicione ao final de `src/lib/reviewGroup.test.js` (arquivo já existe; só acrescente
-estes blocos, sem remover os testes atuais):
+Em `src/lib/reviewGroup.test.js` (arquivo já existe), primeiro TROQUE o import existente
+do topo:
 
 ```js
-import { docOfDispositivo, filterSuggestionsByDoc, filterFinalsByDoc } from './reviewGroup.js'
+import { groupByDispositivo, countByDispositivo, countByChapter } from './reviewGroup.js'
+```
 
+por:
+
+```js
+import {
+  groupByDispositivo, countByDispositivo, countByChapter,
+  docOfDispositivo, filterSuggestionsByDoc, filterFinalsByDoc,
+} from './reviewGroup.js'
+```
+
+Depois acrescente estes testes ao final do arquivo (sem remover os atuais):
+
+```js
 test('docOfDispositivo reconhece prefixo reg: do Regulamento', () => {
   assert.equal(docOfDispositivo('reg:disposicoes-preliminares/mt-art-1#0'), 'reg')
 })
@@ -196,7 +209,56 @@ export async function setRegulamentoAberto(aberto) {
 }
 ```
 
-- [ ] **Step 3: Verificação manual (documentar no commit, executar quando possível)**
+- [ ] **Step 3: Endurecer `addSuggestion` — truncar snapshots ao limite das rules**
+
+**Motivo (achado da revisão do plano, verificado empiricamente):** as rules do A8.7
+(pendentes de publicação) limitam `trechoSnapshot` e `dispositivoLabelSnapshot` a
+**1000 chars**, mas a tela grava o texto COMPLETO do dispositivo como snapshot — e o
+Regulamento tem incisos de até **1792 chars** (o RI tem 25 textos acima de 1000,
+chegando a 7737). Sem este passo, comentar nesses dispositivos passaria a falhar assim
+que as rules forem publicadas. O snapshot é só um retrato de contexto — truncar não
+perde nada essencial.
+
+Em `src/lib/reviewData.js`, troque o corpo de `addSuggestion`:
+
+```js
+export async function addSuggestion({ dispositivoId, dispositivoLabelSnapshot, trechoSnapshot, texto, autor }) {
+  await addDoc(collection(db, COL), {
+    dispositivoId,
+    dispositivoLabelSnapshot,
+    trechoSnapshot,
+    texto: texto.trim(),
+    autorUid: autor.uid,
+    autorNome: autor.nome,
+    curtidoPor: [],
+    criadoEm: serverTimestamp(),
+  })
+}
+```
+
+por:
+
+```js
+// As rules limitam os snapshots a 1000 chars (A8.7); dispositivos longos (há incisos
+// de 1792 chars no Regulamento e textos de até 7737 no RI) são truncados — o snapshot
+// é só contexto, o dispositivoId continua apontando para o texto íntegro.
+const SNAPSHOT_MAX = 1000
+
+export async function addSuggestion({ dispositivoId, dispositivoLabelSnapshot, trechoSnapshot, texto, autor }) {
+  await addDoc(collection(db, COL), {
+    dispositivoId,
+    dispositivoLabelSnapshot: String(dispositivoLabelSnapshot ?? '').slice(0, SNAPSHOT_MAX),
+    trechoSnapshot: String(trechoSnapshot ?? '').slice(0, SNAPSHOT_MAX),
+    texto: texto.trim(),
+    autorUid: autor.uid,
+    autorNome: autor.nome,
+    curtidoPor: [],
+    criadoEm: serverTimestamp(),
+  })
+}
+```
+
+- [ ] **Step 3b: Verificação manual (documentar no commit, executar quando possível)**
 
 Sem emulador do Firestore configurado neste projeto, a verificação real depende de rodar
 `npm run dev` com um usuário admin logado (fica com o Wândrio, como nas fatias
@@ -205,6 +267,8 @@ anteriores). Passos a documentar/testar:
    `{ regulamentoAberto: false }` (não deve travar nem lançar erro).
 2. Chamar `setRegulamentoAberto(true)` (via UI da Task 4) deve criar/atualizar o doc e o
    `onSnapshot` deve refletir a mudança em tempo real, sem recarregar a página.
+3. Comentar num dispositivo de texto longo (> 1000 chars) grava a sugestão com snapshot
+   truncado, sem erro.
 
 - [ ] **Step 4: Rodar a suíte de testes JS para garantir que nada quebrou**
 
@@ -218,11 +282,15 @@ novo nesta task, pois não há lógica pura a isolar).
 cd "/Users/wandriobandeira/Projetos de dev Sistemas/Comparativo-de-cargos-e-funcoes"
 git add src/lib/reviewData.js
 git commit -m "$(cat <<'EOF'
-feat(revisao): interruptor de admin para liberar comentários no Regulamento
+feat(revisao): interruptor de admin + snapshots truncados ao limite das rules
 
 subscribeRevisaoConfig/setRegulamentoAberto leem/gravam config/revisao
 (Firestore). Ausência do doc é tratada como fechado (fail-closed) —
 o Regulamento só fica comentável quando um admin liga o interruptor.
+addSuggestion trunca trechoSnapshot/dispositivoLabelSnapshot em 1000
+chars: corrige bug latente em que comentar dispositivos longos
+(incisos de até 1792 chars no Regulamento, 7737 no RI) falharia assim
+que as rules do A8.7 fossem publicadas.
 EOF
 )"
 ```
@@ -255,12 +323,15 @@ adicione:
 
 - [ ] **Step 2: Conferir a sintaxe do arquivo inteiro**
 
-Run: `firebase deploy --only firestore:rules --dry-run 2>&1 || echo "SEM FIREBASE CLI — revisar manualmente"`
-Expected: sem erro de sintaxe reportado (chaves balanceadas, regra dentro do escopo
-`match /databases/{database}/documents`). Se o Firebase CLI não estiver instalado/logado
-neste ambiente, revisar visualmente que a indentação e as chaves batem com os outros
-blocos (`members`, `suggestions`, `finalTexts`) — não é um passo bloqueante desta tarefa,
-mas deve ficar registrado no commit que o dry-run não pôde ser executado aqui.
+Não há Firebase CLI logado neste ambiente (e o projeto não usa emulador), então a
+conferência é visual + estrutural: chaves balanceadas e a regra nova DENTRO do escopo
+`match /databases/{database}/documents`, no mesmo padrão dos blocos vizinhos
+(`members`, `suggestions`, `finalTexts`). Checagem mecânica de balanceamento:
+
+Run: `python3 -c "s=open('firestore.rules').read(); assert s.count('{')==s.count('}'), 'chaves desbalanceadas'; print('chaves OK:', s.count('{'))"`
+Expected: `chaves OK: <n>` sem AssertionError. A validação REAL de sintaxe acontece no
+console do Firebase na hora de publicar (o editor de rules do console acusa erro antes
+de aceitar) — que já é a pendência registrada do Wândrio.
 
 - [ ] **Step 3: Commit**
 
@@ -377,6 +448,7 @@ por:
   useEffect(() => {
     setData(null)
     setErro(null)
+    setAberto(null) // fecha a modal ao trocar de documento — evita comentar no doc errado
     const url = docId === 'reg' ? '/database/regulamento_structure.json' : '/database/minuta_structure.json'
     fetchJson(url)
       .then(setData)
@@ -521,12 +593,14 @@ por:
       <div className="page-header">
         <div className="page-header-left">
           <h2 className="page-title">{tituloDoc}</h2>
-          <p className="page-subtitle">
-            Clique no balão à direita de cada dispositivo para ver e enviar sugestões.
-            As sugestões de todos ficam visíveis.
-          </p>
           {!bloqueadoParaComissao && (
-            <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
+            <>
+              <p className="page-subtitle">
+                Clique no balão à direita de cada dispositivo para ver e enviar sugestões.
+                As sugestões de todos ficam visíveis.
+              </p>
+              <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
+            </>
           )}
           <div className="rev-doc-switch">
             <button
@@ -707,7 +781,7 @@ git commit -m "docs: documentar multi-documento na Revisão (RI + Regulamento)"
 - [ ] **Step 1: Rodar toda a suíte JS**
 
 Run: `npm test`
-Expected: PASS — todos os testes (os já existentes + os novos das Tasks 1).
+Expected: PASS — todos os testes (os já existentes + os 5 novos da Task 1).
 
 - [ ] **Step 2: Rodar o build de produção**
 
@@ -742,3 +816,8 @@ Ao final, avisar explicitamente (nenhuma destas é testável sem acesso real):
 3. Só ligar o interruptor "Regulamento aberto para comentários" depois de validar a
    minuta gerada no Bloco B2 — a fatia 1 dá o controle, mas a decisão de quando abrir é
    dele.
+4. Transparência (não é bug): comentários de TESTE que o admin fizer no Regulamento
+   antes de abrir ficam tecnicamente legíveis para qualquer membro que consultar o
+   Firestore diretamente (as rules de `suggestions` dão leitura a todo membro; a UI é
+   que esconde). Mesmo grupo de confiança, risco aceito — mas o admin deve apagar
+   comentários de teste antes de abrir, por higiene.
