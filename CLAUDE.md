@@ -17,7 +17,9 @@ npm run dev              # servidor de desenvolvimento em http://localhost:5173
 npm run build            # build de produção (Vite/Rollup -> dist/)
 npm run preview          # pré-visualizar o build
 
-# Regenerar dados (Python; pypdf instalado em AppData/Roaming/Python314)
+# Regenerar dados (Python 3.10+ — os scripts usam `int | None`; pypdf instalado em
+# AppData/Roaming/Python314. Em Mac com só o Python 3.9 do sistema, instalar uma versão
+# mais nova, ex.: `brew install python@3.12`, e chamar `python3.12` no lugar de `python`)
 python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> database/markdown/*.md
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
@@ -180,11 +182,14 @@ A lista "Órgãos da minuta" do `/comparar` reusa o mesmo padrão: `MinutaCompar
 reconstrói a árvore a partir do `depth` (`buildOrganTree`) e renderiza `OrgTreeNode` com
 botão −/+ (`.oc-org-toggle`), iniciando recolhida no 1º nível; clicar no item seleciona o órgão.
 
-### Revisão e Deliberação colaborativa do CONDEG (`/minuta/revisao` e `/minuta/deliberacao`)
+### Revisão e Deliberação colaborativa do CONDEG (`/minuta/revisao` e `/minuta/deliberacao`) — LEGADO
 Fluxo colaborativo do CONDEG sobre a minuta de RI, em duas fases, lendo o mesmo
-`minuta_structure.json`. **Protótipo de frontend**: login/senha e banco de dados estão sendo
-feitos em **projeto APARTADO** — aqui tudo roda sobre dados simulados, por uma camada de dados
-ISOLADA e trocável.
+`minuta_structure.json`. **Protótipo de frontend**, hoje **fora do menu** (retirado do array
+`NAV` em `App.jsx`) — o módulo Firebase real (`/revisao`, seção abaixo) é o fluxo oficial de
+produção. As rotas continuam respondendo por URL direta e o código não foi apagado: o sumário
+de capítulos (`ChapterRail.jsx`) foi replicado/melhorado em `/revisao`, e `minutaTargets.js`,
+`minutaConsolidation.js` e `minutaDocx.js` seguem reusados pelo módulo real. Aqui tudo roda
+sobre dados simulados, por uma camada de dados ISOLADA e trocável.
 
 - **Camada de dados** (`src/lib/suggestionsStore.js`): `createSuggestionsStore(storage)`, API
   assíncrona (Promise) sobre `localStorage`, com `MOCK_USERS` (coronéis fictícios) e a "sessão"
@@ -225,6 +230,44 @@ o tratamento é feito pelos plugins acima — não pelo mecanismo padrão de ass
 ### Assets estáticos
 `public/` é servida na raiz (ex.: brasão referenciado como `/BrasaoCBMRO2D-COMPLETO.png`
 em `App.jsx`, com fallback para `/brasao-cbmro.svg`).
+
+## Minuta do Regulamento — curadoria (em andamento)
+
+Evolução em curso: gerar a minuta do Regulamento Interno do CBMRO a partir dos
+regulamentos de outros estados já no acervo (MT como esqueleto — a LOB de RO seguiu a
+de MT —, RN/SE e demais como complemento), e comparar dispositivo a dispositivo. Como
+os textos dos estados NÃO casam perfeitamente entre si, a curadoria segue 4 passos por
+estado antes de qualquer transcrição (detalhes no plano de execução):
+
+1. `python3 scripts/sugerir_equivalencias.py <uf>` — garimpo automático de candidatos
+   por tema (`docs/curadoria/candidatos-<uf>.md`). Feito para os 9 estados.
+2. De-para tema→artigos por estado — `docs/curadoria/de-para-<uf>.md` (FEITOS e
+   validados para os 9; visão geral em `docs/curadoria/panorama-cobertura.md`,
+   inclusive a matriz de cobertura 15 temas × 9 estados e as fontes primárias por tema).
+3. Validação humana dos de-paras (concluída em 2026-07-07).
+4. **Extração determinística**: `python3 scripts/extrair_regulamentos.py` corta os
+   markdowns por "Art. N" e gera `scripts/regulamento_enrichment_<uf>.py` (850 artigos,
+   GERADOS — não editar à mão; o mapa artigo→tema vive no próprio extrator).
+   `scripts/regulamento_enrichment.py` (mestre) define os 15 THEMES, PRIMARY_SOURCE por
+   tema e ADAPTATIONS (CBMMT→CBMRO etc.) e mescla os arquivos por estado.
+5. Verificação: `python3 scripts/verificar_verbatim.py` — todo caput/dispositivo deve
+   existir literalmente no markdown de origem (compara também fonte "limpa" com o mesmo
+   pipeline do extrator e versão sem espaços/hifens, tolerando artefatos de PDF).
+6. **Minuta**: `python3 scripts/build_regulamento_structure.py` →
+   `database/regulamento_structure.json` (MESMO formato de minuta_structure.json: 15
+   capítulos-temas, artigos da fonte primária adaptados p/ RO com original preservado,
+   `alternatives` por tema com o texto original dos demais estados). Validação:
+   `python3 scripts/test_regulamento_structure.py`. Páginas: `/regulamento` (wizard) e
+   `/regulamento/comparar` (comparador por dispositivo).
+
+`scripts/equivalencias_terminologicas.py` é o glossário de sinônimos entre estados
+(ex.: "serviço de dia" ≈ "serviço de permanência") usado pelo garimpo.
+
+**Nota de ambiente**: os scripts de dados (ex.: `build_states_data.py`) usam sintaxe
+`int | None`, que exige **Python 3.10+**. Em Mac com só o Python 3.9 do sistema, use
+`brew install python@3.12` e chame `python3.12` no lugar de `python`/`python3` para
+esses scripts. Os scripts NOVOS de curadoria acima (`sugerir_equivalencias.py`,
+`equivalencias_terminologicas.py`, `verificar_verbatim.py`) rodam também no Python 3.9.
 
 ## Revisão Colaborativa da Minuta (login + comentários + IA)
 
