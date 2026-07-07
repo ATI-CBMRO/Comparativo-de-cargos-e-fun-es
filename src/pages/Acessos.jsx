@@ -70,13 +70,13 @@ export default function Acessos() {
       <h2 className="acc-title">Acessos</h2>
       <p className="acc-sub">Convide pessoas pelo e-mail, controle papéis e acompanhe quem se cadastrou e quando entrou.</p>
 
-      {erro && <div className="login-erro" style={{ marginBottom: 12 }}>{erro}</div>}
+      {erro && <div className="form-error" style={{ marginBottom: 12 }}>{erro}</div>}
 
       <div className="acc-cards">
         <div className="acc-stat"><div className="acc-n">{stats.total}</div><div className="acc-l">Pessoas no total</div></div>
-        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: '#2aa05a' }} />{stats.cadastrados}</div><div className="acc-l">Cadastradas</div></div>
-        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: '#e0a106' }} />{stats.convidados}</div><div className="acc-l">Convidadas (sem entrar)</div></div>
-        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: '#c8102e' }} />{stats.bloqueados}</div><div className="acc-l">Bloqueadas</div></div>
+        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--accent-green)' }} />{stats.cadastrados}</div><div className="acc-l">Cadastradas</div></div>
+        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--cbm-gold-500)' }} />{stats.convidados}</div><div className="acc-l">Convidadas (sem entrar)</div></div>
+        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--cbm-red-700)' }} />{stats.bloqueados}</div><div className="acc-l">Bloqueadas</div></div>
       </div>
 
       <div className="acc-bar">

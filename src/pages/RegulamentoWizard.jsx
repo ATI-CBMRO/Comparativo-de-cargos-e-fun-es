@@ -1,52 +1,38 @@
 import { useState, useEffect, useMemo } from 'react'
-import { ChevronRight, Download, ArrowLeft, Pencil, Check, RotateCcw } from 'lucide-react'
+import { ChevronRight, Download, ArrowLeft, Pencil, Check, RotateCcw, AlertTriangle } from 'lucide-react'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { fetchJson } from '../lib/dataCache.js'
+import { LoadingState, ErrorState } from '../components/Status.jsx'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
 const slug = s => String(s).replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '')
 const chapterIdOf = editId => `cap-${slug(String(editId).split('/')[0])}`
-const sectionIdOf = editId => `sec-${slug(editId)}`
 const itemKey = (editId, index) => `${editId}#${index}`
 
-// 'ro' -> 'RO'; 'cf. CBMPR, Lei ...' -> 'CBMPR'
+// 'cf. CBMMT, Regulamento Geral ...' -> 'MT'; sem "cf." (fonte primária) -> 'RO'
 function sourceKey(source) {
-  if (!source || source === 'ro') return 'RO'
-  const m = source.match(/^cf\.\s*([^,]+)/)
-  return (m ? m[1] : source).trim()
+  if (!source) return 'RO'
+  const m = source.match(/^cf\.\s*CBM([A-Z]{2})/)
+  return m ? m[1] : (source.match(/^cf\.\s*([^,]+)/)?.[1] ?? source).trim()
 }
 
-// Índice editId -> { items, sectionTitle, chapterTitle, proposedText, kind }
+// Índice editId -> { items, chapterTitle, proposedText, kind }
 function indexLeaves(structure) {
   const idx = {}
   for (const ch of structure.chapters) {
-    if (ch.kind === 'organ') {
-      for (const s of ch.sections) {
-        idx[s.editId] = {
-          items: s.items ?? [], proposedText: s.proposedText ?? '',
-          sectionTitle: s.sectionTitle, chapterTitle: ch.chapterTitle, kind: s.kind,
-        }
-      }
-    } else if (ch.kind === 'articles') {
-      for (const a of ch.articles) {
-        idx[a.editId] = {
-          items: a.items ?? [], proposedText: a.proposedText ?? '',
-          sectionTitle: null, chapterTitle: ch.chapterTitle, kind: a.kind,
-        }
-      }
-    } else {
-      idx[ch.editId] = {
-        items: ch.items ?? [], proposedText: ch.proposedText ?? '',
-        sectionTitle: null, chapterTitle: ch.chapterTitle, kind: ch.kind,
+    for (const a of ch.articles) {
+      idx[a.editId] = {
+        items: a.items ?? [], proposedText: a.proposedText ?? a.caput ?? '',
+        chapterTitle: ch.chapterTitle, kind: a.kind,
       }
     }
   }
   return idx
 }
 
-// Mapa sourceKey -> [itemKey] (todos os itens estruturados da minuta)
+// Mapa sourceKey -> [itemKey] (todos os itens estruturados)
 function indexSources(structure) {
   const map = {}
   const add = (editId, items) => {
@@ -56,16 +42,24 @@ function indexSources(structure) {
       ;(map[k] ||= []).push(itemKey(editId, i))
     })
   }
+  for (const ch of structure.chapters) ch.articles.forEach(a => add(a.editId, a.items))
+  return map
+}
+
+// Mapa chapterId -> { primary, hasParcial }
+function indexChapterMeta(structure) {
+  const map = {}
   for (const ch of structure.chapters) {
-    if (ch.kind === 'organ') ch.sections.forEach(s => add(s.editId, s.items))
-    else if (ch.kind === 'articles') ch.articles.forEach(a => add(a.editId, a.items))
-    else add(ch.editId, ch.items)
+    map[ch.id] = {
+      primary: ch.primary ?? null,
+      hasParcial: (ch.articles ?? []).some(a => a.match === 'parcial'),
+    }
   }
   return map
 }
 
 function srcBadge(source) {
-  if (!source || source === 'ro') return null
+  if (!source) return null
   return (
     <span style={{
       marginLeft: 6, fontSize: 11, fontFamily: 'Inter, sans-serif',
@@ -74,7 +68,7 @@ function srcBadge(source) {
   )
 }
 
-export default function MinutaWizard() {
+export default function RegulamentoWizard() {
   const [step, setStep] = useState(0)
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -85,14 +79,15 @@ export default function MinutaWizard() {
   const [generating, setGenerating] = useState(false)
 
   useEffect(() => {
-    fetchJson('/database/minuta_structure.json')
+    fetchJson('/database/regulamento_structure.json')
       .then(setData)
-      .catch(() => setError('Erro ao carregar minuta_structure.json. Execute build_minuta_structure.py.'))
+      .catch(() => setError('Erro ao carregar regulamento_structure.json. Execute o script que gera a minuta do Regulamento Geral.'))
       .finally(() => setLoading(false))
   }, [])
 
   const leafIndex = useMemo(() => (data ? indexLeaves(data) : {}), [data])
   const sourceMap = useMemo(() => (data ? indexSources(data) : {}), [data])
+  const chapterMeta = useMemo(() => (data ? indexChapterMeta(data) : {}), [data])
   const sourceKeys = useMemo(() => {
     const keys = Object.keys(sourceMap)
     return ['RO', ...keys.filter(k => k !== 'RO').sort()]
@@ -168,12 +163,12 @@ export default function MinutaWizard() {
         structure: data,
         edits,
         isExcluded,
-        subtitle: `Minuta de Regimento Interno — ${data.title}`,
+        subtitle: 'Minuta de Regulamento Geral — gerada a partir dos regulamentos de 9 CBMs',
       })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = 'Minuta_RI_Operacional_CBMRO.docx'
+      a.download = 'Minuta_Regulamento_Geral_CBMRO.docx'
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
@@ -186,16 +181,16 @@ export default function MinutaWizard() {
   if (loading) {
     return (
       <>
-        <div className="page-header"><div className="page-header-left"><h2 className="page-title">Minuta de Regimento Interno</h2></div></div>
-        <div className="page-body" style={{ padding: 32 }}><p style={{ color: 'var(--text-muted)' }}>Carregando dados…</p></div>
+        <div className="page-header"><div className="page-header-left"><h2 className="page-title">Minuta do Regulamento Geral</h2></div></div>
+        <LoadingState label="Carregando minuta do regulamento…" />
       </>
     )
   }
   if (error) {
     return (
       <>
-        <div className="page-header"><div className="page-header-left"><h2 className="page-title">Minuta de Regimento Interno</h2></div></div>
-        <div className="page-body" style={{ padding: 32 }}><p style={{ color: 'var(--cbm-red-700)' }}>{error}</p></div>
+        <div className="page-header"><div className="page-header-left"><h2 className="page-title">Minuta do Regulamento Geral</h2></div></div>
+        <ErrorState title="Não foi possível carregar a minuta" hint={error} />
       </>
     )
   }
@@ -212,19 +207,30 @@ export default function MinutaWizard() {
   function renderArticle(art) {
     const blocks = []
     if (art.chapterTitle) {
+      const meta = chapterMeta[art.editId.split('/')[0]] ?? {}
       blocks.push(
-        <p key={`c-${art.number}`} id={chapterIdOf(art.editId)}
-          style={{ textAlign: 'center', fontWeight: 700, margin: '20px 0 6px', scrollMarginTop: 70 }}>
-          CAPÍTULO {romanize(art.chapterNumber)}<br />{art.chapterTitle}
-        </p>,
-      )
-    }
-    if (art.sectionTitle) {
-      blocks.push(
-        <p key={`s-${art.number}`} id={sectionIdOf(art.editId)}
-          style={{ textAlign: 'center', fontWeight: 600, fontStyle: 'italic', margin: '10px 0 6px', scrollMarginTop: 70 }}>
-          Seção {romanize(art.sectionNumber)} — {art.sectionTitle}
-        </p>,
+        <div key={`c-${art.number}`} id={chapterIdOf(art.editId)} style={{ margin: '20px 0 6px', scrollMarginTop: 70 }}>
+          <p style={{ textAlign: 'center', fontWeight: 700, margin: 0 }}>
+            CAPÍTULO {romanize(art.chapterNumber)}<br />{art.chapterTitle}
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 8, marginTop: 6, flexWrap: 'wrap' }}>
+            {meta.primary && (
+              <span style={{
+                fontSize: 11, fontFamily: 'Inter, sans-serif', color: 'var(--navy-850)',
+                background: 'var(--gray-100)', border: '1px solid var(--border-card)',
+                borderRadius: 99, padding: '2px 10px', fontWeight: 600,
+              }}>Fonte primária: {meta.primary.name} — {meta.primary.docLabel}</span>
+            )}
+            {meta.hasParcial && (
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 11,
+                fontFamily: 'Inter, sans-serif', color: 'var(--cbm-gold-500, #e69500)',
+                background: 'rgba(230,149,0,0.1)', border: '1px solid rgba(230,149,0,0.3)',
+                borderRadius: 99, padding: '2px 10px', fontWeight: 600,
+              }}><AlertTriangle size={11} /> contém artigo(s) com correspondência parcial</span>
+            )}
+          </div>
+        </div>,
       )
     }
 
@@ -292,10 +298,11 @@ export default function MinutaWizard() {
     <>
       <div className="page-header">
         <div className="page-header-left">
-          <h2 className="page-title">Minuta de Regimento Interno</h2>
+          <h2 className="page-title">Minuta do Regulamento Geral</h2>
           <p className="page-subtitle">
-            Minuta articulada da estrutura operacional do CBMRO — do topo (DPO/COT/DOE)
-            à menor fração — com competências do CBMRO e subsídios de outras legislações.
+            Minuta articulada do Regulamento Geral do CBMRO — 15 capítulos-tema, com
+            competências, serviço operacional, disciplina e demais matérias, a partir dos
+            regulamentos de 9 Corpos de Bombeiros Militares.
           </p>
         </div>
       </div>
@@ -338,19 +345,10 @@ export default function MinutaWizard() {
               <div style={{ fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', fontSize: 11, marginBottom: 8 }}>Sumário</div>
               {data.chapters.map(ch => (
                 <div key={ch.id} style={{ marginBottom: 4 }}>
-                  <button onClick={() => scrollTo(chapterIdOf(ch.id))} style={{
+                  <button onClick={() => scrollTo(chapterIdOf(ch.articles[0]?.editId ?? ch.id))} style={{
                     border: 'none', background: 'none', padding: '2px 0', textAlign: 'left', cursor: 'pointer',
                     color: 'var(--navy-850)', fontWeight: 600, fontSize: 12.5,
                   }}>{ch.chapterTitle}</button>
-                  {ch.kind === 'organ' && ch.sections.map(s => {
-                    const rm = (removedByEditId[s.editId] ?? []).length
-                    return (
-                      <button key={s.editId} onClick={() => scrollTo(sectionIdOf(s.editId))} style={{
-                        display: 'block', border: 'none', background: 'none', padding: '1px 0 1px 12px', textAlign: 'left',
-                        cursor: 'pointer', color: 'var(--text-muted)', fontSize: 12,
-                      }}>{s.sectionTitle}{rm > 0 && <span style={{ color: 'var(--cbm-red-700)', fontWeight: 700 }}> ·{rm}</span>}</button>
-                    )
-                  })}
                 </div>
               ))}
             </nav>
@@ -417,7 +415,7 @@ export default function MinutaWizard() {
               <button onClick={handleDownload} disabled={generating} style={{
                 display: 'flex', alignItems: 'center', gap: 8, padding: '10px 24px', border: 'none', borderRadius: 7,
                 background: generating ? '#9ca3af' : 'var(--cbm-red-700)', color: '#fff', fontWeight: 600, cursor: generating ? 'wait' : 'pointer', fontSize: 14,
-              }}><Download size={16} />{generating ? 'Gerando…' : 'Baixar Minuta_RI_Operacional_CBMRO.docx'}</button>
+              }}><Download size={16} />{generating ? 'Gerando…' : 'Baixar Minuta_Regulamento_Geral_CBMRO.docx'}</button>
             </div>
           </div>
         )}
@@ -442,7 +440,7 @@ function RemovedBlock({ removed, onRestore, editId }) {
       {open && removed.map(it => (
         <label key={it.index} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', padding: '2px 0', cursor: 'pointer', color: '#9ca3af' }}>
           <input type="checkbox" checked={false} onChange={() => onRestore(editId, it.index)} style={{ marginTop: 4, cursor: 'pointer' }} />
-          <span style={{ textDecoration: 'line-through' }}>{it.text}{it.source && it.source !== 'ro' ? ` (${it.source})` : ''}</span>
+          <span style={{ textDecoration: 'line-through' }}>{it.text}{it.source ? ` (${it.source})` : ''}</span>
         </label>
       ))}
     </div>
@@ -459,11 +457,6 @@ function PlainPreview({ articles }) {
           {art.chapterTitle && (
             <p style={{ textAlign: 'center', fontWeight: 700, margin: '18px 0 6px' }}>
               CAPÍTULO {romanize(art.chapterNumber)}<br />{art.chapterTitle}
-            </p>
-          )}
-          {art.sectionTitle && (
-            <p style={{ textAlign: 'center', fontWeight: 600, fontStyle: 'italic', margin: '8px 0 8px' }}>
-              Seção {romanize(art.sectionNumber)} — {art.sectionTitle}
             </p>
           )}
           <p style={{ textAlign: 'justify', margin: '0 0 6px', textIndent: art.incisos.length ? 0 : '1.25em' }}>

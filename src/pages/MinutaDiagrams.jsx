@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Printer, X, Network, LayoutGrid, ChevronsDownUp, ChevronsUpDown } from 'lucide-react'
 import MinutaOrgChart from '../components/MinutaOrgChart.jsx'
 import MinutaMindMap from '../components/MinutaMindMap.jsx'
+import { fetchJson } from '../lib/dataCache.js'
 
 // Badge de fonte (RO não recebe badge); espelha o padrão do MinutaWizard.
 // whiteSpace:nowrap + inline-block mantêm a citação inteira numa linha só
@@ -11,7 +12,7 @@ function srcBadge(source) {
   return (
     <span style={{
       marginLeft: 6, fontSize: 11, fontFamily: 'Inter, sans-serif', fontWeight: 600,
-      color: '#fff', background: '#c8102e', borderRadius: 4, padding: '1px 6px',
+      color: '#fff', background: 'var(--cbm-red-700)', borderRadius: 4, padding: '1px 6px',
       whiteSpace: 'nowrap', display: 'inline-block', verticalAlign: 'baseline',
     }}>{source}</span>
   )
@@ -86,8 +87,7 @@ export default function MinutaDiagrams() {
   }
 
   useEffect(() => {
-    fetch('/database/minuta_structure.json')
-      .then(r => { if (!r.ok) throw new Error(r.status); return r.json() })
+    fetchJson('/database/minuta_structure.json')
       .then(setData)
       .catch(() => setError('Erro ao carregar minuta_structure.json. Execute build_minuta_structure.py.'))
       .finally(() => setLoading(false))
@@ -111,11 +111,11 @@ export default function MinutaDiagrams() {
   }
   if (error || !data) {
     return (<>{header}<div className="page-body" style={{ padding: 32 }}>
-      <p style={{ color: '#c8102e' }}>{error || 'Sem dados.'}</p></div></>)
+      <p style={{ color: 'var(--cbm-red-700)' }}>{error || 'Sem dados.'}</p></div></>)
   }
   if (!data.commandChart) {
     return (<>{header}<div className="page-body" style={{ padding: 32 }}>
-      <p style={{ color: '#c8102e' }}>
+      <p style={{ color: 'var(--cbm-red-700)' }}>
         Campo <code>commandChart</code> ausente no minuta_structure.json. Execute
         <code> python scripts/build_minuta_structure.py</code>.</p></div></>)
   }

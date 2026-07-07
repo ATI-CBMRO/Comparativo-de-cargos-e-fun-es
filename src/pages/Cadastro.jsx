@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/auth.jsx'
 
 const MENSAGENS = {
@@ -9,16 +9,15 @@ const MENSAGENS = {
 }
 
 export default function Cadastro() {
-  const { cadastrar, naoAutorizado, user } = useAuth()
-  const navigate = useNavigate()
+  const { cadastrar, naoAutorizado } = useAuth()
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [confirma, setConfirma] = useState('')
   const [erro, setErro] = useState('')
   const [enviando, setEnviando] = useState(false)
 
-  // Cadastrou e foi autorizado: o AuthProvider seta `user`; então navegamos.
-  useEffect(() => { if (user) navigate('/revisao', { replace: true }) }, [user, navigate])
+  // Cadastrou e foi autorizado: a navegação pós-cadastro acontece no nível do App
+  // (troca de LoggedOutRoutes para o portal autenticado assim que `user` é confirmado).
   // Conta criada, mas e-mail não está na lista de convidados: para o "Criando…".
   useEffect(() => { if (naoAutorizado) setEnviando(false) }, [naoAutorizado])
 
@@ -44,9 +43,9 @@ export default function Cadastro() {
         <p className="login-sub">Use o e-mail que foi liberado pelo administrador</p>
 
         {naoAutorizado && (
-          <div className="login-erro">Este e-mail ainda não foi liberado pelo administrador.</div>
+          <div className="form-error">Este e-mail ainda não foi liberado pelo administrador.</div>
         )}
-        {erro && <div className="login-erro">{erro}</div>}
+        {erro && <div className="form-error">{erro}</div>}
 
         <label className="login-label">E-mail
           <input className="login-input" type="email" value={email}

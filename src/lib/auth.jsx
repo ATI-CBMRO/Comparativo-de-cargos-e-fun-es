@@ -6,6 +6,7 @@ import {
 import { doc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore'
 import { auth, db } from './firebase.js'
 import { normalizeEmail } from './membersStats.js'
+import { PROTOTYPE_STORAGE_KEY } from './suggestionsStore.js'
 
 const AuthContext = createContext(null)
 
@@ -65,7 +66,12 @@ export function AuthProvider({ children }) {
   const cadastrar = async (email, senha) => {
     await createUserWithEmailAndPassword(auth, normalizeEmail(email), senha)
   }
-  const sair = () => signOut(auth)
+  const sair = async () => {
+    await signOut(auth)
+    // Limpa só as chaves do protótipo de revisão (localStorage), nunca localStorage.clear() —
+    // outras chaves da página não pertencem a este app.
+    try { window.localStorage?.removeItem(PROTOTYPE_STORAGE_KEY) } catch { /* ambiente sem localStorage */ }
+  }
   const recuperarSenha = (email) => sendPasswordResetEmail(auth, normalizeEmail(email))
 
   return (

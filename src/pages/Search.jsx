@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Search, FileText, ChevronRight, AlertCircle } from 'lucide-react'
+import { fetchJson } from '../lib/dataCache.js'
 
 function highlightText(text, query) {
   if (!query || !text) return text
@@ -24,6 +25,7 @@ function getSnippet(text, query, maxLen = 200) {
 
 export default function SearchPage() {
   const [data, setData] = useState(null)
+  const [dataError, setDataError] = useState(null)
   const [markdownCache, setMarkdownCache] = useState({})
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
@@ -32,9 +34,9 @@ export default function SearchPage() {
 
   // Carrega dados dos estados
   useEffect(() => {
-    fetch('/database/states_data.json')
-      .then(r => r.json())
+    fetchJson('/database/states_data.json')
       .then(setData)
+      .catch(() => setDataError('Não foi possível carregar a base de dados. Recarregue a página.'))
   }, [])
 
   // Debounce da query
@@ -122,6 +124,14 @@ export default function SearchPage() {
       </div>
 
       <div className="page-body">
+        {dataError && (
+          <div className="empty-state">
+            <AlertCircle size={40} className="empty-state-icon" />
+            <h3>Erro ao carregar</h3>
+            <p>{dataError}</p>
+          </div>
+        )}
+
         {/* Campo de busca principal */}
         <div style={{ marginBottom: 16 }}>
           <div className="search-input-wrap" style={{ maxWidth: 640 }}>

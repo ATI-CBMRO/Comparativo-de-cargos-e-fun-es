@@ -1,16 +1,25 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
+import { fetchJson } from '../lib/dataCache.js'
 
 export default function StatesList() {
   const [data, setData] = useState(null)
+  const [error, setError] = useState(null)
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('/database/states_data.json')
-      .then(r => r.json())
+    fetchJson('/database/states_data.json')
       .then(setData)
+      .catch(() => setError('Não foi possível carregar a base de dados. Recarregue a página.'))
   }, [])
+
+  if (error) return (
+    <div className="empty-state" style={{ marginTop: 80 }}>
+      <h3>Erro ao carregar</h3>
+      <p>{error}</p>
+    </div>
+  )
 
   if (!data) return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60vh' }}>

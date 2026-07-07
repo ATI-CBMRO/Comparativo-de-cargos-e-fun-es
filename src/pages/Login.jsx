@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../lib/auth.jsx'
 
 const MENSAGENS = {
@@ -10,18 +9,15 @@ const MENSAGENS = {
 }
 
 export default function Login() {
-  const { entrar, recuperarSenha, naoAutorizado, user } = useAuth()
-  const navigate = useNavigate()
+  const { entrar, recuperarSenha, naoAutorizado } = useAuth()
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [erro, setErro] = useState('')
   const [aviso, setAviso] = useState('')
   const [enviando, setEnviando] = useState(false)
 
-  // Só avança quando o usuário for de fato confirmado (evita a corrida do 1º login).
-  useEffect(() => {
-    if (user) navigate('/revisao', { replace: true })
-  }, [user, navigate])
+  // A navegação pós-login acontece no nível do App (troca de LoggedOutRoutes para o
+  // portal autenticado assim que `user` é confirmado), honrando o destino original.
 
   // Logou no Firebase mas não é membro autorizado: para o "Entrando…".
   useEffect(() => {
@@ -58,9 +54,9 @@ export default function Login() {
         <p className="login-sub">Acesso restrito a convidados</p>
 
         {naoAutorizado && (
-          <div className="login-erro">Seu acesso ainda não foi liberado pelo administrador.</div>
+          <div className="form-error">Seu acesso ainda não foi liberado pelo administrador.</div>
         )}
-        {erro && <div className="login-erro">{erro}</div>}
+        {erro && <div className="form-error">{erro}</div>}
         {aviso && <div className="login-aviso">{aviso}</div>}
 
         <label className="login-label">E-mail

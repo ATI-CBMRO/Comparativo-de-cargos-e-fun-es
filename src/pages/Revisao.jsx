@@ -2,14 +2,20 @@ import { useEffect, useMemo, useState } from 'react'
 import { MessageSquare } from 'lucide-react'
 import { useAuth } from '../lib/auth.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
-import { incisoDispositivoId, caputDispositivoId } from '../lib/dispositivoId.js'
-import { groupByDispositivo, countByDispositivo } from '../lib/reviewGroup.js'
+import { incisoDispositivoId, caputDispositivoId, parseDispositivoId } from '../lib/dispositivoId.js'
+import { chapterIdOf } from '../lib/minutaTargets.js'
+import { groupByDispositivo, countByDispositivo, countByChapter } from '../lib/reviewGroup.js'
 import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
   setAdminStatus, subscribeFinalTexts, saveFinalText,
 } from '../lib/reviewData.js'
 import { gerarProposta } from '../lib/gerarProposta.js'
 import RevisaoModal from '../components/RevisaoModal.jsx'
+import RevisaoChapterRail from '../components/RevisaoChapterRail.jsx'
+import { fetchJson } from '../lib/dataCache.js'
+import { LoadingState, ErrorState } from '../components/Status.jsx'
+
+const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
 function Rail({ count, onClick }) {
   return (
@@ -30,18 +36,19 @@ export default function Revisao() {
   const [aberto, setAberto] = useState(null) // { id, label, trecho }
 
   useEffect(() => {
-    fetch('/database/minuta_structure.json')
-      .then(r => { if (!r.ok) throw new Error(r.status); return r.json() })
+    fetchJson('/database/minuta_structure.json')
       .then(setData)
       .catch(() => setErro('Não foi possível carregar a minuta.'))
   }, [])
 
+  // subscribeSuggestions retorna o unsubscribe do onSnapshot — cleanup correto do efeito.
   useEffect(() => subscribeSuggestions(
     setSuggestions,
     (e) => console.error('Erro na assinatura de sugestões:', e),
   ), [])
 
   const [finals, setFinals] = useState(new Map())
+  // Idem: subscribeFinalTexts também retorna o unsubscribe do onSnapshot.
   useEffect(() => subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e)), [])
 
   const counts = useMemo(() => countByDispositivo(suggestions), [suggestions])
@@ -53,6 +60,49 @@ export default function Revisao() {
     return n
   }, [finals])
 
+  // Sumário de capítulos (a partir dos mesmos `articles`, sem recomputar buildArticles).
+  const chapters = useMemo(() => {
+    const list = []
+    for (const a of articles) {
+      if (a.chapterNumber) list.push({ chapterId: chapterIdOf(a.editId), chapterTitle: a.chapterTitle })
+    }
+    return list
+  }, [articles])
+
+  // Sugestões por capítulo, separadas em abertas × resolvidas (pelo status do texto final).
+  const chapterCounts = useMemo(
+    () => countByChapter(suggestions, finals, parseDispositivoId, chapterIdOf),
+    [suggestions, finals],
+  )
+
+  const [activeChapterId, setActiveChapterId] = useState(null)
+
+  // Destaca no sumário o capítulo visível enquanto o documento rola.
+  useEffect(() => {
+    if (!chapters.length) return
+    const alvos = chapters
+      .map(c => ({ id: c.chapterId, el: document.getElementById(chapterAnchorId(c.chapterId)) }))
+      .filter(x => x.el)
+    if (!alvos.length) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visiveis = entries.filter(e => e.isIntersecting)
+        if (!visiveis.length) return
+        const topo = visiveis.reduce((a, b) => (a.boundingClientRect.top < b.boundingClientRect.top ? a : b))
+        const achado = alvos.find(x => x.el === topo.target)
+        if (achado) setActiveChapterId(achado.id)
+      },
+      { rootMargin: '-96px 0px -70% 0px', threshold: 0 },
+    )
+    alvos.forEach(x => observer.observe(x.el))
+    return () => observer.disconnect()
+  }, [chapters])
+
+  const scrollToChapter = (chapterId) => {
+    const el = document.getElementById(chapterAnchorId(chapterId))
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   const abrir = (id, label, trecho) => setAberto({ id, label, trecho })
 
   const handleAdd = (texto) => addSuggestion({
@@ -63,8 +113,8 @@ export default function Revisao() {
     autor: { uid: user.uid, nome: user.nome },
   })
 
-  if (erro) return <div style={{ padding: 32, color: '#c8102e' }}>{erro}</div>
-  if (!data) return <div style={{ padding: 32 }}>Carregando minuta…</div>
+  if (erro) return <ErrorState title="Erro ao carregar" hint={erro} />
+  if (!data) return <LoadingState label="Carregando minuta…" />
 
   return (
     <>
@@ -80,14 +130,27 @@ export default function Revisao() {
       </div>
 
       <div className="page-body">
-        <div className="rev-doc">
+        <div className="rc-layout">
+          <RevisaoChapterRail
+            chapters={chapters}
+            counts={chapterCounts}
+            activeChapterId={activeChapterId}
+            onSelect={scrollToChapter}
+          />
+          <div className="rev-doc">
           {articles.map(art => {
             const caputId = caputDispositivoId(art.editId)
             const caputLabel = `${articleLabel(art.number)}`
             return (
               <div key={art.number} className="rev-art">
                 {art.chapterTitle && (
-                  <p className="rev-chapter">CAPÍTULO {romanize(art.chapterNumber)}<br />{art.chapterTitle}</p>
+                  <p
+                    className="rev-chapter"
+                    id={chapterAnchorId(chapterIdOf(art.editId))}
+                    style={{ scrollMarginTop: 'calc(var(--header-h) + 12px)' }}
+                  >
+                    CAPÍTULO {romanize(art.chapterNumber)}<br />{art.chapterTitle}
+                  </p>
                 )}
                 {art.sectionTitle && (
                   <p className="rev-section">Seção {romanize(art.sectionNumber)} — {art.sectionTitle}</p>
@@ -113,6 +176,7 @@ export default function Revisao() {
               </div>
             )
           })}
+          </div>
         </div>
       </div>
 

@@ -5,6 +5,8 @@ import { suggestionsStore as store } from '../lib/suggestionsStore.js'
 import IdentityBar from '../components/IdentityBar.jsx'
 import ChapterRail from '../components/ChapterRail.jsx'
 import SuggestionPanel from '../components/SuggestionPanel.jsx'
+import { fetchJson } from '../lib/dataCache.js'
+import { ErrorState } from '../components/Status.jsx'
 
 const incisoKey = (editId, index) => `${editId}#${index}`
 
@@ -45,9 +47,7 @@ export default function MinutaRevisao() {
     let alive = true
     ;(async () => {
       try {
-        const r = await fetch('/database/minuta_structure.json')
-        if (!r.ok) throw new Error(r.status)
-        const structure = await r.json()
+        const structure = await fetchJson('/database/minuta_structure.json')
         const chs = buildTargets(structure)
         await seedExampleIfEmpty(chs)
         const [us, cu, ct] = [await store.listUsers(), await store.getCurrentUser(), await store.getChapterCounts()]
@@ -94,7 +94,7 @@ export default function MinutaRevisao() {
     return (
       <>
         <div className="page-header"><div className="page-header-left"><h2 className="page-title">Revisão da Minuta</h2></div></div>
-        <div className="page-body" style={{ padding: 32 }}><p style={{ color: '#c8102e' }}>{error}</p></div>
+        <div className="page-body"><ErrorState title="Erro ao carregar" hint={error} /></div>
       </>
     )
   }
@@ -137,12 +137,12 @@ export default function MinutaRevisao() {
         <div className="rev-layout" style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
           <ChapterRail chapters={chapters} counts={counts} selectedId={selectedChapterId} onSelect={selectChapter} />
 
-          <div className="rev-doc" style={{ flex: 1.25, minWidth: 0, border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 20px', fontFamily: 'Georgia, "Times New Roman", serif', color: '#1a1a1a' }}>
+          <div className="rev-doc" style={{ flex: 1.25, minWidth: 0, border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 20px', fontFamily: 'Georgia, "Times New Roman", serif', color: 'var(--doc-ink)' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 8 }}>
-              <p style={{ textAlign: 'center', fontWeight: 700, color: '#121d3d', margin: 0, flex: 1 }}>
+              <p style={{ textAlign: 'center', fontWeight: 700, color: 'var(--navy-850)', margin: 0, flex: 1 }}>
                 CAPÍTULO {romanize(chapter.chapterNumber)} — {chapter.chapterTitle}
               </p>
-              <button onClick={selectNovaSecao} style={{ font: '700 10px Inter, sans-serif', color: '#c8102e', border: '1px dashed #e3a3ac', borderRadius: 5, padding: '3px 8px', background: '#fff', cursor: 'pointer' }}>+ nova seção</button>
+              <button onClick={selectNovaSecao} style={{ font: '700 10px Inter, sans-serif', color: 'var(--cbm-red-700)', border: '1px dashed #e3a3ac', borderRadius: 5, padding: '3px 8px', background: '#fff', cursor: 'pointer' }}>+ nova seção</button>
             </div>
             {chapter.articles.map(art => (
               <div key={art.number} style={{ marginBottom: 10 }}>
@@ -164,7 +164,7 @@ export default function MinutaRevisao() {
                     }}>
                       <span><strong>{romanize(inc.index + 1)} -</strong> {inc.text}</span>
                       {n > 0 && (
-                        <span style={{ marginLeft: 'auto', alignSelf: 'center', minWidth: 16, height: 15, padding: '0 4px', background: '#c8102e', color: '#fff', borderRadius: 8, font: '700 9px Inter, sans-serif', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>{n}</span>
+                        <span style={{ marginLeft: 'auto', alignSelf: 'center', minWidth: 16, height: 15, padding: '0 4px', background: 'var(--cbm-red-700)', color: '#fff', borderRadius: 8, font: '700 9px Inter, sans-serif', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>{n}</span>
                       )}
                     </div>
                   )

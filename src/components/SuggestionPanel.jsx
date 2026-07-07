@@ -62,13 +62,13 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
   return (
     <div className="rev-panel rev-panel-active" style={{ flex: 1, minWidth: 0, alignSelf: 'flex-start', position: 'sticky', top: 'calc(var(--header-h) + 8px)', background: '#f7f9fc', borderRadius: 8, padding: 12, display: 'flex', flexDirection: 'column', maxHeight: 'calc(100vh - var(--header-h) - 24px)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', marginBottom: 8 }}>
-        <div style={{ font: '700 11px Inter, sans-serif', color: '#121d3d', textTransform: 'uppercase', letterSpacing: .3 }}>
+        <div style={{ font: '700 11px Inter, sans-serif', color: 'var(--navy-850)', textTransform: 'uppercase', letterSpacing: .3 }}>
           {target.label}
-          <span style={{ display: 'block', fontWeight: 500, textTransform: 'none', color: '#8a93a6', fontSize: 10.5 }}>
+          <span style={{ display: 'block', fontWeight: 500, textTransform: 'none', color: 'var(--text-placeholder)', fontSize: 10.5 }}>
             {suggestions.length} sugestão(ões)
           </span>
         </div>
-        <button onClick={onClose} style={{ marginLeft: 'auto', border: 'none', background: 'none', cursor: 'pointer', color: '#8a93a6', fontSize: 16 }} title="Fechar">×</button>
+        <button onClick={onClose} style={{ marginLeft: 'auto', border: 'none', background: 'none', cursor: 'pointer', color: 'var(--text-placeholder)', fontSize: 16 }} title="Fechar">×</button>
       </div>
 
       <div style={{ overflow: 'auto', flex: 1 }}>
@@ -86,27 +86,27 @@ export default function SuggestionPanel({ target, suggestions, users, currentUse
             {incisoTypes.map(t => (
               <button key={t.v} onClick={() => chooseType(t.v)} style={{
                 font: '700 9px Inter, sans-serif', padding: '4px 9px', borderRadius: 5, cursor: 'pointer',
-                border: '1px solid', borderColor: type === t.v ? '#c8102e' : '#d6deea',
-                background: type === t.v ? '#c8102e' : '#fff', color: type === t.v ? '#fff' : '#5a6377',
+                border: '1px solid', borderColor: type === t.v ? 'var(--cbm-red-700)' : 'var(--badge-neutral-bg)',
+                background: type === t.v ? 'var(--cbm-red-700)' : '#fff', color: type === t.v ? '#fff' : 'var(--text-faint)',
               }}>{t.label}</button>
             ))}
           </div>
         )}
         {isNovaSecao && (
           <input value={sectionTitle} onChange={e => setSectionTitle(e.target.value)} placeholder="Título da nova seção (ex.: Das Atribuições do Chefe)"
-            style={{ width: '100%', boxSizing: 'border-box', border: '1px solid #d6deea', borderRadius: 5, fontSize: 12.5, padding: 6, marginBottom: 6 }} />
+            style={{ width: '100%', boxSizing: 'border-box', border: '1px solid var(--badge-neutral-bg)', borderRadius: 5, fontSize: 12.5, padding: 6, marginBottom: 6 }} />
         )}
         {needsProposed && (
           <textarea value={proposed} onChange={e => setProposed(e.target.value)}
             placeholder={type === 'incluir' || type === 'incluir-secao' ? 'Texto do novo inciso/seção…' : 'Texto proposto…'}
-            style={{ width: '100%', boxSizing: 'border-box', minHeight: 50, border: '1px solid #d6deea', borderRadius: 5, fontSize: 12.5, padding: 6, background: '#fbfcfe' }} />
+            style={{ width: '100%', boxSizing: 'border-box', minHeight: 50, border: '1px solid var(--badge-neutral-bg)', borderRadius: 5, fontSize: 12.5, padding: 6, background: '#fbfcfe' }} />
         )}
         {type === 'remover' && (
-          <p style={{ font: '11px Inter, sans-serif', color: '#5a6377', margin: '0 0 4px' }}>Propondo a remoção deste item.</p>
+          <p style={{ font: '11px Inter, sans-serif', color: 'var(--text-faint)', margin: '0 0 4px' }}>Propondo a remoção deste item.</p>
         )}
         <input value={justification} onChange={e => setJustification(e.target.value)} placeholder="Justificativa (opcional)"
-          style={{ width: '100%', boxSizing: 'border-box', border: '1px solid #d6deea', borderRadius: 5, fontSize: 12, padding: 6, marginTop: 6 }} />
-        <button onClick={submit} style={{ marginTop: 6, border: 'none', background: '#c8102e', color: '#fff', font: '700 10px Inter, sans-serif', padding: '6px 12px', borderRadius: 5, cursor: 'pointer' }}>
+          style={{ width: '100%', boxSizing: 'border-box', border: '1px solid var(--badge-neutral-bg)', borderRadius: 5, fontSize: 12, padding: 6, marginTop: 6 }} />
+        <button onClick={submit} style={{ marginTop: 6, border: 'none', background: 'var(--cbm-red-700)', color: '#fff', font: '700 10px Inter, sans-serif', padding: '6px 12px', borderRadius: 5, cursor: 'pointer' }}>
           Enviar sugestão
         </button>
       </div>

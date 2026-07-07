@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route, NavLink, Link, useLocation } from 'react-router-dom'
+import { Routes, Route, Navigate, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
-  Search, Library, ScrollText, Menu, X, Network, LogOut, LogIn,
-  MessageSquare, ShieldCheck, MessagesSquare, Gavel
+  Search, Library, ScrollText, Menu, X, Network, LogOut,
+  MessageSquare, ShieldCheck, BookMarked, Scale
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -15,6 +15,8 @@ import MinutaWizard from './pages/MinutaWizard.jsx'
 import MinutaDiagrams from './pages/MinutaDiagrams.jsx'
 import MinutaRevisao from './pages/MinutaRevisao.jsx'
 import MinutaDeliberacao from './pages/MinutaDeliberacao.jsx'
+import RegulamentoWizard from './pages/RegulamentoWizard.jsx'
+import RegulamentoComparator from './pages/RegulamentoComparator.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
@@ -22,14 +24,17 @@ import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import { useAuth } from './lib/auth.jsx'
 
+// /minuta/revisao e /minuta/deliberacao (protótipo CONDEG em localStorage) saíram do
+// menu — a Revisão da Minuta oficial (Firebase, item abaixo) assumiu o papel de produção.
+// As rotas continuam acessíveis por URL direta; nada foi apagado (ver CLAUDE.md).
 const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
   { to: '/estados', icon: BookOpen, label: 'Estados' },
   { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
   { to: '/minuta', icon: ScrollText, label: 'Minuta RI' },
   { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
-  { to: '/minuta/revisao', icon: MessagesSquare, label: 'Revisão CONDEG' },
-  { to: '/minuta/deliberacao', icon: Gavel, label: 'Deliberação CONDEG' },
+  { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento' },
+  { to: '/regulamento/comparar', icon: Scale, label: 'Comparar Regulamento' },
   { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
   { to: '/busca', icon: Search, label: 'Busca Textual' },
 ]
@@ -69,16 +74,9 @@ function Header({ navOpen, onToggleNav }) {
 
 function HeaderUserBox() {
   const { user, sair } = useAuth()
-  if (!user) {
-    // Sem login: ponto de entrada visível para os convidados (Revisão da Minuta).
-    return (
-      <div className="app-header-user">
-        <Link to="/login" className="app-header-user-enter" title="Entrar na Revisão da Minuta">
-          <LogIn size={16} /> Entrar
-        </Link>
-      </div>
-    )
-  }
+  // O cabeçalho só é renderizado com o usuário autenticado (ver App()); sem login,
+  // o portal inteiro mostra apenas as telas de login/cadastro.
+  if (!user) return null
   return (
     <div className="app-header-user">
       <span className="app-header-user-name">{user.nome}</span>
@@ -126,10 +124,10 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
         ))}
 
         {user && (
-          <NavLink to="/revisao" onClick={onNavigate} title="Revisão"
+          <NavLink to="/revisao" onClick={onNavigate} title="Revisão da Minuta"
             className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}>
             <MessageSquare className="nav-icon" size={18} />
-            <span className="nav-item-label">Revisão</span>
+            <span className="nav-item-label">Revisão da Minuta</span>
           </NavLink>
         )}
         {user?.role === 'admin' && (
@@ -144,14 +142,46 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
       <div className="sidebar-footer">
         <p className="sidebar-footer-text">
           Dados das legislações oficiais<br />
-          <span style={{ color: '#4a5680' }}>Atualizado em junho/2026</span>
+          <span style={{ color: 'var(--navy-500)' }}>Atualizado em junho/2026</span>
         </p>
       </div>
     </aside>
   )
 }
 
+function FullPageLoading() {
+  return (
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div className="spinner" />
+    </div>
+  )
+}
+
+// Usuário já autenticado que chega em /login ou /cadastro (link antigo, aba duplicada
+// etc.): manda de volta ao destino original que ele tentou acessar antes do login
+// (guardado em location.state.from pelo LoggedOutRoutes), ou para o Início.
+function AlreadyLoggedInRedirect() {
+  const location = useLocation()
+  return <Navigate to={location.state?.from || '/'} replace />
+}
+
+// Portal inteiro exige login: sem sessão válida, só /login e /cadastro respondem —
+// qualquer outra URL redireciona para /login guardando o destino pedido, para retomá-lo
+// assim que a pessoa autenticar.
+function LoggedOutRoutes() {
+  const location = useLocation()
+  const from = `${location.pathname}${location.search}`
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="*" element={<Navigate to="/login" replace state={{ from }} />} />
+    </Routes>
+  )
+}
+
 export default function App() {
+  const { user, loading } = useAuth()
   const [navOpen, setNavOpen] = useState(false)      // gaveta mobile (≤900px)
   const [collapsed, setCollapsed] = useState(false)  // trilha de ícones (desktop)
   const location = useLocation()
@@ -161,6 +191,10 @@ export default function App() {
 
   // Clicar numa aba: navega, fecha a gaveta mobile e recolhe a barra no desktop.
   const handleNavigate = () => { setNavOpen(false); setCollapsed(true) }
+
+  // Evita "piscar" a tela de login enquanto o Firebase ainda resolve a sessão.
+  if (loading) return <FullPageLoading />
+  if (!user) return <LoggedOutRoutes />
 
   return (
     <div className={`app-shell${collapsed ? ' nav-collapsed' : ''}`}>
@@ -188,8 +222,10 @@ export default function App() {
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<MinutaRevisao />} />
           <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/regulamento" element={<RegulamentoWizard />} />
+          <Route path="/regulamento/comparar" element={<RegulamentoComparator />} />
+          <Route path="/login" element={<AlreadyLoggedInRedirect />} />
+          <Route path="/cadastro" element={<AlreadyLoggedInRedirect />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
           <Route path="/acessos" element={<ProtectedRoute requireAdmin><Acessos /></ProtectedRoute>} />
         </Routes>

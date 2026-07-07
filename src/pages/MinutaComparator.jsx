@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { GitCompare, Info, AlertCircle, FileDown, ScrollText, PanelLeftClose, PanelLeftOpen } from 'lucide-react'
 import { MATRIX_ROWS } from '../lib/comparatorRender.jsx'
+import { fetchJson } from '../lib/dataCache.js'
+import { LoadingState, ErrorState } from '../components/Status.jsx'
 
 function ProvBadge({ provenance }) {
   const curado = provenance === 'curado'
@@ -164,8 +166,7 @@ export default function MinutaComparator() {
   const [navOpen, setNavOpen] = useState(true)
 
   useEffect(() => {
-    fetch('/database/comparativo_minuta.json')
-      .then(r => (r.ok ? r.json() : Promise.reject()))
+    fetchJson('/database/comparativo_minuta.json')
       .then(d => { setData(d); setOrganKey(d.organs[0]?.key || null) })
       .catch(() => setError(true))
   }, [])
@@ -196,14 +197,14 @@ export default function MinutaComparator() {
 
   if (error) {
     return (
-      <div className="empty-state" style={{ marginTop: 24 }}>
-        <GitCompare size={40} className="empty-state-icon" />
-        <h3>Comparativo não encontrado</h3>
-        <p>Execute <code>python scripts/build_minuta_comparison.py</code> para gerar os dados.</p>
-      </div>
+      <ErrorState
+        icon={GitCompare}
+        title="Comparativo não encontrado"
+        hint={<>Execute <code>python scripts/build_minuta_comparison.py</code> para gerar os dados.</>}
+      />
     )
   }
-  if (!data) return <div className="empty-state"><div className="spinner" /></div>
+  if (!data) return <LoadingState label="" />
 
   return (
     <>

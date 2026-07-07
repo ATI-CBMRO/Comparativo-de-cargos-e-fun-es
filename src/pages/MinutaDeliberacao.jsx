@@ -7,6 +7,8 @@ import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { suggestionsStore as store } from '../lib/suggestionsStore.js'
 import IdentityBar from '../components/IdentityBar.jsx'
 import SuggestionCard from '../components/SuggestionCard.jsx'
+import { fetchJson } from '../lib/dataCache.js'
+import { ErrorState, LoadingState } from '../components/Status.jsx'
 
 // Agrupa sugestões em "itens" deliberáveis por (editId, incisoIndex).
 function groupItems(chapters, suggestions) {
@@ -57,9 +59,7 @@ export default function MinutaDeliberacao() {
     let alive = true
     ;(async () => {
       try {
-        const r = await fetch('/database/minuta_structure.json')
-        if (!r.ok) throw new Error(r.status)
-        const struct = await r.json()
+        const struct = await fetchJson('/database/minuta_structure.json')
         const chs = buildTargets(struct)
         const [us, cu] = [await store.listUsers(), await store.getCurrentUser()]
         if (!alive) return
@@ -109,10 +109,10 @@ export default function MinutaDeliberacao() {
   }
 
   if (error) {
-    return (<><div className="page-header"><div className="page-header-left"><h2 className="page-title">Deliberação do CONDEG</h2></div></div><div className="page-body" style={{ padding: 32 }}><p style={{ color: '#c8102e' }}>{error}</p></div></>)
+    return (<><div className="page-header"><div className="page-header-left"><h2 className="page-title">Deliberação do CONDEG</h2></div></div><div className="page-body"><ErrorState title="Erro ao carregar" hint={error} /></div></>)
   }
   if (!structure) {
-    return (<><div className="page-header"><div className="page-header-left"><h2 className="page-title">Deliberação do CONDEG</h2></div></div><div className="page-body" style={{ padding: 32 }}><p style={{ color: 'var(--text-muted)' }}>Carregando…</p></div></>)
+    return (<><div className="page-header"><div className="page-header-left"><h2 className="page-title">Deliberação do CONDEG</h2></div></div><div className="page-body"><LoadingState label="Carregando…" /></div></>)
   }
 
   const decidedCount = items.filter(it => resolutions[it.key]?.status === 'decidido').length
@@ -136,10 +136,10 @@ export default function MinutaDeliberacao() {
           <>
             <div className="del-toolbar" style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
               <div className="del-progress" style={{ flex: 1, height: 8, background: '#dde3ec', borderRadius: 4, overflow: 'hidden' }}>
-                <div style={{ height: '100%', width: `${pct}%`, background: '#1a7f37' }} />
+                <div style={{ height: '100%', width: `${pct}%`, background: 'var(--success-text)' }} />
               </div>
               <span style={{ fontSize: 12, color: 'var(--text-muted)', fontWeight: 600 }}>{decidedCount}/{items.length} itens decididos</span>
-              <button onClick={generateFinal} disabled={generating} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, border: 'none', borderRadius: 7, background: generating ? '#9ca3af' : '#1a7f37', color: '#fff', fontWeight: 600, padding: '8px 16px', cursor: generating ? 'wait' : 'pointer', fontSize: 13 }}>
+              <button onClick={generateFinal} disabled={generating} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, border: 'none', borderRadius: 7, background: generating ? '#9ca3af' : 'var(--success-text)', color: '#fff', fontWeight: 600, padding: '8px 16px', cursor: generating ? 'wait' : 'pointer', fontSize: 13 }}>
                 <Download size={15} />{generating ? 'Gerando…' : 'Gerar minuta final (.docx)'}
               </button>
             </div>
@@ -147,15 +147,15 @@ export default function MinutaDeliberacao() {
             <div className="del-layout" style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
               {/* Lista de pendências (entrada) */}
               <div className="del-list" style={{ flex: '0 0 320px', border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', overflow: 'hidden' }}>
-                <div style={{ font: '700 11px Inter, sans-serif', color: '#121d3d', textTransform: 'uppercase', padding: '10px 12px', borderBottom: '1px solid var(--border-card)' }}>Itens com sugestões</div>
+                <div style={{ font: '700 11px Inter, sans-serif', color: 'var(--navy-850)', textTransform: 'uppercase', padding: '10px 12px', borderBottom: '1px solid var(--border-card)' }}>Itens com sugestões</div>
                 {items.map(it => {
                   const decided = resolutions[it.key]?.status === 'decidido'
                   const isActive = it.key === activeKey
                   return (
-                    <button key={it.key} onClick={() => openItem(it)} style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%', textAlign: 'left', border: 'none', borderBottom: '1px solid #eef1f6', background: isActive ? '#fdeaec' : '#fff', padding: '8px 12px', cursor: 'pointer', fontSize: 12 }}>
-                      <span style={{ width: 20, height: 20, borderRadius: '50%', background: '#c8102e', color: '#fff', font: '700 10px Inter, sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{it.suggestions.length}</span>
-                      <span style={{ flex: 1, color: '#444', lineHeight: 1.3 }}>{it.chapterTitle}<br /><span style={{ color: '#8a93a6' }}>{it.location}</span></span>
-                      <span style={{ font: '700 8px Inter, sans-serif', padding: '2px 7px', borderRadius: 10, background: decided ? '#e8f5ec' : '#fff4d6', color: decided ? '#1a7f37' : '#9a6b00', flexShrink: 0 }}>{decided ? 'decidido' : 'pendente'}</span>
+                    <button key={it.key} onClick={() => openItem(it)} style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%', textAlign: 'left', border: 'none', borderBottom: '1px solid var(--bg-app)', background: isActive ? '#fdeaec' : '#fff', padding: '8px 12px', cursor: 'pointer', fontSize: 12 }}>
+                      <span style={{ width: 20, height: 20, borderRadius: '50%', background: 'var(--cbm-red-700)', color: '#fff', font: '700 10px Inter, sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{it.suggestions.length}</span>
+                      <span style={{ flex: 1, color: '#444', lineHeight: 1.3 }}>{it.chapterTitle}<br /><span style={{ color: 'var(--text-placeholder)' }}>{it.location}</span></span>
+                      <span style={{ font: '700 8px Inter, sans-serif', padding: '2px 7px', borderRadius: 10, background: decided ? 'var(--success-bg)' : '#fff4d6', color: decided ? 'var(--success-text)' : 'var(--warning-text)', flexShrink: 0 }}>{decided ? 'decidido' : 'pendente'}</span>
                     </button>
                   )
                 })}
@@ -166,9 +166,9 @@ export default function MinutaDeliberacao() {
                 {!active && <div className="del-placeholder" style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 24, color: 'var(--text-muted)', fontSize: 13 }}>Selecione um item à esquerda para deliberar.</div>}
                 {active && (
                   <div className="del-sheet" style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '16px 18px' }}>
-                    <button className="del-sheet-back" onClick={() => { setActiveKey(null); setFinalDraft('') }} style={{ display: 'none', alignItems: 'center', gap: 6, border: '1px solid #d6deea', background: '#fff', color: '#5a6377', font: '700 11px Inter, sans-serif', padding: '6px 12px', borderRadius: 6, cursor: 'pointer', marginBottom: 10 }}>‹ Voltar à lista</button>
-                    <div style={{ font: '700 11px Inter, sans-serif', color: '#8a93a6', textTransform: 'uppercase', marginBottom: 4 }}>{active.chapterTitle} · {active.location}</div>
-                    <div style={{ fontFamily: 'Georgia, serif', fontSize: 13.5, color: '#1a1a1a', background: '#f7f9fc', borderRadius: 6, padding: '8px 10px', marginBottom: 12 }}>
+                    <button className="del-sheet-back" onClick={() => { setActiveKey(null); setFinalDraft('') }} style={{ display: 'none', alignItems: 'center', gap: 6, border: '1px solid var(--badge-neutral-bg)', background: '#fff', color: 'var(--text-faint)', font: '700 11px Inter, sans-serif', padding: '6px 12px', borderRadius: 6, cursor: 'pointer', marginBottom: 10 }}>‹ Voltar à lista</button>
+                    <div style={{ font: '700 11px Inter, sans-serif', color: 'var(--text-placeholder)', textTransform: 'uppercase', marginBottom: 4 }}>{active.chapterTitle} · {active.location}</div>
+                    <div style={{ fontFamily: 'Georgia, serif', fontSize: 13.5, color: 'var(--doc-ink)', background: '#f7f9fc', borderRadius: 6, padding: '8px 10px', marginBottom: 12 }}>
                       <span style={{ font: '700 8px Inter, sans-serif', textTransform: 'uppercase', color: '#9aa3b5', display: 'block', marginBottom: 2 }}>Texto vigente</span>
                       {active.originalText || '(item sem texto-base)'}
                     </div>
@@ -176,9 +176,9 @@ export default function MinutaDeliberacao() {
                       <SuggestionCard key={s.id} suggestion={s} users={users} currentUser={currentUser} mode="deliberate" onDecide={decide} />
                     ))}
                     <div style={{ background: '#fffdf3', border: '1px dashed #d8c98f', borderRadius: 6, padding: 10, marginTop: 8 }}>
-                      <div style={{ font: '700 9px Inter, sans-serif', textTransform: 'uppercase', color: '#9a6b00', marginBottom: 4 }}>Texto final aprovado</div>
+                      <div style={{ font: '700 9px Inter, sans-serif', textTransform: 'uppercase', color: 'var(--warning-text)', marginBottom: 4 }}>Texto final aprovado</div>
                       <textarea value={finalDraft} onChange={e => setFinalDraft(e.target.value)} style={{ width: '100%', boxSizing: 'border-box', minHeight: 56, border: '1px solid #d8c98f', borderRadius: 5, fontSize: 13, padding: 8, fontFamily: 'Georgia, serif' }} />
-                      <button onClick={approveItem} style={{ marginTop: 8, border: 'none', background: '#1a7f37', color: '#fff', font: '700 11px Inter, sans-serif', padding: '7px 14px', borderRadius: 6, cursor: 'pointer' }}>Aprovar item e avançar ▸</button>
+                      <button onClick={approveItem} style={{ marginTop: 8, border: 'none', background: 'var(--success-text)', color: '#fff', font: '700 11px Inter, sans-serif', padding: '7px 14px', borderRadius: 6, cursor: 'pointer' }}>Aprovar item e avançar ▸</button>
                     </div>
                   </div>
                 )}
