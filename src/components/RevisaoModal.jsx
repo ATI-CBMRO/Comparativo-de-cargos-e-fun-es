@@ -125,7 +125,7 @@ export default function RevisaoModal({
                 {relevantes.length === 0 && (
                   <span className="rev-ia-dica">Marque ao menos uma sugestão como relevante para gerar.</span>
                 )}
-                {erroIA && <div className="login-erro" style={{ marginTop: 8 }}>{erroIA}</div>}
+                {erroIA && <div className="form-error" style={{ marginTop: 8 }}>{erroIA}</div>}
                 {propostaIA && (
                   <div className="rev-ia-proposta">
                     <span className="label">✨ Proposta da IA (referência)</span>
