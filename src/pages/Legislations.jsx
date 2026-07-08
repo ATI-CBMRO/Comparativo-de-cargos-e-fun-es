@@ -170,6 +170,16 @@ export default function Legislations() {
                           {d.year && d.char_count ? ' · ' : ''}
                           {d.char_count ? `${Math.round(d.char_count / 1000)}k car.` : ''}
                         </div>
+                        {d.type !== 'Lei de Organização Básica' && (
+                          <div
+                            style={{ fontSize: 11, marginTop: 2, color: d.typeVerified ? 'var(--success-text, #2e7d32)' : 'var(--text-muted)' }}
+                            title={d.typeVerified
+                              ? 'O tipo deste documento foi conferido lendo o conteúdo de verdade, não só o nome do arquivo.'
+                              : 'Este tipo de documento ainda não foi conferido por conteúdo — a classificação é só pelo nome do arquivo, pode estar incorreta.'}
+                          >
+                            {d.typeVerified ? '✓ tipo conferido por conteúdo' : '⚠ tipo só por nome de arquivo'}
+                          </div>
+                        )}
                       </div>
 
                       <span className={`badge ${isLob ? 'badge-red' : 'badge-gold'}`} style={{ fontSize: 10, flexShrink: 0 }}>

@@ -24,6 +24,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Acre - Organização Básica (Lei 2.009-2008 att Lei 4.428-2024).md",
           "char_count": 24121,
           "year": 2008,
@@ -38,6 +39,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Acre - Organização Básica.md",
           "char_count": 10214,
           "year": 2015,
@@ -485,6 +487,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Alagoas - Lei de Organização Básica.md",
           "char_count": 35259,
           "year": 2012,
@@ -504,6 +507,7 @@
         },
         {
           "type": "Quadro Demonstrativo de Cargos",
+          "typeVerified": true,
           "md_file": "Alagoas - Quadro Demonstrativo de Cargos e Funções.md",
           "char_count": 64626,
           "year": 2013,
@@ -518,6 +522,7 @@
         },
         {
           "type": "Regimento Interno",
+          "typeVerified": true,
           "md_file": "Alagoas - Regimento Interno.md",
           "char_count": 137848,
           "year": 2001,
@@ -1417,6 +1422,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Amapá - Organização Básica.md",
           "char_count": 21812,
           "year": 2026,
@@ -1691,6 +1697,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Amazonas - Organização Básica.md",
           "char_count": 52836,
           "year": 1999,
@@ -1699,6 +1706,7 @@
         },
         {
           "type": "Quadro Demonstrativo de Cargos",
+          "typeVerified": false,
           "md_file": "Amazonas - Quadro Demonstrativo de Cargos e Funções.md",
           "char_count": 41724,
           "year": 2007,
@@ -2492,6 +2500,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Bahia - Organização Básica.md",
           "char_count": 55483,
           "year": 2023,
@@ -2935,6 +2944,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Ceará - Organização Básica (Lei 13.438-2004).md",
           "char_count": 31277,
           "year": 2004,
@@ -2943,6 +2953,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Ceará - Organização Básica.md",
           "char_count": 32554,
           "year": 2017,
@@ -3283,6 +3294,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Distrito Federal - Organização Básica.md",
           "char_count": 32031,
           "year": 1991,
@@ -3297,6 +3309,7 @@
         },
         {
           "type": "Regimento Interno",
+          "typeVerified": true,
           "md_file": "Distrito Federal - Regimento Interno.md",
           "char_count": 647348,
           "year": 2020,
@@ -4233,6 +4246,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Espírito Santo - Lei de Organização Básica.md",
           "char_count": 21583,
           "year": 2024,
@@ -4252,6 +4266,7 @@
         },
         {
           "type": "Normas Gerais de Ação",
+          "typeVerified": false,
           "md_file": "Espírito Santo - Normas Gerais de Ação.md",
           "char_count": 1392715,
           "year": 2022,
@@ -4781,6 +4796,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Goiás - Organização Básica (Lei 18.305-2013).md",
           "char_count": 26861,
           "year": 2013,
@@ -4800,6 +4816,7 @@
         },
         {
           "type": "Quadro de Organização e Distribuição",
+          "typeVerified": true,
           "md_file": "Goiás - Quadro de Organização e Distribuição de Efetivo.md",
           "char_count": 42009,
           "year": 2010,
@@ -4819,6 +4836,7 @@
         },
         {
           "type": "Regimento de Serviços",
+          "typeVerified": true,
           "md_file": "Goiás - Regimento dos Serviços Interno e Operacional.md",
           "char_count": 52393,
           "year": 2025,
@@ -5799,6 +5817,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Maranhão - Organização Básica.md",
           "char_count": 58363,
           "year": 2015,
@@ -5818,6 +5837,7 @@
         },
         {
           "type": "Quadro de Organização e Distribuição",
+          "typeVerified": false,
           "md_file": "Maranhão - Quadro de Organização e Distribuição.md",
           "char_count": 49664,
           "year": 2020,
@@ -6481,6 +6501,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Mato Grosso - Organização Básica.md",
           "char_count": 83681,
           "year": 2023,
@@ -6499,7 +6520,8 @@
           "has_pdf": true
         },
         {
-          "type": "Regimento Interno",
+          "type": "Regulamento Geral",
+          "typeVerified": true,
           "md_file": "Mato Grosso - Regimento Interno.md",
           "char_count": 272442,
           "year": 2013,
@@ -7767,8 +7789,8 @@
       ],
       "stats": {
         "total_documents": 2,
-        "has_regimento": true,
-        "has_regulamento": false,
+        "has_regimento": false,
+        "has_regulamento": true,
         "has_nga": false,
         "total_chars": 356123,
         "organs_mapped": 203,
@@ -7785,6 +7807,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Mato Grosso do Sul - Organização Básica.md",
           "char_count": 80490,
           "year": 2014,
@@ -8332,6 +8355,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Minas Gerais - Organização Básica.md",
           "char_count": 17924,
           "year": 1999,
@@ -8738,6 +8762,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Paraná - Organização Básica.md",
           "char_count": 45010,
           "year": 2024,
@@ -8746,6 +8771,7 @@
         },
         {
           "type": "Regimento Interno",
+          "typeVerified": true,
           "md_file": "Paraná - Regimento Interno.md",
           "char_count": 43750,
           "year": 2024,
@@ -9179,6 +9205,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Paraíba - Organização Básica.md",
           "char_count": 602401,
           "year": 2024,
@@ -10198,6 +10225,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Pará - Organização Básica.md",
           "char_count": 136494,
           "year": 2025,
@@ -10206,6 +10234,7 @@
         },
         {
           "type": "Regimento Interno",
+          "typeVerified": true,
           "md_file": "Pará - Regimento Interno.md",
           "char_count": 337431,
           "year": 2026,
@@ -11353,6 +11382,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Pernambuco - Organização Básica (Lei 15.187-2013).md",
           "char_count": 43723,
           "year": 2013,
@@ -11367,6 +11397,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Pernambuco - Organização Básica.md",
           "char_count": 47830,
           "year": 2013,
@@ -12003,6 +12034,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Piauí - Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022).md",
           "char_count": 578,
           "year": 2009,
@@ -12011,6 +12043,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Piauí - Organização Básica.md",
           "char_count": 41418,
           "year": 2022,
@@ -13353,6 +13386,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Rio Grande do Norte - Organização Básica.md",
           "char_count": 22297,
           "year": 2002,
@@ -13372,6 +13406,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "typeVerified": true,
           "md_file": "Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md",
           "char_count": 65770,
           "year": 2021,
@@ -14096,6 +14131,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Rio Grande do Sul - Organização Básica.md",
           "char_count": 14681,
           "year": 2018,
@@ -14110,6 +14146,7 @@
         },
         {
           "type": "Regimento Interno",
+          "typeVerified": true,
           "md_file": "Rio Grande do Sul - Regimento Interno.md",
           "char_count": 192680,
           "year": 2025,
@@ -14856,6 +14893,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Rio de Janeiro - Organização Básica.md",
           "char_count": 32000,
           "year": null,
@@ -15539,6 +15577,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Rondônia - Minuta de Lei de Organização Básica.md",
           "char_count": 75273,
           "year": 2025,
@@ -16842,6 +16881,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Roraíma - Organização Básica.md",
           "char_count": 73202,
           "year": 2024,
@@ -18406,6 +18446,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Santa Catarina - Organização Básica.md",
           "char_count": 82273,
           "year": 2021,
@@ -19030,6 +19071,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Sergipe - Organização Básica (Lei 8.979-2022).md",
           "char_count": 29335,
           "year": 2022,
@@ -19044,6 +19086,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": true,
           "md_file": "Sergipe - Organização Básica.md",
           "char_count": 32836,
           "year": 2022,
@@ -19051,7 +19094,8 @@
           "has_pdf": true
         },
         {
-          "type": "Regimento Interno",
+          "type": "Regimento de Serviços",
+          "typeVerified": true,
           "md_file": "Sergipe - Regimento Interno.md",
           "char_count": 101237,
           "year": 2022,
@@ -20114,8 +20158,8 @@
       ],
       "stats": {
         "total_documents": 3,
-        "has_regimento": true,
-        "has_regulamento": false,
+        "has_regimento": false,
+        "has_regulamento": true,
         "has_nga": false,
         "total_chars": 163408,
         "organs_mapped": 138,
@@ -20132,6 +20176,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "São Paulo - Organização Básica (Lei 616-1974).md",
           "char_count": 29176,
           "year": null,
@@ -20151,6 +20196,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "São Paulo - Organização Básica.md",
           "char_count": 102919,
           "year": 2020,
@@ -20588,6 +20634,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
           "md_file": "Tocantins - Organização Básica.md",
           "char_count": 23364,
           "year": 2021,

@@ -1,8 +1,11 @@
 import os
+from pathlib import Path
 from pypdf import PdfReader
 
-# Define paths in the workspace
-workspace_dir = r"C:\Users\tiago\OneDrive\Documentos\Comparativo de legislações CBM"
+# Caminhos relativos à raiz do repositório (funciona em qualquer máquina/SO — antes
+# era um caminho do Windows fixo no código, exigindo edição manual pra rodar em
+# outro ambiente; achado 2026-07-08).
+workspace_dir = Path(__file__).parent.parent
 pdf_dir = os.path.join(workspace_dir, "LEGISLAÇÃO CBMS")
 output_dir = os.path.join(workspace_dir, "database", "markdown")
 

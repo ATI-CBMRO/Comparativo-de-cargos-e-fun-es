@@ -85,6 +85,16 @@ function DocCard({ doc }) {
         <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>
           {doc.year ? `Ano: ${doc.year} · ` : ''}{totalKb}k caracteres extraídos
         </div>
+        {doc.type !== 'Lei de Organização Básica' && (
+          <div
+            style={{ fontSize: 11, marginTop: 3, color: doc.typeVerified ? 'var(--success-text, #2e7d32)' : 'var(--text-muted)' }}
+            title={doc.typeVerified
+              ? 'O tipo deste documento foi conferido lendo o conteúdo de verdade, não só o nome do arquivo.'
+              : 'Este tipo de documento ainda não foi conferido por conteúdo — a classificação é só pelo nome do arquivo, pode estar incorreta.'}
+          >
+            {doc.typeVerified ? '✓ tipo conferido por conteúdo' : '⚠ tipo só por nome de arquivo'}
+          </div>
+        )}
       </div>
       <span className={`badge ${doc.type === 'Lei de Organização Básica' ? 'badge-red' : 'badge-gold'}`} style={{ fontSize: 10, flexShrink: 0 }}>
         {short}
