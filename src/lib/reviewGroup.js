@@ -1,3 +1,20 @@
+// Etiqueta de documento embutida no próprio editId: todo dispositivo do Regulamento
+// nasce com prefixo "reg:" (Bloco B2); RI nunca usa esse prefixo. Sem campo novo,
+// sem migração — ver docs/superpowers/specs/2026-07-07-comissao-comenta-regulamento-design.md.
+export function docOfDispositivo(dispositivoId) {
+  return String(dispositivoId).startsWith('reg:') ? 'reg' : 'ri'
+}
+
+export function filterSuggestionsByDoc(suggestions, docId) {
+  return suggestions.filter(s => docOfDispositivo(s.dispositivoId) === docId)
+}
+
+export function filterFinalsByDoc(finals, docId) {
+  const map = new Map()
+  finals.forEach((v, k) => { if (docOfDispositivo(k) === docId) map.set(k, v) })
+  return map
+}
+
 // Agrupamento/contagem de sugestões por dispositivoId (lógica pura, sem React/Firebase).
 export function groupByDispositivo(suggestions) {
   const map = new Map()
