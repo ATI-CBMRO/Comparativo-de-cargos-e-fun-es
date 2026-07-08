@@ -89,7 +89,7 @@ export default function RegulamentoComparator() {
     return (
       <ErrorState
         icon={Scale}
-        title="Minuta do Regulamento não encontrada"
+        title="Minuta do Regulamento Geral não encontrada"
         hint={<>Execute o script que gera <code>database/regulamento_structure.json</code>.</>}
       />
     )

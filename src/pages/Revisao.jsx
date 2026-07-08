@@ -158,14 +158,14 @@ export default function Revisao() {
               className={`oc-state-chip${docId === 'ri' ? ' active' : ''}`}
               onClick={() => setDocId('ri')}
             >
-              Minuta do RI
+              Minuta do Regimento Interno
             </button>
             <button
               type="button"
               className={`oc-state-chip${docId === 'reg' ? ' active' : ''}`}
               onClick={() => setDocId('reg')}
             >
-              Regulamento
+              Minuta do Regulamento Geral
             </button>
           </div>
           {user.role === 'admin' && docId === 'reg' && (
