@@ -3,6 +3,18 @@
 > Status: ESBOÇO — falta planejar direito (metodologia igual ao B1-M) antes de
 > executar. Não começar a codar direto a partir deste arquivo.
 
+## ⚠️ O que este bloco NÃO precisa fazer (esclarecido em 2026-07-08)
+
+A geração da minuta do Regimento Interno **com base em outros estados já existe**
+e não faz parte do escopo deste bloco. A página `/minuta` (`MinutaWizard.jsx`) já
+gera a minuta completa do CBMRO enriquecida com texto VERBATIM de **13 estados**
+(AL, BA, CE, DF, ES, GO, MT, PA, PE, PR, SC, SE, SP), via
+`scripts/minuta_enrichment.py` (`ENRICHMENT_ORGAN`) — é inclusive uma feature
+mais antiga que a do Regulamento. O Bloco D cuida SÓ da tela de **comparação**
+(item 3 abaixo); os itens 1 e 2 (curadoria + script de build) existem apenas
+pra alimentar essa tela nova com o campo `alternatives` que falta hoje, não pra
+gerar a minuta em si (que já está pronta).
+
 ## Origem do pedido
 
 Ao reorganizar o menu lateral em 2 trilhas (Regimento Interno × Regulamento Geral,

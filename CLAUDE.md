@@ -331,7 +331,10 @@ do Regulamento Geral" (não "Minuta do Regulamento").
 **Bloco D esboçado, não iniciado**: falta um comparador "Regimento Interno × outros
 estados" análogo ao "Comparar Regulamento" — `minuta_structure.json` não tem o campo
 `alternatives` que o Regulamento tem, então isso exige a mesma curadoria dispositivo-
-a-dispositivo do B1-M, replicada pros 7 estados com Regimento Interno. Ver
+a-dispositivo do B1-M, replicada pros 7 estados com Regimento Interno. **A GERAÇÃO
+da minuta do RI com base em outros estados já existe** (`/minuta`, ver seção acima —
+enriquecida com 13 estados via `minuta_enrichment.py`); o Bloco D é só a tela de
+comparação lado a lado, não a geração. Ver
 `docs/curadoria/bloco-d-esboco-comparador-ri.md`.
 
 ## Revisão Colaborativa da Minuta (login + comentários + IA)
