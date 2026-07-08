@@ -7,6 +7,7 @@ import { db } from './firebase.js'
 
 const COL = 'suggestions'
 const COL_FINAL = 'finalTexts'
+const DOC_CONFIG = doc(db, 'config', 'revisao')
 
 export function subscribeSuggestions(onChange, onError) {
   const q = query(collection(db, COL), orderBy('criadoEm', 'asc'))
@@ -19,11 +20,16 @@ export function subscribeSuggestions(onChange, onError) {
   )
 }
 
+// As rules limitam os snapshots a 1000 chars (A8.7); dispositivos longos (há incisos
+// de 1792 chars no Regulamento e textos de até 7737 no RI) são truncados — o snapshot
+// é só contexto, o dispositivoId continua apontando para o texto íntegro.
+const SNAPSHOT_MAX = 1000
+
 export async function addSuggestion({ dispositivoId, dispositivoLabelSnapshot, trechoSnapshot, texto, autor }) {
   await addDoc(collection(db, COL), {
     dispositivoId,
-    dispositivoLabelSnapshot,
-    trechoSnapshot,
+    dispositivoLabelSnapshot: String(dispositivoLabelSnapshot ?? '').slice(0, SNAPSHOT_MAX),
+    trechoSnapshot: String(trechoSnapshot ?? '').slice(0, SNAPSHOT_MAX),
     texto: texto.trim(),
     autorUid: autor.uid,
     autorNome: autor.nome,
@@ -65,4 +71,16 @@ export async function saveFinalText(dispositivoId, { texto, status, autor }) {
     atualizadoPor: autor.nome,
     atualizadoEm: serverTimestamp(),
   }, { merge: true })
+}
+
+// Ausência do doc == regulamentoAberto:false (fail-closed) — nunca abrir por omissão.
+export function subscribeRevisaoConfig(onChange, onError) {
+  return onSnapshot(DOC_CONFIG,
+    (snap) => onChange(snap.exists() ? snap.data() : { regulamentoAberto: false }),
+    (err) => { if (onError) onError(err) },
+  )
+}
+
+export async function setRegulamentoAberto(aberto) {
+  await setDoc(DOC_CONFIG, { regulamentoAberto: aberto }, { merge: true })
 }
