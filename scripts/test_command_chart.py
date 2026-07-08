@@ -36,11 +36,18 @@ def main():
     organs = json.loads(RO_JSON.read_text(encoding="utf-8"))["organs"]
     chart = build_command_chart(organs, _chapters(organs))
 
-    assert chart.get("synthetic") is True
-    assert chart["label"] == "Subcomandante-Geral"
+    # Desde bfc9ef6, cg é raiz real da árvore (não sintética) — os 26 órgãos da
+    # LOB formam uma única árvore conectada sob o Comando-Geral.
+    assert not chart.get("synthetic")
+    assert chart["organKey"] == "cg"
+    assert chart["label"] == "Comando Geral"
 
     top = kids(chart)
-    assert set(top) == {"dpo", "doe"}, list(top)
+    assert set(top) == {
+        "depdec", "condeg", "dp", "deei", "dpof", "dsap", "dlog",
+        "dpo", "doe", "cint", "ccs", "cinf", "assessorias", "gab-cg", "ag",
+        "corregedoria",
+    }, list(top)
     dpo = kids(top["dpo"])
     assert set(dpo) == {"cot", "crbm"}, list(dpo)
     assert set(kids(dpo["cot"])) == {"cat"}
