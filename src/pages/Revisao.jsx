@@ -224,10 +224,12 @@ export default function Revisao() {
 
                 {art.incisos.map((inc, i) => {
                   const id = incisoDispositivoId(inc.editId, inc.index)
-                  const label = `${articleLabel(art.number)}, inciso ${romanize(i + 1)}`
+                  const label = inc.ownMarker
+                    ? `${articleLabel(art.number)}, parágrafo`
+                    : `${articleLabel(art.number)}, inciso ${romanize(i + 1)}`
                   return (
                     <div className={`rev-line rev-inciso${finalsForDoc.get(id)?.status === 'fechado' ? ' fechado' : ''}`} key={`${id}`}>
-                      <span className="rev-text"><strong>{romanize(i + 1)} -</strong> {inc.text}</span>
+                      <span className="rev-text">{inc.ownMarker ? '' : <strong>{romanize(i + 1)} -</strong>} {inc.text}</span>
                       <Rail count={counts.get(id)} onClick={() => abrir(id, label, inc.text)} />
                     </div>
                   )

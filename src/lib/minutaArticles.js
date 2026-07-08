@@ -19,10 +19,20 @@ export function romanize(n) {
   return out
 }
 
+// Dispositivos como "Parágrafo único." e "§ 1º" são unidades legislativas completas
+// (não incisos numerados) — carregam o próprio marcador verbatim da fonte e nunca
+// devem ganhar numeral romano artificial nem perder a maiúscula/pontuação original.
+export function hasOwnMarker(text) {
+  return /^\s*(§\s*\d|Par[áa]grafo\s+[úu]nico)/i.test(text ?? '')
+}
+
 // Remove marcador de lista inicial ("1.", "1)", "I -", "- ", "a)") e pontuação
 // final, minúscula a 1ª letra e aplica o sufixo conforme a posição no rol.
+// Dispositivos com marcador próprio (ver hasOwnMarker) são devolvidos como vieram —
+// já são uma frase completa, não uma cláusula que continua o caput.
 export function normalizeInciso(text, index, total) {
   let t = (text ?? '').trim()
+  if (hasOwnMarker(t)) return t
   t = t.replace(/^(\d+[.)]|[ivxlcdm]+\s*[-–.)]|[a-z][).]|[-–•])\s*/i, '')
   t = t.replace(/[;.]\s*$/, '')
   if (t) t = t[0].toLowerCase() + t.slice(1)
@@ -84,6 +94,7 @@ export function buildArticles(structure, edits = {}, isExcluded = () => false) {
           const raw = edited.split('\n').map(l => l.trim()).filter(Boolean)
           incisos = raw.map((t, i) => ({
             text: normalizeInciso(t, i, raw.length),
+            ownMarker: hasOwnMarker(t),
             source: null, editId: leaf.editId, index: i,
           }))
         } else {
@@ -96,6 +107,7 @@ export function buildArticles(structure, edits = {}, isExcluded = () => false) {
           })
           incisos = kept.map((k, pos) => ({
             text: normalizeInciso(k.it.text, pos, kept.length),
+            ownMarker: hasOwnMarker(k.it.text),
             source: k.it.source ?? null, editId: leaf.editId, index: k.i,
           }))
         }

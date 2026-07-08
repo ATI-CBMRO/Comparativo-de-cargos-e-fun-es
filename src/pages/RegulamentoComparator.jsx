@@ -242,7 +242,7 @@ function RegArticle({ art }) {
       {art.incisos.length > 0 && (
         <ul className="cc-list rg-incisos">
           {art.incisos.map((inc, i) => (
-            <li key={i}>{romanize(i + 1)} - {renderFriendlyText(inc.text)}</li>
+            <li key={i}>{inc.ownMarker ? '' : `${romanize(i + 1)} - `}{renderFriendlyText(inc.text)}</li>
           ))}
         </ul>
       )}

@@ -282,7 +282,7 @@ export default function RegulamentoWizard() {
           <input type="checkbox" checked
             onChange={() => toggleItem(inc.editId, inc.index)}
             style={{ marginTop: 5, flexShrink: 0, cursor: 'pointer' }} />
-          <span><strong>{romanize(i + 1)} -</strong> {inc.text}{srcBadge(inc.source)}</span>
+          <span>{inc.ownMarker ? '' : <strong>{romanize(i + 1)} -</strong>} {inc.text}{srcBadge(inc.source)}</span>
         </label>,
       )
     })
@@ -464,7 +464,7 @@ function PlainPreview({ articles }) {
           </p>
           {art.incisos.map((inc, i) => (
             <p key={i} style={{ textAlign: 'justify', margin: '0 0 4px', paddingLeft: '2em', textIndent: '-1em' }}>
-              {romanize(i + 1)} - {inc.text}{srcBadge(inc.source)}
+              {inc.ownMarker ? '' : `${romanize(i + 1)} - `}{inc.text}{srcBadge(inc.source)}
             </p>
           ))}
         </div>
