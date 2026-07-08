@@ -43,5 +43,10 @@ service cloud.firestore {
       allow write: if isAdmin()
         && request.resource.data.texto is string && request.resource.data.texto.size() <= 8000;
     }
+
+    match /config/revisao {
+      allow read: if isMember();
+      allow write: if isAdmin();
+    }
   }
 }
