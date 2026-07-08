@@ -269,6 +269,71 @@ estado antes de qualquer transcrição (detalhes no plano de execução):
 esses scripts. Os scripts NOVOS de curadoria acima (`sugerir_equivalencias.py`,
 `equivalencias_terminologicas.py`, `verificar_verbatim.py`) rodam também no Python 3.9.
 
+**Mecanismos de correção descobertos testando manualmente (2026-07-08):**
+- `strip_lines` em `CONFIG[<uf>]` (`extrair_regulamentos.py`) — remove linhas-fragmento
+  conhecidas ANTES do parse (mesmo espírito de `fake_art_res`). Criado porque um
+  cabeçalho de seção quebrado em 2 linhas na conversão do PDF (`RE_NOISE` só reconhece
+  a 1ª linha) fazia uma palavra solta grudar no fim do artigo anterior — achado real no
+  Art. 53 do RISD-SE. Use quando achar contaminação parecida em outro estado.
+- `hasOwnMarker(text)` em `src/lib/minutaArticles.js` — dispositivos que já começam
+  com "Parágrafo único"/"§" são unidades legislativas completas, não incisos
+  numerados: `normalizeInciso()` os devolve verbatim (sem strip de marcador, sem
+  lowercase, sem sufixo de continuação), e `buildArticles()` marca `ownMarker: true`
+  no inciso pra as telas pularem o prefixo `romanize(i+1) -`. Relevante pra qualquer
+  novo tema/estado do Regulamento que tenha parágrafos (33 dispositivos afetados só
+  na curadoria atual).
+
+## ⚠️ Classificação de tipo de documento — auditoria pendente (achado 2026-07-08)
+
+`parse_doc_type()` em `scripts/build_states_data.py` classifica cada documento **só
+pelo nome do arquivo** (procura substrings como "regimento interno", "regulamento"),
+NUNCA leu o conteúdo. Isso já causou erro confirmado: `database/states_data.json`
+mostra **Mato Grosso** e **Sergipe** como `"Regimento Interno"`, mas a curadoria do
+Regulamento (que leu o conteúdo de verdade) descobriu que:
+- **MT**: o arquivo chamado "Regimento Interno" é na verdade o **Regulamento Geral**
+  do CBMMT (Portaria nº 009/BM-8/2013) — é a fonte primária de boa parte dos temas do
+  Regulamento por causa disso.
+- **SE**: o arquivo é o **RISD** (Regimento Interno dos Serviços Diários) — apesar do
+  nome ter "Regimento", funciona como um regulamento de rotina operacional, não como
+  regimento de estrutura organizacional.
+
+Essas descobertas ficaram só dentro de `scripts/regulamento_enrichment.py`
+(`REGULAMENTO_DOCS`), **nunca foram propagadas de volta pro `states_data.json`** que
+o site mostra em `/estados`. RN e GO já foram corrigidos (Bloco B0); MT e SE **ainda
+não**. Além disso, **só 9 dos 27 estados** (os do Regulamento) tiveram o conteúdo
+lido de verdade — os outros 18 têm classificação 100% baseada em nome de arquivo,
+nunca verificada.
+
+**Antes de confiar nessa classificação para qualquer novo recurso** (ex.: uma tabela
+LOB × Regimento Interno × Regulamento por estado, pedida pelo Wândrio em 2026-07-08),
+tratar isso como pré-requisito: corrigir MT/SE no mínimo, e decidir se os outros 18
+precisam de conferência de conteúdo ou se a UI deve deixar explícito o que foi/não
+foi verificado. Ver `docs/curadoria/bloco-d-esboco-comparador-ri.md` (seção
+"Pré-requisito descoberto depois") para o contexto completo.
+
+## Menu lateral agrupado por trilha de minuta (`NAV_GROUPS`)
+
+`src/App.jsx` — o array `NAV` virou `NAV_GROUPS`: 3 blocos visuais no menu lateral,
+cada um com um `nav-section-label` (reusa o estilo já existente, variante
+`.nav-section-label-sub` pros sub-rótulos):
+- **Geral** (sem rótulo de seção): Início, Estados, Acervo Legal, Busca Textual,
+  Diagramas da Minuta (fica aqui e não na trilha do RI — vem de `commandChart`/
+  `organs_detail/ro.json`, ou seja, é a estrutura da PRÓPRIA LOB de Rondônia, não
+  conteúdo comparado com outros estados).
+- **Regimento Interno**: Subsídio à Minuta, Minuta do Regimento Interno.
+- **Regulamento Geral**: Minuta do Regulamento Geral, Comparar Regulamento.
+
+"Revisão da Minuta" e "Acessos" continuam fora dos grupos (o primeiro atende os dois
+documentos via seletor interno; o segundo é administrativo). Nomes dos documentos
+sempre por extenso agora: "Minuta do Regimento Interno" (não "Minuta RI") e "Minuta
+do Regulamento Geral" (não "Minuta do Regulamento").
+
+**Bloco D esboçado, não iniciado**: falta um comparador "Regimento Interno × outros
+estados" análogo ao "Comparar Regulamento" — `minuta_structure.json` não tem o campo
+`alternatives` que o Regulamento tem, então isso exige a mesma curadoria dispositivo-
+a-dispositivo do B1-M, replicada pros 7 estados com Regimento Interno. Ver
+`docs/curadoria/bloco-d-esboco-comparador-ri.md`.
+
 ## Revisão Colaborativa da Minuta (login + comentários + IA)
 
 Módulo NOVO, **independente** do portal estático: permite que pessoas convidadas façam login e
