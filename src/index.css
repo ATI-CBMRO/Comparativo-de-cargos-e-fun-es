@@ -2320,6 +2320,8 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .rev-inciso { padding-left: 24px; }
 .rev-text { flex: 1; text-align: justify; }
 .rev-rail { flex: 0 0 34px; display: flex; justify-content: center; border-left: 1px solid #e7ebf3; }
+.rev-doc-switch { display: flex; gap: 6px; margin: 6px 0 4px; }
+.rev-doc-toggle { margin-top: 4px; font-size: 12.5px; }
 .rev-mark { width: 26px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
   border: none; background: none; border-radius: 11px; cursor: pointer; font-size: 12px; font-weight: 700;
   color: #c3cad8; font-family: Inter, sans-serif; }

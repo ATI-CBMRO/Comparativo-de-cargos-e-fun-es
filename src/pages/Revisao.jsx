@@ -4,16 +4,20 @@ import { useAuth } from '../lib/auth.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { incisoDispositivoId, caputDispositivoId, parseDispositivoId } from '../lib/dispositivoId.js'
 import { chapterIdOf } from '../lib/minutaTargets.js'
-import { groupByDispositivo, countByDispositivo, countByChapter } from '../lib/reviewGroup.js'
+import {
+  groupByDispositivo, countByDispositivo, countByChapter,
+  filterSuggestionsByDoc, filterFinalsByDoc,
+} from '../lib/reviewGroup.js'
 import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
   setAdminStatus, subscribeFinalTexts, saveFinalText,
+  subscribeRevisaoConfig, setRegulamentoAberto,
 } from '../lib/reviewData.js'
 import { gerarProposta } from '../lib/gerarProposta.js'
 import RevisaoModal from '../components/RevisaoModal.jsx'
 import RevisaoChapterRail from '../components/RevisaoChapterRail.jsx'
 import { fetchJson } from '../lib/dataCache.js'
-import { LoadingState, ErrorState } from '../components/Status.jsx'
+import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
@@ -30,16 +34,28 @@ function Rail({ count, onClick }) {
 
 export default function Revisao() {
   const { user } = useAuth()
+  const [docId, setDocId] = useState('ri') // 'ri' | 'reg'
   const [data, setData] = useState(null)
   const [erro, setErro] = useState(null)
   const [suggestions, setSuggestions] = useState([])
   const [aberto, setAberto] = useState(null) // { id, label, trecho }
+  const [regulamentoAberto, setRegulamentoAbertoState] = useState(false)
 
   useEffect(() => {
-    fetchJson('/database/minuta_structure.json')
+    setData(null)
+    setErro(null)
+    setAberto(null) // fecha a modal ao trocar de documento — evita comentar no doc errado
+    const url = docId === 'reg' ? '/database/regulamento_structure.json' : '/database/minuta_structure.json'
+    fetchJson(url)
       .then(setData)
-      .catch(() => setErro('Não foi possível carregar a minuta.'))
-  }, [])
+      .catch(() => setErro('Não foi possível carregar o documento.'))
+  }, [docId])
+
+  // Ausência do doc config/revisao == fechado (fail-closed) — ver reviewData.js.
+  useEffect(() => subscribeRevisaoConfig(
+    (cfg) => setRegulamentoAbertoState(cfg.regulamentoAberto === true),
+    (e) => console.error('Erro na config da revisão:', e),
+  ), [])
 
   // subscribeSuggestions retorna o unsubscribe do onSnapshot — cleanup correto do efeito.
   useEffect(() => subscribeSuggestions(
@@ -51,14 +67,17 @@ export default function Revisao() {
   // Idem: subscribeFinalTexts também retorna o unsubscribe do onSnapshot.
   useEffect(() => subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e)), [])
 
-  const counts = useMemo(() => countByDispositivo(suggestions), [suggestions])
-  const grupos = useMemo(() => groupByDispositivo(suggestions), [suggestions])
+  const finalsForDoc = useMemo(() => filterFinalsByDoc(finals, docId), [finals, docId])
+
+  const suggestionsForDoc = useMemo(() => filterSuggestionsByDoc(suggestions, docId), [suggestions, docId])
+  const counts = useMemo(() => countByDispositivo(suggestionsForDoc), [suggestionsForDoc])
+  const grupos = useMemo(() => groupByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const articles = useMemo(() => (data ? buildArticles(data) : []), [data])
   const fechados = useMemo(() => {
     let n = 0
-    finals.forEach(f => { if (f.status === 'fechado') n += 1 })
+    finalsForDoc.forEach(f => { if (f.status === 'fechado') n += 1 })
     return n
-  }, [finals])
+  }, [finalsForDoc])
 
   // Sumário de capítulos (a partir dos mesmos `articles`, sem recomputar buildArticles).
   const chapters = useMemo(() => {
@@ -71,8 +90,8 @@ export default function Revisao() {
 
   // Sugestões por capítulo, separadas em abertas × resolvidas (pelo status do texto final).
   const chapterCounts = useMemo(
-    () => countByChapter(suggestions, finals, parseDispositivoId, chapterIdOf),
-    [suggestions, finals],
+    () => countByChapter(suggestionsForDoc, finalsForDoc, parseDispositivoId, chapterIdOf),
+    [suggestionsForDoc, finalsForDoc],
   )
 
   const [activeChapterId, setActiveChapterId] = useState(null)
@@ -113,23 +132,63 @@ export default function Revisao() {
     autor: { uid: user.uid, nome: user.nome },
   })
 
+  const bloqueadoParaComissao = docId === 'reg' && !regulamentoAberto && user.role !== 'admin'
+  const tituloDoc = docId === 'reg' ? 'Revisão do Regulamento' : 'Revisão da Minuta'
+
   if (erro) return <ErrorState title="Erro ao carregar" hint={erro} />
-  if (!data) return <LoadingState label="Carregando minuta…" />
+  if (!data) return <LoadingState label="Carregando…" />
 
   return (
     <>
       <div className="page-header">
         <div className="page-header-left">
-          <h2 className="page-title">Revisão da Minuta</h2>
-          <p className="page-subtitle">
-            Clique no balão à direita de cada dispositivo para ver e enviar sugestões.
-            As sugestões de todos ficam visíveis.
-          </p>
-          <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
+          <h2 className="page-title">{tituloDoc}</h2>
+          {!bloqueadoParaComissao && (
+            <>
+              <p className="page-subtitle">
+                Clique no balão à direita de cada dispositivo para ver e enviar sugestões.
+                As sugestões de todos ficam visíveis.
+              </p>
+              <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
+            </>
+          )}
+          <div className="rev-doc-switch">
+            <button
+              type="button"
+              className={`oc-state-chip${docId === 'ri' ? ' active' : ''}`}
+              onClick={() => setDocId('ri')}
+            >
+              Minuta do RI
+            </button>
+            <button
+              type="button"
+              className={`oc-state-chip${docId === 'reg' ? ' active' : ''}`}
+              onClick={() => setDocId('reg')}
+            >
+              Regulamento
+            </button>
+          </div>
+          {user.role === 'admin' && docId === 'reg' && (
+            <button
+              type="button"
+              className="btn btn-ghost rev-doc-toggle"
+              onClick={() => setRegulamentoAberto(!regulamentoAberto)}
+            >
+              {regulamentoAberto
+                ? 'Comissão PODE comentar o Regulamento (clique para fechar)'
+                : 'Comissão NÃO pode comentar o Regulamento ainda (clique para abrir)'}
+            </button>
+          )}
         </div>
       </div>
 
       <div className="page-body">
+        {bloqueadoParaComissao ? (
+          <EmptyState
+            title="Regulamento em preparação"
+            text="Este documento ainda não foi liberado para comentários. Volte em breve."
+          />
+        ) : (
         <div className="rc-layout">
           <RevisaoChapterRail
             chapters={chapters}
@@ -156,7 +215,7 @@ export default function Revisao() {
                   <p className="rev-section">Seção {romanize(art.sectionNumber)} — {art.sectionTitle}</p>
                 )}
 
-                <div className={`rev-line${finals.get(caputId)?.status === 'fechado' ? ' fechado' : ''}`}>
+                <div className={`rev-line${finalsForDoc.get(caputId)?.status === 'fechado' ? ' fechado' : ''}`}>
                   <span className="rev-text" style={{ textIndent: art.incisos.length ? 0 : '1.25em' }}>
                     <strong>{articleLabel(art.number)}</strong> {art.caput}
                   </span>
@@ -167,7 +226,7 @@ export default function Revisao() {
                   const id = incisoDispositivoId(inc.editId, inc.index)
                   const label = `${articleLabel(art.number)}, inciso ${romanize(i + 1)}`
                   return (
-                    <div className={`rev-line rev-inciso${finals.get(id)?.status === 'fechado' ? ' fechado' : ''}`} key={`${id}`}>
+                    <div className={`rev-line rev-inciso${finalsForDoc.get(id)?.status === 'fechado' ? ' fechado' : ''}`} key={`${id}`}>
                       <span className="rev-text"><strong>{romanize(i + 1)} -</strong> {inc.text}</span>
                       <Rail count={counts.get(id)} onClick={() => abrir(id, label, inc.text)} />
                     </div>
@@ -178,13 +237,14 @@ export default function Revisao() {
           })}
           </div>
         </div>
+        )}
       </div>
 
       {aberto && (
         <RevisaoModal
           dispositivo={aberto}
           suggestions={grupos.get(aberto.id) ?? []}
-          finalText={finals.get(aberto.id) ?? null}
+          finalText={finalsForDoc.get(aberto.id) ?? null}
           user={user}
           onAdd={handleAdd}
           onToggleLike={(s) => toggleLike(s, user.uid)}
