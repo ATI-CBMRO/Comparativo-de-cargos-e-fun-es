@@ -27,16 +27,35 @@ import { useAuth } from './lib/auth.jsx'
 // /minuta/revisao e /minuta/deliberacao (protótipo CONDEG em localStorage) saíram do
 // menu — a Revisão da Minuta oficial (Firebase, item abaixo) assumiu o papel de produção.
 // As rotas continuam acessíveis por URL direta; nada foi apagado (ver CLAUDE.md).
-const NAV = [
-  { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
-  { to: '/estados', icon: BookOpen, label: 'Estados' },
-  { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
-  { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno' },
-  { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
-  { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento Geral' },
-  { to: '/regulamento/comparar', icon: Scale, label: 'Comparar Regulamento' },
-  { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
-  { to: '/busca', icon: Search, label: 'Busca Textual' },
+//
+// Agrupado em 3 blocos (pedido do Wândrio): itens gerais, e as DUAS trilhas de minuta
+// (Regimento Interno e Regulamento Geral) — cada uma com seu comparador + editor,
+// para o menu deixar claro que são dois documentos distintos sendo elaborados.
+const NAV_GROUPS = [
+  {
+    section: null,
+    items: [
+      { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
+      { to: '/estados', icon: BookOpen, label: 'Estados' },
+      { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
+      { to: '/busca', icon: Search, label: 'Busca Textual' },
+    ],
+  },
+  {
+    section: 'Regimento Interno',
+    items: [
+      { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
+      { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno' },
+      { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
+    ],
+  },
+  {
+    section: 'Regulamento Geral',
+    items: [
+      { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento Geral' },
+      { to: '/regulamento/comparar', icon: Scale, label: 'Comparar Regulamento' },
+    ],
+  },
 ]
 
 function Header({ navOpen, onToggleNav }) {
@@ -109,18 +128,23 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
 
       <nav className="sidebar-nav">
         <div className="nav-section-label">Navegação</div>
-        {NAV.map(({ to, icon: Icon, label, end }) => (
-          <NavLink
-            key={to}
-            to={to}
-            end={end}
-            onClick={onNavigate}
-            title={label}
-            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
-          >
-            <Icon className="nav-icon" size={18} />
-            <span className="nav-item-label">{label}</span>
-          </NavLink>
+        {NAV_GROUPS.map((group, gi) => (
+          <div key={group.section ?? `g${gi}`} className="nav-group">
+            {group.section && <div className="nav-section-label nav-section-label-sub">{group.section}</div>}
+            {group.items.map(({ to, icon: Icon, label, end }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={end}
+                onClick={onNavigate}
+                title={label}
+                className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
+              >
+                <Icon className="nav-icon" size={18} />
+                <span className="nav-item-label">{label}</span>
+              </NavLink>
+            ))}
+          </div>
         ))}
 
         {user && (

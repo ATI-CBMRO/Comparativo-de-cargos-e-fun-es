@@ -301,6 +301,16 @@ img { display: block; max-width: 100%; }
   padding: 14px 10px 8px;
 }
 
+/* Sub-rótulos de grupo dentro da navegação (ex.: "Regimento Interno" /
+   "Regulamento Geral") — mesma fonte do rótulo principal, um traço mais discreto
+   e com uma linha divisória acima pra separar visualmente as duas trilhas. */
+.nav-section-label-sub {
+  padding: 10px 10px 6px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0.85;
+}
+
 .nav-item {
   display: flex;
   align-items: center;
