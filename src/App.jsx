@@ -39,6 +39,10 @@ const NAV_GROUPS = [
       { to: '/estados', icon: BookOpen, label: 'Estados' },
       { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
       { to: '/busca', icon: Search, label: 'Busca Textual' },
+      // Fica na aba geral (não na trilha do RI): o diagrama vem de commandChart,
+      // gerado a partir de organs_detail/ro.json — é a estrutura da PRÓPRIA LOB de
+      // Rondônia, não conteúdo emprestado/comparado com outros estados.
+      { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
     ],
   },
   {
@@ -46,7 +50,6 @@ const NAV_GROUPS = [
     items: [
       { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
       { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno' },
-      { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
     ],
   },
   {
