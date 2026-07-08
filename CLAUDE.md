@@ -308,6 +308,15 @@ alterado. Specs e planos detalhados em `docs/superpowers/specs/` e `docs/superpo
 - `dispositivoId` (`src/lib/dispositivoId.js`) é o endereço ESTÁVEL do dispositivo (`editId#index` ou
   `editId#caput`), pois o "Art. Nº" é recalculado por `buildArticles`. Premissa: congelar
   `minuta_structure.json` durante a rodada de revisão.
+- **Multi-documento na Revisão (Bloco C, fatia 1):** a página `/revisao` comenta DOIS
+  documentos — a minuta do RI (`minuta_structure.json`) e a minuta do Regulamento
+  (`regulamento_structure.json`) — sem misturar comentários. A separação usa o prefixo
+  `reg:` que TODO `editId` do Regulamento já carrega desde o Bloco B2 (`editId` do RI
+  nunca deve começar com `reg:` — é a premissa que garante o isolamento; ver
+  `src/lib/reviewGroup.js:docOfDispositivo`). Nova coleção **`config/revisao`**
+  (doc único, campo `regulamentoAberto: boolean`) controla quando o Regulamento fica
+  comentável para quem não é admin; ausência do doc = fechado (fail-closed). Design
+  completo em `docs/superpowers/specs/2026-07-07-comissao-comenta-regulamento-design.md`.
 
 ### IA — proposta a partir das sugestões relevantes
 - `api/_gerarProposta.js` (núcleo: `buildPrompt`/`parseGeminiResposta`/`gerarPropostaCore`, sem framework)
