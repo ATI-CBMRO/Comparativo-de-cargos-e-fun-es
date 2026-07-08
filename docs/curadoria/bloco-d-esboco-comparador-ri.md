@@ -78,6 +78,14 @@ Regulamento nunca tiveram o conteúdo conferido — só o nome do arquivo. Corri
 LOB×RI×Regulamento por estado) é pré-requisito de confiança antes de ampliar a
 curadoria pro Bloco D.
 
+## Pacote de trabalho pro Fable (2026-07-08)
+
+Ver `docs/curadoria/bloco-d-pacote-trabalho-fable.md` — já reduz o escopo real:
+depois da correção MT/SE, só 5 estados contam como Regimento Interno (AL, DF,
+PR, PA, RS); 4 deles já têm texto extraído pra 20 dos 27 órgãos da minuta (não
+precisa reler os documentos, só classificar o nível de correspondência); só o
+RS precisa de leitura nova (documento curto, 96 artigos).
+
 ## Não fazer sem planejar
 
 Este bloco NÃO deve ser iniciado direto em código — precisa da mesma disciplina do
