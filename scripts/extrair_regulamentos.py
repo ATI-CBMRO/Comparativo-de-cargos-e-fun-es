@@ -39,7 +39,7 @@ RE_ITEM = re.compile(
 )
 
 
-def load_lines(filename, inline_split=False, fake_art_res=()):
+def load_lines(filename, inline_split=False, fake_art_res=(), strip_lines=()):
     text = (MD / filename).read_text(encoding='utf-8', errors='replace')
     lines = text.splitlines()
     if inline_split:
@@ -55,6 +55,11 @@ def load_lines(filename, inline_split=False, fake_art_res=()):
         lines = [re.sub(r'^(\s*)Art', r'\1art', ln)
                  if any(rx.match(ln) for rx in fake_art_res) else ln
                  for ln in lines]
+    if strip_lines:
+        # Continuação de cabeçalho (TÍTULO/CAPÍTULO/SEÇÃO) quebrado em 2 linhas na
+        # conversão do PDF: RE_NOISE só reconhece a 1ª linha ("Capítulo VII: Da Rotina
+        # Diária das Unidades"), a 2ª ("Operacionais") sobra e gruda no artigo seguinte.
+        lines = [ln for ln in lines if not any(rx.match(ln.strip()) for rx in strip_lines)]
     return lines
 
 
@@ -162,6 +167,10 @@ CONFIG = {
         'md': 'Sergipe - Regimento Interno.md',
         'src': 'cf. CBMSE, RISD (atual. 2022), Art. {n}',
         'slice_between': (None, None),
+        # "Capítulo VII: Da Rotina Diária das Unidades" quebra em 2 linhas na conversão
+        # do PDF; RE_NOISE só reconhece a 1ª ("Capítulo VII..."), a palavra solta
+        # "Operacionais" da 2ª linha sobrava colada ao fim do Art. 53 (parág. único).
+        'strip_lines': [re.compile(r'^Operacionais$')],
         'ranges': [
             (1, 4, 'servico-operacional', 'exata', 'RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais'),
             (5, 22, 'atribuicoes-funcoes', 'exata', 'RISD, Cap. V — Atribuições das Funções de Serviço'),
@@ -320,7 +329,8 @@ def build_excerpt(n, art_lines, src_tpl, match, heading, bloco=None):
 
 def load_for(cfg):
     return load_lines(cfg['md'], inline_split=cfg.get('inline_split', False),
-                      fake_art_res=cfg.get('fake_art_res', ()))
+                      fake_art_res=cfg.get('fake_art_res', ()),
+                      strip_lines=cfg.get('strip_lines', ()))
 
 
 def extract_ranges(uf, cfg):

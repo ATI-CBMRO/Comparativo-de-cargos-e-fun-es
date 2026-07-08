@@ -1056,7 +1056,7 @@ ENRICHMENT = {
         {
             'heading': 'RISD, Cap. VI — Uniforme destinado ao serviço',
             'caput': 'Art. 53. O uniforme destinado ao Serviço Operacional diário das Unidades Operacionais é o de Instrução Operacional (4ºA), salvo aqueles utilizados por OBM especializada e quando necessário a utilização de Equipamento de Proteção Individual específico.',
-            'dispositivos': ['Parágrafo único. Em casos excepcionais, devidamente autoriz ado pelo DOp, o uniforme poderá ser o de Passeio (3°C) ou outro previsto em regulamento. Operacionais'],
+            'dispositivos': ['Parágrafo único. Em casos excepcionais, devidamente autoriz ado pelo DOp, o uniforme poderá ser o de Passeio (3°C) ou outro previsto em regulamento.'],
             'source': 'cf. CBMSE, RISD (atual. 2022), Art. 53',
             'match': 'parcial',
         },
