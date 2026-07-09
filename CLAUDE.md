@@ -306,33 +306,41 @@ esses scripts. Os scripts NOVOS de curadoria acima (`sugerir_equivalencias.py`,
   novo tema/estado do Regulamento que tenha parágrafos (33 dispositivos afetados só
   na curadoria atual).
 
-## ⚠️ Classificação de tipo de documento — auditoria pendente (achado 2026-07-08)
+## Classificação de tipo de documento (achados 2026-07-08 e 2026-07-09 — fechado)
 
 `parse_doc_type()` em `scripts/build_states_data.py` classifica cada documento **só
-pelo nome do arquivo** (procura substrings como "regimento interno", "regulamento"),
-NUNCA leu o conteúdo. Isso já causou erro confirmado: `database/states_data.json`
-mostra **Mato Grosso** e **Sergipe** como `"Regimento Interno"`, mas a curadoria do
-Regulamento (que leu o conteúdo de verdade) descobriu que:
-- **MT**: o arquivo chamado "Regimento Interno" é na verdade o **Regulamento Geral**
-  do CBMMT (Portaria nº 009/BM-8/2013) — é a fonte primária de boa parte dos temas do
+pelo nome do arquivo** (procura substrings como "regimento interno", "regulamento").
+Isso já causou 3 erros confirmados, todos corrigidos via `CONTENT_TYPE_OVERRIDES`
+(mapa `nome do arquivo → tipo correto`, checado antes das regras de substring):
+- **MT** ("Mato Grosso - Regimento Interno.md"): é na verdade o **Regulamento Geral**
+  do CBMMT (Portaria nº 009/BM-8/2013) — fonte primária de boa parte dos temas do
   Regulamento por causa disso.
-- **SE**: o arquivo é o **RISD** (Regimento Interno dos Serviços Diários) — apesar do
-  nome ter "Regimento", funciona como um regulamento de rotina operacional, não como
-  regimento de estrutura organizacional.
+- **SE** ("Sergipe - Regimento Interno.md"): é o **RISD** (Regimento Interno dos
+  Serviços Diários) — funciona como regulamento de rotina operacional, não como
+  estrutura organizacional → `Regimento de Serviços`.
+- **SC** ("Santa Catarina - Organização Básica.md", achado 2026-07-09): é o
+  **Decreto nº 1.328/2021**, que regulamenta a LC nº 724/2018 (a LOB em si, ausente
+  do acervo) com estrutura organizacional detalhada (missões, órgãos de direção/
+  apoio/execução, hierarquia até pelotão/grupo) → `Regimento Interno` (6º estado
+  nessa categoria — descoberta nova, não estava nos 5 do Bloco D).
 
-Essas descobertas ficaram só dentro de `scripts/regulamento_enrichment.py`
-(`REGULAMENTO_DOCS`), **nunca foram propagadas de volta pro `states_data.json`** que
-o site mostra em `/estados`. RN e GO já foram corrigidos (Bloco B0); MT e SE **ainda
-não**. Além disso, **só 9 dos 27 estados** (os do Regulamento) tiveram o conteúdo
-lido de verdade — os outros 18 têm classificação 100% baseada em nome de arquivo,
-nunca verificada.
+**Campo `typeVerified` por documento** (não por estado inteiro) indica se o tipo foi
+conferido por leitura de conteúdo (`✓`, selo verde em Acervo Legal/StateDetail) ou só
+por nome de arquivo (`⚠`). Fonte da verdade: `CONTENT_VERIFIED_STATES` (os 9 estados
+do Bloco B1-M, todo documento) + `CONTENT_VERIFIED_FILES` (arquivos individuais
+conferidos na auditoria de 2026-07-09 dos 18 estados restantes). **44 de 47
+documentos** verificados por conteúdo. Os 3 que ficam de fora, de propósito:
+- **Piauí** ("Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022).md"): PDF
+  escaneado sem OCR legível (só cabeçalho de jornal) — impossível confirmar ou negar
+  pelo conteúdo. O outro arquivo do PI (a lei de alteração, 7.772/2022) está OK.
+- **São Paulo** (os 2 arquivos): organizam a **Polícia Militar de SP inteira** (o
+  CBM aparece só como seção/comando subordinado, Art. 38-43 da Lei 616/1974), não
+  uma LOB exclusiva do CBM. Pode refletir a realidade de SP (CBM integrado à PM, sem
+  lei própria) ou pode faltar buscar o documento certo — **aguardando confirmação do
+  Wândrio** (perguntado 2026-07-09, respondeu "não tenho certeza").
 
-**Antes de confiar nessa classificação para qualquer novo recurso** (ex.: uma tabela
-LOB × Regimento Interno × Regulamento por estado, pedida pelo Wândrio em 2026-07-08),
-tratar isso como pré-requisito: corrigir MT/SE no mínimo, e decidir se os outros 18
-precisam de conferência de conteúdo ou se a UI deve deixar explícito o que foi/não
-foi verificado. Ver `docs/curadoria/bloco-d-esboco-comparador-ri.md` (seção
-"Pré-requisito descoberto depois") para o contexto completo.
+Decisão do Wândrio (2026-07-08): não bloquear novos recursos numa auditoria completa
+antes de usar os dados — a UI já deixa explícito o que foi/não foi verificado.
 
 ## Menu lateral agrupado por trilha de minuta (`NAV_GROUPS`)
 
