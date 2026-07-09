@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Portal de Legislação dos Corpos de Bombeiros Militares — SPA React/Vite que compara
 legislações (organização básica, regimentos internos, organogramas, quadros de efetivo)
 dos CBMs estaduais do Brasil, com identidade visual do CBMRO. 27 CBMs mapeados,
-37 documentos legais.
+47 documentos legais.
 
 ## Comandos
 

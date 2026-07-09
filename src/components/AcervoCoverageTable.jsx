@@ -24,6 +24,7 @@ function CellContent({ cell, seal }) {
   return (
     <span
       className={`acervo-cov-seal ${ok ? 'is-ok' : 'is-warn'}`}
+      aria-label={ok ? 'tipo conferido por conteúdo' : 'tipo só por nome de arquivo'}
       title={ok
         ? 'Tipo conferido lendo o conteúdo do documento, não só o nome do arquivo.'
         : 'Tipo ainda não conferido por conteúdo — classificação só pelo nome do arquivo, pode estar incorreta.'}
