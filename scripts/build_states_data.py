@@ -396,15 +396,76 @@ def detail_fail(organs):
 CONTENT_TYPE_OVERRIDES = {
     "Mato Grosso - Regimento Interno.md": "Regulamento Geral",
     "Sergipe - Regimento Interno.md": "Regimento de Serviços",
+    # Achado da auditoria de 2026-07-09: o arquivo "Organização Básica" de SC é na
+    # verdade o Decreto nº 1.328/2021, que REGULAMENTA a LC nº 724/2018 (a LOB em
+    # si, ausente do acervo) com estrutura organizacional detalhada (missões,
+    # órgãos de direção/apoio/execução, hierarquia até pelotão/grupo) — perfil de
+    # Regimento Interno, não de lei de criação. Ver CLAUDE.md.
+    "Santa Catarina - Organização Básica.md": "Regimento Interno",
 }
 
 # Estados cujo TIPO de documento foi conferido por leitura de conteúdo de verdade —
 # a curadoria do Regulamento (Bloco B1-M, scripts/regulamento_enrichment.py
 # REGULAMENTO_DOCS) leu o texto integral desses 9 estados pra montar a minuta do
 # Regulamento, e por isso também confirmou (ou corrigiu, ver acima) o tipo de cada
-# documento. Os demais 18 estados seguem classificados só pelo nome do arquivo,
-# nunca conferidos por conteúdo — ver campo "typeVerified" abaixo.
+# documento.
 CONTENT_VERIFIED_STATES = {"al", "df", "go", "mt", "pa", "pr", "rn", "rs", "se"}
+
+# Auditoria de 2026-07-09 (achado 2026-07-09): leitura do início (ementa/título) de
+# cada documento dos 18 estados fora do B1-M, um a um, pra confirmar ou corrigir a
+# classificação por nome de arquivo. Arquivos abaixo tiveram o conteúdo lido e
+# CONFIRMADO batendo com o tipo (ou corrigido, caso de SC acima). É por ARQUIVO,
+# não por estado inteiro — os 2 arquivos de São Paulo e 1 do Piauí ficaram de fora
+# de propósito, ver notas abaixo.
+CONTENT_VERIFIED_FILES = {
+    "Acre - Organização Básica (Lei 2.009-2008 att Lei 4.428-2024).md",
+    "Acre - Organização Básica.md",
+    "Amapá - Organização Básica.md",
+    "Amazonas - Organização Básica.md",
+    "Amazonas - Quadro Demonstrativo de Cargos e Funções.md",
+    "Bahia - Organização Básica.md",
+    "Ceará - Organização Básica (Lei 13.438-2004).md",
+    "Ceará - Organização Básica.md",
+    "Espírito Santo - Lei de Organização Básica.md",
+    "Espírito Santo - Normas Gerais de Ação.md",
+    "Maranhão - Organização Básica.md",
+    "Maranhão - Quadro de Organização e Distribuição.md",
+    "Mato Grosso do Sul - Organização Básica.md",
+    "Minas Gerais - Organização Básica.md",
+    # Ementa diz "organização estrutural e funcional" (não "organização básica"
+    # literalmente), mas cumpre a mesma função de LOB — revoga as leis antigas de
+    # organização básica do CBMPB.
+    "Paraíba - Organização Básica.md",
+    "Pernambuco - Organização Básica (Lei 15.187-2013).md",
+    "Pernambuco - Organização Básica.md",
+    # A Lei nº 5.949/2009 original (no OUTRO arquivo do Piauí) veio de PDF
+    # escaneado sem OCR legível — só cabeçalho de jornal, nenhum texto de lei.
+    # Este arquivo é a Lei nº 7.772/2022, que ALTERA a original com redação
+    # substitutiva completa dos artigos — legível e confirmado.
+    "Piauí - Organização Básica.md",
+    "Rio de Janeiro - Organização Básica.md",
+    # O próprio texto se identifica como "MINUTA DE DOCUMENTO"/projeto de lei em
+    # tramitação (marca d'água, processo SEI) — condição já conhecida e refletida
+    # no nome do arquivo, não é uma anomalia.
+    "Rondônia - Minuta de Lei de Organização Básica.md",
+    # Ementa usa "Lei Orgânica" em vez de "organização básica", mas mesma função.
+    "Roraíma - Organização Básica.md",
+    "Santa Catarina - Organização Básica.md",
+    "Tocantins - Organização Básica.md",
+}
+
+# NÃO entram em CONTENT_VERIFIED_FILES (achados da auditoria de 2026-07-09, cada um
+# com motivo diferente — ver CLAUDE.md "Classificação de tipo de documento"):
+# - "Piauí - Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022).md": PDF
+#   escaneado sem OCR legível (só cabeçalho de jornal) — impossível confirmar ou
+#   negar o tipo pelo conteúdo.
+# - "São Paulo - Organização Básica (Lei 616-1974).md" e
+#   "São Paulo - Organização Básica.md": os 2 documentos organizam a POLÍCIA
+#   MILITAR de SP inteira (o Corpo de Bombeiros aparece só como seção/comando
+#   subordinado, Art. 38-43 da Lei 616/1974), não uma LOB exclusiva do CBM. Pode
+#   refletir a realidade de SP (CBM integrado à PM, sem lei própria separada) ou
+#   pode faltar buscar o documento certo — o Wândrio ainda não confirmou qual dos
+#   dois casos é (2026-07-09).
 
 
 def parse_doc_type(filename: str) -> str:
@@ -443,7 +504,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
 
         doc_entry = {
             "type": doc_type,
-            "typeVerified": state_id in CONTENT_VERIFIED_STATES,
+            "typeVerified": state_id in CONTENT_VERIFIED_STATES or md_file.name in CONTENT_VERIFIED_FILES,
             "md_file": md_file.name,
             "char_count": len(text),
             "year": year,
