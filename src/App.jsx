@@ -17,6 +17,7 @@ import MinutaRevisao from './pages/MinutaRevisao.jsx'
 import MinutaDeliberacao from './pages/MinutaDeliberacao.jsx'
 import RegulamentoWizard from './pages/RegulamentoWizard.jsx'
 import RegulamentoComparator from './pages/RegulamentoComparator.jsx'
+import MinutaRIComparator from './pages/MinutaRIComparator.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
@@ -50,6 +51,7 @@ const NAV_GROUPS = [
     items: [
       { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
       { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno' },
+      { to: '/minuta/comparar', icon: Scale, label: 'Comparar Regimento Interno' },
     ],
   },
   {
@@ -249,6 +251,7 @@ export default function App() {
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<MinutaRevisao />} />
           <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
+          <Route path="/minuta/comparar" element={<MinutaRIComparator />} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/comparar" element={<RegulamentoComparator />} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
