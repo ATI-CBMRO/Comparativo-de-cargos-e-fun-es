@@ -413,6 +413,12 @@ def parse_doc_type(filename: str) -> str:
     name = filename.lower()
     if 'regimento dos serviços' in name: return 'Regimento de Serviços'
     if 'regimento interno' in name: return 'Regimento Interno'
+    # Regimento de serviço/escala (ex.: GO "Regimento dos Serviços Interno e
+    # Operacional") — NÃO é um Regimento Interno organizacional; rótulo distinto
+    # para não confundir no acervo nem virar has_regimento.
+    if 'regimento' in name and 'serviç' in name: return 'Regimento de Serviços'
+    # Regulamento Geral por Decreto (ex.: RN Decreto 31.139/2021) — não é uma Lei
+    # de Organização Básica; rótulo próprio.
     if 'regulamento' in name: return 'Regulamento Geral'
     if 'normas gerais de ação' in name or 'nga' in name: return 'Normas Gerais de Ação'
     if 'quadro demonstrativo' in name: return 'Quadro Demonstrativo de Cargos'

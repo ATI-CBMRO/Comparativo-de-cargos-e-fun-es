@@ -6,6 +6,8 @@ import { fetchJson } from '../lib/dataCache.js'
 const DOC_TYPE_SHORT = {
   'Lei de Organização Básica': 'LOB',
   'Regimento Interno': 'Regimento',
+  'Regimento de Serviços': 'Reg. Serviços',
+  'Regulamento Geral': 'Regulamento',
   'Normas Gerais de Ação': 'NGA',
   'Quadro Demonstrativo de Cargos': 'QDC',
   'Quadro de Organização e Distribuição': 'QOD',

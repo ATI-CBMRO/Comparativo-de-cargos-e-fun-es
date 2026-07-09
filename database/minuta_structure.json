@@ -6403,49 +6403,443 @@
         "sigla": "DEPDEC",
         "label": "Diretoria Estadual de Proteção e Defesa Civil",
         "chapterId": "organ:depdec",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor-Geral (Comandante-Geral do CBMRO — nato)",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor Estratégico-Operacional (Oficial do último posto — QOEMBM)",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Secretaria Executiva",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Divisão de Apoio Administrativo e Financeiro",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Divisão de Operações Emergenciais",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Divisão de Minimização de Desastres",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "condeg",
         "sigla": "CONDEG",
         "label": "Conselho Deliberativo de Estratégia e Gestão",
         "chapterId": "organ:condeg",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Presidido pelo Comandante-Geral",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Composto pelos Coronéis BM da ativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "dp",
         "sigla": "DP",
         "label": "Diretoria de Pessoal",
         "chapterId": "organ:dp",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Gestão de Pessoal Ativo",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Gestão de Pessoal Inativo e Pensionistas",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Legislação, Controle e Análise de Processos",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "deei",
         "sigla": "DEEI",
         "label": "Diretoria de Educação, Ensino e Instrução",
         "chapterId": "organ:deei",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Educação",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Ensino, Instrução e Pesquisa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "dpof",
         "sigla": "DPOF",
         "label": "Diretoria de Planejamento, Orçamento e Finanças",
         "chapterId": "organ:dpof",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor (Oficial da ativa do último Posto — QOEMBM)",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria Técnica",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Planejamento e Orçamento",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Administração e Finanças",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Compras",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Comissão Permanente de Licitações",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "dsap",
         "sigla": "DSAP",
         "label": "Diretoria de Saúde e Assistência ao Pessoal",
         "chapterId": "organ:dsap",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor (QCOBM — formação em Medicina, Enfermagem, Fisioterapia, Psicologia ou Serviço Social; na ausência, QOEMBM)",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Pessoal",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Saúde",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Assistência ao Pessoal",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenadoria de Saúde Ocupacional e Medicina do Trabalho",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Centro Médico-Hospitalar",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "dlog",
         "sigla": "DLOG",
         "label": "Diretoria de Logística",
         "chapterId": "organ:dlog",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Diretor",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Centro de Controle de Material e Patrimônio",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Centro de Suprimento e Material",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Centro de Manutenção",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "dpo",
@@ -6464,7 +6858,62 @@
                 "sigla": "CAT",
                 "label": "Coordenadoria de Atividades Técnicas",
                 "chapterId": "organ:cat",
-                "children": []
+                "children": [
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Coordenador",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Adjunto",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Seção Administrativa",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Seção de Análise de Projetos",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Seção de Investigação e Prevenção de Incêndio",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Gerência de Atividades Técnicas",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -6512,14 +6961,70 @@
                 "sigla": "CIBM",
                 "label": "Companhia Independente de Bombeiros Militar",
                 "chapterId": "organ:cibm",
-                "children": []
+                "children": [
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Comando",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Seção de Comando e Serviço",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Pelotões de Bombeiros Militar",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  }
+                ]
               },
               {
                 "organKey": "gbm",
                 "sigla": "GBM",
                 "label": "Grupo de Bombeiros Militar",
                 "chapterId": "organ:gbm",
-                "children": []
+                "children": [
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Comandante",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Auxiliares",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  },
+                  {
+                    "organKey": null,
+                    "sigla": "",
+                    "label": "Destacamentos de Bombeiros Militar",
+                    "structural": true,
+                    "isInternal": true,
+                    "chapterId": null,
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -6536,21 +7041,141 @@
             "sigla": "BBS",
             "label": "Batalhão de Busca e Salvamento",
             "chapterId": "organ:bbs",
-            "children": []
+            "children": [
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Comando",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Estado-Maior",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Seção de Comando e Serviço",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Companhia de Busca e Salvamento",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              }
+            ]
           },
           {
             "organKey": "bifea",
             "sigla": "BIFEA",
             "label": "Batalhão de Incêndio Florestal e Emergências Ambientais",
             "chapterId": "organ:bifea",
-            "children": []
+            "children": [
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Comando",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Estado-Maior",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Seção de Comando e Serviço",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Companhia de Incêndio Florestal",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Companhia de Emergências Ambientais",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              }
+            ]
           },
           {
             "organKey": "boa",
             "sigla": "BOA",
             "label": "Batalhão de Operações Aéreas",
             "chapterId": "organ:boa",
-            "children": []
+            "children": [
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Comando",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Estado-Maior",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Seção de Comando e Serviço",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              },
+              {
+                "organKey": null,
+                "sigla": "",
+                "label": "Companhia de Operações Aéreas",
+                "structural": true,
+                "isInternal": true,
+                "chapterId": null,
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -6559,49 +7184,416 @@
         "sigla": "CINT",
         "label": "Coordenadoria de Inteligência",
         "chapterId": "organ:cint",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenador",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Inteligência",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Contra-Inteligência",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Operações de Inteligência",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Controle de Armamento",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "ccs",
         "sigla": "CCS",
         "label": "Coordenadoria de Comunicação Social",
         "chapterId": "organ:ccs",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenador",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Imprensa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Relações Públicas",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Comunicação Institucional",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "cinf",
         "sigla": "CINF",
         "label": "Coordenadoria de Informática",
         "chapterId": "organ:cinf",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Coordenador",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Projetos e Desenvolvimento",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Suporte",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Redes",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "assessorias",
         "sigla": "ASSESSORIAS",
         "label": "Assessorias",
         "chapterId": "organ:assessorias",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria Institucional",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria Especial",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria Legislativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria Parlamentar",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria de Projetos e Gestão Estratégica",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria Fundacional",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessoria de Controle Interno",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "gab-cg",
         "sigla": "GAB/CG",
         "label": "Gabinete do Comandante-Geral",
         "chapterId": "organ:gab-cg",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Chefia de Gabinete",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Secretaria",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Assessorias",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Ajudância de Ordens",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "ag",
         "sigla": "AG",
         "label": "Ajudância-Geral",
         "chapterId": "organ:ag",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Ajudante-Geral",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Secretaria-Geral",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Companhia de Comando e Serviços",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       },
       {
         "organKey": "corregedoria",
         "sigla": "CORREG",
         "label": "Corregedoria-Geral",
         "chapterId": "organ:corregedoria",
-        "children": []
+        "children": [
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Corregedor-Geral (Oficial da ativa do último Posto — QOEMBM; indicado pelo CG e nomeado pelo Governador; substituto imediato do Chefe do EMG)",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Adjunto",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção Administrativa",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Cartório",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Núcleo de Inteligência",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          },
+          {
+            "organKey": null,
+            "sigla": "",
+            "label": "Seção de Processo Administrativo",
+            "structural": true,
+            "isInternal": true,
+            "chapterId": null,
+            "children": []
+          }
+        ]
       }
     ]
   }

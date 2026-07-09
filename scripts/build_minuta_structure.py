@@ -348,6 +348,22 @@ ROLE_TO_ORGAN = {
 }
 
 
+def truncate_desdobramento_label(desd: str) -> str:
+    """Corta no separador ' — '/' – ' de topo, ignorando dash DENTRO de
+    parênteses (ex.: 'Diretor (QCOBM — formação em Medicina...)' fica intacto —
+    o dash ali qualifica o requisito do cargo, não separa nome de unidade da
+    sua composição interna)."""
+    depth = 0
+    for i, ch in enumerate(desd):
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        elif ch in "—–" and depth == 0:
+            return desd[:i].strip()
+    return desd.strip()
+
+
 def build_command_chart(organs, chapters):
     """Árvore dos órgãos (capítulos kind='organ') pela subordinação do ro.json.
 
@@ -409,6 +425,22 @@ def build_command_chart(organs, chapters):
             nodes[p]["children"].append(n)
         else:
             roots.append(n)
+
+    # Órgãos sem filhos de órgão (folhas do commandChart) ganham sua estrutura
+    # interna (desdobramentos do ro.json) como nós estruturais isInternal=True.
+    # "bbm" fica de fora mesmo estando sem filhos neste ponto: ele recebe a cadeia
+    # real Cia BM/Pel BM/Guarnição logo abaixo, e não deve ganhar nós internos que
+    # ficariam misturados a essa cadeia.
+    for k, n in nodes.items():
+        if n["children"] or k == "bbm":
+            continue
+        for desd in (organs.get(k) or {}).get("desdobramentos") or []:
+            label = truncate_desdobramento_label(desd)
+            n["children"].append({
+                "organKey": None, "sigla": "", "label": label,
+                "structural": True, "isInternal": True,
+                "chapterId": None, "children": [],
+            })
 
     if guarnicao is not None and "bbm" in nodes:
         leaf = nodes["bbm"]

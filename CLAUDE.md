@@ -88,7 +88,8 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
 - Rotas: `/` (Dashboard), `/estados` (StatesList), `/estados/:stateId` (StateDetail),
   `/legislacoes` (Legislations), `/comparar` (MinutaComparator, "Subsídio à Minuta"),
   `/busca` (Search), `/minuta` (MinutaWizard), `/minuta-diagramas` (MinutaDiagrams),
-  `/minuta/revisao` (MinutaRevisao) e `/minuta/deliberacao` (MinutaDeliberacao).
+  `/minuta/comparativo-ri` (RIComparator), `/minuta/revisao` (MinutaRevisao) e
+  `/minuta/deliberacao` (MinutaDeliberacao).
 - As páginas fazem `fetch('/database/states_data.json')`; `StateDetail` também busca
   `/database/organs_detail/${stateId}.json`. O `stateId` da URL corresponde ao `id` do
   `STATE_META`.
@@ -113,6 +114,19 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   por `build_minuta_comparison.py` via `build_minuta_structure.command_order`, mantendo a lista
   em sincronia com o `commandChart`. Só entram estados com dado correspondente; busca filtra a
   matriz. Substitui o antigo `Compare.jsx` (removido), que comparava por região/similaridade.
+- `/minuta/comparativo-ri` (`src/pages/RIComparator.jsx`, "Comparativo de RI") compara, capítulo a
+  capítulo, a minuta do CBMRO (coluna central, leitura, via `buildTargets` do `minuta_structure.json`)
+  com o órgão equivalente no **Regimento Interno** dos 7 estados que de fato possuem RI organizacional
+  no acervo (al, df, mt, pr, pa, rs, se; `RI_STATE_IDS`) — UM estado por vez, por pills. NÃO inclui
+  am (só LOB+Quadro) nem go (LOB+QOD+"Regimento dos Serviços Interno e Operacional", que é regimento
+  de serviço, não RI). Diferente do `/comparar`, esta página mostra **só a camada de RI, sem
+  o enriquecimento da LOB**: lê o campo `riOrgans`/`riProvenance`/`riSourceLabel` do
+  `comparativo_minuta.json` (snapshot da coluna 3 gravado por `build_minuta_comparison.py` ANTES do
+  merge da LOB — camadas DPO/COT curado + `ENRICHMENT_ORGAN` + Guarnição + auto por palavra-chave em
+  organs_detail não-LOB). A coluna `organs` (LOB + RI) segue intacta para o `/comparar`. Lógica pura
+  em `src/lib/riComparison.js` (testada): `indexComparativo`, `organKeyOfChapter`, `statesWithData`
+  (filtra por `riOrgans` não vazio), `pickState`. Capítulos sem `organKey` (Preliminares/Estrutura/
+  Finais) e a Guarnição (sem RI mapeado) exibem avisos de "sem equivalente".
 - Componentes-chave: `Organogram.jsx` (árvore expansível/colapsável) e `OrgDetail.jsx`
   (painel lateral de detalhamento). `CargoComparator.jsx` e `OrgaosOperacionaisComparator.jsx`
   foram removidos junto com as abas do Dashboard.
@@ -320,8 +334,23 @@ cada um com um `nav-section-label` (reusa o estilo já existente, variante
   Diagramas da Minuta (fica aqui e não na trilha do RI — vem de `commandChart`/
   `organs_detail/ro.json`, ou seja, é a estrutura da PRÓPRIA LOB de Rondônia, não
   conteúdo comparado com outros estados).
-- **Regimento Interno**: Subsídio à Minuta, Minuta do Regimento Interno.
+- **Regimento Interno**: Subsídio à Minuta, Minuta do Regimento Interno, Subsídio ao
+  RI (estrutura), Comparar Regimento Interno (texto).
 - **Regulamento Geral**: Minuta do Regulamento Geral, Comparar Regulamento.
+
+**Duas telas de comparação do RI, de propósito (fusão com `master`, 2026-07-09)**:
+"Subsídio ao RI" (`/minuta/comparativo-ri`, `RIComparator.jsx`, construído em
+paralelo por outra sessão) reusa a MESMA matriz estrutural de "Subsídio à Minuta"
+(`comparativo_minuta.json`, campo novo `riOrgans`/`riProvenance`/`riSourceLabel`
+por estado), só filtrada aos que têm RI — compara ESTRUTURA/competências.
+"Comparar Regimento Interno" (`/minuta/comparar`, Bloco D) compara o TEXTO
+verbatim de cada artigo. Rótulos "(estrutura)"/"(texto)" no menu deixam a
+diferença óbvia. Ao integrar as duas branches: `master` também tinha corrigido
+RN/GO em `parse_doc_type` (regras genéricas por nome de arquivo) — mesclado
+sem conflito real com os overrides pontuais de MT/SE (que dependem de
+conteúdo, não de nome); `master` NÃO tinha os Blocos A9 (login obrigatório)
+nem a reorganização do menu em `NAV_GROUPS` — essas prevaleceram como estavam
+nesta branch.
 
 "Revisão da Minuta" e "Acessos" continuam fora dos grupos (o primeiro atende os dois
 documentos via seletor interno; o segundo é administrativo). Nomes dos documentos

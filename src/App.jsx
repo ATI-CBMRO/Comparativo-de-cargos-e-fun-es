@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
   Search, Library, ScrollText, Menu, X, Network, LogOut,
-  MessageSquare, ShieldCheck, BookMarked, Scale
+  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -18,6 +18,7 @@ import MinutaDeliberacao from './pages/MinutaDeliberacao.jsx'
 import RegulamentoWizard from './pages/RegulamentoWizard.jsx'
 import RegulamentoComparator from './pages/RegulamentoComparator.jsx'
 import MinutaRIComparator from './pages/MinutaRIComparator.jsx'
+import RIComparator from './pages/RIComparator.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
@@ -32,6 +33,14 @@ import { useAuth } from './lib/auth.jsx'
 // Agrupado em 3 blocos (pedido do Wândrio): itens gerais, e as DUAS trilhas de minuta
 // (Regimento Interno e Regulamento Geral) — cada uma com seu comparador + editor,
 // para o menu deixar claro que são dois documentos distintos sendo elaborados.
+//
+// Duas telas de comparação do RI coexistem de propósito (fusão com o master,
+// 2026-07-09): "Subsídio ao RI" reusa a MESMA matriz estrutural de
+// "Subsídio à Minuta" (comparativo_minuta.json), só filtrada aos estados com RI —
+// compara ESTRUTURA/competências. "Comparar Regimento Interno" compara o TEXTO
+// verbatim de cada artigo, lado a lado, com selo de correspondência — é o
+// equivalente do "Comparar Regulamento" pro RI. Nomes escolhidos pra deixar a
+// diferença óbvia no menu.
 const NAV_GROUPS = [
   {
     section: null,
@@ -51,7 +60,8 @@ const NAV_GROUPS = [
     items: [
       { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
       { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno' },
-      { to: '/minuta/comparar', icon: Scale, label: 'Comparar Regimento Interno' },
+      { to: '/minuta/comparativo-ri', icon: GitCompareArrows, label: 'Subsídio ao RI (estrutura)' },
+      { to: '/minuta/comparar', icon: Scale, label: 'Comparar Regimento Interno (texto)' },
     ],
   },
   {
@@ -252,6 +262,7 @@ export default function App() {
           <Route path="/minuta/revisao" element={<MinutaRevisao />} />
           <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
           <Route path="/minuta/comparar" element={<MinutaRIComparator />} />
+          <Route path="/minuta/comparativo-ri" element={<RIComparator />} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/comparar" element={<RegulamentoComparator />} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />

@@ -18,7 +18,7 @@ function ChartNode({ node, onSelect, selectedId, defaultExpanded, isRoot = false
   const clickable = !node.synthetic && node.chapterId
   const selected = clickable && node.chapterId === selectedId
   const [open, setOpen] = useState(isRoot || node.synthetic ? true : defaultExpanded)
-  const cls = `moc-box${node.synthetic ? ' moc-box-root' : ''}${selected ? ' moc-box-sel' : ''}`
+  const cls = `moc-box${node.synthetic ? ' moc-box-root' : ''}${node.isInternal ? ' moc-box-internal' : ''}${selected ? ' moc-box-sel' : ''}`
   const showToggle = hasKids && !node.synthetic
   const name = node.sigla || node.label || 'nó'
 
@@ -54,9 +54,9 @@ function ChartNode({ node, onSelect, selectedId, defaultExpanded, isRoot = false
       </div>
       {hasKids && open && (
         <ul>
-          {kids.map(c => (
+          {kids.map((c, i) => (
             <ChartNode
-              key={c.organKey || c.label}
+              key={c.organKey || `${c.label}-${i}`}
               node={c}
               onSelect={onSelect}
               selectedId={selectedId}
