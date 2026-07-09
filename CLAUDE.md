@@ -95,6 +95,15 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   `STATE_META`.
 - O **Dashboard** mostra só a Visão Geral (estatísticas); as antigas abas "Comparativo de
   Cargos" e "DPO × COT" foram removidas junto com seus componentes.
+### Tabela de cobertura no Acervo Legal (jul/2026)
+A página Acervo Legal (`src/pages/Legislations.jsx`) mostra, no topo, uma
+tabela-resumo `estado × tipo` (LOB / Regimento Interno / Regulamento de
+Serviço) — lógica pura em `src/lib/acervoCoverage.js` (testada), apresentação
+em `src/components/AcervoCoverageTable.jsx`. A coluna "Regulamento de Serviço"
+funde os tipos `Regulamento Geral` e `Regimento de Serviços`. O selo ✓/⚠ por
+célula reusa o campo `typeVerified` dos dados (✓ = conferido por conteúdo, ⚠ =
+só por nome de arquivo). A tabela NÃO é filtrada pela busca da página (é
+panorama fixo dos 27); a busca continua governando só a lista detalhada abaixo.
 - `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
   `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
   espelha os 26 órgãos da LOB + Guarnição (27 no total), comparando RO × estados em **3 colunas**:
