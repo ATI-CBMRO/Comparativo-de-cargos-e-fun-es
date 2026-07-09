@@ -328,14 +328,35 @@ documentos via seletor interno; o segundo é administrativo). Nomes dos document
 sempre por extenso agora: "Minuta do Regimento Interno" (não "Minuta RI") e "Minuta
 do Regulamento Geral" (não "Minuta do Regulamento").
 
-**Bloco D esboçado, não iniciado**: falta um comparador "Regimento Interno × outros
-estados" análogo ao "Comparar Regulamento" — `minuta_structure.json` não tem o campo
-`alternatives` que o Regulamento tem, então isso exige a mesma curadoria dispositivo-
-a-dispositivo do B1-M, replicada pros 7 estados com Regimento Interno. **A GERAÇÃO
-da minuta do RI com base em outros estados já existe** (`/minuta`, ver seção acima —
-enriquecida com 13 estados via `minuta_enrichment.py`); o Bloco D é só a tela de
-comparação lado a lado, não a geração. Ver
-`docs/curadoria/bloco-d-esboco-comparador-ri.md`.
+**Bloco D concluído (2026-07-09)**: comparador "Regimento Interno × outros estados"
+em `/minuta/comparar` (`src/pages/MinutaRIComparator.jsx`), análogo ao "Comparar
+Regulamento". `minuta_structure.json` ganhou o campo `alternatives` em cada nó
+`kind: 'organ'` — 25 dos 27 órgãos têm cobertura (AL, DF, PA, PR, RS; MT/SE saíram
+do escopo depois da correção de classificação). Diferente do Regulamento, aqui a
+coluna do estado mostra o **ARTIGO COMPLETO** (decisão de produto), não só o
+trecho já aproveitado na minuta — decisão que aumenta o valor do comparador mas
+também o esforço de extração.
+- Curadoria (Fable): `docs/curadoria/bloco-d-classificacao-al-df-pr-pa.md` (20
+  órgãos já cobertos por AL/DF/PR/PA, revisão do que já estava em
+  `minuta_enrichment.py`) + `docs/curadoria/de-para-ri-rs.md` (RS mapeado pelos
+  27 órgãos, nunca lido pra esse fim antes). Achado: das 7 lacunas identificadas,
+  5 ganharam fonte válida (bifea←DF GPRAM, cat←RS BESCI, doe←DF COESP,
+  assessorias←PA, crbm←RS); só `guarnicao` (matéria de RISD, não de RI) e `gbm`
+  (homônimo de natureza diferente no RS) ficam sem correspondência plena.
+- Extração: `scripts/extrair_ri_alternativas.py` gera
+  `scripts/ri_alternativas_enrichment.py` (reusa as funções de
+  `extrair_regulamentos.py`). Achados de leitura tratados: PR tem 2 documentos-
+  fonte (LOB × coletânea de RI do portal, roteados por citação); a Portaria nº
+  227/2023 do PR (citada pra corregedoria) não existe no acervo — substituída
+  pelo Art. 23 da coletânea, mesmo assunto; DF tem "Art. N" embutido no meio da
+  linha em alguns pontos; a LOB do PR tem um defeito de conversão que agrupa
+  números de artigo no rodapé, desconectados do corpo (resolvido por
+  fatiamento de linha verificado manualmente); páginas raspadas de site (não
+  PDF) às vezes colam o próximo bloco sem marcador — mecanismo `_STOP_MARKERS`
+  no extrator corta no ponto certo (achado ao revisar o Art. 23 do PR).
+- `scripts/test_minuta_alternativas.py` valida o schema; entra no `test:py`.
+- Ver `docs/curadoria/bloco-d-esboco-comparador-ri.md` e
+  `docs/curadoria/bloco-d-pacote-trabalho-fable.md` pro histórico completo.
 
 ## Revisão Colaborativa da Minuta (login + comentários + IA)
 
