@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import {
   Flame, BookOpen, FileText, GitCompare, MapPin, ListTree
 } from 'lucide-react'
+import { fetchJson } from '../lib/dataCache.js'
+import { LoadingState, ErrorState } from '../components/Status.jsx'
 
 function StatCard({ accent, icon: Icon, iconBg, iconColor, label, value, desc }) {
   return (
@@ -25,28 +27,19 @@ export default function Dashboard() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('/database/states_data.json')
-      .then(r => r.json())
+    fetchJson('/database/states_data.json')
       .then(d => { setData(d); setLoading(false) })
       .catch(() => setLoading(false))
   }, [])
 
-  if (loading) {
-    return (
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60vh', flexDirection: 'column', gap: 16 }}>
-        <div className="spinner" />
-        <p style={{ color: 'var(--text-muted)', fontSize: 14 }}>Carregando base de dados...</p>
-      </div>
-    )
-  }
+  if (loading) return <LoadingState label="Carregando base de dados..." />
 
   if (!data) {
     return (
-      <div className="empty-state" style={{ marginTop: 80 }}>
-        <Flame size={48} className="empty-state-icon" />
-        <h3>Base de dados não encontrada</h3>
-        <p>Execute <code>python scripts/build_states_data.py</code> para gerar os dados estruturados.</p>
-      </div>
+      <ErrorState
+        title="Base de dados não encontrada"
+        hint={<>Execute <code>python scripts/build_states_data.py</code> para gerar os dados estruturados.</>}
+      />
     )
   }
 

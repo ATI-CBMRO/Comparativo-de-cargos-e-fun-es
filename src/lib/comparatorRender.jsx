@@ -1,14 +1,13 @@
 /* Helpers de render compartilhados pela matriz de comparação (verbatim). */
+import { highlightSegments } from './highlightSegments.js'
 
 export function renderFriendlyText(text) {
   if (!text) return <span className="cc-empty">—</span>
-  let html = text
-  const patterns = [
-    { regex: /\b(Oficiais|Oficial superior|Oficiais superiores|Oficial da ativa|Oficiais da ativa|último posto|último Posto|Coronéis|Coronel|Tenente-Coronel|Majores|Major|Capitão|Tenente|Praças|QOEMBM|QCOBM|CCEMBM)\b/gi, replacement: '<strong>$1</strong>' },
-    { regex: /\b(Governador do Estado|Governador|Secretário de Estado|Comandante-Geral|Subcomandante-Geral|Chefe do Estado-Maior|Chefe do EMG|Estado-Maior Geral|Subcomandante|Comandante|Diretor-Geral|Diretor|Diretora|Coordenador|Coordenadora)\b/gi, replacement: '<strong>$1</strong>' },
-  ]
-  patterns.forEach(p => { html = html.replace(p.regex, p.replacement) })
-  return <span dangerouslySetInnerHTML={{ __html: html }} />
+  return (
+    <span>
+      {highlightSegments(text).map((seg, i) => (seg.bold ? <strong key={i}>{seg.text}</strong> : <span key={i}>{seg.text}</span>))}
+    </span>
+  )
 }
 
 export function List({ items }) {

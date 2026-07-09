@@ -4,7 +4,7 @@ export default function IdentityBar({ users, currentUser, onChangeUser, phaseLab
   return (
     <div style={{
       display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap',
-      background: '#121d3d', color: '#fff', padding: '8px 14px', borderRadius: 8,
+      background: 'var(--navy-850)', color: '#fff', padding: '8px 14px', borderRadius: 8,
       fontSize: 13, marginBottom: 16,
     }}>
       <span style={{ background: 'rgba(255,255,255,.14)', padding: '3px 10px', borderRadius: 20, fontWeight: 600 }}>

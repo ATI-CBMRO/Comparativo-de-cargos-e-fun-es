@@ -6,6 +6,8 @@ import {
 } from 'lucide-react'
 import Organogram from '../components/Organogram.jsx'
 import OrgDetail from '../components/OrgDetail.jsx'
+import { fetchJson } from '../lib/dataCache.js'
+import { LoadingState } from '../components/Status.jsx'
 
 const REGION_CSS = {
   Norte: 'norte', Nordeste: 'nordeste', 'Centro-Oeste': 'centroeste',
@@ -85,6 +87,16 @@ function DocCard({ doc }) {
         <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>
           {doc.year ? `Ano: ${doc.year} · ` : ''}{totalKb}k caracteres extraídos
         </div>
+        {doc.type !== 'Lei de Organização Básica' && (
+          <div
+            style={{ fontSize: 11, marginTop: 3, color: doc.typeVerified ? 'var(--success-text, #2e7d32)' : 'var(--text-muted)' }}
+            title={doc.typeVerified
+              ? 'O tipo deste documento foi conferido lendo o conteúdo de verdade, não só o nome do arquivo.'
+              : 'Este tipo de documento ainda não foi conferido por conteúdo — a classificação é só pelo nome do arquivo, pode estar incorreta.'}
+          >
+            {doc.typeVerified ? '✓ tipo conferido por conteúdo' : '⚠ tipo só por nome de arquivo'}
+          </div>
+        )}
       </div>
       <span className={`badge ${doc.type === 'Lei de Organização Básica' ? 'badge-red' : 'badge-gold'}`} style={{ fontSize: 10, flexShrink: 0 }}>
         {short}
@@ -103,8 +115,7 @@ export default function StateDetail() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/database/states_data.json')
-      .then(r => r.json())
+    fetchJson('/database/states_data.json')
       .then(data => {
         const found = data.states.find(s => s.id === stateId)
         setState(found || null)
@@ -113,10 +124,9 @@ export default function StateDetail() {
       .catch(() => setLoading(false))
   }, [stateId])
 
-  // Tenta carregar dados de detalhe de órgãos para este estado
+  // Tenta carregar dados de detalhe de órgãos para este estado (nem todo estado tem).
   useEffect(() => {
-    fetch(`/database/organs_detail/${stateId}.json`)
-      .then(r => r.ok ? r.json() : null)
+    fetchJson(`/database/organs_detail/${stateId}.json`, { optional: true })
       .then(data => {
         if (data?.organs) setOrgDetail(data.organs)
       })
@@ -150,11 +160,7 @@ export default function StateDetail() {
     })
   }
 
-  if (loading) return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60vh' }}>
-      <div className="spinner" />
-    </div>
-  )
+  if (loading) return <LoadingState label="" />
 
   if (!state) return (
     <div className="empty-state" style={{ marginTop: 80 }}>

@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react'
 import { ChevronRight, Download, ArrowLeft, Pencil, Check, RotateCcw } from 'lucide-react'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { buildMinutaBlob } from '../lib/minutaDocx.js'
+import { fetchJson } from '../lib/dataCache.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -68,7 +69,7 @@ function srcBadge(source) {
   return (
     <span style={{
       marginLeft: 6, fontSize: 11, fontFamily: 'Inter, sans-serif',
-      color: '#fff', background: '#c8102e', borderRadius: 4, padding: '1px 6px',
+      color: '#fff', background: 'var(--cbm-red-700)', borderRadius: 4, padding: '1px 6px',
     }}>{source}</span>
   )
 }
@@ -84,8 +85,7 @@ export default function MinutaWizard() {
   const [generating, setGenerating] = useState(false)
 
   useEffect(() => {
-    fetch('/database/minuta_structure.json')
-      .then(r => { if (!r.ok) throw new Error(r.status); return r.json() })
+    fetchJson('/database/minuta_structure.json')
       .then(setData)
       .catch(() => setError('Erro ao carregar minuta_structure.json. Execute build_minuta_structure.py.'))
       .finally(() => setLoading(false))
@@ -195,7 +195,7 @@ export default function MinutaWizard() {
     return (
       <>
         <div className="page-header"><div className="page-header-left"><h2 className="page-title">Minuta de Regimento Interno</h2></div></div>
-        <div className="page-body" style={{ padding: 32 }}><p style={{ color: '#c8102e' }}>{error}</p></div>
+        <div className="page-body" style={{ padding: 32 }}><p style={{ color: 'var(--cbm-red-700)' }}>{error}</p></div>
       </>
     )
   }
@@ -306,9 +306,9 @@ export default function MinutaWizard() {
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div style={{
                 width: 28, height: 28, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: i <= step ? '#c8102e' : '#d1d5db', color: '#fff', fontWeight: 700, fontSize: 13, flexShrink: 0,
+                background: i <= step ? 'var(--cbm-red-700)' : '#d1d5db', color: '#fff', fontWeight: 700, fontSize: 13, flexShrink: 0,
               }}>{i + 1}</div>
-              <span style={{ fontSize: 13, color: i === step ? '#c8102e' : 'var(--text-muted)', fontWeight: i === step ? 600 : 400 }}>{label}</span>
+              <span style={{ fontSize: 13, color: i === step ? 'var(--cbm-red-700)' : 'var(--text-muted)', fontWeight: i === step ? 600 : 400 }}>{label}</span>
               {i < 2 && <ChevronRight size={16} color="#d1d5db" style={{ flexShrink: 0 }} />}
             </div>
           ))}
@@ -322,7 +322,7 @@ export default function MinutaWizard() {
             </div>
             <button onClick={startReview} style={{
               display: 'flex', alignItems: 'center', gap: 8, padding: '11px 26px', border: 'none', borderRadius: 7,
-              background: '#c8102e', color: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 15,
+              background: 'var(--cbm-red-700)', color: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 15,
             }}>Revisar e curar a minuta <ChevronRight size={18} /></button>
           </div>
         )}
@@ -340,7 +340,7 @@ export default function MinutaWizard() {
                 <div key={ch.id} style={{ marginBottom: 4 }}>
                   <button onClick={() => scrollTo(chapterIdOf(ch.id))} style={{
                     border: 'none', background: 'none', padding: '2px 0', textAlign: 'left', cursor: 'pointer',
-                    color: '#121d3d', fontWeight: 600, fontSize: 12.5,
+                    color: 'var(--navy-850)', fontWeight: 600, fontSize: 12.5,
                   }}>{ch.chapterTitle}</button>
                   {ch.kind === 'organ' && ch.sections.map(s => {
                     const rm = (removedByEditId[s.editId] ?? []).length
@@ -348,7 +348,7 @@ export default function MinutaWizard() {
                       <button key={s.editId} onClick={() => scrollTo(sectionIdOf(s.editId))} style={{
                         display: 'block', border: 'none', background: 'none', padding: '1px 0 1px 12px', textAlign: 'left',
                         cursor: 'pointer', color: 'var(--text-muted)', fontSize: 12,
-                      }}>{s.sectionTitle}{rm > 0 && <span style={{ color: '#c8102e', fontWeight: 700 }}> ·{rm}</span>}</button>
+                      }}>{s.sectionTitle}{rm > 0 && <span style={{ color: 'var(--cbm-red-700)', fontWeight: 700 }}> ·{rm}</span>}</button>
                     )
                   })}
                 </div>
@@ -359,7 +359,7 @@ export default function MinutaWizard() {
             <div style={{ flex: 1, minWidth: 0 }}>
               {/* Barra de fontes (fixa) */}
               <div style={{
-                position: 'sticky', top: 0, zIndex: 5, background: '#eef1f6', borderBottom: '1px solid var(--border-card)',
+                position: 'sticky', top: 0, zIndex: 5, background: 'var(--bg-app)', borderBottom: '1px solid var(--border-card)',
                 padding: '10px 4px', marginBottom: 12, display: 'flex', flexWrap: 'wrap', gap: 10, alignItems: 'center',
               }}>
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)' }}>Fontes:</span>
@@ -374,7 +374,7 @@ export default function MinutaWizard() {
                   <button onClick={() => setAllSources(true)} style={chipBtn}>marcar todas</button>
                   <button onClick={() => setAllSources(false)} style={chipBtn}>desmarcar todas</button>
                   {removedCount > 0 && (
-                    <button onClick={() => setExcluded(new Set())} style={{ ...chipBtn, color: '#c8102e', borderColor: '#c8102e' }}>
+                    <button onClick={() => setExcluded(new Set())} style={{ ...chipBtn, color: 'var(--cbm-red-700)', borderColor: 'var(--cbm-red-700)' }}>
                       <RotateCcw size={12} style={{ verticalAlign: -2, marginRight: 3 }} />restaurar removidos ({removedCount})
                     </button>
                   )}
@@ -383,7 +383,7 @@ export default function MinutaWizard() {
 
               <div style={{
                 border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '20px 24px',
-                fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: '#1a1a1a',
+                fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: 'var(--doc-ink)',
               }}>
                 {articles.map(art => <div key={art.number} style={{ marginBottom: 8 }}>{renderArticle(art)}</div>)}
               </div>
@@ -395,7 +395,7 @@ export default function MinutaWizard() {
                 }}><ArrowLeft size={16} /> Voltar</button>
                 <button onClick={() => setStep(2)} style={{
                   display: 'flex', alignItems: 'center', gap: 6, padding: '9px 24px', border: 'none', borderRadius: 7,
-                  background: '#c8102e', color: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 14,
+                  background: 'var(--cbm-red-700)', color: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 14,
                 }}>Ir para download <ChevronRight size={16} /></button>
               </div>
             </div>
@@ -405,7 +405,7 @@ export default function MinutaWizard() {
         {/* Etapa 2: download */}
         {step === 2 && (
           <div style={{ maxWidth: 820 }}>
-            <h3 style={{ color: '#121d3d', marginBottom: 16, fontSize: 17 }}>Resumo da minuta — {data.title}</h3>
+            <h3 style={{ color: 'var(--navy-850)', marginBottom: 16, fontSize: 17 }}>Resumo da minuta — {data.title}</h3>
             <div style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 24, marginBottom: 4, maxHeight: 520, overflow: 'auto' }}>
               <PlainPreview articles={articles} />
             </div>
@@ -416,7 +416,7 @@ export default function MinutaWizard() {
               }}><ArrowLeft size={16} /> Voltar e curar</button>
               <button onClick={handleDownload} disabled={generating} style={{
                 display: 'flex', alignItems: 'center', gap: 8, padding: '10px 24px', border: 'none', borderRadius: 7,
-                background: generating ? '#9ca3af' : '#c8102e', color: '#fff', fontWeight: 600, cursor: generating ? 'wait' : 'pointer', fontSize: 14,
+                background: generating ? '#9ca3af' : 'var(--cbm-red-700)', color: '#fff', fontWeight: 600, cursor: generating ? 'wait' : 'pointer', fontSize: 14,
               }}><Download size={16} />{generating ? 'Gerando…' : 'Baixar Minuta_RI_Operacional_CBMRO.docx'}</button>
             </div>
           </div>
@@ -428,7 +428,7 @@ export default function MinutaWizard() {
 
 const chipBtn = {
   border: '1px solid var(--border-card)', borderRadius: 5, background: '#fff',
-  padding: '3px 9px', fontSize: 12, cursor: 'pointer', color: '#121d3d',
+  padding: '3px 9px', fontSize: 12, cursor: 'pointer', color: 'var(--navy-850)',
 }
 
 // Expansor "N removidos" por seção
@@ -453,7 +453,7 @@ function RemovedBlock({ removed, onRestore, editId }) {
 function PlainPreview({ articles }) {
   if (!articles.length) return <p style={{ color: 'var(--text-muted)', fontSize: 13 }}>(sem conteúdo)</p>
   return (
-    <div style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: '#1a1a1a' }}>
+    <div style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: 'var(--doc-ink)' }}>
       {articles.map(art => (
         <div key={art.number} style={{ marginBottom: 10 }}>
           {art.chapterTitle && (

@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Search, FileText, Library, ChevronRight, ExternalLink } from 'lucide-react'
+import { fetchJson } from '../lib/dataCache.js'
+import { buildCoverageRows } from '../lib/acervoCoverage.js'
+import AcervoCoverageTable from '../components/AcervoCoverageTable.jsx'
 
 const DOC_TYPE_SHORT = {
   'Lei de Organização Básica': 'LOB',
@@ -14,13 +17,14 @@ const DOC_TYPE_SHORT = {
 
 export default function Legislations() {
   const [data, setData] = useState(null)
+  const [error, setError] = useState(null)
   const [query, setQuery] = useState('')
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('/database/states_data.json')
-      .then(r => r.json())
+    fetchJson('/database/states_data.json')
       .then(setData)
+      .catch(() => setError('Não foi possível carregar a base de dados. Recarregue a página.'))
   }, [])
 
   // Achata todos os documentos de todos os estados em uma única lista (ordem alfabética por estado)
@@ -41,6 +45,10 @@ export default function Legislations() {
     }
     return docs.sort((a, b) => a.stateName.localeCompare(b.stateName, 'pt-BR'))
   }, [data])
+
+  // Linhas da tabela de cobertura (sempre os 27 estados; NÃO é filtrada pela
+  // busca — ver design). Independente de `allDocs`/`filtered`.
+  const coverageRows = useMemo(() => buildCoverageRows(data?.states), [data])
 
   const q = query.trim().toLowerCase()
   const filtered = useMemo(() => allDocs.filter(d => (
@@ -67,6 +75,13 @@ export default function Legislations() {
     return [...byState.values()]
   }, [filtered])
 
+  if (error) return (
+    <div className="empty-state" style={{ marginTop: 80 }}>
+      <h3>Erro ao carregar</h3>
+      <p>{error}</p>
+    </div>
+  )
+
   if (!data) return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60vh' }}>
       <div className="spinner" />
@@ -87,6 +102,11 @@ export default function Legislations() {
       </div>
 
       <div className="page-body">
+        <AcervoCoverageTable
+          rows={coverageRows}
+          onSelectState={id => navigate(`/estados/${id}`)}
+        />
+
         {/* Busca */}
         <div className="search-input-wrap" style={{ marginBottom: 12 }}>
           <Search size={16} className="search-input-icon" />
@@ -163,6 +183,16 @@ export default function Legislations() {
                           {d.year && d.char_count ? ' · ' : ''}
                           {d.char_count ? `${Math.round(d.char_count / 1000)}k car.` : ''}
                         </div>
+                        {d.type !== 'Lei de Organização Básica' && (
+                          <div
+                            style={{ fontSize: 11, marginTop: 2, color: d.typeVerified ? 'var(--success-text, #2e7d32)' : 'var(--text-muted)' }}
+                            title={d.typeVerified
+                              ? 'O tipo deste documento foi conferido lendo o conteúdo de verdade, não só o nome do arquivo.'
+                              : 'Este tipo de documento ainda não foi conferido por conteúdo — a classificação é só pelo nome do arquivo, pode estar incorreta.'}
+                          >
+                            {d.typeVerified ? '✓ tipo conferido por conteúdo' : '⚠ tipo só por nome de arquivo'}
+                          </div>
+                        )}
                       </div>
 
                       <span className={`badge ${isLob ? 'badge-red' : 'badge-gold'}`} style={{ fontSize: 10, flexShrink: 0 }}>

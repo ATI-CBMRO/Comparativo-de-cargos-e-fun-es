@@ -1,0 +1,437 @@
+"""Extrator determinístico da curadoria dos regulamentos (rodadas T1–T7).
+
+Em vez de um modelo "digitar" ~800 artigos, este script CORTA o markdown-fonte por
+"Art. N" e monta os arquivos scripts/regulamento_enrichment_<uf>.py mecanicamente —
+extração é verbatim por construção. O MAPA artigo→tema abaixo é o dado curado
+(de-paras validados em docs/curadoria/de-para-<uf>.md + panorama-cobertura.md).
+
+Uso:  python3 scripts/extrair_regulamentos.py [uf ...]   (sem args = todos)
+
+Regenerável e idempotente: os arquivos gerados trazem aviso de NÃO editar à mão.
+Depois de rodar, conferir com: python3 scripts/verificar_verbatim.py
+"""
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+MD = ROOT / 'database' / 'markdown'
+OUT = ROOT / 'scripts'
+
+# ── Limpeza e parsing ────────────────────────────────────────────────────────────────
+
+RE_NOISE = re.compile(
+    r'^(## Página|\*Documento extraído|\*Total de páginas|---\s*$|\s*Página \d+ de \d+'
+    r'|\s*[Pp]ágina\s+\d+\s*/\s*\d+'                 # "página 2 /18" (GO)
+    r'|\s*CBMGO\s*/?\s*RESIOBOM'                     # cabeçalho corrente do PDF de GO
+    r'|\s*(T[ÍI]TULO|CAP[ÍI]TULO|Cap[íi]tulo|Se[çc][ãa]o|SE[ÇC][ÃA]O|Subse[çc][ãa]o|SUBSE[ÇC][ÃA]O)\s+[IVXLC\d])'
+)
+# Linhas-título/cabeçalho corrente todas em maiúsculas (ex.: "DA DESTINAÇÃO, SUBORDINAÇÃO
+# E COMPETÊNCIA", "REGULAMENTO GERAL DO CORPO DE BOMBEIROS MILITAR DO ESTADO DO RIO
+# GRANDE DO NORTE" — este último tem 80 caracteres).
+RE_TITLE_CAPS = re.compile(r'^[^a-zá-ü0-9]{8,90}$')
+# Tolerante a artefatos de PDF no próprio número ("Art. 3 2."); exige "Art" maiúsculo —
+# referências no corpo do texto usam "art." minúsculo.
+RE_ART = re.compile(r'^\s*Art\s*\.?\s*(\d[\d\s]{0,3})\s*[ºo°\.]?')
+# Marcadores de dispositivo (inciso/parágrafo/alínea/item numerado):
+RE_ITEM = re.compile(
+    r'^\s*(§\s*\d|Parágrafo\s+único|[IVXLCDM]{1,8}\s*[-–—\.\)]|[a-z]\s*\)|\d{1,2}(\.\d{1,2}){0,3}\s*[-–])',
+)
+
+
+def load_lines(filename, inline_split=False, fake_art_res=(), strip_lines=()):
+    text = (MD / filename).read_text(encoding='utf-8', errors='replace')
+    lines = text.splitlines()
+    if inline_split:
+        # Páginas extraídas em linha única (GO): quebra antes de cada "Art. N" e "Capítulo".
+        quebradas = []
+        for ln in lines:
+            ln = re.sub(r'(?<!^)\s(?=Art\.\s*\d)', '\n', ln)
+            ln = re.sub(r'(?<!^)\s(?=Cap[íi]tulo\s+[IVXLC])', '\n', ln)
+            quebradas.extend(ln.split('\n'))
+        lines = quebradas
+    if fake_art_res:
+        # Citações a artigos de OUTRAS normas que começam a linha (falsos cabeçalhos).
+        lines = [re.sub(r'^(\s*)Art', r'\1art', ln)
+                 if any(rx.match(ln) for rx in fake_art_res) else ln
+                 for ln in lines]
+    if strip_lines:
+        # Continuação de cabeçalho (TÍTULO/CAPÍTULO/SEÇÃO) quebrado em 2 linhas na
+        # conversão do PDF: RE_NOISE só reconhece a 1ª linha ("Capítulo VII: Da Rotina
+        # Diária das Unidades"), a 2ª ("Operacionais") sobra e gruda no artigo seguinte.
+        lines = [ln for ln in lines if not any(rx.match(ln.strip()) for rx in strip_lines)]
+    return lines
+
+
+def clean(s):
+    return re.sub(r'\s+', ' ', s).strip()
+
+
+def art_number(line):
+    m = RE_ART.match(line)
+    if not m:
+        return None
+    return int(m.group(1).replace(' ', ''))
+
+
+def split_articles(lines):
+    """[(numero, [linhas do artigo]), ...] — do 'Art. N' até o próximo."""
+    out, cur_num, cur = [], None, []
+    for ln in lines:
+        if RE_NOISE.match(ln) or (ln.strip() and RE_TITLE_CAPS.match(ln.strip())):
+            continue
+        n = art_number(ln)
+        if n is not None:
+            if cur_num is not None:
+                out.append((cur_num, cur))
+            cur_num, cur = n, [ln]
+        elif cur_num is not None:
+            cur.append(ln)
+    if cur_num is not None:
+        out.append((cur_num, cur))
+    return out
+
+
+def caput_e_dispositivos(art_lines):
+    """Separa caput (até o 1º marcador) dos dispositivos (um por marcador)."""
+    caput_parts, dispositivos, current = [], [], None
+    for ln in art_lines:
+        if not ln.strip():
+            continue
+        if RE_ITEM.match(ln):
+            if current is not None:
+                dispositivos.append(clean(current))
+            current = ln
+        elif current is not None:
+            current += ' ' + ln
+        else:
+            caput_parts.append(ln)
+    if current is not None:
+        dispositivos.append(clean(current))
+    return clean(' '.join(caput_parts)), [d for d in dispositivos if d]
+
+
+# ── Mapa curado: UF → {label, fonte, fatia, ranges, overrides} ───────────────────────
+# ranges: lista (art_ini, art_fim, tema, match, heading). overrides: {art: (tema, match)}.
+# slice_between: (marcador_inicio, marcador_fim|None) por CONTEÚDO de linha.
+# line_slices (PA/DF): [(linha_ini, linha_fim, tema, match, heading)] — 1-indexado.
+
+CONFIG = {
+    'mt': {
+        'md': 'Mato Grosso - Regimento Interno.md',
+        'src': 'cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. {n}',
+        'slice_between': ('TÍTULO I', None),
+        'ranges': [
+            (1, 3, 'disposicoes-preliminares', 'exata', 'TÍT. I — Das Generalidades'),
+            (4, 4, 'organizacao-geral', 'exata', 'TÍT. II — Da Estrutura Organizacional'),
+            (5, 5, 'organizacao-geral', 'parcial', 'TÍT. II — Da Estrutura Organizacional (estrutura é a de MT; a da minuta de RO vem da LOB de RO)'),
+            (6, 14, 'competencias-direcao', 'exata', 'TÍT. III, Caps. I–III — Direção Geral, Colegiada e Superior'),
+            (15, 33, 'disciplina-correicao', 'exata', 'TÍT. III, Cap. III, Seção II — Corregedoria Geral'),
+            (34, 59, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. IV — Assessoramento Superior'),
+            (60, 159, 'competencias-direcao', 'exata', 'TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)'),
+            (160, 196, 'ensino-instrucao', 'exata', 'TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)'),
+            (197, 217, 'seguranca-contra-incendio', 'exata', 'TÍT. III, Cap. V, Seção III — DSCIP'),
+            (218, 233, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)'),
+            (234, 263, 'competencias-execucao', 'exata', 'TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)'),
+            (264, 266, 'disposicoes-finais', 'exata', 'Disposições Finais'),
+        ],
+        'overrides': {
+            72: ('disciplina-correicao', 'exata'), 73: ('disciplina-correicao', 'exata'),
+            158: ('servico-interno-dia', 'parcial'),
+            # Funções de chefia/comando dispersas → tema 8 (de-para MT, tema 8):
+            **{n: ('atribuicoes-funcoes', 'exata') for n in
+               [62, 63, 67, 111, 123, 137, 144, 153, 163, 164, 170, 181, 182, 190, 191,
+                200, 201, 221, 222, 225, 230, 238, 239, 250, 251, 255, 256, 262, 263]},
+        },
+    },
+    'rn': {
+        'md': 'Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md',
+        'src': 'cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. {n}',
+        # Fim em 'ANEXO I' (siglas): o Regulamento em si termina no Art. 56 —
+        # os anexos e o Decreto 31.140 (orçamento) que vêm depois NÃO entram.
+        'slice_between': ('REGULAMENTO GERAL DO CORPO DE BOMBEIROS MILITAR DO', 'ANEXO I'),
+        'ranges': [
+            (1, 4, 'disposicoes-preliminares', 'exata', 'TÍT. I, Cap. I — Disposições Gerais'),
+            (5, 11, 'organizacao-geral', 'exata', 'TÍT. I, Cap. II — Estrutura Organizacional'),
+            (12, 18, 'competencias-direcao', 'exata', 'TÍT. II, Cap. I — Direção Superior'),
+            (19, 31, 'competencias-apoio-assessoramento', 'exata', 'TÍT. II, Cap. II — Assessoramento'),
+            (32, 39, 'competencias-execucao', 'exata', 'TÍT. II, Cap. III — Execução (Cmdo Op BM, DLOF)'),
+            (40, 43, 'ensino-instrucao', 'parcial', 'TÍT. II, Cap. III — DGPEI (pessoas + ensino)'),
+            (44, 44, 'seguranca-contra-incendio', 'exata', 'TÍT. II, Cap. III — DAT'),
+            (45, 49, 'disposicoes-finais', 'exata', 'TÍT. II, Cap. IV — Prescrições Diversas'),
+            (50, 56, 'pessoal-quadros', 'exata', 'TÍT. III — Do Pessoal (quadros e QOD)'),
+        ],
+        'overrides': {23: ('disciplina-correicao', 'parcial')},
+    },
+    'se': {
+        'md': 'Sergipe - Regimento Interno.md',
+        'src': 'cf. CBMSE, RISD (atual. 2022), Art. {n}',
+        'slice_between': (None, None),
+        # "Capítulo VII: Da Rotina Diária das Unidades" quebra em 2 linhas na conversão
+        # do PDF; RE_NOISE só reconhece a 1ª ("Capítulo VII..."), a palavra solta
+        # "Operacionais" da 2ª linha sobrava colada ao fim do Art. 53 (parág. único).
+        'strip_lines': [re.compile(r'^Operacionais$')],
+        'ranges': [
+            (1, 4, 'servico-operacional', 'exata', 'RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais'),
+            (5, 22, 'atribuicoes-funcoes', 'exata', 'RISD, Cap. V — Atribuições das Funções de Serviço'),
+            (23, 52, 'servico-operacional', 'exata', 'RISD, Cap. VI — Regime e Escalas de Serviço'),
+            (53, 53, 'uniformes-apresentacao', 'parcial', 'RISD, Cap. VI — Uniforme destinado ao serviço'),
+            (54, 111, 'servico-interno-dia', 'exata', 'RISD, Cap. VII — Rotina Diária das Unidades'),
+            (112, 147, 'servico-operacional', 'exata', 'RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências'),
+            (148, 150, 'disposicoes-finais', 'exata', 'RISD, Cap. XII — Disposições Gerais'),
+        ],
+        'overrides': {},
+    },
+    'go': {
+        'md': 'Goiás - Regimento dos Serviços Interno e Operacional.md',
+        'src': 'cf. CBMGO, Regimento dos Serviços Interno e Operacional, Art. {n}',
+        'slice_between': (None, None),
+        'inline_split': True,  # páginas extraídas em linha única
+        'ranges': [
+            (1, 1, 'disposicoes-preliminares', 'parcial', 'Cap. I — Considerações Gerais (finalidade do regimento de serviço)'),
+            (2, 3, 'servico-interno-dia', 'exata', 'Cap. II — Serviços de Dia'),
+            (4, 15, 'servico-operacional', 'exata', 'Cap. III — Jornada de Trabalho e Escala de Serviço'),
+            (16, 21, 'atribuicoes-funcoes', 'exata', 'Cap. IV — Funções e Atribuições'),
+            (22, 26, 'disposicoes-finais', 'exata', 'Cap. V — Disposições Finais'),
+        ],
+        'overrides': {},
+    },
+    'al': {
+        'md': 'Alagoas - Regimento Interno.md',
+        'src': 'cf. CBMAL, RI (Decreto nº 408/2001), Art. {n}',
+        'slice_between': ('TÍTULO I', 'PALÁCIO MARECHAL'),
+        'ranges': [
+            (1, 2, 'disposicoes-preliminares', 'exata', 'TÍT. I — Finalidade, Objetivos e Competências'),
+            (3, 7, 'organizacao-geral', 'exata', 'TÍT. II — Organização Geral e Estruturação'),
+            (8, 11, 'competencias-direcao', 'exata', 'TÍT. III, Cap. I — Direção Geral'),
+            (12, 27, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. I — Defesa Civil e Gabinete'),
+            (28, 31, 'disciplina-correicao', 'exata', 'TÍT. III, Cap. I, Seção VI — Corregedoria Geral'),
+            (32, 57, 'competencias-direcao', 'exata', 'TÍT. III, Cap. II — Diretorias (direção setorial)'),
+            (58, 64, 'seguranca-contra-incendio', 'exata', 'TÍT. III, Cap. II, Seção IV — Diretoria de Serviços Técnicos'),
+            (65, 74, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. II — Ajudância Geral e Comissões'),
+            (75, 80, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. III — Órgãos de Apoio'),
+            (81, 87, 'ensino-instrucao', 'exata', 'TÍT. III, Cap. III, Seção II — CFAE'),
+            (88, 103, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. III — Órgãos de Apoio'),
+            (104, 124, 'competencias-execucao', 'exata', 'TÍT. III, Cap. IV — Órgãos de Execução'),
+            (125, 125, 'competencias-apoio-assessoramento', 'exata', 'TÍT. III, Cap. V — Órgãos Especiais'),
+            (126, 127, 'disposicoes-finais', 'exata', 'Disposições Finais'),
+        ],
+        'overrides': {},
+    },
+    'rs': {
+        'md': 'Rio Grande do Sul - Regimento Interno.md',
+        'src': 'cf. CBMRS, RI (Portaria nº 001/2025), Art. {n}',
+        'slice_between': (None, None),
+        # Citação ao Decreto nº 53.897/2018 que começa a linha como "Art. 3º Inciso XIII…"
+        'fake_art_res': [re.compile(r'^\s*Art\.?\s*3º?\s+Inciso XIII')],
+        'ranges': [
+            (1, 1, 'disposicoes-preliminares', 'exata', 'Cap. I — Competência da Corporação'),
+            (2, 16, 'organizacao-geral', 'exata', 'Cap. II — Estruturação'),
+            (17, 26, 'organizacao-geral', 'parcial', 'Cap. III — Estratégia Organizacional'),
+            (27, 29, 'competencias-direcao', 'exata', 'Cap. IV — Cmt-G, SCmt-G e Conselho Superior'),
+            (30, 30, 'disciplina-correicao', 'exata', 'Cap. IV — Corregedoria-Geral'),
+            (31, 34, 'competencias-apoio-assessoramento', 'exata', 'Cap. IV — Gabinete, CAM e Departamentos de Apoio'),
+            (35, 35, 'seguranca-contra-incendio', 'exata', 'Cap. IV — DSPCI'),
+            (36, 36, 'ensino-instrucao', 'exata', 'Cap. IV — Academia de Bombeiro Militar'),
+            (37, 37, 'competencias-apoio-assessoramento', 'exata', 'Cap. IV — AODC'),
+            (38, 39, 'competencias-execucao', 'exata', 'Cap. IV — CRBM e BESCI'),
+            (40, 40, 'atribuicoes-funcoes', 'exata', 'Cap. IV — Funções de direção/chefia'),
+            (41, 41, 'organizacao-geral', 'parcial', 'Cap. IV — Seções e Setores'),
+            (42, 42, 'seguranca-contra-incendio', 'exata', 'Cap. IV — Órgãos de SCIP'),
+            (43, 44, 'competencias-execucao', 'exata', 'Cap. IV — Órgãos operacionais e Especiais'),
+            (45, 45, 'ensino-instrucao', 'exata', 'Cap. IV — Órgãos de Ensino e Treinamento'),
+            (46, 46, 'disciplina-correicao', 'exata', 'Cap. V — Corregedor-Geral'),
+            (47, 57, 'atribuicoes-funcoes', 'exata', 'Cap. V — Atribuições das Funções'),
+            (58, 65, 'disposicoes-finais', 'parcial', 'Cap. VI, Seções I–II — Regimentos Internos e Boletins'),
+            (66, 72, 'servico-interno-dia', 'parcial', 'Cap. VI, Seção III — Escalas de serviços internos e externos'),
+            (73, 81, 'cerimonial-honras', 'exata', 'Cap. VI, Seções IV–VIII — Formaturas, Bandeiras, Festas, Parada Diária, Galeria e Recepção/Despedida'),
+            (82, 89, 'disposicoes-finais', 'parcial', 'Cap. VI, Seção IX — Sistema normativo e correspondência'),
+            (90, 90, 'disposicoes-finais', 'exata', 'Disposições Finais'),
+            (91, 93, 'pessoal-quadros', 'parcial', 'Disposições Finais — quadros, saúde e civis'),
+            (94, 96, 'disposicoes-finais', 'exata', 'Disposições Finais'),
+        ],
+        'overrides': {},
+    },
+    # PA e DF: uso SELETIVO por fatias de linha (de-paras respectivos).
+    'pa': {
+        'md': 'Pará - Regimento Interno.md',
+        'src': 'cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. {n}',
+        'line_slices': [
+            (66, 79, 'disposicoes-preliminares', 'exata', 'TÍT. I, Cap. I — Natureza e Finalidade'),
+            (80, 190, 'organizacao-geral', 'exata', 'TÍT. I, Cap. II — Competência e Estrutura Organizacional'),
+            (191, 706, 'competencias-direcao', 'exata', 'TÍT. I — Direção Geral (Comando-Geral, Alto Comando, EMG)'),
+            (707, 730, 'competencias-apoio-assessoramento', 'exata', 'TÍT. I, Cap. V — Coordenadoria Estadual de Proteção e Defesa Civil'),
+            (731, 1009, 'disciplina-correicao', 'exata', 'TÍT. I, Cap. VI — Corregedoria-Geral'),
+            (1714, 1840, 'ensino-instrucao', 'exata', 'Cap. XI — Departamento-Geral de Cultura, Educação e Pesquisa'),
+            (1841, 2069, 'seguranca-contra-incendio', 'exata', 'Cap. XII — Departamento-Geral de Segurança Contra Incêndios e Emergências'),
+            (6204, 6220, 'disposicoes-finais', 'exata', 'Disposições Finais'),
+        ],
+    },
+    'df': {
+        'md': 'Distrito Federal - Regimento Interno.md',
+        'src': 'cf. CBMDF, RI (Portaria nº 24/2020), Art. {n}',
+        'line_slices': [
+            (1541, 1615, 'ensino-instrucao', 'exata', 'TÍT. I, Cap. VII — Departamento de Ensino, Pesquisa, Ciência e Tecnologia'),
+            (1616, 1685, 'seguranca-contra-incendio', 'exata', 'TÍT. I, Cap. VIII — Departamento de Segurança Contra Incêndio'),
+            (2501, 2739, 'disciplina-correicao', 'exata', 'TÍT. I, Cap. XIV — Corregedoria'),
+            (3445, 3651, 'pessoal-quadros', 'parcial', 'TÍT. II, Cap. III — Diretoria de Inativos e Pensionistas'),
+        ],
+    },
+    # PR: coletânea do portal — blocos "Atribuições …" com numeração que REINICIA.
+    'pr': {
+        'md': 'Paraná - Regimento Interno.md',
+        'src': 'cf. CBMPR, Atribuições institucionais (portal oficial), bloco "{bloco}", Art. {n}',
+        'blocks': True,
+    },
+}
+
+PR_BLOCK_THEME = [
+    (re.compile(r'corregedoria', re.I), 'disciplina-correicao', 'exata'),
+    (re.compile(r'funcionais', re.I), 'atribuicoes-funcoes', 'exata'),
+]
+PR_DEFAULT = ('competencias-apoio-assessoramento', 'exata')
+PR_TAIL = ('competencias-execucao', 'parcial', 'Organização operacional (trechos: CRBM, BBM, Cia Ind.)')
+
+
+def theme_for(cfg, n):
+    if n in cfg.get('overrides', {}):
+        t, m = cfg['overrides'][n]
+        heading = next((h for a, b, _, _, h in cfg['ranges'] if a <= n <= b), None)
+        return t, m, heading
+    for a, b, t, m, h in cfg['ranges']:
+        if a <= n <= b:
+            return t, m, h
+    return None
+
+
+def slice_lines(lines, cfg):
+    start_marker, end_marker = cfg.get('slice_between', (None, None))
+    ini, fim = 0, len(lines)
+    if start_marker:
+        for i, ln in enumerate(lines):
+            if start_marker in ln:
+                ini = i
+                break
+    if end_marker:
+        for i in range(ini, len(lines)):
+            if end_marker in lines[i]:
+                fim = i
+                break
+    return lines[ini:fim]
+
+
+def build_excerpt(n, art_lines, src_tpl, match, heading, bloco=None):
+    caput, dispositivos = caput_e_dispositivos(art_lines)
+    src = src_tpl.format(n=n, bloco=bloco or '')
+    return {'heading': heading, 'caput': caput, 'dispositivos': dispositivos,
+            'source': src, 'match': match}
+
+
+def load_for(cfg):
+    return load_lines(cfg['md'], inline_split=cfg.get('inline_split', False),
+                      fake_art_res=cfg.get('fake_art_res', ()),
+                      strip_lines=cfg.get('strip_lines', ()))
+
+
+def extract_ranges(uf, cfg):
+    lines = slice_lines(load_for(cfg), cfg)
+    enrichment, vistos = {}, set()
+    for n, art_lines in split_articles(lines):
+        if n in vistos:
+            print(f'  AVISO {uf}: Art. {n} repetido na fatia — mantido só o primeiro')
+            continue
+        info = theme_for(cfg, n)
+        if info is None:
+            print(f'  AVISO {uf}: Art. {n} fora de qualquer range — ignorado')
+            continue
+        vistos.add(n)
+        tema, match, heading = info
+        enrichment.setdefault((tema, uf), []).append(
+            build_excerpt(n, art_lines, cfg['src'], match, heading))
+    return enrichment, len(vistos)
+
+
+def extract_line_slices(uf, cfg):
+    lines = load_for(cfg)
+    enrichment, total = {}, 0
+    for ini, fim, tema, match, heading in cfg['line_slices']:
+        for n, art_lines in split_articles(lines[ini - 1:fim]):
+            enrichment.setdefault((tema, uf), []).append(
+                build_excerpt(n, art_lines, cfg['src'], match, heading))
+            total += 1
+    return enrichment, total
+
+
+def extract_pr(uf, cfg):
+    lines = load_for(cfg)
+    enrichment, total = {}, 0
+    bloco, buf = None, []
+
+    def flush():
+        nonlocal total
+        if not buf:
+            return
+        if bloco is None:
+            tema, match, heading = PR_TAIL
+            nome = heading
+        else:
+            nome = bloco
+            tema, match = PR_DEFAULT
+            for rx, t, m in PR_BLOCK_THEME:
+                if rx.search(bloco):
+                    tema, match = t, m
+                    break
+            heading = bloco
+        for n, art_lines in split_articles(buf):
+            enrichment.setdefault((tema, uf), []).append(
+                build_excerpt(n, art_lines, cfg['src'], match, heading, bloco=nome))
+            total += 1
+
+    for ln in lines:
+        if re.match(r'^\s*Atribuições\b', ln):
+            flush()
+            bloco, buf = clean(ln), []
+        else:
+            buf.append(ln)
+    flush()
+    return enrichment, total
+
+
+def emit(uf, enrichment):
+    path = OUT / f'regulamento_enrichment_{uf}.py'
+    parts = [
+        f'# GERADO por scripts/extrair_regulamentos.py — NÃO editar à mão.',
+        f'# Fonte: {CONFIG[uf]["md"]} (extração determinística; mapa nos de-paras).',
+        'ENRICHMENT = {',
+    ]
+    for key in sorted(enrichment):
+        parts.append(f'    {key!r}: [')
+        for ex in enrichment[key]:
+            parts.append('        {')
+            for campo in ('heading', 'caput', 'dispositivos', 'source', 'match'):
+                parts.append(f'            {campo!r}: {ex[campo]!r},')
+            parts.append('        },')
+        parts.append('    ],')
+    parts.append('}')
+    path.write_text('\n'.join(parts) + '\n', encoding='utf-8')
+    return path
+
+
+def main(ufs):
+    for uf in ufs:
+        cfg = CONFIG[uf]
+        if cfg.get('blocks'):
+            enrichment, total = extract_pr(uf, cfg)
+        elif 'line_slices' in cfg:
+            enrichment, total = extract_line_slices(uf, cfg)
+        else:
+            enrichment, total = extract_ranges(uf, cfg)
+        path = emit(uf, enrichment)
+        temas = {k[0]: len(v) for k, v in sorted(enrichment.items())}
+        print(f'{uf}: {total} artigos -> {path.name} | ' +
+              ', '.join(f'{t}={c}' for t, c in temas.items()))
+
+
+if __name__ == '__main__':
+    alvo = [a.lower() for a in sys.argv[1:]] or list(CONFIG)
+    main(alvo)

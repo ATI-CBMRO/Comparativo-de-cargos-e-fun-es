@@ -8,6 +8,9 @@ os 26 órgãos da LOB. Um capítulo por órgão; uma seção por função (cargo
 Fontes:
   - database/organs_detail/ro.json        (estrutura + competências RO verbatim)
   - scripts/minuta_enrichment.py          (competências curadas de outros CBMs, rotuladas)
+  - scripts/ri_alternativas_enrichment.py (Bloco D: artigo completo de outros estados
+                                            por órgão, para o comparador /minuta/comparar —
+                                            gerado por scripts/extrair_ri_alternativas.py)
 
 Saída: database/minuta_structure.json
 Rodar: python scripts/build_minuta_structure.py
@@ -20,6 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from minuta_enrichment import enrich_for, enrich_organ_for, GUARNICAO_CHAPTER  # noqa: E402
+from ri_alternativas_enrichment import RI_ALTERNATIVES  # noqa: E402
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -184,6 +188,10 @@ def build_organ_chapter(organ_key, chapter_title, organ):
         "id": chapter_id, "kind": "organ", "chapterTitle": chapter_title,
         "organKey": organ_key, "label": organ.get("name", ""), "abbr": abbr,
         "sections": sections,
+        # Comparador do RI (Bloco D): texto verbatim de outros estados que cobrem
+        # este órgão, por nível de correspondência — {} quando a curadoria não
+        # cobriu o órgão ainda (mesmo padrão de build_regulamento_structure.py).
+        "alternatives": RI_ALTERNATIVES.get(organ_key, {}),
     }
 
 
@@ -298,6 +306,11 @@ def build_guarnicao_chapter():
         "id": chapter_id, "kind": "organ", "chapterTitle": g["chapterTitle"],
         "organKey": "guarnicao", "label": g["label"], "abbr": g.get("abbr", ""),
         "sections": sections,
+        # Guarnição só tem fonte RI ○ temática (não extraída como excerto formal —
+        # ver docs/curadoria/bloco-d-classificacao-al-df-pr-pa.md, Lacunas nº 1);
+        # sem entrada em RI_ALTERNATIVES, então fica vazio como os demais órgãos
+        # sem curadoria (mesmo padrão de build_organ_chapter).
+        "alternatives": RI_ALTERNATIVES.get("guarnicao", {}),
     }
 
 

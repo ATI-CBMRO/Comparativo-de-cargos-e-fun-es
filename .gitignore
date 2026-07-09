@@ -37,3 +37,6 @@ __pycache__/
 # Segredos do Firebase / chaves (NUNCA versionar)
 .env*
 serviceAccountKey.json
+
+# Grafo de conhecimento gerado pelo graphify (local, não versionado)
+graphify-out/

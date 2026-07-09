@@ -41,7 +41,7 @@ export default function ChapterRail({ chapters, counts, selectedId, onSelect }) 
             style={{
               display: 'flex', alignItems: 'center', gap: 6, width: '100%', textAlign: 'left',
               border: 'none', background: active ? '#fdeaec' : 'none',
-              color: active ? '#c8102e' : '#444', fontWeight: active ? 700 : 500,
+              color: active ? 'var(--cbm-red-700)' : '#444', fontWeight: active ? 700 : 500,
               padding: '5px 6px', borderRadius: 6, cursor: 'pointer', fontSize: 12.5, marginBottom: 2,
             }}
           >
@@ -49,7 +49,7 @@ export default function ChapterRail({ chapters, counts, selectedId, onSelect }) 
             <span style={{
               minWidth: 18, textAlign: 'center', padding: '0 5px', height: 16, lineHeight: '16px',
               borderRadius: 8, fontSize: 10, fontWeight: 700,
-              background: n > 0 ? '#c8102e' : '#d6deea', color: n > 0 ? '#fff' : '#5a6377',
+              background: n > 0 ? 'var(--cbm-red-700)' : 'var(--badge-neutral-bg)', color: n > 0 ? '#fff' : 'var(--text-faint)',
             }}>{n}</span>
           </button>
         )

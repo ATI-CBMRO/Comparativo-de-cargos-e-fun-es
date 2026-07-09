@@ -13,7 +13,10 @@ export function caputDispositivoId(editId) {
 
 export function parseDispositivoId(id) {
   const i = id.lastIndexOf('#')
+  if (i === -1) return { editId: id, parte: null }
   const editId = id.slice(0, i)
   const tail = id.slice(i + 1)
-  return { editId, parte: tail === 'caput' ? 'caput' : Number(tail) }
+  if (tail === 'caput') return { editId, parte: 'caput' }
+  const n = Number(tail)
+  return { editId, parte: Number.isInteger(n) ? n : null }
 }

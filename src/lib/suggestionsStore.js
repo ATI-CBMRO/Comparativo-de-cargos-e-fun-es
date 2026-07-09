@@ -5,6 +5,8 @@
 // as telas não mudam.
 
 const STORAGE_KEY = 'cbm.minuta.revisao.v1'
+// Exportada para o logout (auth.jsx) limpar só as chaves do protótipo, nunca localStorage.clear().
+export const PROTOTYPE_STORAGE_KEY = STORAGE_KEY
 
 // "Sessão" simulada: coronéis fictícios do CONDEG (1 relator + membros).
 export const MOCK_USERS = [

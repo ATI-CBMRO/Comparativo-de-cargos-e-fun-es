@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { articleLabel, romanize, normalizeInciso } from './minutaArticles.js'
+import { articleLabel, romanize, normalizeInciso, hasOwnMarker } from './minutaArticles.js'
 
 test('articleLabel usa ordinal até 9 e cardinal a partir de 10', () => {
   assert.equal(articleLabel(1), 'Art. 1º')
@@ -25,6 +25,19 @@ test('normalizeInciso minusculiza inicial e pontua por posição', () => {
 test('normalizeInciso remove marcador de lista e pontuação preexistente', () => {
   assert.equal(normalizeInciso('1. planejar as ações.', 0, 1), 'planejar as ações.')
   assert.equal(normalizeInciso('I - fiscalizar;', 0, 2), 'fiscalizar; e')
+})
+
+test('hasOwnMarker reconhece Parágrafo único e § como marcador próprio', () => {
+  assert.equal(hasOwnMarker('Parágrafo único. Em casos excepcionais...'), true)
+  assert.equal(hasOwnMarker('§ 1º Nos casos previstos...'), true)
+  assert.equal(hasOwnMarker('Coordenação operacional'), false)
+  assert.equal(hasOwnMarker('I - fiscalizar;'), false)
+})
+
+test('normalizeInciso preserva verbatim dispositivos com marcador próprio', () => {
+  const texto = 'Parágrafo único. Em casos excepcionais, devidamente autoriz ado pelo DOp.'
+  assert.equal(normalizeInciso(texto, 0, 1), texto)
+  assert.equal(normalizeInciso('§ 2º Não se aplica ao pessoal civil.', 1, 3), '§ 2º Não se aplica ao pessoal civil.')
 })
 
 import { buildArticles } from './minutaArticles.js'
@@ -95,9 +108,26 @@ test('cada artigo carrega o editId da sua folha de origem', () => {
 test('incisos carregam texto normalizado, fonte, editId e index original', () => {
   const arts = buildArticles(STRUCTURE, {})
   assert.deepEqual(arts[3].incisos, [
-    { text: 'planejar as operações; e', source: 'ro', editId: 'organ:dpo/competencia', index: 0 },
-    { text: 'fiscalizar a instrução.', source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
+    { text: 'planejar as operações; e', ownMarker: false, source: 'ro', editId: 'organ:dpo/competencia', index: 0 },
+    { text: 'fiscalizar a instrução.', ownMarker: false, source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
   ])
+})
+
+test('incisos com marcador próprio (Parágrafo único/§) ganham ownMarker:true e texto verbatim', () => {
+  const structure = {
+    chapters: [{
+      id: 'estrutura', kind: 'incisos', chapterTitle: 'DA ESTRUTURA',
+      editId: 'estrutura', caput: 'Compete ao órgão:',
+      items: [
+        { text: 'planejar as ações', source: 'ro' },
+        { text: 'Parágrafo único. Em casos excepcionais, o chefe decide.', source: 'ro' },
+      ],
+    }],
+  }
+  const arts = buildArticles(structure, {})
+  assert.equal(arts[0].incisos[0].ownMarker, false)
+  assert.equal(arts[0].incisos[1].ownMarker, true)
+  assert.equal(arts[0].incisos[1].text, 'Parágrafo único. Em casos excepcionais, o chefe decide.')
 })
 
 test('buildArticles articula prose como um artigo por linha', () => {
@@ -111,8 +141,8 @@ test('buildArticles usa edits (texto) no lugar dos itens, com source nulo', () =
   const arts = buildArticles(STRUCTURE, { 'organ:dpo/cargo:diretor': 'item editado\noutro item' })
   const diretor = arts.find(a => a.caput === 'Ao Diretor compete:')
   assert.deepEqual(diretor.incisos, [
-    { text: 'item editado; e', source: null, editId: 'organ:dpo/cargo:diretor', index: 0 },
-    { text: 'outro item.', source: null, editId: 'organ:dpo/cargo:diretor', index: 1 },
+    { text: 'item editado; e', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 0 },
+    { text: 'outro item.', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 1 },
   ])
 })
 
@@ -121,7 +151,7 @@ test('isExcluded pula o inciso e renumera os restantes (sufixo recalculado)', ()
   const arts = buildArticles(STRUCTURE, {}, isExcluded)
   const comp = arts.find(a => a.caput === 'Compete à DPO:')
   assert.deepEqual(comp.incisos, [
-    { text: 'fiscalizar a instrução.', source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
+    { text: 'fiscalizar a instrução.', ownMarker: false, source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
   ])
 })
 

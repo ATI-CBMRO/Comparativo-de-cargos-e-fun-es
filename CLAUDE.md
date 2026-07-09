@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Portal de Legislação dos Corpos de Bombeiros Militares — SPA React/Vite que compara
 legislações (organização básica, regimentos internos, organogramas, quadros de efetivo)
 dos CBMs estaduais do Brasil, com identidade visual do CBMRO. 27 CBMs mapeados,
-37 documentos legais.
+47 documentos legais.
 
 ## Comandos
 
@@ -17,7 +17,9 @@ npm run dev              # servidor de desenvolvimento em http://localhost:5173
 npm run build            # build de produção (Vite/Rollup -> dist/)
 npm run preview          # pré-visualizar o build
 
-# Regenerar dados (Python; pypdf instalado em AppData/Roaming/Python314)
+# Regenerar dados (Python 3.10+ — os scripts usam `int | None`; pypdf instalado em
+# AppData/Roaming/Python314. Em Mac com só o Python 3.9 do sistema, instalar uma versão
+# mais nova, ex.: `brew install python@3.12`, e chamar `python3.12` no lugar de `python`)
 python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> database/markdown/*.md
 python scripts/build_organs_detail.py      # detail_data_g*.py + detail_cargos_g*.py -> database/organs_detail/<id>.json
 python scripts/build_states_data.py        # database/markdown/*.md + organs_detail/*.json -> database/states_data.json
@@ -93,6 +95,15 @@ sobrescritos). Os arquivos escritos à mão (`ro.json`, `ac.json`) são a exceç
   `STATE_META`.
 - O **Dashboard** mostra só a Visão Geral (estatísticas); as antigas abas "Comparativo de
   Cargos" e "DPO × COT" foram removidas junto com seus componentes.
+### Tabela de cobertura no Acervo Legal (jul/2026)
+A página Acervo Legal (`src/pages/Legislations.jsx`) mostra, no topo, uma
+tabela-resumo `estado × tipo` (LOB / Regimento Interno / Regulamento de
+Serviço) — lógica pura em `src/lib/acervoCoverage.js` (testada), apresentação
+em `src/components/AcervoCoverageTable.jsx`. A coluna "Regulamento de Serviço"
+funde os tipos `Regulamento Geral` e `Regimento de Serviços`. O selo ✓/⚠ por
+célula reusa o campo `typeVerified` dos dados (✓ = conferido por conteúdo, ⚠ =
+só por nome de arquivo). A tabela NÃO é filtrada pela busca da página (é
+panorama fixo dos 27); a busca continua governando só a lista detalhada abaixo.
 - `/comparar` (`src/pages/MinutaComparator.jsx`, "Subsídio à Minuta") lê
   `database/comparativo_minuta.json` (gerado por `scripts/build_minuta_comparison.py`) e
   espelha os 26 órgãos da LOB + Guarnição (27 no total), comparando RO × estados em **3 colunas**:
@@ -194,11 +205,14 @@ A lista "Órgãos da minuta" do `/comparar` reusa o mesmo padrão: `MinutaCompar
 reconstrói a árvore a partir do `depth` (`buildOrganTree`) e renderiza `OrgTreeNode` com
 botão −/+ (`.oc-org-toggle`), iniciando recolhida no 1º nível; clicar no item seleciona o órgão.
 
-### Revisão e Deliberação colaborativa do CONDEG (`/minuta/revisao` e `/minuta/deliberacao`)
+### Revisão e Deliberação colaborativa do CONDEG (`/minuta/revisao` e `/minuta/deliberacao`) — LEGADO
 Fluxo colaborativo do CONDEG sobre a minuta de RI, em duas fases, lendo o mesmo
-`minuta_structure.json`. **Protótipo de frontend**: login/senha e banco de dados estão sendo
-feitos em **projeto APARTADO** — aqui tudo roda sobre dados simulados, por uma camada de dados
-ISOLADA e trocável.
+`minuta_structure.json`. **Protótipo de frontend**, hoje **fora do menu** (retirado do array
+`NAV` em `App.jsx`) — o módulo Firebase real (`/revisao`, seção abaixo) é o fluxo oficial de
+produção. As rotas continuam respondendo por URL direta e o código não foi apagado: o sumário
+de capítulos (`ChapterRail.jsx`) foi replicado/melhorado em `/revisao`, e `minutaTargets.js`,
+`minutaConsolidation.js` e `minutaDocx.js` seguem reusados pelo módulo real. Aqui tudo roda
+sobre dados simulados, por uma camada de dados ISOLADA e trocável.
 
 - **Camada de dados** (`src/lib/suggestionsStore.js`): `createSuggestionsStore(storage)`, API
   assíncrona (Promise) sobre `localStorage`, com `MOCK_USERS` (coronéis fictícios) e a "sessão"
@@ -240,6 +254,148 @@ o tratamento é feito pelos plugins acima — não pelo mecanismo padrão de ass
 `public/` é servida na raiz (ex.: brasão referenciado como `/BrasaoCBMRO2D-COMPLETO.png`
 em `App.jsx`, com fallback para `/brasao-cbmro.svg`).
 
+## Minuta do Regulamento — curadoria (em andamento)
+
+Evolução em curso: gerar a minuta do Regulamento Interno do CBMRO a partir dos
+regulamentos de outros estados já no acervo (MT como esqueleto — a LOB de RO seguiu a
+de MT —, RN/SE e demais como complemento), e comparar dispositivo a dispositivo. Como
+os textos dos estados NÃO casam perfeitamente entre si, a curadoria segue 4 passos por
+estado antes de qualquer transcrição (detalhes no plano de execução):
+
+1. `python3 scripts/sugerir_equivalencias.py <uf>` — garimpo automático de candidatos
+   por tema (`docs/curadoria/candidatos-<uf>.md`). Feito para os 9 estados.
+2. De-para tema→artigos por estado — `docs/curadoria/de-para-<uf>.md` (FEITOS e
+   validados para os 9; visão geral em `docs/curadoria/panorama-cobertura.md`,
+   inclusive a matriz de cobertura 15 temas × 9 estados e as fontes primárias por tema).
+3. Validação humana dos de-paras (concluída em 2026-07-07).
+4. **Extração determinística**: `python3 scripts/extrair_regulamentos.py` corta os
+   markdowns por "Art. N" e gera `scripts/regulamento_enrichment_<uf>.py` (850 artigos,
+   GERADOS — não editar à mão; o mapa artigo→tema vive no próprio extrator).
+   `scripts/regulamento_enrichment.py` (mestre) define os 15 THEMES, PRIMARY_SOURCE por
+   tema e ADAPTATIONS (CBMMT→CBMRO etc.) e mescla os arquivos por estado.
+5. Verificação: `python3 scripts/verificar_verbatim.py` — todo caput/dispositivo deve
+   existir literalmente no markdown de origem (compara também fonte "limpa" com o mesmo
+   pipeline do extrator e versão sem espaços/hifens, tolerando artefatos de PDF).
+6. **Minuta**: `python3 scripts/build_regulamento_structure.py` →
+   `database/regulamento_structure.json` (MESMO formato de minuta_structure.json: 15
+   capítulos-temas, artigos da fonte primária adaptados p/ RO com original preservado,
+   `alternatives` por tema com o texto original dos demais estados). Validação:
+   `python3 scripts/test_regulamento_structure.py`. Páginas: `/regulamento` (wizard) e
+   `/regulamento/comparar` (comparador por dispositivo).
+
+`scripts/equivalencias_terminologicas.py` é o glossário de sinônimos entre estados
+(ex.: "serviço de dia" ≈ "serviço de permanência") usado pelo garimpo.
+
+**Nota de ambiente**: os scripts de dados (ex.: `build_states_data.py`) usam sintaxe
+`int | None`, que exige **Python 3.10+**. Em Mac com só o Python 3.9 do sistema, use
+`brew install python@3.12` e chame `python3.12` no lugar de `python`/`python3` para
+esses scripts. Os scripts NOVOS de curadoria acima (`sugerir_equivalencias.py`,
+`equivalencias_terminologicas.py`, `verificar_verbatim.py`) rodam também no Python 3.9.
+
+**Mecanismos de correção descobertos testando manualmente (2026-07-08):**
+- `strip_lines` em `CONFIG[<uf>]` (`extrair_regulamentos.py`) — remove linhas-fragmento
+  conhecidas ANTES do parse (mesmo espírito de `fake_art_res`). Criado porque um
+  cabeçalho de seção quebrado em 2 linhas na conversão do PDF (`RE_NOISE` só reconhece
+  a 1ª linha) fazia uma palavra solta grudar no fim do artigo anterior — achado real no
+  Art. 53 do RISD-SE. Use quando achar contaminação parecida em outro estado.
+- `hasOwnMarker(text)` em `src/lib/minutaArticles.js` — dispositivos que já começam
+  com "Parágrafo único"/"§" são unidades legislativas completas, não incisos
+  numerados: `normalizeInciso()` os devolve verbatim (sem strip de marcador, sem
+  lowercase, sem sufixo de continuação), e `buildArticles()` marca `ownMarker: true`
+  no inciso pra as telas pularem o prefixo `romanize(i+1) -`. Relevante pra qualquer
+  novo tema/estado do Regulamento que tenha parágrafos (33 dispositivos afetados só
+  na curadoria atual).
+
+## ⚠️ Classificação de tipo de documento — auditoria pendente (achado 2026-07-08)
+
+`parse_doc_type()` em `scripts/build_states_data.py` classifica cada documento **só
+pelo nome do arquivo** (procura substrings como "regimento interno", "regulamento"),
+NUNCA leu o conteúdo. Isso já causou erro confirmado: `database/states_data.json`
+mostra **Mato Grosso** e **Sergipe** como `"Regimento Interno"`, mas a curadoria do
+Regulamento (que leu o conteúdo de verdade) descobriu que:
+- **MT**: o arquivo chamado "Regimento Interno" é na verdade o **Regulamento Geral**
+  do CBMMT (Portaria nº 009/BM-8/2013) — é a fonte primária de boa parte dos temas do
+  Regulamento por causa disso.
+- **SE**: o arquivo é o **RISD** (Regimento Interno dos Serviços Diários) — apesar do
+  nome ter "Regimento", funciona como um regulamento de rotina operacional, não como
+  regimento de estrutura organizacional.
+
+Essas descobertas ficaram só dentro de `scripts/regulamento_enrichment.py`
+(`REGULAMENTO_DOCS`), **nunca foram propagadas de volta pro `states_data.json`** que
+o site mostra em `/estados`. RN e GO já foram corrigidos (Bloco B0); MT e SE **ainda
+não**. Além disso, **só 9 dos 27 estados** (os do Regulamento) tiveram o conteúdo
+lido de verdade — os outros 18 têm classificação 100% baseada em nome de arquivo,
+nunca verificada.
+
+**Antes de confiar nessa classificação para qualquer novo recurso** (ex.: uma tabela
+LOB × Regimento Interno × Regulamento por estado, pedida pelo Wândrio em 2026-07-08),
+tratar isso como pré-requisito: corrigir MT/SE no mínimo, e decidir se os outros 18
+precisam de conferência de conteúdo ou se a UI deve deixar explícito o que foi/não
+foi verificado. Ver `docs/curadoria/bloco-d-esboco-comparador-ri.md` (seção
+"Pré-requisito descoberto depois") para o contexto completo.
+
+## Menu lateral agrupado por trilha de minuta (`NAV_GROUPS`)
+
+`src/App.jsx` — o array `NAV` virou `NAV_GROUPS`: 3 blocos visuais no menu lateral,
+cada um com um `nav-section-label` (reusa o estilo já existente, variante
+`.nav-section-label-sub` pros sub-rótulos):
+- **Geral** (sem rótulo de seção): Início, Estados, Acervo Legal, Busca Textual,
+  Diagramas da Minuta (fica aqui e não na trilha do RI — vem de `commandChart`/
+  `organs_detail/ro.json`, ou seja, é a estrutura da PRÓPRIA LOB de Rondônia, não
+  conteúdo comparado com outros estados).
+- **Regimento Interno**: Subsídio à Minuta, Minuta do Regimento Interno, Subsídio ao
+  RI (estrutura), Comparar Regimento Interno (texto).
+- **Regulamento Geral**: Minuta do Regulamento Geral, Comparar Regulamento.
+
+**Duas telas de comparação do RI, de propósito (fusão com `master`, 2026-07-09)**:
+"Subsídio ao RI" (`/minuta/comparativo-ri`, `RIComparator.jsx`, construído em
+paralelo por outra sessão) reusa a MESMA matriz estrutural de "Subsídio à Minuta"
+(`comparativo_minuta.json`, campo novo `riOrgans`/`riProvenance`/`riSourceLabel`
+por estado), só filtrada aos que têm RI — compara ESTRUTURA/competências.
+"Comparar Regimento Interno" (`/minuta/comparar`, Bloco D) compara o TEXTO
+verbatim de cada artigo. Rótulos "(estrutura)"/"(texto)" no menu deixam a
+diferença óbvia. Ao integrar as duas branches: `master` também tinha corrigido
+RN/GO em `parse_doc_type` (regras genéricas por nome de arquivo) — mesclado
+sem conflito real com os overrides pontuais de MT/SE (que dependem de
+conteúdo, não de nome); `master` NÃO tinha os Blocos A9 (login obrigatório)
+nem a reorganização do menu em `NAV_GROUPS` — essas prevaleceram como estavam
+nesta branch.
+
+"Revisão da Minuta" e "Acessos" continuam fora dos grupos (o primeiro atende os dois
+documentos via seletor interno; o segundo é administrativo). Nomes dos documentos
+sempre por extenso agora: "Minuta do Regimento Interno" (não "Minuta RI") e "Minuta
+do Regulamento Geral" (não "Minuta do Regulamento").
+
+**Bloco D concluído (2026-07-09)**: comparador "Regimento Interno × outros estados"
+em `/minuta/comparar` (`src/pages/MinutaRIComparator.jsx`), análogo ao "Comparar
+Regulamento". `minuta_structure.json` ganhou o campo `alternatives` em cada nó
+`kind: 'organ'` — 25 dos 27 órgãos têm cobertura (AL, DF, PA, PR, RS; MT/SE saíram
+do escopo depois da correção de classificação). Diferente do Regulamento, aqui a
+coluna do estado mostra o **ARTIGO COMPLETO** (decisão de produto), não só o
+trecho já aproveitado na minuta — decisão que aumenta o valor do comparador mas
+também o esforço de extração.
+- Curadoria (Fable): `docs/curadoria/bloco-d-classificacao-al-df-pr-pa.md` (20
+  órgãos já cobertos por AL/DF/PR/PA, revisão do que já estava em
+  `minuta_enrichment.py`) + `docs/curadoria/de-para-ri-rs.md` (RS mapeado pelos
+  27 órgãos, nunca lido pra esse fim antes). Achado: das 7 lacunas identificadas,
+  5 ganharam fonte válida (bifea←DF GPRAM, cat←RS BESCI, doe←DF COESP,
+  assessorias←PA, crbm←RS); só `guarnicao` (matéria de RISD, não de RI) e `gbm`
+  (homônimo de natureza diferente no RS) ficam sem correspondência plena.
+- Extração: `scripts/extrair_ri_alternativas.py` gera
+  `scripts/ri_alternativas_enrichment.py` (reusa as funções de
+  `extrair_regulamentos.py`). Achados de leitura tratados: PR tem 2 documentos-
+  fonte (LOB × coletânea de RI do portal, roteados por citação); a Portaria nº
+  227/2023 do PR (citada pra corregedoria) não existe no acervo — substituída
+  pelo Art. 23 da coletânea, mesmo assunto; DF tem "Art. N" embutido no meio da
+  linha em alguns pontos; a LOB do PR tem um defeito de conversão que agrupa
+  números de artigo no rodapé, desconectados do corpo (resolvido por
+  fatiamento de linha verificado manualmente); páginas raspadas de site (não
+  PDF) às vezes colam o próximo bloco sem marcador — mecanismo `_STOP_MARKERS`
+  no extrator corta no ponto certo (achado ao revisar o Art. 23 do PR).
+- `scripts/test_minuta_alternativas.py` valida o schema; entra no `test:py`.
+- Ver `docs/curadoria/bloco-d-esboco-comparador-ri.md` e
+  `docs/curadoria/bloco-d-pacote-trabalho-fable.md` pro histórico completo.
+
 ## Revisão Colaborativa da Minuta (login + comentários + IA)
 
 Módulo NOVO, **independente** do portal estático: permite que pessoas convidadas façam login e
@@ -279,6 +435,15 @@ alterado. Specs e planos detalhados em `docs/superpowers/specs/` e `docs/superpo
 - `dispositivoId` (`src/lib/dispositivoId.js`) é o endereço ESTÁVEL do dispositivo (`editId#index` ou
   `editId#caput`), pois o "Art. Nº" é recalculado por `buildArticles`. Premissa: congelar
   `minuta_structure.json` durante a rodada de revisão.
+- **Multi-documento na Revisão (Bloco C, fatia 1):** a página `/revisao` comenta DOIS
+  documentos — a minuta do RI (`minuta_structure.json`) e a minuta do Regulamento
+  (`regulamento_structure.json`) — sem misturar comentários. A separação usa o prefixo
+  `reg:` que TODO `editId` do Regulamento já carrega desde o Bloco B2 (`editId` do RI
+  nunca deve começar com `reg:` — é a premissa que garante o isolamento; ver
+  `src/lib/reviewGroup.js:docOfDispositivo`). Nova coleção **`config/revisao`**
+  (doc único, campo `regulamentoAberto: boolean`) controla quando o Regulamento fica
+  comentável para quem não é admin; ausência do doc = fechado (fail-closed). Design
+  completo em `docs/superpowers/specs/2026-07-07-comissao-comenta-regulamento-design.md`.
 
 ### IA — proposta a partir das sugestões relevantes
 - `api/_gerarProposta.js` (núcleo: `buildPrompt`/`parseGeminiResposta`/`gerarPropostaCore`, sem framework)
@@ -296,3 +461,13 @@ alterado. Specs e planos detalhados em `docs/superpowers/specs/` e `docs/superpo
 - Testes de lógica pura: `node --test src/lib/dispositivoId.test.js src/lib/reviewGroup.test.js api/_gerarProposta.test.js`.
 - Testar no celular: `cloudflared tunnel --url http://localhost:5173 --protocol http2` (o `--protocol http2`
   evita o flapping do QUIC). `vite.config.js` já tem `server.host:true, allowedHosts:true` para o túnel.
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).

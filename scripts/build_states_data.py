@@ -386,8 +386,32 @@ def detail_fail(organs):
 # Processamento principal
 # ────────────────────────────────────────────
 
+# Correções descobertas pela curadoria do Regulamento (Bloco B1-M, achado 2026-07-08):
+# o NOME do arquivo diz uma coisa, o CONTEÚDO real (de-para lido pelo Fable) diz
+# outra. parse_doc_type() só olha o nome do arquivo, então não tem como acertar
+# esses dois sozinho. RN e GO já tinham sido corrigidos direto no parse_doc_type
+# (Bloco B0, porque o nome do arquivo deles já indicava a categoria certa); MT e SE
+# só foram identificados depois, na leitura de conteúdo. Ver CLAUDE.md
+# "Classificação de tipo de documento".
+CONTENT_TYPE_OVERRIDES = {
+    "Mato Grosso - Regimento Interno.md": "Regulamento Geral",
+    "Sergipe - Regimento Interno.md": "Regimento de Serviços",
+}
+
+# Estados cujo TIPO de documento foi conferido por leitura de conteúdo de verdade —
+# a curadoria do Regulamento (Bloco B1-M, scripts/regulamento_enrichment.py
+# REGULAMENTO_DOCS) leu o texto integral desses 9 estados pra montar a minuta do
+# Regulamento, e por isso também confirmou (ou corrigiu, ver acima) o tipo de cada
+# documento. Os demais 18 estados seguem classificados só pelo nome do arquivo,
+# nunca conferidos por conteúdo — ver campo "typeVerified" abaixo.
+CONTENT_VERIFIED_STATES = {"al", "df", "go", "mt", "pa", "pr", "rn", "rs", "se"}
+
+
 def parse_doc_type(filename: str) -> str:
+    if filename in CONTENT_TYPE_OVERRIDES:
+        return CONTENT_TYPE_OVERRIDES[filename]
     name = filename.lower()
+    if 'regimento dos serviços' in name: return 'Regimento de Serviços'
     if 'regimento interno' in name: return 'Regimento Interno'
     # Regimento de serviço/escala (ex.: GO "Regimento dos Serviços Interno e
     # Operacional") — NÃO é um Regimento Interno organizacional; rótulo distinto
@@ -419,6 +443,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
 
         doc_entry = {
             "type": doc_type,
+            "typeVerified": state_id in CONTENT_VERIFIED_STATES,
             "md_file": md_file.name,
             "char_count": len(text),
             "year": year,
@@ -447,6 +472,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
 
     # Estatísticas de documentos
     has_regimento = any(d["type"] == "Regimento Interno" for d in documents)
+    has_regulamento = any(d["type"] in ("Regulamento Geral", "Regimento de Serviços") for d in documents)
     has_nga = any(d["type"] == "Normas Gerais de Ação" for d in documents)
     total_chars = sum(d["char_count"] for d in documents)
 
@@ -464,6 +490,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
         "stats": {
             "total_documents": len(documents),
             "has_regimento": has_regimento,
+            "has_regulamento": has_regulamento,
             "has_nga": has_nga,
             "total_chars": total_chars,
             "organs_mapped": count_nodes(organs),

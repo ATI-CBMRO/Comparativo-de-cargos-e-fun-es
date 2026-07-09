@@ -21,3 +21,11 @@ test('parseDispositivoId lê caput', () => {
 test('parseDispositivoId aceita editId com hífen e ignora apenas o último #', () => {
   assert.deepEqual(parseDispositivoId('bbm-frac-3#0'), { editId: 'bbm-frac-3', parte: 0 })
 })
+
+test('parseDispositivoId sem "#" devolve o próprio id e parte nula', () => {
+  assert.deepEqual(parseDispositivoId('semhash'), { editId: 'semhash', parte: null })
+})
+
+test('parseDispositivoId com sufixo não numérico devolve parte nula', () => {
+  assert.deepEqual(parseDispositivoId('cot-comp#abc'), { editId: 'cot-comp', parte: null })
+})
