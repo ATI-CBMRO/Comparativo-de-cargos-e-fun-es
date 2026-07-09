@@ -2554,3 +2554,37 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   max-height: calc(100vh - var(--header-h) - 24px); overflow: auto;
   border: 1px solid var(--border-card); border-radius: 8px; background: #fff; padding: 14px 16px;
 }
+
+/* ===== Tabela de cobertura do Acervo (estado × tipo de documento) ===== */
+.acervo-cov { margin-bottom: 28px; }
+.acervo-cov-title {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px;
+}
+.acervo-cov-wrap { overflow-x: auto; border: 1px solid var(--border-card); border-radius: var(--radius-md); }
+.acervo-cov-table { border-collapse: collapse; width: 100%; min-width: 560px; background: var(--bg-surface); }
+.acervo-cov-table th, .acervo-cov-table td {
+  border-bottom: 1px solid var(--border-card); padding: 8px 12px; text-align: left; font-size: 13px;
+}
+.acervo-cov-table thead th {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
+  color: var(--text-muted); background: var(--bg-surface); position: sticky; top: 0;
+}
+.acervo-cov-table tbody tr:last-child th,
+.acervo-cov-table tbody tr:last-child td { border-bottom: none; }
+.acervo-cov-state {
+  display: flex; align-items: baseline; gap: 8px; background: none; border: none;
+  cursor: pointer; padding: 0; text-align: left; color: var(--text-primary); width: 100%;
+}
+.acervo-cov-state:hover .acervo-cov-name { text-decoration: underline; }
+.acervo-cov-abbr { font-weight: 700; font-size: 12px; color: var(--text-muted); min-width: 26px; }
+.acervo-cov-name { font-weight: 600; }
+.acervo-cov-cell { text-align: center; }
+.acervo-cov-cellbtn { background: none; border: none; cursor: pointer; padding: 2px 6px; font: inherit; }
+.acervo-cov-dash { color: var(--text-muted); }
+.acervo-cov-has { font-size: 12px; color: var(--text-primary); }
+.acervo-cov-count { font-size: 10px; color: var(--text-muted); margin-left: 2px; vertical-align: super; }
+.acervo-cov-seal { font-size: 14px; font-weight: 700; }
+.acervo-cov-seal.is-ok { color: var(--success-text); }
+.acervo-cov-seal.is-warn { color: var(--text-muted); }
+.acervo-cov-legend { font-size: 11px; color: var(--text-muted); margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }

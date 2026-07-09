@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Search, FileText, Library, ChevronRight, ExternalLink } from 'lucide-react'
 import { fetchJson } from '../lib/dataCache.js'
+import { buildCoverageRows } from '../lib/acervoCoverage.js'
+import AcervoCoverageTable from '../components/AcervoCoverageTable.jsx'
 
 const DOC_TYPE_SHORT = {
   'Lei de Organização Básica': 'LOB',
@@ -43,6 +45,10 @@ export default function Legislations() {
     }
     return docs.sort((a, b) => a.stateName.localeCompare(b.stateName, 'pt-BR'))
   }, [data])
+
+  // Linhas da tabela de cobertura (sempre os 27 estados; NÃO é filtrada pela
+  // busca — ver design). Independente de `allDocs`/`filtered`.
+  const coverageRows = useMemo(() => buildCoverageRows(data?.states), [data])
 
   const q = query.trim().toLowerCase()
   const filtered = useMemo(() => allDocs.filter(d => (
@@ -96,6 +102,11 @@ export default function Legislations() {
       </div>
 
       <div className="page-body">
+        <AcervoCoverageTable
+          rows={coverageRows}
+          onSelectState={id => navigate(`/estados/${id}`)}
+        />
+
         {/* Busca */}
         <div className="search-input-wrap" style={{ marginBottom: 12 }}>
           <Search size={16} className="search-input-icon" />
