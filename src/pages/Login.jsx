@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/auth.jsx'
 
 const MENSAGENS = {
@@ -72,6 +73,10 @@ export default function Login() {
           {enviando ? 'Entrando…' : 'Entrar'}
         </button>
         <button className="login-link" type="button" onClick={esqueci}>Esqueci minha senha</button>
+        <div className="login-foot">
+          <span className="login-foot-txt">Primeiro acesso?</span>
+          <Link className="login-link" to="/cadastro">Criar minha senha</Link>
+        </div>
       </form>
     </div>
   )
