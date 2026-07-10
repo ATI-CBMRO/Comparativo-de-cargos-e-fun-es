@@ -2326,6 +2326,9 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; }
 .login-btn:disabled { opacity: .6; cursor: default; }
 .login-link { background: none; border: none; color: #c8102e; cursor: pointer; font-size: 13px; }
+.login-foot { margin-top: 14px; padding-top: 14px; border-top: 1px solid #e3e8ef; display: flex; gap: 6px; justify-content: center; align-items: baseline; flex-wrap: wrap; }
+.login-foot-txt { font-size: 13px; color: #64748b; }
+.login-foot .login-link { font-weight: 600; }
 /* .form-error: banner de erro genérico (usado em Login/Cadastro, Acessos e RevisaoModal) */
 .form-error { background: #fdecee; border: 1px solid #f3b4bd; color: #9b1c2c; padding: 8px 10px; border-radius: 8px; font-size: 13px; }
 .login-aviso { background: #e9f6ee; border: 1px solid #abdcbd; color: #1d6b3a; padding: 8px 10px; border-radius: 8px; font-size: 13px; }
