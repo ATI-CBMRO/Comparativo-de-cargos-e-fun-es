@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
   Search, Library, ScrollText, Menu, X, Network, LogOut,
-  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows
+  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -179,6 +179,16 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
       </nav>
 
       <div className="sidebar-footer">
+        <button
+          type="button"
+          className="sidebar-collapse-btn"
+          onClick={onToggleCollapse}
+          title={collapsed ? 'Expandir menu' : 'Recolher menu'}
+          aria-label={collapsed ? 'Expandir menu' : 'Recolher menu'}
+        >
+          <ChevronsLeft className={`sidebar-collapse-ico${collapsed ? ' is-collapsed' : ''}`} size={18} />
+          <span className="sidebar-collapse-label">Recolher menu</span>
+        </button>
         <p className="sidebar-footer-text">
           Dados das legislações oficiais<br />
           <span style={{ color: 'var(--navy-500)' }}>Atualizado em junho/2026</span>
@@ -222,7 +232,7 @@ function LoggedOutRoutes() {
 export default function App() {
   const { user, loading } = useAuth()
   const [navOpen, setNavOpen] = useState(false)      // gaveta mobile (≤900px)
-  const [collapsed, setCollapsed] = useState(false)  // trilha de ícones (desktop)
+  const [collapsed, setCollapsed] = useState(true)   // trilha de ícones (desktop) — minimizada por padrão
   const location = useLocation()
 
   // Fecha a navegação ao mudar de rota (ex.: clique num item no mobile).
