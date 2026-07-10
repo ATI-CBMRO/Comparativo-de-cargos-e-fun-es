@@ -232,7 +232,7 @@ function LoggedOutRoutes() {
 export default function App() {
   const { user, loading } = useAuth()
   const [navOpen, setNavOpen] = useState(false)      // gaveta mobile (≤900px)
-  const [collapsed, setCollapsed] = useState(true)   // trilha de ícones (desktop) — minimizada por padrão
+  const [collapsed, setCollapsed] = useState(false)  // trilha de ícones (desktop) — expandida por padrão
   const location = useLocation()
 
   // Fecha a navegação ao mudar de rota (ex.: clique num item no mobile).
