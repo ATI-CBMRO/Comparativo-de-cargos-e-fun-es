@@ -238,8 +238,9 @@ export default function App() {
   // Fecha a navegação ao mudar de rota (ex.: clique num item no mobile).
   useEffect(() => { setNavOpen(false) }, [location.pathname])
 
-  // Clicar numa aba: navega, fecha a gaveta mobile e recolhe a barra no desktop.
-  const handleNavigate = () => { setNavOpen(false); setCollapsed(true) }
+  // Clicar numa aba: navega e fecha a gaveta mobile. NÃO recolhe a barra no
+  // desktop — o recolhimento só acontece pelo botão de recolher.
+  const handleNavigate = () => { setNavOpen(false) }
 
   // Evita "piscar" a tela de login enquanto o Firebase ainda resolve a sessão.
   if (loading) return <FullPageLoading />
