@@ -158,18 +158,24 @@ function OrgTreeNode({ node, depth, organKey, setOrganKey }) {
   )
 }
 
-export default function MinutaComparator() {
+// Pode rodar solta (rota /comparar) OU controlada pelo Subsídio (aba LOB), onde
+// o órgão e o estado são compartilhados com a aba do Regimento Interno.
+export default function MinutaComparator({ controlledOrganKey, onOrganKey, controlledStateAbbr, onStateAbbr } = {}) {
+  const controlled = controlledOrganKey !== undefined
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
-  const [organKey, setOrganKey] = useState(null)
-  const [selectedStateId, setSelectedStateId] = useState(null)
+  const [internalOrganKey, setInternalOrganKey] = useState(null)
+  const [internalStateId, setInternalStateId] = useState(null)
   const [navOpen, setNavOpen] = useState(true)
+
+  const organKey = controlled ? controlledOrganKey : internalOrganKey
+  const setOrganKey = k => { if (controlled) onOrganKey?.(k); else setInternalOrganKey(k) }
 
   useEffect(() => {
     fetchJson('/database/comparativo_minuta.json')
-      .then(d => { setData(d); setOrganKey(d.organs[0]?.key || null) })
+      .then(d => { setData(d); if (!controlled) setInternalOrganKey(d.organs[0]?.key || null) })
       .catch(() => setError(true))
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const organ = useMemo(() => data?.organs.find(o => o.key === organKey) || null, [data, organKey])
   const organTree = useMemo(() => (data ? buildOrganTree(data.organs) : []), [data])
@@ -179,6 +185,14 @@ export default function MinutaComparator() {
     if (!organ) return []
     return [...organ.states].sort((a, b) => a.abbr.localeCompare(b.abbr, 'pt'))
   }, [organ])
+
+  const selectedStateId = controlled
+    ? (organ?.states.find(s => s.abbr === controlledStateAbbr)?.id ?? null)
+    : internalStateId
+  const setSelectedStateId = id => {
+    if (controlled) { const s = organ?.states.find(x => x.id === id); onStateAbbr?.(s?.abbr ?? null) }
+    else setInternalStateId(id)
+  }
 
   // Ao trocar de órgão, garante um estado válido selecionado (primeiro do órgão)
   useEffect(() => {
