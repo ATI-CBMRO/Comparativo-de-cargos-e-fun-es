@@ -32,9 +32,11 @@ function Rail({ count, onClick }) {
   )
 }
 
-export default function Revisao() {
+export default function Revisao({ initialDoc } = {}) {
   const { user } = useAuth()
-  const [docId, setDocId] = useState('ri') // 'ri' | 'reg'
+  // Quando a Revisão é aberta a partir da trilha (menu), o documento já vem
+  // fixado (initialDoc) e o seletor RI×Regulamento é escondido.
+  const [docId, setDocId] = useState(initialDoc || 'ri') // 'ri' | 'reg'
   const [data, setData] = useState(null)
   const [erro, setErro] = useState(null)
   const [suggestions, setSuggestions] = useState([])
@@ -152,6 +154,7 @@ export default function Revisao() {
               <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
             </>
           )}
+          {!initialDoc && (
           <div className="rev-doc-switch">
             <button
               type="button"
@@ -168,6 +171,7 @@ export default function Revisao() {
               Minuta do Regulamento Geral
             </button>
           </div>
+          )}
           {user.role === 'admin' && docId === 'reg' && (
             <button
               type="button"

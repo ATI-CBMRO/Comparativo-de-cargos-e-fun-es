@@ -19,6 +19,10 @@ import RegulamentoWizard from './pages/RegulamentoWizard.jsx'
 import RegulamentoComparator from './pages/RegulamentoComparator.jsx'
 import MinutaRIComparator from './pages/MinutaRIComparator.jsx'
 import RIComparator from './pages/RIComparator.jsx'
+import RISubsidio from './pages/RISubsidio.jsx'
+import RegSubsidio from './pages/RegSubsidio.jsx'
+import RegDiagramas from './pages/RegDiagramas.jsx'
+import Manual from './pages/Manual.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
@@ -41,34 +45,35 @@ import { useAuth } from './lib/auth.jsx'
 // verbatim de cada artigo, lado a lado, com selo de correspondência — é o
 // equivalente do "Comparar Regulamento" pro RI. Nomes escolhidos pra deixar a
 // diferença óbvia no menu.
+// As DUAS trilhas de minuta seguem o MESMO pipeline (padrão único): Subsídio →
+// Minuta → Diagramas → Revisão. A parte "Geral" fica só com o acervo/corpus,
+// comum às duas. O Subsídio de cada trilha reúne os comparadores em abas
+// (Estrutura / Texto / LOB). Ver plano seguindo-o-menu-*.md.
 const NAV_GROUPS = [
   {
     section: null,
     items: [
-      { to: '/', icon: LayoutDashboard, label: 'Início', end: true },
-      { to: '/estados', icon: BookOpen, label: 'Estados' },
       { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
-      { to: '/busca', icon: Search, label: 'Busca Textual' },
-      // Fica na aba geral (não na trilha do RI): o diagrama vem de commandChart,
-      // gerado a partir de organs_detail/ro.json — é a estrutura da PRÓPRIA LOB de
-      // Rondônia, não conteúdo emprestado/comparado com outros estados.
-      { to: '/minuta-diagramas', icon: Network, label: 'Diagramas da Minuta' },
+      { to: '/manual', icon: BookOpen, label: 'Manual de uso' },
+      { to: '/acessos', icon: ShieldCheck, label: 'Acessos', admin: true },
     ],
   },
   {
     section: 'Regimento Interno',
     items: [
-      { to: '/comparar', icon: GitCompare, label: 'Subsídio à Minuta' },
-      { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno' },
-      { to: '/minuta/comparativo-ri', icon: GitCompareArrows, label: 'Subsídio ao RI (estrutura)' },
-      { to: '/minuta/comparar', icon: Scale, label: 'Comparar Regimento Interno (texto)' },
+      { to: '/minuta/subsidio', icon: GitCompare, label: 'Subsídio' },
+      { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno', end: true },
+      { to: '/minuta/diagramas', icon: Network, label: 'Diagramas' },
+      { to: '/minuta/revisao', icon: MessageSquare, label: 'Revisão' },
     ],
   },
   {
     section: 'Regulamento Geral',
     items: [
-      { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento Geral' },
-      { to: '/regulamento/comparar', icon: Scale, label: 'Comparar Regulamento' },
+      { to: '/regulamento/subsidio', icon: GitCompare, label: 'Subsídio' },
+      { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento Geral', end: true },
+      { to: '/regulamento/diagramas', icon: Network, label: 'Diagramas' },
+      { to: '/regulamento/revisao', icon: MessageSquare, label: 'Revisão' },
     ],
   },
 ]
@@ -146,36 +151,25 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
         {NAV_GROUPS.map((group, gi) => (
           <div key={group.section ?? `g${gi}`} className="nav-group">
             {group.section && <div className="nav-section-label nav-section-label-sub">{group.section}</div>}
-            {group.items.map(({ to, icon: Icon, label, end }) => (
-              <NavLink
-                key={to}
-                to={to}
-                end={end}
-                onClick={onNavigate}
-                title={label}
-                className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
-              >
-                <Icon className="nav-icon" size={18} />
-                <span className="nav-item-label">{label}</span>
-              </NavLink>
-            ))}
+            {group.items
+              .filter(it => !it.admin || user?.role === 'admin')
+              .map(({ to, icon: Icon, label, end }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  end={end}
+                  onClick={onNavigate}
+                  title={label}
+                  className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
+                >
+                  <Icon className="nav-icon" size={18} />
+                  <span className="nav-item-label">{label}</span>
+                </NavLink>
+              ))}
           </div>
         ))}
-
-        {user && (
-          <NavLink to="/revisao" onClick={onNavigate} title="Revisão da Minuta"
-            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}>
-            <MessageSquare className="nav-icon" size={18} />
-            <span className="nav-item-label">Revisão da Minuta</span>
-          </NavLink>
-        )}
-        {user?.role === 'admin' && (
-          <NavLink to="/acessos" onClick={onNavigate} title="Acessos"
-            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}>
-            <ShieldCheck className="nav-icon" size={18} />
-            <span className="nav-item-label">Acessos</span>
-          </NavLink>
-        )}
+        {/* "Acessos" (admin) e "Revisão" agora vivem dentro dos grupos — a
+            Revisão em cada trilha, Acessos na parte Geral. */}
       </nav>
 
       <div className="sidebar-footer">
@@ -262,19 +256,30 @@ export default function App() {
       />
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          {/* Início saiu do menu — a home passa a ser o Acervo. */}
+          <Route path="/" element={<Navigate to="/legislacoes" replace />} />
+          <Route path="/legislacoes" element={<Legislations />} />
+          <Route path="/manual" element={<Manual />} />
+          {/* Estados saiu do menu; a rota de detalhe continua (aberta pelo Acervo). */}
           <Route path="/estados" element={<StatesList />} />
           <Route path="/estados/:stateId" element={<StateDetail />} />
-          <Route path="/legislacoes" element={<Legislations />} />
-          <Route path="/comparar" element={<MinutaComparator />} />
           <Route path="/busca" element={<SearchPage />} />
+          {/* Trilha Regimento Interno (pipeline padrão) */}
+          <Route path="/minuta/subsidio" element={<RISubsidio />} />
           <Route path="/minuta" element={<MinutaWizard />} />
+          <Route path="/minuta/diagramas" element={<MinutaDiagrams />} />
+          <Route path="/minuta/revisao" element={<ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute>} />
+          {/* Trilha Regulamento Geral (mesmo pipeline) */}
+          <Route path="/regulamento/subsidio" element={<RegSubsidio />} />
+          <Route path="/regulamento" element={<RegulamentoWizard />} />
+          <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
+          <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
+          {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
+          <Route path="/comparar" element={<MinutaComparator />} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
-          <Route path="/minuta/revisao" element={<MinutaRevisao />} />
           <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
           <Route path="/minuta/comparar" element={<MinutaRIComparator />} />
           <Route path="/minuta/comparativo-ri" element={<RIComparator />} />
-          <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/comparar" element={<RegulamentoComparator />} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
           <Route path="/cadastro" element={<AlreadyLoggedInRedirect />} />
