@@ -2590,39 +2590,32 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   box-shadow: 0 1px 3px rgba(16, 32, 58, 0.12);
 }
 
-.acervo-cov-filters {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 14px;
+.acervo-cov-hint {
+  font-size: 12px; color: var(--text-muted); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
-.acervo-cov-flabel { font-size: 12px; color: var(--text-muted); }
-.acervo-cov-chip {
-  display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font: inherit;
-  border: 1px solid var(--border-card); background: var(--bg-card); color: var(--text-secondary);
-  border-radius: 999px; padding: 6px 13px; font-size: 12.5px; font-weight: 600;
+.acervo-cov-clear {
+  border: 1px dashed var(--border-card); background: var(--bg-card); color: var(--text-secondary);
+  border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer;
 }
-.acervo-cov-chip:hover { border-color: var(--accent-primary); color: var(--text-primary); }
-.acervo-cov-chip.is-on { background: var(--accent-primary); border-color: var(--accent-primary); color: #fff; }
-.acervo-cov-chip.is-clear { border-style: dashed; }
-.acervo-cov-chipn {
-  font-size: 11px; background: var(--track); color: var(--text-secondary);
-  border-radius: 999px; padding: 1px 7px; font-variant-numeric: tabular-nums;
-}
-.acervo-cov-chip.is-on .acervo-cov-chipn { background: rgba(255, 255, 255, 0.25); color: #fff; }
+.acervo-cov-clear:hover { border-color: var(--accent-primary); color: var(--text-primary); }
 
 .acervo-cov-wrap { overflow-x: auto; border: 1px solid var(--border-card); border-radius: var(--radius-md); }
-.acervo-cov-table { border-collapse: collapse; width: 100%; min-width: 560px; background: var(--bg-card); }
+.acervo-cov-table { border-collapse: collapse; width: 100%; min-width: 640px; max-width: 1120px; table-layout: fixed; background: var(--bg-card); }
+.acervo-col-st { width: 24%; }
+.acervo-col-doc { width: 25.3%; }
 .acervo-cov-table th, .acervo-cov-table td {
-  border-bottom: 1px solid var(--border-subtle); padding: 9px 14px; text-align: left; font-size: 13px;
+  border-bottom: 1px solid var(--border-subtle); padding: 9px 14px; text-align: left;
+  font-size: 13px; vertical-align: middle;
 }
 .acervo-cov-table thead th {
   font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
   color: var(--text-muted); background: var(--bg-surface); position: sticky; top: 0; z-index: 1;
-  text-align: center;
 }
-.acervo-cov-table thead th:first-child { text-align: left; }
 .acervo-cov-colh { padding: 0; }
 .acervo-cov-colh button {
   width: 100%; height: 100%; border: none; background: none; cursor: pointer; font: inherit;
-  letter-spacing: 0.03em; text-transform: uppercase; color: inherit; padding: 11px 14px;
+  letter-spacing: 0.03em; text-transform: uppercase; color: inherit; padding: 12px 14px; text-align: left;
 }
 .acervo-cov-colh:not(.is-active) button:hover { background: var(--bg-card-hover); color: var(--text-primary); }
 .acervo-cov-colh.is-active { background: var(--accent-primary); }
@@ -2631,6 +2624,7 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   background: var(--bg-surface); font-size: 11px; font-weight: 700; letter-spacing: 0.05em;
   text-transform: uppercase; color: var(--text-secondary); padding: 8px 14px;
 }
+.acervo-cov-table tbody tr:not(.acervo-cov-grouphd):hover { background: var(--bg-card-hover); }
 .acervo-cov-table tbody tr:last-child th,
 .acervo-cov-table tbody tr:last-child td { border-bottom: none; }
 .acervo-cov-state {
@@ -2644,19 +2638,40 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   font-weight: 800; font-size: 11px; letter-spacing: 0.03em;
 }
 .acervo-cov-name { font-weight: 600; }
-.acervo-cov-cell { text-align: center; }
 .acervo-cov-cell.is-active { background: color-mix(in srgb, var(--accent-primary) 7%, transparent); }
-.acervo-cov-count { font-size: 10px; margin-left: 1px; }
 .acervo-cov-dash { color: var(--text-muted); opacity: 0.6; }
 
-.acervo-cov-pill {
-  display: inline-flex; align-items: center; gap: 3px; padding: 3px 9px;
-  border-radius: 7px; font-size: 12px; font-weight: 700; line-height: 1.4;
+/* Etiquetas de documento na tabela (número da lei + PDF) */
+.acervo-tags { display: flex; flex-direction: column; gap: 5px; align-items: flex-start; }
+.acervo-tag {
+  display: inline-flex; align-items: center; max-width: 100%; overflow: hidden; cursor: pointer;
+  border: 1px solid var(--border-card); background: var(--bg-card); border-radius: 8px;
+  font: inherit; color: var(--text-primary); text-align: left;
 }
-.acervo-cov-pill.is-ok { background: var(--success-bg); color: var(--success-text); }
-.acervo-cov-pill.is-warn { background: rgba(230, 149, 0, 0.14); color: var(--warning-text); }
-.acervo-cov-pill.is-yes { background: var(--badge-neutral-bg); color: var(--text-secondary); }
-.acervo-cov-pill.is-no { background: none; color: var(--text-muted); opacity: 0.55; font-weight: 600; }
+.acervo-tag:hover { border-color: var(--accent-primary); }
+.acervo-tag-bar { flex: none; width: 4px; align-self: stretch; }
+.acervo-tag.st-ok .acervo-tag-bar { background: var(--success-text); }
+.acervo-tag.st-warn .acervo-tag-bar { background: var(--warning-text); }
+.acervo-tag.st-yes .acervo-tag-bar { background: var(--accent-primary); }
+.acervo-tag-ico { flex: none; margin-left: 8px; color: var(--text-muted); }
+.acervo-tag-num {
+  min-width: 0; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px; font-weight: 600; letter-spacing: -0.2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 6px 4px 6px 7px;
+}
+.acervo-tag-go {
+  flex: none; font-size: 10px; font-weight: 700; color: var(--text-muted); padding-right: 9px;
+  max-width: 0; opacity: 0; overflow: hidden; white-space: nowrap;
+  transition: max-width 0.16s, opacity 0.12s;
+}
+.acervo-tag:hover .acervo-tag-go { max-width: 60px; opacity: 1; }
+.acervo-tag.np { cursor: default; }
+.acervo-tag.np:hover { border-color: var(--border-card); }
+/* Regulamento de Serviço: acento azul, mantendo o card neutro da tabela */
+.acervo-tag.col-regulamento .acervo-tag-bar { background: var(--accent-blue); }
+.acervo-tag.col-regulamento .acervo-tag-ico { color: var(--accent-blue); }
+.acervo-tag.col-regulamento:hover { border-color: var(--accent-blue); }
+.acervo-tag.col-regulamento .acervo-tag-go { color: var(--accent-blue); }
 
 .acervo-cov-doccols {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;
@@ -2689,7 +2704,8 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .acervo-cov-stitem .acervo-cov-name {
   font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.acervo-cov-mk { margin-left: auto; font-size: 12px; font-weight: 800; }
+.acervo-cov-mk { font-size: 12px; font-weight: 800; }
+.acervo-cov-stitem .acervo-cov-mk { margin-left: auto; }
 .acervo-cov-mk.is-ok { color: var(--success-text); }
 .acervo-cov-mk.is-warn { color: var(--warning-text); }
 .acervo-cov-empty { font-size: 12px; font-style: italic; color: var(--text-muted); padding: 4px; }
@@ -2698,4 +2714,67 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   font-size: 11.5px; color: var(--text-muted); margin-top: 12px;
   display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
 }
-.acervo-cov-legend .acervo-cov-pill { transform: scale(0.92); }
+
+/* Documentos por estado (relação detalhada + busca) */
+.acervo-detail-search {
+  position: relative; margin-bottom: 10px; max-width: 520px;
+}
+.acervo-detail-search-ico { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+.acervo-detail-search input {
+  width: 100%; border: 1px solid var(--border-card); background: var(--bg-card); color: var(--text-primary);
+  border-radius: var(--radius-md); padding: 10px 12px 10px 36px; font: inherit; font-size: 13px;
+}
+.acervo-detail-search input:focus { outline: 2px solid var(--accent-primary); outline-offset: 0; border-color: transparent; }
+.acervo-detail-count { font-size: 12px; color: var(--text-muted); margin: 0 0 14px; }
+.acervo-detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.acervo-detail-card { border: 1px solid var(--border-card); border-radius: var(--radius-md); overflow: hidden; background: var(--bg-card); }
+.acervo-detail-hd {
+  display: flex; align-items: center; gap: 10px; width: 100%; border: none; cursor: pointer;
+  text-align: left; font: inherit; padding: 12px 14px; background: var(--bg-surface); color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.acervo-detail-hd:hover b { text-decoration: underline; }
+.acervo-detail-hd-meta { display: flex; flex-direction: column; min-width: 0; }
+.acervo-detail-hd-meta b { font-size: 14px; }
+.acervo-detail-hd-meta small { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.acervo-detail-bd { padding: 6px 10px; display: flex; flex-direction: column; }
+.acervo-detail-row { display: flex; align-items: center; gap: 12px; padding: 9px 4px; border-bottom: 1px solid var(--border-subtle); }
+.acervo-detail-row:last-child { border-bottom: none; }
+.acervo-detail-tag {
+  flex: none; font-size: 10px; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase;
+  min-width: 42px; text-align: center; padding: 4px 6px; border-radius: 6px;
+  background: var(--badge-neutral-bg); color: var(--text-secondary);
+}
+.acervo-detail-tag.col-regulamento { background: color-mix(in srgb, var(--accent-blue) 16%, transparent); color: var(--accent-blue); }
+.acervo-detail-info { flex: 1; min-width: 0; }
+.acervo-detail-title { font-size: 13px; font-weight: 700; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.acervo-detail-law { color: var(--accent-gold); font-weight: 600; }
+.acervo-detail-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+.acervo-detail-pdf {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font: inherit;
+  border: 1px solid var(--border-card); background: var(--bg-card); color: var(--text-secondary);
+  border-radius: 8px; padding: 6px 10px; font-size: 11.5px; font-weight: 600;
+}
+.acervo-detail-pdf:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+.acervo-detail-nopdf { flex: none; font-size: 11px; color: var(--text-muted); font-style: italic; }
+
+/* Popup de PDF */
+.acervo-pdf-ov {
+  position: fixed; inset: 0; z-index: 1000; background: rgba(10, 16, 30, 0.6);
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+}
+.acervo-pdf-modal {
+  width: min(900px, 96vw); height: min(88vh, 900px); background: var(--bg-card);
+  border-radius: 14px; overflow: hidden; display: flex; flex-direction: column;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+.acervo-pdf-hd { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--border-card); background: var(--bg-surface); }
+.acervo-pdf-title { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.acervo-pdf-title b { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.acervo-pdf-title small { font-size: 11.5px; color: var(--text-muted); }
+.acervo-pdf-ext, .acervo-pdf-x {
+  flex: none; width: 34px; height: 34px; border-radius: 9px; border: none; cursor: pointer;
+  display: grid; place-items: center; background: var(--track); color: var(--text-secondary);
+}
+.acervo-pdf-ext:hover, .acervo-pdf-x:hover { background: var(--accent-primary); color: #fff; }
+.acervo-pdf-frame { flex: 1; width: 100%; border: none; background: var(--bg-surface); }
