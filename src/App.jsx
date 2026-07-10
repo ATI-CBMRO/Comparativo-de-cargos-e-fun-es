@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
   Search, Library, ScrollText, Menu, X, Network, LogOut,
-  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft
+  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft, GitBranch
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -23,6 +23,7 @@ import RISubsidio from './pages/RISubsidio.jsx'
 import RegSubsidio from './pages/RegSubsidio.jsx'
 import RegDiagramas from './pages/RegDiagramas.jsx'
 import Manual from './pages/Manual.jsx'
+import Organograma from './pages/Organograma.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
@@ -54,6 +55,7 @@ const NAV_GROUPS = [
     section: null,
     items: [
       { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
+      { to: '/organograma', icon: GitBranch, label: 'Organograma' },
       { to: '/manual', icon: BookOpen, label: 'Manual de uso' },
       { to: '/acessos', icon: ShieldCheck, label: 'Acessos', admin: true },
     ],
@@ -260,6 +262,7 @@ export default function App() {
           <Route path="/" element={<Navigate to="/legislacoes" replace />} />
           <Route path="/legislacoes" element={<Legislations />} />
           <Route path="/manual" element={<Manual />} />
+          <Route path="/organograma" element={<Organograma />} />
           {/* Estados saiu do menu; a rota de detalhe continua (aberta pelo Acervo). */}
           <Route path="/estados" element={<StatesList />} />
           <Route path="/estados/:stateId" element={<StateDetail />} />
