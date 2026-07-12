@@ -8,9 +8,10 @@
 - [ ] Regulamento — Diagramas e abas Estrutura/LOB do Subsídio estão como **"em breve"** (agora visíveis em produção). Dependem de dados a curar (commandChart do Regulamento).
 
 ## 🟡 Em andamento
-- [ ] Faxina do CLAUDE.md — FEITA (481→225 linhas, ~9k→~3,6k tokens; corrigiu rotas/menu/sidebar defasados pós-reforma, adicionou Organograma/Manual/login). PR aberto, aguardando revisão do Tiago (repo compartilhado). 10/07/2026.
+_(nenhum)_
 
 ## ✅ Concluído (mês atual)
 - [x] Organograma — página `/organograma` (Geral) com 7 visualizações; EM PRODUÇÃO via PR #10 — 10/07/2026.
 - [x] Reforma das minutas (trilhas espelhadas, Subsídio unificado, Manual, menu enxuto) — EM PRODUÇÃO junto do PR #10 — 10/07/2026.
 - [x] Login — link "Primeiro acesso? Criar minha senha" → /cadastro; EM PRODUÇÃO via PR #11 — 10/07/2026.
+- [x] Faxina do CLAUDE.md — 481→225 linhas (~9k→~3,6k tokens) + correção de defasagens pós-reforma; mesclada via PR #12 — 10/07/2026.
