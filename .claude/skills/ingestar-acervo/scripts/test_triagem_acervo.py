@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from triagem_acervo import score_extracao
+from triagem_acervo import score_extracao, tipo_por_conteudo
 
 # Texto legal em português bem extraído -> OK
 bom = ("Art. 1º Fica aprovado o Regulamento Geral do Corpo de Bombeiros Militar, "
@@ -23,3 +23,25 @@ lixo = "12 34 %% ## @@ 55 || 77 && (( )) ** ++ == 99 :: ;;"
 assert score_extracao(lixo) == "RUIM", score_extracao(lixo)
 
 print("score_extracao OK")
+
+# tipo_por_conteudo: Portaria/Diretriz Operacional (caso MA) -> Regimento de Serviços
+ma = ("PORTARIA Nº 46/2020 Aprova Diretriz Operacional para o Serviço de Gestor "
+      "Operacional de Dia, Supervisor do CIOPS e Superior de Dia.")
+assert tipo_por_conteudo(ma) == "Regimento de Serviços", tipo_por_conteudo(ma)
+
+# Decreto de serviços diários (caso PA) -> Regimento de Serviços
+pa = ("Dispõe sobre as normas ou procedimentos para os serviços administrativos, "
+      "preventivos e operacionais a serem adotados nas atividades diárias.")
+assert tipo_por_conteudo(pa) == "Regimento de Serviços", tipo_por_conteudo(pa)
+
+# LOB -> Lei de Organização Básica
+lob = "Dispõe sobre a organização básica do Corpo de Bombeiros Militar e dá providências."
+assert tipo_por_conteudo(lob) == "Lei de Organização Básica", tipo_por_conteudo(lob)
+
+# Quadro demonstrativo -> Quadro Demonstrativo de Cargos
+assert tipo_por_conteudo("Quadro Demonstrativo de Cargos e Funções") == "Quadro Demonstrativo de Cargos"
+
+# Texto sem pista reconhecível -> Indefinido
+assert tipo_por_conteudo("Bom dia a todos, segue o comunicado.") == "Indefinido"
+
+print("tipo_por_conteudo OK")

@@ -36,3 +36,41 @@ def score_extracao(texto: str) -> str:
     if glyph_ratio > 0.05 or alpha_ratio < 0.60:
         return "SUSPEITO"
     return "OK"
+
+
+def _norm(s: str) -> str:
+    """Minúsculas + sem acento (NFKD), para casar palavras-chave e prefixos."""
+    s = unicodedata.normalize('NFKD', s or '')
+    s = ''.join(c for c in s if not unicodedata.combining(c))
+    return s.lower()
+
+
+# (lista de palavras-chave normalizadas, tipo canônico) — ordem: mais específico primeiro.
+# Regras de "serviço diário" vêm antes de "regimento interno"/"regulamento" de propósito:
+# um regulamento/regimento de SERVIÇO deve ser proposto como Regimento de Serviços, não
+# como Regulamento Geral só pela palavra no título (caso PA).
+_CONTENT_RULES = [
+    (["diretriz operacional", "gestor operacional de dia", "supervisor do ciops",
+      "servico operacional de dia", "superior de dia", "escala de servico",
+      "servico de dia", "atividades diarias",
+      "servicos administrativos, preventivos e operacionais",
+      "normas ou procedimentos para os servicos"], "Regimento de Serviços"),
+    (["quadro demonstrativo"], "Quadro Demonstrativo de Cargos"),
+    (["quadro de organizacao", "quadro de distribuicao"], "Quadro de Organização e Distribuição"),
+    (["normas gerais de acao"], "Normas Gerais de Ação"),
+    (["regimento interno"], "Regimento Interno"),
+    (["regulamento geral", "regulamenta a lei", "aprova o regulamento"], "Regulamento Geral"),
+    (["organizacao basica", "lei organica", "reorganiza o corpo de bombeiros",
+      "cria o corpo de bombeiros", "organizacao estrutural e funcional"],
+     "Lei de Organização Básica"),
+]
+
+
+def tipo_por_conteudo(texto: str) -> str:
+    """Propõe o tipo canônico do documento pela ementa/primeiros artigos. Consultivo:
+    a decisão final é humana. Devolve 'Indefinido' quando nada casa."""
+    n = _norm(texto)
+    for termos, tipo in _CONTENT_RULES:
+        if any(t in n for t in termos):
+            return tipo
+    return "Indefinido"
