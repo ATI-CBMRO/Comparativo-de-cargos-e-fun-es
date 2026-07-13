@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from triagem_acervo import score_extracao, tipo_por_conteudo
+from triagem_acervo import score_extracao, tipo_por_conteudo, valida_prefixo
 
 # Texto legal em português bem extraído -> OK
 bom = ("Art. 1º Fica aprovado o Regulamento Geral do Corpo de Bombeiros Militar, "
@@ -45,3 +45,20 @@ assert tipo_por_conteudo("Quadro Demonstrativo de Cargos e Funções") == "Quadr
 assert tipo_por_conteudo("Bom dia a todos, segue o comunicado.") == "Indefinido"
 
 print("tipo_por_conteudo OK")
+
+# valida_prefixo: usa um STATE_META falso pequeno (teste puro, sem importar o real)
+FAKE_META = {"Maranhão": {"id": "ma"}, "Pará": {"id": "pa"}, "Mato Grosso": {"id": "mt"}}
+
+# prefixo exato -> (True, prefixo)
+assert valida_prefixo("Maranhão - Portaria.pdf", FAKE_META) == (True, "Maranhão")
+
+# caixa/acento diferentes -> (False, forma canônica sugerida)
+assert valida_prefixo("maranhao - Portaria.pdf", FAKE_META) == (False, "Maranhão")
+
+# estado inexistente -> (False, None)
+assert valida_prefixo("Xingu - Foo.pdf", FAKE_META) == (False, None)
+
+# sem separador " - " -> (False, None)
+assert valida_prefixo("SemSeparador.pdf", FAKE_META) == (False, None)
+
+print("valida_prefixo OK")

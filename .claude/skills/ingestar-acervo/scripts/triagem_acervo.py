@@ -74,3 +74,23 @@ def tipo_por_conteudo(texto: str) -> str:
         if any(t in n for t in termos):
             return tipo
     return "Indefinido"
+
+
+def valida_prefixo(nome: str, state_meta: dict):
+    """Valida o prefixo do nome de arquivo (texto antes de ' - ') contra STATE_META.
+
+    Retorna (True, chave) se casa exatamente; (False, chave_canônica) se existe com
+    caixa/acento diferentes (sugestão de correção); (False, None) se não há separador
+    ou o estado é desconhecido.
+    """
+    base = nome.rsplit('.', 1)[0]
+    if ' - ' not in base:
+        return (False, None)
+    prefixo = base.split(' - ', 1)[0].strip()
+    if prefixo in state_meta:
+        return (True, prefixo)
+    alvo = _norm(prefixo)
+    for chave in state_meta:
+        if _norm(chave) == alvo:
+            return (False, chave)
+    return (False, None)
