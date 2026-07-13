@@ -2,14 +2,6 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
-- [ ] **Santa Catarina — PDFs sem OCR (bloqueado na ingestão 2026-07-13).** O PDF base
-  `Santa Catarina - Organização Básica.pdf` foi SUBSTITUÍDO no working tree por um escaneado
-  de 6,4 MB sem OCR (extrai ~1 KB, "[Página sem texto]"), degradando o documento antes
-  verificado (Decreto 1.328/2021 = Regimento Interno). O novo `Santa Catarina - Organização
-  Básica alterações.pdf` também é escaneado sem OCR. **Ambos foram SEGURADOS** fora do batch
-  (a base `.md` boa foi restaurada da versão commitada; o `.md` do alterações foi removido; os
-  PDFs modificados ficam no working tree, NÃO commitados). Decisão do Tiago: (a) reverter a
-  base ao PDF de texto anterior, (b) fornecer PDFs com OCR, ou (c) manter fora até OCR.
 - [ ] **Camada 2/3 dos documentos ingeridos em 2026-07-13** (camada 1 concluída):
   - **MA - Portaria 46** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_ma.py`).
   - **PA - Regulamento de serviço** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_pa.py`; PA já tem RI organizacional separado).
@@ -24,6 +16,13 @@
 - [ ] Faxina do CLAUDE.md — FEITA (481→225 linhas, ~9k→~3,6k tokens; corrigiu rotas/menu/sidebar defasados pós-reforma, adicionou Organograma/Manual/login). PR aberto, aguardando revisão do Tiago (repo compartilhado). 10/07/2026.
 
 ## ✅ Concluído (mês atual)
+- [x] **Santa Catarina — LOB corrigida (13/07/2026).** Os PDFs da ALESC vinham escaneados (sem OCR).
+  Substituídos pelas versões legíveis: **LC nº 724/2018** (`Santa Catarina - Organização Básica.pdf`,
+  a LOB real) + **LC nº 885/2025** (`Santa Catarina - Organização Básica alterações.pdf`, altera a LOB) —
+  ambas geradas do texto oficial da ALESC (PDF pesquisável via reportlab), classificadas como LOB. O
+  Decreto nº 1.328/2021 (que era o antigo "Organização Básica", rotulado Regimento Interno) foi
+  DESCARTADO — é superseded pela LOB real, por decisão do Tiago. Override de SC removido do
+  `build_states_data.py`.
 - [x] Organograma — página `/organograma` (Geral) com 7 visualizações; EM PRODUÇÃO via PR #10 — 10/07/2026.
 - [x] Reforma das minutas (trilhas espelhadas, Subsídio unificado, Manual, menu enxuto) — EM PRODUÇÃO junto do PR #10 — 10/07/2026.
 - [x] Login — link "Primeiro acesso? Criar minha senha" → /cadastro; EM PRODUÇÃO via PR #11 — 10/07/2026.
