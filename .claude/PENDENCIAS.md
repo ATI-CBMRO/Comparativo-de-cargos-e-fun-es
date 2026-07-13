@@ -2,6 +2,19 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Santa Catarina — PDFs sem OCR (bloqueado na ingestão 2026-07-13).** O PDF base
+  `Santa Catarina - Organização Básica.pdf` foi SUBSTITUÍDO no working tree por um escaneado
+  de 6,4 MB sem OCR (extrai ~1 KB, "[Página sem texto]"), degradando o documento antes
+  verificado (Decreto 1.328/2021 = Regimento Interno). O novo `Santa Catarina - Organização
+  Básica alterações.pdf` também é escaneado sem OCR. **Ambos foram SEGURADOS** fora do batch
+  (a base `.md` boa foi restaurada da versão commitada; o `.md` do alterações foi removido; os
+  PDFs modificados ficam no working tree, NÃO commitados). Decisão do Tiago: (a) reverter a
+  base ao PDF de texto anterior, (b) fornecer PDFs com OCR, ou (c) manter fora até OCR.
+- [ ] **Camada 2/3 dos documentos ingeridos em 2026-07-13** (camada 1 concluída):
+  - **MA - Portaria 46** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_ma.py`).
+  - **PA - Regulamento de serviço** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_pa.py`; PA já tem RI organizacional separado).
+  - **MT/SE**: renomeações só corrigiram o rótulo no acervo; já cobertos na trilha de Regulamento (referências de nome de arquivo atualizadas em `regulamento_enrichment.py`/`extrair_regulamentos.py`/`sugerir_equivalencias.py`).
+- [ ] `database/documents_index.json` — artefato órfão (não é lido por nenhum código nem gerado pela pipeline); referencia os nomes antigos de MT/SE. Atualizar ou remover numa faxina futura.
 - [ ] Organograma — validar a **classificação por natureza** (Direção/Apoio/Execução) dos órgãos: foi inferida, não veio rotulada da LOB. Origem: sessão organograma 10/07/2026.
 - [ ] Organograma (aba Projeção territorial) — validar o **mapeamento proposto** GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova). Depende da redação final da nova LOB. Origem: 10/07/2026.
 - [ ] Lacuna de dados — extrair **texto verbatim** dos estados que só têm competências (ex.: MT no Comando-Geral). Curadoria por estado/órgão. Origem: reforma Subsídio.

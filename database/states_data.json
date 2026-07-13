@@ -3,7 +3,7 @@
     "version": "1.0",
     "generated_at": "2026-06-01",
     "total_states": 27,
-    "total_documents": 47,
+    "total_documents": 49,
     "curated_states": 27,
     "regions": {
       "Norte": 7,
@@ -5836,6 +5836,15 @@
           "has_pdf": true
         },
         {
+          "type": "Regimento de Serviços",
+          "typeVerified": true,
+          "md_file": "Maranhão - Portaria 46.md",
+          "char_count": 40893,
+          "year": 2020,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
           "type": "Quadro de Organização e Distribuição",
           "typeVerified": true,
           "md_file": "Maranhão - Quadro de Organização e Distribuição.md",
@@ -6482,11 +6491,11 @@
         }
       ],
       "stats": {
-        "total_documents": 2,
+        "total_documents": 3,
         "has_regimento": false,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 108027,
+        "total_chars": 148920,
         "organs_mapped": 93,
         "curated": true
       }
@@ -6522,7 +6531,7 @@
         {
           "type": "Regulamento Geral",
           "typeVerified": true,
-          "md_file": "Mato Grosso - Regimento Interno.md",
+          "md_file": "Mato Grosso - Regulamento Geral.md",
           "char_count": 272442,
           "year": 2013,
           "laws": [
@@ -10240,9 +10249,24 @@
           "year": 2026,
           "laws": [],
           "has_pdf": true
+        },
+        {
+          "type": "Regimento de Serviços",
+          "typeVerified": true,
+          "md_file": "Pará - Regulamento de serviço.md",
+          "char_count": 164301,
+          "year": 2020,
+          "laws": [
+            {
+              "tipo": "Decreto",
+              "numero": "1.052",
+              "data": "23 DE SETEMBRO DE"
+            }
+          ],
+          "has_pdf": true
         }
       ],
-      "legal_basis": "Consultar documento fonte",
+      "legal_basis": "Decreto nº 1.052 (23 DE SETEMBRO DE)",
       "chapters_summary": [
         {
           "number": "i",
@@ -11363,11 +11387,11 @@
         }
       ],
       "stats": {
-        "total_documents": 2,
+        "total_documents": 3,
         "has_regimento": true,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 473925,
+        "total_chars": 638226,
         "organs_mapped": 169,
         "curated": true
       }
@@ -19096,8 +19120,8 @@
         {
           "type": "Regimento de Serviços",
           "typeVerified": true,
-          "md_file": "Sergipe - Regimento Interno.md",
-          "char_count": 101237,
+          "md_file": "Sergipe - Regulamento Interno.md",
+          "char_count": 101241,
           "year": 2022,
           "laws": [],
           "has_pdf": true
@@ -20161,7 +20185,7 @@
         "has_regimento": false,
         "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 163408,
+        "total_chars": 163412,
         "organs_mapped": 138,
         "curated": true
       }
