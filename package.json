@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "node --test \"src/lib/**/*.test.js\" \"api/**/*.test.js\"",
-    "test:py": "python3 scripts/test_command_chart.py && python3 scripts/test_minuta_comparison_lib.py && python3 scripts/test_equivalencias.py && python3 scripts/verificar_verbatim.py && python3 scripts/test_regulamento_structure.py && python3 scripts/test_minuta_alternativas.py"
+    "test:py": "python3 scripts/test_command_chart.py && python3 scripts/test_minuta_comparison_lib.py && python3 scripts/test_equivalencias.py && python3 scripts/verificar_verbatim.py && python3 scripts/test_regulamento_structure.py && python3 scripts/test_minuta_alternativas.py && python3 \".claude/skills/ingestar-acervo/scripts/test_triagem_acervo.py\""
   },
   "dependencies": {
     "docx": "^9.7.1",

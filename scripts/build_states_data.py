@@ -394,14 +394,30 @@ def detail_fail(organs):
 # só foram identificados depois, na leitura de conteúdo. Ver CLAUDE.md
 # "Classificação de tipo de documento".
 CONTENT_TYPE_OVERRIDES = {
-    "Mato Grosso - Regimento Interno.md": "Regulamento Geral",
-    "Sergipe - Regimento Interno.md": "Regimento de Serviços",
-    # Achado da auditoria de 2026-07-09: o arquivo "Organização Básica" de SC é na
-    # verdade o Decreto nº 1.328/2021, que REGULAMENTA a LC nº 724/2018 (a LOB em
-    # si, ausente do acervo) com estrutura organizacional detalhada (missões,
-    # órgãos de direção/apoio/execução, hierarquia até pelotão/grupo) — perfil de
-    # Regimento Interno, não de lei de criação. Ver CLAUDE.md.
-    "Santa Catarina - Organização Básica.md": "Regimento Interno",
+    # SE: PDF renomeado para "Regulamento Interno" (2026-07-13), mas o conteúdo é o
+    # RISD — Regulamento Interno dos Serviços Diários (regimento de serviço).
+    # parse_doc_type daria "Regulamento Geral" pela palavra "regulamento" no nome.
+    "Sergipe - Regulamento Interno.md": "Regimento de Serviços",
+    # NOTA SC (ingestão 2026-07-13): o antigo override de SC ("Organização Básica"
+    # → Regimento Interno) foi REMOVIDO. O arquivo era o Decreto nº 1.328/2021
+    # (regulamenta a LOB), obtido escaneado; foi SUBSTITUÍDO pela LOB real —
+    # Lei Complementar nº 724/2018 ("Santa Catarina - Organização Básica.md") e sua
+    # alteração, a LC nº 885/2025 ("Santa Catarina - Organização Básica alterações.md").
+    # Ambas são LOB e parse_doc_type já retorna "Lei de Organização Básica" pelos nomes.
+    # MA: a "Portaria 46/2020" é a Diretriz Operacional do serviço diário (Gestor
+    # Operacional de Dia, Supervisor do CIOPS, Superior de Dia) — regimento de
+    # serviço; parse_doc_type cairia no default "Lei de Organização Básica"
+    # (ingestão 2026-07-13).
+    "Maranhão - Portaria 46.md": "Regimento de Serviços",
+    # PA: "Regulamento de serviço" é o Decreto nº 1.052/2020 sobre os serviços
+    # administrativos, preventivos e operacionais diários — regimento de serviço;
+    # parse_doc_type daria "Regulamento Geral" pela palavra "regulamento"
+    # (ingestão 2026-07-13). PA já tem um "Regimento Interno" organizacional à parte.
+    "Pará - Regulamento de serviço.md": "Regimento de Serviços",
+    # NOTA MT (2026-07-13): o antigo override "Mato Grosso - Regimento Interno.md"
+    # foi removido — o PDF foi renomeado para "Mato Grosso - Regulamento Geral.md",
+    # e parse_doc_type já retorna "Regulamento Geral" para esse nome. MT segue em
+    # CONTENT_VERIFIED_STATES, então permanece verificado.
 }
 
 # Estados cujo TIPO de documento foi conferido por leitura de conteúdo de verdade —
@@ -430,6 +446,10 @@ CONTENT_VERIFIED_FILES = {
     "Espírito Santo - Normas Gerais de Ação.md",
     "Maranhão - Organização Básica.md",
     "Maranhão - Quadro de Organização e Distribuição.md",
+    # Diretriz Operacional (Portaria 46/2020) — conteúdo lido e confirmado como
+    # regimento de serviço na ingestão de 2026-07-13 (MA não está em
+    # CONTENT_VERIFIED_STATES, por isso entra por arquivo).
+    "Maranhão - Portaria 46.md",
     "Mato Grosso do Sul - Organização Básica.md",
     "Minas Gerais - Organização Básica.md",
     # Ementa diz "organização estrutural e funcional" (não "organização básica"
@@ -451,6 +471,9 @@ CONTENT_VERIFIED_FILES = {
     # Ementa usa "Lei Orgânica" em vez de "organização básica", mas mesma função.
     "Roraíma - Organização Básica.md",
     "Santa Catarina - Organização Básica.md",
+    # LC nº 885/2025 que altera a LOB (LC 724/2018) do CBMSC — texto oficial da ALESC,
+    # transcrito para PDF pesquisável na ingestão de 2026-07-13.
+    "Santa Catarina - Organização Básica alterações.md",
     "Tocantins - Organização Básica.md",
 }
 
