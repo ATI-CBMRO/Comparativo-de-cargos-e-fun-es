@@ -94,3 +94,63 @@ def valida_prefixo(nome: str, state_meta: dict):
         if _norm(chave) == alvo:
             return (False, chave)
     return (False, None)
+
+
+def ler_amostra(pdf_path, paginas: int = 3):
+    """Lê as primeiras `paginas` páginas do PDF e devolve (texto, total_paginas).
+    Importa pypdf tardiamente para não exigir a lib nos testes puros."""
+    from pypdf import PdfReader
+    reader = PdfReader(pdf_path)
+    partes = [(reader.pages[i].extract_text() or "") for i in range(min(paginas, len(reader.pages)))]
+    return "\n".join(partes), len(reader.pages)
+
+
+def _carregar_pipeline():
+    """Importa STATE_META e parse_doc_type do build do repo (só quando roda como CLI)."""
+    import sys
+    from pathlib import Path
+    repo_root = Path(__file__).resolve().parents[4]
+    sys.path.insert(0, str(repo_root / "scripts"))
+    from build_states_data import STATE_META, parse_doc_type
+    return STATE_META, parse_doc_type
+
+
+def main():
+    import argparse
+    import os
+    parser = argparse.ArgumentParser(description="Triagem read-only de PDFs para o Acervo.")
+    parser.add_argument("pasta", help="Pasta com os PDFs a triar (ex.: a de staging).")
+    parser.add_argument("--paginas", type=int, default=3, help="Páginas amostradas por PDF.")
+    args = parser.parse_args()
+
+    state_meta, parse_doc_type = _carregar_pipeline()
+    pdfs = sorted(f for f in os.listdir(args.pasta) if f.lower().endswith(".pdf"))
+    if not pdfs:
+        print(f"Nenhum PDF em: {args.pasta}")
+        return
+
+    print(f"Triagem de {len(pdfs)} PDF(s) em: {args.pasta}\n")
+    for nome in pdfs:
+        caminho = os.path.join(args.pasta, nome)
+        try:
+            texto, npag = ler_amostra(caminho, args.paginas)
+        except Exception as e:
+            print(f"[ERRO] {nome}: {e!r}")
+            continue
+        ok_prefixo, sugestao = valida_prefixo(nome, state_meta)
+        md_nome = nome[:-4] + ".md"
+        tipo_nome = parse_doc_type(md_nome)
+        tipo_conteudo = tipo_por_conteudo(texto)
+        score = score_extracao(texto)
+        diverge = "DIVERGE" if (tipo_conteudo != "Indefinido" and tipo_conteudo != tipo_nome) else "ok"
+        pref = "ok" if ok_prefixo else (f"corrigir->{sugestao}" if sugestao else "ESTADO DESCONHECIDO")
+        print(f"• {nome}  ({npag} pág.)")
+        print(f"    prefixo/STATE_META : {pref}")
+        print(f"    qualidade extração : {score}")
+        print(f"    tipo por nome      : {tipo_nome}")
+        print(f"    tipo por conteúdo  : {tipo_conteudo}  [{diverge}]")
+        print()
+
+
+if __name__ == "__main__":
+    main()
