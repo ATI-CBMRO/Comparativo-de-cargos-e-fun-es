@@ -22,6 +22,13 @@ assert score_extracao(None) == "RUIM"
 lixo = "12 34 %% ## @@ 55 || 77 && (( )) ** ++ == 99 :: ;;"
 assert score_extracao(lixo) == "RUIM", score_extracao(lixo)
 
+# glifos abaixo de 30% mas acima de 5% -> SUSPEITO (banda de glifo)
+suspeito_glifo = "Art. 1o Fica aprovado o regulamento da corporacao militar estadual. /U0041/U0042"
+assert score_extracao(suspeito_glifo) == "SUSPEITO", score_extracao(suspeito_glifo)
+# densidade alfabetica na faixa [0.45, 0.60) -> SUSPEITO (banda de alfa)
+suspeito_alpha = "abc 12 34 def 56 78 ghi 90 12 jkl 34 56 mno 78"
+assert score_extracao(suspeito_alpha) == "SUSPEITO", score_extracao(suspeito_alpha)
+
 print("score_extracao OK")
 
 # tipo_por_conteudo: Portaria/Diretriz Operacional (caso MA) -> Regimento de Serviços

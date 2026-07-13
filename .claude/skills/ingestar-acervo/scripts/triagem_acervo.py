@@ -138,7 +138,7 @@ def main():
             print(f"[ERRO] {nome}: {e!r}")
             continue
         ok_prefixo, sugestao = valida_prefixo(nome, state_meta)
-        md_nome = nome[:-4] + ".md"
+        md_nome = os.path.splitext(nome)[0] + ".md"
         tipo_nome = parse_doc_type(md_nome)
         tipo_conteudo = tipo_por_conteudo(texto)
         score = score_extracao(texto)
