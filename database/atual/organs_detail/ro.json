@@ -63,6 +63,238 @@
           ]
         }
       ]
+    },
+    "emg": {
+      "id": "emg",
+      "name": "Estado-Maior-Geral",
+      "abbreviation": "EMG",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 12-A (red. Lei nº 4.303/2018); composição Art. 9º, IV (red. Lei nº 4.488/2019)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)",
+      "atribuicoes": [
+        "O Estado-Maior-Geral é dirigido por um Chefe e subordina-se ao Subcomandante-Geral, competindo-lhe o planejamento, a coordenação, o controle e a avaliação das ações administrativas a cargo dos órgãos de atividade-meio e das diretrizes de ordens do Comando (Art. 12-A, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Chefe",
+        "Adjunto",
+        "Seção Administrativa",
+        "Coordenadoria de Pessoal",
+        "Coordenadoria de Educação, Ensino e Instrução",
+        "Coordenadoria de Atividades Técnicas",
+        "Diretoria de Logística",
+        "Diretoria de Comunicação Social",
+        "Diretoria de Informática"
+      ],
+      "cargos": [
+        {
+          "cargo": "Chefe do Estado-Maior-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial da ativa do último posto, pertencente ao Quadro de Oficiais Combatentes, indicado pelo Comandante-Geral e nomeado pelo Governador do Estado (Art. 12-A, red. Lei nº 4.303/2018)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Compete-lhe o planejamento, a coordenação, o controle e a avaliação das ações administrativas a cargo dos órgãos de atividade-meio e das diretrizes de ordens do Comando (Art. 12-A, red. Lei nº 4.303/2018)"
+          ]
+        }
+      ]
+    },
+    "corregedoria": {
+      "id": "corregedoria",
+      "name": "Corregedoria-Geral",
+      "abbreviation": "CG-Corr",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 13 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Corregedoria-Geral, subordinada ao Subcomandante-Geral, é o órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Instituição, competindo-lhe, dentre outras atribuições, a apuração de responsabilidade criminal, administrativa e disciplinar (Art. 13, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Corregedor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Cartório",
+        "Núcleo de Inteligência",
+        "Seção de Processo Administrativo"
+      ],
+      "cargos": [
+        {
+          "cargo": "Corregedor-Geral",
+          "subordinadoA": "Subcomandante-Geral",
+          "requisito": "Oficial da ativa do último Posto, pertencente ao Quadro de Oficiais Combatentes, indicado pelo Comandante-Geral e nomeado pelo Governador do Estado (Art. 13, red. Lei nº 4.303/2018)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Dirigir a disciplina, a orientação e a fiscalização das atividades funcionais e da conduta dos militares da Instituição, apurando responsabilidade criminal, administrativa e disciplinar (Art. 13, red. Lei nº 4.303/2018)"
+          ]
+        }
+      ]
+    },
+    "ajudancia": {
+      "id": "ajudancia",
+      "name": "Ajudância-Geral",
+      "abbreviation": "Aj-Geral",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Subcomandante-Geral",
+      "legalRef": "Art. 25 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Ajudância-Geral, subordinada ao Subcomandante-Geral, é o órgão responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, a manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, as de controle de todo o pessoal (Art. 25, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Ajudante-Geral",
+        "Adjunto",
+        "Secretaria-Geral",
+        "Companhia de Comando e Serviços",
+        "Banda de Música",
+        "Centro de Assistência Social"
+      ],
+      "cargos": []
+    },
+    "gabinete": {
+      "id": "gabinete",
+      "name": "Gabinete do Comandante-Geral",
+      "abbreviation": "Gab-CG",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 24 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "Ao Gabinete do Comandante-Geral compete a supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral (Art. 24, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Chefia de Gabinete",
+        "Secretaria",
+        "Assessoria de Comunicação e Imprensa",
+        "Ajudância de Ordens"
+      ],
+      "cargos": []
+    },
+    "cepdec": {
+      "id": "cepdec",
+      "name": "Coordenadoria Estadual de Proteção e Defesa Civil",
+      "abbreviation": "CEPDEC",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 17 (red. Lei nº 5.697/2023)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 5.697/2023)",
+      "atribuicoes": [
+        "A Coordenadoria Estadual de Proteção e Defesa Civil - CEPDEC, que tem por Coordenador-Geral o Comandante-Geral do CBMRO e por Coordenador Estratégico-Operacional um Oficial do último posto do Quadro de Combatentes, é o órgão que centraliza o Sistema Estadual de Proteção e Defesa Civil de Rondônia - SIEPDEC (Art. 17, red. Lei nº 5.697/2023)",
+        "Tem por finalidade estabelecer as normas e o exercício das atividades de integrar, planejar, organizar, coordenar e supervisionar as execuções das medidas preventivas, de mitigação, preparação, resposta e recuperação, considerando os efeitos produzidos por fatores adversos de qualquer natureza e origens, nas situações de emergência ou estado de calamidade pública (Art. 17, red. Lei nº 5.697/2023)"
+      ],
+      "desdobramentos": [
+        "Coordenador-Geral",
+        "Coordenador Estratégico-Operacional",
+        "Adjunto",
+        "Seção Administrativa",
+        "Secretaria Executiva",
+        "Divisão de Apoio Administrativo e Financeiro",
+        "Divisão de Operações Emergenciais",
+        "Divisão de Minimização de Desastres"
+      ],
+      "cargos": []
+    },
+    "condeg": {
+      "id": "condeg",
+      "name": "Conselho Deliberativo de Estratégia e Gestão",
+      "abbreviation": "CONDEG",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 27 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "O Conselho Deliberativo de Estratégia e Gestão - CONDEG é o Órgão responsável pelo estudo, planejamento e assessoria consultiva do Comandante-Geral para a solução de questões institucionais e de segurança pública da Corporação, e é composto pelos Oficiais da ativa do último Posto (Art. 27, red. Lei nº 4.303/2018)",
+        "Nas deliberações do CONDEG os membros deverão fundamentar seus votos (Art. 27, §1º, red. Lei nº 4.303/2018)",
+        "As deliberações do CONDEG serão apreciadas pelo Comandante-Geral, que poderá homologá-las total ou parcialmente ou avocar para si a decisão final, fundamentando a solução que adotar (Art. 27, §2º, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [],
+      "cargos": []
+    },
+    "dint": {
+      "id": "dint",
+      "name": "Diretoria de Inteligência",
+      "abbreviation": "DINT",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 20 (red. Lei nº 4.488/2019)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.488/2019)",
+      "atribuicoes": [
+        "A Diretoria de Inteligência, subordinada ao Comandante-Geral, é responsável por desenvolver, planejar, executar, coordenar, supervisionar e controlar as Atividades de Inteligência, tendo como competência primordial assessorar o Comandante-Geral na tomada de decisão (Art. 20, red. Lei nº 4.488/2019)"
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Sala de Situação",
+        "Seção de Inteligência",
+        "Seção de Contra-Inteligência",
+        "Seção de Operações de Inteligência",
+        "Seção de Documentos e Informática",
+        "Seção de Controle de Armamento"
+      ],
+      "cargos": []
+    },
+    "cpof": {
+      "id": "cpof",
+      "name": "Coordenadoria de Planejamento, Orçamento e Finanças",
+      "abbreviation": "CPOF",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 16 (red. Lei nº 4.488/2019); estrutura Art. 16 par. único (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)",
+      "atribuicoes": [
+        "A Coordenadoria de Planejamento, Orçamento e Finanças, subordinada ao Comandante-Geral, é responsável pelo planejamento, apoio administrativo, orçamentário e técnico-financeiro, bem como executar, acompanhar e controlar as atividades inerentes a sua responsabilidade (Art. 16, red. Lei nº 4.488/2019)"
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Diretoria de Orçamento e Finanças",
+        "Diretoria de Planejamento",
+        "Comissão Permanente de Licitações"
+      ],
+      "cargos": []
+    },
+    "assessorias": {
+      "id": "assessorias",
+      "name": "Assessorias",
+      "abbreviation": "Assess",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 29 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "As Assessorias subordinam-se ao Comandante-Geral e são órgãos que prestam assessoramento administrativo e técnico, responsáveis pela realização de estudos, pesquisas, elaboração e controle de pareceres e o relacionamento com os Poderes e outros Órgãos (Art. 29, red. Lei nº 4.303/2018)",
+        "As Assessorias poderão ser compostas por servidor Militar e/ou Civil, para os cargos de Assessor e Assistente (Art. 29, §2º, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Assessoria Especial",
+        "Assessoria Legislativa",
+        "Assessoria Parlamentar",
+        "Assessoria Previdenciária",
+        "Assessoria na Superintendência de Compras e Licitação (SUPEL)",
+        "Assessoria na Diretoria Executiva do Sistema de Pagamento (DESP)",
+        "Assessoria Institucional"
+      ],
+      "cargos": []
+    },
+    "comissoes": {
+      "id": "comissoes",
+      "name": "Comissões",
+      "abbreviation": "Comiss",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Comandante-Geral",
+      "legalRef": "Art. 26 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "As Comissões são órgãos constituídos para a realização de atividades periódicas e temporárias previstas em regulamento da Corporação ou determinadas pelo Comandante-Geral, para deliberarem sobre os assuntos de interesse institucional (Art. 26, red. Lei nº 4.303/2018)",
+        "São comissões permanentes a Comissão de Promoção de Oficiais, a Comissão de Promoção de Praças e as Comissões de Condecorações, cuja composição e atribuições serão fixadas em regulamento próprio (Art. 26, §2º, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Presidente",
+        "Secretário",
+        "Membros"
+      ],
+      "cargos": []
     }
   }
 }

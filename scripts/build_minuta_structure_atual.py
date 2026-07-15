@@ -32,10 +32,21 @@ OUT_JSON = BASE_DIR / "database" / "atual" / "minuta_structure.json"
 
 TITLE = "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO) — LOB ATUAL"
 
-# Ordem dos capítulos do cenário atual (topo → menor fração). Fase 2A: só o Comando-Geral.
+# Ordem dos capítulos do cenário atual (topo → menor fração), conforme o organograma
+# oficial do CBMRO. Fase 2A: Comando-Geral. Fase 2B — lote 1: demais Órgãos de Direção.
 # (organ_key, CHAPTER_TITLE, artigo_definido)
 ATUAL_ORGAN_ORDER = [
-    ("cg", "DO COMANDO-GERAL (CG)", "O"),
+    ("cg",           "DO COMANDO-GERAL (CG)",                                          "O"),
+    ("cepdec",       "DA COORDENADORIA ESTADUAL DE PROTEÇÃO E DEFESA CIVIL (CEPDEC)",   "A"),
+    ("condeg",       "DO CONSELHO DELIBERATIVO DE ESTRATÉGIA E GESTÃO (CONDEG)",        "O"),
+    ("gabinete",     "DO GABINETE DO COMANDANTE-GERAL",                                 "O"),
+    ("assessorias",  "DAS ASSESSORIAS",                                                 "AS"),
+    ("dint",         "DA DIRETORIA DE INTELIGÊNCIA (DINT)",                             "A"),
+    ("cpof",         "DA COORDENADORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS (CPOF)",   "A"),
+    ("comissoes",    "DAS COMISSÕES",                                                   "AS"),
+    ("corregedoria", "DA CORREGEDORIA-GERAL",                                           "A"),
+    ("ajudancia",    "DA AJUDÂNCIA-GERAL",                                              "A"),
+    ("emg",          "DO ESTADO-MAIOR-GERAL (EMG)",                                     "O"),
 ]
 
 
