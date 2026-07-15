@@ -46,7 +46,7 @@ def build_chapter(organ_key, chapter_title, organ):
             "id": f"atual-{organ_key}-caput",
             "kind": "incisos",
             "editId": f"reg:atual-{theme_key}/{organ_key}-caput",
-            "caput": f"O presente Capítulo regula a atuação da {organ.get('name', organ_key)} no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
+            "caput": f"O presente Capítulo regula a atuação do órgão {organ.get('name', organ_key)} no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
             "items": [{"text": a, "source": "RO"} for a in atribs],
             "source": "RO",
             "match": None,

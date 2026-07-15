@@ -300,8 +300,9 @@ export default function MinutaWizard() {
         <div className="page-header-left">
           <h2 className="page-title">Minuta de Regimento Interno</h2>
           <p className="page-subtitle">
-            Minuta articulada da estrutura operacional do CBMRO — do topo (DPO/COT/DOE)
-            à menor fração — com competências do CBMRO e subsídios de outras legislações.
+            {cenario === 'atual'
+              ? `Minuta do Regimento Interno do CBMRO (LOB atual) — ${data?.chapters?.length ?? 0} capítulos, com as competências de cada órgão transcritas da Lei nº 2.204/2009 (estrutura vigente).`
+              : 'Minuta articulada da estrutura operacional do CBMRO — do topo (DPO/COT/DOE) à menor fração — com competências do CBMRO e subsídios de outras legislações.'}
           </p>
         </div>
       </div>

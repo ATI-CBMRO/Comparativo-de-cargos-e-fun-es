@@ -306,9 +306,9 @@ export default function RegulamentoWizard() {
         <div className="page-header-left">
           <h2 className="page-title">Minuta do Regulamento Geral</h2>
           <p className="page-subtitle">
-            Minuta articulada do Regulamento Geral do CBMRO — 15 capítulos-tema, com
-            competências, serviço operacional, disciplina e demais matérias, a partir dos
-            regulamentos de 9 Corpos de Bombeiros Militares.
+            {cenario === 'atual'
+              ? `Minuta do Regulamento do CBMRO (LOB atual) — ${data?.chapters?.length ?? 0} capítulos por órgão, ancorada na estrutura vigente (Lei nº 2.204/2009); esqueleto a enriquecer com os regulamentos de outros Corpos de Bombeiros Militares.`
+              : 'Minuta articulada do Regulamento Geral do CBMRO — 15 capítulos-tema, com competências, serviço operacional, disciplina e demais matérias, a partir dos regulamentos de 9 Corpos de Bombeiros Militares.'}
           </p>
         </div>
       </div>
