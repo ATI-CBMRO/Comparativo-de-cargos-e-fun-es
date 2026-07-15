@@ -29,6 +29,7 @@ import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
+import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
 import { useAuth } from './lib/auth.jsx'
 
 // /minuta/revisao e /minuta/deliberacao (protótipo CONDEG em localStorage) saíram do
@@ -147,6 +148,8 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
           <span>Legislação Comparada</span>
         </div>
       </button>
+
+      <ScenarioSwitcher />
 
       <nav className="sidebar-nav">
         <div className="nav-section-label">Navegação</div>
