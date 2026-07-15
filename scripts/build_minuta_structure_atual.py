@@ -53,6 +53,10 @@ ATUAL_ORGAN_ORDER = [
     ("dlog",         "DA DIRETORIA DE LOGÍSTICA (DLOG)",                               "A"),
     ("dcs",          "DA DIRETORIA DE COMUNICAÇÃO SOCIAL (DCS)",                       "A"),
     ("dinf",         "DA DIRETORIA DE INFORMÁTICA (DINF)",                             "A"),
+    ("cob1",         "DO COMANDO OPERACIONAL DE BOMBEIROS I (COB I)",                  "O"),
+    ("cob2",         "DO COMANDO OPERACIONAL DE BOMBEIROS II (COB II)",               "O"),
+    ("coa",          "DO COMANDO DE OPERAÇÕES AÉREAS (COA)",                           "O"),
+    ("gbs",          "DO GRUPAMENTO DE BUSCA E SALVAMENTO (GBS)",                      "O"),
 ]
 
 

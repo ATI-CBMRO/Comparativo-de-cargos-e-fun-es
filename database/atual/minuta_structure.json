@@ -1068,6 +1068,270 @@
         }
       ],
       "alternatives": {}
+    },
+    {
+      "id": "organ:cob1",
+      "kind": "organ",
+      "chapterTitle": "DO COMANDO OPERACIONAL DE BOMBEIROS I (COB I)",
+      "organKey": "cob1",
+      "label": "Comando Operacional de Bombeiros I",
+      "abbr": "COB I",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cob1/finalidade",
+          "proposedText": "O Comando Operacional de Bombeiros é o Órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral (Art. 35, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cob1/organizacao",
+          "caput": "COB I tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Informática",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Correição",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Planejamento Operacional e Controle de Resultados",
+              "source": "ro"
+            },
+            {
+              "text": "Agência Regional de Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "1º Grupamento de Bombeiro Militar (Porto Velho)",
+              "source": "ro"
+            },
+            {
+              "text": "2º Grupamento de Bombeiro Militar (Ji-Paraná)",
+              "source": "ro"
+            },
+            {
+              "text": "5º Grupamento de Bombeiro Militar (Ariquemes)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante\nAdjunto\nSeção de Pessoal\nSeção Administrativa\nSeção de Informática\nSeção de Correição\nSeção de Planejamento Operacional e Controle de Resultados\nAgência Regional de Inteligência\n1º Grupamento de Bombeiro Militar (Porto Velho)\n2º Grupamento de Bombeiro Militar (Ji-Paraná)\n5º Grupamento de Bombeiro Militar (Ariquemes)"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:cob2",
+      "kind": "organ",
+      "chapterTitle": "DO COMANDO OPERACIONAL DE BOMBEIROS II (COB II)",
+      "organKey": "cob2",
+      "label": "Comando Operacional de Bombeiros II",
+      "abbr": "COB II",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cob2/finalidade",
+          "proposedText": "O Comando Operacional de Bombeiros é o Órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral (Art. 35, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cob2/organizacao",
+          "caput": "COB II tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Informática",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Correição",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Planejamento Operacional e Controle de Resultados",
+              "source": "ro"
+            },
+            {
+              "text": "Agência Regional de Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "6º Grupamento de Bombeiro Militar (Rolim de Moura)",
+              "source": "ro"
+            },
+            {
+              "text": "4º Grupamento de Bombeiro Militar (Cacoal)",
+              "source": "ro"
+            },
+            {
+              "text": "3º Grupamento de Bombeiro Militar (Vilhena)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante\nAdjunto\nSeção de Pessoal\nSeção Administrativa\nSeção de Informática\nSeção de Correição\nSeção de Planejamento Operacional e Controle de Resultados\nAgência Regional de Inteligência\n6º Grupamento de Bombeiro Militar (Rolim de Moura)\n4º Grupamento de Bombeiro Militar (Cacoal)\n3º Grupamento de Bombeiro Militar (Vilhena)"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:coa",
+      "kind": "organ",
+      "chapterTitle": "DO COMANDO DE OPERAÇÕES AÉREAS (COA)",
+      "organKey": "coa",
+      "label": "Comando de Operações Aéreas de Bombeiro Militar",
+      "abbr": "COA",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:coa/finalidade",
+          "proposedText": "O Comando de Operações Aéreas de Bombeiro Militar, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral, é o órgão responsável pela coordenação e controle das atividades-fins concernentes a operações aéreas da Corporação (Art. 39, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:coa/organizacao",
+          "caput": "COA tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Informática",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Correição",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Planejamento Operacional e Controle de Resultados",
+              "source": "ro"
+            },
+            {
+              "text": "Agência Regional de Inteligência",
+              "source": "ro"
+            },
+            {
+              "text": "Grupamento de Operações Aéreas",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante\nAdjunto\nSeção de Pessoal\nSeção Administrativa\nSeção de Informática\nSeção de Correição\nSeção de Planejamento Operacional e Controle de Resultados\nAgência Regional de Inteligência\nGrupamento de Operações Aéreas"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:gbs",
+      "kind": "organ",
+      "chapterTitle": "DO GRUPAMENTO DE BUSCA E SALVAMENTO (GBS)",
+      "organKey": "gbs",
+      "label": "Grupamento de Busca e Salvamento",
+      "abbr": "GBS",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:gbs/finalidade",
+          "proposedText": "O Grupamento de Busca e Salvamento de Bombeiro Militar, subordinado diretamente ao Comando Operacional de Bombeiro Militar, é a Unidade que tem a seu cargo, dentro de uma determinada área de atuação operacional, as missões de resgate, busca e salvamento (Art. 40, red. Lei nº 4.488/2019)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:gbs/organizacao",
+          "caput": "GBS tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comando",
+              "source": "ro"
+            },
+            {
+              "text": "Estado-Maior (B1 a B6)",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comando e Serviço",
+              "source": "ro"
+            },
+            {
+              "text": "Subgrupamento",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Busca e Salvamento",
+              "source": "ro"
+            },
+            {
+              "text": "Grupos de Busca e Salvamento",
+              "source": "ro"
+            },
+            {
+              "text": "Destacamentos de Busca e Salvamento",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comando\nEstado-Maior (B1 a B6)\nSeção de Comando e Serviço\nSubgrupamento\nSeção de Busca e Salvamento\nGrupos de Busca e Salvamento\nDestacamentos de Busca e Salvamento"
+        }
+      ],
+      "alternatives": {}
     }
   ]
 }

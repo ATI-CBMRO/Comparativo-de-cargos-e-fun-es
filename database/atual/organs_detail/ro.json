@@ -427,6 +427,104 @@
         "Seção de Redes"
       ],
       "cargos": []
+    },
+    "cob1": {
+      "id": "cob1",
+      "name": "Comando Operacional de Bombeiros I",
+      "abbreviation": "COB I",
+      "category": "Órgãos de Execução",
+      "subordinadoA": "Subcomandante-Geral (operacional) e Chefe do Estado-Maior-Geral (administrativo)",
+      "legalRef": "Art. 35 (red. Lei nº 4.303/2018); divisão em Comandos I e II conforme organograma oficial",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "O Comando Operacional de Bombeiros é o Órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral (Art. 35, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Adjunto",
+        "Seção de Pessoal",
+        "Seção Administrativa",
+        "Seção de Informática",
+        "Seção de Correição",
+        "Seção de Planejamento Operacional e Controle de Resultados",
+        "Agência Regional de Inteligência",
+        "1º Grupamento de Bombeiro Militar (Porto Velho)",
+        "2º Grupamento de Bombeiro Militar (Ji-Paraná)",
+        "5º Grupamento de Bombeiro Militar (Ariquemes)"
+      ],
+      "cargos": []
+    },
+    "cob2": {
+      "id": "cob2",
+      "name": "Comando Operacional de Bombeiros II",
+      "abbreviation": "COB II",
+      "category": "Órgãos de Execução",
+      "subordinadoA": "Subcomandante-Geral (operacional) e Chefe do Estado-Maior-Geral (administrativo)",
+      "legalRef": "Art. 35 (red. Lei nº 4.303/2018); divisão em Comandos I e II conforme organograma oficial",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "O Comando Operacional de Bombeiros é o Órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral (Art. 35, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Adjunto",
+        "Seção de Pessoal",
+        "Seção Administrativa",
+        "Seção de Informática",
+        "Seção de Correição",
+        "Seção de Planejamento Operacional e Controle de Resultados",
+        "Agência Regional de Inteligência",
+        "6º Grupamento de Bombeiro Militar (Rolim de Moura)",
+        "4º Grupamento de Bombeiro Militar (Cacoal)",
+        "3º Grupamento de Bombeiro Militar (Vilhena)"
+      ],
+      "cargos": []
+    },
+    "coa": {
+      "id": "coa",
+      "name": "Comando de Operações Aéreas de Bombeiro Militar",
+      "abbreviation": "COA",
+      "category": "Órgãos de Execução",
+      "subordinadoA": "Subcomandante-Geral (operacional) e Chefe do Estado-Maior-Geral (administrativo)",
+      "legalRef": "Art. 39 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "O Comando de Operações Aéreas de Bombeiro Militar, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral, é o órgão responsável pela coordenação e controle das atividades-fins concernentes a operações aéreas da Corporação (Art. 39, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Comandante",
+        "Adjunto",
+        "Seção de Pessoal",
+        "Seção Administrativa",
+        "Seção de Informática",
+        "Seção de Correição",
+        "Seção de Planejamento Operacional e Controle de Resultados",
+        "Agência Regional de Inteligência",
+        "Grupamento de Operações Aéreas"
+      ],
+      "cargos": []
+    },
+    "gbs": {
+      "id": "gbs",
+      "name": "Grupamento de Busca e Salvamento",
+      "abbreviation": "GBS",
+      "category": "Órgãos de Execução",
+      "subordinadoA": "Comando Operacional de Bombeiro Militar",
+      "legalRef": "Art. 40 (red. Lei nº 4.488/2019)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.488/2019)",
+      "atribuicoes": [
+        "O Grupamento de Busca e Salvamento de Bombeiro Militar, subordinado diretamente ao Comando Operacional de Bombeiro Militar, é a Unidade que tem a seu cargo, dentro de uma determinada área de atuação operacional, as missões de resgate, busca e salvamento (Art. 40, red. Lei nº 4.488/2019)"
+      ],
+      "desdobramentos": [
+        "Comando",
+        "Estado-Maior (B1 a B6)",
+        "Seção de Comando e Serviço",
+        "Subgrupamento",
+        "Seção de Busca e Salvamento",
+        "Grupos de Busca e Salvamento",
+        "Destacamentos de Busca e Salvamento"
+      ],
+      "cargos": []
     }
   }
 }
