@@ -3062,3 +3062,9 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .scenario-futura .scenario-tab.is-active { background: #c8102e; }
 .scenario-futura .scenario-tab.is-active strong,
 .scenario-futura .scenario-tab.is-active span { color: #fff; }
+
+/* Placeholder "Em construção" (trilhas no cenário LOB atual) */
+.em-construcao { max-width: 640px; margin: 48px auto; padding: 0 24px; text-align: center; }
+.em-construcao h1 { color: var(--navy-700, #2a3a55); margin-bottom: 12px; }
+.em-construcao p { color: var(--navy-600, #45526e); line-height: 1.6; }
+.em-construcao-dica { margin-top: 16px; font-size: 14px; color: var(--navy-500, #6b7793); }
