@@ -722,6 +722,352 @@
         }
       ],
       "alternatives": {}
+    },
+    {
+      "id": "organ:dp",
+      "kind": "organ",
+      "chapterTitle": "DA COORDENADORIA DE PESSOAL (CP)",
+      "organKey": "dp",
+      "label": "Coordenadoria de Pessoal",
+      "abbr": "CP",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dp/finalidade",
+          "proposedText": "A Coordenadoria de Pessoal, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pelo planejamento, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, administração e gestão de pessoal civil e militar do CBMRO (Art. 14, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dp/organizacao",
+          "caput": "CP tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Coordenador",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Diretoria de Gestão de Pessoas",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal Ativo",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal Inativos e Pensionistas",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Legislação, Controle e Análise de Processos",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Promoção e Condecoração",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Movimentação e Pagamento",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Pessoal Civil",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nDiretoria de Gestão de Pessoas\nSeção de Pessoal Ativo\nSeção de Pessoal Inativos e Pensionistas\nCentro de Legislação, Controle e Análise de Processos\nSeção de Promoção e Condecoração\nSeção de Movimentação e Pagamento\nSeção de Pessoal Civil"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:deei",
+      "kind": "organ",
+      "chapterTitle": "DA COORDENADORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (CEEI)",
+      "organKey": "deei",
+      "label": "Coordenadoria de Educação, Ensino e Instrução",
+      "abbr": "CEEI",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:deei/finalidade",
+          "proposedText": "A Coordenadoria de Educação, Ensino e Instrução, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável por todas as atividades de ensino, com competência para planejar, coordenar e fiscalizar o ensino em todas suas modalidades, a instrução e o treinamento operacional relativo às atividades do Corpo de Bombeiros Militar (Art. 15, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:deei/competencia",
+          "caput": "Compete à CEEI:",
+          "items": [
+            {
+              "text": "Visa à formação profissional, graduação, pós-graduação, aperfeiçoamento, habilitação, especialização, capacitação e ao treinamento operacional do CBMRO e promover a educação preventiva voltada à população em geral, objetivando à prevenção de incêndio e acidentes, da segurança e da saúde pública (Art. 15, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Visa à formação profissional, graduação, pós-graduação, aperfeiçoamento, habilitação, especialização, capacitação e ao treinamento operacional do CBMRO e promover a educação preventiva voltada à população em geral, objetivando à prevenção de incêndio e acidentes, da segurança e da saúde pública (Art. 15, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:deei/organizacao",
+          "caput": "CEEI tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Coordenador",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Diretoria de Educação",
+              "source": "ro"
+            },
+            {
+              "text": "Diretoria de Ensino e Instrução",
+              "source": "ro"
+            },
+            {
+              "text": "Diretoria de Projetos e Pesquisa",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nDiretoria de Educação\nDiretoria de Ensino e Instrução\nDiretoria de Projetos e Pesquisa"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:cat",
+      "kind": "organ",
+      "chapterTitle": "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",
+      "organKey": "cat",
+      "label": "Coordenadoria de Atividades Técnicas",
+      "abbr": "CAT",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cat/finalidade",
+          "proposedText": "A Coordenadoria de Atividades Técnicas é o órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco no Estado de Rondônia, competindo-lhe o planejamento, a normatização, fiscalização, análise de projetos de edificações, vistoria e emissão de pareceres (Art. 18, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cat/organizacao",
+          "caput": "CAT tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Coordenador",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Estudos Técnicos",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Planejamento, Fiscalização e Suporte Técnico",
+              "source": "ro"
+            },
+            {
+              "text": "Diretorias de Atividades Técnicas",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Coordenador\nAdjunto\nSeção Administrativa\nSeção de Estudos Técnicos\nSeção de Planejamento, Fiscalização e Suporte Técnico\nDiretorias de Atividades Técnicas"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:dlog",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE LOGÍSTICA (DLOG)",
+      "organKey": "dlog",
+      "label": "Diretoria de Logística",
+      "abbr": "DLOG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dlog/finalidade",
+          "proposedText": "A Diretoria de Logística, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pela gestão logística da Corporação, competindo-lhe o estudo, fiscalização, inspeção, planejamento, orientação normativa, coordenação, supervisão de convênios, controle e execução das atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação (Art. 21, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dlog/organizacao",
+          "caput": "DLOG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Controle de Material e Patrimônio",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Suprimento e Material",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Manutenção",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCentro de Controle de Material e Patrimônio\nCentro de Suprimento e Material\nCentro de Manutenção"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:dcs",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE COMUNICAÇÃO SOCIAL (DCS)",
+      "organKey": "dcs",
+      "label": "Diretoria de Comunicação Social",
+      "abbr": "DCS",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dcs/finalidade",
+          "proposedText": "A Diretoria de Comunicação Social, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de comunicação social (Art. 22, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dcs/organizacao",
+          "caput": "DCS tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Imprensa",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Relações Públicas",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Comunicação Institucional",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nSeção de Imprensa\nSeção de Relações Públicas\nSeção de Comunicação Institucional"
+        }
+      ],
+      "alternatives": {}
+    },
+    {
+      "id": "organ:dinf",
+      "kind": "organ",
+      "chapterTitle": "DA DIRETORIA DE INFORMÁTICA (DINF)",
+      "organKey": "dinf",
+      "label": "Diretoria de Informática",
+      "abbr": "DINF",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:dinf/finalidade",
+          "proposedText": "A Diretoria de Informática é o órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de tecnologia da informação da Corporação (Art. 23, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:dinf/organizacao",
+          "caput": "DINF tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Diretor",
+              "source": "ro"
+            },
+            {
+              "text": "Adjunto",
+              "source": "ro"
+            },
+            {
+              "text": "Seção Administrativa",
+              "source": "ro"
+            },
+            {
+              "text": "Centro de Capacitação",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Projetos e Desenvolvimento",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Suporte",
+              "source": "ro"
+            },
+            {
+              "text": "Seção de Redes",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Diretor\nAdjunto\nSeção Administrativa\nCentro de Capacitação\nSeção de Projetos e Desenvolvimento\nSeção de Suporte\nSeção de Redes"
+        }
+      ],
+      "alternatives": {}
     }
   ]
 }

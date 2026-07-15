@@ -295,6 +295,138 @@
         "Membros"
       ],
       "cargos": []
+    },
+    "dp": {
+      "id": "dp",
+      "name": "Coordenadoria de Pessoal",
+      "abbreviation": "CP",
+      "category": "Órgãos de Apoio",
+      "subordinadoA": "Chefe do Estado-Maior-Geral",
+      "legalRef": "Art. 14 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Coordenadoria de Pessoal, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pelo planejamento, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, administração e gestão de pessoal civil e militar do CBMRO (Art. 14, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Diretoria de Gestão de Pessoas",
+        "Seção de Pessoal Ativo",
+        "Seção de Pessoal Inativos e Pensionistas",
+        "Centro de Legislação, Controle e Análise de Processos",
+        "Seção de Promoção e Condecoração",
+        "Seção de Movimentação e Pagamento",
+        "Seção de Pessoal Civil"
+      ],
+      "cargos": []
+    },
+    "deei": {
+      "id": "deei",
+      "name": "Coordenadoria de Educação, Ensino e Instrução",
+      "abbreviation": "CEEI",
+      "category": "Órgãos de Apoio",
+      "subordinadoA": "Chefe do Estado-Maior-Geral",
+      "legalRef": "Art. 15 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Coordenadoria de Educação, Ensino e Instrução, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável por todas as atividades de ensino, com competência para planejar, coordenar e fiscalizar o ensino em todas suas modalidades, a instrução e o treinamento operacional relativo às atividades do Corpo de Bombeiros Militar (Art. 15, red. Lei nº 4.303/2018)",
+        "Visa à formação profissional, graduação, pós-graduação, aperfeiçoamento, habilitação, especialização, capacitação e ao treinamento operacional do CBMRO e promover a educação preventiva voltada à população em geral, objetivando à prevenção de incêndio e acidentes, da segurança e da saúde pública (Art. 15, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Diretoria de Educação",
+        "Diretoria de Ensino e Instrução",
+        "Diretoria de Projetos e Pesquisa"
+      ],
+      "cargos": []
+    },
+    "cat": {
+      "id": "cat",
+      "name": "Coordenadoria de Atividades Técnicas",
+      "abbreviation": "CAT",
+      "category": "Órgãos de Apoio",
+      "subordinadoA": "Chefe do Estado-Maior-Geral",
+      "legalRef": "Art. 18 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Coordenadoria de Atividades Técnicas é o órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco no Estado de Rondônia, competindo-lhe o planejamento, a normatização, fiscalização, análise de projetos de edificações, vistoria e emissão de pareceres (Art. 18, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Coordenador",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Estudos Técnicos",
+        "Seção de Planejamento, Fiscalização e Suporte Técnico",
+        "Diretorias de Atividades Técnicas"
+      ],
+      "cargos": []
+    },
+    "dlog": {
+      "id": "dlog",
+      "name": "Diretoria de Logística",
+      "abbreviation": "DLOG",
+      "category": "Órgãos de Apoio",
+      "subordinadoA": "Chefe do Estado-Maior-Geral",
+      "legalRef": "Art. 21 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Diretoria de Logística, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pela gestão logística da Corporação, competindo-lhe o estudo, fiscalização, inspeção, planejamento, orientação normativa, coordenação, supervisão de convênios, controle e execução das atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação (Art. 21, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Centro de Controle de Material e Patrimônio",
+        "Centro de Suprimento e Material",
+        "Centro de Manutenção"
+      ],
+      "cargos": []
+    },
+    "dcs": {
+      "id": "dcs",
+      "name": "Diretoria de Comunicação Social",
+      "abbreviation": "DCS",
+      "category": "Órgãos de Apoio",
+      "subordinadoA": "Chefe do Estado-Maior-Geral",
+      "legalRef": "Art. 22 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Diretoria de Comunicação Social, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de comunicação social (Art. 22, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Seção de Imprensa",
+        "Seção de Relações Públicas",
+        "Seção de Comunicação Institucional"
+      ],
+      "cargos": []
+    },
+    "dinf": {
+      "id": "dinf",
+      "name": "Diretoria de Informática",
+      "abbreviation": "DINF",
+      "category": "Órgãos de Apoio",
+      "subordinadoA": "Chefe do Estado-Maior-Geral",
+      "legalRef": "Art. 23 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "atribuicoes": [
+        "A Diretoria de Informática é o órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de tecnologia da informação da Corporação (Art. 23, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Diretor",
+        "Adjunto",
+        "Seção Administrativa",
+        "Centro de Capacitação",
+        "Seção de Projetos e Desenvolvimento",
+        "Seção de Suporte",
+        "Seção de Redes"
+      ],
+      "cargos": []
     }
   }
 }

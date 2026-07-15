@@ -47,6 +47,12 @@ ATUAL_ORGAN_ORDER = [
     ("corregedoria", "DA CORREGEDORIA-GERAL",                                           "A"),
     ("ajudancia",    "DA AJUDÂNCIA-GERAL",                                              "A"),
     ("emg",          "DO ESTADO-MAIOR-GERAL (EMG)",                                     "O"),
+    ("dp",           "DA COORDENADORIA DE PESSOAL (CP)",                               "A"),
+    ("deei",         "DA COORDENADORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (CEEI)",         "A"),
+    ("cat",          "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",                  "A"),
+    ("dlog",         "DA DIRETORIA DE LOGÍSTICA (DLOG)",                               "A"),
+    ("dcs",          "DA DIRETORIA DE COMUNICAÇÃO SOCIAL (DCS)",                       "A"),
+    ("dinf",         "DA DIRETORIA DE INFORMÁTICA (DINF)",                             "A"),
 ]
 
 
