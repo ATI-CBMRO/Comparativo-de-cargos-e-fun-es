@@ -4,6 +4,8 @@ import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
+import { useScenario } from '../context/ScenarioContext.jsx'
+import { scenarioDbUrl } from '../lib/scenario.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -78,12 +80,16 @@ export default function RegulamentoWizard() {
   const [excluded, setExcluded] = useState(new Set()) // "editId#index" removidos
   const [generating, setGenerating] = useState(false)
 
+  const { cenario } = useScenario()
+
   useEffect(() => {
-    fetchJson('/database/regulamento_structure.json')
+    setLoading(true)
+    setError(null)
+    fetchJson(scenarioDbUrl(cenario, 'regulamento_structure.json'))
       .then(setData)
       .catch(() => setError('Erro ao carregar regulamento_structure.json. Execute o script que gera a minuta do Regulamento Geral.'))
       .finally(() => setLoading(false))
-  }, [])
+  }, [cenario])
 
   const leafIndex = useMemo(() => (data ? indexLeaves(data) : {}), [data])
   const sourceMap = useMemo(() => (data ? indexSources(data) : {}), [data])

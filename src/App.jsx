@@ -286,7 +286,7 @@ export default function App() {
           <Route path="/minuta/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute></TrilhaRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
           <Route path="/regulamento/subsidio" element={<TrilhaRoute><RegSubsidio /></TrilhaRoute>} />
-          <Route path="/regulamento" element={<TrilhaRoute><RegulamentoWizard /></TrilhaRoute>} />
+          <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/diagramas" element={<TrilhaRoute><RegDiagramas /></TrilhaRoute>} />
           <Route path="/regulamento/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute></TrilhaRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
