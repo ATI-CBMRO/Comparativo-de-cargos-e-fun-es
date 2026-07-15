@@ -3,6 +3,8 @@ import { Printer, X, Network, LayoutGrid, ChevronsDownUp, ChevronsUpDown } from 
 import MinutaOrgChart from '../components/MinutaOrgChart.jsx'
 import MinutaMindMap from '../components/MinutaMindMap.jsx'
 import { fetchJson } from '../lib/dataCache.js'
+import { useScenario } from '../context/ScenarioContext.jsx'
+import { scenarioDbUrl } from '../lib/scenario.js'
 
 // Badge de fonte (RO não recebe badge); espelha o padrão do MinutaWizard.
 // whiteSpace:nowrap + inline-block mantêm a citação inteira numa linha só
@@ -86,12 +88,16 @@ export default function MinutaDiagrams() {
     }
   }
 
+  const { cenario } = useScenario()
+
   useEffect(() => {
-    fetchJson('/database/minuta_structure.json')
+    setLoading(true)
+    setError(null)
+    fetchJson(scenarioDbUrl(cenario, 'minuta_structure.json'))
       .then(setData)
       .catch(() => setError('Erro ao carregar minuta_structure.json. Execute build_minuta_structure.py.'))
       .finally(() => setLoading(false))
-  }, [])
+  }, [cenario])
 
   const header = (
     <div className="page-header">

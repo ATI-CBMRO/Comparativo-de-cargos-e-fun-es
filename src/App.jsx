@@ -282,7 +282,7 @@ export default function App() {
           {/* Trilha Regimento Interno (pipeline padrão) */}
           <Route path="/minuta/subsidio" element={<TrilhaRoute><RISubsidio /></TrilhaRoute>} />
           <Route path="/minuta" element={<MinutaWizard />} />
-          <Route path="/minuta/diagramas" element={<TrilhaRoute><MinutaDiagrams /></TrilhaRoute>} />
+          <Route path="/minuta/diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute></TrilhaRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
           <Route path="/regulamento/subsidio" element={<TrilhaRoute><RegSubsidio /></TrilhaRoute>} />
@@ -291,7 +291,7 @@ export default function App() {
           <Route path="/regulamento/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute></TrilhaRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
-          <Route path="/minuta-diagramas" element={<TrilhaRoute><MinutaDiagrams /></TrilhaRoute>} />
+          <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/deliberacao" element={<TrilhaRoute><MinutaDeliberacao /></TrilhaRoute>} />
           <Route path="/minuta/comparar" element={<TrilhaRoute><MinutaRIComparator /></TrilhaRoute>} />
           <Route path="/minuta/comparativo-ri" element={<TrilhaRoute><RIComparator /></TrilhaRoute>} />

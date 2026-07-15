@@ -1333,5 +1333,155 @@
       ],
       "alternatives": {}
     }
-  ]
+  ],
+  "commandChart": {
+    "organKey": "cg",
+    "sigla": "CG",
+    "label": "Comando-Geral",
+    "chapterId": "organ:cg",
+    "children": [
+      {
+        "organKey": "cepdec",
+        "sigla": "CEPDEC",
+        "label": "Coordenadoria Estadual de Proteção e Defesa Civil",
+        "chapterId": "organ:cepdec",
+        "children": []
+      },
+      {
+        "organKey": "condeg",
+        "sigla": "CONDEG",
+        "label": "Conselho Deliberativo de Estratégia e Gestão",
+        "chapterId": "organ:condeg",
+        "children": []
+      },
+      {
+        "organKey": "gabinete",
+        "sigla": "Gab-CG",
+        "label": "Gabinete do Comandante-Geral",
+        "chapterId": "organ:gabinete",
+        "children": []
+      },
+      {
+        "organKey": "assessorias",
+        "sigla": "Assess",
+        "label": "Assessorias",
+        "chapterId": "organ:assessorias",
+        "children": []
+      },
+      {
+        "organKey": "dint",
+        "sigla": "DINT",
+        "label": "Diretoria de Inteligência",
+        "chapterId": "organ:dint",
+        "children": []
+      },
+      {
+        "organKey": "cpof",
+        "sigla": "CPOF",
+        "label": "Coordenadoria de Planejamento, Orçamento e Finanças",
+        "chapterId": "organ:cpof",
+        "children": []
+      },
+      {
+        "organKey": "comissoes",
+        "sigla": "Comiss",
+        "label": "Comissões",
+        "chapterId": "organ:comissoes",
+        "children": []
+      },
+      {
+        "organKey": "corregedoria",
+        "sigla": "CG-Corr",
+        "label": "Corregedoria-Geral",
+        "chapterId": "organ:corregedoria",
+        "children": []
+      },
+      {
+        "organKey": "ajudancia",
+        "sigla": "Aj-Geral",
+        "label": "Ajudância-Geral",
+        "chapterId": "organ:ajudancia",
+        "children": []
+      },
+      {
+        "organKey": "emg",
+        "sigla": "EMG",
+        "label": "Estado-Maior-Geral",
+        "chapterId": "organ:emg",
+        "children": [
+          {
+            "organKey": "dp",
+            "sigla": "CP",
+            "label": "Coordenadoria de Pessoal",
+            "chapterId": "organ:dp",
+            "children": []
+          },
+          {
+            "organKey": "deei",
+            "sigla": "CEEI",
+            "label": "Coordenadoria de Educação, Ensino e Instrução",
+            "chapterId": "organ:deei",
+            "children": []
+          },
+          {
+            "organKey": "cat",
+            "sigla": "CAT",
+            "label": "Coordenadoria de Atividades Técnicas",
+            "chapterId": "organ:cat",
+            "children": []
+          },
+          {
+            "organKey": "dlog",
+            "sigla": "DLOG",
+            "label": "Diretoria de Logística",
+            "chapterId": "organ:dlog",
+            "children": []
+          },
+          {
+            "organKey": "dcs",
+            "sigla": "DCS",
+            "label": "Diretoria de Comunicação Social",
+            "chapterId": "organ:dcs",
+            "children": []
+          },
+          {
+            "organKey": "dinf",
+            "sigla": "DINF",
+            "label": "Diretoria de Informática",
+            "chapterId": "organ:dinf",
+            "children": []
+          }
+        ]
+      },
+      {
+        "organKey": "cob1",
+        "sigla": "COB I",
+        "label": "Comando Operacional de Bombeiros I",
+        "chapterId": "organ:cob1",
+        "children": [
+          {
+            "organKey": "gbs",
+            "sigla": "GBS",
+            "label": "Grupamento de Busca e Salvamento",
+            "chapterId": "organ:gbs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "organKey": "cob2",
+        "sigla": "COB II",
+        "label": "Comando Operacional de Bombeiros II",
+        "chapterId": "organ:cob2",
+        "children": []
+      },
+      {
+        "organKey": "coa",
+        "sigla": "COA",
+        "label": "Comando de Operações Aéreas de Bombeiro Militar",
+        "chapterId": "organ:coa",
+        "children": []
+      }
+    ]
+  }
 }

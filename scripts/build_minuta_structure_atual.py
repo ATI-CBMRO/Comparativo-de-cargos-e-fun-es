@@ -123,6 +123,42 @@ def build_organ_chapter_atual(organ_key, chapter_title, organ):
     }
 
 
+# Cadeia de comando do cenário atual: pai de cada órgão conforme a estrutura vigente
+# validada (organograma oficial). `cg` (Comando-Geral) é a raiz. Comandante-Geral e
+# Subcomandante-Geral são cargos internos de `cg`, por isso os órgãos que lhes respondem
+# pendem de `cg`; os do Estado-Maior pendem de `emg`; o GBS pende do Comando Operacional.
+COMMAND_PARENT = {
+    "cepdec": "cg", "condeg": "cg", "comissoes": "cg", "gabinete": "cg",
+    "assessorias": "cg", "dint": "cg", "cpof": "cg",
+    "corregedoria": "cg", "ajudancia": "cg", "emg": "cg",
+    "dp": "emg", "deei": "emg", "cat": "emg", "dlog": "emg", "dcs": "emg", "dinf": "emg",
+    "cob1": "cg", "cob2": "cg", "coa": "cg", "gbs": "cob1",
+}
+
+
+def build_command_chart_atual(chapters):
+    """Árvore da cadeia de comando (mesmo formato de build_command_chart da futura:
+    nós {organKey, sigla, label, chapterId, children}), montada pelo COMMAND_PARENT
+    da estrutura vigente. Retorna o nó raiz `cg`."""
+    nodes = {}
+    for c in chapters:
+        if c.get("kind") != "organ":
+            continue
+        k = c["organKey"]
+        nodes[k] = {
+            "organKey": k,
+            "sigla": c.get("abbr") or "",
+            "label": c.get("label") or "",
+            "chapterId": c["id"],
+            "children": [],
+        }
+    for k, node in nodes.items():
+        parent = COMMAND_PARENT.get(k)
+        if parent and parent in nodes:
+            nodes[parent]["children"].append(node)
+    return nodes.get("cg")
+
+
 def main():
     organs = json.loads(RO_JSON.read_text(encoding="utf-8")).get("organs", {})
 
@@ -139,6 +175,7 @@ def main():
         "cenario": "atual",
         "title": TITLE,
         "chapters": chapters,
+        "commandChart": build_command_chart_atual(chapters),
     }
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
