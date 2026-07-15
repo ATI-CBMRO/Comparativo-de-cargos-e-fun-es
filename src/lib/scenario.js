@@ -12,3 +12,12 @@ export function resolveScenario(urlValue, storedValue) {
   if (SCENARIOS.includes(urlValue)) return urlValue
   return normalizeScenario(storedValue)
 }
+
+// Caminho do arquivo de dados por cenário. A LOB futura permanece na raiz de
+// /database (arquivos de hoje, intocados); a LOB atual vive em /database/atual/.
+// `file` é o nome do arquivo específico de cenário (ex.: 'minuta_structure.json').
+export function scenarioDbUrl(cenario, file) {
+  return normalizeScenario(cenario) === 'atual'
+    ? `/database/atual/${file}`
+    : `/database/${file}`
+}

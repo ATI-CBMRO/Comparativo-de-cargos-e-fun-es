@@ -3,6 +3,8 @@ import { ChevronRight, Download, ArrowLeft, Pencil, Check, RotateCcw } from 'luc
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { fetchJson } from '../lib/dataCache.js'
+import { useScenario } from '../context/ScenarioContext.jsx'
+import { scenarioDbUrl } from '../lib/scenario.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -84,12 +86,16 @@ export default function MinutaWizard() {
   const [excluded, setExcluded] = useState(new Set()) // "editId#index" removidos
   const [generating, setGenerating] = useState(false)
 
+  const { cenario } = useScenario()
+
   useEffect(() => {
-    fetchJson('/database/minuta_structure.json')
+    setLoading(true)
+    setError(null)
+    fetchJson(scenarioDbUrl(cenario, 'minuta_structure.json'))
       .then(setData)
       .catch(() => setError('Erro ao carregar minuta_structure.json. Execute build_minuta_structure.py.'))
       .finally(() => setLoading(false))
-  }, [])
+  }, [cenario])
 
   const leafIndex = useMemo(() => (data ? indexLeaves(data) : {}), [data])
   const sourceMap = useMemo(() => (data ? indexSources(data) : {}), [data])

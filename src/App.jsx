@@ -281,7 +281,7 @@ export default function App() {
           <Route path="/busca" element={<SearchPage />} />
           {/* Trilha Regimento Interno (pipeline padrão) */}
           <Route path="/minuta/subsidio" element={<TrilhaRoute><RISubsidio /></TrilhaRoute>} />
-          <Route path="/minuta" element={<TrilhaRoute><MinutaWizard /></TrilhaRoute>} />
+          <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta/diagramas" element={<TrilhaRoute><MinutaDiagrams /></TrilhaRoute>} />
           <Route path="/minuta/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute></TrilhaRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}

@@ -1,0 +1,137 @@
+{
+  "generated_by": "scripts/build_minuta_structure_atual.py",
+  "cenario": "atual",
+  "title": "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO) — LOB ATUAL",
+  "chapters": [
+    {
+      "id": "organ:cg",
+      "kind": "organ",
+      "chapterTitle": "DO COMANDO-GERAL (CG)",
+      "organKey": "cg",
+      "label": "Comando-Geral",
+      "abbr": "CG",
+      "sections": [
+        {
+          "id": "finalidade",
+          "kind": "prose",
+          "sectionTitle": "Da Finalidade",
+          "editId": "organ:cg/finalidade",
+          "proposedText": "O Comando Geral, órgão máximo executivo do CBMRO, incumbido da administração da instituição (Art. 10)"
+        },
+        {
+          "id": "competencia",
+          "kind": "incisos",
+          "sectionTitle": "Da Competência",
+          "editId": "organ:cg/competencia",
+          "caput": "Compete à CG:",
+          "items": [
+            {
+              "text": "Os Órgãos de Direção constituem o Comando-Geral e são destinados a efetuar a direção-geral, o planejamento estratégico e a administração superior da Instituição (Art. 8º, §1º, I, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            },
+            {
+              "text": "Exercer as funções de corregedoria-geral, mediante regulamentação de procedimentos internos e fiscalização da atuação dos membros da Instituição, para correção de suas condutas (Art. 8º, §1º, II, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            },
+            {
+              "text": "Realizar a administração das atividades de recursos humanos, ensino, logística e gestão orçamentária e financeira, entre outras (Art. 8º, §1º, III, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Os Órgãos de Direção constituem o Comando-Geral e são destinados a efetuar a direção-geral, o planejamento estratégico e a administração superior da Instituição (Art. 8º, §1º, I, red. Lei nº 4.303/2018)\nExercer as funções de corregedoria-geral, mediante regulamentação de procedimentos internos e fiscalização da atuação dos membros da Instituição, para correção de suas condutas (Art. 8º, §1º, II, red. Lei nº 4.303/2018)\nRealizar a administração das atividades de recursos humanos, ensino, logística e gestão orçamentária e financeira, entre outras (Art. 8º, §1º, III, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "organizacao",
+          "kind": "incisos",
+          "sectionTitle": "Da Organização Interna",
+          "editId": "organ:cg/organizacao",
+          "caput": "CG tem a seguinte estrutura interna:",
+          "items": [
+            {
+              "text": "Comandante-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Subcomandante-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Estado-Maior-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Corregedoria-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Gabinete do Comando",
+              "source": "ro"
+            },
+            {
+              "text": "Ajudância-Geral",
+              "source": "ro"
+            },
+            {
+              "text": "Comissões",
+              "source": "ro"
+            },
+            {
+              "text": "Conselhos",
+              "source": "ro"
+            },
+            {
+              "text": "Assessorias",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Comandante-Geral\nSubcomandante-Geral\nEstado-Maior-Geral\nCorregedoria-Geral\nGabinete do Comando\nAjudância-Geral\nComissões\nConselhos\nAssessorias"
+        },
+        {
+          "id": "cargo:comandante-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Comandante-Geral",
+          "editId": "organ:cg/cargo:comandante-geral",
+          "caput": "Ao Comandante-Geral compete:",
+          "items": [
+            {
+              "text": "Responsável superior pelo comando e administração geral, emprego e atuação do Corpo de Bombeiros Militar do Estado de Rondônia, e seu representante legal (Art. 11, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            },
+            {
+              "text": "Recaindo a escolha em oficial mais moderno do último posto do quadro de combatentes, este terá precedência hierárquica e funcional sobre todos os demais oficiais da instituição (Art. 11, §1º)",
+              "source": "ro"
+            },
+            {
+              "text": "O Comandante-Geral do CBM terá direitos e prerrogativas de Secretário de Estado (Art. 11, §7º, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Responsável superior pelo comando e administração geral, emprego e atuação do Corpo de Bombeiros Militar do Estado de Rondônia, e seu representante legal (Art. 11, red. Lei nº 4.303/2018)\nRecaindo a escolha em oficial mais moderno do último posto do quadro de combatentes, este terá precedência hierárquica e funcional sobre todos os demais oficiais da instituição (Art. 11, §1º)\nO Comandante-Geral do CBM terá direitos e prerrogativas de Secretário de Estado (Art. 11, §7º, red. Lei nº 4.303/2018)"
+        },
+        {
+          "id": "cargo:subcomandante-geral",
+          "kind": "incisos",
+          "sectionTitle": "Das Atribuições do Subcomandante-Geral",
+          "editId": "organ:cg/cargo:subcomandante-geral",
+          "caput": "Ao Subcomandante-Geral compete:",
+          "items": [
+            {
+              "text": "Substituto eventual do Comandante-Geral, em seus afastamentos e impedimentos (Art. 12, §2º, red. Lei nº 3.413/2014)",
+              "source": "ro"
+            },
+            {
+              "text": "Compete-lhe a coordenação, controle e fiscalização das atividades operacionais dos órgãos de execução, de apoio operacional e controle da disciplina da Instituição (Art. 12, §3º, red. Lei nº 3.413/2014)",
+              "source": "ro"
+            },
+            {
+              "text": "Quando a escolha não recair no Oficial mais antigo, o escolhido terá precedência funcional sobre os demais oficiais, exceto o Comandante-Geral (Art. 12, §1º, red. Lei nº 4.303/2018)",
+              "source": "ro"
+            }
+          ],
+          "proposedText": "Substituto eventual do Comandante-Geral, em seus afastamentos e impedimentos (Art. 12, §2º, red. Lei nº 3.413/2014)\nCompete-lhe a coordenação, controle e fiscalização das atividades operacionais dos órgãos de execução, de apoio operacional e controle da disciplina da Instituição (Art. 12, §3º, red. Lei nº 3.413/2014)\nQuando a escolha não recair no Oficial mais antigo, o escolhido terá precedência funcional sobre os demais oficiais, exceto o Comandante-Geral (Art. 12, §1º, red. Lei nº 4.303/2018)"
+        }
+      ],
+      "alternatives": {}
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "state_id": "ro",
+  "state_name": "Rondônia",
+  "cbm_name": "Corpo de Bombeiros Militar do Estado de Rondônia",
+  "cbm_abbreviation": "CBMRO",
+  "cenario": "atual",
+  "legal_source": "Lei nº 2.204, de 18/12/2009 — Lei Orgânica do CBMRO (consolidada, red. até Lei nº 5.697, de 18/12/2023)",
+  "nota_curadoria": "Cenário LOB ATUAL (vigente). Estrutura validada pelo organograma oficial do CBMRO em 2026-07-15 (docs/curadoria/lob-atual-ro/). Fase 2A: Comando-Geral curado verbatim; demais órgãos entram na Fase 2B.",
+  "organs": {
+    "cg": {
+      "id": "cg",
+      "name": "Comando-Geral",
+      "abbreviation": "CG",
+      "category": "Órgãos de Direção",
+      "subordinadoA": "Governador do Estado (por meio da SESDEC)",
+      "legalRef": "Arts. 8º-10 (red. Lei nº 4.303/2018)",
+      "baseLegal": "Lei nº 2.204/2009 (red. Lei nº 4.303/2018)",
+      "artigosDeOrigem": [
+        "Art. 8º (níveis administrativos, red. Lei 4.303/2018)",
+        "Art. 9º (Órgãos de Direção, red. Lei 4.303/2018)",
+        "Art. 10 (composição do Comando-Geral, red. Lei 4.303/2018)",
+        "Art. 11 (Comandante-Geral, red. Lei 4.303/2018)",
+        "Art. 12 (Subcomandante-Geral, red. Lei 3.413/2014)"
+      ],
+      "atribuicoes": [
+        "O Comando Geral, órgão máximo executivo do CBMRO, incumbido da administração da instituição (Art. 10)",
+        "Os Órgãos de Direção constituem o Comando-Geral e são destinados a efetuar a direção-geral, o planejamento estratégico e a administração superior da Instituição (Art. 8º, §1º, I, red. Lei nº 4.303/2018)",
+        "Exercer as funções de corregedoria-geral, mediante regulamentação de procedimentos internos e fiscalização da atuação dos membros da Instituição, para correção de suas condutas (Art. 8º, §1º, II, red. Lei nº 4.303/2018)",
+        "Realizar a administração das atividades de recursos humanos, ensino, logística e gestão orçamentária e financeira, entre outras (Art. 8º, §1º, III, red. Lei nº 4.303/2018)"
+      ],
+      "desdobramentos": [
+        "Comandante-Geral",
+        "Subcomandante-Geral",
+        "Estado-Maior-Geral",
+        "Corregedoria-Geral",
+        "Gabinete do Comando",
+        "Ajudância-Geral",
+        "Comissões",
+        "Conselhos",
+        "Assessorias"
+      ],
+      "cargos": [
+        {
+          "cargo": "Comandante-Geral",
+          "subordinadoA": "Governador do Estado",
+          "requisito": "Oficial da ativa, do último posto, pertencente exclusivamente ao Quadro de Oficiais Combatentes do Estado de Rondônia, nomeado pelo Governador do Estado (Art. 11, red. Lei nº 4.303/2018)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Responsável superior pelo comando e administração geral, emprego e atuação do Corpo de Bombeiros Militar do Estado de Rondônia, e seu representante legal (Art. 11, red. Lei nº 4.303/2018)",
+            "Recaindo a escolha em oficial mais moderno do último posto do quadro de combatentes, este terá precedência hierárquica e funcional sobre todos os demais oficiais da instituição (Art. 11, §1º)",
+            "O Comandante-Geral do CBM terá direitos e prerrogativas de Secretário de Estado (Art. 11, §7º, red. Lei nº 4.303/2018)"
+          ]
+        },
+        {
+          "cargo": "Subcomandante-Geral",
+          "subordinadoA": "Comandante-Geral",
+          "requisito": "Oficial da ativa do último posto, pertencente ao quadro de oficiais combatentes do Estado de Rondônia, indicado pelo Comandante-Geral e nomeado pelo Governador do Estado (Art. 12, red. Lei nº 3.413/2014)",
+          "desdobramentos": [],
+          "atribuicoes": [
+            "Substituto eventual do Comandante-Geral, em seus afastamentos e impedimentos (Art. 12, §2º, red. Lei nº 3.413/2014)",
+            "Compete-lhe a coordenação, controle e fiscalização das atividades operacionais dos órgãos de execução, de apoio operacional e controle da disciplina da Instituição (Art. 12, §3º, red. Lei nº 3.413/2014)",
+            "Quando a escolha não recair no Oficial mais antigo, o escolhido terá precedência funcional sobre os demais oficiais, exceto o Comandante-Geral (Art. 12, §1º, red. Lei nº 4.303/2018)"
+          ]
+        }
+      ]
+    }
+  }
+}
