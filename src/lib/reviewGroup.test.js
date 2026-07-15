@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import {
   groupByDispositivo, countByDispositivo, countByChapter,
   docOfDispositivo, filterSuggestionsByDoc, filterFinalsByDoc,
+  scenarioOfDispositivo, filterSuggestionsByScenario, filterFinalsByScenario,
 } from './reviewGroup.js'
 import { parseDispositivoId } from './dispositivoId.js'
 import { chapterIdOf } from './minutaTargets.js'
@@ -84,4 +85,33 @@ test('filterFinalsByDoc separa o Map de textos finais por documento', () => {
 test('filterSuggestionsByDoc/filterFinalsByDoc com listas vazias devolvem vazio', () => {
   assert.deepEqual(filterSuggestionsByDoc([], 'ri'), [])
   assert.equal(filterFinalsByDoc(new Map(), 'reg').size, 0)
+})
+
+test('scenarioOfDispositivo: futura (sem marcador) × atual (com marcador)', () => {
+  // futura — RI e Regulamento sem 'atual'
+  assert.equal(scenarioOfDispositivo('organ:cg/competencia#0'), 'futura')
+  assert.equal(scenarioOfDispositivo('reg:disposicoes/mt-art-1#0'), 'futura')
+  // atual — RI com prefixo 'atual:' e Regulamento com 'reg:atual:'
+  assert.equal(scenarioOfDispositivo('atual:organ:cg/competencia#0'), 'atual')
+  assert.equal(scenarioOfDispositivo('reg:atual:cg/cg-caput#0'), 'atual')
+})
+
+test('filterSuggestionsByScenario separa os cenários', () => {
+  const s = [
+    { id: '1', dispositivoId: 'organ:cg/competencia#0' },        // futura
+    { id: '2', dispositivoId: 'atual:organ:cg/competencia#0' },  // atual
+    { id: '3', dispositivoId: 'reg:atual:cg/cg-caput#0' },       // atual
+  ]
+  assert.deepEqual(filterSuggestionsByScenario(s, 'futura').map(x => x.id), ['1'])
+  assert.deepEqual(filterSuggestionsByScenario(s, 'atual').map(x => x.id), ['2', '3'])
+})
+
+test('filterFinalsByScenario separa os textos finais por cenário', () => {
+  const finals = new Map([
+    ['organ:cg/competencia#0', { status: 'fechado' }],       // futura
+    ['atual:organ:cg/competencia#0', { status: 'aberto' }],  // atual
+  ])
+  assert.equal(filterFinalsByScenario(finals, 'futura').size, 1)
+  assert.equal(filterFinalsByScenario(finals, 'atual').size, 1)
+  assert.ok(filterFinalsByScenario(finals, 'atual').has('atual:organ:cg/competencia#0'))
 })

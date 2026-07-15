@@ -38,14 +38,16 @@ def build_chapter(organ_key, chapter_title, organ):
     (Lei 2.204/2009), como base a regulamentar. Sem enriquecimento de outros estados
     (entra na curadoria seguinte). editId com prefixo 'reg:' e escopo 'atual-' para
     garantir isolamento de cenário e de documento."""
-    theme_key = f"atual-{organ_key}"
+    # Marcador de cenário: 'reg:' (documento Regulamento) + 'atual:' (cenário atual) —
+    # isola os endereços de dispositivo dos do Regulamento da futura ('reg:...').
+    theme_key = f"atual:{organ_key}"
     articles = []
     atribs = [a for a in (organ.get("atribuicoes") or []) if a.strip()]
     if atribs:
         articles.append({
             "id": f"atual-{organ_key}-caput",
             "kind": "incisos",
-            "editId": f"reg:atual-{theme_key}/{organ_key}-caput",
+            "editId": f"reg:{theme_key}/{organ_key}-caput",
             "caput": f"O presente Capítulo regula a atuação do órgão {organ.get('name', organ_key)} no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
             "items": [{"text": a, "source": "RO"} for a in atribs],
             "source": "RO",

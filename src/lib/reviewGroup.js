@@ -15,6 +15,25 @@ export function filterFinalsByDoc(finals, docId) {
   return map
 }
 
+// Cenário embutido no próprio editId, na mesma filosofia do "reg:" (sem campo novo, sem
+// migração): o cenário ATUAL carrega o marcador "atual:" (no RI, prefixo "atual:"; no
+// Regulamento, "reg:atual:"); a LOB FUTURA nasce SEM marcador, preservando os comentários
+// e textos finais já existentes. Assim endereços como "organ:cg" não colidem entre cenários.
+export function scenarioOfDispositivo(dispositivoId) {
+  const id = String(dispositivoId)
+  return (id.startsWith('atual:') || id.startsWith('reg:atual:')) ? 'atual' : 'futura'
+}
+
+export function filterSuggestionsByScenario(suggestions, cenario) {
+  return suggestions.filter(s => scenarioOfDispositivo(s.dispositivoId) === cenario)
+}
+
+export function filterFinalsByScenario(finals, cenario) {
+  const map = new Map()
+  finals.forEach((v, k) => { if (scenarioOfDispositivo(k) === cenario) map.set(k, v) })
+  return map
+}
+
 // Agrupamento/contagem de sugestões por dispositivoId (lógica pura, sem React/Firebase).
 export function groupByDispositivo(suggestions) {
   const map = new Map()

@@ -7,7 +7,10 @@ import { chapterIdOf } from '../lib/minutaTargets.js'
 import {
   groupByDispositivo, countByDispositivo, countByChapter,
   filterSuggestionsByDoc, filterFinalsByDoc,
+  filterSuggestionsByScenario, filterFinalsByScenario,
 } from '../lib/reviewGroup.js'
+import { useScenario } from '../context/ScenarioContext.jsx'
+import { scenarioDbUrl } from '../lib/scenario.js'
 import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
   setAdminStatus, subscribeFinalTexts, saveFinalText,
@@ -34,6 +37,7 @@ function Rail({ count, onClick }) {
 
 export default function Revisao({ initialDoc } = {}) {
   const { user } = useAuth()
+  const { cenario } = useScenario()
   // Quando a Revisão é aberta a partir da trilha (menu), o documento já vem
   // fixado (initialDoc) e o seletor RI×Regulamento é escondido.
   const [docId, setDocId] = useState(initialDoc || 'ri') // 'ri' | 'reg'
@@ -47,11 +51,11 @@ export default function Revisao({ initialDoc } = {}) {
     setData(null)
     setErro(null)
     setAberto(null) // fecha a modal ao trocar de documento — evita comentar no doc errado
-    const url = docId === 'reg' ? '/database/regulamento_structure.json' : '/database/minuta_structure.json'
-    fetchJson(url)
+    const file = docId === 'reg' ? 'regulamento_structure.json' : 'minuta_structure.json'
+    fetchJson(scenarioDbUrl(cenario, file))
       .then(setData)
       .catch(() => setErro('Não foi possível carregar o documento.'))
-  }, [docId])
+  }, [docId, cenario])
 
   // Ausência do doc config/revisao == fechado (fail-closed) — ver reviewData.js.
   useEffect(() => subscribeRevisaoConfig(
@@ -69,9 +73,17 @@ export default function Revisao({ initialDoc } = {}) {
   // Idem: subscribeFinalTexts também retorna o unsubscribe do onSnapshot.
   useEffect(() => subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e)), [])
 
-  const finalsForDoc = useMemo(() => filterFinalsByDoc(finals, docId), [finals, docId])
+  // Filtra por documento (RI×Regulamento) E por cenário (atual×futura) — os dois nunca
+  // se misturam: comentários de um cenário jamais aparecem no outro.
+  const finalsForDoc = useMemo(
+    () => filterFinalsByScenario(filterFinalsByDoc(finals, docId), cenario),
+    [finals, docId, cenario],
+  )
 
-  const suggestionsForDoc = useMemo(() => filterSuggestionsByDoc(suggestions, docId), [suggestions, docId])
+  const suggestionsForDoc = useMemo(
+    () => filterSuggestionsByScenario(filterSuggestionsByDoc(suggestions, docId), cenario),
+    [suggestions, docId, cenario],
+  )
   const counts = useMemo(() => countByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const grupos = useMemo(() => groupByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const articles = useMemo(() => (data ? buildArticles(data) : []), [data])

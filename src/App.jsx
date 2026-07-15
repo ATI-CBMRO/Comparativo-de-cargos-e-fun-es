@@ -283,12 +283,12 @@ export default function App() {
           <Route path="/minuta/subsidio" element={<TrilhaRoute><RISubsidio /></TrilhaRoute>} />
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta/diagramas" element={<MinutaDiagrams />} />
-          <Route path="/minuta/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute></TrilhaRoute>} />
+          <Route path="/minuta/revisao" element={<ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
           <Route path="/regulamento/subsidio" element={<TrilhaRoute><RegSubsidio /></TrilhaRoute>} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/diagramas" element={<TrilhaRoute><RegDiagramas /></TrilhaRoute>} />
-          <Route path="/regulamento/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute></TrilhaRoute>} />
+          <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
@@ -298,7 +298,7 @@ export default function App() {
           <Route path="/regulamento/comparar" element={<TrilhaRoute><RegulamentoComparator /></TrilhaRoute>} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
           <Route path="/cadastro" element={<AlreadyLoggedInRedirect />} />
-          <Route path="/revisao" element={<TrilhaRoute><ProtectedRoute><Revisao /></ProtectedRoute></TrilhaRoute>} />
+          <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
           <Route path="/acessos" element={<ProtectedRoute requireAdmin><Acessos /></ProtectedRoute>} />
         </Routes>
       </main>

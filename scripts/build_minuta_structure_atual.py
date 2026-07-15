@@ -111,7 +111,10 @@ def build_organ_chapter_atual(organ_key, chapter_title, organ):
         sections.append(org)
     sections.extend(_cargos_atual(organ))
 
-    chapter_id = f"organ:{organ_key}"
+    # Marcador de cenário 'atual:' no id — isola os endereços de dispositivo (comentários
+    # e textos finais no Firebase) dos do cenário futuro, que compartilham chaves como
+    # 'organ:cg'. A futura permanece sem marcador (preserva os comentários existentes).
+    chapter_id = f"atual:organ:{organ_key}"
     for s in sections:
         s["editId"] = f"{chapter_id}/{s['id']}"
 

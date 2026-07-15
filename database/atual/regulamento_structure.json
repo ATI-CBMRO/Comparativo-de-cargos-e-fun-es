@@ -8,14 +8,14 @@
       "kind": "articles",
       "chapterTitle": "DO COMANDO-GERAL (CG)",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-cg",
+      "themeKey": "atual:cg",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-cg-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-cg/cg-caput",
+          "editId": "reg:atual:cg/cg-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Comando-Geral no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -49,14 +49,14 @@
       "kind": "articles",
       "chapterTitle": "DA COORDENADORIA ESTADUAL DE PROTEÇÃO E DEFESA CIVIL (CEPDEC)",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-cepdec",
+      "themeKey": "atual:cepdec",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-cepdec-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-cepdec/cepdec-caput",
+          "editId": "reg:atual:cepdec/cepdec-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Coordenadoria Estadual de Proteção e Defesa Civil no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -82,14 +82,14 @@
       "kind": "articles",
       "chapterTitle": "DO CONSELHO DELIBERATIVO DE ESTRATÉGIA E GESTÃO (CONDEG)",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-condeg",
+      "themeKey": "atual:condeg",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-condeg-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-condeg/condeg-caput",
+          "editId": "reg:atual:condeg/condeg-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Conselho Deliberativo de Estratégia e Gestão no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -119,14 +119,14 @@
       "kind": "articles",
       "chapterTitle": "DO GABINETE DO COMANDANTE-GERAL",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-gabinete",
+      "themeKey": "atual:gabinete",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-gabinete-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-gabinete/gabinete-caput",
+          "editId": "reg:atual:gabinete/gabinete-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Gabinete do Comandante-Geral no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -148,14 +148,14 @@
       "kind": "articles",
       "chapterTitle": "DAS ASSESSORIAS",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-assessorias",
+      "themeKey": "atual:assessorias",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-assessorias-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-assessorias/assessorias-caput",
+          "editId": "reg:atual:assessorias/assessorias-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Assessorias no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -181,14 +181,14 @@
       "kind": "articles",
       "chapterTitle": "DA DIRETORIA DE INTELIGÊNCIA (DINT)",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-dint",
+      "themeKey": "atual:dint",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-dint-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-dint/dint-caput",
+          "editId": "reg:atual:dint/dint-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Diretoria de Inteligência no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -210,14 +210,14 @@
       "kind": "articles",
       "chapterTitle": "DA COORDENADORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS (CPOF)",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-cpof",
+      "themeKey": "atual:cpof",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-cpof-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-cpof/cpof-caput",
+          "editId": "reg:atual:cpof/cpof-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Coordenadoria de Planejamento, Orçamento e Finanças no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -239,14 +239,14 @@
       "kind": "articles",
       "chapterTitle": "DAS COMISSÕES",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-comissoes",
+      "themeKey": "atual:comissoes",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-comissoes-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-comissoes/comissoes-caput",
+          "editId": "reg:atual:comissoes/comissoes-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Comissões no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -272,14 +272,14 @@
       "kind": "articles",
       "chapterTitle": "DA CORREGEDORIA-GERAL",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-corregedoria",
+      "themeKey": "atual:corregedoria",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-corregedoria-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-corregedoria/corregedoria-caput",
+          "editId": "reg:atual:corregedoria/corregedoria-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Corregedoria-Geral no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -301,14 +301,14 @@
       "kind": "articles",
       "chapterTitle": "DA AJUDÂNCIA-GERAL",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-ajudancia",
+      "themeKey": "atual:ajudancia",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-ajudancia-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-ajudancia/ajudancia-caput",
+          "editId": "reg:atual:ajudancia/ajudancia-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Ajudância-Geral no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -330,14 +330,14 @@
       "kind": "articles",
       "chapterTitle": "DO ESTADO-MAIOR-GERAL (EMG)",
       "group": "Órgãos de Direção",
-      "themeKey": "atual-emg",
+      "themeKey": "atual:emg",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-emg-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-emg/emg-caput",
+          "editId": "reg:atual:emg/emg-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Estado-Maior-Geral no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -359,14 +359,14 @@
       "kind": "articles",
       "chapterTitle": "DA COORDENADORIA DE PESSOAL (CP)",
       "group": "Órgãos de Apoio",
-      "themeKey": "atual-dp",
+      "themeKey": "atual:dp",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-dp-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-dp/dp-caput",
+          "editId": "reg:atual:dp/dp-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Coordenadoria de Pessoal no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -388,14 +388,14 @@
       "kind": "articles",
       "chapterTitle": "DA COORDENADORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (CEEI)",
       "group": "Órgãos de Apoio",
-      "themeKey": "atual-deei",
+      "themeKey": "atual:deei",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-deei-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-deei/deei-caput",
+          "editId": "reg:atual:deei/deei-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Coordenadoria de Educação, Ensino e Instrução no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -421,14 +421,14 @@
       "kind": "articles",
       "chapterTitle": "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",
       "group": "Órgãos de Apoio",
-      "themeKey": "atual-cat",
+      "themeKey": "atual:cat",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-cat-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-cat/cat-caput",
+          "editId": "reg:atual:cat/cat-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Coordenadoria de Atividades Técnicas no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -450,14 +450,14 @@
       "kind": "articles",
       "chapterTitle": "DA DIRETORIA DE LOGÍSTICA (DLOG)",
       "group": "Órgãos de Apoio",
-      "themeKey": "atual-dlog",
+      "themeKey": "atual:dlog",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-dlog-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-dlog/dlog-caput",
+          "editId": "reg:atual:dlog/dlog-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Diretoria de Logística no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -479,14 +479,14 @@
       "kind": "articles",
       "chapterTitle": "DA DIRETORIA DE COMUNICAÇÃO SOCIAL (DCS)",
       "group": "Órgãos de Apoio",
-      "themeKey": "atual-dcs",
+      "themeKey": "atual:dcs",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-dcs-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-dcs/dcs-caput",
+          "editId": "reg:atual:dcs/dcs-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Diretoria de Comunicação Social no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -508,14 +508,14 @@
       "kind": "articles",
       "chapterTitle": "DA DIRETORIA DE INFORMÁTICA (DINF)",
       "group": "Órgãos de Apoio",
-      "themeKey": "atual-dinf",
+      "themeKey": "atual:dinf",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-dinf-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-dinf/dinf-caput",
+          "editId": "reg:atual:dinf/dinf-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Diretoria de Informática no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -537,14 +537,14 @@
       "kind": "articles",
       "chapterTitle": "DO COMANDO OPERACIONAL DE BOMBEIROS I (COB I)",
       "group": "Órgãos de Execução",
-      "themeKey": "atual-cob1",
+      "themeKey": "atual:cob1",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-cob1-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-cob1/cob1-caput",
+          "editId": "reg:atual:cob1/cob1-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Comando Operacional de Bombeiros I no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -566,14 +566,14 @@
       "kind": "articles",
       "chapterTitle": "DO COMANDO OPERACIONAL DE BOMBEIROS II (COB II)",
       "group": "Órgãos de Execução",
-      "themeKey": "atual-cob2",
+      "themeKey": "atual:cob2",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-cob2-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-cob2/cob2-caput",
+          "editId": "reg:atual:cob2/cob2-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Comando Operacional de Bombeiros II no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -595,14 +595,14 @@
       "kind": "articles",
       "chapterTitle": "DO COMANDO DE OPERAÇÕES AÉREAS (COA)",
       "group": "Órgãos de Execução",
-      "themeKey": "atual-coa",
+      "themeKey": "atual:coa",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-coa-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-coa/coa-caput",
+          "editId": "reg:atual:coa/coa-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Comando de Operações Aéreas de Bombeiro Militar no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {
@@ -624,14 +624,14 @@
       "kind": "articles",
       "chapterTitle": "DO GRUPAMENTO DE BUSCA E SALVAMENTO (GBS)",
       "group": "Órgãos de Execução",
-      "themeKey": "atual-gbs",
+      "themeKey": "atual:gbs",
       "primary": "RO",
       "status": "esqueleto",
       "articles": [
         {
           "id": "atual-gbs-caput",
           "kind": "incisos",
-          "editId": "reg:atual-atual-gbs/gbs-caput",
+          "editId": "reg:atual:gbs/gbs-caput",
           "caput": "O presente Capítulo regula a atuação do órgão Grupamento de Busca e Salvamento no âmbito do CBMRO, com base nas competências fixadas na Lei nº 2.204/2009:",
           "items": [
             {

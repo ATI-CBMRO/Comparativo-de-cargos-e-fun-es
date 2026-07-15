@@ -4,7 +4,7 @@
   "title": "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO) — LOB ATUAL",
   "chapters": [
     {
-      "id": "organ:cg",
+      "id": "atual:organ:cg",
       "kind": "organ",
       "chapterTitle": "DO COMANDO-GERAL (CG)",
       "organKey": "cg",
@@ -15,14 +15,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:cg/finalidade",
+          "editId": "atual:organ:cg/finalidade",
           "proposedText": "O Comando Geral, órgão máximo executivo do CBMRO, incumbido da administração da instituição (Art. 10)"
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:cg/competencia",
+          "editId": "atual:organ:cg/competencia",
           "caput": "Compete à CG:",
           "items": [
             {
@@ -44,7 +44,7 @@
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:cg/organizacao",
+          "editId": "atual:organ:cg/organizacao",
           "caput": "CG tem a seguinte estrutura interna:",
           "items": [
             {
@@ -90,7 +90,7 @@
           "id": "cargo:comandante-geral",
           "kind": "incisos",
           "sectionTitle": "Das Atribuições do Comandante-Geral",
-          "editId": "organ:cg/cargo:comandante-geral",
+          "editId": "atual:organ:cg/cargo:comandante-geral",
           "caput": "Ao Comandante-Geral compete:",
           "items": [
             {
@@ -112,7 +112,7 @@
           "id": "cargo:subcomandante-geral",
           "kind": "incisos",
           "sectionTitle": "Das Atribuições do Subcomandante-Geral",
-          "editId": "organ:cg/cargo:subcomandante-geral",
+          "editId": "atual:organ:cg/cargo:subcomandante-geral",
           "caput": "Ao Subcomandante-Geral compete:",
           "items": [
             {
@@ -134,7 +134,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:cepdec",
+      "id": "atual:organ:cepdec",
       "kind": "organ",
       "chapterTitle": "DA COORDENADORIA ESTADUAL DE PROTEÇÃO E DEFESA CIVIL (CEPDEC)",
       "organKey": "cepdec",
@@ -145,14 +145,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:cepdec/finalidade",
+          "editId": "atual:organ:cepdec/finalidade",
           "proposedText": "A Coordenadoria Estadual de Proteção e Defesa Civil - CEPDEC, que tem por Coordenador-Geral o Comandante-Geral do CBMRO e por Coordenador Estratégico-Operacional um Oficial do último posto do Quadro de Combatentes, é o órgão que centraliza o Sistema Estadual de Proteção e Defesa Civil de Rondônia - SIEPDEC (Art. 17, red. Lei nº 5.697/2023)"
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:cepdec/competencia",
+          "editId": "atual:organ:cepdec/competencia",
           "caput": "Compete à CEPDEC:",
           "items": [
             {
@@ -166,7 +166,7 @@
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:cepdec/organizacao",
+          "editId": "atual:organ:cepdec/organizacao",
           "caput": "CEPDEC tem a seguinte estrutura interna:",
           "items": [
             {
@@ -208,7 +208,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:condeg",
+      "id": "atual:organ:condeg",
       "kind": "organ",
       "chapterTitle": "DO CONSELHO DELIBERATIVO DE ESTRATÉGIA E GESTÃO (CONDEG)",
       "organKey": "condeg",
@@ -219,14 +219,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:condeg/finalidade",
+          "editId": "atual:organ:condeg/finalidade",
           "proposedText": "O Conselho Deliberativo de Estratégia e Gestão - CONDEG é o Órgão responsável pelo estudo, planejamento e assessoria consultiva do Comandante-Geral para a solução de questões institucionais e de segurança pública da Corporação, e é composto pelos Oficiais da ativa do último Posto (Art. 27, red. Lei nº 4.303/2018)"
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:condeg/competencia",
+          "editId": "atual:organ:condeg/competencia",
           "caput": "Compete à CONDEG:",
           "items": [
             {
@@ -244,7 +244,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:gabinete",
+      "id": "atual:organ:gabinete",
       "kind": "organ",
       "chapterTitle": "DO GABINETE DO COMANDANTE-GERAL",
       "organKey": "gabinete",
@@ -255,14 +255,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:gabinete/finalidade",
+          "editId": "atual:organ:gabinete/finalidade",
           "proposedText": "Ao Gabinete do Comandante-Geral compete a supervisão e execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral (Art. 24, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:gabinete/organizacao",
+          "editId": "atual:organ:gabinete/organizacao",
           "caput": "Gab-CG tem a seguinte estrutura interna:",
           "items": [
             {
@@ -288,7 +288,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:assessorias",
+      "id": "atual:organ:assessorias",
       "kind": "organ",
       "chapterTitle": "DAS ASSESSORIAS",
       "organKey": "assessorias",
@@ -299,14 +299,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:assessorias/finalidade",
+          "editId": "atual:organ:assessorias/finalidade",
           "proposedText": "As Assessorias subordinam-se ao Comandante-Geral e são órgãos que prestam assessoramento administrativo e técnico, responsáveis pela realização de estudos, pesquisas, elaboração e controle de pareceres e o relacionamento com os Poderes e outros Órgãos (Art. 29, red. Lei nº 4.303/2018)"
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:assessorias/competencia",
+          "editId": "atual:organ:assessorias/competencia",
           "caput": "Compete à Assess:",
           "items": [
             {
@@ -320,7 +320,7 @@
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:assessorias/organizacao",
+          "editId": "atual:organ:assessorias/organizacao",
           "caput": "Assess tem a seguinte estrutura interna:",
           "items": [
             {
@@ -358,7 +358,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:dint",
+      "id": "atual:organ:dint",
       "kind": "organ",
       "chapterTitle": "DA DIRETORIA DE INTELIGÊNCIA (DINT)",
       "organKey": "dint",
@@ -369,14 +369,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:dint/finalidade",
+          "editId": "atual:organ:dint/finalidade",
           "proposedText": "A Diretoria de Inteligência, subordinada ao Comandante-Geral, é responsável por desenvolver, planejar, executar, coordenar, supervisionar e controlar as Atividades de Inteligência, tendo como competência primordial assessorar o Comandante-Geral na tomada de decisão (Art. 20, red. Lei nº 4.488/2019)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:dint/organizacao",
+          "editId": "atual:organ:dint/organizacao",
           "caput": "DINT tem a seguinte estrutura interna:",
           "items": [
             {
@@ -422,7 +422,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:cpof",
+      "id": "atual:organ:cpof",
       "kind": "organ",
       "chapterTitle": "DA COORDENADORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS (CPOF)",
       "organKey": "cpof",
@@ -433,14 +433,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:cpof/finalidade",
+          "editId": "atual:organ:cpof/finalidade",
           "proposedText": "A Coordenadoria de Planejamento, Orçamento e Finanças, subordinada ao Comandante-Geral, é responsável pelo planejamento, apoio administrativo, orçamentário e técnico-financeiro, bem como executar, acompanhar e controlar as atividades inerentes a sua responsabilidade (Art. 16, red. Lei nº 4.488/2019)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:cpof/organizacao",
+          "editId": "atual:organ:cpof/organizacao",
           "caput": "CPOF tem a seguinte estrutura interna:",
           "items": [
             {
@@ -474,7 +474,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:comissoes",
+      "id": "atual:organ:comissoes",
       "kind": "organ",
       "chapterTitle": "DAS COMISSÕES",
       "organKey": "comissoes",
@@ -485,14 +485,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:comissoes/finalidade",
+          "editId": "atual:organ:comissoes/finalidade",
           "proposedText": "As Comissões são órgãos constituídos para a realização de atividades periódicas e temporárias previstas em regulamento da Corporação ou determinadas pelo Comandante-Geral, para deliberarem sobre os assuntos de interesse institucional (Art. 26, red. Lei nº 4.303/2018)"
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:comissoes/competencia",
+          "editId": "atual:organ:comissoes/competencia",
           "caput": "Compete à Comiss:",
           "items": [
             {
@@ -506,7 +506,7 @@
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:comissoes/organizacao",
+          "editId": "atual:organ:comissoes/organizacao",
           "caput": "Comiss tem a seguinte estrutura interna:",
           "items": [
             {
@@ -528,7 +528,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:corregedoria",
+      "id": "atual:organ:corregedoria",
       "kind": "organ",
       "chapterTitle": "DA CORREGEDORIA-GERAL",
       "organKey": "corregedoria",
@@ -539,14 +539,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:corregedoria/finalidade",
+          "editId": "atual:organ:corregedoria/finalidade",
           "proposedText": "A Corregedoria-Geral, subordinada ao Subcomandante-Geral, é o órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Instituição, competindo-lhe, dentre outras atribuições, a apuração de responsabilidade criminal, administrativa e disciplinar (Art. 13, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:corregedoria/organizacao",
+          "editId": "atual:organ:corregedoria/organizacao",
           "caput": "CG-Corr tem a seguinte estrutura interna:",
           "items": [
             {
@@ -580,7 +580,7 @@
           "id": "cargo:corregedor-geral",
           "kind": "incisos",
           "sectionTitle": "Das Atribuições do Corregedor-Geral",
-          "editId": "organ:corregedoria/cargo:corregedor-geral",
+          "editId": "atual:organ:corregedoria/cargo:corregedor-geral",
           "caput": "Ao Corregedor-Geral compete:",
           "items": [
             {
@@ -594,7 +594,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:ajudancia",
+      "id": "atual:organ:ajudancia",
       "kind": "organ",
       "chapterTitle": "DA AJUDÂNCIA-GERAL",
       "organKey": "ajudancia",
@@ -605,14 +605,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:ajudancia/finalidade",
+          "editId": "atual:organ:ajudancia/finalidade",
           "proposedText": "A Ajudância-Geral, subordinada ao Subcomandante-Geral, é o órgão responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, a manutenção e segurança das instalações, tendo a seu cargo as funções administrativas, inclusive, as de controle de todo o pessoal (Art. 25, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:ajudancia/organizacao",
+          "editId": "atual:organ:ajudancia/organizacao",
           "caput": "Aj-Geral tem a seguinte estrutura interna:",
           "items": [
             {
@@ -646,7 +646,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:emg",
+      "id": "atual:organ:emg",
       "kind": "organ",
       "chapterTitle": "DO ESTADO-MAIOR-GERAL (EMG)",
       "organKey": "emg",
@@ -657,14 +657,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:emg/finalidade",
+          "editId": "atual:organ:emg/finalidade",
           "proposedText": "O Estado-Maior-Geral é dirigido por um Chefe e subordina-se ao Subcomandante-Geral, competindo-lhe o planejamento, a coordenação, o controle e a avaliação das ações administrativas a cargo dos órgãos de atividade-meio e das diretrizes de ordens do Comando (Art. 12-A, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:emg/organizacao",
+          "editId": "atual:organ:emg/organizacao",
           "caput": "EMG tem a seguinte estrutura interna:",
           "items": [
             {
@@ -710,7 +710,7 @@
           "id": "cargo:chefe-do-estado-maior-geral",
           "kind": "incisos",
           "sectionTitle": "Das Atribuições do Chefe do Estado-Maior-Geral",
-          "editId": "organ:emg/cargo:chefe-do-estado-maior-geral",
+          "editId": "atual:organ:emg/cargo:chefe-do-estado-maior-geral",
           "caput": "Ao Chefe do Estado-Maior-Geral compete:",
           "items": [
             {
@@ -724,7 +724,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:dp",
+      "id": "atual:organ:dp",
       "kind": "organ",
       "chapterTitle": "DA COORDENADORIA DE PESSOAL (CP)",
       "organKey": "dp",
@@ -735,14 +735,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:dp/finalidade",
+          "editId": "atual:organ:dp/finalidade",
           "proposedText": "A Coordenadoria de Pessoal, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pelo planejamento, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, administração e gestão de pessoal civil e militar do CBMRO (Art. 14, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:dp/organizacao",
+          "editId": "atual:organ:dp/organizacao",
           "caput": "CP tem a seguinte estrutura interna:",
           "items": [
             {
@@ -792,7 +792,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:deei",
+      "id": "atual:organ:deei",
       "kind": "organ",
       "chapterTitle": "DA COORDENADORIA DE EDUCAÇÃO, ENSINO E INSTRUÇÃO (CEEI)",
       "organKey": "deei",
@@ -803,14 +803,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:deei/finalidade",
+          "editId": "atual:organ:deei/finalidade",
           "proposedText": "A Coordenadoria de Educação, Ensino e Instrução, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável por todas as atividades de ensino, com competência para planejar, coordenar e fiscalizar o ensino em todas suas modalidades, a instrução e o treinamento operacional relativo às atividades do Corpo de Bombeiros Militar (Art. 15, red. Lei nº 4.303/2018)"
         },
         {
           "id": "competencia",
           "kind": "incisos",
           "sectionTitle": "Da Competência",
-          "editId": "organ:deei/competencia",
+          "editId": "atual:organ:deei/competencia",
           "caput": "Compete à CEEI:",
           "items": [
             {
@@ -824,7 +824,7 @@
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:deei/organizacao",
+          "editId": "atual:organ:deei/organizacao",
           "caput": "CEEI tem a seguinte estrutura interna:",
           "items": [
             {
@@ -858,7 +858,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:cat",
+      "id": "atual:organ:cat",
       "kind": "organ",
       "chapterTitle": "DA COORDENADORIA DE ATIVIDADES TÉCNICAS (CAT)",
       "organKey": "cat",
@@ -869,14 +869,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:cat/finalidade",
+          "editId": "atual:organ:cat/finalidade",
           "proposedText": "A Coordenadoria de Atividades Técnicas é o órgão máximo responsável pelo controle e observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco no Estado de Rondônia, competindo-lhe o planejamento, a normatização, fiscalização, análise de projetos de edificações, vistoria e emissão de pareceres (Art. 18, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:cat/organizacao",
+          "editId": "atual:organ:cat/organizacao",
           "caput": "CAT tem a seguinte estrutura interna:",
           "items": [
             {
@@ -910,7 +910,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:dlog",
+      "id": "atual:organ:dlog",
       "kind": "organ",
       "chapterTitle": "DA DIRETORIA DE LOGÍSTICA (DLOG)",
       "organKey": "dlog",
@@ -921,14 +921,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:dlog/finalidade",
+          "editId": "atual:organ:dlog/finalidade",
           "proposedText": "A Diretoria de Logística, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pela gestão logística da Corporação, competindo-lhe o estudo, fiscalização, inspeção, planejamento, orientação normativa, coordenação, supervisão de convênios, controle e execução das atividades relativas à gestão do material, bens móveis e imóveis, comunicação, manutenção e almoxarifado da Corporação (Art. 21, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:dlog/organizacao",
+          "editId": "atual:organ:dlog/organizacao",
           "caput": "DLOG tem a seguinte estrutura interna:",
           "items": [
             {
@@ -962,7 +962,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:dcs",
+      "id": "atual:organ:dcs",
       "kind": "organ",
       "chapterTitle": "DA DIRETORIA DE COMUNICAÇÃO SOCIAL (DCS)",
       "organKey": "dcs",
@@ -973,14 +973,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:dcs/finalidade",
+          "editId": "atual:organ:dcs/finalidade",
           "proposedText": "A Diretoria de Comunicação Social, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de comunicação social (Art. 22, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:dcs/organizacao",
+          "editId": "atual:organ:dcs/organizacao",
           "caput": "DCS tem a seguinte estrutura interna:",
           "items": [
             {
@@ -1014,7 +1014,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:dinf",
+      "id": "atual:organ:dinf",
       "kind": "organ",
       "chapterTitle": "DA DIRETORIA DE INFORMÁTICA (DINF)",
       "organKey": "dinf",
@@ -1025,14 +1025,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:dinf/finalidade",
+          "editId": "atual:organ:dinf/finalidade",
           "proposedText": "A Diretoria de Informática é o órgão responsável pelo planejamento, orientação, coordenação e supervisão das atividades de tecnologia da informação da Corporação (Art. 23, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:dinf/organizacao",
+          "editId": "atual:organ:dinf/organizacao",
           "caput": "DINF tem a seguinte estrutura interna:",
           "items": [
             {
@@ -1070,7 +1070,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:cob1",
+      "id": "atual:organ:cob1",
       "kind": "organ",
       "chapterTitle": "DO COMANDO OPERACIONAL DE BOMBEIROS I (COB I)",
       "organKey": "cob1",
@@ -1081,14 +1081,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:cob1/finalidade",
+          "editId": "atual:organ:cob1/finalidade",
           "proposedText": "O Comando Operacional de Bombeiros é o Órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral (Art. 35, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:cob1/organizacao",
+          "editId": "atual:organ:cob1/organizacao",
           "caput": "COB I tem a seguinte estrutura interna:",
           "items": [
             {
@@ -1142,7 +1142,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:cob2",
+      "id": "atual:organ:cob2",
       "kind": "organ",
       "chapterTitle": "DO COMANDO OPERACIONAL DE BOMBEIROS II (COB II)",
       "organKey": "cob2",
@@ -1153,14 +1153,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:cob2/finalidade",
+          "editId": "atual:organ:cob2/finalidade",
           "proposedText": "O Comando Operacional de Bombeiros é o Órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral (Art. 35, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:cob2/organizacao",
+          "editId": "atual:organ:cob2/organizacao",
           "caput": "COB II tem a seguinte estrutura interna:",
           "items": [
             {
@@ -1214,7 +1214,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:coa",
+      "id": "atual:organ:coa",
       "kind": "organ",
       "chapterTitle": "DO COMANDO DE OPERAÇÕES AÉREAS (COA)",
       "organKey": "coa",
@@ -1225,14 +1225,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:coa/finalidade",
+          "editId": "atual:organ:coa/finalidade",
           "proposedText": "O Comando de Operações Aéreas de Bombeiro Militar, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral, é o órgão responsável pela coordenação e controle das atividades-fins concernentes a operações aéreas da Corporação (Art. 39, red. Lei nº 4.303/2018)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:coa/organizacao",
+          "editId": "atual:organ:coa/organizacao",
           "caput": "COA tem a seguinte estrutura interna:",
           "items": [
             {
@@ -1278,7 +1278,7 @@
       "alternatives": {}
     },
     {
-      "id": "organ:gbs",
+      "id": "atual:organ:gbs",
       "kind": "organ",
       "chapterTitle": "DO GRUPAMENTO DE BUSCA E SALVAMENTO (GBS)",
       "organKey": "gbs",
@@ -1289,14 +1289,14 @@
           "id": "finalidade",
           "kind": "prose",
           "sectionTitle": "Da Finalidade",
-          "editId": "organ:gbs/finalidade",
+          "editId": "atual:organ:gbs/finalidade",
           "proposedText": "O Grupamento de Busca e Salvamento de Bombeiro Militar, subordinado diretamente ao Comando Operacional de Bombeiro Militar, é a Unidade que tem a seu cargo, dentro de uma determinada área de atuação operacional, as missões de resgate, busca e salvamento (Art. 40, red. Lei nº 4.488/2019)"
         },
         {
           "id": "organizacao",
           "kind": "incisos",
           "sectionTitle": "Da Organização Interna",
-          "editId": "organ:gbs/organizacao",
+          "editId": "atual:organ:gbs/organizacao",
           "caput": "GBS tem a seguinte estrutura interna:",
           "items": [
             {
@@ -1338,117 +1338,117 @@
     "organKey": "cg",
     "sigla": "CG",
     "label": "Comando-Geral",
-    "chapterId": "organ:cg",
+    "chapterId": "atual:organ:cg",
     "children": [
       {
         "organKey": "cepdec",
         "sigla": "CEPDEC",
         "label": "Coordenadoria Estadual de Proteção e Defesa Civil",
-        "chapterId": "organ:cepdec",
+        "chapterId": "atual:organ:cepdec",
         "children": []
       },
       {
         "organKey": "condeg",
         "sigla": "CONDEG",
         "label": "Conselho Deliberativo de Estratégia e Gestão",
-        "chapterId": "organ:condeg",
+        "chapterId": "atual:organ:condeg",
         "children": []
       },
       {
         "organKey": "gabinete",
         "sigla": "Gab-CG",
         "label": "Gabinete do Comandante-Geral",
-        "chapterId": "organ:gabinete",
+        "chapterId": "atual:organ:gabinete",
         "children": []
       },
       {
         "organKey": "assessorias",
         "sigla": "Assess",
         "label": "Assessorias",
-        "chapterId": "organ:assessorias",
+        "chapterId": "atual:organ:assessorias",
         "children": []
       },
       {
         "organKey": "dint",
         "sigla": "DINT",
         "label": "Diretoria de Inteligência",
-        "chapterId": "organ:dint",
+        "chapterId": "atual:organ:dint",
         "children": []
       },
       {
         "organKey": "cpof",
         "sigla": "CPOF",
         "label": "Coordenadoria de Planejamento, Orçamento e Finanças",
-        "chapterId": "organ:cpof",
+        "chapterId": "atual:organ:cpof",
         "children": []
       },
       {
         "organKey": "comissoes",
         "sigla": "Comiss",
         "label": "Comissões",
-        "chapterId": "organ:comissoes",
+        "chapterId": "atual:organ:comissoes",
         "children": []
       },
       {
         "organKey": "corregedoria",
         "sigla": "CG-Corr",
         "label": "Corregedoria-Geral",
-        "chapterId": "organ:corregedoria",
+        "chapterId": "atual:organ:corregedoria",
         "children": []
       },
       {
         "organKey": "ajudancia",
         "sigla": "Aj-Geral",
         "label": "Ajudância-Geral",
-        "chapterId": "organ:ajudancia",
+        "chapterId": "atual:organ:ajudancia",
         "children": []
       },
       {
         "organKey": "emg",
         "sigla": "EMG",
         "label": "Estado-Maior-Geral",
-        "chapterId": "organ:emg",
+        "chapterId": "atual:organ:emg",
         "children": [
           {
             "organKey": "dp",
             "sigla": "CP",
             "label": "Coordenadoria de Pessoal",
-            "chapterId": "organ:dp",
+            "chapterId": "atual:organ:dp",
             "children": []
           },
           {
             "organKey": "deei",
             "sigla": "CEEI",
             "label": "Coordenadoria de Educação, Ensino e Instrução",
-            "chapterId": "organ:deei",
+            "chapterId": "atual:organ:deei",
             "children": []
           },
           {
             "organKey": "cat",
             "sigla": "CAT",
             "label": "Coordenadoria de Atividades Técnicas",
-            "chapterId": "organ:cat",
+            "chapterId": "atual:organ:cat",
             "children": []
           },
           {
             "organKey": "dlog",
             "sigla": "DLOG",
             "label": "Diretoria de Logística",
-            "chapterId": "organ:dlog",
+            "chapterId": "atual:organ:dlog",
             "children": []
           },
           {
             "organKey": "dcs",
             "sigla": "DCS",
             "label": "Diretoria de Comunicação Social",
-            "chapterId": "organ:dcs",
+            "chapterId": "atual:organ:dcs",
             "children": []
           },
           {
             "organKey": "dinf",
             "sigla": "DINF",
             "label": "Diretoria de Informática",
-            "chapterId": "organ:dinf",
+            "chapterId": "atual:organ:dinf",
             "children": []
           }
         ]
@@ -1457,13 +1457,13 @@
         "organKey": "cob1",
         "sigla": "COB I",
         "label": "Comando Operacional de Bombeiros I",
-        "chapterId": "organ:cob1",
+        "chapterId": "atual:organ:cob1",
         "children": [
           {
             "organKey": "gbs",
             "sigla": "GBS",
             "label": "Grupamento de Busca e Salvamento",
-            "chapterId": "organ:gbs",
+            "chapterId": "atual:organ:gbs",
             "children": []
           }
         ]
@@ -1472,14 +1472,14 @@
         "organKey": "cob2",
         "sigla": "COB II",
         "label": "Comando Operacional de Bombeiros II",
-        "chapterId": "organ:cob2",
+        "chapterId": "atual:organ:cob2",
         "children": []
       },
       {
         "organKey": "coa",
         "sigla": "COA",
         "label": "Comando de Operações Aéreas de Bombeiro Militar",
-        "chapterId": "organ:coa",
+        "chapterId": "atual:organ:coa",
         "children": []
       }
     ]
