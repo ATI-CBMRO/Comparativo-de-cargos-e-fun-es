@@ -10,6 +10,12 @@ estaduais, com identidade visual do CBMRO (47 documentos legais). Além de compa
 portal ELABORA as minutas do CBMRO (Regimento Interno e Regulamento Geral) a partir
 desse acervo.
 
+**LEIA PRIMEIRO — o portal tem DOIS CENÁRIOS que nunca se misturam** (ver seção
+"Cenários LOB"): **LOB atual** (Lei 2.204/2009, vigente) e **LOB futura** (nova LOB, em
+aprovação). Quase tudo neste guia descreve a trilha da FUTURA; o cenário ATUAL tem
+geradores e dados próprios. Antes de mexer em qualquer minuta/gerador, saiba em qual
+cenário está.
+
 ## Comandos
 
 ```bash
@@ -142,6 +148,59 @@ tipografia Outfit+Inter; ícones `lucide-react`.
 `/legislacao-pdf/*`) e `copyDatabaseOnBuild` (build: copia `database/` → `dist/database/` e
 `LEGISLAÇÃO CBMS/` → `dist/legislacao-pdf/`). Essas pastas ficam FORA de `public/` (grandes,
 regeneradas). `public/` é servida na raiz (brasão `/BrasaoCBMRO2D-COMPLETO.png`).
+
+## Cenários LOB — atual × futura (Fases 1 e 2, 15-16/07/2026)
+
+O portal separa **dois cenários que NUNCA se misturam**:
+- **LOB futura** — nova LOB (em aprovação). É o trabalho antigo; **curadoria PAUSADA**.
+- **LOB atual** — Lei nº 2.204/2009 vigente (red. até Lei 5.697/2023). Foco atual.
+
+**A chave:** `ScenarioSwitcher` no topo da sidebar; `src/context/ScenarioContext.jsx`
+(`ScenarioProvider`/`useScenario` → `{ cenario, setCenario }`, dentro do `BrowserRouter`,
+ver `main.jsx`). Lógica pura em `src/lib/scenario.js` (`SCENARIOS`, `DEFAULT_SCENARIO='futura'`,
+`normalizeScenario`, `resolveScenario`, `scenarioDbUrl`), testada. Cenário na URL
+(`?cenario=atual|futura`, carimbado no mount) + `localStorage`.
+
+**Gavetas de dados:** a **futura fica na RAIZ de `database/`** (arquivos de sempre —
+NÃO mover); o **atual em `database/atual/`**. Resolva SEMPRE com
+`scenarioDbUrl(cenario, 'minuta_structure.json')`. Compartilhados entre cenários (não
+mexer): `states_data.json`, `organs_detail/` (acervo dos 27), `markdown/`.
+
+**Geradores do ATUAL são separados** (os da futura estão colados à LOB futura via
+`ORGAN_ORDER` hardcoded + enriquecimento):
+```bash
+python scripts/build_minuta_structure_atual.py       # RI do atual (por ÓRGÃO) + commandChart
+python scripts/build_regulamento_structure_atual.py  # Regulamento do atual (TEMÁTICO)
+```
+- `database/atual/organs_detail/ro.json` — 21 órgãos do CBMRO vigente, curados à mão,
+  competências VERBATIM da Lei 2.204/2009. Estrutura **validada pelo organograma oficial**
+  (`docs/curadoria/lob-atual-ro/` — PDF + `estrutura-vigente-validada.md`). É a fonte da verdade.
+- `build_regulamento_structure_atual.py` **lê o `regulamento_structure.json` da futura** e
+  re-carimba os ids (não chama o builder da futura, que reescreveria o arquivo dela).
+
+**⚠️ ARMADILHA (já mordeu):** `build_competencia_section` e `build_cargo_sections` de
+`build_minuta_structure.py` chamam `enrich_organ_for`/`enrich_for` — enriquecimento de
+OUTROS ESTADOS da futura. Reusá-las no atual **vaza CBMMT/PA/DF** na competência do CBMRO.
+Por isso o gerador do atual reescreve essas duas seções SEM enriquecimento (só
+`build_finalidade_section`/`build_organizacao_section` são neutras e reusáveis).
+
+**Regra de produto:** o **RI é por ÓRGÃO** (estrutura → LOB-específica); o **Regulamento é
+TEMÁTICO** (serviço/disciplina/uniformes/ensino → NÃO depende da LOB), por isso o atual
+reusa os 15 temas / 410 artigos dos 9 CBMs já curados, só isolando os ids.
+
+**Isolamento no Firebase** (comentários e textos finais) — marcador embutido no `editId`,
+mesma filosofia do `reg:` (sem campo novo, sem migração):
+- atual: `atual:organ:...` (RI) e `reg:atual:...` (Regulamento);
+- futura: **SEM marcador** (preserva os comentários existentes).
+`reviewGroup.js`: `scenarioOfDispositivo` + `filterSuggestionsByScenario`/`filterFinalsByScenario`
+(testados). Sem isso, ids como `organ:cg` colidiriam entre cenários.
+
+**Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (15 temas),
+`/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`. **Ainda gated** (mostram
+"Em construção" via `TrilhaRoute` em `App.jsx`): **Subsídio** (`/minuta/subsidio`,
+`/regulamento/subsidio`) — depende de gerar o `comparativo_minuta` do atual. Specs/planos em
+`docs/superpowers/specs/2026-07-15-cenarios-lob-atual-futura-design.md` e
+`docs/superpowers/plans/2026-07-15-cenarios-lob-fase1.md`.
 
 ## Curadoria — Minuta do Regulamento (em andamento)
 
