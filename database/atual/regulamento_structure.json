@@ -11986,7 +11986,240 @@
           "heading": "Cap. VI, Seções IV–VIII — Formaturas, Bandeiras, Festas, Parada Diária, Galeria e Recepção/Despedida"
         }
       ],
-      "alternatives": {}
+      "alternatives": {
+        "risg": {
+          "name": "Exército Brasileiro",
+          "abbr": "RISG",
+          "docLabel": "RISG — R-1 do Exército Brasileiro (Portaria SGEx nº 51/2003)",
+          "excerpts": [
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 321. São símbolos nacionais:",
+              "dispositivos": [
+                "I - a Bandeira Nacional;",
+                "II - o Hino Nacional;",
+                "III - as Armas Nacionais; e",
+                "IV - o Selo Nacional.",
+                "Parágrafo único. A forma, a apresentação e o uso dos símbolos nacionais são regulados em legislação específica."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 321",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 322. Cada unidade possui sob sua guarda uma Bandeira Nacional, símbolo da Pátria, destinada a estimular, entre os que se agrupam em torno dela, o elevado sentimento de sacrifício no cumprimento dos deveres de cidadão e de soldado.",
+              "dispositivos": [
+                "§ 1º A Bandeira Nacional é guardada no gabinete do Cmt, em local visível e de destaque.",
+                "§ 2º Na guerra, somente as unidades e os G Cmdo conduzem a Bandeira Nacional."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 322",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 323. Os corpos de tropa conduzem suas Bandeiras, em tempo de paz, em solenidades e formaturas, salvo quando em manobras ou exercícios.",
+              "dispositivos": [
+                "§ 1º Os corpos de tropa que formarem em ordem de marcha para inspeções ou visitas do escalão superior também conduzem suas Bandeiras.",
+                "§ 2º Os corpos de tropa de efetivo inferior a unidade somente usam Bandeiras nas guardas de honra, nas guardas fúnebres, na solenidade de sua apresentação aos conscritos, no compromisso dos recrutas, no dia 19 de novembro, nas paradas e nas formaturas para entrega de medalhas e condecorações."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 323",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 324. Cada unidade deve possuir uma Bandeira Nacional para ser hasteada no respectivo mastro, conforme preceitua o R-2.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 324",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 325. O Hino Nacional é o que se compõe da música de Francisco Manuel da Silva e poema de Joaquim Osório Duque Estrada, conforme o disposto nos Decretos n º 171, de 20 de janeiro de 1890, e nº 15.671, de 6 de setembro de 1922.",
+              "dispositivos": [
+                "Parágrafo único. Nos corpos de tropa, o Hino Nacional é cantado, no mínimo, uma vez por semana, por ocasião de formatura da unidade ou de SU."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 325",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 326. O Selo Nacional tem os distintivos a que se refere o Decreto n º 4, de 19 de novembro de 1889, sendo usado para autenticar os diplomas e certificados expedidos pelos estabelecimentos de ensino, bem como outros documentos de caráter oficial, de acordo com a legislação vigente.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 326",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. I — Dos Símbolos Nacionais",
+              "caput": "Art. 327. É obrigatório o uso das Armas Nacionais em local de destaque da fachada do quartel ou do pavilhão principal de todas as unidades, bem como nos armamentos, na correspondência e nas publicações oficiais. Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003. - 97",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 327",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 337. As festas militares são as comemorações de feitos e fatos nacionais ou relativos à vida do Exército e das OM, destinadas à exaltação do patriotismo, ao estímulo e desenvolvimento do sentimento cívico e ao revigoramento, num ambiente de sã camaradagem, do “espírito de corpo” e do amor ao Exército.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 337",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 338. Os feriados nacionais, as datas festivas e as comemorativas são celebrados nas unidades, consoante as disposições em vigor, as determinações do Comandante do Exército e dos respectivos Cmt, podendo comportar a publicação, de véspera, de um boletim alusivo à data.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 338",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 339. Os feriados nacionais, as datas festivas e comemorativas a que se referem os arts. 337 e 338 deste Regulamento são os seguintes:",
+              "dispositivos": [
+                "I - feriados nacionais:",
+                "a) 1º de janeiro – Dia da Fraternidade Universal;",
+                "b) 21 de abril – Dia da Inconfidência Mineira;",
+                "c) 1º de maio – Dia do Trabalho;",
+                "d) 7 de setembro – Dia da Independência do Brasil;",
+                "e) 12 de outubro – Nossa Senhora Aparecida – Padroeira do Brasil;",
+                "98 – Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003.",
+                "f) 2 de novembro – Dia de Finados;",
+                "g) 15 de novembro – Dia da Proclamação da República;",
+                "h) 25 de dezembro – Natal; e",
+                "i) data móvel – Paixão de Cristo;",
+                "II - datas festivas:",
+                "a) 21 de fevereiro – Dia da Tomada de Monte Castelo na 2ª Guerra Mundial;",
+                "b) 31 de março – Dia da Revolução Democrática de 1964;",
+                "c) 19 de abril – Dia do Exército Brasileiro;",
+                "d) 22 de abril – Dia da Aviação de Caça;",
+                "e) 8 de maio – Dia da Vitória na 2ª Guerra Mundial;",
+                "f) 11 de junho – Dia da Batalha Naval do Riachuelo na Guerra da Tríplice Aliança;",
+                "g) 25 de agosto – Dia do Soldado;",
+                "h) 23 de outubro – Dia do Aviador;",
+                "i) 19 de novembro – Dia da Bandeira Nacional;",
+                "j) 13 de dezembro – Dia do Marinheiro;",
+                "l) 16 de dezembro – Dia do Reservista; e",
+                "m) dia do aniversário da unidade;",
+                "III - datas comemorativas:",
+                "a) 8 de fevereiro – Dia do Magistério;",
+                "b) 13 de fevereiro – Dia do Serviço de Assistência Religiosa;",
+                "c) 10 de abril – Dia da Arma de Engenharia;",
+                "d) 12 de abril – Dia do Serviço de Intendência;",
+                "e) 5 de maio – Dia da Arma de Comunicações;",
+                "f) 10 de maio – Dia da Arma de Cavalaria;",
+                "g) 24 de maio – Dia da Arma de Infantaria;",
+                "h) 27 de maio – Dia do Serviço de Saúde;",
+                "i) 10 de junho – Dia da Arma de Artilharia;",
+                "j) 3 de agosto – Dia do Quadro de Engenheiros Militares;",
+                "l) 2 de outubro – Dia do Quadro Complementar de Oficiais;",
+                "m) 30 de outubro – Dia do Quadro de Material Bélico;",
+                "n) 24 de novembro – Dia do Quadro Auxiliar de Oficiais;",
+                "o) 27 de novembro – Dia da Intentona Comunista de 1935; e",
+                "p) dia da incorporação dos conscritos."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 339",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 340. Nos feriados nacionais e nas datas festivas de 19 de abril, 25 de agosto e 19 de novembro não há expediente nem instrução, limitando-se as atividades aos festejos militares programados.",
+              "dispositivos": [
+                "§ 1º Nos dias de ponto facultativo, o expediente transcorre de acordo com as disposições em vigor do Poder Executivo e as determinações do Comandante do Exército. Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003. - 99",
+                "§ 2 º Na data festiva correspondente ao aniversário da OM, além das festividades comemorativas pode haver ou não expediente, a critério do Cmt U.",
+                "§ 3º As atividades a que se refere este artigo são realizadas na data comemorada, não devendo haver transferência de dia para a realização dos festejos.",
+                "§ 4 º Nos feriados estaduais e municipais não há expediente nas OM localizadas nos municípios alcançados por aquelas determinações governamentais.",
+                "§ 5 º São normais o expediente e a instrução nas datas festivas e comemorativas não citadas nos caput, § 2º e § 4º deste artigo.",
+                "§ 6 º As prescrições deste artigo não se aplicam quando da realização de manobras, exercícios de longa duração e situações extraordinárias da tropa."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 340",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 341. As festas militares realizam-se segundo programa pré-estabelecido pelo Cmt U, aprovado, se for o caso, pela autoridade imediatamente superior, e podem compreender, principalmente:",
+              "dispositivos": [
+                "I - formatura da unidade ou de um dos seus elementos;",
+                "II - uma parte recreativa, constituída de provas de hipismo, atletismo, tiro, esgrima, jogos esportivos e outros de natureza militar;",
+                "III - uma parte ilustrativa constituída de conferências ou palestras, em que se relembrem não apenas a data comemorada, como outros fatos notáveis da História Nacional, especialmente os que se relacionem com os feitos memoráveis de nossa História Militar;",
+                "IV - visita ao espaço cultural porventura existente na OM, preferencialmente inserida nos eventos citados nos incisos I e III deste artigo; e",
+                "V - reuniões internas, de caráter social, às quais podem comparecer civis.",
+                "Parágrafo único. As comemorações de glórias e feitos militares têm caráter estritamente nacional, evitando-se manifestações que possam ferir suscetibilidades patrióticas de representantes estrangeiros, principalmente quando estes a elas comparecerem."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 341",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 342. Nas festas militares são rigorosamente observados os princípios de sobriedade, evitando-se os exageros, sempre nocivos, dispendiosos e incompatíveis com a conduta militar.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 342",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Das Festas Nacionais e Militares",
+              "caput": "Art. 343. Em dias anteriores às datas a comemorar, devem ser realizadas nas SU dissertações sobre o fato histórico, de modo a preparar o espírito do soldado para bem compreender o sentido da comemoração.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 343",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Datas específicas do Exército (estrutura reaproveitável)",
+              "caput": "Art. 344. O dia 7 de setembro é consagrado como Dia da Pátria e as festividades e solenidades realizadas nesse dia têm caráter eminentemente nacional.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 344",
+              "match": "parcial"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Datas específicas do Exército (estrutura reaproveitável)",
+              "caput": "Art. 345. A Semana da Pátria é constituída pelas comemorações realizadas durante o Dia da Pátria e em dias anteriores, as quais compreendem uma série de solenidades, inclusive palestras relativas ao fato histórico da proclamação da independência política e ao desenvolvimento do Brasil.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 345",
+              "match": "parcial"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Datas específicas do Exército (estrutura reaproveitável)",
+              "caput": "Art. 346. O dia 19 de novembro é consagrado como Dia da Bandeira, sendo comemorado de acordo com as prescrições do R-2.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 346",
+              "match": "parcial"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Datas específicas do Exército (estrutura reaproveitável)",
+              "caput": "Art. 347. O dia 19 de abril, data em que se comemora a I Batalha de Guararapes, travada em 1648, é consagrado como o Dia do Exército Brasileiro.",
+              "dispositivos": [
+                "§ 1º Este dia é festivo e solenemente comemorado nas OM, ressaltando-se os feitos de Guararapes - “berço da nacionalidade e do Exército Brasileiro”.",
+                "§ 2 º Nas Gu Mil, as comemorações são coordenadas pelos respectivos Cmt, com a participação de todas as OM nelas sediadas."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 347",
+              "match": "parcial"
+            },
+            {
+              "heading": "Tít. VI, Cap. IV — Datas específicas do Exército (estrutura reaproveitável)",
+              "caput": "Art. 348. O dia 25 de agosto, data em que se comemora o nascimento do Marechal Luís Alves de Lima e Silva – o Duque de Caxias – é consagrado como o Dia do Soldado – Festa de Caxias. 100 – Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003.",
+              "dispositivos": [
+                "§ 1º Este dia é festivo e solenemente comemorado nas OM, ressaltando-se as qualidades de cidadão exemplar, de patriota insigne e de soldado heróico que caracterizaram aquele grande chefe militar e o tornaram um dos maiores vultos da História Nacional.",
+                "§ 2 º Nas Gu Mil, as comemorações são coordenadas pelos respectivos Cmt, com a participação de todas as OM nelas sediadas."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 348",
+              "match": "parcial"
+            },
+            {
+              "heading": "Tít. IX, Cap. VIII — Das Honras Militares (remete a outro regulamento)",
+              "caput": "Art. 461. As honras militares são manifestações coletivas de respeito que se tributam aos militares das Forças Armadas, consoante a hierarquia, às altas autoridades civis e aos símbolos nacionais, segundo as prescrições do R-2.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 461",
+              "match": "parcial"
+            },
+            {
+              "heading": "Tít. IX, Cap. VIII — Das Honras Militares (remete a outro regulamento)",
+              "caput": "Art. 462. O cerimonial militar, regulado pelo R-2, tem por objetivo dar a maior solenidade possível a determinados atos da vida militar ou nacional, cujo alto significado convém ser ressaltado.",
+              "dispositivos": [
+                "§ 1º Nas fortificações e nas embarcações pertencentes ao Exército são observadas, se for o caso, as regras estabelecidas no “Cerimonial Marítimo Brasileiro”.",
+                "§ 2º Nas cerimônias militares são obedecidas, também, as “Normas do Cerimonial Público da República Federativa do Brasil e Ordem Geral de Precedência”, no que for aplicável. Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003. - 117"
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 462",
+              "match": "parcial"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "reg:ensino-instrucao",
@@ -15645,6 +15878,420 @@
               "caput": "Art. 82 As permutas de serviço, somente serão permitidas com autorização do COCI. Assunção e Passagem do Serviço",
               "dispositivos": [],
               "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 82",
+              "match": "exata"
+            }
+          ]
+        },
+        "risg": {
+          "name": "Exército Brasileiro",
+          "abbr": "RISG",
+          "docLabel": "RISG — R-1 do Exército Brasileiro (Portaria SGEx nº 51/2003)",
+          "excerpts": [
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 364. Cargo militar é o conjunto de atribuições, deveres e responsabilidades cometido ao militar em serviço ativo.",
+              "dispositivos": [
+                "§ 1 º Os cargos militares encontram-se especificados nos QC e QCP ou definidos ou caracterizados como tal em outros dispositivos legais.",
+                "§ 2 º Os cargos militares são providos com pessoal que satisfaça o grau hierárquico, a qualificação e as habilitações exigidas para o seu desempenho, previstos nos respectivos QCP.",
+                "§ 3º Quando, por ocasião do provimento efetivo de cargos, ocorrer que um militar deva ficar, funcionalmente, subordinado a um outro de menor precedência hierárquica, aplicam-se as seguintes regras:",
+                "I - o Cmt (Ch ou Dir) deve realizar as transferências internas necessárias para evitar essa situação;",
+                "II - quando não for possível realizar as transferências internas, em dec orrência da habilitação de um deles:",
+                "a) o de maior precedência hierárquica passa à situação de adido ao comando (chefia ou direção), podendo permanecer, entretanto, no exercício do cargo; e",
+                "b) nas relações funcionais e de serviço, ambos observam os preceitos de respeito e camaradagem e as ordens têm a forma de solicitação, as quais, no entanto, não podem deixar de ser cumpridas;",
+                "III - se o mais moderno for o Cmt (Ch ou Dir), os casos de responsabilidade funcional e disciplinar são submetidos à consideração da autoridade imediatamente superior."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 364",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 365. Função militar é o exercício das obrigações inerentes ao cargo militar.",
+              "dispositivos": [
+                "§ 1º A entrada no exercício da função ocorre quando o militar passa a executar as medidas necessárias ao desempenho de suas novas atribuições no local de atividade própria, assumindo, efetivamente, as responsabilidades do cargo ou encargo.",
+                "§ 2º O militar que, por sua atuação, se tornar incompatível com o cargo ou demonstrar incapacidade para o exercício de suas funções militares deve ser afastado do cargo.",
+                "§ 3 º Nenhuma atribuição pode ser cometida ao militar afastado das suas funções por incompatibilidade, antes do término do processo a que estiver sujeito."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 365",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 366. As obrigações que, por generalidade, peculiaridade, duração, vulto ou natureza, não são catalogadas em QC, QCP ou outro dispositivo legal, são cumpridas como encargos, incumbências, comissões, serviço ou atividade, militares ou de natureza militar.",
+              "dispositivos": [
+                "Parágrafo único. Para as obrigações enumeradas neste artigo, aplica-se, no que couber, o disposto para “cargo militar\". Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003. - 103"
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 366",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 367. “Adido” é a situação especial e transitória do militar que, sem integrar o efetivo de uma OM, está a ela vinculado por ato de autoridade competente.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 367",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 368. “Adido como se efetivo fosse” é a situação especial e transitória do militar que, sem que haja vaga em uma OM, para seu grau hierárquico, qualificação ou habilitações, nela permanece ou é para ela movimentado; nessa situação o militar é considerado para todos os efeitos como integrante da OM.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 368",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 369. “Excedente” é a situação especial e transitória a que o militar passa automaticamente nos casos previstos no E-1.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 369",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 370. “À disposição” é a situação em que se encontra o militar a serviço de órgão ou autoridade a que não esteja diretamente subordinado.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 370",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 371. “Efetivo” é a situação do militar nomeado ou designado para exercer um cargo, quando satisfaz aos requisitos de grau hierárquico, qualificação e habilitações.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 371",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 372. QO é o documento que estabelece as missões das OM e a organização, o pessoal e o material que devem possuir.",
+              "dispositivos": [
+                "§ 1º Nas OM operacionais, o QO é composto por base doutrinária, estrutura organizacional, QC e QDM.",
+                "§ 2º Nas OM não operacionais, a base doutrinária é substituída pelo regulamento específico."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 372",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 373. QDM é o documento em que é especificada a distribuição pormenorizada do material atribuído ao pessoal e às frações de uma OM, bem como são fixadas as normas de distribuição dos diversos itens de material.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 373",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 374. QCP é o documento que prevê os cargos que possui uma OM, permitindo seu funcionamento em tempo de paz, expressando as supressões ou os acréscimos necessários nos cargos dos respectivos QC, indispensáveis ao atendimento das peculiaridades da OM.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 374",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. I — Do Cargo e da Função Militar",
+              "caput": "Art. 375. QLPC é o documento que define, para determinada OM, o efetivo civil destinado ao desempenho de atividades administrativas em tempo de paz. Das Normas Gerais para Substituições Temporárias",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 375",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 376. Substituição temporária é a realizada pelo militar quando, em caráter transitório, exerce cargo ou responde por função ou encargo atribuídos privativamente a militar de grau hierárquico superior ou igual ao seu, sendo-lhe atribuídas todas as responsabilidades inerentes ao cargo.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 376",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 377. O cargo militar é considerado vago a partir de sua criação até que um militar dele tome posse efetivamente, voltando a estar vago quando o militar que o exerce efetivamente seja exonerado ou o deixe por ordem expressa de autoridade competente.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 377",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 378. Aplicam-se às substituições subseqüentes as mesmas prescrições referentes à substituição inicial que as motivou.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 378",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 379. Respeitado o disposto nos arts. 386 e 390 deste Regulamento, as substituições temporárias ocorrem por motivo de:",
+              "dispositivos": [
+                "I - cargo vago;",
+                "II - afastamento do cargo, do ocupante efetivo ou interino, por prazo superior a trinta dias; ou",
+                "III - afastamento do cargo, do ocupante efetivo ou interino, por prazo inferior a trinta dias ou por férias. 104 – Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003.",
+                "§ 1º Nos casos dos incisos I e II deste artigo, o substituto assume o cargo interinamente.",
+                "§ 2º No caso do inciso III deste artigo, o substituto responde pela função."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 379",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 380. Afastado o ocupante do cargo, por quaisquer dos motivos constantes do art. 379 deste Regulamento, sua substituição dá-se conforme o previsto neste Regulamento, exercendo o cargo ou respondendo pela função em questão o militar de maior precedência hierárquica.",
+              "dispositivos": [
+                "Parágrafo único. Em tempo de paz, não há substituição de oficial ou aspirante-a-oficial por praças de qualquer graduação, podendo estas, entretanto, responder nos impedimentos momentâneos daqueles militares."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 380",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 381. Concorrem às substituições temporárias todos os militares prontos para o serviço, os adidos como se efetivos fossem e os excedentes.",
+              "dispositivos": [
+                "Parágrafo único. Os militares adidos, os à disposição, os que não estejam prontos para o serviço e os da reserva remunerada designados para o serviço ativo não concorrem às substituições temporárias."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 381",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 382. Quando existir dúvida quanto a quem cabe, em caráter temporário, exercer determinado cargo, ou responder por determinada função, deve-se consultar o escalão imediatamente superior, mantendo-se no exercício do cargo ou respondendo pela função o militar já designado, salvo quando isto acarretar incompatibilidade hierárquica.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 382",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 383. Todas as substituições temporárias são publicadas em BI/OM, sendo as do Cmt (Ch ou Dir) comunicadas pelo meio mais rápido à autoridade imediatamente superior. Das Substituições nas Gu Mil e nos Elementos de Tropa Destacados",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 383",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 384. A substituição de Cmt Gu Mil, quando oficial-general, é realizada pelo oficial- general que lhe segue em hierarquia e, na falta deste, sucessivamente, pelos oficiais-generais de precedência decrescente.",
+              "dispositivos": [
+                "Parágrafo único. Inexistindo oficial-general, cabe exercer o cargo ou responder pelo comando da Gu o oficial subordinado e de maior hierarquia, respeitadas as condições previstas no art. 305 deste Regulamento."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 384",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)",
+              "caput": "Art. 385. No caso de tropa destacada de OM, as substituições temporárias são reguladas como se segue:",
+              "dispositivos": [
+                "I - os oficiais do elemento de tropa destacada não concorrem às substituições que se verificarem na OM, exceto às de Cmt U e SCmt U;",
+                "II - do mesmo modo, os oficiais em serviço na sede da OM não concorrem às substituições no elemento de tropa destacado;",
+                "III - as substituições de praças são feitas por aquelas pertencentes ao elemento de tropa destacado, obedecidas as prescrições deste Regulamento; e",
+                "IV - o Cmt OM pode propor as transferências que se tornarem necessárias quando no elemento de tropa destacado não existir praça de determinada qualificação para concorrer à substituição e esta se fizer necessária. Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003. - 105 Das Substituições Temporárias entre Oficiais-Generais"
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 385",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 391. Nas OM, o Cmt é substituído pelo SCmt ou, na falta deste, pelo oficial de maior hierarquia, efetivo e pronto, habilitado para o exercício do cargo.",
+              "dispositivos": [
+                "Parágrafo único. Os oficiais do QAO concorrem apenas às substituições temporárias de Cmt OM quando todos oficiais subordinados forem desse mesmo Quadro."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 391",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 392. A substituição de oficiais chefes de assessoria, seção ou divisão faz-se por oficial subordinado de maior precedência hierárquica, respeitada a formação exigida para o ocupante efetivo do cargo.",
+              "dispositivos": [
+                "Parágrafo único. As substituições referentes aos cargos de que trata este artigo são feitas:",
+                "I - no âmbito da assessoria, seção ou divisão; e 106 – Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003.",
+                "II - na falta de oficiais dentro da assessoria, seção ou divisão, por oficiais da OM, na forma deste artigo."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 392",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 393. Quando não existirem oficiais em número suficiente para atender, sem acumular, às substituições que se impuserem, o Cmt, Ch ou Dir, respeitada a precedência hierárquica e a Arma, o Serviço ou Quadro previstos para o desempenho do cargo, deve designar um oficial para responder pelas funções.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 393",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 394. Quando um oficial promovido não for movimentado, e não existir incompatibilidade hierárquica para a sua permanência no cargo em que se encontrar, este não é:",
+              "dispositivos": [
+                "I - exonerado ou dispensado do cargo ou comissão que exerce;",
+                "II - excluído do estado efetivo da OM a que pertence; ou",
+                "III - substituído temporariamente."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 394",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 395. As substituições temporárias referentes a cargos privativos de oficiais do QEMA são feitas:",
+              "dispositivos": [
+                "I - no âmbito das assessorias, seções ou divisões, por oficiais do QEMA; e",
+                "II - na falta de oficiais do QEMA dentro da:",
+                "a) assessoria, seção ou divisão, por oficiais do QEMA da OM; e",
+                "b) OM, responde pelas funções um oficial superior designado pelo Cmt (Ch ou Dir), respeitada a precedência hierárquica, se for o caso."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 395",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 396. Os oficiais com o Curso de Comando e Estado-Maior podem assumir qualquer cargo que importe em comando, chefia ou direção.",
+              "dispositivos": [
+                "§ 1 º Os oficiais do QEMA não concorrem às substituições de cargos privativos de outros quadros funcionais (Quadro Ordinário, QSG e QSP).",
+                "§ 2º Na falta absoluta de oficial de outros quadros com a habilitação exigida, as obrigações administrativas e disciplinares do cargo serão cometidas, como encargos, a um oficial do QEMA designado pelo Cmt, Ch ou Dir."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 396",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 397. Na inexistência de oficial de Intendência na OM, o Cmt U designa para responder pela função um oficial de outro Serviço, de Arma, do QMB, do QCO ou do QAO, este último oriundo, de preferência, do Serviço de Intendência.",
+              "dispositivos": [
+                "Parágrafo único. Se o exercício das obrigações, na forma de que trata o presente artigo, prejudicar o funcionamento da OM, o Cmt U deve solicitar providências ao escalão superior."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 397",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 398. Na falta de oficial do Serviço de Saúde, particularmente de médicos, para as substituições que se impuserem, o Cmt U recorre ao escalão superior, solicitando que um oficial de Saúde da mesma Gu receba o encargo de exercer, cumulativamente, as funções de natureza técnica na sua OM.",
+              "dispositivos": [
+                "Parágrafo único. No caso de existir uma única OM na Gu, o escalão superior, uma vez cientificado, deve tomar as providências cabíveis, com a urgência necessária."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 398",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 399. Quando, em decorrência de substituições temporárias, resultar que algum oficial fique, necessariamente, sob a jurisdição funcional de outro de menor precedência hierárquica, o de maior posto ou mais antigo não fica subordinado hierarquicamente ao mais moderno, aplicando-se, porém o previsto nas alíneas do inciso II do § 3º do art. 364 deste Regulamento.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 399",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 400. Os oficiais do QAO não concorrem às substituições que acarretem o exercício de funções privativas de postos inexistentes no seu quadro.",
+              "dispositivos": [
+                "§ 1º Os oficiais do QAO somente respondem pelas funções de Cmt SU quando não existir, na unidade, oficial habilitado para o exercício destas. Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003. - 107",
+                "§ 2º Os cargos atribuídos aos oficiais do QAO são exercidos, indistintamente, por capitão, primeiro e segundo-tenente do respectivo Quadro, respeitadas as habilitações necessárias."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 400",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 401. Os cargos distribuídos a oficial subalterno das Armas, do QMB, do QEM e dos Serviços são exercidos, independentemente, por aspirante-a-oficial, segundo e primeiro-tenente, respeitadas as habilitações necessárias.",
+              "dispositivos": [
+                "Parágrafo único. Os aspirantes-a-oficial concorrem às substituições temporárias como se fossem oficiais subalternos, excetuando-se as relativas aos cargos previstos para oficiais superiores."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 401",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 402. Se um oficial for movimentado da OM, enquanto estiver afastado do seu cargo, deve continuar a ser o ocupante efetivo até o seu retorno, ocasião em que transmitirá o cargo e passará as funções, a carga e os encargos ao seu substituto eventual.",
+              "dispositivos": [
+                "Parágrafo único. Se durante o período de afastamento apresentar-se um novo titular efetivo, este assume o cargo sem aguardar o retorno do oficial afastado."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 402",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 403. Respeitada a habilitação exigida para o cargo, as substituições temporárias entre oficiais são feitas:",
+              "dispositivos": [
+                "I - no âmbito da OM, nos casos de corpos de tropa de valor igual ou menor que batalhão; e",
+                "II - no âmbito da assessoria, seção, divisão ou outra repartição interna, nos casos de OM de valor superior a batalhão.",
+                "Parágrafo único. Na impossibilidade de ser realizada a substituição temporária no âmbito prescrito neste artigo, recorre-se ao escalão imediatamente superior evitando-se, tanto quanto possível, a movimentação interna de oficiais."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 403",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 404. Quando existir um cargo cujas obrigações só podem ser exercidas por oficial com determinada habilitação técnica, não havendo militar assim habilitado na OM, não ocorre substituição; as obrigações administrativas e disciplinares do cargo são cometidas como encargos a um oficial designado pelo Cmt (Ch ou Dir), devendo este último solicitar providências ao escalão imediatamente superior.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 404",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 405. Nas unidades logísticas, os oficiais dos Serviços e do QMB concorrem também às substituições temporárias do Cmt U e do SCmt U, de acordo com a precedência hierárquica. Das Substituições Temporárias Entre Praças",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 405",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 406. Respeitada a qualificação exigida para o cargo, as substituições temporárias entre praças são realizadas:",
+              "dispositivos": [
+                "I - no âmbito da unidade, quando o cargo a ser preenchido for no comando (chefia ou direção) da OM;",
+                "II - nos corpos de tropa, no âmbito da SU, quando o cargo a ser ocupado for na SU; e",
+                "III - nos demais casos, no menor âmbito possível.",
+                "Parágrafo único. Salvo na hipótese do inciso I deste artigo, são vedadas as transferências internas de praças no âmbito da OM para fins de substituições temporárias."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 406",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 407. O sargento ajudante é substituído pelo 1 º Sgt mais antigo da OM, com a qualificação exigida para o cargo.",
+              "dispositivos": [
+                "Parágrafo único. Nas unidades logísticas esta substituição temporária toca ao 1 º Sgt mais antigo da OM, qualquer que seja a sua qualificação. 108 – Separata ao Boletim do Exército Nº 51, de 19 de dezembro de 2003."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 407",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 408. Na SU, a substituição temporária do Sgte é efetuada pelo Sgt de maior precedência hierárquica, com a qualificação exigida, pronto na SU.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 408",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 409. Quando não existir praça devidamente qualificada e a substituição se impuser, esta pode ser feita sob a forma de:",
+              "dispositivos": [
+                "I - acumulação, desde que os cargos a acumular sejam dentro da mesma SU ou repartição interna; e",
+                "II - responder pelas funções, quando a acumulação contrariar o previsto nos inciso I e parágrafo único deste artigo.",
+                "Parágrafo único. Na situação de que trata o presente artigo, a praça não pode acumular mais de dois cargos."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 409",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças",
+              "caput": "Art. 410. Em tempo de paz, não há substituição de subtenentes e sargentos por cabos e destes por soldados.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 410",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. III — Da Qualificação das Praças",
+              "caput": "Art. 411. As praças são grupadas por qualificações militares.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 411",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. III — Da Qualificação das Praças",
+              "caput": "Art. 412. As QM são atribuídas às praças de acordo com o resultado obtido em cursos militares ou civis promovidos pelo Exército, ou ainda em provas organizadas pela Força, estas últimas sempre que o recrutamento para certas qualificações deva recair sobre pessoal já habilitado na vida civil.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 412",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. III — Da Qualificação das Praças",
+              "caput": "Art. 413. As QM são:",
+              "dispositivos": [
+                "I - qualificação militar de subtenentes e sargentos – é a caracterização dos conhecimentos básicos com afinidades de natureza tática e/ou técnica, encarada dentro de uma idéia de emprego de Arma, Quadro ou Serviço, resultante da reunião de vários cargos militares correlatos; e",
+                "II - qualificação militar dos cabos, soldados e taifeiros:",
+                "a) qualificação militar geral – é a caracterização de conhecimentos gerais e básicos, com afinidades de natureza tática e/ou técnica, dentro de uma idéia de emprego de Arma, Quadro ou Serviço e resultante da reunião de várias QMP correlatas;",
+                "b) qualificação militar particular – é a caracterização de conhecimentos específicos, necessários a determinados cargos ou grupos de cargos, para os quais é exigida a mesma habilitação de formação, orientando a instrução, a formação e o acesso dos cabos, soldados e taifeiros; e",
+                "c) qualificação singular é o grupamento de QMP específicas, independentes entre si."
+              ],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 413",
+              "match": "exata"
+            },
+            {
+              "heading": "Tít. VIII, Cap. III — Da Qualificação das Praças",
+              "caput": "Art. 414. A discriminação das QM, bem como condições de ingresso nas mesmas, obedecem à regulamentação e às instruções próprias.",
+              "dispositivos": [],
+              "source": "cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. 414",
               "match": "exata"
             }
           ]

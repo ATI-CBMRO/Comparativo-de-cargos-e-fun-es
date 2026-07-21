@@ -433,6 +433,22 @@ CONFIG = {
         ],
         'overrides': {},
     },
+    'risg': {
+        'md': 'RISG.md',
+        'src': 'cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. {n}',
+        'slice_between': ('TÍTULO I', None),
+        'ranges': [
+            (321, 327, 'cerimonial-honras', 'exata', 'Tít. VI, Cap. I — Dos Símbolos Nacionais'),
+            (337, 343, 'cerimonial-honras', 'exata', 'Tít. VI, Cap. IV — Das Festas Nacionais e Militares'),
+            (344, 348, 'cerimonial-honras', 'parcial', 'Tít. VI, Cap. IV — Datas específicas do Exército (estrutura reaproveitável)'),
+            (461, 462, 'cerimonial-honras', 'parcial', 'Tít. IX, Cap. VIII — Das Honras Militares (remete a outro regulamento)'),
+            (364, 375, 'pessoal-quadros', 'exata', 'Tít. VIII, Cap. I — Do Cargo e da Função Militar'),
+            (376, 385, 'pessoal-quadros', 'exata', 'Tít. VIII, Cap. II, Seções I-II — Substituições (normas gerais e guarnições)'),
+            (391, 410, 'pessoal-quadros', 'exata', 'Tít. VIII, Cap. II, Seções IV-V — Substituições entre oficiais e praças'),
+            (411, 414, 'pessoal-quadros', 'exata', 'Tít. VIII, Cap. III — Da Qualificação das Praças'),
+        ],
+        'overrides': {},
+    },
 }
 
 PR_BLOCK_THEME = [

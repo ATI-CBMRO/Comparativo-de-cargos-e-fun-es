@@ -51,6 +51,7 @@ REGULAMENTO_DOCS = {
     "al_no06": {"label": "Norma Operacional nº 06 (CBMAL)", "md": "Alagoas - Norma Operacional 06.md"},
     "al_no07": {"label": "Norma Operacional nº 07 (CBMAL)", "md": "Alagoas - Norma Operacional 07.md"},
     "al_no11": {"label": "Norma Operacional nº 11 — Canil (CBMAL)", "md": "Alagoas - Norma Operacional 11.md"},
+    "risg": {"label": "RISG — R-1 do Exército Brasileiro (Portaria SGEx nº 51/2003)", "md": "RISG.md"},
 }
 
 # ── Fonte primária POR TEMA (decisão do panorama: nunca "MT por padrão") ─────────────

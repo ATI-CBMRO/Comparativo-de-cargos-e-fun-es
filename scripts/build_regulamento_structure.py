@@ -30,6 +30,7 @@ STATE_NAMES = {
     'ba': 'Bahia', 'rr': 'Roraima', 'to': 'Tocantins',
     'al_no03': 'Alagoas', 'al_no04': 'Alagoas', 'al_no06': 'Alagoas',
     'al_no07': 'Alagoas', 'al_no11': 'Alagoas',
+    'risg': 'Exército Brasileiro',
 }
 
 # 2 Partes do Regulamento (spec 2026-07-21): Parte I — Geral | Parte II — do Serviço.

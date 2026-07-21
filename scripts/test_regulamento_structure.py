@@ -40,7 +40,8 @@ for c in d['chapters']:
         assert uf in REGULAMENTO_DOCS and uf != c['primary']['uf']
         assert alt['excerpts'], f'alternativa vazia: {c["themeKey"]}/{uf}'
         for ex in alt['excerpts']:
-            assert ex['source'].startswith('cf. CBM')
+            assert ex['source'].startswith('cf. CBM') or ex['source'].startswith('cf. Exército Brasileiro'), \
+                ex['source']
 
 # Nenhum capítulo sem conteúdo primário — exceto os explicitamente pendentes (Fase 2).
 PENDENTES_OK = set()  # Fase 2A preencheu central-operacoes-193; nenhum tema pode ficar vazio
@@ -55,6 +56,9 @@ assert _co['primary']['uf'] == 'ba', _co['primary']['uf']
 assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoes-193'
 
 assert len(edit_ids) >= 410, f'regressão: {len(edit_ids)} artigos (esperado >= 410)'
+
+for c in d['chapters']:
+    assert c['primary']['uf'] != 'risg', f"RISG não pode ser fonte primária: {c['themeKey']}"
 
 print(f"OK — scripts/test_regulamento_structure.py ({len(d['chapters'])} capítulos, "
       f"{len(edit_ids)} artigos, schema compatível com buildArticles)")
