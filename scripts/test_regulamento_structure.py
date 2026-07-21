@@ -43,10 +43,16 @@ for c in d['chapters']:
             assert ex['source'].startswith('cf. CBM')
 
 # Nenhum capítulo sem conteúdo primário — exceto os explicitamente pendentes (Fase 2).
-PENDENTES_OK = {'central-operacoes-193'}
+PENDENTES_OK = set()  # Fase 2A preencheu central-operacoes-193; nenhum tema pode ficar vazio
 vazios = [c['themeKey'] for c in d['chapters']
           if not c['articles'] and c['themeKey'] not in PENDENTES_OK]
 assert not vazios, f'capítulos sem artigos: {vazios}'
+
+_co = next(c for c in d['chapters'] if c['themeKey'] == 'central-operacoes-193')
+assert _co['articles'], 'central-operacoes-193 sem artigos (Fase 2A deveria ter preenchido)'
+assert _co['parte'] == 'servico', _co['parte']
+assert _co['primary']['uf'] == 'ba', _co['primary']['uf']
+assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoes-193'
 
 assert len(edit_ids) >= 410, f'regressão: {len(edit_ids)} artigos (esperado >= 410)'
 

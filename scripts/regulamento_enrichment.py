@@ -67,7 +67,7 @@ PRIMARY_SOURCE = {
     "seguranca-contra-incendio": "mt",
     "pessoal-quadros": "rn",
     "disposicoes-finais": "mt",
-    "central-operacoes-193": "to",  # SIOP/COCB (Anexo 2 da Diretriz) — fonte mais dedicada ao 193; conteúdo entra na Fase 2
+    "central-operacoes-193": "ba",  # Fase 2A: Bahia/CICOM (Supervisor e Operador de Teledespacho)
 }
 
 # ── Adaptações p/ RO (aplicadas NO BUILD apenas ao texto proposto da minuta; o

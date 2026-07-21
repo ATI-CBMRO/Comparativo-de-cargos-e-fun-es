@@ -283,6 +283,30 @@ CONFIG = {
         'src': 'cf. CBMPR, Atribuições institucionais (portal oficial), bloco "{bloco}", Art. {n}',
         'blocks': True,
     },
+    'ba': {
+        'md': 'Bahia - Regulamento de Serviço.md',
+        'src': 'cf. CBMBA, Norma Operacional nº 01/2021, Art. {n}',
+        'slice_between': ('R E S O L V E', None),
+        # Cabeçalho de página repetido NO MEIO dos artigos (Art. 9º e 18 são longos):
+        'strip_lines': [re.compile(r'^\s*NORMA OPERACIONAL\b'), re.compile(r'^\s*Pág\.\s*\d+\s*$')],
+        'ranges': [
+            (8, 9, 'central-operacoes-193', 'exata', 'NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)'),
+            (18, 18, 'central-operacoes-193', 'exata', 'NOp 01/2021, Seção X — Operador do Teledespacho (CICOM)'),
+        ],
+        'overrides': {},
+    },
+    'to': {
+        'md': 'Tocantins - Regulamento de Serviço.md',
+        'src': 'cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. {n}',
+        # Anexo 2 reinicia a numeração em "Art. 1º"; fatiar a partir do cabeçalho do Anexo 2
+        # para não colidir com os artigos homônimos do corpo principal. Marcador conferido no Step 4.
+        'slice_between': ('ANEXO 2', None),
+        'strip_lines': [re.compile(r'^\s*QUARTEL DO COMANDO GERAL\b')],
+        'ranges': [
+            (12, 14, 'central-operacoes-193', 'exata', 'NGA SIOP (Anexo 2) — Coordenador de Operações, Despachante e Atendente'),
+        ],
+        'overrides': {},
+    },
 }
 
 PR_BLOCK_THEME = [
