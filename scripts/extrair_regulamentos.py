@@ -277,6 +277,18 @@ CONFIG = {
             (3445, 3651, 'pessoal-quadros', 'parcial', 'TÍT. II, Cap. III — Diretoria de Inativos e Pensionistas'),
         ],
     },
+    # ES: Normas Gerais de Ação — "Art. N" REINICIA a cada órgão/unidade; recorte cirúrgico
+    # por linha absoluta (CAT, 1º BBM como representante dos 6 batalhões, núcleo do CERD).
+    'es': {
+        'md': 'Espírito Santo - Normas Gerais de Ação.md',
+        'src': 'cf. CBMES, Normas Gerais de Ação (2023), Art. {n}',
+        'line_slices': [
+            (11053, 11136, 'seguranca-contra-incendio', 'exata', 'CAT — Gerência de Vistorias e Seção de Fiscalização'),
+            (12424, 12454, 'servico-operacional', 'exata', '1º BBM — Prontidão Operacional e Seção de Operações de Salvamento (SOS)'),
+            (13573, 13701, 'servico-operacional', 'exata', '1º BBM — Chefe da SOS e Fiscal do Salvamar'),
+            (32072, 32246, 'servico-operacional', 'exata', 'CERD — Finalidade, composição e atribuições gerais'),
+        ],
+    },
     # PR: coletânea do portal — blocos "Atribuições …" com numeração que REINICIA.
     'pr': {
         'md': 'Paraná - Regimento Interno.md',
