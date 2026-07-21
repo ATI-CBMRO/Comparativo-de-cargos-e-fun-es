@@ -8,7 +8,7 @@
   tema `uniformes-apresentacao` (sem achado forte no RISG nas faixas lidas, segue com 1 artigo
   só de SE). Origem: spec 2026-07-21 (Fatias B/C/D).
 - [ ] **Regulamento — Fase 3**: curadoria no Obsidian (notas por tema/artigo com backlinks entre estados). Origem: spec 2026-07-21.
-- [ ] **Regulamento — herdar 2 Partes** nas telas Subsídio/Diagramas/Revisão (spec §5.4 — fora da Fase 1). Origem: spec 2026-07-21.
+- [ ] **Regulamento — Diagramas**: gerar `commandChart` do Regulamento (bloqueia `RegDiagramas`, hoje "em breve"; não é sobre as 2 Partes — é sobre gerar um dado que não existe). Origem: pendência antiga, reconfirmada 2026-07-21.
 - [ ] **Cenário atual — Subsídio** (`/minuta/subsidio` e `/regulamento/subsidio`): ainda gated no atual. Depende de gerar o `comparativo_minuta` do atual (comparação dispositivo-a-dispositivo com outros estados). Origem: sessão cenários 15-16/07/2026.
 - [ ] Organograma — validar a **classificação por natureza** (Direção/Apoio/Execução) dos órgãos: foi inferida, não veio rotulada da LOB. Origem: sessão organograma 10/07/2026.
 - [ ] Organograma (aba Projeção territorial) — validar o **mapeamento proposto** GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova). Depende da redação final da nova LOB. Origem: 10/07/2026.
@@ -19,6 +19,13 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Regulamento — 2 Partes herdadas no Subsídio e na Revisão**: `RegulamentoComparator`
+  (aba Regulamento do Subsídio) agrupa capítulos por Parte antes do agrupamento temático
+  existente; `Revisao` (modo Regulamento) exibe as faixas "PARTE I — GERAL"/"PARTE II — DO
+  SERVIÇO" na troca de Parte. Regimento Interno confirmado intocado visualmente (prova por
+  screenshot). `RegDiagramas` segue fora — bloqueado por `commandChart` ausente, pendência
+  própria não relacionada. Spec e plano em `docs/superpowers/specs/` e
+  `docs/superpowers/plans/2026-07-21-fase1-heranca-2partes-telas.md` — 21/07/2026.
 - [x] **Regulamento — Fase 2, Fatias B+C+D** (reforço verbatim, sem mudar fonte primária de
   nenhum tema): Fatia B — resto de Bahia (35 art.), Roraima inteiro (97 art.), resto do Anexo 2
   de Tocantins (15 art.), 5 normas de Alagoas (42 art.) reforçando a Parte II. Fatia C — RISG do
