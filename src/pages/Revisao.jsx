@@ -21,6 +21,7 @@ import RevisaoModal from '../components/RevisaoModal.jsx'
 import RevisaoChapterRail from '../components/RevisaoChapterRail.jsx'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
+import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
@@ -87,6 +88,7 @@ export default function Revisao({ initialDoc } = {}) {
   const counts = useMemo(() => countByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const grupos = useMemo(() => groupByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const articles = useMemo(() => (data ? buildArticles(data) : []), [data])
+  const parteDe = useMemo(() => (docId === 'reg' ? parteByChapterTitle(data) : {}), [docId, data])
   const fechados = useMemo(() => {
     let n = 0
     finalsForDoc.forEach(f => { if (f.status === 'fechado') n += 1 })
@@ -213,11 +215,23 @@ export default function Revisao({ initialDoc } = {}) {
             onSelect={scrollToChapter}
           />
           <div className="rev-doc">
-          {articles.map(art => {
+          {(() => {
+            let ultimaParte = null
+            return articles.map(art => {
             const caputId = caputDispositivoId(art.editId)
             const caputLabel = `${articleLabel(art.number)}`
+            const parte = art.chapterTitle ? parteDe[art.chapterTitle] : null
+            const faixa = parte && parte !== ultimaParte ? PARTE_HEADERS[parte] : null
+            if (parte) ultimaParte = parte
             return (
               <div key={art.number} className="rev-art">
+                {faixa && (
+                  <div style={{
+                    textAlign: 'center', fontWeight: 800, fontSize: 15, letterSpacing: 1,
+                    color: 'var(--cbm-red-700)', borderTop: '2px solid var(--cbm-red-700)',
+                    borderBottom: '2px solid var(--cbm-red-700)', padding: '8px 0', margin: '20px 0 12px',
+                  }}>{faixa}</div>
+                )}
                 {art.chapterTitle && (
                   <p
                     className="rev-chapter"
@@ -252,7 +266,8 @@ export default function Revisao({ initialDoc } = {}) {
                 })}
               </div>
             )
-          })}
+            })
+          })()}
           </div>
         </div>
         )}
