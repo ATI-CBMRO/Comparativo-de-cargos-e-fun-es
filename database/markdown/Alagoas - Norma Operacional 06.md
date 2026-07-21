@@ -1,0 +1,198 @@
+# Alagoas - Norma Operacional 06
+
+*Documento extraído de: `Alagoas - Norma Operacional 06.pdf`*
+*Total de páginas: 5*
+
+---
+
+## Página 1
+
+ 
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL  
+ 
+NORMA OPERACIONAL DE BOMBEIRO N.º 06 – SUBCOMANDO GERAL 
+Dispõe sobre o item 11 da Diretriz Operacional de Bombeiro n.º 
+05 (controle da rotina diária dos Postos de Bombeiros) , 
+instituindo o Relatório de Serviço Diário. 
+O Subcomandante Geral do Corpo de Bombeiros  Militar de Alagoas, no  uso 
+da atribuição que lhe confere o art. 9, inciso IX, do Regimento Interno do CBMAL, 
+aprovado pelo Decreto n.° 408, de 08 de novembro de 2001 , combinado com o item 
+4.3 da Norma Geral Operacion al, aprovada pela Portaria nº 207/2012 - GCG, 
+resolve: 
+Art. 1º Instituir o Relatório de Serviço Diário, anexo único desta norma 
+operacional. 
+§ 1º O Relatório de Serviço Diário é um documento oficial instituído pela 
+Administração Pública, servindo como base legal para subsidia r procedimentos 
+administrativos. 
+§ 2º No modelo adotado como anexo único estão os dados mínimos a serem 
+inseridos no relatório oficial, podendo os diversos órgãos do CBMAL sugerir a 
+inserção, no surgimento de eventual necessidade, de novos campos. Tais sugestões 
+serão implementadas após aprovação deste Subcomando que autorizará, por meio 
+de despacho, o órgão competente alterá-lo.  
+Art. 2º Deverá ser preenchido e publica do no sistema de informação 
+operacional utilizado pelo CBMAL pelos Comandantes de Prontidão, fiscalizado pelo 
+Comandante de Posto e Comandante de Subgrupamento. 
+Art. 3º O Comandante de Posto de Bombeiros deverá, b aseado nos dados 
+dos Relatórios de Serviço Diário, elaborar e fazer publicar no sistema de informação 
+operacional utilizado pelo CBMAL, até o quinto dia útil de cada mês, o Relatório 
+Mensal de Serviços do Posto de Bombeiros sob sua responsabilidade. 
+
+---
+
+## Página 2
+
+ 
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL  
+ 
+  
+ 
+ 
+Art. 4º Esta Norma Operacional entra em vigor na data da sua publicação. 
+Art. 5º Revogam-se as disposições em contrário. 
+Quartel em Maceió-AL, 10 de maio de 2013. 
+ 
+ 
+____________________________________________________ 
+GLÁUCIO LUIZ DO ESPÍRITO SANTO ALCÂNTARA–Cel. BM 
+Subcomandante Geral CBMAL 
+ 
+* Publicada no Boletim Geral Ostensivo n.º 87, de 10 de maio de 2013. 
+ 
+
+---
+
+## Página 3
+
+ 1 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+NOME DO GRUPAMENTO 
+NOME DO POSTO 
+ 
+RELATÓRIO DE SERVIÇO DIÁRIO Nº _____ / ANO _______ 
+1. TERMO DE ABERTURA: 
+Às (horas) do dia (data) do corrente (dia) assumi o serviço de (comandante de prontidão) com todas as ordens em vigor. 
+2. EFETIVO DE SERVIÇO: 
+Atividade Quantidade Discriminação (Posto ou Graduação / Nome) 
+Oficial de Serviço   
+Guarnição de Resgate   
+Guarnição de Combate a Incêndio   
+Guarnição de Salvamento 
+Aquático 
+  
+Central de Operações e 
+Comunicações 
+  
+Serviço de Atendimento Técnico   
+Administração   
+Total   
+3. PRESTAÇÃO DE SERVIÇOS CONTÍNUOS (CBMAL - CONTRATANTE): 
+3.1 Fornecimento de refeições prontas 
+ Gêneros Alimentícios Quantidade 
+Café da Manhã   
+Almoço   
+Jantar    
+ 
+3.2 Coleta, transporte e incineração de resíduos do serviço de saúde  
+Quantidade de bombonas Capacidade das bombonas Recolhimento 
+Nível das 
+bombonas na 
+passagem de 
+serviço 
+    
+    
+ 
+3.3 Consumo de energia elétrica 
+KW Inicial KW Final Consumo Diário 
+   
+ 
+3.4 Consumo de água 
+M3 Inicial M3 Final Consumo Diário 
+   
+ 
+3.5 Telefonia fixa e móvel disponível para o serviço diário 
+Tipo Quantidade Alterações Crédito 
+Inicial Final 
+Fixo   --- --- 
+Móvel     
+ 
+3.6 Combustível 
+Viatura Início do Serviço Final do Serviço Abastecimento (litros) KM Tanque (L) KM Tanque (L) 
+      
+      
+      
+ 
+
+
+---
+
+## Página 4
+
+ 2 
+      
+ 
+3.7 Alterações diversas nas prestações de serviços/ outros serviços prestados: 
+ 
+ 
+4. ALTERAÇÃO DE MATERIAIS / EQUIPAMENTOS: 
+ 
+ 
+ 
+5. SITUAÇÃO DAS VIATURAS: 
+5.1 Operando:  
+5.2 Baixada:  
+5.3 Reserva:  
+5.4 Acidentada:  
+6. ORDENS VERBAIS RECEBIDAS: 
+ 
+ 
+ 
+7. ORDENS ESCRITAS RECEBIDAS: 
+ 
+ 
+ 
+8. ARMAR GERAL: 
+8.1 POP Executado: 
+8.2 Instrutor responsável: 
+8.3 Participantes: 
+8.4 Materiais / Equipamentos utilizados:  
+ 
+8.5 Observações: 
+ 
+ 
+9. TRABALHO DE INSTRUÇÃO DE BOMBEIRO: 
+9.1 Módulo: 
+9.2 Lição: 
+9.3 Instrutor Responsável: 
+9.4 Participantes: 
+9.5 Materiais / Equipamentos utilizados: 
+9.6 Observações: 
+ 
+10. EDUAÇÃO FÍSICA: 
+10.1 Instrutor Responsável: 
+10.2 Participantes:  
+10.3 Observações 
+ 
+10. COMENTÁRIO DE OCORRÊNCIAS DE VULTO ATENDIDAS (SUCINTO): 
+ 
+ 
+ 
+11. PASSAGEM DE SERVIÇO: 
+Às (horas) do dia (data) do corrente (dia) passei o serviço de (função) com todas as ordens em vigor. 
+CMT DE PRONTIDÃO - QUE SAI CMT DE PRONTIDÃO - QUE ENTRA VISTO -CMT DO PB 
+   
+
+---
+
+## Página 5
+
+ 3 
+ 
+
+---
+

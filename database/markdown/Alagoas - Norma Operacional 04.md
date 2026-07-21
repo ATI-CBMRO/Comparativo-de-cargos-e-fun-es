@@ -1,0 +1,192 @@
+# Alagoas - Norma Operacional 04
+
+*Documento extraído de: `Alagoas - Norma Operacional 04.pdf`*
+*Total de páginas: 5*
+
+---
+
+## Página 1
+
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL 
+ 
+ 
+NORMA OPERACIONAL DE BOMBEIRO N.º 04 – SUBCOMANDO GERAL 
+ 
+Dispõe sobre o item 4 da Diretriz Operacional de Bombeiro n.º 
+05 (atividade diária do serviço operacional nos Postos de 
+Bombeiros), definindo o cronograma de atividades diárias 
+para o efetivo de serviço operacional, bem como sugerindo o 
+horário para o seu cumprimento.  
+ 
+O Subcomandante Geral do Corpo de Bombeiros Militar de Alagoas, no 
+uso da atribuição que lhe confere o art. 9, inciso IX, do Regimento Interno do 
+CBMAL, aprovado pelo Decreto n.° 408, de 08 de novembro de 2001, combinado 
+com o item 4.3 da Norma Geral Operacional, aprovada pela Portaria nº 207/2012 - 
+GCG, resolve:  
+Art. 1º Instituir o seguinte cronograma de atividades diárias para o serviço 
+operacional dos Postos de Bombeiros, a ser cumprido na íntegra:  
+I- 07 (sete) horas - Revista matinal, observando que:  
+a) deverá ser presidida pelo Comandante mais antigo das duas 
+prontidões;  
+b) as prontidões (a que sai e a que entra em serviço) se postarão frente a 
+frente, por ordem de guarnições das viaturas que as compõem, sendo 
+que a prontidão que entr a em serviço deverá estar com seu 
+Equipamento de Proteção Individual completo;  
+b) as guarnições deverão entrar em forma por colunas, cabendo ao mais 
+antigo a apresentação das alterações ao seu Comandante de 
+Prontidão.  
+c) sucessivamente, por ordem de guar nição, cada Comandante fará em 
+voz audível a passagem do comando da guarnição (do que sai ao que 
+
+---
+
+## Página 2
+
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL 
+ 
+entra em serviço), transmitindo neste momento alguma novidade da 
+guarnição ou viatura, se houver;  
+d) será entoada uma canção (Hino Nacional, canção do Soldado  do Fogo 
+ou canção da U.Op, se houver) e, logo em seguida, será dado o 
+comando de “fora de forma”, ficando as prontidões à disposição de 
+seus respectivos comandantes (de acordo com o Regulamento de 
+Continências).  
+II- 07 (sete) horas e 30 (trinta) minutos - Conferência dos 
+equipamentos e materiais, manutenção de 1º escalão e 
+deslocamento para o teste de funcionamento das viaturas, 
+observando que:  
+a) a conferência dos equipamentos e materiais e a manutenção de 1º 
+escalão deve ser realizada pelas guarnições que entram e saem de 
+serviço, e supervisionada pelo Comandante de Socorro, quando 
+houver;  
+b) no deslocamento para o teste de funcionamento das viaturas, apen as 
+com as guarnições que entra m de serviço, em percurso pré-
+estabelecido pelo Comandante do Posto de Bombeiros, deve ser 
+incluído no trajeto, preferencialmente, um posto de combustível e um 
+hidrante;  
+III- Imediatamente após o retorno do deslocamento para teste de 
+funcionamento das viaturas - Armar-geral (prática diária de 
+montagem de equipamentos ou simulação simples de ocorrências das 
+diversas áreas especializadas de bombeiros), independente do módulo 
+em que estiver o Trabalho de Instrução de Bombeiro, a ser ministrada 
+pelo Comandante de Socorro, Comandante da  Prontidão ou Bombeiro 
+especializado;  
+
+---
+
+## Página 3
+
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL 
+ 
+IV- 10 (dez) horas e 30 (trinta) minutos - Trabalho de Instrução de 
+Bombeiro, com cronograma de instruções a ser definido em norma 
+operacional de bombeiro específica para o assunto;  
+III- 09 (nove) horas - Trabalho de Instrução de Bombeiro, com 
+cronograma de instruções a ser definido em norma operacional de 
+bombeiro específica para o assunto; 
+IV- 10 (dez) horas - Armar-geral (prática de montagem de equipamentos 
+ou simulação simples de ocorrências das diversas áreas especializadas 
+de bombeiros), independente do módulo em que estiver o Trabalho de 
+Instrução de Bombeiro, a ser ministrada pelo Comandante de Socorro, 
+Comandante da Prontidão ou Bombeiro especializado, às sextas-feiras;  
+V- 12 (doze) horas - Almoço, observando que, após sua realização, a 
+cozinha, seus utensílios e o refeitório devem ser limpos e estar prontos 
+para o jantar, sob a responsabilidade do Comandante de Prontidão 
+(devendo contar com a ajuda dos demais integrantes da p rontidão). 
+Poderá ter início antecipado, sem prejuízo da rotina diária;  
+VI- 15 (quinze) horas - Revista vespertina, onde serão transmitidas 
+ordens, se houver, e feita a leitura de Boletim Interno e/ou Boletim Geral 
+Ostensivo, pelo Comandante da Prontidão;  
+VII- 15 (quinze) horas e 30 (trinta) minutos - Educação Física , 
+estabelecida por normatização específica;  
+VIII- 17 (dezessete horas) - Período para prática desportiva livre;  
+VI- 16 (dezesseis) horas - Educação Física , estabelecida por 
+normatização específica. Após o prática de educação física poderá 
+haver a prática de atividade desportiva livre, sob supervisão do mil itar 
+mais antigo de serviço no Posto de Bombeiro;  
+IX - 19 (dezenove) horas - Jantar, observando que, após sua realização, a 
+cozinha, seus utensílios e o refeitório deverão estar limpos e prontos 
+
+---
+
+## Página 4
+
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL 
+ 
+para o café matinal, sob a responsabilidade do Comandante de 
+Prontidão (devendo contar com a ajuda dos demais integrantes da 
+Prontidão).  
+VII - 18 (dezoito) horas  - Jantar, observando que, após sua realização, a 
+cozinha, seus utensílios e o refeitório deve rão estar limpos e prontos 
+para o café matinal, sob a responsabilidade do Comandante de 
+Prontidão (devendo contar com a ajuda dos demais integrantes da 
+Prontidão). Poderá ter início antecipado, sem prejuízo da rotina diária; 
+VIII- 20 (vinte) horas e 30 (trinta) minutos - Revista noturna . 
+Imediatamente após a revista deverá ser realizado o aquecimento das 
+viaturas que não se deslocaram durante o dia , podendo ser feito com o 
+veículo parado ou em percurso pré estabelecido;  
+IX- 21 (vinte e uma) horas - Aquecimento das viaturas, podendo ser 
+feito com o veículo parado ou em percurso pré estabelecido;  
+IX- 22 (vinte e duas) horas - Silêncio, observando que a partir deste 
+horário deve cessar toda atividade que possa vir a perturbar  o descanso 
+do homem, e que o silêncio somente será quebrado em situações de 
+emergência (alarme, ordem de superior que priorize a quebra do silêncio 
+etc.);  
+X- 05 (cinco) horas e 30 (trinta) minutos - Alvorada, observando que 
+será dada a alvorada (por meio  de voz ou de sinal sonoro), sendo que 
+no tempo de 30 minutos a tropa terá condições de fazer a higiene 
+pessoal e estar pronta;  
+XI- 06 (seis) horas - Faxina geral das dependências comuns do Posto 
+de Bombeiros, a ser realizada por todo o efetivo da prontid ão que “sai 
+de serviço”;  
+XII- 06 (seis) horas e 30 (trinta) minutos - Café da manhã, observando 
+que após o café da manhã, a cozinha, seus utensílios e o refeitório 
+
+---
+
+## Página 5
+
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA DEFESA SOCIAL 
+CORPO DE BOMBEIROS MILITAR 
+SUBCOMANDO GERAL 
+ 
+devem ser limpos e estar prontos para o almoço, sob a responsabilidade 
+do Comandante de Pro ntidão (devendo contar com a ajuda dos demais 
+integrantes da prontidão).  
+Art. 2º Em razão de particularidades específicas do posto de bombeiros, 
+tais como condições de transporte para a tropa, proximidade de aeroportos, orla 
+marítima e autódromos, os horá rios da rotina diária poderão ser adaptados para 
+completar as atividades de capacitação profissional inerentes ao treinamento dos 
+bombeiros, além das suas atividades operacionais, desde que autorizados pelo 
+Comandante do Grupamento de Bombeiros, e cumprida  toda a rotina, devendo 
+este ajuste estar em ordem afixada em mural para efeito de fiscalização.  
+Art. 3º Esta Norma Operacional entrará em vigor na data da sua 
+publicação.  
+Art. 4º Revogam-se as disposições em contrário.  
+Quartel em Maceió-AL, 03 de junho de 2013.  
+ 
+____________________________________________________ 
+GLÁUCIO LUIZ DO ESPÍRITO SANTO ALCÂNTARA–Cel. BM 
+Subcomandante Geral CBMAL 
+ 
+ 
+* Publicada no Boletim Geral Ostensivo n.º 87, de 10 de maio de 2013. 
+* Revisão Publicada no Boletim Geral Ostensivo n.º 101, de 04 de junho de 
+2013. 
+ 
+
+---
+

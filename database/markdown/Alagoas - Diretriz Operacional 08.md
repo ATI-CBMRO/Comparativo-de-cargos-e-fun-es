@@ -1,0 +1,538 @@
+# Alagoas - Diretriz Operacional 08
+
+*Documento extraído de: `Alagoas - Diretriz Operacional 08.pdf`*
+*Total de páginas: 8*
+
+---
+
+## Página 1
+
+32 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+ 
+O Comandante-Geral do Corpo de Bombeiros Militar de Alagoas, no uso das atribuições 
+legais que lhe são outorgadas pela legislação em vigor, de acordo com o Art. 8º, V, da Lei 
+7.444, de 28 de dezembro de 2012 (Lei de Organização Básica do CBMAL), em 
+conformidade com o que consta nos processo sei nº E:02100.0000001671/2022, 
+RESOLVE: 
+ 
+Tornar pública a indicação do militar abaixo relacionado, para participar do Projeto da 
+Assistência Espiritual. 
+ 
+ CAP QOBM/Cp Mat. 27294-9 JUDÁ BARBOSA LEITE   
+ 
+ 
+g.2 PORTARIA Nº 093/2022 – GCG 
+ 
+DIRETRIZ OPERACIONAL DE BOMBEIRO (DOB) Nº 08 
+ 
+O Comandante -Geral do CBMAL, Coronel QOBM/Comb. Mat. 11393 -0 ANDRÉ 
+ALESSANDRO MADEIRO DE OLIVEIRA, no uso de suas atribuições legais que lhe confere 
+os arts. 5º e 12, inciso II, alíneas “a” e “e”; do Decreto Estadual nº. 33.376/89, combinado 
+com art. 52 da Lei 7.444, de 28 de dezembro de 2012, RESOLVE:  
+ 
+Art. 1º. Instituir a Diretriz Operacional de Bombeiro (DOB Nº 08) do Serviço de Salvamento 
+Aquático e mergulho no CBMAL. 
+ 
+SERVIÇO DE SALVAMENTO AQUÁTICO E MERGULHO NO CBMAL 
+ 
+SUMÁRIO 
+ 
+1. Finalidade 
+2. Aplicação 
+3. Definições e atribuições 
+4. Condições Gerais 
+5. Condições específicas 
+6. Recursos Humanos 
+7. Recursos Materiais 
+8. Serviço de Salvamento Aquático 
+9. Serviço de Mergulho 
+ Referências 
+ 
+1 FINALIDADE 
+ 
+A presente Diretriz Operacional de Bombeiros (DOB -08) tem por finalidade  estabelecer 
+critérios técnicos claros, com vistas à regulamentação e padronização das atividades de 
+salvamento aquático e mergulho, que garantam  a eficiência e a eficácia do serviço 
+operacional do Corpo de Bombeiros Militar de Alagoas - CBMAL, com base em um sistema 
+organizado que contemple o  bombeiro, o equipamento,o atendimento das emergências e 
+permita a análise e potencialização de riscos gerados. 
+ 
+2  APLICAÇÃO 
+ 
+Aplica-se a todas as Organizações Bombeiro Militar (OBM) do CBMAL que desempenham 
+o Serviço de Salvamento Aquático e Mergulho no território do Estado de Alagoas. 
+ 
+3  DEFINIÇÕES E ATRIBUIÇÕES 
+ 
+
+---
+
+## Página 2
+
+33 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+ 
+3.1 Para efeitos desta DOB, aplicam-se as definições constantes na Diretriz Operacional 
+de Bombeiros (DOB) nº 01 – Terminologia Operacional de Bombeiros, além das definições 
+e atribuições apresentadas abaixo: 
+ 
+3.1.1 Comandante de Prontidão: Será exercido cumulativamente pelo Comandante de 
+Guarnição mais antigo que estiver de serviço na prontidão. 
+ 
+Atribuindo-lhe: 
+ 
+a) Repassar, verbalmente, toda alteração encontrada imediatamente ao Comandante 
+de Socorro que estiver de serviço em sua área; e, por escrito, à sua OBM; 
+b) colocar o efetivo de serviço em forma, conferir e apresentar ao oficial de  serviço 
+sempre que solicitado; 
+c) estimular as instruções e treinamentos durante os serviços, e fazer cumprir as  
+determinações superiores referentes a ensino e instrução; 
+d) fiscalizar limpeza e manutenção das instalações; 
+e) coordenar e fiscalizar as atividades de permanência na OBM onde não houver  
+serviço de Guarda; e 
+f) fiscalizar o cumprimento das Normas a que estiver subordinado. 
+ 
+3.1.2 Comandante de Guarniç ão: Será exercido pelo militar mais antigo  que estiver de 
+serviço em cada guarnição. 
+ 
+Atribuindo-lhe: 
+ 
+a) executar a atividade de salvamento aquático; 
+b) acompanhar a conferência dos materiais durante a passagem de serviço, e  
+providenciar a reposição, reparo ou manutenção necessários; 
+c) verificar junto ao condutor da viatura as alterações existentes e providenciar os  
+reparos necessários; 
+d) conferir o estado dos equipamentos de proteção individual do efetivo de sua  
+guarnição; 
+e) rever os procedimentos operacionais padrões em vigor com sua guarnição sempre 
+que necessário, objetivando melhor qualidade de atendimento; 
+f) zelar pela excelência durante o atendimento de uma ocorrência, corrigindo posturas 
+e atitudes dos demais integrantes da guarnição; 
+g) preencher no sistema d e informação operacional utilizado pelo CBMAL os  dados 
+relacionados ao atendimento das ocorrências em que atuou; e 
+h) informar ao Comandante de Prontidão, por escrito, as alterações relacionadas  ao 
+serviço, para que se tomem as devidas providências ou se cientifiquem do fato. 
+ 
+3.1.3 Condutor de embarcação : é o profissional Bombeiro Militar do Quadro de  Praças 
+QPBM/ Combatente,  qualificado e  legalmente habilitado  a conduzir  as viaturas de 
+salvamento aquático no âmbito do Corpo de Bombeiros Militar de Alagoas. 
+ 
+Atribuindo-lhe: 
+ 
+a) executar a atividade de salvamento aquático; 
+b) inspecionar as embarcações antes da partida e durante o percurso, familiarizando-
+se com suas particularidades, cumprindo fielmente as normas de  manutenção de primeiro 
+escalão; 
+c) zelar pela embarcação, inclusive cuidando das ferramentas, acessórios,  
+documentos e impressos; 
+d) preencher, no que lhe couber, documentos relativos ao uso e defeitos mecânicos da 
+embarcação, inclusive acidente; 
+
+---
+
+## Página 3
+
+34 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+e) conduzir corretamente a embarcação, obedecendo às disposições das normas  
+vigentes; 
+f) efetuar reparações de emergência durante o percurso; e 
+g) efetuar a manutenção de primeiro escalão e limpeza da embarcação. 
+ 
+3.1.4 Guarda -vidas (GV) : é o profissional Bombeiro Militar treinado e habilitado  na 
+prevenção e salvamento de vidas humanas nos ambientes aquáticos. 
+ 
+Atribuindo-lhe: 
+ 
+a) executar a atividade de salvamento aquático; 
+b) deverá inspecionar e zelar pela integridade dos acessórios e equipamentos  
+existentes para o serviço de Guarda -vidas, cabendo o militar mais antig o fazer a  devida 
+comunicação, através de expediente, de quaisquer avarias existentes; 
+c) o mais antigo presente nos postos deverá informar os componentes da guarnição 
+à central de operações; 
+d) deverá informar ao comandante de guarnição quaisquer alterações ou 
+necessidades relacionadas ao serviço; 
+e) executar ações preventivas, demarcações de áreas de risco, orientações ao público 
+e o salvamento em sua área de atuação; 
+f) o militar mais antigo do posto deve orientar e fiscalizar os demais guarda-vidas sobre 
+a boa prática do serviço, utilização de EPI e sobre o comportamento dentro  dos preceitos 
+éticos e organizacionais do CBMAL; 
+g) é dever dos Guarda -vidas após as atividades preventivas ou atendimento às  
+ocorrências coletar as informações referentes ao fato e passá-las ao militar mais antigo do 
+posto, a fim de fazer o registro e repassá-lo à central; 
+h) o militar mais antigo deve fazer o registro de todas as ações preventivas e  
+atendimentos feitos pelos Guarda-vidas da guarnição repassando-os aos atendentes da 
+central; 
+i) caso haja alguma alteração ou acidente envolvendo os guarda-vidas dos postos ou 
+estrutura do Posto, o militar mais antigo deverá relatar o ocorrido por  meio de parte ou 
+informação e, se possível, fazer o registro fotográfico, anexando-o ao documento; 
+j) preencher os relatórios de ocorrência; 
+k) manter atualizados os materiais de Salvamento Aquático e APH nas viaturas e  
+postos dos Guarda-Vidas; 
+ 
+3.1.5 Mergulhador: é o profissional Bombeiro Militar, membro da equipe de mergulho da 
+OBM, qualificado e legalmente habilitado para os exercícios da atividade de mergulho. 
+ 
+Atribuindo-lhe: 
+ 
+a) Realizar conferência diária bem como manutenção de primeiro escalão nos equipamentos 
+de mergulho; 
+c) preencher os relatórios de ocorrência; 
+d) realizar atividade de busca e resgate em meio subaquático; 
+e) Conduzir treinamentos na área de mergulho durante o serviço. 
+ 
+3.1.6 Fiel: é o profissional Bombeiro Militar, membro da equipe de mergulho da  OBM, 
+qualificado e legalmente habilitado para auxiliar nas atividades de mergulho. 
+ 
+Atribuindo-lhe: 
+ 
+a) Realizar conferência diária dos equipamentos de mergulho, juntamente com o  
+mergulhador; 
+b) Auxiliar na realização manutenção de primeiro escalão dos equipamentos de  
+mergulho; 
+
+---
+
+## Página 4
+
+35 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+c) Participar das instruções conduzidas pelos mergulhadores; 
+d) Realizar atividade de orientação das buscas; 
+e) Auxiliar os mergulhadores nas suas atividades. 
+ 
+3.2. No Grupamento de Salvamento Aquático, enquanto não houver serviço de guarda, os 
+integrantes das guarnições de serviço, exceto o comandante da prontidão e os condutores 
+de viatura, concorrerão a uma escala de permanência, a fim de manterem a segurança das 
+instalações 
+ 
+4 CONDIÇÕES GERAIS 
+ 
+4.1 O serviço de salvamento aquático pela sua característica de multiplicidade de eventos 
+necessita de uma divisão técnica que possibilite o  planejamento adequado a cada um dos 
+subsistemas a serem atendidos. 
+ 
+4.2 A organização das operações aquáticas serão relatadas a partir da  fixação de seis  
+subsistemas que irão abranger os níveis operacionais e sua disciplina técnica e logística, 
+conforme segue: 
+ 
+a) Salvamento em águas abrigadas; 
+b) Salvamento em águas abertas; 
+c) Salvamento em águas com correnteza; 
+d) Salvamento em acidentes com embarcações; 
+e) Salvamento em enchentes e inundações; 
+f) Operações de Mergulho (OM). 
+ 
+5. CONDIÇÕES ESPECÍFICAS 
+ 
+5.1  O desenvolvimento de uma organização operacional abrangendo os seis subsistemas 
+busca especificar  todas as  possibilidades dos  eventos em  águas que estando 
+individualizados poderão no planejamento estratégico obter as suas reais previsões técnicas 
+e logísticas, conforme definição abaixo: 
+ 
+5.1.1. Subsistema de  salvamento em  águas abrigadas : os eventos  em águas 
+abrigadas encontram na característica do fácil acesso o principal potencializador da 
+ocorrência de acidentes, se caracteriza por águas represadas, grandes represas, lagos de 
+pequeno porte  e lagoas  de barragens hidrelétricas que associados às características 
+climáticas das regiões mais quentes do Estado  acabam gerando significativa amostragem 
+estatística. 
+5.1.2. Subsistema de salvamento em águas abertas: estes locais na sua maioria se 
+constituem por praias, destinadas a prática de esportes aquáticos de lazer, entretenimento 
+ou atividade laboral de sobrevivência  pela pesca, além da  própria navegação, estando  
+nestes eventos a probabilidade de incidentes. 
+5.1.3. Subsistema de salvamento em águas com correnteza: os locais com correnteza 
+criam ambientes que requerem planejamento preventivo especializado, quando explorados 
+comercialmente ficando mais clara esta definição na  catalogação destes locais  que são 
+corredeiras para prática de rafting ou canoagem. 
+5.1.4. Subsistema de Salvamento  em acidentes  com embarcações : trata-se de 
+cenário oriundo de ocorrências com embarcações, tais como  acidente náutico, colisão ou 
+naufrágio de embarcações. 
+5.1.5. Subsistema de Salvamento em enchentes e inundações: são ambientes urbanos 
+ou rurais atingidos por enchentes, inundações, alagamentos ou enxurradas. 
+5.1.6. Operação de Mergulho: toda aquela que envolve trabalhos submersos realizados 
+para localização e resgate de cadáveres, embarcações e também busca e recuperação de 
+objetos. 
+ 
+
+---
+
+## Página 5
+
+36 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+5.1.6.1. A atividade de mergulho se divide em: 
+ 
+a) Mergulho livre (ML); 
+b) Mergulho autônomo (MA); 
+c) Mergulho dependente (narguilê) (MD). 
+ 
+6. RECURSOS HUMANOS 
+ 
+Os Bombeiros militares devem possuir preparo físico, técnico e psicológico, zelar  pelo 
+aprimoramento constante  e devem  buscar a  especialização nos cursos  ofertados pela 
+corporação ou có-irmãs, classificados em: 
+ 
+1. Guarda-vidas: militar com curso de formação que contemple a disciplina  de 
+salvamento aquático; 
+2. Guarda-vidas especialista: militar c om curso de especialização em  salvamento 
+aquático; 
+3. Condutor de embarcação: guarda -vidas com habilitação exigida pela  Marinha do 
+Brasil; 
+4. Tripulante de embarcação: guarda -vidas com habilitação exigida pela  Marinha do 
+Brasil; 
+5. Mergulhador: militar com curso de especialização em mergulho; 
+6. Condutor de viatura: guarda -vidas com habilitação exigida pela legislação  
+vigente.Os militares deverão ser submetidos a instruções de salvamento aquático e  
+avaliações da sua aptidão física e técnica para a atividade de guarda-vidas. 
+ 
+7. RECURSOS MATERIAIS 
+ 
+Há a necessidade de se obter materiais específicos no intuito de melhorar as condições de 
+salvamento aquático/mergulho, o que refletirá na excelência da prestação do serviço bem 
+como agilidade no deslocamento e segurança, seja  através de acessórios, equipamentos 
+de proteção individual, embarcações ou viaturas. 
+ 
+7.1 Viaturas 
+ 
+As unidades que prestam o serviço de salvamento aquático/mergulho deverão possuir 
+viaturas operacionais adequadas para o transporte das guarnições e materiais relativos à 
+atividade. 
+Nas operações de enchentes deverão ser empregadas, preferencialmente,  viaturas com 
+chassi alto de modo a facilitar a transposição de áreas alagadas. 
+ 
+7.2 Equipamentos 
+ 
+7.2.1 Salvamento Aquático Apito; 
+ 
+Cadeira; 
+Flutuador; 
+Nadadeira; 
+Guarda-Sol; 
+Tenda pantográfica; 
+Kit Oxigenoterapia; 
+Kit Primeiros Socorros; 
+Máscara portátil para Ventilação (pocket mask); Óculos escuros 
+Placa de Sinalização; Prancha rígida longa Pranchão de Salvamento Protetor solar; 
+Rádio portátil. 
+ 
+ 
+
+---
+
+## Página 6
+
+37 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+ 
+7.2.2 Mergulho 
+ 
+Roupa de neoprene; 
+Roupa Seca; 
+Faca; 
+Colete equilibrador; Cilindro de Mergulho; Bail Out; 
+Regulador principal; Regulador reserva; Full face; 
+Manômetro; 
+Profundímetro; 
+Máscara semi-facial com snorkel; Cinto de lastros; 
+Lastros; 
+Luvas; 
+Lanternas; 
+Botas. 
+ 
+7.3 Viaturas 
+ 
+7.3.1 BIS - Bote Inflável de Salvamento; 
+7.3.2 MSA - Moto de Salvamento Aquática; 
+7.3.3 LSA - Lancha de Salvamento Aquático; 
+7.3.4 QS - Quadriciclo de Salvamento; 
+7.3.5 AR - Auto Resgate; 
+7.3.6 AS - Autossalvamento; 
+7.3.7 AM - Auto Mergulho; 
+7.3.8 Balsa salva-vidas; 
+7.3.9  Balsa Inflável para o Salvamento em Enchentes. 
+ 
+8. SERVIÇO DE SALVAMENTO AQUÁTICO 
+ 
+8.1 Salvamento Aquático 
+ 
+Consiste de todas as operações realizadas em rios, lagoas, represas, mar,  enchentes, 
+piscinas e outros mananciais de água, visando a prevenção da integridade física de pessoas 
+que se envolvam em ocorrências em que a água  seja o agente causador de incidentes e 
+compreende as seguintes atividades: 
+ 
+8.1.1. Prevenção de afogamento: 
+8.1.2. Resgate de pessoas em locais de risco no ambiente aquático; 
+8.1.3. Atendimento de vítimas diversas no ambiente aquático e região costeira; 
+8.1.4. Resgate de náufragos e/ou embarcações em situação de risco; 
+8.1.5. Salvamento de vítimas de afogamento. 
+ 
+8.2 Prevenção de afogamento 
+ 
+É qualquer medida com o objetivo de evitar o afogamento sem que haja contato físico entre 
+a vítima e o socorrista. Podem ser divididas em: 
+ 
+8.2.1. Prevenção ativa: qualquer ação de prevenção que inclua inalização de  risco ou 
+comportamento, tais como: sinalizar uma corrente de retorno, uma área  de risco, uma 
+profundidade na piscina, colocação de uma cerca, um ralo anti-hair, e outros. 
+8.2.2. Prevenção reativa: Qualquer ação de prevenção direcionada a um  indivíduo ou um 
+grupo com a intenção de interromper um afogamento iminente, tais como: o uso de apito ou 
+advertência de um Guarda-Vidas a um banhista em área de risco. 
+8.2.3. Setor de Prevenção : extensão de praia em que um Guarda -Vidas escalado  é 
+responsável pela segurança do banhista, sendo que o setor pode variar de acordo com os 
+
+---
+
+## Página 7
+
+38 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+riscos associados ao local, com a freqüência de banhistas, observados fatores qualitativos 
+e quantitativos. 
+ 
+8.3 Estrutura do Serviço de Salvamento Aquático no CBMAL 
+ 
+8.3.1 Estrutura Operacional: 
+ 
+O serviço de salvamento aquático no Estado de Alagoas, desenvolvido pelo  Corpo de 
+Bombeiros, está previsto na Lei Nº 7.444, de 28 de dezembro de 2012. 
+ 
+8.3.1.1. Para o cumprimento de suas missões legais na área de salvamento  aquático, o 
+CBMAL conta com o Grupamento de Salvamento Aquático (GSA), responsável pela Região 
+Metropolitana, como também os Grupamentos de Bombeiro Militar, responsáveis pelo 
+interior do Estado. 
+ 
+8.3.2 O serviço de salvamento aquático poderá se desenvolver por meio de  rondas 
+preventivas ou com postos de guarda vidas. 
+8.3.2.1 Rondas preventivas: são os deslocamentos realizados pelos guarda-vidas dentro ou 
+fora do manancial aquático para executar as ações de p revenção ativa e/ou reativa, além 
+de atuar no resgate ou salvamento, caso necessário. Podem  ser realizadas a pé, em 
+viaturas, em embarcações ou em aeronaves. 
+8.3.2.2 Posto de Guarda Vidas: Instalação física mínima destinada a servir de  apoio aos 
+Guarda Vidas. Os postos serão classificados quanto ao tipo e quanto 
+ao nível. 
+8.3.2.2.1 Quanto ao tipo: está relacionado ao tipo de estrutura física. 
+8.3.2.2.2 Quanto ao nível: está relacionado a quantidade de guarda -vidas e de  
+equipamentos disponíveis. 
+ 
+9. SERVIÇO DE MERGULHO 
+ 
+9.1 Mergulho Bombeiro Militar 
+ 
+Consiste em todas as operações submersas realizadas em rios, lagoas,  represas, mar,  
+enchentes, piscinas e outros mananciais de água, visando a localização e recuperação de 
+cadáveres, embarcações e bens, além de eventuais ocorrências emergenciais que visem o 
+resgate de pessoas e compreende as seguintes atividades: 
+ 
+9.1.1 Busca e Recuperação de cadáveres; 
+9.1.2 Busca e Recuperação de embarcações e objetos de maior porte; 
+9.1.3 Busca e Recuperação bens; 
+9.1.4 Busca e resgate de pessoas; 
+9.1.5 Atividades de prevenção, visando atender o público civil e militar que  desenvolve 
+atividade de mergulho. 
+ 
+9.2 Estrutura do Serviço de Mergulho 
+ 
+9.2.1. O serviço de mergulho no Estado de Alagoas, desenvolvido pelo Corpo de 
+Bombeiros, está previsto na Lei Nº 7.444, de 28 de dezembro de 2012. Para o cumprimento 
+de suas missões legais  na área de mergulho,  o CBMAL  conta com o Grupamento  de 
+Salvamento Aquático  (GSA), que mantém em  funcionamento equipe diária  para 
+atendimento de  eventuais ocorrências  que necessitem operações de mergulho e é 
+responsável pelo serviço em todo Estado. 
+ 
+REFERÊNCIAS 
+ 
+● Manual Operacional de Bombeiros - Guarda vidas. Corpo de Bombeiros Militar de 
+
+---
+
+## Página 8
+
+39 
+ 
+CORPO DE BOMBEIROS MILITAR DE ALAGOAS 
+BOLETIM GERAL OSTENSIVO - Nº 056 
+MACEIÓ-AL – 24 DE MARÇO DE 2022 
+ 
+ 
+Goiás, 30 de junho de 2017. 
+● Norma operacional n° 28 São Paulo 
+● NOB 27 provisório São Paulo 
+● DOB nº 03 CBMAL 
+● Manual de Emergências Aquáticas Szpilman. 
+ 
+ALUYSIO WANDERLEY DOS SANTOS – TC BM 
+Presidente da Comissão 
+ 
+THEMISSON DOS SANTOS VASCONCELOS – CAP BM 
+Membro da Comissão 
+ 
+RONALDO LISBOA DA SILVA JUNIOR – CAP BM 
+Membro da Comissão 
+ 
+DIEGO LIMA FERREIRA – CAP BM 
+Membro da Comissão 
+ 
+DIEGO PÉRCIA NAMÉ DE SOUZA FRANCO – 1º TEN BM 
+Membro da Comissão 
+ 
+Art. 2º.  Esta Portaria entra em vigor na data de sua publicação, revogando -se as 
+disposições em contrário. 
+ 
+REGISTRE-SE, PUBLIQUE-SE E CUMPRA-SE 
+ 
+ 
+4ª PARTE 
+JUSTIÇA, DISCIPLINA E ELOGIO 
+ 
+SEM ALTERAÇÃO 
+ 
+ 
+Quartel em Maceió-AL, _____/____/_____. 
+ 
+Confere com o original, 
+ 
+ 
+CARLOS GUSTAVO FERNANDES HOLMES BURITI – TEN CEL QOBM/COMB.  
+SECRETÁRIO GERAL 
+ 
+ 
+“Vidas alheias, riquezas salvar” 
+
+---
+

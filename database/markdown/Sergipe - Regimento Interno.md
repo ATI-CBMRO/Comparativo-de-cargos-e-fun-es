@@ -775,7 +775,7 @@ sobre o andamento da ocorrência, quando este não
 estiver presente no local;
 XIV. Informar ao Centro de Operações o desfecho
 final da ocorrência,
-XV.  Utilizar  e  exigir  de  todos  da  guarnição ,
+XV.  Utilizar  e  exigir  de  todos  da  guarnição,
 obrigatoriamente,  os  Equipamentos  de  Proteção
 Individual – EPI’s disponíveis nas ocorrências em
 que for empregado.
@@ -1417,7 +1417,7 @@ utilizados  por  OBM  especializada  e  quando
 necessário a utilização de Equipamento de Proteção
 Individual específico.
 Parágrafo  único.  Em  casos  excepcionais,
-devidamente  autoriz ado  pelo  DOp,  o  uniforme
+devidamente  autorizado  pelo  DOp,  o  uniforme
 poderá ser o de Passeio (3°C) ou outro previsto em
 regulamento.
 Capítulo VII: Da Rotina Diária das Unidades
@@ -1539,7 +1539,7 @@ acompanhado  dos  Comandantes  de  Guarnição
 supervisionar a conferência de todo o material.
 Seção IV: Do Pessoal de Serviço
 Art.  69.  O  bombeiro  militar  ao  entrar  de  serviço
-deverá  estar  preparado  físico ,  tecnicamente  e
+deverá  estar  preparado  físico,  tecnicamente e
 psicologicamente para a função que desempenhará,
 devendo conhecer todas as atribuições operacionais
 dela decorrentes.
@@ -1946,7 +1946,7 @@ psicossociais  devem  ser  atendidos  seguindo  os
 protocolos integrado SES/SSP e o do CBMSE.
 II. A equipe do SAMU deslocada para o atendimento
 local, verificando que há a possibilidade iminente de
-autoagressão  pel o  paciente  em  surto,  poderá,
+autoagressão  pelo  paciente  em  surto,  poderá,
 acionar o Corpo de Bombeiros Militar de Sergipe,
 através  do  CIOSP,  cabendo  ao  Supervisor  a
 liberação  da  equipe  para  atendimento,  após
@@ -2181,7 +2181,7 @@ Art. 137. A área de emergência básica será
 constituída de um espaço limitado, situada na área
 imediata  ao  foco  ou  cena  do  evento,  sendo
 destinado,  exclusivamente,  ao  pessoal  e  viaturas
-diretamente  envolvidos  nas  ações  de  socorro  a
+diretamente  envolvidos  nas  ações  de  socorro a
 vítimas e proteção de bens.
 Art. 138. A área de apoio emergencial ficará
 localizada no acesso contíguo a área de emergência
@@ -2218,7 +2218,7 @@ emergencial  onde  receberão  orientações  do
 Comandante  de  Operações,  quanto  ao  seu
 emprego e atuação.
 Art. 144. O  recurso  humano  extraordinário,
-voluntário  ou  não ,  ao  chegar  na  área  de  apoio
+voluntário  ou  não,  ao  chegar  na  área  de  apoio
 emergencial  deverá  ser  dividida  em  grupos,  os
 quais  serão  designados  a  exercer  uma  das
 seguintes atividades:
