@@ -27,6 +27,7 @@ THEMES = [
     ("seguranca-contra-incendio", "Da Segurança Contra Incêndio e Pânico", "Atividades Especializadas"),
     ("pessoal-quadros", "Do Pessoal e dos Quadros", "Pessoal"),
     ("disposicoes-finais", "Das Disposições Finais", "Fundamentos"),
+    ("central-operacoes-193", "Da Central de Operações e do Teledespacho", "Serviços"),
 ]
 
 THEME_KEYS = [t[0] for t in THEMES]
@@ -42,6 +43,9 @@ REGULAMENTO_DOCS = {
     "rn": {"label": "Regulamento Geral (Decreto nº 31.139/2021)", "md": "Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md"},
     "rs": {"label": "RI (Portaria nº 001/2025)", "md": "Rio Grande do Sul - Regimento Interno.md"},
     "se": {"label": "RISD (atual. 2022)", "md": "Sergipe - Regimento Interno.md"},
+    "ba": {"label": "Norma Operacional nº 01/2021 (CBMBA)", "md": "Bahia - Regulamento de Serviço.md"},
+    "rr": {"label": "INOp do Serviço Diário dos Oficiais (CBMRR)", "md": "Roraíma - Regulamento de Serviço.md"},
+    "to": {"label": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)", "md": "Tocantins - Regulamento de Serviço.md"},
 }
 
 # ── Fonte primária POR TEMA (decisão do panorama: nunca "MT por padrão") ─────────────
@@ -63,6 +67,7 @@ PRIMARY_SOURCE = {
     "seguranca-contra-incendio": "mt",
     "pessoal-quadros": "rn",
     "disposicoes-finais": "mt",
+    "central-operacoes-193": "to",  # SIOP/COCB (Anexo 2 da Diretriz) — fonte mais dedicada ao 193; conteúdo entra na Fase 2
 }
 
 # ── Adaptações p/ RO (aplicadas NO BUILD apenas ao texto proposto da minuta; o

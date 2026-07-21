@@ -11,6 +11,14 @@ d = json.load(open(ROOT / 'database' / 'regulamento_structure.json', encoding='u
 assert d['title'].startswith('Minuta de Regulamento Geral')
 assert len(d['chapters']) == len(THEME_KEYS)
 
+# 2 Partes (spec 2026-07-21): todo capítulo tem parte válida e a ordem é Parte I → Parte II.
+for c in d['chapters']:
+    assert c.get('parte') in ('geral', 'servico'), f"capítulo sem parte: {c['themeKey']}"
+ordem = [c['parte'] for c in d['chapters']]
+assert ordem == sorted(ordem, key=lambda p: {'geral': 0, 'servico': 1}[p]), \
+    f'capítulo geral depois de servico: {ordem}'
+assert 'central-operacoes-193' in [c['themeKey'] for c in d['chapters']]
+
 edit_ids = set()
 for c in d['chapters']:
     assert c['kind'] == 'articles'
@@ -34,9 +42,13 @@ for c in d['chapters']:
         for ex in alt['excerpts']:
             assert ex['source'].startswith('cf. CBM')
 
-# Nenhum capítulo pode ficar sem conteúdo primário (cobertura confirmada no panorama).
-vazios = [c['themeKey'] for c in d['chapters'] if not c['articles']]
+# Nenhum capítulo sem conteúdo primário — exceto os explicitamente pendentes (Fase 2).
+PENDENTES_OK = {'central-operacoes-193'}
+vazios = [c['themeKey'] for c in d['chapters']
+          if not c['articles'] and c['themeKey'] not in PENDENTES_OK]
 assert not vazios, f'capítulos sem artigos: {vazios}'
+
+assert len(edit_ids) >= 410, f'regressão: {len(edit_ids)} artigos (esperado >= 410)'
 
 print(f"OK — scripts/test_regulamento_structure.py ({len(d['chapters'])} capítulos, "
       f"{len(edit_ids)} artigos, schema compatível com buildArticles)")
