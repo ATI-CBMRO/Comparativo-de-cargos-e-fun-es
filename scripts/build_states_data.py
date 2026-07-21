@@ -402,6 +402,36 @@ CONTENT_TYPE_OVERRIDES = {
     # órgãos de direção/apoio/execução, hierarquia até pelotão/grupo) — perfil de
     # Regimento Interno, não de lei de criação. Ver CLAUDE.md.
     "Santa Catarina - Organização Básica.md": "Regimento Interno",
+    # Alagoas (ingestão 2026-07-20): as Diretrizes Operacionais de Bombeiros (DOB)
+    # e as Normas Operacionais NÃO são leis de organização básica — regulam o
+    # SERVIÇO operacional (terminologia, estrutura operacional, atividade diária,
+    # postos de bombeiros). Matéria de Regulamento Geral. Conteúdo conferido pelo
+    # cabeçalho/ementa de cada arquivo. Classificação validada pelo Wândrio.
+    "Alagoas - Diretriz Operacional 01.md": "Regulamento Geral",
+    "Alagoas - Diretriz Operacional 03.md": "Regulamento Geral",
+    "Alagoas - Diretriz Operacional 04.md": "Regulamento Geral",
+    "Alagoas - Diretriz Operacional 05.md": "Regulamento Geral",
+    "Alagoas - Diretriz Operacional 06.md": "Regulamento Geral",
+    "Alagoas - Diretriz Operacional 07.md": "Regulamento Geral",
+    "Alagoas - Diretriz Operacional 08.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 01.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 02.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 03.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 04.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 05.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 06.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 07.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 08.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 09.md": "Regulamento Geral",
+    "Alagoas - Norma Operacional 11.md": "Regulamento Geral",
+}
+
+# Grafias alternativas do MESMO estado no nome dos arquivos → nome canônico único.
+# Sem isso, "Roraíma" (grafia herdada do acervo antigo) e "Roraima" (grafia correta
+# dos arquivos novos) seriam agrupados como DOIS estados distintos. Canônico = a
+# grafia correta. Ingestão 2026-07-20.
+STATE_NAME_ALIASES = {
+    "Roraíma": "Roraima",
 }
 
 # Estados cujo TIPO de documento foi conferido por leitura de conteúdo de verdade —
@@ -564,6 +594,7 @@ def group_files_by_state(md_files: list[Path]) -> dict[str, list[Path]]:
     groups: dict[str, list[Path]] = {}
     for f in md_files:
         state = f.stem.split(' - ')[0].strip()
+        state = STATE_NAME_ALIASES.get(state, state)
         if state not in groups:
             groups[state] = []
         groups[state].append(f)
