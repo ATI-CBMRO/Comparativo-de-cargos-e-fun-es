@@ -285,7 +285,10 @@ CONFIG = {
         'line_slices': [
             (11053, 11136, 'seguranca-contra-incendio', 'exata', 'CAT — Gerência de Vistorias e Seção de Fiscalização'),
             (12424, 12454, 'servico-operacional', 'exata', '1º BBM — Prontidão Operacional e Seção de Operações de Salvamento (SOS)'),
-            (13573, 13701, 'servico-operacional', 'exata', '1º BBM — Chefe da SOS e Fiscal do Salvamar'),
+            # Fim ajustado para 13663 (achado da revisão): a linha 13701 original incluía um
+            # trecho de organograma não numerado (§2º-§4º: Administração, SOS, 1ª Companhia)
+            # colado ao fim do Art. 31 — não é dispositivo do Fiscal do Salvamar.
+            (13573, 13663, 'servico-operacional', 'exata', '1º BBM — Chefe da SOS e Fiscal do Salvamar'),
             (32072, 32246, 'servico-operacional', 'exata', 'CERD — Finalidade, composição e atribuições gerais'),
         ],
     },
