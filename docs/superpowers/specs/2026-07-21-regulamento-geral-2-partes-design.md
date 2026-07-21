@@ -21,7 +21,7 @@ dos documentos-fonte e curadoria apoiada no Obsidian.
 
 **Não-objetivos (YAGNI):**
 - Não criar trilha/rota nova: evolui a trilha `/regulamento` existente.
-- Não refazer os 410 artigos já validados: novidade entra **ao lado**.
+- Não refazer os 410 artigos já validados: novidade entra **ao lado**. (não é regra, se necessário, pode ser feito com cautela)
 - Não tocar no Regimento Interno (RI por órgão) nem no cenário LOB atual/futura além do
   necessário para o campo `parte`.
 - Não incorporar matéria de caserna do Exército sem correspondência no CBM (ex.: dependências
