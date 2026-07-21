@@ -191,7 +191,8 @@ Por isso o gerador do atual reescreve essas duas seções SEM enriquecimento (s�
 
 **Regra de produto:** o **RI é por ÓRGÃO** (estrutura → LOB-específica); o **Regulamento é
 TEMÁTICO** (serviço/disciplina/uniformes/ensino → NÃO depende da LOB), por isso o atual
-reusa os 15 temas / 410 artigos dos 9 CBMs já curados, só isolando os ids.
+reusa os 16 temas / 413 artigos primários já curados (ver seção "Regulamento Geral em 2
+Partes" abaixo), só isolando os ids.
 
 **Isolamento no Firebase** (comentários e textos finais) — marcador embutido no `editId`,
 mesma filosofia do `reg:` (sem campo novo, sem migração):
@@ -200,12 +201,46 @@ mesma filosofia do `reg:` (sem campo novo, sem migração):
 `reviewGroup.js`: `scenarioOfDispositivo` + `filterSuggestionsByScenario`/`filterFinalsByScenario`
 (testados). Sem isso, ids como `organ:cg` colidiriam entre cenários.
 
-**Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (15 temas),
+**Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (16 temas),
 `/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`. **Ainda gated** (mostram
 "Em construção" via `TrilhaRoute` em `App.jsx`): **Subsídio** (`/minuta/subsidio`,
 `/regulamento/subsidio`) — depende de gerar o `comparativo_minuta` do atual. Specs/planos em
 `docs/superpowers/specs/2026-07-15-cenarios-lob-atual-futura-design.md` e
 `docs/superpowers/plans/2026-07-15-cenarios-lob-fase1.md`.
+
+## Regulamento Geral em 2 Partes (Geral × Serviço) — 21/07/2026
+
+O Regulamento Geral deixou de ser uma sequência única de temas: agora é **um documento com
+2 Partes** — Parte I (Geral/institucional, 12 temas) e Parte II (de Serviço/operacional, 4
+temas). Cada capítulo de `regulamento_structure.json` tem o campo `parte: 'geral'|'servico'`;
+o gerador (`build_regulamento_structure.py`, dict `TEMA_PARTE`) ordena Parte I antes da Parte
+II. Helper compartilhado: `src/lib/regulamentoPartes.js` (`PARTE_HEADERS`,
+`parteByChapterTitle`) — usado por `RegulamentoWizard.jsx`, `minutaDocx.js`,
+`RegulamentoComparator.jsx` e `Revisao.jsx` (modo Regulamento). Para o RI, que não tem campo
+`parte`, o helper retorna `{}` e vira no-op automático — não confundir os dois documentos.
+
+**16º tema**: `central-operacoes-193` ("Da Central de Operações e do Teledespacho") — matéria
+recorrente (achada em 4 fontes: BA/RR/TO/ES) sem tema próprio na base original de 15. Primária:
+Bahia (Art. 8-9 Supervisor + 18 Operador de Teledespacho/CICOM); alternativa: Tocantins (Anexo
+2, Art. 12-14). **413 artigos primários** ao todo (410 da curadoria original + 3 do 16º tema).
+
+**RISG do Exército** (`database/markdown/RISG.md`, convertido de `LEGISLAÇÃO CBMS/RISG.pdf`)
+entra como pseudo-fonte `risg` (rotulada "Exército Brasileiro") — **só como alternativa, nunca
+como fonte primária de nenhum tema** (testado em `test_regulamento_structure.py`). Reforça
+`cerimonial-honras` e `pessoal-quadros`. Fontes verificadas por leitura de subagentes antes de
+qualquer decisão de estrutura — ver vault Obsidian `Codebases/Comparativo-de-cargos-e-funcoes/`
+(notas "Comparativo RISG × Regulamentos — Round 1/Round 2").
+
+**Pendências sinalizadas (não forçadas)**: corpo principal de Tocantins (Art. 1-13,16 — colide
+numeração de "Art. N" com o Anexo 2 já usado); 4 Diretrizes/Normas de Alagoas sem "Art. N"
+formal (seção numerada, incompatível com o extrator atual); tema `uniformes-apresentacao`
+segue magro (1 artigo, sem achado forte no RISG). `RegDiagramas.jsx` continua "em breve" —
+bloqueado por `commandChart` ausente, problema **não relacionado** às 2 Partes.
+
+Specs/planos: `docs/superpowers/specs/2026-07-21-regulamento-geral-2-partes-design.md` (Fase 1
+— estrutura), `2026-07-21-fase2a-central-operacoes-193-design.md` (16º tema),
+`2026-07-21-fase2bcd-reforco-verbatim-design.md` (reforço verbatim), `2026-07-21-fase1-heranca-2partes-telas-design.md`
+(herança nas telas) — e os planos irmãos em `docs/superpowers/plans/`.
 
 ## Curadoria — Minuta do Regulamento (em andamento)
 
