@@ -247,6 +247,118 @@
               "match": "exata"
             }
           ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021 — objeto da Portaria",
+              "caput": "Art. 1º Regulamentar o serviço operacional do Corpo de Bombeiros Militar da Bahia, conforme os seguintes termos desta Portaria.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 1",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. I — Da Finalidade",
+              "caput": "Art. 2º A presente Portaria tem por finalidade dispor sobre o serviço operacional diário, no âmbito do Corpo de Bombeiros Militar da Bahia, uniformizando procedimentos e definindo compe tências, com fulcro na eficiência da execução das ações e operações bombeiro-militar.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 2",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. II — Dos Objetivos",
+              "caput": "Art. 3º São objetivos da presente Portaria:",
+              "dispositivos": [
+                "I - fixar normas de competência, atribuições e responsabilidades das funções integrantes do serviço operacional do CBMBA, doutrinando quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
+                "II - estabelecer limites de competência de cada função integrante da estrutura organizacional, evitando conflitos de atribuições que prej udiquem os interesses institucionais voltados ao bem-estar coletivo;",
+                "III - adequar a atuação operacional dos GBM à política do Comando-Geral da Corporação;",
+                "IV - otimizar o rendimento das OBM em suas respectivas áreas de cobertura operacional, com base nos mapas de força e na efetividade do atendimento;",
+                "V - garantir aos oficiais e praças de serviço orientações gerais que lhes permitam resolver problemas de natureza operacional, assim como demandas que surgirem durante a execução do serviço."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 3",
+              "match": "exata"
+            }
+          ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. I — Conceituação Básica",
+              "caput": "Art. 1º Para fins de normatização dos serviços diários dos oficiais da Corporação, ficam estabelecidas as seguintes definições:",
+              "dispositivos": [
+                "I – Área de Espera: ponto ou local estabelecido para recebimento, controle e disponibilização de pessoal, materiais e viaturas no atendimento às ocorrências de vulto (grandes proporções ou alta complexidade);",
+                "II – Assistência Médica: é o tratamento de doenças e a preservação da saúde através de serviços médicos, farmacêuticos, enfermagem e outras profissões relacionadas;",
+                "III – Briefing Operacional: reunião operacional, realizada após a assunção do serviço, sobre as atividades diversas com a finalidade de estabelecer e dar conhecimento aos envolvidos sobre o objetivo da missão e/ou do serviço a ser executado, bem como, do serviço diário;",
+                "VI – Coordenador de Dia: Major ou Capitão, responsável por coordenar o serviço operacional do CBMRR, dentro do CICC/RR, subordinado ao Superior de Dia;",
+                "V – Debriefing Operacional: reunião operacional, realizada após o término de ocorrências, vislumbrando avaliar se o objetivo foi atingido, análise das implicações e o desempenho das ações desenvolvidas, apontamentos de pontos positivos e negativos, priorizando sedimentação de procedimentos corretos e aprendizado com erros, desvios e/ou situação nova apresentada ou ocorrida antes, durante ou após a ocorrência;",
+                "VI – Demanda Reprimida: consiste na atividade a qual a unidade não conseguiu atender e/ou resolver de forma integral ou parcial, por alguma razão e ainda precisa ser executada, ficando em espera;",
+                "VII – Documentação Diária: documentos, relatórios, livros, extratos de controle operacional, dentre outros, elaborados pelos Oficiais escalados, que expressam os atendimentos, o pessoal e materiais disponíveis para pronto emprego do serviço diário, bem como suas alterações no decorrer do serviço diário e/ou qualquer outro documento necessário para o serviço diário;",
+                "VIII – Estudo de Caso: apresentação elaborada pelo Oficial de Dia/Comandante do Socorro - juntamente com os demais oficiais que estavam na ocorrência, a ser apresentada aos demais oficiais que concorrem as escalas de serviço, da ocorrência de grande vulto, onde deverá fazer constar o apontamento de pontos positivos e negativos, os procedimentos corretos e aprendizado com erros, desvios e/ou situação nova que ocorreu durante a execução do serviço;",
+                "IX– Ocorrência: reunião de acontecimentos, num dado momento;",
+                "X – Ocorrência de Grande Vulto: reunião de acontecimentos mais complexos ou que causam maior repercussão na sociedade, que exigem uma mobilização intensiva de recursos e esforços para lidar com as suas consequências;",
+                "XI – Oficial de Dia/Comandante do Socorro: Oficial Intermediário ou Subalterno, responsável por supervisionar, fiscalizar e comandar in loco as ocorrências, subordinado ao Coordenador de Dia;",
+                "XII – Oficial de Comunicação: Oficial Subalterno, preferencialmente 1º Tenente, responsável por fiscalizar e supervisionar ligações de emergência 193 e despacho do serviço operacional na COCB, dentro do CICC/RR, subordinado ao Coordenador de Dia;",
+                "XIII – Oficial de Correições e Disciplina: Oficial da Corregedoria-Geral responsável por assessorar e providenciar todos os documentos necessários em procedimento disciplinar ou criminal envolvendo militares do CBMRR;",
+                "XIV – Oficial de Emergência Pré-Hospitalar: Oficial Subalterno, Aspirante a Oficial ou Subtenente habilitado ao oficialato e nomeado em função de oficial, responsável por comandar a guarnição de Emergência Pré-Hospitalar, subordinado ao Oficial de Dia/Comandante do Socorro;",
+                "XV – Oficial de Incêndio: Oficial Subalterno, Aspirante a Oficial ou Subtenente habilitado ao oficialato e nomeado em função de oficial, responsável por comandar a guarnição de combate a incêndio, subordinado ao Oficial de Dia/Comandante do Socorro;",
+                "XVI – Oficial de Salvamento: Oficial Subalterno, Aspirante a Oficial ou Subtenente habilitado e nomeado em função de oficial, responsável por comandar a guarnição de busca e salvamento, subordinado ao Oficial de Dia/Comandante do Socorro;",
+                "XVII – Oficial de Saúde: Oficial do CeSau responsável pela assistência médica e/ou assistência social de apoio e acompanhamento dos militares do CBMRR, e seus dependentes legais, conforme norma vigente;",
+                "XVIII – Oficial de Sobreaviso: Oficiais escalados como reserva ou pronto-emprego em serviços, que devem assumir suas funções, em caso de acionamento;",
+                "XIX – Perito de Incêndio: Oficial formado em Curso de Perícia de Incêndio, responsável por realizar as perícias em locais de incêndio;",
+                "XX – Poder de Pronto Emprego (PPE): extrato de controle operacional, elaborado pelo Coordenador de Dia, com a disponibilidade de recursos operacionais das unidades da Capital e do interior, que expressa toda a disponibilidade de recursos disponíveis para pronto emprego no serviço diário;",
+                "XXI – Prontidão Operacional (PO): local de referência em que o oficial ou guarnição realiza passagem de serviço, podendo ser fixo ou móvel, servindo como ponto de apoio durante o turno de serviço;",
+                "XXII – Recursos Operacionais: pessoal, equipamentos, materiais, viaturas, suprimentos e instalações disponíveis ou potencialmente disponíveis para serem utilizadas no apoio ao atendimento das atividades operacionais de resposta;",
+                "XXIII – Serviço Extraordinário: é aquele serviço que exige a mobilização extraordinária de pessoal, em decorrência de seu acionamento, podendo ser remunerado com a Indenização de Serviço Voluntário (ISV);",
+                "XXIV – Serviço Ordinário: é aquele serviço obrigatório, executado regularmente no intuito de suprir as necessidades operacionais da instituição;",
+                "XXV – Superior de Dia: Tenente-Coronel ou Major, responsável pela supervisão geral do serviço operacional do CBMRR;",
+                "XXVI – Trem de Socorro: é o deslocamento realizado simultaneamente por um conjunto específico de viaturas, de características diferentes, quando em situações de emergência ou urgência. Outras viaturas podem ser empenhadas posteriormente, considerando a necessidade no cenário. Atribuições"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 1",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Finalidade e Missão",
+              "caput": "Art.1º A finalidade é desta Norma é regulamentar as atividades desenvolvidas pelo Sistema Integrado de Operações do Corpo de Bombeiros Militar do Tocantins – SIOP/BM, e pelas Centrais de Operações – COCB, por meio da divisão de funções e responsabilidades nos atos de rotina do serviço diário.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 1",
+              "match": "exata"
+            },
+            {
+              "heading": "NGA SIOP (Anexo 2) — Finalidade e Missão",
+              "caput": "Art. 2º A Missão do SIOP/BM e das COCB’sé contribuir para solução das problemáticas advindas da sociedade tocantinense por meio da comunicação e do atendimento de chamadas e acionamen tos para posterior despacho de recursos condizentes à solução da situação emergencial recebida. Parágrafo Único. O SIOP/BM é a gerência responsável pela coleta, organização, trabalho e estudo dos dados estatísticos do CBMTO.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 2",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no11": {
+          "name": "Alagoas",
+          "abbr": "AL_NO11",
+          "docLabel": "Norma Operacional nº 11 — Canil (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 11, Cap. I — Finalidade e objeto",
+              "caput": "Art. 1º Esta Norma Operacional tem por finalidade regulamentar e padronizar o serviço diário, a rotina administrativa e operacional, bem como as condutas do efetivo que integra o Serviço com Cães no âmbito do Corpo de Bombeiros Militar de Alagoas conforme a Diretriz Operacional de Bombeiros n.º 07 (DOB-07).",
+              "dispositivos": [
+                "Parágrafo único. A norma visa estabelecer procedimentos e rotinas voltadas à eficiência, à disciplina e à segurança nas atividades do Canil do CBMAL, garantindo o bem-estar animal, o aperfeiçoamento técnico dos binômios e a adequada prontidão para o atendimento das ocorrências operacionais."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 1",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -1078,6 +1190,66 @@
               ],
               "source": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 41",
               "match": "parcial"
+            }
+          ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021, Cap. IV — Das Funções Operacionais",
+              "caput": "Art. 5º Para a realização do serviço diário operacional, a distribuição dos militares decorre das seguintes funções:",
+              "dispositivos": [
+                "I - Superior de Dia;",
+                "II - Supervisor do Teledespacho (CICOM);",
+                "III - Supervisor de Operações;",
+                "IV - Coordenador de Área;",
+                "V - Oficial de Dia;",
+                "VI - Adjunto ao Oficial de Dia (Comandante da Prontidão);",
+                "VII - Comandante de Guarnição;",
+                "VIII - Condutor e Operador de Viaturas;",
+                "IX - Integrantes da Guarnição; e",
+                "X - Operador do Teledespacho (CICOM).",
+                "§ 1º – As funções previstas nos incisos I, II, III, IV, V e VI, des te artigo, serão exercidas observando-se a necessidade do serviço, as características da Unidade e a abrangência do emprego operacional, não sendo obrigatória a existência simultânea de cada uma delas.",
+                "§ 2º – Nas Unidades subordinadas ao Comando de Operaç ões de Bombeiros Militar do Interior, as atribuições do Coordenador de Área e do Oficial de Dia, em caráter excepcional, devem ser exercidas pelo mesmo oficial subalterno quando escalado em qualquer uma dessas funções.",
+                "§ 3º - As escalas de serviço devem ser padronizadas conforme as nomenclaturas das funções previstas nesta Portaria."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 5",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Estrutura do SIOP/BM",
+              "caput": "Art. 3° O SIOP/BM possui a seguinte estrutura:",
+              "dispositivos": [
+                "I – Gerente;",
+                "II – Serviço Administrativo;",
+                "III – Serviço Operacional."
+              ],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 3",
+              "match": "exata"
+            },
+            {
+              "heading": "NGA SIOP (Anexo 2) — Estrutura do SIOP/BM",
+              "caput": "Art. 4° Os Serviços Administrativo e Operacional subordinados ao Gerente do SIOP/BM e possuem mesma equivalência hierárquica.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 4",
+              "match": "exata"
+            },
+            {
+              "heading": "NGA SIOP (Anexo 2) — Estrutura do SIOP/BM",
+              "caput": "Art. 5° O Serviço Operacional, quando em efetivo suficiente, contará com um Coordenador de Operações, um Despachante e Atendente(s). GERENTE",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 5",
+              "match": "exata"
             }
           ]
         }
@@ -6205,6 +6377,20 @@
               "caput": "Art. 29. Ao Conselho Superior - CSup, constituído pelos Oficiais da ativa do último posto da carreira do Quadro de Oficiais de Estado Maior - QOEM em exercício na Corporação, compet e-lhes o assessoramento direto ao Comandante -Geral, o acompanhamento e a manifestação em assuntos relevantes da Instituição, com vista ao fornecimento de subsídios para a tomada de decisão.",
               "dispositivos": [],
               "source": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 29",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Do Gerente",
+              "caput": "Art. 6° O Gerente do SIOP/BM é preferencialmente um Oficial Superior, e será responsável pelo planejamento, o rganização, direção e controle dos Serviços Administrativo e Operacional. SEÇÃOII",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 6",
               "match": "exata"
             }
           ]
@@ -11477,6 +11663,63 @@
               "match": "exata"
             }
           ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021, Cap. VI — Das Medidas Disciplinares",
+              "caput": "Art. 19. Ao tomar conhecimento de problema disciplinar no inte rior do aquartelamento ou durante o serviço na área de atuação, o bombeiro militar de maior posto ou graduação deverá adotar todos os procedimentos castrenses e acionar, imediatamente, o Coordenador de Área e/ou Oficial de Dia, registrando a solicitação no CICOM.",
+              "dispositivos": [
+                "§ 1º - Em casos envolvendo superior hierárquico, deverá ser acionado pelo CICOM a autoridade competente que deverá informar, imediatamente, o ocorrido ao Comandante de Operações.",
+                "§ 2º - No caso de condutas praticadas na execução do serviço e que o fato seja de flagrante delito, deverá ser realizado o acionamento do plantão da Corregedoria do CBMBA."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 19",
+              "match": "exata"
+            }
+          ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. VIII, Seção I — Oficial de Correições e Disciplina",
+              "caput": "Art. 72 São atribuições do Oficial de Correições e Disciplina, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – permanecer disponível para possíveis acionamentos, principalmente, após o término do expediente;",
+                "II – comparecer em todas as situações em que militar do CBMRR deva ser recolhido ou preso, providenciando a lavratura dos documentos necessários, tanto em procedimento disciplinar como criminal, bem como cuidar do devido encaminhamento na forma da legislação em vigor;",
+                "III – auxiliar o Coordenador de Dia nas demandas atinentes a suas atividades;",
+                "IV – apresentar-se, de imediato, no local determinado pelo Coordenador de Dia nas demandas atinentes a suas atividades;",
+                "V – resguardar a integridade física de militares do CBMRR durante a lavratura dos procedimentos disciplinares ou criminais;",
+                "VI – informar o Coordenador de Dia quando do término da ocorrência a qual se fez presente, passando todas as providências tomadas e a situação final dessa;",
+                "VII – assessorar o Oficial de Dia/Comandante do Socorro no preenchimento da Documentação Diária com as informações necessárias do caso e dos envolvidos;",
+                "VIII – providenciar local para o encaminhamento de militares custodiados; e",
+                "IX – cumprir outras determinações do Comando-Geral ou do Superior de Dia, pertinentes ao serviço. Escalas de Serviço"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 72",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VIII, Seção IV — Prescrições Gerais",
+              "caput": "Art. 77 O Oficial de Correições e Disciplina é subordinado diretamente, dentro da escala hierárquica, ao Comandante-Geral, Subcomandante-Geral e ao Diretor da Corregedoria-Geral.",
+              "dispositivos": [
+                "Parágrafo único. Em casos de acionamentos, deve assessorar o Superior de Dia, Coordenador de Dia e/ou Oficial demandante."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 77",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VIII, Seção IV — Prescrições Gerais",
+              "caput": "Art. 78 Em caso de acionamento, atender com eficiência e presteza as ocorrências. Atribuições",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 78",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -13475,6 +13718,34 @@
               "match": "exata"
             }
           ]
+        },
+        "al_no11": {
+          "name": "Alagoas",
+          "abbr": "AL_NO11",
+          "docLabel": "Norma Operacional nº 11 — Canil (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 11, Cap. V — Treinamento operacional",
+              "caput": "Art. 13. Os treinamentos deverão reproduzir cenários reais de ocorrência, como busca em matas, estruturas colapsadas e meio aquático, com uso de figurantes variados.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 13",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. V — Treinamento operacional",
+              "caput": "Art. 14. Cada guarnição deverá montar, executar e desmontar seu próprio ambiente de treino, mantendo o material limpo e devidamente armazenado após o uso.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 14",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. V — Treinamento operacional",
+              "caput": "Art. 15. Cada cinotécnico, após seu cão estar formado, deverá incentivar o uso do animal por outros militares da escala, para que, em caso de afastamento do condutor principal (doença, férias ou licença especial), o cão mantenha afinidade com outro militar habilitado.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 15",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -15218,6 +15489,165 @@
               "match": "parcial"
             }
           ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. II, Seção II — Escalas (Superior de Dia)",
+              "caput": "Art. 3º A escala de serviço do Superior de Dia será executada em regime de plantão, no decorrer do expediente administrativo, mantendo-se disponível após este período, bem como finais de semana e feriados.",
+              "dispositivos": [
+                "§ 1º O Superior de Dia faz jus ao recebimento da ISV quando acionado fora do expediente administrativo, conforme disciplinado pela norma vigente.",
+                "§ 2º A elaboração da escala segue a padronização estabelecida pelo COCI, conforme a necessidade do serviço."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 3",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção II — Escalas (Superior de Dia)",
+              "caput": "Art. 4º As escalas de serviço serão elaboradas pelo COCI e submetidas à homologação do Subcomandante-Geral.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 4",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção II — Escalas (Superior de Dia)",
+              "caput": "Art. 5º Quando houver impossibilidade do cumprimento da escala de serviço por parte do oficial escalado, ou impossibilidade de continuar a cumprir o referido serviço, o COCI deverá ser comunicado, e este providenciará a devida substituição.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 5",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção II — Escalas (Superior de Dia)",
+              "caput": "Art. 6º As permutas de serviço somente são autorizadas pelo COCI. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 6",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção IV — Escalas (Coordenador de Dia)",
+              "caput": "Art. 23 A escala do serviço de Coordenador de Dia, elaborada pelo COCI, é no regime de 24 horas de trabalho, salvo determinação em contrário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 23",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção IV — Escalas (Coordenador de Dia)",
+              "caput": "Art. 24 As permutas de serviço somente serão permitidas com autorização do Comandante do COCI ou seu substituto imediato, devendo ser lançadas na Documentação Diária. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 24",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção III — Escalas (Oficial de Dia)",
+              "caput": "Art. 36 A escala de serviço do Oficial de Dia/Comandante do Socorro, elaborada pelo COCI, é em regime de 24 horas, salvo determinação em contrário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 36",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção III — Escalas (Oficial de Dia)",
+              "caput": "Art. 37 As permutas de serviço somente serão autorizadas pelo Comandante do COCI ou seu substituto imediato, devendo informar ao Coordenador de Dia para que conste a devida autorização em sua Documentação Diária. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 37",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção II — Escalas",
+              "caput": "Art. 46 A escala do serviço dos Oficiais de Incêndio, de Salvamento e de Emergência Pré- Hospitalar, elaborada pelo COCI, é no regime de 24 horas, salvo determinação em contrário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 46",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção II — Escalas",
+              "caput": "Art. 47 As permutas de serviço somente serão autorizadas pelo Comandante Operacional da Capital e do Interior ou seu substituto imediato. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 47",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção II — Escalas",
+              "caput": "Art. 55 A escala do serviço de Oficial de Comunicação, elaborada pelo COCI, é no regime de 24 horas, salvo determinação em contrário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 55",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção II — Escalas",
+              "caput": "Art. 56 As permutas de serviço somente serão autorizadas pelo Comandante Operacional da Capital e do Interior ou seu substituto imediato. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 56",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção II — Escalas",
+              "caput": "Art. 64 A escala do serviço do Oficial de Saúde é de 24 horas, em regime de Sobreaviso, salvo determinação em contrário.",
+              "dispositivos": [
+                "§ 1º A elaboração da escala será de responsabilidade do CeSau.",
+                "§ 2º A escala deverá ser enviada ao COCI, formalmente, até o 20º dia do mês anterior ao mês programado."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 64",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção II — Escalas",
+              "caput": "Art. 65 O militar poderá tirar, no máximo, 3 (três) serviços consecutivos como sobreaviso, salvo determinação em contrário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 65",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção II — Escalas",
+              "caput": "Art. 66 As permutas de serviço somente serão permitidas com autorização do COCI. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 66",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VIII, Seção II — Escalas",
+              "caput": "Art. 73 A escala do serviço do Oficial de Correições e Disciplina é de 24 horas, no regime de sobreaviso, salvo determinação em contrário.",
+              "dispositivos": [
+                "§ 1º A elaboração da escala será de responsabilidade da Diretoria da Corregedoria-Geral.",
+                "§ 2º A escala deverá ser enviada ao COCI, formalmente, até o 20º dia do mês anterior ao mês programado."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 73",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VIII, Seção II — Escalas",
+              "caput": "Art. 74 As permutas de serviço, somente serão permitidas com autorização do COCI. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 74",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção II — Escalas",
+              "caput": "Art. 80 A escala do serviço de Oficial de Sobreaviso é no regime de 24 horas, podendo ser na modalidade preta e vermelha, salvo determinação em contrário.",
+              "dispositivos": [
+                "§ 1º A elaboração da escala será de responsabilidade do COCI.",
+                "§ 2º As escalas que não são de cunho operacional é de responsabilidade de cada Comandante, Diretor ou Chefe setorial, devendo informar formalmente ao escalante, até o 20º dia do mês anterior ao mês programado."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 80",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção II — Escalas",
+              "caput": "Art. 81 O militar poderá tirar, no máximo, 3 (três) serviços consecutivos como sobreaviso, salvo determinação em contrário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 81",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção II — Escalas",
+              "caput": "Art. 82 As permutas de serviço, somente serão permitidas com autorização do COCI. Assunção e Passagem do Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 82",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -15634,6 +16064,297 @@
               "caput": "Art. 150. Os casos omissos serão resolvidos pelo Comando-Geral da Corporação. 26/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. ÍNDICE Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio............................................................. 15 27/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. Disposições Gerais.................................................................................................................................... 25 28/28 BGO Nº 060 Publicado em 30/03/2022",
               "dispositivos": [],
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 150",
+              "match": "exata"
+            }
+          ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 26. O regime de escala de s erviço e a jornada de trabalho deverão obedecer aos preceitos legais em vigor no âmbito do CBMBA.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 26",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 27. Nas Unidades do Comando de Operaçõe s de Bombeiro Militar do Interi or, os subtenentes que já exerçam atribuições de oficial subalterno poderão ser esc alados nas funções de Coordenador de Área ou de Oficial de Dia, conforme a necessidade do serviço.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 27",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 28. Apenas em casos excepcionais o cabo poderá exercer as funções de Adjunto ao Oficial de Dia.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 28",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 29. O pessoal de serviço deverá utilizar o EPI e proceder conforme descrito nesta Portaria e demais normas em vigor.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 29",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 30. A instrução do serviço será realizada nos quartéis, conforme planejamento da Seção de Planejamento Operacional (SPO) das OBM, com a supervisão do Adjunto ao Oficial de Dia.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 30",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 31. Deverão ser adotadas medidas de limpeza e organização do alojamento, sendo de responsabilidade do Adjunto ao Oficial de Dia a fiscalização.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 31",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 32. Durante o serviço, as guarnições deverão estar atentas ao alarme, embarcando o mais rápido possível na viatura, com vista a otimizar o tempo-resposta, não ultrapassando o período de 01 (um) minuto para isso.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 32",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 33. Os casos omissos nesta Portaria serão decididos pelo Comandante-Geral do CBMBA.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 33",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 34. Esta Portaria entra em vigor na data de sua publicação.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 34",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021 — Disposições Finais",
+              "caput": "Art. 35. Revogam-se as disposições em contrário. ANEXO A Acidente com Viatura Acidente com Viatura CBMBA Sem Vítimas Coordenador de Área. - Com Vítimas Coordenador de Área/UR. Supervisor de Operações/ABTS. Acidente Acidente Com e sem Vítimas Coordenador de Área/UR/ABTS. Supervisor de Operações/Superior de Dia/ATB/Acionar FAB/Base Aérea de Salvador/DCTE. com Aeronave Acidente Acidente Com e sem Vítimas Coordenador de Área/UR/ABTS. Supervisor de Operações/Superior de Dia/ATB/Naútico/Embar- com cações/Acionar Capitania dos Portos. Embarcação Resgate Acidente de Trânsito Vítima presa em Ferragens. ABTS ou ABSG/UR. Coordenador de Área / ABSG. Com Interferência ao Fluxo de Veículos ou à Segurança da Via e Coordenador de Área/ ABTS/UR. Supervisor de Operações das Pessoas. Com Vítima Grave. Coordenador de Área / ABTS / UR. Supervisor de Operações/Superior de Dia/ABT/ABSG. Com Duas ou Mais Vítimas Graves. Coordenador de Área / ABTS / UR. Supervisor de Operações / Veículos com Passageiros ou Múltiplas Vítimas. Coordenador de Área / Supervisor de Operações/ABTS/UR. Superior de Dia / ABT / ABSG. Acidente Esportivo em competição oficial, estádios, arenas ou evento desportivos Acidente com vítimas. UR Coordenador de Área / Supervisor de Operações ABSG ou ABTS. Recurso Externo: USA (Unidade de Saúde Avançada) . Agressão Física, Arma Branca ou Arma de Fogo, Objeto e Outras. UR Coordenador de Área/ABSG. Mediante exposição a animais Peçonhentos, UR Coordenador de Área / ABSG. Domésticos com agressividade. Sexual Coordenador de Área/UR. - Afogamento Com Vítima Retirada do Meio Líquido. Coordenador de Área/UR. Supervisor de Operações. Recursos Externos: USA ou Aeronave. Com Vítima Ainda Submersa. Coordenador de Área/ Equipe de Mergulho/UR. Supervisor de Operações; Superior de Dia. Recursos Externos: USA/Aeronave. Intoxicação Exógena Diversas UR (em caso de crianças e idosos acionar o policiamento para o devido registro). Coordenador de Área; Supervisor de Operações. Recursos Externos: USA /Aeronave. Queimadura Térmica Diversas UR Coordenador de Área; Supervisor de Operações. Recursos Externos: USA. Queda de Altura Diversas UR Coordenador de Área; Supervisor de Operações. Recursos Externos: US A. Vítimas em Locais de Difícil Acesso. Coordenador de Área/ ABTS/UR. Supervisor de Operações. Recursos Externos: USA/Aeronave. Tentativa de Suicídio Diversas Coordenador de Área/ ABTS/UR. Coordenador de Área; Supervisor de Operações. Recursos Externos: USA/ Realizar contato com o Hospital de Referência. Transporte de Acidentado Diversas UR Recurso Externo: USA. Acidente Pessoal Diversas UR Coordenador de Área. Recurso Externo: USA. Com integrantes do CBMBA. Coordenador de Área /UR. Supervisor de Operações. Recurso Externo: USA. Vítimas em Locais de Difícil Acesso ou Presa em Maquinário. Coordenador de Área/ ABTS ou Supervisor de Operações/ Superior de Dia. Recursos Externos: USA/Aeronave. Busca e Salvamento Busca, salvamento e resgate de Animais Abelhas, Coordenador de Área / ABTS / UR. Recurso Externo: USA (Em caso de vítimas graves). Marimbondos e Similares. Cães, Gatos e Outros Animais Domésticos. Coordenador de Área/ABTS / UR. Recurso Externo: USA (Em caso de vítimas graves). Bovinos, Equinos, Domésticos de Coordenador de Área / ABTS / UR. Recurso Externo: USA (Em caso de vítimas graves). Grande Porte. Silvestres Coordenador de Área / ABTS / UR. Recurso Externo: USA (Em caso de vítimas graves). Busca e Recuperação de Bens - Coordenador de Área / e/ou ABTS. ABT / UR. Busca e Salvamento de Pessoas em Maquinários Vítima com Parte do Corpo Presa. Coordenador de Área / ABTS / UR. Supevisor de Operações. Recurso Externo: USA. Busca e Salvamento Diversos Preso em Elevador. Coordenador de Área/ ABTS ou ABSG/UR Supervisor de Operações. Soterramentos e Deslizamentos . Coordenador de Área Supervisor de Operações. Recursos Externos: USA/Aeronave/maqui -nários. Soterramentos e Deslizamentos com Risco Iminente de acidente grave e com Coordenador de Área / BREC. Supervisor de Operações/ Superior de Dia. Recursos externos: USA/Aeronave/ma - quinários. múltiplas vítimas. Iminência de Afogamento ou Vítimas Afogadas. Coordenador de Área/ Supervisor de Operações/Superior de Dia/Jet Sky/Náutico/ A B T S / U R . /Equipe de Mergulho. Recursos externos: USA/Aeronave. Poços, Fossas ou Cisternas. Coordenador de Área Supervisor de Operações/Superior de Dia. Recursos externos: USA. Galerias de Esgoto. Coordenador de Área / ABTS ou ABSG / UR. Supervisor de Operações. Recursos externos: USA. Preso em Altura (Prédios, Torres e Outros). Coordenador de Área / Supervisor de Operações/Superior de Dia. Recursos externos: USA/Aeronave. Entrada Forçada em Edificações. ABTS / UR. Coordenador de Área/Supervisor de Operações. Retirada de Anel. ABTS ou ABSG UR Pessoas Desaparecidas. Coordenador de Área/ ABTS ou ABSG. Supervisor de Operações/ABRESC. Presos em Ferragens (meios de transporte Coordenador de Área/Supervisor de Operações/Superior de Dia/ABTS/UR. Recursos externos: USA/Aeronave. de massa). Corte e Poda de Árvores. ABTS ou ABSG/ Coordenador de Área. Supervisor de Operações/AEPA. Defesa Civil Causa Eólica, Redução das Precipitações Hídricas e Outros Vítimas Feridas em Locais de Difícil Acesso, etc. Coordenador de Área / ABTS ou ABSG/ UR. Supervisor de Operações/ Superior de Dia. Recursos Externos: USA / Aeronave. Incêndios Coordenador de Área / Supervisor de Operações/ Superior de Dia/ATB/AEPA. Recursos Externos: USA / Aeronave/ Maquinários. Busca e Salvamento. Coordenador de Área / ABTS ou ABSG / UR. Supervisor de Operações/ Superior de Dia. Recursos Externos: USA / Aeronave. Incremento das Precipitações Hídricas e Inundações Vítimas Feridas em Locais de Difícil Acesso, etc. Coordenador de Área / ABTS ou ABSG / UR. Supervisor de Operações/ Superior de Dia. Recursos Externos: USA. Alagamentos, Enchentes, Enxurradas, Coordenador de Área / ABTS ou ABSG/ UR. Supervisor de Operações / Desabamentos e Desmoronamento. Superior de Dia. Recursos Externos: USA / Aeronave. Busca e Salvamento. Coordenador de Área / ABS ou ABSG / UR. Supervisor de Operações. Recursos Externo: USA / Aeronave. Incêndio Urbano Incêndio Urbano em Edificações Especiais Incêndio Urbano em Locais de Concentração de Público. Coordenador de Área/ Supervisor de Operações / ABTS / ABT ou ATB / UR. Superior de Dia/ATB/AEPA. Recursos Externos: USA/Aeronave. Incêndio Urbano em Edificação Hospitalar. Coordenador de Área/ Supervisor de Operações / ABTS / ABT ou ATB / UR. Superior de Dia/ATB/AEPA. Recursos Externos: USA/Aeronave. Incêndio Urbano em Edificação Escolar. Coordenador de Área/ Supervisor de Operações / ABTS / ABT ou ATB/UR. Superior de Dia/AEPA. Recursos Externos: USA/Aeronave. Incêndio Urbano em Edificação Residencial ou Comercial, Depósitos, Diversos Edificação de 1Pavimento. ABTS / UR. Coordenador de Área/ Supervisor de Operações/ ABT ou ATB. Edificação de 2 Pavimentos. Coordenador de Área / Supervisor de Operações/ ABT ou ATB. Edificação de 3 ou Mais Pavimentos. Coordenador de Área / Supervisor de Operações/ABTS / UR. Superior de Dia/ABT ou ATB/ AEPA. Recursos Externos: USA/Aeronave. Centrais Elétricas. Coordenador de Área / Supervisor de Operações/ABT ou ATB. Sinistros Diversos de Médio Vulto (Lotes, Reciclagem, Outros). Coordenador de Área / ABTS / UR. Supervisor de Operações/ATB. Diversos de Grande Vulto (Lotes, Reciclagem, Outros). Coordenador de Área/ Supervisor de Operações / Superior de Dia. Incêndio Urbano em Edificação Industrial Edificação de 1 Pavimento. Coordenador de Área/ ABTS / UR. Coordenador de Área/ ABT / Supervisor de Operações. Edificação de 2 Pavimentos. Coordenador de Área / Supervisor de Operações/ABT/ AEPA. Edificação de 3 ou Mais Pavimentos. Coordenador de Área / ABTS / UR/Supervisor de Operações. Superior de Dia/ABT/AEPA. Incêndio em Veículos Veículos em Geral. ABTS / UR. Coordenador de Área / ABTS / UR / Supervisor de Operações. Veículos Transportando Produto Perigoso. Coordenador de Área/ Supervisor de Operações/ABTS/UR. Superior de Dia/ATB/APTL. Veículos Transportando Carga Viva / Ônibus e Veículos de Transporte. ABTS ou ABSG/UR. Supervisor de Operações/ Coordenador de Área. Recursos Externos: USA/Aeronave. Com Vítimas Presas em Ferragens. Coordenador de Área / Supervisor de Operações/ATB. Recursos Externos: USA/Aeronave. Incêndio em Aeronaves ou Embarcações Acidente com Aeronave. Coordenador de Área/ Supervisor de Operações/Superior de Dia/ABT/ABTS/UR. SCI (SCO) / AT. Recursos Externos: USA/Aeronave. Incêndio em Vegetação Diversos De Médio Vulto (Lotes, Reservas, Pastagens, etc.). Coordenador de Área/ABTS. Supervisor de Operações/ABT ou ATB/UR. De Grande Vulto (Reservas, Pastagens, Parques, Etc). Coordenador de Área / ABTS / UR/ Supevisor de Operações. Superior de Dia/ABT ou ATB. Acidente ou Sinistros Envolvendo Transporte de Produtos Perigosos Diversos Gás Liquefeito de Petróleo. Coordenador de Área / Supervisor de Operações/ABTS. Superior de Dia/ ABT ou ATB/ GOPP. Produtos Perigosos. Coordenador de Área/ Supervisor de Operações/ABTS. Superior de Dia/ ABT ou ATB/ GOPP. Líquidos Inflamáveis. Coordenador de Área / Supervisor de Operações / ABTS. Superior de Dia/ ABT ou ATB/ GOPP. Gases Diversos. Coordenador de Área / Supervisor de Operações/ABTS. Superior de Dia/ ABT ou ATB/ GOPP. Ácidos, Tintas, Tíner, Solventes e Outros. Coordenador de Área / Supervisor de Operações / ABTS. Superior de Dia/ ABT ou ATB/ GOPP. *Obs. Os recursos externos constantes neste Anexo deverão ser acionados após criteriosa avaliação da sua necessidade, sendo a sua enumeração um facilitador na tomada de decisões pelos militares empregados no serviço operacional do CBMBA. N essa condição, imediatamente após a avaliação do cenário da emergência, o comandante da guarnição ou da operação deverá manter contato com o CICOM ou escalão superior visando o acionamento e alocação dos recursos necessários para o efetivo atendimento da ocorrência, bem como obter apoio de órgãos externos. PORTARIA n.º 106 CG -CBMBA/2021",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 35",
+              "match": "exata"
+            }
+          ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. X — Disposições Finais (deveres, competência do COCI)",
+              "caput": "Art. 89 Os Oficiais que concorrem às escalas de Serviço Operacional e de Sobreaviso deverão:",
+              "dispositivos": [
+                "I – cumprir e fazer cumprir esta norma e outras existentes que visem a melhor qualidade na execução das atividades operacionais;",
+                "II – atentar para a regulamentação da DACRP quando do repasse de informações, publicações em redes sociais e concessão de entrevistas à imprensa;",
+                "III – informar formalmente ao COCI, até o 20º dia do mês anterior ao mês programado, os afastamentos regulares (férias, licença especial, cursos, núpcias, etc.);",
+                "IV – informar, em tempo hábil, formalmente ao COCI, quaisquer impedimentos legais que o impeçam de tirar o serviço para o qual estava escalado, salvo os casos fortuitos e de força maior;",
+                "V – em caso de cancelamento de afastamento regular, o Oficial deverá informar, de imediato, a seu comandante de unidade para que este comunique ao COCI a disponibilidade de emprego na escala de serviço.",
+                "Parágrafo único. Caso os afastamentos não sejam informados de acordo com os incisos III e IV, o cumprimento do serviço será de responsabilidade do escalado."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 89",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. X — Disposições Finais (deveres, competência do COCI)",
+              "caput": "Art. 90 Compete ao COCI:",
+              "dispositivos": [
+                "I – a distribuição equitativamente de todo o efetivo de oficiais da corporação para composição das escalas operacionais;",
+                "II – confeccionar a escala de serviço diário da corporação e dar publicidade;",
+                "III – definir os critérios de regime de escala, podendo ser preta e vermelha ou corrida, atentando para as normas vigentes de folgas regulamentares;",
+                "IV – não permitir que a escala fique repetitiva (viciada), onde os militares tiram seus serviços sempre no mesmo dia da semana;",
+                "V – observar para que os militares lotados em um mesmo setor, tenham um intervalo mínimo de 48h entre suas escalas, salvo a extrema necessidade do serviço operacional;",
+                "VI – cumprir fielmente todas as normas vigentes relacionadas a ISV;",
+                "VII – não escalar militares em Serviço Extraordinário, com pagamento de ISV, antes que cumpram, ao menos, uma escala de Serviço Ordinário; e",
+                "VIII – escalar um oficial para compor as guarnições em todas as missões, escalas extraordinárias, eventos comemorativos e outros que sejam requisitados para os serviços do CBMRR."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 90",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. X — Disposições Finais (deveres, competência do COCI)",
+              "caput": "Art. 91 Compete a todos os oficiais que concorrem às escalas:",
+              "dispositivos": [
+                "I – cuidar de seu condicionamento físico, profissional e pessoal;",
+                "II – utilizar os equipamentos de proteção individual;",
+                "III – cuidar pela disciplina de comunicação via rádio, informática e outros meios de telecomunicações;",
+                "IV – primar pelo bom atendimento às vítimas, público em geral, autoridades e profissionais que participam direta ou indiretamente das ocorrências, serviços ou qualquer outra atividade;",
+                "V – atender com presteza as ocorrências;",
+                "VI – atuar de acordo com os procedimentos operacionais da Corporação;",
+                "VII – operar com eficiência os equipamentos e instrumentos pertinentes ao serviço.",
+                "Parágrafo único. Todos os militares deverão informar o \"pronto\" das missões recebidas a seu superior imediato."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 91",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. X — Disposições Finais (deveres, competência do COCI)",
+              "caput": "Art. 92 O Oficial só poderá ser escalado no Serviço Operacional ou de Sobreaviso no 2º dia útil quando do retorno de fruição de férias, exceto se o retorno ocorrer em dias não úteis.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 92",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. X — Disposições Finais (deveres, competência do COCI)",
+              "caput": "Art. 93 Todas as atividades executadas pelo COCI, Batalhões e Companhias compõem a atividade-fim da corporação.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 93",
+              "match": "exata"
+            },
+            {
+              "heading": "Casos omissos, revogação, vigência",
+              "caput": "Art. 94 Os casos omissos constantes nesta INOp serão solucionados pelo Comando-Geral.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 94",
+              "match": "exata"
+            },
+            {
+              "heading": "Casos omissos, revogação, vigência",
+              "caput": "Art. 95 Revogam-se as ordens ou determinações em contrário após a publicação desta Instrução Normativa Operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 95",
+              "match": "exata"
+            },
+            {
+              "heading": "Casos omissos, revogação, vigência",
+              "caput": "Art. 96 Esta INOP entra em vigor na data de sua publicação.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 96",
+              "match": "exata"
+            },
+            {
+              "heading": "Casos omissos, revogação, vigência",
+              "caput": "Art. 97 Publique-se. Registre-se. Cumpra-se. Quartel do Comando-Geral Coronel Jean Cláudio de Souza Hermógenes, Boa Vista/RR. (Assinado eletronicamente) Subcomandante-Geral do CBMRR Decreto 1331-P de 24/09/2021 (DOE nº 4051/2021) Respondendo pelo Comando-Geral",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 97",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Disposição Geral",
+              "caput": "Art. 15 Os casos omissos nesta Norma Geral de Ação seguirão a cadeia hierárquica e serão dirimidos em primeira análise pe lo Gerente do SIOP/BM e última análise pelo Comandante Operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 15",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no03": {
+          "name": "Alagoas",
+          "abbr": "AL_NO03",
+          "docLabel": "Norma Operacional nº 03 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 03 — Vigência e revogação",
+              "caput": "Art. 6º Revogam-se as disposições em contrário. Quartel em Maceió-AL, 25 de março de 2019.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 03, Art. 6",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no04": {
+          "name": "Alagoas",
+          "abbr": "AL_NO04",
+          "docLabel": "Norma Operacional nº 04 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 04 — Vigência e revogação",
+              "caput": "Art. 3º Esta Norma Operacional entrará em vigor na data da sua publicação.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 04, Art. 3",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 04 — Vigência e revogação",
+              "caput": "Art. 4º Revogam-se as disposições em contrário. Quartel em Maceió-AL, 03 de junho de 2013. GLÁUCIO LUIZ DO ESPÍRITO SANTO ALCÂNTARA–Cel. BM Subcomandante Geral CBMAL * Publicada no Boletim Geral Ostensivo n.º 87, de 10 de maio de 2013. * Revisão Publicada no Boletim Geral Ostensivo n.º 101, de 04 de junho de 2013.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 04, Art. 4",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no06": {
+          "name": "Alagoas",
+          "abbr": "AL_NO06",
+          "docLabel": "Norma Operacional nº 06 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 06 — Vigência e revogação",
+              "caput": "Art. 4º Esta Norma Operacional entra em vigor na data da sua publicação.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 06, Art. 4",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 06 — Vigência e revogação",
+              "caput": "Art. 5º Revogam-se as disposições em contrário. Quartel em Maceió-AL, 10 de maio de 2013. GLÁUCIO LUIZ DO ESPÍRITO SANTO ALCÂNTARA–Cel. BM Subcomandante Geral CBMAL * Publicada no Boletim Geral Ostensivo n.º 87, de 10 de maio de 2013. 1 1. TERMO DE ABERTURA: Às (horas) do dia (data) do corrente (dia) assumi o serviço de (comandante de prontidão) com todas as ordens em vigor. 2. EFETIVO DE SERVIÇO: Atividade Quantidade Discriminação (Posto ou Graduação / Nome) Oficial de Serviço Guarnição de Resgate Guarnição de Combate a Incêndio Guarnição de Salvamento Aquático Central de Operações e Comunicações Serviço de Atendimento Técnico Administração Total 3. PRESTAÇÃO DE SERVIÇOS CONTÍNUOS (CBMAL - CONTRATANTE): 3.1 Fornecimento de refeições prontas Gêneros Alimentícios Quantidade Café da Manhã Almoço Jantar 3.2 Coleta, transporte e incineração de resíduos do serviço de saúde Quantidade de bombonas Capacidade das bombonas Recolhimento Nível das bombonas na passagem de serviço 3.3 Consumo de energia elétrica KW Inicial KW Final Consumo Diário 3.4 Consumo de água M3 Inicial M3 Final Consumo Diário 3.5 Telefonia fixa e móvel disponível para o serviço diário Tipo Quantidade Alterações Crédito Inicial Final Fixo --- --- Móvel 3.6 Combustível Viatura Início do Serviço Final do Serviço Abastecimento (litros) KM Tanque (L) KM Tanque (L) 2 3.7 Alterações diversas nas prestações de serviços/ outros serviços prestados: 4. ALTERAÇÃO DE MATERIAIS / EQUIPAMENTOS: 5. SITUAÇÃO DAS VIATURAS: 5.1 Operando: 5.2 Baixada: 5.3 Reserva: 5.4 Acidentada: 6. ORDENS VERBAIS RECEBIDAS: 7. ORDENS ESCRITAS RECEBIDAS: 8. ARMAR GERAL: 8.1 POP Executado: 8.2 Instrutor responsável: 8.3 Participantes: 8.4 Materiais / Equipamentos utilizados: 8.5 Observações: 9. TRABALHO DE INSTRUÇÃO DE BOMBEIRO: 9.1 Módulo: 9.2 Lição: 9.3 Instrutor Responsável: 9.4 Participantes: 9.5 Materiais / Equipamentos utilizados: 9.6 Observações: 10. EDUAÇÃO FÍSICA: 10.1 Instrutor Responsável: 10.2 Participantes: 10.3 Observações 10. COMENTÁRIO DE OCORRÊNCIAS DE VULTO ATENDIDAS (SUCINTO): 11. PASSAGEM DE SERVIÇO: Às (horas) do dia (data) do corrente (dia) passei o serviço de (função) com todas as ordens em vigor. 3",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 06, Art. 5",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no07": {
+          "name": "Alagoas",
+          "abbr": "AL_NO07",
+          "docLabel": "Norma Operacional nº 07 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 07 — Vigência e revogação",
+              "caput": "Art. 3º Esta Norma Operacional entra em vigor na data da sua publicação.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 07, Art. 3",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 07 — Vigência e revogação",
+              "caput": "Art. 4º Revogam-se as disposições em contrário. Quartel em Maceió-AL, 27 de setembro de 2013. GLÁUCIO LUIZ DO ESPÍRITO SANTO ALCÂNTARA–Cel. BM Subcomandante Geral CBMAL * Publicada no Boletim Geral Ostensivo n.º 183, de 01 de outubro de 2013. 1 1. NÍVEL DO POSTO: ( ) 1 ( ) 2 ( ) 3 2. EFETIVO: Atividade Quantidade Discriminação (Posto ou Graduação / Nome) Comandante do Posto Auxiliar Administrativo Férias / Licenças Prontidão Amarela EFETIVO TOTAL DO POSTO: Prontidão Azul Dificuldades, solicitações, problemas com efetivo: Prontidão Verde Prontidão Vermelha 3. PRESTAÇÃO DE SERVIÇOS CONTÍNUOS (CBMAL - CONTRATANTE): 3.1 Fornecimento de refeições prontas Refeição Quantidade mensal Alterações encontradas Café da Manhã Ex.: No dia 01 de julho de 2013, durante a prova dos alimentos do almoço, realizada pelo auxiliar do fiscal do contrato, o filé bovino a parmegiana não foi aprovado (estava estragado). Foram chamados outros dois bombeiros militares que ratificaram a alteração, para então ser lavrado o Termo de Recusa do alimento , conforme item 5.1.1.2 do contrato. O item reprovado foi s ubstituido imediatamente pelo representante do CONTRATANTE (fiscal do contrato), conforme item 9 .1.25 do contrato; e foi gerado a Parte n° 12/13 – Posto XX/x GBM. Almoço Jantar 3.2 Coleta, transporte e incineração de resíduos do serviço de saúde Quantidade de bombonas Capacidade das bombonas Data de recolhimento Alterações encontradas Ex.: Não foi realizada a coleta do lixo na semana de 01 a 05 de julho, em desconformidade ao item 3.3 do contrato ( “a coleta deverá ser feita uma vez por semana”). Na sexta -feira (05 de julho de 2013) a bombona ficou cheia, sendo neste mesmo dia repassada a informação por telefone para o Gestor do Contrato (Cap. Fulano de Tal). O recolhimento só foi realizado na quinta -feira da semana seguinte (12 de julho de 2013), sendo gerada a Parte n.º 05/13 e o Memo. 55/13. 3.3 Consumo de energia elétrica KW Inicial KW Final Consumo Mensal Alterações encontradas GERADO) Ex.: Sem alterações 3.4 Consumo de água M3 Inicial M3 Final Consumo Mensal Alterações encontradas 2 GERADO) Ex.: Sem alterações 3.5 Telefonia fixa e móvel disponível para o serviço diário (DESCREVER DEFEITOS, PROBLEMAS DE CRÉDITOS, DIFICULDADE DE COMPLETAR LIGAÇÕES PRINCIPALMENTE COM OS 4 DÍGITOS, ETC.) 3.6 Combustível Viatura KM Início do mês KM Final do mês KM Total mês Abastecimento Total (litros) Consumo Médio Mensal 4. ALTERAÇÃO / CARÊNCIA DE MATERIAIS E EQUIPAMENTOS: 5. SITUAÇÃO DAS VIATURAS: 5.1 Operando: 5.2 Baixada: 5.3 Reserva: 5.4 Acidentada: 6. ARMAR GERAL: Semana: 1ª Semana 2ª Semana 3ª Semana 4ª Semana POP Executado: Local: Materiais utilizados: 6.1 Observações: 7. TRABALHO DE INSTRUÇÃO DE BOMBEIRO: Prontidão: Amarela ( ) Acompanhando TIB ( ) Atrasada Azul ( ) Acompanhando TIB ( ) Atrasada Verde ( ) Acompanhando TIB ( ) Atrasada Vermelha ( ) Acompanhando TIB ( ) Atrasada 7.1 Observações: 8. EDUAÇÃO FÍSICA: Prontidão: Realizando atividade física regularmente Amarela ( ) Sim ( ) Não Motivo: Azul ( ) Sim ( ) Não Motivo: Verde ( ) Sim ( ) Não Motivo: Vermelha ( ) Sim ( ) Não Motivo: 8.1 Observações: 3 9. OCORRÊNCIAS DE VULTO ATENDIDAS NO MÊS: Nº B.O. Descrição Comandante do Posto XXXXX",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 07, Art. 4",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no11": {
+          "name": "Alagoas",
+          "abbr": "AL_NO11",
+          "docLabel": "Norma Operacional nº 11 — Canil (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 11, Cap. VII — Casos omissos, revogação e vigência",
+              "caput": "Art. 21. Os casos omissos nesta NOB serão resolvidos pela Coordenação Geral do Serviço com Cães conforme previsto na DOB n.º 07.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 21",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. VII — Casos omissos, revogação e vigência",
+              "caput": "Art. 22. Revogam-se as disposições em contrário. 5 Estado de Alagoas Secretaria de Estado da Segurança Pública Corpo de Bombeiros Militar de Alagoas",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 22",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. VII — Casos omissos, revogação e vigência",
+              "caput": "Art. 23. Esta norma entra em vigor na data de sua publicação. Maceió-Al, 06 de janeiro de 2026 . (assinado eletronicamente) Francisco Leopardi Gonçalves Barretto Bastos - TC QOEM BM Respondendo pelo Comando Operacional de Bombeiros 6",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 23",
               "match": "exata"
             }
           ]
@@ -16967,6 +17688,305 @@
               "match": "exata"
             }
           ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021, Cap. III — Objetivos Básicos do Serviço Operacional",
+              "caput": "Art. 4º Constituem-se objetivos básicos do serviço operacional do Corpo de Bombeiros Militar da Bahia:",
+              "dispositivos": [
+                "I - realizar serviços de prevenção, combate e extinção de incêndios;",
+                "II - realizar serviços de busca, resgate e salvamento;",
+                "III - prestar socorro nos casos de sinistros, sempre que houver ameaça de destruição de haveres, vítimas ou pessoas em iminente perigo;",
+                "IV - executar atividades de defesa civil;",
+                "V - executar ações de salvamento, em atendimento pré-hospitalar e socorros de urgência;",
+                "VI - otimizar o tempo-resposta nos atendimentos aos sinistros, com foco na eficiência;",
+                "VII - dinamizar o atendimento à população, potencializando a capacidade operacional das viaturas e equipamentos."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 4",
+              "match": "exata"
+            }
+          ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. III, Seção II — Poder de Pronto Emprego",
+              "caput": "Art. 13 Estão subordinados operacionalmente ao Coordenador de Dia, para pronto emprego, todo efetivo operacional escalado nas unidades da Capital e do interior do Estado, para fins de gestão, controle e despacho.",
+              "dispositivos": [
+                "§ 1º As Companhias, Pelotões e assemelhados do interior do Estado têm autonomia para atendimento, despacho, gestão de escalas e rotinas.",
+                "§ 2º Compete ao Oficial de Dia/Comandante do Socorro e ao Atendente/Despachante de dia das unidades do interior do Estado manter o Coordenador de Dia informado acerca do PPE e das ocorrências de vulto e/ou repercussão.",
+                "§ 3º Compete aos Comandantes de Companhias da Capital e do Interior manter o Coordenador de Dia informado sobre os seus recursos operacionais disponíveis diariamente."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 13",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção II — Poder de Pronto Emprego",
+              "caput": "Art. 14 O Oficial de Dia/Comandante do Socorro é empregado nas ocorrências, bem como em outras situações oportunas que necessitem da coordenação ou intervenção de oficial, sendo acionado pelo Coordenador de Dia ou conforme determinação superior.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 14",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção II — Poder de Pronto Emprego",
+              "caput": "Art. 15 Os recursos operacionais poderão ser reposicionados em outra PO, para facilitar a mobilização de reforço e/ou cobertura da região, em caso de ausência ou déficit em determinada área por motivos diversos, mediante autorização do Coordenador de Dia.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 15",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção II — Poder de Pronto Emprego",
+              "caput": "Art. 16 Nos casos em que houver necessidade de remanejamento de recursos operacionais requisitados pelas unidades do Interior, e depois de esgotados os recursos de sua unidade, o Coordenador de Dia deverá solicitar autorização para mobilizar recursos necessários ao Superior de Dia.",
+              "dispositivos": [
+                "Parágrafo único. Quando a solicitação de apoio resultar de ocorrência de urgência e emergência, o Coordenador de Dia deve despachar as guarnições e comunicar de imediato ao Superior de Dia."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 16",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção II — Poder de Pronto Emprego",
+              "caput": "Art. 17 Quando houver alterações de pessoal, viaturas, materiais e equipamentos no serviço operacional, o Coordenador de Dia tem autonomia para movimentar ou remanejar recursos operacionais, dando ciência ao Superior de Dia.",
+              "dispositivos": [
+                "§ 1º Quando as alterações ocorrerem durante o horário de expediente, o comando da unidade deve ser informado para adoção das providências cabíveis.",
+                "§ 2º Quando as alterações ocorrerem fora do horário de expediente, adotará as providências necessárias para mitigar o problema, lançando em sua Documentação Diária.",
+                "§ 3º Nos casos de movimentação dos recursos operacionais, o Oficial de Dia/Comandante do Socorro assessora o Coordenador de Dia no melhor emprego operacional.",
+                "§ 4º As demandas de ocorrências (mergulho, busca na mata, BREC, PP, etc.) que exijam o emprego de recursos operacionais especializados, deverá, após colher todas as informações, fazer contato com a unidade especializada para o atendimento da ocorrência, priorizando o atendimento pela unidade mais próxima à ocorrência."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 17",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção II — Poder de Pronto Emprego",
+              "caput": "Art. 18 No cumprimento de ordens de missão e/ou de ocorrência, caso haja necessidade de quaisquer alterações (horário e/ou dos recursos operacionais), o Coordenador de Dia deve determinar que o Oficial de Dia/Comandante de Socorro constate a necessidade de alteração do planejamento inicial, bem como relatar as falhas encontradas e sugerir ações para as corrigir.",
+              "dispositivos": [
+                "Parágrafo único. Caso haja necessidade de recursos humanos e/ou remanejamentos, estes devem ser autorizados pelo Superior de Dia. Ocorrências de Defesa Civil"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 18",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção III — Ocorrências de Defesa Civil",
+              "caput": "Art. 19 O Coordenador de Dia deverá realizar triagem de ocorrências de Defesa Civil em conjunto com o Oficial de Comunicação, priorizando ocorrências que necessitem de socorro imediato (ação de resposta).",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 19",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção III — Ocorrências de Defesa Civil",
+              "caput": "Art. 20 As ocorrências de Defesa Civil não relativas à intervenção imediata devem ser direcionadas para as Coordenadorias Municipais de Proteção e Defesa Civil (COMPDC) e aos Coordenadores de Região da CEPDC.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 20",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção III — Ocorrências de Defesa Civil",
+              "caput": "Art. 21 O Coordenador de Dia deve colher informações necessárias ao acionamento da ocorrência de Defesa Civil que demande emprego imediato de guarnições da CEPDC, com necessidade de apoio com as guarnições do serviço diário do CBMRR.",
+              "dispositivos": [
+                "Parágrafo único. Nesse caso, o Coordenador de Dia aciona a CEPDC, solicitando que seja atendida a ocorrência e, caso a Coordenadoria necessite de apoio, a COCB enviará guarnições."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 21",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção III — Ocorrências de Defesa Civil",
+              "caput": "Art. 22 Em caso de existência simultânea, de múltiplas ocorrências, o Coordenador de Dia deve realizar triagem pela ordem de gravidade e determinar o acionamento de viaturas de acordo com o PPE disponível. Escalas de Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 22",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção II — Emprego",
+              "caput": "Art. 35 O Oficial de Dia/Comandante do Socorro deverá ser empregado em atividades operacionais, cumulativamente com as atribuições inerentes à rotina operacional da OBM e outras que se fizerem necessárias à execução das atividades bombeiro militar ou ordenadas pelo Comandante-Geral. Escalas de Serviço",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 35",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Escalas do Serviço Operacional",
+              "caput": "Art. 9º O serviço de Coordenador de Operações será de 12 horas com participação de oficiais que podem compor a escala fixa ou a escala alternada por efetivo do serviço administrativo das demais f rentes da Corporação, e utilizará o fardamento operacional, ou o agasalho quando em restrição médica.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 9",
+              "match": "exata"
+            },
+            {
+              "heading": "NGA SIOP (Anexo 2) — Escalas do Serviço Operacional",
+              "caput": "Art. 10 O serviço para Despachante e Atendente(s) será dividido em 05(cinco) escalas, que se revezarão em regime de trabalho de 12 horas de serviço diurno por 24 horas folga e 12 horas de serviço noturno por 72 horas de folga.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 10",
+              "match": "exata"
+            },
+            {
+              "heading": "NGA SIOP (Anexo 2) — Escalas do Serviço Operacional",
+              "caput": "Art. 11 O turno diurno iniciará às 07h00min e o turno noturno às 19h00min, com suas respectivas trocas iniciando com 10 (dez) minutos de antecedência. Parágrafo Único. O serviço de A tendente terá descanso de 10 (dez) minutos a cada 50 (cinquenta) minutos trabalhados.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 11",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no03": {
+          "name": "Alagoas",
+          "abbr": "AL_NO03",
+          "docLabel": "Norma Operacional nº 03 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 03 — Escalas operacionais por função",
+              "caput": "Art. 1º Instituir as escalas operacionais, de prontidão, com turnos de 24 (vinte e quatro) horas, para:",
+              "dispositivos": [
+                "I – Coordenador de Operações;",
+                "II - Comandante de Socorro;",
+                "III- Comandante de Guarnição;",
+                "IV- Auxiliar de Guarnição;",
+                "V - Condutor; e",
+                "VI - Operador de rádio.",
+                "§1º As escalas constantes neste artigo obedecerão ao parâmetro de três turnos de folga para cada turno trabalhado, sempre que possível, e desde que os militares estejam em regime exclusivo para tais escalas.",
+                "§2º As escalas constantes neste artigo, sem regime de exclusividade, deverão obedecer ao parâmetro de um turno de folga para cada turno trabalhado.",
+                "§3º Nas unidades da capital e interior do estado, caso comprovada a necessidade, poderá existir flexibilidade na quantidade de horas por turno, devendo, no entanto, ser respeitado o parâmetro de turnos de descanso para cada turno trabalhado, conforme § 1º e § 2º deste artigo, além do limite acumulativo de no máximo 48 (quarenta e oito) horas seguidas de serviço.",
+                "§4º As permutas nas escalas constantes neste artigo deverão ser de no mínimo 12 (doze) horas.",
+                "§5º As folgas inerentes ao serviço sem regime de exclusividade poderão ser acumuladas por no máximo 48 (quarenta e oito) horas.",
+                "§6º Não cabe o direito de folga ao militar dispensado do serviço ao qual foi escalado, devendo o mesmo cumprir o expediente na sua OBM, após o período da sua dispensa.",
+                "§7º Caberá aos Comandantes Operacionais de Bombeiros dirimirem os casos excepcionais."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 03, Art. 1",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 03 — Escalas operacionais por função",
+              "caput": "Art. 2º Instituir escalas operacionais, de prontidão, com turnos de 12 (doze) horas, para:",
+              "dispositivos": [
+                "I - Despachante; e",
+                "II - Atendente 193;",
+                "§1º As escalas previstas neste artigo deverão obedecer ao parâmetro de três turnos de descanso para cada turno trabalhado, sempre que possível, e desde que os militares estejam em regime exclusivo para tais escalas.",
+                "§2º As escalas constantes neste artigo, sem regime de exclusividade, deverão obedecer ao parâmetro de um turno de folga para cada turno trabalhado.",
+                "§3º Nas unidades da capital e interior do estado, caso comprovada a necessidade, poderá existir flexibilidade na quantidade de horas por turno, devendo, no entanto, ser respeitado o parâmetro de turnos de descanso para cada turno trabalhado, conforme § 1º e § 2º deste artigo, além do limite acumulativo de no máximo 48 (quarenta e oito) horas seguidas de serviço.",
+                "§4º As folgas inerentes ao serviço sem regime de exclusividade poderão ser acumuladas por no máximo 48 (quarenta e oito) horas.",
+                "§5º Não cabe o direito de folga ao militar dispensado do serviço ao qual foi escalado, devendo o mesmo cumprir o expediente na sua OBM, após o período da sua dispensa.",
+                "§6º Caberá aos Comandantes Operacionais de Bombeiros dirimirem os casos excepcionais."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 03, Art. 2",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 03 — Escalas operacionais por função",
+              "caput": "Art. 3º Instituir escalas operacionais não emergenciais, de prontidão, com turnos de 12 (doze) horas, para o Serviço de Atividades Técnicas (SAT):",
+              "dispositivos": [
+                "I - Atendente;",
+                "II - Analista;",
+                "III – Condutor/Auxiliar técnico;",
+                "IV – Vistoriante; e",
+                "V – Fiscalizador;",
+                "§1º As escalas previstas neste artigo deverão obedecer ao parâmetro de três turnos de descanso para cada turno trabalhado, sempre que possível, e desde que os militares estejam em regime exclusivo para tais escalas.",
+                "§2º As escalas constantes neste artigo, sem regime de exclusividade, deverão obedecer ao parâmetro de um turno de folga para cada turno trabalhado.",
+                "§3º As folgas inerentes ao serviço sem regime de exclusividade poderão ser acumuladas por no máximo 48 (quarenta e oito) horas.",
+                "§4º Não cabe o direito de folga ao militar dispensado do serviço ao qual foi escalado, devendo o mesmo cumprir o expediente na sua OBM, após o período da sua dispensa.",
+                "§5º Poderão concorrer às escalas previstas nos incisos I e III todas as praças do CBMAL.",
+                "§6º Poderão concorrer às escalas previstas nos incisos II, IV e V todos os oficiais e praças do CBMAL, exceto os comandantes de unidade.",
+                "§7º Caberá ao Superintendente de Atividades Técnicas dirimir os casos excepcionais."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 03, Art. 3",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 03 — Escalas operacionais por função",
+              "caput": "Art. 4º Instituir as escalas operacionais, em regime de sobreaviso, com turnos de 24 (vinte e quatro) horas, para:",
+              "dispositivos": [
+                "I – Supervisor de Operações;",
+                "II - Perito;",
+                "III - Auxiliar de Perícia;",
+                "§1º As escalas constantes neste artigo serão exercidas sem prejuízo das funções administrativas;",
+                "§2º Nos casos em que os integrantes das escalas previstas neste artigo forem acionados, caso o emprego seja de doze horas ou mais, terão direito à folga proporcional à duração do turno ao qual forem empregados, bem como o direito a verba de alimentação, mediante requerimento;",
+                "§3º Caberá aos Comandantes Operacionais de Bombeiros dirimirem os casos excepcionais inerentes ao inciso I.",
+                "§4º Caberá ao Superintendente de Atividades Técnicas dirimir os casos excepcionais inerentes aos incisos II e III.",
+                "§5º Concorrerão à escala de Supervisor de Operações todos os oficiais previstos no item 5.1.1 da DOB 03, prontos da capital."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 03, Art. 4",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 03 — Escalas operacionais por função",
+              "caput": "Art. 5º A área de atuação dos oficiais de serviço operacional obedecerá ao seguinte:",
+              "dispositivos": [
+                "I - o serviço de Supervisor de Operações será executado por um oficial superior em cada turno, que atuará em toda a área do estado de Alagoas;",
+                "II - o serviço de Coordenador de Operações será executado por um oficial em cada turno, responsável por toda área do estado de Alagoas, devendo sediar-se, até as 18:00h, integralmente, nas instalações do Centro Integrado de Operações de Defesa Social/CIODS e após este horário nas dependências de qualquer quartel da região metropolitana de Maceió, devendo retornar ao CIODS, em qualquer horário, em casos de necessidades operacionais e as 6:45h do dia seguinte para passagem do serviço.",
+                "III - o serviço de Comandante de Socorro será executado, diariamente, e sempre que possível, por 9 (nove) oficiais, responsáveis pelas seguintes áreas:",
+                "a) Área I – Sul da região Metropolitana de Maceió, com sede no Quartel Geral/CBMAL;",
+                "b) Área II – Norte da Região Metropolitana de Maceió com sede no Grupamento de Incêndio;",
+                "c) Área III – Área do 2º Grupamento de Bombeiros Militar em Maragogi;",
+                "d) Área IV – Área do 6º Grupamento de Bombeiros Militar em Penedo;",
+                "e) Área V – Área do 7º Grupamento de Bombeiros Militar em Arapiraca;",
+                "f) Área VI – Área do 7º Grupamento de Bombeiros Militar em Palmeira dos Índios;",
+                "g) Área VII - Área do 9º Grupamento de Bombeiros Militar em Santana do Ipanema;",
+                "h) Área VIII - Área do 9º Grupamento de Bombeiros Militar em Delmiro Gouveia;",
+                "i) Área IX - Área do 3º Grupamento de Bombeiros Militar em União dos Palmares; Parágrafo Único. Em caso de carência de oficiais para manutenção de algumas das escalas previstas no inciso III deste artigo, caberá aos Comandantes Operacionais de Bombeiros dirimirem sobre a supressão/união de tais escalas de acordo com a necessidade operacional."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 03, Art. 5",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no11": {
+          "name": "Alagoas",
+          "abbr": "AL_NO11",
+          "docLabel": "Norma Operacional nº 11 — Canil (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 11, Cap. VI — Emprego e prazos de acionamento",
+              "caput": "Art. 16. Os acionamentos de ocorrências com cães deverão, sempre que possível, ser atendidos no mesmo dia da solicitação, salvo quando o deslocamento implicar chegada ao local após o anoitecer.",
+              "dispositivos": [
+                "Parágrafo único. Os prazos-limite para deslocamento fora da Região Metropolitana de Maceió serão estabelecidos de acordo com cada área preestabelecida. 4 Estado de Alagoas Secretaria de Estado da Segurança Pública Corpo de Bombeiros Militar de Alagoas I - nas cidades pertencentes ao Sertão de Alagoas – Delmiro Gouveia, Água Branca, Inhapi, Mata Grande, Olho d’Água do Casado, Canapi, Pariconha, Piranhas, Senador Rui Palmeira e Maravilha, o deslocamento deverá ocorrer até às 11h.",
+                "II - nas cidades pertencentes ao Agreste de Alagoas – Arapiraca, Palmeira dos Índios, Igaci, Coité do Nóia, Lagoa da Canoa, Girau do Ponciano, Campo Alegre, Limoeiro de Anadia, Craíbas, Taquarana, São Sebastião, Feira Grande e Cacimbinhas, o deslocamento deverá ocorrer até às 12h.",
+                "III - nas cidades pertencentes à Zona da Mata de Alagoas – União dos Palmares, São José da Laje, Murici, Branquinha, Capela, Viçosa, Atalaia, Colônia Leopoldina, Joaquim Gomes, Messias, Flexeiras e Ibateguara, o deslocamento deverá ocorrer até às 14h.",
+                "IV - acionamentos recebidos após esses horários deverão ser planejados para início do deslocamento ao amanhecer do dia seguinte, salvo determinação expressa do Comando Operacional de Bombeiros."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 16",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. VI — Emprego e prazos de acionamento",
+              "caput": "Art. 17. As ocorrências envolvendo busca de pacientes psiquiátricos, apoio à Secretaria de Estado da Segurança Pública Polícia Militar de Alagoas (PMAL), Polícia Civil de Alagoas (PCAL) e Perícia Científica de Alagoas e investigações relacionadas à localização de cadáveres ou situações similares deverão contar com acompanhamento policial, a fim de resguardar e garantir a segurança da equipe do Canil. Parágrafo único. A equipe do Canil só deverá iniciar a operação quando a força policial estiver presente no local.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 17",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. VI — Emprego e prazos de acionamento",
+              "caput": "Art. 18. Durante as buscas, o condutor deverá seguir as orientações da Coordenação Operacional do Serviço com Cães priorizando a segurança do binômio e o registro das atividades.",
+              "dispositivos": [
+                "§ 1º O tempo inicial de busca será de até 02 (dois) dias, prorrogável mediante surgimento de novas pistas ou evidências, especialmente em áreas rurais ou de mata densa.",
+                "§ 2º Quando as cadelas estiverem no período de cio, as operações deverão ser realizadas em área restrita, com o animal obrigatoriamente conduzido na guia."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 18",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. VI — Emprego e prazos de acionamento",
+              "caput": "Art. 19. O emprego do Canil em eventos de apresentação ficará restrito à demonstração das capacidades operativas dos cães, sendo vedada qualquer interação direta com o público — como toques ou abraços — sem o consentimento prévio do cinotécnico, após avaliação.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 19",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. VI — Emprego e prazos de acionamento",
+              "caput": "Art. 20. Todos os binômios empregados devem possuir avaliação ou certificação vigente, conforme estabelece a DOB n.º 07.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 20",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -17776,6 +18796,456 @@
               "dispositivos": [],
               "source": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 72",
               "match": "parcial"
+            }
+          ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021, Cap. VII — Da Passagem de Serviço",
+              "caput": "Art. 20. O turno operacional será iniciado por ocasião da passagem de serviço, conforme as escalas publicadas e em consonância com as normas e portarias em vigor no âmbito do CBMBA.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 20",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. VII — Da Passagem de Serviço",
+              "caput": "Art. 21. A passagem de serviço é um ato solene que deverá ocorrer com a presença das duas prontidões: a que entra e a que sai de serviço, uma voltada de frente para a outra, buscando o alinhamento das ordens do Comando e as diretrizes a serem cumpridas, configurando, assim, o rito de passagem.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 21",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. VII — Da Passagem de Serviço",
+              "caput": "Art. 22. Nenhum oficial ou praça, efetivamente escalado, estará dispensado da passagem de serviço, devendo participar de todos os seus rituais.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 22",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. VII — Da Passagem de Serviço",
+              "caput": "Art. 23. Compete ao Subcomandante de cada Unidade fiscalizar e acompanhar a rotina de execução dos serviços.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 23",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. VII — Da Passagem de Serviço",
+              "caput": "Art. 24. O dispositivo de passagem de serviço em cada Unidade será condicionado à quantidade de efetivo oficialmente escalado.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 24",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. VII — Da Passagem de Serviço",
+              "caput": "Art. 25. Salvo nos casos de atendimento à ocorrência, a passagem de serviço deverá ocorrer com a presença de todas as guarnições de serviço da Unidade, que entrarão em forma da direita para esquerda, obedecendo à antiguidade.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 25",
+              "match": "exata"
+            }
+          ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. II, Seção III — Passagem de Serviço (Superior de Dia)",
+              "caput": "Art. 7º O Superior de Dia deve assumir o serviço no Quartel do Comando-Geral diariamente às 07h30.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 7",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção III — Passagem de Serviço (Superior de Dia)",
+              "caput": "Art. 8º Após assunção do serviço, o Superior de Dia, assim que possível, deve tomar ciência das ordens e alterações do serviço operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 8",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção III — Passagem de Serviço (Superior de Dia)",
+              "caput": "Art. 9º Das documentações:",
+              "dispositivos": [
+                "I – dar ciência no livro do Coordenador de Dia;",
+                "II – confeccionar o Extrato Diário do Superior de Dia e o encaminhar ao Comandante do COCI até às 09h30 do término do serviço, salvo em casos fortuitos e/ou força maior, devidamente fundamentados (formalmente) em seu Extrato Diário. Prescrições Gerais"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 9",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção V — Passagem de Serviço (Coordenador de Dia)",
+              "caput": "Art. 25 A passagem de serviço do Coordenador de Dia é realizada diariamente às 07h30.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 25",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção V — Passagem de Serviço (Coordenador de Dia)",
+              "caput": "Art. 26 O Coordenador de Dia, após a assunção do serviço, deve receber todas as alterações das PO da Capital e do Interior, inerentes aos Recursos Operacionais de suas áreas operacionais.",
+              "dispositivos": [
+                "Parágrafo único. Poderá enviar o Oficial de Dia/Comandante do Socorro na PO para dirimir quaisquer dúvidas relacionadas aos Recursos Operacionais empregados naquela base operacional."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 26",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção V — Passagem de Serviço (Coordenador de Dia)",
+              "caput": "Art. 27 Os Coordenadores de Dia envolvidos na passagem de serviço devem conferir conjuntamente a relação de material de responsabilidade da função.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 27",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção V — Passagem de Serviço (Coordenador de Dia)",
+              "caput": "Art. 28 Das documentações:",
+              "dispositivos": [
+                "I – dar ciência no livro do Oficial de Dia/Comandante do Socorro da Capital e do Interior;",
+                "II – confeccionar o Livro Diário do Coordenador de Dia e o encaminhar ao Comandante do COCI, concluso, até às 08h30 do término do serviço, salvo em casos fortuitos e/ou força maior, legalmente fundamentado e devidamente documentado em Livro Diário, com prazo limite até a passagem do serviço do dia seguinte;",
+                "III – solicitar a ciência do Superior de Dia no Livro Diário do Coordenador. Prescrições Gerais"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 28",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção IV — Passagem de Serviço",
+              "caput": "Art. 38 O Oficial de Dia/Comandante do Socorro deve assumir o serviço na PO da área de atuação diariamente às 07h30.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 38",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção IV — Passagem de Serviço",
+              "caput": "Art. 39 Na assunção ao serviço e/ou passagem do serviço, o Oficial de Dia/Comandante do Socorro deverá:",
+              "dispositivos": [
+                "I - conferir o material-carga sob responsabilidade da função;",
+                "II - verificar com os comandantes das guarnições das PO as condições das viaturas, equipamentos e materiais;",
+                "III - cientificar-se das alterações de pessoal, bem como das trocas de serviço e possíveis limitações de militares;",
+                "IV – verificar se o pavilhão foi hasteado e/ou recolhido, bem como se foram cumpridas quaisquer ações relacionadas ao pavilhão.;",
+                "V - verificar a faxina diária das guarnições nas instalações internas e externas da PO, conforme norma vigente."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 39",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção IV — Passagem de Serviço",
+              "caput": "Art. 40 Das documentações:",
+              "dispositivos": [
+                "I – dar ciência no Livro Diário das PO sob sua responsabilidade;",
+                "II – confeccionar o Livro Diário do Oficial de Dia/Comandante do Socorro e o encaminhar ao Comandante do COCI, concluso até às 07h30 do término do serviço, salvo em casos fortuitos e força maior, legalmente fundamentado e devidamente documentado em Livro Diário, com prazo limite até a passagem do serviço do dia seguinte;",
+                "III – solicitar a ciência do Coordenador Dia no Livro Diário do Oficial de Dia/Comandante do Socorro. Prescrições Gerais"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 40",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção III — Passagem de Serviço",
+              "caput": "Art. 48 O Oficial de Incêndio, de Salvamento e de Emergência Pré-Hospitalar deve assumir o serviço na PO a qual está escalado, diariamente às 07h30min.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 48",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção III — Passagem de Serviço",
+              "caput": "Art. 49 Na assunção ao serviço, o Oficial de Incêndio, de Salvamento e de Emergência Pré- Hospitalar deverá:",
+              "dispositivos": [
+                "I - conferir o material-carga sob responsabilidade da função;",
+                "II - verificar as condições de pessoal, das viaturas, equipamentos e materiais;",
+                "III - escalar e verificar se a faina diária foi realizada nas instalações internas e externas da PO, conforme norma da OBM;",
+                "IV - conferir conjuntamente (Oficiais de Incêndio, de Salvamento e de Emergência Pré- Hospitalar envolvidos na passagem e/ou recebimento do serviço) a relação de material sob responsabilidade da função."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 49",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção III — Passagem de Serviço",
+              "caput": "Art. 50 Das documentações:",
+              "dispositivos": [
+                "I – elaborar toda a Documentação Diária da PO;",
+                "II – encaminhar a documentação ao Oficial de Dia/Comandante do Socorro e solicitar desse a ciência no Livro Diário. Prescrições Gerais"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 50",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção III — Passagem de Serviço",
+              "caput": "Art. 57 A passagem de serviço do Oficial de Comunicação será realizada diariamente às 07h30.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 57",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção III — Passagem de Serviço",
+              "caput": "Art. 58 Ao assumir o serviço, o Oficial de Comunicação deverá tomar conhecimento da situação atual (efetivo e viaturas), missões e ocorrências em andamento.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 58",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção III — Passagem de Serviço",
+              "caput": "Art. 59 Os Oficiais de Comunicação envolvidos na passagem do serviço deverão conferir conjuntamente a relação de material sob responsabilidade da função. Prescrições Gerais",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 59",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção III — Passagem de Serviço",
+              "caput": "Art. 67 A passagem de serviço do Oficial de Saúde será realizada diariamente às 07h30.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 67",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção III — Passagem de Serviço",
+              "caput": "Art. 68 Ao assumir o serviço, o Oficial de Saúde deverá inteirar-se da situação atual de sua atividade e das ocorrências em andamento.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 68",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção III — Passagem de Serviço",
+              "caput": "Art. 69 Deve informar ao Coordenador de Dia a disponibilidade para suas atividades, diariamente, até 08h00. Prescrições Gerais",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 69",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VIII, Seção III — Passagem de Serviço",
+              "caput": "Art. 75 A passagem de serviço do Oficial de Correições e Disciplina será realizada diariamente às 07h30.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 75",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VIII, Seção III — Passagem de Serviço",
+              "caput": "Art. 76 Ao assumir o serviço, deverá inteirar-se da situação atual de sua atividade e das ocorrências em andamento. Paragrafo único. Informar ao Coordenador de Dia a disponibilidade para o serviço de sobreaviso, diariamente, até 08h00; Prescrições Gerais",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 76",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção III — Passagem de Serviço",
+              "caput": "Art. 83 O serviço do Oficial de Sobreaviso será finalizado às 07h30 ao dia posterior à sua escala de serviço, desde que não esteja empenhado em ocorrência.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 83",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção III — Passagem de Serviço",
+              "caput": "Art. 84 Ao assumir o serviço, o Oficial de Sobreaviso deverá inteirar-se da situação atual de sua atividade e das ocorrências em andamento. Paragrafo único. Informar ao Coordenador de Dia a disponibilidade para o serviço de sobreaviso, diariamente, até 08h00. Prescrições Gerais",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 84",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Regime do Serviço Administrativo",
+              "caput": "Art. 7º O Serviço Administrativo cumprirá o mesmo horário de expediente cumprido pelos demais militares do CBMTO, e poderá utilizar os fardamentos adm inistrativos, operacional, e agasalho quando em restrição médica.",
+              "dispositivos": [],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 7",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no04": {
+          "name": "Alagoas",
+          "abbr": "AL_NO04",
+          "docLabel": "Norma Operacional nº 04 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 04 — Cronograma diário e flexibilização",
+              "caput": "Art. 1º Instituir o seguinte cronograma de atividades diárias para o serviço operacional dos Postos de Bombeiros, a ser cumprido na íntegra:",
+              "dispositivos": [
+                "I- 07 (sete) horas - Revista matinal, observando que:",
+                "a) deverá ser presidida pelo Comandante mais antigo das duas prontidões;",
+                "b) as prontidões (a que sai e a que entra em serviço) se postarão frente a frente, por ordem de guarnições das viaturas que as compõem, sendo que a prontidão que entr a em serviço deverá estar com seu Equipamento de Proteção Individual completo;",
+                "b) as guarnições deverão entrar em forma por colunas, cabendo ao mais antigo a apresentação das alterações ao seu Comandante de Prontidão.",
+                "c) sucessivamente, por ordem de guar nição, cada Comandante fará em voz audível a passagem do comando da guarnição (do que sai ao que entra em serviço), transmitindo neste momento alguma novidade da guarnição ou viatura, se houver;",
+                "d) será entoada uma canção (Hino Nacional, canção do Soldado do Fogo ou canção da U.Op, se houver) e, logo em seguida, será dado o comando de “fora de forma”, ficando as prontidões à disposição de seus respectivos comandantes (de acordo com o Regulamento de Continências).",
+                "II- 07 (sete) horas e 30 (trinta) minutos - Conferência dos equipamentos e materiais, manutenção de 1º escalão e deslocamento para o teste de funcionamento das viaturas, observando que:",
+                "a) a conferência dos equipamentos e materiais e a manutenção de 1º escalão deve ser realizada pelas guarnições que entram e saem de serviço, e supervisionada pelo Comandante de Socorro, quando houver;",
+                "b) no deslocamento para o teste de funcionamento das viaturas, apen as com as guarnições que entra m de serviço, em percurso pré- estabelecido pelo Comandante do Posto de Bombeiros, deve ser incluído no trajeto, preferencialmente, um posto de combustível e um hidrante;",
+                "III- Imediatamente após o retorno do deslocamento para teste de funcionamento das viaturas - Armar-geral (prática diária de montagem de equipamentos ou simulação simples de ocorrências das diversas áreas especializadas de bombeiros), independente do módulo em que estiver o Trabalho de Instrução de Bombeiro, a ser ministrada pelo Comandante de Socorro, Comandante da Prontidão ou Bombeiro especializado;",
+                "IV- 10 (dez) horas e 30 (trinta) minutos - Trabalho de Instrução de Bombeiro, com cronograma de instruções a ser definido em norma operacional de bombeiro específica para o assunto;",
+                "III- 09 (nove) horas - Trabalho de Instrução de Bombeiro, com cronograma de instruções a ser definido em norma operacional de bombeiro específica para o assunto;",
+                "IV- 10 (dez) horas - Armar-geral (prática de montagem de equipamentos ou simulação simples de ocorrências das diversas áreas especializadas de bombeiros), independente do módulo em que estiver o Trabalho de Instrução de Bombeiro, a ser ministrada pelo Comandante de Socorro, Comandante da Prontidão ou Bombeiro especializado, às sextas-feiras;",
+                "V- 12 (doze) horas - Almoço, observando que, após sua realização, a cozinha, seus utensílios e o refeitório devem ser limpos e estar prontos para o jantar, sob a responsabilidade do Comandante de Prontidão (devendo contar com a ajuda dos demais integrantes da p rontidão). Poderá ter início antecipado, sem prejuízo da rotina diária;",
+                "VI- 15 (quinze) horas - Revista vespertina, onde serão transmitidas ordens, se houver, e feita a leitura de Boletim Interno e/ou Boletim Geral Ostensivo, pelo Comandante da Prontidão;",
+                "VII- 15 (quinze) horas e 30 (trinta) minutos - Educação Física , estabelecida por normatização específica;",
+                "VIII- 17 (dezessete horas) - Período para prática desportiva livre;",
+                "VI- 16 (dezesseis) horas - Educação Física , estabelecida por normatização específica. Após o prática de educação física poderá haver a prática de atividade desportiva livre, sob supervisão do mil itar mais antigo de serviço no Posto de Bombeiro;",
+                "IX - 19 (dezenove) horas - Jantar, observando que, após sua realização, a cozinha, seus utensílios e o refeitório deverão estar limpos e prontos para o café matinal, sob a responsabilidade do Comandante de Prontidão (devendo contar com a ajuda dos demais integrantes da Prontidão).",
+                "VII - 18 (dezoito) horas - Jantar, observando que, após sua realização, a cozinha, seus utensílios e o refeitório deve rão estar limpos e prontos para o café matinal, sob a responsabilidade do Comandante de Prontidão (devendo contar com a ajuda dos demais integrantes da Prontidão). Poderá ter início antecipado, sem prejuízo da rotina diária;",
+                "VIII- 20 (vinte) horas e 30 (trinta) minutos - Revista noturna . Imediatamente após a revista deverá ser realizado o aquecimento das viaturas que não se deslocaram durante o dia , podendo ser feito com o veículo parado ou em percurso pré estabelecido;",
+                "IX- 21 (vinte e uma) horas - Aquecimento das viaturas, podendo ser feito com o veículo parado ou em percurso pré estabelecido;",
+                "IX- 22 (vinte e duas) horas - Silêncio, observando que a partir deste horário deve cessar toda atividade que possa vir a perturbar o descanso do homem, e que o silêncio somente será quebrado em situações de emergência (alarme, ordem de superior que priorize a quebra do silêncio etc.);",
+                "X- 05 (cinco) horas e 30 (trinta) minutos - Alvorada, observando que será dada a alvorada (por meio de voz ou de sinal sonoro), sendo que no tempo de 30 minutos a tropa terá condições de fazer a higiene pessoal e estar pronta;",
+                "XI- 06 (seis) horas - Faxina geral das dependências comuns do Posto de Bombeiros, a ser realizada por todo o efetivo da prontid ão que “sai de serviço”;",
+                "XII- 06 (seis) horas e 30 (trinta) minutos - Café da manhã, observando que após o café da manhã, a cozinha, seus utensílios e o refeitório devem ser limpos e estar prontos para o almoço, sob a responsabilidade do Comandante de Pro ntidão (devendo contar com a ajuda dos demais integrantes da prontidão)."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 04, Art. 1",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 04 — Cronograma diário e flexibilização",
+              "caput": "Art. 2º Em razão de particularidades específicas do posto de bombeiros, tais como condições de transporte para a tropa, proximidade de aeroportos, orla marítima e autódromos, os horá rios da rotina diária poderão ser adaptados para completar as atividades de capacitação profissional inerentes ao treinamento dos bombeiros, além das suas atividades operacionais, desde que autorizados pelo Comandante do Grupamento de Bombeiros, e cumprida toda a rotina, devendo este ajuste estar em ordem afixada em mural para efeito de fiscalização.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 04, Art. 2",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no06": {
+          "name": "Alagoas",
+          "abbr": "AL_NO06",
+          "docLabel": "Norma Operacional nº 06 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 06 — Relatório de Serviço Diário e Mensal",
+              "caput": "Art. 1º Instituir o Relatório de Serviço Diário, anexo único desta norma operacional.",
+              "dispositivos": [
+                "§ 1º O Relatório de Serviço Diário é um documento oficial instituído pela Administração Pública, servindo como base legal para subsidia r procedimentos administrativos.",
+                "§ 2º No modelo adotado como anexo único estão os dados mínimos a serem inseridos no relatório oficial, podendo os diversos órgãos do CBMAL sugerir a inserção, no surgimento de eventual necessidade, de novos campos. Tais sugestões serão implementadas após aprovação deste Subcomando que autorizará, por meio de despacho, o órgão competente alterá-lo."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 06, Art. 1",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 06 — Relatório de Serviço Diário e Mensal",
+              "caput": "Art. 2º Deverá ser preenchido e publica do no sistema de informação operacional utilizado pelo CBMAL pelos Comandantes de Prontidão, fiscalizado pelo Comandante de Posto e Comandante de Subgrupamento.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 06, Art. 2",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 06 — Relatório de Serviço Diário e Mensal",
+              "caput": "Art. 3º O Comandante de Posto de Bombeiros deverá, b aseado nos dados dos Relatórios de Serviço Diário, elaborar e fazer publicar no sistema de informação operacional utilizado pelo CBMAL, até o quinto dia útil de cada mês, o Relatório Mensal de Serviços do Posto de Bombeiros sob sua responsabilidade.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 06, Art. 3",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no07": {
+          "name": "Alagoas",
+          "abbr": "AL_NO07",
+          "docLabel": "Norma Operacional nº 07 (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 07 — Relatório Mensal de Serviços do Posto",
+              "caput": "Art. 1º Instituir o Relatório Mensal de Serviços do Posto de Bombeiros , anexo único desta norma operacional.",
+              "dispositivos": [
+                "§ 1º O Relatório Mensal de Serviços do Posto de Bombeiros é um documento oficial instituído pela Administração Pública, servindo como base legal para subsidia r procedimentos administrativos.",
+                "§ 2º No modelo adotado como anexo único estão os dados mínimos a serem inseridos n o relatório oficial, podendo os diversos órgãos do CBMAL sugerir a inserção, no surgimento de eventual necessidade, de novos campos. Tais sugestões serão implementadas após aprovação deste Subcomando que autorizará, por meio de despacho, o órgão competente alterá-lo."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 07, Art. 1",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 07 — Relatório Mensal de Serviços do Posto",
+              "caput": "Art. 2º Deverá ser preenchido e publica do no sistema de informação operacional utilizado pelo CBMAL pelos Comandantes de Prontidão, fiscalizado pelo Comandante de Grupamento e Comandante Operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 07, Art. 2",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no11": {
+          "name": "Alagoas",
+          "abbr": "AL_NO11",
+          "docLabel": "Norma Operacional nº 11 — Canil (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 2º O serviço diário do Canil do CBMAL deverá ser composto, obrigatoriamente, por pelo menos um bombeiro militar com curso de cinotecnia, ou com experiência comprovada superior a dois anos de atuação no Canil, ou ainda por bombeiro militar que possua cão certificado em provas oficiais do Conselho Nacional de Comandantes-Gerais de Corpos de Bombeiros Militares - CNCGBM /",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 2",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 3º Deverá ser implementado rodízio na escalação das duplas de serviço, sendo vedada a repetição das mesmas duplas em meses subsequentes, de modo que o rodízio ocorra entre todos os bombeiros militares. Tal medida visa à diversificação das duplas e à distribuição equitativa de figurantes nos treinamentos.",
+              "dispositivos": [
+                "§ 1º O rodízio acontecerá de forma que o militar A que tirou serviço no mês de janeiro com o militar B, não poderá tirar serviço no mês seguinte (fevereiro) com o mesmo militar B, devendo ser escalado com outro militar.",
+                "§ 2º As permutas de serviço deverão, preferencialmente, ser feitas com bombeiros militares diferentes, a fim de atender ao objetivo do caput do artigo.",
+                "§ 3º A normativa prevista neste artigo deverá ser fiscalizada pelo escalante e/ou Chefe da Seção de Operações e Instrução do Batalhão Bombeiro Militar de Busca e Salvamento, devendo ser comunicada de imediato ao Comandante da unidade em caso de descumprimento."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 3",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 4º Os treinamentos operacionais deverão ser realizados, preferencialmente, em locais com cobertura de sinal de celular ou rádio, a fim de garantir o acionamento rápido em caso de ocorrência real.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 4",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 5º O esforço de busca em ocorrências de desaparecimento terá o prazo ordinário de 02 (dois) dias. Parágrafo único. O período estipulado no caput poderá ser reduzido ou prorrogado mediante a análise técnica de novas evidências, com especial atenção às especificidades e complexidades inerentes às operações em ambiente rural. 2 Estado de Alagoas Secretaria de Estado da Segurança Pública Corpo de Bombeiros Militar de Alagoas",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 5",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 6º A formatura e passagem de serviço ocorrerá de acordo com horários preestabelecidos. I - no horário de 06h50 ocorrerá a conferência do efetivo que entra e sai da prontidão. II - a passagem de serviço ocorrerá às 07h00 com a troca de prontidões com hasteamento do pavilhão nacional.",
+              "dispositivos": [
+                "a) o uniforme utilizado para a passagem de serviço será o uniforme operacional completo, conforme o padrão estabelecido pelo CBMAL."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 6",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 7º Deverá ser realizada a conferência completa de materiais, viaturas e cães, mediante um checklist de materiais, equipamentos, rações e condições gerais das viaturas.",
+              "dispositivos": [
+                "I - o checklist deverá ser confeccionado pela Chefia da Seção de Operações e Instrução do Batalhão Bombeiro Militar de Busca e Salvamento e atualizado sempre que for preciso.",
+                "II - a guarnição que sai deverá entregar o material limpo e acondicionado nos locais adequados e verificar a condição geral dos cães (alimentação, hidratação, comportamento, medicação, estado físico).",
+                "III - a guarnição que estiver de serviço deverá observar a separação de cadelas no cio e cães em tratamento."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 7",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. II — Condições do serviço diário do Canil",
+              "caput": "Art. 8º A guarnição que sai realizará limpeza completa das instalações internas e externas, incluindo boxes, pátio, alojamento e áreas administrativas.",
+              "dispositivos": [
+                "I - a lavagem e desinfecção dos boxes deverá ocorrer semanalmente ou conforme necessidade, sendo realizada com água e sanitizante (sabão em pó e/ou antisséptico específico).",
+                "II - as viaturas deverão ser lavadas e abastecidas nas segundas, quartas e sextas-feiras. III - caso alguma ocorrência demande consumo de combustível acima do previsto, o fato deverá ser informado imediatamente ao Comandante de Socorro, a fim de viabilizar junto ao gestor de combustíveis uma demanda suplementar para o dia seguinte."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 8",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. IV — Canal de comunicação interna",
+              "caput": "Art. 11. A comunicação de alterações e ocorrências internas nas rotinas, treinamentos, materiais, cães, escala ou efetivo deverá ser comunicada primeiramente ao Comandante do Batalhão Bombeiro Militar de Busca e Salvamento (BBMBS) e, posteriormente, à Coordenação do Serviço com Cães para ciência e controle administrativo.",
+              "dispositivos": [
+                "Parágrafo único. As comunicações deverão ocorrer de forma formal e imediata, podendo ser realizadas via Sistema Eletrônico de Informações (SEI)."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 11",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. IV — Canal de comunicação interna",
+              "caput": "Art. 12. Os membros do Canil deverão manter um canal único e ativo, destinado exclusivamente à troca de informações sobre o serviço, a rotina administrativa e operacional, bem como assuntos de interesse coletivo do setor.",
+              "dispositivos": [
+                "Parágrafo único. Esse canal poderá ser mantido por meio de aplicativos oficiais da Corporação, ou outro grupo digital adotado pela equipe, desde que de fácil acesso, controle e uso responsável.",
+                "I - toda e qualquer alteração de rotina, escala, acionamento, procedimento ou decisão relevante deverá ser repassada obrigatoriamente por esse canal oficial.",
+                "II - o uso do canal deverá observar os princípios da hierarquia, disciplina e ética profissional, destinando-se estritamente a assuntos de serviço."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 12",
+              "match": "exata"
             }
           ]
         }
@@ -20455,6 +21925,623 @@
                 "XX. Prestar as continências regulamentares."
               ],
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 22",
+              "match": "exata"
+            }
+          ]
+        },
+        "ba": {
+          "name": "Bahia",
+          "abbr": "BA",
+          "docLabel": "Norma Operacional nº 01/2021 (CBMBA)",
+          "excerpts": [
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções I-II — Superior de Dia",
+              "caput": "Art. 6º O serviço de Superior de Dia será realizado pelos oficiais superiores do CBMBA, devidamente escalados, com autorização dos chefes imediatos, tendo o despacho do escalão superior.",
+              "dispositivos": [
+                "Parágrafo único - Não concorrerão à escala de Superior de Dia os oficiais do posto de Coronel BM, bem como os demais oficiais superiores que tenham sido dispensados expressamente pelo Comandante-Geral do CBMBA, em função de outras atribuições que exerçam."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 6",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções I-II — Superior de Dia",
+              "caput": "Art. 7º Compete ao Superior de Dia do CBMBA:",
+              "dispositivos": [
+                "I - fiscalizar, participar e tomar decisões operacionais em razão de ocorrências de grande vulto e complexidade ou em quaisquer eventos que fujam à rotina operacional da Corporação, cuja natureza e gravidade requeiram a sua presença e gestão operacional;",
+                "II - apresentar-se formalmente, tão logo assuma o serviço, ao Comandante de Operações de Bombeiros Militares e, não sendo possível, realizar o contato por meio telefônico;",
+                "III - comparecer aos locais de ocorrência e sinistros quando tomar conhecimento do fato ou quando acionado pelo Supervisor do Teledespacho e/ou Supervisor de Operações, de acordo com o mapa de força (ANEXO A), em razão da gra vidade da situação e/ou repercussão do evento;",
+                "IV - manter contato com o Comandante de Operações de Bombeiros Militares por ocasião de ocorrência e grandes sinistros, quanto à necessidade de mobilização de recursos e efetivo para a resposta operacional;",
+                "V - manter os contatos necessários com o Comandante de Operações de Bombeiros Militares, para o alinhamento de procedimentos com autoridades e/ou órgãos, com vistas a promover a resposta e o desdobramento operacional da missão;",
+                "VI - adotar as medidas iniciais de soc orro e atendimento ao constatar a complexidade da ocorrência e a presença de outros órgãos no cenário, bem como atentar para o aumento da capacidade de resposta do mapa de força do bombeiro, implementando o Sistema de Comando de Incidentes (SCI);",
+                "VII - prestar informações à imprensa sobre as operações desenvolvidas pelo CBMBA, representando o Comando-Geral, procedendo conforme as orientações da Assessoria de Comunicação Social (ACS) e, em razão da necessidade, solicitar ao escalão superior um oficial habilitado na área de comunicação social e media training, na função de Oficial de Comunicações, com o objetivo de auxiliar o oficial superior empregado no SCI;",
+                "VIII - determinar a realização de todas as fases operacionais nos locais de emergência, o seu devido desdobramento e exigir dos comandantes de fração de tropa presentes na operação o fiel cumprimento dos procedimentos operacionais e das rotinas do atendimento, visando à segurança das operações e a observância dos devidos protocolos;",
+                "IX - realizar o levantamento de in formações das condições físicas e psicológicas do efetivo empregado, assim como as condições operativas, funcionais e ordinárias dos recursos a serem empregados, englobando viaturas, equipamentos, acessórios, ferramentas, EPI’s específicos, suprimento de á gua, hidratação e alimentação, bem como os demais equipamentos e o reforço operacional para o serviço;",
+                "X - avaliar, de imediato, a necessidade de recurso médico, através de contato com hospitais da região e acionamento de apoio de aeronave;",
+                "XI - determinar o acionamento do Plano de Chamada por ocasião de sinistros de grande vulto, após o conhecimento e deliberação do Comandante de Operações de Bombeiros Militares;",
+                "XII - efetuar visita de inspeção às Unidades Operacionais e postos, quando julgar necessário;",
+                "XIII - utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPI) disponíveis nas ocorrências em que for empregado;",
+                "XIV - informar, imediatamente, ao Comandante de Operações de Bombeiros Militares, quanto ao surgimento de ocorrências envolvendo público interno, para as devidas providências e orientações;",
+                "XV - determinar ao Coordenador de Área o devido acompanhamento das diligências pertinentes, quando tomar conhecimento de fato envolvendo militares do CBMBA e, em se tratando de situações de caráter disciplinar, prover o acionamento do plantão correcional da Corporação;",
+                "XVI - acionar o Comandante de Operações de Bombeiros Militares para alinhamento de procedimentos e deliberações em ocorrências envolvendo oficial superior que seja hierarquicamente superior ao oficial escalado."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 7",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 10. O serviço de Supervisor de Operações do CBMBA será realizado pelos oficiais intermediários do CBMBA e, havendo alguma impossibilidade ou necessidade, poderá ser exercido e assumido por oficial subalterno.",
+              "dispositivos": [],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 10",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 11. Compete ao Supervisor de Operações do CBMBA:",
+              "dispositivos": [
+                "I - contactar o Supervisor do Teledespacho (CICOM) no início do turno de trabalho;",
+                "II - receber, ao entrar de serviço, as alterações referentes aos ativos disponíveis para a atividade operacional;",
+                "III - reportar as devidas alterações e necessidades logísticas ao Supervisor do Teledespacho;",
+                "IV - determinar aos oficiais de serviço e/ou aos Coordenadores de Área das Unidades Operacionais, o preenchimento e controle do mapa padronizado da força operacional, para encaminhamento ao CICOM;",
+                "V - assenhorar-se de todos os planos e documentos normativos de interesse do CBMBA, com vistas ao cumprimento das ordens e o devido alinhamento de protocolos com o CICOM;",
+                "VI - supervisionar as ações de socorro e atendimentos aos sinistros, bem como o emprego das guarnições das Unidades Operacionais, atentando-se para o cumprimento do dispositivo “segurança das operações”;",
+                "VII - supervisionar as ações e operações bombeiro militar, deslocando-se ao local das ocorrências, imediatamente ao tomar conhecimento do evento ou mediante designação do Supervisor do Teledespacho, em conformidade com o ANEXO A desta Portaria, devendo:",
+                "a) apoiar com pessoal e material as ocorrências atendidas pelo CBMBA;",
+                "b) manter a vigilância e avaliação de situações perigosas e inseguras no local do evento;",
+                "c) desenvolver medidas que garantam a segurança do pessoal envolvido na atividade operacional, inclusive estabelecendo as zonas de atuação: quente, morna e fria;",
+                "d) zelar pelo controle de acessibilidade, mediante a análise e autorização, preservando a segurança das operações;",
+                "e) exercer o comando da operação na qual esteja empregado, conforme o mapa de força do ANEXO A desta Portaria, prevenindo ações inseguras e adotando os procedimentos pertinentes à resposta operacional;",
+                "f) corrigir as ações ou condições inseguras, indicando a metodologia e os procedimentos a serem adotados, mitigando os riscos;",
+                "g) autorizar a relocação e remanejamento dos recursos (mapa de força) empregados no serviço, supervisionando sua aplicação no terreno;",
+                "h) informar, imediatamente, ao Supervisor do Teledespacho (CICOM) e ao Superior de Dia sobre o andamento das ocorrências de grande vulto e/ou complexidade, bem como os sinistros de repercussão midiática;",
+                "i) informar, imediatamente, ao Superior de Dia e ao Comando Operacional de Bombeiro Militar quaisquer incidentes ou acidentes envolvendo bombeiros militares em serviço;",
+                "j) ao tomar conhecimento de acidente ou e mergências envolvendo público interno, caso esteja hospitalizado, manter contato com o Comando de Operações de Bombeiros Militares e a Coordenadoria de Saúde, para o devido acompanhamento e, na medida do possível, verificar a situação in loco;",
+                "k) apoiar com pessoal e material as ocorrências atendidas por outros órgãos públicos, quando necessário e devidamente autorizado pelo Superior de Dia ou Comandante Operacional do CBMBA ou demandado pelo Supervisor do Teledespacho (CICOM);",
+                "l) utilizar, obrigatoriamente, os E quipamentos de Proteção Individual (EPI) disponíveis nas ocorrências em que for empregado, determinando a todo o efetivo empregado seu devido uso."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 11",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 12. O Coordenador de Área (Comandante de Socorro) será um Oficial subalterno ou Aspirante a Oficial que, no local das ocorrências, exercerá comando sobre as diversas Guarnições empenhadas, devendo:",
+              "dispositivos": [
+                "I - apresentar-se, após assumir o serviço, ao Supervisor do Teledespacho, ao Supervisor de Operações, bem como ao Subcomandante da OBM para a qual estiver designado;",
+                "II - receber, ao entrar de serviço, as alterações do seu antecessor ou do Adjunto ao Oficial de Dia (Comandante da Prontidão), referente às ocorrências, efetivo, viaturas, materiais, equipamentos de sua Unidade Operacional e demais informações necessárias;",
+                "III - determinar ao Adjunto ao Oficial de Dia das OBM para realizar a rendição da parada na hora regulamentar, diga-se, a passagem de serviço, conforme ritualística do RISG;",
+                "IV - verificar com o Adjunto ao Oficial de Dia (C omandante da Prontidão) se todas as ordens foram executadas e se houve alteração no serviço;",
+                "V - instruir o pessoal, após a rendição da parada, a conferir o material operacional de seu socorro, enfatizando ao Adjunto ao Oficial de Dia o aprestamento da prontidão;",
+                "VI - passar as alterações de serviço via rádio ou telefone ao Supervisor do Teledespacho e determinar ao Adjunto ao Oficial de Dia que faça o preenchimento formal do mapa de força, informando ao CICOM, logo após o recebimento do serviço;",
+                "VII - tomar conheci mento de toda movimentação de pessoal e material da OBM sob sua responsabilidade de atuação;",
+                "VIII - solicitar a presença do Supervisor de Operações no local do sinistro, conforme ANEXO A desta Portaria, transmitindo-lhe as informações pertinentes;",
+                "IX - cumprir e fazer cumprir as ordens recebidas;",
+                "X - adotar as medidas de atendimento operacional e, no tocante a repasse de informações aos órgãos de imprensa, atuar em conformidade com as metodologias previstas pela ACS e a recomendação do Comando-Geral;",
+                "XI - solicitar ao S upervisor de Operações autorização para a relocação e remanejamento dos recursos (mapa de força) empregados no serviço entre as OBM, conforme ANEXO A desta Portaria;",
+                "XII - durante o atendimento no cenário de emergências, no que tange ao fornecimento de informações para a imprensa, o Coordenador de Área determinará às guarnições que direcionem ao bombeiro militar designado e orientado pela ACS, atentando para o devido uso do EPI durante a prestação da informação;",
+                "XIII - fazer a integração necessária com outros órgãos que estejam empregados no local do sinistro e manter contato com o CICOM, sinalizando a necessidade de alocação de recursos especializados, órgãos de apoio, segurança pública e defesa civil;",
+                "XIV- preservar, na medida do possível, o local do sinistro, para ad oção das medidas forenses e de aspectos de segurança, evitando desdobramentos e acidentes;",
+                "XV - tomar conhecimento de todos os equipamentos de que dispõe a OBM, dispondo -os em condições de pronto -emprego, conforme orientações repassadas pelo Adjunto ao Oficia l de Dia (Comandante da Prontidão);",
+                "XVI- fazer a gestão do deslocamento de viaturas da OBM que estiver empregado;",
+                "XVII - ao final do serviço deverá confeccionar relatório de serviço, conforme modelo padrão estabelecido pelo Comando de Operações de Bombeiros Militares;",
+                "XVIII - acumular as funções de Oficial de Dia, aos finais de semana e feriados, devendo, neste caso, cumprir as atribuições estabelecidas no RISG e nas Normas Gerais de Ação atinentes a cada GBM;",
+                "XIX- utilizar, obrigatoriamente, os Equipamentos de Proteção Ind ividual (EPI) disponíveis nas ocorrências em que for empregado, determinando a todo o efetivo empregado o devido uso do EPI."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 12",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 13. O Oficial de Dia será um oficial subalterno com funções restritas ao aquartelamento, cabendo-lhe, além do previsto no RISG:",
+              "dispositivos": [
+                "I - apresentar-se ao Subcomandante da Unidade, tão logo este chegue ao Quartel, informando a situação em que se encontra o serviço e as instalações;",
+                "II - receber a apresentação do pessoal de serviço interno, informando as faltas ao Subcomandante da Unidade Operacional, a quem caberá à apuração ou o devido encaminhamento no prazo estabelecido na legislação pertinente;",
+                "III - manter a ordem nas dependências do Quartel;",
+                "IV - tomar as medidas legais cabíveis quanto aos fatos administrativos e/ou jurídicos ocorridos durante o serviço, ou em decorrência dele;",
+                "V - cumprir e fazer cumprir as ordens emanadas de autoridade competente, que sejam exequíveis, legais e técnicas."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 13",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 14. O Adjunto ao Oficial de Dia (Comandante da Prontidão) será um Subtenente ou 1º Sargento, cabendo-lhe, além do previsto no RISG:",
+              "dispositivos": [
+                "I - assumir as responsabilidades do Oficial de Dia, quando este estiver fora do Quartel;",
+                "II - efetuar a chamada do pessoal de serviço no horário estabelecido;",
+                "III - realizar a passagem do serviço, conforme ritualística do RISG e promover o aprestamento das guarnições, com os comandos de continência ao terreno e recebendo as informações dos comandantes que entram e saem de serviço;",
+                "IV - informar as faltas, atraso s e outras alterações ao Coordenador de Área/Oficial de Dia, imediatamente à passagem do serviço;",
+                "V - cumprir e fazer cumprir as ordens emanadas de autoridade competente, que sejam exequíveis legal e tecnicamente;",
+                "VI - cumprir e fazer cumprir as normas vigentes na Corporação aplicáveis ao serviço operacional;",
+                "VII - utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPI) disponíveis nas ocorrências em que for empregado, determinando a todo o efetivo empregado seu devido uso;",
+                "VIII - fiscalizar a limpeza e manutenção de 1º escalão nos veículos e embarcações, realizada pelo Condutor de Viatura;",
+                "IX - zelar pela manutenção e limpeza dos materiais e equipamentos operacionais da Unidade;",
+                "X - ao tomar conhecimento de fatos envolvendo militares e adotar, imediatamente, as medidas disciplinares e correcionais, dando ciência ao Oficial de Dia ou ao Comandante da Unidade."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 14",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 15. O Comandante da Guarnição de serviço será um 1º Sargento ou Cabo, ou, em casos especiais, o bombeiro militar mais antigo na escala de serviço, sendo responsável direto pelas atividades de bombeiro-militar, competindo-lhe:",
+              "dispositivos": [
+                "I - cumprir e fazer cumprir as normas relativas ao serviço diário de sua competência, bem como os procedimentos operacionais, atentando para as orientações e determinações do Comando de Operações de Bombeiros Militares e o RISG;",
+                "II - apresentar-se inicialmente ao Adjunto ao Oficial de Dia (Comandante de Prontidão) e ao Coordenador de Área/Oficial de Dia no início do serviço, transmiti ndo-lhe as condições dos equipamentos na viatura, após o aprestamento e conferência do material;",
+                "III - supervisionar, juntamente com o Condutor da Viatura, a conferência de todo o material;",
+                "IV - solicitar autorização de deslocamento de viaturas aos superiores hierárquicos de serviço, informando o destino e a finalidade;",
+                "V - exercer o comando dos integrantes da guarnição, com vistas ao emprego técnico e tático da equipe;",
+                "VI - controlar o efetivo empregado no local da ocorrência, assim como os materiais e equipamentos da viatura utilizados pela guarnição sob sua responsabilidade;",
+                "VII - manter-se atento à segurança do efetivo no âmbito de sua responsabilidade;",
+                "VIII - auxiliar o Coordenador de Área para que sejam cumpridos os protocolos e procedimentos de emergência;",
+                "IX - avaliar os riscos envolvidos e tipo de ocorrência assim que chegar ao local da ocorrência, solicitando reforço e aplicando os recursos disponíveis;",
+                "X - estabelecer os parâmetros de segurança para o atendimento das ocorrências, implementando o SCI/SCO, se for o caso;",
+                "XI - providenciar a coleta de todos os dados da ocorrência exigidos pelo CICOM para a execução dos procedimentos necessários;",
+                "XII - informar ao CICOM o momento exato da chegada e saída do local da ocorrência da guarnição sob sua responsabilidade;",
+                "XIII - solicitar apoio ao CICOM, quando julgar necessário, caso o Coordenador de Área não esteja no local;",
+                "XIV- ministrar instrução para a guarnição sob sua responsabilidade, mediante planejamento da Unidade, orientação do Oficial de Dia, Comandante de Área e/ou Adjunto ao Oficial (Comandante da Prontidão);",
+                "XV - providenciar a participação de todos os integrantes da guarnição nos atos de serviço e nas instruções, adotando as providências necessárias para o cumprimento das missões e comunicando as faltas;",
+                "XVI - manter o Coordenador de Área informado sobre o andamento da ocorrência, quando este não estiver presente no local;",
+                "XVII - informar ao CICOM o desfecho da ocorrência, atentando para o devido registro de danos, possíveis vítimas e necessidade de acionamento de outros órgãos;",
+                "XVIII - utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPI) disponíveis nas ocorrências em que for empregado, determinando a todo o efetivo empregado o seu devido uso."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 15",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 16. O Con dutor e Operador de viatura será um bombeiro militar devidamente habilitado, conforme os ditames das Leis, Resoluções e Portarias vigentes, sendo o responsável pela condução do pessoal até o local da ocorrência, pela operação dos equipamentos pertinentes e pela limpeza da viatura, competindo-lhe:",
+              "dispositivos": [
+                "I - assegurar o uso privativo quanto à condução e operacionalização da viatura, não cedendo a terceiros a direção de viatura operacional sob sua responsabilidade, ainda que habilitados;",
+                "II - adotar os procedimentos de segurança relativos à condução e ao estacionamento dos veículos de segurança, conforme o Código Nacional de Trânsito (CTB) e os planos de segurança das OBM, pontuando, categoricamente, as condições de acesso, manejo e estacionamento das viaturas, evitando, assim, condutas inapropriadas e acidentes;",
+                "III - ao estacionar a viatura, adotar todas as medidas de frenagem e segurança, inclusive com a redundância operativa de segurança;",
+                "IV - operar o corpo de bombas de modo a suprir de água as linhas de combate a incêndio armadas para tal finalidade, com vazão e pressão adequadas;",
+                "V - na condição de condutor e operador de plataforma mecânica ou escada mecânica, calçar e operar os engenhos das viaturas, de forma que possam ser utilizadas devidamente e com segurança, para o combate e extinção de incêndios, salvamentos ou outros serviços a que forem designados, evitando patolar a AEPA em terrenos inclinados com aclives e declives;",
+                "VI - na condição de condutor e operador de viaturas de porte leve e/ou de porte pesado, sem corpo de bomba, conduzir a viatura de forma que possibilite condições favoráveis de segurança e de trabalho para os militares de serviço, observando ainda a segurança e o bem-estar de pacientes transportados, sendo vedadas manobras em desacordo com o CTB;",
+                "VII - conduzir a viatura com prudência de modo que a guarnição, materiais e equipamentos transportados cheguem ao local das ocorrências e retornem ao quartel com segurança;",
+                "VIII - manter as viaturas em plena condição de uso, executando os procedimentos de manutenção de 1º escalão;",
+                "IX- cumprir rigorosamente as ordens dadas pelo Comandante de Guarnição, durante todo o período em que estiver de prontidão;",
+                "X- quando na condição de mais antigo da guarnição de serviço, deverá acumular com a função de Comandante de Guarnição;",
+                "XI - comunicar ao Comandante de Guarnição e/ou Coordenador de Área as possíveis alterações encontradas na viatura, imediatamente ao assumir o serviço ou decorrentes de quaisquer atuações;",
+                "XII - quando na passagem do serviço, cientificar ao seu sucessor, fornecendo todas as informações necessárias em relação ao estado geral da viatura, bem como as alterações e ordens de serviço a serem executadas;",
+                "XIII - manter a viatura devidamente abastecida para quaisquer tipos de atuação;",
+                "XIV- manter sempre abastecidos os tanques de água das viaturas de combate a incêndio;",
+                "XV - supervisionar, juntamente com o Comandante de Guarnição, a conferência de todo o material existente na viatura, bem como a disponibilidade daqueles rotineiramente utilizados nas ocorrências, comunicando ao escalão superior qualquer anormalidade constatada;",
+                "XVI - utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPI) disponíveis nas ocorrências em que for empregado, orientando a todo o efetivo empregado seu devido uso;",
+                "§ 1º Em caso de acidente que envolva viatura operacional da Corporação, o motorista deverá tomar as seguintes providências:",
+                "I - parar a viatura imediatamente e sinalizar a via antes de qualquer outro procedimento;",
+                "II - se for o caso, prestar socorro à vítima;",
+                "III - comunicar e solicitar, imediatamente, o comparecimento do Coordenador de Área ao local, conforme mapa de força presente no ANEXO A desta Portaria;",
+                "IV - solicitar o comparecimento da perícia de trânsito para que seja feito o laudo;",
+                "V - preencher a ficha de acidentes;",
+                "VI - arrolar, no mínimo, duas testemunhas;",
+                "VII - solicitar a lavratura do Boletim de Ocorrência pelos Agentes de Trânsito.",
+                "§ 2º Quando em deslocamento para ocorrência, caso não haja vítima(s), em decorrência do acidente de trânsito, deverá ser priorizado o atendimento à ocorrência anteriormente solicitada, coletando as informações dos envolvidos e registrando o fato via comunicação, informando a outra parte quanto aos procedimentos a serem adotados e a OBM a ser contactada."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 16",
+              "match": "exata"
+            },
+            {
+              "heading": "NOp 01/2021, Cap. V, Seções III-IX — Supervisor a Integrantes da Guarnição",
+              "caput": "Art. 17. Os Integrantes da Guarnição são praças responsáveis pelas atividades da guarnição de combate a incêndio, salvamento e demais ordens que lhe forem atribuídas, subordinados diretamente ao Comandante de Guarnição e ao Coordenador de Área, competindo-lhes:",
+              "dispositivos": [
+                "I - aplicar conhecimentos especializados, de acordo com os ativos disponíveis;",
+                "II - auxiliar o Comandante de Guarnição nas atividades de incêndio, busca, resgate, salvamento e/ou atendimento pré -hospitalar, bem como nas demais ocorrênc ias que lhes forem demandadas;",
+                "III - atentar quanto às condições de segurança dos locais da ocorrência, adotando os procedimentos de segurança necessário;",
+                "IV - ao assumir o serviço deverão, obrigatoriamente, conferir o material constante na carga da viatura, comunicando as faltas e carências ao Comandante de Guarnição;",
+                "V - portar o material a ser utilizado na ocorrência ou operação, segundo as necessidades técnicas e de segurança;",
+                "VI - adotar o Procedimento Operacional Padrão (POP) do CBMBA no atendimento das ocorrências;",
+                "VII - realizar manutenção preventiva e limpeza dos materiais, equipamentos e ferramentas de socorro que estiverem sob sua guarda;",
+                "VIII - informar ao Comandante de Guarnição as alterações verificadas em materiais, equipamentos, viaturas e ferramentas de socorro q ue estiverem sob sua guarda, recebidas ao assumir o serviço;",
+                "IX - utilizar, obrigatoriamente, os Equipamentos de Proteção Individual (EPI) disponíveis nas ocorrências em que for empregado, orientando a todo o efetivo empregado o seu devido uso;",
+                "X - Todo material operacional existente na viatura deverá ser devidamente organizado, de forma a evitar qualquer contratempo que dificulte o seu emprego imediato;",
+                "XI - ter ciência e domínio de todo e qualquer material presente e existente na viatura, para o efetivo atendimento da ocorrência;",
+                "XII - atentar quanto ao devido emprego do material operacional, com vistas a evitar qualquer erro, falha e/ou desvio de finalidade."
+              ],
+              "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 17",
+              "match": "exata"
+            }
+          ]
+        },
+        "rr": {
+          "name": "Roraima",
+          "abbr": "RR",
+          "docLabel": "INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "excerpts": [
+            {
+              "heading": "Cap. II, Seção I — Superior de Dia",
+              "caput": "Art. 2º São atribuições do Superior de Dia, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – supervisionar o serviço operacional no âmbito da capital e do interior;",
+                "II – manter o Comandante-Geral, Subcomandante-Geral e os Comandantes da Capital e do Interior informados sobre ocorrências de grande vulto ou repercussão;",
+                "III – acompanhar presencialmente ocorrências de grande vulto ou repercussão, devendo assumir a função de comandante do incidente e/ou da ocorrência, assim que tomar conhecimento e/ou for acionado, devidamente uniformizado;",
+                "IV – inteirar-se do cumprimento de ordens de operação, de atendimento e de serviço relacionadas ao serviço operacional;",
+                "V – representar o Comando-Geral, Subcomando-Geral e os Comandantes da Capital e do Interior em assuntos pertinentes ao serviço operacional, quando demandados;",
+                "VI – remanejar temporariamente os recursos operacionais das unidades, quando necessário, informando ao Comandante Operacional da Capital e do Interior; e",
+                "VII – atender a imprensa, sempre que possível, inerentes as ocorrências em que se fizer presente. Escalas de Serviço"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 2",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção IV — Prescrições Gerais (Superior de Dia)",
+              "caput": "Art. 10 O Superior de Dia está subordinado diretamente ao COCI.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 10",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. II, Seção IV — Prescrições Gerais (Superior de Dia)",
+              "caput": "Art. 11 O Superior de Dia é empregado em ocorrências de grande vulto, podendo fazer o emprego da ferramenta SCI, bem como em outras situações oportunas que necessitem da coordenação ou intervenção de Oficial Superior. Atribuições",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 11",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção I — Coordenador de Dia",
+              "caput": "Art. 12 São atribuições do Coordenador de Dia, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – permanecer nas dependências do CICC/RR integralmente à disposição do serviço operacional;",
+                "II – regular, controlar, fiscalizar e gerenciar as atividades operacionais do CBMRR;",
+                "III – dar ciência ao Superior de Dia das ordens de operações, de atendimento e de serviço, pertinentes ao serviço operacional e eventuais alterações, até às 09h00;",
+                "IV – fazer cumprir as normas, as ordens de operações, de atendimento e de serviço pertinentes ao serviço operacional;",
+                "V – fiscalizar o atendimento das chamadas para ocorrências na COCB;",
+                "VI – fiscalizar despacho de viaturas, conforme POP-COCB, com atenção especial nos horários de pico e em ocorrências de vulto e/ou repercussão;",
+                "VII – realizar contatos externos e/ou extraordinários, de modo a empenhar outras guarnições e/ou instituições para prestar primeiros socorros quando houver risco de morte ou integridade da vítima, nos casos de demanda reprimida para equipes de Unidade de Resgate (UR);",
+                "VIII – manter-se alcançável via rádio móvel e/ou telefone celular sempre que se ausentar da sala de despacho de ocorrências;",
+                "IX – encaminhar à Diretoria de Assuntos Civis e Relações Públicas (DACRP) solicitações da imprensa e as imagens das ocorrências coletadas pelas guarnições de serviço via canais de comunicação disponibilizados pela Diretoria, como: WhatsApp do telefone funcional, e-mail ou intranet;",
+                "X – ao tomar conhecimento da divulgação de imagens e/ou vídeos das ocorrências e outras ações do CBMRR em redes sociais ou qualquer outros meios de comunicação por parte das guarnições de serviço, informar à DACRP;",
+                "XI - atender a imprensa e, logo em seguida, informar à DACRP, desde que não haja impedimento por parte do serviço operacional, prestando informações referentes a dados das ocorrências;",
+                "XII – despachar o Trem de Socorro em caráter preventivo nas ocorrências de incêndios residenciais, comerciais e/ou industriais, ou quando julgar necessário;",
+                "XIII – evitar o deslocamento das viaturas de UR para remoções intermunicipais, em especial às do 2º BPABM, conforme maneada pela Portaria nº 2048 de 5 de novembro de 2002 (Regulamento Técnico dos Sistemas Estaduais de Urgência e Emergência) do Ministério da Saúde, o qual rege que as viaturas de UR são do Tipo C, composta por 3 (três) bombeiros militares e/ou outros profissionais reconhecidos pelo gestor público, sendo um motorista e os outros dois profissionais com capacitação e certificação em salvamento e suporte básico de vida;",
+                "XIV – acionar os oficiais escalados de sobreaviso, quando necessário;",
+                "XV – acionar o Oficial de Dia/Comandante do Socorro e órgão de perícia oficial no caso de ocorrências que envolvam acidente com viaturas do CBMRR, para adoção de procedimentos legais cabíveis, bem como providenciar as documentações necessárias;",
+                "XVI – acionar o Oficial de Dia/Comandante do Socorro em situações de indícios de crimes, ocorrência policial e/ou outras ocorrências pertinentes envolvendo militares do CBMRR;",
+                "XVII – acionar o Oficial de Correições e Disciplina da Corregedoria-Geral do CBMRR em situações que envolvam bombeiro militar, constante no item XVI, caso seja necessário;",
+                "XVIII – fiscalizar atividades internas do serviço de dia na COCB/CICC, bem como o treinamento diário do POP da COCB com a guarnição de serviço;",
+                "XIX – lançar a escala do serviço diário em sua Documentação Diária, as horas de ISV aos militares escalados, bem como, as demais alterações de pessoal (faltas e atestados médicos);",
+                "XX – acionar o Oficial de Saúde para assistência médica e/ou assistência social em caso de óbito do(a) cônjuge ou companheiro(a) e dependente(s) legal(s)[1];",
+                "XXI – solicitar apoio da Polícia Militar in loco em ocorrências que envolvam violência contra a pessoa (vítimas de agressão, ferimento por armas etc.), visando a proteção da integridade física de vítimas, bombeiros militares e terceiros que porventura estejam no local, assim como salvaguardar bens materiais e patrimônio público;",
+                "XXII – informar imediatamente o Comandante-Geral, Subcomandante-Geral, Comandante do COCI, Superior de Dia e Comandantes de Batalhões da Unidade, quando houver ocorrências de vulto e/ou repercussão;",
+                "XXIII – encaminhar mensagens de texto via aplicativo de mensagens, ou na impossibilidade, via telefones funcionais ao Superior de Dia contendo resumo das ocorrências atendidas, bem como de ocorrências em destaque durante o serviço;",
+                "XXIV – revezar intervalo de descanso com o Oficial de Comunicação, ficando alcançável por telefone, devendo orientá-lo que lhe informe, caso haja, alteração ou ocorrência de vulto e/ou repercussão durante o período;",
+                "XXV – conferir, ao assumir o serviço, o material, equipamentos e pessoal sob a responsabilidade da função, bem como verificar se o Oficial de Comunicação realizou as conferências de responsabilidade da sua função. Poder de Pronto Emprego - PPE"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 12",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção VI — Prescrições Gerais (Coordenador de Dia)",
+              "caput": "Art. 29 O celular funcional do Coordenador de Dia é de uso exclusivo para o serviço operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 29",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção VI — Prescrições Gerais (Coordenador de Dia)",
+              "caput": "Art. 30 A viatura administrativa da COCB pode ser empregada pelo Coordenador de Dia, exclusivamente em apoio ao serviço operacional (incluindo a aquisição de alimentação aos militares de plantão no CICC).",
+              "dispositivos": [
+                "Parágrafo único. Durante o horário de expediente administrativo, a viatura fica a cargo da COCB e os deslocamentos devem ser solicitadas ao Comandante da COCB."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 30",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção VI — Prescrições Gerais (Coordenador de Dia)",
+              "caput": "Art. 31 O Coordenador de Dia deve fiscalizar para que os ramais de emergência 193 sejam utilizados somente para atendimento às ocorrências.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 31",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção VI — Prescrições Gerais (Coordenador de Dia)",
+              "caput": "Art. 32 Fica vedado ao Coordenador de Dia autorizar trocas de serviço e/ou dispensa de militares escalados para o serviço operacional (exceto as legais como: luto, dispensa médica, paternidade etc.), devendo ser cientificadas ao Superior de Dia.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 32",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. III, Seção VI — Prescrições Gerais (Coordenador de Dia)",
+              "caput": "Art. 33 É dever do Coordenador de Dia conhecer as normas legais e administrativas, protocolos do CBMRR, ABIQUIM e outros protocolos de interesse do serviço operacional. Atribuições",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 33",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção I — Oficial de Dia/Comandante do Socorro",
+              "caput": "Art. 34 São atribuições do Oficial de Dia/Comandante do Socorro:",
+              "dispositivos": [
+                "I – fiscalizar presencialmente a passagem de serviço, acompanhando a conferência dos recursos operacionais da PO, apurando eventuais alterações, conforme disposto em normativas;",
+                "II – realizar o briefing operacional e o debriefing operacional com as guarnições da sua PO, podendo se estender às demais PO;",
+                "III – contatar os Oficiais de incêndio, Salvamento e de Emergência Hospitalar da PO da área de atuação, após realização da passagem de serviço, e verificar se há alterações de pessoal, viaturas e material entre outras informações pertinentes ao serviço;",
+                "IV – reportar ao Coordenador de Dia após ter conhecimento da situação e alterações existentes no serviço operacional das unidades da área de atuação, informando-o, até às 8h30min, sobre o constatado e para que receba as instruções necessárias;",
+                "V – apresentar-se aos comandantes das OBM em que se fizer presente, prestando as informações relativas ao serviço operacional;",
+                "VI – manter-se informado sobre alterações existentes relativas aos recursos operacionais das unidades da área de atuação;",
+                "VII – remanejar as funções de militares escalados no âmbito de mesma unidade em caso de necessidade do serviço, devendo informar na Documentação Diária;",
+                "VIII – na ocorrência do previsto no inciso VII em horário de expediente, a alteração deverá ser solicitada à seção responsável pela escala;",
+                "IX – solicitar autorização ao Coordenador de Dia para realização de deslocamentos;",
+                "X – fiscalizar o serviço operacional das unidades da área de atuação por meio de inspeções, em que deverá ser observado se há alterações de recursos operacionais;",
+                "XI – dispensar militares da área de atuação quando se tratar de afastamentos legais, devendo informar na Documentação Diária e ao Coordenador de Dia;",
+                "XII – acompanhar as rotinas diárias do serviço operacional, tais como: hasteamento e/ou arriamento do Pavilhão Nacional, as instruções diárias, atividade física e o teste de prontidão, dentre outras que surjam para o bom andamento do serviço diário;",
+                "XIII – fiscalizar a saída das guarnições da unidade quando acionadas para as ocorrências, objetivando a redução do tempo-resposta;",
+                "XIV – comandar as atividades operacionais no local da ocorrência, otimizando o emprego dos recursos operacionais disponíveis de maneira coordenada, evitando ações isoladas;",
+                "XV – informar ao Coordenador de Dia acerca da situação do cenário da ocorrência, no caso de ocorrências de vulto ou que julgar necessário;",
+                "XVI – priorizar a segurança de militares e de terceiros durante o atendimento de ocorrências;",
+                "XVII – fiscalizar o uso de equipamentos de proteção individuais (EPI), posicionamento correto das viaturas, sinalização e isolamento do local, bem como o emprego correto das técnicas e táticas operacionais nas ocorrências;",
+                "XVIII – encaminhar ao Coordenador de Dia e à DACRP solicitações da imprensa e as imagens das ocorrências coletadas pelas guarnições de serviço;",
+                "XIX – ao tomar conhecimento da divulgação de imagens e/ou vídeos das ocorrências, e outras ações do CBMRR, em redes sociais ou qualquer outros meios de comunicação por parte das guarnições de serviço, informar à DACRP;",
+                "XX – atender à imprensa no local de ocorrências, após a devida autorização do Coordenador de Dia, prestando os esclarecimentos pertinentes ao sinistro, abstendo-se de emitir opinião de cunho pessoal sobre fatos, causas e circunstâncias;",
+                "XXI – fiscalizar a desmobilização, e suas alterações, dos recursos operacionais empregados na ocorrência, apurando e sanando as alterações identificadas e comunicando as irregularidades na Documentação Diária;",
+                "XXII – manter-se disponível no telefone móvel funcional e handie-talkie (HT);",
+                "XXIII – permanecer na PO quando não estiver empenhado em ocorrências, ordens de serviço ou outras determinações do Coordenador de Dia.",
+                "XXIV – providenciar montagem da ferramenta do SCI em ocorrências de vulto e/ou repercussão e a comandar até a passagem do Posto de Comando ao seu substituto;",
+                "XXV – requerer à COCB o acionamento de outros órgãos em apoio, sempre que necessário;",
+                "XXVI – apoiar e assessorar o Superior de Dia em ocorrências de grande vulto, mantendo-o informado de quaisquer alterações e disponibilidade dos recursos operacionais;",
+                "XXVII – cumprir as determinações estabelecidas pelo Superior de Dia e o apoiar na supervisão do SCI e no controle do deslocamento de efetivo ou guarnições dentro da Capital e do Interior;",
+                "XXVIII – assessorar o Coordenador de Dia na movimentação de recursos operacionais entre as PO do serviço operacional durante o turno de trabalho;",
+                "XXIX – averiguar junto à COCB sobre o atendimento às ocorrências, ordens de operação, de atendimento e de serviço;",
+                "XXX – zelar pelo fiel cumprimento das ordens, normas e diretrizes durante o atendimento às ocorrências operacionais;",
+                "XXXI – relatar ao Coordenador de Dia as sugestões, dificuldades, reclamações e alterações ocorridas no turno de serviço;",
+                "XXXII – elaborar o Estudo de Caso, quando demandado pelo COCI, das ocorrências de grande vulto e/ou repercussão.",
+                "XXXIII - esta INOp não exclui a emissão de outras normas complementares. Emprego"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 34",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção V — Prescrições Gerais",
+              "caput": "Art. 41 O Oficial de Dia/Comandante do Socorro se subordina operacionalmente ao Coordenador de Dia, devendo repassar a este todas as informações pertinentes ao serviço operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 41",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção V — Prescrições Gerais",
+              "caput": "Art. 42 O Oficial de Dia/Comandante do Socorro deverá solicitar autorização do Coordenador de Dia para deslocamentos de militares a estabelecimento comercial a fim de adquirirem refeição para os demais militares da unidade quando necessário.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 42",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção V — Prescrições Gerais",
+              "caput": "Art. 43 O Oficial de Dia/Comandante do Socorro não tem competência para autorizar permutas de serviço entre militares que não constam na escala de serviço.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 43",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IV, Seção V — Prescrições Gerais",
+              "caput": "Art. 44 O Oficial de Dia/Comandante do Socorro será empregado em ocorrências despachadas pelo COCB, bem como em outras situações que necessitem da coordenação ou intervenção de oficial intermediário ou subalterno.",
+              "dispositivos": [
+                "Parágrafo único. No cumprimento de ordens de atendimento e de serviço, caso haja necessidade de alteração na execução, pertinentes a horário, local, viatura, equipamentos, recursos humanos e outros, os Oficiais de Dia deverão informar o Coordenador de Dia sobre alterações constatadas e lhe sugerir as ações adequadas para solução da situação. Atribuições"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 44",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção I — Oficial de Incêndio/Salvamento/EPH",
+              "caput": "Art. 45 São atribuições do Oficial de Incêndio, de Salvamento e de Emergência Pré- Hospitalar, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – cumprir e fiscalizar a execução da norma pertinente à passagem de serviço, acompanhando a conferência dos materiais e equipamentos das viaturas sob sua responsabilidade, bem como dos recursos operacionais da sua PO, comunicando eventuais alterações;",
+                "II – realizar o hasteamento e arriação do Pavilhão Nacional na sua PO;",
+                "III – informar à COCB a assunção do serviço com as seguintes informações: QRA, função, composição da guarnição, viatura (prefixo, placa e KMI) e PO de atuação;",
+                "IV – realizar o briefing operacional e o debriefing operacional com as guarnições da sua PO;",
+                "V – apresentar-se aos comandantes das OBM, Superior de Dia, Coordenador de Dia e ao Oficial de Dia/Comandante do Socorro quando da presença destes na sua PO, passando-lhes todas as alterações e as informações de recursos operacionais daquele setor;",
+                "VI – fiscalizar e informar ao Coordenador de Dia e ao Oficial de Dia/Comandante do Socorro as alterações do serviço na sua PO, fazendo constar na Documentação Diária;",
+                "VII – auxiliar o Oficial de Dia/Comandante do Socorro nas ocorrências e ordens de serviço em que se fizer presente, bem como outras determinações emanadas dos comandos, unidades operacionais e/ou seções;",
+                "VIII – manter-se informado sobre alterações dos recursos operacionais existentes relativos a sua PO;",
+                "IX – fiscalizar e reforçar as orientações sobre a segurança interna da PO, bem como elaborar e registrar na Documentação Diária a escala de emprego/descanso dos permanências;",
+                "X – solicitar autorização ao Coordenador de Dia para realização de deslocamentos, salvo das ocorrências demandadas pela COCB;",
+                "XI – contatar o Oficial de Dia/Comandante do Socorro sobre dispensa de militares da sua guarnição ou PO, quando se tratar de afastamentos legais, devendo informar tal evento na Documentação Diária;",
+                "XII – fazer cumprir e participar das rotinas diárias do serviço operacional, tais como: hasteamento e/ou arriamento do Pavilhão Nacional, as instruções diárias, atividade física e o teste de prontidão, dentre outras que surjam durante o serviço;",
+                "XIII – comandar a saída das guarnições sob seu comando quando acionadas para as ocorrências, objetivando a redução do tempo-resposta;",
+                "XIV – comandar as atividades operacionais das guarnições sob seu comando no local da ocorrência, otimizando o emprego dos recursos operacionais disponíveis de maneira coordenada, evitando ações isoladas;",
+                "XV – informar o Oficial de Dia/Comandante do Socorro, na ausência deste o Coordenador de Dia, acerca da situação do local em ocorrências de vulto ou que julgar necessário;",
+                "XVI – priorizar a segurança de militares e de terceiros durante o atendimento de ocorrências;",
+                "XVII – fiscalizar o uso de equipamentos de proteção individuais (EPI), posicionamento correto das viaturas, sinalização e isolamento do local, bem como o emprego correto das técnicas e táticas operacionais nas ocorrências;",
+                "XVIII – comandar a desmobilização, verificar possíveis alterações dos recursos operacionais empregados na ocorrência de sua responsabilidade, apurar e sanar as alterações identificadas e relatar o que não foi possível sanar durante seu plantão, na Documentação Diária e ao Oficial de Dia/Comandante do Socorro;",
+                "XIX – apoiar e auxiliar o Oficial de Dia/Comandante do Socorro, caso seja possível, na montagem do SCI em ocorrências de vulto e/ou repercussão;",
+                "XX – informar o Oficial de Dia/Comandante do Socorro sobre demandas da imprensa no local de ocorrências, subsidiando-o com as informações da ocorrência;",
+                "XXI – manter-se disponível no telefone móvel funcional e no HT;",
+                "XXII – permanecer na PO quando não estiver empenhado em ocorrências, ordens de serviço ou outras determinações do Coordenador de Dia;",
+                "XXIII – requerer à COCB o acionamento de outros órgãos em apoio as ocorrências, sempre que necessário;",
+                "XXIV – cumprir as determinações estabelecidas pelo Coordenador de Dia ou Oficial de Dia/Comandante do Socorro na movimentação de recursos operacionais entre as PO a bem do serviço operacional durante o turno de trabalho, alertando-os sobre possíveis problemas nessa movimentação;",
+                "XXV – verificar junto à COCB sobre o atendimento às ocorrências, ordens de operação, de atendimento e de serviço de sua responsabilidade;",
+                "XXVI – zelar pelo fiel cumprimento das ordens, normas e diretrizes durante o atendimento às ocorrências operacionais e em sua PO;",
+                "XXVII – encaminhar ao Oficial de Dia ou Coordenador de Dia solicitações da imprensa e as imagens das ocorrências coletadas pelas guarnições de serviço;",
+                "XXVIII – ao tomar conhecimento da divulgação de imagens e/ou vídeos das ocorrências, e outras ações do CBMRR, em redes sociais ou qualquer outros meios de comunicação por parte das vossas guarnições de serviço, informar à DACRP;",
+                "XXIX – primar pela padronização de uniforme a ser utilizado na sua PO, conforme norma vigente;",
+                "XXX – relatar ao Oficial de Dia/Comandante do Socorro as sugestões, dificuldades, reclamações e alterações ocorridas no turno de serviço, as quais não tenha conseguido resolver. Escalas de Serviço"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 45",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção IV — Prescrições Gerais",
+              "caput": "Art. 51 O Oficial de Incêndio, de Salvamento e de Emergência Pré-Hospitalar se subordinam operacionalmente ao Oficial de Dia/Comandante do Socorro, a quem devem repassar todas as informações pertinentes ao serviço operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 51",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção IV — Prescrições Gerais",
+              "caput": "Art. 52 O Oficial de Incêndio, de Salvamento e de Emergência Pré-Hospitalar solicitarão ao Coordenador de Dia autorização para deslocamentos de militares a estabelecimento comercial a fim de adquirirem refeição para os demais militares da unidade.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 52",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. V, Seção IV — Prescrições Gerais",
+              "caput": "Art. 53 O Oficial de Incêndio, de Salvamento e de Emergência Pré-Hospitalar são mais um integrante da respectiva guarnição a qual estão escalados.",
+              "dispositivos": [
+                "Parágrafo único. É de sua responsabilidade o preenchimento e a assinatura dos relatórios e documentações das ocorrências e do serviço, podendo delegar o seu preenchimento ao Comandante da Guarnição ou à Praça mais antiga da sua guarnição, exceto ao motorista. Atribuições"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 53",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção I — Oficial de Comunicação",
+              "caput": "Art. 54 São atribuições do Oficial de Comunicação, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – apresentar o efetivo da COCB escalado no CICC/RR ao Coordenador de Dia e o manter informado sobre as alterações do serviço;",
+                "II – auxiliar o Coordenador de Dia e fazer cumprir o POP da COCB, as ordens de atendimento e de serviço, bem como outras determinações emanadas dos comandos, unidades operacionais e/ou seções;",
+                "III – fiscalizar e acompanhar o trabalho dos Atendentes, conforme o POP da COCB;",
+                "IV – fiscalizar e acompanhar o despacho das viaturas, conforme POP da COCB;",
+                "V – gerenciar a distribuição do efetivo da COCB, priorizando os militares mais antigos na função de Despachante;",
+                "VI – gerenciar a saída das viaturas na realização das refeições, distribuindo os horários de forma equitativa e eficiente para o serviço operacional;",
+                "VII – empenhar, em casos de demandas reprimidas de UR, outras guarnições, em havendo risco de morte ou integridade da vítima, para prestarem os primeiros socorros na cena até a chegada da UR ou apoio do SAMU;",
+                "VIII – empenhar equipes nas ocorrências que requeiram ações preventivas, para isolamento até a chegada do órgão competente;",
+                "IX – receber as informações das unidades operacionais até às 08h30min, para elaborar o PPE até às 09h00;",
+                "X – conferir o material-carga de responsabilidade da função;",
+                "XI – conferir diariamente o funcionamento dos sistemas operacionais da COCB e dos ramais do serviço de atendimento 193, e reportar imediatamente ao plantonista de Tecnologia da Informação do CICC ou Comandante da COCB casos de mau funcionamento;",
+                "XII – elaborar e registrar em seu livro diário a escala de descanso dos Atendentes e Despachantes, fiscalizando o seu cumprimento, podendo compor essa escala em caso de efetivo reduzido;",
+                "XIII – revezar intervalos de descanso com o Coordenador de Dia, respondendo pela coordenação durante o afastamento desse, devendo informá-lo de ocorrência de vulto e/ou repercussão;",
+                "XIV – permanecer nas dependências do CICC/RR, devendo estar integralmente à disposição do serviço operacional;",
+                "XV – realizar o treinamento diário do POP da COCB com a guarnição de serviço; e",
+                "XVI – fiscalizar para que as linhas 193 sejam utilizados somente para atendimento a ocorrências. Escalas de Serviço"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 54",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção IV — Prescrições Gerais",
+              "caput": "Art. 60 O Oficial de Comunicação se subordina operacionalmente ao Coordenador de Dia, a quem deve repassar todas as informações pertinentes ao serviço operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 60",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção IV — Prescrições Gerais",
+              "caput": "Art. 61 O Oficial de Comunicação solicitará ao Coordenador de Dia autorização para deslocamentos de militares a estabelecimento comercial a fim de adquirirem refeição para os demais militares da unidade, caso a refeição não seja feita nas próprias instalações.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 61",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VI, Seção IV — Prescrições Gerais",
+              "caput": "Art. 62 O Oficial de Comunicação é mais um integrante da guarnição a qual está escalado. Atribuições",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 62",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção I — Oficial de Saúde",
+              "caput": "Art. 63 São atribuições do Oficial de Saúde, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – providenciar as ações de apoio e acompanhamento dos militares do CBMRR e seus dependentes legais atendidos em unidades hospitalares, de forma presencial e/ou remota;",
+                "II – permanecer disponível para possíveis acionamentos, principalmente, após o término do expediente;",
+                "III – auxiliar o Coordenador de Dia nas ocorrências atinentes a suas atividades;",
+                "IV – apresentar-se o mais breve possível no local determinado pelo Coordenador de Dia, a qualquer momento, devidamente fardado, para o desempenho das atividades de sua competência;",
+                "V – apresentar-se ao comandante do incidente em ocorrência de vulto e/ou repercussão que se fizer presente, devendo subordinação a este até o término da ocorrência;",
+                "VI – orientar e auxiliar nas demandas relacionadas ao preenchimento de Atestado de Origem, presencialmente",
+                "VII – informar ao Coordenador de Dia quando do término da atividade que motivou seu acionamento, fornecendo todas as ações de apoio e acompanhamento realizadas aos militares e/ou a seus dependentes, para controle; e",
+                "VIII – lançar na Documentação Diária as ações tomadas no atendimento e enviar ao Coordenador de Dia, de forma a resguardar às informações pessoais dos atendidos. Escalas de Serviço"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 63",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção IV — Prescrições Gerais",
+              "caput": "Art. 70 Os militares deverão cumprir as normas e determinações vigentes dentro de suas respectivas funções.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 70",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. VII, Seção IV — Prescrições Gerais",
+              "caput": "Art. 71 Em caso de acionamento, atender com eficiência e presteza, sempre primando pelo bom relacionamento com as equipes médicas, hospitalares e afins. Atribuições",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 71",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção I — Oficial de Sobreaviso",
+              "caput": "Art. 79 São atribuições do Oficial de Sobreaviso, além das previstas em outras normas:",
+              "dispositivos": [
+                "I – inteirar-se do serviço de sobreaviso ao qual está escalado;",
+                "II – permanecer disponível para possíveis acionamentos, principalmente, após o término do expediente;",
+                "III – auxiliar o Coordenador de Dia nas ocorrências atinentes a suas atividades;",
+                "IV – apresentar-se, de imediato, no local determinado pelo Coordenador de Dia ou Oficial de Comunicação, a qualquer momento, devidamente fardado, para o desempenho da atividade operacional de sua competência;",
+                "V – apresentar-se ao comandante do incidente em ocorrência de vulto e/ou repercussão que se fizer presente, devendo subordinação a esse até o término da ocorrência;",
+                "VI – informar o Coordenador de Dia quando do término da ocorrência a qual se fez presente, passando todas as providências tomadas e a situação final da ocorrência;",
+                "VII – lançar na Documentação Diária o resumo da ocorrência que foi acionado e enviar ao Coordenador de Dia, exceto os militares do CeSau; e",
+                "VIII – realizar o \"pronto\" com os demais militares de sua guarnição, caso tenha outros militares escalados, passando-lhes todas as orientações em caso de acionamento. Escalas de Serviço"
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 79",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção IV — Prescrições Gerais",
+              "caput": "Art. 85 O militares deverão cumprir as normas e determinações vigentes dentro de suas respectivas funções.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 85",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção IV — Prescrições Gerais",
+              "caput": "Art. 86 Em caso de acionamento, atender com eficiência e presteza as ocorrências.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 86",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção IV — Prescrições Gerais",
+              "caput": "Art. 87 As unidades operacionais no interior do Estado que tenham o Oficial Dia/Comandante do Socorro em sobreaviso, este deverá preencher e finalizar a sua Documentação Diária até às 07h30, remetendo-a ao Coordenador de Dia.",
+              "dispositivos": [
+                "Parágrafo único. Deverá dar o visto no livro do comandante de guarnição de serviço daquela unidade operacional."
+              ],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 87",
+              "match": "exata"
+            },
+            {
+              "heading": "Cap. IX, Seção IV — Prescrições Gerais",
+              "caput": "Art. 88 Em caso de acionamento, o militar faz jus ao recebimento da ISV, quando acionado fora do expediente administrativo, conforme disciplinado pela norma vigente.",
+              "dispositivos": [],
+              "source": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 88",
+              "match": "exata"
+            }
+          ]
+        },
+        "to": {
+          "name": "Tocantins",
+          "abbr": "TO",
+          "docLabel": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)",
+          "excerpts": [
+            {
+              "heading": "NGA SIOP (Anexo 2) — Atribuições do Serviço Administrativo",
+              "caput": "Art. 8° Será composto por BM(s) aos qual(is) compete(m) as seguintes atribuições:",
+              "dispositivos": [
+                "I – Conferir, testar e zelar pelos equipamentos e materiais de responsabilidade do serviço administrativo;",
+                "II – Permanecer nas dependências do SIOP ou na sala Administrativa durante o serviço administrativo;",
+                "III – Alimentar o banco de dados da Estatística do CBMTO;",
+                "IV – Receber, analisar, encaminhar, arquivar e elaborar documentos;",
+                "V – Alimentar o banco de dados e dispor em abordagens estatísticas as informações obtidas;",
+                "VI – Atualizar o Plano de Chamada do SIOP/BM, bem como os dados gerais do efetivo;",
+                "VII – Secretariar atas de reuniões e chamadas gerais;",
+                "VIII – Elaborar/Montar as escalas de serviço do SIOP/BM e os planos de sobreaviso;"
+              ],
+              "source": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 8",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_no11": {
+          "name": "Alagoas",
+          "abbr": "AL_NO11",
+          "docLabel": "Norma Operacional nº 11 — Canil (CBMAL)",
+          "excerpts": [
+            {
+              "heading": "NO 11, Cap. III — Rotina de cinotécnicos e SVR",
+              "caput": "Art. 9º As guarnições de cinotécnicos deverão: I - planejar e executar o treinamento diário do binômio, incluindo atividades físicas, técnicas e de socialização.",
+              "dispositivos": [
+                "II - alimentar os cães duas vezes ao dia (filhotes, três vezes), manter água limpa e observar o calendário sanitário (vacinação, vermifugação e tratamento contra ectoparasitas). A água deverá estar sempre fresca, devendo a troca ocorrer no mínimo 03 (três) vezes ao dia.",
+                "III - realizar banho dos cães a cada 15 (quinze) dias ou conforme necessidade. IV - garantir que todos os cães sejam expostos a ambientes e níveis de estresse diversos, desenvolvendo resistência e comportamento operacional adequado."
+              ],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 9",
+              "match": "exata"
+            },
+            {
+              "heading": "NO 11, Cap. III — Rotina de cinotécnicos e SVR",
+              "caput": "Art. 10. Os integrantes do Serviço Voluntário Remunerado (SVR) do Canil deverão: I - apoiar as guarnições de serviço em todas as atividades do dia. II - auxiliar na manutenção, limpeza, alimentação e treinamentos. III - ser preferencialmente cinotécnicos ou nivelados tecnicamente. 3 Estado de Alagoas Secretaria de Estado da Segurança Pública Corpo de Bombeiros Militar de Alagoas",
+              "dispositivos": [],
+              "source": "cf. CBMAL, Norma Operacional nº 11, Art. 10",
               "match": "exata"
             }
           ]

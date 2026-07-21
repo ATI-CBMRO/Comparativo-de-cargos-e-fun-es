@@ -46,6 +46,11 @@ REGULAMENTO_DOCS = {
     "ba": {"label": "Norma Operacional nº 01/2021 (CBMBA)", "md": "Bahia - Regulamento de Serviço.md"},
     "rr": {"label": "INOp do Serviço Diário dos Oficiais (CBMRR)", "md": "Roraíma - Regulamento de Serviço.md"},
     "to": {"label": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)", "md": "Tocantins - Regulamento de Serviço.md"},
+    "al_no03": {"label": "Norma Operacional nº 03 (CBMAL)", "md": "Alagoas - Norma Operacional 03.md"},
+    "al_no04": {"label": "Norma Operacional nº 04 (CBMAL)", "md": "Alagoas - Norma Operacional 04.md"},
+    "al_no06": {"label": "Norma Operacional nº 06 (CBMAL)", "md": "Alagoas - Norma Operacional 06.md"},
+    "al_no07": {"label": "Norma Operacional nº 07 (CBMAL)", "md": "Alagoas - Norma Operacional 07.md"},
+    "al_no11": {"label": "Norma Operacional nº 11 — Canil (CBMAL)", "md": "Alagoas - Norma Operacional 11.md"},
 }
 
 # ── Fonte primária POR TEMA (decisão do panorama: nunca "MT por padrão") ─────────────
