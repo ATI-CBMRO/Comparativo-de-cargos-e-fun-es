@@ -6,6 +6,7 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { useScenario } from '../context/ScenarioContext.jsx'
 import { scenarioDbUrl } from '../lib/scenario.js'
+import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -203,6 +204,7 @@ export default function RegulamentoWizard() {
 
   const articles = buildArticles(data, edits, isExcluded)
   const renderedAdvanced = new Set()
+  const parteDe = parteByChapterTitle(data)
 
   function scrollTo(id) {
     const el = document.getElementById(id)
@@ -349,14 +351,25 @@ export default function RegulamentoWizard() {
               border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 12, fontSize: 13,
             }}>
               <div style={{ fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', fontSize: 11, marginBottom: 8 }}>Sumário</div>
-              {data.chapters.map(ch => (
-                <div key={ch.id} style={{ marginBottom: 4 }}>
-                  <button onClick={() => scrollTo(chapterIdOf(ch.articles[0]?.editId ?? ch.id))} style={{
-                    border: 'none', background: 'none', padding: '2px 0', textAlign: 'left', cursor: 'pointer',
-                    color: 'var(--navy-850)', fontWeight: 600, fontSize: 12.5,
-                  }}>{ch.chapterTitle}</button>
-                </div>
-              ))}
+              {['geral', 'servico'].map(parte => {
+                const caps = data.chapters.filter(ch => ch.parte === parte)
+                if (!caps.length) return null
+                return (
+                  <div key={parte} style={{ marginBottom: 10 }}>
+                    <div style={{ fontWeight: 800, color: 'var(--cbm-red-700)', fontSize: 10.5, letterSpacing: 0.5, margin: '6px 0 4px' }}>
+                      {PARTE_HEADERS[parte]}
+                    </div>
+                    {caps.map(ch => (
+                      <div key={ch.id} style={{ marginBottom: 4 }}>
+                        <button onClick={() => scrollTo(chapterIdOf(ch.articles[0]?.editId ?? ch.id))} style={{
+                          border: 'none', background: 'none', padding: '2px 0', textAlign: 'left', cursor: 'pointer',
+                          color: 'var(--navy-850)', fontWeight: 600, fontSize: 12.5,
+                        }}>{ch.chapterTitle}{ch.status === 'pendente' ? ' ⏳' : ''}</button>
+                      </div>
+                    ))}
+                  </div>
+                )
+              })}
             </nav>
 
             {/* Documento */}
@@ -389,7 +402,26 @@ export default function RegulamentoWizard() {
                 border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '20px 24px',
                 fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: 'var(--doc-ink)',
               }}>
-                {articles.map(art => <div key={art.number} style={{ marginBottom: 8 }}>{renderArticle(art)}</div>)}
+                {(() => {
+                  let ultimaParte = null
+                  return articles.map(art => {
+                    const parte = art.chapterTitle ? parteDe[art.chapterTitle] : null
+                    const faixa = parte && parte !== ultimaParte ? PARTE_HEADERS[parte] : null
+                    if (parte) ultimaParte = parte
+                    return (
+                      <div key={art.number} style={{ marginBottom: 8 }}>
+                        {faixa && (
+                          <div style={{
+                            textAlign: 'center', fontWeight: 800, fontSize: 16, letterSpacing: 1,
+                            color: 'var(--cbm-red-700)', borderTop: '2px solid var(--cbm-red-700)',
+                            borderBottom: '2px solid var(--cbm-red-700)', padding: '10px 0', margin: '26px 0 18px',
+                          }}>{faixa}</div>
+                        )}
+                        {renderArticle(art)}
+                      </div>
+                    )
+                  })
+                })()}
               </div>
 
               <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 18 }}>
