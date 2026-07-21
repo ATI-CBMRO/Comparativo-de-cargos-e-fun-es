@@ -26,8 +26,13 @@ npm run preview          # pré-visualizar o build
 node --test              # testes de lógica pura (96 testes; ver arquivos *.test.js em src/lib e api/)
 ```
 
-**Pipeline de dados (Python 3.10+ — os scripts usam `int | None`). Em Mac com só o Python
-3.9 do sistema: `brew install python@3.12` e chame `python3.12`.** ORDEM IMPORTA:
+**Ingestão de novos PDFs de legislação → use a skill `/ingerir-legislacao`** (em
+`.claude/skills/`): orquestra o pipeline abaixo na ordem certa, desvia das armadilhas
+(venv isolado, grafia divergente de estado, classificação por conteúdo) e reconcilia.
+
+**Pipeline de dados (Python 3.10+ — os scripts usam `int | None`). No Mac, o `pip` é
+bloqueado no Python do sistema e no 3.12 do Homebrew (PEP 668): use o venv isolado
+`.venv-pipeline/` — `.venv-pipeline/bin/python scripts/<x>.py` (fora do git).** ORDEM IMPORTA:
 
 ```bash
 python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> database/markdown/*.md
