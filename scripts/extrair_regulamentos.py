@@ -392,6 +392,10 @@ CONFIG = {
         'md': 'Alagoas - Norma Operacional 03.md',
         'src': 'cf. CBMAL, Norma Operacional nº 03, Art. {n}',
         'slice_between': (None, None),
+        # Defeito do documento original: "Art. 5º" aparece duplicado (área de atuação dos
+        # oficiais + depois vigência, que deveria ser "Art. 6º"). O extrator dedupe por número
+        # e mantém só a 1ª ocorrência — a de vigência é descartada com aviso; Art. 6
+        # (revogação) segue normalmente para disposicoes-finais.
         'ranges': [
             (1, 5, 'servico-operacional', 'exata', 'NO 03 — Escalas operacionais por função'),
             (5, 6, 'disposicoes-finais', 'exata', 'NO 03 — Vigência e revogação'),
