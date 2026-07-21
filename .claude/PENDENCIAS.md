@@ -2,9 +2,11 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
-- [ ] **Regulamento — Fase 2, Fatia B**: reforçar a Parte II com o RESTO de BA/RR/TO (fora do teledespacho) + as 9 normas de Serviço de AL. Origem: spec 2026-07-21.
-- [ ] **Regulamento — Fase 2, Fatia C**: tapar os temas magros da Parte I (uniformes, cerimonial, pessoal) com RISG (Títs. VI/VIII) e RS. Origem: spec 2026-07-21.
-- [ ] **Regulamento — Fase 2, Fatia D**: acréscimos cirúrgicos do ES (prontidão, salvamento marítimo, vistorias SCI). Origem: spec 2026-07-21.
+- [ ] **Regulamento — resíduos da Fase 2 (sinalizados, não resolvidos)**: corpo principal de
+  Tocantins (Art. 1-13,16 — colide numeração com o Anexo 2 em `atribuicoes-funcoes`); os 4 DOBs
+  de Alagoas 05-08 (sem "Art. N", estruturados por seção numerada — extrator atual incompatível);
+  tema `uniformes-apresentacao` (sem achado forte no RISG nas faixas lidas, segue com 1 artigo
+  só de SE). Origem: spec 2026-07-21 (Fatias B/C/D).
 - [ ] **Regulamento — Fase 3**: curadoria no Obsidian (notas por tema/artigo com backlinks entre estados). Origem: spec 2026-07-21.
 - [ ] **Regulamento — herdar 2 Partes** nas telas Subsídio/Diagramas/Revisão (spec §5.4 — fora da Fase 1). Origem: spec 2026-07-21.
 - [ ] **Cenário atual — Subsídio** (`/minuta/subsidio` e `/regulamento/subsidio`): ainda gated no atual. Depende de gerar o `comparativo_minuta` do atual (comparação dispositivo-a-dispositivo com outros estados). Origem: sessão cenários 15-16/07/2026.
@@ -17,6 +19,16 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Regulamento — Fase 2, Fatias B+C+D** (reforço verbatim, sem mudar fonte primária de
+  nenhum tema): Fatia B — resto de Bahia (35 art.), Roraima inteiro (97 art.), resto do Anexo 2
+  de Tocantins (15 art.), 5 normas de Alagoas (42 art.) reforçando a Parte II. Fatia C — RISG do
+  Exército (67 art.) reforça `cerimonial-honras` e `pessoal-quadros`, entrando como pseudo-fonte
+  "Exército Brasileiro", só como alternativa (nunca primária — testado). Fatia D — 9 artigos
+  cirúrgicos do CBMES (CAT, 1º BBM, CERD) reforçam `servico-operacional` e
+  `seguranca-contra-incendio`. Um vazamento de conteúdo (organograma colado ao Art. 31 do ES)
+  foi encontrado na revisão e corrigido antes do merge. 413 artigos primários preservados;
+  ganho de ~700 excertos alternativos no total. Spec e plano em
+  `docs/superpowers/specs/` e `docs/superpowers/plans/2026-07-21-fase2bcd-*` — 21/07/2026.
 - [x] **Regulamento — Fase 2A**: 16º tema `central-operacoes-193` preenchido — Bahia (CICOM,
   Art. 8-9 Supervisor + Art. 18 Operador de Teledespacho) como primária, Tocantins (Anexo 2,
   Art. 12-14) como alternativa. Roraima ficou de fora (o 193 está difuso no Art. 54, sem
