@@ -4,6 +4,7 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { chapterIdOf } from '../lib/minutaTargets.js'
 
 function MatchBadge({ match }) {
   const cfg = {
@@ -96,13 +97,14 @@ export default function MinutaRIComparator() {
     return m
   }, [data])
 
-  // Artigos do capítulo (seções do órgão) com numeração LOCAL, reaproveitando
-  // buildArticles (mesma técnica de RegulamentoComparator.jsx): isola o capítulo
-  // atual num objeto { chapters: [...] } para reiniciar a numeração em 1.
+  // Artigos do capítulo com a numeração CONTÍNUA da minuta (decisão do Wândrio,
+  // 22/07/2026, mesma regra do RegulamentoComparator): numera a estrutura inteira
+  // e filtra o capítulo — o "Art. Nº" exibido é o mesmo do documento no Wizard.
+  const allArticles = useMemo(() => (data ? buildArticles(data) : []), [data])
   const articles = useMemo(() => {
     if (!chapter) return []
-    return buildArticles({ chapters: [chapter] })
-  }, [chapter])
+    return allArticles.filter(a => chapterIdOf(a.editId) === chapter.id)
+  }, [allArticles, chapter])
 
   // Estados disponíveis em alternatives, em ordem alfabética pelo nome.
   const altStates = useMemo(() => {
