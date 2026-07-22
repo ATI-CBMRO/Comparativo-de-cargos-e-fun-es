@@ -3,7 +3,7 @@
     "version": "1.0",
     "generated_at": "2026-06-01",
     "total_states": 27,
-    "total_documents": 69,
+    "total_documents": 72,
     "curated_states": 27,
     "regions": {
       "Norte": 7,
@@ -5987,6 +5987,15 @@
           "has_pdf": true
         },
         {
+          "type": "Regimento de Serviços",
+          "typeVerified": true,
+          "md_file": "Maranhão - Portaria 46.md",
+          "char_count": 40893,
+          "year": 2020,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
           "type": "Quadro de Organização e Distribuição",
           "typeVerified": true,
           "md_file": "Maranhão - Quadro de Organização e Distribuição.md",
@@ -6633,11 +6642,11 @@
         }
       ],
       "stats": {
-        "total_documents": 2,
+        "total_documents": 3,
         "has_regimento": false,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 108027,
+        "total_chars": 148920,
         "organs_mapped": 93,
         "curated": true
       }
@@ -6673,7 +6682,7 @@
         {
           "type": "Regulamento Geral",
           "typeVerified": true,
-          "md_file": "Mato Grosso - Regimento Interno.md",
+          "md_file": "Mato Grosso - Regulamento Geral.md",
           "char_count": 272442,
           "year": 2013,
           "laws": [
@@ -10391,9 +10400,24 @@
           "year": 2026,
           "laws": [],
           "has_pdf": true
+        },
+        {
+          "type": "Regimento de Serviços",
+          "typeVerified": true,
+          "md_file": "Pará - Regulamento de serviço.md",
+          "char_count": 164301,
+          "year": 2020,
+          "laws": [
+            {
+              "tipo": "Decreto",
+              "numero": "1.052",
+              "data": "23 DE SETEMBRO DE"
+            }
+          ],
+          "has_pdf": true
         }
       ],
-      "legal_basis": "Consultar documento fonte",
+      "legal_basis": "Decreto nº 1.052 (23 DE SETEMBRO DE)",
       "chapters_summary": [
         {
           "number": "i",
@@ -11514,11 +11538,11 @@
         }
       ],
       "stats": {
-        "total_documents": 2,
+        "total_documents": 3,
         "has_regimento": true,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 473633,
+        "total_chars": 637934,
         "organs_mapped": 169,
         "curated": true
       }
@@ -18645,57 +18669,57 @@
       "cbm_abbreviation": "CBMSC",
       "documents": [
         {
-          "type": "Regimento Interno",
+          "type": "Lei de Organização Básica",
+          "typeVerified": true,
+          "md_file": "Santa Catarina - Organização Básica alterações.md",
+          "char_count": 32902,
+          "year": 2025,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "885",
+              "data": "31 DE OUTUBRO DE"
+            },
+            {
+              "tipo": "Lei",
+              "numero": "885",
+              "data": "31 DE OUTUBRO DE"
+            },
+            {
+              "tipo": "Lei",
+              "numero": "724",
+              "data": "18 de julho de"
+            }
+          ],
+          "has_pdf": true
+        },
+        {
+          "type": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Santa Catarina - Organização Básica.md",
-          "char_count": 82273,
-          "year": 2021,
+          "char_count": 49153,
+          "year": 2018,
           "laws": [
             {
               "tipo": "Lei",
               "numero": "724",
-              "data": "18 de julho de"
+              "data": "18 DE JULHO DE"
             },
             {
               "tipo": "Lei",
               "numero": "724",
-              "data": "18 de julho de"
-            },
-            {
-              "tipo": "Decreto",
-              "numero": "1.328",
-              "data": "14 DE JUNHO DE"
+              "data": "18 DE JULHO DE"
             }
           ],
           "has_pdf": true
         }
       ],
-      "legal_basis": "Lei nº 724 (18 de julho de); Lei nº 724 (18 de julho de); Decreto nº 1.328 (14 DE JUNHO DE)",
+      "legal_basis": "Lei nº 885 (31 DE OUTUBRO DE); Lei nº 885 (31 DE OUTUBRO DE); Lei nº 724 (18 de julho de); Lei nº 724 (18 DE JULHO DE); Lei nº 724 (18 DE JULHO DE)",
       "chapters_summary": [
         {
-          "number": "I",
-          "title": "DAS MISSÕES GERAIS DO CBMSC",
-          "text_preview": "CAPÍTULO I\nDAS MISSÕES GERAIS DO CBMSC\nArt. 3º Cabe ao CBMSC, nos limites de sua competência, além de outras atribuições estabelecidas\nem LEI:\nI - realizar os serviços de prevenção de sinistros ou catástrofes, de combate a incêndio, de\nbusca e salvamento, de ajuda humanitária, de resgate terrestre, aquático e aéreo de pessoas e bens\ne de atendimento pré-hospitalar;\nII - estabelecer normas de preve"
-        },
-        {
-          "number": "II",
-          "title": "DA CONCEITUAÇÃO DAS MISSÕES BOMBEIROS MILITARES",
-          "text_preview": "CAPÍTULO II\nDA CONCEITUAÇÃO DAS MISSÕES BOMBEIROS MILITARES\nArt. 4º A missão bombeiro militar compreende:\nI - a prevenção de sinistros ou catástrofes: consiste em estudos técnicos, procedimentos de\nsegurança, manobras de organização, educação e de mobilização visando à prevenção e à redução\nde desastres;\nII - o combate a incêndio: consiste em ações técnicas, táticas e estratégicas destinadas a\npre"
-        },
-        {
-          "number": "I",
-          "title": "DA ESTRUTURA ORGANIZACIONAL BÁSICA",
-          "text_preview": "CAPÍTULO I\nDA ESTRUTURA ORGANIZACIONAL BÁSICA\nArt. 5º A estrutura organizacional básica do CBMSC compreende:\nI - órgãos de direção;\nII - órgãos de apoio; e\nIII - órgãos de execução.\nArt. 6º Os órgãos de direção, apoio e execução são organizados da seguinte forma:\nI - para os órgãos de direção setorial, em divisões, centros e seções;\nII - para os órgãos de apoio, de acordo com suas características "
-        },
-        {
-          "number": "II",
-          "title": "DA ESTRUTURA ORGANIZACIONAL DETALHADA",
-          "text_preview": "CAPÍTULO II\nDA ESTRUTURA ORGANIZACIONAL DETALHADA\nArt. 7º Fica estabelecida a estrutura organizacional detalhada do CBMSC, baseada na hierarquia e\nna disciplina.\nArt. 8º Os órgãos de direção geral, que atuam no nível estratégico, compreendem:\nI - Comando-Geral, do qual fazem parte:\na) o Comandante-Geral;\nb) o Subcomando-Geral, do qual fazem parte:\n1. o Subcomandante-Geral;\n2. Ajudante de Ordens; e"
-        },
-        {
-          "number": "I",
-          "title": "DOS ÓRGÃOS DE DIREÇÃO",
-          "text_preview": "CAPÍTULO I\nDOS ÓRGÃOS DE DIREÇÃO\nSeção I\nDos Órgãos de Direção Geral\nSubseção I\nDo Comando-Geral\nArt. 14. São atribuições exclusivas do Comandante-Geral:\nI - concessão de medalha, condecoração e comenda;\nII - movimentação de Oficial;\nIII - desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento;\nIV - assinatura de convênios com municípios, relativos à prestação de se"
+          "number": "III",
+          "title": "DOS ÓRGÃOS DO GABINETE DO GOVERNADOR DO ESTADO Seção I Da Secretaria de Governo",
+          "text_preview": "CAPÍTULO III\nDOS ÓRGÃOS DO GABINETE DO GOVERNADOR DO ESTADO Seção I Da Secretaria de Governo\n............................................................................................” (NR)\nArt. 29. O art. 7º da Lei Complementar nº 741, de 2019 , passa a vigorar com a seguinte redação: “\nArt. 7º À SG compete: ......................................................................................."
         }
       ],
       "organs": [
@@ -19252,11 +19276,11 @@
         }
       ],
       "stats": {
-        "total_documents": 1,
-        "has_regimento": true,
+        "total_documents": 2,
+        "has_regimento": false,
         "has_regulamento": false,
         "has_nga": false,
-        "total_chars": 82273,
+        "total_chars": 82055,
         "organs_mapped": 93,
         "curated": true
       }
@@ -19296,8 +19320,8 @@
         {
           "type": "Regimento de Serviços",
           "typeVerified": true,
-          "md_file": "Sergipe - Regimento Interno.md",
-          "char_count": 101230,
+          "md_file": "Sergipe - Regulamento Interno.md",
+          "char_count": 101234,
           "year": 2022,
           "laws": [],
           "has_pdf": true
@@ -20361,7 +20385,7 @@
         "has_regimento": false,
         "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 163401,
+        "total_chars": 163405,
         "organs_mapped": 138,
         "curated": true
       }

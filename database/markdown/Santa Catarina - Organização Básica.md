@@ -1,1496 +1,637 @@
 # Santa Catarina - Organização Básica
 
 *Documento extraído de: `Santa Catarina - Organização Básica.pdf`*
-*Total de páginas: 37*
+*Total de páginas: 12*
 
 ---
 
 ## Página 1
 
-NORMA EM VIGOR
-DECRETO Nº 1.328, DE 14 DE JUNHO DE 2021
-Regulamenta a LEI Complementar nº 724, de 2018, quedispõe sobre a Organização Básica do Corpo de BombeirosMilitar do Estado de Santa Catarina (CBMSC) e estabelece
-outras providências.
-O GOVERNADOR DO ESTADO DE SANTA CATARINA, no uso das atribuições privativas que lhe
-conferem os incisos I e III do art. 71 da Constituição do Estado, conforme o disposto no art. 51 da
-LEI Complementar nº 724, de 18 de julho de 2018, e de acordo com o que consta nos autos do
-processo nº CBMSC 3123/2018, DECRETA:
-Art. 1º Este DECRETO regulamenta a organização básica do Corpo de Bombeiros Militar do Estado
-de Santa Catarina (CBMSC) estabelecida na LEI Complementar nº 724, de 18 de julho de 2018.
-Art. 2º Para fins deste DECRETO, entende-se por missão do CBMSC as competências da
-Corporação estabelecidas na legislação.
-TÍTULO I
-DA MISSÃO DO CBMSC
-CAPÍTULO I
-DAS MISSÕES GERAIS DO CBMSC
-Art. 3º Cabe ao CBMSC, nos limites de sua competência, além de outras atribuições estabelecidas
-em LEI:
-I - realizar os serviços de prevenção de sinistros ou catástrofes, de combate a incêndio, de
-busca e salvamento, de ajuda humanitária, de resgate terrestre, aquático e aéreo de pessoas e bens
-e de atendimento pré-hospitalar;
-II - estabelecer normas de prevenção e segurança contra incêndios, catástrofes ou produtos
-perigosos para resguardar a vida das pessoas e reduzir riscos de danos ao meio ambiente e ao
-patrimônio;
-III - analisar previamente os projetos preventivos, acompanhar e fiscalizar sua execução e impor
-sanções administrativas estabelecidas em LEI em:
-a) segurança contra incêndio e pânico em edificações; e
-b) áreas de reflorestamentos, de riscos a sinistros e de armazenagem, manipulação e
-www.leis.org
-Imprimir
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 1/37
+LEI COMPLEMENTAR Nº 724, DE 18 DE JULHO DE 2018
+Corpo de Bombeiros Militar de Santa Catarina — Organização Básica
+Texto oficial (ALESC), transcrito para PDF pesquisável.
+LEI COMPLEMENTAR Nº 724, DE 18 DE JULHO DE 2018 PLC/0021.1/2018 20.815 de 19/07/2018 :
+Alterada pela Lei Complementar 885/2025 : Decretos: 1328/2021; 1592/2026 Dispõe sobre a
+organização básica do Corpo de Bombeiros Militar do Estado de Santa Catarina (CBMSC)e estabelece
+outras providências. O GOVERNADOR DO ESTADO DE SANTA CATARINA Faço saber a todos os
+habitantes deste Estado que a Assembleia Legislativa decreta e eu sanciono a seguinte Lei
+Complementar: TÍTULO I DA FINALIDADE, COMPETÊNCIA E SUBORDINAÇÃO DO CORPO DE
+BOMBEIROS MILITAR DO ESTADO DE SANTA CATARINA CAPÍTULO I DA FINALIDADE
+Art. 1º O Corpo de Bombeiros Militar do Estado de Santa Catarina (CBMSC), órgão permanente, força
+auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, tem por finalidade
+realizar serviços específicos de bombeiros no Território do Estado, mediante ações integradas com a
+sociedade, visando à preservação da ordem pública e da incolumidade das pessoas e do patrimônio.
+Art. 1º O Corpo de Bombeiros Militar do Estado de Santa Catarina (CBMSC), instituição militar
+permanente, exclusiva e típica de Estado, essencial à Justiça Militar, força auxiliar e reserva do
+Exército, indispensável à preservação da ordem pública, à segurança pública, à incolumidade das
+pessoas e do patrimônio e ao regime democrático, organizado com base na hierarquia e na disciplina
+militares e comandado por oficial da ativa do último posto, integrante do Quadro de Oficiais de
+Estado-Maior Bombeiro Militar (QOEMBM), tem por finalidade realizar serviços específicos de
+bombeiros no Estado, mediante ações integradas com a sociedade. ( Redação dada pela LC 885, de
+2025 ) CAPÍTULO II DA COMPETÊNCIA
+Art. 2º Compete ao CBMSC, sem prejuízo de outras atribuições estabelecidas em lei: I – realizar os
+serviços de prevenção de sinistros ou catástrofes, de combate a incêndio, de busca e salvamento, de
+resgate terrestre, aquático e aéreo de pessoas e bens e de atendimento pré-hospitalar; II – estabelecer
+normas de prevenção e segurança contra incêndios, catástrofes ou produtos perigosos para
+resguardar a vida das pessoas e reduzir riscos de danos ao meio ambiente e ao patrimônio; III –
+analisar previamente os projetos de segurança contra incêndio em edificações e contra sinistros em
+áreas de risco e áreas de armazenagem, manipulação e transporte de produtos perigosos,
+acompanhar e fiscalizar sua execução e impor as sanções administrativas estabelecidas em lei; IV –
+realizar perícias de incêndio e de áreas sinistradas no limite de sua competência; V – colaborar com os
+órgãos de defesa civil e de saúde; VI – exercer a polícia judiciária militar, nos termos da legislação
+federal; VII – estabelecer, executar e fiscalizar a prevenção balneária por meio de guarda-vidas; e VIII –
+prevenir acidentes e incêndios na orla marítima e fluvial. Parágrafo único. Compete ainda ao CBMSC: I
+–executar honras e guardas militares; e II – prestar assistência militar aos órgãos elencados na
+regulamentação desta Lei Complementar.
+Art. 3º O CBMSC, existindo interesse do Estado e dos Municípios, poderá colaborar na formação, no
+acompanhamento e na supervisão das atividades dos integrantes dos congêneres públicos ou
+privados, mediante convênio firmado entre o Município ou ente privado e o Estado, por intermédio da
+Secretaria de Estado da Segurança Pública (SSP), representada pelo Comandante-Geral do CBMSC.
+Parágrafo único. O Município conveniado com o Estado poderá atuar de forma integrada com o
+CBMSC na execução dos serviços de prevenção e combate a incêndio e no atendimento a
+emergências, realizando a gestão financeira e contábil dos recursos provenientes de atos de
+fiscalização.
+Art. 3º O CBMSC, existindo interesse do Estado e dos Municípios, poderá colaborar na formação, no
+acompanhamento e na supervisão das atividades dos integrantes dos congêneres públicos ou
+privados, mediante convênio firmado entre o Município ou ente privado e o Estado, representado pelo
+
 
 ---
 
 ## Página 2
 
-transporte de produtos perigosos.
-IV - realizar perícia de incêndio e explosão e de áreas sinistradas no limite de sua competência;
-V - colaborar com os órgãos de defesa civil e de saúde;
-VI - exercer a polícia judiciária militar, nos termos da legislação federal;
-VII - estabelecer, executar e fiscalizar a prevenção balneária por meio de guarda-vidas;
-VIII - prevenir acidentes e incêndios na orla marítima e fluvial; e
-IX - executar honras, guardas militares e prestar assistência militar.
-CAPÍTULO II
-DA CONCEITUAÇÃO DAS MISSÕES BOMBEIROS MILITARES
-Art. 4º A missão bombeiro militar compreende:
-I - a prevenção de sinistros ou catástrofes: consiste em estudos técnicos, procedimentos de
-segurança, manobras de organização, educação e de mobilização visando à prevenção e à redução
-de desastres;
-II - o combate a incêndio: consiste em ações técnicas, táticas e estratégicas destinadas a
-prevenir, controlar e extinguir o fogo fora do controle humano, visando à salvaguarda de vidas, de
-patrimônios e do meio ambiente, reduzindo os prejuízos econômicos, sociais e proporcionando
-maior segurança à comunidade;
-III - a busca e salvamento: consiste no planejamento, coordenação e execução das ações de
-busca e salvamento urbano, rural, marítimo, fluvial e lacustre de pessoas e bens, provendo socorro
-em casos de afogamento, inundação, desabamento, naufrágios, bem como nos casos de catástrofe
-ou de calamidade pública, visando o resgate de pessoas, proteção do patrimônio e a preservação
-ambiental;
-IV - a ajuda humanitária: consiste no atendimento à população afetada pelo desastre, mediante
-aporte de recursos destinados às atividades logísticas, assistenciais e de promoção da saúde, até
-que se restabeleça a situação de normalidade;
-V - o atendimento pré-hospitalar: consiste na prestação do socorro no ambiente pré-hospitalar
-para as vítimas acometidas por traumas, urgências e emergências, realizando manobras de suporte
-de vida, estabilizando e realizando o transporte adequado desses pacientes para ambiente
-hospitalar previamente eleito;
-VI - a segurança contra incêndio e pânico: consiste na elaboração de normas, análise prévia de
-projetos preventivos e realização de vistorias em imóveis, e visam a evitar o surgimento do sinistro,
-possibilitar sua extinção, reduzir seus efeitos, bem como no conjunto de medidas para a detecção e
-controle do crescimento e sua consequente contenção ou extinção; e
-VII - a perícia de incêndio e explosão: consiste na apuração das circunstâncias que envolvem o
-incêndio e explosão, objetivando definir suas causas, proporcionando a retroalimentação do ciclo
-operacional de incêndio por meio da análise da sua eficiência, e fundamentando tecnicamente a
-doutrina do CBMSC de segurança e combate a incêndios, pânico e desastres.
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 2/37
+Comandante-Geral do CBMSC. § 1º O Município conveniado com o Estado poderá atuar de forma
+integrada com o CBMSC na execução dos serviços de combate a incêndio e no atendimento a
+emergências, realizando a gestão financeira e contábil dos recursos provenientes de atos de
+fiscalização. § 2º Fica autorizado o repasse da capacidade tributária ativa aos Municípios para
+arrecadação dos recursos provenientes das taxas de prevenção contra sinistros de que trata a Lei nº
+7.541, de 30 de dezembro de 1988, sendo os valores integralmente destinados ao CBMSC. § 3º Os
+recursos oriundos da arrecadação das taxas de que trata o § 2º deste artigo poderão ser destinados
+aos Municípios que mantenham serviços de combate a incêndio e atendimento a emergências, desde
+que não haja unidade operacional do CBMSC na localidade. ( Redação do
+Art. 3º dada pela LC 885, de 2025 ) CAPÍTULO III DA SUBORDINAÇÃO
+Art. 4º O CBMSC é subordinado ao Governador do Estado eórgão constitutivo da SSP. TÍTULO II DA
+ESTRUTURA ORGANIZACIONAL BÁSICA DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE
+SANTA CATARINA CAPÍTULO I DA COMPOSIÇÃO
+Art. 5º A estrutura organizacional básica do CBMSC compreende: I –os órgãos de direção; II –os
+órgãos de apoio; e III –os órgãos de execução. II – o órgão de correição; III – os órgãos de
+assessoramento; ( Redação dos incisos II e III dada pela LC 885, de 2025 ) IV – os órgãos de apoio; e
+V – os órgãos de execução. ( Redação dos incisos IV e V incluída pela LC 885, de 2025 ) CAPÍTULO II
+DOS ÓRGÃOS DE DIREÇÃO Seção I Da Composição
+Art. 6º São órgãos de direção do CBMSC: I –os órgãos de direção geral; II –os órgãos de direção
+setorial; e III –os órgãos de direção operacional. ( Redação revogada pela LC 885, de 2025 ) Seção II
+Dos Órgãos de Direção Geral
+Art. 7º Os órgãos de direção geral, que atuam no nível estratégico, compreendem: I – o
+Comando-Geral, do qual fazem parte: a) o Subcomando-Geral; b) o Estado-Maior Geral; c) o Gabinete
+do Comando-Geral, composto pelas seguintes unidades: 1. Ajudância-Geral; 2. Ouvidoria-Geral; 3.
+Centro de Comunicação Social; e 4. Controladoria Interna; d) o Conselho Estratégico; e e) a Assessoria
+Jurídica; e ( Redação das alíneas a, b, c, d e e do inciso I revogada pela LC 885, de 2025 ) II – a
+Corregedoria-Geral. Parágrafo único. Os órgãos de direção geral são diretamente subordinados ao
+Comandante-Geral.
+Art. 7º O Comando-Geral do CBMSC reúne os órgãos de direção geral, responsáveis pelo
+planejamento estratégico e pela administração superior da Instituição, dos quais fazem parte: I – o
+Subcomando-Geral; II – o Estado-Maior Geral; e III – o Gabinete do Comando-Geral. ( Redação do
+Art. 7º dada pela LC 885, de 2025 ) Seção III Dos Órgãos de Direção Setorial
+Art. 8º Os órgãos de direção setorial, nível tático da atividade-meio do CBMSC, compreendem as
+diretorias, limitadas a no máximo 8 (oito) e estruturadas nas seguintes áreas: I – pessoal; II – saúde e
+promoção social; III – planejamento e gestão estratégica; IV – instrução e ensino; V – urgência e
+emergência; VI – logística e finanças; VII – tecnologia da informação e comunicação; e VIII –
+segurança contra incêndio e pânico. Parágrafo único. Os órgãos de direção setorial são diretamente
+subordinados ao Chefe de Estado-Maior Geral epodem ser estruturados em divisões, centros, seções e
+secretarias. ( Redação dos incisos VII e VIII e seu parágrafo único revogada pela LC 885, de 2025 )
+Art. 8º São órgãos de direção setorial, responsáveis pela administração setorial das atividades de
+inteligência, recursos humanos, saúde, ensino e instrução, pesquisa e desenvolvimento, logística,
+gestão orçamentária e financeira, ambiental, entre outras: I – a Diretoria de Pessoal; II – a Diretoria de
+Saúde e Promoção Social; III – a Diretoria de Instrução e Ensino; IV – a Diretoria de Logística e
+Finanças; V – a Diretoria de Tecnologia da Informação; e VI – a Diretoria de Segurança Contra
+Incêndio e Pânico. § 1º A estrutura e a subordinação dos órgãos de direção setorial serão definidas por
+decreto do Governador do Estado, podendo ser eles organizados em divisões, centros, seções e
+secretarias. § 2º As diretorias de que tratam os incisos do caput deste artigo serão compostas por, no
+
 
 ---
 
 ## Página 3
 
-TÍTULO II
-DA ORGANIZAÇÃO DO CBMSC
-CAPÍTULO I
-DA ESTRUTURA ORGANIZACIONAL BÁSICA
-Art. 5º A estrutura organizacional básica do CBMSC compreende:
-I - órgãos de direção;
-II - órgãos de apoio; e
-III - órgãos de execução.
-Art. 6º Os órgãos de direção, apoio e execução são organizados da seguinte forma:
-I - para os órgãos de direção setorial, em divisões, centros e seções;
-II - para os órgãos de apoio, de acordo com suas características peculiares; e
-III - para os órgãos de execução, em batalhões, companhias, seções do estado-maior, pelotões
-e grupos.
-CAPÍTULO II
-DA ESTRUTURA ORGANIZACIONAL DETALHADA
-Art. 7º Fica estabelecida a estrutura organizacional detalhada do CBMSC, baseada na hierarquia e
-na disciplina.
-Art. 8º Os órgãos de direção geral, que atuam no nível estratégico, compreendem:
-I - Comando-Geral, do qual fazem parte:
-a) o Comandante-Geral;
-b) o Subcomando-Geral, do qual fazem parte:
-1. o Subcomandante-Geral;
-2. Ajudante de Ordens; e
-3. Centro de Monitoramento Operacional e Gestão de Crises;
-c) o Estado-Maior Geral, composto pelas seguintes unidades:
-1. Chefia;
-2. Subchefia;
-3. Seção de planejamento de pessoal, legislação e cultura;
-4. Seção de planejamento de operações, doutrina, estatística, ensino e instrução;
-5. Seção de planejamento de logística e patrimônio;
-6. Seção de planejamento orçamentário;
-7. Seção de planejamento de projetos;
-8. Ajudante de Ordens; e
-9. Secretaria;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 3/37
+máximo, 3 (três) divisões e 6 (seis) centros, exceto a diretoria de que trata o inciso IV do caput deste
+artigo, que poderá contar com 3 (três) divisões e até 8 (oito) centros. § 3º As diretorias de que tratam os
+incisos do caput deste artigo atuam em nível tático e serão comandadas por coronéis da ativa
+pertencentes ao QOEMBM. ( Redação do
+Art. 8º dada pela LC 885, de 2025 ) Seção IV Dos Órgãos de Direção Operacional ( Redação revogada
+pela LC 885, de 2025 )
+Art. 9º Os órgãos de direção operacional, nível tático da atividade-fim do CBMSC, são escalões
+intermediários de comando entre os órgãos de execução e os órgãos de direção geral e setorial e são
+denominados Regiões de Bombeiros Militares (RBMs). ( Redação revogada pela LC 885, de 2025 )
+Art. 10. Os órgãos de direção operacional são diretamente subordinados ao Subcomandante-Geral.
+Parágrafo único. Os órgãos de direção operacional são diretamente vinculados aos órgãos de direção
+setorial nos assuntos a estes pertinentes. ( Redação revogada pela LC 885, de 2025 ) CAPÍTULO II-A
+DO ÓRGÃO DE CORREIÇÃO ( Redação incluída pela LC 885, de 2025 )
+Art. 10-A. O órgão de correição do CBMSC, compreendido pela Corregedoria-Geral e subordinado
+diretamente ao Comandante-Geral, destina-se a exercer as funções correicionais, regulamentando
+procedimentos internos para a prevenção, fiscalização e apuração de desvios de conduta em atos
+disciplinares e penais militares, promovendo a qualidade e eficiência do serviço de segurança pública,
+instrumentalizando a Justiça Militar e acompanhando o cumprimento de medidas cautelares restritivas
+de direitos e mandados de prisão judicialmente deferidos contra militares da Instituição, sem suprimir a
+responsabilidade do poder hierárquico e disciplinar das autoridades locais. ( Redação do
+Art. 10-A incluída pela LC 885, de 2025 ) CAPÍTULO II-B DOS ÓRGÃOS DE ASSESSORAMENTO (
+Redação incluída pela LC 885, de 2025 )
+Art. 10-B. São órgãos de assessoramento, responsáveis por prestar assessoria, consultoria,
+recomendações, orientações técnicas e políticas, bem como por elaborar notas técnicas, com o
+objetivo de auxiliar as decisões dos órgãos de direção em assuntos especializados: I – a
+Ajudância-Geral; II – a Assessoria Jurídica; III – as Assessorias Especiais; IV – o Centro de
+Comunicação Social; V – a Agência de Inteligência; VI – a Controladoria Interna; VII – a
+Ouvidoria-Geral; e VIII – o Escritório de Dados. Parágrafo único. A estrutura e a subordinação dos
+órgãos de assessoramento serão definidas por decreto do Governador do Estado. ( Redação do
+Art. 10-B incluída pela LC 885, de 2025 ) CAPÍTULO III DOS ÓRGÃOS DE APOIO
+Art. 11. São órgãos de apoio do CBMSC:
+Art. 11. São órgãos de apoio, responsáveis pelo atendimento das necessidades de recursos humanos,
+saúde, ensino, pesquisa, logística e gestão orçamentária e financeira, bem como pela atividade-meio
+da Instituição: ( Redação do caput do
+Art. 11 dada pela LC 885, de 2025 ) I – o Centro de Ensino Bombeiro Militar; II – as coordenadorias
+operacionais; II – as Coordenadorias; ( Redação dada pela LC 885, de 2025 ) III – as comissões; IV –
+as juntas de inspeção de saúde; V – a agência de inteligência; e VI – as assessorias especiais. (
+Redação do inciso VI revogada pela LC 885, de 2025 ) § 1º O Centro de Ensino Bombeiro Militar é
+diretamente subordinado ao Subcomandante-Geral, será estruturado como batalhão e terá suas
+competências definidas na regulamentação desta Lei Complementar. § 2º Os órgãos de apoio de que
+tratam os incisos II a VI do caput deste artigo, cujas competências e cuja subordinação serão definidas
+na regulamentação desta Lei Complementar, poderão ser estruturados em divisões, centros, seções e
+secretarias. V – o Conselho Estratégico. § 1º O Centro de Ensino Bombeiro Militar, unidade
+responsável pela formação e pelo aperfeiçoamento de bombeiros militares e subordinada ao Diretor de
+Instrução e Ensino, poderá ter sua estrutura ativada ou desativada conforme a necessidade, por ato do
+Comandante-Geral, observados os seguintes limites máximos: I – 1 (um) Batalhão, 5 (cinco)
+
 
 ---
 
 ## Página 4
 
-d) o Gabinete do Comando-Geral, composto pelas seguintes unidades:
-1. Ajudância-Geral, da qual fazem parte:
-1.1. o Ajudante-Geral;
-1.2. o Ajudante de Ordens do Comandante-Geral;
-1.3. a Secretaria-Geral;
-1.4. a Seção Administrativa;
-1.5. o Protocolo-Geral; e
-1.6. o Arquivo-Geral;
-2. Ouvidoria-Geral, da qual fazem parte:
-2.1. o Ouvidor-Geral; e
-2.2. 1 (uma) Secretaria;
-3. Centro de Comunicação Social, do qual fazem parte:
-3.1. Chefia;
-3.2. Subchefia; e
-3.3. Secretaria; e
-4. Controladoria Interna, da qual fazem parte:
-4.1. Controlador-Geral;
-4.2. Controlador Adjunto; e
-4.3. Secretaria;
-e) o Conselho Estratégico; e
-f) a Assessoria Jurídica, composta pelas seguintes unidades:
-1. Chefia;
-2. Coordenação; e
-3. Secretaria; e
-II - a Corregedoria-Geral, composta pelas seguintes unidades:
-a) Corregedor-Geral;
-b) Corregedor-Adjunto;
-c) Secretaria;
-d) Divisão de Eficiência Processual; e
-e) Divisão de Supervisão Disciplinar.
-§ 1º Todos os órgãos de direção, de apoio e de execução do CBMSC contarão com
-corregedoria setorial, cujo responsável será designado pelo respectivo diretor, chefe ou
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 4/37
+Companhias e 10 (dez) Pelotões, a serem ativados conforme o número de turmas; e II – 2 (dois)
+Centros. § 2º As Coordenadorias são grupos de trabalho de caráter consultivo, responsáveis por
+prestar assessoramento técnico-científico ao Subcomando-Geral. § 3º As Juntas de Inspeção de
+Saúde têm por finalidade avaliar a integridade física e psíquica dos inspecionados, emitindo pareceres
+que subsidiem a tomada de decisão sobre direitos solicitados ou situações apresentadas por
+autoridade competente. § 4º O Conselho Estratégico tem como finalidade oferecer aconselhamento
+estratégico e auxiliar o Comandante-Geral, Presidente do Conselho, na tomada de decisões que
+impactam a operacionalização, o desenvolvimento e a organização da Instituição, sendo composto
+pelos seguintes membros: I – Subcomandante-Geral; II – Chefe do Estado-Maior Geral; III –
+Corregedor-Geral; IV – Chefe de Gabinete do Comando-Geral; V – Controlador-Geral; VI – Diretores
+Setoriais; ( Redação revogada pela LC 885, de 2025 ) VII – Comandantes Regionais; e VIII –
+integrantes do CBMSC à disposição de outros órgãos, convocados pelo Presidente do Conselho
+Estratégico. ( Redação dos incisos V, §1º, incisos I, II, §2º, §3º, §4º, incisos I, II, III, IV, V, VI, VII e VIII
+incluída pela LC 885, de 2025 )
+Art. 12. As comissões constituídas no CBMSC dividem-se em: I – comissões permanentes: a)
+Comissão de Promoção de Oficiais; e b) Comissão de Promoção de Praças; e II – comissões não
+permanentes. CAPÍTULO IV DOS ÓRGÃOS DE EXECUÇÃO
+Art. 13. São órgãos de execução do CBMSC:
+Art. 13. São órgãos de execução do CBMSC, responsáveis pela realização das atividades-fim da
+Instituição: ( Redação do caput do
+Art. 13 dada pela LC 885, de 2025 ) I –batalhão, companhia,pelotão e grupo bombeiro militar; I –
+Região, Batalhão, Companhia, Pelotão e Grupo Bombeiro Militar; ( Redação do inciso I dada pela LC
+885, de 2025 ) II – Batalhão Bombeiro Militar de Operações Aéreas; III – Batalhão Bombeiro Militar de
+Comando e Serviços; e IV – Batalhão Bombeiro Militar de Ajuda Humanitária. V – Batalhão Bombeiro
+Militar de Busca e Salvamento. ( Redação do inciso V incluída pela LC 885, de 2025 ) § 1º O nível dos
+órgãos de execução de que trata o inciso I do caputdeste artigo será definido de acordo com os
+requisitos estabelecidos no regulamento desta Lei Complementar. § 2º Os órgãos de execução de que
+trata o inciso I do caput deste artigo são subordinados administrativa e operacionalmente, de forma
+direta, ao comando da respectiva RBM, respeitados os respectivos canais de comando ascendente. §
+3º Os órgãos de execução de que tratam os incisos II e IV do caput deste artigo,cuja área de atuação é
+o Território do Estado, serão subdivididos em frações de nível de companhia, pelotão e grupo,
+subordinando-se diretamente ao Subcomandante-Geral. § 4º O órgão de execução de que trata o
+inciso III do caput deste artigo é subordinado administrativa e operacionalmente, de forma direta, ao
+Subcomandante-Geral. § 2º Os órgãos de execução de que trata o inciso I do caput deste artigo são
+subordinados diretamente ao Subcomandante-Geral, respeitados os respectivos canais de comando
+ascendentes. § 3º Os órgãos de execução de que tratam os incisos II, IV e V do caput deste artigo, cuja
+área de atuação abrange todo o Estado, serão organizados em frações de nível de companhia, pelotão
+e grupo, subordinando-se diretamente ao Subcomandante-Geral. § 4º O órgão de execução de que
+trata o inciso III do caput deste artigo subordina-se, administrativa e operacionalmente, ao Chefe do
+Estado-Maior Geral e será organizado em frações de nível de Companhia e Pelotão. ( Redação dos §§
+2º, 3º e 4º dada pela LC 885, de 2025 ) § 5º Os pelotões poderão se subdividir em grupos. § 6º O órgão
+de execução de que trata o inciso II do caput deste artigo fica sediado na Região Metropolitana da
+Grande Florianópolis, podendo atuar em todo o Território do Estado e, mediante autorização do Chefe
+do Poder Executivo, em todo o Território nacional, em apoio a outros órgãos públicos. § 7º O órgão de
+execução de que trata o inciso IV do caputdeste artigo poderá atuar em todo o Território do Estado,
+quando acionado, formalmente, pelo Subcomandante-Geral do CBMSC. § 8º Os órgãos de execução
+de que tratam os incisos do caput deste artigo são constituídos de um comandante, um
+subcomandante, estado-maior, secretaria e, se necessário, de frações operacionais subordinadas em
+número variável. § 8º Os órgãos de execução de que tratam os incisos do caput deste artigo, com
+
 
 ---
 
 ## Página 5
 
-Comandante dentre os oficiais subordinados, e que estará tecnicamente vinculada à Corregedoria-
-Geral.
-§ 2º A Ouvidoria-Geral é subordinada diretamente ao Comandante-Geral, ficando
-administrativamente vinculada ao Gabinete do Comando-Geral e tecnicamente vinculada à
-Controladoria-Geral do Estado.
-§ 3º O Chefe da Ouvidoria-Geral será designado, dentre os oficiais superiores da ativa
-pertencentes ao QOBM, por ATO do Comandante-Geral.
-§ 4º O Centro de Comunicação Social será subordinado ao Gabinete do Comando-Geral.
-§ 5º A Controladoria Interna é hierárquica e administrativamente subordinada ao Comandante-
-Geral, ficando vinculada administrativamente ao Gabinete do Comando-Geral e tecnicamente
-vinculada à Controladoria-Geral do Estado.
-Art. 9º Os órgãos de direção setorial, nível tático da atividade-meio do CBMSC, compreendem as
-seguintes diretorias:
-I - Diretoria de Pessoal, da qual fazem parte:
-a) Secretaria;
-b) Divisão de Recursos Humanos;
-c) Divisão de Seleção, Inclusão e Estudo de Pessoal; e
-d) Divisão de Saúde Ocupacional e Promoção Social;
-e) Divisão de Educação Física; e
-f) Divisão de Segurança do Trabalho.
-II - Diretoria de Instrução e Ensino, da qual fazem parte:
-a) Secretaria;
-b) Divisão de Ensino Básico e Complementar;
-c) Divisão de Controle e Avaliação de Ensino;
-d) Divisão de Educação a Distância; e
-e) Centro de Educação e Formação de Condutores.
-III - Diretoria de Urgência e Emergência, da qual fazem parte:
-a) Secretaria;
-b) Divisão de Normatização e Protocolos;
-c) Divisão de Educação Permanente; e
-d) Divisão de Apoio Operacional.
-IV - Diretoria de Logística e Finanças, da qual fazem parte:
-a) Secretaria;
-b) Divisão de Finanças;
-c) Divisão de Logística; e
-d) Divisão de Tecnologia da Informação e Comunicação.
-V - Diretoria de Segurança Contra Incêndio, da qual fazem parte:
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 5/37
+exceção das Regiões Bombeiro Militar (RBMs), serão constituídos por 1 (um) Comandante, 1 (um)
+Subcomandante, 1 (um) Estado-Maior, 1 (uma) secretaria e, quando necessário, frações operacionais
+subordinadas em número variável. ( Redação § 8º dada pela LC 885, de 2025 ) § 9º O órgão de
+execução de que trata o inciso IV do caput deste artigo é composto de uma estrutura mobilizável. § 10.
+Compreendem as RBMs, órgãos de execução e de nível tático da atividade-fim do CBMSC,
+comandadas por coronéis da ativa pertencentes ao QOEMBM, subordinadas diretamente ao
+Subcomandante-Geral e vinculadas aos órgãos de direção setorial nos assuntos de suas
+competências: I – a 1ª Região Bombeiro Militar; II – a 2ª Região Bombeiro Militar; III – a 3ª Região
+Bombeiro Militar; IV – a 4ª Região Bombeiro Militar; e V – a 5ª Região Bombeiro Militar. ( Redação do
+§10º, incisos I, II, III, IV e V incluída pela LC 885, de 2025 )
+Art. 13-A. As RBMs exercem as ações de coordenação, controle e fiscalização administrativa e
+operacional sobre os órgãos de execução e demais elementos subordinados. § 1º Cada RBM será
+estruturada em: I – Comando; II – Ajudância; III – Batalhão de Comando e Serviços (BCSv); IV –
+Corregedoria Setorial; e V – Ouvidoria Setorial. § 2º O BCSv será ativado por ato do
+Comandante-Geral nas áreas nas quais estiver presente 1 (um) Centro de Operações do Corpo de
+Bombeiros Militar (COBOM) regional. § 3º Competem ao COBOM, órgão de apoio da RBM, o
+atendimento de chamadas de emergência e o despacho de guarnições de área para o atendimento de
+ocorrências. § 4º Quando ativado, o BCSv terá seu Comandante acumulando as funções de Ajudância,
+Corregedoria Setorial e Ouvidoria Setorial da RBM. ( Redação do
+Art. 13-A incluída pela LC 885, de 2025 )
+Art. 14. Os batalhões poderão conter em sua estrutura as seguintes frações operacionais, além das
+constantes do § 8º do art. 13 desta Lei Complementar: I – companhia e pelotão de segurança contra
+incêndio e pânico; II – companhia e pelotão de comando e serviços; e III – companhia e pelotão de
+busca e salvamento. ( Redação revogada pela LC 885, de 2025 )
+Art. 15. A atuação das companhias e dos pelotões de segurança contra incêndio e pânico ficará
+vinculada aos atos normativos expedidos pelo Comando-Geral e aos pareceres técnicos do órgão de
+direção setorial estruturado na área de segurança contra incêndio e pânico. TÍTULO III DAS
+COMPETÊNCIAS DOS ÓRGÃOS DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE SANTA
+CATARINA CAPÍTULO I DAS COMPETÊNCIAS DOS ÓRGÃOS DE DIREÇÃO Seção I Das
+Disposições Comuns aos Órgãos de Direção
+Art. 16. Os órgãos de direção incumbem-se do planejamento do CBMSC, visando à organização,
+àsnecessidades de pessoal e material e ao emprego da Corporação para o cumprimento de suas
+missões. Parágrafo único. Cabe aos órgãos de direção coordenar, controlar e fiscalizar a atuação dos
+órgãos de apoio e de execução. Seção II Das Competências dos Órgãos de Direção Geral Subseção I
+Das Competências do Comando-Geral e de seus Órgãos
+Art. 17. O Comando-Geralé chefiado pelo Comandante-Geral,que será nomeado, dentre os coronéis
+da ativa pertencentes ao Quadro de Oficiais Bombeiros Militares (QOBM),por ato do Chefe do Poder
+Executivo.
+Art. 18. O Comandante-Geral é responsável pelo comando, pela administração e pelo emprego do
+CBMSC e éauxiliado pelos órgãos de direção e de apoio, podendo delegar as atribuições que não lhe
+são exclusivas.
+Art. 18. O Comandante-Geral é responsável pelo comando, pela administração e pelo emprego do
+CBMSC, sendo auxiliado pelos órgãos de direção, apoio, assessoramento, execução e correição,
+podendo delegar as atribuições que não lhe são exclusivas. ( Redação do caput do
+Art. 18 dada pela LC 885, de 2025 ) § 1º O Comandante-Geral possui precedência hierárquica sobre
+todos os bombeiros militares do Estado. § 2º O Comandante-Geral exercerá a presidência da
+Comissão de Promoção de Oficiais. § 3º O Comandante-Geral possui competência para instaurar
+
 
 ---
 
 ## Página 6
 
-a) Secretaria;
-b) Divisão de Normatização;
-c) Divisão de Investigação de Incêndio e Explosão;
-d) Divisão de Pesquisa e Inovação;
-e) Divisão de Engenharia Contra Incêndio; e
-f) Divisão de Fiscalização, Auditoria e Coordenação.
-§ 1º Os órgãos de direção setorial são diretamente subordinados ao Chefe do Estado-Maior
-Geral.
-§ 2º As diretorias serão chefiadas por 1 (um) Diretor e contarão também com 1 (um) Subdiretor.
-§ 3º As diretorias de Saúde e Promoção Social, Planejamento e Gestão Estratégica e
-Tecnologia da Informação e Comunicação, diretorias estas previstas na LEI Complementar nº 724,
-de 2018, serão criadas posteriormente através de DECRETO do Governador do Estado.
-Art. 10. Os órgãos de direção operacional, nível tático da atividade-fim do CBMSC, compreendem
-as seguintes Regiões Bombeiro Militar (RBM):
-I - 1ª RBM, composta pelos seguintes Batalhões Bombeiro Militar (BBM): 1º BBM, 3º BBM, 4º
-BBM, 7º BBM, 8º BBM, 10º BBM e 13º BBM;
-II - 2ª RBM, composta pelos seguintes BBM: 2º BBM, 5º BBM, 9º BBM e 15º BBM;
-III - 3ª RBM, composta pelos seguintes BBM: 6º BBM, 11º BBM, 12º BBM e 14º BBM.
-Parágrafo único. Cada RBM é estruturada em:
-I - Comando; e
-II - Ajudância.
-Art. 11. Toda a RBM será comandada por Oficial do último posto do Quadro de Oficiais Bombeiros
-Militar (QOBM).
-Parágrafo único. As RBMs, órgãos de direção operacional, são diretamente subordinados ao
-Subcomandante-Geral.
-Art. 12. Os órgãos de apoio do CBMSC compreendem:
-I - Centro de Ensino Bombeiro Militar (CEBM), estruturado como BBM, do qual fazem parte:
-a) Comando do Centro de Ensino Bombeiro Militar, do qual fazem parte:
-1. Comandante;
-2. Subcomandante;
-3. Ajudância;
-4. Comunicação Social;
-5. Pelotão de Comando e Serviços;
-6. Seção de Ensino;
-7. Seção de Pesquisa;
-8. Seção de Extensão;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 6/37
+quaisquer procedimentos investigatórios e processos administrativos relacionados a fatos que
+envolvam os integrantes do CBMSC, bem como para aplicar-lhes as sanções previstas na legislação
+em vigor. § 4º O Ajudante de Ordens é o assistente pessoal do Comandante-Geral e será por este
+designado dentre os oficiais da ativa pertencentes ao QOBM.
+Art. 19. Compete ao Comandante-Geral proferir despachos finais em todos os processos
+administrativos e operacionais que envolvam o efetivo sob seu comando.
+Art. 20. No caso de impedimento ou ausência do Comandante-Geral, será considerado como
+Comandante-Geral em exercício o Subcomandante-Geral e, no impedimento ou na ausência deste, o
+Chefe do Estado-Maior Geral.
+Art. 21. O Subcomandante-Geral é o intermediário do Comandante-Geral no controle das atividades
+operacionais do CBMSC. § 1º O Subcomandante-Geral será nomeado por ato do Chefe do Poder
+Executivo, dentre os coronéis da ativa pertencentes ao QOBM. § 2º O Subcomandante-Geral possui
+precedência hierárquica sobre os demais bombeiros militares do Estado, exceto sobre o
+Comandante-Geral. § 3º O Subcomandante-Geral poderá instaurar procedimentos investigatórios e
+processos administrativos disciplinares, bem como aplicar sanções disciplinares previstas na legislação
+em vigor a todos os que lhe estiverem subordinados. § 4º O Ajudante de Ordens é o assistente pessoal
+do Subcomandante-Geral e será por este designado dentre os oficiais da ativa pertencentes ao QOBM.
+§ 5º São órgãos de apoio vinculados ao Subcomandante-Geral as coordenadorias operacionais. § 6º O
+substituto eventual do Subcomandante-Geral é o Chefe do Estado-Maior Geral. § 7º Compreendem o
+Subcomando-Geral, órgão de direção geral, que atua no nível estratégico: I – o Subcomandante-Geral;
+II – o Gabinete do Subcomando-Geral; e III – o Ajudante de Ordens. ( Redação do §7º e incisos I, II e III
+incluída pela LC 885, de 2025 )
+Art. 22. O Subcomandante-Geral exercerá a presidência da Comissão de Promoção de Praças.
+Art. 23. O Estado-Maior Geral é o órgão de assessoramento do Comando-Geral responsável,por meio
+de suas seções, pelo estudo, planejamento e acompanhamento de todas as atividades do CBMSC,
+além de ser o intermediário do Comandante-Geral no controle das atividades administrativas da
+Corporação.
+Art. 23. Compreendem o Estado-Maior Geral, órgão de assessoramento do Comando-Geral,
+responsável, por meio de suas seções, pelo estudo, planejamento e acompanhamento das atividades
+do CBMSC: I – o Chefe do Estado-Maior Geral; II – o Subchefe do Estado-Maior Geral; III – a
+Secretaria; e IV – as Seções. ( Redação do
+Art. 23 dada pela LC 885, de 2025 )
+Art. 24. Como órgão central de planejamento, gestão e projetos, compete ao Estado-Maior Geral: I –
+assessorar o Comandante-Geral no nível estratégico do CBMSC; II – prestar assistência ao
+Comandante-Geral no desempenho de suas atividades elaborando estudos e projetos e planejando,
+controlando e gerindo planos institucionais; III – elaborar normas, instruções e diretrizes gerais do
+CBMSC, submetê-las à aprovação do Comandante-Geral e fiscalizar a sua execução; IV –
+acompanhar, fiscalizar e orientar os órgãos de direção, apoio e execução no cumprimento de suas
+atribuições; e ( Redação revogada pela LC 885, de 2025 ) V – desenvolver outras atividades
+relacionadas com a direção geral do CBMSC. Parágrafo único. Com a finalidade de auxiliar a execução
+das atribuições de que tratam os incisos do caput deste artigo, os órgãos de direção deverão prestar
+todas e quaisquer informações solicitadas pelas chefias das seções do Estado-Maior Geral.
+Art. 25. O Chefe do Estado-Maior Geral será nomeado, dentre os coronéis da ativa pertencentes ao
+QOBM, por ato do Chefe do Poder Executivo. § 1º O Chefe do Estado-Maior Geral possui precedência
+hierárquica sobre os demais bombeiros militares do Estado, exceto sobre o Comandante-Geral e o
+Subcomandante-Geral. § 2º O Chefe do Estado-Maior Geral poderá instaurar procedimentos
+investigatórios e processos administrativos disciplinares, bem como aplicar sanções disciplinares
+
 
 ---
 
 ## Página 7
 
-9. Seção administrativa;
-10. Conselho Superior;
-11. Conselhos de Cursos;
-12. Comissão Própria de Avaliação;
-13. Corregedoria setorial; e
-14. Ouvidoria setorial;
-b) Academia de Bombeiro Militar, sendo a 1ª Companhia composta por pelotões conforme o
-número de turmas;
-c) Centro de Formação e Aperfeiçoamento de Praças, sendo a 2ª Companhia composta por
-pelotões e grupos conforme o número de turmas;
-d) Centro de Estudos Superiores, sendo a 3ª Companhia;
-e) Centro de Formação de Corpo Temporário, sendo a 4ª Companhia; e
-f) Centros Descentralizados de Formação Especializada, de Pesquisa e Extensão;
-II - Coordenadorias Operacionais:
-a) Coordenadorias Permanentes Operacionais; e
-b) Coordenadorias Permanentes de Atividades Complementares;
-III - Agência Central de Inteligência, da qual fazem parte:
-a) Chefia;
-b) Seção de Inteligência e Contrainteligência; e
-c) Seção de Inteligência Operacional e Prospectiva;
-IV - Assessorias Especiais, compreendendo:
-a) Assessoria Especial de Integração de Serviços Auxiliares, da qual fazem parte:
-1. Chefia;
-2. Secretaria;
-3. Seção de Programas de Serviços Auxiliares; e
-4. Seção de Programas de Responsabilidade Social;
-b) Assessoria Especial de Assuntos Institucionais, da qual fazem parte:
-1. Chefia;
-2. Secretaria; e
-3. Seção de Assuntos Institucionais; e
-c) Assessoria Especial de Inovação, da qual fazem parte:
-1. Chefia;
-2. Secretaria; e
-3. Escritório de Inovação;
-V - Comissões, compreendendo:
-a) Permanentes:
-1. Comissão de Promoção de Oficiais;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 7/37
+previstas na legislação em vigor a todos os que lhe estiverem subordinados.
+Art. 26. Na ausência do Chefe do Estado-Maior Geral, o Subcomandante-Geral exercerá
+cumulativamentea referidachefia.
+Art. 27. À Ajudância-Geral, chefiada por oficial designado, dentre os coronéis da ativa pertencentes ao
+QOBM, por ato do Comandante-Geral, compete exercer a articulação institucional e a coordenação das
+atividades administrativas do Gabinete do Comando-Geral, sem prejuízo de outras atribuições
+previstas na regulamentação desta Lei Complementar. ( Redação revogada pela LC 885, de 2025 )
+Art. 28. A Ouvidoria-Geral, órgão de ligação entre a população e o CBMSC, tem como finalidade
+prestar informações, dar transparência às ações e atividades executadas pelo CBMSC e recomendar
+soluções administrativas, visando ao pronto atendimento das reivindicações a ela encaminhadas,
+competindo-lhe planejar, controlar e executar as atividades do CBMSC relacionadas ao Sistema
+Administrativo de Ouvidoria do Estado, sem prejuízo de outras atribuições previstas na regulamentação
+desta Lei Complementar, além de coordenar tecnicamente e fiscalizar as atividades desenvolvidas
+pelas ouvidorias setoriais do CBMSC. § 1º A Ouvidoria-Geral é hierárquica e administrativamente
+subordinada ao Comandante-Geral e tecnicamente vinculada ao órgão central do Sistema
+Administrativo de Ouvidoria do Estado. § 2º O Chefe da Ouvidoria-Geral será designado, dentre os
+oficiais superiores da ativa pertencentes ao QOBM, por ato do Comandante-Geral. ( Redação revogada
+pela LC 885, de 2025 )
+Art. 29. A Controladoria Interna, chefiada por oficial designado, dentre os coronéis da ativa
+pertencentes ao QOBM, por ato do Comandante-Geral, é hierárquica e administrativamente
+subordinada ao Comandante-Geral e tecnicamente vinculada ao órgão central do Sistema
+Administrativo de Controle Interno do Estado, competindo-lhe, sem prejuízo de outras atribuições
+previstas na regulamentação desta Lei Complementar: I – programar, organizar, orientar, coordenar,
+executar e controlar as atividades relacionadas com o controle interno do CBMSC; II – acompanhar e
+fiscalizar as medidas adotadas pelos gestores para salvaguardar os ativos do CBMSC; III – garantir a
+eficiência nas operações de gestão dos bens do CBMSC; IV – estimular o cumprimento das políticas
+administrativas prescritas pelo órgão central do Sistema Administrativo de Controle Interno do Estado;
+e V – verificar a exatidão e fidelidade dos dados orçamentários, financeiros, operacionais, patrimoniais,
+contábeis e de pessoal e a exação no cumprimento de leis e atos normativos infralegais. ( Redação
+revogada pela LC 885, de 2025 )
+Art. 30. O Conselho Estratégico, composto pelos coronéis da ativa, diretores, comandantes de
+batalhão, Comandante do Centro de Ensino e chefes de seção do Estado-Maior Geral, exerce a função
+de aconselhamento no nível estratégico do CBMSC, sendo secretariado pelo Ajudante-Geral.
+Parágrafo único. As reuniões do Conselho Estratégico serão presididas pelo coronel mais antigo
+presente. ( Redação revogada pela LC 885, de 2025 )
+Art. 31. A Assessoria Jurídica do CBMSC, chefiada por oficialsuperior da ativapertencente ao QOBMe
+designado por ato do Comandante-Geral, tem por finalidade prestar assistência jurídica ao
+Comandante-Geral. § 1º Compete à Assessoria Jurídica, sem prejuízo de outras atribuições previstas
+na regulamentação desta Lei Complementar: I – programar, organizar, orientar, coordenar, executar e
+controlar as atividades relacionadas com os serviços jurídicos, no âmbito do CBMSC, vinculando-se
+tecnicamente à Consultoria Jurídica da SSP e à Procuradoria-Geral do Estado (PGE); II – examinar a
+legalidade dos atos administrativos que lhe forem submetidos à apreciação pelo Comandante-Geral e
+pelo Subcomandante-Geral; e III – participar do processo legislativo de elaboração de anteprojetos de
+lei e decreto relacionados às atividades do CBMSC, vinculando-se tecnicamente à Consultoria Jurídica
+da SSP e à Secretaria de Estado da Casa Civil (SCC). § 2º A Assessoria Jurídica é subordinada
+hierárquica e administrativamente, de forma direta, ao Comandante-Geral. ( Redação revogada pela
+LC 885, de 2025 )
+
 
 ---
 
 ## Página 8
 
-2. Comissão de Promoção de Praças; e
-3. Conselho de Mérito; e
-b) Não permanentes; e
-VI - Juntas de Inspeção de Saúde, compreendendo:
-a) Juntas de caráter permanente; e
-b) Juntas de caráter temporário.
-§ 1º Os Centros Descentralizados de Formação Especializada, de Pesquisa e Extensão serão
-vinculados tecnicamente ao CEBM e subordinados à OBM da circunscrição.
-§ 2º A Comissão de Promoção de Oficiais, presidida pelo Comandante-Geral da Corporação e a
-Comissão de Promoção de Praças, presidida pelo Subcomandante-Geral, são de caráter
-permanente.
-§ 3º As Juntas de Inspeção de Saúde podem ser de caráter permanente ou de caráter
-temporário e são vinculadas à Diretoria de Pessoal.
-§ 4º A Assessoria Especial de Integração de Serviços Auxiliares é subordinada ao
-Subcomandante-Geral, com atuação no nível tático das atividades do CBMSC.
-§ 5º Assessoria Especial de Assuntos Institucionais é subordinada ao Gabinete do
-Comandante-Geral.
-§ 6º Assessoria Especial de Inovação é subordinada ao Gabinete do Comandante-Geral.
-§ 7º A Agência Central de Inteligência é subordinada ao Gabinete do Comandante-Geral e será
-chefiada por Oficial intermediário ou superior do QOBM.
-§ 8º O CEBM é subordinado ao Subcomandante-Geral para fins de mobilização de tropa e
-questões disciplinares, sendo vinculado técnico administrativamente à Diretoria de Instrução e
-Ensino, para fins dos demais trâmites técnico-administrativos ligados às atividades realizadas pelo
-CEBM.
-§ 9º Fica o Comandante-Geral autorizado a desativar temporariamente os órgãos de apoio
-previstos neste artigo em decorrência de restrição orçamentária e financeira ou de necessidade do
-serviço, podendo reativá-los a qualquer momento quando justificado pelo interesse público.
-Art. 13. Os órgãos de execução, os quais realizam a atividade-fim do CBMSC, compreendem a
-seguinte estrutura:
-I - BBM, que é estruturado em:
-a) Comando;
-b) Subcomando;
-c) Estado-Maior, compreendendo:
-1. 1ª Seção (B-1) - Seção de Pessoal;
-2. 2ª Seção (B-2) - Agência Setorial de Inteligência;
-3. 3ª Seção (B-3) - Seção de Planejamento de Operações, Estatística, Ensino e Instrução e
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 8/37
+Art. 32. A regulamentação desta Lei Complementar irá dispor sobre as competências do Gabinete do
+Comando-Geral e do Centro de Comunicação Social. ( Redação revogada pela LC 885, de 2025 )
+Subseção II Das Competências da Corregedoria-Geral ( Redação revogada pela LC 885, de 2025 )
+Art. 33. A Corregedoria-Geral é o órgão responsável pela prevenção, apuração e correição de atos
+ilícitos disciplinares e criminais que possam vir a ocorrer dentro da estrutura do CBMSC, em
+consonância com as atribuições disciplinares e investigatórias dos respectivos escalões de comando. (
+Redação revogada pela LC 885, de 2025 )
+Art. 34. Compete à Corregedoria-Geral planejar, normatizar, coordenar, supervisionar, regular,
+controlar, fiscalizar e acompanhar a conduta profissional e ética dos integrantes do CBMSC
+relacionada à disciplina e hierarquia, bem como elaborar pareceres relacionados à seara disciplinar. (
+Redação revogada pela LC 885, de 2025 )
+Art. 35. A Corregedoria-Geral realizará a coordenação técnica e jurídica, o apoio e a fiscalização das
+atividades desenvolvidas pelas corregedorias setoriais do CBMSC. Parágrafo único. A
+Corregedoria-Geral é estruturada em divisões e centros, a serem especificados na regulamentação
+desta Lei Complementar. ( Redação revogada pela LC 885, de 2025 )
+Art. 36. O Corregedor-Geral possui competência para instaurar procedimentos investigatórios,
+inquéritos policiais militares e processos administrativos disciplinares, ressalvados os de competência
+exclusiva do Governador do Estado e do Comandante-Geral, para apurar atos ilícitos disciplinares e
+criminais envolvendo qualquer integrante do CBMSC, exceto os que envolvam o Comandante-Geral, o
+Subcomandante-Geral ou o Chefe do Estado-Maior Geral, bem como, se for o caso, aplicar as sanções
+disciplinares previstas na legislação em vigor. § 1º O Corregedor-Geral terá precedência hierárquica
+sobre todos os integrantes do CBMSC, exceto sobre as autoridades de que trata o caput deste artigo. §
+2º O Corregedor-Geral poderá, dentro da esfera de sua competência, designar qualquer integrante do
+CBMSC para presidir procedimentos administrativos e inquéritos policiais militares. ( Redação
+revogada pela LC 885, de 2025 )
+Art. 37. O Corregedor-Geral será nomeado, dentre os coronéis da ativa pertencentes ao QOBM, por
+ato do Chefe do Poder Executivo. Parágrafo único. Na ausência das autoridades de que trata o caput
+do art. 36 desta Lei Complementar, o Corregedor-Geral responderá pelo Comando-Geral do CBMSC. (
+Redação revogada pela LC 885, de 2025 ) Seção III Das Competências dos Órgãos de Direção
+Setorial
+Art. 38. As diretorias são os órgãos que exercem a direção setorial do CBMSC, competindo-lhes a
+inovação, o planejamento, a coordenação, a fiscalização, o acompanhamento e o controle das
+atividades relacionadas às suas áreas de atuação, e suas atribuições serão pormenorizadas no
+regulamento desta Lei Complementar.
+Art. 38. As diretorias são os órgãos responsáveis pela direção setorial do CBMSC, competindo-lhes a
+inovação, o planejamento, a coordenação, a fiscalização, o acompanhamento e o controle das
+atividades relacionadas às suas áreas de atuação, cujas atribuições serão detalhadas na
+regulamentação desta Lei Complementar. ( Redação do
+Art. 38 dada pela LC 885, de 2025 ) CAPÍTULO I-A DAS COMPETÊNCIAS DO ÓRGÃO DE
+CORREIÇÃO ( Redação incluída pela LC 885, de 2025 )
+Art. 38-A. A Corregedoria-Geral é o órgão responsável pela prevenção, apuração e correição de atos
+ilícitos disciplinares e criminais que possam vir a ocorrer dentro da estrutura do CBMSC, em
+consonância com as atribuições disciplinares e investigatórias dos respectivos escalões de comando. (
+Redação do
+Art. 38-A incluída pela LC 885, de 2025 )
+
 
 ---
 
 ## Página 9
 
-Programas Comunitários e Projetos Sociais;
-4. 4ª Seção (B-4) - Seção de Planejamento de Logística e Patrimônio; e
-5. 5ª Seção (B-5) - Seção de Comunicação Social;
-d) Secretaria (Ajudância);
-e) Corregedoria setorial; e
-f) Ouvidoria setorial;
-II - BBM de Operações Aéreas é estruturado em:
-a) Comando;
-b) Subcomando;
-c) Estado-Maior, compreendendo:
-1. 1ª Seção (B-1) - Seção de Pessoal;
-2. 2ª Seção (B-2) - Agência Setorial de Inteligência e Segurança Operacional;
-3. 3ª Seção (B-3) - Seção de Operações, Estatística, Ensino e Instrução;
-4. 4ª Seção (B-4) - Seção de Planejamento de Logística e Patrimônio e Centro Técnico de
-Manutenção de Aeronaves;
-5. 5ª Seção (B-5) - Seção de Comunicação Social;
-6. 6ª Seção (B-6) - Seção de Segurança Operacional; e
-7. 7ª Seção (B-7) - Centro Técnico de Manutenção;
-d) Secretaria (Ajudância); e
-e) Corregedoria e ouvidoria setorial;
-III - BBM de Comando e Serviços:
-a) Comando;
-b) Subcomando;
-c) Secretaria (Ajudância); e
-d) Corregedoria e ouvidoria setorial; e
-IV - BBM de Ajuda Humanitária:
-a) Comando; e
-b) Secretaria (Ajudância).
-§ 1º Os órgãos de execução possuem a seguinte denominação e municípios sede:
-I - 1º BBM, em Florianópolis, do qual fazem parte:
-a) 3 Companhias;
-b) 8 Pelotões; e
-c) 5 Grupos.
-II - 2º BBM, em Curitibanos, do qual fazem parte:
-a) 2 Companhias;
-b) 8 Pelotões; e
-c) 22 Grupos.
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 9/37
+Art. 38-B. Compete à Corregedoria-Geral planejar, normatizar, coordenar, supervisionar, regular,
+controlar, fiscalizar e acompanhar a conduta profissional e ética dos integrantes do CBMSC
+relacionada à disciplina e hierarquia, bem como elaborar pareceres relacionados à seara disciplinar. (
+Redação do
+Art. 38-B incluída pela LC 885, de 2025 )
+Art. 38-C. A Corregedoria-Geral realizará a coordenação técnica e jurídica, o apoio e a fiscalização das
+atividades desenvolvidas pelas corregedorias setoriais do CBMSC. Parágrafo único. A
+Corregedoria-Geral é estruturada em divisões e centros, a serem especificados na regulamentação
+desta Lei Complementar. ( Redação do
+Art. 38-C incluída pela LC 885, de 2025 )
+Art. 38-D. O Corregedor-Geral possui competência para instaurar procedimentos investigatórios,
+inquéritos policiais militares e processos administrativos disciplinares, ressalvados os de competência
+exclusiva do Governador do Estado e do Comandante-Geral, para apurar atos ilícitos disciplinares e
+criminais envolvendo qualquer integrante do CBMSC, exceto os que envolvam o Comandante-Geral, o
+Subcomandante-Geral ou o Chefe do Estado-Maior Geral, bem como, se for o caso, aplicar as sanções
+disciplinares previstas na legislação em vigor. § 1º O Corregedor-Geral terá precedência hierárquica
+sobre todos os integrantes do CBMSC, exceto sobre as autoridades de que trata o caput deste artigo. §
+2º O Corregedor-Geral poderá, dentro da esfera de sua competência, designar qualquer integrante do
+CBMSC para presidir procedimentos administrativos e inquéritos policiais militares. ( Redação do
+Art. 38-D incluída pela LC 885, de 2025 )
+Art. 38-E. O Corregedor-Geral será nomeado, dentre os coronéis da ativa pertencentes ao QOEMBM,
+por ato do Governador do Estado. Parágrafo único. Na ausência das autoridades de que trata o caput
+do art. 38-D desta Lei Complementar, o Corregedor-Geral responderá pelo Comando-Geral do
+CBMSC. ( Redação do
+Art. 38-E incluída pela LC 885, de 2025 ) CAPÍTULO I-B DAS COMPETÊNCIAS DOS ÓRGÃOS DE
+ASSESSORAMENTO ( Redação incluída pela LC 885, de 2025 )
+Art. 38-F. À Ajudância-Geral, chefiada por oficial designado, dentre os coronéis da ativa pertencentes
+ao QOEMBM, por ato do Comandante-Geral, compete exercer a articulação institucional e a
+coordenação das atividades administrativas do Gabinete do Comando-Geral, sem prejuízo de outras
+atribuições previstas na regulamentação desta Lei Complementar. ( Redação do
+Art. 38-F incluída pela LC 885, de 2025 )
+Art. 38-G. A Ouvidoria-Geral, órgão de ligação entre a população e o CBMSC, tem como finalidade
+prestar informações, dar transparência às ações e atividades executadas pelo CBMSC e recomendar
+soluções administrativas, visando ao pronto atendimento das reivindicações a ela encaminhadas,
+competindo-lhe planejar, controlar e executar as atividades do CBMSC relacionadas ao Sistema
+Administrativo de Ouvidoria do Estado, sem prejuízo de outras atribuições previstas na regulamentação
+desta Lei Complementar, além de coordenar tecnicamente e fiscalizar as atividades desenvolvidas
+pelas ouvidorias setoriais do CBMSC. § 1º A Ouvidoria-Geral é hierárquica e administrativamente
+subordinada ao Comandante-Geral e tecnicamente vinculada ao órgão central do Sistema
+Administrativo de Ouvidoria do Estado. § 2º O Chefe da Ouvidoria-Geral será designado, dentre os
+oficiais superiores da ativa pertencentes ao QOEMBM, por ato do Comandante-Geral. ( Redação do
+Art. 38-G incluída pela LC 885, de 2025 )
+Art. 38-H. A Controladoria Interna, chefiada por oficial designado, dentre os coronéis da ativa
+pertencentes ao QOEMBM, por ato do Comandante-Geral, é hierárquica e administrativamente
+subordinada ao Comandante-Geral e tecnicamente vinculada ao órgão central do Sistema
+Administrativo de Controle Interno do Estado, competindo-lhe, sem prejuízo de outras atribuições
+
 
 ---
 
 ## Página 10
 
-III - 3º BBM, em Blumenau, do qual fazem parte:
-a) 4 Companhias;
-b) 12 Pelotões; e
-c) 14 Grupos.
-IV - 4º BBM, em Criciúma, do qual fazem parte:
-a) 4 Companhias;
-b) 10 Pelotões; e
-c) 23 Grupos.
-V - 5º BBM, em Lages, do qual fazem parte:
-a) 3 Companhias;
-b) 12 Pelotões; e
-c) 20 Grupos.
-VI - 6º BBM, em Chapecó, do qual fazem parte:
-a) 4 Companhias;
-b) 11 Pelotões; e
-c) 28 Grupos.
-VII - 7º BBM, em Itajaí, do qual fazem parte:
-a) 5 Companhias;
-b) 13 Pelotões; e
-c) 18 Grupos.
-VIII - 8º BBM, em Tubarão, do qual fazem parte:
-a) 3 Companhias;
-b) 8 Pelotões; e
-c) 19 Grupos.
-IX - 9º BBM, em Canoinhas, do qual fazem parte:
-a) 4 Companhias;
-b) 11 Pelotões; e
-c) 12 Grupos.
-X - 10º BBM, em São José, do qual fazem parte:
-a) 3 Companhias;
-b) 9 Pelotões; e
-c) 10 Grupos.
-XI - 11º BBM, em Joaçaba, do qual fazem parte:
-a) 3 Companhias;
-b) 6 Pelotões; e
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 10/37
+previstas na regulamentação desta Lei Complementar: I – programar, organizar, orientar, coordenar,
+executar e controlar as atividades relacionadas com o controle interno do CBMSC; II – acompanhar e
+fiscalizar as medidas adotadas pelos gestores para salvaguardar os ativos do CBMSC; III – garantir a
+eficiência nas operações de gestão dos bens do CBMSC; IV – estimular o cumprimento das políticas
+administrativas prescritas pelo órgão central do Sistema Administrativo de Controle Interno do Estado;
+e V – verificar a exatidão e fidelidade dos dados orçamentários, financeiros, operacionais, patrimoniais,
+contábeis e de pessoal e a exação no cumprimento de leis e atos normativos infralegais. ( Redação do
+Art. 38-H incluída pela LC 885, de 2025 )
+Art. 38-I. A Assessoria Jurídica será exercida, em caráter permanente, por Procurador do Estado. § 1º
+Compete à Assessoria Jurídica, sem prejuízo de outras atribuições previstas na regulamentação desta
+Lei Complementar: I – programar, organizar, orientar, coordenar, executar e controlar as atividades
+relacionadas aos serviços jurídicos, vinculando-se tecnicamente à Procuradoria-Geral do Estado (PGE)
+e à Consultoria Jurídica da Secretaria de Estado da Segurança Pública (SSP); II – examinar a
+legalidade dos atos administrativos que lhe forem submetidos à apreciação; e III – participar do
+processo legislativo relacionado às atividades do CBMSC, no aspecto estritamente jurídico,
+vinculando-se tecnicamente à PGE, à Consultoria Jurídica da SSP e à Secretaria de Estado da Casa
+Civil (SCC). § 2º A Assessoria Jurídica contará com uma Seção de Assistência Jurídica, chefiada por
+Oficial Superior, que prestará assistência e auxílio ao Procurador do Estado. ( Redação do
+Art. 38-I incluída pela LC 885, de 2025 )
+Art. 38-J. O Centro de Comunicação Social é responsável por assessorar diretamente o
+Comandante-Geral, promovendo a construção e manutenção da opinião pública relacionada à
+Instituição, de modo a coordenar, controlar e orientar, em nível estratégico, todas as ações de
+marketing institucional, a fim de preservar e fortalecer a imagem do CBMSC, empregando todos os
+meios disponíveis em prol da credibilidade, da confiança e do prestígio institucionais. Parágrafo único.
+O Centro de Comunicação Social será subordinado, de forma hierárquica e administrativa, diretamente
+ao Gabinete do Comando-Geral. ( Redação do
+Art. 38-J incluída pela LC 885, de 2025 ) Seção IV Das Competências dos Órgãos de Direção
+Operacional ( Redação revogada pela LC 885, de 2025 )
+Art. 39. As RBMs exercem as ações de coordenação, controle e fiscalização administrativa e
+operacional sobre os órgãos de execução e demais elementos subordinados. Parágrafo único. Os
+comandantes das RBMs subordinam-se administrativa e operacionalmente ao Subcomandante-Geral. (
+Redação revogada pela LC 885, de 2025 ) CAPÍTULO II DAS COMPETÊNCIAS DOS ÓRGÃOS DE
+APOIO
+Art. 40. Os órgãos de apoio dão suporte técnico-administrativo e assessoramento ao
+Comandante-Geral, Subcomandante-Geral e Chefe de Estado-Maior Geral, de acordo com as
+competências, a subordinação e a estruturação definidas na forma do disposto nos §§ 1º e 2º do art. 11
+desta Lei Complementar. CAPÍTULO III DAS COMPETÊNCIAS DOS ÓRGÃOS DE EXECUÇÃO
+Art. 41. Os órgãos de execução realizam a atividade-fim do CBMSC, cumprem as missões destinadas
+a ele e executam as ordens e diretrizes emanadas dos órgãos de direção. Parágrafo único. Os órgãos
+de execução têm por base a atuação preventiva,devendo agir em parceria com as sociedades
+organizadas existentes em suas áreas de circunscrição, de maneira a criar programas que fomentem a
+capacitação de membros da sociedade.
+Art. 42. As competências dos órgãos de execução distribuem-se da seguinte forma: I –batalhão,
+companhia,pelotão e grupobombeiromilitar: responsáveis pela preservação da ordem pública e
+garantia da incolumidade das pessoas e do patrimônio; I – região, batalhão, companhia, pelotão e
+grupo bombeiro militar: responsáveis pela preservação da ordem pública e garantia da incolumidade
+das pessoas e do patrimônio; ( Redação do inciso I dada pela LC 885, de 2025 ) II – Batalhão de
+
 
 ---
 
 ## Página 11
 
-c) 17 Grupos.
-XII - 12º BBM, em São Miguel do Oeste, do qual fazem parte:
-a) 3 Companhias;
-b) 8 Pelotões; e
-c) 25 Grupos.
-XIII - 13º BBM, em Balneário Camboriú, do qual fazem parte:
-a) 3 Companhias;
-b) 9 Pelotões; e
-c) 8 Grupos.
-XIV - 14º BBM, em Xanxerê, do qual fazem parte:
-a) 3 Companhias;
-b) 8 Pelotões; e
-c) 29 Grupos.
-XV - 15º BBM, em Rio do Sul, do qual fazem parte:
-a) 2 Companhias;
-b) 5 Pelotões; e
-c) 27 Grupos.
-XVI - Batalhão de Operações Aéreas em Florianópolis, do qual fazem parte:
-a) 4 Companhias; e
-b) 6 Pelotões.
-XVII - BBM de Ajuda Humanitária, em Florianópolis;
-XVIII - BBM de Comando e Serviços em Florianópolis, do qual fazem parte:
-a) 1 Companhia; e
-b) 3 Pelotões.
-§ 2º O BBM de Ajuda Humanitária terá sua organização regulada por meio de PORTARIA
-expedida pelo Comando-Geral do CBMSC.
-§ 3º Fica o Comandante-Geral autorizado a desativar temporariamente os órgãos de execução
-previstos neste artigo em decorrência de restrição orçamentária e financeira ou de necessidade do
-serviço, podendo reativá-los a qualquer momento quando justificado pelo interesse público.
-§ 4º Cabe ao Comandante-Geral definir a articulação, denominação e a sede das Companhias,
-Pelotões e Grupos mencionados neste artigo.
-§ 5º As Agências Setoriais de Inteligência dos Batalhões Bombeiro Militar são vinculadas
-tecnicamente à Agência Central de Inteligência.
-TÍTULO III
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-dis… 11/37
+Operações Aéreas: responsável pela execução das atividades de preservação da ordem pública e de
+busca, salvamento e resgate com o emprego de aeronave; e III – Batalhão de Ajuda Humanitária:
+responsável pela execução das atividades de preservação da incolumidade pública no âmbito da
+defesa civil. IV – Batalhão Bombeiro Militar de Busca e Salvamento: unidade especializada responsável
+pela execução de atividades voltadas à preservação da ordem pública, prevenção de incidentes e
+resposta a emergências relacionadas a buscas, salvamentos e resgates em ambientes aquáticos e
+suas adjacências, abrangendo áreas marítimas, balneárias, lacustres e fluviais. ( Redação do inciso IV
+incluída pela LC 885, de 2025 ) TÍTULO IV DO PESSOALE DO EFETIVO DO CORPO DE
+BOMBEIROS MILITAR DO ESTADO DE SANTA CATARINA CAPÍTULO I DO PESSOAL
+Art. 43. O pessoal do CBMSC compõe-se de: I – pessoal da ativa, que compreende: a) a carreira dos
+oficiais, cujos quadros são: 1. Quadro de Oficiais Bombeiros Militares (QOBM); e 2. Quadro de Oficiais
+de Saúde Bombeiros Militares (QOSBM); e b) a carreira dos praças, cujos quadros são: 1. Quadro de
+Praças Bombeiros Militares (QPBM); e 2. Quadro Complementar de Praças Bombeiros
+Militares(QCPBM); e II – pessoal inativo, respeitando-se o nível da carreira, que compreende: a)
+pessoal da reserva remunerada, composto dos oficiais e praças transferidos para a reserva
+remunerada; e b) pessoal reformado, composto dos oficiais e praças reformados. § 1º O aspirante a
+oficial bombeiro militar e o cadete bombeiro militar constituem o Quadro de Praças Especiais do
+CBMSC. § 2º Os integrantes do QOBM terão precedência hierárquica sobre os integrantes dos demais
+quadros, dentro do mesmo posto. § 3º Os integrantes do QOSBM ficarão sujeitos ao mesmo regime e à
+mesma jornada de trabalho dos integrantes do QOBM e deverão atender aos mesmos requisitos
+estabelecidos a estes para progressão na carreira. § 4º O ingresso no QOSBM dar-se-á no posto de
+segundo-tenente, após aprovação em estágio probatório como aspirante a oficial.
+Art. 44. O CBMSC disporá de quadro de pessoal civil para execução de atividades administrativas,
+auxiliares de apoio e de manutenção, nos termos da legislação que fixa o efetivo da Corporação.
+Art. 45. O CBMSC poderá contar com um corpo temporário de inativos e com a prestação de serviço
+auxiliar temporário, em conformidade com a legislação específica. CAPÍTULO II DO EFETIVO
+Art. 46. O efetivo do CBMSC é fixado em lei específica, de iniciativa privativa do Chefe do Poder
+Executivo. § 1º Cabe ao Chefe do Poder Executivo aprovar, por meio de decreto, os Quadros de
+Organização e Distribuição de Efetivo do CBMSC, mediante proposta do Comandante-Geral. § 2º As
+funções privativas não previstas nesta Lei Complementar serão relacionadas nos Quadros de
+Organização e Distribuição de Efetivo. TÍTULO V DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+Art. 47. O Comandante-Geral, na forma da legislação em vigor, poderá requerer a contratação de
+pessoal civil para a execução de atividades de natureza técnica ou especializadae para a prestação de
+serviços gerais.
+Art. 48. Competem ao Chefe do Poder Executivo a designação e a dispensa de militares estaduais
+para funções de comando, direção e chefia no âmbito do CBMSC, podendo delegar essa competência
+ao Comandante-Geral do CBMSC. Parágrafo único. Não se aplica o disposto no caput deste artigo às
+funções que, por força desta Lei Complementar, devem ser ocupadas por militares estaduais
+designados por ato do Comandante-Geral.
+Art. 49. A criação, estruturação, denominação e circunscrição dos órgãos de direção, de apoio e de
+execução do CBMSC serão estabelecidas em decreto do Chefe do Poder Executivo, respeitada a
+estrutura básica prevista nesta Lei Complementar e dentro dos limites de efetivo estabelecidos em lei
+específica.
+Art. 49. A criação, estruturação, denominação e circunscrição dos órgãos de direção, correição,
+assessoramento, apoio e execução do CBMSC serão estabelecidas por decreto do Governador do
+Estado, respeitada a estrutura básica prevista nesta Lei Complementar e observados os limites de
+efetivo definidos em lei específica. ( Redação do caput do
+
 
 ---
 
 ## Página 12
 
-DAS COMPETÊNCIAS BÁSICAS
-CAPÍTULO I
-DOS ÓRGÃOS DE DIREÇÃO
-Seção I
-Dos Órgãos de Direção Geral
-Subseção I
-Do Comando-Geral
-Art. 14. São atribuições exclusivas do Comandante-Geral:
-I - concessão de medalha, condecoração e comenda;
-II - movimentação de Oficial;
-III - desenvolvimento funcional das Praças pela progressão por antiguidade e por merecimento;
-IV - assinatura de convênios com municípios, relativos à prestação de serviços de bombeiro
-militar e outras atividades consideradas por LEI de competência do CBMSC;
-V - agregação e reversão de Praças e Oficiais do CBMSC;
-VI - exclusão do serviço ativo das Praças;
-VII - convocação e dispensa de Oficial da Reserva Remunerada do CBMSC para compor
-Conselho Especial de Justiça ou Conselho de Justificação, ambos encarregados de inquérito
-policial-militar, ou para outros procedimentos administrativos na falta de oficial da ativa em
-situação hierárquica compatível com a do oficial envolvido;
-VIII - assinatura de termos de cooperação técnica e convênios com órgãos cujo objeto seja de
-interesse da Corporação; e
-IX - designação e respectiva dispensa dos servidores inativos ao Corpo Temporário de Inativos
-da Segurança Pública (CTISP), após autorização do Grupo Gestor de Governo (GGG).
-Art. 15. A critério do Comandante-Geral, serão destinadas ao Subcomandante-Geral do CBMSC, ao
-Chefe do Estado-Maior Geral, aos Diretores, aos Comandantes Regionais ou aos Comandantes de
-Organização Bombeiro Militar, observadas as respectivas competências, as seguintes atribuições:
-I - concessão de:
-a) retribuição financeira por função;
-b) movimentação de pessoal;
-c) concessão de licenças previstas em LEI;
-d) averbação de tempo de serviço de militar;
-e) ajuda de custo;
-f) diárias;
-g) férias;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 12/37
+Art. 49 dada pela LC 885, de 2025 ) Parágrafo único. São requisitos para a criação e estruturação dos
+órgãos de que trata o caput deste artigo: I – a indicação precisa dos objetivos a serem atingidos e
+ainexistência de instrumento estrutural disponível; II – a impossibilidade ou inconveniência de
+atribuição de atividades, pelo seu volume ou natureza, à unidade já existente; III – a existência de
+recursos financeiros para custeio; IV – a existência de arrazoado técnico do CBMSC demonstrando o
+campo funcional a ser atendido; e V – na hipótese de implicar aumento de despesa com estrutura
+física, deve haver previsão da despesa na lei orçamentária anual, e, no caso de despesa com pessoal,
+deve haver lei prévia autorizativa.
+Art. 50. A proposta de alteração de efetivo ou nível dos órgãos de execução deve ser encaminhada
+pelo Comandante-Geral, por intermédio do titular da SSP, ao Chefe do Poder Executivo e deve levar
+em consideração a estimativa anual da população dos Municípios brasileiros, divulgada pelo Instituto
+Brasileiro de Geografia e Estatística (IBGE).
+Art. 50. A proposta de alteração de efetivo será encaminhada pelo Comandante-Geral ao Governador
+do Estado e deverá considerar a estimativa anual da população dos Municípios brasileiros, divulgada
+pelo Instituto Brasileiro de Geografia e Estatística (IBGE). ( Redação do
+Art. 50 dada pela LC 885, de 2025 )
+Art. 51. Os órgãos do CBMSC já existentes e os criados por esta Lei Complementar, suas atribuições,
+organização, estrutura, circunscrição e denominação serão detalhados em decreto do Chefe do Poder
+Executivo, a ser expedido no prazo de 90 (noventa) dias a contar da data de publicação desta Lei
+Complementar. Parágrafo único. Os órgãos do CBMSC existentes e ativados até a data de publicação
+desta Lei Complementar permanecerão com suas atribuições, organização, estrutura, circunscrição e
+denominação até a expedição do decreto de que trata o caput deste artigo.
+Art. 51-A. As funções do CBMSC serão exercidas conforme relação de postos e graduações constante
+do Anexo Único desta Lei Complementar. ( Redação do
+Art. 51-A incluída pela LC 885, de 2025 )
+Art. 52. Esta Lei Complementar entra em vigor no prazo de 90 (noventa) dias a contar da data de sua
+publicação. Florianópolis, 18 de julho de 2018. EDUARDO PINHO MOREIRA Governador do Estado
+ANEXO ÚNICO RELAÇÃO DE FUNÇÃO POR POSTO OU GRADUAÇÃO ( Redação dada pela LC
+885, de 2025 ) FUNÇÃO POSTO/GRADUAÇÃO VAGAS Comandante-Geral Coronel 1
+Subcomandante-Geral Coronel 1 Chefe do Estado-Maior Geral Coronel 1 Corregedor-Geral Coronel 1
+Comandante Regional Coronel 5 Diretor Setorial Coronel 6 Controlador-Geral Coronel 1
+Ajudante-Geral Coronel 1 Comandante de Batalhão Bombeiro Militar Tenente-Coronel 26 Chefe de
+Seção do Estado-Maior Geral Tenente-Coronel 7 Subchefe do Estado-Maior Geral Tenente-Coronel 1
+Comandante do Centro de Ensino Bombeiro Militar Tenente-Coronel 1 Corregedor-Adjunto
+Tenente-Coronel ou Major 1 Controlador-Adjunto Tenente-Coronel ou Major 1 Ouvidor-Geral Oficial
+Superior 1 Chefe da Seção de Assistência Jurídica Oficial Superior 1 Chefe de Divisão
+Tenente-Coronel 16 Chefe da Agência Central de Inteligência Oficial Superior ou Intermediário 1 Chefe
+das Assessorias Especiais Oficial Superior ou Intermediário 3 Chefe do Centro de Comunicação Social
+Oficial Superior 1 Subcomandante de Batalhão Bombeiro Militar Major 19 Subcomandante do Centro
+de Ensino Bombeiro Militar Major 1 Comandante de Companhia Bombeiro Militar Capitão ou Major 56
+Comandante de Pelotão Bombeiro Militar Tenente ou Capitão 110 Sargenteante de Batalhão Bombeiro
+Militar Sargento 21 Sargenteante de Companhia Bombeiro Militar Sargento 38 Comandante de Grupo
+Bombeiro Militar 1º Sargento ou Subtenente 275 ( Redação dada pela LC 885, de 2025 )
 
----
-
-## Página 13
-
-h) outros afastamentos temporários;
-i) prorrogação de tempo de serviço às Praças; e
-j) outras vantagens pecuniárias e indenizações previstas em LEI.
-II - designação de professores das diretorias ligadas ao ensino, formação e capacitação
-profissional e respectiva dispensa;
-III - proposição, acompanhamento, fiscalização e assinatura de contratos administrativos,
-termos aditivos e apostilamentos necessários;
-IV - distribuição dos militares e servidores civis nas Organizações do CBMSC de acordo com o
-efetivo legalmente previsto, em razão de modificação dos quadros das Organizações;
-V - nomeação e exoneração de militares para funções previstas em LEI, devendo atender aos
-requisitos de grau hierárquico e qualificação exigida para o seu desempenho; e
-VI - constituição de comissões de licitação de tomada de preço, convite, concorrência, pregão e
-inexigibilidade e dispensa de licitação para aquisição de suprimentos, obras, equipamentos,
-materiais e serviços.
-Art. 16. São atribuições do Subcomandante-Geral:
-I - assessorar o Comandante-Geral no desempenho de suas atribuições;
-II - planejar as operações que importem em uma coordenação ao nível estadual ou que
-envolvam mais de uma RBM, bem como as relativas à participação do CBMSC em solenidades,
-paradas e desfiles militares;
-III - coordenar, controlar e supervisionar as atividades desenvolvidas pelos órgãos de direção
-operacional e pelos órgãos de execução da Corporação;
-IV - coordenar toda a execução do atendimento a eventos críticos; e
-V - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do
-CBMSC, que extrapole os limites da circunscrição de uma RBM.
-Art. 17. São atribuições do Chefe do Estado-Maior Geral:
-I - assessorar o Comandante-Geral no nível estratégico do CBMSC;
-II - prestar assistência ao Comandante-Geral no desempenho de suas atividades, elaborando
-estudos e projetos e planejando, controlando e gerindo planos institucionais;
-III - supervisionar a elaboração e execução de normas, instruções, diretrizes, planos e ordens do
-CBMSC;
-IV - orientar, controlar e supervisionar os órgãos de direção, apoio e execução no cumprimento
-de suas atribuições; e
-V - desenvolver outras atividades relacionadas à direção geral do CBMSC.
-Art. 18. São atribuições do Subchefe do Estado-Maior Geral:
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 13/37
-
----
-
-## Página 14
-
-I - recepcionar, elaborar, controlar e arquivar toda documentação pertinente ao Estado-Maior
-Geral;
-II - estabelecer a organização e tramitação da documentação dos demais órgãos subordinados
-ao Estado-Maior Geral;
-III - desenvolver ou acompanhar a elaboração de projetos de interesse do CBMSC;
-IV - acompanhar e prestar suporte técnico aos projetos afins ao Plano Estratégico do CBMSC; e
-V - desenvolver e acompanhar as ações referentes à identificação e controle tecnológico dos
-processos corporativos do CBMSC.
-Art. 19. São atribuições da Seção de Planejamento de Pessoal, Legislação e Cultura:
-I - elaborar estudos e estabelecer diretrizes sobre a política de pessoal;
-II - manter atualizado os Quadros de Organização, Quadro de Cargos e Funções e Quadro de
-Distribuição do Efetivo;
-III - elaborar estudos e estabelecer diretrizes para concessão de férias e licença especial em
-conjunto com a seção de planejamento de operações, doutrina, estatística, ensino e instrução;
-IV - elaborar estudos e estabelecer diretrizes relativas à seleção, inclusão, promoção,
-classificação, movimentação, nomeação, condecoração, exclusão, substituição e outras referentes
-a pessoal em conjunto com a Diretoria de Pessoal;
-V - elaborar estudos e levantamentos das necessidades de formação, aperfeiçoamento e
-especialização de pessoal em conjunto com as demais seções;
-VI - propor, elaborar e manter organizada a legislação afeta ao CBMSC em conjunto com as
-demais seções;
-VII - estabelecer diretrizes para confecção de planilhas e relatórios para controle de pessoal;
-VIII - emitir pareceres técnicos referentes aos assuntos tratados pelo Estado-Maior Geral; e
-IX - desenvolver estudos e elaborar diretrizes para preservação e fomento da história e cultura
-organizacional.
-Art. 20. São atribuições da Seção de Planejamento de Operações, Doutrina, Estatística, Ensino e
-Instrução:
-I - orientar, coordenar e supervisionar as atividades de ensino, instrução e emprego operacional,
-doutrina e estatística dentro das diretrizes fixadas pelo Comando-Geral;
-II - elaborar e revisar de acordo com as orientações do Comando-Geral:
-a) as diretrizes para a confecção do Plano Geral para ação conjunta com outros órgãos nos
-casos de grandes sinistros; e
-b) as diretrizes e normatizações operacionais e administrativas em conjunto com os órgãos de
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 14/37
-
----
-
-## Página 15
-
-direção setorial e os órgãos de apoio da Corporação.
-III - assessorar o Comando-Geral nos assuntos pertinentes à organização do CBMSC;
-IV - coletar dados que permitam a elaboração de estudos visando a melhoria da eficiência
-operacional da Corporação, com base nos aspectos geográficos, demográficos, econômicos,
-sociais, psicossociais, militares e de Bombeiro Militar;
-V - gerenciar os cursos, treinamentos e estágios oferecidos por instituições externas;
-VI - planejar a atuação do CBMSC ao sistema de Defesa Civil do Estado, em ligação com as
-demais Seções;
-VII - planejar a atuação do CBMSC junto ao sistema único de Segurança Pública, e em ligação
-com as demais Seções; e
-VIII - planejar a atuação do CBMSC quanto a supervisão dos serviços civis auxiliares de
-bombeiros, bem como das atividades dos integrantes dos congêneres públicos ou privados.
-Art. 21. São atribuições da Seção de Planejamento de Logística e Patrimônio:
-I - planejar, orientar, coordenar, controlar e supervisionar as atividades de logística e patrimônio
-na Corporação;
-II - gerenciar em nível estadual a aquisição e distribuição de materiais, equipamentos e viaturas;
-III - orientar e realizar coleta de dados e informações, passando-os através de relatórios e
-estatísticas ao Comando-Geral;
-IV - promover estudos das necessidades da Corporação em apoio logístico e patrimonial;
-V - elaborar diretrizes para consumo de combustível, alimentação, material de expediente e
-outros;
-VI - elaborar as diretrizes que visem à padronização, controle e orientação quanto a aquisição e
-uso de viaturas, embarcações, instalações, materiais e equipamentos sob responsabilidade da
-Corporação;
-VII - elaborar as diretrizes básicas de manutenção preventiva das viaturas, embarcações e
-equipamentos em carga e sob responsabilidade da Corporação;
-VIII - definir a identidade visual da Corporação mantendo atualizada a padronização de bens
-logísticos e patrimoniais, tais como uniformes, viaturas e fachadas de quartéis; e
-IX - manter atualizado o banco de especificações da Corporação.
-Art. 22. São atribuições da Seção de Planejamento Orçamentário:
-I - assessorar o Comando-Geral nos assuntos relativos ao planejamento administrativo e
-orçamentário;
-II - elaborar e monitorar, de acordo com a orientação do Comando-Geral:
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 15/37
-
----
-
-## Página 16
-
-a) o Plano Plurianual e o Orçamento Anual, em função dos objetivos listados e metas
-estabelecidas, dentro do prazo estabelecido; e
-b) o Plano de Ação Administrativa, visando a repartição dos recursos em benefícios dos órgãos
-da Corporação em conjunto com a Seção de Planejamento de Logística e Patrimônio do Estado-
-Maior Geral;
-III - coletar dados que permitam a elaboração de estudos, visando ao aperfeiçoamento da
-organização e métodos de administração;
-IV - avaliar a evolução proporcional dos orçamentos do Estado e do CBMSC;
-V - acompanhar a execução orçamentária e propor alteração do orçamento e do Plano de Ação
-Administrativa, tendo em vista os objetivos da Corporação;
-VI - realizar e monitorar pedidos de suplementação de crédito;
-VII - planejar a aplicação de recursos extraorçamentários e controlar a sua execução;
-VIII - manter estreita ligação com as Secretarias de Estado competentes e com a Diretoria de
-Logística e Finanças, no que concerne a elaboração do Plano de Ação Administrativa e da proposta
-orçamentária;
-IX - coletar e consolidar dados que interessam à elaboração da proposta orçamentária;
-X - elaborar as diretrizes relativas às atividades financeiras, submetendo-as à aprovação do
-Comando-Geral;
-XI - analisar e controlar os planos de aplicação dos elementos subordinados, em conjunto com
-a Seção de Planejamento de Logística e Patrimônio; e
-XII - realizar o alinhamento da proposta de orçamento anual orientada com as prioridades do
-plano estratégico da Corporação.
-Art. 23. São atribuições da Seção de Planejamento de Projetos:
-I - assessorar o Comando-Geral na coordenação das atividades voltadas ao relacionamento
-externo do CBMSC;
-II - propor parcerias e oportunidades;
-III - propor, desenvolver, acompanhar e prestar suporte técnico aos projetos de interesse do
-CBMSC, mormente de captação de recursos, primando pela busca de inovação;
-IV - elaborar termos de cooperação, convênios e acordos com outras corporações, entidades de
-ensino superior e órgãos afins, nacionais e internacionais, ao CBMSC, bem como normatizá-los;
-V - acompanhar a execução dos termos de cooperação, convênio e de acordos celebrados,
-produzindo relatórios periódicos e finais, além de apoiar o desenvolvimento dos termos de
-cooperação técnica, científica e cultural, convênios e acordos; e
-VI - promover a interação com organismos e instituições, nacionais e internacionais, de ensino
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 16/37
-
----
-
-## Página 17
-
-superior, bem como fomentar o intercâmbio de alunos, professores e bombeiros militares.
-Art. 24. As Seções do Estado-Maior Geral devem:
-I - manter as informações dos indicadores de desempenho da Corporação devidamente
-atualizadas; e
-II - orientar a constituição e funcionamento das respectivas Seções das Unidades Operacionais.
-Art. 25. O Ajudante de Ordens é o assistente pessoal do Comandante-Geral, do Subcomandante-
-Geral e do Chefe do Estado-Maior Geral e será designado pelo Comandante-Geral entre os Oficiais
-da ativa pertencentes ao QOBM.
-Art. 26. São atribuições do Gabinete do Comando-Geral:
-I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e
-II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das
-atividades administrativas do Gabinete do Comando-Geral.
-Parágrafo único. O Gabinete do Comando-Geral é chefiado pelo Ajudante-Geral.
-Art. 27. A Ajudância-Geral é o órgão de direção que exerce as funções de assistência e
-assessoramento direto ao Comandante-Geral na prática de atos de gestão e nos assuntos que
-extrapolem às atribuições normais e específicas dos demais órgãos de direção.
-§ 1º São atribuições da Ajudância-Geral do CBMSC, sem prejuízo de outras previstas na
-legislação:
-I - desenvolver os trabalhos de secretaria e de documentações inerentes ao Comandante-Geral;
-II - administrar e executar a atividade de protocolo geral da Corporação e propor a normatização
-do serviço para os demais órgãos;
-III - receber e registrar a correspondência oficial, petições, processos, documentos e quaisquer
-expedientes endereçados ao Comando-Geral;
-IV - promover o controle dos atos administrativos assinados pelo Comandante-Geral;
-V - administrar o arquivo geral da Corporação e propor a normatização do serviço para os
-demais órgãos;
-VI - planejar, organizar e dirigir os serviços de segurança interna e externa do Quartel do
-Comando-Geral;
-VII - administrar o serviço geral do Quartel do Comando-Geral; e
-VIII - publicar e distribuir o Boletim do CBMSC.
-§ 2º São atribuições do Ajudante-Geral:
-I - dirigir, supervisionar e coordenar os trabalhos da Ajudância-Geral;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 17/37
-
----
-
-## Página 18
-
-II - elaborar e expedir as normas de funcionamento da Ajudância-Geral;
-III - redigir toda a correspondência, cuja natureza assim o exigir;
-IV - subscrever certidões e papéis análogos;
-V - conferir e autenticar as cópias de documentos existentes no arquivo, mandadas extrair por
-autoridade competente, bem como conferir e assinar as cópias autênticas de documentos da
-Corporação;
-VI - manter em dia e em ordem, o arquivo da documentação da Ajudância-Geral, de acordo com
-as normas em vigor;
-VII - despachar e distribuir correspondência oficial, petições, processos, documentos ou
-quaisquer expedientes endereçados ao Comandante-Geral e que não necessitem intervenção direta
-deste, bem como aqueles que para serem decididos necessitem de parecer ou manifestação prévia
-do correspondente órgão de direção, apoio ou execução;
-VIII - fiscalizar pessoalmente a expedição da correspondência, fazendo registrá-la no protocolo
-em que será passado o competente recibo;
-IX - estabelecer a ligação com os comandos dos elementos subordinados da Corporação e
-demais órgãos públicos, no trato das atividades relacionadas com a sua área de competência;
-X - emitir conceitos e elogios, conceder recompensas, férias, licenças e dispensas do serviço,
-bem como aplicar punições ao pessoal que servir sob as suas ordens, na forma da legislação em
-vigor;
-XI - organizar e manter em dia o livro ou fichário de apresentação de oficiais no Quartel do
-Comando-Geral, providenciando a devida publicação em Boletim do CBMSC;
-XII - providenciar a publicação dos atos, ordens e despachos do Comandante-Geral, bem como
-dos demais atos de interesse da Corporação;
-XIII - colaborar na organização da pauta de audiência do Comandante-Geral, em articulação
-com o Ajudante de Ordens;
-XIV - dirigir a escrituração referente à correspondência, ao arquivo e ao registro das alterações
-dos Oficiais lotados no Comando-Geral, Subcomando-Geral, Estado-Maior Geral, Comunicação
-Social e Assessoria Jurídica;
-XV - publicar e distribuir o Boletim do CBMSC; e
-XVI - exercer outras atividades correlatas ou desempenhar missões especiais temporárias, de
-caráter relevante, conforme for definido por ATO do Comandante-Geral.
-§ 3º O Ajudante-Geral será designado por ATO do Comandante-Geral, dentre os Coronéis da
-ativa pertencentes ao QOBM.
-Art. 28. O Centro de Comunicação Social do CBMSC é responsável por assessorar diretamente o
-Comandante-Geral, promovendo a construção e manutenção da opinião pública relacionada à
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 18/37
-
----
-
-## Página 19
-
-Corporação, de modo a coordenar, controlar, e orientar em nível estratégico, todas as ações de
-marketing institucional, a fim de preservar e fortalecer a imagem do CBMSC, empregando todos os
-meios disponíveis em prol da credibilidade, confiança e prestígio institucionais, tendo as seguintes
-atribuições:
-I - planejar, desenvolver, coordenar e executar as atividades de comunicação social do CBMSC;
-II - assessorar o Comandante-Geral nos aspectos relacionados à imprensa, divulgação
-institucional e conscientização social;
-III - elaborar, de acordo com a orientação do Comando-Geral:
-a) as diretrizes referentes à comunicação social, com base nas instruções do Comando-Geral e
-Governo do Estado; e
-b) o Plano Institucional de Comunicação Social.
-IV - desenvolver e propor políticas de relacionamento da Corporação com órgãos e entidades
-públicas e privadas, com profissionais da Corporação e com a população;
-V - divulgar as atividades desenvolvidas pelo CBMSC por meio dos diversos veículos de
-comunicação social;
-VI - manter o Comandante-Geral informado sobre fatos de interesse do CBMSC, quando
-veiculados pela imprensa;
-VII - regular, planejar, coordenar e executar o cerimonial militar e o cerimonial das atividades
-sociais de interesse do Comando-Geral frequentes e aqueles extraordinários determinados pelo
-Comandante-Geral;
-VIII - promover a imagem institucional e mercadológica do CBMSC nos ambientes sociais e de
-segurança pública;
-IX - possibilitar a elaboração de respostas coordenadas, articuladas, adequadas e oportunas,
-aos questionamentos da sociedade e do cidadão, sobre assuntos de interesse da Instituição;
-X - coordenar as ações dos elementos subordinados em seus relacionamentos com outros
-órgãos de comunicação, que exijam, pela natureza da pauta, articulação interna e participação
-coordenada;
-XI - assessorar e supervisionar o conteúdo de comunicação social no âmbito da Corporação;
-XII - administrar os canais de comunicação oficiais da Corporação e monitorar os canais de
-comunicação em nível dos elementos subordinados; e
-XIII - acompanhar, analisar e informar o Comando-Geral a repercussão na sociedade das mídias
-utilizadas pela Corporação.
-Art. 29. O responsável pela Controladoria Interna será o Controlador-Geral do CBMSC, cargo que
-será ocupado por Oficial designado, dentre os coronéis da ativa pertencentes ao QOBM, por ATO do
-Comandante-Geral.
-§ 1º O Controlador-Geral do CBMSC, auxiliado pelo Controlador-Adjunto, exerce a direção da
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 19/37
-
----
-
-## Página 20
-
-unidade de Controle Interno, sendo o responsável pelas atividades administrativas e
-regulamentares, prevenindo riscos para a gestão no âmbito de suas atribuições e de forma
-articulada com os núcleos técnicos do órgão central do Sistema Administrativo de Controle Interno.
-§ 2º Os integrantes do Controle Interno desempenharão suas atividades com exclusividade e
-isenção, não podendo acumular funções que possam comprometer suas avaliações e participar de
-comissões, inclusive de tomadas de contas especial, licitações, inventários, processos
-administrativos disciplinares, inquéritos penal militar e sindicâncias.
-§ 3º Todos os órgãos que compõem a estrutura operacional e administrativa do CBMSC
-deverão fornecer quaisquer informações solicitadas pela Controladoria Interna, dentro do prazo
-estipulado, inclusive franqueando acesso a todas as áreas, assim como aos documentos, valores,
-registros, livros e sistemas informatizados necessários ao desenvolvimento das atribuições.
-Art. 30. O Conselho Estratégico é um órgão de direção geral do Comando-Geral do CBMSC, tendo
-as seguintes atribuições:
-I - prestar assistência ao Comando-Geral no desempenho das atividades relacionadas com a
-execução do planejamento estratégico da Corporação, auxiliando no processo de tomada de
-decisão;
-II - colaborar na elaboração de planos e ordens do Comando-Geral relacionados com pessoal,
-informações, instrução, operações, ensino, assuntos administrativos, assuntos civis, planejamento
-administrativo, programação e orçamento; e
-III - desenvolver outras atividades de interesse ou determinadas pelo Comando-Geral da
-Corporação.
-Art. 31. A Assessoria Jurídica tem por finalidade a adoção de procedimentos homogêneos e
-integrados, constituída para desempenhar estudos que fogem às atribuições normais e destina-se a
-dar flexibilidade à estrutura do Comando da Corporação, particularmente em assuntos
-especializados de cunho jurídico.
-Art. 32. A Assessoria Jurídica, chefiada por oficial superior da ativa com formação em Direito, tem
-por finalidade prestar assistência jurídica ao Comandante-Geral, cabendo-lhe:
-I - programar, organizar, orientar, coordenar, executar e controlar as atividades relacionadas com
-os serviços jurídicos, no âmbito do CBMSC, vinculando-se tecnicamente à Consultoria Jurídica da
-SSP e à Procuradoria-Geral do Estado (PGE);
-II - examinar a legalidade dos atos administrativos que lhe forem submetidos à apreciação pelo
-Comandante-Geral, Subcomandante-Geral e Chefe do Estado-Maior Geral;
-III - participar do processo legislativo de elaboração de anteprojetos de LEI e DECRETO
-relacionados às atividades do CBMSC;
-IV - coordenar a elaboração de informações em mandados de segurança e habeas corpus do
-Comandante-Geral, do Subcomandante-Geral e do Chefe do Estado-Maior Geral, sendo as
-informações inerentes às demais autoridades coatoras a cargo de suas assessorias ou
-corregedorias setoriais;
-V - requisitar de quaisquer órgãos ou entidades da Corporação, documentos ou informações
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 20/37
-
----
-
-## Página 21
-
-necessários ao exame de matéria jurídica a ele submetida, devendo os consultados atender no
-prazo estipulado pela Assessoria Jurídica; e
-VI - apreciar editais de concurso e processos seletivos de pessoal.
-Subseção II
-Da Corregedoria-Geral
-Art. 33. São atribuições da Corregedoria-Geral:
-I - promover o acompanhamento das apurações de transgressões disciplinares e ilícitos penais
-atribuídos a bombeiros militares, realizadas pelos órgãos de direção, de apoio, e de execução do
-CBMSC, avocando-as quando necessário;
-II - promover integração com os órgãos do Poder Judiciário, Ministério Público, Defensoria
-Pública e corregedorias de outros órgãos, nos temas relacionados a suas atribuições;
-III - baixar normas técnicas em conjunto com Estado-Maior Geral, relativas às atividades de sua
-competência e controlar a sua aplicação;
-IV - gerenciar o sistema de corregedoria do CBMSC;
-V - manter cópia digitalizada dos procedimentos disciplinares e penais que forem instaurados
-no CBMSC;
-VI - efetuar investigações, levantamentos externos ou diligências em conjunto com a Agência
-Central de Inteligência, para proveito das apurações das infrações penais militares e transgressões
-disciplinares e sua autoria, imputada a bombeiros militares;
-VII - elaborar estatísticas relativas às suas atividades; e
-VIII - remeter, com exclusividade, à Justiça Militar, os Inquéritos Policiais Militares, Sindicâncias
-e outros processos que tenham relação com a apuração no âmbito criminal, concernentes a atos
-praticados por integrantes do CBMSC.
-Seção II
-Dos órgãos de Direção Setorial
-Subseção I
-Das Competências da Diretoria de Pessoal
-Art. 34. A Diretoria de Pessoal, órgão de direção setorial, incumbe-se de planejar, coordenar,
-fiscalizar, controlar e executar a política de pessoal da Instituição tendo as seguintes atribuições:
-I - controlar todas as atividades relacionadas com a vida funcional do pessoal militar e civil da
-Corporação, mantendo registros individuais;
-II - promover a seleção para o ingresso no CBMSC e para admissão de pessoal civil, bem como
-o serviço de identificação;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 21/37
-
----
-
-## Página 22
-
-III - executar as atividades relativas ao pagamento, alterações e demais encargos relativos ao
-pessoal ativo, inativo, pensionista e civil;
-IV - executar as atividades pertinentes à documentação do pessoal do CBMSC;
-V - desenvolver os planos e baixar as ordens decorrentes das diretrizes da política de pessoal
-da Corporação;
-VI - propor a movimentação de Oficiais ao Comandante-Geral, e a de Praças ao
-Subcomandante-Geral;
-VII - preparar os atos de movimentação, classificação e nomeação de Oficiais;
-VIII - preparar os atos de movimentação, classificação e designação de Praças e Civis;
-IX - manter ligação através do Comandante-Geral com os órgãos do Exército Brasileiro,
-relacionados com o controle do pessoal bombeiro militar;
-X - estudar e instruir os processos administrativos e submetê-los à consideração do Chefe do
-Estado-Maior Geral em que lhe extrapolarem à competência;
-XI - manter o controle do pessoal agregado, excluído e licenciado;
-XII - atualizar a cada promoção os Almanaques de Oficiais, Subtenentes, Sargentos, Cabos e
-Soldados;
-XIII - elaborar a documentação da Comissão de Promoção de Oficiais e Comissão de Promoção
-de Praças;
-XIV - elaborar os processos de concessão de medalhas;
-XV - coordenar e controlar a execução do plano de férias da Corporação;
-XVI - coletar dados e realizar inspeção de caráter setorial, visando à elaboração de estudos e
-propostas de medidas a serem submetidas ao Chefe do Estado-Maior Geral, para a melhoria e
-aperfeiçoamento do sistema de administração de pessoal;
-XVII - elaborar estatísticas e relatórios das atividades da Diretoria;
-XVIII - manter e operacionalizar o funcionamento das comissões permanentes e de mérito;
-XIX - planejar, orientar, coordenar, controlar e fiscalizar as atividades de saúde ocupacional,
-segurança do trabalho, assistência médica, odontológica e psicológica do pessoal do CBMSC e de
-seus dependentes;
-XX - proceder o controle médico-sanitário do pessoal;
-XXI - atender, no que lhe couber, a seleção do pessoal do CBMSC;
-XXII - elaborar e executar programas de medicina preventiva e saúde comunitária;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 22/37
-
----
-
-## Página 23
-
-XXIII - promover a realização de estudos, análises, e pesquisas, visando ao aperfeiçoamento do
-Sistema de Saúde e Assistência Social;
-XXIV - baixar normas técnicas relativas às atividades de sua competência e controlar a sua
-aplicação;
-XXV - tratar dos assuntos de estatística e modernização administrativa, na esfera de suas
-atribuições;
-XXVI - tratar da coordenação, controle, e fiscalização, por meio de inspeções técnico-
-administrativas dos órgãos do Sistema de Saúde e Assistência Social;
-XXVII - propor ao Estado-Maior Geral medidas que visem aprimorar as diretrizes gerais e
-aperfeiçoar a legislação e a Política de Saúde Ocupacional e Segurança do Trabalho e Assistência
-Social;
-XXVIII - estabelecer e manter intercâmbio técnico-científico com entidades afins;
-XXIX - propor a realização de convênios e contratos com entidades médicas ou técnico-
-profissionais, do direito público ou privado, visando à complementação e à racionalização dos
-serviços que lhe são afetos;
-XXX - colaborar na especificação, padronização, catalogação e distribuição do material
-necessário às suas atividades e instruir a sua utilização e manutenção;
-XXXI - elaborar normas, planos, programas, ordens e instruções relacionadas com o Sistema de
-Saúde e Assistência Social;
-XXXII - elaborar e propor ao Estado-Maior Geral os manuais e instruções técnicas;
-XXXIII - realizar as perícias médicas ou médico-legais, psicológicas e físicas, através do corpo
-técnico disponível;
-XXXIV - prover, controlar e fiscalizar as atividades relacionadas à promoção da saúde e
-qualidade de vida, assistência social e religiosa do CBMSC;
-XXXV - acompanhar a vida laboral do BM, avaliando-os sob os parâmetros de saúde,
-condicionamento físico e mental, anualmente;
-XXXVI - avaliar os riscos ocupacionais das atividades laborais do bombeiro militar
-(administrativas e operacionais) definindo ações para mitigá-los;
-XXXVII - realizar as investigações dos acidentes no trabalho definindo as ações necessárias à
-sua prevenção;
-XXXVIII - promover estudos voltados ao desempenho humano, gerando estatísticas;
-XXXIX - planejar, coordenar e supervisionar a educação física no CBMSC, com foco na atividade
-operacional e desempenho humano;
-XL - elaborar normas relativas à educação física corporativa;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 23/37
-
----
-
-## Página 24
-
-XLI - coordenar eventos de natureza desportiva de interesse institucional;
-XLII - encaminhar os inaptos no TAF anual para a atividade-fim, ao devido tratamento e
-acompanhamento de saúde; e
-XLIII - planejar e operacionalizar os testes de aptidão física para inclusões, promoções,
-seleções de cursos internos e externos, e anuais para acompanhamento da saúde dos militares.
-Subseção II
-Das Competências da Diretoria de Instrução e Ensino
-Art. 35. A Diretoria de Instrução e Ensino, órgão de direção setorial do CBMSC, é responsável pela
-inovação, planejamento, coordenação, acompanhamento, fiscalização, controle e avaliação das
-seguintes atividades: formação, aperfeiçoamento, especialização, capacitação, treinamento,
-instrução, pesquisa, extensão e projetos de interesse institucional, com intuito de promover a
-excelência e a evolução sustentada nos processos de ensino, de aprendizagem e de gestão do
-conhecimento na educação corporativa do CBMSC, tendo as seguintes atribuições:
-I - planejar, elaborar, desenvolver, supervisionar, avaliar e revisar as normas das atividades de
-ensino na Corporação;
-II - elaborar, aprovar, regularizar e revisar os cursos e currículos da educação básica e
-complementar no CBMSC;
-III - fomentar o desenvolvimento de novas metodologias e processos de ensino e aprendizagem
-adequados a cada atividade de ensino;
-IV - elaborar, revisar e registrar os materiais didáticos utilizados no CBMSC;
-V - desenvolver projetos de ensino, bem como promover o fomento de convênios entre
-sistemas de ensino congêneres;
-VI - criar e executar processos de aprovação, acompanhamento, controle, encerramento,
-avaliação, auditoria, registro e emissão de certificados das atividades de ensino;
-VII - manter o controle, análise, homologação, inserção e arquivo da formação acadêmica, da
-educação básica e da educação complementar do efetivo da Corporação, desde a inclusão até a
-passagem para a inatividade;
-VIII - organizar os objetivos, metodologias, estratégias, atividades e avaliação da aprendizagem
-da atividade de ensino realizada por meio do ambiente virtual de aprendizagem;
-IX - executar, planejar e gerir os cursos ofertados pelo Centro de Educação e Formação de
-Condutores, bem como outros assuntos ligados à legislação de trânsito;
-X - manter o controle, análise, homologação e inserção das pontuações dos cursos civis e
-militares, bem como de estágios, treinamentos e ciclos de instrução de manutenção, para registro
-nos assentamentos dos militares, desde a inclusão até a passagem para inatividade; e
-XI - o Plano Geral de Ensino.
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 24/37
-
----
-
-## Página 25
-
-Subseção III
-Das Competências da Diretoria de Urgência e Emergência
-Art. 36. A Diretoria de Urgência e Emergência, órgão de direção setorial, incumbe-se de fomentar,
-estudar, analisar, planejar, pesquisar, normatizar, controlar, prestar assessoramento técnico e
-executar projetos estratégicos de atendimento pré-hospitalar e integração com o sistema de saúde,
-tendo as seguintes atribuições:
-I - planejar, orientar, coordenar, controlar e supervisionar as atividades de atendimento pré-
-hospitalar executadas pelo CBMSC em todo território catarinense;
-II - promover a integração com os demais órgãos de Estados que possuem atividades
-relacionadas e interligadas ao serviço de atendimento pré-hospitalar do CBMSC;
-III - promover o intercâmbio com demais estados da Federação e outros países, referentes a
-assuntos correlacionados com as atividades de atendimento pré-hospitalar;
-IV - elaborar e executar programas de controle de qualidade para as atividades de atendimento
-pré-hospitalar do CBMSC;
-V - promover a realização de estudos, análises e pesquisas, visando ao aperfeiçoamento do
-serviço de atendimento pré-hospitalar do CBMSC;
-VI - propor normas técnicas relativas às atividades de sua competência e controlar a sua
-aplicação;
-VII - elaborar estatística com foco na governança e modernização administrativa, na esfera de
-suas atribuições;
-VIII - coordenar, controlar e fiscalizar a execução de contratos ligados a sua esfera de atuação;
-IX - propor ao Estado-Maior Geral medidas que visem o aprimoramento das diretrizes gerais,
-manuais e instruções técnicas de atendimento pré-hospitalar;
-X - estabelecer e manter intercâmbio técnico-científico com entidades afins;
-XI - propor a realização de convênios e contratos com entidades afins às atividades da Diretoria;
-XII - colaborar na especificação, padronização, catalogação e elaboração de normas, planos,
-programas, ordens e instruções relacionadas com o serviço de atendimento pré-hospitalar e demais
-integrações em curso;
-XIII - coordenar a integração do atendimento pré-hospitalar do CBMSC com o SAMU
-catarinense, estadual e municipais.
-Subseção IV
-Das Competências da Diretoria de Logística e Finanças
-Art. 37. A Diretoria de Logística e Finanças, órgão de direção setorial, responsável pelo
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 25/37
-
----
-
-## Página 26
-
-planejamento, coordenação, fiscalização, controle das atividades de logística, de patrimônio, de
-tecnologia da informação e de serviços de comunicação da Corporação, tem as seguintes
-atribuições:
-I - adquirir, transportar, armazenar e distribuir os diversos materiais e suprimentos, bem como
-contratar serviços essenciais;
-II - executar os processos licitatórios da Corporação para a aquisição de produtos e
-contratação de obras e serviços;
-III - nomear as comissões de licitação, pregoeiros e equipes de apoio para atuarem nos
-processos licitatórios;
-IV - elaborar, analisar, acompanhar e arquivar os processos relativos à celebração de convênios;
-V - propor, acompanhar e gerir os contratos administrativos, termos aditivos e apostilamentos;
-VI - assinar, rescindir e aplicar as penalidades administrativas relacionados aos contratos
-administrativos;
-VII - instaurar processos ostensivos a fim de apurar irregularidades verificadas em processos
-licitatórios e contratos administrativos;
-VIII - aplicar sanções administrativas a licitantes e fornecedores inadimplentes;
-IX - contatar os órgãos centrais da administração financeira do Estado, visando a liberação de
-recursos para a execução do programa de trabalho e/ou plano de aplicação;
-X - executar a contabilidade da Corporação;
-XI - confeccionar a prestação de contas concernentes aos processos licitatórios, contratos
-administrativos e convênios executados pela Diretoria;
-XII - cumprir o cronograma de desembolso de recursos financeiros;
-XIII - realizar levantamentos estatísticos das atividades financeiras;
-XIV - representar a Corporação perante as instituições financeiras e congêneres, bem como
-perante os órgãos centrais do governo no que tange à execução orçamentária e gestão financeira
-dos referidos órgãos;
-XV - aplicar e executar os recursos orçamentários e extraorçamentários;
-XVI - auditar os documentos comprobatórios de despesas da Corporação, liquidar e pagar
-fornecedores e prestadores de serviços contratados;
-XVII - realizar inspeções de caráter setorial na área financeira, logística e patrimonial;
-XVIII - emitir normativas internas que visem a padronização de procedimentos administrativos
-para a gestão logística e financeira da Corporação;
-XIX - identificar e manter o controle patrimonial da Corporação;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 26/37
-
----
-
-## Página 27
-
-XX - regularizar perante os órgãos constituídos os bens imóveis da Corporação;
-XXI - fazer a gestão do material bélico da Corporação, bem como realizar os processos de
-autorização para a aquisição, transferência, porte e demais providências afetas ao armamento
-particular dos militares integrantes da Instituição;
-XXII - realizar a gestão e identificação da frota, marítima, aérea e rodoviária;
-XXIII - executar o Plano Diretor de Tecnologia da Informação e Comunicação da Corporação,
-bem como propor atualizações quando necessário;
-XXIV - propor e fiscalizar a política de segurança da informação da Corporação;
-XXV - homologar as soluções de tecnologia da informação e comunicação a serem utilizadas
-pela Corporação;
-XXVI - coordenar atividades relacionadas com análise, programação e administração da base
-de dados da Corporação;
-XXVII - planejar, padronizar e controlar a instalação e manutenção preventiva, corretiva e
-evolutiva de soluções de tecnologia da informação e comunicação;
-XXVIII - efetuar, extraordinariamente, em caso de emergência, a manutenção das soluções de
-tecnologia da informação e comunicação; e
-XXIX - executar atividades relacionadas à pesquisa e desenvolvimento de novas tecnologias
-voltadas às atividades institucionais.
-Subseção V
-Das Competências da Diretoria de Segurança Contra Incêndio
-Art. 38. A Diretoria de Segurança Contra Incêndio, órgão de direção setorial, é responsável por
-inovar, planejar, coordenar, fiscalizar, acompanhar e controlar as atividades relacionadas com:
-I - a normatização em segurança contra incêndio, pânico e desastre;
-II - a análise de projetos e vistorias;
-III - o exercício do Poder de Polícia Administrativa;
-IV - a investigação de incêndio e explosão; e
-V - a pesquisa e desenvolvimento em segurança contra incêndio, pânico e desastre.
-Seção III
-Dos Órgãos de Direção Operacional
-Subseção I
-Das Regiões Bombeiro Militar
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 27/37
-
----
-
-## Página 28
-
-Art. 39. Os Comandos Regionais, órgãos de direção operacional, responsáveis por fiscalizar,
-planejar, controlar, supervisionar e coordenar as atividades das unidades operacionais
-subordinadas, bem como pela gestão da própria sede, têm as seguintes atribuições:
-I - inspecionar periodicamente as Organizações Bombeiro Militar subordinadas;
-II - coordenar, controlar, fiscalizar e apoiar as ações operacionais que ultrapassem a
-circunscrição ou a esfera de competência do comando da unidade operacional subordinada;
-III - supervisionar a gestão de convênios, fundos municipais e instrumentos congêneres no
-âmbito da circunscrição;
-IV - orientar e acompanhar o desempenho administrativo e operacional dos elementos
-subordinados por meio de ações de comando e de ferramentas sistêmicas, visando o
-aprimoramento de resultados, em consonância com o Plano Estratégico do CBMSC;
-V - fiscalizar, na circunscrição da RBM, a gestão das Centrais de Emergências e congêneres;
-VI - emitir ordens administrativas e operacionais visando regular as ações de coordenação,
-controle e fiscalização sobre os órgãos de execução de sua circunscrição;
-VII - instaurar inquéritos, sindicâncias e outros procedimentos administrativos pertinentes à
-manutenção da disciplina no âmbito dos Comandos Regionais;
-VIII - definir o emprego de Força-Tarefa, de acordo com as diretrizes do Comando-Geral do
-CBMSC, no âmbito de sua respectiva circunscrição; e
-IX - autorizar deslocamentos dos seus subordinados a serviço e dentro do território estadual.
-CAPÍTULO II
-DOS ÓRGÃOS DE APOIO
-Seção I
-Do Centro de Ensino Bombeiro Militar
-Art. 40. O CEBM, órgão de apoio do CBMSC, responsável pela formação, aperfeiçoamento e
-especialização do efetivo da Corporação, tem como atribuições:
-I - orientar, coordenar e executar as atividades de Ensino Básico do CBMSC;
-II - atender, no que lhe couber, a formação de Ensino Complementar do CBMSC, incluindo a
-capacitação do corpo docente;
-III - baixar normas técnicas relativas às atividades de sua competência e controlar sua
-aplicação;
-IV - estabelecer e manter, por intermédio da Diretoria de Ensino e Instrução, o intercâmbio
-técnico-científico com as Academias Militares, Universidades e Escolas de Governo;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 28/37
-
----
-
-## Página 29
-
-V - propor ao Estado-Maior Geral, através da Diretoria de Instrução e Ensino, medidas que visem
-aprimorar as diretrizes gerais e aperfeiçoar a legislação e a política de instrução e ensino;
-VI - ofertar, no âmbito da Escola de Governo, cursos com currículos aprovados pela Diretoria de
-Ensino e Instrução que visem o aprimoramento profissional dos militares estaduais, bem como para
-servidores públicos e profissionais que se relacionam com as atividades de bombeiro;
-VII - promover as atividades de ensino, pesquisa e extensão no âmbito da Corporação e em
-parceria com outras instituições em conformidade com a legislação em vigor;
-VIII - atender às exigências emanadas pelo Conselho Estadual de Educação no que tange à
-Escola de Governo;
-IX - promover e incentivar as pesquisas técnico-científicas nas áreas de conhecimento
-presentes no Plano de Desenvolvimento Institucional da Escola de Governo; e
-X - apoiar o Comando-Geral da Corporação na condição de reserva tática de pronto emprego
-operacional.
-Seção II
-Das Coordenadorias Operacionais
-Art. 41. As Coordenadorias Operacionais são grupos de trabalho consultivos, que auxiliam
-tecnicamente o Subcomando-Geral, por ocasião do assessoramento técnico-científico em:
-I - elaboração de pareceres e estudos;
-II - propostas de normas técnicas;
-III - elaboração de especificações técnicas; e
-IV - coordenação técnica na área de ensino e pesquisa.
-Parágrafo único. ATO do Comandante-Geral especificará a composição, a extensão e os limites
-de atuação de cada uma das coordenadorias.
-Seção III
-Da Agência Central de Inteligência
-Art. 42. A Agência Central de Inteligência, órgão de apoio do CBMSC, tem por responsabilidade
-planejar, coordenar, executar, fiscalizar, controlar, articular, supervisionar e gerenciar as atividades
-de inteligência e tem as seguintes atribuições:
-I - supervisionar e coordenar, em todo o território do Estado, a atividade de inteligência;
-II - definir bases para o estabelecimento da doutrina da atividade de inteligência;
-III - elaborar os planos de inteligência e de busca;
-IV - produzir conhecimentos necessários às decisões do Comandante-Geral, bem como aos
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 29/37
-
----
-
-## Página 30
-
-estudos e planejamentos em nível de Estado-Maior Geral;
-V - promover e coordenar o intercâmbio de informações entre as Agências Setoriais de
-Inteligência do CBMSC;
-VI - estabelecer o relacionamento e ligações com os órgãos federais e estaduais de
-inteligência, assegurando o intercâmbio de conhecimentos;
-VII - coordenar operações de inteligência em todo território do Estado;
-VIII - promover a formação de uma correta mentalidade de inteligência;
-IX - organizar e manter em dia os arquivos sigilosos, bem como controlar o fluxo de
-documentos sigilosos do CBMSC;
-X - elaborar e controlar a expedição dos boletins reservados do Comando-Geral; e
-XI - outras atribuições correlatas ou que vierem a ser cometidas à Agência Central de
-Inteligência.
-Seção IV
-Das Assessorias Especiais
-Art. 43. As Assessorias Especiais do CBMSC são chefiadas por oficiais do QOBM e têm a seus
-cargos as funções de assistência e assessoramento direto ao Comandante-Geral, nos assuntos que
-escapem às atribuições normais e específicas dos demais órgãos de direção e destinam-se a dar
-flexibilidade à estrutura do Comando-Geral da Corporação, particularmente em assuntos técnicos
-especializados.
-Subseção I
-Da Assessoria Especial de Integração de Serviços Auxiliares
-Art. 44. A Assessoria Especial de Integração de Serviços Auxiliares, órgão de apoio do CBMSC, é
-responsável pela integração dos órgãos de direção setorial, apoio e execução, necessária para a
-formação, aperfeiçoamento e atuação dos integrantes dos serviços auxiliares do CBMSC, bem
-como a coordenação, controle e fiscalização administrativa e operacional dos programas
-comunitários, tem as seguintes atribuições:
-I - articular a integração dos órgãos de direção setorial, apoio e execução, necessária para a
-formação, aperfeiçoamento e atuação dos integrantes dos serviços auxiliares do CBMSC;
-II - planejar, monitorar, controlar e avaliar todos os processos de formação e treinamento dos
-integrantes dos serviços auxiliares do CBMSC;
-III - monitorar o controle realizado pelos órgãos de execução, de todas as atividades
-relacionadas com o exercício do serviço voluntário na Corporação;
-IV - planejar e controlar, de forma integrada com demais órgãos, o emprego operacional e
-concessão de benefícios aos integrantes dos serviços auxiliares do CBMSC;
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 30/37
-
----
-
-## Página 31
-
-V - planejar, monitorar, controlar e avaliar todos os processos desenvolvidos pelos demais
-órgãos relacionados com os programas comunitários;
-VI - auxiliar os órgãos de execução na implementação dos programas, projetos e ações
-comunitárias;
-VII - manter biblioteca atualizada com normas e regulamentos referentes aos programas
-comunitários;
-VIII - manter acessível toda documentação padronizada referente à implementação dos
-programas comunitários;
-IX - controlar a aplicação das normas e regulamentos afetos aos serviços auxiliares e
-programas comunitários;
-X - gerenciar processos para aprovação de editais e planos de ensino dos programas de sua
-responsabilidade, bem como os processos de registro e emissão de certificados das atividades de
-capacitação;
-XI - fazer levantamentos de necessidade de formação do efetivo para gestão e execução das
-atividades relacionadas aos programas comunitários, mantendo atualizada a relação dos gestores
-dos programas comunitários;
-XII - analisar as propostas de projetos institucionais, emitindo parecer para Coordenadoria de
-Programas Comunitários para análise final;
-XIII - coletar e consolidar dados para fins estatísticos;
-XIV - fiscalizar as atividades desenvolvidas pelas OBM na execução dos programas
-comunitários, por meio de inspeções técnico-administrativas;
-XV - identificar necessidade de alteração e/ou ajuste de programas, projetos e ações, de modo
-a promover o alinhamento com os objetivos estratégicos da Corporação;
-XVI - acompanhar os indicadores de desempenho das atividades relacionadas aos programas
-comunitários;
-XVII - divulgar os resultados operacionais e impactos sociais das atividades relacionadas aos
-programas comunitários;
-XVIII - estabelecer a integração com os demais órgãos públicos, no trato das atividades
-relacionadas com a área de competência;
-XIX - manter atualizado e divulgado o portfólio de programas comunitários da Corporação; e
-XX - outras definidas por ATO do Comandante-Geral.
-Parágrafo único. Serviços auxiliares são as atividades desenvolvidas por pessoas físicas ou
-jurídicas, devidamente coordenadas e supervisionadas pelo CBMSC, com o objetivo de proporcionar
-o efetivo cumprimento das missões gerais estabelecidas na legislação vigente.
-Subseção II
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 31/37
-
----
-
-## Página 32
-
-Da Assessoria Especial de Assuntos Institucionais
-Art. 45. A Assessoria Especial de Assuntos Institucionais é órgão de apoio, prestando assessoria
-técnica, coordenação, controle e acompanhamento dos assuntos institucionais em nível federal,
-estadual e municipal que sejam de interesse do Comando-Geral do CBMSC, cabendo a este editar
-ATO que discipline as atividades, as atribuições e a organização.
-Parágrafo único. A Assessoria Especial de Assuntos Institucionais poderá exercer atividades na
-capital federal atuando na articulação junto aos ministérios para captação de recursos e
-acompanhamento de matérias que sejam de interesse da Corporação.
-Subseção III
-Da Assessoria Especial de Inovação
-Art. 46. A Assessoria Especial de Inovação do CBMSC tem como finalidade a pesquisa de novas
-tecnologias, novos procedimentos e equipamentos que possam trazer melhorias nas atividades da
-Corporação no Estado.
-Seção V
-Das Comissões
-Subseção I
-Das Comissões Permanentes
-Art. 47. A Comissão de Promoção de Oficiais e a Comissão de Promoção de Praças são de caráter
-permanente e têm sua organização e funcionamento reguladas por legislação específica.
-Subseção II
-Das Comissões não Permanentes
-Art. 48. As comissões não permanentes terão caráter temporário, sendo constituídas a critério do
-Comandante-Geral, para realizar estudos específicos.
-Seção VI
-Das Juntas de Inspeção de Saúde
-Subseção I
-Das juntas de caráter permanente
-Art. 49. As juntas de inspeção de saúde são órgãos de apoio e têm por finalidade avaliar a
-integridade física e psíquica do inspecionado, a fim de emitir um determinado parecer que auxilie a
-tomada de decisão sobre o direito solicitado ou a situação apresentada por autoridade competente.
-Subseção II
-Das Juntas de Caráter Temporário
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 32/37
-
----
-
-## Página 33
-
-Art. 50. As Juntas de Inspeção de Saúde de Caráter Temporário, podem ser designadas pelo
-Comandante-Geral para exercerem em grupo, funções periciais especificadas no Boletim de
-designação.
-CAPÍTULO III
-DOS ÓRGÃOS DE EXECUÇÃO
-Seção I
-Dos Batalhões Bombeiro Militar
-Art. 51. Os BBMs, órgãos de execução, subordinados às RBMs, são responsáveis por planejar,
-orientar, coordenar, executar, acompanhar, controlar e supervisionar as atividades inerentes às
-missões do CBMSC, em sua circunscrição, têm como atribuições:
-I - realizar os serviços de segurança, prevenção, proteção e combate a incêndios;
-II - realizar os serviços de busca e salvamento de pessoas e bens, por meio de resgates aéreo,
-aquático e terrestre;
-III - realizar o atendimento pré-hospitalar, respeitadas as competências de outros órgãos;
-IV - executar a prevenção balneária por guarda-vidas e a prevenção de acidentes e incêndios na
-orla marítima e fluvial;
-V - analisar previamente os projetos preventivos, acompanhar e fiscalizar sua execução e impor
-sanções administrativas estabelecidas em LEI em:
-a) segurança contra incêndio e pânico em imóveis; e
-b) áreas de risco e de armazenagem, manipulação e transporte de produtos perigosos;
-VI - credenciar e fiscalizar o funcionamento dos serviços civis auxiliares de bombeiros;
-VII - desenvolver atividades relacionadas à educação pública, com foco na criação de uma
-cultura preventiva e reativa na comunidade, abrangendo o rol de atendimentos prestados pela
-Corporação e em conformidade com a política de capacitação do público externo;
-VIII - realizar investigação de incêndio e explosão de áreas sinistradas no limite de sua
-competência;
-IX - atuar de forma integrada com os órgãos de defesa civil; e
-X - outras atividades regularmente previstas, bem como outras necessárias para a consecução
-das atividades da Corporação.
-Parágrafo único. O Subcomandante do Batalhão Bombeiro Militar será o Oficial mais antigo,
-com exceção do respectivo Comandante, e deverá ser lotado na sede do respectivo Batalhão.
-Seção II
-Do Batalhão Bombeiro Militar de Operações Aéreas
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 33/37
-
----
-
-## Página 34
-
-Art. 52. O Batalhão Bombeiro Militar de Operações Aéreas, órgão de execução do CBMSC,
-responsável por planejar, orientar, coordenar, executar, acompanhar, controlar e supervisionar as
-atividades aéreas, tem as seguintes atribuições:
-I - realizar atividades de resgate e transporte aeromédico especializado, combate a incêndios,
-busca e salvamento, atendimento pré-hospitalar, prevenção, proteção ao meio ambiente, defesa
-civil, e apoio aos demais Órgãos do Estado, Municípios e União com a utilização de suas aeronaves;
-II - assessorar o Comando do CBMSC para os assuntos referentes à utilização, aquisição,
-implementação e emprego de aeronaves em todo o território catarinense;
-III - atuar na capacitação e aperfeiçoamento técnico de sua tripulação;
-IV - propor doutrinas e normatizações afetas à área de aviação e segurança operacional no
-CBMSC;
-V - executar cooperação técnica, no âmbito da aviação de segurança pública, com órgãos
-correlatos, firmada pelo Comando-Geral do CBMSC;
-VI - atuar de forma integrada com a Coordenação Aeroespacial do Grupo de Resposta Aérea de
-Urgência do GRAU/SAMU-Santa Catarina, na capacitação e aperfeiçoamento técnico-científico dos
-enfermeiros e médicos de voo; e
-VII - desenvolver e promover o serviço de resgate e transporte aeromédico especializado em
-todo território de Santa Catarina.
-§ 1º O quadro de efetivo do Batalhão Bombeiro Militar de Operações Aéreas será composto por
-Oficiais pilotos, Praças tripulantes operacionais e apoios solo, médicos de voo e enfermeiros de
-voo, devidamente capacitados conforme os respectivos Planos de Ascensão Técnica e aprovados
-pelo Conselho de Voo.
-§ 2º As atividades de Comandante de Aeronave e de Comandante de Operações Aéreas serão
-realizadas exclusivamente por Oficiais pilotos.
-§ 3º O Batalhão Bombeiro Militar de Operações Aéreas será comandado por Oficial da ativa do
-QOBM, preferencialmente piloto.
-Seção III
-Do Batalhão Bombeiro Militar de Comando e Serviços
-Art. 53. O Batalhão Bombeiro Militar de Comando e Serviços é responsável por coordenar os
-serviços internos junto ao Comando-Geral e gerenciar o seu efetivo, tendo as seguintes atribuições:
-I - administrar as estruturas físicas do Quartel do Comando-Geral do CBMSC;
-II - controlar e gerenciar os materiais de expediente e aquisições de materiais correntes e
-permanentes que serão de uso do efetivo do Comando-Geral e cedidos a outros órgãos e diretorias;
-e
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 34/37
-
----
-
-## Página 35
-
-III - controlar e gerenciar o efetivo lotado no Quartel do Comando-Geral e cedidos a outros
-órgãos.
-Seção IV
-Do Batalhão Bombeiro Militar de Ajuda Humanitária
-Art. 54. O Batalhão Bombeiro Militar de Ajuda Humanitária, órgão de execução do CBMSC, de
-estrutura mobilizável, subordinado ao Subcomando-Geral, responsável por planejar, orientar,
-coordenar, executar, acompanhar, controlar e supervisionar as ações de assistência às vítimas de
-desastres ou eventos críticos, tem as seguintes atribuições:
-I - atuar na preparação do CBMSC para execução de ações de socorro, assistência às vítimas e
-reabilitação de comunidades atingidas por desastres ou eventos críticos, em apoio à Defesa Civil no
-atendimento às populações, com o intuito de garantir os meios básicos necessários à sua
-subsistência;
-II - prover serviços de assistência e reabilitação dos cenários, durante ou após um desastre, em
-infraestrutura, meio ambiente e saúde da comunidade atingida por desastre; e
-III - auxiliar as Defesas Civis Federal, Estadual e Municipal e órgãos internacionais, durante e
-após os desastres.
-Parágrafo único. Quando mobilizado pelo Subcomandante-Geral, o Batalhão de Ajuda
-Humanitária será coordenado pelo respectivo Comandante de RBM.
-TÍTULO IV
-DISPOSIÇÕES FINAIS
-Art. 55. Fica o Comandante-Geral do CBMSC autorizado a baixar os atos complementares
-necessários à execução deste DECRETO, desde que não implique em aumento de despesa.
-Art. 56. O Comandante-Geral poderá delegar atribuições que não lhe sejam exclusivas mediante
-PORTARIA publicada no Diário Oficial do Estado.
-Art. 57. Os Diretores dos órgãos de Direção Setorial e os Comandantes das RBMs serão
-designados dentre os Coronéis da ativa pertencentes ao QOBM, por PORTARIA do Comandante-
-Geral.
-Art. 58. O Subdiretor será o Chefe de Divisão mais antigo da respectiva Diretoria.
-Art. 59. O Controlador-Geral e o Ajudante-Geral são equiparados à função de direção.
-Art. 60. Compete ao CBMSC prestar assistência militar aos seguintes órgãos: Governo do Estado,
-Assembleia Legislativa de Santa Catarina, Tribunal de Justiça, Ministério Público, Tribunal de
-Contas do Estado e Procuradoria-Geral do Estado.
-Parágrafo único. Os bombeiros militares à disposição de outros órgãos, conforme descrito no
-caput deste artigo, poderão ficar, no máximo, por dois anos, à disposição destes, podendo haver
-prorrogação, caso haja interesse da Corporação e do órgão cessionário, a pedido deste, mas dando
-preferência ao revezamento com outros bombeiros militares.
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 35/37
-
----
-
-## Página 36
-
-Art. 61. Os integrantes da reserva remunerada (força veterana) poderão ser convocados por ATO
-do Governador do Estado, no caso dos Oficiais, e por ATO do Comandante-Geral do CBMSC, no caso
-das Praças, para atuarem por tempo determinado em situações de ajuda humanitária, grave
-perturbação da ordem ou situações de interesse bombeiro militar.
-Art. 62. As funções privativas por posto ou graduação, ficam estabelecidas no Anexo Único do
-presente DECRETO.
-Art. 63. Até 31 de dezembro de 2021 é vedado ao Comandante-Geral do CBMSC baixar qualquer
-ATO que importe em aumento de despesa com pessoal, em consonância com a LEI Federal nº 173,
-de 27 de maio de 2020.
-Art. 64. As inovações previstas neste DECRETO, que provoquem aumento de despesa com
-pessoal, produzirão efeitos a contar de 1º de janeiro de 2022, em consonância com a LEI Federal nº
-173, de 2020.
-Art. 65. Este DECRETO entra em vigor na data de sua publicação.
-Florianópolis, 14 de junho de 2021.
-CARLOS MOISÉS DA SILVA
-Governador do Estado
-ERON GIORDANI
-Chefe da Casa Civil
-CHARLES ALEXANDRE VIEIRA
-Presidente do Colegiado Superior de Segurança Pública e Perícia Oficial
-ANEXO ÚNICO
-FUNÇÃO POSTO/GRADUAÇÃO
-Comandante-Geral, Subcomandante-Geral, Chefe do Estado-Maior Geral, Corregedor-Geral, Comandante Regional, Diretor Setorial, Controlador-Geral e
-Ajudante-Geral Coronel
-Comandante de Batalhão Bombeiro Militar, Chefe de Seção do Estado-Maior Geral, Subchefe do Estado-Maior Geral, Chefe de Divisão de Diretoria
-Setorial, Comandante do Centro de Ensino Bombeiro Militar e Corregedor-Adjunto Tenente-Coronel
-Chefe da Assessoria Jurídica e Ouvidor-Geral Oficial Superior
-Chefe da Agência Central de Inteligência, Chefe das Assessorias Especiais e Chefe do Centro de Comunicação Social Oficial Superior ou
-Intermediário
-Subcomandante de Batalhão Bombeiro Militar, Comandante de Companhia Bombeiro Militar e Chefe de Centro Capitão ou Major
-Comandante de Pelotão Bombeiro Militar 1º Tenente ou 2º
-Tenente
-Sargenteante de Batalhão Bombeiro Militar e Sargenteante de Companhia Bombeiro Militar 1º Sargento
-Comandante de Grupo Bombeiro Militar Sargento ou
-Subtenente
- Nota:Este texto não substitui o original publicado no Diário Oficial.
- Data de Publicação no Leis.org:17/06/2021
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 36/37
-
----
-
-## Página 37
-
-26/05/2026, 13:47 Decreto N° 1328/2021 - Leis.org
-https://leis.org/estaduais/sc/santa-catarina/lei/decreto/2021/1328/decreto-n-1328-2021-regulamenta-a-lei-complementar-n-724-de-2018-que-di… 37/37
 
 ---
 

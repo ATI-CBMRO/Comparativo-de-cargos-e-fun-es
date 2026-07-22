@@ -33,12 +33,12 @@ REGULAMENTO_DOCS = {
     'al': 'Alagoas - Regimento Interno.md',
     'df': 'Distrito Federal - Regimento Interno.md',
     'go': 'Goiás - Regimento dos Serviços Interno e Operacional.md',
-    'mt': 'Mato Grosso - Regimento Interno.md',
+    'mt': 'Mato Grosso - Regulamento Geral.md',
     'pa': 'Pará - Regimento Interno.md',
     'pr': 'Paraná - Regimento Interno.md',
     'rn': 'Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md',
     'rs': 'Rio Grande do Sul - Regimento Interno.md',
-    'se': 'Sergipe - Regimento Interno.md',
+    'se': 'Sergipe - Regulamento Interno.md',
 }
 
 # Taxonomia de temas (mesma do futuro scripts/regulamento_enrichment.py) — cada tema

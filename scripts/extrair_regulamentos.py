@@ -146,7 +146,7 @@ def caput_e_dispositivos(art_lines):
 
 CONFIG = {
     'mt': {
-        'md': 'Mato Grosso - Regimento Interno.md',
+        'md': 'Mato Grosso - Regulamento Geral.md',
         'src': 'cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. {n}',
         'slice_between': ('TÍTULO I', None),
         'ranges': [
@@ -192,7 +192,7 @@ CONFIG = {
         'overrides': {23: ('disciplina-correicao', 'parcial')},
     },
     'se': {
-        'md': 'Sergipe - Regimento Interno.md',
+        'md': 'Sergipe - Regulamento Interno.md',
         'src': 'cf. CBMSE, RISD (atual. 2022), Art. {n}',
         'slice_between': (None, None),
         # "Capítulo VII: Da Rotina Diária das Unidades" quebra em 2 linhas na conversão

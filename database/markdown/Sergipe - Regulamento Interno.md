@@ -1,6 +1,6 @@
-# Sergipe - Regimento Interno
+# Sergipe - Regulamento Interno
 
-*Documento extraído de: `Sergipe - Regimento Interno.pdf`*
+*Documento extraído de: `Sergipe - Regulamento Interno.pdf`*
 *Total de páginas: 28*
 
 ---

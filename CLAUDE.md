@@ -6,7 +6,7 @@ Guia para o Claude Code neste repositório.
 
 Portal de Legislação dos Corpos de Bombeiros Militares — SPA React/Vite que compara
 legislações (LOB, regimentos internos, organogramas, quadros de efetivo) dos 27 CBMs
-estaduais, com identidade visual do CBMRO (47 documentos legais). Além de comparar, o
+estaduais, com identidade visual do CBMRO (50 documentos legais). Além de comparar, o
 portal ELABORA as minutas do CBMRO (Regimento Interno e Regulamento Geral) a partir
 desse acervo.
 
@@ -272,16 +272,29 @@ produto). Extração: `extrair_ri_alternativas.py` → `ri_alternativas_enrichme
 `test_minuta_alternativas.py`. Curadoria (Fable) em `docs/curadoria/bloco-d-*.md`.
 Lacunas sem correspondência plena: `guarnicao` (matéria de RISD) e `gbm` (homônimo no RS).
 
-## Classificação de tipo de documento (fechado, 2026-07-08/09)
+## Classificação de tipo de documento (fechado 2026-07-08/09; atualizado 2026-07-13)
 
 `parse_doc_type()` (`build_states_data.py`) classifica pelo NOME do arquivo; erros
-confirmados corrigidos via `CONTENT_TYPE_OVERRIDES`: **MT** ("Regimento Interno") é o
-**Regulamento Geral** do CBMMT; **SE** é o **RISD** (regimento de serviços); **SC**
-("Organização Básica") é o Decreto 1.328/2021, que classifica como **Regimento Interno**.
-Campo `typeVerified` por documento (✓ conteúdo / ⚠ só nome): 44 de 47 verificados por
+confirmados corrigidos via `CONTENT_TYPE_OVERRIDES`. Estado atual dos overrides: **SE**
+("Regulamento Interno") é o **RISD** → Regimento de Serviços; **MA** ("Portaria 46",
+Diretriz Operacional do serviço diário) e **PA** ("Regulamento de serviço", Decreto
+1.052/2020) → **Regimento de Serviços**. **MT** teve o PDF renomeado "Regimento Interno" →
+"Regulamento Geral" (rename puro), então parse_doc_type já acerta e o override foi removido.
+**SC** deixou de ser Regimento Interno: o antigo "Organização Básica" era o Decreto
+1.328/2021 (regulamenta a LOB), obtido escaneado; foi substituído pela LOB real — **LC nº
+724/2018** (`Organização Básica`) + **LC nº 885/2025** (`Organização Básica alterações`),
+ambas **LOB**, geradas do texto oficial da ALESC (PDF pesquisável). O decreto foi descartado
+e o override de SC removido.
+
+Campo `typeVerified` por documento (✓ conteúdo / ⚠ só nome): **47 de 50** verificados por
 conteúdo. Fora, de propósito: **PI** (PDF escaneado sem OCR) e **SP** (2 arquivos organizam
 a PM inteira, CBM só como seção — aguardando confirmação do Wândrio). Decisão: não bloquear
 recursos numa auditoria completa; a UI já sinaliza o que foi verificado.
+
+Para ADICIONAR documentos ao acervo use a skill **`ingestar-acervo`** (`.claude/skills/`),
+que padroniza o processo (camada 1): triagem read-only (`scripts/triagem_acervo.py` — gate
+de qualidade da extração + tipo por conteúdo + validação de nome contra `STATE_META`),
+classificação por conteúdo, rebuild completo e handoff das camadas 2/3.
 
 ## Revisão Colaborativa da Minuta (Firebase: login + comentários + IA)
 
