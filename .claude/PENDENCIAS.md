@@ -7,11 +7,11 @@
   de Alagoas 05-08 (sem "Art. N", estruturados por seção numerada — extrator atual incompatível);
   tema `uniformes-apresentacao` (sem achado forte no RISG nas faixas lidas, segue com 1 artigo
   só de SE). Origem: spec 2026-07-21 (Fatias B/C/D).
-- [ ] **Regulamento — Fase 3 (continuação)**: Wândrio validar o formato do piloto no Obsidian
-  (pasta "Regulamento — Curadoria/" no vault) e, aprovado, replicar aos outros 15 temas em
-  rodadas. Depois: mecanismo de "aplicar Decisão CBMRO" nos dados (fora do escopo do piloto).
-  Achados Baixa da revisão final (cosméticos): ruído de cabeçalho de PDF em 2 citações de SE
-  (corrigir no JSON, não no vault, se incomodar); notas de Fonte magras de propósito.
+- [ ] **Regulamento — Fase 3 (próximo)**: Wândrio preencher as 27 "Decisões CBMRO" no vault
+  ("Regulamento — Curadoria/", 16 temas 🟡); depois, sessão de "aplicar Decisões" nos dados
+  do portal (mecanismo a desenhar). Minors registrados p/ rodada futura: padronizar os 2
+  estilos de citação do MT adaptado (ambos transparentes); ruído de cabeçalho de PDF em 2
+  citações de SE (corrigir no JSON se incomodar); notas de Fonte magras de propósito.
 - [ ] **Cenário atual — Subsídio** (`/minuta/subsidio` e `/regulamento/subsidio`): ainda gated no atual. Depende de gerar o `comparativo_minuta` do atual (comparação dispositivo-a-dispositivo com outros estados). Origem: sessão cenários 15-16/07/2026.
 - [ ] Organograma — validar a **classificação por natureza** (Direção/Apoio/Execução) dos órgãos: foi inferida, não veio rotulada da LOB. Origem: sessão organograma 10/07/2026.
 - [ ] Organograma (aba Projeção territorial) — validar o **mapeamento proposto** GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova). Depende da redação final da nova LOB. Origem: 10/07/2026.
