@@ -176,6 +176,7 @@ mexer): `states_data.json`, `organs_detail/` (acervo dos 27), `markdown/`.
 ```bash
 python scripts/build_minuta_structure_atual.py       # RI do atual (por ÓRGÃO) + commandChart
 python scripts/build_regulamento_structure_atual.py  # Regulamento do atual (TEMÁTICO)
+python scripts/build_minuta_comparison_atual.py      # comparativo do atual (SÓ camada automática)
 ```
 - `database/atual/organs_detail/ro.json` — 21 órgãos do CBMRO vigente, curados à mão,
   competências VERBATIM da Lei 2.204/2009. Estrutura **validada pelo organograma oficial**
@@ -202,9 +203,12 @@ mesma filosofia do `reg:` (sem campo novo, sem migração):
 (testados). Sem isso, ids como `organ:cg` colidiriam entre cenários.
 
 **Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (16 temas),
-`/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`. **Ainda gated** (mostram
-"Em construção" via `TrilhaRoute` em `App.jsx`): **Subsídio** (`/minuta/subsidio`,
-`/regulamento/subsidio`) — depende de gerar o `comparativo_minuta` do atual. Specs/planos em
+`/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`, e **Subsídio**
+(`/minuta/subsidio`, `/regulamento/subsidio` — destravados 22/07/2026; o comparativo do
+atual vem de `build_minuta_comparison_atual.py`, SÓ casamento automático por palavra-chave,
+selo "Correspondência automática — sujeita a revisão" na tela; NÃO importa os módulos de
+enriquecimento da futura — ver spec `2026-07-22-subsidio-cenario-atual-design.md`). Rotas de
+compat (`/comparar`, `/minuta/comparar` etc.) seguem gated via `TrilhaRoute`. Specs/planos em
 `docs/superpowers/specs/2026-07-15-cenarios-lob-atual-futura-design.md` e
 `docs/superpowers/plans/2026-07-15-cenarios-lob-fase1.md`.
 
