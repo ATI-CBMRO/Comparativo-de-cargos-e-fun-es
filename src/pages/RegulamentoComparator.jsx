@@ -4,6 +4,7 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { chapterIdOf } from '../lib/minutaTargets.js'
 import { PARTE_HEADERS } from '../lib/regulamentoPartes.js'
 import { useScenario } from '../context/ScenarioContext'
 import { scenarioDbUrl } from '../lib/scenario.js'
@@ -65,17 +66,23 @@ export default function RegulamentoComparator() {
       .filter(p => p.groups.length > 0)
   }, [groups, filter])
 
-  // Artigos do capítulo com numeração LOCAL (Art. 1º, 2º... dentro do capítulo).
+  // Artigos do capítulo com a numeração CONTÍNUA do documento (Parte I → Parte II),
+  // igual ao Wizard: numera a estrutura inteira e filtra o capítulo — o "Art. 37"
+  // exibido aqui é o mesmo "Art. 37" da minuta. Como buildArticles não propaga os
+  // campos extras da folha (match/source/adapted), reanexamos por editId.
+  const allArticles = useMemo(() => (data ? buildArticles(data) : []), [data])
   const articles = useMemo(() => {
     if (!chapter) return []
-    // buildArticles espera um objeto { chapters: [...] } — isolamos o capítulo atual
-    // para obter a numeração reiniciada em 1 dentro dele. Como buildArticles não
-    // propaga os campos extras da folha (match/source/adapted), reanexamos por editId.
     const metaPorEditId = new Map(
       (chapter.articles ?? []).map(l => [l.editId, { match: l.match, source: l.source, adapted: l.adapted }]),
     )
-    return buildArticles({ chapters: [chapter] }).map(a => ({ ...a, ...(metaPorEditId.get(a.editId) ?? {}) }))
-  }, [chapter])
+    // No cenário atual o marcador vive só no editId ("reg:atual:<tema>/..."), enquanto
+    // o id do capítulo segue "reg:<tema>" — normaliza antes de comparar.
+    const semMarcador = (id) => String(id).replace(/^reg:atual:/, 'reg:')
+    return allArticles
+      .filter(a => semMarcador(chapterIdOf(a.editId)) === semMarcador(chapter.id))
+      .map(a => ({ ...a, ...(metaPorEditId.get(a.editId) ?? {}) }))
+  }, [allArticles, chapter])
 
   // Estados disponíveis em alternatives, em ordem alfabética pelo nome.
   const altStates = useMemo(() => {
