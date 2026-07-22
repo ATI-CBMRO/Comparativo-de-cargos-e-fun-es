@@ -24,8 +24,14 @@
   - **PA - Regulamento de serviço** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_pa.py`; PA já tem RI organizacional separado).
   - **MT/SE**: renomeações só corrigiram o rótulo no acervo; já cobertos na trilha de Regulamento (referências de nome de arquivo atualizadas em `regulamento_enrichment.py`/`extrair_regulamentos.py`/`sugerir_equivalencias.py`).
 - [ ] `database/documents_index.json` — artefato órfão (não é lido por nenhum código nem gerado pela pipeline); referencia os nomes antigos de MT/SE. Atualizar ou remover numa faxina futura.
-- [ ] Organograma — validar a **classificação por natureza** (Direção/Apoio/Execução) dos órgãos: foi inferida, não veio rotulada da LOB. Origem: sessão organograma 10/07/2026.
-- [ ] Organograma (aba Projeção territorial) — validar o **mapeamento proposto** GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova). Depende da redação final da nova LOB. Origem: 10/07/2026.
+- [ ] Organograma — **alinhar a classificação por natureza à LEI** (achado 22/07/2026): a
+  premissa de que "a LOB não rotula natureza" caiu — a minuta da nova LOB (Art. 5º-10) traz
+  5 naturezas expressas (Direção Geral/Setorial/Regional, Assessoramento, Apoio, Execução,
+  Correição) e a página usa só 3, com **16 divergências** mapeadas (ex.: DP/DEEI/DPOF/DLOG
+  são Direção Setorial na lei, não "apoio"; DPO/DOE/COT/CRBM são Direção, não "execução";
+  GAB-CG/Ajudância são Apoio na lei). Relatório completo em
+  `.superpowers/sdd/verificacao-natureza-organograma.md`. Decidir com o Wândrio: realinhar
+  a página à lei (fatia própria) ou manter a leitura didática atual com nota explicativa.
 - [ ] Lacuna de dados — extrair **texto verbatim** dos estados que só têm competências (ex.: MT no Comando-Geral). Curadoria por estado/órgão. Origem: reforma Subsídio.
 - [ ] Subsídio — abas Estrutura/LOB seguem **"em breve"** (visíveis em produção); dependem de dados a curar. (Diagramas do Regulamento já destravados em 21/07/2026.)
 
@@ -33,6 +39,12 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Organograma — Projeção territorial VALIDADA pelo Wândrio** (22/07/2026): o de-para
+  GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova) está
+  aprovado como proposta de projeção (sujeito só à redação final da nova LOB).
+- [x] **Organograma oficial da LOB atual inserido no portal** (22/07/2026): no cenário
+  "LOB atual", a página `/organograma` mostra o organograma oficial vigente (imagem +
+  PDF, mesmo arquivo validado em `docs/curadoria/lob-atual-ro/`); cenário futura intocado.
 - [x] **Frente A — resíduos TO/AL/PI resolvidos**: corpo principal de Tocantins (Art. 1-13,16,
   14 art., corte por linha absoluta) e os 4 DOBs de Alagoas 05-08 (37 seções, novo extrator por
   seção numerada) incorporados como ALTERNATIVAS (fonte primária de nenhum tema mudou; 413
