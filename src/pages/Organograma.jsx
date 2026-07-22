@@ -3,6 +3,7 @@
 // classificação por natureza e a projeção territorial são curados aqui (a LOB não
 // nomeia as unidades municipais); ficam neste arquivo para edição posterior.
 import { useState } from 'react'
+import { useScenario } from '../context/ScenarioContext'
 
 /* ---------------- DADOS: órgãos do Comando-Geral (natureza inferida, ajustável) ---------------- */
 const ORGAOS = [
@@ -382,7 +383,42 @@ const VIEWS = [
 
 export default function Organograma() {
   const [view, setView] = useState(0)
+  const { cenario } = useScenario()
   const Current = VIEWS[view].C
+  if (cenario === 'atual') {
+    return (
+      <>
+        <div className="page-header">
+          <div className="page-header-left">
+            <h2 className="page-title">Organograma</h2>
+            <p className="page-subtitle">Estrutura organizacional vigente do CBMRO (Lei nº 2.204/2009) — organograma oficial.</p>
+          </div>
+        </div>
+        <div className="page-body">
+          <div className="orgv">
+            <div className="toptabs">
+              <button type="button" className="toptab active">Organograma oficial (vigente)</button>
+              <a className="toptab" href="/organograma-oficial-cbmro.pdf" target="_blank" rel="noreferrer">Abrir PDF</a>
+            </div>
+            <p className="proto-desc">
+              Organograma oficial da estrutura vigente, com a classificação em Órgãos de
+              Direção, de Apoio e de Execução (Art. 8º da Lei nº 2.204/2009, redação da Lei
+              nº 4.303/2018). Clique na imagem para ampliar.
+            </p>
+            <div className="stage" style={{ overflow: 'auto' }}>
+              <a href="/organograma-oficial-cbmro.png" target="_blank" rel="noreferrer">
+                <img
+                  src="/organograma-oficial-cbmro.png"
+                  alt="Organograma oficial do CBMRO — estrutura vigente (Lei nº 2.204/2009)"
+                  style={{ width: '100%', maxWidth: 900, display: 'block', margin: '0 auto' }}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  }
   return (
     <>
       <div className="page-header">
