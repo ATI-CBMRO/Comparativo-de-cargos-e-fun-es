@@ -74,6 +74,34 @@ def art_number(line):
     return int(m.group(1).replace(' ', ''))
 
 
+# Cabeçalho de SEÇÃO NUMERADA (DOBs de AL: "1 FINALIDADE", "2. OBJETIVO" — sem "Art. N").
+# Distingue de subseções ("3.1 Acesso ao sistema:", "5.1.1 Incêndios") porque estas usam
+# Title Case/minúsculas, enquanto o título de 1º nível vem em CAIXA ALTA a linha inteira.
+RE_SECTION = re.compile(r'^\s*(\d{1,2})\.?\s+([A-ZÀ-Ü][A-ZÀ-Ü0-9À-Ü ,/\-]{1,80})\s*$')
+
+
+def split_sections(lines):
+    """[(numero, titulo, [linhas do corpo])] a partir de cabeçalhos 'N TÍTULO' (maiúsculas).
+    O corpo NÃO inclui a linha do cabeçalho — vira o campo 'heading' à parte."""
+    out, cur_num, cur_title, cur = [], None, None, []
+    for ln in lines:
+        stripped = ln.strip()
+        # Mesmo filtro de ruído/título do split_articles() — paridade com o
+        # _fonte_limpa() de verificar_verbatim.py (senão o verbatim nunca bate).
+        if RE_NOISE.match(ln) or (stripped and RE_TITLE_CAPS.match(stripped)):
+            continue
+        m = RE_SECTION.match(stripped) if stripped else None
+        if m:
+            if cur_num is not None:
+                out.append((cur_num, cur_title, cur))
+            cur_num, cur_title, cur = int(m.group(1)), clean(m.group(2)), []
+        elif cur_num is not None:
+            cur.append(ln)
+    if cur_num is not None:
+        out.append((cur_num, cur_title, cur))
+    return out
+
+
 def split_articles(lines):
     """[(numero, [linhas do artigo]), ...] — do 'Art. N' até o próximo."""
     out, cur_num, cur = [], None, []
@@ -468,6 +496,99 @@ CONFIG = {
         ],
         'overrides': {},
     },
+    # DOBs de AL (sem "Art. N"): estrutura por SEÇÃO NUMERADA "1 FINALIDADE / 2 APLICAÇÃO
+    # ...". Classificação por leitura integral de cada documento (2026-07-22).
+    'al_dob05': {
+        'md': 'Alagoas - Diretriz Operacional 05.md',
+        'src': 'cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção {n}',
+        'sections': True,
+        'ranges': [
+            (1, 1, 'disposicoes-preliminares', 'exata', 'DOB 05 — Finalidade'),
+            (2, 2, 'disposicoes-preliminares', 'exata', 'DOB 05 — Aplicação'),
+            (3, 3, 'servico-interno-dia', 'exata', 'DOB 05 — Condições Gerais (rotina diária do posto)'),
+            (4, 4, 'servico-interno-dia', 'exata', 'DOB 05 — Atividade Diária do Serviço Operacional'),
+            (5, 5, 'atribuicoes-funcoes', 'exata', 'DOB 05 — Recursos Humanos (Cmt PB, Cmt Pront, Cmt SGBM)'),
+            (6, 6, 'servico-interno-dia', 'exata', 'DOB 05 — Viaturas (manutenção e conferência)'),
+            (7, 7, 'servico-interno-dia', 'exata', 'DOB 05 — Equipamentos de Proteção e Segurança'),
+            (8, 8, 'central-operacoes-193', 'exata', 'DOB 05 — Acionamento do Socorro'),
+            (9, 9, 'servico-operacional', 'exata', 'DOB 05 — Tempo Resposta'),
+            (10, 10, 'servico-operacional', 'exata', 'DOB 05 — Apoio Operacional'),
+            (11, 11, 'servico-interno-dia', 'exata', 'DOB 05 — Controle (Relatório de Serviço Diário)'),
+            # Seção 12 (Referências Normativas e Bibliográficas) fica de fora — bibliografia,
+            # sem conteúdo normativo.
+        ],
+        'overrides': {},
+    },
+    'al_dob06': {
+        'md': 'Alagoas - Diretriz Operacional 06.md',
+        'src': 'cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção {n}',
+        'sections': True,
+        # Cabeçalho de página repetido (ESTADO/SECRETARIA/CBMAL + nº da página solto), sem
+        # marcador de fim de linha — sem isto, gruda NO MEIO de frases quebradas por página.
+        'strip_lines': [
+            re.compile(r'^ESTADO DE ALAGOAS$'),
+            re.compile(r'^SECRETARIA DE ESTADO DA SEGURAN[ÇC]A P[ÚU]BLIC[OA]?$'),
+            re.compile(r'^CORPO DE BOMBEIROS MILITAR( DE ALAGOAS)?$'),
+            re.compile(r'^\d{1,3}$'),
+        ],
+        'ranges': [
+            (1, 1, 'disposicoes-preliminares', 'exata', 'DOB 06 — Finalidade'),
+            (2, 2, 'disposicoes-preliminares', 'exata', 'DOB 06 — Objetivo'),
+            (3, 3, 'central-operacoes-193', 'exata', 'DOB 06 — Definições (glossário do 193/CIODS)'),
+            (4, 4, 'central-operacoes-193', 'exata', 'DOB 06 — Aplicação (CIODS e Centros de Operações)'),
+            (5, 5, 'central-operacoes-193', 'exata', 'DOB 06 — Condições Gerais (triagem, indicadores, infraestrutura)'),
+            (6, 6, 'central-operacoes-193', 'exata', 'DOB 06 — Condições Específicas'),
+            (7, 7, 'ensino-instrucao', 'exata', 'DOB 06 — Capacitação Específica (CIODS/COC)'),
+            (8, 8, 'central-operacoes-193', 'exata', 'DOB 06 — Execução da Atividade'),
+            # Seção 9 (Referências) e Anexos A-D (fluxograma, grade, órgãos de apoio, tabela
+            # de despacho) ficam de fora — bibliografia/tabelas sem "Art."/dispositivo textual.
+        ],
+        'overrides': {},
+    },
+    'al_dob07': {
+        'md': 'Alagoas - Diretriz Operacional 07.md',
+        'src': 'cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção {n}',
+        'sections': True,
+        'ranges': [
+            (1, 1, 'disposicoes-preliminares', 'exata', 'DOB 07 — Finalidade'),
+            (2, 2, 'disposicoes-preliminares', 'exata', 'DOB 07 — Objetivos'),
+            (3, 3, 'servico-operacional', 'exata', 'DOB 07 — Definições (serviço com cães)'),
+            (4, 4, 'servico-operacional', 'exata', 'DOB 07 — Condições Gerais (funcionamento dos canis)'),
+            (5, 5, 'atribuicoes-funcoes', 'exata', 'DOB 07 — Coordenações (CGSEC e COSEC)'),
+            (6, 6, 'servico-operacional', 'exata', 'DOB 07 — Serviço de Busca, Resgate e Salvamento com Cães'),
+            (7, 7, 'servico-operacional', 'parcial', 'DOB 07 — Desenvolvimento dos Cães (inclusão, aquisição, baixa)'),
+            (8, 8, 'ensino-instrucao', 'exata', 'DOB 07 — Avaliação, Certificação e Recertificação'),
+            (9, 9, 'disposicoes-finais', 'exata', 'DOB 07 — Prescrições Diversas'),
+            # Seção 10 (Referências) fica de fora — bibliografia, sem conteúdo normativo.
+        ],
+        'overrides': {},
+    },
+    'al_dob08': {
+        'md': 'Alagoas - Diretriz Operacional 08.md',
+        'src': 'cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção {n}',
+        'sections': True,
+        # Cabeçalho de página repetido (nº solto + CBMAL + Boletim + local/data), sem
+        # marcador de fim de linha — gruda no meio de frases quebradas por página.
+        'strip_lines': [
+            re.compile(r'^\d{1,3}$'),
+            re.compile(r'^CORPO DE BOMBEIROS MILITAR DE ALAGOAS$'),
+            re.compile(r'^BOLETIM GERAL OSTENSIVO'),
+            re.compile(r'^MACEI[ÓO]-AL'),
+        ],
+        'ranges': [
+            (1, 1, 'disposicoes-preliminares', 'exata', 'DOB 08 — Finalidade'),
+            (2, 2, 'disposicoes-preliminares', 'exata', 'DOB 08 — Aplicação'),
+            (3, 3, 'atribuicoes-funcoes', 'exata', 'DOB 08 — Definições e Atribuições (Cmt Prontidão a Fiel)'),
+            (4, 4, 'servico-operacional', 'exata', 'DOB 08 — Condições Gerais (subsistemas de salvamento aquático)'),
+            (5, 5, 'servico-operacional', 'exata', 'DOB 08 — Condições Específicas'),
+            (6, 6, 'pessoal-quadros', 'exata', 'DOB 08 — Recursos Humanos (guarda-vidas e mergulhadores)'),
+            (7, 7, 'servico-operacional', 'exata', 'DOB 08 — Recursos Materiais (viaturas e equipamentos)'),
+            (8, 8, 'servico-operacional', 'exata', 'DOB 08 — Serviço de Salvamento Aquático'),
+            (9, 9, 'servico-operacional', 'exata', 'DOB 08 — Serviço de Mergulho'),
+            # "REFERÊNCIAS" ao final não tem numeral próprio — cai fora naturalmente.
+        ],
+        'overrides': {},
+    },
     'risg': {
         'md': 'RISG.md',
         'src': 'cf. Exército Brasileiro, RISG — R-1 (Portaria SGEx nº 51/2003), Art. {n}',
@@ -563,6 +684,30 @@ def extract_line_slices(uf, cfg):
     return enrichment, total
 
 
+def extract_sections(uf, cfg):
+    """DOBs de AL (sem 'Art. N'): unidade = SEÇÃO NUMERADA de 1º nível. 'heading' vem do
+    próprio título da seção (fonte: '{titulo} — Seção {n}'); caput/dispositivos reaproveitam
+    caput_e_dispositivos() (mesma separação por marcador de item usada nos "Art. N")."""
+    lines = slice_lines(load_for(cfg), cfg)
+    enrichment, total = {}, 0
+    for n, titulo, body in split_sections(lines):
+        info = theme_for(cfg, n)
+        if info is None:
+            print(f'  AVISO {uf}: seção {n} ({titulo}) fora de qualquer range — ignorada')
+            continue
+        tema, match, heading = info
+        caput, dispositivos = caput_e_dispositivos(body)
+        if not caput and not dispositivos:
+            print(f'  AVISO {uf}: seção {n} ({titulo}) sem conteúdo — ignorada')
+            continue
+        src = cfg['src'].format(n=n)
+        enrichment.setdefault((tema, uf), []).append(
+            {'heading': heading or f'Seção {n} — {titulo}', 'caput': caput,
+             'dispositivos': dispositivos, 'source': src, 'match': match})
+        total += 1
+    return enrichment, total
+
+
 def extract_pr(uf, cfg):
     lines = load_for(cfg)
     enrichment, total = {}, 0
@@ -625,6 +770,8 @@ def main(ufs):
             enrichment, total = extract_pr(uf, cfg)
         elif 'line_slices' in cfg:
             enrichment, total = extract_line_slices(uf, cfg)
+        elif cfg.get('sections'):
+            enrichment, total = extract_sections(uf, cfg)
         else:
             enrichment, total = extract_ranges(uf, cfg)
         path = emit(uf, enrichment)

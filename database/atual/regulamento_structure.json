@@ -359,6 +359,90 @@
               "match": "exata"
             }
           ]
+        },
+        "al_dob05": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB05",
+          "docLabel": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)",
+          "excerpts": [
+            {
+              "heading": "DOB 05 — Finalidade",
+              "caput": "O Corpo de Bombeiros Militar do Estado de Alagoas atravessa um período de grandes mudanças na área operacional , focando na me lhoria da prestação de serviços e na eficiência no uso dos recursos. A padronização de condutas que envolvam o serviço operacional garante o nivelamento dos Postos de Bombeiros e unicidade de atendimento ao público, sendo esta a principal meta desta diretriz. Neste contexto, a Diretriz Operacional de Bombeiros n.º 05 (DOB 05), Rotina Diária dos Postos de Bombeiros, vem tratar sobre os quesitos necessários para as atividades de bombeiros no serviço operacional do Corpo de Bombeiros Militar d e Alagoas, nos turnos do s erviço de prontidão, desde a rendição até a passagem de serviço, englobando toda a ro tina diária , em conformidade com a Norma Geral Operacional (NGO). Visa ainda suprir a necessidade de uma normatização que reúna o que até então existia na cultura verbal, fixando esta cultura de forma escrita, para que não venham a se perder no tempo. O termo rotina diária refere -se às atividades exercidas pelo efetivo operacional nos Postos de Bombeiro , durante o período de vinte e quatro horas, desde a revista de entrada até a de passagem de serviço.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 1",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 05 — Aplicação",
+              "caput": "Esta DOB aplica -se a todo efetivo operacional do CBMAL, constante nas escalas de serviço e, em determinados momentos, também ao efetivo da escala administrativa, quando estes forem empregados em atividades operacionais.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 2",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob06": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB06",
+          "docLabel": "DOB nº 06 — Acionamento e Controle do Serviço (CBMAL, rev. 2019)",
+          "excerpts": [
+            {
+              "heading": "DOB 06 — Finalidade",
+              "caput": "A presente Diretriz tem por finalidade regulamentar o acionamento e controle do serviço executados pelos Bombeiros Militares que exercem as atividades de Operador de Rádio, Despachante e Atendente 193 do Corpo de Bombeiros Militar de Alagoas, lastreando-se nas diversas bases normativas que referenciam ao assunto.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 1",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 06 — Objetivo",
+              "caput": "Esta Diretriz Operacional de Bombeiros (DOB-06) estabelece critérios para estruturação e execução das atividades referentes ao Acionamento e Controle do Serviço Operacional de Bombeiros, em conformidade com a Norma Geral Operacional (NGO), estabelecendo os requisitos mínimos para o gerenciamento de recursos operacionais, tais como acesso rápido ao serviço, gerenciamento do atendimento de ocorrências, definição de infraestrutura de instalações destinadas aos centros de operações bem como a sua segurança, sistema de comunicações, capacitação profissional específica e planejamento de intervenção tática operacional.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 2",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob07": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB07",
+          "docLabel": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)",
+          "excerpts": [
+            {
+              "heading": "DOB 07 — Finalidade",
+              "caput": "Regular o Serviço com cães realizado pelas Organizações de Bombeiro Militar do CBMAL no território do Estado de Alagoas.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 1",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 07 — Objetivos",
+              "caput": "A presente Diretriz Operacional de Bombeiros (DOB -07) visa o rientar as Organizações de Bombeiro Militar (OBM) do CBMAL quanto aquisição, treinamento, utilização e acionamento de cães no Estado de Alagoas, bem como r eduzir através da implementação e da operacionalização de cães no CBMAL o tempo resposta para a localização de pessoas e/ou restos mortais, soterradas em desastres, submersos em meio aquático, ou ainda perdidas em matas ou locais ermos.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 2",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob08": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB08",
+          "docLabel": "DOB nº 08 — Serviço de Salvamento Aquático e Mergulho (CBMAL, 2022)",
+          "excerpts": [
+            {
+              "heading": "DOB 08 — Finalidade",
+              "caput": "A presente Diretriz Operacional de Bombeiros (DOB -08) tem por finalidade estabelecer critérios técnicos claros, com vistas à regulamentação e padronização das atividades de salvamento aquático e mergulho, que garantam a eficiência e a eficácia do serviço operacional do Corpo de Bombeiros Militar de Alagoas - CBMAL, com base em um sistema organizado que contemple o bombeiro, o equipamento,o atendimento das emergências e permita a análise e potencialização de riscos gerados.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 1",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 08 — Aplicação",
+              "caput": "Aplica-se a todas as Organizações Bombeiro Militar (OBM) do CBMAL que desempenham o Serviço de Salvamento Aquático e Mergulho no território do Estado de Alagoas.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 2",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -14006,6 +14090,45 @@
               "match": "exata"
             }
           ]
+        },
+        "al_dob06": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB06",
+          "docLabel": "DOB nº 06 — Acionamento e Controle do Serviço (CBMAL, rev. 2019)",
+          "excerpts": [
+            {
+              "heading": "DOB 06 — Capacitação Específica (CIODS/COC)",
+              "caput": "Para a movimentação para o CIODS ou COC a praça ou o oficial deverá estar devidamente habilitado a exercer a função por meio de cursos específicos de cada posto ou graduação profissional de bombeiros.",
+              "dispositivos": [
+                "a) Praças – Curso de especialização;",
+                "b) Oficiais – Curso de Formação de Oficiais. Em todos os postos e graduações, esses profissionais deverão contar com, sempre que possível, no mínimo, dois anos de atendimento operacional. Para exercer as funções desse serviço as praças deverão estar também habilitadas em estágio de triagem e despacho de ocorrências de bombeiros, conforme Diretriz Operacional de Bombeiros específica para o assunto."
+              ],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 7",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob07": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB07",
+          "docLabel": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)",
+          "excerpts": [
+            {
+              "heading": "DOB 07 — Avaliação, Certificação e Recertificação",
+              "caput": "",
+              "dispositivos": [
+                "a) A certificação de qualidade para cães de busca tem por objetivo garantir a qualidade do serviço prestado pela Instituição, bem como respaldar os treinamentos e adequar a Corporação às exigências dos órgãos nacionais e internacionais que regulam a atuação em emergências no mundo.",
+                "b) A certificação é uma forma de testar a qualidade do cão quanto ao seu emprego na ativi dade operacional, garantindo que os cães estão sendo treinados em seus quartéis e que fornecerão a resposta desejada quando acionados para ocorrências.",
+                "c) Os cães que atuarão em ocorrências reais deverão, preferencialmente, possuir certificação.",
+                "d) Nos casos em que seja necessária a atuação de cães sem certificação, a CGSEC deverá se manifestar acerca da aptidão e das áreas que o semovente canino poderá operar, após avaliação.",
+                "e) Os cães serão certificados em avaliações internas ou externas promovidas por outras ins tituições reconhecidas pelo CBMAL. As avaliações internas serão promovidas ao menos uma vez por ano, podendo ser suprimidas quando houver participação oficial do CBMAL em provas de outras instituições.",
+                "f) A avaliação interna será regulada por Norma Operacional.",
+                "g) A certificação terá validade máxima de dois anos e as provas de recertificação seguirão o mesmo padrão técnico das provas de certificação."
+              ],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 8",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -16367,6 +16490,20 @@
               "match": "exata"
             }
           ]
+        },
+        "al_dob08": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB08",
+          "docLabel": "DOB nº 08 — Serviço de Salvamento Aquático e Mergulho (CBMAL, 2022)",
+          "excerpts": [
+            {
+              "heading": "DOB 08 — Recursos Humanos (guarda-vidas e mergulhadores)",
+              "caput": "Os Bombeiros militares devem possuir preparo físico, técnico e psicológico, zelar pelo aprimoramento constante e devem buscar a especialização nos cursos ofertados pela corporação ou có-irmãs, classificados em: 1. Guarda-vidas: militar com curso de formação que contemple a disciplina de salvamento aquático; 2. Guarda-vidas especialista: militar c om curso de especialização em salvamento aquático; 3. Condutor de embarcação: guarda -vidas com habilitação exigida pela Marinha do Brasil; 4. Tripulante de embarcação: guarda -vidas com habilitação exigida pela Marinha do Brasil; 5. Mergulhador: militar com curso de especialização em mergulho; 6. Condutor de viatura: guarda -vidas com habilitação exigida pela legislação vigente.Os militares deverão ser submetidos a instruções de salvamento aquático e avaliações da sua aptidão física e técnica para a atividade de guarda-vidas.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 6",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -17074,6 +17211,24 @@
               "caput": "Art. 23. Esta norma entra em vigor na data de sua publicação. Maceió-Al, 06 de janeiro de 2026 . (assinado eletronicamente) Francisco Leopardi Gonçalves Barretto Bastos - TC QOEM BM Respondendo pelo Comando Operacional de Bombeiros 6",
               "dispositivos": [],
               "source": "cf. CBMAL, Norma Operacional nº 11, Art. 23",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob07": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB07",
+          "docLabel": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)",
+          "excerpts": [
+            {
+              "heading": "DOB 07 — Prescrições Diversas",
+              "caput": "",
+              "dispositivos": [
+                "a) A CGSEC, além de suas obrigações estabelecidas nesta portaria, deverão desenvolver ações que busquem a integração com as outras agências da Secretaria de Estado da Segurança Pública, priorizando o atendimento das diretrizes estabelecidas pelo governo estadual.",
+                "b) O CBMAL poderá, mediante convênio, instituir serviço de veterinária através de parcerias públicas ou privadas.",
+                "c) Os casos omissos serão definidos pelo Comandante Geral, após parecer da CGSEC."
+              ],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 9",
               "match": "exata"
             }
           ]
@@ -18835,6 +18990,231 @@
               "match": "exata"
             }
           ]
+        },
+        "al_dob05": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB05",
+          "docLabel": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)",
+          "excerpts": [
+            {
+              "heading": "DOB 05 — Tempo Resposta",
+              "caput": "O tempo de saída da viatura do quartel, após acionado o alarme para a emergência, deve obedecer o que consta em Diretriz Operacional de Bombeiro s específica para o assunto. Não se deve procurar a diminuição do tempo resposta no trajeto da viatura. Toda vez que se apressa o motorista , coloca-se em risco a integridade de toda guarnição.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 9",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 05 — Apoio Operacional",
+              "caput": "O primeiro apoio à atividade operacional deve ser dado pelo efetivo de out ros Postos de Bombeiros. Após o emprego de todo o efetivo operacional, em horário de expediente, será empregado o efetivo administrativo que estará previamente escalado em suas viaturas. Quando houver um único posto de bombeiros no município, o apoio será dado pelo efetivo administrativo, até a chegada de viaturas de outro município ou Unidade Operacional. Caso a situação requeira , pode ser acionado o plano de chamada pelo Coordenador de Operações.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 10",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob07": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB07",
+          "docLabel": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)",
+          "excerpts": [
+            {
+              "heading": "DOB 07 — Definições (serviço com cães)",
+              "caput": "3.1. Serviço com cães: conjunto de atividades desenvolvidas por bombeiros em conjunto com cães , tais como busca, resgate e salvamento, demonstração do tipo recreativo/educacional, participação em competições oficiais para cães, formaturas e desfiles de caráter cívico -militar e projetos educacionais ou cinoterapêuticos. 3.2. Serviço de busca , resgate e sa lvamento com cães : conjunto de atividades que envolvem operações de busca, resgate e salvamento urbano ou rural com cães. 3.3. Cinotécnico: técnico formado e qualificado para conduzir processos de condicionamento de cães para um fim específico e com treinamento para a condução de um cão operacionalizado em ambiente de desastre. 3.4. Cão operacionalizado : cão que passou por um processo de adestramento, sendo avaliado e certificado para atuar no serviço de busca, resgate e salvamento. 3.5. Plantel: conjunto de semoventes caninos pertencentes a carga do CBMAL. 3.6. Matriz: cadela de raça, com características genéticas favoráveis ao serviço bombeiro militar, utilizada para fins de reprodução. 3.7. Ninhada: total de filhotes que a matriz pariu de uma só vez. 3.8. Avaliação de cães : Processo simulado em que o cão é submetido a testes com a finalidade de mensurar seu desempenho. 3.9. Certificação: Atestado de que um cão pode atuar em operações de busca, resgate e salvamento , após o mesmo ser considerado apto em uma avaliação. 3.10. Adestramento de cães : Processo pelo qual o cão será condicionado mediante técnica específica a realizar determinada atividade. 3.11. Condutor do cão: É o bombeiro militar, preferencialmente especializado em cinotecnia, que mantém um cão sob sua guarda, conduz seu processo de adestramento ou o opera num ambiente de uma ocorrência. 3.12. Binômio: Conjunto formado entre o condutor e o cão operacionalizado. 3.13. Equipe de busca , resgate e salvamento com cães – EBRESC: Conjunto formado por binômios e auxiliares para atuações em serviços de busca, resgate e salvamento com cães.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 3",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 07 — Condições Gerais (funcionamento dos canis)",
+              "caput": "4.1. Funcionamento dos Canis:",
+              "dispositivos": [
+                "a) Os bombeiros militares possuidores de especialização em serviço com cães estarão aptos a integrar o referido serviço e terão prefer ência na condução dos cães nas atividades.",
+                "b) A Coordenação Geral do Serviço com Cães do CBMAL se manifestará de forma consultiva, acerca da possibilidade ou impossibilidade do bombeiro militar, ainda que especialista, compor o efetivo do serviço com cães quando da sua designação.",
+                "c) A OBM que possuir serviço com cães deverá designar um bombeiro militar responsável para o cumprimento da presente diretriz, bem como o aprimoramento do serviço realizado, visando sua excelência.",
+                "d) O bombeiro militar designado para ser responsável pelo serviç o com cães na OBM deverá passar pelo crivo da Coordenação Geral do Serviço com cães do CBMAL no termos do item 4.1, b), desta DOB.",
+                "e) O horário de funcionamento dos canis obedecerá ao horário convencional de funcionamento do CBMAL e excepcionalmente, a critér io do coordenador operacional, com autorização do Cmt da OBM poderá se d ar em horário diverso.",
+                "f) A estrutura física e construção dos canis será regulada por Norma Operacional do CBMAL."
+              ],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 4",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 07 — Serviço de Busca, Resgate e Salvamento com Cães",
+              "caput": "6.1. Do Emprego",
+              "dispositivos": [
+                "a) Os cães poderão ser empregados nas seguintes atividades e/ou locais:",
+                "a).1 Busca, resgate e salvamento em estruturas colapsadas;",
+                "a).2 Busca e localização de vítimas em escombros;",
+                "a).3 Busca e localização de vítimas soterradas;",
+                "a).4 Busca e localização de pessoas perdidas em matas e florestas;",
+                "a).5 Busca e localização de afogados;",
+                "a).6 Busca e localização de cadáveres.",
+                "a).7 Demonstrações de caráter educacional ou recreativo;",
+                "a).8 Formaturas e desfiles de caráter cívico-militar;",
+                "a).9 Atividades de cinoterapia;",
+                "a).10 Os cães poderão ainda ser empregados em outras missões para as quais hajam sido treinados , desde que atinentes às atividades da Corporação.",
+                "b) As áreas de buscas devem, dentro das possibilidades, serem preservadas, de modo que o ambiente seja alterado o mínimo possível, para que os cães tenham melhor desempenho nas suas atividades.",
+                "c) A quantidade de binômios da EBRESC , a serem utilizados nas atividades operacionais, deverão ser definidas em função da disponibilidade de animais para o serviço no momento do acionamento, observados o tamanho da área de busca e logística existente para o apoio da atividade.",
+                "d) Os cães serão deslocados em viaturas específicas para o serviço ou, preferencialmente, em veículos com a utilização de boxes apropriados.",
+                "e) O levantamento preliminar da ocorrência de busca ficará a cargo da 1ª equipe de salvamento qu e chegar ao local, cabendo a esta solicitar o apoio da EBRESC para dar prosseguimento às buscas.",
+                "f) Em ocorrências de notória necessidade da utilização da EBRESC, esta deverá integrar as equipes de busca já na 1ª resposta. 6.2. Da EBRESC",
+                "a) A Equipe de Busca, Resgate e Salvamento com Cães - EBRESC será integrada por militares especializados em busca, resgate e salvamento com cães e detentores de cães avaliados pela CGSEC.",
+                "b) Excepcionalmente e mediante indicação da CGSEC, Bombeiros Militares que não se enquadram nas exigências d o item 6.2., a) poderão integrar a EBRESC.",
+                "c) Os militares que integrarem a EBRESC poderão ficar dispensados de suas funções originais nas OBM’s de origem para que se dediquem exclusivamente a atividade de salvamento com cães.",
+                "d) A quantidade de cães que integrará a EBRESC será definida pela necessidade operacional da corporação, devendo ser respeitada, preferencialmente, a descentralização do serviço objetivando atender todas as regiões do Estado. 6.3. Das Atribuições do Condutor do cão",
+                "a) Ao condutor do cão compete:",
+                "a).1 Realizar as atividades necessárias à execução de buscas com emprego de cães;",
+                "a).2 Realizar as atividades necessárias ao treinamento, adaptação do plantel da OBM e execução de buscas pela unidade, conf orme quadro de trabalho semanal específico;",
+                "a).3 Realizar as atividades de limpeza e manutenção diárias requeridas às instalações físicas do canil;",
+                "a).4 Providenciar o asseio dos animais, sempre que necessário e determinado, conforme quadro de trabalho semanal específico;",
+                "a).5 Providenciar diariamente alimentação e hidratação do plantel;",
+                "a).6 Monitorar as condições de saúde dos animais, alertando também a COSEC para quaisquer alterações nesse sentido;",
+                "a).7 Realizar outras atividades visando o bem -estar do plantel e que não tenham sido contempladas nos tópicos anteriores;"
+              ],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 6",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 07 — Desenvolvimento dos Cães (inclusão, aquisição, baixa)",
+              "caput": "7.1. Da Inclusão",
+              "dispositivos": [
+                "a) Serão considerados Cães pertencentes a carga do Corpo de Bombeiros Militar de Alagoas os animais adquiridos por:",
+                "a).1 Aquisição;",
+                "a).2 Doação;",
+                "a).3 Criação;",
+                "a).4 Permuta;",
+                "a).5 Acordo de acasalamento;",
+                "a).6 Por Acostamento.",
+                "b) Cães com menos de 18 (dezoito) meses, ainda não certificados e com Patrimônio do CBMAL, estarão na situação de CARGA PROVISÓRIA.",
+                "c) Os procedimentos de inclusão descritos neste item serão controlados pela CGSEC.",
+                "d) Os Cães incluídos em carga do CBMAL serão des tinados exclusivamente ao serviço de Busca, Resgate e Salvamento, podendo ser empregados em ações sociais e eventos oficiais, desde que não tragam prejuízo às qualidades laborais a que se destinam.",
+                "e) Todos os Cães incluídos em carga do CBMAL deverão ter a p artir da data de sua entrada assentamento individualizado.",
+                "f) Devem constar nos assentamentos individualizados dos animais da Corporação os seguintes dados:",
+                "f).1 Nome, raça, filiação, sexo, cor e sinais peculiares do cão;",
+                "f).2 Data de nascimento, de aquisição e de inclusão em carga;",
+                "f).3 Forma de aquisição;",
+                "f).4 Assinatura do veterinário e do Gestor, que examinaram e avaliaram o animal quando da sua aquisição;",
+                "f).5 Evolução do adestramento e participação em missões ou outras afins.",
+                "g) Os cães incluídos no CBMAL, sempre que possível, deverão possuir chip de identificação. 7.2. Da aquisição",
+                "a) A compra de cães será efetuada por meio de dotações orçamentárias próprias, observadas a legislação vigente.",
+                "b) A compra poderá se processar em qualquer lug ar do território nacional ou, se as condições forem favoráveis, no exterior.",
+                "c) A Superintendência de Material e Patrimônio será responsável pelo processo de compra dos cães, com apoio da CGS EC e observando os seguintes itens:",
+                "c).1 Valor de mercado compatível com o padrão e características da raça;",
+                "c).2 Análise de Pedigree com linha de sangue voltada para o trabalho;",
+                "c).3 Estar apto clínica e profilática;",
+                "c).5 Ser de raça compatível com o serviço do CBMAL;",
+                "c).6 Possuir temperamento compatível com o serviço do CBMAL;",
+                "c).7 Aptidão de saúde atestada por um médico veterinário.",
+                "c).8 Idade máxima de 06 (seis) meses, exceto se o cão já estiver adestrado ou se for utilizado exclusivamente para reprodução.",
+                "d) O gestor realizará avaliação prévia do cão durante o processo de compra, após parecer do médico veterinário, determinando se há ou não viabilidade para aquisição. 7.3. Da doação",
+                "a) A doação poderá ser feita por particulares ou pessoas jurídicas de direito público ou privado, nacionais ou estrangeiras, através de termo de doação próprio elaborado pela Coordenação Geral.",
+                "b) Os cães doados deverão apresentar as seguintes condições:",
+                "b)1. Ter idade mínima de 45 dias e máxima de 06 (seis) meses;",
+                "b).2 Estar apto clínica e profilaticamente;",
+                "b).3 Ser de raça compatível com o serviço bombeiro militar;",
+                "b).4 Possuir temperamento compatível com o serviço bombeiro militar;",
+                "b).5 Ser avaliado pela C oordenação Geral de Salvamento com Cães, após avaliação de um Médico Veterinário.",
+                "c) Os cães doados permanecerão em observação e constante treina mento para a atividade fim até 6 meses após a data da doação;",
+                "d) Caso seja constatado, dentro do prazo constante no item anterior, que o cão não é apto para o serviço bombeiro militar, o contrato de doação será considerado inválido e cão será devolvido ao doador. 7.4. Da criação",
+                "a) A criação própria será considerada feita na Corporação, quando resultar o nascimento de filhotes oriundos de matrizes (fêmeas), pertencentes ao patrimônio do CBMAL.",
+                "b) Os filhotes provenientes da criação própria permanecerão aos cuidados da COSEC pertinente , em observação e em constante treinamento para a atividade fim, até a idade de 18 (dezoito) meses.",
+                "c) Após o prazo referido no item anterior, os semoventes serão avaliados pela CGSEC para inclusão em carga ou alienação.",
+                "d) Se a qualquer momento for observada pela CGS EC a inservibilidade do cão para os serviços do CBMAL ou missões específicas, os mesmos pode rão ser destinados a doação ou alienação. 7.5. Da permuta",
+                "a) A permuta será processada apenas entre filhotes de até seis meses, mediante manifestação favorável da CGSEC, através de Termo de Permuta. 7.6. Do acordo de acasalamento",
+                "a) O acordo de acasalamento será feito mediante contrato escrito entre o CBMAL e a pessoa física ou jurídica proprietária do animal.",
+                "b) O acordo de acasalamento visa cumprir planejamento de aprimoramento genético do plantel ou renovação estratégica para adequação das demandas operacionais. 7.7. Do acostamento",
+                "a) Os semoventes caninos de propriedade particular de bombeiros militares, poderão compor o efetivo do canil, devendo obedecer aos seguintes critérios:",
+                "a).1 Ser adido a carga do CBMAL na forma de acostado e;",
+                "a).2 Obedecer os critérios exigidos para doação conforme item 7.3, b) desta DOB.",
+                "b) Todos os custos com o cão acostado serão arcados pelo seu proprietário. 7.8. Da Exclusão do Semovente Canino",
+                "a) O semovente canino será excluído do serviço ativo do CBMAL nas seguintes condições:",
+                "a).1 Reforma;",
+                "a).2 Desaparecimento ou Extravio;",
+                "a).3 Morte;",
+                "a).4 Doação;",
+                "a).5 Alienação. 7.9. Da Reforma",
+                "a) A reforma se dará nas seguintes condições:",
+                "a).1 Ter o cão oito anos de serviço;",
+                "a).2 Atingir o limite de 10 anos de idade;",
+                "a).3 Ser constatada a inservibilidade operacional atestada pela CGSEC;",
+                "a).4 Ser constatada i nservibilidade física e de saúde atestada por um médico veterinário;",
+                "b) Os cães reformados poderão ser mantidos pelo CBMAL para desfiles militares e demonstrações, podendo ainda serem doados preferencialmente ao condutor, mediante autorização e homologação do Comandante Geral;",
+                "c) Os cães acostados poderão ser reformados obedecendo os mesmos critérios referidos anteriormente ou p or interesse do bombeiro militar condutor do semovente canino. 7.10. Do Desaparecimento ou Extravio",
+                "a) Considera-se desaparecido ou extraviado o cão que não for recuperado no prazo de 30 dias, mediante instauração de Procedimento Administrativo.",
+                "b) Declarado o extravio, o CBMAL adot ará os procedimentos de descarga do bem semovente. 7.11. Da Morte",
+                "a) O cão morto por motivo natural ou acidental será excluído do plantel da Corporação por meio d a instauração do Procedimento Administrativo, subsidiado por um laudo técnico de veterinário ou laudo equivalente nos casos de sacrifício.",
+                "b) Entende-se por sacrifício a morte causada voluntariamente ao cão nas condições a seguir:",
+                "b).1 quando em virtude de acidente o cão for julgado irrecuperável por médico veterinário ou equivalente , e sua sobrevivência seja apenas para motivo de sofrimento;",
+                "b).2 quando for acometido por enfermidade grave de elevado índice de contágio, sob risco de alastramento a humanos ou outros animais, avaliado por médico veterinário ou equivalente; ou",
+                "b).3 nos casos não previstos nos itens anteriores mediante parecer do médico veterinário ou equivalente , devendo ser lavrado e assinado o atestado de óbito ou sacrifício, com o objetivo de exclusão do cão da carga do CBMAL. 7.12. Da doação",
+                "a) As doações de semoventes caninos inservíveis pertencentes ao plantel da corporação deverão ser autorizadas pelo Comandante Geral , após avaliação da CGSEC.",
+                "b) A doação deverá obedecer a seguinte ordem de preferência:",
+                "b).1 Condutor;",
+                "b).2 Instituição Militar;",
+                "b).1 Instituição ou organização do Estado;",
+                "b).3 Instituição ou organização privada;",
+                "b).1 Civil;",
+                "c) Na escolha do do natário, deverão ser considerad as as condições financeiras para a manutenção do cão, o zelo aos animais, além da existência de espaço físico suficiente para abrigá-lo. 7.13. Da Alienação",
+                "a) A alienação de semoventes caninos inservíveis para o serviço do bombeiro militar pertencentes ao plantel da corporação deverão ser autorizadas pelo Comandante Geral, após avaliação da CGSEC.",
+                "b) Nos casos em que a ninhada ultrapasse o planejamento pretendido para o total de filhotes que integrarão o plan tel do CBMAL, poderá ser autorizada pelo Comandante Geral, após manifestação da CGSEC, a alienação de filhotes excedentes."
+              ],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 7",
+              "match": "parcial"
+            }
+          ]
+        },
+        "al_dob08": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB08",
+          "docLabel": "DOB nº 08 — Serviço de Salvamento Aquático e Mergulho (CBMAL, 2022)",
+          "excerpts": [
+            {
+              "heading": "DOB 08 — Condições Gerais (subsistemas de salvamento aquático)",
+              "caput": "4.1 O serviço de salvamento aquático pela sua característica de multiplicidade de eventos necessita de uma divisão técnica que possibilite o planejamento adequado a cada um dos subsistemas a serem atendidos. 4.2 A organização das operações aquáticas serão relatadas a partir da fixação de seis subsistemas que irão abranger os níveis operacionais e sua disciplina técnica e logística, conforme segue:",
+              "dispositivos": [
+                "a) Salvamento em águas abrigadas;",
+                "b) Salvamento em águas abertas;",
+                "c) Salvamento em águas com correnteza;",
+                "d) Salvamento em acidentes com embarcações;",
+                "e) Salvamento em enchentes e inundações;",
+                "f) Operações de Mergulho (OM)."
+              ],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 4",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 08 — Condições Específicas",
+              "caput": "5.1 O desenvolvimento de uma organização operacional abrangendo os seis subsistemas busca especificar todas as possibilidades dos eventos em águas que estando individualizados poderão no planejamento estratégico obter as suas reais previsões técnicas e logísticas, conforme definição abaixo: 5.1.1. Subsistema de salvamento em águas abrigadas : os eventos em águas abrigadas encontram na característica do fácil acesso o principal potencializador da ocorrência de acidentes, se caracteriza por águas represadas, grandes represas, lagos de pequeno porte e lagoas de barragens hidrelétricas que associados às características climáticas das regiões mais quentes do Estado acabam gerando significativa amostragem estatística. 5.1.2. Subsistema de salvamento em águas abertas: estes locais na sua maioria se constituem por praias, destinadas a prática de esportes aquáticos de lazer, entretenimento ou atividade laboral de sobrevivência pela pesca, além da própria navegação, estando nestes eventos a probabilidade de incidentes. 5.1.3. Subsistema de salvamento em águas com correnteza: os locais com correnteza criam ambientes que requerem planejamento preventivo especializado, quando explorados comercialmente ficando mais clara esta definição na catalogação destes locais que são corredeiras para prática de rafting ou canoagem. 5.1.4. Subsistema de Salvamento em acidentes com embarcações : trata-se de cenário oriundo de ocorrências com embarcações, tais como acidente náutico, colisão ou naufrágio de embarcações. 5.1.5. Subsistema de Salvamento em enchentes e inundações: são ambientes urbanos ou rurais atingidos por enchentes, inundações, alagamentos ou enxurradas. 5.1.6. Operação de Mergulho: toda aquela que envolve trabalhos submersos realizados para localização e resgate de cadáveres, embarcações e também busca e recuperação de objetos. 5.1.6.1. A atividade de mergulho se divide em:",
+              "dispositivos": [
+                "a) Mergulho livre (ML);",
+                "b) Mergulho autônomo (MA);",
+                "c) Mergulho dependente (narguilê) (MD)."
+              ],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 5",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 08 — Recursos Materiais (viaturas e equipamentos)",
+              "caput": "Há a necessidade de se obter materiais específicos no intuito de melhorar as condições de salvamento aquático/mergulho, o que refletirá na excelência da prestação do serviço bem como agilidade no deslocamento e segurança, seja através de acessórios, equipamentos de proteção individual, embarcações ou viaturas. 7.1 Viaturas As unidades que prestam o serviço de salvamento aquático/mergulho deverão possuir viaturas operacionais adequadas para o transporte das guarnições e materiais relativos à atividade. Nas operações de enchentes deverão ser empregadas, preferencialmente, viaturas com chassi alto de modo a facilitar a transposição de áreas alagadas. 7.2 Equipamentos 7.2.1 Salvamento Aquático Apito; Cadeira; Flutuador; Nadadeira; Guarda-Sol; Tenda pantográfica; Kit Oxigenoterapia; Kit Primeiros Socorros; Máscara portátil para Ventilação (pocket mask); Óculos escuros Placa de Sinalização; Prancha rígida longa Pranchão de Salvamento Protetor solar; Rádio portátil. 7.2.2 Mergulho Roupa de neoprene; Roupa Seca; Faca; Colete equilibrador; Cilindro de Mergulho; Bail Out; Regulador principal; Regulador reserva; Full face; Manômetro; Profundímetro; Máscara semi-facial com snorkel; Cinto de lastros; Lastros; Luvas; Lanternas; Botas. 7.3 Viaturas 7.3.1 BIS - Bote Inflável de Salvamento; 7.3.2 MSA - Moto de Salvamento Aquática; 7.3.3 LSA - Lancha de Salvamento Aquático; 7.3.4 QS - Quadriciclo de Salvamento; 7.3.5 AR - Auto Resgate; 7.3.6 AS - Autossalvamento; 7.3.7 AM - Auto Mergulho; 7.3.8 Balsa salva-vidas; 7.3.9 Balsa Inflável para o Salvamento em Enchentes.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 7",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 08 — Serviço de Salvamento Aquático",
+              "caput": "8.1 Salvamento Aquático Consiste de todas as operações realizadas em rios, lagoas, represas, mar, enchentes, piscinas e outros mananciais de água, visando a prevenção da integridade física de pessoas que se envolvam em ocorrências em que a água seja o agente causador de incidentes e compreende as seguintes atividades: 8.1.1. Prevenção de afogamento: 8.1.2. Resgate de pessoas em locais de risco no ambiente aquático; 8.1.3. Atendimento de vítimas diversas no ambiente aquático e região costeira; 8.1.4. Resgate de náufragos e/ou embarcações em situação de risco; 8.1.5. Salvamento de vítimas de afogamento. 8.2 Prevenção de afogamento É qualquer medida com o objetivo de evitar o afogamento sem que haja contato físico entre a vítima e o socorrista. Podem ser divididas em: 8.2.1. Prevenção ativa: qualquer ação de prevenção que inclua inalização de risco ou comportamento, tais como: sinalizar uma corrente de retorno, uma área de risco, uma profundidade na piscina, colocação de uma cerca, um ralo anti-hair, e outros. 8.2.2. Prevenção reativa: Qualquer ação de prevenção direcionada a um indivíduo ou um grupo com a intenção de interromper um afogamento iminente, tais como: o uso de apito ou advertência de um Guarda-Vidas a um banhista em área de risco. 8.2.3. Setor de Prevenção : extensão de praia em que um Guarda -Vidas escalado é responsável pela segurança do banhista, sendo que o setor pode variar de acordo com os riscos associados ao local, com a freqüência de banhistas, observados fatores qualitativos e quantitativos. 8.3 Estrutura do Serviço de Salvamento Aquático no CBMAL 8.3.1 Estrutura Operacional: O serviço de salvamento aquático no Estado de Alagoas, desenvolvido pelo Corpo de Bombeiros, está previsto na Lei Nº 7.444, de 28 de dezembro de 2012. 8.3.1.1. Para o cumprimento de suas missões legais na área de salvamento aquático, o CBMAL conta com o Grupamento de Salvamento Aquático (GSA), responsável pela Região Metropolitana, como também os Grupamentos de Bombeiro Militar, responsáveis pelo interior do Estado. 8.3.2 O serviço de salvamento aquático poderá se desenvolver por meio de rondas preventivas ou com postos de guarda vidas. 8.3.2.1 Rondas preventivas: são os deslocamentos realizados pelos guarda-vidas dentro ou fora do manancial aquático para executar as ações de p revenção ativa e/ou reativa, além de atuar no resgate ou salvamento, caso necessário. Podem ser realizadas a pé, em viaturas, em embarcações ou em aeronaves. 8.3.2.2 Posto de Guarda Vidas: Instalação física mínima destinada a servir de apoio aos Guarda Vidas. Os postos serão classificados quanto ao tipo e quanto ao nível. 8.3.2.2.1 Quanto ao tipo: está relacionado ao tipo de estrutura física. 8.3.2.2.2 Quanto ao nível: está relacionado a quantidade de guarda -vidas e de equipamentos disponíveis.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 8",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 08 — Serviço de Mergulho",
+              "caput": "9.1 Mergulho Bombeiro Militar Consiste em todas as operações submersas realizadas em rios, lagoas, represas, mar, enchentes, piscinas e outros mananciais de água, visando a localização e recuperação de cadáveres, embarcações e bens, além de eventuais ocorrências emergenciais que visem o resgate de pessoas e compreende as seguintes atividades: 9.1.1 Busca e Recuperação de cadáveres; 9.1.2 Busca e Recuperação de embarcações e objetos de maior porte; 9.1.3 Busca e Recuperação bens; 9.1.4 Busca e resgate de pessoas; 9.1.5 Atividades de prevenção, visando atender o público civil e militar que desenvolve atividade de mergulho. 9.2 Estrutura do Serviço de Mergulho 9.2.1. O serviço de mergulho no Estado de Alagoas, desenvolvido pelo Corpo de Bombeiros, está previsto na Lei Nº 7.444, de 28 de dezembro de 2012. Para o cumprimento de suas missões legais na área de mergulho, o CBMAL conta com o Grupamento de Salvamento Aquático (GSA), que mantém em funcionamento equipe diária para atendimento de eventuais ocorrências que necessitem operações de mergulho e é responsável pelo serviço em todo Estado. ● Manual Operacional de Bombeiros - Guarda vidas. Corpo de Bombeiros Militar de Goiás, 30 de junho de 2017. ● Norma operacional n° 28 São Paulo ● NOB 27 provisório São Paulo ● DOB nº 03 CBMAL ● Manual de Emergências Aquáticas Szpilman. Presidente da Comissão Membro da Comissão Membro da Comissão Membro da Comissão DIEGO PÉRCIA NAMÉ DE SOUZA FRANCO – 1º TEN BM Membro da Comissão Art. 2º. Esta Portaria entra em vigor na data de sua publicação, revogando -se as disposições em contrário. 4ª PARTE Quartel em Maceió-AL, _____/____/_____. Confere com o original, “Vidas alheias, riquezas salvar”",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 9",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -20093,6 +20473,55 @@
                 "II - o uso do canal deverá observar os princípios da hierarquia, disciplina e ética profissional, destinando-se estritamente a assuntos de serviço."
               ],
               "source": "cf. CBMAL, Norma Operacional nº 11, Art. 12",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob05": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB05",
+          "docLabel": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)",
+          "excerpts": [
+            {
+              "heading": "DOB 05 — Condições Gerais (rotina diária do posto)",
+              "caput": "O efetivo da escala de serviço operacional deverá estar dividido em quatro prontidões, em regime de serviço especificado, sendo as prontidões designadas por cores, a saber: amarela, azul, verde e vermelha, respectivamente, tomando-se por base a guarnição amarela de serviço a contar do dia 01JUN13. Aplica-se a esta DOB a rotina diária de um posto de bombeiros, sendo que os componentes das prontidões deverão estar constantemente preparados para o desempenho de suas atividades, buscando a excelência na prestação dos serviços. Cabe a todo efetivo de serviço operacional a busca incessante por condições ideais de serviço, atr avés da reposição imediata dos materiais de consumo, manutenção preventiva e corretiva dos equipamentos, limpeza das instalações e viaturas, treinamento físico e técnico constante, e demais atividades afins. Cada motorista deve efetuar a manutenção na viatura em que estiver escalado, e deve ainda repassar qualquer alteração para o Comandante d e sua Guarnição imediatamente. Enquanto o motorista faz a manutenção da viatura, os demais integrantes da guarnição deverão efetuar a conferência de materiais e o teste dos equipamentos desta, garantindo o pronto emprego de todos eles. Diariamente, após a conferência de materiais, deve ocorrer o deslocamento para o teste de funcionamento das viaturas, em percurso pré -estabelecido pelo Comandante do Posto de Bombeiro s (Cmt PB) . Deve ser incluído no trajeto, preferencialmente, um posto de combustível e um hidrante. Cada posto de bombeiros, em sua área de atuação, deve realizar inspeção e teste em todos os hidrantes públicos, no mínimo semestralmente , cabendo ao Cmt PB o cadastro da situação dos mesmos , e encaminhamento de relatório ao seu superior imediato.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 3",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 05 — Atividade Diária do Serviço Operacional",
+              "caput": "Refere-se às atividades do efetivo em seu dia -a-dia, devendo estas ser cumpridas na íntegra, conforme cronograma a ser definido por norma operacional de bombeiro. A rotina diária pode, porém, ter seu horário flexível de acordo com as peculiaridades da Unidade Operacional e por ordem do seu comandante, devendo esta ordem ser afixada em mural para efeito de fiscalização. O militar mais antigo de serviço, responsável pela execução da rotina diária, poderá realizar alguma atividade prevista em horário alternativo , somente se no horário regulamentado não for possível por motivo de força maior, e se não houver nenhuma outra atividade prevista para o horário alternativo. A atividade de conferência das viaturas, equipamentos e materiais, prevista na rotina diária, engloba, dentre outras:",
+              "dispositivos": [
+                "a) A conferência, o funcionamento e a manutenção de primeiro escalão dos equipamentos motorizados em carga naquela viatura;",
+                "b) A manutenção de primeiro escalão da viatura;",
+                "c) Reparos de equipamentos danificados (os quais deverão ser baixados, acompanhados de documento) e reposição dos materiais de consumo;",
+                "d) Fixação de materiais e equipamentos em gavetas;",
+                "e) Abastecimento da viatura e equipamentos motorizados;",
+                "f) Deslocamento em percurso pré-estabelecido para o teste de funcionamento da viatura. Toda esta rotina somente será interrompida para atendimento de ocorrência ou outro evento atípico, tais como solenidades, inspeções, visitas de autoridades, simulados, dentre outras atividades regulamentadas por Nota de Instrução / Ordem de Serviço. Nas segundas, terças, quartas e quintas -feiras, todo efetivo de serviço deverá participar de instruções operac ionais de materiais técnicos e prática de fundamentos, que deverão estar pré -estabelecidos para aquele dia, por meio do Trabalho de Instrução de Bombeiro (TIB), a ser definido em norma operacional de bombeiro. A instrução deverá s er ministrada por Bombeir o especializado, sendo o Cmt PB o responsável pel a fiscalização d o cumprimento desta atividade. O mesmo deverá possuir um controle atualizado das instruções ministradas por prontidão. Nas sextas e sábados, o efetivo ficará à disposição do Cmt PB e/ou Comandante de Socorro para atividades complementares. Aos domingos, todo o efetivo será empregado na limpeza geral das dependências do quartel, limpeza e enceramento das viaturas e dos equipamentos motorizados, tais como moto serras, moto abrasivos e desencarceradores. Diariamente, todo efetivo de serviço deverá realizar atividade física Em razão de particularidades específicas do posto de bombeiros, tais como condições de transporte para a tropa, proximidade de aeroportos, orla marítim a e autódromos, os h orários da rotina diária poderão ser adaptados para completar as atividades de capacitação profissional inerentes ao treinamento dos bombeiros, além das suas atividades operacionais, desde que autorizados pelo Comanda nte do Grupamento de Bombeiros, e cumprida toda a rotina. O detalhamento da rotina diária, com o horário sugerido para cada tarefa, será definida por norma operacional de bombeiro."
+              ],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 4",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 05 — Viaturas (manutenção e conferência)",
+              "caput": "Nos Postos de Bombeiros onde existem viaturas de apoio, tais como auto escada, auto bomba escada, auto bomb a plataforma, além de viaturas na reserva, o seu Comandante deve es calar um responsável pela manutenção de primeiro escalão e conferência destas viaturas, dentro de cada prontidão. As viaturas citadas no item anterior, além de seus equipamentos, tais como almofadas pneumáticas, bombas de sucção, cunhas hidráulicas, moto geradores e cilindro cascata, devem ser operadas durante o período destinado ao Armar-Geral.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 6",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 05 — Equipamentos de Proteção e Segurança",
+              "caput": "Durante todo período de instrução, o efetivo deve ser orientado sobre as medidas de proteção, tanto coletiva como individual. Deve ser dado ênfase sobre Equipamentos de Proteção Respiratória (EPR) e E quipamentos de Proteção Individual (EPI) , procurando eliminar ou reduzir os riscos existentes nos locais de serviço. A educação para a utilização dos equipamentos de proteção indivi dual é de extrema importância e deve ser rotineira. Deve ainda ter o intuito de tirar da tropa a frequente resistência ao seu uso por alegar desconforto, falta de eficiência ou falta de necessidade. Para toda atividade de instrução prática de bombeiros, qu e possa oferecer risco à integridade física, é necessário que sejam adotadas medidas de segurança pré-estabelecidas.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 7",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 05 — Controle (Relatório de Serviço Diário)",
+              "caput": "A conferência do material utilizado, após o atendimento de uma ocorrência, deve ser feito no próprio local. Após ocorrências de maior magnitude, o comandante deve reunir a tropa sob seu comando para fazer uma breve análise sobre os procedimentos adotados, preferencialmente no local da ocorrência. Todas as alterações relativas à rotina diária operacional devem ser lançadas no Relatório de Serviço Diário do respectivo Posto de Bombeiros, a ser definido em norma operacional de bombeiro. O Relatório de Serviço Diário é um documento oficial instituído pel a Administração Pública, servindo como base legal para subsidiar procedimentos administrativos. Além disso, é o documento da rotina diária a ser fiscalizado pelo Comandante de Posto e Comandante de Subgrupamento. Ele deve ficar à disposição por ocasião das inspeções, e deve ser fiscalizado e assinado semanalmente pelo Cmt PB. Os Postos de Bombeiros devem possuir um mapa urbano com sua área de atendimento, afixado na Central de Operações e Comunicações do Posto. Em caso de Posto de Bombeiros que atenda mais de um município , deve existir outro mapa que contemple toda área.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 11",
               "match": "exata"
             }
           ]
@@ -23590,6 +24019,119 @@
               "match": "exata"
             }
           ]
+        },
+        "al_dob05": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB05",
+          "docLabel": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)",
+          "excerpts": [
+            {
+              "heading": "DOB 05 — Recursos Humanos (Cmt PB, Cmt Pront, Cmt SGBM)",
+              "caput": "O responsável fiel ao cumprimento desta Diretriz pelo efetivo operacional do Posto de Bombeiros será o Cmt PB, auxiliado pe los Comandantes das P rontidões (Cmt Pront) e supervisionado pelo Comandante do Subgrupamento de Bombeiros (Cmt SGBM). O efetivo administrativo poderá, em horário de expediente, ser escalado em viaturas de apoio operacional. Poderá ainda ser utilizado em situações de grande emergência ou naquele momento em que todo o efetivo operacional estiver empregado. As viaturas deverão estar prontas para serem empregadas. Em situações adversas, todo efetivo operacional e administrativo p oderá ser convocado através de escala de sobreaviso ou plano de chamada.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 5",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob07": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB07",
+          "docLabel": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)",
+          "excerpts": [
+            {
+              "heading": "DOB 07 — Coordenações (CGSEC e COSEC)",
+              "caput": "5.1. Coordenação Geral do Serviço com Cães – CGSEC",
+              "dispositivos": [
+                "a) A Coordenação Geral do Serviço com Cães é o órgão responsável pelo Serviço com Cães no CBMAL.",
+                "b) A CGSEC será composta por no mínimo 3 membros, designada por ato do Comandante Geral do CBMAL.",
+                "c) Os membros pertencentes a CGS EC deverão possuir preferencialmente curso na área de serviço com cães.",
+                "d) Cabe ao presidente da CGSEC o voto de desempate.",
+                "e) Caberá ao CGSEC regular a atividade de serviços com cães , como também:",
+                "e).1 Desenvolver e aperfeiçoar o serviço com cães no CBMAL;",
+                "e).2 Certificar os cães aptos a trabalharem nas ocorrências atendidas pelo CBMAL;",
+                "e).3 indicar quais das especializações o binômio deverá estar apto, devendo atender a necessidade operacional do CBMAL;",
+                "e).4 Sugerir os binômios aptos a integrarem a EBRESC;",
+                "e).5 Emitir relatório acerca da possibilidade ou impossibilidade do bombeiro militar, ainda que especialista, compor o efetivo do serviço com cães quando da sua designação.",
+                "e).6 Fazer gestão nas ações operacionais relativas à atividade de busca, resgate e salvamento com cães;",
+                "e).7 Propor parcerias com entidades do setor privado, bem como com outros órgãos do serviço público;",
+                "e).8 Propor a criação de Normas Operacionais relacionadas ao serviço com cães no CBMAL;",
+                "e).9 Desenvolver demais atividades relativas ao s erviço de cães previstas nesta DOB.",
+                "f) Os Militares membros do CGS EC poderão ser dispensados de suas funções nas OBM’s de origem para que se dediquem exclusivamente ao serviço com cães, a critério do comandante geral. 5.2 Coordenação Operacional de Serviço com Cães – COSEC",
+                "a) A coordenação operacional pertencerá a OBM e será responsável pela coordenação e supervisão das atividades do canil da unidade.",
+                "b) O coordenador operacional será designado pelo comandante da OBM.",
+                "c) Caberá a COSEC a realização do serviço com cães, bem como:",
+                "c).1 Coordenação das atividades operacionais do serviço com cães na OBM;",
+                "c).2 Indicar os binômios considerados aptos pela CGS EC, a serem designados pelo comandante da OBM , para integrar o serviço com cães da unidade;",
+                "c).3 Elaboração e assinatura dos quadros de trabalhos semanais e escalas relativas ao serviço diário de condutores;",
+                "c).4 Gestão do pessoal do serviço com cães da OBM;",
+                "c).5 Elaboração de estatísticas das atividades operacionais do canil;",
+                "c).6 Manutenção física e sanitária dos cães;",
+                "c).7 Controle dos prazos de certificação dos binômios;",
+                "c).8 Elaboração e manutenção dos assentamentos individualizados dos cães;",
+                "c).9 Desenvolvimento do serviço com cães na OBM.",
+                "d) Os bombeiros militares membros do COS EC poderão ser dispensados de suas funções nas OBM para que se dediquem exclusivamente ao serviço com cães, a critério do comandante da unidade."
+              ],
+              "source": "cf. CBMAL, DOB nº 07 (Serviço com Cães, 2016), seção 5",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob08": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB08",
+          "docLabel": "DOB nº 08 — Serviço de Salvamento Aquático e Mergulho (CBMAL, 2022)",
+          "excerpts": [
+            {
+              "heading": "DOB 08 — Definições e Atribuições (Cmt Prontidão a Fiel)",
+              "caput": "3.1 Para efeitos desta DOB, aplicam-se as definições constantes na Diretriz Operacional de Bombeiros (DOB) nº 01 – Terminologia Operacional de Bombeiros, além das definições e atribuições apresentadas abaixo: 3.1.1 Comandante de Prontidão: Será exercido cumulativamente pelo Comandante de Guarnição mais antigo que estiver de serviço na prontidão. Atribuindo-lhe:",
+              "dispositivos": [
+                "a) Repassar, verbalmente, toda alteração encontrada imediatamente ao Comandante de Socorro que estiver de serviço em sua área; e, por escrito, à sua OBM;",
+                "b) colocar o efetivo de serviço em forma, conferir e apresentar ao oficial de serviço sempre que solicitado;",
+                "c) estimular as instruções e treinamentos durante os serviços, e fazer cumprir as determinações superiores referentes a ensino e instrução;",
+                "d) fiscalizar limpeza e manutenção das instalações;",
+                "e) coordenar e fiscalizar as atividades de permanência na OBM onde não houver serviço de Guarda; e",
+                "f) fiscalizar o cumprimento das Normas a que estiver subordinado. 3.1.2 Comandante de Guarniç ão: Será exercido pelo militar mais antigo que estiver de serviço em cada guarnição. Atribuindo-lhe:",
+                "a) executar a atividade de salvamento aquático;",
+                "b) acompanhar a conferência dos materiais durante a passagem de serviço, e providenciar a reposição, reparo ou manutenção necessários;",
+                "c) verificar junto ao condutor da viatura as alterações existentes e providenciar os reparos necessários;",
+                "d) conferir o estado dos equipamentos de proteção individual do efetivo de sua guarnição;",
+                "e) rever os procedimentos operacionais padrões em vigor com sua guarnição sempre que necessário, objetivando melhor qualidade de atendimento;",
+                "f) zelar pela excelência durante o atendimento de uma ocorrência, corrigindo posturas e atitudes dos demais integrantes da guarnição;",
+                "g) preencher no sistema d e informação operacional utilizado pelo CBMAL os dados relacionados ao atendimento das ocorrências em que atuou; e",
+                "h) informar ao Comandante de Prontidão, por escrito, as alterações relacionadas ao serviço, para que se tomem as devidas providências ou se cientifiquem do fato. 3.1.3 Condutor de embarcação : é o profissional Bombeiro Militar do Quadro de Praças QPBM/ Combatente, qualificado e legalmente habilitado a conduzir as viaturas de salvamento aquático no âmbito do Corpo de Bombeiros Militar de Alagoas. Atribuindo-lhe:",
+                "a) executar a atividade de salvamento aquático;",
+                "b) inspecionar as embarcações antes da partida e durante o percurso, familiarizando- se com suas particularidades, cumprindo fielmente as normas de manutenção de primeiro escalão;",
+                "c) zelar pela embarcação, inclusive cuidando das ferramentas, acessórios, documentos e impressos;",
+                "d) preencher, no que lhe couber, documentos relativos ao uso e defeitos mecânicos da embarcação, inclusive acidente;",
+                "e) conduzir corretamente a embarcação, obedecendo às disposições das normas vigentes;",
+                "f) efetuar reparações de emergência durante o percurso; e",
+                "g) efetuar a manutenção de primeiro escalão e limpeza da embarcação. 3.1.4 Guarda -vidas (GV) : é o profissional Bombeiro Militar treinado e habilitado na prevenção e salvamento de vidas humanas nos ambientes aquáticos. Atribuindo-lhe:",
+                "a) executar a atividade de salvamento aquático;",
+                "b) deverá inspecionar e zelar pela integridade dos acessórios e equipamentos existentes para o serviço de Guarda -vidas, cabendo o militar mais antig o fazer a devida comunicação, através de expediente, de quaisquer avarias existentes;",
+                "c) o mais antigo presente nos postos deverá informar os componentes da guarnição à central de operações;",
+                "d) deverá informar ao comandante de guarnição quaisquer alterações ou necessidades relacionadas ao serviço;",
+                "e) executar ações preventivas, demarcações de áreas de risco, orientações ao público e o salvamento em sua área de atuação;",
+                "f) o militar mais antigo do posto deve orientar e fiscalizar os demais guarda-vidas sobre a boa prática do serviço, utilização de EPI e sobre o comportamento dentro dos preceitos éticos e organizacionais do CBMAL;",
+                "g) é dever dos Guarda -vidas após as atividades preventivas ou atendimento às ocorrências coletar as informações referentes ao fato e passá-las ao militar mais antigo do posto, a fim de fazer o registro e repassá-lo à central;",
+                "h) o militar mais antigo deve fazer o registro de todas as ações preventivas e atendimentos feitos pelos Guarda-vidas da guarnição repassando-os aos atendentes da central;",
+                "i) caso haja alguma alteração ou acidente envolvendo os guarda-vidas dos postos ou estrutura do Posto, o militar mais antigo deverá relatar o ocorrido por meio de parte ou informação e, se possível, fazer o registro fotográfico, anexando-o ao documento;",
+                "j) preencher os relatórios de ocorrência;",
+                "k) manter atualizados os materiais de Salvamento Aquático e APH nas viaturas e postos dos Guarda-Vidas; 3.1.5 Mergulhador: é o profissional Bombeiro Militar, membro da equipe de mergulho da OBM, qualificado e legalmente habilitado para os exercícios da atividade de mergulho. Atribuindo-lhe:",
+                "a) Realizar conferência diária bem como manutenção de primeiro escalão nos equipamentos de mergulho;",
+                "c) preencher os relatórios de ocorrência;",
+                "d) realizar atividade de busca e resgate em meio subaquático;",
+                "e) Conduzir treinamentos na área de mergulho durante o serviço. 3.1.6 Fiel: é o profissional Bombeiro Militar, membro da equipe de mergulho da OBM, qualificado e legalmente habilitado para auxiliar nas atividades de mergulho. Atribuindo-lhe:",
+                "a) Realizar conferência diária dos equipamentos de mergulho, juntamente com o mergulhador;",
+                "b) Auxiliar na realização manutenção de primeiro escalão dos equipamentos de mergulho;",
+                "c) Participar das instruções conduzidas pelos mergulhadores;",
+                "d) Realizar atividade de orientação das buscas;",
+                "e) Auxiliar os mergulhadores nas suas atividades. 3.2. No Grupamento de Salvamento Aquático, enquanto não houver serviço de guarda, os integrantes das guarnições de serviço, exceto o comandante da prontidão e os condutores de viatura, concorrerão a uma escala de permanência, a fim de manterem a segurança das instalações"
+              ],
+              "source": "cf. CBMAL, DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 3",
+              "match": "exata"
+            }
+          ]
         }
       }
     },
@@ -23978,6 +24520,82 @@
               "caput": "Art. 12 A Central de Operações do Corpo de Bombeiros – COCB, compreende o serviço da UBM responsável pela comunicação operacional da mesma, via atendimento fone 193 ou radiocomunicação, e despacho de viaturas para o atendimento à situações emergenciais.",
               "dispositivos": [],
               "source": "cf. CBMTO, Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB), Anexo 1, Art. 12",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob05": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB05",
+          "docLabel": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)",
+          "excerpts": [
+            {
+              "heading": "DOB 05 — Acionamento do Socorro",
+              "caput": "A padronização do sistema de despacho e composição de socorro, visando a diminuição do tempo-resposta, serão tratados por Diretriz Operacional de Bombeiros específica para o assunto.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 8",
+              "match": "exata"
+            }
+          ]
+        },
+        "al_dob06": {
+          "name": "Alagoas",
+          "abbr": "AL_DOB06",
+          "docLabel": "DOB nº 06 — Acionamento e Controle do Serviço (CBMAL, rev. 2019)",
+          "excerpts": [
+            {
+              "heading": "DOB 06 — Definições (glossário do 193/CIODS)",
+              "caput": "3.1 Acesso ao sistema: Trata da possibilidade de comunicar-se com um dispositivo, meio de armazenamento, unidade de rede, memória, registro ou arquivo visando receber ou fornecer dados. 3.2 Equipe: Dois ou mais indivíduos a quem foi designada uma tarefa comum e estão em comunicação um com outro, coordenam suas atividades como um grupo de trabalho e cuidam da segurança mútua. 3.3 Grade hospitalar: A grade hospitalar indica hierarquização dos hospitais existentes na região, definindo qual é o hospital de maior resolutividade. Isso significa que o paciente deverá receber atendimento qualificado de acordo com a gravidade do trauma. Trata-se de uma regionalização que envolve a integração, em determinada área geográfica os hospitais terciários, secundários e primários, por proximidade e nível de recurso. 3.4 Informação: Interpretação ou significado dos dados. 3.5 L.P.: Linha telefônica privativa interligando dois endereços. 3.6 Médico regulador: Trata-se do elo entre a CIODS e a grade hospitalar. É o Médico responsável pelo acompanhamento das chamadas a ocorrências de Resgate. Atua operacionalmente oferecendo suporte a equipe de triagem telefônica, recebendo informações das guarnições de resgate, fornecendo orientações e selecionando o hospital de destino da vítima de acordo com a gravidade do caso e consequente necessidade de atendimento. 3.7 Nível de recurso: Representa os elementos de composição em recursos humanos e materiais potencialmente exigidos para minimizar os efeitos de um sinistro. O Corpo de Bombeiros, em sua doutrina de atendimento define para cada tipo de ocorrência, o aparato padrão de atendimento em termos de número e tipo de recursos humanos e viaturas especializadas. 3.8 P.A.: Posição de atendimento dos meios do sistema “193”. 3.9 Potencial de risco: O Potencial de risco é diretamente proporcional à estimativa de gravidade da emergência e, por vezes, à quantidade e dificuldade da disponibilização de recursos a serem mobilizados para o atendimento. Esse conceito será utilizado para mensurar os riscos à preservação da vida ao meio ambiente e ao patrimônio. Quanto menor o tempo necessário para a preservação da vida, maior a urgência. 3.10 P.D.R.R: Posto Diretor de Rede de Rádio é o órgão ou estação que supervisiona as estações da rede (ou redes), de modo a assegurar um serviço rápido e eficiente. 3.11 Sistema de informação operacional utilizado pelo CBMAL (SIOBM): O Sistema de informação operacional utilizado pelo CBMAL é o Sistema de Dados Operacionais (SDO) estruturado em formulários digitais e impressos, tabelas de codificação, manuais de preenchimento e um aplicativo para receber, armazenar, processar e disponibilizar para consulta qualitativa e quantitativa as informações operacionais. O SDO é composto pelos módulos de Levantamento de Risco, Controle de Hidrantes; Mapa Força Operacional; Despacho de Socorro; Relatório de Atendimento e Controle de Qualidade do Atendimento. 3.12 Sistema “193”: Meio telefônico para atendimento das solicitações pelo serviço especial telefônico de código “193”. 3.13 S.D.A.C.: Distribuidor Automático de Chamadas. 3.14 Tempo crítico: É o intervalo mensurado a partir da instalação do agravo, processos ou fatores que produzem danos ou prejuízos significativos ou que podem inviabilizar o controle efetivo da emergência. Esse conceito é diretamente proporcional ao potencial de risco. 3.15 Tempo de Alarme: É o período do momento do recebimento da notificação pelo posto de bombeiros até a saída das viaturas do quartel. 3.16 Tempo de Despacho: É o intervalo do momento da finalização da geração da ocorrência por parte da triagem em que se realiza a tomada de decisão quanto ao aparato de atendimento adequado e finaliza quando da notificação dos postos de atendimento. 3.17 Tempo de triagem: É a cronometragem do tempo decorrido do início da ligação telefônica ao encerramento da coleta e processamento de informações, onde foram identificados o endereço, o tipo de ocorrência e o seu potencial de risco. 3.18 Tempo Resposta: O tempo que corresponde à notificação das equipes de socorro até a chegada ao local da emergência. 3.19 Triagem: Trata-se da operação de seleção entre eventos típicos da atividade de bombeiros estimando o potencial de risco e apresentando a melhor solução para o caso. 3.20 Valor social: A pressão social que envolve o atendimento inicial pode muitas vezes justificar o aumento do grau de urgência de um caso simples. Este fator não pode ser negligenciado, pois os interesses da comunidade podem sobrepujar meros quesitos técnicos de avaliação do teatro de operações. O envolvimento da mídia, a velocidade da informação e o processo de massificação de opinião da sociedade podem influenciar no processo de decisão, no tratamento ou no decurso do fato, sempre no sentido de responder aos desejos da comunidade. Na dúvida o bombeiro desloca, na certeza o bombeiro já estará presente.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 3",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 06 — Aplicação (CIODS e Centros de Operações)",
+              "caput": "Esta DOB estabelece os indicadores a serem observados pelas Centrais Integradas de Defesa Social e pelos Centros de Operações de Bombeiros.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 4",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 06 — Condições Gerais (triagem, indicadores, infraestrutura)",
+              "caput": "O fluxo de trabalho deverá atender ao que preconiza os Procedimentos Operacionais Padrão referentes ao Atendimento Não Emergencial, Atendimento do “193”, Despacho de Socorro e Operador de Rádio. O fluxo de atendimento deverá ser realizado seguindo-se os parâmetros do fluxograma básico de atendimento descrito no Anexo A. 5.1 AVALIAÇÃO BÁSICA DO POTENCIAL DE RISCO Para a avaliação básica do potencial de risco deverão ser utilizados os ordenadores de atendimento segundo a natureza da ocorrência: 5.1.1 Incêndios  Há vítimas? Quantas pessoas no local?  Tipo de edificação? Tipo de ocupação? Área aproximada? Altura?  Há fogo? Muito? Só fumaça? Qual a cor?  Qual tipo de material que está queimando? Existem outros materiais? Quais?  Existe possibilidade de propagação?  Existem edificações circunvizinhas? Qual a ocupação? 5.1.2 Acidentes (automobilístico, Ferroviário, Fluvial ou Aeroviário)  Existem vítimas? Quantas? Estão presas na ferragem? Há fogo? Há vaza - mento de combustível?  Qual o tipo de acidente? Quantos veículos? Tipos? Qual a Carga?  As vítimas estão conscientes? Existem hemorragias visíveis?  Qual a idade e sexo das vítimas?  Condições de trânsito no local? Existem outras viaturas no local? De qual ór - gão? 5.1.3 Acidentes Pessoais (agressão, queda, mal súbito e atropelamento)  Tipo de lesão? Região do corpo? Tipo de instrumento utilizado? Quantas víti - mas?  As vítimas estão conscientes? Existem hemorragias visíveis?  Qual a idade e sexo das vítimas?  Altura da queda? Qual o tipo do veículo atropelante? 5.1.4 Produtos Perigosos  Existem vítimas? Animais? Quantas pessoas há no local?  Qual o tipo do Produto ou o seu número (ONU)?  O produto está em veículo ou edificação? Nome da empresa ou transportado - ra?  Existem técnicos ou outras pessoas habilitadas da empresa no local?  Quantidade do produto? Líquido ou gás? Somente vazamento? Ou incêndio? Ou ambos?  Existem edificações circunvizinhas? Qual a ocupação? 5.1.5 Captura e Extermínio (animais diversos ferozes ou não)  Tipo de animal? Está vivo? Está confinado? Está agressivo?  Há vítimas? Quantas? Animais?  O animal está com risco de vida ou ferido? Local onde se encontra? 5.1.6 Afogamento  Número de vítimas?  Estão vivas?  Distância para margem/praia?  Se praia, com ondas?  Se rio, com forte correnteza?  A vítima está segurando em algo para ajudar a flutuar?  No local, existe algum ponto de acesso para viatura e embarcação de salva - mento? 5.1.7 Busca e mergulho 5.1.7.1 De pessoas  Do Solicitante: Alguém viu o Afogamento? Quem viu pode acompanhar a guarnição?  Descrição da Vítima: Sexo? Idade? Cor? Roupas? Problemas existentes ou pré-existentes (Deficiências, problemas mentais, etc..)  Descrição do Local: Onde fica? Açude? Rio? Mar? Profundidade? É navegá - vel para embarcações? Qual a visibilidade da água? O local é poluído? Existe corrente? Existe acesso para viatura e para embarcações?  Descrição da Ocorrência: Qual o horário do ocorrido? O que a vítima estava fazendo?  Alguém irá recepcionar os mergulhadores no local da ocorrência? 5.1.7.2 De bens  Do Solicitante: Especifique o Bem. Quais as dimensões e peso aproximado? A quem pertence o bem? Quem viu o ocorrido? Quem viu pode acompanhar a guarnição?  Descrição do Local: Onde fica? Açude? Rio? Mar? Profundidade? É navegá - vel para embarcações? Qual a visibilidade da água? O local é poluído? Existe corrente? Existe acesso para viatura e para embarcações?  Descrição da Ocorrência: Qual o horário do ocorrido? O que a vítima estava fazendo?  Alguém irá recepcionar os mergulhadores no local da ocorrência? 5.2 FATORES DA TRIAGEM Trata-se dos elementos que concorrem para um resultado da triagem. 5.2.1 Fatores quantitativos Entende-se por fatores quantitativos tudo aquilo que pertence ao domínio dos valores e quantidades numéricas. Figura 01 - Fatores quantitativos preponderantes Resposta Quantitativa Tempo de triagem Número de vítimas Distância de recursosAcesso rápido ao sistema 5.2.2 Fatores qualitativos Consideram-se como fatores qualitativos àqueles que determinam o grau negativo ou positivo de excelência. Figura 02 - Elementos qualitativos preponderantes Resposta Qualitativa Nível do recurso Potencial de risco Valor social Grade hospitalar 5.2.3 Indicadores de qualidade Os tempos máximos para execução das atividades serão de:  Triagem: 1’30”;  Despacho de ocorrências: 1’. 5.3 FASES DA TRIAGEM Representam os estágios a serem observados nos desenvolvimento da triagem pelo atendente ao usuário. 5.3.1 Fase do reconhecimento Essa fase é fundamental porque representa o primeiro contato com a organização. É nesse momento que se inicia a checagem dos requisitos da chamada “hora da verdade”, onde aconteça a projeção da imagem da organização e em que são verificadas as reais competências do serviço, como velocidade de acesso ao centro de atendimento, boa receptividade na mensagem de saudação e a utilização de técnicas de relacionamento interpessoal, transmitindo segurança ao usuário. A grade epistemológica da Hora da verdade do Anexo B representa o alinhamento da eficiência, eficácia e foco desse processo. 5.3.2 Fase interrogativa Nessa fase é que se inicia o processo de triagem telefônica. O seu caráter essencial é a utilização de uma linguagem adequada que permita um processo de comunicação eficiente e objetivo. A conduta interrogativa deve ser dirigida no sentido de produzir informações que permitam a visualização do cenário e o potencial de gravidade. Nessa fase é que incidem reclamações que tendem a ser de ordem emocional. Muitas vezes os detalhes são contados desordenadamente e pode ser difícil acompanhá-los. Torna-se necessário destacar os seus aspectos principais. Para maior eficiência nessa fase torna-se necessário à identificação do tipo psicológico do solicitante e qual postura é mais recomendada ao atendente. 5.3.2.1 Tipos calado, silencioso: Características: Como tratá-lo: Não responde as perguntas; Deixa o atendente falando sozinho; Obter sua confiança; Colocar-se no lugar dele (empatia); Não demonstra o que pensa. Ser breve e sensato; Não perder o domínio da conversa; Forçar o diálogo. 5.3.2.2 Desconfiado Características: Como tratá-lo: Não confia em nada; Gosta de debater; É firme; Suspeita de tudo. Ser seguro ao expor o assunto; Mostrar confiança; Não se apressar, fornecer detalhes. 5.3.2.3 Bem humorado Características: Como tratá-lo: Simplicidade; Gosta de conversar; Não se iludir, ele não é fácil; Conduzir o diálogo; Ser simples, simpático; Tem facilidade em desviar o atendente do assunto Procurar retornar ao assunto. 5.3.2.4 Briguento Características: Como tratá-lo: Gosta de brigar; Discute por qualquer coisa; Não hesita em expor opiniões; É inteligente, as vezes brilhante. Evitar discussões; Não usar o mesmo tom de voz; Direcioná-lo para o bom senso; Não ser bajulador; Saber ouvi-lo. 5.3.3 Fase da decisão É o processamento das informações colhidas para a adoção de uma estratégia de atendimento. 5.3.4 Fase da orientação Caso o fato não de trate de ocorrência que esteja enquadrada na capacidade de resposta operacional de bombeiros, o solicitante deve ser encaminhado ao órgão que corresponda a sua necessidade. A Grade epistemológica da hora da verdade, representa a missão da organização e as expectativas do usuário do 193, conforme representação no Anexo B. 5.4 FASE DA REALIMENTAÇÃO DE INFORMAÇÕES A solicitante nem sempre dispõe de informações sobre a ocorrência que possibilitem uma visualização do cenário. Além disso, dependendo das características da natureza e proporção do fato, a sua evolução pode assumir mudanças extremamente rápidas, o que implica na necessidade do estabelecimento de canais dinâmicos de comunicação, para o acompanhamento e monitoramento de sua evolução. 5.5 ACIONAMENTO DO SOCORRO Para o deslocamento de viaturas despachadas pela Central Integrada de Operações de Defesa Social deve ser obedecido o seguinte código de deslocamento:",
+              "dispositivos": [
+                "a) “código 2”, para viaturas em operação, com dispositivos luminosos e faróis baixos escalado, deve operar os equipamentos ligados;",
+                "b) “código 3”, para viaturas em emergência, com os faróis baixos, dispositivos luminosos e sonoros ligados;",
+                "c) as viaturas que não possuem dispositivos sonoros e luminosos deslocam-se em código “1”, ou seja, serviço não emergencial. 5.6 INFRA-ESTRUTURA O sistema de distribuição de chamadas do serviço “193” deverá ser dimensionado de modo a possuir troncos telefônicos em quantidade suficiente para suprir, no mínimo 90% da demanda de ligações no primeiro toque telefônico em horários de pico. 5.6.1 Cálculo do número de PA´s necessários ao serviço “193”, segundo teoria de tráfego telefônico. Para dimensionamento da capacidade do distribuidor automático de chama - das do serviço “193”, deverão ser adotados os indicadores como base no momento crítico, ou seja, o Horário de Maior Movimento – HMM. Variáveis envolvidas: A - Tempo máximo de ocupação das PAs/hora (segundos); B - Quantidade de ligações/hora;",
+                "C - Tempo total de ocupação dos troncos (total segundos/hora);",
+                "D - Quantidade de troncos. 5.6.1.1 Estimativa da quantidade mínima de PAs: Adota-se o pressuposto de que um posto de atendimento poderá estar sendo utilizado por todo o tempo durante o período de 1 hora, portanto num total de 3.600 segundos ( A - Tempo máximo de ocupação ). O cálculo de C é obtido a partir dos seguintes indicadores: - Número de PAs existente; - Número de ligações por hora; e - Tempo médio de atendimento (seg). Exemplificando: C = 2 x 150 x 12 C = 3600 Observação: Os dados utilizados foram extraídos da CIODS da Região Metro- politana de Maceió e serão utilizados para efeito de exemplificação. O tempo total de ocupação dos troncos (C) foi medido pelo sistema e utili - zando-se a fórmula abaixo e obteve-se a quantidade mínima de PAs que é o ideal para o período (F). F = 3600/3600 F = 1PA Concluímos, portanto, que o número inicial de 2PAs é suficiente para deman - da de até 300 chamadas por hora (o que ocorreria nos horários de maior movimento – HMM). 5.6.1.2 Estimativa do Tempo Real de Ocupação de PA: Presume-se que, em média, se as PA não estivessem congestionadas, o sis - tema perderia cerca de 3 segundos para atender cada chamada entrante, daí calcu - lou-se o tempo real de ocupação de cada PA (G), com a seguinte fórmula: G = A – (B / F) x 3 G = 3.600 – (10/2) x 3 G = 3.600 – (5) x 3 G = 3.600 – 15 G = 3.585seg. 5.6.1.3 Estimativa da Quantidade Real de PA Retornado-se a primeira fórmula e considerando-se, agora, o tempo real de ocupação de cada PA tem-se a quantidade real de PA (H): H = 240/3585 H = 0,067 = 1PA Observação: Essa estimativa não prevê a necessidade de intervalos para descanso. 5.7 SISTEMA DE DISTRIBUIÇÃO DE CHAMADAS O sistema de distribuição de chamadas bem como os troncos telefônicos deverão ser dotados de dispositivo de contingência. 5.8 CADASTRO BÁSICO DE INFORMAÇÕES As equipes de triagem e despacho de ocorrências deverão possuir cadastro de logradouros atualizado de sua circunscrição, dotado de esquemas para pesquisa rápida por meio eletrônico ou documental por meio de mapas onde deverão estar alocados os recursos de interesse ao atendimento a emergências, como Postos de bombeiros, hidrantes, grade hospitalar, vias de trânsito rápido e pontos de risco. 5.9 COBERTURA DO SISTEMA DE COMUNICAÇÕES A estrutura do sistema de rádio deverá possibilitar o estabelecimento das comunicações com os postos de bombeiros e viaturas em toda a área de circunscrição. 5.10 SISTEMA DE ALARME E SOM O sistema de alarme ou de som deverá possuir capacidade de potência compatível com a distribuição de alto-falantes em todas as dependências do quartel. 5.11 AMBIENTE DE TRABALHO As instalações, equipamentos e materiais operacionais utilizados na atividade de acionamento do socorro e controle do serviço deverão estar de acordo com as respectivas Especificações Técnicas de Bombeiros (ETB), devendo atender as Normas Reguladoras de condições ergonômicas (postura das atividades dos funcionários em suas atividades, com avaliação dos postos de trabalho), níveis de intensidade sonora e condições de iluminação."
+              ],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 5",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 06 — Condições Específicas",
+              "caput": "Cada CIODS ou COC deverá possuir norma própria para regular e padronizar o Sistema de Despacho e Composição de Socorro, de acordo com os recursos disponíveis e peculiaridades locais, desde que atenda o tempo crítico relativo à natureza de cada emergência. O Anexo “C” trata dos órgãos de apoio externo e o “D” da composição básica do aparato de atendimento.",
+              "dispositivos": [],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 6",
+              "match": "exata"
+            },
+            {
+              "heading": "DOB 06 — Execução da Atividade",
+              "caput": "",
+              "dispositivos": [
+                "a) Prover o atendimento telefônico das solicitações de emergência pelo telefone 193 e outros meios de entrada da solicitação;",
+                "b) Atender de imediato o chamado “193” com a seguinte saudação: \"Bombeiros emergência\";",
+                "c) Identificar-se sempre que solicitado declinando posto ou graduação e nome;",
+                "d) Ouvir o solicitante com atenção necessária;",
+                "e) Orientar o solicitante sobre a necessidade de agendamento da ocorrência, acionamento do órgão correto e/ou solução particular para a emergência, de caráter não urgente;",
+                "f) Executar a triagem das chamadas;",
+                "g) Classificar o caráter de urgência da emergência;",
+                "h) Realizar o despacho e controle do emprego de recursos;",
+                "i) Efetivar o acionamento e mobilização de recursos de entidades externas por meio de abordagem sistêmica;",
+                "j) Empregar a coordenação, controle e fornecimento de informações sobre o atendimento a emergência;",
+                "k) Manter contato com imprensa e com o órgão de apoio do CBMAL responsável pela assessoria de comunicações;",
+                "l) Cumprir e fiscalizar a aplicação dos Procedimentos Operacionais Padrão; e",
+                "m) As estratégias, o cumprimento de rotinas do fluxo operacional, procedimentos e quantidade e qualidade dos dados coletados, adotados no sistema de atendimento e despacho deverão favorecer o cumprimento do tempo crítico real máximo para cada grupo de ocorrências."
+              ],
+              "source": "cf. CBMAL, DOB nº 06 (Acionamento e Controle do Serviço, rev. 2019), seção 8",
               "match": "exata"
             }
           ]

@@ -30,6 +30,7 @@ STATE_NAMES = {
     'ba': 'Bahia', 'rr': 'Roraima', 'to': 'Tocantins', 'to_corpo': 'Tocantins',
     'al_no03': 'Alagoas', 'al_no04': 'Alagoas', 'al_no06': 'Alagoas',
     'al_no07': 'Alagoas', 'al_no11': 'Alagoas',
+    'al_dob05': 'Alagoas', 'al_dob06': 'Alagoas', 'al_dob07': 'Alagoas', 'al_dob08': 'Alagoas',
     'risg': 'Exército Brasileiro',
     'es': 'Espírito Santo',
 }

@@ -54,6 +54,10 @@ REGULAMENTO_DOCS = {
     "al_no07": {"label": "Norma Operacional nº 07 (CBMAL)", "md": "Alagoas - Norma Operacional 07.md"},
     "al_no11": {"label": "Norma Operacional nº 11 — Canil (CBMAL)", "md": "Alagoas - Norma Operacional 11.md"},
     "risg": {"label": "RISG — R-1 do Exército Brasileiro (Portaria SGEx nº 51/2003)", "md": "RISG.md"},
+    "al_dob05": {"label": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)", "md": "Alagoas - Diretriz Operacional 05.md"},
+    "al_dob06": {"label": "DOB nº 06 — Acionamento e Controle do Serviço (CBMAL, rev. 2019)", "md": "Alagoas - Diretriz Operacional 06.md"},
+    "al_dob07": {"label": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)", "md": "Alagoas - Diretriz Operacional 07.md"},
+    "al_dob08": {"label": "DOB nº 08 — Serviço de Salvamento Aquático e Mergulho (CBMAL, 2022)", "md": "Alagoas - Diretriz Operacional 08.md"},
 }
 
 # ── Fonte primária POR TEMA (decisão do panorama: nunca "MT por padrão") ─────────────
