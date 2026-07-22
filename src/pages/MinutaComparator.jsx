@@ -175,6 +175,7 @@ export default function MinutaComparator({ controlledOrganKey, onOrganKey, contr
   const setOrganKey = k => { if (controlled) onOrganKey?.(k); else setInternalOrganKey(k) }
 
   useEffect(() => {
+    setData(null)
     fetchJson(scenarioDbUrl(cenario, 'comparativo_minuta.json'))
       .then(d => { setData(d); if (!controlled) setInternalOrganKey(d.organs[0]?.key || null) })
       .catch(() => setError(true))
@@ -296,7 +297,7 @@ export default function MinutaComparator({ controlledOrganKey, onOrganKey, contr
 
                 {cenario === 'atual' && (
                   <p className="muted-note" style={{ margin: '4px 0 10px', fontStyle: 'italic' }}>
-                    ⚠ Correspondência automática — sujeita a revisão.
+                    Correspondência automática — sujeita a revisão.
                   </p>
                 )}
 

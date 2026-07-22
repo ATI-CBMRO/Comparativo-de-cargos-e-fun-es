@@ -43,6 +43,7 @@ export default function RegulamentoComparator() {
   const [filter, setFilter] = useState('')
 
   useEffect(() => {
+    setData(null)
     fetchJson(scenarioDbUrl(cenario, 'regulamento_structure.json'))
       .then(d => { setData(d); setChapterId(d.chapters[0]?.id ?? null) })
       .catch(() => setError(true))

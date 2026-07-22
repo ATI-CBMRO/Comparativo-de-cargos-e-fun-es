@@ -54,6 +54,7 @@ test('organKeyOfChapter extrai a key só de capítulos de órgão', () => {
   assert.equal(organKeyOfChapter('organ:dpo'), 'dpo')
   assert.equal(organKeyOfChapter('estrutura'), null)
   assert.equal(organKeyOfChapter('preliminares'), null)
+  assert.equal(organKeyOfChapter('atual:preliminares'), null)
   assert.equal(organKeyOfChapter(null), null)
 })
 

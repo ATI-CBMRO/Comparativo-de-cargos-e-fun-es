@@ -93,6 +93,8 @@ export default function RISubsidioComparativo({ chapterId, setChapterId, stateAb
   const [navMode, setNavMode] = useState('org') // 'org' (capítulos) | 'orgaos'
 
   useEffect(() => {
+    setStructure(null)
+    setComparativo(null)
     Promise.all([
       fetchJson(scenarioDbUrl(cenario, 'minuta_structure.json')),
       fetchJson(scenarioDbUrl(cenario, 'comparativo_minuta.json')),
@@ -184,7 +186,7 @@ export default function RISubsidioComparativo({ chapterId, setChapterId, stateAb
           </div>
           {cenario === 'atual' && (
             <p className="muted-note" style={{ margin: '4px 0 10px', fontStyle: 'italic' }}>
-              ⚠ Correspondência automática — sujeita a revisão.
+              Correspondência automática — sujeita a revisão.
             </p>
           )}
 
