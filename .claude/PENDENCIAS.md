@@ -2,16 +2,22 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
-- [ ] **Regulamento — resíduos da Fase 2 (sinalizados, não resolvidos)**: corpo principal de
-  Tocantins (Art. 1-13,16 — colide numeração com o Anexo 2 em `atribuicoes-funcoes`); os 4 DOBs
-  de Alagoas 05-08 (sem "Art. N", estruturados por seção numerada — extrator atual incompatível);
-  tema `uniformes-apresentacao` (sem achado forte no RISG nas faixas lidas, segue com 1 artigo
-  só de SE). Origem: spec 2026-07-21 (Fatias B/C/D).
-- [ ] **Regulamento — Fase 3 (próximo)**: Wândrio preencher as 27 "Decisões CBMRO" no vault
-  ("Regulamento — Curadoria/", 16 temas 🟡); depois, sessão de "aplicar Decisões" nos dados
-  do portal (mecanismo a desenhar). Minors registrados p/ rodada futura: padronizar os 2
-  estilos de citação do MT adaptado (ambos transparentes); ruído de cabeçalho de PDF em 2
-  citações de SE (corrigir no JSON se incomodar); notas de Fonte magras de propósito.
+- [ ] **Curadoria — Fase 3 (com o Wândrio)**: preencher as **36 "Decisões CBMRO"** no vault —
+  27 do Regulamento ("Regulamento — Curadoria/", 16 temas 🟡) + 9 do Regimento Interno
+  ("Regimento Interno — Curadoria/", 27 órgãos 🟡); depois, sessão de "aplicar Decisões" nos
+  dados do portal (mecanismo a desenhar). Minors registrados p/ rodada futura: padronizar os 2
+  estilos de citação do MT adaptado; ruído de cabeçalho de PDF em 2 citações de SE; notas de
+  Fonte magras de propósito; elisões sem "[...]" em 2 notas de decisão (cada linha é verbatim).
+- [ ] **Inconsistências de DADOS sinalizadas (decidir com o Wândrio, não corrigir em silêncio)**:
+  (a) dpo — `cf. CBMPA, Lei nº 11.060/2025, Art. 16` citado na competência do RO não bate com o
+  excerto verbatim de `alternatives.pa`; (b) assessorias — CBMGO citado sem excerto nas
+  alternatives; (c) ag — CBMMT citado sem excerto. Origem: revisões da Frente B, 22/07/2026.
+- [ ] **4 PNGs soltos na raiz do repo** (`fase2a-*.png`, `fase2c-*.png`, não versionados, de
+  sessão anterior do Wândrio) + `.claude/ULTIMO-CHECKPOINT.md` não versionado — decidir se
+  guarda ou descarta (nunca apagar sem autorização).
+- [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE); DOB-01 de AL
+  ("Terminologia Operacional") citada pela DOB-08 mas não ingerida; dimensionamento técnico do
+  193 (nº de PAs/troncos) só na DOB-06-AL (lacuna registrada no vault).
 - [ ] **Cenário atual — Subsídio** (`/minuta/subsidio` e `/regulamento/subsidio`): ainda gated no atual. Depende de gerar o `comparativo_minuta` do atual (comparação dispositivo-a-dispositivo com outros estados). Origem: sessão cenários 15-16/07/2026.
 - [ ] Organograma — validar a **classificação por natureza** (Direção/Apoio/Execução) dos órgãos: foi inferida, não veio rotulada da LOB. Origem: sessão organograma 10/07/2026.
 - [ ] Organograma (aba Projeção territorial) — validar o **mapeamento proposto** GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova). Depende da redação final da nova LOB. Origem: 10/07/2026.
@@ -22,6 +28,18 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Frente A — resíduos TO/AL/PI resolvidos**: corpo principal de Tocantins (Art. 1-13,16,
+  14 art., corte por linha absoluta) e os 4 DOBs de Alagoas 05-08 (37 seções, novo extrator por
+  seção numerada) incorporados como ALTERNATIVAS (fonte primária de nenhum tema mudou; 413
+  artigos primários intactos; 1166 excertos 100% verbatim); NO-02 de AL confirmada curta (1
+  página); LOB do Piauí destravada por OCR (604 bytes → 27,8KB legíveis, PDF `[OCR]` ao lado do
+  original); fix: RISG não aparece mais como 28º "estado". Revisão final: pronto p/ entrega,
+  0 Critical/Important — 22/07/2026.
+- [x] **Frente B — curadoria do Regimento Interno no Obsidian**: pasta "Regimento Interno —
+  Curadoria/" com 40 notas (1 índice, 3 fontes novas + 4 reusadas, 27 órgãos da minuta LOB
+  futura, 9 decisões RI com candidatas verbatim); vault total 107 notas, 859 wikilinks, 0
+  quebrados; Diário atualizado (linha 22/07). Espelho do formato validado do Regulamento;
+  revisão independente por lote + revisão final — 22/07/2026.
 - [x] **Regulamento — Diagramas destravados** (`/regulamento/diagramas`): decisão de produto —
   o Regulamento é TEMÁTICO, não tem cadeia de comando; em vez de gerar um `commandChart`
   artificial, a tela mostra a **árvore do DOCUMENTO** (Regulamento → 2 Partes → 16 temas,
