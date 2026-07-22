@@ -2889,7 +2889,7 @@ cionado para pessoas com sofrimento ou transtorno mental e com necessidades deco
 álcool e outras drogas, é imperioso que os espaços destinados para políticas públicas de saúde mental 
 fortaleçam vínculos, devolvam a autonomia e cidadania dos sujeitos.
 Sendo assim, ainda que observadas as justi ﬁ cativas do projeto de lei nº 1.123/2019, 
-não podemos considerar que comunidades terapêuticas “ ... ainda que não sejam considerados típicos 
+não podemos considerar que comunidades terapêuticas “... ainda que não sejam considerados típicos 
 equipamentos de saúde, dada a sua característica de atendimento social… ” estejam aptas e/ou habi-
 litadas para o cuidado de pessoas em sofrimento ou com transtorno mental decorrente do uso de álcool 
 e outras drogas.

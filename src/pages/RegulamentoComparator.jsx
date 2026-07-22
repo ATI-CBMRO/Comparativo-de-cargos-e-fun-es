@@ -4,6 +4,7 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { PARTE_HEADERS } from '../lib/regulamentoPartes.js'
 
 function MatchBadge({ match }) {
   const cfg = {
@@ -14,20 +15,21 @@ function MatchBadge({ match }) {
   return <span className={`rg-badge ${cfg.cls}`}>{cfg.label}</span>
 }
 
-// Agrupa capítulos por `group`, preservando a ordem de primeira aparição.
+// Agrupa capítulos em 2 níveis: Parte (Geral/Serviço) e, dentro dela, `group` temático —
+// preservando a ordem de primeira aparição.
 function groupChapters(chapters) {
-  const groups = []
-  const byName = new Map()
+  const porParte = new Map()
   for (const ch of chapters) {
+    const parte = ch.parte ?? 'geral' // RI/estruturas antigas sem `parte` caem em 'geral' (no-op visual, já que hoje só o Regulamento usa este componente)
+    if (!porParte.has(parte)) porParte.set(parte, { parte, label: PARTE_HEADERS[parte] ?? null, groups: [] })
+    const bucket = porParte.get(parte)
     const name = ch.group || 'Outros'
-    if (!byName.has(name)) {
-      const g = { name, chapters: [] }
-      byName.set(name, g)
-      groups.push(g)
-    }
-    byName.get(name).chapters.push(ch)
+    let g = bucket.groups.find(x => x.name === name)
+    if (!g) { g = { name, chapters: [] }; bucket.groups.push(g) }
+    g.chapters.push(ch)
   }
-  return groups
+  // Ordem: geral antes de servico (mesma ordem já usada no JSON/Wizard).
+  return [...porParte.values()].sort((a, b) => (a.parte === 'geral' ? 0 : 1) - (b.parte === 'geral' ? 0 : 1))
 }
 
 export default function RegulamentoComparator() {
@@ -50,8 +52,13 @@ export default function RegulamentoComparator() {
     if (!filter.trim()) return groups
     const q = filter.trim().toLowerCase()
     return groups
-      .map(g => ({ ...g, chapters: g.chapters.filter(c => c.chapterTitle.toLowerCase().includes(q)) }))
-      .filter(g => g.chapters.length > 0)
+      .map(p => ({
+        ...p,
+        groups: p.groups
+          .map(g => ({ ...g, chapters: g.chapters.filter(c => c.chapterTitle.toLowerCase().includes(q)) }))
+          .filter(g => g.chapters.length > 0),
+      }))
+      .filter(p => p.groups.length > 0)
   }, [groups, filter])
 
   // Artigos do capítulo com numeração LOCAL (Art. 1º, 2º... dentro do capítulo).
@@ -130,22 +137,31 @@ export default function RegulamentoComparator() {
                   />
                 </div>
               </div>
-              {filteredGroups.map(g => (
-                <div key={g.name} style={{ marginBottom: 6 }}>
-                  <div className="nav-section-label" style={{ padding: '6px 6px 4px' }}>{g.name}</div>
-                  {g.chapters.map(c => (
-                    <button
-                      key={c.id}
-                      onClick={() => setChapterId(c.id)}
-                      className={`nav-item rg-nav-item${c.id === chapterId ? ' active' : ''}`}
-                      title={c.chapterTitle}
-                    >
-                      <span className="nav-item-label">{c.chapterTitle}</span>
-                    </button>
+              {filteredGroups.map(p => (
+                <div key={p.parte} style={{ marginBottom: 10 }}>
+                  {p.label && (
+                    <div style={{ fontWeight: 800, color: 'var(--cbm-red-700)', fontSize: 10.5, letterSpacing: 0.5, padding: '6px 6px 2px' }}>
+                      {p.label}
+                    </div>
+                  )}
+                  {p.groups.map(g => (
+                    <div key={g.name} style={{ marginBottom: 6 }}>
+                      <div className="nav-section-label" style={{ padding: '6px 6px 4px' }}>{g.name}</div>
+                      {g.chapters.map(c => (
+                        <button
+                          key={c.id}
+                          onClick={() => setChapterId(c.id)}
+                          className={`nav-item rg-nav-item${c.id === chapterId ? ' active' : ''}`}
+                          title={c.chapterTitle}
+                        >
+                          <span className="nav-item-label">{c.chapterTitle}</span>
+                        </button>
+                      ))}
+                    </div>
                   ))}
                 </div>
               ))}
-              {filteredGroups.length === 0 && (
+              {filteredGroups.every(p => p.groups.length === 0) && (
                 <div style={{ padding: 12, fontSize: 12.5, color: 'var(--text-muted)', textAlign: 'center' }}>Nenhum capítulo encontrado.</div>
               )}
             </div>

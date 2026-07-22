@@ -11,16 +11,16 @@ diário oficial Nº 36.283  19
 Quarta-feira, 02 DE JULHO DE 2025
 tabela 26 - Participantes designados pelas instituições
 instituição Representantes
-sedaP andrío andrade de andrade, geraldo t avares, Heloísa figueiredo, italo Marlone gomes sampaio, ivanize dos santos, Maria antonieta Priante, josé ribamar Nogueira, Martha N. g. Pina, oscar f. 
+sedaP andrío andrade de andrade, geraldo tavares, Heloísa figueiredo, italo Marlone gomes sampaio, ivanize dos santos, Maria antonieta Priante, josé ribamar Nogueira, Martha N. g. Pina, oscar f. 
 batista, ozias guedes de aquino, Ubiram da costa e victor tiago da silva catuxo.
-sedeMe luan bandeira almeida, Maria Helena da c. Padilha, Máyra g. guimarães e  r afael teixeira, 
+sedeMe luan bandeira almeida, Maria Helena da c. Padilha, Máyra g. guimarães e  rafael teixeira, 
 seMas diana da s. castro, 
-ideflor -bio cleberson s alomão. estevam coqueiro e laura dias dos santos, 
-eMater -Pará r aimundo ribeiro e v aldeídes Marques lima
-adeP ará Karen Neves e Moacir barbosa, 
-sfa/MaP a otávio durans
-eMbraP a alysson r. b e silva, arystídes r esende silva, a ustrelino s. filho, d ébora veiga de aragão, d elman de a. gonçalves, jamil chaar el-Husny e josé aderito r odrigues filho.
-solidariedad leonardo s . dutra
+ideflor-bio cleberson salomão. estevam coqueiro e laura dias dos santos, 
+eMater-Pará raimundo ribeiro e valdeídes Marques lima
+adePará Karen Neves e Moacir barbosa, 
+sfa/MaPa otávio durans
+eMbraPa alysson r. b e silva, arystídes resende silva, austrelino s. filho, débora veiga de aragão, delman de a. gonçalves, jamil chaar el-Husny e josé aderito rodrigues filho.
+solidariedad leonardo s. dutra
 10. foNtES coNSuLtADAS 
 Agência Nacional de Águas e Saneamento Básico. - 2. ed. -- Brasília: ANA, 2021. 130 p.: il. ISBN: 978-65-88101-10-0. Disponível em: https://portal1.
 snirh.gov.br/ana/apps/storymaps/stories/a874e62f27544c6a986da1702a911c6b 
@@ -28,17 +28,17 @@ aNUalPec, 2022. anuário da Pecuária brasileira. 29ª edição. disponível em:
 pec-2022.html 
 BRASIL, Ministério da Ciência, Tecnologia e Inovações. Resultados do Inventário nacional por unidade federativa de emissões de gases de efeito estufa. 
 Coordenação Geral de Ciência do Clima e Sustentabilidade, 2021a. Disponível em:
-https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/arquivos/livroresUltadoiNveNtario30062021Web .pdf acessado em 15/11/2022 
+https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/arquivos/livroresUltadoiNveNtario30062021Web.pdf acessado em 15/11/2022 
 brasil. Ministério da agricultura, Pecuária e abastecimento. Plano setorial para adaptação à Mudança do clima e baixa emissão de carbono na agrope-
-cuária 2020-2030: Plano operacional / Ministério da agricultura, Pecuária e abastecimento. secretaria de inovação, desenvolvimento r ural e irrigação. 
-– brasília: Mapa/dePros , 2021b. 133p. isbN: 978-65-86803-63-1
+cuária 2020-2030: Plano operacional / Ministério da agricultura, Pecuária e abastecimento. secretaria de inovação, desenvolvimento rural e irrigação. 
+– brasília: Mapa/dePros, 2021b. 133p. isbN: 978-65-86803-63-1
 CEEG, 2022. Desaﬁos e Oportunidades para Redução das Emissões de Metano no Brasil. Outubro de 2002. Disponível em:
 https://seeg-br.s3.amazonaws.com/documentos%20analiticos/estudo_Metano/obsclima_seeg2022_fiNal.pdf acessado em dezembro de 2022. 
 dias filho, Moacyr bernardino. soluções para problemas recorrentes em pastagens no Pará. brasília, df. embrapa, 2017. Pdf (27 p.): il. color. disponível em:
 https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1077891/1/cartilhasolucoespastagemaiNfo.pdf . acessado em 17 de novembro de 2022. 
 ibge, 2017. censo agropecuário brasileiro. disponível em: https://censoagro2017.ibge.gov.br/ 
 ibge, 2021. Produção agropecuária brasileira. disponível em: https://www.ibge.gov.br/explica/producao-agropecuaria/ 
-laboratório de Processamento de imagens e geoprocessamento da Universidade f ederal de goiás (lapig/Ufg).2022. disponível em: https://atlasdas-
+laboratório de Processamento de imagens e geoprocessamento da Universidade federal de goiás (lapig/Ufg).2022. disponível em: https://atlasdas-
 pastagens.ufg.br/map 
 Nota técnica sobre a incorporação de questões de gênero e diversidade nos Planos Estaduais de Agricultura de Baixo Carbono - ABC+ elaborada pelo 
 Programa das Nações Unidas para o Meio ambiente (PNUMa) em parceria com o grupo de Políticas Públicas (gPP/esalq)
@@ -47,25 +47,25 @@ Pará. secretaria de desenvolvimento agropecuário e Pesca. Núcleo de Planejame
 mativo valor bruto de Produção - vbP referente ao ano de 2021.  2a edição 2022. disponível em: 
 http://www.sedap.pa.gov.br/sites/default/ﬁles/Boletim%2001%20-%20VALOR%20BRUTO%20DA%20PRODU%C3%87%C3%83O%20-%20Brasil%20
 e%20estado%20do%20Par%c3%a1%20-%20janeiro-2022%20%281%29_1.pdf acessado em 16 de novembro de 2022. 
-r ede ilfP disponível em: https://redeilpf.org.br/
+rede ilfP disponível em: https://redeilpf.org.br/
 Protocolo: 1216324
-LEi  Nº 11.060, DE 1º DE J uLHo  DE 2025
+LEi Nº 11.060, DE 1º DE J uLHo DE 2025
 dispõe sobre a organização básica e fixa o efetivo do corpo de bombeiros 
-Militar do Pará (cbMP a).
-a asseMbleia legislativa do estado do P ará estatui e eu sanciono 
+Militar do Pará (cbMPa).
+a asseMbleia legislativa do estado do Pará estatui e eu sanciono 
 a seguinte lei:
 tÍtuLo  i
-DAS DiSPoS iç ÕES fuNDAMENtAiS
+DAS DiSPoS içÕES fuNDAMENtAiS
 cAPÍtuLo  i
-DiSPoS iç ÕES GERAiS
+DiSPoS içÕES GERAiS
 art. 1º  o corpo de bombeiros Militar do estado do Pará (cbMPa) é institui-
 ção permanente, força auxiliar e reserva do exército, organizado com base 
 na hierarquia e disciplina militares, subordinado ao governador do estado, 
-o qual é o seu comandante supremo, destina-se a realizar serviços espe -
+o qual é o seu comandante supremo, destina-se a realizar serviços espe-
 cíﬁcos de Bombeiro Militar e de Proteção e Defesa Civil no Estado do Pará, 
 atividade-ﬁm da corporação, visando à preservação da ordem pública, in-
 columidade das pessoas, do patrimônio e do meio ambiente, nos termos 
-desta lei e conforme preceituam os arts. 42 e 144 da constituição f ederal 
+desta lei e conforme preceituam os arts. 42 e 144 da constituição federal 
 e o art. 200 da constituição estadual.
 art. 2º  o corpo de bombeiros Militar do Pará (cbMP a) compõe o siste-
 ma de segurança Pública do estado, é vinculado à secretaria de estado 
@@ -140,7 +140,7 @@ Corpo de Bombeiros Militar do Pará (CBMPA) mediante convênio ﬁrmado
 entre o Município e o estado;
 XVI - supervisionar e coordenar os proﬁssionais e as instituições civis do 
 município que atuarão nas atividades de competência do Corpo de Bombei-
-ros Militar do Pará (cbMP a), nos termos da legislação em vigor; e
+ros Militar do Pará (cbMPa), nos termos da legislação em vigor; e
 
 ---
 
@@ -154,7 +154,7 @@ com lesões corporais traumáticas, afogamentos, tentativa de homicídio,
 lesão grave e tentativa de suicídio e acidentes envolvendo choque elétrico, 
 queimaduras e partos de emergência.
 tÍtuLo  ii
-DA oRGANizAção  BÁSicA Do  coRPo  DE BoMBEiRoS MiLitAR
+DA oRGANizAção  BÁSicA Do coRPo DE BoMBEiRoS MiLitAR
 cAPÍtuLo  i
 DA EStRutuRA GERAL
 art. 5º  a organização básica do corpo de bombeiros Militar do Pará (cbM-
@@ -228,20 +228,20 @@ II - a presidência do Alto Comando do Corpo de Bombeiros Militar do Pará
 (CBMPA), da Comissão de Promoção de Oﬁciais e do Conselho do Mérito 
 bombeiro Militar;
 iii - encaminhar ao órgão competente, o projeto de orçamento anual refe-
-rente ao corpo de bombeiros Militar do Pará (cbMP a) e participar, no que 
+rente ao corpo de bombeiros Militar do Pará (cbMPa) e participar, no que 
 couber, da elaboração do Plano Plurianual;
 IV - celebrar convênios e contratos de interesse do Corpo de Bombeiros 
-Militar do Pará (cbMP a) com entidades de direito público ou privado, nos 
+Militar do Pará (cbMPa) com entidades de direito público ou privado, nos 
 termos da lei;
 v - nomear e exonerar bombeiros militares no exercício das funções de 
 direção, comando e assessoramento, nos termos desta lei;
 vi - autorizar bombeiros militares e servidores civis da corporação a se 
 afastarem do estado;
 vii - ordenar o emprego de verbas orçamentárias ou de créditos abertos 
-em favor do corpo de bombeiros Militar do Pará (cbMP a) e de outros re -
+em favor do corpo de bombeiros Militar do Pará (cbMPa) e de outros re -
 cursos que este venha a receber, oriundos de quaisquer fontes de receitas;
 viii - expedir os atos necessários para a administração do corpo de bom-
-beiros Militar do Pará (cbMP a);
+beiros Militar do Pará (cbMPa);
 ix - incorporar praças e praças especiais;
 X - promover praças e declarar aspirantes-a-oﬁcial;
 xi - conceder férias, licenças ou afastamentos de qualquer natureza;
@@ -279,7 +279,7 @@ v - previsão de criação ou extinção de unidades bombeiros militares e de
 estrutura organizacional.
 Subseção ii
 Do Alto comando
-art. 9º  o alto comando do corpo de bombeiros Militar do Pará (cbMP a) é 
+art. 9º  o alto comando do corpo de bombeiros Militar do Pará (cbMPa) é 
 o órgão colegiado de direção-geral, com atribuições deliberativas e consul-
 tivas, assim constituído:
 i - Presidente: comandante-geral;
@@ -297,14 +297,14 @@ III - membros efetivos: 3 (três) oﬁciais do último posto da corporação,
 designados pelo comandante-geral, podendo ser reconduzidos, individual-
 mente, salvo o previsto no § 4º do art. 10 desta lei.
 art. 10.  são atribuições do alto comando do corpo de bombeiros Militar 
-do Pará (cbMP a), no âmbito da corporação:
+do Pará (cbMPa), no âmbito da corporação:
 i - em caráter consultivo, manifestar-se sobre:
-a) orçamento anual do corpo de bombeiros Militar do Pará (cbMP a); e
+a) orçamento anual do corpo de bombeiros Militar do Pará (cbMPa); e
 b) outros assuntos de interesse do corpo de bombeiros Militar do Pará 
-(cbMP a);
+(cbMPa);
 ii - em caráter deliberativo, manifestar-se sobre:
 a) elaboração de reforma ou projeto de lei que envolva o corpo de bombei-
-ros Militar do Pará (cbMP a);
+ros Militar do Pará (cbMPa);
 b) expedição de atos normativos provenientes de suas deliberações;
 c) propostas referentes ao aumento do efetivo e criação, e extinção de 
 cargos, a serem encaminhadas ao governador do estado;
@@ -375,7 +375,7 @@ termos do regulamento desta lei.
 comandante-geral.
 § 5º  A Secretaria será cheﬁada por oﬁcial.
 art. 12.  o chefe do estado-Maior geral do corpo de bombeiros Militar 
-do Pará (cbMP a), equiparado a secretário-adjunto de estado, faz jus às 
+do Pará (cbMPa), equiparado a secretário-adjunto de estado, faz jus às 
 prerrogativas e honras do referido cargo, com remuneração prevista no 
 parágrafo único da lei estadual nº 7.519, de 10 de maio de 2011, sendo 
 indicado pelo comandante-geral e nomeado pelo chefe do Poder executivo 
@@ -402,13 +402,13 @@ beiros Militar do Pará (CBMPA) não recaia no oﬁcial mais antigo, este terá
 precedência hierárquica e funcional sobre os demais oﬁciais, exceto sobre 
 o comandante-geral.
 § 3º  Nos impedimentos ou ausências do Chefe do Estado-Maior Geral do 
-corpo de bombeiros Militar do Pará (cbMP a), responderá por esta função, 
+corpo de bombeiros Militar do Pará (cbMPa), responderá por esta função, 
 seguindo a ordem de prioridade: o coordenador-adjunto estadual de Pro-
 teção e d efesa civil, o corregedor-geral, o comandante operacional e o 
 chefe do departamento-geral mais antigo.
 Subseção iv
 Da coordenadoria Estadual de Proteção e Defesa civil do Pará
-art. 13.  a coordenadoria estadual de Proteção e defesa civil do Pará (ce -
+art. 13.  a coordenadoria estadual de Proteção e defesa civil do Pará (ce-
 dec), órgão de direção-geral, é o órgão central e coordenador do sistema 
 estadual de Proteção e defesa civil (sePdec) tem a missão de contribuir 
 para proteção da vida, patrimônio e meio ambiente, atendendo a popu-
@@ -431,22 +431,22 @@ resposta;
 vi - fazer mobilização entre os órgãos governamentais e não governa -
 mentais; e
 vii - fomentar a proteção e defesa civil nos municípios do estado.
-§ 1º  a coordenadoria estadual de Proteção e defesa civil do Pará (cedec ) 
+§ 1º  a coordenadoria estadual de Proteção e defesa civil do Pará (cedec) 
 tem sua estrutura e regimento próprios e dotação orçamentária especíﬁca 
 para os ﬁns que se destina.
 § 2º  O Coordenador Estadual de Proteção e Defesa Civil do Pará é o Co-
-mandante-Geral do corpo de bombeiros Militar do Pará (cbMP a).
+mandante-Geral do corpo de bombeiros Militar do Pará (cbMPa).
 § 3º  O Coordenador-Adjunto Estadual de Proteção e Defesa Civil, prepos-
 to do Comandante-Geral, é equiparado a secretário-adjunto de estado, 
 fazendo jus às prerrogativas e honras do referido cargo, com remuneração 
 prevista no parágrafo único do art. 1º da lei estadual nº 7.519, de 2011, 
-sendo indicado pelo comandante-g eral e nomeado pelo chefe do Poder 
+sendo indicado pelo comandante-geral e nomeado pelo chefe do Poder 
 Executivo Estadual dentre os oﬁciais da ativa da corporação e do último posto 
 do Quadro de Oﬁciais Bombeiro Militar Combatente, nos termos da lei.
-art. 14.  a coordenadoria estadual de Proteção e defesa civil do Pará (ce -
+art. 14.  a coordenadoria estadual de Proteção e defesa civil do Pará (ce-
 dec) será constituída por:
 i - coordenador estadual de Proteção e defesa civil;
-ii - coordenador- adjunto estadual de Proteção e defesa civil;
+ii - coordenador-adjunto estadual de Proteção e defesa civil;
 iii - divisão de gestão de risco;
 iv - divisão de gerenciamento de desastres;
 v - divisão administrativa;
@@ -457,12 +457,12 @@ viii - secretaria.
 Defesa Civil do Pará (CEDEC) são oﬁciais superiores do Quadro de Oﬁciais 
 de bombeiro Militar (qobM), indicados pelo comandante-geral e de livre 
 nomeação do chefe do Poder executivo estadual.
-§ 2º  vetado .
-§ 3º  o coordenador- adjunto estadual de Proteção e defesa civil terá um 
+§ 2º  vetado.
+§ 3º  o coordenador-adjunto estadual de Proteção e defesa civil terá um 
 Ajudante de Ordens, exercido por 1 (um) oﬁcial nomeado pelo Comandan-
 te-geral.
 § 4º  Os Comandos Regionais de Bombeiros de Proteção e Emergência 
-ambiental (crb) terão, em sua estrutura, uma coordenadoria r egional de 
+ambiental (crb) terão, em sua estrutura, uma coordenadoria regional de 
 Proteção e defesa civil, cuja coordenação será exercida, cumulativamente, 
 pelos respectivos comandantes regionais.
 § 5º  as Unidades bombeiro Militar de multiemprego terão, em sua es-
@@ -475,14 +475,14 @@ Subseção v
 Da corregedoria-Geral
 art. 15.  a corregedoria-geral (correg), diretamente vinculada ao co-
 mandante-geral, é o órgão correcional do corpo de bombeiros Militar do 
-Pará (cbMP a) responsável pelo assessoramento disciplinar, pela orienta -
+Pará (cbMPa) responsável pelo assessoramento disciplinar, pela orienta -
 ção, prevenção e ﬁscalização das atividades funcionais e da conduta pro-
 ﬁssional, visando o aprimoramento da ética, da disciplina e da hierarquia 
 entre os integrantes da corporação, assim constituída:
 i - corregedor-geral;
 ii - subcorregedor-geral;
 iii - comissão disciplinar geral;
-iv - comissão disciplinar de r ecurso;
+iv - comissão disciplinar de recurso;
 V - Seção de Inteligência Correcional e Operações;
 vi - seção de gestão de Processos e apoio administrativo; e
 vii - secretaria.
@@ -502,13 +502,13 @@ ral na condição de presidente e mais 3 (três) oﬁciais membros, preferen -
 cialmente bacharéis em direito, bem como até 4 (quatro) praças nomea -
 dos como auxiliares, obrigatoriamente bacharéis em direito, conforme a 
 necessidade do serviço.
-§ 4º  a comissão disciplinar de r ecursos será composta pelo corregedor-
+§ 4º  a comissão disciplinar de recursos será composta pelo corregedor-
 Geral na condição de presidente e até de 3 (três) oﬁciais membros, prefe-
 rencialmente bacharéis em direito.
-§ 5º  as comissões disciplinares de núcleos de corregedorias r egionais, 
+§ 5º  as comissões disciplinares de núcleos de corregedorias regionais, 
 vinculadas diretamente ao subcorregedor-geral, com estrutura funcional e 
 competência correcional no âmbito de suas circunscrições, serão instaladas 
-no ato de criação e ativação dos comandos r egionais de bombeiros de 
+no ato de criação e ativação dos comandos regionais de bombeiros de 
 Proteção e Emergência Ambiental (CRB).
 § 6º  Na falta de oﬁciais do Quadro de Oﬁciais Bombeiro Militar Combatente 
 (qobM) bacharéis em direito para as funções da comissão disciplinar geral 
@@ -522,7 +522,7 @@ réis em direito.
 termos do regulamento desta lei.
 § 8º  os membros das comissões e seções poderão, excepcionalmente, 
 exercer suas atividades em comissões e seções diversas para as quais 
-foram nomeados, por ato motivado do comandante-geral, ouvido o corre -
+foram nomeados, por ato motivado do comandante-geral, ouvido o corre-
 gedor-geral, visando ao interesse público.
 
 ---
@@ -561,7 +561,7 @@ de Oﬁciais Bombeiro Militar Combatente (QOBM).
 termos do regulamento desta lei.
 § 5º  Na ausência do Comandante Operacional responderá pelo Comando 
 de operações o comandante do órgão de direção intermediária mais antigo 
-da r egião Metropolitana de belém.
+da região Metropolitana de belém.
 Subseção vii
 Dos Departamentos-Gerais
 art. 17.  os departamentos-gerais são órgãos de direção-geral, compre -
@@ -591,7 +591,7 @@ combatente (qobM).
 § 3º   o assistente do departamento-geral de administração (dga) é um 
 oﬁcial no posto de Tenente-Coronel do Quadro de Oﬁciais Bombeiro Militar 
 combatente (qobM).
-§ 4º  vetado .
+§ 4º  vetado.
 art. 19.  o departamento-geral de Pessoal (dgP) é responsável pela dire-
 ção e pelo controle das atividades de pessoal da corporação relacionadas 
 ao ingresso, à identiﬁcação, à classiﬁcação e à movimentação, aos cadas-
@@ -603,7 +603,7 @@ i - chefe do departamento-geral de Pessoal (dgP);
 ii - subchefe do departamento-geral de Pessoal (dgP);
 iii - seção de controle de Pessoal;
 iv - seção de Pagamento de Pessoal;
-v - seção de r ecrutamento, seleção e inclusão;
+v - seção de recrutamento, seleção e inclusão;
 VI - Seção de Identiﬁcação; e
 vii - secretaria.
 § 1º  O Chefe do Departamento-Geral de Pessoal (DGP) é um oﬁcial do 
@@ -666,10 +666,10 @@ Emergências (DGSCI) é oﬁcial no posto de Tenente-Coronel do Quadro de
 Oﬁciais Bombeiro Militar Combatente (QOBM), o qual responde pela che -
 ﬁa do Departamento-Geral de Segurança contra Incêndios e Emergências 
 (DGSCI) na ausência do titular e exerce a supervisão das Seções de Ativi-
-dades técnicas (sat s) instaladas nas Unidades bombeiro Militar.
+dades técnicas (sats) instaladas nas Unidades bombeiro Militar.
 § 3º  As seções do Departamento-Geral de Segurança contra Incêndios e 
 Emergências (DGSCI) são cheﬁadas por oﬁciais superiores do Quadro de Oﬁ-
-ciais bombeiro Militar combatente (qob M), com exceção da seção de cre-
+ciais bombeiro Militar combatente (qobM), com exceção da seção de cre-
 denciamento de Empresas e Proﬁssionais que será por oﬁcial intermediário.
 § 4º  Cada seção poderá ser desdobrada em até 3 (três) subseções, nos 
 termos do regulamento desta lei.
@@ -682,7 +682,7 @@ e o processamento das promoções, devendo ser assim constituída:
 i - Presidente: comandante-geral;
 ii - membros natos:
 a) chefe do estado-Maior geral; e
-b) chefe do departamento-geral de Pessoal (dgP), na qualidade de secre -
+b) chefe do departamento-geral de Pessoal (dgP), na qualidade de secre-
 tário da Comissão de Promoção de Oﬁciais (CPO); e
 III - membros efetivos: 4 (quatro) oﬁciais do último posto da corporação, 
 designados pelo comandante-geral.
@@ -771,7 +771,7 @@ nadas com a defesa do patrimônio público, auditoria, orientação, ﬁscaliza-
 ﬁnanceira, patrimonial e de gestão de pessoas no âmbito da corporação, 
 sem prejuízo das demais atribuições deﬁnidas em lei, assim constituída:
 i - controlador;
-ii - seção de a uditorias;
+ii - seção de auditorias;
 iii - seção de análise de conformidade Normativa;
 iv - seção contábil, orçamentária e financeira; e
 v - secretaria.
@@ -809,7 +809,7 @@ Art. 28.  O Centro de Inteligência (CEINT) é órgão de direção-geral, subor
 dinado ao comandante-geral, responsável por planejar, coordenar, execu-
 tar, ﬁscalizar, controlar, articular, supervisionar e gerenciar as atividades de 
 inteligência bombeiro militar, no âmbito do Corpo de Bombeiros Militar do 
-Pará (cbMP a), dentro do território paraense, e assessorar o comandante-
+Pará (cbMPa), dentro do território paraense, e assessorar o comandante-
 geral da corporação nos assuntos de cunho estratégico, tático e opera -
 cional que lhe forem conﬁados, além de se interrelacionar com os demais 
 órgãos estaduais de inteligência e do Sistema Brasileiro de Inteligência 
@@ -820,7 +820,7 @@ iii - seção de segurança orgânica; e
 iv - secretaria.
 § 1º  A Cheﬁa do Centro de Inteligência (CEINT) será exercida por 1 (um) 
 oﬁcial do último posto do Quadro de Oﬁciais Bombeiro Militar Combatente 
-(qobM), indicado pelo comandante- geral e de livre nomeação do chefe do 
+(qobM), indicado pelo comandante-geral e de livre nomeação do chefe do 
 Poder executivo estadual.
 § 2º  As seções serão cheﬁadas por oﬁciais, de livre escolha do Coman -
 dante-geral.
@@ -859,7 +859,7 @@ ii - subcomandante;
 iii - seção de administração;
 iv - seção Planejamento, instrução e operações; e
 v - Núcleo de corregedoria.
-§ 1º  as funções de subcomandante dos comandos r egionais de bombei-
+§ 1º  as funções de subcomandante dos comandos regionais de bombei-
 ros de Proteção e Emergência Ambiental (CRB) e do Comando de Missões 
 Especiais Bombeiro Militar (CME-BM) serão exercidas por oﬁcial no posto 
 de Tenente-Coronel do Quadro de Oﬁciais Bombeiro Militar Combatente 
@@ -868,8 +868,8 @@ de Tenente-Coronel do Quadro de Oﬁciais Bombeiro Militar Combatente
 gionais de Bombeiros de Proteção e Emergência Ambiental (CRB) e do 
 comando de Missões especiais bombeiro Militar (cMe-bM) responde o co-
 mandante da Unidade bombeiro Militar mais antigo, a ele subordinada.
-§ 3º  o detalhamento da estrutura, as atribuições, o efetivo, a denomina -
-ção e a localização dos comandos r egionais de bombeiros de Proteção e 
+§ 3º  o detalhamento da estrutura, as atribuições, o efetivo, a denomina-
+ção e a localização dos comandos regionais de bombeiros de Proteção e 
 Emergência Ambiental (CRB) e do Comando de Missões Especiais Bombei-
 ro Militar (cMe-bM) serão estabelecidos no regulamento desta lei.
 Subseção ii
@@ -881,7 +881,7 @@ apoio logístico, ﬁnanças, contratações e aquisições, tecnologia da infor
 i - diretoria de apoio logístico (dal);
 ii - diretoria de finanças (df);
 iii - diretoria de contratações e aquisições (dca);
-iv - diretoria de t ecnologia da informação e comunicação (dtic); e
+iv - diretoria de tecnologia da informação e comunicação (dtic); e
 v - diretoria de saúde (ds).
 art. 33.  À diretoria de apoio logístico (dal), subordinada ao departamen-
 to-Geral de Administração (DGA), compete planejar, coordenar, ﬁscalizar e 
@@ -956,7 +956,7 @@ v - seção de sistemas de informação; e
 vi - secretaria.
 § 1º  O Diretor é função ocupada por oﬁcial do último posto do Quadro 
 de Oﬁciais Bombeiro Militar Combatente (QOBM) ou do Quadro de Oﬁciais 
-complementar bombeiro Militar (qocbM), de livre escolha do comandan -
+complementar bombeiro Militar (qocbM), de livre escolha do comandan-
 te-geral.
 § 2º  O Subdiretor é função ocupada por oﬁcial no posto de Tenente-Co -
 ronel.
@@ -967,13 +967,13 @@ art. 37.  À diretoria de saúde (ds), subordinada ao departamento-geral
 de Pessoal (dgP), compete o planejamento, a gestão e a execução das 
 ações de assistência relacionadas à saúde e atenção biopsicossocial do 
 bombeiro militar, seus dependentes legais, bem como dos animais do cor-
-po de bombeiros Militar do Pará (cbMP a), sendo assim constituída:
+po de bombeiros Militar do Pará (cbMPa), sendo assim constituída:
 i - direção;
 ii - subdireção;
 iii - divisão Médica;
 iv - divisão de Perícias Médicas;
 v - divisão odontológica;
-vi - divisão de a tenção biopsicossocial; e
+vi - divisão de atenção biopsicossocial; e
 vii - secretaria.
 § 1º  O Diretor é função ocupada por oﬁcial do último posto do Quadro de 
 Oﬁciais Bombeiro Militar Combatente (QOBM) ou do Quadro de Oﬁciais de 
@@ -987,7 +987,7 @@ Seção iii
 Dos Órgãos de Apoio
 art. 38.  os órgãos de apoio compreendem:
 i - academia bombeiro Militar;
-ii - centro de f ormação, aperfeiçoamento e especialização;
+ii - centro de formação, aperfeiçoamento e especialização;
 iii - centro de capacitação física e desporto;
 iv - centro de suprimento e Manutenção de viaturas e Material opera-
 cional;
@@ -1028,8 +1028,8 @@ Major do Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM).
 termos do regulamento desta lei.
 Subseção ii
 Do centro de formação, Aperfeiçoamento e Especialização
-art. 40.  o centro de f ormação, aperfeiçoamento e especialização “Maj 
-bM Henrique r ubim” (cfae) é órgão de apoio subordinado ao departa-
+art. 40.  o centro de formação, aperfeiçoamento e especialização “Maj 
+bM Henrique rubim” (cfae) é órgão de apoio subordinado ao departa-
 mento-geral de cultura, educação e Pesquisa (dgceP), responsável pela 
 realização dos cursos de formação, adaptação e aperfeiçoamento de Praças 
 e especialização de bombeiros militares, sendo assim constituído:
@@ -1038,7 +1038,7 @@ II - Subcheﬁa;
 iii - seção de ensino;
 iv - seção administrativa;
 v - seção do corpo de alunos; e
-vi - seção de f ormação de condutores.
+vi - seção de formação de condutores.
 § 1º  O cargo de Cheﬁa será exercido por oﬁciais no posto de Tenente-Co-
 ronel do Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM).
 § 2º  O cargo de Subcheﬁa será exercido por oﬁciais no posto de Major do 
@@ -1054,8 +1054,8 @@ e desporto na corporação, ligadas ao treinamento físico militar, avaliação
 física, treinamento desportivo e áreas correlatas à capacitação ao exercício 
 da proﬁssão bombeiro militar, sendo assim constituído:
 I - Cheﬁa;
-ii - seção de a valiação e Pesquisa;
-iii - seção de t reinamento físico; e
+ii - seção de avaliação e Pesquisa;
+iii - seção de treinamento físico; e
 iv - seção de desporto.
 § 1º  O cargo de Chefe será exercido por oﬁciais no posto de Tenente-Coro-
 nel do Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM).
@@ -1133,7 +1133,7 @@ Parágrafo único.  A Cheﬁa da Capelania será exercida por oﬁcial, preferen
 cialmente do Quadro de Oﬁciais Capelães Bombeiro Militar.
 Subseção viii
 Da Banda de Música
-art. 46.  a banda de Música, órgão de apoio subordinado à ajudância-ge -
+art. 46.  a banda de Música, órgão de apoio subordinado à ajudância-ge-
 ral, destina-se a realizar concertos, formaturas, eventos e outras solenida-
 des de interesse da corporação, sendo assim constituída:
 I - Cheﬁa; e
@@ -1151,7 +1151,7 @@ art. 48.  as Unidades bombeiro Militar de multiemprego são compostas por:
 i - grupamento bombeiro Militar (gbM);
 ii - subgrupamento bombeiro Militar (sgbM);
 iii - seção bombeiro Militar (sbM);
-iv - Posto a vançado bombeiro Militar (PabM); e
+iv - Posto avançado bombeiro Militar (PabM); e
 v - Posto de bombeiro Militar (PbM).
 § 1º  os Postos de bombeiro Militar (PbMs) são constituídos apenas por 
 guarnições de serviço, sendo seu efetivo oriundo dos grupamentos ou sub-
@@ -1159,7 +1159,7 @@ grupamentos a que se subordinam.
 § 2º  a criação de novos grupamentos, subgrupamentos e Postos avança-
 dos bombeiro Militar (PabM) implicará na subordinação direta aos coman-
 dos Regionais de Bombeiros de Proteção e Emergência Ambiental (CRB) 
-da referida r egião integrada de segurança Pública, conforme circunscrição 
+da referida região integrada de segurança Pública, conforme circunscrição 
 estabelecida no quadro de organização, constante no anexo iii desta lei.
 § 3º  os grupamentos, subgrupamentos e Postos avançados bombeiro 
 Militar (PabMs), através da seção de atividades técnicas, são responsáveis 
@@ -1183,7 +1183,7 @@ a seguinte organização:
 i - comandante;
 ii - subcomandante;
 iii - seção administrativa;
-iv - seção de a tividades técnicas; e
+iv - seção de atividades técnicas; e
 v - seção de Proteção e defesa civil.
 § 1º  os comandantes e subcomandantes dos grupamentos serão, res -
 pectivamente, oﬁciais do posto de Tenente-Coronel e Major do Quadro de 
@@ -1210,18 +1210,18 @@ Subseção iii
 Dos Postos Avançados Bombeiro Militar
 art. 52.  os Postos avançados bombeiro Militar (P abMs) são as meno -
 res unidades independentes de execução operacional e estrutura física da 
-corporação, subordinados aos comandos r egionais correspondentes, de 
+corporação, subordinados aos comandos regionais correspondentes, de 
 acordo com a sua circunscrição, sendo assim constituídos:
 i - comandante;
 ii - seção administrativa; e
-iii - seção de a tividades técnicas.
+iii - seção de atividades técnicas.
 § 1º  O comando do Posto Avançado será exercido por 1 (um) oﬁcial.
 § 2º  O comando do Posto Avançado será acumulado com a cheﬁa da Seção 
 de atividades técnicas.
 Subseção iv
 Do Grupamento Marítimo e fluvial
 art. 53.  o grupamento Marítimo e fluvial (gMaf) é órgão de execução 
-do corpo de bombeiros Militar do Pará (cbMP a), subordinado ao comando 
+do corpo de bombeiros Militar do Pará (cbMPa), subordinado ao comando 
 de Missões especiais bombeiro Militar (cMe-bM), tendo como atribuições 
 as ações de prevenção de acidentes e incêndios marítimos e fluviais em 
 todo estado, além de busca, resgate e salvamento aquático, sendo assim 
@@ -1239,7 +1239,7 @@ subseção de instrução e subseção de logística e Patrimônio.
 Subseção v
 Do Grupamento de Busca e Salvamento
 art. 54.  o grupamento de busca e salvamento (gbs) é órgão de execução 
-do corpo de bom beiros Militar do Pará (cbMPa), subordinado ao comando 
+do corpo de bombeiros Militar do Pará (cbMPa), subordinado ao comando 
 de Missões especiais bombeiro Militar (cMe-bM), tendo como atribuições 
 as ações de busca, salvamento e resgate, além de outras especíﬁcas de 
 bombeiros Militar, em todo o território do estado do Pará, e tem a seguinte 
@@ -1247,7 +1247,7 @@ organização:
 i - comandante;
 ii - subcomandante;
 iii - seção administrativa;
-iv - seção de operações de busca, r esgate e salvamento; e
+iv - seção de operações de busca, resgate e salvamento; e
 v - seção de operações com Produtos Perigosos.
 § 1º  o comandante e subcomandante do grupamento de busca e salva-
 mento (GBS) são, respectivamente, oﬁciais do posto de Tenente-Coronel e 
@@ -1275,7 +1275,7 @@ subseção de instrução e subseção de logística e Patrimônio.
 Subseção vii
 Do Núcleo de Ações com cães
 art. 56.  o Núcleo de ações com cães (Nac) é órgão de execução do corpo 
-de bombeiros Militar do Pará (cbMP a), subordinado ao comando de Mis -
+de bombeiros Militar do Pará (cbMP a), subordinado ao comando de Mis-
 sões especiais bombeiro Militar (cMe-bM), tendo como atribuições as ações 
 relativas à busca, resgate e salvamento com cães.
 § 1º  O Núcleo de Ações com Cães (NAC) será comandado por 1 (um) oﬁcial.
@@ -1284,9 +1284,9 @@ regulamento desta lei.
 § 3º  os grupamentos e subgrupamentos poderão ter grupos de ações 
 com cães.
 tÍtuLo  iii
-Do  PESSoAL
+Do PESSoAL
 cAPÍtuLo  i
-Do  PESSoAL Do  coRPo  DE BoMBEiRoS MiLitAR
+Do PESSoAL Do coRPo DE BoMBEiRoS MiLitAR
 art. 57.  o pessoal do corpo de bombeiros Militar do Pará (cbMP a) com-
 põe-se de:
 i - pessoal militar da ativa, composto por:
@@ -1312,7 +1312,7 @@ informação, concluída em instituição de ensino superior reconhecida pelos
 3. Quadro de Oﬁciais de Saúde Bombeiro Militar (QOSBM), constituído de 
 oﬁciais que, mediante concurso, ingressarem na corporação com gradu -
 ação de nível superior nas áreas de enfermagem, farmácia, fisioterapia, 
-f onoaudiologia, Medicina, Medicina veterinária, odontologia e terapia ocu-
+fonoaudiologia, Medicina, Medicina veterinária, odontologia e terapia ocu-
 pacional, concluída em instituição de ensino superior reconhecida pelos 
 órgãos governamentais;
 4. Quadro de Oﬁciais de Administração Bombeiro Militar (QOABM), cons-
@@ -1340,7 +1340,7 @@ músico;
 (qPbM-cov) em extinção, constituído por praças com o curso de forma -
 ção de praças, composto por praças condutores de veículos automotores e 
 operadores de viaturas; e
-4. quadro de Praças bombeiro Militar auxiliar de saúde (qPbM- s), cons-
+4. quadro de Praças bombeiro Militar auxiliar de saúde (qPbM-s), cons-
 tituído por Praças com o curso de formação de praças, com a qualiﬁcação 
 especialista auxiliar de saúde;
 ii - pessoal militar inativo, composto por:
@@ -1369,23 +1369,23 @@ em lei.
 § 6º  o quadro de Praças bombeiro Militar condutor e operadores de 
 viaturas (qbM-cov) existente na corporação é considerado em extinção.
 § 7º  as vagas previstas para o quadro de Praças bombeiro Militar condu-
-tor e operadores de viaturas (qPbM-cov), após não mais estarem ocupa -
-das, serão remanejadas para o quadro de Praças bombeiro Militar comba -
+tor e operadores de viaturas (qPbM-cov), após não mais estarem ocupa-
+das, serão remanejadas para o quadro de Praças bombeiro Militar comba-
 tente (qPbM-c) nas respectivas graduações, conforme anexo i desta lei.
 § 8º  As atribuições especíﬁcas relacionadas a formação e os requisitos ge-
 rais para provimento dos cargos de que trata este artigo estão constantes 
 nos anexos iv, v e vi desta lei.
-§ 9º  as atribuições presentes nos anexos iv , v e vi não excluem as re -
+§ 9º  as atribuições presentes nos anexos iv, v e vi não excluem as re -
 lacionadas a atividades bombeiro militar, além dos deveres e atribuições 
 previstas no estatuto dos Militares do estado do Pará e demais legislações, 
 normas e regulamentos da corporação, com aplicação a todos bombeiros 
 militares.
 cAPÍtuLo  ii
-Do  Ef Etivo  Do  coRPo  DE BoMBEiRoS MiLitAR
+Do EfEtivo Do coRPo DE BoMBEiRoS MiLitAR
 Art. 58.  O efetivo do Corpo de Bombeiros Militar do Pará (CBMPA) é ﬁxado 
 em 6.770 (seis mil, setecentos e setenta) bombeiros Militares, distribuídos 
 nos postos e graduações, conforme os quadros de efetivo do corpo de 
-bombeiros Militar do Pará (cbMP a), previstos no anexo i desta lei.
+bombeiros Militar do Pará (cbMPa), previstos no anexo i desta lei.
 Parágrafo único.  O efetivo de Oﬁciais dos postos de Primeiro-Tenente e 
 segundo-tenente, bem como de Praças das graduações de cabo e soldado 
 passam a compor a nova sistemática de distribuição de vagas, contidas no 
@@ -1400,19 +1400,19 @@ limites do efetivo ﬁxado por esta Lei.
 Art. 60.  O Quadro de Oﬁciais Capelães Bombeiros Militares (QOCABM) 
 ﬁcará limitado ao preenchimento de 2 (duas) vagas.
 tÍtuLo  iv
-DiSPoS iç ÕES fiNA iS E tRANS itÓRiAS
+DiSPoS içÕES fiNAiS E tRANS itÓRiAS
 art. 61.  o fundo especial de bombeiros (feboM), instituído pela lei es-
 tadual nº 9.234, de 24 de março de 2021, e regulamentado pelo decreto 
 estadual nº 2.458 de 29 de junho de 2022, é fundo especial presidido pelo 
 Comandante-Geral e administrado pelo Comitê de Gestão e Administração 
-superior do corpo de bombeiros Militar (cbMP a), tendo por objetivo su-
+superior do corpo de bombeiros Militar (cbMPa), tendo por objetivo su-
 prir e fomentar as atividades desenvolvidas pela corporação referentes às 
 despesas de custeio, investimentos e inversões ﬁnanceiras necessárias à 
 estruturação, aparelhamento e manutenção da corporação, além de pro-
 mover a capacitação e atualização de recursos humanos e o desenvolvi-
 mento de programas de valorização e motivação proﬁssional.
 art. 62.  fica o Poder executivo autorizado a promover, através de decre-
-to, por proposta do comandante-geral da corporação, a criação, transfor -
+to, por proposta do comandante-geral da corporação, a criação, transfor-
 mação, extinção, denominação, localização e estruturação dos órgãos de 
 direção, apoio e execução do corpo de bombeiros Militar do Pará (cbMPa), 
 de acordo com a organização básica prevista nesta lei e dentro dos limites 
@@ -1422,7 +1422,7 @@ mentos e medidas referentes à prevenção contra incêndio e emergência
 em projetos, prédios e estabelecimentos diversos, exigindo o emprego de 
 materiais especíﬁcos e disposições gerais que evitem ou diﬁcultem a pro-
 pagação do fogo e facilitem o combate por ocasião dos incêndios.
-§ 1º  o comandante-geral do corpo de bombeiros Militar do Pará (cbMP a) 
+§ 1º  o comandante-geral do corpo de bombeiros Militar do Pará (cbMPa) 
 é o assessor do chefe do Poder executivo estadual, para assuntos do que 
 trata o caput deste artigo.
 § 2º  compete, exclusivamente, ao corpo de bombeiros Militar do Pará 
@@ -1439,22 +1439,22 @@ do desenvolvimento da corporação, ﬁca autorizado o Poder Executivo, por
 ato do chefe do Poder executivo estadual, a criação, denominação, locali-
 zação, circunscrição, transformação, extinção e estruturação da presente 
 organização básica.
-art. 66.  a indenização de r epresentação é devida aos integrantes do corpo 
+art. 66.  a indenização de representação é devida aos integrantes do corpo 
 de Bombeiros Militar do Pará (CBMPA), no percentual ﬁxo de 80% (oitenta 
 por cento) do respectivo padrão remuneratório do cargo em comissão, re-
 ferente ao grupo direção e assessoramento superior, geP-das-011.
-§ 1º  a indenização de r epresentação será concedida aos integrantes do 
+§ 1º  a indenização de representação será concedida aos integrantes do 
 corpo de bombeiros Militar do Pará (cbMP a) que estiverem no exercício 
-das funções previstas no quadro de indenizações de r epresentação, con-
+das funções previstas no quadro de indenizações de representação, con-
 forme anexo ii desta lei.
-§ 2º  ficam extintas as indenizações de r epresentação não contempladas 
+§ 2º  ficam extintas as indenizações de representação não contempladas 
 no anexo ii desta lei, principalmente aquelas criadas pela lei estadual nº 
 6.910, de 2 de outubro de 2006.
-§ 3º  ficam criadas as indenizações de r epresentação no corpo de bom -
-beiros Militar do Pará (cbMP a), conforme anexo ii desta lei.
+§ 3º  ficam criadas as indenizações de representação no corpo de bom-
+beiros Militar do Pará (cbMPa), conforme anexo ii desta lei.
 § 4º  excetuados os cargos das assessorias técnicas e da assessoria de ar-
 ticulação e gestão da coordenadoria estadual de Proteção e defesa civil do 
-Pará (cedec), todas as demais indenizações de r epresentação no corpo 
+Pará (cedec), todas as demais indenizações de representação no corpo 
 de bombeiros Militar do Pará (cbMPa), constantes nesta lei, são privativas 
 do pessoal da ativa da corporação.
 § 5º  ficam extintos os seguintes cargos comissionados e funções grati-
@@ -1499,24 +1499,24 @@ mente atender à união da entidade familiar.
 Art. 71.  O Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM), cons-
 tituído de oﬁciais com o curso de formação de oﬁciais bombeiro militar, até 
 que seja editada a legislação de ingresso do corpo de bombeiros Militar do 
-Pará (cbMP a), será regulamentado pela lei estadual nº 6.626, de 2004, 
+Pará (cbMPa), será regulamentado pela lei estadual nº 6.626, de 2004, 
 nos termos do art. 57 desta lei.
 art. 72.  fica o Poder executivo autorizado a baixar os atos necessários à 
 regulamentação desta lei.
-art. 73.  r evogam-se:
+art. 73.  revogam-se:
 i - a lei estadual nº 5.731, de 15 de dezembro de 1992;
 ii - a lei estadual nº 5.774, de 1993;
 iii - a lei estadual nº 6.910, de 2006; e
 iv - a lei estadual nº 9.881, de 13 de março de 2023.
 art. 74.  as despesas decorrentes da aplicação desta lei correrão à conta 
 de dotações do orçamento do estado destinadas ao corpo de bombeiros 
-Militar do Pará (cbMP a) e observarão os limites da lei complementar f e-
+Militar do Pará (cbMPa) e observarão os limites da lei complementar fe-
 deral nº 101, de 4 de maio de 2000.
 art. 75.  esta lei entra em vigor na data de sua publicação.
-Palácio do goverNo , 1º de julho de 2025.
+Palácio do goverNo, 1º de julho de 2025.
 HELDER BARBALHo
 governador do estado
-ANExo  i
+ANExo i
 QuADRoS, PoStoS E GRADuAç ÕES Do EfEtivo Do coRPo DE 
 BoMBEiRoS MiLitAR Do PARÁ (cBMPA)
 I - Quadro de Oficiais Combatentes Bombeiros Militares (QOBM)
@@ -1589,7 +1589,7 @@ cabo e
 Soldado -
 totAL 178
 ² conforme art. 57, §§ 6º e 7º, desta lei.
-d) quadro de Praças bombeiro Militar a uxiliar de saúde (qPbM- s)
+d) quadro de Praças bombeiro Militar auxiliar de saúde (qPbM-s)
 Subtenente 3
 Primeiro-Sargento -
 Segundo-Sargento -
@@ -1598,31 +1598,31 @@ cabo e
 Soldado -
 totAL 3
 total geral 6.770
-ANExo  ii
-QuADRo  DE iNDENizAção  DE REPRESENtAção  80% Do  
-PADRão  Do  cARGo  EM coMiSS ão
+ANExo ii
+QuADRo  DE iNDENizAção  DE REPRESENtAção  80% Do 
+PADRão Do cARGo EM coMiSS ão
 DENoMiNAção Do cARGo PADRão QtD.
 comandante-geral * 1
 chefe do estado-Maior geral ** 1
 coordenador-adjunto estadual de Proteção e defesa civil ** 1
-corregedor-geral geP-das -011.6 1
-comandante operacional geP-das -011.6 1
-chefe de departamento-geral geP-das -011.6 4
-subcorregedor-geral geP-das -011.5 1
-chefe do gabinete do comandante-geral geP-das -011.5 1
-assistente do comandante-geral geP-das -011.5 1
-ajudante-geral geP-das -011.5 1
-subchefe do estado-Maior geral geP-das -011.5 1
-controlador interno geP-das -011.5 1
-chefe da consultoria jurídica geP-das -011.5 1
-Chefe do Centro de Inteligência geP-das -011.5 1
-comandante operacional intermediário geP-das -011.5 7
-diretor geP-das -011.5 5
-Chefe de Escritório de Projetos e Convênios geP-das -011.4 1
+corregedor-geral geP-das-011.6 1
+comandante operacional geP-das-011.6 1
+chefe de departamento-geral geP-das-011.6 4
+subcorregedor-geral geP-das-011.5 1
+chefe do gabinete do comandante-geral geP-das-011.5 1
+assistente do comandante-geral geP-das-011.5 1
+ajudante-geral geP-das-011.5 1
+subchefe do estado-Maior geral geP-das-011.5 1
+controlador interno geP-das-011.5 1
+chefe da consultoria jurídica geP-das-011.5 1
+Chefe do Centro de Inteligência geP-das-011.5 1
+comandante operacional intermediário geP-das-011.5 7
+diretor geP-das-011.5 5
+Chefe de Escritório de Projetos e Convênios geP-das-011.4 1
 chefe de divisão da coordenadoria estadual de Proteção e defesa 
-civil do Pará geP-das -011.4 4
-chefe de seção do estado-Maior geral geP-das -011.4 6
-assistente do comandante operacional geP-das -011.4 1
+civil do Pará geP-das-011.4 4
+chefe de seção do estado-Maior geral geP-das-011.4 6
+assistente do comandante operacional geP-das-011.4 1
 
 ---
 
@@ -1630,68 +1630,68 @@ assistente do comandante operacional geP-das -011.4 1
 
 28  diário oficial Nº 36.283
 Quarta-feira, 02 DE JULHO DE 2025
-assistente de departamento-geral geP-das -011.4 2
-subchefe de departamento-geral geP-das -011.4 2
-chefe de assessoria do comandante-geral geP-das -011.4 2
-fiscal administrativo do comando-geral geP-das -011.4 1
-assessor técnico geP-das -012.4 5
-subcomandante operacional intermediário geP-das -011.4 7
-subdiretor geP-das -011.4 5
-chefe de divisão da diretoria de saúde geP-das -011.4 4
-comandante da academia bombeiro Militar geP-das -011.4 1
-comandante do centro de f ormação, aperfeiçoamento e especiali-
-zação geP-das -011.4 1
+assistente de departamento-geral geP-das-011.4 2
+subchefe de departamento-geral geP-das-011.4 2
+chefe de assessoria do comandante-geral geP-das-011.4 2
+fiscal administrativo do comando-geral geP-das-011.4 1
+assessor técnico geP-das-012.4 5
+subcomandante operacional intermediário geP-das-011.4 7
+subdiretor geP-das-011.4 5
+chefe de divisão da diretoria de saúde geP-das-011.4 4
+comandante da academia bombeiro Militar geP-das-011.4 1
+comandante do centro de formação, aperfeiçoamento e especiali-
+zação geP-das-011.4 1
 comandante do centro de suprimento e Manutenção de viaturas e 
-Material operacional geP-das -011.4 1
-chefe do centro de capacitação física e desporto geP-das -011.4 1
-chefe do centro de Patrimônio geP-das -011.4 1
-chefe do centro de Memória geP-das -011.4 1
-chefe da capelania geP-das -011.4 1
-comandante de grupamento geP-das -011.4 40
-ajudante de ordens geP-das -011.3 5
-assessor de articulação e gestão geP-das -011.3 1
-Membro de comissão da corregedoria-geral geP-das -011.3 3
-chefe de seção da corregedoria-geral geP-das -011.3 2
-chefe de seção do comando de operações geP-das -011.3 4
-chefe de seção de departamentos-gerais geP-das -011.3 9
-chefe de seção de assessoria do comandante-geral geP-das -011.3 3
-chefe da seção administrativa da ajudância-geral geP-das -011.3 1
-chefe de seção da controladoria interna geP-das -011.3 3
-Membro da consultoria jurídica geP-das -011.3 5
-Chefe de Seção do Centro de Inteligência geP-das -011.3 2
-chefe de seção do comando operacional intermediário geP-das -011.3 14
-chefe de seção de diretoria geP-das -011.3 10
-Membro de comissão da diretoria de contratações e aquisições geP-das -011.3 3
-subcomandante da academia bombeiro Militar geP-das -011.3 1
-subcomandante do centro de f ormação, aperfeiçoamento e espe-
-cialização geP-das -011.3 1
+Material operacional geP-das-011.4 1
+chefe do centro de capacitação física e desporto geP-das-011.4 1
+chefe do centro de Patrimônio geP-das-011.4 1
+chefe do centro de Memória geP-das-011.4 1
+chefe da capelania geP-das-011.4 1
+comandante de grupamento geP-das-011.4 40
+ajudante de ordens geP-das-011.3 5
+assessor de articulação e gestão geP-das-011.3 1
+Membro de comissão da corregedoria-geral geP-das-011.3 3
+chefe de seção da corregedoria-geral geP-das-011.3 2
+chefe de seção do comando de operações geP-das-011.3 4
+chefe de seção de departamentos-gerais geP-das-011.3 9
+chefe de seção de assessoria do comandante-geral geP-das-011.3 3
+chefe da seção administrativa da ajudância-geral geP-das-011.3 1
+chefe de seção da controladoria interna geP-das-011.3 3
+Membro da consultoria jurídica geP-das-011.3 5
+Chefe de Seção do Centro de Inteligência geP-das-011.3 2
+chefe de seção do comando operacional intermediário geP-das-011.3 14
+chefe de seção de diretoria geP-das-011.3 10
+Membro de comissão da diretoria de contratações e aquisições geP-das-011.3 3
+subcomandante da academia bombeiro Militar geP-das-011.3 1
+subcomandante do centro de formação, aperfeiçoamento e espe-
+cialização geP-das-011.3 1
 subcomandante do centro de suprimento e Manutenção de viaturas e 
-Material operacional geP-das -011.3 1
-chefe de seção do centro de capacitação física e desporto geP-das -011.3 3
-chefe de seção do centro de Patrimônio geP-das -011.3 2
-chefe do arquivo-geral geP-das -011.3 1
-chefe da banda de Música geP-das -011.3 1
-subcomandante de grupamento geP-das -011.3 40
-comandante de seção b ombeiro Militar geP-das -011.3 4
-chefe do Núcleo de ações com cães geP-das -011.3 1
-auxiliar de comissão da corregedoria-geral geP-das -011.2 4
-chefe de seção da academia bombeiro Militar geP-das -011.2 4
-chefe de seção do centro de f ormação, aperfeiçoamento e especia-
-lização geP-das -011.2 4
+Material operacional geP-das-011.3 1
+chefe de seção do centro de capacitação física e desporto geP-das-011.3 3
+chefe de seção do centro de Patrimônio geP-das-011.3 2
+chefe do arquivo-geral geP-das-011.3 1
+chefe da banda de Música geP-das-011.3 1
+subcomandante de grupamento geP-das-011.3 40
+comandante de seção bombeiro Militar geP-das-011.3 4
+chefe do Núcleo de ações com cães geP-das-011.3 1
+auxiliar de comissão da corregedoria-geral geP-das-011.2 4
+chefe de seção da academia bombeiro Militar geP-das-011.2 4
+chefe de seção do centro de formação, aperfeiçoamento e especia-
+lização geP-das-011.2 4
 chefe de seção do centro de suprimento e Manutenção de viaturas e 
-Material operacional geP-das -011.2 3
-chefe de seção do grupamento geP-das -011.2 46
+Material operacional geP-das-011.2 3
+chefe de seção do grupamento geP-das-011.2 46
 total geral de cargos eM coMissÃo 297
-* o comandante-geral tem indenização de representação em nível de se -
+* o comandante-geral tem indenização de representação em nível de se-
 cretário de estado.
 ** o chefe do estado-Maior geral e o coordenador-adjunto estadual de 
 Proteção e defesa civil tem indenização de representação em nível de se-
 cretário-adjunto de estado.
-ANExo  iii
+ANExo iii
 QuADRo  DE oRGANizAção  BÁSicA
 ÓRGãoS DE DiREção-GERAL
 comando-Geral (cG)
-comandante-geral e coordenador estadual de Proteção e d efesa civil
+comandante-geral e coordenador estadual de Proteção e defesa civil
 Alto-comando
 estado-Maior geral seções
 coordenadoria estadual de Proteção e defesa civil
@@ -1714,9 +1714,9 @@ departamento-geral de cultura, educação
 e Pesquisa
 seções
 academia bombeiro Militar
-centro de f ormação, aperfeiçoamento e 
+centro de formação, aperfeiçoamento e 
 especialização
-centro de capacitação física e d esporto
+centro de capacitação física e desporto
 centro de Memória
 colégio bombeiro Militar
 departamento-geral de segurança contra 
@@ -1734,41 +1734,41 @@ Militar
 cMe-bM
 seções
 grupamento Marítimo e fluvial
-grupamento de b usca e salvamento
+grupamento de busca e salvamento
 Grupamento de Socorro e Emergência
 grupamento de operações aéreas
-comando r egional de bombeiros de 
+comando regional de bombeiros de 
 Proteção e Emergência Ambiental
-crb  i / b elém
+crb i / belém
 seções
-1ª e 2ª risP – r egião Metropolitana de belém
-5ª e 8ª risP – r egião do Marajó oriental e ocidental
-comando r egional de bombeiros de 
+1ª e 2ª risP – região Metropolitana de belém
+5ª e 8ª risP – região do Marajó oriental e ocidental
+comando regional de bombeiros de 
 Proteção e Emergência Ambiental
-crb  ii / salinópolis
+crb ii / salinópolis
 seções
-3ª risP – r egião do guamá
-6ª e 7ª risP – r egião do caeté e do capim
-comando r egional de bombeiros de 
+3ª risP – região do guamá
+6ª e 7ª risP – região do caeté e do capim
+comando regional de bombeiros de 
 Proteção e Emergência Ambiental
-crb  iii / b arcarena
+crb iii / barcarena
 seções
-4ª risP – r egião do tocantins
-comando r egional de bombeiros de 
+4ª risP – região do tocantins
+comando regional de bombeiros de 
 Proteção e Emergência Ambiental
-crb  iv / t ucuruí
+crb iv / tucuruí
 seções
-9ª risP - r egião do lago de tucuruí
-comando r egional de bombeiros de 
+9ª risP - região do lago de tucuruí
+comando regional de bombeiros de 
 Proteção e Emergência Ambiental
-crb  v / Marabá
+crb v / Marabá
 seções
-10ª, 13ª e 14ª ris P – região de carajás, do a raguaia, e do alto xingu
-comando r egional de bombeiros de 
+10ª, 13ª e 14ª risP – região de carajás, do araguaia, e do alto xingu
+comando regional de bombeiros de 
 Proteção e Emergência Ambiental
-crb  vi / santarém
+crb vi / santarém
 seções
-11ª, 12ª e 15ª risP – r egião do xingu, do baixo amazonas, e do tapajós
+11ª, 12ª e 15ª risP – região do xingu, do baixo amazonas, e do tapajós
 ÓRGãoS DE DiREção SEtoRiAL
 diretoria de apoio logístico
 seções
@@ -1786,21 +1786,21 @@ diretoria de saúde divisões
 
 diário oficial Nº 36.283  29
 Quarta-feira, 02 DE JULHO DE 2025
-ANExo  iv
-AtRiBuiç ÕES E REQuiS itoS PARA PRoviMENto  Do  QuADRo  DE oficiAiS coMPLEMENtAR BoMBEiRo  MiLitAR (QocBM)
+ANExo iv
+AtRiBuiç ÕES E REQuiS itoS PARA PRoviMENto  Do QuADRo  DE oficiAiS coMPLEMENtAR BoMBEiRo  MiLitAR (QocBM)
 cargo:
 Oficial QOCBM formação: Administração
 Atribuições Especíﬁcas da formação Atividades de planejamento e gestão de projetos e recursos humanos, administração ﬁnanceira, assessoria, elaboração de políticas e procedimentos, relações públicas, e outras atividades 
 correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em administração, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em administração, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Arquitetura
 Atribuições Especíﬁcas da formação Atividades de planejamento e projeto de ediﬁcações, elaboração de projetos urbanísticos, análise e aprovação de projetos, ﬁscalização de obras, preservação do patrimônio histórico e cultural, 
 desenvolvimento de políticas urbanas, gerenciamento de projetos, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em arquitetura, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em arquitetura, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
 rio ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: ciências contábeis
@@ -1809,59 +1809,59 @@ Atividades de contabilidade, registro ﬁnanceiro, elaboração de relatórios �
 recursos ﬁnanceiros, gestão patrimonial, assessoria ﬁnanceira, e auxílio no pagamento de impostos e cumprimento das obrigações ﬁscais da instituição, e outras atividades correlatas a sua 
 área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Ciências Contábeis, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Ciências Contábeis, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: comunicação Social
 Atribuições Especíﬁcas da formação atividades de assessoria de comunicação, comunicação interna, gestão de mídias sociais, Media training, relações públicas, organização de eventos, produção de conteúdo, marketing, produ-
 ção de pesquisa de opinião pública, compliance de comunicação, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação na área de comunicação social (jornalismo, Publicidade e Propaganda, Produção Multimídia, r elações Públicas), expedido por instituição de ensino 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação na área de comunicação social (jornalismo, Publicidade e Propaganda, Produção Multimídia, relações Públicas), expedido por instituição de ensino 
 devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Direito
 Atribuições Especíﬁcas da formação atividades de assessoria jurídica e legal, confecção de pareceres e questões de direito, auditoria legal, análise de aspectos de legalidade e conformidade regulatória compreendidas no âmbito 
 da instituição e ao que ela se submeter, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em direito, expedido por instituição de ensino devidamente reconhecida por órgão competente.
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em direito, expedido por instituição de ensino devidamente reconhecida por órgão competente.
 cargo:
 Oficial QOCBM formação: Educação física
 Atribuições Especíﬁcas da formação atividades de planejamento, coordenação e supervisão da prática de treinamento físico e atividades desportivas, orientação da perfeita execução das mesmas, desenvolvimento de boas condi-
 ções físicas e mentais dos militares, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em educação física, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em educação física, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Engenharia civil
 Atribuições Especíﬁcas da formação Atividades de desenvolvimento de projetos estruturais, realização de planejamento, ﬁscalização, inspeção, gestão de contratos, análise de projetos, participação em comissões, acompanha-
 mento das normas e regulamentos aplicáveis a corporação, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia civil, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia civil, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Engenharia Elétrica
 Atribuições Especíﬁcas da formação Atividades de desenvolvimento de projetos elétricos, realização de planejamento, ﬁscalização, inspeção, gestão de contratos, análise de projetos, participação em comissões, acompanhamento 
 das normas e regulamentos aplicáveis a corporação, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia elétrica, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia elétrica, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Engenharia Mecânica
 Atribuições Especíﬁcas da formação Atividades de desenvolvimento de projetos mecânicos, realização de planejamento, ﬁscalização, inspeção, gestão de contratos, análise de projetos, participação em comissões, acompanha-
 mento das normas e regulamentos aplicáveis a corporação, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia Mecânica, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia Mecânica, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe 
 quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Engenharia Química
 Atribuições Especíﬁcas da formação Atividades de assessoria pesquisa e desenvolvimento, ﬁscalização e regulamentação, controle ambiental, gestão de materiais perigosos, auxílio em perícias, treinamento técnico, avaliação de 
 riscos, inspeções de instalações, participação em respostas a emergências químicas, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia química, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em engenharia química, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Estatística
-Atribuições Especíﬁcas da formação atividades de coleta, organização e análise de dados. r ealização de planejamentos, pesquisas e estudos estatísticos, elaboração de indicadores, modelagem estatística, avaliação crítica de 
+Atribuições Especíﬁcas da formação atividades de coleta, organização e análise de dados. realização de planejamentos, pesquisas e estudos estatísticos, elaboração de indicadores, modelagem estatística, avaliação crítica de 
 resultados, gestão de dados, assessoria técnica, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
 
@@ -1871,7 +1871,7 @@ Nível de escolaridade superior
 
 30  diário oficial Nº 36.283
 Quarta-feira, 02 DE JULHO DE 2025
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em estatística, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em estatística, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
 rio ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Nutrição
@@ -1881,14 +1881,14 @@ de saúde, elaboração de cardápios, indicação de alimentação, promover a 
 orientar em medidas que assegurem a preparação higiênica e perfeita conservação de alimentos. Promoção de reuniões, cursos e palestras visando à educação alimentar dos militares e colabo-
 radores da instituição. Prestar assistência nutricional a militares, pacientes ambulatoriais, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em Nutrição, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em Nutrição, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário 
 ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Pedagogia
 Atribuições Especíﬁcas da formação atividades de planejamento, desenvolvimento curricular, acompanhamento e suporte pedagógico, capacitação de instrutores, avaliação e orientação educacional, e outras atividades correlatas 
 a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em Pedagogia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em Pedagogia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
 rio ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Psicologia
@@ -1897,29 +1897,29 @@ Atividades de planejamento, desenvolvimento e execução de ações de assistên
 colaboradores da instituição relativo ao atendimento clínico e psicoterápico, além de programas de avaliação psicológica continuada. Participar da elaboração e implementação de programas e 
 projetos sociais, educacionais ou de saúde, com base em conhecimentos psicológicos, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em Psicologia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em Psicologia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
 rio ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: Serviço Social
 Atribuições Especíﬁcas da formação Atividades de assistência social e de apoio individual ou em grupo, mediação de conflito, encaminhamento e orientação a benefícios e serviços sociais, desenvolvimento de projetos e relatórios 
 sociais a ﬁm de embasar processos jurídicos. Elaboração de pesquisa, análise social, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em serviço social, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em serviço social, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOCBM formação: tecnologia da informação
 Atribuições Especíﬁcas da formação
-atividades de planejamento, coordenação e realização de projetos de tecnologia da informação (ti), desenvolvimento, implementação e manutenção de sistemas de informação, gerenciamen -
+atividades de planejamento, coordenação e realização de projetos de tecnologia da informação (ti), desenvolvimento, implementação e manutenção de sistemas de informação, gerenciamen-
 to e manutenção de redes de computadores, servidores e infraestrutura de ti, prestação de suporte técnico a usuários, implementação de medidas de segurança, gerenciamento de bancos de 
 dados. criação e manutenção de sistemas web, aplicativos móveis e soluções digitais para otimização dos processos, e outras atividades correlatas a sua área de atuação conforme necessidade 
 institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo
+requisitos para investidura no cargo
 Diploma de conclusão de curso de graduação em Ciência da Computação, Análise e Desenvolvimento de Sistemas, Engenharia da Computação, ou qualquer outra graduação na área de 
 Tecnologia da Informação (TI), expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário ao exercício da proﬁssão, 
 nos termos da lei.
-ANExo  v
-AtRiBuiç ÕES E REQuiS itoS PARA PRoviMENto  Do  QuADRo  DE oficiAiS DE SA úDE BoMBEiRo  MiLitAR (QoSBM)
+ANExo v
+AtRiBuiç ÕES E REQuiS itoS PARA PRoviMENto  Do QuADRo  DE oficiAiS DE SA úDE BoMBEiRo  MiLitAR (QoSBM)
 cargo:
 Oficial QOSBM formação: Enfermagem
 Atribuições Especíﬁcas da formação
@@ -1927,7 +1927,7 @@ atividades de supervisão, coordenação e execução relativas à observação,
 prescritos, bem como a aplicação de medidas destinadas à prevenção de doenças, bem como no atendimento pré-hospitalar móvel (APHM), serviço de urgência e emergência, em regime de 
 escala, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em enfermagem, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando neces-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em enfermagem, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando neces-
 sário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: farmácia
@@ -1936,7 +1936,7 @@ Atividades de desenvolvimento, produção, dispensação, controle, armazenament
 de serviços farmacêuticos. Participação na elaboração, coordenação e implementação de políticas de medicamentos, ﬁscalização sobre estabelecimentos, produtos, e outras atividades correla-
 tas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em farmácia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em farmácia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário 
 ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: fisioterapia
@@ -1945,17 +1945,17 @@ Atividades de avaliação da necessidade da atuação ﬁsioterápica, seleção
 monar. Desenvolvimento e reavaliação de planos de tratamento que envolvam assistência respiratória, postural e de ergonomia, e outras atividades correlatas a sua área de atuação conforme 
 necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em fisioterapia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em fisioterapia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessá-
 rio ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: fonoaudiologia
 Atribuições Especíﬁcas da formação Atividades de atendimento a militares e colaboradores para prevenção, habilitação e reabilitação, através de protocolos e procedimentos especíﬁcos de fonoaudiologia, realizando diagnósticos especí-
 ﬁcos, e orientação. Desenvolvimento de programas de prevenção, promoção da saúde, qualidade de vida, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em fonoaudiologia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em fonoaudiologia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
-Oﬁcial QOSBM f ormação: Medicina
+Oﬁcial QOSBM formação: Medicina
 
 ---
 
@@ -1968,7 +1968,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando necessário 
 ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -1979,7 +1979,7 @@ saúde individual nas várias especialidades médicas ligadas a saúde mental e 
 -hospitalar móvel (APHM), serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade 
 institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -1989,7 +1989,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -1999,7 +1999,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2009,7 +2009,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2019,7 +2019,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2029,7 +2029,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2039,7 +2039,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2056,7 +2056,7 @@ Nível de escolaridade superior
 
 32  diário oficial Nº 36.283
 Quarta-feira, 02 DE JULHO DE 2025
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2066,7 +2066,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2077,7 +2077,7 @@ saúde individual nas várias especialidades médicas ligadas a saúde mental e 
 -hospitalar móvel (APHM), serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade 
 institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2087,7 +2087,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2097,7 +2097,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2107,7 +2107,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2117,7 +2117,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2127,7 +2127,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2137,7 +2137,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2154,7 +2154,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2164,7 +2164,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2174,7 +2174,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2184,7 +2184,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2194,7 +2194,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da Lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2204,7 +2204,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
@@ -2214,17 +2214,17 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina
-especialização r eumatologia
+especialização reumatologia
 Atribuições Especíﬁcas da formação
 atividades de supervisão, planejamento, coordenação, programação e execução especializada em grau de maior complexidade ou execução trabalhos de defesa e proteção de saúde individual 
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 
 ---
@@ -2241,7 +2241,7 @@ atividades de supervisão, planejamento, coordenação, programação e execuç�
 nas várias especialidades médicas ligadas a saúde mental e a patologia, e ao tratamento clínico e cirúrgico do organismo humano, bem como no atendimento pré-hospitalar móvel (aPHM), 
 serviço de urgência, emergência e de médico regulador, em regime de escala, e outras atividades correlatas a sua especialidade conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
+requisitos para investidura no cargo Diploma de conclusão de curso de graduação em Medicina, expedido por instituição de ensino devidamente reconhecida por órgão competente, com Residência Médica na especialidade e Título 
 de Especialista conferido pela Sociedade Especíﬁca/AMB na especialidade requerida, e registro no órgão de classe quando necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: Medicina veterinária
@@ -2250,7 +2250,7 @@ Atividades de supervisão, planejamento, coordenação, programação e execuç�
 de trabalhos de defesa e proteção de saúde a semoventes, ligadas a patologia, ao tratamento clínico e cirúrgico de animais, e outras atividades correlatas a sua área de atuação conforme 
 necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em Medicina veterinária, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em Medicina veterinária, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: odontologia
@@ -2259,25 +2259,25 @@ Atividades de supervisão, coordenação e execução especializada em grau de m
 assistência buco-dentária, envolvendo, inclusive, cirurgia especializada, bem como relativa a estomatologia maxilar e dentária, e outras atividades correlatas a sua área de atuação conforme necessidade 
 institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em odontologia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando neces-
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em odontologia, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando neces-
 sário ao exercício da proﬁssão, nos termos da lei.
 cargo:
 Oficial QOSBM formação: terapia ocupacional
 Atribuições Especíﬁcas da formação Atividades de terapia ocupacional em pessoas internadas e ambulatoriais, realização de procedimentos e técnicas especíﬁcas de sua função. Apoio a atividades de ensino e pesquisa, orientação 
 e coordenação de pessoal sob sua supervisão, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade superior
-r equisitos para investidura no cargo diploma de conclusão de curso de graduação em terapia ocupacional, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
+requisitos para investidura no cargo diploma de conclusão de curso de graduação em terapia ocupacional, expedido por instituição de ensino devidamente reconhecida por órgão competente, e registro no órgão de classe quando 
 necessário ao exercício da proﬁssão, nos termos da lei.
-ANExo  vi
-AtRiBuiç ÕES E REQuiS itoS PARA PRoviMENto  Do  QuADRo  DE PRAçAS BoMBEiRo  MiLitAR MúS ico  (QPBM-M)
+ANExo vi
+AtRiBuiç ÕES E REQuiS itoS PARA PRoviMENto  Do QuADRo  DE PRAçAS BoMBEiRo  MiLitAR MúS ico (QPBM-M)
 cargo:
 Praça QPBM-M formação: Música
-Atribuições Especíﬁcas da formação atividades de músico instrumentista, integrante da banda de Música do corpo de b ombeiros Militar do Pará (cb MPa), desempenhar atribuições em todos os eventos e solenidades de interesse 
+Atribuições Especíﬁcas da formação atividades de músico instrumentista, integrante da banda de Música do corpo de bombeiros Militar do Pará (cbMPa), desempenhar atribuições em todos os eventos e solenidades de interesse 
 da corporação, participar de ensaios, treinamentos, desﬁles cívicos e militares, e outras atividades correlatas a sua área de atuação conforme necessidade institucional.
 Nível de escolaridade Médio
-r equisitos para investidura no cargo diploma de conclusão de ensino médio e, no mínimo, curso técnico em música, ambos reconhecidos por órgão competente, bem como aprovação em prova prática no instrumento requerido 
+requisitos para investidura no cargo diploma de conclusão de ensino médio e, no mínimo, curso técnico em música, ambos reconhecidos por órgão competente, bem como aprovação em prova prática no instrumento requerido 
 no edital do concurso.
-instrumentos musicais requeridos os indispensáveis a todas as famílias ou naipes (madeiras, cordas, metais e percussões) para composição da banda de Música do corpo de bombeiros Militar do Pará (cb MPa), conforme a 
+instrumentos musicais requeridos os indispensáveis a todas as famílias ou naipes (madeiras, cordas, metais e percussões) para composição da banda de Música do corpo de bombeiros Militar do Pará (cbMPa), conforme a 
 necessidade da corporação.
 
 ---

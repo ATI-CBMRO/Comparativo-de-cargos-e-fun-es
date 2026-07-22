@@ -17,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from regulamento_enrichment import (  # noqa: E402
-    THEMES, PRIMARY_SOURCE, REGULAMENTO_DOCS, REGULAMENTO_ENRICHMENT, adapt_text,
+    THEMES, THEME_KEYS, PRIMARY_SOURCE, REGULAMENTO_DOCS, REGULAMENTO_ENRICHMENT, adapt_text,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,6 +27,24 @@ STATE_NAMES = {
     'al': 'Alagoas', 'df': 'Distrito Federal', 'go': 'Goiás', 'mt': 'Mato Grosso',
     'pa': 'Pará', 'pr': 'Paraná', 'rn': 'Rio Grande do Norte',
     'rs': 'Rio Grande do Sul', 'se': 'Sergipe',
+    'ba': 'Bahia', 'rr': 'Roraima', 'to': 'Tocantins', 'to_corpo': 'Tocantins',
+    'al_no03': 'Alagoas', 'al_no04': 'Alagoas', 'al_no06': 'Alagoas',
+    'al_no07': 'Alagoas', 'al_no11': 'Alagoas',
+    'al_dob05': 'Alagoas', 'al_dob06': 'Alagoas', 'al_dob07': 'Alagoas', 'al_dob08': 'Alagoas',
+    'risg': 'Exército Brasileiro',
+    'es': 'Espírito Santo',
+}
+
+# 2 Partes do Regulamento (spec 2026-07-21): Parte I — Geral | Parte II — do Serviço.
+TEMA_PARTE = {
+    'disposicoes-preliminares': 'geral', 'organizacao-geral': 'geral',
+    'competencias-direcao': 'geral', 'competencias-apoio-assessoramento': 'geral',
+    'competencias-execucao': 'geral', 'pessoal-quadros': 'geral',
+    'ensino-instrucao': 'geral', 'cerimonial-honras': 'geral',
+    'disciplina-correicao': 'geral', 'uniformes-apresentacao': 'geral',
+    'seguranca-contra-incendio': 'geral', 'disposicoes-finais': 'geral',
+    'servico-operacional': 'servico', 'servico-interno-dia': 'servico',
+    'atribuicoes-funcoes': 'servico', 'central-operacoes-193': 'servico',
 }
 
 RE_ART_PREFIX = re.compile(r'^\s*Art\s*\.?\s*\d[\d\s]{0,3}\s*[ºo°]?\s*\.?\s*[-–—]?\s*')
@@ -100,6 +118,7 @@ def build():
             'chapterTitle': theme_title.upper(),
             'group': group,
             'themeKey': theme_key,
+            'parte': TEMA_PARTE[theme_key],
             'primary': {
                 'uf': primary_uf,
                 'name': STATE_NAMES[primary_uf],
@@ -109,6 +128,10 @@ def build():
             'articles': articles,
             'alternatives': alternatives,
         })
+
+    # Parte I (geral) antes da Parte II (servico); dentro de cada Parte, ordem dos THEMES.
+    _ordem_parte = {'geral': 0, 'servico': 1}
+    chapters.sort(key=lambda c: (_ordem_parte[c['parte']], THEME_KEYS.index(c['themeKey'])))
 
     structure = {
         'generated_by': 'scripts/build_regulamento_structure.py',

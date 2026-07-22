@@ -40,3 +40,9 @@ serviceAccountKey.json
 
 # Grafo de conhecimento gerado pelo graphify (local, não versionado)
 graphify-out/
+
+# Ambiente Python isolado do pipeline de dados
+.venv-pipeline/
+
+# Artefatos de snapshot/screenshot do Playwright MCP (efêmeros)
+.playwright-mcp/

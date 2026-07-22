@@ -4,6 +4,7 @@ import {
   Document, Packer, Paragraph, TextRun, Footer, AlignmentType, ImageRun,
 } from 'docx'
 import { buildArticles, articleLabel, romanize } from './minutaArticles.js'
+import { PARTE_HEADERS, parteByChapterTitle } from './regulamentoPartes.js'
 
 export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () => false, subtitle }) {
   const dateStr = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
@@ -36,13 +37,25 @@ export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () =
     }),
   )
 
+  const parteDe = parteByChapterTitle(structure)
+  let ultimaParte = null
   const articles = buildArticles(structure, edits, isExcluded)
   let chapterSeen = false
   articles.forEach(art => {
     if (art.chapterTitle) {
+      const parte = parteDe[art.chapterTitle]
+      const novaParte = Boolean(parte) && parte !== ultimaParte
+      if (novaParte) {
+        children.push(new Paragraph({
+          alignment: AlignmentType.CENTER, pageBreakBefore: chapterSeen,
+          spacing: { before: 240, after: 240 },
+          children: [new TextRun({ text: PARTE_HEADERS[parte], bold: true, font: 'Times New Roman', size: 30 })],
+        }))
+        ultimaParte = parte
+      }
       children.push(
         new Paragraph({
-          alignment: AlignmentType.CENTER, pageBreakBefore: chapterSeen,
+          alignment: AlignmentType.CENTER, pageBreakBefore: chapterSeen && !novaParte,
           spacing: { before: 240, after: 0 },
           children: [new TextRun({ text: `CAPÍTULO ${romanize(art.chapterNumber)}`, bold: true, font: 'Times New Roman', size: 26 })],
         }),

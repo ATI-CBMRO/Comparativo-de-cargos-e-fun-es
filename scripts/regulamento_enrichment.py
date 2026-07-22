@@ -27,6 +27,7 @@ THEMES = [
     ("seguranca-contra-incendio", "Da Segurança Contra Incêndio e Pânico", "Atividades Especializadas"),
     ("pessoal-quadros", "Do Pessoal e dos Quadros", "Pessoal"),
     ("disposicoes-finais", "Das Disposições Finais", "Fundamentos"),
+    ("central-operacoes-193", "Da Central de Operações e do Teledespacho", "Serviços"),
 ]
 
 THEME_KEYS = [t[0] for t in THEMES]
@@ -42,6 +43,21 @@ REGULAMENTO_DOCS = {
     "rn": {"label": "Regulamento Geral (Decreto nº 31.139/2021)", "md": "Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md"},
     "rs": {"label": "RI (Portaria nº 001/2025)", "md": "Rio Grande do Sul - Regimento Interno.md"},
     "se": {"label": "RISD (atual. 2022)", "md": "Sergipe - Regulamento Interno.md"},
+    "ba": {"label": "Norma Operacional nº 01/2021 (CBMBA)", "md": "Bahia - Regulamento de Serviço.md"},
+    "rr": {"label": "INOp do Serviço Diário dos Oficiais (CBMRR)", "md": "Roraíma - Regulamento de Serviço.md"},
+    "to": {"label": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)", "md": "Tocantins - Regulamento de Serviço.md"},
+    "to_corpo": {"label": "Diretriz Geral do Comando Operacional, Anexo 1 (Portaria nº 003/2019/COB)", "md": "Tocantins - Regulamento de Serviço.md"},
+    "al_no03": {"label": "Norma Operacional nº 03 (CBMAL)", "md": "Alagoas - Norma Operacional 03.md"},
+    "al_no04": {"label": "Norma Operacional nº 04 (CBMAL)", "md": "Alagoas - Norma Operacional 04.md"},
+    "es": {"label": "Normas Gerais de Ação (2023)", "md": "Espírito Santo - Normas Gerais de Ação.md"},
+    "al_no06": {"label": "Norma Operacional nº 06 (CBMAL)", "md": "Alagoas - Norma Operacional 06.md"},
+    "al_no07": {"label": "Norma Operacional nº 07 (CBMAL)", "md": "Alagoas - Norma Operacional 07.md"},
+    "al_no11": {"label": "Norma Operacional nº 11 — Canil (CBMAL)", "md": "Alagoas - Norma Operacional 11.md"},
+    "risg": {"label": "RISG — R-1 do Exército Brasileiro (Portaria SGEx nº 51/2003)", "md": "RISG.md"},
+    "al_dob05": {"label": "DOB nº 05 — Rotina Diária dos Postos de Bombeiros (CBMAL, rev. 2013)", "md": "Alagoas - Diretriz Operacional 05.md"},
+    "al_dob06": {"label": "DOB nº 06 — Acionamento e Controle do Serviço (CBMAL, rev. 2019)", "md": "Alagoas - Diretriz Operacional 06.md"},
+    "al_dob07": {"label": "DOB nº 07 — Serviço com Cães (CBMAL, 2016)", "md": "Alagoas - Diretriz Operacional 07.md"},
+    "al_dob08": {"label": "DOB nº 08 — Serviço de Salvamento Aquático e Mergulho (CBMAL, 2022)", "md": "Alagoas - Diretriz Operacional 08.md"},
 }
 
 # ── Fonte primária POR TEMA (decisão do panorama: nunca "MT por padrão") ─────────────
@@ -63,6 +79,7 @@ PRIMARY_SOURCE = {
     "seguranca-contra-incendio": "mt",
     "pessoal-quadros": "rn",
     "disposicoes-finais": "mt",
+    "central-operacoes-193": "ba",  # Fase 2A: Bahia/CICOM (Supervisor e Operador de Teledespacho)
 }
 
 # ── Adaptações p/ RO (aplicadas NO BUILD apenas ao texto proposto da minuta; o

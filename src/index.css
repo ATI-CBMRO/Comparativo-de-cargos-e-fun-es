@@ -3039,3 +3039,32 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .orgv .ostack::before{content:"";position:absolute;left:5px;top:-12px;bottom:12px;width:2px;background:var(--line)}
 .orgv .ost-item{position:relative;font-size:11px;background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:5px 9px;margin:6px 0;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .orgv .ost-item::before{content:"";position:absolute;left:-11px;top:15px;width:11px;height:2px;background:var(--line)}
+
+/* Seletor de cenário LOB (topo da barra lateral) */
+.scenario-switcher { padding: 10px 12px 4px; }
+.scenario-switcher-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--navy-500); margin-bottom: 6px;
+}
+.scenario-switcher-tabs { display: flex; gap: 6px; }
+.scenario-tab {
+  flex: 1; display: flex; flex-direction: column; align-items: flex-start;
+  padding: 6px 8px; border: 1px solid var(--navy-200, #d9dee7); border-radius: 8px;
+  background: #fff; cursor: pointer; line-height: 1.15; text-align: left;
+}
+.scenario-tab strong { font-size: 12px; color: var(--navy-700, #2a3a55); }
+.scenario-tab span { font-size: 10px; color: var(--navy-500, #6b7793); }
+.scenario-tab.is-active { border-color: transparent; color: #fff; }
+/* Cor por cenário: atual = navy; futura = vermelho CBMRO */
+.scenario-atual .scenario-tab.is-active { background: #26324a; }
+.scenario-atual .scenario-tab.is-active strong,
+.scenario-atual .scenario-tab.is-active span { color: #fff; }
+.scenario-futura .scenario-tab.is-active { background: #c8102e; }
+.scenario-futura .scenario-tab.is-active strong,
+.scenario-futura .scenario-tab.is-active span { color: #fff; }
+
+/* Placeholder "Em construção" (trilhas no cenário LOB atual) */
+.em-construcao { max-width: 640px; margin: 48px auto; padding: 0 24px; text-align: center; }
+.em-construcao h1 { color: var(--navy-700, #2a3a55); margin-bottom: 12px; }
+.em-construcao p { color: var(--navy-600, #45526e); line-height: 1.6; }
+.em-construcao-dica { margin-top: 16px; font-size: 14px; color: var(--navy-500, #6b7793); }

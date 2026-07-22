@@ -1,0 +1,502 @@
+# Alagoas - Diretriz Operacional 07
+
+*Documento extraído de: `Alagoas - Diretriz Operacional 07.pdf`*
+*Total de páginas: 11*
+
+---
+
+## Página 1
+
+ 
+ESTADO DE ALAGOAS 
+SECRETARIA DE ESTADO DA SEGURANÇA PÚBLICA 
+CORPO DE BOMBEIROS MILITAR 
+ 
+ 
+DIRETRIZ OPERACIONAL DE BOMBEIRO (DOB) Nº 07 
+ 
+SERVIÇO COM CÃES NO ÂMBITO DO CBMAL 
+ 
+SUMÁRIO 
+1. Finalidade 
+2. Objetivos 
+3. Definições 
+4. Condições Gerais 
+5. Coordenações 
+6. Serviço de Busca, Resgate e Salvamento com Cães 
+7. Desenvolvimento dos Cães 
+8. Avaliação, Certificação e Recertificação 
+9. Prescrições Diversas 
+10. Referências 
+ 
+1. FINALIDADE 
+Regular o Serviço com cães realizado pelas Organizações de Bombeiro Militar 
+do CBMAL no território do Estado de Alagoas.  
+ 
+2. OBJETIVOS 
+A presente Diretriz Operacional de Bombeiros (DOB -07) visa o rientar as 
+Organizações de Bombeiro Militar (OBM) do CBMAL quanto aquisição, 
+treinamento, utilização e acionamento de cães no Estado de Alagoas, bem 
+como r eduzir através da implementação e da operacionalização de cães no 
+CBMAL o tempo resposta para a localização de pessoas e/ou restos mortais, 
+soterradas em desastres, submersos em meio aquático, ou ainda perdidas em 
+matas ou locais ermos. 
+ 
+
+---
+
+## Página 2
+
+3. DEFINIÇÕES 
+3.1. Serviço com cães: conjunto de atividades desenvolvidas por bombeiros 
+em conjunto com cães , tais como busca, resgate e salvamento, demonstração 
+do tipo recreativo/educacional, participação em competições oficiais para cães, 
+formaturas e desfiles de caráter cívico -militar e projetos educacionais ou 
+cinoterapêuticos. 
+3.2. Serviço de busca , resgate e sa lvamento com cães : conjunto de 
+atividades que envolvem operações de busca, resgate e salvamento urbano ou 
+rural com cães. 
+3.3. Cinotécnico: técnico formado e qualificado para conduzir processos de 
+condicionamento de cães para um fim específico e com treinamento  para a 
+condução de um cão operacionalizado em ambiente de desastre. 
+3.4. Cão operacionalizado : cão que passou por um processo de 
+adestramento, sendo avaliado e certificado para atuar no serviço de busca, 
+resgate e salvamento. 
+3.5. Plantel: conjunto de semoventes caninos pertencentes a carga do 
+CBMAL. 
+3.6. Matriz: cadela de raça, com características genéticas favoráveis ao 
+serviço bombeiro militar, utilizada para fins de reprodução.  
+3.7. Ninhada: total de filhotes que a matriz pariu de uma só vez. 
+3.8. Avaliação de cães : Processo simulado em que o cão é submetido a 
+testes com a finalidade de mensurar seu desempenho.  
+3.9. Certificação: Atestado de que um cão pode atuar em operações de 
+busca, resgate e salvamento , após o mesmo ser considerado apto em uma 
+avaliação.  
+3.10. Adestramento de cães : Processo pelo qual o cão será condicionado 
+mediante técnica específica a realizar determinada atividade.  
+3.11. Condutor do cão: É o bombeiro militar, preferencialmente especializado 
+em cinotecnia, que mantém um cão sob sua guarda, conduz seu processo de 
+adestramento ou o opera num ambiente de uma ocorrência. 
+3.12. Binômio: Conjunto formado entre o condutor e o cão operacionalizado. 
+3.13. Equipe de busca , resgate e salvamento com cães  – EBRESC: 
+Conjunto formado por binômios e auxiliares para atuações  em serviços de 
+busca, resgate e salvamento com cães. 
+ 
+4. CONDIÇÕES GERAIS 
+4.1. Funcionamento dos Canis: 
+a) Os bombeiros militares possuidores de especialização em serviço com 
+cães estarão aptos a integrar o referido serviço e terão prefer ência na 
+condução dos cães nas atividades. 
+b) A Coordenação Geral do Serviço com Cães do CBMAL se manifestará 
+de forma consultiva, acerca da possibilidade ou impossibilidade do bombeiro 
+
+---
+
+## Página 3
+
+militar, ainda que especialista, compor o efetivo do serviço com cães quando 
+da sua designação.  
+c) A OBM que possuir serviço com cães deverá designar um bombeiro 
+militar responsável para o cumprimento da presente diretriz, bem como o 
+aprimoramento do serviço realizado, visando sua excelência. 
+d) O bombeiro militar designado para ser responsável pelo serviç o com 
+cães na OBM deverá passar pelo crivo da Coordenação Geral do Serviço com 
+cães do CBMAL no termos do item 4.1, b), desta DOB. 
+e) O horário de funcionamento dos canis obedecerá ao horário 
+convencional de funcionamento do CBMAL e excepcionalmente, a critér io do 
+coordenador operacional, com autorização do Cmt da OBM  poderá se d ar em 
+horário diverso. 
+f) A estrutura física e construção dos canis será regulada por Norma 
+Operacional do CBMAL. 
+ 
+5. COORDENAÇÕES 
+5.1. Coordenação Geral do Serviço com Cães – CGSEC 
+a) A Coordenação Geral do Serviço com Cães é o órgão responsável pelo 
+Serviço com Cães no CBMAL. 
+b) A CGSEC será composta por no mínimo 3 membros, designada por ato 
+do Comandante Geral do CBMAL. 
+c) Os membros pertencentes a CGS EC deverão possuir preferencialmente 
+curso na área de serviço com cães. 
+d) Cabe ao presidente da CGSEC o voto de desempate. 
+e) Caberá ao CGSEC regular a atividade de serviços com cães , como 
+também: 
+e).1 Desenvolver e aperfeiçoar o serviço com cães no CBMAL; 
+e).2 Certificar os cães aptos a trabalharem nas ocorrências atendidas 
+pelo CBMAL; 
+e).3 indicar quais das especializações o binômio deverá estar apto, 
+devendo atender a necessidade operacional do CBMAL; 
+e).4 Sugerir os binômios aptos a integrarem a EBRESC; 
+e).5 Emitir relatório  acerca da possibilidade ou impossibilidade do 
+bombeiro militar, ainda que especialista, compor o efetivo do serviço 
+com cães quando da sua designação.  
+e).6 Fazer gestão nas ações operacionais relativas à atividade de busca, 
+resgate e salvamento com cães; 
+e).7 Propor parcerias com entidades do setor privado, bem como com 
+outros órgãos do serviço público; 
+e).8 Propor a criação de Normas Operacionais relacionadas ao serviço 
+com cães no CBMAL; 
+
+---
+
+## Página 4
+
+e).9 Desenvolver demais atividades relativas ao s erviço de cães  
+previstas nesta DOB. 
+ 
+f) Os Militares membros do CGS EC poderão ser dispensados de suas 
+funções nas OBM’s de origem para que se dediquem exclusivamente ao 
+serviço com cães, a critério do comandante geral. 
+ 
+5.2  Coordenação Operacional de Serviço com Cães – COSEC  
+a) A coordenação operacional pertencerá a OBM e será responsável pela 
+coordenação e supervisão das atividades do canil da unidade. 
+b) O coordenador operacional será designado pelo comandante da OBM. 
+c) Caberá a COSEC a realização do serviço com cães, bem como:  
+c).1 Coordenação das atividades operacionais do serviço com cães na 
+OBM; 
+c).2 Indicar os binômios considerados aptos pela CGS EC, a serem 
+designados pelo comandante da OBM , para integrar o serviço com cães 
+da unidade; 
+c).3 Elaboração e assinatura dos quadros de trabalhos semanais e 
+escalas relativas ao serviço diário de condutores; 
+c).4 Gestão do pessoal do serviço com cães da OBM; 
+c).5 Elaboração de estatísticas das atividades operacionais do canil; 
+c).6 Manutenção física e sanitária dos cães; 
+c).7 Controle dos prazos de certificação dos binômios; 
+c).8 Elaboração e manutenção dos assentamentos individualizados dos 
+cães; 
+c).9 Desenvolvimento do serviço com cães na OBM. 
+d) Os bombeiros militares membros do COS EC poderão ser dispensados 
+de suas funções nas OBM para que se dediquem exclusivamente ao serviço 
+com cães, a critério do comandante da unidade. 
+ 
+6. SERVIÇO DE BUSCA, RESGATE E SALVAMENTO COM CÃES 
+6.1. Do Emprego 
+a) Os cães poderão ser empregados nas seguintes atividades e/ou locais: 
+a).1 Busca, resgate e salvamento em estruturas colapsadas; 
+a).2 Busca e localização de vítimas em escombros; 
+a).3 Busca e localização de vítimas soterradas; 
+a).4 Busca e localização de pessoas perdidas em matas e florestas; 
+a).5 Busca e localização de afogados; 
+
+---
+
+## Página 5
+
+a).6 Busca e localização de cadáveres. 
+a).7 Demonstrações de caráter educacional ou recreativo; 
+a).8 Formaturas e desfiles de caráter cívico-militar; 
+ a).9 Atividades de cinoterapia; 
+a).10 Os cães poderão ainda ser empregados em outras missões  para 
+as quais hajam sido treinados , desde que atinentes às atividades da 
+Corporação. 
+b) As áreas de buscas devem, dentro das possibilidades, serem 
+preservadas, de modo que o ambiente seja alterado o mínimo possível, para 
+que os cães tenham melhor desempenho nas suas atividades. 
+c) A quantidade de binômios da EBRESC , a serem utilizados nas 
+atividades operacionais, deverão ser definidas em função da disponibilidade de 
+animais para o serviço no momento do acionamento, observados o tamanho da 
+área de busca e logística existente para o apoio da atividade. 
+d) Os cães serão deslocados em viaturas específicas para o serviço ou, 
+preferencialmente, em veículos com a utilização de boxes apropriados. 
+e) O levantamento preliminar da ocorrência de busca ficará a cargo da 1ª 
+equipe de salvamento qu e chegar ao local, cabendo a esta solicitar o apoio da 
+EBRESC para dar prosseguimento às buscas. 
+f) Em ocorrências de notória necessidade da utilização da EBRESC, esta 
+deverá integrar as equipes de busca já na 1ª resposta. 
+6.2. Da EBRESC 
+a) A Equipe de Busca, Resgate e Salvamento com Cães - EBRESC será 
+integrada por militares especializados em busca, resgate e salvamento com 
+cães e detentores de cães avaliados pela CGSEC. 
+b) Excepcionalmente e mediante indicação da CGSEC, Bombeiros Militares 
+que não se enquadram nas exigências d o item 6.2., a) poderão integrar a 
+EBRESC. 
+c) Os militares que integrarem a EBRESC poderão ficar dispensados de 
+suas funções originais nas OBM’s de origem para que se dediquem 
+exclusivamente a atividade de salvamento com cães. 
+d) A quantidade de cães que integrará a EBRESC será definida pela 
+necessidade operacional da corporação, devendo ser respeitada, 
+preferencialmente, a descentralização do serviço objetivando atender todas as 
+regiões do Estado. 
+6.3. Das Atribuições do Condutor do cão 
+a) Ao condutor do cão compete: 
+a).1 Realizar as atividades necessárias à execução de buscas com 
+emprego de cães; 
+a).2 Realizar as atividades  necessárias ao treinamento, adaptação 
+do plantel da OBM e execução de buscas pela unidade, conf orme 
+quadro de trabalho semanal específico; 
+
+---
+
+## Página 6
+
+a).3 Realizar as atividades de limpeza e manutenção diárias 
+requeridas às instalações físicas do canil; 
+a).4 Providenciar o asseio dos animais, sempre que necessário e 
+determinado, conforme quadro de trabalho semanal específico; 
+a).5 Providenciar diariamente alimentação e hidratação do plantel; 
+a).6 Monitorar as condições de saúde dos animais, alertando 
+também a COSEC para quaisquer alterações nesse sentido; 
+a).7 Realizar outras atividades visando o bem -estar do plantel e que 
+não tenham sido contempladas nos tópicos anteriores;  
+ 
+7. DESENVOLVIMENTO DOS CÃES 
+7.1.  Da Inclusão 
+a) Serão considerados Cães pertencentes a carga do Corpo de Bombeiros 
+Militar de Alagoas os animais adquiridos por:  
+a).1 Aquisição; 
+a).2 Doação; 
+a).3 Criação; 
+a).4 Permuta; 
+a).5 Acordo de acasalamento;  
+a).6 Por Acostamento. 
+b) Cães com menos de 18 (dezoito) meses, ainda não certificados e com 
+Patrimônio do CBMAL, estarão na situação de CARGA PROVISÓRIA.  
+c) Os procedimentos de inclusão descritos neste item serão controlados 
+pela CGSEC.  
+d) Os Cães incluídos em carga do CBMAL serão des tinados 
+exclusivamente ao serviço de Busca, Resgate e Salvamento, podendo ser 
+empregados em ações sociais e eventos oficiais, desde que não tragam 
+prejuízo às qualidades laborais a que se destinam.  
+e) Todos os Cães incluídos em carga do CBMAL deverão ter a p artir da 
+data de sua entrada assentamento individualizado. 
+f) Devem constar nos assentamentos individualizados dos animais da 
+Corporação os seguintes dados:  
+f).1 Nome, raça, filiação, sexo, cor e sinais peculiares do cão;  
+f).2 Data de nascimento, de aquisição e de inclusão em carga;  
+f).3 Forma de aquisição;  
+f).4 Assinatura do veterinário e do Gestor, que examinaram e avaliaram 
+o animal quando da sua aquisição;  
+f).5 Evolução do adestramento e participação em missões ou outras 
+afins.  
+
+---
+
+## Página 7
+
+g) Os cães incluídos no CBMAL, sempre que possível, deverão possuir 
+chip de identificação.  
+7.2. Da aquisição 
+a) A compra de cães será efetuada por meio de dotações orçamentárias 
+próprias, observadas a legislação vigente.  
+b) A compra poderá se processar em qualquer lug ar do território nacional 
+ou, se as condições forem favoráveis, no exterior. 
+c) A Superintendência de Material e Patrimônio será responsável pelo 
+processo de compra dos cães,  com apoio da CGS EC e  observando os 
+seguintes itens:  
+c).1 Valor de mercado compatível com o padrão e características da 
+raça;  
+c).2 Análise de Pedigree com linha de sangue voltada para o trabalho;  
+c).3 Estar apto clínica e profilática;  
+c).5 Ser de raça compatível com o serviço do CBMAL; 
+c).6 Possuir temperamento compatível com o serviço do CBMAL;  
+c).7 Aptidão de saúde atestada por um médico veterinário.  
+c).8 Idade máxima de 06 (seis) meses, exceto se o cão já estiver 
+adestrado ou se for utilizado exclusivamente para reprodução.  
+d) O gestor realizará avaliação prévia do cão durante o processo de 
+compra, após parecer do médico veterinário, determinando se há ou não 
+viabilidade para aquisição.  
+7.3. Da doação 
+a) A doação poderá ser feita por particulares ou pessoas jurídicas de direito 
+público ou privado, nacionais ou estrangeiras, através de termo de doação 
+próprio elaborado pela Coordenação Geral.  
+b) Os cães doados deverão apresentar as seguintes condições:  
+b)1. Ter idade mínima de 45 dias e máxima de 06 (seis) meses;  
+b).2 Estar apto clínica e profilaticamente; 
+b).3 Ser de raça compatível com o serviço bombeiro militar; 
+b).4 Possuir temperamento compatível com o serviço bombeiro militar;  
+b).5 Ser avaliado pela C oordenação Geral de Salvamento com Cães, 
+após avaliação de um Médico Veterinário.  
+c) Os cães doados permanecerão em observação e constante treina mento 
+para a atividade fim até 6 meses após a data da doação; 
+d) Caso seja constatado, dentro do prazo constante no item anterior, que o 
+cão não é apto para o serviço bombeiro militar, o contrato de doação será 
+considerado inválido e cão será devolvido ao doador. 
+7.4. Da criação 
+
+---
+
+## Página 8
+
+a) A criação própria será considerada feita na Corporação, quando resultar 
+o nascimento de filhotes oriundos de matrizes (fêmeas), pertencentes ao 
+patrimônio do CBMAL. 
+b) Os filhotes provenientes da criação própria permanecerão aos cuidados 
+da COSEC pertinente , em observação e em constante treinamento para a 
+atividade fim, até a idade de 18 (dezoito) meses.  
+c) Após o prazo referido no item anterior, os semoventes serão  avaliados 
+pela CGSEC para inclusão em carga ou alienação. 
+d) Se a qualquer momento for observada pela CGS EC a inservibilidade do 
+cão para os serviços do CBMAL ou missões específicas, os mesmos pode rão 
+ser destinados a doação ou alienação. 
+7.5. Da permuta 
+a) A permuta será processada  apenas entre filhotes de até seis meses, 
+mediante manifestação favorável da CGSEC, através de Termo de Permuta. 
+7.6. Do acordo de acasalamento 
+a) O acordo de acasalamento será feito  mediante contrato escrito entre o 
+CBMAL e a pessoa física ou jurídica proprietária do animal. 
+b)  O acordo de acasalamento visa cumprir planejamento de 
+aprimoramento genético do plantel ou renovação estratégica para adequação 
+das demandas operacionais. 
+7.7. Do acostamento 
+a) Os semoventes caninos de propriedade particular de bombeiros 
+militares, poderão compor o efetivo do canil, devendo obedecer aos seguintes 
+critérios:  
+a).1 Ser adido a carga do CBMAL na forma de acostado e; 
+a).2 Obedecer os critérios exigidos para doação conforme item 7.3, b) 
+desta DOB. 
+b) Todos os custos com o cão acostado serão arcados pelo seu 
+proprietário. 
+7.8. Da Exclusão do Semovente Canino 
+a) O semovente canino será excluído do serviço ativo do CBMAL nas 
+seguintes condições:  
+a).1 Reforma; 
+a).2 Desaparecimento ou Extravio; 
+a).3 Morte; 
+a).4 Doação; 
+a).5 Alienação. 
+7.9. Da Reforma 
+a) A reforma se dará nas seguintes condições: 
+a).1 Ter o cão oito anos de serviço; 
+
+---
+
+## Página 9
+
+a).2 Atingir o limite de 10 anos de idade; 
+a).3 Ser constatada a inservibilidade operacional atestada pela CGSEC; 
+a).4 Ser constatada i nservibilidade física e de saúde atestada por um 
+médico veterinário;  
+b) Os cães reformados poderão ser mantidos pelo CBMAL para desfiles 
+militares e demonstrações, podendo ainda serem doados preferencialmente ao 
+condutor, mediante autorização e homologação do Comandante Geral; 
+c) Os cães acostados poderão ser reformados obedecendo os mesmos 
+critérios referidos anteriormente ou p or interesse do bombeiro militar condutor 
+do semovente canino. 
+7.10. Do Desaparecimento ou Extravio 
+a) Considera-se desaparecido ou extraviado o cão que não for recuperado 
+no prazo de 30 dias, mediante instauração de Procedimento Administrativo.  
+b) Declarado o extravio, o CBMAL adot ará os procedimentos de descarga 
+do bem semovente. 
+7.11. Da Morte 
+a) O cão morto por motivo natural ou acidental será excluído do plantel da 
+Corporação por meio d a instauração do Procedimento Administrativo, 
+subsidiado por um laudo técnico de veterinário ou laudo equivalente nos casos 
+de sacrifício. 
+b) Entende-se por sacrifício a morte causada voluntariamente ao cão  nas 
+condições a seguir: 
+b).1 quando em virtude de acidente o cão for julgado irrecuperável 
+por médico veterinário  ou equivalente , e sua sobrevivência seja 
+apenas para motivo de sofrimento; 
+b).2 quando for acometido por enfermidade grave de elevado índice 
+de contágio, sob risco de alastramento a humanos ou outros animais, 
+avaliado por médico veterinário ou equivalente; ou 
+b).3 nos casos não previstos nos itens anteriores  mediante parecer 
+do médico veterinário  ou equivalente , devendo ser lavrado e 
+assinado o atestado de óbito ou sacrifício, com o objetivo de 
+exclusão do cão da carga do CBMAL. 
+7.12. Da doação 
+a) As doações de semoventes caninos  inservíveis pertencentes ao plantel 
+da corporação deverão ser autorizadas pelo Comandante Geral , após 
+avaliação da CGSEC. 
+b) A doação deverá obedecer a seguinte ordem de preferência: 
+b).1 Condutor;  
+b).2 Instituição Militar; 
+b).1 Instituição ou organização do Estado;  
+b).3 Instituição ou organização privada; 
+
+---
+
+## Página 10
+
+b).1 Civil; 
+c) Na escolha do do natário, deverão ser considerad as as condições  
+financeiras para a manutenção do cão, o zelo aos animais, além da existência 
+de espaço físico suficiente para abrigá-lo. 
+7.13. Da Alienação 
+a) A alienação  de semoventes caninos inservíveis  para o serviço do 
+bombeiro militar  pertencentes ao plantel da corporação deverão ser 
+autorizadas pelo Comandante Geral, após avaliação da CGSEC. 
+b) Nos casos em que a ninhada ultrapasse o planejamento pretendido para 
+o total de filhotes que integrarão o plan tel do CBMAL, poderá ser autorizada 
+pelo Comandante Geral, após manifestação da CGSEC, a alienação de filhotes 
+excedentes. 
+ 
+8. AVALIAÇÃO, CERTIFICAÇÃO E RECERTIFICAÇÃO 
+a) A certificação de qualidade para cães de busca tem por objetivo garantir 
+a qualidade do serviço prestado pela Instituição, bem como respaldar os 
+treinamentos e adequar a Corporação às exigências dos órgãos nacionais e 
+internacionais que regulam a atuação em emergências no mundo. 
+b) A certificação é uma forma de testar a qualidade do cão quanto ao seu 
+emprego na ativi dade operacional, garantindo que os cães estão sendo 
+treinados em seus quartéis e que fornecerão a resposta desejada quando 
+acionados para ocorrências. 
+c) Os cães que atuarão em  ocorrências reais deverão, preferencialmente, 
+possuir certificação. 
+d) Nos casos em que seja necessária a atuação de cães sem certificação,  
+a CGSEC deverá se manifestar acerca da aptidão e das áreas que o 
+semovente canino poderá operar, após avaliação. 
+e) Os cães serão certificados em avaliações internas ou externas 
+promovidas por outras ins tituições reconhecidas pelo CBMAL. As avaliações  
+internas serão promovidas ao menos uma vez por ano, podendo ser suprimidas 
+quando houver participação oficial do CBMAL em provas de outras instituições. 
+f) A avaliação interna será regulada por Norma Operacional. 
+g) A certificação terá validade máxima de dois anos e as provas de 
+recertificação seguirão o mesmo padrão técnico das provas de certificação.  
+ 
+9. PRESCRIÇÕES DIVERSAS 
+a) A CGSEC, além de suas obrigações estabelecidas nesta portaria, 
+deverão desenvolver ações que busquem a integração com as outras agências 
+da Secretaria de Estado da Segurança Pública, priorizando o atendimento das 
+diretrizes estabelecidas pelo governo estadual. 
+b) O CBMAL poderá, mediante convênio, instituir serviço de veterinária 
+através de parcerias públicas ou privadas. 
+
+---
+
+## Página 11
+
+c) Os casos omissos serão definidos pelo Comandante Geral, após parecer 
+da CGSEC. 
+ 
+10. REFERÊNCIAS 
+ Portaria nº. 263 – R, de 06 de dezembro de 2012 (Institucionaliza o serviço 
+de busca, resgate e salvamento com cães no CBMES). Corpo de Bombeiros 
+Militar do Espírito Santo. 
+ NO nº 06. Norma Operacional nº 06. Corpo de Bombeiros Militar de Goiás, 
+atualizada em 24 de março de 2014.  
+ Instruções Reguladoras do Sistema de Manutenção de Cães da PMPR. 
+Portaria do Comando Geral nº. 495, de 8 de jun ho de 2007 – Polícia Militar 
+do Estado do Paraná. 
+ Diretriz de Procedimento Operacional Padrão (DtzPOP) do Corpo de 
+Bombeiros Militar de Santa Catarina – CBMSC. 
+ Portaria nº. 110/2015 -GCG, de 12 de maio de 2015, publicado no Boletim 
+Geral Ostensivo nº. 086 d a mesma data. (Institui no âmbito do Corpo de 
+Bombeiros Militar de Alagoas o serviço de busca, resgate e salvamento com 
+cães e dá outras providências). 
+ 
+ 
+Maceió – AL, 06 de janeiro de 2016. 
+ 
+ 
+ROBERTO WANDERLEY AMORIM JÚNIOR – MAJ BM 
+Presidente da Comissão 
+ 
+ 
+JORGE LUIZ LOPES DA SILVA – CAP BM 
+Membro da Comissão 
+ 
+ 
+LUIZ DIEGO DE RAMOS RODRIGUES – CAP BM 
+Membro da Comissão 
+ 
+ 
+HELGA DIAS PINTO DE CAMPOS VASCONCELOS – 1º. TEN BM 
+Membro da Comissão 
+ 
+ 
+THIAGO MELO SALVADOR DOS SANTOS – 1º. TEN BM 
+Membro da Comissão 
+
+---
+

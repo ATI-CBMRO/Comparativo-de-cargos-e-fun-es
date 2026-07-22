@@ -29,7 +29,10 @@ import Cadastro from './pages/Cadastro.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
+import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
+import EmConstrucao from './components/EmConstrucao.jsx'
 import { useAuth } from './lib/auth.jsx'
+import { useScenario } from './context/ScenarioContext.jsx'
 
 // /minuta/revisao e /minuta/deliberacao (protótipo CONDEG em localStorage) saíram do
 // menu — a Revisão da Minuta oficial (Firebase, item abaixo) assumiu o papel de produção.
@@ -148,6 +151,8 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
         </div>
       </button>
 
+      <ScenarioSwitcher />
+
       <nav className="sidebar-nav">
         <div className="nav-section-label">Navegação</div>
         {NAV_GROUPS.map((group, gi) => (
@@ -205,6 +210,13 @@ function FullPageLoading() {
 // Usuário já autenticado que chega em /login ou /cadastro (link antigo, aba duplicada
 // etc.): manda de volta ao destino original que ele tentou acessar antes do login
 // (guardado em location.state.from pelo LoggedOutRoutes), ou para o Início.
+// Páginas das trilhas (Regimento Interno / Regulamento Geral) só têm conteúdo na LOB
+// futura por enquanto. No cenário "atual", mostram o placeholder — nada de dados se mistura.
+function TrilhaRoute({ children }) {
+  const { cenario } = useScenario()
+  return cenario === 'atual' ? <EmConstrucao /> : children
+}
+
 function AlreadyLoggedInRedirect() {
   const location = useLocation()
   return <Navigate to={location.state?.from || '/'} replace />
@@ -268,22 +280,22 @@ export default function App() {
           <Route path="/estados/:stateId" element={<StateDetail />} />
           <Route path="/busca" element={<SearchPage />} />
           {/* Trilha Regimento Interno (pipeline padrão) */}
-          <Route path="/minuta/subsidio" element={<RISubsidio />} />
+          <Route path="/minuta/subsidio" element={<TrilhaRoute><RISubsidio /></TrilhaRoute>} />
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta/diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
-          <Route path="/regulamento/subsidio" element={<RegSubsidio />} />
+          <Route path="/regulamento/subsidio" element={<TrilhaRoute><RegSubsidio /></TrilhaRoute>} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
-          <Route path="/comparar" element={<MinutaComparator />} />
+          <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
-          <Route path="/minuta/deliberacao" element={<MinutaDeliberacao />} />
-          <Route path="/minuta/comparar" element={<MinutaRIComparator />} />
-          <Route path="/minuta/comparativo-ri" element={<RIComparator />} />
-          <Route path="/regulamento/comparar" element={<RegulamentoComparator />} />
+          <Route path="/minuta/deliberacao" element={<TrilhaRoute><MinutaDeliberacao /></TrilhaRoute>} />
+          <Route path="/minuta/comparar" element={<TrilhaRoute><MinutaRIComparator /></TrilhaRoute>} />
+          <Route path="/minuta/comparativo-ri" element={<TrilhaRoute><RIComparator /></TrilhaRoute>} />
+          <Route path="/regulamento/comparar" element={<TrilhaRoute><RegulamentoComparator /></TrilhaRoute>} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
           <Route path="/cadastro" element={<AlreadyLoggedInRedirect />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />

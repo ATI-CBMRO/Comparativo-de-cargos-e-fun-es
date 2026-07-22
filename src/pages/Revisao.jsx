@@ -7,7 +7,10 @@ import { chapterIdOf } from '../lib/minutaTargets.js'
 import {
   groupByDispositivo, countByDispositivo, countByChapter,
   filterSuggestionsByDoc, filterFinalsByDoc,
+  filterSuggestionsByScenario, filterFinalsByScenario,
 } from '../lib/reviewGroup.js'
+import { useScenario } from '../context/ScenarioContext.jsx'
+import { scenarioDbUrl } from '../lib/scenario.js'
 import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
   setAdminStatus, subscribeFinalTexts, saveFinalText,
@@ -18,6 +21,7 @@ import RevisaoModal from '../components/RevisaoModal.jsx'
 import RevisaoChapterRail from '../components/RevisaoChapterRail.jsx'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
+import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
@@ -34,6 +38,7 @@ function Rail({ count, onClick }) {
 
 export default function Revisao({ initialDoc } = {}) {
   const { user } = useAuth()
+  const { cenario } = useScenario()
   // Quando a Revisão é aberta a partir da trilha (menu), o documento já vem
   // fixado (initialDoc) e o seletor RI×Regulamento é escondido.
   const [docId, setDocId] = useState(initialDoc || 'ri') // 'ri' | 'reg'
@@ -47,11 +52,11 @@ export default function Revisao({ initialDoc } = {}) {
     setData(null)
     setErro(null)
     setAberto(null) // fecha a modal ao trocar de documento — evita comentar no doc errado
-    const url = docId === 'reg' ? '/database/regulamento_structure.json' : '/database/minuta_structure.json'
-    fetchJson(url)
+    const file = docId === 'reg' ? 'regulamento_structure.json' : 'minuta_structure.json'
+    fetchJson(scenarioDbUrl(cenario, file))
       .then(setData)
       .catch(() => setErro('Não foi possível carregar o documento.'))
-  }, [docId])
+  }, [docId, cenario])
 
   // Ausência do doc config/revisao == fechado (fail-closed) — ver reviewData.js.
   useEffect(() => subscribeRevisaoConfig(
@@ -69,12 +74,21 @@ export default function Revisao({ initialDoc } = {}) {
   // Idem: subscribeFinalTexts também retorna o unsubscribe do onSnapshot.
   useEffect(() => subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e)), [])
 
-  const finalsForDoc = useMemo(() => filterFinalsByDoc(finals, docId), [finals, docId])
+  // Filtra por documento (RI×Regulamento) E por cenário (atual×futura) — os dois nunca
+  // se misturam: comentários de um cenário jamais aparecem no outro.
+  const finalsForDoc = useMemo(
+    () => filterFinalsByScenario(filterFinalsByDoc(finals, docId), cenario),
+    [finals, docId, cenario],
+  )
 
-  const suggestionsForDoc = useMemo(() => filterSuggestionsByDoc(suggestions, docId), [suggestions, docId])
+  const suggestionsForDoc = useMemo(
+    () => filterSuggestionsByScenario(filterSuggestionsByDoc(suggestions, docId), cenario),
+    [suggestions, docId, cenario],
+  )
   const counts = useMemo(() => countByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const grupos = useMemo(() => groupByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const articles = useMemo(() => (data ? buildArticles(data) : []), [data])
+  const parteDe = useMemo(() => (docId === 'reg' ? parteByChapterTitle(data) : {}), [docId, data])
   const fechados = useMemo(() => {
     let n = 0
     finalsForDoc.forEach(f => { if (f.status === 'fechado') n += 1 })
@@ -201,11 +215,23 @@ export default function Revisao({ initialDoc } = {}) {
             onSelect={scrollToChapter}
           />
           <div className="rev-doc">
-          {articles.map(art => {
+          {(() => {
+            let ultimaParte = null
+            return articles.map(art => {
             const caputId = caputDispositivoId(art.editId)
             const caputLabel = `${articleLabel(art.number)}`
+            const parte = art.chapterTitle ? parteDe[art.chapterTitle] : null
+            const faixa = parte && parte !== ultimaParte ? PARTE_HEADERS[parte] : null
+            if (parte) ultimaParte = parte
             return (
               <div key={art.number} className="rev-art">
+                {faixa && (
+                  <div style={{
+                    textAlign: 'center', fontWeight: 800, fontSize: 15, letterSpacing: 1,
+                    color: 'var(--cbm-red-700)', borderTop: '2px solid var(--cbm-red-700)',
+                    borderBottom: '2px solid var(--cbm-red-700)', padding: '8px 0', margin: '20px 0 12px',
+                  }}>{faixa}</div>
+                )}
                 {art.chapterTitle && (
                   <p
                     className="rev-chapter"
@@ -240,7 +266,8 @@ export default function Revisao({ initialDoc } = {}) {
                 })}
               </div>
             )
-          })}
+            })
+          })()}
           </div>
         </div>
         )}

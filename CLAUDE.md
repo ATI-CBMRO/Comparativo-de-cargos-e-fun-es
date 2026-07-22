@@ -10,6 +10,12 @@ estaduais, com identidade visual do CBMRO (50 documentos legais). Além de compa
 portal ELABORA as minutas do CBMRO (Regimento Interno e Regulamento Geral) a partir
 desse acervo.
 
+**LEIA PRIMEIRO — o portal tem DOIS CENÁRIOS que nunca se misturam** (ver seção
+"Cenários LOB"): **LOB atual** (Lei 2.204/2009, vigente) e **LOB futura** (nova LOB, em
+aprovação). Quase tudo neste guia descreve a trilha da FUTURA; o cenário ATUAL tem
+geradores e dados próprios. Antes de mexer em qualquer minuta/gerador, saiba em qual
+cenário está.
+
 ## Comandos
 
 ```bash
@@ -20,8 +26,13 @@ npm run preview          # pré-visualizar o build
 node --test              # testes de lógica pura (96 testes; ver arquivos *.test.js em src/lib e api/)
 ```
 
-**Pipeline de dados (Python 3.10+ — os scripts usam `int | None`). Em Mac com só o Python
-3.9 do sistema: `brew install python@3.12` e chame `python3.12`.** ORDEM IMPORTA:
+**Ingestão de novos PDFs de legislação → use a skill `/ingerir-legislacao`** (em
+`.claude/skills/`): orquestra o pipeline abaixo na ordem certa, desvia das armadilhas
+(venv isolado, grafia divergente de estado, classificação por conteúdo) e reconcilia.
+
+**Pipeline de dados (Python 3.10+ — os scripts usam `int | None`). No Mac, o `pip` é
+bloqueado no Python do sistema e no 3.12 do Homebrew (PEP 668): use o venv isolado
+`.venv-pipeline/` — `.venv-pipeline/bin/python scripts/<x>.py` (fora do git).** ORDEM IMPORTA:
 
 ```bash
 python scripts/convert_to_markdown.py      # PDFs em "LEGISLAÇÃO CBMS/" -> database/markdown/*.md
@@ -142,6 +153,94 @@ tipografia Outfit+Inter; ícones `lucide-react`.
 `/legislacao-pdf/*`) e `copyDatabaseOnBuild` (build: copia `database/` → `dist/database/` e
 `LEGISLAÇÃO CBMS/` → `dist/legislacao-pdf/`). Essas pastas ficam FORA de `public/` (grandes,
 regeneradas). `public/` é servida na raiz (brasão `/BrasaoCBMRO2D-COMPLETO.png`).
+
+## Cenários LOB — atual × futura (Fases 1 e 2, 15-16/07/2026)
+
+O portal separa **dois cenários que NUNCA se misturam**:
+- **LOB futura** — nova LOB (em aprovação). É o trabalho antigo; **curadoria PAUSADA**.
+- **LOB atual** — Lei nº 2.204/2009 vigente (red. até Lei 5.697/2023). Foco atual.
+
+**A chave:** `ScenarioSwitcher` no topo da sidebar; `src/context/ScenarioContext.jsx`
+(`ScenarioProvider`/`useScenario` → `{ cenario, setCenario }`, dentro do `BrowserRouter`,
+ver `main.jsx`). Lógica pura em `src/lib/scenario.js` (`SCENARIOS`, `DEFAULT_SCENARIO='futura'`,
+`normalizeScenario`, `resolveScenario`, `scenarioDbUrl`), testada. Cenário na URL
+(`?cenario=atual|futura`, carimbado no mount) + `localStorage`.
+
+**Gavetas de dados:** a **futura fica na RAIZ de `database/`** (arquivos de sempre —
+NÃO mover); o **atual em `database/atual/`**. Resolva SEMPRE com
+`scenarioDbUrl(cenario, 'minuta_structure.json')`. Compartilhados entre cenários (não
+mexer): `states_data.json`, `organs_detail/` (acervo dos 27), `markdown/`.
+
+**Geradores do ATUAL são separados** (os da futura estão colados à LOB futura via
+`ORGAN_ORDER` hardcoded + enriquecimento):
+```bash
+python scripts/build_minuta_structure_atual.py       # RI do atual (por ÓRGÃO) + commandChart
+python scripts/build_regulamento_structure_atual.py  # Regulamento do atual (TEMÁTICO)
+```
+- `database/atual/organs_detail/ro.json` — 21 órgãos do CBMRO vigente, curados à mão,
+  competências VERBATIM da Lei 2.204/2009. Estrutura **validada pelo organograma oficial**
+  (`docs/curadoria/lob-atual-ro/` — PDF + `estrutura-vigente-validada.md`). É a fonte da verdade.
+- `build_regulamento_structure_atual.py` **lê o `regulamento_structure.json` da futura** e
+  re-carimba os ids (não chama o builder da futura, que reescreveria o arquivo dela).
+
+**⚠️ ARMADILHA (já mordeu):** `build_competencia_section` e `build_cargo_sections` de
+`build_minuta_structure.py` chamam `enrich_organ_for`/`enrich_for` — enriquecimento de
+OUTROS ESTADOS da futura. Reusá-las no atual **vaza CBMMT/PA/DF** na competência do CBMRO.
+Por isso o gerador do atual reescreve essas duas seções SEM enriquecimento (só
+`build_finalidade_section`/`build_organizacao_section` são neutras e reusáveis).
+
+**Regra de produto:** o **RI é por ÓRGÃO** (estrutura → LOB-específica); o **Regulamento é
+TEMÁTICO** (serviço/disciplina/uniformes/ensino → NÃO depende da LOB), por isso o atual
+reusa os 16 temas / 413 artigos primários já curados (ver seção "Regulamento Geral em 2
+Partes" abaixo), só isolando os ids.
+
+**Isolamento no Firebase** (comentários e textos finais) — marcador embutido no `editId`,
+mesma filosofia do `reg:` (sem campo novo, sem migração):
+- atual: `atual:organ:...` (RI) e `reg:atual:...` (Regulamento);
+- futura: **SEM marcador** (preserva os comentários existentes).
+`reviewGroup.js`: `scenarioOfDispositivo` + `filterSuggestionsByScenario`/`filterFinalsByScenario`
+(testados). Sem isso, ids como `organ:cg` colidiriam entre cenários.
+
+**Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (16 temas),
+`/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`. **Ainda gated** (mostram
+"Em construção" via `TrilhaRoute` em `App.jsx`): **Subsídio** (`/minuta/subsidio`,
+`/regulamento/subsidio`) — depende de gerar o `comparativo_minuta` do atual. Specs/planos em
+`docs/superpowers/specs/2026-07-15-cenarios-lob-atual-futura-design.md` e
+`docs/superpowers/plans/2026-07-15-cenarios-lob-fase1.md`.
+
+## Regulamento Geral em 2 Partes (Geral × Serviço) — 21/07/2026
+
+O Regulamento Geral deixou de ser uma sequência única de temas: agora é **um documento com
+2 Partes** — Parte I (Geral/institucional, 12 temas) e Parte II (de Serviço/operacional, 4
+temas). Cada capítulo de `regulamento_structure.json` tem o campo `parte: 'geral'|'servico'`;
+o gerador (`build_regulamento_structure.py`, dict `TEMA_PARTE`) ordena Parte I antes da Parte
+II. Helper compartilhado: `src/lib/regulamentoPartes.js` (`PARTE_HEADERS`,
+`parteByChapterTitle`) — usado por `RegulamentoWizard.jsx`, `minutaDocx.js`,
+`RegulamentoComparator.jsx` e `Revisao.jsx` (modo Regulamento). Para o RI, que não tem campo
+`parte`, o helper retorna `{}` e vira no-op automático — não confundir os dois documentos.
+
+**16º tema**: `central-operacoes-193` ("Da Central de Operações e do Teledespacho") — matéria
+recorrente (achada em 4 fontes: BA/RR/TO/ES) sem tema próprio na base original de 15. Primária:
+Bahia (Art. 8-9 Supervisor + 18 Operador de Teledespacho/CICOM); alternativa: Tocantins (Anexo
+2, Art. 12-14). **413 artigos primários** ao todo (410 da curadoria original + 3 do 16º tema).
+
+**RISG do Exército** (`database/markdown/RISG.md`, convertido de `LEGISLAÇÃO CBMS/RISG.pdf`)
+entra como pseudo-fonte `risg` (rotulada "Exército Brasileiro") — **só como alternativa, nunca
+como fonte primária de nenhum tema** (testado em `test_regulamento_structure.py`). Reforça
+`cerimonial-honras` e `pessoal-quadros`. Fontes verificadas por leitura de subagentes antes de
+qualquer decisão de estrutura — ver vault Obsidian `Codebases/Comparativo-de-cargos-e-funcoes/`
+(notas "Comparativo RISG × Regulamentos — Round 1/Round 2").
+
+**Pendências sinalizadas (não forçadas)**: corpo principal de Tocantins (Art. 1-13,16 — colide
+numeração de "Art. N" com o Anexo 2 já usado); 4 Diretrizes/Normas de Alagoas sem "Art. N"
+formal (seção numerada, incompatível com o extrator atual); tema `uniformes-apresentacao`
+segue magro (1 artigo, sem achado forte no RISG). `RegDiagramas.jsx` foi destravado em
+21/07/2026 (árvore do documento — ver seção Diagramas), sem `commandChart` artificial.
+
+Specs/planos: `docs/superpowers/specs/2026-07-21-regulamento-geral-2-partes-design.md` (Fase 1
+— estrutura), `2026-07-21-fase2a-central-operacoes-193-design.md` (16º tema),
+`2026-07-21-fase2bcd-reforco-verbatim-design.md` (reforço verbatim), `2026-07-21-fase1-heranca-2partes-telas-design.md`
+(herança nas telas) — e os planos irmãos em `docs/superpowers/plans/`.
 
 ## Curadoria — Minuta do Regulamento (em andamento)
 

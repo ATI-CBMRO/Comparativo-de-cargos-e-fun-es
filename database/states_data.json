@@ -3,7 +3,7 @@
     "version": "1.0",
     "generated_at": "2026-06-01",
     "total_states": 27,
-    "total_documents": 50,
+    "total_documents": 72,
     "curated_states": 27,
     "regions": {
       "Norte": 7,
@@ -486,6 +486,75 @@
       "cbm_abbreviation": "CBMAL",
       "documents": [
         {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 01.md",
+          "char_count": 433269,
+          "year": 2012,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 03.md",
+          "char_count": 44676,
+          "year": 2021,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 04.md",
+          "char_count": 41975,
+          "year": 2014,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "8.429",
+              "data": "2 de junho de"
+            }
+          ],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 05.md",
+          "char_count": 12235,
+          "year": 2013,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 06.md",
+          "char_count": 47838,
+          "year": 2019,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 07.md",
+          "char_count": 22098,
+          "year": null,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 08.md",
+          "char_count": 19858,
+          "year": 2022,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
           "type": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Alagoas - Lei de Organização Básica.md",
@@ -506,10 +575,100 @@
           "has_pdf": true
         },
         {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 01.md",
+          "char_count": 10622,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 02.md",
+          "char_count": 1569,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 03.md",
+          "char_count": 7876,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 04.md",
+          "char_count": 8370,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 05.md",
+          "char_count": 6445,
+          "year": 2012,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 06.md",
+          "char_count": 4862,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 07.md",
+          "char_count": 6086,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 08.md",
+          "char_count": 12056,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 09.md",
+          "char_count": 9865,
+          "year": 2021,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Alagoas - Norma Operacional 11.md",
+          "char_count": 14453,
+          "year": 2026,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
           "type": "Quadro Demonstrativo de Cargos",
           "typeVerified": true,
           "md_file": "Alagoas - Quadro Demonstrativo de Cargos e Funções.md",
-          "char_count": 64626,
+          "char_count": 64659,
           "year": 2013,
           "laws": [
             {
@@ -530,34 +689,8 @@
           "has_pdf": true
         }
       ],
-      "legal_basis": "Lei nº 7.444 (28 DE DEZEMBRO DE); Lei nº 6.171 (31 de julho de); Decreto nº 27.560 (13  de \nAgosto de)",
-      "chapters_summary": [
-        {
-          "number": "I",
-          "title": "DA ESTRUTURA GERAL",
-          "text_preview": "CAPÍTULO I \nDA ESTRUTURA GERAL \n \n\n---\n\n## Página 2\n\nArt. 4º  O Corpo de Bombeiros Militar do Estado de Alagoas é constituído por órgãos \nde direção, órgãos de apoio e órgãos de execução. \n§ 1º Os órgãos de direção são responsáveis pelo com ando e administração geral, \nincumbindo se do planejamento, visando à organizaçã o da Corporação em todos os \nníveis, às suas necessidades em pessoal e materia"
-        },
-        {
-          "number": "II",
-          "title": "DOS ÓRGÃOS DE DIREÇÃO",
-          "text_preview": "CAPÍTULO II \nDOS ÓRGÃOS DE DIREÇÃO \n \nArt. 5º  Os órgãos de direção constituem o Comando-Geral da  Corporação, \ncompreendendo: \nI – o Comando Geral; \nII – o Subcomando Geral; \nIII – o Conselho de Políticas Estratégicas; \nIV – a Coordenadoria Estadual de Defesa Civil; \nV – a Corregedoria Geral; \nVI – as Diretorias; \nVII – a Secretaria Geral; e \nVIII – as Comissões. \n \nSeção I \nDo Comando Geral \n \nA"
-        },
-        {
-          "number": "III",
-          "title": "DOS ÓRGÃOS DE APOIO",
-          "text_preview": "CAPÍTULO III \nDOS ÓRGÃOS DE APOIO \n \nArt. 23 . Os órgãos de apoio do Corpo de Bombeiros Militar do Estado de Alagoas \ncompreendem: \nI – os Centros: \na) de Manutenção; \nb) de Tecnologia de Informática e informação; e \nc) de Assistência; \nII – o Almoxarifado Central; e \nIII – o Aprovisionamento Central \n \nArt. 24.  O Centro de Manutenção é o órgão de apoio do sistema logístico, subordinado \nà Direto"
-        },
-        {
-          "number": "IV",
-          "title": "DOS ÓRGÃOS DE EXECUÇÃO",
-          "text_preview": "CAPÍTULO IV \nDOS ÓRGÃOS DE EXECUÇÃO \n \nArt. 29.  Os órgãos de execução do Corpo de Bombeiros Milita r do Estado de Alagoas \nsão constituídos de: \nI – Comandos Operacionais de Bombeiros: \na) Comando Operacional de Bombeiros da Região Metropolitana; e \nb) Comando Operacional de Bombeiros do Interior. \nII – Comandos de Bombeiros de Áreas: \na) Comando de Área da Região 1 (Agreste); \nb) Comando de Área"
-        },
-        {
-          "number": "V",
-          "title": "DO ÓRGÃO ESPECIAL",
-          "text_preview": "CAPÍTULO V \nDO ÓRGÃO ESPECIAL \n\n---\n\n## Página 13\n\n \nArt. 42.  O Órgão Especial a que se refere este Capítulo com preende a Seção Aérea e \nBombeiros do Gabinete Militar competindo-lhe o asse ssoramento, planejamento, \ncoordenação, fiscalização, manutenção e controle da s operações aéreas nas missões \nBombeiro Militar, além do transporte aéreo do Gover nador e das autoridades por ele \ndesignadas. \n"
-        }
-      ],
+      "legal_basis": "Lei nº 8.429 (2 de junho de); Lei nº 7.444 (28 DE DEZEMBRO DE); Lei nº 6.171 (31 de julho de); Decreto nº 27.560 (13  de \nAgosto de)",
+      "chapters_summary": [],
       "organs": [
         {
           "id": "cg",
@@ -1403,11 +1536,11 @@
         }
       ],
       "stats": {
-        "total_documents": 3,
+        "total_documents": 20,
         "has_regimento": true,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 237733,
+        "total_chars": 941919,
         "organs_mapped": 135,
         "curated": true
       }
@@ -2512,6 +2645,24 @@
             }
           ],
           "has_pdf": true
+        },
+        {
+          "type": "Regimento Interno",
+          "typeVerified": false,
+          "md_file": "Bahia - Regimento Interno.md",
+          "char_count": 524632,
+          "year": 2025,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": false,
+          "md_file": "Bahia - Regulamento de Serviço.md",
+          "char_count": 57252,
+          "year": 2021,
+          "laws": [],
+          "has_pdf": true
         }
       ],
       "legal_basis": "Lei nº 14.572 (25 DE MAIO DE)",
@@ -2925,11 +3076,11 @@
         }
       ],
       "stats": {
-        "total_documents": 1,
-        "has_regimento": false,
-        "has_regulamento": false,
+        "total_documents": 3,
+        "has_regimento": true,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 55483,
+        "total_chars": 637367,
         "organs_mapped": 60,
         "curated": true
       }
@@ -9216,7 +9367,7 @@
           "type": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Paraíba - Organização Básica.md",
-          "char_count": 602401,
+          "char_count": 602400,
           "year": 2024,
           "laws": [
             {
@@ -10219,7 +10370,7 @@
         "has_regimento": false,
         "has_regulamento": false,
         "has_nga": false,
-        "total_chars": 602401,
+        "total_chars": 602400,
         "organs_mapped": 149,
         "curated": true
       }
@@ -10236,7 +10387,7 @@
           "type": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Pará - Organização Básica.md",
-          "char_count": 136494,
+          "char_count": 136202,
           "year": 2025,
           "laws": [],
           "has_pdf": true
@@ -10270,8 +10421,8 @@
       "chapters_summary": [
         {
           "number": "i",
-          "title": "DiSPoS iç ÕES GERAiS",
-          "text_preview": "cAPÍtuLo  i\nDiSPoS iç ÕES GERAiS\nart. 1º  o corpo de bombeiros Militar do estado do Pará (cbMPa) é institui-\nção permanente, força auxiliar e reserva do exército, organizado com base \nna hierarquia e disciplina militares, subordinado ao governador do estado, \no qual é o seu comandante supremo, destina-se a realizar serviços espe -\ncíﬁcos de Bombeiro Militar e de Proteção e Defesa Civil no Estado d"
+          "title": "DiSPoS içÕES GERAiS",
+          "text_preview": "cAPÍtuLo  i\nDiSPoS içÕES GERAiS\nart. 1º  o corpo de bombeiros Militar do estado do Pará (cbMPa) é institui-\nção permanente, força auxiliar e reserva do exército, organizado com base \nna hierarquia e disciplina militares, subordinado ao governador do estado, \no qual é o seu comandante supremo, destina-se a realizar serviços espe-\ncíﬁcos de Bombeiro Militar e de Proteção e Defesa Civil no Estado do "
         },
         {
           "number": "ii",
@@ -11391,7 +11542,7 @@
         "has_regimento": true,
         "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 638226,
+        "total_chars": 637934,
         "organs_mapped": 169,
         "curated": true
       }
@@ -12060,7 +12211,7 @@
           "type": "Lei de Organização Básica",
           "typeVerified": false,
           "md_file": "Piauí - Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022).md",
-          "char_count": 578,
+          "char_count": 26552,
           "year": 2009,
           "laws": [],
           "has_pdf": true
@@ -12093,6 +12244,21 @@
       ],
       "legal_basis": "Lei nº 7.772 (04 DE ABRIL DE); Lei nº 5.949 (17 de \ndezembro de); Lei nº 5.458 (30 de junho de)",
       "chapters_summary": [
+        {
+          "number": "III",
+          "title": "DOS ÓRGÃOS DE ASSESSORAMENTO",
+          "text_preview": "CAPÍTULO III\nDOS ÓRGÃOS DE ASSESSORAMENTO\nSeção I\nDo Gabinete do € do Geral\nArt. 23. Ao Gabinete do Comando Geral compete acompanhar os trabalhos das\nassessorias e comissões de caráter temporário, assessorar o Comandante Geral nos assuntos de\ncontrole interno, produzir informações estratégicas com vistas ao preparo e emprego do Corpo de\nBombeiros Militar e desempenhar as funções de apoio administr"
+        },
+        {
+          "number": "IV",
+          "title": "DOS ÓRGÃOS DE APOIO",
+          "text_preview": "CAPÍTULO IV\nDOS ÓRGÃOS DE APOIO\nSeção I\nDo Centro de Manutenção\nArt. 29. O Centro de Manutenção é órgão encarregado da manutenção das instalações\ndos quartéis, viaturas e manutenção de equipamentos de telecomunicações e operacionais da\nCorporação.\nParágrafo único. O Centro de Manutenção tem a seguinte organização básica:\nI - Chefe;\nII - Seção de Manutenção;\nHI - Seção de Equipamentos Operacionais;"
+        },
+        {
+          "number": "V",
+          "title": "ÓRGÃOS DE EXECUÇÃO",
+          "text_preview": "CAPÍTULO V\nÓRGÃOS DE EXECUÇÃO\nArt. 33. Os órgãos de execução são encarregados das operações bombeiros militares.\nSeção I\nDo Comando Operacional de Bombeiros\nArt. 34. Comando Operacional de Bombeiros é a denominação genérica dada à\nOrganização Bombeiro Militar de mais alto escalão do sistema operacional, subordinado ao\nComandante-Geral, tendo a seu cargo o planejamento estratégico e a fiscalização "
+        },
         {
           "number": "V",
           "title": "DA CONSTITUIÇÃO E DAS ATRIBUIÇÕES DOS ÓRGÃOS DE EXECUÇÃO",
@@ -13395,7 +13561,7 @@
         "has_regimento": false,
         "has_regulamento": false,
         "has_nga": false,
-        "total_chars": 41996,
+        "total_chars": 67970,
         "organs_mapped": 200,
         "curated": true
       }
@@ -15601,6 +15767,21 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "typeVerified": false,
+          "md_file": "Rondônia - LOB atual (2).md",
+          "char_count": 118032,
+          "year": 2009,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "2204",
+              "data": "18 DE DEZEMBRO DE"
+            }
+          ],
+          "has_pdf": true
+        },
+        {
+          "type": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Rondônia - Minuta de Lei de Organização Básica.md",
           "char_count": 75273,
@@ -15615,17 +15796,27 @@
           "has_pdf": true
         }
       ],
-      "legal_basis": "Projeto de Lei nº XX (ABRIL DE 2025)",
+      "legal_basis": "Lei nº 2204 (18 DE DEZEMBRO DE); Projeto de Lei nº XX (ABRIL DE 2025)",
       "chapters_summary": [
         {
           "number": "I",
-          "title": "DISPOSIÇÕES GERAIS",
-          "text_preview": "CAPÍTULO I\nDISPOSIÇÕES GERAIS\n \nArt. 1º O Corpo de Bombeiros Militar do Estado de Rondônia (CBMRO), instituição militar\npermanente, exclusiva e típica de Estado, essencial à Justiça Militar, na condição de força auxiliar e\nreserva do Exército, nos termos do \n§ 6º do art. 144 da Constituição Federal\n, indispensáveis à preservação\nda ordem pública, à segurança pública, à incolumidade das pessoas e d"
+          "title": "GENERALIDADES",
+          "text_preview": "CAPÍTULO I \nGENERALIDADES \n \n Art. 1º. O Corpo de Bombeiros Militar do Estado de Rondônia – CBMRO é uma instituição \npermanente e regular, força auxiliar e reserva do Exército Brasileiro, organizado com base na h ierarquia e \ndisciplina militar, destina -se à execução das atividades de defesa civil e aos os serviços específicos de \nbombeiros militar, bem como à participação, através de organismos "
         },
         {
           "number": "II",
-          "title": "DA ORGANIZAÇÃO",
-          "text_preview": "CAPÍTULO II\nDA ORGANIZAÇÃO\n \nMinuta de Projeto de Lei 0059262482         SEI 0004.013288/2024-28 / pg. 6\n\n---\n\n## Página 7\n\nSeção I\nDas Generalidades\n \nArt. 5º O CBMRO será estruturado em:\n \nI - Órgãos de Direção;\n \nII - Órgãos de Assessoramento;\n \nII - Órgãos de Apoio;\n \nIV - Órgãos de Execução; e\n \nV - Órgãos de Correição.\n \nArt. 6º Os Órgãos de Direção detêm poder de direção, controle e decisão"
+          "title": "DAS ORGANIZAÇÕES BOMBEIRO MILITAR - OBMs",
+          "text_preview": "CAPÍTULO II \nDAS ORGANIZAÇÕES BOMBEIRO MILITAR - OBMs \n\n---\n\n## Página 4\n\n \n  \n \nArt. 3º. As Organizações Bombeiro-Militar – OBM’s compreendem: (Revogado pela Lei nº 4.303, \nde 25/06/2018) \n \nI – OBM’s de Atuação Direta; (Revogado pela Lei nº 4.303, de 25/06/2018) \n \n \nII – OBM’s Setoriais; (Revogado pela Lei nº 4.303, de 25/06/2018) \n  \n \nIII – OBM’s de Suporte; e (Revogado pela Lei nº 4.303, de "
+        },
+        {
+          "number": "I",
+          "title": "DOS NÍVEIS ADMINISTRATIVOS",
+          "text_preview": "CAPÍTULO I \nDOS NÍVEIS ADMINISTRATIVOS \n \nArt. 8º. O Corpo de Bombeiros Militar de Rondônia estrutura -se nos seguintes níveis \nadministrativos: \n \nI – nível de direção superior; \n \nII – nível de administração setorial; e \n \n\n---\n\n## Página 5\n\n \n  \nIII – nível de execução. \n \n§ 1º. O nível de direção superior é aquele cuja área de eficácia envolve as decisões sobre os fins, a \ndefinição dos objeti"
+        },
+        {
+          "number": "II",
+          "title": "DA CONSTITUIÇÃO E ATRIBUIÇÃO DOS ÓRGÃOS DO",
+          "text_preview": "CAPÍTULO II \nDA CONSTITUIÇÃO E ATRIBUIÇÃO DOS ÓRGÃOS DO \nNÍVEL DE DIREÇÃO SUPERIOR \n \nArt. 9º. O nível de direção superior compreende os seguintes órgãos: \n \nArt. 9º. Os Órgãos de Direção compreendem os seguintes Órgãos:  (Redação dada pela Lei nº \n4.303, de 25/06/2018) \n \nI - Comando Geral; e  \n \nII - Estado Maior Geral Bombeiro Militar. \n \nSeção I \n\n---\n\n## Página 6\n\n \n  \nDo Comando Geral \n \nArt"
         }
       ],
       "organs": [
@@ -16886,18 +17077,18 @@
         }
       ],
       "stats": {
-        "total_documents": 1,
+        "total_documents": 2,
         "has_regimento": false,
         "has_regulamento": false,
         "has_nga": false,
-        "total_chars": 75273,
+        "total_chars": 193305,
         "organs_mapped": 195,
         "curated": true
       }
     },
     {
       "id": "rr",
-      "name": "Roraíma",
+      "name": "Roraima",
       "abbreviation": "RR",
       "region": "Norte",
       "cbm_name": "Corpo de Bombeiros Militar do Estado de Roraima",
@@ -16926,6 +17117,15 @@
               "data": "09 de outubro de"
             }
           ],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": false,
+          "md_file": "Roraíma - Regulamento de Serviço.md",
+          "char_count": 56545,
+          "year": 2024,
+          "laws": [],
           "has_pdf": true
         }
       ],
@@ -18451,11 +18651,11 @@
         }
       ],
       "stats": {
-        "total_documents": 1,
+        "total_documents": 2,
         "has_regimento": false,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 73202,
+        "total_chars": 129747,
         "organs_mapped": 233,
         "curated": true
       }
@@ -19121,7 +19321,7 @@
           "type": "Regimento de Serviços",
           "typeVerified": true,
           "md_file": "Sergipe - Regulamento Interno.md",
-          "char_count": 101241,
+          "char_count": 101234,
           "year": 2022,
           "laws": [],
           "has_pdf": true
@@ -20185,7 +20385,7 @@
         "has_regimento": false,
         "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 163412,
+        "total_chars": 163405,
         "organs_mapped": 138,
         "curated": true
       }
@@ -20670,9 +20870,24 @@
             }
           ],
           "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": false,
+          "md_file": "Tocantins - Regulamento de Serviço.md",
+          "char_count": 43137,
+          "year": 2019,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "45",
+              "data": "3 de abril de"
+            }
+          ],
+          "has_pdf": true
         }
       ],
-      "legal_basis": "Lei nº 131 (30 DE SETEMBRO DE)",
+      "legal_basis": "Lei nº 131 (30 DE SETEMBRO DE); Lei nº 45 (3 de abril de)",
       "chapters_summary": [
         {
           "number": "I",
@@ -20693,6 +20908,11 @@
           "number": "IV",
           "title": "DAS DISPOSIÇÕES GERAIS, TRANSITÓRIAS E FINAIS",
           "text_preview": "CAPÍTULO IV \nDAS DISPOSIÇÕES GERAIS, TRANSITÓRIAS E FINAIS \n \nArt. 31. O Comandante-Geral, na forma da legislação em vigor, pode utilizar pessoal civil \npara a prestação de serviços de natureza técnica, especializada ou para serviços gerais. \n\n---\n\n## Página 10\n\n \n \n \nArt. 3 2. Compete ao Chefe do Poder Executivo a criação, transformação, extinção, \ndenominação, localização, estruturação e atribui"
+        },
+        {
+          "number": "I",
+          "title": "COMANDO OPERACIONAL – COB",
+          "text_preview": "CAPÍTULO I \nCOMANDO OPERACIONAL – COB \n \n Art. 1º O Comando Operacional  é subordinado  ao Chefe do Estado Maior e \nencarregado da organização e gerenciamento das Unidades Bombeiro Militar - UBM. São \nUBM’s: \nI - Batalhão de Bombeiro Militar -BBM; \nII  - Companhia Independente de Busca e Salvamento – CIBS; \nIII - Companhia de Bombeiro Militar – Cia BM;  \nIV - Pelotão de Bombeiro Militar – PelBM; \n"
         }
       ],
       "organs": [
@@ -21036,11 +21256,11 @@
         }
       ],
       "stats": {
-        "total_documents": 1,
+        "total_documents": 2,
         "has_regimento": false,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 23364,
+        "total_chars": 66501,
         "organs_mapped": 55,
         "curated": true
       }
