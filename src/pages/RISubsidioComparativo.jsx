@@ -100,7 +100,11 @@ export default function RISubsidioComparativo({ chapterId, setChapterId, stateAb
       fetchJson(scenarioDbUrl(cenario, 'comparativo_minuta.json')),
     ]).then(([s, c]) => {
       setStructure(s); setComparativo(c)
-      if (!chapterId) setChapterId(s.commandChart?.chapterId ?? s.chapters?.[0]?.id ?? null)
+      // Repõe o chapterId quando não há nenhum OU quando o herdado (de outro
+      // cenário/aba) não existe nesta estrutura — evita painel órfão.
+      if (!chapterId || !s.chapters?.some(ch => ch.id === chapterId)) {
+        setChapterId(s.commandChart?.chapterId ?? s.chapters?.[0]?.id ?? null)
+      }
     }).catch(() => setError(true))
   }, [cenario]) // eslint-disable-line react-hooks/exhaustive-deps
 

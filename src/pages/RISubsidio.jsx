@@ -4,6 +4,7 @@
 // um órgão/estado numa aba mantém o contexto na outra.
 import { useState } from 'react'
 import { organKeyOfChapter } from '../lib/riComparison.js'
+import { useScenario } from '../context/ScenarioContext'
 import RISubsidioComparativo from './RISubsidioComparativo.jsx'
 import MinutaComparator from './MinutaComparator.jsx'
 
@@ -13,6 +14,7 @@ const TABS = [
 ]
 
 export default function RISubsidio() {
+  const { cenario } = useScenario()
   const [tab, setTab] = useState('ri')
   const [chapterId, setChapterId] = useState(null)
   const [stateAbbr, setStateAbbr] = useState(null)
@@ -41,7 +43,7 @@ export default function RISubsidio() {
       ) : (
         <MinutaComparator
           controlledOrganKey={organKey}
-          onOrganKey={k => setChapterId(k ? `organ:${k}` : chapterId)}
+          onOrganKey={k => setChapterId(k ? `${cenario === 'atual' ? 'atual:' : ''}organ:${k}` : chapterId)}
           controlledStateAbbr={stateAbbr}
           onStateAbbr={setStateAbbr}
         />

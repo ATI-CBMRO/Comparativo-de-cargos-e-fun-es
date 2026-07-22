@@ -9,7 +9,8 @@ OUT = BASE / "database" / "atual" / "comparativo_minuta.json"
 STRUCT = BASE / "database" / "atual" / "minuta_structure.json"
 
 # Rótulos que só existem na camada CURADA da futura — presença aqui = vazamento.
-FORBIDDEN = re.compile(r"cf\. CBM(MT|PA|DF|AL|GO|SE)\b")
+# Genérico: qualquer "cf. " denota rótulo curado, não só as siglas conhecidas hoje.
+FORBIDDEN = re.compile(r'"cf\. ')
 
 def main():
     errors = []
