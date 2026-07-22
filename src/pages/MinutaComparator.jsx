@@ -3,6 +3,8 @@ import { GitCompare, Info, AlertCircle, FileDown, ScrollText, PanelLeftClose, Pa
 import { MATRIX_ROWS } from '../lib/comparatorRender.jsx'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
+import { useScenario } from '../context/ScenarioContext'
+import { scenarioDbUrl } from '../lib/scenario.js'
 
 function ProvBadge({ provenance }) {
   const curado = provenance === 'curado'
@@ -162,6 +164,7 @@ function OrgTreeNode({ node, depth, organKey, setOrganKey }) {
 // o órgão e o estado são compartilhados com a aba do Regimento Interno.
 export default function MinutaComparator({ controlledOrganKey, onOrganKey, controlledStateAbbr, onStateAbbr } = {}) {
   const controlled = controlledOrganKey !== undefined
+  const { cenario } = useScenario()
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
   const [internalOrganKey, setInternalOrganKey] = useState(null)
@@ -172,10 +175,10 @@ export default function MinutaComparator({ controlledOrganKey, onOrganKey, contr
   const setOrganKey = k => { if (controlled) onOrganKey?.(k); else setInternalOrganKey(k) }
 
   useEffect(() => {
-    fetchJson('/database/comparativo_minuta.json')
+    fetchJson(scenarioDbUrl(cenario, 'comparativo_minuta.json'))
       .then(d => { setData(d); if (!controlled) setInternalOrganKey(d.organs[0]?.key || null) })
       .catch(() => setError(true))
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [cenario]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const organ = useMemo(() => data?.organs.find(o => o.key === organKey) || null, [data, organKey])
   const organTree = useMemo(() => (data ? buildOrganTree(data.organs) : []), [data])
@@ -290,6 +293,12 @@ export default function MinutaComparator({ controlledOrganKey, onOrganKey, contr
                     <FileDown size={15} /> Exportar PDF
                   </button>
                 </div>
+
+                {cenario === 'atual' && (
+                  <p className="muted-note" style={{ margin: '4px 0 10px', fontStyle: 'italic' }}>
+                    ⚠ Correspondência automática — sujeita a revisão.
+                  </p>
+                )}
 
                 {organ.states.length > 0 && (
                   <div className="oc-state-chips no-print">

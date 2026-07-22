@@ -5,6 +5,11 @@ import {
   stateHasData, statesWithData, pickState,
 } from './riComparison.js'
 
+test('organKeyOfChapter aceita ids do cenário atual (atual:organ:<key>)', () => {
+  assert.equal(organKeyOfChapter('atual:organ:cg'), 'cg')
+  assert.equal(organKeyOfChapter('atual:organ:cepdec'), 'cepdec')
+})
+
 const COMPARATIVO = {
   organs: [
     {

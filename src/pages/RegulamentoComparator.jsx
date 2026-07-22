@@ -5,6 +5,8 @@ import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { PARTE_HEADERS } from '../lib/regulamentoPartes.js'
+import { useScenario } from '../context/ScenarioContext'
+import { scenarioDbUrl } from '../lib/scenario.js'
 
 function MatchBadge({ match }) {
   const cfg = {
@@ -33,6 +35,7 @@ function groupChapters(chapters) {
 }
 
 export default function RegulamentoComparator() {
+  const { cenario } = useScenario()
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
   const [chapterId, setChapterId] = useState(null)
@@ -40,10 +43,10 @@ export default function RegulamentoComparator() {
   const [filter, setFilter] = useState('')
 
   useEffect(() => {
-    fetchJson('/database/regulamento_structure.json')
+    fetchJson(scenarioDbUrl(cenario, 'regulamento_structure.json'))
       .then(d => { setData(d); setChapterId(d.chapters[0]?.id ?? null) })
       .catch(() => setError(true))
-  }, [])
+  }, [cenario])
 
   const groups = useMemo(() => (data ? groupChapters(data.chapters) : []), [data])
   const chapter = useMemo(() => data?.chapters.find(c => c.id === chapterId) || null, [data, chapterId])

@@ -22,7 +22,9 @@ export function indexComparativo(comparativo) {
 
 // "organ:cg" -> "cg"; "estrutura"/"preliminares"/"finais" -> null.
 export function organKeyOfChapter(chapterId) {
-  const id = String(chapterId ?? '')
+  // Ids do cenário atual vêm prefixados ("atual:organ:cg") — remove o marcador de
+  // cenário antes de extrair a chave, sem afetar os ids da futura ("organ:cg").
+  const id = String(chapterId ?? '').replace(/^atual:/, '')
   return id.startsWith(ORGAN_PREFIX) ? id.slice(ORGAN_PREFIX.length) : null
 }
 
