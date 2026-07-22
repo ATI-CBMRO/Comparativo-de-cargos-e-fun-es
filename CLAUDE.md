@@ -234,8 +234,8 @@ qualquer decisão de estrutura — ver vault Obsidian `Codebases/Comparativo-de-
 **Pendências sinalizadas (não forçadas)**: corpo principal de Tocantins (Art. 1-13,16 — colide
 numeração de "Art. N" com o Anexo 2 já usado); 4 Diretrizes/Normas de Alagoas sem "Art. N"
 formal (seção numerada, incompatível com o extrator atual); tema `uniformes-apresentacao`
-segue magro (1 artigo, sem achado forte no RISG). `RegDiagramas.jsx` continua "em breve" —
-bloqueado por `commandChart` ausente, problema **não relacionado** às 2 Partes.
+segue magro (1 artigo, sem achado forte no RISG). `RegDiagramas.jsx` foi destravado em
+21/07/2026 (árvore do documento — ver seção Diagramas), sem `commandChart` artificial.
 
 Specs/planos: `docs/superpowers/specs/2026-07-21-regulamento-geral-2-partes-design.md` (Fase 1
 — estrutura), `2026-07-21-fase2a-central-operacoes-193-design.md` (16º tema),
