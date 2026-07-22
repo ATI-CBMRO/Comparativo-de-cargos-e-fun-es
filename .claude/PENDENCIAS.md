@@ -18,7 +18,10 @@
 - [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE); DOB-01 de AL
   ("Terminologia Operacional") citada pela DOB-08 mas não ingerida; dimensionamento técnico do
   193 (nº de PAs/troncos) só na DOB-06-AL (lacuna registrada no vault).
-- [ ] **Cenário atual — Subsídio** (`/minuta/subsidio` e `/regulamento/subsidio`): ainda gated no atual. Depende de gerar o `comparativo_minuta` do atual (comparação dispositivo-a-dispositivo com outros estados). Origem: sessão cenários 15-16/07/2026.
+- [ ] Cenário atual — Subsídio: **curadoria fina do comparativo** (rodada futura, sob demanda):
+  o comparativo do atual usa SÓ casamento automático por palavra-chave (decisão de produto
+  22/07/2026, selo na tela); se o Wândrio sentir falta, curar de-para manual dos órgãos
+  principais. Origem: fatia Subsídio atual 22/07/2026.
 - [ ] **Camada 2/3 dos documentos ingeridos em 2026-07-13** (camada 1 concluída):
   - **MA - Portaria 46** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_ma.py`).
   - **PA - Regulamento de serviço** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_pa.py`; PA já tem RI organizacional separado).
@@ -39,6 +42,11 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Cenário atual — Subsídio destravado** (`/minuta/subsidio` e `/regulamento/subsidio`):
+  gerador isolado `build_minuta_comparison_atual.py` (21 órgãos da Lei 2.204/2009 × estados,
+  SÓ camada automática, teste anti-vazamento da futura), telas resolvendo dados por
+  `scenarioDbUrl`, selo "Correspondência automática — sujeita a revisão", gate removido só
+  das 2 rotas; futura intocada (diff: só `database/atual/`). Suíte 115/115 — 22/07/2026.
 - [x] **Organograma — Projeção territorial VALIDADA pelo Wândrio** (22/07/2026): o de-para
   GBM→Batalhão, COB→Comando Regional, Subgrupamento→Companhia/Pelotão, +BIFEA (nova) está
   aprovado como proposta de projeção (sujeito só à redação final da nova LOB).

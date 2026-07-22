@@ -6,6 +6,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
+import { useScenario } from '../context/ScenarioContext'
+import { scenarioDbUrl } from '../lib/scenario.js'
 import { buildTargets, chapterIdOf } from '../lib/minutaTargets.js'
 import { indexComparativo, organKeyOfChapter, statesWithData } from '../lib/riComparison.js'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
@@ -84,20 +86,27 @@ function AltExcerpt({ excerpt }) {
 }
 
 export default function RISubsidioComparativo({ chapterId, setChapterId, stateAbbr, setStateAbbr }) {
+  const { cenario } = useScenario()
   const [structure, setStructure] = useState(null)
   const [comparativo, setComparativo] = useState(null)
   const [error, setError] = useState(false)
   const [navMode, setNavMode] = useState('org') // 'org' (capítulos) | 'orgaos'
 
   useEffect(() => {
+    setStructure(null)
+    setComparativo(null)
     Promise.all([
-      fetchJson('/database/minuta_structure.json'),
-      fetchJson('/database/comparativo_minuta.json'),
+      fetchJson(scenarioDbUrl(cenario, 'minuta_structure.json')),
+      fetchJson(scenarioDbUrl(cenario, 'comparativo_minuta.json')),
     ]).then(([s, c]) => {
       setStructure(s); setComparativo(c)
-      if (!chapterId) setChapterId(s.commandChart?.chapterId ?? s.chapters?.[0]?.id ?? null)
+      // Repõe o chapterId quando não há nenhum OU quando o herdado (de outro
+      // cenário/aba) não existe nesta estrutura — evita painel órfão.
+      if (!chapterId || !s.chapters?.some(ch => ch.id === chapterId)) {
+        setChapterId(s.commandChart?.chapterId ?? s.chapters?.[0]?.id ?? null)
+      }
     }).catch(() => setError(true))
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [cenario]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const targets = useMemo(() => (structure ? buildTargets(structure) : []), [structure])
   const compByKey = useMemo(() => (comparativo ? indexComparativo(comparativo) : {}), [comparativo])
@@ -179,6 +188,12 @@ export default function RISubsidioComparativo({ chapterId, setChapterId, stateAb
           <div className="rg-col-head">
             {organKey ? `Regimento Interno de outros estados` : 'Regimento Interno equivalente'}
           </div>
+          {cenario === 'atual' && (
+            <p className="muted-note" style={{ margin: '4px 0 10px', fontStyle: 'italic' }}>
+              Correspondência automática — sujeita a revisão.
+            </p>
+          )}
+
           {ufs.length === 0 ? (
             <p className="subA-miss" style={{ marginTop: 10 }}>Nenhum estado com RI cobre este item.</p>
           ) : (

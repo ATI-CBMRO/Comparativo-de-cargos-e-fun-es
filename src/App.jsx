@@ -280,12 +280,12 @@ export default function App() {
           <Route path="/estados/:stateId" element={<StateDetail />} />
           <Route path="/busca" element={<SearchPage />} />
           {/* Trilha Regimento Interno (pipeline padrão) */}
-          <Route path="/minuta/subsidio" element={<TrilhaRoute><RISubsidio /></TrilhaRoute>} />
+          <Route path="/minuta/subsidio" element={<RISubsidio />} />
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta/diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
-          <Route path="/regulamento/subsidio" element={<TrilhaRoute><RegSubsidio /></TrilhaRoute>} />
+          <Route path="/regulamento/subsidio" element={<RegSubsidio />} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
