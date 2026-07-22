@@ -18,6 +18,12 @@ DATA_DIR = BASE_DIR / "database"
 PDF_DIR = BASE_DIR / "LEGISLAÇÃO CBMS"
 PDF_FILES = {p.name for p in PDF_DIR.glob("*.pdf")} if PDF_DIR.exists() else set()
 
+# Pseudo-fontes que vivem em database/markdown/ mas NÃO são estado/CBM — não devem
+# virar um "estado" em states_data.json. Hoje só o RISG (Exército Brasileiro), usado
+# EXCLUSIVAMENTE como alternativa verbatim do Regulamento (regulamento_enrichment.py);
+# nunca deve aparecer como fonte primária nem como estado no acervo comparativo.
+NON_STATE_MD_STEMS = {"RISG"}
+
 # ────────────────────────────────────────────
 # Mapeamento estático de metadados por estado
 # ────────────────────────────────────────────
@@ -606,7 +612,9 @@ def main():
     print("Portal CBM — Construtor de states_data.json")
     print("=" * 60)
 
-    md_files = sorted(MD_DIR.glob("*.md"))
+    md_files = sorted(
+        f for f in MD_DIR.glob("*.md") if f.stem not in NON_STATE_MD_STEMS
+    )
     if not md_files:
         print(f"Nenhum arquivo .md encontrado em {MD_DIR}")
         print("Execute primeiro: python scripts/convert_to_markdown.py")
