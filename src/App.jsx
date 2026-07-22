@@ -287,7 +287,7 @@ export default function App() {
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
           <Route path="/regulamento/subsidio" element={<TrilhaRoute><RegSubsidio /></TrilhaRoute>} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
-          <Route path="/regulamento/diagramas" element={<TrilhaRoute><RegDiagramas /></TrilhaRoute>} />
+          <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
