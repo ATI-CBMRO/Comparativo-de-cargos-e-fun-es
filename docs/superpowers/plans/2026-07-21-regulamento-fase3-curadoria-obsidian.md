@@ -98,7 +98,7 @@ Legenda: 🟢 decidido · 🟡 em curadoria · ⚪ não iniciado
 | [[Tema — disposicoes-preliminares]] | ⚪ |
 | [[Tema — organizacao-geral]] | ⚪ |
 | [[Tema — competencias-direcao]] | ⚪ |
-| [[Tema — competencias-apoio]] | ⚪ |
+| [[Tema — competencias-apoio-assessoramento]] | ⚪ |
 | [[Tema — competencias-execucao]] | ⚪ |
 | [[Tema — pessoal-quadros]] | ⚪ |
 | [[Tema — ensino-instrucao]] | ⚪ |
@@ -112,7 +112,7 @@ Legenda: 🟢 decidido · 🟡 em curadoria · ⚪ não iniciado
 | Tema | Status |
 |---|---|
 | [[Tema — servico-operacional]] | 🟡 (piloto) |
-| [[Tema — servico-dia]] | ⚪ |
+| [[Tema — servico-interno-dia]] | ⚪ |
 | [[Tema — atribuicoes-funcoes]] | ⚪ |
 | [[Tema — central-operacoes-193]] | ⚪ |
 
