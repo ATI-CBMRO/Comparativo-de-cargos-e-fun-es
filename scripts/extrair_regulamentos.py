@@ -339,6 +339,22 @@ CONFIG = {
         ],
         'overrides': {},
     },
+    # TO (corpo principal): "Art. N" do corpo principal (Anexo 1) e do Anexo 2 usam a
+    # MESMA numeração (ambos começam em "Art. 1º") — colisão resolvida por corte de
+    # LINHA ABSOLUTA (precedente do ES), isolando o corpo principal (Art. 1-13, 16; não
+    # há Art. 14-15 aqui — só reaparecem, homônimos, dentro do Anexo 2 já extraído acima).
+    'to_corpo': {
+        'md': 'Tocantins - Regulamento de Serviço.md',
+        'src': 'cf. CBMTO, Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB), Anexo 1, Art. {n}',
+        'line_slices': [
+            (204, 217, 'organizacao-geral', 'exata', 'Anexo 1, Cap. I — Comando Operacional e UBMs (Art. 1º)'),
+            (218, 225, 'servico-operacional', 'exata', 'Anexo 1, Cap. I — Execução do Serviço Operacional em escalas (Art. 2º)'),
+            (226, 495, 'atribuicoes-funcoes', 'exata', 'Anexo 1, Seção I e funções — Superior de Dia a Apoio Logístico (Art. 3º-11)'),
+            (496, 502, 'central-operacoes-193', 'exata', 'Anexo 1 — Central de Operações do CBM/COCB (Art. 12)'),
+            (503, 553, 'atribuicoes-funcoes', 'exata', 'Anexo 1 — Plantão/Comunicante/Sentinela (Art. 13)'),
+            (554, 562, 'organizacao-geral', 'exata', 'Anexo 1 — Sistema Integrado de Operações, SIOP/BM (Art. 16)'),
+        ],
+    },
     'rr': {
         'md': 'Roraíma - Regulamento de Serviço.md',
         'src': 'cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. {n}',

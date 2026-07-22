@@ -46,6 +46,7 @@ REGULAMENTO_DOCS = {
     "ba": {"label": "Norma Operacional nº 01/2021 (CBMBA)", "md": "Bahia - Regulamento de Serviço.md"},
     "rr": {"label": "INOp do Serviço Diário dos Oficiais (CBMRR)", "md": "Roraíma - Regulamento de Serviço.md"},
     "to": {"label": "Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB)", "md": "Tocantins - Regulamento de Serviço.md"},
+    "to_corpo": {"label": "Diretriz Geral do Comando Operacional, Anexo 1 (Portaria nº 003/2019/COB)", "md": "Tocantins - Regulamento de Serviço.md"},
     "al_no03": {"label": "Norma Operacional nº 03 (CBMAL)", "md": "Alagoas - Norma Operacional 03.md"},
     "al_no04": {"label": "Norma Operacional nº 04 (CBMAL)", "md": "Alagoas - Norma Operacional 04.md"},
     "es": {"label": "Normas Gerais de Ação (2023)", "md": "Espírito Santo - Normas Gerais de Ação.md"},

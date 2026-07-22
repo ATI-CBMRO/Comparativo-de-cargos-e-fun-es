@@ -27,7 +27,7 @@ STATE_NAMES = {
     'al': 'Alagoas', 'df': 'Distrito Federal', 'go': 'Goiás', 'mt': 'Mato Grosso',
     'pa': 'Pará', 'pr': 'Paraná', 'rn': 'Rio Grande do Norte',
     'rs': 'Rio Grande do Sul', 'se': 'Sergipe',
-    'ba': 'Bahia', 'rr': 'Roraima', 'to': 'Tocantins',
+    'ba': 'Bahia', 'rr': 'Roraima', 'to': 'Tocantins', 'to_corpo': 'Tocantins',
     'al_no03': 'Alagoas', 'al_no04': 'Alagoas', 'al_no06': 'Alagoas',
     'al_no07': 'Alagoas', 'al_no11': 'Alagoas',
     'risg': 'Exército Brasileiro',
