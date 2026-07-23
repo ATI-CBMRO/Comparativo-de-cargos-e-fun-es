@@ -38,8 +38,18 @@ dois lados e confirmar que a MATÉRIA é a mesma — nunca decidir pelo rótulo.
 - `PRIMARY_SOURCE`/temas do Regulamento (fonte primária de cada tema).
 - Qualquer lugar onde um id/rótulo é usado como chave de associação.
 
-**Status:** caso original corrigido no plano e na spec da Fase 1 (2026-07-22). Varredura
-completa das outras ocorrências: **pendente para a auditoria final.**
+**Instância #2 (achada pela auditoria da Fase 1, 2026-07-22):** `AUTO_MATCH_KEYWORDS_ATUAL["cob1"]`
+em `build_minuta_comparison_atual.py` (tabela do Subsídio atual) casava o organ **cot**
+(Comando de Operações **Técnicas** / segurança contra incêndio) porque o include "comando de
+operacoes" pegava "Comando de Operações Técnicas" e o exclude só tinha "atividades tecnicas".
+Corrigido: acrescentado "operacoes tecnicas"/"operacao tecnica" ao exclude do cob1 (cob2 não
+tinha o problema — include por "regional"). Regenerado `comparativo_minuta.json` do atual;
+`match_ids('cob1', {cot}) → []` confirmado.
+
+**Status:** caso original (de-para) e instância #2 (keyword-match do Subsídio atual) CORRIGIDOS
+em 2026-07-22. Varreduras restantes conferidas na auditoria da Fase 1 (fase1-final-review.md):
+`DEPARA_BLOCO_D` 19/19 ok; `AUTO_MATCH_KEYWORDS` da futura sem colisão; `parse_doc_type`+overrides
+0 suspeitos. **Reexecutar as 3 varreduras a cada nova fase.**
 
 ---
 

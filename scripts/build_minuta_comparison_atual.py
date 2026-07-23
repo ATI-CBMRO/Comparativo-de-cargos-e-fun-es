@@ -61,7 +61,10 @@ AUTO_MATCH_KEYWORDS_ATUAL = {
     "dinf":         {"include": ["informatica", "tecnologia da informacao"], "exclude": []},
     "cob1":         {"include": ["comando operacional", "comando de operacoes",
                                  "coordenadoria operacional"],
-                     "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas"]},
+                     # "operacoes tecnicas" exclui o COT (segurança contra incêndio),
+                     # que NÃO é o COB operacional/socorro — armadilha AR-01.
+                     "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas",
+                                 "operacoes tecnicas", "operacao tecnica"]},
     "cob2":         {"include": ["regional", "regiao de bombeiro"], "exclude": []},
     "coa":          {"include": ["aerea", "aereo", "aviacao", "operacoes aereas"], "exclude": []},
     "gbs":          {"include": ["busca", "salvamento"], "exclude": []},
