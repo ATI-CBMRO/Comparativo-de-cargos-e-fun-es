@@ -385,53 +385,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "GAB",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "Assistência e assessoramento direto ao Comandante Geral",
-                "Controle e supervisão do expediente pessoal do Comandante Geral"
-              ],
-              "desdobramentos": [
-                "Chefe de Gabinete",
-                "Secretário",
-                "Assessor de Comunicações e Imprensa (ACI)",
-                "Assessor Jurídico (AJ)",
-                "Ajudante-de-Ordens"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe de Gabinete",
-                  "requisito": "Tenente-Coronel QOBM/COMB",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [
-                    "Assistência e assessoramento direto ao Comandante Geral",
-                    "Controle e supervisão do expediente pessoal do Comandante Geral"
-                  ],
-                  "desdobramentos": [
-                    "Secretário",
-                    "Assessor de Comunicações e Imprensa",
-                    "Assessor Jurídico",
-                    "Ajudante-de-Ordens"
-                  ]
-                },
-                {
-                  "cargo": "Assessor de Comunicações e Imprensa (ACI)",
-                  "requisito": "Oficial",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Assessor Jurídico (AJ)",
-                  "requisito": "Oficial",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Comando Geral",
               "abbreviation": "",
               "subordinadoA": "",
@@ -478,53 +431,6 @@
                     "Ajudância Geral",
                     "Comissões"
                   ]
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "GAB",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "Assistência e assessoramento direto ao Comandante Geral",
-                "Controle e supervisão do expediente pessoal do Comandante Geral"
-              ],
-              "desdobramentos": [
-                "Chefe de Gabinete",
-                "Secretário",
-                "Assessor de Comunicações e Imprensa (ACI)",
-                "Assessor Jurídico (AJ)",
-                "Ajudante-de-Ordens"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe de Gabinete",
-                  "requisito": "Tenente-Coronel QOBM/COMB",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [
-                    "Assistência e assessoramento direto ao Comandante Geral",
-                    "Controle e supervisão do expediente pessoal do Comandante Geral"
-                  ],
-                  "desdobramentos": [
-                    "Secretário",
-                    "Assessor de Comunicações e Imprensa",
-                    "Assessor Jurídico",
-                    "Ajudante-de-Ordens"
-                  ]
-                },
-                {
-                  "cargo": "Assessor de Comunicações e Imprensa (ACI)",
-                  "requisito": "Oficial",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [],
-                  "desdobramentos": []
-                },
-                {
-                  "cargo": "Assessor Jurídico (AJ)",
-                  "requisito": "Oficial",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [],
-                  "desdobramentos": []
                 }
               ]
             }
@@ -648,26 +554,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab/CG",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "O Gabinete do Comando Geral tem por finalidade prestar assistência ao Comandante-Geral em suas atribuições técnicas e administrativas e nas relações de interesse do CBMBA com órgãos e instituições dos Poderes Executivo, Legislativo e Judiciário, em âmbito Federal, Estadual e Municipal, do Ministério Público, dos Tribunais de Contas e de Organismos Internacionais (Art. 12)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Oficial do Gabinete do Comando-Geral",
-                  "requisito": "Oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Comandante-Geral (Art. 12 §único)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Exercer as atividades do Gabinete do Comando-Geral (Art. 12 §único)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Subcomando-Geral",
               "abbreviation": "SCG",
               "subordinadoA": "Comando-Geral",
@@ -690,27 +576,6 @@
                     "Gabinete do Subcomando-Geral",
                     "Centro de Gestão Estratégica"
                   ]
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Subcomando-Geral",
-              "abbreviation": "Gab/SCG",
-              "subordinadoA": "Subcomando-Geral",
-              "atribuicoes": [
-                "O Gabinete do Subcomando-Geral tem por finalidade prestar assistência ao Subcomandante-Geral do Corpo de Bombeiros Militar da Bahia em suas tarefas técnicas e administrativas (Art. 14)",
-                "As atividades do Gabinete do Subcomando-Geral serão exercidas por um oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Oficial do Gabinete do Subcomando-Geral",
-                  "requisito": "Oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)",
-                  "subordinadoA": "Subcomandante-Geral",
-                  "atribuicoes": [
-                    "Exercer as atividades do Gabinete do Subcomando-Geral (Art. 14 §único)"
-                  ],
-                  "desdobramentos": []
                 }
               ]
             },
@@ -781,26 +646,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab/CG",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "O Gabinete do Comando Geral tem por finalidade prestar assistência ao Comandante-Geral em suas atribuições técnicas e administrativas e nas relações de interesse do CBMBA com órgãos e instituições dos Poderes Executivo, Legislativo e Judiciário, em âmbito Federal, Estadual e Municipal, do Ministério Público, dos Tribunais de Contas e de Organismos Internacionais (Art. 12)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Oficial do Gabinete do Comando-Geral",
-                  "requisito": "Oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Comandante-Geral (Art. 12 §único)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Exercer as atividades do Gabinete do Comando-Geral (Art. 12 §único)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Subcomando-Geral",
               "abbreviation": "SCG",
               "subordinadoA": "Comando-Geral",
@@ -823,27 +668,6 @@
                     "Gabinete do Subcomando-Geral",
                     "Centro de Gestão Estratégica"
                   ]
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Subcomando-Geral",
-              "abbreviation": "Gab/SCG",
-              "subordinadoA": "Subcomando-Geral",
-              "atribuicoes": [
-                "O Gabinete do Subcomando-Geral tem por finalidade prestar assistência ao Subcomandante-Geral do Corpo de Bombeiros Militar da Bahia em suas tarefas técnicas e administrativas (Art. 14)",
-                "As atividades do Gabinete do Subcomando-Geral serão exercidas por um oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Oficial do Gabinete do Subcomando-Geral",
-                  "requisito": "Oficial da ativa da Corporação, do penúltimo posto do QOBM, de livre escolha do Subcomandante-Geral (Art. 14 §único)",
-                  "subordinadoA": "Subcomandante-Geral",
-                  "atribuicoes": [
-                    "Exercer as atividades do Gabinete do Subcomando-Geral (Art. 14 §único)"
-                  ],
-                  "desdobramentos": []
                 }
               ]
             }
@@ -1098,18 +922,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "GCG",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "Articulação entre os diversos setores do Comando-Geral",
-                "Coordenação dos trabalhos e acompanhamento dos processos de interesse do Comandante-Geral",
-                "Interface com os demais órgãos do governo estadual"
-              ],
-              "desdobramentos": [],
-              "cargos": []
-            },
-            {
               "name": "Assistência ao Comando-Geral",
               "abbreviation": "ACMDO",
               "subordinadoA": "Comando-Geral",
@@ -1212,18 +1024,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "GCG",
-              "subordinadoA": "Comando-Geral",
-              "atribuicoes": [
-                "Articulação entre os diversos setores do Comando-Geral",
-                "Coordenação dos trabalhos e acompanhamento dos processos de interesse do Comandante-Geral",
-                "Interface com os demais órgãos do governo estadual"
-              ],
-              "desdobramentos": [],
-              "cargos": []
             },
             {
               "name": "Assistência ao Comando-Geral",
@@ -2622,26 +2422,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando Geral",
-              "abbreviation": "GCG",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "A Chefia de Gabinete do Comando Geral – CGCG compete assistir diretamente o Gabinete do Comando Geral – GCG – e o Assistente do Comando Geral é o Chefe do GCG, realizando a assistência direta ao Comandante Geral e ao Subcomandante Geral. (Art. 18)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Assistente do Comando Geral / Chefe do GCG",
-                  "requisito": "Tenente-Coronel da ativa do CBMPB (Art. 18)",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [
-                    "Assistência direta ao Comandante Geral e ao Subcomandante Geral (Art. 18)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Secretaria do Comando Geral",
               "abbreviation": "SCG",
               "subordinadoA": "Gabinete do Comando Geral",
@@ -2794,26 +2574,6 @@
                   "subordinadoA": "Governador do Estado",
                   "atribuicoes": [
                     "O Comandante Geral – CMTG – é o responsável pelo comando, gestão, emprego, supervisão e coordenação geral das atividades da Corporação. (Art. 15)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Comando Geral",
-              "abbreviation": "GCG",
-              "subordinadoA": "Comandante Geral",
-              "atribuicoes": [
-                "A Chefia de Gabinete do Comando Geral – CGCG compete assistir diretamente o Gabinete do Comando Geral – GCG – e o Assistente do Comando Geral é o Chefe do GCG, realizando a assistência direta ao Comandante Geral e ao Subcomandante Geral. (Art. 18)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Assistente do Comando Geral / Chefe do GCG",
-                  "requisito": "Tenente-Coronel da ativa do CBMPB (Art. 18)",
-                  "subordinadoA": "Comandante Geral",
-                  "atribuicoes": [
-                    "Assistência direta ao Comandante Geral e ao Subcomandante Geral (Art. 18)."
                   ],
                   "desdobramentos": []
                 }
@@ -3091,38 +2851,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab.CmtG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "Apoio e assessoramento ao Comando-Geral"
-              ],
-              "desdobramentos": [
-                "Ajudância-Geral (AG)",
-                "Assessoria Estratégica (Assest)",
-                "Assessoria de Comunicação Organizacional (Assecom)",
-                "Secretaria do Comando-Geral (Sec.CmdoG)"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe de Gabinete",
-                  "requisito": "Oficial Superior Combatente da ativa",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assistência direta ao Comandante-Geral",
-                    "Recepção, estudo e triagem de expedientes",
-                    "Transmissão e controle da execução de ordens"
-                  ],
-                  "desdobramentos": [
-                    "Ajudância-Geral",
-                    "Assessoria Estratégica",
-                    "Assessoria de Comunicação Organizacional",
-                    "Secretaria do Comando-Geral"
-                  ]
-                }
-              ]
-            },
-            {
               "name": "Comandante-Geral",
               "abbreviation": "CG",
               "subordinadoA": "",
@@ -3198,38 +2926,6 @@
                     "Logística da Corporação"
                   ],
                   "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab.CmtG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "Apoio e assessoramento ao Comando-Geral"
-              ],
-              "desdobramentos": [
-                "Ajudância-Geral (AG)",
-                "Assessoria Estratégica (Assest)",
-                "Assessoria de Comunicação Organizacional (Assecom)",
-                "Secretaria do Comando-Geral (Sec.CmdoG)"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Chefe de Gabinete",
-                  "requisito": "Oficial Superior Combatente da ativa",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Assistência direta ao Comandante-Geral",
-                    "Recepção, estudo e triagem de expedientes",
-                    "Transmissão e controle da execução de ordens"
-                  ],
-                  "desdobramentos": [
-                    "Ajudância-Geral",
-                    "Assessoria Estratégica",
-                    "Assessoria de Comunicação Organizacional",
-                    "Secretaria do Comando-Geral"
-                  ]
                 }
               ]
             }
@@ -3768,27 +3464,6 @@
               ]
             },
             {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e",
-                "II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das atividades administrativas do Gabinete do Comando-Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Ajudante-Geral",
-                  "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Chefia do Gabinete do Comando-Geral, exercida pelo Ajudante-Geral (Art. 26 §único)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Comando-Geral",
               "abbreviation": "CmdoG",
               "subordinadoA": "",
@@ -3914,27 +3589,6 @@
                   "atribuicoes": [
                     "Recepção, elaboração, controle e arquivo de documentação",
                     "Desenvolvimento e acompanhamento de projetos"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Gabinete do Comando-Geral",
-              "abbreviation": "Gab",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "I - atuar de forma sistêmica e integrada com os demais órgãos do CBMSC; e",
-                "II - exercer, por meio da Ajudância-Geral, a articulação institucional e a coordenação das atividades administrativas do Gabinete do Comando-Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Ajudante-Geral",
-                  "requisito": "Coronel QOBM, designado por ATO do Comandante-Geral (Art. 27 §3º)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Chefia do Gabinete do Comando-Geral, exercida pelo Ajudante-Geral (Art. 26 §único)."
                   ],
                   "desdobramentos": []
                 }
@@ -4757,31 +4411,6 @@
           "note": null,
           "organs": [
             {
-              "name": "Gabinete do Comando Geral",
-              "abbreviation": "Gab.CG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "O Gabinete do Comando Geral é o seu órgão de apoio administrativo e de representação social, competindo-lhe: (Art. 19, caput)",
-                "I - redigir e preparar o expediente pessoal do Comandante Geral e do Subcomandante Geral e organizar suas agendas de despachos e de compromissos, assim como fornecer informações administrativas aos demais órgãos do Corpo de Bombeiros Militar;",
-                "II - coordenar a recepção e o atendimento ao público;",
-                "III - assistir ao Comandante Geral e ao Subcomandante Geral nas suas atividades de relações internas e externas;",
-                "IV - promover, junto aos órgãos de imprensa, a divulgação de informações sobre a atuação e as atividades do Corpo de Bombeiros Militar;",
-                "V - exercer outras atividades que lhe forem cometidas pelo Comandante Geral e Subcomandante Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Gabinete do Comando Geral",
-                  "requisito": "Oficial BM de livre escolha do Comandante Geral; acumula com a função de Ajudante Geral (Art. 22, parágrafo único)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Apoio administrativo e representação social do Comando Geral; redação do expediente pessoal do CG e SCG; coordenação do atendimento ao público (Art. 19)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Estado-Maior Operacional",
               "abbreviation": "EM Op",
               "subordinadoA": "Comando Operacional Bombeiro Militar",
@@ -4817,31 +4446,6 @@
             }
           ],
           "riOrgans": [
-            {
-              "name": "Gabinete do Comando Geral",
-              "abbreviation": "Gab.CG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "O Gabinete do Comando Geral é o seu órgão de apoio administrativo e de representação social, competindo-lhe: (Art. 19, caput)",
-                "I - redigir e preparar o expediente pessoal do Comandante Geral e do Subcomandante Geral e organizar suas agendas de despachos e de compromissos, assim como fornecer informações administrativas aos demais órgãos do Corpo de Bombeiros Militar;",
-                "II - coordenar a recepção e o atendimento ao público;",
-                "III - assistir ao Comandante Geral e ao Subcomandante Geral nas suas atividades de relações internas e externas;",
-                "IV - promover, junto aos órgãos de imprensa, a divulgação de informações sobre a atuação e as atividades do Corpo de Bombeiros Militar;",
-                "V - exercer outras atividades que lhe forem cometidas pelo Comandante Geral e Subcomandante Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Gabinete do Comando Geral",
-                  "requisito": "Oficial BM de livre escolha do Comandante Geral; acumula com a função de Ajudante Geral (Art. 22, parágrafo único)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Apoio administrativo e representação social do Comando Geral; redação do expediente pessoal do CG e SCG; coordenação do atendimento ao público (Art. 19)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
             {
               "name": "Estado-Maior Operacional",
               "abbreviation": "EM Op",
@@ -4880,31 +4484,6 @@
           "riProvenance": "automatico",
           "riSourceLabel": null,
           "lobOrgans": [
-            {
-              "name": "Gabinete do Comando Geral",
-              "abbreviation": "Gab.CG",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "O Gabinete do Comando Geral é o seu órgão de apoio administrativo e de representação social, competindo-lhe: (Art. 19, caput)",
-                "I - redigir e preparar o expediente pessoal do Comandante Geral e do Subcomandante Geral e organizar suas agendas de despachos e de compromissos, assim como fornecer informações administrativas aos demais órgãos do Corpo de Bombeiros Militar;",
-                "II - coordenar a recepção e o atendimento ao público;",
-                "III - assistir ao Comandante Geral e ao Subcomandante Geral nas suas atividades de relações internas e externas;",
-                "IV - promover, junto aos órgãos de imprensa, a divulgação de informações sobre a atuação e as atividades do Corpo de Bombeiros Militar;",
-                "V - exercer outras atividades que lhe forem cometidas pelo Comandante Geral e Subcomandante Geral."
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe do Gabinete do Comando Geral",
-                  "requisito": "Oficial BM de livre escolha do Comandante Geral; acumula com a função de Ajudante Geral (Art. 22, parágrafo único)",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Apoio administrativo e representação social do Comando Geral; redação do expediente pessoal do CG e SCG; coordenação do atendimento ao público (Art. 19)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
             {
               "name": "Estado-Maior Operacional",
               "abbreviation": "EM Op",
@@ -22035,20 +21614,6 @@
           "riSourceLabel": null,
           "lobOrgans": [
             {
-              "name": "Comando de Operações de Defesa Civil",
-              "abbreviation": "CODEC",
-              "subordinadoA": "Comando Geral",
-              "atribuicoes": [
-                "Compete ao Comando de Operações de Defesa Civil: elaborar planos de gestão operacional nos assuntos relacionados a defesa civil (Art. 27, I)",
-                "coordenar as atividades de planejamento, contingência, socorro e reconstrução relacionadas a defesa civil (II)",
-                "realizar ações de prevenção contra incêndio e pânico e de defesa civil por meio dos órgãos de execução (III)",
-                "planejar, controlar e fiscalizar as atividades relacionadas à análise de projetos e inspeções nas edificações e áreas de risco (IV)",
-                "elaborar projetos e coordenar programas relacionados à política estadual de Defesa Civil, além de outras definidas em regulamento (V)"
-              ],
-              "desdobramentos": [],
-              "cargos": []
-            },
-            {
               "name": "Comando de Operações de Inteligência",
               "abbreviation": "COI",
               "subordinadoA": "Comando Geral",
@@ -23211,40 +22776,6 @@
               ]
             },
             {
-              "name": "Estado-Maior Operacional",
-              "abbreviation": "EM Op",
-              "subordinadoA": "Comando Operacional Bombeiro Militar",
-              "atribuicoes": [
-                "O Estado-Maior Operacional (EM Op), subordinado ao Comandante Operacional, é a estrutura de assessoramento responsável pela coordenação setorial do Comando Operacional, atuando na supervisão das atividades de proteção e defesa civil, proteção do meio ambiente, combate a incêndio, resgate, busca e salvamento de vidas e bens em todo o Estado (Art. 33, caput)",
-                "Composição: 1ª Seção (B/1) — supervisão de organização e emprego de pessoal e controle de efetivo (Art. 33 §2º)",
-                "2ª Seção (B/2) — responsável pela coleta de dados, produção de informes e estudos de inteligência e contrainteligência (Art. 33 §3º)",
-                "3ª Seção (B/3) — planejamento de operações, organização, instrução, mobilização e desmobilização e planos de operações futuras (Art. 33 §4º)",
-                "4ª Seção (B/4) — orientação das prioridades de apoio logístico operacional e distribuição de equipamentos e suprimentos (Art. 33 §5º)"
-              ],
-              "desdobramentos": [
-                "1ª Seção (B/1)",
-                "2ª Seção (B/2)",
-                "3ª Seção (B/3)",
-                "4ª Seção (B/4)"
-              ],
-              "cargos": [
-                {
-                  "cargo": "Subcomandante Operacional / Chefe do EM Op",
-                  "requisito": "Oficial do QOCBM; substituto do Comandante Operacional",
-                  "subordinadoA": "Comandante Operacional Bombeiro Militar",
-                  "atribuicoes": [
-                    "I - realizar estudos de situação;",
-                    "II - apresentar propostas;",
-                    "III - elaborar planos e ordens;",
-                    "IV - supervisionar a execução dos planos e ordens previstos no inciso anterior;",
-                    "V - substituir o Comandante Operacional;",
-                    "VI - desempenhar as atribuições previstas em lei e regulamentos."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Centro de Operações do CBMRN",
               "abbreviation": "COCBM",
               "subordinadoA": "Comando Operacional Bombeiro Militar",
@@ -23775,30 +23306,7 @@
           ],
           "riProvenance": "curado",
           "riSourceLabel": "cf. CBMSP, Lei nº 616/1974, Art. 40, §2º, 7",
-          "lobOrgans": [
-            {
-              "name": "Centro de Suprimento e Manutenção do Material Operacional",
-              "abbreviation": "CSM/MOp",
-              "subordinadoA": "Corpo de Bombeiros",
-              "atribuicoes": [
-                "Incumbido do recebimento, da estocagem e da distribuição dos suprimentos e da execução da manutenção no que concerne ao material especializado (Art. 43, II)",
-                "As demais necessidades de suprimentos e manutenção são asseguradas pela Diretoria de Apoio Logístico da Corporação (Art. 43, parágrafo único)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Comandante do Centro de Suprimento e Manutenção do Material Operacional",
-                  "requisito": "Oficial PM (Lei nº 616/1974, Art. 43)",
-                  "subordinadoA": "Comandante do Corpo de Bombeiros",
-                  "atribuicoes": [
-                    "Direção do Centro de Suprimento e Manutenção do Material Operacional, incumbido do recebimento, da estocagem e da distribuição dos suprimentos e da execução da manutenção no que concerne ao material especializado do Corpo de Bombeiros (Lei nº 616/1974, Art. 43, II, red. Lei nº 663/1975)",
-                    "As demais necessidades de suprimentos e manutenção são asseguradas pela Diretoria de Apoio Logístico da Corporação (Lei nº 616/1974, Art. 43, parágrafo único)"
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            }
-          ],
+          "lobOrgans": [],
           "lobProvenance": "automatico"
         },
         {
@@ -35817,26 +35325,6 @@
               ]
             },
             {
-              "name": "Assessoria de Telecomunicações e Informática",
-              "abbreviation": "ATI",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "responsável pela coordenação e execução das matérias relativas à informática, telecomunicações e tecnologia da informação. (Art. 19, V)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe da Assessoria de Telecomunicações e Informática",
-                  "requisito": "Oficial QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Coordenação e execução de informática, telecomunicações e TI (Art. 19, V)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
               "name": "Assessoria Parlamentar",
               "abbreviation": "AP",
               "subordinadoA": "Comandante-Geral",
@@ -35903,26 +35391,6 @@
                   "subordinadoA": "Comandante-Geral",
                   "atribuicoes": [
                     "Acompanhamento da gestão estratégica e projetos da Corporação (Art. 19, IV)."
-                  ],
-                  "desdobramentos": []
-                }
-              ]
-            },
-            {
-              "name": "Assessoria de Telecomunicações e Informática",
-              "abbreviation": "ATI",
-              "subordinadoA": "Comandante-Geral",
-              "atribuicoes": [
-                "responsável pela coordenação e execução das matérias relativas à informática, telecomunicações e tecnologia da informação. (Art. 19, V)"
-              ],
-              "desdobramentos": [],
-              "cargos": [
-                {
-                  "cargo": "Chefe da Assessoria de Telecomunicações e Informática",
-                  "requisito": "Oficial QOBM",
-                  "subordinadoA": "Comandante-Geral",
-                  "atribuicoes": [
-                    "Coordenação e execução de informática, telecomunicações e TI (Art. 19, V)."
                   ],
                   "desdobramentos": []
                 }

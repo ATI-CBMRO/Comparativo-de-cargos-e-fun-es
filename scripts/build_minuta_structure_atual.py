@@ -42,7 +42,16 @@ DEPARA_BLOCO_D = {
     "dcs":"ccs","dinf":"cinf","cob1":"crbm","cob2":"crbm","coa":"boa","gbs":"bbs",
 }
 def _bloco_d_futura():
-    fut = json.loads((BASE_DIR / "database" / "minuta_structure.json").read_text(encoding="utf-8"))
+    fut_path = BASE_DIR / "database" / "minuta_structure.json"
+    # Aviso de frescor (auditoria 2026-07-23): este builder HERDA o Bloco D do JSON
+    # gerado da futura — se ele estiver mais velho que o enrichment, o atual carrega
+    # alternativas defasadas em silêncio. Sinaliza, não bloqueia.
+    enr = BASE_DIR / "scripts" / "ri_alternativas_enrichment.py"
+    if enr.exists() and enr.stat().st_mtime > fut_path.stat().st_mtime:
+        print("  AVISO: database/minuta_structure.json (futura) é mais velho que "
+              "scripts/ri_alternativas_enrichment.py — rode antes "
+              "`python scripts/build_minuta_structure.py` para não herdar Bloco D defasado.")
+    fut = json.loads(fut_path.read_text(encoding="utf-8"))
     return {c.get("organKey"): (c.get("alternatives") or {})
             for c in fut["chapters"] if c.get("kind") == "organ"}
 
@@ -178,9 +187,19 @@ def build_command_chart_atual(chapters):
             "children": [],
         }
     for k, node in nodes.items():
+        if k == "cg":
+            continue
         parent = COMMAND_PARENT.get(k)
         if parent and parent in nodes:
             nodes[parent]["children"].append(node)
+        else:
+            # Órgão sem pai mapeado NÃO pode sumir do organograma em silêncio
+            # (auditoria 2026-07-23; a futura trata o análogo com root/ValueError):
+            # vira filho direto do cg e o gerador avisa.
+            print(f"  AVISO: órgão '{k}' sem pai em COMMAND_PARENT — pendurado no cg "
+                  "para não desaparecer do organograma; mapeie o pai correto.")
+            if "cg" in nodes:
+                nodes["cg"]["children"].append(node)
     return nodes.get("cg")
 
 

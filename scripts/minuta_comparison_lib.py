@@ -27,7 +27,15 @@ def state_from_source_label(label: str) -> str | None:
 AUTO_MATCH_KEYWORDS = {
     "dpo":   {"include": ["planejamento"],                     "exclude": []},
     "cot":   {"include": ["operacoes", "operacional"],
-              "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas"]},
+              # excludes ampliados na auditoria de 2026-07-23 (AR-01): o include
+              # promíscuo casava Estado-Maior Operacional (RN), Material Operacional /
+              # Suprimento (RJ/SP), Assessoria de Operações (RS), Comando Operacional
+              # Especializado (PE→doe) — nada disso é o COT (operações TÉCNICAS /
+              # segurança contra incêndio). Revisão do include registrada em PENDENCIAS.
+              "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas",
+                          "estado maior", "estado-maior", "suprimento", "manutencao",
+                          "defesa civil", "especializado", "busca", "salvamento",
+                          "assessoria"]},
     "doe":   {"include": ["especializ"],                       "exclude": []},
     "crbm":  {"include": ["regional", "regiao de bombeiro"],   "exclude": []},
     "bbm":   {"include": ["batalhao"],
@@ -41,10 +49,15 @@ AUTO_MATCH_KEYWORDS = {
     "cat":   {"include": ["atividades tecnicas", "atividade tecnica"],
               "exclude": ["operacoes tecnicas", "comando de operacoes"]},
     "cg":     {"include": ["comando geral", "comando-geral", "estado maior", "estado-maior"],
-               "exclude": ["regional", "operacoes", "setorial", "secao"]},
+               # "gabinete": "Gabinete do Comando-Geral" contém "comando-geral" e caía
+               # aqui além de em gab-cg (AR-01, auditoria 2026-07-23) — o painel do
+               # Comando-Geral mostrava o Gabinete do estado como se fosse o Comando.
+               "exclude": ["regional", "operacoes", "setorial", "secao", "gabinete"]},
     "depdec": {"include": ["defesa civil", "protecao e defesa"], "exclude": []},
     "condeg": {"include": ["conselho"],
-               "exclude": ["municipal", "regional"]},
+               # "ensino": Conselho Superior de Ensino/Pesquisa (MT) não é o CONDEG
+               # (auditoria 2026-07-23) — já casa em deei pela matéria certa.
+               "exclude": ["municipal", "regional", "ensino"]},
     "dp":   {"include": ["diretoria de pessoal", "departamento de pessoal",
                          "gestao de pessoal", "gestao de pessoas", "recursos humanos"],
              "exclude": ["assistencia ao pessoal", "saude"]},
@@ -62,8 +75,12 @@ AUTO_MATCH_KEYWORDS = {
     "ccs":  {"include": ["comunicacao social"],                  "exclude": []},
     "cinf": {"include": ["informatica", "tecnologia da informacao"], "exclude": []},
     "assessorias": {"include": ["assessoria"],
+                    # "informatica"/"telecomunicacoes": Assessoria de Telecomunicações e
+                    # Informática (TO) pertence ao cinf, não às assessorias genéricas
+                    # (auditoria 2026-07-23).
                     "exclude": ["assessoria de comunicacao", "comunicacao social",
-                                "inteligencia", "defesa civil"]},
+                                "inteligencia", "defesa civil",
+                                "informatica", "telecomunicacoes"]},
     "gab-cg": {"include": ["gabinete"],
                "exclude": ["subcomando", "subcomandante", "chefia de gabinete"]},
     "ag":     {"include": ["ajudancia", "ajudante-geral", "ajudante geral"],
@@ -72,8 +89,11 @@ AUTO_MATCH_KEYWORDS = {
 }
 
 
-def auto_match_organ_ids(organ_key: str, organs: dict) -> list[str]:
-    spec = AUTO_MATCH_KEYWORDS.get(organ_key)
+def auto_match_organ_ids(organ_key: str, organs: dict, keywords: dict | None = None) -> list[str]:
+    """`keywords` permite reusar o MESMO matcher com outra tabela (a do cenário
+    atual) — antes o builder do atual reimplementava esta função e correções num
+    lado não propagavam pro outro (achado da auditoria de 2026-07-23)."""
+    spec = (keywords if keywords is not None else AUTO_MATCH_KEYWORDS).get(organ_key)
     if not spec:
         return []
     inc, exc = spec["include"], spec["exclude"]

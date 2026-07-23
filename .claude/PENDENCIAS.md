@@ -48,10 +48,32 @@
 - [ ] Lacuna de dados — extrair **texto verbatim** dos estados que só têm competências (ex.: MT no Comando-Geral). Curadoria por estado/órgão. Origem: reforma Subsídio.
 - [ ] Subsídio — abas Estrutura/LOB seguem **"em breve"** (visíveis em produção); dependem de dados a curar. (Diagramas do Regulamento já destravados em 21/07/2026.)
 
+- [ ] Comparativo (2 cenários) — **revisar o include do `cot` na camada automática**
+  (`minuta_comparison_lib.py`): "operacoes"/"operacional" é promíscuo por natureza (o COT é
+  operações TÉCNICAS/segurança contra incêndio); a auditoria de 23/07/2026 ampliou os
+  excludes (7 casamentos errados removidos), mas a solução de fundo é um include mais
+  específico — decidir com calma para não perder casamentos legítimos.
+- [ ] Regulamento (2 cenários) — `chapter.id` do atual NÃO é re-carimbado (`reg:<tema>` igual
+  nos 2 cenários; só o `editId` de artigo leva `reg:atual:`). Hoje inofensivo (endereço
+  Firestore é o editId; `semCenario()` em conferencia.js já trata), mas é fragilidade: tela
+  nova que use `chapter.id` como chave de persistência colide entre cenários. Avaliar
+  re-carimbar também o id do capítulo numa fatia futura.
+
 ## 🟡 Em andamento
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Auditoria Rodada 2 — cenários atual×futura / geradores paralelos** (23/07/2026):
+  3 comparações lado a lado (minuta, regulamento, comparativo) + teste mecânico nos JSONs.
+  Vazamento futura→atual: **0** (competências do RO limpas; editIds todos com marcador;
+  DEPARA_BLOCO_D 19/19 validado por conteúdo). Corrigidos 3 casamentos AR-01 reais na
+  camada automática dos 2 cenários (cg×Gabinete em 10 estados; cob1×Comandos de Defesa
+  Civil/Inteligência de GO; cot×Suprimento/Estado-Maior/Especializado) + condeg×Conselho
+  de Ensino e assessorias×Telecom/Informática — **39 casamentos errados removidos, 0
+  legítimos perdidos** (diff antes/depois). Matcher unificado na lib (era função duplicada
+  — correções não propagavam). Avisos de frescor nos 2 geradores do atual (herança de JSON
+  velho da futura era silenciosa) e órfão do commandChart do atual não some mais em
+  silêncio. Comparativos regenerados; suítes verdes.
 - [x] **Auditoria Rodada 1 — integridade das citações verbatim** (23/07/2026): verificador
   novo `scripts/auditoria_citacoes.py` confere os 1.605 excertos dos 4 JSONs de estrutura
   contra o DOCUMENTO reivindicado (LOB × RI × Regulamento do mesmo estado). Resultado:

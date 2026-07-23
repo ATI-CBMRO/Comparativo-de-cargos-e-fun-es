@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from minuta_comparison_lib import norm  # noqa: E402  (única importação permitida da lib)
+from minuta_comparison_lib import norm, auto_match_organ_ids  # noqa: E402  (única importação permitida da lib)
 
 BASE_DIR = Path(__file__).parent.parent
 ATUAL_DIR = BASE_DIR / "database" / "atual"
@@ -34,20 +34,23 @@ REF_ID = "ro"
 # chaves da futura e não serve aqui). include/exclude já normalizados (sem acento).
 AUTO_MATCH_KEYWORDS_ATUAL = {
     "cg":           {"include": ["comando geral", "comando-geral"],
-                     "exclude": ["regional", "operacoes", "setorial", "secao"]},
+                     # "gabinete": mesmo AR-01 da lib — Gabinete do Comando-Geral não é
+                     # o Comando-Geral (auditoria 2026-07-23).
+                     "exclude": ["regional", "operacoes", "setorial", "secao", "gabinete"]},
     "emg":          {"include": ["estado maior", "estado-maior"], "exclude": ["regional"]},
     "corregedoria": {"include": ["corregedoria", "correicao"], "exclude": []},
     "ajudancia":    {"include": ["ajudancia", "ajudante-geral", "ajudante geral"], "exclude": []},
     "gabinete":     {"include": ["gabinete"],
                      "exclude": ["subcomando", "subcomandante", "chefia de gabinete"]},
     "cepdec":       {"include": ["defesa civil", "protecao e defesa"], "exclude": []},
-    "condeg":       {"include": ["conselho"], "exclude": ["municipal", "regional"]},
+    "condeg":       {"include": ["conselho"], "exclude": ["municipal", "regional", "ensino"]},
     "dint":         {"include": ["inteligencia"], "exclude": []},
     "cpof":         {"include": ["financas", "orcamento", "administracao financeira"],
                      "exclude": ["planejamento operacional"]},
     "assessorias":  {"include": ["assessoria"],
                      "exclude": ["assessoria de comunicacao", "comunicacao social",
-                                 "inteligencia", "defesa civil"]},
+                                 "inteligencia", "defesa civil",
+                                 "informatica", "telecomunicacoes"]},
     "comissoes":    {"include": ["comissao"], "exclude": ["promocao"]},
     "dp":           {"include": ["diretoria de pessoal", "departamento de pessoal",
                                  "gestao de pessoal", "gestao de pessoas", "recursos humanos"],
@@ -63,8 +66,11 @@ AUTO_MATCH_KEYWORDS_ATUAL = {
                                  "coordenadoria operacional"],
                      # "operacoes tecnicas" exclui o COT (segurança contra incêndio),
                      # que NÃO é o COB operacional/socorro — armadilha AR-01.
+                     # "defesa civil"/"inteligencia": Comandos de Operações de Defesa
+                     # Civil e de Inteligência (GO) não são o COB (auditoria 2026-07-23).
                      "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas",
-                                 "operacoes tecnicas", "operacao tecnica"]},
+                                 "operacoes tecnicas", "operacao tecnica",
+                                 "defesa civil", "inteligencia"]},
     "cob2":         {"include": ["regional", "regiao de bombeiro"], "exclude": []},
     "coa":          {"include": ["aerea", "aereo", "aviacao", "operacoes aereas"], "exclude": []},
     "gbs":          {"include": ["busca", "salvamento"], "exclude": []},
@@ -72,13 +78,9 @@ AUTO_MATCH_KEYWORDS_ATUAL = {
 
 
 def match_ids(organ_key, organs):
-    spec = AUTO_MATCH_KEYWORDS_ATUAL.get(organ_key)
-    if not spec:
-        return []
-    inc, exc = spec["include"], spec["exclude"]
-    return [oid for oid, o in organs.items()
-            if any(k in norm(o.get("name", "")) for k in inc)
-            and not any(k in norm(o.get("name", "")) for k in exc)]
+    # Reusa o matcher ÚNICO da lib com a tabela do atual — antes era uma cópia da
+    # função e correções não propagavam entre cenários (auditoria 2026-07-23).
+    return auto_match_organ_ids(organ_key, organs, AUTO_MATCH_KEYWORDS_ATUAL)
 
 
 def extract_organ(organs, oid):

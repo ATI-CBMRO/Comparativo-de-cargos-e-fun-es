@@ -51,6 +51,14 @@ def main():
             "database/regulamento_structure.json não existe — rode antes "
             "`python scripts/build_regulamento_structure.py`."
         )
+    # Aviso de frescor (auditoria 2026-07-23): herdamos o JSON gerado da futura —
+    # se ele estiver mais velho que o enrichment mestre, o atual propaga conteúdo
+    # defasado em silêncio. Sinaliza, não bloqueia.
+    enr = FUTURA_JSON.parent.parent / "scripts" / "regulamento_enrichment.py"
+    if enr.exists() and enr.stat().st_mtime > FUTURA_JSON.stat().st_mtime:
+        print("  AVISO: database/regulamento_structure.json (futura) é mais velho que "
+              "scripts/regulamento_enrichment.py — rode antes "
+              "`python scripts/build_regulamento_structure.py`.")
     structure = json.loads(FUTURA_JSON.read_text(encoding="utf-8"))  # temática da futura
     _restamp_editids(structure)
 
