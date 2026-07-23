@@ -32,6 +32,26 @@ RI_ALTERNATIVES = {
         },
     },
     'assessorias': {
+        'go': {
+            "name": 'Goiás', "abbr": 'GO',
+            "docLabel": 'Lei nº 18.305/2013',
+            "excerpts": [
+                {
+                    'heading': 'Assessoria Jurídica',
+                    'caput': 'Art. 17. À Assessoria Jurídica compete assessorar o Comando Geral em matérias de natureza jurídica já pacificadas no âmbito da Procuradoria-Geral do Estado, além de:',
+                    'dispositivos': ['I – analisar normas, diretrizes, portarias, determinações, informações e demais documentos emanados do Comando Geral;', 'II – orientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas da Procuradoria-Geral do Estado;', 'III – coligir elementos de fato e de direito para preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado, para a defesa dos interesses do Estado de Goiás em ações judiciais.', 'Parágrafo único. A função de analista jurídico é privativa de bacharel em direito.'],
+                    'source': 'cf. CBMGO, Lei nº 18.305/2013, Art. 17',
+                    'match': 'exata',
+                },
+                {
+                    'heading': 'Assessoria Parlamentar',
+                    'caput': 'Art. 18. À Assessoria Parlamentar compete o exercer de atividades de apoio e assessoramento ao Comando Geral em assuntos relacionados ao Poder Legislativo e que sejam de interesse da Corporação, além de:',
+                    'dispositivos': ['I – planejar, coordenar, acompanhar e executar ações de intercâmbio de informações do Corpo de Bombeiros Militar com o Poder Legislativo, em âmbito federal, estadual e municipal;', 'II – acompanhar os processos legislativos envolvendo assuntos de interesse da Corporação, bem como realizar gestão visando conferir celeridade aos processos;', 'III – manter o Comando Geral informado dos projetos de lei envolvendo assuntos de interesse da Corporação em tramitação em todas as esferas do Poder Legislativo;', 'IV – assessorar no planejamento e na elaboração de projetos de lei de interesse da Corporação, conforme diretrizes e ordens emanadas do Comando Geral.'],
+                    'source': 'cf. CBMGO, Lei nº 18.305/2013, Art. 18',
+                    'match': 'exata',
+                },
+            ],
+        },
         'pa': {
             "name": 'Pará', "abbr": 'PA',
             "docLabel": 'MINUTA de RI (Decreto em tramitação, 2026)',
@@ -550,10 +570,10 @@ RI_ALTERNATIVES = {
             "excerpts": [
                 {
                     'heading': 'Comando de Operações (COP)',
-                    'caput': 'Art.16. Compete à 2ª Seção do Estado Maior Geral:',
-                    'dispositivos': ['I – realizar estudos e formular propostas de necessidade de conhecimento s sobre os diversos domínios de interesse do Corpo de Bombeiros Militar e de Defesa Civil relacionados com o futuro da Corporação;', 'II – elaborar mapeamento por competências necessárias a todas as funções dos órgãos e setores da Corporação;', 'III – identificar, avaliar e documentar as habilidades, competências e conhecimentos dos militares e civis da Corporação;', 'IV – criar indicadores de desempenho para mensuração das habilidades pessoais e profissionais militares;', 'V – elaborar políticas e diretrizes para:', 'a) a pesquisa, produção, avaliação, divulgação e consolidação do conhecimento na Corporação;', 'b) a preservação e governança do patrimônio histórico e cultural do CBMPA; e', 'c) implantação de projetos de boas práticas isoladas, avaliá -los durante a maturação e evoluí -los em padrões em toda a Corporação.', 'VI – propor políticas e diretrizes para planejar, elaborar, orientar, gerenciar e consolidar a execução dos Planos de Gestão do Conhecimento, Cultura e Inovação;', 'VII – propor e coordenar projetos de inovação tecnológica e metodológica nas áreas administrativa, prevencionista e operacional;', 'VIII – pesquisar e avaliar novas tecnologias aplicáveis à atividade bombeiro -militar (equipamentos, softwares, aplicativos e métodos operacionais);', 'IX – elaborar relatórios referentes à política da gestão de gestão do conhecimento, cultura e inovação da Corporação; e', 'X – estimular a sistematização e a aplicação do conhecimento obtido de intercâmbios institucionais. 9', 'Parágrafo único. A BM/2 é composta por 02 (duas) subseções:', 'I – Subseção de pesquisa, análise de dados e boas práticas em Gestão do Conhecimento - SPBG; e', 'II – Subseção de tecnologia, cultura e inovação - STCI. 3ª Seção do Estado Maior Geral'],
+                    'caput': 'Art. 16. O Comando de Operações é o órgão de direção-geral responsável pela direção e pelo controle dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-fim da corporação, assim constituído:',
+                    'dispositivos': ['I - comandante operacional;', 'II - assistente;', 'III - seção de Planejamento de Pessoal;', 'IV - seção de Planejamento logístico;', 'V - seção de Planejamento de operações e estatística;', 'VI - seção de Planejamento de eventos; e', 'VII - secretaria.', '§ 1º O Comandante Operacional será um oficial do último posto do Quadro de Oficiais Bombeiro Militar Combatente (QOBM), indicado pelo Comandante-geral e de livre nomeação do chefe do Poder executivo estadual, que terá precedência hierárquica e funcional sobre os comandantes dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-fim da corporação.', '§ 2º O Assistente do Comando de Operações é um oficial no posto de Tenente-Coronel do Quadro de Oficiais Bombeiro Militar Combatente (QOBM).', '§ 3º As seções serão chefiadas por oficiais do posto de Major do Quadro de Oficiais Bombeiro Militar Combatente (QOBM).', '§ 4º cada seção poderá ser desdobrada em até 2 (duas) subseções, nos termos do regulamento desta lei.', '§ 5º Na ausência do Comandante Operacional responderá pelo Comando de operações o comandante do órgão de direção intermediária mais antigo da região Metropolitana de Belém.'],
                     'source': 'cf. CBMPA, Lei nº 11.060/2025, Art. 16',
-                    'match': 'parcial',
+                    'match': 'exata',
                 },
             ],
         },
