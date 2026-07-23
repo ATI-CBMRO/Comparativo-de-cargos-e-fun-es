@@ -3076,3 +3076,23 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .em-construcao h1 { color: var(--navy-700, #2a3a55); margin-bottom: 12px; }
 .em-construcao p { color: var(--navy-600, #45526e); line-height: 1.6; }
 .em-construcao-dica { margin-top: 16px; font-size: 14px; color: var(--navy-500, #6b7793); }
+
+/* ===== Aba Decisões (cockpit Fase 2) ===== */
+.dec-filtros { display: flex; gap: 8px; margin-bottom: 14px; }
+.dec-card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dec-titulo { font-size: .98rem; margin: 0; color: var(--text); }
+.dec-selo { display: inline-flex; align-items: center; gap: 5px; font-size: .74rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.dec-selo-ok { background: #e6f4ea; color: #1b7a3d; }
+.dec-selo-pend { background: #fdf1e3; color: #b3600d; }
+.dec-card-ok { border-left: 3px solid #1b7a3d; }
+.dec-questao { margin: 10px 0 14px; color: var(--text); }
+.dec-candidata, .dec-comparacao { border-top: 1px solid var(--border, #e2e6ee); }
+.dec-cand-head { display: flex; align-items: center; gap: 8px; width: 100%; background: none; border: 0; padding: 10px 0; cursor: pointer; text-align: left; font: inherit; color: var(--text); }
+.dec-cand-fonte { font-weight: 600; }
+.dec-chevron { transition: transform .15s; flex: none; }
+.dec-chevron.aberta { transform: rotate(90deg); }
+.dec-cand-corpo { padding: 0 0 12px 22px; }
+.dec-ocr { font-size: .8rem; font-style: italic; color: var(--text-muted); }
+.dec-leitura { color: var(--text-muted); }
+.dec-cmp-list { margin: 0 0 12px; padding-left: 40px; color: var(--text-muted); }
+.dec-decisao { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border, #e2e6ee); }
