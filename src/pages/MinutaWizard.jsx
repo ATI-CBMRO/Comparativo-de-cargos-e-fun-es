@@ -284,6 +284,12 @@ export default function MinutaWizard() {
         <p style={{ textAlign: 'justify', margin: 0, flex: 1, textIndent: art.incisos.length ? 0 : '1.25em' }}>
           <strong>{articleLabel(art.number)}</strong> {art.caput}
         </p>
+        {art.hasFinal && (
+          <span title="Texto final aplicado (decisão registrada no sistema)" style={{
+            flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 3, padding: '2px 7px',
+            borderRadius: 5, background: '#d9f0e2', color: '#0c6b35', fontSize: 11, fontWeight: 600,
+          }}><Check size={11} /> final aplicado</span>
+        )}
         <button onClick={() => openAdvanced(art.editId)} title="Editar texto desta seção" style={{
           flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
           border: '1px solid var(--border-card)', borderRadius: 5, background: '#fff', cursor: 'pointer',

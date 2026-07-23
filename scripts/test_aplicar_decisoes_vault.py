@@ -72,6 +72,19 @@ class TestAplicar(unittest.TestCase):
         r = aplicar(self.export, self.vault)
         self.assertEqual(r["nao_encontradas"], 1)
 
+    def test_texto_coincidente_por_acaso_e_conflito_nao_ja_aplicada(self):
+        # A decisão manual contém, por coincidência, o MESMO texto da decisão do sistema —
+        # mas SEM o rodapé "_Registrado no sistema..._" que só o próprio script escreve.
+        # Idempotência deve exigir o bloco inteiro (decisão + rodapé), não só o texto.
+        self.nota.write_text(NOTA.replace(
+            "_(a preencher pelo Wândrio — redação escolhida e o porquê)_",
+            "Adotar 12h/36h (critério de exclusividade de AL). Decidido em reunião presencial."),
+            encoding="utf-8")
+        r = aplicar(self.export, self.vault)
+        self.assertEqual(r["conflitos"], 1)
+        self.assertEqual(r["ja_aplicadas"], 0)
+        self.assertNotIn("_Registrado no sistema", self.nota.read_text(encoding="utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()

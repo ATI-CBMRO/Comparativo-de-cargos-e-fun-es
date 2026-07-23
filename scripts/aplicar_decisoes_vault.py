@@ -49,7 +49,10 @@ def aplicar(export_path, vault):
         atual = m.group(2) if m else ""
         novo_corpo = f"{dec['decisao'].strip()}\n\n{_rodape(dec)}\n"
         if not _eh_placeholder(atual):
-            if dec["decisao"].strip() in atual:
+            # Idempotência pelo BLOCO inteiro (decisão + rodapé determinístico), não só
+            # pelo texto da decisão — evita falso "já aplicada" quando o texto da decisão
+            # coincide por acaso com um trecho de uma nota manual não relacionada.
+            if novo_corpo.strip() in atual:
                 r["ja_aplicadas"] += 1
                 continue
             r["conflitos"] += 1
