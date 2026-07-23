@@ -5,24 +5,15 @@ import { useAuth } from '../lib/auth.jsx'
 import { scenarioDbUrl } from '../lib/scenario.js'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
-import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
+import { renderFriendlyText } from '../lib/comparatorRender.jsx'
 import { buildConferencia } from '../lib/conferencia.js'
 import { confKey, mergeStatus } from '../lib/conferenciaStatus.js'
 import { subscribeConferencia, saveConferenciaStatus } from '../lib/conferenciaData.js'
 import { articleLabel, romanize } from '../lib/minutaArticles.js'
+import { AlternativesPanel } from '../components/AlternativesPanel.jsx'
 
 const ARQ = { ri: 'minuta_structure.json', reg: 'regulamento_structure.json' }
 const TITULO = { ri: 'Regimento Interno', reg: 'Regulamento Geral' }
-
-function MatchBadge({ match }) {
-  const cfg = {
-    exata: { cls: 'rg-badge-exata', label: 'exata' },
-    parcial: { cls: 'rg-badge-parcial', label: 'parcial' },
-    tematica: { cls: 'rg-badge-tematica', label: 'temática' },
-    auto: { cls: 'rg-badge-tematica', label: 'auto' },
-  }[match] ?? { cls: 'rg-badge-tematica', label: match || '—' }
-  return <span className={`rg-badge ${cfg.cls}`}>{cfg.label}</span>
-}
 
 export default function ConferenciaLinear({ trilha = 'ri' }) {
   const { cenario } = useScenario()
@@ -110,14 +101,6 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
 
 function ConferenciaItem({ item, idx, status, onStatus, ufSel, setUfSel }) {
   const { dispositivo, chapterTitle, chapterId, alternatives } = item
-  const altStates = useMemo(() => (
-    Object.entries(alternatives ?? {})
-      .map(([uf, alt]) => ({ uf, ...alt }))
-      .sort((a, b) => a.name.localeCompare(b.name, 'pt'))
-  ), [alternatives])
-
-  const selectedUf = ufSel[chapterId] ?? altStates[0]?.uf ?? null
-  const selectedAlt = altStates.find(s => s.uf === selectedUf) || null
 
   return (
     <div className={`card conf-item${status === 'ok' ? ' conf-item-ok' : status === 'div' ? ' conf-item-div' : ''}`} style={{ marginBottom: 14, padding: 16 }}>
@@ -155,40 +138,11 @@ function ConferenciaItem({ item, idx, status, onStatus, ufSel, setUfSel }) {
         </div>
 
         <div className="rg-col no-print" style={{ flex: 1, minWidth: 0 }}>
-          {altStates.length === 0 ? (
-            <div className="card" style={{ padding: 16, textAlign: 'center', color: 'var(--text-muted)' }}>
-              Nenhuma referência disponível.
-            </div>
-          ) : (
-            <>
-              <div className="oc-state-chips" style={{ position: 'static', padding: '0 0 10px' }}>
-                <span className="oc-state-chips-label">Estado:</span>
-                {altStates.map(s => (
-                  <button
-                    key={s.uf}
-                    className={`oc-state-chip${s.uf === selectedUf ? ' active' : ''}`}
-                    onClick={() => setUfSel(u => ({ ...u, [chapterId]: s.uf }))}
-                    title={`${s.name} · ${s.docLabel}`}
-                  >
-                    {s.abbr}
-                  </button>
-                ))}
-              </div>
-              {selectedAlt && selectedAlt.excerpts.length > 0
-                ? selectedAlt.excerpts.map((ex, i) => (
-                    <div className="rg-article" key={i}>
-                      {ex.heading && <div className="rg-heading">{ex.heading}</div>}
-                      <p className="rg-caput">{renderFriendlyText(ex.caput)}</p>
-                      {ex.dispositivos?.length > 0 && <List items={ex.dispositivos} />}
-                      <div className="rg-article-foot">
-                        {ex.source ? <span className="rg-source">{ex.source}</span> : <span />}
-                        {ex.match && <MatchBadge match={ex.match} />}
-                      </div>
-                    </div>
-                  ))
-                : <p className="rg-empty">Sem trechos para este estado.</p>}
-            </>
-          )}
+          <AlternativesPanel
+            alternatives={alternatives}
+            selectedUf={ufSel[chapterId]}
+            onSelectUf={(uf) => setUfSel(u => ({ ...u, [chapterId]: uf }))}
+          />
         </div>
       </div>
     </div>
