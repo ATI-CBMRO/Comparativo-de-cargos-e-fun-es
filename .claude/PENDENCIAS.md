@@ -2,12 +2,18 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
-- [ ] **Curadoria — Fase 3 (com o Wândrio)**: preencher as **36 "Decisões CBMRO"** no vault —
-  27 do Regulamento ("Regulamento — Curadoria/", 16 temas 🟡) + 9 do Regimento Interno
-  ("Regimento Interno — Curadoria/", 27 órgãos 🟡); depois, sessão de "aplicar Decisões" nos
-  dados do portal (mecanismo a desenhar). Minors registrados p/ rodada futura: padronizar os 2
+- [ ] **Curadoria — preencher as 36 "Decisões CBMRO" (com o Wândrio/Tiago)**: 27 do
+  Regulamento ("Regulamento — Curadoria/", 16 temas 🟡) + 9 do Regimento Interno
+  ("Regimento Interno — Curadoria/", 27 órgãos 🟡). O mecanismo de REGISTRAR e APLICAR a
+  decisão já está pronto (cockpit Fase 3, 23/07/2026 — aba Decisões, papel admin) — falta só
+  a análise/decisão em si. Delegar papel admin ao Tiago em `/acessos` quando ele começar.
+  Orientação de uso em `/manual#cockpit`. Minors registrados p/ rodada futura: padronizar os 2
   estilos de citação do MT adaptado; ruído de cabeçalho de PDF em 2 citações de SE; notas de
   Fonte magras de propósito; elisões sem "[...]" em 2 notas de decisão (cada linha é verbatim).
+- [ ] **Cockpit — erros de gravação silenciosos** (achado não-bloqueante da revisão final da
+  Fase 3, 23/07/2026): `saveConferenciaStatus`/`marcarFichaAplicada`/`desfazerDecisao` só vão a
+  `console.error` em caso de falha — não aparecem para quem está usando a tela. Considerar
+  surfaceá-los visualmente numa rodada futura.
 - [ ] **Inconsistências de DADOS sinalizadas (decidir com o Wândrio, não corrigir em silêncio)**:
   (a) dpo — `cf. CBMPA, Lei nº 11.060/2025, Art. 16` citado na competência do RO não bate com o
   excerto verbatim de `alternatives.pa`; (b) assessorias — CBMGO citado sem excerto nas
@@ -49,10 +55,20 @@ _(nenhum)_
   AR-01). Prova visual nos 2 cenários; bug de chave duplicada (futura) achado na prova e
   corrigido. Spec/plano `docs/superpowers/*/2026-07-22-cockpit-*`. Registro de armadilhas em
   `docs/superpowers/auditoria-armadilhas.md` (AR-01). — 22/07/2026.
-  - **Fases 2 e 3 PENDENTES**: (2) trazer as 36 decisões do Obsidian para dentro do sistema
-    (pipeline notas→JSON + aba de decisões); (3) registrar/aplicar decisão (Firebase + texto
-    final para redação + ficha de aplicação para estrutural) + "Divergente" da conferência
-    virando pendência. Antes da auditoria final da fase, rodar o checklist de armadilhas.
+- [x] **Cockpit de curadoria — Fase 2: aba Decisões** (`/minuta/decisoes`,
+  `/regulamento/decisoes`): as 36 Decisões CBMRO do vault Obsidian passam a ser lidas dentro
+  do portal (Questão + candidatas verbatim + Comparação), filtro Pendentes/Decididas, nos 2
+  cenários. Parser reconhece 2 formatos de nota (2/9 notas do Regimento usavam template mais
+  antigo) sem editar o vault. Wikilinks crus limpos na revisão final. PR #20. — 23/07/2026.
+- [x] **Cockpit de curadoria — Fase 3: registrar e aplicar decisão**: Firebase (`decisions`)
+  vira fonte oficial, só admin registra; decisão de REDAÇÃO aponta o artigo alvo manualmente
+  (nunca de-para automático — anti-AR-01) e o texto final passa a valer no Wizard e no
+  `.docx` (provado baixando o arquivo de verdade); decisão ESTRUTURAL vira ficha de
+  aplicação; Conferência persiste por usuário logado; exportação + script devolvem as
+  decisões ao vault sem sobrescrever decisão manual divergente; badge visual "final aplicado"
+  nos Wizards. Bug real corrigido no caminho: `finalTexts` nunca conseguia gravar (Firestore
+  rejeita `/` no id — ver memória `firestore-encoding-dispositivoid`). Guia de metodologia em
+  `/manual#cockpit`. Prova real com login (não só testes). PR #21. — 23/07/2026.
 - [x] **Cenário atual — Subsídio destravado** (`/minuta/subsidio` e `/regulamento/subsidio`):
   gerador isolado `build_minuta_comparison_atual.py` (21 órgãos da Lei 2.204/2009 × estados,
   SÓ camada automática, teste anti-vazamento da futura), telas resolvendo dados por
