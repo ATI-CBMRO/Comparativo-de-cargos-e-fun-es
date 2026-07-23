@@ -102,18 +102,30 @@ CF_RE = re.compile(r"cf\.\s*([^)`]+)")
 
 def _parse_candidatas_legado(texto):
     """'## Excertos verbatim' do template antigo: cada linha em negrito seguida de
-    blockquote(s) e, opcionalmente, uma nota OCR entre asteriscos-parênteses."""
+    blockquote(s) e, opcionalmente, uma nota OCR entre asteriscos-parênteses (podendo
+    se estender por várias linhas)."""
     out = None
     candidatas = []
+    coletando_ocr = None  # buffer de linhas quando uma nota OCR abre em uma linha e fecha em outra
     for linha in texto.splitlines():
         s = linha.rstrip()
+        if coletando_ocr is not None:
+            coletando_ocr.append(s.strip())
+            if s.strip().endswith(")*"):
+                bruto = " ".join(coletando_ocr)
+                out["ocr"] = bruto[2:-2] if bruto.startswith("*(") else bruto.strip("*()")
+                coletando_ocr = None
+            continue
         m = HEADER_LEGADO_RE.match(s.strip())
-        if m and (s.strip().startswith("**")):
+        if m and s.strip().startswith("**"):
             if out is not None:
                 candidatas.append(out)
             header_plano = re.sub(r"\[\[([^\]]+)\]\]", r"\1", s.strip())
             header_plano = header_plano.replace("**", "").rstrip(":").strip()
-            cf_match = CF_RE.search(s)
+            parentetico = (m.group(2) or "").strip()
+            if parentetico.startswith("(") and parentetico.endswith(")"):
+                parentetico = parentetico[1:-1]
+            cf_match = re.search(r"cf\.\s*([^`]+)", parentetico) or CF_RE.search(s)
             out = {
                 "fonte": header_plano,
                 "verbatim": [],
@@ -124,8 +136,10 @@ def _parse_candidatas_legado(texto):
         elif out is not None:
             if s.startswith("> "):
                 out["verbatim"].append(s[2:].strip('"'))
-            elif s.startswith("*(") and s.endswith(")*"):
-                out["ocr"] = s[2:-2]
+            elif s.strip().startswith("*(") and s.strip().endswith(")*"):
+                out["ocr"] = s.strip()[2:-2]
+            elif s.strip().startswith("*(") and not s.strip().endswith(")*"):
+                coletando_ocr = [s.strip()]
             elif s.startswith("**Leitura:**"):
                 out["leitura"] = s[len("**Leitura:**"):].strip()
     if out is not None:
@@ -164,10 +178,15 @@ def parse_decisao(texto, arquivo, trilha):
 
     mtit = re.search(r"^# +(.*)$", intro, flags=re.MULTILINE)
     titulo = mtit.group(1).strip() if mtit else Path(arquivo).stem
-    mq = re.search(r"\*\*Questão:\*\*\s*(.+?)(?:\n\n|\Z)", intro, flags=re.DOTALL)
-    if not mq and not is_legado:
-        raise ValueError(f"{arquivo}: sem **Questão:**")
-    questao = _questao_legado(secs) if is_legado else " ".join(mq.group(1).split())
+    if is_legado:
+        questao = _questao_legado(secs)
+        if not questao:
+            raise ValueError(f"{arquivo}: formato legado sem '## O problema' nem '## Contexto'")
+    else:
+        mq = re.search(r"\*\*Questão:\*\*\s*(.+?)(?:\n\n|\Z)", intro, flags=re.DOTALL)
+        if not mq:
+            raise ValueError(f"{arquivo}: sem **Questão:**")
+        questao = " ".join(mq.group(1).split())
 
     dec_txt = (secs.get("Decisão CBMRO") or "").strip()
     is_placeholder = dec_txt.startswith("_(") or dec_txt.startswith("<!--") or not dec_txt

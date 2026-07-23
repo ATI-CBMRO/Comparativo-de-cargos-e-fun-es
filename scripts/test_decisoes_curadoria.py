@@ -115,9 +115,11 @@ A minuta do RO organiza Assessorias como órgão autônomo. As alternativas dive
 
 **[[Fonte — Minuta-RI-PA]] — Art. 69, §1º:**
 
-> "As assessorias técnicas são voltadas a assuntos especializados."
+> "As assessorias técnicas são voltadas a assuntos especializados da Corporação , mediante
+> indicação do Chefe."
 
-*(nota: OCR do PDF de origem.)*
+*(nota: espaço antes da vírgula em "Corporação , mediante" reproduz OCR do PDF de origem —
+mantido tal como está no JSON.)*
 
 **[[Fonte — RI-RS]] — Art. 31 (caput):**
 
@@ -151,7 +153,7 @@ O RO e o PR divergem sobre quem pode ser Corregedor-Geral.
 
 > Corregedor-Geral (Oficial da ativa do último Posto).
 
-**Paraná** (cf. CBMPR, RI, Art. 23):
+**Paraná** (cf. CBMPR, RI (coletânea do portal), Art. 23):
 
 > Art. 23 A Corregedoria-Geral é o órgão técnico.
 
@@ -173,7 +175,10 @@ class TestParseDecisaoLegado(unittest.TestCase):
         self.assertEqual(len(d["candidatas"]), 2)
         self.assertIn("Fonte — Minuta-RI-PA", d["candidatas"][0]["fonte"])
         self.assertTrue(d["candidatas"][0]["verbatim"][0].startswith("As assessorias"))
+        # nota OCR multi-linha: não pode sumir, tem que vir concatenada e completa
         self.assertIsNotNone(d["candidatas"][0]["ocr"])
+        self.assertIn("Corporação , mediante", d["candidatas"][0]["ocr"])
+        self.assertIn("mantido tal como está no JSON", d["candidatas"][0]["ocr"])
         self.assertTrue(len(d["comparacao"]) >= 1)
         self.assertIn("Órgão — assessorias", d["ligadas"])
         self.assertIsNone(d["decisao"])
@@ -182,8 +187,19 @@ class TestParseDecisaoLegado(unittest.TestCase):
         d = parse_decisao(NOTA_LEGADO_DIVERGENCIA, "Decisão — ri — corregedoria — y.md", "ri")
         self.assertEqual(len(d["candidatas"]), 2)
         self.assertEqual(d["candidatas"][0]["citacao"], "cf. ro")
+        # citação com parêntese aninhado não pode ser truncada antes de "Art. 23"
+        self.assertEqual(d["candidatas"][1]["citacao"],
+                          "cf. CBMPR, RI (coletânea do portal), Art. 23")
         self.assertTrue(len(d["comparacao"]) >= 1)
         self.assertIsNone(d["decisao"])  # comentário HTML placeholder -> None
+
+    def test_legado_sem_problema_nem_contexto_falha(self):
+        ruim = (
+            "---\ntype: decisao\norganKey: x\ndecidido: false\n---\n"
+            "# Título\n## Excertos verbatim\n**A** (cf. x):\n> texto\n"
+        )
+        with self.assertRaises(ValueError):
+            parse_decisao(ruim, "Decisão — x.md", "ri")
 
 
 if __name__ == "__main__":
