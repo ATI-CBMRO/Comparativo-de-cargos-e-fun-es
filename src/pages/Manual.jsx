@@ -30,7 +30,7 @@ const SECTIONS = [
           <li><b>Administrador</b>: além disso, gerencia acessos e libera os comentários do Regulamento.</li>
         </ul>
         <p className="manual-tip">
-          A barra lateral começa expandida. Use <b>“Recolher menu”</b> no rodapé dela (ou o ☰ no
+          A barra lateral começa expandida. Use <b>"Recolher menu"</b> no rodapé dela (ou o ☰ no
           topo) para ganhar espaço — clicar num item do menu não recolhe a barra.
         </p>
       </>
@@ -58,7 +58,7 @@ const SECTIONS = [
         <ul>
           <li>No topo, escolha <b>Navegar por: Organização</b> (capítulos) ou <b>Órgãos</b> (organograma) — as duas formas levam ao mesmo item.</li>
           <li>No centro fica <b>a nossa minuta</b>; à direita, o <b>estado</b> selecionado.</li>
-          <li>O painel mostra o <b>texto original</b> do artigo quando existe (com os incisos) ou, na falta dele, um <b>resumo de competências</b> rotulado como “texto integral ainda não extraído”.</li>
+          <li>O painel mostra o <b>texto original</b> do artigo quando existe (com os incisos) ou, na falta dele, um <b>resumo de competências</b> rotulado como "texto integral ainda não extraído".</li>
           <li>A aba <b>LOB</b> compara pela Lei de Organização Básica. A seleção de <b>órgão e estado é compartilhada</b> entre as abas.</li>
         </ul>
       </>
@@ -71,7 +71,7 @@ const SECTIONS = [
         <p>O assistente onde a minuta é montada, curada e exportada.</p>
         <ul>
           <li><b>Visão geral</b>: veja a estrutura e as fontes.</li>
-          <li><b>Revisão &amp; curadoria</b>: ajuste o texto item a item; cada trecho mostra a origem (próprio do RO ou “cf. CBM-XX”).</li>
+          <li><b>Revisão &amp; curadoria</b>: ajuste o texto item a item; cada trecho mostra a origem (próprio do RO ou "cf. CBM-XX").</li>
           <li><b>Download</b>: gere o arquivo <b>.docx</b> para tramitação.</li>
         </ul>
       </>
@@ -102,7 +102,7 @@ const SECTIONS = [
         </ul>
         <div className="manual-callout">
           <b>Regulamento.</b> Os comentários do Regulamento só abrem quando o administrador libera
-          (interruptor de segurança). Antes disso, a comissão vê “em preparação”.
+          (interruptor de segurança). Antes disso, a comissão vê "em preparação".
         </div>
       </>
     ),
@@ -110,14 +110,58 @@ const SECTIONS = [
   {
     id: 'faq', title: 'Perguntas rápidas',
     body: (
-      <dl className="manual-faq">
-        <dt>De onde vem cada trecho da minuta?</dt>
-        <dd>Sempre há um selo de origem: conteúdo próprio do RO ou citação da fonte (“cf. CBM-XX, …”).</dd>
-        <dt>Por que às vezes aparece “competências” em vez do texto do artigo?</dt>
-        <dd>Porque o texto integral daquele estado/órgão ainda não foi extraído; mostramos o resumo de competências, com a fonte, até o texto completo ser curado.</dd>
-        <dt>As duas minutas funcionam igual?</dt>
-        <dd>Sim — mesma trilha (Subsídio → Minuta → Diagramas → Revisão) para o Regimento Interno e para o Regulamento Geral.</dd>
-      </dl>
+      <>
+        <dl className="manual-faq">
+          <dt>De onde vem cada trecho da minuta?</dt>
+          <dd>Sempre há um selo de origem: conteúdo próprio do RO ou citação da fonte ("cf. CBM-XX, …").</dd>
+          <dt>Por que às vezes aparece "competências" em vez do texto do artigo?</dt>
+          <dd>Porque o texto integral daquele estado/órgão ainda não foi extraído; mostramos o resumo de competências, com a fonte, até o texto completo ser curado.</dd>
+          <dt>As duas minutas funcionam igual?</dt>
+          <dd>Sim — mesma trilha (Subsídio → Minuta → Diagramas → Revisão) para o Regimento Interno e para o Regulamento Geral.</dd>
+        </dl>
+      </>
+    ),
+  },
+  {
+    id: 'cockpit', title: 'Cockpit de curadoria — como decidir',
+    body: (
+      <>
+        <p>
+          O <b>cockpit de curadoria</b> é o conjunto de telas onde as minutas são conferidas e
+          as <b>Decisões CBMRO</b> são analisadas e registradas. Quem analisa as decisões deve
+          seguir esta dinâmica:
+        </p>
+        <p>
+          <b>1. Conferência</b> (menu de cada trilha): percorra a minuta artigo por artigo, com as
+          referências dos outros estados ao lado. Marque <b>Confere</b> ou <b>Divergente</b> —
+          logado, a marcação fica salva para todos; o Divergente vira pendência na aba Decisões.
+        </p>
+        <p>
+          <b>2. Decisões</b> (menu de cada trilha): cada cartão traz a <b>Questão</b> (o que precisa
+          ser decidido), as <b>redações candidatas</b> (texto literal das leis de outros estados,
+          com a leitura do curador) e a <b>Comparação</b>. Os selos: <b>Pendente</b> (ninguém
+          decidiu), <b>Decidida no vault</b> (decisão anotada no acervo de estudo) e
+          <b> Decidida no sistema</b> (registrada aqui — é a que vale).
+        </p>
+        <p>
+          <b>3. Registrar</b> (botão visível para o papel administrador): escolha o tipo —
+          <b> Redação</b> (você aponta o artigo alvo e escreve o texto final; ele passa a aparecer
+          na Minuta e no arquivo .docx baixado, com o aviso de quantos textos finais estão
+          aplicados) ou <b>Estrutural</b> (muda a organização — fusão de órgãos, subordinação;
+          gera uma <b>ficha de aplicação</b> que fica pendente até ser aplicada em sessão de
+          trabalho). Registre sempre o <b>porquê</b> da decisão.
+        </p>
+        <p>
+          <b>4. Retorno ao acervo</b>: o administrador exporta as decisões registradas
+          (botão <b>Exportar decisões</b>) e um passo local atualiza as notas de estudo no
+          Obsidian — nada se perde e o histórico fica completo.
+        </p>
+        <div className="manual-callout">
+          <b>Regra de ouro:</b> decida <b>lendo o conteúdo</b> das candidatas, nunca pela
+          semelhança de nomes de órgãos ou temas — órgãos com nomes parecidos podem tratar de
+          matérias completamente diferentes.
+        </div>
+      </>
     ),
   },
 ]

@@ -212,6 +212,15 @@ competências do RO; 19 dos 21 órgãos; `emg`/`comissoes` sem equivalente = est
 Spec `2026-07-22-cockpit-curadoria-conferencia-decisoes-design.md` (Fases 2/3 pendentes:
 decisões do Obsidian no sistema + registrar/aplicar).
 
+**Fase 3 (registrar/aplicar, 2026-07-23):** decisões registradas pelo sistema na coleção
+`decisions` (admin), com `finalText` no dispositivo alvo (redação, cenário ativo, alvo
+apontado manualmente — nunca de-para automático) ou ficha de aplicação (estrutural);
+Conferência persiste em `conferencia` (membro logado); overlay `applyFinalsToArticles`
+(`src/lib/minutaFinals.js`) aplica textos finais nos 2 Wizards e no .docx (logado);
+`encodeFirestoreId` (dispositivoId.js) na fronteira Firestore (editId tem `/`);
+exportar decisões (aba Decisões, admin) + `scripts/aplicar_decisoes_vault.py` devolve ao
+vault (conflito reporta, idempotente). Guia p/ analista: Manual seção `#cockpit`.
+
 **Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (16 temas),
 `/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`, e **Subsídio**
 (`/minuta/subsidio`, `/regulamento/subsidio` — destravados 22/07/2026; o comparativo do

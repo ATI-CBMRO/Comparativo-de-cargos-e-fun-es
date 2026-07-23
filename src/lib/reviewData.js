@@ -4,6 +4,7 @@ import {
   arrayUnion, arrayRemove,
 } from 'firebase/firestore'
 import { db } from './firebase.js'
+import { encodeFirestoreId, decodeFirestoreId } from './dispositivoId.js'
 
 const COL = 'suggestions'
 const COL_FINAL = 'finalTexts'
@@ -57,7 +58,7 @@ export function subscribeFinalTexts(onChange, onError) {
   return onSnapshot(collection(db, COL_FINAL),
     (snap) => {
       const map = new Map()
-      snap.docs.forEach(d => map.set(d.id, d.data()))
+      snap.docs.forEach(d => map.set(decodeFirestoreId(d.id), d.data()))
       onChange(map)
     },
     (err) => { if (onError) onError(err) },
@@ -65,7 +66,7 @@ export function subscribeFinalTexts(onChange, onError) {
 }
 
 export async function saveFinalText(dispositivoId, { texto, status, autor }) {
-  await setDoc(doc(db, COL_FINAL, dispositivoId), {
+  await setDoc(doc(db, COL_FINAL, encodeFirestoreId(dispositivoId)), {
     texto: texto.trim(),
     status,
     atualizadoPor: autor.nome,

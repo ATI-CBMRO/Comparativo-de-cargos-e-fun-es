@@ -5,6 +5,10 @@ import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { fetchJson } from '../lib/dataCache.js'
 import { useScenario } from '../context/ScenarioContext.jsx'
 import { scenarioDbUrl } from '../lib/scenario.js'
+import { useAuth } from '../lib/auth.jsx'
+import { subscribeFinalTexts } from '../lib/reviewData.js'
+import { filterFinalsByDoc, filterFinalsByScenario } from '../lib/reviewGroup.js'
+import { applyFinalsToArticles } from '../lib/minutaFinals.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -87,6 +91,17 @@ export default function MinutaWizard() {
   const [generating, setGenerating] = useState(false)
 
   const { cenario } = useScenario()
+  const { user } = useAuth()
+  const [finals, setFinals] = useState(null)
+
+  useEffect(() => {
+    if (!user) { setFinals(null); return undefined }
+    return subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e))
+  }, [user])
+  const finalsDoDoc = useMemo(() => {
+    if (!finals) return null
+    return filterFinalsByScenario(filterFinalsByDoc(finals, 'ri'), cenario)
+  }, [finals, cenario])
 
   useEffect(() => {
     setLoading(true)
@@ -175,6 +190,8 @@ export default function MinutaWizard() {
         edits,
         isExcluded,
         subtitle: `Minuta de Regimento Interno — ${data.title}`,
+        finals: finalsDoDoc,
+        skipEditIds,
       })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
@@ -207,6 +224,8 @@ export default function MinutaWizard() {
   }
 
   const articles = buildArticles(data, edits, isExcluded)
+  const skipEditIds = new Set(Object.keys(edits))
+  const { articles: articlesFinais, appliedCount } = applyFinalsToArticles(articles, finalsDoDoc, { skipEditIds })
   const renderedAdvanced = new Set()
 
   function scrollTo(id) {
@@ -265,6 +284,12 @@ export default function MinutaWizard() {
         <p style={{ textAlign: 'justify', margin: 0, flex: 1, textIndent: art.incisos.length ? 0 : '1.25em' }}>
           <strong>{articleLabel(art.number)}</strong> {art.caput}
         </p>
+        {art.hasFinal && (
+          <span title="Texto final aplicado (decisão registrada no sistema)" style={{
+            flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 3, padding: '2px 7px',
+            borderRadius: 5, background: '#d9f0e2', color: '#0c6b35', fontSize: 11, fontWeight: 600,
+          }}><Check size={11} /> final aplicado</span>
+        )}
         <button onClick={() => openAdvanced(art.editId)} title="Editar texto desta seção" style={{
           flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
           border: '1px solid var(--border-card)', borderRadius: 5, background: '#fff', cursor: 'pointer',
@@ -377,6 +402,8 @@ export default function MinutaWizard() {
                     {key}
                   </label>
                 ))}
+                {appliedCount > 0 && <span className="section-bar-badge">{appliedCount} texto(s) final(is) aplicado(s)</span>}
+                {!user && <span className="wiz-finais-aviso">Entre no sistema para ver os textos finais aplicados.</span>}
                 <span style={{ marginLeft: 'auto', display: 'inline-flex', gap: 8 }}>
                   <button onClick={() => setAllSources(true)} style={chipBtn}>marcar todas</button>
                   <button onClick={() => setAllSources(false)} style={chipBtn}>desmarcar todas</button>
@@ -392,7 +419,7 @@ export default function MinutaWizard() {
                 border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: '20px 24px',
                 fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 14, lineHeight: 1.7, color: 'var(--doc-ink)',
               }}>
-                {articles.map(art => <div key={art.number} style={{ marginBottom: 8 }}>{renderArticle(art)}</div>)}
+                {articlesFinais.map(art => <div key={art.number} style={{ marginBottom: 8 }}>{renderArticle(art)}</div>)}
               </div>
 
               <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 18 }}>
@@ -414,7 +441,7 @@ export default function MinutaWizard() {
           <div style={{ maxWidth: 820 }}>
             <h3 style={{ color: 'var(--navy-850)', marginBottom: 16, fontSize: 17 }}>Resumo da minuta — {data.title}</h3>
             <div style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 24, marginBottom: 4, maxHeight: 520, overflow: 'auto' }}>
-              <PlainPreview articles={articles} />
+              <PlainPreview articles={articlesFinais} />
             </div>
             <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
               <button onClick={() => setStep(1)} style={{

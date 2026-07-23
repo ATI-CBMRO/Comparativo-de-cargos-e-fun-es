@@ -20,3 +20,14 @@ export function parseDispositivoId(id) {
   const n = Number(tail)
   return { editId, parte: Number.isInteger(n) ? n : null }
 }
+
+// Fronteira Firestore: ids de documento não aceitam '/', mas todo editId tem
+// (ex.: organ:cg/competencia). Troca por '|' (ausente em todos os editIds — verificado
+// nos 4 structure.json em 2026-07-23). Dentro do app os ids circulam SEM encoding.
+export function encodeFirestoreId(id) {
+  return String(id).replaceAll('/', '|')
+}
+
+export function decodeFirestoreId(id) {
+  return String(id).replaceAll('|', '/')
+}

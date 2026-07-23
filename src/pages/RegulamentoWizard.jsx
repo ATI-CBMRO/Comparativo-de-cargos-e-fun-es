@@ -7,6 +7,10 @@ import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { useScenario } from '../context/ScenarioContext.jsx'
 import { scenarioDbUrl } from '../lib/scenario.js'
 import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
+import { useAuth } from '../lib/auth.jsx'
+import { subscribeFinalTexts } from '../lib/reviewData.js'
+import { filterFinalsByDoc, filterFinalsByScenario } from '../lib/reviewGroup.js'
+import { applyFinalsToArticles } from '../lib/minutaFinals.js'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -82,6 +86,17 @@ export default function RegulamentoWizard() {
   const [generating, setGenerating] = useState(false)
 
   const { cenario } = useScenario()
+  const { user } = useAuth()
+  const [finals, setFinals] = useState(null)
+
+  useEffect(() => {
+    if (!user) { setFinals(null); return undefined }
+    return subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e))
+  }, [user])
+  const finalsDoDoc = useMemo(() => {
+    if (!finals) return null
+    return filterFinalsByScenario(filterFinalsByDoc(finals, 'reg'), cenario)
+  }, [finals, cenario])
 
   useEffect(() => {
     setLoading(true)
@@ -171,6 +186,8 @@ export default function RegulamentoWizard() {
         edits,
         isExcluded,
         subtitle: 'Minuta de Regulamento Geral — gerada a partir dos regulamentos de 9 CBMs',
+        finals: finalsDoDoc,
+        skipEditIds,
       })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
@@ -203,6 +220,8 @@ export default function RegulamentoWizard() {
   }
 
   const articles = buildArticles(data, edits, isExcluded)
+  const skipEditIds = new Set(Object.keys(edits))
+  const { articles: articlesFinais, appliedCount } = applyFinalsToArticles(articles, finalsDoDoc, { skipEditIds })
   const renderedAdvanced = new Set()
   const parteDe = parteByChapterTitle(data)
 
@@ -273,6 +292,12 @@ export default function RegulamentoWizard() {
         <p style={{ textAlign: 'justify', margin: 0, flex: 1, textIndent: art.incisos.length ? 0 : '1.25em' }}>
           <strong>{articleLabel(art.number)}</strong> {art.caput}
         </p>
+        {art.hasFinal && (
+          <span title="Texto final aplicado (decisão registrada no sistema)" style={{
+            flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 3, padding: '2px 7px',
+            borderRadius: 5, background: '#d9f0e2', color: '#0c6b35', fontSize: 11, fontWeight: 600,
+          }}><Check size={11} /> final aplicado</span>
+        )}
         <button onClick={() => openAdvanced(art.editId)} title="Editar texto desta seção" style={{
           flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
           border: '1px solid var(--border-card)', borderRadius: 5, background: '#fff', cursor: 'pointer',
@@ -387,6 +412,8 @@ export default function RegulamentoWizard() {
                     {key}
                   </label>
                 ))}
+                {appliedCount > 0 && <span className="section-bar-badge">{appliedCount} texto(s) final(is) aplicado(s)</span>}
+                {!user && <span className="wiz-finais-aviso">Entre no sistema para ver os textos finais aplicados.</span>}
                 <span style={{ marginLeft: 'auto', display: 'inline-flex', gap: 8 }}>
                   <button onClick={() => setAllSources(true)} style={chipBtn}>marcar todas</button>
                   <button onClick={() => setAllSources(false)} style={chipBtn}>desmarcar todas</button>
@@ -404,7 +431,7 @@ export default function RegulamentoWizard() {
               }}>
                 {(() => {
                   let ultimaParte = null
-                  return articles.map(art => {
+                  return articlesFinais.map(art => {
                     const parte = art.chapterTitle ? parteDe[art.chapterTitle] : null
                     const faixa = parte && parte !== ultimaParte ? PARTE_HEADERS[parte] : null
                     if (parte) ultimaParte = parte
@@ -443,7 +470,7 @@ export default function RegulamentoWizard() {
           <div style={{ maxWidth: 820 }}>
             <h3 style={{ color: 'var(--navy-850)', marginBottom: 16, fontSize: 17 }}>Resumo da minuta — {data.title}</h3>
             <div style={{ border: '1px solid var(--border-card)', borderRadius: 8, background: '#fff', padding: 24, marginBottom: 4, maxHeight: 520, overflow: 'auto' }}>
-              <PlainPreview articles={articles} />
+              <PlainPreview articles={articlesFinais} />
             </div>
             <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
               <button onClick={() => setStep(1)} style={{

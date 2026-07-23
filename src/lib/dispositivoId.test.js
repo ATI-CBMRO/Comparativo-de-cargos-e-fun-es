@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { incisoDispositivoId, caputDispositivoId, parseDispositivoId } from './dispositivoId.js'
+import { incisoDispositivoId, caputDispositivoId, parseDispositivoId, encodeFirestoreId, decodeFirestoreId } from './dispositivoId.js'
 
 test('incisoDispositivoId monta editId#index', () => {
   assert.equal(incisoDispositivoId('cot-comp', 2), 'cot-comp#2')
@@ -28,4 +28,16 @@ test('parseDispositivoId sem "#" devolve o próprio id e parte nula', () => {
 
 test('parseDispositivoId com sufixo não numérico devolve parte nula', () => {
   assert.deepEqual(parseDispositivoId('cot-comp#abc'), { editId: 'cot-comp', parte: null })
+})
+
+test('encodeFirestoreId troca / por | e faz round-trip', () => {
+  const id = 'atual:organ:cg/competencia#caput'
+  const enc = encodeFirestoreId(id)
+  assert.ok(!enc.includes('/'))
+  assert.equal(enc, 'atual:organ:cg|competencia#caput')
+  assert.equal(decodeFirestoreId(enc), id)
+})
+
+test('encodeFirestoreId é no-op sem barra', () => {
+  assert.equal(encodeFirestoreId('reg:tema#3'), 'reg:tema#3')
 })

@@ -48,5 +48,15 @@ service cloud.firestore {
       allow read: if isMember();
       allow write: if isAdmin();
     }
+
+    match /decisions/{id} {
+      allow read: if isMember();
+      allow write: if isAdmin();
+    }
+
+    match /conferencia/{id} {
+      allow read: if isMember();
+      allow write: if isMember();
+    }
   }
 }

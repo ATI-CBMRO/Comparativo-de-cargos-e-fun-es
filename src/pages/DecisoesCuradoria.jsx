@@ -1,9 +1,17 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ClipboardList, Check, AlertTriangle, ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ClipboardList, Check, AlertTriangle, ChevronRight, BookOpen, Download } from 'lucide-react'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText } from '../lib/comparatorRender.jsx'
 import { decisoesDaTrilha, filtrarDecisoes, contarDecisoes } from '../lib/decisoes.js'
+import { useAuth } from '../lib/auth.jsx'
+import { useScenario } from '../context/ScenarioContext.jsx'
+import { subscribeDecisions, desfazerDecisao, marcarFichaAplicada } from '../lib/decisionsData.js'
+import { mergeDecisoes, pendenciasDeAplicacao } from '../lib/decisionsMerge.js'
+import { subscribeConferencia } from '../lib/conferenciaData.js'
+import { divergentesDe } from '../lib/conferenciaStatus.js'
+import RegistroDecisaoModal from '../components/RegistroDecisaoModal.jsx'
 
 const TITULO = { ri: 'Regimento Interno', reg: 'Regulamento Geral' }
 const FILTROS = [
@@ -13,18 +21,55 @@ const FILTROS = [
 ]
 
 export default function DecisoesCuradoria({ trilha = 'ri' }) {
+  const { user } = useAuth()
+  const { cenario } = useScenario()
+  const isAdmin = user?.role === 'admin'
   const [dados, setDados] = useState(null)
   const [error, setError] = useState(false)
   const [filtro, setFiltro] = useState('todas')
+  const [fbDecisoes, setFbDecisoes] = useState(null)
+  const [conf, setConf] = useState(null)
+  const [registrando, setRegistrando] = useState(null)
 
   useEffect(() => {
     setDados(null); setError(false)
     fetchJson('/database/decisoes_curadoria.json').then(setDados).catch(() => setError(true))
   }, [])
 
+  useEffect(() => {
+    if (!user) { setFbDecisoes(null); return undefined }
+    return subscribeDecisions(setFbDecisoes, console.error)
+  }, [user])
+
+  useEffect(() => {
+    if (!user) { setConf(null); return undefined }
+    return subscribeConferencia(setConf, console.error)
+  }, [user])
+
   const daTrilha = useMemo(() => decisoesDaTrilha(dados, trilha), [dados, trilha])
-  const contagem = useMemo(() => contarDecisoes(daTrilha), [daTrilha])
-  const lista = useMemo(() => filtrarDecisoes(daTrilha, filtro), [daTrilha, filtro])
+  const merged = useMemo(() => mergeDecisoes(daTrilha, fbDecisoes), [daTrilha, fbDecisoes])
+  const contagem = useMemo(() => contarDecisoes(merged), [merged])
+  const lista = useMemo(() => filtrarDecisoes(merged, filtro), [merged, filtro])
+  const pendencias = useMemo(() => pendenciasDeAplicacao(merged), [merged])
+  const divergentes = useMemo(() => divergentesDe(conf, trilha, cenario), [conf, trilha, cenario])
+
+  const exportar = () => {
+    const registradas = mergeDecisoes(dados?.decisoes ?? [], fbDecisoes).filter(d => d.statusDecisao === 'sistema')
+    if (registradas.length === 0) { window.alert('Nenhuma decisão registrada no sistema para exportar.'); return }
+    const payload = registradas.map(d => ({
+      id: d.id, tipo: d.registro.tipo, decisao: d.registro.decisao,
+      fonteEscolhida: d.registro.fonteEscolhida ?? null,
+      alvoDispositivoId: d.registro.alvoDispositivoId ?? null,
+      registradoPor: d.registro.registradoPor ?? null,
+      registradoEm: d.registro.registradoEm?.toDate?.()?.toISOString() ?? null,
+    }))
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = 'decisoes_export.json'
+    a.click()
+    URL.revokeObjectURL(a.href)
+  }
 
   if (error) {
     return (
@@ -48,41 +93,93 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
       </div>
 
       <div className="page-body">
-        <div className="dec-filtros no-print">
-          {FILTROS.map(f => (
-            <button
-              key={f.id}
-              className={`btn btn-ghost${filtro === f.id ? ' active' : ''}`}
-              onClick={() => setFiltro(f.id)}
-            >
-              {f.label}
-            </button>
-          ))}
+        <div className="dec-filtros no-print" style={{ display: 'flex', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            {FILTROS.map(f => (
+              <button
+                key={f.id}
+                className={`btn btn-ghost${filtro === f.id ? ' active' : ''}`}
+                onClick={() => setFiltro(f.id)}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <Link to="/manual#cockpit" className="btn btn-ghost"><BookOpen size={15} /> Como funciona</Link>
+            {isAdmin && (
+              <button className="btn btn-ghost" onClick={exportar}><Download size={15} /> Exportar decisões</button>
+            )}
+          </div>
         </div>
+
+        {(pendencias.length > 0 || divergentes.length > 0) && (
+          <div className="card dec-pendencias" style={{ padding: 16 }}>
+            <div className="rg-heading">Pendências de aplicação</div>
+            {pendencias.map(d => (
+              <div key={d.id} className="dec-pendencia-item">
+                <strong>{d.titulo}</strong> — {d.registro.ficha.oQueMuda} ({d.registro.ficha.onde})
+                {isAdmin && (
+                  <button className="btn btn-ghost" onClick={() => marcarFichaAplicada(d.id).catch(console.error)}>
+                    Marcar aplicada
+                  </button>
+                )}
+              </div>
+            ))}
+            {divergentes.map(({ key }) => (
+              <div key={key} className="dec-pendencia-item">Divergente — {key}</div>
+            ))}
+          </div>
+        )}
 
         {lista.length === 0 ? (
           <div className="card" style={{ padding: 24, textAlign: 'center', color: 'var(--text-muted)' }}>
             Nenhuma decisão neste filtro.
           </div>
         ) : (
-          lista.map(d => <DecisaoCard key={d.id} d={d} />)
+          lista.map(d => (
+            <DecisaoCard
+              key={d.id}
+              d={d}
+              isAdmin={isAdmin}
+              onRegistrar={() => setRegistrando(d)}
+              onDesfazer={() => {
+                if (window.confirm('Desfazer o registro? O texto final aplicado (se houver) permanece e pode ser revisto pela Revisão.')) {
+                  desfazerDecisao(d.id).catch(console.error)
+                }
+              }}
+            />
+          ))
         )}
       </div>
+
+      {registrando && (
+        <RegistroDecisaoModal
+          decisao={registrando}
+          trilha={trilha}
+          cenario={cenario}
+          autor={{ nome: user?.nome ?? user?.email }}
+          onClose={() => setRegistrando(null)}
+          onSaved={() => setRegistrando(null)}
+        />
+      )}
     </div>
   )
 }
 
-function DecisaoCard({ d }) {
+function DecisaoCard({ d, isAdmin, onRegistrar, onDesfazer }) {
   const [abertas, setAbertas] = useState({}) // índice da candidata -> aberta
   const [cmpAberta, setCmpAberta] = useState(false)
-  const decidida = d.decidido
+  const status = d.statusDecisao ?? (d.decidido ? 'vault' : 'pendente')
 
   return (
-    <div className={`card dec-card${decidida ? ' dec-card-ok' : ''}`} style={{ marginBottom: 14, padding: 16 }}>
+    <div className={`card dec-card${status !== 'pendente' ? ' dec-card-ok' : ''}`} style={{ marginBottom: 14, padding: 16 }}>
       <div className="dec-card-head">
         <h3 className="dec-titulo">{d.titulo}</h3>
-        <span className={`dec-selo ${decidida ? 'dec-selo-ok' : 'dec-selo-pend'}`}>
-          {decidida ? <><Check size={13} /> Decidida</> : <><AlertTriangle size={13} /> Pendente</>}
+        <span className={`dec-selo ${status === 'sistema' ? 'dec-selo-sys' : status === 'vault' ? 'dec-selo-ok' : 'dec-selo-pend'}`}>
+          {status === 'sistema' && <><Check size={13} /> Decidida no sistema</>}
+          {status === 'vault' && <><Check size={13} /> Decidida no vault</>}
+          {status === 'pendente' && <><AlertTriangle size={13} /> Pendente</>}
         </span>
       </div>
       <p className="dec-questao">{d.questao}</p>
@@ -122,10 +219,35 @@ function DecisaoCard({ d }) {
         </div>
       )}
 
-      {decidida && d.decisao && (
+      {status === 'vault' && d.decisao && (
         <div className="dec-decisao">
           <div className="rg-heading">Decisão CBMRO</div>
           <p className="rg-caput">{d.decisao}</p>
+        </div>
+      )}
+
+      {status === 'sistema' && d.registro && (
+        <div className="dec-decisao">
+          <div className="rg-heading">Decisão CBMRO</div>
+          <p className="rg-caput">{d.registro.decisao}</p>
+          <p className="dec-leitura">
+            <strong>Fonte:</strong> {d.registro.fonteEscolhida} · <strong>Tipo:</strong> {d.registro.tipo}
+          </p>
+          {d.registro.tipo === 'estrutural' && d.registro.ficha && (
+            <p className="dec-leitura">
+              <strong>Ficha:</strong> {d.registro.ficha.oQueMuda} ({d.registro.ficha.onde}) — {d.registro.ficha.status}
+            </p>
+          )}
+        </div>
+      )}
+
+      {isAdmin && (
+        <div className="decm-acoes" style={{ marginTop: 12 }}>
+          {status === 'sistema' ? (
+            <button className="btn btn-ghost" onClick={onDesfazer}>Desfazer</button>
+          ) : (
+            <button className="btn btn-ghost" onClick={onRegistrar}>Registrar decisão</button>
+          )}
         </div>
       )}
     </div>

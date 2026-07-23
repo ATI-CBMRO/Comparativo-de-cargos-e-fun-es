@@ -5,8 +5,9 @@ import {
 } from 'docx'
 import { buildArticles, articleLabel, romanize } from './minutaArticles.js'
 import { PARTE_HEADERS, parteByChapterTitle } from './regulamentoPartes.js'
+import { applyFinalsToArticles } from './minutaFinals.js'
 
-export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () => false, subtitle }) {
+export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () => false, subtitle, finals = null, skipEditIds }) {
   const dateStr = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
 
   let imageData = null
@@ -40,8 +41,11 @@ export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () =
   const parteDe = parteByChapterTitle(structure)
   let ultimaParte = null
   const articles = buildArticles(structure, edits, isExcluded)
+  const withFinals = finals
+    ? applyFinalsToArticles(articles, finals, { skipEditIds: skipEditIds ?? new Set(Object.keys(edits)) }).articles
+    : articles
   let chapterSeen = false
-  articles.forEach(art => {
+  withFinals.forEach(art => {
     if (art.chapterTitle) {
       const parte = parteDe[art.chapterTitle]
       const novaParte = Boolean(parte) && parte !== ultimaParte
