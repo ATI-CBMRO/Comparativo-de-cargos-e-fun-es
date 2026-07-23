@@ -78,6 +78,14 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **"Ver referências" no popup de Revisão** (23/07/2026): botão retrátil "Ver
+  referências (N)" no cabeçalho do popup (`RevisaoModal.jsx`) mostra o Bloco D (excertos de
+  outros estados) do capítulo/órgão do dispositivo aberto — desabilitado quando N=0. UI
+  extraída de `ConferenciaLinear.jsx` pro componente compartilhado
+  `AlternativesPanel.jsx` (sem mudar aquela tela). Prova visual real: DPO Art. 57 → 2
+  referências (DF/PA, já com o texto correto pós-fix da manhã); tema `uniformes-apresentacao`
+  → 0 referências, botão cinza. 3 tasks via subagent-driven-development, todas Approved.
+  Spec/plano em `docs/superpowers/*/2026-07-23-revisao-ver-referencias*`.
 - [x] **Auditoria Rodada 3 — falsos verdes e falhas silenciosas** (23/07/2026): (a) classe
   do MyFOP encontrada de verdade — incisos de seção EDITADA são re-indexados 0..n e o
   texto final `editId#N` era aplicado no inciso ERRADO em silêncio; corrigido
