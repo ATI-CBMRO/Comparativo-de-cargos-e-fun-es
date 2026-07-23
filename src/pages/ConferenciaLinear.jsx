@@ -53,7 +53,10 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
   const marcar = (item) => (v) => {
     const key = confKey(item.dispositivo)
     setStatusLocal(m => { const n = new Map(m); if (v == null) n.delete(key); else n.set(key, v); return n })
-    if (user) saveConferenciaStatus(key, v, { nome: user.nome ?? user.email }).catch(e => console.error('Erro ao salvar conferência:', e))
+    if (user) saveConferenciaStatus(key, v, { nome: user.nome ?? user.email }).catch(e => {
+      console.error('Erro ao salvar conferência:', e)
+      window.alert('Não foi possível salvar essa conferência agora. Tente novamente.')
+    })
   }
 
   if (error) {

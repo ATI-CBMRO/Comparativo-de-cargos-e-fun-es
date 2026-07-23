@@ -120,7 +120,10 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
               <div key={d.id} className="dec-pendencia-item">
                 <strong>{d.titulo}</strong> — {d.registro.ficha.oQueMuda} ({d.registro.ficha.onde})
                 {isAdmin && (
-                  <button className="btn btn-ghost" onClick={() => marcarFichaAplicada(d.id).catch(console.error)}>
+                  <button className="btn btn-ghost" onClick={() => marcarFichaAplicada(d.id).catch(e => {
+                    console.error('Erro ao marcar ficha como aplicada:', e)
+                    window.alert('Não foi possível marcar como aplicada agora. Tente novamente.')
+                  })}>
                     Marcar aplicada
                   </button>
                 )}
@@ -145,7 +148,10 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
               onRegistrar={() => setRegistrando(d)}
               onDesfazer={() => {
                 if (window.confirm('Desfazer o registro? O texto final aplicado (se houver) permanece e pode ser revisto pela Revisão.')) {
-                  desfazerDecisao(d.id).catch(console.error)
+                  desfazerDecisao(d.id).catch(e => {
+                    console.error('Erro ao desfazer decisão:', e)
+                    window.alert('Não foi possível desfazer o registro agora. Tente novamente.')
+                  })
                 }
               }}
             />
