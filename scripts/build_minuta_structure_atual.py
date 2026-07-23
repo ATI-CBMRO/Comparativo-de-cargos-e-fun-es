@@ -32,6 +32,20 @@ OUT_JSON = BASE_DIR / "database" / "atual" / "minuta_structure.json"
 
 TITLE = "DO REGIMENTO INTERNO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO) — LOB ATUAL"
 
+# --- Enriquecimento de conferência: reaproveita o Bloco D verbatim da futura ---
+# (as referências de outros estados independem do cenário do RO). Só o campo
+# 'alternatives'; NUNCA as competências do RO. de-para a validar pelo Wândrio.
+DEPARA_BLOCO_D = {
+    "cg":"cg","condeg":"condeg","assessorias":"assessorias","corregedoria":"corregedoria",
+    "dp":"dp","deei":"deei","cat":"cat","dlog":"dlog",
+    "ajudancia":"ag","gabinete":"gab-cg","cepdec":"depdec","dint":"cint","cpof":"dpof",
+    "dcs":"ccs","dinf":"cinf","cob1":"crbm","cob2":"crbm","coa":"boa","gbs":"bbs",
+}
+def _bloco_d_futura():
+    fut = json.loads((BASE_DIR / "database" / "minuta_structure.json").read_text(encoding="utf-8"))
+    return {c.get("organKey"): (c.get("alternatives") or {})
+            for c in fut["chapters"] if c.get("kind") == "organ"}
+
 # Ordem dos capítulos do cenário atual (topo → menor fração), conforme o organograma
 # oficial do CBMRO. Fase 2A: Comando-Geral. Fase 2B — lote 1: demais Órgãos de Direção.
 # (organ_key, CHAPTER_TITLE, artigo_definido)
@@ -97,9 +111,9 @@ def _cargos_atual(organ):
     return sections
 
 
-def build_organ_chapter_atual(organ_key, chapter_title, organ):
+def build_organ_chapter_atual(organ_key, chapter_title, organ, bloco_d=None):
     """Monta o capítulo do órgão usando SÓ dados do próprio CBMRO — sem
-    enriquecimento e com alternatives={} (nada da LOB futura)."""
+    enriquecimento de competências, mas com alternatives do Bloco D da futura se houver."""
     abbr = organ.get("abbreviation") or organ_key.upper()
     fin_section = B.build_finalidade_section(organ)
     sections = [fin_section]
@@ -118,11 +132,19 @@ def build_organ_chapter_atual(organ_key, chapter_title, organ):
     for s in sections:
         s["editId"] = f"{chapter_id}/{s['id']}"
 
+    # Enriquecimento de Bloco D: reaproveita o campo alternatives verbatim da futura
+    alternatives = {}
+    if bloco_d:
+        fk = DEPARA_BLOCO_D.get(organ_key)
+        alt = bloco_d.get(fk) if fk else None
+        if alt:
+            alternatives = alt  # cópia verbatim; NÃO tocar em sections
+
     return {
         "id": chapter_id, "kind": "organ", "chapterTitle": chapter_title,
         "organKey": organ_key, "label": organ.get("name", ""), "abbr": abbr,
         "sections": sections,
-        "alternatives": {},  # cenário atual: sem Bloco-D da futura
+        "alternatives": alternatives,
     }
 
 
@@ -164,6 +186,7 @@ def build_command_chart_atual(chapters):
 
 def main():
     organs = json.loads(RO_JSON.read_text(encoding="utf-8")).get("organs", {})
+    bloco_d = _bloco_d_futura()  # carrega uma vez; as alternativas independem do cenário do RO
 
     chapters = []
     for organ_key, chapter_title, _art in ATUAL_ORGAN_ORDER:
@@ -171,7 +194,7 @@ def main():
         if not o:
             print(f"  ! órgão ausente no ro.json (atual): {organ_key} — pulando")
             continue
-        chapters.append(build_organ_chapter_atual(organ_key, chapter_title, o))
+        chapters.append(build_organ_chapter_atual(organ_key, chapter_title, o, bloco_d))
 
     output = {
         "generated_by": "scripts/build_minuta_structure_atual.py",
