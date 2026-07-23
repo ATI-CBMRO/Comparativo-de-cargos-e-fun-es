@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { AlternativesPanel } from './AlternativesPanel.jsx'
 
 function formataData(criadoEm) {
   if (!criadoEm?.toDate) return ''
@@ -8,7 +9,7 @@ function formataData(criadoEm) {
 }
 
 export default function RevisaoModal({
-  dispositivo, suggestions, finalText, user,
+  dispositivo, alternatives, suggestions, finalText, user,
   onAdd, onToggleLike, onDelete, onSetStatus, onSaveFinal, onGerarProposta, onClose,
 }) {
   const isAdmin = user.role === 'admin'
@@ -18,8 +19,12 @@ export default function RevisaoModal({
   const [propostaIA, setPropostaIA] = useState(null)
   const [gerando, setGerando] = useState(false)
   const [erroIA, setErroIA] = useState('')
+  const [mostrarRefs, setMostrarRefs] = useState(false)
+  const [ufRef, setUfRef] = useState(null)
+  const numRefs = Object.keys(alternatives ?? {}).length
 
   useEffect(() => { setFinal(finalText?.texto ?? '') }, [finalText, dispositivo.id])
+  useEffect(() => { setMostrarRefs(false); setUfRef(null) }, [dispositivo.id])
 
   const enviar = async (e) => {
     e.preventDefault()
@@ -56,9 +61,23 @@ export default function RevisaoModal({
             <div className="rev-mhead-lbl">● Em discussão</div>
             <div className="rev-mhead-ref">{dispositivo.label}</div>
             <div className="rev-discussao">{dispositivo.trecho}</div>
+            <button
+              type="button"
+              className="rev-refs-toggle"
+              disabled={numRefs === 0}
+              title={numRefs === 0 ? 'Nenhuma referência de outro estado capturada para este órgão/tema ainda' : ''}
+              onClick={() => setMostrarRefs(v => !v)}
+            >
+              {mostrarRefs ? 'Ocultar referências' : `Ver referências (${numRefs})`}
+            </button>
           </div>
           <button className="rev-modal-x" onClick={onClose} aria-label="Fechar">✕</button>
         </div>
+        {mostrarRefs && numRefs > 0 && (
+          <div className="rev-refs-panel">
+            <AlternativesPanel alternatives={alternatives} selectedUf={ufRef} onSelectUf={setUfRef} />
+          </div>
+        )}
 
         <div className="rev-cols">
           {/* Coluna esquerda: sugestões */}

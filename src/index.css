@@ -2415,6 +2415,13 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .rev-discussao { border-left: 4px solid #c8102e; background: #fff; border-radius: 0 8px 8px 0;
   padding: 10px 14px; font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.6; color: #1a1a1a; }
 .rev-modal-x { margin-left: auto; background: none; border: none; cursor: pointer; color: #5a667f; align-self: flex-start; font-size: 18px; }
+.rev-refs-toggle {
+  margin-top: 8px; padding: 5px 12px; border-radius: 6px; border: 1px solid #c8102e;
+  background: #fff; color: #c8102e; font-size: 12px; font-weight: 700; cursor: pointer;
+}
+.rev-refs-toggle:hover:not(:disabled) { background: #fdeceb; }
+.rev-refs-toggle:disabled { border-color: #c7cede; color: #9aa3ba; cursor: not-allowed; }
+.rev-refs-panel { padding: 14px 20px; border-bottom: 1px solid #e3e8f0; background: #fbfcfe; }
 
 /* Corpo em duas colunas */
 .rev-cols { display: flex; gap: 18px; padding: 16px 20px; overflow: auto; }
