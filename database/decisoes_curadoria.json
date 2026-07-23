@@ -1,0 +1,2036 @@
+{
+  "generated_by": "scripts/build_decisoes_curadoria.py",
+  "reconciliacao": {
+    "ri": {
+      "disco": 9,
+      "parseadas": 9
+    },
+    "reg": {
+      "disco": 27,
+      "parseadas": 27
+    }
+  },
+  "decisoes": [
+    {
+      "id": "Decisão — ri — assessorias — subordinacao-das-assessorias",
+      "trilha": "ri",
+      "key": "assessorias",
+      "chapterId": "organ:assessorias",
+      "titulo": "Decisão — RI — Assessorias — Subordinação das assessorias",
+      "questao": "A minuta do RO organiza \"Assessorias\" como um órgão de assessoramento autônomo, ao lado do Gabinete do Comandante-Geral (Órgão — gab-cg) — não subordinado a ele nem a outro órgão de apoio. As duas alternativas comparadas adotam modelos de subordinação diferentes entre si E diferentes do modelo do RO.",
+      "candidatas": [
+        {
+          "fonte": "Fonte — Minuta-RI-PA — Art. 69, §1º",
+          "verbatim": [
+            "As assessorias técnicas são voltadas a assuntos especializados atinentes às atribuições",
+            "dos órgãos de direção, apoio e execução da Corporação , mediante indicação do Chefe do",
+            "Departamento-Geral de Administração."
+          ],
+          "citacao": null,
+          "ocr": "nota: espaço antes da vírgula em \"Corporação , mediante\" reproduz OCR do PDF de origem — mantido tal como está no JSON.",
+          "leitura": null
+        },
+        {
+          "fonte": "Fonte — Minuta-RI-PA — Art. 69, §3º",
+          "verbatim": [
+            "Os assessores técnicos que não estejam lotados no departamento estarão subordinados",
+            "diretamente a respectiva chefia imediata."
+          ],
+          "citacao": null,
+          "ocr": null,
+          "leitura": null
+        },
+        {
+          "fonte": "Fonte — RI-RS — Art. 31 (caput)",
+          "verbatim": [
+            "Art. 31. Ao Gabinete do Comandante-Geral – GCG, órgão de assistência, de assessoramento,",
+            "suporte administrativo, de transmissão e fiscalização das ordens do Comandante -Geral – Cmt-G",
+            "e do Subcomandante-Geral – SCmt-G, competindo-lhe:"
+          ],
+          "citacao": null,
+          "ocr": "nota: espaço antes de \"-Geral\" em \"Comandante -Geral\" reproduz OCR do PDF de origem.",
+          "leitura": null
+        },
+        {
+          "fonte": "Fonte — RI-RS — Art. 47 (trecho)",
+          "verbatim": [
+            "...estruturar internamente o órgão que dirige, organizando o funcionamento dos serviços e",
+            "rotinas administrativas a cargo de cada uma das assessorias subordinadas..."
+          ],
+          "citacao": null,
+          "ocr": null,
+          "leitura": null
+        }
+      ],
+      "comparacao": [
+        "RO (minuta): Órgão próprio (\"Assessorias\"), separado do GAB/CG — Direto ao Comandante-Geral (sem vínculo hierárquico intermediário explícito no texto)",
+        "PA: \"Assessorias Técnicas\", capítulo próprio — Chefe do Departamento-Geral de Administração (órgão de apoio)",
+        "RS: Seções dentro do capítulo do GCG — Chefe de Gabinete do Comandante-Geral"
+      ],
+      "ligadas": [
+        "Órgão — assessorias",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — RI-RS",
+        "Órgão — gab-cg",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — RI-RS",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — bbs — fusao-busca-salvamento-emergencias-ambientais",
+      "trilha": "ri",
+      "key": "bbs",
+      "chapterId": "organ:bbs",
+      "titulo": "Decisão — ri — bbs — fusao-busca-salvamento-emergencias-ambientais",
+      "questao": "A minuta do RO trata Busca e Salvamento (Órgão — bbs) e Incêndio Florestal/ Emergências Ambientais (Órgão — bifea) como DOIS batalhões de execução separados. A fonte alternativa do PR (usada em Órgão — bbs) concentra as duas competências num ÚNICO órgão — o Grupo de Operações de Socorro Tático (GOST), subordinado diretamente ao Comandante-Geral. É uma divergência de estrutura (quantos órgãos existem para essas duas missões), não de redação — é preciso decidir se o CBMRO mantém os dois batalhões separados ou concentra as duas missões num único órgão, no modelo do PR.",
+      "candidatas": [
+        {
+          "fonte": "Paraná — Lei nº 22.206/2024, Art. 35, III (GOST — fusão busca/salvamento + emergências ambientais)",
+          "verbatim": [
+            "III - Grupo de Operações de Socorro Tático - GOST: equivalente a uma Companhia Independente de Bombeiro Militar - Cia. Ind. BM, subordinado diretamente ao Comandante-Geral, em apoio especializado às Unidades Operacionais, que é incumbido de:",
+            "a) executar a missão especializada de socorro tático em todas as atividades de bombeiro-militar;",
+            "b) realizar ações: 1. de atendimento às emergências ambientais e a sinistros decorrentes de desastres naturais e antropogênicos; 2. de ações de defesa civil;",
+            "d) desempenhar atividades de busca e salvamento, inclusive com a utilização de cães;"
+          ],
+          "citacao": "cf. CBMPR, Lei nº 22.206/2024, Art. 35, III",
+          "ocr": null,
+          "leitura": "o GOST é UM único órgão (equivalente a uma Companhia Independente), e a mesma"
+        },
+        {
+          "fonte": "Minuta do RO (referência — dois órgãos separados)",
+          "verbatim": [],
+          "citacao": null,
+          "ocr": null,
+          "leitura": null
+        }
+      ],
+      "comparacao": [
+        "O PR concentra num único órgão (GOST, subordinado direto ao Comandante-Geral) as duas",
+        "O DF, fonte alternativa do BIFEA (ver Órgão — bifea), mantém um órgão específico",
+        "Se o CBMRO adotar o modelo do PR, seria preciso fundir Órgão — bbs e Órgão — bifea em"
+      ],
+      "ligadas": [
+        "Órgão — bbs",
+        "Órgão — bifea",
+        "Fonte — LOB-PR",
+        "Fonte — RI-DF"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — cat — divisao-vistoria-e-projetos",
+      "trilha": "ri",
+      "key": "cat",
+      "chapterId": "organ:cat",
+      "titulo": "Decisão — ri — cat — divisao-vistoria-e-projetos",
+      "questao": "A minuta do RO reúne, numa ÚNICA coordenadoria (CAT, subordinada ao COT), tanto a vistoria/fiscalização de segurança contra incêndio quanto a análise de projetos técnicos. O Distrito Federal separa as duas matérias em DUAS diretorias distintas. É uma divergência de QUANTOS órgãos existem para a mesma matéria, não de redação — é preciso decidir se o CBMRO mantém a matéria unificada na CAT ou a desdobra em dois órgãos, como o DF.",
+      "candidatas": [
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020), Diretoria de Vistorias (matéria de vistoria/fiscalização)",
+          "verbatim": [
+            "Art. 251. À Diretoria de Vistorias, além das atribuições constantes no art. 120, compete:",
+            "I - fiscalizar as instalações de segurança contra incêndio e pânico de edificações, de acordo com a legislação específica;",
+            "III - credenciar e controlar as atividades de pessoas físicas e jurídicas relacionadas com os serviços de segurança contra incêndio e pânico no Distrito Federal;",
+            "IV - estudar, analisar, normatizar, supervisionar e executar a manutenção dos hidrantes urbanos no âmbito do DF, de acordo com as necessidades institucionais e da população;",
+            "V - aplicar penalidades relativas à segurança contra incêndio e pânico, de acordo com a legislação vigente;"
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 251",
+          "ocr": null,
+          "leitura": "a Diretoria de Vistorias do DF concentra fiscalização, credenciamento de"
+        },
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020), Diretoria de Estudos e Análise de Projetos (matéria de projetos)",
+          "verbatim": [
+            "Art. 264. À Diretoria de Estudos e Análise de Projetos, além das atribuições constantes no art. 120, compete:",
+            "I - analisar e aprovar projetos de instalações de segurança contra incêndio e pânico, de acordo com a legislação específica;",
+            "II - analisar e aprovar, em consulta prévia, projetos de arquitetura de edificações, de acordo com a legislação específica;",
+            "IV - elaborar e revisar as normas técnicas rel acionadas com os sistemas de prevenção e proteção contra incêndio e submetê-las ao DESEG;"
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 264",
+          "ocr": null,
+          "leitura": "a Diretoria de Estudos e Análise de Projetos do DF concentra análise/aprovação de"
+        },
+        {
+          "fonte": "RO — minuta (matéria unificada na CAT)",
+          "verbatim": [
+            "Proceder a análise de projetos, realizar investigação de incêndios, testes de materiais, vistorias e emitir pareceres técnicos, com autoridade para notificar, multar, embargar e interditar na forma da lei específica."
+          ],
+          "citacao": "cf. RO, minuta_structure.json, organ:cat/competencia",
+          "ocr": null,
+          "leitura": "o RO reúne análise de projetos E vistoria/fiscalização/poder de polícia (notificar/"
+        }
+      ],
+      "comparacao": [
+        "O DF separa as duas matérias em órgãos distintos (Diretoria de Vistorias × Diretoria de",
+        "O RO já prevê, internamente, seções separadas para cada matéria (Seção de Análise de Projetos",
+        "É preciso decidir se a CAT permanece como coordenadoria única (mantendo as seções internas"
+      ],
+      "ligadas": [
+        "Órgão — cat",
+        "Órgão — cot",
+        "Fonte — RI-DF"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — cat — nivel-hierarquico-besci",
+      "trilha": "ri",
+      "key": "cat",
+      "chapterId": "organ:cat",
+      "titulo": "Decisão — ri — cat — nivel-hierarquico-besci",
+      "questao": "A minuta do RO trata a matéria de segurança contra incêndio como uma COORDENADORIA (CAT) subordinada ao Comando de Operações Técnicas (COT). O Rio Grande do Sul trata a mesma matéria como um BATALHÃO (BESCI) de abrangência estadual, com dupla subordinação (operacional a um Departamento, administrativa direta ao Comandante-Geral). É uma divergência de NÍVEL hierárquico e de modelo de subordinação, não de redação — é preciso decidir o nível organizacional adequado para a matéria no CBMRO.",
+      "candidatas": [
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025), natureza e subordinação do BESCI",
+          "verbatim": [
+            "Art. 16. O Batalhão Especial Segurança Contra Incêndio – BESCI, comandado por Oficial Superior do Quadro de Oficiais de Estado Maior – QOEM, enquanto órgão de Execução com abrangência estadual, subordina-se operacionalmente ao Departamento de Segurança, Prevenção e Proteção Contra Incêndio - DSPCI, e enquanto órgão de Apoio , subordina-se ao Comandante -Geral, de autonomia administrativa, podendo dispor de:",
+            "I. Divisão Administrativa – DAdm/BESCI, compreendendo: 1) Seção Administrativa e Correição – SAdmC/DAdm, compreendendo: a. Agência Local de Inteligência – ALI/SAdmC; 2) Seção de Atendimento ao Público - SAP/DAdm, compreendendo: a. Setor de Protocolo – SetProt/SAP; b. Setor de Arquivamento – SetArq/SAP; e c. Central de Atendimento Técnico - AtTec/SAP;",
+            "II. Divisão de Análise de Planos de Prevenção e Proteção Contra Incêndio - DAPPCI/BESCI, compreendendo: 1) Seção de Análise de Planos Simplificados de Prevenção e Proteção Contra Incêndio - 2) Seção de Análise de Planos de Prevenção e Proteção Contra Incêndios na Forma Completa",
+            "III. Divisão de Vistoria e Fiscalização de Edificações - DVFE/BESCI, compreendendo: 1) Seção de Vistoria de Edificações - SVE/DVFE; e 2) Seção de Fiscalização - SFisc/DVFE."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 16",
+          "ocr": null,
+          "leitura": "o BESCI é um BATALHÃO (comandado por Oficial Superior), com abrangência"
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025), competência do BESCI",
+          "verbatim": [
+            "Art. 39. Ao Batalhão Especial Segurança Contra Incêndio - BESCI, órgão de Nível Departamental de Apoio e Execução, com abrangência estadual na sua área temática, subordinado operacionalmente ao Departamento de Segurança, Prevenção e Proteção Contra Incêndios - DSPCI, e enquanto órgão de Apoio, subordinado ao Comandante-Geral, de autonomia administrativa, compete:",
+            "III – Por meio da Divisão de Vistoria e Fiscalização de Edificações - DViFisc/BESCI, executar, em caráter subsidiário e de apoio às DSCI (nos CRBM) , SSeg (nos BBM) e SSCI (nas Companhias e menores destacados) das unidades de Bombeiro Militar , realizando vistorias ordinárias relacionadas ao licenciamento de edificações e fiscalizações em segurança contra incêndio, conforme legislação e as diretrizes do Departamento - DSPCI, em âmbito estadual;"
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 39",
+          "ocr": null,
+          "leitura": "o RS explicitamente chama o BESCI de \"órgão de Nível Departamental\" — um nível"
+        },
+        {
+          "fonte": "RO — minuta (CAT como coordenadoria subordinada ao COT)",
+          "verbatim": [
+            "Órgão de execução de atuação operacional ordinária, subordinado ao Comando de Operações Técnicas (COT), incumbido de estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico."
+          ],
+          "citacao": "cf. RO, minuta_structure.json, organ:cat/finalidade",
+          "ocr": null,
+          "leitura": "o RO posiciona a matéria como uma coordenadoria de execução, subordinada a um"
+        }
+      ],
+      "comparacao": [
+        "RS trata a matéria em nível de BATALHÃO estadual com dupla subordinação (operacional a um",
+        "A estrutura do RS pressupõe um \"Departamento de Segurança, Prevenção e Proteção Contra",
+        "É preciso decidir se o CBMRO mantém a CAT como coordenadoria (padrão atual da minuta) ou se"
+      ],
+      "ligadas": [
+        "Órgão — cat",
+        "Órgão — cot",
+        "Fonte — RI-RS",
+        "Decisão — ri — crbm — descentralizacao-seguranca-contra-incendio"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — corregedoria — requisito-especializacao-corregedor-geral",
+      "trilha": "ri",
+      "key": "corregedoria",
+      "chapterId": "organ:corregedoria",
+      "titulo": "Decisão — RI — corregedoria — requisito de especialização do Corregedor-Geral",
+      "questao": "A minuta do RO e o RI do Paraná (CBMPR) divergem sobre **quem pode ser Corregedor-Geral**: o RO não restringe por especialização dentro do quadro de oficiais; o PR restringe explicitamente a oficiais da linha **combatente**.",
+      "candidatas": [
+        {
+          "fonte": "RO (`Órgão — corregedoria`, seção \"Da Organização Interna\", `cf. ro`)",
+          "verbatim": [
+            "Corregedor-Geral (Oficial da ativa do último Posto — QOEMBM; indicado pelo CG e nomeado pelo",
+            "Governador; substituto imediato do Chefe do EMG)"
+          ],
+          "citacao": "cf. ro",
+          "ocr": null,
+          "leitura": null
+        },
+        {
+          "fonte": "Paraná (cf. CBMPR, RI (coletânea do portal), Art. 23)",
+          "verbatim": [
+            "Art. 23 A Corregedoria-Geral do Corpo de Bombeiros Militar do Paraná - CBMPR é o órgão",
+            "técnico, subordinado ao Comandante-Geral, com atuação em todo o Estado, com a finalidade de:",
+            "[...]",
+            "Parágrafo único. O Corregedor-Geral será indicado pelo Comandante-Geral e nomeado pelo",
+            "Governador do Estado, dentre os Coronéis Combatentes da ativa da Corporação."
+          ],
+          "citacao": "cf. CBMPR, RI (coletânea do portal), Art. 23",
+          "ocr": "Anotação fora da citação: \"QOEMBM\" no texto do RO é o Quadro de Oficiais Estado-Maior de Bombeiros Militar — quadro geral de oficiais, sem menção a uma especialização/linha específica dentro dele.",
+          "leitura": null
+        }
+      ],
+      "comparacao": [
+        "Ambos concordam no rito de nomeação (indicação do Comandante-Geral + nomeação do Governador) e no posto (o mais alto — \"último Posto\"/\"Coronéis\"). A divergência real está no **requisito de especialização**: o RO exige apenas que o oficial pertença ao quadro geral (QOEMBM) no último posto, sem exigir que seja da linha **combatente**; o PR exige expressamente que o Corregedor- Geral seja um Coronel **Combatente**, excluindo oficiais de outras especializações (ex.: saúde, administração) do último posto. Isso não é diferença de redação — é uma condição de elegibilidade ao cargo que muda quem pode ocupá-lo.",
+        "O DF (Art. 96) e Alagoas (Art. 29) não tratam do requisito de nomeação do Corregedor-Geral no trecho comparado — silêncio, não divergência."
+      ],
+      "ligadas": [],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — crbm — descentralizacao-seguranca-contra-incendio",
+      "trilha": "ri",
+      "key": "crbm",
+      "chapterId": "organ:crbm",
+      "titulo": "Decisão — ri — crbm — descentralizacao-seguranca-contra-incendio",
+      "questao": "A minuta do RO centraliza a competência de segurança contra incêndio e pânico (licenciamento, fiscalização, recursos administrativos de 2ª instância) na Coordenadoria de Atividades Técnicas (CAT, Órgão — cat), órgão de execução subordinado ao Comando de Operações Técnicas (COT) — a organização interna dos Comandos Regionais de Bombeiro Militar (Órgão — crbm) não tem seção própria de SCI. O Rio Grande do Sul organiza a matéria de forma estruturalmente diferente: cada Comando Regional (CRBM) tem sua PRÓPRIA Divisão de Segurança Contra Incêndio, com autoridade para licenciar, fiscalizar e decidir recursos de 2ª instância na circunscrição regional. É divergência de estrutura (qual órgão exerce a competência — central × regional), não de redação — é preciso decidir se o CBMRO mantém a centralização na CAT ou descentraliza parte da competência de SCI para os CRBM, nos moldes do RS.",
+      "candidatas": [
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025) (SCI descentralizada no CRBM)",
+          "verbatim": [
+            "III) Por meio de Divisão de Segurança Contra Incêndio – DSCI/xCRBM, gerenciar, controlar, padronizar e apoiar a execução d as atividades de licenciamento e fiscalização em segurança contra incêndio e de investigação de sinistros em sua respectiva área de responsabilidade territorial, em conformidade com as diretrizes do DSPCI , cabendo -lhe, ainda, controlar a regularidade documental e adimplência nos processos fiscalizatórios, gerenciar recursos administrativos de segunda instância, emitir autos de imposição de penalidade e realizar atos extraordinários de fiscalização, podendo receber competências adicionais por Resolução Técnica do DSPCI e Portaria do Comandante-Geral;",
+            "§ 6º Ao Chefe da Divisão de Segurança Contra Incêndio incumbe gerenciar, controlar e apoiar a execução das atividades de licenciamento e fiscalização em segurança contra incêndio e de investigação de sinistros em sua respectiva área de responsabilidade territorial, controlar a regularidade documental e adimplência n os processos de licenciamento e fiscalizatórios, analisar e exarar decisão sobre recursos administrativos de segunda instância, determinar a emissão de autos de imposição de penalidade e determinar a realização de fiscalizações extraordinárias, além de outras responsabilidades normativamente atribuídas."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 54, § 6º",
+          "ocr": "OCR do documento-fonte quebra \"nos\" em \"n os\" — reproduzido tal como está na fonte.",
+          "leitura": "confirma que o Chefe da Divisão de SCI regional decide, ele próprio, os recursos"
+        },
+        {
+          "fonte": "Rondônia — minuta do RO (organ:cat) (SCI centralizada)",
+          "verbatim": [
+            "Órgão de execução de atuação operacional ordinária, subordinado ao Comando de Operações Técnicas (COT), incumbido de estudar, analisar, exigir e fiscalizar as atividades pertinentes à segurança contra incêndio e pânico."
+          ],
+          "citacao": "cf. minuta do RO (organ:cat, seção \"Da Finalidade\")",
+          "ocr": null,
+          "leitura": "a minuta do RO trata a segurança contra incêndio como competência de UM único"
+        }
+      ],
+      "comparacao": [
+        "É a única fonte alternativa localizada para a organização interna deste órgão (Bloco D do",
+        "Aplicando o precedente do projeto (1 estado divergente vs. a escolha estrutural do RO já",
+        "Descentralizar exigiria criar uma nova seção na organização interna do CRBM (com poder"
+      ],
+      "ligadas": [
+        "Órgão — crbm",
+        "Órgão — cat",
+        "Fonte — RI-RS",
+        "Decisão — seguranca-contra-incendio — recurso-administrativo-2a-instancia",
+        "Decisão — ri — cat — nivel-hierarquico-besci"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — depdec — subordinacao-defesa-civil",
+      "trilha": "ri",
+      "key": "depdec",
+      "chapterId": "organ:depdec",
+      "titulo": "Decisão — ri — depdec — subordinacao-defesa-civil",
+      "questao": "A minuta do RO trata a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC, Órgão — depdec) como órgão INTERNO ao CBMRO — o Diretor-Geral da DEPDEC é o próprio Comandante-Geral, nato. Alagoas organiza a matéria de forma estruturalmente diferente: a Coordenadoria Estadual de Defesa Civil (CEDEC) do CBMAL é subordinada DIRETAMENTE ao Governador do Estado, fora da cadeia do CBM. É divergência de estrutura (a quem o órgão se subordina), não de redação — é preciso decidir se o CBMRO mantém a defesa civil internalizada no Comando-Geral ou adota o modelo de vínculo direto ao Governador.",
+      "candidatas": [
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001) (subordinação direta ao Governador)",
+          "verbatim": [
+            "§ 1º A Coordenadoria Estadual de Defesa Civil, com sua estrutura organizacional, terá",
+            "caráter permanente e será subordinada diretamente ao Governador do Estado."
+          ],
+          "citacao": "cf. CBMAL, RI, Art. 13",
+          "ocr": null,
+          "leitura": "o §1º do Art. 13 do RI de AL retira a CEDEC da cadeia de comando do CBM — ela é"
+        },
+        {
+          "fonte": "Rondônia — minuta do RO (organ:depdec) (órgão interno ao CBM)",
+          "verbatim": [
+            "DEPDEC tem a seguinte estrutura interna:",
+            "Diretor-Geral (Comandante-Geral do CBMRO — nato)",
+            "Diretor Estratégico-Operacional (Oficial do último posto — QOEMBM)",
+            "Adjunto",
+            "Seção Administrativa",
+            "Secretaria Executiva",
+            "Divisão de Apoio Administrativo e Financeiro",
+            "Divisão de Operações Emergenciais",
+            "Divisão de Minimização de Desastres"
+          ],
+          "citacao": "cf. minuta do RO (organ:depdec)",
+          "ocr": null,
+          "leitura": "a minuta do RO faz da DEPDEC um órgão de direção DENTRO do próprio CBMRO — o"
+        }
+      ],
+      "comparacao": [
+        "É a única fonte alternativa localizada para este órgão (Bloco D cobre só AL), mas o ponto",
+        "Aplicando o precedente do projeto (1 estado divergente vs. a escolha estrutural do RO já",
+        "Adotar o modelo de AL exigiria decreto/norma específica de vínculo institucional fora do"
+      ],
+      "ligadas": [
+        "Órgão — depdec",
+        "Fonte — RI-AL",
+        "Decisão — ri — doe — nivel-hierarquico-protecao-civil"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — dlog — fusao-logistica-financas",
+      "trilha": "ri",
+      "key": "dlog",
+      "chapterId": "organ:dlog",
+      "titulo": "Decisão — ri — dlog — fusao-logistica-financas",
+      "questao": "A minuta do RO trata Logística (Órgão — dlog) e Planejamento/Orçamento/ Finanças (Órgão — dpof) como DOIS órgãos de direção separados. O Paraná organiza as duas matérias num ÚNICO órgão (Diretoria de Apoio Logístico e Finanças). É uma divergência de estrutura (quantos órgãos existem), não de redação — é preciso decidir se o CBMRO mantém a separação ou funde as duas diretorias.",
+      "candidatas": [
+        {
+          "fonte": "Paraná — Lei nº 22.206/2024 (fusão logística + finanças)",
+          "verbatim": [
+            "A Diretoria de Apoio Logístico e Finanças é o órgão de direção setorial responsável por:",
+            "I - coordenação, controle e execução das atividades de logística;",
+            "II - suprimento, manutenção e controle patrimonial da Corporação;",
+            "III - planejamento, acompanhamento e execução orçamentária e financeira;",
+            "IV - atividades de controladoria e auditoria de recursos descentralizados."
+          ],
+          "citacao": "cf. CBMPR, Lei nº 22.206/2024, Art. 29",
+          "ocr": null,
+          "leitura": "os 4 incisos do PR misturam, no MESMO órgão e sem separação de seção/parágrafo,"
+        },
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020) (logística separada)",
+          "verbatim": [
+            "Art. 218. À Diretoria de Materiais e Serviços, além das atri buições constantes no art. 120, compete:",
+            "I - coordenar a gestão dos bens móveis, imóveis e semoventes;"
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 218",
+          "ocr": "OCR do documento-fonte quebra \"atribuições\" em \"atri buições\" — reproduzido tal como está na fonte.",
+          "leitura": "a Diretoria de Materiais e Serviços do DF trata só de logística/patrimônio — as"
+        },
+        {
+          "fonte": "Pará — MINUTA de RI, Decreto em tramitação 2026 (logística separada)",
+          "verbatim": [
+            "Art.163. Compete à Diretoria de Apoio Logístico (DAL), órgão de Direção Setorial subordinado ao Departamento-Geral de Administração (DGA): 63",
+            "I – planejar, normatizar e coordenar o funcionamento do sistema logístico do CBMPA;"
+          ],
+          "citacao": "cf. CBMPA, RI, Art. 163",
+          "ocr": "o \"63\" ao final do caput é resíduo de OCR — provável número de página do PDF de origem, sem relação com o texto normativo — reproduzido tal como está na fonte.",
+          "leitura": "a Diretoria de Apoio Logístico do PA também trata só de logística/patrimônio/"
+        }
+      ],
+      "comparacao": [
+        "DF e PA convergem entre si: cada um mantém logística e finanças como dois órgãos distintos",
+        "PR diverge dos dois: funde as duas competências num único órgão (DALF), sem seção interna",
+        "Se o CBMRO adotar o modelo do PR, seria preciso fundir Órgão — dlog e Órgão — dpof"
+      ],
+      "ligadas": [
+        "Órgão — dlog",
+        "Órgão — dpof",
+        "Fonte — RI-PR",
+        "Fonte — RI-DF",
+        "Fonte — Minuta-RI-PA"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ri — doe — nivel-hierarquico-protecao-civil",
+      "trilha": "ri",
+      "key": "doe",
+      "chapterId": "organ:doe",
+      "titulo": "Decisão — ri — doe — nivel-hierarquico-protecao-civil",
+      "questao": "o Distrito Federal inclui \"Grupamento de Proteção Civil (GPCIV)\" como uma das 6 unidades especializadas SUBORDINADAS ao Comando Especializado (equivalente à Órgão — doe na minuta do RO). A minuta do RO, por sua vez, trata Defesa/Proteção Civil como uma DIRETORIA DE DIREÇÃO própria e independente — Órgão — depdec (Diretoria Estadual de Proteção e Defesa Civil) — que não é subordinada à DOE nem a nenhum outro órgão de operações especializadas. É uma divergência de NÍVEL HIERÁRQUICO do mesmo assunto (proteção civil como diretoria autônoma vs. como unidade de execução dentro de um comando especializado), não uma questão de redação diferente.",
+      "candidatas": [
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020) (proteção civil como unidade subordinada)",
+          "verbatim": [
+            "Art. 488. São Unidades Especializadas subordinadas ao COESP:",
+            "I - Grupamento de Prevenção e Combate a Incêndio Urbano – GPCIU;",
+            "II - Grupamento de Busca e Salvamento – GBS;",
+            "III - Grupamento de Atendimento de Emergência Pré-Hospitalar – GAEPH;",
+            "IV - Grupamento de Proteção Ambiental – GPRAM;",
+            "V - Grupamento de Proteção Civil – GPCIV;",
+            "VI - Grupamento de Aviação Operacional – GAVOP."
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 488",
+          "ocr": null,
+          "leitura": "no modelo do DF, a Proteção Civil (GPCIV) é uma unidade de execução entre outras"
+        },
+        {
+          "fonte": "Minuta do RO (proteção civil como diretoria própria, fora da DOE)",
+          "verbatim": [],
+          "citacao": null,
+          "ocr": null,
+          "leitura": null
+        }
+      ],
+      "comparacao": [
+        "DF coloca a proteção civil DENTRO do comando de operações especializadas, no mesmo nível de",
+        "A minuta do RO já eleva a matéria a uma DIRETORIA DE DIREÇÃO própria e independente (DEPDEC),",
+        "Não há um segundo estado com alternativa cadastrada neste capítulo para arbitrar a",
+        "Se o CBMRO confirmar o modelo já adotado na minuta (DEPDEC autônoma), a organização do DF"
+      ],
+      "ligadas": [
+        "Órgão — doe",
+        "Órgão — depdec",
+        "Fonte — RI-DF",
+        "Decisão — ri — depdec — subordinacao-defesa-civil"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — atribuicoes-funcoes — modelo-cargo-nomeado-vs-nivel-generico",
+      "trilha": "reg",
+      "key": "atribuicoes-funcoes",
+      "chapterId": "reg:atribuicoes-funcoes",
+      "titulo": "Decisão — atribuicoes-funcoes — modelo-cargo-nomeado-vs-nivel-generico",
+      "questao": "Este capítulo deve listar as atribuições CARGO POR CARGO nomeado (um artigo para cada Diretor/Coordenador/Comandante do organograma, com incisos detalhados — como faz o Mato Grosso), ou deve usar uma CLÁUSULA GENÉRICA por nível hierárquico (chefe, subchefe, comandante regional/batalhão/companhia/pelotão), remetendo o detalhe de cada órgão para os capítulos de competências já definidos na Parte I — como fazem Goiás e Rio Grande do Sul?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "Compete ao Diretor de Administração Institucional:",
+            "I - assessorar o Comandante-Geral e colaborar com outros órgãos do Estado em assuntos da competência da Diretoria;",
+            "II - despachar com o Comandante-Geral, participar de reuniões com as Diretorias e, quando convocado, participar de reuniões com órgãos colegiados superiores;",
+            "III - aplicar penalidade aos seus subalternos;",
+            "IV - delegar competências ao Diretor Adjunto;"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 62",
+          "ocr": null,
+          "leitura": "modelo explícito e autocontido — quem lê só este capítulo já sabe exatamente o que compete a cada cargo, sem precisar consultar outro capítulo. Custo: são 29 artigos só para os cargos do organograma do CBMMT; para o CBMRO, replicar esse modelo significa reescrever (e manter sincronizado) o mesmo conteúdo que já existe nos capítulos de competências (Direção/Apoio/Execução) da Parte I, com risco de os dois textos divergirem com o tempo."
+        },
+        {
+          "fonte": "Goiás — Regimento dos Serviços Interno e Operacional",
+          "verbatim": [
+            "Art. 17. São atribuições de ocupantes da função de chefe/comandante de unidade da Corporação:",
+            "I – assessorar o órgão superior, conforme Quadro de Organização e Distribuição de Efetivo vigente, nos assuntos pertinentes à respectiva unidade;",
+            "II – propor medidas para implementação de desenvolvimento institucional na respectiva unidade;",
+            "[...]",
+            "XI - realizar outras atribuições previstas em leis e regulamentos."
+          ],
+          "citacao": "cf. CBMGO, Regimento dos Serviços Interno e Operacional, Art. 17",
+          "ocr": null,
+          "leitura": "uma única cláusula cobre qualquer chefe/comandante de qualquer unidade, sem precisar nomear o cargo. É enxuto e não duplica os capítulos de competências, mas exige que quem consulta o Regulamento já saiba identificar \"chefe/comandante\" no seu contexto — menos explícito para o público leigo."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 56. Aos Chefes de Seções e Setores , desdobramentos administrativos a partir do s órgãos de Direção, das Divisões e dos Batalhões, além das Companhias, Pelotões ou Grupos considerando que também poderão estar em municípios destacados, incumbe respectivamente chefiar, supervisionar, planejar, dirigir, orientar, coordenar e acompanhar as atividades da respectiva unidade organizacional, de acordo com as orientações, diretrizes administrativas e objetivos estratégicos estabelecidos pela autoridade máxima do respectivo órgão e transmitidas pelos demais níveis hierárquicos; participar de reuniões e de tomadas de decisões; orientar e elaborar relatórios; examinar documentos e proc essos de assuntos de sua competência; executar outras tarefas de mesma natureza e nível de complexidade associadas ao ambiente organizacional ou previstas em regulamento."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 56",
+          "ocr": null,
+          "leitura": "o RS confirma o mesmo caminho de GO — uma fórmula única (em prosa corrida, sem incisos) aplicada a QUALQUER nível de chefia, do setor ao batalhão. O RS soma a isso um limite de tempo de ocupação (Art. 40: máximo 6 anos para funções de decisão crítica), mas isso é tema à parte, sem contraponto nas demais fontes (ver \"Lacunas\" do tema)."
+        }
+      ],
+      "comparacao": [
+        "MT/PR (modelo cargo nomeado): mais explícito e autocontido, mas duplica o que os capítulos de competências da Parte I já dizem sobre cada órgão — risco de os dois textos divergirem quando um órgão for reorganizado e o outro capítulo não for atualizado junto.",
+        "GO/RS (modelo genérico por nível): mais enxuto, sem duplicação, mas depende de o leitor already saber enquadrar seu cargo como \"chefe\", \"subchefe\" ou \"comandante\" de que nível.",
+        "Para o CBMRO, que já tem capítulos próprios de competências por órgão (Parte I: Direção, Apoio/Assessoramento, Execução), o modelo genérico evita reescrever 29 artigos quase idênticos; o modelo MT só se justifica se o Comando quiser que este capítulo funcione como referência única e autossuficiente, independente da consulta aos demais capítulos.",
+        "Nenhuma fonte trata as duas questões (regra por cargo × regra por nível) como incompatíveis entre si — é uma escolha de técnica de redação, não uma contradição de conteúdo."
+      ],
+      "ligadas": [
+        "Tema — atribuicoes-funcoes",
+        "Fonte — Regulamento-MT",
+        "Fonte — Regimento-GO",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — central-operacoes-193 — estrutura-de-funcoes",
+      "trilha": "reg",
+      "key": "central-operacoes-193",
+      "chapterId": "reg:central-operacoes-193",
+      "titulo": "Decisão — central-operacoes-193 — estrutura-de-funcoes",
+      "questao": "Quantas funções o Centro de Operações/Teledespacho (193) do CBMRO deve ter? A primária (BA) usa 2 papéis (um oficial supervisor + um praça que despacha e atende); a alternativa (TO) usa 3 papéis (um oficial coordenador + um praça despachante + um praça atendente).",
+      "candidatas": [
+        {
+          "fonte": "Bahia (primária) — Norma Operacional nº 01/2021",
+          "verbatim": [
+            "O Supervisor do Teledespacho (CICOM) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CICOM) sob a égide do CBMBA, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos.",
+            "O Operador do Teledespacho deverá ser bombeiro militar empregado pelo Comando de Operações de Bombeiros Militares, competindo-lhe: [...]"
+          ],
+          "citacao": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18",
+          "ocr": null,
+          "leitura": "BA divide o serviço em 2 papéis: 1 oficial (Supervisor) que fiscaliza e coordena; 1 praça (Operador do Teledespacho) que acumula, na mesma pessoa, o atendimento da ligação e o despacho da viatura."
+        },
+        {
+          "fonte": "Tocantins — NGA do SIOP (Diretriz COB, Portaria nº 003/2019, Anexo 2)",
+          "verbatim": [
+            "Art. 12 É o Oficial Superior ou Oficial Intermediário responsável pela coordenação do serviço operacional do SIOP/BM, e tem como principais atribuições: [...]",
+            "Art. 13 É o Praça mais antigo que compõe o serviço operacional, com a responsabilidade principal de estabelecer a comunicação entre o SIOP/BM e o efetivo operacional, e a ele compete as seguintes atribuições: [...] IV – Receber as informações do Atendente e providenciar o despacho de viaturas e efetivo condizente a cada situação emergencial; [...] XI – Por necessidade do serviço, o Despachante pode acumular momentaneamente a função de Atendente;",
+            "Art. 14 Praça(s) que compõem(m) o serviço operacional, com a responsabilidade principal de atendimento às ligações da COCB, e a ele compete as seguintes atribuições: [...] VII – Por necessidade do serviço, o Atendente pode acumular momentaneamente a função de Despachante;"
+          ],
+          "citacao": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 14",
+          "ocr": null,
+          "leitura": "TO separa em 3 papéis: 1 oficial (Coordenador de Operações); 1 praça mais antigo (Despachante), que recebe a ligação já triada do Atendente e decide o envio da viatura; 1 praça (Atendente), que atende a ligação e faz o registro inicial. O próprio texto de TO prevê acúmulo eventual entre Despachante e Atendente \"por necessidade do serviço\" — ou seja, mesmo TO reconhece que os 2 papéis de praça podem, na prática, ser exercidos pela mesma pessoa."
+        }
+      ],
+      "comparacao": [
+        "BA já acumula formalmente atendimento + despacho num único cargo de praça; TO os separa como regra, mas permite acúmulo pontual \"por necessidade do serviço\" — na prática, a distância entre os dois modelos é menor do que parece à primeira vista.",
+        "Adotar o modelo de BA (2 papéis) simplifica a escala e exige menos efetivo fixo no 193 — mais compatível com um centro de operações de porte médio como o de RO.",
+        "Adotar o modelo de TO (3 papéis) dá mais especialização (quem atende o telefone não é quem decide o despacho) e cria uma camada extra de checagem antes do acionamento da viatura, mas demanda mais bombeiros militares dedicados exclusivamente ao 193.",
+        "Nenhuma das 2 fontes trata de jornada/folga nestes dispositivos específicos de estrutura de função (essa disputa está em Decisão — servico-operacional — despachante-atendente-193-folga); a escolha aqui é só sobre QUANTAS funções existem, não sobre a escala de cada uma."
+      ],
+      "ligadas": [
+        "Tema — central-operacoes-193",
+        "Fonte — NO-01-BA",
+        "Fonte — Diretriz-TO"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — competencias-direcao — estrutura-diretorias-administrativas",
+      "trilha": "reg",
+      "key": "competencias-direcao",
+      "chapterId": "reg:competencias-direcao",
+      "titulo": "Decisão — competencias-direcao — estrutura-diretorias-administrativas",
+      "questao": "A área administrativa do CBMRO (pessoal, logística, finanças, comunicação, TI, legislação, assistência social etc.) deve ficar toda sob UMA diretoria guarda-chuva (com Coordenadorias subordinadas a ela, modelo MT) ou organizada em DIRETORIAS PARALELAS e autônomas, cada uma ligada direto ao Comando-Geral (modelo AL)?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "A Diretoria de Administração Institucional é responsável por realizar planejamento, orientação, controle, coordenação, fiscalização e a execução das atividades relacionadas com a gestão administrativa, orçamentária, financeira, políticas de pessoal, assistência social e integração comunitária no âmbito da Corporação.",
+            "A Diretoria de Administração Institucional tem a seguinte constituição:",
+            "1 - Diretoria Adjunta;",
+            "2 - Secretaria;",
+            "3 - Coordenadoria de Gestão de Pessoas – BM/1:",
+            "4 - Coordenadoria de Assistência Social – BM/2:",
+            "6 - Coordenadoria de Logística e Patrimônio – BM/4:",
+            "9 - Coordenadoria de Tecnologia da Informação – BM/7:",
+            "11 - Coordenadoria de Finanças - BM/9:"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 60 e Art. 61 (trecho da constituição)",
+          "ocr": null,
+          "leitura": "MT concentra TODA a área administrativa — pessoal, assistência social, logística, comunicação, planejamento, TI, legislação, finanças e ajudância geral — sob uma única Diretoria (a DAI), que tem uma Diretoria Adjunta própria. As 10 áreas viram \"Coordenadorias\" (BM/1 a BM/10), um nível hierárquico abaixo da Diretoria. *Nota: `original_caput` do MT usa \"Corporação\" genericamente; a minuta do CBMRO adaptaria apenas topônimos, não a estrutura.*"
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 32. As Diretorias são órgãos de direção setorial, orga nizadas para atuarem de forma sistêmica, competindo-lhes o planejamento, a orientação normativa, a coordenação, a fiscalização, o controle e a execução das atividade s, dos programas e dos planos relativos às políticas e estratégias de recursos humanos, de logística, de finanças e de serviços técnicos.",
+            "Art. 33. A Diretoria de Recursos Humanos é o órgão central do sistema de recursos humanos do Corpo de Bombeiros Militar do E stado de Alagoas, competindo-lhe o estudo, o planejamento, a orientação normativa, a c oordenação, a supervisão, o controle e a execução das atividades relativas à gestão de pesso al e desenvolvimento de recursos humanos da Corporação, de acordo com as diretrizes da Secre taria de Estado de Administração, Recursos Humanos e Patrimônio."
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 32 e Art. 33",
+          "ocr": "as quebras \"orga nizadas\", \"atividade s\", \"E stado\", \"c oordenação\", \"pesso al\" e \"Secre taria\" são defeito de OCR da fonte, reproduzidas como estão",
+          "leitura": "AL trata \"Diretorias\" (plural) como o nível de direção setorial em si — não há uma diretoria única que as reúna. A Diretoria de Recursos Humanos é descrita como \"órgão CENTRAL do sistema de recursos humanos\", ao lado (não abaixo) das Diretorias de Material e Patrimônio, Finanças e Serviços Técnicos — cada uma um sistema próprio, sem intermediário comum."
+        }
+      ],
+      "comparacao": [
+        "É uma divergência de nível hierárquico, não de redação: no modelo MT existem 3 camadas entre o Comando-Geral e (por exemplo) a Seção de Contabilidade — Diretoria (DAI) → Coordenadoria (Finanças, BM/9) → Seção; no modelo AL existem só 2 — Diretoria (Finanças) → Seção.",
+        "O modelo MT concentra a interlocução com o Comando-Geral num único Diretor (o da DAI), que responde por 10 áreas — mais fácil de coordenar entre si, mas cria um \"gargalo\" de despacho e um cargo de maior porte/responsabilidade.",
+        "O modelo AL dá autonomia e acesso direto ao Comando-Geral para cada Diretor setorial (RH, Logística, Finanças) — decisão mais rápida em cada área, mas exige mais reuniões de coordenação entre diretorias para assuntos que cruzam mais de uma (ex.: um processo de aquisição que envolve Finanças e Logística ao mesmo tempo).",
+        "Adotar o modelo AL no CBMRO significa promover as atuais \"Coordenadorias\" a \"Diretorias\" plenas — decisão com impacto de cargo/posto e organograma, não só de nome."
+      ],
+      "ligadas": [
+        "Tema — competencias-direcao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — competencias-direcao — natureza-conselho-superior",
+      "trilha": "reg",
+      "key": "competencias-direcao",
+      "chapterId": "reg:competencias-direcao",
+      "titulo": "Decisão — competencias-direcao — natureza-conselho-superior",
+      "questao": "O colegiado superior do CBMRO deve ter poder apenas CONSULTIVO (só opina, o Comandante-Geral decide), poder DELIBERATIVO pleno (aprova orçamento, delibera promoções, dirime dúvidas de competência) ou um modelo HÍBRIDO que separa, artigo por artigo, o que é consulta do que é deliberação?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "O Conselho Superior de Bombeiros (CSB) é o colegiado superior da instituição, de caráter consultivo, necessário ao processo decisório compartilhado da gestão estratégica do Corpo de Bombeiros Militar, legitimando as decisões do Comandante-Geral sobre assuntos de extrema relevância.",
+            "I - apresentar propostas sobre matérias de cunho estratégico que promova o aperfeiçoamento da instituição;",
+            "II - avaliar o emprego da instituição orientando a racionalização na aplicação de recursos e a maximização dos resultados em benefício da sociedade;",
+            "III - examinar a política estadual de segurança pública, em particular na parcela constitucional que compete ao Corpo de Bombeiros Militar e apresentar soluções para o aperfeiçoamento do sistema;"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 9 e Art. 10 (incisos I-III)",
+          "ocr": null,
+          "leitura": "o CSB do MT só \"avalia\", \"apresenta propostas\", \"examina\", \"sugere\" e \"aprecia\" — nenhum verbo do rol de 26 incisos do Art. 10 é \"aprovar\" ou \"deliberar\". Ele existe para legitimar politicamente a decisão que já é do Comandante-Geral, não para tomá-la. *Nota: o CBMMT nomeia o órgão \"Conselho Superior de Bombeiros (CSB)\"; a minuta do CBMRO adapta o nome do estado no caput do Art. 9, mas o nome do órgão em si (CSB) é preservado no texto adaptado.*"
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "Art. 17. O Conselho Superior do Corpo de Bombeiros Militar, órgão de deliberação coletiva, assessora o Comandante Geral na formulação e avaliação de políticas estratégicas e na fixação de diretrizes de gerenciamento administrativo e opera - cional do Corpo de Bombeiros Militar , além de exercer as seguintes atribuições institucionais:",
+            "I - aprovar a proposta orçamentária do Corpo de Bombeiros Militar;",
+            "II - aprovar o relatório geral e anual do Corpo de Bombeiros Militar;",
+            "III - deliberar sobre qualquer matéria de interesse do Corpo de Bombeiros Militar , que lhe seja submetida por quaisquer de seus membros, com anuência do Comandante Geral;",
+            "IV - dirimir quaisquer dúvidas ou omissões atinentes à competência dos órgãos que integram o Corpo de Bombeiros Militar;"
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 17 (caput e incisos I-IV)",
+          "ocr": "as quebras \"opera - cional\" e o espaço antes de vírgula em \"Militar ,\" são defeito de OCR da fonte, reproduzidos como estão",
+          "leitura": "RN chama o órgão de \"deliberação coletiva\" já no caput e dá poder de fato: aprova orçamento e relatório anual, delibera sobre qualquer matéria (com anuência do Comandante-Geral) e resolve dúvidas de competência entre órgãos — funções que MT não atribui a nenhum colegiado."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.8º O Alto Comando do CBMPA é o órgão colegiado de direção -geral, com atribuições deliberativas e consultivas destinado a:",
+            "I – em caráter consultivo, manifestar-se sobre:",
+            "a) orçamento anual do CBMPA; e",
+            "b) outros assuntos de interesse da Corporação.",
+            "II – em caráter deliberativo, manifestar-se sobre:",
+            "a) elaboração de reforma ou projeto de lei que envolva o CBMPA;",
+            "b) expedição de atos normativos provenientes de suas deliberações;",
+            "c) propostas referentes ao aumento de efetivo e criação, e extinção de cargos, a serem encaminhadas ao Governo do Estado;",
+            "d) conflitos de atribuições entre órgãos de direção, de apoio e de execução; e",
+            "e) proposta referente à remuneração, a ser encaminhada ao Chefe do Poder Executivo Estadual."
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 8 (caput e incisos I-II)",
+          "ocr": "o espaço em \"direção -geral\" é defeito de OCR da fonte, reproduzido como está",
+          "leitura": "PA separa explicitamente as duas naturezas no mesmo órgão: orçamento é só consultivo (curiosamente o oposto de RN, que APROVA orçamento); já reforma de lei, efetivo, cargos e conflitos de atribuição são deliberativos. É um terceiro modelo — nem tudo consultivo, nem tudo deliberativo, com a linha divisória definida artigo a artigo."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 11. Compete ao Conselho de Políticas Estratégicas:",
+            "I - planejar e executar as atividades de administração do pessoal Bombeiro Militar e Civil da Corporação;",
+            "VII - solucionar processos administrativos e submetê-los à decisão do Comandante Geral, devidamente instruídos, os que lhe escapem à competência;",
+            "IX - supervisionar, dirigir e coordenar os trabalhos da Corporação, tendo em vista a unidade de ação no cumprimento de diretrizes; e"
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 11 (incisos I, VII e IX)",
+          "ocr": null,
+          "leitura": "AL vai além dos outros três: o Conselho de Políticas Estratégicas não só avalia ou delibera, ele PLANEJA E EXECUTA gestão de pessoal e SUPERVISIONA/DIRIGE trabalhos da Corporação — funções de gestão corrente, não só de colegiado estratégico. É o modelo com maior poder de execução atribuído ao colegiado."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 29. Ao Conselho Superior - CSup, constituído pelos Oficiais da ativa do último posto da carreira do Quadro de Oficiais de Estado Maior - QOEM em exercício na Corporação, compet e-lhes o assessoramento direto ao Comandante -Geral, o acompanhamento e a manifestação em assuntos relevantes da Instituição, com vista ao fornecimento de subsídios para a tomada de decisão."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 29",
+          "ocr": "o espaçamento quebrado em \"compet e-lhes\" e \"Comandante -Geral\" é defeito de OCR da fonte, reproduzido como está",
+          "leitura": "RS converge com MT — o CSup só \"assessora\", \"acompanha\" e \"manifesta-se\" para \"fornecer subsídios\" à decisão de outrem; sem verbo de aprovação ou deliberação."
+        }
+      ],
+      "comparacao": [
+        "Há pelo menos 3 filosofias distintas nas 5 fontes: (1) só consultivo/subsídio (MT, RS); (2) deliberativo pleno com poder de aprovar orçamento/promoções (RN); (3) híbrido definido matéria a matéria (PA); e um extremo à parte, (4) quase-executivo, planejando e executando gestão corrente (AL).",
+        "Curiosamente, o único ponto concreto e comparável entre RN e PA — quem decide o orçamento — é tratado de forma OPOSTA: RN dá ao colegiado o poder de APROVAR o orçamento; PA classifica orçamento como matéria só CONSULTIVA (decisão fica com o Comandante-Geral).",
+        "Quanto mais poder deliberativo o colegiado tem, menor a margem de decisão unilateral do Comandante-Geral — trade-off entre governança colegiada e agilidade de comando.",
+        "O modelo de AL (planejar e executar) mistura papel de colegiado estratégico com papel de órgão de execução — pode gerar sobreposição de competência com as próprias diretorias/coordenadorias que compõem o Conselho."
+      ],
+      "ligadas": [
+        "Tema — competencias-direcao",
+        "Fonte — Regulamento-MT",
+        "Fonte — Regulamento-RN",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — RI-AL",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — competencias-direcao — subcomandante-geral-papel",
+      "trilha": "reg",
+      "key": "competencias-direcao",
+      "chapterId": "reg:competencias-direcao",
+      "titulo": "Decisão — competencias-direcao — subcomandante-geral-papel",
+      "questao": "O \"número 2\" da instituição deve ser um cargo de GESTÃO EXECUTIVA AMPLA sobre toda a área administrativa e operacional (modelo MT, \"Comandante-Geral Adjunto\") ou um cargo focado em SUBSTITUIR o Comandante-Geral e assessorá-lo, com o mesmo requisito de posto que o titular e a presidência de comissões de disciplina/promoção (modelo RN/AL/RS, \"Subcomandante Geral\")?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "O Comandante-Geral Adjunto, substituto eventual do Comandante-Geral, é o responsável pelo estudo, planejamento, direção, orientação, coordenação, fiscalização e controle de todas as atividades administrativas e operacionais da instituição, sendo encarregado pela elaboração de diretrizes e ordens do Comando aos demais órgãos para o cumprimento de suas atividades."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 11",
+          "ocr": null,
+          "leitura": "MT menciona a substituição do titular só de passagem (\"substituto eventual\"); o foco do artigo é a gestão executiva de TODAS as atividades administrativas e operacionais da instituição — um papel de \"vice-comandante executivo\", não apenas de suplente protocolar."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "Art. 15. O Subcomandante Geral do Corpo de Bombeiros Militar do Estado do Rio Grande do Norte é o auxiliar direto do Comandante Geral da Corporação, substi - tuindo-o em seus eventuais impedimentos, desempenhando as atribuições previstas em Lei e regulamentos, competindo-lhe:",
+            "I - substituir o Comandante Geral nas suas ausências ou impedimentos legais;",
+            "X - presidir a Comissão de Promoção de Praças (CPP);",
+            "XI - encarregar-se pelo nível de disciplina dos militares da Corporação;",
+            "XII - presidir , como membro nato, as atividades desenvolvidas na Comissão Permanente de Ética e Disciplina (CPED); e",
+            "Art. 16. O cargo em comissão de Subcomandante Geral é privativo de oficial supe- rior da ativa, do último posto do Quadro de Oficiais Combatentes, que haja con - cluído o Curso Superior de Bombeiro Militar , ou equivalente, sendo nomeado e exonerado por ato do Governador do Estado. Caso a escolha do Subcomandante Geral não recaia no oficial mais antigo, este terá precedência hierárquica e fun - cional sobre os demais oficiais, excetuando-se o Comandante Geral."
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 15 (caput e incisos I, X-XII) e Art. 16",
+          "ocr": "as quebras \"substi - tuindo-o\", \"presidir , como\", \"supe- rior\", \"con - cluído\", o espaço antes da vírgula em \"Militar , ou\" e a quebra \"fun - cional\" são defeito de OCR da fonte, reproduzidas como estão",
+          "leitura": "RN abre o artigo já definindo a substituição como a atribuição central (\"substituindo-o em seus eventuais impedimentos\"). Além disso, RN é o único que EXIGE do Subcomandante o MESMO requisito de posto e curso do Comandante-Geral (Art. 16, espelhando o Art. 14) e atribui a ele a presidência de duas comissões-chave de disciplina e promoção (CPP, CPED) — funções que MT não menciona para o Comandante-Geral Adjunto."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 9º Compete ao Subcomandante Geral do Corpo de Bombeiros Militar:",
+            "I - responder pelo Comandante Geral em seus impedimentos eventuais;",
+            "III - exercer o controle disciplinar dos integrantes da Corporação;",
+            "V - determinar os implementos ao cumprimento das decis ões do Conselho de Políticas Estratégicas;"
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 9 (caput e incisos I, III e V)",
+          "ocr": "a quebra \"decis ões\" é defeito de OCR da fonte, reproduzida como está",
+          "leitura": "AL converge com RN — primeiro inciso é a substituição do titular; o cargo também tem controle disciplinar. Diferente de MT, AL não atribui ao Subcomandante a gestão executiva ampla de \"todas as atividades administrativas e operacionais\" — isso fica com o próprio Comandante-Geral e as Diretorias."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 28. Ao Subcomandante-Geral – SCmt-G, Oficial da ativa do último posto da carreira do Quadro de Oficiais de Estado Maior – QOEM e substituto do Comandante -Geral da Corporação nas suas ausências e impedimentos eventuais, compet e-lhe, igualmente, as funções de assessoramento ao Comandante-Geral no cumprimento das competências atribuídas ao CBMRS, além de outras que lhe forem delegadas.",
+            "Parágrafo único. O Subcomandante-Geral possui precedência hierárquica sobre os demais Oficiais do mesmo Posto, sendo indicado pelo Comandante-Geral e nomeado pelo Governador do Estado."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 28",
+          "ocr": "as quebras \"Comandante -Geral\" e \"compet e-lhe\" são defeito de OCR da fonte, reproduzidas como estão",
+          "leitura": "RS também define o cargo pelo requisito de posto (mesmo posto do Comandante-Geral) e pela função de substituição/assessoramento — convergente com RN e AL, e divergente do enquadramento de MT como gestor executivo geral."
+        }
+      ],
+      "comparacao": [
+        "Três das quatro fontes (RN, AL, RS) convergem: o \"número 2\" é definido primeiro como SUBSTITUTO do titular, com foco em disciplina/assessoramento — só MT o define primeiro como GESTOR EXECUTIVO de toda a área administrativa e operacional.",
+        "RN é o único que amarra formalmente o requisito de posto do Subcomandante ao do Comandante-Geral (mesmo posto, mesmo curso) — uma garantia de que quem substitui tem a mesma qualificação; MT, AL e RS não repetem essa exigência explícita no trecho extraído.",
+        "Se o CBMRO adotar o modelo MT (gestor executivo amplo), o cargo concentra poder operacional que hoje, nas outras fontes, fica distribuído entre o Chefe do EMG e as Diretorias/Coordenadorias — pode gerar sobreposição de competência com o EMG (que MT também define como responsável pela gestão administrativa, Art. 13).",
+        "Se adotar o modelo RN/AL/RS, o cargo fica mais \"enxuto\" (substituição + disciplina + assessoramento), compatível com a lógica de que quem realmente executa é o corpo de diretorias/coordenadorias."
+      ],
+      "ligadas": [
+        "Tema — competencias-direcao",
+        "Fonte — Regulamento-MT",
+        "Fonte — Regulamento-RN",
+        "Fonte — RI-AL",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — competencias-execucao — abrangencia-comando-regional",
+      "trilha": "reg",
+      "key": "competencias-execucao",
+      "chapterId": "reg:competencias-execucao",
+      "titulo": "Decisão — competencias-execucao — abrangencia-comando-regional",
+      "questao": "O Comando Regional (CRBM) do CBMRO deve ser um escalão enxuto de supervisão/coordenação (modelo MT), ou deve concentrar diretamente funções de fiscalização de segurança contra incêndio, gestão financeira, comunicação social e inteligência regional (modelo RS)?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "Os Comando Regionais Bombeiro Militar - CRBM subordinam-se à DOp e são órgãos de supervisão, coordenação e planejamento operacional das UBM's subordinadas.",
+            "Os Comandos Regionais tem a seguinte constituição:",
+            "1 – Comando:",
+            "1.1 - Comando Adjunto;",
+            "2 – Seção Administrativa - SAdm;",
+            "3 – Agência Setorial de Inteligência - ASI."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 249",
+          "ocr": null,
+          "leitura": "MT dá ao CRBM só 3 estruturas de apoio (Comando, Seção Administrativa e uma Agência de Inteligência) — sua competência é supervisionar e coordenar as unidades subordinadas, sem executar diretamente atividades finalísticas de outras áreas (segurança contra incêndio, finanças, comunicação são tratadas por diretorias centrais, fora deste tema)."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 38. Os Comandos Regionais de Bombeiro Militar - CRBM, escalões intermediários de comando, são os responsáveis, em suas respectivas circunscrições territoriais, pelas atividades administrativo - operacionais internas e dos OCBM que lhe são subordinados, competindo-lhes:",
+            "I) Por meio de Divisão Administrativa e de Correição - DAdmC/xCRBM, proceder a execução de tramite, classificação, produção e registro das comunicações administrativas entre as unidades subordinadas e o comando; exercer poder disciplinar sobre os efetivos subordinados primando pelo escalonamento recursal dos procedimentos;",
+            "III) Por meio de Divisão de Segurança Contra Incêndio – DSCI/xCRBM, gerenciar, controlar, padronizar e apoiar a execução d as atividades de licenciamento e fiscalização em segurança contra incêndio e de investigação de sinistros em sua respectiva área de responsabilidade territorial, em conformidade com as diretrizes do DSPCI , cabendo -lhe, ainda, controlar a regularidade documental e adimplência nos processos fiscalizatórios, gerenciar recursos administrativos de segunda instância, emitir autos de imposição de penalidade e realizar atos extraordinários de fiscalização, podendo receber competências adicionais por Resolução Técnica do DSPCI e Portaria do Comandante-Geral;",
+            "IV) Por meio de Divisão de Logística Patrimônio e Finanças – DLPF/xCRBM, proceder a execução de tramite de documentação, controle e transferência de carga, gerenciamento dos Almoxarifados entre as unidades subordinadas e o comando; exercer a gestão financeira dos OCBM subordinados em relação ao efetivo , materiais, investimento e custeio da corporação, tudo em interlocução com a Divisão de Logística e Patrimônio e com a Divisão de Orçamento e Finanças;",
+            "V) Por meio de Divisão de Comunicação Social – DCS/xCRBM, estabelecer rotina para o cumprimento das atribuições definidas pela Assessoria de Comunicação Social – ACS do Comando-Geral, permitindo aos OCBM subordinados executarem suas ações com o devido registro padronizado, com agilidade e amplitude em alcance nas divulgações das ações da Corporação na atividade fim, em atendimento à comunidade nas emergências e demais pautas de interesse Institucional ; aco mpanhar as redes sociais dos OCBM, orientando as melhores práticas em relação a publicação de conteúdos, fomentando a produção de material para divulgação e a fidelização de seguidores, com vistas a ampliação da boa imagem institucional do CBMRS;",
+            "VI) Por meio de Agência Regional de Inteligência– ARI/xCRBM - coletar e analisar informações específicas de sua região, relacionadas a incêndios, desastres naturais e outras emergências sob a competência do CBMRS."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 38",
+          "ocr": null,
+          "leitura": "RS transforma o CRBM num escritório regional completo — ele mesmo licencia e fiscaliza segurança contra incêndio, gerencia finanças/patrimônio, produz comunicação social e mantém inteligência própria, tudo dentro da circunscrição territorial, sem precisar recorrer a uma diretoria central para essas funções do dia a dia."
+        }
+      ],
+      "comparacao": [
+        "Não é diferença de redação — é uma escolha real de DESENHO institucional: quanto poder decisório e quantas funções ficam descentralizadas no comando regional.",
+        "O modelo MT (enxuto) mantém as diretorias centrais (Operacional, Segurança Contra Incêndio, Administração) como donas das competências técnicas; o CRBM só coordena a aplicação local — menos risco de desalinhamento entre regiões, mas mais dependência da capital para decisões do dia a dia.",
+        "O modelo RS (multifuncional) agiliza decisões locais (o CRBM já fiscaliza, já paga, já divulga sem subir à capital), mas multiplica a estrutura administrativa em cada região e exige mais pessoal especializado alocado fora da capital.",
+        "Para o CBMRO, que tem apenas 1 Comando Regional hoje (estrutura enxuta como MT) mas pretende ampliar a presença no interior de RO (distâncias grandes até a capital), vale avaliar se algumas dessas funções (ao menos segurança contra incêndio e comunicação social) merecem descentralização parcial, sem copiar as 6 divisões inteiras do RS."
+      ],
+      "ligadas": [
+        "Tema — competencias-execucao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — competencias-execucao — comando-ocorrencia-multiunidade",
+      "trilha": "reg",
+      "key": "competencias-execucao",
+      "chapterId": "reg:competencias-execucao",
+      "titulo": "Decisão — competencias-execucao — comando-ocorrencia-multiunidade",
+      "questao": "Quando uma ocorrência envolve mais de uma unidade de bombeiros ao mesmo tempo, quem assume o comando — o Comando Regional (escalão acima das unidades, modelo MT) ou o Comandante da própria unidade/Grupamento envolvido (escalão de base, modelo AL)?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "São competências dos Comandos Regionais de Bombeiros Militar (CRBM), com a participação de seus órgãos subordinados:",
+            "III - comandar as operações que envolvam simultaneamente mais de uma Unidade Bombeiro Militar dentro da sua área de responsabilidade operacional;"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 248",
+          "ocr": null,
+          "leitura": "MT atribui o comando de ocorrências multi-unidade ao CRBM — um escalão ACIMA das unidades envolvidas, que assume o comando geral da operação quando mais de uma UBM está empregada na mesma área de responsabilidade regional."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 114. Compete aos Comandantes de Grupamento de Bombeiros Militar:",
+            "IV - comandar diretamente as atividades operacionais qu e envolvam mais de uma operação de socorro bombeiro militar na área de atuação dos Subgrupamentos;",
+            "Art. 123. Compete ao Comandante do GSE:",
+            "VI - comandar diretamente as atividades operacionais de vulto e que envolvam mais de um socorro de emergência no mesmo evento;"
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 123",
+          "ocr": null,
+          "leitura": "AL atribui essa mesma competência ao Comandante da PRÓPRIA unidade de base (Grupamento de Bombeiros ou Grupamento de Socorro de Emergência), sem subir a decisão a um escalão regional — o comando fica com quem está mais perto da ocorrência."
+        }
+      ],
+      "comparacao": [
+        "Não é diferença de redação — as duas fontes respondem perguntas diferentes sobre A MESMA situação (ocorrência com mais de uma unidade envolvida) apontando autoridades de níveis hierárquicos distintos.",
+        "O modelo MT (comando regional) centraliza a decisão num escalão que enxerga toda a região, mas depende de comunicação rápida entre a unidade na cena e o CRBM — pode atrasar decisões em emergências que exigem resposta imediata.",
+        "O modelo AL (comandante local) permite reação mais rápida (quem está na área já assume o comando), mas pode gerar disputa de autoridade quando duas unidades diferentes chegam à mesma ocorrência sem hierarquia clara entre seus comandantes.",
+        "Para o CBMRO, que tem distâncias grandes entre municípios e um único Comando Regional hoje, a resposta mais rápida (modelo AL, comando pelo oficial mais antigo/de maior posto na cena) pode ser mais realista — mas cabe reforçar, se for essa a escolha, uma regra de desempate clara (ex.: por antiguidade/posto), para evitar o vácuo de comando que o modelo AL não deixa explícito."
+      ],
+      "ligadas": [
+        "Tema — competencias-execucao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — competencias-execucao — divisao-unidades-execucao",
+      "trilha": "reg",
+      "key": "competencias-execucao",
+      "chapterId": "reg:competencias-execucao",
+      "titulo": "Decisão — competencias-execucao — divisao-unidades-execucao",
+      "questao": "As unidades de execução do CBMRO devem ser divididas por TAMANHO/ESCALÃO (um único tipo de unidade que atende qualquer ocorrência, variando só o porte — modelo MT) ou por ESPECIALIDADE DE MISSÃO (uma cadeia de comando própria para incêndio, outra para salvamento aquático, outra para socorro de emergência/APH — modelo AL/RN)?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "As Unidades Bombeiros Militar – UBM são classificadas em Batalhão Bombeiro Militar (BBM), Companhia Independente Bombeiro Militar (CIBM), Pelotão Independente Bombeiro Militar (PIBM) e Núcleo Bombeiro Militar (NBM), subordinam-se ao CRBM de sua área de abrangência, e são órgãos de execução da instituição."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 253",
+          "ocr": null,
+          "leitura": "MT define um único tipo de unidade de execução, que muda de nome só conforme o TAMANHO do efetivo (Batalhão > Companhia Independente > Pelotão Independente > Núcleo). Cada unidade dessas atende qualquer tipo de ocorrência na sua área."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 112. As Unidades de Bombeiros Militares constituem as U nidades Operacionais da Corporação e são dos seguintes tipos:",
+            "I - Grupamento de Bombeiros Militar - GBM;",
+            "II - Grupamento de Salvamento Aquático - GSA; e",
+            "III - Grupamento de Socorro de emergência - GSE."
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 112",
+          "ocr": null,
+          "leitura": "AL cria três tipos de Grupamento, cada um com sua PRÓPRIA missão fixa e sua própria cadeia de comando (Comandante, Subcomandante, Ajudante-Secretário, Seções): um genérico de incêndio/salvamento terrestre, um exclusivo de salvamento aquático, e um exclusivo de socorro de emergência/APH."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "Art. 32. O Comando Operacional Bombeiro Militar (Cmdo Op BM) é o ór gão responsável pelo planejamento, orientação normativa, coordenação, fiscalização, controle e execução das atividades operacionais no campo de atuação da Corporação.",
+            "Parágrafo único. O Comando Operacional Bombeiro Militar terá a seguinte or ga- nização:",
+            "I - Comandante;",
+            "II - Secretaria;",
+            "III - Estado-Maior Operacional (EM Op);",
+            "IV - Centro de Operações do CBMRN (COCB);",
+            "V - Comissão de Defesa Civil;",
+            "VI - 1º Grupamento de Bombeiros Militar - (1º GBM);",
+            "VII - 2º Grupamento de Bombeiros Militar - (2º GBM);",
+            "VIII - Grupamento de Bombeiros Marítimo - (GBMAR);",
+            "IX - Subgrupamento Independente de Bombeiros Militar de Atendimento Pré-hos- pitalar - (S.I.B.M -APH);",
+            "X - 1º Subrupamento Independente de Bombeiros Militar (1º S.I.B.M); e",
+            "XI - 2º Subrupamento Independente de Bombeiros Militar (2º S.I.B.M). Subseção Única Do Estado-Maior Operacional"
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 32",
+          "ocr": null,
+          "leitura": "RN confirma o mesmo padrão de AL — unidades territoriais genéricas (1º e 2º GBM) convivendo lado a lado com unidades EXCLUSIVAS por missão (GBMAR para o marítimo, SIBM-APH para o atendimento pré-hospitalar), todas subordinadas diretamente ao Comando Operacional, sem um escalão de Batalhão/Companhia entre elas."
+        }
+      ],
+      "comparacao": [
+        "Não é diferença de redação — é uma diferença de PRINCÍPIO organizacional: MT organiza por PORTE (o mesmo tipo de unidade cresce ou encolhe conforme o efetivo disponível); AL/RN organizam por ESPECIALIDADE (cada risco — incêndio, água, saúde — tem sua própria unidade e comando).",
+        "O modelo de MT é mais simples de escalar (basta criar um Núcleo, depois elevar a Pelotão, Companhia, Batalhão) e não depende de ter efetivo suficiente para sustentar comandos paralelos.",
+        "O modelo de AL/RN dá mais especialização técnica (o comando do GSA/GBMAR só cuida de salvamento aquático, sem concorrer por atenção com o incêndio), mas exige mais estrutura de comando duplicada e efetivo dedicado — mais adequado a corporações grandes com risco aquático relevante (litoral).",
+        "RO não tem litoral, mas tem rios extensos e áreas de garimpo/mineração — cabe avaliar se compensa criar uma unidade EXCLUSIVA de salvamento aquático nesses moldes, ou se o modelo MT (Batalhão único, com seção/subunidade especializada dentro dele) já resolve."
+      ],
+      "ligadas": [
+        "Tema — competencias-execucao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL",
+        "Fonte — Regulamento-RN"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — disciplina-correicao — instancia-recursal-disciplinar",
+      "trilha": "reg",
+      "key": "disciplina-correicao",
+      "chapterId": "reg:disciplina-correicao",
+      "titulo": "Decisão — disciplina-correicao — instancia-recursal-disciplinar",
+      "questao": "Quando um bombeiro militar recorre de uma punição/decisão disciplinar, quem julga em última instância administrativa — o Comandante-Geral, o próprio Corregedor-Geral, ou um colegiado interno criado para isso?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "Compete a Seção de Procedimentos Administrativos Disciplinares Militares:",
+            "IV - analisar os recursos disciplinares e solicitações de anulação de punições dirigidas ao Comandante-Geral, através da Corregedoria Geral do CBMRO, dar solução e encaminhar ao Corregedor-Adjunto para as providências cabíveis;"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 31",
+          "ocr": null,
+          "leitura": "O recurso é endereçado ao Comandante-Geral; a Corregedoria só instrui e prepara a solução técnica — quem decide, em última instância, é o Comandante-Geral, não o Corregedor."
+        },
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020)",
+          "verbatim": [
+            "Art. 103. Ao Corregedor, além das atribuições previstas no art. 81, compete:",
+            "III - solucionar os processos instaurados pela Corregedoria, bem como a reconsideração de ato interposta contra sua decisão;"
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 103",
+          "ocr": null,
+          "leitura": "No DF, o próprio Corregedor é quem resolve o processo e também a reconsideração contra sua própria decisão — não há remessa ao Comandante-Geral nem colegiado externo para o recurso."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.47. Constituem atribuições básicas do Corregedor-Geral:",
+            "VIII – decidir, em última instância administrativa disciplinar, sobre os Recur sos Hierárquicos, interpostos 19 contra decisões disciplinares proferidas por todas as autoridades disciplinares prevista no art. 26 do Código de Ética e Disciplinar da Corporação que estejam funcionalmente abaixo da sua precedência funcional;"
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 47",
+          "ocr": "defeitos da fonte preservados: \"Recur sos\" com espaço indevido e o \"19\" solto são resíduo de quebra de página/OCR da minuta paraense, não fazem parte do texto normativo.",
+          "leitura": "O Corregedor-Geral também decide em última instância, mas é obrigatoriamente assessorado por um colegiado técnico permanente — a Comissão Disciplinar de Recursos (Art. 39) — que prepara a fundamentação jurídica antes da decisão final."
+        }
+      ],
+      "comparacao": [
+        "Três desenhos distintos de autoridade final: Comandante-Geral (MT), o próprio Corregedor-Geral sozinho (DF), ou o Corregedor-Geral apoiado por colegiado obrigatório (PA).",
+        "Concentrar a decisão final no Comandante-Geral (MT) mantém o modelo hoje vigente na Lei 2.204/2009 e reforça a hierarquia máxima, mas sobrecarrega o Comando com decisões técnicas de disciplina.",
+        "Delegar ao Corregedor-Geral (DF/PA) agiliza o processo, mas retira do Comandante-Geral a palavra final nesses casos — o colegiado do PA é uma via intermediária que dá mais segurança jurídica sem devolver a decisão ao Comando."
+      ],
+      "ligadas": [
+        "Tema — disciplina-correicao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-DF",
+        "Fonte — Minuta-RI-PA"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — disciplina-correicao — modelo-centralizado-regional",
+      "trilha": "reg",
+      "key": "disciplina-correicao",
+      "chapterId": "reg:disciplina-correicao",
+      "titulo": "Decisão — disciplina-correicao — modelo-centralizado-regional",
+      "questao": "A Corregedoria-Geral do CBMRO deve ser um órgão único e centralizado (todas as apurações concentradas na sede), ou deve prever núcleos regionais vinculados aos futuros comandos territoriais, à medida que o CBMRO se expandir pelas cidades da nova LOB?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "Art. 17. A Corregedoria Geral tem a seguinte constituição:",
+            "1 - Corregedoria Adjunta;",
+            "1.1 - Corregedoria Auxiliar.",
+            "2 - Seção Administrativa:",
+            "2.1 - Subseção de Protocolo e Secretaria;",
+            "2.2 - Subseção de Arquivo;",
+            "2.3 - Subseção de Instrução;",
+            "2.4 - Subseção de Estatística e Planejamento.",
+            "3 - Seção de Polícia Judiciária Militar:",
+            "3.1 - Subseção de Procedimentos Penais Militares;",
+            "3.2 - Subseção de Requisições e Cumprimento de Mandados;",
+            "3.3 - Subseção de Investigação.",
+            "4 - Seção de Procedimentos Administrativos Disciplinares Militares:",
+            "4.1 - Subseção de Análise e Instauração;",
+            "4.2 - Subseção de Julgamento e Revisão."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 17",
+          "ocr": null,
+          "leitura": "Toda a estrutura correcional fica dentro de uma única Corregedoria-Geral, sediada no Comando central — seções e subseções são divisões funcionais (protocolo, PJM, disciplinar), não unidades territoriais."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.40. As Comissões Disciplinares de Núcleos de Corregedorias Regionais, vinculadas diretamente ao Subcorregedor-Geral, com estrutura funcional e competência correcional no âmbito de suas circunscrições, serão instaladas no ato de criação e ativação dos Comandos Regionais de Bombeiros de Proteção e Emergência Ambiental (CRB)."
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 40",
+          "ocr": null,
+          "leitura": "O Pará prevê, desde já na minuta, que cada Comando Regional (CRB) ganhará seu próprio núcleo de Corregedoria, com competência restrita à sua circunscrição — só os casos mais graves sobem à Corregedoria-Geral (Art. 41, V do mesmo texto)."
+        }
+      ],
+      "comparacao": [
+        "MT resolve tudo em um único órgão central; PA distribui a apuração disciplinar de primeiro nível para núcleos regionais, reservando à Corregedoria-Geral os casos de maior gravidade/complexidade.",
+        "O modelo do PA só faz sentido quando a corporação já opera com comandos regionais fixos — é uma decisão amarrada ao ritmo de expansão territorial do CBMRO (ver Organograma, projeção territorial da nova LOB).",
+        "Adotar o modelo regional desde já pode antecipar estrutura que ainda não existe operacionalmente em RO; adotar o modelo centralizado (como MT) é mais simples agora, mas exigirá revisão futura se/quando os comandos regionais forem criados."
+      ],
+      "ligadas": [
+        "Tema — disciplina-correicao",
+        "Fonte — Regulamento-MT",
+        "Fonte — Minuta-RI-PA"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — disciplina-correicao — nomeacao-corregedor-geral",
+      "trilha": "reg",
+      "key": "disciplina-correicao",
+      "chapterId": "reg:disciplina-correicao",
+      "titulo": "Decisão — disciplina-correicao — nomeacao-corregedor-geral",
+      "questao": "Quem nomeia o Corregedor-Geral do CBMRO e qual o requisito de posto para ocupar o cargo — uma instância política externa (Governador) confirma a indicação, ou é ato interno de Comando? A primária (MT) não trata do assunto neste capítulo.",
+      "candidatas": [
+        {
+          "fonte": "Paraná — Atribuições institucionais (portal oficial)",
+          "verbatim": [
+            "Parágrafo único. O Corregedor-Geral será indicado pelo Comandante-Geral e nomeado pelo Governador do Estado, dentre os Coronéis Combatentes da ativa da Corporação."
+          ],
+          "citacao": "cf. CBMPR, Atribuições institucionais (portal oficial), bloco \"Atribuições da Corregedoria-Geral\", Art. 23",
+          "ocr": null,
+          "leitura": "A indicação nasce no Comando-Geral, mas a nomeação formal é ato do Governador — o cargo tem uma camada de referendo do Poder Executivo estadual, fora da cadeia interna do CBM."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 46. Ao Corregedor-Geral, Oficial da ativa do último posto da carreira do Quadro de Oficiais do Estado Maior – QOEM, com assessoramento direto do Secretário -Executivo e as suas divisões, incumbe a responsabilidade pela disciplina e pela hierarquia institucional, bem como assessoramento direto ao Comandante -Geral, competindo -lhe a administração da Corregedoria -Geral da Instituição, com os poderes, inclusive hierárquicos sobre os Oficiais do mesmo Posto, e deveres in erentes ao cargo e à função, sendo o responsáv el pelo Órgão Central de Correição e pelo Sistema de Correição do Corpo de Bombeiros Militar do Estado do Rio Grande do Sul (SisCorCBMRS), assessorado pelas seguintes funções:"
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 46",
+          "ocr": "defeitos de digitalização preservados: \"os poderes, inclusive\" quebrado como \"poderes, inclusive\"; \"assessorado\" grafado \"assessoramento direto do Secretário -Executivo\"; espaços indevidos em \"responsáv el\" e \"in erentes\" são falhas de OCR da fonte, não do conteúdo.",
+          "leitura": "O cargo é reservado ao oficial do último posto do quadro de Estado-Maior (equivalente a Coronel), mas o texto não menciona nenhuma instância externa ao Comando — a nomeação fica implícita como ato interno da Corporação."
+        }
+      ],
+      "comparacao": [
+        "PR insere uma etapa formal fora do CBM (nomeação pelo Governador); RS não menciona nenhuma etapa externa — a decisão define se o CBMRO adota (ou não) esse referendo do Executivo estadual.",
+        "Ambos convergem em reservar o cargo a um oficial superior (Coronel/último posto), mas só o PR fixa isso explicitamente como requisito de carreira (\"Coronéis Combatentes da ativa\"); o RS fala em \"último posto da carreira do QOEM\" — praticamente o mesmo padrão, mas com nomenclatura de quadro diferente.",
+        "A primária (MT) é silente quanto a nomeação e posto — a Corporação de RO precisará decidir se detalha esse requisito no Regulamento Geral ou remete à Lei de Organização Básica."
+      ],
+      "ligadas": [
+        "Tema — disciplina-correicao",
+        "Fonte — Atribuicoes-PR",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — disciplina-correicao — requisito-bacharelado-membros",
+      "trilha": "reg",
+      "key": "disciplina-correicao",
+      "chapterId": "reg:disciplina-correicao",
+      "titulo": "Decisão — disciplina-correicao — requisito-bacharelado-membros",
+      "questao": "Compor os órgãos de correição (comissões disciplinares, seções técnicas) deve exigir formação em Direito — inclusive para praças —, ou basta a indicação por critério de posto/graduação e confiança do Comando, como hoje?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "Compete a Subseção de Analise e Instauração:",
+            "I– solicitar informações de órgãos públicos ou particulares, necessárias a instrução de procedimentos disciplinares, tais como perícias, pareceres, etc.",
+            "II– analisar as sindicâncias instauradas pela Corregedoria, bem como os demais procedimentos apuratórios de natureza disciplinar, dando-lhes solução quando for o caso."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 32",
+          "ocr": null,
+          "leitura": "Em nenhum artigo do capítulo MT exige formação jurídica para os militares (oficiais ou praças) que compõem as seções e subseções da Corregedoria — a atribuição decorre do cargo/função, não de uma qualificação acadêmica específica."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.36. A Comissão Disciplinar Geral será composta pelo Subcorregedor-Geral na condição de presidente e mais 3 (três) oficiais membros, preferencialmente bacharéis em Direito, bem como até 4 (quatro) praças nomeados como auxiliares, obrigatoriamente bacharéis em direito, conforme a necessidade do serviço."
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 36",
+          "ocr": null,
+          "leitura": "Para os oficiais membros, a formação em Direito é preferencial (não obrigatória); já para as praças auxiliares, o texto torna a formação em Direito obrigatória — um requisito raro de se ver aplicado a praças no meio militar."
+        }
+      ],
+      "comparacao": [
+        "MT não impõe qualquer requisito de formação; PA cria dois níveis de exigência (preferencial para oficiais, obrigatória para praças auxiliares).",
+        "Exigir bacharelado eleva o rigor técnico-jurídico das apurações, mas reduz o universo de militares aptos a servir na Corregedoria — em RO isso pode ser mais restritivo ainda, dado o efetivo menor comparado a MT/PA.",
+        "Se o CBMRO decidir seguir o padrão PA, precisa também decidir se a exigência recai só sobre oficiais ou também sobre praças (o ponto mais atípico da redação paraense)."
+      ],
+      "ligadas": [
+        "Tema — disciplina-correicao",
+        "Fonte — Regulamento-MT",
+        "Fonte — Minuta-RI-PA"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — disposicoes-preliminares — instituicao-permanente",
+      "trilha": "reg",
+      "key": "disposicoes-preliminares",
+      "chapterId": "reg:disposicoes-preliminares",
+      "titulo": "Decisão — disposicoes-preliminares — instituicao-permanente",
+      "questao": "O Regulamento Geral do CBMRO deve declarar expressamente que a Corporação é \"instituição permanente\" (como fazem AL, PA e RN), ou manter a redação atual — adaptada do modelo de Mato Grosso — que descreve o CBM só como \"força auxiliar e reserva do Exército\", sem esse qualificativo?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (texto já adaptado para Rondônia) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 82 da Constituição Estadual."
+          ],
+          "citacao": "cf. CBMRO (adaptado de CBMMT, Regulamento Geral — Portaria nº 009/BM-8/2013), Art. 1",
+          "ocr": null,
+          "leitura": "é a redação hoje adotada como base do Regulamento do CBMRO (Mato Grosso é a fonte primária deste tema). Apresenta o CBM só como força auxiliar e reserva do Exército — sem o adjetivo \"instituição permanente\"."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "O Corpo de Bombeiros Militar do Estado, instituição permanente, força auxiliar e reserva do Exército Brasileiro, or ganizado com base na hierarquia e na disciplina, destina-se à execução das atividades de proteção e defesa civil e aos serviços específicos de bombeiros militares, bem como à participação, por intermé- dio de organismos especializados, na defesa do meio ambiente."
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 1",
+          "ocr": "defeito de OCR reproduzido: \"or ganizado\" e \"intermé- dio\" têm espaço/hífen indevidos no documento fonte — não corrigidos aqui.",
+          "leitura": "RN abre o artigo com \"instituição permanente\" antes mesmo de \"força auxiliar e reserva do Exército\" — reforça juridicamente que o CBM é órgão permanente do Estado, e não um serviço temporário ou eventual."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 1º Este Regimento Interno regulamenta o funcionamento , a organização, a estrutura e as competências dos órgão do Corpo de B ombeiros Militar do Estado de Alagoas (CBM/AL), instituição permanente e força auxiliar e reserva do Exército, organizada com base na hierarquia e na disciplina, tendo por final idade a realização de serviços específicos de bombeiros no território do Estado de Alagoas."
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 1",
+          "ocr": "defeitos de OCR reproduzidos: \"funcionamento ,\\\", \"órgão do Corpo de B ombeiros\" e \"final idade\" têm espaços/erros de digitalização no documento fonte — não corrigidos aqui.",
+          "leitura": "AL também qualifica o CBM como \"instituição permanente e força auxiliar e reserva do Exército\", no mesmo artigo que define o objeto do próprio Regimento Interno."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 1º . Ao Corpo de Bombeiros Militar do Estado do Rio Grande do Sul - CBMRS, instituição permanente e regular, organizada com base na hierarquia e na disciplina, nos termos do inciso V e §§ 5º e 6º do artigo 144 da Constituição Federal de 1988, dos artigos 130 e 131 da Constituição Estadual, da Lei Complementar Estadual nº 14.920, de 1º de agosto de 2016 e do Decreto Estadual nº 53.897, de 25 de janeiro de 2018, compete:"
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 1",
+          "ocr": null,
+          "leitura": "RS também qualifica o CBM como \"instituição permanente e regular\" logo na abertura do artigo de competência — um quarto estado, entre os comparados, a reforçar o mesmo qualificativo."
+        }
+      ],
+      "comparacao": [
+        "Das 5 fontes comparadas neste tema, 4 (AL, PA, RN, RS) qualificam o CBM expressamente como \"instituição permanente\"; só a redação adotada (MT/RO) omite o termo — é o padrão minoritário entre os pares.",
+        "A ausência do termo não invalida a natureza permanente do CBMRO (que decorre do Decreto-Lei nº 667/1969 e da própria Constituição Federal), mas incluir a expressão dá ao próprio texto do Regulamento uma âncora jurídica mais clara, sem depender de interpretação externa.",
+        "Incluir o termo significa editar o caput já adaptado do Art. 1 do Regulamento, inserindo \"instituição permanente e\" antes de \"força auxiliar e reserva do Exército\".",
+        "Manter a redação atual preserva fidelidade ao modelo de MT escolhido como esqueleto deste tema, mas destoa do que a maioria dos estados comparados afirma expressamente."
+      ],
+      "ligadas": [
+        "Tema — disposicoes-preliminares",
+        "Fonte — Regulamento-MT",
+        "Fonte — Regulamento-RN",
+        "Fonte — RI-AL",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — disposicoes-preliminares — subordinacao-cadeia-comando",
+      "trilha": "reg",
+      "key": "disposicoes-preliminares",
+      "chapterId": "reg:disposicoes-preliminares",
+      "titulo": "Decisão — disposicoes-preliminares — subordinacao-cadeia-comando",
+      "questao": "O Regulamento deve manter a subordinação DIRETA do CBM ao Governador do Estado — com a Secretaria de Segurança Pública entrando só no plano operacional (modelo MT/PA, hoje adotado) — ou redigir a subordinação como exercida \"por intermédio\" da Secretaria também no plano administrativo (modelo RN)?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (texto já adaptado para Rondônia) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "O Corpo de Bombeiros Militar do Estado de Rondônia subordina-se diretamente ao Governador do Estado, está vinculado operacionalmente à Secretaria de Estado de Segurança Pública e destina-se a realizar serviços específicos de bombeiro militar no Estado."
+          ],
+          "citacao": "cf. CBMRO (adaptado de CBMMT, Regulamento Geral — Portaria nº 009/BM-8/2013), Art. 2",
+          "ocr": null,
+          "leitura": "subordinação DIRETA ao Governador (cadeia de comando institucional); a Secretaria de Segurança Pública só entra no vínculo OPERACIONAL, não na subordinação administrativa. É a redação hoje adotada pelo Regulamento do CBMRO."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.1º O Corpo de Bombeiros Militar do Estado do Pará (CBMPA) é instituição permanente, força auxiliar e reserva do Exército, organizado com base na hierarquia e disciplina militares, subordinado ao Governador do Estado, o qual é o seu Comandante Supremo, destina-se a realizar serviços específicos de Bombeiro Militar e de Proteção e Defesa Civil no Estado do Pará criada conforme preceitua os art. 42 e 144 da Constituição Federal de 05 de outubro de 1988 e o art. 200 da Constituição Es tadual de 05 de outubro de 1989."
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 1",
+          "ocr": "defeito de OCR reproduzido: \"Constituição Es tadual\" tem espaço indevido no documento fonte — não corrigido aqui.",
+          "leitura": "PA reforça o modelo de subordinação direta, nomeando explicitamente o Governador como \"Comandante Supremo\" do CBM — sem qualquer menção a intermediação por Secretaria."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "Art. 3º O Corpo de Bombeiros Militar subordina-se administrativa e operacional - mente ao Governador do Estado, por intermédio da Secretaria de Estado da Segurança Pública e da Defesa Social (SESED), desenvolvendo suas atribuições, sempre que necessário, de modo integrado com os demais órgãos responsáveis pela segurança pública do Estado."
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 3",
+          "ocr": "defeito de OCR reproduzido: \"operacional - mente\" tem espaço/hífen indevidos no documento fonte — não corrigido aqui.",
+          "leitura": "RN faz a Secretaria de Segurança Pública intermediária tanto na subordinação administrativa quanto na operacional — o CBM não se reporta diretamente ao Governador no dia a dia, e sim através da Secretaria."
+        }
+      ],
+      "comparacao": [
+        "Diferença prática: no modelo MT/PA (hoje adotado pelo Regulamento do CBMRO), o Comandante-Geral responde diretamente ao Governador nos atos de gestão e comando institucional; a Secretaria de Segurança só entra no vínculo operacional. No modelo RN, toda a subordinação — inclusive a administrativa — passa pela Secretaria, e o CBM tem menos autonomia direta perante o Chefe do Executivo.",
+        "É uma escolha de desenho institucional com efeito real de governança (grau de autonomia do Comandante-Geral perante a Secretaria de Segurança), e não apenas uma diferença de redação.",
+        "Manter o modelo MT/PA preserva o desenho já adotado hoje no texto do Regulamento; convém confirmar se a cadeia de subordinação já está fixada na LOB de Rondônia — se estiver, o Regulamento deve apenas espelhar a lei, não reabrir a escolha.",
+        "Adotar o modelo RN exigiria reescrever o Art. 2 do Regulamento para inserir a intermediação da Secretaria também na subordinação administrativa, não só na operacional."
+      ],
+      "ligadas": [
+        "Tema — disposicoes-preliminares",
+        "Fonte — Regulamento-MT",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — Regulamento-RN"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ensino-instrucao — estrutura-educacao-fisica-desportos",
+      "trilha": "reg",
+      "key": "ensino-instrucao",
+      "chapterId": "reg:ensino-instrucao",
+      "titulo": "Decisão — ensino-instrucao — estrutura-educacao-fisica-desportos",
+      "questao": "A Educação Física/Capacitação Física do CBMRO deve ter um CENTRO próprio e robusto (com Chefia, Chefia Adjunta, Seção Administrativa, Seção Técnica e Subseções, como MT), ser apenas uma SEÇÃO dentro do centro de formação de pessoal (como AL), ou ser uma ESCOLA dentro de uma divisão maior de ensino/pesquisa da Academia (como RS)?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "O Centro de Capacitação Física – CCF é o órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, responsável pelas ações relacionadas com o desenvolvimento das atividades físicas e de desportos no âmbito do Corpo de Bombeiros Militar de Mato Grosso."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 171",
+          "ocr": null,
+          "leitura": "o CCF é um Centro de pleno direito — mesmo nível orgânico do CEIB e da Escola Dom Pedro II — subordinado à DEIP, com estrutura interna própria (Chefia, Chefia Adjunta, Seção Administrativa, Seção Técnica e de Desportos e Subseções, conforme os Art. 179-187 do mesmo Regulamento). *Nota: o CBMMT nomeia o Estado no caput (\"Mato Grosso\"); a minuta do CBMRO adapta esse trecho para \"Rondônia\" — o texto acima é o ORIGINAL do CBMMT, verbatim, antes da adaptação (campo `adapted:true` no JSON).*"
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 85. Compete à Seção de Educação Física e Desportos:",
+            "I - orientar e participar da organização e do planejamento das atividades de prática de educação física e desportos na Corporação;",
+            "II - organizar, orientar, coordenar e controlar as atividades de:",
+            "a) preparo de equipes do CFAE destinadas à participaç ão em competições externas; e",
+            "b) olimpíadas e outras competições de caráter interno no Corpo de Bombeiros Militar.",
+            "III - propor normas técnicas pertinentes às atividades de sua competência;"
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 85 (caput e incisos I-III)",
+          "ocr": "o espaçamento quebrado em \"participaç ão\" é defeito de OCR da fonte, reproduzido como está",
+          "leitura": "em AL não existe um Centro autônomo de Educação Física — ela é apenas UMA das 5 seções do CFAE (ao lado das Seções Técnica, de Meios, e de Administração), sem chefia, chefia adjunta ou subseções próprias."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "III) Por meio do Órgão de Pesquisa, Ensino, Treinamento e Avaliação - OPETA/ABM, executar as atividades de pesquisa, ensino, treinamento e avaliação, para formação, desenvolvimento e aprimoramento profissional dos bombeiros militares por meio de suas escolas militares, bem como, de civis por meio de cur sos e treinamentos realizados pela Escola Serviços Civis Auxiliares de Bombeiro ; promover e fomentar a prática de atividades físicas , treinamento, avaliação e pesquisa por intermédio da Escola de Educação Física , mantendo atualização técnica constante da comissão permanen te de pesquisa e avaliação física e consequente aprimoramento da educação física da corporação ; [...]"
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 36 (inciso III)",
+          "ocr": "os espaçamentos quebrados em \"cur sos\", \"física ,\", \"permanen te\" e \"física ;\" são defeito de OCR da fonte, reproduzidos como estão",
+          "leitura": "RS também não tem centro autônomo: a Educação Física é uma \"Escola\" (Escola de Educação Física) dentro do órgão OPETA, que por sua vez está dentro da Academia de Bombeiro Militar (ABM) — um nível intermediário: nem centro pleno (MT), nem seção simples (AL), mas uma escola ao lado de outra escola (Serviços Civis Auxiliares) dentro de uma divisão maior de pesquisa/ensino/treinamento."
+        }
+      ],
+      "comparacao": [
+        "Há 3 níveis de status orgânico para a mesma função: Centro autônomo, subordinado só à Diretoria de Ensino (MT) > Escola dentro de uma divisão maior de pesquisa/ensino/treinamento (RS) > Seção simples dentro de outro centro de formação (AL).",
+        "Quanto maior o status, mais estrutura de comando própria: MT tem Chefia + Chefia Adjunta + 2 Seções + Subseções (a estrutura mais robusta das três); AL não tem nenhuma chefia dedicada — quem responde é o Comandante do CFAE.",
+        "Um Centro próprio (MT) custa mais postos de comando (Chefia, Chefia Adjunta) mas dá autonomia orçamentária e de planejamento à Educação Física; uma Seção (AL) é mais enxuta, mas fica sem voz própria nas decisões do CFAE.",
+        "É preciso decidir se a Educação Física do CBMRO — que hoje, no modelo herdado de MT, já tem essa estrutura ampla — deve mantê-la, ou se cabe simplificação para um nível organizacional mais baixo."
+      ],
+      "ligadas": [
+        "Tema — ensino-instrucao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — ensino-instrucao — vinculacao-hierarquica-orgao-ensino",
+      "trilha": "reg",
+      "key": "ensino-instrucao",
+      "chapterId": "reg:ensino-instrucao",
+      "titulo": "Decisão — ensino-instrucao — vinculacao-hierarquica-orgao-ensino",
+      "questao": "O órgão central de Ensino do CBMRO deve ser (a) uma Diretoria própria e dedicada só a Ensino/Instrução/Pesquisa, (b) um Departamento de nível mais alto que também acumula Pesquisa Científica/Tecnologia da Informação, (c) um Departamento que também acumula Cultura e patrimônio histórico, (d) um órgão fundido com a Gestão de Pessoas, ou (e) um Centro de nível mais baixo, subordinado à Diretoria de Recursos Humanos?",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "A Diretoria de Ensino, Instrução e Pesquisa é o órgão responsável pela execução, apoio, planejamento, coordenação, fiscalização e controle das atividades referentes ao ensino e instrução dos Oficiais e Praças, fomentando a pesquisa e viabilizando a instrução continuada dos quadros no âmbito da instituição. Parágrafo Único O Centro de Ensino e Instrução de Bombeiros-CEIB, o Centro de Capacitação Física-CCF e a Escola Dom Pedro II são Unidades de execução do ensino com subordinação técnica à DEIP."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 160",
+          "ocr": null,
+          "leitura": "a DEIP é uma Diretoria dedicada só a ensino/instrução/pesquisa, com três unidades de execução subordinadas tecnicamente a ela (CEIB, CCF, Escola). É um modelo de \"diretoria especializada única\"."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 81. O Centro de Formação, Aperfeiçoamento e Especializ ação - CFAE é o órgão de apoio do sistema de recursos humanos, subo rdinado à Diretoria de Recursos Humanos, incumbindo da formação, da capacitação, do aperfeiçoamento, do treinamento e da instrução especializada dos oficiais e praças da Co rporação e, eventualmente, de bombeiros militares de outras corporações, cabendo-lhe ainda:"
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 81",
+          "ocr": "os espaçamentos quebrados em \"Especializ ação\", \"subo rdinado\" e \"Co rporação\" são defeito de OCR da fonte, reproduzidos como estão",
+          "leitura": "AL não tem uma diretoria própria para ensino — o CFAE é um \"órgão de apoio do sistema de recursos humanos\", hierarquicamente SUBORDINADO à Diretoria de Recursos Humanos. É um nível a menos que o modelo de MT."
+        },
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020)",
+          "verbatim": [
+            "Art. 47. O Departamento de Ensino, Pesquisa, Ciência e Tecnologia – DEPCT possui a seguinte estrutura:",
+            "I - Assessoria Técnico-Administrativa – ASTAD;",
+            "II - Seção de Apoio Administrativo – SEAAD.",
+            "Parágrafo único. O Museu Histórico – MUSEU subordina-se administrativa e operacionalmente ao DEPCT.",
+            "Art. 48. São órgãos de direção setorial subordinados ao DEPCT:",
+            "I - Diretoria de Ensino – DIREN;",
+            "II - Diretoria de Pesquisa, Ciência e Tecnologia – DIREP;",
+            "III -Diretoria de Tecnologia da Informação e Comunicação – DITIC"
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 47 e Art. 48",
+          "ocr": null,
+          "leitura": "DF eleva o órgão a Departamento — nível acima de Diretoria — e reúne sob ele TRÊS diretorias setoriais (Ensino; Pesquisa/Ciência/Tecnologia; Tecnologia da Informação e Comunicação), além do Museu Histórico. O escopo de \"ensino\" em DF inclui inovação tecnológica institucional, algo que MT não vincula ao tema."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.83. O Departamento-Geral de Cultura, Educação e Pesquisa (DGCEP), o órgão de direção -geral, diretamente subordinado ao Comandante -Geral, responsável pela gestão do s istema de ensino bombeiro militar, das atividades de pesquisa, relacionados à formação, à capacitação, ao aperfeiçoamento, à especialização, à extensão e a qualificação dos oficiais e praças, bem como pela promoção da cultura."
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 83",
+          "ocr": "os espaçamentos quebrados em \"direção -geral\", \"s istema\" e \"Comandante -Geral\" são defeito de OCR da fonte, reproduzidos como estão",
+          "leitura": "PA também usa Departamento, subordinado diretamente ao Comandante-Geral, mas soma ENSINO + CULTURA (inclui, noutros artigos, um Centro de Memória e a preservação do patrimônio histórico-cultural) — um escopo diferente do de DF (que soma tecnologia, não cultura)."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "Art. 40. A Diretoria de Gestão de Pessoas, Ensino e Instrução é responsável pelo gerenciamento de pessoas da Corporação, incumbindo-se:",
+            "IV - pela gestão do ensino e instrução da corporação;",
+            "V - pela política de ensino, atuando na supervisão, na coordenação, na fiscalização, no controle e na execução das atividades de ensino, instrução e pesquisa rela - cionadas com a formação, o aperfeiçoamento e a especialização de oficiais e praças; e"
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 40 (caput e incisos IV-V)",
+          "ocr": "a quebra \"rela - cionadas\" é defeito de OCR da fonte, reproduzida como está",
+          "leitura": "RN funde ENSINO com GESTÃO DE PESSOAS num único órgão (DGPEI) — quem cuida de carreira, promoção e cadastro do efetivo também comanda a instrução. É o oposto do modelo de MT, que mantém Ensino e Pessoal como diretorias separadas (a de Pessoal é tratada no tema `pessoal-quadros`)."
+        }
+      ],
+      "comparacao": [
+        "Há pelo menos 4 modelos de status hierárquico para a mesma função: (1) Diretoria dedicada e isolada (MT); (2) Centro subordinado dentro da área de Pessoal, um nível abaixo (AL); (3) Departamento — nível acima de Diretoria — com múltiplas diretorias setoriais (DF, PA); (4) fusão total com a Diretoria de Gestão de Pessoas (RN).",
+        "DF e PA concordam em elevar o órgão a Departamento, mas divergem no que ele agrega além de ensino: DF soma Tecnologia da Informação institucional; PA soma Cultura/patrimônio histórico. Nenhum dos dois soma os dois ao mesmo tempo.",
+        "Quanto mais amplo o escopo do órgão (RN, PA, DF), maior o poder de coordenação centralizada num só comando; quanto mais restrito (MT) ou rebaixado (AL), maior a especialização, mas exige mais coordenação entre órgãos distintos (ensino, pessoal, TI, cultura ficam cada um com seu diretor).",
+        "Rebaixar o ensino a um Centro subordinado à área de Pessoal (modelo AL) reduz a autonomia orçamentária e decisória do órgão de ensino, frente ao modelo de Diretoria própria que o CBMRO já usa (MT)."
+      ],
+      "ligadas": [
+        "Tema — ensino-instrucao",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL",
+        "Fonte — RI-DF",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — Regulamento-RN"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — organizacao-geral — modelo-niveis-organizacionais",
+      "trilha": "reg",
+      "key": "organizacao-geral",
+      "chapterId": "reg:organizacao-geral",
+      "titulo": "Decisão — organizacao-geral — modelo-niveis-organizacionais",
+      "questao": "Em quantos níveis hierárquico-organizacionais o Regulamento vai estruturar o CBMRO, e como cada nível vai se chamar? A minuta atual (herdada de MT) usa 7 níveis; outras fontes usam modelos de 3 níveis com nomenclaturas diferentes entre si.",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "O Corpo de Bombeiros Militar do Estado de Rondônia será estruturado em níveis de Direção Geral, Decisão Colegiada, Direção Superior, Assessoramento Superior, Direção Setorial, Apoio e Execução."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 4",
+          "ocr": null,
+          "leitura": "Modelo com 7 categorias distintas de nível — mais granular, separa \"Decisão Colegiada\" (provavelmente Conselho Superior) e \"Assessoramento Superior\" como níveis próprios, além de Direção Geral, Direção Superior e Direção Setorial como três patamares de direção. É o texto já adaptado para \"Rondônia\" no lugar de \"Mato Grosso\" (adaptação de nome do estado, não de conteúdo)."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Art. 3º O Corpo de Bombeiros Militar do Estado de Alagoas é composto por órgãos de Direção, órgãos de Apoio e órgãos de Execução."
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 3",
+          "ocr": null,
+          "leitura": "Modelo clássico de 3 categorias (Direção / Apoio / Execução), sem subdividir \"Direção\" em níveis internos."
+        },
+        {
+          "fonte": "Pará — MINUTA de RI (Decreto em tramitação, 2026)",
+          "verbatim": [
+            "Art.4º Para desempenhar eficientemente sua missão institucional, o Corpo de Bombeiros Militar do Pará (CBMPA) tem a seguinte composição: 1. Órgãos de Direção: 1.1 Órgãos de Direção Geral: [...] 1.2 Órgãos de Direção Intermediária: [...] 1.3 Órgãos de Direção Setorial: [...] 2. Órgãos de Apoio: [...] 3. Órgãos de Execução: [...]"
+          ],
+          "citacao": "cf. CBMPA, MINUTA de RI (Decreto em tramitação, 2026), Art. 4",
+          "ocr": null,
+          "leitura": "Também usa a base de 3 categorias (Direção/Apoio/Execução), mas subdivide \"Direção\" em 3 sub-níveis (Geral, Intermediária, Setorial) — uma posição intermediária entre o modelo simples de AL e o modelo de 7 níveis de MT."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "Art. 5º O Corpo de Bombeiros Militar é estruturado em órgãos de direção superior, de assessoramento e de execução."
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 5",
+          "ocr": null,
+          "leitura": "Modelo de 3 categorias, mas com nomenclatura própria: substitui \"Apoio\" por \"Assessoramento\" — a nomenclatura tem peso jurídico-prático (assessoramento sugere consultoria técnica; apoio sugere logística/meio), então não é sinônimo direto do modelo de AL/PA."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 2º. O Corpo de Bombeiros Militar estrutura-se em três Níveis de Gerenciamento integráveis para órgãos específicos nos seguintes termos: I. Nível Institucional; órgãos de Direção Estratégica [...] II. Nível Departamental; órgãos de Apoio Tático [...] III. Nível Operacional; órgãos de Execução [...]"
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 2",
+          "ocr": null,
+          "leitura": "Também 3 níveis, mas com terceira nomenclatura diferente (Institucional/Departamental/Operacional) e explicita a \"técnica da linha-staff\" (Art. 18) como fundamento teórico da estrutura — é o modelo mais elaborado teoricamente entre os de 3 níveis."
+        }
+      ],
+      "comparacao": [
+        "Quantidade de níveis: MT usa 7; AL usa 3 \"puros\"; PA usa 3 com a Direção subdividida em 3 (equivale a 5 patamares no total); RN usa 3; RS usa 3. A maioria das fontes converge para um modelo enxuto de 3 categorias — MT é a única com 7.",
+        "Nomenclatura do \"meio-campo\" (entre Direção e Execução): AL/PA chamam de \"Apoio\"; RN chama de \"Assessoramento\"; RS chama de \"Apoio Tático\" (dentro do Nível Departamental). Escolher a nomenclatura afeta como o Regulamento vai rotular órgãos como Diretoria de Logística, RH, TI etc.",
+        "Manter os 7 níveis de MT preserva a estrutura que provavelmente já é referência de outros trechos da minuta (Direção Setorial etc. aparecem noutros artigos primários herdados de MT); adotar um modelo de 3 níveis simplifica a redação, mas exige reclassificar cada órgão da LOB de RO num dos 3 baldes.",
+        "Nenhuma fonte contradiz diretamente a existência de níveis — a divergência é de GRANULARIDADE (quantos patamares) e de RÓTULO (como cada patamar se chama), o que muda a leitura de \"quem está em que nível\" em todo o resto do Regulamento."
+      ],
+      "ligadas": [
+        "Tema — organizacao-geral",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL",
+        "Fonte — Minuta-RI-PA",
+        "Fonte — Regulamento-RN",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — pessoal-quadros — regime-servidores-civis",
+      "trilha": "reg",
+      "key": "pessoal-quadros",
+      "chapterId": "reg:pessoal-quadros",
+      "titulo": "Decisão — pessoal-quadros — regime-servidores-civis",
+      "questao": "O regime de ingresso, tempo de serviço e subordinação dos servidores civis do CBM deve ficar em aberto — a ser regulamentado depois pelo Comandante-Geral —, ou já deve ser fixado agora no próprio Regulamento Geral, com vinculação e subordinação definidas?",
+      "candidatas": [
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "O Corpo de Bombeiros Militar poderá dispor de servidores civis, regidos pelas disposições da legislação que estab - elece os direitos, vantagens, obrigações e deveres dos servidores públicos estaduais, cabendo ao Comandante Geral expedir reg- ulamento acerca do ingresso, tempo de serviço, funções e respectivas limitações a serem desempenhadas por esses servidores dentro do Corpo de Bombeiros Militar, nos termos da lei."
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 56",
+          "ocr": null,
+          "leitura": "RN não fixa nada agora — remete integralmente a um regulamento futuro do Comandante-Geral. Na prática, o Regulamento Geral fica \"em branco\" quanto a onde e como os civis atuam até que esse ato complementar seja editado."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Os serviços de civis temporários contratados, nos termos da respectiva legislação, terão sua vinculação gerada por setor único do Departamento Administrativo previsto em Regimento Interno, ficando operacionalmente e administrativamente subordinados ao OCBM onde estarão lotados e prestando serviços, e sujeitos às normas internas e regulamentos da corporação."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 93",
+          "ocr": null,
+          "leitura": "RS já resolve a questão no próprio texto: cria um \"setor único\" no Departamento Administrativo como porta de entrada/controle central de todos os civis, mas a subordinação do dia a dia (operacional e administrativa) fica com o órgão (OCBM) onde o civil está lotado — um modelo de dupla vinculação (controle central + comando local)."
+        }
+      ],
+      "comparacao": [
+        "RN adia a decisão (delega ao Comandante-Geral, sem prazo); RS decide agora, no próprio Regulamento/RI, e já desenha um desenho concreto de subordinação.",
+        "O modelo RS evita lacuna normativa transitória (o CBM já sabe, desde a publicação do Regulamento, quem controla o cadastro dos civis e a quem eles respondem no dia a dia); o modelo RN dá mais flexibilidade ao Comando para desenhar depois, sob a legislação estadual de servidores civis vigente em RO.",
+        "Se o CBMRO seguir RS, precisa nomear o órgão equivalente ao \"Departamento Administrativo\" na estrutura de RO (setor único de cadastro/controle dos civis) — ponto que depende da organização definida em outro tema (`organizacao-geral`).",
+        "RN é mais genérico e remete à legislação estadual de servidores públicos; RS é mais específico e prevê expressamente civis **temporários** (contrato por tempo determinado), o que pode não cobrir eventual quadro de civis efetivos/concursados, se RO vier a ter esse tipo de vínculo."
+      ],
+      "ligadas": [
+        "Tema — pessoal-quadros",
+        "Fonte — Regulamento-RN",
+        "Fonte — RI-RS"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — seguranca-contra-incendio — modelo-estrutura-hierarquica",
+      "trilha": "reg",
+      "key": "seguranca-contra-incendio",
+      "chapterId": "reg:seguranca-contra-incendio",
+      "titulo": "Decisão — seguranca-contra-incendio — modelo-estrutura-hierarquica",
+      "questao": "Quantas camadas hierárquicas deve ter o órgão de segurança contra incêndio e pânico do CBMRO — e ele deve ter unidades territoriais nomeadas explicitamente no Regulamento (como fazem RN e RS), ou a divisão territorial fica implícita nas Unidades Operacionais (como faz MT)? As três fontes adotam modelos organizacionais diferentes.",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "A Diretoria de Segurança Contra Incêndio e Pânico tem a seguinte constituição:",
+            "1 - Diretoria Adjunta;",
+            "1.1 - Seção Administrativa - SAdm;",
+            "1.1.1 - Subseção de Protocolo;",
+            "1.1.2 - Tesouraria;",
+            "1.1.3 - Subseção de Arrecadação e Estatística.",
+            "2 - Coordenadoria de Estudos e Análise de Processos – CCIP/1;",
+            "2.1 - Seção de Análise de Processos;",
+            "2.2 - Seção de Arquivos.",
+            "3 - Coordenadoria de Fiscalização – CCIP/2;",
+            "3.1 - Seção de Fiscalização;",
+            "3.2 - Seção de Credenciamento e Cadastramento.",
+            "4 - Coordenadoria de Legislação e Pareceres – CCIP/3;",
+            "4.1 - Seção de Legislação e Normatização;",
+            "4.2 - Seção de Pareceres.",
+            "5 - Coordenadoria de Perícia Técnica – CCIP/4;",
+            "6 - Coordenadoria de Hidrantes – CCIP/5;",
+            "7 - Seções de Segurança Contra Incêndio e Pânico - SSCIP."
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199",
+          "ocr": null,
+          "leitura": "MT tem 3 camadas (Diretoria → Coordenadoria → Seção), com 5 coordenadorias intermediárias entre a Diretoria e as seções técnicas, mais as SSCIP descentralizadas nas Unidades Operacionais (sem nomear regiões)."
+        },
+        {
+          "fonte": "Alagoas — RI (Decreto nº 408/2001)",
+          "verbatim": [
+            "Parágrafo único. A Diretoria de Serviços Técnicos compreende:",
+            "I - o Diretor;",
+            "II - a Seção de Estudos e Projetos;",
+            "III - a Seção de Testes, Vistorias e Pareceres;",
+            "IV - a Seção de Perícia e Pesquisas;",
+            "V - a Seção de Hidrantes; e",
+            "VI - a Seção de Expediente e Arquivo"
+          ],
+          "citacao": "cf. CBMAL, RI (Decreto nº 408/2001), Art. 58",
+          "ocr": null,
+          "leitura": "AL usa só 2 camadas — a Diretoria comanda 6 seções técnicas diretamente, sem nenhuma coordenadoria intermediária. Estrutura mais enxuta que a de MT."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "§ 8º O Primeiro Centro de Atividades Técnicas (1º CA T) é a unidade da Diretoria de Atividades Técnicas, sediada em Mossoró/RN, responsável pelas atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios localizados no interior do Estado do Rio Grande do Norte.",
+            "§ 9º O Segundo Centro de Atividades Técnicas (2º CA T) é a unidade da Diretoria de Atividades Técnicas, sediada em Caicó/RN, responsável pelas atividades relacionadas à prevenção contra incêndio e controle de pânico nas edificações e áreas de risco nos municípios localizados no interior do Estado do Rio Grande do Norte.",
+            "(grafia \"CA T\" reproduzida como consta no OCR da fonte — defeito de digitalização, não erro de transcrição)"
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 44, §§ 8-9",
+          "ocr": null,
+          "leitura": "RN organiza a estrutura interna em \"Centros\" temáticos (não coordenadorias nem seções) e, além disso, nomeia explicitamente unidades territoriais fixas — 1º CAT em Mossoró, 2º CAT em Caicó — dentro do próprio texto do Regulamento, algo que nem MT nem AL fazem."
+        }
+      ],
+      "comparacao": [
+        "MT e AL divergem em quantas camadas existem entre a Diretoria e o trabalho técnico (3 × 2) — não é só uma questão de nome, é uma escolha de quantos níveis de chefia intermediária o órgão sustenta.",
+        "RN diverge nas duas dimensões: usa \"Centro\" em vez de \"Coordenadoria\"/\"Seção\" (nomenclatura própria) e ainda fixa no próprio Regulamento os municípios-sede das unidades regionais — uma decisão de amarrar a estrutura à geografia do Estado, que MT e AL não tomam neste capítulo.",
+        "Se o CBMRO adotar o modelo de MT (3 camadas, sem regionalização nomeada), mantém a estrutura já adaptada na primária, mas sustenta mais cargos de chefia intermediária (5 coordenadores) do que AL sustentaria com o mesmo efetivo.",
+        "Se adotar o modelo de AL (2 camadas), simplifica a cadeia de comando, mas perde a separação MT faz entre \"estudar/analisar\" (CCIP 1) e \"fiscalizar\" (CCIP 2) — no modelo de AL as duas coisas dividem seções, não coordenadorias.",
+        "Nomear unidades territoriais fixas no Regulamento (como RN) trava a estrutura à divisão administrativa atual do Estado — mudança de sede de unidade exigiria alterar o próprio Regulamento, não só um ato interno."
+      ],
+      "ligadas": [
+        "Tema — seguranca-contra-incendio",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-AL",
+        "Fonte — Regulamento-RN"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — seguranca-contra-incendio — nivel-pericia-tecnica",
+      "trilha": "reg",
+      "key": "seguranca-contra-incendio",
+      "chapterId": "reg:seguranca-contra-incendio",
+      "titulo": "Decisão — seguranca-contra-incendio — nivel-pericia-tecnica",
+      "questao": "Em que nível hierárquico deve ficar a perícia técnica de incêndio/explosão no CBMRO, e ela deve ser uma unidade própria ou fundida com a vistoria/fiscalização? As três fontes respondem de formas diferentes.",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013) — artigo adaptado (`adapted: true`)",
+          "verbatim": [
+            "Compete Coordenadoria de Pericias Técnicas – CCIP 4:",
+            "I - assessorar o Diretor nos assuntos de Perícias de Incêndios e/ou Explosões e nos assuntos relacionados com os testes dos materiais de segurança contra incêndio;",
+            "[...]",
+            "XII - emitir, quando for o caso, Certificado de Capacidade Técnica das firmas habilitadas junto a DSCIP/CBMRO;"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215",
+          "ocr": null,
+          "leitura": "MT trata a perícia como uma coordenadoria própria (CCIP 4), no mesmo nível hierárquico da fiscalização (CCIP 2) e da legislação (CCIP 3), mas separada da vistoria. O trecho citado já traz a adaptação de nomenclatura do JSON (`adapted: true`): o original de Mato Grosso dizia \"DSCIP/CBMMT\" onde a minuta do CBMRO passou a dizer \"DSCIP/CBMRO\" — é ajuste de rótulo institucional, o `caput` e a competência descrita são os mesmos do original."
+        },
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020)",
+          "verbatim": [
+            "Art. 53. São órgãos de direção setorial subordinados ao DESEG:",
+            "I - Diretoria de Vistorias – DIVIS;",
+            "II - Diretoria de Estudos e Análise de Projetos – DIEAP;",
+            "III - Diretoria de Investigação de Incêndio – DINVI."
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 53",
+          "ocr": null,
+          "leitura": "DF eleva a investigação/perícia de incêndio (DINVI) ao mesmo nível hierárquico da vistoria (DIVIS) e da análise de projetos (DIEAP) — as três são \"diretorias de direção setorial\" subordinadas diretamente ao Departamento (DESEG). É um nível mais alto que a coordenadoria de MT."
+        },
+        {
+          "fonte": "Rio Grande do Norte — Regulamento Geral (Decreto nº 31.139/2021)",
+          "verbatim": [
+            "§ 6º O Centro de Vistorias e Perícias de Incêndio tem por competência realizar vis- torias em edificações e áreas de risco, públicas e privadas destinadas à reunião de público e demais natureza de ocupações, nos aspectos relacionados à proteção con- tra incêndio e pânico, bem como realizar perícias de incêndios e explosões em locais sinistrados para fins exclusivos de estudo e pesquisa.",
+            "(hifens \"vis- torias\" e \"con- tra\" reproduzidos como constam no OCR — quebra de linha do PDF original, não erro de digitação)"
+          ],
+          "citacao": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 44, § 6º",
+          "ocr": null,
+          "leitura": "RN funde vistoria e perícia numa única unidade (\"Centro de Vistorias e Perícias de Incêndio\"), com a ressalva de que a perícia ali serve só a \"fins exclusivos de estudo e pesquisa\" — não substitui perícia criminal/judicial. É o modelo mais enxuto das três fontes."
+        }
+      ],
+      "comparacao": [
+        "As três fontes discordam em DUAS dimensões ao mesmo tempo: (1) o nível hierárquico da perícia (coordenadoria em MT, diretoria em DF, \"centro\" em RN — nomenclaturas e status diferentes) e (2) se ela é separada da vistoria (MT, DF) ou fundida (RN).",
+        "Elevar a perícia a diretoria própria (modelo DF) dá mais peso institucional e autonomia orçamentária/de pessoal ao setor, mas exige mais cargos de chefia que o modelo atual do CBMRO (adaptado de MT).",
+        "Fundir vistoria e perícia (modelo RN) simplifica a estrutura e evita duplicidade de pessoal técnico, mas RN já avisa no próprio texto que essa perícia \"de estudo e pesquisa\" não tem o mesmo alcance da perícia formal de MT/DF (que emite laudos periciais com efeito para processos e seguradoras) — juntar as duas funções pode diluir essa competência mais robusta.",
+        "Manter o modelo de MT (coordenadoria própria, separada da vistoria) preserva o texto já adaptado para o CBMRO, sem exigir reestruturação."
+      ],
+      "ligadas": [
+        "Tema — seguranca-contra-incendio",
+        "Fonte — Regulamento-MT",
+        "Fonte — RI-DF",
+        "Fonte — Regulamento-RN"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — seguranca-contra-incendio — recurso-administrativo-2a-instancia",
+      "trilha": "reg",
+      "key": "seguranca-contra-incendio",
+      "chapterId": "reg:seguranca-contra-incendio",
+      "titulo": "Decisão — seguranca-contra-incendio — recurso-administrativo-2a-instancia",
+      "questao": "Quem julga o recurso administrativo contra uma notificação, multa, interdição ou embargo aplicados pela fiscalização de segurança contra incêndio? A primária (MT) prevê os poderes de sanção mas não diz quem decide o recurso; as alternativas respondem de formas diferentes entre si.",
+      "candidatas": [
+        {
+          "fonte": "Mato Grosso (primária) — Regulamento Geral (Portaria nº 009/BM-8/2013)",
+          "verbatim": [
+            "São competências da Diretoria de Segurança Contra Incêndio e Pânico:",
+            "[...]",
+            "VIII - notificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências desta legislação e normas técnicas do Corpo de Bombeiros Militar;"
+          ],
+          "citacao": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198",
+          "ocr": null,
+          "leitura": "MT define o poder de sancionar (notificar/multar/interditar/embargar) mas, em toda a seção do Regulamento dedicada a esta Diretoria, não há artigo dizendo quem julga um recurso contra essas sanções — é a lacuna que obriga a decisão."
+        },
+        {
+          "fonte": "Distrito Federal — RI (Portaria nº 24/2020)",
+          "verbatim": [
+            "Art. 56. Ao chefe do DESEG, além das atribuições previstas no art. 37, compete:",
+            "[...]",
+            "VI - solucionar recursos contra decisões dos diretores subordinados."
+          ],
+          "citacao": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 56",
+          "ocr": null,
+          "leitura": "DF centraliza a segunda instância no chefe do próprio Departamento (DESEG) — um único julgador para todo o Distrito Federal, sem distinção territorial."
+        },
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "§ 1º Por meio das Divisões de Segurança Contra Incêndio - DSCI, dos Comandos Regionais de Bombeiro Militar – CRBM, gerenciar as atividades de segurança contra incêndio, fiscalização e investigação de sinistros em suas respectivas áreas territoriais, [...] são responsáveis por subsidiar relatórios técnicos, coordenar recursos para operações de segurança contra incêndio, emitir autos de imposição de penalidade, controlar a regularidade documental dos processos fiscalizatórios e presidir recursos administrativos de segunda instância, podendo receber competências adicionais por Resoluções Técnicas do DSPCI e Portarias do Comandante-Geral."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 42, § 1º",
+          "ocr": null,
+          "leitura": "RS descentraliza a segunda instância para o Comando Regional (CRBM/DSCI) de cada área territorial — cada região do Estado julga seus próprios recursos, sob a coordenação normativa do DSPCI central."
+        }
+      ],
+      "comparacao": [
+        "DF e RS resolvem a mesma lacuna de formas opostas: DF concentra a decisão num único chefe central; RS distribui a decisão para cada comando regional. Não dá para adotar as duas ao mesmo tempo — é preciso escolher um modelo de governança.",
+        "Centralizar (modelo DF) garante uniformidade de critério em todo o Estado, mas pode sobrecarregar a chefia central e atrasar a resposta ao autuado em municípios distantes da capital.",
+        "Descentralizar (modelo RS) dá resposta mais rápida ao autuado, mas exige mecanismo de uniformização de critério entre comandos regionais (RS resolve isso com \"Resoluções Técnicas do DSPCI\"), sob risco de decisões diferentes para casos semelhantes em regiões diferentes.",
+        "Como MT (a primária, já adaptada para o CBMRO) simplesmente não aborda o tema nesta seção, qualquer escolha aqui preenche uma lacuna, não substitui um texto já adotado."
+      ],
+      "ligadas": [
+        "Tema — seguranca-contra-incendio",
+        "Fonte — RI-DF",
+        "Fonte — RI-RS",
+        "Decisão — ri — crbm — descentralizacao-seguranca-contra-incendio"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — servico-interno-dia — cronograma-diario-horarios",
+      "trilha": "reg",
+      "key": "servico-interno-dia",
+      "chapterId": "reg:servico-interno-dia",
+      "titulo": "Decisão — servico-interno-dia — cronograma-diario-horarios",
+      "questao": "Qual quadro de horários da rotina diária (alvorada, refeições, instrução, educação física, silêncio) o CBMRO deve adotar? A redação de Alagoas, além de propor horários diferentes dos de Sergipe, tem uma inconsistência interna (itens numerados duplicados com horários que não batem entre si) que precisa ser reconhecida antes de qualquer aproveitamento.",
+      "candidatas": [
+        {
+          "fonte": "Sergipe — RISD (atual. 2022)",
+          "verbatim": [
+            "Fica estabelecido o seguinte quadro de atividades diárias para o serviço operacional em todas as OBM: 05h30min Alvorada 06h00min Café 06h30min Faxina/Limpeza nas Viaturas, Equipamentos e Instalações 07h15min Toque de Parada 07h30min Parada Diária 07h40min Conferência de Material 08h00min Hasteamento do pavilhão nacional 09h30min Instrução de Prontidão 11h30min Almoço 18h00min Arreamento do pavilhão nacional 18h30min Jantar 22h00min Silêncio"
+          ],
+          "citacao": "cf. CBMSE, RISD (atual. 2022), Art. 54",
+          "ocr": null,
+          "leitura": "um único quadro fixo, sequencial, com folga para o Comandante da OBM ajustar"
+        },
+        {
+          "fonte": "Alagoas — Norma Operacional nº 04 (CBMAL)",
+          "verbatim": [
+            "Art. 1º Instituir o seguinte cronograma de atividades diárias para o serviço operacional dos Postos de Bombeiros, a ser cumprido na íntegra:",
+            "I- 07 (sete) horas - Revista matinal (...) II- 07 (sete) horas e 30 (trinta) minutos - Conferência dos equipamentos e materiais, manutenção de 1º escalão e deslocamento para o teste de funcionamento das viaturas (...) III- Imediatamente após o retorno do deslocamento para teste de funcionamento das viaturas - Armar-geral (...) IV- 10 (dez) horas e 30 (trinta) minutos - Trabalho de Instrução de Bombeiro (...) III- 09 (nove) horas - Trabalho de Instrução de Bombeiro (...) IV- 10 (dez) horas - Armar-geral (...) V- 12 (doze) horas - Almoço (...) VI- 15 (quinze) horas - Revista vespertina (...) VII- 15 (quinze) horas e 30 (trinta) minutos - Educação Física (...) VIII- 17 (dezessete horas) - Período para prática desportiva livre (...) VI- 16 (dezesseis) horas - Educação Física (...) IX - 19 (dezenove) horas - Jantar (...) VII - 18 (dezoito) horas - Jantar (...) VIII- 20 (vinte) horas e 30 (trinta) minutos - Revista noturna (...) IX- 21 (vinte e uma) horas - Aquecimento das viaturas (...) IX- 22 (vinte e duas) horas - Silêncio (...) X- 05 (cinco) horas e 30 (trinta) minutos - Alvorada (...) XI- 06 (seis) horas - Faxina geral (...) XII- 06 (seis) horas e 30 (trinta) minutos - Café da manhã (...)"
+          ],
+          "citacao": "cf. CBMAL, Norma Operacional nº 04, Art. 1",
+          "ocr": null,
+          "leitura": "mesmo com a duplicidade, dá para extrair a intenção: revista matinal mais tarde"
+        }
+      ],
+      "comparacao": [
+        "SE começa o dia às 05h30 (alvorada) e concentra a instrução num único bloco de 45 min",
+        "AL tem revistas 3x ao dia (matinal, vespertina, noturna) e educação física obrigatória",
+        "Adotar o cronograma de AL exige primeiro decidir qual das duas versões conflitantes",
+        "Silêncio às 22h converge nas duas fontes — não é ponto de decisão."
+      ],
+      "ligadas": [
+        "Tema — servico-interno-dia",
+        "Fonte — RISD-SE",
+        "Fonte — NO-04-AL"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — servico-interno-dia — documentacao-relatorio-servico-diario",
+      "trilha": "reg",
+      "key": "servico-interno-dia",
+      "chapterId": "reg:servico-interno-dia",
+      "titulo": "Decisão — servico-interno-dia — documentacao-relatorio-servico-diario",
+      "questao": "O CBMRO deve exigir documentação formal do serviço diário (livro/relatório com prazo de entrega)? O SE (primária), nestes artigos, não fixa essa obrigação — só exige \"parte de serviço\" para incidentes pontuais (dano de material, ocorrência). RR e Alagoas propõem dois instrumentos e prazos diferentes entre si.",
+      "candidatas": [
+        {
+          "fonte": "Roraima — INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "verbatim": [
+            "Art. 9º Das documentações:",
+            "I – dar ciência no livro do Coordenador de Dia; II – confeccionar o Extrato Diário do Superior de Dia e o encaminhar ao Comandante do COCI até às 09h30 do término do serviço, salvo em casos fortuitos e/ou força maior, devidamente fundamentados (formalmente) em seu Extrato Diário. Prescrições Gerais",
+            "Art. 28 Das documentações:",
+            "I – dar ciência no livro do Oficial de Dia/Comandante do Socorro da Capital e do Interior; II – confeccionar o Livro Diário do Coordenador de Dia e o encaminhar ao Comandante do COCI, concluso, até às 08h30 do término do serviço, salvo em casos fortuitos e/ou força maior, legalmente fundamentado e devidamente documentado em Livro Diário, com prazo limite até a passagem do serviço do dia seguinte; III – solicitar a ciência do Superior de Dia no Livro Diário do Coordenador. Prescrições Gerais"
+          ],
+          "citacao": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 28",
+          "ocr": null,
+          "leitura": "RR exige um Livro Diário OU Extrato Diário por papel de serviço, com prazo de"
+        },
+        {
+          "fonte": "Alagoas — Norma Operacional nº 06 (CBMAL)",
+          "verbatim": [
+            "Art. 1º Instituir o Relatório de Serviço Diário, anexo único desta norma operacional.",
+            "§ 1º O Relatório de Serviço Diário é um documento oficial instituído pela Administração Pública, servindo como base legal para subsidia r procedimentos administrativos. § 2º No modelo adotado como anexo único estão os dados mínimos a serem inseridos no relatório oficial, podendo os diversos órgãos do CBMAL sugerir a inserção, no surgimento de eventual necessidade, de novos campos. Tais sugestões serão implementadas após aprovação deste Subcomando que autorizará, por meio de despacho, o órgão competente alterá-lo.",
+            "Art. 2º Deverá ser preenchido e publica do no sistema de informação operacional utilizado pelo CBMAL pelos Comandantes de Prontidão, fiscalizado pelo Comandante de Posto e Comandante de Subgrupamento.",
+            "Art. 3º O Comandante de Posto de Bombeiros deverá, b aseado nos dados dos Relatórios de Serviço Diário, elaborar e fazer publicar no sistema de informação operacional utilizado pelo CBMAL, até o quinto dia útil de cada mês, o Relatório Mensal de Serviços do Posto de Bombeiros sob sua responsabilidade."
+          ],
+          "citacao": "cf. CBMAL, Norma Operacional nº 06, Art. 3",
+          "ocr": null,
+          "leitura": null
+        },
+        {
+          "fonte": "Alagoas — Norma Operacional nº 07 (CBMAL)",
+          "verbatim": [
+            "Art. 1º Instituir o Relatório Mensal de Serviços do Posto de Bombeiros , anexo único desta norma operacional."
+          ],
+          "citacao": "cf. CBMAL, Norma Operacional nº 07, Art. 1",
+          "ocr": null,
+          "leitura": "AL exige um Relatório de Serviço DIÁRIO (preenchido pelo Comandante de"
+        },
+        {
+          "fonte": "Alagoas — DOB nº 05 (Rotina Diária dos Postos de Bombeiros) — reforço acrescentado 2026-07-22",
+          "verbatim": [
+            "Todas as alterações relativas à rotina diária operacional devem ser lançadas no Relatório de Serviço Diário do respectivo Posto de Bombeiros, a ser definido em norma operacional de bombeiro. O Relatório de Serviço Diário é um documento oficial instituído pel a Administração Pública, servindo como base legal para subsidiar procedimentos administrativos. Além disso, é o documento da rotina diária a ser fiscalizado pelo Comandante de Posto e Comandante de Subgrupamento. Ele deve ficar à disposição por ocasião das inspeções, e deve ser fiscalizado e assinado semanalmente pelo Cmt PB."
+          ],
+          "citacao": "cf. CBMAL, DOB nº 05 (Rotina Diária dos Postos de Bombeiros, rev. 2013), seção 11",
+          "ocr": null,
+          "leitura": "DOB-05 reforça a mesma NO-06/07 (mesmo ente, AL): confirma o Relatório de Serviço Diário como documento oficial no nível do Posto, acrescentando uma cadência que a NO-06 não detalhava — fiscalização e assinatura SEMANAL pelo Cmt PB, além da consolidação mensal pelo Comandante do Posto já mapeada acima. Não é uma regra concorrente: a semanal é um checkpoint intermediário que coexiste com o prazo mensal do 5º dia útil — mesma cadeia de documentos, mais um nível de fiscalização."
+        }
+      ],
+      "comparacao": [
+        "RR fixa prazo por HORÁRIO do mesmo dia (rigor operacional, encaminhamento a uma central);",
+        "RR usa \"Livro/Extrato Diário\" preenchido pelo próprio oficial de serviço, com ciência",
+        "O SE (primária) não prevê nenhum dos dois — só \"parte de serviço\" pontual para incidentes.",
+        "Se o CBMRO decidir formalizar, a escolha entre RR (prazo por horário, mais rígido) e AL"
+      ],
+      "ligadas": [
+        "Tema — servico-interno-dia",
+        "Fonte — INOp-RR",
+        "Fonte — NO-06-AL",
+        "Fonte — NO-07-AL",
+        "Fonte — DOB-05-AL"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — servico-interno-dia — papeis-nomenclatura-servico-interno",
+      "trilha": "reg",
+      "key": "servico-interno-dia",
+      "chapterId": "reg:servico-interno-dia",
+      "titulo": "Decisão — servico-interno-dia — papeis-nomenclatura-servico-interno",
+      "questao": "Quantos papéis compõem o serviço interno de dia do CBMRO e como cada um se chama? O SE (primária) só menciona alguns nomes de passagem (Superior de Dia, Chefe da Prontidão) sem listar a escala completa; RS e RR propõem estruturas diferentes entre si.",
+      "candidatas": [
+        {
+          "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025)",
+          "verbatim": [
+            "Art. 70. Os Regimentos Internos dos órgãos disciplinarão as escalas de serviços internos respectivos podendo ser previstos:",
+            "I) Superior de Dia ou em Sobreaviso, exercido por Oficial Superior; II) Supervisor de Dia ou em Sobreaviso, exercido por Oficial Intermediário; III) Oficial de Dia ou em Sobreaviso, exercido por Oficial Subalterno; IV) Auxiliar de Dia, exercido por Sargento; V) Comandante da Guarda do Aquartelamento, exercido por Sargento; VI) Guarda do Aquartelamento, exercido por Soldado; VII) Oficial de Operações, exercido por Oficiais; VIII) Operador do CCOB, exercido por Praça; e IX) Telefonista/Operador do COBOM (Central de Operações de Bombeiro)."
+          ],
+          "citacao": "cf. CBMRS, RI (Portaria nº 001/2025), Art. 70",
+          "ocr": null,
+          "leitura": "9 papéis de serviço interno, hierarquizados por posto/graduação, cada um com"
+        },
+        {
+          "fonte": "Roraima — INOp do Serviço Diário dos Oficiais (CBMRR)",
+          "verbatim": [
+            "Art. 7º O Superior de Dia deve assumir o serviço no Quartel do Comando-Geral diariamente às 07h30.",
+            "Art. 25 A passagem de serviço do Coordenador de Dia é realizada diariamente às 07h30.",
+            "Art. 38 O Oficial de Dia/Comandante do Socorro deve assumir o serviço na PO da área de atuação diariamente às 07h30.",
+            "Art. 48 O Oficial de Incêndio, de Salvamento e de Emergência Pré-Hospitalar deve assumir o serviço na PO a qual está escalado, diariamente às 07h30min.",
+            "Art. 57 A passagem de serviço do Oficial de Comunicação será realizada diariamente às 07h30.",
+            "Art. 67 A passagem de serviço do Oficial de Saúde será realizada diariamente às 07h30.",
+            "Art. 75 A passagem de serviço do Oficial de Correições e Disciplina será realizada diariamente às 07h30.",
+            "Art. 83 O serviço do Oficial de Sobreaviso será finalizado às 07h30 ao dia posterior à sua escala de serviço, desde que não esteja empenhado em ocorrência."
+          ],
+          "citacao": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 83",
+          "ocr": null,
+          "leitura": "RR concentra o serviço diário em 8 papéis especializados por ÁREA TÉCNICA"
+        }
+      ],
+      "comparacao": [
+        "RS organiza a escala por HIERARQUIA (posto/graduação define o papel: Oficial Superior →",
+        "RS distingue serviço interno (9 papéis) de serviço externo (7 papéis, parcialmente",
+        "O SE, nestes artigos, cita \"Superior de Dia\" (Art. 110) e \"Chefe da Prontidão\"/\"Comandante",
+        "Consequência prática: o modelo RS é mais simples de mapear direto aos postos/graduações"
+      ],
+      "ligadas": [
+        "Tema — servico-interno-dia",
+        "Fonte — RI-RS",
+        "Fonte — INOp-RR"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — servico-operacional — comando-diario-nomenclatura",
+      "trilha": "reg",
+      "key": "servico-operacional",
+      "chapterId": "reg:servico-operacional",
+      "titulo": "Decisão — servico-operacional — comando-diario-nomenclatura",
+      "questao": "Quantos papéis de comando diário o CBMRO deve ter, como cada um deve se chamar e qual a carga horária de cada um? As 4 fontes desenham estruturas diferentes para a mesma função de coordenar o serviço do dia.",
+      "candidatas": [
+        {
+          "fonte": "Sergipe (primária) — RISD (atual. 2022)",
+          "verbatim": [
+            "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Supervisor de Dia.",
+            "O serviço de Supervisor de Dia será realizado em regime adequado de 24 (vinte e quatro) horas, podendo em casos excepcionais ser de 12 (doze) horas."
+          ],
+          "citacao": "cf. CBMSE, RISD (atual. 2022), Art. 32",
+          "ocr": null,
+          "leitura": "SE tem DOIS papéis: Superior de Dia (oficial superior, sobreaviso, não presencial, 24h) acima do Supervisor de Dia (24h efetivo, presencial, comando do dia a dia)."
+        },
+        {
+          "fonte": "Roraima — INOp 01/2024 (Serviço Diário dos Oficiais)",
+          "verbatim": [
+            "Art. 13 Estão subordinados operacionalmente ao Coordenador de Dia, para pronto emprego, todo efetivo operacional escalado nas unidades da Capital e do interior do Estado, para fins de gestão, controle e despacho.",
+            "Art. 16 Nos casos em que houver necessidade de remanejamento de recursos operacionais requisitados pelas unidades do Interior, e depois de esgotados os recursos de sua unidade, o Coordenador de Dia deverá solicitar autorização para mobilizar recursos necessários ao Superior de Dia."
+          ],
+          "citacao": "cf. CBMRR, INOp 01/2024 (Serviço Diário dos Oficiais), Art. 16",
+          "ocr": null,
+          "leitura": "RR concentra a gestão operacional num único \"Coordenador de Dia\" (equivalente funcional ao Supervisor de SE), mas mantém um \"Superior de Dia\" acima dele só para autorizar remanejamentos maiores — nomenclatura parecida com SE só no nível superior, mas o papel operacional do dia a dia tem outro nome."
+        },
+        {
+          "fonte": "Alagoas — Norma Operacional nº 03 (CBMAL)",
+          "verbatim": [
+            "Art. 4º Instituir as escalas operacionais, em regime de sobreaviso, com turnos de 24 (vinte e quatro) horas, para:",
+            "I – Supervisor de Operações;",
+            "I - o serviço de Supervisor de Operações será executado por um oficial superior em cada turno, que atuará em toda a área do estado de Alagoas;",
+            "II - o serviço de Coordenador de Operações será executado por um oficial em cada turno, responsável por toda área do estado de Alagoas, devendo sediar-se, até as 18:00h, integralmente, nas instalações do Centro Integrado de Operações de Defesa Social/CIODS e após este horário nas dependências de qualquer quartel da região metropolitana de Maceió, devendo retornar ao CIODS, em qualquer horário, em casos de necessidades operacionais e as 6:45h do dia seguinte para passagem do serviço."
+          ],
+          "citacao": "cf. CBMAL, Norma Operacional nº 03, Art. 5",
+          "ocr": null,
+          "leitura": "AL usa os nomes TROCADOS em relação a SE: em AL, \"Supervisor\" é o papel de sobreaviso (equivalente ao \"Superior de Dia\" de SE) e \"Coordenador de Operações\" é o papel presencial 24h (equivalente ao \"Supervisor de Dia\" de SE). Mesma lógica de dois níveis, nomes invertidos — risco real de confusão se o CBMRO misturar fontes sem perceber a troca."
+        },
+        {
+          "fonte": "Tocantins — NGA do SIOP (Diretriz COB, Portaria nº 003/2019)",
+          "verbatim": [
+            "Art. 9º O serviço de Coordenador de Operações será de 12 horas com participação de oficiais que podem compor a escala fixa ou a escala alternada por efetivo do serviço administrativo das demais f rentes da Corporação, e utilizará o fardamento operacional, ou o agasalho quando em restrição médica."
+          ],
+          "citacao": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 9",
+          "ocr": null,
+          "leitura": "TO tem só UM papel de comando diário (\"Coordenador de Operações\", 12h) — sem um segundo nível de sobreaviso acima dele. É a estrutura mais enxuta das quatro."
+        },
+        {
+          "fonte": "Tocantins — Anexo 1 da mesma Portaria (Comando Operacional) — reforço acrescentado 2026-07-22",
+          "verbatim": [
+            "Art. 3º É o Oficial Superior designado por escala que atuará nas operações de vulto e/ou aquelas que necessitem de uma interferência em n ível estratégico, além de ser o responsável por solucionar ou buscar soluções para os saneamento s de problemáticas não - dirimidas pelo Oficial de Área.",
+            "Art. 4º É o Oficial Intermediário ou Oficial Subalterno ou Aspirante-a-Oficial responsável pelo serviço operacional do dia em uma UBM, e tem como principais atribuições:"
+          ],
+          "citacao": "cf. CBMTO, Diretriz Geral do Comando Operacional (Portaria nº 003/2019/COB), Anexo 1, Art. 4",
+          "ocr": null,
+          "leitura": "o Anexo 1 do MESMO documento de TO (jsonKey `to_corpo`, incorporado em 2026-07-22 — ver [[Fonte — Diretriz-TO]]) mostra uma estrutura DIFERENTE da citada acima (Anexo 2/NGA do SIOP, \"Coordenador de Operações\" único): aqui há \"Superior de Dia\" (oficial superior, para operações de vulto) acima de \"Oficial de Área\" (oficial intermediário/subalterno, serviço diário da UBM) — ou seja, o TO TAMBÉM tem 2 níveis quando se olha o documento inteiro, não só 1. Isso não invalida a leitura anterior (feita só a partir do Anexo 2), mas mostra que a \"estrutura mais enxuta\" de TO era um artefato de qual anexo foi lido, não da estrutura real do CBMTO como um todo — mais um ponto a favor do modelo de 2 níveis (SE/RR/AL/TO) na decisão do CBMRO."
+        }
+      ],
+      "comparacao": [
+        "Quantidade de níveis: SE, RR e AL têm 2 níveis (sobreaviso + presencial); TO, olhando só o Anexo 2 (Coordenador de Operações), parecia ter 1 nível — mas o Anexo 1 do mesmo documento mostra que TO também tem 2 (Superior de Dia + Oficial de Área), com nomenclatura própria e sem menção ao \"Coordenador de Operações\" do 193. Adotar o modelo de 2 níveis é o que as 4 fontes convergem quando lidas por completo.",
+        "Nomenclatura: SE e AL usam nomes parecidos (\"Superior/Supervisor de Dia\" vs. \"Supervisor/Coordenador de Operações\") mas TROCADOS de papel — copiar trechos de AL sem ajustar o nome inverteria a hierarquia pretendida.",
+        "Carga horária do nível presencial: SE fixa 24h (excepcionalmente 12h); TO fixa 12h fixo. Isso muda o dimensionamento de efetivo necessário para cobrir a escala.",
+        "RR acrescenta uma competência extra (autorizar remanejamento de recursos entre regiões do interior) que nem SE nem AL detalham — vale avaliar se o CBMRO precisa dessa regra dado o tamanho do território de RO."
+      ],
+      "ligadas": [
+        "Tema — servico-operacional",
+        "Fonte — INOp-RR",
+        "Fonte — NO-03-AL",
+        "Fonte — Diretriz-TO"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — servico-operacional — criterio-proporcao-folga",
+      "trilha": "reg",
+      "key": "servico-operacional",
+      "chapterId": "reg:servico-operacional",
+      "titulo": "Decisão — servico-operacional — criterio-proporcao-folga",
+      "questao": "Quem decide a proporção de folga da escala operacional (6x18, 12x36, 24x48, 24x72)? O CBMRO deve deixar a critério discricionário do Comando-Geral (como SE e GO) ou fixar uma regra objetiva vinculada à exclusividade da função (como AL)?",
+      "candidatas": [
+        {
+          "fonte": "Sergipe (primária) — RISD (atual. 2022)",
+          "verbatim": [
+            "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a 13/28 BGO Nº 060 Publicado em 30/03/2022 CBMRO/RISD – Regulamento Interno dos Serviços Diários. estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
+            "I. As escalas para que concorre exclusivamente ao serviço operacional serão:",
+            "a) 6 horas de trabalho por 18 horas de folga da escala;",
+            "b) 12 horas de trabalho por 36 horas de folga da escala;",
+            "c) 24 horas de trabalho por 48 horas de folga da escala;",
+            "d) 24 horas de trabalho por 72 horas de folga da escala;"
+          ],
+          "citacao": "cf. CBMSE, RISD (atual. 2022), Art. 23",
+          "ocr": null,
+          "leitura": "SE lista as 4 opções de jornada mas deixa a escolha entre elas a critério do Comando-Geral, \"de acordo com a necessidade\" — não há regra fixa que amarre a proporção a nenhuma condição objetiva."
+        },
+        {
+          "fonte": "Goiás — Regimento dos Serviços Interno e Operacional",
+          "verbatim": [
+            "Art. 6º A escala para o serviço será definida pelo Comando-Geral, de acordo com a necessidade e interesse da Corporação, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional do CBMGO, observando a seguinte jornada de trabalho:",
+            "I - 6 horas de trabalho por 18 horas de descanso; II - 12 horas de trabalho por 36 horas de descanso; III - 24 horas de trabalho por 48 horas de descanso; IV - 24 horas de trabalho por 72 horas de descanso; V - médico e dentista: 20 horas de trabalho semanal; VI - atendimento no Centro Operacional de Bombeiros - COB: 12 horas de trabalho por 48 horas de descanso da escala e de 6 horas de trabalho por 24 horas de descanso da escala;"
+          ],
+          "citacao": "cf. CBMGO, Regimento dos Serviços Interno e Operacional, Art. 6",
+          "ocr": null,
+          "leitura": "GO converge com SE — mesmas 4 opções, mesma discricionariedade do Comando-Geral. Traz apenas duas exceções específicas (médico/dentista; teleatendimento do COB) com jornada própria."
+        },
+        {
+          "fonte": "Alagoas — Norma Operacional nº 03 (CBMAL)",
+          "verbatim": [
+            "Art. 1º Instituir as escalas operacionais, de prontidão, com turnos de 24 (vinte e quatro) horas, para:",
+            "I – Coordenador de Operações;",
+            "II - Comandante de Socorro;",
+            "III- Comandante de Guarnição;",
+            "IV- Auxiliar de Guarnição;",
+            "V - Condutor; e",
+            "VI - Operador de rádio.",
+            "§1º As escalas constantes neste artigo obedecerão ao parâmetro de três turnos de folga para cada turno trabalhado, sempre que possível, e desde que os militares estejam em regime exclusivo para tais escalas.",
+            "§2º As escalas constantes neste artigo, sem regime de exclusividade, deverão obedecer ao parâmetro de um turno de folga para cada turno trabalhado."
+          ],
+          "citacao": "cf. CBMAL, Norma Operacional nº 03, Art. 1",
+          "ocr": null,
+          "leitura": "AL não deixa a proporção a critério do comando — fixa uma regra objetiva: militar exclusivo da função folga 3 turnos para cada 1 trabalhado (equivalente ao 24x72 de SE/GO); militar não exclusivo folga só 1 turno por 1 trabalhado (equivalente ao 24x24, proporção mais curta que qualquer opção listada por SE/GO)."
+        }
+      ],
+      "comparacao": [
+        "Não é divergência de redação, é divergência de FILOSOFIA de gestão: SE/GO dão liberdade ao Comando-Geral para escolher a proporção conforme a necessidade do momento; AL amarra a proporção a uma condição objetiva e verificável (exclusividade na função).",
+        "O modelo discricionário (SE/GO) é mais flexível para lidar com escassez de efetivo, mas expõe o Comando a cobrança por tratamento desigual entre unidades/militares.",
+        "O modelo de AL é mais previsível e reduz discricionariedade, mas cria uma proporção (1:1) mais curta que qualquer uma das 4 opções listadas por SE/GO para quem não é exclusivo — pode ser mais desgastante para quem acumula funções.",
+        "Adotar o critério de AL exige primeiro definir, em algum outro dispositivo, o que conta como \"regime de exclusividade\" no CBMRO — SE e GO não têm esse conceito."
+      ],
+      "ligadas": [
+        "Tema — servico-operacional",
+        "Fonte — Regimento-GO",
+        "Fonte — NO-03-AL"
+      ],
+      "decidido": false,
+      "decisao": null
+    },
+    {
+      "id": "Decisão — servico-operacional — despachante-atendente-193-folga",
+      "trilha": "reg",
+      "key": "servico-operacional",
+      "chapterId": "reg:servico-operacional",
+      "titulo": "Decisão — servico-operacional — despachante-atendente-193-folga",
+      "questao": "Quanto tempo de folga o Despachante/Atendente do 193 (Centro de Operações) deve ter após cada turno de 12 horas trabalhadas? A fonte primária (SE) fixa a carga de trabalho mas não diz a folga; as alternativas dão respostas numéricas diferentes.",
+      "candidatas": [
+        {
+          "fonte": "Sergipe (primária) — RISD (atual. 2022)",
+          "verbatim": [
+            "O serviço de Despachante ao Centro de Operações será realizado nas dependências deste, em regime de 12 (doze) horas. 15/28 BGO Nº 060 Publicado em 30/03/2022 CBMRO/RISD – Regulamento Interno dos Serviços Diários."
+          ],
+          "citacao": "cf. CBMSE, RISD (atual. 2022), Art. 48",
+          "ocr": null,
+          "leitura": "SE fixa só a jornada (12h) e não define quanto tempo de folga corresponde — é a lacuna que obriga a decisão."
+        },
+        {
+          "fonte": "Tocantins — NGA do SIOP (Diretriz COB, Portaria nº 003/2019)",
+          "verbatim": [
+            "Art. 10 O serviço para Despachante e Atendente(s) será dividido em 05(cinco) escalas, que se revezarão em regime de trabalho de 12 horas de serviço diurno por 24 horas folga e 12 horas de serviço noturno por 72 horas de folga."
+          ],
+          "citacao": "cf. CBMTO, NGA do SIOP (Diretriz COB, Portaria nº 003/2019), Art. 10",
+          "ocr": null,
+          "leitura": "TO diferencia a folga pelo turno — 12h dia folga só 24h (praticamente 1:2), mas 12h noite folga 72h (1:6). Regra fixa e específica por horário do turno."
+        },
+        {
+          "fonte": "Alagoas — Norma Operacional nº 03 (CBMAL)",
+          "verbatim": [
+            "Art. 2º Instituir escalas operacionais, de prontidão, com turnos de 12 (doze) horas, para:",
+            "I - Despachante; e",
+            "II - Atendente 193;",
+            "§1º As escalas previstas neste artigo deverão obedecer ao parâmetro de três turnos de descanso para cada turno trabalhado, sempre que possível, e desde que os militares estejam em regime exclusivo para tais escalas.",
+            "§2º As escalas constantes neste artigo, sem regime de exclusividade, deverão obedecer ao parâmetro de um turno de folga para cada turno trabalhado."
+          ],
+          "citacao": "cf. CBMAL, Norma Operacional nº 03, Art. 2",
+          "ocr": null,
+          "leitura": "AL não olha para o turno (dia/noite), e sim para a exclusividade do militar na função: exclusivo folga 3x (12h trabalho / 36h folga); não exclusivo folga só 1x (12h/12h) — regra mais simples de administrar, mas dá folga bem menor a quem acumula função."
+        }
+      ],
+      "comparacao": [
+        "TO e AL divergem entre si mesmo sem contar SE: TO usa o horário do turno (dia × noite) como critério; AL usa a exclusividade do militar na função. São lógicas de gestão de escala incompatíveis — não dá para aplicar as duas ao mesmo tempo.",
+        "Se o CBMRO adotar o critério de AL (exclusividade), quem acumula outras funções tem folga bem menor (12h/12h) — risco de fadiga em unidades com efetivo enxuto onde a exclusividade é rara.",
+        "Se adotar o critério de TO (turno), a folga noturna (72h) é generosa mas a diurna (24h) é curta — pode não refletir a realidade de turnos de RO, que tem menos oficiais para cobrir a escala noturna.",
+        "SE (a fonte que mais se parece com a estrutura do CBMRO) simplesmente não resolve isso — qualquer escolha aqui é uma lacuna preenchida, não uma adaptação de texto existente."
+      ],
+      "ligadas": [
+        "Tema — servico-operacional",
+        "Fonte — Diretriz-TO",
+        "Fonte — NO-03-AL"
+      ],
+      "decidido": false,
+      "decisao": null
+    }
+  ]
+}
