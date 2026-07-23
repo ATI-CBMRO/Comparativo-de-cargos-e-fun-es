@@ -1664,6 +1664,27 @@
             }
           ]
         },
+        "go": {
+          "name": "Goiás",
+          "abbr": "GO",
+          "docLabel": "Lei nº 18.305/2013",
+          "excerpts": [
+            {
+              "heading": "Comando de Gestão e Finanças",
+              "caput": "Art. 26. Compete ao Comando de Gestão e Finanças:",
+              "dispositivos": [
+                "I – planejar, controlar e executar as atividades relacionadas com pessoal;",
+                "II – promover as atividades inerentes ao pagamento de militares, civis e fornecedores;",
+                "III – praticar atos inerentes à execução financeira e contábil;",
+                "IV – elaborar normas internas sobre gestão de pessoal e financeira;",
+                "V – planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho;",
+                "VI – elaborar boletins gerais."
+              ],
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26",
+              "match": "exata"
+            }
+          ]
+        },
         "pa": {
           "name": "Pará",
           "abbr": "PA",
@@ -2483,23 +2504,23 @@
           "excerpts": [
             {
               "heading": "Comando de Operações (COP)",
-              "caput": "Art. 16. O Comando de Operações é o órgão de direção-geral responsável pela direção e pelo controle dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-fim da corporação, assim constituído:",
+              "caput": "art. 16. o comando de operações é o órgão de direção-geral responsável pela direção e pelo controle dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-ﬁm da corporação, assim constituído:",
               "dispositivos": [
-                "I - comandante operacional;",
-                "II - assistente;",
-                "III - seção de Planejamento de Pessoal;",
-                "IV - seção de Planejamento logístico;",
-                "V - seção de Planejamento de operações e estatística;",
-                "VI - seção de Planejamento de eventos; e",
-                "VII - secretaria.",
-                "§ 1º O Comandante Operacional será um oficial do último posto do Quadro de Oficiais Bombeiro Militar Combatente (QOBM), indicado pelo Comandante-geral e de livre nomeação do chefe do Poder executivo estadual, que terá precedência hierárquica e funcional sobre os comandantes dos órgãos de direção intermediária e setorial, de apoio e de execução da atividade-fim da corporação.",
-                "§ 2º O Assistente do Comando de Operações é um oficial no posto de Tenente-Coronel do Quadro de Oficiais Bombeiro Militar Combatente (QOBM).",
-                "§ 3º As seções serão chefiadas por oficiais do posto de Major do Quadro de Oficiais Bombeiro Militar Combatente (QOBM).",
+                "i - comandante operacional;",
+                "ii - assistente;",
+                "iii - seção de Planejamento de Pessoal;",
+                "iv - seção de Planejamento logístico;",
+                "v - seção de Planejamento de operações e estatística;",
+                "vi - seção de Planejamento de eventos; e",
+                "vii - secretaria.",
+                "§ 1º O Comandante Operacional será um oﬁcial do último posto do Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM), indicado pelo Coman - dante-geral e de livre nomeação do chefe do Poder executivo estadual, que terá precedência hierárquica e funcional sobre os comandantes dos órgãos de direção intermediária e setorial, de apoio e de execução da ati- vidade-ﬁm da corporação.",
+                "§ 2º O Assistente do Comando de Operações é um oﬁcial no posto de Te- nente-Coronel do Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM).",
+                "§ 3º As seções serão cheﬁadas por oﬁciais do posto de Major do Quadro de Oﬁciais Bombeiro Militar Combatente (QOBM).",
                 "§ 4º cada seção poderá ser desdobrada em até 2 (duas) subseções, nos termos do regulamento desta lei.",
-                "§ 5º Na ausência do Comandante Operacional responderá pelo Comando de operações o comandante do órgão de direção intermediária mais antigo da região Metropolitana de Belém."
+                "§ 5º Na ausência do Comandante Operacional responderá pelo Comando de operações o comandante do órgão de direção intermediária mais antigo da região Metropolitana de belém."
               ],
               "source": "cf. CBMPA, Lei nº 11.060/2025, Art. 16",
-              "match": "exata"
+              "match": "parcial"
             }
           ]
         }
@@ -2921,6 +2942,26 @@
         }
       ],
       "alternatives": {
+        "ce": {
+          "name": "Ceará",
+          "abbr": "CE",
+          "docLabel": "Lei nº 13.438/2004",
+          "excerpts": [
+            {
+              "heading": "Coordenadoria de Atividades Técnicas",
+              "caput": "Art. 17 . A Coordenadoria de Atividades Técnicas é o Órgão de Execução Programática responsável pelo controle da observância dos requisitos técnicos contra incêndios e de projetos de edificações antes ou depois de sua liberação ao uso, competindo-lhe.",
+              "dispositivos": [
+                "I - gerenciar o sistema de informações no que diz respeito à análise, cadastro e controle de dados;",
+                "II - desenvolver pesquisa científica e avaliar o desempenho operacional da Corporação;",
+                "III - analisar projetos de edificações, vistorias e pareceres técnicos;",
+                "IV - controlar, manter e manobrar hidrantes.",
+                "Parágrafo único. A Coordenadoria de Atividades Técnicas será exercida por um Oficial Superior do Quadro de Oficiais Combatentes."
+              ],
+              "source": "cf. CBMCE, Lei nº 13.438/2004, Art. 17",
+              "match": "exata"
+            }
+          ]
+        },
         "df": {
           "name": "Distrito Federal",
           "abbr": "DF",
@@ -4287,7 +4328,7 @@
           "excerpts": [
             {
               "heading": "Assessoria Jurídica",
-              "caput": "Art. 17. À Assessoria Jurídica compete assessorar o Comando Geral em matérias de natureza jurídica já pacificadas no âmbito da Procuradoria-Geral do Estado, além de:",
+              "caput": "Art. 17. À Assessoria Jurídica compete assessorar o Comando Geral em matérias de natureza jurídica já paciﬁcadas no âmbito da Procuradoria-Geral do Estado, além de:",
               "dispositivos": [
                 "I – analisar normas, diretrizes, portarias, determinações, informações e demais documentos emanados do Comando Geral;",
                 "II – orientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas da Procuradoria-Geral do Estado;",

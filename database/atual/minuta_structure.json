@@ -526,6 +526,37 @@
         }
       ],
       "alternatives": {
+        "go": {
+          "name": "Goiás",
+          "abbr": "GO",
+          "docLabel": "Lei nº 18.305/2013",
+          "excerpts": [
+            {
+              "heading": "Assessoria Jurídica",
+              "caput": "Art. 17. À Assessoria Jurídica compete assessorar o Comando Geral em matérias de natureza jurídica já paciﬁcadas no âmbito da Procuradoria-Geral do Estado, além de:",
+              "dispositivos": [
+                "I – analisar normas, diretrizes, portarias, determinações, informações e demais documentos emanados do Comando Geral;",
+                "II – orientar o Comando Geral quanto ao exato cumprimento de decisões e sentenças judiciais, de acordo com as orientações emanadas da Procuradoria-Geral do Estado;",
+                "III – coligir elementos de fato e de direito para preparar as informações que devem ser prestadas à Procuradoria-Geral do Estado, para a defesa dos interesses do Estado de Goiás em ações judiciais.",
+                "Parágrafo único. A função de analista jurídico é privativa de bacharel em direito."
+              ],
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 17",
+              "match": "exata"
+            },
+            {
+              "heading": "Assessoria Parlamentar",
+              "caput": "Art. 18. À Assessoria Parlamentar compete o exercer de atividades de apoio e assessoramento ao Comando Geral em assuntos relacionados ao Poder Legislativo e que sejam de interesse da Corporação, além de:",
+              "dispositivos": [
+                "I – planejar, coordenar, acompanhar e executar ações de intercâmbio de informações do Corpo de Bombeiros Militar com o Poder Legislativo, em âmbito federal, estadual e municipal;",
+                "II – acompanhar os processos legislativos envolvendo assuntos de interesse da Corporação, bem como realizar gestão visando conferir celeridade aos processos;",
+                "III – manter o Comando Geral informado dos projetos de lei envolvendo assuntos de interesse da Corporação em tramitação em todas as esferas do Poder Legislativo;",
+                "IV – assessorar no planejamento e na elaboração de projetos de lei de interesse da Corporação, conforme diretrizes e ordens emanadas do Comando Geral."
+              ],
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 18",
+              "match": "exata"
+            }
+          ]
+        },
         "pa": {
           "name": "Pará",
           "abbr": "PA",
@@ -860,6 +891,27 @@
               ],
               "source": "cf. CBMDF, RI (Portaria nº 24/2020), Art. 187",
               "match": "parcial"
+            }
+          ]
+        },
+        "go": {
+          "name": "Goiás",
+          "abbr": "GO",
+          "docLabel": "Lei nº 18.305/2013",
+          "excerpts": [
+            {
+              "heading": "Comando de Gestão e Finanças",
+              "caput": "Art. 26. Compete ao Comando de Gestão e Finanças:",
+              "dispositivos": [
+                "I – planejar, controlar e executar as atividades relacionadas com pessoal;",
+                "II – promover as atividades inerentes ao pagamento de militares, civis e fornecedores;",
+                "III – praticar atos inerentes à execução financeira e contábil;",
+                "IV – elaborar normas internas sobre gestão de pessoal e financeira;",
+                "V – planejar e fiscalizar as atividades relacionadas a segurança e medicina do trabalho;",
+                "VI – elaborar boletins gerais."
+              ],
+              "source": "cf. CBMGO, Lei nº 18.305/2013, Art. 26",
+              "match": "exata"
             }
           ]
         },

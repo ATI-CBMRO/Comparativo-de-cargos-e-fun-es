@@ -14,7 +14,15 @@
   `cf. CBMMT, RI, Art. 152`, mas o Regimento Interno de MT nunca foi ingerido no acervo (só há
   a LOB e o Regulamento Geral). Sem o PDF não dá pra confirmar nem capturar o excerto. Origem:
   revisões da Frente B, 22/07/2026; investigado e resolvido em parte (dpo/assessorias) em
-  23/07/2026 — ver ✅ Concluído.
+  23/07/2026 — ver ✅ Concluído. **Ampliado pela auditoria (23/07/2026):** `cinf` também
+  cita o RI de MT (`cf. CBMMT, RI, Art. 129`) sem fonte no acervo — mesma solução (ingerir
+  o RI de MT) resolve os dois.
+- [ ] **DECIDIR (Wândrio) — BA, Norma Op. 01/2021, Art. 35 (tema `disposicoes-finais`)**: o
+  excerto capturado embute ~8,5k caracteres do ANEXO A (tabela "grade de acionamento")
+  grudados no "Revogam-se as disposições em contrário." — e a ordem das células não bate com
+  a linearização do PDF (impossível verificar verbatim). Proposta: truncar o excerto no fim
+  do artigo e deixar o anexo fora (ou capturá-lo à parte, rotulado como tabela). Achado da
+  auditoria Rodada 1, 23/07/2026; exceção documentada em `scripts/auditoria_citacoes.py`.
 - [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE) — matéria que
   pede um regulamento próprio de uniformes (RUMBM) no médio prazo, não uma lacuna a forçar
   agora. DOB-01 de AL investigada e descartada (23/07/2026 — ver ✅ Concluído): é glossário
@@ -44,6 +52,18 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Auditoria Rodada 1 — integridade das citações verbatim** (23/07/2026): verificador
+  novo `scripts/auditoria_citacoes.py` confere os 1.605 excertos dos 4 JSONs de estrutura
+  contra o DOCUMENTO reivindicado (LOB × RI × Regulamento do mesmo estado). Resultado:
+  1.569 verbatim estritos, 24 com ruído de página embutido (minor), 12 exceções
+  documentadas em whitelist, 0 falhas. Causa raiz do bug dpo/PA achada e corrigida no
+  CÓDIGO: `md_for()` ignorava o `doc` e caía no RI em silêncio (**AR-02** em
+  `docs/superpowers/auditoria-armadilhas.md`); correção da manhã (cabf7fb) refeita no
+  GERADOR (extrator recaptura verbatim com as minúsculas do OCR do PA preservadas; GO
+  idem). Teste inverso (citação→excerto) achou e fechou 2 lacunas com fonte disponível:
+  `cot`→CE (Lei 13.438/2004, Art. 17) e `dpof`→GO (Lei 18.305/2013, Art. 26) capturados
+  no Bloco D. Drift MT/SE (enrichments desatualizados após renomeação dos markdowns)
+  regenerado. Suítes: node 132/132 + python OK + verificar_verbatim 1.166 OK.
 - [x] **DOB-01 de Alagoas (glossário de terminologia) — investigada e descartada** (23/07/2026):
   1.686 verbetes extraídos e revisados (pelo Claude e pelo Wândrio); é glossário técnico de
   combate a incêndio, sem termos de uniforme/apresentação pessoal e só 2 termos fracos

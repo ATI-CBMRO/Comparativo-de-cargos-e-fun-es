@@ -53,6 +53,42 @@ em 2026-07-22. Varreduras restantes conferidas na auditoria da Fase 1 (fase1-fin
 
 ---
 
+## AR-02 · Parâmetro aceito mas ignorado → fallback silencioso para a fonte errada
+
+**O que é:** uma função aceita um parâmetro que deveria selecionar a FONTE (documento,
+arquivo, cenário), mas o ignora para parte dos casos e cai num default — sem erro, sem
+aviso. O resultado é plausível (mesmo estado, mesmo nº de artigo), só que do documento
+ERRADO.
+
+**Caso original (2026-07-23, auditoria Rodada 1):** `md_for(uf, doc)` em
+`scripts/extrair_ri_alternativas.py` só honrava `doc` para `uf == 'pr'`; para os demais
+devolvia sempre `MD_FILE[uf]` (o RI). A CITATION do `dpo` dizia `('pa', 'lob', [16])` —
+e o extrator capturou o Art. 16 do **RI do Pará** em vez da **LOB (Lei 11.060/2025)**.
+O bug ficou invisível porque o RI também tem um Art. 16 (verbatim de outro documento
+passa em qualquer verificação que não confira o documento). Detectado pelo Wândrio a
+olho (excerto não batia com a lei citada) e pela auditoria na varredura completa.
+
+**Correção:** mapa explícito `LOB_MD` + `KeyError` alto quando a LOB do estado não está
+mapeada — proibido cair no RI em silêncio. Regeneração verbatim (minúsculas do OCR do PA
+preservadas — a correção manual da manhã tinha capitalizado o texto, commit cabf7fb).
+
+**Método de detecção:** para cada citação `source`, resolver o DOCUMENTO reivindicado
+(tipo + nº da lei) e verificar o texto verbatim CONTRA ELE — e, se falhar, procurar nos
+demais documentos do estado: achado em outro = classe AR-02. Automatizado em
+`scripts/auditoria_citacoes.py` (1605 excertos: 1569 estritos, 24 com ruído de página,
+12 exceções documentadas em whitelist, 0 falhas).
+
+**Onde varrer (além do caso original):**
+- Toda função `*_for(x, y)`/resolvedor com branch por caso especial (`if uf == 'pr'`) —
+  o que acontece com os valores fora do branch?
+- `scenarioDbUrl`/gavetas de cenário (a MESMA forma: parâmetro que escolhe fonte).
+- `.get(chave, default)` onde o default é uma fonte alternativa "parecida".
+
+**Status:** caso original CORRIGIDO em 2026-07-23 (extrator + regeneração dos 4 JSONs);
+varredura completa das citações roda em `scripts/auditoria_citacoes.py`.
+
+---
+
 ## Diretriz geral para a auditoria (independe de classe)
 
 - Verbatim: todo excerto exibido deve bater caractere a caractere com a fonte; defeitos de

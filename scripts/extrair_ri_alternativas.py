@@ -37,6 +37,8 @@ STATE_META = {
     'pr': {'name': 'Paraná', 'abbr': 'PR'},
     'pa': {'name': 'Pará', 'abbr': 'PA'},
     'rs': {'name': 'Rio Grande do Sul', 'abbr': 'RS'},
+    'go': {'name': 'Goiás', 'abbr': 'GO'},
+    'ce': {'name': 'Ceará', 'abbr': 'CE'},
 }
 
 MD_FILE = {
@@ -51,6 +53,19 @@ MD_FILE = {
 PR_LOB_MD = 'Paraná - Organização Básica.md'
 PR_RI_MD = 'Paraná - Regimento Interno.md'
 
+# LOBs por estado (citações com doc='lob'). Mapa EXPLÍCITO: se uma CITATION pedir a
+# LOB de um estado que não está aqui, md_for() levanta KeyError — nunca cair no RI
+# em silêncio (bug original do dpo/pa, detectado na auditoria de 2026-07-23: a
+# CITATION dizia ('pa','lob') mas md_for ignorava o doc e devolvia o RI do Pará,
+# capturando o Art. 16 do documento ERRADO).
+LOB_MD = {
+    'pr': PR_LOB_MD,
+    'pa': 'Pará - Organização Básica.md',
+    'go': 'Goiás - Organização Básica (Lei 18.305-2013).md',
+    'ce': 'Ceará - Organização Básica (Lei 13.438-2004).md',
+}
+PA_LOB_MD = LOB_MD['pa']
+
 DOC_LABEL = {
     ('al', 'ri'): 'RI (Decreto nº 408/2001)',
     ('df', 'ri'): 'RI (Portaria nº 24/2020)',
@@ -59,6 +74,8 @@ DOC_LABEL = {
     ('rs', 'ri'): 'RI (Portaria nº 001/2025)',
     ('pr', 'lob'): 'Organização Básica (Lei nº 22.206/2024)',
     ('pr', 'ri'): 'RI (coletânea do portal)',
+    ('go', 'lob'): 'Lei nº 18.305/2013',
+    ('ce', 'lob'): 'Lei nº 13.438/2004',
 }
 
 
@@ -125,6 +142,8 @@ _PR_ART35_CAPUT_PREFIX = 'Em razão dos diferentes objetivos da missão bombeiro
 
 
 def get_article(filename, n):
+    if filename == PA_LOB_MD:
+        return _pa_lob_article(n)
     if filename == PR_LOB_MD and n in _PR_LOB_LINE_OVERRIDES:
         ini, fim = _PR_LOB_LINE_OVERRIDES[n]
         raw_lines = load_lines(filename)
@@ -169,6 +188,10 @@ CITATIONS = {
     'cot': [
         ('df', 'ri', [54], 'exata',
          'cf. CBMDF, RI (Portaria nº 24/2020), Art. 54', 'DESEG'),
+        # CE citado na competência do cot sem excerto capturado (auditoria 2026-07-23,
+        # mesma classe do achado GO/assessorias do commit cabf7fb).
+        ('ce', 'lob', [17], 'exata',
+         'cf. CBMCE, Lei nº 13.438/2004, Art. 17', 'Coordenadoria de Atividades Técnicas'),
     ],
     'bbm': [
         ('pr', 'lob', [35], 'exata',
@@ -211,6 +234,9 @@ CITATIONS = {
          'cf. CBMDF, RI (Portaria nº 24/2020), Art. 227', 'Diretoria de Ensino (DIREN)'),
     ],
     'dpof': [
+        # GO citado na competência do dpof sem excerto capturado (auditoria 2026-07-23).
+        ('go', 'lob', [26], 'exata',
+         'cf. CBMGO, Lei nº 18.305/2013, Art. 26', 'Comando de Gestão e Finanças'),
         ('df', 'ri', [187], 'parcial',
          'cf. CBMDF, RI (Portaria nº 24/2020), Art. 187', 'Diretoria de Orçamento e Finanças (DIOFI)'),
         ('pa', 'ri', [170], 'exata',
@@ -289,6 +315,13 @@ CITATIONS = {
          'cf. CBMDF, RI (Portaria nº 24/2020), Art. {n}', 'Comando Especializado (COESP)'),
     ],
     'assessorias': [
+        # GO: a competência do RO cita CBMGO (Lei nº 18.305/2013, Art. 17-18) e o
+        # estado não tinha excerto capturado (achado de 2026-07-23, cf. commit
+        # cabf7fb — aqui a correção passa a viver no gerador, não no arquivo gerado).
+        ('go', 'lob', [17], 'exata',
+         'cf. CBMGO, Lei nº 18.305/2013, Art. 17', 'Assessoria Jurídica'),
+        ('go', 'lob', [18], 'exata',
+         'cf. CBMGO, Lei nº 18.305/2013, Art. 18', 'Assessoria Parlamentar'),
         ('pa', 'ri', [69], 'exata',
          'cf. CBMPA, RI, Art. 69', 'Assessorias Técnicas'),
         ('rs', 'ri', [31, 37, 47], 'parcial',
@@ -303,9 +336,68 @@ CITATIONS = {
 # organKey -> md_file por CITATION (resolve a ambiguidade do PR: 'lob' -> LOB do PR;
 # 'ri' do PR -> coletânea do portal; os demais estados têm 1 único arquivo de RI).
 def md_for(uf, doc):
+    if doc == 'lob':
+        # KeyError alto se a LOB do estado não estiver em LOB_MD — proibido cair
+        # no RI em silêncio (ver nota em LOB_MD).
+        return LOB_MD[uf]
     if uf == 'pr':
-        return PR_LOB_MD if doc == 'lob' else PR_RI_MD
+        return PR_RI_MD  # 'pr' não está em MD_FILE (2 fontes; ver nota no topo)
     return MD_FILE[uf]
+
+
+# ── PA LOB: o markdown da Lei nº 11.060/2025 saiu do OCR TODO em minúsculas
+# ("art. 16.", incisos "i -", "ii -"). RE_ART/RE_ITEM do extrator-base exigem
+# maiúsculas DE PROPÓSITO (referências no corpo usam "art." minúsculo), então este
+# documento tem um splitter próprio, case-insensitive. O texto extraído continua
+# VERBATIM — as minúsculas do OCR são preservadas, nunca "corrigidas".
+_RE_ART_PA_LOB = re.compile(r'^\s*[Aa]rt\s*\.?\s*(\d[\d\s]{0,3})\s*[ºo°.]?\s')
+_RE_ITEM_PA_LOB = re.compile(
+    r'^\s*(§\s*\d|[Pp]arágrafo\s+único|[ivxlcdm]{1,8}\s*[-–—]|[IVXLCDM]{1,8}\s*[-–—])')
+_RE_HEADING_PA_LOB = re.compile(
+    r'^\s*(Subse[çc][ãa]o|Se[çc][ãa]o|Cap[íi]tulo|T[íi]tulo|D[oa]s?\s+\S)\s*\S*\s*$'
+    r'|^\s*(Subse[çc][ãa]o|Se[çc][ãa]o)\b')
+
+
+def _pa_lob_article(n):
+    lines = clean_lines_generic(PA_LOB_MD)
+    arts, cur_num, cur = {}, None, []
+    for ln in lines:
+        m = _RE_ART_PA_LOB.match(ln)
+        if m:
+            if cur_num is not None:
+                arts.setdefault(cur_num, cur)
+            cur_num, cur = int(m.group(1).replace(' ', '')), [ln]
+        elif cur_num is not None:
+            cur.append(ln)
+    if cur_num is not None:
+        arts.setdefault(cur_num, cur)
+    art = arts.get(n)
+    if art is None:
+        return None
+    # solta títulos de Subseção/Seção que sobram no FIM do bloco (introduzem o
+    # próximo artigo, não fazem parte deste)
+    while art and (not art[-1].strip() or _RE_HEADING_PA_LOB.match(art[-1].strip())):
+        art.pop()
+    return art
+
+
+def _caput_e_dispositivos_pa_lob(art_lines):
+    """Mesma lógica de caput_e_dispositivos(), com os marcadores minúsculos do PA."""
+    caput_parts, dispositivos, current = [], [], None
+    for ln in art_lines:
+        if not ln.strip():
+            continue
+        if _RE_ITEM_PA_LOB.match(ln):
+            if current is not None:
+                dispositivos.append(clean(current))
+            current = ln
+        elif current is not None:
+            current += ' ' + ln
+        else:
+            caput_parts.append(ln)
+    if current is not None:
+        dispositivos.append(clean(current))
+    return clean(' '.join(caput_parts)), [d for d in dispositivos if d]
 
 
 _TRAILING_SUBHEADINGS = [
@@ -392,7 +484,9 @@ def build_excerpt(uf, doc, n, source_label, match, heading):
     stop_marker = _STOP_MARKERS.get((uf, doc, n))
     if stop_marker:
         art_lines = _truncar_em_marcador(art_lines, stop_marker)
-    caput, dispositivos = caput_e_dispositivos(art_lines)
+    splitter = (_caput_e_dispositivos_pa_lob if filename == PA_LOB_MD
+                else caput_e_dispositivos)
+    caput, dispositivos = splitter(art_lines)
     if dispositivos:
         dispositivos = list(dispositivos)
         dispositivos[-1] = _strip_trailing_subheading(dispositivos[-1])

@@ -1,5 +1,5 @@
 # GERADO por scripts/extrair_regulamentos.py — NÃO editar à mão.
-# Fonte: Mato Grosso - Regimento Interno.md (extração determinística; mapa nos de-paras).
+# Fonte: Mato Grosso - Regulamento Geral.md (extração determinística; mapa nos de-paras).
 ENRICHMENT = {
     ('atribuicoes-funcoes', 'mt'): [
         {
