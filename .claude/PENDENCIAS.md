@@ -15,9 +15,11 @@
   a LOB e o Regulamento Geral). Sem o PDF não dá pra confirmar nem capturar o excerto. Origem:
   revisões da Frente B, 22/07/2026; investigado e resolvido em parte (dpo/assessorias) em
   23/07/2026 — ver ✅ Concluído.
-- [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE); DOB-01 de AL
-  ("Terminologia Operacional") citada pela DOB-08 mas não ingerida; dimensionamento técnico do
-  193 (nº de PAs/troncos) só na DOB-06-AL (lacuna registrada no vault).
+- [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE) — matéria que
+  pede um regulamento próprio de uniformes (RUMBM) no médio prazo, não uma lacuna a forçar
+  agora. DOB-01 de AL investigada e descartada (23/07/2026 — ver ✅ Concluído): é glossário
+  técnico, sem termos de uniforme/apresentação aproveitáveis. Dimensionamento técnico do 193
+  (nº de PAs/troncos), só na DOB-06-AL, segue lacuna registrada no vault.
 - [ ] Cenário atual — Subsídio: **curadoria fina do comparativo** (rodada futura, sob demanda):
   o comparativo do atual usa SÓ casamento automático por palavra-chave (decisão de produto
   22/07/2026, selo na tela); se o Wândrio sentir falta, curar de-para manual dos órgãos
@@ -42,6 +44,11 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **DOB-01 de Alagoas (glossário de terminologia) — investigada e descartada** (23/07/2026):
+  1.686 verbetes extraídos e revisados (pelo Claude e pelo Wândrio); é glossário técnico de
+  combate a incêndio, sem termos de uniforme/apresentação pessoal e só 2 termos fracos
+  ligados a `central-operacoes-193`. Fechado sem incorporação nem extrator novo — nota do
+  tema `uniformes-apresentacao` atualizada no vault.
 - [x] **Curadoria RI — 2 das 3 inconsistências de dados resolvidas** (23/07/2026): dpo/PA tinha
   excerto extraído do documento errado (RI em vez da LOB) — corrigido, `match` virou `exata`;
   assessorias/GO citado na competência sem excerto capturado — adicionado (conferido no PDF
