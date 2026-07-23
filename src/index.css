@@ -3096,3 +3096,6 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .dec-leitura { color: var(--text-muted); }
 .dec-cmp-list { margin: 0 0 12px; padding-left: 40px; color: var(--text-muted); }
 .dec-decisao { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border, #e2e6ee); }
+
+/* ===== Overlay de textos finais (Wizards RI/Regulamento — Task 3) ===== */
+.wiz-finais-aviso { font-size: .78rem; color: var(--text-muted); font-style: italic; }
