@@ -1,11 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ListChecks, Check, AlertTriangle } from 'lucide-react'
 import { useScenario } from '../context/ScenarioContext.jsx'
+import { useAuth } from '../lib/auth.jsx'
 import { scenarioDbUrl } from '../lib/scenario.js'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import { buildConferencia } from '../lib/conferencia.js'
+import { confKey, mergeStatus } from '../lib/conferenciaStatus.js'
+import { subscribeConferencia, saveConferenciaStatus } from '../lib/conferenciaData.js'
 import { articleLabel, romanize } from '../lib/minutaArticles.js'
 
 const ARQ = { ri: 'minuta_structure.json', reg: 'regulamento_structure.json' }
@@ -23,9 +26,11 @@ function MatchBadge({ match }) {
 
 export default function ConferenciaLinear({ trilha = 'ri' }) {
   const { cenario } = useScenario()
+  const { user } = useAuth()
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
-  const [status, setStatus] = useState({}) // índice -> 'ok'|'div' (local, Fase 1 — não persiste)
+  const [statusLocal, setStatusLocal] = useState(new Map()) // chave estável -> 'ok'|'div' (fallback sem login)
+  const [remoto, setRemoto] = useState(null)
   const [ufSel, setUfSel] = useState({}) // chapterId -> uf selecionada
 
   useEffect(() => {
@@ -33,8 +38,23 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
     fetchJson(scenarioDbUrl(cenario, ARQ[trilha])).then(setData).catch(() => setError(true))
   }, [cenario, trilha])
 
+  useEffect(() => {
+    if (!user) { setRemoto(null); return undefined }
+    return subscribeConferencia(setRemoto, console.error)
+  }, [user])
+
   const lista = useMemo(() => (data ? buildConferencia(data) : []), [data])
-  const feitos = useMemo(() => lista.filter((_, i) => status[i]).length, [status, lista])
+  const statusMap = useMemo(() => mergeStatus(statusLocal, remoto), [statusLocal, remoto])
+  const feitos = useMemo(
+    () => lista.filter(item => statusMap.get(confKey(item.dispositivo))).length,
+    [statusMap, lista],
+  )
+
+  const marcar = (item) => (v) => {
+    const key = confKey(item.dispositivo)
+    setStatusLocal(m => { const n = new Map(m); if (v == null) n.delete(key); else n.set(key, v); return n })
+    if (user) saveConferenciaStatus(key, v, { nome: user.nome ?? user.email }).catch(e => console.error('Erro ao salvar conferência:', e))
+  }
 
   if (error) {
     return (
@@ -55,6 +75,7 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
           <ListChecks size={13} color="var(--cbm-red-700)" />
           {feitos} / {lista.length} conferidos
         </span>
+        {!user && <span className="wiz-finais-aviso">Entre para salvar a conferência.</span>}
       </div>
 
       <div className="page-body">
@@ -72,8 +93,8 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
               key={item.dispositivo.number ?? i}
               item={item}
               idx={i}
-              status={status[i]}
-              onStatus={(v) => setStatus(s => ({ ...s, [i]: v }))}
+              status={statusMap.get(confKey(item.dispositivo))}
+              onStatus={marcar(item)}
               ufSel={ufSel}
               setUfSel={setUfSel}
             />
