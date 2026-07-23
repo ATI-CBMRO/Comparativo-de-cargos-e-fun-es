@@ -41,7 +41,7 @@ cat, dlog`); os 13 restantes casam por um **de-para a validar pelo Wândrio** (p
 |---|---|---|---|
 | ajudancia | ag | dcs | ccs |
 | gabinete | gab-cg | dinf | cinf |
-| cepdec | depdec | cob1 | cot |
+| cepdec | depdec | cob1 | crbm |
 | dint | cint | cob2 | crbm |
 | cpof | dpof | coa | boa |
 | gbs | bbs | | |

@@ -17,7 +17,8 @@
 - `node --test` verde ao final de cada task (115 atuais + novos).
 - Rotas de conferência NÃO passam por `TrilhaRoute` (funcionam nos dois cenários).
 - Branch nova: `feat/cockpit-fase1-conferencia`.
-- De-para do Regimento é PROPOSTA — marcada como "a validar pelo Wândrio" no relatório; onde não há equivalente (`emg`, `comissoes`), o órgão fica sem `alternatives` (a tela cai para o automático/estado vazio honesto).
+- De-para do Regimento é PROPOSTA — validada pelo Wândrio em 2026-07-22 (inclui a correção `cob1/cob2 → crbm`, ver AR-01); onde não há equivalente (`emg`, `comissoes`), o órgão fica sem `alternatives` (a tela cai para o automático/estado vazio honesto).
+- **Registro de armadilhas:** `docs/superpowers/auditoria-armadilhas.md` (classe AR-01 = casamento semântico errado por semelhança de nome). A REVISÃO de cada task e a auditoria final DEVEM consultar esse arquivo e caçar cada classe listada; toda correção termina com varredura de análogos.
 
 ---
 
@@ -47,7 +48,7 @@ DEPARA = {
     "cg":"cg","condeg":"condeg","assessorias":"assessorias","corregedoria":"corregedoria",
     "dp":"dp","deei":"deei","cat":"cat","dlog":"dlog",
     "ajudancia":"ag","gabinete":"gab-cg","cepdec":"depdec","dint":"cint","cpof":"dpof",
-    "dcs":"ccs","dinf":"cinf","cob1":"cot","cob2":"crbm","coa":"boa","gbs":"bbs",
+    "dcs":"ccs","dinf":"cinf","cob1":"crbm","cob2":"crbm","coa":"boa","gbs":"bbs",
 }
 def main():
     errs=[]
@@ -97,7 +98,7 @@ DEPARA_BLOCO_D = {
     "cg":"cg","condeg":"condeg","assessorias":"assessorias","corregedoria":"corregedoria",
     "dp":"dp","deei":"deei","cat":"cat","dlog":"dlog",
     "ajudancia":"ag","gabinete":"gab-cg","cepdec":"depdec","dint":"cint","cpof":"dpof",
-    "dcs":"ccs","dinf":"cinf","cob1":"cot","cob2":"crbm","coa":"boa","gbs":"bbs",
+    "dcs":"ccs","dinf":"cinf","cob1":"crbm","cob2":"crbm","coa":"boa","gbs":"bbs",
 }
 def _bloco_d_futura():
     fut = json.loads((BASE_DIR / "database" / "minuta_structure.json").read_text(encoding="utf-8"))
