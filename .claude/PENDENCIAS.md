@@ -10,10 +10,6 @@
   Orientação de uso em `/manual#cockpit`. Minors registrados p/ rodada futura: padronizar os 2
   estilos de citação do MT adaptado; ruído de cabeçalho de PDF em 2 citações de SE; notas de
   Fonte magras de propósito; elisões sem "[...]" em 2 notas de decisão (cada linha é verbatim).
-- [ ] **Cockpit — erros de gravação silenciosos** (achado não-bloqueante da revisão final da
-  Fase 3, 23/07/2026): `saveConferenciaStatus`/`marcarFichaAplicada`/`desfazerDecisao` só vão a
-  `console.error` em caso de falha — não aparecem para quem está usando a tela. Considerar
-  surfaceá-los visualmente numa rodada futura.
 - [ ] **Inconsistências de DADOS sinalizadas (decidir com o Wândrio, não corrigir em silêncio)**:
   (a) dpo — `cf. CBMPA, Lei nº 11.060/2025, Art. 16` citado na competência do RO não bate com o
   excerto verbatim de `alternatives.pa`; (b) assessorias — CBMGO citado sem excerto nas
@@ -48,6 +44,10 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Cockpit — erros de gravação deixaram de ser silenciosos** (23/07/2026): `saveConferenciaStatus`/
+  `marcarFichaAplicada`/`desfazerDecisao` agora mostram um alerta visível na tela quando a
+  gravação falha (antes só iam pro `console.error`). Achado não-bloqueante da revisão final da
+  Fase 3.
 - [x] **Cockpit de curadoria — Fase 1: Conferência linear** (`/minuta/conferencia`,
   `/regulamento/conferencia`): tela de percorrer a minuta dispositivo a dispositivo com as
   referências de outros estados, nos 2 cenários. O Regimento atual reaproveita o Bloco D
