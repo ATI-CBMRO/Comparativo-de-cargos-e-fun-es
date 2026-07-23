@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
   Search, Library, ScrollText, Menu, X, Network, LogOut,
-  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft, GitBranch
+  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft, GitBranch, ListChecks
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -22,6 +22,7 @@ import RIComparator from './pages/RIComparator.jsx'
 import RISubsidio from './pages/RISubsidio.jsx'
 import RegSubsidio from './pages/RegSubsidio.jsx'
 import RegDiagramas from './pages/RegDiagramas.jsx'
+import ConferenciaLinear from './pages/ConferenciaLinear.jsx'
 import Manual from './pages/Manual.jsx'
 import Organograma from './pages/Organograma.jsx'
 import Login from './pages/Login.jsx'
@@ -67,6 +68,7 @@ const NAV_GROUPS = [
     section: 'Regimento Interno',
     items: [
       { to: '/minuta/subsidio', icon: GitCompare, label: 'Subsídio' },
+      { to: '/minuta/conferencia', icon: ListChecks, label: 'Conferência' },
       { to: '/minuta', icon: ScrollText, label: 'Minuta do Regimento Interno', end: true },
       { to: '/minuta/diagramas', icon: Network, label: 'Diagramas' },
       { to: '/minuta/revisao', icon: MessageSquare, label: 'Revisão' },
@@ -76,6 +78,7 @@ const NAV_GROUPS = [
     section: 'Regulamento Geral',
     items: [
       { to: '/regulamento/subsidio', icon: GitCompare, label: 'Subsídio' },
+      { to: '/regulamento/conferencia', icon: ListChecks, label: 'Conferência' },
       { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento Geral', end: true },
       { to: '/regulamento/diagramas', icon: Network, label: 'Diagramas' },
       { to: '/regulamento/revisao', icon: MessageSquare, label: 'Revisão' },
@@ -281,11 +284,13 @@ export default function App() {
           <Route path="/busca" element={<SearchPage />} />
           {/* Trilha Regimento Interno (pipeline padrão) */}
           <Route path="/minuta/subsidio" element={<RISubsidio />} />
+          <Route path="/minuta/conferencia" element={<ConferenciaLinear trilha="ri" />} />
           <Route path="/minuta" element={<MinutaWizard />} />
           <Route path="/minuta/diagramas" element={<MinutaDiagrams />} />
           <Route path="/minuta/revisao" element={<ProtectedRoute><Revisao initialDoc="ri" /></ProtectedRoute>} />
           {/* Trilha Regulamento Geral (mesmo pipeline) */}
           <Route path="/regulamento/subsidio" element={<RegSubsidio />} />
+          <Route path="/regulamento/conferencia" element={<ConferenciaLinear trilha="reg" />} />
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />

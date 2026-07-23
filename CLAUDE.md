@@ -202,6 +202,16 @@ mesma filosofia do `reg:` (sem campo novo, sem migração):
 `reviewGroup.js`: `scenarioOfDispositivo` + `filterSuggestionsByScenario`/`filterFinalsByScenario`
 (testados). Sem isso, ids como `organ:cg` colidiriam entre cenários.
 
+**Conferência linear** (`/minuta/conferencia`, `/regulamento/conferencia` — `ConferenciaLinear.jsx`,
+Fase 1 do cockpit de curadoria, 22/07/2026): percorre a minuta dispositivo a dispositivo
+(numeração contínua via `buildConferencia` em `src/lib/conferencia.js`) com as referências de
+outros estados ao lado (badge exata/auto). Funciona nos 2 cenários; SEM `TrilhaRoute`. O
+**Regimento atual** reaproveita o **Bloco D verbatim da futura** casando órgão a órgão — de-para
+`DEPARA_BLOCO_D` em `build_minuta_structure_atual.py` (só o campo `alternatives`, nunca as
+competências do RO; 19 dos 21 órgãos; `emg`/`comissoes` sem equivalente = estado vazio honesto).
+Spec `2026-07-22-cockpit-curadoria-conferencia-decisoes-design.md` (Fases 2/3 pendentes:
+decisões do Obsidian no sistema + registrar/aplicar).
+
 **Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (16 temas),
 `/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`, e **Subsídio**
 (`/minuta/subsidio`, `/regulamento/subsidio` — destravados 22/07/2026; o comparativo do

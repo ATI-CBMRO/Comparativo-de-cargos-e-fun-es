@@ -42,6 +42,17 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Cockpit de curadoria — Fase 1: Conferência linear** (`/minuta/conferencia`,
+  `/regulamento/conferencia`): tela de percorrer a minuta dispositivo a dispositivo com as
+  referências de outros estados, nos 2 cenários. O Regimento atual reaproveita o Bloco D
+  verbatim da futura (de-para validado pelo Wândrio, inclui a correção `cob1/cob2→crbm` —
+  AR-01). Prova visual nos 2 cenários; bug de chave duplicada (futura) achado na prova e
+  corrigido. Spec/plano `docs/superpowers/*/2026-07-22-cockpit-*`. Registro de armadilhas em
+  `docs/superpowers/auditoria-armadilhas.md` (AR-01). — 22/07/2026.
+  - **Fases 2 e 3 PENDENTES**: (2) trazer as 36 decisões do Obsidian para dentro do sistema
+    (pipeline notas→JSON + aba de decisões); (3) registrar/aplicar decisão (Firebase + texto
+    final para redação + ficha de aplicação para estrutural) + "Divergente" da conferência
+    virando pendência. Antes da auditoria final da fase, rodar o checklist de armadilhas.
 - [x] **Cenário atual — Subsídio destravado** (`/minuta/subsidio` e `/regulamento/subsidio`):
   gerador isolado `build_minuta_comparison_atual.py` (21 órgãos da Lei 2.204/2009 × estados,
   SÓ camada automática, teste anti-vazamento da futura), telas resolvendo dados por
