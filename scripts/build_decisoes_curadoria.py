@@ -73,8 +73,12 @@ def _parse_candidatas(texto):
     return out
 
 
+def _limpar_wikilinks(texto):
+    return re.sub(r"\[\[([^\]]+)\]\]", r"\1", texto)
+
+
 def _bullets(texto):
-    return [l[2:].strip() for l in texto.splitlines() if l.startswith("- ")]
+    return [_limpar_wikilinks(l[2:].strip()) for l in texto.splitlines() if l.startswith("- ")]
 
 
 def _wikilinks(texto):
@@ -93,7 +97,7 @@ def _questao_legado(secs):
         if linha.strip().startswith("|"):
             break
         linhas.append(linha.strip())
-    return " ".join(linhas)
+    return _limpar_wikilinks(" ".join(linhas))
 
 
 HEADER_LEGADO_RE = re.compile(r"^\*\*(.+?)\*\*\s*(\(.*\))?\s*:?\s*$")
@@ -150,7 +154,7 @@ def _parse_candidatas_legado(texto):
 def _comparacao_legado(secs):
     if secs.get("Divergência"):
         texto = secs["Divergência"]
-        paragrafos = [" ".join(p.split()) for p in re.split(r"\n\s*\n", texto) if p.strip()]
+        paragrafos = [_limpar_wikilinks(" ".join(p.split())) for p in re.split(r"\n\s*\n", texto) if p.strip()]
         return paragrafos
     for nome, texto in secs.items():
         if texto.strip().startswith("|") or "\n|" in texto:
@@ -160,7 +164,7 @@ def _comparacao_legado(secs):
             for l in linhas[1:]:  # pula a linha de cabeçalho da tabela
                 cols = [c.strip() for c in l.strip("|").split("|")]
                 if len(cols) >= 3:
-                    bullets.append(f"{cols[0]}: {cols[1]} — {cols[2]}")
+                    bullets.append(_limpar_wikilinks(f"{cols[0]}: {cols[1]} — {cols[2]}"))
             if bullets:
                 return bullets
     return []
@@ -186,7 +190,7 @@ def parse_decisao(texto, arquivo, trilha):
         mq = re.search(r"\*\*Questão:\*\*\s*(.+?)(?:\n\n|\Z)", intro, flags=re.DOTALL)
         if not mq:
             raise ValueError(f"{arquivo}: sem **Questão:**")
-        questao = " ".join(mq.group(1).split())
+        questao = _limpar_wikilinks(" ".join(mq.group(1).split()))
 
     dec_txt = (secs.get("Decisão CBMRO") or "").strip()
     is_placeholder = dec_txt.startswith("_(") or dec_txt.startswith("<!--") or not dec_txt

@@ -17,7 +17,7 @@
       "key": "assessorias",
       "chapterId": "organ:assessorias",
       "titulo": "Decisão — RI — Assessorias — Subordinação das assessorias",
-      "questao": "A minuta do RO organiza \"Assessorias\" como um órgão de assessoramento autônomo, ao lado do Gabinete do Comandante-Geral ([[Órgão — gab-cg]]) — não subordinado a ele nem a outro órgão de apoio. As duas alternativas comparadas adotam modelos de subordinação diferentes entre si E diferentes do modelo do RO.",
+      "questao": "A minuta do RO organiza \"Assessorias\" como um órgão de assessoramento autônomo, ao lado do Gabinete do Comandante-Geral (Órgão — gab-cg) — não subordinado a ele nem a outro órgão de apoio. As duas alternativas comparadas adotam modelos de subordinação diferentes entre si E diferentes do modelo do RO.",
       "candidatas": [
         {
           "fonte": "Fonte — Minuta-RI-PA — Art. 69, §1º",
@@ -86,7 +86,7 @@
       "key": "bbs",
       "chapterId": "organ:bbs",
       "titulo": "Decisão — ri — bbs — fusao-busca-salvamento-emergencias-ambientais",
-      "questao": "A minuta do RO trata Busca e Salvamento ([[Órgão — bbs]]) e Incêndio Florestal/ Emergências Ambientais ([[Órgão — bifea]]) como DOIS batalhões de execução separados. A fonte alternativa do PR (usada em [[Órgão — bbs]]) concentra as duas competências num ÚNICO órgão — o Grupo de Operações de Socorro Tático (GOST), subordinado diretamente ao Comandante-Geral. É uma divergência de estrutura (quantos órgãos existem para essas duas missões), não de redação — é preciso decidir se o CBMRO mantém os dois batalhões separados ou concentra as duas missões num único órgão, no modelo do PR.",
+      "questao": "A minuta do RO trata Busca e Salvamento (Órgão — bbs) e Incêndio Florestal/ Emergências Ambientais (Órgão — bifea) como DOIS batalhões de execução separados. A fonte alternativa do PR (usada em Órgão — bbs) concentra as duas competências num ÚNICO órgão — o Grupo de Operações de Socorro Tático (GOST), subordinado diretamente ao Comandante-Geral. É uma divergência de estrutura (quantos órgãos existem para essas duas missões), não de redação — é preciso decidir se o CBMRO mantém os dois batalhões separados ou concentra as duas missões num único órgão, no modelo do PR.",
       "candidatas": [
         {
           "fonte": "Paraná — Lei nº 22.206/2024, Art. 35, III (GOST — fusão busca/salvamento + emergências ambientais)",
@@ -110,8 +110,8 @@
       ],
       "comparacao": [
         "O PR concentra num único órgão (GOST, subordinado direto ao Comandante-Geral) as duas",
-        "O DF, fonte alternativa do BIFEA (ver [[Órgão — bifea]]), mantém um órgão específico",
-        "Se o CBMRO adotar o modelo do PR, seria preciso fundir [[Órgão — bbs]] e [[Órgão — bifea]] em"
+        "O DF, fonte alternativa do BIFEA (ver Órgão — bifea), mantém um órgão específico",
+        "Se o CBMRO adotar o modelo do PR, seria preciso fundir Órgão — bbs e Órgão — bifea em"
       ],
       "ligadas": [
         "Órgão — bbs",
@@ -278,7 +278,7 @@
       "key": "crbm",
       "chapterId": "organ:crbm",
       "titulo": "Decisão — ri — crbm — descentralizacao-seguranca-contra-incendio",
-      "questao": "A minuta do RO centraliza a competência de segurança contra incêndio e pânico (licenciamento, fiscalização, recursos administrativos de 2ª instância) na Coordenadoria de Atividades Técnicas (CAT, [[Órgão — cat]]), órgão de execução subordinado ao Comando de Operações Técnicas (COT) — a organização interna dos Comandos Regionais de Bombeiro Militar ([[Órgão — crbm]]) não tem seção própria de SCI. O Rio Grande do Sul organiza a matéria de forma estruturalmente diferente: cada Comando Regional (CRBM) tem sua PRÓPRIA Divisão de Segurança Contra Incêndio, com autoridade para licenciar, fiscalizar e decidir recursos de 2ª instância na circunscrição regional. É divergência de estrutura (qual órgão exerce a competência — central × regional), não de redação — é preciso decidir se o CBMRO mantém a centralização na CAT ou descentraliza parte da competência de SCI para os CRBM, nos moldes do RS.",
+      "questao": "A minuta do RO centraliza a competência de segurança contra incêndio e pânico (licenciamento, fiscalização, recursos administrativos de 2ª instância) na Coordenadoria de Atividades Técnicas (CAT, Órgão — cat), órgão de execução subordinado ao Comando de Operações Técnicas (COT) — a organização interna dos Comandos Regionais de Bombeiro Militar (Órgão — crbm) não tem seção própria de SCI. O Rio Grande do Sul organiza a matéria de forma estruturalmente diferente: cada Comando Regional (CRBM) tem sua PRÓPRIA Divisão de Segurança Contra Incêndio, com autoridade para licenciar, fiscalizar e decidir recursos de 2ª instância na circunscrição regional. É divergência de estrutura (qual órgão exerce a competência — central × regional), não de redação — é preciso decidir se o CBMRO mantém a centralização na CAT ou descentraliza parte da competência de SCI para os CRBM, nos moldes do RS.",
       "candidatas": [
         {
           "fonte": "Rio Grande do Sul — RI (Portaria nº 001/2025) (SCI descentralizada no CRBM)",
@@ -321,7 +321,7 @@
       "key": "depdec",
       "chapterId": "organ:depdec",
       "titulo": "Decisão — ri — depdec — subordinacao-defesa-civil",
-      "questao": "A minuta do RO trata a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC, [[Órgão — depdec]]) como órgão INTERNO ao CBMRO — o Diretor-Geral da DEPDEC é o próprio Comandante-Geral, nato. Alagoas organiza a matéria de forma estruturalmente diferente: a Coordenadoria Estadual de Defesa Civil (CEDEC) do CBMAL é subordinada DIRETAMENTE ao Governador do Estado, fora da cadeia do CBM. É divergência de estrutura (a quem o órgão se subordina), não de redação — é preciso decidir se o CBMRO mantém a defesa civil internalizada no Comando-Geral ou adota o modelo de vínculo direto ao Governador.",
+      "questao": "A minuta do RO trata a Diretoria Estadual de Proteção e Defesa Civil (DEPDEC, Órgão — depdec) como órgão INTERNO ao CBMRO — o Diretor-Geral da DEPDEC é o próprio Comandante-Geral, nato. Alagoas organiza a matéria de forma estruturalmente diferente: a Coordenadoria Estadual de Defesa Civil (CEDEC) do CBMAL é subordinada DIRETAMENTE ao Governador do Estado, fora da cadeia do CBM. É divergência de estrutura (a quem o órgão se subordina), não de redação — é preciso decidir se o CBMRO mantém a defesa civil internalizada no Comando-Geral ou adota o modelo de vínculo direto ao Governador.",
       "candidatas": [
         {
           "fonte": "Alagoas — RI (Decreto nº 408/2001) (subordinação direta ao Governador)",
@@ -370,7 +370,7 @@
       "key": "dlog",
       "chapterId": "organ:dlog",
       "titulo": "Decisão — ri — dlog — fusao-logistica-financas",
-      "questao": "A minuta do RO trata Logística ([[Órgão — dlog]]) e Planejamento/Orçamento/ Finanças ([[Órgão — dpof]]) como DOIS órgãos de direção separados. O Paraná organiza as duas matérias num ÚNICO órgão (Diretoria de Apoio Logístico e Finanças). É uma divergência de estrutura (quantos órgãos existem), não de redação — é preciso decidir se o CBMRO mantém a separação ou funde as duas diretorias.",
+      "questao": "A minuta do RO trata Logística (Órgão — dlog) e Planejamento/Orçamento/ Finanças (Órgão — dpof) como DOIS órgãos de direção separados. O Paraná organiza as duas matérias num ÚNICO órgão (Diretoria de Apoio Logístico e Finanças). É uma divergência de estrutura (quantos órgãos existem), não de redação — é preciso decidir se o CBMRO mantém a separação ou funde as duas diretorias.",
       "candidatas": [
         {
           "fonte": "Paraná — Lei nº 22.206/2024 (fusão logística + finanças)",
@@ -409,7 +409,7 @@
       "comparacao": [
         "DF e PA convergem entre si: cada um mantém logística e finanças como dois órgãos distintos",
         "PR diverge dos dois: funde as duas competências num único órgão (DALF), sem seção interna",
-        "Se o CBMRO adotar o modelo do PR, seria preciso fundir [[Órgão — dlog]] e [[Órgão — dpof]]"
+        "Se o CBMRO adotar o modelo do PR, seria preciso fundir Órgão — dlog e Órgão — dpof"
       ],
       "ligadas": [
         "Órgão — dlog",
@@ -427,7 +427,7 @@
       "key": "doe",
       "chapterId": "organ:doe",
       "titulo": "Decisão — ri — doe — nivel-hierarquico-protecao-civil",
-      "questao": "o Distrito Federal inclui \"Grupamento de Proteção Civil (GPCIV)\" como uma das 6 unidades especializadas SUBORDINADAS ao Comando Especializado (equivalente à [[Órgão — doe]] na minuta do RO). A minuta do RO, por sua vez, trata Defesa/Proteção Civil como uma DIRETORIA DE DIREÇÃO própria e independente — [[Órgão — depdec]] (Diretoria Estadual de Proteção e Defesa Civil) — que não é subordinada à DOE nem a nenhum outro órgão de operações especializadas. É uma divergência de NÍVEL HIERÁRQUICO do mesmo assunto (proteção civil como diretoria autônoma vs. como unidade de execução dentro de um comando especializado), não uma questão de redação diferente.",
+      "questao": "o Distrito Federal inclui \"Grupamento de Proteção Civil (GPCIV)\" como uma das 6 unidades especializadas SUBORDINADAS ao Comando Especializado (equivalente à Órgão — doe na minuta do RO). A minuta do RO, por sua vez, trata Defesa/Proteção Civil como uma DIRETORIA DE DIREÇÃO própria e independente — Órgão — depdec (Diretoria Estadual de Proteção e Defesa Civil) — que não é subordinada à DOE nem a nenhum outro órgão de operações especializadas. É uma divergência de NÍVEL HIERÁRQUICO do mesmo assunto (proteção civil como diretoria autônoma vs. como unidade de execução dentro de um comando especializado), não uma questão de redação diferente.",
       "candidatas": [
         {
           "fonte": "Distrito Federal — RI (Portaria nº 24/2020) (proteção civil como unidade subordinada)",
@@ -560,7 +560,7 @@
         "BA já acumula formalmente atendimento + despacho num único cargo de praça; TO os separa como regra, mas permite acúmulo pontual \"por necessidade do serviço\" — na prática, a distância entre os dois modelos é menor do que parece à primeira vista.",
         "Adotar o modelo de BA (2 papéis) simplifica a escala e exige menos efetivo fixo no 193 — mais compatível com um centro de operações de porte médio como o de RO.",
         "Adotar o modelo de TO (3 papéis) dá mais especialização (quem atende o telefone não é quem decide o despacho) e cria uma camada extra de checagem antes do acionamento da viatura, mas demanda mais bombeiros militares dedicados exclusivamente ao 193.",
-        "Nenhuma das 2 fontes trata de jornada/folga nestes dispositivos específicos de estrutura de função (essa disputa está em [[Decisão — servico-operacional — despachante-atendente-193-folga]]); a escolha aqui é só sobre QUANTAS funções existem, não sobre a escala de cada uma."
+        "Nenhuma das 2 fontes trata de jornada/folga nestes dispositivos específicos de estrutura de função (essa disputa está em Decisão — servico-operacional — despachante-atendente-193-folga); a escolha aqui é só sobre QUANTAS funções existem, não sobre a escala de cada uma."
       ],
       "ligadas": [
         "Tema — central-operacoes-193",

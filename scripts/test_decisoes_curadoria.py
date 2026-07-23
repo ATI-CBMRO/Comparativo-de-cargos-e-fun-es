@@ -7,7 +7,7 @@ organKey: dlog
 decidido: false
 ---
 # Decisão — ri — dlog — fusao-logistica-financas
-**Questão:** A minuta trata Logística e Finanças como dois órgãos.
+**Questão:** A minuta trata [[Órgão — dlog]] e [[Órgão — dpof]] como dois órgãos.
 
 ## Redações candidatas
 
@@ -25,7 +25,7 @@ decidido: false
 
 ## Comparação
 - DF e PA convergem entre si.
-- PR diverge dos dois.
+- PR diverge de [[Órgão — dlog]] e [[Órgão — dpof]].
 
 ## Decisão CBMRO
 _(a preencher pelo Wândrio — manter separados ou fundir)_
@@ -67,7 +67,8 @@ class TestParseDecisao(unittest.TestCase):
         self.assertEqual(d["key"], "dlog")
         self.assertEqual(d["chapterId"], "organ:dlog")
         self.assertEqual(d["titulo"], "Decisão — ri — dlog — fusao-logistica-financas")
-        self.assertTrue(d["questao"].startswith("A minuta trata Logística"))
+        self.assertTrue(d["questao"].startswith("A minuta trata Órgão — dlog"))
+        self.assertNotIn("[[", d["questao"])
         self.assertEqual(len(d["candidatas"]), 2)
         self.assertEqual(d["candidatas"][0]["fonte"], "Paraná — Lei nº 22.206/2024 (fusão)")
         self.assertEqual(d["candidatas"][0]["verbatim"][0],
@@ -80,6 +81,8 @@ class TestParseDecisao(unittest.TestCase):
         self.assertIn("atri buições", d["candidatas"][1]["verbatim"][0])
         self.assertIsNotNone(d["candidatas"][1]["ocr"])
         self.assertEqual(len(d["comparacao"]), 2)
+        self.assertNotIn("[[", d["comparacao"][1])
+        self.assertIn("Órgão — dlog", d["comparacao"][1])
         self.assertEqual(d["ligadas"], ["Órgão — dlog", "Órgão — dpof", "Fonte — RI-PR"])
         # placeholder itálico → decisao None
         self.assertFalse(d["decidido"])
@@ -109,7 +112,7 @@ decidido: false
 
 ## O problema
 
-A minuta do RO organiza Assessorias como órgão autônomo. As alternativas divergem entre si.
+A minuta do RO organiza [[Órgão — assessorias]] como órgão autônomo. As alternativas divergem entre si.
 
 ## Excertos verbatim
 
@@ -159,7 +162,7 @@ O RO e o PR divergem sobre quem pode ser Corregedor-Geral.
 
 ## Divergência
 
-O RO exige apenas quadro geral. O PR exige linha combatente.
+O [[Órgão — corregedoria]] exige apenas quadro geral. O PR exige linha combatente.
 
 ## Decisão CBMRO
 
@@ -171,7 +174,8 @@ class TestParseDecisaoLegado(unittest.TestCase):
     def test_legado_com_tabela(self):
         d = parse_decisao(NOTA_LEGADO_TABELA, "Decisão — ri — assessorias — x.md", "ri")
         self.assertEqual(d["key"], "assessorias")
-        self.assertTrue(d["questao"].startswith("A minuta do RO organiza"))
+        self.assertTrue(d["questao"].startswith("A minuta do RO organiza Órgão — assessorias"))
+        self.assertNotIn("[[", d["questao"])
         self.assertEqual(len(d["candidatas"]), 2)
         self.assertIn("Fonte — Minuta-RI-PA", d["candidatas"][0]["fonte"])
         self.assertTrue(d["candidatas"][0]["verbatim"][0].startswith("As assessorias"))
@@ -191,6 +195,8 @@ class TestParseDecisaoLegado(unittest.TestCase):
         self.assertEqual(d["candidatas"][1]["citacao"],
                           "cf. CBMPR, RI (coletânea do portal), Art. 23")
         self.assertTrue(len(d["comparacao"]) >= 1)
+        self.assertNotIn("[[", d["comparacao"][0])
+        self.assertIn("Órgão — corregedoria", d["comparacao"][0])
         self.assertIsNone(d["decisao"])  # comentário HTML placeholder -> None
 
     def test_legado_sem_problema_nem_contexto_falha(self):
