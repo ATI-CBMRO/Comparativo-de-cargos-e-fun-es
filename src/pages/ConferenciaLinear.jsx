@@ -11,6 +11,7 @@ import { confKey, mergeStatus } from '../lib/conferenciaStatus.js'
 import { subscribeConferencia, saveConferenciaStatus } from '../lib/conferenciaData.js'
 import { articleLabel, romanize } from '../lib/minutaArticles.js'
 import { AlternativesPanel } from '../components/AlternativesPanel.jsx'
+import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 const ARQ = { ri: 'minuta_structure.json', reg: 'regulamento_structure.json' }
 const TITULO = { ri: 'Regimento Interno', reg: 'Regulamento Geral' }
@@ -29,9 +30,13 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
     fetchJson(scenarioDbUrl(cenario, ARQ[trilha])).then(setData).catch(() => setError(true))
   }, [cenario, trilha])
 
+  const [syncErro, setSyncErro] = useState(false)
   useEffect(() => {
     if (!user) { setRemoto(null); return undefined }
-    return subscribeConferencia(setRemoto, console.error)
+    return subscribeConferencia(
+      (v) => { setRemoto(v); setSyncErro(false) },
+      (e) => { console.error('Erro na assinatura da conferência:', e); setSyncErro(true) },
+    )
   }, [user])
 
   const lista = useMemo(() => (data ? buildConferencia(data) : []), [data])
@@ -73,6 +78,7 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
       </div>
 
       <div className="page-body">
+        <AvisoSincronizacao visivel={syncErro} />
         <div className="conf-progress">
           <div className="conf-progress-bar" style={{ width: `${lista.length ? (feitos / lista.length) * 100 : 0}%` }} />
         </div>

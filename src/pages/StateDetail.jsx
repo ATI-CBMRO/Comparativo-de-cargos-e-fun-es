@@ -113,6 +113,7 @@ export default function StateDetail() {
   const [selectedOrgan, setSelectedOrgan] = useState(null)
   const [activeTab, setActiveTab] = useState('organograma')
   const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
     fetchJson('/database/states_data.json')
@@ -121,7 +122,13 @@ export default function StateDetail() {
         setState(found || null)
         setLoading(false)
       })
-      .catch(() => setLoading(false))
+      .catch((e) => {
+        // Distingue "estado não existe" de "falha ao carregar a base" — antes os
+        // dois caíam no mesmo "não encontrado" (auditoria 2026-07-23).
+        console.error('Erro ao carregar states_data.json:', e)
+        setLoadError(true)
+        setLoading(false)
+      })
   }, [stateId])
 
   // Tenta carregar dados de detalhe de órgãos para este estado (nem todo estado tem).
@@ -130,7 +137,9 @@ export default function StateDetail() {
       .then(data => {
         if (data?.organs) setOrgDetail(data.organs)
       })
-      .catch(() => {})
+      // Ausência esperada já volta null via optional:true — erro REAL não pode ser
+      // engolido sem rastro (auditoria 2026-07-23).
+      .catch((e) => console.error(`Erro ao carregar organs_detail/${stateId}.json:`, e))
   }, [stateId])
 
   function handleSelectOrgan(node) {
@@ -162,6 +171,12 @@ export default function StateDetail() {
 
   if (loading) return <LoadingState label="" />
 
+  if (loadError) return (
+    <div className="not-found" style={{ padding: 32 }}>
+      <h3>Erro ao carregar a base de dados</h3>
+      <p>Não foi possível carregar os dados dos estados (falha de conexão ou servidor). Recarregue a página.</p>
+    </div>
+  )
   if (!state) return (
     <div className="empty-state" style={{ marginTop: 80 }}>
       <Shield size={40} className="empty-state-icon" />

@@ -89,6 +89,61 @@ varredura completa das citações roda em `scripts/auditoria_citacoes.py`.
 
 ---
 
+## AR-03 · Endereço posicional (`#index`) que dessincroniza do conteúdo
+
+**O que é:** usar POSIÇÃO em lista como endereço estável de um item (comentário, texto
+final, par de dados), quando a lista pode ser reordenada/filtrada/reconstruída — o
+endereço passa a apontar para o item errado, sem erro. Classe do precedente MyFOP
+(`[pw, pr] = data.pessoas` invertido pela ordenação; passou por ~15 revisões).
+
+**Caso original (2026-07-23, auditoria Rodada 3):** `buildArticles`
+(`src/lib/minutaArticles.js`) re-indexa 0..n os incisos de uma seção EDITADA, enquanto o
+caminho não-editado preserva o índice original — e `applyFinalsToArticles`
+(`src/lib/minutaFinals.js`) aplicava o texto final `editId#3` na linha que HOJE ocupa a
+posição 3, que pode ser outro inciso. Corrigido: incisos re-indexados levam
+`reindexed: true` e o overlay de finais os pula (teste de regressão em
+`minutaFinals.test.js`). **Risco remanescente registrado em PENDENCIAS:** a estabilidade
+de `editId#index` entre RODADAS é só convenção ("congelar o JSON") — regenerar
+`minuta_structure.json` com inciso inserido no meio desloca todos os comentários
+posteriores, sem guarda de código.
+
+**Método de detecção:** procurar `[0]`/destructuring posicional/zip por índice sobre
+dados carregados; e todo lugar onde um índice vira CHAVE persistida. Perguntar: "quem
+garante que esta lista nunca muda de ordem/tamanho?" — se a resposta for "convenção",
+é achado.
+
+**Onde varrer:** `merge_cargos` (fuzzy primeiro-vence — possível), `enrich_tree_from_detail`
+(`setdefault` primeiro-vence em sigla duplicada — possível), `acervoCoverage.docLabel`
+(`laws[0]` — possível), `buildOrganTree` (pré-ordem confiada — possível). Varridos em
+2026-07-23; 9 padrões descartados como ok-por-design (lista no relatório da auditoria).
+
+**Status:** caso original CORRIGIDO (2026-07-23); guard-rail do congelamento é pendência.
+
+---
+
+## AR-04 · Erro engolido: catch/callback que só loga e a tela segue "verde"
+
+**O que é:** `.catch(console.error)`, catch vazio ou `onSnapshot` cujo callback de erro
+não altera NENHUM estado visível — a tela congela com dados velhos ou cai num estado
+enganoso ("não encontrado", "sem dados") e o usuário decide em cima disso.
+
+**Casos (2026-07-23, Rodada 3 — 14 ocorrências, 4 altas):** feeds de
+`finalTexts`/`suggestions`/`decisions`/`conferencia` morriam em silêncio (Wizards
+exportavam .docx potencialmente desatualizado sem aviso); `auth.jsx` tratava falha de
+REDE como "não autorizado"; `StateDetail`/`RegistroDecisaoModal` confundiam erro de
+carregamento com dado inexistente. Corrigidos com `AvisoSincronizacao` (banner) +
+estados de erro distintos; gravações já seguiam o padrão alert (commit ad4e5ac).
+
+**Método de detecção:** grep por `catch(console.error|\(\) => \{\}|=> null)` e por
+`onSnapshot(` sem 2º argumento; para cada um, perguntar "que pixel muda na tela quando
+isto falhar?" — se nenhum, é achado. Teste negativo: derrubar a rede/regra e confirmar
+que fica vermelho.
+
+**Status:** 14 ocorrências corrigidas/classificadas em 2026-07-23 (4 baixas mantidas
+com justificativa). Repetir o grep a cada tela nova com Firestore.
+
+---
+
 ## Diretriz geral para a auditoria (independe de classe)
 
 - Verbatim: todo excerto exibido deve bater caractere a caractere com a fonte; defeitos de

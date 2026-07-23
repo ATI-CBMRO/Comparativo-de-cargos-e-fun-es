@@ -140,9 +140,11 @@ test('buildArticles articula prose como um artigo por linha', () => {
 test('buildArticles usa edits (texto) no lugar dos itens, com source nulo', () => {
   const arts = buildArticles(STRUCTURE, { 'organ:dpo/cargo:diretor': 'item editado\noutro item' })
   const diretor = arts.find(a => a.caput === 'Ao Diretor compete:')
+  // reindexed: o índice destes incisos é posicional novo (não endereça mais o
+  // item original) — ver auditoria 2026-07-23 / applyFinalsToArticles.
   assert.deepEqual(diretor.incisos, [
-    { text: 'item editado; e', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 0 },
-    { text: 'outro item.', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 1 },
+    { text: 'item editado; e', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 0, reindexed: true },
+    { text: 'outro item.', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 1, reindexed: true },
   ])
 })
 

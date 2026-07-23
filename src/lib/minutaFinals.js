@@ -20,6 +20,10 @@ export function applyFinalsToArticles(articles, finalsMap, { skipEditIds = new S
     }
     let mudouInciso = false
     const incisos = (art.incisos ?? []).map(inc => {
+      // inc.reindexed: o índice é posicional novo (seção editada) e NÃO endereça
+      // mais o inciso original — aplicar o final aqui acertaria o inciso errado
+      // (auditoria 2026-07-23, classe do `[pw, pr] = data.pessoas` do MyFOP).
+      if (inc.reindexed) return inc
       const f = finalsMap.get(incisoDispositivoId(a.editId, inc.index))
       if (f?.status === 'fechado') { mudouInciso = true; appliedCount += 1; return { ...inc, text: f.texto, source: null } }
       return inc

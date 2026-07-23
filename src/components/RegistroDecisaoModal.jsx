@@ -23,8 +23,19 @@ export default function RegistroDecisaoModal({ decisao: d, trilha, cenario, auto
   const [salvando, setSalvando] = useState(false)
   const [decisaoGravada, setDecisaoGravada] = useState(false) // p/ repetir só o finalText
 
+  const [structErro, setStructErro] = useState(false)
   useEffect(() => {
-    fetchJson(scenarioDbUrl(cenario, ARQ[trilha])).then(setStruct).catch(() => setStruct(null))
+    setStructErro(false)
+    fetchJson(scenarioDbUrl(cenario, ARQ[trilha]))
+      .then(setStruct)
+      .catch((e) => {
+        // Distingue falha de carregamento de "capítulo não existe no cenário" —
+        // antes a mensagem mandava trocar de cenário mesmo em erro de rede
+        // (auditoria 2026-07-23).
+        console.error('Erro ao carregar estrutura p/ registro de decisão:', e)
+        setStruct(null)
+        setStructErro(true)
+      })
   }, [cenario, trilha])
 
   const artigos = useMemo(() => {
@@ -100,7 +111,9 @@ export default function RegistroDecisaoModal({ decisao: d, trilha, cenario, auto
           <div className="decm-field">
             <label>Artigo alvo (cenário ativo: {cenario})</label>
             {artigos.length === 0 && (
-              <p className="rg-empty">Este capítulo não existe no cenário ativo — troque o cenário para aplicar a redação.</p>
+              <p className="rg-empty">{structErro
+                ? 'Não foi possível carregar a estrutura do documento (falha de conexão). Feche e tente de novo.'
+                : 'Este capítulo não existe no cenário ativo — troque o cenário para aplicar a redação.'}</p>
             )}
             <div className="decm-artigos">
               {artigos.map(a => (

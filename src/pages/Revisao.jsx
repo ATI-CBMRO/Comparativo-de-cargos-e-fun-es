@@ -22,6 +22,7 @@ import RevisaoChapterRail from '../components/RevisaoChapterRail.jsx'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
+import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
@@ -66,21 +67,25 @@ export default function Revisao({ initialDoc } = {}) {
       .catch(() => setErro('Não foi possível carregar o documento.'))
   }, [docId, cenario])
 
+  const [syncErro, setSyncErro] = useState(false)
+
   // Ausência do doc config/revisao == fechado (fail-closed) — ver reviewData.js.
   useEffect(() => subscribeRevisaoConfig(
     (cfg) => setRegulamentoAbertoState(cfg.regulamentoAberto === true),
-    (e) => console.error('Erro na config da revisão:', e),
+    (e) => { console.error('Erro na config da revisão:', e); setSyncErro(true) },
   ), [])
-
   // subscribeSuggestions retorna o unsubscribe do onSnapshot — cleanup correto do efeito.
   useEffect(() => subscribeSuggestions(
-    setSuggestions,
-    (e) => console.error('Erro na assinatura de sugestões:', e),
+    (v) => { setSuggestions(v); setSyncErro(false) },
+    (e) => { console.error('Erro na assinatura de sugestões:', e); setSyncErro(true) },
   ), [])
 
   const [finals, setFinals] = useState(new Map())
   // Idem: subscribeFinalTexts também retorna o unsubscribe do onSnapshot.
-  useEffect(() => subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e)), [])
+  useEffect(() => subscribeFinalTexts(
+    setFinals,
+    (e) => { console.error('Erro finalTexts:', e); setSyncErro(true) },
+  ), [])
 
   // Filtra por documento (RI×Regulamento) E por cenário (atual×futura) — os dois nunca
   // se misturam: comentários de um cenário jamais aparecem no outro.
@@ -209,6 +214,7 @@ export default function Revisao({ initialDoc } = {}) {
       </div>
 
       <div className="page-body">
+        <AvisoSincronizacao visivel={syncErro} />
         {bloqueadoParaComissao ? (
           <EmptyState
             title="Regulamento em preparação"

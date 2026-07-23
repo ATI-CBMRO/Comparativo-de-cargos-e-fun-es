@@ -29,7 +29,12 @@ export default function Dashboard() {
   useEffect(() => {
     fetchJson('/database/states_data.json')
       .then(d => { setData(d); setLoading(false) })
-      .catch(() => setLoading(false))
+      .catch((e) => {
+        // Deixa rastro: sem isto a tela caía no "sem dados" genérico escondendo
+        // que foi erro de carregamento (auditoria 2026-07-23).
+        console.error('Erro ao carregar states_data.json:', e)
+        setLoading(false)
+      })
   }, [])
 
   if (loading) return <LoadingState label="Carregando base de dados..." />

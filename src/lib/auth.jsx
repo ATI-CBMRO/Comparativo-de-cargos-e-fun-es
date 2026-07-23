@@ -14,6 +14,7 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
   const [naoAutorizado, setNaoAutorizado] = useState(false)
+  const [erroVerificacao, setErroVerificacao] = useState(null)
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (fbUser) => {
@@ -49,10 +50,14 @@ export function AuthProvider({ children }) {
           role: m.role === 'admin' ? 'admin' : 'participante',
         })
         setNaoAutorizado(false)
+        setErroVerificacao(null)
       } catch (e) {
-        // Falha ao verificar o cadastro (ex.: rede): não trava a tela.
+        // Falha ao verificar o cadastro (ex.: rede): não trava a tela, mas AVISA —
+        // antes o usuário só via a tela de login de novo, achando que perdeu o
+        // acesso, quando foi falha transitória (auditoria 2026-07-23).
         console.error('Erro ao verificar acesso:', e)
         setUser(null); setNaoAutorizado(false)
+        setErroVerificacao('Não foi possível verificar seu acesso agora (falha de conexão). Tente entrar novamente.')
       } finally {
         setLoading(false)
       }
@@ -75,7 +80,7 @@ export function AuthProvider({ children }) {
   const recuperarSenha = (email) => sendPasswordResetEmail(auth, normalizeEmail(email))
 
   return (
-    <AuthContext.Provider value={{ user, loading, naoAutorizado, entrar, cadastrar, sair, recuperarSenha }}>
+    <AuthContext.Provider value={{ user, loading, naoAutorizado, erroVerificacao, entrar, cadastrar, sair, recuperarSenha }}>
       {children}
     </AuthContext.Provider>
   )

@@ -11,6 +11,7 @@ import { useAuth } from '../lib/auth.jsx'
 import { subscribeFinalTexts } from '../lib/reviewData.js'
 import { filterFinalsByDoc, filterFinalsByScenario } from '../lib/reviewGroup.js'
 import { applyFinalsToArticles } from '../lib/minutaFinals.js'
+import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
 
@@ -89,9 +90,13 @@ export default function RegulamentoWizard() {
   const { user } = useAuth()
   const [finals, setFinals] = useState(null)
 
+  const [finalsErro, setFinalsErro] = useState(false)
   useEffect(() => {
     if (!user) { setFinals(null); return undefined }
-    return subscribeFinalTexts(setFinals, (e) => console.error('Erro finalTexts:', e))
+    return subscribeFinalTexts(
+      (v) => { setFinals(v); setFinalsErro(false) },
+      (e) => { console.error('Erro finalTexts:', e); setFinalsErro(true) },
+    )
   }, [user])
   const finalsDoDoc = useMemo(() => {
     if (!finals) return null
@@ -341,6 +346,7 @@ export default function RegulamentoWizard() {
       </div>
 
       <div className="page-body">
+        <AvisoSincronizacao visivel={finalsErro} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24 }}>
           {STEP_LABELS.map((label, i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>

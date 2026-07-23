@@ -41,3 +41,17 @@ test('mapa vazio/null é no-op', () => {
   assert.equal(applyFinalsToArticles(articles, null).appliedCount, 0)
   assert.equal(applyFinalsToArticles(articles, new Map()).articles, articles)
 })
+
+test('NÃO aplica final em inciso re-indexado (seção editada) — auditoria 2026-07-23', () => {
+  // Cenário do bug: relator editou a seção removendo o 1º inciso; a linha que hoje
+  // ocupa o índice 2 NÃO é o inciso original organ:cg/competencia#2. Antes do fix,
+  // o final "coordenar" era aplicado nela em silêncio.
+  const editados = articles.map(a => ({
+    ...a,
+    incisos: (a.incisos ?? []).map((inc, i) => ({ ...inc, index: i, reindexed: true })),
+  }))
+  const finals = new Map([['organ:cg/competencia#2', { texto: 'coordenar', status: 'fechado' }]])
+  const r = applyFinalsToArticles(editados, finals)
+  assert.equal(r.appliedCount, 0)
+  assert.ok(r.articles[0].incisos.every(inc => inc.text !== 'coordenar'))
+})

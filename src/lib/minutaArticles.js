@@ -92,10 +92,16 @@ export function buildArticles(structure, edits = {}, isExcluded = () => false) {
         let incisos
         if (edited != null) {
           const raw = edited.split('\n').map(l => l.trim()).filter(Boolean)
+          // ATENÇÃO (auditoria 2026-07-23): aqui o índice é POSICIONAL NOVO (0..n
+          // das linhas editadas), não o índice original de leaf.items — o endereço
+          // `editId#index` dos comentários/textos finais NÃO vale mais para estes
+          // incisos. `reindexed: true` sinaliza isso a quem consome (ver
+          // applyFinalsToArticles, que pula o overlay para não aplicar texto final
+          // no inciso errado).
           incisos = raw.map((t, i) => ({
             text: normalizeInciso(t, i, raw.length),
             ownMarker: hasOwnMarker(t),
-            source: null, editId: leaf.editId, index: i,
+            source: null, editId: leaf.editId, index: i, reindexed: true,
           }))
         } else {
           // preserva o índice ORIGINAL em leaf.items para a chave de exclusão

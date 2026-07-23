@@ -59,10 +59,36 @@
   nova que use `chapter.id` como chave de persistência colide entre cenários. Avaliar
   re-carimbar também o id do capítulo numa fatia futura.
 
+- [ ] **Guard-rail para `editId#index` entre rodadas (AR-03)**: a estabilidade do endereço
+  dos comentários/textos finais depende da CONVENÇÃO de congelar `minuta_structure.json`
+  durante a rodada — regenerar o JSON inserindo inciso no meio desloca todos os comentários
+  posteriores em silêncio. Proposta a decidir: gravar um hash/versão do structure junto de
+  cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
+- [ ] Firestore rules — 2 minors aceitos por ora (equipe pequena): membro pode regravar
+  `curtidoPor` inteiro (removeria curtidas alheias) e sobrescrever marcações de
+  `conferencia` de outro membro. Apertar se a comissão crescer. + **Conferir com o Wândrio
+  se as regras PUBLICADAS no console batem com `firestore.rules`** (pedir para colar).
+- [ ] Auditoria — teste REAL de escrita/leitura no Firestore (produção) não foi executado:
+  exige login de membro (credencial do Wândrio). O caminho do código foi verificado
+  (encode/decode simétricos em conferencia/finalTexts/decisions + testes de
+  dispositivoId), mas falta a prova ponta a ponta — fazer numa sessão com o app aberto
+  e o Wândrio logado (2 min: marcar uma conferência e ver o doc no console).
+
 ## 🟡 Em andamento
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Auditoria Rodada 3 — falsos verdes e falhas silenciosas** (23/07/2026): (a) classe
+  do MyFOP encontrada de verdade — incisos de seção EDITADA são re-indexados 0..n e o
+  texto final `editId#N` era aplicado no inciso ERRADO em silêncio; corrigido
+  (`reindexed: true` + skip no overlay, teste de regressão novo); (b) 14 erros engolidos
+  mapeados (4 altas) e corrigidos: banner `AvisoSincronizacao` nos feeds Firestore
+  (Wizards/Revisão/Conferência/Decisões), falha de rede no login distinta de "não
+  autorizado", telas que confundiam erro de carga com dado inexistente; (c) fronteira
+  `encodeFirestoreId` conferida (simétrica nas 3 coleções por dispositivoId);
+  (d) `npm run build` exit 0 com dist/ conferida; (e) rules locais auditadas coleção a
+  coleção; (f) API gerar-proposta com auth+rate-limit reais nos 2 caminhos. AR-03 e
+  AR-04 registradas no catálogo de armadilhas. node 133/133.
 - [x] **Auditoria Rodada 2 — cenários atual×futura / geradores paralelos** (23/07/2026):
   3 comparações lado a lado (minuta, regulamento, comparativo) + teste mecânico nos JSONs.
   Vazamento futura→atual: **0** (competências do RO limpas; editIds todos com marcador;

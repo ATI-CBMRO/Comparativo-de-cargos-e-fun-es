@@ -10,7 +10,7 @@ const MENSAGENS = {
 }
 
 export default function Login() {
-  const { entrar, recuperarSenha, naoAutorizado } = useAuth()
+  const { entrar, recuperarSenha, naoAutorizado, erroVerificacao } = useAuth()
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [erro, setErro] = useState('')
@@ -57,6 +57,7 @@ export default function Login() {
         {naoAutorizado && (
           <div className="form-error">Seu acesso ainda não foi liberado pelo administrador.</div>
         )}
+        {erroVerificacao && <div className="form-error">{erroVerificacao}</div>}
         {erro && <div className="form-error">{erro}</div>}
         {aviso && <div className="login-aviso">{aviso}</div>}
 

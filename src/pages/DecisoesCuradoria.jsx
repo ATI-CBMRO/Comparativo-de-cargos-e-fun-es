@@ -36,14 +36,22 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
     fetchJson('/database/decisoes_curadoria.json').then(setDados).catch(() => setError(true))
   }, [])
 
+  const [syncErro, setSyncErro] = useState(false)
+
   useEffect(() => {
     if (!user) { setFbDecisoes(null); return undefined }
-    return subscribeDecisions(setFbDecisoes, console.error)
+    return subscribeDecisions(
+      (v) => { setFbDecisoes(v); setSyncErro(false) },
+      (e) => { console.error('Erro na assinatura de decisões:', e); setSyncErro(true) },
+    )
   }, [user])
 
   useEffect(() => {
     if (!user) { setConf(null); return undefined }
-    return subscribeConferencia(setConf, console.error)
+    return subscribeConferencia(
+      setConf,
+      (e) => { console.error('Erro na assinatura da conferência:', e); setSyncErro(true) },
+    )
   }, [user])
 
   const daTrilha = useMemo(() => decisoesDaTrilha(dados, trilha), [dados, trilha])
@@ -93,6 +101,7 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
       </div>
 
       <div className="page-body">
+        <AvisoSincronizacao visivel={syncErro} />
         <div className="dec-filtros no-print" style={{ display: 'flex', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
             {FILTROS.map(f => (
