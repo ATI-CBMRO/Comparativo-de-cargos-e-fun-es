@@ -14,9 +14,6 @@
   (a) dpo — `cf. CBMPA, Lei nº 11.060/2025, Art. 16` citado na competência do RO não bate com o
   excerto verbatim de `alternatives.pa`; (b) assessorias — CBMGO citado sem excerto nas
   alternatives; (c) ag — CBMMT citado sem excerto. Origem: revisões da Frente B, 22/07/2026.
-- [ ] **4 PNGs soltos na raiz do repo** (`fase2a-*.png`, `fase2c-*.png`, não versionados, de
-  sessão anterior do Wândrio) + `.claude/ULTIMO-CHECKPOINT.md` não versionado — decidir se
-  guarda ou descarta (nunca apagar sem autorização).
 - [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE); DOB-01 de AL
   ("Terminologia Operacional") citada pela DOB-08 mas não ingerida; dimensionamento técnico do
   193 (nº de PAs/troncos) só na DOB-06-AL (lacuna registrada no vault).
@@ -44,6 +41,9 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Faxina — 4 PNGs soltos + checkpoint descartados** (23/07/2026): screenshots de prova
+  de sessões passadas (15/07) e o checkpoint automático pré-compactação — nenhum era
+  versionado nem lido por código; descartados a pedido do Wândrio.
 - [x] **Cockpit — erros de gravação deixaram de ser silenciosos** (23/07/2026): `saveConferenciaStatus`/
   `marcarFichaAplicada`/`desfazerDecisao` agora mostram um alerta visível na tela quando a
   gravação falha (antes só iam pro `console.error`). Achado não-bloqueante da revisão final da
