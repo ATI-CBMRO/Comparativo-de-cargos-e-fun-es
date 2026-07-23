@@ -48,6 +48,14 @@ export default function Revisao({ initialDoc } = {}) {
   const [aberto, setAberto] = useState(null) // { id, label, trecho }
   const [regulamentoAberto, setRegulamentoAbertoState] = useState(false)
 
+  const alternativesAberto = useMemo(() => {
+    if (!aberto || !data) return {}
+    const { editId } = parseDispositivoId(aberto.id)
+    const chapterId = chapterIdOf(editId)
+    const chapter = data.chapters.find(c => c.id === chapterId)
+    return chapter?.alternatives ?? {}
+  }, [aberto, data])
+
   useEffect(() => {
     setData(null)
     setErro(null)
@@ -276,6 +284,7 @@ export default function Revisao({ initialDoc } = {}) {
       {aberto && (
         <RevisaoModal
           dispositivo={aberto}
+          alternatives={alternativesAberto}
           suggestions={grupos.get(aberto.id) ?? []}
           finalText={finalsForDoc.get(aberto.id) ?? null}
           user={user}
