@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ClipboardList, Check, AlertTriangle, ChevronRight, BookOpen } from 'lucide-react'
+import { ClipboardList, Check, AlertTriangle, ChevronRight, BookOpen, Download } from 'lucide-react'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText } from '../lib/comparatorRender.jsx'
@@ -53,6 +53,24 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
   const pendencias = useMemo(() => pendenciasDeAplicacao(merged), [merged])
   const divergentes = useMemo(() => divergentesDe(conf, trilha, cenario), [conf, trilha, cenario])
 
+  const exportar = () => {
+    const registradas = mergeDecisoes(dados?.decisoes ?? [], fbDecisoes).filter(d => d.statusDecisao === 'sistema')
+    if (registradas.length === 0) { window.alert('Nenhuma decisão registrada no sistema para exportar.'); return }
+    const payload = registradas.map(d => ({
+      id: d.id, tipo: d.registro.tipo, decisao: d.registro.decisao,
+      fonteEscolhida: d.registro.fonteEscolhida ?? null,
+      alvoDispositivoId: d.registro.alvoDispositivoId ?? null,
+      registradoPor: d.registro.registradoPor ?? null,
+      registradoEm: d.registro.registradoEm?.toDate?.()?.toISOString() ?? null,
+    }))
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = 'decisoes_export.json'
+    a.click()
+    URL.revokeObjectURL(a.href)
+  }
+
   if (error) {
     return (
       <ErrorState
@@ -89,7 +107,9 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
           </div>
           <div style={{ display: 'flex', gap: 8 }}>
             <Link to="/manual#cockpit" className="btn btn-ghost"><BookOpen size={15} /> Como funciona</Link>
-            {/* Exportar: ligado na task de exportação */}
+            {isAdmin && (
+              <button className="btn btn-ghost" onClick={exportar}><Download size={15} /> Exportar decisões</button>
+            )}
           </div>
         </div>
 
