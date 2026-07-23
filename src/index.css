@@ -2546,6 +2546,14 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 
 .rg-print-only { display: none; }
 
+/* Conferência linear (Fase 1 — status local, sem persistência) */
+.conf-progress { height: 6px; border-radius: 99px; background: var(--gray-200); margin-bottom: 16px; overflow: hidden; }
+.conf-progress-bar { height: 100%; background: var(--accent-green); transition: width 0.2s ease; }
+.conf-controls { display: flex; gap: 8px; margin-top: 10px; }
+.conf-controls .btn.active { border-color: var(--cbm-red-700); color: var(--cbm-red-700); font-weight: 700; }
+.conf-item-ok { border-left: 3px solid var(--accent-green); }
+.conf-item-div { border-left: 3px solid var(--accent-orange); }
+
 @media (max-width: 1100px) {
   .rg-columns { flex-direction: column; }
 }
