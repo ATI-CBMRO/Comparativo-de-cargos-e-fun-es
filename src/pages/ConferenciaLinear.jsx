@@ -69,7 +69,7 @@ export default function ConferenciaLinear({ trilha = 'ri' }) {
         ) : (
           lista.map((item, i) => (
             <ConferenciaItem
-              key={item.dispositivo.editId ?? i}
+              key={item.dispositivo.number ?? i}
               item={item}
               idx={i}
               status={status[i]}
