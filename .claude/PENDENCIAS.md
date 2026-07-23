@@ -10,10 +10,11 @@
   Orientação de uso em `/manual#cockpit`. Minors registrados p/ rodada futura: padronizar os 2
   estilos de citação do MT adaptado; ruído de cabeçalho de PDF em 2 citações de SE; notas de
   Fonte magras de propósito; elisões sem "[...]" em 2 notas de decisão (cada linha é verbatim).
-- [ ] **Inconsistências de DADOS sinalizadas (decidir com o Wândrio, não corrigir em silêncio)**:
-  (a) dpo — `cf. CBMPA, Lei nº 11.060/2025, Art. 16` citado na competência do RO não bate com o
-  excerto verbatim de `alternatives.pa`; (b) assessorias — CBMGO citado sem excerto nas
-  alternatives; (c) ag — CBMMT citado sem excerto. Origem: revisões da Frente B, 22/07/2026.
+- [ ] **Ajudância-Geral (ag) — falta o RI do Mato Grosso**: 12 de 25 itens da competência citam
+  `cf. CBMMT, RI, Art. 152`, mas o Regimento Interno de MT nunca foi ingerido no acervo (só há
+  a LOB e o Regulamento Geral). Sem o PDF não dá pra confirmar nem capturar o excerto. Origem:
+  revisões da Frente B, 22/07/2026; investigado e resolvido em parte (dpo/assessorias) em
+  23/07/2026 — ver ✅ Concluído.
 - [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE); DOB-01 de AL
   ("Terminologia Operacional") citada pela DOB-08 mas não ingerida; dimensionamento técnico do
   193 (nº de PAs/troncos) só na DOB-06-AL (lacuna registrada no vault).
@@ -41,6 +42,12 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Curadoria RI — 2 das 3 inconsistências de dados resolvidas** (23/07/2026): dpo/PA tinha
+  excerto extraído do documento errado (RI em vez da LOB) — corrigido, `match` virou `exata`;
+  assessorias/GO citado na competência sem excerto capturado — adicionado (conferido no PDF
+  oficial, Art. 17-18). Ajudância-Geral/MT segue pendente (RI de MT nunca ingerido — ver
+  🔴 Pendente). `scripts/ri_alternativas_enrichment.py` + `database/minuta_structure.json`
+  regenerado; notas do vault atualizadas.
 - [x] **Faxina — 4 PNGs soltos + checkpoint descartados** (23/07/2026): screenshots de prova
   de sessões passadas (15/07) e o checkpoint automático pré-compactação — nenhum era
   versionado nem lido por código; descartados a pedido do Wândrio.
