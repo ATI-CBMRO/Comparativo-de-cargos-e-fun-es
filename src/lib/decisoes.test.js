@@ -27,3 +27,18 @@ test('contarDecisoes soma total/decididas/pendentes', () => {
   assert.deepEqual(contarDecisoes(decisoesDaTrilha(dados, 'ri')),
     { total: 2, decididas: 1, pendentes: 1 })
 })
+
+const dadosComStatus = {
+  decisoes: [
+    { trilha: 'ri', decidido: false, statusDecisao: 'sistema' },
+    { trilha: 'ri', decidido: true, statusDecisao: 'vault' },
+    { trilha: 'ri', decidido: false, statusDecisao: 'pendente' },
+  ],
+}
+
+test('com statusDecisao (merge Firebase): decide por statusDecisao, não por decidido', () => {
+  const ri = decisoesDaTrilha(dadosComStatus, 'ri')
+  assert.equal(filtrarDecisoes(ri, 'decididas').length, 2) // sistema + vault
+  assert.equal(filtrarDecisoes(ri, 'pendentes').length, 1)
+  assert.deepEqual(contarDecisoes(ri), { total: 3, decididas: 2, pendentes: 1 })
+})
