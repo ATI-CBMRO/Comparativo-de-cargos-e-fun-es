@@ -46,10 +46,21 @@ Corrigido: acrescentado "operacoes tecnicas"/"operacao tecnica" ao exclude do co
 tinha o problema — include por "regional"). Regenerado `comparativo_minuta.json` do atual;
 `match_ids('cob1', {cot}) → []` confirmado.
 
-**Status:** caso original (de-para) e instância #2 (keyword-match do Subsídio atual) CORRIGIDOS
-em 2026-07-22. Varreduras restantes conferidas na auditoria da Fase 1 (fase1-final-review.md):
-`DEPARA_BLOCO_D` 19/19 ok; `AUTO_MATCH_KEYWORDS` da futura sem colisão; `parse_doc_type`+overrides
-0 suspeitos. **Reexecutar as 3 varreduras a cada nova fase.**
+**Instância #3 (auditoria de 2026-07-23/24):** `AUTO_MATCH_KEYWORDS["cot"]` na futura casava
+por `["operacoes","operacional"]` — pegando os **Comandos Operacionais de SOCORRO** de ~20
+estados (atividade-fim), quando o COT é operações **TÉCNICAS** (segurança contra incêndio e
+pânico). Mesma raiz do caso original (COB×COT). Correção em 2 passos: (a) 2026-07-23 ampliou
+os excludes; (b) 2026-07-24 (decisão do Wândrio) trocou o include pela MATÉRIA técnica
+(`seguranca contra incendio`/`prevencao`/`atividades tecnicas`/`operacoes tecnicas`/…) —
+diff revisado nos 27 estados antes de aplicar; 8 estados tiveram o `lobOrgans` do cot
+corrigido de socorro→técnico. Método reafirmado: **um include por PALAVRA GENÉRICA
+("operações", "conselho", "assessoria") é quase sempre AR-01 latente — validar por
+CONTEÚDO/finalidade do órgão, não pelo rótulo.**
+
+**Status:** caso original (de-para), instâncias #2 (Subsídio atual) e #3 (cot futura)
+CORRIGIDOS. Varreduras conferidas: `DEPARA_BLOCO_D` 19/19 ok; `parse_doc_type`+overrides
+0 suspeitos. **Reexecutar as varreduras a cada nova fase**; para keyword-match, rodar o
+diff antes/depois dos casamentos nos 27 estados (script em `scripts/`, padrão da auditoria).
 
 ---
 

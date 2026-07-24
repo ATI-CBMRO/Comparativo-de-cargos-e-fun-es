@@ -26,16 +26,19 @@ def state_from_source_label(label: str) -> str | None:
 # Camada "automatico": por organ_key, palavras-chave de inclusão/exclusão (já normalizadas).
 AUTO_MATCH_KEYWORDS = {
     "dpo":   {"include": ["planejamento"],                     "exclude": []},
-    "cot":   {"include": ["operacoes", "operacional"],
-              # excludes ampliados na auditoria de 2026-07-23 (AR-01): o include
-              # promíscuo casava Estado-Maior Operacional (RN), Material Operacional /
-              # Suprimento (RJ/SP), Assessoria de Operações (RS), Comando Operacional
-              # Especializado (PE→doe) — nada disso é o COT (operações TÉCNICAS /
-              # segurança contra incêndio). Revisão do include registrada em PENDENCIAS.
-              "exclude": ["aerea", "aereo", "aviacao", "atividades tecnicas",
-                          "estado maior", "estado-maior", "suprimento", "manutencao",
-                          "defesa civil", "especializado", "busca", "salvamento",
-                          "assessoria"]},
+    # cot = Comando de Operações TÉCNICAS: segurança contra incêndio e pânico, análise
+    # de edificações, prevenção (NÃO é socorro/atividade-fim). O include por
+    # "operacoes/operacional" casava os Comandos Operacionais de SOCORRO de ~20 estados
+    # (mesma armadilha AR-01 do COB×COT); trocado pela MATÉRIA técnica em 2026-07-24
+    # (decisão do Wândrio, diff revisado: 24 estados, todos órgãos de seg. contra
+    # incêndio/prevenção; 0 comando de socorro). Sobrepõe o `cat` de propósito — no RO
+    # o CAT é a execução subordinada ao COT, a mesma matéria; aceitável no fallback
+    # automático (selo "sujeito a revisão").
+    "cot":   {"include": ["operacoes tecnicas", "operacao tecnica",
+                          "seguranca contra incendio", "contra incendio",
+                          "prevencao de incendio", "atividades tecnicas",
+                          "servicos tecnicos"],
+              "exclude": ["assessoria", "aerea", "aereo", "aviacao"]},
     "doe":   {"include": ["especializ"],                       "exclude": []},
     "crbm":  {"include": ["regional", "regiao de bombeiro"],   "exclude": []},
     "bbm":   {"include": ["batalhao"],

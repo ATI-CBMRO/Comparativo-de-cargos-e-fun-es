@@ -17,12 +17,6 @@
   23/07/2026 — ver ✅ Concluído. **Ampliado pela auditoria (23/07/2026):** `cinf` também
   cita o RI de MT (`cf. CBMMT, RI, Art. 129`) sem fonte no acervo — mesma solução (ingerir
   o RI de MT) resolve os dois.
-- [ ] **DECIDIR (Wândrio) — BA, Norma Op. 01/2021, Art. 35 (tema `disposicoes-finais`)**: o
-  excerto capturado embute ~8,5k caracteres do ANEXO A (tabela "grade de acionamento")
-  grudados no "Revogam-se as disposições em contrário." — e a ordem das células não bate com
-  a linearização do PDF (impossível verificar verbatim). Proposta: truncar o excerto no fim
-  do artigo e deixar o anexo fora (ou capturá-lo à parte, rotulado como tabela). Achado da
-  auditoria Rodada 1, 23/07/2026; exceção documentada em `scripts/auditoria_citacoes.py`.
 - [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE) — matéria que
   pede um regulamento próprio de uniformes (RUMBM) no médio prazo, não uma lacuna a forçar
   agora. DOB-01 de AL investigada e descartada (23/07/2026 — ver ✅ Concluído): é glossário
@@ -36,7 +30,6 @@
   - **MA - Portaria 46** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_ma.py`).
   - **PA - Regulamento de serviço** (Regimento de Serviços) → candidato à Minuta de Regulamento (`regulamento_enrichment_pa.py`; PA já tem RI organizacional separado).
   - **MT/SE**: renomeações só corrigiram o rótulo no acervo; já cobertos na trilha de Regulamento (referências de nome de arquivo atualizadas em `regulamento_enrichment.py`/`extrair_regulamentos.py`/`sugerir_equivalencias.py`).
-- [ ] `database/documents_index.json` — artefato órfão (não é lido por nenhum código nem gerado pela pipeline); referencia os nomes antigos de MT/SE. Atualizar ou remover numa faxina futura.
 - [ ] Organograma — **alinhar a classificação por natureza à LEI** (achado 22/07/2026): a
   premissa de que "a LOB não rotula natureza" caiu — a minuta da nova LOB (Art. 5º-10) traz
   5 naturezas expressas (Direção Geral/Setorial/Regional, Assessoramento, Apoio, Execução,
@@ -48,26 +41,18 @@
 - [ ] Lacuna de dados — extrair **texto verbatim** dos estados que só têm competências (ex.: MT no Comando-Geral). Curadoria por estado/órgão. Origem: reforma Subsídio.
 - [ ] Subsídio — abas Estrutura/LOB seguem **"em breve"** (visíveis em produção); dependem de dados a curar. (Diagramas do Regulamento já destravados em 21/07/2026.)
 
-- [ ] Comparativo (2 cenários) — **revisar o include do `cot` na camada automática**
-  (`minuta_comparison_lib.py`): "operacoes"/"operacional" é promíscuo por natureza (o COT é
-  operações TÉCNICAS/segurança contra incêndio); a auditoria de 23/07/2026 ampliou os
-  excludes (7 casamentos errados removidos), mas a solução de fundo é um include mais
-  específico — decidir com calma para não perder casamentos legítimos.
-- [ ] Regulamento (2 cenários) — `chapter.id` do atual NÃO é re-carimbado (`reg:<tema>` igual
-  nos 2 cenários; só o `editId` de artigo leva `reg:atual:`). Hoje inofensivo (endereço
-  Firestore é o editId; `semCenario()` em conferencia.js já trata), mas é fragilidade: tela
-  nova que use `chapter.id` como chave de persistência colide entre cenários. Avaliar
-  re-carimbar também o id do capítulo numa fatia futura.
-
 - [ ] **Guard-rail para `editId#index` entre rodadas (AR-03)**: a estabilidade do endereço
   dos comentários/textos finais depende da CONVENÇÃO de congelar `minuta_structure.json`
   durante a rodada — regenerar o JSON inserindo inciso no meio desloca todos os comentários
   posteriores em silêncio. Proposta a decidir: gravar um hash/versão do structure junto de
   cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
-- [ ] Firestore rules — 2 minors aceitos por ora (equipe pequena): membro pode regravar
-  `curtidoPor` inteiro (removeria curtidas alheias) e sobrescrever marcações de
-  `conferencia` de outro membro. Apertar se a comissão crescer. + **Conferir com o Wândrio
-  se as regras PUBLICADAS no console batem com `firestore.rules`** (pedir para colar).
+- [ ] **PUBLICAR `firestore.rules` (Wândrio) + conferir o publicado**: as regras foram
+  ENDURECIDAS em 24/07/2026 (`curtidoPor` só toggle do próprio uid; `conferencia` validada
+  por shape — status ∈ {ok,div}, sem campos-lixo) mas SÓ valem depois de publicadas no
+  console (não há firebase CLI na máquina; sintaxe rules v2 revisada à mão, não compilada).
+  Publicar via skill `deploy-firebase` ou console, e colar o conteúdo publicado para
+  comparar com o arquivo. (A conferência é COLABORATIVA por design — "só o dono edita" foi
+  descartado de propósito; ver comentário na regra.)
 - [ ] Auditoria — teste REAL de escrita/leitura no Firestore (produção) não foi executado:
   exige login de membro (credencial do Wândrio). O caminho do código foi verificado
   (encode/decode simétricos em conferencia/finalTexts/decisions + testes de
@@ -78,6 +63,22 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Lote de pendências técnicas da auditoria** (24/07/2026, aprovado pelo Wândrio):
+  - **BA, NOp 01/2021, Art. 35**: novo truncador por-artigo no extrator (`art_stop` no
+    `CONFIG['ba']` de `extrair_regulamentos.py`) corta o ANEXO A (mapa de força) que o
+    último artigo engolia; excerto agora é só o caput. Exceção saiu da whitelist da
+    `auditoria_citacoes.py`; 0 falhas.
+  - **`chapter.id` do Regulamento atual re-carimbado** (`reg:atual:`): além de fechar a
+    fragilidade de colisão, CONSERTOU um bug latente — o `Revisao.jsx` casa
+    `c.id === chapterId` sem `semCenario`, então no cenário atual o painel "Ver
+    referências" do Regulamento vinha VAZIO. Agora casa nos 2 cenários; futura intacta
+    (0 vazamento de `reg:atual:`).
+  - **`cot` (camada automática)**: include trocado de "operacoes/operacional" (casava
+    Comandos de SOCORRO de ~20 estados — armadilha AR-01) pela MATÉRIA técnica (segurança
+    contra incêndio/prevenção/atividades técnicas). Diff provado: 8 estados tiveram o
+    `lobOrgans` do cot corrigido de socorro→técnico; matcher unificado reusado (lib).
+  - **`documents_index.json`** removido (órfão; backup no scratchpad da sessão).
+  - Firestore rules endurecidas (ver 🔴 — falta só PUBLICAR). node 133/133 + python OK.
 - [x] **"Ver referências" no popup de Revisão** (23/07/2026): botão retrátil "Ver
   referências (N)" no cabeçalho do popup (`RevisaoModal.jsx`) mostra o Bloco D (excertos de
   outros estados) do capítulo/órgão do dispositivo aberto — desabilitado quando N=0. UI

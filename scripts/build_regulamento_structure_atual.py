@@ -30,11 +30,18 @@ ATUAL_PREFIX = "reg:atual:"
 
 
 def _restamp_editids(obj):
-    """Percorre recursivamente e troca o prefixo de cenário em qualquer campo 'editId'
-    (reg:... -> reg:atual:...) — isola os endereços de dispositivo do Regulamento futuro."""
+    """Percorre recursivamente e troca o prefixo de cenário 'reg:' -> 'reg:atual:' em
+    TODO endereço interno do documento: os campos 'editId' (artigos) E o 'id' dos
+    capítulos. Antes só o 'editId' era carimbado e o 'id' do capítulo ficava 'reg:<tema>'
+    igual à futura; isso (a) deixava o Revisao.jsx sem achar o capítulo pelo id no
+    cenário atual (o painel 'Ver referências' do Regulamento vinha vazio, pois
+    chapterIdOf(editId)='reg:atual:<tema>' != c.id='reg:<tema>'), e (b) era uma
+    colisão latente entre cenários para qualquer tela que use c.id como chave. O 'id'
+    local dos ARTIGOS (ex.: 'mt-art-1', sem prefixo 'reg:') não é tocado. Auditoria
+    2026-07-23."""
     if isinstance(obj, dict):
         for k, v in obj.items():
-            if k == "editId" and isinstance(v, str) and v.startswith(FUTURA_PREFIX) \
+            if k in ("editId", "id") and isinstance(v, str) and v.startswith(FUTURA_PREFIX) \
                     and not v.startswith(ATUAL_PREFIX):
                 obj[k] = ATUAL_PREFIX + v[len(FUTURA_PREFIX):]
             else:

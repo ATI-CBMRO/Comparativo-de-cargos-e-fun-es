@@ -14,6 +14,18 @@ service cloud.firestore {
       return isMember() && get(memberRef()).data.role == 'admin';
     }
 
+    // Toggle da PRÓPRIA curtida: o array curtidoPor só pode GANHAR ou PERDER o uid de
+    // quem faz a requisição — nunca reescrever/limpar curtidas alheias. Antes a regra
+    // permitia diff.hasOnly(['curtidoPor']) com QUALQUER valor (auditoria 2026-07-23).
+    function soToggleiPropriaCurtida() {
+      let velho = resource.data.get('curtidoPor', []).toSet();
+      let novo = request.resource.data.get('curtidoPor', []).toSet();
+      let uid = request.auth.uid;
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['curtidoPor'])
+        && ((novo.difference(velho) == [uid].toSet() && velho.difference(novo).size() == 0)
+            || (velho.difference(novo) == [uid].toSet() && novo.difference(velho).size() == 0));
+    }
+
     match /members/{email} {
       allow read: if isAdmin()
         || (request.auth != null && request.auth.token.email == email);
@@ -34,7 +46,7 @@ service cloud.firestore {
         && (resource.data.autorUid == request.auth.uid || isAdmin());
       allow update: if isMember()
         && (resource.data.autorUid == request.auth.uid
-            || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['curtidoPor'])
+            || soToggleiPropriaCurtida()
             || (isAdmin() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['adminStatus'])));
     }
 
@@ -56,7 +68,16 @@ service cloud.firestore {
 
     match /conferencia/{id} {
       allow read: if isMember();
-      allow write: if isMember();
+      allow delete: if isMember();
+      // Marcação COLABORATIVA: uma por dispositivo, sem dono — qualquer membro confere
+      // ou desmarca (é o desenho da tela; mergeStatus/divergentesDe agregam de todos).
+      // O endurecimento é de SHAPE, não de autoria: status válido e nenhum campo-lixo
+      // (auditoria 2026-07-23; "só o dono edita" quebraria a conferência em conjunto).
+      allow create, update: if isMember()
+        && request.resource.data.keys().hasOnly(['status', 'por', 'em'])
+        && request.resource.data.status in ['ok', 'div']
+        && request.resource.data.por is string
+        && request.resource.data.por.size() <= 120;
     }
   }
 }

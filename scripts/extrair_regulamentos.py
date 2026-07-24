@@ -346,6 +346,10 @@ CONFIG = {
             (20, 25, 'servico-interno-dia', 'exata', 'NOp 01/2021, Cap. VII — Da Passagem de Serviço'),
             (26, 35, 'disposicoes-finais', 'exata', 'NOp 01/2021 — Disposições Finais'),
         ],
+        # Art. 35 ("Revogam-se as disposições em contrário.") é o último e engolia o
+        # ANEXO A (mapa de força — tabela linearizada em ordem que não bate com o PDF,
+        # impossível de conferir verbatim). Trunca no início do anexo. Auditoria 2026-07-23.
+        'art_stop': {35: re.compile(r'^ANEXO\b')},
         'overrides': {},
     },
     'to': {
@@ -642,6 +646,21 @@ def slice_lines(lines, cfg):
     return lines[ini:fim]
 
 
+def _truncate_at(art_lines, marker):
+    """Corta o corpo de um artigo na 1ª linha que casa `marker` (str no início ou
+    regex). Uso: o ÚLTIMO artigo de uma norma engole tudo até o fim do arquivo
+    (split_articles só para no próximo 'Art. N') — inclusive ANEXOS/tabelas que
+    NÃO fazem parte do dispositivo. Ex.: BA/NOp 01, Art. 35 grudava o ANEXO A
+    (mapa de força)."""
+    out = []
+    for ln in art_lines:
+        alvo = ln.strip()
+        if (marker.search(alvo) if hasattr(marker, 'search') else alvo.startswith(marker)):
+            break
+        out.append(ln)
+    return out
+
+
 def build_excerpt(n, art_lines, src_tpl, match, heading, bloco=None):
     caput, dispositivos = caput_e_dispositivos(art_lines)
     src = src_tpl.format(n=n, bloco=bloco or '')
@@ -668,6 +687,9 @@ def extract_ranges(uf, cfg):
             continue
         vistos.add(n)
         tema, match, heading = info
+        stop = cfg.get('art_stop', {}).get(n)
+        if stop is not None:
+            art_lines = _truncate_at(art_lines, stop)
         enrichment.setdefault((tema, uf), []).append(
             build_excerpt(n, art_lines, cfg['src'], match, heading))
     return enrichment, len(vistos)

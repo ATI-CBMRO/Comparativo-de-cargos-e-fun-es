@@ -30,9 +30,6 @@ EXCECOES = [
     ('', 'CBMRS, RI (Portaria nº 001/2025), Art. 6',
      'fake_art_res do CONFIG["rs"] rebaixa deliberadamente "Art."→"art." na citação '
      'interna ao Decreto 53.897/2018 (falso cabeçalho de artigo)'),
-    ('', 'CBMBA, Norma Operacional nº 01/2021, Art. 35',
-     'ANEXO A (tabela) linearizado pelo PDF em ordem diferente da captura — '
-     'PENDÊNCIA de curadoria registrada em .claude/PENDENCIAS.md (2026-07-23)'),
     ('', 'DOB nº 08 (Serviço de Salvamento Aquático e Mergulho, 2022), seção 9',
      'elisão do título "REFERÊNCIAS" no meio do bloco (classe de elisão sem "[...]" '
      'já registrada como minor)'),
