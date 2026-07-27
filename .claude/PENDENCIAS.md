@@ -46,18 +46,6 @@
   durante a rodada — regenerar o JSON inserindo inciso no meio desloca todos os comentários
   posteriores em silêncio. Proposta a decidir: gravar um hash/versão do structure junto de
   cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
-- [ ] **PUBLICAR `firestore.rules` (Wândrio) + conferir o publicado**: as regras foram
-  ENDURECIDAS em 24/07/2026 (`curtidoPor` só toggle do próprio uid; `conferencia` validada
-  por shape — status ∈ {ok,div}, sem campos-lixo) mas SÓ valem depois de publicadas no
-  console (não há firebase CLI na máquina; sintaxe rules v2 revisada à mão, não compilada).
-  Publicar via skill `deploy-firebase` ou console, e colar o conteúdo publicado para
-  comparar com o arquivo. (A conferência é COLABORATIVA por design — "só o dono edita" foi
-  descartado de propósito; ver comentário na regra.)
-- [ ] Auditoria — teste REAL de escrita/leitura no Firestore (produção) não foi executado:
-  exige login de membro (credencial do Wândrio). O caminho do código foi verificado
-  (encode/decode simétricos em conferencia/finalTexts/decisions + testes de
-  dispositivoId), mas falta a prova ponta a ponta — fazer numa sessão com o app aberto
-  e o Wândrio logado (2 min: marcar uma conferência e ver o doc no console).
 
 ## 🟡 Em andamento
 _(nenhum)_
@@ -78,6 +66,15 @@ _(nenhum)_
     contra incêndio/prevenção/atividades técnicas). Diff provado: 8 estados tiveram o
     `lobOrgans` do cot corrigido de socorro→técnico; matcher unificado reusado (lib).
   - **`documents_index.json`** removido (órfão; backup no scratchpad da sessão).
+- [x] **Firestore rules endurecidas — PUBLICADAS e TESTADAS** (25-26/07/2026): `curtidoPor`
+  só permite toggle do próprio uid (antes qualquer membro reescrevia o array e apagava
+  curtidas alheias); `conferencia` validada por shape (status ∈ {ok,div}, sem campos-lixo),
+  mantida COLABORATIVA de propósito. Publicadas pelo Wândrio no console (conta institucional
+  `institucional_bsb_cbmro@cloud.sesdec.ro.gov.br`, projeto `revisao-minuta-cbmro-6f248`; o
+  CLI da máquina está na conta pessoal, que não vê o projeto — publicação manual). Prova
+  ponta a ponta no app OK: marcar conferência persiste após F5; curtir/descurtir funciona,
+  sem travar nada legítimo nem erro. Encerra também o item antigo "teste REAL de escrita/
+  leitura no Firestore".
   - Firestore rules endurecidas (ver 🔴 — falta só PUBLICAR). node 133/133 + python OK.
 - [x] **"Ver referências" no popup de Revisão** (23/07/2026): botão retrátil "Ver
   referências (N)" no cabeçalho do popup (`RevisaoModal.jsx`) mostra o Bloco D (excertos de
