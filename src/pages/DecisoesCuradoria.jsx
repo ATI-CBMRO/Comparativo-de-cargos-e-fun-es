@@ -12,6 +12,7 @@ import { mergeDecisoes, pendenciasDeAplicacao } from '../lib/decisionsMerge.js'
 import { subscribeConferencia } from '../lib/conferenciaData.js'
 import { divergentesDe } from '../lib/conferenciaStatus.js'
 import RegistroDecisaoModal from '../components/RegistroDecisaoModal.jsx'
+import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 const TITULO = { ri: 'Regimento Interno', reg: 'Regulamento Geral' }
 const FILTROS = [
