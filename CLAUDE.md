@@ -16,6 +16,11 @@ aprovação). Quase tudo neste guia descreve a trilha da FUTURA; o cenário ATUA
 geradores e dados próprios. Antes de mexer em qualquer minuta/gerador, saiba em qual
 cenário está.
 
+**Backlog vivo:** `.claude/PENDENCIAS.md` é o backlog canônico (pendências, em andamento,
+concluídas do mês) — atualizado a cada sessão via handoff. Este CLAUDE.md descreve
+ARQUITETURA e é atualizado com menos frequência; para saber o que foi feito por último,
+prefira o PENDENCIAS.
+
 ## Comandos
 
 ```bash
@@ -89,10 +94,14 @@ tipografia Outfit+Inter; ícones `lucide-react`.
 **Menu (`NAV_GROUPS`, 3 blocos):**
 - **Geral**: Acervo Legal (`/legislacoes`), Organograma (`/organograma`), Manual de uso
   (`/manual`), Acessos (`/acessos`, só admin).
-- **Regimento Interno** (trilha): Subsídio (`/minuta/subsidio`) · Minuta do Regimento
-  Interno (`/minuta`) · Diagramas (`/minuta/diagramas`) · Revisão (`/minuta/revisao`).
-- **Regulamento Geral** (trilha espelhada): `/regulamento/subsidio` · `/regulamento` ·
+- **Regimento Interno** (trilha): Subsídio (`/minuta/subsidio`) · Conferência
+  (`/minuta/conferencia`) · Decisões (`/minuta/decisoes`) · Minuta do Regimento Interno
+  (`/minuta`) · Diagramas (`/minuta/diagramas`) · Revisão (`/minuta/revisao`).
+- **Regulamento Geral** (trilha espelhada): `/regulamento/subsidio` ·
+  `/regulamento/conferencia` · `/regulamento/decisoes` · `/regulamento` ·
   `/regulamento/diagramas` · `/regulamento/revisao`.
+- Conferência e Decisões são as telas do **cockpit de curadoria** (ver seção "Cenários
+  LOB" → Conferência linear / aba Decisões).
 
 `/` redireciona para `/legislacoes`. Rotas mantidas por compat (fora do menu): `/estados`,
 `/estados/:id`, `/busca`, `/comparar`, `/minuta-diagramas`, `/minuta/comparar`,
@@ -205,12 +214,20 @@ mesma filosofia do `reg:` (sem campo novo, sem migração):
 **Conferência linear** (`/minuta/conferencia`, `/regulamento/conferencia` — `ConferenciaLinear.jsx`,
 Fase 1 do cockpit de curadoria, 22/07/2026): percorre a minuta dispositivo a dispositivo
 (numeração contínua via `buildConferencia` em `src/lib/conferencia.js`) com as referências de
-outros estados ao lado (badge exata/auto). Funciona nos 2 cenários; SEM `TrilhaRoute`. O
+outros estados ao lado (badge exata/auto), via `AlternativesPanel`/`MatchBadge`
+(`src/components/AlternativesPanel.jsx` — componente compartilhado, ver também "Ver
+referências" na seção Revisão Colaborativa). Funciona nos 2 cenários; SEM `TrilhaRoute`. O
 **Regimento atual** reaproveita o **Bloco D verbatim da futura** casando órgão a órgão — de-para
 `DEPARA_BLOCO_D` em `build_minuta_structure_atual.py` (só o campo `alternatives`, nunca as
 competências do RO; 19 dos 21 órgãos; `emg`/`comissoes` sem equivalente = estado vazio honesto).
-Spec `2026-07-22-cockpit-curadoria-conferencia-decisoes-design.md` (Fases 2/3 pendentes:
-decisões do Obsidian no sistema + registrar/aplicar).
+Spec `2026-07-22-cockpit-curadoria-conferencia-decisoes-design.md`.
+
+**Aba Decisões (Fase 2, 23/07/2026):** `/minuta/decisoes`, `/regulamento/decisoes` —
+`DecisoesCuradoria.jsx` lê as 36 "Decisões CBMRO" do vault Obsidian (27 do Regulamento + 9
+do Regimento Interno) dentro do próprio portal: Questão + candidatas verbatim + Comparação,
+filtro Pendentes/Decididas, nos 2 cenários. Fonte: `database/decisoes_curadoria.json`
+(gerado por `scripts/build_decisoes_curadoria.py`, lê o vault sem editá-lo). Parser
+reconhece 2 formatos de nota (2/9 notas do Regimento usavam template mais antigo).
 
 **Fase 3 (registrar/aplicar, 2026-07-23):** decisões registradas pelo sistema na coleção
 `decisions` (admin), com `finalText` no dispositivo alvo (redação, cenário ativo, alvo
@@ -319,6 +336,32 @@ que padroniza o processo (camada 1): triagem read-only (`scripts/triagem_acervo.
 de qualidade da extração + tipo por conteúdo + validação de nome contra `STATE_META`),
 classificação por conteúdo, rebuild completo e handoff das camadas 2/3.
 
+## Auditoria de qualidade — catálogo de armadilhas (23-24/07/2026)
+
+Auditoria final do cockpit de curadoria (4 rodadas) encontrou 4 CLASSES de falha
+recorrentes, catalogadas em `docs/superpowers/auditoria-armadilhas.md` para a próxima
+auditoria caçar ativamente em vez de só onde já foram vistas:
+
+- **AR-01 · casamento por semelhança de nome, não de conteúdo** (ex.: `cob1`↔`cot` por
+  ambos terem "Operações" no nome, mas COB é socorro e COT é segurança contra incêndio —
+  8 estados tiveram o `cot` da futura corrigido de socorro→técnico). Regra: um `include`
+  por palavra genérica ("operações", "conselho", "assessoria") é quase sempre AR-01
+  latente — validar por conteúdo/finalidade real, nunca pelo rótulo.
+- **AR-02 · parâmetro que seleciona a fonte mas é ignorado num branch**, caindo em
+  silêncio no documento errado (achado original: `md_for(uf, doc)` só honrava `doc` para
+  `uf=='pr'`; capturou o Art. 16 do RI do Pará citando a LOB). Verificador automatizado:
+  `scripts/auditoria_citacoes.py` (confere os ~1.600 excertos dos 4 JSONs de estrutura
+  contra o documento reivindicado pela citação).
+- **AR-03 · endereço posicional (`#index`) que dessincroniza do conteúdo** quando a
+  lista é reordenada/reconstruída (incisos re-indexados de uma seção editada aplicavam o
+  texto final no inciso errado — corrigido com flag `reindexed: true` que o overlay de
+  finais pula). Risco remanescente (registrado em PENDENCIAS): a estabilidade de
+  `editId#index` entre RODADAS ainda é só convenção ("congelar o JSON").
+- **AR-04 · erro engolido**: `catch`/callback que só loga no console e nenhum pixel muda
+  na tela (feeds do Firestore, falha de rede tratada como "não autorizado" etc.) — 14
+  ocorrências corrigidas com o banner `AvisoSincronizacao.jsx` e estados de erro
+  distintos de "sem dados".
+
 ## Revisão Colaborativa da Minuta (Firebase: login + comentários + IA)
 
 Módulo independente: convidados fazem login e comentam a minuta dispositivo por dispositivo.
@@ -332,13 +375,26 @@ autorizado só se o e-mail estiver em `members` com `ativo:true`) · `/revisao` 
 · `/acessos` (protegida, admin — `Acessos.jsx`: convidar por e-mail, papel, bloquear/liberar/
 remover, acompanhar último login).
 
+**Ver referências** (23/07/2026): botão retrátil "Ver referências (N)" no cabeçalho do
+popup de Revisão (`RevisaoModal.jsx`) mostra o Bloco D (excertos verbatim de outros
+estados) do capítulo/órgão do dispositivo aberto, via `AlternativesPanel.jsx` — o mesmo
+componente compartilhado com a Conferência linear (extraído de `ConferenciaLinear.jsx`
+sem alterar aquela tela). Desabilitado quando não há referências (N=0).
+
 **Auth:** `src/lib/firebase.js` (Auth+Firestore de `import.meta.env.VITE_FIREBASE_*`);
 `src/lib/auth.jsx` (`AuthProvider`/`useAuth`) autoriza por **e-mail** (`members/{email}`,
 `ativo:true`); expõe `entrar`/`cadastrar`/`sair`/`recuperarSenha` (e-mails normalizados por
 `normalizeEmail`). `ProtectedRoute.jsx` (com `requireAdmin`).
 
-**Firestore:** coleções `members` (indexada por E-MAIL), `suggestions`, `finalTexts`.
-`firestore.rules` usa `request.auth.token.email` (publicar pelo console — `docs/FIREBASE_SETUP.md`).
+**Firestore:** coleções `members` (indexada por E-MAIL), `suggestions`, `finalTexts`,
+`decisions`, `conferencia`, `config/revisao`. `firestore.rules` usa
+`request.auth.token.email` (publicar pelo console — `docs/FIREBASE_SETUP.md`). Regras
+endurecidas e **PUBLICADAS/testadas ponta a ponta** (25-26/07/2026): `curtidoPor` só
+permite toggle do PRÓPRIO uid em `suggestions` (antes qualquer membro reescrevia o array
+e apagava curtidas alheias); `conferencia` valida shape (`status ∈ {ok,div}`, sem
+campo-lixo) mas segue COLABORATIVA de propósito (qualquer membro confere/desmarca, sem
+dono). Publicação feita na conta institucional (o CLI local está numa conta pessoal sem
+acesso ao projeto — publicar pelo console mesmo).
 `dispositivoId` (`src/lib/dispositivoId.js`) = endereço ESTÁVEL (`editId#index`); premissa:
 congelar `minuta_structure.json` durante a rodada. **Multi-documento**: `/revisao` comenta RI
 e Regulamento sem misturar, via prefixo `reg:` no `editId` (`reviewGroup.js:docOfDispositivo`);
