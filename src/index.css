@@ -3092,6 +3092,7 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .dec-selo-ok { background: #e6f4ea; color: #1b7a3d; }
 .dec-selo-pend { background: #fdf1e3; color: #b3600d; }
 .dec-card-ok { border-left: 3px solid #1b7a3d; }
+.dec-card-editando { border-left: 3px solid #c8102e; box-shadow: 0 0 0 2px rgba(200,16,45,.14); }
 .dec-questao { margin: 10px 0 14px; color: var(--text); }
 .dec-candidata, .dec-comparacao { border-top: 1px solid var(--border, #e2e6ee); }
 .dec-cand-head { display: flex; align-items: center; gap: 8px; width: 100%; background: none; border: 0; padding: 10px 0; cursor: pointer; text-align: left; font: inherit; color: var(--text); }

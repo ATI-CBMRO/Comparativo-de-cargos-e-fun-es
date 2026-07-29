@@ -166,6 +166,7 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
               key={d.id}
               d={d}
               isAdmin={isAdmin}
+              emEdicao={registrando?.id === d.id}
               onRegistrar={() => setRegistrando(d)}
               onDesfazer={() => {
                 if (window.confirm('Desfazer o registro? O texto final aplicado (se houver) permanece e pode ser revisto pela Revisão.')) {
@@ -218,13 +219,13 @@ function SemDecisoesNoCenario({ trilha, cenario, n }) {
   )
 }
 
-function DecisaoCard({ d, isAdmin, onRegistrar, onDesfazer }) {
+function DecisaoCard({ d, isAdmin, emEdicao, onRegistrar, onDesfazer }) {
   const [abertas, setAbertas] = useState({}) // índice da candidata -> aberta
   const [cmpAberta, setCmpAberta] = useState(false)
   const status = d.statusDecisao ?? (d.decidido ? 'vault' : 'pendente')
 
   return (
-    <div className={`card dec-card${status !== 'pendente' ? ' dec-card-ok' : ''}`} style={{ marginBottom: 14, padding: 16 }}>
+    <div className={`card dec-card${status !== 'pendente' ? ' dec-card-ok' : ''}${emEdicao ? ' dec-card-editando' : ''}`} style={{ marginBottom: 14, padding: 16 }}>
       <div className="dec-card-head">
         <h3 className="dec-titulo">{d.titulo}</h3>
         <span className={`dec-selo ${status === 'sistema' ? 'dec-selo-sys' : status === 'vault' ? 'dec-selo-ok' : 'dec-selo-pend'}`}>
@@ -296,6 +297,8 @@ function DecisaoCard({ d, isAdmin, onRegistrar, onDesfazer }) {
         <div className="decm-acoes" style={{ marginTop: 12 }}>
           {status === 'sistema' ? (
             <button className="btn btn-ghost" onClick={onDesfazer}>Desfazer</button>
+          ) : emEdicao ? (
+            <button className="btn btn-ghost" disabled>Editando em outra janela</button>
           ) : (
             <button className="btn btn-ghost" onClick={onRegistrar}>Registrar decisão</button>
           )}
