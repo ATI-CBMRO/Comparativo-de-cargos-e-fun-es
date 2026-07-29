@@ -5,6 +5,7 @@ import { scenarioDbUrl } from '../lib/scenario.js'
 import { buildConferencia } from '../lib/conferencia.js'
 import { caputDispositivoId } from '../lib/dispositivoId.js'
 import { registrarDecisao } from '../lib/decisionsData.js'
+import { decisionDocId } from '../lib/decisoes.js'
 import { saveFinalText } from '../lib/reviewData.js'
 
 const ARQ = { ri: 'minuta_structure.json', reg: 'regulamento_structure.json' }
@@ -64,7 +65,9 @@ export default function RegistroDecisaoModal({ decisao: d, trilha, cenario, auto
     setSalvando(true); setErro(null)
     try {
       if (!decisaoGravada) {
-        await registrarDecisao(d.id, {
+        // Chave por cenário: o registro do atual não pode marcar a decisão como
+        // decidida na futura (onde o texto final não foi aplicado) — ver decisionDocId.
+        await registrarDecisao(decisionDocId(d.id, cenario), {
           tipo, decisao: texto.trim(), fonteEscolhida: fonte,
           alvoDispositivoId: tipo === 'redacao' ? caputDispositivoId(alvo.editId) : null,
           ficha: tipo === 'estrutural' ? { oQueMuda: oQueMuda.trim(), onde: onde.trim(), status: 'aguardando' } : null,

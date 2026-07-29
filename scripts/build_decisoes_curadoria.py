@@ -2,8 +2,13 @@
 build_decisoes_curadoria.py — Portal CBM (cockpit de curadoria, Fase 2)
 
 Lê as 36 notas de Decisão do vault Obsidian (fora do repo) e gera
-database/decisoes_curadoria.json (compartilhado entre cenários) — material de LEITURA
-para a aba Decisões. Só leitura: não decide nada, não toca a estrutura da minuta.
+database/decisoes_curadoria.json — material de LEITURA para a aba Decisões.
+Só leitura: não decide nada, não toca a estrutura da minuta.
+
+Arquivo ÚNICO para os 2 cenários, mas cada decisão declara em QUAIS ela vale (campo
+`cenarios`) — o RI é por ÓRGÃO e portanto específico da LOB de cada cenário; o
+Regulamento é temático e vale nos dois. Ver _cenarios() e o espelho em
+src/lib/decisoes.js (cenariosDaDecisao).
 
 Rodar: .venv-pipeline/bin/python scripts/build_decisoes_curadoria.py
 Valida: cd scripts && ../.venv-pipeline/bin/python -m pytest test_decisoes_curadoria.py -q
@@ -170,6 +175,25 @@ def _comparacao_legado(secs):
     return []
 
 
+CENARIOS_VALIDOS = ("atual", "futura")
+
+
+def _cenarios(fm, trilha):
+    """Cenários em que a decisão vale, do frontmatter (`cenarios: atual, futura`).
+
+    Sem o campo, cai no padrão da REGRA DE PRODUTO (CLAUDE.md): o Regimento Interno é
+    organizado por ÓRGÃO — logo é específico da LOB — e toda a curadoria existente foi
+    redigida sobre a LOB FUTURA; o Regulamento é TEMÁTICO (serviço/disciplina/ensino),
+    não depende da LOB e vale nos dois. Espelha cenariosDaDecisao() de src/lib/decisoes.js.
+    """
+    bruto = fm.get("cenarios") or fm.get("cenario") or ""
+    vals = [c.strip().strip('[]"\'') for c in bruto.split(",")]
+    vals = [c for c in vals if c in CENARIOS_VALIDOS]
+    if vals:
+        return vals
+    return list(CENARIOS_VALIDOS) if trilha == "reg" else ["futura"]
+
+
 def parse_decisao(texto, arquivo, trilha):
     fm = _frontmatter(texto)
     key = fm.get("organKey") or fm.get("themeKey")
@@ -209,6 +233,7 @@ def parse_decisao(texto, arquivo, trilha):
     return {
         "id": Path(arquivo).stem,
         "trilha": trilha,
+        "cenarios": _cenarios(fm, trilha),
         "key": key,
         "chapterId": ("organ:" if trilha == "ri" else "reg:") + key,
         "titulo": titulo,

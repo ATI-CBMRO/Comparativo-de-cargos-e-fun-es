@@ -199,6 +199,24 @@ class TestParseDecisaoLegado(unittest.TestCase):
         self.assertIn("Órgão — corregedoria", d["comparacao"][0])
         self.assertIsNone(d["decisao"])  # comentário HTML placeholder -> None
 
+    def test_cenarios_padrao_por_trilha(self):
+        """Sem `cenarios` no frontmatter: RI é da LOB futura (curadoria existente),
+        Regulamento é temático e vale nos 2. Espelha src/lib/decisoes.js."""
+        ri = parse_decisao(NOTA_RI, "Decisão — ri — dlog — x.md", "ri")
+        self.assertEqual(ri["cenarios"], ["futura"])
+        reg = parse_decisao(NOTA_REG_DECIDIDA, "Decisão — servico-operacional — y.md", "reg")
+        self.assertEqual(reg["cenarios"], ["atual", "futura"])
+
+    def test_cenarios_declarado_no_frontmatter_manda(self):
+        nota = NOTA_RI.replace("decidido: false", "decidido: false\ncenarios: atual")
+        d = parse_decisao(nota, "Decisão — ri — dlog — x.md", "ri")
+        self.assertEqual(d["cenarios"], ["atual"])
+
+    def test_cenarios_invalido_cai_no_padrao(self):
+        nota = NOTA_RI.replace("decidido: false", "decidido: false\ncenarios: passado")
+        d = parse_decisao(nota, "Decisão — ri — dlog — x.md", "ri")
+        self.assertEqual(d["cenarios"], ["futura"])
+
     def test_legado_sem_problema_nem_contexto_falha(self):
         ruim = (
             "---\ntype: decisao\norganKey: x\ndecidido: false\n---\n"

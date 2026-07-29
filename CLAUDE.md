@@ -225,9 +225,22 @@ Spec `2026-07-22-cockpit-curadoria-conferencia-decisoes-design.md`.
 **Aba Decisões (Fase 2, 23/07/2026):** `/minuta/decisoes`, `/regulamento/decisoes` —
 `DecisoesCuradoria.jsx` lê as 36 "Decisões CBMRO" do vault Obsidian (27 do Regulamento + 9
 do Regimento Interno) dentro do próprio portal: Questão + candidatas verbatim + Comparação,
-filtro Pendentes/Decididas, nos 2 cenários. Fonte: `database/decisoes_curadoria.json`
+filtro Pendentes/Decididas. Fonte: `database/decisoes_curadoria.json`
 (gerado por `scripts/build_decisoes_curadoria.py`, lê o vault sem editá-lo). Parser
 reconhece 2 formatos de nota (2/9 notas do Regimento usavam template mais antigo).
+
+**⚠️ Decisões são POR CENÁRIO (corrigido 29/07/2026).** Arquivo único, mas cada decisão
+declara onde vale (campo `cenarios`), pela regra de produto: o **RI é por ÓRGÃO → específico
+da LOB**; o **Regulamento é temático → vale nos 2**. Sem o campo (as 36 notas da Fase 2), o
+padrão é `['futura']` p/ RI e `['atual','futura']` p/ Regulamento — a curadoria existente do
+RI foi TODA redigida sobre a LOB futura (discute BBS/CRBM/DEPDEC/DOE/COT, que não existem na
+Lei 2.204/2009). Lógica pura em `src/lib/decisoes.js` (`cenariosDaDecisao`/`filtrarPorCenario`,
+testada) + espelho `_cenarios()` no gerador; nova curadoria declara `cenarios:` no frontmatter
+da nota. No cenário atual o RI mostra **estado vazio explicativo** (`SemDecisoesNoCenario`) —
+reaproveitar por semelhança de nome de órgão seria AR-01. O registro no Firestore também é por
+cenário: `decisionDocId(id, cenario)` (atual = `atual:<id>`, futura sem marcador, mesma
+filosofia do `editId`) — antes, decidir num cenário marcava a decisão como decidida no outro,
+onde o texto final nunca foi aplicado (falso verde, AR-04).
 
 **Fase 3 (registrar/aplicar, 2026-07-23):** decisões registradas pelo sistema na coleção
 `decisions` (admin), com `finalText` no dispositivo alvo (redação, cenário ativo, alvo

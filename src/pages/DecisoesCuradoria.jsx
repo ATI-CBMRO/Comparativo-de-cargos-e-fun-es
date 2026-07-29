@@ -4,7 +4,9 @@ import { ClipboardList, Check, AlertTriangle, ChevronRight, BookOpen, Download }
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import { renderFriendlyText } from '../lib/comparatorRender.jsx'
-import { decisoesDaTrilha, filtrarDecisoes, contarDecisoes } from '../lib/decisoes.js'
+import {
+  decisoesDaTrilha, filtrarDecisoes, contarDecisoes, filtrarPorCenario, decisionDocId,
+} from '../lib/decisoes.js'
 import { useAuth } from '../lib/auth.jsx'
 import { useScenario } from '../context/ScenarioContext.jsx'
 import { subscribeDecisions, desfazerDecisao, marcarFichaAplicada } from '../lib/decisionsData.js'
@@ -56,14 +58,19 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
   }, [user])
 
   const daTrilha = useMemo(() => decisoesDaTrilha(dados, trilha), [dados, trilha])
-  const merged = useMemo(() => mergeDecisoes(daTrilha, fbDecisoes), [daTrilha, fbDecisoes])
+  // A curadoria existente do RI foi redigida sobre a LOB futura — não vale para o
+  // cenário atual (ver filtrarPorCenario). O Regulamento, temático, vale nos 2.
+  const doCenario = useMemo(() => filtrarPorCenario(daTrilha, cenario), [daTrilha, cenario])
+  const merged = useMemo(
+    () => mergeDecisoes(doCenario, fbDecisoes, cenario), [doCenario, fbDecisoes, cenario])
   const contagem = useMemo(() => contarDecisoes(merged), [merged])
   const lista = useMemo(() => filtrarDecisoes(merged, filtro), [merged, filtro])
   const pendencias = useMemo(() => pendenciasDeAplicacao(merged), [merged])
   const divergentes = useMemo(() => divergentesDe(conf, trilha, cenario), [conf, trilha, cenario])
 
   const exportar = () => {
-    const registradas = mergeDecisoes(dados?.decisoes ?? [], fbDecisoes).filter(d => d.statusDecisao === 'sistema')
+    const registradas = mergeDecisoes(dados?.decisoes ?? [], fbDecisoes, cenario)
+      .filter(d => d.statusDecisao === 'sistema')
     if (registradas.length === 0) { window.alert('Nenhuma decisão registrada no sistema para exportar.'); return }
     const payload = registradas.map(d => ({
       id: d.id, tipo: d.registro.tipo, decisao: d.registro.decisao,
@@ -130,7 +137,7 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
               <div key={d.id} className="dec-pendencia-item">
                 <strong>{d.titulo}</strong> — {d.registro.ficha.oQueMuda} ({d.registro.ficha.onde})
                 {isAdmin && (
-                  <button className="btn btn-ghost" onClick={() => marcarFichaAplicada(d.id).catch(e => {
+                  <button className="btn btn-ghost" onClick={() => marcarFichaAplicada(decisionDocId(d.id, cenario)).catch(e => {
                     console.error('Erro ao marcar ficha como aplicada:', e)
                     window.alert('Não foi possível marcar como aplicada agora. Tente novamente.')
                   })}>
@@ -146,9 +153,13 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
         )}
 
         {lista.length === 0 ? (
-          <div className="card" style={{ padding: 24, textAlign: 'center', color: 'var(--text-muted)' }}>
-            Nenhuma decisão neste filtro.
-          </div>
+          doCenario.length === 0 && daTrilha.length > 0 ? (
+            <SemDecisoesNoCenario trilha={trilha} cenario={cenario} n={daTrilha.length} />
+          ) : (
+            <div className="card" style={{ padding: 24, textAlign: 'center', color: 'var(--text-muted)' }}>
+              Nenhuma decisão neste filtro.
+            </div>
+          )
         ) : (
           lista.map(d => (
             <DecisaoCard
@@ -158,7 +169,7 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
               onRegistrar={() => setRegistrando(d)}
               onDesfazer={() => {
                 if (window.confirm('Desfazer o registro? O texto final aplicado (se houver) permanece e pode ser revisto pela Revisão.')) {
-                  desfazerDecisao(d.id).catch(e => {
+                  desfazerDecisao(decisionDocId(d.id, cenario)).catch(e => {
                     console.error('Erro ao desfazer decisão:', e)
                     window.alert('Não foi possível desfazer o registro agora. Tente novamente.')
                   })
@@ -179,6 +190,30 @@ export default function DecisoesCuradoria({ trilha = 'ri' }) {
           onSaved={() => setRegistrando(null)}
         />
       )}
+    </div>
+  )
+}
+
+// Estado vazio HONESTO: há decisões nesta trilha, mas nenhuma pertence ao cenário
+// ativo. Diz o que existe e onde está, em vez de sumir com tudo em silêncio (a
+// alternativa — reaproveitar por semelhança de nome de órgão — é a armadilha AR-01:
+// as decisões do RI discutem órgãos da LOB futura que não existem na Lei 2.204/2009).
+function SemDecisoesNoCenario({ trilha, cenario, n }) {
+  const outro = cenario === 'atual' ? 'futura' : 'atual'
+  return (
+    <div className="card" style={{ padding: 24, color: 'var(--text-muted)' }}>
+      <div className="rg-heading">Nenhuma decisão curada para a LOB {cenario}</div>
+      <p style={{ marginTop: 8 }}>
+        {trilha === 'ri'
+          ? <>As {n} decisões existentes do Regimento Interno foram redigidas sobre a
+              estrutura da <b>LOB {outro}</b> (órgãos como BBS, CRBM, DEPDEC, DOE e COT),
+              que não têm equivalente na Lei nº 2.204/2009. A curadoria do RI para este
+              cenário ainda não foi feita.</>
+          : <>As {n} decisões existentes desta trilha pertencem ao cenário <b>{outro}</b>.</>}
+      </p>
+      <p style={{ marginTop: 8 }}>
+        Troque o cenário no topo da barra lateral para consultá-las.
+      </p>
     </div>
   )
 }

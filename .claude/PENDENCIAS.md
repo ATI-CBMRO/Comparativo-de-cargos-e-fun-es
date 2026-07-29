@@ -2,6 +2,13 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Curadoria — Decisões do REGIMENTO INTERNO para a LOB ATUAL (não existem ainda)**:
+  as 9 decisões de RI do vault foram todas redigidas sobre a **LOB futura** (discutem BBS,
+  CRBM, DEPDEC, DOE, COT, dpof, gab-cg — sem equivalente na Lei 2.204/2009). Desde
+  29/07/2026 elas aparecem SÓ no cenário futura, e o cenário atual mostra estado vazio
+  explicativo. Para o atual é preciso curar decisões novas sobre os **21 órgãos da Lei
+  2.204/2009** (pasta "Regimento Interno — Curadoria/" do vault), marcando `cenarios: atual`
+  no frontmatter da nota. As 27 do Regulamento são temáticas e seguem valendo nos 2 cenários.
 - [ ] **Curadoria — preencher as 36 "Decisões CBMRO" (com o Wândrio/Tiago)**: 27 do
   Regulamento ("Regulamento — Curadoria/", 16 temas 🟡) + 9 do Regimento Interno
   ("Regimento Interno — Curadoria/", 27 órgãos 🟡). O mecanismo de REGISTRAR e APLICAR a
@@ -51,6 +58,16 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Decisões passam a ser POR CENÁRIO** (29/07/2026, achado do Tiago): a aba Decisões
+  mostrava as 9 decisões do RI da **LOB futura** também no cenário **atual** — `DecisoesCuradoria.jsx`
+  buscava o JSON num caminho fixo, sem `scenarioDbUrl`, e o gerador declarava o arquivo
+  "compartilhado entre cenários". Evidência: 4 das 9 citam órgãos que não existem na Lei
+  2.204/2009 (bbs, crbm, depdec, doe) e outras 4 discutem COT/dpof/gab-cg no texto. Correção:
+  campo `cenarios` por decisão (padrão por trilha — RI é específico da LOB, Regulamento é
+  temático), filtro puro testado (`cenariosDaDecisao`/`filtrarPorCenario`), estado vazio
+  explicativo no atual (nada de de-para por nome — seria AR-01) e isolamento do registro no
+  Firestore por `decisionDocId` (antes, decidir num cenário marcava o outro como decidido sem
+  ter aplicado texto final — falso verde AR-04). node 141/141 + python OK + build limpo.
 - [x] **Lote de pendências técnicas da auditoria** (24/07/2026, aprovado pelo Wândrio):
   - **BA, NOp 01/2021, Art. 35**: novo truncador por-artigo no extrator (`art_stop` no
     `CONFIG['ba']` de `extrair_regulamentos.py`) corta o ANEXO A (mapa de força) que o
