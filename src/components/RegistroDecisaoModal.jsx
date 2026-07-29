@@ -1,11 +1,31 @@
+import { useState } from 'react'
+import JanelaSeparada from './JanelaSeparada.jsx'
 import RegistroDecisaoForm from './RegistroDecisaoForm.jsx'
 
-// Moldura do registro de decisão. Nesta task ainda é o overlay de sempre; a Task 2
-// troca por janela separada, mantendo este overlay como fallback de pop-up bloqueado.
+const AVISO_BLOQUEIO = 'O navegador bloqueou a janela separada. Libere pop-ups para este '
+  + 'site se quiser preencher a decisão ao lado da tela de Decisões.'
+
+// Escolhe a moldura do formulário: janela separada do navegador (para consultar a
+// Questão e os excertos das candidatas enquanto se redige) e, se o pop-up for
+// bloqueado, o overlay de sempre com um aviso — nunca um caminho morto.
 export default function RegistroDecisaoModal(props) {
+  const [bloqueada, setBloqueada] = useState(false)
+
+  if (bloqueada) {
+    return (
+      <div className="decm-overlay" role="dialog" aria-modal="true">
+        <RegistroDecisaoForm {...props} aviso={AVISO_BLOQUEIO} />
+      </div>
+    )
+  }
   return (
-    <div className="decm-overlay" role="dialog" aria-modal="true">
+    <JanelaSeparada
+      titulo={`Registrar decisão — ${props.decisao.titulo}`}
+      nome="registro-decisao"
+      onFechar={props.onClose}
+      onBloqueada={() => setBloqueada(true)}
+    >
       <RegistroDecisaoForm {...props} />
-    </div>
+    </JanelaSeparada>
   )
 }

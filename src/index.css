@@ -3117,6 +3117,11 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .decm-inelegivel { color: var(--text-muted); }
 .decm-erro { background: #fdecea; color: #b3261e; border-radius: 8px; padding: 10px; margin: 10px 0; display: flex; flex-direction: column; gap: 8px; }
 .decm-acoes { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+/* Formulário de registro dentro da janela separada: o body da janela nova não herda
+   nada do layout do portal, e o .decm perde os limites que só fazem sentido no overlay. */
+.janela-sep-body { margin: 0; padding: 16px; background: #eef1f6; }
+.janela-sep-body .decm { width: 100%; max-height: none; overflow: visible; }
+.decm-aviso { background: #fdf1e3; color: #b3600d; border-radius: 8px; padding: 10px; margin: 0 0 10px; }
 .dec-selo-sys { background: #d9f0e2; color: #0c6b35; }
 .dec-pendencias { margin-bottom: 14px; }
 .dec-pendencia-item { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 6px 0; border-top: 1px solid var(--border, #e2e6ee); }
