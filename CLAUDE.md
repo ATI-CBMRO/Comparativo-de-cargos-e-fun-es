@@ -250,6 +250,12 @@ Conferência persiste em `conferencia` (membro logado); overlay `applyFinalsToAr
 `encodeFirestoreId` (dispositivoId.js) na fronteira Firestore (editId tem `/`);
 exportar decisões (aba Decisões, admin) + `scripts/aplicar_decisoes_vault.py` devolve ao
 vault (conflito reporta, idempotente). Guia p/ analista: Manual seção `#cockpit`.
+O formulário de registro abre em **janela separada do navegador** (`JanelaSeparada.jsx`
+— `window.open` + `createPortal`, mantendo a árvore React única para preservar login,
+cenário e Firestore), para consultar a Questão e os excertos das candidatas enquanto se
+redige; o card em edição fica destacado e a janela é reaproveitada ao trocar de decisão.
+Pop-up bloqueado cai no overlay de antes, com aviso. Spec
+`2026-07-29-registro-decisao-janela-separada-design.md`.
 
 **Telas do atual prontas:** `/minuta` (RI, 21 capítulos), `/regulamento` (16 temas),
 `/minuta/diagramas`, `/minuta/revisao`, `/regulamento/revisao`, e **Subsídio**
