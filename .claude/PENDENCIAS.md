@@ -64,6 +64,11 @@ _(nenhum)_
   Agora abre em janela do navegador (`JanelaSeparada.jsx`, reutilizável), com a tela de
   Decisões livre, card em edição destacado, janela reaproveitada ao trocar de decisão e
   fallback para o overlay se o pop-up for bloqueado. node 141/141 + python OK + build limpo.
+  **Prova manual em navegador (login real, gravação real no Firestore) ainda PENDENTE
+  com o Tiago** — nenhum subagente deste projeto tem acesso a navegador gráfico neste
+  ambiente; a verificação automatizada (testes + build) passou, mas o fluxo completo
+  (abrir → trocar de decisão → gravar) só foi confirmado por leitura de código, não em
+  uso real.
 - [x] **Decisões passam a ser POR CENÁRIO** (29/07/2026, achado do Tiago): a aba Decisões
   mostrava as 9 decisões do RI da **LOB futura** também no cenário **atual** — `DecisoesCuradoria.jsx`
   buscava o JSON num caminho fixo, sem `scenarioDbUrl`, e o gerador declarava o arquivo

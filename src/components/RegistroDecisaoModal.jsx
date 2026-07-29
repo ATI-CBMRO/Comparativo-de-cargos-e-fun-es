@@ -14,7 +14,7 @@ export default function RegistroDecisaoModal(props) {
   if (bloqueada) {
     return (
       <div className="decm-overlay" role="dialog" aria-modal="true">
-        <RegistroDecisaoForm {...props} aviso={AVISO_BLOQUEIO} />
+        <RegistroDecisaoForm key={props.decisao.id} {...props} aviso={AVISO_BLOQUEIO} />
       </div>
     )
   }
@@ -25,7 +25,7 @@ export default function RegistroDecisaoModal(props) {
       onFechar={props.onClose}
       onBloqueada={() => setBloqueada(true)}
     >
-      <RegistroDecisaoForm {...props} />
+      <RegistroDecisaoForm key={props.decisao.id} {...props} />
     </JanelaSeparada>
   )
 }

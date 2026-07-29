@@ -27,6 +27,11 @@ export default function RegistroDecisaoForm({ decisao: d, trilha, cenario, autor
   const [structErro, setStructErro] = useState(false)
   useEffect(() => {
     setStructErro(false)
+    // Troca de cenário no meio da edição não pode deixar o alvo escolhido no
+    // cenário anterior sobreviver — mesma classe de vazamento corrigida em
+    // d8b0405 (decisões por cenário); o texto da decisão (`texto`) é preservado.
+    setAlvo(null)
+    setTextoFinal('')
     fetchJson(scenarioDbUrl(cenario, ARQ[trilha]))
       .then(setStruct)
       .catch((e) => {
