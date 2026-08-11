@@ -287,8 +287,8 @@ Bahia (Art. 8-9 Supervisor + 18 Operador de Teledespacho/CICOM); alternativa: To
 entra como pseudo-fonte `risg` (rotulada "Exército Brasileiro") — **só como alternativa, nunca
 como fonte primária de nenhum tema** (testado em `test_regulamento_structure.py`). Reforça
 `cerimonial-honras` e `pessoal-quadros`. Fontes verificadas por leitura de subagentes antes de
-qualquer decisão de estrutura — ver vault Obsidian `Codebases/Comparativo-de-cargos-e-funcoes/`
-(notas "Comparativo RISG × Regulamentos — Round 1/Round 2").
+qualquer decisão de estrutura — ver vault Obsidian `~/Documents/Cofre CBM/Codebases/Comparativo-de-cargos-e-funcoes/`
+(notas "Comparativo RISG × Regulamentos — Round 1/Round 2"; migrado do cofre pessoal em 2026-08-11).
 
 **Pendências sinalizadas (não forçadas)**: corpo principal de Tocantins (Art. 1-13,16 — colide
 numeração de "Art. N" com o Anexo 2 já usado); 4 Diretrizes/Normas de Alagoas sem "Art. N"
@@ -433,3 +433,9 @@ Grafo de conhecimento em `graphify-out/`. Para perguntas sobre o código, rode
 `graphify query "<pergunta>"` (ou `path`/`explain`) antes de grep amplo; use
 `graphify-out/wiki/index.md` para navegação e `GRAPH_REPORT.md` só para visão de
 arquitetura. Após alterar código, `graphify update .` (AST, sem custo de API).
+
+**Exportação para Obsidian (`--obsidian-dir`):** se rodar `/graphify --obsidian` neste
+projeto, o destino é `~/Documents/Cofre CBM/Codebases/Comparativo-de-cargos-e-funcoes` —
+**não** `~/Documents/Obsidian Vault/Codebases/Comparativo-de-cargos-e-funcoes` (cofre
+pessoal antigo, migrado para o Cofre CBM em 2026-08-11, pois este projeto é institucional
+do CBM/RO, compartilhado com o Tiago).
