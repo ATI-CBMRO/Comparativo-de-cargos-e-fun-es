@@ -3127,3 +3127,25 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .dec-pendencias { margin-bottom: 14px; }
 .dec-pendencia-item { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 6px 0; border-top: 1px solid var(--border, #e2e6ee); }
 .dec-pendencia-item:first-of-type { border-top: none; }
+
+/* Nota de escopo do Regulamento de Serviço (recorte setorizado, spec 2026-08-13) */
+.nota-escopo {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 780px;
+  margin: 0 auto 28px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--cbm-red-700);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, .08);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--navy-700, #33415c);
+}
+.nota-escopo p { margin: 0 0 8px; }
+.nota-escopo p:last-child { margin-bottom: 0; }
+.nota-escopo-ico { flex: 0 0 auto; margin-top: 2px; color: var(--cbm-red-700); }
+.nota-escopo-titulo { font-weight: 700; color: var(--cbm-red-700); }
+.nota-escopo-aviso { font-style: italic; opacity: .85; }
