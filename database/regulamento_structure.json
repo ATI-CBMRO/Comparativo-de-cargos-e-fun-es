@@ -24153,11 +24153,13 @@
      "id": "ba-art-8",
      "kind": "incisos",
      "editId": "reg:central-operacoes-193/ba-art-8",
-     "caput": "O Supervisor do Teledespacho (CICOM) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CICOM) sob a égide do CBMBA, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos.",
+     "caput": "O Supervisor do Teledespacho (CICOM) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CICOM) sob a égide do CBMRO, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos.",
      "items": [],
      "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 8",
      "match": "exata",
-     "heading": "NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)"
+     "heading": "NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)",
+     "adapted": true,
+     "original_caput": "O Supervisor do Teledespacho (CICOM) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CICOM) sob a égide do CBMBA, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos."
     },
     {
      "id": "ba-art-9",
@@ -24258,7 +24260,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
-       "text": "XXIV - adotar e orientar quanto ao uso do código fonético previsto no âmbito do CBMBA, não permitindo o uso de linguagem inapropriada e diverso ao preconizado pelo sistema de comunicação do CICOM, assim como coibindo a transmissão de mensagens de interesse particular, religioso e ideológico, através dos dispositivos de uso da Segurança Pública;",
+       "text": "XXIV - adotar e orientar quanto ao uso do código fonético previsto no âmbito do CBMRO, não permitindo o uso de linguagem inapropriada e diverso ao preconizado pelo sistema de comunicação do CICOM, assim como coibindo a transmissão de mensagens de interesse particular, religioso e ideológico, através dos dispositivos de uso da Segurança Pública;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
@@ -24270,7 +24272,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
-       "text": "XXVII - manter contatos com outros órgãos envolvidos no sistema de segurança pública, saúde ou assistência social, objetivando dar celeridade às soluções para eventos de natureza bombeiro-militar ou que não extrapolem a competência do CBMBA;",
+       "text": "XXVII - manter contatos com outros órgãos envolvidos no sistema de segurança pública, saúde ou assistência social, objetivando dar celeridade às soluções para eventos de natureza bombeiro-militar ou que não extrapolem a competência do CBMRO;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
@@ -24280,7 +24282,9 @@
      ],
      "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9",
      "match": "exata",
-     "heading": "NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)"
+     "heading": "NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)",
+     "adapted": true,
+     "original_caput": "A função de Supervisor do Teledespacho (CICOM) será exercida por oficial intermediário ou 1º tenente, que ficará sediado na Secretaria de Segurança Pública (SSP), competindo-lhe:"
     },
     {
      "id": "ba-art-18",

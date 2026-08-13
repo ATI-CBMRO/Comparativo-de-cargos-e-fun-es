@@ -85,6 +85,12 @@ PRIMARY_SOURCE = {
 # ── Adaptações p/ RO (aplicadas NO BUILD apenas ao texto proposto da minuta; o
 #    original fica preservado em original_text e é o que o comparador exibe) ──────────
 # Pares (de, para), aplicados na ordem. Revisáveis pelo Wândrio.
+#
+# AUDITORIA 2026-08-13: a tabela cobria 9 estados (MT, RN, RS, SE, AL, GO, PA, PR, DF) e
+# NÃO cobria a BAHIA — que é a fonte primária de 'central-operacoes-193' (ver
+# PRIMARY_SOURCE acima). Resultado: aquele capítulo saía com ZERO adaptações e vazava
+# "CBMBA" para dentro da minuta de RO. Regras da Bahia acrescentadas abaixo. Ao eleger uma
+# nova fonte primária em PRIMARY_SOURCE, confira se o estado tem regra AQUI.
 ADAPTATIONS = [
     # Pares específicos primeiro (a ordem importa); genéricos por último.
     ("região metropolitana de Cuiabá/Várzea Grande", "região metropolitana de Porto Velho"),
@@ -93,7 +99,9 @@ ADAPTATIONS = [
     ("Corpo de Bombeiros Militar do Estado do Rio Grande do Sul", "Corpo de Bombeiros Militar do Estado de Rondônia"),
     ("Corpo de Bombeiros Militar do Estado do Sergipe", "Corpo de Bombeiros Militar do Estado de Rondônia"),
     ("Corpo de Bombeiros Militar do Estado de Alagoas", "Corpo de Bombeiros Militar do Estado de Rondônia"),
+    ("Corpo de Bombeiros Militar do Estado da Bahia", "Corpo de Bombeiros Militar do Estado de Rondônia"),
     ("Estado de Mato Grosso", "Estado de Rondônia"),
+    ("Estado da Bahia", "Estado de Rondônia"),
     ("Estado do Rio Grande do Norte", "Estado de Rondônia"),
     ("Estado do Rio Grande do Sul", "Estado de Rondônia"),
     ("Estado de Alagoas", "Estado de Rondônia"),
@@ -102,11 +110,15 @@ ADAPTATIONS = [
     ("mato-grossense", "rondoniense"),
     ("sergipano", "rondoniense"),
     ("sergipana", "rondoniense"),
+    ("baiano", "rondoniense"),
+    ("baiana", "rondoniense"),
     # Genéricos (depois dos específicos): pegam "…Corpo de Bombeiros Militar de Mato
     # Grosso", "…de Sergipe" etc. sem o "do Estado".
     ("Mato Grosso", "Rondônia"),
     ("Sergipe", "Rondônia"),
+    ("Bahia", "Rondônia"),
     ("CBMMT", "CBMRO"),
+    ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
     ("CBMRS", "CBMRO"),
     ("CBMSE", "CBMRO"),
