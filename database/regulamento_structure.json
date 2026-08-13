@@ -487,7 +487,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1 - Comandante-Geral Adjunto do Corpo de Bombeiros Militar e Chefe do Estado-Maior Geral;",
+       "text": "1 - Subcomandante-Geral do Corpo de Bombeiros Militar e Chefe do Estado-Maior Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -627,11 +627,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.2 - Gabinete do Comandante-Geral Adjunto.",
+       "text": "1.2 - Gabinete do Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "2 - Órgão de Apoio da Diretoria Operacional:",
+       "text": "2 - Órgão de Apoio da Comando Operacional de Bombeiros:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -655,7 +655,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1 - Diretoria Operacional - DOp:",
+       "text": "1 - Comando Operacional de Bombeiros - DOp:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -667,7 +667,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.3 - Comandos Regionais Bombeiro Militar - CRBM:",
+       "text": "1.3 - Comandos Operacionais de Bombeiros - COB:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -675,11 +675,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.3.1.1 - Companhias Bombeiro Militar- CiaBM: 1.3.1.1.1 - Pelotões Bombeiro Militar - PelBM.",
+       "text": "1.3.1.1 - Subgrupamentos de Bombeiros Militar - SGBM: 1.3.1.1.1 - Pelotões Bombeiro Militar - PelBM.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.3.2 - Companhias Independente Bombeiro Militar - CIBM;",
+       "text": "1.3.2 - Subgrupamentos de Bombeiros Militar - SGBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -691,7 +691,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.4 - Batalhão de Emergências Ambientais - BEA:",
+       "text": "1.4 - Grupamento de Emergências Ambientais - BEA:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -713,7 +713,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5",
      "match": "parcial",
-     "heading": "TÍT. II — Da Estrutura Organizacional (estrutura é a de MT; a da minuta de RO vem da LOB de RO)"
+     "heading": "TÍT. II — Da Estrutura Organizacional (estrutura é a de MT; a da minuta de RO vem da LOB de RO)",
+     "adapted": true,
+     "original_caput": "A estrutura organizacional básica do Corpo de Bombeiros Militar compreende os seguintes níveis e unidades:"
     }
    ],
    "alternatives": {
@@ -1634,29 +1636,33 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 10"
       },
       {
-       "text": "XXVI - aprovar o seu regimento interno. Do Comandante-Geral Adjunto",
+       "text": "XXVI - aprovar o seu regimento interno. Do Subcomandante-Geral",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 10"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 10",
      "match": "exata",
-     "heading": "TÍT. III, Caps. I–III — Direção Geral, Colegiada e Superior"
+     "heading": "TÍT. III, Caps. I–III — Direção Geral, Colegiada e Superior",
+     "adapted": true,
+     "original_caput": "Compete ao Conselho Superior de Bombeiros:"
     },
     {
      "id": "mt-art-11",
      "kind": "incisos",
      "editId": "reg:competencias-direcao/mt-art-11",
-     "caput": "O Comandante-Geral Adjunto, substituto eventual do Comandante-Geral, é o responsável pelo estudo, planejamento, direção, orientação, coordenação, fiscalização e controle de todas as atividades administrativas e operacionais da instituição, sendo encarregado pela elaboração de diretrizes e ordens do Comando aos demais órgãos para o cumprimento de suas atividades.",
+     "caput": "O Subcomandante-Geral, substituto eventual do Comandante-Geral, é o responsável pelo estudo, planejamento, direção, orientação, coordenação, fiscalização e controle de todas as atividades administrativas e operacionais da instituição, sendo encarregado pela elaboração de diretrizes e ordens do Comando aos demais órgãos para o cumprimento de suas atividades.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 11",
      "match": "exata",
-     "heading": "TÍT. III, Caps. I–III — Direção Geral, Colegiada e Superior"
+     "heading": "TÍT. III, Caps. I–III — Direção Geral, Colegiada e Superior",
+     "adapted": true,
+     "original_caput": "O Comandante-Geral Adjunto, substituto eventual do Comandante-Geral, é o responsável pelo estudo, planejamento, direção, orientação, coordenação, fiscalização e controle de todas as atividades administrativas e operacionais da instituição, sendo encarregado pela elaboração de diretrizes e ordens do Comando aos demais órgãos para o cumprimento de suas atividades."
     },
     {
      "id": "mt-art-12",
      "kind": "incisos",
      "editId": "reg:competencias-direcao/mt-art-12",
-     "caput": "Compete ao Comandante-Geral Adjunto, além de outras atribuições:",
+     "caput": "Compete ao Subcomandante-Geral, além de outras atribuições:",
      "items": [
       {
        "text": "I - chefiar o Estado-Maior Geral da Corporação;",
@@ -2161,7 +2167,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 66"
       },
       {
-       "text": "XXVIII- coordenar, controlar e fiscalizar o funcionamento do Sistema de Pessoal, mantendo estreita ligação com as Seções Administrativas das UBM’s.",
+       "text": "XXVIII- coordenar, controlar e fiscalizar o funcionamento do Sistema de Pessoal, mantendo estreita ligação com as Seções Administrativas das OBM’s.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 66"
       },
       {
@@ -2520,7 +2526,7 @@
      "caput": "A Secretaria das Comissões de Promoções compete:",
      "items": [
       {
-       "text": "I - controlar o envio pelas Diretorias, Coordenadorias e UBM’s das Fichas de Avaliação de Desempenho (FAD) dos Oficiais e Praças;",
+       "text": "I - controlar o envio pelas Diretorias, Coordenadorias e OBM’s das Fichas de Avaliação de Desempenho (FAD) dos Oficiais e Praças;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 79"
       },
       {
@@ -2921,7 +2927,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 93"
       },
       {
-       "text": "XXIII - exercer outros encargos que lhe forem atribuídos pelo Comandante-Geral ou pelo Comandante-Geral Adjunto.",
+       "text": "XXIII - exercer outros encargos que lhe forem atribuídos pelo Comandante-Geral ou pelo Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 93"
       }
      ],
@@ -2978,17 +2984,19 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 94"
       },
       {
-       "text": "XI - elaborar diretrizes gerais de levantamento estatístico, e apresenta-lás ao Comandante-Geral ou Comandante-Geral Adjunto;",
+       "text": "XI - elaborar diretrizes gerais de levantamento estatístico, e apresenta-lás ao Comandante-Geral ou Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 94"
       },
       {
-       "text": "XII - exercer outros encargos que lhe forem atribuídos pelo Comandante-Geral ou pelo Comandante-Geral Adjunto.",
+       "text": "XII - exercer outros encargos que lhe forem atribuídos pelo Comandante-Geral ou pelo Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 94"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 94",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "Compete ao Coordenador de Apoio Logístico e Patrimônio;"
     },
     {
      "id": "mt-art-95",
@@ -5047,13 +5055,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 152"
       },
       {
-       "text": "XII - organizar o plano de férias do Q.C.G, seguindo-se a orientação do Comandante-Geral Adjunto;",
+       "text": "XII - organizar o plano de férias do Q.C.G, seguindo-se a orientação do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 152"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 152",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "São competências Coordenadoria de Ajudância Geral, com a participação de seus órgãos subordinados:"
     },
     {
      "id": "mt-art-154",
@@ -5086,7 +5096,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 154"
       },
       {
-       "text": "VII - organizar e manter em dia uma relação nominal dos oficiais e praças, com as respectivas residências e telefones, destinando uma via ao Comandante Geral Adjunto e outra para ser anexada ao livro de ordens do Adjunto de dia;",
+       "text": "VII - organizar e manter em dia uma relação nominal dos oficiais e praças, com as respectivas residências e telefones, destinando uma via ao Subcomandante-Geral e outra para ser anexada ao livro de ordens do Adjunto de dia;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 154"
       },
       {
@@ -5128,7 +5138,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 154",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "Compete a Secretaria da Ajudância Geral:"
     },
     {
      "id": "mt-art-155",
@@ -7026,7 +7038,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 54"
       },
       {
-       "text": "IV - estabelecer trocas de informações, com o órgão de inteligência da Secretária de Segurança Pública do Estado de Rondônia (SSP/MT) e a Polícia Judiciária Civil;",
+       "text": "IV - estabelecer trocas de informações, com o órgão de inteligência da Secretária de Segurança Pública do Estado de Rondônia (SESDEC) e a Polícia Judiciária Civil;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 54"
       },
       {
@@ -7066,7 +7078,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 54"
       },
       {
-       "text": "XIV - organizar e manter o cadastramento de pessoal de inteligência da CACI e das UBMs subordinadas à Coordenadoria da Agencia Central de Inteligência;",
+       "text": "XIV - organizar e manter o cadastramento de pessoal de inteligência da CACI e das OBMs subordinadas à Coordenadoria da Agencia Central de Inteligência;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 54"
       },
       {
@@ -7151,7 +7163,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 55"
       },
       {
-       "text": "XIV - exercer outros encargos que lhe forem atribuídos, pelo Comandante-Geral ou pelo Comandante-Geral Adjunto.",
+       "text": "XIV - exercer outros encargos que lhe forem atribuídos, pelo Comandante-Geral ou pelo Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 55"
       }
      ],
@@ -7275,14 +7287,14 @@
      "id": "mt-art-58",
      "kind": "incisos",
      "editId": "reg:competencias-apoio-assessoramento/mt-art-58",
-     "caput": "Compete às Agencias Setoriais de Inteligência - ASI, integrantes da estrutura dos Comandos Regionais Bombeiro Militar:",
+     "caput": "Compete às Agencias Setoriais de Inteligência - ASI, integrantes da estrutura dos Comandos Operacionais de Bombeiros:",
      "items": [
       {
        "text": "I – desenvolver atividades de Inteligência de Segurança Pública, no âmbito de sua circunscrição e de acordo com as orientações da Coordenadoria da Agência Central de Inteligência – CACI;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 58"
       },
       {
-       "text": "II – produzir os conhecimentos necessários de interesse da atividade de Inteligência de Segurança Pública, com o objetivo de auxiliar o Comandante Regional, nas decisões e na elaboração de estudos e planejamento, visando o emprego da UBM e das unidades subordinadas;",
+       "text": "II – produzir os conhecimentos necessários de interesse da atividade de Inteligência de Segurança Pública, com o objetivo de auxiliar o Comandante Operacional de Bombeiros, nas decisões e na elaboração de estudos e planejamento, visando o emprego da OBM e das unidades subordinadas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 58"
       },
       {
@@ -7364,7 +7376,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
       },
       {
-       "text": "1.2 – Gabinete do Comandante Geral Adjunto:",
+       "text": "1.2 – Gabinete do Subcomandante-Geral:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
       },
       {
@@ -7380,7 +7392,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
       },
       {
-       "text": "2 - Órgão de Apoio da Diretoria Operacional:",
+       "text": "2 - Órgão de Apoio da Comando Operacional de Bombeiros:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
       },
       {
@@ -7406,7 +7418,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+     "adapted": true,
+     "original_caput": "Os órgãos de apoio tem a seguinte constituição:"
     },
     {
      "id": "mt-art-220",
@@ -7477,11 +7491,13 @@
      "id": "mt-art-224",
      "kind": "incisos",
      "editId": "reg:competencias-apoio-assessoramento/mt-art-224",
-     "caput": "O Gabinete do Comandante-Geral Adjunto é órgão de apoio que presta assistência e assessoramento direto, permanente e pessoal ao Comandante-Geral Adjunto nos assuntos que escapem às competências normais e específicas dos demais órgãos de direção.",
+     "caput": "O Gabinete do Subcomandante-Geral é órgão de apoio que presta assistência e assessoramento direto, permanente e pessoal ao Subcomandante-Geral nos assuntos que escapem às competências normais e específicas dos demais órgãos de direção.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 224",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+     "adapted": true,
+     "original_caput": "O Gabinete do Comandante-Geral Adjunto é órgão de apoio que presta assistência e assessoramento direto, permanente e pessoal ao Comandante-Geral Adjunto nos assuntos que escapem às competências normais e específicas dos demais órgãos de direção."
     },
     {
      "id": "mt-art-226",
@@ -7490,7 +7506,7 @@
      "caput": "Compete a Secretaria do Gabinete do Comandante- Geral Adjunto:",
      "items": [
       {
-       "text": "I - organizar e manter os arquivos da Administração Militar no âmbito do Gabinete do Comandante-Geral Adjunto;",
+       "text": "I - organizar e manter os arquivos da Administração Militar no âmbito do Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
@@ -7502,23 +7518,23 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "IV - manter atualizado os dados cadastrais dos militares lotados no Gabinete do Comandante-Geral Adjunto;",
+       "text": "IV - manter atualizado os dados cadastrais dos militares lotados no Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "V - fiscalizar e controlar os materiais utilizados pelos bombeiros militares do Gabinete do Comandante-Geral Adjunto;",
+       "text": "V - fiscalizar e controlar os materiais utilizados pelos bombeiros militares do Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "VI - manter o controle do material de expediente, elaborando o pedido necessário e encaminhando-o ao Chefe do Gabinete do Comandante-Geral Adjunto;",
+       "text": "VI - manter o controle do material de expediente, elaborando o pedido necessário e encaminhando-o ao Chefe do Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "VII - atender ao público e orientar as pessoas que procurem o Gabinete do Comandante-Geral Adjunto;",
+       "text": "VII - atender ao público e orientar as pessoas que procurem o Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "VIII - manter-se atualizado e informado sobre o trânsito de documentos no Gabinete do Comandante-Geral Adjunto;",
+       "text": "VIII - manter-se atualizado e informado sobre o trânsito de documentos no Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
@@ -7526,23 +7542,25 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "X - executar e acompanhar as atividades desenvolvidas de responsabilidade do Gabinete do Comandante-Geral Adjunto;",
+       "text": "X - executar e acompanhar as atividades desenvolvidas de responsabilidade do Gabinete do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       },
       {
-       "text": "XI - executar outras atividades correlatas ou que lhe sejam atribuídas pelo Chefe de Gabinete do Comandante-Geral Adjunto.",
+       "text": "XI - executar outras atividades correlatas ou que lhe sejam atribuídas pelo Chefe de Gabinete do Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 226",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+     "adapted": true,
+     "original_caput": "Compete a Secretaria do Gabinete do Comandante- Geral Adjunto:"
     },
     {
      "id": "mt-art-227",
      "kind": "incisos",
      "editId": "reg:competencias-apoio-assessoramento/mt-art-227",
-     "caput": "Compete a Assistência do Gabinete do Comandante-Geral Adjunto:",
+     "caput": "Compete a Assistência do Gabinete do Subcomandante-Geral:",
      "items": [
       {
        "text": "I - receber, conferir, protocolar e encaminhar processos e documentos;",
@@ -7565,13 +7583,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 227"
       },
       {
-       "text": "VI - executar outras atividades correlatas ou que lhe sejam atribuídas pelo Chefe de Gabinete do Comandante-Geral Adjunto.",
+       "text": "VI - executar outras atividades correlatas ou que lhe sejam atribuídas pelo Chefe de Gabinete do Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 227"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 227",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+     "adapted": true,
+     "original_caput": "Compete a Assistência do Gabinete do Comandante-Geral Adjunto:"
     },
     {
      "id": "mt-art-228",
@@ -7590,7 +7610,7 @@
      "caput": "São competências do Centro de Operações de Bombeiros – COB:",
      "items": [
       {
-       "text": "I - coordenar o emprego da Força Operacional das UBM’s;",
+       "text": "I - coordenar o emprego da Força Operacional das OBM’s;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
       },
       {
@@ -7630,7 +7650,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
       },
       {
-       "text": "XI - coordenar e controlar as operações especiais ou extraordinárias, observando a competência dos Comandantes de UBM subordinadas;",
+       "text": "XI - coordenar e controlar as operações especiais ou extraordinárias, observando a competência dos Comandantes de OBM subordinadas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
       },
       {
@@ -7829,7 +7849,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 233"
       },
       {
-       "text": "IV- coletar dados junto as UBM’s, solicitando s ugestões com relação a novos procedimentos operacionais para uso de equipamentos recém adquiridos;",
+       "text": "IV- coletar dados junto as OBM’s, solicitando s ugestões com relação a novos procedimentos operacionais para uso de equipamentos recém adquiridos;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 233"
       },
       {
@@ -7841,7 +7861,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 233"
       },
       {
-       "text": "VII- verificar necessidades das UBM’s quando a realização de cursos par o pessoal operacional junto a DEIP;",
+       "text": "VII- verificar necessidades das OBM’s quando a realização de cursos par o pessoal operacional junto a DEIP;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 233"
       },
       {
@@ -7863,7 +7883,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 233",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+     "adapted": true,
+     "original_caput": "Compete ao Núcleo de Operações de Bombeiros – NOB:"
     }
    ],
    "alternatives": {
@@ -9036,32 +9058,36 @@
      "id": "mt-art-234",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-234",
-     "caput": "Os órgãos de execução realizam a atividade fim da instituição, cumprindo as missões que lhes são inerentes, sendo apoiados em suas necessidades de pessoal e material pelos órgãos dos demais níveis. Da Diretoria Operacional – DOp",
+     "caput": "Os órgãos de execução realizam a atividade fim da instituição, cumprindo as missões que lhes são inerentes, sendo apoiados em suas necessidades de pessoal e material pelos órgãos dos demais níveis. Da Comando Operacional de Bombeiros – DOp",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 234",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Os órgãos de execução realizam a atividade fim da instituição, cumprindo as missões que lhes são inerentes, sendo apoiados em suas necessidades de pessoal e material pelos órgãos dos demais níveis. Da Diretoria Operacional – DOp"
     },
     {
      "id": "mt-art-235",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-235",
-     "caput": "A Diretoria Operacional - DOp, subordina-se diretamente ao Comandante-Geral Adjunto, sendo o órgão de supervisão, coordenação e planejamento das políticas relacionadas com a atividade fim da Corporação.",
+     "caput": "A Comando Operacional de Bombeiros - DOp, subordina-se diretamente ao Subcomandante-Geral, sendo o órgão de supervisão, coordenação e planejamento das políticas relacionadas com a atividade fim da Corporação.",
      "items": [
       {
-       "text": "Parágrafo único . A Diretoria será integrada pelos Comandos Regionais (CRBM) e pelas Unidades Bombeiros Militares (UBM).",
+       "text": "Parágrafo único . A Diretoria será integrada pelos Comandos Operacionais de Bombeiros (COB) e pelas Unidades Bombeiros Militares (OBM).",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 235"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 235",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "A Diretoria Operacional - DOp, subordina-se diretamente ao Comandante-Geral Adjunto, sendo o órgão de supervisão, coordenação e planejamento das políticas relacionadas com a atividade fim da Corporação."
     },
     {
      "id": "mt-art-236",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-236",
-     "caput": "São competências da Diretoria Operacional, com a participação de seus órgãos subordinados:",
+     "caput": "São competências da Comando Operacional de Bombeiros, com a participação de seus órgãos subordinados:",
      "items": [
       {
        "text": "I - planejar e coordenar o emprego operacional da instituição;",
@@ -9108,11 +9134,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
       },
       {
-       "text": "XII - traçar objetivos e metas a serem atingidas pelos Comandos Regionais do Corpo de Bombeiros sediadas na baixada cuiabana;",
+       "text": "XII - traçar objetivos e metas a serem atingidas pelos Comandos Operacionais de Bombeiros sediadas na baixada cuiabana;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
       },
       {
-       "text": "XIII - estabelecer unidade de doutrina entre os CRBMs e UOpBM subordinadas;",
+       "text": "XIII - estabelecer unidade de doutrina entre os COBs e UOpBM subordinadas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
       },
       {
@@ -9120,7 +9146,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
       },
       {
-       "text": "XV - distribuir e remanejar os recursos humanos entre os CRBMs subordinados a fim de desempenhar as funções que motivaram sua criação",
+       "text": "XV - distribuir e remanejar os recursos humanos entre os COBs subordinados a fim de desempenhar as funções que motivaram sua criação",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
       },
       {
@@ -9134,16 +9160,18 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "São competências da Diretoria Operacional, com a participação de seus órgãos subordinados:"
     },
     {
      "id": "mt-art-237",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-237",
-     "caput": "A Diretoria de Operacional tem a seguinte constituição:",
+     "caput": "A Comando Operacional de Bombeiros tem a seguinte constituição:",
      "items": [
       {
-       "text": "1 - Diretoria Operacional Adjunta;",
+       "text": "1 - Comando Operacional de Bombeiros Adjunta;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 237"
       },
       {
@@ -9177,13 +9205,15 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 237",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "A Diretoria de Operacional tem a seguinte constituição:"
     },
     {
      "id": "mt-art-240",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-240",
-     "caput": "Compete a Seção Administrativa da Diretoria Operacional:",
+     "caput": "Compete a Seção Administrativa da Comando Operacional de Bombeiros:",
      "items": [
       {
        "text": "I - elaborar a documentação administrativa originária, correspondente a Diretoria;",
@@ -9222,13 +9252,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 240"
       },
       {
-       "text": "X - exercer outros encargos que lhe forem atribuídos pelo Diretor Operacional.",
+       "text": "X - exercer outros encargos que lhe forem atribuídos pelo Comandante Operacional de Bombeiros.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 240"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 240",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete a Seção Administrativa da Diretoria Operacional:"
     },
     {
      "id": "mt-art-241",
@@ -9426,29 +9458,33 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 246"
       },
       {
-       "text": "VII - exercer outros encargos que lhe forem atribuídos pelo Diretor ou pelo Diretor Adjunto. Dos Comandos Regionais Bombeiro Militar – CRBM",
+       "text": "VII - exercer outros encargos que lhe forem atribuídos pelo Diretor ou pelo Diretor Adjunto. Dos Comandos Operacionais de Bombeiros – COB",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 246"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 246",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete ao Centro de Monitoramento, Controle e Comando de Operações:"
     },
     {
      "id": "mt-art-247",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-247",
-     "caput": "Os Comando Regionais Bombeiro Militar - CRBM subordinam-se à DOp e são órgãos de supervisão, coordenação e planejamento operacional das UBM’s subordinadas.",
+     "caput": "Os Comandos Operacionais de Bombeiros - COB subordinam-se à DOp e são órgãos de supervisão, coordenação e planejamento operacional das OBM’s subordinadas.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 247",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Os Comando Regionais Bombeiro Militar - CRBM subordinam-se à DOp e são órgãos de supervisão, coordenação e planejamento operacional das UBM’s subordinadas."
     },
     {
      "id": "mt-art-248",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-248",
-     "caput": "São competências dos Comandos Regionais de Bombeiros Militar (CRBM), com a participação de seus órgãos subordinados:",
+     "caput": "São competências dos Comandos Operacionais de Bombeiros de Bombeiros Militar (COB), com a participação de seus órgãos subordinados:",
      "items": [
       {
        "text": "I - coordenar o emprego operacional das Unidades Bombeiro Militar de sua área de planejamento e atuação;",
@@ -9463,11 +9499,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 248"
       },
       {
-       "text": "IV - assessorar o Diretor Operacional na orientação da política de emprego operacional e de recursos humanos, materiais e financeiros para a execução da atividade fim em sua área operacional;",
+       "text": "IV - assessorar o Comandante Operacional de Bombeiros na orientação da política de emprego operacional e de recursos humanos, materiais e financeiros para a execução da atividade fim em sua área operacional;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 248"
       },
       {
-       "text": "V - interagir ordinariamente com o Diretor Operacional e outros órgãos para subsidiar o planejamento de emprego operacional da instituição;",
+       "text": "V - interagir ordinariamente com o Comandante Operacional de Bombeiros e outros órgãos para subsidiar o planejamento de emprego operacional da instituição;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 248"
       },
       {
@@ -9477,13 +9513,15 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 248",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "São competências dos Comandos Regionais de Bombeiros Militar (CRBM), com a participação de seus órgãos subordinados:"
     },
     {
      "id": "mt-art-249",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-249",
-     "caput": "Os Comandos Regionais tem a seguinte constituição:",
+     "caput": "Os Comandos Operacionais de Bombeiros tem a seguinte constituição:",
      "items": [
       {
        "text": "1 – Comando:",
@@ -9504,20 +9542,22 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 249",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Os Comandos Regionais tem a seguinte constituição:"
     },
     {
      "id": "mt-art-252",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-252",
-     "caput": "Compete a Seção Administrativa dos Comandos Regionais:",
+     "caput": "Compete a Seção Administrativa dos Comandos Operacionais de Bombeiros:",
      "items": [
       {
-       "text": "I - elaborar a documentação administrativa originária, correspondente ao Comando Regional;",
+       "text": "I - elaborar a documentação administrativa originária, correspondente ao Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
-       "text": "II - protocolar toda correspondência recebida e/ou enviada pelo Comando Regional;",
+       "text": "II - protocolar toda correspondência recebida e/ou enviada pelo Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
@@ -9529,7 +9569,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
-       "text": "V - organizar e manter em dia o arquivo administrativo d o Comando Regional;",
+       "text": "V - organizar e manter em dia o arquivo administrativo d o Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
@@ -9537,45 +9577,51 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
-       "text": "VII - realizar os encargos específicos que lhe forem atribuídos pelo Comandante Regional Adjunto e tarefas atinentes a pessoal, informações, instrução e operações, e logística.",
+       "text": "VII - realizar os encargos específicos que lhe forem atribuídos pelo Comandante Operacional de Bombeiros Adjunto e tarefas atinentes a pessoal, informações, instrução e operações, e logística.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
-       "text": "VIII - assessorar o Comandante Regional em todos os assuntos relativos à tramitação de documentação, arquivo e controle patrimonial do Comando Regional;",
+       "text": "VIII - assessorar o Comandante Operacional de Bombeiros em todos os assuntos relativos à tramitação de documentação, arquivo e controle patrimonial do Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
-       "text": "IX - controlar a escala de férias do pessoal do Comando Regional;",
+       "text": "IX - controlar a escala de férias do pessoal do Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       },
       {
-       "text": "X – receber as prestações de contas da UBMs e Subunidades subordinadas. Das Unidades Bombeiro Militar – UBM",
+       "text": "X – receber as prestações de contas da OBMs e Subunidades subordinadas. Das Unidades Bombeiro Militar – OBM",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 252",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete a Seção Administrativa dos Comandos Regionais:"
     },
     {
      "id": "mt-art-253",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-253",
-     "caput": "As Unidades Bombeiros Militar – UBM são classificadas em Batalhão Bombeiro Militar (BBM), Companhia Independente Bombeiro Militar (CIBM), Pelotão Independente Bombeiro Militar (PIBM) e Núcleo Bombeiro Militar (NBM), subordinam-se ao CRBM de sua área de abrangência, e são órgãos de execução da instituição.",
+     "caput": "As Unidades Bombeiros Militar – OBM são classificadas em Grupamento de Bombeiro Militar (GBM), Subgrupamento de Bombeiros Militar (SGBM), Pelotão Independente Bombeiro Militar (PIBM) e Núcleo Bombeiro Militar (NBM), subordinam-se ao COB de sua área de abrangência, e são órgãos de execução da instituição.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 253",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "As Unidades Bombeiros Militar – UBM são classificadas em Batalhão Bombeiro Militar (BBM), Companhia Independente Bombeiro Militar (CIBM), Pelotão Independente Bombeiro Militar (PIBM) e Núcleo Bombeiro Militar (NBM), subordinam-se ao CRBM de sua área de abrangência, e são órgãos de execução da instituição."
     },
     {
      "id": "mt-art-254",
      "kind": "incisos",
      "editId": "reg:competencias-execucao/mt-art-254",
-     "caput": "Os Batalhões de Bombeiros Militar são órgãos de execução programática, subordinados aos Comandos Regionais (CRBMs), definido como Unidade Operacional Bombeiro Militar e responsável pelas missões de extinção de incêndio, busca, salvamento e ações de defesa civil.",
+     "caput": "Os Batalhões de Bombeiros Militar são órgãos de execução programática, subordinados aos Comandos Operacionais de Bombeiros (COBs), definido como Unidade Operacional Bombeiro Militar e responsável pelas missões de extinção de incêndio, busca, salvamento e ações de defesa civil.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 254",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Os Batalhões de Bombeiros Militar são órgãos de execução programática, subordinados aos Comandos Regionais (CRBMs), definido como Unidade Operacional Bombeiro Militar e responsável pelas missões de extinção de incêndio, busca, salvamento e ações de defesa civil."
     },
     {
      "id": "mt-art-257",
@@ -9620,7 +9666,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257"
       },
       {
-       "text": "X - organizar e manter em dia uma relação nominal dos oficiais e das praças do Batalhão, com as respectivas residências e telefones, destinando uma via ao Comandante Adjunto e outra para ser anexada ao livro de ordens do Adjunto de Dia;",
+       "text": "X - organizar e manter em dia uma relação nominal dos oficiais e das praças do Grupamento, com as respectivas residências e telefones, destinando uma via ao Comandante Adjunto e outra para ser anexada ao livro de ordens do Adjunto de Dia;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257"
       },
       {
@@ -9652,21 +9698,23 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257"
       },
       {
-       "text": "XVIII - controlar a escrituração referente à correspondência, ao arquivo e ao registro das alterações dos militares da UBM;",
+       "text": "XVIII - controlar a escrituração referente à correspondência, ao arquivo e ao registro das alterações dos militares da OBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257"
       },
       {
-       "text": "XIX - assessorar o Comandante quanto às providências decorrentes de falecimento de integrantes da UBM, em serviço ou não;",
+       "text": "XIX - assessorar o Comandante quanto às providências decorrentes de falecimento de integrantes da OBM, em serviço ou não;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257"
       },
       {
-       "text": "XX - verificar diariamente no correio eletrônico, toda a documentação expedida pelo Comando Geral e outros Órgãos Públicos de interesse da UBM, dando ciência ao Comandante Adjunto.",
+       "text": "XX - verificar diariamente no correio eletrônico, toda a documentação expedida pelo Comando Geral e outros Órgãos Públicos de interesse da OBM, dando ciência ao Comandante Adjunto.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 257",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete a Seção Administrativa (SAdm):"
     },
     {
      "id": "mt-art-258",
@@ -9675,7 +9723,7 @@
      "caput": "Compete a Seção de Operações (SOp):",
      "items": [
       {
-       "text": "I - planejar, organizar e coordenar, mediante determinação do Comandante e com base nas diretrizes da DEIP, toda a instrução do Batalhão;",
+       "text": "I - planejar, organizar e coordenar, mediante determinação do Comandante e com base nas diretrizes da DEIP, toda a instrução do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
@@ -9695,7 +9743,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
-       "text": "VI - organizar as cerimônias militares, em coordenação com outros oficiais do Batalhão;",
+       "text": "VI - organizar as cerimônias militares, em coordenação com outros oficiais do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
@@ -9703,7 +9751,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
-       "text": "VIII - reunir dados que permitam ao Comandante acompanhar e avaliar o desenvolvimento da instrução do Batalhão;",
+       "text": "VIII - reunir dados que permitam ao Comandante acompanhar e avaliar o desenvolvimento da instrução do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
@@ -9715,7 +9763,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
-       "text": "b) funcionamento dos diversos cursos da UBM;",
+       "text": "b) funcionamento dos diversos cursos da OBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
@@ -9727,11 +9775,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
-       "text": "XI - aplicar o TAF periódico aos militares do Batalhão;",
+       "text": "XI - aplicar o TAF periódico aos militares do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
-       "text": "XII - coordenar as atividades dos responsáveis pelos diversos ramos de instrução, tendo em vista a produção de notas, quadros e outros elementos para a sala de instrução do Batalhão;",
+       "text": "XII - coordenar as atividades dos responsáveis pelos diversos ramos de instrução, tendo em vista a produção de notas, quadros e outros elementos para a sala de instrução do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258"
       },
       {
@@ -9765,7 +9813,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 258",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete a Seção de Operações (SOp):"
     },
     {
      "id": "mt-art-259",
@@ -9786,7 +9836,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 259"
       },
       {
-       "text": "IV - realizar a pratica de educação física para os militares do Batalhão;",
+       "text": "IV - realizar a pratica de educação física para os militares do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 259"
       },
       {
@@ -9819,7 +9869,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 260"
       },
       {
-       "text": "IV- coletar dados junto a outras UBM’s, solicitando sugestões com relação a novos procedimentos operacionais para uso de equipamentos recém adquiridos;",
+       "text": "IV- coletar dados junto a outras OBM’s, solicitando sugestões com relação a novos procedimentos operacionais para uso de equipamentos recém adquiridos;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 260"
       },
       {
@@ -9831,7 +9881,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 260"
       },
       {
-       "text": "VII- verificar necessidades do Batalhão quando a realização de cursos para o pessoal operacional junto a DEIP;",
+       "text": "VII- verificar necessidades do Grupamento quando a realização de cursos para o pessoal operacional junto a DEIP;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 260"
       },
       {
@@ -9841,7 +9891,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 260",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete ao Núcleo de Operações de Bombeiros – NOB:"
     },
     {
      "id": "mt-art-261",
@@ -9854,7 +9906,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 261"
       },
       {
-       "text": "II - manter sob seu controle o inventário analítico da carga do Batalhão, controlando as entradas e saídas de material e equipamentos, em sintonia com a BM-4;",
+       "text": "II - manter sob seu controle o inventário analítico da carga do Grupamento, controlando as entradas e saídas de material e equipamentos, em sintonia com a BM-4;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 261"
       },
       {
@@ -9870,17 +9922,19 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 261"
       },
       {
-       "text": "VI - proceder ao controle do material relacionado e de consumo do Batalhão;",
+       "text": "VI - proceder ao controle do material relacionado e de consumo do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 261"
       },
       {
-       "text": "VII - distribuir e relacionar os materiais e equipamentos carga das dependências do Batalhão, fixando-os em local visível a relação carga correspondente com o devido visto do responsável.",
+       "text": "VII - distribuir e relacionar os materiais e equipamentos carga das dependências do Grupamento, fixando-os em local visível a relação carga correspondente com o devido visto do responsável.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 261"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 261",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete a Seção de Suprimento e Manutenção (SSM):"
     }
    ],
    "alternatives": {
@@ -10622,7 +10676,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 16"
       },
       {
-       "text": "X - cumprir atividades que lhe sejam atribuídas pelo Comandante-Geral do CBMRO, na sua ausência, do Comandante-Geral Adjunto;",
+       "text": "X - cumprir atividades que lhe sejam atribuídas pelo Comandante-Geral do CBMRO, na sua ausência, do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 16"
       },
       {
@@ -10743,16 +10797,18 @@
      "id": "mt-art-18",
      "kind": "incisos",
      "editId": "reg:disciplina-correicao/mt-art-18",
-     "caput": "O Corregedor-Geral é o assessor do Comandante Geral e na ausência deste, do Comandante-Geral Adjunto, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar.",
+     "caput": "O Corregedor-Geral é o assessor do Comandante Geral e na ausência deste, do Subcomandante-Geral, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar.",
      "items": [
       {
-       "text": "Parágrafo único. No impedimento do Corregedor-Geral do Corpo de Bombeiros Militar, o Corregedor-Geral Adjunto assessorará o Comandante Geral, e na ausência deste, o Comandante-Geral Adjunto, no que couber.",
+       "text": "Parágrafo único. No impedimento do Corregedor-Geral do Corpo de Bombeiros Militar, o Corregedor-Geral Adjunto assessorará o Comandante Geral, e na ausência deste, o Subcomandante-Geral, no que couber.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 18"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 18",
      "match": "exata",
-     "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral"
+     "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
+     "adapted": true,
+     "original_caput": "O Corregedor-Geral é o assessor do Comandante Geral e na ausência deste, do Comandante-Geral Adjunto, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar."
     },
     {
      "id": "mt-art-19",
@@ -10982,7 +11038,7 @@
      "caput": "Compete a Subseção de Instrução:",
      "items": [
       {
-       "text": "I - realizar, visitas e inspeções visando fiscalizar as atividades de Polícia desenvolvida pelas UBMs;",
+       "text": "I - realizar, visitas e inspeções visando fiscalizar as atividades de Polícia desenvolvida pelas OBMs;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 25"
       },
       {
@@ -11000,7 +11056,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 25",
      "match": "exata",
-     "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral"
+     "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
+     "adapted": true,
+     "original_caput": "Compete a Subseção de Instrução:"
     },
     {
      "id": "mt-art-26",
@@ -11013,7 +11071,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 26"
       },
       {
-       "text": "II - analisar a situação disciplinar e judicial da tropa, sobre os diversos documentos de IPM enviados das UBMs, para a Corregedoria Geral do CBMRO;",
+       "text": "II - analisar a situação disciplinar e judicial da tropa, sobre os diversos documentos de IPM enviados das OBMs, para a Corregedoria Geral do CBMRO;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 26"
       },
       {
@@ -11054,7 +11112,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 27"
       },
       {
-       "text": "VI - requisitar das UBMs a abertura de feitos de Polícia Judiciária Militar ou Administrativo, a fim de se elucidar comunicações de ocorrências relatando fatos irregulares no que tange a conduta de policiais militares, estas trazidas à Corregedoria Geral por integrantes da instituição, civis ou qualquer tipo de entidade pública ou privada;",
+       "text": "VI - requisitar das OBMs a abertura de feitos de Polícia Judiciária Militar ou Administrativo, a fim de se elucidar comunicações de ocorrências relatando fatos irregulares no que tange a conduta de policiais militares, estas trazidas à Corregedoria Geral por integrantes da instituição, civis ou qualquer tipo de entidade pública ou privada;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 27"
       },
       {
@@ -11064,7 +11122,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 27",
      "match": "exata",
-     "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral"
+     "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
+     "adapted": true,
+     "original_caput": "Compete a Seção de Polícia Judiciária Militar:"
     },
     {
      "id": "mt-art-28",
@@ -12387,7 +12447,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 161"
       },
       {
-       "text": "VI - administrar o Ensino e Instrução na instituição e executá- los por meio das Unidades de Ensino ou UBM designadas;",
+       "text": "VI - administrar o Ensino e Instrução na instituição e executá- los por meio das Unidades de Ensino ou OBM designadas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 161"
       },
       {
@@ -12728,7 +12788,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 169"
       },
       {
-       "text": "II - receber documentação das UBMs referente à realização dos Cursos de Capacitação ;",
+       "text": "II - receber documentação das OBMs referente à realização dos Cursos de Capacitação ;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 169"
       },
       {
@@ -12740,7 +12800,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 169"
       },
       {
-       "text": "V - verificar o fiel cumprimento dos currículos dos cursos de capacitação nas UBMs;",
+       "text": "V - verificar o fiel cumprimento dos currículos dos cursos de capacitação nas OBMs;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 169"
       },
       {
@@ -12754,7 +12814,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 169",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)"
+     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
+     "adapted": true,
+     "original_caput": "São competências do Centro de Ensino e Instrução de Bombeiros:"
     },
     {
      "id": "mt-art-171",
@@ -15001,7 +15063,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
       },
       {
-       "text": "IV - acompanhar e coordenar os serviços de Hidrantes das UBMs;",
+       "text": "IV - acompanhar e coordenar os serviços de Hidrantes das OBMs;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
       },
       {
@@ -15023,7 +15085,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "TÍT. III, Cap. V, Seção III — DSCIP",
+     "adapted": true,
+     "original_caput": "Compete a Coordenadoria de Hidrantes – CCIP 5:"
     },
     {
      "id": "mt-art-217",
@@ -16529,11 +16593,13 @@
      "id": "mt-art-264",
      "kind": "incisos",
      "editId": "reg:disposicoes-finais/mt-art-264",
-     "caput": "As atribuições e competências das demais Unidades e Subunidades integrantes da estrutura da Diretoria Operacional aplicam-se no que couber as disposições e competências estabelecidas aos Batalhões Bombeiro Militar.",
+     "caput": "As atribuições e competências das demais Unidades e Subunidades integrantes da estrutura da Comando Operacional de Bombeiros aplicam-se no que couber as disposições e competências estabelecidas aos Batalhões Bombeiro Militar.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 264",
      "match": "exata",
-     "heading": "Disposições Finais"
+     "heading": "Disposições Finais",
+     "adapted": true,
+     "original_caput": "As atribuições e competências das demais Unidades e Subunidades integrantes da estrutura da Diretoria Operacional aplicam-se no que couber as disposições e competências estabelecidas aos Batalhões Bombeiro Militar."
     },
     {
      "id": "mt-art-265",
@@ -17468,19 +17534,21 @@
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 24"
       },
       {
-       "text": "§2.º O regime do serviço poderá sofrer alterações mediante publicação em BGO por determinação do Comandante Geral e ou pelo Diretor de Operações em virtude das necessidades do momento.",
+       "text": "§2.º O regime do serviço poderá sofrer alterações mediante publicação em BGO por determinação do Comandante Geral e ou pelo Comandante Operacional de Bombeiros em virtude das necessidades do momento.",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 24"
       }
      ],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 24",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Supervisor de Dia."
     },
     {
      "id": "se-art-25",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-25",
-     "caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Diretor Operacional do CBMRO, após publicação em Boletim Geral Ostensivo.",
+     "caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 25",
      "match": "exata",
@@ -17492,7 +17560,7 @@
      "id": "se-art-26",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-26",
-     "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pela Diretoria Operacional, através da sua Seção de Recursos Humanos.",
+     "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pela Comando Operacional de Bombeiros, através da sua Seção de Recursos Humanos.",
      "items": [
       {
        "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
@@ -17509,11 +17577,13 @@
      "id": "se-art-27",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-27",
-     "caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Diretor de Operações ser alterado.",
+     "caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Comandante Operacional de Bombeiros ser alterado.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 27",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Diretor de Operações ser alterado."
     },
     {
      "id": "se-art-28",
@@ -17534,11 +17604,13 @@
      "id": "se-art-29",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-29",
-     "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala.",
+     "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Comandante Operacional de Bombeiros a fim de ser reinserido ou inserido na respectiva escala.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 29",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala."
     },
     {
      "id": "se-art-30",
@@ -17586,7 +17658,7 @@
      "id": "se-art-33",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-33",
-     "caput": "A permuta de escala do Supervisor de Dia, só será permitida mediante autorização por escrito do Diretor Operacional do CBMRO, após publicação em Boletim Geral Ostensivo.",
+     "caput": "A permuta de escala do Supervisor de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 33",
      "match": "exata",
@@ -17598,7 +17670,7 @@
      "id": "se-art-34",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-34",
-     "caput": "O serviço diário de Supervisor de Dia ao CBMRO será coordenado pela Diretoria de Operações, através da sua Seção de Recursos Humanos.",
+     "caput": "O serviço diário de Supervisor de Dia ao CBMRO será coordenado pela Comando Operacional de Bombeiros, através da sua Seção de Recursos Humanos.",
      "items": [
       {
        "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
@@ -17630,17 +17702,19 @@
      "id": "se-art-36",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-36",
-     "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala.",
+     "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Comandante Operacional de Bombeiros a fim de ser reinserido ou inserido na respectiva escala.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 36",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala."
     },
     {
      "id": "se-art-37",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-37",
-     "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da Diretoria de Operações com antecedência mínima de 48 (quarenta e oito) horas.",
+     "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
      "items": [
       {
        "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Recursos Humanos da DO.",
@@ -17649,7 +17723,9 @@
      ],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 37",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da Diretoria de Operações com antecedência mínima de 48 (quarenta e oito) horas."
     },
     {
      "id": "se-art-38",
@@ -17712,11 +17788,13 @@
      "id": "se-art-43",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-43",
-     "caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio",
+     "caput": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM. Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 43",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio"
     },
     {
      "id": "se-art-44",
@@ -17754,11 +17832,13 @@
      "id": "se-art-47",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-47",
-     "caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Operações",
+     "caput": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM. Operações",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 47",
      "match": "exata",
-     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+     "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+     "adapted": true,
+     "original_caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Operações"
     },
     {
      "id": "se-art-48",
@@ -17784,7 +17864,7 @@
      "caput": "Todos os aspectos relacionados ao serviço de despachante ao Centro de Operações deverão observar às regras internas elaboradas pelo Gestor do CBMRO junto ao Centro de Operações, além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
      "items": [
       {
-       "text": "Parágrafo único. Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Gestor do CBMRO junto ao Centro de Operações.",
+       "text": "Parágrafo único. Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Gestor do CBMRO junto ao Centro de Operações.",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 49"
       }
      ],
@@ -17849,15 +17929,15 @@
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
       },
       {
-       "text": "III. A concessão de entrevistas relativas ao atendimento às ocorrências e operações deverão obedecer aos seguintes aspectos: a. Nas situações rotineiras, poderão ser concedidas pelo Comandante de Socorro ou Superior ou Supervisor de Dia e ou pelo militar envolvido diretamente na solução do fato ou ocorrência atendo-se, exclusivamente, aos aspectos técnicos profissionais, sendo vedada a opinião pessoal sobre: • Assuntos político-partidários, administrativos ou religiosos; • Órgãos, instituições ou entidades estranhas à Corporação; • Assuntos de competência do escalão superior; • Temas que possa estabelecer polêmicas com outras autoridades. b. Quando o assunto for complexo e, por suas circunstâncias, abrangência repercussão, for de interesse da população e da segurança de todo o Estado, será concedida através do Superior de Dia ou Assessoria de Comunicação do CBMRO e ou Diretor Operacional do CBMRO. c. Em situações que se revestirem de características técnicas específicas ou de repercussão limitada à região onde ocorreu, serão concedidas pelas Diretorias e Comandos de Grupamentos respectivos que poderão, conforme o caso, autorizar sua concessão pelos comandos subordinados. d. Sempre que necessário, buscar-se-á assessoria técnica junto à Assessoria de Comunicação do CBMRO, principalmente quando houver necessidade de se uniformizar comportamentos na transmissão de dados e opiniões de interesse da Corporação. e. O militar responsável por conceder a entrevista deverá estar devidamente uniformizado, sem agregar acessórios que não fazem parte do uniforme bombeiro militar. Ex.: óculos de sol, celulares, etc. f. É vedada a concessão de entrevista, assim como a apresentação de militares na imprensa, que não estejam uniformizados e nem à frente da ocorrência ou da operação.",
+       "text": "III. A concessão de entrevistas relativas ao atendimento às ocorrências e operações deverão obedecer aos seguintes aspectos: a. Nas situações rotineiras, poderão ser concedidas pelo Comandante de Socorro ou Superior ou Supervisor de Dia e ou pelo militar envolvido diretamente na solução do fato ou ocorrência atendo-se, exclusivamente, aos aspectos técnicos profissionais, sendo vedada a opinião pessoal sobre: • Assuntos político-partidários, administrativos ou religiosos; • Órgãos, instituições ou entidades estranhas à Corporação; • Assuntos de competência do escalão superior; • Temas que possa estabelecer polêmicas com outras autoridades. b. Quando o assunto for complexo e, por suas circunstâncias, abrangência repercussão, for de interesse da população e da segurança de todo o Estado, será concedida através do Superior de Dia ou Assessoria de Comunicação do CBMRO e ou Comandante Operacional de Bombeiros do CBMRO. c. Em situações que se revestirem de características técnicas específicas ou de repercussão limitada à região onde ocorreu, serão concedidas pelas Diretorias e Comandos de Grupamentos respectivos que poderão, conforme o caso, autorizar sua concessão pelos comandos subordinados. d. Sempre que necessário, buscar-se-á assessoria técnica junto à Assessoria de Comunicação do CBMRO, principalmente quando houver necessidade de se uniformizar comportamentos na transmissão de dados e opiniões de interesse da Corporação. e. O militar responsável por conceder a entrevista deverá estar devidamente uniformizado, sem agregar acessórios que não fazem parte do uniforme bombeiro militar. Ex.: óculos de sol, celulares, etc. f. É vedada a concessão de entrevista, assim como a apresentação de militares na imprensa, que não estejam uniformizados e nem à frente da ocorrência ou da operação.",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
       },
       {
-       "text": "IV. Em situações de crise ocasionadas por acontecimentos inesperados que interfiram na rotina da organização produzindo algum tipo de ameaça à vida, à saúde, à segurança ou à imagem da Instituição as entrevistas deverão ser concedidas pelo Comandante Geral ou Sub Comandante Geral e ou Diretor de Operações.",
+       "text": "IV. Em situações de crise ocasionadas por acontecimentos inesperados que interfiram na rotina da organização produzindo algum tipo de ameaça à vida, à saúde, à segurança ou à imagem da Instituição as entrevistas deverão ser concedidas pelo Comandante Geral ou Sub Comandante Geral e ou Comandante Operacional de Bombeiros.",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
       },
       {
-       "text": "V. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia e ou o Diretor de Operações. Folga em Ocorrência",
+       "text": "V. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia e ou o Comandante Operacional de Bombeiros. Folga em Ocorrência",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
       }
      ],
@@ -17945,7 +18025,7 @@
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
       },
       {
-       "text": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia ou o Comandante da OB M e/ou o Diretor Operacional.",
+       "text": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia ou o Comandante da OB M e/ou o Comandante Operacional de Bombeiros.",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
       }
      ],
@@ -19243,13 +19323,15 @@
      "caput": "Fica estabelecido o seguinte quadro de atividades diárias para o serviço operacional em todas as OBM: 05h30min Alvorada 06h00min Café 06h30min Faxina/Limpeza nas Viaturas, Equipamentos e Instalações 07h15min Toque de Parada 07h30min Parada Diária 07h40min Conferência de Material 08h00min Hasteamento do pavilhão nacional 09h30min Instrução de Prontidão 11h30min Almoço 18h00min Arreamento do pavilhão nacional 18h30min Jantar 22h00min Silêncio",
      "items": [
       {
-       "text": "Parágrafo único. O Quadro acima poderá ser modificado, a critério do Cmt de OBM em conjunto com o Diretor Operacional a depender das especificidades da sua de área de atuação.",
+       "text": "Parágrafo único. O Quadro acima poderá ser modificado, a critério do Cmt de OBM em conjunto com o Comandante Operacional de Bombeiros a depender das especificidades da sua de área de atuação.",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 54"
       }
      ],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 54",
      "match": "exata",
-     "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+     "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+     "adapted": true,
+     "original_caput": "Fica estabelecido o seguinte quadro de atividades diárias para o serviço operacional em todas as OBM: 05h30min Alvorada 06h00min Café 06h30min Faxina/Limpeza nas Viaturas, Equipamentos e Instalações 07h15min Toque de Parada 07h30min Parada Diária 07h40min Conferência de Material 08h00min Hasteamento do pavilhão nacional 09h30min Instrução de Prontidão 11h30min Almoço 18h00min Arreamento do pavilhão nacional 18h30min Jantar 22h00min Silêncio"
     },
     {
      "id": "se-art-55",
@@ -19737,7 +19819,7 @@
      "id": "se-art-100",
      "kind": "incisos",
      "editId": "reg:servico-interno-dia/se-art-100",
-     "caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante Geral, Subcomandante ou Diretor de Operações do CBMRO.",
+     "caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante Geral, Subcomandante ou Comandante Operacional de Bombeiros do CBMRO.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 100",
      "match": "exata",
@@ -19749,11 +19831,13 @@
      "id": "se-art-101",
      "kind": "incisos",
      "editId": "reg:servico-interno-dia/se-art-101",
-     "caput": "O empréstimo de material operacional entre OBM da Corporação somente deverá ocorrer com autorização do Comandante da OBM responsável pelo referido material, dando ciência a Diretoria Operacional.",
+     "caput": "O empréstimo de material operacional entre OBM da Corporação somente deverá ocorrer com autorização do Comandante da OBM responsável pelo referido material, dando ciência a Comando Operacional de Bombeiros.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 101",
      "match": "exata",
-     "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+     "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+     "adapted": true,
+     "original_caput": "O empréstimo de material operacional entre OBM da Corporação somente deverá ocorrer com autorização do Comandante da OBM responsável pelo referido material, dando ciência a Diretoria Operacional."
     },
     {
      "id": "se-art-102",
@@ -20757,7 +20841,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 123"
       },
       {
-       "text": "VIII - delegar atribuições de sua competência, as tesourarias das UBMs;",
+       "text": "VIII - delegar atribuições de sua competência, as tesourarias das OBMs;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 123"
       },
       {
@@ -20775,7 +20859,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 123",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "Compete ao Coordenador de Planejamento, Orçamento e Finanças:"
     },
     {
      "id": "mt-art-137",
@@ -20918,7 +21004,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       },
       {
-       "text": "IX - providenciar a publicação dos despachos do e ordens emanadas pelo Comandante Geral, Comandante Geral Adjunto, pelas Diretorias e da própria Ajudância Geral, bem como assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico;",
+       "text": "IX - providenciar a publicação dos despachos do e ordens emanadas pelo Comandante Geral, Subcomandante-Geral, pelas Diretorias e da própria Ajudância Geral, bem como assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       },
       {
@@ -20926,7 +21012,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       },
       {
-       "text": "XI - exercer outros encargos que lhe forem atribuídos pelo Comandante Geral e/ou pelo Comandante Geral Adjunto.",
+       "text": "XI - exercer outros encargos que lhe forem atribuídos pelo Comandante Geral e/ou pelo Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       },
       {
@@ -20934,17 +21020,19 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       },
       {
-       "text": "XIII - estar em condições de informar ao Comandante Geral Adjunto sobre o estado moral e o disciplinar da tropa;",
+       "text": "XIII - estar em condições de informar ao Subcomandante-Geral sobre o estado moral e o disciplinar da tropa;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       },
       {
-       "text": "XIV - assessorar o Comandante Geral Adjunto quanto às providências decorrentes de falecimento de integrantes da Unidade, em serviço ou não;",
+       "text": "XIV - assessorar o Subcomandante-Geral quanto às providências decorrentes de falecimento de integrantes da Unidade, em serviço ou não;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "Compete ao Coordenador da Ajudância Geral:"
     },
     {
      "id": "mt-art-163",
@@ -21512,11 +21600,11 @@
      "caput": "Compete ao Chefe de Gabinete do Comandante- Geral Adjunto:",
      "items": [
       {
-       "text": "I - controlar e coordenar todos os expedientes administrativos do Comandante-Geral Adjunto;",
+       "text": "I - controlar e coordenar todos os expedientes administrativos do Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 225"
       },
       {
-       "text": "II - assistir ao Comandante-Geral Adjunto na tomada de decisões em assuntos de natureza técnica e administrativa;",
+       "text": "II - assistir ao Subcomandante-Geral na tomada de decisões em assuntos de natureza técnica e administrativa;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 225"
       },
       {
@@ -21528,13 +21616,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 225"
       },
       {
-       "text": "V - exercer outras competências que lhe forem determinadas pelo Comandante-Geral Adjunto.",
+       "text": "V - exercer outras competências que lhe forem determinadas pelo Subcomandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 225"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 225",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+     "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+     "adapted": true,
+     "original_caput": "Compete ao Chefe de Gabinete do Comandante- Geral Adjunto:"
     },
     {
      "id": "mt-art-230",
@@ -21589,7 +21679,7 @@
      "id": "mt-art-238",
      "kind": "incisos",
      "editId": "reg:atribuicoes-funcoes/mt-art-238",
-     "caput": "Compete ao Diretor Operacional:",
+     "caput": "Compete ao Comandante Operacional de Bombeiros:",
      "items": [
       {
        "text": "I - assessorar o Comandante-Geral e colaborar com outros órgãos do Estado em assuntos da competência da Diretoria;",
@@ -21620,11 +21710,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 238"
       },
       {
-       "text": "VIII – homologar as prestações de contas dos Comandos Regionais e validar as de UBMs e Sub-Unidades;",
+       "text": "VIII – homologar as prestações de contas dos Comandos Operacionais de Bombeiros e validar as de OBMs e Sub-Unidades;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 238"
       },
       {
-       "text": "IX – apreciar e recomendar a aprovação das Normas Gerais de Ação (NGA), dos Comandos Regionais, das UBMs e Subunidades, ao Comandante-Geral.",
+       "text": "IX – apreciar e recomendar a aprovação das Normas Gerais de Ação (NGA), dos Comandos Operacionais de Bombeiros, das OBMs e Subunidades, ao Comandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 238"
       },
       {
@@ -21638,7 +21728,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 238",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete ao Diretor Operacional:"
     },
     {
      "id": "mt-art-239",
@@ -21647,7 +21739,7 @@
      "caput": "Compete ao Diretor Adjunto Operacional:",
      "items": [
       {
-       "text": "I – substituir o Diretor Operacional nos seus impedimentos;",
+       "text": "I – substituir o Comandante Operacional de Bombeiros nos seus impedimentos;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 239"
       },
       {
@@ -21655,7 +21747,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 239"
       },
       {
-       "text": "III – assessorar o Diretor Operacional nos assuntos pertinentes à Diretoria;",
+       "text": "III – assessorar o Comandante Operacional de Bombeiros nos assuntos pertinentes à Diretoria;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 239"
       },
       {
@@ -21669,20 +21761,22 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 239",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete ao Diretor Adjunto Operacional:"
     },
     {
      "id": "mt-art-250",
      "kind": "incisos",
      "editId": "reg:atribuicoes-funcoes/mt-art-250",
-     "caput": "Compete aos Comandantes Regionais:",
+     "caput": "Compete aos Comandantes Operacionais de Bombeiros:",
      "items": [
       {
        "text": "I - zelar para que as Organizações Bombeiro Militares subordinadas cumpram fielmente todas as disposições regulamentares, e exista entre elas a maior coesão e uniformidade, de modo a ser mantido o indispensável adestramento do emprego operacional e administrativo;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "II - cumprir e fazer cumprir em sua área de atuação, às diretrizes, os planos e ordens emanadas do Comandante- Geral, do Comandante-Geral Adjunto e do Diretor Operacional;",
+       "text": "II - cumprir e fazer cumprir em sua área de atuação, às diretrizes, os planos e ordens emanadas do Comandante- Geral, do Subcomandante-Geral e do Comandante Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
@@ -21690,7 +21784,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "IV - propor ao Diretor Operacional, planos de articulação em sua área de circunscrição;",
+       "text": "IV - propor ao Comandante Operacional de Bombeiros, planos de articulação em sua área de circunscrição;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
@@ -21698,15 +21792,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "VI - solicitar apoio ou reforço de pessoal e material ao Diretor Operacional, quando necessário, a fim de atender as Organizações Bombeiro Militar diretamente subordinadas;",
+       "text": "VI - solicitar apoio ou reforço de pessoal e material ao Comandante Operacional de Bombeiros, quando necessário, a fim de atender as Organizações Bombeiro Militar diretamente subordinadas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "VII - informar ao Diretor Operacional, as principais ocorrências em sua área de circunscrição e na impossibilidade ao Comandante-Geral Adjunto ou o Comandante-Geral;",
+       "text": "VII - informar ao Comandante Operacional de Bombeiros, as principais ocorrências em sua área de circunscrição e na impossibilidade ao Subcomandante-Geral ou o Comandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "VIII - propor ao Diretor Operacional, as movimentações de oficiais e praças de sua circunscrição, quando julgar necessário;",
+       "text": "VIII - propor ao Comandante Operacional de Bombeiros, as movimentações de oficiais e praças de sua circunscrição, quando julgar necessário;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
@@ -21722,7 +21816,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "XII - elaborar nota, para publicação em Boletim Geral Eletrônico de suas ordens e de fatos que os órgãos subordinados ao Comando de Regional que devam tomar conhecimento;",
+       "text": "XII - elaborar nota, para publicação em Boletim Geral Eletrônico de suas ordens e de fatos que os órgãos subordinados ao Comando Operacional de Bombeiros que devam tomar conhecimento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
@@ -21730,15 +21824,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "XIV – apreciar e recomendar a aprovação das Normas Gerais de Ação (NGA), das UBMs e Subunidades subordinadas ao Diretor Operacional, que as submetera à aprovação do Comandante-Geral.",
+       "text": "XIV – apreciar e recomendar a aprovação das Normas Gerais de Ação (NGA), das OBMs e Subunidades subordinadas ao Comandante Operacional de Bombeiros, que as submetera à aprovação do Comandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "XV – propor Normas Gerais de Ação (NGA) do Comando Regional ao Diretor Operacional, que as submetera à aprovação do Comandante-Geral.",
+       "text": "XV – propor Normas Gerais de Ação (NGA) do Comando Operacional de Bombeiros ao Comandante Operacional de Bombeiros, que as submetera à aprovação do Comandante-Geral.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "XVI - exercer outros encargos que lhe forem atribuídos pelo Diretor Operacional, pelo Comandante-Geral ou pelo Comandante-Geral Adjunto;",
+       "text": "XVI - exercer outros encargos que lhe forem atribuídos pelo Comandante Operacional de Bombeiros, pelo Comandante-Geral ou pelo Subcomandante-Geral;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
@@ -21746,26 +21840,28 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "XVIII - auxiliar o Diretor Operacional, na busca de meios que possam melhor estruturar a prestação de serviço;",
+       "text": "XVIII - auxiliar o Comandante Operacional de Bombeiros, na busca de meios que possam melhor estruturar a prestação de serviço;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       },
       {
-       "text": "XIX – homologar as prestações de contas das UBMs e Subunidades subordinadas e encaminhar ao Diretor Operacional.",
+       "text": "XIX – homologar as prestações de contas das OBMs e Subunidades subordinadas e encaminhar ao Comandante Operacional de Bombeiros.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 250",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete aos Comandantes Regionais:"
     },
     {
      "id": "mt-art-251",
      "kind": "incisos",
      "editId": "reg:atribuicoes-funcoes/mt-art-251",
-     "caput": "Compete aos Comandantes Regionais Adjuntos:",
+     "caput": "Compete aos Comandantes Operacionais de Bombeiros Adjuntos:",
      "items": [
       {
-       "text": "I - auxiliar o Comandante a dirigir, organizar, orientar, controlar e coordenar as atividades do Comando Regional;",
+       "text": "I - auxiliar o Comandante a dirigir, organizar, orientar, controlar e coordenar as atividades do Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 251"
       },
       {
@@ -21777,11 +21873,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 251"
       },
       {
-       "text": "IV - autorizar a expedição de certificados e atestados relativos ao Comando Regional;",
+       "text": "IV - autorizar a expedição de certificados e atestados relativos ao Comando Operacional de Bombeiros;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 251"
       },
       {
-       "text": "V - participar e promover reuniões de coordenadorias no âmbito da Comando Regional ou entre outras unidades, em assuntos que envolvam articulação intersetorial;",
+       "text": "V - participar e promover reuniões de coordenadorias no âmbito da Comando Operacional de Bombeiros ou entre outras unidades, em assuntos que envolvam articulação intersetorial;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 251"
       },
       {
@@ -21795,7 +21891,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 251",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete aos Comandantes Regionais Adjuntos:"
     },
     {
      "id": "mt-art-255",
@@ -21924,7 +22022,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 255"
       },
       {
-       "text": "XXX - designar Oficiais, praças e servidores civis para os cargos e funções da unidade, de acordo com as prescrições em vigor, em conformidade com o Quadro de Organização da UBM;",
+       "text": "XXX - designar Oficiais, praças e servidores civis para os cargos e funções da unidade, de acordo com as prescrições em vigor, em conformidade com o Quadro de Organização da OBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 255"
       },
       {
@@ -21962,7 +22060,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 255",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete aos Comandantes de Batalhões:"
     },
     {
      "id": "mt-art-256",
@@ -21987,11 +22087,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
-       "text": "V - zelar assiduamente pela conduta civil e militar dos oficiais e das praças do Batalhão;",
+       "text": "V - zelar assiduamente pela conduta civil e militar dos oficiais e das praças do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
-       "text": "VI - escalar os oficiais e praças que fornecerão pessoal para os serviços gerais e extraordinários do Batalhão;",
+       "text": "VI - escalar os oficiais e praças que fornecerão pessoal para os serviços gerais e extraordinários do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
@@ -21999,15 +22099,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
-       "text": "VIII - autenticar todos os livros existentes no Batalhão, salvo os de atribuição do Comandante, dos serviços administrativos ou os relativos à instrução;",
+       "text": "VIII - autenticar todos os livros existentes no Grupamento, salvo os de atribuição do Comandante, dos serviços administrativos ou os relativos à instrução;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
-       "text": "IX – supervisionar a organização de documentos, informações, bem como as ordens e instruções do Comandante que importem em coordenação de assuntos referentes a mais de uma seção do Batalhão;",
+       "text": "IX – supervisionar a organização de documentos, informações, bem como as ordens e instruções do Comandante que importem em coordenação de assuntos referentes a mais de uma seção do Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
-       "text": "X - exercer rigorosa supervisão das normas de controle do armamento adotadas pelo Batalhão;",
+       "text": "X - exercer rigorosa supervisão das normas de controle do armamento adotadas pelo Grupamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256"
       },
       {
@@ -22017,28 +22117,30 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 256",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete ao Comandante Adjunto dos Batalhões:"
     },
     {
      "id": "mt-art-262",
      "kind": "incisos",
      "editId": "reg:atribuicoes-funcoes/mt-art-262",
-     "caput": "Compete aos Comandantes das Companhias de Bombeiro Militar – CiaBM:",
+     "caput": "Compete aos Comandantes das Subgrupamentos de Bombeiros Militar – SGBM:",
      "items": [
       {
        "text": "I - educar militarmente seus comandados, orientando-os no sentido da compenetração do dever, inspirando-se sempre na justiça, tanto para punir, como para recompensar;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "II - procurar desenvolver, entre todos seus comandados, o sentimento do dever e o devotamento ao serviço Bombeiro Militar, direcionando os melhores esforços para a preparação da CiaBM para o seu emprego operacional;",
+       "text": "II - procurar desenvolver, entre todos seus comandados, o sentimento do dever e o devotamento ao serviço Bombeiro Militar, direcionando os melhores esforços para a preparação da SGBM para o seu emprego operacional;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "III - considerar a CiaBM como uma família, de que deve ser o chefe enérgico e justo e interessar-se para que, a todos os seus membros, se faça inteira justiça;",
+       "text": "III - considerar a SGBM como uma família, de que deve ser o chefe enérgico e justo e interessar-se para que, a todos os seus membros, se faça inteira justiça;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "IV - empenhar-se para que sua CiaBM apresente-se de maneira impecável em qualquer ato;",
+       "text": "IV - empenhar-se para que sua SGBM apresente-se de maneira impecável em qualquer ato;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22046,7 +22148,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "VI - administrar a CiaBM, zelando pelo conforto e pelo bem estar de suas praças;",
+       "text": "VI - administrar a SGBM, zelando pelo conforto e pelo bem estar de suas praças;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22062,11 +22164,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "X - encaminhar, pelos trâmites regulamentares, ao Comando do Batalhão, os documentos comprovantes do estado de casado ou de arrimo de seus comandados, para a publicação em BGE e providências decorrentes;",
+       "text": "X - encaminhar, pelos trâmites regulamentares, ao Comando do Grupamento, os documentos comprovantes do estado de casado ou de arrimo de seus comandados, para a publicação em BGE e providências decorrentes;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XI - organizar e manter em dia uma relação nominal de todas as praças da CiaBM, com os respectivos endereços e com nomes e endereços de suas famílias ou de pessoas por elas mais diretamente interessadas, para efeito do plano de chamada e de comunicações importantes;",
+       "text": "XI - organizar e manter em dia uma relação nominal de todas as praças da SGBM, com os respectivos endereços e com nomes e endereços de suas famílias ou de pessoas por elas mais diretamente interessadas, para efeito do plano de chamada e de comunicações importantes;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22074,7 +22176,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XIII - destacar, perante a CiaBM em forma, os atos meritórios de seus comandados, que possam servir de exemplo, quer tenham sido ou não publicados em BGE;",
+       "text": "XIII - destacar, perante a SGBM em forma, os atos meritórios de seus comandados, que possam servir de exemplo, quer tenham sido ou não publicados em BGE;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22086,11 +22188,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XVI - zelar pela conservação do material distribuído à CiaBM e providenciar, de acordo com as disposições vigentes, as reparações e substituições necessárias;",
+       "text": "XVI - zelar pela conservação do material distribuído à SGBM e providenciar, de acordo com as disposições vigentes, as reparações e substituições necessárias;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XVII - exigir a fiel obediência, por todos os integrantes da CiaBM, às prescrições ou normas gerais de prevenção de acidentes na instrução e em outras atividades de risco, reguladas em planos de instrução e em manuais específicos, verificando as condições de segurança nas diversas seções, dependências e atividades da CiaBM;",
+       "text": "XVII - exigir a fiel obediência, por todos os integrantes da SGBM, às prescrições ou normas gerais de prevenção de acidentes na instrução e em outras atividades de risco, reguladas em planos de instrução e em manuais específicos, verificando as condições de segurança nas diversas seções, dependências e atividades da SGBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22098,7 +22200,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XIX - realizar, semanalmente, inspeção para determinar as condições das viaturas da CiaBM e assegurar, de acordo com as instruções da Manutenção de Viaturas do CBMRO, a manutenção preventiva;",
+       "text": "XIX - realizar, semanalmente, inspeção para determinar as condições das viaturas da SGBM e assegurar, de acordo com as instruções da Manutenção de Viaturas do CBMRO, a manutenção preventiva;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22138,31 +22240,31 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXIII- escalar o serviço normal da CiaBM e/ou outro que for determinado;",
+       "text": "XXIII- escalar o serviço normal da SGBM e/ou outro que for determinado;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXIV – permitir, em caráter excepcional, a troca de serviço de escala às praças da CiaBM e, somente antes de iniciado o serviço, a das que devam ficar sob as ordens de outra CiaBM;",
+       "text": "XXIV – permitir, em caráter excepcional, a troca de serviço de escala às praças da SGBM e, somente antes de iniciado o serviço, a das que devam ficar sob as ordens de outra SGBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXV - participar ao Comandante do Batalhão as ocorrências havidas na CiaBM, cujas providências escapem às suas atribuições, assim como as que, pela importância, convenha levar ao conhecimento do primeiro, embora sobre estas tenha providenciado;",
+       "text": "XXV - participar ao Comandante do Grupamento as ocorrências havidas na SGBM, cujas providências escapem às suas atribuições, assim como as que, pela importância, convenha levar ao conhecimento do primeiro, embora sobre estas tenha providenciado;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXVI - manter a ordem e a disciplina em sua CiaBM, assegurando permanente serviço de guarda aos alojamentos e demais dependências; quando tiver efetivo possível para fazê-lo;",
+       "text": "XXVI - manter a ordem e a disciplina em sua SGBM, assegurando permanente serviço de guarda aos alojamentos e demais dependências; quando tiver efetivo possível para fazê-lo;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXVII - providenciar o arranchamento e o desarranchamento das praças da CiaBM, de acordo com as normas vigentes;",
+       "text": "XXVII - providenciar o arranchamento e o desarranchamento das praças da SGBM, de acordo com as normas vigentes;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXVIII - solicitar providências, com a necessária antecedência, para a alimentação da CiaBM, quando esta deva permanecer, em serviço ou instrução, em lugar distante do quartel, bem como para o fornecimento dos indispensáveis recursos médicos de urgência;",
+       "text": "XXVIII - solicitar providências, com a necessária antecedência, para a alimentação da SGBM, quando esta deva permanecer, em serviço ou instrução, em lugar distante do quartel, bem como para o fornecimento dos indispensáveis recursos médicos de urgência;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
-       "text": "XXIV - verificar, sempre que julgar conveniente e, pelo menos semestralmente, a existência e o estado do material da carga da CiaBM e tornar efetiva a responsabilidade dos seus detentores pelas faltas ou irregularidades encontradas;",
+       "text": "XXIV - verificar, sempre que julgar conveniente e, pelo menos semestralmente, a existência e o estado do material da carga da SGBM e tornar efetiva a responsabilidade dos seus detentores pelas faltas ou irregularidades encontradas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
       },
       {
@@ -22183,11 +22285,11 @@
      "caput": "Compete aos Comandantes de Pelotões Bombeiro Militar – PelBM:",
      "items": [
       {
-       "text": "I - manter-se sempre a par das instruções e ordens do Comandante da CiaBM, a fim de secundar-lhe os esforços e tornar-se apto a substituí-lo, eventualmente, sem solução de continuidade;",
+       "text": "I - manter-se sempre a par das instruções e ordens do Comandante da SGBM, a fim de secundar-lhe os esforços e tornar-se apto a substituí-lo, eventualmente, sem solução de continuidade;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "II - estudar, quando mensalmente escalado auxiliar em administração e disciplina da CiaBM, todas as questões que tenham de ser resolvidas pelo seu comandante e submeter- lhe a solução que daria, citando as disposições regulamentares que o orientaram;",
+       "text": "II - estudar, quando mensalmente escalado auxiliar em administração e disciplina da SGBM, todas as questões que tenham de ser resolvidas pelo seu comandante e submeter- lhe a solução que daria, citando as disposições regulamentares que o orientaram;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
@@ -22195,11 +22297,11 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "IV - cumprir com esmero as ordens do Comandante d a CiaBM, sem prejuízo da iniciativa própria, que lhe cabe usar no desempenho de suas atribuições;",
+       "text": "IV - cumprir com esmero as ordens do Comandante d a SGBM, sem prejuízo da iniciativa própria, que lhe cabe usar no desempenho de suas atribuições;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "V - ter pleno conhecimento das disposições regulamentares em vigor e das ordens e instruções particulares do Comandante do Batalhão e do Comandante da CiaBM;",
+       "text": "V - ter pleno conhecimento das disposições regulamentares em vigor e das ordens e instruções particulares do Comandante do Grupamento e do Comandante da SGBM;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
@@ -22207,7 +22309,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "VII - responder, por ordem de antiguidade, pelo comando da CiaBM, tomando, quando necessário, qualquer providência de caráter urgente;",
+       "text": "VII - responder, por ordem de antiguidade, pelo comando da SGBM, tomando, quando necessário, qualquer providência de caráter urgente;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
@@ -22227,15 +22329,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "XII - solicitar ao Comandante da CiaBM o material necessário à limpeza e à conservação de armamento, equipamento, arreamento e viaturas a seu cargo;",
+       "text": "XII - solicitar ao Comandante da SGBM o material necessário à limpeza e à conservação de armamento, equipamento, arreamento e viaturas a seu cargo;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "XIII - participar, por escrito, ao Comandante da CiaBM, os extravios de objetos distribuídos às suas praças ou à sua fração, indicando os responsáveis, se houver;",
+       "text": "XIII - participar, por escrito, ao Comandante da SGBM, os extravios de objetos distribuídos às suas praças ou à sua fração, indicando os responsáveis, se houver;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "XIV - zelar pela correta apresentação de seus homens e passar sua fração em rigorosa revista, antes de incorporá-lo à CiaBM nas formaturas;",
+       "text": "XIV - zelar pela correta apresentação de seus homens e passar sua fração em rigorosa revista, antes de incorporá-lo à SGBM nas formaturas;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
@@ -22247,21 +22349,23 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "XVII - entender-se com as autoridades superiores da unidade, em objeto de serviço, somente por intermédio do Comandante da CiaBM ou por ordem deste, salvo no desempenho de serviço sujeito diretamente a autoridade superior;",
+       "text": "XVII - entender-se com as autoridades superiores da unidade, em objeto de serviço, somente por intermédio do Comandante da SGBM ou por ordem deste, salvo no desempenho de serviço sujeito diretamente a autoridade superior;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "XVIII - apresentar-se ao Comandante da CiaBM logo que este chegue ao quartel, ou assim que os seus afazeres o permitam;",
+       "text": "XVIII - apresentar-se ao Comandante da SGBM logo que este chegue ao quartel, ou assim que os seus afazeres o permitam;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       },
       {
-       "text": "XIX - conhecer, individual e perfeitamente bem, todas as praças de sua fração, não só para obter o máximo resultado na instrução, como para bem assessorar o Comandante da CiaBM.",
+       "text": "XIX - conhecer, individual e perfeitamente bem, todas as praças de sua fração, não só para obter o máximo resultado na instrução, como para bem assessorar o Comandante da SGBM.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 263",
      "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
+     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
+     "adapted": true,
+     "original_caput": "Compete aos Comandantes de Pelotões Bombeiro Militar – PelBM:"
     }
    ],
    "alternatives": {

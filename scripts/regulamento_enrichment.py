@@ -140,6 +140,68 @@ ADAPTATIONS = [
     # codificada texto a texto (pendência de redação — ver handoff 2026-08-13).
     # "CICOM" só ocorre no arquivo da Bahia, então não vaza para outros capítulos.
     ("CICOM", "CIOP"),
+    # ── ESTRUTURA ORGANIZACIONAL (2026-08-13) ────────────────────────────────────────
+    # Até aqui a tabela só trocava NOME DE ESTADO. A curadoria, porém, importou junto a
+    # ESTRUTURA de MT/SE/BA: a minuta descrevia o organograma daqueles CBMs com o nome do
+    # CBMRO. As regras abaixo corrigem os órgãos cuja correspondência em Rondônia é
+    # INEQUÍVOCA na lei — conferidas contra a Lei 2.204/2009, o Decreto 21.425/2016 e o
+    # organograma oficial do CBMRO, validadas pelo Ten. Tiago.
+    # O que depende de decisão de mérito (Pelotão, capítulo da CAT, CIOP/COB, funções da
+    # NOp da Bahia) fica DE FORA de propósito — ver .claude/PENDENCIAS.md.
+    #
+    # ⚠️ NÃO acrescentar aqui uma regra para a palavra solta "Companhia": em
+    # servico-operacional as 4 ocorrências são CONCESSIONÁRIAS (energia, água, elevador,
+    # seguradora) e "Companhia de Comando e Serviços" EXISTE em RO (LOB Art. 25). Só
+    # entram as formas que trazem "Bombeiro Militar" ou a sigla. Armadilha AR-01.
+    #
+    # Comando operacional — RO NÃO tem Comando Regional/CRBM (nome do MT). Tem COB I
+    # (Porto Velho) e COB II (Ji-Paraná), subordinados operacionalmente ao
+    # Subcomandante-Geral (LOB Art. 35 + organograma). "Diretoria Operacional" é o nome
+    # do MT para o mesmo órgão. Plurais e variantes antes das formas curtas.
+    ("Comandantes Regionais Adjuntos", "Comandantes Operacionais de Bombeiros Adjuntos"),
+    ("Comandante Regional Adjunto", "Comandante Operacional de Bombeiros Adjunto"),
+    ("Comandantes Regionais", "Comandantes Operacionais de Bombeiros"),
+    ("Comandante Regional", "Comandante Operacional de Bombeiros"),
+    ("Comandos Regionais Bombeiro Militar", "Comandos Operacionais de Bombeiros"),
+    ("Comando Regionais Bombeiro Militar", "Comandos Operacionais de Bombeiros"),
+    ("Comandos Regionais de Bombeiros Militares", "Comandos Operacionais de Bombeiros"),
+    ("Comandos Regionais do Corpo de Bombeiros", "Comandos Operacionais de Bombeiros"),
+    ("Comandos Regionais", "Comandos Operacionais de Bombeiros"),
+    ("Comando de Regional", "Comando Operacional de Bombeiros"),
+    ("Comando Regional", "Comando Operacional de Bombeiros"),
+    ("CRBM", "COB"),
+    ("Diretoria de Operacional", "Comando Operacional de Bombeiros"),
+    ("Diretoria Operacional", "Comando Operacional de Bombeiros"),
+    ("Diretor Operacional", "Comandante Operacional de Bombeiros"),
+    ("Diretoria de Operações", "Comando Operacional de Bombeiros"),
+    ("Diretor de Operações", "Comandante Operacional de Bombeiros"),
+    # Unidades — a cadeia do CBMRO é COB → GBM → SGBM (LOB Art. 47 e §1º; organograma).
+    # "Batalhão"/"Companhia BM" são os degraus do MT. O degrau abaixo do SGBM na lei é
+    # "Seção de Bombeiros" (Art. 47, V), mas "Pelotão" NÃO é convertido aqui: a cadeia
+    # confirmada pelo Ten. Tiago para o CBMRO para no SGBM, e inventar o 4º nível seria
+    # repetir o erro que esta rodada corrige. Pendência registrada.
+    ("Batalhão Bombeiro Militar (BBM)", "Grupamento de Bombeiro Militar (GBM)"),
+    ("Companhias Independente Bombeiro Militar - CIBM", "Subgrupamentos de Bombeiros Militar - SGBM"),
+    ("Companhia Independente Bombeiro Militar (CIBM)", "Subgrupamento de Bombeiros Militar (SGBM)"),
+    ("Companhias de Bombeiro Militar – CiaBM", "Subgrupamentos de Bombeiros Militar – SGBM"),
+    ("Companhias Bombeiro Militar- CiaBM", "Subgrupamentos de Bombeiros Militar - SGBM"),
+    ("CiaBM", "SGBM"),
+    ("Batalhão", "Grupamento"),
+    # A lei de RO diz OBM (Organização Bombeiro Militar, Art. 3º e Art. 60); "UBM"
+    # (Unidade Bombeiro Militar) é o termo do MT. Conferido: "UBM" nunca aparece dentro
+    # de outra palavra, então a troca não colide (a forma plural "UBMs" segue junto).
+    ("UBM", "OBM"),
+    # RO não tem "Comandante-Geral Adjunto": tem SUBCOMANDANTE-GERAL (LOB Art. 12),
+    # que é o substituto eventual do Comandante-Geral — exatamente a função que o texto
+    # do MT descreve. Confirmado no organograma oficial.
+    # As duas grafias aparecem na fonte (com e sem hífen) — a segunda escapou na
+    # primeira rodada desta correção.
+    ("Comandante-Geral Adjunto", "Subcomandante-Geral"),
+    ("Comandante Geral Adjunto", "Subcomandante-Geral"),
+    # Vazamento clássico: a adaptação trocou "Mato Grosso"→"Rondônia" mas deixou a SIGLA
+    # do estado de origem, produzindo "Secretaria ... do Estado de Rondônia (SSP/MT)".
+    # A pasta em RO é a SESDEC (LOB Art. 1º, par. único).
+    ("SSP/MT", "SESDEC"),
     ("CBMMT", "CBMRO"),
     ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
