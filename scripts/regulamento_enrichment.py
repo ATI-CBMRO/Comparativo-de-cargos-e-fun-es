@@ -175,6 +175,11 @@ ADAPTATIONS = [
     ("Diretor Operacional", "Comandante Operacional de Bombeiros"),
     ("Diretoria de Operações", "Comando Operacional de Bombeiros"),
     ("Diretor de Operações", "Comandante Operacional de Bombeiros"),
+    # A Bahia (fonte do capítulo 193) chama o mesmo órgão de "Comando de Operações de
+    # Bombeiros Militares"; em RO a lei o nomeia "Comando Operacional de Bombeiro
+    # Militar" (LOB Art. 34, par. único, I, e Art. 35).
+    ("Comando de Operações de Bombeiros Militares", "Comando Operacional de Bombeiros"),
+    ("Comandante de Operações de Bombeiros Militares", "Comandante Operacional de Bombeiros"),
     # Unidades — a cadeia do CBMRO é COB → GBM → SGBM (LOB Art. 47 e §1º; organograma).
     # "Batalhão"/"Companhia BM" são os degraus do MT. O degrau abaixo do SGBM na lei é
     # "Seção de Bombeiros" (Art. 47, V), mas "Pelotão" NÃO é convertido aqui: a cadeia
