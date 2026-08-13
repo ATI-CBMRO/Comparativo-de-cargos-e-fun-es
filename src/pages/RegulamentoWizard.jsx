@@ -88,6 +88,11 @@ export default function RegulamentoWizard() {
 
   const { cenario } = useScenario()
   const { user } = useAuth()
+  // Somente leitura para quem não é administrador (determinação do Wândrio, 2026-08-13):
+  // não-admin só interage na Revisão. A edição daqui nunca foi gravada em lugar nenhum
+  // (estado local do React), mas alimenta o .docx exportado — sem esta trava, um
+  // participante levaria da reunião uma versão paralela alterada por ele.
+  const podeEditar = user?.role === 'admin'
   const [finals, setFinals] = useState(null)
 
   const [finalsErro, setFinalsErro] = useState(false)
@@ -158,6 +163,7 @@ export default function RegulamentoWizard() {
   }
 
   function openAdvanced(editId) {
+    if (!podeEditar) return
     setEdits(prev => prev[editId] != null ? prev : { ...prev, [editId]: leafIndex[editId]?.proposedText ?? '' })
     setAdvanced(prev => new Set(prev).add(editId))
   }
@@ -303,11 +309,13 @@ export default function RegulamentoWizard() {
             borderRadius: 5, background: '#d9f0e2', color: '#0c6b35', fontSize: 11, fontWeight: 600,
           }}><Check size={11} /> final aplicado</span>
         )}
+        {podeEditar && (
         <button onClick={() => openAdvanced(art.editId)} title="Editar texto desta seção" style={{
           flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
           border: '1px solid var(--border-card)', borderRadius: 5, background: '#fff', cursor: 'pointer',
           fontSize: 12, color: 'var(--text-muted)',
         }}><Pencil size={12} /> editar</button>
+        )}
       </div>,
     )
 
@@ -315,18 +323,19 @@ export default function RegulamentoWizard() {
       blocks.push(
         <label key={`i-${art.number}-${i}`} style={{
           display: 'flex', gap: 8, alignItems: 'flex-start', padding: '2px 0 2px 24px',
-          cursor: 'pointer', textAlign: 'justify',
+          cursor: podeEditar ? 'pointer' : 'default', textAlign: 'justify',
         }}>
           <input type="checkbox" checked
-            onChange={() => toggleItem(inc.editId, inc.index)}
-            style={{ marginTop: 5, flexShrink: 0, cursor: 'pointer' }} />
+            disabled={!podeEditar}
+            onChange={() => { if (podeEditar) toggleItem(inc.editId, inc.index) }}
+            style={{ marginTop: 5, flexShrink: 0, cursor: podeEditar ? 'pointer' : 'default' }} />
           <span>{inc.ownMarker ? '' : <strong>{romanize(i + 1)} -</strong>} {inc.text}{srcBadge(inc.source)}</span>
         </label>,
       )
     })
 
     const removed = removedByEditId[art.editId] ?? []
-    if (removed.length) {
+    if (removed.length && podeEditar) {
       blocks.push(<RemovedBlock key={`rm-${art.number}`} removed={removed} onRestore={toggleItem} editId={art.editId} />)
     }
     return blocks
@@ -342,6 +351,11 @@ export default function RegulamentoWizard() {
               ? `Minuta do Regulamento do CBMRO (LOB atual) — ${data?.chapters?.length ?? 0} capítulos-tema (serviço, disciplina, uniformes, ensino e demais matérias), a partir dos regulamentos de outros Corpos de Bombeiros Militares; isolada do cenário futuro.`
               : 'Minuta articulada do Regulamento Geral do CBMRO — 15 capítulos-tema, com competências, serviço operacional, disciplina e demais matérias, a partir dos regulamentos de 9 Corpos de Bombeiros Militares.'}
           </p>
+          {!podeEditar && (
+            <p className="page-subtitle" style={{ fontStyle: 'italic' }}>
+              Somente leitura. Para registrar manifestações, use a tela de Revisão.
+            </p>
+          )}
         </div>
       </div>
 
@@ -413,8 +427,10 @@ export default function RegulamentoWizard() {
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)' }}>Fontes:</span>
                 {sourceKeys.map(key => (
                   <label key={key} style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 12.5, cursor: key === 'RO' ? 'default' : 'pointer', opacity: key === 'RO' ? 0.7 : 1 }}>
-                    <input type="checkbox" checked={key === 'RO' ? true : sourceChecked(key)} disabled={key === 'RO'}
-                      onChange={() => toggleSource(key)} style={{ cursor: key === 'RO' ? 'default' : 'pointer' }} />
+                    <input type="checkbox" checked={key === 'RO' ? true : sourceChecked(key)}
+                      disabled={key === 'RO' || !podeEditar}
+                      onChange={() => { if (podeEditar) toggleSource(key) }}
+                      style={{ cursor: (key === 'RO' || !podeEditar) ? 'default' : 'pointer' }} />
                     {key}
                   </label>
                 ))}

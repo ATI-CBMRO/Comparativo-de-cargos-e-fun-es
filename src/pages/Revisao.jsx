@@ -23,6 +23,8 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
+import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
+import NotaEscopoServico from '../components/NotaEscopoServico.jsx'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
@@ -37,7 +39,7 @@ function Rail({ count, onClick }) {
   )
 }
 
-export default function Revisao({ initialDoc } = {}) {
+export default function Revisao({ initialDoc, escopo } = {}) {
   const { user } = useAuth()
   const { cenario } = useScenario()
   // Quando a Revisão é aberta a partir da trilha (menu), o documento já vem
@@ -49,13 +51,17 @@ export default function Revisao({ initialDoc } = {}) {
   const [aberto, setAberto] = useState(null) // { id, label, trecho }
   const [regulamentoAberto, setRegulamentoAbertoState] = useState(false)
 
+  // Recorte setorizado (spec 2026-08-13). `data` segue com o documento COMPLETO — é dela
+  // que sai a contagem do que ficou de fora, para a nota de escopo. Sem escopo, é no-op.
+  const dataEscopo = useMemo(() => filtrarEstruturaPorEscopo(data, escopo), [data, escopo])
+
   const alternativesAberto = useMemo(() => {
-    if (!aberto || !data) return {}
+    if (!aberto || !dataEscopo) return {}
     const { editId } = parseDispositivoId(aberto.id)
     const chapterId = chapterIdOf(editId)
-    const chapter = data.chapters.find(c => c.id === chapterId)
+    const chapter = dataEscopo.chapters.find(c => c.id === chapterId)
     return chapter?.alternatives ?? {}
-  }, [aberto, data])
+  }, [aberto, dataEscopo])
 
   useEffect(() => {
     setData(null)
@@ -100,8 +106,23 @@ export default function Revisao({ initialDoc } = {}) {
   )
   const counts = useMemo(() => countByDispositivo(suggestionsForDoc), [suggestionsForDoc])
   const grupos = useMemo(() => groupByDispositivo(suggestionsForDoc), [suggestionsForDoc])
-  const articles = useMemo(() => (data ? buildArticles(data) : []), [data])
-  const parteDe = useMemo(() => (docId === 'reg' ? parteByChapterTitle(data) : {}), [docId, data])
+  const articles = useMemo(() => (dataEscopo ? buildArticles(dataEscopo) : []), [dataEscopo])
+  // No modo escopo o documento NÃO é dividido em Partes — é um documento único de
+  // serviço. Mapa vazio faz as faixas "PARTE I/II" virarem no-op (regulamentoPartes.js).
+  const parteDe = useMemo(
+    () => (docId === 'reg' && !escopo ? parteByChapterTitle(dataEscopo) : {}),
+    [docId, dataEscopo, escopo],
+  )
+  // Números da nota de escopo, calculados dos dados reais — nunca cravados no código.
+  const foraDoEscopo = useMemo(() => {
+    if (!escopo || !data) return null
+    const idsNoEscopo = new Set((dataEscopo?.chapters ?? []).map(c => c.id))
+    const capitulos = data.chapters.filter(c => !idsNoEscopo.has(c.id))
+    return {
+      artigos: buildArticles(data).length - articles.length,
+      titulos: capitulos.map(c => c.chapterTitle).filter(Boolean),
+    }
+  }, [escopo, data, dataEscopo, articles])
   const fechados = useMemo(() => {
     let n = 0
     finalsForDoc.forEach(f => { if (f.status === 'fechado') n += 1 })
@@ -162,7 +183,9 @@ export default function Revisao({ initialDoc } = {}) {
   })
 
   const bloqueadoParaComissao = docId === 'reg' && !regulamentoAberto && user.role !== 'admin'
-  const tituloDoc = docId === 'reg' ? 'Revisão do Regulamento' : 'Revisão da Minuta'
+  const tituloDoc = escopo === 'servico'
+    ? 'Minuta do Regulamento de Serviço'
+    : (docId === 'reg' ? 'Revisão do Regulamento' : 'Revisão da Minuta')
 
   if (erro) return <ErrorState title="Erro ao carregar" hint={erro} />
   if (!data) return <LoadingState label="Carregando…" />
@@ -229,6 +252,13 @@ export default function Revisao({ initialDoc } = {}) {
             onSelect={scrollToChapter}
           />
           <div className="rev-doc">
+          {foraDoEscopo && (
+            <NotaEscopoServico
+              artigosNoEscopo={articles.length}
+              artigosFora={foraDoEscopo.artigos}
+              capitulosFora={foraDoEscopo.titulos}
+            />
+          )}
           {(() => {
             let ultimaParte = null
             return articles.map(art => {
