@@ -55,7 +55,63 @@
   cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
 
 ## 🟡 Em andamento
-_(nenhum)_
+- [ ] **Curadoria do Regulamento à luz da LOB vigente — handoff Wândrio→Tiago (2026-08-13,
+  branch `fix/curadoria-lob-atual`, ainda não mesclada)**: a minuta importada de MT/SE/BA/RN/RS
+  só trocou nome de estado, nunca estrutura organizacional — 32 nomes de órgão sem lastro em
+  nenhuma LOB de RO. Relatório completo em
+  `docs/superpowers/specs/2026-08-13-revisao-curadoria-lob-atual.md`, plano de tarefas T1-T7 em
+  `docs/superpowers/plans/2026-08-13-handoff-tiago-correcao-curadoria.md`.
+  **Decidido com o Tiago (2026-08-13):**
+  - **Instrumento: Portaria do Comandante-Geral** (não Decreto). Consequência: os capítulos que
+    criam/renomeiam órgão (`atribuicoes-funcoes`, `seguranca-contra-incendio`,
+    `central-operacoes-193`) são inválidos como texto próprio na forma atual — precisam virar
+    remissão a Decreto do Governador (LOB Art. 59), não descrição direta de estrutura. Ainda não
+    reescritos nessa forma.
+  - **Central 193**: o CBMRO opera **2 CIOP** (Centro Integrado de Operações) — Porto Velho
+    (ocorrências do COB I) e Ji-Paraná (COB II). Aplicado só o NOME (`CICOM`→`CIOP`); a divisão
+    operacional por COB **não** foi codificada nos 3 artigos/65 incisos do capítulo — pendência
+    de redação.
+  - **ADEMA→SEDAM, e-doc→SEI**: aplicados (resíduos de 1 ocorrência cada, fonte Sergipe).
+  **Feito nesta branch (7 commits)**: 4 do Wândrio (resíduos mecânicos — Bahia sem adaptação,
+  variantes "CBM-MT", rodapé do RISD/CBMSE fabricando um "Boletim Geral" do CBMRO, "PMSE") + 3
+  meus (SESDEC, ADEMA/e-doc/CIOP). `verificar_verbatim.py` OK (1166 excerpts) +
+  `test_regulamento_structure.py` OK (16 capítulos, 413 artigos) + `npm test` 154/154 em cada
+  commit.
+  **Ainda em aberto, todos exigindo decisão de mérito de quem conhece o CBMRO (não corrigir por
+  semelhança/palpite — repetiria o erro que esta rodada está consertando):**
+  - `central-operacoes-193`: resíduos que não citam nome de estado, por isso não pegam na
+    varredura automática — `SSP` (13x, aparece também dentro de `atribuicoes-funcoes`/
+    `competencias-*`, onde uma troca cega vaza sigla errada, ex. "SSP/MT"→"SESDEC/MT" — não
+    tocado de propósito), `Coordenadores de Área`, `Coordenadoria de Saúde` (RO não tem órgão de
+    saúde — Art. 62 revogado), `Grupo de Despacho/GD`, `SGTO`, `Supervisor de Operações`,
+    `Adjunto ao Oficial de Dia`, remissão a "ANEXO A desta Portaria" (anexo baiano inexistente).
+  - `seguranca-contra-incendio` (19 art/184 incisos): é o regimento da DSCIP do Mato Grosso;
+    nenhuma das 17 unidades do art. 166 da minuta coincide com a estrutura taxativa da
+    Coordenadoria de Atividades Técnicas (LOB Art. 18, §1º). Recomendação do levantamento:
+    reescrever o capítulo, não remendar ponto a ponto. Achados de hierarquia de norma: "multar"
+    (4x) não existe na LOB (exige lei própria); art. 182 da minuta afirma vinculação automática
+    das Seções de Atividades Técnicas, que a lei (Art. 18, §2º) trata como facultativa.
+  - `atribuicoes-funcoes` (29 art/345 incisos, 25 incompatíveis): é o Título III do Regulamento
+    do CBMMT. De-para MT→LOB de RO já levantado no plano (Batalhão→Grupamento, Diretoria
+    Operacional→Comando Operacional, UBM→OBM 31x, etc.) — **mas o cargo de Coordenador é
+    privativo de Oficial do último posto (LOB Art. 19): cada "Coordenadoria" criada implica um
+    cargo de Coronel, então a correção não é só de nome, é de desenho de efetivo.** Por isso o
+    de-para não foi aplicado mecanicamente.
+  - `servico-operacional`+`servico-interno-dia` (128 art, fonte SE): "Diretoria/Diretor de
+    Operações"→Comando/Comandante Operacional (20x, mecânico mas não aplicado ainda); escalas
+    desenhadas para estado compacto (Superior de Dia em sobreaviso preso à residência mas
+    responsável pelo estado inteiro) — precisa regionalizar por Grupamento; doutrina de comando
+    contraditória (antiguidade × Sistema de Comando de Incidentes); 5 regras de "casos omissos"
+    conflitantes.
+  - Fundamento legal: nenhum dos 185 artigos cita a Lei 2.204/2009 (sem cláusula de vigência/
+    revogatória); Art. 3º da minuta tem 11 competências, a LOB (Art. 2º) tem 25 — suprime
+    atendimento pré-hospitalar, guarda-vidas, perícia técnica, polícia judiciária militar etc.
+  - RI do cenário **futuro** (`minuta_structure.json`) tem 21 siglas de outros estados (CBMDF
+    10x, CBMMT 7x, CBM-MT 2x, CBMPA 2x) — pendência separada, não afeta a reunião de 14/08; RI
+    do cenário atual está limpo (0).
+  Recomendação do relatório para a reunião de 14/08: apresentar como material-base a mapear
+  (não como "a minuta do CBMRO"), com os comentários ancorados no `editId` — sobrevivem a
+  qualquer reescrita/renumeração posterior dos capítulos.
 
 ## ✅ Concluído (mês atual)
 - [x] **Registro de decisão em janela separada** (29/07/2026, pedido do Tiago): o
