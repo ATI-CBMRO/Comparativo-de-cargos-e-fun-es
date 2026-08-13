@@ -259,12 +259,60 @@ def limpar_ruido_de_pagina(text):
     return re.sub(r'[ \t]{2,}', ' ', out).strip()
 
 
+# ── Concordância de gênero depois da troca de órgão ──────────────────────────────────
+# As substituições de ADAPTATIONS trocam o NÚCLEO do sintagma, e vários órgãos mudam de
+# gênero no caminho: "a Diretoria Operacional" (fem.) vira "o Comando Operacional"
+# (masc.), "a CiaBM"/Companhia (fem.) vira "o SGBM"/Subgrupamento (masc.). Sem esta
+# passada o texto sai com "da Comando", "a SGBM", "à SGBM" — 41 ocorrências na primeira
+# rodada desta correção. Roda DEPOIS de todas as substituições, por isso é uma função
+# separada e não mais um par na tabela. Achado 2026-08-13.
+#
+# "OBM" fica FORA da lista: é Organização Bombeiro Militar, FEMININO (LOB Art. 60, "A
+# ativação das Organizações Bombeiros Militares"), então "da OBM" já está correto — foi
+# justamente por isso que a troca UBM→OBM (Unidade→Organização, fem.→fem.) não quebrou
+# nada. Incluí-lo aqui criaria o erro em vez de corrigi-lo.
+_NUCLEO_MASC = r'(?:Comando|Comandante|Grupamento|Subgrupamento|SGBM|GBM|COB)'
+CONCORDANCIA = [
+    # Preposição "a" regida por verbo, antes do genérico artigo→"o" (senão viraria
+    # "dando ciência o Comando").
+    (re.compile(r'\b(ci[êe]ncia)\s+a\s+(' + _NUCLEO_MASC + r')\b'), r'\1 ao \2'),
+    # Artefato de extração do PDF: "d a SGBM" (espaço no meio da contração).
+    (re.compile(r'\bd\s+a\s+(' + _NUCLEO_MASC + r')\b'), r'do \1'),
+    (re.compile(r'\bà\s+(' + _NUCLEO_MASC + r')\b'), r'ao \1'),
+    (re.compile(r'\bÀ\s+(' + _NUCLEO_MASC + r')\b'), r'Ao \1'),
+    (re.compile(r'\bda\s+(' + _NUCLEO_MASC + r')\b'), r'do \1'),
+    (re.compile(r'\bDa\s+(' + _NUCLEO_MASC + r')\b'), r'Do \1'),
+    (re.compile(r'\bna\s+(' + _NUCLEO_MASC + r')\b'), r'no \1'),
+    (re.compile(r'\bNa\s+(' + _NUCLEO_MASC + r')\b'), r'No \1'),
+    (re.compile(r'\bpela\s+(' + _NUCLEO_MASC + r')\b'), r'pelo \1'),
+    (re.compile(r'\bPela\s+(' + _NUCLEO_MASC + r')\b'), r'Pelo \1'),
+    (re.compile(r'\bdas\s+(' + _NUCLEO_MASC + r's?)\b'), r'dos \1'),
+    (re.compile(r'\bnas\s+(' + _NUCLEO_MASC + r's?)\b'), r'nos \1'),
+    (re.compile(r'\bpelas\s+(' + _NUCLEO_MASC + r's?)\b'), r'pelos \1'),
+    (re.compile(r'\buma\s+(' + _NUCLEO_MASC + r')\b'), r'um \1'),
+    (re.compile(r'\ba\s+(' + _NUCLEO_MASC + r')\b'), r'o \1'),
+    (re.compile(r'\bA\s+(' + _NUCLEO_MASC + r')\b'), r'O \1'),
+    # "Diretoria Operacional Adjunta" -> o adjunto concorda com "Comando" (LOB Art. 35,
+    # par. único, II, que prevê o "Adjunto" na estrutura do COB).
+    (re.compile(r'(' + _NUCLEO_MASC + r'[^,;.\n]{0,40}?)\s+Adjunta\b'), r'\1 Adjunto'),
+]
+
+
+def corrigir_concordancia(text):
+    """Reconcorda artigo/preposição com os órgãos masculinos introduzidos pela adaptação."""
+    out = text or ''
+    for rx, para in CONCORDANCIA:
+        out = rx.sub(para, out)
+    return out
+
+
 def adapt_text(text):
     """Aplica ADAPTATIONS; retorna (texto_adaptado, houve_mudanca)."""
     out = limpar_ruido_de_pagina(text)
     for de, para in ADAPTATIONS:
         out = out.replace(de, para)
     out = RE_SIGLA_OUTRA_UF.sub('CBMRO', out)
+    out = corrigir_concordancia(out)
     return out, out != text
 
 
