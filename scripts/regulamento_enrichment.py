@@ -207,6 +207,53 @@ ADAPTATIONS = [
     # do estado de origem, produzindo "Secretaria ... do Estado de Rondônia (SSP/MT)".
     # A pasta em RO é a SESDEC (LOB Art. 1º, par. único).
     ("SSP/MT", "SESDEC"),
+    # ── ÓRGÃOS DO COMANDO-GERAL (2026-08-13) ─────────────────────────────────────────
+    # Segunda leva da correção de estrutura: a Parte I da minuta reproduz o organograma
+    # do CBMMT órgão a órgão. Aqui entram SÓ os que têm equivalente identificável na Lei
+    # 2.204/2009 — os que NÃO existem em RO (Centro de Capacitação Física, Coordenadoria
+    # de Articulação e Integração Comunitária, Coordenadoria de Atendimento Pré-Hospitalar,
+    # Núcleo Sistêmico, Grupamento de Emergências Ambientais, Coordenadoria de Saúde)
+    # ficam de fora: renomear não resolve, o dispositivo precisa sair ou a matéria ser
+    # reatribuída, e isso é decisão de redação. Ver .claude/PENDENCIAS.md.
+    # Formas longas antes das curtas (a lista é aplicada em ordem).
+    ("Coordenadoria de Planejamento Operacional e Estatística", "Seção de Planejamento Operacional e Controle de Resultados"),
+    ("Diretoria de Administração Institucional", "Estado-Maior-Geral"),          # LOB Art. 12-A
+    ("Coordenadoria de Gestão de Pessoas", "Coordenadoria de Pessoal"),          # Art. 14
+    ("Coordenadoria de Comunicação Social", "Diretoria de Comunicação Social"),  # Art. 22
+    ("Coordenadoria de Logística e Patrimônio", "Diretoria de Logística"),       # Art. 21
+    ("Coordenadoria de Apoio Logístico e Patrimônio", "Diretoria de Logística"),
+    ("Coordenadoria de Apoio Logístico", "Diretoria de Logística"),
+    ("Coordenadoria de Tecnologia da Informação", "Diretoria de Informática"),   # Art. 23
+    ("Coordenadoria de Legislação e Doutrinas", "Assessoria Legislativa"),       # Art. 29, §1º, II
+    ("Coordenadoria de Legislação e Doutrina", "Assessoria Legislativa"),
+    ("Coordenadoria de Finanças", "Coordenadoria de Planejamento, Orçamento e Finanças"),  # Art. 16
+    ("Coordenadoria de Ajudância Geral", "Ajudância-Geral"),                     # Art. 25
+    ("Coordenadoria da Agência Central de Inteligência", "Diretoria de Inteligência"),     # Art. 20
+    ("Agência Central de Inteligência", "Diretoria de Inteligência"),
+    ("Agencia Central de Inteligência", "Diretoria de Inteligência"),  # sem acento na fonte
+    ("CACI", "DINT"),
+    ("Coordenadoria de Assistência Social", "Centro de Assistência Social"),     # Art. 25, VI
+    ("Conselho Superior de Bombeiros", "Conselho Deliberativo de Estratégia e Gestão"),    # Art. 27
+    ("CSB", "CONDEG"),
+    ("Coordenadoria de Planejamento", "Diretoria de Planejamento"),              # Art. 16, V
+    ("Coordenadoria de Aperfeiçoamento", "Escola de Aperfeiçoamento e Especialização"),    # Art. 15, V, "g"
+    ("Escola Dom Pedro II", "Unidade de Colégio Bombeiro Militar"),              # Art. 15, IV, "f"
+    ("Centro de Ensino e Instrução de Bombeiros", "Centro de Treinamento, Ensino e Instrução"),  # Art. 15, V, "d"
+    ("CEIB", "CTEI"),
+    ("DEIP", "Coordenadoria de Educação, Ensino e Instrução"),                   # Art. 15
+    ("Centro de Suprimento e Manutenção", "Centro de Suprimento e Material"),    # Art. 21, V
+    ("CSM", "CSMat"),
+    ("Grupo de Aviação Bombeiro Militar", "Grupamento de Operações Aéreas"),     # Art. 48, II
+    ("GAvBM", "GOA"),
+    # A sigla "COB" do CBMMT quer dizer "Centro de Operações de Bombeiros" — a CENTRAL.
+    # Em RO, COB é o Comando Operacional de Bombeiros, órgão de execução: manter os dois
+    # sentidos sob a mesma sigla criaria ambiguidade dentro do próprio documento. A
+    # central em RO é a CIOP (confirmado pelo Ten. Tiago). Formas longas primeiro.
+    ("Centro de Operações de Bombeiros - COB", "Central Integrada de Operações - CIOP"),
+    ("Centro de Operações de Bombeiros – COB", "Central Integrada de Operações – CIOP"),
+    ("Centro de Operações de Bombeiros", "Central Integrada de Operações"),
+    ("Centro de Operações BM e CIOSP", "Central Integrada de Operações"),
+    ("Centro de Operações", "Central Integrada de Operações"),
     ("CBMMT", "CBMRO"),
     ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
@@ -295,6 +342,18 @@ CONCORDANCIA = [
     # "Diretoria Operacional Adjunta" -> o adjunto concorda com "Comando" (LOB Art. 35,
     # par. único, II, que prevê o "Adjunto" na estrutura do COB).
     (re.compile(r'(' + _NUCLEO_MASC + r'[^,;.\n]{0,40}?)\s+Adjunta\b'), r'\1 Adjunto'),
+    # Caminho inverso: CIOP é CENTRAL Integrada de Operações, FEMININO, e herdou o
+    # masculino do CICOM ("o Centro Integrado de Comunicações" da Bahia). Denominação
+    # confirmada pelo Ten. Tiago em 2026-08-13.
+    (re.compile(r'\bdo\s+CIOP\b'), 'da CIOP'),
+    (re.compile(r'\bDo\s+CIOP\b'), 'Da CIOP'),
+    (re.compile(r'\bno\s+CIOP\b'), 'na CIOP'),
+    (re.compile(r'\bNo\s+CIOP\b'), 'Na CIOP'),
+    (re.compile(r'\bao\s+CIOP\b'), 'à CIOP'),
+    (re.compile(r'\bAo\s+CIOP\b'), 'À CIOP'),
+    (re.compile(r'\bpelo\s+CIOP\b'), 'pela CIOP'),
+    (re.compile(r'\bdos\s+CIOP\b'), 'das CIOP'),
+    (re.compile(r'\bnos\s+CIOP\b'), 'nas CIOP'),
 ]
 
 
