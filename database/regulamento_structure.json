@@ -18262,7 +18262,7 @@
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
       },
       {
-       "text": "XIII. Solicitar os órgãos ambientais IBAMA e ou ADEMA nos acidentes contra o meio ambiente. Grande Porte",
+       "text": "XIII. Solicitar os órgãos ambientais IBAMA e ou SEDAM nos acidentes contra o meio ambiente. Grande Porte",
        "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
       }
      ],
@@ -19872,11 +19872,13 @@
      "id": "se-art-111",
      "kind": "incisos",
      "editId": "reg:servico-interno-dia/se-art-111",
-     "caput": "As permutas de serviços, de regra, serão realizadas no mesmo mês, devendo ser realizadas pelo sistema e-doc, sendo vedada a permuta de permuta.",
+     "caput": "As permutas de serviços, de regra, serão realizadas no mesmo mês, devendo ser realizadas pelo sistema SEI, sendo vedada a permuta de permuta.",
      "items": [],
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 111",
      "match": "exata",
-     "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+     "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+     "adapted": true,
+     "original_caput": "As permutas de serviços, de regra, serão realizadas no mesmo mês, devendo ser realizadas pelo sistema e-doc, sendo vedada a permuta de permuta."
     }
    ],
    "alternatives": {
@@ -24157,7 +24159,7 @@
      "id": "ba-art-8",
      "kind": "incisos",
      "editId": "reg:central-operacoes-193/ba-art-8",
-     "caput": "O Supervisor do Teledespacho (CICOM) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CICOM) sob a égide do CBMRO, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos.",
+     "caput": "O Supervisor do Teledespacho (CIOP) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CIOP) sob a égide do CBMRO, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos.",
      "items": [],
      "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 8",
      "match": "exata",
@@ -24169,7 +24171,7 @@
      "id": "ba-art-9",
      "kind": "incisos",
      "editId": "reg:central-operacoes-193/ba-art-9",
-     "caput": "A função de Supervisor do Teledespacho (CICOM) será exercida por oficial intermediário ou 1º tenente, que ficará sediado na Secretaria de Segurança Pública (SSP), competindo-lhe:",
+     "caput": "A função de Supervisor do Teledespacho (CIOP) será exercida por oficial intermediário ou 1º tenente, que ficará sediado na Secretaria de Segurança Pública (SSP), competindo-lhe:",
      "items": [
       {
        "text": "I - apresentar-se formalmente, tão logo assuma o serviço, ao Superior de Dia e, não sendo possível, realizar o contato por meio telefônico;",
@@ -24256,7 +24258,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
-       "text": "XXII - proibir, nas respec tivas estações de trabalho do CICOM, o uso de equipamentos e materiais desautorizados ou que, possivelmente, interfiram na qualidade do serviço desempenhado pelos Operadores de Teledespacho;",
+       "text": "XXII - proibir, nas respec tivas estações de trabalho do CIOP, o uso de equipamentos e materiais desautorizados ou que, possivelmente, interfiram na qualidade do serviço desempenhado pelos Operadores de Teledespacho;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
@@ -24264,7 +24266,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
-       "text": "XXIV - adotar e orientar quanto ao uso do código fonético previsto no âmbito do CBMRO, não permitindo o uso de linguagem inapropriada e diverso ao preconizado pelo sistema de comunicação do CICOM, assim como coibindo a transmissão de mensagens de interesse particular, religioso e ideológico, através dos dispositivos de uso da Segurança Pública;",
+       "text": "XXIV - adotar e orientar quanto ao uso do código fonético previsto no âmbito do CBMRO, não permitindo o uso de linguagem inapropriada e diverso ao preconizado pelo sistema de comunicação do CIOP, assim como coibindo a transmissão de mensagens de interesse particular, religioso e ideológico, através dos dispositivos de uso da Segurança Pública;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
@@ -24272,7 +24274,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
-       "text": "XXVI - comunicar ao SGTO do CICOM qualquer necessidade de suporte técnico relacionado à estrutura de funcionamento do Centro de Operações, para que sejam adotadas as providencias cabíveis;",
+       "text": "XXVI - comunicar ao SGTO do CIOP qualquer necessidade de suporte técnico relacionado à estrutura de funcionamento do Centro de Operações, para que sejam adotadas as providencias cabíveis;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
@@ -24357,11 +24359,11 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
-       "text": "XVI- evitar que viaturas operacionais, que estão sob a coordenação e fiscalização do CICOM, executem serviços administrativos e, em casos excepcionais, repassar para o Supervisor do Teledespacho para que este realize as tratativas necessárias;",
+       "text": "XVI- evitar que viaturas operacionais, que estão sob a coordenação e fiscalização do CIOP, executem serviços administrativos e, em casos excepcionais, repassar para o Supervisor do Teledespacho para que este realize as tratativas necessárias;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
-       "text": "XVII - providenciar para que todos os dados da ocorrência sejam registrados em tempo real, visando à cronologia, acompanhamento e controle, para lançamento no sistema (CICOM);",
+       "text": "XVII - providenciar para que todos os dados da ocorrência sejam registrados em tempo real, visando à cronologia, acompanhamento e controle, para lançamento no sistema (CIOP);",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
@@ -24373,11 +24375,11 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
-       "text": "XX - zelar para que a rede de rádio e demais equipamentos de comunicação dis poníveis no CICOM sejam utilizados apenas para mensagens relacionadas ao serviço;",
+       "text": "XX - zelar para que a rede de rádio e demais equipamentos de comunicação dis poníveis no CIOP sejam utilizados apenas para mensagens relacionadas ao serviço;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
-       "text": "XXI - alertar as guarnições sob seu controle que toda ocorrência solicitada e iniciada em via pública deverá ser, imediatamente, comunicada ao CICOM;",
+       "text": "XXI - alertar as guarnições sob seu controle que toda ocorrência solicitada e iniciada em via pública deverá ser, imediatamente, comunicada ao CIOP;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
@@ -24389,7 +24391,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
-       "text": "XXIV - realizar a triagem junto ao sistema (CICOM), priorizando as ocorrências que envolvam risco à vida, ao meio ambiente e danos ao patrimônio;",
+       "text": "XXIV - realizar a triagem junto ao sistema (CIOP), priorizando as ocorrências que envolvam risco à vida, ao meio ambiente e danos ao patrimônio;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
@@ -24397,7 +24399,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
-       "text": "XXVI - lançar no sistema e informar ao Supervisor do Teledespacho (CICOM) sobre todo deslocamento do Supervisor de Operações para qualquer ocorrência;",
+       "text": "XXVI - lançar no sistema e informar ao Supervisor do Teledespacho (CIOP) sobre todo deslocamento do Supervisor de Operações para qualquer ocorrência;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
       },
       {
@@ -24447,7 +24449,9 @@
      ],
      "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18",
      "match": "exata",
-     "heading": "NOp 01/2021, Seção X — Operador do Teledespacho (CICOM)"
+     "heading": "NOp 01/2021, Seção X — Operador do Teledespacho (CICOM)",
+     "adapted": true,
+     "original_caput": "O Operador do Teledespacho deverá ser bombeiro militar empregado pelo Comando de Operações de Bombeiros Militares, competindo-lhe:"
     }
    ],
    "alternatives": {

@@ -128,6 +128,18 @@ ADAPTATIONS = [
     # Estado de Segurança, Defesa e Cidadania (LOB Art. 1º, parágrafo único). Resíduo T1
     # do handoff 2026-08-13, marcado como seguro por não depender de decisão de mérito.
     ("Secretaria de Estado de Segurança Pública", "SESDEC"),
+    # Resíduos T1 do handoff 2026-08-13, respondidos pelo Ten. Tiago (conhecimento
+    # institucional do CBMRO, não deduzido): a minuta importada do CBMSE cita o órgão
+    # ambiental de Sergipe e o sistema de processo eletrônico do CBMSE.
+    ("ADEMA", "SEDAM"),
+    ("e-doc", "SEI"),
+    # "CICOM" é o centro de comunicações da Bahia (fonte primária do capítulo 193).
+    # Confirmado pelo Ten. Tiago: o CBMRO opera dois CIOP (Centro Integrado de
+    # Operações) — um em Porto Velho (ocorrências do COB I) e outro em Ji-Paraná
+    # (COB II). Troca só o NOME do centro; a divisão operacional por COB não está
+    # codificada texto a texto (pendência de redação — ver handoff 2026-08-13).
+    # "CICOM" só ocorre no arquivo da Bahia, então não vaza para outros capítulos.
+    ("CICOM", "CIOP"),
     ("CBMMT", "CBMRO"),
     ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
