@@ -32,7 +32,7 @@
           "id": "mt-art-2",
           "kind": "incisos",
           "editId": "reg:atual:disposicoes-preliminares/mt-art-2",
-          "caput": "O Corpo de Bombeiros Militar do Estado de Rondônia subordina-se diretamente ao Governador do Estado, está vinculado operacionalmente à Secretaria de Estado de Segurança Pública e destina-se a realizar serviços específicos de bombeiro militar no Estado.",
+          "caput": "O Corpo de Bombeiros Militar do Estado de Rondônia subordina-se diretamente ao Governador do Estado, está vinculado operacionalmente à SESDEC e destina-se a realizar serviços específicos de bombeiro militar no Estado.",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 2",
           "match": "exata",
@@ -2660,13 +2660,15 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 83"
             },
             {
-              "text": "VIII – integrar o sistema de qualidade de vida da Secretaria de Estado de Segurança Pública - SESP.",
+              "text": "VIII – integrar o sistema de qualidade de vida da SESDEC - SESP.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 83"
             }
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 83",
           "match": "exata",
-          "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+          "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+          "adapted": true,
+          "original_caput": "Compete a Seção de Assistência Social:"
         },
         {
           "id": "mt-art-84",
@@ -6661,7 +6663,7 @@
           "caput": "São competências das Assessorias Especiais Interinstitucionais:",
           "items": [
             {
-              "text": "I - prestar assessoramento nos órgãos do Governo Federal, no Gabinete do Governador, na Casa Militar do Governo do Estado, na Secretaria de Estado de Segurança Pública, na Justiça Militar Estadual, na Assembleia Legislativa Estadual, no Poder Judiciário, bem como em outros poderes e órgãos do Estado de Rondônia.",
+              "text": "I - prestar assessoramento nos órgãos do Governo Federal, no Gabinete do Governador, na Casa Militar do Governo do Estado, na SESDEC, na Justiça Militar Estadual, na Assembleia Legislativa Estadual, no Poder Judiciário, bem como em outros poderes e órgãos do Estado de Rondônia.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 41"
             },
             {

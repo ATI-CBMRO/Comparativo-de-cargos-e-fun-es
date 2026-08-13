@@ -123,6 +123,11 @@ ADAPTATIONS = [
     # ocorrência com vítima de crime — no texto de RO isso mandava chamar a PM de outro
     # estado. A LOB de RO (Art. 61) não usa sigla; escreve por extenso. Auditoria 2026-08-13.
     ("PMSE", "Polícia Militar do Estado de Rondônia"),
+    # A minuta importada do CBMMT vincula o Corpo de Bombeiros à "Secretaria de Estado de
+    # Segurança Pública" (a pasta do Mato Grosso). Em Rondônia é a SESDEC — Secretaria de
+    # Estado de Segurança, Defesa e Cidadania (LOB Art. 1º, parágrafo único). Resíduo T1
+    # do handoff 2026-08-13, marcado como seguro por não depender de decisão de mérito.
+    ("Secretaria de Estado de Segurança Pública", "SESDEC"),
     ("CBMMT", "CBMRO"),
     ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
