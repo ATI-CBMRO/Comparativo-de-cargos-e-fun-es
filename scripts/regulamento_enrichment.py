@@ -119,6 +119,10 @@ ADAPTATIONS = [
     ("Mato Grosso", "Rondônia"),
     ("Sergipe", "Rondônia"),
     ("Bahia", "Rondônia"),
+    # Polícia Militar do estado de origem: o RISD do CBMSE manda acionar a "PMSE" em
+    # ocorrência com vítima de crime — no texto de RO isso mandava chamar a PM de outro
+    # estado. A LOB de RO (Art. 61) não usa sigla; escreve por extenso. Auditoria 2026-08-13.
+    ("PMSE", "Polícia Militar do Estado de Rondônia"),
     ("CBMMT", "CBMRO"),
     ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
@@ -142,9 +146,38 @@ _UF_OUTRAS = ('MT|SE|BA|RN|RS|AL|GO|PA|PR|DF|ES|RR|TO|AC|AM|AP|MA|PI|CE|PB|PE|MG
 RE_SIGLA_OUTRA_UF = re.compile(r'\bCBM[\s.\-–—/]*(?:' + _UF_OUTRAS + r')\b')
 
 
+# ── Ruído de página (não é norma; é mobília do PDF de origem) ────────────────────────
+# O RISD do CBMSE foi extraído com o rodapé de cada página embutido NO MEIO das frases,
+# ex.: "…mediante autorização por escrito 14/28 BGO Nº 060 Publicado em 30/03/2022
+# CBMSE/RISD – Regulamento Interno dos Serviços Diários. do Diretor Operacional…".
+# Dois estragos: (1) parte a frase ao meio; (2) a adaptação trocava "CBMSE" por "CBMRO"
+# ali dentro e passava a AFIRMAR, na minuta de RO, a existência de um Boletim Geral nº 060
+# de 30/03/2022 do CBMRO e de um "RISD" — atos que não existem. Citação fabricada dentro
+# de texto normativo.
+#
+# A limpeza é feita AQUI, no build, e NÃO na transcrição: o rodapé está mesmo no markdown
+# de origem, e scripts/verificar_verbatim.py compara a transcrição com ele. Tirar da
+# transcrição quebraria essa conferência; tirar no build mantém as duas coisas certas —
+# a transcrição fiel à fonte e a minuta livre do lixo. Auditoria 2026-08-13.
+RUIDO_DE_PAGINA = [
+    re.compile(
+        r'\s*\d{1,3}\s*/\s*28\s+BGO\s+N[ºo°]\s*060\s+Publicado\s+em\s+30/03/2022\s+'
+        r'CBM\w{2}\s*/\s*RISD\s*[–—-]\s*Regulamento\s+Interno\s+dos\s+Servi[çc]os\s+Di[áa]rios\.\s*'
+    ),
+]
+
+
+def limpar_ruido_de_pagina(text):
+    """Remove rodapé/cabeçalho de página que a extração do PDF deixou no meio do texto."""
+    out = text or ''
+    for rx in RUIDO_DE_PAGINA:
+        out = rx.sub(' ', out)
+    return re.sub(r'[ \t]{2,}', ' ', out).strip()
+
+
 def adapt_text(text):
     """Aplica ADAPTATIONS; retorna (texto_adaptado, houve_mudanca)."""
-    out = text
+    out = limpar_ruido_de_pagina(text)
     for de, para in ADAPTATIONS:
         out = out.replace(de, para)
     out = RE_SIGLA_OUTRA_UF.sub('CBMRO', out)
