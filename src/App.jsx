@@ -89,6 +89,16 @@ const NAV_GROUPS = [
   },
 ]
 
+// Menu do participante com escopo (spec 2026-08-13): só o que diz respeito a ele.
+// ATENÇÃO: isto é simplificação de INTERFACE, não parede — quem digitar /minuta na
+// barra de endereço ainda alcança a rota. Segurança de dado é do firestore.rules.
+const NAV_ESCOPO = {
+  servico: [
+    { to: '/regulamento/servico', icon: BookMarked, label: 'Regulamento de Serviço', end: true },
+    { to: '/manual', icon: BookOpen, label: 'Manual de uso' },
+  ],
+}
+
 function Header({ navOpen, onToggleNav }) {
   return (
     <header className="app-header">
@@ -139,6 +149,7 @@ function HeaderUserBox() {
 
 function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
   const { user } = useAuth()
+  const itensEscopo = NAV_ESCOPO[user?.escopo] ?? null
   return (
     <aside id="sidebar-nav" className={`sidebar${open ? ' open' : ''}`}>
       <button
@@ -157,11 +168,30 @@ function Sidebar({ open, collapsed, onNavigate, onToggleCollapse }) {
         </div>
       </button>
 
-      <ScenarioSwitcher />
+      {/* Participante com escopo não escolhe cenário: a rota já o trava em "atual". */}
+      {!itensEscopo && <ScenarioSwitcher />}
 
       <nav className="sidebar-nav">
         <div className="nav-section-label">Navegação</div>
-        {NAV_GROUPS.map((group, gi) => (
+        {itensEscopo
+          ? (
+            <div className="nav-group">
+              {itensEscopo.map(({ to, icon: Icon, label, end }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  end={end}
+                  onClick={onNavigate}
+                  title={label}
+                  className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
+                >
+                  <Icon className="nav-icon" size={18} />
+                  <span className="nav-item-label">{label}</span>
+                </NavLink>
+              ))}
+            </div>
+          )
+          : NAV_GROUPS.map((group, gi) => (
           <div key={group.section ?? `g${gi}`} className="nav-group">
             {group.section && <div className="nav-section-label nav-section-label-sub">{group.section}</div>}
             {group.items
@@ -228,6 +258,25 @@ function AlreadyLoggedInRedirect() {
   return <Navigate to={location.state?.from || '/'} replace />
 }
 
+// Rota do Regulamento de Serviço (recorte setorizado). Trava o cenário em "atual": a
+// LOB vigente é a que este regulamento regulamenta, e comentário de um cenário NUNCA
+// aparece no outro — deixar no padrão "futura" gravaria a manifestação no lugar errado,
+// em silêncio.
+function RegulamentoServicoRoute() {
+  const { cenario, setCenario } = useScenario()
+  useEffect(() => {
+    if (cenario !== 'atual') setCenario('atual')
+  }, [cenario, setCenario])
+  return <Revisao initialDoc="reg" escopo="servico" />
+}
+
+// Quem tem escopo não cai no Acervo dos 27 estados: vai direto ao documento dele.
+function InicioPorEscopo() {
+  const { user } = useAuth()
+  const destino = user?.escopo === 'servico' ? '/regulamento/servico' : '/legislacoes'
+  return <Navigate to={destino} replace />
+}
+
 // Portal inteiro exige login: sem sessão válida, só /login e /cadastro respondem —
 // qualquer outra URL redireciona para /login guardando o destino pedido, para retomá-lo
 // assim que a pessoa autenticar.
@@ -276,8 +325,9 @@ export default function App() {
       />
       <main className="main-content">
         <Routes>
-          {/* Início saiu do menu — a home passa a ser o Acervo. */}
-          <Route path="/" element={<Navigate to="/legislacoes" replace />} />
+          {/* Início saiu do menu — a home passa a ser o Acervo (ou o Regulamento de
+              Serviço, para quem tem escopo). */}
+          <Route path="/" element={<InicioPorEscopo />} />
           <Route path="/legislacoes" element={<Legislations />} />
           <Route path="/manual" element={<Manual />} />
           <Route path="/organograma" element={<Organograma />} />
@@ -299,6 +349,7 @@ export default function App() {
           <Route path="/regulamento" element={<RegulamentoWizard />} />
           <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
+          <Route path="/regulamento/servico" element={<ProtectedRoute><RegulamentoServicoRoute /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
