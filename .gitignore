@@ -46,3 +46,6 @@ graphify-out/
 
 # Artefatos de snapshot/screenshot do Playwright MCP (efêmeros)
 .playwright-mcp/
+
+# Worktrees isolados de sessões de desenvolvimento (Superpowers)
+.worktrees/
