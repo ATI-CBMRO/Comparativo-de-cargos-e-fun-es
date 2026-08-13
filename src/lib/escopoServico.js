@@ -35,3 +35,23 @@ export function filtrarEstruturaPorEscopo(structure, escopo) {
   const chapters = temas.map(t => porTema.get(t)).filter(Boolean)
   return { ...structure, chapters }
 }
+
+// Rotas que o participante com escopo pode abrir. Lista fechada (allowlist): endereço
+// que não estiver aqui é devolvido ao documento dele. Esconder o link do menu não basta —
+// quem digita /minuta na barra de endereço chega lá.
+// ATENÇÃO: isto é camada de INTERFACE. A tranca de banco é o firestore.rules, que não
+// muda nesta entrega (ver spec, seção 3c).
+const ROTAS_LIBERADAS = {
+  servico: ['/', '/regulamento/servico', '/manual', '/login', '/cadastro'],
+}
+
+export function rotaLiberadaNoEscopo(pathname, escopo) {
+  const liberadas = ROTAS_LIBERADAS[escopo]
+  if (!liberadas) return true            // sem escopo: portal completo, como sempre
+  // Compara o caminho inteiro, nunca por prefixo: "/manualzinho" não pode passar por
+  // começar com "/manual". Barra final é ignorada e a comparação é insensível a
+  // maiúsculas — a barra de endereço aceita "/Manual" ou "/MINUTA" e o navegador não
+  // normaliza isso sozinho antes de chegar aqui.
+  const p = String(pathname ?? '').toLowerCase().replace(/\/+$/, '') || '/'
+  return liberadas.includes(p)
+}

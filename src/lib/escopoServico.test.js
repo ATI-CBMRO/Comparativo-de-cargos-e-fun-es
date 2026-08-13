@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { TEMAS_SERVICO, temaDoCapitulo, filtrarEstruturaPorEscopo } from './escopoServico.js'
+import { TEMAS_SERVICO, temaDoCapitulo, filtrarEstruturaPorEscopo, rotaLiberadaNoEscopo } from './escopoServico.js'
 
 // Estrutura-fake na MESMA ordem do arquivo real: a Parte I inteira antes da Parte II,
 // com "disposicoes-finais" na posição 12 — é justamente o que o recorte precisa corrigir.
@@ -91,4 +91,39 @@ test('tema do escopo ausente na estrutura é ignorado, sem buraco na lista', () 
   const r = filtrarEstruturaPorEscopo(semIncendio, 'servico')
   assert.equal(r.chapters.length, 6)
   assert.ok(r.chapters.every(Boolean), 'nenhum undefined pode sobrar na lista')
+})
+
+test('sem escopo, toda rota é liberada (comportamento de hoje, intocado)', () => {
+  assert.equal(rotaLiberadaNoEscopo('/minuta', null), true)
+  assert.equal(rotaLiberadaNoEscopo('/regulamento/conferencia', undefined), true)
+  assert.equal(rotaLiberadaNoEscopo('/legislacoes', 'inexistente'), true)
+})
+
+test('escopo de serviço libera só o documento, o manual e as telas de entrada', () => {
+  for (const p of ['/', '/regulamento/servico', '/manual', '/login', '/cadastro']) {
+    assert.equal(rotaLiberadaNoEscopo(p, 'servico'), true, `deveria liberar ${p}`)
+  }
+})
+
+test('escopo de serviço fecha as trilhas, o acervo e o organograma', () => {
+  for (const p of [
+    '/minuta', '/minuta/conferencia', '/minuta/decisoes', '/minuta/revisao',
+    '/regulamento', '/regulamento/conferencia', '/regulamento/decisoes',
+    '/regulamento/revisao', '/regulamento/subsidio',
+    '/legislacoes', '/organograma', '/acessos', '/comparar', '/estados/ro',
+  ]) {
+    assert.equal(rotaLiberadaNoEscopo(p, 'servico'), false, `deveria fechar ${p}`)
+  }
+})
+
+test('barra final e maiúsculas não furam a guarda', () => {
+  assert.equal(rotaLiberadaNoEscopo('/regulamento/servico/', 'servico'), true)
+  assert.equal(rotaLiberadaNoEscopo('/MINUTA', 'servico'), false)
+  assert.equal(rotaLiberadaNoEscopo('/Manual', 'servico'), true)
+})
+
+test('prefixo parecido não libera por engano', () => {
+  // "/manualzinho" não pode passar só por começar com "/manual".
+  assert.equal(rotaLiberadaNoEscopo('/manualzinho', 'servico'), false)
+  assert.equal(rotaLiberadaNoEscopo('/regulamento/servicos', 'servico'), false)
 })

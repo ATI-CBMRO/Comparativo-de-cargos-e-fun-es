@@ -35,6 +35,7 @@ import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
 import EmConstrucao from './components/EmConstrucao.jsx'
 import { useAuth } from './lib/auth.jsx'
 import { useScenario } from './context/ScenarioContext.jsx'
+import { rotaLiberadaNoEscopo } from './lib/escopoServico.js'
 
 // /minuta/revisao e /minuta/deliberacao (protótipo CONDEG em localStorage) saíram do
 // menu — a Revisão da Minuta oficial (Firebase, item abaixo) assumiu o papel de produção.
@@ -277,6 +278,17 @@ function InicioPorEscopo() {
   return <Navigate to={destino} replace />
 }
 
+// Devolve o participante com escopo ao documento dele quando ele alcança uma rota fora do
+// recorte (link antigo, endereço digitado, aba salva). Sem escopo, é no-op absoluto.
+function GuardaDeEscopo({ children }) {
+  const { user } = useAuth()
+  const { pathname } = useLocation()
+  if (user?.escopo && !rotaLiberadaNoEscopo(pathname, user.escopo)) {
+    return <Navigate to="/regulamento/servico" replace />
+  }
+  return children
+}
+
 // Portal inteiro exige login: sem sessão válida, só /login e /cadastro respondem —
 // qualquer outra URL redireciona para /login guardando o destino pedido, para retomá-lo
 // assim que a pessoa autenticar.
@@ -324,6 +336,7 @@ export default function App() {
         aria-hidden="true"
       />
       <main className="main-content">
+        <GuardaDeEscopo>
         <Routes>
           {/* Início saiu do menu — a home passa a ser o Acervo (ou o Regulamento de
               Serviço, para quem tem escopo). */}
@@ -362,6 +375,7 @@ export default function App() {
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
           <Route path="/acessos" element={<ProtectedRoute requireAdmin><Acessos /></ProtectedRoute>} />
         </Routes>
+        </GuardaDeEscopo>
       </main>
     </div>
   )
