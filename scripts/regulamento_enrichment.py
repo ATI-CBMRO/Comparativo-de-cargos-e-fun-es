@@ -254,6 +254,22 @@ ADAPTATIONS = [
     ("Centro de Operações de Bombeiros", "Central Integrada de Operações"),
     ("Centro de Operações BM e CIOSP", "Central Integrada de Operações"),
     ("Centro de Operações", "Central Integrada de Operações"),
+    # ── Trims cirúrgicos (2026-08-13) ────────────────────────────────────────────────
+    # Aqui o órgão inexistente é REMISSÃO dentro de matéria legítima — tirar o inciso
+    # inteiro perderia a norma boa junto. Por isso o corte é da oração, não do
+    # dispositivo. Os que são o próprio sujeito do dispositivo saem em
+    # scripts/regulamento_reescrita.py.
+    (", em ligação, no primeiro caso, com a Coordenadoria de Articulação e Integração Comunitária,",
+     ","),                                   # mt-art-113: preserva as atividades cívicas e sociais
+    # (o inciso X do mt-art-96, que citava o "Núcleo Sistêmico de Segurança/SAENS/SESP",
+    #  NÃO é trimado: sai inteiro em regulamento_reescrita.py, porque remete a DOIS
+    #  órgãos do MT — aquele Núcleo e a seção de estado-maior "BM-4" — e não sobraria
+    #  dispositivo com endereço válido em RO.)
+    (" e a Coordenadoria de Saúde", ""),     # ba-art-9: Art. 62 revogado pela Lei 2.244/2010
+    (", o Centro de Capacitação Física-CCF", ""),   # mt-art-160, parágrafo único
+    ("oriundas da DOP e DSCIP", "oriundas do Comando Operacional de Bombeiros e da Coordenadoria de Atividades Técnicas"),
+    # Sobra do organograma do MT no capítulo já reescrito sobre a CAT.
+    ("DSCIP", "CAT"),
     ("CBMMT", "CBMRO"),
     ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
@@ -295,6 +311,17 @@ RUIDO_DE_PAGINA = [
         r'\s*\d{1,3}\s*/\s*28\s+BGO\s+N[ºo°]\s*060\s+Publicado\s+em\s+30/03/2022\s+'
         r'CBM\w{2}\s*/\s*RISD\s*[–—-]\s*Regulamento\s+Interno\s+dos\s+Servi[çc]os\s+Di[áa]rios\.\s*'
     ),
+    # Mesma classe de ruído, outra origem: o extrator do CBMMT grudou o TÍTULO da seção
+    # seguinte no fim do último inciso da seção anterior, produzindo dispositivos como
+    # "III - promover atendimentos individuais. Da Coordenadoria de Articulação e
+    # Integração Comunitária – BM/3". O órgão citado ali não é remissão normativa — é
+    # cabeçalho. Cortar o inciso inteiro perderia a norma ("promover atendimentos
+    # individuais"); o certo é tirar só o cabeçalho. Achado 2026-08-13.
+    # O lookbehind preserva o ponto final da frase que fica (o `sub` troca por espaço).
+    re.compile(r'(?<=\.)\s*D[ao]s?\s+Coordenadoria\s+de\s+Articula[çc][ãa]o\s+e\s+Integra[çc][ãa]o'
+               r'\s+Comunit[áa]ria\s*[–—-]\s*BM/\d\s*$'),
+    re.compile(r'(?<=\.)\s*D[ao]s?\s+Diretoria\s+de\s+Seguran[çc]a\s+Contra\s+Inc[êe]ndio\s+e\s+P[âa]nico'
+               r'\s*[–—-]\s*DSCIP\s*$'),
 ]
 
 

@@ -29,7 +29,20 @@ for c in d['chapters']:
         assert leaf['editId'].startswith('reg:'), leaf['editId']
         assert leaf['editId'] not in edit_ids, f'editId duplicado: {leaf["editId"]}'
         edit_ids.add(leaf['editId'])
-        assert leaf['source'].startswith('cf. CBM'), leaf['source']
+        if leaf.get('autoral'):
+            # Redação própria (scripts/regulamento_reescrita.py): não é transcrição de
+            # outro estado, então NÃO passa por verificar_verbatim.py — em troca é
+            # obrigada a declarar o fundamento na lei de Rondônia que a sustenta.
+            assert leaf.get('fundamento'), f'artigo autoral sem fundamento: {leaf["editId"]}'
+            assert leaf['source'] == leaf['fundamento']
+            assert ('Lei nº 2.204/2009' in leaf['fundamento']
+                    or 'LOB' in leaf['fundamento']
+                    or 'Decreto nº 21.425/2016' in leaf['fundamento']
+                    or 'Lei estadual nº 3.924/2016' in leaf['fundamento']
+                    or 'organograma oficial' in leaf['fundamento']), \
+                f'fundamento não cita norma de RO: {leaf["fundamento"]}'
+        else:
+            assert leaf['source'].startswith('cf. CBM'), leaf['source']
         assert leaf['match'] in ('exata', 'parcial', 'tematica')
         assert not leaf['caput'].startswith('Art.'), f'caput com prefixo Art.: {leaf["caput"][:60]}'
         for it in leaf['items']:
@@ -55,7 +68,22 @@ assert _co['parte'] == 'servico', _co['parte']
 assert _co['primary']['uf'] == 'ba', _co['primary']['uf']
 assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoes-193'
 
-assert len(edit_ids) >= 410, f'regressão: {len(edit_ids)} artigos (esperado >= 410)'
+# O piso existe para pegar PERDA ACIDENTAL de artigo (regressão do extrator ou do
+# enrichment). Em 2026-08-13 ele baixou de 410 para 396 por decisão de curadoria, não por
+# regressão — a aritmética, conferida artigo a artigo:
+#     413 importados
+#     -13 artigos removidos (órgão do MT inexistente em RO — REMOVER_ARTIGOS)
+#     -19 artigos do capítulo de segurança contra incêndio (era o regimento da DSCIP/MT)
+#     +15 artigos de redação própria da CAT/DAT/SAT (ARTIGOS_PROPRIOS)
+#     = 396
+# Ver scripts/regulamento_reescrita.py para o motivo de cada remoção.
+assert len(edit_ids) >= 396, f'regressão: {len(edit_ids)} artigos (esperado >= 396)'
+autorais = [l for c in d['chapters'] for l in c['articles'] if l.get('autoral')]
+assert len(autorais) == 15, f'artigos autorais: {len(autorais)} (esperado 15)'
+sci = [c for c in d['chapters'] if c['themeKey'] == 'seguranca-contra-incendio'][0]
+assert all(l.get('autoral') for l in sci['articles']), \
+    'capítulo de segurança contra incêndio deve ser 100% redação própria'
+assert sci['alternatives'], 'Bloco D do capítulo reescrito foi perdido'
 
 for c in d['chapters']:
     assert c['primary']['uf'] != 'risg', f"RISG não pode ser fonte primária: {c['themeKey']}"

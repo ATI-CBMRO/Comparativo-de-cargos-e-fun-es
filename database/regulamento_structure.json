@@ -539,10 +539,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.3 - Coordenadoria de Articulação e Integração Comunitária – BM/3;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
        "text": "1.4 - Diretoria de Logística – BM/4;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
@@ -575,10 +571,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "2.1 - Coordenadoria de Recrutamento, Formação e Ensino – CEIP/1;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
        "text": "2.2 - Escola de Aperfeiçoamento e Especialização, Especialização e Instrução – CEIP/2;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
@@ -587,35 +579,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "2.4 - Centro de Capacitação Física - CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
        "text": "2.5 - Unidade de Colégio Bombeiro Militar.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3 - Diretoria de Segurança Contra Incêndio e Pânico - DSCIP:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.1 - Coordenadoria de Estudos e Análise de Processos – CCIP/1;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.2 - Coordenadoria de Fiscalização – CCIP/2;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.3 - Coordenadoria de Legislação e Pareceres – CCIP/3;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.4 - Coordenadoria de Perícia Técnica – CCIP/4;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.5 - Coordenadoria de Hidrantes – CCIP/5.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
@@ -663,10 +627,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.2 - Coordenadoria de Atendimento Pré-Hospitalar.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
        "text": "1.3 - Comandos Operacionais de Bombeiros - COB:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
@@ -691,10 +651,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
       {
-       "text": "1.4 - Grupamento de Emergências Ambientais - BEA:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
        "text": "1.4.1 - Companhia de Prevenção e Resposta à Emergência com Produtos Perigosos - CPP;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
       },
@@ -715,7 +671,9 @@
      "match": "parcial",
      "heading": "TÍT. II — Da Estrutura Organizacional (estrutura é a de MT; a da minuta de RO vem da LOB de RO)",
      "adapted": true,
-     "original_caput": "A estrutura organizacional básica do Corpo de Bombeiros Militar compreende os seguintes níveis e unidades:"
+     "original_caput": "A estrutura organizacional básica do Corpo de Bombeiros Militar compreende os seguintes níveis e unidades:",
+     "reindexed": true,
+     "incisos_removidos": 11
     }
    ],
    "alternatives": {
@@ -1852,10 +1810,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 61"
       },
       {
-       "text": "5 - Coordenadoria de Articulação e Integração Comunitária – BM/3:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 61"
-      },
-      {
        "text": "5.1 - Seção de Projetos Sociais.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 61"
       },
@@ -2004,7 +1958,9 @@
      "match": "exata",
      "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
      "adapted": true,
-     "original_caput": "A Diretoria de Administração Institucional tem a seguinte constituição:"
+     "original_caput": "A Diretoria de Administração Institucional tem a seguinte constituição:",
+     "reindexed": true,
+     "incisos_removidos": 1
     },
     {
      "id": "mt-art-64",
@@ -2717,50 +2673,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 85"
       },
       {
-       "text": "III - promover atendimentos individuais. Da Coordenadoria de Articulação e Integração Comunitária – BM/3",
+       "text": "III - promover atendimentos individuais.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 85"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 85",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
-    },
-    {
-     "id": "mt-art-86",
-     "kind": "incisos",
-     "editId": "reg:competencias-direcao/mt-art-86",
-     "caput": "A Coordenadoria de Articulação e Integração Comunitária, tem por competência planejar, coordenar, operacionalizar, acompanhar e avaliar as ações relativas aos projetos sociais no âmbito do Corpo de Bombeiros Militar e promover a articulação e o planejamento de ações visando à atuação integrada com as demais instituições.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 86",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
-    },
-    {
-     "id": "mt-art-87",
-     "kind": "incisos",
-     "editId": "reg:competencias-direcao/mt-art-87",
-     "caput": "Compete ao Coordenador de Articulação e Integração Comunitária:",
-     "items": [
-      {
-       "text": "I - promover a articulação com órgãos governamentais;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 87"
-      },
-      {
-       "text": "II - planejar ações visando à atuação integrada com instituições públicas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 87"
-      },
-      {
-       "text": "III - gerenciar os projetos sociais existentes na instituição;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 87"
-      },
-      {
-       "text": "IV - manter registros das atividades da Coordenadoria.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 87"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 87",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "Compete ao Centro de Assistência Social e Religiosa:"
     },
     {
      "id": "mt-art-88",
@@ -3069,15 +2990,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
       },
       {
-       "text": "X - estabelecer a comunicação com as demais seções da BM-4 quando do acompanhamento dos processos de aquisição ou contratações, bem como, junto ao Núcleo Sistêmico de Segurança/ SAENS/ SESP, informando, conforme o caso, as referidas seções da emissão de Ordens de Fornecimento, assinatura de contratos de fornecimento ou de prestação de serviços;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
-      },
-      {
        "text": "XI - acompanhar a formulação e assinatura dos contratos de interesse da Corporação, zelando pelo cumprimento das clausulas pela contratada indicando fiscais de contrato;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
-      },
-      {
-       "text": "XII - indicar usuários do Sistema de Aquisições Governamentais – SIAG, comunicando ao Núcleo Sistêmico/ SAD sobre a necessidade de inclusão, exclusão ou alteração de usuários;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
       },
       {
@@ -3106,10 +3019,6 @@
       },
       {
        "text": "XIX - gerenciar o consumo de água, energia e telefonia fixa;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
-      },
-      {
-       "text": "XX - indicar os usuários do Sistema de Gerenciamento de Convênios - SIGCon e SICONV, comunicando ao Núcleo Sistêmico a necessidade de inclusão, exclusão ou alteração de usuários;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
       },
       {
@@ -3165,10 +3074,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
       },
       {
-       "text": "XXXIV - elaborar as prestações de contas em sintonia e articulação com as áreas técnicas e demais unidades do Núcleo Sistêmico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
-      },
-      {
        "text": "XXXV - acompanhar e prestar informações relativas às prestações de contas de convênios encaminhadas pela Instituição;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 96"
       },
@@ -3181,7 +3086,9 @@
      "match": "exata",
      "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
      "adapted": true,
-     "original_caput": "Compete a Seção de Aquisições, Contratos e Convênios:"
+     "original_caput": "Compete a Seção de Aquisições, Contratos e Convênios:",
+     "reindexed": true,
+     "incisos_removidos": 4
     },
     {
      "id": "mt-art-97",
@@ -3234,15 +3141,13 @@
       {
        "text": "IX - manter cadastro dos militares que possuem armamento;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 98"
-      },
-      {
-       "text": "X - indicar usuários do Sistema Integrado de gestão Patrimonial – SIGPAT, comunicando ao Núcleo Sistêmico/SAD sobre a necessidade de inclusão, exclusão ou alteração de usuários;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 98"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 98",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "reindexed": true,
+     "incisos_removidos": 1
     },
     {
      "id": "mt-art-99",
@@ -3293,10 +3198,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 100"
       },
       {
-       "text": "IX - indicar os usuários do Sistema de Protocolo, comunicando ao Núcleo Sistêmico/SAD sobre a necessidade de inclusão, exclusão ou alteração de usuários;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 100"
-      },
-      {
        "text": "X - atestar a conformidade de seus processos.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 100"
       }
@@ -3305,7 +3206,9 @@
      "match": "exata",
      "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
      "adapted": true,
-     "original_caput": "Compete ao Arquivo Geral:"
+     "original_caput": "Compete ao Arquivo Geral:",
+     "reindexed": true,
+     "incisos_removidos": 1
     },
     {
      "id": "mt-art-101",
@@ -3490,10 +3393,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 107"
       },
       {
-       "text": "XIV - indicar os usuários do Sistema de Gestão de Combustível, comunicando ao Núcleo Sistêmico/SAD sobre a necessidade de inclusão, exclusão ou alteração de usuários;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 107"
-      },
-      {
        "text": "XV - atestar a conformidade de seus processos;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 107"
       },
@@ -3600,7 +3499,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 107",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "reindexed": true,
+     "incisos_removidos": 1
     },
     {
      "id": "mt-art-108",
@@ -3764,7 +3665,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 113"
       },
       {
-       "text": "XIII - planejar, organizar e coordenar as atividades cívicas e sociais da Corporação, em ligação, no primeiro caso, com a Coordenadoria de Articulação e Integração Comunitária, cumprindo as normas do cerimonial publico e da etiqueta social;",
+       "text": "XIII - planejar, organizar e coordenar as atividades cívicas e sociais da Corporação, cumprindo as normas do cerimonial publico e da etiqueta social;",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 113"
       },
       {
@@ -3778,7 +3679,9 @@
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 113",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+     "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+     "adapted": true,
+     "original_caput": "Compete a Seção de Comunicação Social:"
     },
     {
      "id": "mt-art-114",
@@ -7325,7 +7228,7 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 57"
       },
       {
-       "text": "V – reunir a estatística institucional do CBMRO, oriundas da DOP e DSCIP, para inscrição no SINESP.",
+       "text": "V – reunir a estatística institucional do CBMRO, oriundas do Comando Operacional de Bombeiros e da Coordenadoria de Atividades Técnicas, para inscrição no SINESP.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 57"
       }
      ],
@@ -9251,10 +9154,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 237"
       },
       {
-       "text": "1.3 - Coordenadoria de Atendimento Pré-Hospitalar – CAPH;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 237"
-      },
-      {
        "text": "1.4 - Centro de Monitoramento, Controle e Comando de Operações.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 237"
       }
@@ -9263,7 +9162,9 @@
      "match": "exata",
      "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
      "adapted": true,
-     "original_caput": "A Diretoria de Operacional tem a seguinte constituição:"
+     "original_caput": "A Diretoria de Operacional tem a seguinte constituição:",
+     "reindexed": true,
+     "incisos_removidos": 1
     },
     {
      "id": "mt-art-240",
@@ -9455,47 +9356,6 @@
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 244",
      "match": "exata",
      "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)"
-    },
-    {
-     "id": "mt-art-245",
-     "kind": "incisos",
-     "editId": "reg:competencias-execucao/mt-art-245",
-     "caput": "Compete a Coordenadoria de Atendimento Pré- Hospitalar – CAPH:",
-     "items": [
-      {
-       "text": "I - coordenar as atividades do Serviço de Resgate e atendimento Pré-Hospitalar realizadas pelo CBMRO em todo o território do estadual;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      },
-      {
-       "text": "II - desenvolver atividades de estatística referentes ao Serviço de Resgate e Atendimento Pré-Hospitalar no CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      },
-      {
-       "text": "III - elencar as causas, consequências e efeitos no âmbito da sociedade rondoniense;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      },
-      {
-       "text": "IV - elaborar estudos, visando o estabelecimento de normas e procedimentos de atuação para o Serviço de Resgate e Atendimento Pré-Hospitalar no âmbito da Corporação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      },
-      {
-       "text": "V - subsidiar o Diretor e/ou Diretor Adjunto nos assuntos referentes à Seção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      },
-      {
-       "text": "VI – propor a edição e avaliar a execução de planos e ordens baixadas pelo Comandante-Geral, no que se referem ao Serviço de Resgate e Atendimento Pré-Hospitalar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      },
-      {
-       "text": "VII - exercer outros encargos que lhe forem atribuídos pelo Diretor ou Diretor Adjunto da DOp.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 245",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
-     "adapted": true,
-     "original_caput": "Compete a Coordenadoria de Atendimento Pré- Hospitalar – CAPH:"
     },
     {
      "id": "mt-art-246",
@@ -12472,7 +12332,7 @@
      "id": "mt-art-160",
      "kind": "incisos",
      "editId": "reg:ensino-instrucao/mt-art-160",
-     "caput": "A Diretoria de Ensino, Instrução e Pesquisa é o órgão responsável pela execução, apoio, planejamento, coordenação, fiscalização e controle das atividades referentes ao ensino e instrução dos Oficiais e Praças, fomentando a pesquisa e viabilizando a instrução continuada dos quadros no âmbito da instituição. Parágrafo Único O Centro de Treinamento, Ensino e Instrução-CTEI, o Centro de Capacitação Física-CCF e a Unidade de Colégio Bombeiro Militar são Unidades de execução do ensino com subordinação técnica à Coordenadoria de Educação, Ensino e Instrução.",
+     "caput": "A Diretoria de Ensino, Instrução e Pesquisa é o órgão responsável pela execução, apoio, planejamento, coordenação, fiscalização e controle das atividades referentes ao ensino e instrução dos Oficiais e Praças, fomentando a pesquisa e viabilizando a instrução continuada dos quadros no âmbito da instituição. Parágrafo Único O Centro de Treinamento, Ensino e Instrução-CTEI e a Unidade de Colégio Bombeiro Militar são Unidades de execução do ensino com subordinação técnica à Coordenadoria de Educação, Ensino e Instrução.",
      "items": [],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 160",
      "match": "exata",
@@ -12536,10 +12396,6 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 162"
       },
       {
-       "text": "2 - Coordenadoria de Seleção, Formação e Ensino – CEIP/1;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 162"
-      },
-      {
        "text": "3 - Escola de Aperfeiçoamento e Especialização, Especialização e Instrução – CEIP/2.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 162"
       },
@@ -12569,10 +12425,6 @@
       },
       {
        "text": "4.5 - Corpo de Alunos.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 162"
-      },
-      {
-       "text": "5 - Centro de Capacitação Física - CCF:",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 162"
       },
       {
@@ -12624,7 +12476,9 @@
      "match": "exata",
      "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
      "adapted": true,
-     "original_caput": "A Diretoria de Ensino, Instrução e Pesquisa tem a seguinte constituição:"
+     "original_caput": "A Diretoria de Ensino, Instrução e Pesquisa tem a seguinte constituição:",
+     "reindexed": true,
+     "incisos_removidos": 2
     },
     {
      "id": "mt-art-165",
@@ -12670,77 +12524,6 @@
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 165",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)"
-    },
-    {
-     "id": "mt-art-166",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-166",
-     "caput": "Compete a Coordenadoria de Recrutamento, Formação e Ensino – CEIP/1:",
-     "items": [
-      {
-       "text": "I - planejar, organizar, dirigir, controlar e executar atividades de recrutamento e seleção interna e externa, mantendo programas constantes de recrutamento e seleção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "II - administrar e executar, em conjunto com os demais setores competentes, os concursos públicos para admissão de pessoal aos cursos de formação, bem como processos seletivos internos aos cursos e ou estágios de formação, habilitação, atualização de conhecimentos ou especialização;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "III – elaborar, em conjunto com os demais setores competentes, editais, Instruções Técnicas, Manuais de Candidatos e executar demais atos administrativos necessários aos processos de recrutamento e seleção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "IV - colaborar na elaboração de editais e Instruções técnicas propondo à contratação de pessoas jurídicas especializadas a realização de concursos públicos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "V - elaborar e divulgar as Normas para Planejamento e Controle do Ensino-NPCE;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "VI - manter informações e dados estatísticos sobre sua área de atuação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "VII - confeccionar atos de convocação de militares para os cursos e estágios, quando estes o exigirem;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "VIII - assessorar, gerenciar, coordenar e fiscalizar todas as atividades relativas à Formação Profissional;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "IX - propor ao Diretor de Ensino os cursos de Formação Profissional;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "X- elaborar planejamento orçamentário referente à sua competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "XI - emitir pareceres a respeito de assuntos e requerimentos relativos à sua área de competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "XII - realizar pesquisas pedagógicas e avaliar programas de atividades técnico-pedagógicas, estudando medidas de avaliação da aprendizagem, planos de curso, matrizes curriculares relativas aos cursos de formação, com o objetivo de melhoria na formação profissional na instituição;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "XIII - elaborar o calendário de atividades de coordenação e controle de sua competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "XIV - responder solidariamente pela carga dos materiais disponibilizados à sua Coordenadoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      },
-      {
-       "text": "XV - realizar outras atribuições lhe delegadas relacionadas às suas atividades.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 166",
      "match": "exata",
      "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)"
     },
@@ -12881,18 +12664,6 @@
      "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
      "adapted": true,
      "original_caput": "São competências do Centro de Ensino e Instrução de Bombeiros:"
-    },
-    {
-     "id": "mt-art-171",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-171",
-     "caput": "O Centro de Capacitação Física – CCF é o órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, responsável pelas ações relacionadas com o desenvolvimento das atividades físicas e de desportos no âmbito do Corpo de Bombeiros Militar de Rondônia.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 171",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "O Centro de Capacitação Física – CCF é o órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, responsável pelas ações relacionadas com o desenvolvimento das atividades físicas e de desportos no âmbito do Corpo de Bombeiros Militar de Mato Grosso."
     },
     {
      "id": "mt-art-172",
@@ -13295,207 +13066,6 @@
      "original_caput": "São deveres dos componentes do corpo discente, além de outros previstos em leis e regulamentos:"
     },
     {
-     "id": "mt-art-179",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-179",
-     "caput": "O Centro de Capacitação Física – CCF é o órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, responsável pelas ações relacionadas com o desenvolvimento das atividades físicas e de desportos no âmbito do CBMRO.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 179",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "O Centro de Capacitação Física – CCF é o órgão de apoio da Diretoria de Ensino, Instrução e Pesquisa, responsável pelas ações relacionadas com o desenvolvimento das atividades físicas e de desportos no âmbito do CBMMT."
-    },
-    {
-     "id": "mt-art-180",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-180",
-     "caput": "São competências do Centro de Capacitação Física:",
-     "items": [
-      {
-       "text": "I - fomentar pesquisas no campo da Educação Física e Desportos, com vistas a aplicação no CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 180"
-      },
-      {
-       "text": "II - formar sargentos monitores de Educação Física no CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 180"
-      },
-      {
-       "text": "III - prestar assessoramento em assuntos relacionados com Educação Física e Desportos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 180"
-      },
-      {
-       "text": "IV - doutrinar e controlar a pratica da Educação Física no CBMRO, visando a melhoria da aptidão física e excelência do condicionamento físico do bombeiro militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 180"
-      },
-      {
-       "text": "V - gerir o espaço físico para a realização das práticas das atividades físicas, esportivas e servir como sede do Centro de Capacitação Física.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 180"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 180",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "São competências do Centro de Capacitação Física:"
-    },
-    {
-     "id": "mt-art-183",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-183",
-     "caput": "A Seção Administrativa tem como missão adotar medidas relativas a tramitação de documentos do CCF e processar a documentação especifica de sua área de atuação interna.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 183",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)"
-    },
-    {
-     "id": "mt-art-184",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-184",
-     "caput": "Compete a Seção Administrativa do Centro de Capacitação Física:",
-     "items": [
-      {
-       "text": "I - adotar providências relativas à documentação realizando sua recepção, despacho, distribuição, arquivamento e organização de correspondências;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184"
-      },
-      {
-       "text": "II - preparar toda documentação para a publicação no BGE, referentes à Educação Física e Desportos no âmbito do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184"
-      },
-      {
-       "text": "III - controlar a entrada e saída das correspondências via protocolo e seu processamento;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184"
-      },
-      {
-       "text": "IV - exercer o levantamento, controle, manutenção e atualização do material carga do CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184"
-      },
-      {
-       "text": "V - providenciar a confecção e entrega das documentações mensais referentes à administração do CCF e demais documentos que por ventura sejam solicitados ou determinados ao CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184"
-      },
-      {
-       "text": "VI - exercer o controle do pessoal do CCF.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 184",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "Compete a Seção Administrativa do Centro de Capacitação Física:"
-    },
-    {
-     "id": "mt-art-185",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-185",
-     "caput": "A Seção Técnica e de Desportos tem como missão aplicação das diretrizes previstas em legislação do CCF relacionados ao Treinamento Físico Bombeiro Militar além do planejamento, execução e orientação de todas as atividades relacionadas com o desporto no âmbito do CBMRO.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 185",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "A Seção Técnica e de Desportos tem como missão aplicação das diretrizes previstas em legislação do CCF relacionados ao Treinamento Físico Bombeiro Militar além do planejamento, execução e orientação de todas as atividades relacionadas com o desporto no âmbito do CBMMT."
-    },
-    {
-     "id": "mt-art-186",
-     "kind": "incisos",
-     "editId": "reg:ensino-instrucao/mt-art-186",
-     "caput": "Compete a Seção Técnica e de Desportos:",
-     "items": [
-      {
-       "text": "I - aplicar as diretrizes previstas nos manuais, portarias e outros documentos do CCF atrelados ao Treinamento Físico Bombeiro Militar, através da permanente realização e fiscalização das atividades propostas pelo CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "II - coordenar junto com os oficiais de educação física e monitores do CCF das respectivas unidades bombeiros militares a realização do treinamento físico e os resultados obtidos através do TAFBM no âmbito do CBMRO, conforme Portaria em vigor;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "III - planejar e realizar, quando solicitado, programas de treinamento físico da tropa operacional e administrativa do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "IV - fazer as previsões de materiais necessários à execução do calendário esportivo do CBMRO, das atividades físicas oferecidas pelo CCF e das necessidades de materiais esportivos das unidades bombeiros militares;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "V - manter e controlar a entrada e saída do material esportivo pertencente ao CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "VI - planejar, coordenar, orientar e fiscalizar as atividades físicas oferecidas pelo CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "VII - realizar estudos sobre o perfil de atividades físicas e condição física dos integrantes do CBMRO, sugerindo ao Diretor da (Coordenadoria de Educação, Ensino e Instrução) planos de treinamento, os quais objetivem a recuperação, manutenção e aperfeiçoamento da condição física do bombeiro militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "VIII - planejar e sugerir os testes físicos para avaliação dos candidatos que ingressam na Corporação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "IX - avaliar os testes físicos aplicados aos candidatos que participam do processo seletivo para ingresso na Corporação e, quando necessário, sugerir as devidas alterações nos testes físicos em vigor;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "X - avaliar e prescrever programas de treinamento físico para os bombeiros militares que frequentam as atividades oferecidas pelo CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XI - analisar os resultados obtidos do TAF/CBMRO e confeccionar relatório, a fim de subsidiar as ações do CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XII - assessorar a seção de treinamento físico quanto às solicitações de TAFBM alternativo;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XIII - planejar, executar, coordenar e orientar todas as atividades relacionadas com ensino desportivo;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XIV - planejar e realizar os programas de treinamento físico dos diversos cursos de formação, aperfeiçoamento, habilitação e especialização realizados no âmbito do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XV - estimular a prática da atividade física, conscientizando o bombeiro militar da sua importância através de ações educativas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XVI - proceder à elaboração de manuais e outros documentos de instruções indispensáveis às atividades do CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XVII - assessorar na apreciação dos currículos, programas de matérias relativos à Educação Física.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XVIII - planejar a participação da Corporação em competições desportivas no âmbito externo à Corporação, quando convidado por instituições civis e militares;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XIX - planejar e realizar o calendário desportivo do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XX - planejar e realizar os treinamentos específicos às diversas equipes desportivas que representam o CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      },
-      {
-       "text": "XXI - planejar, coordenar, orientar e fiscalizar as atividades desportivas oferecidas pelo CCF.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 186",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "Compete a Seção Técnica e de Desportos:"
-    },
-    {
      "id": "mt-art-187",
      "kind": "incisos",
      "editId": "reg:ensino-instrucao/mt-art-187",
@@ -13795,13 +13365,15 @@
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 196"
       },
       {
-       "text": "XIII - proceder, com honestidade, nas avaliações e demais trabalhos escolares. Da Diretoria de Segurança Contra Incêndio e Pânico – DSCIP",
+       "text": "XIII - proceder, com honestidade, nas avaliações e demais trabalhos escolares.",
        "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 196"
       }
      ],
      "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 196",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)"
+     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
+     "adapted": true,
+     "original_caput": "Constituem deveres do Corpo de Alunos:"
     }
    ],
    "alternatives": {
@@ -14289,958 +13861,475 @@
    "status": "rascunho",
    "articles": [
     {
-     "id": "mt-art-197",
+     "id": "ro-art-1",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-197",
-     "caput": "A Diretoria de Segurança Contra Incêndio e Pânico (DSCIP) é o órgão responsável pelo planejamento, execução, coordenação e controle de todas as atividades concernentes a segurança contra incêndio e pânico das instalações, edificações e locais de risco.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 197",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
-    },
-    {
-     "id": "mt-art-198",
-     "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-198",
-     "caput": "São competências da Diretoria de Segurança Contra Incêndio e Pânico:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-1",
+     "caput": "A Coordenadoria de Atividades Técnicas – CAT é o órgão máximo responsável pelo Sistema de Atividades Técnicas do Corpo de Bombeiros Militar do Estado de Rondônia, competindo-lhe o controle e a observância dos requisitos técnicos contra incêndio e pânico das edificações e áreas de risco no Estado, bem como o planejamento, a normatização, a fiscalização, a análise de projetos de edificações, a vistoria e a emissão de pareceres.",
      "items": [
       {
-       "text": "I - regulamentar as medidas de segurança contra incêndio e pânico no âmbito do Estado;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "II - realizar pesquisa e perícia de incêndio, relacionadas com sua competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "III - credenciar oficiais, praças e profissionais civis lotados no Corpo Bombeiros Militar por meio de cursos de habilitação e treinamentos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "IV - analisar os documentos que compõe os Processos de Segurança Contra Incêndio e Pânico com o fim de verificar a conformidade destes com esta Lei;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "V - realizar a vistoria nas edificações, instalações e locais de risco permanentes ou temporárias;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "VI - expedir os Alvarás de Prevenção Contra Incêndio e Pânico do Corpo de Bombeiros Militar (APCIP) e de Aprovação do Processo de Segurança Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "VII - cassar os Alvarás de Prevenção Contra Incêndio e Pânico e os de Aprovação do Processo de Segurança Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "VIII - notificar, multar, interditar ou embargar as edificações, instalações e locais de risco que não estiverem em conformidade com as exigências desta legislação e normas técnicas do Corpo de Bombeiros Militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
-      },
-      {
-       "text": "IX - capacitar, fiscalizar e controlar as atividades dos órgãos e das entidades civis que atuam em sua área de competência.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198"
+       "text": "Parágrafo único. O cargo de Coordenador de Atividades Técnicas é privativo de Oficial da ativa do último posto pertencente ao Quadro de Oficiais Combatentes do Estado de Rondônia.",
+       "source": "LOB, Art. 18, caput, e Art. 19; Decreto nº 21.425/2016, Arts. 2º e 5º"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 198",
+     "source": "LOB, Art. 18, caput, e Art. 19; Decreto nº 21.425/2016, Arts. 2º e 5º",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. I — Do órgão responsável",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, caput, e Art. 19; Decreto nº 21.425/2016, Arts. 2º e 5º"
     },
     {
-     "id": "mt-art-199",
+     "id": "ro-art-2",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-199",
-     "caput": "A Diretoria de Segurança Contra Incêndio e Pânico tem a seguinte constituição:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-2",
+     "caput": "A Coordenadoria de Atividades Técnicas tem a seguinte estrutura:",
      "items": [
       {
-       "text": "1 - Diretoria Adjunta;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
+       "text": "I - Coordenador;",
+       "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
       },
       {
-       "text": "1.1 - Seção Administrativa - SAdm;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
       },
       {
-       "text": "1.1.1 - Subseção de Protocolo;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
       },
       {
-       "text": "1.1.2 - Tesouraria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
+       "text": "IV - Seção de Estudos Técnicos;",
+       "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
       },
       {
-       "text": "1.1.3 - Subseção de Arrecadação e Estatística.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
+       "text": "V - Seção de Planejamento, Fiscalização e Suporte Técnico;",
+       "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
       },
       {
-       "text": "2 - Coordenadoria de Estudos e Análise de Processos – CCIP/1;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "2.1 - Seção de Análise de Processos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "2.2 - Seção de Arquivos.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "3 - Coordenadoria de Fiscalização – CCIP/2;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "3.1 - Seção de Fiscalização;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "3.2 - Seção de Credenciamento e Cadastramento.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "4 - Coordenadoria de Legislação e Pareceres – CCIP/3;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "4.1 - Seção de Legislação e Normatização;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "4.2 - Seção de Pareceres.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "5 - Coordenadoria de Perícia Técnica – CCIP/4;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "6 - Coordenadoria de Hidrantes – CCIP/5;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
-      },
-      {
-       "text": "7 - Seções de Segurança Contra Incêndio e Pânico - SSCIP.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199"
+       "text": "VI - Diretorias de Atividades Técnicas.",
+       "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 199",
+     "source": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. I — Do órgão responsável",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 1º (red. Lei nº 4.303/2018 e Lei nº 4.488/2019)"
     },
     {
-     "id": "mt-art-202",
+     "id": "ro-art-3",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-202",
-     "caput": "Compete a Seção Administrativa da Diretoria Contra Incêndio e Pânico:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-3",
+     "caput": "Compete à Coordenadoria de Atividades Técnicas:",
      "items": [
       {
-       "text": "I - administrar as atividades relativas á Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
+       "text": "I - estudar, planejar, analisar e elaborar as normas que disciplinam a segurança contra incêndio e pânico no Estado de Rondônia;",
+       "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
       },
       {
-       "text": "II - fiscalizar, cumprir e fazer cumprir as normas regulamentares, diretrizes, planos e ordens emanadas do escalão superior;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
+       "text": "II - regulamentar as medidas de segurança contra incêndio e pânico por intermédio de Instruções Técnicas, submetendo-as à homologação do Comandante-Geral;",
+       "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
       },
       {
-       "text": "III - elaborar a documentação administrativa originária, correspondente a Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
+       "text": "III - fiscalizar o cumprimento das normas de segurança contra incêndio e pânico e promover programas de educação pública sobre a matéria;",
+       "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
       },
       {
-       "text": "IV - protocolar toda correspondência recebida e/ou enviada pela Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
+       "text": "IV - orientar e supervisionar tecnicamente as Diretorias de Atividades Técnicas nas suas respectivas áreas de abrangência;",
+       "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
       },
       {
-       "text": "V - coordenar e controlar os serviços de protocolo;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
+       "text": "V - emitir respostas a consultas técnicas e pareceres técnicos referentes à segurança contra incêndio e pânico;",
+       "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
       },
       {
-       "text": "VI - organizar e gerir o material de expediente técnico e administrativo;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "VII - organizar e manter em dia o arquivo administrativo da Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "VIII - confeccionar mapas e relatórios periódicos solicitados pelo Diretor;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "IX - realizar os encargos específicos que lhe forem atribuídos pelo Diretor Adjunto e tarefas atinentes a pessoal, informações, instrução e operações, e logística.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "X - assessorar o Diretor em todos os assuntos relativos à tramitação de documentação, arquivo e controle patrimonial da Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "XI – proceder ao arquivamento e desarquivamento de processos.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "XII - controlar a escala de férias e licença prêmio do pessoal da Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "XIII - Organizar e manter em dias as relações nominais de oficiais e praças para efeito das escalas de serviços normais e extraordinárias;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "XIV – Organizar e manter o plano de chamada, com a relação nominal dos oficiais e praças da Diretoria, com os respectivos endereços, telefones e outros dados necessários, destinando um à via ao Diretor Adjunto;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
-      },
-      {
-       "text": "XV - elaborar as Normas Gerais de Ação (NGA) da Diretoria para aprovação do Chefe do Estado Maior Geral.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202"
+       "text": "VI - credenciar os integrantes do Sistema de Segurança Contra Incêndio e Pânico por intermédio de cursos ou estágios de capacitação e de treinamento, a fim de realizar as análises dos projetos e as vistorias das edificações e áreas de risco.",
+       "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 202",
+     "source": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. I — Do órgão responsável",
+     "autoral": true,
+     "fundamento": "Decreto nº 21.425/2016, Arts. 2º, 5º, 7º e 8º"
     },
     {
-     "id": "mt-art-203",
+     "id": "ro-art-4",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-203",
-     "caput": "Compete a Subseção de Protocolo:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-4",
+     "caput": "Compete à Seção de Estudos Técnicos:",
      "items": [
       {
-       "text": "I – realizar o atendimento ao público;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
+       "text": "I - realizar os estudos técnicos que subsidiem a elaboração e a revisão das Instruções Técnicas do Corpo de Bombeiros Militar;",
+       "source": "LOB, Art. 18, § 1º, IV; Decreto nº 21.425/2016, Arts. 12 e 13"
       },
       {
-       "text": "II - receber documentos e processos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
+       "text": "II - analisar norma técnica ou literatura estrangeira apresentada pelo interessado, verificando sua aplicabilidade aos objetivos do Regulamento de Segurança Contra Incêndio e Pânico do Estado;",
+       "source": "LOB, Art. 18, § 1º, IV; Decreto nº 21.425/2016, Arts. 12 e 13"
       },
       {
-       "text": "III – proceder o cadastramento de processos e documentos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
+       "text": "III - instruir os casos que necessitem de soluções técnicas diversas das previstas em Instrução Técnica, submetendo-os à Comissão Técnica;",
+       "source": "LOB, Art. 18, § 1º, IV; Decreto nº 21.425/2016, Arts. 12 e 13"
       },
       {
-       "text": "IV – realizar a classificação e expedição de documentos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "V – promover pesquisas sobre processo(s) antecedente(s);",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "VI - autuação ou juntada ou apensamento, conforme o caso de processo(s);",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "VII – realizar a distribuição interna dos documentos e processos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "VIII - controlar a movimentação de processos e documentos:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "IX – informar o andamento de processos e documentos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "X – emitir relatórios para controle de movimentação de processos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
-      },
-      {
-       "text": "XI - tramitar documentos e processos.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203"
+       "text": "IV - manter atualizado o acervo técnico e normativo da Coordenadoria.",
+       "source": "LOB, Art. 18, § 1º, IV; Decreto nº 21.425/2016, Arts. 12 e 13"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 203",
+     "source": "LOB, Art. 18, § 1º, IV; Decreto nº 21.425/2016, Arts. 12 e 13",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. II — Das Seções da Coordenadoria",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 1º, IV; Decreto nº 21.425/2016, Arts. 12 e 13"
     },
     {
-     "id": "mt-art-204",
+     "id": "ro-art-5",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-204",
-     "caput": "Compete a Tesouraria:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-5",
+     "caput": "Compete à Seção de Planejamento, Fiscalização e Suporte Técnico:",
      "items": [
       {
-       "text": "I - planejar, organizar, dirigir, coordenar, controlar, avaliar e executar as atividades inerentes à área de sua respectiva responsabilidade de acordo com as diretrizes estabelecidas pela Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 204"
+       "text": "I - planejar e coordenar as ações de fiscalização das medidas de segurança contra incêndio e pânico nas edificações e áreas de risco;",
+       "source": "LOB, Art. 18, § 1º, V; Decreto nº 21.425/2016, Art. 15"
       },
       {
-       "text": "II – receber, controlar e prestar conta dos valores referentes a etapa alimentação do efetivo previsto para a Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 204"
+       "text": "II - consolidar os dados das Diretorias de Atividades Técnicas e produzir os indicadores do Sistema de Atividades Técnicas;",
+       "source": "LOB, Art. 18, § 1º, V; Decreto nº 21.425/2016, Art. 15"
       },
       {
-       "text": "III - emitir relatórios administrativos mensais de prestação de contas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 204"
+       "text": "III - prestar suporte técnico às Diretorias e Seções de Atividades Técnicas na aplicação das Instruções Técnicas;",
+       "source": "LOB, Art. 18, § 1º, V; Decreto nº 21.425/2016, Art. 15"
       },
       {
-       "text": "IV - encaminhar os assuntos pertinentes de sua área de responsabilidade para análise do Diretor;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 204"
-      },
-      {
-       "text": "V- exercer outras atribuições que lhe forem cometidas, em suas respectivas competências, pelo Diretor e tudo o mais inerente aos encargos legais e atribuições por ele delegadas.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 204"
+       "text": "IV - acompanhar a tramitação dos processos administrativos do Sistema de Segurança Contra Incêndio e Pânico, na forma de Instrução Técnica específica aprovada por Portaria.",
+       "source": "LOB, Art. 18, § 1º, V; Decreto nº 21.425/2016, Art. 15"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 204",
+     "source": "LOB, Art. 18, § 1º, V; Decreto nº 21.425/2016, Art. 15",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. II — Das Seções da Coordenadoria",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 1º, V; Decreto nº 21.425/2016, Art. 15"
     },
     {
-     "id": "mt-art-205",
+     "id": "ro-art-6",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-205",
-     "caput": "Compete a Subseção de Arrecadação e Estatística:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-6",
+     "caput": "As Diretorias de Atividades Técnicas – DAT são os órgãos de execução do Sistema de Atividades Técnicas, uma em cada Grupamento de Bombeiro Militar, e obedecem, nas suas respectivas áreas de abrangência, às disposições legais instituídas pela Coordenadoria de Atividades Técnicas.",
      "items": [
       {
-       "text": "I - assessorar o Chefe da Seção Administrativa em todos os assuntos referentes à arrecadação e estatística da Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 205"
-      },
-      {
-       "text": "II - elaborar e manter atualizado o quadro estatístico das atividades realizadas pela Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 205"
-      },
-      {
-       "text": "III - efetuar estudos visando à otimização dos dados estatísticos gerados pela Diretoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 205"
-      },
-      {
-       "text": "IV - executar outras atribuições referentes a Subseção, desde que determinadas pelo Diretor da DSCIP;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 205"
+       "text": "Parágrafo único. As Diretorias de Atividades Técnicas são as de Porto Velho, Ariquemes, Ji-Paraná, Cacoal, Rolim de Moura e Vilhena.",
+       "source": "LOB, Art. 18, § 1º, VI; Decreto nº 21.425/2016, Art. 5º, § 1º; organograma oficial do CBMRO"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 205",
+     "source": "LOB, Art. 18, § 1º, VI; Decreto nº 21.425/2016, Art. 5º, § 1º; organograma oficial do CBMRO",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. III — Das Diretorias de Atividades Técnicas",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 1º, VI; Decreto nº 21.425/2016, Art. 5º, § 1º; organograma oficial do CBMRO"
     },
     {
-     "id": "mt-art-206",
+     "id": "ro-art-7",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-206",
-     "caput": "Compete à coordenadoria de estudos e analises de processos – CCIP 1:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-7",
+     "caput": "Cada Diretoria de Atividades Técnicas tem a seguinte estrutura:",
      "items": [
       {
-       "text": "I - cumprir e fazer cumprir leis, decretos e normas regulamentadas pelo CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "I - Diretor;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "II - tomar iniciativa das providências de suas responsabilidades;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "III - propor estudos e levantamento de áreas de risco e/ou edificações em virtude da inexistência ou insuficiência da segurança dos locais;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "IV - orientar, quando necessário, o Diretor e o Diretor Adjunto nos assuntos atinentes da Coordenadoria",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "IV - Seção de Vistoria;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "V - manter boa política com os demais chefes das coordenadorias da DSCIP e seus subordinados com o fim de auxílio mútuo para a execução de suas tarefas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "V - Seção de Análise de Projetos;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "VI - propor qualificação para os analistas, chefes das SSCIP’s e coordenadores;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "VI - Seção de Investigação e Prevenção de Incêndio;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "VII - propor mudanças no site do CBMRO com o fim de otimizar os serviços realizados e aumentar as informações ao público;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "VII - Seção de Hidrantes;",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       },
       {
-       "text": "VIII - propor mudanças em leis, decretos e normas relativas aos processos no âmbito da DSCIP e CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "IX - propor modelo e mudanças de quadro estatístico para as OST encaminharem ao setor de estatística da DSCIP;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "X - submeter a consideração do seu superior imediato assuntos que excedam sua competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XI - desempenhar as atividades compatíveis com a função como, por exemplo, instrução de cursos, palestras ou mesmo compor comissões sobre assuntos atinentes ao CBMRO ou área específica de formação profissional;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XII - analisar e reanalisar os Processos de Segurança Contra Incêndio e Pânico (PSCIP’s), as consultas prévias, as informações técnicas, as alterações de dados, os PSCIP’s de eventos de acordo com as normas e instruções normativas que define os referidos casos acima;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XIII - julgar, em caso de nomeação na participação de comissão, os casos omissos não abrangidos pelas normas adotadas como necessárias junto com a CCIP-3;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XIV - organizar, promover, estudar e definir a manutenção dos equipamentos, dos instrumentos, dos móveis e dos materiais da Coordenadoria, com vistas a otimização dos trabalhos realizados pela seção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XV - analisar e estudar os processos de segurança contra incêndio e pânico protocolizados, aprovando ou emitindo o relatório de não conformidade, de acordo com a legislação vigente. Ou ainda, sugerir ao Diretor Adjunto a instauração de comissão técnica, caso necessário;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XVI - promover, estudar e avaliar com vistas a subsidiar as Decisões Técnicas referente aos estudos de casos específicos que visem o aprimoramento, a legalidade, e celeridade do serviço, dos casos omissos, tanto a pedido como de oficio, no âmbito do Estado de Rondônia e consonância com a CCIP-3;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XVII - subsidiar os superiores nos estudos que lhes forem encaminhados, com base na legislação vigente e estudos científicos publicados;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XVIII - conhecer as normatizações que regulam a segurança contra incêndio e pânico, bem como buscar o aprimoramento e a formação continuada, e para tal, com o respaldo da instituição, em parcerias com instituições que promovam o conhecimento técnico-científico, com base no princípio da eficiência e legitimidade dos atos administrativos, considerando a responsabilidade intrínseca de sua atribuição e ainda a dinâmica das normatizações e da evolução tecnológica;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XIX - promover e informar ao Diretor Adjunto a disseminação do conhecimento de casos específicos, bem como a atualização necessária dos demais componentes das DSCIP e SSCIP’s, com vistas à segurança da vida e do patrimônio e aprimoramento técnico-científico de todos",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XX - reconhecer e repassar ao Diretor Adjunto as dificuldades na análise de processos. Ou ainda, apresentar normas que possam subsidiar a análise dos PSCIP´s;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXI - informar ao Diretor Adjunto quanto aos PSCIP´s protocolizados que foram elaborados por profissionais que tenham relação de parentesco com militares da DSCIP para que os procedimentos internos visem à imparcialidade;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXII - sugerir e submeter ao Diretor Adjunto às argumentações quanto à conveniência e oportunidades da s decisões dos casos omissos, pautadas sempre com vistas a manter a incolumidade dos ocupantes das edificações, a segurança da vida e do patrimônio;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXIII - compor, como membro, comissão técnica para solução de casos omissos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXIV - compor, como membro, comissão interdisciplinar para a regulamentação, revisão e estudos de leis, normas técnicas e demais estudos que a DSCIP promova;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXV - estudar lei, normas, buscar conhecimento no âmbito do Estado ou fora, através também de entidades de estudos de pesquisas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXVI - buscar informações com profissionais das áreas afins de atuação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXVII – informar, mediante indícios, seu superior imediato Diretor Adjunto sobre possível suspeita de fraudes ou outra conduta não prevista no estatuto dos sistemas da DSCIP para que seja aberto procedimento administrativo ou até mesmo judicial para que as medidas legais sejam aplicadas nos casos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
-      },
-      {
-       "text": "XXVIII - procurar utilizar uma linguagem única entre os analistas quanto aos requisitos de segurança em PSCIP na medida do possível e através de instrução normativa.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206"
+       "text": "VIII - Seção de Atividades Técnicas.",
+       "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 206",
+     "source": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP",
-     "adapted": true,
-     "original_caput": "Compete à coordenadoria de estudos e analises de processos – CCIP 1:"
+     "heading": "Cap. III — Das Diretorias de Atividades Técnicas",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 1º, VI, alíneas \"a\" a \"h\" (red. Lei nº 4.488/2019)"
     },
     {
-     "id": "mt-art-207",
+     "id": "ro-art-8",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-207",
-     "caput": "Compete a Seção de Análise de Processos:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-8",
+     "caput": "Compete à Seção de Vistoria:",
      "items": [
       {
-       "text": "I - cumprir e fazer cumprir as atribuições da Coordenadoria, tomando as iniciativas das providências de sua responsabilidade;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
+       "text": "I - realizar as vistorias técnicas nas edificações e áreas de risco, verificando a execução das medidas de segurança contra incêndio e pânico previstas no projeto aprovado e nas Instruções Técnicas;",
+       "source": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º"
       },
       {
-       "text": "II - assessorar o Coordenador em todos os assuntos relativos a análise de processos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
+       "text": "II - expedir o Auto de Vistoria Contra Incêndio e Pânico – AVCIP e o Auto de Conformidade de Procedimento Simplificado – ACPS, este para as edificações classificadas como de risco baixo;",
+       "source": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º"
       },
       {
-       "text": "III - adotar medidas de organização e métodos que visem a racionalização e melhor eficiência dos trabalhos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
+       "text": "III - realizar a vistoria de ofício, inopinada, ou mediante solicitação do proprietário, do responsável pelo uso, do responsável técnico ou da autoridade competente;",
+       "source": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º"
       },
       {
-       "text": "IV - prestar informações e emitir pareceres sobre os assuntos afetos a sua Seção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
+       "text": "IV - vistoriar obrigatoriamente as estruturas temporárias e os eventos temporários, exigindo a respectiva Anotação, Registro ou Termo de Responsabilidade Técnica;",
+       "source": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º"
       },
       {
-       "text": "V - propor ao Coordenador estudos e levantamentos das áreas de risco em bairros e/ou edificações em virtude da inexistência ou insuficiência de segurança;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "VI - analisar e aprovar os Projetos de Segurança Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "VII - elaborar certidões de exigências para as edificações;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "VIII - manter contato com a Prefeitura Municipal sobre assuntos relativos a Projetos de Segurança Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "IX - manter estudos necessários para atualização permanente sobre assuntos técnicos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "X - desempenhar outras atividades compatíveis com a função;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "XI - encaminhar ao Coordenador da CCIP-1 as dúvidas e contradições encontradas em normas para julgamento. O coordenador deverá, quando a situação exigir, encaminhar a questão para o setor de Legislação e Pareceres (CCIP-3) para definição ou abertura de comissão para avaliação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
-      },
-      {
-       "text": "XII - quando ao sair de férias, LP e outros, analisar todos os PSCIP´s que estão em sua carga.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207"
+       "text": "V - instruir o procedimento administrativo de cassação do AVCIP ou do ACPS quando constatada irregularidade posterior à emissão.",
+       "source": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 207",
+     "source": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. IV — Das Seções das Diretorias",
+     "autoral": true,
+     "fundamento": "Decreto nº 21.425/2016, Arts. 7º, V, VI e VIII, e Art. 10, §§ 1º a 7º"
     },
     {
-     "id": "mt-art-208",
+     "id": "ro-art-9",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-208",
-     "caput": "Compete a Seção de Arquivos:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-9",
+     "caput": "Compete à Seção de Análise de Projetos:",
      "items": [
       {
-       "text": "I - assessorar o Coordenador em todos os assuntos relativos ao arquivo de projetos analisados pela Coordenadoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 208"
+       "text": "I - analisar o Projeto de Proteção Contra Incêndio e Pânico – PPCIP, deferindo-o quando atendidas as exigências do Regulamento de Segurança Contra Incêndio e Pânico do Estado e das Instruções Técnicas;",
+       "source": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º"
       },
       {
-       "text": "II - manter organizado o arquivo de projetos analisados pela Seção de Análise;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 208"
+       "text": "II - motivar o indeferimento do PPCIP com base na inobservância, pelo interessado, das disposições daquele Regulamento e das Instruções Técnicas;",
+       "source": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º"
       },
       {
-       "text": "III - adotar medidas de organização e métodos que visem a racionalização e melhor eficiência dos trabalhos da Seção.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 208"
+       "text": "III - conferir se as medidas de segurança foram projetadas por profissional legalmente habilitado e registrado no respectivo Conselho Regional;",
+       "source": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º"
+      },
+      {
+       "text": "IV - manter o resultado da análise à disposição do interessado na seção de atividades técnicas em que o processo se iniciou;",
+       "source": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º"
+      },
+      {
+       "text": "V - assegurar ao interessado, mediante o pagamento da taxa, o direito a mais 2 (duas) reanálises do mesmo projeto.",
+       "source": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 208",
+     "source": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. IV — Das Seções das Diretorias",
+     "autoral": true,
+     "fundamento": "Decreto nº 21.425/2016, Art. 7º, IV, e Art. 9º, §§ 1º a 7º"
     },
     {
-     "id": "mt-art-209",
+     "id": "ro-art-10",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-209",
-     "caput": "Compete a Coordenadoria de Fiscalização – CCIP 2:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-10",
+     "caput": "Compete à Seção de Investigação e Prevenção de Incêndio:",
      "items": [
       {
-       "text": "I - cumprir e fazer cumprir a legislação estadual sobre segurança contra incêndio e pânico e as normas técnicas do Corpo de Bombeiros, quanto às atribuições de sua coordenadoria, tomando as iniciativas das providências de sua responsabilidade;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
+       "text": "I - apurar as causas, o desenvolvimento e as consequências dos incêndios atendidos pelo CBMRO, mediante exame técnico das edificações, materiais e equipamentos, no local ou em laboratório especializado;",
+       "source": "LOB, Art. 2º, VIII e X, e Art. 18, § 1º, VI, \"f\"; Decreto nº 21.425/2016, Art. 4º, XVII"
       },
       {
-       "text": "II - assessorar o Diretor de Segurança Contra Incêndio e Pânico em todos os assuntos relativos à fiscalização e credenciamento;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
+       "text": "II - produzir laudo técnico pericial das ocorrências de incêndio e explosão relacionadas com a competência da Corporação;",
+       "source": "LOB, Art. 2º, VIII e X, e Art. 18, § 1º, VI, \"f\"; Decreto nº 21.425/2016, Art. 4º, XVII"
       },
       {
-       "text": "III - adotar medidas de organização e métodos que visem à racionalização e melhor eficiência dos trabalhos da coordenadoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
+       "text": "III - subsidiar, com os resultados da investigação, o aprimoramento técnico das medidas de segurança contra incêndio e pânico e a revisão das Instruções Técnicas;",
+       "source": "LOB, Art. 2º, VIII e X, e Art. 18, § 1º, VI, \"f\"; Decreto nº 21.425/2016, Art. 4º, XVII"
       },
       {
-       "text": "IV - prestar informações sobre os demais assuntos atinentes ao serviço;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "V - orientar os chefes das seções nos assuntos relativos à seção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "VI - manter boa política com os demais coordenadores da Diretoria de Segurança Contra Incêndio e Pânico, com o fim de auxílio mútuo para o exercício de suas tarefas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "VII - realizar vistoria técnica nas edificações onde foram solicitados os serviços;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "VIII - cumprir os prazos estabelecidos para realização dos serviços;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "IX - exercer poder de polícia para notificar, multar, embargar e interditar edificações, instalações e locais de risco permanentes ou temporários que não estiverem em conformidade com as exigências da legislação de segurança contra incêndio e pânico do Estado e normas técnicas do Corpo de Bombeiros Militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "X - fiscalizar locais, edificações e instalações permanentes ou temporárias onde houver risco de incêndio, pânico e a vida de pessoas mesmo quando o serviço não for solicitado;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "XI - expedir Alvará de Prevenção Contra Incêndio e Pânico do Corpo de Bombeiros Militar quando for constatado conformidade das edificações, instalações e locais de risco permanentes ou temporários com o processo aprovado em análise;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "XII - controlar o credenciamento de empresas e profissionais liberais que atuem na área de segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "XIII - emanar doutrina e jurisprudência sobre fiscalização para todas as seções de segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "XIV - orientar e coordenar as ações de fiscalização realizadas pelas seções segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
-      },
-      {
-       "text": "XV - propor a participação da DSCIP em cursos, palestras, congressos, seminários relacionados com serviços técnicos.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209"
+       "text": "IV - executar as ações de prevenção e de educação pública contra incêndio e pânico na área de abrangência da Diretoria.",
+       "source": "LOB, Art. 2º, VIII e X, e Art. 18, § 1º, VI, \"f\"; Decreto nº 21.425/2016, Art. 4º, XVII"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 209",
+     "source": "LOB, Art. 2º, VIII e X, e Art. 18, § 1º, VI, \"f\"; Decreto nº 21.425/2016, Art. 4º, XVII",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. IV — Das Seções das Diretorias",
+     "autoral": true,
+     "fundamento": "LOB, Art. 2º, VIII e X, e Art. 18, § 1º, VI, \"f\"; Decreto nº 21.425/2016, Art. 4º, XVII"
     },
     {
-     "id": "mt-art-210",
+     "id": "ro-art-11",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-210",
-     "caput": "Compete a Seção de Fiscalização:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-11",
+     "caput": "Compete à Seção de Hidrantes:",
      "items": [
       {
-       "text": "I - assessorar o Diretor nos assuntos relativos à Fiscalização;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
+       "text": "I - elaborar estudos e projetos para a implantação e a manutenção da rede pública de hidrantes, em articulação com os órgãos e as empresas estaduais e municipais competentes;",
+       "source": "LOB, Art. 18, § 1º, VI, \"g\""
       },
       {
-       "text": "II - supervisionar, orientar e fiscalizar os órgãos das Unidades Operacionais que realizem vistorias para liberação de Alvarás de Segurança Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
+       "text": "II - cadastrar, sinalizar e manter atualizado o registro dos hidrantes públicos existentes na área de abrangência da Diretoria;",
+       "source": "LOB, Art. 18, § 1º, VI, \"g\""
       },
       {
-       "text": "III - realizar vistoria para liberação de Alvará de funcionamento, para fins de “HABITE -SE”, e, a pedido, quando determinado pelo órgão de direção setorial;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
+       "text": "III - fiscalizar as condições de funcionamento e de acesso dos hidrantes públicos, comunicando as irregularidades à concessionária responsável;",
+       "source": "LOB, Art. 18, § 1º, VI, \"g\""
       },
       {
-       "text": "IV - emitir relatórios técnicos de vistorias realizadas a pedido ou inopinadas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "V - informar o Diretor Adjunto quaisquer alterações verificadas nas vistorias realizadas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "VI - notificar os responsáveis pelos estabelecimentos ou edificações que se encontrem em desacordo com as normas exigidas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "VII - fornecer laudo de exigência ao responsável pelo estabelecimento ou edificação que se encontre em desacordo com as Normas de Segurança Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "VIII - fiscalizar locais, edificações e instalações permanentes ou temporárias onde houver risco de incêndio, pânico e a vida de pessoas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "IX - prestar informações e emitir pareceres sobre os demais assuntos atinentes ao serviço;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "X - expedir Alvará de Prevenção Contra Incêndio e Pânico do Corpo de Bombeiros Militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
-      },
-      {
-       "text": "XI - notificar, multar, embargar e interditar edificações, instalações e locais de risco permanentes ou temporários que não estiverem em conformidade com as exigências da legislação de segurança contra incêndio e pânico do Estado e normas técnicas do Corpo de Bombeiros Militar.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210"
+       "text": "IV - subsidiar as guarnições com as informações de disponibilidade e vazão da rede de hidrantes.",
+       "source": "LOB, Art. 18, § 1º, VI, \"g\""
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 210",
+     "source": "LOB, Art. 18, § 1º, VI, \"g\"",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. IV — Das Seções das Diretorias",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 1º, VI, \"g\""
     },
     {
-     "id": "mt-art-211",
+     "id": "ro-art-12",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-211",
-     "caput": "Compete a Seção de Credenciamento e Cadastramento:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-12",
+     "caput": "As Seções de Atividades Técnicas – SAT executam, no âmbito do respectivo Subgrupamento de Bombeiros Militar, as atividades de análise de projetos, vistoria e fiscalização, sob orientação técnica da Diretoria de Atividades Técnicas a que se vinculam.",
      "items": [
       {
-       "text": "I - assessorar o Diretor nos assuntos relativos à Credenciamento e Cadastramento;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 211"
-      },
-      {
-       "text": "II - credenciar e/ou cadastrar empresas e profissionais liberais que atuem na área de segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 211"
-      },
-      {
-       "text": "III - manter cadastro atualizado das firmas de serviço na área de proteção e prevenção, portadoras de certificados de capacidade técnica, bem como de profissionais liberais que atuem nesta área;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 211"
-      },
-      {
-       "text": "IV- prestar informações sobre os demais assuntos atinentes ao serviço.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 211"
+       "text": "Parágrafo único. As Diretorias de Atividades Técnicas e as Seções de Atividades Técnicas PODERÃO ser vinculadas aos Grupamentos de Bombeiros Militar e aos Subgrupamentos de Bombeiros Militar, por ato administrativo do Comandante-Geral do CBMRO, de acordo com a necessidade do serviço e com a política de pessoal apresentada pelo órgão pertinente, com vistas a maior eficiência, emprego e atuação do efetivo.",
+       "source": "LOB, Art. 18, § 2º (acrescido pela Lei nº 4.488/2019) — a vinculação é FACULTATIVA e depende de ato do Comandante-Geral, não automática"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 211",
+     "source": "LOB, Art. 18, § 2º (acrescido pela Lei nº 4.488/2019) — a vinculação é FACULTATIVA e depende de ato do Comandante-Geral, não automática",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. V — Das Seções de Atividades Técnicas",
+     "autoral": true,
+     "fundamento": "LOB, Art. 18, § 2º (acrescido pela Lei nº 4.488/2019) — a vinculação é FACULTATIVA e depende de ato do Comandante-Geral, não automática"
     },
     {
-     "id": "mt-art-212",
+     "id": "ro-art-13",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-212",
-     "caput": "Compete a Coordenadoria de Legislação e Pareceres – CCIP 3:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-13",
+     "caput": "O Sistema de Segurança Contra Incêndio e Pânico – SSCIP compreende o conjunto de unidades do CBMRO que desenvolvem as atividades relacionadas à prevenção e à proteção contra incêndio e pânico nas edificações e áreas de risco, observado o cumprimento das exigências do Regulamento de Segurança Contra Incêndio e Pânico do Estado e das Instruções Técnicas.",
      "items": [
       {
-       "text": "I – assessorar o Diretor quanto a assuntos técnicos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 212"
+       "text": "I - habilitar seus oficiais e praças por meio de cursos de capacitação, especialização e treinamento, ministrados por profissionais legalmente habilitados;",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
       },
       {
-       "text": "II – manifestar-se sobre questões de interpretação de legislações/normas que permeiam a segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 212"
+       "text": "II - regulamentar as medidas de segurança contra incêndio e pânico;",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
       },
       {
-       "text": "III – assessorar o Comandante Geral da Corporação ou o Diretor na defesa de processos relativos à área da segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 212"
+       "text": "III - planejar ações e operações na área da segurança contra incêndio e pânico;",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
       },
       {
-       "text": "IV – executar outras atividades que lhe sejam atribuídas pelo Comando Geral da Corporação, no âmbito de sua competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 212"
+       "text": "IV - analisar projeto de proteção contra incêndio e pânico e realizar vistorias nas edificações e áreas de risco;",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
+      },
+      {
+       "text": "V - fiscalizar o cumprimento do Regulamento e aplicar as sanções administrativas cabíveis;",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
+      },
+      {
+       "text": "VI - cassar ou anular o AVCIP, o ACPS ou o ato de deferimento do processo, no caso de apuração de irregularidade;",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
+      },
+      {
+       "text": "VII - elaborar as Instruções Técnicas sobre as medidas de segurança contra incêndio e pânico, cuja homologação, por Portaria, compete ao Comandante-Geral do CBMRO.",
+       "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 212",
+     "source": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
+     "heading": "Cap. VI — Do Sistema de Segurança Contra Incêndio e Pânico",
+     "autoral": true,
+     "fundamento": "Decreto nº 21.425/2016, Arts. 6º e 7º e parágrafo único"
     },
     {
-     "id": "mt-art-213",
+     "id": "ro-art-14",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-213",
-     "caput": "Compete a Seção de Legislação e Normatização:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-14",
+     "caput": "Constatadas irregularidades em vistoria técnica ou fiscalização nas edificações e áreas de risco, o Sistema de Segurança Contra Incêndio e Pânico aplicará, na forma da Lei estadual nº 3.924, de 17 de outubro de 2016, e do Decreto nº 21.425, de 29 de novembro de 2016, as seguintes penalidades:",
      "items": [
       {
-       "text": "I – propor nomeação de Comissão Técnica para elaborar Normas Técnicas do Corpo de Bombeiros;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 213"
+       "text": "I - advertência escrita;",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
       },
       {
-       "text": "II – propor nomeação de Comissão Interdisciplinar para alterar a Legislação de Segurança Contra Incêndio e Pânico – LSCIP do Estado de Rondônia;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 213"
+       "text": "II - multa;",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
       },
       {
-       "text": "III – propor a adoção de Normas/Legislações;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 213"
+       "text": "III - interdição parcial ou total;",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
       },
       {
-       "text": "IV – redigir minutas de Instruções Normativas relativas à segurança contra incêndio e pânico para aprovação do Diretor;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 213"
+       "text": "IV - embargo;",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
       },
       {
-       "text": "V – analisar minutas de Instruções Normativas relativas à segurança contra incêndio e pânico, propostas por outras coordenadorias.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 213"
+       "text": "V - apreensão de materiais e equipamentos;",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
+      },
+      {
+       "text": "VI - cassação do AVCIP para habite-se ou funcionamento.",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
+      },
+      {
+       "text": "§ 1º As sanções administrativas seguirão sequência lógica de aplicação, gradual e de caráter instrutivo antes do punitivo, salvo necessidade devidamente justificada.",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
+      },
+      {
+       "text": "§ 2º A multa observará a gradação em Unidades Padrão Fiscal do Estado de Rondônia prevista na legislação de regência, e o seu produto será recolhido ao Fundo Estadual de Bombeiros – FUNESBOM.",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
+      },
+      {
+       "text": "§ 3º O pagamento da multa não exime o infrator do cumprimento das exigências do Regulamento e das Instruções Técnicas, nem acarreta a cessação da interdição ou do embargo.",
+       "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 213",
+     "source": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP",
-     "adapted": true,
-     "original_caput": "Compete a Seção de Legislação e Normatização:"
+     "heading": "Cap. VII — Das penalidades",
+     "autoral": true,
+     "fundamento": "Decreto nº 21.425/2016, Arts. 34, 38 e 40, §§ 6º e 11 — a multa tem base na Lei estadual nº 3.924/2016, e não na LOB"
     },
     {
-     "id": "mt-art-214",
+     "id": "ro-art-15",
      "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-214",
-     "caput": "Compete a Seção de Pareceres:",
+     "editId": "reg:seguranca-contra-incendio/ro-art-15",
+     "caput": "A Comissão Técnica – CT, formada por Oficiais e Praças Bombeiros Militares qualificados no campo da segurança contra incêndio e pânico e presidida pelo Oficial de maior posto, tem caráter temporário e destina-se a analisar e emitir pareceres nos casos que exijam solução técnica ou apresentem dúvida quanto às exigências previstas na legislação.",
      "items": [
       {
-       "text": "I – emitir Pareceres de contestações protocolizadas nos OSCIPs;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 214"
+       "text": "§ 1º Caso o responsável pela edificação ou área de risco não concorde com as irregularidades apontadas ou com as penalidades aplicadas, poderá contestar, por escrito, no prazo de até 10 (dez) dias corridos, protocolando a contestação no órgão de Atividades Técnicas responsável pela autuação.",
+       "source": "Decreto nº 21.425/2016, Arts. 49 a 55"
       },
       {
-       "text": "II – emitir Informações Técnicas protocolizadas na DSCIP;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 214"
+       "text": "§ 2º Até a decisão da contestação fica automaticamente suspenso o prazo estabelecido no Auto de Infração, reiniciando-se a contagem após a decisão.",
+       "source": "Decreto nº 21.425/2016, Arts. 49 a 55"
       },
       {
-       "text": "III – informar ao interessado as decisões do Diretor às contestações protocolizadas nos OSCIPs;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 214"
+       "text": "§ 3º A Comissão Técnica terá o prazo de até 30 (trinta) dias corridos para proferir a decisão, que será publicada no Diário Oficial do Estado.",
+       "source": "Decreto nº 21.425/2016, Arts. 49 a 55"
       },
       {
-       "text": "IV – responder às consultas formuladas pelas coordenadorias ou SSCIPs sobre temas técnicos, relativos à segurança contra incêndio e pânico.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 214"
+       "text": "§ 4º A Comissão Técnica Especial – CTE, nomeada por Portaria do Comandante-Geral e presidida pelo Oficial responsável pelo Sistema de Atividades Técnicas, avalia a execução das normas e propõe as alterações necessárias ao Regulamento e às Instruções Técnicas.",
+       "source": "Decreto nº 21.425/2016, Arts. 49 a 55"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 214",
+     "source": "Decreto nº 21.425/2016, Arts. 49 a 55",
      "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP"
-    },
-    {
-     "id": "mt-art-215",
-     "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-215",
-     "caput": "Compete Coordenadoria de Pericias Técnicas – CCIP 4:",
-     "items": [
-      {
-       "text": "I - assessorar o Diretor nos assuntos de Perícias de Incêndios e/ou Explosões e nos assuntos relacionados com os testes dos materiais de segurança contra incêndio;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "II - emitir parecer em consultas sobre perícia;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "III - realizar perícias em locais de incêndio e/ou explosões;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "IV - promover levantamentos e manter estatísticas das causas de incêndio e/ou explosões;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "V - promover estudos no âmbito de suas atividades objetivando o aperfeiçoamento das perícias;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "VI - propor medidas que visem dinamizar a atividade de perícia de incêndio e sua tramitação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "VII - providenciar os meios necessários junto ao órgão de direção para pesquisa setorial em locais de incêndio e/ou explosões;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "VIII - propor medidas de segurança contra incêndio em função das perícias realizadas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "IX - manter um serviço de arquivo com informações dos laudos periciais;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "X - confeccionar laudos periciais elaborados pelos peritos e toda documentação pertinente aos serviços de pericias de incêndio;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "XI - realizar estudos, testes e analise em materiais específicos de segurança contra incêndio;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "XII - emitir, quando for o caso, Certificado de Capacidade Técnica das firmas habilitadas junto a DSCIP/CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      },
-      {
-       "text": "XIII - desempenhar outras atividades correlatas.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 215",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP",
-     "adapted": true,
-     "original_caput": "Compete Coordenadoria de Pericias Técnicas – CCIP 4:"
-    },
-    {
-     "id": "mt-art-216",
-     "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-216",
-     "caput": "Compete a Coordenadoria de Hidrantes – CCIP 5:",
-     "items": [
-      {
-       "text": "I - assessorar o Diretor nos assuntos relativos ao serviço de Hidrantes;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "II - elaborar e executar o plano de manutenção de hidrantes;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "III - contactar, através de determinação do órgão setorial, com órgão estranhos à Corporação, nos assuntos relativos à Coordenadoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "IV - acompanhar e coordenar os serviços de Hidrantes das OBMs;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "V - prestar informações e emitir pareceres sobre os demais assuntos atinentes ao serviço da Coordenadoria;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "VI - despachar sobre os da Coordenadoria com o Diretor Adjunto;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "VII - manter organizado arquivo sobre a rede de Hidrantes;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      },
-      {
-       "text": "VIII – desempenhar outras atividades correlatas.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 216",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP",
-     "adapted": true,
-     "original_caput": "Compete a Coordenadoria de Hidrantes – CCIP 5:"
-    },
-    {
-     "id": "mt-art-217",
-     "kind": "incisos",
-     "editId": "reg:seguranca-contra-incendio/mt-art-217",
-     "caput": "As Seções de Segurança Contra Incêndio e Pânico das Unidades Operacionais do CBMRO são vinculadas administrativamente à Diretoria de Segurança Contra Incêndio e Pânico – DSCIP/CBMRO, e possuem as seguintes atribuições:",
-     "items": [
-      {
-       "text": "I - assessorar o Diretor a dirigir, organizar, orientar, controlar e coordenar as atividades da Seção;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "II - submeter à consideração do Diretor assuntos que excedam a sua competência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "III - coordenar os grupos de trabalho designados;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "IV - expedir e cassar Alvará de Prevenção Contra Incêndio e Pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "V – emitir informações técnicas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "VI - protocolar, analisar e aprovar processos de prevenção contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "VII - realizar vistorias das edificações e instalações, exercendo o poder de policia para notificar, multar, interditar ou embargar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "VIII - emitir e cassar termo de notificação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "IX - prestar esclarecimentos ou informações ao publico sobre assuntos pertinentes a área técnica de prevenção contra incêndio;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "X - analisar os processos e vistoriar as edificações na área de sua jurisdição de acordo com a legislação vigente;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "XI - organizar e manter o arquivo de legislação relativa à atividade;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "XII - adotar normas e medidas emanadas pela Diretoria, bem como desenvolver o aprimoramento técnico profissional do pessoal envolvido;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "XIII - propor estudos ou sugestões visando o aperfeiçoamento das normas de segurança contra incêndio e pânico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "XIV - manter em arquivo próprio os processos aprovados pela Seção, bem como elaborar e manter atualizado cadastro e quadro estatístico das atividades realizadas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "XV - realizar pesquisa em local de sinistro na área de sua jurisdição;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      },
-      {
-       "text": "XVI – encaminhar os dados estatísticos a Diretoria até o 5º dia útil de cada mês.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 217",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção III — DSCIP",
-     "adapted": true,
-     "original_caput": "As Seções de Segurança Contra Incêndio e Pânico das Unidades Operacionais do CBMMT são vinculadas administrativamente à Diretoria de Segurança Contra Incêndio e Pânico – DSCIP/CBMMT, e possuem as seguintes atribuições:"
+     "heading": "Cap. VIII — Das comissões e do direito de defesa",
+     "autoral": true,
+     "fundamento": "Decreto nº 21.425/2016, Arts. 49 a 55"
     }
    ],
    "alternatives": {
@@ -21332,104 +20421,6 @@
      "original_caput": "Compete ao Comandante do Centro de Ensino e Instrução de Bombeiros – CEIB:"
     },
     {
-     "id": "mt-art-181",
-     "kind": "incisos",
-     "editId": "reg:atribuicoes-funcoes/mt-art-181",
-     "caput": "Compete ao do Chefe do Cento de Capacitação Física:",
-     "items": [
-      {
-       "text": "I - coordenar as atividades e projetos desenvolvidos pelas seções do CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "II - representar o Diretor de Ensino, Instrução e Pesquisa em assuntos relacionados com a atividade de Educação Física e Desportos;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "III - colaborar com a construção dos planos de disciplinas (PLADIS) de Educação Física Militar nos cursos de formação, aperfeiçoamento, habilitação e especialização no âmbito do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "IV - planejar, coordenar e promover a execução de competições desportivas de interesse da Corporação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "V - planejar e supervisionar o calendário anual para a execução do Teste de Aptidão Física Bombeiro Militar (TAFBM) no CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "VI - assessorar a construção de instalações desportivas, sob o ponto de vista técnico;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "VII - representar a Corporação junto às entidades militares ou civis, quando os assuntos a serem abordados forem de natureza desportiva, pedagógica e de promoção de saúde;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "VIII - aplicar testes físicos quando solicitado dos oficiais e praças para frequentarem cursos ou estágios dentro e fora da Corporação;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "IX - oferecer e incentivar regularmente a prática de atividades físicas através das dependências do CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "X – propor a implementação e revisão do manual para aplicação do Teste de Aptidão Física no âmbito do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "XI - selecionar os atletas Bombeiros Militares e propor a movimentação, caso se faça necessário, para compor as equipes representativas do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "XII – propor a publicação em BGE dos resultados das competições em que o CCF promoveu ou participou junto à equipe do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "XIII - submeter à aprovação do Diretor de Ensino, Instrução e Pesquisa, o calendário anual da programação desportiva, elaborado pelo CCF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      },
-      {
-       "text": "XIV - solicitar, quando necessário, o apoio financeiro para a realização e manutenção das atividades promovidas pelo CCF, ao Comando e órgãos competentes.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 181",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "Compete ao do Chefe do Cento de Capacitação Física:"
-    },
-    {
-     "id": "mt-art-182",
-     "kind": "incisos",
-     "editId": "reg:atribuicoes-funcoes/mt-art-182",
-     "caput": "Compete ao Chefe Adjunto do Centro de Capacitação Física:",
-     "items": [
-      {
-       "text": "I - organizar, preparar e apoiar as equipes representativas da Corporação, quando em competições com outras Organizações Militares ou entidades civis;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182"
-      },
-      {
-       "text": "II - manter atualizado o cadastramento dos atletas da Corporação, para participarem de competições desportivas;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182"
-      },
-      {
-       "text": "III - manter atualizado o cadastramento dos profissionais de educação física do CBMRO;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182"
-      },
-      {
-       "text": "IV - implementar e desenvolver projetos de incentivo à prática de educação física para os Bombeiros Militares e dependentes do CBMRO.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182"
-      }
-     ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182",
-     "match": "exata",
-     "heading": "TÍT. III, Cap. V, Seção II — DEIP (Ensino, Instrução e Pesquisa)",
-     "adapted": true,
-     "original_caput": "Compete ao Chefe Adjunto do Centro de Capacitação Física:"
-    },
-    {
      "id": "mt-art-190",
      "kind": "incisos",
      "editId": "reg:atribuicoes-funcoes/mt-art-190",
@@ -24436,7 +23427,7 @@
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
-       "text": "XIX- relatar acidente ou emergências envolvendo público interno e, caso esteja hospitalizado, manter contato com o Comando Operacional de Bombeiros e a Coordenadoria de Saúde;",
+       "text": "XIX- relatar acidente ou emergências envolvendo público interno e, caso esteja hospitalizado, manter contato com o Comando Operacional de Bombeiros;",
        "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
       },
       {
