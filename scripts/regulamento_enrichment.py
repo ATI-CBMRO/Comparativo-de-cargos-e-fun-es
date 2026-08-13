@@ -9,6 +9,8 @@ Disciplina (B1-M): só entra dispositivo VERBATIM do markdown de origem, com ró
 fonte e nível de correspondência (`match`). scripts/verificar_verbatim.py confere tudo.
 """
 
+import re
+
 # ── Taxonomia (15 temas; é DADO — cresce com a curadoria) ────────────────────────────
 # (key, título p/ a minuta, grupo de exibição)
 THEMES = [
@@ -130,11 +132,22 @@ ADAPTATIONS = [
 ]
 
 
+# Siglas de corporação de OUTROS estados, tolerando o separador que aparecer entre "CBM"
+# e a UF: "CBMMT", "CBM-MT", "CBM- MT", "CBM.MT", "CBM/MT". A tabela ADAPTATIONS acima
+# casa texto literal e, por isso, deixava passar toda variante com separador — foi assim
+# que "CBM-MT" sobreviveu em 6 dispositivos (inclusive no híbrido "Corpo de Bombeiros
+# Militar do Estado de Rondônia/CBM-MT"). "RO" fica FORA da lista de propósito: a sigla
+# do próprio CBMRO nunca pode ser reescrita. Auditoria 2026-08-13.
+_UF_OUTRAS = ('MT|SE|BA|RN|RS|AL|GO|PA|PR|DF|ES|RR|TO|AC|AM|AP|MA|PI|CE|PB|PE|MG|SP|RJ|MS|SC')
+RE_SIGLA_OUTRA_UF = re.compile(r'\bCBM[\s.\-–—/]*(?:' + _UF_OUTRAS + r')\b')
+
+
 def adapt_text(text):
     """Aplica ADAPTATIONS; retorna (texto_adaptado, houve_mudanca)."""
     out = text
     for de, para in ADAPTATIONS:
         out = out.replace(de, para)
+    out = RE_SIGLA_OUTRA_UF.sub('CBMRO', out)
     return out, out != text
 
 

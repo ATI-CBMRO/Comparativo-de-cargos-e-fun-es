@@ -3344,11 +3344,13 @@
           "id": "mt-art-104",
           "kind": "incisos",
           "editId": "reg:atual:competencias-direcao/mt-art-104",
-          "caput": "O Almoxarifado tem como missão planejar, organizar, dirigir, e controlar a quantidade de material a ser estocado, de forma a garantir à continuidade e a presteza no fornecimento de materiais as unidades que compões o CBM- MT.",
+          "caput": "O Almoxarifado tem como missão planejar, organizar, dirigir, e controlar a quantidade de material a ser estocado, de forma a garantir à continuidade e a presteza no fornecimento de materiais as unidades que compões o CBMRO.",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 104",
           "match": "exata",
-          "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)"
+          "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
+          "adapted": true,
+          "original_caput": "O Almoxarifado tem como missão planejar, organizar, dirigir, e controlar a quantidade de material a ser estocado, de forma a garantir à continuidade e a presteza no fornecimento de materiais as unidades que compões o CBM- MT."
         },
         {
           "id": "mt-art-105",
@@ -12363,7 +12365,7 @@
           "caput": "São competências da Diretoria de Ensino Instrução e Pesquisa:",
           "items": [
             {
-              "text": "I - supervisionar, orientar e controlar o Ensino, a Pesquisa e a Instrução no Corpo de Bombeiros Militar do Estado de Rondônia/CBM-MT em todas as suas modalidades;",
+              "text": "I - supervisionar, orientar e controlar o Ensino, a Pesquisa e a Instrução no Corpo de Bombeiros Militar do Estado de Rondônia/CBMRO em todas as suas modalidades;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 161"
             },
             {
@@ -12379,7 +12381,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 161"
             },
             {
-              "text": "V - assessorar os órgãos de Direção Superior na elaboração do Planejamento Oficial, propondo os recursos orçamentários necessários ao Ensino no CBM-MT;",
+              "text": "V - assessorar os órgãos de Direção Superior na elaboração do Planejamento Oficial, propondo os recursos orçamentários necessários ao Ensino no CBMRO;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 161"
             },
             {
@@ -20955,7 +20957,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 163"
             },
             {
-              "text": "III - promover medidas visando à motivação e o desenvolvimento do Ensino no âmbito do CBM-MT;",
+              "text": "III - promover medidas visando à motivação e o desenvolvimento do Ensino no âmbito do CBMRO;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 163"
             },
             {
@@ -21241,7 +21243,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182"
             },
             {
-              "text": "IV - implementar e desenvolver projetos de incentivo à prática de educação física para os Bombeiros Militares e dependentes do CBM-MT.",
+              "text": "IV - implementar e desenvolver projetos de incentivo à prática de educação física para os Bombeiros Militares e dependentes do CBMRO.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 182"
             }
           ],
@@ -22036,7 +22038,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
             },
             {
-              "text": "V - cuidar, com especial atenção, da educação moral e cívica de suas praças, principalmente das recém-incorporadas no CBM-MT;",
+              "text": "V - cuidar, com especial atenção, da educação moral e cívica de suas praças, principalmente das recém-incorporadas no CBMRO;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 262"
             },
             {
