@@ -132,13 +132,30 @@
     "da OBM" já estava certo (41 preservados, 0 masculinizados por engano). **CIOP** recebeu o
     caminho inverso (masculino do CICOM → feminino de "Central Integrada").
 
-  **⚠️ ÓRGÃOS DO MT SEM EQUIVALENTE EM RO — não renomeados, exigem decisão de redação** (o
-  dispositivo precisa SAIR ou a matéria ser REATRIBUÍDA; renomear não resolve):
-  `Centro de Capacitação Física` (9x) · `Núcleo Sistêmico`/`de Segurança` (7x, ligado a SAD/
-  SAENS/SESP, secretarias do MT) · `Coordenadoria de Articulação e Integração Comunitária` (6x) ·
-  `Coordenadoria de Atendimento Pré-Hospitalar` (6x — o APH é competência legal, Art. 2º, IV, mas
-  não há órgão) · `Coordenadoria de Recrutamento`/`de Seleção` (3x) · `Grupamento de Emergências
-  Ambientais` (1x) · `Coordenadoria de Saúde` (1x — Art. 62 revogado pela Lei 2.244/2010).
+  **✅ 3ª leva — REMOÇÃO + REESCRITA (2026-08-13, determinação do Tiago: "o dispositivo precisa
+  sair, em seguida reescreva o capítulo de segurança contra incêndio")**. Criada a camada
+  `scripts/regulamento_reescrita.py`, separada da `ADAPTATIONS` de propósito: a tabela só troca
+  termo; a camada nova REMOVE dispositivo e escreve texto PRÓPRIO. Como `verificar_verbatim.py`
+  percorre `REGULAMENTO_ENRICHMENT`, o que é transcrição segue conferido contra a fonte e o que é
+  redação própria não gera falso erro — as duas garantias continuam valendo.
+  - **13 artigos + 22 incisos REMOVIDOS** (os 7 órgãos sem equivalente + o bloco DSCIP/CCIP 1-5 do
+    organograma). Casamento por **TEXTO, não por índice** — a 1ª versão usava índice posicional e
+    quebrou em silêncio assim que outra remoção deslocou a lista (mesma classe do AR-03). Artigo
+    com inciso removido recebe `reindexed: true` (convenção do `minutaArticles.js`).
+  - **Trims cirúrgicos** onde o órgão morto era só remissão dentro de matéria legítima (cortar o
+    inciso perderia a norma boa): atividades cívicas e sociais, atendimentos individuais,
+    parágrafo único do CTEI/Colégio BM, contato em acidente com público interno. Dois cabeçalhos
+    que a extração do MT grudou no fim do inciso anterior entraram como `RUIDO_DE_PAGINA`, com
+    lookbehind preservando o ponto final.
+  - **`seguranca-contra-incendio` REESCRITO**: 19 artigos do MT → **15 de redação própria** sobre
+    **CAT → DAT (6, nomeadas: Porto Velho, Ariquemes, Ji-Paraná, Cacoal, Rolim de Moura, Vilhena)
+    → SAT**, cobrindo competências, SSCIP, PPCIP/AVCIP/ACPS, Instruções Técnicas, penalidades e
+    Comissões Técnicas. Cada artigo declara `fundamento` na norma de RO, e o teste **recusa**
+    artigo autoral sem fundamento. Bloco D dos 6 estados preservado. Dois pontos de mérito
+    corrigidos: vinculação das SAT agora é **facultativa** (Art. 18, §2º), e a multa fica com a
+    **base certa** (Lei 3.924/2016 + Decreto 21.425/2016, destino FUNESBOM).
+  - **413 → 396 artigos** (−13 −19 +15). Piso do teste ajustado COM a aritmética explicada e +3
+    asserções novas para a redução não disfarçar regressão futura.
 
   **Ainda em aberto, todos exigindo decisão de mérito de quem conhece o CBMRO (não corrigir por
   semelhança/palpite — repetiria o erro que esta rodada está consertando):**
