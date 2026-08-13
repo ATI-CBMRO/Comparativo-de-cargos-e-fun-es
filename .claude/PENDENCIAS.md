@@ -104,6 +104,42 @@
   de 10 a 2.000 UPF, com destino ao FUNESBOM no §11). Os 4 dispositivos com "notificar, multar,
   interditar ou embargar" **podem ficar**; o que falta é **citar essa base** no texto, hoje ausente.
 
+  **2ª leva de estrutura — órgãos do Comando-Geral (2026-08-13, após o Tiago determinar que
+  "tudo o que diverge dos 3 documentos deve ser ajustado")**: varredura de TODOS os sintagmas
+  institucionais achou **182 nomes distintos** — a Parte I reproduz o organograma do CBMMT órgão
+  a órgão. Aplicado o de-para dos que têm equivalente na LOB: `Diretoria de Administração
+  Institucional`→Estado-Maior-Geral (Art. 12-A); `Coord. de Gestão de Pessoas`→Coordenadoria de
+  Pessoal (Art. 14); `Coord. de Comunicação Social`/`Logística e Patrimônio`/`Tecnologia da
+  Informação`→**Diretorias** de Comunicação Social/Logística/Informática (Arts. 22, 21, 23 — em RO
+  são Diretorias do EMG, não Coordenadorias); `Agência Central de Inteligência`/`CACI`→Diretoria
+  de Inteligência/DINT (Art. 20); `Conselho Superior de Bombeiros`/`CSB`→CONDEG (Art. 27);
+  `Escola Dom Pedro II`→Unidade de Colégio BM (Art. 15, IV, "f"); `CEIB`→Centro de Treinamento,
+  Ensino e Instrução (Art. 15, V, "d"); `DEIP`→Coordenadoria de Educação, Ensino e Instrução
+  (Art. 15); `Coord. de Finanças`→CPOF (Art. 16); `Coord. de Ajudância Geral`→Ajudância-Geral
+  (Art. 25); `Coord. de Assistência Social`→Centro de Assistência Social (Art. 25, VI);
+  `Coord. de Planejamento`→Diretoria de Planejamento (Art. 16, V); `Coord. de Aperfeiçoamento`→
+  Escola de Aperfeiçoamento e Especialização (Art. 15, V, "g"); `CSM`→Centro de Suprimento e
+  Material (Art. 21, V); `GAvBM`→Grupamento de Operações Aéreas (Art. 48, II).
+  **650 substituições de termo** no documento ao todo.
+  - **Colisão de sigla resolvida:** no CBMMT `COB` é o *Centro* de Operações de Bombeiros (a
+    central); em RO é o *Comando* Operacional de Bombeiros (órgão de execução). A central aqui é
+    a **CIOP** — manter os dois sentidos sob a mesma sigla criaria ambiguidade interna.
+  - **⚠️ Regressão minha, corrigida:** as substituições trocam o núcleo do sintagma e vários
+    órgãos mudam de gênero ("a Diretoria"→"o Comando"; "a Companhia"→"o Subgrupamento"),
+    produzindo **41 concordâncias quebradas** ("da Comando", "a SGBM", "à SGBM", "Comando …
+    Adjunta"). Corrigidas por `corrigir_concordancia()`, que roda DEPOIS das substituições.
+    `OBM` ficou fora da lista masculina de propósito — é *Organização*, feminino (Art. 60), então
+    "da OBM" já estava certo (41 preservados, 0 masculinizados por engano). **CIOP** recebeu o
+    caminho inverso (masculino do CICOM → feminino de "Central Integrada").
+
+  **⚠️ ÓRGÃOS DO MT SEM EQUIVALENTE EM RO — não renomeados, exigem decisão de redação** (o
+  dispositivo precisa SAIR ou a matéria ser REATRIBUÍDA; renomear não resolve):
+  `Centro de Capacitação Física` (9x) · `Núcleo Sistêmico`/`de Segurança` (7x, ligado a SAD/
+  SAENS/SESP, secretarias do MT) · `Coordenadoria de Articulação e Integração Comunitária` (6x) ·
+  `Coordenadoria de Atendimento Pré-Hospitalar` (6x — o APH é competência legal, Art. 2º, IV, mas
+  não há órgão) · `Coordenadoria de Recrutamento`/`de Seleção` (3x) · `Grupamento de Emergências
+  Ambientais` (1x) · `Coordenadoria de Saúde` (1x — Art. 62 revogado pela Lei 2.244/2010).
+
   **Ainda em aberto, todos exigindo decisão de mérito de quem conhece o CBMRO (não corrigir por
   semelhança/palpite — repetiria o erro que esta rodada está consertando):**
   - `seguranca-contra-incendio` (19 art/184 incisos) — **o capítulo inteiro é o regimento interno
