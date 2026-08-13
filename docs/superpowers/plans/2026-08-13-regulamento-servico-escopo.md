@@ -11,6 +11,11 @@
 Regulamento de Serviço (7 capítulos, 185 artigos, LOB atual) para ler e comentar, sem
 alterar nada para quem já usa o portal.
 
+**Duas camadas de restrição, de propósito em níveis diferentes** (spec, seção 3c):
+- **por escopo** (só os convidados): menu reduzido + guarda de rota — Tarefas 5 e 6;
+- **por papel** (todo não-admin): Minuta somente leitura — Tarefa 7.
+A Conferência continua colaborativa para a comissão. Decisão do Wândrio em 2026-08-13.
+
 **Arquitetura:** o recorte é uma **lista de capítulos em lógica pura** aplicada sobre a
 estrutura já existente, antes da articulação. Um campo `escopo` no cadastro do participante
 liga o recorte. Nenhum documento novo, nenhum dado duplicado: os comentários continuam
@@ -22,9 +27,10 @@ lógica pura com `node --test`.
 ## Restrições globais
 
 - **Idioma de toda a interface: pt-BR.** Nenhum rótulo em inglês.
-- **Não tocar** em `RegulamentoWizard.jsx`, `minutaDocx.js`, `ConferenciaLinear.jsx`,
-  `RegulamentoComparator.jsx`, `RegSubsidio.jsx`, `firestore.rules`, nem em qualquer
-  arquivo de `database/`. Esta entrega é o ambiente, não o conteúdo.
+- **Não tocar** em `minutaDocx.js`, `ConferenciaLinear.jsx`, `RegulamentoComparator.jsx`,
+  `RegSubsidio.jsx`, `DecisoesCuradoria.jsx`, `firestore.rules`, nem em qualquer arquivo
+  de `database/` ou `scripts/`. Esta entrega é o ambiente, não o conteúdo.
+  (Os dois Wizards **são** tocados, e só na Tarefa 7 — somente leitura para não-admin.)
 - **Comportamento sem escopo é sagrado:** usuário sem o campo `escopo` (todos os atuais)
   deve ver o portal exatamente como hoje. Toda função nova é no-op nesse caso.
 - **Casar capítulo pelo SUFIXO do id** (`id.split(':').pop()`). O id carrega o marcador de
@@ -674,7 +680,311 @@ git commit -m "feat(escopo): rota /regulamento/servico, cenário travado e menu 
 
 ---
 
-### Tarefa 6: Verificação ponta a ponta com evidência
+### Tarefa 6: Guarda de rota para o perfil de serviço
+
+**Arquivos:**
+- Modificar: `src/lib/escopoServico.js` (acrescentar a lista de rotas liberadas)
+- Modificar: `src/lib/escopoServico.test.js` (testes da nova função)
+- Modificar: `src/App.jsx` (aplicar a guarda)
+
+**Interfaces:**
+- Consome: `user.escopo` (Tarefa 2).
+- Produz: `rotaLiberadaNoEscopo(pathname: string, escopo: string|null): boolean` — `true`
+  quando a rota pode ser aberta; sempre `true` para escopo nulo/desconhecido.
+
+**Contexto:** o menu reduzido da Tarefa 5 esconde os links, mas quem digitar `/minuta` na
+barra de endereço ainda chega lá. Esta tarefa fecha a rota. **Vale só para
+`escopo === 'servico'`** — a comissão atual continua com Conferência e Decisões, que são
+colaborativas de propósito (decisão do Wândrio em 2026-08-13; ver spec, seção 3c).
+
+Continua valendo o aviso: isto é camada de interface. A tranca de banco seria o
+`firestore.rules`, que não muda nesta entrega.
+
+- [ ] **Passo 1: Escrever os testes que falham**
+
+Acrescentar ao fim de `src/lib/escopoServico.test.js`:
+
+```js
+import { rotaLiberadaNoEscopo } from './escopoServico.js'
+
+test('sem escopo, toda rota é liberada (comportamento de hoje, intocado)', () => {
+  assert.equal(rotaLiberadaNoEscopo('/minuta', null), true)
+  assert.equal(rotaLiberadaNoEscopo('/regulamento/conferencia', undefined), true)
+  assert.equal(rotaLiberadaNoEscopo('/legislacoes', 'inexistente'), true)
+})
+
+test('escopo de serviço libera só o documento, o manual e as telas de entrada', () => {
+  for (const p of ['/', '/regulamento/servico', '/manual', '/login', '/cadastro']) {
+    assert.equal(rotaLiberadaNoEscopo(p, 'servico'), true, `deveria liberar ${p}`)
+  }
+})
+
+test('escopo de serviço fecha as trilhas, o acervo e o organograma', () => {
+  for (const p of [
+    '/minuta', '/minuta/conferencia', '/minuta/decisoes', '/minuta/revisao',
+    '/regulamento', '/regulamento/conferencia', '/regulamento/decisoes',
+    '/regulamento/revisao', '/regulamento/subsidio',
+    '/legislacoes', '/organograma', '/acessos', '/comparar', '/estados/ro',
+  ]) {
+    assert.equal(rotaLiberadaNoEscopo(p, 'servico'), false, `deveria fechar ${p}`)
+  }
+})
+
+test('barra final e maiúsculas não furam a guarda', () => {
+  assert.equal(rotaLiberadaNoEscopo('/regulamento/servico/', 'servico'), true)
+  assert.equal(rotaLiberadaNoEscopo('/MINUTA', 'servico'), false)
+  assert.equal(rotaLiberadaNoEscopo('/Manual', 'servico'), true)
+})
+
+test('prefixo parecido não libera por engano', () => {
+  // "/manualzinho" não pode passar só por começar com "/manual".
+  assert.equal(rotaLiberadaNoEscopo('/manualzinho', 'servico'), false)
+  assert.equal(rotaLiberadaNoEscopo('/regulamento/servicos', 'servico'), false)
+})
+```
+
+- [ ] **Passo 2: Rodar e ver falhar**
+
+```bash
+node --test src/lib/escopoServico.test.js
+```
+
+Esperado: FALHA com `rotaLiberadaNoEscopo is not a function`.
+
+- [ ] **Passo 3: Implementar**
+
+Acrescentar ao fim de `src/lib/escopoServico.js`:
+
+```js
+// Rotas que o participante com escopo pode abrir. Lista fechada (allowlist): endereço
+// que não estiver aqui é devolvido ao documento dele. Esconder o link do menu não basta —
+// quem digita /minuta na barra de endereço chega lá.
+// ATENÇÃO: isto é camada de INTERFACE. A tranca de banco é o firestore.rules, que não
+// muda nesta entrega (ver spec, seção 3c).
+const ROTAS_LIBERADAS = {
+  servico: ['/', '/regulamento/servico', '/manual', '/login', '/cadastro'],
+}
+
+export function rotaLiberadaNoEscopo(pathname, escopo) {
+  const liberadas = ROTAS_LIBERADAS[escopo]
+  if (!liberadas) return true            // sem escopo: portal completo, como sempre
+  // Compara o caminho inteiro, nunca por prefixo: "/manualzinho" não pode passar por
+  // começar com "/manual". A barra final é ignorada; a comparação é sensível a maiúsculas
+  // porque as rotas do portal são todas minúsculas.
+  const p = String(pathname ?? '').replace(/\/+$/, '') || '/'
+  return liberadas.includes(p)
+}
+```
+
+- [ ] **Passo 4: Rodar e ver passar**
+
+```bash
+node --test src/lib/escopoServico.test.js
+npm test
+```
+
+Esperado: todos PASS.
+
+- [ ] **Passo 5: Aplicar a guarda no App**
+
+Em `src/App.jsx`, acrescentar `rotaLiberadaNoEscopo` ao import de `escopoServico` (ou criar
+o import, se a Tarefa 5 não o criou):
+
+```js
+import { rotaLiberadaNoEscopo } from './lib/escopoServico.js'
+```
+
+E acrescentar o componente, junto de `RegulamentoServicoRoute`:
+
+```jsx
+// Devolve o participante com escopo ao documento dele quando ele alcança uma rota fora do
+// recorte (link antigo, endereço digitado, aba salva). Sem escopo, é no-op absoluto.
+function GuardaDeEscopo({ children }) {
+  const { user } = useAuth()
+  const { pathname } = useLocation()
+  if (user?.escopo && !rotaLiberadaNoEscopo(pathname, user.escopo)) {
+    return <Navigate to="/regulamento/servico" replace />
+  }
+  return children
+}
+```
+
+Envolver o bloco `<Routes>` inteiro com a guarda:
+
+```jsx
+        <GuardaDeEscopo>
+          <Routes>
+            {/* ...todas as rotas, sem alteração... */}
+          </Routes>
+        </GuardaDeEscopo>
+```
+
+- [ ] **Passo 6: Conferir que `useLocation` está importado**
+
+```bash
+grep -n "useLocation" src/App.jsx | head -3
+```
+
+Esperado: encontra no import de `react-router-dom` (já existe na linha 2).
+
+- [ ] **Passo 7: Build**
+
+```bash
+npm test && npm run build
+```
+
+Esperado: PASS e build sem erro.
+
+- [ ] **Passo 8: Commitar**
+
+```bash
+git add src/lib/escopoServico.js src/lib/escopoServico.test.js src/App.jsx
+git commit -m "feat(escopo): guarda de rota devolve o participante ao documento dele"
+```
+
+---
+
+### Tarefa 7: Minuta somente leitura para quem não é administrador
+
+**Arquivos:**
+- Modificar: `src/pages/MinutaWizard.jsx`
+- Modificar: `src/pages/RegulamentoWizard.jsx`
+
+**Interfaces:**
+- Consome: `user.role` (já existente em `auth.jsx`).
+- Produz: nada consumido por outras tarefas.
+
+**Contexto:** os dois arquivos são quase gêmeos — mesma estrutura, deslocada em ~8 linhas.
+Ambos já chamam `useAuth()` (`MinutaWizard.jsx:95`, `RegulamentoWizard.jsx:90`), então
+basta derivar um booleano e usá-lo nos 4 pontos de edição.
+
+**O que NÃO muda:** o botão de baixar o `.docx` continua para todos — o participante pode
+levar o documento; o que ele não pode é levar uma versão alterada por ele. A leitura, a
+navegação por capítulos e o selo "final aplicado" também ficam intactos.
+
+**Aplicar TODOS os passos abaixo nos DOIS arquivos.** Os números de linha diferem; localize
+pelo código, não pela linha.
+
+- [ ] **Passo 1: Derivar o booleano**
+
+Logo depois de `const { user } = useAuth()`:
+
+```js
+  // Somente leitura para quem não é administrador (determinação do Wândrio, 2026-08-13):
+  // não-admin só interage na Revisão. A edição daqui nunca foi gravada em lugar nenhum
+  // (estado local do React), mas alimenta o .docx exportado — sem esta trava, um
+  // participante levaria da reunião uma versão paralela alterada por ele.
+  const podeEditar = user?.role === 'admin'
+```
+
+- [ ] **Passo 2: Esconder o botão "editar"**
+
+Localizar o bloco que começa com `<button onClick={() => openAdvanced(art.editId)}` e
+envolvê-lo numa condição:
+
+```jsx
+        {podeEditar && (
+        <button onClick={() => openAdvanced(art.editId)} title="Editar texto desta seção" style={{
+          flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
+          border: '1px solid var(--border-card)', borderRadius: 5, background: '#fff', cursor: 'pointer',
+          fontSize: 12, color: 'var(--text-muted)',
+        }}><Pencil size={12} /> editar</button>
+        )}
+```
+
+- [ ] **Passo 3: Neutralizar a caixa de seleção do inciso**
+
+Localizar `<input type="checkbox" checked` seguido de `onChange={() => toggleItem(inc.editId, inc.index)}`
+e trocar por:
+
+```jsx
+          <input type="checkbox" checked
+            disabled={!podeEditar}
+            onChange={() => { if (podeEditar) toggleItem(inc.editId, inc.index) }}
+            style={{ marginTop: 5, flexShrink: 0, cursor: podeEditar ? 'pointer' : 'default' }} />
+```
+
+E, no mesmo `<label>` que envolve essa caixa, trocar `cursor: 'pointer'` por
+`cursor: podeEditar ? 'pointer' : 'default'`.
+
+- [ ] **Passo 4: Esconder o bloco de itens removidos**
+
+Localizar a linha que empurra o `RemovedBlock` e condicioná-la:
+
+```jsx
+    if (removed.length && podeEditar) {
+      blocks.push(<RemovedBlock key={`rm-${art.number}`} removed={removed} onRestore={toggleItem} editId={art.editId} />)
+    }
+```
+
+- [ ] **Passo 5: Travar a seleção de fontes**
+
+Localizar `<input type="checkbox" checked={key === 'RO' ? true : sourceChecked(key)} disabled={key === 'RO'}`
+e trocar a condição de `disabled`:
+
+```jsx
+                    <input type="checkbox" checked={key === 'RO' ? true : sourceChecked(key)}
+                      disabled={key === 'RO' || !podeEditar}
+                      onChange={() => { if (podeEditar) toggleSource(key) }}
+                      style={{ cursor: (key === 'RO' || !podeEditar) ? 'default' : 'pointer' }} />
+```
+
+- [ ] **Passo 6: Fechar a porta dos fundos do modo avançado**
+
+Mesmo com o botão escondido, `advanced` poderia ser aberto por outro caminho. Blindar a
+função, logo dentro dela:
+
+```js
+  function openAdvanced(editId) {
+    if (!podeEditar) return
+```
+
+- [ ] **Passo 7: Avisar o leitor de que é somente leitura**
+
+No cabeçalho da página, logo depois do `<p className="page-subtitle">` existente,
+acrescentar:
+
+```jsx
+          {!podeEditar && (
+            <p className="page-subtitle" style={{ fontStyle: 'italic' }}>
+              Somente leitura. Para registrar manifestações, use a tela de Revisão.
+            </p>
+          )}
+```
+
+- [ ] **Passo 8: Conferir que os dois arquivos foram alterados**
+
+```bash
+git diff --stat src/pages/MinutaWizard.jsx src/pages/RegulamentoWizard.jsx
+```
+
+Esperado: os **dois** arquivos aparecem. Se só um aparecer, os passos não foram aplicados
+nos dois — voltar e completar.
+
+```bash
+grep -c "podeEditar" src/pages/MinutaWizard.jsx src/pages/RegulamentoWizard.jsx
+```
+
+Esperado: contagem igual ou próxima nos dois arquivos (mínimo 7 em cada).
+
+- [ ] **Passo 9: Build**
+
+```bash
+npm test && npm run build
+```
+
+Esperado: PASS e build sem erro.
+
+- [ ] **Passo 10: Commitar**
+
+```bash
+git add src/pages/MinutaWizard.jsx src/pages/RegulamentoWizard.jsx
+git commit -m "feat(escopo): Minuta e Regulamento somente leitura para nao-admin"
+```
+
+---
+
+### Tarefa 8: Verificação ponta a ponta com evidência
 
 **Arquivos:** nenhum (verificação).
 
@@ -746,6 +1056,41 @@ conferir no documento novo:
 
 Colar o conteúdo do documento como evidência.
 
+- [ ] **Passo 7b: Provar a guarda de rota (ainda logado como participante de teste)**
+
+Digitar cada endereço abaixo na barra de endereço e confirmar que **volta** para
+`/regulamento/servico`:
+
+```
+/minuta
+/regulamento/conferencia
+/regulamento/decisoes
+/legislacoes
+/acessos
+```
+
+E confirmar que `/manual` **abre** normalmente. Screenshot de uma das devoluções.
+
+- [ ] **Passo 7c: Provar a Minuta somente leitura**
+
+Como o participante de teste não alcança `/minuta` (guarda de rota), este passo usa uma
+segunda conta: um membro **sem escopo** e **sem** papel de administrador — que é a situação
+da comissão. Criar/ajustar em `members`: `ativo: true`, `role: "participante"`, sem campo
+`escopo`.
+
+Entrar com ela em `/regulamento` e confirmar, com screenshot:
+- **nenhum** botão "editar" ao lado dos artigos;
+- caixas de seleção dos incisos **cinzas e sem efeito** ao clicar;
+- o aviso "Somente leitura. Para registrar manifestações, use a tela de Revisão.";
+- o botão de baixar `.docx` **continua** funcionando.
+
+- [ ] **Passo 7d: Provar que a comissão NÃO perdeu a Conferência**
+
+Ainda com essa conta sem escopo, abrir `/regulamento/conferencia`, marcar um item como OK e
+confirmar que gravou. Isto prova que a restrição atingiu só os convidados da reunião, e não
+a comissão — que é exatamente o que você decidiu. Depois, **desmarcar** o item para não
+deixar sujeira na curadoria real.
+
 - [ ] **Passo 8: Provar que NÃO houve regressão para quem já usa o portal**
 
 Entrar com a conta de **administrador** (sem `escopo`) e capturar screenshot de
@@ -764,8 +1109,10 @@ confirmar pelo diff que **não foi tocada**:
 git diff master --stat
 ```
 
-Esperado: apenas `App.jsx`, `Revisao.jsx`, `auth.jsx`, `index.css`, os dois arquivos novos
-de `escopoServico` e `NotaEscopoServico.jsx`, e os documentos em `docs/`.
+Esperado: apenas `App.jsx`, `Revisao.jsx`, `auth.jsx`, `index.css`, `MinutaWizard.jsx`,
+`RegulamentoWizard.jsx`, os dois arquivos novos de `escopoServico`,
+`NotaEscopoServico.jsx`, e os documentos em `docs/`. **Nenhum arquivo de `database/`,
+nenhum `.py`, e `firestore.rules` intocado.**
 
 - [ ] **Passo 9: Publicar (exceção autorizada)**
 
@@ -808,6 +1155,10 @@ com a opção de celular via Tailscale.
 ## Depois da reunião (fora do escopo deste plano)
 
 - Campo `escopo` na tela `/acessos`, para o Wândrio convidar sem depender do console.
+- **Endurecer o `firestore.rules`** para que a restrição da Conferência seja tranca de
+  banco, e não só de tela. Hoje qualquer membro ativo grava em `conferencia` (regra
+  colaborativa de 25-26/07/2026). Publicar exige o console do Firebase no perfil Chrome
+  Institucional — **ação do Wândrio**. Registrar em `.claude/PENDENCIAS.md`.
 - Consolidar as manifestações da reunião via a trilha de Decisões já existente.
 - Avaliar gerar o `.docx` autônomo do Regulamento de Serviço a partir deste mesmo recorte.
 - Avisar o Ten. Tiago do merge direto.

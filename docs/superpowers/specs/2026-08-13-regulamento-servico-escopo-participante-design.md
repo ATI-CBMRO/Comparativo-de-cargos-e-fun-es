@@ -162,6 +162,48 @@ No modo escopo o documento **não é dividido em Partes**: é um documento únic
 As faixas ficam suprimidas (`parteDe` vazio ⇒ o código já vira no-op, sem `if` novo). As
 faixas continuam intactas no Regulamento Geral completo, que não é tocado.
 
+### 3c. Restrições de interação (acrescentado pelo Wândrio em 2026-08-13)
+
+Depois da 1ª revisão da spec, o Wândrio determinou: **quem não é administrador só
+interage na Revisão.** A regra aterrissa em **dois níveis diferentes**, de propósito.
+
+**Nível 1 — por ESCOPO (só os convidados da reunião).** Para `escopo === 'servico'`, além
+do menu reduzido, as **rotas** ficam fechadas: digitar `/minuta`, `/regulamento/conferencia`,
+`/regulamento/decisoes`, `/legislacoes` etc. na barra de endereço devolve o participante ao
+documento dele. Endereços liberados: `/regulamento/servico`, `/manual`, `/login`,
+`/cadastro` e a raiz `/`.
+
+Por que só para o escopo, e não para todo não-admin: a **Conferência é colaborativa de
+propósito** — qualquer membro confere ou desmarca, sem dono (decisão registrada no CLAUDE.md
+e endurecida no `firestore.rules` em 25-26/07/2026). Fechá-la para todo não-admin
+desfaria essa decisão e tiraria da comissão atual uma ferramenta em uso. O Wândrio optou
+por preservá-la e restringir apenas os convidados desta reunião.
+
+**Nível 2 — por PAPEL (todo não-admin).** Os dois Wizards (`MinutaWizard.jsx` e
+`RegulamentoWizard.jsx`) ficam **somente leitura** para quem não é administrador. Isto não
+desfaz decisão anterior: a edição dos Wizards nunca teve controle de papel.
+
+Os 4 pontos de edição, idênticos nos dois arquivos:
+
+| Ponto | `MinutaWizard.jsx` | `RegulamentoWizard.jsx` |
+|---|---|---|
+| Botão "editar" (abre o textarea) | 298 | 306 |
+| `textarea` + "Concluir edição" | 267, 276 | 275, 284 |
+| Caixa de seleção do inciso (exclui da minuta) | 312-313 | 320-321 |
+| `RemovedBlock` — restaurar inciso removido | 322, 484 | 330, 513 |
+| Seleção de fontes de enriquecimento | 406-407 | 416-417 |
+
+**A edição do Wizard hoje NÃO é gravada em lugar nenhum** — `edits` e `excluded` são estado
+local do React, que morre ao fechar a aba. O motivo de desabilitar não é proteger o dado, e
+sim impedir que um participante altere o texto na tela e **baixe um `.docx` com a alteração
+dele**, colocando uma versão paralela em circulação depois da reunião.
+
+**O que estas restrições NÃO são.** Menu e rota são camada de interface. O
+`firestore.rules` **não muda nesta entrega** e continua autorizando qualquer membro ativo a
+gravar em `conferencia`. Um participante determinado ainda conseguiria gravar por fora da
+tela. Publicar regra nova exige o console do Firebase no perfil Chrome Institucional — é
+ação do Wândrio, não minha, e fica registrada como pendência.
+
 ### 4. Rota `/regulamento/servico`
 
 Renderiza `Revisao` com `initialDoc='reg'` e o escopo de serviço aplicado. Reaproveita a
@@ -222,7 +264,8 @@ Revisão do Regulamento **antes** da reunião.
 ## Fora de escopo desta entrega
 
 - Tela de gestão de escopo em `Acessos.jsx` (o campo é gravado no console por ora).
-- Restrição de rota por escopo (é simplificação de menu, não parede).
 - Documento `.docx` autônomo do Regulamento de Serviço.
 - Qualquer alteração de redação da minuta — esta entrega é o **ambiente**, não o conteúdo.
-- `firestore.rules` — inalterado.
+- **`firestore.rules` — inalterado**, e por isso a restrição da Conferência é de tela, não
+  de banco (ver 3c). Endurecer a regra é ação do Wândrio no console institucional; fica
+  registrado em `.claude/PENDENCIAS.md`.
