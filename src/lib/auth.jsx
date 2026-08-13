@@ -48,6 +48,10 @@ export function AuthProvider({ children }) {
           email,
           nome: m.nome ?? email,
           role: m.role === 'admin' ? 'admin' : 'participante',
+          // Escopo restringe o participante a um recorte do portal (ver
+          // src/lib/escopoServico.js). Ausente/desconhecido = null = portal completo,
+          // que é o caso de TODOS os cadastros existentes.
+          escopo: m.escopo === 'servico' ? 'servico' : null,
         })
         setNaoAutorizado(false)
         setErroVerificacao(null)
