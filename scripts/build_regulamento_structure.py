@@ -19,6 +19,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from regulamento_enrichment import (  # noqa: E402
     THEMES, THEME_KEYS, PRIMARY_SOURCE, REGULAMENTO_DOCS, REGULAMENTO_ENRICHMENT, adapt_text,
 )
+from regulamento_reescrita import (  # noqa: E402
+    REMOVER_ARTIGOS, REMOVER_INCISOS, SUBSTITUI_INTEGRALMENTE, ARTIGOS_PROPRIOS,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'database' / 'regulamento_structure.json'
@@ -68,19 +71,36 @@ def build():
         primarios = REGULAMENTO_ENRICHMENT.get((theme_key, primary_uf), [])
         primarios = sorted(primarios, key=lambda e: art_num(e.get('source')))
 
+        # Camada de reescrita (scripts/regulamento_reescrita.py): dispositivos que citam
+        # órgão inexistente em RO SAEM, e temas cujo texto importado descrevia outra
+        # corporação são substituídos por redação própria fundada na lei de Rondônia.
+        fora_art = REMOVER_ARTIGOS.get(theme_key, {})
+        fora_inc = REMOVER_INCISOS.get(theme_key, {})
+        if theme_key in SUBSTITUI_INTEGRALMENTE:
+            primarios = []
+
         articles = []
         for ex in primarios:
+            n = art_num(ex.get('source'))
+            art_id = f'{primary_uf}-art-{n}'
+            if art_id in fora_art:
+                continue
             caput_original = sem_prefixo_art(ex.get('caput'))
             caput_adaptado, mudou_caput = adapt_text(caput_original)
+            # Incisos que citam órgão inexistente saem — casados por TEXTO, contra o
+            # dispositivo original, para não depender de índice posicional (AR-03).
+            trechos = fora_inc.get(art_id, [])
+            dispositivos = [x for x in ex.get('dispositivos', [])
+                            if not any(t in x for t in trechos)]
+            tirar = len(ex.get('dispositivos', [])) - len(dispositivos)
             items = []
             houve_adapt = mudou_caput
-            for disp in ex.get('dispositivos', []):
+            for disp in dispositivos:
                 texto, mudou = adapt_text(disp)
                 houve_adapt = houve_adapt or mudou
                 items.append({'text': texto, 'source': ex['source']})
-            n = art_num(ex.get('source'))
             leaf = {
-                'id': f'{primary_uf}-art-{n}',
+                'id': art_id,
                 'kind': 'incisos',
                 'editId': f'reg:{theme_key}/{primary_uf}-art-{n}',
                 'caput': caput_adaptado,
@@ -92,7 +112,28 @@ def build():
             if houve_adapt:
                 leaf['adapted'] = True
                 leaf['original_caput'] = caput_original
+            if tirar:
+                # AR-03: tirar inciso re-indexa os seguintes, então `editId#index` deixa de
+                # endereçar o mesmo conteúdo. Mesma convenção do minutaArticles.js.
+                leaf['reindexed'] = True
+                leaf['incisos_removidos'] = tirar
             articles.append(leaf)
+
+        # Artigos de redação própria, fundados na lei de Rondônia.
+        for i, art in enumerate(ARTIGOS_PROPRIOS.get(theme_key, []), start=1):
+            art_id = f'ro-art-{i}'
+            articles.append({
+                'id': art_id,
+                'kind': 'incisos',
+                'editId': f'reg:{theme_key}/{art_id}',
+                'caput': art['caput'],
+                'items': [{'text': t, 'source': art['fundamento']} for t in art.get('dispositivos', [])],
+                'source': art['fundamento'],
+                'match': 'exata',
+                'heading': art.get('heading'),
+                'autoral': True,
+                'fundamento': art['fundamento'],
+            })
 
         if not articles:
             pendencias.append(theme_key)

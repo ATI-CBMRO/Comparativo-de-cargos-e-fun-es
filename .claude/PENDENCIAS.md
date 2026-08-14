@@ -55,7 +55,162 @@
   cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
 
 ## 🟡 Em andamento
-_(nenhum)_
+- [ ] **Curadoria do Regulamento à luz da LOB vigente — handoff Wândrio→Tiago (2026-08-13,
+  branch `fix/curadoria-lob-atual`, ainda não mesclada)**: a minuta importada de MT/SE/BA/RN/RS
+  só trocou nome de estado, nunca estrutura organizacional — 32 nomes de órgão sem lastro em
+  nenhuma LOB de RO. Relatório completo em
+  `docs/superpowers/specs/2026-08-13-revisao-curadoria-lob-atual.md`, plano de tarefas T1-T7 em
+  `docs/superpowers/plans/2026-08-13-handoff-tiago-correcao-curadoria.md`.
+  **Decidido com o Tiago (2026-08-13):**
+  - **Instrumento: Portaria do Comandante-Geral** (não Decreto). Consequência: os capítulos que
+    criam/renomeiam órgão (`atribuicoes-funcoes`, `seguranca-contra-incendio`,
+    `central-operacoes-193`) são inválidos como texto próprio na forma atual — precisam virar
+    remissão a Decreto do Governador (LOB Art. 59), não descrição direta de estrutura. Ainda não
+    reescritos nessa forma.
+  - **Central 193**: o CBMRO opera **2 CIOP** (Centro Integrado de Operações) — Porto Velho
+    (ocorrências do COB I) e Ji-Paraná (COB II). Aplicado só o NOME (`CICOM`→`CIOP`); a divisão
+    operacional por COB **não** foi codificada nos 3 artigos/65 incisos do capítulo — pendência
+    de redação.
+  - **ADEMA→SEDAM, e-doc→SEI**: aplicados (resíduos de 1 ocorrência cada, fonte Sergipe).
+  **Feito nesta branch (9 commits)**: 4 do Wândrio (resíduos mecânicos — Bahia sem adaptação,
+  variantes "CBM-MT", rodapé do RISD/CBMSE fabricando um "Boletim Geral" do CBMRO, "PMSE") + 5
+  meus (SESDEC; ADEMA/e-doc/CIOP; **correção da ESTRUTURA organizacional**; nome baiano do
+  comando operacional). `verificar_verbatim.py` OK (1166 excerpts) +
+  `test_regulamento_structure.py` OK (16 capítulos, 413 artigos) + `npm test` 154/154 em cada
+  commit.
+
+  **⚠️ Correção de ESTRUTURA aplicada em 2026-08-13** (o Tiago forneceu 3 documentos —
+  organograma oficial do CBMRO, Decreto 21.425/2016 de SCI e a LOB consolidada — e a estrutura
+  real da corporação). Até então a `ADAPTATIONS` só trocava NOME DE ESTADO; a curadoria havia
+  importado junto o ORGANOGRAMA de MT/SE/BA. Corrigido, com correspondência inequívoca na lei:
+  - `Comando/Comandante Regional`, `CRBM` (25x) → **Comando/Comandante Operacional de
+    Bombeiros**. RO **não tem Comando Regional**: tem **COB I** (Porto Velho) e **COB II**
+    (Ji-Paraná), subordinados operacionalmente ao Subcomandante-Geral (LOB Art. 35 + organograma).
+  - `Diretoria/Diretor Operacional` e `de Operações` (44x) e a forma baiana `Comando de Operações
+    de Bombeiros Militares` (4x) → **Comando/Comandante Operacional de Bombeiros**.
+  - `Batalhão`→**Grupamento**; `CiaBM`/`CIBM` (33x)→**SGBM**. Cadeia do CBMRO: **COB → GBM →
+    SGBM** (LOB Art. 47 e §1º; organograma).
+  - `UBM` (18x) → **OBM** (termo da lei de RO). `Comandante-Geral Adjunto` (10x, 2 grafias) →
+    **Subcomandante-Geral** (LOB Art. 12). `SSP/MT` → **SESDEC**.
+  - **ANTI-AR-01 verificado ANTES de escrever a regra**: NÃO há regra para a palavra solta
+    "Companhia" — em `servico-operacional` as 4 ocorrências são **concessionárias** (energia,
+    água, elevador, seguradora) e **"Companhia de Comando e Serviços" EXISTE em RO** (LOB
+    Art. 25). As 5 seguem intactas, conferidas no JSON pós-rebuild.
+
+  **✅ REVERTE conclusão anterior — "multar" TEM base legal em RO.** O relatório de 13/08 dizia
+  que a palavra "não existe na LOB" e que sanção pecuniária exigiria lei. Existe: a **Lei estadual
+  nº 3.924/2016** e o **Decreto nº 21.425/2016** (regulamento de SCI, alterado pelo Decreto
+  24.357/2019) preveem multa expressamente — Art. 34, II (rol de penalidades) e Art. 40 (gradação
+  de 10 a 2.000 UPF, com destino ao FUNESBOM no §11). Os 4 dispositivos com "notificar, multar,
+  interditar ou embargar" **podem ficar**; o que falta é **citar essa base** no texto, hoje ausente.
+
+  **2ª leva de estrutura — órgãos do Comando-Geral (2026-08-13, após o Tiago determinar que
+  "tudo o que diverge dos 3 documentos deve ser ajustado")**: varredura de TODOS os sintagmas
+  institucionais achou **182 nomes distintos** — a Parte I reproduz o organograma do CBMMT órgão
+  a órgão. Aplicado o de-para dos que têm equivalente na LOB: `Diretoria de Administração
+  Institucional`→Estado-Maior-Geral (Art. 12-A); `Coord. de Gestão de Pessoas`→Coordenadoria de
+  Pessoal (Art. 14); `Coord. de Comunicação Social`/`Logística e Patrimônio`/`Tecnologia da
+  Informação`→**Diretorias** de Comunicação Social/Logística/Informática (Arts. 22, 21, 23 — em RO
+  são Diretorias do EMG, não Coordenadorias); `Agência Central de Inteligência`/`CACI`→Diretoria
+  de Inteligência/DINT (Art. 20); `Conselho Superior de Bombeiros`/`CSB`→CONDEG (Art. 27);
+  `Escola Dom Pedro II`→Unidade de Colégio BM (Art. 15, IV, "f"); `CEIB`→Centro de Treinamento,
+  Ensino e Instrução (Art. 15, V, "d"); `DEIP`→Coordenadoria de Educação, Ensino e Instrução
+  (Art. 15); `Coord. de Finanças`→CPOF (Art. 16); `Coord. de Ajudância Geral`→Ajudância-Geral
+  (Art. 25); `Coord. de Assistência Social`→Centro de Assistência Social (Art. 25, VI);
+  `Coord. de Planejamento`→Diretoria de Planejamento (Art. 16, V); `Coord. de Aperfeiçoamento`→
+  Escola de Aperfeiçoamento e Especialização (Art. 15, V, "g"); `CSM`→Centro de Suprimento e
+  Material (Art. 21, V); `GAvBM`→Grupamento de Operações Aéreas (Art. 48, II).
+  **650 substituições de termo** no documento ao todo.
+  - **Colisão de sigla resolvida:** no CBMMT `COB` é o *Centro* de Operações de Bombeiros (a
+    central); em RO é o *Comando* Operacional de Bombeiros (órgão de execução). A central aqui é
+    a **CIOP** — manter os dois sentidos sob a mesma sigla criaria ambiguidade interna.
+  - **⚠️ Regressão minha, corrigida:** as substituições trocam o núcleo do sintagma e vários
+    órgãos mudam de gênero ("a Diretoria"→"o Comando"; "a Companhia"→"o Subgrupamento"),
+    produzindo **41 concordâncias quebradas** ("da Comando", "a SGBM", "à SGBM", "Comando …
+    Adjunta"). Corrigidas por `corrigir_concordancia()`, que roda DEPOIS das substituições.
+    `OBM` ficou fora da lista masculina de propósito — é *Organização*, feminino (Art. 60), então
+    "da OBM" já estava certo (41 preservados, 0 masculinizados por engano). **CIOP** recebeu o
+    caminho inverso (masculino do CICOM → feminino de "Central Integrada").
+
+  **✅ 3ª leva — REMOÇÃO + REESCRITA (2026-08-13, determinação do Tiago: "o dispositivo precisa
+  sair, em seguida reescreva o capítulo de segurança contra incêndio")**. Criada a camada
+  `scripts/regulamento_reescrita.py`, separada da `ADAPTATIONS` de propósito: a tabela só troca
+  termo; a camada nova REMOVE dispositivo e escreve texto PRÓPRIO. Como `verificar_verbatim.py`
+  percorre `REGULAMENTO_ENRICHMENT`, o que é transcrição segue conferido contra a fonte e o que é
+  redação própria não gera falso erro — as duas garantias continuam valendo.
+  - **13 artigos + 22 incisos REMOVIDOS** (os 7 órgãos sem equivalente + o bloco DSCIP/CCIP 1-5 do
+    organograma). Casamento por **TEXTO, não por índice** — a 1ª versão usava índice posicional e
+    quebrou em silêncio assim que outra remoção deslocou a lista (mesma classe do AR-03). Artigo
+    com inciso removido recebe `reindexed: true` (convenção do `minutaArticles.js`).
+  - **Trims cirúrgicos** onde o órgão morto era só remissão dentro de matéria legítima (cortar o
+    inciso perderia a norma boa): atividades cívicas e sociais, atendimentos individuais,
+    parágrafo único do CTEI/Colégio BM, contato em acidente com público interno. Dois cabeçalhos
+    que a extração do MT grudou no fim do inciso anterior entraram como `RUIDO_DE_PAGINA`, com
+    lookbehind preservando o ponto final.
+  - **`seguranca-contra-incendio` REESCRITO**: 19 artigos do MT → **15 de redação própria** sobre
+    **CAT → DAT (6, nomeadas: Porto Velho, Ariquemes, Ji-Paraná, Cacoal, Rolim de Moura, Vilhena)
+    → SAT**, cobrindo competências, SSCIP, PPCIP/AVCIP/ACPS, Instruções Técnicas, penalidades e
+    Comissões Técnicas. Cada artigo declara `fundamento` na norma de RO, e o teste **recusa**
+    artigo autoral sem fundamento. Bloco D dos 6 estados preservado. Dois pontos de mérito
+    corrigidos: vinculação das SAT agora é **facultativa** (Art. 18, §2º), e a multa fica com a
+    **base certa** (Lei 3.924/2016 + Decreto 21.425/2016, destino FUNESBOM).
+  - **413 → 396 artigos** (−13 −19 +15). Piso do teste ajustado COM a aritmética explicada e +3
+    asserções novas para a redução não disfarçar regressão futura.
+
+  **Ainda em aberto, todos exigindo decisão de mérito de quem conhece o CBMRO (não corrigir por
+  semelhança/palpite — repetiria o erro que esta rodada está consertando):**
+  - `seguranca-contra-incendio` (19 art/184 incisos) — **o capítulo inteiro é o regimento interno
+    da DSCIP do Mato Grosso**: descreve CCIP 1 a CCIP 5, Tesouraria, Subseção de Protocolo,
+    Subseção de Arrecadação e Estatística. **Nenhuma existe em RO.** A estrutura real é taxativa
+    (LOB Art. 18, §1º + Decreto 21.425/2016, Arts. 2º e 5º): **CAT → DAT (uma por GBM) → SAT (uma
+    por SGBM)**, com Seção de Estudos Técnicos, Seção de Planejamento/Fiscalização/Suporte Técnico
+    e, nas DAT, Seções de Vistoria, Análise de Projetos, Investigação e Prevenção de Incêndio,
+    Hidrantes e Atividades Técnicas. **Decisão consciente: NÃO renomear só a cabeça DSCIP→CAT** —
+    isso daria falsa legitimidade (um "CAT" com sub-unidades do MT pareceria validado). O capítulo
+    precisa ser **reescrito** sobre a estrutura legal; enquanto não for, permanecer visivelmente
+    estrangeiro é mais honesto. Nomenclatura de RO já disponível no Decreto para a reescrita:
+    SSCIP, PPCIP, AVCIP, ACPS, Instrução Técnica (IT), Comissão Técnica/CTE/CEA.
+  - `seguranca-contra-incendio`, art. 182: afirma **vinculação automática** das Seções de
+    Atividades Técnicas às unidades operacionais; a lei (Art. 18, §2º, red. Lei 4.488/2019) a
+    trata como **facultativa, por ato do Comandante-Geral**. Contraria a lei.
+  - `central-operacoes-193`: resíduos baianos que **não citam nome de estado** (por isso escapam
+    da varredura automática) — Supervisor do Teledespacho "sediado na **Secretaria de Segurança
+    Pública (SSP)**" (em RO os 2 CIOP ficam em Porto Velho e Ji-Paraná: **onde exatamente?**),
+    `Superior de Dia` (3x), `Coordenadores de Área`, `Coordenadoria de Saúde` (RO não tem órgão de
+    saúde — Art. 62 revogado pela Lei 2.244/2010), `GD (Grupo de Despacho)`, `SGTO`, `Supervisor
+    de Operações`, `Adjunto ao Oficial de Dia`, remissão a "**ANEXO A desta Portaria**" (anexo
+    baiano inexistente) e "código fonético previsto no âmbito do CBMRO" (o da Bahia). Falta ainda
+    **codificar a divisão CIOP-Porto Velho/COB I × CIOP-Ji-Paraná/COB II** nos 3 artigos.
+  - `atribuicoes-funcoes` (29 art/345 incisos): é o Título III do Regulamento do CBMMT. Os nomes
+    de unidade já foram corrigidos acima, mas **restam os órgãos de direção**: DEIP, CEIB, Escola
+    Dom Pedro II, Centro de Capacitação Física (19x no total) — sem equivalente direto. E o alerta
+    permanece: **cargo de Coordenador é privativo de Oficial do último posto (LOB Art. 19)**, logo
+    cada "Coordenadoria" que o texto criar implica um cargo de **Coronel** — correção de nome vira
+    decisão de desenho de efetivo.
+  - **`Pelotão` (5x) — 4º nível da cadeia não confirmado.** A cadeia validada pelo Tiago vai até o
+    SGBM. A LOB (Art. 47, V e VI, e §1º) põe **Seção de Bombeiros** abaixo do Subgrupamento e
+    **Grupo de Bombeiros** abaixo dela — nenhum dos dois aparece no texto (0x). Não convertido de
+    propósito: inventar o nível repetiria o erro que esta rodada corrige.
+  - `servico-operacional`+`servico-interno-dia` (128 art, fonte SE): nomes de órgão já corrigidos;
+    **resta a matéria** — escalas desenhadas para estado compacto (Superior de Dia em sobreaviso
+    preso à área da residência mas responsável pelo estado inteiro), a regionalizar por GBM;
+    doutrina de comando contraditória (antiguidade × Sistema de Comando de Incidentes); 5 regras
+    de "casos omissos" conflitantes.
+  - Fundamento legal: **nenhum dos 185 artigos cita a Lei 2.204/2009** (sem cláusula de vigência/
+    revogatória); o Art. 3º da minuta tem **11 competências**, a LOB (Art. 2º) tem **25** —
+    suprime atendimento pré-hospitalar, guarda-vidas, socorro a embarcações, perícia técnica,
+    vistorias, embargo/interdição, polícia judiciária militar, bombeiro civil e orçamento; e o
+    inciso X condiciona **a convênio** uma fiscalização que a lei dá como poder próprio.
+  - **"Art. 82 da Constituição Estadual"** (art. 1º da minuta) é o artigo da Constituição **do Mato
+    Grosso**. Pista forte para o correspondente em RO: o Decreto 21.425/2016 fundamenta-se no
+    **art. 148, § 3º, da Constituição Estadual** de Rondônia (e o poder de decreto do Governador
+    no art. 65, V) — **confirmar antes de aplicar**, não foi alterado.
+  - RI do cenário **futuro** (`minuta_structure.json`) tem 21 siglas de outros estados (CBMDF
+    10x, CBMMT 7x, CBM-MT 2x, CBMPA 2x) — pendência separada, não afeta a reunião de 14/08; RI
+    do cenário atual está limpo (0).
+  Recomendação do relatório para a reunião de 14/08: apresentar como material-base a mapear
+  (não como "a minuta do CBMRO"), com os comentários ancorados no `editId` — sobrevivem a
+  qualquer reescrita/renumeração posterior dos capítulos.
 
 ## ✅ Concluído (mês atual)
 - [x] **Acervo — RO: Regulamento de Segurança Contra Incêndio e Pânico ingerido** (13/08/2026,

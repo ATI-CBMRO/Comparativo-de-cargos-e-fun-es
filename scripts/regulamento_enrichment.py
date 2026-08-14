@@ -9,6 +9,8 @@ Disciplina (B1-M): só entra dispositivo VERBATIM do markdown de origem, com ró
 fonte e nível de correspondência (`match`). scripts/verificar_verbatim.py confere tudo.
 """
 
+import re
+
 # ── Taxonomia (15 temas; é DADO — cresce com a curadoria) ────────────────────────────
 # (key, título p/ a minuta, grupo de exibição)
 THEMES = [
@@ -85,6 +87,12 @@ PRIMARY_SOURCE = {
 # ── Adaptações p/ RO (aplicadas NO BUILD apenas ao texto proposto da minuta; o
 #    original fica preservado em original_text e é o que o comparador exibe) ──────────
 # Pares (de, para), aplicados na ordem. Revisáveis pelo Wândrio.
+#
+# AUDITORIA 2026-08-13: a tabela cobria 9 estados (MT, RN, RS, SE, AL, GO, PA, PR, DF) e
+# NÃO cobria a BAHIA — que é a fonte primária de 'central-operacoes-193' (ver
+# PRIMARY_SOURCE acima). Resultado: aquele capítulo saía com ZERO adaptações e vazava
+# "CBMBA" para dentro da minuta de RO. Regras da Bahia acrescentadas abaixo. Ao eleger uma
+# nova fonte primária em PRIMARY_SOURCE, confira se o estado tem regra AQUI.
 ADAPTATIONS = [
     # Pares específicos primeiro (a ordem importa); genéricos por último.
     ("região metropolitana de Cuiabá/Várzea Grande", "região metropolitana de Porto Velho"),
@@ -93,7 +101,9 @@ ADAPTATIONS = [
     ("Corpo de Bombeiros Militar do Estado do Rio Grande do Sul", "Corpo de Bombeiros Militar do Estado de Rondônia"),
     ("Corpo de Bombeiros Militar do Estado do Sergipe", "Corpo de Bombeiros Militar do Estado de Rondônia"),
     ("Corpo de Bombeiros Militar do Estado de Alagoas", "Corpo de Bombeiros Militar do Estado de Rondônia"),
+    ("Corpo de Bombeiros Militar do Estado da Bahia", "Corpo de Bombeiros Militar do Estado de Rondônia"),
     ("Estado de Mato Grosso", "Estado de Rondônia"),
+    ("Estado da Bahia", "Estado de Rondônia"),
     ("Estado do Rio Grande do Norte", "Estado de Rondônia"),
     ("Estado do Rio Grande do Sul", "Estado de Rondônia"),
     ("Estado de Alagoas", "Estado de Rondônia"),
@@ -102,11 +112,166 @@ ADAPTATIONS = [
     ("mato-grossense", "rondoniense"),
     ("sergipano", "rondoniense"),
     ("sergipana", "rondoniense"),
+    ("baiano", "rondoniense"),
+    ("baiana", "rondoniense"),
     # Genéricos (depois dos específicos): pegam "…Corpo de Bombeiros Militar de Mato
     # Grosso", "…de Sergipe" etc. sem o "do Estado".
     ("Mato Grosso", "Rondônia"),
     ("Sergipe", "Rondônia"),
+    ("Bahia", "Rondônia"),
+    # Polícia Militar do estado de origem: o RISD do CBMSE manda acionar a "PMSE" em
+    # ocorrência com vítima de crime — no texto de RO isso mandava chamar a PM de outro
+    # estado. A LOB de RO (Art. 61) não usa sigla; escreve por extenso. Auditoria 2026-08-13.
+    ("PMSE", "Polícia Militar do Estado de Rondônia"),
+    # A minuta importada do CBMMT vincula o Corpo de Bombeiros à "Secretaria de Estado de
+    # Segurança Pública" (a pasta do Mato Grosso). Em Rondônia é a SESDEC — Secretaria de
+    # Estado de Segurança, Defesa e Cidadania (LOB Art. 1º, parágrafo único). Resíduo T1
+    # do handoff 2026-08-13, marcado como seguro por não depender de decisão de mérito.
+    ("Secretaria de Estado de Segurança Pública", "SESDEC"),
+    # Resíduos T1 do handoff 2026-08-13, respondidos pelo Ten. Tiago (conhecimento
+    # institucional do CBMRO, não deduzido): a minuta importada do CBMSE cita o órgão
+    # ambiental de Sergipe e o sistema de processo eletrônico do CBMSE.
+    ("ADEMA", "SEDAM"),
+    ("e-doc", "SEI"),
+    # "CICOM" é o centro de comunicações da Bahia (fonte primária do capítulo 193).
+    # Confirmado pelo Ten. Tiago: o CBMRO opera dois CIOP (Centro Integrado de
+    # Operações) — um em Porto Velho (ocorrências do COB I) e outro em Ji-Paraná
+    # (COB II). Troca só o NOME do centro; a divisão operacional por COB não está
+    # codificada texto a texto (pendência de redação — ver handoff 2026-08-13).
+    # "CICOM" só ocorre no arquivo da Bahia, então não vaza para outros capítulos.
+    ("CICOM", "CIOP"),
+    # ── ESTRUTURA ORGANIZACIONAL (2026-08-13) ────────────────────────────────────────
+    # Até aqui a tabela só trocava NOME DE ESTADO. A curadoria, porém, importou junto a
+    # ESTRUTURA de MT/SE/BA: a minuta descrevia o organograma daqueles CBMs com o nome do
+    # CBMRO. As regras abaixo corrigem os órgãos cuja correspondência em Rondônia é
+    # INEQUÍVOCA na lei — conferidas contra a Lei 2.204/2009, o Decreto 21.425/2016 e o
+    # organograma oficial do CBMRO, validadas pelo Ten. Tiago.
+    # O que depende de decisão de mérito (Pelotão, capítulo da CAT, CIOP/COB, funções da
+    # NOp da Bahia) fica DE FORA de propósito — ver .claude/PENDENCIAS.md.
+    #
+    # ⚠️ NÃO acrescentar aqui uma regra para a palavra solta "Companhia": em
+    # servico-operacional as 4 ocorrências são CONCESSIONÁRIAS (energia, água, elevador,
+    # seguradora) e "Companhia de Comando e Serviços" EXISTE em RO (LOB Art. 25). Só
+    # entram as formas que trazem "Bombeiro Militar" ou a sigla. Armadilha AR-01.
+    #
+    # Comando operacional — RO NÃO tem Comando Regional/CRBM (nome do MT). Tem COB I
+    # (Porto Velho) e COB II (Ji-Paraná), subordinados operacionalmente ao
+    # Subcomandante-Geral (LOB Art. 35 + organograma). "Diretoria Operacional" é o nome
+    # do MT para o mesmo órgão. Plurais e variantes antes das formas curtas.
+    ("Comandantes Regionais Adjuntos", "Comandantes Operacionais de Bombeiros Adjuntos"),
+    ("Comandante Regional Adjunto", "Comandante Operacional de Bombeiros Adjunto"),
+    ("Comandantes Regionais", "Comandantes Operacionais de Bombeiros"),
+    ("Comandante Regional", "Comandante Operacional de Bombeiros"),
+    ("Comandos Regionais Bombeiro Militar", "Comandos Operacionais de Bombeiros"),
+    ("Comando Regionais Bombeiro Militar", "Comandos Operacionais de Bombeiros"),
+    ("Comandos Regionais de Bombeiros Militares", "Comandos Operacionais de Bombeiros"),
+    ("Comandos Regionais do Corpo de Bombeiros", "Comandos Operacionais de Bombeiros"),
+    ("Comandos Regionais", "Comandos Operacionais de Bombeiros"),
+    ("Comando de Regional", "Comando Operacional de Bombeiros"),
+    ("Comando Regional", "Comando Operacional de Bombeiros"),
+    ("CRBM", "COB"),
+    ("Diretoria de Operacional", "Comando Operacional de Bombeiros"),
+    ("Diretoria Operacional", "Comando Operacional de Bombeiros"),
+    ("Diretor Operacional", "Comandante Operacional de Bombeiros"),
+    ("Diretoria de Operações", "Comando Operacional de Bombeiros"),
+    ("Diretor de Operações", "Comandante Operacional de Bombeiros"),
+    # A Bahia (fonte do capítulo 193) chama o mesmo órgão de "Comando de Operações de
+    # Bombeiros Militares"; em RO a lei o nomeia "Comando Operacional de Bombeiro
+    # Militar" (LOB Art. 34, par. único, I, e Art. 35).
+    ("Comando de Operações de Bombeiros Militares", "Comando Operacional de Bombeiros"),
+    ("Comandante de Operações de Bombeiros Militares", "Comandante Operacional de Bombeiros"),
+    # Unidades — a cadeia do CBMRO é COB → GBM → SGBM (LOB Art. 47 e §1º; organograma).
+    # "Batalhão"/"Companhia BM" são os degraus do MT. O degrau abaixo do SGBM na lei é
+    # "Seção de Bombeiros" (Art. 47, V), mas "Pelotão" NÃO é convertido aqui: a cadeia
+    # confirmada pelo Ten. Tiago para o CBMRO para no SGBM, e inventar o 4º nível seria
+    # repetir o erro que esta rodada corrige. Pendência registrada.
+    ("Batalhão Bombeiro Militar (BBM)", "Grupamento de Bombeiro Militar (GBM)"),
+    ("Companhias Independente Bombeiro Militar - CIBM", "Subgrupamentos de Bombeiros Militar - SGBM"),
+    ("Companhia Independente Bombeiro Militar (CIBM)", "Subgrupamento de Bombeiros Militar (SGBM)"),
+    ("Companhias de Bombeiro Militar – CiaBM", "Subgrupamentos de Bombeiros Militar – SGBM"),
+    ("Companhias Bombeiro Militar- CiaBM", "Subgrupamentos de Bombeiros Militar - SGBM"),
+    ("CiaBM", "SGBM"),
+    ("Batalhão", "Grupamento"),
+    # A lei de RO diz OBM (Organização Bombeiro Militar, Art. 3º e Art. 60); "UBM"
+    # (Unidade Bombeiro Militar) é o termo do MT. Conferido: "UBM" nunca aparece dentro
+    # de outra palavra, então a troca não colide (a forma plural "UBMs" segue junto).
+    ("UBM", "OBM"),
+    # RO não tem "Comandante-Geral Adjunto": tem SUBCOMANDANTE-GERAL (LOB Art. 12),
+    # que é o substituto eventual do Comandante-Geral — exatamente a função que o texto
+    # do MT descreve. Confirmado no organograma oficial.
+    # As duas grafias aparecem na fonte (com e sem hífen) — a segunda escapou na
+    # primeira rodada desta correção.
+    ("Comandante-Geral Adjunto", "Subcomandante-Geral"),
+    ("Comandante Geral Adjunto", "Subcomandante-Geral"),
+    # Vazamento clássico: a adaptação trocou "Mato Grosso"→"Rondônia" mas deixou a SIGLA
+    # do estado de origem, produzindo "Secretaria ... do Estado de Rondônia (SSP/MT)".
+    # A pasta em RO é a SESDEC (LOB Art. 1º, par. único).
+    ("SSP/MT", "SESDEC"),
+    # ── ÓRGÃOS DO COMANDO-GERAL (2026-08-13) ─────────────────────────────────────────
+    # Segunda leva da correção de estrutura: a Parte I da minuta reproduz o organograma
+    # do CBMMT órgão a órgão. Aqui entram SÓ os que têm equivalente identificável na Lei
+    # 2.204/2009 — os que NÃO existem em RO (Centro de Capacitação Física, Coordenadoria
+    # de Articulação e Integração Comunitária, Coordenadoria de Atendimento Pré-Hospitalar,
+    # Núcleo Sistêmico, Grupamento de Emergências Ambientais, Coordenadoria de Saúde)
+    # ficam de fora: renomear não resolve, o dispositivo precisa sair ou a matéria ser
+    # reatribuída, e isso é decisão de redação. Ver .claude/PENDENCIAS.md.
+    # Formas longas antes das curtas (a lista é aplicada em ordem).
+    ("Coordenadoria de Planejamento Operacional e Estatística", "Seção de Planejamento Operacional e Controle de Resultados"),
+    ("Diretoria de Administração Institucional", "Estado-Maior-Geral"),          # LOB Art. 12-A
+    ("Coordenadoria de Gestão de Pessoas", "Coordenadoria de Pessoal"),          # Art. 14
+    ("Coordenadoria de Comunicação Social", "Diretoria de Comunicação Social"),  # Art. 22
+    ("Coordenadoria de Logística e Patrimônio", "Diretoria de Logística"),       # Art. 21
+    ("Coordenadoria de Apoio Logístico e Patrimônio", "Diretoria de Logística"),
+    ("Coordenadoria de Apoio Logístico", "Diretoria de Logística"),
+    ("Coordenadoria de Tecnologia da Informação", "Diretoria de Informática"),   # Art. 23
+    ("Coordenadoria de Legislação e Doutrinas", "Assessoria Legislativa"),       # Art. 29, §1º, II
+    ("Coordenadoria de Legislação e Doutrina", "Assessoria Legislativa"),
+    ("Coordenadoria de Finanças", "Coordenadoria de Planejamento, Orçamento e Finanças"),  # Art. 16
+    ("Coordenadoria de Ajudância Geral", "Ajudância-Geral"),                     # Art. 25
+    ("Coordenadoria da Agência Central de Inteligência", "Diretoria de Inteligência"),     # Art. 20
+    ("Agência Central de Inteligência", "Diretoria de Inteligência"),
+    ("Agencia Central de Inteligência", "Diretoria de Inteligência"),  # sem acento na fonte
+    ("CACI", "DINT"),
+    ("Coordenadoria de Assistência Social", "Centro de Assistência Social"),     # Art. 25, VI
+    ("Conselho Superior de Bombeiros", "Conselho Deliberativo de Estratégia e Gestão"),    # Art. 27
+    ("CSB", "CONDEG"),
+    ("Coordenadoria de Planejamento", "Diretoria de Planejamento"),              # Art. 16, V
+    ("Coordenadoria de Aperfeiçoamento", "Escola de Aperfeiçoamento e Especialização"),    # Art. 15, V, "g"
+    ("Escola Dom Pedro II", "Unidade de Colégio Bombeiro Militar"),              # Art. 15, IV, "f"
+    ("Centro de Ensino e Instrução de Bombeiros", "Centro de Treinamento, Ensino e Instrução"),  # Art. 15, V, "d"
+    ("CEIB", "CTEI"),
+    ("DEIP", "Coordenadoria de Educação, Ensino e Instrução"),                   # Art. 15
+    ("Centro de Suprimento e Manutenção", "Centro de Suprimento e Material"),    # Art. 21, V
+    ("CSM", "CSMat"),
+    ("Grupo de Aviação Bombeiro Militar", "Grupamento de Operações Aéreas"),     # Art. 48, II
+    ("GAvBM", "GOA"),
+    # A sigla "COB" do CBMMT quer dizer "Centro de Operações de Bombeiros" — a CENTRAL.
+    # Em RO, COB é o Comando Operacional de Bombeiros, órgão de execução: manter os dois
+    # sentidos sob a mesma sigla criaria ambiguidade dentro do próprio documento. A
+    # central em RO é a CIOP (confirmado pelo Ten. Tiago). Formas longas primeiro.
+    ("Centro de Operações de Bombeiros - COB", "Central Integrada de Operações - CIOP"),
+    ("Centro de Operações de Bombeiros – COB", "Central Integrada de Operações – CIOP"),
+    ("Centro de Operações de Bombeiros", "Central Integrada de Operações"),
+    ("Centro de Operações BM e CIOSP", "Central Integrada de Operações"),
+    ("Centro de Operações", "Central Integrada de Operações"),
+    # ── Trims cirúrgicos (2026-08-13) ────────────────────────────────────────────────
+    # Aqui o órgão inexistente é REMISSÃO dentro de matéria legítima — tirar o inciso
+    # inteiro perderia a norma boa junto. Por isso o corte é da oração, não do
+    # dispositivo. Os que são o próprio sujeito do dispositivo saem em
+    # scripts/regulamento_reescrita.py.
+    (", em ligação, no primeiro caso, com a Coordenadoria de Articulação e Integração Comunitária,",
+     ","),                                   # mt-art-113: preserva as atividades cívicas e sociais
+    # (o inciso X do mt-art-96, que citava o "Núcleo Sistêmico de Segurança/SAENS/SESP",
+    #  NÃO é trimado: sai inteiro em regulamento_reescrita.py, porque remete a DOIS
+    #  órgãos do MT — aquele Núcleo e a seção de estado-maior "BM-4" — e não sobraria
+    #  dispositivo com endereço válido em RO.)
+    (" e a Coordenadoria de Saúde", ""),     # ba-art-9: Art. 62 revogado pela Lei 2.244/2010
+    (", o Centro de Capacitação Física-CCF", ""),   # mt-art-160, parágrafo único
+    ("oriundas da DOP e DSCIP", "oriundas do Comando Operacional de Bombeiros e da Coordenadoria de Atividades Técnicas"),
+    # Sobra do organograma do MT no capítulo já reescrito sobre a CAT.
+    ("DSCIP", "CAT"),
     ("CBMMT", "CBMRO"),
+    ("CBMBA", "CBMRO"),
     ("CBMRN", "CBMRO"),
     ("CBMRS", "CBMRO"),
     ("CBMSE", "CBMRO"),
@@ -118,11 +283,122 @@ ADAPTATIONS = [
 ]
 
 
+# Siglas de corporação de OUTROS estados, tolerando o separador que aparecer entre "CBM"
+# e a UF: "CBMMT", "CBM-MT", "CBM- MT", "CBM.MT", "CBM/MT". A tabela ADAPTATIONS acima
+# casa texto literal e, por isso, deixava passar toda variante com separador — foi assim
+# que "CBM-MT" sobreviveu em 6 dispositivos (inclusive no híbrido "Corpo de Bombeiros
+# Militar do Estado de Rondônia/CBM-MT"). "RO" fica FORA da lista de propósito: a sigla
+# do próprio CBMRO nunca pode ser reescrita. Auditoria 2026-08-13.
+_UF_OUTRAS = ('MT|SE|BA|RN|RS|AL|GO|PA|PR|DF|ES|RR|TO|AC|AM|AP|MA|PI|CE|PB|PE|MG|SP|RJ|MS|SC')
+RE_SIGLA_OUTRA_UF = re.compile(r'\bCBM[\s.\-–—/]*(?:' + _UF_OUTRAS + r')\b')
+
+
+# ── Ruído de página (não é norma; é mobília do PDF de origem) ────────────────────────
+# O RISD do CBMSE foi extraído com o rodapé de cada página embutido NO MEIO das frases,
+# ex.: "…mediante autorização por escrito 14/28 BGO Nº 060 Publicado em 30/03/2022
+# CBMSE/RISD – Regulamento Interno dos Serviços Diários. do Diretor Operacional…".
+# Dois estragos: (1) parte a frase ao meio; (2) a adaptação trocava "CBMSE" por "CBMRO"
+# ali dentro e passava a AFIRMAR, na minuta de RO, a existência de um Boletim Geral nº 060
+# de 30/03/2022 do CBMRO e de um "RISD" — atos que não existem. Citação fabricada dentro
+# de texto normativo.
+#
+# A limpeza é feita AQUI, no build, e NÃO na transcrição: o rodapé está mesmo no markdown
+# de origem, e scripts/verificar_verbatim.py compara a transcrição com ele. Tirar da
+# transcrição quebraria essa conferência; tirar no build mantém as duas coisas certas —
+# a transcrição fiel à fonte e a minuta livre do lixo. Auditoria 2026-08-13.
+RUIDO_DE_PAGINA = [
+    re.compile(
+        r'\s*\d{1,3}\s*/\s*28\s+BGO\s+N[ºo°]\s*060\s+Publicado\s+em\s+30/03/2022\s+'
+        r'CBM\w{2}\s*/\s*RISD\s*[–—-]\s*Regulamento\s+Interno\s+dos\s+Servi[çc]os\s+Di[áa]rios\.\s*'
+    ),
+    # Mesma classe de ruído, outra origem: o extrator do CBMMT grudou o TÍTULO da seção
+    # seguinte no fim do último inciso da seção anterior, produzindo dispositivos como
+    # "III - promover atendimentos individuais. Da Coordenadoria de Articulação e
+    # Integração Comunitária – BM/3". O órgão citado ali não é remissão normativa — é
+    # cabeçalho. Cortar o inciso inteiro perderia a norma ("promover atendimentos
+    # individuais"); o certo é tirar só o cabeçalho. Achado 2026-08-13.
+    # O lookbehind preserva o ponto final da frase que fica (o `sub` troca por espaço).
+    re.compile(r'(?<=\.)\s*D[ao]s?\s+Coordenadoria\s+de\s+Articula[çc][ãa]o\s+e\s+Integra[çc][ãa]o'
+               r'\s+Comunit[áa]ria\s*[–—-]\s*BM/\d\s*$'),
+    re.compile(r'(?<=\.)\s*D[ao]s?\s+Diretoria\s+de\s+Seguran[çc]a\s+Contra\s+Inc[êe]ndio\s+e\s+P[âa]nico'
+               r'\s*[–—-]\s*DSCIP\s*$'),
+]
+
+
+def limpar_ruido_de_pagina(text):
+    """Remove rodapé/cabeçalho de página que a extração do PDF deixou no meio do texto."""
+    out = text or ''
+    for rx in RUIDO_DE_PAGINA:
+        out = rx.sub(' ', out)
+    return re.sub(r'[ \t]{2,}', ' ', out).strip()
+
+
+# ── Concordância de gênero depois da troca de órgão ──────────────────────────────────
+# As substituições de ADAPTATIONS trocam o NÚCLEO do sintagma, e vários órgãos mudam de
+# gênero no caminho: "a Diretoria Operacional" (fem.) vira "o Comando Operacional"
+# (masc.), "a CiaBM"/Companhia (fem.) vira "o SGBM"/Subgrupamento (masc.). Sem esta
+# passada o texto sai com "da Comando", "a SGBM", "à SGBM" — 41 ocorrências na primeira
+# rodada desta correção. Roda DEPOIS de todas as substituições, por isso é uma função
+# separada e não mais um par na tabela. Achado 2026-08-13.
+#
+# "OBM" fica FORA da lista: é Organização Bombeiro Militar, FEMININO (LOB Art. 60, "A
+# ativação das Organizações Bombeiros Militares"), então "da OBM" já está correto — foi
+# justamente por isso que a troca UBM→OBM (Unidade→Organização, fem.→fem.) não quebrou
+# nada. Incluí-lo aqui criaria o erro em vez de corrigi-lo.
+_NUCLEO_MASC = r'(?:Comando|Comandante|Grupamento|Subgrupamento|SGBM|GBM|COB)'
+CONCORDANCIA = [
+    # Preposição "a" regida por verbo, antes do genérico artigo→"o" (senão viraria
+    # "dando ciência o Comando").
+    (re.compile(r'\b(ci[êe]ncia)\s+a\s+(' + _NUCLEO_MASC + r')\b'), r'\1 ao \2'),
+    # Artefato de extração do PDF: "d a SGBM" (espaço no meio da contração).
+    (re.compile(r'\bd\s+a\s+(' + _NUCLEO_MASC + r')\b'), r'do \1'),
+    (re.compile(r'\bà\s+(' + _NUCLEO_MASC + r')\b'), r'ao \1'),
+    (re.compile(r'\bÀ\s+(' + _NUCLEO_MASC + r')\b'), r'Ao \1'),
+    (re.compile(r'\bda\s+(' + _NUCLEO_MASC + r')\b'), r'do \1'),
+    (re.compile(r'\bDa\s+(' + _NUCLEO_MASC + r')\b'), r'Do \1'),
+    (re.compile(r'\bna\s+(' + _NUCLEO_MASC + r')\b'), r'no \1'),
+    (re.compile(r'\bNa\s+(' + _NUCLEO_MASC + r')\b'), r'No \1'),
+    (re.compile(r'\bpela\s+(' + _NUCLEO_MASC + r')\b'), r'pelo \1'),
+    (re.compile(r'\bPela\s+(' + _NUCLEO_MASC + r')\b'), r'Pelo \1'),
+    (re.compile(r'\bdas\s+(' + _NUCLEO_MASC + r's?)\b'), r'dos \1'),
+    (re.compile(r'\bnas\s+(' + _NUCLEO_MASC + r's?)\b'), r'nos \1'),
+    (re.compile(r'\bpelas\s+(' + _NUCLEO_MASC + r's?)\b'), r'pelos \1'),
+    (re.compile(r'\buma\s+(' + _NUCLEO_MASC + r')\b'), r'um \1'),
+    (re.compile(r'\ba\s+(' + _NUCLEO_MASC + r')\b'), r'o \1'),
+    (re.compile(r'\bA\s+(' + _NUCLEO_MASC + r')\b'), r'O \1'),
+    # "Diretoria Operacional Adjunta" -> o adjunto concorda com "Comando" (LOB Art. 35,
+    # par. único, II, que prevê o "Adjunto" na estrutura do COB).
+    (re.compile(r'(' + _NUCLEO_MASC + r'[^,;.\n]{0,40}?)\s+Adjunta\b'), r'\1 Adjunto'),
+    # Caminho inverso: CIOP é CENTRAL Integrada de Operações, FEMININO, e herdou o
+    # masculino do CICOM ("o Centro Integrado de Comunicações" da Bahia). Denominação
+    # confirmada pelo Ten. Tiago em 2026-08-13.
+    (re.compile(r'\bdo\s+CIOP\b'), 'da CIOP'),
+    (re.compile(r'\bDo\s+CIOP\b'), 'Da CIOP'),
+    (re.compile(r'\bno\s+CIOP\b'), 'na CIOP'),
+    (re.compile(r'\bNo\s+CIOP\b'), 'Na CIOP'),
+    (re.compile(r'\bao\s+CIOP\b'), 'à CIOP'),
+    (re.compile(r'\bAo\s+CIOP\b'), 'À CIOP'),
+    (re.compile(r'\bpelo\s+CIOP\b'), 'pela CIOP'),
+    (re.compile(r'\bdos\s+CIOP\b'), 'das CIOP'),
+    (re.compile(r'\bnos\s+CIOP\b'), 'nas CIOP'),
+]
+
+
+def corrigir_concordancia(text):
+    """Reconcorda artigo/preposição com os órgãos masculinos introduzidos pela adaptação."""
+    out = text or ''
+    for rx, para in CONCORDANCIA:
+        out = rx.sub(para, out)
+    return out
+
+
 def adapt_text(text):
     """Aplica ADAPTATIONS; retorna (texto_adaptado, houve_mudanca)."""
-    out = text
+    out = limpar_ruido_de_pagina(text)
     for de, para in ADAPTATIONS:
         out = out.replace(de, para)
+    out = RE_SIGLA_OUTRA_UF.sub('CBMRO', out)
+    out = corrigir_concordancia(out)
     return out, out != text
 
 
