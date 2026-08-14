@@ -14,12 +14,13 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
   const [naoAutorizado, setNaoAutorizado] = useState(false)
+  const [pendente, setPendente] = useState(false)
   const [erroVerificacao, setErroVerificacao] = useState(null)
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (fbUser) => {
       if (!fbUser) {
-        setUser(null); setNaoAutorizado(false); setLoading(false)
+        setUser(null); setNaoAutorizado(false); setPendente(false); setLoading(false)
         return
       }
       try {
@@ -28,7 +29,9 @@ export function AuthProvider({ children }) {
         const ref = doc(db, 'members', email)
         const snap = await getDoc(ref)
         if (!snap.exists() || snap.data().ativo !== true) {
-          setUser(null); setNaoAutorizado(true)
+          setUser(null)
+          setNaoAutorizado(true)
+          setPendente(snap.exists() && snap.data().status === 'pendente')
           await signOut(auth)
           return
         }
@@ -54,13 +57,14 @@ export function AuthProvider({ children }) {
           escopo: m.escopo === 'servico' ? 'servico' : null,
         })
         setNaoAutorizado(false)
+        setPendente(false)
         setErroVerificacao(null)
       } catch (e) {
         // Falha ao verificar o cadastro (ex.: rede): não trava a tela, mas AVISA —
         // antes o usuário só via a tela de login de novo, achando que perdeu o
         // acesso, quando foi falha transitória (auditoria 2026-07-23).
         console.error('Erro ao verificar acesso:', e)
-        setUser(null); setNaoAutorizado(false)
+        setUser(null); setNaoAutorizado(false); setPendente(false)
         setErroVerificacao('Não foi possível verificar seu acesso agora (falha de conexão). Tente entrar novamente.')
       } finally {
         setLoading(false)
@@ -73,7 +77,8 @@ export function AuthProvider({ children }) {
     await signInWithEmailAndPassword(auth, normalizeEmail(email), senha)
   }
   const cadastrar = async (email, senha) => {
-    await createUserWithEmailAndPassword(auth, normalizeEmail(email), senha)
+    const cred = await createUserWithEmailAndPassword(auth, normalizeEmail(email), senha)
+    return cred.user
   }
   const sair = async () => {
     await signOut(auth)
@@ -84,7 +89,7 @@ export function AuthProvider({ children }) {
   const recuperarSenha = (email) => sendPasswordResetEmail(auth, normalizeEmail(email))
 
   return (
-    <AuthContext.Provider value={{ user, loading, naoAutorizado, erroVerificacao, entrar, cadastrar, sair, recuperarSenha }}>
+    <AuthContext.Provider value={{ user, loading, naoAutorizado, pendente, erroVerificacao, entrar, cadastrar, sair, recuperarSenha }}>
       {children}
     </AuthContext.Provider>
   )
