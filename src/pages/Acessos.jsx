@@ -3,6 +3,7 @@ import { useAuth } from '../lib/auth.jsx'
 import { contaStatus, situacaoMembro, normalizeEmail } from '../lib/membersStats.js'
 import {
   subscribeMembers, addMember, setMemberRole, setMemberEscopo, setMemberAtivo, removeMember,
+  recusarSolicitacao,
 } from '../lib/membersData.js'
 
 function formatLogin(ts) {
@@ -15,6 +16,7 @@ function formatLogin(ts) {
 const BADGE = {
   cadastrado: { cls: 'b-cad', txt: '🟢 Cadastrado' },
   convidado: { cls: 'b-conv', txt: '🟡 Convidado' },
+  pendente: { cls: 'b-pend', txt: '🟠 Pendente' },
   bloqueado: { cls: 'b-bloq', txt: '🔴 Bloqueado' },
 }
 
@@ -39,6 +41,7 @@ export default function Acessos() {
   ), [])
 
   const stats = useMemo(() => contaStatus(members), [members])
+  const pendentes = useMemo(() => members.filter(m => situacaoMembro(m) === 'pendente'), [members])
 
   const convidar = async (e) => {
     e.preventDefault()
@@ -83,6 +86,15 @@ export default function Acessos() {
       console.error(err); setErro('Não foi possível copiar o link. Copie manualmente pela barra de endereço.')
     }
   }
+  const aprovar = async (m) => {
+    try { await setMemberAtivo(m.email, true) }
+    catch (err) { console.error(err); setErro('Não foi possível aprovar o pedido.') }
+  }
+  const recusar = async (m) => {
+    if (!window.confirm(`Recusar o pedido de ${m.nome}?`)) return
+    try { await recusarSolicitacao(m.email) }
+    catch (err) { console.error(err); setErro('Não foi possível recusar o pedido.') }
+  }
 
   return (
     <div className="acc-wrap">
@@ -95,6 +107,7 @@ export default function Acessos() {
         <div className="acc-stat"><div className="acc-n">{stats.total}</div><div className="acc-l">Pessoas no total</div></div>
         <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--accent-green)' }} />{stats.cadastrados}</div><div className="acc-l">Cadastradas</div></div>
         <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--cbm-gold-500)' }} />{stats.convidados}</div><div className="acc-l">Convidadas (sem entrar)</div></div>
+        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: '#b45500' }} />{stats.pendentes}</div><div className="acc-l">Pedidos pendentes</div></div>
         <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--cbm-red-700)' }} />{stats.bloqueados}</div><div className="acc-l">Bloqueadas</div></div>
       </div>
 
@@ -131,6 +144,38 @@ export default function Acessos() {
           )}
           <button type="submit" className="acc-add">Adicionar à lista</button>
         </form>
+      )}
+
+      {pendentes.length > 0 && (
+        <>
+          <div className="acc-bar">
+            <strong>Solicitações pendentes</strong>
+          </div>
+          <div className="acc-panel" style={{ marginBottom: 18 }}>
+            <table className="acc-table">
+              <thead>
+                <tr><th>Pessoa</th><th>Cidade / Comando / Unidade</th><th style={{ textAlign: 'right' }}>Ações</th></tr>
+              </thead>
+              <tbody>
+                {pendentes.map(m => (
+                  <tr key={m.email}>
+                    <td>
+                      <div className="acc-nome">{m.nome}{m.nomeGuerra ? ` (${m.nomeGuerra})` : ''}</div>
+                      <div className="acc-mail">{m.email}</div>
+                    </td>
+                    <td>{m.cidade} — {m.comando} — {m.unidade}</td>
+                    <td>
+                      <div className="acc-acts">
+                        <button type="button" className="acc-ic" onClick={() => aprovar(m)}>aprovar</button>
+                        <button type="button" className="acc-ic danger" onClick={() => recusar(m)}>recusar</button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
 
       <div className="acc-panel">
