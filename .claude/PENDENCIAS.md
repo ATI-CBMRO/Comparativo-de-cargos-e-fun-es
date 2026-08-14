@@ -58,6 +58,29 @@
 _(nenhum)_
 
 ## ✅ Concluído (mês atual)
+- [x] **Acervo — RO: Regulamento de Segurança Contra Incêndio e Pânico ingerido** (13/08/2026,
+  pedido do Tiago): `Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto
+  21.425-2016).pdf` (Decreto nº 21.425/2016, alt. Decreto nº 24.357/2019, regulamenta a Lei
+  estadual nº 3.924/2016) adicionado ao acervo — camada 1 completa: triagem (nome/conteúdo batem
+  em `Regulamento Geral`, sem override necessário — o próprio Art. 1º se autodenomina "Regulamento
+  de Segurança Contra Incêndio e Pânico do Estado"), extração OK (19 páginas, texto pesquisável),
+  `.md` adicionado a `CONTENT_VERIFIED_FILES`, rebuild completo, `npm test` 155/155.
+  **Achado durante a ingestão, contido**: rodar `convert_to_markdown.py` sobre a pasta inteira
+  reprocessou PDFs não relacionados e por pouco não DESTRUÍA o markdown bom do Piauí (26.552 →
+  578 caracteres, sobrescrito pela reconversão do PDF escaneado antigo) e trazia de carona o PDF
+  `[OCR]` do Piauí — pendência já registrada em sessão anterior (achado 30/07/2026: PDF no repo,
+  nunca convertido/ingerido, decisão de substituir ou não o escaneado antigo ainda em aberto),
+  quase resolvida agora como efeito colateral não intencional. Revertido: só o `.md` do Decreto
+  21.425 e as entradas de RO em `states_data.json` foram mantidos; os demais arquivos tocados
+  pela reconversão (Alagoas ×2,
+  Paraíba, Pará, Piauí, Roraíma) voltaram ao estado commitado. `database/organs_detail/`,
+  `comparativo_dpo_cot.json`, `comparativo_minuta.json`, `minuta_structure.json` e
+  `regulamento_structure.json` (cenário futura) conferidos sem diff.
+  **Camada 2/3 — não é candidato ao pipeline padrão de curadoria** (`regulamento_enrichment_<uf>.py`
+  adapta texto de OUTRO estado para RO; este documento já É de RO, não precisa de adaptação). Já
+  citado diretamente como `fundamento` na reescrita do capítulo "Da Segurança Contra Incêndio e
+  Pânico" da minuta (branch `fix/curadoria-lob-atual`, ainda não mesclada) — a ingestão formaliza
+  no acervo uma fonte que já vinha sendo usada ad-hoc. Sem outra ação de camada 2/3 pendente.
 - [x] **Registro de decisão em janela separada** (29/07/2026, pedido do Tiago): o
   formulário abria como overlay e cobria o card, escondendo a Questão e os excertos
   verbatim das candidatas — justamente o material de consulta para redigir a decisão.

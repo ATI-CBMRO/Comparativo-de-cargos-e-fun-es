@@ -504,6 +504,13 @@ CONTENT_VERIFIED_FILES = {
     # tramitação (marca d'água, processo SEI) — condição já conhecida e refletida
     # no nome do arquivo, não é uma anomalia.
     "Rondônia - Minuta de Lei de Organização Básica.md",
+    # Decreto nº 21.425/2016 (alt. Decreto nº 24.357/2019), regulamenta a Lei estadual
+    # nº 3.924/2016 sobre segurança contra incêndio e evacuação de edificações — o
+    # próprio Art. 1º se autodenomina "Regulamento de Segurança Contra Incêndio e
+    # Pânico do Estado", confirmando o tipo. Ingerido em 2026-08-13 e já usado como
+    # fundamento na reescrita do capítulo "Da Segurança Contra Incêndio e Pânico" da
+    # minuta do Regulamento Geral (ver scripts/regulamento_reescrita.py).
+    "Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto 21.425-2016).md",
     # Ementa usa "Lei Orgânica" em vez de "organização básica", mas mesma função.
     "Roraíma - Organização Básica.md",
     "Santa Catarina - Organização Básica.md",

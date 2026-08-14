@@ -3,7 +3,7 @@
     "version": "1.0",
     "generated_at": "2026-06-01",
     "total_states": 27,
-    "total_documents": 72,
+    "total_documents": 73,
     "curated_states": 27,
     "regions": {
       "Norte": 7,
@@ -15794,9 +15794,34 @@
             }
           ],
           "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "typeVerified": true,
+          "md_file": "Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto 21.425-2016).md",
+          "char_count": 47530,
+          "year": 2016,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "3.924",
+              "data": "17 de outubro de"
+            },
+            {
+              "tipo": "Lei",
+              "numero": "3.924",
+              "data": "17 de outubro 2016"
+            },
+            {
+              "tipo": "Decreto",
+              "numero": "24.357",
+              "data": "15 DE OUTUBRO DE"
+            }
+          ],
+          "has_pdf": true
         }
       ],
-      "legal_basis": "Lei nº 2204 (18 DE DEZEMBRO DE); Projeto de Lei nº XX (ABRIL DE 2025)",
+      "legal_basis": "Lei nº 2204 (18 DE DEZEMBRO DE); Projeto de Lei nº XX (ABRIL DE 2025); Lei nº 3.924 (17 de outubro de); Lei nº 3.924 (17 de outubro 2016); Decreto nº 24.357 (15 DE OUTUBRO DE)",
       "chapters_summary": [
         {
           "number": "I",
@@ -17077,11 +17102,11 @@
         }
       ],
       "stats": {
-        "total_documents": 2,
+        "total_documents": 3,
         "has_regimento": false,
-        "has_regulamento": false,
+        "has_regulamento": true,
         "has_nga": false,
-        "total_chars": 193305,
+        "total_chars": 240835,
         "organs_mapped": 195,
         "curated": true
       }
