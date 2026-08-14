@@ -461,219 +461,868 @@
    "status": "rascunho",
    "articles": [
     {
-     "id": "mt-art-4",
+     "id": "ro-art-1",
      "kind": "incisos",
-     "editId": "reg:organizacao-geral/mt-art-4",
-     "caput": "O Corpo de Bombeiros Militar do Estado de Rondônia será estruturado em níveis de Direção Geral, Decisão Colegiada, Direção Superior, Assessoramento Superior, Direção Setorial, Apoio e Execução.",
-     "items": [],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 4",
-     "match": "exata",
-     "heading": "TÍT. II — Da Estrutura Organizacional",
-     "adapted": true,
-     "original_caput": "O Corpo de Bombeiros Militar do Estado de Mato Grosso será estruturado em níveis de Direção Geral, Decisão Colegiada, Direção Superior, Assessoramento Superior, Direção Setorial, Apoio e Execução."
-    },
-    {
-     "id": "mt-art-5",
-     "kind": "incisos",
-     "editId": "reg:organizacao-geral/mt-art-5",
-     "caput": "A estrutura organizacional básica do Corpo de Bombeiros Militar compreende os seguintes níveis e unidades:",
+     "editId": "reg:organizacao-geral/ro-art-1",
+     "caput": "O Corpo de Bombeiros Militar do Estado de Rondônia estrutura-se em três níveis administrativos: Órgãos de Direção, Órgãos de Apoio e Órgãos de Execução.",
      "items": [
       {
-       "text": "1 - Comandante-Geral do Corpo de Bombeiros Militar.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
+       "text": "§ 1º Os Órgãos de Direção constituem o Comando-Geral e destinam-se a efetuar a direção geral, o planejamento estratégico e a administração superior da Instituição, exercer as funções de corregedoria-geral e realizar a administração das atividades de recursos humanos, ensino, logística e gestão orçamentária e financeira, entre outras.",
+       "source": "LOB, Art. 8º (red. Lei nº 4.303/2018)"
       },
       {
-       "text": "1 - Conselho Deliberativo de Estratégia e Gestão.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
+       "text": "§ 2º Os Órgãos de Apoio são os responsáveis pelo atendimento das necessidades da atividade-meio, de acordo com a legislação em vigor, os regulamentos e os demais documentos baixados pelo Comando-Geral.",
+       "source": "LOB, Art. 8º (red. Lei nº 4.303/2018)"
       },
       {
-       "text": "1 - Subcomandante-Geral do Corpo de Bombeiros Militar e Chefe do Estado-Maior Geral;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2 - Corregedoria Geral do Corpo de Bombeiros Militar.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1 - Assessoria Técnico-Jurídica;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2 - Assessoria Especial Institucional;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3 - Assessorias Especiais Interinstitucionais;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "4 - Assessoria Especial de Defesa Civil;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "5 - Ouvidoria do Corpo de Bombeiros Militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "6 - Diretoria de Inteligência;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "7 - Comissões.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1 - Estado-Maior-Geral - DAI:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.1 - Coordenadoria de Pessoal – BM/1:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.1.1 - Secretaria das Comissões de Promoções.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.2 - Centro de Assistência Social – BM/2;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.4 - Diretoria de Logística – BM/4;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.5 - Diretoria de Comunicação Social – BM/5;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.6 - Diretoria de Planejamento, Orçamento e Gestão de Projetos – BM/6;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.7 - Diretoria de Informática – BM/7;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.8 - Assessoria Legislativa – BM/8;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.9 - Diretoria de Planejamento, Orçamento e Finanças – BM/9;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.10 - Ajudância-Geral – BM/10.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2 - Diretoria de Ensino, Instrução e Pesquisa – Coordenadoria de Educação, Ensino e Instrução:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2.2 - Escola de Aperfeiçoamento e Especialização, Especialização e Instrução – CEIP/2;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2.3 - Centro de Treinamento, Ensino e Instrução - CTEI;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2.5 - Unidade de Colégio Bombeiro Militar.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1 - Órgãos de Apoio do Comando Geral:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.1 - Gabinete do Comandante-Geral;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.2 - Gabinete do Subcomandante-Geral.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2 - Órgão de Apoio do Comando Operacional de Bombeiros:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "2.1 - Central Integrada de Operações - CIOP.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3 - Órgãos de Apoio Diversos:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.1 - Corpo Musical;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.2 - Museu do Corpo de Bombeiros Militar;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "3.3 - Centro de Assistência Social e Religiosa – CASR.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1 - Comando Operacional de Bombeiros - DOp:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.1 - Seção de Planejamento Operacional e Controle de Resultados;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.3 - Comandos Operacionais de Bombeiros - COB:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.3.1 - Batalhões Bombeiro Militar - BBM:",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.3.1.1 - Subgrupamentos de Bombeiros Militar - SGBM: 1.3.1.1.1 - Pelotões Bombeiro Militar - PelBM.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.3.2 - Subgrupamentos de Bombeiros Militar - SGBM;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.3.3 - Pelotões Independente Bombeiro Militar - PIBM;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.3.4 - Núcleos Bombeiro Militar - NBM.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.4.1 - Companhia de Prevenção e Resposta à Emergência com Produtos Perigosos - CPP;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.4.2 - Companhia de Busca e Salvamento - CBS;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.4.3 - Companhia de Prevenção e Combate a Incêndio Florestal - CPCIF;",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
-      },
-      {
-       "text": "1.4.4 - Grupamento de Operações Aéreas - GOA.",
-       "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5"
+       "text": "§ 3º Os Órgãos de Execução realizam a atividade-fim da Corporação, em obediência às determinações dos escalões superiores.",
+       "source": "LOB, Art. 8º (red. Lei nº 4.303/2018)"
       }
      ],
-     "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 5",
-     "match": "parcial",
-     "heading": "TÍT. II — Da Estrutura Organizacional (estrutura é a de MT; a da minuta de RO vem da LOB de RO)",
-     "adapted": true,
-     "original_caput": "A estrutura organizacional básica do Corpo de Bombeiros Militar compreende os seguintes níveis e unidades:",
-     "reindexed": true,
-     "incisos_removidos": 11
+     "source": "LOB, Art. 8º (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. I — Dos níveis administrativos",
+     "autoral": true,
+     "fundamento": "LOB, Art. 8º (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-2",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-2",
+     "caput": "Os Órgãos de Direção compreendem o Comando Geral e o Estado-Maior-Geral Bombeiro Militar, sendo o Comando Geral constituído por:",
+     "items": [
+      {
+       "text": "I - Comandante-Geral;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Subcomandante-Geral;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Estado-Maior-Geral;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Corregedoria-Geral;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Gabinete do Comando;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Ajudância-Geral;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VII - Comissões;",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VIII - Conselhos; e",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IX - Assessorias.",
+       "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. II — Dos Órgãos de Direção",
+     "autoral": true,
+     "fundamento": "LOB, Art. 9º e Art. 10 (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-3",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-3",
+     "caput": "O Estado-Maior-Geral é dirigido por um Chefe, subordinado ao Subcomandante-Geral, e tem a seguinte composição:",
+     "items": [
+      {
+       "text": "I - Chefe;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "IV - Coordenadorias e Diretorias:",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "a) Coordenadoria de Pessoal;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "b) Coordenadoria de Educação, Ensino e Instrução;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "c) Coordenadoria de Atividades Técnicas;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "d) Diretoria de Logística;",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "e) Diretoria de Comunicação Social; e",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "f) Diretoria de Informática.",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "§ 1º O Chefe do Estado-Maior-Geral é o substituto eventual do Subcomandante-Geral em seus afastamentos e impedimentos.",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "§ 2º Compete à Coordenadoria de Atividades Técnicas o disposto no capítulo próprio deste Regulamento, \"Da Segurança Contra Incêndio e Pânico\".",
+       "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+      }
+     ],
+     "source": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)",
+     "match": "exata",
+     "heading": "Cap. II — Dos Órgãos de Direção",
+     "autoral": true,
+     "fundamento": "LOB, Art. 12-A, caput, § 2º e § 3º (red. Lei nº 4.488/2019)"
+    },
+    {
+     "id": "ro-art-4",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-4",
+     "caput": "A Coordenadoria de Pessoal é o órgão responsável pelo planejamento, coordenação, fiscalização e controle das atividades relacionadas ao recrutamento, à administração e à gestão de pessoal civil e militar do CBMRO, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Coordenador;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Diretoria de Gestão de Pessoas:",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "a) Adjunto;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "b) Seção de Pessoal Ativo;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "c) Seção de Pessoal Inativos e Pensionistas;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "d) Centro de Legislação, Controle e Análise de Processos;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "e) Seção de Promoção e Condecoração;",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "f) Seção de Movimentação e Pagamento; e",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "g) Seção de Pessoal Civil.",
+       "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. III — Das Coordenadorias do Estado-Maior-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 14, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-5",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-5",
+     "caput": "A Coordenadoria de Educação, Ensino e Instrução é o órgão responsável por todas as atividades de ensino, com competência para planejar, coordenar e fiscalizar o ensino em todas as suas modalidades, a instrução e o treinamento operacional do Corpo de Bombeiros Militar, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Coordenador;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Diretoria de Educação:",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "a) Diretor;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "b) Adjunto;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "c) Seção Administrativa;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "d) Seção de Educação;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "e) Seção de Atividades Sociais;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "f) Unidades de Colégio Bombeiro Militar; e",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "g) Centros de Educação Infantil Bombeiro Militar;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Diretoria de Ensino e Instrução:",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "a) Diretor;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "b) Adjunto;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "c) Seção Administrativa;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "d) Centro de Treinamento, Ensino e Instrução;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "e) Escola de Formação de Oficiais;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "f) Escola de Formação de Praças; e",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "g) Escola de Aperfeiçoamento e Especialização;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Diretoria de Projetos e Pesquisa:",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "a) Diretor;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "b) Adjunto;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "c) Seção Administrativa;",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "d) Seção de Projetos; e",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "e) Seção de Pesquisa.",
+       "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. III — Das Coordenadorias do Estado-Maior-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 15, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-6",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-6",
+     "caput": "A Coordenadoria de Planejamento, Orçamento e Finanças, subordinada ao Comandante-Geral, é responsável pelo planejamento, pelo apoio administrativo, orçamentário e técnico-financeiro, bem como por executar, acompanhar e controlar as atividades inerentes à sua responsabilidade, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Coordenador;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "IV - Diretoria de Orçamento e Finanças:",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "a) Diretor;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "b) Adjunto;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "c) Seção Administrativa;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "d) Seção de Orçamento;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "e) Seção de Contabilidade;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "f) Seção de Finanças;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "g) Seção de Compras; e",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "h) Seção de Diárias;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "V - Diretoria de Planejamento:",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "a) Diretor;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "b) Adjunto;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "c) Seção Administrativa; e",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "d) Seção de Planejamento;",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "VI - Comissão Permanente de Licitações: Seção de Licitações.",
+       "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      }
+     ],
+     "source": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)",
+     "match": "exata",
+     "heading": "Cap. IV — Dos órgãos subordinados diretamente ao Comandante-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 16, caput e parágrafo único (red. Lei nº 4.488/2019)"
+    },
+    {
+     "id": "ro-art-7",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-7",
+     "caput": "A Coordenadoria Estadual de Proteção e Defesa Civil – CEPDEC, que tem por Coordenador-Geral o Comandante-Geral do CBMRO e por Coordenador Estratégico-Operacional um Oficial do último posto do Quadro de Combatentes, centraliza o Sistema Estadual de Proteção e Defesa Civil de Rondônia – SIEPDEC, com a seguinte composição:",
+     "items": [
+      {
+       "text": "I - Coordenador-Geral;",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "II - Coordenador Estratégico-Operacional;",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "III - Adjunto;",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "IV - Seção Administrativa;",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "V - Secretaria Executiva;",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "VI - Divisão de Apoio Administrativo e Financeiro;",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "VII - Divisão de Operações Emergenciais; e",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      },
+      {
+       "text": "VIII - Divisão de Minimização de Desastres.",
+       "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+      }
+     ],
+     "source": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)",
+     "match": "exata",
+     "heading": "Cap. IV — Dos órgãos subordinados diretamente ao Comandante-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 17, caput e parágrafo único (red. Lei nº 5.697/2023)"
+    },
+    {
+     "id": "ro-art-8",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-8",
+     "caput": "A Diretoria de Inteligência, subordinada ao Comandante-Geral, é responsável por desenvolver, planejar, executar, coordenar, supervisionar e controlar as Atividades de Inteligência, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Diretor;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "IV - Sala de Situação;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "V - Seção de Inteligência;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "VI - Seção de Contra-Inteligência;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "VII - Seção de Operações de Inteligência;",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "VIII - Seção de Documentos e Informática; e",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      },
+      {
+       "text": "IX - Seção de Controle de Armamento.",
+       "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+      }
+     ],
+     "source": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)",
+     "match": "exata",
+     "heading": "Cap. IV — Dos órgãos subordinados diretamente ao Comandante-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 20, caput e parágrafo único (red. Lei nº 4.488/2019)"
+    },
+    {
+     "id": "ro-art-9",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-9",
+     "caput": "A Diretoria de Logística, subordinada ao Chefe do Estado-Maior-Geral, é o órgão responsável pela gestão logística da Corporação, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Diretor;",
+       "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Centro de Controle de Material e Patrimônio: Seção de Controle de Material; Seção de Controle de Patrimônio;",
+       "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Centro de Suprimento e Material: Seção de Almoxarifado Geral; Seção de Aprovisionamento; e",
+       "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Centro de Manutenção: Seção de Manutenção de Viaturas e Equipamentos Motorizados.",
+       "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. IV — Dos órgãos subordinados diretamente ao Comandante-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 21, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-10",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-10",
+     "caput": "A Diretoria de Comunicação Social é o órgão responsável pelo planejamento, pela orientação, pela coordenação e pela supervisão das atividades de comunicação social, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Diretor;",
+       "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Seção de Imprensa;",
+       "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Seção de Relações Públicas; e",
+       "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Seção de Comunicação Institucional.",
+       "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. IV — Dos órgãos subordinados diretamente ao Comandante-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 22, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-11",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-11",
+     "caput": "A Diretoria de Informática é o órgão responsável pelo planejamento, pela orientação, pela coordenação e pela supervisão das atividades de tecnologia da informação da Corporação, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Diretor;",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Centro de Capacitação;",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Seção de Projetos e Desenvolvimento;",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Seção de Suporte; e",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VII - Seção de Redes.",
+       "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. IV — Dos órgãos subordinados diretamente ao Comandante-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 23, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-12",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-12",
+     "caput": "A Corregedoria-Geral, subordinada ao Subcomandante-Geral, é o órgão de disciplina, orientação e fiscalização das atividades funcionais e da conduta dos militares da Instituição, sendo o Corregedor-Geral Oficial da ativa do último posto do Quadro de Oficiais Combatentes, e tem a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Corregedor;",
+       "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Seção Administrativa;",
+       "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Cartório;",
+       "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Núcleo de Inteligência; e",
+       "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Seção de Processo Administrativo.",
+       "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. V — Da Corregedoria-Geral, do Gabinete e da Ajudância-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 13, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-13",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-13",
+     "caput": "Ao Gabinete do Comandante-Geral compete a supervisão e a execução das atividades administrativas de apoio e assessoramento direto, imediato e pessoal do Comandante-Geral, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Chefia de Gabinete;",
+       "source": "LOB, Art. 24, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Secretaria;",
+       "source": "LOB, Art. 24, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Assessoria de Comunicação e Imprensa; e",
+       "source": "LOB, Art. 24, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Ajudância de Ordens.",
+       "source": "LOB, Art. 24, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 24, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. V — Da Corregedoria-Geral, do Gabinete e da Ajudância-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 24, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-14",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-14",
+     "caput": "A Ajudância-Geral, subordinada ao Subcomandante-Geral, é o órgão responsável pelo apoio aos órgãos instalados no Quartel do Comando-Geral, pela manutenção e segurança das instalações e pelas funções administrativas, inclusive de controle de todo o pessoal, tendo a seguinte estrutura:",
+     "items": [
+      {
+       "text": "I - Ajudante-Geral;",
+       "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Adjunto;",
+       "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Secretaria-Geral;",
+       "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Companhia de Comando e Serviços;",
+       "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Banda de Música; e",
+       "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Centro de Assistência Social.",
+       "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. V — Da Corregedoria-Geral, do Gabinete e da Ajudância-Geral",
+     "autoral": true,
+     "fundamento": "LOB, Art. 25, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-15",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-15",
+     "caput": "O Conselho Deliberativo de Estratégia e Gestão – CONDEG é o órgão responsável pelo estudo, pelo planejamento e pela assessoria consultiva ao Comandante-Geral para a solução de questões institucionais e de segurança pública da Corporação, composto por Oficiais da ativa do último posto.",
+     "items": [
+      {
+       "text": "§ 1º Nas deliberações do CONDEG, os membros deverão fundamentar seus votos.",
+       "source": "LOB, Art. 27 (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "§ 2º As deliberações do CONDEG serão apreciadas pelo Comandante-Geral, que poderá homologá-las total ou parcialmente ou avocar para si a decisão final, fundamentando a solução que adotar.",
+       "source": "LOB, Art. 27 (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 27 (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. VI — Do Conselho Deliberativo de Estratégia e Gestão e das Assessorias",
+     "autoral": true,
+     "fundamento": "LOB, Art. 27 (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-16",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-16",
+     "caput": "As Assessorias subordinam-se ao Comandante-Geral e são órgãos que prestam assessoramento administrativo e técnico, responsáveis pela realização de estudos e pareceres e pelo relacionamento com os Poderes e outros órgãos. São assessorias permanentes:",
+     "items": [
+      {
+       "text": "I - Assessoria Especial;",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Assessoria Legislativa;",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Assessoria Parlamentar;",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "IV - Assessoria Previdenciária;",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "V - Assessoria na Superintendência de Compras e Licitação – SUPEL;",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VI - Assessoria na Diretoria Executiva do Sistema de Pagamento – DESP; e",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "VII - Assessoria Institucional.",
+       "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. VI — Do Conselho Deliberativo de Estratégia e Gestão e das Assessorias",
+     "autoral": true,
+     "fundamento": "LOB, Art. 29, caput e § 1º (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-17",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-17",
+     "caput": "São considerados Órgãos de Execução, incumbidos da tradução das políticas e diretrizes do Comando-Geral e do Estado-Maior-Geral em objetivos e metas, de coordenação, fiscalização e controle das atividades da Corporação:",
+     "items": [
+      {
+       "text": "I - Comando Operacional de Bombeiro Militar;",
+       "source": "LOB, Art. 34, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "II - Comando de Operações Aéreas de Bombeiro Militar; e",
+       "source": "LOB, Art. 34, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "III - Grupamento de Busca e Salvamento.",
+       "source": "LOB, Art. 34, caput e parágrafo único (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 34, caput e parágrafo único (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. VII — Dos Órgãos de Execução",
+     "autoral": true,
+     "fundamento": "LOB, Art. 34, caput e parágrafo único (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-18",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-18",
+     "caput": "O Comando Operacional de Bombeiros é o órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral, desdobrado em dois: o Comando Operacional de Bombeiros I, com sede em Porto Velho, e o Comando Operacional de Bombeiros II, com sede em Ji-Paraná.",
+     "items": [
+      {
+       "text": "§ 1º Cada Comando Operacional de Bombeiros tem a seguinte estrutura: Comandante; Adjunto; Seção de Pessoal; Seção Administrativa; Seção de Informática; Seção de Correição; Seção de Planejamento Operacional e Controle de Resultados; Agência Regional de Inteligência; e Órgãos de Execução Operacional.",
+       "source": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)"
+      },
+      {
+       "text": "§ 2º O apoio às atividades de operações do Comando Operacional de Bombeiros é prestado por uma Central Integrada de Operações – CIOP em cada sede, com as mesmas atribuições: a CIOP de Porto Velho atende, pelo número 193, as ocorrências da área do Comando Operacional de Bombeiros I, e a CIOP de Ji-Paraná, as ocorrências da área do Comando Operacional de Bombeiros II.",
+       "source": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)"
+      }
+     ],
+     "source": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)",
+     "match": "exata",
+     "heading": "Cap. VII — Dos Órgãos de Execução",
+     "autoral": true,
+     "fundamento": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)"
+    },
+    {
+     "id": "ro-art-19",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-19",
+     "caput": "O Comando de Operações Aéreas de Bombeiro Militar, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral, é o órgão responsável pela coordenação e pelo controle das atividades-fins concernentes a operações aéreas da Corporação, compreendendo o Grupamento de Operações Aéreas.",
+     "items": [
+      {
+       "text": "§ 1º O Comando de Operações Aéreas tem a seguinte estrutura: Comandante; Adjunto; Seção de Pessoal; Seção Administrativa; Seção de Informática; Seção de Correição; Seção de Planejamento Operacional e Controle de Resultados; Agência Regional de Inteligência; e Órgãos de Execução Operacional.",
+       "source": "LOB, Art. 39, caput e parágrafo único, e Art. 48, § 2º (red. Lei nº 4.303/2018)"
+      },
+      {
+       "text": "§ 2º O Grupamento de Operações Aéreas é estruturado em Esquadrões de Operações Aéreas, destacados ou não, cada um com Comando, Estado-Maior e Bateria.",
+       "source": "LOB, Art. 39, caput e parágrafo único, e Art. 48, § 2º (red. Lei nº 4.303/2018)"
+      }
+     ],
+     "source": "LOB, Art. 39, caput e parágrafo único, e Art. 48, § 2º (red. Lei nº 4.303/2018)",
+     "match": "exata",
+     "heading": "Cap. VII — Dos Órgãos de Execução",
+     "autoral": true,
+     "fundamento": "LOB, Art. 39, caput e parágrafo único, e Art. 48, § 2º (red. Lei nº 4.303/2018)"
+    },
+    {
+     "id": "ro-art-20",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-20",
+     "caput": "O Grupamento de Busca e Salvamento, subordinado diretamente ao Comando Operacional de Bombeiros I, é a unidade que tem a seu cargo, dentro de sua área de atuação operacional, as missões de resgate, busca e salvamento, organizado em Subgrupamentos de Bombeiro Militar, destacados ou não, que se estruturam em Seções de Busca e Salvamento.",
+     "items": [],
+     "source": "LOB, Art. 40 (red. Lei nº 4.488/2019) e Art. 48, § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO",
+     "match": "exata",
+     "heading": "Cap. VII — Dos Órgãos de Execução",
+     "autoral": true,
+     "fundamento": "LOB, Art. 40 (red. Lei nº 4.488/2019) e Art. 48, § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO"
+    },
+    {
+     "id": "ro-art-21",
+     "kind": "incisos",
+     "editId": "reg:organizacao-geral/ro-art-21",
+     "caput": "As unidades operacionais terrestres do Corpo de Bombeiros Militar classificam-se, em ordem decrescente de abrangência, em Grupamento de Bombeiro Militar, Subgrupamento Independente de Bombeiros, Subgrupamento de Bombeiro Militar, Seção de Comando e Serviço, Seção de Bombeiros, Grupo de Bombeiros e Destacamento de Bombeiros, subordinadas diretamente ao Comando Operacional de Bombeiros.",
+     "items": [
+      {
+       "text": "§ 1º O CBMRO conta com 6 (seis) Grupamentos de Bombeiro Militar, organizados em Subgrupamentos de Bombeiros Militar, destacados ou não: o 1º, o 2º e o 5º Grupamento, subordinados ao Comando Operacional de Bombeiros I, e o 3º, o 4º e o 6º Grupamento, subordinados ao Comando Operacional de Bombeiros II.",
+       "source": "LOB, Art. 47, caput e § 1º (red. Lei nº 4.303/2018), e Art. 59, parágrafo único; organograma oficial do CBMRO"
+      },
+      {
+       "text": "§ 2º A estrutura pormenorizada de cada Grupamento e de cada Subgrupamento — sede, área de circunscrição territorial e efetivo — constará do Quadro de Organização da Corporação.",
+       "source": "LOB, Art. 47, caput e § 1º (red. Lei nº 4.303/2018), e Art. 59, parágrafo único; organograma oficial do CBMRO"
+      }
+     ],
+     "source": "LOB, Art. 47, caput e § 1º (red. Lei nº 4.303/2018), e Art. 59, parágrafo único; organograma oficial do CBMRO",
+     "match": "exata",
+     "heading": "Cap. VII — Dos Órgãos de Execução",
+     "autoral": true,
+     "fundamento": "LOB, Art. 47, caput e § 1º (red. Lei nº 4.303/2018), e Art. 59, parágrafo único; organograma oficial do CBMRO"
     }
    ],
    "alternatives": {
