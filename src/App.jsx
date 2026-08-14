@@ -28,6 +28,7 @@ import Manual from './pages/Manual.jsx'
 import Organograma from './pages/Organograma.jsx'
 import Login from './pages/Login.jsx'
 import Cadastro from './pages/Cadastro.jsx'
+import SolicitarAcesso from './pages/SolicitarAcesso.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
@@ -299,6 +300,7 @@ function LoggedOutRoutes() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="/solicitar-acesso" element={<SolicitarAcesso />} />
       <Route path="*" element={<Navigate to="/login" replace state={{ from }} />} />
     </Routes>
   )
@@ -372,6 +374,7 @@ export default function App() {
           <Route path="/regulamento/comparar" element={<TrilhaRoute><RegulamentoComparator /></TrilhaRoute>} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
           <Route path="/cadastro" element={<AlreadyLoggedInRedirect />} />
+          <Route path="/solicitar-acesso" element={<AlreadyLoggedInRedirect />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />
           <Route path="/acessos" element={<ProtectedRoute requireAdmin><Acessos /></ProtectedRoute>} />
         </Routes>

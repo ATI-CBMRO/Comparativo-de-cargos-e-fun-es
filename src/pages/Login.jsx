@@ -10,7 +10,7 @@ const MENSAGENS = {
 }
 
 export default function Login() {
-  const { entrar, recuperarSenha, naoAutorizado, erroVerificacao } = useAuth()
+  const { entrar, recuperarSenha, naoAutorizado, erroVerificacao, pendente } = useAuth()
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [erro, setErro] = useState('')
@@ -54,7 +54,10 @@ export default function Login() {
         <h2 className="login-title">Revisão da Minuta</h2>
         <p className="login-sub">Acesso restrito a convidados</p>
 
-        {naoAutorizado && (
+        {pendente && (
+          <div className="login-aviso">Seu pedido de acesso está em análise. Você será avisado quando for aprovado.</div>
+        )}
+        {!pendente && naoAutorizado && (
           <div className="form-error">Seu acesso ainda não foi liberado pelo administrador.</div>
         )}
         {erroVerificacao && <div className="form-error">{erroVerificacao}</div>}
@@ -77,6 +80,10 @@ export default function Login() {
         <div className="login-foot">
           <span className="login-foot-txt">Primeiro acesso?</span>
           <Link className="login-link" to="/cadastro">Criar minha senha</Link>
+        </div>
+        <div className="login-foot">
+          <span className="login-foot-txt">Ainda não tem acesso?</span>
+          <Link className="login-link" to="/solicitar-acesso">Solicitar acesso</Link>
         </div>
       </form>
     </div>
