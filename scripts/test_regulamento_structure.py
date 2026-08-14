@@ -39,7 +39,8 @@ for c in d['chapters']:
                     or 'LOB' in leaf['fundamento']
                     or 'Decreto nº 21.425/2016' in leaf['fundamento']
                     or 'Lei estadual nº 3.924/2016' in leaf['fundamento']
-                    or 'organograma oficial' in leaf['fundamento']), \
+                    or 'organograma oficial' in leaf['fundamento']
+                    or 'NGA-CIOP-001/2026' in leaf['fundamento']), \
                 f'fundamento não cita norma de RO: {leaf["fundamento"]}'
         else:
             assert leaf['source'].startswith('cf. CBM'), leaf['source']
@@ -69,8 +70,8 @@ assert _co['primary']['uf'] == 'ba', _co['primary']['uf']
 assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoes-193'
 
 # O piso existe para pegar PERDA ACIDENTAL de artigo (regressão do extrator ou do
-# enrichment). Em 2026-08-13 ele baixou de 413 para 415 (passando por 396) por decisão de
-# curadoria, não por regressão — a aritmética, conferida artigo a artigo:
+# enrichment). Em 2026-08-13/14 ele baixou de 413 para 416 (passando por 396 e 415) por
+# decisão de curadoria, não por regressão — a aritmética, conferida artigo a artigo:
 #     413 importados
 #     -13 artigos removidos (órgão do MT inexistente em RO — REMOVER_ARTIGOS)
 #     -19 artigos do capítulo de segurança contra incêndio (era o regimento da DSCIP/MT)
@@ -79,11 +80,16 @@ assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoe
 #     -2 artigos de organizacao-geral (mt-art-4 e mt-art-5 — organograma do CBMMT)
 #     +21 artigos de redação própria do organograma do CBMRO (ARTIGOS_PROPRIOS)
 #     = 415
+#     -3 artigos de central-operacoes-193 (ba-art-8/9/18 — CICOM da Bahia)
+#     +4 artigos de redação própria (Supervisores/Atendentes/Despachadores da NGA-CIOP +
+#        remissão), fundados na NGA-CIOP-001/2026
+#     = 416
 # Ver scripts/regulamento_reescrita.py para o motivo de cada remoção.
-assert len(edit_ids) >= 415, f'regressão: {len(edit_ids)} artigos (esperado >= 415)'
+assert len(edit_ids) >= 416, f'regressão: {len(edit_ids)} artigos (esperado >= 416)'
 autorais = [l for c in d['chapters'] for l in c['articles'] if l.get('autoral')]
-assert len(autorais) == 36, f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral = 36)'
-for tema in ('seguranca-contra-incendio', 'organizacao-geral'):
+assert len(autorais) == 40, \
+    f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral + 4 CIOP = 40)'
+for tema in ('seguranca-contra-incendio', 'organizacao-geral', 'central-operacoes-193'):
     cap = [c for c in d['chapters'] if c['themeKey'] == tema][0]
     assert all(l.get('autoral') for l in cap['articles']), \
         f'capítulo {tema} deve ser 100% redação própria'

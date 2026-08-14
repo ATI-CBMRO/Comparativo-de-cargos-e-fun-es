@@ -23986,302 +23986,143 @@
    "status": "rascunho",
    "articles": [
     {
-     "id": "ba-art-8",
+     "id": "ro-art-1",
      "kind": "incisos",
-     "editId": "reg:central-operacoes-193/ba-art-8",
-     "caput": "O Supervisor do Teledespacho (CIOP) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CIOP) sob a égide do CBMRO, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos.",
+     "editId": "reg:central-operacoes-193/ro-art-1",
+     "caput": "Os Supervisores exercem a supervisão técnica e funcional das equipes e das atividades da Central Integrada de Operações – CIOP sob sua responsabilidade, apoiando o Coordenador de Plantão na manutenção da qualidade, da regularidade e da eficiência dos serviços, competindo-lhes:",
+     "items": [
+      {
+       "text": "I - supervisionar as equipes e os processos operacionais sob sua responsabilidade;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "II - orientar tecnicamente os atendentes, os despachadores, os integrantes da recepção institucional e os profissionais de apoio operacional, conforme a área de atuação;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "III - acompanhar os indicadores operacionais e comunicar ao Coordenador de Plantão os desvios que possam comprometer a qualidade ou a continuidade do serviço;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "IV - monitorar a qualidade, a consistência e a completude dos registros produzidos nos sistemas corporativos;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "V - comunicar imediatamente ao Coordenador de Plantão as intercorrências, as indisponibilidades, os riscos operacionais e as situações críticas identificadas;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "VI - apoiar a solução de ocorrências complexas, nos limites de sua competência, sem interferir nas atribuições legais dos órgãos participantes;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "VII - propor medidas de aperfeiçoamento dos fluxos, dos registros, das rotinas e dos procedimentos operacionais;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "VIII - fiscalizar o cumprimento dos protocolos, das orientações de serviço e das normas de segurança aplicáveis ao setor.",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      },
+      {
+       "text": "Parágrafo único. Os Supervisores atuam sob coordenação do Coordenador de Plantão, mantendo comunicação permanente sobre a situação de suas equipes, a capacidade operacional, os riscos identificados e as providências adotadas; sua atuação limita-se à orientação e ao controle das atividades internas da CIOP, não abrangendo o exercício de atribuições privativas de outros órgãos ou autoridades.",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+      }
+     ],
+     "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25",
+     "match": "exata",
+     "heading": "NGA-CIOP-001/2026 — Dos Supervisores",
+     "autoral": true,
+     "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+    },
+    {
+     "id": "ro-art-2",
+     "kind": "incisos",
+     "editId": "reg:central-operacoes-193/ro-art-2",
+     "caput": "Compete ao Atendente realizar o atendimento inicial das demandas recebidas pelos canais oficiais da Central Integrada de Operações – CIOP, coletando, qualificando e registrando as informações necessárias ao adequado processamento da ocorrência, competindo-lhe ainda:",
+     "items": [
+      {
+       "text": "I - atender o cidadão com urbanidade, imparcialidade, objetividade e linguagem compatível com a natureza da demanda;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      },
+      {
+       "text": "II - identificar, mediante coleta das informações essenciais, a natureza, o local, as pessoas envolvidas e o grau de prioridade aparente da ocorrência;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      },
+      {
+       "text": "III - registrar os dados de forma clara, completa, objetiva e tempestiva nos sistemas corporativos;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      },
+      {
+       "text": "IV - prestar as orientações iniciais previstas nos protocolos aplicáveis, sem emitir juízo técnico, jurídico ou médico fora de sua competência;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      },
+      {
+       "text": "V - encaminhar a ocorrência ao setor ou ao recurso competente, conforme os fluxos estabelecidos;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      },
+      {
+       "text": "VI - comunicar imediatamente ao Supervisor as inconsistências, as falhas de sistema, as demandas sensíveis ou as situações que possam comprometer o atendimento;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      },
+      {
+       "text": "VII - preservar o sigilo das informações obtidas em razão do serviço.",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+      }
+     ],
+     "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27",
+     "match": "exata",
+     "heading": "NGA-CIOP-001/2026 — Dos Atendentes",
+     "autoral": true,
+     "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+    },
+    {
+     "id": "ro-art-3",
+     "kind": "incisos",
+     "editId": "reg:central-operacoes-193/ro-art-3",
+     "caput": "Compete ao Despachador realizar o gerenciamento operacional das ocorrências registradas, promovendo o acionamento e o acompanhamento dos recursos disponíveis, de acordo com os protocolos, a prioridade da demanda e as competências dos órgãos envolvidos, competindo-lhe ainda:",
+     "items": [
+      {
+       "text": "I - analisar tecnicamente as informações recebidas e complementar os registros quando necessário;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+      },
+      {
+       "text": "II - acionar, despachar ou solicitar o emprego dos recursos operacionais compatíveis com a ocorrência, nos limites dos protocolos e das disponibilidades informadas pelos órgãos competentes;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+      },
+      {
+       "text": "III - acompanhar a evolução das ocorrências em atendimento, mantendo atualizados os registros e as informações relevantes;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+      },
+      {
+       "text": "IV - manter comunicação operacional com as equipes e os canais institucionais autorizados;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+      },
+      {
+       "text": "V - informar imediatamente ao Supervisor ou ao Coordenador de Plantão as situações críticas, a indisponibilidade de recursos, os riscos de continuidade ou os fatos que exijam deliberação superior;",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+      },
+      {
+       "text": "VI - preservar a rastreabilidade dos acionamentos, das comunicações e das atualizações realizadas nos sistemas corporativos.",
+       "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+      }
+     ],
+     "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29",
+     "match": "exata",
+     "heading": "NGA-CIOP-001/2026 — Dos Despachadores",
+     "autoral": true,
+     "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 28 e 29"
+    },
+    {
+     "id": "ro-art-4",
+     "kind": "incisos",
+     "editId": "reg:central-operacoes-193/ro-art-4",
+     "caput": "As demais atribuições, competências, organização e finalidade da Central Integrada de Operações – CIOP, inclusive quanto à Direção, à Coordenação de Plantão, à Recepção Institucional, ao Apoio Operacional, à tecnologia e à governança da informação, à segurança orgânica, à continuidade operacional, à gestão de eventos críticos, ao videomonitoramento, à proteção de dados e à capacitação e responsabilização de seus integrantes, são reguladas por Norma Geral de Ação própria, expedida pelo órgão de competência da Secretaria de Estado da Segurança, Defesa e Cidadania – SESDEC.",
      "items": [],
-     "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 8",
+     "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional)",
      "match": "exata",
-     "heading": "NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)",
-     "adapted": true,
-     "original_caput": "O Supervisor do Teledespacho (CICOM) tem por finalidade supervisionar e monitorar as atividades dos Operadores de Teledespacho (CICOM) sob a égide do CBMBA, sendo o responsável pela gestão e alocação dos recursos internos e contato com os órgãos externos."
-    },
-    {
-     "id": "ba-art-9",
-     "kind": "incisos",
-     "editId": "reg:central-operacoes-193/ba-art-9",
-     "caput": "A função de Supervisor do Teledespacho (CIOP) será exercida por oficial intermediário ou 1º tenente, que ficará sediado na Secretaria de Segurança Pública (SSP), competindo-lhe:",
-     "items": [
-      {
-       "text": "I - apresentar-se formalmente, tão logo assuma o serviço, ao Superior de Dia e, não sendo possível, realizar o contato por meio telefônico;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "II – ao assumir a sua jornada de trabalho, realizar a preleção com a equipe de teledespachantes que assume a jornada, discorrendo sobre normas e condutas no serviço;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "III - primar pela apresentação pessoal, obedecendo ao prescrito nas normas e regulamentos específicos em vigor, servindo de exemplo para os demais integrantes do serviço, orientando para que todo o mapa de forç a preze pelo cumprimento da utilização do uniforme adequado, assim como do EPI;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "IV - inteirar-se de todas as ocorrências graves e pendentes deixadas pelo seu antecessor, para dar prosseguimento às ações, assegurando o perfeito cumprimento da missão;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "V - manter informado o Superior de Dia e, no seu impedimento, o Comandante Operacional de Bombeiros, sobre o desenvolvimento das atividades operacionais das guarnições de serviço e quanto às principais ocorrências;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "VI - contactar, após a assunção do serviço, com todos os Coordenadores de Área, determinando a confecção do mapa quantitativo de viaturas e do efetivo operacional, disponibilizados para o atendimento de ocorrências;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "VII - manter-se atualizado quanto às ordens e planos emanados do escalão superior, zelando pela fiel execução, exercendo a devida fiscalização para o cumprimento desses;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "VIII - analisar todos os dados elencados no mapa de força disponível no sistema, objetivando otimizar as ações operacionais;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "IX - monitorar o atendimento das ocorrências despachadas pelos operadores sob sua supervisão;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "X - acompanhar todo o processo de atendimento de ocorrências, desde o seu início pelos despachantes, até o fechamento, com a finalização nas viaturas;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XI - acompanhar as estatísticas de ocorrências de seu turno de supervisão;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XII - ter conhecimento do desenvolvimento das operações, acionando os meios específicos existentes e disponíveis;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XIII - manter contato com as forças de segurança e demais órgãos de apoio, para resposta operacional das ocorrências;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XIV- informar as ocorrências, seguindo o canal de comunicação e escalonamento, ao constatar que se trata de evento de grande vulto e complexidade;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XV - fiscalizar o emprego das comunicações, com relação ao nível de acesso, disciplina, disponibilidade, segurança e sigilo, buscando coibir des vios de finalidade, emprego incorreto de linguagem, postura inadequada no trato pessoal, agindo de forma a aplicar as medidas disciplinares, quando couber;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XVI- cumprir e fazer cumprir o disposto em regulamentos, normas gerais e ordens do escalão superior, no que se refere às atividades operacionais;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XVII - supervisionar o acionamento do mapa de força, de acordo com a metodologia presente no ANEXO A desta Portaria;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XVIII - registrar os problemas e irregularidades, de qualquer natureza, que porventura tenham ocorrido no a tendimento de ocorrências, para viabilização de solução, informando, o quanto antes, ao Superior de Dia e ao Comando Operacional de Bombeiros, principalmente nos casos de incidentes ou acidentes envolvendo bombeiros militares em serviço;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XIX- relatar acidente ou emergências envolvendo público interno e, caso esteja hospitalizado, manter contato com o Comando Operacional de Bombeiros;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XX - orientar as guarnições quanto ao cumprimento de ordens e normas no atendimen to das ocorrências;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXI- durante o acompanhamento de ocorrências de grande vulto e complexidade, deverá colher da guarnição que está no local do fato os dados essenciais sobre o ocorrido, confirmando ou não as informações do solicitante;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXII - proibir, nas respec tivas estações de trabalho da CIOP, o uso de equipamentos e materiais desautorizados ou que, possivelmente, interfiram na qualidade do serviço desempenhado pelos Operadores de Teledespacho;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXIII - acionar a Polícia Judiciária e o IML para o atendimento da dema nda operacional, caso a situação requeira;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXIV - adotar e orientar quanto ao uso do código fonético previsto no âmbito do CBMRO, não permitindo o uso de linguagem inapropriada e diverso ao preconizado pelo sistema de comunicação da CIOP, assim como coibindo a transmissão de mensagens de interesse particular, religioso e ideológico, através dos dispositivos de uso da Segurança Pública;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXV - toda reclamação de cidadãos insatisfeitos com relação ao atendimento de suas solicitações, bem como problemas surgidos durante o serviço, deverão ser apreciados, tratados e, por conseguinte, encaminhados através de relatório para o escalão superior;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXVI - comunicar ao SGTO da CIOP qualquer necessidade de suporte técnico relacionado à estrutura de funcionamento do Central Integrada de Operações, para que sejam adotadas as providencias cabíveis;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXVII - manter contatos com outros órgãos envolvidos no sistema de segurança pública, saúde ou assistência social, objetivando dar celeridade às soluções para eventos de natureza bombeiro-militar ou que não extrapolem a competência do CBMRO;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      },
-      {
-       "text": "XXVIII - decidir quanto à ordem de priorização de ocorrências, sempre que solicitado.",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9"
-      }
-     ],
-     "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 9",
-     "match": "exata",
-     "heading": "NOp 01/2021, Seção II — Supervisor do Teledespacho (CICOM)",
-     "adapted": true,
-     "original_caput": "A função de Supervisor do Teledespacho (CICOM) será exercida por oficial intermediário ou 1º tenente, que ficará sediado na Secretaria de Segurança Pública (SSP), competindo-lhe:"
-    },
-    {
-     "id": "ba-art-18",
-     "kind": "incisos",
-     "editId": "reg:central-operacoes-193/ba-art-18",
-     "caput": "O Operador do Teledespacho deverá ser bombeiro militar empregado pelo Comando Operacional de Bombeiros, competindo-lhe:",
-     "items": [
-      {
-       "text": "I – ao se apresentar para o turno de serviço, participar da preleção realizada pelo Supervisor do Teledespacho, sobre normas e condutas no serviço;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "II - primar por sua apresen tação pessoal, obedecendo ao que prescreve a legislação específica em vigor;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "III - após receber o serviço de seu antecessor, o despachante, obrigatoriamente, deve operacionalizar o sistema, bem como verificar e providenciar o aprestamento do mapa de força;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "IV - inteirar-se de todas as ocorrências de grande vulto e complexidade ocorridas no serviço anterior, bem como as pendentes deixadas pelo seu antecessor, para dar prosseguimento às ações, com vistas a assegurar o perfeito cumprimento da missão;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "V - manter-se atualizado quanto aos planos e ordens emanadas de autoridades superiores, pela sua fiel execução;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "VI - ao assumir o serviço, verificar a condição de funcionamento de todo o equipamento disponível no GD (Grupo de Despacho), que se encontra sob sua responsabilidade, informando imediatamente ao Supervisor do Teledespacho qualquer alteração encontrada, para que sejam adotadas as providências necessárias;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "VII - repassar os dados das ocorrências demandadas para cada GBM, através do equipamento de comunicação previamente estabelecido, de forma clara, precisa e concisa, conforme sua área de atuação;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "VIII - monitorar durante todo turno de serviço, o controle e emprego das viaturas e guarnições de serviço, buscando a prestação de um serviço de qualidade à sociedade, zelando pela vida , meio ambiente e patrimônio;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "IX - zelar pelo respeito e disciplina das comunicações na utilização da frequência de rádio e demais equipamentos de comunicação disponíveis no serviço;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "X - evitar o congestionamento da comunicação, observando a prioridade na trans missão de mensagens;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XI - em caso de ocorrências de natureza grave (incêndio de grandes proporções, desabamento seguido de soterramento, inundação de grandes proporções, acidente de trânsito com vítimas presas entre as ferragens, etc.), o Supervisor do Teledespacho deverá ser imediatamente informado do fato;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XII - monitorar o deslocamento de viaturas para refeição, abastecimento ou outra atividade que coloque os veículos em situação de indisponibilidade, observando a cobertura operacional;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XIII - realizar os lançament os dos dados repassados pelo Adjunto ao Oficial de Dia, imediatamente após a assunção do serviço das guarnições, relatando alterações diversas;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XIV- monitorar as viaturas operacionais, utilizando sempre o mapa digitalizado, orientando as guarnições quanto ao caminho mais próximo e/ou mais ágil para chegar ao local da ocorrência;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XV - durante ocorrências de grande porte e de considerada repercussão midiática, levantar todas as informações possíveis para serem repassadas às guarnições de serviço e ao escalonamento superior;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XVI- evitar que viaturas operacionais, que estão sob a coordenação e fiscalização da CIOP, executem serviços administrativos e, em casos excepcionais, repassar para o Supervisor do Teledespacho para que este realize as tratativas necessárias;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XVII - providenciar para que todos os dados da ocorrência sejam registrados em tempo real, visando à cronologia, acompanhamento e controle, para lançamento no sistema (CIOP);",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XVIII - informar ao Supervisor do Teledespacho para que sejam registrados em relatório os problemas e irregularidades de qualquer natureza que transcorreram no atendimento de ocorrências, com vistas a serem solucionados posteriormente, quando porventura não puderem ser solucionados durante o seu turno de serviço;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XIX - usar sempre fraseologia r egulamentar (códigos), para uma maior rapidez na passagem das mensagens, as quais deverão ser sempre claras, concisas e precisas, evitando frases longas e comentários desnecessários;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XX - zelar para que a rede de rádio e demais equipamentos de comunicação dis poníveis na CIOP sejam utilizados apenas para mensagens relacionadas ao serviço;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXI - alertar as guarnições sob seu controle que toda ocorrência solicitada e iniciada em via pública deverá ser, imediatamente, comunicada à CIOP;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXII - solicitar das guarnições empregadas que informem as soluções das ocorrências com todos os detalhes;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXIII - em caso de ocorrências finalizadas como “Nada Encontrado”, “Resolvido no Local”, ou “Trote”, deve ser exigido da guarnição empregada, sempre que possível, a constatação no histórico da ocorrência, levantando o nome completo, telefone, endereço, e-mail, bem como demais dados relevantes de pelo menos duas testemunhas que estejam no local da ocorrência;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXIV - realizar a triagem junto ao sistema (CIOP), priorizando as ocorrências que envolvam risco à vida, ao meio ambiente e danos ao patrimônio;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXV- realizar o acionamento do mapa de força de acordo com a indicação presente no Anexo A desta Portaria;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXVI - lançar no sistema e informar ao Supervisor do Teledespacho (CIOP) sobre todo deslocamento do Supervisor de Operações para qualquer ocorrência;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXVII - permanecer nas imediações de seu posto de trabalho;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXVIII - manter a postura e compostura no local de trabalho;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXIX- utilizar as tecnologias disponíveis para facilitar o serviço do pessoal empregado no terreno;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXX - procurar organizar sua estação de trabalho, utilizando todos os recursos que o sistema oferece;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXI - qualquer intervenção por parte da imprensa, procurando saber detalhes sobre alguma ocorrência, deve ser transferida imediatamente para o Supervisor do Teledespacho;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXII - realizar a conferência dos dados e endereços informados, com vistas a obter detalhes do atendimento;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXIII - monitorar o desempenho da guarnição empregada em deslocamento para ocorrência, registrando o t empo desprendido desde seu despacho até sua chegada ao local, devendo relatar ao Supervisor do Teledespacho qualquer dificuldade no acionamento e/ou atrasos superirores a 02 (dois) minutos na saída das viaturas para o atendimento da ocorrência, bem como outras alterações que perceber;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXIV – não utilizar para fins particulares o telefone destinado ao uso exclusivo no serviço, salvo em caso de extrema urgência;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXV - levar imediatamente ao conhecimento do Supervisor do Teledespacho, toda e qualquer ocorrência que envolva autoridades civis, policiais militares, bombeiros militares, policiais federais, policiais civis ou militares das Forças Armadas;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXVI - acompanhar as guarnições quanto ao atendimento de vítimas, bem como os procedimentos operacionais adotados;",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      },
-      {
-       "text": "XXXVII– repassar para seu sucessor, com todos os detalhes, as alterações e ocorrências pendentes ao término do serviço, dando ênfase às de maior gravidade.",
-       "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18"
-      }
-     ],
-     "source": "cf. CBMBA, Norma Operacional nº 01/2021, Art. 18",
-     "match": "exata",
-     "heading": "NOp 01/2021, Seção X — Operador do Teledespacho (CICOM)",
-     "adapted": true,
-     "original_caput": "O Operador do Teledespacho deverá ser bombeiro militar empregado pelo Comando de Operações de Bombeiros Militares, competindo-lhe:"
+     "heading": "NGA-CIOP-001/2026 — Da remissão às demais matérias",
+     "autoral": true,
+     "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional)"
     }
    ],
    "alternatives": {

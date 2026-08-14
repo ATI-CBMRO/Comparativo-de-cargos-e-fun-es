@@ -29,6 +29,22 @@ existentes; tudo o que diverge deles deve ser ajustado" e "o dispositivo precisa
 Fontes: Lei nº 2.204/2009 (LOB consolidada até a Lei 5.697/2023), Decreto nº 21.425/2016
 (regulamento de segurança contra incêndio e pânico, alt. Decreto 24.357/2019) e o
 organograma oficial do CBMRO.
+
+  (c) MATÉRIA QUE TEM NORMA PRÓPRIA DE RONDÔNIA MAIS AUTORITATIVA QUE O TEXTO IMPORTADO —
+      o capítulo "Da Central de Operações e do Teledespacho" usava o Supervisor/Operador
+      do Teledespacho (CICOM) da Bahia por falta de fonte melhor. Em 2026-08-14 o Ten.
+      Tiago forneceu a minuta da NGA-CIOP-001/2026 (Norma Geral de Ação do Centro
+      Integrado de Operações, SESDEC/CIOP — "Beta Consolidada, Revisão 4"), com as
+      competências de Supervisores, Atendentes e Despachadores do CIOP de Rondônia. Essa
+      NGA é, ela própria, um DOCUMENTO DE TRABALHO — sua Folha de Aprovação está com as
+      assinaturas em branco e o texto se autodeclara "não substitui... o ato de aprovação
+      da autoridade competente". Por isso o Regulamento REPRODUZ apenas as três funções
+      pedidas (não replica o Volume II/III da NGA — tecnologia, continuidade operacional,
+      eventos críticos etc.) e fecha com um artigo de REMISSÃO: as demais matérias que a
+      NGA descreve permanecem reguladas por norma própria do órgão de competência da
+      SESDEC, sem duplicá-las aqui. Determinação: "não é necessário adicionar o documento
+      ao acervo legal" — a NGA fundamenta o artigo 74-76 sem entrar no acervo (ao
+      contrário do Decreto 21.425/2016, que foi ingerido).
 """
 
 # ── (a) Dispositivos que SAEM ────────────────────────────────────────────────────────
@@ -96,10 +112,13 @@ REMOVER_INCISOS = {
 # Temas cujos artigos IMPORTADOS são integralmente descartados e substituídos pelos
 # artigos autorais abaixo. O Bloco D (alternatives) do tema é preservado pelo builder:
 # o comparador continua mostrando o texto dos outros estados lado a lado.
-SUBSTITUI_INTEGRALMENTE = {'seguranca-contra-incendio', 'organizacao-geral'}
+SUBSTITUI_INTEGRALMENTE = {'seguranca-contra-incendio', 'organizacao-geral', 'central-operacoes-193'}
 
 _LOB = 'CBMRO, Lei nº 2.204/2009'
 _DEC = 'CBMRO, Decreto nº 21.425/2016'
+_NGA = 'NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — ' \
+       'SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação ' \
+       'institucional)'
 
 ARTIGOS_PROPRIOS = {
     'seguranca-contra-incendio': [
@@ -731,6 +750,116 @@ ARTIGOS_PROPRIOS = {
             ],
             'fundamento': 'LOB, Art. 47, caput e § 1º (red. Lei nº 4.303/2018), e Art. 59, '
                           'parágrafo único; organograma oficial do CBMRO',
+        },
+    ],
+
+    # ── central-operacoes-193 (2026-08-14) ───────────────────────────────────────────
+    # Os 3 artigos importados (ba-art-8, ba-art-9, ba-art-18) descreviam o Supervisor e o
+    # Operador do Teledespacho do CICOM da Bahia — nome e estrutura de outra corporação,
+    # com resíduos que citavam SSP, Coordenadoria de Saúde e ANEXO A inexistente aqui.
+    # Substituídos pelas competências de Supervisores, Atendentes e Despachadores da
+    # NGA-CIOP-001/2026 (norma própria de Rondônia, ainda em validação institucional — ver
+    # nota no topo do arquivo), mais um artigo de remissão para as demais matérias que a
+    # NGA regula (Direção, Coordenação de Plantão, Recepção Institucional, Apoio
+    # Operacional, tecnologia, continuidade operacional, eventos críticos etc.), que NÃO
+    # são reproduzidas aqui.
+    'central-operacoes-193': [
+        {
+            'heading': 'NGA-CIOP-001/2026 — Dos Supervisores',
+            'caput': 'Os Supervisores exercem a supervisão técnica e funcional das equipes e '
+                     'das atividades da Central Integrada de Operações – CIOP sob sua '
+                     'responsabilidade, apoiando o Coordenador de Plantão na manutenção da '
+                     'qualidade, da regularidade e da eficiência dos serviços, competindo-lhes:',
+            'dispositivos': [
+                'I - supervisionar as equipes e os processos operacionais sob sua '
+                'responsabilidade;',
+                'II - orientar tecnicamente os atendentes, os despachadores, os integrantes '
+                'da recepção institucional e os profissionais de apoio operacional, conforme '
+                'a área de atuação;',
+                'III - acompanhar os indicadores operacionais e comunicar ao Coordenador de '
+                'Plantão os desvios que possam comprometer a qualidade ou a continuidade do '
+                'serviço;',
+                'IV - monitorar a qualidade, a consistência e a completude dos registros '
+                'produzidos nos sistemas corporativos;',
+                'V - comunicar imediatamente ao Coordenador de Plantão as intercorrências, as '
+                'indisponibilidades, os riscos operacionais e as situações críticas '
+                'identificadas;',
+                'VI - apoiar a solução de ocorrências complexas, nos limites de sua '
+                'competência, sem interferir nas atribuições legais dos órgãos participantes;',
+                'VII - propor medidas de aperfeiçoamento dos fluxos, dos registros, das '
+                'rotinas e dos procedimentos operacionais;',
+                'VIII - fiscalizar o cumprimento dos protocolos, das orientações de serviço e '
+                'das normas de segurança aplicáveis ao setor.',
+                'Parágrafo único. Os Supervisores atuam sob coordenação do Coordenador de '
+                'Plantão, mantendo comunicação permanente sobre a situação de suas equipes, a '
+                'capacidade operacional, os riscos identificados e as providências adotadas; '
+                'sua atuação limita-se à orientação e ao controle das atividades internas da '
+                'CIOP, não abrangendo o exercício de atribuições privativas de outros órgãos '
+                'ou autoridades.',
+            ],
+            'fundamento': f'{_NGA}, Arts. 23 a 25',
+        },
+        {
+            'heading': 'NGA-CIOP-001/2026 — Dos Atendentes',
+            'caput': 'Compete ao Atendente realizar o atendimento inicial das demandas '
+                     'recebidas pelos canais oficiais da Central Integrada de Operações – '
+                     'CIOP, coletando, qualificando e registrando as informações necessárias '
+                     'ao adequado processamento da ocorrência, competindo-lhe ainda:',
+            'dispositivos': [
+                'I - atender o cidadão com urbanidade, imparcialidade, objetividade e '
+                'linguagem compatível com a natureza da demanda;',
+                'II - identificar, mediante coleta das informações essenciais, a natureza, o '
+                'local, as pessoas envolvidas e o grau de prioridade aparente da ocorrência;',
+                'III - registrar os dados de forma clara, completa, objetiva e tempestiva nos '
+                'sistemas corporativos;',
+                'IV - prestar as orientações iniciais previstas nos protocolos aplicáveis, sem '
+                'emitir juízo técnico, jurídico ou médico fora de sua competência;',
+                'V - encaminhar a ocorrência ao setor ou ao recurso competente, conforme os '
+                'fluxos estabelecidos;',
+                'VI - comunicar imediatamente ao Supervisor as inconsistências, as falhas de '
+                'sistema, as demandas sensíveis ou as situações que possam comprometer o '
+                'atendimento;',
+                'VII - preservar o sigilo das informações obtidas em razão do serviço.',
+            ],
+            'fundamento': f'{_NGA}, Arts. 26 e 27',
+        },
+        {
+            'heading': 'NGA-CIOP-001/2026 — Dos Despachadores',
+            'caput': 'Compete ao Despachador realizar o gerenciamento operacional das '
+                     'ocorrências registradas, promovendo o acionamento e o acompanhamento dos '
+                     'recursos disponíveis, de acordo com os protocolos, a prioridade da '
+                     'demanda e as competências dos órgãos envolvidos, competindo-lhe ainda:',
+            'dispositivos': [
+                'I - analisar tecnicamente as informações recebidas e complementar os '
+                'registros quando necessário;',
+                'II - acionar, despachar ou solicitar o emprego dos recursos operacionais '
+                'compatíveis com a ocorrência, nos limites dos protocolos e das '
+                'disponibilidades informadas pelos órgãos competentes;',
+                'III - acompanhar a evolução das ocorrências em atendimento, mantendo '
+                'atualizados os registros e as informações relevantes;',
+                'IV - manter comunicação operacional com as equipes e os canais institucionais '
+                'autorizados;',
+                'V - informar imediatamente ao Supervisor ou ao Coordenador de Plantão as '
+                'situações críticas, a indisponibilidade de recursos, os riscos de '
+                'continuidade ou os fatos que exijam deliberação superior;',
+                'VI - preservar a rastreabilidade dos acionamentos, das comunicações e das '
+                'atualizações realizadas nos sistemas corporativos.',
+            ],
+            'fundamento': f'{_NGA}, Arts. 28 e 29',
+        },
+        {
+            'heading': 'NGA-CIOP-001/2026 — Da remissão às demais matérias',
+            'caput': 'As demais atribuições, competências, organização e finalidade da '
+                     'Central Integrada de Operações – CIOP, inclusive quanto à Direção, à '
+                     'Coordenação de Plantão, à Recepção Institucional, ao Apoio Operacional, '
+                     'à tecnologia e à governança da informação, à segurança orgânica, à '
+                     'continuidade operacional, à gestão de eventos críticos, ao '
+                     'videomonitoramento, à proteção de dados e à capacitação e '
+                     'responsabilização de seus integrantes, são reguladas por Norma Geral de '
+                     'Ação própria, expedida pelo órgão de competência da Secretaria de Estado '
+                     'da Segurança, Defesa e Cidadania – SESDEC.',
+            'dispositivos': [],
+            'fundamento': f'{_NGA}',
         },
     ],
 }

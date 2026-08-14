@@ -68,9 +68,9 @@
     remissão a Decreto do Governador (LOB Art. 59), não descrição direta de estrutura. Ainda não
     reescritos nessa forma.
   - **Central 193**: o CBMRO opera **2 CIOP** (Centro Integrado de Operações) — Porto Velho
-    (ocorrências do COB I) e Ji-Paraná (COB II). Aplicado só o NOME (`CICOM`→`CIOP`); a divisão
-    operacional por COB **não** foi codificada nos 3 artigos/65 incisos do capítulo — pendência
-    de redação.
+    (ocorrências do COB I) e Ji-Paraná (COB II). A divisão por COB foi codificada em
+    `organizacao-geral` (§2º do artigo do Comando Operacional de Bombeiros, 3ª leva); o capítulo
+    `central-operacoes-193` em si foi **reescrito por inteiro na 4ª leva** (ver abaixo).
   - **ADEMA→SEDAM, e-doc→SEI**: aplicados (resíduos de 1 ocorrência cada, fonte Sergipe).
   **Feito nesta branch (9 commits)**: 4 do Wândrio (resíduos mecânicos — Bahia sem adaptação,
   variantes "CBM-MT", rodapé do RISD/CBMSE fabricando um "Boletim Geral" do CBMRO, "PMSE") + 5
@@ -157,6 +157,33 @@
   - **413 → 396 artigos** (−13 −19 +15). Piso do teste ajustado COM a aritmética explicada e +3
     asserções novas para a redução não disfarçar regressão futura.
 
+  **✅ 4ª leva — `central-operacoes-193` reescrito com a NGA-CIOP-001/2026 (2026-08-14,
+  determinação do Tiago)**: os 3 artigos importados da Bahia (Supervisor/Operador do
+  Teledespacho — CICOM, com os resíduos "SSP", "Coordenadores de Área", "Coordenadoria de
+  Saúde", "GD", "SGTO", "Supervisor de Operações", "Adjunto ao Oficial de Dia", remissão a
+  "ANEXO A" baiano inexistente) foram descartados e substituídos por **4 artigos de redação
+  própria**, fundados na minuta da **NGA-CIOP-001/2026** (Norma Geral de Ação do Centro
+  Integrado de Operações, SESDEC/CIOP — fornecida pelo Tiago): competências dos
+  **Supervisores** (Arts. 23-25 da NGA), dos **Atendentes** (Arts. 26-27) e dos
+  **Despachadores** (Arts. 28-29), fechando com um artigo de **remissão** — as demais matérias
+  que a NGA regula (Direção do CIOP, Coordenação de Plantão, Recepção Institucional, Apoio
+  Operacional, tecnologia, continuidade operacional, eventos críticos, videomonitoramento,
+  proteção de dados, capacitação) **não são reproduzidas** no Regulamento; ficam reguladas por
+  NGA própria do órgão de competência da SESDEC.
+  - **⚠️ A NGA-CIOP-001/2026 é, ela própria, minuta em validação institucional** (Folha de
+    Aprovação com assinaturas em branco, "Beta Consolidada — Revisão 4") — citada como
+    `fundamento` mesmo assim, por determinação expressa do Tiago; sinalizado no comentário de
+    `scripts/regulamento_reescrita.py` para quem for revisar depois. **Documento NÃO entrou no
+    Acervo Legal** (determinação: "não é necessário adicionar... ao acervo legal") — usado só
+    como fonte de redação, ao contrário do Decreto 21.425/2016 (que foi ingerido).
+  - **396 → 416 artigos** (−3 +4). `test_regulamento_structure.py` atualizado (piso 416,
+    40 autorais = 15 SCI + 21 organizacao-geral + 4 CIOP, tema incluído na checagem 100%
+    autoral + Bloco D preservado). `verificar_verbatim.py` 1166/1166 OK, `npm test` 155/155 OK.
+  - Efeito colateral esperado: a numeração contínua do recorte "Regulamento de Serviço"
+    (`src/lib/escopoServico.js`) desloca em +1 a partir deste capítulo (os antigos artigos
+    74-76 viram 74-77) — consequência de ter 4 artigos em vez de 3, não regressão.
+  - Ainda não commitado (aguardando confirmação do Tiago).
+
   **Ainda em aberto, todos exigindo decisão de mérito de quem conhece o CBMRO (não corrigir por
   semelhança/palpite — repetiria o erro que esta rodada está consertando):**
   - `seguranca-contra-incendio` (19 art/184 incisos) — **o capítulo inteiro é o regimento interno
@@ -173,14 +200,6 @@
   - `seguranca-contra-incendio`, art. 182: afirma **vinculação automática** das Seções de
     Atividades Técnicas às unidades operacionais; a lei (Art. 18, §2º, red. Lei 4.488/2019) a
     trata como **facultativa, por ato do Comandante-Geral**. Contraria a lei.
-  - `central-operacoes-193`: resíduos baianos que **não citam nome de estado** (por isso escapam
-    da varredura automática) — Supervisor do Teledespacho "sediado na **Secretaria de Segurança
-    Pública (SSP)**" (em RO os 2 CIOP ficam em Porto Velho e Ji-Paraná: **onde exatamente?**),
-    `Superior de Dia` (3x), `Coordenadores de Área`, `Coordenadoria de Saúde` (RO não tem órgão de
-    saúde — Art. 62 revogado pela Lei 2.244/2010), `GD (Grupo de Despacho)`, `SGTO`, `Supervisor
-    de Operações`, `Adjunto ao Oficial de Dia`, remissão a "**ANEXO A desta Portaria**" (anexo
-    baiano inexistente) e "código fonético previsto no âmbito do CBMRO" (o da Bahia). Falta ainda
-    **codificar a divisão CIOP-Porto Velho/COB I × CIOP-Ji-Paraná/COB II** nos 3 artigos.
   - `atribuicoes-funcoes` (29 art/345 incisos): é o Título III do Regulamento do CBMMT. Os nomes
     de unidade já foram corrigidos acima, mas **restam os órgãos de direção**: DEIP, CEIB, Escola
     Dom Pedro II, Centro de Capacitação Física (19x no total) — sem equivalente direto. E o alerta
