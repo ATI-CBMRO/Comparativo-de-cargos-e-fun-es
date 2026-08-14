@@ -33,10 +33,12 @@ REGULAMENTO_DOCS = {
     'al': 'Alagoas - Regimento Interno.md',
     'df': 'Distrito Federal - Regimento Interno.md',
     'go': 'Goiás - Regimento dos Serviços Interno e Operacional.md',
-    'mt': 'Mato Grosso - Regulamento Geral.md',
+    # mt/rn: acervo reclassificado p/ "Regimento Interno" em 2026-07-30 (decisão de
+    # produto); conteúdo é o mesmo Regulamento Geral de sempre.
+    'mt': 'Mato Grosso - Regimento Interno.md',
     'pa': 'Pará - Regimento Interno.md',
     'pr': 'Paraná - Regimento Interno.md',
-    'rn': 'Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md',
+    'rn': 'Rio Grande do Norte - Regimento Interno.md',
     'rs': 'Rio Grande do Sul - Regimento Interno.md',
     'se': 'Sergipe - Regulamento Interno.md',
 }

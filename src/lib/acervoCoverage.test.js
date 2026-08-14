@@ -33,13 +33,28 @@ const STATES = [
   },
 ]
 
-test('funde Regulamento Geral e Regimento de Serviços na coluna regulamento', () => {
-  assert.deepEqual(REGULAMENTO_SERVICO_TYPES, ['Regulamento Geral', 'Regimento de Serviços'])
+test('funde Regulamento Geral, Regimento de Serviços e Normas Gerais de Ação na coluna regulamento', () => {
+  assert.deepEqual(REGULAMENTO_SERVICO_TYPES, ['Regulamento Geral', 'Regimento de Serviços', 'Normas Gerais de Ação'])
   const rows = buildCoverageRows(STATES)
   const mt = rows.find(r => r.stateId === 'mt')
   const se = rows.find(r => r.stateId === 'se')
   assert.equal(mt.columns.regulamento.present, true)   // Regulamento Geral
   assert.equal(se.columns.regulamento.present, true)   // Regimento de Serviços
+})
+
+test('Normas Gerais de Ação também conta na coluna regulamento (ex.: ES)', () => {
+  const rows = buildCoverageRows([
+    {
+      id: 'es', name: 'Espírito Santo', abbreviation: 'ES',
+      documents: [
+        doc('Lei de Organização Básica', undefined),
+        doc('Normas Gerais de Ação', true),
+      ],
+    },
+  ])
+  const es = rows.find(r => r.stateId === 'es')
+  assert.equal(es.columns.regulamento.present, true)
+  assert.equal(es.columns.regulamento.docs[0].type, 'Normas Gerais de Ação')
 })
 
 test('LOB conta múltiplos documentos e nunca tem selo (verified null)', () => {

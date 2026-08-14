@@ -1,9 +1,11 @@
 // Lógica pura do Acervo Legal: agrega os documentos de cada estado nas 3
 // colunas da tabela de cobertura (LOB / Regimento Interno / Regulamento de
-// Serviço). Sem React. A coluna "Regulamento de Serviço" funde dois tipos
-// reais do acervo (Regulamento Geral e Regimento de Serviços).
+// Serviço). Sem React. A coluna "Regulamento de Serviço" funde três tipos
+// reais do acervo (Regulamento Geral, Regimento de Serviços e Normas Gerais
+// de Ação — ex.: ES, que só tem NGA como documento de serviço; corrigido
+// 2026-07-30, antes ficava fora da coluna e o estado aparecia como "—").
 
-export const REGULAMENTO_SERVICO_TYPES = ['Regulamento Geral', 'Regimento de Serviços']
+export const REGULAMENTO_SERVICO_TYPES = ['Regulamento Geral', 'Regimento de Serviços', 'Normas Gerais de Ação']
 
 const LOB_TYPE = 'Lei de Organização Básica'
 const REGIMENTO_TYPE = 'Regimento Interno'
@@ -33,7 +35,7 @@ function docPdf(doc) {
 }
 
 // Em qual das 3 colunas o documento se encaixa (ou "outros" para tipos que não
-// entram na tabela de cobertura, ex.: Normas Gerais de Ação).
+// entram na tabela de cobertura, ex.: Quadro Demonstrativo de Cargos).
 function bucketOf(type) {
   if (type === LOB_TYPE) return 'lob'
   if (type === REGIMENTO_TYPE) return 'regimento'

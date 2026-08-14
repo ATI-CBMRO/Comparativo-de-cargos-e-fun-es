@@ -1,6 +1,6 @@
-# Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021)
+# Rio Grande do Norte - Regimento Interno
 
-*Documento extraído de: `Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).pdf`*
+*Documento extraído de: `Rio Grande do Norte - Regimento Interno.pdf`*
 *Total de páginas: 5*
 
 ---

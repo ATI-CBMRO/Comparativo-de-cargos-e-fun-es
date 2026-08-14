@@ -458,9 +458,20 @@ STATE_NAME_ALIASES = {
 
 # Estados cujo TIPO de documento foi conferido por leitura de conteúdo de verdade —
 # a curadoria do Regulamento (Bloco B1-M, scripts/regulamento_enrichment.py
-# REGULAMENTO_DOCS) leu o texto integral desses 9 estados pra montar a minuta do
+# REGULAMENTO_DOCS) leu o texto integral desses estados pra montar a minuta do
 # Regulamento, e por isso também confirmou (ou corrigiu, ver acima) o tipo de cada
 # documento.
+# NOTA MT/RN (2026-07-30): os documentos têm título formal "Regulamento Geral" (MT:
+# Portaria nº 009/BM-8/2013; RN: Decreto nº 31.139/2021), mas o CONTEÚDO funciona como o
+# Regimento Interno de cada estado — confirmado pelo Wândrio e corroborado por
+# scripts/minuta_enrichment.py, que já citava 9+ órgãos como "cf. CBMMT, RI, Art. N"
+# (ex.: Art. 152 = Ajudância-Geral, 12 itens; Art. 129 = cinf, 9 itens) extraídos VERBATIM
+# deste mesmo documento antes mesmo do acervo reconhecer o tipo certo. Igual a SE/MA/PA/GO
+# acima: o nome que o próprio estado dá ao instrumento não corresponde à função —
+# parse_doc_type já acerta pelo nome do arquivo (renomeado), sem precisar de override. Os
+# dois continuam também PRIMARY_SOURCE de temas do Regulamento Geral da minuta (o mesmo
+# documento cobre estrutura organizacional E competências temáticas). Resolve a pendência
+# "falta o RI de MT" (Art. 152/129) — ver ✅ Concluído em .claude/PENDENCIAS.md.
 CONTENT_VERIFIED_STATES = {"al", "df", "go", "mt", "pa", "pr", "rn", "rs", "se"}
 
 # Auditoria de 2026-07-09 (achado 2026-07-09): leitura do início (ementa/título) de

@@ -39,10 +39,17 @@ REGULAMENTO_DOCS = {
     "al": {"label": "RI (Decreto nº 408/2001)", "md": "Alagoas - Regimento Interno.md"},
     "df": {"label": "RI (Portaria nº 24/2020)", "md": "Distrito Federal - Regimento Interno.md"},
     "go": {"label": "Regimento dos Serviços Interno e Operacional", "md": "Goiás - Regimento dos Serviços Interno e Operacional.md"},
-    "mt": {"label": "Regulamento Geral (Portaria nº 009/BM-8/2013)", "md": "Mato Grosso - Regulamento Geral.md"},
+    # Acervo reclassificado p/ "Regimento Interno" em 2026-07-30 — título formal é
+    # "Regulamento Geral" (Portaria nº 009/BM-8/2013), mas o conteúdo funciona como o
+    # RI do CBMMT (já citado como tal em minuta_enrichment.py antes desta reclassificação).
+    # Continua fonte primária de temas do Regulamento aqui também — mesmo documento,
+    # só o arquivo mudou de nome.
+    "mt": {"label": "Regulamento Geral (Portaria nº 009/BM-8/2013)", "md": "Mato Grosso - Regimento Interno.md"},
     "pa": {"label": "MINUTA de RI (Decreto em tramitação, 2026)", "md": "Pará - Regimento Interno.md"},
     "pr": {"label": "Atribuições institucionais (portal oficial)", "md": "Paraná - Regimento Interno.md"},
-    "rn": {"label": "Regulamento Geral (Decreto nº 31.139/2021)", "md": "Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md"},
+    # Mesma reclassificação de acervo (2026-07-30) que MT, acima — título formal
+    # "Regulamento Geral", conteúdo funciona como o RI do CBMRN.
+    "rn": {"label": "Regulamento Geral (Decreto nº 31.139/2021)", "md": "Rio Grande do Norte - Regimento Interno.md"},
     "rs": {"label": "RI (Portaria nº 001/2025)", "md": "Rio Grande do Sul - Regimento Interno.md"},
     "se": {"label": "RISD (atual. 2022)", "md": "Sergipe - Regulamento Interno.md"},
     "ba": {"label": "Norma Operacional nº 01/2021 (CBMBA)", "md": "Bahia - Regulamento de Serviço.md"},

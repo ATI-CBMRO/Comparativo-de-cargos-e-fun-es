@@ -146,7 +146,10 @@ def caput_e_dispositivos(art_lines):
 
 CONFIG = {
     'mt': {
-        'md': 'Mato Grosso - Regulamento Geral.md',
+        # Arquivo do acervo renomeado p/ "Regimento Interno" em 2026-07-30 — título
+        # formal é "Regulamento Geral" (Portaria nº 009/BM-8/2013), mas o conteúdo
+        # funciona como o RI do CBMMT.
+        'md': 'Mato Grosso - Regimento Interno.md',
         'src': 'cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. {n}',
         'slice_between': ('TÍTULO I', None),
         'ranges': [
@@ -173,7 +176,8 @@ CONFIG = {
         },
     },
     'rn': {
-        'md': 'Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md',
+        # Mesma reclassificação de acervo (2026-07-30) que MT, acima.
+        'md': 'Rio Grande do Norte - Regimento Interno.md',
         'src': 'cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. {n}',
         # Fim em 'ANEXO I' (siglas): o Regulamento em si termina no Art. 56 —
         # os anexos e o Decreto 31.140 (orçamento) que vêm depois NÃO entram.

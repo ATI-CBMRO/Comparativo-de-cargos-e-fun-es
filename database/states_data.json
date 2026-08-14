@@ -6680,9 +6680,9 @@
           "has_pdf": true
         },
         {
-          "type": "Regulamento Geral",
+          "type": "Regimento Interno",
           "typeVerified": true,
-          "md_file": "Mato Grosso - Regulamento Geral.md",
+          "md_file": "Mato Grosso - Regimento Interno.md",
           "char_count": 272442,
           "year": 2013,
           "laws": [
@@ -7949,8 +7949,8 @@
       ],
       "stats": {
         "total_documents": 2,
-        "has_regimento": false,
-        "has_regulamento": true,
+        "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
         "total_chars": 356123,
         "organs_mapped": 203,
@@ -13595,10 +13595,10 @@
           "has_pdf": true
         },
         {
-          "type": "Regulamento Geral",
+          "type": "Regimento Interno",
           "typeVerified": true,
-          "md_file": "Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).md",
-          "char_count": 65770,
+          "md_file": "Rio Grande do Norte - Regimento Interno.md",
+          "char_count": 65726,
           "year": 2021,
           "laws": [
             {
@@ -14303,10 +14303,10 @@
       ],
       "stats": {
         "total_documents": 2,
-        "has_regimento": false,
-        "has_regulamento": true,
+        "has_regimento": true,
+        "has_regulamento": false,
         "has_nga": false,
-        "total_chars": 88067,
+        "total_chars": 88023,
         "organs_mapped": 85,
         "curated": true
       }

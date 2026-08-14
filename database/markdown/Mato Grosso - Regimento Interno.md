@@ -1,6 +1,6 @@
-# Mato Grosso - Regulamento Geral
+# Mato Grosso - Regimento Interno
 
-*Documento extraído de: `Mato Grosso - Regulamento Geral.pdf`*
+*Documento extraído de: `Mato Grosso - Regimento Interno.pdf`*
 *Total de páginas: 47*
 
 ---

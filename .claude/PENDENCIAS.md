@@ -2,6 +2,13 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Acervo — PDF `Piauí - Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022) [OCR].pdf`
+  já está no repo mas nunca foi convertido/ingerido** (achado 30/07/2026, ao rodar
+  `convert_to_markdown.py` para a pendência acima): o markdown chegou a ser gerado e depois foi
+  descartado de propósito (fora do escopo daquela tarefa) — falta rodar a ingestão completa
+  (classificar, decidir se substitui o PDF escaneado antigo do Piauí ou fica como alternativa,
+  `CONTENT_VERIFIED_FILES`, rebuild). A LOB do Piauí já tinha sido "destravada por OCR" em
+  22/07/2026 (ver ✅ Concluído) — este PDF parece ser essa versão, só faltou o último passo.
 - [ ] **Curadoria — Decisões do REGIMENTO INTERNO para a LOB ATUAL (não existem ainda)**:
   as 9 decisões de RI do vault foram todas redigidas sobre a **LOB futura** (discutem BBS,
   CRBM, DEPDEC, DOE, COT, dpof, gab-cg — sem equivalente na Lei 2.204/2009). Desde
@@ -17,13 +24,6 @@
   Orientação de uso em `/manual#cockpit`. Minors registrados p/ rodada futura: padronizar os 2
   estilos de citação do MT adaptado; ruído de cabeçalho de PDF em 2 citações de SE; notas de
   Fonte magras de propósito; elisões sem "[...]" em 2 notas de decisão (cada linha é verbatim).
-- [ ] **Ajudância-Geral (ag) — falta o RI do Mato Grosso**: 12 de 25 itens da competência citam
-  `cf. CBMMT, RI, Art. 152`, mas o Regimento Interno de MT nunca foi ingerido no acervo (só há
-  a LOB e o Regulamento Geral). Sem o PDF não dá pra confirmar nem capturar o excerto. Origem:
-  revisões da Frente B, 22/07/2026; investigado e resolvido em parte (dpo/assessorias) em
-  23/07/2026 — ver ✅ Concluído. **Ampliado pela auditoria (23/07/2026):** `cinf` também
-  cita o RI de MT (`cf. CBMMT, RI, Art. 129`) sem fonte no acervo — mesma solução (ingerir
-  o RI de MT) resolve os dois.
 - [ ] Regulamento — tema `uniformes-apresentacao` segue magro (1 artigo, só SE) — matéria que
   pede um regulamento próprio de uniformes (RUMBM) no médio prazo, não uma lacuna a forçar
   agora. DOB-01 de AL investigada e descartada (23/07/2026 — ver ✅ Concluído): é glossário
@@ -242,11 +242,9 @@
   **Achado durante a ingestão, contido**: rodar `convert_to_markdown.py` sobre a pasta inteira
   reprocessou PDFs não relacionados e por pouco não DESTRUÍA o markdown bom do Piauí (26.552 →
   578 caracteres, sobrescrito pela reconversão do PDF escaneado antigo) e trazia de carona o PDF
-  `[OCR]` do Piauí — pendência já registrada em sessão anterior (achado 30/07/2026: PDF no repo,
-  nunca convertido/ingerido, decisão de substituir ou não o escaneado antigo ainda em aberto),
-  quase resolvida agora como efeito colateral não intencional. Revertido: só o `.md` do Decreto
-  21.425 e as entradas de RO em `states_data.json` foram mantidos; os demais arquivos tocados
-  pela reconversão (Alagoas ×2,
+  `[OCR]` do Piauí — pendência conhecida, ainda não decidida (ver 🔴 abaixo), quase resolvida como
+  efeito colateral não intencional. Revertido: só o `.md` do Decreto 21.425 e as entradas de RO em
+  `states_data.json` foram mantidos; os demais arquivos tocados pela reconversão (Alagoas ×2,
   Paraíba, Pará, Piauí, Roraíma) voltaram ao estado commitado. `database/organs_detail/`,
   `comparativo_dpo_cot.json`, `comparativo_minuta.json`, `minuta_structure.json` e
   `regulamento_structure.json` (cenário futura) conferidos sem diff.
@@ -255,6 +253,30 @@
   citado diretamente como `fundamento` na reescrita do capítulo "Da Segurança Contra Incêndio e
   Pânico" da minuta (branch `fix/curadoria-lob-atual`, ainda não mesclada) — a ingestão formaliza
   no acervo uma fonte que já vinha sendo usada ad-hoc. Sem outra ação de camada 2/3 pendente.
+- [x] **Acervo — ES: Normas Gerais de Ação passam a contar na coluna "Regulamento de Serviço"**
+  (30/07/2026, pedido do Tiago): a tabela de Cobertura por estado (`AcervoCoverageTable.jsx`)
+  já tinha o documento no acervo, mas a coluna só somava `Regulamento Geral` +
+  `Regimento de Serviços`; ES aparecia com "—" mesmo tendo NGA. Ajuste só de exibição
+  (`REGULAMENTO_SERVICO_TYPES` em `src/lib/acervoCoverage.js` ganhou `'Normas Gerais de Ação'`),
+  sem mudar o `type` do documento no JSON nem torná-lo candidato à curadoria verbatim da
+  minuta. Testado (`acervoCoverage.test.js`, 2 casos novos).
+- [x] **Acervo — MT/RN reclassificados de "Regulamento Geral" para "Regimento Interno"**
+  (30/07/2026, pedido do Tiago): os PDFs `Mato Grosso - Regulamento Geral.pdf` e
+  `Rio Grande do Norte - Regulamento Geral (Decreto 31.139-2021).pdf` foram renomeados p/
+  `...Regimento Interno.pdf` (bytes idênticos). O título formal de cada um é "Regulamento
+  Geral" (MT: Portaria nº 009/BM-8/2013; RN: Decreto nº 31.139/2021), mas o Tiago confirmou
+  que o CONTEÚDO é, de fato, o Regimento Interno de cada estado — confirmado por
+  `scripts/minuta_enrichment.py`, que já citava 9+ órgãos como "cf. CBMMT, RI, Art. N"
+  (Art. 152 = Ajudância-Geral 12 itens, Art. 129 = cinf 9 itens, + cg/cot/deei/cint/ccs/
+  corregedoria) extraídos verbatim deste mesmo documento — o acervo só não refletia isso
+  no campo `type`. **Resolve** a pendência "falta o RI do Mato Grosso" (12/25 itens de `ag`
+  + `cinf` citando `CBMMT, RI, Art. 152/129`): a fonte já está no acervo, corretamente
+  rotulada, e o excerto já estava capturado o tempo todo. `typeVerified: true` restaurado
+  para os dois em `build_states_data.py` (`mt`/`rn` de volta em `CONTENT_VERIFIED_STATES`).
+  Referências de arquivo atualizadas em `regulamento_enrichment.py`/`extrair_regulamentos.py`/
+  `sugerir_equivalencias.py` (MT continua `PRIMARY_SOURCE` de 11 dos 16 temas do Regulamento
+  Geral da minuta, RN de "pessoal-quadros" — mesmo documento, cobre estrutura E temas).
+  node 142/142 + rebuild completo (413 artigos/753 excertos da minuta intactos).
 - [x] **Registro de decisão em janela separada** (29/07/2026, pedido do Tiago): o
   formulário abria como overlay e cobria o card, escondendo a Questão e os excertos
   verbatim das candidatas — justamente o material de consulta para redigir a decisão.
