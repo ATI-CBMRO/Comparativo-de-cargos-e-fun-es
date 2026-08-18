@@ -73,6 +73,31 @@ const SECTIONS = [
     ),
   },
   {
+    id: 'acervo-publico', title: 'Acervo Legal — consulta pública',
+    body: (
+      <>
+        <p>
+          Existe um endereço <b>público</b> do Acervo, para divulgar a quem só precisa
+          consultar a legislação e não participa da elaboração das minutas:
+          <b> /acervo-publico</b>. Serve para ofício, site institucional ou QR code.
+        </p>
+        <ul>
+          <li>Não exige login e senha: a pessoa informa <b>nome, e-mail e instituição</b> e já entra.</li>
+          <li>Ela enxerga <b>apenas</b> o Acervo, a ficha de cada estado e a Busca. Nenhuma minuta,
+              nenhum subsídio, nenhuma tela de curadoria.</li>
+          <li>O navegador lembra o cadastro: quem volta não preenche de novo.</li>
+          <li>Quem entrou aparece em <b>Acessos</b>, na seção <b>Visitantes do acervo público</b> —
+              é registro de histórico, sem aprovação e sem bloqueio.</li>
+        </ul>
+        <div className="manual-callout">
+          <b>Por que não tem senha.</b> Os documentos do acervo são legislação pública de outros
+          Corpos de Bombeiros. O cadastro existe para o comando saber quem consulta, não para
+          restringir o acesso.
+        </div>
+      </>
+    ),
+  },
+  {
     id: 'subsidio', title: 'Subsídio',
     body: (
       <>
