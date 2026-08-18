@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../lib/auth.jsx'
 
 const MENSAGENS = {
@@ -10,7 +10,10 @@ const MENSAGENS = {
 
 export default function Cadastro() {
   const { cadastrar, naoAutorizado } = useAuth()
-  const [email, setEmail] = useState('')
+  const [searchParams] = useSearchParams()
+  // Link de convite (gerado em Acessos) já chega com o e-mail liberado — poupa
+  // digitação e evita erro de digitação num e-mail que precisa bater exato.
+  const [email, setEmail] = useState(() => searchParams.get('email') ?? '')
   const [senha, setSenha] = useState('')
   const [confirma, setConfirma] = useState('')
   const [erro, setErro] = useState('')
