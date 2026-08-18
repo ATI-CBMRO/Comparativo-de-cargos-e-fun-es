@@ -33,6 +33,8 @@ import Acessos from './pages/Acessos.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
 import EmConstrucao from './components/EmConstrucao.jsx'
+import MarcaPortal from './components/MarcaPortal.jsx'
+import AcervoPublico from './pages/AcervoPublico.jsx'
 import { useAuth } from './lib/auth.jsx'
 import { useScenario } from './context/ScenarioContext.jsx'
 import { rotaLiberadaNoEscopo } from './lib/escopoServico.js'
@@ -116,21 +118,7 @@ function Header({ navOpen, onToggleNav }) {
       >
         {navOpen ? <X size={22} /> : <Menu size={22} />}
       </button>
-      <img
-        className="app-header-emblem"
-        src="/BrasaoCBMRO2D-COMPLETO.png"
-        onError={e => { if (!e.currentTarget.dataset.fb) { e.currentTarget.dataset.fb = '1'; e.currentTarget.src = '/brasao-cbmro.svg' } }}
-        alt="Brasão do Corpo de Bombeiros Militar de Rondônia"
-      />
-      <div className="app-header-text">
-        <h1 className="app-header-title">
-          Portal de Legislação dos Corpos de Bombeiros Militares
-        </h1>
-        <div className="app-header-rule" />
-        <div className="app-header-sub">
-          Corpo de Bombeiros Militar de Rondônia · CBMRO
-        </div>
-      </div>
+      <MarcaPortal />
       <HeaderUserBox />
     </header>
   )
@@ -313,6 +301,9 @@ function LoggedOutRoutes() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/solicitar-acesso" element={<SolicitarAcesso />} />
+      {/* Acervo público: única porta que responde sem login (spec 2026-08-18). Precisa
+          vir antes do catch-all abaixo, senão cai no redirecionamento para /login. */}
+      <Route path="/acervo-publico/*" element={<AcervoPublico />} />
       <Route path="*" element={<Navigate to="/login" replace state={{ from }} />} />
     </Routes>
   )
@@ -385,6 +376,8 @@ export default function App() {
           <Route path="/minuta/comparar" element={<TrilhaRoute><MinutaRIComparator /></TrilhaRoute>} />
           <Route path="/minuta/comparativo-ri" element={<TrilhaRoute><RIComparator /></TrilhaRoute>} />
           <Route path="/regulamento/comparar" element={<TrilhaRoute><RegulamentoComparator /></TrilhaRoute>} />
+          {/* Membro que abre o link público vai para o acervo completo — ele já tem tudo. */}
+          <Route path="/acervo-publico/*" element={<Navigate to="/legislacoes" replace />} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
           {/* /cadastro não existe mais (fluxo manual removido) — link antigo cai aqui em
               vez de página em branco. */}
