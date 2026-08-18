@@ -25,17 +25,17 @@ export default function AcervoPublico() {
         <MarcaPortal />
         <div className="app-header-user">
           <span className="pub-selo">Consulta pública</span>
-          <Link className="app-header-user-exit" to="/login" title="Entrar como membro">
+          <Link className="app-header-user-enter" to="/login" title="Entrar como membro">
             <LogIn size={16} /> Sou membro
           </Link>
         </div>
       </header>
 
       <nav className="pub-nav">
-        <NavLink end to="/acervo-publico" className={({ isActive }) => `pub-nav-item${isActive ? ' active' : ''}`}>
+        <NavLink end to={BASE_PUBLICA} className={({ isActive }) => `pub-nav-item${isActive ? ' active' : ''}`}>
           <Library size={16} /> Acervo Legal
         </NavLink>
-        <NavLink to="/acervo-publico/busca" className={({ isActive }) => `pub-nav-item${isActive ? ' active' : ''}`}>
+        <NavLink to={`${BASE_PUBLICA}/busca`} className={({ isActive }) => `pub-nav-item${isActive ? ' active' : ''}`}>
           <SearchIcon size={16} /> Busca
         </NavLink>
         <span className="pub-nav-quem">Olá, {visitante.nome}</span>
@@ -51,7 +51,7 @@ export default function AcervoPublico() {
             <Route path="estados/:stateId" element={<StateDetail />} />
             <Route path="busca" element={<SearchPage />} />
             {/* Endereço fora do recorte dentro do prefixo: devolve ao acervo. */}
-            <Route path="*" element={<Navigate to="/acervo-publico" replace />} />
+            <Route path="*" element={<Navigate to={BASE_PUBLICA} replace />} />
           </Routes>
         </AcervoBaseProvider>
       </main>

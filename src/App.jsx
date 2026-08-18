@@ -301,8 +301,10 @@ function LoggedOutRoutes() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/solicitar-acesso" element={<SolicitarAcesso />} />
-      {/* Acervo público: única porta que responde sem login (spec 2026-08-18). Precisa
-          vir antes do catch-all abaixo, senão cai no redirecionamento para /login. */}
+      {/* Acervo público: única porta que responde sem login (spec 2026-08-18). Declarada
+          junto às demais rotas públicas; em v6 a ordem de declaração não importa — o
+          roteador rankeia por especificidade e o `*` sempre perde para um caminho mais
+          específico. */}
       <Route path="/acervo-publico/*" element={<AcervoPublico />} />
       <Route path="*" element={<Navigate to="/login" replace state={{ from }} />} />
     </Routes>

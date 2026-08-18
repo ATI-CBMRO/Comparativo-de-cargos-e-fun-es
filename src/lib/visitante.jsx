@@ -5,7 +5,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { signInAnonymously, onAuthStateChanged } from 'firebase/auth'
 import { auth } from './firebase.js'
-import { registrarVisitante } from './visitantesData.js'
+import { registrarVisitante, marcarRetorno } from './visitantesData.js'
 import {
   normalizarVisitante, lerVisitanteLocal, gravarVisitanteLocal, limparVisitanteLocal,
 } from './visitante.js'
@@ -27,11 +27,16 @@ export function VisitanteProvider({ children }) {
       const local = lerVisitanteLocal(globalThis.localStorage)
       if (fbUser?.isAnonymous && local && local.uid === fbUser.uid) {
         setVisitante(local)
+        marcarRetorno(fbUser.uid).catch((e) => console.error('Não foi possível atualizar o último acesso:', e))
       } else {
         if (local) limparVisitanteLocal(globalThis.localStorage)
         setVisitante(null)
       }
       setCarregando(false)
+    }, (e) => {
+      console.error('Erro ao verificar sessão do visitante:', e)
+      setCarregando(false)
+      setErro('Não foi possível verificar seu acesso agora. Recarregue a página.')
     })
     return unsub
   }, [])

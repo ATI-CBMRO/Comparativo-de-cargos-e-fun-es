@@ -2,7 +2,7 @@
 // documento identificado pelo uid da sessão ANÔNIMA — não há e-mail autenticado aqui, e
 // por isso este registro nunca se confunde com `members`.
 import {
-  collection, doc, setDoc, onSnapshot, query, orderBy, serverTimestamp,
+  collection, doc, setDoc, updateDoc, onSnapshot, query, orderBy, serverTimestamp,
 } from 'firebase/firestore'
 import { db } from './firebase.js'
 
@@ -17,6 +17,17 @@ export async function registrarVisitante({ uid, nome, email, instituicao, primei
     ...(primeiraVez ? { criadoEm: serverTimestamp() } : {}),
     ultimoAcesso: serverTimestamp(),
   }, { merge: true })
+}
+
+// Toque de "ainda ativo": chamado quando o visitante volta com o localStorage intacto
+// (sessão reconhecida sem precisar preencher o formulário de novo). Grava só ultimoAcesso —
+// sem isto a coluna "Último acesso" do admin (Acessos.jsx) ficaria congelada na data do
+// cadastro para sempre, e a ordenação por recência (subscribeVisitantes) viraria ordenação
+// por data de cadastro. Passa na regra do Firestore mesmo sem reenviar nome/email/instituicao:
+// em update/merge, request.resource.data é o documento MESCLADO (campos antigos preservados),
+// então uid/nome/email/instituicao continuam presentes e hasOnly não quebra.
+export async function marcarRetorno(uid) {
+  await updateDoc(doc(db, COL, uid), { ultimoAcesso: serverTimestamp() })
 }
 
 export function subscribeVisitantes(onChange, onError) {
