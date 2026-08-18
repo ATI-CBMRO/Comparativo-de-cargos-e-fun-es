@@ -404,12 +404,6 @@ convite; `/cadastro` foi removido, link antigo só redireciona). `GuardaDeEscopo
 bloqueia navegação fora do recorte por URL direta para quem tem escopo (`NAV_ESCOPO` restringe
 o menu).
 
-**Ver referências** (23/07/2026): botão retrátil "Ver referências (N)" no cabeçalho do
-popup de Revisão (`RevisaoModal.jsx`) mostra o Bloco D (excertos verbatim de outros
-estados) do capítulo/órgão do dispositivo aberto, via `AlternativesPanel.jsx` — o mesmo
-componente compartilhado com a Conferência linear (extraído de `ConferenciaLinear.jsx`
-sem alterar aquela tela). Desabilitado quando não há referências (N=0).
-
 **Terceiro perfil — acervo público (2026-08-18, spec `2026-08-18-acervo-publico-visitante-design.md`):**
 `/acervo-publico` responde **sem login**, fora do portal autenticado. O visitante preenche um
 cadastro básico (nome, e-mail, instituição), entra por **sessão anônima do Firebase** e enxerga
@@ -423,6 +417,12 @@ então a curadoria segue fechada ao visitante pelo BANCO). Lógica pura testada 
 `src/lib/visitante.js`. Atenção ao `voltarParaEstados()`: no visitante vai para
 `/acervo-publico` e **não** para `/estados`, que está fora do recorte.
 Exige o provedor **Anônimo** habilitado no console do Firebase (ver `docs/FIREBASE_SETUP.md`).
+
+**Ver referências** (23/07/2026): botão retrátil "Ver referências (N)" no cabeçalho do
+popup de Revisão (`RevisaoModal.jsx`) mostra o Bloco D (excertos verbatim de outros
+estados) do capítulo/órgão do dispositivo aberto, via `AlternativesPanel.jsx` — o mesmo
+componente compartilhado com a Conferência linear (extraído de `ConferenciaLinear.jsx`
+sem alterar aquela tela). Desabilitado quando não há referências (N=0).
 
 **Auth:** `src/lib/firebase.js` (Auth+Firestore de `import.meta.env.VITE_FIREBASE_*`);
 `src/lib/auth.jsx` (`AuthProvider`/`useAuth`) autoriza por **e-mail** (`members/{email}`,
