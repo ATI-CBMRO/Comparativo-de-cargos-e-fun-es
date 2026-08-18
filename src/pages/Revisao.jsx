@@ -55,6 +55,19 @@ export default function Revisao({ initialDoc, escopo } = {}) {
   // que sai a contagem do que ficou de fora, para a nota de escopo. Sem escopo, é no-op.
   const dataEscopo = useMemo(() => filtrarEstruturaPorEscopo(data, escopo), [data, escopo])
 
+  // editIds que existem na estrutura ATUAL (documento COMPLETO, não `dataEscopo`): um
+  // artigo removido é removido em qualquer visão, mas um artigo só fora do recorte por
+  // escopo/órgão continua existindo no documento e deve continuar contando na visão do
+  // admin. Usado por `countByChapter` para não contar sugestões órfãs (Finding 3, revisão
+  // final 2026-08-18) — sugestão sobre artigo removido não deve inflar o trilho de
+  // capítulos, porque o leitor não consegue abrir o dispositivo.
+  const editIdsValidos = useMemo(() => {
+    if (!data) return undefined
+    const s = new Set()
+    for (const c of data.chapters ?? []) for (const a of c.articles ?? []) s.add(a.editId)
+    return s
+  }, [data])
+
   const alternativesAberto = useMemo(() => {
     if (!aberto || !dataEscopo) return {}
     const { editId } = parseDispositivoId(aberto.id)
@@ -137,8 +150,8 @@ export default function Revisao({ initialDoc, escopo } = {}) {
 
   // Sugestões por capítulo, separadas em abertas × resolvidas (pelo status do texto final).
   const chapterCounts = useMemo(
-    () => countByChapter(suggestionsForDoc, finalsForDoc, parseDispositivoId, chapterIdOf),
-    [suggestionsForDoc, finalsForDoc],
+    () => countByChapter(suggestionsForDoc, finalsForDoc, parseDispositivoId, chapterIdOf, editIdsValidos),
+    [suggestionsForDoc, finalsForDoc, editIdsValidos],
   )
 
   const [activeChapterId, setActiveChapterId] = useState(null)

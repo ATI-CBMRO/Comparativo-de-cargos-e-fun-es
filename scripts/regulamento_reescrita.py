@@ -1314,8 +1314,8 @@ ARTIGOS_PROPRIOS = {
                 'II - subscrever, para encaminhamento ao Coordenador de Atividades '
                 'Técnicas, os estudos e os pareceres técnicos produzidos pela Seção;',
                 'III - zelar pelo cumprimento, pela Seção, das competências técnicas '
-                'previstas no Cap. II — Das Seções da Coordenadoria, do capítulo Da '
-                'Segurança Contra Incêndio e Pânico deste Regulamento.',
+                'previstas no capítulo Da Segurança Contra Incêndio e Pânico deste '
+                'Regulamento.',
             ],
             'fundamento': 'LOB, Art. 18, § 1º, IV (red. Lei nº 4.303/2018); Decreto nº '
                           '21.425/2016, Art. 13 — competência de chefia da Seção, sem '
@@ -1332,8 +1332,8 @@ ARTIGOS_PROPRIOS = {
                 'Fiscalização e Suporte Técnico, coordenando as ações de fiscalização das '
                 'Diretorias de Atividades Técnicas;',
                 'II - acompanhar, no âmbito da Seção, o cumprimento das competências '
-                'técnicas previstas no Cap. II — Das Seções da Coordenadoria, do capítulo '
-                'Da Segurança Contra Incêndio e Pânico deste Regulamento;',
+                'técnicas previstas no capítulo Da Segurança Contra Incêndio e Pânico '
+                'deste Regulamento;',
                 'III - submeter ao Coordenador de Atividades Técnicas os processos '
                 'administrativos que exijam decisão em nível superior ao da Seção.',
             ],
@@ -1406,9 +1406,8 @@ ARTIGOS_PROPRIOS = {
             'caput': 'Compete ao Chefe da Seção de Atividades Técnicas:',
             'dispositivos': [
                 'I - dirigir, no âmbito do respectivo Subgrupamento de Bombeiro Militar, a '
-                'Seção no cumprimento das competências técnicas previstas no Cap. V — Das '
-                'Seções de Atividades Técnicas, do capítulo Da Segurança Contra Incêndio e '
-                'Pânico deste Regulamento;',
+                'Seção no cumprimento das competências técnicas previstas no capítulo Da '
+                'Segurança Contra Incêndio e Pânico deste Regulamento;',
                 'II - observar, no exercício de suas atribuições, a orientação técnica da '
                 'Diretoria de Atividades Técnicas a que a Seção se vincula;',
                 'III - submeter à Diretoria de Atividades Técnicas os casos que exijam '
@@ -1478,8 +1477,14 @@ SUBSTITUIR_TERMOS = {
         # sugestões dos usuários no Firestore: estes 3 artigos não continham "Supervisor
         # de Dia" e por isso escaparam do levantamento original da Task 4.
         'se-art-26': [('Seção de Recursos Humanos', 'Seção de Pessoal')],
-        'se-art-30': [('Seção de Recursos Humanos', 'Seção de Pessoal')],
-        'se-art-37': [('Seção de Recursos Humanos', 'Seção de Pessoal')],
+        # Resíduo do de-para acima: o qualificador da unidade ficou "da DO" (sigla da
+        # Diretoria de Operações, de Sergipe) — o CBMRO não tem DO; o referente correto é
+        # o Comando Operacional de Bombeiros (achado no Finding 2 da revisão final,
+        # 2026-08-18).
+        'se-art-30': [('Seção de Recursos Humanos', 'Seção de Pessoal'),
+                      ('da DO', 'do Comando Operacional de Bombeiros')],
+        'se-art-37': [('Seção de Recursos Humanos', 'Seção de Pessoal'),
+                      ('da DO', 'do Comando Operacional de Bombeiros')],
         # Cadeias de escalonamento (se-art-114 e se-art-116): o "Supervisor de Dia" é elo
         # intermediário numa cadeia que não existe no CBMRO. Substituída pela cadeia real
         # de acionamento (definição do Ten. Tiago, 2026-08-18): Comandante de Subgrupamento
