@@ -911,24 +911,20 @@ SUBSTITUIR_TERMOS = {
              'Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto'),
         ],
         # se-art-116 tem 3 ocorrências do termo (o resumo do de-para só cita o parágrafo
-        # único) — as 3 seguem a mesma decisão da tabela, com a redação de cada trecho
-        # adaptada ao seu contexto: inciso II (liberação da equipe do SAMU), § 3º (dever de
-        # informar a situação) e o parágrafo único (casos omissos, mesmo padrão do
-        # se-art-114).
+        # único). 2 dos 3 pares (inciso II e § 3º) são decisão pontual de um único agente,
+        # sem escalonamento condicional no original — recebem o swap simples, mesmo padrão
+        # de se-art-24/32/etc. Só o parágrafo único (casos omissos, com "devendo se
+        # necessário, acionar" já no original) recebe a cadeia de escalonamento, mesmo
+        # padrão de se-art-114.
         'se-art-116': [
             ('cabendo ao Supervisor a liberação da equipe para atendimento, após checagem '
              'dos dados junto ao SAMU da condição do paciente.',
-             'cabendo, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do '
-             'Grupamento e ao Comandante Operacional de Bombeiros a liberação da equipe '
-             'para atendimento, após checagem dos dados junto ao SAMU da condição do '
-             'paciente, acionando-se o Superior de Dia quando a ocorrência for de grande '
-             'vulto.'),
+             'cabendo ao Oficial de Dia a liberação da equipe para atendimento, após '
+             'checagem dos dados junto ao SAMU da condição do paciente.'),
             ('deve informar ao Supervisor a situação e passar ao SAMU a obrigação de '
              'contenção e transporte.',
-             'deve informar a situação, sucessivamente, ao Comandante do Subgrupamento, ao '
-             'Comandante do Grupamento e ao Comandante Operacional de Bombeiros, '
-             'acionando-se o Superior de Dia quando a ocorrência for de grande vulto, e '
-             'passar ao SAMU a obrigação de contenção e transporte.'),
+             'deve informar ao Oficial de Dia a situação e passar ao SAMU a obrigação de '
+             'contenção e transporte.'),
             ('Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, '
              'acionar o Superior de Dia ou o Comandante da OB M e/ou o Comandante '
              'Operacional de Bombeiros',
