@@ -117,6 +117,12 @@ REMOVER_ARTIGOS = {
                      '(CIOP) — função do Despachador, já regulada pela NGA-CIOP-001/2026',
         'se-art-49': 'regras internas do serviço de despachante ao Central Integrada de '
                      'Operações (CIOP) — idem',
+        # Task 6 (2026-08-18): regras próprias de entrevista à imprensa importadas de
+        # Sergipe — matéria que Rondônia já regula por norma própria (Resolução nº
+        # 121/2022/CBM-CP). Ver ARTIGOS_PROPRIOS['servico-operacional'] abaixo.
+        'se-art-113': 'regras próprias de entrevista importadas de Sergipe — matéria da '
+                      'Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social), '
+                      'para a qual o Regulamento agora remete',
     },
 }
 
@@ -193,6 +199,8 @@ _DEC = 'CBMRO, Decreto nº 21.425/2016'
 _NGA = 'NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — ' \
        'SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação ' \
        'institucional)'
+_RES121 = 'CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — ' \
+          'D-05-BM), de 09 de dezembro de 2022'
 
 ARTIGOS_PROPRIOS = {
     'seguranca-contra-incendio': [
@@ -936,6 +944,34 @@ ARTIGOS_PROPRIOS = {
             'fundamento': f'{_NGA}',
         },
     ],
+    # ── servico-operacional (2026-08-18) ─────────────────────────────────────────────
+    # O texto importado de Sergipe regulava entrevistas com regras próprias (quem concede,
+    # o que é vedado, uniforme), matéria que em Rondônia já tem norma: a Resolução nº
+    # 121/2022/CBM-CP aprova a Diretriz Geral de Comunicação Social (D-05-BM), fundada no
+    # art. 11 da própria Lei 2.204/2009. O Regulamento remete a ela em vez de concorrer
+    # com ela. O Manual de Relacionamento com a Mídia da DCS é citado como instrumento de
+    # aplicação, NÃO como fundamento: não tem número de ato nem data de aprovação.
+    'servico-operacional': [
+        {
+            'heading': 'Da prestação de informações à imprensa',
+            'caput': 'A prestação de informações à imprensa e o relacionamento com os '
+                     'meios de comunicação observarão a Diretriz Geral de Comunicação '
+                     'Social do Corpo de Bombeiros Militar do Estado de Rondônia e as '
+                     'orientações do Manual de Relacionamento com a Mídia editado pela '
+                     'Diretoria de Comunicação Social, publicados no sítio oficial da '
+                     'Corporação.',
+            'dispositivos': [
+                '§ 1º Compete à Diretoria de Comunicação Social coordenar o atendimento '
+                'à imprensa, podendo a informação sobre ocorrência em curso ser prestada '
+                'pelo militar que a comande, restrita aos aspectos técnicos do fato, '
+                'vedada a manifestação de caráter pessoal.',
+                '§ 2º As ocorrências de grande vulto ou de repercussão estadual terão o '
+                'atendimento à imprensa articulado com a Diretoria de Comunicação Social '
+                'e com o Superior de Dia.',
+            ],
+            'fundamento': f'{_RES121}; LOB, Art. 22',
+        },
+    ],
 }
 
 # ── (d) SUBSTITUIÇÃO DE TERMO POR ARTIGO ─────────────────────────────────────────────
@@ -950,8 +986,9 @@ ARTIGOS_PROPRIOS = {
 #
 # `se-art-113` fica DE FORA de propósito: o de-para aprovado manda o artigo inteiro
 # remeter à Resolução 121/2022 (matéria de mídia/imprensa) — isso é substituição
-# integral, trabalho da Task 6, não substituição de termo. Até lá o artigo continua com
-# "Supervisor de Dia".
+# integral, não substituição de termo. Resolvido pela Task 6 (2026-08-18) via
+# REMOVER_ARTIGOS + ARTIGOS_PROPRIOS['servico-operacional'] acima — o artigo saiu por
+# inteiro e "Supervisor de Dia" não aparece mais em nenhum dispositivo do documento.
 SUBSTITUIR_TERMOS = {
     'servico-operacional': {
         'se-art-24': [('Supervisor de Dia', 'Oficial de Dia')],

@@ -17375,39 +17375,6 @@
      "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
     },
     {
-     "id": "se-art-113",
-     "kind": "incisos",
-     "editId": "reg:servico-operacional/se-art-113",
-     "caput": "A prestação de informações à imprensa deverá ocorrer através da ASCOM ou de militares que se encontrarem no comando de ações/ operações ou ocorrências operacionais, devendo se restringir ao fato objeto da informação, sem quaisquer comentários adicionais, principalmente aqueles de caráter pessoal.",
-     "items": [
-      {
-       "text": "I. A construção da informação deverá conter as seguintes informações: a. Qual foi o fato ocorrido; b. Quantidade de efetivo e viaturas empregadas; c. Pessoas e órgãos envolvidos na ocorrência; d. Citar o momento do fato (dia, hora, período do dia); e. Local do fato (endereço da ocorrência); f. Horário de saída do quartel e de chegada do trem de socorro à ocorrência; g. Tempo de trabalho; h. Quantidade e tipo de vítima; i. Quem era e para onde transportou; j. Explicar o trabalho realizado pelo CBMRO na ocorrência;",
-       "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
-      },
-      {
-       "text": "II. O militar responsável por passar a informação à imprensa deverá colocar o CBMRO sempre à frente das operações e ocorrências, operacionalizando-se a presença da corporação através dos seus grupamentos e diretorias , seguindo o protocolo da ASCOM para concessão de entrevista.",
-       "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
-      },
-      {
-       "text": "III. A concessão de entrevistas relativas ao atendimento às ocorrências e operações deverão obedecer aos seguintes aspectos: a. Nas situações rotineiras, poderão ser concedidas pelo Comandante de Socorro ou Superior ou Supervisor de Dia e ou pelo militar envolvido diretamente na solução do fato ou ocorrência atendo-se, exclusivamente, aos aspectos técnicos profissionais, sendo vedada a opinião pessoal sobre: • Assuntos político-partidários, administrativos ou religiosos; • Órgãos, instituições ou entidades estranhas à Corporação; • Assuntos de competência do escalão superior; • Temas que possa estabelecer polêmicas com outras autoridades. b. Quando o assunto for complexo e, por suas circunstâncias, abrangência repercussão, for de interesse da população e da segurança de todo o Estado, será concedida através do Superior de Dia ou Assessoria de Comunicação do CBMRO e ou Comandante Operacional de Bombeiros do CBMRO. c. Em situações que se revestirem de características técnicas específicas ou de repercussão limitada à região onde ocorreu, serão concedidas pelas Diretorias e Comandos de Grupamentos respectivos que poderão, conforme o caso, autorizar sua concessão pelos comandos subordinados. d. Sempre que necessário, buscar-se-á assessoria técnica junto à Assessoria de Comunicação do CBMRO, principalmente quando houver necessidade de se uniformizar comportamentos na transmissão de dados e opiniões de interesse da Corporação. e. O militar responsável por conceder a entrevista deverá estar devidamente uniformizado, sem agregar acessórios que não fazem parte do uniforme bombeiro militar. Ex.: óculos de sol, celulares, etc. f. É vedada a concessão de entrevista, assim como a apresentação de militares na imprensa, que não estejam uniformizados e nem à frente da ocorrência ou da operação.",
-       "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
-      },
-      {
-       "text": "IV. Em situações de crise ocasionadas por acontecimentos inesperados que interfiram na rotina da organização produzindo algum tipo de ameaça à vida, à saúde, à segurança ou à imagem da Instituição as entrevistas deverão ser concedidas pelo Comandante Geral ou Sub Comandante Geral e ou Comandante Operacional de Bombeiros.",
-       "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
-      },
-      {
-       "text": "V. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia e ou o Comandante Operacional de Bombeiros. Folga em Ocorrência",
-       "source": "cf. CBMSE, RISD (atual. 2022), Art. 113"
-      }
-     ],
-     "source": "cf. CBMSE, RISD (atual. 2022), Art. 113",
-     "match": "exata",
-     "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
-     "adapted": true,
-     "original_caput": "A prestação de informações à imprensa deverá ocorrer através da ASCOM ou de militares que se encontrarem no comando de ações/ operações ou ocorrências operacionais, devendo se restringir ao fato objeto da informação, sem quaisquer comentários adicionais, principalmente aqueles de caráter pessoal."
-    },
-    {
      "id": "se-art-114",
      "kind": "incisos",
      "editId": "reg:servico-operacional/se-art-114",
@@ -17976,6 +17943,27 @@
      "source": "cf. CBMSE, RISD (atual. 2022), Art. 147",
      "match": "exata",
      "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+    },
+    {
+     "id": "ro-art-1",
+     "kind": "incisos",
+     "editId": "reg:servico-operacional/ro-art-1",
+     "caput": "A prestação de informações à imprensa e o relacionamento com os meios de comunicação observarão a Diretriz Geral de Comunicação Social do Corpo de Bombeiros Militar do Estado de Rondônia e as orientações do Manual de Relacionamento com a Mídia editado pela Diretoria de Comunicação Social, publicados no sítio oficial da Corporação.",
+     "items": [
+      {
+       "text": "§ 1º Compete à Diretoria de Comunicação Social coordenar o atendimento à imprensa, podendo a informação sobre ocorrência em curso ser prestada pelo militar que a comande, restrita aos aspectos técnicos do fato, vedada a manifestação de caráter pessoal.",
+       "source": "CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — D-05-BM), de 09 de dezembro de 2022; LOB, Art. 22"
+      },
+      {
+       "text": "§ 2º As ocorrências de grande vulto ou de repercussão estadual terão o atendimento à imprensa articulado com a Diretoria de Comunicação Social e com o Superior de Dia.",
+       "source": "CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — D-05-BM), de 09 de dezembro de 2022; LOB, Art. 22"
+      }
+     ],
+     "source": "CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — D-05-BM), de 09 de dezembro de 2022; LOB, Art. 22",
+     "match": "exata",
+     "heading": "Da prestação de informações à imprensa",
+     "autoral": true,
+     "fundamento": "CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — D-05-BM), de 09 de dezembro de 2022; LOB, Art. 22"
     }
    ],
    "alternatives": {
