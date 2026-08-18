@@ -6,6 +6,7 @@ import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
 import { chapterIdOf } from '../lib/minutaTargets.js'
 import { PARTE_HEADERS } from '../lib/regulamentoPartes.js'
+import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
 import { useScenario } from '../context/ScenarioContext'
 import { scenarioDbUrl } from '../lib/scenario.js'
 
@@ -35,7 +36,7 @@ function groupChapters(chapters) {
   return [...porParte.values()].sort((a, b) => (a.parte === 'geral' ? 0 : 1) - (b.parte === 'geral' ? 0 : 1))
 }
 
-export default function RegulamentoComparator() {
+export default function RegulamentoComparator({ escopo } = {}) {
   const { cenario } = useScenario()
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
@@ -46,12 +47,25 @@ export default function RegulamentoComparator() {
   useEffect(() => {
     setData(null)
     fetchJson(scenarioDbUrl(cenario, 'regulamento_structure.json'))
-      .then(d => { setData(d); setChapterId(d.chapters[0]?.id ?? null) })
+      .then(d => setData(d))
       .catch(() => setError(true))
   }, [cenario])
 
-  const groups = useMemo(() => (data ? groupChapters(data.chapters) : []), [data])
-  const chapter = useMemo(() => data?.chapters.find(c => c.id === chapterId) || null, [data, chapterId])
+  // Recorte por escopo (participante restrito ao Regulamento de Serviço) — mesmo filtro
+  // usado no documento principal (Revisao.jsx). Sem escopo, é no-op: devolve `data` intacto.
+  const dataEscopo = useMemo(() => filtrarEstruturaPorEscopo(data, escopo), [data, escopo])
+
+  // Seleciona o primeiro capítulo do recorte ao carregar/trocar de cenário, e também se
+  // o capítulo atual não pertencer mais ao recorte (troca de escopo).
+  useEffect(() => {
+    if (!dataEscopo) return
+    if (!chapterId || !dataEscopo.chapters.some(c => c.id === chapterId)) {
+      setChapterId(dataEscopo.chapters[0]?.id ?? null)
+    }
+  }, [dataEscopo]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const groups = useMemo(() => (dataEscopo ? groupChapters(dataEscopo.chapters) : []), [dataEscopo])
+  const chapter = useMemo(() => dataEscopo?.chapters.find(c => c.id === chapterId) || null, [dataEscopo, chapterId])
 
   const filteredGroups = useMemo(() => {
     if (!filter.trim()) return groups
@@ -70,7 +84,7 @@ export default function RegulamentoComparator() {
   // igual ao Wizard: numera a estrutura inteira e filtra o capítulo — o "Art. 37"
   // exibido aqui é o mesmo "Art. 37" da minuta. Como buildArticles não propaga os
   // campos extras da folha (match/source/adapted), reanexamos por editId.
-  const allArticles = useMemo(() => (data ? buildArticles(data) : []), [data])
+  const allArticles = useMemo(() => (dataEscopo ? buildArticles(dataEscopo) : []), [dataEscopo])
   const articles = useMemo(() => {
     if (!chapter) return []
     const metaPorEditId = new Map(
@@ -118,7 +132,7 @@ export default function RegulamentoComparator() {
     <>
       <div className="section-bar no-print">
         <div className="section-bar-label">Comparar Regulamento — CBMRO × demais estados</div>
-        <span className="section-bar-badge"><Scale size={13} color="var(--cbm-red-700)" />{data.chapters.length} capítulos</span>
+        <span className="section-bar-badge"><Scale size={13} color="var(--cbm-red-700)" />{dataEscopo.chapters.length} capítulos</span>
       </div>
 
       <div className="page-body">

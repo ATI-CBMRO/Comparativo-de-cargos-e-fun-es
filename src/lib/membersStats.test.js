@@ -18,6 +18,24 @@ test('situacaoMembro: ativo segue o status', () => {
   assert.equal(situacaoMembro({ ativo: true, status: 'convidado' }), 'convidado')
 })
 
+test('situacaoMembro: ativo=false com status pendente é "pendente", não "bloqueado"', () => {
+  assert.equal(situacaoMembro({ ativo: false, status: 'pendente' }), 'pendente')
+})
+
+test('situacaoMembro: ativo=false com status recusado continua "bloqueado"', () => {
+  assert.equal(situacaoMembro({ ativo: false, status: 'recusado' }), 'bloqueado')
+})
+
+test('contaStatus soma pendentes separado de bloqueados', () => {
+  const members = [
+    { ativo: false, status: 'pendente' },
+    { ativo: false, status: 'pendente' },
+    { ativo: false, status: 'recusado' },
+    { ativo: true, status: 'cadastrado' },
+  ]
+  assert.deepEqual(contaStatus(members), { total: 4, cadastrados: 1, convidados: 0, bloqueados: 1, pendentes: 2 })
+})
+
 test('contaStatus soma por situação', () => {
   const members = [
     { ativo: true, status: 'cadastrado' },
@@ -25,5 +43,5 @@ test('contaStatus soma por situação', () => {
     { ativo: true, status: 'convidado' },
     { ativo: false, status: 'cadastrado' },
   ]
-  assert.deepEqual(contaStatus(members), { total: 4, cadastrados: 2, convidados: 1, bloqueados: 1 })
+  assert.deepEqual(contaStatus(members), { total: 4, cadastrados: 2, convidados: 1, bloqueados: 1, pendentes: 0 })
 })

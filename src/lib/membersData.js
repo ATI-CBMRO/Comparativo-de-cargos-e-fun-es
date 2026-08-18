@@ -15,23 +15,6 @@ export function subscribeMembers(onChange, onError) {
   )
 }
 
-export async function addMember({ email, nome, role, escopo }, criadoPor) {
-  const id = normalizeEmail(email)
-  await setDoc(doc(db, COL, id), {
-    email: id,
-    nome: (nome ?? '').trim() || id,
-    role: role === 'admin' ? 'admin' : 'participante',
-    // Escopo só faz sentido para participante — admin nunca fica restrito.
-    escopo: role !== 'admin' && escopo === 'servico' ? 'servico' : null,
-    ativo: true,
-    status: 'convidado',
-    uid: null,
-    criadoEm: serverTimestamp(),
-    criadoPor: criadoPor ?? null,
-    ultimoLogin: null,
-  })
-}
-
 export async function setMemberRole(email, role) {
   await updateDoc(doc(db, COL, normalizeEmail(email)), {
     role: role === 'admin' ? 'admin' : 'participante',
@@ -52,4 +35,30 @@ export async function setMemberAtivo(email, ativo) {
 
 export async function removeMember(email) {
   await deleteDoc(doc(db, COL, normalizeEmail(email)))
+}
+
+// Autocadastro público (tela /solicitar-acesso): grava sempre travado em
+// ativo:false/status:'pendente'/role:'participante' — a regra do Firestore também trava
+// isso do lado do servidor; aqui é só o formato que o admin vai aprovar depois.
+export async function solicitarAcesso({ email, nome, nomeGuerra, cidade, comando, unidade, uid }) {
+  const id = normalizeEmail(email)
+  await setDoc(doc(db, COL, id), {
+    email: id,
+    nome: (nome ?? '').trim() || id,
+    nomeGuerra: (nomeGuerra ?? '').trim(),
+    cidade,
+    comando,
+    unidade,
+    role: 'participante',
+    ativo: false,
+    status: 'pendente',
+    uid,
+    criadoEm: serverTimestamp(),
+    criadoPor: null,
+    ultimoLogin: null,
+  })
+}
+
+export async function recusarSolicitacao(email) {
+  await updateDoc(doc(db, COL, normalizeEmail(email)), { status: 'recusado' })
 }
