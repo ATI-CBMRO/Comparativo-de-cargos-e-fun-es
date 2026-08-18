@@ -232,6 +232,36 @@
   qualquer reescrita/renumeração posterior dos capítulos.
 
 ## ✅ Concluído (mês atual)
+- [x] **Acessos — autocadastro público substitui o convite manual; escopo restrito por
+  padrão** (18/08/2026, 3 PRs mesclados e EM PRODUÇÃO — #23, #24, #25). Origem: queixa do
+  Tiago de acesso "só participante" mesmo já marcado Administrador — investigado e era sessão
+  de navegador (Firebase Auth persiste entre abas do mesmo Chrome), não bug. No processo,
+  achado real: `bdwandrio@gmail.com` tinha o portal inteiro liberado quando deveria ficar só
+  no Regulamento de Serviço — a tela Acessos não tinha como restringir participante por
+  escopo.
+  - **PR #23**: seletor de Alcance (Portal completo / Só Regulamento de Serviço) no convite e
+    por pessoa; botão "link de convite" (`/cadastro?email=...` pré-preenchido).
+  - **PR #24**: revivida a feature "Solicitação de Acesso Externo" (`/solicitar-acesso`,
+    cascata Cidade→Comando→Unidade com os 63 dados reais do CBMRO/Sistema ATI, aprovação do
+    admin) — construída em 13/08/2026 (8 tarefas, subagent-driven) e esquecida numa worktree
+    local, nunca enviada. Recolocada em cima da master, testada ponta a ponta (pedido →
+    aprovação → login). Depois, por decisão do Wândrio ("o sistema deixará de criar cadastro
+    de forma manual"), o convite manual (`Convidar pessoa`, `link de convite`, `/cadastro`,
+    `addMember`) foi **removido por inteiro** — autocadastro público é agora o único caminho
+    de entrada. Ganhou também a aba Subsídio (comparação com outros estados) recortada aos 7
+    temas do Regulamento de Serviço para quem tem esse escopo.
+  - **PR #25**: autocadastro passou a nascer com `escopo:'servico'` por padrão (antes vinha
+    com portal completo e o admin tinha que restringir na mão) — travado em código E na regra
+    do Firestore (`request.resource.data.escopo == 'servico'`, defesa em profundidade). Achado
+    e corrigido também: popup de discussão da Revisão (`.rev-modal-backdrop`) e modal de
+    registro de decisão (`.decm-overlay`) tinham `z-index` menor que a sidebar fixa — a
+    sidebar cobria a coluna esquerda dos dois; ambos subiram para `z-index: 199`.
+  - `firestore.rules` publicado 2× pelo Wândrio no console (autocadastro + campo escopo).
+    `npm test` 166/166 em cada PR, `npm run build` limpo, testado ao vivo (Playwright) em
+    cada etapa — screenshots antes/depois de cada mudança.
+  - **Pendência leve**: sobrou `teste.escopo.claude2@gmail.com` ("Claude Teste Escopo") em
+    Acessos — remoção automática falhou por instabilidade da ferramenta de teste com a caixa
+    de confirmação do navegador; falta 1 clique manual em "remover".
 - [x] **Acervo — RO: Regulamento de Segurança Contra Incêndio e Pânico ingerido** (13/08/2026,
   pedido do Tiago): `Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto
   21.425-2016).pdf` (Decreto nº 21.425/2016, alt. Decreto nº 24.357/2019, regulamenta a Lei

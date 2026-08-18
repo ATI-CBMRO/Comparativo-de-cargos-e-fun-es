@@ -387,12 +387,22 @@ Módulo independente: convidados fazem login e comentam a minuta dispositivo por
 Backend **Firebase** (Auth e-mail+senha + Firestore) consumido do frontend; IA por função
 serverless. Specs em `docs/superpowers/specs/` e `plans/`.
 
-**Rotas/telas:** `/login` (`Login.jsx`, com link "Primeiro acesso? Criar minha senha" →
-`/cadastro`) · `/cadastro` (`Cadastro.jsx`, autocadastro: o convidado cria a própria senha;
-autorizado só se o e-mail estiver em `members` com `ativo:true`) · `/revisao` (protegida,
-`Revisao.jsx` — aceita prop `initialDoc` 'ri'|'reg'; balões na margem + `RevisaoModal.jsx`)
-· `/acessos` (protegida, admin — `Acessos.jsx`: convidar por e-mail, papel, bloquear/liberar/
-remover, acompanhar último login).
+**Rotas/telas (reformulado 18/08/2026 — PRs #23-25):** não há mais convite manual por e-mail
+nem `/cadastro`; **autocadastro público é o único caminho de entrada**. `/login` (`Login.jsx`,
+link "Ainda não tem acesso? Solicitar acesso" → `/solicitar-acesso`) · `/solicitar-acesso`
+(`SolicitarAcesso.jsx` — nome, nome de guerra, cascata Cidade→Comando→Unidade com os 63 dados
+reais do CBMRO/Sistema ATI de `src/lib/unidadesCbmro.js`, e-mail/senha; grava `members/{email}`
+com `ativo:false`, `status:'pendente'`, `escopo:'servico'` — **nasce restrito ao Regulamento de
+Serviço por padrão**, admin decide depois se libera o portal completo) · `/revisao` (protegida,
+`Revisao.jsx` — aceita prop `initialDoc` 'ri'|'reg'; balões na margem + `RevisaoModal.jsx`) ·
+`/regulamento/servico` e `/regulamento/servico/subsidio` (protegidas, recorte de 7 temas via
+`filtrarEstruturaPorEscopo` em `escopoServico.js` — documento e comparador com outros estados)
+· `/acessos` (protegida, admin — `Acessos.jsx`: seção "Solicitações pendentes" (aprovar/
+recusar), papel, **alcance** (Portal completo / Só Regulamento de Serviço, `setMemberEscopo`),
+bloquear/liberar/remover, acompanhar último login — **não tem mais** botão de convidar/link de
+convite; `/cadastro` foi removido, link antigo só redireciona). `GuardaDeEscopo` em `App.jsx`
+bloqueia navegação fora do recorte por URL direta para quem tem escopo (`NAV_ESCOPO` restringe
+o menu).
 
 **Ver referências** (23/07/2026): botão retrátil "Ver referências (N)" no cabeçalho do
 popup de Revisão (`RevisaoModal.jsx`) mostra o Bloco D (excertos verbatim de outros
