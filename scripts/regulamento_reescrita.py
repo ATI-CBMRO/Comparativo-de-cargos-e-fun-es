@@ -73,6 +73,34 @@ REMOVER_ARTIGOS = {
     'atribuicoes-funcoes': {
         'mt-art-181': 'Chefe do Centro de Capacitação Física — órgão inexistente',
         'mt-art-182': 'Chefe Adjunto do Centro de Capacitação Física — idem',
+        'mt-art-230': 'competências do Chefe do Central Integrada de Operações (CIOP) — '
+                      'Direção da CIOP, matéria já regulada pela NGA-CIOP-001/2026 (ver '
+                      'cláusula de remissão em central-operacoes-193)',
+    },
+    # Resíduo de CIOP fora do capítulo próprio (Task 5, 2026-08-18): o capítulo
+    # central-operacoes-193 já reescreve a matéria sobre a NGA-CIOP-001/2026; estes
+    # artigos importados de MT têm a própria CIOP como sujeito (finalidade,
+    # competências, direção) — duplicariam o que a cláusula de remissão daquele
+    # capítulo já cobre. NÃO inclui mt-art-236 (competência do próprio Comando
+    # Operacional de Bombeiros que só MENCIONA a CIOP como instrumento) nem os
+    # artigos de servico-interno-dia (dever do comandante de guarnição de
+    # comunicar-se com a CIOP) — nenhum dos dois regula a CIOP em si, então ficam.
+    'competencias-apoio-assessoramento': {
+        'mt-art-228': 'finalidade/atribuições da própria Central Integrada de Operações '
+                      '(CIOP) — matéria da NGA-CIOP-001/2026, já regulada em '
+                      'central-operacoes-193',
+        'mt-art-229': 'competências da própria Central Integrada de Operações (CIOP) — idem',
+    },
+    'servico-operacional': {
+        # O serviço de Despachante ao CIOP (regime de escala, regras internas) é
+        # função/atribuição do próprio CIOP, regulada pela NGA-CIOP-001/2026 (Dos
+        # Despachadores). A função em si sai da lista-mestra do se-art-4 (ver
+        # REMOVER_INCISOS abaixo); estes dois artigos só existem para descrever o
+        # regime desse serviço, então saem inteiros junto.
+        'se-art-48': 'regime do serviço de Despachante ao Central Integrada de Operações '
+                     '(CIOP) — função do Despachador, já regulada pela NGA-CIOP-001/2026',
+        'se-art-49': 'regras internas do serviço de despachante ao Central Integrada de '
+                     'Operações (CIOP) — idem',
     },
 }
 
@@ -102,14 +130,38 @@ REMOVER_INCISOS = {
     'competencias-execucao': {
         'mt-art-237': ['Coordenadoria de Atendimento Pré-Hospitalar'],
     },
+    # Resíduo de CIOP fora do capítulo próprio (Task 5, 2026-08-18) — mesmo racional
+    # do bloco em REMOVER_ARTIGOS: o mt-art-219 lista TODA a constituição dos órgãos
+    # de apoio (Gabinetes + CIOP); só o ramo "2 -" (CIOP e sua estrutura interna:
+    # Chefia, SAdm, SCOp, NOB) é matéria da própria CIOP, já regulada pela
+    # NGA-CIOP-001/2026 ("organização" da CIOP, cláusula de remissão). O ramo "1 -"
+    # (Gabinetes do Comandante-Geral e do Subcomandante) continua válido e fica.
+    'competencias-apoio-assessoramento': {
+        'mt-art-219': [
+            '2 - Órgão de Apoio da Diretoria Operacional:',
+            '2.1 – Centro de Operações de Bombeiros - COB:',
+            '2.1.1 - Chefia do COB;',
+            '2.1.1.1 - Seção Administrativa - SAdm;',
+            '2.1.1.2 - Seção de Comunicações e Operações – SCOp;',
+            '2.1.1.3 - Núcleos de Operações de Bombeiros – NOB.',
+        ],
+    },
     'ensino-instrucao': {
         'mt-art-162': ['Coordenadoria de Seleção', 'Centro de Capacitação Física'],
     },
     'servico-operacional': {
         # A figura do Supervisor de Dia não existe no CBMRO: a lista-mestra das funções do
         # serviço diário já traz Superior de Dia (inciso I) e Oficial de Dia (inciso V). Ver
-        # de-para aprovado em docs/curadoria/depara-supervisor-de-dia.md.
-        'se-art-4': ['Supervisor de Dia'],
+        # de-para aprovado em docs/curadoria/depara-supervisor-de-dia.md. O Despachante ao
+        # CIOP (Task 5, 2026-08-18) sai pelo mesmo motivo do se-art-48/49 (REMOVER_ARTIGOS):
+        # é função do próprio CIOP, regulada pela NGA-CIOP-001/2026 (Dos Despachadores).
+        'se-art-4': ['Supervisor de Dia', 'Despachante ao Centro de Operações'],
+        # Os atendentes do CBMRO junto à CIOP são pessoal do próprio CIOP (Dos
+        # Atendentes, NGA-CIOP-001/2026) — o dever de contatar a Polícia em longa
+        # distância é atribuição do Atendente, não do comandante da guarnição; só o
+        # inciso sai, o artigo (protocolo SAMU/CBMRO para pacientes com transtorno
+        # mental) continua válido.
+        'se-art-116': ['atendentes do CBMSE junto ao Centro de Operações'],
     },
 }
 

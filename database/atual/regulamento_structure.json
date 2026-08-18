@@ -7996,37 +7996,15 @@
             {
               "text": "1.2.3 - Assistência.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
-            },
-            {
-              "text": "2 - Órgão de Apoio do Comando Operacional de Bombeiros:",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
-            },
-            {
-              "text": "2.1 – Central Integrada de Operações - CIOP:",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
-            },
-            {
-              "text": "2.1.1 - Chefia do COB;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
-            },
-            {
-              "text": "2.1.1.1 - Seção Administrativa - SAdm;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
-            },
-            {
-              "text": "2.1.1.2 - Seção de Comunicações e Operações – SCOp;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
-            },
-            {
-              "text": "2.1.1.3 - Núcleos de Operações de Bombeiros – NOB.",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
             }
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219",
           "match": "exata",
           "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
           "adapted": true,
-          "original_caput": "Os órgãos de apoio tem a seguinte constituição:"
+          "original_caput": "Os órgãos de apoio tem a seguinte constituição:",
+          "reindexed": true,
+          "incisos_removidos": 6
         },
         {
           "id": "mt-art-220",
@@ -8198,103 +8176,6 @@
           "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
           "adapted": true,
           "original_caput": "Compete a Assistência do Gabinete do Comandante-Geral Adjunto:"
-        },
-        {
-          "id": "mt-art-228",
-          "kind": "incisos",
-          "editId": "reg:atual:competencias-apoio-assessoramento/mt-art-228",
-          "caput": "O Central Integrada de Operações - CIOP incumbe-se da coordenação do atendimento emergencial das atividades operacionais da instituição, cabendo-lhe a Centralizar e gerenciar as informações decorrentes do atendimento emergencial, para subsidiar o planejamento, a tomada de decisões e a efetiva ação da instituição, contribuir para uma maior agilidade no atendimento ao cidadão com consequência para a melhoria da ordem pública e da defesa da coletividade, registrar, autorizar, controlar e acompanhar o atendimento das ocorrências emergenciais na área de atuação do Corpo de Bombeiros Militar.",
-          "items": [],
-          "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 228",
-          "match": "exata",
-          "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
-          "adapted": true,
-          "original_caput": "O Centro de Operações de Bombeiros - COB incumbe-se da coordenação do atendimento emergencial das atividades operacionais da instituição, cabendo-lhe a Centralizar e gerenciar as informações decorrentes do atendimento emergencial, para subsidiar o planejamento, a tomada de decisões e a efetiva ação da instituição, contribuir para uma maior agilidade no atendimento ao cidadão com consequência para a melhoria da ordem pública e da defesa da coletividade, registrar, autorizar, controlar e acompanhar o atendimento das ocorrências emergenciais na área de atuação do Corpo de Bombeiros Militar."
-        },
-        {
-          "id": "mt-art-229",
-          "kind": "incisos",
-          "editId": "reg:atual:competencias-apoio-assessoramento/mt-art-229",
-          "caput": "São competências do Central Integrada de Operações – CIOP:",
-          "items": [
-            {
-              "text": "I - coordenar o emprego da Força Operacional das OBM’s;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "II - cientificar, durante o horário de expediente, ocorrências de grande vulto ao Comandante-Geral do CBMRO;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "III - manter efetivo diário em condições de atender: sistema 193, telex, fax, rádio, CPD, entre outros;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "IV - manter atualizado o Mapa Força Operacional;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "V - cuidar da rotina diária do serviço, visando o máximo desempenho dos tramites administrativos, controle de recursos humanos e de material;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "VI - coordenar a coleta e a elaboração de dados sobre a situação operacional;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "VII - confeccionar os relatórios dos serviços operacionais encaminhando-os ao serviço de operação e instrução;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "VIII - alimentar e manter atualizado banco de dados;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "IX - acionar e manobrar os meios disponíveis para atender as situações emergenciais ou extraordinárias;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "X - coordenar e controlar atividades operacionais na Baixada Cuiabana;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XI - coordenar e controlar as operações especiais ou extraordinárias, observando a competência dos Comandantes de OBM subordinadas;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XII - controlar, através de registros imediatos e contínuos, as forças BM em presença na Baixada Cuiabana, incluindo todos os meios empenhados;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XIII - coordenar o emprego de reforços para situações que exijam;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XIV - fazer atendimento ao publico interno e externo, quando solicitado;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XV - integrar e disciplinar o funcionamento de todas as estações de rádio-fixas, móveis e portáteis, dos órgãos subordinados ao Comando do Corpo de Bombeiros Militar;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XVI - integrar e coordenar a atuação dos Comandantes de Guarnição das Unidades subordinadas, respeitadas as prerrogativas dos Comandantes;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XVII - manter atualizada continua e permanente, a Carta de Situação da Baixada Cuiabana;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            },
-            {
-              "text": "XVIII - operar outras frequências de radio não integrantes do Comando,mas ligadas ao órgão ou que venham a ser.",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229"
-            }
-          ],
-          "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 229",
-          "match": "exata",
-          "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
-          "adapted": true,
-          "original_caput": "São competências do Centro de Operações de Bombeiros – COB:"
         },
         {
           "id": "mt-art-231",
@@ -17248,10 +17129,6 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "VII. Despachante ao Central Integrada de Operações;",
-              "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
-            },
-            {
               "text": "VIII. Comandante de Guarnição;",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
@@ -17287,10 +17164,8 @@
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 4",
           "match": "exata",
           "heading": "RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais",
-          "adapted": true,
-          "original_caput": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
           "reindexed": true,
-          "incisos_removidos": 1
+          "incisos_removidos": 2
         },
         {
           "id": "se-art-23",
@@ -17659,40 +17534,6 @@
           "original_caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Operações"
         },
         {
-          "id": "se-art-48",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-48",
-          "caput": "O serviço de Despachante ao Central Integrada de Operações será realizado nas dependências deste, em regime de 12 (doze) horas.",
-          "items": [
-            {
-              "text": "Parágrafo único. O serviço de despachante ao Central Integrada de Operações será realizado em dupla por praças previamente escaladas pelo Gestor do CBMRO junto ao Central Integrada de Operações.",
-              "source": "cf. CBMSE, RISD (atual. 2022), Art. 48"
-            }
-          ],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 48",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
-          "adapted": true,
-          "original_caput": "O serviço de Despachante ao Centro de Operações será realizado nas dependências deste, em regime de 12 (doze) horas. 15/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários."
-        },
-        {
-          "id": "se-art-49",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-49",
-          "caput": "Todos os aspectos relacionados ao serviço de despachante ao Central Integrada de Operações deverão observar às regras internas elaboradas pelo Gestor do CBMRO junto ao Central Integrada de Operações, além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
-          "items": [
-            {
-              "text": "Parágrafo único. Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Gestor do CBMRO junto ao Central Integrada de Operações.",
-              "source": "cf. CBMSE, RISD (atual. 2022), Art. 49"
-            }
-          ],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 49",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
-          "adapted": true,
-          "original_caput": "Todos os aspectos relacionados ao serviço de despachante ao Centro de Operações deverão observar às regras internas elaboradas pelo Gestor do CBMSE junto ao Centro de Operações, além daquelas previstas no RISG/EB quando essas funções forem equiparadas."
-        },
-        {
           "id": "se-art-50",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-50",
@@ -17827,10 +17668,6 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "III. Em se tratando de longas distâncias os atendentes do CBMRO junto ao Central Integrada de Operações deverão entrar em contato com a Organização Policial (Civil ou Militar) do local para se certificar da real necessidade de deslocamento da guarnição.",
-              "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
-            },
-            {
               "text": "§ 1º Diante do exposto acima, fica estabelecido que o CBMRO somente atuará , de forma integrada com o SAMU, nas ocorrências onde o paciente com transtorno mental estiver proporcionando risco a si mesmo ou ao patrimônio público ou privado sem uso de arma, tais como: tentativa de autolesão, danos ao patrimônio e ou encontrar-se em local de difícil acesso, por exemplo, em bueiros, canais, caixas d’água, valas, torres, em cima de edificações, etc.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
@@ -17851,7 +17688,9 @@
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
-          "original_caput": "O Comando do CBMSE, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Sergipe determina que:"
+          "original_caput": "O Comando do CBMSE, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Sergipe determina que:",
+          "reindexed": true,
+          "incisos_removidos": 1
         },
         {
           "id": "se-art-117",
@@ -21357,55 +21196,6 @@
           "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
           "adapted": true,
           "original_caput": "Compete ao Chefe de Gabinete do Comandante- Geral Adjunto:"
-        },
-        {
-          "id": "mt-art-230",
-          "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/mt-art-230",
-          "caput": "Compete ao Chefe do Central Integrada de Operações:",
-          "items": [
-            {
-              "text": "I - responder perante do Comandante-Geral pelas atividades desenvolvidas pelo Centro;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "II - providenciar e manter o apoio e contatos necessários ao perfeito funcionamento do Centro, visando ao principio da continuidade do sistema e das operações;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "III - zelar pela instrução, profissionalização e disciplina do pessoal sob sua chefia;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "IV - baixar normas e ordens para o aperfeiçoamento das atividades fiscalizando e controlando o cumprimento das diretrizes e ordens pertinentes ao COB;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "V - assumir a coordenação de operações especiais, extraordinárias e/ou emergenciais que pelas circunstancias forem consideradas de grande vulto, dentro de sua área de competência;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "VI - assessorar o Comandante-Geral nos assuntos pertinente ao COB;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "VII - acompanhar o controle exercido pelo COB através de registros imediatos e contínuos das forças em presença nos serviços de prevenção, combate a incêndio, busca e salvamento e resgate na região metropolitana de Porto Velho, de forma a estar em condições de prestar informações sobre os meios empenhados na atividade operacional;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "VIII - providenciar quanto à solução dos expedientes administrativos relativos ao COB;",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            },
-            {
-              "text": "IX - perseguir, propor e promover, na esfera da sua Chefia, o constante aprimoramento dos serviços prestados pelo Centro.",
-              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230"
-            }
-          ],
-          "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 230",
-          "match": "exata",
-          "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
-          "adapted": true,
-          "original_caput": "Compete ao Chefe do Centro de Operações de Bombeiros:"
         },
         {
           "id": "mt-art-238",
