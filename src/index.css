@@ -3151,3 +3151,81 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .nota-escopo-ico { flex: 0 0 auto; margin-top: 2px; color: var(--cbm-red-700); }
 .nota-escopo-titulo { font-weight: 700; color: var(--cbm-red-700); }
 .nota-escopo-aviso { font-style: italic; opacity: .85; }
+
+/* =========================================================
+   Popup "Antes de começar" — LOB × Regimento Interno × Regulamento
+   z-index 199: mesmo padrão do .rev-modal-backdrop/.decm-overlay —
+   abaixo de 100 a sidebar fixa cobre a coluna esquerda do modal.
+   ========================================================= */
+.gdoc-overlay {
+  position: fixed; inset: 0; background: rgba(10,16,40,.5);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 199; padding: 20px;
+}
+.gdoc-modal {
+  position: relative;
+  width: 100%; max-width: 1040px; max-height: 90vh; overflow-y: auto;
+  background: var(--bg-modal, #fff); border-radius: 14px;
+  padding: 32px clamp(20px, 4vw, 40px) 28px;
+  box-shadow: 0 24px 64px rgba(10,16,40,.35);
+}
+.gdoc-close {
+  position: absolute; top: 16px; right: 16px;
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--gray-300, #d3dae5); background: var(--gray-50, #f8fafc);
+  color: var(--text-secondary, #48526b); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.gdoc-close:hover { background: var(--gray-100, #f1f5f9); }
+.gdoc-head { text-align: center; max-width: 62ch; margin: 0 auto 26px; }
+.gdoc-eyebrow {
+  display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--cbm-gold-500, #e69500); font-weight: 700; margin-bottom: 10px;
+}
+.gdoc-head h2 { margin: 0 0 10px; font-size: 1.5rem; color: var(--text-primary, #16203a); }
+.gdoc-head p { margin: 0; color: var(--text-secondary, #48526b); font-size: .98rem; line-height: 1.5; }
+
+.gdoc-cards { display: grid; grid-template-columns: 0.9fr 0.9fr 1.25fr; gap: 22px; align-items: start; }
+@media (max-width: 860px) { .gdoc-cards { grid-template-columns: 1fr; } }
+
+.gdoc-card {
+  background: var(--bg-surface, #f5f7fa); border: 1px solid var(--gray-200, #e6ebf2);
+  border-radius: 10px; padding: 20px; position: relative;
+}
+.gdoc-card[data-k="lob"] h3, .gdoc-card[data-k="lob"] .gdoc-q { color: var(--cbm-red-700); }
+.gdoc-card[data-k="ri"] h3, .gdoc-card[data-k="ri"] .gdoc-q { color: var(--navy-600); }
+.gdoc-card[data-k="reg"] h3, .gdoc-card[data-k="reg"] .gdoc-q { color: var(--accent-green); }
+.gdoc-doc-eyebrow {
+  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--text-secondary, #48526b); margin-bottom: 6px;
+}
+.gdoc-card h3 { margin: 0 0 10px; font-size: 1.02rem; }
+.gdoc-q { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 1rem; margin-bottom: 10px; line-height: 1.35; }
+.gdoc-card p { margin: 0 0 14px; font-size: .87rem; line-height: 1.5; color: var(--text-secondary, #48526b); }
+.gdoc-field { font-size: .8rem; color: var(--text-secondary, #48526b); margin-bottom: 6px; }
+.gdoc-field span { display: block; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--cbm-gold-500, #e69500); margin-bottom: 2px; }
+
+.gdoc-card.gdoc-current {
+  border: 3px solid var(--accent-green);
+  box-shadow: 0 22px 48px -14px rgba(22,163,74,.4);
+  margin-top: -14px;
+  overflow: visible;
+}
+.gdoc-card.gdoc-current h3 { font-size: 1.16rem; }
+.gdoc-card.gdoc-current .gdoc-q { font-size: 1.08rem; }
+.gdoc-card.gdoc-current p { font-size: .92rem; color: var(--text-primary, #16203a); }
+.gdoc-badge {
+  position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 6px; white-space: nowrap;
+  background: var(--accent-green); color: #fff;
+  border-radius: 999px; padding: 7px 14px; font-size: .72rem; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase;
+  box-shadow: 0 6px 16px rgba(22,163,74,.4);
+}
+
+.gdoc-foot { display: flex; justify-content: center; margin-top: 24px; }
+.gdoc-ok {
+  background: var(--cbm-red-700); color: #fff; border: none; border-radius: 8px;
+  padding: 12px 28px; font-size: .95rem; font-weight: 700; cursor: pointer;
+}
+.gdoc-ok:hover { background: var(--cbm-red-800); }
