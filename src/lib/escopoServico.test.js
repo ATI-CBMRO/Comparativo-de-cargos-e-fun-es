@@ -127,3 +127,58 @@ test('prefixo parecido não libera por engano', () => {
   assert.equal(rotaLiberadaNoEscopo('/manualzinho', 'servico'), false)
   assert.equal(rotaLiberadaNoEscopo('/regulamento/servicos', 'servico'), false)
 })
+
+// --- Filtro por ARTIGO dentro do capítulo (Capítulo V misto, 2026-08-18) ---
+// O capítulo das Atribuições das Funções passa a conter dois níveis de curadoria: os
+// artigos de COB/CAT (reescritos sobre a LOB de RO) e os demais órgãos (ainda transplante
+// de MT, que só o documento completo mostra).
+const comCapituloMisto = () => ({
+  title: 'Regulamento Geral',
+  chapters: [
+    { id: 'reg:atual:disposicoes-preliminares', parte: 'geral', articles: [{ editId: 'a1' }] },
+    {
+      id: 'reg:atual:atribuicoes-funcoes',
+      parte: 'servico',
+      articles: [
+        { editId: 'cob-1', orgao: 'cob' },
+        { editId: 'mt-art-62' },              // sem tag: órgão fora do escopo
+        { editId: 'cat-1', orgao: 'cat' },
+        { editId: 'mt-art-63', orgao: 'emg' }, // tag de órgão fora do escopo
+      ],
+    },
+    { id: 'reg:atual:disposicoes-finais', parte: 'geral', articles: [{ editId: 'z1' }] },
+  ],
+})
+
+test('no capítulo misto, mantém só os artigos de COB e CAT', () => {
+  const r = filtrarEstruturaPorEscopo(comCapituloMisto(), 'servico')
+  const cap = r.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  assert.deepEqual(cap.articles.map(a => a.editId), ['cob-1', 'cat-1'])
+})
+
+test('capítulo NÃO listado para filtro de órgão mantém todos os artigos', () => {
+  const r = filtrarEstruturaPorEscopo(comCapituloMisto(), 'servico')
+  const prelim = r.chapters.find(c => temaDoCapitulo(c.id) === 'disposicoes-preliminares')
+  assert.equal(prelim.articles.length, 1, 'Preliminares não sofre filtro por órgão')
+})
+
+test('filtro por artigo não muta a estrutura original', () => {
+  const original = comCapituloMisto()
+  filtrarEstruturaPorEscopo(original, 'servico')
+  const cap = original.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  assert.equal(cap.articles.length, 4, 'a estrutura original não pode ser alterada')
+})
+
+test('sem escopo, o capítulo misto sai inteiro (visão do documento completo)', () => {
+  const original = comCapituloMisto()
+  assert.equal(filtrarEstruturaPorEscopo(original, null), original)
+})
+
+test('capítulo misto sem o campo articles não quebra o filtro', () => {
+  const semArtigos = comCapituloMisto()
+  const cap = semArtigos.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  delete cap.articles
+  const r = filtrarEstruturaPorEscopo(semArtigos, 'servico')
+  const capFiltrado = r.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  assert.equal(capFiltrado.articles, undefined)
+})

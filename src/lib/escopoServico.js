@@ -23,21 +23,49 @@ export const TEMAS_SERVICO = [
 
 export const ESCOPOS = { servico: TEMAS_SERVICO }
 
+// Capítulos MISTOS: contêm artigos de vários órgãos e, no recorte, só os do escopo devem
+// aparecer. Hoje só o das Atribuições das Funções — nele os artigos de COB/CAT foram
+// reescritos sobre a LOB de RO, e os dos demais órgãos seguem sendo o transplante de MT,
+// que pertence ao Regulamento Geral completo (decisão do Ten. Tiago, 2026-08-18).
+const TEMAS_COM_FILTRO_DE_ORGAO = new Set(['atribuicoes-funcoes'])
+
+// Órgãos que o recorte de serviço cobre: o serviço operacional é do COB, o serviço técnico
+// de segurança contra incêndio é da CAT.
+export const ORGAOS_NO_ESCOPO = { servico: ['cob', 'cat'] }
+
+// Artigo sem o campo `orgao` NÃO entra no recorte: a ausência de tag significa "órgão que
+// esta rodada de curadoria não cobriu". Fail-closed de propósito — deixar passar o que não
+// foi classificado é como o transplante de MT vazou para a pauta do participante.
+function filtrarArtigosPorOrgao(capitulo, orgaos) {
+  if (!Array.isArray(capitulo.articles)) return capitulo
+  return { ...capitulo, articles: capitulo.articles.filter(a => orgaos.includes(a?.orgao)) }
+}
+
 // O id do capítulo carrega o marcador de cenário ('reg:x' na futura, 'reg:atual:x' no
 // atual). Casar pelo id inteiro quebraria em um dos dois cenários.
 export function temaDoCapitulo(id) {
   return String(id ?? '').split(':').pop()
 }
 
-// Devolve a estrutura com os capítulos do escopo, NA ORDEM de TEMAS_SERVICO.
+// Devolve a estrutura com os capítulos do escopo, NA ORDEM de TEMAS_SERVICO, e — nos
+// capítulos mistos — só com os artigos dos órgãos do escopo.
 // Escopo nulo/desconhecido, ou estrutura sem chapters: devolve o que veio, intacto —
 // quem não tem escopo não é afetado por nada disto.
 export function filtrarEstruturaPorEscopo(structure, escopo) {
   const temas = ESCOPOS[escopo]
   if (!temas || !Array.isArray(structure?.chapters)) return structure
+  const orgaos = ORGAOS_NO_ESCOPO[escopo] ?? []
   const porTema = new Map()
   for (const c of structure.chapters) porTema.set(temaDoCapitulo(c.id), c)
-  const chapters = temas.map(t => porTema.get(t)).filter(Boolean)
+  const chapters = temas
+    .map(t => {
+      const capitulo = porTema.get(t)
+      if (!capitulo) return null
+      return TEMAS_COM_FILTRO_DE_ORGAO.has(t)
+        ? filtrarArtigosPorOrgao(capitulo, orgaos)
+        : capitulo
+    })
+    .filter(Boolean)
   return { ...structure, chapters }
 }
 
