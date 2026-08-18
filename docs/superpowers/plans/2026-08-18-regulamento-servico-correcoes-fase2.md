@@ -920,7 +920,8 @@ houver valor. Para os artigos autorais, aceitar uma chave `'orgao'` no dicionár
 
 Acrescentar a `ARTIGOS_PROPRIOS` a entrada `'atribuicoes-funcoes'`, com um artigo por
 função, todos com `'orgao': 'cob'`. As funções vêm da estrutura já validada em
-`organizacao-geral` (LOB Art. 35, §1º) e da cadeia do Art. 47:
+`organizacao-geral` (**LOB Art. 35, parágrafo único**, incisos I a IX — o artigo tem caput e
+parágrafo único, sem §§; conferido na fonte em 18/08) e da cadeia do Art. 47:
 
 1. Comandante Operacional de Bombeiros
 2. Adjunto do Comando Operacional de Bombeiros
