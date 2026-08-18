@@ -17232,10 +17232,6 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "II. Supervisor de Dia;",
-              "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
-            },
-            {
               "text": "III. Comandante de Área",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
@@ -17292,7 +17288,9 @@
           "match": "exata",
           "heading": "RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais",
           "adapted": true,
-          "original_caput": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:"
+          "original_caput": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+          "reindexed": true,
+          "incisos_removidos": 1
         },
         {
           "id": "se-art-23",
@@ -17343,10 +17341,10 @@
           "id": "se-art-24",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-24",
-          "caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Supervisor de Dia.",
+          "caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Oficial de Dia.",
           "items": [
             {
-              "text": "§1.º Ao final do serviço deverá apor seu visto no livro de registro de ocorrências do Supervisor de Dia.",
+              "text": "§1.º Ao final do serviço deverá apor seu visto no livro de registro de ocorrências do Oficial de Dia.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 24"
             },
             {
@@ -17459,7 +17457,7 @@
           "id": "se-art-32",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-32",
-          "caput": "O serviço de Supervisor de Dia será realizado em regime adequado de 24 (vinte e quatro) horas, podendo em casos excepcionais ser de 12 (doze) horas.",
+          "caput": "O serviço de Oficial de Dia será realizado em regime adequado de 24 (vinte e quatro) horas, podendo em casos excepcionais ser de 12 (doze) horas.",
           "items": [
             {
               "text": "Parágrafo único. Ao final do serviço deverá ser preenchido o livro de registro de ocorrências, o qual deverá constar o visto do Superior de Dia.",
@@ -17468,13 +17466,15 @@
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 32",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "O serviço de Supervisor de Dia será realizado em regime adequado de 24 (vinte e quatro) horas, podendo em casos excepcionais ser de 12 (doze) horas."
         },
         {
           "id": "se-art-33",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-33",
-          "caput": "A permuta de escala do Supervisor de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
+          "caput": "A permuta de escala do Oficial de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 33",
           "match": "exata",
@@ -17486,7 +17486,7 @@
           "id": "se-art-34",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-34",
-          "caput": "O serviço diário de Supervisor de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Recursos Humanos.",
+          "caput": "O serviço diário de Oficial de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Pessoal.",
           "items": [
             {
               "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
@@ -17503,7 +17503,7 @@
           "id": "se-art-35",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-35",
-          "caput": "Na publicação das escalas de Supervisor de Dia constarão o nome do oficial escalado e do seu eventual substituto (Reserva).",
+          "caput": "Na publicação das escalas de Oficial de Dia constarão o nome do oficial escalado e do seu eventual substituto (Reserva).",
           "items": [
             {
               "text": "Parágrafo único. A escalação do oficial substituto (Reserva) obedecerá ao mesmo regime da respectiva escala.",
@@ -17512,7 +17512,9 @@
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 35",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "Na publicação das escalas de Supervisor de Dia constarão o nome do oficial escalado e do seu eventual substituto (Reserva)."
         },
         {
           "id": "se-art-36",
@@ -17547,7 +17549,7 @@
           "id": "se-art-38",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-38",
-          "caput": "A área de atuação do Serviço de Supervisor de Dia ao CBMRO abrange todo o território estadual. Oficial de Dia",
+          "caput": "A área de atuação do Serviço de Superior de Dia ao CBMRO abrange todo o território estadual.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 38",
           "match": "exata",
@@ -17790,7 +17792,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 114"
             },
             {
-              "text": "VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS. Parágrafo Único. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia e ou o Comando Operacional.",
+              "text": "VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS. Parágrafo Único. Os casos omissos deverão ser solucionados pelo Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 114"
             }
           ],
@@ -17821,7 +17823,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "II. A equipe do SAMU deslocada para o atendimento local, verificando que há a possibilidade iminente de autoagressão pelo paciente em surto, poderá, acionar o Corpo de Bombeiros Militar de Rondônia, através do CIOSP, cabendo ao Supervisor a liberação da equipe para atendimento, após checagem dos dados junto ao SAMU da condição do paciente.",
+              "text": "II. A equipe do SAMU deslocada para o atendimento local, verificando que há a possibilidade iminente de autoagressão pelo paciente em surto, poderá, acionar o Corpo de Bombeiros Militar de Rondônia, através do CIOSP, cabendo, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros a liberação da equipe para atendimento, após checagem dos dados junto ao SAMU da condição do paciente, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
@@ -17837,11 +17839,11 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "§ 3º Caso a guarnição ao chegar ao local da ocorrência não identificar a situação do §1º, deste artigo, deve informar ao Supervisor a situação e passar ao SAMU a obrigação de contenção e transporte.",
+              "text": "§ 3º Caso a guarnição ao chegar ao local da ocorrência não identificar a situação do §1º, deste artigo, deve informar a situação, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto, e passar ao SAMU a obrigação de contenção e transporte.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia ou o Comandante da OB M e/ou o Comandante Operacional de Bombeiros.",
+              "text": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             }
           ],
@@ -18077,11 +18079,13 @@
           "id": "se-art-132",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-132",
-          "caput": "Torna-se obrigatório a presença do Supervisor de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
+          "caput": "Torna-se obrigatório a presença do Oficial de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 132",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "adapted": true,
+          "original_caput": "Torna-se obrigatório a presença do Supervisor de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais."
         },
         {
           "id": "se-art-133",
@@ -18305,11 +18309,13 @@
           "id": "se-art-145",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-145",
-          "caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Supervisor de Dia ou Cmt de Operações a qual deverá cumprir, exatamente, as tarefas e missões por este determinado.",
+          "caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Oficial de Dia ou Cmt de Operações a qual deverá cumprir, exatamente, as tarefas e missões por este determinado.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 145",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "adapted": true,
+          "original_caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Supervisor de Dia ou Cmt de Operações a qual deverá cumprir, exatamente, as tarefas e missões por este determinado."
         },
         {
           "id": "se-art-146",

@@ -105,6 +105,12 @@ REMOVER_INCISOS = {
     'ensino-instrucao': {
         'mt-art-162': ['Coordenadoria de Seleção', 'Centro de Capacitação Física'],
     },
+    'servico-operacional': {
+        # A figura do Supervisor de Dia não existe no CBMRO: a lista-mestra das funções do
+        # serviço diário já traz Superior de Dia (inciso I) e Oficial de Dia (inciso V). Ver
+        # de-para aprovado em docs/curadoria/depara-supervisor-de-dia.md.
+        'se-art-4': ['Supervisor de Dia'],
+    },
 }
 
 
@@ -862,4 +868,75 @@ ARTIGOS_PROPRIOS = {
             'fundamento': f'{_NGA}',
         },
     ],
+}
+
+# ── (d) SUBSTITUIÇÃO DE TERMO POR ARTIGO ─────────────────────────────────────────────
+# Diferente da tabela ADAPTATIONS (regulamento_enrichment.py), que troca um termo em TODO
+# o documento: aqui a mesma expressão vira coisas diferentes conforme o artigo, porque a
+# fonte (RISD de Sergipe) tem TRÊS figuras de escala e o CBMRO tem duas. Ver o de-para
+# aprovado em docs/curadoria/depara-supervisor-de-dia.md (aprovado pelo Ten. Tiago,
+# 2026-08-18, sem alterações).
+#
+# O casamento é por TEXTO, não por índice — mesma razão de REMOVER_INCISOS (armadilha
+# AR-03 do catálogo: índice posicional dessincroniza em silêncio quando a lista muda).
+#
+# `se-art-113` fica DE FORA de propósito: o de-para aprovado manda o artigo inteiro
+# remeter à Resolução 121/2022 (matéria de mídia/imprensa) — isso é substituição
+# integral, trabalho da Task 6, não substituição de termo. Até lá o artigo continua com
+# "Supervisor de Dia".
+SUBSTITUIR_TERMOS = {
+    'servico-operacional': {
+        'se-art-24': [('Supervisor de Dia', 'Oficial de Dia')],
+        'se-art-32': [('Supervisor de Dia', 'Oficial de Dia')],
+        'se-art-33': [('Supervisor de Dia', 'Oficial de Dia')],
+        'se-art-34': [('Supervisor de Dia', 'Oficial de Dia'),
+                      # O COB não tem "Seção de Recursos Humanos" — na LOB Art. 35,
+                      # parágrafo único, é "Seção de Pessoal". Corrigido junto (de-para).
+                      ('Seção de Recursos Humanos', 'Seção de Pessoal')],
+        'se-art-35': [('Supervisor de Dia', 'Oficial de Dia')],
+        'se-art-38': [('Supervisor de Dia', 'Superior de Dia'),
+                      # Resíduo de extração: o título da seção seguinte ("Oficial de Dia")
+                      # ficou grudado no fim do caput. Corrigido junto (de-para).
+                      ('estadual. Oficial de Dia', 'estadual.')],
+        # Cadeias de escalonamento (se-art-114 e se-art-116): o "Supervisor de Dia" é elo
+        # intermediário numa cadeia que não existe no CBMRO. Substituída pela cadeia real
+        # de acionamento (definição do Ten. Tiago, 2026-08-18): Comandante de Subgrupamento
+        # → Comandante de Grupamento → Comandante Operacional de Bombeiros → Superior de
+        # Dia (para ocorrência de grande vulto).
+        'se-art-114': [
+            ('Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, '
+             'acionar o Superior de Dia e ou o Comando Operacional',
+             'Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do '
+             'Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de '
+             'Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto'),
+        ],
+        # se-art-116 tem 3 ocorrências do termo (o resumo do de-para só cita o parágrafo
+        # único) — as 3 seguem a mesma decisão da tabela, com a redação de cada trecho
+        # adaptada ao seu contexto: inciso II (liberação da equipe do SAMU), § 3º (dever de
+        # informar a situação) e o parágrafo único (casos omissos, mesmo padrão do
+        # se-art-114).
+        'se-art-116': [
+            ('cabendo ao Supervisor a liberação da equipe para atendimento, após checagem '
+             'dos dados junto ao SAMU da condição do paciente.',
+             'cabendo, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do '
+             'Grupamento e ao Comandante Operacional de Bombeiros a liberação da equipe '
+             'para atendimento, após checagem dos dados junto ao SAMU da condição do '
+             'paciente, acionando-se o Superior de Dia quando a ocorrência for de grande '
+             'vulto.'),
+            ('deve informar ao Supervisor a situação e passar ao SAMU a obrigação de '
+             'contenção e transporte.',
+             'deve informar a situação, sucessivamente, ao Comandante do Subgrupamento, ao '
+             'Comandante do Grupamento e ao Comandante Operacional de Bombeiros, '
+             'acionando-se o Superior de Dia quando a ocorrência for de grande vulto, e '
+             'passar ao SAMU a obrigação de contenção e transporte.'),
+            ('Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, '
+             'acionar o Superior de Dia ou o Comandante da OB M e/ou o Comandante '
+             'Operacional de Bombeiros',
+             'Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do '
+             'Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de '
+             'Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto'),
+        ],
+        'se-art-132': [('Supervisor de Dia', 'Oficial de Dia')],
+        'se-art-145': [('Supervisor de Dia', 'Oficial de Dia')],
+    },
 }
