@@ -97,6 +97,8 @@ const NAV_ESCOPO = {
   servico: [
     { to: '/regulamento/servico', icon: BookMarked, label: 'Regulamento de Serviço', end: true },
     { to: '/regulamento/servico/subsidio', icon: GitCompare, label: 'Subsídio' },
+    { to: '/legislacoes', icon: Library, label: 'Acervo Legal' },
+    { to: '/organograma', icon: GitBranch, label: 'Organograma' },
     { to: '/manual', icon: BookOpen, label: 'Manual de uso' },
   ],
 }
