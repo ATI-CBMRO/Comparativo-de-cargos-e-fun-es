@@ -2,6 +2,24 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Regulamento Geral completo — Parte I (arts. 1-257) ainda é o transplante bruto de MT**
+  (achado 18/08/2026, ao levantar a 2ª rodada de curadoria do Regulamento de Serviço; o Ten.
+  Tiago determinou "fica para um segundo plano"). Na visão admin (16 capítulos), a Parte I
+  segue alinhada à estrutura do Regulamento do CBMMT / LOB futura, não à Lei 2.204/2009: só
+  2 dos 12 temas passaram pela camada de reescrita autoral (`organizacao-geral` e
+  `seguranca-contra-incendio`, em 13-14/08). Faltam `competencias-direcao` (96 arts.),
+  `competencias-apoio-assessoramento` (38), `competencias-execucao` (21),
+  `disciplina-correicao` (21), `ensino-instrucao` (22), `cerimonial-honras` (9),
+  `pessoal-quadros` (7), `uniformes-apresentacao` (1). Inclui também **reordenação dos
+  capítulos** da Parte I. A "Parte II" que aparece a partir do art. 258 é o recorte de
+  serviço, tratado na spec `2026-08-18-regulamento-servico-correcoes-fase2-design.md`.
+- [ ] **Decidir se `LEGISLAÇÃO CBMS/Manuais/` entra no `.gitignore`** (achado 18/08/2026):
+  a pasta guarda documentos de trabalho INTERNOS usados só como fonte de redação, fora do
+  Acervo Legal por determinação (NGA-CIOP em 14/08) — hoje está **não versionada**, o que
+  por acaso a mantém fora do build da Vercel. Mas `copyDirRecursive` (`vite.config.js`)
+  copia subpastas recursivamente para `dist/legislacao-pdf/`: um `git add -A` publicaria a
+  NGA (minuta com folha de aprovação em branco), o Manual de Mídia e o ATTS na web aberta.
+  Proteção acidental — tornar deliberada.
 - [ ] **Acervo — PDF `Piauí - Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022) [OCR].pdf`
   já está no repo mas nunca foi convertido/ingerido** (achado 30/07/2026, ao rodar
   `convert_to_markdown.py` para a pendência acima): o markdown chegou a ser gerado e depois foi

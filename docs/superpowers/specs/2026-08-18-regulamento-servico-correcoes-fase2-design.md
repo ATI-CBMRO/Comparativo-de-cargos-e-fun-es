@@ -37,11 +37,35 @@ transplante bruto de MT que ainda não passou pela camada de reescrita autoral
    substantivo, não find-replace.
 
 2. **Reordenar capítulos**: mover `atribuicoes-funcoes` para logo após
-   `disposicoes-preliminares` — no recorte (`TEMAS_SERVICO`) **e** no Regulamento Geral
-   completo (os 16 capítulos), já que não há razão para a ordem divergir entre as duas
-   apresentações do mesmo documento.
+   `disposicoes-preliminares` — no recorte (`TEMAS_SERVICO`, `src/lib/escopoServico.js`)
+   **e** no Regulamento Geral completo (os 16 capítulos, via `TEMA_PARTE`/ordenação em
+   `scripts/build_regulamento_structure.py`). Confirmado pelo Ten. Tiago em 18/08/2026: a
+   ordem não deve divergir entre as duas apresentações do mesmo documento.
 
-### Frente B — depende de documentos que o Ten. Tiago vai fornecer (caminho de pasta)
+   ⚠️ **Efeito colateral a tratar (AR-03):** reordenar capítulos **não** muda `editId`
+   (que é `reg:atual:<tema>/<artigo>`, sem índice posicional), então comentários e textos
+   finais no Firestore seguem apontando para o dispositivo certo. Mas a **numeração
+   exibida** dos artigos (`buildArticles`, contínua) muda para todo o documento — os
+   `dispositivoLabelSnapshot` das 71 sugestões existentes ("Art. 262" etc.) ficarão
+   defasados em relação ao número novo. O snapshot é só rótulo histórico, não endereço;
+   confirmar isso na implementação antes de aplicar, e mencionar na conferência das 71.
+
+### Frente B — documentos de apoio
+
+**Localização:** `LEGISLAÇÃO CBMS/Manuais/` (fornecida pelo Ten. Tiago em 18/08/2026).
+Pasta **não versionada** e fora do Acervo Legal por determinação — `convert_to_markdown.py`
+usa `os.listdir` (não recursivo), então os manuais não são ingeridos. Ver pendência em
+`.claude/PENDENCIAS.md` sobre tornar essa exclusão deliberada via `.gitignore`.
+
+**Avaliação de cada documento (extração conferida, 18/08/2026 — todos com texto
+selecionável, sem necessidade de OCR):**
+
+| Documento | Natureza | Serve como `fundamento`? |
+|---|---|---|
+| `NGA_CIOP_RONDONIA.pdf` (60 pág.) | Minuta de NGA, em validação | Sim, **com a ressalva já usada** em 14/08 (documento de trabalho) |
+| `diretriz-comunicacao-social (2).pdf` (23 pág.) | **Resolução nº 121/2022/CBM-CP**, de 09/12/2022, que aprova a Diretriz Geral de Comunicação Social (**D-05-BM**), fundada no art. 11 da Lei nº 2.204/2009 | **Sim, sem ressalva** — norma publicada, com número e data |
+| `manual-midia (1).pdf` (41 pág.) | Manual da DCS, autoria nominal, **sem** número de ato ou aprovação | Não como norma — citar como instrumento de aplicação da Resolução 121/2022 |
+| `ATTS.pdf` (70 pág.) | **Slide de instrução do CHOABM**, apresenta doutrina nacional; sem portaria/resolução que a adote no CBMRO | Não — ver decisão abaixo |
 
 3. **CIOP** — a NGA-CIOP-001/2026 já usada em 14/08 é a mesma; não é reescrita nova.
    Trabalho: **purgar** os resíduos de CIOP fora do capítulo `central-operacoes-193`
@@ -51,15 +75,28 @@ transplante bruto de MT que ainda não passou pela camada de reescrita autoral
    `competencias-execucao` (fora do recorte, mas no Regulamento Geral completo — corrigir
    também, já que são resíduos do mesmo problema).
 
-4. **Imprensa/mídia** — os 12 artigos que tratam do tema passam a remeter ao Manual de
-   Relacionamento com a Mídia (DCS) e à Diretriz Geral de Comunicação Social, em vez do
-   texto genérico importado de MT. Ler os 2 documentos para decidir entre remissão simples
-   (padrão do artigo de fechamento da NGA-CIOP) ou transcrição de competências específicas.
+4. **Imprensa/mídia** — os 12 artigos que tratam do tema passam a remeter à
+   **Resolução nº 121/2022/CBM-CP** (Diretriz Geral de Comunicação Social — D-05-BM), em
+   vez do texto genérico importado de MT.
 
-5. **Protocolo de tentativa de suicídio (ATTS)** — conteúdo novo (hoje 0 artigos).
-   Um dispositivo de remissão ao protocolo de Abordagem Técnica nas Tentativas de
-   Suicídio, provavelmente em `servico-operacional`. Precisa do manual para o nome
-   oficial/norma a citar como `fundamento`.
+   **Ordem da remissão (decidida a partir da leitura, 18/08):** a norma citada é a
+   **Resolução**; o Manual de Relacionamento com a Mídia entra mencionado como instrumento
+   de aplicação dela — nunca o contrário, porque o Manual não é ato normativo (sem número,
+   sem data de aprovação, autoria nominal da DCS). Citar o Manual como fundamento
+   principal daria força normativa a um material de apoio.
+
+5. **Protocolo de tentativa de suicídio (ATTS)** — conteúdo novo (hoje 0 artigos), em
+   `servico-operacional`.
+
+   **Decisão do Ten. Tiago (18/08/2026): remissão genérica à doutrina.** Um dispositivo
+   dizendo que o atendimento a ocorrências de tentativa de suicídio observa o protocolo de
+   Abordagem Técnica nas Tentativas de Suicídio e a doutrina nacional correspondente —
+   **sem** transcrever as 4 fases (Aproximação, Silêncio Inicial, Apresentação Pessoal,
+   Início do Diálogo) como incisos e **sem** citar norma inexistente. Razão: o material
+   disponível é slide de instrução do CHOABM, não ato normativo; transcrevê-lo elevaria
+   material didático a norma e congelaria doutrina de curso dentro do Regulamento. Se
+   surgir portaria/NGA que adote o ATTS no CBMRO, o artigo passa a citá-la, no padrão da
+   Resolução 121/2022.
 
 ### Frente C — Capítulo V (`atribuicoes-funcoes`), a mais delicada
 
