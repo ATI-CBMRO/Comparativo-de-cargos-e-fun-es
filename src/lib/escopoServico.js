@@ -78,6 +78,34 @@ const ROTAS_LIBERADAS = {
   servico: ['/', '/regulamento/servico', '/manual', '/login', '/cadastro'],
 }
 
+// Resumo honesto do que ficou de fora, para a nota de escopo: capítulos inteiros que não
+// entram no recorte e artigos cortados DENTRO de um capítulo que entrou (capítulo misto).
+// Contar os dois juntos, como antes, faria a nota dizer "N artigos ficaram de fora" e
+// listar capítulos que não somam N — o leitor não fecharia a conta.
+export function resumoForaDoEscopo(completa, recortada, escopo) {
+  const temas = ESCOPOS[escopo]
+  if (!temas || !Array.isArray(completa?.chapters)) {
+    return { capitulosFora: [], artigosEmCapitulosFora: 0, artigosCortadosNoEscopo: 0 }
+  }
+  const noEscopo = new Set(temas)
+  const capitulosFora = []
+  let artigosEmCapitulosFora = 0
+  for (const c of completa.chapters) {
+    if (noEscopo.has(temaDoCapitulo(c.id))) continue
+    if (c.chapterTitle) capitulosFora.push(c.chapterTitle)
+    artigosEmCapitulosFora += (c.articles?.length ?? 0)
+  }
+  const contarArtigos = (e) => (e?.chapters ?? []).reduce((n, c) => n + (c.articles?.length ?? 0), 0)
+  const totalNoEscopo = completa.chapters
+    .filter(c => noEscopo.has(temaDoCapitulo(c.id)))
+    .reduce((n, c) => n + (c.articles?.length ?? 0), 0)
+  return {
+    capitulosFora,
+    artigosEmCapitulosFora,
+    artigosCortadosNoEscopo: totalNoEscopo - contarArtigos(recortada),
+  }
+}
+
 export function rotaLiberadaNoEscopo(pathname, escopo) {
   const liberadas = ROTAS_LIBERADAS[escopo]
   if (!liberadas) return true            // sem escopo: portal completo, como sempre

@@ -1,6 +1,9 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { TEMAS_SERVICO, temaDoCapitulo, filtrarEstruturaPorEscopo, rotaLiberadaNoEscopo } from './escopoServico.js'
+import {
+  TEMAS_SERVICO, temaDoCapitulo, filtrarEstruturaPorEscopo, rotaLiberadaNoEscopo,
+  resumoForaDoEscopo,
+} from './escopoServico.js'
 
 // Estrutura-fake na MESMA ordem do arquivo real: a Parte I inteira antes da Parte II,
 // com "disposicoes-finais" na posição 12 — é justamente o que o recorte precisa corrigir.
@@ -181,4 +184,11 @@ test('capítulo misto sem o campo articles não quebra o filtro', () => {
   const r = filtrarEstruturaPorEscopo(semArtigos, 'servico')
   const capFiltrado = r.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
   assert.equal(capFiltrado.articles, undefined)
+})
+
+test('resumoForaDoEscopo separa capítulos inteiros de artigos cortados', () => {
+  const completa = comCapituloMisto()
+  const r = resumoForaDoEscopo(completa, filtrarEstruturaPorEscopo(completa, 'servico'), 'servico')
+  assert.equal(r.artigosCortadosNoEscopo, 2, 'mt-art-62 e mt-art-63 saíram do capítulo misto')
+  assert.deepEqual(r.capitulosFora, [], 'a estrutura-fake só tem capítulos do escopo')
 })

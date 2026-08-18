@@ -23,7 +23,7 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
-import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
+import { filtrarEstruturaPorEscopo, resumoForaDoEscopo } from '../lib/escopoServico.js'
 import NotaEscopoServico from '../components/NotaEscopoServico.jsx'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
@@ -114,15 +114,12 @@ export default function Revisao({ initialDoc, escopo } = {}) {
     [docId, dataEscopo, escopo],
   )
   // Números da nota de escopo, calculados dos dados reais — nunca cravados no código.
+  // Separa os dois tipos de corte: capítulos inteiros fora do recorte × artigos cortados
+  // DENTRO de um capítulo que ficou (capítulo misto) — ver escopoServico.js.
   const foraDoEscopo = useMemo(() => {
     if (!escopo || !data) return null
-    const idsNoEscopo = new Set((dataEscopo?.chapters ?? []).map(c => c.id))
-    const capitulos = data.chapters.filter(c => !idsNoEscopo.has(c.id))
-    return {
-      artigos: buildArticles(data).length - articles.length,
-      titulos: capitulos.map(c => c.chapterTitle).filter(Boolean),
-    }
-  }, [escopo, data, dataEscopo, articles])
+    return resumoForaDoEscopo(data, dataEscopo, escopo)
+  }, [escopo, data, dataEscopo])
   const fechados = useMemo(() => {
     let n = 0
     finalsForDoc.forEach(f => { if (f.status === 'fechado') n += 1 })
@@ -255,8 +252,9 @@ export default function Revisao({ initialDoc, escopo } = {}) {
           {foraDoEscopo && (
             <NotaEscopoServico
               artigosNoEscopo={articles.length}
-              artigosFora={foraDoEscopo.artigos}
-              capitulosFora={foraDoEscopo.titulos}
+              artigosEmCapitulosFora={foraDoEscopo.artigosEmCapitulosFora}
+              capitulosFora={foraDoEscopo.capitulosFora}
+              artigosCortadosNoEscopo={foraDoEscopo.artigosCortadosNoEscopo}
             />
           )}
           {(() => {
