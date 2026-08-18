@@ -38,6 +38,10 @@ service cloud.firestore {
             && request.resource.data.ativo == false
             && request.resource.data.status == 'pendente'
             && request.resource.data.role == 'participante'
+            // Autocadastro sempre nasce restrito ao Regulamento de Serviço — o admin é
+            // quem decide, depois, se essa pessoa ganha o portal completo (troca 2026-08-18:
+            // antes vinha sem escopo/portal inteiro e o admin tinha que restringir na mão).
+            && request.resource.data.escopo == 'servico'
             && request.resource.data.nome is string && request.resource.data.nome.size() > 0 && request.resource.data.nome.size() <= 200
             && request.resource.data.nomeGuerra is string && request.resource.data.nomeGuerra.size() <= 100
             && request.resource.data.cidade is string && request.resource.data.cidade.size() <= 100
@@ -45,7 +49,7 @@ service cloud.firestore {
             && request.resource.data.unidade is string && request.resource.data.unidade.size() <= 200
             && request.resource.data.keys().hasOnly(
                  ['email','nome','nomeGuerra','cidade','comando','unidade',
-                  'role','ativo','status','uid','criadoEm','criadoPor','ultimoLogin']));
+                  'role','escopo','ativo','status','uid','criadoEm','criadoPor','ultimoLogin']));
       allow delete: if isAdmin();
       // O próprio dono pode mexer em uid/status/ultimoLogin (registro de login) — inclui a
       // transição pendente→cadastrado quando a solicitação já foi aprovada.
