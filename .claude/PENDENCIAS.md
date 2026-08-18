@@ -2,6 +2,23 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Capítulo V (COB/CAT) — cadeia de comando abaixo do SGBM ficou órfã** (achado
+  18/08/2026, na revisão final da 2ª rodada de curadoria). O spec pedia "até a menor função";
+  os 19 artigos autorais vão até o Comandante de Subgrupamento e param. Conferido contra a
+  LOB (Art. 47, red. Lei 4.303/2018): existem Seção de Comando e Serviço, Seção de Bombeiros,
+  Grupo de Bombeiros e Destacamento de Bombeiros (incisos IV-VII), nenhum com artigo próprio,
+  e existe o **Subcomandante do GBM** (Art. 47, §1º, I, "b"), cujo equivalente antigo
+  (`mt-art-256`) foi removido sem substituto — assimetria visível, já que a mesma rodada deu
+  artigo de "Adjunto" a COB, CAT e DAT. Não bloqueou o merge (a lacuna já existia, coberta
+  antes por nome errado de MT); registrar para quando a 3ª rodada acontecer.
+- [ ] **Resíduos pré-existentes visíveis no recorte "Regulamento de Serviço"** (achados
+  18/08/2026 na revisão final, não introduzidos pela 2ª rodada — herança do transplante de
+  MT/SE): concordância de gênero quebrada em "ao Central Integrada de Operações" /
+  "por intermédio do Central Integrada de Operações" (`se-art-85`, `mt-art-236`, artefato do
+  `ADAPTATIONS`); rodapé de publicação de MT colado no caput do artigo de fecho (`mt-art-266`:
+  "Este texto não substitui o publicado no Boletim Ger…"); sigla "CIOSP" em `se-art-116`
+  inciso II que pode ser resíduo de Sergipe (em RO a NGA usa "CIOP") — conferir com o Ten.
+  Tiago antes de trocar.
 - [ ] **3ª rodada de curadoria do Regulamento de Serviço — 45 sugestões de mérito ainda
   abertas** (achado 18/08/2026, na conferência final da 2ª rodada —
   `docs/curadoria/conferencia-71-sugestoes.md`). Das 71 sugestões do Firestore sobre o
