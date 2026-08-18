@@ -1269,7 +1269,7 @@ ARTIGOS_PROPRIOS = {
             ],
             'fundamento': 'LOB, Art. 18, caput e § 1º (red. Lei nº 4.303/2018 e Lei nº '
                           '4.488/2019); Decreto nº 21.425/2016, Art. 2º, Art. 5º, caput e '
-                          '§ 1º, e Art. 55, § 4º',
+                          '§ 1º, e Art. 55, caput',
         },
         {
             'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
@@ -1313,8 +1313,9 @@ ARTIGOS_PROPRIOS = {
                 'Instruções Técnicas;',
                 'II - subscrever, para encaminhamento ao Coordenador de Atividades '
                 'Técnicas, os estudos e os pareceres técnicos produzidos pela Seção;',
-                'III - submeter à Comissão Técnica os casos que exijam solução técnica '
-                'diversa da prevista em Instrução Técnica.',
+                'III - zelar pelo cumprimento, pela Seção, das competências técnicas '
+                'previstas no Cap. II — Das Seções da Coordenadoria, do capítulo Da '
+                'Segurança Contra Incêndio e Pânico deste Regulamento.',
             ],
             'fundamento': 'LOB, Art. 18, § 1º, IV (red. Lei nº 4.303/2018); Decreto nº '
                           '21.425/2016, Art. 13 — competência de chefia da Seção, sem '
@@ -1330,8 +1331,9 @@ ARTIGOS_PROPRIOS = {
                 'I - dirigir e distribuir os trabalhos da Seção de Planejamento, '
                 'Fiscalização e Suporte Técnico, coordenando as ações de fiscalização das '
                 'Diretorias de Atividades Técnicas;',
-                'II - consolidar, para o Coordenador de Atividades Técnicas, os '
-                'indicadores e os dados de desempenho do Sistema de Atividades Técnicas;',
+                'II - acompanhar, no âmbito da Seção, o cumprimento das competências '
+                'técnicas previstas no Cap. II — Das Seções da Coordenadoria, do capítulo '
+                'Da Segurança Contra Incêndio e Pânico deste Regulamento;',
                 'III - submeter ao Coordenador de Atividades Técnicas os processos '
                 'administrativos que exijam decisão em nível superior ao da Seção.',
             ],
@@ -1403,9 +1405,10 @@ ARTIGOS_PROPRIOS = {
             'orgao': 'cat',
             'caput': 'Compete ao Chefe da Seção de Atividades Técnicas:',
             'dispositivos': [
-                'I - dirigir, no âmbito do respectivo Subgrupamento de Bombeiro Militar, '
-                'os trabalhos de análise de projetos, de vistoria e de fiscalização a '
-                'cargo da Seção de Atividades Técnicas;',
+                'I - dirigir, no âmbito do respectivo Subgrupamento de Bombeiro Militar, a '
+                'Seção no cumprimento das competências técnicas previstas no Cap. V — Das '
+                'Seções de Atividades Técnicas, do capítulo Da Segurança Contra Incêndio e '
+                'Pânico deste Regulamento;',
                 'II - observar, no exercício de suas atribuições, a orientação técnica da '
                 'Diretoria de Atividades Técnicas a que a Seção se vincula;',
                 'III - submeter à Diretoria de Atividades Técnicas os casos que exijam '
