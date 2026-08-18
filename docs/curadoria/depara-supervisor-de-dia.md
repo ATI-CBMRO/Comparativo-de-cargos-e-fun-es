@@ -2,7 +2,7 @@
 
 **Data:** 2026-08-18
 **Spec:** `docs/superpowers/specs/2026-08-18-regulamento-servico-correcoes-fase2-design.md`
-**Status:** aguardando aprovação do Ten. Tiago
+**Status:** aprovado em 2026-08-18
 
 ## O problema
 
