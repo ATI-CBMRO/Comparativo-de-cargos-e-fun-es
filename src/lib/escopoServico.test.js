@@ -102,18 +102,18 @@ test('sem escopo, toda rota é liberada (comportamento de hoje, intocado)', () =
   assert.equal(rotaLiberadaNoEscopo('/legislacoes', 'inexistente'), true)
 })
 
-test('escopo de serviço libera só o documento, o subsídio, o manual e as telas de entrada', () => {
-  for (const p of ['/', '/regulamento/servico', '/regulamento/servico/subsidio', '/manual', '/login', '/solicitar-acesso']) {
+test('escopo de serviço libera o documento, o subsídio, o acervo, o organograma, o manual e as telas de entrada', () => {
+  for (const p of ['/', '/regulamento/servico', '/regulamento/servico/subsidio', '/legislacoes', '/organograma', '/manual', '/login', '/solicitar-acesso']) {
     assert.equal(rotaLiberadaNoEscopo(p, 'servico'), true, `deveria liberar ${p}`)
   }
 })
 
-test('escopo de serviço fecha as trilhas, o acervo e o organograma', () => {
+test('escopo de serviço fecha as trilhas de minuta/RI, a curadoria e o admin', () => {
   for (const p of [
     '/minuta', '/minuta/conferencia', '/minuta/decisoes', '/minuta/revisao',
     '/regulamento', '/regulamento/conferencia', '/regulamento/decisoes',
     '/regulamento/revisao', '/regulamento/subsidio',
-    '/legislacoes', '/organograma', '/acessos', '/comparar', '/estados/ro',
+    '/acessos', '/comparar', '/estados/ro',
   ]) {
     assert.equal(rotaLiberadaNoEscopo(p, 'servico'), false, `deveria fechar ${p}`)
   }
