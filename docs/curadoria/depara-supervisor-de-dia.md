@@ -35,7 +35,7 @@ presencial e local → Oficial de Dia; sobreaviso e estadual → Superior de Dia
 | `se-art-24` | Superior de Dia informa meio de contato "ao Supervisor de Dia"; visto no livro de registro | **Oficial de Dia** | é o militar presente no quartel que recebe a informação e mantém o livro |
 | `se-art-32` | "regime adequado de 24 horas, podendo em casos excepcionais ser de 12" | **Oficial de Dia** | escala presencial de 24h é a do Oficial de Dia; o Superior é sobreaviso (`se-art-24`) |
 | `se-art-33` | permuta de escala mediante autorização escrita | **Oficial de Dia** | acompanha `se-art-32` |
-| `se-art-34` | serviço "coordenado pelo COB, através da sua Seção de Recursos Humanos" | **Oficial de Dia**, conferir o órgão | o COB não tem "Seção de Recursos Humanos" na LOB Art. 35, §1º — tem **Seção de Pessoal**; corrigir junto |
+| `se-art-34` | serviço "coordenado pelo COB, através da sua Seção de Recursos Humanos" | **Oficial de Dia**, conferir o órgão | o COB não tem "Seção de Recursos Humanos" na LOB Art. 35, parágrafo único — tem **Seção de Pessoal**; corrigir junto |
 | `se-art-35` | publicação da escala com titular e reserva | **Oficial de Dia** | acompanha `se-art-32` |
 | `se-art-38` | "área de atuação abrange todo o território estadual" | **Superior de Dia** | área estadual é, por definição, do Superior de Dia — atribuir ao Oficial de Dia contradiria `se-art-32`/`34`. **Corrigir também o resíduo de extração**: o caput termina com o título de seção "Oficial de Dia" grudado nele |
 | `se-art-113` | entrevista "pelo Comandante de Socorro ou Superior ou Supervisor de Dia"; casos omissos | **reescrever cadeia** | ver Task 6 (mídia): o artigo inteiro passa a remeter à Resolução 121/2022 |
