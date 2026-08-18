@@ -971,6 +971,29 @@ ARTIGOS_PROPRIOS = {
             ],
             'fundamento': f'{_RES121}; LOB, Art. 22',
         },
+        # A remissão é DELIBERADAMENTE genérica (determinação do Ten. Tiago,
+        # 2026-08-18): o material disponível do ATTS é slide de instrução do CHOABM,
+        # sem portaria ou resolução que o adote no CBMRO. Transcrever as 4 fases
+        # (Aproximação, Silêncio Inicial, Apresentação Pessoal, Início do Diálogo)
+        # elevaria material didático a norma e congelaria doutrina de curso dentro do
+        # Regulamento. Se surgir ato que adote o protocolo, este artigo passa a citá-lo,
+        # no padrão da Resolução nº 121/2022/CBM-CP.
+        {
+            'heading': 'Do atendimento a tentativas de suicídio',
+            'caput': 'O atendimento às ocorrências de tentativa de suicídio observará o '
+                     'protocolo de Abordagem Técnica nas Tentativas de Suicídio e a '
+                     'doutrina nacional correspondente, adotados pela Corporação em seus '
+                     'cursos de formação, habilitação e aperfeiçoamento.',
+            'dispositivos': [
+                '§ 1º A abordagem será conduzida por militar habilitado no protocolo, '
+                'privilegiando a técnica de aproximação e diálogo sobre a intervenção '
+                'física, que se reserva às situações de risco iminente à vida.',
+                '§ 2º Compete à Coordenadoria de Educação, Ensino e Instrução manter a '
+                'capacitação do efetivo operacional no protocolo de que trata este artigo.',
+            ],
+            'fundamento': 'LOB, Art. 2º, IV e VII (socorro e salvamento), e Art. 15 '
+                          '(Coordenadoria de Educação, Ensino e Instrução)',
+        },
     ],
 }
 

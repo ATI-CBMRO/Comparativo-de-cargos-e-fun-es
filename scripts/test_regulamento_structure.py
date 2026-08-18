@@ -95,11 +95,14 @@ assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoe
 #     +1 artigo de redação própria (prestação de informações à imprensa), fundado na
 #        Resolução nº 121/2022/CBM-CP
 #     = 408
+#     +1 artigo de redação própria (atendimento a tentativas de suicídio — remissão
+#        genérica ao protocolo ATTS), fundado na LOB (Art. 2º, IV e VII, e Art. 15)
+#     = 409
 # Ver scripts/regulamento_reescrita.py para o motivo de cada remoção.
-assert len(edit_ids) >= 408, f'regressão: {len(edit_ids)} artigos (esperado >= 408)'
+assert len(edit_ids) >= 409, f'regressão: {len(edit_ids)} artigos (esperado >= 409)'
 autorais = [l for c in d['chapters'] for l in c['articles'] if l.get('autoral')]
-assert len(autorais) == 41, \
-    f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral + 4 CIOP + 1 mídia = 41)'
+assert len(autorais) == 42, \
+    f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral + 4 CIOP + 1 mídia + 1 ATTS = 42)'
 for tema in ('seguranca-contra-incendio', 'organizacao-geral', 'central-operacoes-193'):
     cap = [c for c in d['chapters'] if c['themeKey'] == tema][0]
     assert all(l.get('autoral') for l in cap['articles']), \

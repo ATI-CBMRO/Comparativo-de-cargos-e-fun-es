@@ -17964,6 +17964,27 @@
           "heading": "Da prestação de informações à imprensa",
           "autoral": true,
           "fundamento": "CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — D-05-BM), de 09 de dezembro de 2022; LOB, Art. 22"
+        },
+        {
+          "id": "ro-art-2",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/ro-art-2",
+          "caput": "O atendimento às ocorrências de tentativa de suicídio observará o protocolo de Abordagem Técnica nas Tentativas de Suicídio e a doutrina nacional correspondente, adotados pela Corporação em seus cursos de formação, habilitação e aperfeiçoamento.",
+          "items": [
+            {
+              "text": "§ 1º A abordagem será conduzida por militar habilitado no protocolo, privilegiando a técnica de aproximação e diálogo sobre a intervenção física, que se reserva às situações de risco iminente à vida.",
+              "source": "LOB, Art. 2º, IV e VII (socorro e salvamento), e Art. 15 (Coordenadoria de Educação, Ensino e Instrução)"
+            },
+            {
+              "text": "§ 2º Compete à Coordenadoria de Educação, Ensino e Instrução manter a capacitação do efetivo operacional no protocolo de que trata este artigo.",
+              "source": "LOB, Art. 2º, IV e VII (socorro e salvamento), e Art. 15 (Coordenadoria de Educação, Ensino e Instrução)"
+            }
+          ],
+          "source": "LOB, Art. 2º, IV e VII (socorro e salvamento), e Art. 15 (Coordenadoria de Educação, Ensino e Instrução)",
+          "match": "exata",
+          "heading": "Do atendimento a tentativas de suicídio",
+          "autoral": true,
+          "fundamento": "LOB, Art. 2º, IV e VII (socorro e salvamento), e Art. 15 (Coordenadoria de Educação, Ensino e Instrução)"
         }
       ],
       "alternatives": {
