@@ -15,23 +15,6 @@ export function subscribeMembers(onChange, onError) {
   )
 }
 
-export async function addMember({ email, nome, role, escopo }, criadoPor) {
-  const id = normalizeEmail(email)
-  await setDoc(doc(db, COL, id), {
-    email: id,
-    nome: (nome ?? '').trim() || id,
-    role: role === 'admin' ? 'admin' : 'participante',
-    // Escopo só faz sentido para participante — admin nunca fica restrito.
-    escopo: role !== 'admin' && escopo === 'servico' ? 'servico' : null,
-    ativo: true,
-    status: 'convidado',
-    uid: null,
-    criadoEm: serverTimestamp(),
-    criadoPor: criadoPor ?? null,
-    ultimoLogin: null,
-  })
-}
-
 export async function setMemberRole(email, role) {
   await updateDoc(doc(db, COL, normalizeEmail(email)), {
     role: role === 'admin' ? 'admin' : 'participante',

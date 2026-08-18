@@ -78,10 +78,6 @@ export default function Login() {
         </button>
         <button className="login-link" type="button" onClick={esqueci}>Esqueci minha senha</button>
         <div className="login-foot">
-          <span className="login-foot-txt">Primeiro acesso?</span>
-          <Link className="login-link" to="/cadastro">Criar minha senha</Link>
-        </div>
-        <div className="login-foot">
           <span className="login-foot-txt">Ainda não tem acesso?</span>
           <Link className="login-link" to="/solicitar-acesso">Solicitar acesso</Link>
         </div>

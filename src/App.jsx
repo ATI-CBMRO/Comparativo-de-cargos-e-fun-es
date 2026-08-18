@@ -27,7 +27,6 @@ import DecisoesCuradoria from './pages/DecisoesCuradoria.jsx'
 import Manual from './pages/Manual.jsx'
 import Organograma from './pages/Organograma.jsx'
 import Login from './pages/Login.jsx'
-import Cadastro from './pages/Cadastro.jsx'
 import SolicitarAcesso from './pages/SolicitarAcesso.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
@@ -97,6 +96,7 @@ const NAV_GROUPS = [
 const NAV_ESCOPO = {
   servico: [
     { to: '/regulamento/servico', icon: BookMarked, label: 'Regulamento de Serviço', end: true },
+    { to: '/regulamento/servico/subsidio', icon: GitCompare, label: 'Subsídio' },
     { to: '/manual', icon: BookOpen, label: 'Manual de uso' },
   ],
 }
@@ -137,7 +137,7 @@ function Header({ navOpen, onToggleNav }) {
 function HeaderUserBox() {
   const { user, sair } = useAuth()
   // O cabeçalho só é renderizado com o usuário autenticado (ver App()); sem login,
-  // o portal inteiro mostra apenas as telas de login/cadastro.
+  // o portal inteiro mostra apenas as telas de login/solicitar-acesso.
   if (!user) return null
   return (
     <div className="app-header-user">
@@ -245,8 +245,8 @@ function FullPageLoading() {
   )
 }
 
-// Usuário já autenticado que chega em /login ou /cadastro (link antigo, aba duplicada
-// etc.): manda de volta ao destino original que ele tentou acessar antes do login
+// Usuário já autenticado que chega em /login ou /solicitar-acesso (link antigo, aba
+// duplicada etc.): manda de volta ao destino original que ele tentou acessar antes do login
 // (guardado em location.state.from pelo LoggedOutRoutes), ou para o Início.
 // Páginas das trilhas (Regimento Interno / Regulamento Geral) só têm conteúdo na LOB
 // futura por enquanto. No cenário "atual", mostram o placeholder — nada de dados se mistura.
@@ -272,6 +272,16 @@ function RegulamentoServicoRoute() {
   return <Revisao initialDoc="reg" escopo="servico" />
 }
 
+// Subsídio (comparação com os demais estados) do mesmo recorte de Serviço — mesma trava
+// de cenário do documento principal, mesmos 7 temas.
+function RegulamentoServicoSubsidioRoute() {
+  const { cenario, setCenario } = useScenario()
+  useEffect(() => {
+    if (cenario !== 'atual') setCenario('atual')
+  }, [cenario, setCenario])
+  return <RegSubsidio escopo="servico" />
+}
+
 // Quem tem escopo não cai no Acervo dos 27 estados: vai direto ao documento dele.
 function InicioPorEscopo() {
   const { user } = useAuth()
@@ -290,16 +300,16 @@ function GuardaDeEscopo({ children }) {
   return children
 }
 
-// Portal inteiro exige login: sem sessão válida, só /login e /cadastro respondem —
+// Portal inteiro exige login: sem sessão válida, só /login e /solicitar-acesso respondem —
 // qualquer outra URL redireciona para /login guardando o destino pedido, para retomá-lo
-// assim que a pessoa autenticar.
+// assim que a pessoa autenticar. Não há mais cadastro manual por e-mail (Acessos só
+// aprova/gerencia quem já pediu acesso pelo formulário público).
 function LoggedOutRoutes() {
   const location = useLocation()
   const from = `${location.pathname}${location.search}`
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/solicitar-acesso" element={<SolicitarAcesso />} />
       <Route path="*" element={<Navigate to="/login" replace state={{ from }} />} />
     </Routes>
@@ -365,6 +375,7 @@ export default function App() {
           <Route path="/regulamento/diagramas" element={<RegDiagramas />} />
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
           <Route path="/regulamento/servico" element={<ProtectedRoute><RegulamentoServicoRoute /></ProtectedRoute>} />
+          <Route path="/regulamento/servico/subsidio" element={<ProtectedRoute><RegulamentoServicoSubsidioRoute /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
@@ -373,6 +384,8 @@ export default function App() {
           <Route path="/minuta/comparativo-ri" element={<TrilhaRoute><RIComparator /></TrilhaRoute>} />
           <Route path="/regulamento/comparar" element={<TrilhaRoute><RegulamentoComparator /></TrilhaRoute>} />
           <Route path="/login" element={<AlreadyLoggedInRedirect />} />
+          {/* /cadastro não existe mais (fluxo manual removido) — link antigo cai aqui em
+              vez de página em branco. */}
           <Route path="/cadastro" element={<AlreadyLoggedInRedirect />} />
           <Route path="/solicitar-acesso" element={<AlreadyLoggedInRedirect />} />
           <Route path="/revisao" element={<ProtectedRoute><Revisao /></ProtectedRoute>} />

@@ -99,8 +99,8 @@ test('sem escopo, toda rota é liberada (comportamento de hoje, intocado)', () =
   assert.equal(rotaLiberadaNoEscopo('/legislacoes', 'inexistente'), true)
 })
 
-test('escopo de serviço libera só o documento, o manual e as telas de entrada', () => {
-  for (const p of ['/', '/regulamento/servico', '/manual', '/login', '/cadastro']) {
+test('escopo de serviço libera só o documento, o subsídio, o manual e as telas de entrada', () => {
+  for (const p of ['/', '/regulamento/servico', '/regulamento/servico/subsidio', '/manual', '/login', '/solicitar-acesso']) {
     assert.equal(rotaLiberadaNoEscopo(p, 'servico'), true, `deveria liberar ${p}`)
   }
 })
