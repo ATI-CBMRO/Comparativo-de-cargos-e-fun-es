@@ -165,7 +165,7 @@ export default function Acessos() {
         </table>
       </div>
 
-      <h3 className="acc-sec-title">Visitantes do acervo público</h3>
+      <h3 className="acc-sec-title">Visitantes do acervo público ({visitantes.length})</h3>
       <p className="acc-sub">
         Quem consultou o acervo pela página pública, sem login. Registro de histórico — não há
         aprovação nem bloqueio: o acervo é público por decisão do comando.
