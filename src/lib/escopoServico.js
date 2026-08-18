@@ -5,13 +5,18 @@
 // do arquivo: no regulamento_structure.json a Parte I vem inteira antes da Parte II, de
 // modo que "DAS DISPOSIÇÕES FINAIS" (posição 12) precede o serviço operacional (13).
 // Preservar a ordem do arquivo jogaria o fecho do regulamento para o meio do documento.
-// Ordem escolhida: COB primeiro, CAT em bloco próprio, Preliminares e Finais nas pontas.
+// Ordem escolhida: Preliminares e Finais nas pontas; as ATRIBUIÇÕES DAS FUNÇÕES logo
+// após as Preliminares (determinação do Ten. Tiago, 2026-08-18 — quem lê o regulamento de
+// serviço precisa saber QUEM faz o quê antes de ler o serviço em si); depois o serviço
+// operacional do COB, a Central de Operações, o serviço interno e o serviço técnico da CAT.
+// O documento COMPLETO não é reordenado nesta rodada: lá as Preliminares abrem a Parte I e
+// este capítulo é Parte II — a posição dele entra na reordenação geral da 2ª etapa.
 export const TEMAS_SERVICO = [
   'disposicoes-preliminares',
+  'atribuicoes-funcoes',
   'servico-operacional',
   'central-operacoes-193',
   'servico-interno-dia',
-  'atribuicoes-funcoes',
   'seguranca-contra-incendio',
   'disposicoes-finais',
 ]

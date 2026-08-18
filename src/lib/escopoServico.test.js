@@ -31,10 +31,10 @@ const estruturaAtual = () => ({
 test('TEMAS_SERVICO tem os 7 temas do recorte, na ordem de leitura', () => {
   assert.deepEqual(TEMAS_SERVICO, [
     'disposicoes-preliminares',
+    'atribuicoes-funcoes',
     'servico-operacional',
     'central-operacoes-193',
     'servico-interno-dia',
-    'atribuicoes-funcoes',
     'seguranca-contra-incendio',
     'disposicoes-finais',
   ])
