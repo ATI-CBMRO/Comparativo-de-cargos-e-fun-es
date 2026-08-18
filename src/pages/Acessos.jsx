@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { useAuth } from '../lib/auth.jsx'
 import { contaStatus, situacaoMembro, normalizeEmail } from '../lib/membersStats.js'
 import {
-  subscribeMembers, addMember, setMemberRole, setMemberAtivo, removeMember,
+  subscribeMembers, setMemberRole, setMemberEscopo, setMemberAtivo, removeMember,
+  recusarSolicitacao,
 } from '../lib/membersData.js'
 
 function formatLogin(ts) {
@@ -15,6 +16,7 @@ function formatLogin(ts) {
 const BADGE = {
   cadastrado: { cls: 'b-cad', txt: '🟢 Cadastrado' },
   convidado: { cls: 'b-conv', txt: '🟡 Convidado' },
+  pendente: { cls: 'b-pend', txt: '🟠 Pendente' },
   bloqueado: { cls: 'b-bloq', txt: '🔴 Bloqueado' },
 }
 
@@ -22,10 +24,6 @@ export default function Acessos() {
   const { user } = useAuth()
   const [members, setMembers] = useState([])
   const [erro, setErro] = useState(null)
-  const [abrindo, setAbrindo] = useState(false)
-  const [email, setEmail] = useState('')
-  const [nome, setNome] = useState('')
-  const [role, setRole] = useState('participante')
 
   useEffect(() => subscribeMembers(
     setMembers,
@@ -33,27 +31,15 @@ export default function Acessos() {
   ), [])
 
   const stats = useMemo(() => contaStatus(members), [members])
-
-  const convidar = async (e) => {
-    e.preventDefault()
-    const alvo = normalizeEmail(email)
-    if (!alvo) return
-    if (members.some(m => normalizeEmail(m.email) === alvo)) {
-      setErro('Esse e-mail já está na lista.')
-      return
-    }
-    setErro(null)
-    try {
-      await addMember({ email, nome, role }, user.email)
-      setEmail(''); setNome(''); setRole('participante'); setAbrindo(false)
-    } catch (err) {
-      console.error(err); setErro('Não foi possível adicionar a pessoa.')
-    }
-  }
+  const pendentes = useMemo(() => members.filter(m => situacaoMembro(m) === 'pendente'), [members])
 
   const alternarPapel = async (m) => {
     try { await setMemberRole(m.email, m.role === 'admin' ? 'participante' : 'admin') }
     catch (err) { console.error(err); setErro('Não foi possível alterar o papel da pessoa.') }
+  }
+  const alternarEscopo = async (m) => {
+    try { await setMemberEscopo(m.email, m.escopo === 'servico' ? '' : 'servico') }
+    catch (err) { console.error(err); setErro('Não foi possível alterar o alcance da pessoa.') }
   }
   const alternarAtivo = async (m) => {
     try { await setMemberAtivo(m.email, !m.ativo) }
@@ -64,51 +50,69 @@ export default function Acessos() {
     try { await removeMember(m.email) }
     catch (err) { console.error(err); setErro('Não foi possível remover a pessoa.') }
   }
+  const aprovar = async (m) => {
+    try { await setMemberAtivo(m.email, true) }
+    catch (err) { console.error(err); setErro('Não foi possível aprovar o pedido.') }
+  }
+  const recusar = async (m) => {
+    if (!window.confirm(`Recusar o pedido de ${m.nome}?`)) return
+    try { await recusarSolicitacao(m.email) }
+    catch (err) { console.error(err); setErro('Não foi possível recusar o pedido.') }
+  }
 
   return (
     <div className="acc-wrap">
       <h2 className="acc-title">Acessos</h2>
-      <p className="acc-sub">Convide pessoas pelo e-mail, controle papéis e acompanhe quem se cadastrou e quando entrou.</p>
+      <p className="acc-sub">Aprove pedidos de acesso, controle papéis e acompanhe quem entrou e quando.</p>
 
       {erro && <div className="form-error" style={{ marginBottom: 12 }}>{erro}</div>}
 
       <div className="acc-cards">
         <div className="acc-stat"><div className="acc-n">{stats.total}</div><div className="acc-l">Pessoas no total</div></div>
         <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--accent-green)' }} />{stats.cadastrados}</div><div className="acc-l">Cadastradas</div></div>
-        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--cbm-gold-500)' }} />{stats.convidados}</div><div className="acc-l">Convidadas (sem entrar)</div></div>
+        <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: '#b45500' }} />{stats.pendentes}</div><div className="acc-l">Pedidos pendentes</div></div>
         <div className="acc-stat"><div className="acc-n"><span className="acc-dot" style={{ background: 'var(--cbm-red-700)' }} />{stats.bloqueados}</div><div className="acc-l">Bloqueadas</div></div>
       </div>
 
-      <div className="acc-bar">
-        <strong>Pessoas</strong>
-        <button type="button" className="acc-add" onClick={() => setAbrindo(o => !o)}>＋ Convidar pessoa</button>
-      </div>
-
-      {abrindo && (
-        <form className="acc-addform" onSubmit={convidar}>
-          <div className="acc-fld" style={{ flex: 2, minWidth: 220 }}>
-            <label>E-mail</label>
-            <input value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="pessoa@exemplo.com" required />
+      {pendentes.length > 0 && (
+        <>
+          <div className="acc-bar">
+            <strong>Solicitações pendentes</strong>
           </div>
-          <div className="acc-fld" style={{ flex: 2, minWidth: 180 }}>
-            <label>Nome</label>
-            <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Posto e nome" />
+          <div className="acc-panel" style={{ marginBottom: 18 }}>
+            <table className="acc-table">
+              <thead>
+                <tr><th>Pessoa</th><th>Cidade / Comando / Unidade</th><th style={{ textAlign: 'right' }}>Ações</th></tr>
+              </thead>
+              <tbody>
+                {pendentes.map(m => (
+                  <tr key={m.email}>
+                    <td>
+                      <div className="acc-nome">{m.nome}{m.nomeGuerra ? ` (${m.nomeGuerra})` : ''}</div>
+                      <div className="acc-mail">{m.email}</div>
+                    </td>
+                    <td>{m.cidade} — {m.comando} — {m.unidade}</td>
+                    <td>
+                      <div className="acc-acts">
+                        <button type="button" className="acc-ic" onClick={() => aprovar(m)}>aprovar</button>
+                        <button type="button" className="acc-ic danger" onClick={() => recusar(m)}>recusar</button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-          <div className="acc-fld">
-            <label>Papel</label>
-            <select value={role} onChange={e => setRole(e.target.value)}>
-              <option value="participante">Participante</option>
-              <option value="admin">Administrador</option>
-            </select>
-          </div>
-          <button type="submit" className="acc-add">Adicionar à lista</button>
-        </form>
+        </>
       )}
 
+      <div className="acc-bar">
+        <strong>Pessoas</strong>
+      </div>
       <div className="acc-panel">
         <table className="acc-table">
           <thead>
-            <tr><th>Pessoa</th><th>Papel</th><th>Status</th><th>Último login</th><th style={{ textAlign: 'right' }}>Ações</th></tr>
+            <tr><th>Pessoa</th><th>Papel</th><th>Alcance</th><th>Status</th><th>Último login</th><th style={{ textAlign: 'right' }}>Ações</th></tr>
           </thead>
           <tbody>
             {members.map(m => {
@@ -123,6 +127,7 @@ export default function Acessos() {
                     <div className="acc-mail">{m.email}</div>
                   </td>
                   <td><span className={`acc-papel${m.role === 'admin' ? ' adm' : ''}`}>{m.role === 'admin' ? 'Administrador' : 'Participante'}</span></td>
+                  <td className="acc-mail">{m.role === 'admin' ? '—' : (m.escopo === 'servico' ? 'Só Regulamento de Serviço' : 'Portal completo')}</td>
                   <td><span className={`acc-badge ${badge.cls}`}>{badge.txt}</span></td>
                   <td className={login ? 'acc-quando' : 'acc-nunca'}>{login ?? 'nunca entrou'}</td>
                   <td>
@@ -131,6 +136,11 @@ export default function Acessos() {
                     ) : (
                       <div className="acc-acts">
                         <button type="button" className="acc-ic" onClick={() => alternarPapel(m)}>papel</button>
+                        {m.role !== 'admin' && (
+                          <button type="button" className="acc-ic" onClick={() => alternarEscopo(m)}>
+                            {m.escopo === 'servico' ? 'liberar portal' : 'restringir a serviço'}
+                          </button>
+                        )}
                         <button type="button" className="acc-ic" onClick={() => alternarAtivo(m)}>{m.ativo ? 'bloquear' : 'liberar'}</button>
                         <button type="button" className="acc-ic danger" onClick={() => remover(m)}>remover</button>
                       </div>

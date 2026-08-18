@@ -42,7 +42,7 @@ export function filtrarEstruturaPorEscopo(structure, escopo) {
 // ATENÇÃO: isto é camada de INTERFACE. A tranca de banco é o firestore.rules, que não
 // muda nesta entrega (ver spec, seção 3c).
 const ROTAS_LIBERADAS = {
-  servico: ['/', '/regulamento/servico', '/manual', '/login', '/cadastro'],
+  servico: ['/', '/regulamento/servico', '/regulamento/servico/subsidio', '/manual', '/login', '/solicitar-acesso'],
 }
 
 export function rotaLiberadaNoEscopo(pathname, escopo) {

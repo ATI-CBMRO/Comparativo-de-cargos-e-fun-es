@@ -29,8 +29,30 @@ service cloud.firestore {
     match /members/{email} {
       allow read: if isAdmin()
         || (request.auth != null && request.auth.token.email == email);
-      allow create, delete: if isAdmin();
-      // O próprio dono só pode mexer em uid/status/ultimoLogin (registro de login).
+      // Admin cria por convite OU a própria pessoa cria o PRÓPRIO pedido — sempre travado
+      // em pendente/sem privilégio; só o admin (via update) libera (ativo:true).
+      allow create: if isAdmin()
+        || (request.auth != null && request.auth.token.email == email
+            && request.resource.data.uid == request.auth.uid
+            && request.resource.data.email == email
+            && request.resource.data.ativo == false
+            && request.resource.data.status == 'pendente'
+            && request.resource.data.role == 'participante'
+            // Autocadastro sempre nasce restrito ao Regulamento de Serviço — o admin é
+            // quem decide, depois, se essa pessoa ganha o portal completo (troca 2026-08-18:
+            // antes vinha sem escopo/portal inteiro e o admin tinha que restringir na mão).
+            && request.resource.data.escopo == 'servico'
+            && request.resource.data.nome is string && request.resource.data.nome.size() > 0 && request.resource.data.nome.size() <= 200
+            && request.resource.data.nomeGuerra is string && request.resource.data.nomeGuerra.size() <= 100
+            && request.resource.data.cidade is string && request.resource.data.cidade.size() <= 100
+            && request.resource.data.comando is string && request.resource.data.comando.size() <= 100
+            && request.resource.data.unidade is string && request.resource.data.unidade.size() <= 200
+            && request.resource.data.keys().hasOnly(
+                 ['email','nome','nomeGuerra','cidade','comando','unidade',
+                  'role','escopo','ativo','status','uid','criadoEm','criadoPor','ultimoLogin']));
+      allow delete: if isAdmin();
+      // O próprio dono pode mexer em uid/status/ultimoLogin (registro de login) — inclui a
+      // transição pendente→cadastrado quando a solicitação já foi aprovada.
       allow update: if isAdmin()
         || (request.auth != null && request.auth.token.email == email
             && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['uid','status','ultimoLogin']));
