@@ -72,7 +72,7 @@ function DocCard({ doc }) {
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 3, display: 'flex', alignItems: 'center', gap: 6 }}>
-          {doc.type}
+          {doc.title || doc.type}
           {pdfUrl && (
             <span style={{ fontSize: 10, color: 'var(--text-muted)', fontWeight: 500 }}>
               (PDF ↗)

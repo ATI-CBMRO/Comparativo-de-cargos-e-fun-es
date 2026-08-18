@@ -24,6 +24,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Acre - Organização Básica (Lei 2.009-2008 att Lei 4.428-2024).md",
           "char_count": 24121,
@@ -39,6 +40,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Acre - Organização Básica.md",
           "char_count": 10214,
@@ -487,6 +489,7 @@
       "documents": [
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 01.md",
           "char_count": 433269,
@@ -496,6 +499,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 03.md",
           "char_count": 44676,
@@ -505,6 +509,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 04.md",
           "char_count": 41975,
@@ -520,6 +525,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 05.md",
           "char_count": 12235,
@@ -529,6 +535,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 06.md",
           "char_count": 47838,
@@ -538,6 +545,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 07.md",
           "char_count": 22098,
@@ -547,6 +555,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Diretriz Operacional 08.md",
           "char_count": 19858,
@@ -556,6 +565,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Alagoas - Lei de Organização Básica.md",
           "char_count": 35259,
@@ -576,6 +586,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 01.md",
           "char_count": 10622,
@@ -585,6 +596,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 02.md",
           "char_count": 1569,
@@ -594,6 +606,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 03.md",
           "char_count": 7876,
@@ -603,6 +616,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 04.md",
           "char_count": 8370,
@@ -612,6 +626,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 05.md",
           "char_count": 6445,
@@ -621,6 +636,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 06.md",
           "char_count": 4862,
@@ -630,6 +646,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 07.md",
           "char_count": 6086,
@@ -639,6 +656,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 08.md",
           "char_count": 12056,
@@ -648,6 +666,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 09.md",
           "char_count": 9865,
@@ -657,6 +676,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 11.md",
           "char_count": 14453,
@@ -666,6 +686,7 @@
         },
         {
           "type": "Quadro Demonstrativo de Cargos",
+          "title": "Quadro Demonstrativo de Cargos",
           "typeVerified": true,
           "md_file": "Alagoas - Quadro Demonstrativo de Cargos e Funções.md",
           "char_count": 64659,
@@ -681,6 +702,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Alagoas - Regimento Interno.md",
           "char_count": 137848,
@@ -1555,6 +1577,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Amapá - Organização Básica.md",
           "char_count": 21812,
@@ -1830,6 +1853,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Amazonas - Organização Básica.md",
           "char_count": 52836,
@@ -1839,6 +1863,7 @@
         },
         {
           "type": "Quadro Demonstrativo de Cargos",
+          "title": "Quadro Demonstrativo de Cargos",
           "typeVerified": true,
           "md_file": "Amazonas - Quadro Demonstrativo de Cargos e Funções.md",
           "char_count": 41724,
@@ -2633,6 +2658,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Bahia - Organização Básica.md",
           "char_count": 55483,
@@ -2648,6 +2674,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Norma Administrativa",
           "typeVerified": false,
           "md_file": "Bahia - Regimento Interno.md",
           "char_count": 524632,
@@ -2657,6 +2684,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Norma Operacional",
           "typeVerified": false,
           "md_file": "Bahia - Regulamento de Serviço.md",
           "char_count": 57252,
@@ -3095,6 +3123,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Ceará - Organização Básica (Lei 13.438-2004).md",
           "char_count": 31277,
@@ -3104,6 +3133,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Ceará - Organização Básica.md",
           "char_count": 32554,
@@ -3445,6 +3475,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Distrito Federal - Organização Básica.md",
           "char_count": 32031,
@@ -3460,6 +3491,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Distrito Federal - Regimento Interno.md",
           "char_count": 647348,
@@ -4397,6 +4429,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Espírito Santo - Lei de Organização Básica.md",
           "char_count": 21583,
@@ -4417,6 +4450,7 @@
         },
         {
           "type": "Normas Gerais de Ação",
+          "title": "Normas Gerais de Ação",
           "typeVerified": true,
           "md_file": "Espírito Santo - Normas Gerais de Ação.md",
           "char_count": 1392715,
@@ -4947,6 +4981,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Goiás - Organização Básica (Lei 18.305-2013).md",
           "char_count": 26861,
@@ -4967,6 +5002,7 @@
         },
         {
           "type": "Quadro de Organização e Distribuição",
+          "title": "Quadro de Organização e Distribuição",
           "typeVerified": true,
           "md_file": "Goiás - Quadro de Organização e Distribuição de Efetivo.md",
           "char_count": 42009,
@@ -4987,6 +5023,7 @@
         },
         {
           "type": "Regimento de Serviços",
+          "title": "Regimento de Serviços",
           "typeVerified": true,
           "md_file": "Goiás - Regimento dos Serviços Interno e Operacional.md",
           "char_count": 52393,
@@ -5968,6 +6005,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Maranhão - Organização Básica.md",
           "char_count": 58363,
@@ -5988,6 +6026,7 @@
         },
         {
           "type": "Regimento de Serviços",
+          "title": "Regimento de Serviços",
           "typeVerified": true,
           "md_file": "Maranhão - Portaria 46.md",
           "char_count": 40893,
@@ -5997,6 +6036,7 @@
         },
         {
           "type": "Quadro de Organização e Distribuição",
+          "title": "Quadro de Organização e Distribuição",
           "typeVerified": true,
           "md_file": "Maranhão - Quadro de Organização e Distribuição.md",
           "char_count": 49664,
@@ -6661,6 +6701,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Mato Grosso - Organização Básica.md",
           "char_count": 83681,
@@ -6681,6 +6722,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Mato Grosso - Regimento Interno.md",
           "char_count": 272442,
@@ -7967,6 +8009,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Mato Grosso do Sul - Organização Básica.md",
           "char_count": 80490,
@@ -8515,6 +8558,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Minas Gerais - Organização Básica.md",
           "char_count": 17924,
@@ -8922,6 +8966,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Paraná - Organização Básica.md",
           "char_count": 45010,
@@ -8931,6 +8976,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Paraná - Regimento Interno.md",
           "char_count": 43750,
@@ -9365,6 +9411,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Paraíba - Organização Básica.md",
           "char_count": 602400,
@@ -10385,6 +10432,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Pará - Organização Básica.md",
           "char_count": 136202,
@@ -10394,6 +10442,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Pará - Regimento Interno.md",
           "char_count": 337431,
@@ -10403,6 +10452,7 @@
         },
         {
           "type": "Regimento de Serviços",
+          "title": "Regimento de Serviços",
           "typeVerified": true,
           "md_file": "Pará - Regulamento de serviço.md",
           "char_count": 164301,
@@ -11557,6 +11607,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Pernambuco - Organização Básica (Lei 15.187-2013).md",
           "char_count": 43723,
@@ -11572,6 +11623,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Pernambuco - Organização Básica.md",
           "char_count": 47830,
@@ -12209,6 +12261,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": false,
           "md_file": "Piauí - Organização Básica (Lei 5.949-2009 alt. Lei 7.772-2022).md",
           "char_count": 26552,
@@ -12218,6 +12271,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Piauí - Organização Básica.md",
           "char_count": 41418,
@@ -13576,6 +13630,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Rio Grande do Norte - Organização Básica.md",
           "char_count": 22297,
@@ -13596,6 +13651,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Rio Grande do Norte - Regimento Interno.md",
           "char_count": 65726,
@@ -14321,6 +14377,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Rio Grande do Sul - Organização Básica.md",
           "char_count": 14681,
@@ -14336,6 +14393,7 @@
         },
         {
           "type": "Regimento Interno",
+          "title": "Regimento Interno",
           "typeVerified": true,
           "md_file": "Rio Grande do Sul - Regimento Interno.md",
           "char_count": 192680,
@@ -15083,6 +15141,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Rio de Janeiro - Organização Básica.md",
           "char_count": 32000,
@@ -15767,6 +15826,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": false,
           "md_file": "Rondônia - LOB atual (2).md",
           "char_count": 118032,
@@ -15782,6 +15842,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Rondônia - Minuta de Lei de Organização Básica.md",
           "char_count": 75273,
@@ -15797,6 +15858,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": true,
           "md_file": "Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto 21.425-2016).md",
           "char_count": 47530,
@@ -17121,6 +17183,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Roraíma - Organização Básica.md",
           "char_count": 73202,
@@ -17146,6 +17209,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": false,
           "md_file": "Roraíma - Regulamento de Serviço.md",
           "char_count": 56545,
@@ -18695,6 +18759,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Santa Catarina - Organização Básica alterações.md",
           "char_count": 32902,
@@ -18720,6 +18785,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Santa Catarina - Organização Básica.md",
           "char_count": 49153,
@@ -19320,6 +19386,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Sergipe - Organização Básica (Lei 8.979-2022).md",
           "char_count": 29335,
@@ -19335,6 +19402,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Sergipe - Organização Básica.md",
           "char_count": 32836,
@@ -19344,6 +19412,7 @@
         },
         {
           "type": "Regimento de Serviços",
+          "title": "Regimento de Serviços",
           "typeVerified": true,
           "md_file": "Sergipe - Regulamento Interno.md",
           "char_count": 101234,
@@ -20425,6 +20494,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": false,
           "md_file": "São Paulo - Organização Básica (Lei 616-1974).md",
           "char_count": 29176,
@@ -20445,6 +20515,7 @@
         },
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": false,
           "md_file": "São Paulo - Organização Básica.md",
           "char_count": 102919,
@@ -20883,6 +20954,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Tocantins - Organização Básica.md",
           "char_count": 23364,
@@ -20898,6 +20970,7 @@
         },
         {
           "type": "Regulamento Geral",
+          "title": "Regulamento Geral",
           "typeVerified": false,
           "md_file": "Tocantins - Regulamento de Serviço.md",
           "char_count": 43137,

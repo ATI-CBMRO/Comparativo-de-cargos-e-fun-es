@@ -448,6 +448,18 @@ CONTENT_TYPE_OVERRIDES = {
     "Alagoas - Norma Operacional 11.md": "Regulamento Geral",
 }
 
+# Rótulo de EXIBIÇÃO por documento, quando difere do `type` (classificação
+# funcional usada na tabela de cobertura e não deve mudar). O CBMBA batiza seus
+# próprios instrumentos: o documento classificado como "Regimento Interno"
+# (função organizacional) se autodenomina "NORMA ADMINISTRATIVA" no cabeçalho
+# de todas as páginas; o "Regulamento de Serviço" se autodenomina "NORMA
+# OPERACIONAL". Achado na ingestão (conteúdo, não nome do arquivo — os PDFs
+# fonte continuam nomeados "Regimento Interno"/"Regulamento de Serviço").
+DOCUMENT_TITLE_OVERRIDES = {
+    "Bahia - Regimento Interno.md": "Norma Administrativa",
+    "Bahia - Regulamento de Serviço.md": "Norma Operacional",
+}
+
 # Grafias alternativas do MESMO estado no nome dos arquivos → nome canônico único.
 # Sem isso, "Roraíma" (grafia herdada do acervo antigo) e "Roraima" (grafia correta
 # dos arquivos novos) seriam agrupados como DOIS estados distintos. Canônico = a
@@ -581,6 +593,7 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
 
         doc_entry = {
             "type": doc_type,
+            "title": DOCUMENT_TITLE_OVERRIDES.get(md_file.name, doc_type),
             "typeVerified": state_id in CONTENT_VERIFIED_STATES or md_file.name in CONTENT_VERIFIED_FILES,
             "md_file": md_file.name,
             "char_count": len(text),

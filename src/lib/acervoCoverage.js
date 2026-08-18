@@ -48,6 +48,7 @@ function docInfo(doc) {
   const laws = doc.laws || []
   return {
     type: doc.type,
+    title: doc.title || doc.type,
     bucket: bucketOf(doc.type),
     label: docLabel(doc),
     lawText: laws.length ? laws.map(l => `${l.tipo} nº ${l.numero}`).join(' · ') : null,

@@ -170,6 +170,7 @@ function DetailView({ rows, onSelectState, onOpenPdf }) {
       || card.cbmAbbr?.toLowerCase().includes(q)
       || card.cbmName?.toLowerCase().includes(q)
       || d.type?.toLowerCase().includes(q)
+      || d.title?.toLowerCase().includes(q)
       || d.label?.toLowerCase().includes(q)
       || d.lawText?.toLowerCase().includes(q)
     ),
@@ -213,7 +214,7 @@ function DetailView({ rows, onSelectState, onOpenPdf }) {
                   <div key={i} className="acervo-detail-row">
                     <span className={`acervo-detail-tag col-${d.bucket}`}>{TYPE_SHORT[d.type] || SHORT[d.bucket]}</span>
                     <div className="acervo-detail-info">
-                      <div className="acervo-detail-title">{d.type}{d.lawText && <span className="acervo-detail-law"> · {d.lawText}</span>}</div>
+                      <div className="acervo-detail-title">{d.title}{d.lawText && <span className="acervo-detail-law"> · {d.lawText}</span>}</div>
                       <div className="acervo-detail-sub">
                         {d.year ? `${d.year}` : ''}{d.year && d.charCount ? ' · ' : ''}{d.charCount ? `${Math.round(d.charCount / 1000)}k car.` : ''}
                         {d.bucket !== 'lob' && (d.verified ? ' · ✓ conferido' : ' · ⚠ só por nome')}
@@ -244,7 +245,7 @@ function PdfModal({ doc, onClose }) {
       <div className="acervo-pdf-modal" role="dialog" aria-modal="true" aria-label={`PDF — ${doc.label}`}>
         <div className="acervo-pdf-hd">
           <div className="acervo-pdf-title">
-            <b>{doc.type} — {doc.label}</b>
+            <b>{doc.title} — {doc.label}</b>
             {doc.lawText && <small>{doc.lawText}</small>}
           </div>
           <a className="acervo-pdf-ext" href={doc.pdf} target="_blank" rel="noreferrer" title="Abrir em nova aba"><ExternalLink size={15} /></a>
