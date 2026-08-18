@@ -35,6 +35,7 @@ import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
 import EmConstrucao from './components/EmConstrucao.jsx'
 import MarcaPortal from './components/MarcaPortal.jsx'
 import AcervoPublico from './pages/AcervoPublico.jsx'
+import GuiaDocumentosModal from './components/GuiaDocumentosModal.jsx'
 import { useAuth } from './lib/auth.jsx'
 import { useScenario } from './context/ScenarioContext.jsx'
 import { rotaLiberadaNoEscopo } from './lib/escopoServico.js'
@@ -342,6 +343,7 @@ export default function App() {
         onClick={() => setNavOpen(false)}
         aria-hidden="true"
       />
+      <GuiaDocumentosModal />
       <main className="main-content">
         <GuardaDeEscopo>
         <Routes>
