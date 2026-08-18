@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useAuth } from '../lib/auth.jsx'
 import { contaStatus, situacaoMembro, normalizeEmail } from '../lib/membersStats.js'
 import {
-  subscribeMembers, addMember, setMemberRole, setMemberAtivo, removeMember,
+  subscribeMembers, addMember, setMemberRole, setMemberEscopo, setMemberAtivo, removeMember,
 } from '../lib/membersData.js'
 
 function formatLogin(ts) {
@@ -18,6 +18,10 @@ const BADGE = {
   bloqueado: { cls: 'b-bloq', txt: '🔴 Bloqueado' },
 }
 
+function linkConvite(email) {
+  return `${window.location.origin}/cadastro?email=${encodeURIComponent(email)}`
+}
+
 export default function Acessos() {
   const { user } = useAuth()
   const [members, setMembers] = useState([])
@@ -26,6 +30,8 @@ export default function Acessos() {
   const [email, setEmail] = useState('')
   const [nome, setNome] = useState('')
   const [role, setRole] = useState('participante')
+  const [escopo, setEscopo] = useState('')
+  const [linkCopiado, setLinkCopiado] = useState(null)
 
   useEffect(() => subscribeMembers(
     setMembers,
@@ -44,8 +50,8 @@ export default function Acessos() {
     }
     setErro(null)
     try {
-      await addMember({ email, nome, role }, user.email)
-      setEmail(''); setNome(''); setRole('participante'); setAbrindo(false)
+      await addMember({ email, nome, role, escopo }, user.email)
+      setEmail(''); setNome(''); setRole('participante'); setEscopo(''); setAbrindo(false)
     } catch (err) {
       console.error(err); setErro('Não foi possível adicionar a pessoa.')
     }
@@ -55,6 +61,10 @@ export default function Acessos() {
     try { await setMemberRole(m.email, m.role === 'admin' ? 'participante' : 'admin') }
     catch (err) { console.error(err); setErro('Não foi possível alterar o papel da pessoa.') }
   }
+  const alternarEscopo = async (m) => {
+    try { await setMemberEscopo(m.email, m.escopo === 'servico' ? '' : 'servico') }
+    catch (err) { console.error(err); setErro('Não foi possível alterar o alcance da pessoa.') }
+  }
   const alternarAtivo = async (m) => {
     try { await setMemberAtivo(m.email, !m.ativo) }
     catch (err) { console.error(err); setErro('Não foi possível alterar o acesso da pessoa.') }
@@ -63,6 +73,15 @@ export default function Acessos() {
     if (!window.confirm(`Remover ${m.email}? As sugestões já enviadas permanecem.`)) return
     try { await removeMember(m.email) }
     catch (err) { console.error(err); setErro('Não foi possível remover a pessoa.') }
+  }
+  const copiarLink = async (m) => {
+    try {
+      await navigator.clipboard.writeText(linkConvite(m.email))
+      setLinkCopiado(m.email)
+      setTimeout(() => setLinkCopiado(prev => (prev === m.email ? null : prev)), 2000)
+    } catch (err) {
+      console.error(err); setErro('Não foi possível copiar o link. Copie manualmente pela barra de endereço.')
+    }
   }
 
   return (
@@ -101,6 +120,15 @@ export default function Acessos() {
               <option value="admin">Administrador</option>
             </select>
           </div>
+          {role !== 'admin' && (
+            <div className="acc-fld">
+              <label>Alcance</label>
+              <select value={escopo} onChange={e => setEscopo(e.target.value)}>
+                <option value="">Portal completo</option>
+                <option value="servico">Só Regulamento de Serviço</option>
+              </select>
+            </div>
+          )}
           <button type="submit" className="acc-add">Adicionar à lista</button>
         </form>
       )}
@@ -108,7 +136,7 @@ export default function Acessos() {
       <div className="acc-panel">
         <table className="acc-table">
           <thead>
-            <tr><th>Pessoa</th><th>Papel</th><th>Status</th><th>Último login</th><th style={{ textAlign: 'right' }}>Ações</th></tr>
+            <tr><th>Pessoa</th><th>Papel</th><th>Alcance</th><th>Status</th><th>Último login</th><th style={{ textAlign: 'right' }}>Ações</th></tr>
           </thead>
           <tbody>
             {members.map(m => {
@@ -123,6 +151,7 @@ export default function Acessos() {
                     <div className="acc-mail">{m.email}</div>
                   </td>
                   <td><span className={`acc-papel${m.role === 'admin' ? ' adm' : ''}`}>{m.role === 'admin' ? 'Administrador' : 'Participante'}</span></td>
+                  <td className="acc-mail">{m.role === 'admin' ? '—' : (m.escopo === 'servico' ? 'Só Regulamento de Serviço' : 'Portal completo')}</td>
                   <td><span className={`acc-badge ${badge.cls}`}>{badge.txt}</span></td>
                   <td className={login ? 'acc-quando' : 'acc-nunca'}>{login ?? 'nunca entrou'}</td>
                   <td>
@@ -130,7 +159,15 @@ export default function Acessos() {
                       <div className="acc-acts"><span className="acc-eu">você</span></div>
                     ) : (
                       <div className="acc-acts">
+                        <button type="button" className="acc-ic" onClick={() => copiarLink(m)}>
+                          {linkCopiado === m.email ? 'copiado!' : 'link de convite'}
+                        </button>
                         <button type="button" className="acc-ic" onClick={() => alternarPapel(m)}>papel</button>
+                        {m.role !== 'admin' && (
+                          <button type="button" className="acc-ic" onClick={() => alternarEscopo(m)}>
+                            {m.escopo === 'servico' ? 'liberar portal' : 'restringir a serviço'}
+                          </button>
+                        )}
                         <button type="button" className="acc-ic" onClick={() => alternarAtivo(m)}>{m.ativo ? 'bloquear' : 'liberar'}</button>
                         <button type="button" className="acc-ic danger" onClick={() => remover(m)}>remover</button>
                       </div>
