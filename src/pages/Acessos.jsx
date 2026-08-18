@@ -5,6 +5,8 @@ import {
   subscribeMembers, setMemberRole, setMemberEscopo, setMemberAtivo, removeMember,
   recusarSolicitacao,
 } from '../lib/membersData.js'
+import { subscribeVisitantes } from '../lib/visitantesData.js'
+import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 function formatLogin(ts) {
   if (!ts || typeof ts.toDate !== 'function') return null
@@ -24,10 +26,20 @@ export default function Acessos() {
   const { user } = useAuth()
   const [members, setMembers] = useState([])
   const [erro, setErro] = useState(null)
+  const [visitantes, setVisitantes] = useState([])
+  const [erroVisitantes, setErroVisitantes] = useState(false)
 
   useEffect(() => subscribeMembers(
     setMembers,
     (e) => { console.error('Erro ao carregar membros:', e); setErro('Não foi possível carregar a lista de acessos.') },
+  ), [])
+
+  // Erro visível na tela, nunca só no console (AR-04): sem isto, uma queda do feed
+  // deixaria a seção mostrando "nenhum visitante" — que é indistinguível de "ninguém
+  // acessou ainda" e mente para o administrador.
+  useEffect(() => subscribeVisitantes(
+    (lista) => { setVisitantes(lista); setErroVisitantes(false) },
+    (e) => { console.error('Erro ao carregar visitantes:', e); setErroVisitantes(true) },
   ), [])
 
   const stats = useMemo(() => contaStatus(members), [members])
@@ -149,6 +161,47 @@ export default function Acessos() {
                 </tr>
               )
             })}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 className="acc-sec-title">Visitantes do acervo público</h3>
+      <p className="acc-sub">
+        Quem consultou o acervo pela página pública, sem login. Registro de histórico — não há
+        aprovação nem bloqueio: o acervo é público por decisão do comando.
+      </p>
+
+      <AvisoSincronizacao visivel={erroVisitantes}>
+        Não foi possível carregar a lista de visitantes agora — o que aparece abaixo pode estar
+        incompleto ou desatualizado.
+      </AvisoSincronizacao>
+
+      <div className="acc-panel">
+        <table className="acc-table">
+          <thead>
+            <tr>
+              <th>Visitante</th><th>Instituição</th><th>Primeiro acesso</th><th>Último acesso</th>
+            </tr>
+          </thead>
+          <tbody>
+            {visitantes.length === 0 && !erroVisitantes && (
+              <tr><td colSpan={4} className="acc-mail">Nenhum visitante registrado até agora.</td></tr>
+            )}
+            {visitantes.map(v => (
+              <tr key={v.id}>
+                <td>
+                  <div className="acc-nome">{v.nome}</div>
+                  <div className="acc-mail">{v.email}</div>
+                </td>
+                <td className="acc-papel">{v.instituicao}</td>
+                <td className={formatLogin(v.criadoEm) ? 'acc-quando' : 'acc-nunca'}>
+                  {formatLogin(v.criadoEm) ?? '—'}
+                </td>
+                <td className={formatLogin(v.ultimoAcesso) ? 'acc-quando' : 'acc-nunca'}>
+                  {formatLogin(v.ultimoAcesso) ?? '—'}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

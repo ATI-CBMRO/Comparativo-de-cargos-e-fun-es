@@ -3173,3 +3173,4 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   .pub-nav-quem { width: 100%; margin: 4px 0 0; }
   .pub-main { padding: 16px 12px 32px; }
 }
+.acc-sec-title { font-size: 17px; color: #121d3d; margin: 28px 0 2px; }
