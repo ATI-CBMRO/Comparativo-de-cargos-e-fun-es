@@ -16,3 +16,18 @@ No editor de Regras, use **Simulação/Playground**:
 - Leitura autenticado como um UID **com** `ativo:true` → deve **permitir**.
 - `create` em `suggestions` com `autorUid` ≠ uid do autenticado → deve **negar**.
 - `write` em `finalTexts` autenticado como `participante` → deve **negar**; como `admin` → **permitir**.
+
+## Acervo público (visitante sem login) — 2026-08-18
+
+Dois passos **manuais** no console do projeto `revisao-minuta-cbmro-6f248`, na conta
+institucional (o CLI local está numa conta pessoal sem acesso ao projeto):
+
+1. **Authentication → Sign-in method → Anônimo → Ativar.** Sem isso o cadastro do
+   visitante falha com `auth/operation-not-allowed`, e a tela mostra
+   "O acesso público ainda não foi habilitado no servidor".
+2. **Firestore → Regras:** publicar o `firestore.rules` deste repositório, que passou a
+   conter o bloco `match /visitantes/{uid}`.
+
+Conferência depois de publicar: abrir `/acervo-publico` numa janela anônima, preencher o
+cadastro e verificar se a pessoa aparece em `/acessos`, seção "Visitantes do acervo
+público".
