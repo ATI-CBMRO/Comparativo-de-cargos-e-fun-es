@@ -4,7 +4,9 @@ import { Info } from 'lucide-react'
 // o que ficou para a 2ª etapa: a análise transversal mostrou que a lacuna do recorte é
 // CONCEITUAL (matéria pressuposta), não textual — a minuta tem 1 única remissão a
 // "Art. N" em todo o recorte, e ela é externa. Lacuna declarada é escopo.
-export default function NotaEscopoServico({ artigosNoEscopo, artigosFora, capitulosFora }) {
+export default function NotaEscopoServico({
+  artigosNoEscopo, artigosEmCapitulosFora, capitulosFora, artigosCortadosNoEscopo,
+}) {
   return (
     <aside className="nota-escopo">
       <Info className="nota-escopo-ico" size={18} aria-hidden="true" />
@@ -19,7 +21,15 @@ export default function NotaEscopoServico({ artigosNoEscopo, artigosFora, capitu
         {capitulosFora.length > 0 && (
           <p>
             Ficam para a 2ª etapa, no Regulamento Geral completo,{' '}
-            <strong>{artigosFora} artigos</strong>: {capitulosFora.join('; ')}.
+            <strong>{artigosEmCapitulosFora} artigos</strong>: {capitulosFora.join('; ')}.
+          </p>
+        )}
+        {artigosCortadosNoEscopo > 0 && (
+          <p>
+            No capítulo das Atribuições das Funções constam apenas as funções do Comando
+            Operacional de Bombeiros e da Coordenadoria de Atividades Técnicas —{' '}
+            <strong>{artigosCortadosNoEscopo} artigos</strong> das funções dos demais órgãos
+            ficam para o Regulamento Geral completo.
           </p>
         )}
         <p className="nota-escopo-aviso">

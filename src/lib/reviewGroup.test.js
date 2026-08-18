@@ -115,3 +115,47 @@ test('filterFinalsByScenario separa os textos finais por cenário', () => {
   assert.equal(filterFinalsByScenario(finals, 'atual').size, 1)
   assert.ok(filterFinalsByScenario(finals, 'atual').has('atual:organ:cg/competencia#0'))
 })
+
+// Finding 3 (revisão final do branch fix/regulamento-servico-fase2, 2026-08-18):
+// se-art-113/se-art-48/se-art-49 foram removidos do documento numa tarefa anterior, mas
+// as sugestões sobre eles continuam existindo no Firestore. Sem filtro, `countByChapter`
+// as conta pelo chapterId derivado do editId mesmo sem o artigo mais existir na estrutura
+// atual — inflando o número do trilho de capítulos com comentários que o leitor nunca vai
+// conseguir abrir. `editIdsValidos` (5º parâmetro opcional) resolve isso no código, sem
+// tocar o Firestore.
+const editIdValido = 'reg:servico-operacional/se-art-30'
+const editIdRemovido = 'reg:servico-operacional/se-art-113'
+const chapterIdServico = chapterIdOf(editIdValido) // mesmo capítulo para os dois editIds
+
+const sugestoesComOrfa = () => ([
+  { dispositivoId: `${editIdValido}#caput` }, // fica aberta (sem final)
+  { dispositivoId: `${editIdValido}#0` },     // fica resolvida (final "fechado")
+  { dispositivoId: `${editIdRemovido}#0` },   // órfã: editId não existe mais na estrutura
+])
+
+test('countByChapter sem editIdsValidos conta todas as sugestões (comportamento de sempre)', () => {
+  const map = countByChapter(sugestoesComOrfa(), new Map(), parseDispositivoId, chapterIdOf)
+  const entry = map.get(chapterIdServico)
+  assert.equal(entry.open, 3)
+  assert.equal(entry.resolved, 0)
+})
+
+test('countByChapter com editIdsValidos ignora sugestão de editId removido (não conta aberta nem resolvida)', () => {
+  const editIdsValidos = new Set([editIdValido]) // se-art-113 NÃO está no set
+  // Mesmo com um final "fechado" associado, a sugestão órfã não deve contar em lado
+  // nenhum — o filtro descarta ANTES de olhar `finals`.
+  const finals = new Map([[`${editIdRemovido}#0`, { status: 'fechado' }]])
+  const map = countByChapter(sugestoesComOrfa(), finals, parseDispositivoId, chapterIdOf, editIdsValidos)
+  const entry = map.get(chapterIdServico)
+  assert.equal(entry.open, 2)     // caput + #0 do editId válido, nenhum tem final aqui
+  assert.equal(entry.resolved, 0) // a sugestão órfã (com final "fechado") não conta
+})
+
+test('countByChapter com editIdsValidos conta normalmente sugestão de editId válido, respeitando finals', () => {
+  const editIdsValidos = new Set([editIdValido]) // se-art-113 continua fora
+  const finals = new Map([[`${editIdValido}#0`, { status: 'fechado' }]])
+  const map = countByChapter(sugestoesComOrfa(), finals, parseDispositivoId, chapterIdOf, editIdsValidos)
+  const entry = map.get(chapterIdServico)
+  assert.equal(entry.open, 1)     // caput, sem final
+  assert.equal(entry.resolved, 1) // #0, com final "fechado"
+})

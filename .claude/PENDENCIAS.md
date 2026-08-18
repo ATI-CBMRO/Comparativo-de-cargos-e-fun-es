@@ -2,6 +2,38 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Capítulo V (COB/CAT) — cadeia de comando abaixo do SGBM ficou órfã** (achado
+  18/08/2026, na revisão final da 2ª rodada de curadoria). O spec pedia "até a menor função";
+  os 19 artigos autorais vão até o Comandante de Subgrupamento e param. Conferido contra a
+  LOB (Art. 47, red. Lei 4.303/2018): existem Seção de Comando e Serviço, Seção de Bombeiros,
+  Grupo de Bombeiros e Destacamento de Bombeiros (incisos IV-VII), nenhum com artigo próprio,
+  e existe o **Subcomandante do GBM** (Art. 47, §1º, I, "b"), cujo equivalente antigo
+  (`mt-art-256`) foi removido sem substituto — assimetria visível, já que a mesma rodada deu
+  artigo de "Adjunto" a COB, CAT e DAT. Não bloqueou o merge (a lacuna já existia, coberta
+  antes por nome errado de MT); registrar para quando a 3ª rodada acontecer.
+- [ ] **Resíduos pré-existentes visíveis no recorte "Regulamento de Serviço"** (achados
+  18/08/2026 na revisão final, não introduzidos pela 2ª rodada — herança do transplante de
+  MT/SE): concordância de gênero quebrada em "ao Central Integrada de Operações" /
+  "por intermédio do Central Integrada de Operações" (`se-art-85`, `mt-art-236`, artefato do
+  `ADAPTATIONS`); rodapé de publicação de MT colado no caput do artigo de fecho (`mt-art-266`:
+  "Este texto não substitui o publicado no Boletim Ger…"); sigla "CIOSP" em `se-art-116`
+  inciso II que pode ser resíduo de Sergipe (em RO a NGA usa "CIOP") — conferir com o Ten.
+  Tiago antes de trocar.
+- [ ] **3ª rodada de curadoria do Regulamento de Serviço — 45 sugestões de mérito ainda
+  abertas** (achado 18/08/2026, na conferência final da 2ª rodada —
+  `docs/curadoria/conferencia-71-sugestoes.md`). Das 71 sugestões do Firestore sobre o
+  Regulamento, 26 foram fechadas por esta rodada (15 resolvidas + 8 endereçadas + 3 achadas e
+  corrigidas na própria conferência — "Seção de Recursos Humanos"→"Seção de Pessoal" em
+  se-art-26/30/37, fora do levantamento original por não citarem "Supervisor de Dia"). As 45
+  restantes são majoritariamente perguntas de mérito operacional, não ortografia: bloco
+  `se-art-23` (8, problema de segmentação de inciso na extração), bloco `se-art-135` (5,
+  cobertura de GOA/SAMU no interior), bloco `se-art-127` (3, Parte Especial), 5 sugestões de
+  "duplicidade entre artigos" a decidir qual fica, 4 de "a quem compete" (hierarquia), 4 sobre
+  Oficial/Superior de Dia que pedem mudança de REGRA (não só de nome — ex.: `se-art-132`
+  propõe trocar "presença do Oficial de Dia" por "ciência ao Superior de Dia"), 7 do Wândrio
+  em `organizacao-geral`/`disposicoes-preliminares` (fora do recorte tocado), e 9 diversas.
+  Uma sugestão (`mt-art-1`, autor "Wandrio teste") é lixo de teste — recomendado exclusão
+  direto no app. Ver o documento para a lista completa dispositivo a dispositivo.
 - [ ] **Regulamento Geral completo — Parte I (arts. 1-257) ainda é o transplante bruto de MT**
   (achado 18/08/2026, ao levantar a 2ª rodada de curadoria do Regulamento de Serviço; o Ten.
   Tiago determinou "fica para um segundo plano"). Na visão admin (16 capítulos), a Parte I

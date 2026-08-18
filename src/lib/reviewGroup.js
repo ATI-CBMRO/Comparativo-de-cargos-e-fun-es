@@ -56,10 +56,20 @@ export function countByDispositivo(suggestions) {
 // Sugestões por capítulo, separadas em abertas × resolvidas (usada pelo sumário de
 // capítulos da Revisão da Minuta). `parseDispositivoId`/`chapterIdOf` e `finals` (Map
 // dispositivoId -> {status}) vêm de fora — função pura, sem depender de React/Firebase.
-export function countByChapter(suggestions, finals, parseDispositivoId, chapterIdOf) {
+//
+// `editIdsValidos` (opcional): Set<string> com os editIds que existem na estrutura ATUAL.
+// Quando informado, sugestões cujo editId não está no set são descartadas ANTES de contar
+// — uma tarefa anterior pode ter removido o artigo/dispositivo do documento (ex.:
+// se-art-113, se-art-48, se-art-49), mas a sugestão continua existindo no Firestore; sem
+// esse filtro ela infla o número do trilho de capítulos com um comentário que o leitor
+// nunca vai conseguir abrir, porque o artigo dele sumiu. Quando omitido, o comportamento é
+// o de sempre (nenhuma sugestão é descartada), para não quebrar quem já chama a função sem
+// esse argumento.
+export function countByChapter(suggestions, finals, parseDispositivoId, chapterIdOf, editIdsValidos) {
   const map = new Map()
   for (const s of suggestions) {
     const { editId } = parseDispositivoId(s.dispositivoId)
+    if (editIdsValidos && !editIdsValidos.has(editId)) continue
     const chapterId = chapterIdOf(editId)
     const entry = map.get(chapterId) ?? { open: 0, resolved: 0 }
     const resolvida = finals.get(s.dispositivoId)?.status === 'fechado'

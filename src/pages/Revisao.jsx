@@ -23,7 +23,7 @@ import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
-import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
+import { filtrarEstruturaPorEscopo, resumoForaDoEscopo } from '../lib/escopoServico.js'
 import NotaEscopoServico from '../components/NotaEscopoServico.jsx'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
@@ -54,6 +54,19 @@ export default function Revisao({ initialDoc, escopo } = {}) {
   // Recorte setorizado (spec 2026-08-13). `data` segue com o documento COMPLETO — é dela
   // que sai a contagem do que ficou de fora, para a nota de escopo. Sem escopo, é no-op.
   const dataEscopo = useMemo(() => filtrarEstruturaPorEscopo(data, escopo), [data, escopo])
+
+  // editIds que existem na estrutura ATUAL (documento COMPLETO, não `dataEscopo`): um
+  // artigo removido é removido em qualquer visão, mas um artigo só fora do recorte por
+  // escopo/órgão continua existindo no documento e deve continuar contando na visão do
+  // admin. Usado por `countByChapter` para não contar sugestões órfãs (Finding 3, revisão
+  // final 2026-08-18) — sugestão sobre artigo removido não deve inflar o trilho de
+  // capítulos, porque o leitor não consegue abrir o dispositivo.
+  const editIdsValidos = useMemo(() => {
+    if (!data) return undefined
+    const s = new Set()
+    for (const c of data.chapters ?? []) for (const a of c.articles ?? []) s.add(a.editId)
+    return s
+  }, [data])
 
   const alternativesAberto = useMemo(() => {
     if (!aberto || !dataEscopo) return {}
@@ -114,15 +127,12 @@ export default function Revisao({ initialDoc, escopo } = {}) {
     [docId, dataEscopo, escopo],
   )
   // Números da nota de escopo, calculados dos dados reais — nunca cravados no código.
+  // Separa os dois tipos de corte: capítulos inteiros fora do recorte × artigos cortados
+  // DENTRO de um capítulo que ficou (capítulo misto) — ver escopoServico.js.
   const foraDoEscopo = useMemo(() => {
     if (!escopo || !data) return null
-    const idsNoEscopo = new Set((dataEscopo?.chapters ?? []).map(c => c.id))
-    const capitulos = data.chapters.filter(c => !idsNoEscopo.has(c.id))
-    return {
-      artigos: buildArticles(data).length - articles.length,
-      titulos: capitulos.map(c => c.chapterTitle).filter(Boolean),
-    }
-  }, [escopo, data, dataEscopo, articles])
+    return resumoForaDoEscopo(data, dataEscopo, escopo)
+  }, [escopo, data, dataEscopo])
   const fechados = useMemo(() => {
     let n = 0
     finalsForDoc.forEach(f => { if (f.status === 'fechado') n += 1 })
@@ -140,8 +150,8 @@ export default function Revisao({ initialDoc, escopo } = {}) {
 
   // Sugestões por capítulo, separadas em abertas × resolvidas (pelo status do texto final).
   const chapterCounts = useMemo(
-    () => countByChapter(suggestionsForDoc, finalsForDoc, parseDispositivoId, chapterIdOf),
-    [suggestionsForDoc, finalsForDoc],
+    () => countByChapter(suggestionsForDoc, finalsForDoc, parseDispositivoId, chapterIdOf, editIdsValidos),
+    [suggestionsForDoc, finalsForDoc, editIdsValidos],
   )
 
   const [activeChapterId, setActiveChapterId] = useState(null)
@@ -255,8 +265,9 @@ export default function Revisao({ initialDoc, escopo } = {}) {
           {foraDoEscopo && (
             <NotaEscopoServico
               artigosNoEscopo={articles.length}
-              artigosFora={foraDoEscopo.artigos}
-              capitulosFora={foraDoEscopo.titulos}
+              artigosEmCapitulosFora={foraDoEscopo.artigosEmCapitulosFora}
+              capitulosFora={foraDoEscopo.capitulosFora}
+              artigosCortadosNoEscopo={foraDoEscopo.artigosCortadosNoEscopo}
             />
           )}
           {(() => {

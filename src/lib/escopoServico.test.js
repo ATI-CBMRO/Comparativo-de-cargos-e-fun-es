@@ -1,6 +1,9 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { TEMAS_SERVICO, temaDoCapitulo, filtrarEstruturaPorEscopo, rotaLiberadaNoEscopo } from './escopoServico.js'
+import {
+  TEMAS_SERVICO, temaDoCapitulo, filtrarEstruturaPorEscopo, rotaLiberadaNoEscopo,
+  resumoForaDoEscopo,
+} from './escopoServico.js'
 
 // Estrutura-fake na MESMA ordem do arquivo real: a Parte I inteira antes da Parte II,
 // com "disposicoes-finais" na posição 12 — é justamente o que o recorte precisa corrigir.
@@ -31,10 +34,10 @@ const estruturaAtual = () => ({
 test('TEMAS_SERVICO tem os 7 temas do recorte, na ordem de leitura', () => {
   assert.deepEqual(TEMAS_SERVICO, [
     'disposicoes-preliminares',
+    'atribuicoes-funcoes',
     'servico-operacional',
     'central-operacoes-193',
     'servico-interno-dia',
-    'atribuicoes-funcoes',
     'seguranca-contra-incendio',
     'disposicoes-finais',
   ])
@@ -126,4 +129,66 @@ test('prefixo parecido não libera por engano', () => {
   // "/manualzinho" não pode passar só por começar com "/manual".
   assert.equal(rotaLiberadaNoEscopo('/manualzinho', 'servico'), false)
   assert.equal(rotaLiberadaNoEscopo('/regulamento/servicos', 'servico'), false)
+})
+
+// --- Filtro por ARTIGO dentro do capítulo (Capítulo V misto, 2026-08-18) ---
+// O capítulo das Atribuições das Funções passa a conter dois níveis de curadoria: os
+// artigos de COB/CAT (reescritos sobre a LOB de RO) e os demais órgãos (ainda transplante
+// de MT, que só o documento completo mostra).
+const comCapituloMisto = () => ({
+  title: 'Regulamento Geral',
+  chapters: [
+    { id: 'reg:atual:disposicoes-preliminares', parte: 'geral', articles: [{ editId: 'a1' }] },
+    {
+      id: 'reg:atual:atribuicoes-funcoes',
+      parte: 'servico',
+      articles: [
+        { editId: 'cob-1', orgao: 'cob' },
+        { editId: 'mt-art-62' },              // sem tag: órgão fora do escopo
+        { editId: 'cat-1', orgao: 'cat' },
+        { editId: 'mt-art-63', orgao: 'emg' }, // tag de órgão fora do escopo
+      ],
+    },
+    { id: 'reg:atual:disposicoes-finais', parte: 'geral', articles: [{ editId: 'z1' }] },
+  ],
+})
+
+test('no capítulo misto, mantém só os artigos de COB e CAT', () => {
+  const r = filtrarEstruturaPorEscopo(comCapituloMisto(), 'servico')
+  const cap = r.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  assert.deepEqual(cap.articles.map(a => a.editId), ['cob-1', 'cat-1'])
+})
+
+test('capítulo NÃO listado para filtro de órgão mantém todos os artigos', () => {
+  const r = filtrarEstruturaPorEscopo(comCapituloMisto(), 'servico')
+  const prelim = r.chapters.find(c => temaDoCapitulo(c.id) === 'disposicoes-preliminares')
+  assert.equal(prelim.articles.length, 1, 'Preliminares não sofre filtro por órgão')
+})
+
+test('filtro por artigo não muta a estrutura original', () => {
+  const original = comCapituloMisto()
+  filtrarEstruturaPorEscopo(original, 'servico')
+  const cap = original.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  assert.equal(cap.articles.length, 4, 'a estrutura original não pode ser alterada')
+})
+
+test('sem escopo, o capítulo misto sai inteiro (visão do documento completo)', () => {
+  const original = comCapituloMisto()
+  assert.equal(filtrarEstruturaPorEscopo(original, null), original)
+})
+
+test('capítulo misto sem o campo articles não quebra o filtro', () => {
+  const semArtigos = comCapituloMisto()
+  const cap = semArtigos.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  delete cap.articles
+  const r = filtrarEstruturaPorEscopo(semArtigos, 'servico')
+  const capFiltrado = r.chapters.find(c => temaDoCapitulo(c.id) === 'atribuicoes-funcoes')
+  assert.equal(capFiltrado.articles, undefined)
+})
+
+test('resumoForaDoEscopo separa capítulos inteiros de artigos cortados', () => {
+  const completa = comCapituloMisto()
+  const r = resumoForaDoEscopo(completa, filtrarEstruturaPorEscopo(completa, 'servico'), 'servico')
+  assert.equal(r.artigosCortadosNoEscopo, 2, 'mt-art-62 e mt-art-63 saíram do capítulo misto')
+  assert.deepEqual(r.capitulosFora, [], 'a estrutura-fake só tem capítulos do escopo')
 })
