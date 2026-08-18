@@ -19,7 +19,11 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (fbUser) => {
-      if (!fbUser) {
+      // Sessão ANÔNIMA é do visitante do acervo público (src/lib/visitante.jsx) e não
+      // pertence a este provedor: ela não tem e-mail, então a checagem de members faria
+      // doc(db,'members','') — caminho vazio — e o signOut abaixo derrubaria o visitante.
+      // `user` continua significando "membro autorizado", e só isso.
+      if (!fbUser || fbUser.isAnonymous) {
         setUser(null); setNaoAutorizado(false); setPendente(false); setLoading(false)
         return
       }

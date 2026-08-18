@@ -2,6 +2,14 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Acervo público — dois passos manuais no console do Firebase** (entrega de
+  18/08/2026). Na conta institucional (`revisao-minuta-cbmro-6f248`): (1) Authentication →
+  Sign-in method → **Anônimo** → Ativar; (2) publicar o `firestore.rules`, que ganhou o
+  bloco `match /visitantes/{uid}`. Sem o passo 1 o cadastro do visitante falha com
+  `auth/operation-not-allowed` (a tela avisa isso em português). Ver
+  `docs/FIREBASE_SETUP.md`, seção "Acervo público".
+- [ ] **Acervo público — conferência visual das telas** (o agente não tem navegador). Roteiro
+  de 7 itens no fim de `docs/superpowers/plans/2026-08-18-acervo-publico-visitante.md`.
 - [ ] **Capítulo V (COB/CAT) — cadeia de comando abaixo do SGBM ficou órfã** (achado
   18/08/2026, na revisão final da 2ª rodada de curadoria). O spec pedia "até a menor função";
   os 19 artigos autorais vão até o Comandante de Subgrupamento e param. Conferido contra a
@@ -553,3 +561,7 @@
 - [x] Reforma das minutas (trilhas espelhadas, Subsídio unificado, Manual, menu enxuto) — EM PRODUÇÃO junto do PR #10 — 10/07/2026.
 - [x] Login — link "Primeiro acesso? Criar minha senha" → /cadastro; EM PRODUÇÃO via PR #11 — 10/07/2026.
 - [x] Faxina do CLAUDE.md — 481→225 linhas (~9k→~3,6k tokens) + correção de defasagens pós-reforma; mesclada via PR #12 — 10/07/2026.
+- [x] **Acervo público (terceiro perfil — visitante sem login)** — 18/08/2026. Rota própria
+  `/acervo-publico` fora do portal autenticado, cadastro básico (nome, e-mail, instituição),
+  sessão anônima do Firebase, coleção `visitantes` (só o admin lê) e lista somente leitura em
+  `/acessos`. O visitante nunca vira `user`. Spec e plano em `docs/superpowers/`.

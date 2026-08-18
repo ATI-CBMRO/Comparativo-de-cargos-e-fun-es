@@ -404,6 +404,20 @@ convite; `/cadastro` foi removido, link antigo só redireciona). `GuardaDeEscopo
 bloqueia navegação fora do recorte por URL direta para quem tem escopo (`NAV_ESCOPO` restringe
 o menu).
 
+**Terceiro perfil — acervo público (2026-08-18, spec `2026-08-18-acervo-publico-visitante-design.md`):**
+`/acervo-publico` responde **sem login**, fora do portal autenticado. O visitante preenche um
+cadastro básico (nome, e-mail, instituição), entra por **sessão anônima do Firebase** e enxerga
+só o Acervo (`Legislations`), a ficha do estado e a busca — montadas sob o prefixo pelo
+`AcervoBaseProvider` (`src/context/AcervoBaseContext.jsx`), sem fork das telas.
+**O visitante NUNCA vira `user`**: `VisitanteProvider` (`src/lib/visitante.jsx`) é independente
+do `AuthProvider`, que agora ignora sessões anônimas (`fbUser.isAnonymous`) — sem essa guarda
+a checagem de membro faria `doc(db,'members','')` e o `signOut` derrubaria o visitante.
+Registro em `visitantes/{uid}` (só o admin lê; `isMember()` continua exigindo `token.email`,
+então a curadoria segue fechada ao visitante pelo BANCO). Lógica pura testada em
+`src/lib/visitante.js`. Atenção ao `voltarParaEstados()`: no visitante vai para
+`/acervo-publico` e **não** para `/estados`, que está fora do recorte.
+Exige o provedor **Anônimo** habilitado no console do Firebase (ver `docs/FIREBASE_SETUP.md`).
+
 **Ver referências** (23/07/2026): botão retrátil "Ver referências (N)" no cabeçalho do
 popup de Revisão (`RevisaoModal.jsx`) mostra o Bloco D (excertos verbatim de outros
 estados) do capítulo/órgão do dispositivo aberto, via `AlternativesPanel.jsx` — o mesmo

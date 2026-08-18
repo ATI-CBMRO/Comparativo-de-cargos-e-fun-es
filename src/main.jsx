@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import { AuthProvider } from './lib/auth.jsx'
 import { ScenarioProvider } from './context/ScenarioContext.jsx'
+import { VisitanteProvider } from './lib/visitante.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,7 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <AuthProvider>
         <ScenarioProvider>
-          <App />
+          <VisitanteProvider>
+            <App />
+          </VisitanteProvider>
         </ScenarioProvider>
       </AuthProvider>
     </BrowserRouter>
