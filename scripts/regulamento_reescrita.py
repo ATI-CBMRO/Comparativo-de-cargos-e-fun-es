@@ -1473,6 +1473,13 @@ SUBSTITUIR_TERMOS = {
                       # Resíduo de extração: o título da seção seguinte ("Oficial de Dia")
                       # ficou grudado no fim do caput. Corrigido junto (de-para).
                       ('estadual. Oficial de Dia', 'estadual.')],
+        # Mesmo defeito do se-art-34 (o COB não tem "Seção de Recursos Humanos" — na LOB
+        # Art. 35, parágrafo único, III, é "Seção de Pessoal"), achado na conferência das
+        # sugestões dos usuários no Firestore: estes 3 artigos não continham "Supervisor
+        # de Dia" e por isso escaparam do levantamento original da Task 4.
+        'se-art-26': [('Seção de Recursos Humanos', 'Seção de Pessoal')],
+        'se-art-30': [('Seção de Recursos Humanos', 'Seção de Pessoal')],
+        'se-art-37': [('Seção de Recursos Humanos', 'Seção de Pessoal')],
         # Cadeias de escalonamento (se-art-114 e se-art-116): o "Supervisor de Dia" é elo
         # intermediário numa cadeia que não existe no CBMRO. Substituída pela cadeia real
         # de acionamento (definição do Ten. Tiago, 2026-08-18): Comandante de Subgrupamento

@@ -17050,7 +17050,7 @@
           "id": "se-art-26",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-26",
-          "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Recursos Humanos.",
+          "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Pessoal.",
           "items": [
             {
               "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
@@ -17106,16 +17106,18 @@
           "id": "se-art-30",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-30",
-          "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da DO com antecedência mínima de 48 (quarenta e oito) horas.",
+          "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal da DO com antecedência mínima de 48 (quarenta e oito) horas.",
           "items": [
             {
-              "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Recursos Humanos da DO.",
+              "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Pessoal da DO.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 30"
             }
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 30",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da DO com antecedência mínima de 48 (quarenta e oito) horas."
         },
         {
           "id": "se-art-31",
@@ -17208,10 +17210,10 @@
           "id": "se-art-37",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-37",
-          "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
+          "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
           "items": [
             {
-              "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Recursos Humanos da DO.",
+              "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Pessoal da DO.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 37"
             }
           ],
