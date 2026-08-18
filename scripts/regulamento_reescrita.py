@@ -90,6 +90,22 @@ REMOVER_ARTIGOS = {
                       '(CIOP) — matéria da NGA-CIOP-001/2026, já regulada em '
                       'central-operacoes-193',
         'mt-art-229': 'competências da própria Central Integrada de Operações (CIOP) — idem',
+        # Achado de revisão (2026-08-18): mt-art-231/232/233 são exatamente os 3 sub-ramos
+        # internos da CIOP que já saíram de mt-art-219 (SAdm, SCOp, NOB) — mesmo heading
+        # "Nível de Apoio (Gabinetes e COB)" de mt-art-228/229, mesmo critério de remoção
+        # (organização/competência interna da CIOP, cláusula de remissão de
+        # central-operacoes-193). O regex do levantamento não os pegou porque nenhum dos
+        # três diz "CIOP"/"Central Integrada"/"Centro Integrado" — só a sigla ambígua "COB"
+        # (aqui = Centro de Operações de Bombeiros/CIOP; não confundir com o "COB" de
+        # Rondônia = Comando Operacional de Bombeiros, usado noutro heading do arquivo).
+        'mt-art-231': 'competências da Seção Administrativa do COB - SAdm — subunidade '
+                      'interna da CIOP (inclui, no inciso X, elaborar a NGA do COB/CIOP, '
+                      'papel que a NGA-CIOP-001/2026 real de Rondônia já ocupa)',
+        'mt-art-232': 'competências da Seção de Comunicações e Operações - SCOp — '
+                      'subunidade interna da CIOP (triagem de chamados, despacho, '
+                      'sistema 193)',
+        'mt-art-233': 'competências do Núcleo de Operações de Bombeiros – NOB — '
+                      'subunidade interna da CIOP',
     },
     'servico-operacional': {
         # O serviço de Despachante ao CIOP (regime de escala, regras internas) é

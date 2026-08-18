@@ -70,8 +70,8 @@ assert _co['primary']['uf'] == 'ba', _co['primary']['uf']
 assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoes-193'
 
 # O piso existe para pegar PERDA ACIDENTAL de artigo (regressão do extrator ou do
-# enrichment). Em 2026-08-13/14/18 ele passou de 413 para 411 (por 396, 415 e 416) por
-# decisão de curadoria, não por regressão — a aritmética, conferida artigo a artigo:
+# enrichment). Em 2026-08-13/14/18 ele passou de 413 para 408 (por 396, 415, 416 e 411)
+# por decisão de curadoria, não por regressão — a aritmética, conferida artigo a artigo:
 #     413 importados
 #     -13 artigos removidos (órgão do MT inexistente em RO — REMOVER_ARTIGOS)
 #     -19 artigos do capítulo de segurança contra incêndio (era o regimento da DSCIP/MT)
@@ -84,12 +84,13 @@ assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoe
 #     +4 artigos de redação própria (Supervisores/Atendentes/Despachadores da NGA-CIOP +
 #        remissão), fundados na NGA-CIOP-001/2026
 #     = 416
-#     -5 artigos com resíduo de CIOP fora do capítulo próprio (mt-art-228, mt-art-229,
-#        mt-art-230, se-art-48, se-art-49 — matéria da NGA-CIOP-001/2026, que o
-#        Regulamento remete em vez de duplicar — ver regulamento_reescrita.py)
-#     = 411
+#     -8 artigos com resíduo de CIOP fora do capítulo próprio (mt-art-228, mt-art-229,
+#        mt-art-230, mt-art-231, mt-art-232, mt-art-233, se-art-48, se-art-49 — matéria
+#        da NGA-CIOP-001/2026, que o Regulamento remete em vez de duplicar — ver
+#        regulamento_reescrita.py)
+#     = 408
 # Ver scripts/regulamento_reescrita.py para o motivo de cada remoção.
-assert len(edit_ids) >= 411, f'regressão: {len(edit_ids)} artigos (esperado >= 411)'
+assert len(edit_ids) >= 408, f'regressão: {len(edit_ids)} artigos (esperado >= 408)'
 autorais = [l for c in d['chapters'] for l in c['articles'] if l.get('autoral')]
 assert len(autorais) == 40, \
     f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral + 4 CIOP = 40)'
