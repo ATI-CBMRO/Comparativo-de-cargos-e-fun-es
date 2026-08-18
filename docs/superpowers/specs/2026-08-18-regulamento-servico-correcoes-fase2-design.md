@@ -24,9 +24,26 @@ transplante bruto de MT que ainda não passou pela camada de reescrita autoral
 ### Frente A — correções mecânicas (sem documento novo)
 
 1. **Terminologia "Supervisor de Dia" → "Oficial de Dia" / "Superior de Dia".**
-   12 artigos em `servico-operacional` citam "Supervisor de Dia" (herança do
-   RISG/Exército via MT); a minuta já usa "Oficial de Dia" (8x) e "Superior de Dia" (11x)
-   em outros pontos. Reler os 12 e decidir, artigo a artigo, qual figura real se aplica:
+   12 artigos em `servico-operacional` citam "Supervisor de Dia"; a minuta já usa "Oficial
+   de Dia" (8x) e "Superior de Dia" (11x) em outros pontos.
+
+   ⚠️ **NÃO é renomeação — é supressão com redistribuição.** A leitura de 18/08 mostrou que
+   a fonte (RISD de Sergipe) tem **três** figuras simultâneas, e `se-art-4` — a lista-mestra
+   das 15 funções do serviço diário — traz as três lado a lado: "I. Superior de Dia",
+   "II. Supervisor de Dia", "V. Oficial de dia". Um find-replace global de
+   Supervisor→Oficial criaria duplicata na própria lista. O correto é **suprimir a figura
+   do Supervisor de Dia** (inexistente no CBMRO) e redistribuir suas funções, artigo a
+   artigo, entre as duas figuras reais.
+
+   O critério é a **área de atuação**, não o nome. Exemplo achado na leitura: `se-art-38`
+   diz que "a área de atuação do Serviço de Supervisor de Dia abrange todo o território
+   estadual" — pela definição do Ten. Tiago isso é **Superior de Dia**, não Oficial de Dia
+   (que é local, 1º GBM/Porto Velho). Já `se-art-32` ("regime de 24 horas") é escala
+   presencial = **Oficial de Dia**. Casos como `se-art-113`/`114`/`116` põem o Supervisor
+   como elo intermediário de escalonamento antes do Superior de Dia, e precisam ser
+   remapeados para a cadeia real (Cmt SGBM → Cmt GBM → Cmt COB → Superior de Dia).
+
+   As duas figuras reais do CBMRO:
    - **Oficial de Dia** — oficial subalterno/intermediário, concorre à escala de serviço
      operacional no 1º GBM (Porto Velho), só oficiais lotados na capital.
    - **Superior de Dia** — oficial superior lotado na capital, escala de sobreaviso,
@@ -37,10 +54,18 @@ transplante bruto de MT que ainda não passou pela camada de reescrita autoral
    substantivo, não find-replace.
 
 2. **Reordenar capítulos**: mover `atribuicoes-funcoes` para logo após
-   `disposicoes-preliminares` — no recorte (`TEMAS_SERVICO`, `src/lib/escopoServico.js`)
-   **e** no Regulamento Geral completo (os 16 capítulos, via `TEMA_PARTE`/ordenação em
-   `scripts/build_regulamento_structure.py`). Confirmado pelo Ten. Tiago em 18/08/2026: a
-   ordem não deve divergir entre as duas apresentações do mesmo documento.
+   `disposicoes-preliminares` **no recorte** — `TEMAS_SERVICO`, em
+   `src/lib/escopoServico.js`. A numeração que o Ten. Tiago citou ("Cap. II — Do Serviço
+   Operacional", "Cap. III" para o CIOP, "Cap. V — Das Atribuições das Funções") é a do
+   recorte, e nele "logo após as Preliminares" é a posição 2, sem ambiguidade.
+
+   **Decisão do Ten. Tiago (18/08/2026): o documento COMPLETO não é reordenado agora.**
+   Lá, `disposicoes-preliminares` abre a Parte I (Geral) e `atribuicoes-funcoes` é Parte II
+   (de Serviço) — mover "logo após as Preliminares" exigiria ou trocar o capítulo de Parte
+   (mexendo em `TEMA_PARTE` e desfazendo a arquitetura de 2 Partes da spec de 21/07), ou
+   promovê-lo a 1º da Parte II. A posição no documento completo será decidida junto com a
+   reordenação geral de capítulos, já adiada para a 2ª etapa. Nesta rodada
+   `scripts/build_regulamento_structure.py` **não muda** para fins de ordenação.
 
    ⚠️ **Efeito colateral a tratar (AR-03):** reordenar capítulos **não** muda `editId`
    (que é `reg:atual:<tema>/<artigo>`, sem índice posicional), então comentários e textos
@@ -142,6 +167,20 @@ dela — registrar em `.claude/PENDENCIAS.md` como item novo de 🔴 Pendente ao
 rodada.
 
 ---
+
+## Restrições dos testes que qualquer tarefa precisa respeitar
+
+Levantadas de `scripts/test_regulamento_structure.py` em 18/08/2026 — três delas quebram
+o teste em silêncio se ignoradas:
+
+| Linha | Assertion | Consequência |
+|---|---|---|
+| 90 | `len(autorais) == 40` — contagem **exata** | Todo artigo autoral novo (Frentes B e C) obriga a atualizar o número **e** o comentário de aritmética das linhas 72-87 |
+| 88 | `len(edit_ids) >= 416` | Piso de artigos; remoções da Frente B precisam ser conferidas contra ele |
+| 38-44 | `fundamento` passa por **allowlist** de normas (LOB / Lei 2.204/2009 / Decreto 21.425/2016 / Lei 3.924/2016 / organograma oficial / NGA-CIOP-001/2026) | A **Resolução nº 121/2022/CBM-CP** precisa ser acrescentada à allowlist antes de qualquer artigo de mídia |
+| 37 | `leaf['source'] == leaf['fundamento']` para artigo autoral | Os dois campos têm de ser idênticos |
+| 48 | `not leaf['caput'].startswith('Art.')` | Numeração é contínua e própria da minuta |
+| 92-96 | Temas em `SUBSTITUI_INTEGRALMENTE` são 100% autorais e mantêm `alternatives` | `atribuicoes-funcoes` **não** entra nesse conjunto (é misto por decisão de escopo) |
 
 ## Verificação
 
