@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { Search, FileText, ChevronRight, AlertCircle } from 'lucide-react'
 import { fetchJson } from '../lib/dataCache.js'
+import { useAcervoNav } from '../context/AcervoBaseContext.jsx'
 
 function highlightText(text, query) {
   if (!query || !text) return text
@@ -30,7 +30,7 @@ export default function SearchPage() {
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [loading, setLoading] = useState(false)
-  const navigate = useNavigate()
+  const { irParaEstado } = useAcervoNav()
 
   // Carrega dados dos estados
   useEffect(() => {
@@ -182,7 +182,7 @@ export default function SearchPage() {
               key={state.id}
               className="card"
               style={{ cursor: 'pointer', transition: 'all 0.15s' }}
-              onClick={() => navigate(`/estados/${state.id}`)}
+              onClick={() => irParaEstado(state.id)}
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--cbm-red-800)'; e.currentTarget.style.transform = 'translateY(-1px)' }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = ''; e.currentTarget.style.transform = '' }}
             >

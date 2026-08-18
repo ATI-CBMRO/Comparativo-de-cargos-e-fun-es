@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import {
   ChevronLeft, BookOpen, FileText,
   Building2, Scale, ListTree, Shield, Users, Info
@@ -8,6 +8,7 @@ import Organogram from '../components/Organogram.jsx'
 import OrgDetail from '../components/OrgDetail.jsx'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState } from '../components/Status.jsx'
+import { useAcervoNav } from '../context/AcervoBaseContext.jsx'
 
 const REGION_CSS = {
   Norte: 'norte', Nordeste: 'nordeste', 'Centro-Oeste': 'centroeste',
@@ -107,7 +108,7 @@ function DocCard({ doc }) {
 
 export default function StateDetail() {
   const { stateId } = useParams()
-  const navigate = useNavigate()
+  const { voltarParaEstados } = useAcervoNav()
   const [state, setState] = useState(null)
   const [orgDetail, setOrgDetail] = useState(null)   // mapa id → detalhes ricos
   const [selectedOrgan, setSelectedOrgan] = useState(null)
@@ -181,7 +182,7 @@ export default function StateDetail() {
     <div className="empty-state" style={{ marginTop: 80 }}>
       <Shield size={40} className="empty-state-icon" />
       <h3>Estado não encontrado</h3>
-      <button className="btn btn-ghost" onClick={() => navigate('/estados')}>
+      <button className="btn btn-ghost" onClick={voltarParaEstados}>
         <ChevronLeft size={16} /> Voltar à lista
       </button>
     </div>
@@ -199,7 +200,7 @@ export default function StateDetail() {
     <>
       {/* Header */}
       <div className="hero-bar">
-        <button className="back-btn" onClick={() => navigate('/estados')}>
+        <button className="back-btn" onClick={voltarParaEstados}>
           <ChevronLeft size={16} /> Voltar para a lista
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 12 }}>

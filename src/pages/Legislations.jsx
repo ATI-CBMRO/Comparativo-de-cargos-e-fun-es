@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { fetchJson } from '../lib/dataCache.js'
 import { buildCoverageRows } from '../lib/acervoCoverage.js'
 import AcervoCoverageTable from '../components/AcervoCoverageTable.jsx'
+import { useAcervoNav } from '../context/AcervoBaseContext.jsx'
 
 export default function Legislations() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
-  const navigate = useNavigate()
+  const { irParaEstado } = useAcervoNav()
 
   useEffect(() => {
     fetchJson('/database/states_data.json')
@@ -48,7 +48,7 @@ export default function Legislations() {
       <div className="page-body">
         <AcervoCoverageTable
           rows={coverageRows}
-          onSelectState={id => navigate(`/estados/${id}`)}
+          onSelectState={id => irParaEstado(id)}
         />
       </div>
     </>
