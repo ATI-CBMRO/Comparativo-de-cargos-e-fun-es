@@ -21,6 +21,28 @@ const SECTIONS = [
     ),
   },
   {
+    id: 'apresentacao', title: 'Apresentação — Regulamento de Serviço',
+    body: (
+      <>
+        <p>
+          Apresentação usada na reunião de 18/08/2026 com a Coordenação da CAT e do COB e os
+          Comandantes de GBM e DAT: por que o sistema existe, o recorte de escopo (7 temas, 180
+          artigos), como solicitar acesso, como comentar na sala de revisão e o cronograma da
+          Fase 1.
+        </p>
+        <p>
+          <a
+            href="https://claude.ai/code/artifact/e4c0b4e6-0f43-455d-b07c-30e714deae2c"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abrir a apresentação →
+          </a>
+        </p>
+      </>
+    ),
+  },
+  {
     id: 'acesso', title: 'Acessar o sistema',
     body: (
       <>
