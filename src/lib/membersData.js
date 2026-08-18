@@ -38,8 +38,11 @@ export async function removeMember(email) {
 }
 
 // Autocadastro público (tela /solicitar-acesso): grava sempre travado em
-// ativo:false/status:'pendente'/role:'participante' — a regra do Firestore também trava
-// isso do lado do servidor; aqui é só o formato que o admin vai aprovar depois.
+// ativo:false/status:'pendente'/role:'participante'/escopo:'servico' — a regra do
+// Firestore também trava isso do lado do servidor; aqui é só o formato que o admin vai
+// aprovar depois. Escopo restrito por padrão (2026-08-18): sem isso, todo autocadastro
+// nascia com o portal inteiro liberado e o admin tinha que restringir pessoa por pessoa.
+// Quem precisar do portal completo, o admin libera manualmente em Acessos.
 export async function solicitarAcesso({ email, nome, nomeGuerra, cidade, comando, unidade, uid }) {
   const id = normalizeEmail(email)
   await setDoc(doc(db, COL, id), {
@@ -50,6 +53,7 @@ export async function solicitarAcesso({ email, nome, nomeGuerra, cidade, comando
     comando,
     unidade,
     role: 'participante',
+    escopo: 'servico',
     ativo: false,
     status: 'pendente',
     uid,
