@@ -98,11 +98,19 @@ assert 'to' in _co['alternatives'], 'faltou a alternativa TO em central-operacoe
 #     +1 artigo de redação própria (atendimento a tentativas de suicídio — remissão
 #        genérica ao protocolo ATTS), fundado na LOB (Art. 2º, IV e VII, e Art. 15)
 #     = 409
+#     -10 artigos de atribuicoes-funcoes (mt-art-200/201/238/239/250/251/255/256/262/263 —
+#        funções do COB e da "Diretoria de Segurança Contra Incêndio" do MT, cargo que não
+#        existe com esse nome na estrutura real da CAT)
+#     +19 artigos de redação própria (10 funções do Comando Operacional de Bombeiros + 9 da
+#        Coordenadoria de Atividades Técnicas), fundados na LOB (Art. 18, Art. 34, Art. 35
+#        e Art. 47) e no organograma oficial do CBMRO (Task 8, 2026-08-18)
+#     = 418
 # Ver scripts/regulamento_reescrita.py para o motivo de cada remoção.
-assert len(edit_ids) >= 409, f'regressão: {len(edit_ids)} artigos (esperado >= 409)'
+assert len(edit_ids) >= 418, f'regressão: {len(edit_ids)} artigos (esperado >= 418)'
 autorais = [l for c in d['chapters'] for l in c['articles'] if l.get('autoral')]
-assert len(autorais) == 42, \
-    f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral + 4 CIOP + 1 mídia + 1 ATTS = 42)'
+assert len(autorais) == 61, \
+    f'artigos autorais: {len(autorais)} (esperado 15 SCI + 21 org.-geral + 4 CIOP + 1 ' \
+    f'mídia + 1 ATTS + 10 COB + 9 CAT = 61)'
 for tema in ('seguranca-contra-incendio', 'organizacao-geral', 'central-operacoes-193'):
     cap = [c for c in d['chapters'] if c['themeKey'] == tema][0]
     assert all(l.get('autoral') for l in cap['articles']), \
@@ -111,6 +119,16 @@ for tema in ('seguranca-contra-incendio', 'organizacao-geral', 'central-operacoe
 
 for c in d['chapters']:
     assert c['primary']['uf'] != 'risg', f"RISG não pode ser fonte primária: {c['themeKey']}"
+
+# Capítulo misto (2026-08-18): todo artigo precisa de tag de órgão, senão some do recorte
+# do participante em silêncio — o filtro de escopo é fail-closed (src/lib/escopoServico.js).
+_af = next(c for c in d['chapters'] if c['themeKey'] == 'atribuicoes-funcoes')
+_sem_tag = [a['editId'] for a in _af['articles'] if not a.get('orgao')]
+assert not _sem_tag, f'artigos sem tag de órgão no capítulo misto: {_sem_tag}'
+_no_escopo = [a for a in _af['articles'] if a.get('orgao') in ('cob', 'cat')]
+assert _no_escopo, 'nenhum artigo de COB/CAT — o recorte ficaria com o capítulo vazio'
+assert all(a.get('autoral') for a in _no_escopo), \
+    'artigo de COB/CAT no capítulo misto precisa ser redação própria sobre a LOB de RO'
 
 print(f"OK — scripts/test_regulamento_structure.py ({len(d['chapters'])} capítulos, "
       f"{len(edit_ids)} artigos, schema compatível com buildArticles)")

@@ -76,6 +76,32 @@ REMOVER_ARTIGOS = {
         'mt-art-230': 'competências do Chefe do Central Integrada de Operações (CIOP) — '
                       'Direção da CIOP, matéria já regulada pela NGA-CIOP-001/2026 (ver '
                       'cláusula de remissão em central-operacoes-193)',
+        # Task 8 (2026-08-18): as funções do COB e da CAT foram reescritas sobre a LOB de
+        # RO e o organograma oficial (ver ARTIGOS_PROPRIOS['atribuicoes-funcoes'] abaixo).
+        # Manter, no MESMO capítulo, o texto velho de MT (outro cargo, outra corporação) e
+        # o texto novo autoral seria conteúdo duplicado e contraditório — os 10 artigos de
+        # MT que tratam de funções do COB (8) e da CAT (2) saem por inteiro, substituídos.
+        'mt-art-238': 'Compete ao Comandante Operacional de Bombeiros (MT) — substituído '
+                      'por reescrita autoral sobre a estrutura real do CBMRO',
+        'mt-art-239': 'Diretor Adjunto Operacional (MT) — substituído por reescrita '
+                      'autoral sobre a estrutura real do CBMRO',
+        'mt-art-250': 'Comandantes Operacionais de Bombeiros, nível CRBM (MT) — '
+                      'substituído por reescrita autoral sobre a estrutura real do CBMRO',
+        'mt-art-251': 'Comandantes Operacionais de Bombeiros Adjuntos (MT) — substituído '
+                      'por reescrita autoral sobre a estrutura real do CBMRO',
+        'mt-art-255': 'Comandantes de Batalhões (MT) — substituído por reescrita autoral '
+                      'sobre a estrutura real do CBMRO',
+        'mt-art-256': 'Comandante Adjunto dos Batalhões (MT) — substituído por reescrita '
+                      'autoral sobre a estrutura real do CBMRO',
+        'mt-art-262': 'Comandantes dos Subgrupamentos de Bombeiros Militar (MT) — '
+                      'substituído por reescrita autoral sobre a estrutura real do CBMRO',
+        'mt-art-263': 'Comandantes de Pelotões Bombeiro Militar (MT) — substituído por '
+                      'reescrita autoral sobre a estrutura real do CBMRO',
+        'mt-art-200': 'Diretor de Segurança Contra Incêndio e Pânico (MT) — cargo que não '
+                      'existe com esse nome na estrutura real da CAT; substituído por '
+                      'reescrita autoral sobre a estrutura real do CBMRO',
+        'mt-art-201': 'Diretor Adjunto de Segurança Contra Incêndio e Pânico (MT) — '
+                      'substituído por reescrita autoral sobre a estrutura real do CBMRO',
     },
     # Resíduo de CIOP fora do capítulo próprio (Task 5, 2026-08-18): o capítulo
     # central-operacoes-193 já reescreve a matéria sobre a NGA-CIOP-001/2026; estes
@@ -201,6 +227,14 @@ _NGA = 'NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operaç�
        'institucional)'
 _RES121 = 'CBMRO, Resolução nº 121/2022/CBM-CP (Diretriz Geral de Comunicação Social — ' \
           'D-05-BM), de 09 de dezembro de 2022'
+# Princípio de substituição eventual do titular por seu Adjunto: a LOB não descreve a
+# competência de nenhum "Adjunto" da estrutura, mas define esse mesmo papel para as duas
+# posições de 2º escalão que ela detalha (Subcomandante-Geral e Chefe do Estado-Maior-
+# Geral) — extensão do padrão da própria LOB para os demais Adjuntos, não analogia com
+# outro estado (Task 8, 2026-08-18).
+_SUBST_ADJUNTO = ('princípio de substituição eventual do titular extraído do Art. 12, '
+                  '§ 2º (red. Lei n. 3.413/2014), e do Art. 12-A, § 2º (acrescido pela '
+                  'Lei n. 3.413/2014)')
 
 ARTIGOS_PROPRIOS = {
     'seguranca-contra-incendio': [
@@ -995,6 +1029,416 @@ ARTIGOS_PROPRIOS = {
                           '(Coordenadoria de Educação, Ensino e Instrução)',
         },
     ],
+
+    # ── atribuicoes-funcoes (2026-08-18, Task 8) ─────────────────────────────────────
+    # O capítulo trata de FUNÇÕES (a pessoa que ocupa o cargo — "Compete ao..."), nunca de
+    # ÓRGÃOS (a unidade — "Compete à..."), matéria já coberta por organizacao-geral e por
+    # seguranca-contra-incendio; por isso os Chefes de Seção aqui abaixo recebem
+    # competência de CHEFIA (dirigir, distribuir, submeter ao superior), não a competência
+    # técnica substantiva da Seção, já escrita naqueles dois capítulos.
+    #
+    # Cap. I cobre as 10 funções do Comando Operacional de Bombeiros, da estrutura do
+    # Art. 35, parágrafo único (I a IX), somada ao Comandante/Comandante de Subgrupamento
+    # do Art. 47. Cap. II cobre as 9 funções da Coordenadoria de Atividades Técnicas, da
+    # estrutura do Art. 18, § 1º.
+    #
+    # Onde a LOB só ENUMERA o cargo sem descrever competência própria (todo Chefe de
+    # Seção, todo Adjunto), a competência foi DERIVADA — nunca inventada por analogia com
+    # outro estado: dos Chefes de Seção, pela finalidade da unidade já escrita em
+    # organizacao-geral/seguranca-contra-incendio; dos Adjuntos, pelo princípio de
+    # substituição eventual do titular que a própria LOB usa para o Subcomandante-Geral
+    # (Art. 12, § 2º) e o Chefe do Estado-Maior-Geral (Art. 12-A, § 2º) — ver _SUBST_ADJUNTO
+    # acima.
+    #
+    # Item 8 da CAT ("Chefes das Seções da Diretoria: Vistoria, Análise de Projetos,
+    # Investigação e Prevenção de Incêndio, Hidrantes") virou UM artigo genérico cobrindo
+    # as 4 Seções, em vez de 4 artigos repetindo a mesma competência de chefia — decisão de
+    # redação da Task 8, documentada no `fundamento` do próprio artigo.
+    'atribuicoes-funcoes': [
+        # -- Cap. I — Comando Operacional de Bombeiros (10 funções, orgao: 'cob') --------
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Comandante Operacional de Bombeiros:',
+            'dispositivos': [
+                'I - comandar as atividades-fins da Corporação e de proteção e defesa civil '
+                'na área de abrangência do respectivo Comando Operacional, traduzindo em '
+                'objetivos e metas as políticas e diretrizes do Comando-Geral e do '
+                'Estado-Maior-Geral;',
+                'II - exercer o comando dos Grupamentos de Bombeiro Militar a ele '
+                'subordinados e das demais unidades operacionais de sua área;',
+                'III - coordenar o emprego dos meios operacionais disponíveis, determinando '
+                'o deslocamento de recursos entre as unidades subordinadas conforme a '
+                'natureza e a magnitude da ocorrência;',
+                'IV - fiscalizar e controlar a execução das atividades operacionais na sua '
+                'área, respondendo pelos resultados perante o Subcomandante-Geral;',
+                'V - autorizar, por escrito, a permuta de escala do serviço de Oficial de '
+                'Dia, com posterior publicação em Boletim Geral Ostensivo;',
+                'VI - acionar o Superior de Dia nas ocorrências de grande vulto, na forma '
+                'deste Regulamento;',
+                'VII - propor ao Comando-Geral a criação, a extinção ou a alteração de '
+                'unidades operacionais de sua área, para constar do Quadro de Organização '
+                'da Corporação;',
+                'VIII - submeter-se, no que respeita à administração, ao Chefe do '
+                'Estado-Maior-Geral, e, no que respeita às operações, ao Subcomandante-Geral.',
+            ],
+            'fundamento': 'LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e '
+                          'Art. 59, parágrafo único; organograma oficial do CBMRO',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Adjunto do Comando Operacional de Bombeiros:',
+            'dispositivos': [
+                'I - auxiliar o Comandante Operacional de Bombeiros no planejamento, na '
+                'coordenação e na fiscalização das atividades do Comando Operacional;',
+                'II - substituir o Comandante Operacional de Bombeiros em seus impedimentos '
+                'e afastamentos eventuais;',
+                'III - exercer as demais atribuições que lhe forem delegadas pelo '
+                'Comandante Operacional de Bombeiros.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, II (red. Lei nº 4.303/2018); '
+                          f'{_SUBST_ADJUNTO}; organograma oficial do CBMRO',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Chefe da Seção de Pessoal:',
+            'dispositivos': [
+                'I - dirigir e distribuir os trabalhos da Seção de Pessoal, controlando a '
+                'situação funcional, a lotação e a movimentação do efetivo do Comando '
+                'Operacional de Bombeiros;',
+                'II - determinar a instrução dos processos administrativos de pessoal de '
+                'interesse do efetivo do Comando Operacional e das unidades a ele '
+                'subordinadas;',
+                'III - submeter ao Comandante Operacional de Bombeiros os assuntos de '
+                'pessoal que excedam a competência da Seção.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, III (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência derivada da '
+                          'finalidade da Seção, sem duplicar a Coordenadoria de Pessoal do '
+                          'Estado-Maior-Geral (Art. 14)',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Chefe da Seção Administrativa:',
+            'dispositivos': [
+                'I - dirigir e distribuir os trabalhos da Seção Administrativa, respondendo '
+                'pelo expediente, pelo protocolo e pelo arquivo do Comando Operacional de '
+                'Bombeiros;',
+                'II - controlar o patrimônio e os materiais de consumo em uso nas '
+                'instalações do Comando Operacional;',
+                'III - submeter ao Comandante Operacional de Bombeiros os processos '
+                'administrativos que excedam a competência da Seção.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, IV (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência derivada da '
+                          'finalidade da Seção',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Chefe da Seção de Informática:',
+            'dispositivos': [
+                'I - dirigir os trabalhos da Seção de Informática, prestando suporte '
+                'técnico às unidades do Comando Operacional de Bombeiros;',
+                'II - zelar pelo funcionamento dos sistemas corporativos, dos equipamentos '
+                'e da rede de dados em uso no Comando Operacional;',
+                'III - articular-se com a Diretoria de Informática do Estado-Maior-Geral '
+                'nas matérias que exijam padronização ou suporte de nível superior.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, V (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência derivada da '
+                          'finalidade da Seção, sem duplicar a Diretoria de Informática do '
+                          'Estado-Maior-Geral (Art. 23)',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Chefe da Seção de Correição:',
+            'dispositivos': [
+                'I - dirigir os trabalhos da Seção de Correição, instruindo, no âmbito do '
+                'Comando Operacional de Bombeiros, os procedimentos disciplinares e '
+                'correcionais que lhe forem determinados;',
+                'II - acompanhar o cumprimento das normas disciplinares pelo efetivo das '
+                'unidades subordinadas ao Comando Operacional;',
+                'III - encaminhar à Corregedoria-Geral os casos que excedam a competência '
+                'correcional do Comando Operacional de Bombeiros.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, VI (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência derivada da '
+                          'finalidade da Seção, sem duplicar a Corregedoria-Geral (Art. 13)',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Chefe da Seção de Planejamento Operacional e Controle de '
+                     'Resultados:',
+            'dispositivos': [
+                'I - dirigir a elaboração do planejamento operacional do Comando '
+                'Operacional de Bombeiros, desdobrando as diretrizes do Comando-Geral e do '
+                'Estado-Maior-Geral;',
+                'II - consolidar os indicadores e os resultados operacionais das unidades '
+                'subordinadas ao Comando Operacional;',
+                'III - subsidiar o Comandante Operacional de Bombeiros com informações '
+                'para a tomada de decisão e a prestação de contas perante os escalões '
+                'superiores.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, VII (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência derivada da '
+                          'finalidade da Seção',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Chefe da Agência Regional de Inteligência:',
+            'dispositivos': [
+                'I - dirigir a produção e a difusão do conhecimento de inteligência de '
+                'interesse das atividades operacionais do Comando Operacional de '
+                'Bombeiros;',
+                'II - articular-se com a Diretoria de Inteligência do Comandante-Geral nas '
+                'matérias que exijam padronização, sigilo ou tratamento em nível superior;',
+                'III - subsidiar o Comandante Operacional de Bombeiros com informações '
+                'relevantes à segurança das operações e do efetivo.',
+            ],
+            'fundamento': 'LOB, Art. 35, parágrafo único, VIII (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência derivada da '
+                          'finalidade da Agência, sem duplicar a Diretoria de Inteligência '
+                          'do Comandante-Geral (Art. 20)',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Comandante de Grupamento de Bombeiro Militar:',
+            'dispositivos': [
+                'I - comandar as atividades operacionais e administrativas do Grupamento, '
+                'subordinado ao Comandante Operacional de Bombeiros;',
+                'II - exercer o comando dos Subgrupamentos, das Seções de Comando e '
+                'Serviço, das Seções de Bombeiros, dos Grupos de Bombeiros e dos '
+                'Destacamentos de Bombeiros subordinados ao Grupamento;',
+                'III - fazer cumprir, na área de circunscrição do Grupamento, as '
+                'diretrizes, os planos e as ordens do Comando Operacional de Bombeiros;',
+                'IV - responder, perante o Comandante Operacional de Bombeiros, pelos '
+                'resultados operacionais e administrativos do Grupamento.',
+            ],
+            'fundamento': 'LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência de comando derivada '
+                          'da subordinação hierárquica ao Comando Operacional de Bombeiros',
+        },
+        {
+            'heading': 'Cap. I — Das funções do Comando Operacional de Bombeiros',
+            'orgao': 'cob',
+            'caput': 'Compete ao Comandante de Subgrupamento de Bombeiro Militar:',
+            'dispositivos': [
+                'I - comandar as atividades operacionais e administrativas do '
+                'Subgrupamento, subordinado ao Comandante de Grupamento;',
+                'II - exercer o comando das Seções de Bombeiros, dos Grupos de Bombeiros e '
+                'dos Destacamentos de Bombeiros subordinados ao Subgrupamento;',
+                'III - executar, na área de circunscrição do Subgrupamento, as diretrizes, '
+                'os planos e as ordens do Grupamento e do Comando Operacional de '
+                'Bombeiros;',
+                'IV - responder, perante o Comandante de Grupamento, pelos resultados '
+                'operacionais e administrativos do Subgrupamento.',
+            ],
+            'fundamento': 'LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); '
+                          'organograma oficial do CBMRO — competência de comando derivada '
+                          'da subordinação hierárquica ao Grupamento',
+        },
+
+        # -- Cap. II — Coordenadoria de Atividades Técnicas (9 funções, orgao: 'cat') ----
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Coordenador de Atividades Técnicas:',
+            'dispositivos': [
+                'I - dirigir, coordenar e fiscalizar as atividades da Coordenadoria de '
+                'Atividades Técnicas e das Diretorias de Atividades Técnicas a ela '
+                'subordinadas;',
+                'II - submeter à homologação do Comandante-Geral as Instruções Técnicas '
+                'elaboradas no âmbito da Coordenadoria;',
+                'III - representar o Sistema de Atividades Técnicas perante os demais '
+                'órgãos da Corporação e perante terceiros, nos assuntos de segurança '
+                'contra incêndio e pânico;',
+                'IV - presidir a Comissão Técnica Especial – CTE, nomeada por Portaria do '
+                'Comandante-Geral, que avalia a execução das normas e propõe as '
+                'alterações necessárias ao Regulamento de Segurança Contra Incêndio e '
+                'Pânico do Estado e às Instruções Técnicas;',
+                'V - responder, perante o Comandante-Geral, pelos resultados do Sistema de '
+                'Atividades Técnicas.',
+            ],
+            'fundamento': 'LOB, Art. 18, caput e § 1º (red. Lei nº 4.303/2018 e Lei nº '
+                          '4.488/2019); Decreto nº 21.425/2016, Art. 2º, Art. 5º, caput e '
+                          '§ 1º, e Art. 55, § 4º',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Adjunto da Coordenadoria de Atividades Técnicas:',
+            'dispositivos': [
+                'I - auxiliar o Coordenador de Atividades Técnicas no planejamento, na '
+                'coordenação e na fiscalização das atividades da Coordenadoria;',
+                'II - substituir o Coordenador de Atividades Técnicas em seus impedimentos '
+                'e afastamentos eventuais;',
+                'III - exercer as demais atribuições que lhe forem delegadas pelo '
+                'Coordenador de Atividades Técnicas.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, II (red. Lei nº 4.303/2018); '
+                          f'{_SUBST_ADJUNTO}; organograma oficial do CBMRO',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Chefe da Seção Administrativa da Coordenadoria de '
+                     'Atividades Técnicas:',
+            'dispositivos': [
+                'I - dirigir e distribuir os trabalhos da Seção Administrativa, respondendo '
+                'pelo expediente, pelo protocolo e pelo arquivo da Coordenadoria de '
+                'Atividades Técnicas;',
+                'II - controlar o patrimônio e os materiais de consumo em uso nas '
+                'instalações da Coordenadoria;',
+                'III - submeter ao Coordenador de Atividades Técnicas os processos '
+                'administrativos que excedam a competência da Seção.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, III (red. Lei nº 4.303/2018); organograma '
+                          'oficial do CBMRO — competência derivada da finalidade da Seção',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Chefe da Seção de Estudos Técnicos:',
+            'dispositivos': [
+                'I - dirigir e distribuir os trabalhos da Seção de Estudos Técnicos, '
+                'supervisionando os estudos que subsidiam a elaboração e a revisão das '
+                'Instruções Técnicas;',
+                'II - subscrever, para encaminhamento ao Coordenador de Atividades '
+                'Técnicas, os estudos e os pareceres técnicos produzidos pela Seção;',
+                'III - submeter à Comissão Técnica os casos que exijam solução técnica '
+                'diversa da prevista em Instrução Técnica.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, IV (red. Lei nº 4.303/2018); Decreto nº '
+                          '21.425/2016, Art. 13 — competência de chefia da Seção, sem '
+                          'duplicar a competência técnica já disciplinada em '
+                          'seguranca-contra-incendio',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Chefe da Seção de Planejamento, Fiscalização e Suporte '
+                     'Técnico:',
+            'dispositivos': [
+                'I - dirigir e distribuir os trabalhos da Seção de Planejamento, '
+                'Fiscalização e Suporte Técnico, coordenando as ações de fiscalização das '
+                'Diretorias de Atividades Técnicas;',
+                'II - consolidar, para o Coordenador de Atividades Técnicas, os '
+                'indicadores e os dados de desempenho do Sistema de Atividades Técnicas;',
+                'III - submeter ao Coordenador de Atividades Técnicas os processos '
+                'administrativos que exijam decisão em nível superior ao da Seção.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, V (red. Lei nº 4.303/2018); organograma '
+                          'oficial do CBMRO — competência de chefia da Seção, sem duplicar '
+                          'a competência técnica já disciplinada em '
+                          'seguranca-contra-incendio',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Diretor de Atividades Técnicas:',
+            'dispositivos': [
+                'I - dirigir, coordenar e fiscalizar as atividades da Diretoria de '
+                'Atividades Técnicas na sua área de abrangência, observadas as '
+                'disposições instituídas pela Coordenadoria de Atividades Técnicas;',
+                'II - responder, perante o Coordenador de Atividades Técnicas, pelos '
+                'resultados do Sistema de Atividades Técnicas na sua área de abrangência;',
+                'III - representar a Diretoria de Atividades Técnicas perante os demais '
+                'órgãos do Grupamento de Bombeiro Militar e perante terceiros, nos '
+                'assuntos de segurança contra incêndio e pânico.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, VI, "a" (red. Lei nº 4.488/2019); Decreto '
+                          'nº 21.425/2016, Art. 5º, § 1º; organograma oficial do CBMRO',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Adjunto da Diretoria de Atividades Técnicas:',
+            'dispositivos': [
+                'I - auxiliar o Diretor de Atividades Técnicas no planejamento, na '
+                'coordenação e na fiscalização das atividades da Diretoria;',
+                'II - substituir o Diretor de Atividades Técnicas em seus impedimentos e '
+                'afastamentos eventuais;',
+                'III - exercer as demais atribuições que lhe forem delegadas pelo Diretor '
+                'de Atividades Técnicas.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, VI, "b" (red. Lei nº 4.488/2019); '
+                          f'{_SUBST_ADJUNTO}; organograma oficial do CBMRO',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Chefe de Seção da Diretoria de Atividades Técnicas — de '
+                     'Vistoria, de Análise de Projetos, de Investigação e Prevenção de '
+                     'Incêndio, ou de Hidrantes:',
+            'dispositivos': [
+                'I - dirigir e distribuir, na respectiva área técnica, os trabalhos da '
+                'Seção, observadas as disposições do Regulamento de Segurança Contra '
+                'Incêndio e Pânico do Estado e das Instruções Técnicas;',
+                'II - subscrever, para encaminhamento ao Diretor de Atividades Técnicas, '
+                'os autos, os pareceres e os demais documentos técnicos produzidos pela '
+                'Seção;',
+                'III - submeter ao Diretor de Atividades Técnicas os casos que exijam '
+                'decisão em nível superior ao da Seção.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, VI, alíneas "d" a "g" (red. Lei nº '
+                          '4.488/2019); Decreto nº 21.425/2016, Arts. 7º, 9º e 10 — '
+                          'competência COMUM de chefia das quatro Seções da Diretoria '
+                          '(Vistoria, Análise de Projetos, Investigação e Prevenção de '
+                          'Incêndio, Hidrantes), sem duplicar a competência técnica de '
+                          'cada Seção, já disciplinada em seguranca-contra-incendio; '
+                          'artigo único cobrindo as quatro Seções por decisão de redação '
+                          'da Task 8 (2026-08-18), em vez de repetir 4 vezes a mesma '
+                          'competência de chefia',
+        },
+        {
+            'heading': 'Cap. II — Das funções da Coordenadoria de Atividades Técnicas',
+            'orgao': 'cat',
+            'caput': 'Compete ao Chefe da Seção de Atividades Técnicas:',
+            'dispositivos': [
+                'I - dirigir, no âmbito do respectivo Subgrupamento de Bombeiro Militar, '
+                'os trabalhos de análise de projetos, de vistoria e de fiscalização a '
+                'cargo da Seção de Atividades Técnicas;',
+                'II - observar, no exercício de suas atribuições, a orientação técnica da '
+                'Diretoria de Atividades Técnicas a que a Seção se vincula;',
+                'III - submeter à Diretoria de Atividades Técnicas os casos que exijam '
+                'decisão em nível superior ao da Seção.',
+            ],
+            'fundamento': 'LOB, Art. 18, § 1º, VI, "h" (red. Lei nº 4.488/2019); '
+                          'organograma oficial do CBMRO — competência de chefia da Seção, '
+                          'sem duplicar a competência já disciplinada em '
+                          'seguranca-contra-incendio, Cap. V',
+        },
+    ],
+}
+
+# ── (e) TAG DE ÓRGÃO NO CAPÍTULO DAS ATRIBUIÇÕES DAS FUNÇÕES ────────────────────────
+# O capítulo é MISTO por decisão de escopo (Ten. Tiago, 2026-08-18): as funções de COB e
+# CAT foram reescritas sobre a LOB de RO e entram no recorte do Regulamento de Serviço; as
+# dos demais órgãos seguem sendo o transplante de MT e só aparecem no Regulamento Geral
+# completo, até a curadoria da 2ª etapa. A tag é o que o filtro de escopo do frontend lê
+# (src/lib/escopoServico.js) — artigo SEM tag não entra no recorte, de propósito.
+#
+# Os ids de COB/CAT do transplante de MT (mt-art-200/201/238/239/250/251/255/256/262/263)
+# NÃO entram aqui: saíram por inteiro (REMOVER_ARTIGOS acima), substituídos pela redação
+# autoral em ARTIGOS_PROPRIOS['atribuicoes-funcoes']. mt-art-230 (Chefe do CIOP) também
+# não entra: já tinha sido removido antes desta tarefa (Task 5).
+ORGAO_DO_ARTIGO = {
+    'atribuicoes-funcoes': {
+        'mt-art-62': 'emg', 'mt-art-63': 'emg', 'mt-art-67': 'dp',
+        'mt-art-111': 'dcs', 'mt-art-123': 'cpof', 'mt-art-137': 'assessorias',
+        'mt-art-144': 'cpof', 'mt-art-153': 'ajudancia',
+        'mt-art-163': 'deei', 'mt-art-164': 'deei', 'mt-art-170': 'deei',
+        'mt-art-190': 'deei', 'mt-art-191': 'deei',
+        'mt-art-221': 'gabinete', 'mt-art-222': 'gabinete', 'mt-art-225': 'gabinete',
+    },
 }
 
 # ── (d) SUBSTITUIÇÃO DE TERMO POR ARTIGO ─────────────────────────────────────────────

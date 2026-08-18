@@ -21,7 +21,7 @@ from regulamento_enrichment import (  # noqa: E402
 )
 from regulamento_reescrita import (  # noqa: E402
     REMOVER_ARTIGOS, REMOVER_INCISOS, SUBSTITUI_INTEGRALMENTE, ARTIGOS_PROPRIOS,
-    SUBSTITUIR_TERMOS,
+    SUBSTITUIR_TERMOS, ORGAO_DO_ARTIGO,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,12 +131,19 @@ def build():
                 # endereçar o mesmo conteúdo. Mesma convenção do minutaArticles.js.
                 leaf['reindexed'] = True
                 leaf['incisos_removidos'] = tirar
+            # Tag de órgão (Task 8, 2026-08-18): só o capítulo misto atribuicoes-funcoes
+            # usa isto hoje — o filtro de escopo do Regulamento de Serviço
+            # (src/lib/escopoServico.js) lê o campo `orgao` para decidir o que entra no
+            # recorte. Artigo sem tag simplesmente não grava o campo (não None/vazio).
+            orgao = ORGAO_DO_ARTIGO.get(theme_key, {}).get(art_id)
+            if orgao:
+                leaf['orgao'] = orgao
             articles.append(leaf)
 
         # Artigos de redação própria, fundados na lei de Rondônia.
         for i, art in enumerate(ARTIGOS_PROPRIOS.get(theme_key, []), start=1):
             art_id = f'ro-art-{i}'
-            articles.append({
+            gerado = {
                 'id': art_id,
                 'kind': 'incisos',
                 'editId': f'reg:{theme_key}/{art_id}',
@@ -147,7 +154,10 @@ def build():
                 'heading': art.get('heading'),
                 'autoral': True,
                 'fundamento': art['fundamento'],
-            })
+            }
+            if art.get('orgao'):
+                gerado['orgao'] = art['orgao']
+            articles.append(gerado)
 
         if not articles:
             pendencias.append(theme_key)
