@@ -107,6 +107,20 @@ dentro dele. Guarda `{ uid, nome }`.
 O `user` do `AuthProvider` **nunca** recebe visitante. `ProtectedRoute`, `GuardaDeEscopo`,
 `NAV_ESCOPO` e `src/lib/escopoServico.js` ficam intocados por esta entrega.
 
+**Uma alteração é obrigatória no `AuthProvider`, e ela não é cosmética.** O
+`onAuthStateChanged` de `src/lib/auth.jsx` dispara para **qualquer** sessão do Firebase,
+inclusive a anônima. Como o visitante não tem e-mail, o código de hoje faria
+`normalizeEmail(null)` → `''` → `doc(db, 'members', '')` — caminho de documento vazio, erro
+do Firestore — e, no ramo seguinte, `signOut(auth)`, **derrubando a sessão do visitante
+recém-criada**. A guarda inicial passa a ignorar sessões anônimas
+(`if (!fbUser || fbUser.isAnonymous)`), o que também é a expressão em código da regra
+"`user` significa membro autorizado, e só isso".
+
+No React, aninhar provedores é inevitável (`VisitanteProvider` fica dentro da árvore que
+contém o `AuthProvider`). A independência aqui é de **dados**: `visitante.jsx` não importa
+`auth.jsx`, `auth.jsx` ignora sessões anônimas, e nenhum estado atravessa de um para o
+outro.
+
 ## 3. Dados e regras do Firestore
 
 Coleção nova `visitantes/{uid}`:
