@@ -21,7 +21,8 @@ service firebase.storage {
     // pode subir um executável de 500 MB só porque o JavaScript da página foi contornado.
     match /uploads-visitantes/{uid}/{arquivo} {
       allow read: if isAdmin();
-      allow delete: if isAdmin();
+      allow delete: if isAdmin()
+        || (request.auth != null && request.auth.uid == uid);
       allow create: if request.auth != null
         && request.auth.uid == uid
         && request.resource.size <= 20 * 1024 * 1024

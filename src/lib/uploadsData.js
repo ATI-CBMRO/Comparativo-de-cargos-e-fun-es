@@ -60,6 +60,10 @@ export function urlDeDownload(storagePath) {
 // o admin pode tentar de novo. Se fosse o contrário e o Storage falhasse, o arquivo
 // ficaria órfão, invisível e impossível de achar pela interface.
 export async function removerUpload({ id, storagePath }) {
-  await deleteObject(ref(storage, storagePath))
+  try {
+    await deleteObject(ref(storage, storagePath))
+  } catch (e) {
+    if (e?.code !== 'storage/object-not-found') throw e
+  }
   await deleteDoc(doc(db, COL, id))
 }

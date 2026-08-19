@@ -63,7 +63,10 @@ export default function Acessos() {
   const baixar = async (u) => {
     try {
       const url = await urlDeDownload(u.storagePath)
-      window.open(url, '_blank', 'noopener')
+      const janela = window.open(url, '_blank', 'noopener')
+      if (!janela) {
+        setErro('O navegador bloqueou a janela do download. Libere pop-ups para este site e tente de novo.')
+      }
     } catch (err) {
       console.error(err); setErro('Não foi possível abrir o arquivo enviado.')
     }
