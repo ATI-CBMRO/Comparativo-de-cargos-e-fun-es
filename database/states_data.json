@@ -488,82 +488,6 @@
       "cbm_abbreviation": "CBMAL",
       "documents": [
         {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 01.md",
-          "char_count": 433269,
-          "year": 2012,
-          "laws": [],
-          "has_pdf": true
-        },
-        {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 03.md",
-          "char_count": 44676,
-          "year": 2021,
-          "laws": [],
-          "has_pdf": true
-        },
-        {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 04.md",
-          "char_count": 41975,
-          "year": 2014,
-          "laws": [
-            {
-              "tipo": "Lei",
-              "numero": "8.429",
-              "data": "2 de junho de"
-            }
-          ],
-          "has_pdf": true
-        },
-        {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 05.md",
-          "char_count": 12235,
-          "year": 2013,
-          "laws": [],
-          "has_pdf": true
-        },
-        {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 06.md",
-          "char_count": 47838,
-          "year": 2019,
-          "laws": [],
-          "has_pdf": true
-        },
-        {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 07.md",
-          "char_count": 22098,
-          "year": null,
-          "laws": [],
-          "has_pdf": true
-        },
-        {
-          "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
-          "typeVerified": true,
-          "md_file": "Alagoas - Diretriz Operacional 08.md",
-          "char_count": 19858,
-          "year": 2022,
-          "laws": [],
-          "has_pdf": true
-        },
-        {
           "type": "Lei de Organização Básica",
           "title": "Lei de Organização Básica",
           "typeVerified": true,
@@ -585,8 +509,94 @@
           "has_pdf": true
         },
         {
+          "type": "Regimento Interno",
+          "title": "Regimento Interno",
+          "typeVerified": true,
+          "md_file": "Alagoas - Regimento Interno.md",
+          "char_count": 137848,
+          "year": 2001,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Diretriz Operacional 01",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 01.md",
+          "char_count": 433269,
+          "year": 2012,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Diretriz Operacional 03",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 03.md",
+          "char_count": 44676,
+          "year": 2021,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Diretriz Operacional 04",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 04.md",
+          "char_count": 41975,
+          "year": 2014,
+          "laws": [
+            {
+              "tipo": "Lei",
+              "numero": "8.429",
+              "data": "2 de junho de"
+            }
+          ],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Diretriz Operacional 05",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 05.md",
+          "char_count": 12235,
+          "year": 2013,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Diretriz Operacional 06",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 06.md",
+          "char_count": 47838,
+          "year": 2019,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Diretriz Operacional 07",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 07.md",
+          "char_count": 22098,
+          "year": null,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Diretriz Operacional 08",
+          "typeVerified": true,
+          "md_file": "Alagoas - Diretriz Operacional 08.md",
+          "char_count": 19858,
+          "year": 2022,
+          "laws": [],
+          "has_pdf": true
+        },
+        {
+          "type": "Regulamento Geral",
+          "title": "Norma Operacional 01",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 01.md",
           "char_count": 10622,
@@ -596,7 +606,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 02",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 02.md",
           "char_count": 1569,
@@ -606,7 +616,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 03",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 03.md",
           "char_count": 7876,
@@ -616,7 +626,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 04",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 04.md",
           "char_count": 8370,
@@ -626,7 +636,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 05",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 05.md",
           "char_count": 6445,
@@ -636,7 +646,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 06",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 06.md",
           "char_count": 4862,
@@ -646,7 +656,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 07",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 07.md",
           "char_count": 6086,
@@ -656,7 +666,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 08",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 08.md",
           "char_count": 12056,
@@ -666,7 +676,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 09",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 09.md",
           "char_count": 9865,
@@ -676,7 +686,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Norma Operacional 11",
           "typeVerified": true,
           "md_file": "Alagoas - Norma Operacional 11.md",
           "char_count": 14453,
@@ -699,19 +709,9 @@
             }
           ],
           "has_pdf": true
-        },
-        {
-          "type": "Regimento Interno",
-          "title": "Regimento Interno",
-          "typeVerified": true,
-          "md_file": "Alagoas - Regimento Interno.md",
-          "char_count": 137848,
-          "year": 2001,
-          "laws": [],
-          "has_pdf": true
         }
       ],
-      "legal_basis": "Lei nº 8.429 (2 de junho de); Lei nº 7.444 (28 DE DEZEMBRO DE); Lei nº 6.171 (31 de julho de); Decreto nº 27.560 (13  de \nAgosto de)",
+      "legal_basis": "Lei nº 7.444 (28 DE DEZEMBRO DE); Lei nº 6.171 (31 de julho de); Lei nº 8.429 (2 de junho de); Decreto nº 27.560 (13  de \nAgosto de)",
       "chapters_summary": [],
       "organs": [
         {
@@ -5001,6 +5001,22 @@
           "has_pdf": true
         },
         {
+          "type": "Regimento de Serviços",
+          "title": "Regimento dos Serviços Interno e Operacional",
+          "typeVerified": true,
+          "md_file": "Goiás - Regimento dos Serviços Interno e Operacional.md",
+          "char_count": 52393,
+          "year": 2025,
+          "laws": [
+            {
+              "tipo": "Portaria",
+              "numero": "5609",
+              "data": "13  de agosto  de"
+            }
+          ],
+          "has_pdf": true
+        },
+        {
           "type": "Quadro de Organização e Distribuição",
           "title": "Quadro de Organização e Distribuição",
           "typeVerified": true,
@@ -5020,25 +5036,9 @@
             }
           ],
           "has_pdf": true
-        },
-        {
-          "type": "Regimento de Serviços",
-          "title": "Regimento de Serviços",
-          "typeVerified": true,
-          "md_file": "Goiás - Regimento dos Serviços Interno e Operacional.md",
-          "char_count": 52393,
-          "year": 2025,
-          "laws": [
-            {
-              "tipo": "Portaria",
-              "numero": "5609",
-              "data": "13  de agosto  de"
-            }
-          ],
-          "has_pdf": true
         }
       ],
-      "legal_basis": "Lei nº 18.305 (30 DE DEZEMBRO DE); Lei nº 13.456 (16 de abril de); Lei nº 16.899 (26 de maio de); Lei nº 21.792 (16 de fevereiro de); Portaria nº 5609 (13  de agosto  de)",
+      "legal_basis": "Lei nº 18.305 (30 DE DEZEMBRO DE); Lei nº 13.456 (16 de abril de); Portaria nº 5609 (13  de agosto  de); Lei nº 16.899 (26 de maio de); Lei nº 21.792 (16 de fevereiro de)",
       "chapters_summary": [
         {
           "number": "I",
@@ -6026,7 +6026,7 @@
         },
         {
           "type": "Regimento de Serviços",
-          "title": "Regimento de Serviços",
+          "title": "Diretriz Operacional do Serviço (Portaria 46/2020)",
           "typeVerified": true,
           "md_file": "Maranhão - Portaria 46.md",
           "char_count": 40893,
@@ -10452,7 +10452,7 @@
         },
         {
           "type": "Regimento de Serviços",
-          "title": "Regimento de Serviços",
+          "title": "Regulamento de Serviço",
           "typeVerified": true,
           "md_file": "Pará - Regulamento de serviço.md",
           "char_count": 164301,
@@ -15842,7 +15842,7 @@
         },
         {
           "type": "Lei de Organização Básica",
-          "title": "Lei de Organização Básica",
+          "title": "Minuta de Lei de Organização Básica",
           "typeVerified": true,
           "md_file": "Rondônia - Minuta de Lei de Organização Básica.md",
           "char_count": 75273,
@@ -15858,7 +15858,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Regulamento de Segurança Contra Incêndio e Pânico",
           "typeVerified": true,
           "md_file": "Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto 21.425-2016).md",
           "char_count": 47530,
@@ -17209,7 +17209,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Instrução Normativa Operacional 01/2024",
           "typeVerified": false,
           "md_file": "Roraíma - Regulamento de Serviço.md",
           "char_count": 56545,
@@ -18759,7 +18759,7 @@
       "documents": [
         {
           "type": "Lei de Organização Básica",
-          "title": "Lei de Organização Básica",
+          "title": "Lei de Organização Básica (alterações)",
           "typeVerified": true,
           "md_file": "Santa Catarina - Organização Básica alterações.md",
           "char_count": 32902,
@@ -19412,7 +19412,7 @@
         },
         {
           "type": "Regimento de Serviços",
-          "title": "Regimento de Serviços",
+          "title": "Regulamento Interno dos Serviços Diários (RISD)",
           "typeVerified": true,
           "md_file": "Sergipe - Regulamento Interno.md",
           "char_count": 101234,
@@ -20970,7 +20970,7 @@
         },
         {
           "type": "Regulamento Geral",
-          "title": "Regulamento Geral",
+          "title": "Diretriz Geral do Comando Operacional",
           "typeVerified": false,
           "md_file": "Tocantins - Regulamento de Serviço.md",
           "char_count": 43137,

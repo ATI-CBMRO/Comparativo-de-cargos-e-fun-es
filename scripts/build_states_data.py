@@ -449,16 +449,96 @@ CONTENT_TYPE_OVERRIDES = {
 }
 
 # Rótulo de EXIBIÇÃO por documento, quando difere do `type` (classificação
-# funcional usada na tabela de cobertura e não deve mudar). O CBMBA batiza seus
-# próprios instrumentos: o documento classificado como "Regimento Interno"
-# (função organizacional) se autodenomina "NORMA ADMINISTRATIVA" no cabeçalho
-# de todas as páginas; o "Regulamento de Serviço" se autodenomina "NORMA
-# OPERACIONAL". Achado na ingestão (conteúdo, não nome do arquivo — os PDFs
-# fonte continuam nomeados "Regimento Interno"/"Regulamento de Serviço").
+# funcional usada na tabela de cobertura e não deve mudar). Sem isso, o rótulo
+# cai para o `type` e vários documentos DISTINTOS aparecem com o mesmo nome —
+# em Alagoas eram 17 linhas "Regulamento Geral" idênticas, impossíveis de
+# distinguir na lista. Cada título abaixo foi conferido no cabeçalho da 1ª
+# página do markdown extraído; os PDFs fonte NÃO são renomeados nem movidos.
+# Formato curto (o nome pelo qual o documento circula), porque a lista precisa
+# caber na tela do celular — o número da lei já aparece em separado (lawText).
 DOCUMENT_TITLE_OVERRIDES = {
+    # CBMBA batiza os próprios instrumentos: o classificado como "Regimento
+    # Interno" se autodenomina "NORMA ADMINISTRATIVA" no cabeçalho de todas as
+    # páginas; o "Regulamento de Serviço", "NORMA OPERACIONAL".
     "Bahia - Regimento Interno.md": "Norma Administrativa",
     "Bahia - Regulamento de Serviço.md": "Norma Operacional",
+    # CBMAL: 17 documentos operacionais distintos, todos classificados como
+    # "Regulamento Geral". Cabeçalhos: "DIRETRIZ OPERACIONAL DE BOMBEIROS (DOB)
+    # Nº xx" e "NORMA OPERACIONAL DE BOMBEIRO N.º xx". As DOB 03 e NOB 09 vêm
+    # como transcrição em Boletim Geral (sem cabeçalho próprio na 1ª página),
+    # mas são citadas nominalmente pelas NOB 01-03, que "dispõem sobre" itens da
+    # DOB 03.
+    "Alagoas - Diretriz Operacional 01.md": "Diretriz Operacional 01",
+    "Alagoas - Diretriz Operacional 03.md": "Diretriz Operacional 03",
+    "Alagoas - Diretriz Operacional 04.md": "Diretriz Operacional 04",
+    "Alagoas - Diretriz Operacional 05.md": "Diretriz Operacional 05",
+    "Alagoas - Diretriz Operacional 06.md": "Diretriz Operacional 06",
+    "Alagoas - Diretriz Operacional 07.md": "Diretriz Operacional 07",
+    "Alagoas - Diretriz Operacional 08.md": "Diretriz Operacional 08",
+    "Alagoas - Norma Operacional 01.md": "Norma Operacional 01",
+    "Alagoas - Norma Operacional 02.md": "Norma Operacional 02",
+    "Alagoas - Norma Operacional 03.md": "Norma Operacional 03",
+    "Alagoas - Norma Operacional 04.md": "Norma Operacional 04",
+    "Alagoas - Norma Operacional 05.md": "Norma Operacional 05",
+    "Alagoas - Norma Operacional 06.md": "Norma Operacional 06",
+    "Alagoas - Norma Operacional 07.md": "Norma Operacional 07",
+    "Alagoas - Norma Operacional 08.md": "Norma Operacional 08",
+    "Alagoas - Norma Operacional 09.md": "Norma Operacional 09",
+    "Alagoas - Norma Operacional 11.md": "Norma Operacional 11",
+    # Demais estados cujo documento de serviço tem nome próprio, diferente do
+    # tipo funcional pelo qual foi classificado.
+    "Goiás - Regimento dos Serviços Interno e Operacional.md": "Regimento dos Serviços Interno e Operacional",
+    # Portaria que APROVA a diretriz; sem lei registrada, por isso o número entra
+    # no título (é como o documento é identificado no CBMMA).
+    "Maranhão - Portaria 46.md": "Diretriz Operacional do Serviço (Portaria 46/2020)",
+    "Pará - Regulamento de serviço.md": "Regulamento de Serviço",
+    "Sergipe - Regulamento Interno.md": "Regulamento Interno dos Serviços Diários (RISD)",
+    # "INSTRUÇÃO NORMATIVA OPERACIONAL Nº 01/2024 (INOp 01) — Serviços Diários
+    # dos Oficiais". Arquivo com a grafia antiga do estado ("Roraíma"), ver
+    # STATE_NAME_ALIASES.
+    "Roraíma - Regulamento de Serviço.md": "Instrução Normativa Operacional 01/2024",
+    # Portaria nº 003/2019/COB: "Atualiza a Diretriz Geral do Comando Operacional".
+    "Tocantins - Regulamento de Serviço.md": "Diretriz Geral do Comando Operacional",
+    # Decreto 21.425/2016 — classificado como Regulamento Geral, mas é o RSCIP,
+    # matéria de segurança contra incêndio, não de serviço.
+    "Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto 21.425-2016).md":
+        "Regulamento de Segurança Contra Incêndio e Pânico",
+    # PROJETO de lei ("* MINUTA DE DOCUMENTO" na 1ª página): sem o rótulo, se
+    # exibia igual à LOB vigente, como se já valesse.
+    "Rondônia - Minuta de Lei de Organização Básica.md": "Minuta de Lei de Organização Básica",
+    # LC 885/2025 ALTERA a LC 724/2018 (a LOB do CBMSC). As duas se exibiam como
+    # "Lei de Organização Básica", indistinguíveis.
+    "Santa Catarina - Organização Básica alterações.md": "Lei de Organização Básica (alterações)",
 }
+
+# Ordem de EXIBIÇÃO dos documentos dentro de cada estado: LOB, depois Regimento
+# Interno, depois os documentos de serviço, e por último o que não entra nas 3
+# colunas de cobertura (Quadros de efetivo). Ordenar aqui, no gerador, e não em
+# cada tela: a ordem vira propriedade do dado, então o Acervo Legal e a ficha do
+# estado herdam a mesma sequência sem duplicar lógica. Espelha o bucketOf() de
+# src/lib/acervoCoverage.js — se um tipo entrar lá, entra aqui também.
+DOC_TYPE_DISPLAY_ORDER = (
+    "Lei de Organização Básica",
+    "Regimento Interno",
+    "Regulamento Geral",
+    "Regimento de Serviços",
+    "Normas Gerais de Ação",
+)
+
+
+def doc_sort_key(doc: dict) -> tuple:
+    """Posição do documento na ordem de exibição do estado.
+
+    Tipo desconhecido cai para o fim (len da tupla). Desempate pelo nome do
+    arquivo, para a ordem ficar estável entre execuções — sem isso, dois
+    documentos do mesmo tipo poderiam trocar de lugar a cada regeneração e
+    sujar o diff do JSON.
+    """
+    try:
+        rank = DOC_TYPE_DISPLAY_ORDER.index(doc.get("type"))
+    except ValueError:
+        rank = len(DOC_TYPE_DISPLAY_ORDER)
+    return (rank, doc.get("md_file", ""))
 
 # Grafias alternativas do MESMO estado no nome dos arquivos → nome canônico único.
 # Sem isso, "Roraíma" (grafia herdada do acervo antigo) e "Roraima" (grafia correta
@@ -602,6 +682,11 @@ def process_state(state_name: str, md_files: list[Path]) -> dict:
             "has_pdf": md_file.name.replace(".md", ".pdf") in PDF_FILES
         }
         documents.append(doc_entry)
+
+    # LOB -> Regimento Interno -> documentos de serviço -> demais (ver
+    # DOC_TYPE_DISPLAY_ORDER). Feito uma vez aqui: todo consumidor do JSON
+    # herda a mesma ordem.
+    documents.sort(key=doc_sort_key)
 
     # Monta base legal
     law_strings = []

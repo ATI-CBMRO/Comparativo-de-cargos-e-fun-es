@@ -2607,6 +2607,16 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   background: var(--bg-card); color: var(--text-primary);
   box-shadow: 0 1px 3px rgba(16, 32, 58, 0.12);
 }
+/* No celular a ordem se inverte: "Documentos por estado" (a visão útil numa
+   tela estreita, e a que abre por padrão — ver viewInicial() em
+   AcervoCoverageTable.jsx) vem primeiro, "Tabela" por último. Só a posição
+   muda; a ordem no DOM continua Tabela → Por documento → Documentos por
+   estado, que é a ordem de leitura no desktop. */
+@media (max-width: 900px) {
+  .acervo-cov-tabs button:nth-child(1) { order: 3; }
+  .acervo-cov-tabs button:nth-child(2) { order: 2; }
+  .acervo-cov-tabs button:nth-child(3) { order: 1; }
+}
 
 .acervo-cov-hint {
   font-size: 12px; color: var(--text-muted); margin-bottom: 12px;

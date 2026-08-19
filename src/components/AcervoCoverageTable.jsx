@@ -257,8 +257,17 @@ function PdfModal({ doc, onClose }) {
   )
 }
 
+// No celular a matriz de cobertura não cabe na tela; quem abre o acervo pelo
+// telefone quer a lista de documentos. Só o valor INICIAL depende da largura —
+// depois disso a escolha é de quem navega, e girar o aparelho não desfaz.
+// Casa com o @media (max-width: 900px) que reordena as abas no index.css.
+function viewInicial() {
+  if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return 'tabela'
+  return window.matchMedia('(max-width: 900px)').matches ? 'docs' : 'tabela'
+}
+
 export default function AcervoCoverageTable({ rows, onSelectState }) {
-  const [view, setView] = useState('tabela')
+  const [view, setView] = useState(viewInicial)
   const [filterCol, setFilterCol] = useState(null)
   const [pdfDoc, setPdfDoc] = useState(null)
   if (!rows || rows.length === 0) return null
