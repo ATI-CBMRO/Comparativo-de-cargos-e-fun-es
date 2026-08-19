@@ -43,10 +43,14 @@ bucket padrão. Sem o bucket, a tela de envio existe mas nenhum arquivo sobe.
 Passos manuais no console do projeto `revisao-minuta-cbmro-6f248`, na conta institucional:
 
 1. **Build → Storage → "Começar"**, para provisionar o bucket padrão (exige o plano Blaze).
-2. **Storage → Rules:** publicar o `storage.rules` deste repositório (arquivo novo — antes
+2. **Firestore → Rules:** republicar o `firestore.rules`, que passou a conter o bloco
+   `match /uploadsVisitantes/{id}`. **Publique este passo antes do próximo** — na ordem
+   inversa, um envio na janela entre as duas publicações sobe o arquivo no Storage e falha
+   ao gravar o metadado (a coleção ainda não seria aceita pelas regras vigentes), deixando
+   um arquivo órfão de até 20 MB, invisível pela interface (a caixa de entrada do admin lê
+   do Firestore, não do Storage).
+3. **Storage → Rules:** publicar o `storage.rules` deste repositório (arquivo novo — antes
    desta entrega o projeto não tinha nenhuma regra de Storage).
-3. **Firestore → Rules:** republicar o `firestore.rules`, que passou a conter o bloco
-   `match /uploadsVisitantes/{id}`.
 
 Conferência depois de publicar: abrir `/acervo-publico/enviar` como visitante, enviar um PDF
 pequeno, e verificar se ele aparece em `/acessos`, seção "Documentos enviados por
