@@ -55,8 +55,8 @@ export function VisitanteProvider({ children }) {
       const cred = await signInAnonymously(auth)
       const uid = cred.user.uid
       await registrarVisitante({ uid, ...v.dados, primeiraVez: !jaTinhaSessao })
-      gravarVisitanteLocal(globalThis.localStorage, { uid, nome: v.dados.nome })
-      setVisitante({ uid, nome: v.dados.nome })
+      gravarVisitanteLocal(globalThis.localStorage, { uid, nome: v.dados.nome, email: v.dados.email })
+      setVisitante({ uid, nome: v.dados.nome, email: v.dados.email })
       return true
     } catch (e) {
       console.error('Falha ao registrar visitante:', e)
