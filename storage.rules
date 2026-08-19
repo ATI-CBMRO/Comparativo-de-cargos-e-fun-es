@@ -1,0 +1,36 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Mesmo critério de admin do firestore.rules: membro ativo com role 'admin'. Regras do
+    // Storage podem consultar o Firestore — é assim que os dois lados falam a mesma língua
+    // sem duplicar a lista de administradores.
+    function memberRef() {
+      return /databases/(default)/documents/members/$(request.auth.token.email);
+    }
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email != null
+        && firestore.exists(memberRef())
+        && firestore.get(memberRef()).data.ativo == true
+        && firestore.get(memberRef()).data.role == 'admin';
+    }
+
+    // Envios do acervo público. Cada visitante escreve SÓ dentro da pasta do próprio uid.
+    // Tamanho e tipo são reforçados AQUI, não só no formulário: um cliente adulterado não
+    // pode subir um executável de 500 MB só porque o JavaScript da página foi contornado.
+    match /uploads-visitantes/{uid}/{arquivo} {
+      allow read: if isAdmin();
+      allow delete: if isAdmin();
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.size <= 20 * 1024 * 1024
+        && request.resource.contentType == 'application/pdf';
+    }
+
+    // Nada mais no bucket é acessível pelo cliente.
+    match /{caminho=**} {
+      allow read, write: if false;
+    }
+  }
+}

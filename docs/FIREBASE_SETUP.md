@@ -31,3 +31,23 @@ institucional (o CLI local está numa conta pessoal sem acesso ao projeto):
 Conferência depois de publicar: abrir `/acervo-publico` numa janela anônima, preencher o
 cadastro e verificar se a pessoa aparece em `/acessos`, seção "Visitantes do acervo
 público".
+
+## Envio de documentos pelo visitante (upload) — 2026-08-19
+
+**Pré-requisito que pode custar dinheiro:** o Cloud Storage **não estava provisionado**
+neste projeto (verificado em 2026-08-19: o bucket
+`revisao-minuta-cbmro-6f248.firebasestorage.app` respondia 404). Desde outubro de 2024 o
+Firebase exige o **plano Blaze** (pago por uso, com cota gratuita mensal) para criar o
+bucket padrão. Sem o bucket, a tela de envio existe mas nenhum arquivo sobe.
+
+Passos manuais no console do projeto `revisao-minuta-cbmro-6f248`, na conta institucional:
+
+1. **Build → Storage → "Começar"**, para provisionar o bucket padrão (exige o plano Blaze).
+2. **Storage → Rules:** publicar o `storage.rules` deste repositório (arquivo novo — antes
+   desta entrega o projeto não tinha nenhuma regra de Storage).
+3. **Firestore → Rules:** republicar o `firestore.rules`, que passou a conter o bloco
+   `match /uploadsVisitantes/{id}`.
+
+Conferência depois de publicar: abrir `/acervo-publico/enviar` como visitante, enviar um PDF
+pequeno, e verificar se ele aparece em `/acessos`, seção "Documentos enviados por
+visitantes", com o botão **Baixar** funcionando.

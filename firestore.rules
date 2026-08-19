@@ -120,5 +120,40 @@ service cloud.firestore {
         && request.resource.data.instituicao is string
         && request.resource.data.instituicao.size() <= 200;
     }
+
+    // Envios de documentos pelos visitantes (spec 2026-08-18). O visitante só CRIA, com o
+    // próprio uid; nunca lê nem edita a fila — a caixa de entrada é do admin. O arquivo em
+    // si mora no Storage (storage.rules, prefixo uploads-visitantes/); aqui ficam só os
+    // metadados que a tela de /acessos mostra.
+    match /uploadsVisitantes/{id} {
+      allow read, delete: if isAdmin();
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasOnly(
+             ['uid','nomeVisitante','emailVisitante','estado','tipoDocumento','observacao',
+              'storagePath','nomeArquivo','tamanho','criadoEm'])
+        && request.resource.data.estado is string
+        && request.resource.data.estado.size() > 0
+        && request.resource.data.estado.size() <= 120
+        && request.resource.data.tipoDocumento in
+             ['Lei de Organização Básica','Regimento Interno','Regulamento de Serviço','Outro']
+        && request.resource.data.observacao is string
+        && request.resource.data.observacao.size() <= 1000
+        && request.resource.data.nomeVisitante is string
+        && request.resource.data.nomeVisitante.size() <= 200
+        && request.resource.data.emailVisitante is string
+        && request.resource.data.emailVisitante.size() <= 200
+        && request.resource.data.nomeArquivo is string
+        && request.resource.data.nomeArquivo.size() <= 260
+        // `is number`, nao `is int`: File.size e inteiro, mas se o SDK serializar como
+        // double a regra recusaria o metadado DEPOIS do upload inteiro ja ter subido.
+        // O teto abaixo e o que realmente importa aqui.
+        && request.resource.data.tamanho is number
+        && request.resource.data.tamanho <= 20 * 1024 * 1024
+        // O caminho declarado tem que ser dentro da pasta do próprio uid: sem isto, um
+        // cliente adulterado apontaria o metadado para o arquivo de outra pessoa.
+        && request.resource.data.storagePath is string
+        && request.resource.data.storagePath.matches('^uploads-visitantes/' + request.auth.uid + '/.*');
+    }
   }
 }
