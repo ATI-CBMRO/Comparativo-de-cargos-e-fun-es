@@ -32,26 +32,13 @@ Conferência depois de publicar: abrir `/acervo-publico` numa janela anônima, p
 cadastro e verificar se a pessoa aparece em `/acessos`, seção "Visitantes do acervo
 público".
 
-## Envio de documentos pelo visitante (upload) — 2026-08-19
+## Contribuição de documentos pelo visitante — por e-mail, não upload
 
-**Pré-requisito que pode custar dinheiro:** o Cloud Storage **não estava provisionado**
-neste projeto (verificado em 2026-08-19: o bucket
-`revisao-minuta-cbmro-6f248.firebasestorage.app` respondia 404). Desde outubro de 2024 o
-Firebase exige o **plano Blaze** (pago por uso, com cota gratuita mensal) para criar o
-bucket padrão. Sem o bucket, a tela de envio existe mas nenhum arquivo sobe.
-
-Passos manuais no console do projeto `revisao-minuta-cbmro-6f248`, na conta institucional:
-
-1. **Build → Storage → "Começar"**, para provisionar o bucket padrão (exige o plano Blaze).
-2. **Firestore → Rules:** republicar o `firestore.rules`, que passou a conter o bloco
-   `match /uploadsVisitantes/{id}`. **Publique este passo antes do próximo** — na ordem
-   inversa, um envio na janela entre as duas publicações sobe o arquivo no Storage e falha
-   ao gravar o metadado (a coleção ainda não seria aceita pelas regras vigentes), deixando
-   um arquivo órfão de até 20 MB, invisível pela interface (a caixa de entrada do admin lê
-   do Firestore, não do Storage).
-3. **Storage → Rules:** publicar o `storage.rules` deste repositório (arquivo novo — antes
-   desta entrega o projeto não tinha nenhuma regra de Storage).
-
-Conferência depois de publicar: abrir `/acervo-publico/enviar` como visitante, enviar um PDF
-pequeno, e verificar se ele aparece em `/acessos`, seção "Documentos enviados por
-visitantes", com o botão **Baixar** funcionando.
+Chegou a existir um upload direto pelo portal (Firebase Storage, `storage.rules`, coleção
+`uploadsVisitantes`) — foi **desfeito em 2026-08-20**: o Cloud Storage deste projeto nunca
+foi provisionado (o bucket `revisao-minuta-cbmro-6f248.firebasestorage.app` respondia 404),
+e desde outubro de 2024 o Firebase exige o **plano Blaze** (pago por uso) para criar o
+bucket padrão. Encontrados impedimentos institucionais para habilitar o Blaze, a decisão foi
+manter o projeto no plano gratuito e trocar o upload por uma mensagem estática com e-mail de
+contato (`ContribuirDocumento.jsx`, aba "Contribuir" em `/acervo-publico`). Não há nada de
+Storage para provisionar ou publicar neste projeto hoje.

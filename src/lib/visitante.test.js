@@ -83,7 +83,7 @@ function storageFake(inicial = {}) {
 test('gravarVisitanteLocal e lerVisitanteLocal fazem a volta completa', () => {
   const s = storageFake()
   gravarVisitanteLocal(s, { uid: 'abc123', nome: 'Maria da Silva' })
-  assert.deepEqual(lerVisitanteLocal(s), { uid: 'abc123', nome: 'Maria da Silva', email: '' })
+  assert.deepEqual(lerVisitanteLocal(s), { uid: 'abc123', nome: 'Maria da Silva' })
 })
 
 test('lerVisitanteLocal devolve null quando não há nada gravado', () => {
@@ -108,27 +108,4 @@ test('limparVisitanteLocal remove a chave e não lança sem storage', () => {
   limparVisitanteLocal(s)
   assert.equal(lerVisitanteLocal(s), null)
   assert.doesNotThrow(() => limparVisitanteLocal(null))
-})
-
-// --- e-mail retido no estado local (entrega de upload, 2026-08-19) ----------
-
-test('gravarVisitanteLocal e lerVisitanteLocal preservam o e-mail', () => {
-  const s = storageFake()
-  gravarVisitanteLocal(s, { uid: 'abc123', nome: 'Maria da Silva', email: 'maria@cbmpa.gov.br' })
-  assert.deepEqual(lerVisitanteLocal(s), {
-    uid: 'abc123', nome: 'Maria da Silva', email: 'maria@cbmpa.gov.br',
-  })
-})
-
-// COMPATIBILIDADE: quem já era visitante antes desta mudança tem {uid,nome} gravado, sem
-// email. Exigir o campo aqui deslogaria todos eles e pediria cadastro de novo — regressão
-// gratuita. O e-mail ausente vira string vazia e a sessão continua válida.
-test('lerVisitanteLocal aceita cadastro antigo sem e-mail (email vira "")', () => {
-  const s = storageFake({ [CHAVE_LOCAL]: '{"uid":"abc","nome":"Maria"}' })
-  assert.deepEqual(lerVisitanteLocal(s), { uid: 'abc', nome: 'Maria', email: '' })
-})
-
-test('lerVisitanteLocal ignora e-mail de tipo errado em vez de invalidar a sessão', () => {
-  const s = storageFake({ [CHAVE_LOCAL]: '{"uid":"abc","nome":"Maria","email":42}' })
-  assert.deepEqual(lerVisitanteLocal(s), { uid: 'abc', nome: 'Maria', email: '' })
 })

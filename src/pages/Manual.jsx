@@ -103,20 +103,13 @@ const SECTIONS = [
       <>
         <p>
           Quem entra pela página pública (<b>/acervo-publico</b>) também pode <b>contribuir</b>:
-          a aba <b>Enviar documento</b> aceita um PDF de até 20 MB, com o estado de origem, o
-          tipo de documento e uma observação.
+          a aba <b>Contribuir</b> mostra um e-mail de contato da equipe do CBMRO para quem
+          quiser enviar a legislação do próprio estado, com o estado de origem e o tipo de
+          documento na mensagem.
         </p>
-        <ul>
-          <li>Os envios aparecem em <b>Acessos</b>, seção <b>Documentos enviados por visitantes</b>.</li>
-          <li>Clique em <b>baixar</b> para abrir o PDF e avaliar.</li>
-          <li>Se o documento for aproveitado, ele entra no acervo pelo <b>processo de ingestão de
-              sempre</b> — o envio não publica nada sozinho.</li>
-          <li><b>remover</b> tira da lista e apaga o arquivo junto; use depois de já ter baixado
-              ou decidido descartar.</li>
-        </ul>
         <div className="manual-callout">
-          <b>Nada entra no acervo automaticamente.</b> A tela de envio é uma caixa de entrada:
-          todo arquivo passa pela curadoria antes de virar parte do acervo comparado.
+          <b>O envio é por e-mail, não pelo portal.</b> Todo documento recebido passa pela
+          curadoria de sempre antes de virar parte do acervo comparado.
         </div>
       </>
     ),

@@ -3,13 +3,13 @@
 // Ela vive FORA do portal logado de propósito — a fronteira entre visitante e membro é o
 // caminho da URL, não uma condição de login (spec, seção 1).
 import { Routes, Route, NavLink, Navigate, Link } from 'react-router-dom'
-import { Library, Search as SearchIcon, LogIn, UploadCloud } from 'lucide-react'
+import { Library, Search as SearchIcon, LogIn, Mail } from 'lucide-react'
 import MarcaPortal from '../components/MarcaPortal.jsx'
 import Legislations from './Legislations.jsx'
 import StateDetail from './StateDetail.jsx'
 import SearchPage from './Search.jsx'
 import CadastroVisitante from './CadastroVisitante.jsx'
-import EnviarDocumento from './EnviarDocumento.jsx'
+import ContribuirDocumento from './ContribuirDocumento.jsx'
 import { useVisitante } from '../lib/visitante.jsx'
 import { AcervoBaseProvider } from '../context/AcervoBaseContext.jsx'
 import { BASE_PUBLICA } from '../lib/visitante.js'
@@ -40,7 +40,7 @@ export default function AcervoPublico() {
           <SearchIcon size={16} /> Busca
         </NavLink>
         <NavLink to={`${BASE_PUBLICA}/enviar`} className={({ isActive }) => `pub-nav-item${isActive ? ' active' : ''}`}>
-          <UploadCloud size={16} /> Enviar documento
+          <Mail size={16} /> Contribuir
         </NavLink>
         <span className="pub-nav-quem">Olá, {visitante.nome}</span>
       </nav>
@@ -54,7 +54,7 @@ export default function AcervoPublico() {
             <Route index element={<Legislations />} />
             <Route path="estados/:stateId" element={<StateDetail />} />
             <Route path="busca" element={<SearchPage />} />
-            <Route path="enviar" element={<EnviarDocumento />} />
+            <Route path="enviar" element={<ContribuirDocumento />} />
             {/* Endereço fora do recorte dentro do prefixo: devolve ao acervo. */}
             <Route path="*" element={<Navigate to={BASE_PUBLICA} replace />} />
           </Routes>

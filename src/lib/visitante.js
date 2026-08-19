@@ -49,19 +49,14 @@ export function lerVisitanteLocal(storage) {
     if (!cru) return null
     const v = JSON.parse(cru)
     if (!v || typeof v.uid !== 'string' || typeof v.nome !== 'string') return null
-    // `email` entrou depois (entrega de upload): quem se cadastrou antes não tem o campo.
-    // Ausente ou de tipo errado vira '' — nunca invalida a sessão, senão todo visitante
-    // antigo seria deslogado e teria que se cadastrar de novo sem motivo.
-    return { uid: v.uid, nome: v.nome, email: typeof v.email === 'string' ? v.email : '' }
+    return { uid: v.uid, nome: v.nome }
   } catch {
     return null   // conteúdo corrompido ou ambiente sem localStorage: trate como "não há visitante"
   }
 }
 
-export function gravarVisitanteLocal(storage, { uid, nome, email }) {
-  try {
-    storage?.setItem(CHAVE_LOCAL, JSON.stringify({ uid, nome, email: email ?? '' }))
-  } catch { /* ambiente sem localStorage */ }
+export function gravarVisitanteLocal(storage, { uid, nome }) {
+  try { storage?.setItem(CHAVE_LOCAL, JSON.stringify({ uid, nome })) } catch { /* ambiente sem localStorage */ }
 }
 
 export function limparVisitanteLocal(storage) {

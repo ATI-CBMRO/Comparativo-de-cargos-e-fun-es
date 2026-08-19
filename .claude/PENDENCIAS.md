@@ -2,19 +2,6 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
-- [ ] **Acervo público / upload — provisionar o Cloud Storage (exige plano Blaze) — ADIADO por
-  decisão do Ten. Tiago (19/08/2026: "vamos manter a conta do Firebase na versão gratuita por
-  enquanto")**. O bucket `revisao-minuta-cbmro-6f248.firebasestorage.app` responde **404** — o
-  Storage nunca foi provisionado neste projeto, e desde out/2024 o Firebase exige o plano
-  Blaze (pago por uso) para criar o bucket padrão. Enquanto isso não for resolvido, a tela
-  `/acervo-publico/enviar` existe em produção mas nenhum arquivo sobe de verdade — não é bug,
-  é a limitação conhecida. Quando o Ten. Tiago decidir habilitar o Blaze: provisionar o
-  Storage no console, publicar `firestore.rules` (nesta ordem, antes do Storage — ver o motivo
-  em `docs/FIREBASE_SETUP.md`), depois publicar `storage.rules` (arquivo novo). Não repropor
-  o Blaze proativamente — é decisão dele, não pendência técnica a cobrar.
-- [ ] **Acervo público / upload — conferência visual** (o agente não tem navegador): enviar
-  um PDF por `/acervo-publico/enviar` e conferir que aparece em `/acessos` com "baixar"
-  funcionando.
 - [ ] **Acervo público — dois passos manuais no console do Firebase** (entrega de
   18/08/2026). Na conta institucional (`revisao-minuta-cbmro-6f248`): (1) Authentication →
   Sign-in method → **Anônimo** → Ativar; (2) publicar o `firestore.rules`, que ganhou o
@@ -333,10 +320,16 @@
   - **Pendência leve**: sobrou `teste.escopo.claude2@gmail.com` ("Claude Teste Escopo") em
     Acessos — remoção automática falhou por instabilidade da ferramenta de teste com a caixa
     de confirmação do navegador; falta 1 clique manual em "remover".
-- [x] **Upload de documentos pelo visitante público** — 19/08/2026. Militares de outros CBMs
-  enviam PDFs (até 20 MB) de legislações ausentes do acervo; admin vê a caixa de entrada em
-  `/acessos`, baixa e remove. Firebase Storage + coleção `uploadsVisitantes`. Curadoria
-  segue manual. Spec e plano em `docs/superpowers/`.
+- [x] **Upload de documentos pelo visitante público — implementado em 19/08/2026, DESFEITO em
+  20/08/2026.** Militares de outros CBMs enviariam PDFs (até 20 MB) direto pelo portal;
+  descoberto que o bucket do Firebase Storage exige o plano Blaze (pago), e o Ten. Tiago
+  encontrou impedimentos institucionais para habilitá-lo. Decisão: reverter o upload e trocar
+  por uma mensagem estática com e-mail de contato (`ContribuirDocumento.jsx`,
+  `institucional_bsb_cbmro@cloud.sesdec.ro.gov.br`) na mesma aba `/acervo-publico/enviar`. A
+  curadoria de qualquer forma já era manual, então a troca não perde nada de funcionalidade
+  real — só o transporte do arquivo deixa de ser pelo app. Spec e plano do upload ficam em
+  `docs/superpowers/` como registro histórico; não reimplementar sem reconfirmar a restrição
+  do Blaze.
 - [x] **Acervo — RO: Regulamento de Segurança Contra Incêndio e Pânico ingerido** (13/08/2026,
   pedido do Tiago): `Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto
   21.425-2016).pdf` (Decreto nº 21.425/2016, alt. Decreto nº 24.357/2019, regulamenta a Lei

@@ -3292,13 +3292,13 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 }
 .gdoc-ok:hover { background: #611722; }
 
-/* ===== Envio de documentos pelo visitante — spec 2026-08-18 ===== */
+/* ===== Contribuir com o acervo (e-mail) — 2026-08-20 ===== */
 .pub-envio { max-width: 640px; margin: 0 auto; }
 .pub-envio-titulo { font-size: 20px; color: #121d3d; margin: 0 0 4px; }
 .pub-envio-sub { color: #5a667f; font-size: 13.5px; line-height: 1.5; margin: 0 0 18px; }
-.pub-envio-form { background: #fff; border: 1px solid #d7deea; border-radius: 12px;
-  padding: 20px; display: flex; flex-direction: column; gap: 12px; }
-.pub-envio-obs { resize: vertical; font-family: inherit; }
-.pub-envio-ok { background: #e9f6ee; border: 1px solid #b7e0c6; color: #1d6b3a;
-  border-radius: 8px; padding: 10px 12px; font-size: 13.5px; font-weight: 600;
-  margin-bottom: 12px; }
+.pub-envio-card { background: #fff; border: 1px solid #d7deea; border-radius: 12px;
+  padding: 24px; text-align: center; }
+.pub-envio-mail { display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 22px; background: #c8102e; color: #fff; border-radius: 8px;
+  font-size: 15px; font-weight: 700; text-decoration: none; }
+.pub-envio-mail:hover { background: #a50d26; }
