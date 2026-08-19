@@ -2,13 +2,16 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
-- [ ] **Acervo público / upload — provisionar o Cloud Storage (pode exigir plano Blaze)**
-  (entrega de 19/08/2026). Verificado em 19/08: o bucket
-  `revisao-minuta-cbmro-6f248.firebasestorage.app` responde **404** — o Storage nunca foi
-  provisionado neste projeto. Desde out/2024 o Firebase exige o **plano Blaze** para criar o
-  bucket padrão. Enquanto isso não for resolvido, a tela `/acervo-publico/enviar` existe mas
-  nenhum arquivo sobe. Depois de provisionar: publicar o `storage.rules` (arquivo novo) e
-  republicar o `firestore.rules`. Ver `docs/FIREBASE_SETUP.md`, seção "Envio de documentos".
+- [ ] **Acervo público / upload — provisionar o Cloud Storage (exige plano Blaze) — ADIADO por
+  decisão do Ten. Tiago (19/08/2026: "vamos manter a conta do Firebase na versão gratuita por
+  enquanto")**. O bucket `revisao-minuta-cbmro-6f248.firebasestorage.app` responde **404** — o
+  Storage nunca foi provisionado neste projeto, e desde out/2024 o Firebase exige o plano
+  Blaze (pago por uso) para criar o bucket padrão. Enquanto isso não for resolvido, a tela
+  `/acervo-publico/enviar` existe em produção mas nenhum arquivo sobe de verdade — não é bug,
+  é a limitação conhecida. Quando o Ten. Tiago decidir habilitar o Blaze: provisionar o
+  Storage no console, publicar `firestore.rules` (nesta ordem, antes do Storage — ver o motivo
+  em `docs/FIREBASE_SETUP.md`), depois publicar `storage.rules` (arquivo novo). Não repropor
+  o Blaze proativamente — é decisão dele, não pendência técnica a cobrar.
 - [ ] **Acervo público / upload — conferência visual** (o agente não tem navegador): enviar
   um PDF por `/acervo-publico/enviar` e conferir que aparece em `/acessos` com "baixar"
   funcionando.
