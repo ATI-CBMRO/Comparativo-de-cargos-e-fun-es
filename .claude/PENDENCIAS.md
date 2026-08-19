@@ -2,6 +2,16 @@
 > Backlog canônico. Atualizado por qualquer sessão via /handoff. Não apagar histórico de concluídas do mês.
 
 ## 🔴 Pendente
+- [ ] **Acervo público / upload — provisionar o Cloud Storage (pode exigir plano Blaze)**
+  (entrega de 19/08/2026). Verificado em 19/08: o bucket
+  `revisao-minuta-cbmro-6f248.firebasestorage.app` responde **404** — o Storage nunca foi
+  provisionado neste projeto. Desde out/2024 o Firebase exige o **plano Blaze** para criar o
+  bucket padrão. Enquanto isso não for resolvido, a tela `/acervo-publico/enviar` existe mas
+  nenhum arquivo sobe. Depois de provisionar: publicar o `storage.rules` (arquivo novo) e
+  republicar o `firestore.rules`. Ver `docs/FIREBASE_SETUP.md`, seção "Envio de documentos".
+- [ ] **Acervo público / upload — conferência visual** (o agente não tem navegador): enviar
+  um PDF por `/acervo-publico/enviar` e conferir que aparece em `/acessos` com "baixar"
+  funcionando.
 - [ ] **Acervo público — dois passos manuais no console do Firebase** (entrega de
   18/08/2026). Na conta institucional (`revisao-minuta-cbmro-6f248`): (1) Authentication →
   Sign-in method → **Anônimo** → Ativar; (2) publicar o `firestore.rules`, que ganhou o
@@ -320,6 +330,10 @@
   - **Pendência leve**: sobrou `teste.escopo.claude2@gmail.com` ("Claude Teste Escopo") em
     Acessos — remoção automática falhou por instabilidade da ferramenta de teste com a caixa
     de confirmação do navegador; falta 1 clique manual em "remover".
+- [x] **Upload de documentos pelo visitante público** — 19/08/2026. Militares de outros CBMs
+  enviam PDFs (até 20 MB) de legislações ausentes do acervo; admin vê a caixa de entrada em
+  `/acessos`, baixa e remove. Firebase Storage + coleção `uploadsVisitantes`. Curadoria
+  segue manual. Spec e plano em `docs/superpowers/`.
 - [x] **Acervo — RO: Regulamento de Segurança Contra Incêndio e Pânico ingerido** (13/08/2026,
   pedido do Tiago): `Rondônia - Regulamento de Segurança Contra Incêndio e Pânico (Decreto
   21.425-2016).pdf` (Decreto nº 21.425/2016, alt. Decreto nº 24.357/2019, regulamenta a Lei

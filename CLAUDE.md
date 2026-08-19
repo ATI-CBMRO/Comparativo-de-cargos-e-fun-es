@@ -418,6 +418,20 @@ então a curadoria segue fechada ao visitante pelo BANCO). Lógica pura testada 
 `/acervo-publico` e **não** para `/estados`, que está fora do recorte.
 Exige o provedor **Anônimo** habilitado no console do Firebase (ver `docs/FIREBASE_SETUP.md`).
 
+**Envio de documentos pelo visitante (2026-08-19, spec `2026-08-18-acervo-publico-upload-documentos-design.md`):**
+a finalidade do perfil público não é só consulta — militares de outros CBMs contribuem com
+legislações ausentes do acervo por `/acervo-publico/enviar`. **Primeiro uso de Firebase
+Storage no projeto** (`uploads-visitantes/{uid}/…`, regras em `storage.rules`, arquivo novo
+que precisa ser publicado à parte do `firestore.rules`); metadados na coleção
+`uploadsVisitantes` (só o admin lê e apaga). Lógica pura em `src/lib/uploadDocumento.js`
+(validação, `nomeArquivoSeguro` — barra no nome escaparia da pasta do uid, que é o que a
+regra do Storage usa para autorizar); I/O em `src/lib/uploadsData.js` (sobe o arquivo antes
+do metadado e apaga o arquivo se o metadado falhar, para não deixar órfão). Caixa de
+entrada do admin em `/acessos`; a curadoria em si continua MANUAL, fora do app. O
+`VisitanteProvider` passou a reter o `email` no estado local — a regra de `visitantes/{uid}`
+não deixa o visitante reler o próprio cadastro, e cadastro antigo sem o campo continua
+válido (`email: ''`), sem deslogar ninguém.
+
 **Ver referências** (23/07/2026): botão retrátil "Ver referências (N)" no cabeçalho do
 popup de Revisão (`RevisaoModal.jsx`) mostra o Bloco D (excertos verbatim de outros
 estados) do capítulo/órgão do dispositivo aberto, via `AlternativesPanel.jsx` — o mesmo
