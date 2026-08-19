@@ -6,6 +6,7 @@ import {
   recusarSolicitacao,
 } from '../lib/membersData.js'
 import { subscribeVisitantes } from '../lib/visitantesData.js'
+import { subscribeUploads, urlDeDownload, removerUpload } from '../lib/uploadsData.js'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 function formatLogin(ts) {
@@ -13,6 +14,12 @@ function formatLogin(ts) {
   return ts.toDate().toLocaleString('pt-BR', {
     day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit',
   })
+}
+
+function formatTamanho(bytes) {
+  if (typeof bytes !== 'number' || bytes < 0) return '—'
+  const mb = bytes / (1024 * 1024)
+  return mb >= 1 ? `${mb.toFixed(1)} MB` : `${Math.max(1, Math.round(bytes / 1024))} KB`
 }
 
 const BADGE = {
@@ -41,6 +48,31 @@ export default function Acessos() {
     (lista) => { setVisitantes(lista); setErroVisitantes(false) },
     (e) => { console.error('Erro ao carregar visitantes:', e); setErroVisitantes(true) },
   ), [])
+
+  const [uploads, setUploads] = useState([])
+  const [erroUploads, setErroUploads] = useState(false)
+
+  // Erro visível na tela, nunca só no console (AR-04): sem isto, uma queda do feed deixaria
+  // a seção mostrando "nenhum envio", que é indistinguível de "ninguém enviou nada" e mente
+  // para o administrador — que poderia perder um documento enviado.
+  useEffect(() => subscribeUploads(
+    (lista) => { setUploads(lista); setErroUploads(false) },
+    (e) => { console.error('Erro ao carregar envios:', e); setErroUploads(true) },
+  ), [])
+
+  const baixar = async (u) => {
+    try {
+      const url = await urlDeDownload(u.storagePath)
+      window.open(url, '_blank', 'noopener')
+    } catch (err) {
+      console.error(err); setErro('Não foi possível abrir o arquivo enviado.')
+    }
+  }
+  const removerEnvio = async (u) => {
+    if (!window.confirm(`Remover o envio "${u.nomeArquivo}"? O arquivo é apagado junto e não há como desfazer.`)) return
+    try { await removerUpload({ id: u.id, storagePath: u.storagePath }) }
+    catch (err) { console.error(err); setErro('Não foi possível remover o envio.') }
+  }
 
   const stats = useMemo(() => contaStatus(members), [members])
   const pendentes = useMemo(() => members.filter(m => situacaoMembro(m) === 'pendente'), [members])
@@ -199,6 +231,59 @@ export default function Acessos() {
                 </td>
                 <td className={formatLogin(v.ultimoAcesso) ? 'acc-quando' : 'acc-nunca'}>
                   {formatLogin(v.ultimoAcesso) ?? '—'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 className="acc-sec-title">Documentos enviados por visitantes ({uploads.length})</h3>
+      <p className="acc-sub">
+        Legislações que militares de outros CBMs enviaram pela página pública. Baixe, avalie e
+        — se aproveitar — ingira no acervo pelo processo de sempre. Remover apaga o arquivo junto.
+      </p>
+
+      <AvisoSincronizacao visivel={erroUploads}>
+        Não foi possível carregar os envios agora — a lista abaixo pode estar incompleta ou
+        desatualizada.
+      </AvisoSincronizacao>
+
+      <div className="acc-panel">
+        <table className="acc-table">
+          <thead>
+            <tr>
+              <th>Documento</th><th>Enviado por</th><th>Observação</th><th>Quando</th><th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {uploads.length === 0 && !erroUploads && (
+              <tr><td colSpan={5} className="acc-mail">Nenhum documento enviado até agora.</td></tr>
+            )}
+            {uploads.map(u => (
+              <tr key={u.id}>
+                <td>
+                  <div className="acc-nome">{u.estado} · {u.tipoDocumento}</div>
+                  <div className="acc-mail">{u.nomeArquivo} · {formatTamanho(u.tamanho)}</div>
+                </td>
+                <td>
+                  <div className="acc-nome">{u.nomeVisitante}</div>
+                  {/* E-mail pode faltar em envio de visitante cadastrado ANTES desta entrega
+                      (o campo só passou a ser retido agora): cai para a lista de visitantes,
+                      que o admin já tem carregada nesta mesma tela. */}
+                  <div className="acc-mail">
+                    {u.emailVisitante || visitantes.find(v => v.id === u.uid)?.email || '—'}
+                  </div>
+                </td>
+                <td className="acc-papel">{u.observacao || '—'}</td>
+                <td className={formatLogin(u.criadoEm) ? 'acc-quando' : 'acc-nunca'}>
+                  {formatLogin(u.criadoEm) ?? '—'}
+                </td>
+                <td>
+                  <div className="acc-acts">
+                    <button type="button" className="acc-ic" onClick={() => baixar(u)}>baixar</button>
+                    <button type="button" className="acc-ic danger" onClick={() => removerEnvio(u)}>remover</button>
+                  </div>
                 </td>
               </tr>
             ))}
