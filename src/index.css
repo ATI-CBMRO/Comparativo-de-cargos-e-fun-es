@@ -3291,3 +3291,14 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .gdoc-ok:hover { background: #611722; }
+
+/* ===== Envio de documentos pelo visitante — spec 2026-08-18 ===== */
+.pub-envio { max-width: 640px; margin: 0 auto; }
+.pub-envio-titulo { font-size: 20px; color: #121d3d; margin: 0 0 4px; }
+.pub-envio-sub { color: #5a667f; font-size: 13.5px; line-height: 1.5; margin: 0 0 18px; }
+.pub-envio-form { background: #fff; border: 1px solid #d7deea; border-radius: 12px;
+  padding: 20px; display: flex; flex-direction: column; }
+.pub-envio-obs { resize: vertical; font-family: inherit; }
+.pub-envio-ok { background: #e9f6ee; border: 1px solid #b7e0c6; color: #1d6b3a;
+  border-radius: 8px; padding: 10px 12px; font-size: 13.5px; font-weight: 600;
+  margin-bottom: 12px; }
