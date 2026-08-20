@@ -157,7 +157,11 @@ function DocumentView({ rows, filterCol, onToggle, onSelectState }) {
 }
 
 // Relação detalhada (antes ficava abaixo da tabela). Busca por estado, sigla,
-// tipo ou número da lei; um card por estado com seus documentos e botão de PDF.
+// tipo e título do documento; um card por estado com seus documentos e botão de
+// PDF. O filtro também olha o lawText, mas o campo NÃO promete busca por número
+// de lei: os números são gravados com separador de milhar ("Lei nº 2.009"), então
+// digitar "2009" não casa, e 34 dos 73 documentos não têm lei registrada — meia
+// promessa que frustra mais do que ajuda (conferido em 20/08/2026).
 function DetailView({ rows, onSelectState, onOpenPdf }) {
   const [query, setQuery] = useState('')
   const q = query.trim().toLowerCase()
@@ -190,7 +194,7 @@ function DetailView({ rows, onSelectState, onOpenPdf }) {
         <input
           value={query}
           onChange={e => setQuery(e.target.value)}
-          placeholder="Buscar por estado, sigla, tipo de documento ou número da lei..."
+          placeholder="Buscar por estado, sigla ou tipo de documento..."
         />
       </div>
       <p className="acervo-detail-count">{total} documento{total !== 1 ? 's' : ''} em {cards.length} estado{cards.length !== 1 ? 's' : ''}.</p>
