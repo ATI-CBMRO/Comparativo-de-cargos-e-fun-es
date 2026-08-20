@@ -17,13 +17,15 @@ export default function ContribuirDocumento() {
         antes de entrar no acervo.
       </p>
       <div className="pub-envio-card">
-        {/* O endereço vai num span próprio para poder quebrar linha dentro do
-            botão: são 46 caracteres sem espaço, que no celular estouravam a
-            largura do card. */}
+        {/* Botão curto + endereço em texto à parte: são 46 caracteres sem
+            espaço onde quebrar, e dentro do botão eles estouravam a largura do
+            card no celular. Fora dele, o endereço ainda pode ser selecionado e
+            copiado por quem não usa o app de e-mail do aparelho. */}
         <a className="pub-envio-mail" href={`mailto:${EMAIL_CONTRIBUICAO}`}>
           <Mail size={16} aria-hidden="true" />
-          <span className="pub-envio-mail-txt">{EMAIL_CONTRIBUICAO}</span>
+          Enviar e-mail
         </a>
+        <p className="pub-envio-mail-addr">{EMAIL_CONTRIBUICAO}</p>
       </div>
     </div>
   )
