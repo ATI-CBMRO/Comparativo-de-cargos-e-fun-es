@@ -17,8 +17,12 @@ export default function ContribuirDocumento() {
         antes de entrar no acervo.
       </p>
       <div className="pub-envio-card">
+        {/* O endereço vai num span próprio para poder quebrar linha dentro do
+            botão: são 46 caracteres sem espaço, que no celular estouravam a
+            largura do card. */}
         <a className="pub-envio-mail" href={`mailto:${EMAIL_CONTRIBUICAO}`}>
-          <Mail size={16} /> {EMAIL_CONTRIBUICAO}
+          <Mail size={16} aria-hidden="true" />
+          <span className="pub-envio-mail-txt">{EMAIL_CONTRIBUICAO}</span>
         </a>
       </div>
     </div>
