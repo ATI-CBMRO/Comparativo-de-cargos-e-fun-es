@@ -3169,6 +3169,17 @@ button.moc-box:hover { border-color: var(--cbm-red-400); }
 .pub-shell .app-header { position: static; }
 .pub-selo { font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
   background: rgba(255,255,255,.16); color: #fff; border-radius: 12px; padding: 4px 10px; margin-right: 10px; }
+/* No celular o selo "Consulta pública" e o link "Sou membro" mantinham a largura
+   natural enquanto o título do portal, com `flex: 1; min-width: 0`, era o único
+   que cedia — sobravam ~100px para 53 caracteres e ele sumia atrás dos dois.
+   Ocultar o bloco inteiro devolve a linha ao título. Escopado em .pub-shell de
+   propósito: no portal logado o mesmo .app-header-user carrega o nome de quem
+   entrou e o botão de sair, que precisam continuar visíveis no celular.
+   Quem é membro e chegar aqui pelo telefone volta ao login pelo endereço raiz
+   do portal, que já redireciona para /login. */
+@media (max-width: 900px) {
+  .pub-shell .app-header-user { display: none; }
+}
 .pub-nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
   background: #121d3d; padding: 8px 20px; }
 .pub-nav-item { display: inline-flex; align-items: center; gap: 7px; text-decoration: none;
