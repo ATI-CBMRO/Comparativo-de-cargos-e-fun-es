@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portal de Legislação dos Corpos de Bombeiros Militares do Brasil" />
     <title>Portal CBM — Legislação Nacional</title>
+
+    <!-- Preview de link (WhatsApp, Telegram, etc.). Sem estas tags o WhatsApp
+         montava o preview por conta própria e puxava o brasão do rel="icon".
+         Título e descrição repetem PALAVRA POR PALAVRA o <title> e o
+         <meta name="description"> acima, para o preview não mudar de texto.
+         A imagem precisa ser PNG e de URL absoluta: preview de link não
+         renderiza SVG nem resolve caminho relativo.
+         og-portal-cbm.png é gerado por scripts/gerar_og_image.py. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Portal CBM" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://comparativo-de-cargos-e-fun-es.vercel.app/" />
+    <meta property="og:title" content="Portal CBM — Legislação Nacional" />
+    <meta property="og:description" content="Portal de Legislação dos Corpos de Bombeiros Militares do Brasil" />
+    <meta property="og:image" content="https://comparativo-de-cargos-e-fun-es.vercel.app/og-portal-cbm.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="Portal CBM — Legislação Comparada" />
+    <!-- "summary" (miniatura quadrada), não "summary_large_image": a imagem é
+         quadrada, e o formato largo a deixaria solta no meio de uma faixa. -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Portal CBM — Legislação Nacional" />
+    <meta name="twitter:description" content="Portal de Legislação dos Corpos de Bombeiros Militares do Brasil" />
+    <meta name="twitter:image" content="https://comparativo-de-cargos-e-fun-es.vercel.app/og-portal-cbm.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
