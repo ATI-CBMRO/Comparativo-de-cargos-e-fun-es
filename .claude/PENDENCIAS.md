@@ -113,8 +113,12 @@
   cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
 
 ## 🟡 Em andamento
-- [ ] **Curadoria do Regulamento à luz da LOB vigente — handoff Wândrio→Tiago (2026-08-13,
-  branch `fix/curadoria-lob-atual`, ainda não mesclada)**: a minuta importada de MT/SE/BA/RN/RS
+- (nenhuma frente em andamento no momento — ver 🔴 Pendente)
+
+## ✅ Concluído (mês atual)
+- [x] **Curadoria do Regulamento à luz da LOB vigente — handoff Wândrio→Tiago (2026-08-13,
+  branch `fix/curadoria-lob-atual`, MESCLADA em 2026-08-13 — commit `fc9b66d`, EM PRODUÇÃO
+  desde então; confirmado em 2026-09-11 via `git merge-base --is-ancestor`)**: a minuta importada de MT/SE/BA/RN/RS
   só trocou nome de estado, nunca estrutura organizacional — 32 nomes de órgão sem lastro em
   nenhuma LOB de RO. Relatório completo em
   `docs/superpowers/specs/2026-08-13-revisao-curadoria-lob-atual.md`, plano de tarefas T1-T7 em
@@ -240,10 +244,10 @@
   - Efeito colateral esperado: a numeração contínua do recorte "Regulamento de Serviço"
     (`src/lib/escopoServico.js`) desloca em +1 a partir deste capítulo (os antigos artigos
     74-76 viram 74-77) — consequência de ter 4 artigos em vez de 3, não regressão.
-  - Ainda não commitado (aguardando confirmação do Tiago).
+  - Commitado em `40faf9d` — em produção (confirmado em 2026-09-11).
 
-  **Ainda em aberto, todos exigindo decisão de mérito de quem conhece o CBMRO (não corrigir por
-  semelhança/palpite — repetiria o erro que esta rodada está consertando):**
+  **Pendência residual (2026-09-11) — sobrevive à mescla, decisões de mérito ainda não
+  tomadas (não corrigir por semelhança/palpite — repetiria o erro que esta rodada consertou):**
   - `seguranca-contra-incendio` (19 art/184 incisos) — **o capítulo inteiro é o regimento interno
     da DSCIP do Mato Grosso**: descreve CCIP 1 a CCIP 5, Tesouraria, Subseção de Protocolo,
     Subseção de Arrecadação e Estatística. **Nenhuma existe em RO.** A estrutura real é taxativa
@@ -288,8 +292,6 @@
   Recomendação do relatório para a reunião de 14/08: apresentar como material-base a mapear
   (não como "a minuta do CBMRO"), com os comentários ancorados no `editId` — sobrevivem a
   qualquer reescrita/renumeração posterior dos capítulos.
-
-## ✅ Concluído (mês atual)
 - [x] **Acessos — autocadastro público substitui o convite manual; escopo restrito por
   padrão** (18/08/2026, 3 PRs mesclados e EM PRODUÇÃO — #23, #24, #25). Origem: queixa do
   Tiago de acesso "só participante" mesmo já marcado Administrador — investigado e era sessão
