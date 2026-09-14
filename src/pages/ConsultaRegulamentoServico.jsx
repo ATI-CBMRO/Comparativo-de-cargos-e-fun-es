@@ -162,7 +162,7 @@ export default function ConsultaRegulamentoServico() {
       <div className="page-body">
         <AvisoSincronizacao visivel={syncErro} />
         <div className="grid-4" style={{ marginBottom: 20 }}>
-          <Indicador icon={Users} label="Consultados" value={resumo.cadastradosEscopo} desc={`${resumo.contribuintes} registraram sugestão`} accent="red" />
+          <Indicador icon={Users} label="Consultados" value={resumo.cadastradosEscopo} desc={`${resumo.contribuintes} registr${resumo.contribuintes === 1 ? 'ou' : 'aram'} sugestão${resumo.contasEscopo > resumo.cadastradosEscopo ? ` · ${resumo.contasEscopo} contas` : ''}`} accent="red" />
           <Indicador icon={MessageSquare} label="Sugestões" value={resumo.total} desc="dos militares consultados" accent="gold" />
           <Indicador icon={CheckSquare} label="Sobre artigos alterados" value={resumo.aplicadas} desc={`${resumo.total - resumo.aplicadas} sobre artigos mantidos · parecer no portal: ${resumo.pareceres.relevante} relevantes, ${resumo.pareceres.descartada} descartadas`} accent="green" />
           <Indicador icon={FileText} label="Textos finais" value={finaisNoRecorte} desc={`dispositivos fechados no recorte de ${totalArtigos} artigos`} />

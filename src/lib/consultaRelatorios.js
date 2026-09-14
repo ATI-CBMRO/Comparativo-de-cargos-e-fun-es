@@ -207,24 +207,33 @@ export function selecionarInteracoes({
   return out.map((r, i) => ({ ...r, n: i + 1 }))
 }
 
+const chaveNome = (n) => String(n ?? '').trim().toLowerCase().replace(/\s+/g, ' ')
+
+// Pessoas, não contas: o mesmo militar pode ter mais de um cadastro (o Cel. Luiz Eduardo
+// tem duas contas com o mesmo nome, achado 14/09/2026). Cadastrados, contribuintes e a
+// tabela por autor são contados por NOME normalizado, para o relatório não dizer "dois
+// militares" quando é um só.
 export function resumoParticipacao(membros, interacoes) {
   const consultados = (membros ?? []).filter(m => m.escopo === 'servico')
+  const pessoasConsultadas = new Set(consultados.map(m => chaveNome(m.nome)))
   const porAutor = new Map()
   for (const r of interacoes) {
-    const e = porAutor.get(r.autor.nome) ?? { autor: r.autor, qtd: 0 }
+    const k = chaveNome(r.autor.nome)
+    const e = porAutor.get(k) ?? { autor: r.autor, qtd: 0 }
     e.qtd += 1
-    porAutor.set(r.autor.nome, e)
+    porAutor.set(k, e)
   }
   const porCapitulo = new Map()
   for (const r of interacoes) porCapitulo.set(r.capitulo, (porCapitulo.get(r.capitulo) ?? 0) + 1)
-  const contribuintes = consultados.filter(m => [...porAutor.values()].some(e => e.autor.nome === m.nome))
+  const contribuintes = [...pessoasConsultadas].filter(k => porAutor.has(k))
   const aplicacoes = {}
   for (const r of interacoes) {
     const k = r.aplicacao?.como ?? 'nenhuma'
     aplicacoes[k] = (aplicacoes[k] ?? 0) + 1
   }
   return {
-    cadastradosEscopo: consultados.length,
+    cadastradosEscopo: pessoasConsultadas.size,   // pessoas distintas, não contas
+    contasEscopo: consultados.length,
     contribuintes: contribuintes.length,
     total: interacoes.length,
     dosConsultados: interacoes.filter(r => r.autor.consultado).length,

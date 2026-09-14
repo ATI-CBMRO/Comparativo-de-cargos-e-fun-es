@@ -135,7 +135,7 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
     { size: 22, after: 200 },
   ))
   children.push(pCentro('1. Participantes e quantidade de sugestões', { size: 24, before: 240, after: 120 }))
-  children.push(pJust(`Cadastrados com acesso restrito: ${resumo.cadastradosEscopo}; destes, ${resumo.contribuintes} registraram sugestão.`, { size: 22, firstLine: 0 }))
+  children.push(pJust(`Militares cadastrados com acesso restrito: ${resumo.cadastradosEscopo}${resumo.contasEscopo > resumo.cadastradosEscopo ? ` (${resumo.contasEscopo} contas — o mesmo militar pode ter mais de um cadastro; os registros foram somados por pessoa)` : ''}; destes, ${resumo.contribuintes} registr${resumo.contribuintes === 1 ? 'ou' : 'aram'} sugestão.`, { size: 22, firstLine: 0 }))
   children.push(tabela(
     [['Autor', 'Nome de guerra', 'Unidade', 'Alcance no portal', 'Sugestões'],
       ...resumo.porAutor.map(e => [e.autor.nome, e.autor.nomeGuerra, e.autor.unidade, e.autor.alcance, String(e.qtd)])],

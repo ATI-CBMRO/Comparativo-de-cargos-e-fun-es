@@ -6,7 +6,7 @@ Data: 11 de setembro de 2026. Fonte: coleção de sugestões do Portal de Legisl
 
 | Indicador | Valor |
 |---|---|
-| Militares cadastrados com acesso "Só Regulamento de Serviço" | 9 (8 reais + 1 conta de teste) |
+| Militares cadastrados com acesso "Só Regulamento de Serviço" | 8 pessoas (7 militares + 1 conta de teste), em 9 contas — o Cel. Luiz Eduardo tem duas contas, contadas como uma só pessoa |
 | Militares que registraram sugestão | 1 — Cel. BM Luiz Eduardo Oliveira Firmino (cadastrado pelo 3º GBM, COB II, Vilhena), o mesmo oficial que sugeriu a estrutura em Parte Geral e Parte Especial |
 | Sugestões do Cel. Luiz Eduardo sobre o recorte | 271 (19/08 e 25/08/2026) |
 | Dispositivos do recorte com texto final "fechado" no portal | 78 (21 com redação nova, 13 marcados "Excluir", 44 fechados sem texto) |

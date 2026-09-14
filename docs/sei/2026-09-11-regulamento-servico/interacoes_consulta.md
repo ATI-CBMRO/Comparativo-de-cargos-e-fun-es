@@ -1,6 +1,6 @@
 # Interações recebidas — consulta da Minuta do Regulamento de Serviço
 
-Gerado em 14/09/2026, 14:36 a partir da coleção `suggestions` do Firestore (345 registros no total; 271 dos militares consultados sobre o recorte; 13 do Regulamento fora do recorte).
+Gerado em 14/09/2026, 15:00 a partir da coleção `suggestions` do Firestore (345 registros no total; 271 dos militares consultados sobre o recorte; 13 do Regulamento fora do recorte).
 
 Aplicação na versão atual da minuta: 271 sugestões sobre artigos alterados, 0 sobre artigos mantidos. Por tipo: Artigo reescrito na versão atual: 197; Artigo novo incluído na versão atual: 74.
 

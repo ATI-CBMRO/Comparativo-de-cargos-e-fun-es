@@ -143,6 +143,26 @@ test('selecionarInteracoes: aplicação deduzida por artigo, com registro explí
   assert.deepEqual(resumo.aplicacoes, { incluido: 1, reescrito: 1, redacao: 1 })
 })
 
+test('resumoParticipacao conta pessoas, não contas: duas contas com o mesmo nome são um militar', () => {
+  const idx = indexarRecorte(recorteFake())
+  const membros = [
+    { uid: 'a1', nome: 'LUIZ EDUARDO OLIVEIRA FIRMINO', escopo: 'servico' },
+    { uid: 'a2', nome: 'Luiz Eduardo Oliveira  Firmino', escopo: 'servico' },
+    { uid: 'b1', nome: 'Outro Militar', escopo: 'servico' },
+  ]
+  const sugestoes = [
+    { id: 'x', dispositivoId: 'reg:atual:servico-operacional/se-art-24#caput', texto: 'a', autorUid: 'a1', criadoEm: '2026-08-19T12:00:00Z' },
+    { id: 'y', dispositivoId: 'reg:atual:servico-operacional/se-art-24#0', texto: 'b', autorUid: 'a2', criadoEm: '2026-08-25T12:00:00Z' },
+  ]
+  const out = selecionarInteracoes({ sugestoes, membros, indice: idx, finals: new Map() })
+  const resumo = resumoParticipacao(membros, out)
+  assert.equal(resumo.cadastradosEscopo, 2)
+  assert.equal(resumo.contasEscopo, 3)
+  assert.equal(resumo.contribuintes, 1)
+  assert.equal(resumo.porAutor.length, 1)
+  assert.equal(resumo.porAutor[0].qtd, 2)
+})
+
 test('paraData aceita Timestamp do Firestore, ISO e nulo', () => {
   assert.equal(paraData(null), null)
   assert.equal(paraData({ toDate: () => new Date('2026-01-01') }).getUTCFullYear(), 2026)
