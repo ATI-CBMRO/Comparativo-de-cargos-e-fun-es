@@ -3,7 +3,7 @@
 import {
   Document, Packer, Paragraph, TextRun, Footer, AlignmentType, ImageRun,
 } from 'docx'
-import { buildArticles, articleLabel, romanize } from './minutaArticles.js'
+import { buildArticles, articleLabel, romanize, rotuloRomano } from './minutaArticles.js'
 import { PARTE_HEADERS, parteByChapterTitle } from './regulamentoPartes.js'
 import { applyFinalsToArticles } from './minutaFinals.js'
 
@@ -86,13 +86,14 @@ export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () =
       ],
     }))
     art.incisos.forEach((inc, i) => {
-      const runs = [new TextRun({ text: `${romanize(i + 1)} - ${inc.text}`, font: 'Times New Roman', size: 24 })]
+      // Parágrafos (§/Parágrafo único) e alíneas ("a) …") saem verbatim; alíneas recuadas.
+      const runs = [new TextRun({ text: inc.ownMarker ? inc.text : `${rotuloRomano(art.incisos, i)} - ${inc.text}`, font: 'Times New Roman', size: 24 })]
       if (inc.source && inc.source !== 'ro') {
         runs.push(new TextRun({ text: ` (${inc.source})`, font: 'Times New Roman', size: 20, italics: true, color: '888888' }))
       }
       children.push(new Paragraph({
         alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: 60 },
-        indent: { left: 708, hanging: 340 }, children: runs,
+        indent: { left: inc.alinea ? 1134 : 708, hanging: inc.ownMarker ? 0 : 340 }, children: runs,
       }))
     })
   })

@@ -304,19 +304,23 @@ Specs/planos: `docs/superpowers/specs/2026-07-21-regulamento-geral-2-partes-desi
 ## Regulamento do cenário ATUAL em DUAS VERSÕES — consulta × atual (14/09/2026)
 
 `build_regulamento_structure_atual.py` passou a gerar dois arquivos a partir da mesma fonte,
-aplicando `scripts/regulamento_curadoria_consulta.py` (curadoria das sugestões da consulta
-aos militares, ago/2026):
+aplicando `scripts/regulamento_curadoria_consulta.py` (curadoria após a consulta aos
+militares, ago/2026):
 - `database/atual/regulamento_structure_consulta.json` — **versão em consulta**: a minuta
-  como foi lida pelos militares, MAIS as `CORRECOES` (ortografia, concordância, citação,
-  resíduos de extração). Ids idênticos aos originais — é onde os comentários do Firestore
+  EXATAMENTE como foi lida pelos militares, intocada (nem correção de grafia — decisão de
+  14/09/2026, 2ª). Ids idênticos aos originais — é onde os comentários do Firestore
   (`editId#index`) ficam ancorados. Lida por `/regulamento/servico` e `/regulamento/servico/subsidio`.
-- `database/atual/regulamento_structure.json` — **versão atual**: mesmas correções + as
-  `ALTERACOES` (só aqui): `TEXTOS_FINAIS_ATUAL` (decisões substantivas do admin, mesmo id,
-  `alterado`), `SUPRIMIR` (artigo sai, registrado em `chapter.suprimidos`), `SUBSTITUIR`
+- `database/atual/regulamento_structure.json` — **versão atual**: tudo o que a curadoria fez:
+  `CORRECOES` + `CORRECOES_GLOBAIS` (grafia, concordância, citação, resíduos de extração,
+  "Comandante-Geral" no documento inteiro; marca `corrigido`), `TEXTOS_FINAIS_ATUAL`
+  (textos finais do portal e ajustes de redação, mesmo id, `alterado` = 'texto final' |
+  'redação'; `items: {idx: None}` suprime o inciso SEM re-indexar → `incisos_suprimidos`),
+  `SUPRIMIR` (artigo sai, registrado em `chapter.suprimidos` com `motivo`), `SUBSTITUIR`
   (artigo antigo sai, entra `<id>-rN` com `substitui`) e `INCLUIR` (`<ancora>-cN` com
-  `incluido`). Artigos que mudam regra de mérito levam `proposta: True` + `nota`
-  ("PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG"). Lida por `/regulamento`, `/regulamento/revisao`
-  e demais telas (`regulamentoDbUrl(cenario, versao)` em `src/lib/scenario.js`).
+  `incluido`; `apos` = último artigo do tema equivale a "mover para o fim"). Artigos que
+  mudam regra de mérito levam `proposta: True` + `nota` ("PROPOSTA PENDENTE DE DELIBERAÇÃO
+  DO CONDEG"). Lida por `/regulamento`, `/regulamento/revisao` e demais telas
+  (`regulamentoDbUrl(cenario, versao)` em `src/lib/scenario.js`).
 
 **Por que id novo na reescrita:** reescrever no mesmo id re-indexaria os incisos e os
 comentários cairiam no dispositivo errado (AR-03). Com `substitui`, o comparativo
@@ -324,6 +328,27 @@ comentários cairiam no dispositivo errado (AR-03). Com `substitui`, o comparati
 da consulta) casa antigo→novo sem adivinhar. Validação: `scripts/test_regulamento_curadoria_consulta.py`.
 A `ESTRUTURA` da minuta reestruturada (`src/lib/regulamentoReestruturado.js`) mapeia os ids
 da versão EM CONSULTA. A futura não tem versão em consulta (arquivo único).
+
+**Regra de autoria (14/09/2026, 2ª determinação do Ten. Tiago):** os registros das contas de
+administração do portal (Tiago e Wândrio, ago/2026) são REVISÃO INTERNA de texto, não
+"sugestão": vão direto para a versão atual, sem autoria, e **nunca aparecem** no relatório
+das interações, no quadro, no MD/JSON nem nas notas/motivos/fundamentos dos artigos
+(`_F_FINAL`/`_F_CURADORIA` são neutros; o teste 7c de
+`test_regulamento_curadoria_consulta.py` falha se uma nota citar nome). O relatório sai só com
+os militares consultados (`selecionarInteracoes`, `somenteConsultados=true` por padrão; sem
+checkbox na tela e sem flag no script). A coluna "Aplicação" do relatório é deduzida por
+artigo da versão atual (`aplicacaoPorArtigo`: reescrito > suprimido > texto-final/redação >
+correção), com `ATENDIMENTOS_POR_ARTIGO` (Python → `curadoria.atendimentos_artigos`) vencendo
+quando a dedução não enxerga — caso das 74 sugestões do Cel. no se-art-4 que viraram artigos
+novos (`incluido`). Não recriar um mapa por id de sugestão da equipe: foi feito e desfeito
+no mesmo dia por essa regra.
+
+**Alíneas e "; e" na exibição (14/09/2026):** `isAlinea()` em `minutaArticles.js` — item que
+começa com "a) " é marcador próprio (`ownMarker`, `alinea: true`): sai verbatim, recuado, e
+NÃO conta na numeração. Todo renderizador usa `rotuloRomano(art.incisos, i)` (conta só os
+não-ownMarker) em vez de `romanize(i + 1)`; `normalizeInciso` não põe sufixo em item que
+termina em ":" e descarta um "; e" já presente na fonte antes de pontuar. Sem isso o Art. 8º
+das escalas saía "I a VIII" e a Organização Geral mostrava "conselhos; e; e".
 
 ## Curadoria — Minuta do Regulamento (em andamento)
 

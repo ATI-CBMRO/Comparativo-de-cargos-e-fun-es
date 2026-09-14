@@ -2,7 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import {
   articular, textoFinalDe, aplicarFinais, indexarRecorte, localizar, autorDe,
-  selecionarInteracoes, resumoParticipacao, quadroAnalise, mapaFinais, paraData,
+  selecionarInteracoes, resumoParticipacao, quadroAnalise, mapaFinais, paraData, aplicacaoPorArtigo,
 } from './consultaRelatorios.js'
 import { montarReestruturada, ESTRUTURA } from './regulamentoReestruturado.js'
 import { filtrarEstruturaPorEscopo } from './escopoServico.js'
@@ -85,11 +85,12 @@ test('selecionarInteracoes filtra recorte/cenário, ordena caput antes dos incis
     { id: 'e', dispositivoId: 'reg:servico-operacional/se-art-24#caput', texto: 'futura', autorUid: 'u1', criadoEm: '2026-09-02T12:00:00Z' },
   ]
   const finals = mapaFinais([{ id: 'reg:atual:servico-operacional|se-art-24#caput', status: 'fechado', texto: 'Redigido.' }])
-  // padrão: só os consultados (escopo 'servico') — a sugestão 'b' é do admin e fica de fora
+  // padrão: só quem tem escopo 'servico' — a sugestão 'b' é da administração do portal e fica de fora
   const soConsultados = selecionarInteracoes({ sugestoes, membros, indice: idx, finals })
   assert.deepEqual(soConsultados.map(r => r.firestoreId), ['a'])
   const out = selecionarInteracoes({ sugestoes, membros, indice: idx, finals, somenteConsultados: false })
   assert.deepEqual(out.map(r => r.firestoreId), ['b', 'a'])
+  assert.equal(out[0].aplicacao.como, 'nenhuma')
   assert.equal(out[0].textoFinal, 'Redigido.')
   assert.equal(out[0].parecer, 'pendente')
   assert.equal(out[1].parecer, 'relevante')
@@ -102,10 +103,44 @@ test('selecionarInteracoes filtra recorte/cenário, ordena caput antes dos incis
   assert.equal(resumo.dosConsultados, 1)
   assert.equal(resumo.daEquipe, 1)
   assert.deepEqual(resumo.pareceres, { relevante: 1, descartada: 0, pendente: 1 })
+  assert.equal(resumo.aplicadas, 0)
   const quadro = quadroAnalise(out)
   assert.equal(quadro.length, 1)
   assert.equal(quadro[0].situacaoFinal, 'redigido')
   assert.equal(quadro[0].itens.length, 2)
+})
+
+test('selecionarInteracoes: aplicação deduzida por artigo, com registro explícito vencendo', () => {
+  const idx = indexarRecorte(recorteFake())
+  const atual = { curadoria: { atendimentos_artigos: { 'reg:atual:disposicoes-preliminares/mt-art-1': { como: 'incluido', nota: 'virou artigos novos' } } }, chapters: [
+    { id: 'reg:atual:disposicoes-preliminares', suprimidos: [{ id: 'mt-art-1', motivo: 'dup' }], articles: [
+      { id: 'mt-art-3-r1', editId: 'reg:atual:disposicoes-preliminares/mt-art-3-r1', substitui: 'mt-art-3', nota: 'LOB', caput: 'x', items: [] },
+    ] },
+    { id: 'reg:atual:servico-operacional', articles: [
+      { id: 'se-art-24', editId: 'reg:atual:servico-operacional/se-art-24', alterado: 'redação', caput: 'y', items: [] },
+    ] },
+  ] }
+  const porArtigo = aplicacaoPorArtigo(atual)
+  assert.equal(porArtigo.get('reg:atual:disposicoes-preliminares/mt-art-3').como, 'reescrito')
+  assert.equal(porArtigo.get('reg:atual:disposicoes-preliminares/mt-art-1').como, 'incluido') // registro explícito vence a dedução (suprimido)
+  assert.equal(porArtigo.get('reg:atual:servico-operacional/se-art-24').como, 'redacao')
+  const membros = [{ uid: 'u1', nome: 'Fulano', escopo: 'servico' }, { uid: 'u2', nome: 'Admin', role: 'admin' }]
+  const sugestoes = [
+    { id: 'cel', dispositivoId: 'reg:atual:disposicoes-preliminares/mt-art-3#caput', texto: '25 incisos', autorUid: 'u1', criadoEm: '2026-08-19T12:00:00Z' },
+    { id: 'red', dispositivoId: 'reg:atual:servico-operacional/se-art-24#0', texto: 'x', autorUid: 'u1', criadoEm: '2026-08-19T12:00:00Z' },
+    { id: 'sem', dispositivoId: 'reg:atual:disposicoes-preliminares/mt-art-1#caput', texto: 'y', autorUid: 'u1', criadoEm: '2026-08-19T12:00:00Z' },
+    { id: 'adm', dispositivoId: 'reg:atual:disposicoes-preliminares/mt-art-1#caput', texto: 'interno', autorUid: 'u2', criadoEm: '2026-08-13T12:00:00Z' },
+    { id: 'fora', dispositivoId: 'reg:atual:organizacao-geral/ro-art-2#1', texto: 'fora do recorte', autorUid: 'u1', criadoEm: '2026-08-19T12:00:00Z' },
+  ]
+  const out = selecionarInteracoes({ sugestoes, membros, indice: idx, finals: new Map(), aplicacaoArtigos: porArtigo })
+  assert.deepEqual(out.map(r => r.firestoreId), ['sem', 'cel', 'red'])   // admin e fora do recorte ficam de fora
+  assert.equal(out[0].aplicacao.como, 'incluido')             // registro explícito
+  assert.equal(out[1].aplicacao.como, 'reescrito')            // deduzido por artigo
+  assert.equal(out[2].aplicacao.como, 'redacao')
+  const resumo = resumoParticipacao(membros, out)
+  assert.equal(resumo.daEquipe, 0)
+  assert.equal(resumo.aplicadas, 3)
+  assert.deepEqual(resumo.aplicacoes, { incluido: 1, reescrito: 1, redacao: 1 })
 })
 
 test('paraData aceita Timestamp do Firestore, ISO e nulo', () => {

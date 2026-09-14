@@ -23,7 +23,7 @@ export function scenarioDbUrl(cenario, file) {
 }
 
 // Duas VERSÕES do Regulamento no cenário atual (curadoria da consulta, 2026-09-14):
-// 'consulta' = a minuta como foi lida pelos militares (+ correções ortográficas), onde os
+// 'consulta' = a minuta exatamente como foi lida pelos militares, onde os
 // comentários ficam ancorados; 'atual' = a versão produzida após as sugestões. A futura
 // não tem versão em consulta — cai sempre no arquivo único.
 export const VERSOES_REGULAMENTO = Object.freeze(['atual', 'consulta'])

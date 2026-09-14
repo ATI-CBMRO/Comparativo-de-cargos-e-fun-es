@@ -1,14 +1,15 @@
-// Comparativo entre a versão EM CONSULTA (lida pelos militares, + correções) e a versão
-// ATUAL (após as sugestões) do Regulamento de Serviço — lógica pura, usada pela tela
-// /regulamento/servico/comparativo e pelo .docx. Casamento por id: artigo da atual com
+// Comparativo entre a versão EM CONSULTA (exatamente o que os militares leram) e a versão
+// ATUAL (após a curadoria e as sugestões) do Regulamento de Serviço — lógica pura, usada pela
+// tela /regulamento/servico/comparativo e pelo .docx. Casamento por id: artigo da atual com
 // `substitui` casa com o id antigo; `incluido` é novo; id da consulta ausente na atual é
-// suprimido; mesmo id nas duas → compara o texto (texto final do admin) ou é igual.
+// suprimido; mesmo id nas duas → 'alterado' (texto final/redação), 'corrigido' (só correção
+// de grafia/resíduo) ou igual.
 import { articular } from './consultaRelatorios.js'
 import { articleLabel } from './minutaArticles.js'
 
 export const ROTULO_TIPO = {
   igual: 'Sem alteração',
-  corrigido: 'Corrigido nas duas versões',
+  corrigido: 'Correção de texto na versão atual',
   alterado: 'Texto alterado na versão atual',
   reescrito: 'Reescrito na versão atual',
   incluido: 'Incluído na versão atual',
@@ -70,8 +71,9 @@ export function compararVersoes(recorteConsulta, recorteAtual) {
         const c = artsC[posC.get(a.id)]
         emitidosC.add(a.id)
         let tipo = 'igual'
-        if (c && textoDe(c) !== textoDe(a)) tipo = 'alterado'
+        if (a.alterado) tipo = 'alterado'
         else if (a.corrigido) tipo = 'corrigido'
+        else if (c && textoDe(c) !== textoDe(a)) tipo = 'alterado'
         entradas.push({ tipo, antes: c ?? null, depois: a, numAntes: c ? numC.get(c.id) : null, numDepois: numA.get(a.id), nota: a.alterado ? `${a.alterado} (${a.fundamento_alteracao ?? ''})` : null })
       }
     }

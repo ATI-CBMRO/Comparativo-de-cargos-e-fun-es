@@ -97,7 +97,7 @@ export const NOTAS = [
   ['servico-interno-dia/se-art-85', 'Concordância: "ao Central Integrada de Operações" → "à Central Integrada de Operações". Idem se-art-91.'],
   ['disposicoes-finais/mt-art-264', 'Fala em "Batalhões Bombeiro Militar" (CBMMT); na LOB de RO as unidades são Grupamentos (GBM). Ajustar.'],
   ['disposicoes-finais/mt-art-266', 'Caput traz rodapé de publicação de MT ("Este texto não substitui o publicado no Boletim Geral Eletrônico – BGE"): cortar.'],
-  ['disposicoes-preliminares/mt-art-1', '"Art. 82 da Constituição Estadual" é a referência de Mato Grosso; conferir o artigo correspondente na Constituição de Rondônia (sugestão do Wândrio: art. 148).'],
+  ['disposicoes-preliminares/mt-art-1', '"Art. 82 da Constituição Estadual" é a referência de Mato Grosso; conferir o artigo correspondente na Constituição de Rondônia (art. 148, já corrigido na versão atual).'],
 ]
 
 // Monta a lista linear de blocos para renderização (tela ou .docx) a partir do RECORTE em

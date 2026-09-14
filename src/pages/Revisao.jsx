@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MessageSquare } from 'lucide-react'
 import { useAuth } from '../lib/auth.jsx'
-import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { buildArticles, articleLabel, romanize, rotuloRomano } from '../lib/minutaArticles.js'
 import { incisoDispositivoId, caputDispositivoId, parseDispositivoId } from '../lib/dispositivoId.js'
 import { chapterIdOf } from '../lib/minutaTargets.js'
 import {
@@ -265,7 +265,7 @@ export default function Revisao({ initialDoc, escopo, versao = 'atual' } = {}) {
                 {versao === 'atual' && docId === 'reg' && cenario === 'atual' && (artigosMarcados.reescritos + artigosMarcados.incluidos) > 0 && (
                   <> Versão atual após a consulta: {artigosMarcados.reescritos} artigo(s) reescrito(s), {artigosMarcados.incluidos} novo(s), {artigosMarcados.propostas} proposta(s) pendente(s) de deliberação.</>
                 )}
-                {versao === 'consulta' && <> Versão em consulta: o texto lido pelos militares, com as correções ortográficas.</>}
+                {versao === 'consulta' && <> Versão em consulta: exatamente o texto lido pelos militares.</>}
               </p>
             </>
           )}
@@ -389,12 +389,14 @@ export default function Revisao({ initialDoc, escopo, versao = 'atual' } = {}) {
 
                 {art.incisos.map((inc, i) => {
                   const id = incisoDispositivoId(inc.editId, inc.index)
-                  const label = inc.ownMarker
-                    ? `${articleLabel(art.number)}, parágrafo`
-                    : `${articleLabel(art.number)}, inciso ${romanize(i + 1)}`
+                  const label = inc.alinea
+                    ? `${articleLabel(art.number)}, alínea ${inc.text.trim().slice(0, 2)}`
+                    : inc.ownMarker
+                      ? `${articleLabel(art.number)}, parágrafo`
+                      : `${articleLabel(art.number)}, inciso ${rotuloRomano(art.incisos, i)}`
                   return (
-                    <div className={`rev-line rev-inciso${finalsForDoc.get(id)?.status === 'fechado' ? ' fechado' : ''}`} key={`${id}`}>
-                      <span className="rev-text">{inc.ownMarker ? '' : <strong>{romanize(i + 1)} -</strong>} {inc.text}</span>
+                    <div className={`rev-line rev-inciso${finalsForDoc.get(id)?.status === 'fechado' ? ' fechado' : ''}`} key={`${id}`} style={inc.alinea ? { paddingLeft: 28 } : undefined}>
+                      <span className="rev-text">{inc.ownMarker ? '' : <strong>{rotuloRomano(art.incisos, i)} -</strong>} {inc.text}</span>
                       <Rail count={counts.get(id)} onClick={() => abrir(id, label, inc.text)} />
                     </div>
                   )

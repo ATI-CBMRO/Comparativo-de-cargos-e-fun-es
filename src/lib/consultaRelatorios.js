@@ -2,7 +2,7 @@
 // recorte em consulta, localização de um dispositivoId no texto, autoria (sugestão ×
 // cadastro), aplicação de textos finais e o quadro de análise por artigo. Sem React, sem
 // Firebase, sem docx — usada pelo app (tela do admin) e pelos scripts Node de docs/sei/.
-import { normalizeInciso, hasOwnMarker, romanize, articleLabel } from './minutaArticles.js'
+import { normalizeInciso, hasOwnMarker, isAlinea, rotuloRomano, articleLabel } from './minutaArticles.js'
 import { temaDoCapitulo } from './escopoServico.js'
 import { parseDispositivoId } from './dispositivoId.js'
 
@@ -17,6 +17,7 @@ export function articular(leaf) {
   const incisos = kept.map((k, pos) => ({
     text: normalizeInciso(k.it.text, pos, kept.length),
     ownMarker: hasOwnMarker(k.it.text),
+    alinea: isAlinea(k.it.text),
     index: k.i,
   }))
   return { caput: leaf.caput ?? '', incisos, editId: leaf.editId, id: leaf.id }
@@ -62,7 +63,11 @@ export function indexarRecorte(recorte) {
       n += 1
       const art = articular(leaf)
       const incisos = new Map()
-      art.incisos.forEach((inc, pos) => incisos.set(inc.index, { roman: inc.ownMarker ? null : romanize(pos + 1), text: inc.text }))
+      art.incisos.forEach((inc, pos) => incisos.set(inc.index, {
+        roman: inc.ownMarker ? null : rotuloRomano(art.incisos, pos),
+        alinea: inc.alinea ? inc.text.trim().slice(0, 2) : null,
+        text: inc.text,
+      }))
       indice.set(leaf.editId, { numero: n, capitulo: cap.chapterTitle, tema: temaDoCapitulo(cap.id), id: leaf.id, caput: art.caput, incisos })
     }
   }
@@ -78,7 +83,8 @@ export function localizar(indice, dispositivoId) {
   if (!inc) return { noRecorte: true, art, rotulo: `${articleLabel(art.numero)}, item ${parte} (não localizado)`, editId, parte, texto: '' }
   return {
     noRecorte: true, art, editId, parte, texto: inc.text,
-    rotulo: inc.roman ? `${articleLabel(art.numero)}, inciso ${inc.roman}` : `${articleLabel(art.numero)}, parágrafo`,
+    rotulo: inc.roman ? `${articleLabel(art.numero)}, inciso ${inc.roman}`
+      : inc.alinea ? `${articleLabel(art.numero)}, alínea ${inc.alinea}` : `${articleLabel(art.numero)}, parágrafo`,
   }
 }
 
@@ -119,12 +125,48 @@ export function autorDe(s, membros) {
 
 const ordemParte = (p) => (p === 'caput' ? -1 : Number(p))
 
-// Sugestões do Regulamento (cenário atual) que caem no recorte, com autor, localização e
-// texto final, ordenadas por artigo → caput → incisos → data. `desde` (Date) é opcional.
-// `somenteConsultados` (padrão true, determinação do Ten. Tiago em 2026-09-14): o relatório
-// para o SEI traz só as manifestações dos militares consultados (escopo "servico"); os
-// registros internos da equipe de curadoria (Tiago/Wândrio, contas sem escopo) ficam de fora.
-export function selecionarInteracoes({ sugestoes, membros, indice, finals, desde = null, somenteConsultados = true }) {
+// O que a versão atual fez com o artigo de cada sugestão (coluna "Aplicação" do relatório).
+// `como` ∈ COMO_VALIDOS de scripts/regulamento_curadoria_consulta.py.
+export const ROTULO_APLICACAO = {
+  correcao: 'Correção de texto na versão atual',
+  'texto-final': 'Texto final do portal aplicado na versão atual',
+  redacao: 'Redação ajustada na versão atual',
+  'inciso-suprimido': 'Inciso suprimido na versão atual',
+  suprimido: 'Artigo suprimido na versão atual',
+  movido: 'Artigo deslocado na versão atual',
+  reescrito: 'Artigo reescrito na versão atual',
+  incluido: 'Artigo novo incluído na versão atual',
+  nenhuma: 'Sem alteração no artigo',
+}
+
+// Aplicação por ARTIGO, deduzida da versão atual: Map<editId da versão em consulta,
+// {como, nota}>. Precedência: reescrito > suprimido > texto-final/redação > correção. O
+// registro explícito `curadoria.atendimentos_artigos` (Python) vence tudo — é o caso do
+// se-art-4, cujas 74 sugestões do Cel. viraram artigos NOVOS, o que a dedução não enxerga.
+export function aplicacaoPorArtigo(atualCompleta) {
+  const map = new Map()
+  for (const cap of atualCompleta?.chapters ?? []) {
+    for (const s of cap.suprimidos ?? []) map.set(`${cap.id}/${s.id}`, { como: 'suprimido', nota: s.motivo ?? '' })
+    for (const a of cap.articles ?? []) {
+      if (a.substitui) { map.set(`${cap.id}/${a.substitui}`, { como: 'reescrito', nota: a.nota ?? '' }); continue }
+      if (a.incluido) continue
+      if (a.alterado) map.set(a.editId, { como: a.alterado === 'texto final' ? 'texto-final' : 'redacao', nota: a.nota ?? '' })
+      else if (a.corrigido) map.set(a.editId, { como: 'correcao', nota: '' })
+    }
+  }
+  for (const [editId, at] of Object.entries(atualCompleta?.curadoria?.atendimentos_artigos ?? {})) map.set(editId, at)
+  return map
+}
+
+// Sugestões dos MILITARES CONSULTADOS (escopo "servico") sobre o recorte em consulta, com
+// autor, localização, texto final e a aplicação dada pela curadoria, ordenadas por artigo →
+// caput → incisos → data. Registros de contas sem escopo (administração do portal) são
+// trabalho interno de revisão e ficam de fora (`somenteConsultados`, padrão true).
+// - `indice`: recorte em consulta (numeração que o participante viu).
+// - `aplicacaoArtigos` (opcional): saída de aplicacaoPorArtigo(atualCompleta).
+export function selecionarInteracoes({
+  sugestoes, membros, indice, finals, desde = null, somenteConsultados = true, aplicacaoArtigos = null,
+}) {
   const out = []
   for (const s of sugestoes ?? []) {
     if (!String(s.dispositivoId ?? '').startsWith('reg:atual:')) continue
@@ -135,6 +177,7 @@ export function selecionarInteracoes({ sugestoes, membros, indice, finals, desde
     const autor = autorDe(s, membros)
     if (somenteConsultados && !autor.consultado) continue
     const fin = textoFinalDe(finals?.get(s.dispositivoId))
+    const aplicacao = aplicacaoArtigos?.get(loc.editId) ?? { como: 'nenhuma', nota: '' }
     out.push({
       firestoreId: s.id,
       data,
@@ -155,6 +198,7 @@ export function selecionarInteracoes({ sugestoes, membros, indice, finals, desde
       textoFinal: fin?.texto ?? null,
       finalVazio: Boolean(fin?.vazio),
       suprimido: Boolean(fin?.suprimido),
+      aplicacao: { como: aplicacao.como, nota: aplicacao.nota ?? '' },
     })
   }
   out.sort((a, b) => (a.numeroArtigo - b.numeroArtigo)
@@ -174,6 +218,11 @@ export function resumoParticipacao(membros, interacoes) {
   const porCapitulo = new Map()
   for (const r of interacoes) porCapitulo.set(r.capitulo, (porCapitulo.get(r.capitulo) ?? 0) + 1)
   const contribuintes = consultados.filter(m => [...porAutor.values()].some(e => e.autor.nome === m.nome))
+  const aplicacoes = {}
+  for (const r of interacoes) {
+    const k = r.aplicacao?.como ?? 'nenhuma'
+    aplicacoes[k] = (aplicacoes[k] ?? 0) + 1
+  }
   return {
     cadastradosEscopo: consultados.length,
     contribuintes: contribuintes.length,
@@ -187,6 +236,9 @@ export function resumoParticipacao(membros, interacoes) {
       descartada: interacoes.filter(r => r.parecer === 'descartada').length,
       pendente: interacoes.filter(r => r.parecer !== 'relevante' && r.parecer !== 'descartada').length,
     },
+    // {como: qtd} na ordem de ROTULO_APLICACAO; 'aplicadas' = artigo mexido na versão atual
+    aplicacoes,
+    aplicadas: interacoes.filter(r => r.aplicacao?.como && r.aplicacao.como !== 'nenhuma').length,
   }
 }
 

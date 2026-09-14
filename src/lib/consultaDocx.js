@@ -6,12 +6,21 @@ import {
   Document, Paragraph, TextRun, Footer, AlignmentType, PageBreak, ImageRun, PageNumber,
   Table, TableRow, TableCell, WidthType,
 } from 'docx'
-import { articleLabel, romanize } from './minutaArticles.js'
+import { articleLabel, romanize, rotuloRomano } from './minutaArticles.js'
 import { resumoForaDoEscopo } from './escopoServico.js'
 import {
   articular, aplicarFinais, formatarDataHora, quadroAnalise, resumoParticipacao,
-  ROTULO_PARECER, ROTULO_SITUACAO,
+  ROTULO_PARECER, ROTULO_SITUACAO, ROTULO_APLICACAO,
 } from './consultaRelatorios.js'
+
+const rotuloAplicacao = (r) => ROTULO_APLICACAO[r.aplicacao?.como] ?? ROTULO_APLICACAO.nenhuma
+const textoAplicacao = (r) => `${rotuloAplicacao(r)}${r.aplicacao?.nota ? ` — ${r.aplicacao.nota}` : ''}`
+const tabelaAplicacoes = (resumo) => tabela(
+  [['Aplicação dada pela curadoria', 'Sugestões'],
+    ...Object.keys(ROTULO_APLICACAO).filter(k => resumo.aplicacoes[k]).map(k => [ROTULO_APLICACAO[k], String(resumo.aplicacoes[k])]),
+    ['Total', String(resumo.total)]],
+  [7000, 1300],
+)
 import { montarReestruturada } from './regulamentoReestruturado.js'
 import { compararVersoes, resumoComparativo, ROTULO_TIPO, rotuloArtigo } from './comparativoConsulta.js'
 
@@ -62,8 +71,8 @@ function paragrafosArtigo(numero, art) {
   art.incisos.forEach((inc, i) => {
     ps.push(new Paragraph({
       alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: 60 },
-      indent: { left: 708, hanging: inc.ownMarker ? 0 : 340 },
-      children: [run(inc.ownMarker ? inc.text : `${romanize(i + 1)} - ${inc.text}`)],
+      indent: { left: inc.alinea ? 1134 : 708, hanging: inc.ownMarker ? 0 : 340 },
+      children: [run(inc.ownMarker ? inc.text : `${rotuloRomano(art.incisos, i)} - ${inc.text}`)],
     }))
   })
   return ps
@@ -92,7 +101,7 @@ export function docxMinutaConsulta({ completa, recorte, finals, brasao }) {
     'Versão em consulta no Portal de Legislação CBM · cenário: Lei nº 2.204/2009 (LOB vigente)', brasao,
   )
   children.push(pJust(
-    `Este documento reproduz a minuta tal como publicada no portal para os militares com acesso restrito ao Regulamento de Serviço: ${total} artigos, reunindo o serviço operacional (COB), a Central de Operações e o teledespacho, o serviço interno e de dia, as atribuições das funções (somente COB e CAT) e o serviço técnico de segurança contra incêndio e pânico (CAT). Ficam para o Regulamento Geral completo ${fora.artigosEmCapitulosFora} artigos de ${fora.capitulosFora.length} capítulos${fora.artigosCortadosNoEscopo ? ` e ${fora.artigosCortadosNoEscopo} artigos das funções dos demais órgãos` : ''}. A numeração é provisória. Textos finais fechados no portal estão aplicados e sinalizados; fechamentos sem texto mantêm o original.`,
+    `Este documento reproduz a minuta tal como publicada no portal para os militares com acesso restrito ao Regulamento de Serviço, sem as correções e alterações posteriores da curadoria (que estão na versão atual e no Comparativo): ${total} artigos, reunindo o serviço operacional (COB), a Central de Operações e o teledespacho, o serviço interno e de dia, as atribuições das funções (somente COB e CAT) e o serviço técnico de segurança contra incêndio e pânico (CAT). Ficam para o Regulamento Geral completo ${fora.artigosEmCapitulosFora} artigos de ${fora.capitulosFora.length} capítulos${fora.artigosCortadosNoEscopo ? ` e ${fora.artigosCortadosNoEscopo} artigos das funções dos demais órgãos` : ''}. A numeração é provisória. Textos finais fechados no portal estão aplicados e sinalizados; fechamentos sem texto mantêm o original.`,
     { italics: true, size: 22, after: 240 },
   ))
   let numero = 0
@@ -122,7 +131,7 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
     'Portal de Legislação CBM — acesso "Só Regulamento de Serviço" · cenário: Lei nº 2.204/2009', brasao,
   )
   children.push(pJust(
-    `A minuta do Regulamento de Serviço (1ª etapa, ${totalArtigos} artigos) foi submetida à apreciação dos militares cadastrados no Portal de Legislação CBM com acesso restrito ao Regulamento de Serviço, que puderam registrar sugestões dispositivo a dispositivo. Este relatório consolida ${resumo.total} interações${desde ? ` registradas a partir de ${desde.toLocaleDateString('pt-BR')}` : ''}${resumo.daEquipe ? `: ${resumo.dosConsultados} dos militares consultados e ${resumo.daEquipe} da equipe de curadoria/administração do portal` : ' dos militares consultados'}. Cada registro identifica o autor, a unidade, o dispositivo comentado (numeração da versão em consulta), o trecho e o texto integral da sugestão, reproduzido como foi escrito.`,
+    `A minuta do Regulamento de Serviço (1ª etapa, ${totalArtigos} artigos) foi submetida à apreciação dos militares cadastrados no Portal de Legislação CBM com acesso restrito ao Regulamento de Serviço, que puderam registrar sugestões dispositivo a dispositivo. Este relatório consolida ${resumo.total} interações dos militares consultados${desde ? `, registradas a partir de ${desde.toLocaleDateString('pt-BR')}` : ''}. Cada registro identifica o autor, a unidade, o dispositivo comentado (numeração da versão em consulta), o trecho, o texto integral da sugestão, reproduzido como foi escrito, e o que a versão atual da minuta fez com o artigo comentado (reescrito, artigo novo incluído, texto alterado, suprimido ou sem alteração).`,
     { size: 22, after: 200 },
   ))
   children.push(pCentro('1. Participantes e quantidade de sugestões', { size: 24, before: 240, after: 120 }))
@@ -134,8 +143,11 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
   ))
   children.push(pCentro('2. Sugestões por capítulo da minuta', { size: 24, before: 240, after: 120 }))
   children.push(tabela([['Capítulo', 'Sugestões'], ...resumo.porCapitulo.map(c => [c.capitulo, String(c.qtd)])], [7000, 1300]))
+  children.push(pCentro('3. Aplicação das sugestões na versão atual da minuta', { size: 24, before: 240, after: 120 }))
+  children.push(pJust(`${resumo.aplicadas} das ${resumo.total} sugestões recaem sobre artigos alterados na versão atual da minuta; ${resumo.total - resumo.aplicadas} sobre artigos mantidos como estavam. O Comparativo (versão em consulta × versão atual) mostra cada alteração artigo a artigo; as propostas que mudam regra de mérito estão marcadas como pendentes de deliberação do CONDEG.`, { size: 22, firstLine: 0 }))
+  children.push(tabelaAplicacoes(resumo))
   children.push(quebra())
-  children.push(pCentro('3. Interações, dispositivo a dispositivo', { size: 24, before: 240, after: 120 }))
+  children.push(pCentro('4. Interações, dispositivo a dispositivo', { size: 24, before: 240, after: 120 }))
   let capAtual = null
   let artAtual = null
   for (const r of interacoes) {
@@ -149,6 +161,7 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
       ['Dispositivo', `${r.dispositivo}${r.rotuloNaEpoca && !r.dispositivo.startsWith(r.rotuloNaEpoca.split(',')[0]) ? ` (na época: ${r.rotuloNaEpoca})` : ''} · ${r.dispositivoId}`],
       ['Trecho comentado', r.trecho],
       ['Sugestão', r.sugestao],
+      ['Aplicação', textoAplicacao(r)],
     ], [1800, 7500]))
     children.push(new Paragraph({ spacing: { after: 120 }, children: [] }))
   }
@@ -164,11 +177,13 @@ export function docxQuadroAnalise({ interacoes, membros, brasao }) {
     'Pareceres e textos finais registrados no Portal de Legislação CBM', brasao,
   )
   children.push(pJust(
-    `Este quadro consolida, artigo a artigo, as ${resumo.total} sugestões recebidas sobre a minuta em consulta e o tratamento dado a cada uma no portal: ${resumo.pareceres.relevante} acolhida(s) como relevante(s), ${resumo.pareceres.descartada} descartada(s) e ${resumo.pareceres.pendente} ainda sem parecer. Para cada artigo consta a situação do texto final (redigido, conferido sem alteração, suprimido ou em aberto). O parecer é registrado pelo administrador no balão de cada sugestão (✅ relevante / ⛔ descartar) e o texto final no campo "Redação final".`,
+    `Este quadro consolida, artigo a artigo, as ${resumo.total} sugestões recebidas dos militares consultados sobre a minuta em consulta e o tratamento dado a cada uma: o que a versão atual da minuta fez com o artigo (${resumo.aplicadas} sugestões sobre artigos alterados, ${resumo.total - resumo.aplicadas} sobre artigos mantidos) e o parecer registrado no portal (${resumo.pareceres.relevante} acolhida(s) como relevante(s), ${resumo.pareceres.descartada} descartada(s) e ${resumo.pareceres.pendente} ainda sem parecer). Para cada artigo consta também a situação do texto final (redigido, conferido sem alteração, suprimido ou em aberto). O parecer é registrado pelo administrador no balão de cada sugestão (✅ relevante / ⛔ descartar) e o texto final no campo "Redação final".`,
     { size: 22, after: 200 },
   ))
+  children.push(tabelaAplicacoes(resumo))
+  children.push(new Paragraph({ spacing: { after: 120 }, children: [] }))
   children.push(tabela([
-    ['Situação', 'Quantidade'],
+    ['Situação no portal', 'Quantidade'],
     ['Sugestões acolhidas (relevantes)', String(resumo.pareceres.relevante)],
     ['Sugestões descartadas', String(resumo.pareceres.descartada)],
     ['Sem parecer', String(resumo.pareceres.pendente)],
@@ -185,9 +200,9 @@ export function docxQuadroAnalise({ interacoes, membros, brasao }) {
     children.push(pJust(`${q.rotulo} — ${q.caput}`, { size: 20, bold: true, firstLine: 0, after: 40 }))
     children.push(pJust(`Situação do texto final: ${ROTULO_SITUACAO[q.situacaoFinal]}${q.itens.find(i => i.textoFinal) ? ` — "${q.itens.find(i => i.textoFinal).textoFinal}"` : ''}`, { size: 20, italics: true, firstLine: 0, after: 60 }))
     children.push(tabela([
-      ['Dispositivo', 'Autor', 'Sugestão', 'Parecer'],
-      ...q.itens.map(i => [i.dispositivo.replace(`${q.rotulo}, `, ''), `${i.autor.nome}${i.autor.nomeGuerra ? ` (${i.autor.nomeGuerra})` : ''}`, i.sugestao, ROTULO_PARECER[i.parecer] ?? i.parecer]),
-    ], [1500, 2000, 4300, 1500]))
+      ['Dispositivo', 'Autor', 'Sugestão', 'Aplicação', 'Parecer'],
+      ...q.itens.map(i => [i.dispositivo.replace(`${q.rotulo}, `, ''), `${i.autor.nome}${i.autor.nomeGuerra ? ` (${i.autor.nomeGuerra})` : ''}`, i.sugestao, textoAplicacao(i), ROTULO_PARECER[i.parecer] ?? i.parecer]),
+    ], [1300, 1600, 3000, 2400, 1000]))
     children.push(new Paragraph({ spacing: { after: 120 }, children: [] }))
   }
   return { doc: documento(children, 'Quadro de análise — Minuta do Regulamento de Serviço · CBMRO'), resumo, quadro }
@@ -197,7 +212,7 @@ export function docxQuadroAnalise({ interacoes, membros, brasao }) {
 function textoArtigo(a) {
   if (!a) return ''
   const art = articular(a)
-  return [art.caput, ...art.incisos.map((inc, i) => (inc.ownMarker ? inc.text : `${romanize(i + 1)} - ${inc.text}`))].join('\n')
+  return [art.caput, ...art.incisos.map((inc, i) => (inc.ownMarker ? `${inc.alinea ? '    ' : ''}${inc.text}` : `${rotuloRomano(art.incisos, i)} - ${inc.text}`))].join('\n')
 }
 export function docxComparativo({ recorteConsulta, recorteAtual, brasao }) {
   const comparacao = compararVersoes(recorteConsulta, recorteAtual)
@@ -207,7 +222,7 @@ export function docxComparativo({ recorteConsulta, recorteAtual, brasao }) {
     'Curadoria das sugestões recebidas na consulta aos militares (ago/2026)', brasao,
   )
   children.push(pJust(
-    `A coluna da esquerda traz a minuta como foi disponibilizada aos militares, já com as correções ortográficas e de texto (que valem para as duas versões); a da direita, a versão produzida após as sugestões. Resumo: ${r.igual} artigos sem alteração, ${r.corrigido} corrigidos nas duas versões, ${r.alterado} com texto alterado pelo texto final do portal, ${r.reescrito} reescritos, ${r.incluido} incluídos e ${r.suprimido} suprimidos; ${r.propostas} artigo(s) marcado(s) como proposta pendente de deliberação do CONDEG. Artigos sem alteração aparecem só pelo número, para o documento caber.`,
+    `A coluna da esquerda traz a minuta exatamente como foi disponibilizada aos militares; a da direita, a versão atual, produzida após a consulta (revisão de texto da curadoria e sugestões recebidas). Resumo: ${r.igual} artigos sem alteração, ${r.corrigido} com correção de texto (grafia, concordância, resíduos de extração, nomenclatura), ${r.alterado} com texto alterado, ${r.reescrito} reescritos, ${r.incluido} incluídos e ${r.suprimido} suprimidos; ${r.propostas} artigo(s) marcado(s) como proposta pendente de deliberação do CONDEG. Artigos sem alteração aparecem só pelo número, para o documento caber.`,
     { italics: true, size: 22, after: 240 },
   ))
   for (const cap of comparacao) {

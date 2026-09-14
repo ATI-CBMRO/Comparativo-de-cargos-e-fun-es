@@ -12,7 +12,7 @@ import { regulamentoDbUrl } from '../lib/scenario.js'
 import { subscribeSuggestions, subscribeFinalTexts } from '../lib/reviewData.js'
 import { subscribeMembers } from '../lib/membersData.js'
 import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
-import { indexarRecorte, selecionarInteracoes, resumoParticipacao } from '../lib/consultaRelatorios.js'
+import { indexarRecorte, selecionarInteracoes, resumoParticipacao, aplicacaoPorArtigo } from '../lib/consultaRelatorios.js'
 import {
   docxMinutaConsulta, docxRelatorioInteracoes, docxQuadroAnalise, docxMinutaReestruturada, docxComparativo,
 } from '../lib/consultaDocx.js'
@@ -63,9 +63,9 @@ export default function ConsultaRegulamentoServico() {
   const [syncErro, setSyncErro] = useState(false)
   const [gerando, setGerando] = useState(null)
   const [aviso, setAviso] = useState(null)
-  // Padrão (Ten. Tiago, 2026-09-14): relatório e quadro só com as sugestões dos militares
-  // consultados; os registros internos da equipe (Tiago/Wândrio) entram só se marcado.
-  const [incluirEquipe, setIncluirEquipe] = useState(false)
+  // Só os militares consultados (escopo "servico") entram no relatório e no quadro. Os
+  // registros das contas de administração do portal são revisão interna, já incorporada à
+  // versão atual, e não aparecem como sugestão (determinação de 2026-09-14).
 
   // A consulta é SEMPRE sobre o cenário atual (a rota /regulamento/servico trava nele).
   useEffect(() => {
@@ -88,9 +88,10 @@ export default function ConsultaRegulamentoServico() {
 
   const recorte = useMemo(() => (completa ? filtrarEstruturaPorEscopo(completa, 'servico') : null), [completa])
   const indice = useMemo(() => (recorte ? indexarRecorte(recorte) : null), [recorte])
+  const aplicacaoArtigos = useMemo(() => (atualCompleta ? aplicacaoPorArtigo(atualCompleta) : null), [atualCompleta])
   const interacoes = useMemo(
-    () => (indice ? selecionarInteracoes({ sugestoes, membros, indice, finals, somenteConsultados: !incluirEquipe }) : []),
-    [indice, sugestoes, membros, finals, incluirEquipe],
+    () => (indice ? selecionarInteracoes({ sugestoes, membros, indice, finals, aplicacaoArtigos }) : []),
+    [indice, aplicacaoArtigos, sugestoes, membros, finals],
   )
   const resumo = useMemo(() => resumoParticipacao(membros, interacoes), [membros, interacoes])
   const totalArtigos = useMemo(() => (recorte ? recorte.chapters.reduce((n, c) => n + c.articles.length, 0) : 0), [recorte])
@@ -139,11 +140,11 @@ export default function ConsultaRegulamentoServico() {
 
   const semParecer = resumo.pareceres.pendente
   const botoes = [
-    { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos exatamente como o participante os vê (versão em consulta, com as correções ortográficas), com os textos finais fechados aplicados.` },
-    { k: 'relatorio', titulo: '2. Relatório das interações (SEI)', desc: 'Quem sugeriu (nome, nome de guerra, unidade), dispositivo, trecho e texto integral de cada sugestão; resumos por participante e por capítulo.' },
-    { k: 'quadro', titulo: '3. Quadro de análise e aplicação', desc: `Sugestões por artigo com o parecer registrado no portal (relevante / descartada) e a situação do texto final. ${semParecer ? `${semParecer} sugestão(ões) ainda sem parecer.` : 'Todas as sugestões têm parecer.'}` },
+    { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos exatamente como o participante os leu, com os textos finais fechados aplicados.` },
+    { k: 'relatorio', titulo: '2. Relatório das interações (SEI)', desc: `Só os militares consultados: quem sugeriu (nome, nome de guerra, unidade), dispositivo, trecho, texto integral e o que a versão atual fez com o artigo (${resumo.aplicadas} de ${resumo.total} sobre artigos alterados); resumos por participante, por capítulo e por aplicação.` },
+    { k: 'quadro', titulo: '3. Quadro de análise e aplicação', desc: `Sugestões por artigo com a aplicação na versão atual, o parecer registrado no portal (relevante / descartada) e a situação do texto final. ${semParecer ? `${semParecer} sugestão(ões) ainda sem parecer.` : 'Todas as sugestões têm parecer.'}` },
     { k: 'reestruturada', titulo: '4. Minuta reestruturada (Parte Geral e Parte Especial)', desc: 'Os mesmos artigos reordenados na estrutura sugerida pelo Cel. Luiz Eduardo, com a correspondência de numeração e as notas de ajuste a deliberar.' },
-    { k: 'comparativo', titulo: '5. Comparativo: versão em consulta × versão atual', desc: 'Artigo a artigo, lado a lado: corrigidos nas duas versões, reescritos, incluídos e suprimidos após as sugestões, com as propostas pendentes de deliberação marcadas. Também na tela "Comparativo da consulta".' },
+    { k: 'comparativo', titulo: '5. Comparativo: versão em consulta × versão atual', desc: 'Artigo a artigo, lado a lado: corrigidos, alterados, reescritos, incluídos e suprimidos na versão atual, com as propostas pendentes de deliberação marcadas. Também na tela "Comparativo da consulta".' },
   ]
 
   return (
@@ -162,14 +163,10 @@ export default function ConsultaRegulamentoServico() {
         <AvisoSincronizacao visivel={syncErro} />
         <div className="grid-4" style={{ marginBottom: 20 }}>
           <Indicador icon={Users} label="Consultados" value={resumo.cadastradosEscopo} desc={`${resumo.contribuintes} registraram sugestão`} accent="red" />
-          <Indicador icon={MessageSquare} label="Sugestões" value={resumo.total} desc={incluirEquipe ? `${resumo.dosConsultados} dos consultados · ${resumo.daEquipe} da equipe` : 'dos militares consultados'} accent="gold" />
-          <Indicador icon={CheckSquare} label="Com parecer" value={resumo.pareceres.relevante + resumo.pareceres.descartada} desc={`${resumo.pareceres.relevante} relevantes · ${resumo.pareceres.descartada} descartadas`} accent="green" />
+          <Indicador icon={MessageSquare} label="Sugestões" value={resumo.total} desc="dos militares consultados" accent="gold" />
+          <Indicador icon={CheckSquare} label="Sobre artigos alterados" value={resumo.aplicadas} desc={`${resumo.total - resumo.aplicadas} sobre artigos mantidos · parecer no portal: ${resumo.pareceres.relevante} relevantes, ${resumo.pareceres.descartada} descartadas`} accent="green" />
           <Indicador icon={FileText} label="Textos finais" value={finaisNoRecorte} desc={`dispositivos fechados no recorte de ${totalArtigos} artigos`} />
         </div>
-        <label style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'var(--text-secondary)', marginBottom: 14 }}>
-          <input type="checkbox" checked={incluirEquipe} onChange={e => setIncluirEquipe(e.target.checked)} />
-          Incluir no relatório e no quadro os registros internos da equipe de curadoria (Ten. Tiago e Wândrio). Por padrão, só as sugestões dos militares consultados.
-        </label>
         {aviso && <div className="form-error" style={{ marginBottom: 12, background: 'rgba(22,163,74,0.08)', color: '#15803d', borderColor: 'rgba(22,163,74,0.25)' }}>{aviso}</div>}
         <div className="grid-2">
           {botoes.map(b => (

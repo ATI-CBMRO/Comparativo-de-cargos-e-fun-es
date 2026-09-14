@@ -10,7 +10,7 @@ import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
 import { articular } from '../lib/consultaRelatorios.js'
 import { compararVersoes, resumoComparativo, ROTULO_TIPO, rotuloArtigo } from '../lib/comparativoConsulta.js'
 import { docxComparativo } from '../lib/consultaDocx.js'
-import { romanize } from '../lib/minutaArticles.js'
+import { rotuloRomano } from '../lib/minutaArticles.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 
 const BADGE = {
@@ -25,7 +25,7 @@ function Artigo({ art, num, vazio }) {
     <div>
       <p style={{ margin: '0 0 6px' }}><strong>{rotuloArtigo(num)}</strong> {a.caput}</p>
       {a.incisos.map((inc, i) => (
-        <p key={inc.index} style={{ margin: '0 0 4px 18px' }}>{inc.ownMarker ? '' : <strong>{romanize(i + 1)} - </strong>}{inc.text}</p>
+        <p key={inc.index} style={{ margin: `0 0 4px ${inc.alinea ? 36 : 18}px` }}>{inc.ownMarker ? '' : <strong>{rotuloRomano(art.incisos, i)} - </strong>}{inc.text}</p>
       ))}
     </div>
   )
@@ -79,11 +79,11 @@ export default function ComparativoConsulta() {
         <div className="page-header-left">
           <h2 className="page-title">Comparativo da consulta — Regulamento de Serviço</h2>
           <p className="page-subtitle">
-            Esquerda: a minuta como foi disponibilizada aos militares, já com as correções ortográficas (valem para as
-            duas versões). Direita: a versão atual, após as sugestões. Numeração de cada versão.
+            Esquerda: a minuta exatamente como foi disponibilizada aos militares. Direita: a versão atual, após a
+            revisão de texto e as sugestões. Numeração de cada versão.
           </p>
           <p className="rev-progresso">
-            {resumo.igual} sem alteração · {resumo.corrigido} corrigidos nas duas · {resumo.alterado} com texto final ·{' '}
+            {resumo.igual} sem alteração · {resumo.corrigido} com correção de texto · {resumo.alterado} com texto alterado ·{' '}
             {resumo.reescrito} reescritos · {resumo.incluido} novos · {resumo.suprimido} suprimidos · {resumo.propostas} proposta(s) pendente(s) de deliberação
           </p>
           <div className="rev-doc-switch" role="group" aria-label="Filtro">

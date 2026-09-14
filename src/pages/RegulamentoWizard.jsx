@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { ChevronRight, Download, ArrowLeft, Pencil, Check, RotateCcw, AlertTriangle } from 'lucide-react'
-import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { buildArticles, articleLabel, romanize, rotuloRomano } from '../lib/minutaArticles.js'
 import { buildMinutaBlob } from '../lib/minutaDocx.js'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
@@ -329,7 +329,7 @@ export default function RegulamentoWizard() {
             disabled={!podeEditar}
             onChange={() => { if (podeEditar) toggleItem(inc.editId, inc.index) }}
             style={{ marginTop: 5, flexShrink: 0, cursor: podeEditar ? 'pointer' : 'default' }} />
-          <span>{inc.ownMarker ? '' : <strong>{romanize(i + 1)} -</strong>} {inc.text}{srcBadge(inc.source)}</span>
+          <span style={inc.alinea ? { paddingLeft: 18 } : undefined}>{inc.ownMarker ? '' : <strong>{rotuloRomano(art.incisos, i)} -</strong>} {inc.text}{srcBadge(inc.source)}</span>
         </label>,
       )
     })
@@ -550,8 +550,8 @@ function PlainPreview({ articles }) {
             <strong>{articleLabel(art.number)}</strong> {art.caput}
           </p>
           {art.incisos.map((inc, i) => (
-            <p key={i} style={{ textAlign: 'justify', margin: '0 0 4px', paddingLeft: '2em', textIndent: '-1em' }}>
-              {inc.ownMarker ? '' : `${romanize(i + 1)} - `}{inc.text}{srcBadge(inc.source)}
+            <p key={i} style={{ textAlign: 'justify', margin: '0 0 4px', paddingLeft: inc.alinea ? '3em' : '2em', textIndent: inc.ownMarker ? 0 : '-1em' }}>
+              {inc.ownMarker ? '' : `${rotuloRomano(art.incisos, i)} - `}{inc.text}{srcBadge(inc.source)}
             </p>
           ))}
         </div>

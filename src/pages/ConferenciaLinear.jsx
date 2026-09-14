@@ -9,7 +9,7 @@ import { renderFriendlyText } from '../lib/comparatorRender.jsx'
 import { buildConferencia } from '../lib/conferencia.js'
 import { confKey, mergeStatus } from '../lib/conferenciaStatus.js'
 import { subscribeConferencia, saveConferenciaStatus } from '../lib/conferenciaData.js'
-import { articleLabel, romanize } from '../lib/minutaArticles.js'
+import { articleLabel, rotuloRomano } from '../lib/minutaArticles.js'
 import { AlternativesPanel } from '../components/AlternativesPanel.jsx'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
@@ -120,7 +120,7 @@ function ConferenciaItem({ item, idx, status, onStatus, ufSel, setUfSel }) {
             {dispositivo.incisos?.length > 0 && (
               <ul className="cc-list rg-incisos">
                 {dispositivo.incisos.map((inc, i) => (
-                  <li key={i}>{inc.ownMarker ? '' : `${romanize(i + 1)} - `}{renderFriendlyText(inc.text)}</li>
+                  <li key={i} style={inc.alinea ? { marginLeft: 18, listStyle: 'none' } : undefined}>{inc.ownMarker ? '' : `${rotuloRomano(art.incisos, i)} - `}{renderFriendlyText(inc.text)}</li>
                 ))}
               </ul>
             )}

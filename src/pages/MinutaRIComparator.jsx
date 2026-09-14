@@ -3,7 +3,7 @@ import { Scale, FileDown } from 'lucide-react'
 import { fetchJson } from '../lib/dataCache.js'
 import { LoadingState, ErrorState, EmptyState } from '../components/Status.jsx'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
-import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { buildArticles, articleLabel, rotuloRomano } from '../lib/minutaArticles.js'
 import { chapterIdOf } from '../lib/minutaTargets.js'
 
 function MatchBadge({ match }) {
@@ -264,7 +264,7 @@ function RIArticle({ art }) {
       {art.incisos.length > 0 && (
         <ul className="cc-list rg-incisos">
           {art.incisos.map((inc, i) => (
-            <li key={i}>{inc.ownMarker ? '' : `${romanize(i + 1)} - `}{renderFriendlyText(inc.text)}</li>
+            <li key={i}>{inc.ownMarker ? '' : `${rotuloRomano(art.incisos, i)} - `}{renderFriendlyText(inc.text)}</li>
           ))}
         </ul>
       )}

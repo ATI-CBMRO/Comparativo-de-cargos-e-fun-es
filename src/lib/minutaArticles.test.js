@@ -1,6 +1,24 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { articleLabel, romanize, normalizeInciso, hasOwnMarker } from './minutaArticles.js'
+import { articleLabel, romanize, normalizeInciso, hasOwnMarker, isAlinea, rotuloRomano } from './minutaArticles.js'
+
+test('alíneas ("a) ...") são marcador próprio: ficam verbatim e não contam na numeração', () => {
+  assert.equal(isAlinea('a) 6 horas de trabalho por 18 horas de folga da escala;'), true)
+  assert.equal(isAlinea('as escalas serão:'), false)
+  assert.equal(hasOwnMarker('b) 12 horas de trabalho;'), true)
+  assert.equal(normalizeInciso('a) 6 horas de trabalho;', 1, 8), 'a) 6 horas de trabalho;')
+  const incisos = [
+    { ownMarker: false }, { ownMarker: true }, { ownMarker: true }, { ownMarker: false }, { ownMarker: true },
+  ]
+  assert.equal(rotuloRomano(incisos, 0), 'I')
+  assert.equal(rotuloRomano(incisos, 3), 'II')
+})
+
+test('normalizeInciso: item que abre alíneas (":") fica sem sufixo e "; e" da fonte não duplica', () => {
+  assert.equal(normalizeInciso('I. As escalas para quem concorre ao serviço operacional serão:', 0, 8), 'as escalas para quem concorre ao serviço operacional serão:')
+  assert.equal(normalizeInciso('VIII - Conselhos; e', 7, 9), 'conselhos; e')
+  assert.equal(normalizeInciso('VII - Divisão; e', 2, 9), 'divisão;')
+})
 
 test('articleLabel usa ordinal até 9 e cardinal a partir de 10', () => {
   assert.equal(articleLabel(1), 'Art. 1º')
@@ -108,8 +126,8 @@ test('cada artigo carrega o editId da sua folha de origem', () => {
 test('incisos carregam texto normalizado, fonte, editId e index original', () => {
   const arts = buildArticles(STRUCTURE, {})
   assert.deepEqual(arts[3].incisos, [
-    { text: 'planejar as operações; e', ownMarker: false, source: 'ro', editId: 'organ:dpo/competencia', index: 0 },
-    { text: 'fiscalizar a instrução.', ownMarker: false, source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
+    { text: 'planejar as operações; e', ownMarker: false, alinea: false, source: 'ro', editId: 'organ:dpo/competencia', index: 0 },
+    { text: 'fiscalizar a instrução.', ownMarker: false, alinea: false, source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
   ])
 })
 
@@ -143,8 +161,8 @@ test('buildArticles usa edits (texto) no lugar dos itens, com source nulo', () =
   // reindexed: o índice destes incisos é posicional novo (não endereça mais o
   // item original) — ver auditoria 2026-07-23 / applyFinalsToArticles.
   assert.deepEqual(diretor.incisos, [
-    { text: 'item editado; e', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 0, reindexed: true },
-    { text: 'outro item.', ownMarker: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 1, reindexed: true },
+    { text: 'item editado; e', ownMarker: false, alinea: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 0, reindexed: true },
+    { text: 'outro item.', ownMarker: false, alinea: false, source: null, editId: 'organ:dpo/cargo:diretor', index: 1, reindexed: true },
   ])
 })
 
@@ -153,7 +171,7 @@ test('isExcluded pula o inciso e renumera os restantes (sufixo recalculado)', ()
   const arts = buildArticles(STRUCTURE, {}, isExcluded)
   const comp = arts.find(a => a.caput === 'Compete à DPO:')
   assert.deepEqual(comp.incisos, [
-    { text: 'fiscalizar a instrução.', ownMarker: false, source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
+    { text: 'fiscalizar a instrução.', ownMarker: false, alinea: false, source: 'cf. CBMAL, RI, Art. 115, VII', editId: 'organ:dpo/competencia', index: 1 },
   ])
 })
 

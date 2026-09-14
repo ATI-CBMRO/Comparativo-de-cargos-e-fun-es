@@ -3272,7 +3272,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 79"
             },
             {
-              "text": "V- confeccionar portarias com nomeações das comissões de promoção de oficiais e praças, mediante autorização do Comandante Geral do CBMRO;",
+              "text": "V- confeccionar portarias com nomeações das comissões de promoção de oficiais e praças, mediante autorização do Comandante-Geral do CBMRO;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 79"
             },
             {
@@ -3288,7 +3288,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
           "adapted": true,
-          "original_caput": "A Secretaria das Comissões de Promoções compete:"
+          "original_caput": "A Secretaria das Comissões de Promoções compete:",
+          "corrigido": true
         },
         {
           "id": "mt-art-80",
@@ -7338,7 +7339,7 @@
           "caput": "São competências da Assessoria Especial Institucional:",
           "items": [
             {
-              "text": "I – prestar assessoramento ao Comandante Geral em assuntos específicos e/ou estratégicos de interesse da Corporação;",
+              "text": "I – prestar assessoramento ao Comandante-Geral em assuntos específicos e/ou estratégicos de interesse da Corporação;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 38"
             },
             {
@@ -7348,7 +7349,8 @@
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 38",
           "match": "exata",
-          "heading": "TÍT. III, Cap. IV — Assessoramento Superior"
+          "heading": "TÍT. III, Cap. IV — Assessoramento Superior",
+          "corrigido": true
         },
         {
           "id": "mt-art-39",
@@ -7357,7 +7359,7 @@
           "caput": "Compete aos Assessores Especiais Institucionais:",
           "items": [
             {
-              "text": "I – Assessorar o Comandante Geral nos assuntos de que trata esta Seção;",
+              "text": "I – Assessorar o Comandante-Geral nos assuntos de que trata esta Seção;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 39"
             },
             {
@@ -7367,7 +7369,8 @@
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 39",
           "match": "exata",
-          "heading": "TÍT. III, Cap. IV — Assessoramento Superior"
+          "heading": "TÍT. III, Cap. IV — Assessoramento Superior",
+          "corrigido": true
         },
         {
           "id": "mt-art-40",
@@ -7390,7 +7393,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 41"
             },
             {
-              "text": "II – prestar assessoramento direto ao Comandante Geral em assuntos de interesse da Corporação junto aos órgãos citados no Inciso anterior.",
+              "text": "II – prestar assessoramento direto ao Comandante-Geral em assuntos de interesse da Corporação junto aos órgãos citados no Inciso anterior.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 41"
             }
           ],
@@ -7398,7 +7401,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. IV — Assessoramento Superior",
           "adapted": true,
-          "original_caput": "São competências das Assessorias Especiais Interinstitucionais:"
+          "original_caput": "São competências das Assessorias Especiais Interinstitucionais:",
+          "corrigido": true
         },
         {
           "id": "mt-art-42",
@@ -7411,13 +7415,14 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 42"
             },
             {
-              "text": "II – assessorar o Comandante Geral em assuntos de interesse da Corporação junto aos poderes e órgãos citados no Inciso anterior. Da Assessoria Especial de Defesa Civil",
+              "text": "II – assessorar o Comandante-Geral em assuntos de interesse da Corporação junto aos poderes e órgãos citados no Inciso anterior. Da Assessoria Especial de Defesa Civil",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 42"
             }
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 42",
           "match": "exata",
-          "heading": "TÍT. III, Cap. IV — Assessoramento Superior"
+          "heading": "TÍT. III, Cap. IV — Assessoramento Superior",
+          "corrigido": true
         },
         {
           "id": "mt-art-43",
@@ -7925,7 +7930,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 56"
             },
             {
-              "text": "g) produzir os conhecimentos necessários de interesse da atividade de Segurança Pública, com o objetivo de auxiliar o Comandante Geral, nas decisões, na elaboração de estudos e planejamento do Estado Maior Geral, visando o emprego da Instituição na atividade preceituada na Constituição Federal do Brasil e em normas infraconstitucionais.",
+              "text": "g) produzir os conhecimentos necessários de interesse da atividade de Segurança Pública, com o objetivo de auxiliar o Comandante-Geral, nas decisões, na elaboração de estudos e planejamento do Estado Maior Geral, visando o emprego da Instituição na atividade preceituada na Constituição Federal do Brasil e em normas infraconstitucionais.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 56"
             },
             {
@@ -7965,7 +7970,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. IV — Assessoramento Superior",
           "adapted": true,
-          "original_caput": "Compete às Seções de Inteligência e Contra- Inteligência da Coordenadoria da Agência Central de Inteligência:"
+          "original_caput": "Compete às Seções de Inteligência e Contra- Inteligência da Coordenadoria da Agência Central de Inteligência:",
+          "corrigido": true
         },
         {
           "id": "mt-art-57",
@@ -7974,7 +7980,7 @@
           "caput": "Compete à Seção de Inteligência Operacional e Preventiva:",
           "items": [
             {
-              "text": "I – produzir os conhecimentos necessários de interesse da atividade de Segurança Pública, com o objetivo de auxiliar o Comandante Geral, nas decisões, na elaboração de estudos e no planejamento, visando o emprego da Instituição na atividade preceituada na Constituição Federal do Brasil e em normas infraconstitucionais;",
+              "text": "I – produzir os conhecimentos necessários de interesse da atividade de Segurança Pública, com o objetivo de auxiliar o Comandante-Geral, nas decisões, na elaboração de estudos e no planejamento, visando o emprego da Instituição na atividade preceituada na Constituição Federal do Brasil e em normas infraconstitucionais;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 57"
             },
             {
@@ -7998,7 +8004,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. IV — Assessoramento Superior",
           "adapted": true,
-          "original_caput": "Compete à Seção de Inteligência Operacional e Preventiva:"
+          "original_caput": "Compete à Seção de Inteligência Operacional e Preventiva:",
+          "corrigido": true
         },
         {
           "id": "mt-art-58",
@@ -8079,7 +8086,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
             },
             {
-              "text": "1.1 - Gabinete do Comandante Geral:",
+              "text": "1.1 - Gabinete do Comandante-Geral:",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 219"
             },
             {
@@ -8117,17 +8124,19 @@
           "adapted": true,
           "original_caput": "Os órgãos de apoio tem a seguinte constituição:",
           "reindexed": true,
-          "incisos_removidos": 6
+          "incisos_removidos": 6,
+          "corrigido": true
         },
         {
           "id": "mt-art-220",
           "kind": "incisos",
           "editId": "reg:atual:competencias-apoio-assessoramento/mt-art-220",
-          "caput": "O Gabinete do Comandante Geral é órgão de apoio que presta assistência e assessoramento direto, permanente e pessoal ao Comandante Geral nos assuntos que escapem às competências normais e específicas dos demais órgãos de direção, e se destina a flexibilizar a estrutura do Comando Geral da Corporação, particularmente em assuntos técnicos especializados.",
+          "caput": "O Gabinete do Comandante-Geral é órgão de apoio que presta assistência e assessoramento direto, permanente e pessoal ao Comandante-Geral nos assuntos que escapem às competências normais e específicas dos demais órgãos de direção, e se destina a flexibilizar a estrutura do Comando Geral da Corporação, particularmente em assuntos técnicos especializados.",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 220",
           "match": "exata",
-          "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)"
+          "heading": "TÍT. III, Cap. VI — Nível de Apoio (Gabinetes e COB)",
+          "corrigido": true
         },
         {
           "id": "mt-art-223",
@@ -11159,10 +11168,10 @@
           "id": "mt-art-18",
           "kind": "incisos",
           "editId": "reg:atual:disciplina-correicao/mt-art-18",
-          "caput": "O Corregedor-Geral é o assessor do Comandante Geral e na ausência deste, do Subcomandante-Geral, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar.",
+          "caput": "O Corregedor-Geral é o assessor do Comandante-Geral e na ausência deste, do Subcomandante-Geral, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar.",
           "items": [
             {
-              "text": "Parágrafo único. No impedimento do Corregedor-Geral do Corpo de Bombeiros Militar, o Corregedor-Geral Adjunto assessorará o Comandante Geral, e na ausência deste, o Subcomandante-Geral, no que couber.",
+              "text": "Parágrafo único. No impedimento do Corregedor-Geral do Corpo de Bombeiros Militar, o Corregedor-Geral Adjunto assessorará o Comandante-Geral, e na ausência deste, o Subcomandante-Geral, no que couber.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 18"
             }
           ],
@@ -11170,7 +11179,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
           "adapted": true,
-          "original_caput": "O Corregedor-Geral é o assessor do Comandante Geral e na ausência deste, do Comandante-Geral Adjunto, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar."
+          "original_caput": "O Corregedor-Geral é o assessor do Comandante Geral e na ausência deste, do Comandante-Geral Adjunto, nos assuntos atinentes à conduta dos servidores da Instituição e nas atividades de correição de Polícia Judiciária Militar.",
+          "corrigido": true
         },
         {
           "id": "mt-art-19",
@@ -11299,13 +11309,14 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 22"
             },
             {
-              "text": "X - elaborar as Normas Gerais de Ação (NGA) da Corregedoria para aprovação do Comandante Geral.",
+              "text": "X - elaborar as Normas Gerais de Ação (NGA) da Corregedoria para aprovação do Comandante-Geral.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 22"
             }
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 22",
           "match": "exata",
-          "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral"
+          "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
+          "corrigido": true
         },
         {
           "id": "mt-art-23",
@@ -11556,7 +11567,7 @@
           "caput": "Compete a Seção de Procedimentos Administrativos Disciplinares Militares:",
           "items": [
             {
-              "text": "I - analisar os Inquéritos Policiais Militares e Sindicâncias instauradas pela Corregedoria-Geral por ordem do Comandante Geral, preparando sua solução;",
+              "text": "I - analisar os Inquéritos Policiais Militares e Sindicâncias instauradas pela Corregedoria-Geral por ordem do Comandante-Geral, preparando sua solução;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 31"
             },
             {
@@ -11564,7 +11575,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 31"
             },
             {
-              "text": "III - analisar punições disciplinares, cuja solução final compete ao Comandante Geral, preparando o enquadramento disciplinar aplicável, depois do caso concreto;",
+              "text": "III - analisar punições disciplinares, cuja solução final compete ao Comandante-Geral, preparando o enquadramento disciplinar aplicável, depois do caso concreto;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 31"
             },
             {
@@ -11580,7 +11591,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
           "adapted": true,
-          "original_caput": "Compete a Seção de Procedimentos Administrativos Disciplinares Militares:"
+          "original_caput": "Compete a Seção de Procedimentos Administrativos Disciplinares Militares:",
+          "corrigido": true
         },
         {
           "id": "mt-art-32",
@@ -11608,7 +11620,7 @@
           "caput": "Compete a Subseção de Julgamento e Revisão:",
           "items": [
             {
-              "text": "I– analisar os recursos de natureza disciplinares interpostos frente ao Comandante Geral.",
+              "text": "I– analisar os recursos de natureza disciplinares interpostos frente ao Comandante-Geral.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 33"
             },
             {
@@ -11622,7 +11634,8 @@
           ],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 33",
           "match": "exata",
-          "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral"
+          "heading": "TÍT. III, Cap. III, Seção II — Corregedoria Geral",
+          "corrigido": true
         },
         {
           "id": "mt-art-72",
@@ -15370,11 +15383,12 @@
           "id": "rn-art-56",
           "kind": "incisos",
           "editId": "reg:atual:pessoal-quadros/rn-art-56",
-          "caput": "O Corpo de Bombeiros Militar poderá dispor de servidores civis, regidos pelas disposições da legislação que estab - elece os direitos, vantagens, obrigações e deveres dos servidores públicos estaduais, cabendo ao Comandante Geral expedir reg- ulamento acerca do ingresso, tempo de serviço, funções e respectivas limitações a serem desempenhadas por esses servidores dentro do Corpo de Bombeiros Militar, nos termos da lei.",
+          "caput": "O Corpo de Bombeiros Militar poderá dispor de servidores civis, regidos pelas disposições da legislação que estab - elece os direitos, vantagens, obrigações e deveres dos servidores públicos estaduais, cabendo ao Comandante-Geral expedir reg- ulamento acerca do ingresso, tempo de serviço, funções e respectivas limitações a serem desempenhadas por esses servidores dentro do Corpo de Bombeiros Militar, nos termos da lei.",
           "items": [],
           "source": "cf. CBMRN, Regulamento Geral (Decreto nº 31.139/2021), Art. 56",
           "match": "exata",
-          "heading": "TÍT. III — Do Pessoal (quadros e QOD)"
+          "heading": "TÍT. III — Do Pessoal (quadros e QOD)",
+          "corrigido": true
         }
       ],
       "alternatives": {
@@ -17193,8 +17207,9 @@
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
           "original_caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Supervisor de Dia.",
+          "corrigido": true,
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-25",
@@ -17208,7 +17223,7 @@
           "adapted": true,
           "original_caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo.",
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-26",
@@ -17227,7 +17242,7 @@
           "adapted": true,
           "original_caput": "O serviço diário de Superior de Dia ao CBMSE será coordenado pela Diretoria Operacional, através da sua Seção de Recursos Humanos.",
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-27",
@@ -17241,7 +17256,7 @@
           "adapted": true,
           "original_caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Diretor de Operações ser alterado.",
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-28",
@@ -17270,24 +17285,7 @@
           "adapted": true,
           "original_caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala.",
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
-        },
-        {
-          "id": "se-art-30",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-30",
-          "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
-          "items": [
-            {
-              "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Pessoal do Comando Operacional de Bombeiros.",
-              "source": "cf. CBMSE, RISD (atual. 2022), Art. 30"
-            }
-          ],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 30",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
-          "adapted": true,
-          "original_caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da DO com antecedência mínima de 48 (quarenta e oito) horas."
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-31",
@@ -17324,7 +17322,7 @@
           "origem": "consulta-2026-08",
           "incluido": true,
           "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: restringe o Superior de Dia à Capital e aos postos de Major/Tenente-Coronel; a versão em consulta prevê alcance em todo o território estadual (se-art-31) e os textos finais do Ten. Tiago põem a coordenação no Subcomandante-Geral."
+          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: restringe o Superior de Dia à Capital e aos postos de Major/Tenente-Coronel; a versão em consulta prevê alcance em todo o território estadual (se-art-31) e a versão atual põe a coordenação no Subcomandante-Geral."
         },
         {
           "id": "se-art-31-c2",
@@ -17424,7 +17422,7 @@
           "origem": "consulta-2026-08",
           "incluido": true,
           "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, marcados \"Excluir\" pelo Ten. Tiago). Avaliar extensão aos quartéis das OBMs."
+          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, suprimidos na versão atual). Avaliar extensão aos quartéis das OBMs."
         },
         {
           "id": "se-art-38-c2",
@@ -17577,7 +17575,7 @@
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-42",
@@ -17588,19 +17586,6 @@
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 42",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
-        },
-        {
-          "id": "se-art-43",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-43",
-          "caput": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 43",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
-          "adapted": true,
-          "original_caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio",
-          "corrigido": true
         },
         {
           "id": "se-art-43-c1",
@@ -17746,7 +17731,7 @@
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-50",
@@ -17777,17 +17762,6 @@
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 52",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
-        },
-        {
-          "id": "se-art-112",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-112",
-          "caput": "As permutas de serviços fora do mês devem ser solicitadas com antecedência e devidamente motivadas para análise do comandante da OBM.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 112",
-          "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
-          "corrigido": true
         },
         {
           "id": "se-art-114",
@@ -17880,11 +17854,12 @@
           "id": "se-art-117",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-117",
-          "caput": "As viaturas operacionais, de acordo com suas características e peculiaridades, somente poderão ser empregados, em atividades, exclusivas, de prevenção, combate a incêndio, salvamento e atendimento pré-hospitalar, salvo determinação em contrário do Comandante Geral.",
+          "caput": "As viaturas operacionais, de acordo com suas características e peculiaridades, somente poderão ser empregados, em atividades, exclusivas, de prevenção, combate a incêndio, salvamento e atendimento pré-hospitalar, salvo determinação em contrário do Comandante-Geral.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 117",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "corrigido": true
         },
         {
           "id": "se-art-118",
@@ -18026,11 +18001,11 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
-              "text": "IV. Solicitar o comparecimento da perícia de trânsito para que seja feito o laudo, salvo se ocorrer acordo formal entre as partes;",
+              "text": "IV. Solicitar o comparecimento da perícia de trânsito para que seja feito o laudo;",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
-              "text": "V. Preencher a ficha de acidentes;",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
@@ -18042,7 +18017,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
-              "text": "VIII. Relatar os fatos, através de um relatório de detalhado.",
+              "text": "VIII. Relatar os fatos, através de Parte Especial.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
@@ -18052,7 +18027,12 @@
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 127",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "incisos_suprimidos": [
+            4
+          ],
+          "alterado": "redação",
+          "fundamento_alteracao": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-128",
@@ -18102,13 +18082,15 @@
           "id": "se-art-132",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-132",
-          "caput": "Torna-se obrigatório a presença do Oficial de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
+          "caput": "Torna-se obrigatória a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 132",
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
-          "original_caput": "Torna-se obrigatório a presença do Supervisor de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais."
+          "original_caput": "Torna-se obrigatório a presença do Supervisor de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
+          "alterado": "redação",
+          "fundamento_alteracao": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-133",
@@ -18124,11 +18106,13 @@
           "id": "se-art-134",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-134",
-          "caput": "Nas ocorrências extraordinárias ou de grande porte em que pela gravidade se faz necessário o emprego de todo poder operacional da Corporação deverá pelo menos por questão de conveniência, existir um socorro de combate a incêndio de reserva para atender quaisquer outras emergências que porventura venham a acontecer.",
+          "caput": "Nas ocorrências de grande vulto, deverá, pelo menos por questão de conveniência, existir um socorro de combate a incêndio de reserva para atender quaisquer outras emergências que porventura venham a acontecer.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 134",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "alterado": "redação",
+          "fundamento_alteracao": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-135",
@@ -18169,19 +18153,19 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
-              "text": "IX. Acionar o SAMU sempre que o acidente, pela sua gravidade, envolva o transporte de vítimas.",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
-              "text": "X. Solicitar a presença da companhia responsável pela manutenção de elevadores, sempre que neste ocorrer defeito ou acidentes envolvendo vítimas.",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
-              "text": "XI. Acionar o helicóptero do GTA nos acidentes cuja gravidade assim o exigir.",
+              "text": "XI. Acionar a aeronave do Grupamento de Operações Aéreas – GOA nos acidentes cuja gravidade assim o exigir.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
-              "text": "XII. Solicitar o apoio da Capitania dos Portos nos acidentes aquáticos.",
+              "text": "XII. Solicitar o apoio da Capitania dos Portos, nas localidades onde houver o referido órgão, nos acidentes aquáticos.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
@@ -18194,7 +18178,14 @@
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
           "original_caput": "De acordo com a necessidade e a gravidade da situação poderá as guarnições de socorros empregados numa ocorrência solicitar apoio externo a órgãos públicos e privados ligados direta ou indiretamente à operação, conforme orientações abaixo:",
-          "corrigido": true
+          "corrigido": true,
+          "incisos_suprimidos": [
+            8,
+            9
+          ],
+          "alterado": "redação",
+          "fundamento_alteracao": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009",
+          "nota": "Inciso XI: quem aciona a aeronave do GOA e o protocolo para ocorrências no interior do Estado seguem sem redação — a definir pelo COB/GOA."
         },
         {
           "id": "se-art-136",
@@ -18403,6 +18394,21 @@
           "heading": "Do atendimento a tentativas de suicídio",
           "autoral": true,
           "fundamento": "LOB, Art. 2º, IV e VII (socorro e salvamento), e Art. 15 (Coordenadoria de Educação, Ensino e Instrução)"
+        },
+        {
+          "id": "ro-art-2-c1",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/ro-art-2-c1",
+          "caput": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM.",
+          "items": [],
+          "source": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009",
+          "match": "exata",
+          "heading": "Dos casos omissos",
+          "autoral": true,
+          "fundamento": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009",
+          "origem": "consulta-2026-08",
+          "incluido": true,
+          "nota": "Movido do Art. 28 da versão em consulta (se-art-43): o artigo dos casos omissos passa a fechar o capítulo do Serviço Operacional. Texto idêntico."
         }
       ],
       "alternatives": {
@@ -19192,36 +19198,48 @@
       },
       "suprimidos": [
         {
+          "id": "se-art-30",
+          "motivo": "Suprimido — duplicidade com o Art. 10 da versão em consulta (se-art-25, permuta do Superior de Dia). Atenção: o prazo de 48 horas e o formulário de permuta saem junto — se forem mantidos, redigir como parágrafo do Art. 10."
+        },
+        {
           "id": "se-art-32",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — regime do Oficial de Dia refeito pelos artigos novos"
+          "motivo": "Suprimido — regime do Oficial de Dia refeito pelos artigos novos"
         },
         {
           "id": "se-art-34",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — idem"
+          "motivo": "Suprimido — regime do Oficial de Dia refeito pelos artigos novos"
         },
         {
           "id": "se-art-35",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — idem"
+          "motivo": "Suprimido — regime do Oficial de Dia refeito pelos artigos novos"
         },
         {
           "id": "se-art-36",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-29"
+          "motivo": "Suprimido — duplica o Art. 14 da versão em consulta (se-art-29)"
         },
         {
           "id": "se-art-37",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-30"
+          "motivo": "Suprimido — duplica o Art. 15 da versão em consulta (se-art-30)"
         },
         {
           "id": "se-art-38",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-31 e está no bloco errado"
+          "motivo": "Suprimido — duplica o Art. 16 da versão em consulta (se-art-31) e está no bloco errado"
+        },
+        {
+          "id": "se-art-43",
+          "motivo": "Deslocado — o artigo dos casos omissos passa a fechar o capítulo (ro-art-2-c1)."
         },
         {
           "id": "se-art-46",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-42"
+          "motivo": "Suprimido — duplica o Art. 27 da versão em consulta (se-art-42)"
         },
         {
           "id": "se-art-47",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-43"
+          "motivo": "Suprimido — duplica o Art. 28 da versão em consulta (se-art-43)"
+        },
+        {
+          "id": "se-art-112",
+          "motivo": "Suprimido — permuta fora do mês; matéria da rotina interna de cada OBM."
         }
       ]
     },
@@ -19753,13 +19771,14 @@
           "id": "se-art-100",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-100",
-          "caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante Geral, Subcomandante ou Comandante Operacional de Bombeiros do CBMRO.",
+          "caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante-Geral, Subcomandante ou Comandante Operacional de Bombeiros do CBMRO.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 100",
           "match": "exata",
           "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
           "adapted": true,
-          "original_caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante Geral, Subcomandante ou Diretor de Operações do CBMSE."
+          "original_caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante Geral, Subcomandante ou Diretor de Operações do CBMSE.",
+          "corrigido": true
         },
         {
           "id": "se-art-101",
@@ -20946,7 +20965,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
             },
             {
-              "text": "IX - providenciar a publicação dos despachos do e ordens emanadas pelo Comandante Geral, Subcomandante-Geral, pelas Diretorias e da própria Ajudância Geral, bem como assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico;",
+              "text": "IX - providenciar a publicação dos despachos do e ordens emanadas pelo Comandante-Geral, Subcomandante-Geral, pelas Diretorias e da própria Ajudância Geral, bem como assuntos de interesse geral da Corporação, no Boletim Geral Eletrônico;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
             },
             {
@@ -20954,7 +20973,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
             },
             {
-              "text": "XI - exercer outros encargos que lhe forem atribuídos pelo Comandante Geral e/ou pelo Subcomandante-Geral.",
+              "text": "XI - exercer outros encargos que lhe forem atribuídos pelo Comandante-Geral e/ou pelo Subcomandante-Geral.",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 153"
             },
             {
@@ -20975,7 +20994,8 @@
           "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
           "adapted": true,
           "original_caput": "Compete ao Coordenador da Ajudância Geral:",
-          "orgao": "ajudancia"
+          "orgao": "ajudancia",
+          "corrigido": true
         },
         {
           "id": "mt-art-163",
@@ -24573,10 +24593,16 @@
   "cenario": "atual",
   "versao": "atual",
   "curadoria": {
-    "correcoes": 24,
-    "textos_finais": 7,
-    "suprimidos": 8,
+    "correcoes": 44,
+    "textos_finais": 11,
+    "suprimidos": 11,
     "substituidos": 13,
-    "novos": 6
+    "novos": 7,
+    "atendimentos_artigos": {
+      "reg:atual:servico-operacional/se-art-4": {
+        "como": "incluido",
+        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como 6 artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1/c2); os 3 artigos de regime estão marcados como proposta pendente de deliberação do CONDEG (Capital/1º GBM/QCG)"
+      }
+    }
   }
 }

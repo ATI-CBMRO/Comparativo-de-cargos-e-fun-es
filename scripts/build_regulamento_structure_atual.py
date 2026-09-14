@@ -17,10 +17,10 @@ sem tocar em nada da futura.
 Pré-requisito: rodar antes `python scripts/build_regulamento_structure.py` (gera a futura).
 
 Saída (2026-09-14, curadoria da consulta — ver scripts/regulamento_curadoria_consulta.py):
-  database/atual/regulamento_structure_consulta.json — a minuta como foi lida pelos
-      militares na consulta, MAIS as correções ortográficas/de texto (versão "em consulta");
-  database/atual/regulamento_structure.json — a versão ATUAL: mesmas correções + reescritas,
-      artigos novos e supressões decorrentes das sugestões.
+  database/atual/regulamento_structure_consulta.json — a minuta EXATAMENTE como foi lida
+      pelos militares na consulta (versão "em consulta", intocada);
+  database/atual/regulamento_structure.json — a versão ATUAL: correções de texto da revisão
+      interna + reescritas, artigos novos e supressões decorrentes das sugestões.
 """
 import json
 import sys
@@ -93,7 +93,8 @@ def main():
     for rotulo, s, p in (("consulta", consulta, OUT_CONSULTA_JSON), ("atual", atual, OUT_JSON)):
         n_art = sum(len(c.get("articles", [])) for c in s["chapters"])
         print(f"Gerado ({rotulo}): {p}")
-        print(f"  {len(s['chapters'])} temas · {n_art} artigos (isolados como reg:atual:) · curadoria: {s['curadoria']}")
+        contagens = {k: v for k, v in s["curadoria"].items() if not k.startswith("atendimentos")}
+        print(f"  {len(s['chapters'])} temas · {n_art} artigos (isolados como reg:atual:) · curadoria: {contagens or 'nenhuma (texto lido pelos militares)'}")
 
 
 if __name__ == "__main__":

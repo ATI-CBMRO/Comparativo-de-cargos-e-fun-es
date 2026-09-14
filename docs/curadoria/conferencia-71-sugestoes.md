@@ -1,5 +1,14 @@
 # Conferência das 71 sugestões do Regulamento (Firestore) — pós-rodada 18/08/2026
 
+> **Atualização 14/09/2026:** as 45 pendentes abaixo foram incorporadas à versão ATUAL do
+> Regulamento pela curadoria da consulta (`scripts/regulamento_curadoria_consulta.py`:
+> CORRECOES, TEXTOS_FINAIS_ATUAL, SUPRIMIR, INCLUIR). Por determinação do Ten. Tiago, esses
+> registros são revisão interna da administração do portal: não constam do relatório das
+> interações (só os militares consultados) e não levam autoria no texto. Restam 2 sem
+> redação a aplicar (`se-art-50` "Manter?", `se-art-52` rotina da JMS) e a pergunta sobre
+> quem aciona a aeronave do GOA (`se-art-135#10`). Este documento fica como registro
+> histórico interno da situação em 18/08.
+
 **Data:** 2026-08-18
 **Plano:** `docs/superpowers/plans/2026-08-18-regulamento-servico-correcoes-fase2.md` (Task 10)
 **Fonte:** coleção `suggestions` do Firestore, filtradas por `dispositivoId` iniciando em

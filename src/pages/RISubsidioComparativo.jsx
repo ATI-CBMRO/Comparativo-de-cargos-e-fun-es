@@ -10,7 +10,7 @@ import { useScenario } from '../context/ScenarioContext'
 import { scenarioDbUrl } from '../lib/scenario.js'
 import { buildTargets, chapterIdOf } from '../lib/minutaTargets.js'
 import { indexComparativo, organKeyOfChapter, statesWithData } from '../lib/riComparison.js'
-import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
+import { buildArticles, articleLabel, rotuloRomano } from '../lib/minutaArticles.js'
 import { renderFriendlyText, List } from '../lib/comparatorRender.jsx'
 import ChapterRail from '../components/ChapterRail.jsx'
 import { Scale, Network, ListTree } from 'lucide-react'
@@ -58,7 +58,7 @@ function RIArticle({ art }) {
       <p className="rg-caput"><strong>{articleLabel(art.number)}</strong> {renderFriendlyText(art.caput)}</p>
       {art.incisos.length > 0 && (
         <ul className="cc-list rg-incisos">
-          {art.incisos.map((inc, i) => <li key={i}>{inc.ownMarker ? '' : `${romanize(i + 1)} - `}{renderFriendlyText(inc.text)}</li>)}
+          {art.incisos.map((inc, i) => <li key={i} style={inc.alinea ? { marginLeft: 18, listStyle: 'none' } : undefined}>{inc.ownMarker ? '' : `${rotuloRomano(art.incisos, i)} - `}{renderFriendlyText(inc.text)}</li>)}
         </ul>
       )}
       {(art.incisos[0]?.source || art.match) && (

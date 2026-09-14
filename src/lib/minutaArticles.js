@@ -19,23 +19,42 @@ export function romanize(n) {
   return out
 }
 
-// Dispositivos como "Parágrafo único." e "§ 1º" são unidades legislativas completas
-// (não incisos numerados) — carregam o próprio marcador verbatim da fonte e nunca
-// devem ganhar numeral romano artificial nem perder a maiúscula/pontuação original.
-export function hasOwnMarker(text) {
-  return /^\s*(§\s*\d|Par[áa]grafo\s+[úu]nico)/i.test(text ?? '')
+// Alínea: item que começa com letra minúscula e parêntese ("a) ...") — desdobramento de um
+// inciso, não um inciso. Até 14/09/2026 o portal apagava o "a)" e numerava a alínea como se
+// fosse inciso (Art. 8º do Regulamento de Serviço saía com "I a VIII" em vez de "I, a-d, II,
+// a-b" — achado da revisão de ago/2026). Alíneas ficam verbatim e não contam na numeração.
+export function isAlinea(text) {
+  return /^\s*[a-z]\)\s/.test(text ?? '')
 }
 
-// Remove marcador de lista inicial ("1.", "1)", "I -", "- ", "a)") e pontuação
-// final, minúscula a 1ª letra e aplica o sufixo conforme a posição no rol.
+// Dispositivos como "Parágrafo único.", "§ 1º" e as alíneas são unidades legislativas
+// completas (não incisos numerados) — carregam o próprio marcador verbatim da fonte e nunca
+// devem ganhar numeral romano artificial nem perder a maiúscula/pontuação original.
+export function hasOwnMarker(text) {
+  return /^\s*(§\s*\d|Par[áa]grafo\s+[úu]nico)/i.test(text ?? '') || isAlinea(text)
+}
+
+// Numeral romano do inciso na posição `i` de `incisos`, contando só os itens SEM marcador
+// próprio (parágrafos e alíneas não entram na conta). Substitui o antigo `romanize(i + 1)`
+// dos renderizadores, que numerava errado quando havia alíneas no meio do rol.
+export function rotuloRomano(incisos, i) {
+  let n = 0
+  for (let k = 0; k <= i; k += 1) if (!incisos[k]?.ownMarker) n += 1
+  return romanize(n)
+}
+
+// Remove marcador de lista inicial ("1.", "1)", "I -", "- ") e pontuação final
+// (inclusive um "; e" de conjunção já presente na fonte), minúscula a 1ª letra e aplica o
+// sufixo conforme a posição no rol. Item que termina em ":" (abre alíneas) fica sem sufixo.
 // Dispositivos com marcador próprio (ver hasOwnMarker) são devolvidos como vieram —
 // já são uma frase completa, não uma cláusula que continua o caput.
 export function normalizeInciso(text, index, total) {
   let t = (text ?? '').trim()
   if (hasOwnMarker(t)) return t
   t = t.replace(/^(\d+[.)]|[ivxlcdm]+\s*[-–.)]|[a-z][).]|[-–•])\s*/i, '')
-  t = t.replace(/[;.]\s*$/, '')
+  t = t.replace(/;\s*e\s*$/i, '').replace(/[;.]\s*$/, '')
   if (t) t = t[0].toLowerCase() + t.slice(1)
+  if (/:$/.test(t)) return t
   let suffix = ';'
   if (index === total - 1) suffix = '.'
   else if (index === total - 2) suffix = '; e'
@@ -100,7 +119,7 @@ export function buildArticles(structure, edits = {}, isExcluded = () => false) {
           // no inciso errado).
           incisos = raw.map((t, i) => ({
             text: normalizeInciso(t, i, raw.length),
-            ownMarker: hasOwnMarker(t),
+            ownMarker: hasOwnMarker(t), alinea: isAlinea(t),
             source: null, editId: leaf.editId, index: i, reindexed: true,
           }))
         } else {
@@ -113,7 +132,7 @@ export function buildArticles(structure, edits = {}, isExcluded = () => false) {
           })
           incisos = kept.map((k, pos) => ({
             text: normalizeInciso(k.it.text, pos, kept.length),
-            ownMarker: hasOwnMarker(k.it.text),
+            ownMarker: hasOwnMarker(k.it.text), alinea: isAlinea(k.it.text),
             source: k.it.source ?? null, editId: leaf.editId, index: k.i,
           }))
         }

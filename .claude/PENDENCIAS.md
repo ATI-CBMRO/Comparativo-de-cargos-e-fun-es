@@ -27,21 +27,16 @@
   "Este texto não substitui o publicado no Boletim Ger…"); sigla "CIOSP" em `se-art-116`
   inciso II que pode ser resíduo de Sergipe (em RO a NGA usa "CIOP") — conferir com o Ten.
   Tiago antes de trocar.
-- [ ] **3ª rodada de curadoria do Regulamento de Serviço — 45 sugestões de mérito ainda
-  abertas** (achado 18/08/2026, na conferência final da 2ª rodada —
-  `docs/curadoria/conferencia-71-sugestoes.md`). Das 71 sugestões do Firestore sobre o
-  Regulamento, 26 foram fechadas por esta rodada (15 resolvidas + 8 endereçadas + 3 achadas e
-  corrigidas na própria conferência — "Seção de Recursos Humanos"→"Seção de Pessoal" em
-  se-art-26/30/37, fora do levantamento original por não citarem "Supervisor de Dia"). As 45
-  restantes são majoritariamente perguntas de mérito operacional, não ortografia: bloco
-  `se-art-23` (8, problema de segmentação de inciso na extração), bloco `se-art-135` (5,
-  cobertura de GOA/SAMU no interior), bloco `se-art-127` (3, Parte Especial), 5 sugestões de
-  "duplicidade entre artigos" a decidir qual fica, 4 de "a quem compete" (hierarquia), 4 sobre
-  Oficial/Superior de Dia que pedem mudança de REGRA (não só de nome — ex.: `se-art-132`
-  propõe trocar "presença do Oficial de Dia" por "ciência ao Superior de Dia"), 7 do Wândrio
-  em `organizacao-geral`/`disposicoes-preliminares` (fora do recorte tocado), e 9 diversas.
-  Uma sugestão (`mt-art-1`, autor "Wandrio teste") é lixo de teste — recomendado exclusão
-  direto no app. Ver o documento para a lista completa dispositivo a dispositivo.
+- [ ] **Sobras da revisão interna do Regulamento de Serviço — 14/09/2026**: das 45 anotações
+  pendentes de 18/08 (`docs/curadoria/conferencia-71-sugestoes.md`), tudo foi incorporado à
+  versão atual (ver item em andamento abaixo); restam sem redação: `se-art-50` ("Sem previsão
+  legal. Manter?" — dispensa natalícia), `se-art-52` (rotina da JMS, conferir com a CP), e a
+  pergunta de `se-art-135#10` (quem aciona a aeronave do GOA / protocolo no interior — só a
+  nomenclatura GTA→GOA foi corrigida). Decisões do Comando, não tarefa do agente. Ressalva a
+  levar junto: `se-art-30` (permutas com 48 h + formulário) foi suprimido por duplicidade com
+  o Art. 10 — se a regra do prazo for mantida, redigir como parágrafo do Art. 10. Os registros
+  das contas admin (inclusive o de teste em `mt-art-1`) seguem no Firestore, mas o relatório só
+  lê contas com escopo "servico" — limpar no app quando convier.
 - [ ] **Regulamento Geral completo — Parte I (arts. 1-257) ainda é o transplante bruto de MT**
   (achado 18/08/2026, ao levantar a 2ª rodada de curadoria do Regulamento de Serviço; o Ten.
   Tiago determinou "fica para um segundo plano"). Na visão admin (16 capítulos), a Parte I
@@ -156,12 +151,33 @@
     reescrito/novo/proposta/texto final; tela nova `/regulamento/servico/comparativo`
     (lado a lado + .docx, também no Pacote como item 5). Testes: `npm test` 201/201,
     `test_regulamento_curadoria_consulta.py`. Ver seção nova no CLAUDE.md.
+  - **2026-09-14 (2ª passada) — revisão interna toda incorporada à versão atual; equipe
+    FORA do relatório** (duas determinações do Tiago no mesmo dia: primeiro "implemente todas
+    as sugestões do Wândrio e do Tiago", depois "são administradores do portal: não constam
+    do relatório, não diferencie consulta/atual para elas, elimine qualquer menção"). Resultado:
+    a versão em consulta voltou a ser o texto EXATO lido pelos militares (sem correção
+    alguma); a atual tem tudo — `CORRECOES` + `CORRECOES_GLOBAIS` ("Comandante-Geral" em 18
+    artigos, GTA→GOA, Art. 148, "proteção e defesa civil", resíduos), 11 `TEXTOS_FINAIS_ATUAL`
+    (9 finais do portal + redações em `se-art-127` IV/VIII, `se-art-132` ciência ao Superior
+    de Dia, `se-art-134`, `se-art-135` XII; incisos suprimidos sem re-indexar em 127 V e 135
+    IX/X), 11 `SUPRIMIR` (agora também `se-art-30`, `se-art-112`; `se-art-43` movido para o
+    fim do capítulo como `ro-art-2-c1`). Notas/motivos/fundamentos sem nome (`_F_FINAL`,
+    `_F_CURADORIA`; teste 7c garante). Relatório/quadro/MD só com os 271 registros do Cel.,
+    com a coluna "Aplicação" deduzida por artigo (`aplicacaoPorArtigo` + `ATENDIMENTOS_POR_ARTIGO`
+    para o se-art-4 → `incluido`): 197 reescrito, 74 incluído. O mapa `ATENDIMENTOS` por id
+    de sugestão da equipe foi criado e removido no mesmo dia — não recriar. Achado de
+    EXIBIÇÃO corrigido para todo o portal: alíneas "a)" eram numeradas como incisos e "; e"
+    duplicava (`isAlinea`/`rotuloRomano`/`normalizeInciso` em `minutaArticles.js`; 12
+    renderizadores trocaram `romanize(i+1)` por `rotuloRomano`). Comparativo: 19 correção de
+    texto, 11 alterados, 15 reescritos, 7 novos, 11 suprimidos, 3 propostas. `npm test`
+    204/204, testes Python ok, build ok, docs de `docs/sei/` regenerados (análise §3 virou
+    "Revisão de texto incorporada à versão atual", sem autoria). Conferência visual pendente
+    (Revisão do Regulamento: Art. das escalas com alíneas; tela do Pacote).
   - **Ficou de fora (pauta)**: 10 funções do Art. 26 sem seção (Cel. só redigiu 3);
     Subcmt/Auxiliares/B1–B6 do GBM e Subcmt/Auxiliares do SGBM (só fundamentação);
     reordenação Parte Geral/Especial segue só no .docx; incisos X/XIII do Oficial de Dia
     completados por dedução (confirmar com o autor); Decreto 8.134/1997 e rotina de
-    armamento na ARI a conferir; Art. 34 (`se-art-30`) sem alteração (texto final é um
-    comentário).
+    armamento na ARI a conferir.
   - **Próximos passos (pauta, não tarefa do agente)**: 5 decisões do CONDEG listadas na
     seção 5 da análise (alcance do Superior de Dia, Cmt de Socorro só Capital?, Oficial de
     Dia interno?, transcrever art. 2º da LOB, adotar Parte Geral/Especial); depois aplicar

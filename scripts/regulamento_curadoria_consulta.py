@@ -1,25 +1,27 @@
-"""Curadoria das sugestões da CONSULTA da Minuta do Regulamento de Serviço (ago/2026).
+"""Curadoria da Minuta do Regulamento de Serviço após a CONSULTA aos militares (ago/2026).
 
-Regra definida pelo Ten. Tiago em 2026-09-14, para que a minuta que os militares leram
-possa ser COMPARADA com a que resultou da consulta:
+Regra (definida em 2026-09-14), para que a minuta que os militares leram possa ser
+COMPARADA com a que resultou da consulta:
 
-  CORRECOES  — correções ortográficas, de concordância, de citação e resíduos de extração:
-               entram nas DUAS versões (a "em consulta" e a "atual"). O texto lido pelos
-               militares só ganha o que era erro objetivo.
-  ALTERACOES — reescritas de artigo, artigos/incisos novos e supressões: entram SÓ na
-               versão ATUAL. Cada artigo reescrito ganha id NOVO com o campo `substitui`,
-               de modo que os comentários dos militares (ancorados em editId#index) sigam
-               apontando para o texto que eles leram, na versão em consulta, e nunca caiam
-               no dispositivo errado na atual (armadilha AR-03).
+  VERSÃO EM CONSULTA — exatamente o texto lido pelos militares. Nada é aplicado nela; é
+               onde os comentários do Firestore (editId#index) ficam ancorados.
+  VERSÃO ATUAL — tudo o que a curadoria fez: CORRECOES (grafia, concordância, citação,
+               resíduos de extração, nomenclatura), TEXTOS_FINAIS_ATUAL (redações fechadas
+               no portal ou ajustadas na curadoria), SUPRIMIR, SUBSTITUIR e INCLUIR. Cada
+               artigo reescrito ganha id NOVO com o campo `substitui`, de modo que os
+               comentários dos militares sigam apontando para o texto que eles leram, na
+               versão em consulta, e nunca caiam no dispositivo errado na atual (AR-03).
 
-Fonte das sugestões: coleção `suggestions` do portal (exportada em 11/09/2026) — 271
-registros do Cel. BM Luiz Eduardo Oliveira Firmino (19 e 25/08/2026), 51 da equipe
-(Ten. Tiago e Wândrio, 17-18/08) e os textos finais fechados pelo Ten. Tiago. Análise de
-mérito em docs/sei/2026-09-11-regulamento-servico/Analise_Interacoes_e_Proposta_de_Aplicacao.md.
+As correções e ajustes de redação da curadoria (feitos pelos administradores do portal em
+ago-set/2026) são trabalho interno de revisão: NÃO aparecem como "sugestão" em relatório
+nenhum e não levam autoria. As únicas sugestões relatadas ao SEI são as dos militares
+consultados (coleção `suggestions`, contas com escopo "servico"): 271 registros do Cel. BM
+Luiz Eduardo Oliveira Firmino (19 e 25/08/2026). Análise de mérito em
+docs/sei/2026-09-11-regulamento-servico/Analise_Interacoes_e_Proposta_de_Aplicacao.md.
 
-Decisões (Ten. Tiago, 2026-09-14): reescritas do Cel. só na atual; os três blocos que mudam
-regra de mérito (Superior de Dia só na Capital; Comandante de Socorro só no 1º GBM; Oficial
-de Dia como serviço interno do QCG) ENTRAM na atual marcados `proposta: True` com a nota
+Decisões (2026-09-14): reescritas do Cel. só na atual; os três blocos que mudam regra de
+mérito (Superior de Dia só na Capital; Comandante de Socorro só no 1º GBM; Oficial de Dia
+como serviço interno do QCG) ENTRAM na atual marcados `proposta: True` com a nota
 "pendente de deliberação do CONDEG".
 
 Este módulo só descreve; quem aplica é `build_regulamento_structure_atual.py` (gera
@@ -35,22 +37,23 @@ _F_COB = f'{_CEL} — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red
 _F_GBM = f'{_CEL} — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)'
 _F_SGBM = f'{_CEL} — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)'
 _F_SERV = f'{_CEL} — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida'
-_F_FINAL = 'Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009'
+_F_FINAL = 'Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009'
+_F_CURADORIA = 'Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009'
 
 NOTA_PROPOSTA = ('PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em '
                  'relação à versão em consulta')
 
-# ── CORREÇÕES (nas duas versões) ─────────────────────────────────────────────────────
+# ── CORREÇÕES (só na versão atual) ───────────────────────────────────────────────────
 # {tema: {id: {'caput': [(velho, novo), ...], 'items': [(velho, novo), ...]}}}
 # Casamento por TEXTO (substring), nunca por índice. Todo `velho` PRECISA existir — o
 # builder aborta se não achar (correção silenciosa que não aplica é pior que nenhuma).
 CORRECOES = {
     'disposicoes-preliminares': {
-        # Wândrio (17/08): a citação era a de Mato Grosso; em RO o CBM está no art. 148 da
-        # Constituição Estadual. Texto final fechado pelo Ten. Tiago em 18/08.
+        # A citação era a de Mato Grosso; em RO o CBM está no art. 148 da Constituição Estadual.
         'mt-art-1': {'caput': [('Art. 82 da Constituição Estadual', 'Art. 148 da Constituição Estadual')]},
-        # Wândrio (17/08): nome atual do sistema. Texto final fechado em 17/08.
-        'mt-art-3': {'items': [('Sistema Estadual de Defesa Civil', 'Sistema Estadual de Proteção e Defesa Civil')]},
+        # Nome atual do sistema e da atividade: "proteção e defesa civil".
+        'mt-art-3': {'items': [('Sistema Estadual de Defesa Civil', 'Sistema Estadual de Proteção e Defesa Civil'),
+                               ('executar as atividades de defesa civil do Estado', 'executar as atividades de proteção e defesa civil do Estado')]},
     },
     'servico-operacional': {
         # Sobra da quebra "Art. Nº" na extração do RISD de Sergipe.
@@ -58,7 +61,7 @@ CORRECOES = {
         'se-art-2': {'caput': [('º São objetivos', 'São objetivos')]},
         'se-art-3': {'caput': [('º Chama-se política', 'Chama-se política')]},
         'se-art-4': {'caput': [('º Visando a otimização', 'Visando a otimização')]},
-        # Ten. Tiago (17/08, texto final): "para que concorre" → "para quem concorre".
+        # Concordância: "para que concorre" → "para quem concorre".
         'se-art-23': {'items': [('As escalas para que concorre exclusivamente', 'As escalas para quem concorre exclusivamente')]},
         # Resíduos de título de seção da fonte grudados no fim do caput.
         'se-art-43': {'caput': [(' Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio', '')]},
@@ -66,7 +69,10 @@ CORRECOES = {
         'se-art-47': {'caput': [('pelo Comandante da OBM. Operações', 'pelo Comandante da OBM.')]},
         'se-art-112': {'caput': [('análise do comandante da OBM. durante Ocorrências', 'análise do comandante da OBM.')]},
         'se-art-115': {'caput': [('Comandante do incidente. com Distúrbios Mentais', 'Comandante do incidente.')]},
-        'se-art-135': {'items': [('nos acidentes contra o meio ambiente. Grande Porte', 'nos acidentes contra o meio ambiente.')]},
+        # Resíduo "Grande Porte" (título de seção colado) e a sigla de Sergipe "GTA" — em RO a
+        # unidade é o Grupamento de Operações Aéreas (GOA).
+        'se-art-135': {'items': [('nos acidentes contra o meio ambiente. Grande Porte', 'nos acidentes contra o meio ambiente.'),
+                                 ('Acionar o helicóptero do GTA nos acidentes', 'Acionar a aeronave do Grupamento de Operações Aéreas – GOA nos acidentes')]},
         'se-art-147': {'caput': [('emprego desnecessário de bombeiros militares. Disposições Gerais', 'emprego desnecessário de bombeiros militares.')]},
     },
     'servico-interno-dia': {
@@ -88,11 +94,18 @@ CORRECOES = {
     },
 }
 
+# Correções de grafia válidas para o documento INTEIRO: "Comandante Geral" → "Comandante-Geral",
+# a grafia da Lei nº 2.204/2009. Aplicada em todo artigo que traga o termo (18 na exportação).
+CORRECOES_GLOBAIS = [('Comandante Geral', 'Comandante-Geral')]
+
 # ── ALTERAÇÕES (só na versão atual) ───────────────────────────────────────────────────
 
-# (1) Textos finais SUBSTANTIVOS fechados pelo Ten. Tiago no portal: mudam regra (a quem se
-# reporta, quem autoriza, base legal), então só na atual. O id NÃO muda (é o mesmo artigo,
-# com decisão do admin) — o artigo ganha `alterado: 'texto final'`.
+# (1) Textos finais SUBSTANTIVOS fechados no portal: mudam regra (a quem se reporta, quem
+# autoriza, base legal). O id NÃO muda (é o mesmo artigo, com decisão da curadoria) — o
+# artigo ganha `alterado: 'texto final'`. Entradas com 'fundamento'/'alterado' próprios são
+# ajustes de redação feitos na curadoria de set/2026 (`alterado: 'redação'`). Em 'items', o
+# valor None SUPRIME o inciso: o texto vira vazio (o portal pula itens vazios sem re-indexar
+# os demais — AR-03) e o índice fica registrado em `incisos_suprimidos`.
 TEXTOS_FINAIS_ATUAL = {
     'servico-operacional': {
         'se-art-24': {
@@ -106,22 +119,56 @@ TEXTOS_FINAIS_ATUAL = {
         'se-art-29': {'caput': 'O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Subcomandante-Geral a fim de ser reinserido ou inserido na respectiva escala.'},
         'se-art-41': {'caput': 'Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas neste Regulamento de Serviço.'},
         'se-art-45': {'caput': 'Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas neste Regulamento de Serviço.'},
+        # Acidente com viatura: sem a cláusula de "acordo formal entre as partes" (IV), sem a
+        # "ficha de acidentes", documento que não existe (V), e o relato em Parte Especial (VIII).
+        'se-art-127': {
+            'items': {3: 'IV. Solicitar o comparecimento da perícia de trânsito para que seja feito o laudo;',
+                      4: None,
+                      7: 'VIII. Relatar os fatos, através de Parte Especial.'},
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
+        },
+        # Nas ocorrências com socorros de duas ou mais Unidades, o que se exige é a CIÊNCIA do
+        # Superior de Dia, não a presença do Oficial de Dia.
+        'se-art-132': {
+            'caput': 'Torna-se obrigatória a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.',
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
+        },
+        # Redação simplificada da reserva operacional.
+        'se-art-134': {
+            'caput': 'Nas ocorrências de grande vulto, deverá, pelo menos por questão de conveniência, existir um socorro de combate a incêndio de reserva para atender quaisquer outras emergências que porventura venham a acontecer.',
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
+        },
+        # Apoio externo: IX (SAMU) e X (companhia de elevadores) saem — não existem em todas as
+        # localidades com OBM; XII (Capitania dos Portos) fica condicionado às localidades que
+        # têm o órgão. XI (GOA): nomenclatura corrigida em CORRECOES; quem aciona a aeronave e
+        # o protocolo para o interior continuam sem redação (decisão do COB/GOA).
+        'se-art-135': {
+            'items': {8: None, 9: None,
+                      11: 'XII. Solicitar o apoio da Capitania dos Portos, nas localidades onde houver o referido órgão, nos acidentes aquáticos.'},
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
+            'nota': 'Inciso XI: quem aciona a aeronave do GOA e o protocolo para ocorrências no interior do Estado seguem sem redação — a definir pelo COB/GOA.',
+        },
     },
 }
 
-# (2) Supressões — "Excluir" fechado pelo Ten. Tiago (18/08) + duplicidades apontadas na
-# análise (se-art-36/37/38 repetem 29/30/31; 46/47 repetem 42/43). O bloco do Oficial de
-# Dia (32-38) é substituído pelos artigos novos do Cel. (ver INCLUIR abaixo).
+# (2) Supressões — "Excluir" fechado no portal + duplicidades apontadas na análise
+# (se-art-36/37/38 repetem 29/30/31; 46/47 repetem 42/43). O bloco do Oficial de Dia (32-38)
+# é substituído pelos artigos novos do Cel. (ver INCLUIR abaixo). O `motivo` sai no comparativo.
 SUPRIMIR = {
     'servico-operacional': {
-        'se-art-32': 'Excluir (Ten. Tiago, 18/08) — regime do Oficial de Dia refeito pelos artigos novos',
-        'se-art-34': 'Excluir (Ten. Tiago, 18/08) — idem',
-        'se-art-35': 'Excluir (Ten. Tiago, 18/08) — idem',
-        'se-art-36': 'Excluir (Ten. Tiago, 18/08) — duplica se-art-29',
-        'se-art-37': 'Excluir (Ten. Tiago, 18/08) — duplica se-art-30',
-        'se-art-38': 'Excluir (Ten. Tiago, 18/08) — duplica se-art-31 e está no bloco errado',
-        'se-art-46': 'Excluir (Ten. Tiago, 18/08) — duplica se-art-42',
-        'se-art-47': 'Excluir (Ten. Tiago, 18/08) — duplica se-art-43',
+        'se-art-32': 'Suprimido — regime do Oficial de Dia refeito pelos artigos novos',
+        'se-art-34': 'Suprimido — regime do Oficial de Dia refeito pelos artigos novos',
+        'se-art-35': 'Suprimido — regime do Oficial de Dia refeito pelos artigos novos',
+        'se-art-36': 'Suprimido — duplica o Art. 14 da versão em consulta (se-art-29)',
+        'se-art-37': 'Suprimido — duplica o Art. 15 da versão em consulta (se-art-30)',
+        'se-art-38': 'Suprimido — duplica o Art. 16 da versão em consulta (se-art-31) e está no bloco errado',
+        'se-art-46': 'Suprimido — duplica o Art. 27 da versão em consulta (se-art-42)',
+        'se-art-47': 'Suprimido — duplica o Art. 28 da versão em consulta (se-art-43)',
+        'se-art-30': ('Suprimido — duplicidade com o Art. 10 da versão em consulta (se-art-25, permuta do '
+                      'Superior de Dia). Atenção: o prazo de 48 horas e o formulário de permuta saem junto — '
+                      'se forem mantidos, redigir como parágrafo do Art. 10.'),
+        'se-art-43': 'Deslocado — o artigo dos casos omissos passa a fechar o capítulo (ro-art-2-c1).',
+        'se-art-112': 'Suprimido — permuta fora do mês; matéria da rotina interna de cada OBM.',
     },
 }
 
@@ -446,7 +493,7 @@ INCLUIR = {
                     ['§ 1º Durante o período de serviço, o Superior de Dia deverá permanecer em condições de pronto acionamento, mantendo disponível meio de comunicação que permita seu imediato contato e comparecimento quando necessário.',
                      '§ 2º A atuação do Superior de Dia ficará circunscrita à Capital do Estado, observadas as competências próprias do Comando Operacional e dos Comandantes das Organizações Bombeiro Militar.'],
                     _F_SERV, heading=_H_SD, proposta=True,
-                    nota=NOTA_PROPOSTA + ': restringe o Superior de Dia à Capital e aos postos de Major/Tenente-Coronel; a versão em consulta prevê alcance em todo o território estadual (se-art-31) e os textos finais do Ten. Tiago põem a coordenação no Subcomandante-Geral.',
+                    nota=NOTA_PROPOSTA + ': restringe o Superior de Dia à Capital e aos postos de Major/Tenente-Coronel; a versão em consulta prevê alcance em todo o território estadual (se-art-31) e a versão atual põe a coordenação no Subcomandante-Geral.',
                 ),
                 _art(
                     'Compete ao Superior de Dia:',
@@ -476,7 +523,7 @@ INCLUIR = {
                     ['§ 1º O Oficial de Dia exercerá suas atribuições no âmbito interno do QCG, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.',
                      '§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade responsável pelo aquartelamento nas questões relacionadas à disciplina e à segurança interna.'],
                     _F_SERV, heading=_H_OD, proposta=True,
-                    nota=NOTA_PROPOSTA + ': redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, marcados "Excluir" pelo Ten. Tiago). Avaliar extensão aos quartéis das OBMs.',
+                    nota=NOTA_PROPOSTA + ': redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, suprimidos na versão atual). Avaliar extensão aos quartéis das OBMs.',
                 ),
                 _art(
                     'Compete ao Oficial de Dia:',
@@ -551,7 +598,49 @@ INCLUIR = {
                 ),
             ],
         },
+        {   # Casos omissos — movido do se-art-43 (Art. 28 da versão em consulta) para o FIM do
+            # capítulo. ro-art-2 é o último artigo do tema.
+            'apos': 'ro-art-2',
+            'artigos': [
+                _art(
+                    'Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM.',
+                    [],
+                    _F_CURADORIA, heading='Dos casos omissos',
+                    nota='Movido do Art. 28 da versão em consulta (se-art-43): o artigo dos casos omissos passa a fechar o capítulo do Serviço Operacional. Texto idêntico.',
+                ),
+            ],
+        },
     ],
+}
+
+# ── APLICAÇÃO por artigo (coluna "Aplicação" do relatório das interações) ────────────────
+# O relatório deduz, artigo a artigo, o que a versão atual fez com cada dispositivo comentado
+# pelos militares consultados (aplicacaoPorArtigo em src/lib/consultaRelatorios.js). Quando a
+# dedução não enxerga o que aconteceu, o registro explícito abaixo (chave = editId da versão em
+# consulta) vence. `como` ∈ COMO_VALIDOS.
+COMO_VALIDOS = {'correcao', 'texto-final', 'redacao', 'inciso-suprimido', 'suprimido', 'movido',
+                'reescrito', 'incluido'}
+
+
+def _at(como, nota, onde=None):
+    d = {'como': como, 'nota': nota}
+    if onde:
+        d['onde'] = onde
+    return d
+
+# Caso: as 74 sugestões do Cel. Luiz Eduardo sobre se-art-4 (lista das funções do serviço) são
+# o Bloco 14 — regime e competências do Superior de Dia, do Oficial de Dia e do Comandante de
+# Socorro — que entrou como 6 artigos NOVOS (INCLUIR), não como correção do se-art-4 (o artigo
+# só ganhou a correção "º Visando").
+ATENDIMENTOS_POR_ARTIGO = {
+    'reg:atual:servico-operacional/se-art-4': _at(
+        'incluido',
+        'sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e '
+        'de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na '
+        'versão atual como 6 artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1/c2); os 3 '
+        'artigos de regime estão marcados como proposta pendente de deliberação do CONDEG (Capital/1º '
+        'GBM/QCG)',
+    ),
 }
 
 
@@ -565,13 +654,26 @@ def _prefixo(cap):
 
 
 def aplicar_correcoes(structure):
-    """Aplica CORRECOES in place (nas duas versões). Aborta se um trecho não existir."""
+    """Aplica CORRECOES e CORRECOES_GLOBAIS in place (só na versão atual). Aborta se um
+    trecho de CORRECOES não existir; as globais exigem ao menos um artigo atingido."""
     n = 0
     pendentes = {(t, i) for t, arts in CORRECOES.items() for i in arts}
+    atingidos_globais = 0
     for cap in structure['chapters']:
         tema = _tema(cap)
         regras = CORRECOES.get(tema, {})
         for art in cap['articles']:
+            for velho, novo in CORRECOES_GLOBAIS:
+                achou = velho in art.get('caput', '')
+                art['caput'] = art.get('caput', '').replace(velho, novo)
+                for it in art.get('items', []):
+                    if velho in it['text']:
+                        it['text'] = it['text'].replace(velho, novo)
+                        achou = True
+                if achou:
+                    art['corrigido'] = True
+                    atingidos_globais += 1
+                    n += 1
             r = regras.get(art['id'])
             if not r:
                 continue
@@ -593,6 +695,8 @@ def aplicar_correcoes(structure):
             art['corrigido'] = True
     if pendentes:
         raise SystemExit(f'CORRECOES sem artigo correspondente: {sorted(pendentes)}')
+    if CORRECOES_GLOBAIS and not atingidos_globais:
+        raise SystemExit('CORRECOES_GLOBAIS não atingiram nenhum artigo — conferir o trecho')
     return n
 
 
@@ -646,9 +750,17 @@ def aplicar_alteracoes(structure):
                 if 'caput' in f:
                     art['caput'] = f['caput']
                 for idx, texto in f.get('items', {}).items():
-                    art['items'][idx]['text'] = texto
-                art['alterado'] = 'texto final'
-                art['fundamento_alteracao'] = _F_FINAL
+                    if idx >= len(art['items']) or not art['items'][idx]['text'].strip():
+                        raise SystemExit(f'ALTERACAO aponta para inciso inexistente: {tema}/{aid}#{idx}')
+                    if texto is None:  # supressão do inciso, sem re-indexar (AR-03)
+                        art['items'][idx]['text'] = ''
+                        art.setdefault('incisos_suprimidos', []).append(idx)
+                    else:
+                        art['items'][idx]['text'] = texto
+                art['alterado'] = f.get('alterado', 'texto final')
+                art['fundamento_alteracao'] = f.get('fundamento', _F_FINAL)
+                if f.get('nota'):
+                    art['nota'] = f['nota']
                 cont['textos_finais'] += 1
             if aid in suprimir:
                 cont['suprimidos'] += 1
@@ -670,13 +782,17 @@ def aplicar_alteracoes(structure):
 
 def gerar_versoes(structure):
     """A partir da estrutura gerada (cenário atual, ids reg:atual:), devolve
-    (consulta, atual): a consulta só com CORRECOES; a atual com CORRECOES + ALTERACOES."""
+    (consulta, atual): a consulta é o texto lido pelos militares, intocado; a atual tem
+    CORRECOES + ALTERACOES."""
+    invalidos = {k: v['como'] for k, v in ATENDIMENTOS_POR_ARTIGO.items() if v['como'] not in COMO_VALIDOS}
+    if invalidos:
+        raise SystemExit(f'ATENDIMENTOS_POR_ARTIGO com `como` inválido: {invalidos}')
     consulta = copy.deepcopy(structure)
-    n_corr = aplicar_correcoes(consulta)
     consulta['versao'] = 'consulta'
-    consulta['curadoria'] = {'correcoes': n_corr}
-    atual = copy.deepcopy(consulta)
+    consulta['curadoria'] = {'atendimentos_artigos': ATENDIMENTOS_POR_ARTIGO}
+    atual = copy.deepcopy(structure)
+    n_corr = aplicar_correcoes(atual)
     cont = aplicar_alteracoes(atual)
     atual['versao'] = 'atual'
-    atual['curadoria'] = {'correcoes': n_corr, **cont}
+    atual['curadoria'] = {'correcoes': n_corr, **cont, 'atendimentos_artigos': ATENDIMENTOS_POR_ARTIGO}
     return consulta, atual
