@@ -145,6 +145,23 @@
     Serviço (em consulta)" e chips "Minuta completa / Minuta em consulta" na Revisão do
     Regulamento. `npm test` 199/199, build ok. Conferência visual da tela nova ainda não
     feita (o agente não tem navegador) — abrir como admin e clicar nos 4 botões.
+  - **2026-09-14 — curadoria aplicada em DUAS versões** (regra do Tiago: correções
+    ortográficas/de texto nas duas; reescritas, inclusões e supressões só na atual; as 3
+    propostas de mérito do Cel. entram na atual marcadas "proposta pendente de
+    deliberação"). `scripts/regulamento_curadoria_consulta.py` (CORRECOES 24 ·
+    TEXTOS_FINAIS_ATUAL 7 · SUPRIMIR 8 · SUBSTITUIR 13→15 · INCLUIR 6) aplicado por
+    `build_regulamento_structure_atual.py` → `regulamento_structure_consulta.json` +
+    `regulamento_structure.json`. App: `regulamentoDbUrl(cenario, versao)`;
+    `/regulamento/servico` (+subsídio) lê a consulta; Revisão da atual mostra selos
+    reescrito/novo/proposta/texto final; tela nova `/regulamento/servico/comparativo`
+    (lado a lado + .docx, também no Pacote como item 5). Testes: `npm test` 201/201,
+    `test_regulamento_curadoria_consulta.py`. Ver seção nova no CLAUDE.md.
+  - **Ficou de fora (pauta)**: 10 funções do Art. 26 sem seção (Cel. só redigiu 3);
+    Subcmt/Auxiliares/B1–B6 do GBM e Subcmt/Auxiliares do SGBM (só fundamentação);
+    reordenação Parte Geral/Especial segue só no .docx; incisos X/XIII do Oficial de Dia
+    completados por dedução (confirmar com o autor); Decreto 8.134/1997 e rotina de
+    armamento na ARI a conferir; Art. 34 (`se-art-30`) sem alteração (texto final é um
+    comentário).
   - **Próximos passos (pauta, não tarefa do agente)**: 5 decisões do CONDEG listadas na
     seção 5 da análise (alcance do Superior de Dia, Cmt de Socorro só Capital?, Oficial de
     Dia interno?, transcrever art. 2º da LOB, adotar Parte Geral/Especial); depois aplicar

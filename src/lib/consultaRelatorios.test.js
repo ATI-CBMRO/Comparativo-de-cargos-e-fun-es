@@ -85,13 +85,16 @@ test('selecionarInteracoes filtra recorte/cenário, ordena caput antes dos incis
     { id: 'e', dispositivoId: 'reg:servico-operacional/se-art-24#caput', texto: 'futura', autorUid: 'u1', criadoEm: '2026-09-02T12:00:00Z' },
   ]
   const finals = mapaFinais([{ id: 'reg:atual:servico-operacional|se-art-24#caput', status: 'fechado', texto: 'Redigido.' }])
-  const out = selecionarInteracoes({ sugestoes, membros, indice: idx, finals })
+  // padrão: só os consultados (escopo 'servico') — a sugestão 'b' é do admin e fica de fora
+  const soConsultados = selecionarInteracoes({ sugestoes, membros, indice: idx, finals })
+  assert.deepEqual(soConsultados.map(r => r.firestoreId), ['a'])
+  const out = selecionarInteracoes({ sugestoes, membros, indice: idx, finals, somenteConsultados: false })
   assert.deepEqual(out.map(r => r.firestoreId), ['b', 'a'])
   assert.equal(out[0].textoFinal, 'Redigido.')
   assert.equal(out[0].parecer, 'pendente')
   assert.equal(out[1].parecer, 'relevante')
   assert.equal(out[1].dispositivo, 'Art. 3º, parágrafo')
-  const desde = selecionarInteracoes({ sugestoes, membros, indice: idx, finals, desde: new Date('2026-09-02T00:00:00Z') })
+  const desde = selecionarInteracoes({ sugestoes, membros, indice: idx, finals, desde: new Date('2026-09-02T00:00:00Z'), somenteConsultados: false })
   assert.deepEqual(desde.map(r => r.firestoreId), ['b'])
   const resumo = resumoParticipacao(membros, out)
   assert.equal(resumo.cadastradosEscopo, 1)
@@ -113,7 +116,8 @@ test('paraData aceita Timestamp do Firestore, ISO e nulo', () => {
 })
 
 test('ESTRUTURA cobre 100% do recorte real, sem repetição, e mantém os 171 artigos', () => {
-  const p = path.resolve('database/atual/regulamento_structure.json')
+  // A ESTRUTURA mapeia os ids da versão EM CONSULTA (a atual tem ids novos '-r'/'-c').
+  const p = path.resolve('database/atual/regulamento_structure_consulta.json')
   if (!fs.existsSync(p)) return
   const completa = JSON.parse(fs.readFileSync(p, 'utf8'))
   const recorte = filtrarEstruturaPorEscopo(completa, 'servico')

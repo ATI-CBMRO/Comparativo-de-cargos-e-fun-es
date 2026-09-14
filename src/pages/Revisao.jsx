@@ -11,7 +11,7 @@ import {
   filterSuggestionsByScenario, filterFinalsByScenario,
 } from '../lib/reviewGroup.js'
 import { useScenario } from '../context/ScenarioContext.jsx'
-import { scenarioDbUrl } from '../lib/scenario.js'
+import { scenarioDbUrl, regulamentoDbUrl } from '../lib/scenario.js'
 import {
   subscribeSuggestions, addSuggestion, toggleLike, deleteSuggestion,
   setAdminStatus, subscribeFinalTexts, saveFinalText,
@@ -29,6 +29,26 @@ import NotaEscopoServico from '../components/NotaEscopoServico.jsx'
 
 const chapterAnchorId = (chapterId) => `rc-cap-${chapterId}`
 
+// Selo de versão do artigo (curadoria da consulta, 2026-09-14). Busca o nó pelo editId na
+// estrutura carregada; barato o suficiente para a tela (≤ 420 artigos).
+const _cacheMarca = new WeakMap()
+function marcaVersao(editId, data) {
+  if (!data) return null
+  let idx = _cacheMarca.get(data)
+  if (!idx) {
+    idx = new Map()
+    for (const c of data.chapters ?? []) for (const a of c.articles ?? []) idx.set(a.editId, a)
+    _cacheMarca.set(data, idx)
+  }
+  const a = idx.get(editId)
+  if (!a) return null
+  if (a.proposta) return { cls: 'badge-red', txt: 'proposta pendente', title: a.nota ?? 'Proposta pendente de deliberação do CONDEG' }
+  if (a.substitui) return { cls: 'badge-gold', txt: 'reescrito', title: `Substitui ${a.substitui} da versão em consulta${a.nota ? ` — ${a.nota}` : ''}` }
+  if (a.incluido) return { cls: 'badge-green', txt: 'novo', title: a.nota ?? 'Artigo incluído após a consulta' }
+  if (a.alterado) return { cls: 'badge-gray', txt: 'texto final', title: a.fundamento_alteracao ?? 'Texto final do portal aplicado' }
+  return null
+}
+
 function Rail({ count, onClick }) {
   return (
     <span className="rev-rail">
@@ -40,7 +60,10 @@ function Rail({ count, onClick }) {
   )
 }
 
-export default function Revisao({ initialDoc, escopo } = {}) {
+// `versao` ('atual' | 'consulta'): qual arquivo do Regulamento no cenário atual — a rota do
+// Regulamento de Serviço passa 'consulta' (a minuta lida pelos militares, onde os
+// comentários estão ancorados); as demais leem a versão atual (após as sugestões).
+export default function Revisao({ initialDoc, escopo, versao = 'atual' } = {}) {
   const { user } = useAuth()
   const { cenario } = useScenario()
   const navigate = useNavigate()
@@ -82,11 +105,11 @@ export default function Revisao({ initialDoc, escopo } = {}) {
     setData(null)
     setErro(null)
     setAberto(null) // fecha a modal ao trocar de documento — evita comentar no doc errado
-    const file = docId === 'reg' ? 'regulamento_structure.json' : 'minuta_structure.json'
-    fetchJson(scenarioDbUrl(cenario, file))
+    const url = docId === 'reg' ? regulamentoDbUrl(cenario, versao) : scenarioDbUrl(cenario, 'minuta_structure.json')
+    fetchJson(url)
       .then(setData)
       .catch(() => setErro('Não foi possível carregar o documento.'))
-  }, [docId, cenario])
+  }, [docId, cenario, versao])
 
   const [syncErro, setSyncErro] = useState(false)
 
@@ -205,6 +228,18 @@ export default function Revisao({ initialDoc, escopo } = {}) {
     () => (data ? filtrarEstruturaPorEscopo(data, 'servico').chapters.length : 0),
     [data],
   )
+  // Nota de versão para quem vê a atual: artigos reescritos/incluídos/propostas ficam
+  // visíveis pelo rótulo; o detalhe está no Comparativo da consulta.
+  const artigosMarcados = useMemo(() => {
+    if (!data || versao !== 'atual') return { reescritos: 0, incluidos: 0, propostas: 0 }
+    let reescritos = 0; let incluidos = 0; let propostas = 0
+    for (const c of data.chapters ?? []) for (const a of c.articles ?? []) {
+      if (a.substitui) reescritos += 1
+      if (a.incluido) incluidos += 1
+      if (a.proposta) propostas += 1
+    }
+    return { reescritos, incluidos, propostas }
+  }, [data, versao])
 
   const bloqueadoParaComissao = docId === 'reg' && !regulamentoAberto && user.role !== 'admin'
   const tituloDoc = escopo === 'servico'
@@ -225,7 +260,13 @@ export default function Revisao({ initialDoc, escopo } = {}) {
                 Clique no balão à direita de cada dispositivo para ver e enviar sugestões.
                 As sugestões de todos ficam visíveis.
               </p>
-              <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
+              <p className="rev-progresso">
+                {fechados} dispositivo(s) com texto final fechado.
+                {versao === 'atual' && docId === 'reg' && cenario === 'atual' && (artigosMarcados.reescritos + artigosMarcados.incluidos) > 0 && (
+                  <> Versão atual após a consulta: {artigosMarcados.reescritos} artigo(s) reescrito(s), {artigosMarcados.incluidos} novo(s), {artigosMarcados.propostas} proposta(s) pendente(s) de deliberação.</>
+                )}
+                {versao === 'consulta' && <> Versão em consulta: o texto lido pelos militares, com as correções ortográficas.</>}
+              </p>
             </>
           )}
           {mostraAlternancia && (
@@ -337,6 +378,11 @@ export default function Revisao({ initialDoc, escopo } = {}) {
                 <div className={`rev-line${finalsForDoc.get(caputId)?.status === 'fechado' ? ' fechado' : ''}`}>
                   <span className="rev-text" style={{ textIndent: art.incisos.length ? 0 : '1.25em' }}>
                     <strong>{articleLabel(art.number)}</strong> {art.caput}
+                    {versao === 'atual' && marcaVersao(art.editId, data) && (
+                      <span className={`badge ${marcaVersao(art.editId, data).cls}`} style={{ marginLeft: 8, verticalAlign: 'middle' }} title={marcaVersao(art.editId, data).title}>
+                        {marcaVersao(art.editId, data).txt}
+                      </span>
+                    )}
                   </span>
                   <Rail count={counts.get(caputId)} onClick={() => abrir(caputId, caputLabel, art.caput)} />
                 </div>

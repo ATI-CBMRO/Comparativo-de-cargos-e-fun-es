@@ -4,7 +4,10 @@
 // Entrada: exportação do Firestore (scripts/exportar_firestore.mjs):
 //   .firestore-export/fs_suggestions.json, fs_members.json (e fs_finalTexts.json, opcional)
 //
-//   node scripts/gerar_sei_interacoes.mjs [--export pasta] [--out pasta] [--desde AAAA-MM-DD]
+//   node scripts/gerar_sei_interacoes.mjs [--export pasta] [--out pasta] [--desde AAAA-MM-DD] [--incluir-equipe]
+//
+// Por padrão só as sugestões dos militares consultados (escopo "servico"); `--incluir-equipe`
+// traz também os registros internos do Ten. Tiago e do Wândrio.
 import fs from 'node:fs'
 import path from 'node:path'
 import { filtrarEstruturaPorEscopo } from '../src/lib/escopoServico.js'
@@ -32,11 +35,11 @@ const sugestoes = lerExport('fs_suggestions.json')
 const membros = lerExport('fs_members.json', false)
 const finals = carregarFinais(path.join(exportDir, 'fs_finalTexts.json')) ?? new Map()
 
-const completa = lerJson('database/atual/regulamento_structure.json')
+const completa = lerJson('database/atual/regulamento_structure_consulta.json')
 const recorte = filtrarEstruturaPorEscopo(completa, 'servico')
 const indice = indexarRecorte(recorte)
 const totalArtigos = recorte.chapters.reduce((n, c) => n + c.articles.length, 0)
-const interacoes = selecionarInteracoes({ sugestoes, membros, indice, finals, desde })
+const interacoes = selecionarInteracoes({ sugestoes, membros, indice, finals, desde, somenteConsultados: !args.includes('--incluir-equipe') })
 const resumo = resumoParticipacao(membros, interacoes)
 const foraDoRecorte = sugestoes.filter(s => String(s.dispositivoId ?? '').startsWith('reg:') && !localizar(indice, s.dispositivoId).noRecorte).length
 
@@ -44,7 +47,7 @@ fs.mkdirSync(outDir, { recursive: true })
 fs.writeFileSync(path.join(outDir, 'interacoes_consulta.json'), JSON.stringify(interacoes.map(r => ({ ...r, data: r.data?.toISOString() ?? null })), null, 2), 'utf8')
 
 const md = [`# Interações recebidas — consulta da Minuta do Regulamento de Serviço`, ``,
-  `Gerado em ${formatarDataHora(new Date())} a partir da coleção \`suggestions\` do Firestore (${sugestoes.length} sugestões no total; ${interacoes.length} sobre o recorte em consulta${desde ? `, a partir de ${arg('--desde')}` : ''}; ${foraDoRecorte} do Regulamento fora do recorte).`, ``,
+  `Gerado em ${formatarDataHora(new Date())} a partir da coleção \`suggestions\` do Firestore (${sugestoes.length} sugestões no total; ${interacoes.length} ${args.includes('--incluir-equipe') ? 'sobre o recorte em consulta' : 'dos militares consultados sobre o recorte'}${desde ? `, a partir de ${arg('--desde')}` : ''}; ${foraDoRecorte} do Regulamento fora do recorte).`, ``,
   `| # | Data | Autor | Unidade | Alcance | Dispositivo | Endereço | Parecer | Sugestão |`, `|---|---|---|---|---|---|---|---|---|`]
 for (const r of interacoes) {
   md.push(`| ${r.n} | ${formatarDataHora(r.data)} | ${r.autor.nome}${r.autor.nomeGuerra ? ` (${r.autor.nomeGuerra})` : ''} | ${r.autor.unidade} | ${r.autor.alcance} | ${r.dispositivo} | \`${r.dispositivoId}\` | ${r.parecer} | ${r.sugestao.replace(/\|/g, '\\|').replace(/\n/g, ' ')} |`)

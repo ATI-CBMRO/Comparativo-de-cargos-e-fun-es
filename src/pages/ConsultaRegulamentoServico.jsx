@@ -8,13 +8,13 @@ import { Packer } from 'docx'
 import { Download, Users, MessageSquare, CheckSquare, FileText } from 'lucide-react'
 import { useAuth } from '../lib/auth.jsx'
 import { fetchJson } from '../lib/dataCache.js'
-import { scenarioDbUrl } from '../lib/scenario.js'
+import { regulamentoDbUrl } from '../lib/scenario.js'
 import { subscribeSuggestions, subscribeFinalTexts } from '../lib/reviewData.js'
 import { subscribeMembers } from '../lib/membersData.js'
 import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
 import { indexarRecorte, selecionarInteracoes, resumoParticipacao } from '../lib/consultaRelatorios.js'
 import {
-  docxMinutaConsulta, docxRelatorioInteracoes, docxQuadroAnalise, docxMinutaReestruturada,
+  docxMinutaConsulta, docxRelatorioInteracoes, docxQuadroAnalise, docxMinutaReestruturada, docxComparativo,
 } from '../lib/consultaDocx.js'
 import { LoadingState, ErrorState } from '../components/Status.jsx'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
@@ -52,7 +52,10 @@ function Indicador({ icon: Icon, label, value, desc, accent = '' }) {
 
 export default function ConsultaRegulamentoServico() {
   const { user } = useAuth()
+  // `completa` = versão EM CONSULTA (é nela que os comentários estão ancorados e é ela que
+  // o militar leu); `atualCompleta` = versão após as sugestões, só para o comparativo.
   const [completa, setCompleta] = useState(null)
+  const [atualCompleta, setAtualCompleta] = useState(null)
   const [erro, setErro] = useState(null)
   const [sugestoes, setSugestoes] = useState([])
   const [finals, setFinals] = useState(new Map())
@@ -60,12 +63,15 @@ export default function ConsultaRegulamentoServico() {
   const [syncErro, setSyncErro] = useState(false)
   const [gerando, setGerando] = useState(null)
   const [aviso, setAviso] = useState(null)
+  // Padrão (Ten. Tiago, 2026-09-14): relatório e quadro só com as sugestões dos militares
+  // consultados; os registros internos da equipe (Tiago/Wândrio) entram só se marcado.
+  const [incluirEquipe, setIncluirEquipe] = useState(false)
 
   // A consulta é SEMPRE sobre o cenário atual (a rota /regulamento/servico trava nele).
   useEffect(() => {
-    fetchJson(scenarioDbUrl('atual', 'regulamento_structure.json'))
-      .then(setCompleta)
-      .catch(() => setErro('Não foi possível carregar a minuta do Regulamento (cenário atual).'))
+    Promise.all([fetchJson(regulamentoDbUrl('atual', 'consulta')), fetchJson(regulamentoDbUrl('atual', 'atual'))])
+      .then(([c, a]) => { setCompleta(c); setAtualCompleta(a) })
+      .catch(() => setErro('Não foi possível carregar as versões da minuta do Regulamento (cenário atual).'))
   }, [])
   useEffect(() => subscribeSuggestions(
     (v) => { setSugestoes(v); setSyncErro(false) },
@@ -83,8 +89,8 @@ export default function ConsultaRegulamentoServico() {
   const recorte = useMemo(() => (completa ? filtrarEstruturaPorEscopo(completa, 'servico') : null), [completa])
   const indice = useMemo(() => (recorte ? indexarRecorte(recorte) : null), [recorte])
   const interacoes = useMemo(
-    () => (indice ? selecionarInteracoes({ sugestoes, membros, indice, finals }) : []),
-    [indice, sugestoes, membros, finals],
+    () => (indice ? selecionarInteracoes({ sugestoes, membros, indice, finals, somenteConsultados: !incluirEquipe }) : []),
+    [indice, sugestoes, membros, finals, incluirEquipe],
   )
   const resumo = useMemo(() => resumoParticipacao(membros, interacoes), [membros, interacoes])
   const totalArtigos = useMemo(() => (recorte ? recorte.chapters.reduce((n, c) => n + c.articles.length, 0) : 0), [recorte])
@@ -110,11 +116,15 @@ export default function ConsultaRegulamentoServico() {
       } else if (qual === 'quadro') {
         out = docxQuadroAnalise({ interacoes, membros, brasao })
         baixar(await Packer.toBlob(out.doc), `Quadro_Analise_Aplicacao_Regulamento_de_Servico_${data}.docx`)
+      } else if (qual === 'comparativo') {
+        out = docxComparativo({ recorteConsulta: recorte, recorteAtual: filtrarEstruturaPorEscopo(atualCompleta, 'servico'), brasao })
+        baixar(await Packer.toBlob(out.doc), `Comparativo_Consulta_Regulamento_de_Servico_${data}.docx`)
       } else {
         out = docxMinutaReestruturada({ recorte, finals, brasao })
         baixar(await Packer.toBlob(out.doc), `Minuta_Regulamento_de_Servico_reestruturada_${data}.docx`)
       }
       if (out.aplicados != null) setAviso(`Gerado: ${out.artigos} artigos, ${out.aplicados} com texto final aplicado.`)
+      else if (qual === 'comparativo') setAviso(`Gerado: ${out.resumo.reescrito} reescritos, ${out.resumo.incluido} novos, ${out.resumo.suprimido} suprimidos.`)
       else setAviso(`Gerado com ${interacoes.length} interações.`)
     } catch (e) {
       console.error(e)
@@ -125,14 +135,15 @@ export default function ConsultaRegulamentoServico() {
   }
 
   if (erro) return <ErrorState title="Erro ao carregar" hint={erro} />
-  if (!completa) return <LoadingState label="Carregando a minuta em consulta…" />
+  if (!completa || !atualCompleta) return <LoadingState label="Carregando a minuta em consulta…" />
 
   const semParecer = resumo.pareceres.pendente
   const botoes = [
-    { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos exatamente como o participante os vê, com os textos finais fechados aplicados.` },
+    { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos exatamente como o participante os vê (versão em consulta, com as correções ortográficas), com os textos finais fechados aplicados.` },
     { k: 'relatorio', titulo: '2. Relatório das interações (SEI)', desc: 'Quem sugeriu (nome, nome de guerra, unidade), dispositivo, trecho e texto integral de cada sugestão; resumos por participante e por capítulo.' },
     { k: 'quadro', titulo: '3. Quadro de análise e aplicação', desc: `Sugestões por artigo com o parecer registrado no portal (relevante / descartada) e a situação do texto final. ${semParecer ? `${semParecer} sugestão(ões) ainda sem parecer.` : 'Todas as sugestões têm parecer.'}` },
     { k: 'reestruturada', titulo: '4. Minuta reestruturada (Parte Geral e Parte Especial)', desc: 'Os mesmos artigos reordenados na estrutura sugerida pelo Cel. Luiz Eduardo, com a correspondência de numeração e as notas de ajuste a deliberar.' },
+    { k: 'comparativo', titulo: '5. Comparativo: versão em consulta × versão atual', desc: 'Artigo a artigo, lado a lado: corrigidos nas duas versões, reescritos, incluídos e suprimidos após as sugestões, com as propostas pendentes de deliberação marcadas. Também na tela "Comparativo da consulta".' },
   ]
 
   return (
@@ -151,10 +162,14 @@ export default function ConsultaRegulamentoServico() {
         <AvisoSincronizacao visivel={syncErro} />
         <div className="grid-4" style={{ marginBottom: 20 }}>
           <Indicador icon={Users} label="Consultados" value={resumo.cadastradosEscopo} desc={`${resumo.contribuintes} registraram sugestão`} accent="red" />
-          <Indicador icon={MessageSquare} label="Sugestões" value={resumo.total} desc={`${resumo.dosConsultados} dos consultados · ${resumo.daEquipe} da equipe`} accent="gold" />
+          <Indicador icon={MessageSquare} label="Sugestões" value={resumo.total} desc={incluirEquipe ? `${resumo.dosConsultados} dos consultados · ${resumo.daEquipe} da equipe` : 'dos militares consultados'} accent="gold" />
           <Indicador icon={CheckSquare} label="Com parecer" value={resumo.pareceres.relevante + resumo.pareceres.descartada} desc={`${resumo.pareceres.relevante} relevantes · ${resumo.pareceres.descartada} descartadas`} accent="green" />
           <Indicador icon={FileText} label="Textos finais" value={finaisNoRecorte} desc={`dispositivos fechados no recorte de ${totalArtigos} artigos`} />
         </div>
+        <label style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'var(--text-secondary)', marginBottom: 14 }}>
+          <input type="checkbox" checked={incluirEquipe} onChange={e => setIncluirEquipe(e.target.checked)} />
+          Incluir no relatório e no quadro os registros internos da equipe de curadoria (Ten. Tiago e Wândrio). Por padrão, só as sugestões dos militares consultados.
+        </label>
         {aviso && <div className="form-error" style={{ marginBottom: 12, background: 'rgba(22,163,74,0.08)', color: '#15803d', borderColor: 'rgba(22,163,74,0.25)' }}>{aviso}</div>}
         <div className="grid-2">
           {botoes.map(b => (

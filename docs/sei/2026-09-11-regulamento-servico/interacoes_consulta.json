@@ -1,92 +1,5 @@
 [
   {
-    "firestoreId": "eneVoxoe2tgpgt0vOLkF",
-    "data": "2026-08-13T03:04:40.560Z",
-    "autor": {
-      "nome": "Wandrio teste",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "(não cadastrado)",
-      "role": "",
-      "consultado": false
-    },
-    "dispositivo": "Art. 1º, caput",
-    "dispositivoId": "reg:atual:disposicoes-preliminares/mt-art-1#caput",
-    "numeroArtigo": 1,
-    "parte": "caput",
-    "capitulo": "DAS DISPOSIÇÕES PRELIMINARES",
-    "tema": "disposicoes-preliminares",
-    "idFonte": "mt-art-1",
-    "caputArtigo": "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 82 da Constituição Estadual.",
-    "rotuloNaEpoca": "Art. 1º",
-    "trecho": "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 82 da Constituição Estadual.",
-    "sugestao": "TEste de sugestao wandrio",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 148 da Constituição Estadual.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 1
-  },
-  {
-    "firestoreId": "v7To5hY3ISPTcNeVEo3k",
-    "data": "2026-08-17T21:17:15.959Z",
-    "autor": {
-      "nome": "Wândrio",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 1º, caput",
-    "dispositivoId": "reg:atual:disposicoes-preliminares/mt-art-1#caput",
-    "numeroArtigo": 1,
-    "parte": "caput",
-    "capitulo": "DAS DISPOSIÇÕES PRELIMINARES",
-    "tema": "disposicoes-preliminares",
-    "idFonte": "mt-art-1",
-    "caputArtigo": "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 82 da Constituição Estadual.",
-    "rotuloNaEpoca": "Art. 1º",
-    "trecho": "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 82 da Constituição Estadual.",
-    "sugestao": "Corrigir o n° do artigo da Constituição Estadual - Art. 148",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O Corpo de Bombeiros Militar do Estado de Rondônia é força auxiliar e reserva do Exército, organizado com base na hierarquia e na disciplina, em conformidade com as disposições contidas na Constituição Federal, no Decreto-Lei n° 667, de 02 de julho de 1969, e Decreto Federal n° 88.777, de 30 de setembro de 1983, combinados com o Art. 148 da Constituição Estadual.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 2
-  },
-  {
-    "firestoreId": "gbaI1wr0zylpwp8NvBEy",
-    "data": "2026-08-17T21:27:58.405Z",
-    "autor": {
-      "nome": "Wândrio",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 3º, caput",
-    "dispositivoId": "reg:atual:disposicoes-preliminares/mt-art-3#caput",
-    "numeroArtigo": 3,
-    "parte": "caput",
-    "capitulo": "DAS DISPOSIÇÕES PRELIMINARES",
-    "tema": "disposicoes-preliminares",
-    "idFonte": "mt-art-3",
-    "caputArtigo": "Compete ao Corpo de Bombeiros Militar:",
-    "rotuloNaEpoca": "Art. 3º",
-    "trecho": "Compete ao Corpo de Bombeiros Militar:",
-    "sugestao": "O Artigo 2° da LOB trás um rol de 25 competências. Seria o caso de importar todas?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 3
-  },
-  {
     "firestoreId": "66IcsnMdIQWT4RiNEbe6",
     "data": "2026-08-19T16:13:23.538Z",
     "autor": {
@@ -113,7 +26,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 4
+    "n": 1
   },
   {
     "firestoreId": "zoUyQ86WGcsYZvYnxRFb",
@@ -142,7 +55,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 5
+    "n": 2
   },
   {
     "firestoreId": "gRKQ20VMBx9BdTupA5vR",
@@ -171,7 +84,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 6
+    "n": 3
   },
   {
     "firestoreId": "zDfnMmO6ScMFYzU1AhAp",
@@ -200,7 +113,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 7
+    "n": 4
   },
   {
     "firestoreId": "DJY5KMB6QmvH84rQD7YI",
@@ -229,7 +142,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 8
+    "n": 5
   },
   {
     "firestoreId": "DKPuiExBmnLBba4R7CMa",
@@ -258,7 +171,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 9
+    "n": 6
   },
   {
     "firestoreId": "iETiGF5G9wtJ3BnzLZDJ",
@@ -287,7 +200,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 10
+    "n": 7
   },
   {
     "firestoreId": "p6fUNVbZ9Eg8Pjpux8AQ",
@@ -316,7 +229,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 11
+    "n": 8
   },
   {
     "firestoreId": "XtOsBEmluKJGbiUJSX3y",
@@ -345,7 +258,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 12
+    "n": 9
   },
   {
     "firestoreId": "Rfgc6d6Q3CKRRs99u652",
@@ -374,7 +287,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 13
+    "n": 10
   },
   {
     "firestoreId": "3ITNi9wXHq8LUcI8kWXj",
@@ -403,7 +316,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 14
+    "n": 11
   },
   {
     "firestoreId": "cjvsHvb1jE4DP0NRBcny",
@@ -432,7 +345,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 15
+    "n": 12
   },
   {
     "firestoreId": "CJSGgwOCtDj1DgvueXEi",
@@ -461,7 +374,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 16
+    "n": 13
   },
   {
     "firestoreId": "dQHm1Xerr0xW70r7GHqz",
@@ -490,7 +403,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 17
+    "n": 14
   },
   {
     "firestoreId": "KBsQOZcb1u4YtqZ2JaAw",
@@ -519,7 +432,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 18
+    "n": 15
   },
   {
     "firestoreId": "vcZbco1OKPUDGBJp9Zxw",
@@ -548,7 +461,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 19
+    "n": 16
   },
   {
     "firestoreId": "83dUlWMSbpwvct18PIjt",
@@ -577,7 +490,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 20
+    "n": 17
   },
   {
     "firestoreId": "PbdCDqGc6F0rBFyoz7HU",
@@ -606,7 +519,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 21
+    "n": 18
   },
   {
     "firestoreId": "R2Xi0qqQFukQD76WB8Lh",
@@ -635,7 +548,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 22
+    "n": 19
   },
   {
     "firestoreId": "5YywVkKnbS7IAGZMVmup",
@@ -664,7 +577,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 23
+    "n": 20
   },
   {
     "firestoreId": "5IK8YgcV6lQznW7wEpDe",
@@ -693,7 +606,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 24
+    "n": 21
   },
   {
     "firestoreId": "WPtmbmZOU1XZgyaAbU30",
@@ -722,7 +635,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 25
+    "n": 22
   },
   {
     "firestoreId": "NPXl7WAVF6KU9bYK4Us2",
@@ -751,7 +664,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 26
+    "n": 23
   },
   {
     "firestoreId": "pXEeZczLdBJKGO1YCj3b",
@@ -780,7 +693,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 27
+    "n": 24
   },
   {
     "firestoreId": "ZtkWz970rL9315An5YO1",
@@ -809,7 +722,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 28
+    "n": 25
   },
   {
     "firestoreId": "C1S7lbyCofX5CwGR6QHz",
@@ -838,36 +751,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 29
-  },
-  {
-    "firestoreId": "ep7HTP51EHVSgtZuj6Cx",
-    "data": "2026-08-17T21:21:04.437Z",
-    "autor": {
-      "nome": "Wândrio",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 3º, inciso III",
-    "dispositivoId": "reg:atual:disposicoes-preliminares/mt-art-3#2",
-    "numeroArtigo": 3,
-    "parte": 2,
-    "capitulo": "DAS DISPOSIÇÕES PRELIMINARES",
-    "tema": "disposicoes-preliminares",
-    "idFonte": "mt-art-3",
-    "caputArtigo": "Compete ao Corpo de Bombeiros Militar:",
-    "rotuloNaEpoca": "Art. 3º, inciso III",
-    "trecho": "executar as atividades de defesa civil do Estado, dentro de sua área de competência no Sistema Estadual de Defesa Civil;",
-    "sugestao": "incluir \"Proteção\" no título do inciso",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Executar as atividades de defesa civil do Estado, dentro de sua área de competência no Sistema Estadual de Proteção e Defesa Civil",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 30
+    "n": 26
   },
   {
     "firestoreId": "JolPcVdAiu5eJMbNIMN6",
@@ -896,7 +780,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 31
+    "n": 27
   },
   {
     "firestoreId": "ujbppo2or0eGhxSYWxB3",
@@ -925,7 +809,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 32
+    "n": 28
   },
   {
     "firestoreId": "dmGt7uReYdE0qjitqQVE",
@@ -954,7 +838,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 33
+    "n": 29
   },
   {
     "firestoreId": "GYPY2k5ARNroFI8DvZSp",
@@ -983,7 +867,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 34
+    "n": 30
   },
   {
     "firestoreId": "3UVIlaiV2j8296VorM1F",
@@ -1012,7 +896,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 35
+    "n": 31
   },
   {
     "firestoreId": "NI5HvrJtdYuekSASFC3w",
@@ -1041,7 +925,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 36
+    "n": 32
   },
   {
     "firestoreId": "vCvbnGkcJ19jS3fovJxk",
@@ -1070,7 +954,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 37
+    "n": 33
   },
   {
     "firestoreId": "KIdfy0ht2tj5rCodzsci",
@@ -1099,7 +983,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 38
+    "n": 34
   },
   {
     "firestoreId": "rgU6bSUeKjwgLOCEY9o8",
@@ -1128,7 +1012,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 39
+    "n": 35
   },
   {
     "firestoreId": "UagXYtfdeQno1axouTOZ",
@@ -1157,7 +1041,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 40
+    "n": 36
   },
   {
     "firestoreId": "naoLfQzBIdqwORdVN884",
@@ -1186,7 +1070,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 41
+    "n": 37
   },
   {
     "firestoreId": "kI7Yj0W0nKpsUQoGkoQG",
@@ -1215,7 +1099,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 42
+    "n": 38
   },
   {
     "firestoreId": "CgHs7bagjFGvO3geMwE0",
@@ -1244,7 +1128,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 43
+    "n": 39
   },
   {
     "firestoreId": "NTZMMPj9rIXy1uGDUiAj",
@@ -1273,7 +1157,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 44
+    "n": 40
   },
   {
     "firestoreId": "d7vcMm6ZG2c6bAuthfqP",
@@ -1302,7 +1186,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 45
+    "n": 41
   },
   {
     "firestoreId": "G6u33LYvxiQqnyzcPyb8",
@@ -1331,7 +1215,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 46
+    "n": 42
   },
   {
     "firestoreId": "2yYgUXWblkEinciwXyIt",
@@ -1360,7 +1244,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 47
+    "n": 43
   },
   {
     "firestoreId": "Ii6YoZrAcPOdFegi3emD",
@@ -1389,7 +1273,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 48
+    "n": 44
   },
   {
     "firestoreId": "u0CSLiNHaQvHKrvNqMB7",
@@ -1418,7 +1302,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 49
+    "n": 45
   },
   {
     "firestoreId": "YbmhrpsT76qznrJW2MSW",
@@ -1447,7 +1331,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 50
+    "n": 46
   },
   {
     "firestoreId": "4XZJFkY0UL3dMZS3V3hq",
@@ -1476,7 +1360,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 51
+    "n": 47
   },
   {
     "firestoreId": "UvW8Vg24GUgmOUwOQYpR",
@@ -1505,7 +1389,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 52
+    "n": 48
   },
   {
     "firestoreId": "DVgEF6b4Eu3ntC8aIseB",
@@ -1534,7 +1418,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 53
+    "n": 49
   },
   {
     "firestoreId": "Oae2yPFk57PjfgWO4XDB",
@@ -1563,7 +1447,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 54
+    "n": 50
   },
   {
     "firestoreId": "cZRKJD1dWC3Hrhg2QY23",
@@ -1592,7 +1476,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 55
+    "n": 51
   },
   {
     "firestoreId": "sJGQGZNshiWiY6Gh4QmC",
@@ -1621,7 +1505,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 56
+    "n": 52
   },
   {
     "firestoreId": "WmjwpdwVcqPHCsgWFceW",
@@ -1650,7 +1534,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 57
+    "n": 53
   },
   {
     "firestoreId": "yTdK6pTfzUz3pZZMyg5g",
@@ -1679,7 +1563,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 58
+    "n": 54
   },
   {
     "firestoreId": "2ZWEHoe4Pe8cBXKJEMKW",
@@ -1708,7 +1592,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 59
+    "n": 55
   },
   {
     "firestoreId": "oLWVnJfRlj40nBKeEkOp",
@@ -1737,7 +1621,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 60
+    "n": 56
   },
   {
     "firestoreId": "ysLRNFrrrcflCK9HLqk8",
@@ -1766,7 +1650,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 61
+    "n": 57
   },
   {
     "firestoreId": "f0HSUVl7jgVZKi94fHA3",
@@ -1795,7 +1679,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 62
+    "n": 58
   },
   {
     "firestoreId": "J1zOH6lXQHmKfo1uJZH1",
@@ -1824,7 +1708,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 63
+    "n": 59
   },
   {
     "firestoreId": "rOziHJHneGMEy8p4DXDJ",
@@ -1853,7 +1737,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 64
+    "n": 60
   },
   {
     "firestoreId": "n0886YaXwXuz2bojwhm6",
@@ -1882,7 +1766,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 65
+    "n": 61
   },
   {
     "firestoreId": "pztFNhMvCRZqZvfpHr9p",
@@ -1911,7 +1795,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 66
+    "n": 62
   },
   {
     "firestoreId": "YEtmhBhEc9ykFaZVDHVA",
@@ -1940,7 +1824,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 67
+    "n": 63
   },
   {
     "firestoreId": "UyZLL88Er7opbZryZ5lo",
@@ -1969,7 +1853,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 68
+    "n": 64
   },
   {
     "firestoreId": "QMhuR8Ltz9aqMylopI8e",
@@ -1998,7 +1882,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 69
+    "n": 65
   },
   {
     "firestoreId": "LMquRphJvmHp2M0tsI0U",
@@ -2027,7 +1911,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 70
+    "n": 66
   },
   {
     "firestoreId": "TFZBU3VjcEs3RPVtzWKL",
@@ -2056,7 +1940,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 71
+    "n": 67
   },
   {
     "firestoreId": "aIlJu8hOtnFqg2Tg2PkJ",
@@ -2085,7 +1969,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 72
+    "n": 68
   },
   {
     "firestoreId": "F7bpsUEtjOqdzJP8JqTu",
@@ -2114,7 +1998,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 73
+    "n": 69
   },
   {
     "firestoreId": "6CUhW111ohtmhB1oQspW",
@@ -2143,7 +2027,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 74
+    "n": 70
   },
   {
     "firestoreId": "MiKzroUZ7IH3gH4o6gTX",
@@ -2172,7 +2056,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 75
+    "n": 71
   },
   {
     "firestoreId": "5QAsNNWozX2BGUgWlMIk",
@@ -2201,7 +2085,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 76
+    "n": 72
   },
   {
     "firestoreId": "lYFGu8fbw6QrRJ0ZQEZg",
@@ -2230,7 +2114,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 77
+    "n": 73
   },
   {
     "firestoreId": "nEa8zlo432f5o2LlgQgw",
@@ -2259,7 +2143,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 78
+    "n": 74
   },
   {
     "firestoreId": "ude1qgfPq8RO2jg8LnjA",
@@ -2288,7 +2172,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 79
+    "n": 75
   },
   {
     "firestoreId": "38lJPCjlC8CJIj9bl5XN",
@@ -2317,7 +2201,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 80
+    "n": 76
   },
   {
     "firestoreId": "0vmdAX5Ip3AssXZHdZfw",
@@ -2346,7 +2230,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 81
+    "n": 77
   },
   {
     "firestoreId": "34cSZDroXLor6sRuArls",
@@ -2375,7 +2259,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 82
+    "n": 78
   },
   {
     "firestoreId": "fe4hWfHopjwsppT75SNL",
@@ -2404,7 +2288,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 83
+    "n": 79
   },
   {
     "firestoreId": "QIW5AtddWiZoIPlIFvTK",
@@ -2433,7 +2317,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 84
+    "n": 80
   },
   {
     "firestoreId": "tVNERhA7Edxbji1IBc5u",
@@ -2462,7 +2346,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 85
+    "n": 81
   },
   {
     "firestoreId": "Phm7e3fCLbFDflPCy1Cm",
@@ -2491,7 +2375,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 86
+    "n": 82
   },
   {
     "firestoreId": "muDHlPBVcOJudBUpSC7q",
@@ -2520,7 +2404,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 87
+    "n": 83
   },
   {
     "firestoreId": "QWXsyzLLfDPe09vM8LX1",
@@ -2549,7 +2433,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 88
+    "n": 84
   },
   {
     "firestoreId": "DImnmtAOty5FqWUo1ycA",
@@ -2578,7 +2462,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 89
+    "n": 85
   },
   {
     "firestoreId": "U54TSQWRU7FzVBjltRYo",
@@ -2607,7 +2491,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 90
+    "n": 86
   },
   {
     "firestoreId": "d9VniR3Ab5aFeXwxzZbf",
@@ -2636,7 +2520,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 91
+    "n": 87
   },
   {
     "firestoreId": "oDI1kotIoh7l9j5hseCA",
@@ -2665,7 +2549,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 92
+    "n": 88
   },
   {
     "firestoreId": "Rt4jrlCh2SBjmj1KE6yQ",
@@ -2694,7 +2578,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 93
+    "n": 89
   },
   {
     "firestoreId": "i9qHlqYQbZE2hlivZHIr",
@@ -2723,7 +2607,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 94
+    "n": 90
   },
   {
     "firestoreId": "npbX5JpzwpUjt3G2fPPz",
@@ -2752,7 +2636,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 95
+    "n": 91
   },
   {
     "firestoreId": "o4rmiqIlcRVLlPTKTwRK",
@@ -2781,7 +2665,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 96
+    "n": 92
   },
   {
     "firestoreId": "sUDDnD6E2EE3jL9eWurz",
@@ -2810,7 +2694,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 97
+    "n": 93
   },
   {
     "firestoreId": "B2D5JkTBODGR5B6EQRzQ",
@@ -2839,7 +2723,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 98
+    "n": 94
   },
   {
     "firestoreId": "bPtPS0Ar79956ly3ljp7",
@@ -2868,7 +2752,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 99
+    "n": 95
   },
   {
     "firestoreId": "tBI2wcgUO0H4MR9Dl9P2",
@@ -2897,7 +2781,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 100
+    "n": 96
   },
   {
     "firestoreId": "gROuBI2CBkjcRkfnm0tG",
@@ -2926,7 +2810,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 101
+    "n": 97
   },
   {
     "firestoreId": "hlAgqHUAW4Jyo9hmV6zK",
@@ -2955,7 +2839,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 102
+    "n": 98
   },
   {
     "firestoreId": "mj4yQJ1VExatk5OHJHso",
@@ -2984,7 +2868,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 103
+    "n": 99
   },
   {
     "firestoreId": "Lmepjj5LMluu0nqPDNnk",
@@ -3013,7 +2897,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 104
+    "n": 100
   },
   {
     "firestoreId": "rNwJQlC7HXaPAe09549H",
@@ -3042,7 +2926,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 105
+    "n": 101
   },
   {
     "firestoreId": "zEpK6LXSbark30hkMYeI",
@@ -3071,7 +2955,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 106
+    "n": 102
   },
   {
     "firestoreId": "YUPT3bYDfOEm6GaGRRyC",
@@ -3100,7 +2984,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 107
+    "n": 103
   },
   {
     "firestoreId": "a66ZSRoxKVjEP9wBP8kz",
@@ -3129,7 +3013,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 108
+    "n": 104
   },
   {
     "firestoreId": "WAPs6LUycgqoYG3tkDeX",
@@ -3158,7 +3042,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 109
+    "n": 105
   },
   {
     "firestoreId": "zQ7yrEvt6koV4OGY961S",
@@ -3187,7 +3071,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 110
+    "n": 106
   },
   {
     "firestoreId": "5w6XUO1PVL3p7oVHIVqB",
@@ -3216,7 +3100,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 111
+    "n": 107
   },
   {
     "firestoreId": "EgRN3n9znPZGzOzZRdm6",
@@ -3245,7 +3129,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 112
+    "n": 108
   },
   {
     "firestoreId": "stRSZS8B9dxvCNMmo9G6",
@@ -3274,7 +3158,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 113
+    "n": 109
   },
   {
     "firestoreId": "macnzzI5rlkh6JohNHzn",
@@ -3303,7 +3187,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 114
+    "n": 110
   },
   {
     "firestoreId": "rqxWkHXPs3uJoXcjptWO",
@@ -3332,7 +3216,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 115
+    "n": 111
   },
   {
     "firestoreId": "evAZOgw5fY7K4nOsXhLK",
@@ -3361,7 +3245,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 116
+    "n": 112
   },
   {
     "firestoreId": "Usj96JkevApSvg1LiYkc",
@@ -3390,7 +3274,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 117
+    "n": 113
   },
   {
     "firestoreId": "0YlLpEQXNfSQS0H4dTMH",
@@ -3419,7 +3303,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 118
+    "n": 114
   },
   {
     "firestoreId": "Qg4RwiOOa0kuNQYQOZrS",
@@ -3448,7 +3332,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 119
+    "n": 115
   },
   {
     "firestoreId": "wP3U9tup70dKr7VvBMdZ",
@@ -3477,7 +3361,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 120
+    "n": 116
   },
   {
     "firestoreId": "Ln53EDjxpGm3NzlMWhdP",
@@ -3506,7 +3390,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 121
+    "n": 117
   },
   {
     "firestoreId": "hUGcpHsGWmdIUUAYqz3P",
@@ -3535,7 +3419,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 122
+    "n": 118
   },
   {
     "firestoreId": "eYSBkTpN112yW3PBlhzb",
@@ -3564,7 +3448,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 123
+    "n": 119
   },
   {
     "firestoreId": "YlFQG068D45gKuqbIwwh",
@@ -3593,7 +3477,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 124
+    "n": 120
   },
   {
     "firestoreId": "hr5EDXkA2yBlVbztiN7H",
@@ -3622,7 +3506,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 125
+    "n": 121
   },
   {
     "firestoreId": "r1xI7RIxvdJJ1SlkKUn4",
@@ -3651,7 +3535,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 126
+    "n": 122
   },
   {
     "firestoreId": "A5QU3iq8MabSFhmDSpNs",
@@ -3680,7 +3564,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 127
+    "n": 123
   },
   {
     "firestoreId": "bmvkkaCFbtJHTzYzHhun",
@@ -3709,7 +3593,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 128
+    "n": 124
   },
   {
     "firestoreId": "D8qdLlVxqviArXnKCMju",
@@ -3738,7 +3622,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 129
+    "n": 125
   },
   {
     "firestoreId": "WfZ1qxzTox4Cm0aOglpj",
@@ -3767,7 +3651,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 130
+    "n": 126
   },
   {
     "firestoreId": "CQWk8GUdwHAyrt5Hgmkj",
@@ -3796,7 +3680,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 131
+    "n": 127
   },
   {
     "firestoreId": "YJnQL1H0gCmB0spx6PqO",
@@ -3825,7 +3709,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 132
+    "n": 128
   },
   {
     "firestoreId": "0JO1MyVDyrDNedkhnmWf",
@@ -3854,7 +3738,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 133
+    "n": 129
   },
   {
     "firestoreId": "yTmkNG4g6sBtrW7hce0U",
@@ -3883,7 +3767,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 134
+    "n": 130
   },
   {
     "firestoreId": "kdo4xhXhnyq7x2FYMvnM",
@@ -3912,7 +3796,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 135
+    "n": 131
   },
   {
     "firestoreId": "rkjOQjKASg917rwCvJ1t",
@@ -3941,7 +3825,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 136
+    "n": 132
   },
   {
     "firestoreId": "TE87syG43eNHDTd0XcCl",
@@ -3970,7 +3854,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 137
+    "n": 133
   },
   {
     "firestoreId": "hOom6p5l9Ojj1Wbe7Bne",
@@ -3999,7 +3883,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 138
+    "n": 134
   },
   {
     "firestoreId": "fYPMUVtDrtUECLwHxT8Z",
@@ -4028,7 +3912,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 139
+    "n": 135
   },
   {
     "firestoreId": "9WqLYjXEeWNaofWS3kSo",
@@ -4057,7 +3941,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 140
+    "n": 136
   },
   {
     "firestoreId": "SCFyAZ1T5kGr05OdIF6p",
@@ -4086,7 +3970,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 141
+    "n": 137
   },
   {
     "firestoreId": "sUe90RrMybpXsfGKpSI3",
@@ -4115,7 +3999,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 142
+    "n": 138
   },
   {
     "firestoreId": "MbW2Jclot0lLFFbVkIpm",
@@ -4144,7 +4028,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 143
+    "n": 139
   },
   {
     "firestoreId": "7FGKFNNMkz2gt0pf6UWf",
@@ -4173,7 +4057,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 144
+    "n": 140
   },
   {
     "firestoreId": "tt11cMCwwdAcy6zZL9lD",
@@ -4202,7 +4086,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 145
+    "n": 141
   },
   {
     "firestoreId": "6D6Ox1uaHc5JYr3VpHQV",
@@ -4231,7 +4115,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 146
+    "n": 142
   },
   {
     "firestoreId": "DlUmzXWvsjByXvU7GDxP",
@@ -4260,7 +4144,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 147
+    "n": 143
   },
   {
     "firestoreId": "O57cV4yWZnD2K7U1tj0h",
@@ -4289,7 +4173,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 148
+    "n": 144
   },
   {
     "firestoreId": "fdfMdTPz7UvnzVX4BT73",
@@ -4318,7 +4202,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 149
+    "n": 145
   },
   {
     "firestoreId": "Y2XWuMMv1leLfhbLeL4O",
@@ -4347,7 +4231,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 150
+    "n": 146
   },
   {
     "firestoreId": "k6kKejomdcSoobMBOZb2",
@@ -4376,7 +4260,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 151
+    "n": 147
   },
   {
     "firestoreId": "XizoSo0UvJ3fiZruqVJt",
@@ -4405,7 +4289,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 152
+    "n": 148
   },
   {
     "firestoreId": "Ej6yaeQtx6rGBmRbEoIp",
@@ -4434,7 +4318,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 153
+    "n": 149
   },
   {
     "firestoreId": "RIL1J2celBfOcE8zo58S",
@@ -4463,7 +4347,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 154
+    "n": 150
   },
   {
     "firestoreId": "G31VFQcOl5FhJCZhCjyL",
@@ -4492,7 +4376,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 155
+    "n": 151
   },
   {
     "firestoreId": "r2wc4LWEQtJ9ZmCTmmab",
@@ -4521,7 +4405,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 156
+    "n": 152
   },
   {
     "firestoreId": "6H782U6yii6pDxBCWXkq",
@@ -4550,7 +4434,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 157
+    "n": 153
   },
   {
     "firestoreId": "VbKeQ59tSf1qsKC5mA8A",
@@ -4579,7 +4463,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 158
+    "n": 154
   },
   {
     "firestoreId": "TjDVTX7NLPJ4RGGBisXZ",
@@ -4608,7 +4492,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 159
+    "n": 155
   },
   {
     "firestoreId": "HtkVbttR9Dcl8s0OHvoS",
@@ -4637,7 +4521,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 160
+    "n": 156
   },
   {
     "firestoreId": "RKYjILU9DgaxSCKjrsQM",
@@ -4666,7 +4550,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 161
+    "n": 157
   },
   {
     "firestoreId": "cjLqTPptjEOyMJiBSVec",
@@ -4695,7 +4579,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 162
+    "n": 158
   },
   {
     "firestoreId": "Bo9GotcpAIdC9lKb03YZ",
@@ -4724,7 +4608,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 163
+    "n": 159
   },
   {
     "firestoreId": "tA9rp8Bde6TrqWVKPHQk",
@@ -4753,7 +4637,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 164
+    "n": 160
   },
   {
     "firestoreId": "uY07fcHA0i4S8uE2bctC",
@@ -4782,7 +4666,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 165
+    "n": 161
   },
   {
     "firestoreId": "szbHEwSmX0365yOPv5gg",
@@ -4811,7 +4695,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 166
+    "n": 162
   },
   {
     "firestoreId": "e7YmBlBzpXv8kR2lGHMR",
@@ -4840,7 +4724,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 167
+    "n": 163
   },
   {
     "firestoreId": "pIQr96joav46ajjFmjAC",
@@ -4869,7 +4753,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 168
+    "n": 164
   },
   {
     "firestoreId": "WclrpeLdlSViZvxwnH8I",
@@ -4898,7 +4782,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 169
+    "n": 165
   },
   {
     "firestoreId": "bre049uJ0lVVyfWRjQmG",
@@ -4927,7 +4811,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 170
+    "n": 166
   },
   {
     "firestoreId": "llxm4ljPyRQV2sqDfB6d",
@@ -4956,7 +4840,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 171
+    "n": 167
   },
   {
     "firestoreId": "088Baq5ZEadMg4IOpaIA",
@@ -4985,7 +4869,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 172
+    "n": 168
   },
   {
     "firestoreId": "11BYaSsl7F9UNsjtn6KK",
@@ -5014,7 +4898,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 173
+    "n": 169
   },
   {
     "firestoreId": "Ci52cLoWCMoF7a2POBm9",
@@ -5043,7 +4927,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 174
+    "n": 170
   },
   {
     "firestoreId": "lnQDZ41e6yNV9Sdcdo1b",
@@ -5072,7 +4956,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 175
+    "n": 171
   },
   {
     "firestoreId": "QUiFFADkhPipNSb3M6hx",
@@ -5101,7 +4985,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 176
+    "n": 172
   },
   {
     "firestoreId": "LcnN9srT59ECBFi0n2ac",
@@ -5130,7 +5014,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 177
+    "n": 173
   },
   {
     "firestoreId": "9L5geDtaBoy1gyr2Eg2K",
@@ -5150,16 +5034,16 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24",
-    "trecho": "º São objetivos do presente Regulamento:",
+    "trecho": "São objetivos do presente Regulamento:",
     "sugestao": "Art. 24 º São objetivos do presente Regulamento do CBMRO:",
     "curtidas": 0,
     "parecer": "pendente",
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 178
+    "n": 174
   },
   {
     "firestoreId": "9HomP0rKXtgeseuiW77i",
@@ -5179,7 +5063,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "I - estabelecer as competências, atribuições e responsabilidades das funções integrantes do Serviço Operacional do Corpo de Bombeiros Militar, definindo os procedimentos funcionais correspondentes às respectivas esferas de atuação;",
@@ -5188,7 +5072,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 179
+    "n": 175
   },
   {
     "firestoreId": "ktsAQclrXYetRXqQIKnx",
@@ -5208,7 +5092,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "II - delimitar as competências dos diferentes níveis de comando e das funções integrantes da estrutura operacional da Corporação, estabelecendo os respectivos limites de atuação e prevenindo conflitos, sobreposições ou lacunas de atribuições;",
@@ -5217,7 +5101,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 180
+    "n": 176
   },
   {
     "firestoreId": "1gYxkD4OgVDwP3Ywq8ig",
@@ -5237,7 +5121,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "III - estabelecer os níveis de planejamento, coordenação, supervisão, execução e controle das atividades operacionais, observada a estrutura organizacional e a cadeia de comando da Corporação;",
@@ -5246,7 +5130,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 181
+    "n": 177
   },
   {
     "firestoreId": "FJ5K8wIyq6C6N1C3PVn2",
@@ -5266,7 +5150,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "IV - assegurar a integração e a adequada articulação entre os diferentes escalões, Organizações Bombeiro Militar, Subunidades e demais frações operacionais da Corporação;",
@@ -5275,7 +5159,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 182
+    "n": 178
   },
   {
     "firestoreId": "i1ghREg3b3cIPbYrcCRV",
@@ -5295,7 +5179,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "V - adequar a atuação operacional das Organizações Bombeiro Militar às políticas, diretrizes e determinações emanadas do Comando-Geral e dos demais escalões competentes;",
@@ -5304,7 +5188,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 183
+    "n": 179
   },
   {
     "firestoreId": "OtFex8zhUetBwmnpxz8N",
@@ -5324,7 +5208,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "VI - promover a padronização dos procedimentos operacionais e administrativos diretamente relacionados à execução do serviço operacional;",
@@ -5333,7 +5217,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 184
+    "n": 180
   },
   {
     "firestoreId": "F4pwe3iMacNOiOVgtjJU",
@@ -5353,7 +5237,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "VII - promover a eficiência, a eficácia e a efetividade na execução das atividades operacionais, buscando o adequado emprego dos recursos humanos, materiais e operacionais disponíveis;",
@@ -5362,7 +5246,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 185
+    "n": 181
   },
   {
     "firestoreId": "R0N6CEpAKYv53X0JzO1D",
@@ -5382,7 +5266,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "VIII - estabelecer fluxos de comunicação, encaminhamento e decisão entre as Organizações Bombeiro Militar e os diferentes níveis da cadeia de comando, respeitadas as competências legalmente estabelecidas; e",
@@ -5391,7 +5275,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 186
+    "n": 182
   },
   {
     "firestoreId": "fQuOO1VB5yoks3462Ajb",
@@ -5411,7 +5295,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-2",
-    "caputArtigo": "º São objetivos do presente Regulamento:",
+    "caputArtigo": "São objetivos do presente Regulamento:",
     "rotuloNaEpoca": "Art. 24, inciso I",
     "trecho": "fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas;",
     "sugestao": "IX - proporcionar aos oficiais e praças orientações funcionais que subsidiem a tomada de decisão e a solução de situações decorrentes da execução das atividades operacionais, observados os limites de competência de cada função.",
@@ -5420,7 +5304,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 187
+    "n": 183
   },
   {
     "firestoreId": "VLeUUwkRGHVwOtaMAWt5",
@@ -5440,16 +5324,16 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25",
-    "trecho": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "trecho": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "sugestao": "Art. 25. Entende-se por política do serviço operacional o conjunto de princípios, objetivos e diretrizes destinados a orientar o planejamento, a organização, a execução e o aperfeiçoamento das atividades operacionais do Corpo de Bombeiros Militar.",
     "curtidas": 0,
     "parecer": "pendente",
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 188
+    "n": 184
   },
   {
     "firestoreId": "U1yjLSlb0PtEqOEARrQ1",
@@ -5469,16 +5353,16 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25",
-    "trecho": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "trecho": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "sugestao": "Parágrafo único. Constituem objetivos básicos da política do serviço operacional:",
     "curtidas": 0,
     "parecer": "pendente",
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 189
+    "n": 185
   },
   {
     "firestoreId": "7qmjuyeCpgKDzNmiwpFZ",
@@ -5498,7 +5382,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "I - promover a valorização do bombeiro militar como elemento essencial à qualidade, à segurança e à eficiência das atividades operacionais;",
@@ -5507,7 +5391,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 190
+    "n": 186
   },
   {
     "firestoreId": "4hWbhMHhJrujrcX7htjS",
@@ -5527,7 +5411,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "II - incentivar o aperfeiçoamento técnico-profissional e a capacitação continuada do efetivo, visando à manutenção das competências necessárias ao adequado desempenho das missões institucionais;",
@@ -5536,7 +5420,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 191
+    "n": 187
   },
   {
     "firestoreId": "hA44SvW5N9v3EmKXhDWU",
@@ -5556,7 +5440,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "III - fortalecer os valores profissionais, a hierarquia, a disciplina, o espírito de corpo e os princípios institucionais da Corporação;",
@@ -5565,7 +5449,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 192
+    "n": 188
   },
   {
     "firestoreId": "wAyKVNIxfAIbRkdXQaA9",
@@ -5585,7 +5469,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "IV - promover a melhoria contínua da capacidade de resposta operacional, buscando a redução do tempo de resposta e o aumento da eficiência e da segurança nos atendimentos;",
@@ -5594,7 +5478,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 193
+    "n": 189
   },
   {
     "firestoreId": "NigUwwa9SL8vW09oBHEd",
@@ -5614,7 +5498,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "V - aprimorar continuamente a qualidade dos serviços prestados, buscando maior efetividade das ações e satisfação da sociedade;",
@@ -5623,7 +5507,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 194
+    "n": 190
   },
   {
     "firestoreId": "18LYcwAvWwGGnu8V90J0",
@@ -5643,7 +5527,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "VI - promover o adequado emprego e a disponibilidade dos recursos humanos, viaturas, equipamentos e demais meios necessários à execução das atividades operacionais;",
@@ -5652,7 +5536,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 195
+    "n": 191
   },
   {
     "firestoreId": "t9XiVWG9gkUlUoUs4teJ",
@@ -5672,7 +5556,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "VII - manter recursos e meios operacionais em condições de pronto emprego, de acordo com as necessidades e peculiaridades de cada área de atuação;",
@@ -5681,7 +5565,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 196
+    "n": 192
   },
   {
     "firestoreId": "HY49SSeZsKnuh3mp7fC6",
@@ -5701,7 +5585,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "VIII - promover o planejamento e a preparação para ocorrências de maior vulto, desastres, eventos extraordinários e demais situações que demandem emprego ampliado ou integrado dos recursos da Corporação;",
@@ -5710,7 +5594,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 197
+    "n": 193
   },
   {
     "firestoreId": "BTTDRsmuetcREsHlYgGp",
@@ -5730,7 +5614,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "IX - manter atualizadas as informações relativas aos recursos, pontos de apoio, áreas de risco e demais elementos necessários ao planejamento e à execução das operações;",
@@ -5739,7 +5623,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 198
+    "n": 194
   },
   {
     "firestoreId": "0Q7dRJkZVT9xc7LTo3Ui",
@@ -5759,7 +5643,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "X - fomentar a integração operacional entre as Organizações Bombeiro Militar, permitindo o emprego coordenado dos recursos disponíveis quando a situação assim exigir;",
@@ -5768,7 +5652,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 199
+    "n": 195
   },
   {
     "firestoreId": "rl7ybvOSRcxE7Xcfl9Il",
@@ -5788,7 +5672,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "XI - promover a padronização e o aperfeiçoamento contínuo dos procedimentos empregados nas atividades operacionais; e",
@@ -5797,7 +5681,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 200
+    "n": 196
   },
   {
     "firestoreId": "1uuyFBBS7909RlRECq7c",
@@ -5817,7 +5701,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-3",
-    "caputArtigo": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+    "caputArtigo": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
     "rotuloNaEpoca": "Art. 25, inciso I",
     "trecho": "promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar;",
     "sugestao": "XII - orientar o planejamento e o emprego dos recursos operacionais segundo critérios de necessidade, eficiência, segurança e capacidade de resposta.",
@@ -5826,7 +5710,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 201
+    "n": 197
   },
   {
     "firestoreId": "1SwUdoZmUDypxMMsKLV7",
@@ -5846,16 +5730,16 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26",
-    "trecho": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "trecho": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "sugestao": "Em relação ao art. 26, observa-se que o dispositivo estabelece as funções integrantes do serviço operacional diário, dentre elas Superior de Dia, Comandante de Socorro, Oficial de Dia, Comandante de Guarnição e Condutor e Operador de Viaturas. Contudo, embora tais funções sejam expressamente reconhecidas pelo Regulamento, suas atribuições e responsabilidades não se encontram sistematizadas de maneira uniforme, estando, em alguns casos, previstas apenas de forma pontual e dispersa ao longo do texto, como se verifica, por exemplo, em relação ao Superior de Dia.",
     "curtidas": 0,
     "parecer": "pendente",
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 202
+    "n": 198
   },
   {
     "firestoreId": "7g8Bm5mQSGxYVBfNlxCt",
@@ -5875,16 +5759,16 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26",
-    "trecho": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "trecho": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "sugestao": "Considerando a própria sistemática adotada pelo Regulamento até este ponto, em que as funções integrantes da estrutura organizacional vêm sendo tratadas em dispositivos próprios, com a definição de suas respectivas competências, entende-se pertinente que igual metodologia seja empregada para as funções relacionadas no art. 26. Sugere-se, portanto, a criação de seções específicas para cada uma das funções ali elencadas, reunindo e organizando as disposições atualmente dispersas e estabelecendo, de forma objetiva, suas atribuições, responsabilidades, subordinação, área de atuação e limites de competência.",
     "curtidas": 0,
     "parecer": "pendente",
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 203
+    "n": 199
   },
   {
     "firestoreId": "iJN7AbsCEBbJM2HYgNPh",
@@ -5904,16 +5788,16 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26",
-    "trecho": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "trecho": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "sugestao": "A medida mostra-se especialmente relevante para assegurar clareza na cadeia de comando do serviço operacional, permitindo distinguir as responsabilidades próprias do Superior de Dia, do Comandante de Socorro, do Oficial de Dia, do Comandante de Guarnição, do Condutor e Operador de Viaturas e das demais funções que venham a integrar o serviço diário. Além de conferir maior organização e coerência interna ao Regulamento, essa sistematização contribuirá para evitar lacunas, sobreposições e conflitos de atribuições, em consonância, inclusive, com os próprios objetivos estabelecidos no art. 24 da proposta.",
     "curtidas": 0,
     "parecer": "pendente",
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 204
+    "n": 200
   },
   {
     "firestoreId": "KqiQXAs5m71LQTtKLqHE",
@@ -5933,7 +5817,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "DO SUPERIOR DE DIA",
@@ -5942,7 +5826,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 205
+    "n": 201
   },
   {
     "firestoreId": "vyPTbrc72RlNkjkFRZ4C",
@@ -5962,7 +5846,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "Art. __. O serviço de Superior de Dia será estabelecido exclusivamente na Capital do Estado, em regime de sobreaviso de 24 (vinte e quatro) horas, concorrendo à respectiva escala os oficiais dos postos de Major BM e Tenente-Coronel BM.",
@@ -5971,7 +5855,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 206
+    "n": 202
   },
   {
     "firestoreId": "huh17tH13omEfv0AAaSP",
@@ -5991,7 +5875,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "§ 1º Durante o período de serviço, o Superior de Dia deverá permanecer em condições de pronto acionamento, mantendo disponível meio de comunicação que permita seu imediato contato e comparecimento quando necessário.",
@@ -6000,7 +5884,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 207
+    "n": 203
   },
   {
     "firestoreId": "G1MZduYmBioLgCVJUi2Q",
@@ -6020,7 +5904,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "§ 2º A atuação do Superior de Dia ficará circunscrita à Capital do Estado, observadas as competências próprias do Comando Operacional e dos Comandantes das Organizações Bombeiro Militar.",
@@ -6029,7 +5913,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 208
+    "n": 204
   },
   {
     "firestoreId": "n4qJbJxj3x27vvy5ICe8",
@@ -6049,7 +5933,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "Art. __. Compete ao Superior de Dia:",
@@ -6058,7 +5942,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 209
+    "n": 205
   },
   {
     "firestoreId": "0F6ZIotPaGSFND4eNGzq",
@@ -6078,7 +5962,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "I - exercer a supervisão superior do serviço operacional na Capital durante o período para o qual estiver escalado, respeitadas as competências dos comandantes das Organizações Bombeiro Militar;",
@@ -6087,7 +5971,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 210
+    "n": 206
   },
   {
     "firestoreId": "0aIo4KyJOTQxoes7xMzO",
@@ -6107,7 +5991,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "II - manter-se informado acerca das ocorrências de maior vulto, complexidade ou repercussão verificadas na Capital;",
@@ -6116,7 +6000,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 211
+    "n": 207
   },
   {
     "firestoreId": "m3krfQtZvw9srUxFMwX3",
@@ -6136,7 +6020,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "III - comparecer às ocorrências de grande vulto, complexidade ou repercussão quando acionado, quando entender necessário ou por determinação de autoridade superior;",
@@ -6145,7 +6029,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 212
+    "n": 208
   },
   {
     "firestoreId": "CodQqOd83nlJTHIi9k6Q",
@@ -6165,7 +6049,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "IV - acompanhar e supervisionar, quando necessário, o desenvolvimento das operações de maior vulto, respeitada a cadeia de comando operacional estabelecida neste Regulamento;",
@@ -6174,7 +6058,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 213
+    "n": 209
   },
   {
     "firestoreId": "V6XIKhJS4mfnnotqVhYY",
@@ -6194,7 +6078,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "V - comunicar aos escalões superiores as ocorrências relevantes, extraordinárias ou de grande repercussão, mantendo-os informados acerca de sua evolução e das providências adotadas;",
@@ -6203,7 +6087,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 214
+    "n": 210
   },
   {
     "firestoreId": "NoJEqaJYET9C3OwBBdUL",
@@ -6223,7 +6107,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "VI - promover, quando necessário, a articulação entre as Organizações Bombeiro Militar sediadas na Capital para o atendimento de ocorrências que demandem emprego integrado de recursos;",
@@ -6232,7 +6116,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 215
+    "n": 211
   },
   {
     "firestoreId": "XCiQtIdXAAi7yGtgjgdj",
@@ -6252,7 +6136,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "VII - solicitar ou determinar, dentro dos limites de sua competência, o emprego de recursos operacionais adicionais necessários ao atendimento de ocorrências de maior vulto;",
@@ -6261,7 +6145,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 216
+    "n": 212
   },
   {
     "firestoreId": "2JD1Pp43GHUnJcP9nFlp",
@@ -6281,7 +6165,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "VIII - adotar, durante o serviço, as providências urgentes de natureza operacional que não comportem adiamento, submetendo posteriormente a matéria à autoridade competente quando necessário;",
@@ -6290,7 +6174,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 217
+    "n": 213
   },
   {
     "firestoreId": "SLkFp4LpHbWngRlgU7bl",
@@ -6310,7 +6194,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "IX - articular-se com outros órgãos e instituições envolvidos nas operações, quando a natureza ou dimensão da ocorrência assim exigir;",
@@ -6319,7 +6203,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 218
+    "n": 214
   },
   {
     "firestoreId": "Dx04Nmt79HXwzeDvslk8",
@@ -6339,7 +6223,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "X - observar as diretrizes institucionais relativas ao relacionamento com a imprensa nas ocorrências de grande vulto ou repercussão, em articulação com o órgão de comunicação social da Corporação;",
@@ -6348,7 +6232,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 219
+    "n": 215
   },
   {
     "firestoreId": "i3HWMdH7UI99ENrt9HQ6",
@@ -6368,7 +6252,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "XI - tomar conhecimento das alterações relevantes ocorridas durante o serviço e proceder aos registros ou manifestações que lhe forem determinados; e",
@@ -6377,7 +6261,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 220
+    "n": 216
   },
   {
     "firestoreId": "GZZ6VzhhiDme5b3RkmiI",
@@ -6397,7 +6281,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso I",
     "trecho": "superior de Dia;",
     "sugestao": "XII - cumprir fielmente as determinações dos escalões superiores relacionadas ao serviço operacional.",
@@ -6406,7 +6290,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 221
+    "n": 217
   },
   {
     "firestoreId": "WKkZwmUdgjxwrpQMSsKE",
@@ -6426,7 +6310,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "DO COMANDANTE DE SOCORRO",
@@ -6435,7 +6319,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 222
+    "n": 218
   },
   {
     "firestoreId": "XDE3EYkDWcOdKsy9tcZ9",
@@ -6455,7 +6339,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "Art. __. O serviço de Comandante de Socorro será realizado exclusivamente na Capital do Estado, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por Aspirantes a Oficial BM e oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM, regularmente escalados para a função.",
@@ -6464,7 +6348,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 223
+    "n": 219
   },
   {
     "firestoreId": "r7l4MgyeiMVh4JcOX6aZ",
@@ -6484,7 +6368,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "§ 1º O Comandante de Socorro exercerá suas funções no âmbito do 1º Grupamento de Bombeiro Militar, observada a cadeia de comando operacional estabelecida neste Regulamento.",
@@ -6493,7 +6377,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 224
+    "n": 220
   },
   {
     "firestoreId": "M8k9i61I8YrC3pfaMe4S",
@@ -6513,7 +6397,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "§ 2º Durante o período de serviço, o Comandante de Socorro representará a autoridade do Comandante do 1º Grupamento de Bombeiro Militar perante a prontidão operacional, exercendo, nos limites de suas atribuições, as competências necessárias à coordenação e à continuidade do serviço, sem prejuízo das matérias reservadas ao Comandante da Unidade ou aos escalões superiores.",
@@ -6522,7 +6406,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 225
+    "n": 221
   },
   {
     "firestoreId": "UWRTz6TvynJXep09uCJi",
@@ -6542,7 +6426,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "Art. __. Compete ao Comandante de Socorro:",
@@ -6551,7 +6435,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 226
+    "n": 222
   },
   {
     "firestoreId": "Eftg9jl5spjwSi9mdau0",
@@ -6571,7 +6455,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "I - coordenar, supervisionar e fiscalizar as atividades da prontidão operacional durante o período de serviço;",
@@ -6580,7 +6464,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 227
+    "n": 223
   },
   {
     "firestoreId": "ab4q92zKX1wHvIC844lu",
@@ -6600,7 +6484,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "II - realizar a passagem de serviço, tomando conhecimento das alterações existentes e transmitindo ao seu substituto as informações necessárias à continuidade do serviço;",
@@ -6609,7 +6493,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 228
+    "n": 224
   },
   {
     "firestoreId": "MfpJIWVkCWrK9ha5hBQO",
@@ -6629,7 +6513,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "III - supervisionar, juntamente com os Comandantes de Guarnição, a conferência das viaturas, materiais e equipamentos operacionais;",
@@ -6638,7 +6522,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 229
+    "n": 225
   },
   {
     "firestoreId": "vdPhpVoEc0ftRxohT8dO",
@@ -6658,7 +6542,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "IV - verificar as condições de prontidão das guarnições, viaturas, equipamentos e demais recursos operacionais disponíveis;",
@@ -6667,7 +6551,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 230
+    "n": 226
   },
   {
     "firestoreId": "b5SR1NvKDZyWiKKNESil",
@@ -6687,7 +6571,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "V - verificar a disponibilidade e o correto emprego dos equipamentos de proteção individual pelo efetivo de serviço;",
@@ -6696,7 +6580,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 231
+    "n": 227
   },
   {
     "firestoreId": "TUpKDtu7kW0M3DSAos7u",
@@ -6716,7 +6600,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "VI - ministrar ou coordenar as instruções destinadas à prontidão de serviço, observadas as orientações e o planejamento estabelecidos;",
@@ -6725,7 +6609,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 232
+    "n": 228
   },
   {
     "firestoreId": "uDMThCPtHUwcMZeLLRn4",
@@ -6745,7 +6629,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "VII - coordenar o emprego das guarnições e dos recursos operacionais durante o serviço;",
@@ -6754,7 +6638,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 233
+    "n": 229
   },
   {
     "firestoreId": "Y2e1o5t8BS9dTUckQutE",
@@ -6774,7 +6658,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "VIII - acompanhar as ocorrências em andamento e comparecer àquelas cuja natureza, complexidade ou magnitude exija sua presença;",
@@ -6783,7 +6667,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 234
+    "n": 230
   },
   {
     "firestoreId": "iETWT0YONufXYm5tc6EB",
@@ -6803,7 +6687,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "IX - exercer o comando das operações quando lhe couber, observadas a cadeia de comando operacional e a sistemática de comando de incidentes adotada pela Corporação;",
@@ -6812,7 +6696,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 235
+    "n": 231
   },
   {
     "firestoreId": "UngpiKHRtIyFxkdJu2pX",
@@ -6832,7 +6716,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "X - solicitar o emprego de recursos operacionais adicionais quando aqueles disponíveis forem insuficientes para o atendimento da ocorrência;",
@@ -6841,7 +6725,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 236
+    "n": 232
   },
   {
     "firestoreId": "jiNx2VS1hNbCGHD26QLr",
@@ -6861,7 +6745,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XI - manter o Oficial de Dia e os escalões competentes informados acerca das ocorrências relevantes, alterações do serviço e indisponibilidade de recursos;",
@@ -6870,7 +6754,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 237
+    "n": 233
   },
   {
     "firestoreId": "Qb9YBVs4sUMoHB7Hkmyk",
@@ -6890,7 +6774,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XII - receber dos Comandantes de Guarnição as informações relativas às ocorrências atendidas e às alterações verificadas durante o serviço;",
@@ -6899,7 +6783,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 238
+    "n": 234
   },
   {
     "firestoreId": "0ylJSVEx7pZiuy55uONA",
@@ -6919,7 +6803,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XIII - adotar as providências imediatas diante das alterações ocorridas durante o serviço, encaminhando ao escalão competente aquelas que excedam sua competência;",
@@ -6928,7 +6812,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 239
+    "n": 235
   },
   {
     "firestoreId": "Zb6kctLF1CNfir0PoG9y",
@@ -6948,7 +6832,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XIV - zelar pela disciplina, segurança, apresentação e adequada atuação do efetivo integrante da prontidão operacional;",
@@ -6957,7 +6841,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 240
+    "n": 236
   },
   {
     "firestoreId": "jA6NtU503SommxnpNqrN",
@@ -6977,7 +6861,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XV - fiscalizar o cumprimento das normas, protocolos, ordens e procedimentos relativos ao serviço operacional; e",
@@ -6986,7 +6870,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 241
+    "n": 237
   },
   {
     "firestoreId": "cu9FZ67KpbQiNXz6AnII",
@@ -7006,7 +6890,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XVI - visitar, sempre que possível e desde que não haja prejuízo à execução do serviço operacional, os militares pertencentes ao 1º Grupamento de Bombeiro Militar que se encontrem hospitalizados, tomando conhecimento de sua situação e das eventuais necessidades de apoio institucional;",
@@ -7015,7 +6899,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 242
+    "n": 238
   },
   {
     "firestoreId": "KY7yDLXrHxm96lV3yMIw",
@@ -7035,7 +6919,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XVII - acompanhar os militares da ativa e da reserva remunerada que se encontrem detidos ou conduzidos perante autoridade policial, permanecendo no local, quando necessário, até a conclusão do registro da ocorrência e das providências iniciais adotadas pelo respectivo órgão;",
@@ -7044,7 +6928,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 243
+    "n": 239
   },
   {
     "firestoreId": "wR3suCxkla9D0BTMyDSv",
@@ -7064,7 +6948,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XVIII - comunicar imediatamente ao Superior de Dia as situações previstas nos incisos IX e X, bem como quaisquer fatos envolvendo militares que, por sua natureza ou repercussão, demandem conhecimento ou providências dos escalões superiores.",
@@ -7073,7 +6957,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 244
+    "n": 240
   },
   {
     "firestoreId": "mUymO8MwOD8haZttsgHW",
@@ -7093,7 +6977,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XIX - acionar, quando necessário, o Plano de Chamada do 1º Grupamento de Bombeiro Militar, diante de ocorrência ou situação que demande reforço extraordinário de efetivo, comunicando imediatamente o acionamento ao Comandante da Unidade e ao Superior de Dia.",
@@ -7102,7 +6986,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 245
+    "n": 241
   },
   {
     "firestoreId": "ABAX2M7GwyP50pyoR3BM",
@@ -7122,7 +7006,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso III",
     "trecho": "comandante de Socorro;",
     "sugestao": "XX - cumprir as determinações dos escalões superiores relacionadas ao serviço operacional.",
@@ -7131,7 +7015,7 @@
     "textoFinal": null,
     "finalVazio": false,
     "suprimido": false,
-    "n": 246
+    "n": 242
   },
   {
     "firestoreId": "8VdKRYleteVGIgpqMtKK",
@@ -7151,7 +7035,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "Art. __. O serviço de Oficial de Dia será realizado exclusivamente no Quartel do Comando-Geral – QCG, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM.",
@@ -7160,7 +7044,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 247
+    "n": 243
   },
   {
     "firestoreId": "w8Q4vrupcqZVE8qEkVFF",
@@ -7180,7 +7064,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "§ 1º O Oficial de Dia exercerá suas atribuições no âmbito interno do QCG, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.",
@@ -7189,7 +7073,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 248
+    "n": 244
   },
   {
     "firestoreId": "5UA6wZLUSn9d5cm11YYz",
@@ -7209,7 +7093,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade responsável pelo aquartelamento nas questões relacionadas à disciplina e à segurança interna.",
@@ -7218,7 +7102,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 249
+    "n": 245
   },
   {
     "firestoreId": "5IQC5G8OYXVizDGjezOq",
@@ -7238,7 +7122,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "Compete ao Oficial de Dia:",
@@ -7247,7 +7131,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 250
+    "n": 246
   },
   {
     "firestoreId": "JZ0uzRjXsg5VHtFf6RPV",
@@ -7267,7 +7151,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "I - participar das solenidades, formaturas e demais atos regulamentares previstos para o início e término do serviço;",
@@ -7276,7 +7160,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 251
+    "n": 247
   },
   {
     "firestoreId": "kdsNODwRbUupTfPHzOaZ",
@@ -7296,7 +7180,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "II - receber do Oficial de Dia substituído e transmitir ao seu substituto as ordens, determinações, alterações e demais informações necessárias à continuidade do serviço;",
@@ -7305,7 +7189,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 252
+    "n": 248
   },
   {
     "firestoreId": "lq7Uq7quDo8LBDR7fqLZ",
@@ -7325,7 +7209,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "III - orientar os militares empregados nos serviços internos do QCG quanto às suas atribuições e às determinações em vigor;",
@@ -7334,7 +7218,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 253
+    "n": 249
   },
   {
     "firestoreId": "GMIT78kRemJGzaRm7Lfe",
@@ -7354,7 +7238,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "IV - realizar inspeções nas dependências do QCG, adotando ou solicitando as providências necessárias diante das irregularidades constatadas;",
@@ -7363,7 +7247,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 254
+    "n": 250
   },
   {
     "firestoreId": "pDd5UQFqy7HnUcS8i598",
@@ -7383,7 +7267,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "V - fiscalizar os serviços internos, verificando o cumprimento das normas, ordens e determinações em vigor;",
@@ -7392,7 +7276,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 255
+    "n": 251
   },
   {
     "firestoreId": "NW13h5pT5HlbAhOx8VmN",
@@ -7412,7 +7296,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "VI - zelar pela disciplina, segurança e ordem no interior do QCG;",
@@ -7421,7 +7305,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 256
+    "n": 252
   },
   {
     "firestoreId": "acoWODHVqeZCGBzQ3T6j",
@@ -7441,7 +7325,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "VII - fiscalizar os serviços de guarda e segurança do aquartelamento;",
@@ -7450,7 +7334,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 257
+    "n": 253
   },
   {
     "firestoreId": "mXNvokADPN4nt68g7dKP",
@@ -7470,7 +7354,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "VIII - certificar-se de que as dependências que devam permanecer fechadas estejam devidamente resguardadas, mantendo o controle das respectivas chaves nos termos das normas internas;",
@@ -7479,7 +7363,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 258
+    "n": 254
   },
   {
     "firestoreId": "18KieZBnDkpZSOWC9iKk",
@@ -7499,7 +7383,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "IX - providenciar, na forma regulamentar, a substituição dos militares que não comparecerem aos serviços internos para os quais estejam escalados;",
@@ -7508,7 +7392,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 259
+    "n": 255
   },
   {
     "firestoreId": "IqsVhmCI7mZeWHZcQuyt",
@@ -7528,7 +7412,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "X - zelar pelo cumprimento das normas referentes à entrada, saída e permanência de pessoas no QCG;\nrviço;",
@@ -7537,7 +7421,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 260
+    "n": 256
   },
   {
     "firestoreId": "kYQUlDgeaHIYMIJr3rLc",
@@ -7557,7 +7441,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XI - fiscalizar a entrada e saída de viaturas do aquartelamento, observadas as normas estabelecidas;",
@@ -7566,7 +7450,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 261
+    "n": 257
   },
   {
     "firestoreId": "N45CALggt32lVzTZxQ6O",
@@ -7586,7 +7470,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XII - registrar a entrada ou saída de materiais do QCG fora do horário de expediente, não permitindo sua retirada sem a devida autorização;",
@@ -7595,7 +7479,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 262
+    "n": 258
   },
   {
     "firestoreId": "UcFmtORvyUnamvRBjZIc",
@@ -7615,7 +7499,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XIII - zelar pelos materiais, armamentos, instalações e demais bens que estejam sob sua responsabilidade durante o se",
@@ -7624,7 +7508,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 263
+    "n": 259
   },
   {
     "firestoreId": "jZcZgusfNoidcoMiVbYk",
@@ -7644,7 +7528,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XIV - receber autoridades civis e militares que compareçam ao QCG fora do horário de expediente, adotando as providências protocolares cabíveis;",
@@ -7653,7 +7537,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 264
+    "n": 260
   },
   {
     "firestoreId": "psSDlAkb54yKJof3tUwT",
@@ -7673,7 +7557,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XV - comunicar imediatamente à autoridade competente as ocorrências extraordinárias verificadas durante o serviço, especialmente aquelas relacionadas à disciplina, segurança, pessoal ou patrimônio;",
@@ -7682,7 +7566,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 265
+    "n": 261
   },
   {
     "firestoreId": "9CBeBO2STQUx4QPQIHcU",
@@ -7702,7 +7586,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XVI - adotar as providências imediatas destinadas a sanar ou minimizar alterações verificadas no funcionamento interno do QCG, submetendo à autoridade competente aquelas que excedam sua atribuição;",
@@ -7711,7 +7595,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 266
+    "n": 262
   },
   {
     "firestoreId": "xZNiOqBgca4CsuHBSUG5",
@@ -7731,7 +7615,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XVII - receber e encaminhar, fora do horário de expediente, documentos ou comunicações de caráter urgente, adotando as providências necessárias para que cheguem tempestivamente à autoridade competente;",
@@ -7740,7 +7624,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 267
+    "n": 263
   },
   {
     "firestoreId": "vwygYfQkP7a39r62OSd5",
@@ -7760,7 +7644,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XVIII - registrar em livro ou sistema próprio as ocorrências e alterações verificadas durante sua jornada de serviço;",
@@ -7769,7 +7653,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 268
+    "n": 264
   },
   {
     "firestoreId": "h0YllJ2nUqnFMUpnj9zl",
@@ -7789,7 +7673,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XIX - elaborar e encaminhar a parte de serviço à autoridade competente, consignando as ocorrências e alterações relevantes verificadas durante a jornada;",
@@ -7798,7 +7682,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 269
+    "n": 265
   },
   {
     "firestoreId": "tUTwCWv52Q32KqRHmdHB",
@@ -7818,7 +7702,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XX - comunicar imediatamente qualquer acidente envolvendo pessoal, viatura, material ou patrimônio ocorrido no âmbito do QCG;",
@@ -7827,7 +7711,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 270
+    "n": 266
   },
   {
     "firestoreId": "8MBDbsNvr5WkzJFHv4ZD",
@@ -7847,7 +7731,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XXI - fiscalizar as condições de conservação, limpeza e organização das dependências do QCG;",
@@ -7856,7 +7740,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 271
+    "n": 267
   },
   {
     "firestoreId": "IYlc93Q7vN96SWdcjn8T",
@@ -7876,7 +7760,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XXII - fiscalizar o cumprimento das prisões e detenções de natureza disciplinar executadas nas dependências do aquartelamento, zelando pela observância das determinações da autoridade competente, das condições de segurança e das normas aplicáveis.",
@@ -7885,7 +7769,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 272
+    "n": 268
   },
   {
     "firestoreId": "Rvkmm7l6iYeDpEl1QXfA",
@@ -7905,7 +7789,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XXIII - diante da ocorrência de fato que, em tese, constitua crime militar, adotar as providências imediatas destinadas à preservação do local, dos elementos de informação e das provas, quando cabíveis, bem como comunicar imediatamente o fato à autoridade de polícia judiciária militar competente, para adoção das medidas previstas na legislação processual penal militar.",
@@ -7914,7 +7798,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 273
+    "n": 269
   },
   {
     "firestoreId": "eTamXNClTgWHfEvhf82z",
@@ -7934,7 +7818,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XXIV - adotar, nas hipóteses de flagrante de crime militar, as providências que lhe competirem nos termos da legislação processual penal militar, comunicando imediatamente o fato à autoridade de polícia judiciária militar competente.",
@@ -7943,7 +7827,7 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 274
+    "n": 270
   },
   {
     "firestoreId": "KPwBgDCP6UsnyZGh2Ojn",
@@ -7963,7 +7847,7 @@
     "capitulo": "DO SERVIÇO OPERACIONAL",
     "tema": "servico-operacional",
     "idFonte": "se-art-4",
-    "caputArtigo": "º Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
+    "caputArtigo": "Visando a otimização do serviço diário, a distribuição dos militares de serviço se dará de acordo com as seguintes funções:",
     "rotuloNaEpoca": "Art. 26, inciso IV",
     "trecho": "oficial de dia;",
     "sugestao": "XXV - cumprir e fazer cumprir as ordens e determinações dos escalões superiores relacionadas ao serviço interno do aquartelamento.",
@@ -7972,1369 +7856,6 @@
     "textoFinal": null,
     "finalVazio": true,
     "suprimido": false,
-    "n": 275
-  },
-  {
-    "firestoreId": "jKj84uelz9ESl4CT8ZBj",
-    "data": "2026-08-17T22:26:28.175Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso I",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#0",
-    "numeroArtigo": 27,
-    "parte": 0,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso I",
-    "trecho": "as escalas para que concorre exclusivamente ao serviço operacional serão:;",
-    "sugestao": "Corrigir o título do inciso I",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "as escalas para quem concorre exclusivamente ao serviço operacional serão:",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 276
-  },
-  {
-    "firestoreId": "5PpmU3n56HDSIUMiElHY",
-    "data": "2026-08-17T22:28:13.741Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso II",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#1",
-    "numeroArtigo": 27,
-    "parte": 1,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso II",
-    "trecho": "6 horas de trabalho por 18 horas de folga da escala;",
-    "sugestao": "Subitem do inciso I",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "a) 6 horas de trabalho por 18 horas de folga da escala;",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 277
-  },
-  {
-    "firestoreId": "bCs7J0W7326fqpIdxskZ",
-    "data": "2026-08-17T22:29:43.892Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso III",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#2",
-    "numeroArtigo": 27,
-    "parte": 2,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso III",
-    "trecho": "12 horas de trabalho por 36 horas de folga da escala;",
-    "sugestao": "Subitem do inciso I",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "b) 12 horas de trabalho por 36 horas de folga da escala;",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 278
-  },
-  {
-    "firestoreId": "q5DP7OxkdnO2zRY6Bj10",
-    "data": "2026-08-17T22:30:03.308Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso IV",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#3",
-    "numeroArtigo": 27,
-    "parte": 3,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso IV",
-    "trecho": "24 horas de trabalho por 48 horas de folga da escala;",
-    "sugestao": "Subitem do inciso I",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "c) 24 horas de trabalho por 48 horas de folga da escala;",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 279
-  },
-  {
-    "firestoreId": "Oms7cyFFwoYOroK0yd9u",
-    "data": "2026-08-17T22:30:51.202Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso V",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#4",
-    "numeroArtigo": 27,
-    "parte": 4,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso V",
-    "trecho": "24 horas de trabalho por 72 horas de folga da escala;",
-    "sugestao": "Subitem do inciso I",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "d) 24 horas de trabalho por 72 horas de folga da escala;",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 280
-  },
-  {
-    "firestoreId": "HEbY3w3iyTh7BpzvFcsa",
-    "data": "2026-08-17T22:31:25.338Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso VI",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#5",
-    "numeroArtigo": 27,
-    "parte": 5,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso VI",
-    "trecho": "as escalas para quem trabalha no expediente e concorre ao serviço operacional:;",
-    "sugestao": "Inciso II",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 281
-  },
-  {
-    "firestoreId": "up5HGfUtmzyqo7pe5Aiq",
-    "data": "2026-08-17T22:32:45.408Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso VII",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#6",
-    "numeroArtigo": 27,
-    "parte": 6,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso VII",
-    "trecho": "para as praças serão: 24 horas de trabalho por 09 dias, sendo estas terão direito a folga de 24 horas no dia seguinte ao serviço; e",
-    "sugestao": "Subitem do inciso II",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 282
-  },
-  {
-    "firestoreId": "TkMOUZW450Lj75hbxdoY",
-    "data": "2026-08-17T22:32:58.085Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 27, inciso VIII",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-23#7",
-    "numeroArtigo": 27,
-    "parte": 7,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-23",
-    "caputArtigo": "A carga horária para o serviço administrativo e operacional será definida pelo Comando-Geral de acordo com a necessidade e interesse da Instituição, do aprimoramento técnico-profissional e das especificidades de cada setor que compõe a estrutura organizacional da Corporação, podendo ser alterada em determinados períodos ou por deficiência de efetivo, observando, ordinariamente, os seguintes critérios:",
-    "rotuloNaEpoca": "Art. 8º, inciso VIII",
-    "trecho": "para os oficiais serão: 24 horas de trabalho pela quantidade de oficiais disponíveis para compor a escala, sendo estas terão direito a folga de 24 horas no dia seguinte ao serviço.",
-    "sugestao": "Subitem do inciso II",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 283
-  },
-  {
-    "firestoreId": "LHn8D25xThsSD9PQK6vu",
-    "data": "2026-08-17T22:34:39.637Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 28, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-24#caput",
-    "numeroArtigo": 28,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-24",
-    "caputArtigo": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Oficial de Dia.",
-    "rotuloNaEpoca": "Art. 9º",
-    "trecho": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Oficial de Dia.",
-    "sugestao": "Alterar o cargo a quem o Superior de dia deverá de reportar.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Subcomandante-Geral.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 284
-  },
-  {
-    "firestoreId": "lPMhBFmVnxEKiKcZJ1sU",
-    "data": "2026-08-17T22:38:46.627Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 28, parágrafo",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-24#0",
-    "numeroArtigo": 28,
-    "parte": 0,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-24",
-    "caputArtigo": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Oficial de Dia.",
-    "rotuloNaEpoca": "Art. 9º, parágrafo",
-    "trecho": "§1.º Ao final do serviço deverá apor seu visto no livro de registro de ocorrências do Oficial de Dia.",
-    "sugestao": "Chancelar a Parte Diária do Oficial de Dia?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Ao final do serviço deverá assinar, via SEI, juntamente com o Oficial de Dia a Parte Diária.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 285
-  },
-  {
-    "firestoreId": "yiFOnavF1HlPweufDk01",
-    "data": "2026-08-17T22:42:53.260Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 28, parágrafo",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-24#1",
-    "numeroArtigo": 28,
-    "parte": 1,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-24",
-    "caputArtigo": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Oficial de Dia.",
-    "rotuloNaEpoca": "Art. 9º, parágrafo",
-    "trecho": "§2.º O regime do serviço poderá sofrer alterações mediante publicação em BGO por determinação do Comandante Geral e ou pelo Comandante Operacional de Bombeiros em virtude das necessidades do momento.",
-    "sugestao": "Quem tem competência para alterar o regime do serviço?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O regime do serviço poderá sofrer alterações mediante publicação em BG por determinação do Comandante-Geral ou pelo Subcomandante-Geral em virtude das necessidades do momento.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 286
-  },
-  {
-    "firestoreId": "6bBEDkuSuGDvwiXFAHOH",
-    "data": "2026-08-17T23:39:12.298Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 29, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-25#caput",
-    "numeroArtigo": 29,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-25",
-    "caputArtigo": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
-    "rotuloNaEpoca": "Art. 10",
-    "trecho": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
-    "sugestao": "Quem tem competência para autorizar a permuta?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Subcomandante-Geral do CBMRO, após publicação em Boletim Geral.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 287
-  },
-  {
-    "firestoreId": "dfLvB3rNUXn7QZWQAYQn",
-    "data": "2026-08-17T23:43:17.695Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 30, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-26#caput",
-    "numeroArtigo": 30,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-26",
-    "caputArtigo": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Pessoal.",
-    "rotuloNaEpoca": "Art. 11",
-    "trecho": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Pessoal.",
-    "sugestao": "A quem compete a coordenação do serviço diário de Superior de Dia?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Subcomandante-Geral, através do gabinete do Subcomando-Geral.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 288
-  },
-  {
-    "firestoreId": "O95er1osoProVExraN7h",
-    "data": "2026-08-17T23:45:11.879Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 31, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-27#caput",
-    "numeroArtigo": 31,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-27",
-    "caputArtigo": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Comandante Operacional de Bombeiros ser alterado.",
-    "rotuloNaEpoca": "Art. 12",
-    "trecho": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Comandante Operacional de Bombeiros ser alterado.",
-    "sugestao": "A quem compete?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Subcomandante-Geral ser alterado.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 289
-  },
-  {
-    "firestoreId": "71A52TYAaxqWg6XRIXRQ",
-    "data": "2026-08-17T23:46:18.409Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 33, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-29#caput",
-    "numeroArtigo": 33,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-29",
-    "caputArtigo": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Comandante Operacional de Bombeiros a fim de ser reinserido ou inserido na respectiva escala.",
-    "rotuloNaEpoca": "Art. 14",
-    "trecho": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Comandante Operacional de Bombeiros a fim de ser reinserido ou inserido na respectiva escala.",
-    "sugestao": "A quem compete?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Subcomandante-Geral a fim de ser reinserido ou inserido na respectiva escala.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 290
-  },
-  {
-    "firestoreId": "xMcspQbesUVDLIuBEEhr",
-    "data": "2026-08-17T23:51:16.354Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 34, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-30#caput",
-    "numeroArtigo": 34,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-30",
-    "caputArtigo": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
-    "rotuloNaEpoca": "Art. 15",
-    "trecho": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
-    "sugestao": "Artigo em duplicidade com o Art. 10",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Artigo em duplicidade com o Art. 10",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 291
-  },
-  {
-    "firestoreId": "XTvjn7i38qiTnDw1f3FO",
-    "data": "2026-08-18T14:12:15.890Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 41, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-37#caput",
-    "numeroArtigo": 41,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-37",
-    "caputArtigo": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
-    "rotuloNaEpoca": "Art. 271",
-    "trecho": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
-    "sugestao": "Em duplicidade com o Art. 264",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": false,
-    "suprimido": true,
-    "n": 292
-  },
-  {
-    "firestoreId": "hfNIeOtJujiANwkMQLq7",
-    "data": "2026-08-18T00:00:44.667Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 45, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-41#caput",
-    "numeroArtigo": 45,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-41",
-    "caputArtigo": "Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
-    "rotuloNaEpoca": "Art. 26",
-    "trecho": "Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
-    "sugestao": "Utilizar o próprio Regulamento de Serviço como base legal",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas neste Regulamento de Serviço.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 293
-  },
-  {
-    "firestoreId": "Uqav8Tp6DjYOI2UDO3vE",
-    "data": "2026-08-18T00:07:44.682Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 47, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-43#caput",
-    "numeroArtigo": 47,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-43",
-    "caputArtigo": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM. Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio",
-    "rotuloNaEpoca": "Art. 28",
-    "trecho": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM. Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio",
-    "sugestao": "Mover para o último artigo do Capítulo II.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 294
-  },
-  {
-    "firestoreId": "IsTCSnYevKxMpVtnqSPr",
-    "data": "2026-08-18T00:08:39.466Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 48, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-44#caput",
-    "numeroArtigo": 48,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-44",
-    "caputArtigo": "Em todas as Unidades Operacionais, Especializadas e Subunidade Operacionais do CBMRO, o regime das escalas de adjunto do oficial de dia, do comandante de guarnição, do condutor e operador de viaturas, dos auxiliares da guarnição e do operador de rádio obedecerá ao critério de trabalho de 24 horas, salvo em casos excepcion ais adotar-se-á o regime de turno diferenciado.",
-    "rotuloNaEpoca": "Art. 29",
-    "trecho": "Em todas as Unidades Operacionais, Especializadas e Subunidade Operacionais do CBMRO, o regime das escalas de adjunto do oficial de dia, do comandante de guarnição, do condutor e operador de viaturas, dos auxiliares da guarnição e do operador de rádio obedecerá ao critério de trabalho de 24 horas, salvo em casos excepcion ais adotar-se-á o regime de turno diferenciado.",
-    "sugestao": "Correção da palavra \"excepcion ais\"",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Em todas as Unidades Operacionais, Especializadas e Subunidade Operacionais do CBMRO, o regime das escalas de adjunto do oficial de dia, do comandante de guarnição, do condutor e operador de viaturas, dos auxiliares da guarnição e do operador de rádio obedecerá ao critério de trabalho de 24 horas, salvo em casos excepcionais adotar-se-á o regime de turno diferenciado.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 295
-  },
-  {
-    "firestoreId": "kkkSmg3QykCY45p9drZg",
-    "data": "2026-08-18T00:09:29.500Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 49, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-45#caput",
-    "numeroArtigo": 49,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-45",
-    "caputArtigo": "Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
-    "rotuloNaEpoca": "Art. 30",
-    "trecho": "Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
-    "sugestao": "Utilizar o próprio Regulamento de Serviço como base legal",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": "Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas neste Regulamento de Serviço.",
-    "finalVazio": false,
-    "suprimido": false,
-    "n": 296
-  },
-  {
-    "firestoreId": "IfnArq7xjYcJcMSp6iSC",
-    "data": "2026-08-18T00:11:27.039Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 50, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-46#caput",
-    "numeroArtigo": 50,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-46",
-    "caputArtigo": "Esses serviços serão realizados no Quartel de cada OBM com abrangência em toda sua área de jurisdição.",
-    "rotuloNaEpoca": "Art. 31",
-    "trecho": "Esses serviços serão realizados no Quartel de cada OBM com abrangência em toda sua área de jurisdição.",
-    "sugestao": "Em duplicidade com o Art. 27.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": false,
-    "suprimido": true,
-    "n": 297
-  },
-  {
-    "firestoreId": "pvDpGXTX4ToT3XWBGucD",
-    "data": "2026-08-18T00:12:01.878Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 51, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-47#caput",
-    "numeroArtigo": 51,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-47",
-    "caputArtigo": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM. Operações",
-    "rotuloNaEpoca": "Art. 32",
-    "trecho": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM. Operações",
-    "sugestao": "Em duplicidade com o Art. 28",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": false,
-    "suprimido": true,
-    "n": 298
-  },
-  {
-    "firestoreId": "BJG4W9XpEmy0ZPpfV5LL",
-    "data": "2026-08-18T00:15:51.145Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 52, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-50#caput",
-    "numeroArtigo": 52,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-50",
-    "caputArtigo": "Os requerimentos de dispensas natalícias deverão ser encaminhados ao Comandante imediato do interessado, o qual poderá dependendo da disponibilidade de efetivo conceder a dispensa em dias úteis , salvo quando a data do aniversário coincidir com o dia de serviço, porém em ambos os casos o militar dispensado do serviço deverá se apresentar pronto para o serviço no dia subsequente.",
-    "rotuloNaEpoca": "Art. 35",
-    "trecho": "Os requerimentos de dispensas natalícias deverão ser encaminhados ao Comandante imediato do interessado, o qual poderá dependendo da disponibilidade de efetivo conceder a dispensa em dias úteis , salvo quando a data do aniversário coincidir com o dia de serviço, porém em ambos os casos o militar dispensado do serviço deverá se apresentar pronto para o serviço no dia subsequente.",
-    "sugestao": "Sem previsão legal. Manter?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 299
-  },
-  {
-    "firestoreId": "g8SkzT2BNfeejxh92Z1R",
-    "data": "2026-08-18T00:21:10.875Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 54, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-52#caput",
-    "numeroArtigo": 54,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-52",
-    "caputArtigo": "Os atestados médicos que não forem expedidos pelos médicos militares estaduais , deverão seguir os protocolos expedidos pela Corporação ou pela UM de Saúde , tão logo seja possível, inclusive nos dias não úteis. Porém, o militar deverá informar, naquele dia, da sua impossibilidade junto ao Oficial de dia da OBM a que pertence.",
-    "rotuloNaEpoca": "Art. 37",
-    "trecho": "Os atestados médicos que não forem expedidos pelos médicos militares estaduais , deverão seguir os protocolos expedidos pela Corporação ou pela UM de Saúde , tão logo seja possível, inclusive nos dias não úteis. Porém, o militar deverá informar, naquele dia, da sua impossibilidade junto ao Oficial de dia da OBM a que pertence.",
-    "sugestao": "Verificação junto à CP sobre a rotina adotada pela Junta Militar de Saúde.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 300
-  },
-  {
-    "firestoreId": "zy6Se2Ry3VMM0udUeUbn",
-    "data": "2026-08-18T00:24:34.749Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 55, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-112#caput",
-    "numeroArtigo": 55,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-112",
-    "caputArtigo": "As permutas de serviços fora do mês devem ser solicitadas com antecedência e devidamente motivadas para análise do comandante da OBM. durante Ocorrências",
-    "rotuloNaEpoca": "Art. 38",
-    "trecho": "As permutas de serviços fora do mês devem ser solicitadas com antecedência e devidamente motivadas para análise do comandante da OBM. durante Ocorrências",
-    "sugestao": "Artigo pode ser suprimido.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 301
-  },
-  {
-    "firestoreId": "rK1c8Ua1wNn6qr5oTwpG",
-    "data": "2026-08-18T00:33:18.930Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 56, inciso VI",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-114#5",
-    "numeroArtigo": 56,
-    "parte": 5,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-114",
-    "caputArtigo": "A participação de bombeiros militares de folga, que primeiro chegar em ocorrência, deverá obedecer às seguintes orientações:",
-    "rotuloNaEpoca": "Art. 40, inciso VI",
-    "trecho": "a participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS. Parágrafo Único. Os casos omissos deverão ser solucionados pelo Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
-    "sugestao": "Definição adequada da cadeia de comando. Supressão do Superior de Dia",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 302
-  },
-  {
-    "firestoreId": "kFNsaYtcxATgMeCEmyL8",
-    "data": "2026-08-18T00:34:25.781Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 57, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-115#caput",
-    "numeroArtigo": 57,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-115",
-    "caputArtigo": "A participação de bombeiros militares de folga em ocorrência de grande proporção deverá seguir os princípios do Sistema de Comando de Incidente, onde estes devem se apresentar ao Chefe da Operação e/ou Comandante do incidente. com Distúrbios Mentais",
-    "rotuloNaEpoca": "Art. 41",
-    "trecho": "A participação de bombeiros militares de folga em ocorrência de grande proporção deverá seguir os princípios do Sistema de Comando de Incidente, onde estes devem se apresentar ao Chefe da Operação e/ou Comandante do incidente. com Distúrbios Mentais",
-    "sugestao": "Supressão de informação fora do contexto \" com Distúrbios Mentais\".",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 303
-  },
-  {
-    "firestoreId": "widuu4U9DTaa0hfdTeX3",
-    "data": "2026-08-18T00:37:45.953Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#caput",
-    "numeroArtigo": 58,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42",
-    "trecho": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 304
-  },
-  {
-    "firestoreId": "gQm3sysgA0LKfAGuLk0A",
-    "data": "2026-08-18T00:37:58.996Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, inciso I",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#0",
-    "numeroArtigo": 58,
-    "parte": 0,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, inciso I",
-    "trecho": "os atendimentos de ocorrências de natureza psicossociais devem ser atendidos seguindo os protocolos integrado SES/SSP e o do CBMRO;",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 305
-  },
-  {
-    "firestoreId": "pC8I3HuzFaFeu4meTOyz",
-    "data": "2026-08-18T00:38:02.533Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, inciso II",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#1",
-    "numeroArtigo": 58,
-    "parte": 1,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, inciso II",
-    "trecho": "a equipe do SAMU deslocada para o atendimento local, verificando que há a possibilidade iminente de autoagressão pelo paciente em surto, poderá, acionar o Corpo de Bombeiros Militar de Rondônia, através do CIOSP, cabendo ao Oficial de Dia a liberação da equipe para atendimento, após checagem dos dados junto ao SAMU da condição do paciente;",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 306
-  },
-  {
-    "firestoreId": "vpdGKvsGR7NKye7I2GQN",
-    "data": "2026-08-18T00:38:06.126Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, parágrafo",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#2",
-    "numeroArtigo": 58,
-    "parte": 2,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, inciso III",
-    "trecho": "§ 1º Diante do exposto acima, fica estabelecido que o CBMRO somente atuará , de forma integrada com o SAMU, nas ocorrências onde o paciente com transtorno mental estiver proporcionando risco a si mesmo ou ao patrimônio público ou privado sem uso de arma, tais como: tentativa de autolesão, danos ao patrimônio e ou encontrar-se em local de difícil acesso, por exemplo, em bueiros, canais, caixas d’água, valas, torres, em cima de edificações, etc.",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 307
-  },
-  {
-    "firestoreId": "Q4TDKM2cqK1iNbH1eg4m",
-    "data": "2026-08-18T00:38:10.205Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, parágrafo",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#3",
-    "numeroArtigo": 58,
-    "parte": 3,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, parágrafo",
-    "trecho": "§ 2º Caso o CBMRO seja acionado para atender a uma ocorrência de outra natureza e, chegando ao local, verificar que envolve paciente com transtornos mentais, caso o SAMU não esteja presente, deverá de imediato solicitar a presença deste órgão e ou da Polícia Militar do Estado de Rondônia, a depender da situação, aguardando a chegada no local, caso não esteja enquadrado nas condições acima citadas que exijam imediata atuação.",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 308
-  },
-  {
-    "firestoreId": "R74FcRRUWAcCiwHRJQlN",
-    "data": "2026-08-18T00:38:13.592Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, parágrafo",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#4",
-    "numeroArtigo": 58,
-    "parte": 4,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, parágrafo",
-    "trecho": "§ 3º Caso a guarnição ao chegar ao local da ocorrência não identificar a situação do §1º, deste artigo, deve informar ao Oficial de Dia a situação e passar ao SAMU a obrigação de contenção e transporte.",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 309
-  },
-  {
-    "firestoreId": "QXsEVSwf0mnhjyPz0li0",
-    "data": "2026-08-18T00:38:22.885Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, parágrafo",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#5",
-    "numeroArtigo": 58,
-    "parte": 5,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, parágrafo",
-    "trecho": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 310
-  },
-  {
-    "firestoreId": "6K4FqKf2feKJ2XGhVUdS",
-    "data": "2026-08-18T00:38:30.011Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 58, item 6 (não localizado)",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-116#6",
-    "numeroArtigo": 58,
-    "parte": 6,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-116",
-    "caputArtigo": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
-    "rotuloNaEpoca": "Art. 42, parágrafo",
-    "trecho": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Cmt do SOS em conjunto com o Supervisor de Dia, devendo se necessário, acionar o Superior de Dia ou o Comandante da OB M e/ou o Comandante Operacional de Bombeiros.",
-    "sugestao": "Verificação do protocolo adotado para ATTS.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 311
-  },
-  {
-    "firestoreId": "4y3nAOqTDvq2jX9HoVHh",
-    "data": "2026-08-18T00:39:02.486Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 59, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-117#caput",
-    "numeroArtigo": 59,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-117",
-    "caputArtigo": "As viaturas operacionais, de acordo com suas características e peculiaridades, somente poderão ser empregados, em atividades, exclusivas, de prevenção, combate a incêndio, salvamento e atendimento pré-hospitalar, salvo determinação em contrário do Comandante Geral.",
-    "rotuloNaEpoca": "Art. 43",
-    "trecho": "As viaturas operacionais, de acordo com suas características e peculiaridades, somente poderão ser empregados, em atividades, exclusivas, de prevenção, combate a incêndio, salvamento e atendimento pré-hospitalar, salvo determinação em contrário do Comandante Geral.",
-    "sugestao": "Comandante-Geral",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 312
-  },
-  {
-    "firestoreId": "kdqKLlNsWXQC6jAUPs4w",
-    "data": "2026-08-18T00:41:33.609Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 69, inciso IV",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-127#3",
-    "numeroArtigo": 69,
-    "parte": 3,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-127",
-    "caputArtigo": "Em caso de acidente que envolva viatura operacional da Corporação o motorista deverá tomar as seguintes providências:",
-    "rotuloNaEpoca": "Art. 53, inciso IV",
-    "trecho": "solicitar o comparecimento da perícia de trânsito para que seja feito o laudo, salvo se ocorrer acordo formal entre as partes;",
-    "sugestao": "Excluir \"salvo se ocorrer acordo formal entre as partes;\"",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 313
-  },
-  {
-    "firestoreId": "l8JFxcb65cG7LLrotcE0",
-    "data": "2026-08-18T00:45:22.714Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 69, inciso V",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-127#4",
-    "numeroArtigo": 69,
-    "parte": 4,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-127",
-    "caputArtigo": "Em caso de acidente que envolva viatura operacional da Corporação o motorista deverá tomar as seguintes providências:",
-    "rotuloNaEpoca": "Art. 53, inciso V",
-    "trecho": "preencher a ficha de acidentes;",
-    "sugestao": "Inexistência do referido documento.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 314
-  },
-  {
-    "firestoreId": "zqB7k1IAJQDmSTrYcugt",
-    "data": "2026-08-18T00:44:21.717Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 69, inciso VIII",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-127#7",
-    "numeroArtigo": 69,
-    "parte": 7,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-127",
-    "caputArtigo": "Em caso de acidente que envolva viatura operacional da Corporação o motorista deverá tomar as seguintes providências:",
-    "rotuloNaEpoca": "Art. 53, inciso VIII",
-    "trecho": "relatar os fatos, através de um relatório de detalhado; e",
-    "sugestao": "relatar os fatos, através de Parte Especial; e",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 315
-  },
-  {
-    "firestoreId": "JrwABazrwEiaWyRShE2F",
-    "data": "2026-08-18T00:47:32.908Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 74, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-132#caput",
-    "numeroArtigo": 74,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-132",
-    "caputArtigo": "Torna-se obrigatório a presença do Oficial de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
-    "rotuloNaEpoca": "Art. 58",
-    "trecho": "Torna-se obrigatório a presença do Oficial de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
-    "sugestao": "Torna-se obrigatório a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 316
-  },
-  {
-    "firestoreId": "X10s7nYDa3X7qOhRItfI",
-    "data": "2026-08-18T00:52:21.826Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 76, caput",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-134#caput",
-    "numeroArtigo": 76,
-    "parte": "caput",
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-134",
-    "caputArtigo": "Nas ocorrências extraordinárias ou de grande porte em que pela gravidade se faz necessário o emprego de todo poder operacional da Corporação deverá pelo menos por questão de conveniência, existir um socorro de combate a incêndio de reserva para atender quaisquer outras emergências que porventura venham a acontecer.",
-    "rotuloNaEpoca": "Art. 60",
-    "trecho": "Nas ocorrências extraordinárias ou de grande porte em que pela gravidade se faz necessário o emprego de todo poder operacional da Corporação deverá pelo menos por questão de conveniência, existir um socorro de combate a incêndio de reserva para atender quaisquer outras emergências que porventura venham a acontecer.",
-    "sugestao": "Nas ocorrências de grande vulto, deverá, pelo menos por questão de conveniência, existir um socorro de combate a incêndio de reserva para atender quaisquer outras emergências que porventura venham a acontecer.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 317
-  },
-  {
-    "firestoreId": "pys865tIujXTvRM4jMwz",
-    "data": "2026-08-18T00:53:55.792Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 77, inciso IX",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-135#8",
-    "numeroArtigo": 77,
-    "parte": 8,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-135",
-    "caputArtigo": "De acordo com a necessidade e a gravidade da situação poderá as guarnições de socorros empregados numa ocorrência solicitar apoio externo a órgãos públicos e privados ligados direta ou indiretamente à operação, conforme orientações abaixo:",
-    "rotuloNaEpoca": "Art. 61, inciso IX",
-    "trecho": "acionar o SAMU sempre que o acidente, pela sua gravidade, envolva o transporte de vítimas;",
-    "sugestao": "Sugestão de exclusão devido à inexistência do SAMU em todas as localidades de OBMs.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 318
-  },
-  {
-    "firestoreId": "SMkggHK3NamxjbwtKWy6",
-    "data": "2026-08-18T00:54:53.138Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 77, inciso X",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-135#9",
-    "numeroArtigo": 77,
-    "parte": 9,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-135",
-    "caputArtigo": "De acordo com a necessidade e a gravidade da situação poderá as guarnições de socorros empregados numa ocorrência solicitar apoio externo a órgãos públicos e privados ligados direta ou indiretamente à operação, conforme orientações abaixo:",
-    "rotuloNaEpoca": "Art. 61, inciso X",
-    "trecho": "solicitar a presença da companhia responsável pela manutenção de elevadores, sempre que neste ocorrer defeito ou acidentes envolvendo vítimas;",
-    "sugestao": "Sugestão de exclusão devido à inexistência de tal companhia",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 319
-  },
-  {
-    "firestoreId": "k01yUjlxHObwMP9oh6tM",
-    "data": "2026-08-18T00:59:50.575Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 77, inciso XI",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-135#10",
-    "numeroArtigo": 77,
-    "parte": 10,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-135",
-    "caputArtigo": "De acordo com a necessidade e a gravidade da situação poderá as guarnições de socorros empregados numa ocorrência solicitar apoio externo a órgãos públicos e privados ligados direta ou indiretamente à operação, conforme orientações abaixo:",
-    "rotuloNaEpoca": "Art. 61, inciso XI",
-    "trecho": "acionar o helicóptero do GTA nos acidentes cuja gravidade assim o exigir;",
-    "sugestao": "Quem tem atribuição para acionar o helicóptero do GOA? Oficial de Dia? Superior de Dia? Qual o protocolo para ocorrências no interior do estado?",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 320
-  },
-  {
-    "firestoreId": "ccZMQNeWW4y1vIruFBiy",
-    "data": "2026-08-18T01:01:02.562Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 77, inciso XII",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-135#11",
-    "numeroArtigo": 77,
-    "parte": 11,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-135",
-    "caputArtigo": "De acordo com a necessidade e a gravidade da situação poderá as guarnições de socorros empregados numa ocorrência solicitar apoio externo a órgãos públicos e privados ligados direta ou indiretamente à operação, conforme orientações abaixo:",
-    "rotuloNaEpoca": "Art. 61, inciso XII",
-    "trecho": "solicitar o apoio da Capitania dos Portos nos acidentes aquáticos; e",
-    "sugestao": "Nas localidades que possuem o referido órgão.",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 321
-  },
-  {
-    "firestoreId": "2aUSzAvMkdHvqWF1uRb0",
-    "data": "2026-08-18T01:02:19.584Z",
-    "autor": {
-      "nome": "Ten Tiago",
-      "nomeGuerra": "",
-      "unidade": "",
-      "alcance": "Portal completo",
-      "role": "admin",
-      "consultado": false
-    },
-    "dispositivo": "Art. 77, inciso XIII",
-    "dispositivoId": "reg:atual:servico-operacional/se-art-135#12",
-    "numeroArtigo": 77,
-    "parte": 12,
-    "capitulo": "DO SERVIÇO OPERACIONAL",
-    "tema": "servico-operacional",
-    "idFonte": "se-art-135",
-    "caputArtigo": "De acordo com a necessidade e a gravidade da situação poderá as guarnições de socorros empregados numa ocorrência solicitar apoio externo a órgãos públicos e privados ligados direta ou indiretamente à operação, conforme orientações abaixo:",
-    "rotuloNaEpoca": "Art. 61, inciso XIII",
-    "trecho": "solicitar os órgãos ambientais IBAMA e ou SEDAM nos acidentes contra o meio ambiente. Grande Porte.",
-    "sugestao": "Supressão de informação fora do contexto \"Grande Porte\"",
-    "curtidas": 0,
-    "parecer": "pendente",
-    "textoFinal": null,
-    "finalVazio": true,
-    "suprimido": false,
-    "n": 322
+    "n": 271
   }
 ]

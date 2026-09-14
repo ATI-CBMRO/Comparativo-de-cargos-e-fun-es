@@ -21,3 +21,16 @@ export function scenarioDbUrl(cenario, file) {
     ? `/database/atual/${file}`
     : `/database/${file}`
 }
+
+// Duas VERSÕES do Regulamento no cenário atual (curadoria da consulta, 2026-09-14):
+// 'consulta' = a minuta como foi lida pelos militares (+ correções ortográficas), onde os
+// comentários ficam ancorados; 'atual' = a versão produzida após as sugestões. A futura
+// não tem versão em consulta — cai sempre no arquivo único.
+export const VERSOES_REGULAMENTO = Object.freeze(['atual', 'consulta'])
+export function regulamentoFile(versao) {
+  return versao === 'consulta' ? 'regulamento_structure_consulta.json' : 'regulamento_structure.json'
+}
+export function regulamentoDbUrl(cenario, versao) {
+  const c = normalizeScenario(cenario)
+  return scenarioDbUrl(c, c === 'atual' ? regulamentoFile(versao) : 'regulamento_structure.json')
+}

@@ -3,12 +3,12 @@
 import SubsidioTabs from '../components/SubsidioTabs.jsx'
 import RegulamentoComparator from './RegulamentoComparator.jsx'
 
-export default function RegSubsidio({ escopo } = {}) {
+export default function RegSubsidio({ escopo, versao = 'atual' } = {}) {
   return (
     <SubsidioTabs
       trilha={escopo === 'servico' ? 'Regulamento de Serviço' : 'Regulamento Geral'}
       tabs={[
-        { id: 'reg', label: 'Regulamento', render: () => <RegulamentoComparator escopo={escopo} /> },
+        { id: 'reg', label: 'Regulamento', render: () => <RegulamentoComparator escopo={escopo} versao={versao} /> },
         {
           id: 'lob', label: 'LOB', soon: true,
           soonNote: 'O subsídio a partir das Leis de Organização Básica seguirá o mesmo padrão do Regimento Interno.',

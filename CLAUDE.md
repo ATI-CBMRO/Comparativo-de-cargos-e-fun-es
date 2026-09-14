@@ -301,6 +301,30 @@ Specs/planos: `docs/superpowers/specs/2026-07-21-regulamento-geral-2-partes-desi
 `2026-07-21-fase2bcd-reforco-verbatim-design.md` (reforço verbatim), `2026-07-21-fase1-heranca-2partes-telas-design.md`
 (herança nas telas) — e os planos irmãos em `docs/superpowers/plans/`.
 
+## Regulamento do cenário ATUAL em DUAS VERSÕES — consulta × atual (14/09/2026)
+
+`build_regulamento_structure_atual.py` passou a gerar dois arquivos a partir da mesma fonte,
+aplicando `scripts/regulamento_curadoria_consulta.py` (curadoria das sugestões da consulta
+aos militares, ago/2026):
+- `database/atual/regulamento_structure_consulta.json` — **versão em consulta**: a minuta
+  como foi lida pelos militares, MAIS as `CORRECOES` (ortografia, concordância, citação,
+  resíduos de extração). Ids idênticos aos originais — é onde os comentários do Firestore
+  (`editId#index`) ficam ancorados. Lida por `/regulamento/servico` e `/regulamento/servico/subsidio`.
+- `database/atual/regulamento_structure.json` — **versão atual**: mesmas correções + as
+  `ALTERACOES` (só aqui): `TEXTOS_FINAIS_ATUAL` (decisões substantivas do admin, mesmo id,
+  `alterado`), `SUPRIMIR` (artigo sai, registrado em `chapter.suprimidos`), `SUBSTITUIR`
+  (artigo antigo sai, entra `<id>-rN` com `substitui`) e `INCLUIR` (`<ancora>-cN` com
+  `incluido`). Artigos que mudam regra de mérito levam `proposta: True` + `nota`
+  ("PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG"). Lida por `/regulamento`, `/regulamento/revisao`
+  e demais telas (`regulamentoDbUrl(cenario, versao)` em `src/lib/scenario.js`).
+
+**Por que id novo na reescrita:** reescrever no mesmo id re-indexaria os incisos e os
+comentários cairiam no dispositivo errado (AR-03). Com `substitui`, o comparativo
+(`src/lib/comparativoConsulta.js`, tela `/regulamento/servico/comparativo`, .docx no Pacote
+da consulta) casa antigo→novo sem adivinhar. Validação: `scripts/test_regulamento_curadoria_consulta.py`.
+A `ESTRUTURA` da minuta reestruturada (`src/lib/regulamentoReestruturado.js`) mapeia os ids
+da versão EM CONSULTA. A futura não tem versão em consulta (arquivo único).
+
 ## Curadoria — Minuta do Regulamento (em andamento)
 
 Gerar a minuta do Regulamento a partir dos regulamentos de outros estados (MT como

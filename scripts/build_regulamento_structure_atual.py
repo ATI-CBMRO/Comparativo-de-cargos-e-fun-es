@@ -16,14 +16,23 @@ sem tocar em nada da futura.
 
 Pré-requisito: rodar antes `python scripts/build_regulamento_structure.py` (gera a futura).
 
-Saída: database/atual/regulamento_structure.json
+Saída (2026-09-14, curadoria da consulta — ver scripts/regulamento_curadoria_consulta.py):
+  database/atual/regulamento_structure_consulta.json — a minuta como foi lida pelos
+      militares na consulta, MAIS as correções ortográficas/de texto (versão "em consulta");
+  database/atual/regulamento_structure.json — a versão ATUAL: mesmas correções + reescritas,
+      artigos novos e supressões decorrentes das sugestões.
 """
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from regulamento_curadoria_consulta import gerar_versoes  # noqa: E402
 
 BASE_DIR = Path(__file__).parent.parent
 FUTURA_JSON = BASE_DIR / "database" / "regulamento_structure.json"
 OUT_JSON = BASE_DIR / "database" / "atual" / "regulamento_structure.json"
+OUT_CONSULTA_JSON = BASE_DIR / "database" / "atual" / "regulamento_structure_consulta.json"
 
 FUTURA_PREFIX = "reg:"
 ATUAL_PREFIX = "reg:atual:"
@@ -75,12 +84,16 @@ def main():
         "DO REGULAMENTO DO CORPO DE BOMBEIROS MILITAR DO ESTADO DE RONDÔNIA (CBMRO) — LOB ATUAL"
     )
 
-    OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(structure, ensure_ascii=False, indent=2), encoding="utf-8")
+    consulta, atual = gerar_versoes(structure)
 
-    n_art = sum(len(c.get("articles", [])) for c in structure["chapters"])
-    print(f"Gerado: {OUT_JSON}")
-    print(f"  {len(structure['chapters'])} temas · {n_art} artigos (isolados como reg:atual:)")
+    OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
+    OUT_CONSULTA_JSON.write_text(json.dumps(consulta, ensure_ascii=False, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(atual, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    for rotulo, s, p in (("consulta", consulta, OUT_CONSULTA_JSON), ("atual", atual, OUT_JSON)):
+        n_art = sum(len(c.get("articles", [])) for c in s["chapters"])
+        print(f"Gerado ({rotulo}): {p}")
+        print(f"  {len(s['chapters'])} temas · {n_art} artigos (isolados como reg:atual:) · curadoria: {s['curadoria']}")
 
 
 if __name__ == "__main__":

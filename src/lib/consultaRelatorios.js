@@ -121,7 +121,10 @@ const ordemParte = (p) => (p === 'caput' ? -1 : Number(p))
 
 // Sugestões do Regulamento (cenário atual) que caem no recorte, com autor, localização e
 // texto final, ordenadas por artigo → caput → incisos → data. `desde` (Date) é opcional.
-export function selecionarInteracoes({ sugestoes, membros, indice, finals, desde = null }) {
+// `somenteConsultados` (padrão true, determinação do Ten. Tiago em 2026-09-14): o relatório
+// para o SEI traz só as manifestações dos militares consultados (escopo "servico"); os
+// registros internos da equipe de curadoria (Tiago/Wândrio, contas sem escopo) ficam de fora.
+export function selecionarInteracoes({ sugestoes, membros, indice, finals, desde = null, somenteConsultados = true }) {
   const out = []
   for (const s of sugestoes ?? []) {
     if (!String(s.dispositivoId ?? '').startsWith('reg:atual:')) continue
@@ -129,11 +132,13 @@ export function selecionarInteracoes({ sugestoes, membros, indice, finals, desde
     if (!loc.noRecorte) continue
     const data = paraData(s.criadoEm)
     if (desde && (!data || data < desde)) continue
+    const autor = autorDe(s, membros)
+    if (somenteConsultados && !autor.consultado) continue
     const fin = textoFinalDe(finals?.get(s.dispositivoId))
     out.push({
       firestoreId: s.id,
       data,
-      autor: autorDe(s, membros),
+      autor,
       dispositivo: loc.rotulo,
       dispositivoId: s.dispositivoId,
       numeroArtigo: loc.art.numero,

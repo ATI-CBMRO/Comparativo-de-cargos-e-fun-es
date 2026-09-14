@@ -8,7 +8,7 @@ import { chapterIdOf } from '../lib/minutaTargets.js'
 import { PARTE_HEADERS } from '../lib/regulamentoPartes.js'
 import { filtrarEstruturaPorEscopo } from '../lib/escopoServico.js'
 import { useScenario } from '../context/ScenarioContext'
-import { scenarioDbUrl } from '../lib/scenario.js'
+import { regulamentoDbUrl } from '../lib/scenario.js'
 
 function MatchBadge({ match }) {
   const cfg = {
@@ -36,7 +36,7 @@ function groupChapters(chapters) {
   return [...porParte.values()].sort((a, b) => (a.parte === 'geral' ? 0 : 1) - (b.parte === 'geral' ? 0 : 1))
 }
 
-export default function RegulamentoComparator({ escopo } = {}) {
+export default function RegulamentoComparator({ escopo, versao = 'atual' } = {}) {
   const { cenario } = useScenario()
   const [data, setData] = useState(null)
   const [error, setError] = useState(false)
@@ -46,10 +46,10 @@ export default function RegulamentoComparator({ escopo } = {}) {
 
   useEffect(() => {
     setData(null)
-    fetchJson(scenarioDbUrl(cenario, 'regulamento_structure.json'))
+    fetchJson(regulamentoDbUrl(cenario, versao))
       .then(d => setData(d))
       .catch(() => setError(true))
-  }, [cenario])
+  }, [cenario, versao])
 
   // Recorte por escopo (participante restrito ao Regulamento de Serviço) — mesmo filtro
   // usado no documento principal (Revisao.jsx). Sem escopo, é no-op: devolve `data` intacto.

@@ -14,7 +14,7 @@ const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : nu
 const outDir = arg('--out') ?? path.join(ROOT, 'docs', 'sei', '2026-09-11-regulamento-servico')
 const finals = carregarFinais(arg('--finals'))
 
-const completa = lerJson('database/atual/regulamento_structure.json')
+const completa = lerJson('database/atual/regulamento_structure_consulta.json')
 const recorte = filtrarEstruturaPorEscopo(completa, 'servico')
 const { doc, artigos, aplicados } = docxMinutaReestruturada({ recorte, finals, brasao: lerBrasao() })
 const arquivo = await salvarDocumento(doc, path.join(outDir, 'Minuta_Regulamento_de_Servico_CBMRO_reestruturada_parte_geral_e_especial.docx'))

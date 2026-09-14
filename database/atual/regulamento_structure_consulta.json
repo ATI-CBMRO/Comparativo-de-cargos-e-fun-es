@@ -42,171 +42,60 @@
           "original_caput": "O Corpo de Bombeiros Militar do Estado de Mato Grosso subordina-se diretamente ao Governador do Estado, está vinculado operacionalmente à Secretaria de Estado de Segurança Pública e destina-se a realizar serviços específicos de bombeiro militar no Estado."
         },
         {
-          "id": "mt-art-3-r1",
+          "id": "mt-art-3",
           "kind": "incisos",
-          "editId": "reg:atual:disposicoes-preliminares/mt-art-3-r1",
-          "caput": "Compete ao Corpo de Bombeiros Militar, nos termos do art. 2º da Lei nº 2.204/2009, a execução das seguintes atividades:",
+          "editId": "reg:atual:disposicoes-preliminares/mt-art-3",
+          "caput": "Compete ao Corpo de Bombeiros Militar:",
           "items": [
             {
-              "text": "I - realizar serviços de prevenção e extinção de incêndios, especialmente:",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "I - realizar serviços de prevenção e extinção de incêndio;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "a) em aglomerados urbanos;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "II - executar serviços de proteção, busca e salvamento;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "b) em florestas, particularmente em unidades de conservação, proteção e preservação ambiental;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "III - executar as atividades de defesa civil do Estado, dentro de sua área de competência no Sistema Estadual de Proteção e Defesa Civil;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "c) em veículos automotores ou não de qualquer natureza e porte; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "IV - estudar, analisar, exercer e fiscalizar todo o serviço de segurança contra incêndio e pânico no Estado;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "d) em áreas de interesse estratégico e econômico.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "V - realizar socorros de urgência e emergência;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "II - realizar serviços de busca e resgate de pessoas, animais, bens e haveres;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "VI - executar perícias de incêndios, relacionadas com sua competência;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "III - realizar serviços de salvamentos de pessoas e animais;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "VII - realizar pesquisas científicas em seu campo de ação;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "IV - realizar serviços de atendimento pré-hospitalar de pessoas em situação de emergência, oferecendo condições de suporte básico de vida até uma unidade de saúde;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "VIII - desempenhar atividades educativas de prevenção de incêndio, pânico coletivo e de proteção ao meio ambiente;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "V - realizar serviços de proteção por guarda-vidas na orla fluvial e balneários públicos;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "IX - realizar serviços de prevenção e extinção de incêndios florestais visando à proteção do meio ambiente, na esfera de sua competência;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "VI - realizar serviços de socorro e apoio às embarcações;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "X - monitorar, no âmbito de sua competência, e mediante convênio com a autoridade de trânsito com jurisdição sobre a respectiva via, os serviços de transportes de cargas de produtos especiais e perigosos, visando à proteção das pessoas, do meio ambiente e do patrimônio público e privado;",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             },
             {
-              "text": "VII - exercer o poder de polícia na área de sua competência, especialmente:",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "a) nos locais de sinistros ou de risco;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "b) na fiscalização de empresas especializadas na produção e comercialização de produtos destinados à prevenção de desastres e sinistros, à segurança contra incêndio e pânico em edificações, particularmente quanto à recarga de extintores de incêndio;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "c) na fiscalização do armazenamento, estocagem e transporte de cargas e produtos perigosos no território do Estado de Rondônia;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "d) na fiscalização de atividades que representem risco potencial de desastres e sinistros;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "e) na fiscalização das instalações e medidas de segurança contra incêndio e pânico das edificações residenciais multifamiliares, comerciais, industriais e de serviços em geral, inclusive, nos conjuntos residenciais, condomínios fechados e loteamentos urbanizados, quando da construção, reforma, ampliação e mudança de ocupação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "f) na fiscalização das instalações e medidas de segurança contra incêndio dos veículos automotores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "g) na fiscalização das instalações e medidas de segurança contra incêndio e acidentes em estruturas temporárias, tais como, arquibancadas e parques de diversões.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "VIII - realizar Perícia Técnica:",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "a) preventiva, quanto a perigo potencial de incêndios e acidentes em edificações e estruturas temporárias;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "b) nos locais de sinistros e explosão relacionadas com sua competência.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "IX - realizar serviços de vistorias em edificações;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "X - estudar, analisar, planejar, exigir e fiscalizar todo o serviço de segurança contra incêndio e pânico no Estado de Rondônia;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XI - embargar, interditar obras, serviços, habitações e locais de diversões públicas que não ofereçam condições de segurança para funcionamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XII - emitir normas e laudos de exigências e aprovação de medidas contra incêndios;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XIII - agir em cooperação com instituições similares em todo o território nacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XIV - prestar assessoramento técnico, na área de sua competência, aos demais órgãos dos Poderes Executivo, Legislativo e Judiciário do Estado de Rondônia;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XV - atender às demandas policiais ou judiciárias na investigação de responsabilidades por acidentes ou sinistros;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XVI - planejar, coordenar, controlar e executar as atividades de Defesa Civil do Estado de Rondônia dentro de sua área de competência;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XVII - capacitar pessoas para o enfrentamento de desastres, sinistros e acidentes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XVIII - exercer atividades que lhe forem delegadas pelo Governador do Estado;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XIX - exercer a polícia judiciária militar, relativamente aos crimes militares praticados por seus integrantes ou contra a instituição Corpo de Bombeiros Militar ou sob sua administração, nos termos da legislação federal específica;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XX - realizar atividades educativas de prevenção a incêndios, pânico coletivo e proteção ao meio ambiente, bem como ações de proteção e promoção do bem-estar da coletividade e dos direitos, garantias e liberdades do cidadão;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XXI - estimular o respeito à cidadania, através de ações de natureza preventiva e educacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XXII - realizar pesquisas técnico-científicas em seu campo de atuação funcional, com vistas à obtenção de produtos e processos que permitam o desenvolvimento de sistemas de segurança contra incêndio e pânico;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XXIII - realizar atividades de formação e normatização das atividades de bombeiro civil e congêneres, no âmbito do Estado de Rondônia;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XXIV - planejar, elaborar, gerenciar e executar o orçamento; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
-            },
-            {
-              "text": "XXV - exercer outras atividades correlatas.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)"
+              "text": "XI - desempenhar outras atividades previstas em lei.",
+              "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)",
+          "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 3",
           "match": "exata",
           "heading": "TÍT. I — Das Generalidades",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — transcrição do Art. 2º da Lei nº 2.204/2009 (red. Lei nº 3.413/2014)",
-          "origem": "consulta-2026-08",
-          "substitui": "mt-art-3"
+          "corrigido": true
         }
       ],
       "alternatives": {
@@ -16944,122 +16833,82 @@
           "corrigido": true
         },
         {
-          "id": "se-art-2-r1",
+          "id": "se-art-2",
           "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-2-r1",
+          "editId": "reg:atual:servico-operacional/se-art-2",
           "caput": "São objetivos do presente Regulamento:",
           "items": [
             {
-              "text": "I - estabelecer as competências, atribuições e responsabilidades das funções integrantes do Serviço Operacional do Corpo de Bombeiros Militar, definindo os procedimentos funcionais correspondentes às respectivas esferas de atuação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "I. Fixar normas de competência, atribuições e responsabilidades das Funções integrantes do Serviço Operacional do Corpo de Bombeiros, doutrinando-lhes quanto aos procedimentos funcionais contidos na esfera de atuação de cada uma delas.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 2"
             },
             {
-              "text": "II - delimitar as competências dos diferentes níveis de comando e das funções integrantes da estrutura operacional da Corporação, estabelecendo os respectivos limites de atuação e prevenindo conflitos, sobreposições ou lacunas de atribuições;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "II. Estabelecer limites de competência de cada função integrante da estrutura organizacional, evitando quaisquer conflitos de atribuições que prejudiquem os interesses institucionais voltados ao bem-estar coletivo.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 2"
             },
             {
-              "text": "III - estabelecer os níveis de planejamento, coordenação, supervisão, execução e controle das atividades operacionais, observada a estrutura organizacional e a cadeia de comando da Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "III. Adequar a atuação operacional das Unidades à política do Comando-Geral da Corporação.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 2"
             },
             {
-              "text": "IV - assegurar a integração e a adequada articulação entre os diferentes escalões, Organizações Bombeiro Militar, Subunidades e demais frações operacionais da Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "IV. Aumentar qualitativamente e objetivamente o rendimento das OBM dentro da ideia, força da efetividade.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 2"
             },
             {
-              "text": "V - adequar a atuação operacional das Organizações Bombeiro Militar às políticas, diretrizes e determinações emanadas do Comando-Geral e dos demais escalões competentes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VI - promover a padronização dos procedimentos operacionais e administrativos diretamente relacionados à execução do serviço operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VII - promover a eficiência, a eficácia e a efetividade na execução das atividades operacionais, buscando o adequado emprego dos recursos humanos, materiais e operacionais disponíveis;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VIII - estabelecer fluxos de comunicação, encaminhamento e decisão entre as Organizações Bombeiro Militar e os diferentes níveis da cadeia de comando, respeitadas as competências legalmente estabelecidas; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IX - proporcionar aos oficiais e praças orientações funcionais que subsidiem a tomada de decisão e a solução de situações decorrentes da execução das atividades operacionais, observados os limites de competência de cada função.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "V. Garantir aos oficiais e praças de serviço, orientações gerais que lhes permitam resolver problemas de natureza operacional.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 2"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 2",
           "match": "exata",
           "heading": "RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "substitui": "se-art-2"
+          "corrigido": true
         },
         {
-          "id": "se-art-3-r1",
+          "id": "se-art-3",
           "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-3-r1",
-          "caput": "Entende-se por política do serviço operacional o conjunto de princípios, objetivos e diretrizes destinados a orientar o planejamento, a organização, a execução e o aperfeiçoamento das atividades operacionais do Corpo de Bombeiros Militar.",
+          "editId": "reg:atual:servico-operacional/se-art-3",
+          "caput": "Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
           "items": [
             {
-              "text": "Parágrafo único. Constituem objetivos básicos da política do serviço operacional:",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "I. Promover a valorização do profissional como fator indispensável ao sucesso das operações de natureza bombeiro militar",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "I - promover a valorização do bombeiro militar como elemento essencial à qualidade, à segurança e à eficiência das atividades operacionais;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "II. Valorizar o aprimoramento técnico profissional do bombeiro militar, mantendo-lhe completamente apto ao serviço, permitindo-lhes, por sua vez, enfrentar e superar as situações atinentes à missão;",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "II - incentivar o aperfeiçoamento técnico-profissional e a capacitação continuada do efetivo, visando à manutenção das competências necessárias ao adequado desempenho das missões institucionais;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "III. Desenvolver os valores profissionais, fortalecendo os fundamentos da mística e do espírito de corpo;",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "III - fortalecer os valores profissionais, a hierarquia, a disciplina, o espírito de corpo e os princípios institucionais da Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "IV. Reduzir o tempo nos atendimentos e melhorar a eficiência dos socorros;",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "IV - promover a melhoria contínua da capacidade de resposta operacional, buscando a redução do tempo de resposta e o aumento da eficiência e da segurança nos atendimentos;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "V. Melhorar a qualidade de atendimento, proporcionando à sociedade rondoniense um maior grau de satisfação;",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "V - aprimorar continuamente a qualidade dos serviços prestados, buscando maior efetividade das ações e satisfação da sociedade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "VI. Dinamizar o serviço de atendimento ao público, melhorando a capacidade operacional das viaturas e equipamentos através de uma manutenção eficiente;",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "VI - promover o adequado emprego e a disponibilidade dos recursos humanos, viaturas, equipamentos e demais meios necessários à execução das atividades operacionais;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "VII. Manter a reserva operacional em condições de pronto emprego;",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             },
             {
-              "text": "VII - manter recursos e meios operacionais em condições de pronto emprego, de acordo com as necessidades e peculiaridades de cada área de atuação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VIII - promover o planejamento e a preparação para ocorrências de maior vulto, desastres, eventos extraordinários e demais situações que demandem emprego ampliado ou integrado dos recursos da Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IX - manter atualizadas as informações relativas aos recursos, pontos de apoio, áreas de risco e demais elementos necessários ao planejamento e à execução das operações;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "X - fomentar a integração operacional entre as Organizações Bombeiro Militar, permitindo o emprego coordenado dos recursos disponíveis quando a situação assim exigir;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XI - promover a padronização e o aperfeiçoamento contínuo dos procedimentos empregados nas atividades operacionais; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XII - orientar o planejamento e o emprego dos recursos operacionais segundo critérios de necessidade, eficiência, segurança e capacidade de resposta.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "VIII. Manter atualizado o cadastro dos pontos de apoio real e potencial, proporcionando seu emprego por ocasião dos grandes sinistros.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 3"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 3",
           "match": "exata",
           "heading": "RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "substitui": "se-art-3"
+          "adapted": true,
+          "original_caput": "º Chama-se política do serviço operacional o conjunto de objetivos que direcionam as atividades operacionais do Corpo de Bombeiros, condicionando à sua execução. Parágrafo Único – Constituem-se objetivos básicos da política do serviço operacional:",
+          "corrigido": true
         },
         {
           "id": "se-art-4",
@@ -17177,14 +17026,14 @@
           "id": "se-art-24",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-24",
-          "caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Subcomandante-Geral.",
+          "caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Oficial de Dia.",
           "items": [
             {
-              "text": "§ 1º Ao final do serviço deverá assinar, via SEI, juntamente com o Oficial de Dia a Parte Diária.",
+              "text": "§1.º Ao final do serviço deverá apor seu visto no livro de registro de ocorrências do Oficial de Dia.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 24"
             },
             {
-              "text": "§ 2º O regime do serviço poderá sofrer alterações mediante publicação em BG por determinação do Comandante-Geral ou pelo Subcomandante-Geral em virtude das necessidades do momento.",
+              "text": "§2.º O regime do serviço poderá sofrer alterações mediante publicação em BGO por determinação do Comandante Geral e ou pelo Comandante Operacional de Bombeiros em virtude das necessidades do momento.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 24"
             }
           ],
@@ -17192,29 +17041,25 @@
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
-          "original_caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Supervisor de Dia.",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "original_caput": "O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Supervisor de Dia."
         },
         {
           "id": "se-art-25",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-25",
-          "caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Subcomandante-Geral do CBMRO, após publicação em Boletim Geral.",
+          "caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 25",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
-          "original_caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo.",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "original_caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo."
         },
         {
           "id": "se-art-26",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-26",
-          "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Subcomandante-Geral, através do gabinete do Subcomando-Geral.",
+          "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Pessoal.",
           "items": [
             {
               "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
@@ -17225,23 +17070,19 @@
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
-          "original_caput": "O serviço diário de Superior de Dia ao CBMSE será coordenado pela Diretoria Operacional, através da sua Seção de Recursos Humanos.",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "original_caput": "O serviço diário de Superior de Dia ao CBMSE será coordenado pela Diretoria Operacional, através da sua Seção de Recursos Humanos."
         },
         {
           "id": "se-art-27",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-27",
-          "caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Subcomandante-Geral ser alterado.",
+          "caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Comandante Operacional de Bombeiros ser alterado.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 27",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
-          "original_caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Diretor de Operações ser alterado.",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "original_caput": "O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Diretor de Operações ser alterado."
         },
         {
           "id": "se-art-28",
@@ -17262,15 +17103,13 @@
           "id": "se-art-29",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-29",
-          "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Subcomandante-Geral a fim de ser reinserido ou inserido na respectiva escala.",
+          "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Comandante Operacional de Bombeiros a fim de ser reinserido ou inserido na respectiva escala.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 29",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
-          "original_caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala.",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "original_caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala."
         },
         {
           "id": "se-art-30",
@@ -17302,92 +17141,21 @@
           "original_caput": "A área de atuação do Serviço de Superior dia ao CBMSE abrange todo o território estadual."
         },
         {
-          "id": "se-art-31-c1",
+          "id": "se-art-32",
           "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-31-c1",
-          "caput": "O serviço de Superior de Dia será estabelecido exclusivamente na Capital do Estado, em regime de sobreaviso de 24 (vinte e quatro) horas, concorrendo à respectiva escala os oficiais dos postos de Major BM e Tenente-Coronel BM.",
+          "editId": "reg:atual:servico-operacional/se-art-32",
+          "caput": "O serviço de Oficial de Dia será realizado em regime adequado de 24 (vinte e quatro) horas, podendo em casos excepcionais ser de 12 (doze) horas.",
           "items": [
             {
-              "text": "§ 1º Durante o período de serviço, o Superior de Dia deverá permanecer em condições de pronto acionamento, mantendo disponível meio de comunicação que permita seu imediato contato e comparecimento quando necessário.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "§ 2º A atuação do Superior de Dia ficará circunscrita à Capital do Estado, observadas as competências próprias do Comando Operacional e dos Comandantes das Organizações Bombeiro Militar.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "Parágrafo único. Ao final do serviço deverá ser preenchido o livro de registro de ocorrências, o qual deverá constar o visto do Superior de Dia.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 32"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 32",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Superior de Dia",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true,
-          "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: restringe o Superior de Dia à Capital e aos postos de Major/Tenente-Coronel; a versão em consulta prevê alcance em todo o território estadual (se-art-31) e os textos finais do Ten. Tiago põem a coordenação no Subcomandante-Geral."
-        },
-        {
-          "id": "se-art-31-c2",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-31-c2",
-          "caput": "Compete ao Superior de Dia:",
-          "items": [
-            {
-              "text": "I - exercer a supervisão superior do serviço operacional na Capital durante o período para o qual estiver escalado, respeitadas as competências dos comandantes das Organizações Bombeiro Militar;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "II - manter-se informado acerca das ocorrências de maior vulto, complexidade ou repercussão verificadas na Capital;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "III - comparecer às ocorrências de grande vulto, complexidade ou repercussão quando acionado, quando entender necessário ou por determinação de autoridade superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IV - acompanhar e supervisionar, quando necessário, o desenvolvimento das operações de maior vulto, respeitada a cadeia de comando operacional estabelecida neste Regulamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "V - comunicar aos escalões superiores as ocorrências relevantes, extraordinárias ou de grande repercussão, mantendo-os informados acerca de sua evolução e das providências adotadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VI - promover, quando necessário, a articulação entre as Organizações Bombeiro Militar sediadas na Capital para o atendimento de ocorrências que demandem emprego integrado de recursos;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VII - solicitar ou determinar, dentro dos limites de sua competência, o emprego de recursos operacionais adicionais necessários ao atendimento de ocorrências de maior vulto;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VIII - adotar, durante o serviço, as providências urgentes de natureza operacional que não comportem adiamento, submetendo posteriormente a matéria à autoridade competente quando necessário;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IX - articular-se com outros órgãos e instituições envolvidos nas operações, quando a natureza ou dimensão da ocorrência assim exigir;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "X - observar as diretrizes institucionais relativas ao relacionamento com a imprensa nas ocorrências de grande vulto ou repercussão, em articulação com o órgão de comunicação social da Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XI - tomar conhecimento das alterações relevantes ocorridas durante o serviço e proceder aos registros ou manifestações que lhe forem determinados; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XII - cumprir fielmente as determinações dos escalões superiores relacionadas ao serviço operacional.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Superior de Dia",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "O serviço de Supervisor de Dia será realizado em regime adequado de 24 (vinte e quatro) horas, podendo em casos excepcionais ser de 12 (doze) horas."
         },
         {
           "id": "se-art-33",
@@ -17402,145 +17170,79 @@
           "original_caput": "A permuta de escala do Supervisor de Dia, só será permitida mediante autorização por escrito 14/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo."
         },
         {
-          "id": "se-art-38-c1",
+          "id": "se-art-34",
           "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-38-c1",
-          "caput": "O serviço de Oficial de Dia será realizado exclusivamente no Quartel do Comando-Geral – QCG, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM.",
+          "editId": "reg:atual:servico-operacional/se-art-34",
+          "caput": "O serviço diário de Oficial de Dia ao CBMRO será coordenado pelo Comando Operacional de Bombeiros, através da sua Seção de Pessoal.",
           "items": [
             {
-              "text": "§ 1º O Oficial de Dia exercerá suas atribuições no âmbito interno do QCG, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade responsável pelo aquartelamento nas questões relacionadas à disciplina e à segurança interna.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 34"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 34",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Oficial de Dia",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true,
-          "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, marcados \"Excluir\" pelo Ten. Tiago). Avaliar extensão aos quartéis das OBMs."
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "O serviço diário de Supervisor de Dia ao CBMSE será coordenado pela Diretoria de Operações, através da sua Seção de Recursos Humanos."
         },
         {
-          "id": "se-art-38-c2",
+          "id": "se-art-35",
           "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-38-c2",
-          "caput": "Compete ao Oficial de Dia:",
+          "editId": "reg:atual:servico-operacional/se-art-35",
+          "caput": "Na publicação das escalas de Oficial de Dia constarão o nome do oficial escalado e do seu eventual substituto (Reserva).",
           "items": [
             {
-              "text": "I - participar das solenidades, formaturas e demais atos regulamentares previstos para o início e término do serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "II - receber do Oficial de Dia substituído e transmitir ao seu substituto as ordens, determinações, alterações e demais informações necessárias à continuidade do serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "III - orientar os militares empregados nos serviços internos do QCG quanto às suas atribuições e às determinações em vigor;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IV - realizar inspeções nas dependências do QCG, adotando ou solicitando as providências necessárias diante das irregularidades constatadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "V - fiscalizar os serviços internos, verificando o cumprimento das normas, ordens e determinações em vigor;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VI - zelar pela disciplina, segurança e ordem no interior do QCG;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VII - fiscalizar os serviços de guarda e segurança do aquartelamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VIII - certificar-se de que as dependências que devam permanecer fechadas estejam devidamente resguardadas, mantendo o controle das respectivas chaves nos termos das normas internas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IX - providenciar, na forma regulamentar, a substituição dos militares que não comparecerem aos serviços internos para os quais estejam escalados;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "X - zelar pelo cumprimento das normas referentes à entrada, saída e permanência de pessoas no QCG;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XI - fiscalizar a entrada e saída de viaturas do aquartelamento, observadas as normas estabelecidas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XII - registrar a entrada ou saída de materiais do QCG fora do horário de expediente, não permitindo sua retirada sem a devida autorização;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XIII - zelar pelos materiais, armamentos, instalações e demais bens que estejam sob sua responsabilidade durante o serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XIV - receber autoridades civis e militares que compareçam ao QCG fora do horário de expediente, adotando as providências protocolares cabíveis;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XV - comunicar imediatamente à autoridade competente as ocorrências extraordinárias verificadas durante o serviço, especialmente aquelas relacionadas à disciplina, segurança, pessoal ou patrimônio;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XVI - adotar as providências imediatas destinadas a sanar ou minimizar alterações verificadas no funcionamento interno do QCG, submetendo à autoridade competente aquelas que excedam sua atribuição;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XVII - receber e encaminhar, fora do horário de expediente, documentos ou comunicações de caráter urgente, adotando as providências necessárias para que cheguem tempestivamente à autoridade competente;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XVIII - registrar em livro ou sistema próprio as ocorrências e alterações verificadas durante sua jornada de serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XIX - elaborar e encaminhar a parte de serviço à autoridade competente, consignando as ocorrências e alterações relevantes verificadas durante a jornada;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XX - comunicar imediatamente qualquer acidente envolvendo pessoal, viatura, material ou patrimônio ocorrido no âmbito do QCG;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XXI - fiscalizar as condições de conservação, limpeza e organização das dependências do QCG;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XXII - fiscalizar o cumprimento das prisões e detenções de natureza disciplinar executadas nas dependências do aquartelamento, zelando pela observância das determinações da autoridade competente, das condições de segurança e das normas aplicáveis;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XXIII - diante da ocorrência de fato que, em tese, constitua crime militar, adotar as providências imediatas destinadas à preservação do local, dos elementos de informação e das provas, quando cabíveis, bem como comunicar imediatamente o fato à autoridade de polícia judiciária militar competente, para adoção das medidas previstas na legislação processual penal militar;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XXIV - adotar, nas hipóteses de flagrante de crime militar, as providências que lhe competirem nos termos da legislação processual penal militar, comunicando imediatamente o fato à autoridade de polícia judiciária militar competente; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XXV - cumprir e fazer cumprir as ordens e determinações dos escalões superiores relacionadas ao serviço interno do aquartelamento.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
+              "text": "Parágrafo único. A escalação do oficial substituto (Reserva) obedecerá ao mesmo regime da respectiva escala.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 35"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 35",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Oficial de Dia",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true,
-          "nota": "Incisos X e XIII chegaram truncados na sugestão original (\"rviço;\" e \"durante o se\"); completados por dedução — confirmar com o autor. Incisos XXII a XXIV: conferir com a Corregedoria quanto ao CPPM."
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "Na publicação das escalas de Supervisor de Dia constarão o nome do oficial escalado e do seu eventual substituto (Reserva)."
+        },
+        {
+          "id": "se-art-36",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/se-art-36",
+          "caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Comandante Operacional de Bombeiros a fim de ser reinserido ou inserido na respectiva escala.",
+          "items": [],
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 36",
+          "match": "exata",
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Diretor Operacional a fim de ser reinserido ou inserido na respectiva escala."
+        },
+        {
+          "id": "se-art-37",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/se-art-37",
+          "caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros com antecedência mínima de 48 (quarenta e oito) horas.",
+          "items": [
+            {
+              "text": "Parágrafo único. Os interessados (substituto e substituído) em permutar o serviço deverão preencher o formulário padrão para esse tipo de solicitação existente na Seção de Pessoal do Comando Operacional de Bombeiros.",
+              "source": "cf. CBMSE, RISD (atual. 2022), Art. 37"
+            }
+          ],
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 37",
+          "match": "exata",
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "As permutas de serviços deverão ser solicitadas por escrito e encaminhadas ao Chefe da Seção de Recursos Humanos da Diretoria de Operações com antecedência mínima de 48 (quarenta e oito) horas."
+        },
+        {
+          "id": "se-art-38",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/se-art-38",
+          "caput": "A área de atuação do Serviço de Superior de Dia ao CBMRO abrange todo o território estadual.",
+          "items": [],
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 38",
+          "match": "exata",
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "adapted": true,
+          "original_caput": "A área de atuação do Serviço de Supervisor de Dia ao CBMSE abrange todo o território estadual. Oficial de Dia"
         },
         {
           "id": "se-art-39",
@@ -17571,13 +17273,11 @@
           "id": "se-art-41",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-41",
-          "caput": "Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas neste Regulamento de Serviço.",
+          "caput": "Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 41",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
         },
         {
           "id": "se-art-42",
@@ -17603,127 +17303,6 @@
           "corrigido": true
         },
         {
-          "id": "se-art-43-c1",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-43-c1",
-          "caput": "O serviço de Comandante de Socorro será realizado exclusivamente na Capital do Estado, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por Aspirantes a Oficial BM e oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM, regularmente escalados para a função.",
-          "items": [
-            {
-              "text": "§ 1º O Comandante de Socorro exercerá suas funções no âmbito do 1º Grupamento de Bombeiro Militar, observada a cadeia de comando operacional estabelecida neste Regulamento.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "§ 2º Durante o período de serviço, o Comandante de Socorro representará a autoridade do Comandante do 1º Grupamento de Bombeiro Militar perante a prontidão operacional, exercendo, nos limites de suas atribuições, as competências necessárias à coordenação e à continuidade do serviço, sem prejuízo das matérias reservadas ao Comandante da Unidade ou aos escalões superiores.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Comandante de Socorro",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true,
-          "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: restringe o Comandante de Socorro à Capital/1º GBM e inclui Capitães; a versão em consulta prevê o serviço no quartel de cada OBM (se-art-40/42) e só subalternos e Aspirantes (se-art-39)."
-        },
-        {
-          "id": "se-art-43-c2",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-43-c2",
-          "caput": "Compete ao Comandante de Socorro:",
-          "items": [
-            {
-              "text": "I - coordenar, supervisionar e fiscalizar as atividades da prontidão operacional durante o período de serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "II - realizar a passagem de serviço, tomando conhecimento das alterações existentes e transmitindo ao seu substituto as informações necessárias à continuidade do serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "III - supervisionar, juntamente com os Comandantes de Guarnição, a conferência das viaturas, materiais e equipamentos operacionais;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IV - verificar as condições de prontidão das guarnições, viaturas, equipamentos e demais recursos operacionais disponíveis;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "V - verificar a disponibilidade e o correto emprego dos equipamentos de proteção individual pelo efetivo de serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VI - ministrar ou coordenar as instruções destinadas à prontidão de serviço, observadas as orientações e o planejamento estabelecidos;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VII - coordenar o emprego das guarnições e dos recursos operacionais durante o serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "VIII - acompanhar as ocorrências em andamento e comparecer àquelas cuja natureza, complexidade ou magnitude exija sua presença;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "IX - exercer o comando das operações quando lhe couber, observadas a cadeia de comando operacional e a sistemática de comando de incidentes adotada pela Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "X - solicitar o emprego de recursos operacionais adicionais quando aqueles disponíveis forem insuficientes para o atendimento da ocorrência;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XI - manter o Oficial de Dia e os escalões competentes informados acerca das ocorrências relevantes, alterações do serviço e indisponibilidade de recursos;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XII - receber dos Comandantes de Guarnição as informações relativas às ocorrências atendidas e às alterações verificadas durante o serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XIII - adotar as providências imediatas diante das alterações ocorridas durante o serviço, encaminhando ao escalão competente aquelas que excedam sua competência;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XIV - zelar pela disciplina, segurança, apresentação e adequada atuação do efetivo integrante da prontidão operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XV - fiscalizar o cumprimento das normas, protocolos, ordens e procedimentos relativos ao serviço operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XVI - visitar, sempre que possível e desde que não haja prejuízo à execução do serviço operacional, os militares pertencentes ao 1º Grupamento de Bombeiro Militar que se encontrem hospitalizados, tomando conhecimento de sua situação e das eventuais necessidades de apoio institucional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XVII - acompanhar os militares da ativa e da reserva remunerada que se encontrem detidos ou conduzidos perante autoridade policial, permanecendo no local, quando necessário, até a conclusão do registro da ocorrência e das providências iniciais adotadas pelo respectivo órgão;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XVIII - comunicar imediatamente ao Superior de Dia as situações previstas nos incisos IX e X, bem como quaisquer fatos envolvendo militares que, por sua natureza ou repercussão, demandem conhecimento ou providências dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XIX - acionar, quando necessário, o Plano de Chamada do 1º Grupamento de Bombeiro Militar, diante de ocorrência ou situação que demande reforço extraordinário de efetivo, comunicando imediatamente o acionamento ao Comandante da Unidade e ao Superior de Dia; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "XX - cumprir as determinações dos escalões superiores relacionadas ao serviço operacional.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Comandante de Socorro",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true,
-          "nota": "Inciso XVII (acompanhar militar detido, inclusive da reserva remunerada): conferir com a Corregedoria."
-        },
-        {
           "id": "se-art-44",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-44",
@@ -17740,13 +17319,34 @@
           "id": "se-art-45",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-45",
-          "caput": "Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas neste Regulamento de Serviço.",
+          "caput": "Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas no RISG/EB quando essas funções forem equiparadas.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 45",
           "match": "exata",
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+        },
+        {
+          "id": "se-art-46",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/se-art-46",
+          "caput": "Esses serviços serão realizados no Quartel de cada OBM com abrangência em toda sua área de jurisdição.",
+          "items": [],
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 46",
+          "match": "exata",
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+        },
+        {
+          "id": "se-art-47",
+          "kind": "incisos",
+          "editId": "reg:atual:servico-operacional/se-art-47",
+          "caput": "Os casos omissos serão resolvidos em conjunto pelo Comandante Operacional de Bombeiros e pelo Comandante da OBM.",
+          "items": [],
+          "source": "cf. CBMSE, RISD (atual. 2022), Art. 47",
+          "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
-          "alterado": "texto final",
-          "fundamento_alteracao": "Texto final fechado pelo Ten. Tiago no Portal de Legislação CBM (17-18/08/2026) sobre a LOB, Lei nº 2.204/2009"
+          "adapted": true,
+          "original_caput": "Os casos omissos serão resolvidos em conjunto pelo Diretor de Operações e pelo Comandante da OBM. Operações",
+          "corrigido": true
         },
         {
           "id": "se-art-50",
@@ -19189,41 +18789,7 @@
             }
           ]
         }
-      },
-      "suprimidos": [
-        {
-          "id": "se-art-32",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — regime do Oficial de Dia refeito pelos artigos novos"
-        },
-        {
-          "id": "se-art-34",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — idem"
-        },
-        {
-          "id": "se-art-35",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — idem"
-        },
-        {
-          "id": "se-art-36",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-29"
-        },
-        {
-          "id": "se-art-37",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-30"
-        },
-        {
-          "id": "se-art-38",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-31 e está no bloco errado"
-        },
-        {
-          "id": "se-art-46",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-42"
-        },
-        {
-          "id": "se-art-47",
-          "motivo": "Excluir (Ten. Tiago, 18/08) — duplica se-art-43"
-        }
-      ]
+      }
     },
     {
       "id": "reg:atual:servico-interno-dia",
@@ -21402,738 +20968,292 @@
           "orgao": "gabinete"
         },
         {
-          "id": "ro-art-1-r1",
+          "id": "ro-art-1",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-1-r1",
-          "caput": "O Comando Operacional de Bombeiros é o órgão responsável pela execução das atividades-fins da Corporação e de Defesa Civil, subordinado operacionalmente ao Subcomandante-Geral e administrativamente ao Chefe do Estado-Maior-Geral, nos termos do art. 35 da Lei nº 2.204/2009, e tem a seguinte estrutura:",
-          "items": [
-            {
-              "text": "I - Comandante;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "II - Adjunto;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "III - Seção de Pessoal;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - Seção Administrativa;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - Seção de Informática;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - Seção de Correição;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - Seção de Planejamento Operacional e Controle de Resultados;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - Agência Regional de Inteligência; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - Órgãos de Execução Operacional.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "match": "exata",
-          "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-1",
-          "orgao": "cob"
-        },
-        {
-          "id": "ro-art-1-r2",
-          "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-1-r2",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-1",
           "caput": "Compete ao Comandante Operacional de Bombeiros:",
           "items": [
             {
-              "text": "I - planejar, coordenar, supervisionar e fiscalizar, em nível regional, as atividades operacionais e de proteção e defesa civil desenvolvidas pelas unidades subordinadas, observadas as políticas, diretrizes e determinações do Comando-Geral e do Estado-Maior-Geral;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "I - comandar as atividades-fins da Corporação e de proteção e defesa civil na área de abrangência do respectivo Comando Operacional, traduzindo em objetivos e metas as políticas e diretrizes do Comando-Geral e do Estado-Maior-Geral;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "II - exercer o comando sobre os Grupamentos de Bombeiro Militar e demais unidades operacionais subordinadas, respeitadas as atribuições e competências próprias de seus respectivos comandantes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "II - exercer o comando dos Grupamentos de Bombeiro Militar a ele subordinados e das demais unidades operacionais de sua área;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "III - planejar e coordenar as operações de âmbito regional, promovendo a integração operacional entre as unidades subordinadas e propondo ao Subcomandante-Geral a homologação dos planejamentos cuja execução implique despesa ou repercussão financeira para a Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "III - coordenar o emprego dos meios operacionais disponíveis, determinando o deslocamento de recursos entre as unidades subordinadas conforme a natureza e a magnitude da ocorrência;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "IV - coordenar o emprego dos recursos humanos, viaturas, equipamentos e demais meios operacionais disponíveis na respectiva área, podendo determinar ou autorizar o deslocamento de recursos entre as unidades subordinadas, conforme a necessidade do serviço, a natureza e a magnitude da ocorrência, dando ciência ao escalão superior quando a medida, por sua relevância, duração ou repercussão, assim exigir;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "IV - fiscalizar e controlar a execução das atividades operacionais na sua área, respondendo pelos resultados perante o Subcomandante-Geral;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "V - atuar como elo de comando e promover a interlocução das Organizações Bombeiro Militar operacionais subordinadas com os escalões superiores da Corporação e com as Seções do Estado-Maior-Geral, encaminhando, coordenando e acompanhando as demandas de natureza operacional, administrativa e logística que ultrapassem a competência das respectivas unidades;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "V - autorizar, por escrito, a permuta de escala do serviço de Oficial de Dia, com posterior publicação em Boletim Geral Ostensivo;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "VI - aprovar as Ordens de Serviço e os demais planejamentos operacionais elaborados pelas unidades subordinadas, ressalvados aqueles sujeitos à homologação ou aprovação de autoridade superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "VI - acionar o Superior de Dia nas ocorrências de grande vulto, na forma deste Regulamento;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "VII - expedir diretrizes, orientações e determinações de natureza operacional às unidades subordinadas, visando à padronização, à eficiência e à integração dos serviços na área do respectivo Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "VII - propor ao Comando-Geral a criação, a extinção ou a alteração de unidades operacionais de sua área, para constar do Quadro de Organização da Corporação;",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             },
             {
-              "text": "VIII - coordenar e fiscalizar as escalas de serviço de âmbito regional, podendo autorizar alterações e permutas cuja competência não esteja atribuída a outra autoridade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - autorizar, por escrito, a permuta de escala do serviço de Oficial de Dia, com posterior publicação em Boletim Geral Ostensivo;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "X - acionar o Superior de Dia nas ocorrências de grande vulto, na forma deste Regulamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XI - fiscalizar e acompanhar a execução das atividades operacionais desenvolvidas pelas unidades subordinadas, avaliando o emprego dos recursos e os resultados alcançados;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XII - efetuar, nos termos do art. 13, inciso V, do Regulamento de Movimentação aprovado pelo Decreto nº 8.134, de 18 de dezembro de 1997, a movimentação de praças entre as Organizações Bombeiro Militar subordinadas ao respectivo Comando Operacional, quando não implicar ônus para a Corporação, observados, sempre que possível, os pareceres dos respectivos Comandantes de Unidade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIII - propor ao Coordenador de Pessoal a movimentação de praças entre Organizações Bombeiro Militar pertencentes a Comandos Operacionais distintos, quando não implicar ônus para a Corporação, observadas as competências estabelecidas no art. 13 do Regulamento de Movimentação aprovado pelo Decreto nº 8.134, de 18 de dezembro de 1997;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIV - propor ao Subcomandante-Geral a movimentação de praças quando dela decorrer ônus para a Corporação, observadas as competências estabelecidas no art. 13 do Regulamento de Movimentação aprovado pelo Decreto nº 8.134, de 18 de dezembro de 1997;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XV - propor ao Subcomandante-Geral, nos termos do art. 13, inciso II, alínea \"a\", do Regulamento de Movimentação aprovado pelo Decreto nº 8.134, de 18 de dezembro de 1997, a movimentação de oficiais das Organizações Bombeiro Militar subordinadas ao respectivo Comando Operacional, observadas a necessidade do serviço e as demais disposições regulamentares aplicáveis;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVI - coordenar o apoio operacional entre as unidades subordinadas, especialmente nas ocorrências de maior vulto, operações extraordinárias, eventos especiais e demais situações que excedam a capacidade operacional de determinada unidade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVII - acionar ou solicitar o acionamento dos escalões superiores da cadeia de comando nas ocorrências cuja natureza, magnitude ou repercussão ultrapasse a capacidade de resposta das unidades sob sua responsabilidade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVIII - acompanhar e consolidar os dados estatísticos, relatórios e informações operacionais produzidos pelas unidades subordinadas, promovendo seu encaminhamento aos órgãos competentes e mantendo os escalões superiores informados acerca da situação operacional de sua área;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIX - propor ao Comando-Geral medidas destinadas ao aperfeiçoamento da estrutura operacional, inclusive a criação, transformação, extinção, instalação ou alteração da área de atuação das unidades subordinadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XX - promover a integração entre os Grupamentos de Bombeiro Militar e demais unidades subordinadas, buscando a uniformidade de procedimentos, a racionalização do emprego dos recursos e a melhoria da resposta operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XXI - presidir as solenidades de passagem de comando dos Grupamentos de Bombeiro Militar subordinados ao respectivo Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XXII - representar o Comandante-Geral em solenidades, reuniões, eventos e demais atos institucionais, quando devidamente designado ou determinado; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XXIII - cumprir fielmente as determinações emanadas dos escalões superiores, observadas as competências e atribuições estabelecidas na legislação e nos regulamentos vigentes.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "VIII - submeter-se, no que respeita à administração, ao Chefe do Estado-Maior-Geral, e, no que respeita às operações, ao Subcomandante-Geral.",
+              "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-1",
-          "orgao": "cob",
-          "nota": "Incisos XII a XV citam o Decreto nº 8.134/1997 (Regulamento de Movimentação) — conferir vigência e teor do art. 13 antes da consolidação. Incisos IX e X mantidos da versão em consulta."
+          "fundamento": "LOB, Art. 34, Art. 35 e Art. 47 (red. Lei nº 4.303/2018) e Art. 59, parágrafo único; organograma oficial do CBMRO",
+          "orgao": "cob"
         },
         {
-          "id": "ro-art-2-r1",
+          "id": "ro-art-2",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-2-r1",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-2",
           "caput": "Compete ao Adjunto do Comando Operacional de Bombeiros:",
           "items": [
             {
-              "text": "I - assessorar o Comandante Operacional de Bombeiros no planejamento, na coordenação, na supervisão e na fiscalização das atividades desenvolvidas no âmbito do respectivo Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "I - auxiliar o Comandante Operacional de Bombeiros no planejamento, na coordenação e na fiscalização das atividades do Comando Operacional;",
+              "source": "LOB, Art. 35, parágrafo único, II (red. Lei nº 4.303/2018); princípio de substituição eventual do titular extraído do Art. 12, § 2º (red. Lei n. 3.413/2014), e do Art. 12-A, § 2º (acrescido pela Lei n. 3.413/2014); organograma oficial do CBMRO"
             },
             {
-              "text": "II - acompanhar o cumprimento das diretrizes, determinações e ordens emanadas pelo Comandante Operacional, mantendo-o informado acerca de sua execução pelas unidades subordinadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "II - substituir o Comandante Operacional de Bombeiros em seus impedimentos e afastamentos eventuais;",
+              "source": "LOB, Art. 35, parágrafo único, II (red. Lei nº 4.303/2018); princípio de substituição eventual do titular extraído do Art. 12, § 2º (red. Lei n. 3.413/2014), e do Art. 12-A, § 2º (acrescido pela Lei n. 3.413/2014); organograma oficial do CBMRO"
             },
             {
-              "text": "III - coordenar, por determinação do Comandante Operacional, a consolidação dos planejamentos, Ordens de Serviço, escalas, relatórios, dados estatísticos e demais informações encaminhadas pelas unidades subordinadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - acompanhar a tramitação das demandas das Organizações Bombeiro Militar subordinadas junto aos escalões superiores e às Seções do Estado-Maior-Geral, mantendo o Comandante Operacional informado quanto ao seu andamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - promover a integração e o fluxo de informações entre o Comando Operacional e as unidades subordinadas, zelando pelo cumprimento dos prazos, determinações e providências estabelecidas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - auxiliar o Comandante Operacional na elaboração e no acompanhamento dos planejamentos e operações de âmbito regional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - acompanhar a situação do efetivo, dos meios operacionais, das viaturas e dos equipamentos das unidades subordinadas, consolidando as informações necessárias ao planejamento e à tomada de decisão do Comandante Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - elaborar estudos, informações, relatórios e propostas destinados a subsidiar as decisões do Comandante Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - substituir o Comandante Operacional de Bombeiros em seus impedimentos e afastamentos eventuais; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "X - exercer as demais atribuições que lhe forem delegadas pelo Comandante Operacional de Bombeiros.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "III - exercer as demais atribuições que lhe forem delegadas pelo Comandante Operacional de Bombeiros.",
+              "source": "LOB, Art. 35, parágrafo único, II (red. Lei nº 4.303/2018); princípio de substituição eventual do titular extraído do Art. 12, § 2º (red. Lei n. 3.413/2014), e do Art. 12-A, § 2º (acrescido pela Lei n. 3.413/2014); organograma oficial do CBMRO"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 35, parágrafo único, II (red. Lei nº 4.303/2018); princípio de substituição eventual do titular extraído do Art. 12, § 2º (red. Lei n. 3.413/2014), e do Art. 12-A, § 2º (acrescido pela Lei n. 3.413/2014); organograma oficial do CBMRO",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-2",
-          "orgao": "cob",
-          "nota": "Incisos IX e X mantidos da versão em consulta (substituição eventual do titular)."
-        },
-        {
-          "id": "ro-art-3-r1",
-          "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-3-r1",
-          "caput": "Compete ao Chefe da Seção de Pessoal do Comando Operacional de Bombeiros:",
-          "items": [
-            {
-              "text": "I - dirigir, coordenar e distribuir os trabalhos da Seção de Pessoal, mantendo atualizado o controle da situação funcional, da lotação e da distribuição do efetivo do Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "II - instruir os processos relativos à movimentação de oficiais e praças, elaborando as informações e manifestações necessárias à decisão ou proposição do Comandante Operacional, observadas as competências estabelecidas no Regulamento de Movimentação aprovado pelo Decreto nº 8.134, de 18 de dezembro de 1997;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "III - acompanhar a distribuição do efetivo das Organizações Bombeiro Militar subordinadas, identificando déficits, excedentes e necessidades de recompletamento, para subsidiar as decisões do Comandante Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - acompanhar e manter registro das apresentações, inclusões, exclusões, transferências, afastamentos, férias, licenças e demais alterações funcionais dos militares pertencentes ao efetivo do Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - elaborar estudos e levantamentos relativos à distribuição do efetivo das unidades subordinadas, submetendo ao Comandante Operacional informações destinadas a subsidiar as decisões relativas à movimentação e ao emprego de pessoal;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - acompanhar as demandas de pessoal encaminhadas pelas Organizações Bombeiro Militar subordinadas, submetendo ao Comandante Operacional aquelas que dependam de providências dos escalões superiores ou da Coordenadoria de Pessoal;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - elaborar e manter atualizados os mapas, quadros e relatórios relativos ao efetivo do Comando Operacional, bem como consolidar, quando necessário, informações de pessoal provenientes das unidades subordinadas; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - exercer outras atribuições de pessoal que lhe forem determinadas pelo Comandante Operacional de Bombeiros.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "match": "exata",
-          "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-3",
-          "orgao": "cob",
-          "nota": "O inciso II da sugestão original não foi enviado (a numeração pulou de I para III); renumerado. Inciso II cita o Decreto nº 8.134/1997 — conferir."
-        },
-        {
-          "id": "ro-art-4-r1",
-          "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-4-r1",
-          "caput": "Compete ao Chefe da Seção Administrativa do Comando Operacional de Bombeiros:",
-          "items": [
-            {
-              "text": "I - dirigir, coordenar e distribuir os trabalhos da Seção Administrativa, promovendo a execução das atividades administrativas necessárias ao funcionamento do Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "II - instruir e acompanhar os processos administrativos de interesse do Comando Operacional e acompanhar, quando necessário, aqueles oriundos das Organizações Bombeiro Militar subordinadas que dependam de providências do Comando Operacional ou dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "III - controlar e acompanhar os bens patrimoniais, materiais permanentes e de consumo sob responsabilidade do Comando Operacional, mantendo atualizados os respectivos registros e controles;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - acompanhar as necessidades administrativas, logísticas e de infraestrutura do Comando Operacional, adotando as providências de sua competência e submetendo ao Comandante Operacional aquelas que dependam de atuação dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - receber, consolidar e encaminhar, quando determinado pelo Comandante Operacional, as demandas administrativas e logísticas apresentadas pelas Organizações Bombeiro Militar subordinadas, preservadas as competências próprias de cada unidade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - acompanhar, junto às Seções do Estado-Maior-Geral e demais órgãos competentes, a tramitação das demandas administrativas e logísticas encaminhadas pelo Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - organizar e manter o controle da documentação administrativa de responsabilidade do Comando Operacional, observadas as normas de gestão documental vigentes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - elaborar levantamentos, informações e relatórios de natureza administrativa e logística destinados a subsidiar as decisões do Comandante Operacional; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - exercer outras atribuições administrativas que lhe forem determinadas pelo Comandante Operacional de Bombeiros.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "match": "exata",
-          "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-4",
+          "fundamento": "LOB, Art. 35, parágrafo único, II (red. Lei nº 4.303/2018); princípio de substituição eventual do titular extraído do Art. 12, § 2º (red. Lei n. 3.413/2014), e do Art. 12-A, § 2º (acrescido pela Lei n. 3.413/2014); organograma oficial do CBMRO",
           "orgao": "cob"
         },
         {
-          "id": "ro-art-5-r1",
+          "id": "ro-art-3",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-5-r1",
-          "caput": "Compete ao Chefe da Seção de Informática do Comando Operacional de Bombeiros:",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-3",
+          "caput": "Compete ao Chefe da Seção de Pessoal:",
           "items": [
             {
-              "text": "I - receber e acompanhar as demandas relacionadas à tecnologia da informação oriundas do Comando Operacional e das Organizações Bombeiro Militar subordinadas, quando dependerem de providências dos órgãos técnicos da Corporação;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "I - dirigir e distribuir os trabalhos da Seção de Pessoal, controlando a situação funcional, a lotação e a movimentação do efetivo do Comando Operacional de Bombeiros;",
+              "source": "LOB, Art. 35, parágrafo único, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Coordenadoria de Pessoal do Estado-Maior-Geral (Art. 14)"
             },
             {
-              "text": "II - encaminhar à Diretoria de Informática as demandas de tecnologia da informação que excedam a capacidade ou a competência das Organizações Bombeiro Militar subordinadas, acompanhando as providências adotadas; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "II - determinar a instrução dos processos administrativos de pessoal de interesse do efetivo do Comando Operacional e das unidades a ele subordinadas;",
+              "source": "LOB, Art. 35, parágrafo único, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Coordenadoria de Pessoal do Estado-Maior-Geral (Art. 14)"
             },
             {
-              "text": "III - manter o Comandante Operacional informado acerca das demandas de tecnologia da informação que possam afetar o funcionamento administrativo ou operacional das unidades subordinadas.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "III - submeter ao Comandante Operacional de Bombeiros os assuntos de pessoal que excedam a competência da Seção.",
+              "source": "LOB, Art. 35, parágrafo único, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Coordenadoria de Pessoal do Estado-Maior-Geral (Art. 14)"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 35, parágrafo único, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Coordenadoria de Pessoal do Estado-Maior-Geral (Art. 14)",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-5",
+          "fundamento": "LOB, Art. 35, parágrafo único, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Coordenadoria de Pessoal do Estado-Maior-Geral (Art. 14)",
           "orgao": "cob"
         },
         {
-          "id": "ro-art-6-r1",
+          "id": "ro-art-4",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-6-r1",
-          "caput": "Compete ao Chefe da Seção de Correição do Comando Operacional de Bombeiros:",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-4",
+          "caput": "Compete ao Chefe da Seção Administrativa:",
           "items": [
             {
-              "text": "I - assessorar o Comandante Operacional nos assuntos de natureza disciplinar e correcional de sua competência;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "I - dirigir e distribuir os trabalhos da Seção Administrativa, respondendo pelo expediente, pelo protocolo e pelo arquivo do Comando Operacional de Bombeiros;",
+              "source": "LOB, Art. 35, parágrafo único, IV (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção"
             },
             {
-              "text": "II - instruir e acompanhar, no âmbito do Comando Operacional, os procedimentos disciplinares e correcionais cuja instauração ou instrução lhe seja regularmente determinada pela autoridade competente;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "II - controlar o patrimônio e os materiais de consumo em uso nas instalações do Comando Operacional;",
+              "source": "LOB, Art. 35, parágrafo único, IV (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção"
             },
             {
-              "text": "III - acompanhar, para fins de controle, os procedimentos disciplinares e correcionais instaurados no âmbito das Organizações Bombeiro Militar subordinadas, sem prejuízo das competências próprias de seus respectivos comandantes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - manter controle dos prazos e da tramitação dos procedimentos disciplinares e correcionais de responsabilidade do Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - receber e encaminhar à Corregedoria-Geral as demandas de natureza correcional oriundas do Comando Operacional ou das Organizações Bombeiro Militar subordinadas que dependam de providências daquele órgão;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - prestar, quando solicitado, informações ao Comandante Operacional acerca da situação dos procedimentos disciplinares e correcionais em tramitação na área do respectivo Comando, respeitados o sigilo e as restrições de acesso aplicáveis;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - promover a interlocução entre o Comando Operacional, as Organizações Bombeiro Militar subordinadas e a Corregedoria-Geral nos assuntos de natureza disciplinar e correcional; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - exercer outras atribuições de natureza correcional que lhe forem determinadas pelo Comandante Operacional, observadas as competências da Corregedoria-Geral e das demais autoridades disciplinares.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "III - submeter ao Comandante Operacional de Bombeiros os processos administrativos que excedam a competência da Seção.",
+              "source": "LOB, Art. 35, parágrafo único, IV (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 35, parágrafo único, IV (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-6",
+          "fundamento": "LOB, Art. 35, parágrafo único, IV (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção",
           "orgao": "cob"
         },
         {
-          "id": "ro-art-7-r1",
+          "id": "ro-art-5",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-7-r1",
-          "caput": "Compete ao Chefe da Seção de Planejamento Operacional e Controle de Resultados do Comando Operacional de Bombeiros:",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-5",
+          "caput": "Compete ao Chefe da Seção de Informática:",
           "items": [
             {
-              "text": "I - dirigir e coordenar a elaboração do planejamento operacional de âmbito regional do Comando Operacional de Bombeiros, observadas as diretrizes estabelecidas pelo Comando-Geral, pelo Subcomandante-Geral e pelo Estado-Maior-Geral;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "I - dirigir os trabalhos da Seção de Informática, prestando suporte técnico às unidades do Comando Operacional de Bombeiros;",
+              "source": "LOB, Art. 35, parágrafo único, V (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Diretoria de Informática do Estado-Maior-Geral (Art. 23)"
             },
             {
-              "text": "II - analisar e consolidar os planejamentos operacionais encaminhados pelas Organizações Bombeiro Militar subordinadas, quando envolverem emprego integrado de unidades, repercussão regional ou dependerem de aprovação ou homologação de escalão superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "II - zelar pelo funcionamento dos sistemas corporativos, dos equipamentos e da rede de dados em uso no Comando Operacional;",
+              "source": "LOB, Art. 35, parágrafo único, V (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Diretoria de Informática do Estado-Maior-Geral (Art. 23)"
             },
             {
-              "text": "III - elaborar, em conjunto com as Organizações Bombeiro Militar subordinadas, planos e propostas para operações que envolvam o emprego integrado de recursos de mais de uma unidade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - consolidar e analisar os dados estatísticos, indicadores e resultados operacionais das Organizações Bombeiro Militar subordinadas, identificando tendências e necessidades relacionadas à capacidade de resposta operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - acompanhar a execução dos planejamentos e operações de âmbito regional, avaliando os resultados alcançados e propondo, quando necessário, medidas destinadas ao aperfeiçoamento do emprego operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - elaborar estudos, levantamentos, relatórios e informações de natureza operacional destinados a subsidiar a tomada de decisão do Comandante Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - subsidiar o Comandante Operacional na prestação de informações e de resultados operacionais aos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - manter e consolidar informações relativas aos recursos e às capacidades operacionais das unidades subordinadas necessárias ao planejamento de operações de âmbito regional; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - exercer outras atribuições de planejamento operacional e controle de resultados que lhe forem determinadas pelo Comandante Operacional de Bombeiros.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "III - articular-se com a Diretoria de Informática do Estado-Maior-Geral nas matérias que exijam padronização ou suporte de nível superior.",
+              "source": "LOB, Art. 35, parágrafo único, V (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Diretoria de Informática do Estado-Maior-Geral (Art. 23)"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 35, parágrafo único, V (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Diretoria de Informática do Estado-Maior-Geral (Art. 23)",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-7",
+          "fundamento": "LOB, Art. 35, parágrafo único, V (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Diretoria de Informática do Estado-Maior-Geral (Art. 23)",
           "orgao": "cob"
         },
         {
-          "id": "ro-art-8-r1",
+          "id": "ro-art-6",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-8-r1",
-          "caput": "Compete ao Chefe da Agência Regional de Inteligência do Comando Operacional de Bombeiros:",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-6",
+          "caput": "Compete ao Chefe da Seção de Correição:",
           "items": [
             {
-              "text": "I - atuar como elo entre o Comando Operacional, as Organizações Bombeiro Militar subordinadas e a Diretoria de Inteligência do CBMRO nos assuntos de competência desta;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "I - dirigir os trabalhos da Seção de Correição, instruindo, no âmbito do Comando Operacional de Bombeiros, os procedimentos disciplinares e correcionais que lhe forem determinados;",
+              "source": "LOB, Art. 35, parágrafo único, VI (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Corregedoria-Geral (Art. 13)"
             },
             {
-              "text": "II - receber, instruir, conferir e encaminhar à Diretoria de Inteligência as demandas dos militares pertencentes ao Comando Operacional relativas à aquisição, transferência, venda e demais procedimentos relacionados a armamento, bem como receber e encaminhar à referida Diretoria as demandas devidamente instruídas pelas Organizações Bombeiro Militar subordinadas, observadas as normas e competências específicas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "II - acompanhar o cumprimento das normas disciplinares pelo efetivo das unidades subordinadas ao Comando Operacional;",
+              "source": "LOB, Art. 35, parágrafo único, VI (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Corregedoria-Geral (Art. 13)"
             },
             {
-              "text": "III - acompanhar, junto à Diretoria de Inteligência, a tramitação das demandas encaminhadas pelo Comando Operacional e pelas Organizações Bombeiro Militar subordinadas, promovendo a interlocução necessária até a conclusão das providências de competência daquele órgão;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IV - orientar as Organizações Bombeiro Militar subordinadas quanto aos procedimentos, à documentação e aos fluxos estabelecidos pela Diretoria de Inteligência para o processamento das matérias de sua competência;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - encaminhar à Diretoria de Inteligência as matérias que, por sua natureza, grau de sigilo ou competência, dependam de análise ou providência daquele órgão;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - receber, instruir e prestar as informações relativas aos militares pertencentes ao Comando Operacional, bem como receber e encaminhar as informações devidamente instruídas pelas Organizações Bombeiro Militar subordinadas, referentes às demandas de restrição de porte e posse de arma de fogo, quando solicitadas pela Diretoria de Logística, promovendo o respectivo encaminhamento ao órgão competente; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - exercer outras atividades de interlocução e apoio relacionadas às matérias de competência da Diretoria de Inteligência que lhe forem determinadas pelo Comandante Operacional.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
+              "text": "III - encaminhar à Corregedoria-Geral os casos que excedam a competência correcional do Comando Operacional de Bombeiros.",
+              "source": "LOB, Art. 35, parágrafo único, VI (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Corregedoria-Geral (Art. 13)"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 35, parágrafo único, VI (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Corregedoria-Geral (Art. 13)",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-8",
-          "orgao": "cob",
-          "nota": "Incisos II e VI atribuem à ARI o trâmite de armamento (aquisição, transferência, restrição de porte) — confirmar com a Diretoria de Inteligência e a Diretoria de Logística."
+          "fundamento": "LOB, Art. 35, parágrafo único, VI (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção, sem duplicar a Corregedoria-Geral (Art. 13)",
+          "orgao": "cob"
         },
         {
-          "id": "ro-art-9-r1",
+          "id": "ro-art-7",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-9-r1",
-          "caput": "O Grupamento de Bombeiro Militar, subordinado diretamente ao Comando Operacional de Bombeiros, é organizado em Subgrupamentos de Bombeiro Militar, destacados ou não, que por sua vez se estruturam em Seções de Bombeiros, destacadas ou não, e possui a seguinte estrutura, nos termos do art. 47, § 1º, da Lei nº 2.204/2009:",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-7",
+          "caput": "Compete ao Chefe da Seção de Planejamento Operacional e Controle de Resultados:",
           "items": [
             {
-              "text": "I - Comando:",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "I - dirigir a elaboração do planejamento operacional do Comando Operacional de Bombeiros, desdobrando as diretrizes do Comando-Geral e do Estado-Maior-Geral;",
+              "source": "LOB, Art. 35, parágrafo único, VII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção"
             },
             {
-              "text": "a) Comandante;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "II - consolidar os indicadores e os resultados operacionais das unidades subordinadas ao Comando Operacional;",
+              "source": "LOB, Art. 35, parágrafo único, VII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção"
             },
             {
-              "text": "b) Subcomandante; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "c) Auxiliares;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "II - Estado-Maior:",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "a) B1 (Pessoal);",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "b) B2 (Inteligência);",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "c) B3 (Operações);",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "d) B4 (Logística);",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "e) B5 (Relações Externas); e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "f) B6 (Justiça e Disciplina).",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "III - subsidiar o Comandante Operacional de Bombeiros com informações para a tomada de decisão e a prestação de contas perante os escalões superiores.",
+              "source": "LOB, Art. 35, parágrafo único, VII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 35, parágrafo único, VII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-9",
-          "orgao": "cob",
-          "nota": "O Cel. propõe regulamentar também Subcomandante, Auxiliares e as seções B1 a B6 do GBM; a redação desses artigos ainda não existe (coincide com a pendência \"cadeia de comando abaixo do SGBM\")."
+          "fundamento": "LOB, Art. 35, parágrafo único, VII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Seção",
+          "orgao": "cob"
         },
         {
-          "id": "ro-art-9-r2",
+          "id": "ro-art-8",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-9-r2",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-8",
+          "caput": "Compete ao Chefe da Agência Regional de Inteligência:",
+          "items": [
+            {
+              "text": "I - dirigir a produção e a difusão do conhecimento de inteligência de interesse das atividades operacionais do Comando Operacional de Bombeiros;",
+              "source": "LOB, Art. 35, parágrafo único, VIII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Agência, sem duplicar a Diretoria de Inteligência do Comandante-Geral (Art. 20)"
+            },
+            {
+              "text": "II - articular-se com a Diretoria de Inteligência do Comandante-Geral nas matérias que exijam padronização, sigilo ou tratamento em nível superior;",
+              "source": "LOB, Art. 35, parágrafo único, VIII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Agência, sem duplicar a Diretoria de Inteligência do Comandante-Geral (Art. 20)"
+            },
+            {
+              "text": "III - subsidiar o Comandante Operacional de Bombeiros com informações relevantes à segurança das operações e do efetivo.",
+              "source": "LOB, Art. 35, parágrafo único, VIII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Agência, sem duplicar a Diretoria de Inteligência do Comandante-Geral (Art. 20)"
+            }
+          ],
+          "source": "LOB, Art. 35, parágrafo único, VIII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Agência, sem duplicar a Diretoria de Inteligência do Comandante-Geral (Art. 20)",
+          "match": "exata",
+          "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
+          "autoral": true,
+          "fundamento": "LOB, Art. 35, parágrafo único, VIII (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência derivada da finalidade da Agência, sem duplicar a Diretoria de Inteligência do Comandante-Geral (Art. 20)",
+          "orgao": "cob"
+        },
+        {
+          "id": "ro-art-9",
+          "kind": "incisos",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-9",
           "caput": "Compete ao Comandante de Grupamento de Bombeiro Militar:",
           "items": [
             {
-              "text": "I - comandar, coordenar, supervisionar e fiscalizar as atividades operacionais e administrativas do Grupamento e das Subunidades a ele subordinadas, observadas as diretrizes e determinações dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "I - comandar as atividades operacionais e administrativas do Grupamento, subordinado ao Comandante Operacional de Bombeiros;",
+              "source": "LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Comando Operacional de Bombeiros"
             },
             {
-              "text": "II - planejar, coordenar e executar as atividades operacionais no âmbito de sua área de responsabilidade, observadas as diretrizes estabelecidas pelo respectivo Comando Operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "II - exercer o comando dos Subgrupamentos, das Seções de Comando e Serviço, das Seções de Bombeiros, dos Grupos de Bombeiros e dos Destacamentos de Bombeiros subordinados ao Grupamento;",
+              "source": "LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Comando Operacional de Bombeiros"
             },
             {
-              "text": "III - elaborar e aprovar as Ordens de Serviço e os planejamentos operacionais de âmbito do Grupamento, submetendo ao Comando Operacional aqueles que envolvam emprego de meios de outras unidades, repercussão regional ou dependam de aprovação ou homologação de escalão superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "III - fazer cumprir, na área de circunscrição do Grupamento, as diretrizes, os planos e as ordens do Comando Operacional de Bombeiros;",
+              "source": "LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Comando Operacional de Bombeiros"
             },
             {
-              "text": "IV - administrar o efetivo, os materiais, as viaturas, os equipamentos e demais recursos colocados à disposição do Grupamento, observadas as competências dos órgãos responsáveis e a legislação vigente;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - coordenar o emprego dos recursos humanos e materiais das Subunidades subordinadas, podendo determinar seu emprego dentro da área de responsabilidade do Grupamento, conforme a necessidade do serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - manter o Comando Operacional informado acerca das ocorrências de maior vulto, situações extraordinárias ou fatos relevantes que possam exigir apoio, coordenação ou providências do escalão superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - solicitar ao Comando Operacional, quando necessário, apoio de efetivo, viaturas, equipamentos ou outros recursos de unidades não subordinadas ao respectivo Grupamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - exercer a gestão do efetivo do Grupamento e de suas Subunidades, promovendo os atos de sua competência e encaminhando ao Comando Operacional as demandas de pessoal que dependam de providências daquele Comando ou dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - fiscalizar o cumprimento das normas, ordens, diretrizes e procedimentos operacionais e administrativos no âmbito das unidades subordinadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "X - acompanhar e avaliar os resultados operacionais do Grupamento e de suas Subunidades, mantendo atualizados os dados e informações necessários ao controle e ao planejamento operacional;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XI - promover a instrução e o aperfeiçoamento profissional do efetivo sob seu comando, observadas as diretrizes e normas estabelecidas pelos órgãos competentes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XII - zelar pela disciplina, hierarquia, apresentação, eficiência e regularidade dos serviços no âmbito do Grupamento e de suas Subunidades;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIII - promover a articulação institucional do Grupamento com os órgãos públicos e demais instituições existentes em sua área de responsabilidade, nos assuntos relacionados às atribuições da Corporação, observadas as diretrizes dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIV - propor ao Comando Operacional medidas destinadas ao aperfeiçoamento da estrutura, da distribuição do efetivo, dos recursos e da capacidade operacional das unidades sob seu comando;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XV - presidir as solenidades de passagem de comando dos Subgrupamentos de Bombeiro Militar subordinados ao respectivo Grupamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVI - representar o Comandante-Geral em solenidades, reuniões, eventos e demais atos institucionais realizados em sua área de responsabilidade, quando devidamente designado ou determinado;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVII - prestar ao Comando Operacional as informações, dados, relatórios e demais elementos necessários ao acompanhamento das atividades e dos resultados do Grupamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVIII - propor à autoridade competente a instauração de Inquérito Sanitário de Origem e de Atestado de Origem relativos aos militares sob seu comando, quando presentes os pressupostos regulamentares, promovendo o encaminhamento da documentação pertinente; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIX - cumprir fielmente as determinações dos escalões superiores, no âmbito de suas atribuições.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)"
+              "text": "IV - responder, perante o Comandante Operacional de Bombeiros, pelos resultados operacionais e administrativos do Grupamento.",
+              "source": "LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Comando Operacional de Bombeiros"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Comando Operacional de Bombeiros",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47, § 1º (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-9",
+          "fundamento": "LOB, Art. 47, caput, I, e § 1º (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Comando Operacional de Bombeiros",
           "orgao": "cob"
         },
         {
-          "id": "ro-art-10-r1",
+          "id": "ro-art-10",
           "kind": "incisos",
-          "editId": "reg:atual:atribuicoes-funcoes/ro-art-10-r1",
+          "editId": "reg:atual:atribuicoes-funcoes/ro-art-10",
           "caput": "Compete ao Comandante de Subgrupamento de Bombeiro Militar:",
           "items": [
             {
-              "text": "I - comandar, coordenar, supervisionar e fiscalizar as atividades operacionais e administrativas do Subgrupamento e das frações a ele subordinadas, observadas as diretrizes e determinações dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
+              "text": "I - comandar as atividades operacionais e administrativas do Subgrupamento, subordinado ao Comandante de Grupamento;",
+              "source": "LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Grupamento"
             },
             {
-              "text": "II - planejar, coordenar e executar as atividades operacionais no âmbito de sua área de responsabilidade, observadas as diretrizes estabelecidas pelo Grupamento de Bombeiro Militar ao qual estiver subordinado;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
+              "text": "II - exercer o comando das Seções de Bombeiros, dos Grupos de Bombeiros e dos Destacamentos de Bombeiros subordinados ao Subgrupamento;",
+              "source": "LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Grupamento"
             },
             {
-              "text": "III - elaborar as Ordens de Serviço e os planejamentos operacionais de âmbito do Subgrupamento, submetendo ao Comandante do Grupamento aqueles que dependam de aprovação superior, envolvam emprego de recursos externos à Subunidade ou produzam repercussão além de sua área de responsabilidade;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
+              "text": "III - executar, na área de circunscrição do Subgrupamento, as diretrizes, os planos e as ordens do Grupamento e do Comando Operacional de Bombeiros;",
+              "source": "LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Grupamento"
             },
             {
-              "text": "IV - administrar o efetivo, os materiais, as viaturas, os equipamentos, as instalações e os demais recursos colocados à disposição do Subgrupamento, observadas as competências dos órgãos responsáveis e a legislação vigente;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "V - coordenar o emprego dos recursos humanos e materiais disponíveis no Subgrupamento e nas frações subordinadas, de acordo com as necessidades do serviço;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VI - organizar, coordenar e fiscalizar as escalas de serviço no âmbito do Subgrupamento, observadas as normas e diretrizes estabelecidas pelos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VII - manter o Comandante do Grupamento informado acerca das ocorrências de maior vulto, situações extraordinárias e demais fatos relevantes que possam exigir apoio ou providências do escalão superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "VIII - solicitar ao Comandante do Grupamento, quando necessário, apoio de efetivo, viaturas, equipamentos ou outros recursos que excedam a capacidade operacional do Subgrupamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "IX - exercer a gestão do efetivo pertencente ao Subgrupamento, adotando as providências de sua competência e encaminhando ao Grupamento as demandas de pessoal que dependam de atuação do escalão superior;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "X - fiscalizar o cumprimento das normas, ordens, diretrizes e procedimentos operacionais e administrativos no âmbito do Subgrupamento e de suas frações subordinadas;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XI - acompanhar e avaliar os resultados das atividades operacionais desenvolvidas pelo Subgrupamento, mantendo atualizados os dados e informações necessários ao planejamento e ao controle das atividades;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XII - promover e fiscalizar a instrução e o aperfeiçoamento profissional do efetivo sob seu comando, observadas as diretrizes estabelecidas pelos órgãos competentes;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIII - zelar pela hierarquia, disciplina, apresentação, eficiência e regularidade dos serviços no âmbito do Subgrupamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XIV - manter o Comandante do Grupamento informado acerca das necessidades administrativas, logísticas, operacionais e de pessoal do Subgrupamento, propondo as providências que excedam sua competência;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XV - promover a articulação institucional do Subgrupamento com órgãos públicos e demais instituições existentes em sua área de responsabilidade, nos assuntos relacionados às atribuições da Corporação, observadas as diretrizes dos escalões superiores;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVI - prestar ao Grupamento de Bombeiro Militar as informações, dados, relatórios e demais elementos necessários ao acompanhamento das atividades e dos resultados do Subgrupamento;",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVII - propor à autoridade competente a instauração de Inquérito Sanitário de Origem e de Atestado de Origem relativos aos militares sob seu comando, quando presentes os pressupostos regulamentares, promovendo o encaminhamento da documentação pertinente; e",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
-            },
-            {
-              "text": "XVIII - cumprir fielmente as determinações dos escalões superiores, no âmbito de suas atribuições.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)"
+              "text": "IV - responder, perante o Comandante de Grupamento, pelos resultados operacionais e administrativos do Subgrupamento.",
+              "source": "LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Grupamento"
             }
           ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)",
+          "source": "LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Grupamento",
           "match": "exata",
           "heading": "Cap. I — Das funções do Comando Operacional de Bombeiros",
           "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/2018)",
-          "origem": "consulta-2026-08",
-          "substitui": "ro-art-10",
-          "orgao": "cob",
-          "nota": "O Cel. propõe regulamentar também Subcomandante e Auxiliares do SGBM (LOB, Art. 47); redação ainda não existe."
+          "fundamento": "LOB, Art. 47, caput, III, e § 1º, III (red. Lei nº 4.303/2018); organograma oficial do CBMRO — competência de comando derivada da subordinação hierárquica ao Grupamento",
+          "orgao": "cob"
         },
         {
           "id": "ro-art-11",
@@ -24571,12 +23691,8 @@
     }
   ],
   "cenario": "atual",
-  "versao": "atual",
+  "versao": "consulta",
   "curadoria": {
-    "correcoes": 24,
-    "textos_finais": 7,
-    "suprimidos": 8,
-    "substituidos": 13,
-    "novos": 6
+    "correcoes": 24
   }
 }

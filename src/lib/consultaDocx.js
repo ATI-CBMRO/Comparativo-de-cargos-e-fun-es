@@ -13,6 +13,7 @@ import {
   ROTULO_PARECER, ROTULO_SITUACAO,
 } from './consultaRelatorios.js'
 import { montarReestruturada } from './regulamentoReestruturado.js'
+import { compararVersoes, resumoComparativo, ROTULO_TIPO, rotuloArtigo } from './comparativoConsulta.js'
 
 const FONT = 'Times New Roman'
 const run = (text, o = {}) => new TextRun({ text, font: FONT, size: 24, ...o })
@@ -121,7 +122,7 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
     'Portal de Legislação CBM — acesso "Só Regulamento de Serviço" · cenário: Lei nº 2.204/2009', brasao,
   )
   children.push(pJust(
-    `A minuta do Regulamento de Serviço (1ª etapa, ${totalArtigos} artigos) foi submetida à apreciação dos militares cadastrados no Portal de Legislação CBM com acesso restrito ao Regulamento de Serviço, que puderam registrar sugestões dispositivo a dispositivo. Este relatório consolida ${resumo.total} interações${desde ? ` registradas a partir de ${desde.toLocaleDateString('pt-BR')}` : ''}: ${resumo.dosConsultados} dos militares consultados e ${resumo.daEquipe} da equipe de curadoria/administração do portal. Cada registro identifica o autor, a unidade, o dispositivo comentado (numeração da versão em consulta), o trecho e o texto integral da sugestão, reproduzido como foi escrito.`,
+    `A minuta do Regulamento de Serviço (1ª etapa, ${totalArtigos} artigos) foi submetida à apreciação dos militares cadastrados no Portal de Legislação CBM com acesso restrito ao Regulamento de Serviço, que puderam registrar sugestões dispositivo a dispositivo. Este relatório consolida ${resumo.total} interações${desde ? ` registradas a partir de ${desde.toLocaleDateString('pt-BR')}` : ''}${resumo.daEquipe ? `: ${resumo.dosConsultados} dos militares consultados e ${resumo.daEquipe} da equipe de curadoria/administração do portal` : ' dos militares consultados'}. Cada registro identifica o autor, a unidade, o dispositivo comentado (numeração da versão em consulta), o trecho e o texto integral da sugestão, reproduzido como foi escrito.`,
     { size: 22, after: 200 },
   ))
   children.push(pCentro('1. Participantes e quantidade de sugestões', { size: 24, before: 240, after: 120 }))
@@ -190,6 +191,42 @@ export function docxQuadroAnalise({ interacoes, membros, brasao }) {
     children.push(new Paragraph({ spacing: { after: 120 }, children: [] }))
   }
   return { doc: documento(children, 'Quadro de análise — Minuta do Regulamento de Serviço · CBMRO'), resumo, quadro }
+}
+
+// 5. Comparativo: versão em consulta × versão atual, artigo a artigo (curadoria 2026-09-14).
+function textoArtigo(a) {
+  if (!a) return ''
+  const art = articular(a)
+  return [art.caput, ...art.incisos.map((inc, i) => (inc.ownMarker ? inc.text : `${romanize(i + 1)} - ${inc.text}`))].join('\n')
+}
+export function docxComparativo({ recorteConsulta, recorteAtual, brasao }) {
+  const comparacao = compararVersoes(recorteConsulta, recorteAtual)
+  const r = resumoComparativo(comparacao)
+  const children = cabecalho(
+    'Comparativo — Minuta do Regulamento de Serviço: versão em consulta × versão atual',
+    'Curadoria das sugestões recebidas na consulta aos militares (ago/2026)', brasao,
+  )
+  children.push(pJust(
+    `A coluna da esquerda traz a minuta como foi disponibilizada aos militares, já com as correções ortográficas e de texto (que valem para as duas versões); a da direita, a versão produzida após as sugestões. Resumo: ${r.igual} artigos sem alteração, ${r.corrigido} corrigidos nas duas versões, ${r.alterado} com texto alterado pelo texto final do portal, ${r.reescrito} reescritos, ${r.incluido} incluídos e ${r.suprimido} suprimidos; ${r.propostas} artigo(s) marcado(s) como proposta pendente de deliberação do CONDEG. Artigos sem alteração aparecem só pelo número, para o documento caber.`,
+    { italics: true, size: 22, after: 240 },
+  ))
+  for (const cap of comparacao) {
+    children.push(pCentro(cap.capitulo, { size: 24, before: 240, after: 120 }))
+    const iguais = cap.entradas.filter(e => e.tipo === 'igual')
+    if (iguais.length) children.push(pJust(`Sem alteração: ${iguais.map(e => `${rotuloArtigo(e.numAntes)}→${rotuloArtigo(e.numDepois)}`).join(', ')}.`, { size: 20, italics: true, firstLine: 0 }))
+    for (const e of cap.entradas) {
+      if (e.tipo === 'igual') continue
+      const rotulo = `${ROTULO_TIPO[e.tipo]}${e.proposta ? ' · PROPOSTA PENDENTE DE DELIBERAÇÃO' : ''}`
+      children.push(pJust(`${rotuloArtigo(e.numAntes)} (consulta) → ${rotuloArtigo(e.numDepois)} (atual) — ${rotulo}`, { size: 20, bold: true, firstLine: 0, after: 40 }))
+      if (e.nota || e.motivo) children.push(pJust(e.nota ?? e.motivo, { size: 18, italics: true, firstLine: 0, after: 60 }))
+      children.push(tabela([
+        ['Versão em consulta', 'Versão atual'],
+        [textoArtigo(e.antes) || (e.tipo === 'incluido' ? '(não existia)' : ''), textoArtigo(e.depois) || (e.tipo === 'suprimido' ? '(suprimido)' : '')],
+      ], [4650, 4650]))
+      children.push(new Paragraph({ spacing: { after: 120 }, children: [] }))
+    }
+  }
+  return { doc: documento(children, 'Comparativo da consulta — Minuta do Regulamento de Serviço · CBMRO'), resumo: r }
 }
 
 // 4. Minuta reestruturada (Parte Geral + Parte Especial), com de-para e notas.

@@ -32,6 +32,7 @@ import SolicitarAcesso from './pages/SolicitarAcesso.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
 import ConsultaRegulamentoServico from './pages/ConsultaRegulamentoServico.jsx'
+import ComparativoConsulta from './pages/ComparativoConsulta.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
 import EmConstrucao from './components/EmConstrucao.jsx'
@@ -98,6 +99,8 @@ const NAV_GROUPS = [
       // Pacote da consulta gerado no navegador (minuta em consulta, relatório SEI, quadro de
       // análise, minuta reestruturada) — spec 2026-09-14.
       { to: '/regulamento/servico/consulta', icon: FileDown, label: 'Pacote da consulta (.docx)', admin: true },
+      // Versão em consulta × versão atual, artigo a artigo (curadoria 2026-09-14).
+      { to: '/regulamento/servico/comparativo', icon: GitCompareArrows, label: 'Comparativo da consulta', admin: true },
     ],
   },
 ]
@@ -269,7 +272,9 @@ function RegulamentoServicoRoute() {
   useEffect(() => {
     if (cenario !== 'atual') setCenario('atual')
   }, [cenario, setCenario])
-  return <Revisao initialDoc="reg" escopo="servico" />
+  // Versão EM CONSULTA (curadoria 2026-09-14): a minuta que os militares leram, onde os
+  // comentários estão ancorados — nunca a versão atual, que tem ids novos.
+  return <Revisao initialDoc="reg" escopo="servico" versao="consulta" />
 }
 
 // Subsídio (comparação com os demais estados) do mesmo recorte de Serviço — mesma trava
@@ -279,7 +284,7 @@ function RegulamentoServicoSubsidioRoute() {
   useEffect(() => {
     if (cenario !== 'atual') setCenario('atual')
   }, [cenario, setCenario])
-  return <RegSubsidio escopo="servico" />
+  return <RegSubsidio escopo="servico" versao="consulta" />
 }
 
 // Quem tem escopo não cai no Acervo dos 27 estados: vai direto ao documento dele.
@@ -383,6 +388,7 @@ export default function App() {
           <Route path="/regulamento/servico" element={<ProtectedRoute><RegulamentoServicoRoute /></ProtectedRoute>} />
           <Route path="/regulamento/servico/subsidio" element={<ProtectedRoute><RegulamentoServicoSubsidioRoute /></ProtectedRoute>} />
           <Route path="/regulamento/servico/consulta" element={<ProtectedRoute requireAdmin><ConsultaRegulamentoServico /></ProtectedRoute>} />
+          <Route path="/regulamento/servico/comparativo" element={<ProtectedRoute requireAdmin><ComparativoConsulta /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
