@@ -38,6 +38,9 @@ __pycache__/
 .env*
 serviceAccountKey.json
 
+# Exportação local do Firestore (scripts/exportar_firestore.mjs) — contém e-mails dos membros
+.firestore-export/
+
 # Grafo de conhecimento gerado pelo graphify (local, não versionado)
 graphify-out/
 

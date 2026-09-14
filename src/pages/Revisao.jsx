@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { MessageSquare } from 'lucide-react'
 import { useAuth } from '../lib/auth.jsx'
 import { buildArticles, articleLabel, romanize } from '../lib/minutaArticles.js'
@@ -42,6 +43,7 @@ function Rail({ count, onClick }) {
 export default function Revisao({ initialDoc, escopo } = {}) {
   const { user } = useAuth()
   const { cenario } = useScenario()
+  const navigate = useNavigate()
   // Quando a Revisão é aberta a partir da trilha (menu), o documento já vem
   // fixado (initialDoc) e o seletor RI×Regulamento é escondido.
   const [docId, setDocId] = useState(initialDoc || 'ri') // 'ri' | 'reg'
@@ -192,6 +194,18 @@ export default function Revisao({ initialDoc, escopo } = {}) {
     autor: { uid: user.uid, nome: user.nome },
   })
 
+  // Alternância entre as DUAS visões do Regulamento para quem não tem escopo (admin e portal
+  // completo): a minuta completa (/regulamento/revisao) e a minuta exatamente como foi
+  // disponibilizada à consulta dos militares (/regulamento/servico — recorte de serviço,
+  // cenário travado em "atual" pela própria rota). Pedido do Ten. Tiago, 2026-09-14.
+  // Participante com escopo não vê os botões: ele só tem uma visão, a dele.
+  const mostraAlternancia = docId === 'reg' && !user?.escopo
+  const capitulosCompleta = data?.chapters?.length ?? 0
+  const capitulosConsulta = useMemo(
+    () => (data ? filtrarEstruturaPorEscopo(data, 'servico').chapters.length : 0),
+    [data],
+  )
+
   const bloqueadoParaComissao = docId === 'reg' && !regulamentoAberto && user.role !== 'admin'
   const tituloDoc = escopo === 'servico'
     ? 'Minuta do Regulamento de Serviço'
@@ -213,6 +227,26 @@ export default function Revisao({ initialDoc, escopo } = {}) {
               </p>
               <p className="rev-progresso">{fechados} dispositivo(s) com texto final fechado.</p>
             </>
+          )}
+          {mostraAlternancia && (
+          <div className="rev-doc-switch" role="group" aria-label="Visão do Regulamento">
+            <button
+              type="button"
+              className={`oc-state-chip${!escopo ? ' active' : ''}`}
+              onClick={() => { if (escopo) navigate('/regulamento/revisao') }}
+              title="Todos os capítulos do Regulamento Geral, nos dois cenários"
+            >
+              Minuta completa ({capitulosCompleta} capítulos)
+            </button>
+            <button
+              type="button"
+              className={`oc-state-chip${escopo === 'servico' ? ' active' : ''}`}
+              onClick={() => { if (escopo !== 'servico') navigate('/regulamento/servico') }}
+              title="A minuta tal como foi disponibilizada aos militares consultados (recorte de serviço, LOB vigente)"
+            >
+              Minuta em consulta ({capitulosConsulta} capítulos)
+            </button>
+          </div>
           )}
           {!initialDoc && (
           <div className="rev-doc-switch">

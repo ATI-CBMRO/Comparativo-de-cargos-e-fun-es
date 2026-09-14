@@ -113,7 +113,49 @@
   cada sugestão/final e avisar na tela quando divergir. Achado da auditoria 23/07/2026.
 
 ## 🟡 Em andamento
-- (nenhuma frente em andamento no momento — ver 🔴 Pendente)
+- [ ] **Consulta da Minuta do Regulamento de Serviço — pacote para o SEI + reestruturação
+  (Cel. Eduardo)** (2026-09-11). Pedido do Ten. Tiago: (1) baixar a versão em consulta,
+  (2) relatório das interações recebidas (quem sugeriu + dispositivos) para anexar ao SEI,
+  (3) análise e sugestões de aplicação, (4) minuta reestruturada em Parte Geral (comum ao
+  serviço operacional e ao técnico) + Parte Especial (capítulos do Serviço Operacional e do
+  Serviço Técnico). Pasta `docs/sei/2026-09-11-regulamento-servico/` (ver README lá).
+  - **Feito**: (1) `Minuta_..._versao_em_consulta.docx` (171 artigos, recorte
+    `escopoServico.js`, cenário atual) e (4) `Minuta_..._reestruturada_parte_geral_e_especial.docx`
+    (mesmos 171 artigos reordenados, sem reescrita; Anexo I de-para, Anexo II com 20 notas
+    de ajuste a deliberar). Geradores novos em `scripts/`: `lib_docx_minuta.mjs`,
+    `gerar_docx_regulamento_servico.mjs`, `gerar_docx_regulamento_reestruturado.mjs`,
+    `gerar_sei_interacoes.mjs`, `exportar_firestore.mjs`. `.firestore-export/` no `.gitignore`.
+  - **Feito (2) e (3)** após o Tiago rodar `scripts/exportar_firestore.ps1` (wrapper que
+    pede a senha mascarada; a sessão do agente não pode usar senha — bloqueio do
+    classificador, não contornado): `Relatorio_Interacoes_Consulta_Regulamento_de_Servico.docx`
+    (322 interações no recorte) e `Analise_Interacoes_e_Proposta_de_Aplicacao.docx/.md`.
+    Achados: só 1 dos 9 consultados contribuiu (Cel. Luiz Eduardo — o MESMO que sugeriu a
+    estrutura Parte Geral/Especial; cadastrado pelo 3º GBM — 271 registros =
+    reescrita completa das funções do COB/GBM/SGBM + seções novas de Superior de Dia, Cmt de
+    Socorro e Oficial de Dia, esta última com CONCEITO diferente: serviço interno do QCG);
+    CAT (5 cadastrados) não se manifestou; 53 dos 94 textos finais "fechados" estão sem
+    texto e 13 são só "Excluir" (o overlay do portal aplica "" como caput — ver "Ideias").
+  - **2026-09-14 — pacote passou para DENTRO do portal** (pedido do Tiago): tela admin
+    `/regulamento/servico/consulta` (`ConsultaRegulamentoServico.jsx`, menu "Pacote da
+    consulta (.docx)") gera no navegador os 4 .docx — minuta em consulta, relatório SEI,
+    quadro de análise (parecer ✅/⛔ `adminStatus` + textos finais) e minuta reestruturada.
+    Lógica compartilhada app↔scripts em `src/lib/consultaRelatorios.js` (pura, testada),
+    `consultaDocx.js` (docx) e `regulamentoReestruturado.js` (ESTRUTURA/NOTAS); os scripts
+    de `scripts/` viraram wrappers finos. Também: item de menu admin "Regulamento de
+    Serviço (em consulta)" e chips "Minuta completa / Minuta em consulta" na Revisão do
+    Regulamento. `npm test` 199/199, build ok. Conferência visual da tela nova ainda não
+    feita (o agente não tem navegador) — abrir como admin e clicar nos 4 botões.
+  - **Próximos passos (pauta, não tarefa do agente)**: 5 decisões do CONDEG listadas na
+    seção 5 da análise (alcance do Superior de Dia, Cmt de Socorro só Capital?, Oficial de
+    Dia interno?, transcrever art. 2º da LOB, adotar Parte Geral/Especial); depois aplicar
+    os blocos "ACOLHER" em `ARTIGOS_PROPRIOS` (`scripts/regulamento_reescrita.py`); redigir
+    Subcmt/Auxiliares/B1-B6 do GBM (coincide com a pendência "cadeia de comando órfã"
+    acima); reabrir consulta dirigida à CAT.
+  - **Ideia de produto (achado)**: `RevisaoModal` permite "Salvar e fechar" com texto vazio
+    e `applyFinalsToArticles` aplica "" como caput — Wizard/.docx mostram artigo em
+    branco. Distinguir "resolvido sem alteração" de "texto final", ou validar texto
+    não-vazio ao fechar. Idem "Excluir" literal (13 casos): supressão deveria ir para
+    `REMOVER_ARTIGOS`. E `se-art-30#caput` tem o comentário salvo como texto final.
 
 ## ✅ Concluído (mês atual)
 - [x] **Curadoria do Regulamento à luz da LOB vigente — handoff Wândrio→Tiago (2026-08-13,

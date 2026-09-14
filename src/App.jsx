@@ -3,7 +3,8 @@ import { Routes, Route, Navigate, NavLink, useLocation } from 'react-router-dom'
 import {
   Flame, LayoutDashboard, BookOpen, GitCompare,
   Search, Library, ScrollText, Menu, X, Network, LogOut,
-  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft, GitBranch, ListChecks, ClipboardList
+  MessageSquare, ShieldCheck, BookMarked, Scale, GitCompareArrows, ChevronsLeft, GitBranch, ListChecks, ClipboardList,
+  FileDown,
 } from 'lucide-react'
 import Dashboard from './pages/Dashboard.jsx'
 import StatesList from './pages/StatesList.jsx'
@@ -30,6 +31,7 @@ import Login from './pages/Login.jsx'
 import SolicitarAcesso from './pages/SolicitarAcesso.jsx'
 import Revisao from './pages/Revisao.jsx'
 import Acessos from './pages/Acessos.jsx'
+import ConsultaRegulamentoServico from './pages/ConsultaRegulamentoServico.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import ScenarioSwitcher from './components/ScenarioSwitcher.jsx'
 import EmConstrucao from './components/EmConstrucao.jsx'
@@ -89,6 +91,13 @@ const NAV_GROUPS = [
       { to: '/regulamento', icon: BookMarked, label: 'Minuta do Regulamento Geral', end: true },
       { to: '/regulamento/diagramas', icon: Network, label: 'Diagramas' },
       { to: '/regulamento/revisao', icon: MessageSquare, label: 'Revisão' },
+      // Admin enxerga a MESMA minuta que o participante com escopo recebeu na consulta
+      // (recorte de 7 temas, cenário travado em "atual" pela própria rota) — pedido do
+      // Ten. Tiago em 2026-09-14. A rota já existia; só faltava o caminho no menu.
+      { to: '/regulamento/servico', icon: BookMarked, label: 'Regulamento de Serviço (em consulta)', end: true, admin: true },
+      // Pacote da consulta gerado no navegador (minuta em consulta, relatório SEI, quadro de
+      // análise, minuta reestruturada) — spec 2026-09-14.
+      { to: '/regulamento/servico/consulta', icon: FileDown, label: 'Pacote da consulta (.docx)', admin: true },
     ],
   },
 ]
@@ -373,6 +382,7 @@ export default function App() {
           <Route path="/regulamento/revisao" element={<ProtectedRoute><Revisao initialDoc="reg" /></ProtectedRoute>} />
           <Route path="/regulamento/servico" element={<ProtectedRoute><RegulamentoServicoRoute /></ProtectedRoute>} />
           <Route path="/regulamento/servico/subsidio" element={<ProtectedRoute><RegulamentoServicoSubsidioRoute /></ProtectedRoute>} />
+          <Route path="/regulamento/servico/consulta" element={<ProtectedRoute requireAdmin><ConsultaRegulamentoServico /></ProtectedRoute>} />
           {/* Rotas antigas mantidas por compatibilidade (fora do menu) */}
           <Route path="/comparar" element={<TrilhaRoute><MinutaComparator /></TrilhaRoute>} />
           <Route path="/minuta-diagramas" element={<MinutaDiagrams />} />
