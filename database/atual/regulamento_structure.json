@@ -17790,7 +17790,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 114"
             },
             {
-              "text": "VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS. Parágrafo Único. Os casos omissos deverão ser solucionados pelo Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
+              "text": "VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 114"
             }
           ],
@@ -17798,7 +17798,9 @@
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
-          "original_caput": "A participação de bombeiros militares de folga, que primeiro chegar em ocorrência, deverá obedecer às seguintes orientações:"
+          "original_caput": "A participação de bombeiros militares de folga, que primeiro chegar em ocorrência, deverá obedecer às seguintes orientações:",
+          "alterado": "deliberação",
+          "fundamento_alteracao": "Deliberação sobre dispositivos com texto semelhante (quadro de 15/09/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-115",
@@ -24594,7 +24596,7 @@
   "versao": "atual",
   "curadoria": {
     "correcoes": 44,
-    "textos_finais": 11,
+    "textos_finais": 12,
     "suprimidos": 11,
     "substituidos": 13,
     "novos": 7,
@@ -24603,6 +24605,29 @@
         "como": "incluido",
         "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como 6 artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1/c2); os 3 artigos de regime estão marcados como proposta pendente de deliberação do CONDEG (Capital/1º GBM/QCG)"
       }
-    }
+    },
+    "deliberacoes": [
+      {
+        "data": "2026-09-15",
+        "dispositivos": [
+          "servico-operacional/se-art-114#5",
+          "servico-operacional/se-art-116#5"
+        ],
+        "assunto": "Casos omissos repetidos (inciso VI do artigo do bombeiro militar de folga em ocorrência × parágrafo único do artigo dos pacientes com transtorno mental)",
+        "decisao": "No inciso VI mantém-se apenas \"A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS\"; o parágrafo único do outro artigo mantém a íntegra do texto."
+      },
+      {
+        "data": "2026-09-15",
+        "dispositivos": [
+          "seguranca-contra-incendio/ro-art-3 × atribuicoes-funcoes/ro-art-15",
+          "atribuicoes-funcoes/ro-art-3..7 (caputs)",
+          "seguranca-contra-incendio/ro-art-2 × ro-art-7",
+          "servico-operacional/se-art-23 (alíneas a/b do inciso II)",
+          "atribuicoes-funcoes/ro-art-11 × seguranca-contra-incendio/ro-art-15"
+        ],
+        "assunto": "Demais 5 grupos do quadro de dispositivos semelhantes de 15/09/2026",
+        "decisao": "Permanecem como estão (mantidos os dois dispositivos em cada grupo). O quadro foi eliminado do pacote."
+      }
+    ]
   }
 }

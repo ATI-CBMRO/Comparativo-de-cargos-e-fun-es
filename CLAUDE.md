@@ -343,6 +343,19 @@ quando a dedução não enxerga — caso das 74 sugestões do Cel. no se-art-4 q
 novos (`incluido`). Não recriar um mapa por id de sugestão da equipe: foi feito e desfeito
 no mesmo dia por essa regra.
 
+**Minuta PUBLICÁVEL e dispositivos semelhantes (15/09/2026):** `montarReestruturada` aceita
+a versão ATUAL (substituto no lugar do id antigo, `incluido` após a âncora, `suprimidos`
+fora); `docxMinutaReestruturada` sai pronta para publicação — sem autoria, introdução, anexos
+ou selos, com `capitalizarFrases` (`src/lib/formatacaoTexto.js`: 1ª letra de cada frase em
+maiúscula, respeitando marcadores e abreviaturas) — e é gerada da atual (tela: botão 4;
+script `gerar_docx_regulamento_reestruturado.mjs`). Só a publicável capitaliza; as telas e a
+minuta em consulta continuam com incisos em minúscula. `src/lib/dispositivosSemelhantes.js`
+(Jaccard ≥ 0,6 sobre palavras significativas, mínimo 6 tokens, união de grupos; competências
+paralelas "Compete ao X" × "Compete ao Y" descartadas por padrão) gerou o quadro
+"Dispositivos semelhantes para deliberação" em 15/09; o Comando deliberou (1 grupo aplicado —
+`DELIBERACOES_SEMELHANTES` no módulo Python —, 5 mantidos como estão) e o quadro foi
+ELIMINADO do pacote (botão e .docx removidos; a lógica pura fica, testada, sem uso na tela).
+
 **Alíneas e "; e" na exibição (14/09/2026):** `isAlinea()` em `minutaArticles.js` — item que
 começa com "a) " é marcador próprio (`ownMarker`, `alinea: true`): sai verbatim, recuado, e
 NÃO conta na numeração. Todo renderizador usa `rotuloRomano(art.incisos, i)` (conta só os

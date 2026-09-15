@@ -39,6 +39,7 @@ _F_SGBM = f'{_CEL} — Lei nº 2.204/2009 (LOB), Art. 47 (red. Lei nº 4.303/201
 _F_SERV = f'{_CEL} — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida'
 _F_FINAL = 'Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009'
 _F_CURADORIA = 'Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009'
+_F_DELIB = 'Deliberação sobre dispositivos com texto semelhante (quadro de 15/09/2026) sobre a LOB, Lei nº 2.204/2009'
 
 NOTA_PROPOSTA = ('PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em '
                  'relação à versão em consulta')
@@ -142,6 +143,14 @@ TEXTOS_FINAIS_ATUAL = {
         # localidades com OBM; XII (Capitania dos Portos) fica condicionado às localidades que
         # têm o órgão. XI (GOA): nomenclatura corrigida em CORRECOES; quem aciona a aeronave e
         # o protocolo para o interior continuam sem redação (decisão do COB/GOA).
+        # Deliberação de 15/09/2026 (quadro de dispositivos semelhantes, grupo 3): no inciso VI
+        # fica só a primeira frase; o "Parágrafo Único. Os casos omissos…" que veio grudado no
+        # inciso pela extração sai daqui — a regra dos casos omissos permanece íntegra no
+        # parágrafo único do artigo dos pacientes com transtorno mental (se-art-116).
+        'se-art-114': {
+            'items': {5: 'VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS.'},
+            'fundamento': _F_DELIB, 'alterado': 'deliberação',
+        },
         'se-art-135': {
             'items': {8: None, 9: None,
                       11: 'XII. Solicitar o apoio da Capitania dos Portos, nas localidades onde houver o referido órgão, nos acidentes aquáticos.'},
@@ -632,6 +641,28 @@ def _at(como, nota, onde=None):
 # o Bloco 14 — regime e competências do Superior de Dia, do Oficial de Dia e do Comandante de
 # Socorro — que entrou como 6 artigos NOVOS (INCLUIR), não como correção do se-art-4 (o artigo
 # só ganhou a correção "º Visando").
+# ── DELIBERAÇÕES sobre o quadro de dispositivos com texto semelhante ─────────────────────
+# Registro do que o Comando decidiu para cada grupo (sai no fim do quadro, como "deliberações
+# já registradas"); a aplicação em si está em TEXTOS_FINAIS_ATUAL/SUPRIMIR.
+DELIBERACOES_SEMELHANTES = [
+    {
+        'data': '2026-09-15',
+        'dispositivos': ['servico-operacional/se-art-114#5', 'servico-operacional/se-art-116#5'],
+        'assunto': 'Casos omissos repetidos (inciso VI do artigo do bombeiro militar de folga em ocorrência × parágrafo único do artigo dos pacientes com transtorno mental)',
+        'decisao': ('No inciso VI mantém-se apenas "A participação de pessoas e de outros órgãos no local da ocorrência '
+                    'deverá, inicialmente, ser analisada pelo Comandante do SOS"; o parágrafo único do outro artigo '
+                    'mantém a íntegra do texto.'),
+    },
+    {
+        'data': '2026-09-15',
+        'dispositivos': ['seguranca-contra-incendio/ro-art-3 × atribuicoes-funcoes/ro-art-15', 'atribuicoes-funcoes/ro-art-3..7 (caputs)',
+                         'seguranca-contra-incendio/ro-art-2 × ro-art-7', 'servico-operacional/se-art-23 (alíneas a/b do inciso II)',
+                         'atribuicoes-funcoes/ro-art-11 × seguranca-contra-incendio/ro-art-15'],
+        'assunto': 'Demais 5 grupos do quadro de dispositivos semelhantes de 15/09/2026',
+        'decisao': 'Permanecem como estão (mantidos os dois dispositivos em cada grupo). O quadro foi eliminado do pacote.',
+    },
+]
+
 ATENDIMENTOS_POR_ARTIGO = {
     'reg:atual:servico-operacional/se-art-4': _at(
         'incluido',
@@ -789,10 +820,11 @@ def gerar_versoes(structure):
         raise SystemExit(f'ATENDIMENTOS_POR_ARTIGO com `como` inválido: {invalidos}')
     consulta = copy.deepcopy(structure)
     consulta['versao'] = 'consulta'
-    consulta['curadoria'] = {'atendimentos_artigos': ATENDIMENTOS_POR_ARTIGO}
+    consulta['curadoria'] = {'atendimentos_artigos': ATENDIMENTOS_POR_ARTIGO, 'deliberacoes': DELIBERACOES_SEMELHANTES}
     atual = copy.deepcopy(structure)
     n_corr = aplicar_correcoes(atual)
     cont = aplicar_alteracoes(atual)
     atual['versao'] = 'atual'
-    atual['curadoria'] = {'correcoes': n_corr, **cont, 'atendimentos_artigos': ATENDIMENTOS_POR_ARTIGO}
+    atual['curadoria'] = {'correcoes': n_corr, **cont, 'atendimentos_artigos': ATENDIMENTOS_POR_ARTIGO,
+                          'deliberacoes': DELIBERACOES_SEMELHANTES}
     return consulta, atual

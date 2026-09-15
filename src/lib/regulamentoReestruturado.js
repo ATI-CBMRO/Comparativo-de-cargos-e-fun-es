@@ -1,9 +1,12 @@
 // Estrutura da Minuta do Regulamento de Serviço em PARTE GERAL (comum ao serviço operacional
 // e ao serviço técnico) + PARTE ESPECIAL (Título I — Serviço Operacional; Título II — Serviço
-// Técnico) + Disposições Finais, conforme sugestão do Cel. Luiz Eduardo (2026-09-11).
+// Técnico) + Disposições Finais (estrutura adotada em 2026-09-11).
 // Fonte ÚNICA da estrutura: usada pela tela do admin (download .docx) e pelo script
-// scripts/gerar_docx_regulamento_reestruturado.mjs. Cada folha é "tema/id" do
-// regulamento_structure.json (cenário atual). NÃO reescreve artigo: só reordena.
+// scripts/gerar_docx_regulamento_reestruturado.mjs. Cada folha é "tema/id" da VERSÃO EM
+// CONSULTA do regulamento_structure (cenário atual). NÃO reescreve artigo: só reordena.
+// Funciona com as DUAS versões: na atual, o artigo com `substitui` entra no lugar do id
+// antigo, o `incluido` (`<ancora>-cN`) entra logo após a âncora, e os `suprimidos` do
+// capítulo simplesmente não aparecem (2026-09-15, minuta publicável).
 import { articular, aplicarFinais } from './consultaRelatorios.js'
 import { articleLabel, romanize } from './minutaArticles.js'
 
@@ -105,16 +108,29 @@ export const NOTAS = [
 // recorte ficou sem posição ou foi usado duas vezes — a estrutura tem de cobrir 100%.
 // Retorna { blocos, depara, notas, totalArtigos, aplicados }.
 export function montarReestruturada(recorte, finals = null) {
-  const folhas = new Map()
+  const folhas = new Map()        // chave da consulta → [{leaf}] (o próprio ou seus substitutos)
+  const incluidos = new Map()     // chave da âncora → [{leaf}] (artigos novos, após a âncora)
+  const suprimidos = new Set()
   const numeroAntigo = new Map()
   let n = 0
   for (const cap of recorte.chapters) {
     const tema = cap.id.split(':').pop()
+    for (const s of cap.suprimidos ?? []) suprimidos.add(`${tema}/${s.id}`)
     for (const leaf of cap.articles) {
       n += 1
-      const chave = `${tema}/${leaf.id}`
-      folhas.set(chave, { leaf, tema, capituloAntigo: cap.chapterTitle })
-      numeroAntigo.set(chave, n)
+      const entrada = { leaf, tema, capituloAntigo: cap.chapterTitle }
+      if (leaf.substitui) {
+        const chave = `${tema}/${leaf.substitui}`
+        if (!folhas.has(chave)) folhas.set(chave, [])
+        folhas.get(chave).push(entrada)
+      } else if (leaf.incluido) {
+        const chave = `${tema}/${leaf.id.replace(/-c\d+$/, '')}`
+        if (!incluidos.has(chave)) incluidos.set(chave, [])
+        incluidos.get(chave).push(entrada)
+      } else {
+        folhas.set(`${tema}/${leaf.id}`, [entrada])
+      }
+      numeroAntigo.set(`${tema}/${leaf.id}`, n)
     }
   }
   const usados = new Set()
@@ -123,6 +139,16 @@ export function montarReestruturada(recorte, finals = null) {
   const novoPorChave = new Map()
   let numero = 0
   let aplicados = 0
+  const emitir = (f, chave, posicao) => {
+    let art = articular(f.leaf)
+    art = aplicarFinais(art, finals)
+    if (art.temFinal) aplicados += 1
+    numero += 1
+    blocos.push({ tipo: 'artigo', numero, art, leaf: f.leaf })
+    if (!novoPorChave.has(chave)) novoPorChave.set(chave, numero)
+    const antigo = numeroAntigo.get(`${f.tema}/${f.leaf.id}`)
+    depara.push({ novo: articleLabel(numero), antigo: antigo ? articleLabel(antigo) : '—', origem: `${f.capituloAntigo} / ${f.leaf.id}`, posicao })
+  }
   ESTRUTURA.forEach((parte, pi) => {
     blocos.push({ tipo: 'parte', texto: parte.parte, subtitulo: parte.subtitulo ?? null, quebraAntes: pi > 0 })
     for (const tit of parte.titulos) {
@@ -130,24 +156,19 @@ export function montarReestruturada(recorte, finals = null) {
       tit.capitulos.forEach((cap, ci) => {
         const rotuloCap = `CAPÍTULO ${romanize(ci + 1)}`
         blocos.push({ tipo: 'capitulo', rotulo: rotuloCap, texto: cap.titulo })
+        const posicao = [parte.parte.split(' — ')[0], tit.titulo?.split(' — ')[0], `${rotuloCap} — ${cap.titulo}`].filter(Boolean).join(' · ')
         for (const chave of cap.itens) {
-          const f = folhas.get(chave)
-          if (!f) throw new Error(`Folha não encontrada no recorte: ${chave}`)
           if (usados.has(chave)) throw new Error(`Folha usada duas vezes: ${chave}`)
           usados.add(chave)
-          let art = articular(f.leaf)
-          art = aplicarFinais(art, finals)
-          if (art.temFinal) aplicados += 1
-          numero += 1
-          blocos.push({ tipo: 'artigo', numero, art })
-          novoPorChave.set(chave, numero)
-          const posicao = [parte.parte.split(' — ')[0], tit.titulo?.split(' — ')[0], `${rotuloCap} — ${cap.titulo}`].filter(Boolean).join(' · ')
-          depara.push({ novo: articleLabel(numero), antigo: articleLabel(numeroAntigo.get(chave)), origem: `${f.capituloAntigo} / ${f.leaf.id}`, posicao })
+          const fs = folhas.get(chave)
+          if (!fs && !suprimidos.has(chave) && !incluidos.has(chave)) throw new Error(`Folha não encontrada no recorte: ${chave}`)
+          for (const f of fs ?? []) emitir(f, chave, posicao)
+          for (const f of incluidos.get(chave) ?? []) emitir(f, chave, posicao)
         }
       })
     }
   })
-  const sobras = [...folhas.keys()].filter(k => !usados.has(k))
+  const sobras = [...folhas.keys(), ...incluidos.keys()].filter(k => !usados.has(k))
   if (sobras.length) throw new Error(`Artigos do recorte sem posição na nova estrutura: ${sobras.join(', ')}`)
   const notas = NOTAS.map(([chave, nota]) => ({ artigo: novoPorChave.has(chave) ? articleLabel(novoPorChave.get(chave)) : '—', chave, nota }))
   return { blocos, depara, notas, totalArtigos: numero, aplicados }

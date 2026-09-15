@@ -173,6 +173,18 @@
     204/204, testes Python ok, build ok, docs de `docs/sei/` regenerados (análise §3 virou
     "Revisão de texto incorporada à versão atual", sem autoria). Conferência visual pendente
     (Revisão do Regulamento: Art. das escalas com alíneas; tela do Pacote).
+  - **2026-09-15 — minuta PUBLICÁVEL + quadro de dispositivos semelhantes** (pedido do
+    Tiago): a minuta em Parte Geral/Especial passou a sair da versão ATUAL (169 artigos;
+    `montarReestruturada` entende `substitui`/`incluido`/`suprimidos`), sem autoria da
+    estrutura, sem introdução, sem Anexos I/II, sem selos, com a 1ª letra de cada frase em
+    maiúscula (`formatacaoTexto.js`). Quadro de dispositivos semelhantes
+    (`dispositivosSemelhantes.js`): 636 dispositivos, 6 grupos (22 paralelos GBM × SGBM
+    descartados); o Tiago deliberou no mesmo dia — grupo dos casos omissos aplicado
+    (`se-art-114#5` só a 1ª frase; `DELIBERACOES_SEMELHANTES`), os 5 demais mantidos — e
+    mandou ELIMINAR o quadro (botão 6, .docx e .md removidos; lógica pura fica). Tela do Pacote: botão 4 virou
+    "publicável", botão 6 novo. Arquivo antigo `…_reestruturada_…docx` removido; novos
+    `…_parte_geral_e_especial.docx`, `Dispositivos_Semelhantes_para_Deliberacao.docx/.md`.
+    `npm test` 212/212, build ok. Conferência visual do .docx no Word pendente.
   - **Ficou de fora (pauta)**: 10 funções do Art. 26 sem seção (Cel. só redigiu 3);
     Subcmt/Auxiliares/B1–B6 do GBM e Subcmt/Auxiliares do SGBM (só fundamentação);
     reordenação Parte Geral/Especial segue só no .docx; incisos X/XIII do Oficial de Dia

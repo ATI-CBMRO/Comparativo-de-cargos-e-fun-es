@@ -118,6 +118,11 @@ assert 'atividades de defesa civil do Estado' in next(a for a in C['disposicoes-
 assert _se_a['ro-art-2-c1']['caput'] == _se_c['se-art-43']['caput'].split(' Comandante de Guarnição')[0], 'casos omissos movidos com texto idêntico'
 assert A['servico-operacional']['articles'][-1]['id'] == 'ro-art-2-c1', 'casos omissos fecham o capítulo'
 assert 'ciência ao Superior de Dia' in _se_a['se-art-132']['caput']
+# deliberação 15/09 (grupo 3 do quadro de semelhantes): inciso VI sem o parágrafo grudado
+assert _se_a['se-art-114']['items'][5]['text'].endswith('pelo Comandante do SOS.') and 'omissos' not in _se_a['se-art-114']['items'][5]['text']
+assert 'Parágrafo Único' in _se_c['se-art-114']['items'][5]['text'], 'a consulta mantém o texto lido'
+assert 'casos omissos' in _se_a['se-art-116']['items'][5]['text']
+assert atual['curadoria']['deliberacoes'][0]['dispositivos'][0] == 'servico-operacional/se-art-114#5'
 for c in atual['chapters']:
     for a in c['articles']:
         texto = ' '.join([a.get('caput', '')] + [it['text'] for it in a.get('items', [])])

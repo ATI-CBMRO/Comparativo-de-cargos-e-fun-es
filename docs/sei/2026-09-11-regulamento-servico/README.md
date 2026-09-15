@@ -1,10 +1,12 @@
 # Consulta da Minuta do Regulamento de Serviço — pacote para o SEI (2026-09-11)
 
 **Desde 2026-09-14 o pacote é gerado pelo próprio portal**: menu do admin → Regulamento Geral →
-"Pacote da consulta (.docx)" (`/regulamento/servico/consulta`). Os quatro botões (minuta em
+"Pacote da consulta (.docx)" (`/regulamento/servico/consulta`). Os cinco botões (minuta em
 consulta, relatório das interações, quadro de análise com os pareceres ✅/⛔ e textos finais do
-portal, minuta reestruturada) usam a mesma lógica dos scripts abaixo (`src/lib/consultaRelatorios.js`,
-`consultaDocx.js`, `regulamentoReestruturado.js`). Os scripts continuam valendo para gerar a pasta
+portal, minuta publicável em Parte Geral/Especial, comparativo) usam a mesma lógica dos scripts
+abaixo (`src/lib/consultaRelatorios.js`, `consultaDocx.js`, `regulamentoReestruturado.js`,
+`formatacaoTexto.js`). O quadro de dispositivos semelhantes (15/09) foi eliminado por decisão:
+dos 6 grupos, 1 foi aplicado (casos omissos, `DELIBERACOES_SEMELHANTES`) e 5 ficam como estão. Os scripts continuam valendo para gerar a pasta
 sem navegador (a partir da exportação do Firestore).
 
 Arquivos desta pasta e como regenerá-los (todos os comandos a partir da raiz do repositório).
@@ -12,8 +14,8 @@ Arquivos desta pasta e como regenerá-los (todos os comandos a partir da raiz do
 | Arquivo | O que é | Como gerar |
 |---|---|---|
 | `Minuta_Regulamento_de_Servico_CBMRO_versao_em_consulta.docx` | A minuta exatamente como o militar com acesso "Só Regulamento de Serviço" a leu no portal (`/regulamento/servico`, cenário LOB vigente): 7 capítulos, 171 artigos, numeração contínua, sem as correções posteriores (estas ficam na versão atual e no Comparativo). | `node scripts/gerar_docx_regulamento_servico.mjs [--finals .firestore-export/fs_finalTexts.json]` |
-| `Minuta_Regulamento_de_Servico_CBMRO_reestruturada_parte_geral_e_especial.docx` | Os MESMOS 171 artigos reordenados na estrutura sugerida pelo Cel. Luiz Eduardo (o mesmo autor das 271 sugestões): Parte I (Geral, comum aos dois serviços), Parte II (Especial — Título I Serviço Operacional, Título II Serviço Técnico), Parte III (Finais). Anexo I: de-para de numeração. Anexo II: ajustes de redação que a nova ordem exige (não aplicados). | `node scripts/gerar_docx_regulamento_reestruturado.mjs [--finals ...]` |
-| `depara_reestruturacao.json` | O de-para do Anexo I em JSON (para a consolidação final da numeração). | idem |
+| `Minuta_Regulamento_de_Servico_CBMRO_parte_geral_e_especial.docx` | **Minuta publicável** (15/09): a versão ATUAL (169 artigos) na estrutura Parte I (Geral, comum aos dois serviços), Parte II (Especial — Título I Serviço Operacional, Título II Serviço Técnico), Parte III (Finais). Sem autoria da estrutura, sem texto introdutório, sem anexos, sem selos de curadoria; primeira letra de cada frase em maiúscula (`capitalizarFrases`). Artigos reescritos entram no lugar dos antigos, os novos após a âncora, os suprimidos não aparecem. | `node scripts/gerar_docx_regulamento_reestruturado.mjs` |
+| `depara_reestruturacao.json` | De-para de numeração (minuta publicável ↔ versão em consulta) em JSON, para a consolidação final. | idem |
 | `Relatorio_Interacoes_Consulta_Regulamento_de_Servico.docx` | Relatório das sugestões recebidas dos **militares consultados** (autor, nome de guerra, unidade, dispositivo, trecho, texto) para anexar ao SEI, com a coluna **Aplicação** — o que a versão atual da minuta fez com o artigo comentado (reescrito / artigo novo / alterado / suprimido / mantido). Registros das contas de administração do portal são revisão interna, incorporada à versão atual, e não constam. | 1) exportar o Firestore: `$env:FB_EMAIL='...'; $env:FB_SENHA='...'; node scripts/exportar_firestore.mjs; Remove-Item Env:FB_SENHA` 2) `node scripts/gerar_sei_interacoes.mjs [--desde AAAA-MM-DD]` |
 | `interacoes_consulta.md` / `.json` | Mesmas interações em tabela Markdown / JSON, com a aplicação de cada uma (base da análise de mérito). | idem |
 | `Comparativo_Consulta_Regulamento_de_Servico.docx` | Versão em consulta (o texto lido) × versão atual, artigo a artigo (19 com correção de texto, 11 com texto alterado, 15 reescritos, 7 novos, 11 suprimidos, 3 propostas pendentes de deliberação). | `node scripts/gerar_docx_regulamento_servico.mjs` (sai junto com a minuta), tela "Comparativo da consulta" ou botão 5 do Pacote |

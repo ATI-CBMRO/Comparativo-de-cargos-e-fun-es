@@ -184,6 +184,21 @@ test('ESTRUTURA cobre 100% do recorte real, sem repetição, e mantém os 171 ar
   assert.ok(r.notas.every(n => n.artigo !== '—'), 'toda nota aponta para um artigo da proposta')
 })
 
+test('ESTRUTURA cobre a versão ATUAL: substitutos no lugar do antigo, incluídos após a âncora, suprimidos fora', () => {
+  const p = path.resolve('database/atual/regulamento_structure.json')
+  if (!fs.existsSync(p)) return
+  const recorte = filtrarEstruturaPorEscopo(JSON.parse(fs.readFileSync(p, 'utf8')), 'servico')
+  const r = montarReestruturada(recorte)
+  const total = recorte.chapters.reduce((n, c) => n + c.articles.length, 0)
+  assert.equal(r.totalArtigos, total)
+  const ids = r.blocos.filter(b => b.tipo === 'artigo').map(b => b.leaf.id)
+  assert.ok(ids.includes('mt-art-3-r1') && !ids.includes('mt-art-3'))
+  assert.equal(ids.indexOf('se-art-31-c1'), ids.indexOf('se-art-31') + 1, 'incluído logo após a âncora')
+  assert.ok(ids.includes('se-art-38-c1') && !ids.includes('se-art-38'), 'âncora suprimida não impede o incluído')
+  assert.equal(ids[ids.indexOf('ro-art-2-c1') - 1], 'ro-art-2')
+  assert.ok(!ids.includes('se-art-46'))
+})
+
 test('montarReestruturada falha alto se sobrar artigo', () => {
   const recorte = recorteFake()
   assert.throws(() => montarReestruturada(recorte), /Folha não encontrada|sem posição/)

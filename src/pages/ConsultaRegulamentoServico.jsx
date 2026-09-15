@@ -121,10 +121,12 @@ export default function ConsultaRegulamentoServico() {
         out = docxComparativo({ recorteConsulta: recorte, recorteAtual: filtrarEstruturaPorEscopo(atualCompleta, 'servico'), brasao })
         baixar(await Packer.toBlob(out.doc), `Comparativo_Consulta_Regulamento_de_Servico_${data}.docx`)
       } else {
-        out = docxMinutaReestruturada({ recorte, finals, brasao })
-        baixar(await Packer.toBlob(out.doc), `Minuta_Regulamento_de_Servico_reestruturada_${data}.docx`)
+        // Minuta publicável: versão ATUAL, sem selos nem anexos
+        out = docxMinutaReestruturada({ recorte: filtrarEstruturaPorEscopo(atualCompleta, 'servico'), brasao })
+        baixar(await Packer.toBlob(out.doc), `Minuta_Regulamento_de_Servico_${data}.docx`)
       }
-      if (out.aplicados != null) setAviso(`Gerado: ${out.artigos} artigos, ${out.aplicados} com texto final aplicado.`)
+      if (qual === 'reestruturada') setAviso(`Gerado: ${out.artigos} artigos na estrutura Parte Geral / Parte Especial (versão atual).`)
+      else if (out.aplicados != null) setAviso(`Gerado: ${out.artigos} artigos, ${out.aplicados} com texto final aplicado.`)
       else if (qual === 'comparativo') setAviso(`Gerado: ${out.resumo.reescrito} reescritos, ${out.resumo.incluido} novos, ${out.resumo.suprimido} suprimidos.`)
       else setAviso(`Gerado com ${interacoes.length} interações.`)
     } catch (e) {
@@ -143,7 +145,7 @@ export default function ConsultaRegulamentoServico() {
     { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos exatamente como o participante os leu, com os textos finais fechados aplicados.` },
     { k: 'relatorio', titulo: '2. Relatório das interações (SEI)', desc: `Só os militares consultados: quem sugeriu (nome, nome de guerra, unidade), dispositivo, trecho, texto integral e o que a versão atual fez com o artigo (${resumo.aplicadas} de ${resumo.total} sobre artigos alterados); resumos por participante, por capítulo e por aplicação.` },
     { k: 'quadro', titulo: '3. Quadro de análise e aplicação', desc: `Sugestões por artigo com a aplicação na versão atual, o parecer registrado no portal (relevante / descartada) e a situação do texto final. ${semParecer ? `${semParecer} sugestão(ões) ainda sem parecer.` : 'Todas as sugestões têm parecer.'}` },
-    { k: 'reestruturada', titulo: '4. Minuta reestruturada (Parte Geral e Parte Especial)', desc: 'Os mesmos artigos reordenados na estrutura sugerida pelo Cel. Luiz Eduardo, com a correspondência de numeração e as notas de ajuste a deliberar.' },
+    { k: 'reestruturada', titulo: '4. Minuta em Parte Geral e Parte Especial (publicável)', desc: 'A versão atual da minuta na estrutura Parte Geral / Parte Especial, pronta para publicação: sem autoria, sem introdução, sem anexos nem selos de curadoria, com a primeira letra de cada frase em maiúscula.' },
     { k: 'comparativo', titulo: '5. Comparativo: versão em consulta × versão atual', desc: 'Artigo a artigo, lado a lado: corrigidos, alterados, reescritos, incluídos e suprimidos na versão atual, com as propostas pendentes de deliberação marcadas. Também na tela "Comparativo da consulta".' },
   ]
 

@@ -22,6 +22,7 @@ const tabelaAplicacoes = (resumo) => tabela(
   [7000, 1300],
 )
 import { montarReestruturada } from './regulamentoReestruturado.js'
+import { capitalizarFrases } from './formatacaoTexto.js'
 import { compararVersoes, resumoComparativo, ROTULO_TIPO, rotuloArtigo } from './comparativoConsulta.js'
 
 const FONT = 'Times New Roman'
@@ -60,10 +61,12 @@ function tabela(linhas, larguras) {
   return new Table({ rows, width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: larguras })
 }
 
-function paragrafosArtigo(numero, art) {
+// `publicavel`: sem selos de curadoria e com a primeira letra de cada frase em maiúscula.
+function paragrafosArtigo(numero, art, { publicavel = false } = {}) {
   const ps = []
-  const capRuns = [run(`${articleLabel(numero)} `, { bold: true }), run(art.caput)]
-  if (art.temFinal) capRuns.push(run(' [texto final aplicado]', { italics: true, size: 18, color: '888888' }))
+  const fmt = (t) => (publicavel ? capitalizarFrases(t) : t)
+  const capRuns = [run(`${articleLabel(numero)} `, { bold: true }), run(fmt(art.caput))]
+  if (art.temFinal && !publicavel) capRuns.push(run(' [texto final aplicado]', { italics: true, size: 18, color: '888888' }))
   ps.push(new Paragraph({
     alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: art.incisos.length ? 60 : 120 },
     indent: art.incisos.length ? undefined : { firstLine: 708 }, children: capRuns,
@@ -72,7 +75,7 @@ function paragrafosArtigo(numero, art) {
     ps.push(new Paragraph({
       alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: 60 },
       indent: { left: inc.alinea ? 1134 : 708, hanging: inc.ownMarker ? 0 : 340 },
-      children: [run(inc.ownMarker ? inc.text : `${rotuloRomano(art.incisos, i)} - ${inc.text}`)],
+      children: [run(inc.ownMarker ? fmt(inc.text) : `${rotuloRomano(art.incisos, i)} - ${fmt(inc.text)}`)],
     }))
   })
   return ps
@@ -244,17 +247,12 @@ export function docxComparativo({ recorteConsulta, recorteAtual, brasao }) {
   return { doc: documento(children, 'Comparativo da consulta — Minuta do Regulamento de Serviço · CBMRO'), resumo: r }
 }
 
-// 4. Minuta reestruturada (Parte Geral + Parte Especial), com de-para e notas.
-export function docxMinutaReestruturada({ recorte, finals, brasao }) {
+// 4. Minuta reestruturada (Parte Geral + Parte Especial) — formato PUBLICÁVEL (2026-09-15):
+// sem autoria da estrutura, sem texto introdutório, sem anexos, sem selos de curadoria, com a
+// primeira letra de cada frase em maiúscula. Gerada a partir da versão ATUAL do recorte.
+export function docxMinutaReestruturada({ recorte, finals = null, brasao }) {
   const r = montarReestruturada(recorte, finals)
-  const children = cabecalho(
-    'Minuta do Regulamento de Serviço — estrutura em Parte Geral e Parte Especial',
-    'Proposta de reestruturação (sugestão do Cel. Luiz Eduardo) · mesmos artigos da versão em consulta, reordenados', brasao,
-  )
-  children.push(pJust(
-    'Esta versão reorganiza, sem alterar a redação, os artigos da minuta submetida à consulta: a Parte I reúne as normas comuns ao serviço operacional e ao serviço técnico; a Parte II traz os capítulos específicos de cada serviço (Título I — Serviço Operacional; Título II — Serviço Técnico); a Parte III, as disposições finais. Os ajustes de redação que a nova ordem passa a exigir estão no Anexo II e dependem de deliberação. O Anexo I traz a correspondência entre a numeração da versão em consulta e a desta proposta.',
-    { italics: true, size: 22, after: 240 },
-  ))
+  const children = cabecalho('Minuta do Regulamento de Serviço', null, brasao)
   for (const b of r.blocos) {
     if (b.tipo === 'parte') {
       children.push(pCentro(b.texto, { size: 30, before: 240, after: b.subtitulo ? 0 : 240, pageBreakBefore: b.quebraAntes }))
@@ -265,16 +263,8 @@ export function docxMinutaReestruturada({ recorte, finals, brasao }) {
       children.push(pCentro(b.rotulo, { after: 0, before: 240 }))
       children.push(pCentro(b.texto, { before: 0 }))
     } else {
-      children.push(...paragrafosArtigo(b.numero, b.art))
+      children.push(...paragrafosArtigo(b.numero, b.art, { publicavel: true }))
     }
   }
-  children.push(quebra())
-  children.push(pCentro('ANEXO I — CORRESPONDÊNCIA DE NUMERAÇÃO', { size: 26, after: 200 }))
-  children.push(pJust('Correspondência entre a numeração desta proposta e a da versão em consulta no portal.', { italics: true, size: 20 }))
-  children.push(tabela([['Art. (proposta)', 'Art. (em consulta)', 'Origem (capítulo em consulta / id)', 'Nova posição'], ...r.depara.map(d => [d.novo, d.antigo, d.origem, d.posicao])], [1300, 1300, 3300, 3400]))
-  children.push(quebra())
-  children.push(pCentro('ANEXO II — NOTAS DE ESTRUTURAÇÃO (AJUSTES DE REDAÇÃO A DELIBERAR)', { size: 26, after: 200 }))
-  children.push(pJust('Nenhum ajuste abaixo foi aplicado ao texto. São consequências da nova ordem (artigo que muda de alcance ao subir para a Parte Geral, duplicidades que ficam lado a lado, resíduos de extração da fonte) que passam a ficar visíveis e pedem decisão.', { italics: true, size: 20 }))
-  children.push(tabela([['Art. (proposta)', 'Id', 'Nota'], ...r.notas.map(n => [n.artigo, n.chave, n.nota])], [1300, 2600, 5400]))
-  return { doc: documento(children, 'Minuta reestruturada (Parte Geral + Parte Especial) — CBMRO · Portal de Legislação CBM'), artigos: r.totalArtigos, aplicados: r.aplicados }
+  return { doc: documento(children, 'Minuta do Regulamento de Serviço — CBMRO'), artigos: r.totalArtigos, aplicados: r.aplicados, depara: r.depara }
 }
