@@ -225,6 +225,18 @@
     quartel do 1º GBM; se-art-41 cobre também o Comandante de Guarnição. ESTRUTURA: capítulos
     "Do Oficial de Dia" + "…nas Unidades" fundidos em "DO OFICIAL DE DIA E DO COMANDANTE DE
     GUARNIÇÃO". 163 artigos, testes ok, build ok.
+  - **2026-09-15 — Parte I comum aos dois serviços** (pedido do Tiago, 3 tarefas): Cap. II
+    "objetivos e política do serviço" só tratava do operacional. (1) se-art-1 (finalidade)
+    e se-art-2 (objetivos, +inciso X da segurança contra incêndio) generalizados, ficam na
+    Parte I ("DOS OBJETIVOS DO REGULAMENTO"); (2) se-art-3 (política do serviço operacional)
+    migrou para abrir o Título I da Parte II; (3) artigo novo "política do serviço técnico"
+    (`seguranca-contra-incendio/ro-art-13-c1`) abre o Título II. `montarReestruturada`
+    aceita incluído citado pelo próprio id. Minuta publicável: 164 artigos; comparativo 50
+    corrigidos / 15 alterados / 15 reescritos / 7 novos / 16 suprimidos / 1 proposta (depois 51 / 0 com a decisão do Superior de Dia).
+  - **2026-09-15 — Superior de Dia: alcance estadual mantido** (decisão do Tiago). se-art-31-c1
+    deixa de ser proposta (caput "em todo o território estadual", § 2º sem a Capital); incisos
+    I, II e VI das competências sem "na Capital"; grafia do se-art-31 corrigida. Não resta
+    proposta pendente do CONDEG (propostas = 0 nos testes).
   - **Ficou de fora (pauta)**: 10 funções do Art. 26 sem seção (Cel. só redigiu 3);
     Subcmt/Auxiliares/B1–B6 do GBM e Subcmt/Auxiliares do SGBM (só fundamentação);
     reordenação Parte Geral/Especial segue só no .docx; incisos X/XIII do Oficial de Dia

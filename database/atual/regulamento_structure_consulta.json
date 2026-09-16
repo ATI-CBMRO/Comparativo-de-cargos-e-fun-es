@@ -23672,7 +23672,7 @@
     "atendimentos_artigos": {
       "reg:atual:servico-operacional/se-art-4": {
         "como": "incluido",
-        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1 — este último, as competências operacionais, atribuídas ao Oficial de Dia após a eliminação da figura do Comandante de Socorro em 15/09); o artigo de regime do Superior de Dia segue como proposta pendente de deliberação do CONDEG (Capital); o do Oficial de Dia foi decidido em 15/09 (só no 1º GBM)"
+        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1 — este último, as competências operacionais, atribuídas ao Oficial de Dia após a eliminação da figura do Comandante de Socorro em 15/09); as duas propostas de mérito foram decididas em 15/09: Superior de Dia mantém o alcance estadual; Oficial de Dia só no 1º GBM)"
       }
     },
     "deliberacoes": [
@@ -23708,6 +23708,27 @@
         ],
         "assunto": "Figuras do serviço eliminadas: Comandante de Área, Comandante de Socorro, Adjunto ao Oficial de Dia, Auxiliares do Comandante da Guarnição, Comandante de Guarda de Quartel, Auxiliar da Guarda de OBM; Reserva Técnica Operacional",
         "decisao": "Ficam Superior de Dia, Oficial de Dia, Comandante de Guarnição, Condutor e Operador de Viaturas, Operador de Rádio, Socorristas e Permanência. O Oficial de Dia existe só no 1º GBM (Capital); nas demais OBMs o Comandante de Guarnição, militar mais antigo de serviço, é o responsável pelo serviço operacional diário (parágrafo único do artigo das funções). As atribuições antes do Comandante de Socorro passam ao Oficial de Dia e, nas demais OBMs, ao Comandante de Guarnição. O capítulo da RTO foi suprimido."
+      },
+      {
+        "data": "2026-09-15",
+        "dispositivos": [
+          "servico-operacional/se-art-1",
+          "servico-operacional/se-art-2",
+          "servico-operacional/se-art-3",
+          "seguranca-contra-incendio/ro-art-13-c1 (novo)"
+        ],
+        "assunto": "Capítulo dos objetivos e da política do serviço (Parte I) só falava do serviço operacional",
+        "decisao": "A finalidade (se-art-1) e os objetivos do Regulamento (se-art-2) ficam na Parte I, generalizados para os dois serviços (inciso X sobre a segurança contra incêndio e pânico acrescido). A política do serviço operacional (se-art-3) migra para a Parte II como capítulo de abertura do Título I. O Título II ganha capítulo próprio de abertura, \"Da política do serviço técnico\", com artigo novo espelhado no se-art-3."
+      },
+      {
+        "data": "2026-09-15",
+        "dispositivos": [
+          "servico-operacional/se-art-31",
+          "servico-operacional/se-art-31-c1",
+          "servico-operacional/se-art-31-c2 (incisos I, II e VI)"
+        ],
+        "assunto": "Alcance do serviço de Superior de Dia (proposta da consulta: só na Capital)",
+        "decisao": "Mantido o alcance estadual (área de atuação em todo o território do Estado). O artigo de regime deixa de ser proposta pendente; as competências deixam de citar a Capital. Postos de Major e Tenente-Coronel mantidos."
       }
     ]
   }

@@ -96,7 +96,7 @@ for tema, blocos in INCLUIR.items():
 
 # 6. Propostas de mérito marcadas.
 propostas = [a for c in atual['chapters'] for a in c['articles'] if a.get('proposta')]
-assert len(propostas) == 1, f'esperava 1 proposta pendente de deliberação (Superior de Dia), achei {len(propostas)}'
+assert len(propostas) == 0, f'não deveria restar proposta pendente de deliberação, achei {len(propostas)}'
 assert all('PROPOSTA PENDENTE' in a['nota'] for a in propostas)
 
 # 7. Textos finais e redações ajustadas só na atual; inciso suprimido vira texto vazio no
@@ -151,6 +151,19 @@ assert not any(a['id'] in ('se-art-95', 'se-art-99') for a in A['servico-interno
 assert _se_a['se-art-4']['items'][1]['text'] == '' and 1 in _se_a['se-art-4']['incisos_suprimidos']
 assert _se_a['se-art-4']['items'][-1]['text'].startswith('Parágrafo único. O serviço de Oficial de Dia existe apenas no 1º Grupamento')
 assert 'QCG' not in ' '.join(it['text'] for it in _se_a['se-art-38-c2']['items']) and '1º Grupamento' in _se_a['se-art-38-c1']['caput']
+# 15/09: Parte I comum aos dois serviços — finalidade e objetivos generalizados; política do serviço técnico nova
+assert 'o serviço operacional e o serviço técnico' in _se_a['se-art-1']['caput'] and _se_a['se-art-1'].get('alterado') == 'redação'
+assert 'serviço operacional diário' in _se_c['se-art-1']['caput'], 'a consulta mantém a finalidade original'
+assert len(_se_a['se-art-2-r1']['items']) == 10 and _se_a['se-art-2-r1']['items'][9]['text'].startswith('X - uniformizar')
+assert _se_a['se-art-2-r1']['items'][7]['text'].endswith(';') and _se_a['se-art-2-r1']['items'][8]['text'].endswith('; e')
+_sci_a = {a['id']: a for c in atual['chapters'] if c['id'].endswith('seguranca-contra-incendio') for a in c['articles']}
+_sci_c = {a['id']: a for c in consulta['chapters'] if c['id'].endswith('seguranca-contra-incendio') for a in c['articles']}
+assert 'ro-art-13-c1' in _sci_a and _sci_a['ro-art-13-c1']['caput'].startswith('Entende-se por política do serviço técnico')
+assert 'ro-art-13-c1' not in _sci_c and not _sci_a['ro-art-13-c1'].get('proposta')
+# 15/09: Superior de Dia com alcance estadual
+assert 'todo o território estadual' in _se_a['se-art-31-c1']['caput'] and 'Capital' not in _se_a['se-art-31-c1']['caput']
+assert not any('Capital' in it['text'] for it in _se_a['se-art-31-c2']['items'])
+assert _se_a['se-art-31']['caput'].startswith('A área de atuação do serviço de Superior de Dia')
 assert 'se-art-43-c1' in {a['id'] for a in A['servico-operacional']['articles']} and 'se-art-43-c2' not in {a['id'] for a in A['servico-operacional']['articles']}
 for c in atual['chapters']:
     for a in c['articles']:

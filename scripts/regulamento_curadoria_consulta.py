@@ -19,10 +19,10 @@ consultados (coleção `suggestions`, contas com escopo "servico"): 271 registro
 Luiz Eduardo Oliveira Firmino (19 e 25/08/2026). Análise de mérito em
 docs/sei/2026-09-11-regulamento-servico/Analise_Interacoes_e_Proposta_de_Aplicacao.md.
 
-Decisões (2026-09-14): reescritas do Cel. só na atual; os três blocos que mudam regra de
-mérito (Superior de Dia só na Capital; Comandante de Socorro só no 1º GBM; Oficial de Dia
-como serviço interno do QCG) ENTRAM na atual marcados `proposta: True` com a nota
-"pendente de deliberação do CONDEG".
+Decisões (2026-09-14): reescritas do Cel. só na atual; os três blocos que mudavam regra de
+mérito entraram marcados `proposta: True` ("pendente de deliberação do CONDEG") e foram todos
+decididos em 15/09/2026: Comandante de Socorro eliminado; Oficial de Dia só no 1º GBM; Superior
+de Dia com alcance estadual mantido (se-art-31). Não resta proposta pendente.
 
 Este módulo só descreve; quem aplica é `build_regulamento_structure_atual.py` (gera
 database/atual/regulamento_structure_consulta.json e regulamento_structure.json).
@@ -80,6 +80,7 @@ CORRECOES = {
                                  ('§ 1º Diante do exposto acima, fica estabelecido que o CBMRO somente atuará ,', '§ 1º O CBMRO somente atuará,')]},
         # Sobra da quebra "Art. Nº" na extração do RISD de Sergipe.
         'se-art-1': {'caput': [('º O presente Regulamento', 'O presente Regulamento')]},
+        'se-art-31': {'caput': [('Serviço de Superior dia ao CBMRO', 'serviço de Superior de Dia ao CBMRO')]},
         'se-art-2': {'caput': [('º São objetivos', 'São objetivos')]},
         'se-art-3': {'caput': [('º Chama-se política', 'Chama-se política')]},
         'se-art-4': {'caput': [('º Visando a otimização', 'Visando a otimização')]},
@@ -170,6 +171,13 @@ CORRECOES_GLOBAIS = [
 # os demais — AR-03) e o índice fica registrado em `incisos_suprimidos`.
 TEXTOS_FINAIS_ATUAL = {
     'servico-operacional': {
+        # A Parte I da minuta publicável é comum ao serviço operacional e ao serviço técnico
+        # (Título II da Parte II); a finalidade não pode falar só do operacional (15/09).
+        'se-art-1': {
+            'caput': 'O presente Regulamento tem por finalidade dispor sobre o serviço operacional e o serviço técnico no âmbito do Corpo de Bombeiros Militar do Estado de Rondônia, estabelecendo princípios doutrinadores, uniformizando procedimentos e definindo competências para melhorar a eficiência da execução das ações, operações e atividades técnicas de caráter bombeiro militar.',
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
+            'nota': 'Finalidade estendida ao serviço técnico (15/09/2026): a Parte I da minuta publicável é comum aos dois serviços.',
+        },
         'se-art-24': {
             'caput': 'O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Subcomandante-Geral.',
             'items': {0: '§ 1º Ao final do serviço deverá assinar, via SEI, juntamente com o Oficial de Dia a Parte Diária.',
@@ -537,17 +545,19 @@ SUBSTITUIR = {
         'se-art-2': [_art(
             'São objetivos do presente Regulamento:',
             [
-                'I - estabelecer as competências, atribuições e responsabilidades das funções integrantes do Serviço Operacional do Corpo de Bombeiros Militar, definindo os procedimentos funcionais correspondentes às respectivas esferas de atuação;',
-                'II - delimitar as competências dos diferentes níveis de comando e das funções integrantes da estrutura operacional da Corporação, estabelecendo os respectivos limites de atuação e prevenindo conflitos, sobreposições ou lacunas de atribuições;',
-                'III - estabelecer os níveis de planejamento, coordenação, supervisão, execução e controle das atividades operacionais, observada a estrutura organizacional e a cadeia de comando da Corporação;',
-                'IV - assegurar a integração e a adequada articulação entre os diferentes escalões, Organizações Bombeiro Militar, Subunidades e demais frações operacionais da Corporação;',
-                'V - adequar a atuação operacional das Organizações Bombeiro Militar às políticas, diretrizes e determinações emanadas do Comando-Geral e dos demais escalões competentes;',
-                'VI - promover a padronização dos procedimentos operacionais e administrativos diretamente relacionados à execução do serviço operacional;',
-                'VII - promover a eficiência, a eficácia e a efetividade na execução das atividades operacionais, buscando o adequado emprego dos recursos humanos, materiais e operacionais disponíveis;',
-                'VIII - estabelecer fluxos de comunicação, encaminhamento e decisão entre as Organizações Bombeiro Militar e os diferentes níveis da cadeia de comando, respeitadas as competências legalmente estabelecidas; e',
-                'IX - proporcionar aos oficiais e praças orientações funcionais que subsidiem a tomada de decisão e a solução de situações decorrentes da execução das atividades operacionais, observados os limites de competência de cada função.',
+                'I - estabelecer as competências, atribuições e responsabilidades das funções integrantes do serviço operacional e do serviço técnico do Corpo de Bombeiros Militar, definindo os procedimentos funcionais correspondentes às respectivas esferas de atuação;',
+                'II - delimitar as competências dos diferentes níveis de comando e das funções integrantes da estrutura operacional e técnica da Corporação, estabelecendo os respectivos limites de atuação e prevenindo conflitos, sobreposições ou lacunas de atribuições;',
+                'III - estabelecer os níveis de planejamento, coordenação, supervisão, execução e controle das atividades operacionais e técnicas, observada a estrutura organizacional e a cadeia de comando da Corporação;',
+                'IV - assegurar a integração e a adequada articulação entre os diferentes escalões, Organizações Bombeiro Militar, órgãos do Sistema de Segurança Contra Incêndio e Pânico e demais frações da Corporação;',
+                'V - adequar a atuação das Organizações Bombeiro Militar e dos órgãos de atividades técnicas às políticas, diretrizes e determinações emanadas do Comando-Geral e dos demais escalões competentes;',
+                'VI - promover a padronização dos procedimentos operacionais, técnicos e administrativos diretamente relacionados à execução dos serviços de que trata este Regulamento;',
+                'VII - promover a eficiência, a eficácia e a efetividade na execução das atividades operacionais e técnicas, buscando o adequado emprego dos recursos humanos e materiais disponíveis;',
+                'VIII - estabelecer fluxos de comunicação, encaminhamento e decisão entre as Organizações Bombeiro Militar, os órgãos de atividades técnicas e os diferentes níveis da cadeia de comando, respeitadas as competências legalmente estabelecidas;',
+                'IX - proporcionar aos oficiais e praças orientações funcionais que subsidiem a tomada de decisão e a solução de situações decorrentes da execução das atividades operacionais e técnicas, observados os limites de competência de cada função; e',
+                'X - uniformizar os procedimentos de análise de projetos, vistoria, fiscalização e demais atividades de segurança contra incêndio e pânico, nos termos da legislação estadual e das Instruções Técnicas.',
             ],
             _F_SERV, heading='RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais',
+            nota='Objetivos generalizados em 15/09/2026 para alcançar também o serviço técnico (a Parte I da minuta publicável é comum aos dois serviços); inciso X acrescido. Texto de partida sugerido na consulta (RISD).',
         )],
         'se-art-3': [_art(
             'Entende-se por política do serviço operacional o conjunto de princípios, objetivos e diretrizes destinados a orientar o planejamento, a organização, a execução e o aperfeiçoamento das atividades operacionais do Corpo de Bombeiros Militar.',
@@ -577,27 +587,53 @@ _H_CS = 'RISD, Cap. VI — Regime e Escalas de Serviço · Do Oficial de Dia nas
 
 # (4) Inclusões — artigos NOVOS, inseridos APÓS o id indicado (id da versão em consulta).
 # {tema: [{'apos': id, 'artigos': [...]}, ...]}
+_H_SSCIP = 'Cap. VI — Do Sistema de Segurança Contra Incêndio e Pânico'
+
 INCLUIR = {
+    'seguranca-contra-incendio': [
+        {   # Política do serviço técnico — espelho da política do serviço operacional (se-art-3);
+            # abre o Título II da Parte II (posição explícita na ESTRUTURA, antes do ro-art-13).
+            'apos': 'ro-art-13',
+            'artigos': [
+                _art(
+                    'Entende-se por política do serviço técnico o conjunto de princípios, objetivos e diretrizes destinados a orientar o planejamento, a normatização, a execução e o aperfeiçoamento das atividades de segurança contra incêndio e pânico do Corpo de Bombeiros Militar.',
+                    [
+                        'Parágrafo único. Constituem objetivos básicos da política do serviço técnico:',
+                        'I - promover a proteção da vida, do patrimônio e do meio ambiente por meio da prevenção e da proteção contra incêndio e pânico nas edificações e áreas de risco;',
+                        'II - manter atualizadas e uniformes as normas e as Instruções Técnicas de segurança contra incêndio e pânico, observada a legislação estadual;',
+                        'III - padronizar, em todo o Estado, os procedimentos de análise de projetos, vistoria, fiscalização e emissão dos certificados e licenças de competência da Corporação;',
+                        'IV - assegurar a habilitação e a capacitação continuada dos oficiais e praças que atuam no Sistema de Segurança Contra Incêndio e Pânico;',
+                        'V - promover a celeridade, a transparência e a impessoalidade no atendimento ao cidadão e aos responsáveis pelas edificações e áreas de risco;',
+                        'VI - integrar as atividades técnicas às atividades operacionais, subsidiando o planejamento das operações com as informações sobre as edificações e áreas de risco;',
+                        'VII - fomentar programas de educação pública e a cultura de prevenção de incêndio e pânico; e',
+                        'VIII - orientar o emprego dos recursos do serviço técnico segundo critérios de necessidade, eficiência, segurança e capacidade de atendimento.',
+                    ],
+                    _F_CURADORIA, heading=_H_SSCIP,
+                    nota='Artigo novo (15/09/2026): abertura própria do Título II — Do Serviço Técnico, espelho da política do serviço operacional (se-art-3), que passou a abrir o Título I.',
+                ),
+            ],
+        },
+    ],
     'servico-operacional': [
         {   # Seção do Superior de Dia — depois do bloco de regime/escala (se-art-24..31)
             'apos': 'se-art-31',
             'artigos': [
                 _art(
-                    'O serviço de Superior de Dia será estabelecido exclusivamente na Capital do Estado, em regime de sobreaviso de 24 (vinte e quatro) horas, concorrendo à respectiva escala os oficiais dos postos de Major BM e Tenente-Coronel BM.',
+                    'O serviço de Superior de Dia será estabelecido com abrangência em todo o território estadual, em regime de sobreaviso de 24 (vinte e quatro) horas, concorrendo à respectiva escala os oficiais dos postos de Major BM e Tenente-Coronel BM.',
                     ['§ 1º Durante o período de serviço, o Superior de Dia deverá permanecer em condições de pronto acionamento, mantendo disponível meio de comunicação que permita seu imediato contato e comparecimento quando necessário.',
-                     '§ 2º A atuação do Superior de Dia ficará circunscrita à Capital do Estado, observadas as competências próprias do Comando Operacional e dos Comandantes das Organizações Bombeiro Militar.'],
-                    _F_SERV, heading=_H_SD, proposta=True,
-                    nota=NOTA_PROPOSTA + ': restringe o Superior de Dia à Capital e aos postos de Major/Tenente-Coronel; a versão em consulta prevê alcance em todo o território estadual (se-art-31) e a versão atual põe a coordenação no Subcomandante-Geral.',
+                     '§ 2º A atuação do Superior de Dia observará as competências próprias do Comando Operacional de Bombeiros e dos Comandantes das Organizações Bombeiro Militar.'],
+                    _F_SERV, heading=_H_SD,
+                    nota='Deliberação de 15/09/2026: mantido o alcance estadual do Superior de Dia (área de atuação do artigo anterior); o texto de partida sugerido na consulta restringia o serviço à Capital. Postos de Major e Tenente-Coronel conforme a sugestão.',
                 ),
                 _art(
                     'Compete ao Superior de Dia:',
                     [
-                        'I - exercer a supervisão superior do serviço operacional na Capital durante o período para o qual estiver escalado, respeitadas as competências dos comandantes das Organizações Bombeiro Militar;',
-                        'II - manter-se informado acerca das ocorrências de maior vulto, complexidade ou repercussão verificadas na Capital;',
+                        'I - exercer a supervisão superior do serviço operacional em todo o Estado durante o período para o qual estiver escalado, respeitadas as competências dos comandantes das Organizações Bombeiro Militar;',
+                        'II - manter-se informado acerca das ocorrências de maior vulto, complexidade ou repercussão verificadas no Estado;',
                         'III - comparecer às ocorrências de grande vulto, complexidade ou repercussão quando acionado, quando entender necessário ou por determinação de autoridade superior;',
                         'IV - acompanhar e supervisionar, quando necessário, o desenvolvimento das operações de maior vulto, respeitada a cadeia de comando operacional estabelecida neste Regulamento;',
                         'V - comunicar aos escalões superiores as ocorrências relevantes, extraordinárias ou de grande repercussão, mantendo-os informados acerca de sua evolução e das providências adotadas;',
-                        'VI - promover, quando necessário, a articulação entre as Organizações Bombeiro Militar sediadas na Capital para o atendimento de ocorrências que demandem emprego integrado de recursos;',
+                        'VI - promover, quando necessário, a articulação entre as Organizações Bombeiro Militar para o atendimento de ocorrências que demandem emprego integrado de recursos;',
                         'VII - solicitar ou determinar, dentro dos limites de sua competência, o emprego de recursos operacionais adicionais necessários ao atendimento de ocorrências de maior vulto;',
                         'VIII - adotar, durante o serviço, as providências urgentes de natureza operacional que não comportem adiamento, submetendo posteriormente a matéria à autoridade competente quando necessário;',
                         'IX - articular-se com outros órgãos e instituições envolvidos nas operações, quando a natureza ou dimensão da ocorrência assim exigir;',
@@ -753,6 +789,23 @@ DELIBERACOES_SEMELHANTES = [
                     'As atribuições antes do Comandante de Socorro passam ao Oficial de Dia e, nas demais OBMs, ao Comandante de Guarnição. '
                     'O capítulo da RTO foi suprimido.'),
     },
+    {
+        'data': '2026-09-15',
+        'dispositivos': ['servico-operacional/se-art-1', 'servico-operacional/se-art-2', 'servico-operacional/se-art-3',
+                         'seguranca-contra-incendio/ro-art-13-c1 (novo)'],
+        'assunto': 'Capítulo dos objetivos e da política do serviço (Parte I) só falava do serviço operacional',
+        'decisao': ('A finalidade (se-art-1) e os objetivos do Regulamento (se-art-2) ficam na Parte I, generalizados para os '
+                    'dois serviços (inciso X sobre a segurança contra incêndio e pânico acrescido). A política do serviço '
+                    'operacional (se-art-3) migra para a Parte II como capítulo de abertura do Título I. O Título II ganha '
+                    'capítulo próprio de abertura, "Da política do serviço técnico", com artigo novo espelhado no se-art-3.'),
+    },
+    {
+        'data': '2026-09-15',
+        'dispositivos': ['servico-operacional/se-art-31', 'servico-operacional/se-art-31-c1', 'servico-operacional/se-art-31-c2 (incisos I, II e VI)'],
+        'assunto': 'Alcance do serviço de Superior de Dia (proposta da consulta: só na Capital)',
+        'decisao': ('Mantido o alcance estadual (área de atuação em todo o território do Estado). O artigo de regime deixa de ser '
+                    'proposta pendente; as competências deixam de citar a Capital. Postos de Major e Tenente-Coronel mantidos.'),
+    },
 ]
 
 ATENDIMENTOS_POR_ARTIGO = {
@@ -762,8 +815,8 @@ ATENDIMENTOS_POR_ARTIGO = {
         'de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na '
         'versão atual como artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1 — este último, as '
         'competências operacionais, atribuídas ao Oficial de Dia após a eliminação da figura do Comandante '
-        'de Socorro em 15/09); o artigo de regime do Superior de Dia segue como proposta pendente de deliberação '
-        'do CONDEG (Capital); o do Oficial de Dia foi decidido em 15/09 (só no 1º GBM)',
+        'de Socorro em 15/09); as duas propostas de mérito foram decididas em 15/09: Superior de Dia mantém o alcance '
+        'estadual; Oficial de Dia só no 1º GBM)',
     ),
 }
 

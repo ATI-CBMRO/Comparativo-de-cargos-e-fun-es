@@ -182,6 +182,8 @@ test('ESTRUTURA cobre 100% do recorte real, sem repetição, e mantém os 171 ar
   assert.equal(r.depara.length, totalRecorte)
   assert.equal(r.blocos.filter(b => b.tipo === 'parte').length, ESTRUTURA.length)
   assert.ok(r.notas.every(n => n.artigo !== '—'), 'toda nota aponta para um artigo da proposta')
+  // capítulo cujo único artigo é um incluído da atual não aparece na consulta
+  assert.ok(!r.blocos.some(b => b.tipo === 'capitulo' && /POLÍTICA DO SERVIÇO TÉCNICO/.test(b.texto)))
 })
 
 test('ESTRUTURA cobre a versão ATUAL: substitutos no lugar do antigo, incluídos após a âncora, suprimidos fora', () => {
@@ -201,7 +203,15 @@ test('ESTRUTURA cobre a versão ATUAL: substitutos no lugar do antigo, incluído
   // capítulo da RTO (se-art-95..99) foi todo suprimido: some da minuta e a numeração dos capítulos não pula
   assert.ok(!r.blocos.some(b => b.tipo === 'capitulo' && /RESERVA TÉCNICA/.test(b.texto)))
   const caps = r.blocos.filter(b => b.tipo === 'capitulo').map(b => b.rotulo)
-  assert.equal(new Set(caps.slice(0, 6)).size, 6)
+  assert.equal(new Set(caps.slice(0, 5)).size, 5, 'Parte I: 5 capítulos numerados sem repetição')
+  // 15/09: política do serviço operacional abre o Título I; política do serviço técnico (artigo novo,
+  // posicionado pelo próprio id) abre o Título II, antes do ro-art-13 do SSCIP
+  const textos = r.blocos.map(b => b.tipo === 'artigo' ? b.leaf.id : b.texto ?? b.rotulo)
+  assert.equal(textos[textos.indexOf('TÍTULO I — DO SERVIÇO OPERACIONAL') + 1], 'DA POLÍTICA DO SERVIÇO OPERACIONAL')
+  assert.equal(textos[textos.indexOf('DA POLÍTICA DO SERVIÇO OPERACIONAL') + 1], 'se-art-3-r1')
+  assert.equal(textos[textos.indexOf('TÍTULO II — DO SERVIÇO TÉCNICO') + 1], 'DA POLÍTICA DO SERVIÇO TÉCNICO')
+  assert.equal(textos[textos.indexOf('DA POLÍTICA DO SERVIÇO TÉCNICO') + 1], 'ro-art-13-c1')
+  assert.equal(ids.filter(i => i === 'ro-art-13-c1').length, 1, 'incluído explícito não repete após a âncora')
 })
 
 test('montarReestruturada falha alto se sobrar artigo', () => {

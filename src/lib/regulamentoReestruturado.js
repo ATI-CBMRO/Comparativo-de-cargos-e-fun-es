@@ -5,8 +5,9 @@
 // scripts/gerar_docx_regulamento_reestruturado.mjs. Cada folha é "tema/id" da VERSÃO EM
 // CONSULTA do regulamento_structure (cenário atual). NÃO reescreve artigo: só reordena.
 // Funciona com as DUAS versões: na atual, o artigo com `substitui` entra no lugar do id
-// antigo, o `incluido` (`<ancora>-cN`) entra logo após a âncora, e os `suprimidos` do
-// capítulo simplesmente não aparecem (2026-09-15, minuta publicável).
+// antigo, o `incluido` (`<ancora>-cN`) entra logo após a âncora — salvo quando a ESTRUTURA o
+// cita pelo próprio id (`tema/<ancora>-cN`), caso em que entra ali (e o capítulo some na versão
+// em consulta, onde ele não existe) —, e os `suprimidos` do capítulo não aparecem (2026-09-15).
 import { articular, aplicarFinais } from './consultaRelatorios.js'
 import { articleLabel, romanize } from './minutaArticles.js'
 
@@ -28,7 +29,7 @@ export const ESTRUTURA = [
       {
         capitulos: [
           { titulo: 'DA FINALIDADE, DA ABRANGÊNCIA E DA COMPETÊNCIA', itens: [...mt(T.pre, 1, 2, 3), ...se(T.op, 1)] },
-          { titulo: 'DOS OBJETIVOS E DA POLÍTICA DO SERVIÇO', itens: se(T.op, 2, 3) },
+          { titulo: 'DOS OBJETIVOS DO REGULAMENTO', itens: se(T.op, 2) },
           { titulo: 'DO REGIME DE TRABALHO, DAS ESCALAS, DAS PERMUTAS E DAS DISPENSAS', itens: [...se(T.op, 23), ...se(T.dia, 109, 111), ...se(T.op, 112, 50, 51, 52), ...se(T.dia, 110)] },
           { titulo: 'DAS VIATURAS', itens: [...se(T.op, ...faixa(117, 128)), ...se(T.dia, 105, 106, 107, 108)] },
           { titulo: 'DO MATERIAL, DO EMPRÉSTIMO E DA RESPONSABILIDADE POR DANOS', itens: se(T.dia, 100, 101, 102, 103, 104, 92, 93, 94) },
@@ -44,6 +45,7 @@ export const ESTRUTURA = [
       {
         titulo: 'TÍTULO I — DO SERVIÇO OPERACIONAL',
         capitulos: [
+          { titulo: 'DA POLÍTICA DO SERVIÇO OPERACIONAL', itens: se(T.op, 3) },
           { titulo: 'DAS FUNÇÕES DO COMANDO OPERACIONAL DE BOMBEIROS', itens: ro(T.fun, ...faixa(1, 10)) },
           { titulo: 'DAS FUNÇÕES DO SERVIÇO OPERACIONAL DIÁRIO', itens: se(T.op, 4) },
           { titulo: 'DO SUPERIOR DE DIA', itens: se(T.op, ...faixa(24, 31)) },
@@ -64,6 +66,8 @@ export const ESTRUTURA = [
       {
         titulo: 'TÍTULO II — DO SERVIÇO TÉCNICO',
         capitulos: [
+          // artigo novo da versão atual, posicionado explicitamente (só existe na atual; na consulta o capítulo some)
+          { titulo: 'DA POLÍTICA DO SERVIÇO TÉCNICO', itens: [`${T.sci}/ro-art-13-c1`] },
           { titulo: 'DO SISTEMA DE SEGURANÇA CONTRA INCÊNDIO E PÂNICO', itens: ro(T.sci, 13) },
           { titulo: 'DA COORDENADORIA DE ATIVIDADES TÉCNICAS', itens: ro(T.sci, 1, 2, 3, 4, 5) },
           { titulo: 'DAS DIRETORIAS E DAS SEÇÕES DE ATIVIDADES TÉCNICAS', itens: ro(T.sci, ...faixa(6, 12)) },
@@ -109,6 +113,7 @@ export const NOTAS = [
 export function montarReestruturada(recorte, finals = null) {
   const folhas = new Map()        // chave da consulta → [{leaf}] (o próprio ou seus substitutos)
   const incluidos = new Map()     // chave da âncora → [{leaf}] (artigos novos, após a âncora)
+  const incluidosPorId = new Map() // chave do próprio incluído → {leaf} (posição explícita na ESTRUTURA)
   const suprimidos = new Set()
   const numeroAntigo = new Map()
   let n = 0
@@ -126,6 +131,7 @@ export function montarReestruturada(recorte, finals = null) {
         const chave = `${tema}/${leaf.id.replace(/-c\d+$/, '')}`
         if (!incluidos.has(chave)) incluidos.set(chave, [])
         incluidos.get(chave).push(entrada)
+        incluidosPorId.set(`${tema}/${leaf.id}`, entrada)
       } else {
         folhas.set(`${tema}/${leaf.id}`, [entrada])
       }
@@ -133,6 +139,8 @@ export function montarReestruturada(recorte, finals = null) {
     }
   }
   const usados = new Set()
+  const explicitos = new Set(ESTRUTURA.flatMap(p => p.titulos.flatMap(t => t.capitulos.flatMap(c => c.itens))).filter(k => /-c\d+$/.test(k)))
+  const aposAncora = chave => (incluidos.get(chave) ?? []).filter(f => !explicitos.has(`${f.tema}/${f.leaf.id}`))
   const blocos = []
   const depara = []
   const novoPorChave = new Map()
@@ -155,7 +163,7 @@ export function montarReestruturada(recorte, finals = null) {
       let numCap = 0
       for (const cap of tit.capitulos) {
         // capítulo cujos artigos foram todos suprimidos na versão atual não aparece (nem conta)
-        const temArtigo = cap.itens.some(chave => folhas.has(chave) || incluidos.has(chave))
+        const temArtigo = cap.itens.some(chave => folhas.has(chave) || incluidosPorId.has(chave) || aposAncora(chave).length)
         if (!temArtigo) { cap.itens.forEach(chave => usados.add(chave)); continue }
         numCap += 1
         const rotuloCap = `CAPÍTULO ${romanize(numCap)}`
@@ -164,10 +172,15 @@ export function montarReestruturada(recorte, finals = null) {
         for (const chave of cap.itens) {
           if (usados.has(chave)) throw new Error(`Folha usada duas vezes: ${chave}`)
           usados.add(chave)
+          if (explicitos.has(chave)) {   // incluído citado pelo próprio id: só existe na versão atual
+            const f = incluidosPorId.get(chave)
+            if (f) emitir(f, chave, posicao)
+            continue
+          }
           const fs = folhas.get(chave)
           if (!fs && !suprimidos.has(chave) && !incluidos.has(chave)) throw new Error(`Folha não encontrada no recorte: ${chave}`)
           for (const f of fs ?? []) emitir(f, chave, posicao)
-          for (const f of incluidos.get(chave) ?? []) emitir(f, chave, posicao)
+          for (const f of aposAncora(chave)) emitir(f, chave, posicao)
         }
       }
     }

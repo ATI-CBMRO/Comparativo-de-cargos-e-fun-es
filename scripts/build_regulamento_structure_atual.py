@@ -93,7 +93,7 @@ def main():
     for rotulo, s, p in (("consulta", consulta, OUT_CONSULTA_JSON), ("atual", atual, OUT_JSON)):
         n_art = sum(len(c.get("articles", [])) for c in s["chapters"])
         print(f"Gerado ({rotulo}): {p}")
-        contagens = {k: v for k, v in s["curadoria"].items() if not k.startswith("atendimentos")}
+        contagens = {k: v for k, v in s["curadoria"].items() if not k.startswith("atendimentos") and k != "deliberacoes"}
         print(f"  {len(s['chapters'])} temas · {n_art} artigos (isolados como reg:atual:) · curadoria: {contagens or 'nenhuma (texto lido pelos militares)'}")
 
 

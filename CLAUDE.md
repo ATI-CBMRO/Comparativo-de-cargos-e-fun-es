@@ -357,6 +357,18 @@ paralelas "Compete ao X" × "Compete ao Y" descartadas por padrão) gerou o quad
 `DELIBERACOES_SEMELHANTES` no módulo Python —, 5 mantidos como estão) e o quadro foi
 ELIMINADO do pacote (botão e .docx removidos; a lógica pura fica, testada, sem uso na tela).
 
+**Parte I comum aos dois serviços (15/09/2026, decisão do Tiago):** o capítulo "objetivos e
+política do serviço" só falava do operacional. Finalidade (se-art-1, `TEXTOS_FINAIS_ATUAL`) e
+objetivos (se-art-2, `SUBSTITUIR`, inciso X sobre segurança contra incêndio) ficam na Parte I
+generalizados; a política do serviço operacional (se-art-3) abre o Título I; o Título II abre
+com "Da política do serviço técnico", artigo NOVO `seguranca-contra-incendio/ro-art-13-c1`
+(`INCLUIR`, espelho do se-art-3). A ESTRUTURA pode citar um incluído pelo PRÓPRIO id
+(`tema/<ancora>-cN`): `montarReestruturada` o emite ali (não após a âncora) e, na versão em
+consulta, onde ele não existe, o capítulo simplesmente some. Registrado em
+`DELIBERACOES_SEMELHANTES` (a dos casos omissos tem de continuar em [0]). Na mesma data o
+Superior de Dia teve o alcance estadual mantido (se-art-31-c1 sem `proposta`): não resta
+proposta pendente do CONDEG, e os testes exigem `propostas == 0`.
+
 **Alíneas e "; e" na exibição (14/09/2026):** `isAlinea()` em `minutaArticles.js` — item que
 começa com "a) " é marcador próprio (`ownMarker`, `alinea: true`): sai verbatim, recuado, e
 NÃO conta na numeração. Todo renderizador usa `rotuloRomano(art.incisos, i)` (conta só os
