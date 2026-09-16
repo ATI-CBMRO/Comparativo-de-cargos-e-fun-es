@@ -395,7 +395,8 @@ sincronia. Os levantamentos históricos em docs/sei ganharam nota "Situação em
 Alterações de texto → `TEXTOS_FINAIS_ATUAL` (fundamento `_F_REV16`) e edições nas listas de
 `SUBSTITUIR`/`INCLUIR`; `_art(..., suprimir_itens=[i])` suprime inciso de artigo novo sem
 re-indexar. O bloco INCLUIR das competências operacionais do Oficial de Dia (se-art-43-c1) foi
-removido. Capítulo "Da passagem de serviço" (se-art-54 fora). Minuta publicável: 134 artigos.
+removido; as competências do Oficial de Dia (se-art-38-c2, Art. 62) foram consolidadas em 17 incisos
+no mesmo dia (sem `suprimir_itens`). Capítulo "Da passagem de serviço" (se-art-54 fora). Minuta publicável: 134 artigos.
 Capítulo "Do Superior de Dia" (Arts. 52–59, mesma data): ESTRUTURA cita os incluídos pelo id
 (`se-art-31-c1`, `-c2`) para abrirem o capítulo, depois se-art-26, 27, 28, 29, 25, 24 e a âncora
 suprimida se-art-31 (tem de continuar listada, senão `montarReestruturada` acusa sobra). Sobreaviso

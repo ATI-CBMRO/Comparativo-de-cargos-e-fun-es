@@ -199,7 +199,11 @@ assert 'Sistema de Comando de Incidentes' not in _se_c['se-art-136']['caput'], '
 _sci6 = {v: {a['id']: a for a in X['seguranca-contra-incendio']['articles']}['ro-art-6'] for v, X in (('c', C), ('a', A))}
 assert all(_sci6[v]['items'][0]['text'] == '' and 0 in _sci6[v]['incisos_suprimidos'] for v in 'ca'), 'parágrafo único das DAT suprimido nas duas versões'
 _od = _se_a['se-art-38-c2']
-assert _od['items'][18]['text'] == '' and 18 in _od['incisos_suprimidos'] and 'Sistema Eletrônico de Informações' in _od['items'][17]['text']
+# 16/09: competências consolidadas em 17 incisos, sem inciso suprimido; Parte Diária via SEI no XIV
+assert len(_od['items']) == 17 and not _od.get('incisos_suprimidos') and all(it['text'].strip() for it in _od['items'])
+assert _od['items'][0]['text'].startswith('I - presidir a passagem de serviço') and 'Sistema Eletrônico de Informações' in _od['items'][13]['text']
+assert _od['items'][-1]['text'] == 'XVII - cumprir e fazer cumprir as ordens e determinações dos escalões superiores relacionadas ao serviço.'
+assert not any('zelar pela disciplina, segurança e ordem' in it['text'] for it in _od['items'])
 assert 'Comandante do COB I' in _se_a['se-art-25']['caput'] and 'Comandante do COB I' in _se_a['se-art-26']['caput'] and 'processo eletrônico' in _se_a['se-art-26']['items'][0]['text']
 _dia_a = {a['id']: a for a in A['servico-interno-dia']['articles']}
 assert _dia_a['se-art-61']['caput'].startswith('A passagem de serviço, presidida pelo Oficial de Dia no 1º Grupamento') and 'Comandante do SGBM' in _dia_a['se-art-62']['caput']
