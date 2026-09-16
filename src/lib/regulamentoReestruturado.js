@@ -59,7 +59,7 @@ export const ESTRUTURA = [
           { titulo: 'DA RESERVA TÉCNICA OPERACIONAL', itens: se(T.dia, ...faixa(95, 99)) },
           { titulo: 'DO ATENDIMENTO E DO COMANDO DAS OCORRÊNCIAS', itens: se(T.op, ...faixa(129, 133)) },
           { titulo: 'DO BOMBEIRO MILITAR DE FOLGA EM OCORRÊNCIA', itens: se(T.op, 114, 115) },
-          { titulo: 'DAS OCORRÊNCIAS DE GRANDE PORTE E DO APOIO EXTERNO', itens: se(T.op, ...faixa(134, 147)) },
+          { titulo: 'DAS OCORRÊNCIAS DE GRANDE VULTO E DO APOIO EXTERNO', itens: se(T.op, ...faixa(134, 147)) },
           { titulo: 'DOS PROTOCOLOS ESPECIAIS DE ATENDIMENTO', itens: [...se(T.op, 116), ...ro(T.op, 2)] },
           { titulo: 'DO CENTRO INTEGRADO DE OPERAÇÕES E DO TELEDESPACHO', itens: ro(T.ciop, 1, 2, 3, 4) },
         ],
