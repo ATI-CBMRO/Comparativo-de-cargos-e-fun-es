@@ -1,5 +1,7 @@
 # Dispositivos transcritos da Lei nº 2.204/2009 nas sugestões do Cel. Luiz Eduardo
 
+> **Situação em 16/09/2026.** Levantamento sobre as SUGESTÕES recebidas (o que o oficial enviou), não sobre o texto da minuta; as figuras citadas seguem as decisões posteriores (Comandante de Socorro eliminado em 15/09).
+
 Cruzamento feito em 15/09/2026 entre as 271 sugestões do Cel. BM Luiz Eduardo Oliveira Firmino (consulta de 19 e 25/08/2026) e o texto da Lei nº 2.204/2009 (LOB) do acervo do portal (`database/markdown/Rondônia - LOB atual (2).md`), comparando o texto normalizado de cada registro com o texto corrido da lei. Resultado: **3 blocos, somando 60 registros, são transcrição literal da LOB**; os outros 211 registros são redação própria do oficial (competências do COB e de suas seções, do Adjunto, do Comandante de GBM e de SGBM, objetivos e política do serviço, Superior de Dia, Oficial de Dia e Comandante de Socorro), sem correspondência na lei.
 
 ## 1. Art. 2º da LOB (competências do CBMRO) — 26 registros, transcrição integral

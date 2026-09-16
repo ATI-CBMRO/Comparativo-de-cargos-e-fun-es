@@ -1,5 +1,7 @@
 # Análise das interações recebidas e proposta de aplicação — Minuta do Regulamento de Serviço
 
+> **Situação em 16/09/2026.** Documento de análise de 11–14/09; as decisões posteriores prevalecem: Comandante de Socorro eliminado (15/09), Oficial de Dia só no 1º GBM (15/09), Superior de Dia com alcance estadual (15/09), lote de revisão de 16/09 (supressões nas duas versões e alterações de texto na atual). O texto abaixo é registro do raciocínio da época e não descreve a minuta vigente.
+
 Data: 11 de setembro de 2026. Fonte: coleção de sugestões do Portal de Legislação CBM (exportada em 11/09/2026, 14h50), cruzada com o texto da minuta em consulta (171 artigos, cenário Lei nº 2.204/2009) e com os textos finais já fechados no portal. Este documento acompanha o "Relatório das interações recebidas" (lista integral, registro a registro) e as duas minutas anexas (versão em consulta e versão reestruturada em Parte Geral e Parte Especial).
 
 ## 1. Panorama da consulta

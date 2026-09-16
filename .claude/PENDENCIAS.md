@@ -237,6 +237,31 @@
     deixa de ser proposta (caput "em todo o território estadual", § 2º sem a Capital); incisos
     I, II e VI das competências sem "na Capital"; grafia do se-art-31 corrigida. Não resta
     proposta pendente do CONDEG (propostas = 0 nos testes).
+  - **2026-09-16 — lote de revisão do Tiago (PDF, 10 páginas)**: 29 artigos + parágrafo das DAT
+    suprimidos nas DUAS versões (`SUPRIMIR_AMBAS`; regra nova: supressão vale também para a
+    versão em consulta); ~25 alterações de texto só na atual (SEI nas permutas/Parte Diária,
+    Comandante do COB I, Boletim Interno, Guarnição de Serviço, Oficial de Dia/Comandante de
+    Guarnição ou do SGBM, passagem de serviço fora da Capital, SCI no lugar das áreas de
+    emergência); competências operacionais do Oficial de Dia (se-art-43-c1) removidas; XIX das
+    competências internas suprimido. Publicável 134 artigos; consulta 142. Interpretações a
+    confirmar: Arts. 99/100/104–106 tratados como EDIÇÃO (não supressão); inciso II do se-art-23
+    com alínea a) 6x18 e alínea b) mantida; "dar ciência ao Comandante do COB I" (com "ao") —
+    os três CONFIRMADOS pelo Tiago em 16/09; capítulo renomeado "Da preparação da prontidão e dos alojamentos".
+  - **2026-09-16 — revisão geral (menções a suprimidos + numeração)**: os 16 artigos suprimidos em
+    14–15/09 ainda ficavam na consulta e saíam no Comparativo como "(suprimido)" com o texto; agora
+    TODA supressão vale para as duas versões (consulta 126 artigos, comparativo sem "suprimido").
+    Textos introdutórios dos .docx/telas sem "exatamente como"; nota "Situação em 16/09" nos três
+    levantamentos históricos (.md). Numeração conferida: artigos 1..134 contínuos, capítulos
+    sequenciais por parte/título, incisos renumerados na renderização (rótulos embutidos são
+    descartados e recomputados só sobre os itens mantidos).
+  - **2026-09-16 — minuta completa do Regulamento Geral (admin, LOB ATUAL)**: a versão completa
+    é `database/atual/regulamento_structure.json` (tela `/regulamento` no cenário atual) e já
+    recebe toda a curadoria. Achado corrigido: os textos finais do Firestore (agosto)
+    sobrescreviam 5 dispositivos revistos em 16/09 (se-art-24 §1/§2, 25, 26, 29) — wizard e
+    .docx pulam artigos fechados pela curadoria. O cenário FUTURA (LOB em aprovação) NÃO recebe a
+    curadoria (determinação do Tiago): uma curadoria da futura foi feita e desfeita no mesmo dia.
+  - **2026-09-16 — cenário padrão do portal = 'atual'** (`DEFAULT_SCENARIO` em `src/lib/scenario.js`).
+    Quem já tinha 'futura' gravado no localStorage continua nele até trocar no seletor (URL > armazenado > padrão).
   - **Ficou de fora (pauta)**: 10 funções do Art. 26 sem seção (Cel. só redigiu 3);
     Subcmt/Auxiliares/B1–B6 do GBM e Subcmt/Auxiliares do SGBM (só fundamentação);
     reordenação Parte Geral/Especial segue só no .docx; incisos X/XIII do Oficial de Dia

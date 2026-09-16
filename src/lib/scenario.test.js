@@ -4,15 +4,15 @@ import { SCENARIOS, DEFAULT_SCENARIO, normalizeScenario, resolveScenario, scenar
 
 test('SCENARIOS e padrão', () => {
   assert.deepEqual([...SCENARIOS], ['futura', 'atual'])
-  assert.equal(DEFAULT_SCENARIO, 'futura')
+  assert.equal(DEFAULT_SCENARIO, 'atual')
 })
 
 test('normalizeScenario aceita válidos e cai no padrão nos inválidos', () => {
   assert.equal(normalizeScenario('atual'), 'atual')
   assert.equal(normalizeScenario('futura'), 'futura')
-  assert.equal(normalizeScenario('xpto'), 'futura')
-  assert.equal(normalizeScenario(null), 'futura')
-  assert.equal(normalizeScenario(undefined), 'futura')
+  assert.equal(normalizeScenario('xpto'), 'atual')
+  assert.equal(normalizeScenario(null), 'atual')
+  assert.equal(normalizeScenario(undefined), 'atual')
 })
 
 test('resolveScenario prioriza a URL quando válida', () => {
@@ -26,8 +26,8 @@ test('resolveScenario usa o armazenamento quando a URL é inválida/ausente', ()
 })
 
 test('resolveScenario cai no padrão quando URL e armazenamento são inválidos', () => {
-  assert.equal(resolveScenario(null, null), 'futura')
-  assert.equal(resolveScenario('', 'nada'), 'futura')
+  assert.equal(resolveScenario(null, null), 'atual')
+  assert.equal(resolveScenario('', 'nada'), 'atual')
 })
 
 test('scenarioDbUrl: futura usa a raiz de /database (caminho de hoje)', () => {

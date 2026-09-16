@@ -95,7 +95,7 @@ function documento(children, rodape) {
   })
 }
 
-// 1. Minuta em consulta — o recorte exatamente como o participante vê, com finais aplicados.
+// 1. Minuta em consulta — o recorte como o participante viu, sem os dispositivos suprimidos (16/09), com finais aplicados.
 export function docxMinutaConsulta({ completa, recorte, finals, brasao }) {
   const fora = resumoForaDoEscopo(completa, recorte, 'servico')
   const total = recorte.chapters.reduce((n, c) => n + c.articles.length, 0)
@@ -104,7 +104,7 @@ export function docxMinutaConsulta({ completa, recorte, finals, brasao }) {
     'Versão em consulta no Portal de Legislação CBM · cenário: Lei nº 2.204/2009 (LOB vigente)', brasao,
   )
   children.push(pJust(
-    `Este documento reproduz a minuta tal como publicada no portal para os militares com acesso restrito ao Regulamento de Serviço, sem as correções e alterações posteriores da curadoria (que estão na versão atual e no Comparativo): ${total} artigos, reunindo o serviço operacional (COB), a Central de Operações e o teledespacho, o serviço interno e de dia, as atribuições das funções (somente COB e CAT) e o serviço técnico de segurança contra incêndio e pânico (CAT). Ficam para o Regulamento Geral completo ${fora.artigosEmCapitulosFora} artigos de ${fora.capitulosFora.length} capítulos${fora.artigosCortadosNoEscopo ? ` e ${fora.artigosCortadosNoEscopo} artigos das funções dos demais órgãos` : ''}. A numeração é provisória. Textos finais fechados no portal estão aplicados e sinalizados; fechamentos sem texto mantêm o original.`,
+    `Este documento reproduz a minuta publicada no portal para os militares com acesso restrito ao Regulamento de Serviço, sem as correções e alterações posteriores da curadoria (que estão na versão atual e no Comparativo) e sem os dispositivos que a curadoria suprimiu: ${total} artigos, reunindo o serviço operacional (COB), a Central de Operações e o teledespacho, o serviço interno e de dia, as atribuições das funções (somente COB e CAT) e o serviço técnico de segurança contra incêndio e pânico (CAT). Ficam para o Regulamento Geral completo ${fora.artigosEmCapitulosFora} artigos de ${fora.capitulosFora.length} capítulos${fora.artigosCortadosNoEscopo ? ` e ${fora.artigosCortadosNoEscopo} artigos das funções dos demais órgãos` : ''}. A numeração é provisória. Textos finais fechados no portal estão aplicados e sinalizados; fechamentos sem texto mantêm o original.`,
     { italics: true, size: 22, after: 240 },
   ))
   let numero = 0
@@ -225,7 +225,7 @@ export function docxComparativo({ recorteConsulta, recorteAtual, brasao }) {
     'Curadoria das sugestões recebidas na consulta aos militares (ago/2026)', brasao,
   )
   children.push(pJust(
-    `A coluna da esquerda traz a minuta exatamente como foi disponibilizada aos militares; a da direita, a versão atual, produzida após a consulta (revisão de texto da curadoria e sugestões recebidas). Resumo: ${r.igual} artigos sem alteração, ${r.corrigido} com correção de texto (grafia, concordância, resíduos de extração, nomenclatura), ${r.alterado} com texto alterado, ${r.reescrito} reescritos, ${r.incluido} incluídos e ${r.suprimido} suprimidos; ${r.propostas} artigo(s) marcado(s) como proposta pendente de deliberação do CONDEG. Artigos sem alteração aparecem só pelo número, para o documento caber.`,
+    `A coluna da esquerda traz a minuta como foi disponibilizada aos militares; a da direita, a versão atual, produzida após a consulta (revisão de texto da curadoria e sugestões recebidas). Os dispositivos suprimidos pela curadoria não constam de nenhuma das colunas. Resumo: ${r.igual} artigos sem alteração, ${r.corrigido} com correção de texto (grafia, concordância, resíduos de extração, nomenclatura), ${r.alterado} com texto alterado, ${r.reescrito} reescritos e ${r.incluido} incluídos; ${r.propostas} artigo(s) marcado(s) como proposta pendente de deliberação do CONDEG. Artigos sem alteração aparecem só pelo número, para o documento caber.`,
     { italics: true, size: 22, after: 240 },
   ))
   for (const cap of comparacao) {

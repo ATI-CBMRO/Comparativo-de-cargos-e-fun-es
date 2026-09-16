@@ -1,5 +1,7 @@
 # Resíduos de outros Corpos de Bombeiros na minuta publicável — levantamento de 15/09/2026
 
+> **Situação em 16/09/2026.** Levantamento histórico: os números "Art. N" são os da minuta publicável de 15/09 (169 artigos) e não valem mais. Os itens 8 (RTO), 21 (Art. 130), a parte do item 4 no Art. 120, VI e os itens sobre "Comandante de Socorro" referem-se a dispositivos ou figuras que deixaram de existir na minuta (supressões de 15 e 16/09, aplicadas nas duas versões); os demais foram aplicados na versão atual.
+
 Varredura dos 169 artigos (636 dispositivos) da minuta publicável em Parte Geral / Parte Especial, com leitura integral dos 117 artigos importados verbatim de outros CBMs (112 do RISD do CBMSE, atual. 2022; 5 do Regulamento Geral do CBMMT, Portaria nº 009/BM-8/2013) e conferência de cada sigla e nome de órgão contra a Lei nº 2.204/2009 e o organograma vigente do CBMRO. Numeração da minuta publicável. **Nada foi alterado no texto**: este é o quadro para decidir as correções.
 
 ## A. Termos do RISD de Sergipe sem correspondência em Rondônia — corrigir

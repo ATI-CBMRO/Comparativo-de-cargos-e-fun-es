@@ -1,7 +1,7 @@
 // Lógica pura do cenário (LOB atual × LOB futura). Sem React — testável com node --test.
-// 'futura' = LOB em aprovação (arquivos de dados de hoje). 'atual' = LOB vigente (Fase 2).
+// 'futura' = LOB em aprovação (arquivos de dados de hoje). 'atual' = LOB vigente (Fase 2) — padrão desde 16/09/2026.
 export const SCENARIOS = Object.freeze(['futura', 'atual'])
-export const DEFAULT_SCENARIO = 'futura'
+export const DEFAULT_SCENARIO = 'atual'   // 16/09/2026: o trabalho corrente é a LOB vigente (curadoria do Regulamento de Serviço)
 
 export function normalizeScenario(value) {
   return SCENARIOS.includes(value) ? value : DEFAULT_SCENARIO

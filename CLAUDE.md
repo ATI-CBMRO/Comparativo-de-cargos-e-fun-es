@@ -46,7 +46,8 @@ python scripts/build_states_data.py        # markdown/*.md + organs_detail/*.jso
 python scripts/build_dpo_cot_comparison.py # organs_detail/*.json -> database/comparativo_dpo_cot.json
 python scripts/build_minuta_comparison.py  # + minuta_enrichment.py + lob_enrichment.py -> database/comparativo_minuta.json
 python scripts/build_minuta_structure.py   # organs_detail/ro.json + minuta_enrichment.py -> database/minuta_structure.json
-python scripts/build_regulamento_structure.py # -> database/regulamento_structure.json
+python scripts/build_regulamento_structure.py # -> database/regulamento_structure.json (futura, sem curadoria)
+python scripts/build_regulamento_structure_atual.py # futura + curadoria da consulta -> atual/regulamento_structure.json e atual/regulamento_structure_consulta.json
 ```
 
 `build_organs_detail` antes de `build_states_data` (este enriquece a árvore com os
@@ -191,7 +192,10 @@ python scripts/build_minuta_comparison_atual.py      # comparativo do atual (SÓ
   competências VERBATIM da Lei 2.204/2009. Estrutura **validada pelo organograma oficial**
   (`docs/curadoria/lob-atual-ro/` — PDF + `estrutura-vigente-validada.md`). É a fonte da verdade.
 - `build_regulamento_structure_atual.py` **lê o `regulamento_structure.json` da futura** e
-  re-carimba os ids (não chama o builder da futura, que reescreveria o arquivo dela).
+  re-carimba os ids (não chama o builder da futura, que reescreveria o arquivo dela). A curadoria
+  da consulta (Regulamento de Serviço) é da LOB ATUAL: vale só para `database/atual/` — o cenário
+  futura fica intocado (determinação do Tiago, 16/09/2026; uma tentativa de curar a futura foi
+  desfeita no mesmo dia).
 
 **⚠️ ARMADILHA (já mordeu):** `build_competencia_section` e `build_cargo_sections` de
 `build_minuta_structure.py` chamam `enrich_organ_for`/`enrich_for` — enriquecimento de
@@ -307,8 +311,12 @@ Specs/planos: `docs/superpowers/specs/2026-07-21-regulamento-geral-2-partes-desi
 aplicando `scripts/regulamento_curadoria_consulta.py` (curadoria após a consulta aos
 militares, ago/2026):
 - `database/atual/regulamento_structure_consulta.json` — **versão em consulta**: a minuta
-  EXATAMENTE como foi lida pelos militares, intocada (nem correção de grafia — decisão de
-  14/09/2026, 2ª). Ids idênticos aos originais — é onde os comentários do Firestore
+  como foi lida pelos militares, sem correção de grafia (decisão de 14/09/2026, 2ª), MENOS
+  TUDO o que a curadoria suprimiu (`SUPRIMIR`, `SUPRIMIR_AMBAS`, `ITENS_SUPRIMIR_AMBAS`, via
+  `aplicar_supressoes_comuns`; determinação de 16/09: "o que for suprimido na atual deve ser
+  suprimido na minuta disponibilizada para sugestões", e nenhum relatório, comparativo ou
+  documento menciona texto suprimido — o Comparativo não tem mais entradas "suprimido").
+  Ids idênticos aos originais — é onde os comentários do Firestore
   (`editId#index`) ficam ancorados. Lida por `/regulamento/servico` e `/regulamento/servico/subsidio`.
 - `database/atual/regulamento_structure.json` — **versão atual**: tudo o que a curadoria fez:
   `CORRECOES` + `CORRECOES_GLOBAIS` (grafia, concordância, citação, resíduos de extração,
@@ -368,6 +376,26 @@ consulta, onde ele não existe, o capítulo simplesmente some. Registrado em
 `DELIBERACOES_SEMELHANTES` (a dos casos omissos tem de continuar em [0]). Na mesma data o
 Superior de Dia teve o alcance estadual mantido (se-art-31-c1 sem `proposta`): não resta
 proposta pendente do CONDEG, e os testes exigem `propostas == 0`.
+
+**Textos finais do Firestore × curadoria (16/09/2026):** no wizard do Regulamento Geral e no seu
+.docx, `applyFinalsToArticles` pula os artigos que a curadoria fechou
+(`editIdsFechadosPelaCuradoria` em `minutaFinals.js`: corrigido/alterado/substitui/incluido) —
+os finais de agosto são anteriores e devolviam texto velho (se-art-24/25/26/29). Os finais só
+valem para artigos intocados pela curadoria.
+
+**Lote de 16/09/2026 (PDF "Faça as seguintes modificações nos textos"):** os números "Art. N"
+que o usuário cita são os da MINUTA PUBLICÁVEL (de-para em `docs/sei/.../depara_reestruturacao.json`
+ou via `montarReestruturada`), não os da versão em consulta. Supressões → `SUPRIMIR_AMBAS`
+(29 artigos) e `ITENS_SUPRIMIR_AMBAS` (parágrafo das DAT); desde a revisão geral do mesmo dia
+TODAS as supressões (também `SUPRIMIR`) saem das duas versões, registradas em `chapter.suprimidos`
+com `ambas: True` (teste 3 exige igualdade dos registros entre as versões; comparativo com
+`suprimido === 0`). Os incisos que `TEXTOS_FINAIS_ATUAL` suprime (`items: {i: None}`) também
+saem da consulta via `ITENS_SUPRIMIR_AMBAS` (se-art-4, 127, 135) — manter as duas tabelas em
+sincronia. Os levantamentos históricos em docs/sei ganharam nota "Situação em 16/09".
+Alterações de texto → `TEXTOS_FINAIS_ATUAL` (fundamento `_F_REV16`) e edições nas listas de
+`SUBSTITUIR`/`INCLUIR`; `_art(..., suprimir_itens=[i])` suprime inciso de artigo novo sem
+re-indexar. O bloco INCLUIR das competências operacionais do Oficial de Dia (se-art-43-c1) foi
+removido. Capítulo "Da passagem de serviço" (se-art-54 fora). Minuta publicável: 134 artigos.
 
 **Alíneas e "; e" na exibição (14/09/2026):** `isAlinea()` em `minutaArticles.js` — item que
 começa com "a) " é marcador próprio (`ownMarker`, `alinea: true`): sai verbatim, recuado, e

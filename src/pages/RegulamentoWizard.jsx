@@ -10,7 +10,7 @@ import { PARTE_HEADERS, parteByChapterTitle } from '../lib/regulamentoPartes.js'
 import { useAuth } from '../lib/auth.jsx'
 import { subscribeFinalTexts } from '../lib/reviewData.js'
 import { filterFinalsByDoc, filterFinalsByScenario } from '../lib/reviewGroup.js'
-import { applyFinalsToArticles } from '../lib/minutaFinals.js'
+import { applyFinalsToArticles, editIdsFechadosPelaCuradoria } from '../lib/minutaFinals.js'
 import AvisoSincronizacao from '../components/AvisoSincronizacao.jsx'
 
 const STEP_LABELS = ['Visão geral', 'Revisão & curadoria', 'Download']
@@ -231,7 +231,8 @@ export default function RegulamentoWizard() {
   }
 
   const articles = buildArticles(data, edits, isExcluded)
-  const skipEditIds = new Set(Object.keys(edits))
+  // edições locais + artigos fechados pela curadoria (o texto final antigo não vale mais)
+  const skipEditIds = new Set([...Object.keys(edits), ...editIdsFechadosPelaCuradoria(data)])
   const { articles: articlesFinais, appliedCount } = applyFinalsToArticles(articles, finalsDoDoc, { skipEditIds })
   const renderedAdvanced = new Set()
   const parteDe = parteByChapterTitle(data)

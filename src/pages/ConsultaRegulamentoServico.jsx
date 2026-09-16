@@ -142,7 +142,7 @@ export default function ConsultaRegulamentoServico() {
 
   const semParecer = resumo.pareceres.pendente
   const botoes = [
-    { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos exatamente como o participante os leu, com os textos finais fechados aplicados.` },
+    { k: 'minuta', titulo: '1. Minuta em consulta', desc: `Os ${recorte.chapters.length} capítulos e ${totalArtigos} artigos como o participante os leu, com os textos finais fechados aplicados.` },
     { k: 'relatorio', titulo: '2. Relatório das interações (SEI)', desc: `Só os militares consultados: quem sugeriu (nome, nome de guerra, unidade), dispositivo, trecho, texto integral e o que a versão atual fez com o artigo (${resumo.aplicadas} de ${resumo.total} sobre artigos alterados); resumos por participante, por capítulo e por aplicação.` },
     { k: 'quadro', titulo: '3. Quadro de análise e aplicação', desc: `Sugestões por artigo com a aplicação na versão atual, o parecer registrado no portal (relevante / descartada) e a situação do texto final. ${semParecer ? `${semParecer} sugestão(ões) ainda sem parecer.` : 'Todas as sugestões têm parecer.'}` },
     { k: 'reestruturada', titulo: '4. Minuta em Parte Geral e Parte Especial (publicável)', desc: 'A versão atual da minuta na estrutura Parte Geral / Parte Especial, pronta para publicação: sem autoria, sem introdução, sem anexos nem selos de curadoria, com a primeira letra de cada frase em maiúscula.' },

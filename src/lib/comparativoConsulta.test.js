@@ -47,5 +47,5 @@ test('recorte real: toda entrada da atual e da consulta aparece uma vez', () => 
   assert.equal(entradas.filter(e => e.depois).length, nAtual)
   assert.equal(entradas.filter(e => e.antes).length, nConsulta)
   const r = resumoComparativo(out)
-  assert.ok(r.reescrito >= 13 && r.incluido >= 7 && r.suprimido >= 8 && r.propostas === 0, JSON.stringify(r))
+  assert.ok(r.reescrito >= 13 && r.incluido >= 6 && r.suprimido === 0 && r.propostas === 0, JSON.stringify(r))
 })

@@ -79,7 +79,7 @@ export default function ComparativoConsulta() {
         <div className="page-header-left">
           <h2 className="page-title">Comparativo da consulta — Regulamento de Serviço</h2>
           <p className="page-subtitle">
-            Esquerda: a minuta exatamente como foi disponibilizada aos militares. Direita: a versão atual, após a
+            Esquerda: a minuta como foi disponibilizada aos militares (sem os dispositivos suprimidos pela curadoria). Direita: a versão atual, após a
             revisão de texto e as sugestões. Numeração de cada versão.
           </p>
           <p className="rev-progresso">
