@@ -187,7 +187,7 @@ TEXTOS_FINAIS_ATUAL = {
             'nota': 'Finalidade estendida ao serviço técnico (15/09/2026): a Parte I da minuta publicável é comum aos dois serviços.',
         },
         'se-art-24': {
-            'caput': 'O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Subcomandante-Geral.',
+            'caput': 'O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Comandante do COB I.',  # 16/09: Comandante do COB I no lugar do Subcomandante-Geral (Art. 52 da publicável)
             'items': {0: '§ 1º Ao final do serviço deverá assinar, via Sistema Eletrônico de Informações - SEI, juntamente com o Oficial de Dia a Parte Diária.',
                       1: '§ 2º O regime do serviço poderá sofrer alterações mediante publicação em Boletim Geral por determinação do Comandante-Geral ou pelo Subcomandante-Geral em virtude das necessidades do momento.'},
         },

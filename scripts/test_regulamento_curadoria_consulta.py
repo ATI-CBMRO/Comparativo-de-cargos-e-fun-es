@@ -177,6 +177,8 @@ assert 'ro-art-13-c1' not in _sci_c and not _sci_a['ro-art-13-c1'].get('proposta
 # 15/09: Superior de Dia com alcance estadual
 assert 'todo o território estadual' in _se_a['se-art-31-c1']['caput'] and 'Capital' not in _se_a['se-art-31-c1']['caput']
 assert not any('Capital' in it['text'] for it in _se_a['se-art-31-c2']['items'])
+# Art. 52 da publicável (16/09): meio de comunicação informado ao Comandante do COB I
+assert _se_a['se-art-24']['caput'].endswith('informado ao Comandante do COB I.') and 'Subcomandante-Geral' not in _se_a['se-art-24']['caput']
 # se-art-31 (área de atuação) suprimido nas duas versões em 16/09 (duplicidade com se-art-31-c1)
 assert 'se-art-43-c1' not in {a['id'] for a in A['servico-operacional']['articles']}, 'competências operacionais do Oficial de Dia suprimidas em 16/09'
 # 16/09: supressões comuns às DUAS versões; alterações de texto só na atual
