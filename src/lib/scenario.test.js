@@ -38,6 +38,6 @@ test('scenarioDbUrl: atual usa a subpasta /database/atual', () => {
   assert.equal(scenarioDbUrl('atual', 'minuta_structure.json'), '/database/atual/minuta_structure.json')
 })
 
-test('scenarioDbUrl: cenário inválido cai no padrão (futura/raiz)', () => {
-  assert.equal(scenarioDbUrl('xpto', 'regulamento_structure.json'), '/database/regulamento_structure.json')
+test('scenarioDbUrl: cenário inválido cai no padrão (atual/subpasta)', () => {
+  assert.equal(scenarioDbUrl('xpto', 'regulamento_structure.json'), '/database/atual/regulamento_structure.json')
 })
