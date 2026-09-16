@@ -396,6 +396,10 @@ Alterações de texto → `TEXTOS_FINAIS_ATUAL` (fundamento `_F_REV16`) e ediç�
 `SUBSTITUIR`/`INCLUIR`; `_art(..., suprimir_itens=[i])` suprime inciso de artigo novo sem
 re-indexar. O bloco INCLUIR das competências operacionais do Oficial de Dia (se-art-43-c1) foi
 removido. Capítulo "Da passagem de serviço" (se-art-54 fora). Minuta publicável: 134 artigos.
+Capítulo "Do Superior de Dia" (Arts. 52–59, mesma data): ESTRUTURA cita os incluídos pelo id
+(`se-art-31-c1`, `-c2`) para abrirem o capítulo, depois se-art-26, 27, 28, 29, 25, 24 e a âncora
+suprimida se-art-31 (tem de continuar listada, senão `montarReestruturada` acusa sobra). Sobreaviso
+de 24 h/postos só no se-art-31-c1; Comandante do COB I coordena serviço, escala e permutas.
 
 **Alíneas e "; e" na exibição (14/09/2026):** `isAlinea()` em `minutaArticles.js` — item que
 começa com "a) " é marcador próprio (`ownMarker`, `alinea: true`): sai verbatim, recuado, e

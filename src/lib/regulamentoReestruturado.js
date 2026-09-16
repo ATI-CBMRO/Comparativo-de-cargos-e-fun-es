@@ -48,7 +48,8 @@ export const ESTRUTURA = [
           { titulo: 'DA POLÍTICA DO SERVIÇO OPERACIONAL', itens: se(T.op, 3) },
           { titulo: 'DAS FUNÇÕES DO COMANDO OPERACIONAL DE BOMBEIROS', itens: ro(T.fun, ...faixa(1, 10)) },
           { titulo: 'DAS FUNÇÕES DO SERVIÇO OPERACIONAL DIÁRIO', itens: se(T.op, 4) },
-          { titulo: 'DO SUPERIOR DE DIA', itens: se(T.op, ...faixa(24, 31)) },
+          // 16/09: abre com abrangência/regime (se-art-31-c1) e competências; depois coordenação, escala, permuta e obrigações no serviço
+          { titulo: 'DO SUPERIOR DE DIA', itens: [`${T.op}/se-art-31-c1`, `${T.op}/se-art-31-c2`, ...se(T.op, 26, 27, 28, 29, 25, 24, 31)] },   // se-art-31 (âncora dos incluídos) suprimido nas duas versões
           { titulo: 'DO OFICIAL DE DIA E DO COMANDANTE DE GUARNIÇÃO', itens: se(T.op, ...faixa(32, 43)) },
           { titulo: 'DAS DEMAIS FUNÇÕES DE SERVIÇO NAS UNIDADES', itens: se(T.op, ...faixa(44, 47)) },
           { titulo: 'DA PASSAGEM DE SERVIÇO', itens: se(T.dia, ...faixa(54, 61)) },   // se-art-54 (quadro) suprimido em 16/09

@@ -186,15 +186,23 @@ TEXTOS_FINAIS_ATUAL = {
             'fundamento': _F_CURADORIA, 'alterado': 'redação',
             'nota': 'Finalidade estendida ao serviço técnico (15/09/2026): a Parte I da minuta publicável é comum aos dois serviços.',
         },
+        # 16/09 (Arts. 52–59 da publicável): o capítulo do Superior de Dia abre com o artigo de abrangência/regime
+        # (se-art-31-c1) e o Comandante do COB I coordena o serviço, a escala e as permutas, sem o gabinete do
+        # Subcomando-Geral; "sobreaviso de 24 horas" fica só no artigo de abertura.
         'se-art-24': {
-            'caput': 'O serviço de Superior de Dia será realizado em regime de sobreaviso de 24 (vinte e quatro) horas, devendo o Oficial escalado não se ausentar da área de sua residência e permanecer com o telefone celular funcional ligado durante todo o dia de serviço ou outro meio de comunicação o qual deverá ser informado ao Comandante do COB I.',  # 16/09: Comandante do COB I no lugar do Subcomandante-Geral (Art. 52 da publicável)
-            'items': {0: '§ 1º Ao final do serviço deverá assinar, via Sistema Eletrônico de Informações - SEI, juntamente com o Oficial de Dia a Parte Diária.',
-                      1: '§ 2º O regime do serviço poderá sofrer alterações mediante publicação em Boletim Geral por determinação do Comandante-Geral ou pelo Subcomandante-Geral em virtude das necessidades do momento.'},
+            'caput': 'Durante o período de serviço, o Superior de Dia não deverá se ausentar da área de sua residência, permanecendo em condições de pronto acionamento, com o telefone celular funcional ligado ou outro meio de comunicação que permita seu imediato contato e comparecimento, o qual deverá ser informado ao Comandante do COB I.',
+            'items': {0: '§ 1º Ao final do serviço, o Superior de Dia deverá assinar, via Sistema Eletrônico de Informações - SEI, juntamente com o Oficial de Dia, a Parte Diária.',
+                      1: '§ 2º O regime do serviço poderá sofrer alterações, mediante publicação em Boletim Geral, por determinação do Comandante-Geral ou do Comandante do COB I, em virtude das necessidades do momento.'},
+            'fundamento': _F_REV16, 'alterado': 'redação',
+            'nota': 'Revisão de 16/09/2026: o regime de sobreaviso de 24 horas e os postos passam ao artigo de abertura do capítulo; aqui ficam as obrigações durante o serviço. Comandante do COB I no lugar do Subcomandante-Geral.',
         },
-        'se-art-25': {'caput': 'A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Comandante do COB I, via Sistema Eletrônico de Informações - SEI.'},
-        'se-art-26': {'caput': 'O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Comandante do COB I, através do gabinete do Subcomando-Geral.',
-                      'items': {0: 'Parágrafo único. As escalas serão publicadas em processo eletrônico, via Sistema Eletrônico de Informações - SEI.'}},
-        'se-art-27': {'caput': 'O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Subcomandante-Geral ser alterado.'},
+        'se-art-25': {'caput': 'A permuta de serviço do Superior de Dia só será permitida mediante autorização por escrito do Comandante do COB I, via Sistema Eletrônico de Informações - SEI.'},
+        'se-art-26': {'caput': 'O serviço de Superior de Dia será coordenado pelo Comandante do COB I.',
+                      'items': {0: 'Parágrafo único. As escalas serão publicadas em processo eletrônico, via Sistema Eletrônico de Informações - SEI.'},
+                      'fundamento': _F_REV16, 'alterado': 'redação',
+                      'nota': 'Revisão de 16/09/2026: coordenação exclusiva do Comandante do COB I, sem relação com o gabinete do Subcomando-Geral.'},
+        'se-art-27': {'caput': 'O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Comandante do COB I, ser alterado.',
+                      'fundamento': _F_REV16, 'alterado': 'redação'},
         'se-art-29': {'caput': 'O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá dar ciência ao Comandante do COB I a fim de ser reinserido ou inserido na respectiva escala.'},
         'se-art-33': {'caput': 'A permuta de escala do Oficial de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, via Sistema Eletrônico de Informações - SEI.', 'fundamento': _F_REV16, 'alterado': 'redação'},
         # 16/09: escalas de quem trabalha no expediente (inciso II e alínea a)
@@ -696,10 +704,9 @@ INCLUIR = {
             'artigos': [
                 _art(
                     'O serviço de Superior de Dia será estabelecido com abrangência em todo o território estadual, em regime de sobreaviso de 24 (vinte e quatro) horas, concorrendo à respectiva escala os oficiais dos postos de Major BM e Tenente-Coronel BM.',
-                    ['§ 1º Durante o período de serviço, o Superior de Dia deverá permanecer em condições de pronto acionamento, mantendo disponível meio de comunicação que permita seu imediato contato e comparecimento quando necessário.',
-                     '§ 2º A atuação do Superior de Dia observará as competências próprias do Comando Operacional de Bombeiros e dos Comandantes das Organizações Bombeiro Militar.'],
+                    ['Parágrafo único. A atuação do Superior de Dia observará as competências próprias do Comando Operacional de Bombeiros e dos Comandantes das Organizações Bombeiro Militar.'],
                     _F_SERV, heading=_H_SD,
-                    nota='Deliberação de 15/09/2026: mantido o alcance estadual do Superior de Dia (área de atuação do artigo anterior); o texto de partida sugerido na consulta restringia o serviço à Capital. Postos de Major e Tenente-Coronel conforme a sugestão.',
+                    nota='Deliberação de 15/09/2026: mantido o alcance estadual do Superior de Dia; o texto de partida sugerido na consulta restringia o serviço à Capital. Postos de Major e Tenente-Coronel conforme a sugestão. Revisão de 16/09/2026: abre o capítulo na minuta publicável; o parágrafo sobre o meio de comunicação saiu por duplicidade com o artigo das obrigações durante o serviço.',
                 ),
                 _art(
                     'Compete ao Superior de Dia:',
@@ -865,6 +872,15 @@ DELIBERACOES_SEMELHANTES = [
                     'Superior de Dia, Boletim Interno na publicação da escala, Guarnição de Serviço no lugar de Prontidão, '
                     'Oficial de Dia/Comandante de Guarnição (ou do SGBM) nas atribuições comuns a todas as OBM, passagem de '
                     'serviço entre oficiais só no 1º GBM (fora da Capital o Comandante do SGBM apenas conduz a solenidade), EPI no parágrafo dos danos, escalas do expediente.'),
+    },
+    {
+        'data': '2026-09-16',
+        'dispositivos': ['servico-operacional/se-art-24, 25, 26, 27', 'servico-operacional/se-art-31-c1 (§ 1º retirado)', 'ordem do capítulo "Do Superior de Dia" na minuta publicável (Arts. 52–59)'],
+        'assunto': 'Capítulo do Superior de Dia: coordenação, redundâncias e ordem dos artigos',
+        'decisao': ('O Comandante do COB I coordena o serviço, o regime da escala e as permutas, sem relação com o gabinete do Subcomando-Geral. '
+                    'A abrangência estadual, o sobreaviso de 24 horas e os postos (Major e Tenente-Coronel) ficam só no artigo de abertura do capítulo '
+                    '(se-art-31-c1), seguido das competências; o artigo das obrigações durante o serviço (se-art-24) deixa de repetir o sobreaviso e '
+                    'absorve o meio de comunicação. Alterações de texto só na versão atual; nenhum artigo suprimido.'),
     },
 ]
 

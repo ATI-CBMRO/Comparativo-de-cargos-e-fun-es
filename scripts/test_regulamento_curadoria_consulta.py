@@ -179,6 +179,13 @@ assert 'todo o território estadual' in _se_a['se-art-31-c1']['caput'] and 'Capi
 assert not any('Capital' in it['text'] for it in _se_a['se-art-31-c2']['items'])
 # Art. 52 da publicável (16/09): meio de comunicação informado ao Comandante do COB I
 assert _se_a['se-art-24']['caput'].endswith('informado ao Comandante do COB I.') and 'Subcomandante-Geral' not in _se_a['se-art-24']['caput']
+# 16/09: capítulo do Superior de Dia — sobreaviso só no artigo de abertura; Comandante do COB I coordena tudo
+assert 'sobreaviso' not in _se_a['se-art-24']['caput'] and 'sobreaviso de 24' in _se_a['se-art-31-c1']['caput']
+assert len(_se_a['se-art-31-c1']['items']) == 1 and _se_a['se-art-31-c1']['items'][0]['text'].startswith('Parágrafo único.')
+assert _se_a['se-art-26']['caput'] == 'O serviço de Superior de Dia será coordenado pelo Comandante do COB I.'
+assert 'Comandante do COB I' in _se_a['se-art-27']['caput'] and 'Comandante do COB I' in _se_a['se-art-24']['items'][1]['text']
+for _id in ('se-art-24', 'se-art-25', 'se-art-26', 'se-art-27', 'se-art-31-c1', 'se-art-31-c2'):
+    assert 'Subcomand' not in _se_a[_id]['caput'] and not any('Subcomand' in it['text'] for it in _se_a[_id]['items']), _id
 # se-art-31 (área de atuação) suprimido nas duas versões em 16/09 (duplicidade com se-art-31-c1)
 assert 'se-art-43-c1' not in {a['id'] for a in A['servico-operacional']['articles']}, 'competências operacionais do Oficial de Dia suprimidas em 16/09'
 # 16/09: supressões comuns às DUAS versões; alterações de texto só na atual

@@ -233,6 +233,10 @@
     (`seguranca-contra-incendio/ro-art-13-c1`) abre o Título II. `montarReestruturada`
     aceita incluído citado pelo próprio id. Minuta publicável: 164 artigos; comparativo 50
     corrigidos / 15 alterados / 15 reescritos / 7 novos / 16 suprimidos / 1 proposta (depois 51 / 0 com a decisão do Superior de Dia).
+  - **2026-09-16 — Capítulo do Superior de Dia (Arts. 52–59 da publicável)**: abre com se-art-31-c1
+    (abrangência estadual, sobreaviso 24 h, Major/TC) e competências; Comandante do COB I coordena
+    serviço, escala e permutas (sem gabinete do Subcomando-Geral); se-art-24 vira obrigações
+    durante o serviço; § 1º do se-art-31-c1 retirado por duplicidade. Só na atual; nada suprimido.
   - **2026-09-15 — Superior de Dia: alcance estadual mantido** (decisão do Tiago). se-art-31-c1
     deixa de ser proposta (caput "em todo o território estadual", § 2º sem a Capital); incisos
     I, II e VI das competências sem "na Capital"; grafia do se-art-31 corrigida. Não resta

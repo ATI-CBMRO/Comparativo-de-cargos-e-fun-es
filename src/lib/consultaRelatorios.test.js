@@ -197,6 +197,8 @@ test('ESTRUTURA cobre a versão ATUAL: substitutos no lugar do antigo, incluído
   assert.ok(ids.includes('mt-art-3-r1') && !ids.includes('mt-art-3'))
   assert.ok(ids.includes('se-art-31-c1') && !ids.includes('se-art-31'), 'âncora suprimida nas duas versões (16/09) não impede o incluído')
   assert.equal(ids.indexOf('se-art-31-c2'), ids.indexOf('se-art-31-c1') + 1, 'incluídos na ordem da âncora')
+  // 16/09: o capítulo do Superior de Dia abre com se-art-31-c1 e termina com se-art-24 (obrigações durante o serviço)
+  assert.ok(ids.indexOf('se-art-31-c1') < ids.indexOf('se-art-26') && ids.indexOf('se-art-26') < ids.indexOf('se-art-25') && ids.indexOf('se-art-25') < ids.indexOf('se-art-24'), 'ordem do capítulo do Superior de Dia')
   assert.ok(ids.includes('se-art-38-c1') && !ids.includes('se-art-38'), 'âncora suprimida não impede o incluído')
   assert.ok(!ids.includes('se-art-43-c1') && !ids.includes('se-art-43') && !ids.includes('se-art-43-c2'), 'competências operacionais do Oficial de Dia suprimidas em 16/09')
   assert.ok(!r.blocos.some(b => b.tipo === 'capitulo' && /DEMAIS FUNÇÕES DE SERVIÇO/.test(b.texto)))
