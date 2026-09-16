@@ -194,6 +194,13 @@ assert _od['items'][18]['text'] == '' and 18 in _od['incisos_suprimidos'] and 'S
 assert 'Comandante do COB I' in _se_a['se-art-25']['caput'] and 'Comandante do COB I' in _se_a['se-art-26']['caput'] and 'processo eletrônico' in _se_a['se-art-26']['items'][0]['text']
 _dia_a = {a['id']: a for a in A['servico-interno-dia']['articles']}
 assert _dia_a['se-art-61']['caput'].startswith('A passagem de serviço, presidida pelo Oficial de Dia no 1º Grupamento') and 'Comandante do SGBM' in _dia_a['se-art-62']['caput']
+# Art. 69 da publicável: passagem de serviço entre oficiais só no 1º GBM; Comandante do SGBM só conduz a solenidade
+_pa = _dia_a['se-art-61']
+assert 'conduzida, nas demais' in _pa['caput'] and 'Oficial de Dia/Comandante do SGBM' not in _pa['caput']
+assert not any('Oficial de Dia/Comandante do SGBM' in it['text'] for it in _pa['items'])
+assert _pa['items'][-1]['text'].startswith('Parágrafo único. Nas demais Organizações Bombeiro Militar, o Comandante do SGBM apenas conduz a solenidade')
+assert _pa['items'][4]['text'].startswith('V. No 1º Grupamento de Bombeiro Militar')
+assert 'conduzida, nas demais' not in {a['id']: a for a in C['servico-interno-dia']['articles']}['se-art-61']['caput']
 assert _dia_a['se-art-109']['caput'].startswith('Depois de publicada a escala em Boletim Interno') and 'EPI' in _dia_a['se-art-93']['items'][0]['text']
 assert atual['curadoria']['suprimidos_ambas'] == 29 and consulta['curadoria']['suprimidos_ambas'] == 29 + sum(len(v) for v in SUPRIMIR.values())
 for c in atual['chapters']:

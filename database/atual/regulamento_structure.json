@@ -19128,18 +19128,18 @@
           "id": "se-art-61",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-61",
-          "caput": "A passagem de serviço, presidida pelo Oficial de Dia no 1º Grupamento de Bombeiro Militar e, nas demais Organizações Bombeiro Militar, pelo Comandante do Subgrupamento de Bombeiro Militar, deverá ser assim realizada:",
+          "caput": "A passagem de serviço, presidida pelo Oficial de Dia no 1º Grupamento de Bombeiro Militar e conduzida, nas demais Organizações Bombeiro Militar, pelo Comandante do Subgrupamento de Bombeiro Militar, deverá ser assim realizada:",
           "items": [
             {
-              "text": "I. O Oficial de Dia/Comandante do SGBM que sai posicionado em posição intermediária de defronte a tropa comanda “para passagem de serviço – sentido”.",
+              "text": "I. O Oficial de Dia que sai ou, nas demais Organizações Bombeiro Militar, o Comandante do SGBM, posicionado em posição intermediária defronte à tropa, comanda “para passagem de serviço – sentido”.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
-              "text": "II. O Oficial de Dia/Comandante do SGBM que entra tomará o mesmo procedimento previsto no item anterior.",
+              "text": "II. No 1º Grupamento de Bombeiro Militar, o Oficial de Dia que entra tomará o mesmo procedimento previsto no item anterior.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
-              "text": "III. O Oficial de Dia/Comandante do SGBM que sai comanda: “para os Comandantes de Guarnições, um passo em frente, marche”. Tal ato será também comandado pelo Oficial de Dia/Comandante do SGBM que entra.",
+              "text": "III. O Oficial de Dia que sai ou o Comandante do SGBM comanda: “para os Comandantes de Guarnições, um passo em frente, marche”. No 1º Grupamento de Bombeiro Militar, tal ato será também comandado pelo Oficial de Dia que entra.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
@@ -19147,17 +19147,24 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
-              "text": "V. Apresentados todos os Comandantes de Guarnição e passadas todas as alterações existentes, o Oficial de Dia/Comandante do SGBM que sai se apresenta passando o serviço ao Oficial de Dia/Comandante do SGBM que entra. a. O Oficial de Dia/Comandante do SGBM que entra comandará: - “Em continência ao terreno apresentar armas”, b. O Oficial de Dia/Comandante do SGBM que sai comandará: - “Apresentar armas” c. Em seguida, o Oficial de Dia/Comandante do SGBM que entra comandará: -“Descansar armas”, repetindo o mesmo o Oficial de Dia/Comandante do SGBM que sai, d. Por fim, ambos comandarão: - “Descansar”.",
+              "text": "V. No 1º Grupamento de Bombeiro Militar, apresentados todos os Comandantes de Guarnição e passadas todas as alterações existentes, o Oficial de Dia que sai se apresenta passando o serviço ao Oficial de Dia que entra. a. O Oficial de Dia que entra comandará: - “Em continência ao terreno apresentar armas”, b. O Oficial de Dia que sai comandará: - “Apresentar armas” c. Em seguida, o Oficial de Dia que entra comandará: -“Descansar armas”, repetindo o mesmo o Oficial de Dia que sai, d. Por fim, ambos comandarão: - “Descansar”.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
+            },
+            {
+              "text": "Parágrafo único. Nas demais Organizações Bombeiro Militar, o Comandante do SGBM apenas conduz a solenidade, não havendo passagem de serviço a ele; o ato encerra-se com a passagem do serviço entre os Comandantes de Guarnição, na forma do inciso IV.",
+              "source": "Revisão de texto da Minuta do Regulamento de Serviço (lote de 16/09/2026) sobre a LOB, Lei nº 2.204/2009"
             }
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 61",
           "match": "exata",
           "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
           "corrigido": true,
+          "incisos_acrescidos": [
+            5
+          ],
           "alterado": "redação",
           "fundamento_alteracao": "Revisão de texto da Minuta do Regulamento de Serviço (lote de 16/09/2026) sobre a LOB, Lei nº 2.204/2009",
-          "nota": "Oficial de Dia só no 1º GBM (Capital); nas demais OBM a passagem de serviço é presidida pelo Comandante do SGBM (16/09/2026)."
+          "nota": "Oficial de Dia só no 1º GBM (Capital): só ali há passagem de serviço do Oficial de Dia que sai ao que entra; nas demais OBM o Comandante do SGBM apenas conduz a solenidade (16/09/2026)."
         },
         {
           "id": "se-art-62",
@@ -24443,7 +24450,7 @@
           "servico-operacional/se-art-38-c2 (XVIII, XIX)"
         ],
         "assunto": "Lote de revisão de 16/09/2026 (documento \"Faça as seguintes modificações nos textos\")",
-        "decisao": "Supressões aplicadas nas DUAS versões (consulta e atual): área de atuação do Superior de Dia (duplicidade), escala/regime do Oficial de Dia (Arts. 64–67), competências operacionais do Oficial de Dia (Art. 68, já constam no Art. 63; inciso XIX das competências suprimido por duplicidade com o XVIII), capítulo das demais funções de serviço (Arts. 69–70), quadro de atividades (Art. 71; capítulo renomeado \"Da passagem de serviço\"), instruções e alojamento (Arts. 88–94), Art. 108, áreas de emergência (Arts. 119–129, substituídas pela remissão ao SCI no Art. 118), pacientes com transtorno mental (Art. 130), lista nominal das DAT e prazo das NGA (Art. 163). Alterações de texto só na atual: SEI nas permutas e na Parte Diária, Comandante do COB I na coordenação do Superior de Dia, Boletim Interno na publicação da escala, Guarnição de Serviço no lugar de Prontidão, Oficial de Dia/Comandante de Guarnição (ou do SGBM) nas atribuições comuns a todas as OBM, passagem de serviço presidida pelo Comandante do SGBM fora da Capital, EPI no parágrafo dos danos, escalas do expediente."
+        "decisao": "Supressões aplicadas nas DUAS versões (consulta e atual): área de atuação do Superior de Dia (duplicidade), escala/regime do Oficial de Dia (Arts. 64–67), competências operacionais do Oficial de Dia (Art. 68, já constam no Art. 63; inciso XIX das competências suprimido por duplicidade com o XVIII), capítulo das demais funções de serviço (Arts. 69–70), quadro de atividades (Art. 71; capítulo renomeado \"Da passagem de serviço\"), instruções e alojamento (Arts. 88–94), Art. 108, áreas de emergência (Arts. 119–129, substituídas pela remissão ao SCI no Art. 118), pacientes com transtorno mental (Art. 130), lista nominal das DAT e prazo das NGA (Art. 163). Alterações de texto só na atual: SEI nas permutas e na Parte Diária, Comandante do COB I na coordenação do Superior de Dia, Boletim Interno na publicação da escala, Guarnição de Serviço no lugar de Prontidão, Oficial de Dia/Comandante de Guarnição (ou do SGBM) nas atribuições comuns a todas as OBM, passagem de serviço entre oficiais só no 1º GBM (fora da Capital o Comandante do SGBM apenas conduz a solenidade), EPI no parágrafo dos danos, escalas do expediente."
       }
     ]
   }

@@ -261,13 +261,16 @@ TEXTOS_FINAIS_ATUAL = {
         'se-art-102': {'caput': 'Qualquer empréstimo de material operacional, além de registrado na Parte Diária da OBM cedente deverá ser realizado mediante cautela devidamente assinada pelo seu Comandante.', 'fundamento': _F_REV16, 'alterado': 'redação'},
         'se-art-93': {'items': {0: 'Parágrafo único. Quaisquer danos ocorridos no EPI do bombeiro militar de serviço deverão obedecer ao mesmo parâmetro estabelecido para o material operacional, devendo as peças de fardamento danificadas, como meio de comprovação, acompanharem o procedimento administrativo adequado.'}, 'fundamento': _F_REV16, 'alterado': 'redação'},
         'se-art-61': {
-            'caput': 'A passagem de serviço, presidida pelo Oficial de Dia no 1º Grupamento de Bombeiro Militar e, nas demais Organizações Bombeiro Militar, pelo Comandante do Subgrupamento de Bombeiro Militar, deverá ser assim realizada:',
-            'items': {0: 'I. O Oficial de Dia/Comandante do SGBM que sai posicionado em posição intermediária de defronte a tropa comanda “para passagem de serviço – sentido”.',
-                      1: 'II. O Oficial de Dia/Comandante do SGBM que entra tomará o mesmo procedimento previsto no item anterior.',
-                      2: 'III. O Oficial de Dia/Comandante do SGBM que sai comanda: “para os Comandantes de Guarnições, um passo em frente, marche”. Tal ato será também comandado pelo Oficial de Dia/Comandante do SGBM que entra.',
-                      4: 'V. Apresentados todos os Comandantes de Guarnição e passadas todas as alterações existentes, o Oficial de Dia/Comandante do SGBM que sai se apresenta passando o serviço ao Oficial de Dia/Comandante do SGBM que entra. a. O Oficial de Dia/Comandante do SGBM que entra comandará: - “Em continência ao terreno apresentar armas”, b. O Oficial de Dia/Comandante do SGBM que sai comandará: - “Apresentar armas” c. Em seguida, o Oficial de Dia/Comandante do SGBM que entra comandará: -“Descansar armas”, repetindo o mesmo o Oficial de Dia/Comandante do SGBM que sai, d. Por fim, ambos comandarão: - “Descansar”.'},
+            # 16/09 (ajuste do Art. 69 da publicável): só no 1º GBM há passagem de serviço do Oficial de Dia
+            # que sai ao que entra; nas demais OBM o Comandante do SGBM apenas conduz a solenidade.
+            'caput': 'A passagem de serviço, presidida pelo Oficial de Dia no 1º Grupamento de Bombeiro Militar e conduzida, nas demais Organizações Bombeiro Militar, pelo Comandante do Subgrupamento de Bombeiro Militar, deverá ser assim realizada:',
+            'items': {0: 'I. O Oficial de Dia que sai ou, nas demais Organizações Bombeiro Militar, o Comandante do SGBM, posicionado em posição intermediária defronte à tropa, comanda “para passagem de serviço – sentido”.',
+                      1: 'II. No 1º Grupamento de Bombeiro Militar, o Oficial de Dia que entra tomará o mesmo procedimento previsto no item anterior.',
+                      2: 'III. O Oficial de Dia que sai ou o Comandante do SGBM comanda: “para os Comandantes de Guarnições, um passo em frente, marche”. No 1º Grupamento de Bombeiro Militar, tal ato será também comandado pelo Oficial de Dia que entra.',
+                      4: 'V. No 1º Grupamento de Bombeiro Militar, apresentados todos os Comandantes de Guarnição e passadas todas as alterações existentes, o Oficial de Dia que sai se apresenta passando o serviço ao Oficial de Dia que entra. a. O Oficial de Dia que entra comandará: - “Em continência ao terreno apresentar armas”, b. O Oficial de Dia que sai comandará: - “Apresentar armas” c. Em seguida, o Oficial de Dia que entra comandará: -“Descansar armas”, repetindo o mesmo o Oficial de Dia que sai, d. Por fim, ambos comandarão: - “Descansar”.'},
+            'acrescentar': ['Parágrafo único. Nas demais Organizações Bombeiro Militar, o Comandante do SGBM apenas conduz a solenidade, não havendo passagem de serviço a ele; o ato encerra-se com a passagem do serviço entre os Comandantes de Guarnição, na forma do inciso IV.'],
             'fundamento': _F_REV16, 'alterado': 'redação',
-            'nota': 'Oficial de Dia só no 1º GBM (Capital); nas demais OBM a passagem de serviço é presidida pelo Comandante do SGBM (16/09/2026).',
+            'nota': 'Oficial de Dia só no 1º GBM (Capital): só ali há passagem de serviço do Oficial de Dia que sai ao que entra; nas demais OBM o Comandante do SGBM apenas conduz a solenidade (16/09/2026).',
         },
         'se-art-62': {'caput': 'Toda Guarnição de Serviço que entra de serviço deverá obrigatoriamente conferir o material constante na carga da viatura, comunicando as faltas e carências ao Oficial de Dia/Comandante do SGBM.', 'fundamento': _F_REV16, 'alterado': 'redação'},
         'se-art-63': {'caput': 'Por ocasião da conferência do material operacional constante na viatura, ficará a Guarnição de Serviço responsável de dar manutenção em todos os equipamentos deixando-os em perfeitas condições de uso.', 'fundamento': _F_REV16, 'alterado': 'redação'},
@@ -861,7 +864,7 @@ DELIBERACOES_SEMELHANTES = [
                     'Alterações de texto só na atual: SEI nas permutas e na Parte Diária, Comandante do COB I na coordenação do '
                     'Superior de Dia, Boletim Interno na publicação da escala, Guarnição de Serviço no lugar de Prontidão, '
                     'Oficial de Dia/Comandante de Guarnição (ou do SGBM) nas atribuições comuns a todas as OBM, passagem de '
-                    'serviço presidida pelo Comandante do SGBM fora da Capital, EPI no parágrafo dos danos, escalas do expediente.'),
+                    'serviço entre oficiais só no 1º GBM (fora da Capital o Comandante do SGBM apenas conduz a solenidade), EPI no parágrafo dos danos, escalas do expediente.'),
     },
 ]
 
