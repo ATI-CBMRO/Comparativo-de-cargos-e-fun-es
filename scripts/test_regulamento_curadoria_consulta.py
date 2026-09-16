@@ -7,8 +7,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from regulamento_curadoria_consulta import (  # noqa: E402
-    CORRECOES, SUPRIMIR, SUBSTITUIR, INCLUIR, TEXTOS_FINAIS_ATUAL,
+    CORRECOES, CORRECOES_GLOBAIS, SUPRIMIR, SUBSTITUIR, INCLUIR, TEXTOS_FINAIS_ATUAL,
 )
+
+
+def _com_globais(texto):
+    """As CORRECOES específicas casam com o texto JÁ passado pelas CORRECOES_GLOBAIS."""
+    for velho, novo in CORRECOES_GLOBAIS:
+        texto = texto.replace(velho, novo)
+    return texto
 
 ROOT = Path(__file__).resolve().parent.parent
 consulta = json.load(open(ROOT / 'database' / 'atual' / 'regulamento_structure_consulta.json', encoding='utf-8'))
@@ -38,7 +45,7 @@ for tema, arts in CORRECOES.items():
         art_c = next(x for x in C[tema]['articles'] if x['id'] == aid)
         art = next((x for x in A[tema]['articles'] if x['id'] == aid), None)
         for velho, novo in regras.get('caput', []):
-            assert velho in art_c['caput'], f'consulta: {tema}/{aid} deveria manter {velho!r}'
+            assert velho in _com_globais(art_c['caput']), f'consulta: {tema}/{aid} deveria manter {velho!r}'
         if art is None:  # na atual o artigo pode ter sido substituído/suprimido
             continue
         assert art.get('corrigido'), f'atual: {tema}/{aid} sem marca corrigido'
@@ -89,7 +96,7 @@ for tema, blocos in INCLUIR.items():
 
 # 6. Propostas de mérito marcadas.
 propostas = [a for c in atual['chapters'] for a in c['articles'] if a.get('proposta')]
-assert len(propostas) == 3, f'esperava 3 propostas pendentes de deliberação, achei {len(propostas)}'
+assert len(propostas) == 1, f'esperava 1 proposta pendente de deliberação (Superior de Dia), achei {len(propostas)}'
 assert all('PROPOSTA PENDENTE' in a['nota'] for a in propostas)
 
 # 7. Textos finais e redações ajustadas só na atual; inciso suprimido vira texto vazio no
@@ -107,7 +114,9 @@ for tema, arts in TEXTOS_FINAIS_ATUAL.items():
                 assert art_a['items'][idx]['text'] == '' and idx in art_a['incisos_suprimidos'], f'{tema}/{aid}#{idx}'
             else:
                 assert art_a['items'][idx]['text'] == texto, f'{tema}/{aid}#{idx}'
-        assert len(art_a['items']) == len(art_c['items']), f'{tema}/{aid}: incisos re-indexados'
+        assert len(art_a['items']) == len(art_c['items']) + len(f.get('acrescentar', [])), f'{tema}/{aid}: incisos re-indexados'
+        for k, texto in enumerate(f.get('acrescentar', [])):
+            assert art_a['items'][len(art_c['items']) + k]['text'] == texto
 
 # 7b. Ajustes de redação e correções da curadoria de set/2026 (só na atual).
 _se_c = {a['id']: a for a in C['servico-operacional']['articles']}
@@ -119,10 +128,30 @@ assert _se_a['ro-art-2-c1']['caput'] == _se_c['se-art-43']['caput'].split(' Coma
 assert A['servico-operacional']['articles'][-1]['id'] == 'ro-art-2-c1', 'casos omissos fecham o capítulo'
 assert 'ciência ao Superior de Dia' in _se_a['se-art-132']['caput']
 # deliberação 15/09 (grupo 3 do quadro de semelhantes): inciso VI sem o parágrafo grudado
-assert _se_a['se-art-114']['items'][5]['text'].endswith('pelo Comandante do SOS.') and 'omissos' not in _se_a['se-art-114']['items'][5]['text']
+assert _se_a['se-art-114']['items'][5]['text'].endswith('pelo Oficial de Dia.') and 'omissos' not in _se_a['se-art-114']['items'][5]['text']
 assert 'Parágrafo Único' in _se_c['se-art-114']['items'][5]['text'], 'a consulta mantém o texto lido'
 assert 'casos omissos' in _se_a['se-art-116']['items'][5]['text']
 assert atual['curadoria']['deliberacoes'][0]['dispositivos'][0] == 'servico-operacional/se-art-114#5'
+# resíduos de outros CBMs (15/09): nada de Sergipe/MT nos temas do recorte de serviço da atual
+# (a Parte I do Regulamento Geral completo ainda é transplante de MT — pendência própria)
+_TEMAS_RECORTE = {'disposicoes-preliminares', 'atribuicoes-funcoes', 'servico-operacional', 'central-operacoes-193',
+                  'servico-interno-dia', 'seguranca-contra-incendio', 'disposicoes-finais'}
+for c in atual['chapters']:
+    if c['id'].split(':')[-1] not in _TEMAS_RECORTE:
+        continue
+    for a in c['articles']:
+        texto = ' '.join([a.get('caput', '')] + [it['text'] for it in a.get('items', [])])
+        for termo in ('CIOSP', 'SES/SSP', 'UM de Saúde', 'Comandante do SOS', 'Chefe da Prontidão', 'Central Integrada',
+                      'Boletim Geral Ostensivo', 'Comandante do Socorro', 'Comandante de Operações', 'Unidade Operacional',
+                      'deste regimento', 'Regulamento Geral', 'Diretoria de Pessoal, Ensino', 'Comandante de Socorro', 'Comandante de socorro',
+                      'Cmt de Socorro', 'Adjunto ao Oficial', 'adjunto do oficial', 'Auxiliares do Comandante', 'auxiliares da guarnição',
+                      'Guarda de Quartel', 'Auxiliar da Guarda', 'Comandante de Área', 'Reserva Técnica', 'Chefe da Prontidão'):
+            assert termo not in texto, f'{c["id"]}/{a["id"]}: resíduo "{termo}"'
+assert not any(a['id'] in ('se-art-95', 'se-art-99') for a in A['servico-interno-dia']['articles'])
+assert _se_a['se-art-4']['items'][1]['text'] == '' and 1 in _se_a['se-art-4']['incisos_suprimidos']
+assert _se_a['se-art-4']['items'][-1]['text'].startswith('Parágrafo único. O serviço de Oficial de Dia existe apenas no 1º Grupamento')
+assert 'QCG' not in ' '.join(it['text'] for it in _se_a['se-art-38-c2']['items']) and '1º Grupamento' in _se_a['se-art-38-c1']['caput']
+assert 'se-art-43-c1' in {a['id'] for a in A['servico-operacional']['articles']} and 'se-art-43-c2' not in {a['id'] for a in A['servico-operacional']['articles']}
 for c in atual['chapters']:
     for a in c['articles']:
         texto = ' '.join([a.get('caput', '')] + [it['text'] for it in a.get('items', [])])

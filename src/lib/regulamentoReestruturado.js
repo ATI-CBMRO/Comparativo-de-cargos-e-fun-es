@@ -47,8 +47,7 @@ export const ESTRUTURA = [
           { titulo: 'DAS FUNÇÕES DO COMANDO OPERACIONAL DE BOMBEIROS', itens: ro(T.fun, ...faixa(1, 10)) },
           { titulo: 'DAS FUNÇÕES DO SERVIÇO OPERACIONAL DIÁRIO', itens: se(T.op, 4) },
           { titulo: 'DO SUPERIOR DE DIA', itens: se(T.op, ...faixa(24, 31)) },
-          { titulo: 'DO OFICIAL DE DIA', itens: se(T.op, ...faixa(32, 38)) },
-          { titulo: 'DO COMANDANTE DE SOCORRO E DO OFICIAL DE DIA NAS UNIDADES', itens: se(T.op, ...faixa(39, 43)) },
+          { titulo: 'DO OFICIAL DE DIA E DO COMANDANTE DE GUARNIÇÃO', itens: se(T.op, ...faixa(32, 43)) },
           { titulo: 'DAS DEMAIS FUNÇÕES DE SERVIÇO NAS UNIDADES', itens: se(T.op, ...faixa(44, 47)) },
           { titulo: 'DO QUADRO DE ATIVIDADES E DA PASSAGEM DE SERVIÇO', itens: se(T.dia, ...faixa(54, 61)) },
           { titulo: 'DA CONFERÊNCIA E DO EMPREGO DO MATERIAL OPERACIONAL', itens: se(T.dia, ...faixa(62, 68)) },
@@ -59,7 +58,7 @@ export const ESTRUTURA = [
           { titulo: 'DO BOMBEIRO MILITAR DE FOLGA EM OCORRÊNCIA', itens: se(T.op, 114, 115) },
           { titulo: 'DAS OCORRÊNCIAS DE GRANDE PORTE E DO APOIO EXTERNO', itens: se(T.op, ...faixa(134, 147)) },
           { titulo: 'DOS PROTOCOLOS ESPECIAIS DE ATENDIMENTO', itens: [...se(T.op, 116), ...ro(T.op, 2)] },
-          { titulo: 'DA CENTRAL INTEGRADA DE OPERAÇÕES E DO TELEDESPACHO', itens: ro(T.ciop, 1, 2, 3, 4) },
+          { titulo: 'DO CENTRO INTEGRADO DE OPERAÇÕES E DO TELEDESPACHO', itens: ro(T.ciop, 1, 2, 3, 4) },
         ],
       },
       {
@@ -97,7 +96,7 @@ export const NOTAS = [
   ['servico-operacional/se-art-37', 'Repete se-art-30 (permuta com 48h de antecedência). Mesma decisão de se-art-36.'],
   ['servico-operacional/se-art-38', 'Repete se-art-31 (área de atuação estadual do Superior de Dia) e está no bloco do Oficial de Dia — provável erro de transplante; no capítulo do Oficial de Dia a área é a da OBM (se-art-42/46). Suprimir ou corrigir.'],
   ['servico-operacional/se-art-46', 'Repete se-art-42 (serviço no quartel de cada OBM). Fundir.'],
-  ['servico-interno-dia/se-art-85', 'Concordância: "ao Central Integrada de Operações" → "à Central Integrada de Operações". Idem se-art-91.'],
+  ['servico-interno-dia/se-art-85', 'Nomenclatura: "Central Integrada de Operações" → "Centro Integrado de Operações – CIOP" (nome da NGA-CIOP-001/2026), em todo o texto.'],
   ['disposicoes-finais/mt-art-264', 'Fala em "Batalhões Bombeiro Militar" (CBMMT); na LOB de RO as unidades são Grupamentos (GBM). Ajustar.'],
   ['disposicoes-finais/mt-art-266', 'Caput traz rodapé de publicação de MT ("Este texto não substitui o publicado no Boletim Geral Eletrônico – BGE"): cortar.'],
   ['disposicoes-preliminares/mt-art-1', '"Art. 82 da Constituição Estadual" é a referência de Mato Grosso; conferir o artigo correspondente na Constituição de Rondônia (art. 148, já corrigido na versão atual).'],
@@ -153,8 +152,13 @@ export function montarReestruturada(recorte, finals = null) {
     blocos.push({ tipo: 'parte', texto: parte.parte, subtitulo: parte.subtitulo ?? null, quebraAntes: pi > 0 })
     for (const tit of parte.titulos) {
       if (tit.titulo) blocos.push({ tipo: 'titulo', texto: tit.titulo })
-      tit.capitulos.forEach((cap, ci) => {
-        const rotuloCap = `CAPÍTULO ${romanize(ci + 1)}`
+      let numCap = 0
+      for (const cap of tit.capitulos) {
+        // capítulo cujos artigos foram todos suprimidos na versão atual não aparece (nem conta)
+        const temArtigo = cap.itens.some(chave => folhas.has(chave) || incluidos.has(chave))
+        if (!temArtigo) { cap.itens.forEach(chave => usados.add(chave)); continue }
+        numCap += 1
+        const rotuloCap = `CAPÍTULO ${romanize(numCap)}`
         blocos.push({ tipo: 'capitulo', rotulo: rotuloCap, texto: cap.titulo })
         const posicao = [parte.parte.split(' — ')[0], tit.titulo?.split(' — ')[0], `${rotuloCap} — ${cap.titulo}`].filter(Boolean).join(' · ')
         for (const chave of cap.itens) {
@@ -165,7 +169,7 @@ export function montarReestruturada(recorte, finals = null) {
           for (const f of fs ?? []) emitir(f, chave, posicao)
           for (const f of incluidos.get(chave) ?? []) emitir(f, chave, posicao)
         }
-      })
+      }
     }
   })
   const sobras = [...folhas.keys(), ...incluidos.keys()].filter(k => !usados.has(k))

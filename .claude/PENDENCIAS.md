@@ -185,6 +185,46 @@
     "publicável", botão 6 novo. Arquivo antigo `…_reestruturada_…docx` removido; novos
     `…_parte_geral_e_especial.docx`, `Dispositivos_Semelhantes_para_Deliberacao.docx/.md`.
     `npm test` 212/212, build ok. Conferência visual do .docx no Word pendente.
+  - **2026-09-15 — resíduos de outros CBMs na minuta publicável** (pedido do Tiago:
+    "investigação profunda"): leitura dos 117 artigos vindos do RISD/CBMSE e do CBMMT +
+    conferência de siglas/órgãos contra a LOB de RO → 23 itens
+    (`docs/sei/.../Residuos_de_outros_CBMs_na_minuta.md`), TODOS aplicados na atual por
+    determinação: CIOSP→CIOP, SES/SSP→SESAU/SESDEC, "UM de Saúde"→"órgão de saúde",
+    Comandante do SOS/Chefe da Prontidão→Comandante de Socorro, Diretoria de Pessoal, Ensino
+    e Instrução→CEEI, Unidade Operacional→OBM, Comandante de Operações→Comandante do
+    Incidente, BGO→BG (global), "Central Integrada"→"Centro Integrado de Operações – CIOP"
+    (global, gênero masculino, título do capítulo), Regulamento Geral→Regulamento, Art. 136
+    reescrito como norma, Defesa Civil→CEPDEC/COMPDEC, IML/POLITEC, Setor→Centro de
+    Manutenção, Subcomandante-Geral, Comandante da Unidade→da OBM (global). Decisões
+    fortes: capítulo da **Reserva Técnica Operacional (se-art-95..99) SUPRIMIDO** (figura de
+    SE; leva junto os uniformes 4ºA/5B) e inciso "Comandante de Área" (se-art-4#1) suprimido.
+    `montarReestruturada` agora omite capítulo sem artigo e renumera. Minuta: 164 artigos.
+    Também: `Transcricoes_da_Lei_2204_nas_sugestoes.md` (60 registros do Cel. são cópia
+    literal dos Arts. 2º, 35 e 47 §1º da LOB). Sobras fora do recorte (Parte I de MT):
+    `mt-art-8/108/236/252/254`, `rn-art-55`, `se-art-53` — pendência da Parte I.
+  - **2026-09-15 — figuras do serviço eliminadas** (determinação do Tiago): saem Comandante
+    de Área, **Comandante de Socorro**, Adjunto ao Oficial de Dia, Auxiliares do Comandante
+    da Guarnição, Comandante de Guarda de Quartel, Auxiliar da Guarda de OBM e a RTO. Regra
+    nova (parágrafo único acrescentado ao se-art-4 via `acrescentar`, mecanismo novo de
+    TEXTOS_FINAIS_ATUAL que anexa itens ao FIM sem re-indexar): o Comandante de Guarnição é
+    o militar mais antigo de serviço, salvo onde há Oficial de Dia. "Comandante de Socorro"
+    → "Oficial de Dia" em todo o texto (global), com regras específicas onde a troca
+    duplicaria ("escala de Oficial de Dia e de Oficial de dia", se-art-77). O artigo de
+    REGIME do Cmt de Socorro do Cel. (se-art-43-c1, proposta Capital/1º GBM) saiu; as 20
+    competências viraram "Compete ao Oficial de Dia, quanto ao serviço operacional" (agora
+    se-art-43-c1). Propostas pendentes: 2 (Superior de Dia e Oficial de Dia/QCG — esta com
+    nota de conflito: "exclusivamente no QCG" não casa com a regra nova). Capítulo
+    "DO OFICIAL DE DIA NAS UNIDADES". Minuta: 163 artigos. Teste 7c falha se qualquer figura
+    voltar. Registrado em `DELIBERACOES_SEMELHANTES`.
+  - **2026-09-15 — Oficial de Dia só no 1º GBM (Capital)** (determinação do Tiago): parágrafo
+    único do se-art-4 reescrito ("nas demais OBM o Comandante de Guarnição, militar mais antigo
+    de serviço, é o responsável pelo serviço operacional diário"); regime do Oficial de Dia
+    (se-art-38-c1) passa a "exclusivamente no 1º GBM", responsável pelo serviço operacional
+    diário E interno, e DEIXA de ser proposta (fica só 1 proposta: Superior de Dia); nas 25
+    competências internas "QCG" → "quartel"; se-art-40/42 (escala e abrangência) apontam para o
+    quartel do 1º GBM; se-art-41 cobre também o Comandante de Guarnição. ESTRUTURA: capítulos
+    "Do Oficial de Dia" + "…nas Unidades" fundidos em "DO OFICIAL DE DIA E DO COMANDANTE DE
+    GUARNIÇÃO". 163 artigos, testes ok, build ok.
   - **Ficou de fora (pauta)**: 10 funções do Art. 26 sem seção (Cel. só redigiu 3);
     Subcmt/Auxiliares/B1–B6 do GBM e Subcmt/Auxiliares do SGBM (só fundamentação);
     reordenação Parte Geral/Especial segue só no .docx; incisos X/XIII do Oficial de Dia

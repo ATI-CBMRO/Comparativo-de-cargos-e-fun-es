@@ -314,7 +314,8 @@ militares, ago/2026):
   `CORRECOES` + `CORRECOES_GLOBAIS` (grafia, concordância, citação, resíduos de extração,
   "Comandante-Geral" no documento inteiro; marca `corrigido`), `TEXTOS_FINAIS_ATUAL`
   (textos finais do portal e ajustes de redação, mesmo id, `alterado` = 'texto final' |
-  'redação'; `items: {idx: None}` suprime o inciso SEM re-indexar → `incisos_suprimidos`),
+  'redação'; `items: {idx: None}` suprime o inciso SEM re-indexar → `incisos_suprimidos`;
+  `acrescentar: [...]` anexa itens ao FIM → `incisos_acrescidos`),
   `SUPRIMIR` (artigo sai, registrado em `chapter.suprimidos` com `motivo`), `SUBSTITUIR`
   (artigo antigo sai, entra `<id>-rN` com `substitui`) e `INCLUIR` (`<ancora>-cN` com
   `incluido`; `apos` = último artigo do tema equivale a "mover para o fim"). Artigos que

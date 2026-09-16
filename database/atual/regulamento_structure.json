@@ -1373,7 +1373,7 @@
               "source": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)"
             },
             {
-              "text": "§ 2º O apoio às atividades de operações do Comando Operacional de Bombeiros é prestado por uma Central Integrada de Operações – CIOP em cada sede, com as mesmas atribuições: a CIOP de Porto Velho atende, pelo número 193, as ocorrências da área do Comando Operacional de Bombeiros I, e a CIOP de Ji-Paraná, as ocorrências da área do Comando Operacional de Bombeiros II.",
+              "text": "§ 2º O apoio às atividades de operações do Comando Operacional de Bombeiros é prestado por um Centro Integrado de Operações – CIOP em cada sede, com as mesmas atribuições: a CIOP de Porto Velho atende, pelo número 193, as ocorrências da área do Comando Operacional de Bombeiros I, e a CIOP de Ji-Paraná, as ocorrências da área do Comando Operacional de Bombeiros II.",
               "source": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)"
             }
           ],
@@ -1381,7 +1381,8 @@
           "match": "exata",
           "heading": "Cap. VII — Dos Órgãos de Execução",
           "autoral": true,
-          "fundamento": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)"
+          "fundamento": "LOB, Art. 35, caput e parágrafo único (red. Lei nº 4.303/2018); organograma oficial do CBMRO e confirmação do Ten. Tiago (2026-08-13)",
+          "corrigido": true
         },
         {
           "id": "ro-art-19",
@@ -4270,13 +4271,14 @@
           "id": "mt-art-108",
           "kind": "incisos",
           "editId": "reg:atual:competencias-direcao/mt-art-108",
-          "caput": "As Seções de Suprimento e Manutenção - SSM são orgânicas das Unidades Operacionais, com atribuições correlatas as do Centro de Suprimento e Material - CSMat, porém subordinação direta ao Comandante da Unidade. Da Diretoria de Comunicação Social – BM/5",
+          "caput": "As Seções de Suprimento e Manutenção - SSM são orgânicas das Unidades Operacionais, com atribuições correlatas as do Centro de Suprimento e Material - CSMat, porém subordinação direta ao Comandante da OBM. Da Diretoria de Comunicação Social – BM/5",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 108",
           "match": "exata",
           "heading": "TÍT. III, Cap. V — Direção Setorial / EMG (DAI e Coordenadorias BM/1–BM/10)",
           "adapted": true,
-          "original_caput": "As Seções de Suprimento e Manutenção - SSM são orgânicas das Unidades Operacionais, com atribuições correlatas as do Centro de Suprimento e Manutenção - CSM, porém subordinação direta ao Comandante da Unidade. Da Coordenadoria de Comunicação Social – BM/5"
+          "original_caput": "As Seções de Suprimento e Manutenção - SSM são orgânicas das Unidades Operacionais, com atribuições correlatas as do Centro de Suprimento e Manutenção - CSM, porém subordinação direta ao Comandante da Unidade. Da Coordenadoria de Comunicação Social – BM/5",
+          "corrigido": true
         },
         {
           "id": "mt-art-109",
@@ -9530,7 +9532,7 @@
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
             },
             {
-              "text": "VIII - controlar e coordenar, por intermédio do Central Integrada de Operações, o emprego dos diversos serviços de emergência das unidades operacionais;",
+              "text": "VIII - controlar e coordenar, por intermédio do Centro Integrado de Operações, o emprego dos diversos serviços de emergência das unidades operacionais;",
               "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 236"
             },
             {
@@ -9574,7 +9576,8 @@
           "match": "exata",
           "heading": "TÍT. III, Cap. VII — Nível de Execução (DOp, CRBM, UBM)",
           "adapted": true,
-          "original_caput": "São competências da Diretoria Operacional, com a participação de seus órgãos subordinados:"
+          "original_caput": "São competências da Diretoria Operacional, com a participação de seus órgãos subordinados:",
+          "corrigido": true
         },
         {
           "id": "mt-art-237",
@@ -16216,7 +16219,7 @@
           "id": "mt-art-264",
           "kind": "incisos",
           "editId": "reg:atual:disposicoes-finais/mt-art-264",
-          "caput": "As atribuições e competências das demais Unidades e Subunidades integrantes da estrutura do Comando Operacional de Bombeiros aplicam-se no que couber as disposições e competências estabelecidas aos Grupamentos de Bombeiro Militar.",
+          "caput": "As atribuições e competências das demais Organizações Bombeiro Militar integrantes da estrutura do Comando Operacional de Bombeiros aplicam-se no que couber as disposições e competências estabelecidas aos Grupamentos de Bombeiro Militar.",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 264",
           "match": "exata",
@@ -16229,19 +16232,20 @@
           "id": "mt-art-265",
           "kind": "incisos",
           "editId": "reg:atual:disposicoes-finais/mt-art-265",
-          "caput": "As Unidades e Subunidades de todos os órgãos e níveis da Corporação deverão encaminhar no prazo de 60 (sessenta) dias para a Assessoria Legislativa do CBMRO suas respectivas Normas Gerais de Ação (NGA) fins de avaliação e aprovação do Comandante- Geral.",
+          "caput": "Os órgãos e as Organizações Bombeiro Militar de todos os níveis da Corporação deverão encaminhar no prazo de 60 (sessenta) dias para a Assessoria Legislativa do CBMRO suas respectivas Normas Gerais de Ação (NGA) fins de avaliação e aprovação do Comandante- Geral.",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 265",
           "match": "exata",
           "heading": "Disposições Finais",
           "adapted": true,
-          "original_caput": "As Unidades e Subunidades de todos os órgãos e níveis da Corporação deverão encaminhar no prazo de 60 (sessenta) dias para a Coordenadoria de Legislação e Doutrina do CBMMT suas respectivas Normas Gerais de Ação (NGA) fins de avaliação e aprovação do Comandante- Geral."
+          "original_caput": "As Unidades e Subunidades de todos os órgãos e níveis da Corporação deverão encaminhar no prazo de 60 (sessenta) dias para a Coordenadoria de Legislação e Doutrina do CBMMT suas respectivas Normas Gerais de Ação (NGA) fins de avaliação e aprovação do Comandante- Geral.",
+          "corrigido": true
         },
         {
           "id": "mt-art-266",
           "kind": "incisos",
           "editId": "reg:atual:disposicoes-finais/mt-art-266",
-          "caput": "Os casos omissos ao presente Regulamento Geral serão dirimidos pelo Comandante-Geral do Corpo de Bombeiros Militar.",
+          "caput": "Os casos omissos ao presente Regulamento serão dirimidos pelo Comandante-Geral do Corpo de Bombeiros Militar.",
           "items": [],
           "source": "cf. CBMMT, Regulamento Geral (Portaria nº 009/BM-8/2013), Art. 266",
           "match": "exata",
@@ -17086,11 +17090,11 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "III. Comandante de Área",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "IV. Comandante de Socorro;",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
@@ -17098,7 +17102,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "VI. Adjunto ao Oficial de dia;",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
@@ -17110,7 +17114,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "X. Auxiliares do Comandante da Guarnição;",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
@@ -17118,11 +17122,11 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "XII. Comandante de Guarda de Quartel;",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
-              "text": "XIII. Auxiliar da Guarda de OBM;",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
             },
             {
@@ -17132,6 +17136,10 @@
             {
               "text": "XV. Permanência.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 4"
+            },
+            {
+              "text": "Parágrafo único. O serviço de Oficial de Dia existe apenas no 1º Grupamento de Bombeiro Militar, na Capital; nas demais Organizações Bombeiro Militar, o Comandante de Guarnição, militar mais antigo de serviço, é o responsável pelo serviço operacional diário, aplicando-se-lhe as atribuições conferidas ao Oficial de Dia neste Regulamento.",
+              "source": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009"
             }
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 4",
@@ -17139,7 +17147,20 @@
           "heading": "RISD, Caps. I–IV — Finalidade, Objetivos, Políticas e Funções Operacionais",
           "reindexed": true,
           "incisos_removidos": 2,
-          "corrigido": true
+          "corrigido": true,
+          "incisos_suprimidos": [
+            1,
+            2,
+            4,
+            7,
+            9,
+            10
+          ],
+          "incisos_acrescidos": [
+            13
+          ],
+          "alterado": "redação",
+          "fundamento_alteracao": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-23",
@@ -17222,6 +17243,7 @@
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
           "original_caput": "A permuta de serviço do Superior de Dia, só será permitida mediante autorização por escrito do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo.",
+          "corrigido": true,
           "alterado": "texto final",
           "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
@@ -17232,7 +17254,7 @@
           "caput": "O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Subcomandante-Geral, através do gabinete do Subcomando-Geral.",
           "items": [
             {
-              "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral Ostensivo.",
+              "text": "Parágrafo único. As escalas serão publicadas em Boletim Geral.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 26"
             }
           ],
@@ -17241,6 +17263,7 @@
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
           "original_caput": "O serviço diário de Superior de Dia ao CBMSE será coordenado pela Diretoria Operacional, através da sua Seção de Recursos Humanos.",
+          "corrigido": true,
           "alterado": "texto final",
           "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
@@ -17391,26 +17414,27 @@
           "id": "se-art-33",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-33",
-          "caput": "A permuta de escala do Oficial de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral Ostensivo.",
+          "caput": "A permuta de escala do Oficial de Dia, só será permitida mediante autorização por escrito do Comandante Operacional de Bombeiros do CBMRO, após publicação em Boletim Geral.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 33",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
           "adapted": true,
-          "original_caput": "A permuta de escala do Supervisor de Dia, só será permitida mediante autorização por escrito 14/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo."
+          "original_caput": "A permuta de escala do Supervisor de Dia, só será permitida mediante autorização por escrito 14/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. do Diretor Operacional do CBMSE, após publicação em Boletim Geral Ostensivo.",
+          "corrigido": true
         },
         {
           "id": "se-art-38-c1",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-38-c1",
-          "caput": "O serviço de Oficial de Dia será realizado exclusivamente no Quartel do Comando-Geral – QCG, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM.",
+          "caput": "O serviço de Oficial de Dia será realizado exclusivamente no 1º Grupamento de Bombeiro Militar, na Capital, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM.",
           "items": [
             {
-              "text": "§ 1º O Oficial de Dia exercerá suas atribuições no âmbito interno do QCG, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.",
+              "text": "§ 1º O Oficial de Dia é o responsável pelo serviço operacional diário e pelo serviço interno do 1º Grupamento de Bombeiro Militar, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade responsável pelo aquartelamento nas questões relacionadas à disciplina e à segurança interna.",
+              "text": "§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade do Comandante do 1º Grupamento de Bombeiro Militar perante a prontidão operacional e nas questões relacionadas à disciplina e à segurança interna.",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             }
           ],
@@ -17421,8 +17445,7 @@
           "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
           "origem": "consulta-2026-08",
           "incluido": true,
-          "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, suprimidos na versão atual). Avaliar extensão aos quartéis das OBMs."
+          "nota": "Alcance definido em 15/09/2026: o Oficial de Dia existe só no 1º GBM (Capital) e responde pelo serviço operacional diário e pelo serviço interno; nas demais OBMs o Comandante de Guarnição é o responsável (se-art-4, parágrafo único). Texto de partida sugerido na consulta (serviço interno do QCG)."
         },
         {
           "id": "se-art-38-c2",
@@ -17439,11 +17462,11 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "III - orientar os militares empregados nos serviços internos do QCG quanto às suas atribuições e às determinações em vigor;",
+              "text": "III - orientar os militares empregados nos serviços internos do quartel quanto às suas atribuições e às determinações em vigor;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "IV - realizar inspeções nas dependências do QCG, adotando ou solicitando as providências necessárias diante das irregularidades constatadas;",
+              "text": "IV - realizar inspeções nas dependências do quartel, adotando ou solicitando as providências necessárias diante das irregularidades constatadas;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17451,7 +17474,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "VI - zelar pela disciplina, segurança e ordem no interior do QCG;",
+              "text": "VI - zelar pela disciplina, segurança e ordem no interior do quartel;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17467,7 +17490,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "X - zelar pelo cumprimento das normas referentes à entrada, saída e permanência de pessoas no QCG;",
+              "text": "X - zelar pelo cumprimento das normas referentes à entrada, saída e permanência de pessoas no quartel;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17475,7 +17498,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XII - registrar a entrada ou saída de materiais do QCG fora do horário de expediente, não permitindo sua retirada sem a devida autorização;",
+              "text": "XII - registrar a entrada ou saída de materiais do quartel fora do horário de expediente, não permitindo sua retirada sem a devida autorização;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17483,7 +17506,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XIV - receber autoridades civis e militares que compareçam ao QCG fora do horário de expediente, adotando as providências protocolares cabíveis;",
+              "text": "XIV - receber autoridades civis e militares que compareçam ao quartel fora do horário de expediente, adotando as providências protocolares cabíveis;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17491,7 +17514,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XVI - adotar as providências imediatas destinadas a sanar ou minimizar alterações verificadas no funcionamento interno do QCG, submetendo à autoridade competente aquelas que excedam sua atribuição;",
+              "text": "XVI - adotar as providências imediatas destinadas a sanar ou minimizar alterações verificadas no funcionamento interno do quartel, submetendo à autoridade competente aquelas que excedam sua atribuição;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17507,11 +17530,11 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XX - comunicar imediatamente qualquer acidente envolvendo pessoal, viatura, material ou patrimônio ocorrido no âmbito do QCG;",
+              "text": "XX - comunicar imediatamente qualquer acidente envolvendo pessoal, viatura, material ou patrimônio ocorrido no âmbito do quartel;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XXI - fiscalizar as condições de conservação, limpeza e organização das dependências do QCG;",
+              "text": "XXI - fiscalizar as condições de conservação, limpeza e organização das dependências do quartel;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17544,36 +17567,44 @@
           "id": "se-art-39",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-39",
-          "caput": "Somente concorrerão à escala de Comandante de Socorro e de Oficial de dia os oficiais subalternos e Aspirantes a Oficial.",
+          "caput": "Somente concorrerão à escala de Oficial de Dia os oficiais subalternos e Aspirantes a Oficial.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 39",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "corrigido": true
         },
         {
           "id": "se-art-40",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-40",
-          "caput": "Esses serviços serão realizados no Quartel de cada respectiva Unidade Operacional em regime de trabalho de 24 horas, em casos excepcionais adotar-se-á o regime de turno diferenciado.",
+          "caput": "O serviço de Oficial de Dia será realizado no quartel do 1º Grupamento de Bombeiro Militar em regime de trabalho de 24 horas, em casos excepcionais adotar-se-á o regime de turno diferenciado.",
           "items": [
             {
-              "text": "Parágrafo único. O serviço de Comandante de socorro e de Oficial de dia poderá ser realizado, a depender do efetivo da OBM, por um mesmo oficial.",
+              "text": "",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 40"
             }
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 40",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "corrigido": true,
+          "incisos_suprimidos": [
+            0
+          ],
+          "alterado": "redação",
+          "fundamento_alteracao": "Curadoria da Minuta do Regulamento de Serviço (set/2026) sobre a LOB, Lei nº 2.204/2009"
         },
         {
           "id": "se-art-41",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-41",
-          "caput": "Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas neste Regulamento de Serviço.",
+          "caput": "Todos os aspectos relacionados ao serviço de Oficial de Dia e, nas demais Organizações Bombeiro Militar, ao serviço do Comandante de Guarnição deverão observar as regras internas da OBM a que o militar estiver subordinado, além daquelas previstas neste Regulamento de Serviço.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 41",
           "match": "exata",
           "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "corrigido": true,
           "alterado": "texto final",
           "fundamento_alteracao": "Texto final fechado na curadoria do Portal de Legislação CBM (ago/2026) sobre a LOB, Lei nº 2.204/2009"
         },
@@ -17581,42 +17612,18 @@
           "id": "se-art-42",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-42",
-          "caput": "Esses serviços serão realizados no Quartel de cada OBM com abrangência em toda sua área de jurisdição.",
+          "caput": "O serviço de Oficial de Dia será realizado no quartel do 1º Grupamento de Bombeiro Militar, com abrangência em toda a sua área de jurisdição.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 42",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "corrigido": true
         },
         {
           "id": "se-art-43-c1",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-43-c1",
-          "caput": "O serviço de Comandante de Socorro será realizado exclusivamente na Capital do Estado, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por Aspirantes a Oficial BM e oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM, regularmente escalados para a função.",
-          "items": [
-            {
-              "text": "§ 1º O Comandante de Socorro exercerá suas funções no âmbito do 1º Grupamento de Bombeiro Militar, observada a cadeia de comando operacional estabelecida neste Regulamento.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            },
-            {
-              "text": "§ 2º Durante o período de serviço, o Comandante de Socorro representará a autoridade do Comandante do 1º Grupamento de Bombeiro Militar perante a prontidão operacional, exercendo, nos limites de suas atribuições, as competências necessárias à coordenação e à continuidade do serviço, sem prejuízo das matérias reservadas ao Comandante da Unidade ou aos escalões superiores.",
-              "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
-            }
-          ],
-          "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Comandante de Socorro",
-          "autoral": true,
-          "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
-          "origem": "consulta-2026-08",
-          "incluido": true,
-          "proposta": true,
-          "nota": "PROPOSTA PENDENTE DE DELIBERAÇÃO DO CONDEG — muda regra de mérito em relação à versão em consulta: restringe o Comandante de Socorro à Capital/1º GBM e inclui Capitães; a versão em consulta prevê o serviço no quartel de cada OBM (se-art-40/42) e só subalternos e Aspirantes (se-art-39)."
-        },
-        {
-          "id": "se-art-43-c2",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-operacional/se-art-43-c2",
-          "caput": "Compete ao Comandante de Socorro:",
+          "caput": "Compete ao Oficial de Dia, quanto ao serviço operacional:",
           "items": [
             {
               "text": "I - coordenar, supervisionar e fiscalizar as atividades da prontidão operacional durante o período de serviço;",
@@ -17659,7 +17666,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XI - manter o Oficial de Dia e os escalões competentes informados acerca das ocorrências relevantes, alterações do serviço e indisponibilidade de recursos;",
+              "text": "XI - manter os escalões competentes informados acerca das ocorrências relevantes, alterações do serviço e indisponibilidade de recursos;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17679,7 +17686,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XVI - visitar, sempre que possível e desde que não haja prejuízo à execução do serviço operacional, os militares pertencentes ao 1º Grupamento de Bombeiro Militar que se encontrem hospitalizados, tomando conhecimento de sua situação e das eventuais necessidades de apoio institucional;",
+              "text": "XVI - visitar, sempre que possível e desde que não haja prejuízo à execução do serviço operacional, os militares da OBM que se encontrem hospitalizados, tomando conhecimento de sua situação e das eventuais necessidades de apoio institucional;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17691,7 +17698,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
-              "text": "XIX - acionar, quando necessário, o Plano de Chamada do 1º Grupamento de Bombeiro Militar, diante de ocorrência ou situação que demande reforço extraordinário de efetivo, comunicando imediatamente o acionamento ao Comandante da Unidade e ao Superior de Dia; e",
+              "text": "XIX - acionar, quando necessário, o Plano de Chamada da OBM, diante de ocorrência ou situação que demande reforço extraordinário de efetivo, comunicando imediatamente o acionamento ao Comandante da Unidade e ao Superior de Dia; e",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida"
             },
             {
@@ -17701,18 +17708,18 @@
           ],
           "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Comandante de Socorro",
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço · Do Oficial de Dia nas unidades",
           "autoral": true,
           "fundamento": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 2º e Art. 35; RISD/CBMSE como texto de partida",
           "origem": "consulta-2026-08",
           "incluido": true,
-          "nota": "Inciso XVII (acompanhar militar detido, inclusive da reserva remunerada): conferir com a Corregedoria."
+          "nota": "Redigido originalmente para o Comandante de Socorro (figura eliminada em 15/09/2026); atribuído ao Oficial de Dia. Inciso XVII (acompanhar militar detido, inclusive da reserva remunerada): conferir com a Corregedoria."
         },
         {
           "id": "se-art-44",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-44",
-          "caput": "Em todas as Unidades Operacionais, Especializadas e Subunidade Operacionais do CBMRO, o regime das escalas de adjunto do oficial de dia, do comandante de guarnição, do condutor e operador de viaturas, dos auxiliares da guarnição e do operador de rádio obedecerá ao critério de trabalho de 24 horas, salvo em casos excepcionais adotar-se-á o regime de turno diferenciado.",
+          "caput": "Em todas as Organizações Bombeiro Militar do CBMRO, o regime das escalas de comandante de guarnição, de condutor e operador de viaturas e de operador de rádio obedecerá ao critério de trabalho de 24 horas, salvo em casos excepcionais adotar-se-á o regime de turno diferenciado.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 44",
           "match": "exata",
@@ -17747,21 +17754,23 @@
           "id": "se-art-51",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-51",
-          "caput": "O militar que estiver dispensado ou em gozo de licença de qualquer natureza, independente do prazo, deverá apresentar-se a sua Unidade Operacional imediatamente após o último dia de gozo.",
+          "caput": "O militar que estiver dispensado ou em gozo de licença de qualquer natureza, independente do prazo, deverá apresentar-se à sua OBM imediatamente após o último dia de gozo.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 51",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "corrigido": true
         },
         {
           "id": "se-art-52",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-52",
-          "caput": "Os atestados médicos que não forem expedidos pelos médicos militares estaduais , deverão seguir os protocolos expedidos pela Corporação ou pela UM de Saúde , tão logo seja possível, inclusive nos dias não úteis. Porém, o militar deverá informar, naquele dia, da sua impossibilidade junto ao Oficial de dia da OBM a que pertence.",
+          "caput": "Os atestados médicos que não forem expedidos pelos médicos militares estaduais deverão seguir os protocolos expedidos pela Corporação, por meio do seu órgão de saúde, tão logo seja possível, inclusive nos dias não úteis. Porém, o militar deverá informar, naquele dia, da sua impossibilidade junto ao Oficial de dia da OBM a que pertence.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 52",
           "match": "exata",
-          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço"
+          "heading": "RISD, Cap. VI — Regime e Escalas de Serviço",
+          "corrigido": true
         },
         {
           "id": "se-art-114",
@@ -17790,7 +17799,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 114"
             },
             {
-              "text": "VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS.",
+              "text": "VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Oficial de Dia.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 114"
             }
           ],
@@ -17799,6 +17808,7 @@
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
           "original_caput": "A participação de bombeiros militares de folga, que primeiro chegar em ocorrência, deverá obedecer às seguintes orientações:",
+          "corrigido": true,
           "alterado": "deliberação",
           "fundamento_alteracao": "Deliberação sobre dispositivos com texto semelhante (quadro de 15/09/2026) sobre a LOB, Lei nº 2.204/2009"
         },
@@ -17817,18 +17827,18 @@
           "id": "se-art-116",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-116",
-          "caput": "O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:",
+          "caput": "No atendimento às ocorrências envolvendo pacientes com transtorno mental no Estado de Rondônia observa-se o seguinte:",
           "items": [
             {
-              "text": "I. Os atendimentos de ocorrências de natureza psicossociais devem ser atendidos seguindo os protocolos integrado SES/SSP e o do CBMRO.",
+              "text": "I. Os atendimentos de ocorrências de natureza psicossociais devem ser atendidos seguindo os protocolos integrados da Secretaria de Estado da Saúde, da SESDEC e do CBMRO.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "II. A equipe do SAMU deslocada para o atendimento local, verificando que há a possibilidade iminente de autoagressão pelo paciente em surto, poderá, acionar o Corpo de Bombeiros Militar de Rondônia, através do CIOSP, cabendo ao Oficial de Dia a liberação da equipe para atendimento, após checagem dos dados junto ao SAMU da condição do paciente.",
+              "text": "II. A equipe do SAMU deslocada para o atendimento local, verificando que há a possibilidade iminente de autoagressão pelo paciente em surto, poderá, acionar o Corpo de Bombeiros Militar de Rondônia, através do CIOP, cabendo ao Oficial de Dia a liberação da equipe para atendimento, após checagem dos dados junto ao SAMU da condição do paciente.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "§ 1º Diante do exposto acima, fica estabelecido que o CBMRO somente atuará , de forma integrada com o SAMU, nas ocorrências onde o paciente com transtorno mental estiver proporcionando risco a si mesmo ou ao patrimônio público ou privado sem uso de arma, tais como: tentativa de autolesão, danos ao patrimônio e ou encontrar-se em local de difícil acesso, por exemplo, em bueiros, canais, caixas d’água, valas, torres, em cima de edificações, etc.",
+              "text": "§ 1º O CBMRO somente atuará, de forma integrada com o SAMU, nas ocorrências onde o paciente com transtorno mental estiver proporcionando risco a si mesmo ou ao patrimônio público ou privado sem uso de arma, tais como: tentativa de autolesão, danos ao patrimônio e ou encontrar-se em local de difícil acesso, por exemplo, em bueiros, canais, caixas d’água, valas, torres, em cima de edificações, etc.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
@@ -17840,7 +17850,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             },
             {
-              "text": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Comandante do socorro, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
+              "text": "Parágrafo único. Os casos omissos deverão ser solucionados pelo Oficial de Dia, que os submeterá, sucessivamente, ao Comandante do Subgrupamento, ao Comandante do Grupamento e ao Comandante Operacional de Bombeiros, acionando-se o Superior de Dia quando a ocorrência for de grande vulto.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 116"
             }
           ],
@@ -17850,7 +17860,8 @@
           "adapted": true,
           "original_caput": "O Comando do CBMSE, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Sergipe determina que:",
           "reindexed": true,
-          "incisos_removidos": 1
+          "incisos_removidos": 1,
+          "corrigido": true
         },
         {
           "id": "se-art-117",
@@ -17999,7 +18010,7 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
-              "text": "III. Comunicar e solicitar, imediatamente, o comparecimento ao local do Comandante do Socorro;",
+              "text": "III. Comunicar e solicitar, imediatamente, o comparecimento ao local do Oficial de Dia;",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
@@ -18023,13 +18034,14 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             },
             {
-              "text": "Parágrafo único. A prioridade, caso não haja vítima(s) em decorrência do acidente de trânsito é o atendimento à ocorrência anteriormente solicitado, após, o chefe da guarnição deverá informar o ocorrido, por escrito, ao comandante do SOS para que sejam tomadas as devidas providências.",
+              "text": "Parágrafo único. A prioridade, caso não haja vítima(s) em decorrência do acidente de trânsito é o atendimento à ocorrência anteriormente solicitado, após, o chefe da guarnição deverá informar o ocorrido, por escrito, ao Oficial de Dia para que sejam tomadas as devidas providências.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 127"
             }
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 127",
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "corrigido": true,
           "incisos_suprimidos": [
             4
           ],
@@ -18050,25 +18062,27 @@
           "id": "se-art-129",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-129",
-          "caput": "O atendimento a qualquer ocorrência verificada no território rondoniense deverá em primeiro plano, ser realizado pelas guarnições e ou socorros da Unidade Operacional responsável pela área.",
+          "caput": "O atendimento a qualquer ocorrência verificada no território rondoniense deverá em primeiro plano, ser realizado pelas guarnições e ou socorros da OBM responsável pela área.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 129",
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
-          "original_caput": "O atendimento a qualquer ocorrência verificada no território sergipano deverá em primeiro plano, ser realizado pelas guarnições e ou socorros da Unidade Operacional responsável pela área."
+          "original_caput": "O atendimento a qualquer ocorrência verificada no território sergipano deverá em primeiro plano, ser realizado pelas guarnições e ou socorros da Unidade Operacional responsável pela área.",
+          "corrigido": true
         },
         {
           "id": "se-art-130",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-130",
-          "caput": "Sempre que uma ocorrência exigir o emprego de mais de um socorro ou guarnição, primeiramente, deverá ser exaurido todo o poder de combate da Unidade Operacional da área, ocasião em que será solicitado o apoio dos socorros das demais Unidades, caso isto seja necessário.",
+          "caput": "Sempre que uma ocorrência exigir o emprego de mais de um socorro ou guarnição, primeiramente, deverá ser exaurido todo o poder de combate da OBM da área, ocasião em que será solicitado o apoio dos socorros das demais OBM, caso isto seja necessário.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 130",
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
-          "original_caput": "Sempre que uma ocorrência exigir o emprego de mais de um socorro ou guarnição, primeiramente, deverá ser exaurido todo o poder de combate da Unidade Operacional da área, ocasião 23/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. em que será solicitado o apoio dos socorros das demais Unidades, caso isto seja necessário."
+          "original_caput": "Sempre que uma ocorrência exigir o emprego de mais de um socorro ou guarnição, primeiramente, deverá ser exaurido todo o poder de combate da Unidade Operacional da área, ocasião 23/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários. em que será solicitado o apoio dos socorros das demais Unidades, caso isto seja necessário.",
+          "corrigido": true
         },
         {
           "id": "se-art-131",
@@ -18084,7 +18098,7 @@
           "id": "se-art-132",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-132",
-          "caput": "Torna-se obrigatória a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.",
+          "caput": "Torna-se obrigatória a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais OBM.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 132",
           "match": "exata",
@@ -18147,11 +18161,11 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
-              "text": "VII. Acionar o Instituto Médico Legal sempre que do acidente decorrer vítimas fatais.",
+              "text": "VII. Acionar o Instituto Médico Legal – IML/POLITEC sempre que do acidente decorrer vítimas fatais.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
-              "text": "VIII. Acionar a Defesa Civil Estadual e a Defesa Civil Municipal no caso de ocorrências pertinentes à sua competência.",
+              "text": "VIII. Acionar a Coordenadoria Estadual de Proteção e Defesa Civil e a Coordenadoria Municipal de Proteção e Defesa Civil no caso de ocorrências pertinentes à sua competência.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 135"
             },
             {
@@ -18193,11 +18207,12 @@
           "id": "se-art-136",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-136",
-          "caput": "Os procedimentos nas operações para efeito deste regimento serão divididos em 02 (duas) áreas distintas sendo uma destinada a emergência básica e outra, ao apoio emergencial.",
+          "caput": "Os procedimentos nas operações para efeito deste Regulamento serão divididos em 02 (duas) áreas distintas sendo uma destinada a emergência básica e outra, ao apoio emergencial.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 136",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "corrigido": true
         },
         {
           "id": "se-art-137",
@@ -18245,31 +18260,34 @@
           "id": "se-art-141",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-141",
-          "caput": "A coordenação dos grupos de apoio interno e externo deverá ser feita pelo Comandante de Operações que deverá orientar a participação de cada um deles.",
+          "caput": "A coordenação dos grupos de apoio interno e externo deverá ser feita pelo Comandante do Incidente que deverá orientar a participação de cada um deles.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 141",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "corrigido": true
         },
         {
           "id": "se-art-142",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-142",
-          "caput": "O Comandante de Operações deverá evitar que cada grupo de apoio interno ou externo haja, por conta própria num verdadeiro conflito de atribuições.",
+          "caput": "O Comandante do Incidente deverá evitar que cada grupo de apoio interno ou externo haja, por conta própria num verdadeiro conflito de atribuições.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 142",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "corrigido": true
         },
         {
           "id": "se-art-143",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-143",
-          "caput": "As guarnições de socorros de bombeiros quando solicitados em operação de reforço deverão, também se dirigir a área de apoio emergencial onde receberão orientações do Comandante de Operações, quanto ao seu emprego e atuação.",
+          "caput": "As guarnições de socorros de bombeiros quando solicitados em operação de reforço deverão, também se dirigir a área de apoio emergencial onde receberão orientações do Comandante do Incidente, quanto ao seu emprego e atuação.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 143",
           "match": "exata",
-          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências"
+          "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
+          "corrigido": true
         },
         {
           "id": "se-art-144",
@@ -18326,13 +18344,14 @@
           "id": "se-art-145",
           "kind": "incisos",
           "editId": "reg:atual:servico-operacional/se-art-145",
-          "caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Oficial de Dia ou Cmt de Operações a qual deverá cumprir, exatamente, as tarefas e missões por este determinado.",
+          "caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Oficial de Dia ou do Comandante do Incidente a qual deverá cumprir, exatamente, as tarefas e missões por este determinado.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 145",
           "match": "exata",
           "heading": "RISD, Caps. VIII–XI — Situações Extraordinárias, Viaturas, Apoio e Ocorrências",
           "adapted": true,
-          "original_caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Supervisor de Dia ou Cmt de Operações a qual deverá cumprir, exatamente, as tarefas e missões por este determinado."
+          "original_caput": "A participação e ou o emprego do recurso humano extraordinário ficará condicionada a decisão do Supervisor de Dia ou Cmt de Operações a qual deverá cumprir, exatamente, as tarefas e missões por este determinado.",
+          "corrigido": true
         },
         {
           "id": "se-art-146",
@@ -19312,11 +19331,12 @@
           "id": "se-art-58",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-58",
-          "caput": "Será obrigação do Subcomandante de cada Unidade fiscalizar e acompanhar a passagem de serviço.",
+          "caput": "Será obrigação do Subcomandante de cada OBM fiscalizar e acompanhar a passagem de serviço.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 58",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-59",
@@ -19345,15 +19365,15 @@
           "caput": "A passagem de serviço em cada GBM deverá ser assim realizada:",
           "items": [
             {
-              "text": "I. O Comandante de Socorro que sai posicionado em posição intermediária de defronte a tropa comanda “para passagem de serviço – sentido”.",
+              "text": "I. O Oficial de Dia que sai posicionado em posição intermediária de defronte a tropa comanda “para passagem de serviço – sentido”.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
-              "text": "II. O Comandante de Socorro que entra tomará o mesmo procedimento previsto no item anterior.",
+              "text": "II. O Oficial de Dia que entra tomará o mesmo procedimento previsto no item anterior.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
-              "text": "III. O Comandante de Socorro que sai comanda: “para os Comandantes de Guarnições, um passo em frente, marche”. Tal ato será também comandado pelo Chefe da Prontidão de Serviço que entra.",
+              "text": "III. O Oficial de Dia que sai comanda: “para os Comandantes de Guarnições, um passo em frente, marche”. Tal ato será também comandado pelo Oficial de Dia que entra.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
@@ -19361,23 +19381,25 @@
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             },
             {
-              "text": "V. Apresentados todos os Comandantes de Guarnição e passadas todas as alterações existentes, o Comandante de Socorro que sai se apresenta passando o serviço ao Comandante de Socorro que entra. a. O Comandante de Socorro que entra comandará: - “Em continência ao terreno apresentar armas”, b. O Comandante de Socorro que sai comandará: - “Apresentar armas” c. Em seguida, o Comandante de Socorro que entra comandará: -“Descansar armas”, repetindo o mesmo o Comandante de Socorro que sai, d. Por fim, ambos comandarão: - “Descansar”.",
+              "text": "V. Apresentados todos os Comandantes de Guarnição e passadas todas as alterações existentes, o Oficial de Dia que sai se apresenta passando o serviço ao Oficial de Dia que entra. a. O Oficial de Dia que entra comandará: - “Em continência ao terreno apresentar armas”, b. O Oficial de Dia que sai comandará: - “Apresentar armas” c. Em seguida, o Oficial de Dia que entra comandará: -“Descansar armas”, repetindo o mesmo o Oficial de Dia que sai, d. Por fim, ambos comandarão: - “Descansar”.",
               "source": "cf. CBMSE, RISD (atual. 2022), Art. 61"
             }
           ],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 61",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-62",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-62",
-          "caput": "Toda prontidão que entra de serviço deverá obrigatoriamente conferir o material constante na carga da viatura, comunicando as faltas e carências ao Comandante de Socorro.",
+          "caput": "Toda prontidão que entra de serviço deverá obrigatoriamente conferir o material constante na carga da viatura, comunicando as faltas e carências ao Oficial de Dia.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 62",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-63",
@@ -19433,11 +19455,12 @@
           "id": "se-art-68",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-68",
-          "caput": "O Comandante de Socorro deverá acompanhado dos Comandantes de Guarnição supervisionar a conferência de todo o material.",
+          "caput": "O Oficial de Dia deverá acompanhado dos Comandantes de Guarnição supervisionar a conferência de todo o material.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 68",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-69",
@@ -19455,41 +19478,45 @@
           "id": "se-art-70",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-70",
-          "caput": "Todo o pessoal de serviço deverá utilizar os Equipamentos de Proteção Individual nos atendimentos de todas e quaisquer ocorrências, devendo o Comandante de Socorro verificar a disponibilidade e o uso correto dos EPI.",
+          "caput": "Todo o pessoal de serviço deverá utilizar os Equipamentos de Proteção Individual nos atendimentos de todas e quaisquer ocorrências, devendo o Oficial de Dia verificar a disponibilidade e o uso correto dos EPI.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 70",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-71",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-71",
-          "caput": "Para verificar o nível de qualificação dos integrantes dos socorros de combate a incêndio o Comandante de Socorro deverá diariamente, logo após a passagem de serviço realizar a prova de bomba armar, ocasião em que também testará o funcionamento dos equipamentos hidráulicos da viatura.",
+          "caput": "Para verificar o nível de qualificação dos integrantes dos socorros de combate a incêndio o Oficial de Dia deverá diariamente, logo após a passagem de serviço realizar a prova de bomba armar, ocasião em que também testará o funcionamento dos equipamentos hidráulicos da viatura.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 71",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-72",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-72",
-          "caput": "Cada Unidade Operacional deverá, diariamente, programar duas instruções para Prontidão de Serviço, sendo uma prática, logo após a passagem de serviço e outra teórica.",
+          "caput": "Cada OBM deverá, diariamente, programar duas instruções para Prontidão de Serviço, sendo uma prática, logo após a passagem de serviço e outra teórica.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 72",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-73",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-73",
-          "caput": "A instrução deverá ser ministrada impreterivelmente pelo Comandante de Socorro.",
+          "caput": "A instrução deverá ser ministrada impreterivelmente pelo Oficial de Dia.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 73",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-74",
@@ -19515,21 +19542,23 @@
           "id": "se-art-76",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-76",
-          "caput": "Aos assuntos que exijam conhecimento específico, deverão ser solicitados a Diretoria de Pessoal, Ensino e Instrução para que seja efetuado um planejamento instrucional, conforme seja o caso.",
+          "caput": "Aos assuntos que exijam conhecimento específico, deverão ser solicitados à Coordenadoria de Educação, Ensino e Instrução para que seja efetuado um planejamento instrucional, conforme seja o caso.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 76",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-77",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-77",
-          "caput": "O Comandante de Socorro e/ou o Oficial de Dia, ao entrar de serviço deverá verificar pessoalmente as condições do alojamento da prontidão, primando pela limpeza, organização e conforto das suas instalações.",
+          "caput": "O Oficial de Dia, ao entrar de serviço deverá verificar pessoalmente as condições do alojamento da prontidão, primando pela limpeza, organização e conforto das suas instalações.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 77",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-78",
@@ -19608,7 +19637,7 @@
           "id": "se-art-85",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-85",
-          "caput": "O Comandante da guarnição deverá solicitar à Central Integrada de Operações o máximo de informação referente à ocorrência, principalmente, o endereço completo, ponto de referência e confirmação da ocorrência.",
+          "caput": "O Comandante da guarnição deverá solicitar ao Centro Integrado de Operações o máximo de informação referente à ocorrência, principalmente, o endereço completo, ponto de referência e confirmação da ocorrência.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 85",
           "match": "exata",
@@ -19631,33 +19660,36 @@
           "id": "se-art-87",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-87",
-          "caput": "Mesmo um aviso de pessoas em risco, o Comandante do Socorro não deverá permitir que se coloque em segundo plano a segurança da guarnição em função de um mínimo de ganho de tempo.",
+          "caput": "Mesmo um aviso de pessoas em risco, o Oficial de Dia não deverá permitir que se coloque em segundo plano a segurança da guarnição em função de um mínimo de ganho de tempo.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 87",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-88",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-88",
-          "caput": "O Comandante do Socorro não deverá deixar que os bombeiros militares posicionados sobre a viatura se desloquem em condições de insegurança, devendo para isso, orientá-los a firmar seu corpo em algum ponto de apoio existente na viatura, inclusive usar o cinto de segurança",
+          "caput": "O Oficial de Dia não deverá deixar que os bombeiros militares posicionados sobre a viatura se desloquem em condições de insegurança, devendo para isso, orientá-los a firmar seu corpo em algum ponto de apoio existente na viatura, inclusive usar o cinto de segurança",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 88",
           "match": "exata",
           "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
           "adapted": true,
-          "original_caput": "O Comandante do Socorro não deverá deixar que os bombeiros militares posicionados sobre a viatura se desloquem em condições de insegurança, devendo para isso, orientá-los a firmar seu corpo em algum ponto de apoio existente na viatura, inclusive usar o cinto de segurança 18/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários."
+          "original_caput": "O Comandante do Socorro não deverá deixar que os bombeiros militares posicionados sobre a viatura se desloquem em condições de insegurança, devendo para isso, orientá-los a firmar seu corpo em algum ponto de apoio existente na viatura, inclusive usar o cinto de segurança 18/28 BGO Nº 060 Publicado em 30/03/2022 CBMSE/RISD – Regulamento Interno dos Serviços Diários.",
+          "corrigido": true
         },
         {
           "id": "se-art-89",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-89",
-          "caput": "Ao chegar de qualquer ocorrência o Comandante do Socorro deverá colocar a tropa em forma, comentar os acertos e erros acontecidos durante a operação para possíveis correções.",
+          "caput": "Ao chegar de qualquer ocorrência o Oficial de Dia deverá colocar a tropa em forma, comentar os acertos e erros acontecidos durante a operação para possíveis correções.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 89",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-90",
@@ -19674,7 +19706,7 @@
           "id": "se-art-91",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-91",
-          "caput": "O Comandante de guarnição ao regressar de uma ocorrência deverá imediatamente apresentar-se ao Chefe da Prontidão, relatando os fatos ocorridos durante a operação, lembrando de informar à Central Integrada de Operações o desfecho da ocorrência.",
+          "caput": "O Comandante de guarnição ao regressar de uma ocorrência deverá imediatamente apresentar-se ao Oficial de Dia, relatando os fatos ocorridos durante a operação, lembrando de informar ao Centro Integrado de Operações o desfecho da ocorrência.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 91",
           "match": "exata",
@@ -19719,61 +19751,10 @@
           "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
         },
         {
-          "id": "se-art-95",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-interno-dia/se-art-95",
-          "caput": "Os militares escalados na Reserva Técnica Operacional (RTO) ficam subordinados ao Cmt de Socorro durante o serviço.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 95",
-          "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
-        },
-        {
-          "id": "se-art-96",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-interno-dia/se-art-96",
-          "caput": "O militar da Reserva Técnica, durante todo o serviço, deverá exercer suas funções inerentes à Reserva Técnica podendo o supervisor empregá-lo conforme a necessidade do serviço operacional, no suporte logístico e de suprimento nas operações em que se fizer necessário.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 96",
-          "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
-        },
-        {
-          "id": "se-art-97",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-interno-dia/se-art-97",
-          "caput": "Fica atribuída à RTO a manutenção de primeiro escalão dos materiais e equipamentos operacionais.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 97",
-          "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
-        },
-        {
-          "id": "se-art-98",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-interno-dia/se-art-98",
-          "caput": "Caso necessário, o militar da Reserva Técnica poderá compor a escala de ronda do quartel. Neste caso o militar deverá trajar o uniforme de prontidão 4ºA.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 98",
-          "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
-          "corrigido": true
-        },
-        {
-          "id": "se-art-99",
-          "kind": "incisos",
-          "editId": "reg:atual:servico-interno-dia/se-art-99",
-          "caput": "O militar escalado na RTO poderá tirar o serviço com o uniforme 5B, salvo o disposto no artigo anterior.",
-          "items": [],
-          "source": "cf. CBMSE, RISD (atual. 2022), Art. 99",
-          "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
-        },
-        {
           "id": "se-art-100",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-100",
-          "caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante-Geral, Subcomandante ou Comandante Operacional de Bombeiros do CBMRO.",
+          "caput": "O empréstimo de qualquer material operacional a entidades externas a Corporação, torna-se terminantemente proibido, salvo ordem expressa do Comandante-Geral, Subcomandante-Geral ou Comandante Operacional de Bombeiros do CBMRO.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 100",
           "match": "exata",
@@ -19798,11 +19779,12 @@
           "id": "se-art-102",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-102",
-          "caput": "Qualquer empréstimo de material operacional, além de registrado no livro de ocorrências Diárias do Comandante de Socorro da OBM cedente deverá ser realizado mediante cautela devidamente assinada pelo seu Comandante.",
+          "caput": "Qualquer empréstimo de material operacional, além de registrado no livro de ocorrências Diárias do Oficial de Dia da OBM cedente deverá ser realizado mediante cautela devidamente assinada pelo seu Comandante.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 102",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-103",
@@ -19818,11 +19800,12 @@
           "id": "se-art-104",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-104",
-          "caput": "Nos casos emergenciais, os oficiais de serviço poderão requisitar qualquer material operacional existente na Corporação, independente da autorização do Comandante da Unidade detentora do mesmo, devendo justificar a necessidade em parte de serviço.",
+          "caput": "Nos casos emergenciais, os oficiais de serviço poderão requisitar qualquer material operacional existente na Corporação, independente da autorização do Comandante da OBM detentora do mesmo, devendo justificar a necessidade em parte de serviço.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 104",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-105",
@@ -19840,11 +19823,12 @@
           "id": "se-art-106",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-106",
-          "caput": "Sempre que uma viatura operacional tiver que ser baixada ao Setor de Manutenção para efetuar serviços demorados (superior a 24 horas) deverá o Comandante da OBM detentor do veículo providenciar a retirada de toda a carga de material nele existente.",
+          "caput": "Sempre que uma viatura operacional tiver que ser baixada ao Centro de Manutenção para efetuar serviços demorados (superior a 24 horas) deverá o Comandante da OBM detentor do veículo providenciar a retirada de toda a carga de material nele existente.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 106",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-107",
@@ -19902,11 +19886,12 @@
           "id": "se-art-110",
           "kind": "incisos",
           "editId": "reg:atual:servico-interno-dia/se-art-110",
-          "caput": "Bombeiro militar que em serviço apresentar repouso médico, deverá ser visitado pelo superior de dia e/ou Comandante da Unidade durante o serviço previsto, a fim de observar o cumprimento do repouso e prestar o apoio necessário.",
+          "caput": "Bombeiro militar que em serviço apresentar repouso médico, deverá ser visitado pelo superior de dia e/ou Comandante da OBM durante o serviço previsto, a fim de observar o cumprimento do repouso e prestar o apoio necessário.",
           "items": [],
           "source": "cf. CBMSE, RISD (atual. 2022), Art. 110",
           "match": "exata",
-          "heading": "RISD, Cap. VII — Rotina Diária das Unidades"
+          "heading": "RISD, Cap. VII — Rotina Diária das Unidades",
+          "corrigido": true
         },
         {
           "id": "se-art-111",
@@ -20572,7 +20557,29 @@
             }
           ]
         }
-      }
+      },
+      "suprimidos": [
+        {
+          "id": "se-art-95",
+          "motivo": "Suprimido — Reserva Técnica Operacional (RTO), figura do RISD/CBMSE sem previsão em RO"
+        },
+        {
+          "id": "se-art-96",
+          "motivo": "Suprimido — idem (RTO)"
+        },
+        {
+          "id": "se-art-97",
+          "motivo": "Suprimido — idem (RTO)"
+        },
+        {
+          "id": "se-art-98",
+          "motivo": "Suprimido — idem (RTO); citava o uniforme \"4ºA\" do CBMSE"
+        },
+        {
+          "id": "se-art-99",
+          "motivo": "Suprimido — idem (RTO); citava o uniforme \"5B\" do CBMSE"
+        }
+      ]
     },
     {
       "id": "reg:atual:atribuicoes-funcoes",
@@ -21514,7 +21521,7 @@
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
             },
             {
-              "text": "IX - autorizar, por escrito, a permuta de escala do serviço de Oficial de Dia, com posterior publicação em Boletim Geral Ostensivo;",
+              "text": "IX - autorizar, por escrito, a permuta de escala do serviço de Oficial de Dia, com posterior publicação em Boletim Geral;",
               "source": "Sugestão do Cel. BM Luiz Eduardo Oliveira Firmino na consulta ao Regulamento de Serviço (19-25/08/2026) — Lei nº 2.204/2009 (LOB), Art. 35 e parágrafo único (red. Lei nº 4.303/2018)"
             },
             {
@@ -24295,7 +24302,7 @@
           "id": "ro-art-1",
           "kind": "incisos",
           "editId": "reg:atual:central-operacoes-193/ro-art-1",
-          "caput": "Os Supervisores exercem a supervisão técnica e funcional das equipes e das atividades da Central Integrada de Operações – CIOP sob sua responsabilidade, apoiando o Coordenador de Plantão na manutenção da qualidade, da regularidade e da eficiência dos serviços, competindo-lhes:",
+          "caput": "Os Supervisores exercem a supervisão técnica e funcional das equipes e das atividades do Centro Integrado de Operações – CIOP sob sua responsabilidade, apoiando o Coordenador de Plantão na manutenção da qualidade, da regularidade e da eficiência dos serviços, competindo-lhes:",
           "items": [
             {
               "text": "I - supervisionar as equipes e os processos operacionais sob sua responsabilidade;",
@@ -24338,13 +24345,14 @@
           "match": "exata",
           "heading": "NGA-CIOP-001/2026 — Dos Supervisores",
           "autoral": true,
-          "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25"
+          "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 23 a 25",
+          "corrigido": true
         },
         {
           "id": "ro-art-2",
           "kind": "incisos",
           "editId": "reg:atual:central-operacoes-193/ro-art-2",
-          "caput": "Compete ao Atendente realizar o atendimento inicial das demandas recebidas pelos canais oficiais da Central Integrada de Operações – CIOP, coletando, qualificando e registrando as informações necessárias ao adequado processamento da ocorrência, competindo-lhe ainda:",
+          "caput": "Compete ao Atendente realizar o atendimento inicial das demandas recebidas pelos canais oficiais do Centro Integrado de Operações – CIOP, coletando, qualificando e registrando as informações necessárias ao adequado processamento da ocorrência, competindo-lhe ainda:",
           "items": [
             {
               "text": "I - atender o cidadão com urbanidade, imparcialidade, objetividade e linguagem compatível com a natureza da demanda;",
@@ -24379,7 +24387,8 @@
           "match": "exata",
           "heading": "NGA-CIOP-001/2026 — Dos Atendentes",
           "autoral": true,
-          "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27"
+          "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional), Arts. 26 e 27",
+          "corrigido": true
         },
         {
           "id": "ro-art-3",
@@ -24422,13 +24431,14 @@
           "id": "ro-art-4",
           "kind": "incisos",
           "editId": "reg:atual:central-operacoes-193/ro-art-4",
-          "caput": "As demais atribuições, competências, organização e finalidade da Central Integrada de Operações – CIOP, inclusive quanto à Direção, à Coordenação de Plantão, à Recepção Institucional, ao Apoio Operacional, à tecnologia e à governança da informação, à segurança orgânica, à continuidade operacional, à gestão de eventos críticos, ao videomonitoramento, à proteção de dados e à capacitação e responsabilização de seus integrantes, são reguladas por Norma Geral de Ação própria, expedida pelo órgão de competência da Secretaria de Estado da Segurança, Defesa e Cidadania – SESDEC.",
+          "caput": "As demais atribuições, competências, organização e finalidade do Centro Integrado de Operações – CIOP, inclusive quanto à Direção, à Coordenação de Plantão, à Recepção Institucional, ao Apoio Operacional, à tecnologia e à governança da informação, à segurança orgânica, à continuidade operacional, à gestão de eventos críticos, ao videomonitoramento, à proteção de dados e à capacitação e responsabilização de seus integrantes, são reguladas por Norma Geral de Ação própria, expedida pelo órgão de competência da Secretaria de Estado da Segurança, Defesa e Cidadania – SESDEC.",
           "items": [],
           "source": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional)",
           "match": "exata",
           "heading": "NGA-CIOP-001/2026 — Da remissão às demais matérias",
           "autoral": true,
-          "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional)"
+          "fundamento": "NGA-CIOP-001/2026 (Norma Geral de Ação do Centro Integrado de Operações — SESDEC/CIOP, Beta Consolidada Revisão 4, documento de trabalho em validação institucional)",
+          "corrigido": true
         }
       ],
       "alternatives": {
@@ -24595,15 +24605,15 @@
   "cenario": "atual",
   "versao": "atual",
   "curadoria": {
-    "correcoes": 44,
-    "textos_finais": 12,
-    "suprimidos": 11,
+    "correcoes": 109,
+    "textos_finais": 14,
+    "suprimidos": 16,
     "substituidos": 13,
-    "novos": 7,
+    "novos": 6,
     "atendimentos_artigos": {
       "reg:atual:servico-operacional/se-art-4": {
         "como": "incluido",
-        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como 6 artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1/c2); os 3 artigos de regime estão marcados como proposta pendente de deliberação do CONDEG (Capital/1º GBM/QCG)"
+        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1 — este último, as competências operacionais, atribuídas ao Oficial de Dia após a eliminação da figura do Comandante de Socorro em 15/09); o artigo de regime do Superior de Dia segue como proposta pendente de deliberação do CONDEG (Capital); o do Oficial de Dia foi decidido em 15/09 (só no 1º GBM)"
       }
     },
     "deliberacoes": [
@@ -24627,6 +24637,18 @@
         ],
         "assunto": "Demais 5 grupos do quadro de dispositivos semelhantes de 15/09/2026",
         "decisao": "Permanecem como estão (mantidos os dois dispositivos em cada grupo). O quadro foi eliminado do pacote."
+      },
+      {
+        "data": "2026-09-15",
+        "dispositivos": [
+          "servico-operacional/se-art-4",
+          "servico-operacional/se-art-39..44",
+          "servico-operacional/se-art-43-c1 (removido)",
+          "servico-interno-dia/se-art-95..99 (removidos)",
+          "todas as menções a Comandante de Socorro"
+        ],
+        "assunto": "Figuras do serviço eliminadas: Comandante de Área, Comandante de Socorro, Adjunto ao Oficial de Dia, Auxiliares do Comandante da Guarnição, Comandante de Guarda de Quartel, Auxiliar da Guarda de OBM; Reserva Técnica Operacional",
+        "decisao": "Ficam Superior de Dia, Oficial de Dia, Comandante de Guarnição, Condutor e Operador de Viaturas, Operador de Rádio, Socorristas e Permanência. O Oficial de Dia existe só no 1º GBM (Capital); nas demais OBMs o Comandante de Guarnição, militar mais antigo de serviço, é o responsável pelo serviço operacional diário (parágrafo único do artigo das funções). As atribuições antes do Comandante de Socorro passam ao Oficial de Dia e, nas demais OBMs, ao Comandante de Guarnição. O capítulo da RTO foi suprimido."
       }
     ]
   }

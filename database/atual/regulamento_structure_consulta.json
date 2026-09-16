@@ -23672,7 +23672,7 @@
     "atendimentos_artigos": {
       "reg:atual:servico-operacional/se-art-4": {
         "como": "incluido",
-        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como 6 artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1/c2); os 3 artigos de regime estão marcados como proposta pendente de deliberação do CONDEG (Capital/1º GBM/QCG)"
+        "nota": "sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na versão atual como artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1 — este último, as competências operacionais, atribuídas ao Oficial de Dia após a eliminação da figura do Comandante de Socorro em 15/09); o artigo de regime do Superior de Dia segue como proposta pendente de deliberação do CONDEG (Capital); o do Oficial de Dia foi decidido em 15/09 (só no 1º GBM)"
       }
     },
     "deliberacoes": [
@@ -23696,6 +23696,18 @@
         ],
         "assunto": "Demais 5 grupos do quadro de dispositivos semelhantes de 15/09/2026",
         "decisao": "Permanecem como estão (mantidos os dois dispositivos em cada grupo). O quadro foi eliminado do pacote."
+      },
+      {
+        "data": "2026-09-15",
+        "dispositivos": [
+          "servico-operacional/se-art-4",
+          "servico-operacional/se-art-39..44",
+          "servico-operacional/se-art-43-c1 (removido)",
+          "servico-interno-dia/se-art-95..99 (removidos)",
+          "todas as menções a Comandante de Socorro"
+        ],
+        "assunto": "Figuras do serviço eliminadas: Comandante de Área, Comandante de Socorro, Adjunto ao Oficial de Dia, Auxiliares do Comandante da Guarnição, Comandante de Guarda de Quartel, Auxiliar da Guarda de OBM; Reserva Técnica Operacional",
+        "decisao": "Ficam Superior de Dia, Oficial de Dia, Comandante de Guarnição, Condutor e Operador de Viaturas, Operador de Rádio, Socorristas e Permanência. O Oficial de Dia existe só no 1º GBM (Capital); nas demais OBMs o Comandante de Guarnição, militar mais antigo de serviço, é o responsável pelo serviço operacional diário (parágrafo único do artigo das funções). As atribuições antes do Comandante de Socorro passam ao Oficial de Dia e, nas demais OBMs, ao Comandante de Guarnição. O capítulo da RTO foi suprimido."
       }
     ]
   }

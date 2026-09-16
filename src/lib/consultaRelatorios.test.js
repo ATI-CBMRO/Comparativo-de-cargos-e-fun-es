@@ -195,8 +195,13 @@ test('ESTRUTURA cobre a versão ATUAL: substitutos no lugar do antigo, incluído
   assert.ok(ids.includes('mt-art-3-r1') && !ids.includes('mt-art-3'))
   assert.equal(ids.indexOf('se-art-31-c1'), ids.indexOf('se-art-31') + 1, 'incluído logo após a âncora')
   assert.ok(ids.includes('se-art-38-c1') && !ids.includes('se-art-38'), 'âncora suprimida não impede o incluído')
+  assert.ok(ids.includes('se-art-43-c1') && !ids.includes('se-art-43') && !ids.includes('se-art-43-c2'))
   assert.equal(ids[ids.indexOf('ro-art-2-c1') - 1], 'ro-art-2')
   assert.ok(!ids.includes('se-art-46'))
+  // capítulo da RTO (se-art-95..99) foi todo suprimido: some da minuta e a numeração dos capítulos não pula
+  assert.ok(!r.blocos.some(b => b.tipo === 'capitulo' && /RESERVA TÉCNICA/.test(b.texto)))
+  const caps = r.blocos.filter(b => b.tipo === 'capitulo').map(b => b.rotulo)
+  assert.equal(new Set(caps.slice(0, 6)).size, 6)
 })
 
 test('montarReestruturada falha alto se sobrar artigo', () => {

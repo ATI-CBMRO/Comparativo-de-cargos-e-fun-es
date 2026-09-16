@@ -57,6 +57,27 @@ CORRECOES = {
                                ('executar as atividades de defesa civil do Estado', 'executar as atividades de proteção e defesa civil do Estado')]},
     },
     'servico-operacional': {
+        # ── Resíduos de nomenclatura do RISD de Sergipe / Regulamento do CBMMT (15/09/2026) ──
+        'se-art-39': {'caput': [('escala de Oficial de Dia e de Oficial de dia os oficiais', 'escala de Oficial de Dia os oficiais')]},
+        'se-art-40': {'caput': [('Esses serviços serão realizados no Quartel de cada respectiva Unidade Operacional', 'O serviço de Oficial de Dia será realizado no quartel do 1º Grupamento de Bombeiro Militar')]},
+        'se-art-42': {'caput': [('Esses serviços serão realizados no Quartel de cada OBM com abrangência em toda sua área de jurisdição', 'O serviço de Oficial de Dia será realizado no quartel do 1º Grupamento de Bombeiro Militar, com abrangência em toda a sua área de jurisdição')]},
+        'se-art-51': {'caput': [('apresentar-se a sua Unidade Operacional', 'apresentar-se à sua OBM')]},
+        'se-art-52': {'caput': [('pelos médicos militares estaduais , deverão seguir os protocolos expedidos pela Corporação ou pela UM de Saúde , tão logo',
+                                 'pelos médicos militares estaduais deverão seguir os protocolos expedidos pela Corporação, por meio do seu órgão de saúde, tão logo')]},
+        'se-art-127': {'items': [('por escrito, ao comandante do SOS para', 'por escrito, ao Oficial de Dia para')]},
+        'se-art-129': {'caput': [('da Unidade Operacional responsável pela área', 'da OBM responsável pela área')]},
+        'se-art-130': {'caput': [('poder de combate da Unidade Operacional da área', 'poder de combate da OBM da área'),
+                                 ('apoio dos socorros das demais Unidades,', 'apoio dos socorros das demais OBM,')]},
+        'se-art-136': {'caput': [('para efeito deste regimento', 'para efeito deste Regulamento')]},
+        'se-art-141': {'caput': [('pelo Comandante de Operações', 'pelo Comandante do Incidente')]},
+        'se-art-142': {'caput': [('O Comandante de Operações deverá', 'O Comandante do Incidente deverá')]},
+        'se-art-143': {'caput': [('orientações do Comandante de Operações', 'orientações do Comandante do Incidente')]},
+        'se-art-145': {'caput': [('do Oficial de Dia ou Cmt de Operações', 'do Oficial de Dia ou do Comandante do Incidente')]},
+        'se-art-116': {'caput': [('O Comando do CBMRO, a fim de regularizar a questão envolvendo pacientes com distúrbios mentais no Estado de Rondônia determina que:',
+                                  'No atendimento às ocorrências envolvendo pacientes com transtorno mental no Estado de Rondônia observa-se o seguinte:')],
+                       'items': [('seguindo os protocolos integrado SES/SSP e o do CBMRO', 'seguindo os protocolos integrados da Secretaria de Estado da Saúde, da SESDEC e do CBMRO'),
+                                 ('através do CIOSP,', 'através do CIOP,'),
+                                 ('§ 1º Diante do exposto acima, fica estabelecido que o CBMRO somente atuará ,', '§ 1º O CBMRO somente atuará,')]},
         # Sobra da quebra "Art. Nº" na extração do RISD de Sergipe.
         'se-art-1': {'caput': [('º O presente Regulamento', 'O presente Regulamento')]},
         'se-art-2': {'caput': [('º São objetivos', 'São objetivos')]},
@@ -66,38 +87,78 @@ CORRECOES = {
         'se-art-23': {'items': [('As escalas para que concorre exclusivamente', 'As escalas para quem concorre exclusivamente')]},
         # Resíduos de título de seção da fonte grudados no fim do caput.
         'se-art-43': {'caput': [(' Comandante de Guarnição – Do Condutor e Operador de Viaturas – Dos Auxiliares da Guarnição e do Operador de Rádio', '')]},
-        'se-art-44': {'caput': [('excepcion ais', 'excepcionais')]},
+        'se-art-44': {'caput': [('excepcion ais', 'excepcionais'),
+                                ('Em todas as Unidades Operacionais, Especializadas e Subunidade Operacionais do CBMRO', 'Em todas as Organizações Bombeiro Militar do CBMRO'),
+                                # figuras eliminadas (15/09): adjunto do oficial de dia e auxiliares da guarnição
+                                ('o regime das escalas de adjunto do oficial de dia, do comandante de guarnição, do condutor e operador de viaturas, dos auxiliares da guarnição e do operador de rádio',
+                                 'o regime das escalas de comandante de guarnição, de condutor e operador de viaturas e de operador de rádio')]},
         'se-art-47': {'caput': [('pelo Comandante da OBM. Operações', 'pelo Comandante da OBM.')]},
         'se-art-112': {'caput': [('análise do comandante da OBM. durante Ocorrências', 'análise do comandante da OBM.')]},
         'se-art-115': {'caput': [('Comandante do incidente. com Distúrbios Mentais', 'Comandante do incidente.')]},
         # Resíduo "Grande Porte" (título de seção colado) e a sigla de Sergipe "GTA" — em RO a
         # unidade é o Grupamento de Operações Aéreas (GOA).
         'se-art-135': {'items': [('nos acidentes contra o meio ambiente. Grande Porte', 'nos acidentes contra o meio ambiente.'),
+                                 ('Acionar o Instituto Médico Legal sempre', 'Acionar o Instituto Médico Legal – IML/POLITEC sempre'),
+                                 ('Acionar a Defesa Civil Estadual e a Defesa Civil Municipal', 'Acionar a Coordenadoria Estadual de Proteção e Defesa Civil e a Coordenadoria Municipal de Proteção e Defesa Civil'),
                                  ('Acionar o helicóptero do GTA nos acidentes', 'Acionar a aeronave do Grupamento de Operações Aéreas – GOA nos acidentes')]},
         'se-art-147': {'caput': [('emprego desnecessário de bombeiros militares. Disposições Gerais', 'emprego desnecessário de bombeiros militares.')]},
     },
     'servico-interno-dia': {
+        # ── Resíduos de nomenclatura do RISD de Sergipe (15/09/2026) ──
+        'se-art-58': {'caput': [('Subcomandante de cada Unidade', 'Subcomandante de cada OBM')]},
+        'se-art-100': {'caput': [('Comandante-Geral, Subcomandante ou Comandante Operacional', 'Comandante-Geral, Subcomandante-Geral ou Comandante Operacional')]},
+        'se-art-61': {'items': [('pelo Chefe da Prontidão de Serviço que entra', 'pelo Oficial de Dia que entra')]},
+        'se-art-72': {'caput': [('Cada Unidade Operacional deverá', 'Cada OBM deverá')]},
+        'se-art-76': {'caput': [('solicitados a Diretoria de Pessoal, Ensino e Instrução', 'solicitados à Coordenadoria de Educação, Ensino e Instrução')]},
+        'se-art-91': {'caput': [('apresentar-se ao Chefe da Prontidão,', 'apresentar-se ao Oficial de Dia,')]},
+        'se-art-106': {'caput': [('baixada ao Setor de Manutenção', 'baixada ao Centro de Manutenção')]},
+        'se-art-107': {'caput': [('equipe de mecânicos as Unidades', 'equipe de mecânicos às OBM')]},
+        'se-art-77': {'caput': [('O Oficial de Dia e/ou o Oficial de Dia, ao entrar de serviço', 'O Oficial de Dia, ao entrar de serviço')]},
         'se-art-78': {'caput': [('O acesso aos alojamento deve obedecer', 'O acesso aos alojamentos deve obedecer')]},
         'se-art-81': {'caput': [('ficando proibido a prática', 'ficando proibida a prática')]},
         'se-art-83': {'caput': [('deverá está consciente', 'deverá estar consciente')]},
-        # Concordância: Central Integrada de Operações é feminino (achado 18/08).
-        'se-art-85': {'caput': [('solicitar ao Central Integrada de Operações', 'solicitar à Central Integrada de Operações')]},
         'se-art-90': {'caput': [('lubrific ado', 'lubrificado')]},
-        'se-art-91': {'caput': [('informar ao Central Integrada de Operações', 'informar à Central Integrada de Operações')]},
         'se-art-98': {'caput': [('o mlitar deverá trajar', 'o militar deverá trajar')]},
         'se-art-107': {'caput': [('condições de conserto no local. Operacional', 'condições de conserto no local.')]},
     },
     'disposicoes-finais': {
         # Resíduo da adaptação CBMMT→CBMRO: em RO as unidades são Grupamentos (LOB, Art. 47).
-        'mt-art-264': {'caput': [('estabelecidas aos Batalhões Bombeiro Militar', 'estabelecidas aos Grupamentos de Bombeiro Militar')]},
+        'mt-art-264': {'caput': [('estabelecidas aos Batalhões Bombeiro Militar', 'estabelecidas aos Grupamentos de Bombeiro Militar'),
+                                 ('das demais Unidades e Subunidades integrantes', 'das demais Organizações Bombeiro Militar integrantes')]},
+        'mt-art-265': {'caput': [('As Unidades e Subunidades de todos os órgãos e níveis da Corporação', 'Os órgãos e as Organizações Bombeiro Militar de todos os níveis da Corporação')]},
         # Rodapé de publicação do Boletim de MT colado no caput do artigo de fecho.
-        'mt-art-266': {'caput': [(' ** Este texto não substitui o publicado no Boletim Geral Eletrônico – BGE', '')]},
+        'mt-art-266': {'caput': [(' ** Este texto não substitui o publicado no Boletim Geral Eletrônico – BGE', ''),
+                                 ('ao presente Regulamento Geral', 'ao presente Regulamento')]},
     },
 }
 
 # Correções de grafia válidas para o documento INTEIRO: "Comandante Geral" → "Comandante-Geral",
 # a grafia da Lei nº 2.204/2009. Aplicada em todo artigo que traga o termo (18 na exportação).
-CORRECOES_GLOBAIS = [('Comandante Geral', 'Comandante-Geral')]
+CORRECOES_GLOBAIS = [
+    ('Comandante Geral', 'Comandante-Geral'),
+    # Nomenclatura de RO (15/09/2026): o órgão é o Centro Integrado de Operações – CIOP (nome da
+    # NGA-CIOP-001/2026), masculino; o texto herdado dizia "Central Integrada" com gênero variado.
+    ('ao Central Integrada de Operações', 'ao Centro Integrado de Operações'),
+    ('à Central Integrada de Operações', 'ao Centro Integrado de Operações'),
+    ('da Central Integrada de Operações', 'do Centro Integrado de Operações'),
+    ('do Central Integrada de Operações', 'do Centro Integrado de Operações'),
+    ('na Central Integrada de Operações', 'no Centro Integrado de Operações'),
+    ('pela Central Integrada de Operações', 'pelo Centro Integrado de Operações'),
+    ('uma Central Integrada de Operações', 'um Centro Integrado de Operações'),
+    ('Central Integrada de Operações', 'Centro Integrado de Operações'),
+    # Sergipe: Boletim Geral Ostensivo → Boletim Geral (RO); Comandante do Socorro → de Socorro;
+    # "Comandante da Unidade" → da OBM.
+    ('Boletim Geral Ostensivo', 'Boletim Geral'),
+    # Determinação de 15/09/2026: a figura do COMANDANTE DE SOCORRO deixa de existir. Quem comanda o
+    # serviço é o Oficial de Dia; nas localidades sem Oficial de Dia, o Comandante de Guarnição (o
+    # militar mais antigo de serviço) — parágrafo único acrescentado ao artigo das funções (se-art-4).
+    ('Comandante do Socorro', 'Oficial de Dia'),
+    ('Comandante do socorro', 'Oficial de Dia'),
+    ('Comandante de Socorro', 'Oficial de Dia'),
+    ('Comandante de socorro', 'Oficial de Dia'),
+    ('Cmt de Socorro', 'Oficial de Dia'),
+    ('Comandante da Unidade', 'Comandante da OBM'),
+]
 
 # ── ALTERAÇÕES (só na versão atual) ───────────────────────────────────────────────────
 
@@ -118,7 +179,7 @@ TEXTOS_FINAIS_ATUAL = {
         'se-art-26': {'caput': 'O serviço diário de Superior de Dia ao CBMRO será coordenado pelo Subcomandante-Geral, através do gabinete do Subcomando-Geral.'},
         'se-art-27': {'caput': 'O regime da escala de serviços diários de Superior de Dia obedecerá ao critério de dias corridos, podendo, a critério do Subcomandante-Geral ser alterado.'},
         'se-art-29': {'caput': 'O militar que concorre à escala aqui tratada quando tiver que se ausentar ou retornar às suas atividades normais em decorrência de férias, dispensas, licenças ou que comporão as mesmas deverá se apresentar ao Subcomandante-Geral a fim de ser reinserido ou inserido na respectiva escala.'},
-        'se-art-41': {'caput': 'Todos os aspectos relacionados ao serviço de Comandante de socorro e de Oficial de dia deverão observar às regras internas da OBM a que o Oficial estiver subordinado, além daquelas previstas neste Regulamento de Serviço.'},
+        'se-art-41': {'caput': 'Todos os aspectos relacionados ao serviço de Oficial de Dia e, nas demais Organizações Bombeiro Militar, ao serviço do Comandante de Guarnição deverão observar as regras internas da OBM a que o militar estiver subordinado, além daquelas previstas neste Regulamento de Serviço.'},
         'se-art-45': {'caput': 'Todos os aspectos relacionados a esses serviços deverão observar às regras internas da OBM a que as praças estiverem subordinadas além daquelas previstas neste Regulamento de Serviço.'},
         # Acidente com viatura: sem a cláusula de "acordo formal entre as partes" (IV), sem a
         # "ficha de acidentes", documento que não existe (V), e o relato em Parte Especial (VIII).
@@ -131,7 +192,7 @@ TEXTOS_FINAIS_ATUAL = {
         # Nas ocorrências com socorros de duas ou mais Unidades, o que se exige é a CIÊNCIA do
         # Superior de Dia, não a presença do Oficial de Dia.
         'se-art-132': {
-            'caput': 'Torna-se obrigatória a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais Unidades Operacionais.',
+            'caput': 'Torna-se obrigatória a ciência ao Superior de Dia nas ocorrências que envolvam os socorros de duas ou mais OBM.',
             'fundamento': _F_CURADORIA, 'alterado': 'redação',
         },
         # Redação simplificada da reserva operacional.
@@ -148,8 +209,22 @@ TEXTOS_FINAIS_ATUAL = {
         # inciso pela extração sai daqui — a regra dos casos omissos permanece íntegra no
         # parágrafo único do artigo dos pacientes com transtorno mental (se-art-116).
         'se-art-114': {
-            'items': {5: 'VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Comandante do SOS.'},
+            'items': {5: 'VI. A participação de pessoas e de outros órgãos no local da ocorrência deverá, inicialmente, ser analisada pelo Oficial de Dia.'},
             'fundamento': _F_DELIB, 'alterado': 'deliberação',
+        },
+        # Determinação de 15/09/2026: ficam só Superior de Dia, Oficial de Dia, Comandante de Guarnição,
+        # Condutor e Operador de Viaturas, Operador de Rádio, Socorristas e Permanência. Saem Comandante
+        # de Área, Comandante de Socorro, Adjunto ao Oficial de Dia, Auxiliares do Comandante da
+        # Guarnição, Comandante de Guarda de Quartel e Auxiliar da Guarda de OBM. O parágrafo único
+        # fixa a regra: sem Oficial de Dia na localidade, comanda o Comandante de Guarnição (o mais antigo).
+        'se-art-4': {
+            'items': {1: None, 2: None, 4: None, 7: None, 9: None, 10: None},
+            'acrescentar': ['Parágrafo único. O serviço de Oficial de Dia existe apenas no 1º Grupamento de Bombeiro Militar, na Capital; nas demais Organizações Bombeiro Militar, o Comandante de Guarnição, militar mais antigo de serviço, é o responsável pelo serviço operacional diário, aplicando-se-lhe as atribuições conferidas ao Oficial de Dia neste Regulamento.'],
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
+        },
+        'se-art-40': {
+            'items': {0: None},   # § único (Cmt de Socorro e Oficial de Dia pelo mesmo oficial) — figura eliminada
+            'fundamento': _F_CURADORIA, 'alterado': 'redação',
         },
         'se-art-135': {
             'items': {8: None, 9: None,
@@ -178,6 +253,16 @@ SUPRIMIR = {
                       'se forem mantidos, redigir como parágrafo do Art. 10.'),
         'se-art-43': 'Deslocado — o artigo dos casos omissos passa a fechar o capítulo (ro-art-2-c1).',
         'se-art-112': 'Suprimido — permuta fora do mês; matéria da rotina interna de cada OBM.',
+    },
+    # Resíduo de Sergipe (15/09/2026): a "Reserva Técnica Operacional (RTO)" é figura do RISD do
+    # CBMSE, sem previsão na LOB ou nas normas de RO — o capítulo inteiro sai (e com ele as
+    # referências aos uniformes "4ºA" e "5B" do regulamento de uniformes de Sergipe).
+    'servico-interno-dia': {
+        'se-art-95': 'Suprimido — Reserva Técnica Operacional (RTO), figura do RISD/CBMSE sem previsão em RO',
+        'se-art-96': 'Suprimido — idem (RTO)',
+        'se-art-97': 'Suprimido — idem (RTO)',
+        'se-art-98': 'Suprimido — idem (RTO); citava o uniforme "4ºA" do CBMSE',
+        'se-art-99': 'Suprimido — idem (RTO); citava o uniforme "5B" do CBMSE',
     },
 }
 
@@ -268,7 +353,7 @@ SUBSTITUIR = {
                     'VI - aprovar as Ordens de Serviço e os demais planejamentos operacionais elaborados pelas unidades subordinadas, ressalvados aqueles sujeitos à homologação ou aprovação de autoridade superior;',
                     'VII - expedir diretrizes, orientações e determinações de natureza operacional às unidades subordinadas, visando à padronização, à eficiência e à integração dos serviços na área do respectivo Comando Operacional;',
                     'VIII - coordenar e fiscalizar as escalas de serviço de âmbito regional, podendo autorizar alterações e permutas cuja competência não esteja atribuída a outra autoridade;',
-                    'IX - autorizar, por escrito, a permuta de escala do serviço de Oficial de Dia, com posterior publicação em Boletim Geral Ostensivo;',
+                    'IX - autorizar, por escrito, a permuta de escala do serviço de Oficial de Dia, com posterior publicação em Boletim Geral;',
                     'X - acionar o Superior de Dia nas ocorrências de grande vulto, na forma deste Regulamento;',
                     'XI - fiscalizar e acompanhar a execução das atividades operacionais desenvolvidas pelas unidades subordinadas, avaliando o emprego dos recursos e os resultados alcançados;',
                     'XII - efetuar, nos termos do art. 13, inciso V, do Regulamento de Movimentação aprovado pelo Decreto nº 8.134, de 18 de dezembro de 1997, a movimentação de praças entre as Organizações Bombeiro Militar subordinadas ao respectivo Comando Operacional, quando não implicar ônus para a Corporação, observados, sempre que possível, os pareceres dos respectivos Comandantes de Unidade;',
@@ -488,7 +573,7 @@ SUBSTITUIR = {
 
 _H_SD = 'RISD, Cap. VI — Regime e Escalas de Serviço · Do Superior de Dia'
 _H_OD = 'RISD, Cap. VI — Regime e Escalas de Serviço · Do Oficial de Dia'
-_H_CS = 'RISD, Cap. VI — Regime e Escalas de Serviço · Do Comandante de Socorro'
+_H_CS = 'RISD, Cap. VI — Regime e Escalas de Serviço · Do Oficial de Dia nas unidades'
 
 # (4) Inclusões — artigos NOVOS, inseridos APÓS o id indicado (id da versão em consulta).
 # {tema: [{'apos': id, 'artigos': [...]}, ...]}
@@ -528,36 +613,36 @@ INCLUIR = {
             'apos': 'se-art-38',
             'artigos': [
                 _art(
-                    'O serviço de Oficial de Dia será realizado exclusivamente no Quartel do Comando-Geral – QCG, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM.',
-                    ['§ 1º O Oficial de Dia exercerá suas atribuições no âmbito interno do QCG, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.',
-                     '§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade responsável pelo aquartelamento nas questões relacionadas à disciplina e à segurança interna.'],
-                    _F_SERV, heading=_H_OD, proposta=True,
-                    nota=NOTA_PROPOSTA + ': redefine o Oficial de Dia como serviço interno do QCG (aquartelamento); na versão em consulta era função operacional coordenada pelo COB em cada OBM (se-art-32 a 38, suprimidos na versão atual). Avaliar extensão aos quartéis das OBMs.',
+                    'O serviço de Oficial de Dia será realizado exclusivamente no 1º Grupamento de Bombeiro Militar, na Capital, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM.',
+                    ['§ 1º O Oficial de Dia é o responsável pelo serviço operacional diário e pelo serviço interno do 1º Grupamento de Bombeiro Militar, competindo-lhe zelar pela disciplina, segurança, ordem e regular funcionamento do aquartelamento durante o período de serviço.',
+                     '§ 2º O Oficial de Dia representará, durante o período de serviço e nos limites de suas atribuições, a autoridade do Comandante do 1º Grupamento de Bombeiro Militar perante a prontidão operacional e nas questões relacionadas à disciplina e à segurança interna.'],
+                    _F_SERV, heading=_H_OD,
+                    nota='Alcance definido em 15/09/2026: o Oficial de Dia existe só no 1º GBM (Capital) e responde pelo serviço operacional diário e pelo serviço interno; nas demais OBMs o Comandante de Guarnição é o responsável (se-art-4, parágrafo único). Texto de partida sugerido na consulta (serviço interno do QCG).',
                 ),
                 _art(
                     'Compete ao Oficial de Dia:',
                     [
                         'I - participar das solenidades, formaturas e demais atos regulamentares previstos para o início e término do serviço;',
                         'II - receber do Oficial de Dia substituído e transmitir ao seu substituto as ordens, determinações, alterações e demais informações necessárias à continuidade do serviço;',
-                        'III - orientar os militares empregados nos serviços internos do QCG quanto às suas atribuições e às determinações em vigor;',
-                        'IV - realizar inspeções nas dependências do QCG, adotando ou solicitando as providências necessárias diante das irregularidades constatadas;',
+                        'III - orientar os militares empregados nos serviços internos do quartel quanto às suas atribuições e às determinações em vigor;',
+                        'IV - realizar inspeções nas dependências do quartel, adotando ou solicitando as providências necessárias diante das irregularidades constatadas;',
                         'V - fiscalizar os serviços internos, verificando o cumprimento das normas, ordens e determinações em vigor;',
-                        'VI - zelar pela disciplina, segurança e ordem no interior do QCG;',
+                        'VI - zelar pela disciplina, segurança e ordem no interior do quartel;',
                         'VII - fiscalizar os serviços de guarda e segurança do aquartelamento;',
                         'VIII - certificar-se de que as dependências que devam permanecer fechadas estejam devidamente resguardadas, mantendo o controle das respectivas chaves nos termos das normas internas;',
                         'IX - providenciar, na forma regulamentar, a substituição dos militares que não comparecerem aos serviços internos para os quais estejam escalados;',
-                        'X - zelar pelo cumprimento das normas referentes à entrada, saída e permanência de pessoas no QCG;',
+                        'X - zelar pelo cumprimento das normas referentes à entrada, saída e permanência de pessoas no quartel;',
                         'XI - fiscalizar a entrada e saída de viaturas do aquartelamento, observadas as normas estabelecidas;',
-                        'XII - registrar a entrada ou saída de materiais do QCG fora do horário de expediente, não permitindo sua retirada sem a devida autorização;',
+                        'XII - registrar a entrada ou saída de materiais do quartel fora do horário de expediente, não permitindo sua retirada sem a devida autorização;',
                         'XIII - zelar pelos materiais, armamentos, instalações e demais bens que estejam sob sua responsabilidade durante o serviço;',
-                        'XIV - receber autoridades civis e militares que compareçam ao QCG fora do horário de expediente, adotando as providências protocolares cabíveis;',
+                        'XIV - receber autoridades civis e militares que compareçam ao quartel fora do horário de expediente, adotando as providências protocolares cabíveis;',
                         'XV - comunicar imediatamente à autoridade competente as ocorrências extraordinárias verificadas durante o serviço, especialmente aquelas relacionadas à disciplina, segurança, pessoal ou patrimônio;',
-                        'XVI - adotar as providências imediatas destinadas a sanar ou minimizar alterações verificadas no funcionamento interno do QCG, submetendo à autoridade competente aquelas que excedam sua atribuição;',
+                        'XVI - adotar as providências imediatas destinadas a sanar ou minimizar alterações verificadas no funcionamento interno do quartel, submetendo à autoridade competente aquelas que excedam sua atribuição;',
                         'XVII - receber e encaminhar, fora do horário de expediente, documentos ou comunicações de caráter urgente, adotando as providências necessárias para que cheguem tempestivamente à autoridade competente;',
                         'XVIII - registrar em livro ou sistema próprio as ocorrências e alterações verificadas durante sua jornada de serviço;',
                         'XIX - elaborar e encaminhar a parte de serviço à autoridade competente, consignando as ocorrências e alterações relevantes verificadas durante a jornada;',
-                        'XX - comunicar imediatamente qualquer acidente envolvendo pessoal, viatura, material ou patrimônio ocorrido no âmbito do QCG;',
-                        'XXI - fiscalizar as condições de conservação, limpeza e organização das dependências do QCG;',
+                        'XX - comunicar imediatamente qualquer acidente envolvendo pessoal, viatura, material ou patrimônio ocorrido no âmbito do quartel;',
+                        'XXI - fiscalizar as condições de conservação, limpeza e organização das dependências do quartel;',
                         'XXII - fiscalizar o cumprimento das prisões e detenções de natureza disciplinar executadas nas dependências do aquartelamento, zelando pela observância das determinações da autoridade competente, das condições de segurança e das normas aplicáveis;',
                         'XXIII - diante da ocorrência de fato que, em tese, constitua crime militar, adotar as providências imediatas destinadas à preservação do local, dos elementos de informação e das provas, quando cabíveis, bem como comunicar imediatamente o fato à autoridade de polícia judiciária militar competente, para adoção das medidas previstas na legislação processual penal militar;',
                         'XXIV - adotar, nas hipóteses de flagrante de crime militar, as providências que lhe competirem nos termos da legislação processual penal militar, comunicando imediatamente o fato à autoridade de polícia judiciária militar competente; e',
@@ -568,18 +653,14 @@ INCLUIR = {
                 ),
             ],
         },
-        {   # Comandante de Socorro — depois do bloco Cmt de Socorro/Oficial de Dia nas OBMs (39..43)
+        {   # Oficial de Dia nas unidades — depois do bloco se-art-39..43. O artigo de REGIME do
+            # Comandante de Socorro (Capital/1º GBM, proposta do Cel.) saiu em 15/09 com a figura; as 20
+            # competências ficam, como atribuições OPERACIONAIS do Oficial de Dia (que nas localidades
+            # sem Oficial de Dia cabem ao Comandante de Guarnição — se-art-4, parágrafo único).
             'apos': 'se-art-43',
             'artigos': [
                 _art(
-                    'O serviço de Comandante de Socorro será realizado exclusivamente na Capital do Estado, em regime presencial de 24 (vinte e quatro) horas, sendo exercido por Aspirantes a Oficial BM e oficiais dos postos de Segundo-Tenente BM, Primeiro-Tenente BM e Capitão BM, regularmente escalados para a função.',
-                    ['§ 1º O Comandante de Socorro exercerá suas funções no âmbito do 1º Grupamento de Bombeiro Militar, observada a cadeia de comando operacional estabelecida neste Regulamento.',
-                     '§ 2º Durante o período de serviço, o Comandante de Socorro representará a autoridade do Comandante do 1º Grupamento de Bombeiro Militar perante a prontidão operacional, exercendo, nos limites de suas atribuições, as competências necessárias à coordenação e à continuidade do serviço, sem prejuízo das matérias reservadas ao Comandante da Unidade ou aos escalões superiores.'],
-                    _F_SERV, heading=_H_CS, proposta=True,
-                    nota=NOTA_PROPOSTA + ': restringe o Comandante de Socorro à Capital/1º GBM e inclui Capitães; a versão em consulta prevê o serviço no quartel de cada OBM (se-art-40/42) e só subalternos e Aspirantes (se-art-39).',
-                ),
-                _art(
-                    'Compete ao Comandante de Socorro:',
+                    'Compete ao Oficial de Dia, quanto ao serviço operacional:',
                     [
                         'I - coordenar, supervisionar e fiscalizar as atividades da prontidão operacional durante o período de serviço;',
                         'II - realizar a passagem de serviço, tomando conhecimento das alterações existentes e transmitindo ao seu substituto as informações necessárias à continuidade do serviço;',
@@ -591,19 +672,19 @@ INCLUIR = {
                         'VIII - acompanhar as ocorrências em andamento e comparecer àquelas cuja natureza, complexidade ou magnitude exija sua presença;',
                         'IX - exercer o comando das operações quando lhe couber, observadas a cadeia de comando operacional e a sistemática de comando de incidentes adotada pela Corporação;',
                         'X - solicitar o emprego de recursos operacionais adicionais quando aqueles disponíveis forem insuficientes para o atendimento da ocorrência;',
-                        'XI - manter o Oficial de Dia e os escalões competentes informados acerca das ocorrências relevantes, alterações do serviço e indisponibilidade de recursos;',
+                        'XI - manter os escalões competentes informados acerca das ocorrências relevantes, alterações do serviço e indisponibilidade de recursos;',
                         'XII - receber dos Comandantes de Guarnição as informações relativas às ocorrências atendidas e às alterações verificadas durante o serviço;',
                         'XIII - adotar as providências imediatas diante das alterações ocorridas durante o serviço, encaminhando ao escalão competente aquelas que excedam sua competência;',
                         'XIV - zelar pela disciplina, segurança, apresentação e adequada atuação do efetivo integrante da prontidão operacional;',
                         'XV - fiscalizar o cumprimento das normas, protocolos, ordens e procedimentos relativos ao serviço operacional;',
-                        'XVI - visitar, sempre que possível e desde que não haja prejuízo à execução do serviço operacional, os militares pertencentes ao 1º Grupamento de Bombeiro Militar que se encontrem hospitalizados, tomando conhecimento de sua situação e das eventuais necessidades de apoio institucional;',
+                        'XVI - visitar, sempre que possível e desde que não haja prejuízo à execução do serviço operacional, os militares da OBM que se encontrem hospitalizados, tomando conhecimento de sua situação e das eventuais necessidades de apoio institucional;',
                         'XVII - acompanhar os militares da ativa e da reserva remunerada que se encontrem detidos ou conduzidos perante autoridade policial, permanecendo no local, quando necessário, até a conclusão do registro da ocorrência e das providências iniciais adotadas pelo respectivo órgão;',
                         'XVIII - comunicar imediatamente ao Superior de Dia as situações previstas nos incisos IX e X, bem como quaisquer fatos envolvendo militares que, por sua natureza ou repercussão, demandem conhecimento ou providências dos escalões superiores;',
-                        'XIX - acionar, quando necessário, o Plano de Chamada do 1º Grupamento de Bombeiro Militar, diante de ocorrência ou situação que demande reforço extraordinário de efetivo, comunicando imediatamente o acionamento ao Comandante da Unidade e ao Superior de Dia; e',
+                        'XIX - acionar, quando necessário, o Plano de Chamada da OBM, diante de ocorrência ou situação que demande reforço extraordinário de efetivo, comunicando imediatamente o acionamento ao Comandante da Unidade e ao Superior de Dia; e',
                         'XX - cumprir as determinações dos escalões superiores relacionadas ao serviço operacional.',
                     ],
                     _F_SERV, heading=_H_CS,
-                    nota='Inciso XVII (acompanhar militar detido, inclusive da reserva remunerada): conferir com a Corregedoria.',
+                    nota='Redigido originalmente para o Comandante de Socorro (figura eliminada em 15/09/2026); atribuído ao Oficial de Dia. Inciso XVII (acompanhar militar detido, inclusive da reserva remunerada): conferir com a Corregedoria.',
                 ),
             ],
         },
@@ -661,6 +742,17 @@ DELIBERACOES_SEMELHANTES = [
         'assunto': 'Demais 5 grupos do quadro de dispositivos semelhantes de 15/09/2026',
         'decisao': 'Permanecem como estão (mantidos os dois dispositivos em cada grupo). O quadro foi eliminado do pacote.',
     },
+    {
+        'data': '2026-09-15',
+        'dispositivos': ['servico-operacional/se-art-4', 'servico-operacional/se-art-39..44', 'servico-operacional/se-art-43-c1 (removido)',
+                         'servico-interno-dia/se-art-95..99 (removidos)', 'todas as menções a Comandante de Socorro'],
+        'assunto': 'Figuras do serviço eliminadas: Comandante de Área, Comandante de Socorro, Adjunto ao Oficial de Dia, Auxiliares do Comandante da Guarnição, Comandante de Guarda de Quartel, Auxiliar da Guarda de OBM; Reserva Técnica Operacional',
+        'decisao': ('Ficam Superior de Dia, Oficial de Dia, Comandante de Guarnição, Condutor e Operador de Viaturas, Operador de Rádio, '
+                    'Socorristas e Permanência. O Oficial de Dia existe só no 1º GBM (Capital); nas demais OBMs o Comandante de Guarnição, '
+                    'militar mais antigo de serviço, é o responsável pelo serviço operacional diário (parágrafo único do artigo das funções). '
+                    'As atribuições antes do Comandante de Socorro passam ao Oficial de Dia e, nas demais OBMs, ao Comandante de Guarnição. '
+                    'O capítulo da RTO foi suprimido.'),
+    },
 ]
 
 ATENDIMENTOS_POR_ARTIGO = {
@@ -668,9 +760,10 @@ ATENDIMENTOS_POR_ARTIGO = {
         'incluido',
         'sugestões do Cel. Luiz Eduardo sobre o artigo das funções do serviço: os artigos de regime e '
         'de competências do Superior de Dia, do Oficial de Dia e do Comandante de Socorro entraram na '
-        'versão atual como 6 artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1/c2); os 3 '
-        'artigos de regime estão marcados como proposta pendente de deliberação do CONDEG (Capital/1º '
-        'GBM/QCG)',
+        'versão atual como artigos novos (se-art-31-c1/c2, se-art-38-c1/c2, se-art-43-c1 — este último, as '
+        'competências operacionais, atribuídas ao Oficial de Dia após a eliminação da figura do Comandante '
+        'de Socorro em 15/09); o artigo de regime do Superior de Dia segue como proposta pendente de deliberação '
+        'do CONDEG (Capital); o do Oficial de Dia foi decidido em 15/09 (só no 1º GBM)',
     ),
 }
 
@@ -788,6 +881,9 @@ def aplicar_alteracoes(structure):
                         art.setdefault('incisos_suprimidos', []).append(idx)
                     else:
                         art['items'][idx]['text'] = texto
+                for texto in f.get('acrescentar', []):
+                    art['items'].append({'text': texto, 'source': f.get('fundamento', _F_FINAL)})
+                    art.setdefault('incisos_acrescidos', []).append(len(art['items']) - 1)
                 art['alterado'] = f.get('alterado', 'texto final')
                 art['fundamento_alteracao'] = f.get('fundamento', _F_FINAL)
                 if f.get('nota'):
