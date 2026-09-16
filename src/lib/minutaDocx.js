@@ -6,6 +6,7 @@ import {
 import { buildArticles, articleLabel, romanize, rotuloRomano } from './minutaArticles.js'
 import { PARTE_HEADERS, parteByChapterTitle } from './regulamentoPartes.js'
 import { applyFinalsToArticles } from './minutaFinals.js'
+import { RECUO_PRIMEIRA_LINHA, ESPACAMENTO, MARGENS } from './docxFormato.js'
 
 export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () => false, subtitle, finals = null, skipEditIds }) {
   const dateStr = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
@@ -76,10 +77,11 @@ export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () =
         children: [new TextRun({ text: `Seção ${romanize(art.sectionNumber)} — ${art.sectionTitle}`, bold: true, italics: true, font: 'Times New Roman', size: 24 })],
       }))
     }
+    // Manual de Redação: recuo de primeira linha igual em todos os dispositivos, espaçamento simples, 6 pt após.
     children.push(new Paragraph({
       alignment: AlignmentType.JUSTIFIED,
-      spacing: { line: 360, after: art.incisos.length ? 60 : 120 },
-      indent: art.incisos.length ? undefined : { firstLine: 708 },
+      spacing: { ...ESPACAMENTO },
+      indent: { firstLine: RECUO_PRIMEIRA_LINHA },
       children: [
         new TextRun({ text: `${articleLabel(art.number)} `, bold: true, font: 'Times New Roman', size: 24 }),
         new TextRun({ text: art.caput, font: 'Times New Roman', size: 24 }),
@@ -92,15 +94,15 @@ export async function buildMinutaBlob({ structure, edits = {}, isExcluded = () =
         runs.push(new TextRun({ text: ` (${inc.source})`, font: 'Times New Roman', size: 20, italics: true, color: '888888' }))
       }
       children.push(new Paragraph({
-        alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: 60 },
-        indent: { left: inc.alinea ? 1134 : 708, hanging: inc.ownMarker ? 0 : 340 }, children: runs,
+        alignment: AlignmentType.JUSTIFIED, spacing: { ...ESPACAMENTO },
+        indent: { firstLine: RECUO_PRIMEIRA_LINHA }, children: runs,
       }))
     })
   })
 
   const doc = new Document({
     sections: [{
-      properties: { page: { margin: { top: 1701, right: 1134, bottom: 1134, left: 1701 } } },
+      properties: { page: { margin: { ...MARGENS } } },
       footers: {
         default: new Footer({
           children: [new Paragraph({

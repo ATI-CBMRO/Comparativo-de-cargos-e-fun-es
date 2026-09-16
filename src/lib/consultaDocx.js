@@ -23,6 +23,7 @@ const tabelaAplicacoes = (resumo) => tabela(
 )
 import { montarReestruturada } from './regulamentoReestruturado.js'
 import { capitalizarFrases } from './formatacaoTexto.js'
+import { RECUO_PRIMEIRA_LINHA, ESPACAMENTO, MARGENS } from './docxFormato.js'
 import { compararVersoes, resumoComparativo, ROTULO_TIPO, rotuloArtigo } from './comparativoConsulta.js'
 
 const FONT = 'Times New Roman'
@@ -31,8 +32,8 @@ const run = (text, o = {}) => new TextRun({ text, font: FONT, size: 24, ...o })
 function pCentro(text, { bold = true, size = 26, before = 240, after = 120, italics = false, pageBreakBefore = false } = {}) {
   return new Paragraph({ alignment: AlignmentType.CENTER, pageBreakBefore, spacing: { before, after }, children: [run(text, { bold, size, italics })] })
 }
-function pJust(text, { italics = false, size = 24, after = 120, firstLine = 708, bold = false } = {}) {
-  return new Paragraph({ alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after }, indent: firstLine ? { firstLine } : undefined, children: [run(text, { italics, size, bold })] })
+function pJust(text, { italics = false, size = 24, after = 120, firstLine = RECUO_PRIMEIRA_LINHA, bold = false } = {}) {
+  return new Paragraph({ alignment: AlignmentType.JUSTIFIED, spacing: { line: ESPACAMENTO.line, after }, indent: firstLine ? { firstLine } : undefined, children: [run(text, { italics, size, bold })] })
 }
 const quebra = () => new Paragraph({ children: [new PageBreak()] })
 const dataExtenso = () => new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
@@ -67,14 +68,16 @@ function paragrafosArtigo(numero, art, { publicavel = false } = {}) {
   const fmt = (t) => (publicavel ? capitalizarFrases(t) : t)
   const capRuns = [run(`${articleLabel(numero)} `, { bold: true }), run(fmt(art.caput))]
   if (art.temFinal && !publicavel) capRuns.push(run(' [texto final aplicado]', { italics: true, size: 18, color: '888888' }))
+  // Todos os dispositivos com o mesmo recuo de primeira linha (Manual de Redação), tenha o artigo
+  // parágrafos/incisos ou não — antes, artigos com incisos saíam sem recuo e ficavam desalinhados.
   ps.push(new Paragraph({
-    alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: art.incisos.length ? 60 : 120 },
-    indent: art.incisos.length ? undefined : { firstLine: 708 }, children: capRuns,
+    alignment: AlignmentType.JUSTIFIED, spacing: { ...ESPACAMENTO },
+    indent: { firstLine: RECUO_PRIMEIRA_LINHA }, children: capRuns,
   }))
   art.incisos.forEach((inc, i) => {
     ps.push(new Paragraph({
-      alignment: AlignmentType.JUSTIFIED, spacing: { line: 360, after: 60 },
-      indent: { left: inc.alinea ? 1134 : 708, hanging: inc.ownMarker ? 0 : 340 },
+      alignment: AlignmentType.JUSTIFIED, spacing: { ...ESPACAMENTO },
+      indent: { firstLine: RECUO_PRIMEIRA_LINHA },
       children: [run(inc.ownMarker ? fmt(inc.text) : `${rotuloRomano(art.incisos, i)} - ${fmt(inc.text)}`)],
     }))
   })
@@ -85,7 +88,7 @@ function documento(children, rodape) {
   return new Document({
     styles: { default: { document: { run: { font: FONT, size: 24 } } } },
     sections: [{
-      properties: { page: { margin: { top: 1701, right: 1134, bottom: 1134, left: 1701 } } },
+      properties: { page: { margin: { ...MARGENS } } },
       footers: { default: new Footer({ children: [new Paragraph({
         alignment: AlignmentType.CENTER,
         children: [run(`${rodape} · pág. `, { size: 18, italics: true }), new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: 18, italics: true })],
