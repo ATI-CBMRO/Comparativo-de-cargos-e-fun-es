@@ -137,7 +137,7 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
     'Portal de Legislação CBM — acesso "Só Regulamento de Serviço" · cenário: Lei nº 2.204/2009', brasao,
   )
   children.push(pJust(
-    `A minuta do Regulamento de Serviço (1ª etapa, ${totalArtigos} artigos) foi submetida à apreciação dos militares cadastrados no Portal de Legislação CBM com acesso restrito ao Regulamento de Serviço, que puderam registrar sugestões dispositivo a dispositivo. Este relatório consolida ${resumo.total} interações dos militares consultados${desde ? `, registradas a partir de ${desde.toLocaleDateString('pt-BR')}` : ''}. Cada registro identifica o autor, a unidade, o dispositivo comentado (numeração da versão em consulta), o trecho, o texto integral da sugestão, reproduzido como foi escrito, e o que a versão atual da minuta fez com o artigo comentado (reescrito, artigo novo incluído, texto alterado, suprimido ou sem alteração).`,
+    `A minuta do Regulamento de Serviço (1ª etapa, ${totalArtigos} artigos) foi submetida à apreciação dos militares cadastrados no Portal de Legislação CBM com acesso restrito ao Regulamento de Serviço, que puderam registrar sugestões dispositivo a dispositivo. Este relatório consolida ${resumo.total} interações dos militares consultados${desde ? `, registradas a partir de ${desde.toLocaleDateString('pt-BR')}` : ''}. Os registros estão agrupados por artigo (numeração da versão em consulta): cada um traz o dispositivo comentado e o texto integral da sugestão, reproduzido como foi escrito; o cabeçalho de cada artigo informa o que a versão atual da minuta fez com ele (reescrito, artigo novo incluído, texto alterado ou sem alteração). O texto integral dos dispositivos comentados está na Minuta em consulta.`,
     { size: 22, after: 200 },
   ))
   children.push(pCentro('1. Participantes e quantidade de sugestões', { size: 24, before: 240, after: 120 }))
@@ -152,24 +152,47 @@ export function docxRelatorioInteracoes({ interacoes, membros, totalArtigos, bra
   children.push(pCentro('3. Aplicação das sugestões na versão atual da minuta', { size: 24, before: 240, after: 120 }))
   children.push(pJust(`${resumo.aplicadas} das ${resumo.total} sugestões recaem sobre artigos alterados na versão atual da minuta; ${resumo.total - resumo.aplicadas} sobre artigos mantidos como estavam. O Comparativo (versão em consulta × versão atual) mostra cada alteração artigo a artigo; as propostas que mudam regra de mérito estão marcadas como pendentes de deliberação do CONDEG.`, { size: 22, firstLine: 0 }))
   children.push(tabelaAplicacoes(resumo))
-  children.push(quebra())
-  children.push(pCentro('4. Interações, dispositivo a dispositivo', { size: 24, before: 240, after: 120 }))
-  let capAtual = null
-  let artAtual = null
+  // Seção 4 em texto corrido (18/09/2026): o formato anterior — uma tabela de 6 linhas por interação —
+  // gerava 75 páginas. Agora: cabeçalho por artigo, a aplicação UMA vez por artigo (ela é deduzida por
+  // artigo) e cada sugestão em um parágrafo compacto. O autor só aparece onde varia; o trecho comentado
+  // vem resumido (a íntegra está na Minuta em consulta) e o id técnico fica só no JSON das interações.
+  children.push(pCentro('4. Interações, dispositivo a dispositivo', { size: 24, before: 240, after: 80 }))
+  const nomeAutor = (a) => `${a.nome}${a.nomeGuerra ? ` (${a.nomeGuerra})` : ''}${a.unidade ? ` — ${a.unidade}` : ''}`
+  const autorUnico = resumo.porAutor.length === 1
+  children.push(pJust(
+    `${autorUnico ? `Todas as sugestões são de ${nomeAutor(resumo.porAutor[0].autor)}. ` : ''}Cada registro traz o número, o dispositivo comentado (numeração da versão em consulta), a data, o início do trecho comentado e a sugestão na íntegra. A aplicação dada pela versão atual da minuta é informada uma vez, no cabeçalho de cada artigo.`,
+    { size: 20, firstLine: 0, after: 80 },
+  ))
+  const grupos = []
   for (const r of interacoes) {
-    if (r.capitulo !== capAtual) { capAtual = r.capitulo; artAtual = null; children.push(pCentro(capAtual, { size: 22, before: 240, after: 80 })) }
-    const cabecaArt = r.dispositivo.split(',')[0]
-    if (cabecaArt !== artAtual) { artAtual = cabecaArt; children.push(pJust(`${cabecaArt} — ${r.caputArtigo}`, { size: 20, bold: true, firstLine: 0, after: 60 })) }
-    const meta = [`nº ${r.n}`, formatarDataHora(r.data), r.curtidas ? `${r.curtidas} apoio(s)` : null, r.textoFinal ? 'texto final redigido' : r.suprimido ? 'dispositivo suprimido' : r.finalVazio ? 'conferido' : null].filter(Boolean).join(' · ')
-    children.push(tabela([
-      ['Registro', meta],
-      ['Autor', `${r.autor.nome}${r.autor.nomeGuerra ? ` (${r.autor.nomeGuerra})` : ''}${r.autor.unidade ? ` — ${r.autor.unidade}` : ''}`],
-      ['Dispositivo', `${r.dispositivo}${r.rotuloNaEpoca && !r.dispositivo.startsWith(r.rotuloNaEpoca.split(',')[0]) ? ` (na época: ${r.rotuloNaEpoca})` : ''} · ${r.dispositivoId}`],
-      ['Trecho comentado', r.trecho],
-      ['Sugestão', r.sugestao],
-      ['Aplicação', textoAplicacao(r)],
-    ], [1800, 7500]))
-    children.push(new Paragraph({ spacing: { after: 120 }, children: [] }))
+    const cabeca = r.dispositivo.split(',')[0]
+    const g = grupos[grupos.length - 1]
+    if (g && g.cabeca === cabeca && g.capitulo === r.capitulo) g.itens.push(r)
+    else grupos.push({ cabeca, capitulo: r.capitulo, itens: [r] })
+  }
+  const resumir = (t, max) => { const x = String(t ?? '').replace(/\s+/g, ' ').trim(); return x.length > max ? `${x.slice(0, max).trimEnd()}…` : x }
+  const compacto = (runs, after = 40) => new Paragraph({ alignment: AlignmentType.JUSTIFIED, spacing: { line: 240, after }, children: runs })
+  let capAtual = null
+  for (const g of grupos) {
+    if (g.capitulo !== capAtual) { capAtual = g.capitulo; children.push(pCentro(capAtual, { size: 22, before: 200, after: 60 })) }
+    const autoresGrupo = [...new Set(g.itens.map(i => i.autor.nome))]
+    children.push(compacto([run(`${g.cabeca} — `, { bold: true, size: 20 }), run(resumir(g.itens[0].caputArtigo, 260), { bold: true, size: 20 })], 20))
+    const linhaArtigo = [`${g.itens.length} sugest${g.itens.length === 1 ? 'ão' : 'ões'}`]
+    if (!autorUnico && autoresGrupo.length === 1) linhaArtigo.push(`autor: ${nomeAutor(g.itens[0].autor)}`)
+    children.push(compacto([run(`${linhaArtigo.join(' · ')}. Aplicação na versão atual: `, { italics: true, size: 18 }), run(textoAplicacao(g.itens[0]), { italics: true, size: 18 })], 60))
+    let trechoAnterior = null   // o trecho só aparece quando muda (várias sugestões no mesmo inciso)
+    for (const r of g.itens) {
+      const parte = r.dispositivo.includes(',') ? r.dispositivo.slice(r.dispositivo.indexOf(',') + 1).trim() : r.dispositivo
+      const meta = [r.data ? r.data.toLocaleDateString('pt-BR', { timeZone: 'America/Porto_Velho' }) : null, r.curtidas ? `${r.curtidas} apoio(s)` : null,
+        r.textoFinal ? 'texto final redigido' : r.suprimido ? 'dispositivo suprimido' : r.finalVazio ? 'conferido' : null,
+        !autorUnico && autoresGrupo.length > 1 ? nomeAutor(r.autor) : null].filter(Boolean).join(' · ')
+      const runs = [run(`nº ${r.n} · ${parte}`, { bold: true, size: 20 }), run(meta ? ` (${meta})` : '', { size: 18, color: '555555' })]
+      if (r.trecho && parte !== 'caput' && r.trecho !== trechoAnterior) runs.push(run(` — trecho: “${resumir(r.trecho, 110)}”`, { italics: true, size: 18, color: '555555' }))
+      trechoAnterior = r.trecho
+      runs.push(run(' Sugestão: ', { bold: true, size: 20 }), run(String(r.sugestao ?? '').trim(), { size: 20 }))
+      children.push(compacto(runs))
+    }
+    children.push(new Paragraph({ spacing: { after: 60 }, children: [] }))
   }
   return { doc: documento(children, 'Interações da consulta — Minuta do Regulamento de Serviço · CBMRO'), resumo }
 }
