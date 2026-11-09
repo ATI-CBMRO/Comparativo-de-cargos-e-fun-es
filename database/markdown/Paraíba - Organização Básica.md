@@ -4440,7 +4440,7 @@ A DIRETORA SUPERINTENDENTE DA SUPLAN , no uso de suas atribuições
 que lhe confere o Art. 7º, Inciso VIII, do Decreto nº 13.582 de 27 de março de 1990
 RESOLVE:
 NOMEAR, ANA MARIA DO CARMO LOURENÇO, Engenheira Civil, Gerente 
-Setorial, Símbolo CAS-3, matrícula nº 770.847-5, CPF 04454597359, para responder cumulativamente 
+Setorial, Símbolo CAS-3, matrícula nº 770.847-5, CPF 044********, para responder cumulativamente 
 pela Gerência Setorial da Obra de Conclusão do Complexo Educacional da Escola Padrão de 12 salas 
 de aula de Ensino Médio Integral, em São José de Piranhas/PB, sem nenhum acréscimo em sua remu-
 neração, com vigência a partir da data de sua publicação. 
@@ -4455,7 +4455,7 @@ O Diretor Presidente da Companhia Paraibana de Gás - PBGÁS, no uso de suas atr
 RESOLVE:
 Art. 1º Designar, como Gestora de Contrato, a empregada abaixo discriminada:
 Contrato nº 0005/2024 – PRE/GSM  (SOFTEXPERT SOFTWARE S.A) – Gestor: 
-JOSÉ EDMILSON DE SOUZA FILHO, matrícula nº 0178, CPF/MF nº 024.251.394-86.
+JOSÉ EDMILSON DE SOUZA FILHO, matrícula nº 0178, CPF/MF nº 024.***.***-**.
 Parágrafo único. O Gestor do Contrato acima nominada deverá acompanhar e super-
 visionar a execução dos contratos e observar o cumprimento das cláusulas ajustadas.
 Art. 2º Esta Portaria entra em vigor a partir da data da sua publicação.
@@ -4492,7 +4492,7 @@ A DIRETORA SUPERINTENDENTE DA SUPLAN, no uso de suas atribuições
 que lhe confere o Art. 7º, Inciso VIII, letra b do Decreto nº 13.587 de 27 de março de 1990, 
 RESOLVE:
 DESIGNAR, VIRNA IAYANE MONTENEGRO DE CARV ALHO, Engenheira Civil, 
-Gerente Setorial, Símbolo CAS-3, matrícula nº 770.614-6, CPF 06550651484, para responder cumulati-
+Gerente Setorial, Símbolo CAS-3, matrícula nº 770.614-6, CPF 065********, para responder cumulati-
 vamente pela Gerência Setorial da Obra de Construção do 8 º Batalhão de Busca e Salvamento, em João 
 Pessoa/PB, sem nenhum acréscimo em sua remuneração, com vigência a partir da data de sua publicação.
 PORTARIA Nº 118/2024/GS                                                                João Pessoa, 25 de abril de 2024.
@@ -4501,7 +4501,7 @@ DO PLANO DE DESENVOLVIMENTO DA PARAÍBA – SUPLAN, no uso de suas atribuições
 e ainda de conformidade com as disposições contidas na Resolução 40/90, de 28 de agosto de 1990.
 RESOLVE:
 Art. 1º - Designar o servidor José Adriano Soares de Sousa, matrícula nº 770.444-5, 
-inscrito no CPF nº 019.598.114-60, Chefe da Seção de Transportes, para Gestor do Contrato, referente a 
+inscrito no CPF nº 019.***.***-**, Chefe da Seção de Transportes, para Gestor do Contrato, referente a 
 Locação de Veículo Administrativo ﬁ rmado, respectivamente, com a Localiza Rent a Car SA. Pregão 
 Presencial nº 03/2023, Ata de Registro de Preços nº 14/2024, Processo Administrativo nº 286/2023 pela 
 Assembleia Legislativa do Estado da Paraíba – Processo nº SUP-PRC-2024/00907.
@@ -5961,7 +5961,7 @@ Assinam o presente em 03 (três) vias de igual teor, juntamente com as testemunh
 Patos/PB, / /2024.
 ISABELLA CRISTINA OLIVEIRA DOS SANTOS
 Matrícula: 181.073-1
-CPF Nº 010.017.774-33 HOSPITAL INFANTIL NOALDO LEITE
+CPF Nº 010.***.***-** HOSPITAL INFANTIL NOALDO LEITE
 ESTADO DA PARAÍBA
 VISION PRIME LTDA 
 CNPJ 45.094.261/0001-56 
@@ -6069,7 +6069,7 @@ Assinam o presente em 03 (três) vias de igual teor, juntamente com as testemunh
 Patos/PB, / /2024.
 ISABELLA CRISTINA OLIVEIRA DOS SANTOS
 Matrícula: 181.073-1
-CPF Nº 010.017.774-33 HOSPITAL INFANTIL NOALDO LEITE
+CPF Nº 010.***.***-** HOSPITAL INFANTIL NOALDO LEITE
 ESTADO DA PARAÍBA
 MURILO RAFAEL DA COSTA SILV A 
 CNPJ 31.649.237/0001-21
@@ -7087,7 +7087,7 @@ Nos termos do relatório ﬁ nal apresentado pelo Pregoeiro Oﬁ cial e observad
 referente ao Pregão Eletrônico nº 00016/2024, que objetiva: Contratação de empresa especializada em 
 serviços de buﬀ et e decoração para atender as necessidades do município de Alcantil – PB; ADJUDICO 
 o objeto e HOMOLOGO a licitação, com base nos elementos constantes do processo correspondente, os 
-quais apontam como proponente vencedor: JOAO PEDRO DA SILV A 10545684480 - R$ 182.679,00.
+quais apontam como proponente vencedor: JOAO PEDRO DA SILV A 105******** - R$ 182.679,00.
 Alcantil - PB, 25 de Abril de 2024
 CICERO JOSÉ FERNANDES DO CARMO
 Prefeito
@@ -9131,7 +9131,7 @@ RESOLVE:
 RATIFICAR, a Inexigibilidade nº 00033/2024, por razões de interesse público, OBJETO:  Aquisição 
 de gêneros da Agricultura Familiar e do Empreendedor Familiar Rural para atendimento dos Alunos 
 da Rede Pública Municipal de Ensino do Município de Piancó/PB, em favor do Sr. JOSE EUDO DA 
-SILV A LIMA, inscrito no CPF nº 496.915.384-15, nos termos do art. 74, IV , da Lei 14.133/2021, em 
+SILV A LIMA, inscrito no CPF nº 496.***.***-**, nos termos do art. 74, IV , da Lei 14.133/2021, em 
 consequência ﬁ ca a empresa acima convocado para a assinara do contrato.
 V ALOR GLOBAL ESTIPULADO: R$ 39.360,00 (trinta e nove mil trezentos e sessenta reais). 
 FUNDAMENTAÇÃO LEGAL: Art. 74, IV , da Lei 14.133/2021.
@@ -9234,8 +9234,8 @@ URBANO E RURAL 02100.15.122.2019.2029 – MANUTENCAO DAS ATIVIDADES DA SECRETA-
 RIA ELEMENTO DE ESPESA: 3390.30.0000 – MATERIAL DE CONSUMO 3.3.90.32.00.00 – FON-
 TE 500 502 569 599 600 621 631 632 706 707 710 715 716 720. VIGÊNCIA: até o ﬁ nal do exercício 
 ﬁ nanceiro de 2024. PARTES CONTRATANTES: Prefeitura Municipal de Riacho de Santo Antônio e: CT 
-Nº 00045/2014 - 25.04.24 - BRAZ MANOEL DA SILV A FILHO 84457120120 - R$ 124.821,50; CT Nº 
-00046/2024 - 25.04.24 - MARIA JOSE PEREIRA RAMOS DA SILV A 09654479443 - R$ 408.513,70.
+Nº 00045/2014 - 25.04.24 - BRAZ MANOEL DA SILV A FILHO 844******** - R$ 124.821,50; CT Nº 
+00046/2024 - 25.04.24 - MARIA JOSE PEREIRA RAMOS DA SILV A 096******** - R$ 408.513,70.
 PREFEITURA MUNICIPAL DE RIACHO DE SANTO ANTÔNIO
  
 ADJUDICAÇÃO E HOMOLOGAÇÃO
@@ -9245,8 +9245,8 @@ Jurídica, referente ao Pregão Eletrônico nº 00010/2024, que objetiva: CONTRA
 LECIMENTO COMERCIAL PARA FORNECIMENTO DE FORMA PARCELADA DE MATERIAIS 
 DE CONSTRUÇÃO PARA ATENDER AS NECESSIDADES DESTA PREFEITURA; ADJUDICO o 
 objeto e HOMOLOGO a licitação, com base nos elementos constantes do processo correspondente, os 
-quais apontam como proponentes vencedores: BRAZ MANOEL DA SILV A FILHO 84457120120 - R$ 
-124.821,50; MARIA JOSE PEREIRA RAMOS DA SILV A 09654479443 - R$ 408.513,70.
+quais apontam como proponentes vencedores: BRAZ MANOEL DA SILV A FILHO 844******** - R$ 
+124.821,50; MARIA JOSE PEREIRA RAMOS DA SILV A 096******** - R$ 408.513,70.
 Riacho de Santo Antônio - PB, 25 de Abril de 2024
 MARCELO BARBOSA FERREIRA
 PREFEITO
@@ -9531,14 +9531,14 @@ EXTRATO DE HOMOLOGAÇÃO
 PREGÃO ELETRÔNICO Nº 008/2024. 
 PROCESSO ADMINISTRATIVO Nº 031/2024. 
 Contratante: Prefeitura Municipal de Santana dos Garrotes - PB. Contratados: JOSÉ V ANDO DE AL-
-MEIDA 63012120459 – CNPJ Nº 33.384.147/0001-81, com sede no Sítio Barra do Vieira, Pitombeira, 
+MEIDA 630******** – CNPJ Nº 33.384.147/0001-81, com sede no Sítio Barra do Vieira, Pitombeira, 
 Zona Rural, CEP: 58.795-000 – Santana dos Garrotes – PB, com valor global de R$ 79.965,00 (setenta e 
 nove mil novecentos e sessenta e cinco reais), dando um valor mensal de R$ 8.885,00 (oito mil oitocentos 
-e oitenta e cinco reais), vencedor dos itens 01, 02 e 03;EXPEDITO QUINTINO DA SILV A 39649091491 
+e oitenta e cinco reais), vencedor dos itens 01, 02 e 03;EXPEDITO QUINTINO DA SILV A 396******** 
 – CNPJ Nº 45.539.374/0001-18, com sede no Sítio Barrinhos, Zona Rural, CEP: 58.795-000 – Santana 
 dos Garrotes – PB, com valor global de R$ 88.965,00 (oitenta e oito mil novecentos e sessenta e cinco 
 reais), dando um valor mensal deR$9.885,00 (nove mil oitocentos e oitenta e cinco reais), vencedor dos 
-itens 18, 19 e 20;JOAQUIM FAUSTINO FILHO 01056762845 – CNPJ Nº 33.308.755/0001-07, com 
+itens 18, 19 e 20;JOAQUIM FAUSTINO FILHO 010******** – CNPJ Nº 33.308.755/0001-07, com 
 sede no Sítio Barrinhos, Zona Rural, CEP: 58.795-000 – Santana dos Garrotes – PB, com valor global 
 de R$ 79.695,00 (setenta e nove mil seiscentos e noventa e cinco reais), dando um valor mensal de R$ 
 8.855,00 (oito mil oitocentos e cinquenta e cinco reais), vencedor dos itens 15, 16 e 17;DF EMPREEN-
@@ -9580,18 +9580,18 @@ SERVICOS E TERCEIRIZACAO LTDA - JHS SERVICOS – CNPJ Nº 36.003.255/0001-55, co
 sede na Rua João Cordeiro, 3069, Joaquim Tavora, Fortaleza – CE, com valor global de R$ 49.932,00 
 (quarenta e nove mil novecentos e trinta e dois reais), dando um valor mensal de R$ 5.548,00 (cinco 
 mil quinhentos e quarenta e oito reais), vencedor dos itens 07 e 08; EULIANA RODRIGUES LEITE 
-JUSTO 08846475445 - CNPJ: 45.574.536/0001- 59, com sede no Sítio Pitombeira de Dentro, zona 
+JUSTO 088******** - CNPJ: 45.574.536/0001- 59, com sede no Sítio Pitombeira de Dentro, zona 
 rural, Santana dos Garrotes/PB, com valor global de R$ 78.209,91 (setenta e oito mil duzentos e nove 
 reais e noventa e um centavos), dando um valor mensal de R$ 8.689,99 (oito mil seiscentos e oitenta e 
 nove reais e noventa e nove centavos), vencedor dos itens 01 e 02;CARLON RODRIGUES DA SILV A 
-04302705426 - CNPJ: 32.980.985/0001-55, com sede no Sítio Gravatá, zona rural, Santana dos Garrotes/
+043******** - CNPJ: 32.980.985/0001-55, com sede no Sítio Gravatá, zona rural, Santana dos Garrotes/
 PB, com valor global de R$ 93.590,82 (noventa e três mil quinhentos e noventa reais e oitenta e dois 
 centavos), dando um valor mensal de R$ 10.398,98 (dez mil trezentos e noventa e oito reais e noventa 
-e oito centavos), vencedor dos itens 03, 04 e 06;OSV ALDO LUIZ DA SILV A 02229039458 - CNPJ: 
+e oito centavos), vencedor dos itens 03, 04 e 06;OSV ALDO LUIZ DA SILV A 022******** - CNPJ: 
 33.031.712/0001-27, com sede no Sítio Maracujá de Cima, zona rural, Santana dos Garrotes/PB, com 
 valor global de R$ 86.166,00 (oitenta e seis mil cento e sessenta e seis reais), dando um valor mensal de 
 R$ 9.574,00 (nove mil quinhentos e setenta e quatro reais), vencedor dos itens 10, 11 e 12;GILBERTO 
-LUCENA DE SOUZA 02593584440 - CNPJ: 32.981.303/0001-29, com sede na Rua Severino Cirino 
+LUCENA DE SOUZA 025******** - CNPJ: 32.981.303/0001-29, com sede na Rua Severino Cirino 
 Sobrinho, s/n, centro,  Santana dos Garrotes/PB, com valor global de R$ 80.955,00 (oitenta mil novecentos 
 e cinquenta e cinco reais), dando um valor mensal de R$ 8.995,00 (oito mil novecentos e noventa e cinco 
 reais), vencedor do item 13;Objeto:contratação dos serviços de transporte de estudantes da rede Estadual 
@@ -9607,15 +9607,15 @@ PREFEITO.
 obrigatórios para o transporte estudantil e os seus condutores estarem devidamente habilitados na forma 
 do Código de Trânsito Brasileiro, para o consumo previsto até 31 de dezembro de 2024,que obedecerá 
 a Lei Federal nº 14.133 de 01 de abril de 2021, que foramdeclaradasVENCEDORASas empresas:
-JOSÉ V ANDO DE ALMEIDA 63012120459 – CNPJ Nº 33.384.147/0001-81, com sede no Sítio Barra 
+JOSÉ V ANDO DE ALMEIDA 630******** – CNPJ Nº 33.384.147/0001-81, com sede no Sítio Barra 
 do Vieira, Pitombeira, Zona Rural, CEP: 58.795-000 – Santana dos Garrotes – PB, com valor global de 
 R$ 79.965,00 (setenta e nove mil novecentos e sessenta e cinco reais), dando um valor mensal de R$ 
 8.885,00 (oito mil oitocentos e oitenta e cinco reais), vencedor dos itens 01, 02 e 03;
-EXPEDITO QUINTINO DA SILV A 39649091491 – CNPJ Nº 45.539.374/0001-18, com sede no Sítio 
+EXPEDITO QUINTINO DA SILV A 396******** – CNPJ Nº 45.539.374/0001-18, com sede no Sítio 
 Barrinhos, Zona Rural, CEP: 58.795-000 – Santana dos Garrotes – PB, com valor global de R$ 88.965,00 
 (oitenta e oito mil novecentos e sessenta e cinco reais), dando um valor mensal de
 R$9.885,00 (nove mil oitocentos e oitenta e cinco reais), vencedor dos itens 18, 19 e 20;
-JOAQUIM FAUSTINO FILHO 01056762845 – CNPJ Nº 33.308.755/0001-07 , com sede no Sítio 
+JOAQUIM FAUSTINO FILHO 010******** – CNPJ Nº 33.308.755/0001-07 , com sede no Sítio 
 Barrinhos, Zona Rural, CEP: 58.795-000 – Santana dos Garrotes – PB, com valor global de R$ 79.695,00 
 (setenta e nove mil seiscentos e noventa e cinco reais), dando um valor mensal de R$ 8.855,00 (oito mil 
 oitocentos e cinquenta e cinco reais), vencedor dos itens 15, 16 e 17;
@@ -9669,26 +9669,26 @@ JHS SERVICOS E TERCEIRIZACAO LTDA - JHS SERVICOS – CNPJ Nº 36.003.255/0001-55
 com sede na Rua João Cordeiro, 3069, Joaquim Tavora, Fortaleza – CE, com valor global de R$ 49.932,00 
 (quarenta e nove mil novecentos e trinta e dois reais), dando um valor mensal de R$ 5.548,00 (cinco mil 
 quinhentos e quarenta e oito reais), vencedor dos itens 07 e 08;
-EULIANA RODRIGUES LEITE JUSTO 08846475445 - CNPJ: 45.574.536/0001-59, com sede no 
+EULIANA RODRIGUES LEITE JUSTO 088******** - CNPJ: 45.574.536/0001-59, com sede no 
 Sítio Pitombeira de Dentro, zona rural, Santana dos Garrotes/PB,com valor global de R$ 78.209,91 (setenta 
 e oito mil duzentos e nove reais e noventa e um centavos), dando um valor mensal de R$ 8.689,99 (oito 
 mil seiscentos e oitenta e nove reais e noventa e nove centavos), vencedor dos itens 01 e 02;
-CARLON RODRIGUES DA SILV A 04302705426 - CNPJ: 32.980.985/0001-55, com sede no Sítio 
+CARLON RODRIGUES DA SILV A 043******** - CNPJ: 32.980.985/0001-55, com sede no Sítio 
 Gravatá, zona rural, Santana dos Garrotes/PB, com valor global deR$ 93.590,82 (noventa e três mil 
 quinhentos e noventa reais e oitenta e dois centavos), dando um valor mensal de R$ 10.398,98 (dez mil 
 trezentos e noventa e oito reais e noventa e oito centavos), vencedor dos itens 03, 04 e 06;
-OSV ALDO LUIZ DA SILV A 02229039458 - CNPJ: 33.031.712/0001-27, com sede no Sítio Maracujá 
+OSV ALDO LUIZ DA SILV A 022******** - CNPJ: 33.031.712/0001-27, com sede no Sítio Maracujá 
 de Cima, zona rural, Santana dos Garrotes/PB, com valor global deR$ 86.166,00 (oitenta e seis mil cento 
 e sessenta e seis reais), dando um valor mensal de R$ 9.574,00 (nove mil quinhentos e setenta e quatro 
 reais), vencedor dos itens 10, 11 e 12;
-GILBERTO LUCENA DE SOUZA 02593584440 - CNPJ: 32.981.303/0001-29, com sede na Rua Se-
+GILBERTO LUCENA DE SOUZA 025******** - CNPJ: 32.981.303/0001-29, com sede na Rua Se-
 verino Cirino Sobrinho, s/n, centro, Santana dos Garrotes/PB, com valor global de R$ 80.955,00 (oitenta 
 mil novecentos e cinquenta e cinco reais), dando um valor mensal de R$ 8.995,00 (oito mil novecentos 
 e noventa e cinco reais), vencedor do item 13;por terem apresentado as propostas mais vantajosas para 
 a administração e por terem atendido todos os requisitos do edital, e desde já CONVOCAMOS as 
 referidas empresaspara devida assinatura do respectivo termo de contrato em até 05 (cinco) dias úteis, a 
 partir desta publicação, nos termos da Lei Federal n° 14.133/2021 em sua redação ﬁ nal.E solicitamos as 
-empresas EULIANA RODRIGUES LEITE JUSTO 08846475445 - CNPJ: 45.574.536/0001-59 e DF 
+empresas EULIANA RODRIGUES LEITE JUSTO 088******** - CNPJ: 45.574.536/0001-59 e DF 
 
 ---
 
@@ -9756,7 +9756,7 @@ O PREFEITO DO MUNICÍPIO DE SÃO JOSÉ DO BONFIM, no uso de suas atribuições, 
 no art. 71, inciso IV da Lei Federal nº 14.133, de 1º de abril de 2021, RESOLVE, ADJUDICAR o objeto 
 do Pregão Eletrônico nº 00015/2024, para Aquisição de portas, portões de ferro, ferragem em geral e 
 consertos em geral para as secretarias do Município de São José do Bonﬁ m-PB, e aos Fundos Municipais 
-de Saúde e Assistência Social do município a empresa:- ROBSON LEONARDO XA VIER 01197474480, 
+de Saúde e Assistência Social do município a empresa:- ROBSON LEONARDO XA VIER 011********, 
 CNPJ Nº 13.107.244/0001- 10, V ALOR: R$ 194.935,00.
 São José do Bonﬁ m/PB, 23 de Abril de 2024. 
 ESAÚ RAUEL ARAÚJO DA SILV A NOBREGA
@@ -9772,7 +9772,7 @@ no art. 71, inciso IV da Lei Federal nº 14.133, de 1º de abril de 2021, RESOLV
 resultado do Pregão Eletrônico nº 00015/2024, para  Aquisição de portas, portões de ferro, ferragem em 
 geral e consertos em geral para as secretarias do Município de São José do Bon ﬁ m-PB, e aos Fundos 
 Municipais de Saúde e Assistência Social do município a empresa: -ROBSON LEONARDO XA VIER 
-01197474480, CNPJ Nº 13.107.244/0001- 10, V ALOR: R$ 194.935,00.
+011********, CNPJ Nº 13.107.244/0001- 10, V ALOR: R$ 194.935,00.
 São José do Bonﬁ m/PB, 24 de Abril de 2024. 
 ESAÚ RAUEL ARAÚJO DA SILV A NOBREGA
 PREFEITO CONSTITUCIONAL
@@ -10282,20 +10282,20 @@ Projeto Social Ir. Cacilda e salientaram a importância do projeto para a Funda�
 item C da ordem do dia, iniciou-se o processo de eleição para a composição da nova diretoria da Funda-
 ção para o período de 01/04/2024 a 31/03/2027, sendo registrada Chapa única composta por: Diretora 
 Presidente - Maria do Carmo Correia de Andrade, solteira, professora aposentada, brasileira, CPF nº 
-269269464-34, RG nº 2001010285023 SSP/CE, domiciliada na Av. Flávio Ribeiro, 202, Centro, Santa 
+269******-**, RG nº 2001010285023 SSP/CE, domiciliada na Av. Flávio Ribeiro, 202, Centro, Santa 
 Rita-PB; Diretora Vice-Presidente - Norma Maria Domingues Moura, solteira, professora aposentada, 
-brasileira, CPF 246576462-49, RG1330292 SSP/PA, domiciliada na Rua Quinze de Novembro 1216, 
+brasileira, CPF 246******-**, RG1330292 SSP/PA, domiciliada na Rua Quinze de Novembro 1216, 
 Centro, Caucaia-CE; Diretora ﬁ nanceira - Maria Suêly de Lima, solteira, contadora aposentada, brasileira, 
-CPF 227180874-04 e RG nº 4496192 SSDS/PB, domiciliada na Av. Flávio Ribeiro, 202, Centro, Santa 
+CPF 227******-** e RG nº 4496192 SSDS/PB, domiciliada na Av. Flávio Ribeiro, 202, Centro, Santa 
 Rita-PB; Diretora Secretária - Elza Maria de Carvalho Ferreira, solteira, gerente de almoxarifado apo-
-sentada, brasileira, CPF nº 160088713-91, RG nº 4690535 SSDS/PB, domiciliada na Av. Flávio Ribeiro, 
+sentada, brasileira, CPF nº 160******-**, RG nº 4690535 SSDS/PB, domiciliada na Av. Flávio Ribeiro, 
 202, Centro, Santa Rita-PB; Diretores Suplentes: Maria Áurea Guerra, solteira, professora aposentada, 
-brasileira,  CPF nº 080999364-34, RG nº 2008683657-3 SSP/CE, domiciliada na Av. Flávio Ribeiro, 202, 
+brasileira,  CPF nº 080******-**, RG nº 2008683657-3 SSP/CE, domiciliada na Av. Flávio Ribeiro, 202, 
 Centro, Santa Rita-PB; Maria do Carmo Cerqueira, solteira, enfermeira aposentada, brasileira, CPF nº 
-059871723-49, RG nº 7101961-3 SSP/SP, domiciliada na Av. Flávio Ribeiro, 202, Centro, Santa Rita-
--PB; Maria de Cássia Brandão Albuquerque, solteira, secretária, brasileira, CPF nº 968087723-04, RG 
+059******-**, RG nº 7101961-3 SSP/SP, domiciliada na Av. Flávio Ribeiro, 202, Centro, Santa Rita-
+-PB; Maria de Cássia Brandão Albuquerque, solteira, secretária, brasileira, CPF nº 968******-**, RG 
 nº 2008138833-5 SSDS-CE, domiciliada na Rua Quinze de Novembro 1216, Centro, Caucaia-CE e Ana 
-Paula Trindade dos Santos, solteira, Enfermeira, brasileira, CPF nº 712116832-49, RG nº302799- DPTC/
+Paula Trindade dos Santos, solteira, Enfermeira, brasileira, CPF nº 712******-**, RG nº302799- DPTC/
 AP, domiciliada na Rua Coronel Correia, 2718, Pe. Júlio Maria, Caucaia-CE. Ato contínuo conﬁ rmado 
 a presença de 17 (dezessete) membros, foram entregues as cédulas de votação, constando a opção de 
 “sim”, “não” e “abstenção”. Ao ﬁ nal, apurou-se 17 (dezessete) votos, sendo 13 (treze) na modalidade 
